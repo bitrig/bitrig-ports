@@ -1,5 +1,0 @@
-bin/xloadimage
-bin/xview
-bin/xsetbg
-lib/X11/app-defaults/Xloadimage
-man/man1/xloadimage.0

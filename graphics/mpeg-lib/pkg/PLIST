@@ -1,4 +1,0 @@
-lib/libmpeg.a
-lib/libmpeg.so.1.2
-@exec /sbin/ldconfig -m %B
-include/mpeg.h
