@@ -1,18 +1,31 @@
-# $OpenBSD: Makefile,v 1.1.1.2 1999/12/30 15:14:39 fgsch Exp $
+# $OpenBSD: Makefile,v 1.1.1.3 2003/01/31 17:57:11 todd Exp $
 
-DISTNAME=	libIDL-0.6.5
-CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla/libraries/source/
+COMMENT=		"IDL parsing library"
 
-MAINTAINER=	fgsch@openbsd.org
+DISTNAME=		libIDL-0.8.0
+CATEGORIES=		devel
 
-LIB_DEPENDS=	glib.1.2:${PORTSDIR}/devel/glib
+HOMEPAGE=		http://www.gnome.org/
 
-GNU_CONFIGURE=	yes
-USE_GMAKE=	yes
+MAINTAINER=		Marc Matteo <marcm@openbsd.org>
 
-post-install:
-	@${INSTALL_DATA_DIR} ${PREFIX}/share/doc/libIDL	
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/libIDL	
+PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_FTP=	Yes
+PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_DISTFILES_FTP=	Yes
+
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libIDL/0.8/}
+EXTRACT_SUFX=		.tar.bz2
+
+MODULES=		gettext
+
+BUILD_DEPENDS=		:pkgconfig->=0.12.0p1:devel/pkgconfig
+LIB_DEPENDS=		glib-2.0.0.0::devel/glib2
+
+USE_GMAKE=		Yes
+CONFIGURE_STYLE=	gnu
+CONFIGURE_ARGS+=	${CONFIGURE_SHARED}
+CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
+			LDFLAGS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>
