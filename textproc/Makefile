@@ -1,27 +1,27 @@
-# $OpenBSD: Makefile,v 1.1 1997/11/27 23:44:48 niklas Exp $
-# $FreeBSD: Makefile,v 1.15 1997/11/22 00:31:24 jseger Exp $
+# OpenBSD makefile for:			pilot_makedoc
+# Version required:			0.7
+# Date created:				April 27 1998
+# Whom:					Angelos D. Keromytis
+#
+# $OpenBSD: Makefile,v 1.1.1.1 1998/04/27 23:23:40 angelos Exp $
 #
 
-#    SUBDIR += agrep
-#    SUBDIR += c2html
-#    SUBDIR += docbook
-#    SUBDIR += glimpse
-#    SUBDIR += html
-#    SUBDIR += info2html
-    SUBDIR += isearch
-#    SUBDIR += iso12083
-#    SUBDIR += iso8879
-    SUBDIR += ispell
-#    SUBDIR += jade
-#    SUBDIR += linuxdoc
-#    SUBDIR += mgdiff
-#    SUBDIR += par
-#    SUBDIR += pilot_makedoc
-    SUBDIR += rman
-#    SUBDIR += sgmlformat
-#    SUBDIR += sp
-#    SUBDIR += texi2html
-#    SUBDIR += unroff
-#    SUBDIR += wdiff
+PKGNAME=	pilot_makedoc-0.7
+CATEGORIES=	textproc
+MASTER_SITES=	http://www.concentric.net/~rbram/
+DISTFILES=	makedoc7.cpp
 
-.include <bsd.port.subdir.mk>
+MAINTAINER=	angelos@openbsd.org
+
+NO_WRKSUBDIR=	YES
+ALL_TARGET=	pilot_makedoc
+
+do-extract:
+		@${MKDIR} ${WRKDIR}
+		@${CP} ${DISTDIR}/${DISTFILES} ${WRKDIR}
+		@${CP} ${FILESDIR}/Makefile ${WRKDIR}
+
+do-install:
+		@${INSTALL_PROGRAM} ${WRKDIR}/pilot_makedoc ${PREFIX}/bin
+
+.include <bsd.port.mk>
