@@ -1,25 +1,33 @@
 #!/bin/sh
-# $OpenBSD: DEINSTALL,v 1.1.1.1 2001/02/07 17:43:21 danh Exp $
+# $OpenBSD: DEINSTALL,v 1.1.1.2 2004/06/05 04:34:19 danh Exp $
 #
 # ntp de-installation
 
 set -e
-PATH=/bin:/usr/bin:/sbin:/usr/sbin
-PREFIX=${PKG_PREFIX:-/usr/local}
-CONFIG_FILE=/etc/ntp.conf
+PATH="/bin:/usr/bin:/sbin:/usr/sbin"
+PREFIX="${PKG_PREFIX:-/usr/local}"
+CONFIG_DIR="${SYSCONFDIR}"
+CONFIG_FILE="${CONFIG_DIR}/ntp.conf"
 
-if [ -f ${CONFIG_FILE} ]; then
+if [ ${PKG_DELETE_EXTRA} != Yes -a -f ${CONFIG_FILE} ]; then
     echo
     echo "+---------------"
-    echo "| To completely deinstall the $1 package you need to perform"
-    echo "| this step as root:"
+    echo "| To completely deinstall the $1 package you need to"
+    echo "| perform this step as root:"
     echo "|"
-    echo "|           rm -rf /etc/ntp.*"
+    echo "|           rm -f ${CONFIG_FILE}"
     echo "|"
-    echo "| Do not do this if you plan on re-installing $1"
-    echo "| at some future time."
+    echo "| Do not do this if you plan on re-installing $1 at"
+    echo "| some future time.  You may also want to remove any"
+    echo "| leftover drift files or keys."
     echo "+---------------"
     echo
 fi
+echo
+echo "+---------------"
+echo "| You must also manually remove any key files or drift files"
+echo "| that you may have created or used."
+echo "+---------------"
+echo
 
 exit 0
