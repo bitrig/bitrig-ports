@@ -1,19 +1,27 @@
-# OpenBSD makefile for:	xpdf
-# Version required:	0.7
-# Date created:		03 Dec 1997
-# Whom:			mickey
-#
-# $OpenBSD: Makefile,v 1.1 1997/12/03 20:36:38 mickey Exp $
+# $OpenBSD: Makefile,v 1.1.1.1 1999/01/31 00:05:44 marc Exp $
 #
 
-DISTNAME=	xpdf-0.7
-PKGNAME=	xpdf-0.7
-CATEGORIES=	textproc graphics print
-MASTER_SITES=	ftp://ftp.aimnet.com/pub/users/derekn/xpdf/
+DISTNAME=		xpdf-0.80
+CATEGORIES=		textproc
 
-MAINTAINER=	mickey@OpenBSD.ORG
+MASTER_SITES=		ftp://ftp.foolabs.com/pub/xpdf/
 
-USE_X11=	yes
-MAN1=		xpdf.1 pdftops.1 pdftotext.1
+DISTFILES=		xpdf-0.80.tgz
+
+MAINTAINER=		apollo@slcnet.net
+
+# If you dont want the decryption patch (you probably do), comment out
+# the the following PATCHxxx variables.
+# Please note though that it is encryption..and we all know about how
+# the US feel about that. (no exporting)
+#
+PATCH_DIST_STRIP=	-p1
+PATCH_SITES=		ftp://ftp.sci.usq.edu.au/pub/linux/xpdf/
+PATCHFILES=		xpdf-0.80-decrypt.patch
+
+USE_X11=		yes
+GNU_CONFIGURE=		yes
+CONFIGURE_ARGS=		--with-gzip \
+			--with-Xpm-includes=${X11BASE}/include
 
 .include <bsd.port.mk>
