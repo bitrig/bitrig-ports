@@ -1,19 +1,13 @@
-*** pnm/tifftopnm.c.orig	Thu May 14 12:09:06 1998
---- pnm/tifftopnm.c	Thu May 14 12:09:21 1998
-***************
-*** 28,34 ****
-  #endif
-  #include <tiffioP.h>
-  #endif
-! #include <tiffio.h>
-  
-  #define MAXCOLORS 1024
-  #ifndef PHOTOMETRIC_DEPTH
---- 28,34 ----
-  #endif
-  #include <tiffioP.h>
-  #endif
-! #include <tiffio34.h>
-  
-  #define MAXCOLORS 1024
-  #ifndef PHOTOMETRIC_DEPTH
+--- pbm/pbmmerge.c.orig	Wed Nov  3 10:28:55 1993
++++ pbm/pbmmerge.c	Sun Jan 10 23:48:40 1999
+@@ -29,6 +29,10 @@
+ 	{
+ 	++argv;
+ 	--argc;
++	if(!*argv)	{
++		fprintf(stderr, "Usage: pbmmerge pbm_program_name [args ...]\n");
++		exit(1);
++		}
+ 	goto again;
+ 	}
+ 

@@ -1,19 +1,16 @@
-*** pnm/pnmtotiff.c.orig	Thu May 14 12:27:58 1998
---- pnm/pnmtotiff.c	Thu May 14 12:28:24 1998
-***************
-*** 28,34 ****
-  #endif
-  #include <tiffioP.h>
-  #endif
-! #include <tiffio.h>
-  
-  #include "ppmcmap.h"
-  #define MAXCOLORS 256
---- 28,34 ----
-  #endif
-  #include <tiffioP.h>
-  #endif
-! #include <tiffio34.h>
-  
-  #include "ppmcmap.h"
-  #define MAXCOLORS 256
+--- pbm/pbmtext.c.orig	Wed Oct 27 08:27:04 1993
++++ pbm/pbmtext.c	Sun Jan 10 23:48:40 1999
+@@ -105,10 +105,12 @@
+     else
+ 	{ /* Read text from stdin. */
+ 	lines = 0;
+-	while ( gets( buf ) != NULL )
++	while ( fgets( buf, sizeof(buf), stdin ) != NULL )
+ 	    {
+ 	    int l;
++            char *nl = strchr(buf, '\n');
+ 
++            if (nl) *nl = 0;
+ 	    fix_control_chars( buf );
+ 	    l = strlen( buf );
+ 	    if ( lines >= maxlines )
