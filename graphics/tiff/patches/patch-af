@@ -1,12 +1,13 @@
-*** libtiff/tiffcomp.h.orig	Fri Sep 30 03:01:28 1994
---- libtiff/tiffcomp.h	Wed Oct  4 04:23:03 1995
-***************
-*** 78,83 ****
---- 78,84 ----
-  #define	L_INCR	SEEK_CUR
-  #define	L_XTND	SEEK_END
-  #endif /* defined(SYSV) || defined(VMS) */
-+ #include <unistd.h>
-  #ifndef L_SET
-  #define L_SET	0
-  #define L_INCR	1
+--- contrib/ras/ras2tif.c.orig	Wed Apr 14 23:05:05 1999
++++ contrib/ras/ras2tif.c	Wed Apr 14 23:05:41 1999
+@@ -102,8 +102,8 @@
+ 
+     gettimeofday(&tv, (struct timezone *) NULL);
+     ct = localtime(&tv.tv_sec);
+-    sprintf(datetime, "19%02d:%02d:%02d %02d:%02d:%02d",
+-	    ct->tm_year, ct->tm_mon + 1, ct->tm_mday,
++    sprintf(datetime, "%04d:%02d:%02d %02d:%02d:%02d",
++	    1900 + ct->tm_year, ct->tm_mon + 1, ct->tm_mday,
+ 	    ct->tm_hour, ct->tm_min, ct->tm_sec);
+ 
+     setbuf(stderr, NULL);
