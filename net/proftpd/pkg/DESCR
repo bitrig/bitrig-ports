@@ -1,10 +1,5 @@
-ProFTPD is a highly configurable ftp daemon for unix
-and unix-like operating systems. ProFTPD is designed
-to be somewhat of a "drop-in" replacement for wu-ftpd.
+ProFTPD is a highly configurable and secure FTP server.  It supports
+chroot'ing of FTP sessions, Apache-like access restrictions, custom
+message sending, and bandwidth throttling.
 
-Full online documentation is available at 
-http://www.proftpd.org/, including a server
-configuration directive reference manual.
-
-- Stephane Legrand
-stephane@lituus.fr
+WWW: ${HOMEPAGE}
