@@ -1,14 +1,13 @@
-bin/libIDL-config
-lib/libIDL-0.6.so.4.1
-lib/libIDL.a
-lib/libIDL.la
-lib/libIDLConf.sh
-@unexec install-info --delete %D/info/libIDL.info %D/info/dir
-info/libIDL.info
-share/aclocal/libIDL.m4
-include/libIDL/IDL.h
-share/doc/libIDL/README
-@exec /sbin/ldconfig -m %D/lib
-@exec install-info %D/info/libIDL.info %D/info/dir
-@dirrm include/libIDL
-@dirrm share/doc/libIDL
+@comment $OpenBSD: PLIST,v 1.1.1.3 2003/01/31 17:57:11 todd Exp $
+@unexec install-info --delete --info-dir=%D/info %D/info/libIDL2.info
+bin/libIDL-config-2
+include/libIDL-2.0/libIDL/IDL.h
+info/libIDL2.info
+lib/libIDL-2.a
+lib/libIDL-2.la
+lib/pkgconfig/libIDL-2.0.pc
+%%SHARED%%
+@comment @dirrm lib/pkgconfig
+@dirrm include/libIDL-2.0/libIDL
+@dirrm include/libIDL-2.0
+@exec install-info --info-dir=%D/info %D/info/libIDL2.info
