@@ -1,46 +1,61 @@
-# OpenBSD makefile for:	Internationalized fvwm2
-# Version required:	2.0.46
-# Date created:		12 January 1998
-# Whom:			Don Schmidt
-#
-# $OpenBSD: Makefile,v 1.1.1.1 1998/01/23 19:48:56 don Exp $
-#
+# $OpenBSD: Makefile,v 1.1.1.2 2001/06/27 21:46:00 pvalchev Exp $
 
-DISTNAME=	fvwm-2.0.46
-CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.ics.es.osaka-u.ac.jp/pub/CFAN/sources/2.0.x/ \
-		ftp://ftp.ics.es.osaka-u.ac.jp/pub/CFAN/fvwm-users-jp/kits/ \
-		ftp://ftp.TokyoNet.AD.JP/pub/X/fvwm/sources/2.0.x/ \
-		ftp://ftp.TokyoNet.AD.JP/pub/X/fvwm/fvwm-users-jp/kits/ \
-		ftp://ftp.hpc.uh.edu/pub/fvwm/version-2/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} fvwm-users-jp-kits.97Oct04.tar.gz
+COMMENT=	"multiple virtual desktop window manager, with icons"
+COMMENT-fvicons="multiple virtual desktop window manager icons"
+COMMENT-fvwm2=	"multiple virtual desktop window manager, without icons"
 
-MAINTAINER=	don@OpenBSD.ORG
+VERSION=	2.2.5
+DISTNAME=	fvwm-${VERSION}
+PKGNAME=	fvwm2+fvicons-${VERSION}
+PKGNAME-fvicons=fvicons-${VERSION}
+PKGNAME-fvwm2=	fvwm2-${VERSION}
+CATEGORIES=     x11
+NEED_VERSION=	1.417
 
-LIB_DEPENDS=	Xpm\\.4\\.:${PORTSDIR}/graphics/xpm
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} fvwm_icons.tgz:0
 
-USE_IMAKE=	yes
-MAN1= 		FvwmAudio.1 FvwmAuto.1 FvwmBacker.1 FvwmBanner.1 \
-		FvwmButtons.1 FvwmCascade.1 FvwmCpp.1 FvwmForm.1 \
-		FvwmIconBox.1 FvwmIconMan.1 FvwmIdent.1 FvwmM4.1 FvwmPager.1 \
-		FvwmSave.1 FvwmSaveDesk.1 FvwmScroll.1 FvwmTalk.1 FvwmTile.1 \
-		FvwmWinList.1 fvwm2.1 xpmroot.1
+HOMEPAGE=	http://www.fvwm.org/
 
-# filenames.
-PATCH_FIXIT=	kits/patch/fix-2.0.46
-PATCH_I18N=	kits/patch/PATCH.I18N
-USE_PATCHFILES=	${PATCH_FIXIT} ${PATCH_I18N}
+MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
-pre-patch:
-	@for i in ${USE_PATCHFILES}; do \
-		${PATCH} ${PATCH_DIST_ARGS} < ${WRKDIR}/$$i; \
-	 done;
+PERMIT_PACKAGE_CDROM=	Yes 
+PERMIT_PACKAGE_FTP=	Yes 
+PERMIT_DISTFILES_CDROM=	Yes 
+PERMIT_DISTFILES_FTP=	Yes 
+
+MASTER_SITES=	http://www.toxiclinux.org/fvwm/
+MASTER_SITES0=	http://www.toxiclinux.org/fvwm/
+#MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/
+#MASTER_SITES0=	http://www.fvwm.org/generated/icon_download/
+
+MULTI_PACKAGES=	-fvwm2 -fvicons
+SUBPACKAGE?=
+
+FLAVORS=	rplay debug
+FLAVOR?=
+
+.if ${FLAVOR:L:Mrplay}
+BUILD_DEPENDS=	rplay::audio/rplay
+CONFIGURE_ARGS+= --with-rplay-includes="${LOCALBASE}/include" \
+		 --with-rplay-library="${LOCALBASE}/lib"
+.endif
+
+.if ${FLAVOR:L:Mdebug}
+CONFIGURE_ARGS+= --enable-debug-msgs
+.endif
+
+SUBST_VARS=	VERSION
+
+USE_X11=	Yes
+
+SEPARATE_BUILD= concurrent
+CONFIGURE_STYLE= gnu
+CONFIGURE_ARGS+= --enable-extras
 
 post-install:
-	@${MKDIR} ${PREFIX}/lib/X11/fvwm2/pixmaps
-	${INSTALL_DATA} ${WRKSRC}/icons/*.xpm ${WRKSRC}/icons/*.xbm \
-			${WRKSRC}/icons/*.bitmap ${WRKSRC}/icons/*.icon \
-		${PREFIX}/lib/X11/fvwm2/pixmaps
-	@${CAT} ${PKGDIR}/MESSAGE
-
+	${INSTALL_DATA_DIR} ${PREFIX}/fvicons
+	${INSTALL_DATA} ${WRKDIR}/*.xpm ${PREFIX}/fvicons/
+	${INSTALL_DATA_DIR} ${PREFIX}/share/fvwm2
+	${INSTALL_DATA} ${WRKSRC}/sample.fvwmrc/system.fvwm2rc ${PREFIX}/share/fvwm2
+	
 .include <bsd.port.mk>
