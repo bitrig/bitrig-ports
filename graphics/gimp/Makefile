@@ -1,53 +1,66 @@
-# OpenBSD makefile for:    GIMP
-# Version required:     0.54.1
-# Date created:         December 12, 1997
-# Whom:                 Angelos D. Keromytis
+# OpenBSD makefile for:	gimp
+# Version required:	;;;
+# Date created:		1998-Jun-07
+# Whom:			marc@OpenBSD.ORG
 #
-# $OpenBSD: Makefile,v 1.1.1.1 1997/12/12 05:47:33 angelos Exp $
+# $OpenBSD: Makefile,v 1.1.1.2 1998/06/08 16:33:49 marc Exp $
 #
 
-DISTNAME=       gimp
-PKGNAME=        gimp-0.54.1
-CATEGORIES=     graphics
-MASTER_SITES=   ftp://ftp.xcf.berkeley.edu/pub/gimp/
-EXTRACT_SUFX=	-0.54.1.tar.gz
+# What port/package will be created
+#
+DISTNAME=		gimp-1.0.0
+EXTRANAME=		gimp-data-extras-1.0.0
+CATEGORIES=     	graphics x11
 
-MAINTAINER=     angelos@openbsd.org
+# where to send bitches about this port
+#
+MAINTAINER=		marc@openbsd.org
 
-LIB_DEPENDS+=	png\\.0\\.[7-9]:${PORTSDIR}/graphics/png
-LIB_DEPENDS+=	jpeg\\.7\\.:${PORTSDIR}/graphics/jpeg
-LIB_DEPENDS+=	tiff\\.3\\.:${PORTSDIR}/graphics/tiff
-LIB_DEPENDS+=	Xpm\\.4\\.:${PORTSDIR}/graphics/xpm
+# where the source files and patches can be fetched
+#
+MASTER_SITES=		ftp://ftp.gimp.org/pub/gimp/v1.0/v1.0.0/ \
+	ftp://ftp.ameth.org:/pub/mirrors/ftp.gimp.org/pub/gimp/v1.0/v1.0.0/
+DISTFILES=		${DISTNAME}${EXTRACT_SUFX} ${EXTRANAME}${EXTRACT_SUFX}
 
-#BROKEN=		"obsolete, distfile no longer available"
-
-REQUIRES_MOTIF=	yes
-USE_X11=	yes
-
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	--x-libraries=$(X11BASE)/lib --x-includes=$(X11BASE)/include
-
-post-extract:
-	mv $(WRKSRC)/gimprc $(WRKSRC)/gimprc.orig
-	sed "s/\/usr\/local/`echo $(PREFIX)|sed s/\\\\//\\\\\\\\\\\\//g`/g" < $(WRKSRC)/gimprc.orig > $(WRKSRC)/gimprc
-
-do-install:
-	mkdir -p $(PREFIX)/lib/gimp
-	mkdir -p $(PREFIX)/lib/gimp/brushes
-	mkdir -p $(PREFIX)/lib/gimp/plug-ins
-	$(INSTALL_PROGRAM) $(WRKSRC)/app/gimp $(PREFIX)/bin
-	$(INSTALL_DATA) $(WRKSRC)/gimprc $(PREFIX)/lib/gimp
-	$(INSTALL_DATA) $(WRKSRC)/brushes/* $(PREFIX)/lib/gimp/brushes
-	for f in `find $(WRKSRC)/plug-ins -perm -0111 -type f -print`; \
-	do $(INSTALL_PROGRAM) $$f $(PREFIX)/lib/gimp/plug-ins/`$(BASENAME) $$f`;done
-
-post-install:
-	@echo "Each user must copy $(PREFIX)/lib/gimp/gimprc"
-	@echo "to his home directory as .gimprc."
-.if !defined(NOPORTDOCS)
-	mkdir -p $(PREFIX)/share/doc/gimp
-	cp -r $(WRKSRC)/docs/* $(PREFIX)/share/doc/gimp
-	chmod a+r $(PREFIX)/share/doc/gimp
+# Dependencies
+#
+LIB_DEPENDS=		gtk\\.1\\.:${PORTSDIR}/x11/gtk+ \
+			jpeg\\.62\\.:${PORTSDIR}/graphics/jpeg \
+			mpeg\\.1\\.:${PORTSDIR}/graphics/mpeg-lib \
+			png\\.1\\.:${PORTSDIR}/graphics/png \
+			tiff34\\.1\\.:${PORTSDIR}/graphics/tiff34
+OS_RELEASE!=		uname -r
+OS_NO_XPM=		2.2
+.if ( ${OS_RELEASE} <= ${OS_NO_XPM} )
+LIB_DEPENDS+=		Xpm\\.4\\.:${PORTSDIR}/graphics/xpm
 .endif
+
+# build/configuration variables
+#
+USE_X11=		yes
+GNU_CONFIGURE=		yes
+.if (${MACHINE_ARCH} != "alpha")
+CONFIGURE_ARGS+=	--enable-shared
+.endif
+CONFIGURE_ARGS+=	--enable-static
+CONFIGURE_ENV=		${SETENV} CPPFLAGS=-I/usr/local/include \
+			LDFLAGS=-L/usr/local/lib
+
+# Configure the gimp-data-extras, too.
+#
+post-configure:
+	@(cd ${WRKDIR}/${EXTRANAME} && \
+	    CC="${CC}" ac_cv_path_CC="${CC}" CFLAGS="${CFLAGS}" \
+	    INSTALL="/usr/bin/install -c -o ${BINOWN} -g ${BINGRP}" \
+	    INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
+	    INSTALL_DATA="${INSTALL_DATA}" \
+	    ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS})
+
+# Update shared lib info just in case the port install procedure didn't
+# install the extras.
+#
+post-install:
+	${LDCONFIG} -m ${PREFIX}/lib
+	cd ${WRKDIR}/${EXTRANAME} && make install
 
 .include <bsd.port.mk>
