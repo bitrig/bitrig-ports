@@ -1,27 +1,31 @@
-The GIMP is designed to provide an intuitive graphical interface to a
-variety of image editing operations. Here is a list of the GIMP's 
-major features:
+The GNU Image Manipulation Program (GIMP) is a powerful tool for the
+preparation and manipulation of digital images.  The GIMP provides the user
+with a wide variety of image manipulation, painting, processing, and
+rendering tools.  The key to the GIMP's power lies in its flexible
+core and easily extensible design.  The GIMP's open design and
+extensible architecture make for a very powerful end product which can
+continue to be extended to meet the needs of the photo compositor,
+image retoucher, web graphics designer, or digital illustrator for a
+very long time.
 
- Image viewing
- -------------
+The GIMP's extensible plug-in architecture allows for image
+manipulation procedures and other functionality to be easily added
+without requiring any change to the application core.  A plug-in can
+provide functionality as simple as rotating an image, or as
+complicated as rendering iterated function system fractals.  There are
+nearly 150 plug-ins available in version 1.0, and more are sure to
+follow.
 
-   *  Supports 8, 15, 16 and 24 bit color.
-   *  Ordered and Floyd-Steinberg dithering for 8 bit displays.
-   *  View images as rgb color, grayscale or indexed color.
-   *  Simultaneously edit multiple images.
-   *  Zoom and pan in real-time.
-   *  GIF, JPEG, PNG, TIFF and XPM support.
+The plug-in architecture also allows the GIMP to support a wide
+variety of file formats.  File operations are implemented by special
+file plug-ins, allowing additional file formats to be added
+without modification to the core.  File formats supported in version
+1.0 include the popular GIF and JPEG standards, as well as PNG, TIFF,
+XPM, SGI, PCX, and Windows BMP.
 
- Image editing
- -------------
+The GIMP's home page is at 
 
-   *  Selection tools including rectangle, ellipse, free, fuzzy, bezier 
-      and intelligent.
-   *  Transformation tools including rotate, scale, shear and flip.
-   *  Painting tools including bucket, brush, airbrush, clone, convolve,
-      blend and text.
-   *  Effects filters (such as blur, edge detect).
-   *  Channel & color operations (such as add, composite, decompose).
-   *  Plug-ins which allow for the easy addition of new file formats and
-      new effect filters.
-   *  Multiple undo/redo.
+	http://www.gimp.org
+
+Please be sure to visit this site for information, documentation,
+tutorials, news, etc.  All things GIMP-ish are available from there.

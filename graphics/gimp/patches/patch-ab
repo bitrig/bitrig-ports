@@ -1,12 +1,11 @@
-*** app/boundary.c.orig	Fri Dec 12 00:10:12 1997
---- app/boundary.c	Fri Dec 12 00:10:16 1997
-***************
-*** 16,22 ****
-   * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-   */
-  #include <stdlib.h>
-- #include <values.h>
-  #include "appenv.h"
-  #include "errors.h"
-  #include "gdisplay.h"
---- 16,21 ----
+--- plug-ins/tiff/tiff.c.~1~	Sat May 30 23:49:20 1998
++++ plug-ins/tiff/tiff.c	Sun Jun  7 20:53:53 1998
+@@ -32,7 +32,7 @@
+ 
+ #include <stdlib.h>
+ #include <string.h>
+-#include <tiffio.h>
++#include <tiffio34.h>
+ #include "gtk/gtk.h"
+ #include "libgimp/gimp.h"
+ 
