@@ -1,7 +1,0 @@
-bin/ntpdate
-bin/ntpq
-bin/ntptrace
-bin/xntpd
-bin/xntpdc
-bin/tickadj
-bin/ntptime
