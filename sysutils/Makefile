@@ -1,37 +1,38 @@
-# $OpenBSD: Makefile,v 1.1 1997/11/27 23:44:48 niklas Exp $
-# $FreeBSD: Makefile,v 1.26 1997/11/20 08:58:51 tg Exp $
+# Ports collection makefile for:        xps
+# Version required:     1.2
+# Date created:         28 April 2001
+# Whom:                 Angelos D. Keromytis (angelos@openbsd.org)
+#
+# $OpenBSD: Makefile,v 1.1.1.1 2001/05/07 05:35:58 angelos Exp $
 #
 
-    SUBDIR += LPRng
-#    SUBDIR += afio
-#    SUBDIR += asrpages
-#    SUBDIR += cdrecord
-#    SUBDIR += cd-write
-#    SUBDIR += contool
-    SUBDIR += idled
-    SUBDIR += lsof
-#    SUBDIR += manck
-#    SUBDIR += mei
-#    SUBDIR += mkisofs
-#    SUBDIR += pib
-    SUBDIR += rtty
-    SUBDIR += setquota
-#    SUBDIR += skill
-    SUBDIR += socket
-#    SUBDIR += star
-    SUBDIR += stat
-#    SUBDIR += su2
-    SUBDIR += tcplist
-#    SUBDIR += top
-#    SUBDIR += tua
-#    SUBDIR += xbatt
-#    SUBDIR += xcpustate
-#    SUBDIR += xdu
-#    SUBDIR += xloadface
-    SUBDIR += xntpd
-#    SUBDIR += xosview
-#    SUBDIR += xperfmon
-#    SUBDIR += xsysinfo
-#    SUBDIR += xsysstats
+DISTNAME=       xps-3.21
+CATEGORIES=     sysutils x11
 
-.include <bsd.port.subdir.mk>
+MASTER_SITES=   ftp://netwinder.org/users/r/rocky/
+
+MAINTAINER=     ports@openbsd.org
+
+PERMIT_PACKAGE_CDROM=   Yes
+PERMIT_PACKAGE_FTP=     Yes
+PERMIT_DISTFILES_CDROM= Yes
+PERMIT_DISTFILES_FTP=   Yes
+
+HOMEPAGE=       http://www.netwinder.org/~rocky/xps-home/
+
+USE_GMAKE=		Yes
+
+CONFIGURE_STYLE=	gnu
+CONFIGURE_ARGS=		--x-includes=/usr/local/include \
+			--with-motif-libs=/usr/local/lib
+
+USE_X11=		Yes
+NEED_MOTIF=		Yes
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKBUILD}/xps ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKBUILD}/docs/xps.man ${PREFIX}/man/man1/xps.1
+	${INSTALL_DATA} ${WRKBUILD}/Xps \
+		${PREFIX}/lib/X11/app-defaults
+
+.include <bsd.port.mk>
