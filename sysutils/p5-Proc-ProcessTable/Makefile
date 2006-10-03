@@ -1,12 +1,16 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2003/05/30 14:41:39 lebel Exp $
+# $OpenBSD: Makefile,v 1.1.1.2 2006/10/03 16:08:24 jasper Exp $
 
-COMMENT=	"Perl extension to access the unix process table"
+NOT_FOR_ARCHS=	${NO_SHARED_ARCHS}
 
-DISTNAME=	Proc-ProcessTable-0.38
+COMMENT=	"interface to the system's process table"
+
+DISTNAME=	Proc-ProcessTable-0.41
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	sysutils perl5
 
-# Artistic
+MAINTAINER=	William Yodlowsky <bsd@openbsd.rutgers.edu>
+
+# Artistic License
 PERMIT_PACKAGE_CDROM=	Yes
 PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
@@ -14,6 +18,6 @@ PERMIT_DISTFILES_FTP=	Yes
 
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Proc/}
 
-CONFIGURE_STYLE= perl
+CONFIGURE_STYLE=	perl
 
 .include <bsd.port.mk>
