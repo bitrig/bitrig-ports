@@ -1,17 +1,30 @@
-# OpenBSD makefile for:	wm2
-# Version required:	4
-# Date created:		16 March 1998	
-# Whom:			Thomas Graichen
-#
-# $OpenBSD: Makefile,v 1.1.1.1 1998/03/16 12:33:25 graichen Exp $
-#
+# $OpenBSD: Makefile,v 1.1.1.2 2007/04/27 18:31:12 matthieu Exp $
 
-DISTNAME=	wm2-4
-CATEGORIES=	x11
-MASTER_SITES=	http://www.netcomuk.co.uk/~cannam/
+COMMENT=		"stylish window manager"
 
-MAINTAINER=	graichen@OpenBSD.ORG
+DISTNAME=		wm2-4
+CATEGORIES=		x11
 
-ALL_TARGET=	wm2
+HOMEPAGE=		http://www.all-day-breakfast.com/wm2/
+
+# X11/MIT
+PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_FTP=	Yes
+PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_DISTFILES_FTP=	Yes
+
+WANTLIB=		X11 Xext Xau Xdmcp c m stdc++
+
+MASTER_SITES=		http://www.all-day-breakfast.com/wm2/
+
+FAKE_FLAGS=		PREFIX="${PREFIX}" DESTDIRNAME=${WRKINST}
+
+USE_X11=		Yes
+
+NO_REGRESS=		Yes
+
+post-patch:
+	cp ${FILESDIR}/Makefile ${WRKSRC}
+	cp ${FILESDIR}/wm2.1 ${WRKSRC}
 
 .include <bsd.port.mk>
