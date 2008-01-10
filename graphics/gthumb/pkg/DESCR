@@ -1,6 +1,4 @@
-gThumb lets you browse your hard disk, showing you thumbnails of image
-files.  It also lets you view single files (including GIF animations),
-add comments to images, organize images in catalogs, print images, view
-slideshows, set your desktop background, and more.
-
-WWW: ${HOMEPAGE}
+gThumb is an image viewer and organizer for the GNOME desktop
+environment.  It was originally based on GQView, and is designed to have
+a clean, simple interface.  Via gPhoto, gThumb can also acquire data
+directly from digital cameras.
