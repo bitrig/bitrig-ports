@@ -1,62 +1,46 @@
-# $OpenBSD: Makefile,v 1.1 1997/11/27 23:44:36 niklas Exp $
-# $FreeBSD: Makefile,v 1.36 1997/10/04 15:54:31 jkh Exp $
-#
+# $OpenBSD: Makefile,v 1.1.1.1 2009/02/09 14:42:32 form Exp $
+# $RuOBSD: Makefile,v 1.4 2009/02/07 10:28:55 form Exp $
 
-SUBDIR += archivers
-#SUBDIR += astro
-#SUBDIR += audio
-SUBDIR += benchmarks
-#SUBDIR += cad
-SUBDIR += chinese
-SUBDIR += comms
-#SUBDIR += converters
-SUBDIR += databases
-SUBDIR += devel
-SUBDIR += editors
-SUBDIR += emulators
-SUBDIR += games
-#SUBDIR += german
-SUBDIR += graphics
-#SUBDIR += japanese
-#SUBDIR += korean
-#SUBDIR += lang
-SUBDIR += mail
-#SUBDIR += math
-#SUBDIR += mbone
-SUBDIR += misc
-SUBDIR += net
-SUBDIR += news
-#SUBDIR += plan9
-#SUBDIR += print
-#SUBDIR += russian
-SUBDIR += security
-SUBDIR += shells
-SUBDIR += sysutils
-SUBDIR += textproc
-#SUBDIR += vietnamese
-SUBDIR += www
-#SUBDIR += x11
+ONLY_FOR_ARCHS=		amd64 i386
 
-PORTSTOP=	yes
+COMMENT=		thorough, stand alone memory test
+VERSION=		2.11
+DISTNAME=		memtest86+-${VERSION}
+CATEGORIES=		sysutils
 
-.include <bsd.port.subdir.mk>
+HOMEPAGE=		http://www.memtest.org
 
-index:
-	@rm -f ${.CURDIR}/INDEX
-	@make ${.CURDIR}/INDEX
+MAINTAINER=		Oleg Safiullin <form@openbsd.org>
 
-${.CURDIR}/INDEX:
-	@echo -n "Generating INDEX - please wait.."
-	@make describe ECHO_MSG="echo > /dev/null" > ${.CURDIR}/INDEX
-	@echo " Done."
+# GPLv2
+PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_FTP=	Yes
+PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_DISTFILES_FTP=	Yes
 
-print-index:	${.CURDIR}/INDEX
-	@awk -F\| '{ printf("Port:\t%s\nPath:\t%s\nInfo:\t%s\nMaint:\t%s\nIndex:\t%s\nB-deps:\t%s\nR-deps:\t%s\n\n", $$1, $$2, $$4, $$6, $$7, $$8, $$9); }' < ${.CURDIR}/INDEX
+MASTER_SITES=		${HOMEPAGE}/download/${VERSION}/
 
-search:	${.CURDIR}/INDEX
-.if !defined(key)
-	@echo "The search target requires a keyword parameter,"
-	@echo "e.g.: \"make search key=somekeyword\""
-.else
-	@grep -i ${key} ${.CURDIR}/INDEX | awk -F\| '{ printf("Port:\t%s\nPath:\t%s\nInfo:\t%s\nMaint:\t%s\nIndex:\t%s\nB-deps:\t%s\nR-deps:\t%s\n\n", $$1, $$2, $$4, $$6, $$7, $$8, $$9); }'
-.endif
+USE_GMAKE=		Yes
+NO_REGRESS=		Yes
+
+post-build:
+	@cd ${WRKBUILD} && sh ${WRKDIST}/makeiso.sh
+	@sed -e s,!!PREFIX!!,${TRUEPREFIX},g ${FILESDIR}/README.OpenBSD \
+	    > ${WRKBUILD}/README.OpenBSD
+
+do-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/memtest86+
+	${INSTALL_DATA} ${WRKDIST}/README ${PREFIX}/share/memtest86+
+	${INSTALL_DATA} ${WRKBUILD}/README.OpenBSD ${PREFIX}/share/memtest86+
+	${INSTALL_DATA} ${WRKBUILD}/memtest ${PREFIX}/share/memtest86+
+	${INSTALL_DATA} ${WRKBUILD}/memtest_s \
+	    ${PREFIX}/share/memtest86+/memtest-serial
+	${INSTALL_DATA} ${WRKDIST}/memtest.bin \
+	    ${PREFIX}/share/memtest86+/memtest.floppy
+	${INSTALL_DATA} ${WRKDIST}/memtest_s.bin \
+	    ${PREFIX}/share/memtest86+/memtest-serial.floppy
+	${INSTALL_DATA} ${WRKDIST}/memtest.iso ${PREFIX}/share/memtest86+
+	${INSTALL_DATA} ${WRKDIST}/memtest_s.iso \
+	    ${PREFIX}/share/memtest86+/memtest-serial.iso
+
+.include <bsd.port.mk>
