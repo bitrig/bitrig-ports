@@ -25,15 +25,20 @@
  * All Rights Reserved.
  *
  * $Log: sound_sndio.cxx,v $
+ * Revision 1.2  2010/05/11 07:23:23  espie
+ * make it compile on gcc4, by making the relevant patch dependent on
+ * compiler version.
+ * also removes lvalue cast, that's not ansi.
+ *
  * Revision 1.1.1.1  2010/03/23 21:10:17  ajacoutot
  * Import ptlib-2.6.5
- * 
+ *
  * PTLib is a moderately large C++ class library that originated many years
  * ago as a method to produce applications that run on both Microsoft
  * Windows and Unix X-Windows systems. It also was to have a Macintosh port
  * as well, but this never eventuated. In those days it was called the
  * PWLib the Portable Windows Library.
- * 
+ *
  * Since then, the availability of multi-platform GUI toolkits such as KDE
  * and wxWindows, and the development of the OpenH323 and OPAL projects as
  * primary user of the library, has emphasised the focus on networking, I/O
@@ -246,7 +251,7 @@ PBoolean PSoundChannelSNDIO::Write(const void * buf, PINDEX len)
       return FALSE;
     }
     len -= did;
-    (char *)buf += did;
+    buf = (char*)buf + did;
     tot += did;
   }
   lastWriteCount += tot;
@@ -270,7 +275,7 @@ PBoolean PSoundChannelSNDIO::Read(void * buf, PINDEX len)
       return FALSE;
     }
     len -= did;
-    (char *)buf += did;
+    buf = (char*)buf + did;
     tot += did;
   }
   lastReadCount += tot;
