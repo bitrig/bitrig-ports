@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2010/10/18 19:20:42 espie Exp $
+# $OpenBSD: Makefile,v 1.24 2010/10/24 21:11:46 sthen Exp $
 
 BROKEN-hppa =		build stalls during bootstrap in packages/chr 
 
@@ -45,9 +45,9 @@ MAKE_FLAGS =		SONAMEOPT= \
 
 WANTLIB += ICE SM X11 Xau Xdmcp Xext Xft Xinerama Xpm Xrender
 WANTLIB += Xt c expat fontconfig freetype m ncurses pthread pthread-stubs
-WANTLIB += readline xcb z
+WANTLIB += readline xcb z jpeg
 
-LIB_DEPENDS =		jpeg::graphics/jpeg
+LIB_DEPENDS =		::graphics/jpeg
 SUBST_VARS +=		BOOT
 
 post-install:
