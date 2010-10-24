@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.7 2010/09/26 20:08:12 martynas Exp $
+# $OpenBSD: Makefile,v 1.8 2010/10/24 21:06:28 sthen Exp $
 
 COMMENT=	berkeley's implementation of the logo programming language
 DISTNAME=	ucblogo-5.5
-PKGNAME=	${DISTNAME}p1
+REVISION=	1
 CATEGORIES=	lang
 
 MASTER_SITES=	http://openbsddistfiles.com/jolan/
