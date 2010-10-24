@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2010/10/24 21:11:46 sthen Exp $
+# $OpenBSD: Makefile,v 1.25 2010/10/24 21:24:05 ajacoutot Exp $
 
 BROKEN-hppa =		build stalls during bootstrap in packages/chr 
 
@@ -36,7 +36,6 @@ CONFIGURE_ARGS =	--enable-mt \
 			--without-sgml \
 			${CONFIGURE_SHARED}
 
-USE_X11 =		Yes
 USE_GMAKE =		Yes
 USE_GROFF =	Yes
 
