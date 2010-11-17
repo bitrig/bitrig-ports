@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2010/10/24 21:24:04 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.30 2010/11/17 08:05:18 espie Exp $
 # losely based on the FreeBSD port
 
 .if ${MACHINE_ARCH} == "alpha" || ${MACHINE_ARCH} == "vax" || \
@@ -65,8 +65,8 @@ SCM_DATA+=	x11.scm xevent.scm
 WANTLIB+=	X11 pthread-stubs xcb
 .endif
 
-BUILD_DEPENDS=::devel/slib
-RUN_DEPENDS=::devel/slib
+BUILD_DEPENDS=devel/slib
+RUN_DEPENDS=devel/slib
 
 FEATURE_LIST=
 .for f in ${FEATURES}
