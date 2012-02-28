@@ -5,5 +5,6 @@
      SUBDIR += gnustep
      SUBDIR += haskell-platform
      SUBDIR += msp430
+     SUBDIT += syscomp
 
 .include <bsd.port.subdir.mk>
