@@ -15,7 +15,7 @@ PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB += c
 
-MASTER_SITES=	http://localhost/
+MASTER_SITES=	http://www.bitrig.org/files/
 
 NO_REGRESS=	Yes
 
