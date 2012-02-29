@@ -1,0 +1,12 @@
+$OpenBSD$
+--- gdb/doc/Makefile.in.orig	Wed Feb 29 10:50:22 2012
++++ gdb/doc/Makefile.in	Wed Feb 29 10:50:24 2012
+@@ -58,7 +58,7 @@ TEXI2DVI=texi2dvi
+ 
+ # Where is the source dir for the READLINE library doc?  
+ # Traditionally readline is in .. or .
+-READLINE_DIR = ${gdbdir}/../../../lib/libreadline/doc
++READLINE_DIR = ${gdbdir}/../libreadline/doc
+ 
+ # The GDB/MI docs come from a sibling directory ../mi
+ GDBMI_DIR = ${gdbdir}/mi

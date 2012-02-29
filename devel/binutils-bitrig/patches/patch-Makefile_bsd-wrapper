@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.bsd-wrapper.orig	Wed Feb 29 09:37:36 2012
++++ Makefile.bsd-wrapper	Wed Feb 29 14:13:23 2012
+@@ -15,7 +15,7 @@ CONF_SUBDIRS=	opcodes bfd
+ 
+ # This allows moving the whole binutils installation around for 
+ # testing purposes
+-PREFIX=/usr
++PREFIX=/usr/local
+ .if ${PREFIX} != "/usr"
+ MANDIR=${PREFIX}/share/man/man
+ .endif
