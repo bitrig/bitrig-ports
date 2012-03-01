@@ -1,0 +1,30 @@
+@comment $OpenBSD$
+info/dir
+@man man/man1/info.1
+@man man/man1/infokey.1
+@man man/man1/install-info.1
+@man man/man1/makeinfo.1
+@man man/man1/texi2dvi.1
+@man man/man1/texi2pdf.1
+@man man/man1/texindex.1
+@man man/man5/info.5
+@man man/man5/texinfo.5
+usr/
+usr/local/
+usr/local/bin/
+@bin usr/local/bin/info
+@bin usr/local/bin/infokey
+@bin usr/local/bin/install-info
+@bin usr/local/bin/makeinfo
+usr/local/bin/texi2dvi
+usr/local/bin/texi2pdf
+@bin usr/local/bin/texindex
+usr/local/share/
+usr/local/share/info/
+@info usr/local/share/info/info-stnd.info
+@info usr/local/share/info/info.info
+@info usr/local/share/info/texinfo
+usr/local/share/texinfo/
+usr/local/share/texinfo/texinfo.cat
+usr/local/share/texinfo/texinfo.dtd
+usr/local/share/texinfo/texinfo.xsl
