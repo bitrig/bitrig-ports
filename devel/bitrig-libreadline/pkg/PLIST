@@ -1,0 +1,8 @@
+@comment $OpenBSD$
+%%SHARED%%
+@info info/history.info
+@info info/readline.info
+lib/libreadline.a
+lib/libreadline_p.a
+lib/libreadline_pic.a
+@man man/man3/readline.3

@@ -1,0 +1,29 @@
+$OpenBSD$
+--- doc/Makefile.orig	Thu Feb 23 19:03:38 2012
++++ doc/Makefile	Thu Mar  1 11:35:10 2012
+@@ -2,6 +2,10 @@
+ 
+ .include <bsd.own.mk>
+ 
++LOCALBASE?=/usr/local
++SHAREDIR=${LOCALBASE}/info
++MANDIR=${LOCALBASE}/man/man
++
+ INFO=	readline.info history.info
+ RLSRC = rlman.texinfo rluser.texinfo rltech.texinfo manvers.texinfo \
+ 	rluserman.texinfo
+@@ -24,11 +28,11 @@ maninstall:
+ install: ${INFO} maninstall
+ 	@-for i in ${INFO}; do \
+ 		echo ${INSTALL} ${INSTALL_COPY} -o ${DOCOWN} -g ${DOCGRP} \
+-		    -m ${DOCMODE} $$i ${DESTDIR}${SHAREDIR}/info/$$i; \
++		    -m ${DOCMODE} $$i ${DESTDIR}${SHAREDIR}/$$i; \
+ 		${INSTALL} ${INSTALL_COPY} -o ${DOCOWN} -g ${DOCGRP} \
+-		    -m ${DOCMODE} $$i ${DESTDIR}${SHAREDIR}/info/$$i; \
++		    -m ${DOCMODE} $$i ${DESTDIR}${SHAREDIR}/$$i; \
+ 	done
+-	install-info --info-dir=${DESTDIR}${SHAREDIR}/info readline.info
++	install-info --info-dir=${DESTDIR}${SHAREDIR} readline.info
+ 
+ cleandir:
+ 	-rm -f ${INFO}
