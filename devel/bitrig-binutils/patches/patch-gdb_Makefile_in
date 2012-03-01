@@ -1,0 +1,16 @@
+$OpenBSD$
+--- gdb/Makefile.in.orig	Wed Feb 29 23:05:15 2012
++++ gdb/Makefile.in	Thu Mar  1 15:46:56 2012
+@@ -122,10 +122,10 @@ BFD_SRC = $(srcdir)/$(BFD_DIR)
+ BFD_CFLAGS = -I$(BFD_DIR) -I$(BFD_SRC)
+ 
+ # Where is the READLINE library?  Typically in ../readline.
+-#READLINE_DIR = ../readline
++READLINE_DIR = ../readline
+ #READLINE = $(READLINE_DIR)/libreadline.a
+ #READLINE_SRC = $(srcdir)/$(READLINE_DIR)
+-#READLINE_CFLAGS = -I$(READLINE_SRC)/..
++READLINE_CFLAGS = -I$(LOCALBASE)/include
+ READLINE = -lreadline
+ 
+ WARN_CFLAGS = @WARN_CFLAGS@

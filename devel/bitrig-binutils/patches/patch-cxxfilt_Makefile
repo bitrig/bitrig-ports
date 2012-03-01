@@ -1,0 +1,16 @@
+$OpenBSD$
+--- cxxfilt/Makefile.orig	Thu Feb 23 19:03:54 2012
++++ cxxfilt/Makefile	Thu Mar  1 18:22:24 2012
+@@ -1,8 +1,11 @@
++LOCALBASE?=/usr/local
++BINDIR=${LOCALBASE}/bin
++
+ NOMAN=1
+ PROG=c++filt
+ 
+ SRCS=	cxxfilt.c
+-LIBIBERTY_INCDIR=${.CURDIR}/../../lib/libiberty/include
++LIBIBERTY_INCDIR=${LOCALBASE}/include/libiberty
+ 
+ CFLAGS+=-I${LIBIBERTY_INCDIR}
+ LDADD=-liberty
