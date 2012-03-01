@@ -31,6 +31,7 @@
      SUBDIR += avr
      SUBDIR += avrdude
      SUBDIR += beediff
+     SUBDIR += binutils-bitrig
      SUBDIR += bison
      SUBDIR += blame
      SUBDIR += boehm-gc
