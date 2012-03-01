@@ -1,0 +1,30 @@
+@comment $OpenBSD$
+@bin bin/cvs
+bin/cvsbug
+bin/rcs2log
+@info info/cvs.info
+@info info/cvsclient.info
+libdata/cvs/
+libdata/cvs/contrib/
+libdata/cvs/contrib/README
+libdata/cvs/contrib/intro.doc
+libexec/cvs/
+libexec/cvs/contrib/
+libexec/cvs/contrib/clmerge
+libexec/cvs/contrib/cln_hist
+libexec/cvs/contrib/commit_prep
+libexec/cvs/contrib/cvs2vendor
+libexec/cvs/contrib/cvs_acls
+libexec/cvs/contrib/cvscheck
+libexec/cvs/contrib/debug_check_log
+libexec/cvs/contrib/log
+libexec/cvs/contrib/log_accum
+libexec/cvs/contrib/mfpipe
+libexec/cvs/contrib/rcs-to-cvs
+libexec/cvs/contrib/rcs2log
+libexec/cvs/contrib/rcslock
+libexec/cvs/contrib/sccs2rcs
+@man man/man1/cvs.1
+@man man/man1/rcs2log.1
+@man man/man5/cvs.5
+@man man/man8/cvsbug.8
