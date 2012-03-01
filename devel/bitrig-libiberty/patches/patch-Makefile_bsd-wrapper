@@ -1,6 +1,6 @@
 $OpenBSD$
 --- Makefile.bsd-wrapper.orig	Thu Feb 23 19:03:38 2012
-+++ Makefile.bsd-wrapper	Thu Mar  1 13:02:32 2012
++++ Makefile.bsd-wrapper	Thu Mar  1 15:36:02 2012
 @@ -1,5 +1,10 @@
  #	$OpenBSD: Makefile.bsd-wrapper,v 1.13 2010/09/04 14:39:05 miod Exp $
  
@@ -28,9 +28,21 @@ $OpenBSD$
  		&& touch config.status
  
  all:	libiberty.info
-@@ -53,6 +58,6 @@ libiberty.info:
+@@ -52,7 +57,18 @@ libiberty.info:
+ 	makeinfo --no-split -I${.CURDIR}/src ${.CURDIR}/src/libiberty.texi
  
  afterinstall:
++	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m 755 \
++	    ${DESTDIR}${INCDIR}
++	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m 755 \
++	    ${DESTDIR}${INCDIR}/libiberty
++	@cd ${.CURDIR}/include; for i in *.h; do \
++	    j="cmp -s $$i ${DESTDIR}${INCDIR}/$$i || \
++		${INSTALL} ${INSTALL_COPY} -o ${BINOWN} -g ${BINGRP} -m 444 $$i \
++		${DESTDIR}${INCDIR}/libiberty"; \
++	    echo $$j; \
++	    eval "$$j"; \
++	done
  	${INSTALL} ${INSTALL_COPY} -o ${DOCOWN} -g ${DOCGRP} -m ${DOCMODE} \
 -	    libiberty.info $(DESTDIR)/usr/share/info
 +	    libiberty.info $(DESTDIR)${SHAREDIR}
