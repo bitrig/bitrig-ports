@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+%%SHARED%%
+@info info/libiberty.info
+lib/libiberty.a
+lib/libiberty_p.a
+lib/libiberty_pic.a

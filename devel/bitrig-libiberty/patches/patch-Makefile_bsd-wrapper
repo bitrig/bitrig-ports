@@ -1,0 +1,38 @@
+$OpenBSD$
+--- Makefile.bsd-wrapper.orig	Thu Feb 23 19:03:38 2012
++++ Makefile.bsd-wrapper	Thu Mar  1 13:02:32 2012
+@@ -1,5 +1,10 @@
+ #	$OpenBSD: Makefile.bsd-wrapper,v 1.13 2010/09/04 14:39:05 miod Exp $
+ 
++LOCALBASE?=	/usr/local
++INCDIR=		${LOCALBASE}/include
++LIBDIR=		${LOCALBASE}/lib
++SHAREDIR=	${LOCALBASE}/info
++
+ LIB=		iberty
+ CPPFLAGS+=	-DHAVE_CONFIG_H -I$(.CURDIR)/src -I$(.CURDIR)/include -I$(.OBJDIR)
+ 
+@@ -37,13 +42,13 @@ needed-list: config.status
+ 	${MAKE} ${GNUCFLAGS} CC=${CC} needed-list
+ 
+ config.status: Makefile.in configure 
+-	PATH="/bin:/usr/bin:/sbin:/usr/sbin" \
++	PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin" \
+ 	INSTALL_PROGRAM="${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP}" \
+ 	MAKEINFO='makeinfo --no-split' \
+ 	CC="${CC}" \
+ 	CFLAGS="${CFLAGS} ${COPTS}" \
+ 	/bin/sh ${.CURDIR}/src/configure \
+-		--prefix=/usr --with-local-prefix=/usr ${CF} \
++		--prefix=${LOCALBASE} --with-local-prefix=${LOCALBASE} ${CF} \
+ 		&& touch config.status
+ 
+ all:	libiberty.info
+@@ -53,6 +58,6 @@ libiberty.info:
+ 
+ afterinstall:
+ 	${INSTALL} ${INSTALL_COPY} -o ${DOCOWN} -g ${DOCGRP} -m ${DOCMODE} \
+-	    libiberty.info $(DESTDIR)/usr/share/info
++	    libiberty.info $(DESTDIR)${SHAREDIR}
+ 
+ .include <bsd.lib.mk>
