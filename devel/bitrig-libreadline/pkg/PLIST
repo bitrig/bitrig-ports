@@ -1,5 +1,14 @@
 @comment $OpenBSD$
 %%SHARED%%
+include/readline/
+include/readline/chardefs.h
+include/readline/history.h
+include/readline/keymaps.h
+include/readline/readline.h
+include/readline/rlconf.h
+include/readline/rlstdc.h
+include/readline/rltypedefs.h
+include/readline/tilde.h
 @info info/history.info
 @info info/readline.info
 lib/libreadline.a
