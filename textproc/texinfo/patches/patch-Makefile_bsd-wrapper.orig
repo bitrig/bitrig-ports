@@ -1,0 +1,52 @@
+$OpenBSD$
+--- Makefile.bsd-wrapper.orig	Wed Nov 30 10:41:50 2011
++++ Makefile.bsd-wrapper	Thu Mar  1 06:58:21 2012
+@@ -1,10 +1,11 @@
+ #	$OpenBSD: Makefile.bsd-wrapper,v 1.41 2007/11/03 15:13:56 espie Exp $
+ 
+-INFODIR=	infodir=/usr/share/info
++INFODIR=	infodir=/usr/local/share/info
+ INFOPATH=	DEFAULT_INFOPATH=/usr/local/info:/usr/share/info:.
+ 
+ MAN=	doc/info.1 doc/install-info.1 doc/makeinfo.1 doc/texi2dvi.1
+ MAN+= doc/texindex.1 doc/info.5 doc/texinfo.5 doc/infokey.1
++MANDIR= ${PREFIX}/man/man
+ 
+ GNUCFLAGS=	CC="${CC}" CFLAGS="${CFLAGS} ${COPTS}" \
+ 	ACLOCAL=true AUTOHEADER=true AUTOCONF=true AUTOMAKE=true \
+@@ -31,16 +32,18 @@ config: .FORCE
+ .ifndef GLOBAL_AUTOCONF_CACHE
+ 	-rm -f config.cache
+ .endif
+-	PATH="/bin:/usr/bin:/sbin:/usr/sbin" \
++	PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin" \
+ 	CFLAGS="${CFLAGS} ${COPTS}" \
+ 	INSTALL_PROGRAM="${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP}" \
+-		/bin/sh ${.CURDIR}/configure --infodir=/usr/share/info --prefix=/usr --disable-nls ${CF}
++		/bin/sh ${.CURDIR}/configure --infodir=${PREFIX}/share/info \
++		--prefix=${PREFIX} --disable-nls ${CF} --mandir=${PREFIX}/man
+ 
+ config.status:
+-	PATH="/bin:/usr/bin:/sbin:/usr/sbin" \
++	PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin" \
+ 	CFLAGS="${CFLAGS} ${COPTS}" \
+ 	INSTALL_PROGRAM="${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP}" \
+-		/bin/sh ${.CURDIR}/configure --infodir=/usr/share/info --prefix=/usr --disable-nls ${CF}
++		/bin/sh ${.CURDIR}/configure --infodir=${PREFIX}/share/info \
++		--prefix=${PREFIX} --disable-nls ${CF} --mandir=${PREFIX}/man
+ 
+ BEFOREMAN=config.status
+ 
+@@ -50,9 +53,9 @@ maninstall:
+ .endif
+ 
+ install:	maninstall
+-	${FSFMAKE} mandir= INSTALL_MAN= DESTDIR=${DESTDIR} install
+-	sh ${.CURDIR}/util/gen-dir-node ${DESTDIR}/usr/share/info > \
+-	    ${DESTDIR}/usr/share/info/dir
++	${FSFMAKE} mandir= INSTALL_MAN= DESTDIR=${DESTDIR}/${PREFIX} install
++	sh ${.CURDIR}/util/gen-dir-node ${DESTDIR}/${PREFIX}/share/info > \
++	    ${DESTDIR}/${PREFIX}/share/info/dir
+ 
+ clean cleandir:
+ 	rm -f ${CLEANFILES}

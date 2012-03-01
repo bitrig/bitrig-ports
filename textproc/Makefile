@@ -341,6 +341,7 @@
      SUBDIR += swish-e
      SUBDIR += tcpdf
      SUBDIR += texi2html
+     SUBDIR += texinfo
      SUBDIR += textutils
      SUBDIR += tre
      SUBDIR += txt2tags
