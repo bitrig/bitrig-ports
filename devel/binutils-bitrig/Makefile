@@ -20,7 +20,6 @@ MASTER_SITES=	http://www.bitrig.org/files/
 NO_REGRESS=	Yes
 
 MAKE_FILE=	Makefile.bsd-wrapper
-
-FAKE_FLAGS=	MANDIR="${PREFIX}/man"
+MAKE_FLAGS=     SYSCONFDIR="${SYSCONFDIR}"
 
 .include <bsd.port.mk>

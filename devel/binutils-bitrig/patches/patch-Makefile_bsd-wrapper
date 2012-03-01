@@ -1,12 +1,39 @@
 $OpenBSD$
---- Makefile.bsd-wrapper.orig	Wed Feb 29 09:37:36 2012
-+++ Makefile.bsd-wrapper	Wed Feb 29 14:13:23 2012
-@@ -15,7 +15,7 @@ CONF_SUBDIRS=	opcodes bfd
+--- Makefile.bsd-wrapper.orig	Wed Feb 29 10:37:36 2012
++++ Makefile.bsd-wrapper	Wed Feb 29 19:54:38 2012
+@@ -15,10 +15,9 @@ CONF_SUBDIRS=	opcodes bfd
  
  # This allows moving the whole binutils installation around for 
  # testing purposes
 -PREFIX=/usr
+-.if ${PREFIX} != "/usr"
+-MANDIR=${PREFIX}/share/man/man
+-.endif
 +PREFIX=/usr/local
- .if ${PREFIX} != "/usr"
- MANDIR=${PREFIX}/share/man/man
- .endif
++BINDIR=${PREFIX}/bin
++MANDIR=${PREFIX}/man/man
+ 
+ MAN=		binutils/doc/addr2line.1 binutils/doc/objcopy.1 \
+ 		binutils/doc/objdump.1 binutils/doc/readelf.1 \
+@@ -90,7 +89,11 @@ do-config: .USE
+ 	CC="${CC}" \
+ 	CFLAGS="${CFLAGS} ${COPTS}" \
+ 	sh ${.CURDIR}/configure --prefix=${PREFIX} \
+-	    --infodir='$${prefix}/share/info' \
++	    --bindir=${PREFIX}/bin \
++	    --mandir=${PREFIX}/man \
++	    --infodir=${PREFIX}/share/info \
++	    --localstatedir=/var \
++	    --sysconfdir=${SYSCONFDIR} \
+ 	    --disable-nls --disable-gdbtk --disable-install-libbfd ${CF} \
+ 	    ${CONFIGTARGET}
+ 	cd ${.OBJDIR} && \
+@@ -117,7 +120,7 @@ config.status: do-config
+ # Need to pass SUBDIRS because of install-info
+ install: maninstall
+ 	SUBDIRS='${INST_SUBDIRS}' ${MAKE} DESTDIR='${DESTDIR}' \
+-	    INSTALL_MAN= \
++	    INSTALL_MAN=${PREFIX}/man \
+ 	    scriptdir=${PREFIX}/libdata \
+ 	    tooldir=${PREFIX} \
+ 	    BSDSRCDIR=${BSDSRCDIR} \
