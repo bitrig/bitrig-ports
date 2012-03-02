@@ -1,3 +1,4 @@
+*.orig
 bulk/
 distfiles/
 logs/
