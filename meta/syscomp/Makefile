@@ -1,12 +1,11 @@
 COMMENT=	System Compiler Meta Package
 
 PKGNAME=	syscomp-1.0
-RELEASE=	0
 
-MAINTAINER=	Marco Peereboom <marco@bitrig.com>
+MAINTAINER=	Marco Peereboom <marco@bitrig.org>
 
-RUN_DEPENDS=	devel/git		\
-		devel/binutils-bitrig	\
-		devel/llvm
+RUN_DEPENDS=	devel/bitrig-binutils \
+		devel/llvm \
+		devel/git
 
 .include <bsd.port.mk>
