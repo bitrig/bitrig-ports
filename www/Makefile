@@ -91,6 +91,7 @@
      SUBDIR += links+
      SUBDIR += links+,no_x11
      SUBDIR += llgal
+     SUBDIR += lynx
      SUBDIR += man2web
      SUBDIR += mantis
      SUBDIR += mediawiki
