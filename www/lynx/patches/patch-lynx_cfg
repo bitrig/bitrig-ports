@@ -1,0 +1,21 @@
+$OpenBSD$
+--- lynx.cfg.orig	Wed Nov 30 11:41:40 2011
++++ lynx.cfg	Thu Mar  1 22:59:27 2012
+@@ -93,7 +93,7 @@
+ #
+ # Normally we expect you will connect to a remote site, e.g., the Lynx starting
+ # site:
+-STARTFILE:http://www.OpenBSD.org/
++STARTFILE:http://www.bitrig.org/
+ #
+ # As an alternative, you may want to use a local URL.  A good choice for this is
+ # the user's home directory:
+@@ -118,7 +118,7 @@ STARTFILE:http://www.OpenBSD.org/
+ # This definition will be overridden if the "LYNX_HELPFILE" environment
+ # variable has been set.
+ #
+-HELPFILE:file://localhost/usr/share/doc/html/lynx_help/lynx_help_main.html
++HELPFILE:file://localhost/usr/local/share/doc/lynx/lynx_help/lynx_help_main.html
+ .ex
+ #HELPFILE:file://localhost/PATH_TO/lynx_help/lynx_help_main.html
+ 

@@ -70,6 +70,7 @@
      SUBDIR += ctm
      SUBDIR += cunit
      SUBDIR += cutils
+     SUBDIR += cvs
      SUBDIR += cvs20hg
      SUBDIR += cvs2cl
      SUBDIR += cvs2svn

@@ -1,0 +1,42 @@
+$OpenBSD$
+--- Makefile.bsd-wrapper.orig	Wed Feb 29 22:11:44 2012
++++ Makefile.bsd-wrapper	Thu Mar  1 09:32:24 2012
+@@ -12,7 +12,7 @@ OPT=-O1
+ 
+ GNUCFLAGS=	CC="${CC}" CFLAGS="${CFLAGS} ${COPTS} ${OPT}"
+ CONFIGURE_ARGS= --with-ssl=/usr --enable-widec --enable-ipv6 --enable-debug
+-HTMLDIR=	/usr/share/doc/html
++HTMLDIR=	${PREFIX}/share/doc/lynx
+ HELPFILES=	keystrokes/alt_edit_help.html keystrokes/bookmark_help.html \
+ 		keystrokes/cookie_help.html keystrokes/dired_help.html \
+ 		keystrokes/edit_help.html keystrokes/environments.html \
+@@ -45,13 +45,13 @@ config: .FORCE
+ 	PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin" \
+ 	${GNUCFLAGS} \
+ 	INSTALL_PROGRAM="${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP}" \
+-	sh ${.CURDIR}/configure --prefix=/usr --sysconfdir=/etc --disable-color-style ${CONFIGURE_ARGS}
++	sh ${.CURDIR}/configure --prefix=${PREFIX} --sysconfdir=${SYSCONFDIR} --disable-color-style --mandir=${PREFIX}/man ${CONFIGURE_ARGS}
+ 
+ config.status:
+ 	PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin" \
+ 	${GNUCFLAGS} \
+ 	INSTALL_PROGRAM="${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP}" \
+-	sh ${.CURDIR}/configure --prefix=/usr --sysconfdir=/etc --disable-color-style ${CONFIGURE_ARGS} ${CF}
++	sh ${.CURDIR}/configure --prefix=${PREFIX} --sysconfdir=${SYSCONFDIR} --disable-color-style --mandir=${PREFIX}/man ${CONFIGURE_ARGS} ${CF}
+ 
+ lynx.1:	${.CURDIR}/lynx.man
+ 	-cp -p ${.ALLSRC} ${.TARGET}
+@@ -71,11 +71,11 @@ helpinstall:
+ 
+ install: maninstall helpinstall
+ 	${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -o ${BINOWN} \
+-	    -g ${BINGRP} -m ${BINMODE} lynx ${DESTDIR}/usr/bin/lynx
++	    -g ${BINGRP} -m ${BINMODE} lynx ${DESTDIR}${PREFIX}/bin/lynx
+ 
+ distribution:
+ 	${INSTALL} ${INSTALL_COPY} -o ${BINOWN} -g ${BINGRP} -m ${NONBINMODE} \
+-            ${.CURDIR}/lynx.cfg ${DESTDIR}/etc/lynx.cfg
++            ${.CURDIR}/lynx.cfg ${DESTDIR}${SYSCONFDIR}/lynx.cfg
+ 
+ clean cleandir:
+ 	-@if [ -e makefile ]; then ${MAKE} distclean; fi

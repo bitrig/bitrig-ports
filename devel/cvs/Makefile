@@ -5,7 +5,7 @@ EXTRACT_SUFX=		.tgz
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.bitrig.org/
-MAINTAINER=		Marco Peereboom <marco@bitrig.org>
+MAINTAINER=		Lawrence Teo <lteo@bitrig.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
