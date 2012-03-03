@@ -3,7 +3,7 @@ $OpenBSD: patch-tools_clang_lib_Driver_Tools_cpp,v 1.8 2011/12/14 22:58:23 sthen
 - let profiling work on OpenBSD
 
 --- tools/clang/lib/Driver/Tools.cpp.orig	Mon Nov  7 04:27:39 2011
-+++ tools/clang/lib/Driver/Tools.cpp	Tue Feb 28 14:01:46 2012
++++ tools/clang/lib/Driver/Tools.cpp	Sat Mar  3 10:17:33 2012
 @@ -1738,8 +1738,11 @@ void Clang::ConstructJob(Compilation &C, const JobActi
      else if (A->getOption().matches(options::OPT_fstack_protector_all))
        StackProtectorLevel = 2;
@@ -34,7 +34,19 @@ $OpenBSD: patch-tools_clang_lib_Driver_Tools_cpp,v 1.8 2011/12/14 22:58:23 sthen
                                getToolChain().GetFilePath("crtbegin.o")));
      } else {
        CmdArgs.push_back(Args.MakeArgString(
-@@ -3831,7 +3838,10 @@ void openbsd::Link::ConstructJob(Compilation &C, const
+@@ -3818,8 +3825,11 @@ void openbsd::Link::ConstructJob(Compilation &C, const
+   std::string Triple = getToolChain().getTripleString();
+   if (Triple.substr(0, 6) == "x86_64")
+     Triple.replace(0, 6, "amd64");
++  // old openbsd path, keep for now
+   CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc-lib/" + Triple +
+                                        "/4.2.1"));
++  CmdArgs.push_back(Args.MakeArgString("-L/usr/local/lib/gcc/" + Triple +
++                                       "/4.6.2"));
+ 
+   Args.AddAllArgs(CmdArgs, options::OPT_L);
+   Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
+@@ -3831,7 +3841,10 @@ void openbsd::Link::ConstructJob(Compilation &C, const
        !Args.hasArg(options::OPT_nodefaultlibs)) {
      if (D.CCCIsCXX) {
        getToolChain().AddCXXStdlibLibArgs(Args, CmdArgs);
@@ -46,7 +58,7 @@ $OpenBSD: patch-tools_clang_lib_Driver_Tools_cpp,v 1.8 2011/12/14 22:58:23 sthen
      }
  
      // FIXME: For some reason GCC passes -lgcc before adding
-@@ -3841,7 +3851,10 @@ void openbsd::Link::ConstructJob(Compilation &C, const
+@@ -3841,7 +3854,10 @@ void openbsd::Link::ConstructJob(Compilation &C, const
      if (Args.hasArg(options::OPT_pthread))
        CmdArgs.push_back("-lpthread");
      if (!Args.hasArg(options::OPT_shared))
