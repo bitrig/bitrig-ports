@@ -7,6 +7,7 @@ COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 LLVM_V =	3.0
 REVISION =	0
 DISTNAME =	llvm-${LLVM_V}
+RELEASE =	0
 
 CATEGORIES =	devel
 
