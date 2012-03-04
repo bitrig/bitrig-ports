@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2012/01/03 21:50:06 landry Exp $
+# $OpenBSD: Makefile,v 1.17 2012/03/03 17:30:17 ajacoutot Exp $
 
 ONLY_FOR_ARCHS =${APM_ARCHS}
 
@@ -36,7 +36,8 @@ FAKE_FLAGS =	sysconfdir=${PREFIX}/share/examples/upower
 USE_GMAKE =	Yes
 USE_LIBTOOL =	Yes
 
-MODULES =	devel/gettext
+MODULES =	devel/gettext \
+		textproc/intltool
 
 LIB_DEPENDS =	sysutils/polkit>=0.101 \
 		x11/dbus-glib
