@@ -1,6 +1,6 @@
 $OpenBSD$
 --- tools/clang/lib/Driver/Tools.cpp.orig	Mon Nov  7 04:27:39 2011
-+++ tools/clang/lib/Driver/Tools.cpp	Sat Mar  3 12:52:04 2012
++++ tools/clang/lib/Driver/Tools.cpp	Mon Mar  5 23:32:08 2012
 @@ -1738,8 +1738,11 @@ void Clang::ConstructJob(Compilation &C, const JobActi
      else if (A->getOption().matches(options::OPT_fstack_protector_all))
        StackProtectorLevel = 2;
@@ -31,7 +31,7 @@ $OpenBSD$
                                getToolChain().GetFilePath("crtbegin.o")));
      } else {
        CmdArgs.push_back(Args.MakeArgString(
-@@ -3816,6 +3823,14 @@ void openbsd::Link::ConstructJob(Compilation &C, const
+@@ -3816,6 +3823,18 @@ void openbsd::Link::ConstructJob(Compilation &C, const
    }
  
    std::string Triple = getToolChain().getTripleString();
@@ -39,14 +39,18 @@ $OpenBSD$
 +  // XXX this is a terrible hack but needed untile we can switch from amd64 to x86_64
 +  if (Triple.substr(0, 5) == "amd64")
 +    Triple.replace(0, 5, "x86_64");
-+  CmdArgs.push_back(Args.MakeArgString("-L/usr/local/lib/gcc/" + Triple +
-+                                       "/4.6.2"));
++  if (Args.hasArg(options::OPT_fpic))
++    CmdArgs.push_back(Args.MakeArgString("-L/usr/local/lib/gcc/" + Triple +
++                                         "/4.6.2/fpic"));
++  else
++    CmdArgs.push_back(Args.MakeArgString("-L/usr/local/lib/gcc/" + Triple +
++                                         "/4.6.2"));
 +
 +  // old openbsd path, keep for now
    if (Triple.substr(0, 6) == "x86_64")
      Triple.replace(0, 6, "amd64");
    CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc-lib/" + Triple +
-@@ -3831,7 +3846,10 @@ void openbsd::Link::ConstructJob(Compilation &C, const
+@@ -3831,7 +3850,10 @@ void openbsd::Link::ConstructJob(Compilation &C, const
        !Args.hasArg(options::OPT_nodefaultlibs)) {
      if (D.CCCIsCXX) {
        getToolChain().AddCXXStdlibLibArgs(Args, CmdArgs);
@@ -58,7 +62,7 @@ $OpenBSD$
      }
  
      // FIXME: For some reason GCC passes -lgcc before adding
-@@ -3840,8 +3858,12 @@ void openbsd::Link::ConstructJob(Compilation &C, const
+@@ -3840,8 +3862,12 @@ void openbsd::Link::ConstructJob(Compilation &C, const
  
      if (Args.hasArg(options::OPT_pthread))
        CmdArgs.push_back("-lpthread");

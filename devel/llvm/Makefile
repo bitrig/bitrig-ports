@@ -7,7 +7,7 @@ COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 LLVM_V =	3.0
 REVISION =	0
 DISTNAME =	llvm-${LLVM_V}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	devel
 
@@ -24,7 +24,7 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-WANTLIB =	c m pthread stdc++
+WANTLIB =	c m pthread
 
 MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
 
