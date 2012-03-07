@@ -3,6 +3,7 @@ COMMENT=		Bitrig binutils
 DISTNAME=		bitrig-binutils-2.15
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		devel
+REVISION=		0
 
 HOMEPAGE=		http://www.bitrig.org/
 MAINTAINER=		Marco Peereboom <marco@bitrig.org>
@@ -23,6 +24,7 @@ MASTER_SITES=	http://www.bitrig.org/files/
 NO_REGRESS=	Yes
 
 MAKE_FILE=	Makefile.bsd-wrapper
-MAKE_FLAGS=     SYSCONFDIR="${SYSCONFDIR}"
+MAKE_FLAGS=     LDFLAGS="-L${LOCALBASE}/lib" \
+		SYSCONFDIR="${SYSCONFDIR}"
 
 .include <bsd.port.mk>
