@@ -1,6 +1,6 @@
 $OpenBSD$
 --- tools/clang/lib/Driver/Tools.cpp.orig	Mon Nov  7 04:27:39 2011
-+++ tools/clang/lib/Driver/Tools.cpp	Wed Mar  7 16:16:31 2012
++++ tools/clang/lib/Driver/Tools.cpp	Wed Mar  7 16:57:21 2012
 @@ -1738,8 +1738,11 @@ void Clang::ConstructJob(Compilation &C, const JobActi
      else if (A->getOption().matches(options::OPT_fstack_protector_all))
        StackProtectorLevel = 2;
@@ -31,7 +31,7 @@ $OpenBSD$
                                getToolChain().GetFilePath("crtbegin.o")));
      } else {
        CmdArgs.push_back(Args.MakeArgString(
-@@ -3816,11 +3823,23 @@ void openbsd::Link::ConstructJob(Compilation &C, const
+@@ -3816,11 +3823,25 @@ void openbsd::Link::ConstructJob(Compilation &C, const
    }
  
    std::string Triple = getToolChain().getTripleString();
@@ -55,11 +55,13 @@ $OpenBSD$
 +    CmdArgs.push_back(Args.MakeArgString("-L/usr/local/lib/gcc/" + Triple +
 +                                         "/4.6.2"));
 +  CmdArgs.push_back("-L/usr/local/lib");
++  CmdArgs.push_back("-rpath");
++  CmdArgs.push_back("/usr/local/lib");
 +
    Args.AddAllArgs(CmdArgs, options::OPT_L);
    Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
    Args.AddAllArgs(CmdArgs, options::OPT_e);
-@@ -3831,7 +3850,10 @@ void openbsd::Link::ConstructJob(Compilation &C, const
+@@ -3831,7 +3852,10 @@ void openbsd::Link::ConstructJob(Compilation &C, const
        !Args.hasArg(options::OPT_nodefaultlibs)) {
      if (D.CCCIsCXX) {
        getToolChain().AddCXXStdlibLibArgs(Args, CmdArgs);
@@ -71,7 +73,7 @@ $OpenBSD$
      }
  
      // FIXME: For some reason GCC passes -lgcc before adding
-@@ -3840,8 +3862,12 @@ void openbsd::Link::ConstructJob(Compilation &C, const
+@@ -3840,8 +3864,12 @@ void openbsd::Link::ConstructJob(Compilation &C, const
  
      if (Args.hasArg(options::OPT_pthread))
        CmdArgs.push_back("-lpthread");
