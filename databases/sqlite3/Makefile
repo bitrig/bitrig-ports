@@ -26,7 +26,7 @@ PERMIT_DISTFILES_FTP=	Yes
 WANTLIB-main=	c ncurses pthread readline
 WANTLIB-lemon=	c
 
-USE_LIBTOOL=	Yes
+USE_LIBTOOL=	gnu
 USE_GROFF =	Yes
 
 CFLAGS+=	-DSQLITE_ENABLE_COLUMN_METADATA \
@@ -35,6 +35,7 @@ CFLAGS+=	-DSQLITE_ENABLE_COLUMN_METADATA \
 		-DSQLITE_ENABLE_RTREE \
 		-DSQLITE_ENABLE_UNLOCK_NOTIFY \
 		-DSQLITE_ENABLE_FTS3
+
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS+=${CONFIGURE_SHARED}
 
@@ -58,6 +59,8 @@ LIB_DEPENDS-tcl = ${BUILD_PKGPATH},-main>=${V}
 WANTLIB-tcl =	sqlite3
 
 CONFIGURE_ARGS+=--with-tcl=${MODTCL_LIBDIR}
+CONFIGURE_ARGS+=--with-readline-inc=-I/usr/local/include
+CONFIGURE_ARGS+=--with-readline-lib="-L/usr/local/lib -lreadline -ltermcap"
 CONFIGURE_ARGS+=TCLSH_CMD="${MODTCL_BIN}"
 CONFIGURE_ENV += TCLLIBDIR=${MODTCL_TCLDIR}/sqlite3
 
@@ -65,10 +68,14 @@ REGRESS_TARGET=	test
 
 .else
 CONFIGURE_ARGS+=--disable-tcl
+CONFIGURE_ARGS+=--with-readline-inc=-I/usr/local/include
+CONFIGURE_ARGS+=--with-readline-lib="-L/usr/local/lib -lreadline -ltermcap"
 CONFIGURE_ARGS+=TCLSH_CMD=none
 CONFIGURE_ENV += CFLAGS=-I"${WRKSRC}/ext/fts3"
 NO_REGRESS=	Yes
 .endif
+
+LIB_DEPENDS-main=	devel/bitrig-libreadline
 
 # Don't include dependency on pthreads, weak pthread functions are
 # used for non-threaded applications.
