@@ -1,7 +1,7 @@
 $OpenBSD$
---- tools/clang/lib/Driver/ToolChains.cpp.orig	Mon Mar  5 22:35:09 2012
-+++ tools/clang/lib/Driver/ToolChains.cpp	Mon Mar  5 23:28:03 2012
-@@ -1193,6 +1193,25 @@ Tool &OpenBSD::SelectTool(const Compilation &C, const 
+--- tools/clang/lib/Driver/ToolChains.cpp.orig	Thu Nov 17 01:40:32 2011
++++ tools/clang/lib/Driver/ToolChains.cpp	Wed Mar  7 16:03:45 2012
+@@ -1193,6 +1193,24 @@ Tool &OpenBSD::SelectTool(const Compilation &C, const 
    return *T;
  }
  
@@ -20,7 +20,6 @@ $OpenBSD$
 +void OpenBSD::AddCXXStdlibLibArgs(const ArgList &Args,
 +                                      ArgStringList &CmdArgs) const {
 +  //llvm::errs() << "doing the linker dance\n";
-+  CmdArgs.push_back("-L/usr/local/lib");
 +  CmdArgs.push_back("-lestdc++");
 +}
 +
