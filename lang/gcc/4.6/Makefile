@@ -221,7 +221,7 @@ post-extract:
 .endif
 
 post-install:
-	ln -sf ${TRUEPREFIX}/lib/libestd++.so.${LIBSTDC_VERSION} \
+	ln -sf ${TRUEPREFIX}/lib/libestdc++.so.${LIBSTDC_VERSION} \
 		/usr/lib/libstdc++.so.${LIBSTDC_VERSION}
 .if ${BUILD_PACKAGES:M-ada}
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/adainclude
