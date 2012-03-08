@@ -1,0 +1,12 @@
+$OpenBSD$
+--- binutils/binutils/Makefile.in.orig	Wed Feb 29 23:05:13 2012
++++ binutils/binutils/Makefile.in	Thu Mar  8 16:52:26 2012
+@@ -226,7 +226,7 @@ BFDLIB = ../bfd/libbfd.la
+ 
+ OPCODES = ../opcodes/libopcodes.la
+ 
+-LIBIBERTY = -liberty
++LIBIBERTY = ../../libiberty/libiberty.a
+ 
+ POTFILES = $(CFILES) $(DEBUG_SRCS) $(HFILES)
+ 
