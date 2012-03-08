@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.349 2012/01/24 01:09:05 nigel Exp $
+# $OpenBSD: Makefile,v 1.351 2012/03/05 18:06:56 landry Exp $
 # $FreeBSD: Makefile,v 1.15 1997/11/22 00:31:24 jseger Exp $
 
      SUBDIR =
      SUBDIR += TclXML
      SUBDIR += agrep
      SUBDIR += antiword
+     SUBDIR += arabica
      SUBDIR += asciidoc
      SUBDIR += aspell
      SUBDIR += boust
@@ -125,6 +126,7 @@
      SUBDIR += p5-Lingua-EN-Fathom
      SUBDIR += p5-Lingua-EN-Inflect
      SUBDIR += p5-Lingua-EN-Inflect-Number
+     SUBDIR += p5-Lingua-EN-Sentence
      SUBDIR += p5-Lingua-EN-Summarize
      SUBDIR += p5-Lingua-EN-Syllable
      SUBDIR += p5-Lingua-PT-Stemmer

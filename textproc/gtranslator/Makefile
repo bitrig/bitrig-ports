@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2012/02/16 22:12:40 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.26 2012/03/05 06:43:53 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -6,6 +6,7 @@ COMMENT=	gettext(1) files editor for GNOME
 
 GNOME_PROJECT=	gtranslator
 GNOME_VERSION=	2.90.8
+REVISION=	0
 
 SHARED_LIBS +=  gtranslator-private       0.0 # 0.0
 
@@ -35,8 +36,10 @@ MODULES=	devel/gettext \
 		devel/dconf \
 		lang/python
 
-RUN_DEPENDS=	devel/gsettings-desktop-schemas
-BUILD_DEPENDS=	${RUN_DEPENDS}
+RUN_DEPENDS=	devel/gsettings-desktop-schemas \
+		devel/iso-codes # src/gtr-language.c
+BUILD_DEPENDS=	${RUN_DEPENDS} \
+		devel/iso-codes
 
 LIB_DEPENDS=	devel/gobject-introspection \
 		devel/json-glib \
