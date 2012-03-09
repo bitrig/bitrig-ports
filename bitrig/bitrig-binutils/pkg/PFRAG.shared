@@ -1,3 +1,2 @@
 @comment $OpenBSD$
-@lib lib/libiberty.so.${LIBiberty_VERSION}
 @lib lib/libreadline.so.${LIBreadline_VERSION}
