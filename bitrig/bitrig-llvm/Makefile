@@ -81,6 +81,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/sorttable.js \
 	    ${WRKSRC}/tools/clang/tools/scan-build/scanview.css \
 	    ${PREFIX}/share/llvm
+	${INSTALL_DATA_DIR} ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKSRC}/docs/CommandGuide/man/man1/* \
 	    ${PREFIX}/share/man/man1
 
