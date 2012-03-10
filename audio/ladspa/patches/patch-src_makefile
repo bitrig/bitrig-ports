@@ -1,16 +1,29 @@
 $OpenBSD: patch-src_makefile,v 1.2 2006/08/04 23:34:39 espie Exp $
---- src/makefile.orig	Sat Jul  6 19:34:20 2002
-+++ src/makefile	Sat Aug  5 00:56:04 2006
-@@ -16,7 +16,7 @@ INSTALL_BINARY_DIR	=	/usr/local/bin/
+--- src/makefile.orig	Tue Nov  6 04:42:45 2007
++++ src/makefile	Sat Mar 10 10:53:16 2012
+@@ -14,8 +14,8 @@ INSTALL_BINARY_DIR	=	/usr/bin/
+ #
  
  INCLUDES	=	-I.
- LIBRARIES	=	-ldl -lm
+-LIBRARIES	=	-ldl -lm
 -CFLAGS		=	$(INCLUDES) -Wall -Werror -O3 -fPIC
++LIBRARIES	=	-lm
 +CFLAGS		=	$(INCLUDES) -Wall -Werror -fPIC $(OPTS)
  CXXFLAGS	=	$(CFLAGS)
  PLUGINS		=	../plugins/amp.so				\
  			../plugins/delay.so				\
-@@ -36,11 +36,11 @@ CPP		=	c++
+@@ -25,8 +25,8 @@ PLUGINS		=	../plugins/amp.so				\
+ PROGRAMS	=	../bin/analyseplugin				\
+ 			../bin/applyplugin 				\
+ 			../bin/listplugins
+-CC		=	cc
+-CPP		=	c++
++CC		=	clang
++CPP		=	clang++
+ 
+ ###############################################################################
+ #
+@@ -35,11 +35,11 @@ CPP		=	c++
  
  ../plugins/%.so:	plugins/%.c ladspa.h
  	$(CC) $(CFLAGS) -o plugins/$*.o -c plugins/$*.c
