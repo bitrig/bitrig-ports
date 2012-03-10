@@ -47,6 +47,8 @@ MULTI_PACKAGES=-main -lemon -tcl
 
 .include <bsd.port.arch.mk>
 
+CC=egcc
+
 .if !${PROPERTIES:Mno_shared}
 CONFIGURE_ARGS +=	--enable-load-extension
 .endif
@@ -58,14 +60,14 @@ BUILD_DEPENDS=	${MODTCL_BUILD_DEPENDS}
 LIB_DEPENDS-tcl = ${BUILD_PKGPATH},-main>=${V}
 WANTLIB-tcl =	sqlite3
 
-CONFIGURE_ARGS+=--with-tcl=${MODTCL_LIBDIR} --disable-threadsafe
+CONFIGURE_ARGS+=--with-tcl=${MODTCL_LIBDIR}
 CONFIGURE_ARGS+=TCLSH_CMD="${MODTCL_BIN}"
 CONFIGURE_ENV += TCLLIBDIR=${MODTCL_TCLDIR}/sqlite3
 
 REGRESS_TARGET=	test
 
 .else
-CONFIGURE_ARGS+=--disable-tcl --disable-threadsafe
+CONFIGURE_ARGS+=--disable-tcl
 CONFIGURE_ARGS+=TCLSH_CMD=none
 CONFIGURE_ENV += CFLAGS=-I"${WRKSRC}/ext/fts3"
 NO_REGRESS=	Yes
