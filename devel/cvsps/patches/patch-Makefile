@@ -1,0 +1,13 @@
+$OpenBSD$
+--- Makefile.orig	Fri Mar  9 21:59:23 2012
++++ Makefile	Fri Mar  9 22:01:00 2012
+@@ -1,7 +1,7 @@
+ MAJOR=2
+ MINOR=1
+-CC?=gcc
+-CFLAGS?=-g -O2 -Wall 
++CC=clang
++CFLAGS=-g -O2 -Wall 
+ CFLAGS+=-I. -DVERSION=\"$(MAJOR).$(MINOR)\"
+ prefix?=/usr/local
+ OBJS=\
