@@ -70,7 +70,7 @@ LIB_DEPENDS=
 LIB_DEPENDS-main =	archivers/bzip2
 RUN_DEPENDS-main =
 WANTLIB-main =		ssl panelw m crypto c util z readline pthread \
-			ncursesw stdc++ expat ossaudio bz2
+			ncursesw estdc++ expat ossaudio bz2
 LIB_DEPENDS-main +=	databases/sqlite3
 WANTLIB-main +=		sqlite3
 
