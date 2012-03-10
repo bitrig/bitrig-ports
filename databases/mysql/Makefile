@@ -62,11 +62,6 @@ CONFIGURE_ARGS+= --localstatedir="${DB_DIR}" \
 
 .include <bsd.port.arch.mk>
 
-.if ${PROPERTIES:Mgcc[34]}
-CONFIGURE_ARGS+= --with-client-ldflags=-lsupc++ \
-		 --with-mysqld-ldflags=-lsupc++
-.endif
-
 . if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ARGS+= --enable-assembler
 .endif
