@@ -2,7 +2,7 @@
 
 COMMENT =		GNU troff typesetter
 DISTNAME =		groff-1.21
-REVISION =		8
+REVISION =		9
 
 CATEGORIES =		textproc
 HOMEPAGE =		http://www.gnu.org/software/groff/
@@ -16,7 +16,7 @@ PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		c m estdc++
 
-LIB_DEPENDS =		lang/gcc/4.6,-estdc
+#LIB_DEPENDS =		bitrig/bitrig-libstdc++/-estdc++
 
 MASTER_SITES =		${MASTER_SITE_GNU:=groff/}
 

@@ -29,10 +29,11 @@ MODULES=		converters/libiconv
 
 USE_LIBTOOL=		Yes
 USE_GROFF =		Yes
+USE_GMAKE =		Yes
 CONFIGURE_STYLE=	autoconf
 AUTOCONF_VERSION=	2.68 # should be 2.66
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED}
-CONFIGURE_ARGS+=	--enable-static
+#CONFIGURE_ARGS+=	--enable-static
 CONFIGURE_ARGS+=	--with-html-dir="${PREFIX}/share/doc"
 CONFIGURE_ARGS+=	--with-html-subdir="libxml2/html"
 CONFIGURE_ARGS+=	--with-iconv="${DEPBASE}"
