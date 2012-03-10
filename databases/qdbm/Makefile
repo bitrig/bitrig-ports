@@ -25,6 +25,8 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--enable-zlib \
 			--enable-iconv
+CC=			egcc
+
 USE_GROFF =	Yes
 
 MAKE_FLAGS=	LIBVER=${LIBqdbm_VERSION:R} LIBREV=${LIBqdbm_VERSION:E}

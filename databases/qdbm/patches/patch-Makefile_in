@@ -1,6 +1,6 @@
 $OpenBSD: patch-Makefile_in,v 1.10 2007/12/19 21:27:48 bernd Exp $
---- Makefile.in.orig	Wed Mar  7 03:41:10 2007
-+++ Makefile.in	Wed Dec 19 21:39:40 2007
+--- Makefile.in.orig	Tue Mar  6 20:41:10 2007
++++ Makefile.in	Sat Mar 10 10:08:20 2012
 @@ -24,7 +24,7 @@ LIBREV = @LIBREV@
  # Targets
  MYHEADS = depot.h curia.h relic.h hovel.h cabin.h villa.h vista.h odeum.h
@@ -20,10 +20,9 @@ $OpenBSD: patch-Makefile_in,v 1.10 2007/12/19 21:27:48 bernd Exp $
  DESTDIR =
  
  # Building binaries
--CC = @CC@
+ CC = @CC@
 -CPPFLAGS = @CPPFLAGS@ -I$(srcdir) -I$(MYHEADDIR) \
 -  -I$(HOME)/include -I/usr/local/include @MYDEFS@ \
-+#CC = @CC@
 +CPPFLAGS += @CPPFLAGS@ -I$(srcdir) \
 +  -I/usr/local/include @MYDEFS@ \
    -D_XOPEN_SOURCE_EXTENDED=1 -D_GNU_SOURCE=1 -D__EXTENSIONS__=1 -D_HPUX_SOURCE=1 \
