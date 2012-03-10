@@ -24,6 +24,7 @@ PATCHFILES+=	bash42-0$i:0
 
 MODULES=	devel/gettext
 USE_GROFF =	Yes
+USE_GMAKE =	Yes
 WANTLIB=	c termcap 
 
 # enable if parse.y is patched
