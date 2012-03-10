@@ -1,0 +1,12 @@
+$OpenBSD$
+--- source/example/SoundStretch/WavFile.cpp.orig	Sat Mar 10 13:34:25 2012
++++ source/example/SoundStretch/WavFile.cpp	Sat Mar 10 13:34:32 2012
+@@ -47,7 +47,7 @@
+ 
+ #include <stdio.h>
+ #include <stdexcept>
+-#include <string>
++#include <string.h>
+ #include <assert.h>
+ #include <limits.h>
+ 
