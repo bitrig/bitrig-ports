@@ -38,6 +38,8 @@ MAKE_ENV=		BUILD_OPT=1 \
 			SO_VERSION="${SO_VERSION}" \
 			XCFLAGS="-I${LOCALBASE}/include ${CFLAGS}" \
 			NSPR_INCLUDE_DIR="${LOCALBASE}/include/nspr" \
+			CC=${CC} \
+			NATIVE_CC=${CC} \
 			NSPR_LIB_DIR="${LOCALBASE}/lib"
 
 USE_GMAKE=		Yes
