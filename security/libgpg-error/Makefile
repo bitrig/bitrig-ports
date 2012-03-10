@@ -25,7 +25,8 @@ EXTRACT_SUFX=	.tar.bz2
 
 MODULES=	devel/gettext
 
-USE_LIBTOOL=	Yes
+USE_LIBTOOL=	gnu
+USE_GMAKE=	Yes
 
 SEPARATE_BUILD=	concurrent
 
