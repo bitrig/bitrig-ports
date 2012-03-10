@@ -37,7 +37,7 @@ MODPY_RUNDEP=	No
 MAKE_ENV=	V=1
 FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples
 
-EXTRA_CFLAGS=	-I${LOCALBASE}/include -I${X11BASE}/include
+EXTRA_CFLAGS=	-fpic -I${LOCALBASE}/include -I${X11BASE}/include
 EXTRA_LDFLAGS=	-L${LOCALBASE}/lib -L${X11BASE}/lib
 
 # until the system headers are fixed properly.
@@ -47,6 +47,7 @@ EXTRA_CFLAGS+=	-DTIME_MAX=INT_MAX
 
 VMEM_WARNING=	Yes
 
+CC=		egcc
 USE_GMAKE=	Yes
 CONFIGURE_STYLE=simple
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
