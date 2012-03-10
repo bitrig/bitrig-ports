@@ -22,25 +22,25 @@ COMMENT-objc=	${COM}: obj C compiler
 COMMENT-ada=	${COM}: Ada compiler
 COMMENT-go=	${COM}: Go compiler
 
-PKGNAME?=	gcc-${FULL_PKGVERSION}
-PKGNAME-c++ ?=	g++-${FULL_PKGVERSION}
-PKGNAME-estdc?=	libstdc++-${FULL_PKGVERSION}
-PKGNAME-g77?=	g77-${FULL_PKGVERSION}
-PKGNAME-f95?=	g95-${FULL_PKGVERSION}
-PKGNAME-java?=	gcj-${FULL_PKGVERSION}
-PKGNAME-objc?=	gobjc-${FULL_PKGVERSION}
-PKGNAME-ada?=	gnat-${FULL_PKGVERSION}
-PKGNAME-go?=	gccgo-${FULL_PKGVERSION}
+PKGNAME?=	bitrig-gcc-${FULL_PKGVERSION}
+PKGNAME-c++ ?=	bitrig-g++-${FULL_PKGVERSION}
+PKGNAME-estdc?=	bitrig-libstdc++-${FULL_PKGVERSION}
+PKGNAME-g77?=	bitrig-g77-${FULL_PKGVERSION}
+PKGNAME-f95?=	bitrig-g95-${FULL_PKGVERSION}
+PKGNAME-java?=	bitrig-gcj-${FULL_PKGVERSION}
+PKGNAME-objc?=	bitrig-gobjc-${FULL_PKGVERSION}
+PKGNAME-ada?=	bitrig-gnat-${FULL_PKGVERSION}
+PKGNAME-go?=	bitrig-gccgo-${FULL_PKGVERSION}
 
-DESCR-main ?=	${PORTSDIR}/bitrig-gcc/DESCR
-DESCR-c++ ?=	${PORTSDIR}/bitrig-gcc/DESCR-c++
-DESCR-estdc ?=	${PORTSDIR}/bitrig-gcc/DESCR-estdc
-DESCR-g77 ?=	${PORTSDIR}/bitrig-gcc/DESCR-g77
-DESCR-f95 ?=	${PORTSDIR}/bitrig-gcc/DESCR-f95
-DESCR-java ?=	${PORTSDIR}/bitrig-gcc/DESCR-java
-DESCR-objc ?=	${PORTSDIR}/bitrig-gcc/DESCR-objc
-DESCR-ada ?=	${PORTSDIR}/bitrig-gcc/DESCR-ada
-DESCR-go ?=	${PORTSDIR}/bitrig-gcc/DESCR-go
+DESCR-main ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR
+DESCR-c++ ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-c++
+DESCR-estdc ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-estdc
+DESCR-g77 ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-g77
+DESCR-f95 ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-f95
+DESCR-java ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-java
+DESCR-objc ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-objc
+DESCR-ada ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-ada
+DESCR-go ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-go
 
 HOMEPAGE?=	http://gcc.gnu.org/
 

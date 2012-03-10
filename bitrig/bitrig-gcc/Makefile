@@ -12,14 +12,14 @@ LIBC_VERSION = 60.1
 LIBSTDC_VERSION = 14.0
 ADASTRAP = adastrap-i386-$V-${BOOTSTRAP_GEN}.tar.xz
 
-PKGNAME-main =  gcc-${FULL_PKGVERSION}
-PKGNAME-c++ =   g++-${FULL_PKGVERSION}
-PKGNAME-estdc = libstdc++-${FULL_PKGVERSION}
-PKGNAME-f95 =   g95-${FULL_PKGVERSION}
-PKGNAME-java =  gcj-${FULL_PKGVERSION}
-PKGNAME-objc =  gobjc-${FULL_PKGVERSION}
-PKGNAME-ada =   gnat-${FULL_PKGVERSION}
-PKGNAME-go =	gccgo-${FULL_PKGVERSION}
+PKGNAME-main =  bitrig-gcc-${FULL_PKGVERSION}
+PKGNAME-c++ =   bitrig-g++-${FULL_PKGVERSION}
+PKGNAME-estdc = bitrig-libstdc++-${FULL_PKGVERSION}
+PKGNAME-f95 =   bitrig-g95-${FULL_PKGVERSION}
+PKGNAME-java =  bitrig-gcj-${FULL_PKGVERSION}
+PKGNAME-objc =  bitrig-gobjc-${FULL_PKGVERSION}
+PKGNAME-ada =   bitrig-gnat-${FULL_PKGVERSION}
+PKGNAME-go =	bitrig-gccgo-${FULL_PKGVERSION}
 
 REVISION-main = 1
 REVISION-c++ =	1
@@ -209,6 +209,8 @@ LIB_DEPENDS-estdc =
 CONFIG = x86_64-unknown-openbsd${OSREV}
 .endif
 
+WRKDIST=	${WRKDIR}/${REALDISTNAME}
+
 post-extract:
 .for f in egcc gnatbind gnatmake gnatlink
 	echo "#! /bin/sh" >${WRKDIR}/bin/$f
@@ -231,8 +233,8 @@ post-extract:
 .endif
 
 post-install:
-	ln -sf ${TRUEPREFIX}/lib/libestdc++.so.${LIBSTDC_VERSION} \
-		/usr/lib/libstdc++.so.${LIBSTDC_VERSION}
+	ln -sf ${PREFIX}/lib/libestdc++.so.${LIBSTDC_VERSION} \
+		${PREFIX}/lib/libstdc++.so.${LIBSTDC_VERSION}
 .if ${BUILD_PACKAGES:M-ada}
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/adainclude
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/adalib
