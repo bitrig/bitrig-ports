@@ -1,12 +1,21 @@
 $OpenBSD: patch-build_make_configure_sh,v 1.4 2012/02/28 12:28:29 dcoppa Exp $
---- build/make/configure.sh.orig	Fri Jan 27 13:36:39 2012
-+++ build/make/configure.sh	Sun Jan 29 21:13:12 2012
+--- build/make/configure.sh.orig	Fri Jan 27 12:36:39 2012
++++ build/make/configure.sh	Sat Mar 10 11:07:24 2012
 @@ -1,4 +1,4 @@
 -#!/bin/bash
-+#!${BASH}
++#!/usr/local/bin/bash
  ##
  ##  configure.sh
  ##
+@@ -961,7 +961,7 @@ process_common_toolchain() {
+         esac
+     ;;
+     universal*|*-gcc|generic-gnu)
+-        link_with_cc=gcc
++        link_with_cc=clang
+         enable gcc
+     setup_gnu_toolchain
+     ;;
 @@ -1019,7 +1019,7 @@ EOF
          case ${toolchain} in
              *-win*);;
