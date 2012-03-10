@@ -1,0 +1,11 @@
+$OpenBSD$
+--- libproxy/modules/config_gnome.cpp.orig	Sat Mar 10 08:01:33 2012
++++ libproxy/modules/config_gnome.cpp	Sat Mar 10 08:02:10 2012
+@@ -17,6 +17,7 @@
+  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301 USA
+  ******************************************************************************/
+ 
++#include <string.h>
+ #include <cstdio>         // For fileno(), fread(), pclose(), popen(), sscanf()
+ #include <sys/select.h>   // For select()
+ #include <fcntl.h>        // For fcntl()
