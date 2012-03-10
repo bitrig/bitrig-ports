@@ -1,0 +1,13 @@
+$OpenBSD$
+--- mpi/mpi-internal.h.orig	Sat Mar 10 10:23:49 2012
++++ mpi/mpi-internal.h	Sat Mar 10 10:24:27 2012
+@@ -284,7 +284,9 @@ mpi_limb_t mpihelp_rshift( mpi_ptr_t wp, mpi_ptr_t up,
+ #endif
+ 
+ #ifdef __GNUC__
++#  if !defined(__clang__)
+ #include "mpi-inline.h"
++#  endif
+ #endif
+ 
+ #endif /*G10_MPI_INTERNAL_H*/
