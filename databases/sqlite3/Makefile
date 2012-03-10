@@ -4,7 +4,7 @@ COMMENT-main=	embedded SQL implementation
 COMMENT-tcl=	TCL bindings for Sqlite3
 COMMENT-lemon=	LEMON LALR(1) parser generator
 V=		3.7.9
-REVISION=	0
+REVISION=	1
 DISTNAME=	sqlite-src-3070900
 EXTRACT_SUFX =	.zip
 PKGNAME-main=	sqlite3-${V}
@@ -70,8 +70,6 @@ CONFIGURE_ARGS+=TCLSH_CMD=none
 CONFIGURE_ENV += CFLAGS=-I"${WRKSRC}/ext/fts3"
 NO_REGRESS=	Yes
 .endif
-
-LIB_DEPENDS-main=	devel/bitrig-libreadline
 
 # Don't include dependency on pthreads, weak pthread functions are
 # used for non-threaded applications.
