@@ -4,7 +4,7 @@ COMMENT-main=	embedded SQL implementation
 COMMENT-tcl=	TCL bindings for Sqlite3
 COMMENT-lemon=	LEMON LALR(1) parser generator
 V=		3.7.9
-REVISION=	1
+REVISION=	2
 DISTNAME=	sqlite-src-3070900
 EXTRACT_SUFX =	.zip
 PKGNAME-main=	sqlite3-${V}
@@ -34,7 +34,8 @@ CFLAGS+=	-DSQLITE_ENABLE_COLUMN_METADATA \
 		-DSQLITE_SOUNDEX \
 		-DSQLITE_ENABLE_RTREE \
 		-DSQLITE_ENABLE_UNLOCK_NOTIFY \
-		-DSQLITE_ENABLE_FTS3
+		-DSQLITE_ENABLE_FTS3 \
+		-DSQLITE_THREADSAFE=1
 
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS+=${CONFIGURE_SHARED}
@@ -47,7 +48,8 @@ MULTI_PACKAGES=-main -lemon -tcl
 
 .include <bsd.port.arch.mk>
 
-CC=egcc
+CC=			egcc
+LIB_DEPENDS-main=	bitrig/bitrig-binutils
 
 .if !${PROPERTIES:Mno_shared}
 CONFIGURE_ARGS +=	--enable-load-extension
@@ -60,14 +62,14 @@ BUILD_DEPENDS=	${MODTCL_BUILD_DEPENDS}
 LIB_DEPENDS-tcl = ${BUILD_PKGPATH},-main>=${V}
 WANTLIB-tcl =	sqlite3
 
-CONFIGURE_ARGS+=--with-tcl=${MODTCL_LIBDIR}
+CONFIGURE_ARGS+=--with-tcl=${MODTCL_LIBDIR} --enable-threadsafe
 CONFIGURE_ARGS+=TCLSH_CMD="${MODTCL_BIN}"
 CONFIGURE_ENV += TCLLIBDIR=${MODTCL_TCLDIR}/sqlite3
 
 REGRESS_TARGET=	test
 
 .else
-CONFIGURE_ARGS+=--disable-tcl
+CONFIGURE_ARGS+=--disable-tcl --enable-threadsafe
 CONFIGURE_ARGS+=TCLSH_CMD=none
 CONFIGURE_ENV += CFLAGS=-I"${WRKSRC}/ext/fts3"
 NO_REGRESS=	Yes
