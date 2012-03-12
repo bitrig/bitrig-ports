@@ -67,10 +67,11 @@ ONLY_FOR_ARCHS-bsddb=	amd64 i386
 RUN_DEPENDS=		${FULLPKGNAME-main}:lang/python/${VERSION},-main
 LIB_DEPENDS=
 
-LIB_DEPENDS-main =	archivers/bzip2
+LIB_DEPENDS-main =	archivers/bzip2 bitrig/bitrig-binutils
+LIB_DEPENDS-main +=	bitrig/bitrig-gcc,-estdc devel/gettext
 RUN_DEPENDS-main =
 WANTLIB-main =		ssl panelw m crypto c util z readline pthread \
-			ncursesw estdc++ expat ossaudio bz2
+			ncursesw estdc++ expat ossaudio bz2 iconv intl
 LIB_DEPENDS-main +=	databases/sqlite3
 WANTLIB-main +=		sqlite3
 
@@ -131,8 +132,8 @@ MAKE_ENV+=	LOCALBASE=${LOCALBASE} X11BASE=${X11BASE}
 .if ${VERSION} < 3.2
 MAKE_FLAGS+=	LDLIBRARY=libpython${VERSION}.so.${LIBpython${VERSION}_VERSION}
 .endif
-MAKE_FLAGS+=	LD_LIBRARY_PATH=${WRKSRC} PATH="${WRKDIST}:${PORTPATH}"
-MAKE_FLAGS+=	LDFLAGS='-L${WRKSRC}'
+MAKE_FLAGS+=	PATH="${WRKDIST}:${PORTPATH}"
+MAKE_FLAGS+=	LDFLAGS='-L${WRKSRC} -L${LOCALBASE}/lib/ -liconv -lintl'
 FAKE_FLAGS+=	RANLIB=:
 
 ALL_TARGET?=	everything ./Lib/plat-openbsd5
