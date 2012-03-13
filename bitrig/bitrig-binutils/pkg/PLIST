@@ -27,6 +27,9 @@ info/
 @info info/gdbint.info
 @info info/ld.info
 @info info/stabs.info
+lib/libiberty.a
+lib/libiberty_p.a
+lib/libiberty_pic.a
 lib/libreadline.a
 lib/libreadline_p.a
 lib/libreadline_pic.a
@@ -71,6 +74,7 @@ libdata/ldscripts/elf_x86_64_obsd.xsc
 libdata/ldscripts/elf_x86_64_obsd.xu
 libdata/ldscripts/elf_x86_64_obsd.xz
 @info share/info/history.info
+@info share/info/libiberty.info
 @info share/info/readline.info
 @man share/man/man1/addr2line.1
 @man share/man/man1/ar.1

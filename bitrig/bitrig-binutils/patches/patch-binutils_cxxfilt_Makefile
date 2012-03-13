@@ -1,6 +1,6 @@
 $OpenBSD$
---- binutils/cxxfilt/Makefile.orig	Thu Mar  8 17:05:04 2012
-+++ binutils/cxxfilt/Makefile	Thu Mar  8 17:06:23 2012
+--- binutils/cxxfilt/Makefile.orig	Thu Feb 23 19:03:54 2012
++++ binutils/cxxfilt/Makefile	Tue Mar 13 14:40:19 2012
 @@ -2,10 +2,10 @@ NOMAN=1
  PROG=c++filt
  
@@ -10,7 +10,7 @@ $OpenBSD$
  
  CFLAGS+=-I${LIBIBERTY_INCDIR}
 -LDADD=-liberty
-+LDADD=../../libiberty/libiberty.a
++LDADD=-L${LIBIBERTY_INCDIR}/.. -liberty
  
  underscore.c:
  	@case ${ELF_TOOLCHAIN:L} in \

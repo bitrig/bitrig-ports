@@ -1,6 +1,6 @@
 $OpenBSD$
 --- libiberty/Makefile.bsd-wrapper.orig	Thu Feb 23 19:03:38 2012
-+++ libiberty/Makefile.bsd-wrapper	Thu Mar  8 20:02:30 2012
++++ libiberty/Makefile.bsd-wrapper	Tue Mar 13 14:03:34 2012
 @@ -37,7 +37,7 @@ needed-list: config.status
  	${MAKE} ${GNUCFLAGS} CC=${CC} needed-list
  
@@ -10,16 +10,3 @@ $OpenBSD$
  	INSTALL_PROGRAM="${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP}" \
  	MAKEINFO='makeinfo --no-split' \
  	CC="${CC}" \
-@@ -51,8 +51,10 @@ all:	libiberty.info
- libiberty.info:
- 	makeinfo --no-split -I${.CURDIR}/src ${.CURDIR}/src/libiberty.texi
- 
-+install:
-+
- afterinstall:
--	${INSTALL} ${INSTALL_COPY} -o ${DOCOWN} -g ${DOCGRP} -m ${DOCMODE} \
--	    libiberty.info $(DESTDIR)/usr/share/info
-+#	${INSTALL} ${INSTALL_COPY} -o ${DOCOWN} -g ${DOCGRP} -m ${DOCMODE} \
-+#	    libiberty.info $(DESTDIR)/usr/share/info
- 
- .include <bsd.lib.mk>

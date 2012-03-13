@@ -1,6 +1,6 @@
 $OpenBSD$
---- binutils/gdb/Makefile.in.orig	Thu Mar  8 16:38:49 2012
-+++ binutils/gdb/Makefile.in	Thu Mar  8 16:39:20 2012
+--- binutils/gdb/Makefile.in.orig	Wed Feb 29 23:05:15 2012
++++ binutils/gdb/Makefile.in	Tue Mar 13 13:59:40 2012
 @@ -103,7 +103,7 @@ MAKEHTMLFLAGS = -glossary -menu -split_chapter
  # Set this up with gcc if you have gnu ld and the loader will print out
  # line numbers for undefined references.
