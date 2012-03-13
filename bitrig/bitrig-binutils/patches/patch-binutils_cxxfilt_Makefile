@@ -1,6 +1,6 @@
 $OpenBSD$
 --- binutils/cxxfilt/Makefile.orig	Thu Feb 23 19:03:54 2012
-+++ binutils/cxxfilt/Makefile	Tue Mar 13 14:40:19 2012
++++ binutils/cxxfilt/Makefile	Tue Mar 13 19:49:39 2012
 @@ -2,10 +2,10 @@ NOMAN=1
  PROG=c++filt
  
@@ -14,3 +14,12 @@ $OpenBSD$
  
  underscore.c:
  	@case ${ELF_TOOLCHAIN:L} in \
+@@ -18,6 +18,8 @@ underscore.c:
+ 
+ cxxmain.c:
+ 	ln -s ${LIBIBERTY_SRCDIR}/cplus-dem.c $@
++
++install:
+ 
+ .include <bsd.prog.mk>
+ 

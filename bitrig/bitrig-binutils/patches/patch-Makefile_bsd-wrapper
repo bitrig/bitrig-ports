@@ -1,6 +1,6 @@
 $OpenBSD$
 --- binutils/Makefile.bsd-wrapper.orig	Thu Mar  1 15:06:56 2012
-+++ binutils/Makefile.bsd-wrapper	Thu Mar  8 16:22:40 2012
++++ binutils/Makefile.bsd-wrapper	Tue Mar 13 19:46:08 2012
 @@ -16,17 +16,16 @@ CONF_SUBDIRS=	opcodes bfd
  # This allows moving the whole binutils installation around for 
  # testing purposes
@@ -60,7 +60,7 @@ $OpenBSD$
  	    --disable-nls --disable-gdbtk --disable-install-libbfd ${CF} \
  	    ${CONFIGTARGET}
  	cd ${.OBJDIR} && \
-@@ -117,18 +123,19 @@ config.status: do-config
+@@ -117,18 +123,21 @@ config.status: do-config
  # Need to pass SUBDIRS because of install-info
  install: maninstall
  	SUBDIRS='${INST_SUBDIRS}' ${MAKE} DESTDIR='${DESTDIR}' \
@@ -75,7 +75,9 @@ $OpenBSD$
  	    INSTALL_PROGRAM='install -c -S' \
  	    INSTALL_INFO_HOST_MODULES='${INSTALL_INFO_HOST_MODULES}' \
  	      install install-info
-+	cd ${.OBJDIR}/cxxfilt && ${MAKE} install
++	${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -o ${BINOWN} \
++		-g ${BINGRP} -m ${BINMODE} ${.OBJDIR}/cxxfilt/c++filt \
++		${DESTDIR}${LOCALBASE}/bin
  .if ${USING_NEW_BINUTILS:L} != "yes"
  	cd ${.OBJDIR}/binutils && \
  		${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -o ${BINOWN} \

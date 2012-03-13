@@ -1,41 +1,4 @@
 @comment $OpenBSD$
-@bin bin/addr2line
-@bin bin/ar
-@bin bin/as
-@bin bin/c++filt
-@bin bin/gdb
-@bin bin/ld
-@bin bin/objcopy
-@bin bin/objdump
-@bin bin/ranlib
-@bin bin/readelf
-@bin bin/strings
-@bin bin/strip
-include/readline/chardefs.h
-include/readline/history.h
-include/readline/keymaps.h
-include/readline/readline.h
-include/readline/rlconf.h
-include/readline/rlstdc.h
-include/readline/rltypedefs.h
-include/readline/tilde.h
-info/
-@info info/annotate.info
-@info info/as.info
-@info info/binutils.info
-@info info/gdb.info
-@info info/gdbint.info
-@info info/ld.info
-@info info/stabs.info
-lib/libiberty.a
-@lib lib/libiberty.so.${LIBiberty_VERSION}
-lib/libiberty_p.a
-lib/libiberty_pic.a
-lib/libreadline.a
-@lib lib/libreadline.so.${LIBreadline_VERSION}
-lib/libreadline_p.a
-lib/libreadline_pic.a
-libdata/ldscripts/
 libdata/ldscripts/elf_i386.x
 libdata/ldscripts/elf_i386.xbn
 libdata/ldscripts/elf_i386.xc
@@ -75,19 +38,3 @@ libdata/ldscripts/elf_x86_64_obsd.xs
 libdata/ldscripts/elf_x86_64_obsd.xsc
 libdata/ldscripts/elf_x86_64_obsd.xu
 libdata/ldscripts/elf_x86_64_obsd.xz
-@info share/info/history.info
-@info share/info/libiberty.info
-@info share/info/readline.info
-@man share/man/man1/addr2line.1
-@man share/man/man1/ar.1
-@man share/man/man1/as.1
-@man share/man/man1/c++filt.1
-@man share/man/man1/gdb.1
-@man share/man/man1/ld.1
-@man share/man/man1/objcopy.1
-@man share/man/man1/objdump.1
-@man share/man/man1/ranlib.1
-@man share/man/man1/readelf.1
-@man share/man/man1/strings.1
-@man share/man/man1/strip.1
-@man share/man/man3/readline.3
