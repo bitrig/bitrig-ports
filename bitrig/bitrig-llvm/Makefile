@@ -57,6 +57,11 @@ CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 			-DCMAKE_BUILD_TYPE:String=Release \
 			-DCMAKE_INSTALL_PREFIX:PATH=${PREFIX}
 
+# i386 clang can't rebuild itself so force egcc for now
+.if ${MACHINE_ARCH} == "i386"
+CONFIGURE_ENV +=	CC=egcc CXX=eg++
+.endif
+
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
 SUBST_VARS +=		CLANG_INCLUDE_PATH
 
