@@ -21,16 +21,16 @@ PKGNAME-objc =  bitrig-gobjc-${FULL_PKGVERSION}
 PKGNAME-ada =   bitrig-gnat-${FULL_PKGVERSION}
 PKGNAME-go =	bitrig-gccgo-${FULL_PKGVERSION}
 
-REVISION-main = 1
-REVISION-c++ =	1
-REVISION-estdc =1
+REVISION-main = 2
+REVISION-c++ =	2
+REVISION-estdc =2
 REVISION-f95 =	0
 REVISION-java =	1
 REVISION-objc =	0
 REVISION-ada =	0
 REVISION-go =	0
 
-SHARED_LIBS =	estdc++		${LIBSTDC_VERSION} \
+SHARED_LIBS =	stdc++		${LIBSTDC_VERSION} \
 		gfortran	3.0 \
 		gcj		1.0 \
 		gcj-tools	1.0 \
@@ -130,7 +130,6 @@ CONFIGURE_ARGS += \
 	--prefix=${PREFIX} \
 	--mandir=${PREFIX}/share \
 	--verbose \
-	--program-transform-name=s,^,e, \
 	--disable-nls  \
 	--disable-checking \
 	--with-system-zlib \
@@ -233,8 +232,6 @@ post-extract:
 .endif
 
 post-install:
-	ln -sf ${PREFIX}/lib/libestdc++.so.${LIBSTDC_VERSION} \
-		${PREFIX}/lib/libstdc++.so.${LIBSTDC_VERSION}
 .if ${BUILD_PACKAGES:M-ada}
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/adainclude
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/adalib

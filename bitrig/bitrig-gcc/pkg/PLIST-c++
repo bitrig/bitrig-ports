@@ -1,8 +1,8 @@
 @comment $OpenBSD: PLIST-c++,v 1.3 2011/11/20 10:32:30 pascal Exp $
-@bin bin/ec++
-@bin bin/eg++
-@bin bin/${CONFIG}-ec++
-@bin bin/${CONFIG}-eg++
+@bin bin/c++
+@bin bin/g++
+@bin bin/${CONFIG}-c++
+@bin bin/${CONFIG}-g++
 include/c++/
 include/c++/${V}/
 include/c++/${V}/algorithm
@@ -667,14 +667,14 @@ include/c++/${V}/${CONFIG}/bits/os_defines.h
 include/c++/${V}/${CONFIG}/bits/stdc++.h
 include/c++/${V}/${CONFIG}/bits/stdtr1c++.h
 include/c++/${V}/${CONFIG}/bits/time_members.h
-lib/libestdc++.a
-lib/libestdc++.la
+lib/libstdc++.a
+lib/libstdc++.la
 lib/libesupc++.a
 lib/libesupc++.la
-lib/libstdc++*-gdb.py
+lib/libstdc++.so.${LIBstdc++_VERSION}-gdb.py
 @bin libexec/gcc/${CONFIG}/${V}/cc1plus
 %%PIC%%
-@man man/man1/eg++.1
+@man man/man1/g++.1
 share/gcc-${V}/
 share/gcc-${V}/python/
 share/gcc-${V}/python/libstdcxx/
