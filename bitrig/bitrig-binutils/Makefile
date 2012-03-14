@@ -30,6 +30,18 @@ PREFIX = 	/usr
 INSTDIR =	${PREFIX}
 SUBST_VARS =	INSTDIR
 
+.if ${MACHINE_ARCH} == "amd64"
+PKG_ARGS+=-Damd64=1
+.else
+PKG_ARGS+=-Damd64=0
+.endif
+
+.if ${MACHINE_ARCH} == "i386"
+PKG_ARGS+=-Di386=1
+.else
+PKG_ARGS+=-Di386=0
+.endif
+
 pre-build:
 	cd ${WRKSRC}/libiberty && ${MAKE} -f Makefile.bsd-wrapper config.status
 

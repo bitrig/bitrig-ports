@@ -1,4 +1,6 @@
 @comment $OpenBSD$
+%%amd64%%
+%%i386%%
 @bin bin/addr2line
 @bin bin/ar
 @bin bin/as
@@ -36,45 +38,6 @@ lib/libreadline.a
 lib/libreadline_p.a
 lib/libreadline_pic.a
 libdata/ldscripts/
-libdata/ldscripts/elf_i386.x
-libdata/ldscripts/elf_i386.xbn
-libdata/ldscripts/elf_i386.xc
-libdata/ldscripts/elf_i386.xd
-libdata/ldscripts/elf_i386.xdc
-libdata/ldscripts/elf_i386.xdcz
-libdata/ldscripts/elf_i386.xdz
-libdata/ldscripts/elf_i386.xn
-libdata/ldscripts/elf_i386.xr
-libdata/ldscripts/elf_i386.xs
-libdata/ldscripts/elf_i386.xsc
-libdata/ldscripts/elf_i386.xu
-libdata/ldscripts/elf_i386.xz
-libdata/ldscripts/elf_i386_obsd.x
-libdata/ldscripts/elf_i386_obsd.xbn
-libdata/ldscripts/elf_i386_obsd.xc
-libdata/ldscripts/elf_i386_obsd.xd
-libdata/ldscripts/elf_i386_obsd.xdc
-libdata/ldscripts/elf_i386_obsd.xdcz
-libdata/ldscripts/elf_i386_obsd.xdz
-libdata/ldscripts/elf_i386_obsd.xn
-libdata/ldscripts/elf_i386_obsd.xr
-libdata/ldscripts/elf_i386_obsd.xs
-libdata/ldscripts/elf_i386_obsd.xsc
-libdata/ldscripts/elf_i386_obsd.xu
-libdata/ldscripts/elf_i386_obsd.xz
-libdata/ldscripts/elf_x86_64_obsd.x
-libdata/ldscripts/elf_x86_64_obsd.xbn
-libdata/ldscripts/elf_x86_64_obsd.xc
-libdata/ldscripts/elf_x86_64_obsd.xd
-libdata/ldscripts/elf_x86_64_obsd.xdc
-libdata/ldscripts/elf_x86_64_obsd.xdcz
-libdata/ldscripts/elf_x86_64_obsd.xdz
-libdata/ldscripts/elf_x86_64_obsd.xn
-libdata/ldscripts/elf_x86_64_obsd.xr
-libdata/ldscripts/elf_x86_64_obsd.xs
-libdata/ldscripts/elf_x86_64_obsd.xsc
-libdata/ldscripts/elf_x86_64_obsd.xu
-libdata/ldscripts/elf_x86_64_obsd.xz
 @info share/info/history.info
 @info share/info/libiberty.info
 @info share/info/readline.info
