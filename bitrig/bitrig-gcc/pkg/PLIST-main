@@ -2,7 +2,6 @@
 @pkgpath lang/gcc/4.6
 %%SHARED%%
 @bin bin/c++
-@bin bin/cpp
 @bin bin/g++
 @bin bin/gcc
 @bin bin/gcov
@@ -57,6 +56,7 @@ lib/libssp_nonshared.a
 lib/libssp_nonshared.la
 lib/libstdc++.a
 lib/libstdc++.la
+@bin libexec/cpp
 libexec/gcc/
 libexec/gcc/${CONFIG}/
 libexec/gcc/${CONFIG}/${V}/

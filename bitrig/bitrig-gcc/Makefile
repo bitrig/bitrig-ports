@@ -21,9 +21,9 @@ PKGNAME-objc =  bitrig-gobjc-${FULL_PKGVERSION}
 PKGNAME-ada =   bitrig-gnat-${FULL_PKGVERSION}
 PKGNAME-go =	bitrig-gccgo-${FULL_PKGVERSION}
 
-REVISION-main = 2
-REVISION-c++ =	2
-REVISION-estdc =2
+REVISION-main = 3
+REVISION-c++ =	3
+REVISION-estdc =3
 REVISION-f95 =	0
 REVISION-java =	1
 REVISION-objc =	0
@@ -232,6 +232,7 @@ post-extract:
 .endif
 
 post-install:
+	mv ${PREFIX}/bin/cpp ${PREFIX}/libexec/cpp
 .if ${BUILD_PACKAGES:M-ada}
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/adainclude
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/adalib
