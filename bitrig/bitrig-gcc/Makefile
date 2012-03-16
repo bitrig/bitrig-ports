@@ -21,9 +21,9 @@ PKGNAME-objc =  bitrig-gobjc-${FULL_PKGVERSION}
 PKGNAME-ada =   bitrig-gnat-${FULL_PKGVERSION}
 PKGNAME-go =	bitrig-gccgo-${FULL_PKGVERSION}
 
-REVISION-main = 3
-REVISION-c++ =	3
-REVISION-estdc =3
+REVISION-main = 4
+REVISION-c++ =	4
+REVISION-estdc =4
 REVISION-f95 =	0
 REVISION-java =	1
 REVISION-objc =	0

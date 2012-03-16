@@ -669,8 +669,8 @@ include/c++/${V}/${CONFIG}/bits/stdtr1c++.h
 include/c++/${V}/${CONFIG}/bits/time_members.h
 lib/libstdc++.a
 lib/libstdc++.la
-lib/libesupc++.a
-lib/libesupc++.la
+lib/libsupc++.a
+lib/libsupc++.la
 lib/libstdc++.so.${LIBstdc++_VERSION}-gdb.py
 @bin libexec/gcc/${CONFIG}/${V}/cc1plus
 %%PIC%%
