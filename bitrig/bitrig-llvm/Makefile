@@ -59,7 +59,7 @@ CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 
 # i386 clang can't rebuild itself so force egcc for now
 .if ${MACHINE_ARCH} == "i386"
-CONFIGURE_ENV +=	CC=egcc CXX=eg++
+CONFIGURE_ENV +=	CC=gcc CXX=g++
 .endif
 
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
