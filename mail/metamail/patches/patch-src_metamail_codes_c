@@ -1,0 +1,11 @@
+$OpenBSD: patch-src_metamail_codes_c,v 1.1 2012/03/17 10:57:23 sthen Exp $
+--- src/metamail/codes.c.orig	Mon Sep 20 14:13:22 1993
++++ src/metamail/codes.c	Sat Mar 17 10:51:52 2012
+@@ -13,6 +13,7 @@ OF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED "AS 
+ WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+ */
+ #include <stdio.h>
++#include <string.h>
+ #include <ctype.h>
+ #include <config.h>
+ 

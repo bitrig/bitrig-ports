@@ -1,0 +1,108 @@
+$OpenBSD: patch-src_metamail_metamail_c,v 1.1 2012/03/17 10:57:23 sthen Exp $
+--- src/metamail/metamail.c.orig	Thu Feb 17 01:57:19 1994
++++ src/metamail/metamail.c	Sat Mar 17 10:51:52 2012
+@@ -20,6 +20,8 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+ 
+  ******************************************************* */
+ #include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
+ #include <ctype.h>
+ #include <sys/types.h>
+ #include <sys/stat.h>
+@@ -29,7 +31,7 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+ #ifdef BORLAND
+ #define F_OK 0
+ extern unsigned _stklen = 16384;
+-extern char *mktemp(char *);
++extern char *mkstemp(char *);
+ #define WRITE_BINARY	"w"
+ #else /* BORLAND */
+ #ifdef MICROSOFT
+@@ -100,13 +102,6 @@ extern char **environ, *gets();
+ #define CMDSIZE 1200 /* Maximum size of command to execute */
+ 
+ #define LINE_BUF_SIZE       2000
+-#ifndef MICROSOFT
+-extern char *malloc();
+-extern char *realloc();
+-#endif
+-extern char *getenv();
+-extern char *index();
+-extern char *rindex();
+ char fileToDelete[MAX_FILE_NAME_SIZE];
+ 
+ char *FindParam();
+@@ -302,24 +297,6 @@ char **argv;
+     int retcode;
+ 
+     modpath(AUXPATH);
+-#ifndef MSDOS
+-    signal(SIGINT, cleanup);
+-#ifndef AMIGA
+-    signal(SIGILL, cleanup);
+-    signal(SIGTRAP, cleanup);
+-    signal(SIGIOT, cleanup);
+-    signal(SIGFPE, cleanup);
+-#ifndef LINUX
+-    signal(SIGEMT, cleanup);
+-    signal(SIGBUS, cleanup);
+-#endif
+-    signal(SIGSEGV, cleanup);
+-    signal(SIGTERM, cleanup);
+-#endif
+-#endif
+-#ifdef SIGXCPU
+-    signal(SIGXCPU, cleanup);
+-#endif
+     tmproot = getenv("METAMAIL_TMPDIR");
+     if (!tmproot) tmproot="/tmp";
+     mailheaders = getenv("MM_HEADERS");
+@@ -1202,9 +1179,9 @@ char *SquirrelFile;
+     fprintf(outfp, "Content-type: %s", ContentType);
+     for (j=0; j<CParamsUsed; ++j) {
+         fprintf(outfp, " ; ");
+-        fprintf(outfp, CParams[j]);
++        fprintf(outfp, "%s", CParams[j]);
+         fprintf(outfp, " = ");
+-        fprintf(outfp, CParamValues[j]);
++        fprintf(outfp, "%s", CParamValues[j]);
+     }
+     fprintf(outfp, "\n\n"); 
+     TranslateInputToOutput(InputFP, outfp, EncodingCode, ContentType);
+@@ -2022,7 +1999,7 @@ int ShowLeadingWhitespace;
+     if (lc2strcmp(charset, PrevCharset)) {
+         char *s2, *charsetinuse;
+ 
+-        strcpy(PrevCharset, charset);
++        strlcpy(PrevCharset, charset, sizeof(PrevCharset));
+         for (s2=PrevCharset; *s2; ++s2) {
+             if (isupper((unsigned char) *s2)) *s2 = tolower((unsigned char) *s2);
+         }
+@@ -2032,7 +2009,7 @@ int ShowLeadingWhitespace;
+         }
+     }
+     if (ecode == ENCODING_NONE) {
+-        printf(txt+1);
++        printf("%s", txt+1);
+     } else {
+         /* What follows is REALLY bogus, but all my encoding stuff is pipe-oriented right now... */
+         MkTmpFileName(TmpFile);
+@@ -2489,14 +2466,14 @@ char *name;
+ {
+ #ifdef AMIGA
+     strcpy(name, "T:mmXXXXXX");
+-    mktemp(name);
++    close(mkstemp(name));
+ #else
+ #ifndef MSDOS
+     sprintf(name, "%s/mm.XXXXXX", tmproot);
+-    mktemp(name);
++    close(mkstemp(name));
+ #else
+      strcpy(name, "TXXXXXX");
+-     if (!mktemp(name))
++     if (!close(mkstemp(name)))
+          name[0] = 0;
+      else
+          if (DoDebug) printf("temp name = \"%s\"\n", name);

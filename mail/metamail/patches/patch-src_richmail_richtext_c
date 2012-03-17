@@ -1,0 +1,26 @@
+$OpenBSD: patch-src_richmail_richtext_c,v 1.1 2012/03/17 10:57:23 sthen Exp $
+--- src/richmail/richtext.c.orig	Wed Feb  9 16:31:18 1994
++++ src/richmail/richtext.c	Sat Mar 17 10:51:52 2012
+@@ -15,12 +15,13 @@ WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+ 
+ #include <stdio.h>
+ #include <ctype.h>
++#include <stdlib.h>
+ #include <signal.h>
+ #include "richlex.h"
+ #include "richset.h"
+ #include <config.h>
++#include <string.h>
+ 
+-extern char *getenv();
+ #ifdef AMIGA
+ extern char *strchr();
+ #endif
+@@ -30,6 +31,7 @@ unsigned _stklen=16384;	/* Increase stack size under M
+ #endif
+ 
+ int iso2022_fputc ();
++static int lc2strcmp(char *, char *);
+ 
+ /*
+  * ########################################################################
