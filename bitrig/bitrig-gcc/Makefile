@@ -13,7 +13,6 @@ LIBSTDC_VERSION = 14.0
 ADASTRAP = adastrap-i386-$V-${BOOTSTRAP_GEN}.tar.xz
 
 PKGNAME-main =  bitrig-gcc-${FULL_PKGVERSION}
-PKGNAME-c++ =   bitrig-g++-${FULL_PKGVERSION}
 PKGNAME-estdc = bitrig-libstdc++-${FULL_PKGVERSION}
 PKGNAME-f95 =   bitrig-g95-${FULL_PKGVERSION}
 PKGNAME-java =  bitrig-gcj-${FULL_PKGVERSION}
@@ -21,9 +20,8 @@ PKGNAME-objc =  bitrig-gobjc-${FULL_PKGVERSION}
 PKGNAME-ada =   bitrig-gnat-${FULL_PKGVERSION}
 PKGNAME-go =	bitrig-gccgo-${FULL_PKGVERSION}
 
-REVISION-main = 4
-REVISION-c++ =	4
-REVISION-estdc =4
+REVISION-main = 5
+REVISION-estdc =5
 REVISION-f95 =	0
 REVISION-java =	1
 REVISION-objc =	0
@@ -41,24 +39,19 @@ SHARED_LIBS =	stdc++		${LIBSTDC_VERSION} \
 		go		0.0
 
 
-PSEUDO_FLAVORS = no_c++ no_f95 no_objc no_java no_ada no_go full
+PSEUDO_FLAVORS = no_f95 no_objc no_java no_ada no_go full
 FLAVOR ?= 
 
 ONLY_FOR_ARCHS-ada = i386
 ONLY_FOR_ARCHS-java = amd64 i386 sparc64
 
 #MULTI_PACKAGES = -main -f95 -objc -java -c++ -estdc -ada -go
-MULTI_PACKAGES = -main -c++ -estdc
+MULTI_PACKAGES = -main -estdc
 
 PREFIX = 	/usr
 INSTDIR =	${PREFIX}
 
 .include <bsd.port.arch.mk>
-
-# kill both C++ subpackages
-.if !${BUILD_PACKAGES:M-c++}
-BUILD_PACKAGES := ${BUILD_PACKAGES:N-estdc}
-.endif
 
 REALDISTNAME = 	gcc-${FULL_VERSION}
 DISTNAME =	bitrig-${REALDISTNAME}
@@ -82,7 +75,7 @@ MASTER_SITES0 = ftp://quatramaran.ens.fr/pub/espie/
 MASTER_SITES1 =	ftp://sources.redhat.com/pub/java/
 
 LANGS = c
-.if ${BUILD_PACKAGES:M-c++}
+.if ${BUILD_PACKAGES:M-estdc}
 LANGS := ${LANGS},c++
 REGRESS_DEPENDS += 	${BUILD_PKGPATH},-estdc>=4.6,<4.7
 .endif
@@ -189,11 +182,10 @@ PKG_ARGS += -DI386=0
 RUN_DEPENDS =		${BUILD_PKGPATH},-main
 WANTLIB =		c gmp mpc mpfr z
 
-RUN_DEPENDS-main =
+RUN_DEPENDS-main =	${RUN_DEPENDS} \
+			${BUILD_PKGPATH},-estdc>=4.6,<4.7
 RUN_DEPENDS-estdc =
 
-RUN_DEPENDS-c++ =	${RUN_DEPENDS} \
-			${BUILD_PKGPATH},-estdc>=4.6,<4.7
 WANTLIB-estdc =		m
 WANTLIB-f95 =		${WANTLIB} m
 WANTLIB-java =		${WANTLIB} m pthread

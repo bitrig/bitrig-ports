@@ -679,6 +679,9 @@ include/c++/${V}/${CONFIG}/bits/time_members.h
 @info info/gccinstall.info
 @info info/gccint.info
 @info info/libquadmath.info
+lib/libstdc++.a
+lib/libstdc++.la
+lib/libstdc++.so.${LIBstdc++_VERSION}-gdb.py
 lib/gcc/
 lib/gcc/${CONFIG}/
 lib/gcc/${CONFIG}/${V}/
@@ -720,9 +723,6 @@ lib/libssp.a
 lib/libssp.la
 lib/libssp_nonshared.a
 lib/libssp_nonshared.la
-lib/libstdc++.a
-lib/libstdc++.la
-lib/libstdc++.so.${LIBstdc++_VERSION}-gdb.py
 lib/libsupc++.a
 lib/libsupc++.la
 @bin libexec/cpp
