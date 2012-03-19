@@ -1,0 +1,11 @@
+$OpenBSD$
+--- mplex/main.cpp.orig	Mon Mar 19 13:00:34 2012
++++ mplex/main.cpp	Mon Mar 19 13:01:42 2012
+@@ -92,6 +92,7 @@ class FileOutputStream : public OutputStream (private)
+ };
+ 
+ 
++#include <string.h>
+ 
+ FileOutputStream::FileOutputStream( const char *name_pat ) 
+ {

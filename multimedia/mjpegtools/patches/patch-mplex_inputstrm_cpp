@@ -1,0 +1,11 @@
+$OpenBSD$
+--- mplex/inputstrm.cpp.orig	Mon Mar 19 12:45:53 2012
++++ mplex/inputstrm.cpp	Mon Mar 19 12:46:15 2012
+@@ -23,6 +23,7 @@
+ 
+ #include <config.h>
+ #include <assert.h>
++#include <sys/limits.h>
+ 
+ #include "mjpeg_types.h"
+ #include "inputstrm.hpp"

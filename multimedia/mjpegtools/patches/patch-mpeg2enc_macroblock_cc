@@ -1,0 +1,11 @@
+$OpenBSD$
+--- mpeg2enc/macroblock.cc.orig	Mon Mar 19 12:41:00 2012
++++ mpeg2enc/macroblock.cc	Mon Mar 19 12:41:15 2012
+@@ -20,6 +20,7 @@
+  */
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <cassert>
+ 
+ #include "macroblock.hh"

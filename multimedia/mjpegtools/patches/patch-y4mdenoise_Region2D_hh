@@ -1,0 +1,12 @@
+$OpenBSD$
+--- y4mdenoise/Region2D.hh.orig	Mon Mar 19 13:04:00 2012
++++ y4mdenoise/Region2D.hh	Mon Mar 19 13:04:04 2012
+@@ -90,7 +90,7 @@ class Region2D (public)
+ 	//SIZE NumberOfPoints (void) const;
+ 		// Return the total number of points contained by the region.
+ 
+-	//void Clear (void);
++	void Clear (void);
+ 		// Clear the region, emptying it of all extents.
+ 
+ 	//void Union (Status_t &a_reStatus, INDEX a_tnY, INDEX a_tnXStart,

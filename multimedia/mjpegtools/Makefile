@@ -44,7 +44,7 @@ LIB_DEPENDS=		sdl-*-!no_x11:devel/sdl \
 			graphics/png \
 			x11/gtk+2 \
 
-USE_LIBTOOL=		Yes
+USE_LIBTOOL=		gnu
 USE_GROFF =		Yes
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
@@ -54,7 +54,7 @@ CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/libpng" \
 			LDFLAGS="-L${LOCALBASE}/lib" \
-			PKG_CONFIG="/usr/bin/pkg-config"
+			PKG_CONFIG="/usr/bin/pkg-config" \
 
 FLAVORS=		quicktime optimized
 FLAVOR?=
