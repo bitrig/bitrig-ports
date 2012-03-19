@@ -3,12 +3,15 @@
 %%SHARED%%
 @bin bin/c++
 @bin bin/g++
+@bin bin/cc
 @bin bin/gcc
 @bin bin/gcov
 @bin bin/${CONFIG}-c++
 @bin bin/${CONFIG}-g++
 @bin bin/${CONFIG}-gcc
+@bin bin/${CONFIG}-cc
 @bin bin/${CONFIG}-gcc-${V}
+@bin bin/${CONFIG}-cc-${V}
 include/c++/
 include/c++/${V}/
 include/c++/${V}/algorithm
