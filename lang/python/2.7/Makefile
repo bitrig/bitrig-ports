@@ -4,10 +4,9 @@ VERSION =		2.7
 PATCHLEVEL =		.2
 SHARED_LIBS =		python2.7 0.0
 VERSION_SPEC =		>=2.7,<2.8
-REVISION =		1
+REVISION =		2
 
-LIB_DEPENDS=		bitrig/bitrig-binutils \
-			bitrig/bitrig-gcc,-estdc
+LIB_DEPENDS=		bitrig/bitrig-binutils
 
 AUTOCONF_VERSION =	2.68
 CONFIGURE_ARGS +=	--with-cxx_main \
