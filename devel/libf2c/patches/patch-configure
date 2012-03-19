@@ -1,0 +1,14 @@
+$OpenBSD$
+--- configure.orig	Mon Mar 19 17:13:11 2012
++++ configure	Mon Mar 19 17:18:07 2012
+@@ -1540,6 +1540,10 @@ else
+ #include "confdefs.h"
+ 
+ int main() {
++typedef int __g77_integer;
++typedef unsigned int __g77_uinteger;
++typedef long int __g77_longint;
++typedef unsigned long int __g77_ulongint;
+ __g77_integer g77i;
+ __g77_uinteger g77ui;
+ __g77_longint g77l;
