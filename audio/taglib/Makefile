@@ -24,6 +24,9 @@ WANTLIB=	stdc++ m z
 
 BUILD_DEPENDS=	devel/cppunit
 
+# use g stuff because clang++ trips over cppunit
+CC=gcc
+CXX=g++
 CONFIGURE_ARGS+=-DCMAKE_BUILD_TYPE=Release \
 		-DWITH_MP4=ON \
 		-DWITH_ASF=ON \
