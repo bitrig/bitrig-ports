@@ -1,0 +1,12 @@
+$OpenBSD$
+--- mkisofs/Makefile.orig	Mon Jul 13 14:09:40 2009
++++ mkisofs/Makefile	Tue Mar 20 05:56:30 2012
+@@ -58,7 +58,7 @@ HFILES=		apple.h bootinfo.h defaults.h diskmbr.h \
+ LIBS=		-lhfs -lfile -lsiconv -lscgcmd -lrscg -lscg $(LIB_VOLMGT) -lcdrdeflt -ldeflt \
+ 		-lfind -lschily \
+ 		$(LIB_ACL_TEST) $(SCSILIB) $(LIB_SOCKET) \
+-		$(LIB_ICONV) $(LIB_INTL)
++		-liconv -lgettextlib -L${PREFIX}/lib
+ 
+ XMK_FILE=	Makefile.man hybridman.mk Makefile.doc
+ 

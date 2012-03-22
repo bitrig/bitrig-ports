@@ -35,6 +35,10 @@ do-configure:
 	    ln -sf i386-openbsd-cc.rul ${MACHINE}-openbsd-${CC}.rul
 .endif
 
+pre-build:
+	${SUBST_CMD} ${WRKSRC}/mkisofs/Makefile
+	${SUBST_CMD} ${WRKSRC}/mkisofs/diag/isoinfo.mk
+
 OBJ=	OBJ/${MACHINE_ARCH}-openbsd-${CC}
 
 do-install:

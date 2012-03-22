@@ -1,0 +1,12 @@
+$OpenBSD$
+--- RULES/rules.cnf.orig	Fri Aug  1 14:04:08 2008
++++ RULES/rules.cnf	Tue Mar 20 05:18:35 2012
+@@ -59,7 +59,7 @@ $(OINCSDIR)/rules.cnf $(OINCSDIR)/xconfig.h: $(OINCSDI
+ ###########################################################################
+ RUL_CONF=	@echo "	==> CONFIGURING RULES \"$@\""; $(RM_F) $@; \
+ 		cd $(OINCSDIR); \
+-		CONFIG_NOFAIL=TRUE CC="$(XCC_COM)" CFLAGS="$(CFLAGS)" \
++		CONFIG_NOFAIL=TRUE CC="$(CC)" CFLAGS="$(CFLAGS)" \
+ 		CXXFLAGS="$(C++FLAGS)" CPPFLAGS="$(OSDEFS)" \
+ 		LDFLAGS="$(LDOPTS)" sh ../../autoconf/configure $(CONFFLAGS)
+ ###########################################################################

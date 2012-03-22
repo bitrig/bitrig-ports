@@ -1,0 +1,12 @@
+$OpenBSD$
+--- DEFAULTS/Defaults.openbsd.orig	Fri Dec 26 15:51:09 2008
++++ DEFAULTS/Defaults.openbsd	Tue Mar 20 01:46:24 2012
+@@ -8,7 +8,7 @@
+ # Compiler stuff
+ #
+ ###########################################################################
+-DEFCCOM=	cc
++DEFCCOM=	$(CC)
+ #DEFCCOM=	gcc
+ 
+ ###########################################################################
