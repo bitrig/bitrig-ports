@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.733 2012/03/13 09:43:05 sthen Exp $
+# $OpenBSD: Makefile,v 1.735 2012/03/21 16:18:32 sthen Exp $
 # $FreeBSD: Makefile,v 1.129 1997/11/20 13:47:40 itojun Exp $
 #
 
@@ -41,6 +41,7 @@
      SUBDIR += castget
      SUBDIR += cftp
      SUBDIR += charm
+     SUBDIR += centerim
      SUBDIR += cjc
      SUBDIR += climm
      SUBDIR += clive
@@ -189,6 +190,7 @@
      SUBDIR += luasocket
      SUBDIR += maclookup
      SUBDIR += maradns
+     SUBDIR += maradns-deadwood
      SUBDIR += mbrowse
      SUBDIR += mcabber
      SUBDIR += meanwhile

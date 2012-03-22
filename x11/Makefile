@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.480 2012/02/28 05:57:50 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.484 2012/03/19 06:38:03 ajacoutot Exp $
 # $FreeBSD: Makefile,v 1.178 1997/11/24 05:32:52 fenner Exp $
 
      SUBDIR =
@@ -97,7 +97,6 @@
      SUBDIR += gtk2-rezlooks-engine
      SUBDIR += gtk2-theme-switch
      SUBDIR += gtk2mm
-     SUBDIR += gtk3-engines
      SUBDIR += gtk3-unico-engine
      SUBDIR += gtk3mm
      SUBDIR += gtkdatabox
@@ -161,6 +160,7 @@
      SUBDIR += ogle
      SUBDIR += ogle,altivec
      SUBDIR += ogle_gui
+     SUBDIR += ogre
      SUBDIR += openbox
      SUBDIR += openmotif
      SUBDIR += oroborus
@@ -320,7 +320,6 @@
      SUBDIR += xfce4
      SUBDIR += xfe
      SUBDIR += xfed
-     SUBDIR += xfedor
      SUBDIR += xfishtank
      SUBDIR += xfm
      SUBDIR += xforms
@@ -332,7 +331,6 @@
      SUBDIR += xloadimage
      SUBDIR += xlogout
      SUBDIR += xmascot
-     SUBDIR += xmbdfed
      SUBDIR += xmobar
      SUBDIR += xmold
      SUBDIR += xmonad
