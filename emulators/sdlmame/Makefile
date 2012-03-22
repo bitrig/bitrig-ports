@@ -24,6 +24,7 @@ PERMIT_PACKAGE_FTP =		Yes
 PERMIT_DISTFILES_CDROM =	may not sell
 PERMIT_DISTFILES_FTP =		Yes
 
+USE_LIBTOOL =	gnu
 WANTLIB =	GL SDL SDL_ttf X11 Xcomposite Xcursor Xdamage Xext \
 		Xfixes Xi Xinerama Xrandr Xrender atk-1.0 c cairo expat \
 		fontconfig freetype gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0 \
@@ -54,7 +55,7 @@ LIB_DEPENDS =		devel/gconf2 \
 			x11/gtk+2
 
 MAKE_FLAGS =		OPT_FLAGS='-DINI_PATH="\"${SYSCONFDIR}/mame;\""'
-MAKE_ENV =		ARCH=$(ARCH) CC=$(CC) CFLAGS="$(CFLAGS)" \
+MAKE_ENV =		ARCH=$(ARCH) CC=$(CC) CFLAGS="$(CFLAGS) -Wno-error" \
 			TARGETOS=openbsd
 .if ${MACHINE_ARCH} == "amd64"
 MAKE_ENV +=		PTR64=1
