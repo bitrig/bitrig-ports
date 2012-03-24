@@ -6,7 +6,6 @@ BROKEN-sparc64 = gengtype looping infinitely
 V = 4.6.2
 FULL_VERSION = $V
 FULL_PKGVERSION = $V
-CATEGORIES = bitrig
 BOOTSTRAP_GEN = 4
 LIBC_VERSION = 60.1
 LIBSTDC_VERSION = 14.0
@@ -33,7 +32,30 @@ REALDISTNAME = 	gcc-${FULL_VERSION}
 DISTNAME =	bitrig-${REALDISTNAME}
 DISTFILES =	${REALDISTNAME}.tar.bz2
 EXTRACT_ONLY =	${REALDISTNAME}.tar.bz2
-.include "Makefile.inc"
+
+CATEGORIES=	bitrig 
+
+PERMIT_PACKAGE_FTP=Yes
+PERMIT_DISTFILES_FTP=Yes
+PERMIT_PACKAGE_CDROM=Yes
+PERMIT_DISTFILES_CDROM=Yes
+
+COM=		GNU compiler collection
+COMMENT=	${COM}: core C compiler
+COMMENT-main=	${COMMENT}
+COMMENT-estdc=	${COM}: C++ compiler library
+
+PKGNAME?=	bitrig-gcc-${FULL_PKGVERSION}
+PKGNAME-estdc?=	bitrig-libstdc++-${FULL_PKGVERSION}
+
+DESCR-main ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR
+DESCR-estdc ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-estdc
+
+HOMEPAGE?=	http://gcc.gnu.org/
+
+#DIST_SUBDIR=gcc
+CONFIG=${MACHINE_ARCH}-unknown-openbsd${OSREV}
+SUBST_VARS+=CONFIG V
 
 USE_LIBTOOL =	Yes
 
