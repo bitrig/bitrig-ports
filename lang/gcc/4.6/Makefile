@@ -8,7 +8,6 @@ FULL_VERSION = $V
 FULL_PKGVERSION = $V
 BOOTSTRAP_GEN = 4
 LIBC_VERSION = 60.1
-LIBSTDC_VERSION = 14.0
 ADASTRAP = adastrap-i386-$V-${BOOTSTRAP_GEN}.tar.xz
 
 PKGNAME-main =  gcc-${FULL_PKGVERSION}
@@ -29,7 +28,7 @@ REVISION-objc =	0
 REVISION-ada =	0
 REVISION-go =	0
 
-SHARED_LIBS =	estdc++		${LIBSTDC_VERSION} \
+SHARED_LIBS =	estdc++		14.0 \
 		gfortran	3.0 \
 		gcj		1.0 \
 		gcj-tools	1.0 \
@@ -127,8 +126,8 @@ CONFIGURE_ARGS += \
 	--disable-libmudflap \
 	--disable-libgomp \
 	--disable-tls \
-	--with-ld=/usr/local/bin/ld \
-	--with-as=/usr/local/bin/as \
+	--with-as=/usr/bin/as \
+	--with-ld=/usr/bin/ld \
 	--with-gnu-ld \
 	--with-gnu-as \
 	--enable-threads=posix \
@@ -221,8 +220,6 @@ post-extract:
 .endif
 
 post-install:
-	ln -sf ${TRUEPREFIX}/lib/libestdc++.so.${LIBSTDC_VERSION} \
-		/usr/lib/libstdc++.so.${LIBSTDC_VERSION}
 .if ${BUILD_PACKAGES:M-ada}
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/adainclude
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/adalib
