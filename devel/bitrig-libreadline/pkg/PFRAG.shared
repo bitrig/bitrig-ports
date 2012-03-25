@@ -1,2 +1,0 @@
-@comment $OpenBSD$
-@lib lib/libreadline.so.${LIBreadline_VERSION}
