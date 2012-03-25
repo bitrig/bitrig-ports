@@ -11,17 +11,17 @@ LIBC_VERSION = 60.1
 LIBSTDC_VERSION = 14.0
 
 PKGNAME-main =  bitrig-gcc-${FULL_PKGVERSION}
-PKGNAME-estdc = bitrig-libstdc++-${FULL_PKGVERSION}
+PKGNAME-gcclibs= bitrig-gcclibs-${FULL_PKGVERSION}
 
-REVISION-main = 7
-REVISION-estdc =7
+REVISION-main = 8
+REVISION-gcclibs=8
 
 SHARED_LIBS =	stdc++		${LIBSTDC_VERSION} \
 		ssp		1.0 \
 		lto_plugin      0.0
 
 
-MULTI_PACKAGES = -main -estdc
+MULTI_PACKAGES = -main -gcclibs
 
 PREFIX = 	/usr
 INSTDIR =	${PREFIX}
@@ -43,13 +43,13 @@ PERMIT_DISTFILES_CDROM=Yes
 COM=		GNU compiler collection
 COMMENT=	${COM}: core C compiler
 COMMENT-main=	${COMMENT}
-COMMENT-estdc=	${COM}: C++ compiler library
+COMMENT-gcclibs=	${COM}: C++ compiler library
 
 PKGNAME?=	bitrig-gcc-${FULL_PKGVERSION}
-PKGNAME-estdc?=	bitrig-libstdc++-${FULL_PKGVERSION}
+PKGNAME-gcclibs?=	bitrig-libstdc++-${FULL_PKGVERSION}
 
 DESCR-main ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR
-DESCR-estdc ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-estdc
+DESCR-gcclibs?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-gcclibs
 
 HOMEPAGE?=	http://gcc.gnu.org/
 
@@ -70,9 +70,9 @@ MASTER_SITES0 = ftp://quatramaran.ens.fr/pub/espie/
 MASTER_SITES1 =	ftp://sources.redhat.com/pub/java/
 
 LANGS = c
-.if ${BUILD_PACKAGES:M-estdc}
+.if ${BUILD_PACKAGES:M-gcclibs}
 LANGS := ${LANGS},c++
-REGRESS_DEPENDS += 	${BUILD_PKGPATH},-estdc>=4.6,<4.7
+REGRESS_DEPENDS += 	${BUILD_PKGPATH},-gcclibs>=4.6,<4.7
 .endif
 
 CONFIGURE_STYLE =		gnu
@@ -148,15 +148,15 @@ RUN_DEPENDS =		${BUILD_PKGPATH},-main
 WANTLIB =		c gmp mpc mpfr z
 
 RUN_DEPENDS-main =	${RUN_DEPENDS} \
-			${BUILD_PKGPATH},-estdc>=4.6,<4.7
-RUN_DEPENDS-estdc =
+			${BUILD_PKGPATH},-gcclibs>=4.6,<4.7
+RUN_DEPENDS-gcclibs =
 
-WANTLIB-estdc =		m
+WANTLIB-gcclibs =		m
 
 LIB_DEPENDS +=		devel/gmp>=4.2 \
 			devel/mpfr \
 			devel/libmpc
-LIB_DEPENDS-estdc =
+LIB_DEPENDS-gcclibs =
 
 .if ${MACHINE_ARCH:Mamd64}
 CONFIG = x86_64-unknown-openbsd${OSREV}
