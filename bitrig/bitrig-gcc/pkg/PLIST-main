@@ -719,7 +719,6 @@ lib/gcc/${CONFIG}/${V}/install-tools/include/README
 lib/gcc/${CONFIG}/${V}/install-tools/include/limits.h
 lib/gcc/${CONFIG}/${V}/install-tools/macro_list
 lib/gcc/${CONFIG}/${V}/install-tools/mkheaders.conf
-lib/gcc/${CONFIG}/${V}/libgcc.a
 lib/gcc/${CONFIG}/${V}/libgcov.a
 @comment lib/libiberty.a
 lib/libssp.a
