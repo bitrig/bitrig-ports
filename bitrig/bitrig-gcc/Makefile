@@ -45,13 +45,10 @@ COMMENT=	${COM}: core C compiler
 COMMENT-main=	${COMMENT}
 COMMENT-gcclibs=	${COM}: C++ compiler library
 
-PKGNAME?=	bitrig-gcc-${FULL_PKGVERSION}
-PKGNAME-gcclibs?=	bitrig-libstdc++-${FULL_PKGVERSION}
+DESCR-main =	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR
+DESCR-gcclibs =	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-gcclibs
 
-DESCR-main ?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR
-DESCR-gcclibs?=	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-gcclibs
-
-HOMEPAGE?=	http://gcc.gnu.org/
+HOMEPAGE =	http://gcc.gnu.org/
 
 #DIST_SUBDIR=gcc
 CONFIG=${MACHINE_ARCH}-unknown-openbsd${OSREV}
