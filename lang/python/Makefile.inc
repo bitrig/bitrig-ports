@@ -68,7 +68,7 @@ RUN_DEPENDS=		${FULLPKGNAME-main}:lang/python/${VERSION},-main
 LIB_DEPENDS=
 
 LIB_DEPENDS-main =	archivers/bzip2 bitrig/bitrig-binutils
-LIB_DEPENDS-main +=	bitrig/bitrig-gcc bitrig/bitrig-gcc,-estdc  devel/gettext
+LIB_DEPENDS-main +=	bitrig/bitrig-gcc bitrig/bitrig-gcc,-gcclibs devel/gettext
 RUN_DEPENDS-main =
 WANTLIB-main =		ssl panelw m crypto c util z readline pthread \
 			ncursesw stdc++ expat ossaudio bz2 iconv intl
