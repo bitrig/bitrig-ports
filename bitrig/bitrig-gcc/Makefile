@@ -13,8 +13,8 @@ LIBSTDC_VERSION = 14.0
 PKGNAME-main =  bitrig-gcc-${FULL_PKGVERSION}
 PKGNAME-gcclibs= bitrig-gcclibs-${FULL_PKGVERSION}
 
-REVISION-main = 9
-REVISION-gcclibs=9
+REVISION-main = 10
+REVISION-gcclibs=10
 
 SHARED_LIBS =	stdc++		${LIBSTDC_VERSION} \
 		ssp		1.0 \
@@ -147,8 +147,7 @@ PKG_ARGS += -DI386=0
 RUN_DEPENDS =		${BUILD_PKGPATH},-main
 WANTLIB =		c gmp mpc mpfr z
 
-RUN_DEPENDS-main =	${RUN_DEPENDS} \
-			${BUILD_PKGPATH},-gcclibs>=4.6,<4.7
+RUN_DEPENDS-main =
 RUN_DEPENDS-gcclibs =
 
 WANTLIB-gcclibs =		m
