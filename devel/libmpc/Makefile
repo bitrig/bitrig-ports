@@ -5,7 +5,7 @@ COMMENT=	complex numbers math library
 V=		0.9
 DISTNAME=	mpc-${V}
 PKGNAME=	libmpc-${V}
-REVISION=	0
+REVISION=	1
 SHARED_LIBS=	mpc	0.1	# 2.0
 
 CATEGORIES=	devel math
@@ -20,7 +20,9 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 LIB_DEPENDS=		devel/mpfr \
-			devel/gmp
+			devel/gmp \
+			bitrig/bitrig-gcc,-gcclibs
+
 WANTLIB=		mpfr>=1.0 gmp>=9.0 m
 
 CONFIGURE_STYLE=	gnu

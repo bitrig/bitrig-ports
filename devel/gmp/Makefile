@@ -3,7 +3,7 @@
 COMMENT=	library for arbitrary precision arithmetic
 
 DISTNAME=	gmp-5.0.2
-REVISION=	0
+REVISION=	1
 SHARED_LIBS +=  gmp                  9.0      # 10.2
 SHARED_LIBS +=  gmpxx                1.0      # 6.2
 CATEGORIES=	devel math
@@ -19,6 +19,8 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB += m stdc++
+
+LIB_DEPENDS=	bitrig/bitrig-gcc,-gcclibs
 
 MASTER_SITES=	ftp://ftp.gmplib.org/pub/${DISTNAME}/ \
 		${MASTER_SITE_GNU:=gmp/}

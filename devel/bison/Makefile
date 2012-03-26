@@ -21,6 +21,5 @@ BUILD_DEPENDS=	devel/m4
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--disable-yacc
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/build-aux
-USE_GROFF =	Yes
 
 .include <bsd.port.mk>
