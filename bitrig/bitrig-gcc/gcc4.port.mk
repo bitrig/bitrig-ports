@@ -38,31 +38,31 @@ _MODGCC4_LINKS += egcc gcc egcc cc
 .  endif
 
 .  if ${MODGCC4_LANGS:L:Mc++}
-BUILD_DEPENDS += bitrig/bitrig-gcc,-c++>=4.6,<4.7
+#BUILD_DEPENDS += bitrig/bitrig-gcc,-c++>=4.6,<4.7
 MODGCC4STDCPP = estdc++
-LIB_DEPENDS += bitrig/bitrig-gcc,-estdc>=4.6,<4.7
-WANTLIB += estdc++>=14
+#LIB_DEPENDS += bitrig/bitrig-gcc,-estdc>=4.6,<4.7
+#WANTLIB += estdc++>=14
 _MODGCC4_LINKS += eg++ g++ eg++ c++
 .  endif
 
 .  if ${MODGCC4_LANGS:L:Mfortran}
-BUILD_DEPENDS += bitrig/bitrig-gcc,-f95>=4.6,<4.7
+#BUILD_DEPENDS += bitrig/bitrig-gcc,-f95>=4.6,<4.7
 WANTLIB += gfortran>=3
-LIB_DEPENDS += bitrig/bitrig-gcc,-f95>=4.6,<4.7
+#LIB_DEPENDS += bitrig/bitrig-gcc,-f95>=4.6,<4.7
 _MODGCC4_LINKS += egfortran gfortran
 .  endif
 
 .  if ${MODGCC4_LANGS:L:Mjava}
-BUILD_DEPENDS += bitrig/bitrig-gcc,-java>=4.6,<4.7
+#BUILD_DEPENDS += bitrig/bitrig-gcc,-java>=4.6,<4.7
 MODGCC4_GCJWANTLIB = gcj
-MODGCC4_GCJLIBDEP = bitrig/bitrig-gcc,-java>=4.6,<4.7
+#MODGCC4_GCJLIBDEP = bitrig/bitrig-gcc,-java>=4.6,<4.7
 _MODGCC4_LINKS += egcj gcj egcjh gcjh egjar gjar egij gij
 .  endif
 
 .  if ${MODGCC4_LANGS:L:Mgo}
-BUILD_DEPENDS += bitrig/bitrig-gcc,-go>=4.6,<4.7
+#BUILD_DEPENDS += bitrig/bitrig-gcc,-go>=4.6,<4.7
 WANTLIB += go
-LIB_DEPENDS += bitrig/bitrig-gcc,-go>=4.6,<4.7
+#LIB_DEPENDS += bitrig/bitrig-gcc,-go>=4.6,<4.7
 _MODGCC4_LINKS += egccgo gccgo
 .  endif
 .endif

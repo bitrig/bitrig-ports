@@ -27,7 +27,7 @@ REGRESS_DEPENDS=	devel/dejagnu
 USE_LIBTOOL=		Yes
 USE_GROFF =		Yes
 
-CC=			egcc
+CC=			gcc
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED}
 
