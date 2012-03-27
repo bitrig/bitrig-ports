@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1018 2012/03/18 14:28:18 pascal Exp $
+# $OpenBSD: Makefile,v 1.1020 2012/03/26 19:06:46 eric Exp $
 # $FreeBSD: Makefile,v 1.85 1997/11/20 05:22:14 asami Exp $
 
      SUBDIR =
@@ -332,6 +332,7 @@
      SUBDIR += libyajl
      SUBDIR += libyaml
      SUBDIR += llvm
+     SUBDIR += log4cplus
      SUBDIR += lpc21isp
      SUBDIR += lpeg
      SUBDIR += luaalarm
@@ -1030,6 +1031,7 @@
      SUBDIR += py-subvertpy
      SUBDIR += py-suds
      SUBDIR += py-symboltype
+     SUBDIR += py-test
      SUBDIR += py-testtools
      SUBDIR += py-tpg
      SUBDIR += py-turbocheetah

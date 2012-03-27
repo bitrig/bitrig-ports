@@ -1,13 +1,11 @@
-# $OpenBSD: Makefile,v 1.86 2012/03/20 20:52:44 robert Exp $
+# $OpenBSD: Makefile,v 1.88 2012/03/24 07:36:43 robert Exp $
 
 ONLY_FOR_ARCHS=		i386 amd64
 
 COMMENT=		Chromium browser
 
-V=			17.0.963.79
+V=			17.0.963.83
 DISTNAME=		chromium-${V}
-
-REVISION=		0
 
 CATEGORIES=		www
 
@@ -98,7 +96,6 @@ pre-configure:
 	@ln -sf ${MODPY_BIN} ${WRKDIR}/bin/python
 	@cp -R ${WRKSRC}/third_party/libvpx/source/config/linux \
 		${WRKSRC}/third_party/libvpx/source/config/openbsd
-	${SUBST_CMD} ${WRKSRC}/build/common.gypi
 
 # gyp_chromium generates all the Makefiles from gyp
 do-configure:
