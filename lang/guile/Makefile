@@ -31,7 +31,7 @@ MODULES=	devel/gettext
 
 SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=	gnu
-USE_LIBTOOL=		Yes
+USE_LIBTOOL=		gnu
 USE_GMAKE=		Yes
 USE_GROFF =		Yes
 
@@ -39,6 +39,8 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		PTHREAD_CFLAGS=-pthread \
 		PTHREAD_LIBS=-pthread
+
+CONFIGURE_ARGS= --disable-error-on-warning
 
 V=		${VERSION:C,.[0-9]+$,,}
 SUBST_VARS=	V
