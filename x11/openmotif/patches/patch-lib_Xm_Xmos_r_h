@@ -1,6 +1,6 @@
 $OpenBSD: patch-lib_Xm_Xmos_r_h,v 1.1 2007/07/18 21:41:05 mbalmer Exp $
---- lib/Xm/Xmos_r.h.orig	Sat Jun 30 11:59:19 2007
-+++ lib/Xm/Xmos_r.h	Sat Jun 30 12:01:19 2007
+--- lib/Xm/Xmos_r.h.orig	Mon Jun 17 15:36:30 2002
++++ lib/Xm/Xmos_r.h	Thu Apr 12 14:36:09 2012
 @@ -215,6 +215,10 @@ extern void XtProcessUnlock(
   * struct passwd* _XGetpwuid(uid_t uid, _Xgetpwparams);
   */
@@ -12,3 +12,12 @@ $OpenBSD: patch-lib_Xm_Xmos_r_h,v 1.1 2007/07/18 21:41:05 mbalmer Exp $
  #if defined(X_INCLUDE_PWD_H) && !defined(_XOS_INCLUDED_PWD_H)
  # include <pwd.h>
  # if defined(XUSE_MTSAFE_API) || defined(XUSE_MTSAFE_PWDAPI)
+@@ -249,7 +253,7 @@ typedef struct {
+  */
+    
+ #if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__)
+-__inline__ void _Xpw_copyPasswd(_Xgetpwparams p)
++void _Xpw_copyPasswd(_Xgetpwparams p)
+ {
+    memcpy(&(p).pws, (p).pwp, sizeof(struct passwd));
+ 
