@@ -25,7 +25,6 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--enable-zlib \
 			--enable-iconv
-CC=			egcc
 
 USE_GROFF =	Yes
 

@@ -1,6 +1,6 @@
 $OpenBSD: patch-Makefile_in,v 1.10 2007/12/19 21:27:48 bernd Exp $
 --- Makefile.in.orig	Tue Mar  6 20:41:10 2007
-+++ Makefile.in	Sat Mar 10 10:08:20 2012
++++ Makefile.in	Tue Apr 17 10:03:13 2012
 @@ -24,7 +24,7 @@ LIBREV = @LIBREV@
  # Targets
  MYHEADS = depot.h curia.h relic.h hovel.h cabin.h villa.h vista.h odeum.h
@@ -31,10 +31,11 @@ $OpenBSD: patch-Makefile_in,v 1.10 2007/12/19 21:27:48 bernd Exp $
 -CFLAGS = -Wall -pedantic -fPIC -fsigned-char -O3 -fomit-frame-pointer -fforce-addr @MYOPTS@
 +CFLAGS += -Wall -pedantic -fPIC -fsigned-char -fomit-frame-pointer -fforce-addr @MYOPTS@
  LD = @LD@
- LIBS = -lqdbm @LIBS@
+-LIBS = -lqdbm @LIBS@
 -LIBLDFLAGS = @LDFLAGS@ -L. -L$(MYLIBDIR) -L$(HOME)/lib -L/usr/local/lib @LIBS@
 -LDFLAGS = @LDFLAGS@ -L. -L$(MYLIBDIR) -L$(HOME)/lib -L/usr/local/lib $(LIBS)
 -LDENV = LD_RUN_PATH=/lib:/usr/lib:$(MYLIBDIR):$(HOME)/lib:/usr/local/lib
++LIBS = -lqdbm -liconv @LIBS@
 +LIBLDFLAGS = @LDFLAGS@ -L. -L/usr/local/lib @LIBS@
 +LDFLAGS = @LDFLAGS@ -L. -L/usr/local/lib $(LIBS)
 +LDENV = LD_RUN_PATH=/lib:/usr/lib:/usr/local/lib
