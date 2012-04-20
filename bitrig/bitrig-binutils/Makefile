@@ -1,10 +1,9 @@
-#
-
 SHARED_ONLY=		Yes
 
 COMMENT =		Bitrig binutils
 
 DISTNAME =		bitrig-binutils-0.1
+REVISION =		0
 EXTRACT_SUFX =		.tgz
 CATEGORIES =		bitrig devel
 SHARED_LIBS =		iberty 10.1 \
