@@ -1,5 +1,6 @@
 # $OpenBSD: Makefile,v 1.37 2012/01/19 08:41:13 sthen Exp $
 
+PORT =		88
 SHARED_LIBS +=  libclang                  0.0 # 3.0
 
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
@@ -27,7 +28,7 @@ PERMIT_DISTFILES_FTP =	Yes
 WANTLIB =	c m pthread
 
 #MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
-MASTER_SITES =	http://localhost/
+MASTER_SITES =	http://localhost:${PORT}/
 
 #DISTFILES =	${DISTREALNAME}${EXTRACT_SUFX}
 DISTFILES =	${DISTREALNAME}${EXTRACT_SUFX} clang-${LLVM_V}${EXTRACT_SUFX}
@@ -100,6 +101,6 @@ svn:
 	cd /tmp/bitrig-llvm && svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm-3.1.src && tar zcvf llvm-3.1.tar.gz llvm-3.1.src
 	cd /tmp/bitrig-llvm && svn co http://llvm.org/svn/llvm-project/cfe/trunk clang-3.1.src && tar zcvf clang-3.1.tar.gz clang-3.1.src
 	@echo serving tar.gz files
-	cd /tmp/bitrig-llvm && sudo /usr/local/sbin/thttpd -D
+	cd /tmp/bitrig-llvm && sudo /usr/local/sbin/thttpd -D -p ${PORT}
 
 .include <bsd.port.mk>
