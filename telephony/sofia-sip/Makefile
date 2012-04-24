@@ -1,10 +1,10 @@
 COMMENT=	Nokia sofia-sip library
 
 DISTNAME=	sofia-sip-1.12.11
-#REVISION=	0
+REVISION=	0
 
-SHARED_LIBS +=	libsofia-sip-ua-glib 0.0      # 3.0
-SHARED_LIBS +=	libsofia-sip-ua      0.0      # 6.0
+SHARED_LIBS +=	sofia-sip-ua-glib 3.0      # 3.0
+SHARED_LIBS +=	sofia-sip-ua      6.0      # 6.0
 
 CATEGORIES=	telephony devel
 
