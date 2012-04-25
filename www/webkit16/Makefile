@@ -7,7 +7,7 @@ COMMENT =	open source web browser engine for Gtk+
 V =		1.6.3
 DISTNAME =	webkit-${V}
 EPOCH =		0
-REVISION =	0
+REVISION = 	1
 CATEGORIES =	www
 EXTRACT_SUFX=	.tar.xz
 
