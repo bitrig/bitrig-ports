@@ -2,7 +2,7 @@
 
 COMMENT =		GNU troff typesetter
 DISTNAME =		groff-1.21
-REVISION =		12
+REVISION =		13
 
 CATEGORIES =		textproc
 HOMEPAGE =		http://www.gnu.org/software/groff/

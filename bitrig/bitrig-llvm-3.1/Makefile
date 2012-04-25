@@ -98,8 +98,8 @@ post-install:
 svn:
 	rm -rf /tmp/bitrig-llvm/
 	mkdir -p /tmp/bitrig-llvm
-	cd /tmp/bitrig-llvm && svn co http://llvm.org/svn/llvm-project/llvm/trunk llvm-3.1.src && tar zcvf llvm-3.1.tar.gz llvm-3.1.src
-	cd /tmp/bitrig-llvm && svn co http://llvm.org/svn/llvm-project/cfe/trunk clang-3.1.src && tar zcvf clang-3.1.tar.gz clang-3.1.src
+	cd /tmp/bitrig-llvm && svn co http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_31/rc1 llvm-3.1.src && tar zcvf llvm-3.1.tar.gz llvm-3.1.src
+	cd /tmp/bitrig-llvm && svn co http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_31/rc1 clang-3.1.src && tar zcvf clang-3.1.tar.gz clang-3.1.src
 	@echo serving tar.gz files
 	cd /tmp/bitrig-llvm && sudo /usr/local/sbin/thttpd -D -p ${PORT}
 

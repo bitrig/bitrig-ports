@@ -9,7 +9,7 @@ VERSION=	7.3.${REV}
 # keep PKGNAME for full version number
 PKGNAME=	vim-${VERSION}
 PKGNAME-main=	vim-${VERSION}
-REVISION-main=	2
+REVISION-main=	3
 PKGNAME-lang=	vim-lang-${VERSION}
 REVISION-lang = 0
 P=		${DISTNAME:C/[-\.]//g}
