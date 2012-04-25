@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.6 2011/09/16 11:13:39 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2012/04/23 17:15:18 espie Exp $
 
 COMMENT =	POCO C++ libraries for network based applications
 
 VERSION =	1.4.0
 DISTNAME =	poco-${VERSION}-all
 PKGNAME =	poco-${VERSION}
-REVISION=		0
+REVISION=		1
 CATEGORIES =	net devel
 SHLIB_VERSION =	0.1
 .for _lib in PocoMySQL PocoNetSSL PocoODBC PocoSQLite PocoZip \
@@ -27,11 +27,10 @@ WANTLIB += c crypto m pthread ssl stdc++ iodbc iodbcinst mysqlclient
 WANTLIB += expat pcre sqlite3 z
 LIB_DEPENDS =	databases/iodbc \
 		databases/mysql \
-		databases/sqlite3 \
 		devel/pcre
 
 USE_GMAKE =		Yes
-SEPARATE_BUILD =	simple
+SEPARATE_BUILD =	Yes
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	--config=OpenBSD --no-tests --no-samples \
 			--unbundled --include-path=${LOCALBASE}/include \

@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.9 2011/11/14 10:34:24 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.11 2012/04/16 11:55:37 ajacoutot Exp $
 
 COMMENT=	interface components for OpenPGP
 
 GNOME_PROJECT=	libcryptui
-GNOME_VERSION=	3.2.2
+GNOME_VERSION=	3.4.1
 
 SHARED_LIBS +=	cryptui              2.0      # .0.0
 
@@ -36,7 +36,7 @@ MODULES=	devel/gettext \
 		x11/gnome \
 		devel/dconf
 
-MODGNOME_TOOLS=goi
+MODGNOME_TOOLS=	goi
 
 CONFIGURE_ARGS=	--disable-update-mime-database
 

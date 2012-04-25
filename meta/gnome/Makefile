@@ -1,16 +1,13 @@
-# $OpenBSD: Makefile,v 1.14 2012/03/02 09:07:42 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.18 2012/04/16 22:37:58 ajacoutot Exp $
 
 COMMENT-main=	GNOME desktop meta-package (base installation)
 COMMENT-extra=	GNOME desktop meta-package (full installation)
 
-V=		3.2.1
+V=		3.4.1
 PKGNAME=	gnome-${V}
 
 PKGNAME-main=	gnome-${V}
 PKGNAME-extra=	gnome-extra-${V}
-
-REVISION-main=	8
-REVISION-extra=	0
 
 MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
 		Antoine Jacoutot <ajacoutot@openbsd.org>
@@ -31,8 +28,7 @@ RUN_DEPENDS-main += \
 		x11/gnome/nautilus \
 		x11/gnome/session \
 		x11/gnome/system-monitor \
-		x11/gnome/terminal \
-		x11/gnome/utils
+		x11/gnome/terminal
 
 # gconf2 and polkit are already dependencies and we want to be able to
 # handle system-wide gconf entries.
@@ -52,6 +48,15 @@ RUN_DEPENDS-main += \
 		x11/gnome/file-roller,-nautilus \
 		x11/gnome/gcalctool \
 		x11/xdg-user-dirs-gtk
+
+# Former gnome-utils.
+RUN_DEPENDS-main += \
+		x11/gnome/baobab \
+		x11/gnome/dictionary \
+		x11/gnome/font-viewer \
+		x11/gnome/screenshot \
+		x11/gnome/search-tool \
+		x11/gnome/system-log
 
 RUN_DEPENDS-extra += \
 		STEM-=${V}:${BASE_PKGPATH},-main \
@@ -74,7 +79,8 @@ RUN_DEPENDS-extra += \
 		x11/gnome/nautilus-open-terminal \
 		x11/gnome/nautilus-sendto \
 		x11/gnome/nettool \
-		x11/gnome/seahorse-plugins \
+		x11/gnome/seahorse \
+		x11/gnome/seahorse-nautilus \
 		x11/gnome/seahorse-sharing \
 		x11/gnome/totem,-nautilus \
 		x11/gnome/tracker,-evolution \

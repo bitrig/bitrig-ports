@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.274 2012/02/28 11:17:04 bentley Exp $
+# $OpenBSD: Makefile,v 1.276 2012/04/20 10:57:28 jasper Exp $
 # $FreeBSD: Makefile,v 1.40 1997/11/16 22:49:20 fenner Exp $
 
      SUBDIR =
@@ -10,6 +10,7 @@
      SUBDIR += amarok
      SUBDIR += aqualung
      SUBDIR += ascd
+     SUBDIR += aucatctl
      SUBDIR += audacious
      SUBDIR += audacious-plugins
      SUBDIR += audacity
@@ -23,9 +24,9 @@
      SUBDIR += celt
      SUBDIR += cmixer
      SUBDIR += cmt
-     SUBDIR += cmus
      SUBDIR += cmu-sphinx3
      SUBDIR += cmu-sphinxbase
+     SUBDIR += cmus
      SUBDIR += cplay
      SUBDIR += daapd
      SUBDIR += disc-cover
@@ -160,8 +161,8 @@
      SUBDIR += pms
      SUBDIR += portaudio-svn
      SUBDIR += pulseaudio
-     SUBDIR += py-audio
      SUBDIR += py-ao
+     SUBDIR += py-audio
      SUBDIR += py-cddb
      SUBDIR += py-eyed3
      SUBDIR += py-id3

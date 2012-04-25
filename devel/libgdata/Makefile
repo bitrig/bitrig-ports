@@ -1,13 +1,13 @@
-# $OpenBSD: Makefile,v 1.24 2012/03/12 09:43:12 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.27 2012/04/07 07:29:42 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
 COMMENT=		Google Data API based Glib client library
 
 GNOME_PROJECT=		libgdata
-GNOME_VERSION=		0.10.2
+GNOME_VERSION=		0.12.0
 
-SHARED_LIBS +=  gdata                4.0      # .14.1
+SHARED_LIBS +=  gdata                15.0      # .15.0
 
 CATEGORIES=		devel net
 
@@ -42,7 +42,6 @@ LIBTOOL_FLAGS+= 	--tag=disable-static
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		--disable-static \
-			--enable-gnome \
-			--with-ca-certs=/etc/ssl/cert.pem
+			--enable-gnome
 
 .include <bsd.port.mk>

@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.17 2011/12/22 15:20:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.19 2012/04/23 17:15:18 espie Exp $
 
 # requires SSE
 ONLY_FOR_ARCHS=	i386 amd64
 
 COMMENT=	virtual lighttable and darkroom for photographers
 DISTNAME=	darktable-0.9.3
+REVISION =	0
 
 SHARED_ONLY=	Yes
 
@@ -36,8 +37,7 @@ MODULES=	devel/cmake \
 
 RUN_DEPENDS=	devel/desktop-file-utils \
 		x11/gtk+2,-guic
-LIB_DEPENDS=	databases/sqlite3 \
-		devel/sdl \
+LIB_DEPENDS=	devel/sdl \
 		graphics/exiv2>=0.22 \
 		graphics/lcms2 \
 		graphics/libgphoto2 \
@@ -49,7 +49,7 @@ LIB_DEPENDS=	databases/sqlite3 \
 		x11/gnome/librsvg \
 		x11/gtk+2
 
-SEPARATE_BUILD=	simple
+SEPARATE_BUILD=	Yes
 USE_LIBTOOL=	Yes
 USE_GROFF=	Yes
 

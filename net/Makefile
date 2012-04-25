@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.735 2012/03/21 16:18:32 sthen Exp $
+# $OpenBSD: Makefile,v 1.746 2012/04/23 15:49:51 okan Exp $
 # $FreeBSD: Makefile,v 1.129 1997/11/20 13:47:40 itojun Exp $
 #
 
@@ -39,9 +39,9 @@
      SUBDIR += bwm-ng
      SUBDIR += cadaver
      SUBDIR += castget
+     SUBDIR += centerim
      SUBDIR += cftp
      SUBDIR += charm
-     SUBDIR += centerim
      SUBDIR += cjc
      SUBDIR += climm
      SUBDIR += clive
@@ -82,7 +82,7 @@
      SUBDIR += ettercap,no_x11
      SUBDIR += ez-ipupdate
      SUBDIR += ezstream
-     SUBDIR += farsight2
+     SUBDIR += farstream
      SUBDIR += filezilla
      SUBDIR += firewalk
      SUBDIR += flickcurl
@@ -106,6 +106,7 @@
      SUBDIR += gnugk
      SUBDIR += gopher
      SUBDIR += gotthard
+     SUBDIR += gpodder
      SUBDIR += grake
      SUBDIR += gsnmp
      SUBDIR += gssdp
@@ -125,6 +126,8 @@
      SUBDIR += ices
      SUBDIR += ices2
      SUBDIR += icinga
+     SUBDIR += icli
+     SUBDIR += icli,nagios
      SUBDIR += icmpinfo
      SUBDIR += ifmcstat
      SUBDIR += ifstat
@@ -176,7 +179,7 @@
      SUBDIR += libnids
      SUBDIR += liboauth
      SUBDIR += libpcapnav
-     SUBDIR += libproxy,mozilla,webkit
+     SUBDIR += libproxy,webkit
      SUBDIR += librest
      SUBDIR += librsync
      SUBDIR += libshout
@@ -199,6 +202,7 @@
      SUBDIR += miniupnp
      SUBDIR += mirmon
      SUBDIR += mirror
+     SUBDIR += mktorrent
      SUBDIR += mldonkey
      SUBDIR += mon
      SUBDIR += mono-zeroconf
@@ -209,6 +213,7 @@
      SUBDIR += mudix
      SUBDIR += munin
      SUBDIR += mutella
+     SUBDIR += mygpoclient
      SUBDIR += nagios
      SUBDIR += nam
      SUBDIR += natpmpd
@@ -269,6 +274,7 @@
      SUBDIR += p5-Danga-Socket
      SUBDIR += p5-Event-RPC
      SUBDIR += p5-Filesys-Virtual-DAAP
+     SUBDIR += p5-GRID-Machine
      SUBDIR += p5-Geo-IP
      SUBDIR += p5-IO-Interface
      SUBDIR += p5-IO-Socket-INET6
@@ -292,7 +298,6 @@
      SUBDIR += p5-Net-Daemon
      SUBDIR += p5-Net-Dict
      SUBDIR += p5-Net-Domain-TLD
-     SUBDIR += p5-Net-eBay
      SUBDIR += p5-Net-FTP-AutoReconnect
      SUBDIR += p5-Net-FTP-Recursive
      SUBDIR += p5-Net-FTPSSL
@@ -321,10 +326,10 @@
      SUBDIR += p5-Net-ParseWhois
      SUBDIR += p5-Net-Patricia
      SUBDIR += p5-Net-Pcap
+     SUBDIR += p5-Net-Pcap-Reassemble
      SUBDIR += p5-Net-Ping-External
      SUBDIR += p5-Net-Radius
      SUBDIR += p5-Net-RawIP
-     SUBDIR += p5-Net-Server-SS-PreFork
      SUBDIR += p5-Net-SFTP
      SUBDIR += p5-Net-SFTP-Foreign
      SUBDIR += p5-Net-SMTP-SSL
@@ -335,6 +340,7 @@
      SUBDIR += p5-Net-SSH-Expect
      SUBDIR += p5-Net-SSH-Perl
      SUBDIR += p5-Net-SSH2
+     SUBDIR += p5-Net-Server-SS-PreFork
      SUBDIR += p5-Net-Snort-Parser
      SUBDIR += p5-Net-Subnets
      SUBDIR += p5-Net-TFTP
@@ -350,6 +356,7 @@
      SUBDIR += p5-Net-XMPP
      SUBDIR += p5-Net-XWhois
      SUBDIR += p5-Net-Z3950-Zoom
+     SUBDIR += p5-Net-eBay
      SUBDIR += p5-NetAddr-IP
      SUBDIR += p5-NetPacket
      SUBDIR += p5-Nmap-Parser
@@ -366,15 +373,16 @@
      SUBDIR += p5-PlRPC
      SUBDIR += p5-RPC-XML
      SUBDIR += p5-Regexp-Common-net-CIDR
-     SUBDIR += p5-Server-Starter
      SUBDIR += p5-SNMP-BridgeQuery
      SUBDIR += p5-SNMP-Info
      SUBDIR += p5-SNMP_Session
+     SUBDIR += p5-Server-Starter
      SUBDIR += p5-Socket-GetAddrInfo
      SUBDIR += p5-Socket6
      SUBDIR += p5-Sys-Hostname-Long
      SUBDIR += p5-Test-TCP
      SUBDIR += p5-Validate-Net
+     SUBDIR += p5-XML-RPC
      SUBDIR += p5-flowd
      SUBDIR += packit
      SUBDIR += papyon
@@ -447,7 +455,6 @@
      SUBDIR += py-irclib
      SUBDIR += py-libpcap
      SUBDIR += py-medusa
-     SUBDIR += py-msnp
      SUBDIR += py-nmap
      SUBDIR += py-pcapy
      SUBDIR += py-pcs
@@ -527,6 +534,7 @@
      SUBDIR += spectrum
      SUBDIR += spectrum-tools
      SUBDIR += ssldump
+     SUBDIR += sslh
      SUBDIR += sslsniffer
      SUBDIR += ssvnc
      SUBDIR += supybot

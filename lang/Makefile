@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.131 2012/03/08 14:58:09 pascal Exp $
+# $OpenBSD: Makefile,v 1.135 2012/04/20 10:48:03 jasper Exp $
 # $FreeBSD: Makefile,v 1.89 1997/11/24 09:24:06 tg Exp $
 #
 
@@ -23,6 +23,7 @@
      SUBDIR += ezm3
      SUBDIR += feldspar
      SUBDIR += freehdl
+     SUBDIR += gambit
      SUBDIR += gawk
      SUBDIR += g77
      SUBDIR += g77-old
@@ -30,6 +31,7 @@
      SUBDIR += gforth
      SUBDIR += gfortran
      SUBDIR += ghc
+     SUBDIR += go
      SUBDIR += gprolog
      SUBDIR += guile
      SUBDIR += hs-haskell-src
@@ -61,6 +63,7 @@
      SUBDIR += open-cobol
      SUBDIR += otcl
      SUBDIR += parrot
+     SUBDIR += pcc
      SUBDIR += petite-chez
      SUBDIR += pfe
      SUBDIR += php
@@ -68,6 +71,7 @@
      SUBDIR += processing
      SUBDIR += pugs
      SUBDIR += python
+     SUBDIR += railo
      SUBDIR += rakudo
      SUBDIR += rubinius
      SUBDIR += ruby

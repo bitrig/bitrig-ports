@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.316 2012/02/27 08:46:22 bentley Exp $
+# $OpenBSD: Makefile,v 1.318 2012/04/04 03:39:42 bentley Exp $
 # $FreeBSD: Makefile,v 1.55 1997/11/03 12:12:27 tg Exp $
 #
 
@@ -210,6 +210,7 @@
      SUBDIR += py-opengl
      SUBDIR += py-pigment
      SUBDIR += py-pyx
+     SUBDIR += py3-cairo
      SUBDIR += pycha
      SUBDIR += qiv
      SUBDIR += quesoglc
@@ -261,5 +262,6 @@
      SUBDIR += xzgv
      SUBDIR += zbar
      SUBDIR += zint
+     SUBDIR += zxing
 
 .include <bsd.port.subdir.mk>

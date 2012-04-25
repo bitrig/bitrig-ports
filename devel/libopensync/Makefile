@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2011/09/16 09:24:52 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2012/04/23 17:15:18 espie Exp $
 
 SHARED_ONLY=	Yes
 
@@ -6,7 +6,7 @@ COMMENT=	data synchronization framework
 
 V=		0.36
 DISTNAME=	libopensync-${V}
-REVISION =	2
+REVISION =	3
 SHARED_LIBS +=	opensync 1.1
 CATEGORIES=	devel comms
 
@@ -25,15 +25,14 @@ MASTER_SITES=	http://www.opensync.org/download/releases/${V}/
 WANTLIB=	c pthread sqlite3>=8 xml2>=9 glib-2.0>=1200 \
 		gmodule-2.0>=1200 gthread-2.0>=1200
 
-SEPARATE_BUILD=	simple
+SEPARATE_BUILD=	Yes
 
 MODULES=	devel/cmake \
 		devel/gettext
 
 CFLAGS+=	-pthread
 
-LIB_DEPENDS=	databases/sqlite3 \
-		textproc/libxml \
+LIB_DEPENDS=	textproc/libxml \
 		devel/glib2
 
 CONFIGURE_ARGS=	-DCMAKE_INSTALL_PREFIX="${PREFIX}"

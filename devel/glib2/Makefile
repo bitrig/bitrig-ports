@@ -1,14 +1,16 @@
-# $OpenBSD: Makefile,v 1.159 2012/03/25 21:46:52 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.172 2012/04/23 12:49:47 ajacoutot Exp $
 
 COMMENT-main=		general-purpose utility library
 COMMENT-docs=		glib2 documentation
 
-VERSION=		2.32.0
+VERSION=		2.32.1
 DISTNAME=		glib-${VERSION}
 EXTRACT_SUFX=		.tar.xz
 
 PKGNAME-main=		glib2-${VERSION}
 PKGNAME-docs=		glib2-docs-${VERSION}
+
+REVISION-main=		3
 
 CATEGORIES=		devel
 
@@ -39,12 +41,11 @@ MODPY_ADJ_FILES=	glib/gtester-report \
 			gio/gdbus-2.0/codegen/gdbus-codegen.in \
 			gio/tests/gdbus-testserver.py
 
-BUILD_DEPENDS=		devel/libelf
-
-WANTLIB-main += ${WANTLIB} c pthread z pcre ffi
+WANTLIB-main += ${WANTLIB} c elf ffi pcre pthread z
 
 LIB_DEPENDS-main=	${LIB_DEPENDS} \
-			devel/pcre>=8.13 \
+			devel/pcre \
+			devel/libelf \
 			devel/libffi
 
 PKG_ARCH-docs=		*
@@ -53,7 +54,7 @@ LIB_DEPENDS-docs=
 RUN_DEPENDS-docs=
 
 # need X11 because DBus is used in the GDBus test cases;
-# also requires bumped limits (nofiles >= 512)
+# also requires bumped limits (stack >= 24576)
 BUILD_DEPENDS +=	x11/dbus
 REGRESS_IS_INTERACTIVE=	x11
 REGRESS_FLAGS=		GTESTER="${WRKBUILD}/glib/gtester -k"
@@ -75,10 +76,6 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--disable-systemtap \
 			--disable-xattr
 
-# XXX tries to run automake-1.11 if installed
-# (check again when updating to a stable release)
-CONFIGURE_ARGS +=	--disable-maintainer-mode
-
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
@@ -90,29 +87,16 @@ BUILD_DEPENDS+=		${MODGNU_AUTOCONF_DEPENDS} \
 			devel/libtool
 #MASTER_SITES0=		http://dmitrymatveev.co.uk/files/
 MASTER_SITES0=		http://distfiles.bsdfrog.org/
-PATCH_DIST_STRIP=	-p2
-PATCHFILES=		glib-gio-kqueue-2.28.8-v3.1.patch:0
+PATCHFILES=		glib-gio-kqueue-2.32.1-v1.patch:0
 AUTO_ENV=		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
 			AUTOCONF_VERSION=${AUTOCONF_VERSION}
 post-patch:
-	perl -pi -e 's,#include <sys/event.h>,#include <sys/types.h>\n#include <sys/event.h>,' \
-		${WRKSRC}/gio/kqueue/{kqueue-helper,kqueue-thread,kqueue-utils}.c
 	cd ${WRKSRC} && ${AUTO_ENV} autoreconf --force --install
 ### end of kqueue(1) backend ###########################################
 
 .include <bsd.port.arch.mk>
 
 pre-configure:
-# XXX
-# SIGSEGV on LP64_ARCHS at gclosure.c:290: i = closure->n_guards;
-# -> reproduce by adding a meeting|appointment under evolution into the
-# _local_ calendar for an already _passed_ date and running:
-# /usr/local/libexec/evolution/3.2/evolution-alarm-notify
-.if ${PROPERTIES:Mlp64}
-	perl -pi -e 's,CFLAGS = \@CFLAGS\@,CFLAGS = \@CFLAGS\@ -O0,' \
-		${WRKSRC}/gobject/Makefile.in
-.endif
-
 	perl -pi -e "s,/usr/local,${LOCALBASE},g;" \
 		-e "s,/usr/share/locale,${LOCALBASE}/share/locale,g;" \
 		-e "s,/usr/share/applications,${LOCALBASE}/share/applications,g;" \
@@ -125,5 +109,10 @@ pre-configure:
 		${WRKSRC}/gio/gdbusconnection.c \
 		${WRKSRC}/gio/gdbusprivate.c \
 		${WRKSRC}/po/*.po
+
+post-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/glib2
+	${INSTALL_DATA} ${FILESDIR}/gio-kqueue.conf \
+		${PREFIX}/share/examples/glib2
 
 .include <bsd.port.mk>

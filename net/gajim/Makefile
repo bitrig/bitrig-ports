@@ -1,13 +1,13 @@
-# $OpenBSD: Makefile,v 1.50 2011/12/03 23:04:36 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.52 2012/04/05 16:08:55 jasper Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	jabber client written in pygtk
-DISTNAME=	gajim-0.14.4
-REVISION=	1
+DISTNAME=	gajim-0.15
+REVISION=	0
 CATEGORIES=	net x11
 
-MASTER_SITES=	${HOMEPAGE}/downloads/0.14/
+MASTER_SITES=	${HOMEPAGE}/downloads/0.15/
 
 HOMEPAGE=	http://www.gajim.org/
 
@@ -42,7 +42,7 @@ RUN_DEPENDS=	databases/py-sqlite2 \
 		security/py-crypto \
 		net/avahi,-gui,no_mono,no_qt3,no_qt4 \
 		textproc/gtkspell \
-		net/farsight2 \
+		net/farstream \
 		devel/py-notify \
 		x11/gtk+2,-guic
 

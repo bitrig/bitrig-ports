@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.25 2012/03/20 20:56:26 sthen Exp $
+# $OpenBSD: Makefile,v 1.27 2012/03/31 10:51:47 sthen Exp $
 
 COMMENT=	multi-threaded routing daemon
 
-DISTNAME=	quagga-0.99.19
-REVISION=	3
+DISTNAME=	quagga-0.99.20.1
 SHARED_LIBS=	ospf		0.0 \
 		ospfapiclient	0.0 \
 		zebra		0.0
@@ -27,8 +26,9 @@ BUILD_DEPENDS=	lang/gawk
 USE_GMAKE=	Yes
 USE_LIBTOOL=	Yes
 SYSCONFDIR=	${BASESYSCONFDIR}/quagga
-SEPARATE_BUILD=	concurrent
-CONFIGURE_STYLE= gnu
+SEPARATE_BUILD=	Yes
+CONFIGURE_STYLE= autoconf
+AUTOCONF_VERSION= 2.68
 CONFIGURE_ARGS+= --includedir=${LOCALBASE}/include/quagga \
 		--localstatedir=${STATEDIR} \
 		--enable-user=_quagga \

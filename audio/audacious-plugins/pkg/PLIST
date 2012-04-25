@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.1 2012/03/21 16:13:25 dcoppa Exp $
+@comment $OpenBSD: PLIST,v 1.3 2012/04/06 14:38:01 dcoppa Exp $
 @pkgpath audio/audacious-plugins,-main
 lib/audacious/
 lib/audacious/Container/

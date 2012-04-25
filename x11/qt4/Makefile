@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.95 2011/12/26 15:51:55 kili Exp $
+# $OpenBSD: Makefile,v 1.97 2012/04/23 17:15:19 espie Exp $
 
 USE_GMAKE =		Yes
 COMMENT-debug =		C++ GUI toolkit, debug
@@ -27,9 +27,9 @@ REVISION-mysql =	0
 REVISION-postgresql =	0
 REVISION-examples =	0
 REVISION-sqlite2 =	0
-REVISION-sqlite =	0
+REVISION-sqlite =	1
 REVISION-tds =		0
-REVISION-main =		3
+REVISION-main =		4
 REVISION-debug =	0
 REVISION-html =		0
 
@@ -94,7 +94,7 @@ MAKE_ENV =	QTDIR="${WRKDIST}" EXTRA_SAMPLES="${EXTRA_SAMPLES}" \
 PORTHOME =	${WRKDIST}
 
 CONFIGURE_STYLE =	simple
-SEPARATE_BUILD = 	simple
+SEPARATE_BUILD = 	Yes
 CONFIGURE_ARGS =	-qt-gif -system-libpng -system-libjpeg -system-zlib \
 			-sm -system-sqlite \
 			-v -stl -xrender -fast \
@@ -234,8 +234,7 @@ LIB_DEPENDS-sqlite2 =	${BUILD_PKGPATH} \
 WANTLIB-sqlite2 =	${sqlWANTLIB} sqlite
 
 
-LIB_DEPENDS-sqlite =	${BUILD_PKGPATH} \
-			databases/sqlite3
+LIB_DEPENDS-sqlite =	${BUILD_PKGPATH}
 WANTLIB-sqlite =	${sqlWANTLIB} sqlite3
 
 
@@ -264,7 +263,6 @@ PKG_ARGS += 		-DGCC4=1
 commonWANTLIB += 	stdc++
 sqlWANTLIB += 		stdc++
 WANTLIB-examples +=	lib/qt4/QtWebKit lib/qt4/QtXmlPatterns
-LIB_DEPENDS-main += 	databases/sqlite3
 WANTLIB-main += 	sqlite3
 .else
 PKG_ARGS += 		-DGCC4=0

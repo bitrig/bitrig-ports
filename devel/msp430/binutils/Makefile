@@ -1,22 +1,20 @@
-# $OpenBSD: Makefile,v 1.9 2011/11/11 18:38:17 jasper Exp $
+# $OpenBSD: Makefile,v 1.13 2012/04/17 13:07:36 jasper Exp $
 
 COMMENT=		GNU binutils for msp430
 
-V=			2.21.1
-R=			20110716
-DISTNAME=		binutils-$V
-REVISION=		2
+TOOL=			binutils
+TOOL_V=			2.21.1a
+
+GNU_TOOL=		Yes
 
 MASTER_SITES=		${MASTER_SITE_GNU:=binutils/}
-PATCHFILES=		msp430-binutils-${V}-${R}.patch:0
-LTS_PATCHES=		msp430-binutils-2.21.1-20110716-sf3143071.patch \
-			msp430-binutils-2.21.1-20110716-sf3379341.patch \
-			msp430-binutils-2.21.1-20110716-sf3386145.patch \
-			msp430-binutils-2.21.1-20110716-sf3400711.patch \
-			msp430-binutils-2.21.1-20110716-sf3400750.patch
 
 WANTLIB=		c z
 
 CONFIGURE_ARGS+=	--enable-commonbfdlib=no
+
+WRKDIST=		${WRKDIR}/${DISTNAME:S/a$//}
+
+NO_REGRESS=		No
 
 .include <bsd.port.mk>

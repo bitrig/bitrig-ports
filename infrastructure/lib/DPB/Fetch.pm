@@ -1,5 +1,5 @@
 # ex:ts=8 sw=4:
-# $OpenBSD: Fetch.pm,v 1.38 2012/03/22 16:09:37 espie Exp $
+# $OpenBSD: Fetch.pm,v 1.40 2012/04/10 16:50:33 espie Exp $
 #
 # Copyright (c) 2010 Marc Espie <espie@openbsd.org>
 #
@@ -70,7 +70,7 @@ sub dump
 {
 	my ($class, $logger) = @_;
 	my $log = $logger->create("fetch/distfiles");
-	for my $f (sort map {$_->{name}} values %$cache) {
+	for my $f (sort map {$_->{name}} grep {defined $_} values %$cache) {
 		print $log $f, "\n";
 	}
 }
@@ -291,6 +291,14 @@ sub requeue
 	$engine->requeue_dist($v);
 }
 
+sub forget
+{
+	my $self = shift;
+	delete $self->{size};
+	delete $self->{sha};
+	delete $self->{okay};
+}
+
 # handles fetch information, if required
 package DPB::Fetch;
 
@@ -477,14 +485,6 @@ sub read_checksums
 		}
 	}
 	return $r;
-}
-
-sub forget
-{
-	my $self = shift;
-	delete $self->{size};
-	delete $self->{sha};
-	delete $self->{okay};
 }
 
 sub build_distinfo

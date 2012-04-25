@@ -1,7 +1,7 @@
-# $OpenBSD: Makefile,v 1.24 2012/03/19 09:27:36 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.26 2012/04/20 11:39:27 dcoppa Exp $
 
 COMMENT =		persistent key-value database
-DISTNAME =		redis-2.4.9
+DISTNAME =		redis-2.4.11
 CATEGORIES =		databases
 HOMEPAGE =		http://redis.io/
 
@@ -25,6 +25,7 @@ FAKE_FLAGS =		INSTALL_TOP=${WRKINST}${PREFIX}
 # Enable verbose compilation
 MAKE_FLAGS =		INSTALL="${INSTALL_PROGRAM}" \
 			INSTALL_DIR="${INSTALL_DATA_DIR}" \
+			CC=${CC} \
 			V=1
 
 CFLAGS +=		-I${LOCALBASE}/include

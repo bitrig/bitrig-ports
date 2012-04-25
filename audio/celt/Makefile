@@ -1,8 +1,10 @@
-# $OpenBSD: Makefile,v 1.5 2011/04/05 14:33:23 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.8 2012/04/21 13:15:52 dcoppa Exp $
 
 COMMENT =	ultra-low delay audio codec
 
-DISTNAME =	celt-0.10.0
+DISTNAME =	celt-0.11.3
+
+REVISION =	0
 
 EPOCH =		0
 
@@ -10,7 +12,7 @@ CATEGORIES =   	audio
 
 HOMEPAGE =	http://www.celt-codec.org/
 
-SHARED_LIBS +=	celt0	0.0	# 1.0
+SHARED_LIBS +=	celt0	1.0	# 2.0
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
@@ -29,10 +31,12 @@ USE_LIBTOOL =		Yes
 CONFIGURE_STYLE =	gnu
 
 CONFIGURE_ARGS =	${CONFIGURE_SHARED} \
+			--enable-assertions \
+			--enable-custom-modes \
 			--with-ogg=${LOCALBASE}
 
 CONFIGURE_ENV =		CPPFLAGS="-DUSE_SNDIO"
 
-SEPARATE_BUILD =	simple
+SEPARATE_BUILD =	Yes
 
 .include <bsd.port.mk>

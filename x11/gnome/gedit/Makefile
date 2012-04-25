@@ -1,11 +1,9 @@
-# $OpenBSD: Makefile,v 1.79 2012/01/04 08:03:01 ajacoutot Exp $
-
-SHARED_ONLY=		Yes
+# $OpenBSD: Makefile,v 1.84 2012/04/16 18:15:53 jasper Exp $
 
 COMMENT=		lightweight GNOME text editor
 
 GNOME_PROJECT=		gedit
-GNOME_VERSION=		3.2.6
+GNOME_VERSION=		3.4.1
 
 CATEGORIES=		editors
 
@@ -33,20 +31,29 @@ MODULES=		devel/dconf \
 			lang/python \
 			x11/gnome
 
-BUILD_DEPENDS=		${RUN_DEPENDS} \
+BUILD_DEPENDS=		devel/gsettings-desktop-schemas \
 			devel/iso-codes
+
 LIB_DEPENDS=		devel/libpeas>=1.1.4p1 \
 			textproc/enchant \
 			x11/gtksourceview3
-RUN_DEPENDS=		devel/gsettings-desktop-schemas
+
+RUN_DEPENDS=		devel/gsettings-desktop-schemas \
+			x11/gnome/gvfs # --enable-gvfs-metadata
 
 MODGNOME_TOOLS= 	goi yelp
 MODGNOME_DESKTOP_FILE=	Yes
 LIBTOOL_FLAGS=		--tag=disable-static
 
-CONFIGURE_ARGS=		--enable-python \
+CONFIGURE_ARGS=		--disable-static \
+			--enable-python \
+			--enable-spell \
+			--enable-gvfs-metadata \
 			--disable-updater \
-			--enable-gvfs-metadata
-USE_GROFF =		Yes
+			--disable-zeitgeist
+
+REGRESS_IS_INTERACTIVE=	X11
+
+USE_GROFF=		Yes
 
 .include <bsd.port.mk>

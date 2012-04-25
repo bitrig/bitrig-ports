@@ -1,4 +1,4 @@
-$OpenBSD: README,v 1.6 2011/10/16 15:20:33 ajacoutot Exp $
+$OpenBSD: README,v 1.8 2012/04/22 11:41:55 ajacoutot Exp $
 
 +-----------------------------------------------------------------------
 | Running ${FULLPKGNAME} on OpenBSD
@@ -7,7 +7,7 @@ $OpenBSD: README,v 1.6 2011/10/16 15:20:33 ajacoutot Exp $
 Webacula has been installed into ${INSTDIR}
 
 *** Upgrading users: refer to the "Update from prior version" section in
-*** ${INSTDIR}/webacula/docs/txt/install.txt
+*** ${INSTDIR}/docs/txt/install.txt
 
 Database creation
 =================
@@ -94,4 +94,4 @@ Messages {
 }
 
 Then reload bacula-dir(8):
-    # /etc/rc.d/bacula_dir reload
+    # ${RCDIR}/bacula_dir reload

@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.5 2011/11/04 09:56:29 jasper Exp $
+# $OpenBSD: Makefile,v 1.7 2012/04/01 15:04:00 ajacoutot Exp $
 
 COMMENT=	PGP public keys sharing via DNS-SD and HKP
 
 GNOME_PROJECT=	seahorse-sharing
-GNOME_VERSION=	3.2.1
+GNOME_VERSION=	3.4.0
 REVISION=	0
 
 CATEGORIES=	net security
@@ -30,17 +30,9 @@ LIB_DEPENDS=	devel/libsoup \
 		net/avahi \
 		x11/gtk+3
 
-# technically not needed but makes more sense since seahorse is used to
-# setup/configure the keys
-RUN_DEPENDS +=	x11/gnome/seahorse
-
 MODULES=	devel/gettext \
 		x11/gnome
 
 FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/seahorse-sharing
-
-# XXX check if still needed on next update
-post-install:
-	rm -rf ${PREFIX}/share/locale/pl
 
 .include <bsd.port.mk>

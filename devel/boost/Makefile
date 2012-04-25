@@ -1,9 +1,11 @@
-# $OpenBSD: Makefile,v 1.35 2012/01/06 07:39:55 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.38 2012/04/22 10:18:13 ajacoutot Exp $
+
+ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
 COMMENT=	free peer-reviewed portable C++ source libraries
 
 PKGNAME=	boost-${VERSION}
-REVISION=	12
+REVISION=	14
 
 VERSION=	1.42.0
 DISTNAME=	boost_${VERSION:S/./_/g}
@@ -39,6 +41,7 @@ CATEGORIES=	devel
 MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 HOMEPAGE=	http://www.boost.org/
+VMEM_WARNING =	Yes
 
 # MIT-like
 PERMIT_PACKAGE_CDROM=	Yes

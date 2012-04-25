@@ -1,12 +1,13 @@
-# $OpenBSD: Makefile,v 1.156 2012/03/02 08:22:20 sthen Exp $
+# $OpenBSD: Makefile,v 1.161 2012/04/22 13:44:09 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
 COMMENT-main=		SMB and CIFS client and server for UNIX
 COMMENT-docs=		additional documentation and examples for Samba
 
-DISTNAME=		samba-3.6.3
+DISTNAME=		samba-3.6.4
 PKGNAME-main=		${DISTNAME}
+REVISION-main=		1
 FULLPKGNAME-docs=	${DISTNAME:S/-/-docs-/}
 FULLPKGPATH-docs=	net/samba,-docs
 
@@ -54,7 +55,7 @@ SUBST_VARS=		CONFDIR
 
 USE_GMAKE=		Yes
 USE_GROFF=		Yes
-#SEPARATE_BUILD=		simple
+#SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=	gnu
 AUTOCONF_VERSION=	2.63
 
@@ -136,15 +137,15 @@ NO_REGRESS=		Yes
 #			--enable-nss-wrapper
 #.endif
 
-WRKDIST=	${WRKDIR}/${DISTNAME}/source3
+WRKSRC=		${WRKDIR}/${DISTNAME}/source3
 
-SAMBA_DOCS=	${WRKSRC}/../README \
-		${WRKSRC}/../docs/history \
-		${WRKSRC}/../docs/registry/*.reg
+SAMBA_DOCS=	${WRKDIST}/README \
+		${WRKDIST}/docs/history \
+		${WRKDIST}/docs/registry/*.reg
 
 SAMPLE_CONFIG=	${PREFIX}/share/examples/samba/smb.conf.default
 
-SAMBA_MANPAGES= ${WRKSRC}/../docs/manpages
+SAMBA_MANPAGES= ${WRKDIST}/docs/manpages
 
 post-patch:
 	@cd ${WRKSRC}; \
@@ -162,7 +163,7 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/samba/pdf
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/samba/htmldocs
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/samba
-	@cp -R ${WRKSRC}/../examples/* ${PREFIX}/share/examples/samba
+	@cp -R ${WRKDIST}/examples/* ${PREFIX}/share/examples/samba
 	@chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/examples/samba
 	@find ${PREFIX}/share/examples/samba -type f | \
 	    xargs chmod ${SHAREMODE}
@@ -171,10 +172,10 @@ post-install:
 	@for i in ${SAMBA_DOCS}; do \
 	 ${INSTALL_DATA} $$i ${PREFIX}/share/doc/samba ;	\
 	done
-	@for i in ${WRKSRC}/../docs/*.pdf ; do \
+	@for i in ${WRKDIST}/docs/*.pdf ; do \
 	 ${INSTALL_DATA} $$i ${PREFIX}/share/doc/samba/pdf ; \
 	done
-	@for i in ${WRKSRC}/../docs/htmldocs/* ; do \
+	@for i in ${WRKDIST}/docs/htmldocs/* ; do \
 	 if [ -f $$i ]; then \
 	  ${INSTALL_DATA} $$i ${PREFIX}/share/doc/samba/htmldocs ;\
 	 fi \
@@ -182,7 +183,7 @@ post-install:
 	@sed -e 's:/usr/spool/samba:/var/spool/samba:g' \
 	 -e 's:/usr/local/samba/var/log:${SAMBA_LOGDIR}/smbd:g' \
 	 -e 's:MYGROUP:WORKGROUP:' \
-	 ${WRKSRC}/../examples/smb.conf.default > ${SAMPLE_CONFIG}
+	 ${WRKDIST}/examples/smb.conf.default > ${SAMPLE_CONFIG}
 	${INSTALL_SCRIPT} ${WRKSRC}/script/mksmbpasswd.sh \
 	 ${PREFIX}/bin/mksmbpasswd
 	@chown ${BINOWN}:${BINGRP} ${PREFIX}/bin/smbpasswd

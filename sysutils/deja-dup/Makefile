@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.7 2012/03/23 11:38:05 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.9 2012/04/24 07:59:26 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	simple encrypted backup tool for GNOME
 
-GNOME_VERSION=	22.0
+GNOME_VERSION=	22.1
 GNOME_PROJECT=	deja-dup
 
 CATEGORIES=	sysutils x11/gnome
@@ -35,7 +35,7 @@ MODULES=	devel/dconf \
 		x11/gnome \
 		lang/python
 
-MODGNOME_TOOLS=	yelp
+MODGNOME_TOOLS=	vala yelp
 MODGNOME_DESKTOP_FILE=	Yes
 MODGNOME_ICON_CACHE=	Yes
 

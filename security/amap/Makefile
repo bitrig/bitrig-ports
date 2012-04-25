@@ -1,12 +1,10 @@
-# $OpenBSD: Makefile,v 1.18 2011/10/21 16:23:45 espie Exp $
+# $OpenBSD: Makefile,v 1.20 2012/04/09 18:21:18 gsoares Exp $
 
 COMMENT=	application protocol detection tool
 
-DISTNAME=	amap-5.2
-REVISION=	4
-CATEGORIES=    	security
-
-MAINTAINER=	Stephan A. Rickauer <stephan@openbsd.org>
+REVISION=	0
+DISTNAME=	amap-5.4
+CATEGORIES=	security
 
 HOMEPAGE=	http://thc.org/thc-amap/
 
@@ -26,13 +24,12 @@ LIB_DEPENDS=	devel/pcre
 CONFIGURE_STYLE= simple
 CONFIGURE_ARGS=	--prefix='${PREFIX}'
 
-USE_GROFF=	Yes
 NO_REGRESS=	Yes
 MAKE_FLAGS=	OPT="${CFLAGS} -I${LOCALBASE}/include"
 
 post-extract:
 	@chmod -R u+w ${WRKDIST}
-	@perl -pi -e "s,\"\.\/\",\"$(LOCALBASE)\/share\/amap\/\"," \
+	@perl -pi -e "s,\"\.\/\",\"$(TRUEPREFIX)\/share\/amap\/\"," \
 		${WRKSRC}/amap-lib.c
 
 .include <bsd.port.mk>

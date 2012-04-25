@@ -1,23 +1,26 @@
-# $OpenBSD: Makefile,v 1.7 2011/11/11 18:38:17 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2012/04/17 13:07:36 jasper Exp $
 
 COMMENT=		GNU debugger for msp430
 
-VERSION=		7.2
-R=			20110103
-DISTNAME=		gdb-${VERSION}
-REVISION=		1
+TOOL=			gdb
+TOOL_V= 		7.2a
+LTS_V=			20111205
+
+GNU_TOOL=		Yes
 
 MASTER_SITES=		${MASTER_SITE_GNU:=gdb/}
-PATCHFILES=		msp430-gdb-${VERSION}-${R}.patch:0
 
-RUN_DEPENDS=		devel/msp430/binutils>=2.21.1 \
-			devel/msp430/gcc>=4.5.3
+RUN_DEPENDS=		devel/msp430/binutils>=2.21.1a \
+			devel/msp430/gcc>=4.6.3
 BUILD_DEPENDS=		${RUN_DEPENDS}
 
 WANTLIB=		c expat m ncurses z
 
 CONFIGURE_ARGS+=	--disable-werror
 
-NO_REGRESS=		Yes
+WRKDIST=		${WRKDIR}/${DISTNAME:S/a$//}
+
+# XXX: Tries to install the xml syscall files?
+SEPARATE_BUILD= 	No
 
 .include <bsd.port.mk>

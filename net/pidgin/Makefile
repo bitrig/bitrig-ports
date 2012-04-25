@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.103 2012/03/15 21:45:06 sthen Exp $
+# $OpenBSD: Makefile,v 1.105 2012/04/04 11:09:12 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -6,7 +6,7 @@ COMMENT-main=	multi-protocol instant messaging client
 COMMENT-finch=	multi-protocol instant messaging client, console client
 COMMENT-libpurple= multi-protocol instant messaging library
 
-VERSION=	2.10.2
+VERSION=	2.10.3
 DISTNAME=	pidgin-${VERSION}
 PKGNAME-main=	pidgin-${VERSION}
 PKGNAME-finch=	finch-${VERSION}
@@ -74,7 +74,7 @@ LIB_DEPENDS-libpurple=	${LIB_DEPENDS} \
 MODGCONF2_SCHEMAS_DIR=	pidgin
 MODGCONF2_LIBDEP=	No
 
-SEPARATE_BUILD=	simple
+SEPARATE_BUILD=	Yes
 USE_LIBTOOL=	Yes
 USE_GMAKE=	Yes
 CONFIGURE_STYLE= autoconf

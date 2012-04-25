@@ -1,32 +1,33 @@
-# $OpenBSD: Makefile,v 1.5 2010/11/15 12:47:38 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2012/04/06 20:39:39 sthen Exp $
 
-COMMENT=		Version Control with Subversion
+COMMENT =		Version Control with Subversion
 
-V=			1.5
-DISTNAME=		svn-book-html-chunk
-PKGNAME=		svnbook-${V}
-REVISION=		0
-CATEGORIES=		books devel
+V =			1.7
+REVISION =		0
+DISTNAME =		svn-book-html-chunk-$V
+PKGNAME =		svnbook-${V}
+CATEGORIES =		books devel
 
-HOMEPAGE=		http://svnbook.red-bean.com/
+HOMEPAGE =		http://svnbook.red-bean.com/
 
 # Creative Commons Attribution License
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
-PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
+PERMIT_DISTFILES_CDROM =Yes
+PERMIT_DISTFILES_FTP =	Yes
+PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE_FTP =	Yes
 
-MASTER_SITES=		${HOMEPAGE}/en/$V/
-EXTRACT_SUFX=		.tar.bz2
+# ${HOMEPAGE}/en/$V/svn-book-html-chunk.tar.bz2 appears to be auto-generated
+MASTER_SITES =		http://spacehopper.org/mirrors/
+EXTRACT_SUFX =		.tar.bz2
 
-EXTRACT_ONLY=	
-BUILD_DEPENDS=		archivers/bzip2
+EXTRACT_ONLY =
+BUILD_DEPENDS =		archivers/bzip2
 
-NO_BUILD=		Yes
-NO_REGRESS=		Yes
-PKG_ARCH=		*
+NO_BUILD =		Yes
+NO_REGRESS =		Yes
+PKG_ARCH =		*
 
-DOCDIR=			${PREFIX}/share/doc
+DOCDIR =		${PREFIX}/share/doc
 
 do-install:
 	${INSTALL_DATA_DIR} ${DOCDIR}

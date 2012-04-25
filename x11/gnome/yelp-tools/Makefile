@@ -1,11 +1,13 @@
-# $OpenBSD: Makefile,v 1.2 2011/10/17 17:52:43 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.5 2012/04/17 08:27:04 jasper Exp $
 
 PKG_ARCH=	*
 
 COMMENT=	utilities to manage documentation for Yelp and the web
 
 GNOME_PROJECT=	yelp-tools
-GNOME_VERSION=	3.2.1
+GNOME_VERSION=	3.4.1
+
+HOMEPAGE=	https://projects.gnome.org/yelp/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

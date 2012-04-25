@@ -1,8 +1,21 @@
-# $OpenBSD: Makefile.inc,v 1.12 2011/11/11 18:38:17 jasper Exp $
+# $OpenBSD: Makefile.inc,v 1.19 2012/04/17 13:27:17 jasper Exp $
+
+#
+# XXX: Don't forget to adjust meta/msp430 when updating to new LTS
+#
 
 TARGET=			msp430
 
-PKGNAME?=		${TARGET}-${DISTNAME}
+DISTNAME?=		${TOOL}-${TOOL_V}
+
+.if defined(GNU_TOOL) && ${GNU_TOOL:L:Myes}
+    PKGNAME?=		${TARGET}-${DISTNAME}
+
+    # Patches distributed by mspgcc to modify the GNU sources.
+    PATCHFILES?=	${TARGET}-${TOOL}-${TOOL_V}-${LTS_V}.patch:0
+.endif
+
+LTS_V?=			20120406
 
 CATEGORIES+=		devel devel/msp430
 
@@ -30,7 +43,7 @@ MASTER_SITES?=		${MASTER_SITE_SOURCEFORGE:=mspgcc/}
 MASTER_SITES0=		http://distfiles.nl/mspgcc/
 
 # These are the patches intended for the LTS releases.
-MASTER_SITES1= ${MASTER_SITE_SOURCEFORGE:=mspgcc/Patches/LTS/20110716/}
+#MASTER_SITES1= ${MASTER_SITE_SOURCEFORGE:=mspgcc/Patches/LTS/${LTS_V}/}
 
 .for p in ${LTS_PATCHES}
 PATCHFILES += $p:1
@@ -40,10 +53,9 @@ PATCH_DIST_STRIP?=	-p1
 
 EXTRACT_SUFX?=		.tar.bz2
 
-DIST_SUBDIR?=		msp430
+DIST_SUBDIR?=		${TARGET}
 
 CONFIGURE_STYLE?=	gnu
-
 CONFIGURE_ARGS+=	--target=msp430		\
 			--disable-nls		\
 			--disable-shared
@@ -53,3 +65,7 @@ USE_GROFF?=		Yes
 USE_GMAKE?=		Yes
 
 LIBTOOL_FLAGS?=		--tag=disable-shared
+
+SEPARATE_BUILD?= 	Yes
+
+NO_REGRESS?=		Yes

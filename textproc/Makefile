@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.352 2012/03/20 16:36:16 naddy Exp $
+# $OpenBSD: Makefile,v 1.355 2012/04/12 18:04:52 ajacoutot Exp $
 # $FreeBSD: Makefile,v 1.15 1997/11/22 00:31:24 jseger Exp $
 
      SUBDIR =
@@ -42,6 +42,7 @@
      SUBDIR += gtk-doc
      SUBDIR += gtkaml
      SUBDIR += gtkspell
+     SUBDIR += gtkspell3
      SUBDIR += gtranslator
      SUBDIR += hevea
      SUBDIR += hgrep
@@ -74,6 +75,7 @@
      SUBDIR += ispell
      SUBDIR += itstool
      SUBDIR += latex2html
+     SUBDIR += latexmk
      SUBDIR += lgrind
      SUBDIR += libebml
      SUBDIR += libical
@@ -126,9 +128,11 @@
      SUBDIR += p5-Lingua-EN-Fathom
      SUBDIR += p5-Lingua-EN-Inflect
      SUBDIR += p5-Lingua-EN-Inflect-Number
+     SUBDIR += p5-Lingua-EN-Inflect-Phrase
      SUBDIR += p5-Lingua-EN-Sentence
      SUBDIR += p5-Lingua-EN-Summarize
      SUBDIR += p5-Lingua-EN-Syllable
+     SUBDIR += p5-Lingua-EN-Tagger
      SUBDIR += p5-Lingua-PT-Stemmer
      SUBDIR += p5-Lingua-Stem
      SUBDIR += p5-Lingua-Stem-Fr
@@ -163,11 +167,13 @@
      SUBDIR += p5-Search-QueryParser
      SUBDIR += p5-Sort-Versions
      SUBDIR += p5-String-Approx
+     SUBDIR += p5-String-CamelCase
      SUBDIR += p5-String-Koremutake
      SUBDIR += p5-String-Random
      SUBDIR += p5-String-RewritePrefix
      SUBDIR += p5-String-ShellQuote
      SUBDIR += p5-String-Similarity
+     SUBDIR += p5-String-ToIdentifier-EN
      SUBDIR += p5-Syntax-Highlight-HTML
      SUBDIR += p5-Syntax-Highlight-Mason
      SUBDIR += p5-Syntax-Highlight-Perl

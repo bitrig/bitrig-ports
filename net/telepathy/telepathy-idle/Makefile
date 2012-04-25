@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.31 2011/11/17 14:25:38 jasper Exp $
+# $OpenBSD: Makefile,v 1.33 2012/04/04 14:41:34 jasper Exp $
 
 COMMENT=		flexible communications framework, IRC component
 
 DISTNAME=		telepathy-idle-0.1.11
+REVISION=		0
 
 MASTER_SITES=		${MASTER_SITES_TP:=telepathy-idle/}
 
@@ -12,6 +13,7 @@ WANTLIB += z ffi
 
 MODULES=		devel/gettext \
 			lang/python
+MODPY_RUNDEP=		No
 
 BUILD_DEPENDS=		${RUN_DEPENDS} \
 			devel/py-twisted/words
@@ -20,8 +22,7 @@ LIB_DEPENDS=		net/telepathy/telepathy-glib
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib" \
-			ac_cv_prog_PYTHON="${MODPY_BIN}"
+			LDFLAGS="-L${LOCALBASE}/lib"
 
 USE_GROFF =		Yes
 

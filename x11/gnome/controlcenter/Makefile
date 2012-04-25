@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.58 2012/03/19 11:09:10 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.62 2012/04/17 11:02:32 jasper Exp $
 
 # XXX Binary files patch-panels_info_hostnames-test_txt and
 # patch-panels_info_hostnames-test_txt.new differ
@@ -9,10 +9,7 @@ SHARED_ONLY=		Yes
 COMMENT=		GNOME control center
 
 GNOME_PROJECT=		gnome-control-center
-GNOME_VERSION=		3.2.2
-REVISION=		4
-
-SHARED_LIBS +=  gnome-control-center      0.0 # 1.0
+GNOME_VERSION=		3.4.1
 
 CATEGORIES=		x11
 
@@ -26,19 +23,20 @@ WANTLIB += GL ICE SM X11 Xau Xcomposite Xcursor Xdamage Xdmcp
 WANTLIB += Xext Xfixes Xi Xinerama Xrandr Xrender Xt Xxf86vm asn1
 WANTLIB += atk-1.0 c cairo cairo-gobject canberra canberra-gtk3
 WANTLIB += colord crypto cups dbus-1 dbus-glib-1 drm enchant execinfo
-WANTLIB += expat ffi fontconfig freetype gailutil-3 gconf-2 gcrypt
-WANTLIB += gdbm gdk-3 gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0
+WANTLIB += expat ffi fontconfig freetype gailutil-3 gcrypt gdbm
+WANTLIB += gdk-3 gdk_pixbuf-2.0 geoclue gio-2.0 glib-2.0 gmodule-2.0
 WANTLIB += gnome-desktop-3 gnome-keyring gnome-menu-3 gnomekbd
 WANTLIB += gnomekbdui goa-1.0 goa-backend-1.0 gobject-2.0 gpg-error
-WANTLIB += gssapi gstapp-0.10 gstbase-0.10 gstinterfaces-0.10
-WANTLIB += gstpbutils-0.10 gstreamer-0.10 gstvideo-0.10 gthread-2.0
-WANTLIB += gtk-3 gtop-2.0 icudata icui18n icuuc javascriptcoregtk-3.0
+WANTLIB += gssapi gstapp-0.10 gstaudio-0.10 gstbase-0.10 gstfft-0.10
+WANTLIB += gstinterfaces-0.10 gstpbutils-0.10 gstreamer-0.10 gstvideo-0.10
+WANTLIB += gthread-2.0 gtk-3 gtop-2.0 icudata icui18n icuuc javascriptcoregtk-3.0
 WANTLIB += jpeg json json-glib-1.0 krb5 kvm ltdl m notify ogg
-WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
-WANTLIB += png polkit-gobject-1 pthread pthread-stubs pulse pulse-mainloop-glib
-WANTLIB += rest-0.7 sndfile soup-2.4 soup-gnome-2.4 sqlite3 ssl
-WANTLIB += stdc++ upower-glib vorbis vorbisfile webkitgtk-3.0
-WANTLIB += xcb xcb-render xcb-shm xkbfile xklavier xml2 xslt z orc-0.4
+WANTLIB += orc-0.4 pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
+WANTLIB += pixman-1 png polkit-gobject-1 pthread pthread-stubs
+WANTLIB += pulse pulse-mainloop-glib rest-0.7 sndfile soup-2.4
+WANTLIB += soup-gnome-2.4 sqlite3 ssl stdc++ upower-glib vorbis
+WANTLIB += vorbisfile webkitgtk-3.0 xcb xcb-render xcb-shm xkbfile
+WANTLIB += xklavier xml2 xslt z
 
 MODULES=		devel/gettext \
 			x11/gnome
@@ -51,6 +49,7 @@ LIB_DEPENDS=		x11/gnome/desktop \
 			devel/libgtop2 \
 			print/cups \
 			audio/pulseaudio \
+			audio/libcanberra,-gtk3 \
 			graphics/colord
 
 BUILD_DEPENDS=		x11/gnome/settings-daemon>=3.2.0p1 \
@@ -80,6 +79,9 @@ RUN_DEPENDS+=		x11/gnome/icon-theme-symbolic
 RUN_DEPENDS+=		sysutils/accountsservice \
 			security/apg
 
+# share/polkit-1/actions/org.gnome.controlcenter.datetime.policy
+RUN_DEPENDS +=  sysutils/polkit
+
 MODGNOME_TOOLS= 	yelp
 MODGNOME_DESKTOP_FILE=	Yes
 MODGNOME_ICON_CACHE=	Yes
@@ -92,7 +94,9 @@ LIBTOOL_FLAGS=	--tag=disable-static
 
 CONFIGURE_ARGS=	--disable-static \
 		--disable-update-mimedb \
+		--disable-systemd \
 		--without-cheese \
+		--with-x \
 		--enable-cups
 
 # Disable libsocialweb support until Flickr integration is fixed upstream.
@@ -103,22 +107,7 @@ MODGNOME_LDFLAGS=	-L${X11BASE}/lib
 
 FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/gnome-control-center
 
-# XXX plugins that are not fully working yet:
-# * gnome-media-panel needs udev to take appropriate action on device
-#   plug (see patch-schemas_org_gnome_desktop_media-handling_gschema_xml_in_in
-#   in devel/gsettings-desktop-schemas).
-# * gnome-wacom-panel needs device detection support and gnome-bluetooth
-DISABLED_PLUGINS= media wacom
-
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/panels/printers/cc-printers-panel.c
-
-post-install:
-.for i in ${DISABLED_PLUGINS}
-	cd ${PREFIX} && \
-		rm lib/control-center-1/panels/lib$i* ;\
-		rm share/applications/gnome-$i-panel.desktop ;\
-		rm share/gnome-control-center/ui/*$i*.ui
-.endfor
 
 .include <bsd.port.mk>

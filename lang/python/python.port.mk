@@ -1,9 +1,7 @@
-# $OpenBSD: python.port.mk,v 1.50 2011/12/20 13:08:06 fgsch Exp $
+# $OpenBSD: python.port.mk,v 1.52 2012/04/03 09:21:42 ajacoutot Exp $
 #
 #	python.port.mk - Xavier Santolaria <xavier@santolaria.net>
 #	This file is in the public domain.
-
-SHARED_ONLY=		Yes
 
 CATEGORIES+=		lang/python
 
@@ -74,6 +72,10 @@ BUILD_DEPENDS+=		${_MODPY_BUILD_DEPENDS}
 RUN_DEPENDS+=		${MODPY_RUN_DEPENDS}
 .endif
 
+.if ${MODPY_BUILDDEP:L} == "yes" || ${MODPY_RUNDEP:L} == "yes"
+SHARED_ONLY=		Yes
+.endif
+
 MODPY_PRE_BUILD_STEPS = @:
 .if (defined(MODPY_SETUPTOOLS) && ${MODPY_SETUPTOOLS:U} == YES)
 # The setuptools module provides a package locator (site.py) that is
@@ -138,7 +140,8 @@ MODPY_DISTUTILS_INSTALL?=	install --prefix=${LOCALBASE} \
 .endif
 
 MAKE_ENV+=	CC=${CC} PYTHONUSERBASE=${_MODPY_USERBASE}
-CONFIGURE_ENV+=	PYTHON="${MODPY_BIN}"
+CONFIGURE_ENV+=	PYTHON="${MODPY_BIN}" \
+		ac_cv_prog_PYTHON="${MODPY_BIN}"
 
 _MODPY_CMD=	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
 			${MODPY_BIN} ./${MODPY_SETUP}

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.105 2011/10/07 09:01:20 edd Exp $
+# $OpenBSD: Makefile,v 1.108 2012/04/20 09:58:16 edd Exp $
 #
 
      SUBDIR =
@@ -41,6 +41,7 @@
      SUBDIR += lapack
      SUBDIR += libneural
      SUBDIR += logic2cnf
+     SUBDIR += lpsolve
      SUBDIR += lrs
      SUBDIR += maple
      SUBDIR += maple-share
@@ -60,6 +61,7 @@
      SUBDIR += p5-AI-NeuralNet-Kohonen-Visual
      SUBDIR += p5-AI-NeuralNet-Mesh
      SUBDIR += p5-AI-Perceptron
+     SUBDIR += p5-Algorithm-Combinatorics
      SUBDIR += p5-Algorithm-NaiveBayes
      SUBDIR += p5-Bit-Vector
      SUBDIR += p5-Chart-Math-Axis
@@ -77,6 +79,7 @@
      SUBDIR += p5-Math-GMP
      SUBDIR += p5-Math-MatrixReal
      SUBDIR += p5-Math-Pari
+     SUBDIR += p5-Math-Random-ISAAC
      SUBDIR += p5-Math-Round
      SUBDIR += p5-Math-Spline
      SUBDIR += p5-Math-Symbolic

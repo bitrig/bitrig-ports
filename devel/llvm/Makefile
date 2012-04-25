@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.37 2012/01/19 08:41:13 sthen Exp $
+# $OpenBSD: Makefile,v 1.40 2012/04/23 23:11:01 sthen Exp $
 
 SHARED_LIBS +=  libclang                  0.0 # 3.0
 
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 
 LLVM_V =	3.0
-REVISION =	0
+REVISION =	1
 DISTNAME =	llvm-${LLVM_V}
 REVISION =	1
 
@@ -15,8 +15,9 @@ CATEGORIES =	devel
 HOMEPAGE =	http://www.llvm.org/
 
 VMEM_WARNING =	Yes
-ONLY_FOR_ARCHS = ${GCC4_ARCHS}
-NOT_FOR_ARCHS =	sparc # uses too much memory
+ONLY_FOR_ARCHS = amd64 i386 powerpc sparc64
+# some chance of building on other GCC4 arch, but is known to be
+# broken on alpha/sparc.
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
@@ -45,7 +46,7 @@ MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
 
 REGRESS_FLAGS =	RUNTESTFLAGS=
 
-SEPARATE_BUILD =	simple
+SEPARATE_BUILD =	Yes
 USE_LIBTOOL =		Yes
 MAKE_ENV =		REQUIRES_RTTI=1
 

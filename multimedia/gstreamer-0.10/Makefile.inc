@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.18 2012/01/25 14:06:43 ajacoutot Exp $
+# $OpenBSD: Makefile.inc,v 1.20 2012/04/05 16:24:35 ajacoutot Exp $
 
 CATEGORIES ?=	multimedia devel
 
@@ -12,12 +12,17 @@ PERMIT_PACKAGE_FTP ?=		Yes
 PERMIT_DISTFILES_CDROM ?=	Yes
 PERMIT_DISTFILES_FTP ?=		Yes
 
-MASTER_SITE_GST =	http://gstreamer.freedesktop.org/src/
-EXTRACT_SUFX ?=		.tar.bz2
+# NOTE: when VERSION changes, check the following ports that hardcode
+# the current gstreamer version in their PLIST:
+# net/farsight2
+# net/libnice
 VERSION =		0.10
 SUBST_VARS +=		VERSION
+
+MASTER_SITE_GST =	http://gstreamer.freedesktop.org/src/
+EXTRACT_SUFX ?=		.tar.bz2
 SHARED_ONLY =		Yes
-SEPARATE_BUILD ?=	simple
+SEPARATE_BUILD ?=	Yes
 P =			multimedia/gstreamer-${VERSION}
 
 USE_GMAKE ?=		Yes

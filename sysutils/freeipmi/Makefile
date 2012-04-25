@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2011/11/26 14:13:26 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2012/04/13 20:53:19 sthen Exp $
 
 # needs machine/sysarch.h & machine/pio.h
 ONLY_FOR_ARCHS=	amd64 arm i386
@@ -7,7 +7,7 @@ COMMENT=	FreeIPMI provides in-band and out-of-band IPMI software
 
 V=		0.4.6
 DISTNAME=	freeipmi-${V}
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=  freeipmi 4.0                  # .4.0
 SHARED_LIBS +=  ipmidetect 0.0                # .0.0
@@ -35,20 +35,22 @@ MODULES=	devel/gettext
 BUILD_DEPENDS=	devel/argp-standalone
 LIB_DEPENDS=	security/libgcrypt
 
-SEPARATE_BUILD=	concurrent
+SEPARATE_BUILD=	Yes
 USE_GMAKE=	Yes
 USE_LIBTOOL=	Yes
-USE_GROFF =	Yes
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS+=${CONFIGURE_SHARED}
-CONFIGURE_ARGS+=--disable-dependency-tracking
+CONFIGURE_ARGS+=--disable-dependency-tracking \
+		--localstatedir=/var
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" LDFLAGS="-L${LOCALBASE}/lib"
+FAKE_FLAGS=	localstatedir=${PREFIX}/share/examples/freeipmi \
+		sysconfdir=${PREFIX}/share/examples/freeipmi
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/freeipmi
-	mv ${WRKINST}${SYSCONFDIR}/ipmi_monitoring_sensors.conf ${PREFIX}/share/examples/freeipmi
-	mv ${WRKINST}${SYSCONFDIR}/sysconfig ${PREFIX}/share/examples/freeipmi
-	rm -rf ${WRKINST}${SYSCONFDIR}/init.d
-	rm -rf ${WRKINST}${SYSCONFDIR}/logrotate.d
+	cd ${PREFIX}/share/examples/freeipmi && \
+	    mv ${WRKINST}${SYSCONFDIR}/ipmi_monitoring_sensors.conf . && \
+	    mv db/freeipmi/bmc-config-template db/freeipmi/ipckey . && \
+	    rm -rf init.d logrotate.d && \
+	    rmdir db/freeipmi db log/freeipmi log
 
 .include <bsd.port.mk>

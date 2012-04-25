@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.172 2011/11/11 15:51:02 jasper Exp $
+# $OpenBSD: Makefile,v 1.180 2012/04/17 13:15:30 jasper Exp $
 
      SUBDIR =
      SUBDIR += anjuta
@@ -7,7 +7,7 @@
      SUBDIR += at-spi2-core
      SUBDIR += backgrounds
      SUBDIR += baker
-     SUBDIR += byzanz
+     SUBDIR += baobab
      SUBDIR += color-manager
      SUBDIR += common
      SUBDIR += contacts
@@ -15,6 +15,7 @@
      SUBDIR += desktop
      SUBDIR += devel-docs
      SUBDIR += devhelp
+     SUBDIR += dictionary
      SUBDIR += doc-utils
      SUBDIR += ekiga
      SUBDIR += empathy
@@ -22,11 +23,14 @@
      SUBDIR += eog-plugins
      SUBDIR += f-spot
      SUBDIR += file-roller
+     SUBDIR += font-viewer
      SUBDIR += games
      SUBDIR += games-extra-data
      SUBDIR += gcalctool
+     SUBDIR += gcr
      SUBDIR += gdl
      SUBDIR += gdl1
+     SUBDIR += gdlmm
      SUBDIR += gdm
      SUBDIR += gedit
      SUBDIR += gedit-latex
@@ -48,6 +52,7 @@
      SUBDIR += js-common
      SUBDIR += keyring
      SUBDIR += krb5-auth-dialog
+     SUBDIR += latexila
      SUBDIR += libbonobo
      SUBDIR += libbonoboui
      SUBDIR += libcryptui
@@ -61,6 +66,7 @@
      SUBDIR += libgnomeui
      SUBDIR += libgweather
      SUBDIR += librsvg
+     SUBDIR += libsecret
      SUBDIR += libxklavier
      SUBDIR += media
      SUBDIR += menus
@@ -83,12 +89,15 @@
      SUBDIR += py-gnome
      SUBDIR += rygel
      SUBDIR += screensaver
+     SUBDIR += screenshot
      SUBDIR += seahorse
-     SUBDIR += seahorse-plugins
+     SUBDIR += seahorse-nautilus
      SUBDIR += seahorse-sharing
+     SUBDIR += search-tool
      SUBDIR += seed
      SUBDIR += session
      SUBDIR += settings-daemon
+     SUBDIR += system-log
      SUBDIR += system-monitor
      SUBDIR += terminal
      SUBDIR += themes-standard
@@ -97,9 +106,9 @@
      SUBDIR += tracker
      SUBDIR += tweak-tool
      SUBDIR += user-docs
-     SUBDIR += utils
      SUBDIR += vfs2
      SUBDIR += video-arcade
+     SUBDIR += video-effects
      SUBDIR += vinagre
      SUBDIR += vino
      SUBDIR += yelp

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.53 2011/07/11 17:43:14 landry Exp $
+# $OpenBSD: Makefile,v 1.55 2012/04/22 11:41:55 ajacoutot Exp $
 
 COMMENT=	Network Time Protocol reference implementation
 
@@ -6,10 +6,10 @@ COMMENT=	Network Time Protocol reference implementation
 # to confuse with the ports system's 'pN' convention, so we
 # convert it to 'pl' for local use.
 
-VERSION=	4.2.6p2
+VERSION=	4.2.6p5
 DISTNAME=	ntp-${VERSION}
 PKGNAME=	ntp-${VERSION:S/p/pl/}
-REVISION=	7
+REVISION=	0
 CATEGORIES=	net
 MASTER_SITES=	http://archive.ntp.org/ntp4/ntp-4.2/
 
@@ -27,7 +27,6 @@ WANTLIB=	c crypto edit kvm m termcap
 # which requires bison
 
 USE_LIBTOOL=	Yes
-USE_GROFF =	Yes
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--enable-parse-clocks \
 		--with-binsubdir=sbin

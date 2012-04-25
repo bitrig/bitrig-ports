@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.30 2011/11/17 14:58:13 jasper Exp $
+# $OpenBSD: Makefile,v 1.33 2012/04/04 14:41:34 jasper Exp $
 
 COMMENT=		abstraction layer between apps and connection managers
 
-DISTNAME=		telepathy-mission-control-5.10.1
+DISTNAME=		telepathy-mission-control-5.12.0
+REVISION=		0
 
-SHARED_LIBS +=  mission-control-plugins 1.0      # 3.0
+SHARED_LIBS +=  mission-control-plugins 1.1      # 3.1
 
 HOMEPAGE=		http://mission-control.sourceforge.net/
 
@@ -15,9 +16,10 @@ WANTLIB += gobject-2.0 gthread-2.0 pcre pthread z telepathy-glib ffi
 
 MODULES=		devel/gettext \
 			lang/python
+MODPY_RUNDEP=		No
 
 BUILD_DEPENDS=		textproc/libxslt
-LIB_DEPENDS=		net/telepathy/telepathy-glib
+LIB_DEPENDS=		net/telepathy/telepathy-glib>=0.18.0
 
 LIBTOOL_FLAGS=		--tag=disable-static
 
@@ -30,7 +32,6 @@ CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--enable-mcclient-so6 \
 			--with-connectivity=no
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib" \
-			ac_cv_prog_PYTHON="${MODPY_BIN}"
+			LDFLAGS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

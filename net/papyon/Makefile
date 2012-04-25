@@ -1,9 +1,10 @@
-# $OpenBSD: Makefile,v 1.11 2011/10/21 10:50:23 jasper Exp $
+# $OpenBSD: Makefile,v 1.16 2012/04/08 14:52:27 ajacoutot Exp $
 
-COMMENT=		fork of pymsn to support telepathy-butterfly
+COMMENT=		MSN client library for python
 
-MODPY_EGG_VERSION=	0.5.5
+MODPY_EGG_VERSION=	0.5.6
 DISTNAME=		papyon-${MODPY_EGG_VERSION}
+REVISION=		1
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.freedesktop.org/wiki/Software/papyon
@@ -18,8 +19,12 @@ MASTER_SITES=		http://www.freedesktop.org/software/papyon/releases/
 
 MODULES=		lang/python
 
-BUILD_DEPENDS=		${RUN_DEPENDS}
+BUILD_DEPENDS=		devel/py-gobject \
+			security/py-crypto \
+			security/py-openssl
 RUN_DEPENDS=		devel/py-gobject \
+			multimedia/gstreamer-0.10/py-gstreamer \
+			net/farstream \
 			security/py-crypto \
 			security/py-openssl
 

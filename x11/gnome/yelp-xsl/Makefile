@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.8 2012/03/19 10:28:48 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.11 2012/04/17 08:27:06 jasper Exp $
 
 COMMENT=	XSLT stylesheets for yelp
 
 GNOME_PROJECT=	yelp-xsl
-GNOME_VERSION=	3.2.1
-REVISION=	0
+GNOME_VERSION=	3.4.1
+
+HOMEPAGE=	https://projects.gnome.org/yelp/
 
 # GPLv2 - LGPLv2.1 - MIT
 PERMIT_PACKAGE_CDROM=	Yes

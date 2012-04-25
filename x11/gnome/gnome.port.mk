@@ -1,7 +1,6 @@
-# $OpenBSD: gnome.port.mk,v 1.57 2012/03/06 12:45:13 ajacoutot Exp $
+# $OpenBSD: gnome.port.mk,v 1.60 2012/03/29 16:34:43 ajacoutot Exp $
 #
 # Module for GNOME related ports
-#
 
 .if (defined(GNOME_PROJECT) && defined(GNOME_VERSION))
 DISTNAME=		${GNOME_PROJECT}-${GNOME_VERSION}
@@ -26,6 +25,13 @@ MODULES+=		textproc/intltool
         # "lib" which resulted in locale files being installed under the
         # wrong directory.
         CONFIGURE_ENV += DATADIRNAME=share
+        # If one of these tools is found at configure stage, it might be used, no
+        # matter whether we use --disable-gtk-doc or not.
+.       if !defined(MODGNOME_TOOLS) || defined(MODGNOME_TOOLS) && ! ${MODGNOME_TOOLS:Mgtk-doc}
+            CONFIGURE_ENV += ac_cv_path_GTKDOC_CHECK="" \
+                             ac_cv_path_GTKDOC_REBASE="" \
+                             ac_cv_path_GTKDOC_MKPDF=""
+.       endif
 .   endif
 .endif
 
@@ -64,7 +70,7 @@ MODGNOME_CONFIGURE_ARGS_vala=--disable-vala --disable-vala-bindings
 .if defined(MODGNOME_TOOLS)
 .   if ${MODGNOME_TOOLS:Mgoi}
         MODGNOME_CONFIGURE_ARGS_goi=--enable-introspection
-        MODGNOME_BUILD_DEPENDS+=devel/gobject-introspection
+        MODGNOME_BUILD_DEPENDS+=devel/gobject-introspection>=1.32.0
 .   endif
 
 .   if ${MODGNOME_TOOLS:Mgtk-doc}
@@ -74,12 +80,12 @@ MODGNOME_CONFIGURE_ARGS_vala=--disable-vala --disable-vala-bindings
 
 .   if ${MODGNOME_TOOLS:Mvala}
         MODGNOME_CONFIGURE_ARGS_vala=--enable-vala --enable-vala-bindings
-        MODGNOME_BUILD_DEPENDS+=lang/vala>=0.15.2
+        MODGNOME_BUILD_DEPENDS+=lang/vala>=0.16.0
 .   endif
 
 .   if ${MODGNOME_TOOLS:Myelp}
         MODGNOME_BUILD_DEPENDS+=textproc/itstool
-        MODGNOME_BUILD_DEPENDS+=x11/gnome/doc-utils>=0.20.7
+        MODGNOME_BUILD_DEPENDS+=x11/gnome/doc-utils>=0.20.10
         _yelp_depend=x11/gnome/yelp
         MODGNOME_RUN_DEPENDS+=${_yelp_depend}
         MODGNOME_RUN_DEPENDS_yelp=${_yelp_depend}

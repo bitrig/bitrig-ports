@@ -1,13 +1,12 @@
-# $OpenBSD: Makefile,v 1.18 2012/03/07 20:39:37 kurt Exp $
+# $OpenBSD: Makefile,v 1.23 2012/04/23 14:16:34 pascal Exp $
 
 ONLY_FOR_ARCHS = amd64 i386 powerpc sparc sparc64
-BROKEN-sparc64 = gengtype looping infinitely
 
-V = 4.6.2
+V = 4.6.3
 FULL_VERSION = $V
 FULL_PKGVERSION = $V
-BOOTSTRAP_GEN = 4
-LIBC_VERSION = 60.1
+BOOTSTRAP_GEN = 0
+LIBC_VERSION = 63.0
 ADASTRAP = adastrap-i386-$V-${BOOTSTRAP_GEN}.tar.xz
 
 PKGNAME-main =  gcc-${FULL_PKGVERSION}
@@ -19,14 +18,14 @@ PKGNAME-objc =  gobjc-${FULL_PKGVERSION}
 PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 PKGNAME-go =	gccgo-${FULL_PKGVERSION}
 
-REVISION-main = 1
-REVISION-c++ =	1
-REVISION-estdc =1
-REVISION-f95 =	0
-REVISION-java =	1
-REVISION-objc =	0
-REVISION-ada =	0
-REVISION-go =	0
+REVISION-main = 2
+REVISION-c++ = 2
+REVISION-estdc = 1
+REVISION-f95 = 2
+REVISION-java = 2
+REVISION-objc = 2
+REVISION-ada = 2
+REVISION-go = 2
 
 SHARED_LIBS =	estdc++		14.0 \
 		gfortran	3.0 \
@@ -69,8 +68,8 @@ REGRESS_DEPENDS = 	devel/dejagnu \
 			devel/autogen
 
 MASTER_SITES =	${MASTER_SITE_GCC:=releases/gcc-$(FULL_VERSION)/}
-#MASTER_SITES0 =	http://spacehopper.org/mirrors/
-MASTER_SITES0 = ftp://quatramaran.ens.fr/pub/espie/
+MASTER_SITES0 =	http://spacehopper.org/mirrors/
+#MASTER_SITES0 = ftp://quatramaran.ens.fr/pub/espie/
 MASTER_SITES1 =	ftp://sources.redhat.com/pub/java/
 
 LANGS = c
@@ -107,7 +106,7 @@ CONFIGURE_STYLE =		gnu
 MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} ${WRKSRC}/gcc
 
 EXTRA_ENV += am_cv_func_iconv=no JAR=no
-EXTRA_ENV += ac_cv_prog_CONFIGURED_M4=/usr/bin/m4
+EXTRA_ENV += ac_cv_prog_M4=/usr/bin/m4
 MAKE_FLAGS +=	 ac_cv_path_mkdir=/bin/mkdir
 
 CONFIGURE_ENV += ${EXTRA_ENV}
@@ -236,8 +235,8 @@ post-install:
 
 .include <bsd.port.mk>
 
-ADA_PACKAGE = ${PACKAGE_REPOSITORY}/i386/all/${PKGNAME-ada}${PKG_SUFX}
-GCC_PACKAGE = ${PACKAGE_REPOSITORY}/i386/all/${PKGNAME-main}${PKG_SUFX}
+ADA_PACKAGE = ${PACKAGE_REPOSITORY}/i386/all/${PKGNAME-ada}.tgz
+GCC_PACKAGE = ${PACKAGE_REPOSITORY}/i386/all/${PKGNAME-main}.tgz
 
 adastrap: ${ADA_PACKAGE} ${GCC_PACKAGE}
 .if !defined(LIBC_VERSION)

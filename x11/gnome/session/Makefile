@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.207 2012/02/23 12:17:09 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.210 2012/04/18 08:18:33 jasper Exp $
 
 COMMENT=		GNOME session
 
 GNOME_PROJECT=		gnome-session
-GNOME_VERSION=		3.2.1
-REVISION=		11
+GNOME_VERSION=		3.4.1
 
 CATEGORIES=		x11
 
@@ -37,10 +36,6 @@ LIB_DEPENDS=	devel/libexecinfo \
 RUN_DEPENDS=	x11/gnome/settings-daemon \
 		sysutils/consolekit
 
-# only needed at runtime since the move from gconf to gsettings
-# (see NEWS in the source tarball)
-RUN_DEPENDS+=	devel/gsettings-desktop-schemas
-
 # gnome.session+gnome-fallback.session RequiredComponents.
 RUN_DEPENDS+=	sysutils/notification-daemon
 
@@ -54,8 +49,9 @@ RUN_DEPENDS+=	x11/gnome/metacity \
 		x11/gnome/panel>=3 \
 		x11/polkit-gnome
 
-# Defaults from gsettings-desktop-schema.
-RUN_DEPENDS+=	fonts/cantarell-fonts \
+# defaults are set in gsettings-desktop-schema (runtime (see NEWS))
+RUN_DEPENDS+=	devel/gsettings-desktop-schemas \
+		fonts/cantarell-fonts \
 		x11/gnome/backgrounds>=3 \
 		x11/gnome/themes-standard
 
@@ -65,7 +61,7 @@ MODGNOME_ICON_CACHE=	Yes
 MODGNOME_CPPFLAGS=-I${X11BASE}/include
 MODGNOME_LDFLAGS=-L${X11BASE}/lib
 
-CONFIGURE_ARGS=	--disable-rebuilds \
+CONFIGURE_ARGS=	--disable-systemd \
 		--enable-docbook-docs
 
 .include <bsd.port.mk>

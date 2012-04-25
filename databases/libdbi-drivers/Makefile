@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2011/11/04 08:16:24 jasper Exp $
+# $OpenBSD: Makefile,v 1.13 2012/04/24 19:09:04 naddy Exp $
 
 V =			0.8.3-1
 COMMENT-main =		mysql driver for libdbi
@@ -8,14 +8,15 @@ COMMENT-sqlite3 =	sqlite3 driver for libdbi
 COMMENT-freetds =	freetds driver for libdbi
 DISTNAME =		libdbi-drivers-$V
 PKGNAME-main =		libdbi-drivers-mysql-${V:S/-/./}
-REVISION-main =		0
+REVISION-main =		1
 PKGNAME-pgsql =		libdbi-drivers-pgsql-${V:S/-/./}
-REVISION-pgsql =	1
+REVISION-pgsql =	2
 PKGNAME-sqlite =	libdbi-drivers-sqlite-${V:S/-/./}
+REVISION-sqlite =	0
 PKGNAME-sqlite3 =	libdbi-drivers-sqlite3-${V:S/-/./}
-REVISION-sqlite3 =	0
+REVISION-sqlite3 =	2
 PKGNAME-freetds =	libdbi-drivers-freetds-${V:S/-/./}
-REVISION-freetds =	3
+REVISION-freetds =	4
 CATEGORIES =		databases
 
 HOMEPAGE =		http://libdbi-drivers.sourceforge.net/
@@ -39,7 +40,6 @@ CONFIGURE_STYLE =	gnu
 
 CONFIGURE_ARGS =	--disable-docs \
 			--with-dbi-libdir=${LOCALBASE}/lib \
-			--with-dbi-incdir=${LOCALBASE}/include/dbi \
 			--with-mysql \
 			--with-pgsql \
 			--with-pgsql-incdir="${LOCALBASE}/include -I${LOCALBASE}/include/postgresql" \
@@ -66,8 +66,7 @@ LIB_DEPENDS-sqlite =	databases/sqlite \
 RUN_DEPENDS-sqlite =
 
 WANTLIB-sqlite3 =	m sqlite3 dbi
-LIB_DEPENDS-sqlite3 =	databases/sqlite3 \
-			databases/libdbi
+LIB_DEPENDS-sqlite3 =	databases/libdbi
 RUN_DEPENDS-sqlite3 =
 
 WANTLIB-freetds =	m ct dbi gmp gnutls p11-kit hogweed \
