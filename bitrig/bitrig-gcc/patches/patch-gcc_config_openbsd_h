@@ -1,0 +1,15 @@
+$OpenBSD$
+--- gcc/config/openbsd.h.orig	Wed Dec 22 07:06:01 2010
++++ gcc/config/openbsd.h	Tue Apr 24 21:59:50 2012
+@@ -109,9 +109,9 @@ while (0)
+    This two-stage defines makes it easy to pick that for targets that
+    have subspecs.  */
+ #ifdef CPP_CPU_SPEC
+-#define OBSD_CPP_SPEC "%(cpp_cpu) %{posix:-D_POSIX_SOURCE} %{pthread:-D_POSIX_THREADS}"
++#define OBSD_CPP_SPEC "%(cpp_cpu) %{posix:-D_POSIX_SOURCE} %{pthread:-D_REENTRANT}"
+ #else
+-#define OBSD_CPP_SPEC "%{posix:-D_POSIX_SOURCE} %{pthread:-D_POSIX_THREADS}"
++#define OBSD_CPP_SPEC "%{posix:-D_POSIX_SOURCE} %{pthread:-D_REENTRANT}"
+ #endif
+ 
+ #undef LIB_SPEC
