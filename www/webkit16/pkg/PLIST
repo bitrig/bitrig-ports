@@ -1,0 +1,5 @@
+@comment $OpenBSD: PLIST,v 1.16 2011/05/28 08:15:34 ajacoutot Exp $
+%%gtk3%%
+!%%gtk3%%
+@exec %D/bin/glib-compile-schemas %D/share/glib-2.0/schemas >/dev/null
+@unexec-delete %D/bin/glib-compile-schemas %D/share/glib-2.0/schemas >/dev/null
