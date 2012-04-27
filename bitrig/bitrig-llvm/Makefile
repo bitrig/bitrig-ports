@@ -5,7 +5,7 @@ SHARED_LIBS +=  libclang                  0.0 # 3.0
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 
 LLVM_V =	3.0
-REVISION =	4
+REVISION =	5
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 
@@ -55,6 +55,7 @@ PREFIX=			/usr
 
 CONFIGURE_STYLE =	cmake
 CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
+			-DLLVM_TARGETS_TO_BUILD:String="ARM;X86" \
 			-DCMAKE_BUILD_TYPE:String=Release \
 			-DCMAKE_INSTALL_PREFIX:PATH=${PREFIX}
 
