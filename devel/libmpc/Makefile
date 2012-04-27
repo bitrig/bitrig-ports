@@ -20,8 +20,7 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 LIB_DEPENDS=		devel/mpfr \
-			devel/gmp \
-			bitrig/bitrig-gcc,-gcclibs
+			devel/gmp
 
 WANTLIB=		mpfr>=1.0 gmp>=9.0 m
 

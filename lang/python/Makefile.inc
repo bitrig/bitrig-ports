@@ -67,8 +67,7 @@ ONLY_FOR_ARCHS-bsddb=	amd64 i386
 RUN_DEPENDS=		${FULLPKGNAME-main}:lang/python/${VERSION},-main
 LIB_DEPENDS=
 
-LIB_DEPENDS-main =	archivers/bzip2 bitrig/bitrig-binutils
-LIB_DEPENDS-main +=	bitrig/bitrig-gcc devel/gettext
+LIB_DEPENDS-main =	archivers/bzip2 devel/gettext
 RUN_DEPENDS-main =
 WANTLIB-main =		ssl panelw m crypto c util z readline pthread \
 			ncursesw stdc++ expat ossaudio bz2 iconv intl

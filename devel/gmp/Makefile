@@ -20,8 +20,6 @@ PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB += m stdc++
 
-LIB_DEPENDS=	bitrig/bitrig-gcc,-gcclibs
-
 MASTER_SITES=	ftp://ftp.gmplib.org/pub/${DISTNAME}/ \
 		${MASTER_SITE_GNU:=gmp/}
 

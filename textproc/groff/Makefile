@@ -16,8 +16,6 @@ PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		c m stdc++
 
-#LIB_DEPENDS =		bitrig/bitrig-gcc,-gcclibs
-
 MASTER_SITES =		${MASTER_SITE_GNU:=groff/}
 
 MAKE_FLAGS +=		docdir=${PREFIX}/share/doc/groff \
