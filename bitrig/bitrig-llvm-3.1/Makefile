@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.37 2012/01/19 08:41:13 sthen Exp $
 
-PORT =		88
 SHARED_LIBS +=  libclang                  0.0 # 3.0
 
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
@@ -8,7 +7,7 @@ COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 LLVM_V =	3.1
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
-#REVISION =	0
+REVISION =	1
 
 CATEGORIES =	bitrig
 
@@ -28,7 +27,6 @@ PERMIT_DISTFILES_FTP =	Yes
 WANTLIB =	c m pthread
 
 #MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
-MASTER_SITES =	http://localhost:${PORT}/
 
 #DISTFILES =	${DISTREALNAME}${EXTRACT_SUFX}
 DISTFILES =	${DISTREALNAME}${EXTRACT_SUFX} clang-${LLVM_V}${EXTRACT_SUFX}
