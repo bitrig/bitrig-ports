@@ -1,7 +1,7 @@
 $OpenBSD$
---- tools/clang/lib/Driver/ToolChains.cpp.orig	Sun Mar 25 13:22:38 2012
-+++ tools/clang/lib/Driver/ToolChains.cpp	Sun Mar 25 18:03:13 2012
-@@ -1605,6 +1605,29 @@ Tool &OpenBSD::SelectTool(const Compilation &C, const 
+--- tools/clang/lib/Driver/ToolChains.cpp.orig	Thu Nov 17 01:40:32 2011
++++ tools/clang/lib/Driver/ToolChains.cpp	Mon Apr 16 17:28:54 2012
+@@ -1193,6 +1193,30 @@ Tool &OpenBSD::SelectTool(const Compilation &C, const 
    return *T;
  }
  
@@ -14,11 +14,12 @@ $OpenBSD$
 +  //llvm::errs() << "trying to add some includes\n";
 +
 +  // XXX this is a terrible hack but needed untile we can switch from amd64 to x86_64
-+  std::string Triple = getDriver().DefaultTargetTriple;
++  std::string Triple = getDriver().DefaultHostTriple;
 +  if (Triple.substr(0, 5) == "amd64")
 +    Triple.replace(0, 5, "x86_64");
 +
 +  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2");
++  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2/backward");
 +  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2/" + Triple);
 +}
 +
@@ -30,4 +31,4 @@ $OpenBSD$
 +
  /// FreeBSD - FreeBSD tool chain which can call as(1) and ld(1) directly.
  
- FreeBSD::FreeBSD(const Driver &D, const llvm::Triple& Triple, const ArgList &Args)
+ FreeBSD::FreeBSD(const HostInfo &Host, const llvm::Triple& Triple)
