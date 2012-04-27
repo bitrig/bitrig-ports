@@ -1,0 +1,14 @@
+$OpenBSD$
+--- tools/clang/lib/Driver/ToolChains.h.orig	Sun Mar 25 13:22:38 2012
++++ tools/clang/lib/Driver/ToolChains.h	Sun Mar 25 17:31:05 2012
+@@ -461,6 +461,10 @@ class LLVM_LIBRARY_VISIBILITY OpenBSD : public Generic
+ 
+   virtual Tool &SelectTool(const Compilation &C, const JobAction &JA,
+                            const ActionList &Inputs) const;
++  virtual void AddClangCXXStdlibIncludeArgs(const ArgList &DriverArgs,
++                                            ArgStringList &CC1Args) const;
++  virtual void AddCXXStdlibLibArgs(const ArgList &Args,
++                                   ArgStringList &CmdArgs) const;
+ };
+ 
+ class LLVM_LIBRARY_VISIBILITY FreeBSD : public Generic_ELF {

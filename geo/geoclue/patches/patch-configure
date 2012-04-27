@@ -2,8 +2,17 @@ $OpenBSD: patch-configure,v 1.2 2010/11/25 08:56:58 sebastia Exp $
 
 Link against -pthread
 
---- configure.orig	Thu Mar 25 22:41:36 2010
-+++ configure	Tue Nov  2 12:53:54 2010
+--- configure.orig	Thu Mar 25 16:41:36 2010
++++ configure	Wed Apr 25 22:45:52 2012
+@@ -11314,7 +11314,7 @@ cat >>confdefs.h <<_ACEOF
+ _ACEOF
+ 
+ 
+-CFLAGS="$CFLAGS -g -Wall -Werror -Wno-format"
++CFLAGS="$CFLAGS -g -Wall -Wno-format"
+ 
+ # -----------------------------------------------------------
+ # gtk+
 @@ -11987,7 +11987,7 @@ fi
  
     if test "x$have_skyhook" = "xyes"; then

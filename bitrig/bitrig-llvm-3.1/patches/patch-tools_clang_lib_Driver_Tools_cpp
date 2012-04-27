@@ -1,0 +1,60 @@
+$OpenBSD$
+--- tools/clang/lib/Driver/Tools.cpp.orig	Sun Mar 25 13:22:38 2012
++++ tools/clang/lib/Driver/Tools.cpp	Sun Mar 25 17:31:05 2012
+@@ -2044,8 +2044,11 @@ void Clang::ConstructJob(Compilation &C, const JobActi
+     else if (A->getOption().matches(options::OPT_fstack_protector_all))
+       StackProtectorLevel = 2;
+   } else {
+-    StackProtectorLevel =
+-      getToolChain().GetDefaultStackProtectorLevel(KernelOrKext);
++    if (getToolChain().getTriple().getOS() == llvm::Triple::OpenBSD)
++      StackProtectorLevel = 1;
++    else
++      StackProtectorLevel =
++        getToolChain().GetDefaultStackProtectorLevel(KernelOrKext);
+   }
+   if (StackProtectorLevel) {
+     CmdArgs.push_back("-stack-protector");
+@@ -4572,12 +4575,26 @@ void openbsd::Link::ConstructJob(Compilation &C, const
+     }
+   }
+ 
++  // XXX this is a terrible hack but needed untile we can switch from amd64 to x86_64
+   std::string Triple = getToolChain().getTripleString();
+-  if (Triple.substr(0, 6) == "x86_64")
+-    Triple.replace(0, 6, "amd64");
+-  CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc-lib/" + Triple +
+-                                       "/4.2.1"));
++  if (Triple.substr(0, 5) == "amd64")
++    Triple.replace(0, 5, "x86_64");
+ 
++  bool PICEnabled = (Args.hasArg(options::OPT_fPIC) ||
++                     Args.hasArg(options::OPT_fpic) ||
++                     Args.hasArg(options::OPT_fPIE) ||
++                     Args.hasArg(options::OPT_fpie));
++  // i386 does NOT have an fpic directory unlike amd64
++  if (PICEnabled && getToolChain().getArchName() == "amd64") {
++    CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc/" + Triple +
++                                         "/4.6.2/fpic"));
++    //llvm::errs() << "LINKJOB " << "-L/usr/lib/gcc/" << Triple << "/4.6.2/fpic\n";
++  } else {
++    CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc/" + Triple +
++                                         "/4.6.2"));
++    //llvm::errs() << "LINKJOB " << "-L/usr/lib/gcc/" << Triple << "/4.6.2\n";
++  }
++
+   Args.AddAllArgs(CmdArgs, options::OPT_L);
+   Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
+   Args.AddAllArgs(CmdArgs, options::OPT_e);
+@@ -5424,7 +5441,10 @@ void dragonfly::Link::ConstructJob(Compilation &C, con
+ 
+     if (D.CCCIsCXX) {
+       getToolChain().AddCXXStdlibLibArgs(Args, CmdArgs);
+-      CmdArgs.push_back("-lm");
++      if (Args.hasArg(options::OPT_pg)) 
++        CmdArgs.push_back("-lm_p");
++      else
++        CmdArgs.push_back("-lm");
+     }
+ 
+     if (Args.hasArg(options::OPT_shared)) {

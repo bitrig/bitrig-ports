@@ -4,10 +4,10 @@ SHARED_LIBS +=  libclang                  0.0 # 3.0
 
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 
-LLVM_V =	3.0
-REVISION =	5
+LLVM_V =	3.1
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
+REVISION =	1
 
 CATEGORIES =	bitrig
 
@@ -24,10 +24,11 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-WANTLIB =	c m pthread sqlite3
+WANTLIB =	c m pthread
 
-MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
+#MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
 
+#DISTFILES =	${DISTREALNAME}${EXTRACT_SUFX}
 DISTFILES =	${DISTREALNAME}${EXTRACT_SUFX} clang-${LLVM_V}${EXTRACT_SUFX}
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 
@@ -39,23 +40,22 @@ MODULES =	devel/cmake \
 
 REGRESS_DEPENDS = devel/dejagnu
 
+#MAKE =		"/usr/local/bin/${GMAKE} -j${MAKE_JOBS}"
+USE_GMAKE=	yes
 MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
 		VERBOSE=Yes \
-		INSTALL="install -c"
+		INSTALL="install -c" -j${MAKE_JOBS}
 
 REGRESS_FLAGS =	RUNTESTFLAGS=
 
 SEPARATE_BUILD =	simple
-USE_LIBTOOL =		Yes
-# uncomment if you want to use MAKE_JOBS
-#USE_GMAKE =		Yes
-MAKE_ENV =		REQUIRES_RTTI=1
+USE_LIBTOOL =		gnu
+MAKE_ENV =		REQUIRES_RTTI=1 
 
-PREFIX=			/usr
+PREFIX =		/usr
 
 CONFIGURE_STYLE =	cmake
 CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
-			-DLLVM_TARGETS_TO_BUILD:String="ARM;X86" \
 			-DCMAKE_BUILD_TYPE:String=Release \
 			-DCMAKE_INSTALL_PREFIX:PATH=${PREFIX}
 
@@ -73,6 +73,7 @@ pre-configure:
 	-@ln -s ${MODPY_BIN} ${WRKDIR}/bin/python
 
 post-build:
+	mkdir -p ${WRKSRC}/docs/CommandGuide/man/man1 && \
 	cd ${WRKSRC}/docs/CommandGuide && for i in *.pod; do \
 	pod2man --release=CVS --center="LLVM Command Guide" \
 	    $$i man/man1/$${i%.pod}.1; \
@@ -91,5 +92,12 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKSRC}/docs/CommandGuide/man/man1/* \
 	    ${PREFIX}/share/man/man1
+
+svn:
+	rm -rf /tmp/bitrig-llvm/
+	mkdir -p /tmp/bitrig-llvm
+	cd /tmp/bitrig-llvm && svn co http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_31/rc1 llvm-3.1.src && tar zcvf llvm-3.1.tar.gz llvm-3.1.src
+	cd /tmp/bitrig-llvm && svn co http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_31/rc1 clang-3.1.src && tar zcvf clang-3.1.tar.gz clang-3.1.src
+	cd /tmp/bitrig-llvm && cp llvm-3.1.tar.gz clang-3.1.tar.gz /usr/ports/distfiles
 
 .include <bsd.port.mk>

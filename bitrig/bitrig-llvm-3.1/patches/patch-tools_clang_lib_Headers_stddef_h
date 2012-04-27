@@ -1,0 +1,12 @@
+$OpenBSD$
+--- tools/clang/lib/Headers/stddef.h.orig	Tue Apr 17 17:15:11 2012
++++ tools/clang/lib/Headers/stddef.h	Tue Apr 17 17:22:46 2012
+@@ -32,7 +32,7 @@ typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
+ #endif
+ #ifndef _SIZE_T
+ #define _SIZE_T
+-typedef __typeof__(sizeof(int)) size_t;
++typedef unsigned long size_t;
+ #endif
+ #ifndef __cplusplus
+ #ifndef _WCHAR_T

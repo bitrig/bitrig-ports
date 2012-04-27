@@ -1,0 +1,9 @@
+$OpenBSD$
+--- libproxy/modules/config_gnome3.cpp.orig	Wed Apr 25 22:11:51 2012
++++ libproxy/modules/config_gnome3.cpp	Wed Apr 25 22:11:56 2012
+@@ -1,4 +1,4 @@
+-u*******************************************************************************
++/*******************************************************************************
+  * libproxy - A library for proxy configuration
+  * Copyright (C) 2006 Nathaniel McCallum <nathaniel@natemccallum.com>
+  *

@@ -33,7 +33,7 @@ CONFIGURE_ARGS= ${CONFIGURE_SHARED} \
 		--enable-extra-encodings \
 		--enable-static
 CONFIGURE_ENV=	am_cv_proto_iconv='extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);' \
-		CC=${CC}
+		CC='${CC}'
 
 pre-configure:
 	@cd ${WRKSRC}; \
