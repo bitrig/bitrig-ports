@@ -1,0 +1,11 @@
+$OpenBSD$
+--- libproxy/modules/config_gnome3.cpp.orig	Mon Jun  6 17:44:37 2011
++++ libproxy/modules/config_gnome3.cpp	Fri Apr 27 21:30:41 2012
+@@ -18,6 +18,7 @@
+  ******************************************************************************/
+ 
+ #include <cstdio>         // For fileno(), fread(), pclose(), popen(), sscanf()
++#include <cstring>
+ #include <sys/select.h>   // For select()
+ #include <fcntl.h>        // For fcntl()
+ #include <errno.h>        // For errno stuff
