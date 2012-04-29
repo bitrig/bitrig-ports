@@ -1,0 +1,51 @@
+$OpenBSD$
+--- Usage.cc.orig	Sun Apr 29 11:42:24 2012
++++ Usage.cc	Sun Apr 29 11:42:43 2012
+@@ -17,7 +17,7 @@
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ 
+-#include <iostream.h>
++#include <iostream>
+ 
+ #include "Usage.h"
+ 
+@@ -32,22 +32,22 @@ Usage::~Usage()
+ // prints usage
+ void Usage::print()
+ {
+-   cout << endl;
+-   cout << "Usage: colortail [OPTION]... [FILE]..." << endl;
+-   cout << "Print last 10 lines of each FILE to standard output." << endl;
+-   cout << "With more than one FILE, precede each with a header giving the file name." << endl;
+-   cout << endl;
+-   cout << "  -f, --follow\t\t\toutput appended data as the file grows" << endl;
+-   cout << "  -h, --help\t\t\tdisplay this help and exit" << endl;
+-   cout << "  -k, --config=file" << endl;
+-   cout << "      --config=file1,file2,...\tcolor config files for the tail files." << endl;
+-   cout << "\t\t\t\tIf only one config file it's global otherwise" << endl;
+-   cout << "\t\t\t\tone config file for each tail file" << endl;
+-   cout << "  -n, --lines=N\t\t\toutput the last N lines, instead of last 10" << endl;
+-   cout << "  -q, --quiet, --silent\t\tnever output headers giving file names" << endl;
+-   cout << "  -v, --version\t\t\toutput version information and exit" << endl;
+-   cout << endl;
+-   cout << "Report bugs to pt98jan@student.hk-r.se" << endl;
++   std::cout << std::endl;
++   std::cout << "Usage: colortail [OPTION]... [FILE]..." << std::endl;
++   std::cout << "Print last 10 lines of each FILE to standard output." << std::endl;
++   std::cout << "With more than one FILE, precede each with a header giving the file name." << std::endl;
++   std::cout << std::endl;
++   std::cout << "  -f, --follow\t\t\toutput appended data as the file grows" << std::endl;
++   std::cout << "  -h, --help\t\t\tdisplay this help and exit" << std::endl;
++   std::cout << "  -k, --config=file" << std::endl;
++   std::cout << "      --config=file1,file2,...\tcolor config files for the tail files." << std::endl;
++   std::cout << "\t\t\t\tIf only one config file it's global otherwise" << std::endl;
++   std::cout << "\t\t\t\tone config file for each tail file" << std::endl;
++   std::cout << "  -n, --lines=N\t\t\toutput the last N lines, instead of last 10" << std::endl;
++   std::cout << "  -q, --quiet, --silent\t\tnever output headers giving file names" << std::endl;
++   std::cout << "  -v, --version\t\t\toutput version information and exit" << std::endl;
++   std::cout << std::endl;
++   std::cout << "Report bugs to pt98jan@student.hk-r.se" << std::endl;
+ }
+ 
+    

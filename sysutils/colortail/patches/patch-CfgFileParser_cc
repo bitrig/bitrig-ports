@@ -1,12 +1,12 @@
 $OpenBSD: patch-CfgFileParser_cc,v 1.1.1.1 2004/02/26 00:30:05 naddy Exp $
---- CfgFileParser.cc.orig	2004-02-26 00:03:08.000000000 +0100
-+++ CfgFileParser.cc	2004-02-26 00:03:25.000000000 +0100
+--- CfgFileParser.cc.orig	Tue Aug  3 14:40:44 1999
++++ CfgFileParser.cc	Sun Apr 29 11:37:39 2012
 @@ -20,10 +20,10 @@
  #include "CfgFileParser.h"
  
  #include <stdio.h>
 -#include <fstream.h>
-+#include <iostream.h>
++#include <iostream>
  #include <assert.h>
  #include <string.h>
 -#include <malloc.h>
@@ -14,3 +14,119 @@ $OpenBSD: patch-CfgFileParser_cc,v 1.1.1.1 2004/02/26 00:30:05 naddy Exp $
  
  
  // ## class SearchData ##
+@@ -134,9 +134,9 @@ char* CfgFileParser::read_line()
+    {
+       // found EOF
+       
+-//      cout << "colortail: Error in config file: " << m_filename
++//      std::cout << "colortail: Error in config file: " << m_filename
+ //	   << " at line " << m_line
+-//	   << ". Skipping this line." << endl;
++//	   << ". Skipping this line." << std::endl;
+       delete str;
+       return NULL;
+    }
+@@ -211,9 +211,9 @@ int CfgFileParser::read_item()
+ 	    if (regcomp(searchdata->m_preg, regexp, REG_EXTENDED) != 0)
+ 	    {
+ 	       // failed to make compiled reg exp pattern
+-	       cout << "colortail: Failed to make compiled reg exp pattern for "
++	       std::cout << "colortail: Failed to make compiled reg exp pattern for "
+ 		    << "reg exp in config file " << m_filename << " at line "
+-		    << m_line << ". Skipping this line." << endl;
++		    << m_line << ". Skipping this line." << std::endl;
+ 	       
+ 	       // free mem
+ 	       delete searchdata;
+@@ -260,9 +260,9 @@ char* CfgFileParser::read_color()
+       {
+ 	 // found EOF
+ 	 
+-//	 cout << "colortail: Error reading line in config file: "
++//	 std::cout << "colortail: Error reading line in config file: "
+ //	      << m_filename
+-//	      << " at line " << m_line << "." << endl;
++//	      << " at line " << m_line << "." << std::endl;
+ 	 // error, return NULL
+ 	 return NULL;
+       }
+@@ -274,8 +274,8 @@ char* CfgFileParser::read_color()
+       {
+ 	 if (strncmp(tmp, "COLOR", 5) != 0)
+ 	 {
+-	    cout << "1colortail: Error in config file: " << m_filename
+-		 << " at line " << m_line << ". Skipping this line." << endl;
++	    std::cout << "1colortail: Error in config file: " << m_filename
++		 << " at line " << m_line << ". Skipping this line." << std::endl;
+ 	 }
+ 	 else 
+ 	 {
+@@ -374,8 +374,8 @@ char* CfgFileParser::read_color()
+ 	    if (found_color == 0)
+ 	    {
+ 	       // didn't found color
+-	       cout << "colortail: Don't recognize color in config file: "
+-		    << m_filename << " at line " << m_line << endl;
++	       std::cout << "colortail: Don't recognize color in config file: "
++		    << m_filename << " at line " << m_line << std::endl;
+ 
+ 	       // free mem
+ 	       delete tmp;
+@@ -414,8 +414,8 @@ int CfgFileParser::read_left()
+       if (!tmp)
+       {
+ 	 // error reading line
+-	 cout << "colortail: Error reading line in config file: "
+-	      << m_filename << " at line " << m_line << "." << endl;
++	 std::cout << "colortail: Error reading line in config file: "
++	      << m_filename << " at line " << m_line << "." << std::endl;
+ 	 // error, return 2
+ 	 return 2;
+       }
+@@ -435,9 +435,9 @@ int CfgFileParser::read_left()
+ 	 else
+ 	 {
+ 	    // not a '{'
+-	    cout << "colortail: Error, expected '{' but found '"
++	    std::cout << "colortail: Error, expected '{' but found '"
+ 		 << tmp[0] << "' in config file: " << m_filename
+-		 << " at line " << m_line << "." << endl;
++		 << " at line " << m_line << "." << std::endl;
+ 	    // free mem
+ 	    delete tmp;
+ 
+@@ -469,8 +469,8 @@ char* CfgFileParser::read_regexp()
+       if (!tmp)
+       {
+ 	 // error reading line
+-	 cout << "colortail: Error reading line in config file: "
+-	      << m_filename << " at line " << m_line << "." << endl;
++	 std::cout << "colortail: Error reading line in config file: "
++	      << m_filename << " at line " << m_line << "." << std::endl;
+ 
+ 	 // error, return NULL
+ 	 return NULL;
+@@ -519,12 +519,12 @@ int CfgFileParser::parse(char *filename)
+ 
+    
+    // try to open the file
+-   m_infile.open(filename, ios::in);
++   m_infile.open(filename, std::ios::in);
+ 
+    if (!m_infile)
+    {
+       // open failed
+-      cout << "colortail: Failed to open config file: " << filename << endl;
++      std::cout << "colortail: Failed to open config file: " << filename << std::endl;
+       return 0;
+    }
+ 
+@@ -549,7 +549,7 @@ int CfgFileParser::parse(char *filename)
+       items_counter += n;
+       
+       // DEBUG
+-      //cout << "Added " << n << " items." << endl;
++      //std::cout << "Added " << n << " items." << std::endl;
+    }
+    
+    return items_counter;

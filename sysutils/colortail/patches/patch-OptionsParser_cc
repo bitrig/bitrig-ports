@@ -1,16 +1,18 @@
 $OpenBSD: patch-OptionsParser_cc,v 1.1.1.1 2004/02/26 00:30:05 naddy Exp $
---- OptionsParser.cc.orig	2004-01-11 16:15:24.000000000 -0500
-+++ OptionsParser.cc	2004-01-11 16:15:42.000000000 -0500
-@@ -18,7 +18,7 @@
+--- OptionsParser.cc.orig	Wed Aug  4 18:23:39 1999
++++ OptionsParser.cc	Sun Apr 29 11:41:26 2012
+@@ -17,8 +17,8 @@
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
  
- #include <iostream.h>
+-#include <iostream.h>
 -#include <strstream.h>
++#include <iostream>
 +#include <strstream>
  #include <string.h>
  #include <stdio.h>
  #include <stdlib.h>
-@@ -130,7 +130,7 @@
+@@ -130,7 +130,7 @@ Options* OptionsParser::parse(int argc, char **argv)
  	    int loop = 1;
  	    while (loop)
  	    {
@@ -19,3 +21,21 @@ $OpenBSD: patch-OptionsParser_cc,v 1.1.1.1 2004/02/26 00:30:05 naddy Exp $
  
  	       while (1)
  	       {
+@@ -217,14 +217,14 @@ Options* OptionsParser::parse(int argc, char **argv)
+ 	    
+ 	    // TODO: fix to handle -45 that means -n 45
+ 
+-	    cout << "colortail: invalid option -- " << (char)c << endl;
+-	    cout << "Try 'colortail --help' for more information." << endl;
++	    std::cout << "colortail: invalid option -- " << (char)c << std::endl;
++	    std::cout << "Try 'colortail --help' for more information." << std::endl;
+ 	    
+ 	    break;
+ 	    
+ 	 default:
+ 
+-	    cout << "Unrecognized option " << (char)c << endl;
++	    std::cout << "Unrecognized option " << (char)c << std::endl;
+ 
+ 	    // print usage
+ 	    usage.print();

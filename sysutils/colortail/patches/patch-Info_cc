@@ -1,0 +1,29 @@
+$OpenBSD$
+--- Info.cc.orig	Sun Apr 29 11:40:08 2012
++++ Info.cc	Sun Apr 29 11:40:45 2012
+@@ -17,7 +17,7 @@
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ 
+-#include <iostream.h>
++#include <iostream>
+ 
+ #include "Info.h"
+ #include "config.h"
+@@ -33,11 +33,11 @@ Info::~Info()
+ // prints info about colortail
+ void Info::print()
+ {
+-   cout << "Colortail version <" << COLORTAIL_VERSION << ">" << endl;
+-   cout << "Copyright (C) 1999 Joakim Andersson <pt98jan@student.hk-r.se>" << endl;
+-   cout << "Colortail comes with ABSOLUTELY NO WARRANTY; for details see the COPYING file." << endl;
+-   cout << "This is free software, and you are welcome to redistribute it" << endl;
+-   cout << "under certain conditions; see the COPYING file for details." << endl;
++   std::cout << "Colortail version <" << COLORTAIL_VERSION << ">" << std::endl;
++   std::cout << "Copyright (C) 1999 Joakim Andersson <pt98jan@student.hk-r.se>" << std::endl;
++   std::cout << "Colortail comes with ABSOLUTELY NO WARRANTY; for details see the COPYING file." << std::endl;
++   std::cout << "This is free software, and you are welcome to redistribute it" << std::endl;
++   std::cout << "under certain conditions; see the COPYING file for details." << std::endl;
+ }
+ 
+    

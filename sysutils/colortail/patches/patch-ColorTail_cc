@@ -1,0 +1,65 @@
+$OpenBSD$
+--- ColorTail.cc.orig	Sun Apr 29 11:38:08 2012
++++ ColorTail.cc	Sun Apr 29 11:38:51 2012
+@@ -17,7 +17,7 @@
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ 
+-#include <iostream.h>
++#include <iostream>
+ #include <assert.h>
+ #include <unistd.h>
+ 
+@@ -73,16 +73,16 @@ int ColorTail::start(int argc, char **argv)
+    if (options)
+    {
+       // print options
+-      cout << "follow: " << options->follow << endl;
+-      cout << "color: " << options->color << endl;
+-      cout << "rows: " << options->rows << endl;
+-      cout << "verbose: " << options->verbose << endl;
+-      cout << "nr_cfg_files: " << options->nr_cfg_files << endl;
++      std::cout << "follow: " << options->follow << std::endl;
++      std::cout << "color: " << options->color << std::endl;
++      std::cout << "rows: " << options->rows << std::endl;
++      std::cout << "verbose: " << options->verbose << std::endl;
++      std::cout << "nr_cfg_files: " << options->nr_cfg_files << std::endl;
+       for (int i = 0 ; i < options->nr_cfg_files ; i++)
+       {
+-	 cout << "cfg_filenames[" << i << "]: " << options->cfg_filenames[i] << endl;
++	 std::cout << "cfg_filenames[" << i << "]: " << options->cfg_filenames[i] << std::endl;
+       }
+-      cout << "global_cfg_file: " << options->global_cfg_file << endl; 
++      std::cout << "global_cfg_file: " << options->global_cfg_file << std::endl; 
+    }
+    */
+ 
+@@ -96,7 +96,7 @@ int ColorTail::start(int argc, char **argv)
+    for (int i = optind ; i < argc ; i++)
+    {
+       // DEBUG
+-      //cout << "Tailfile no: " << tailfile_counter << " is " << argv[i] << endl;
++      //std::cout << "Tailfile no: " << tailfile_counter << " is " << argv[i] << std::endl;
+ 
+       // new TailFile object
+       TailFile *new_tailfile = new TailFile();
+@@ -124,7 +124,7 @@ int ColorTail::start(int argc, char **argv)
+ 	    {
+ 	       // no config file
+ 	       // print error
+-	       cout << "colortail: Couldn't open global color config file. Skipping colors for the " << argv[i] << " file." << endl;
++	       std::cout << "colortail: Couldn't open global color config file. Skipping colors for the " << argv[i] << " file." << std::endl;
+                // open the tailfile without colorizer
+ 	       new_tailfile->open(argv[i], NULL);
+ 	    }  
+@@ -138,8 +138,8 @@ int ColorTail::start(int argc, char **argv)
+ 	    {
+ 	       // there is a config file
+ 	       // DEBUG:
+-	       //cout << "tailfile_counter: " << tailfile_counter << endl;
+-	       //cout << "cfg file to open: " << options->cfg_filenames[tailfile_counter] << endl;
++	       //std::cout << "tailfile_counter: " << tailfile_counter << std::endl;
++	       //std::cout << "cfg file to open: " << options->cfg_filenames[tailfile_counter] << std::endl;
+ 	       // END DEBUG
+ 	       
+ 	       colorizer = new Colorizer

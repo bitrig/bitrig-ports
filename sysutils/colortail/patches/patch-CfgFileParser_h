@@ -1,0 +1,21 @@
+$OpenBSD$
+--- CfgFileParser.h.orig	Sun Apr 29 11:34:59 2012
++++ CfgFileParser.h	Sun Apr 29 11:35:57 2012
+@@ -25,7 +25,7 @@
+ 
+ #include <sys/types.h>
+ #include <regex.h>
+-#include <fstream.h>
++#include <fstream>
+ 
+ #ifdef HAVE_GNUREGEX_H
+ # include <gnuregex.h>
+@@ -80,7 +80,7 @@ class CfgFileParser
+ {
+   private:
+    List<SearchData*> *m_items_list;
+-   ifstream m_infile;
++   std::ifstream m_infile;
+    char *m_filename;
+    int m_line;
+ 

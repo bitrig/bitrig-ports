@@ -1,7 +1,72 @@
 $OpenBSD: patch-TailFile_cc,v 1.1.1.1 2004/02/26 00:30:05 naddy Exp $
---- TailFile.cc.orig	2004-01-11 16:19:14.000000000 -0500
-+++ TailFile.cc	2004-01-11 16:20:33.000000000 -0500
-@@ -375,7 +375,7 @@
+--- TailFile.cc.orig	Wed Aug  4 18:09:38 1999
++++ TailFile.cc	Sun Apr 29 11:42:03 2012
+@@ -17,7 +17,7 @@
+     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ 
+-#include <iostream.h>
++#include <iostream>
+ #include <string.h>
+ #include <stdio.h>
+ #include <sys/stat.h>
+@@ -66,7 +66,7 @@ int TailFile::open(char *filename, Colorizer *colorize
+ 
+    if (filename == NULL)
+    {
+-      cout << "colortail: Filename was NULL" << endl;
++      std::cout << "colortail: Filename was NULL" << std::endl;
+       return 1;
+    }
+    else
+@@ -81,7 +81,7 @@ int TailFile::open(char *filename, Colorizer *colorize
+       if (m_file == NULL)
+       {
+ 	 // open failed
+-	 cout << "colortail: Failed to open file: " << filename << endl;
++	 std::cout << "colortail: Failed to open file: " << filename << std::endl;
+ 	 return 1;
+       }
+ 
+@@ -144,7 +144,7 @@ void TailFile::printFilename()
+ {
+    // prints the filename to stdout
+ 
+-   cout << "==> " << m_filename << " <==" << endl;
++   std::cout << "==> " << m_filename << " <==" << std::endl;
+ }
+ 
+ char* TailFile::get_filename()
+@@ -166,7 +166,7 @@ void TailFile::printAll()
+ 
+ //   while (m_inFile >> setw(bufSize) >> buf) 
+ //   {
+-//      cout << buf << endl;
++//      std::cout << buf << std::endl;
+ //   }
+ }
+ 
+@@ -300,7 +300,7 @@ long TailFile::end_of_file_position()
+    }
+ 
+    // DEBUG
+-   //cout << "File size: " << file_stats.st_size << endl;
++   //std::cout << "File size: " << file_stats.st_size << std::endl;
+    // ENDDEBUG
+    
+    // return the size
+@@ -325,8 +325,8 @@ int TailFile::more_to_read()
+    long end = end_of_file_position();
+ 
+    // DEBUG
+-//   cout << "size: " << end << endl;
+-//   cout << "current pos: " << m_position << endl;
++//   std::cout << "size: " << end << std::endl;
++//   std::cout << "current pos: " << m_position << std::endl;
+    // ENDDEBUG
+ 
+    // check if file is truncated
+@@ -375,7 +375,7 @@ void TailFile::follow_print(int n, int verbose, char *
     // check if there isn't a follow buffer
     if (m_follow_buffer == NULL)
     {
@@ -10,7 +75,21 @@ $OpenBSD: patch-TailFile_cc,v 1.1.1.1 2004/02/26 00:30:05 naddy Exp $
     }
  
     // make buffer
-@@ -417,6 +417,9 @@
+@@ -395,11 +395,11 @@ void TailFile::follow_print(int n, int verbose, char *
+ //   for (int j = 0 ; j < n ; j++)
+ //   {
+ //      // DEBUG
+-//      cout << "current position: " << ftell(m_file) << endl;
++//      std::cout << "current position: " << ftell(m_file) << std::endl;
+ //      // ENDDEBUG
+ //      buf[j] = fgetc(m_file);
+ //      // DEBUG
+-//      cout << "read[" << j << "]: " << (int)buf[j] << endl;
++//      std::cout << "read[" << j << "]: " << (int)buf[j] << std::endl;
+ //      // ENDDEBUG
+ //   }
+ //   // null terminate the string
+@@ -417,6 +417,9 @@ void TailFile::follow_print(int n, int verbose, char *
        int ch = fgetc(m_file);
  
        // add the character to the string
@@ -20,3 +99,50 @@ $OpenBSD: patch-TailFile_cc,v 1.1.1.1 2004/02/26 00:30:05 naddy Exp $
        m_follow_buffer->put(ch);
        
        // check if return
+@@ -425,7 +428,7 @@ void TailFile::follow_print(int n, int verbose, char *
+ 	 // a return
+ 
+ 	 // DEBUG
+-//	 cout << "found a return" << endl;
++//	 std::cout << "found a return" << std::endl;
+ 	 // ENDDEBUG
+ 
+ 	 // chack if the verbose flag is set
+@@ -479,8 +482,8 @@ void TailFile::follow_print(int n, int verbose, char *
+    
+    
+ //   // DEBUG
+-//   cout << "Return value: " << ret << endl;
+-//   cout << "string read: " << buf << endl;
++//   std::cout << "Return value: " << ret << std::endl;
++//   std::cout << "string read: " << buf << std::endl;
+ //   // ENDDEBUG
+ //   
+ //   // did we read anything?
+@@ -496,7 +499,7 @@ void TailFile::follow_print(int n, int verbose, char *
+ //	    // found a return, we've got a line to print
+ //
+ //	    // DEBUG
+-//	    cout << "Found a return at " << i << endl;
++//	    std::cout << "Found a return at " << i << std::endl;
+ //	    
+ //	    // ENDDEBUG
+ //	    
+@@ -577,7 +580,7 @@ void TailFile::print_to_stdout(char *str)
+       // colorize the string
+       char *buf = m_colorizer->colorize(str);
+       // print the new colorized string
+-      cout << buf;
++      std::cout << buf;
+       // free the mem
+       delete buf;
+    }
+@@ -586,7 +589,7 @@ void TailFile::print_to_stdout(char *str)
+       // don't colorize
+ 
+       // print the line
+-      cout << str;
++      std::cout << str;
+    }
+ }
+ 
