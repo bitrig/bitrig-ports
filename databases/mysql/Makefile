@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.202 2012/03/26 08:05:01 giovanni Exp $
+# $OpenBSD: Makefile,v 1.205 2012/05/04 07:57:17 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -15,6 +15,9 @@ CATEGORIES=	databases
 V=		MySQL-5.1
 MASTER_SITES=	${MASTER_SITE_MYSQL:=Downloads/$V/}
 
+REVISION-main=	1
+REVISION-server=1
+
 SHARED_LIBS=	mysqlclient_r	21.0 \
 		mysqlclient	21.0
 
@@ -29,9 +32,9 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 WANTLIB=		c m pthread
 
-DB_DIR?=	/var/mysql
+LOCALSTATEDIR=	${BASELOCALSTATEDIR}/mysql
 SOCKET_DIR=	/var/run/mysql
-SUBST_VARS=	DB_DIR SOCKET_DIR VERSION
+SUBST_VARS=	LOCALSTATEDIR SOCKET_DIR VERSION
 
 MULTI_PACKAGES=		-main -server -tests
 
@@ -47,8 +50,7 @@ USE_GROFF=	Yes
 CONFIGURE_STYLE= autoconf
 AUTOCONF_VERSION= 2.63
 CONFIGURE_ARGS+= ${CONFIGURE_SHARED}
-CONFIGURE_ARGS+= --localstatedir="${DB_DIR}" \
-		 --with-big-tables \
+CONFIGURE_ARGS+= --with-big-tables \
 		 --with-comment='OpenBSD port: ${FULLPKGNAME-server}' \
 		 --with-libwrap \
 		 --with-low-memory \

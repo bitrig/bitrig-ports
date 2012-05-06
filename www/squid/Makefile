@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.125 2012/03/29 13:39:00 sthen Exp $
+# $OpenBSD: Makefile,v 1.127 2012/04/28 11:06:12 ajacoutot Exp $
 
 COMMENT=	WWW and FTP proxy cache and accelerator
 
 DISTNAME=	squid-2.7.STABLE9
-REVISION=	15
+REVISION=	16
 CATEGORIES=	www
 MASTER_SITES=	${HOMEPAGE}/Versions/v2/2.7/
 DIST_SUBDIR=	squid
@@ -20,8 +20,8 @@ PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=	asn1 c com_err crypto krb5 gssapi m pthread ssl
 
-SQUIDDIR?=	/var/squid
-SUBST_VARS=	SQUIDDIR
+LOCALSTATEDIR=	${BASELOCALSTATEDIR}/squid
+SUBST_VARS=	LOCALSTATEDIR
 
 FLAVORS=	ldap ntlm snmp
 FLAVOR?=
@@ -43,6 +43,7 @@ SEPARATE_BUILD=	Yes
 AUTOCONF_VERSION= 2.62
 CONFIGURE_STYLE= autoconf
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/cfgaux
+
 CONFIGURE_ARGS+=--datadir="${PREFIX}/share/squid" \
 		--enable-auth="${AUTH}" \
 		--enable-arp-acl \
@@ -56,7 +57,6 @@ CONFIGURE_ARGS+=--datadir="${PREFIX}/share/squid" \
 		--enable-ssl \
 		--enable-storeio="${STOREIO}" \
 		--with-pthreads \
-		--localstatedir="${SQUIDDIR}" \
 		--enable-follow-x-forwarded-for
 
 .if ${FLAVOR:L:Mldap}

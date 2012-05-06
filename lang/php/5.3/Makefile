@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.26 2012/04/23 17:15:18 espie Exp $
+# $OpenBSD: Makefile,v 1.29 2012/05/05 14:26:14 robert Exp $
 
 PV=		5.3
-V=		${PV}.10
+V=		${PV}.12
 SUHOSIN_PHPV=	5.3.9
 SUHOSIN_P_V=	0.9.10
-REVISION-pdo_sqlite = 0
 
 INI_TEMPLATES=	development production
 
@@ -13,7 +12,6 @@ PKGNAME-fpm?=		php-fpm-${V}
 MULTI_PACKAGES+=        -fpm
 COMMENT-fpm=		stand-alone FPM version of PHP
 CONFIGURE_ARGS+=	--enable-fpm \
-			--localstatedir=/var \
 			--with-fpm-user=www \
 			--with-fpm-group=www
 LIB_DEPENDS-fpm=	${LIB_DEPENDS-main}

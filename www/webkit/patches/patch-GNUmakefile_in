@@ -1,4 +1,4 @@
-$OpenBSD: patch-GNUmakefile_in,v 1.16 2012/04/03 15:39:35 landry Exp $
+$OpenBSD: patch-GNUmakefile_in,v 1.17 2012/04/30 13:31:06 landry Exp $
 
 - install GtkLauncher, remove silent build lines, fix lpthread/pthread
 - install gtk-doc in a versionned dir to avoid conflicts

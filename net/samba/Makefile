@@ -1,13 +1,12 @@
-# $OpenBSD: Makefile,v 1.161 2012/04/22 13:44:09 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.163 2012/05/03 07:40:05 sthen Exp $
 
 SHARED_ONLY=		Yes
 
 COMMENT-main=		SMB and CIFS client and server for UNIX
 COMMENT-docs=		additional documentation and examples for Samba
 
-DISTNAME=		samba-3.6.4
+DISTNAME=		samba-3.6.5
 PKGNAME-main=		${DISTNAME}
-REVISION-main=		1
 FULLPKGNAME-docs=	${DISTNAME:S/-/-docs-/}
 FULLPKGPATH-docs=	net/samba,-docs
 
@@ -60,7 +59,6 @@ CONFIGURE_STYLE=	gnu
 AUTOCONF_VERSION=	2.63
 
 CONFIGURE_ARGS=		--disable-fam \
-			--localstatedir="/var" \
 			--libdir="${PREFIX}/lib/samba" \
 			--sbindir="${PREFIX}/libexec" \
 			--with-configdir="${CONFDIR}" \

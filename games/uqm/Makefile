@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2011/11/18 12:38:00 espie Exp $
+# $OpenBSD: Makefile,v 1.32 2012/05/01 15:49:12 sthen Exp $
 
 COMMENT-main=		ur-quan masters: sdl port of star control 2; multiplayer
 COMMENT-content=	ur-quan masters: game content
@@ -9,6 +9,7 @@ COMMENT-threedomusic=	ur-quan masters: 3DO music content
 COMMENT-voice=		ur-quan masters: speech content
 
 VER=			0.6.0
+EPOCH=			0 # N.B. in RUN_DEPENDS
 DISTNAME=		uqm-0.6.2
 CATEGORIES=		games x11
 PDIST=			${DISTNAME}-source.tgz
@@ -23,7 +24,7 @@ SUPDISTFILES=		${MDIST} ${VDIST} ${RM1DIST} ${RM2DIST} ${RM3DIST}
 DIST_SUBDIR=		uqm
 CATEGORIES=		games x11
 PKGNAME-main=		uqm-0.6.2
-REVISION-main =		1
+REVISION-main =		2
 PKGNAME-content=	uqm-content-${VER}
 PKGNAME-remix1=		uqm-remix1-${VER}
 PKGNAME-remix2=		uqm-remix2-${VER}
@@ -42,7 +43,7 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 LIB_DEPENDS-main=	audio/libmikmod \
-			audio/tremor \
+			audio/tremor>=20120410 \
 			devel/sdl-image
 PKG_ARCH-content=	*
 PKG_ARCH-remix1=	*
@@ -50,10 +51,10 @@ PKG_ARCH-remix2=	*
 PKG_ARCH-remix3=	*
 PKG_ARCH-threedomusic=	*
 PKG_ARCH-voice=		*
-RUN_DEPENDS=		${PKGNAME-main}:games/uqm
-RUN_DEPENDS-content=	
-RUN_DEPENDS-main=	${PKGNAME-content}:games/uqm,-content
-WANTLIB-main=		c m pthread z SDL mikmod>=2.4 vorbisidec>=1 \
+RUN_DEPENDS=		${PKGNAME-main}v0:games/uqm
+RUN_DEPENDS-content=
+RUN_DEPENDS-main=	${PKGNAME-content}v0:games/uqm,-content
+WANTLIB-main=		c m pthread z SDL mikmod>=2.4 vorbisidec>=3 \
 			SDL_image
 
 NO_REGRESS=	Yes

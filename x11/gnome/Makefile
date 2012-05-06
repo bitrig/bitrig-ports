@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.180 2012/04/17 13:15:30 jasper Exp $
+# $OpenBSD: Makefile,v 1.183 2012/05/01 07:39:43 jasper Exp $
 
      SUBDIR =
      SUBDIR += anjuta
@@ -6,6 +6,7 @@
      SUBDIR += at-spi2-atk
      SUBDIR += at-spi2-core
      SUBDIR += backgrounds
+     SUBDIR += banshee
      SUBDIR += baker
      SUBDIR += baobab
      SUBDIR += color-manager
@@ -33,6 +34,8 @@
      SUBDIR += gdlmm
      SUBDIR += gdm
      SUBDIR += gedit
+     SUBDIR += gedit-code-assistance
+     SUBDIR += gedit-cossa
      SUBDIR += gedit-latex
      SUBDIR += gedit-plugins
      SUBDIR += genius

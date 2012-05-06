@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2012/03/31 10:51:47 sthen Exp $
+# $OpenBSD: Makefile,v 1.29 2012/04/28 11:06:12 ajacoutot Exp $
 
 COMMENT=	multi-threaded routing daemon
 
@@ -8,6 +8,8 @@ SHARED_LIBS=	ospf		0.0 \
 		zebra		0.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.quagga.net/download/
+
+REVISION=	0
 
 HOMEPAGE=	http://www.quagga.net/
 
@@ -19,8 +21,8 @@ PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=	c curses m readline termcap
 
-STATEDIR?=	/var/quagga
-SUBST_VARS=	STATEDIR
+LOCALSTATEDIR=	${BASELOCALSTATEDIR}/quagga
+SUBST_VARS=	LOCALSTATEDIR
 
 BUILD_DEPENDS=	lang/gawk
 USE_GMAKE=	Yes
@@ -30,7 +32,6 @@ SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE= autoconf
 AUTOCONF_VERSION= 2.68
 CONFIGURE_ARGS+= --includedir=${LOCALBASE}/include/quagga \
-		--localstatedir=${STATEDIR} \
 		--enable-user=_quagga \
 		--enable-group=_quagga \
 		--enable-vty-group=_quagga \

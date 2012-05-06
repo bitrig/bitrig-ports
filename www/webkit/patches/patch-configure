@@ -1,4 +1,4 @@
-$OpenBSD: patch-configure,v 1.9 2012/04/03 15:41:07 landry Exp $
+$OpenBSD: patch-configure,v 1.10 2012/04/30 13:31:06 landry Exp $
 
 GNOME Bug 627126 - gsettings schema files don't get installed on FreeBSD
 glib commit 136e705e8383ff8848e425ac01278102d7badc52

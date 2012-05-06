@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1037 2012/04/23 15:44:56 okan Exp $
+# $OpenBSD: Makefile,v 1.1041 2012/05/04 09:37:35 stsp Exp $
 # $FreeBSD: Makefile,v 1.85 1997/11/20 05:22:14 asami Exp $
 
      SUBDIR =
@@ -9,11 +9,8 @@
      SUBDIR += alex
      SUBDIR += apache-ant
      SUBDIR += apr
-     SUBDIR += apr,mt
      SUBDIR += apr-util
      SUBDIR += apr-util,ldap
-     SUBDIR += apr-util,mt
-     SUBDIR += apr-util,mt,ldap
      SUBDIR += arduino
      SUBDIR += argp-standalone
      SUBDIR += argtable
@@ -176,6 +173,7 @@
      SUBDIR += hs-comonad
      SUBDIR += hs-comonad-transformers
      SUBDIR += hs-concurrent-extra
+     SUBDIR += hs-configurator
      SUBDIR += hs-contravariant
      SUBDIR += hs-control-timeout
      SUBDIR += hs-convertible
@@ -1094,7 +1092,6 @@
      SUBDIR += re2c
      SUBDIR += readline
      SUBDIR += remake
-     SUBDIR += rsvndump
      SUBDIR += ruby-abstract
      SUBDIR += ruby-actionpack
      SUBDIR += ruby-activemodel
@@ -1202,7 +1199,6 @@
      SUBDIR += stm32loader
      SUBDIR += stp
      SUBDIR += subversion
-     SUBDIR += subversion,gnome_keyring
      SUBDIR += svk
      SUBDIR += swig
      SUBDIR += t1lib

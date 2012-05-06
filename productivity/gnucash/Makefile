@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.46 2012/03/29 14:57:00 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.48 2012/04/30 14:54:55 ajacoutot Exp $
 
 SHARED_ONLY =	Yes
 
@@ -8,6 +8,8 @@ GNOME_PROJECT =	gnucash
 GNOME_VERSION =	2.4.10
 DOC_VERSION = 	2.2.0
 EXTRACT_SUFX =	.tar.bz2
+
+REVISION=	0
 
 SHARED_LIBS +=  gnc-qof              1.4      # 1.4
 SHARED_LIBS +=  gnc-core-utils       0.0      # unknown
@@ -69,6 +71,11 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	--disable-doxygen \
 			--disable-ofx
 MODGNOME_CPPFLAGS =	-I${X11BASE}/include
+# configure checks for pthread_mutex_init(3)
+MODGNOME_LDFLAGS =	-pthread
+
+# see patch-src_core-utils_gnc-path_c
+CFLAGS +=	-DGCONFDIR='\"/var/db\"'
 
 FAKE_FLAGS =	sysconfdir=${PREFIX}/share/examples/
 

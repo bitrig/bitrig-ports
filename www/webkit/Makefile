@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.64 2012/04/23 17:15:19 espie Exp $
+# $OpenBSD: Makefile,v 1.65 2012/04/30 13:31:06 landry Exp $
 
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
