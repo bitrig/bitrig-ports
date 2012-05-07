@@ -5,7 +5,7 @@ SHARED_LIBS +=  libclang                  0.0 # 3.0
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 
 LLVM_V =	3.0
-REVISION =	5
+REVISION =	6	
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 
