@@ -38,14 +38,18 @@ lib/python2.7/Tools/buildbot/README.tcltk-AMD64
 @comment lib/python2.7/Tools/buildbot/external-${MACHINE_ARCH}.bat
 @comment lib/python2.7/Tools/buildbot/test-${MACHINE_ARCH}.bat
 @comment lib/python2.7/Tools/buildbot/build-${MACHINE_ARCH}.bat
+@comment lib/python2.7/Tools/buildbot/clean-${MACHINE_ARCH}.bat
+@comment lib/python2.7/Tools/buildbot/external-${MACHINE_ARCH}.bat
+@comment lib/python2.7/Tools/buildbot/test-${MACHINE_ARCH}.bat
+lib/python2.7/Tools/buildbot/build-${MACHINE_ARCH}.bat
 @comment lib/python2.7/Tools/buildbot/build.bat
 @comment lib/python2.7/Tools/buildbot/buildmsi.bat
-@comment lib/python2.7/Tools/buildbot/clean-${MACHINE_ARCH}.bat
+lib/python2.7/Tools/buildbot/clean-${MACHINE_ARCH}.bat
 @comment lib/python2.7/Tools/buildbot/clean.bat
-@comment lib/python2.7/Tools/buildbot/external-${MACHINE_ARCH}.bat
+lib/python2.7/Tools/buildbot/external-${MACHINE_ARCH}.bat
 @comment lib/python2.7/Tools/buildbot/external-common.bat
 @comment lib/python2.7/Tools/buildbot/external.bat
-@comment lib/python2.7/Tools/buildbot/test-${MACHINE_ARCH}.bat
+lib/python2.7/Tools/buildbot/test-${MACHINE_ARCH}.bat
 @comment lib/python2.7/Tools/buildbot/test.bat
 lib/python2.7/Tools/ccbench/
 lib/python2.7/Tools/ccbench/ccbench.py

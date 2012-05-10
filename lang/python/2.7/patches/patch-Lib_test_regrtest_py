@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Lib/test/regrtest.py.orig	Wed May  9 10:08:50 2012
++++ Lib/test/regrtest.py	Wed May  9 10:08:50 2012
+@@ -1177,6 +1177,8 @@ _expectations = {
+         """,
+     'unixware7':
+         """
++        test_audioop
++        test_imageop
+         test_bsddb
+         test_bsddb185
+         test_dl

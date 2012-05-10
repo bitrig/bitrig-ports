@@ -136,7 +136,7 @@ MAKE_FLAGS+=	LD_LIBRARY_PATH=${WRKSRC} PATH="${WRKDIST}:${PORTPATH}"
 MAKE_FLAGS+=	LDFLAGS='-L${WRKSRC} -L${LOCALBASE}/lib/ -liconv -lintl'
 FAKE_FLAGS+=	RANLIB=:
 
-ALL_TARGET?=	everything ./Lib/plat-openbsd5
+ALL_TARGET?=	everything ./Lib/plat-bitrig0
 
 post-extract:
 	rm -r ${WRKDIST}/Modules/expat

@@ -1,6 +1,6 @@
 $OpenBSD: patch-setup_py,v 1.3 2012/02/27 19:30:46 rpointel Exp $
---- setup.py.orig	Sat Jun 11 17:46:28 2011
-+++ setup.py	Sun Feb 19 19:12:04 2012
+--- setup.py.orig	Mon Apr  9 18:07:36 2012
++++ setup.py	Wed May  9 09:56:17 2012
 @@ -23,6 +23,11 @@ COMPILED_WITH_PYDEBUG = hasattr(sys, 'gettotalrefcount
  # This global variable is used to hold the list of modules to be disabled.
  disabled_module_list = []
@@ -102,11 +102,13 @@ $OpenBSD: patch-setup_py,v 1.3 2012/02/27 19:30:46 rpointel Exp $
              data = open(f).read()
              m = re.search(r"#s*define\s+HASHVERSION\s+2\s*", data)
              if m is not None:
-@@ -1439,7 +1445,11 @@ class PyBuildExt(build_ext):
+@@ -1438,8 +1444,12 @@ class PyBuildExt(build_ext):
+             macros = dict()
              libraries = []
  
-         elif platform.startswith('openbsd'):
+-        elif platform.startswith('openbsd'):
 -            macros = dict()
++        elif platform.startswith('openbsd') or platform.startswith('bitrig'):
 +            macros = dict(                  # OpenBSD
 +                HAVE_SEM_OPEN=0,            # Not implemented
 +                HAVE_SEM_TIMEDWAIT=0,
@@ -119,7 +121,7 @@ $OpenBSD: patch-setup_py,v 1.3 2012/02/27 19:30:46 rpointel Exp $
                          'freebsd7', 'freebsd8')
              or platform.startswith("gnukfreebsd")):
              exts.append( Extension('ossaudiodev', ['ossaudiodev.c']) )
-+        if platform.startswith('openbsd'):
++        if platform.startswith('openbsd') or platform.startswith('bitrig'):
 +            exts.append( Extension('ossaudiodev', ['ossaudiodev.c'],
 +                                   libraries = ['ossaudio'],) )
          else:

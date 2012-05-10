@@ -1,7 +1,6 @@
 @comment $OpenBSD: PLIST-tkinter,v 1.1.1.1 2011/04/24 09:31:46 rpointel Exp $
 @option no-default-conflict
 @conflict python-tkinter->=2.7,<2.8
-lib/python2.7/lib-dynload/_tkinter.so
 lib/python2.7/lib-tk/
 lib/python2.7/lib-tk/Canvas.py
 lib/python2.7/lib-tk/Canvas.pyc

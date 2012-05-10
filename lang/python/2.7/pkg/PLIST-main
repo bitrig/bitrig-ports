@@ -453,10 +453,11 @@ lib/python2.7/distutils/command/upload.py
 lib/python2.7/distutils/command/upload.pyc
 lib/python2.7/distutils/command/upload.pyo
 @comment lib/python2.7/distutils/command/wininst-9.0-${MACHINE_ARCH}.exe
+@comment lib/python2.7/distutils/command/wininst-9.0-${MACHINE_ARCH}.exe
 @comment lib/python2.7/distutils/command/wininst-6.0.exe
 @comment lib/python2.7/distutils/command/wininst-7.1.exe
 @comment lib/python2.7/distutils/command/wininst-8.0.exe
-@comment lib/python2.7/distutils/command/wininst-9.0-${MACHINE_ARCH}.exe
+lib/python2.7/distutils/command/wininst-9.0-${MACHINE_ARCH}.exe
 @comment lib/python2.7/distutils/command/wininst-9.0.exe
 lib/python2.7/distutils/config.py
 lib/python2.7/distutils/config.pyc
@@ -1817,11 +1818,11 @@ lib/python2.7/pipes.pyo
 lib/python2.7/pkgutil.py
 lib/python2.7/pkgutil.pyc
 lib/python2.7/pkgutil.pyo
-lib/python2.7/plat-openbsd5/
-lib/python2.7/plat-openbsd5/IN.py
-lib/python2.7/plat-openbsd5/IN.pyc
-lib/python2.7/plat-openbsd5/IN.pyo
-lib/python2.7/plat-openbsd5/regen
+lib/python2.7/plat-bitrig0/
+lib/python2.7/plat-bitrig0/IN.py
+lib/python2.7/plat-bitrig0/IN.pyc
+lib/python2.7/plat-bitrig0/IN.pyo
+lib/python2.7/plat-bitrig0/regen
 lib/python2.7/platform.py
 lib/python2.7/platform.pyc
 lib/python2.7/platform.pyo
