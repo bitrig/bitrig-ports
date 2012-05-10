@@ -428,6 +428,7 @@ share/cmake/Modules/Platform/AIX-XL.cmake
 share/cmake/Modules/Platform/AIX.cmake
 share/cmake/Modules/Platform/BSDOS.cmake
 share/cmake/Modules/Platform/BeOS.cmake
+share/cmake/Modules/Platform/Bitrig.cmake
 share/cmake/Modules/Platform/BlueGeneL.cmake
 share/cmake/Modules/Platform/BlueGeneP-base.cmake
 share/cmake/Modules/Platform/BlueGeneP-dynamic-GNU-C.cmake

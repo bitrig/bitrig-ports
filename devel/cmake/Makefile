@@ -7,7 +7,7 @@ HOMEPAGE =	http://www.cmake.org/
 CATEGORIES =	devel
 COMMENT =	portable build system
 DISTNAME =	cmake-2.8.8
-REVISION =	0
+REVISION =	1
 MASTER_SITES =	${HOMEPAGE}files/v2.8/
 
 MAINTAINER =	David Coppa <dcoppa@openbsd.org>
@@ -25,10 +25,6 @@ LIB_DEPENDS =		archivers/libarchive \
 			net/curl
 
 CONFIGURE_STYLE =	simple
-CONFIGURE_ARGS =	--prefix=${PREFIX} \
-			--datadir=/share/cmake \
-			--docdir=/share/doc/cmake \
-			--system-libs
 
 PORTHOME =		${WRKDIR}
 
@@ -41,6 +37,7 @@ MAKE_FLAGS +=		VERBOSE=1
 
 pre-configure:
 	@cp ${FILESDIR}/*.cmake ${WRKSRC}/Modules/
+	@cp ${FILESDIR}/Platform/*.cmake ${WRKSRC}/Modules/Platform
 	${SUBST_CMD} ${WRKSRC}/Modules/CMakeDetermineJavaCompiler.cmake \
 		${WRKSRC}/Modules/FindJNI.cmake \
 		${WRKSRC}/Modules/FindJava.cmake \
@@ -58,3 +55,8 @@ post-install:
 	@rm ${WRKINST}/${LOCALBASE}/share/cmake/Modules/Platform/*.orig
 
 .include <bsd.port.mk>
+
+CONFIGURE_ARGS =	--prefix=${PREFIX} \
+			--datadir=/share/cmake \
+			--docdir=/share/doc/cmake \
+			--system-libs
