@@ -1,0 +1,13 @@
+$OpenBSD$
+--- binutils/gas/configure.orig	Wed May  9 16:39:45 2012
++++ binutils/gas/configure	Wed May  9 16:41:29 2012
+@@ -4310,7 +4310,8 @@ for this_target in $target $canon_targets ; do
+ 			    x86_64)	fmt=elf em=nbsd ;;
+ 			    *)		fmt=aout em=nbsd ;;
+ 			esac ;;
+-      i386-*-openbsd*)			em=obsd bfd_gas=yes
++      i386-*-openbsd*|i386-*-bitrig*)
++					em=obsd bfd_gas=yes
+ 			case ${cpu} in
+ 			    x86_64)	fmt=elf ;;
+ 			    *) case ${os} in
