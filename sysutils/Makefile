@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.254 2012/04/12 14:56:09 sthen Exp $
+# $OpenBSD: Makefile,v 1.256 2012/05/09 15:26:49 jasper Exp $
 # $FreeBSD: Makefile,v 1.26 1997/11/20 08:58:51 tg Exp $
 
      SUBDIR =
@@ -88,6 +88,7 @@
      SUBDIR += login_oath
      SUBDIR += logpp
      SUBDIR += logstalgia
+     SUBDIR += logtail
      SUBDIR += lsof
      SUBDIR += luastatgrab
      SUBDIR += mac-robber
@@ -104,6 +105,7 @@
      SUBDIR += ndesk-dbus
      SUBDIR += ndesk-dbus-glib
      SUBDIR += notification-daemon
+     SUBDIR += node-syslog
      SUBDIR += ns4
      SUBDIR += nut
      SUBDIR += openpoppassd

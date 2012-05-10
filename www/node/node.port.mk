@@ -1,11 +1,11 @@
-# $OpenBSD: node.port.mk,v 1.2 2012/04/04 05:48:15 ajacoutot Exp $
+# $OpenBSD: node.port.mk,v 1.6 2012/05/10 08:39:47 jasper Exp $
 
 # node module
 
 CATEGORIES +=	www/node
 
-BUILD_DEPENDS +=	www/node
-RUN_DEPENDS += 		www/node
+BUILD_DEPENDS +=	www/node>=0.6.17p2
+RUN_DEPENDS += 		www/node>=0.6.17p2
 
 .if ${CONFIGURE_STYLE:L:Mnpm}
 .  if ${CONFIGURE_STYLE:L:Mext}
@@ -32,18 +32,18 @@ PKG_ARCH ?=	*
 DISTNAME ?=	${NPM_NAME}-${NPM_VERSION}
 MASTER_SITES ?=	${MASTER_SITE_NPM}${NPM_NAME}/-/
 EXTRACT_SUFX ?=	.tgz
-PKGNAME ?=	node-${DISTNAME}
+PKGNAME ?=	node-${DISTNAME:S/^node-//}
 
 MODNODE_BIN_NPM =	${LOCALBASE}/bin/npm
 NPM_INSTALL_FILE =	${WRKDIR}/${DISTNAME}.tgz
 NPM_TAR_DIR =		package
 WRKDIST =		${WRKDIR}/${NPM_TAR_DIR}
 
-NO_REGRESS ?= Yes
+REGRESS_TARGET ?=	test
 
 # List of npm package names to depend on.  Only necessary
 # if the current port depends on other node ports.
-MODNODE_DEPENDS ?=		
+MODNODE_DEPENDS ?=
 
 # Link all dependencies first so that npm will install without complaining.
 # Then rebuild the distfile, since it may contain local patches.
@@ -74,11 +74,11 @@ MODNODE_INSTALL_TARGET = \
 	fi;
 
 .  if !target(do-build)
-do-build: 
+do-build:
 	${MODNODE_BUILD_TARGET}
 .  endif
 .  if !target(do-install)
-do-install: 
+do-install:
 	${MODNODE_INSTALL_TARGET}
 .  endif
 .endif

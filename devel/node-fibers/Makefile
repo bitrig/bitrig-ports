@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2012/04/04 05:48:15 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.5 2012/05/10 08:41:39 jasper Exp $
 
 # Currently node itself is only for amd64 and i386, but
 # the coroutine library this uses only works on amd64
@@ -11,6 +11,8 @@ COMMENT =	fiber/coroutine support for nodejs
 NPM_VERSION =	0.6.4
 NPM_NAME =	fibers
 CATEGORIES =	devel
+
+REVISION =	1
 
 MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
@@ -27,6 +29,8 @@ MODULES =		www/node
 CONFIGURE_STYLE =	npm ext
 USE_GMAKE =		Yes
 SUBST_VARS =		CFLAGS
+
+REGRESS_TARGET =	test
 
 pre-configure:
 	${SUBST_CMD} ${WRKDIST}/src/platform.mk

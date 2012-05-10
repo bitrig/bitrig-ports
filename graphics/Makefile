@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.318 2012/04/04 03:39:42 bentley Exp $
+# $OpenBSD: Makefile,v 1.322 2012/05/09 12:43:19 pascal Exp $
 # $FreeBSD: Makefile,v 1.55 1997/11/03 12:12:27 tg Exp $
 #
 
@@ -7,9 +7,7 @@
      SUBDIR += GraphicsMagick
      SUBDIR += GraphicsMagick,no_x11
      SUBDIR += ImageMagick
-     SUBDIR += ImageMagick,no_x11
      SUBDIR += aalib
-     SUBDIR += aalib,no_x11
      SUBDIR += agg
      SUBDIR += allegropng
      SUBDIR += amide
@@ -44,8 +42,7 @@
      SUBDIR += djview4
      SUBDIR += djvulibre
      SUBDIR += djvulibre,no_x11
-# XXX requires ImageMagick-*-!no_x11 which conflicts in bulk
-#    SUBDIR += dmtx-utils
+     SUBDIR += dmtx-utils
      SUBDIR += dpic
      SUBDIR += dumpmpeg
      SUBDIR += dvdrip
@@ -166,6 +163,7 @@
      SUBDIR += openexr
      SUBDIR += openexr-ctl
      SUBDIR += openexr-viewers
+     SUBDIR += openimageio
      SUBDIR += openjpeg
      SUBDIR += p5-Cairo
      SUBDIR += p5-Captcha-reCAPTCHA

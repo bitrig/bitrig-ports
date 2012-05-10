@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.210 2012/04/22 20:40:28 sthen Exp $
+# $OpenBSD: Makefile,v 1.212 2012/05/10 10:46:54 jasper Exp $
 # $FreeBSD: Makefile,v 1.24 1997/10/04 23:32:05 andreas Exp $
 #
      SUBDIR =
@@ -36,6 +36,7 @@
      SUBDIR += mysqlcc
      SUBDIR += mytop
      SUBDIR += node-pg
+     SUBDIR += node-sqlite3
      SUBDIR += ocaml-postgresql
      SUBDIR += ocaml-sqlite3
      SUBDIR += openldap
@@ -134,6 +135,7 @@
      SUBDIR += pgtcl
      SUBDIR += pgworksheet
      SUBDIR += pkglocatedb
+     SUBDIR += pkglocatedb,src
      SUBDIR += postgresql
      SUBDIR += postgresql-jdbc
      SUBDIR += postgresql-odbc
