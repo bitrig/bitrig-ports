@@ -8,7 +8,7 @@ $OpenBSD: patch-Makefile_in,v 1.3 2012/01/01 21:05:33 schwarze Exp $
 # to the sub-makes called in src/libs/gnulib where those variables
 # have different values created by the sub-configure there.
 --- Makefile.in.orig	Fri Dec 31 01:33:08 2010
-+++ Makefile.in	Wed Mar  7 10:17:14 2012
++++ Makefile.in	Tue May  8 13:12:38 2012
 @@ -247,15 +247,15 @@ manroot=$(mandir)
  
  # `man1ext' is the man section for user commands.
@@ -70,7 +70,7 @@ $OpenBSD: patch-Makefile_in,v 1.3 2012/01/01 21:05:33 schwarze Exp $
  	all) \
  	cd $@; \
 -	test -f Makefile || $(SHELL) $$srcdir/configure ; \
-+	test -f Makefile || $(SHELL) $$srcdir/configure CC=${CC} CXX=${CXX} ; \
++	test -f Makefile || $(SHELL) $$srcdir/configure CC=${CC} CXX=${CXX} --build=amd64-unknown-openbsd ; \
  	$(MAKE) ACLOCAL=: AUTOCONF=: AUTOHEADER=: AUTOMAKE=: $(do) ;; \
  	esac
  
