@@ -1,0 +1,21 @@
+$OpenBSD$
+--- unix/configure.orig	Tue May  8 13:34:20 2012
++++ unix/configure	Tue May  8 13:34:54 2012
+@@ -5761,7 +5761,7 @@ fi
+ 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
+ 	    TCL_LIB_VERSIONS_OK=nodots
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-* | Bitrig-*)
+ 	    arch=`arch -s`
+ 	    case "$arch" in
+ 	    m88k|vax)
+@@ -7083,7 +7083,7 @@ fi
+ 	    BSD/OS*) ;;
+ 	    CYGWIN_*) ;;
+ 	    IRIX*) ;;
+-	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
+ 	    Darwin-*) ;;
+ 	    SCO_SV-3.2*) ;;
+ 	    *) SHLIB_CFLAGS="-fPIC" ;;
