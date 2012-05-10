@@ -1,0 +1,21 @@
+$OpenBSD$
+--- unix/tcl.m4.orig	Tue May  8 13:29:31 2012
++++ unix/tcl.m4	Tue May  8 13:30:01 2012
+@@ -1498,7 +1498,7 @@ AC_DEFUN([SC_CONFIG_CFLAGS], [
+ 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
+ 	    TCL_LIB_VERSIONS_OK=nodots
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-* | Bitrig-*)
+ 	    arch=`arch -s`
+ 	    case "$arch" in
+ 	    m88k|vax)
+@@ -2068,7 +2068,7 @@ dnl # preprocessing tests use only CPPFLAGS.
+ 	    BSD/OS*) ;;
+ 	    CYGWIN_*) ;;
+ 	    IRIX*) ;;
+-	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
+ 	    Darwin-*) ;;
+ 	    SCO_SV-3.2*) ;;
+ 	    *) SHLIB_CFLAGS="-fPIC" ;;
