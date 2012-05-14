@@ -1,16 +1,29 @@
 $OpenBSD: patch-libgcc_config_host,v 1.2 2011/11/14 22:37:23 pascal Exp $
---- libgcc/config.host.orig	Mon Mar 14 06:06:23 2011
-+++ libgcc/config.host	Mon Nov 14 13:27:23 2011
-@@ -297,6 +297,8 @@ i[34567]86-*-openbsd2.*|i[34567]86-*openbsd3.[0123])
+--- libgcc/config.host.orig	Mon Mar 14 01:06:23 2011
++++ libgcc/config.host	Mon May 14 09:54:51 2012
+@@ -166,6 +166,8 @@ case ${host} in
+   ;;
+ *-*-openbsd*)
+   ;;
++*-*-bitrig*)
++  ;;
+ *-*-rtems*)
+   ;;
+ *-*-vxworks*)
+@@ -297,6 +299,12 @@ i[34567]86-*-openbsd2.*|i[34567]86-*openbsd3.[0123])
  	;;
  i[34567]86-*-openbsd*)
  	;;
++i[34567]86-*-bitrig*)
++	;;
 +x86_64-*-openbsd*)
++	;;
++x86_64-*-bitrig*)
 +	;;
  i[34567]86-*-linux* | i[34567]86-*-kfreebsd*-gnu | i[34567]86-*-knetbsd*-gnu | i[34567]86-*-gnu*)
  	extra_parts="$extra_parts crtprec32.o crtprec64.o crtprec80.o crtfastmath.o"
  	tmake_file="${tmake_file} i386/t-crtpc i386/t-crtfm"
-@@ -467,6 +469,8 @@ powerpc-*-freebsd*)
+@@ -467,6 +475,8 @@ powerpc-*-freebsd*)
  	tmake_file="${tmake_file} rs6000/t-ppccomm rs6000/t-freebsd t-softfp"
  	;;
  powerpc-*-netbsd*)
