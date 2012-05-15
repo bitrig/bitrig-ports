@@ -1,0 +1,21 @@
+$OpenBSD$
+--- configure.ac.orig	Tue May 15 12:06:47 2012
++++ configure.ac	Tue May 15 12:07:27 2012
+@@ -91,7 +91,7 @@ dnl Requires AC_CANONICAL_HOST.
+ dnl List of signals that are sent when an invalid virtual memory address
+ dnl is accessed, or when the stack overflows.
+ case "$host_os" in
+-  sunos4* | freebsd* | dragonfly* | openbsd* | netbsd* | kfreebsd* | knetbsd*)
++  sunos4* | freebsd* | dragonfly* | openbsd* | netbsd* | kfreebsd* | knetbsd* | bitrig*)
+     CFG_SIGNALS=signals-bsd.h ;;
+   hpux*)
+     CFG_SIGNALS=signals-hpux.h ;;
+@@ -320,7 +320,7 @@ if test -z "$CFG_FAULT" && test "$sv_cv_fault_bsd" = y
+ fi
+ if test -z "$CFG_FAULT" && test "$sv_cv_fault_posix" = yes; then
+   case "$host_os" in
+-    openbsd*)
++    openbsd* | bitrig*)
+       case "$host_cpu" in
+         i?86 | x86_64) CFG_FAULT=fault-openbsd-i386.h ;;
+         *) CFG_FAULT=fault-openbsd.h ;;
