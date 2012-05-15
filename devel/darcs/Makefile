@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.45 2012/05/09 21:00:20 kili Exp $
+# $OpenBSD: Makefile,v 1.47 2012/05/13 21:27:38 kili Exp $
 
 COMMENT =		advanced revision control system written in Haskell
 
 DISTNAME =		darcs-2.8.0
+REVISION =		0
 
 CATEGORIES =		devel
 HOMEPAGE =		http://www.darcs.net/
@@ -10,7 +11,7 @@ HOMEPAGE =		http://www.darcs.net/
 WANTLIB =		c curl>=2 gmp m ncursesw pthread util z
 MODULES =		lang/ghc converters/libiconv
 MODGHC_BUILD =		cabal hackage nort
-MODGHC_SETUP_CONF_ARGS =-f '-library test'
+MODGHC_SETUP_CONF_ARGS =-f 'curl -http -library test'
 LIB_DEPENDS =		devel/gmp \
 			net/curl
 
@@ -29,6 +30,7 @@ BUILD_DEPENDS =		archivers/hs-zlib>=0.5.1.0,<0.6.0.0 \
 			devel/hs-text>=0.11.0.6,<0.12.0.0 \
 			devel/hs-vector>=0.7 \
 			www/hs-html>=1.0,<1.1 \
+			print/texlive/texmf,-full \
  			textproc/latex2html \
 			${RUN_DEPENDS}
 

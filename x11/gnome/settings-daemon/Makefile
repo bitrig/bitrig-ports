@@ -1,12 +1,11 @@
-# $OpenBSD: Makefile,v 1.73 2012/04/28 10:52:09 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.75 2012/05/15 14:21:55 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	GNOME settings daemon
 
 GNOME_PROJECT=	gnome-settings-daemon
-GNOME_VERSION=	3.4.1
-REVISION=	0
+GNOME_VERSION=	3.4.2
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
@@ -35,7 +34,7 @@ LIB_DEPENDS=	devel/libnotify>=0.7.2 \
 		x11/gnome/libgnomekbd \
 		security/nss \
 		print/cups \
-		audio/pulseaudio \
+		audio/pulseaudio>=2.0 \
 		audio/libcanberra,-gtk3 \
 		sysutils/upower \
 		graphics/colord
@@ -55,7 +54,7 @@ MODGNOME_ICON_CACHE=	Yes
 LIBTOOL_FLAGS=	--tag=disable-static
 
 MODGNOME_CPPFLAGS=	-I${X11BASE}/include
-MODGNOME_LDFLAGS=	-L${X11BASE}/lib
+MODGNOME_LDFLAGS=	-L${X11BASE}/lib -Wl,-rpath,${LOCALBASE}/lib/pulseaudio
 
 CONFIGURE_ARGS=	--disable-static \
 		--disable-packagekit \

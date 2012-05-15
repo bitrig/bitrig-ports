@@ -1,6 +1,6 @@
-@comment $OpenBSD: PLIST,v 1.2 2010/05/06 20:57:35 jasper Exp $
-lib/lua/5.1/lpeg.so
-share/doc/lpeg/
-share/doc/lpeg/lpeg.html
-share/doc/lpeg/re.html
-share/lua/5.1/re.lua
+@comment $OpenBSD: PLIST,v 1.4 2012/05/15 15:16:29 jasper Exp $
+lib/lua/${MODLUA_VERSION}/lpeg.so
+share/doc/${FULLPKGNAME}/
+share/doc/${FULLPKGNAME}/lpeg.html
+share/doc/${FULLPKGNAME}/re.html
+share/lua/${MODLUA_VERSION}/re.lua
