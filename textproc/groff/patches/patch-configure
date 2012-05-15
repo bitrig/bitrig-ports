@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.orig	Tue May 15 12:30:09 2012
++++ configure	Tue May 15 12:30:23 2012
+@@ -4462,7 +4462,7 @@ A a;
+ 
+ int main()
+ {
+-  return 1;
++  return 0;
+ }
+ 
+ 
