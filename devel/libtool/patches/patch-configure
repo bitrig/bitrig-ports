@@ -1,5 +1,5 @@
---- configure.orig	Sun May 13 04:45:36 2012
-+++ configure	Sun May 13 04:48:12 2012
+--- configure.orig	Mon Oct 17 05:18:58 2011
++++ configure	Tue May 15 12:41:28 2012
 @@ -5335,7 +5335,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -9,6 +9,15 @@
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -5773,7 +5773,7 @@ freebsd* | dragonfly*)
+     i*86 )
+       # Not sure whether the presence of OpenBSD here was a mistake.
+       # Let's accept both of them until this is cleared up.
+-      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
++      lt_cv_deplibs_check_method='file_magic (Bitrig|FreeBSD|OpenBSD|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
+       lt_cv_file_magic_cmd=/usr/bin/file
+       lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
+       ;;
 @@ -5847,7 +5847,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;

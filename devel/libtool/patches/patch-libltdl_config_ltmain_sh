@@ -1,6 +1,6 @@
 $OpenBSD: patch-libltdl_config_ltmain_sh,v 1.2 2011/11/01 16:07:31 jasper Exp $
---- libltdl/config/ltmain.sh.orig	Mon Oct 17 06:19:35 2011
-+++ libltdl/config/ltmain.sh	Sat Oct 29 07:05:47 2011
+--- libltdl/config/ltmain.sh.orig	Mon Oct 17 05:19:35 2011
++++ libltdl/config/ltmain.sh	Tue May 15 12:44:11 2012
 @@ -2714,51 +2714,6 @@ func_mode_finish ()
      # Exit here if they wanted silent mode.
      $opt_silent && exit $EXIT_SUCCESS
@@ -99,6 +99,24 @@ $OpenBSD: patch-libltdl_config_ltmain_sh,v 1.2 2011/11/01 16:07:31 jasper Exp $
  	fi
  	exit $EXIT_SUCCESS
  	;;
+@@ -5609,7 +5568,7 @@ func_mode_link ()
+ 	    # These systems don't actually have a C library (as such)
+ 	    test "X$arg" = "X-lc" && continue
+ 	    ;;
+-	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
++	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-bitrig*)
+ 	    # Do not include libc due to us having libc/libc_r.
+ 	    test "X$arg" = "X-lc" && continue
+ 	    ;;
+@@ -5629,7 +5588,7 @@ func_mode_link ()
+ 	  esac
+ 	elif test "X$arg" = "X-lc_r"; then
+ 	 case $host in
+-	 *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
++	 *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-bitrig*)
+ 	   # Do not include libc_r directly, use -pthread flag.
+ 	   continue
+ 	   ;;
 @@ -5660,6 +5619,7 @@ func_mode_link ()
  	func_append compiler_flags " $arg"
  	func_append compile_command " $arg"
@@ -145,3 +163,12 @@ $OpenBSD: patch-libltdl_config_ltmain_sh,v 1.2 2011/11/01 16:07:31 jasper Exp $
  	fi
  
  	# Check to see if the archive will have undefined symbols.
+@@ -7630,7 +7605,7 @@ func_mode_link ()
+ 	  *-*-netbsd*)
+ 	    # Don't link with libc until the a.out ld.so is fixed.
+ 	    ;;
+-	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
++	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-bitrig*)
+ 	    # Do not include libc due to us having libc/libc_r.
+ 	    ;;
+ 	  *-*-sco3.2v5* | *-*-sco5v6*)
