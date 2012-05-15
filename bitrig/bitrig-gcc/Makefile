@@ -51,7 +51,7 @@ DESCR-gcclibs =	${PORTSDIR}/bitrig/bitrig-gcc/pkg/DESCR-gcclibs
 HOMEPAGE =	http://gcc.gnu.org/
 
 #DIST_SUBDIR=gcc
-CONFIG=${MACHINE_ARCH}-unknown-openbsd${OSREV}
+CONFIG=${MACHINE_ARCH}-unknown-bitrig${OSREV}
 SUBST_VARS+=CONFIG V
 
 USE_LIBTOOL =	Yes
@@ -155,7 +155,7 @@ LIB_DEPENDS +=		devel/gmp>=4.2 \
 LIB_DEPENDS-gcclibs =
 
 .if ${MACHINE_ARCH:Mamd64}
-CONFIG = x86_64-unknown-openbsd${OSREV}
+CONFIG = x86_64-unknown-bitrig${OSREV}
 .endif
 
 WRKDIST=	${WRKDIR}/${REALDISTNAME}
