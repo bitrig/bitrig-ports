@@ -25,9 +25,9 @@ LIB_DEPENDS =		archivers/libarchive \
 			net/curl
 
 CONFIGURE_STYLE =	simple
-CONFIGURE_ARGS =	--prefix=${PREFIX} \                                                                                                                   
-			--datadir=/share/cmake \                                                                                                               
-			--docdir=/share/doc/cmake \                                                                                                            
+CONFIGURE_ARGS =	--prefix=${PREFIX} \
+			--datadir=/share/cmake \
+			--docdir=/share/doc/cmake \
 			--system-libs
  
 PORTHOME =		${WRKDIR}
