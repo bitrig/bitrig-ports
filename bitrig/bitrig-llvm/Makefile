@@ -5,7 +5,7 @@ SHARED_LIBS +=  libclang                  0.0 # 3.0
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 
 LLVM_V =	3.0
-REVISION =	6	
+REVISION =	7
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 
@@ -48,7 +48,7 @@ REGRESS_FLAGS =	RUNTESTFLAGS=
 SEPARATE_BUILD =	simple
 USE_LIBTOOL =		Yes
 # uncomment if you want to use MAKE_JOBS
-USE_GMAKE =		Yes
+#USE_GMAKE =		Yes
 MAKE_ENV =		REQUIRES_RTTI=1
 
 PREFIX=			/usr
