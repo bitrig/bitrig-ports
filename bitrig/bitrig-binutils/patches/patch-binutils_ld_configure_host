@@ -1,12 +1,12 @@
 $OpenBSD$
---- binutils/ld/configure.host.orig	Wed May  9 16:36:06 2012
-+++ binutils/ld/configure.host	Wed May  9 16:36:42 2012
+--- binutils/ld/configure.host.orig	Wed Feb 29 22:05:13 2012
++++ binutils/ld/configure.host	Fri May 18 10:08:17 2012
 @@ -67,7 +67,7 @@ case "${host}" in
    fi
    ;;
  
 -*-*-openbsd*)
-+*-*-openbsd*|*-*-bitrig*)
++*-*-openbsd* | *-*-bitrig*)
    HOSTING_CRT0=/usr/lib/crt0.o
    ;;
  
@@ -15,7 +15,7 @@ $OpenBSD$
    ;;
  
 -*-*-openbsd*)
-+*-*-openbsd*|*-*-bitrig*)
++*-*-openbsd* | *-*-bitrig*)
    ;;
  
  alpha*-*-*)
