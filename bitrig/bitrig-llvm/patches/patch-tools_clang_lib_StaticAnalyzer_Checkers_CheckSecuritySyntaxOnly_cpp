@@ -1,0 +1,11 @@
+$OpenBSD$
+--- tools/clang/lib/StaticAnalyzer/Checkers/CheckSecuritySyntaxOnly.cpp.orig	Fri May 18 13:11:17 2012
++++ tools/clang/lib/StaticAnalyzer/Checkers/CheckSecuritySyntaxOnly.cpp	Fri May 18 13:11:40 2012
+@@ -29,6 +29,7 @@ static bool isArc4RandomAvailable(const ASTContext &Ct
+   return T.getVendor() == llvm::Triple::Apple ||
+          T.getOS() == llvm::Triple::FreeBSD ||
+          T.getOS() == llvm::Triple::NetBSD ||
++         T.getOS() == llvm::Triple::Bitrig ||
+          T.getOS() == llvm::Triple::OpenBSD ||
+          T.getOS() == llvm::Triple::DragonFly;
+ }

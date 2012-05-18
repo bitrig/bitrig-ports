@@ -1,0 +1,70 @@
+$OpenBSD$
+--- tools/clang/lib/Driver/HostInfo.cpp.orig	Fri May 18 13:01:19 2012
++++ tools/clang/lib/Driver/HostInfo.cpp	Fri May 18 13:02:07 2012
+@@ -216,6 +216,53 @@ ToolChain *UnknownHostInfo::CreateToolChain(const ArgL
+   return TC;
+ }
+ 
++// Bitrig Host Info
++
++/// BitrigHostInfo -  Bitrig host information implementation.
++class BitrigHostInfo : public HostInfo {
++  /// Cache of tool chains we have created.
++  mutable llvm::StringMap<ToolChain*> ToolChains;
++
++public:
++  BitrigHostInfo(const Driver &D, const llvm::Triple& Triple)
++    : HostInfo(D, Triple) {}
++  ~BitrigHostInfo();
++
++  virtual bool useDriverDriver() const;
++
++  virtual ToolChain *CreateToolChain(const ArgList &Args,
++                                     const char *ArchName) const;
++};
++
++BitrigHostInfo::~BitrigHostInfo() {
++  for (llvm::StringMap<ToolChain*>::iterator
++         it = ToolChains.begin(), ie = ToolChains.end(); it != ie; ++it)
++    delete it->second;
++}
++
++bool BitrigHostInfo::useDriverDriver() const {
++  return false;
++}
++
++ToolChain *BitrigHostInfo::CreateToolChain(const ArgList &Args,
++                                            const char *ArchName) const {
++  assert(!ArchName &&
++         "Unexpected arch name on platform without driver driver support.");
++
++  std::string Arch = getArchName();
++  ArchName = Arch.c_str();
++
++  ToolChain *&TC = ToolChains[ArchName];
++  if (!TC) {
++    llvm::Triple TCTriple(getTriple());
++    TCTriple.setArchName(ArchName);
++
++    TC = new toolchains::Bitrig(*this, TCTriple);
++  }
++
++  return TC;
++}
++
+ // OpenBSD Host Info
+ 
+ /// OpenBSDHostInfo -  OpenBSD host information implementation.
+@@ -668,6 +715,12 @@ const HostInfo *
+ clang::driver::createDarwinHostInfo(const Driver &D,
+                                     const llvm::Triple& Triple){
+   return new DarwinHostInfo(D, Triple);
++}
++
++const HostInfo *
++clang::driver::createBitrigHostInfo(const Driver &D,
++                                     const llvm::Triple& Triple) {
++  return new BitrigHostInfo(D, Triple);
+ }
+ 
+ const HostInfo *

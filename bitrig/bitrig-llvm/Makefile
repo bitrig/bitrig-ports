@@ -48,7 +48,7 @@ REGRESS_FLAGS =	RUNTESTFLAGS=
 SEPARATE_BUILD =	simple
 USE_LIBTOOL =		Yes
 # uncomment if you want to use MAKE_JOBS
-#USE_GMAKE =		Yes
+USE_GMAKE =		Yes
 MAKE_ENV =		REQUIRES_RTTI=1
 
 PREFIX=			/usr

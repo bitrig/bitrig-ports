@@ -1,0 +1,21 @@
+$OpenBSD$
+--- lib/Support/Unix/Path.inc.orig	Fri Jul 29 13:26:59 2011
++++ lib/Support/Unix/Path.inc	Fri May 18 13:39:03 2012
+@@ -261,7 +261,7 @@ Path::GetCurrentDirectory() {
+ }
+ 
+ #if defined(__FreeBSD__) || defined (__NetBSD__) || \
+-    defined(__OpenBSD__) || defined(__minix)
++    defined(__OpenBSD__) || defined(__minix) || defined(__Bitrig__)
+ static int
+ test_dir(char buf[PATH_MAX], char ret[PATH_MAX],
+     const char *dir, const char *bin)
+@@ -330,7 +330,7 @@ Path Path::GetMainExecutable(const char *argv0, void *
+       return Path(link_path);
+   }
+ #elif defined(__FreeBSD__) || defined (__NetBSD__) || \
+-      defined(__OpenBSD__) || defined(__minix)
++      defined(__OpenBSD__) || defined(__minix) || defined(__Bitrig__)
+   char exe_path[PATH_MAX];
+ 
+   if (getprogpath(exe_path, argv0) != NULL)

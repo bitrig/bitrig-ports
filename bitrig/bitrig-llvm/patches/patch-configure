@@ -1,0 +1,68 @@
+$OpenBSD$
+--- configure.orig	Sat Oct 15 21:52:56 2011
++++ configure	Fri May 18 10:35:12 2012
+@@ -3532,6 +3532,11 @@ else
+     llvm_cv_no_link_all_option="-Wl,--no-whole-archive"
+     llvm_cv_os_type="FreeBSD"
+     llvm_cv_platform_type="Unix" ;;
++  *-*-bitrig*)
++    llvm_cv_link_all_option="-Wl,--whole-archive"
++    llvm_cv_no_link_all_option="-Wl,--no-whole-archive"
++    llvm_cv_os_type="Bitrig"
++    llvm_cv_platform_type="Unix" ;;
+   *-*-openbsd*)
+     llvm_cv_link_all_option="-Wl,--whole-archive"
+     llvm_cv_no_link_all_option="-Wl,--no-whole-archive"
+@@ -3625,6 +3630,8 @@ else
+     llvm_cv_target_os_type="Minix" ;;
+   *-*-freebsd*)
+     llvm_cv_target_os_type="FreeBSD" ;;
++  *-*-bitrig*)
++    llvm_cv_target_os_type="Bitrig" ;;
+   *-*-openbsd*)
+     llvm_cv_target_os_type="OpenBSD" ;;
+   *-*-netbsd*)
+@@ -8759,7 +8766,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -10085,7 +10092,7 @@ else
+   netbsd*)
+     libltdl_cv_sys_dlopen_deplibs=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     libltdl_cv_sys_dlopen_deplibs=yes
+     ;;
+   osf[1234]*)
+@@ -11955,13 +11962,13 @@ fi
+ 
+ if test "$ENABLE_THREADS" -eq 1 && test "$ENABLE_PTHREADS" -eq 1 ; then
+ 
+-{ echo "$as_me:$LINENO: checking for pthread_mutex_init in -lpthread" >&5
+-echo $ECHO_N "checking for pthread_mutex_init in -lpthread... $ECHO_C" >&6; }
++{ echo "$as_me:$LINENO: checking for pthread_mutex_init in -pthread" >&5
++echo $ECHO_N "checking for pthread_mutex_init in -pthread... $ECHO_C" >&6; }
+ if test "${ac_cv_lib_pthread_pthread_mutex_init+set}" = set; then
+   echo $ECHO_N "(cached) $ECHO_C" >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lpthread  $LIBS"
++LIBS="-pthread  $LIBS"
+ cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */
+ _ACEOF
+@@ -12021,7 +12028,7 @@ if test $ac_cv_lib_pthread_pthread_mutex_init = yes; t
+ #define HAVE_LIBPTHREAD 1
+ _ACEOF
+ 
+-  LIBS="-lpthread $LIBS"
++  LIBS="-pthread $LIBS"
+ 
+ fi
+ 

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- tools/clang/include/clang/Driver/HostInfo.h.orig	Fri May 18 13:30:04 2012
++++ tools/clang/include/clang/Driver/HostInfo.h	Fri May 18 13:30:19 2012
+@@ -67,6 +67,8 @@ const HostInfo *createAuroraUXHostInfo(const Driver &D
+                                        const llvm::Triple& Triple);
+ const HostInfo *createDarwinHostInfo(const Driver &D,
+                                      const llvm::Triple& Triple);
++const HostInfo *createBitrigHostInfo(const Driver &D,
++                                      const llvm::Triple& Triple);
+ const HostInfo *createOpenBSDHostInfo(const Driver &D,
+                                       const llvm::Triple& Triple);
+ const HostInfo *createFreeBSDHostInfo(const Driver &D,

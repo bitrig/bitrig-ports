@@ -1,0 +1,11 @@
+$OpenBSD$
+--- tools/clang/lib/CodeGen/TargetInfo.cpp.orig	Fri May 18 12:59:56 2012
++++ tools/clang/lib/CodeGen/TargetInfo.cpp	Fri May 18 13:00:15 2012
+@@ -3342,6 +3342,7 @@ const TargetCodeGenInfo &CodeGenModule::getTargetCodeG
+     case llvm::Triple::AuroraUX:
+     case llvm::Triple::DragonFly:
+     case llvm::Triple::FreeBSD:
++    case llvm::Triple::Bitrig:
+     case llvm::Triple::OpenBSD:
+     case llvm::Triple::NetBSD:
+       return *(TheTargetCodeGenInfo =

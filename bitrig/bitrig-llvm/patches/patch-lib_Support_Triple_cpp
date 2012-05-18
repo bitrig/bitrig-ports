@@ -1,0 +1,20 @@
+$OpenBSD$
+--- lib/Support/Triple.cpp.orig	Fri May 18 11:54:48 2012
++++ lib/Support/Triple.cpp	Fri May 18 11:55:39 2012
+@@ -116,6 +116,7 @@ const char *Triple::getOSTypeName(OSType Kind) {
+   case Haiku: return "haiku";
+   case Minix: return "minix";
+   case RTEMS: return "rtems";
++  case Bitrig: return "bitrig";
+   case NativeClient: return "nacl";
+   }
+ 
+@@ -384,6 +385,8 @@ Triple::OSType Triple::ParseOS(StringRef OSName) {
+     return Minix;
+   else if (OSName.startswith("rtems"))
+     return RTEMS;
++  else if (OSName.startswith("bitrig"))
++    return Bitrig;
+   else if (OSName.startswith("nacl"))
+     return NativeClient;
+   else

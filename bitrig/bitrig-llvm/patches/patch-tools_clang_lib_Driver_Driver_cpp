@@ -1,0 +1,12 @@
+$OpenBSD$
+--- tools/clang/lib/Driver/Driver.cpp.orig	Fri May 18 13:00:45 2012
++++ tools/clang/lib/Driver/Driver.cpp	Fri May 18 13:01:05 2012
+@@ -1562,6 +1562,8 @@ const HostInfo *Driver::GetHostInfo(const char *Triple
+     return createDarwinHostInfo(*this, Triple);
+   case llvm::Triple::DragonFly:
+     return createDragonFlyHostInfo(*this, Triple);
++  case llvm::Triple::Bitrig:
++    return createBitrigHostInfo(*this, Triple);
+   case llvm::Triple::OpenBSD:
+     return createOpenBSDHostInfo(*this, Triple);
+   case llvm::Triple::NetBSD:

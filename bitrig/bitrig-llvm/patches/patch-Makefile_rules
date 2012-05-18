@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.rules.orig	Fri May 18 13:33:43 2012
++++ Makefile.rules	Fri May 18 13:35:33 2012
+@@ -993,7 +993,7 @@ $(NativeExportsFile): $(EXPORTED_SYMBOL_FILE) $(ObjDir
+ 	$(Verb) echo "{" > $@
+ 	$(Verb) grep -q "\<" $< && echo "  global:" >> $@ || :
+ 	$(Verb) sed -e 's/$$/;/' -e 's/^/    /' < $< >> $@
+-ifneq ($(HOST_OS),OpenBSD)
++ifneq ($(HOST_OS),OpenBSD Bitrig)
+ 	$(Verb) echo "  local: *;" >> $@
+ endif
+ 	$(Verb) echo "};" >> $@

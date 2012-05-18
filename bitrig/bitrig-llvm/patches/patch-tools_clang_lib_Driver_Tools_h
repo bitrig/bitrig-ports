@@ -1,0 +1,39 @@
+$OpenBSD$
+--- tools/clang/lib/Driver/Tools.h.orig	Fri May 18 13:07:50 2012
++++ tools/clang/lib/Driver/Tools.h	Fri May 18 13:08:26 2012
+@@ -294,6 +294,35 @@ namespace darwin {
+ 
+ }
+ 
++  /// bitrig -- Directly call GNU Binutils assembler and linker
++namespace bitrig {
++  class LLVM_LIBRARY_VISIBILITY Assemble : public Tool  {
++  public:
++    Assemble(const ToolChain &TC) : Tool("bitrig::Assemble", "assembler",
++                                         TC) {}
++
++    virtual bool hasIntegratedCPP() const { return false; }
++
++    virtual void ConstructJob(Compilation &C, const JobAction &JA,
++                              const InputInfo &Output,
++                              const InputInfoList &Inputs,
++                              const ArgList &TCArgs,
++                              const char *LinkingOutput) const;
++  };
++  class LLVM_LIBRARY_VISIBILITY Link : public Tool  {
++  public:
++    Link(const ToolChain &TC) : Tool("bitrig::Link", "linker", TC) {}
++
++    virtual bool hasIntegratedCPP() const { return false; }
++
++    virtual void ConstructJob(Compilation &C, const JobAction &JA,
++                              const InputInfo &Output,
++                              const InputInfoList &Inputs,
++                              const ArgList &TCArgs,
++                              const char *LinkingOutput) const;
++  };
++} // end namespace bitrig
++
+   /// openbsd -- Directly call GNU Binutils assembler and linker
+ namespace openbsd {
+   class LLVM_LIBRARY_VISIBILITY Assemble : public Tool  {

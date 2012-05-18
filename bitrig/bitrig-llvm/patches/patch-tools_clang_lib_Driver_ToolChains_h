@@ -1,7 +1,25 @@
 $OpenBSD$
---- tools/clang/lib/Driver/ToolChains.h.orig	Mon Mar  5 22:44:43 2012
-+++ tools/clang/lib/Driver/ToolChains.h	Mon Mar  5 23:11:33 2012
-@@ -334,6 +334,10 @@ class LLVM_LIBRARY_VISIBILITY OpenBSD : public Generic
+--- tools/clang/lib/Driver/ToolChains.h.orig	Wed Nov  9 22:22:48 2011
++++ tools/clang/lib/Driver/ToolChains.h	Fri May 18 13:49:41 2012
+@@ -328,12 +328,28 @@ class LLVM_LIBRARY_VISIBILITY AuroraUX : public Generi
+                            const ActionList &Inputs) const;
+ };
+ 
++class LLVM_LIBRARY_VISIBILITY Bitrig : public Generic_ELF {
++public:
++  Bitrig(const HostInfo &Host, const llvm::Triple& Triple);
++
++  virtual Tool &SelectTool(const Compilation &C, const JobAction &JA,
++                           const ActionList &Inputs) const;
++  virtual void AddClangCXXStdlibIncludeArgs(const ArgList &DriverArgs,
++                                            ArgStringList &CC1Args) const;
++  virtual void AddCXXStdlibLibArgs(const ArgList &Args,
++                                   ArgStringList &CmdArgs) const;
++};
++
+ class LLVM_LIBRARY_VISIBILITY OpenBSD : public Generic_ELF {
+ public:
+   OpenBSD(const HostInfo &Host, const llvm::Triple& Triple);
  
    virtual Tool &SelectTool(const Compilation &C, const JobAction &JA,
                             const ActionList &Inputs) const;

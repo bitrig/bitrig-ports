@@ -1,10 +1,83 @@
 $OpenBSD$
 --- tools/clang/lib/Driver/ToolChains.cpp.orig	Thu Nov 17 01:40:32 2011
-+++ tools/clang/lib/Driver/ToolChains.cpp	Mon Apr 16 17:28:54 2012
-@@ -1193,6 +1193,30 @@ Tool &OpenBSD::SelectTool(const Compilation &C, const 
++++ tools/clang/lib/Driver/ToolChains.cpp	Fri May 18 13:03:37 2012
+@@ -1153,6 +1153,70 @@ Tool &TCEToolChain::SelectTool(const Compilation &C,
    return *T;
  }
  
++/// Bitrig - Bitrig tool chain which can call as(1) and ld(1) directly.
++
++Bitrig::Bitrig(const HostInfo &Host, const llvm::Triple& Triple)
++  : Generic_ELF(Host, Triple) {
++  getFilePaths().push_back(getDriver().Dir + "/../lib");
++  getFilePaths().push_back("/usr/lib");
++}
++
++Tool &Bitrig::SelectTool(const Compilation &C, const JobAction &JA,
++                          const ActionList &Inputs) const {
++  Action::ActionClass Key;
++  if (getDriver().ShouldUseClangCompiler(C, JA, getTriple()))
++    Key = Action::AnalyzeJobClass;
++  else
++    Key = JA.getKind();
++
++  bool UseIntegratedAs = C.getArgs().hasFlag(options::OPT_integrated_as,
++                                             options::OPT_no_integrated_as,
++                                             IsIntegratedAssemblerDefault());
++
++  Tool *&T = Tools[Key];
++  if (!T) {
++    switch (Key) {
++    case Action::AssembleJobClass: {
++      if (UseIntegratedAs)
++        T = new tools::ClangAs(*this);
++      else
++        T = new tools::bitrig::Assemble(*this);
++      break;
++    }
++    case Action::LinkJobClass:
++      T = new tools::bitrig::Link(*this); break;
++    default:
++      T = &Generic_GCC::SelectTool(C, JA, Inputs);
++    }
++  }
++
++  return *T;
++}
++
++void Bitrig::AddClangCXXStdlibIncludeArgs(const ArgList &DriverArgs,
++                                         ArgStringList &CC1Args) const {
++  if (DriverArgs.hasArg(options::OPT_nostdlibinc) ||
++      DriverArgs.hasArg(options::OPT_nostdincxx))
++    return;
++
++  //llvm::errs() << "trying to add some includes\n";
++
++  // XXX this is a terrible hack but needed untile we can switch from amd64 to x86_64
++  std::string Triple = getDriver().DefaultHostTriple;
++  if (Triple.substr(0, 5) == "amd64")
++    Triple.replace(0, 5, "x86_64");
++
++  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2");
++  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2/backward");
++  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2/" + Triple);
++}
++
++void Bitrig::AddCXXStdlibLibArgs(const ArgList &Args,
++                                      ArgStringList &CmdArgs) const {
++  //llvm::errs() << "doing the linker dance\n";
++  CmdArgs.push_back("-lstdc++");
++}
++
+ /// OpenBSD - OpenBSD tool chain which can call as(1) and ld(1) directly.
+ 
+ OpenBSD::OpenBSD(const HostInfo &Host, const llvm::Triple& Triple)
+@@ -1191,6 +1255,30 @@ Tool &OpenBSD::SelectTool(const Compilation &C, const 
+   }
+ 
+   return *T;
++}
++
 +void OpenBSD::AddClangCXXStdlibIncludeArgs(const ArgList &DriverArgs,
 +                                         ArgStringList &CC1Args) const {
 +  if (DriverArgs.hasArg(options::OPT_nostdlibinc) ||
@@ -27,8 +100,6 @@ $OpenBSD$
 +                                      ArgStringList &CmdArgs) const {
 +  //llvm::errs() << "doing the linker dance\n";
 +  CmdArgs.push_back("-lstdc++");
-+}
-+
- /// FreeBSD - FreeBSD tool chain which can call as(1) and ld(1) directly.
+ }
  
- FreeBSD::FreeBSD(const HostInfo &Host, const llvm::Triple& Triple)
+ /// FreeBSD - FreeBSD tool chain which can call as(1) and ld(1) directly.
