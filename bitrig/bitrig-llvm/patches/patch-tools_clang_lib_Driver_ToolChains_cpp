@@ -1,7 +1,7 @@
 $OpenBSD$
 --- tools/clang/lib/Driver/ToolChains.cpp.orig	Thu Nov 17 01:40:32 2011
-+++ tools/clang/lib/Driver/ToolChains.cpp	Fri May 18 13:03:37 2012
-@@ -1153,6 +1153,70 @@ Tool &TCEToolChain::SelectTool(const Compilation &C,
++++ tools/clang/lib/Driver/ToolChains.cpp	Fri May 18 16:29:48 2012
+@@ -1153,6 +1153,76 @@ Tool &TCEToolChain::SelectTool(const Compilation &C,
    return *T;
  }
  
@@ -61,6 +61,12 @@ $OpenBSD$
 +  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2");
 +  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2/backward");
 +  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2/" + Triple);
++
++  /* XXX backwards compat for now */
++  std::string MyArch = getArchName();
++  if (MyArch.substr(0, 5) == "amd64")
++    MyArch.replace(0, 5, "x86_64");
++  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2/" + MyArch + "-unknown-openbsd5.1");
 +}
 +
 +void Bitrig::AddCXXStdlibLibArgs(const ArgList &Args,
@@ -72,7 +78,7 @@ $OpenBSD$
  /// OpenBSD - OpenBSD tool chain which can call as(1) and ld(1) directly.
  
  OpenBSD::OpenBSD(const HostInfo &Host, const llvm::Triple& Triple)
-@@ -1191,6 +1255,30 @@ Tool &OpenBSD::SelectTool(const Compilation &C, const 
+@@ -1191,6 +1261,30 @@ Tool &OpenBSD::SelectTool(const Compilation &C, const 
    }
  
    return *T;
