@@ -1,14 +1,14 @@
 $OpenBSD: patch-doc_automake_texi,v 1.2 2012/02/22 07:14:20 ajacoutot Exp $
---- doc/automake.texi.orig	Wed Feb  1 05:40:23 2012
-+++ doc/automake.texi	Thu Feb 16 22:28:14 2012
+--- doc/automake.texi.orig	Fri Apr 13 09:46:00 2012
++++ doc/automake.texi	Fri May 18 22:34:00 2012
 @@ -1,7 +1,8 @@
  \input texinfo   @c -*-texinfo-*-
  @c %**start of header
 -@setfilename automake.info
 -@settitle automake
-+@setfilename automake${SUFFIX}.info
++@setfilename automake-1.11.info
 +@dircategory Programming & development tools
-+@settitle automake${SUFFIX}
++@settitle automake-1.11
  @setchapternewpage off
  @c %**end of header
  
@@ -17,15 +17,15 @@ $OpenBSD: patch-doc_automake_texi,v 1.2 2012/02/22 07:14:20 ajacoutot Exp $
  @dircategory Software development
  @direntry
 -* Automake: (automake).         Making GNU standards-compliant Makefiles.
-+* automake${SUFFIX}: (automake${SUFFIX}).         Making GNU standards-compliant Makefiles.
++* automake-1.11: (automake-1.11).         Making GNU standards-compliant Makefiles.
  @end direntry
  
  @dircategory Individual utilities
  @direntry
 -* aclocal-invocation: (automake)aclocal Invocation.   Generating aclocal.m4.
 -* automake-invocation: (automake)automake Invocation. Generating Makefile.in.
-+* aclocal${SUFFIX}: (automake${SUFFIX})aclocal Invocation.   Generating aclocal.m4.
-+* automake${SUFFIX}: (automake${SUFFIX})automake Invocation. Generating Makefile.in.
++* aclocal-1.11: (automake-1.11)aclocal Invocation.   Generating aclocal.m4.
++* automake-1.11: (automake-1.11)automake Invocation. Generating Makefile.in.
  @end direntry
  
  @titlepage

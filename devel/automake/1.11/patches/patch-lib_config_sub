@@ -1,0 +1,12 @@
+$OpenBSD$
+--- lib/config.sub.orig	Fri May 18 22:33:10 2012
++++ lib/config.sub	Fri May 18 22:33:23 2012
+@@ -1346,7 +1346,7 @@ case $os in
+ 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
+ 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
+ 	      | -hiux* | -386bsd* | -knetbsd* | -mirbsd* | -netbsd* \
+-	      | -openbsd* | -solidbsd* \
++	      | -openbsd* | -solidbsd* | -bitrig*\
+ 	      | -ekkobsd* | -kfreebsd* | -freebsd* | -riscix* | -lynxos* \
+ 	      | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
+ 	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \
