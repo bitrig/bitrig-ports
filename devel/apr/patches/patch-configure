@@ -1,9 +1,12 @@
 $OpenBSD: patch-configure,v 1.9 2012/04/28 09:48:20 stsp Exp $
---- configure.orig	Wed Feb  8 00:17:57 2012
-+++ configure	Fri Apr 27 09:51:08 2012
-@@ -6633,6 +6633,11 @@ if test "x$apr_preload_done" != "xyes" ; then
+--- configure.orig	Tue Feb  7 17:17:57 2012
++++ configure	Fri May 18 22:07:39 2012
+@@ -6631,8 +6631,13 @@ if test "x$apr_preload_done" != "xyes" ; then
+                 ;;
+         esac
          ;;
-     *-openbsd*)
+-    *-openbsd*)
++    *-openbsd* | *-bitrig*)
  
 +  if test -z "$apr_lock_method"; then
 +    test "x$silent" != "xyes" && echo "  setting apr_lock_method to \"USE_FLOCK_SERIALIZE\""
@@ -13,6 +16,33 @@ $OpenBSD: patch-configure,v 1.9 2012/04/28 09:48:20 stsp Exp $
    if test "x$CPPFLAGS" = "x"; then
      test "x$silent" != "xyes" && echo "  setting CPPFLAGS to \"-D_POSIX_THREADS\""
      CPPFLAGS="-D_POSIX_THREADS"
+@@ -11326,7 +11331,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -11838,7 +11843,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -12451,7 +12456,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
 @@ -13934,7 +13939,7 @@ fi
  LIBTOOL_DEPS="$ltmain"
  
@@ -22,6 +52,33 @@ $OpenBSD: patch-configure,v 1.9 2012/04/28 09:48:20 stsp Exp $
  
  
  
+@@ -14945,7 +14950,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -15821,7 +15826,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -16864,7 +16869,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -19343,7 +19348,7 @@ if ${apr_cv_pthreads_lib+:} false; then :
  else
  
