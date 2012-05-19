@@ -1,14 +1,14 @@
 $OpenBSD: patch-support_apxs_in,v 1.2 2011/09/01 13:40:09 giovanni Exp $
---- support/apxs.in.orig	Mon May 10 22:02:56 2010
-+++ support/apxs.in	Wed Aug 31 11:53:53 2011
+--- support/apxs.in.orig	Mon May 10 15:02:56 2010
++++ support/apxs.in	Fri May 18 22:19:29 2012
 @@ -647,13 +647,13 @@ __DATA__
  ##
  
  builddir=.
 -top_srcdir=%PREFIX%
 -top_builddir=%PREFIX%
-+top_srcdir=%%PREFIX%%/share/apache2
-+top_builddir=%%PREFIX%%/share/apache2
++top_srcdir=/usr/local/share/apache2
++top_builddir=/usr/local/share/apache2
  include %INSTALLBUILDDIR%/special.mk
  
  #   the used tools
