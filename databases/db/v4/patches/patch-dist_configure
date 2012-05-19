@@ -1,6 +1,6 @@
 $OpenBSD: patch-dist_configure,v 1.9 2007/10/26 14:06:02 steven Exp $
---- dist/configure.orig	Fri Aug 10 17:47:40 2007
-+++ dist/configure	Sat Sep 15 16:44:27 2007
+--- dist/configure.orig	Thu Sep 27 10:32:04 2007
++++ dist/configure	Fri May 18 22:00:59 2012
 @@ -849,7 +849,9 @@ MAKEFILE_CC
  MAKEFILE_CCLINK
  MAKEFILE_CXX
@@ -12,6 +12,69 @@ $OpenBSD: patch-dist_configure,v 1.9 2007/10/26 14:06:02 steven Exp $
  MAKEFILE_XSOLINK
  OSDIR
  POSTLINK
+@@ -6582,7 +6584,7 @@ nto-qnx*)
+   lt_cv_deplibs_check_method=unknown
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -8017,7 +8019,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -8689,7 +8691,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -9429,7 +9431,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -10123,7 +10125,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       hardcode_direct=yes
+       hardcode_shlibpath_var=no
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -10837,7 +10839,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -13311,7 +13313,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+     # C++ shared libraries are fairly broken
+     ld_shlibs_CXX=no
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     hardcode_direct_CXX=yes
+     hardcode_shlibpath_var_CXX=no
+     archive_cmds_CXX='$CC -shared $pic_flag $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags -o $lib'
 @@ -13323,6 +13325,20 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
      fi
      output_verbose_link_cmd='echo'
@@ -20,7 +83,7 @@ $OpenBSD: patch-dist_configure,v 1.9 2007/10/26 14:06:02 steven Exp $
 +      # C++ shared libraries are fairly broken
 +      ld_shlibs_CXX=no
 +      ;;
-+  openbsd*)
++  openbsd* | bitrig*)
 +      archive_cmds_CXX='$CC -shared $pic_flag $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags -o $lib'
 +      hardcode_libdir_flag_spec_CXX='${wl}-rpath,$libdir'
 +      if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
@@ -33,6 +96,69 @@ $OpenBSD: patch-dist_configure,v 1.9 2007/10/26 14:06:02 steven Exp $
    osf3*)
      case $cc_basename in
        KCC*)
+@@ -14760,7 +14776,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -15955,7 +15971,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -16629,7 +16645,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var_F77=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       hardcode_direct_F77=yes
+       hardcode_shlibpath_var_F77=no
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -17343,7 +17359,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -18529,7 +18545,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -19223,7 +19239,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var_GCJ=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       hardcode_direct_GCJ=yes
+       hardcode_shlibpath_var_GCJ=no
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -19937,7 +19953,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -21167,13 +21183,15 @@ echo "${ECHO_T}$JMODSUFFIX" >&6; }
  
  
@@ -100,7 +226,7 @@ $OpenBSD: patch-dist_configure,v 1.9 2007/10/26 14:06:02 steven Exp $
  	aix*)		_JNI_INC_SUBDIRS="aix";;
  	bsdi*)		_JNI_INC_SUBDIRS="bsdos";;
  	freebsd*)	_JNI_INC_SUBDIRS="freebsd";;
-+	openbsd*)	_JNI_INC_SUBDIRS="openbsd";;
++	openbsd* | bitrig*)	_JNI_INC_SUBDIRS="openbsd";;
  	hp*)		_JNI_INC_SUBDIRS="hp-ux";;
  	linux*)		_JNI_INC_SUBDIRS="linux genunix";;
  	osf*)		_JNI_INC_SUBDIRS="alpha";;
