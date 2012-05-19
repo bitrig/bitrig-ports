@@ -73,5 +73,5 @@ WANTLIB += perl
 .endif
 
 P5SITE=libdata/perl5/site_perl
-P5ARCH=${P5SITE}/${MACHINE_ARCH}-openbsd
+P5ARCH=${P5SITE}/${MACHINE_ARCH}-bitrig
 SUBST_VARS+=P5ARCH P5SITE
