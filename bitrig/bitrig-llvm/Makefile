@@ -68,7 +68,7 @@ CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
 SUBST_VARS +=		CLANG_INCLUDE_PATH
 
 pre-configure:
-	@perl -pi -e s,-lpthread,-pthread,g ${WRKSRC}/configure
+#	@perl -pi -e s,-lpthread,-pthread,g ${WRKSRC}/configure
 	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/scan-build/scan-build
 	-@ln -s ${MODPY_BIN} ${WRKDIR}/bin/python
 
