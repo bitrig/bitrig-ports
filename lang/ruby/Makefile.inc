@@ -27,5 +27,5 @@ CONFIGURE_ENV +=	PREFIX="${PREFIX}" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
 REV ?=			${VERSION:R}
-SUB ?=			${MACHINE_ARCH:S/amd64/x86_64/}-openbsd
+SUB ?=			${MACHINE_ARCH:S/amd64/x86_64/}-bitrig
 SUBST_VARS +=		SUB REV
