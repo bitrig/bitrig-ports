@@ -1,5 +1,4 @@
-@comment $OpenBSD: PLIST-main,v 1.4 2011/11/19 22:19:53 pascal Exp $
-@pkgpath lang/gcc/4.6
+@comment $OpenBSD$
 %%SHARED%%
 @bin bin/c++
 @bin bin/cc
@@ -708,8 +707,17 @@ info/
 @info info/gccinstall.info
 @info info/gccint.info
 @info info/libquadmath.info
+lib/fpic/
+lib/fpic/libssp.a
+lib/fpic/libssp.la
+lib/fpic/libssp_nonshared.a
+lib/fpic/libssp_nonshared.la
+lib/fpic/libstdc++.a
+lib/fpic/libstdc++.la
+lib/fpic/libstdc++.so.14.0-gdb.py
+lib/fpic/libsupc++.a
+lib/fpic/libsupc++.la
 lib/gcc/
-@comment lib/libiberty.a
 lib/gcc/${CONFIG}/
 lib/gcc/${CONFIG}/${V}/
 lib/gcc/${CONFIG}/${V}/fpic/
@@ -786,9 +794,6 @@ lib/x86_64/
 lib/x86_64/libiberty.a
 @bin libexec/cpp
 libexec/gcc/
-%%I386%%
-%%PPC%%
-%%PIC%%
 libexec/gcc/${CONFIG}/
 libexec/gcc/${CONFIG}/${V}/
 @bin libexec/gcc/${CONFIG}/${V}/cc1
