@@ -40,7 +40,7 @@ CONFIGURE_ENV=		PTHREAD_LIBS="-pthread"
 CONFIGURE_ARGS=		--enable-gl \
 			--enable-tee \
 			--enable-xml \
-			--enable-xcb
+			--enable-xcb --enable-trace=yes --enable-pthread=yes
 
 REGRESS_DEPENDS=	print/ghostscript/gnu
 
