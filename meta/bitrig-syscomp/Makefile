@@ -1,7 +1,7 @@
 COMMENT=	System Compiler Meta Package
 
 PKGNAME=	bitrig-syscomp-1.0
-REVISION=	8
+REVISION=	9
 
 MAINTAINER=	Marco Peereboom <marco@bitrig.org>
 
