@@ -1,0 +1,12 @@
+$OpenBSD$
+--- build-aux/config.sub.orig	Sun May 20 16:06:43 2012
++++ build-aux/config.sub	Sun May 20 16:07:38 2012
+@@ -1287,7 +1287,7 @@ case $os in
+ 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
+ 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
+ 	      | -hiux* | -386bsd* | -knetbsd* | -mirbsd* | -netbsd* \
+-	      | -openbsd* | -solidbsd* \
++	      | -openbsd* | -solidbsd* | -bitrig* \
+ 	      | -ekkobsd* | -kfreebsd* | -freebsd* | -riscix* | -lynxos* \
+ 	      | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
+ 	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \
