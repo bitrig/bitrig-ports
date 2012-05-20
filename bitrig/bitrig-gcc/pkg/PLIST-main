@@ -2,16 +2,16 @@
 @pkgpath lang/gcc/4.6
 %%SHARED%%
 @bin bin/c++
-@bin bin/g++
 @bin bin/cc
+@bin bin/g++
 @bin bin/gcc
 @bin bin/gcov
 @bin bin/${CONFIG}-c++
+@bin bin/${CONFIG}-cc
+@bin bin/${CONFIG}-cc-${V}
 @bin bin/${CONFIG}-g++
 @bin bin/${CONFIG}-gcc
-@bin bin/${CONFIG}-cc
 @bin bin/${CONFIG}-gcc-${V}
-@bin bin/${CONFIG}-cc-${V}
 include/c++/
 include/c++/${V}/
 include/c++/${V}/algorithm
@@ -676,18 +676,45 @@ include/c++/${V}/${CONFIG}/bits/os_defines.h
 include/c++/${V}/${CONFIG}/bits/stdc++.h
 include/c++/${V}/${CONFIG}/bits/stdtr1c++.h
 include/c++/${V}/${CONFIG}/bits/time_members.h
+include/c++/${V}/${CONFIG}/fpic/
+include/c++/${V}/${CONFIG}/fpic/bits/
+include/c++/${V}/${CONFIG}/fpic/bits/atomic_word.h
+include/c++/${V}/${CONFIG}/fpic/bits/basic_file.h
+include/c++/${V}/${CONFIG}/fpic/bits/c++allocator.h
+include/c++/${V}/${CONFIG}/fpic/bits/c++config.h
+include/c++/${V}/${CONFIG}/fpic/bits/c++io.h
+include/c++/${V}/${CONFIG}/fpic/bits/c++locale.h
+include/c++/${V}/${CONFIG}/fpic/bits/cpu_defines.h
+include/c++/${V}/${CONFIG}/fpic/bits/ctype_base.h
+include/c++/${V}/${CONFIG}/fpic/bits/ctype_inline.h
+include/c++/${V}/${CONFIG}/fpic/bits/ctype_noninline.h
+include/c++/${V}/${CONFIG}/fpic/bits/cxxabi_tweaks.h
+include/c++/${V}/${CONFIG}/fpic/bits/error_constants.h
+include/c++/${V}/${CONFIG}/fpic/bits/extc++.h
+include/c++/${V}/${CONFIG}/fpic/bits/gthr-default.h
+include/c++/${V}/${CONFIG}/fpic/bits/gthr-posix.h
+include/c++/${V}/${CONFIG}/fpic/bits/gthr-single.h
+include/c++/${V}/${CONFIG}/fpic/bits/gthr-tpf.h
+include/c++/${V}/${CONFIG}/fpic/bits/gthr.h
+include/c++/${V}/${CONFIG}/fpic/bits/messages_members.h
+include/c++/${V}/${CONFIG}/fpic/bits/os_defines.h
+include/c++/${V}/${CONFIG}/fpic/bits/stdc++.h
+include/c++/${V}/${CONFIG}/fpic/bits/stdtr1c++.h
+include/c++/${V}/${CONFIG}/fpic/bits/time_members.h
+info/
 @info info/cpp.info
 @info info/cppinternals.info
 @info info/gcc.info
 @info info/gccinstall.info
 @info info/gccint.info
 @info info/libquadmath.info
-lib/libstdc++.a
-lib/libstdc++.la
-lib/libstdc++.so.${LIBstdc++_VERSION}-gdb.py
 lib/gcc/
+@comment lib/libiberty.a
 lib/gcc/${CONFIG}/
 lib/gcc/${CONFIG}/${V}/
+lib/gcc/${CONFIG}/${V}/fpic/
+lib/gcc/${CONFIG}/${V}/fpic/libgcc.a
+lib/gcc/${CONFIG}/${V}/fpic/libgcov.a
 lib/gcc/${CONFIG}/${V}/include/
 lib/gcc/${CONFIG}/${V}/include-fixed/
 lib/gcc/${CONFIG}/${V}/include-fixed/README
@@ -704,13 +731,38 @@ lib/gcc/${CONFIG}/${V}/include-fixed/sys/param.h
 lib/gcc/${CONFIG}/${V}/include-fixed/sys/types.h
 lib/gcc/${CONFIG}/${V}/include-fixed/syslimits.h
 lib/gcc/${CONFIG}/${V}/include-fixed/wchar.h
+lib/gcc/${CONFIG}/${V}/include/abmintrin.h
+lib/gcc/${CONFIG}/${V}/include/ammintrin.h
+lib/gcc/${CONFIG}/${V}/include/avxintrin.h
+lib/gcc/${CONFIG}/${V}/include/bmiintrin.h
+lib/gcc/${CONFIG}/${V}/include/bmmintrin.h
+lib/gcc/${CONFIG}/${V}/include/cpuid.h
+lib/gcc/${CONFIG}/${V}/include/cross-stdarg.h
+lib/gcc/${CONFIG}/${V}/include/emmintrin.h
+lib/gcc/${CONFIG}/${V}/include/fma4intrin.h
+lib/gcc/${CONFIG}/${V}/include/ia32intrin.h
+lib/gcc/${CONFIG}/${V}/include/immintrin.h
+lib/gcc/${CONFIG}/${V}/include/lwpintrin.h
+lib/gcc/${CONFIG}/${V}/include/mm3dnow.h
+lib/gcc/${CONFIG}/${V}/include/mm_malloc.h
+lib/gcc/${CONFIG}/${V}/include/mmintrin.h
+lib/gcc/${CONFIG}/${V}/include/nmmintrin.h
+lib/gcc/${CONFIG}/${V}/include/pmmintrin.h
+lib/gcc/${CONFIG}/${V}/include/popcntintrin.h
+lib/gcc/${CONFIG}/${V}/include/smmintrin.h
 lib/gcc/${CONFIG}/${V}/include/ssp/
 lib/gcc/${CONFIG}/${V}/include/ssp/ssp.h
 lib/gcc/${CONFIG}/${V}/include/ssp/stdio.h
 lib/gcc/${CONFIG}/${V}/include/ssp/string.h
 lib/gcc/${CONFIG}/${V}/include/ssp/unistd.h
+lib/gcc/${CONFIG}/${V}/include/tbmintrin.h
 lib/gcc/${CONFIG}/${V}/include/tgmath.h
+lib/gcc/${CONFIG}/${V}/include/tmmintrin.h
 lib/gcc/${CONFIG}/${V}/include/unwind.h
+lib/gcc/${CONFIG}/${V}/include/wmmintrin.h
+lib/gcc/${CONFIG}/${V}/include/x86intrin.h
+lib/gcc/${CONFIG}/${V}/include/xmmintrin.h
+lib/gcc/${CONFIG}/${V}/include/xopintrin.h
 lib/gcc/${CONFIG}/${V}/install-tools/
 lib/gcc/${CONFIG}/${V}/install-tools/fixinc_list
 lib/gcc/${CONFIG}/${V}/install-tools/gsyslimits.h
@@ -719,16 +771,24 @@ lib/gcc/${CONFIG}/${V}/install-tools/include/README
 lib/gcc/${CONFIG}/${V}/install-tools/include/limits.h
 lib/gcc/${CONFIG}/${V}/install-tools/macro_list
 lib/gcc/${CONFIG}/${V}/install-tools/mkheaders.conf
+lib/gcc/${CONFIG}/${V}/libgcc.a
 lib/gcc/${CONFIG}/${V}/libgcov.a
-@comment lib/libiberty.a
 lib/libssp.a
 lib/libssp.la
 lib/libssp_nonshared.a
 lib/libssp_nonshared.la
+lib/libstdc++.a
+lib/libstdc++.la
+lib/libstdc++.so.14.0-gdb.py
 lib/libsupc++.a
 lib/libsupc++.la
+lib/x86_64/
+lib/x86_64/libiberty.a
 @bin libexec/cpp
 libexec/gcc/
+%%I386%%
+%%PPC%%
+%%PIC%%
 libexec/gcc/${CONFIG}/
 libexec/gcc/${CONFIG}/${V}/
 @bin libexec/gcc/${CONFIG}/${V}/cc1
@@ -742,13 +802,13 @@ libexec/gcc/${CONFIG}/${V}/install-tools/mkinstalldirs
 libexec/gcc/${CONFIG}/${V}/liblto_plugin.la
 @bin libexec/gcc/${CONFIG}/${V}/lto-wrapper
 @bin libexec/gcc/${CONFIG}/${V}/lto1
-%%I386%%
-%%PPC%%
-%%PIC%%
+man/
+man/man1/
 @man man/man1/cpp.1
 @man man/man1/g++.1
 @man man/man1/gcc.1
 @man man/man1/gcov.1
+man/man7/
 @man man/man7/fsf-funding.7
 @man man/man7/gfdl.7
 @man man/man7/gpl.7
