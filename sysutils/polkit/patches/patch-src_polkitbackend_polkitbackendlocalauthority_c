@@ -1,6 +1,6 @@
 $OpenBSD: patch-src_polkitbackend_polkitbackendlocalauthority_c,v 1.4 2012/02/16 22:28:23 ajacoutot Exp $
---- src/polkitbackend/polkitbackendlocalauthority.c.orig	Tue Jan  3 15:45:22 2012
-+++ src/polkitbackend/polkitbackendlocalauthority.c	Wed Feb  8 17:51:32 2012
+--- src/polkitbackend/polkitbackendlocalauthority.c.orig	Tue Jan  3 08:45:22 2012
++++ src/polkitbackend/polkitbackendlocalauthority.c	Mon May 21 09:39:52 2012
 @@ -23,7 +23,11 @@
  #include <errno.h>
  #include <pwd.h>
@@ -13,6 +13,15 @@ $OpenBSD: patch-src_polkitbackend_polkitbackendlocalauthority_c,v 1.4 2012/02/16
  #include <string.h>
  #include <glib/gstdio.h>
  #include <locale.h>
+@@ -450,7 +454,7 @@ polkit_backend_local_authority_class_init (PolkitBacke
+   pspec = g_param_spec_string ("auth-store-paths",
+                                "Local Authorization Store Paths",
+                                "Semi-colon separated list of Authorization Store 'top' directories.",
+-                               PACKAGE_LOCALSTATE_DIR "/lib/polkit-1/localauthority;"
++                               PACKAGE_LOCALSTATE_DIR "/db/polkit-1/localauthority;"
+                                PACKAGE_SYSCONF_DIR "/polkit-1/localauthority",
+                                G_PARAM_CONSTRUCT_ONLY | G_PARAM_WRITABLE);
+   g_object_class_install_property (gobject_class, PROP_AUTH_STORE_PATHS, pspec);
 @@ -700,15 +704,20 @@ get_users_in_net_group (PolkitIdentity                
    ret = NULL;
    name = polkit_unix_netgroup_get_name (POLKIT_UNIX_NETGROUP (group));

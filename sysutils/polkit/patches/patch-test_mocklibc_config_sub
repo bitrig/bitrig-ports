@@ -1,0 +1,12 @@
+$OpenBSD$
+--- test/mocklibc/config.sub.orig	Mon May 21 09:49:15 2012
++++ test/mocklibc/config.sub	Mon May 21 09:49:30 2012
+@@ -1287,7 +1287,7 @@ case $os in
+ 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
+ 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
+ 	      | -hiux* | -386bsd* | -knetbsd* | -mirbsd* | -netbsd* \
+-	      | -openbsd* | -solidbsd* \
++	      | -openbsd* | -solidbsd* | -bitrig* \
+ 	      | -ekkobsd* | -kfreebsd* | -freebsd* | -riscix* | -lynxos* \
+ 	      | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
+ 	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \
