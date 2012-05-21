@@ -72,6 +72,6 @@ CONFIGURE_ARGS +=	--disable-libvisual \
 			--enable-orc
 CONFIGURE_ENV +=	ac_cv_path_PYTHON=""
 USE_GROFF =		Yes
-USE_LIBTOOL =		Yes
+USE_LIBTOOL =		gnu
 
 .include <bsd.port.mk>
