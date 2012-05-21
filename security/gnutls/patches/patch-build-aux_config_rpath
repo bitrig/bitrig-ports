@@ -1,0 +1,30 @@
+$OpenBSD$
+--- build-aux/config.rpath.orig	Mon May 21 10:25:42 2012
++++ build-aux/config.rpath	Mon May 21 10:26:42 2012
+@@ -161,7 +161,7 @@ case "$host_os" in
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+ esac
+@@ -429,7 +429,7 @@ else
+       ;;
+     *nto* | *qnx*)
+       ;;
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+         hardcode_direct=yes
+         if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -612,7 +612,7 @@ case "$host_os" in
+   *nto* | *qnx*)
+     library_names_spec='$libname$shrext'
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     library_names_spec='$libname$shrext$versuffix'
+     ;;
+   os2*)
