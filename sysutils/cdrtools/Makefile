@@ -29,17 +29,20 @@ MAKE_FLAGS =		GMAKE_NOWARN=true CC="${CC}" CC++="${CXX}" \
 
 NO_REGRESS=		Yes
 
+post-extract:
+	cp -R ${FILESDIR}/* ${WRKSRC}
+
 .if ${MACHINE} != "i386" || ${CC} != "cc"
 do-configure:
 	cd ${WRKSRC}/RULES && \
-	    ln -sf i386-openbsd-cc.rul ${MACHINE}-openbsd-${CC}.rul
+	    cp i386-bitrig-cc.rul ${MACHINE}-bitrig-${CC}.rul
 .endif
 
 pre-build:
 	${SUBST_CMD} ${WRKSRC}/mkisofs/Makefile
 	${SUBST_CMD} ${WRKSRC}/mkisofs/diag/isoinfo.mk
 
-OBJ=	OBJ/${MACHINE_ARCH}-openbsd-${CC}
+OBJ=	OBJ/${MACHINE_ARCH}-bitrig-${CC}
 
 do-install:
 	@cp ${WRKSRC}/mkisofs/mkisofs.8 ${WRKSRC}/mkisofs/mkisofs.1
