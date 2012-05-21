@@ -1,6 +1,6 @@
 $OpenBSD: patch-config-scripts_cups-common_m4,v 1.7 2012/02/16 22:12:08 ajacoutot Exp $
---- config-scripts/cups-common.m4.orig	Sun Feb  5 19:56:14 2012
-+++ config-scripts/cups-common.m4	Mon Feb  6 11:14:32 2012
+--- config-scripts/cups-common.m4.orig	Sun Feb  5 12:56:14 2012
++++ config-scripts/cups-common.m4	Sun May 20 20:19:33 2012
 @@ -134,7 +134,6 @@ AC_CHECK_HEADER(bstring.h,AC_DEFINE(HAVE_BSTRING_H))
  AC_CHECK_HEADER(usersec.h,AC_DEFINE(HAVE_USERSEC_H))
  AC_CHECK_HEADER(sys/ioctl.h,AC_DEFINE(HAVE_SYS_IOCTL_H))
@@ -9,3 +9,12 @@ $OpenBSD: patch-config-scripts_cups-common_m4,v 1.7 2012/02/16 22:12:08 ajacouto
  AC_CHECK_HEADER(scsi/sg.h,AC_DEFINE(HAVE_SCSI_SG_H))
  
  dnl Checks for iconv.h and iconv_open
+@@ -244,7 +243,7 @@ fi
+ 
+ dnl Flags for "ar" command...
+ case $uname in
+-        Darwin* | *BSD*)
++        Darwin* | *BSD* | Bitrig*)
+                 ARFLAGS="-rcv"
+                 ;;
+         *)

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.orig	Sun May 20 20:22:47 2012
++++ Makefile	Sun May 20 20:23:08 2012
+@@ -310,7 +310,7 @@ dist:	all
+ 	$(RM) -r dist
+ 	$(MAKE) $(MFLAGS) epm
+ 	case `uname` in \
+-		*BSD*) $(MAKE) $(MFLAGS) bsd;; \
++		*BSD* | Bitrig*) $(MAKE) $(MFLAGS) bsd;; \
+ 		Darwin*) $(MAKE) $(MFLAGS) osx;; \
+ 		IRIX*) $(MAKE) $(MFLAGS) tardist;; \
+ 		Linux*) test ! -x /usr/bin/rpm || $(MAKE) $(MFLAGS) rpm;; \

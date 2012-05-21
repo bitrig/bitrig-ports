@@ -1,0 +1,12 @@
+$OpenBSD$
+--- config-scripts/cups-manpages.m4.orig	Sun May 20 20:18:45 2012
++++ config-scripts/cups-manpages.m4	Sun May 20 20:20:43 2012
+@@ -22,7 +22,7 @@ fi
+ 
+ if test "$mandir" = "\${prefix}/man" -a "$prefix" = "/"; then
+ 	case "$uname" in
+-        	Darwin* | Linux | GNU | *BSD* | AIX*)
++        	Darwin* | Linux | GNU | *BSD* | AIX* | Bitrig*)
+         		# Darwin, MacOS X, Linux, GNU HURD, *BSD, and AIX
+         		mandir="/usr/share/man"
+         		AMANDIR="/usr/share/man"
