@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.126 2012/04/28 10:52:08 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.128 2012/05/18 16:31:22 ajacoutot Exp $
 
 COMMENT=	Common Unix Printing System
 
-VERSION=	1.5.2
+VERSION=	1.5.3
 DISTNAME=	cups-${VERSION}-source
 PKGNAME=	cups-${VERSION}
-REVISION=	1
+REVISION=	0
 
 CATEGORIES=	print sysutils
 
@@ -28,7 +28,7 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB += asn1 c crypto dbus-1 gssapi jpeg krb5 m png pthread
-WANTLIB += ssl stdc++ tiff usb z
+WANTLIB += ssl stdc++ tiff usb-1.0 z
 
 MASTER_SITES=	http://ftp.easysw.com/pub/cups/${VERSION}/ \
 		http://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/cups/${VERSION}/ \
@@ -47,7 +47,7 @@ BUILD_DEPENDS=	devel/xdg-utils \
 
 LIB_DEPENDS=	graphics/png \
 		graphics/tiff \
-		devel/libusb-compat \
+		devel/libusb1 \
 		x11/dbus
 
 LIBS_ENV=	LIBcups_VERSION=${LIBcups_VERSION} \
@@ -64,8 +64,8 @@ FAKE_FLAGS=	BINMODE=${BINMODE} \
 		MENUDIR=${DESTDIR}${PREFIX}/share/applications \
 		SERVERROOT=${DESTDIR}${PREFIX}/share/examples/cups
 
-AUTOCONF_VERSION= 2.61
-AUTOMAKE_VERSION= 1.9
+AUTOCONF_VERSION= 2.68
+AUTOMAKE_VERSION= 1.10
 
 USE_GMAKE=	Yes
 USE_GROFF=	Yes

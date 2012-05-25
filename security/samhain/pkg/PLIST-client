@@ -1,10 +1,14 @@
-@comment $OpenBSD: PLIST-client,v 1.2 2012/05/11 09:38:28 ajacoutot Exp $
+@comment $OpenBSD: PLIST-client,v 1.4 2012/05/18 13:05:15 ajacoutot Exp $
 @extraunexec rm -rf /var/samhain/*
 @man man/man5/samhainrc.5
 @man man/man8/samhain.8
 @bin sbin/samhain
+@bin sbin/samhain_setpwd
+share/doc/pkg-readmes/${FULLPKGNAME}
 share/examples/samhain/
 share/examples/samhain/samhainrc
 @sample ${SYSCONFDIR}/samhainrc
 @sample /var/samhain/
+@extra %D/sbin/samhain.signed
 @rcscript ${RCDIR}/samhain
+@rcscript ${RCDIR}/samhain_signed

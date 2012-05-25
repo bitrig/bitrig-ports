@@ -50,17 +50,18 @@ with 1/0. Variables not present in a given port are left undefined.
 
 Note that USE_LIBTOOL is 3-valued: 2 is gnu, 1 is yes, undef is no.
 
-The FULLPKGPATH is complete, including flavors markers (but not pseudo 
-flavors, tack on PSEUDO_FLAVOR for that). For every port with MULTI_PACKAGES 
-settings, one entry is written for each SUBPACKAGE.
+The FULLPKGPATH is complete, including flavor and pseudo-flavors markers.
+For every port with MULTI_PACKAGES settings, one entry is written for 
+each SUBPACKAGE.
 
-- Paths (FULLPKGPATH, PKGPATH)
+- Paths (FULLPKGPATH, PKGPATH, CANONICAL)
 PKGPATH is the stripped down version or FULLPKGPATH, without flavors 
 or subpackage markers.
+CANONICAL points to the reduced version.
 
 - Flavors(FULLPKGPATH, VALUE)
 - Categories(FULLPKGPATH, VALUE)
-- Multi(FULLPKGPATH, VALUE)
+- Multi(FULLPKGPATH, VALUE, SUBPKGPATH)
 - Modules(FULLPKGPATH, VALUE)
 - Configure(FULLPKGPATH, VALUE)
 - ConfigureArgs(FULLPKGPATH, VALUE)
@@ -83,6 +84,9 @@ the rest.
 - Wantlib(FULLPKGPATH, VALUE)
 All the libraries the FULLPKGPATH depends upon, with and without version number,
 coming from either the WANTLIB variable or various LIB_DEPENDS.
+
+- Multi(FULLPKGPATH, VALUE, SUBPKGPATH)
+with SUBPKGPATH the normalized pkgpath for that subpackage.
 
 - BROKEN(FULLPKGPATH, ARCH, VALUE)
 All the broken entries, which might be arch-dependent.

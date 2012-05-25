@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.3 2012/05/15 15:16:29 jasper Exp $
+# $OpenBSD: Makefile,v 1.5 2012/05/18 20:44:10 jasper Exp $
+
+SHARED_ONLY=	Yes
 
 COMMENT=	lua bindings to libraries using GObject-Introspection
 
-DISTNAME=	lgi-0.5
+DISTNAME=	lgi-0.5.1
 PKGNAME=	lua-${DISTNAME}
-REVISION=	0
 CATEGORIES=	devel
 
 HOMEPAGE=	https://github.com/pavouk/lgi

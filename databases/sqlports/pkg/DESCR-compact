@@ -5,14 +5,16 @@ This schema is mostly optimized for tools, and cumbersome to query by
 hand.
 
 Database Schema:
-- Paths (ID, FULLPKGPATH, PKGPATH)
+- Paths (ID, FULLPKGPATH, PKGPATH, CANONICAL)
 PKGPATH points to a PATHS entry corresponding to the stripped down version of 
 FULLPKGPATH, without flavors or subpackage markers, or is null if FULLPKGPATH
 is already stripped.  Every other FULLPKGPATH, PKGPATH, DEPENDSPATH entry
 in the database points to this table.
-The FULLPKGPATH is complete, including flavors markers (but not pseudo 
-flavors, tack on PSEUDO_FLAVOR for that). For every port with MULTI_PACKAGES 
-settings, one entry is written for each SUBPACKAGE.
+The FULLPKGPATH is complete, including flavors and pseudo flavors markers. 
+For every port with MULTI_PACKAGES settings, one entry is written 
+for each SUBPACKAGE.
+CANONICAL points to the actual ID to use as an entry in other tables, for
+FULLPKGPATH which don't have their own entry.
 
 - Ports(FULLPKGPATH, ...)
 holds all the information retrieved through various variables that is not
@@ -56,7 +58,7 @@ MULTI_PACKAGES ports hold several entries with corresponding FULLPKGPATH
 - Flavors(FULLPKGPATH, VALUE)
 - PseudoFlavors(FULLPKGPATH, VALUE)
 - Categories(FULLPKGPATH, VALUE)
-- Multi(FULLPKGPATH, VALUE)		('-' values are not stored)
+- Multi(FULLPKGPATH, VALUE, SUBPKGPATH)	('-' values are not stored)
 - Modules(FULLPKGPATH, VALUE)
 - Configure(FULLPKGPATH, VALUE) 	(corresponds to CONFIGURE_STYLE)
 - ConfigureArgs(FULLPKGPATH, VALUE)
@@ -86,6 +88,8 @@ All the libraries the FULLPKGPATH depends upon, with optional version
 number specification stored in EXTRA
 coming from either the WANTLIB variable or various LIB_DEPENDS.
 
+- Multi(FULLPKGPATH, VALUE, SUBPKGPATH)
+also contains the normalized pkgpath for the corresponding subpackage.
 - Broken(FULLPKGPATH, ARCH, TEXT)
 This is stored both in the main table (for now) and in a separate table, with
 keywords since it may be arch-dependent

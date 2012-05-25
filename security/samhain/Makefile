@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2012/05/15 09:47:03 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.9 2012/05/18 13:05:15 ajacoutot Exp $
 
 COMMENT-main=		Samhain Intrusion Detection System - documentation
 COMMENT-client=		Samhain Intrusion Detection System - client
@@ -12,9 +12,9 @@ FULLPKGNAME-client=	samhain-${VERSION}
 FULLPKGPATH-client=	security/samhain,-client
 PKGNAME-server=		samhain-server-${VERSION}
 
-REVISION-main=		0
-REVISION-client=	1
-REVISION-server=	0
+REVISION-main=		2
+REVISION-client=	5
+REVISION-server=	4
 
 CATEGORIES=		security
 
@@ -40,35 +40,30 @@ CONFIGURE_ARGS=		--enable-login-watch \
 NO_REGRESS=		Yes
 
 MULTI_PACKAGES=		-main
-PSEUDO_FLAVORS=		no_server
 FLAVORS=		mysql postgresql
-FLAVOR?=		no_server
+FLAVOR?=
 
 SUBST_VARS=		FLAVOR
 
-# if non-backend-related flavors are added, add them to
-# the following line as ":L:Nflavor1:Nflavor2" so that
-# they don't trigger a "Conflicting flavors" error.
-BACKEND=		${FLAVOR}
-.if ${BACKEND} == "mysql"
+.if ${FLAVOR} == "mysql"
 MULTI_PACKAGES+=	-server
-RUN_DEPENDS+=		${BASE_PKGPATH},-main
+RUN_DEPENDS-server+=	security/samhain,-main
 LIB_DEPENDS-server+=	databases/mysql,-main
 WANTLIB-server+=	c crypto m mysqlclient ssl z
 CONFIGURE_ARGS+=	--with-database=mysql \
 			--enable-xml-log \
 			--with-cflags=-I${LOCALBASE}/include/mysql \
 			--with-libs=-L${LOCALBASE}/lib/mysql
-.elif ${BACKEND} == "postgresql"
+.elif ${FLAVOR} == "postgresql"
 MULTI_PACKAGES+=	-server
-RUN_DEPENDS+=		${BASE_PKGPATH},-main
+RUN_DEPENDS-server+=	security/samhain,-main
 LIB_DEPENDS-server+=	databases/postgresql,-main
 WANTLIB-server+=	c m pq
 CONFIGURE_ARGS+=	--with-database=postgresql \
 			--enable-xml-log
-.elif ${BACKEND} == "no_server"
+.elif empty(FLAVOR)
 MULTI_PACKAGES+=	-client
-RUN_DEPENDS+=		${BASE_PKGPATH},-main
+RUN_DEPENDS-client+=	security/samhain,-main
 WANTLIB-client+=	c pthread z
 CONFIGURE_ARGS+=	--enable-network=client
 .else
@@ -78,9 +73,11 @@ ERRORS+=		"Fatal: conflicting or unknown flavors: ${FLAVOR}";
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/samhain
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/samhain/README
-.if ${FLAVOR:L:Mno_server}
+.if empty(FLAVOR)
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/samhain
 	${INSTALL_DATA} ${WRKSRC}/samhainrc ${PREFIX}/share/examples/samhain/
+	${INSTALL} -c -s -o root -g bin -m 700 \
+		${WRKSRC}/samhain_setpwd ${PREFIX}/sbin
 .else
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/yule
 	${INSTALL_DATA} ${WRKSRC}/yulerc.template \

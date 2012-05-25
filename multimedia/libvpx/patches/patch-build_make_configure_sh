@@ -1,9 +1,9 @@
-$OpenBSD: patch-build_make_configure_sh,v 1.4 2012/02/28 12:28:29 dcoppa Exp $
---- build/make/configure.sh.orig	Fri Jan 27 12:36:39 2012
-+++ build/make/configure.sh	Sat Mar 10 11:07:24 2012
+$OpenBSD: patch-build_make_configure_sh,v 1.5 2012/05/22 18:22:50 ajacoutot Exp $
+--- build/make/configure.sh.orig	Tue May  8 19:14:00 2012
++++ build/make/configure.sh	Wed May 16 17:07:35 2012
 @@ -1,4 +1,4 @@
 -#!/bin/bash
-+#!/usr/local/bin/bash
++#!${BASH}
  ##
  ##  configure.sh
  ##
@@ -16,7 +16,7 @@ $OpenBSD: patch-build_make_configure_sh,v 1.4 2012/02/28 12:28:29 dcoppa Exp $
          enable gcc
      setup_gnu_toolchain
      ;;
-@@ -1019,7 +1019,7 @@ EOF
+@@ -1082,7 +1082,7 @@ EOF
          case ${toolchain} in
              *-win*);;
              *-android-gcc);;

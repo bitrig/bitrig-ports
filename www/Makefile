@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.559 2012/05/01 12:22:17 jasper Exp $
+# $OpenBSD: Makefile,v 1.562 2012/05/23 15:12:43 jasper Exp $
 # $FreeBSD: Makefile,v 1.65 1997/11/17 06:31:39 fenner Exp $
 
      SUBDIR =
@@ -145,7 +145,6 @@
      SUBDIR += netsurf
      SUBDIR += nginx
      SUBDIR += nginx,passenger
-     SUBDIR += node
      SUBDIR += nostromo
      SUBDIR += opera
      SUBDIR += owncloud
@@ -364,6 +363,7 @@
      SUBDIR += phpicalendar
      SUBDIR += phpldapadmin
      SUBDIR += phplist
+     SUBDIR += phpmemcachedadmin
      SUBDIR += phpmyadmin
      SUBDIR += phppgadmin
      SUBDIR += piwik
@@ -416,6 +416,7 @@
      SUBDIR += py-zine
      SUBDIR += pyblosxom
      SUBDIR += rackmonkey
+     SUBDIR += racktables
      SUBDIR += raggle
      SUBDIR += ratproxy
      SUBDIR += rawdog
