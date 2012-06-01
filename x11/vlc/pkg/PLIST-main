@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST-main,v 1.22 2012/05/03 06:51:25 ajacoutot Exp $
+@comment $OpenBSD: PLIST-main,v 1.24 2012/05/31 07:04:38 ajacoutot Exp $
 @pkgpath x11/vlc
 %%amd64%%
 %%i386%%
@@ -222,6 +222,7 @@ lib/vlc/plugins/demux/libes_plugin.so
 lib/vlc/plugins/demux/libflacsys_plugin.so
 lib/vlc/plugins/demux/libh264_plugin.so
 lib/vlc/plugins/demux/libimage_plugin.so
+lib/vlc/plugins/demux/liblive555_plugin.so
 lib/vlc/plugins/demux/libmjpeg_plugin.so
 lib/vlc/plugins/demux/libmkv_plugin.so
 lib/vlc/plugins/demux/libmp4_plugin.so
@@ -250,6 +251,8 @@ lib/vlc/plugins/demux/libxa_plugin.so
 lib/vlc/plugins/gui/
 lib/vlc/plugins/gui/libqt4_plugin.so
 lib/vlc/plugins/gui/libskins2_plugin.so
+lib/vlc/plugins/media_library/
+lib/vlc/plugins/media_library/libmedia_library_plugin.so
 lib/vlc/plugins/meta_engine/
 lib/vlc/plugins/meta_engine/libfolder_plugin.so
 lib/vlc/plugins/meta_engine/libtaglib_plugin.so
@@ -261,6 +264,7 @@ lib/vlc/plugins/misc/libinhibit_plugin.so
 lib/vlc/plugins/misc/liblogger_plugin.so
 lib/vlc/plugins/misc/libmemcpy_plugin.so
 lib/vlc/plugins/misc/libosd_parser_plugin.so
+lib/vlc/plugins/misc/libsqlite_plugin.so
 lib/vlc/plugins/misc/libstats_plugin.so
 lib/vlc/plugins/misc/libvod_rtsp_plugin.so
 lib/vlc/plugins/misc/libxdg_screensaver_plugin.so

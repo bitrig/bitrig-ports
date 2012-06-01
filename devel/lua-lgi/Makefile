@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.5 2012/05/18 20:44:10 jasper Exp $
+# $OpenBSD: Makefile,v 1.7 2012/05/26 08:56:44 jasper Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	lua bindings to libraries using GObject-Introspection
 
-DISTNAME=	lgi-0.5.1
+DISTNAME=	lgi-0.6
 PKGNAME=	lua-${DISTNAME}
 CATEGORIES=	devel
 
@@ -31,10 +31,14 @@ USE_GMAKE=	Yes
 MAKE_ENV=	MAKE=${MAKE_PROGRAM}
 
 REGRESS_TARGET= check
+REGRESS_IS_INTERACTIVE=x11
 
 post-install:
 	${INSTALL_DATA_DIR} ${MODLUA_EXAMPLEDIR}
 	cd ${WRKSRC}/samples/ && umask 022 && \
 		pax -rw . ${MODLUA_EXAMPLEDIR}
+
+pre-regress:
+	${SUBST_CMD} ${WRKSRC}/tests/Makefile
 
 .include <bsd.port.mk>

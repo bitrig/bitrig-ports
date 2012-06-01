@@ -1,9 +1,10 @@
-# $OpenBSD: Makefile,v 1.21 2012/03/29 06:42:00 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.23 2012/05/28 15:55:12 ajacoutot Exp $
 
 COMMENT=	simple scanning utility
 
 GNOME_PROJECT=	simple-scan
-GNOME_VERSION=	3.3.92
+GNOME_VERSION=	3.4.2
+REVISION=	0
 
 CATEGORIES=	graphics
 
@@ -23,6 +24,9 @@ WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 gtk-3
 WANTLIB += jpeg m pango-1.0 pangocairo-1.0 pangoft2-1.0 pixman-1
 WANTLIB += png pthread pthread-stubs sane xcb xcb-render xcb-shm
 WANTLIB += z
+
+MASTER_SITES=	https://launchpad.net/simple-scan/${GNOME_VERSION:C/^([0-9]+\.[0-9]+).*/\1/}/${GNOME_VERSION}/+download/
+EXTRACT_SUFX=	.tar.gz
 
 MODULES=	devel/gettext \
 		x11/gnome \

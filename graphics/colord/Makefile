@@ -1,14 +1,20 @@
-# $OpenBSD: Makefile,v 1.10 2012/04/28 10:52:08 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.14 2012/05/28 16:38:35 ajacoutot Exp $
 
-COMMENT=	device color profile management daemon
+COMMENT-main=	device color profile management daemon
+COMMENT-gtk=	GTK integration for libcolord
 
-DISTNAME=	colord-0.1.18
+V=		0.1.21
+DISTNAME=	colord-${V}
 EXTRACT_SUFX=	.tar.xz
-REVISION=	1
+PKGNAME-main=	${DISTNAME}
+PKGNAME-gtk=	colord-gtk-${V}
 
-SHARED_LIBS +=  colord               0.0      # 1.4
+REVISION-main=	1
 
-CATEGORIES=	graphics devel
+SHARED_LIBS +=  colord               0.1      # 1.11
+SHARED_LIBS +=  colord-gtk           0.0      # 1.11
+
+CATEGORIES=	graphics x11
 
 HOMEPAGE=	http://www.freedesktop.org/software/colord/
 
@@ -20,10 +26,18 @@ PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
-WANTLIB += c ffi gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
-WANTLIB += lcms2 m pcre polkit-gobject-1 pthread sqlite3 z
+WANTLIB += ffi gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
+WANTLIB += lcms2 m pcre z
+
+WANTLIB-main += ${WANTLIB}
+WANTLIB-main += c polkit-gobject-1 pthread sqlite3
 
 MASTER_SITES=	http://www.freedesktop.org/software/colord/releases/
+
+PSEUDO_FLAVORS=	no_gtk bootstrap
+FLAVOR?=
+
+MULTI_PACKAGES=	-main -gtk
 
 MODULES=	devel/gettext \
 		textproc/intltool
@@ -32,12 +46,12 @@ BUILD_DEPENDS=	lang/vala \
 		devel/gobject-introspection \
 		textproc/docbook2x
 
-LIB_DEPENDS=	sysutils/polkit \
+LIB_DEPENDS-main=sysutils/polkit \
 		graphics/lcms2
 
 # technically not needed, however it is handy to have some profiles to
 # start working with
-RUN_DEPENDS=	graphics/shared-color-profiles
+RUN_DEPENDS-main=graphics/shared-color-profiles
 
 USE_GMAKE=	Yes
 USE_LIBTOOL=	Yes
@@ -56,6 +70,22 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 
 FAKE_FLAGS=	sysconfdir="${PREFIX}/share/examples/colord"
 
+.include <bsd.port.arch.mk>
+
+.if ${BUILD_PACKAGES:M-gtk}
+WANTLIB-gtk += ${WANTLIB}
+WANTLIB-gtk += GL X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes
+WANTLIB-gtk += Xi Xinerama Xrandr Xrender Xxf86vm atk-1.0 cairo cairo-gobject
+WANTLIB-gtk += colord drm expat fontconfig freetype gdk-3 gdk_pixbuf-2.0
+WANTLIB-gtk += gtk-3 pango-1.0 pangocairo-1.0 pangoft2-1.0 pixman-1
+WANTLIB-gtk += png pthread-stubs stdc++ xcb xcb-render xcb-shm
+LIB_DEPENDS-gtk=graphics/colord,-main \
+		x11/gtk+3
+CONFIGURE_ARGS += --enable-gtk
+.else
+CONFIGURE_ARGS += --disable-gtk
+.endif
+
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/etc/colord.conf.in \
 		 ${WRKSRC}/src/{cd-profile-store.c,cd-profile.c}
@@ -67,10 +97,6 @@ pre-configure:
 		${WRKSRC}/configure
 
 post-install:
-	rm -rf ${WRKINST}/lib ${PREFIX}/var
-	# needs gudev
-	rm ${PREFIX}/share/examples/colord/dbus-1/system.d/org.freedesktop.colord-sane.conf \
-		${PREFIX}/share/dbus-1/system-services/org.freedesktop.colord-sane.service \
-		${PREFIX}/share/dbus-1/interfaces/org.freedesktop.colord.sane.xml
+	rm -rf ${WRKINST}/lib
 
 .include <bsd.port.mk>

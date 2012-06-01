@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.258 2012/05/16 06:11:04 jasper Exp $
+# $OpenBSD: Makefile,v 1.260 2012/06/01 13:02:24 landry Exp $
 # $FreeBSD: Makefile,v 1.26 1997/11/20 08:58:51 tg Exp $
 
      SUBDIR =
@@ -41,6 +41,7 @@
      SUBDIR += deja-dup
      SUBDIR += dellflash
      SUBDIR += detox
+     SUBDIR += dfc
      SUBDIR += diskrescue
      SUBDIR += dmassage
      SUBDIR += dmidecode
@@ -106,6 +107,7 @@
      SUBDIR += ndesk-dbus
      SUBDIR += ndesk-dbus-glib
      SUBDIR += notification-daemon
+     SUBDIR += node-daemon
      SUBDIR += node-syslog
      SUBDIR += ns4
      SUBDIR += nut

@@ -1,4 +1,4 @@
-# $OpenBSD: pkgpath.mk,v 1.46 2012/05/15 11:48:07 espie Exp $
+# $OpenBSD: pkgpath.mk,v 1.48 2012/05/28 09:43:17 espie Exp $
 # ex:ts=4 sw=4 filetype=make:
 #	pkgpath.mk - 2003 Marc Espie
 #	This file is in the public domain.
@@ -20,11 +20,6 @@ PKGPATH != PORTSDIR_PATH=${PORTSDIR_PATH} \
 ERRORS += "Fatal: can't figure out PKGPATH"
 PKGPATH =${.CURDIR}
 .  endif
-.endif
-.if empty(PKGPATH)
-PKGDEPTH =
-.else
-PKGDEPTH = ${PKGPATH:C|[^./][^/]*|..|g}/
 .endif
 
 # Code to invoke to split dir,-multi,flavor
@@ -114,8 +109,6 @@ _cache_fragment = \
 		trap "rm -rf 2>/dev/null $${_DEPENDS_CACHE} || ${SUDO} rm -rf $${_DEPENDS_CACHE}" 0; \
 		trap 'exit 1' 1 2 3 13 15;; \
 	esac; PKGPATH=${PKGPATH}; export PKGPATH
-
-HTMLIFY =	sed -e 's/&/\&amp;/g' -e 's/>/\&gt;/g' -e 's/</\&lt;/g'
 
 _MAKE = cd ${.CURDIR} && PKGPATH=${PKGPATH} exec ${MAKE}
 _SUDOMAKE = cd ${.CURDIR} && PKGPATH=${PKGPATH} exec ${SUDO} ${MAKE}
