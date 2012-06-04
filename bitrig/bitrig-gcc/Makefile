@@ -52,9 +52,13 @@ HOMEPAGE =	http://gcc.gnu.org/
 
 #DIST_SUBDIR=gcc
 CONFIG=${MACHINE_ARCH}-unknown-bitrig${OSREV}
+.if ${MACHINE_ARCH:Mamd64}
+CONFIG = x86_64-unknown-bitrig${OSREV}
+.endif
+
 SUBST_VARS+=CONFIG V
 
-USE_LIBTOOL =	Yes
+USE_LIBTOOL =	gnu
 
 BUILD_DEPENDS +=	devel/bison
 
@@ -153,10 +157,6 @@ LIB_DEPENDS +=		devel/gmp>=4.2 \
 			devel/mpfr \
 			devel/libmpc
 LIB_DEPENDS-gcclibs =
-
-.if ${MACHINE_ARCH:Mamd64}
-CONFIG = x86_64-unknown-bitrig${OSREV}
-.endif
 
 WRKDIST=	${WRKDIR}/${REALDISTNAME}
 
