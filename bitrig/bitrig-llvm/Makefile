@@ -88,6 +88,6 @@ post-install:
 	    ${PREFIX}/share/llvm
 	${INSTALL_DATA_DIR} ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKSRC}/docs/CommandGuide/man/man1/* \
-	    ${PREFIX}/man/man1
+	    ${PREFIX}/share/man/man1
 
 .include <bsd.port.mk>
