@@ -1,8 +1,8 @@
 @comment $OpenBSD: PLIST-main,v 1.12 2012/04/28 09:53:38 sthen Exp $
+@conflict subversion-*-gnome_keyring
 @pkgpath devel/subversion,no_bindings
 @pkgpath devel/subversion,-main,gnome_keyring
 @pkgpath devel/subversion
-@conflict subversion-*-gnome_keyring
 %%SHARED%%
 @comment @bin bin/diff
 @comment @bin bin/diff3
@@ -64,40 +64,192 @@ include/subversion-1/svn_version.h
 include/subversion-1/svn_wc.h
 include/subversion-1/svn_xml.h
 @comment lib/apache2/
+@lib lib/libsvn_auth_gnome_keyring-1.so.${LIBsvn_auth_gnome_keyring-1_VERSION}
 lib/libsvn_client-1.a
 lib/libsvn_client-1.la
+@lib lib/libsvn_client-1.so.${LIBsvn_client-1_VERSION}
 lib/libsvn_delta-1.a
 lib/libsvn_delta-1.la
+@lib lib/libsvn_delta-1.so.${LIBsvn_delta-1_VERSION}
 lib/libsvn_diff-1.a
 lib/libsvn_diff-1.la
+@lib lib/libsvn_diff-1.so.${LIBsvn_diff-1_VERSION}
 lib/libsvn_fs-1.a
 lib/libsvn_fs-1.la
+@lib lib/libsvn_fs-1.so.${LIBsvn_fs-1_VERSION}
 lib/libsvn_fs_base-1.a
 lib/libsvn_fs_base-1.la
+@lib lib/libsvn_fs_base-1.so.${LIBsvn_fs_base-1_VERSION}
 lib/libsvn_fs_fs-1.a
 lib/libsvn_fs_fs-1.la
+@lib lib/libsvn_fs_fs-1.so.${LIBsvn_fs_fs-1_VERSION}
 lib/libsvn_fs_util-1.a
 lib/libsvn_fs_util-1.la
+@lib lib/libsvn_fs_util-1.so.${LIBsvn_fs_util-1_VERSION}
 lib/libsvn_ra-1.a
 lib/libsvn_ra-1.la
+@lib lib/libsvn_ra-1.so.${LIBsvn_ra-1_VERSION}
 lib/libsvn_ra_local-1.a
 lib/libsvn_ra_local-1.la
+@lib lib/libsvn_ra_local-1.so.${LIBsvn_ra_local-1_VERSION}
 lib/libsvn_ra_neon-1.a
 lib/libsvn_ra_neon-1.la
+@lib lib/libsvn_ra_neon-1.so.${LIBsvn_ra_neon-1_VERSION}
 lib/libsvn_ra_svn-1.a
 lib/libsvn_ra_svn-1.la
+@lib lib/libsvn_ra_svn-1.so.${LIBsvn_ra_svn-1_VERSION}
 lib/libsvn_repos-1.a
 lib/libsvn_repos-1.la
+@lib lib/libsvn_repos-1.so.${LIBsvn_repos-1_VERSION}
 lib/libsvn_subr-1.a
 lib/libsvn_subr-1.la
+@lib lib/libsvn_subr-1.so.${LIBsvn_subr-1_VERSION}
+@lib lib/libsvn_swig_perl-1.so.${LIBsvn_swig_perl-1_VERSION}
+@lib lib/libsvn_swig_${MODPY_PY_PREFIX}1.so.${LIBsvn_swig_py-1_VERSION}
+@lib lib/libsvn_swig_ruby-1.so.${LIBsvn_swig_ruby-1_VERSION}
 lib/libsvn_wc-1.a
 lib/libsvn_wc-1.la
 @comment lib/python${MODPY_VERSION}/
 @comment lib/python${MODPY_VERSION}/site-packages/
-@comment lib/ruby/
-@comment lib/ruby/site_ruby/
 @comment lib/ruby/site_ruby/${MODRUBY_LIBREV}/
 @comment lib/ruby/site_ruby/${MODRUBY_LIBREV}/${MODRUBY_ARCH}/
+@lib lib/libsvn_wc-1.so.${LIBsvn_wc-1_VERSION}
+lib/python${MODPY_VERSION}/site-packages/libsvn/
+lib/python${MODPY_VERSION}/site-packages/libsvn/__init__.py
+lib/python${MODPY_VERSION}/site-packages/libsvn/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/libsvn/_client.a
+lib/python${MODPY_VERSION}/site-packages/libsvn/_client.la
+lib/python${MODPY_VERSION}/site-packages/libsvn/_client.so
+lib/python${MODPY_VERSION}/site-packages/libsvn/_core.a
+lib/python${MODPY_VERSION}/site-packages/libsvn/_core.la
+lib/python${MODPY_VERSION}/site-packages/libsvn/_core.so
+lib/python${MODPY_VERSION}/site-packages/libsvn/_delta.a
+lib/python${MODPY_VERSION}/site-packages/libsvn/_delta.la
+lib/python${MODPY_VERSION}/site-packages/libsvn/_delta.so
+lib/python${MODPY_VERSION}/site-packages/libsvn/_diff.a
+lib/python${MODPY_VERSION}/site-packages/libsvn/_diff.la
+lib/python${MODPY_VERSION}/site-packages/libsvn/_diff.so
+lib/python${MODPY_VERSION}/site-packages/libsvn/_fs.a
+lib/python${MODPY_VERSION}/site-packages/libsvn/_fs.la
+lib/python${MODPY_VERSION}/site-packages/libsvn/_fs.so
+lib/python${MODPY_VERSION}/site-packages/libsvn/_ra.a
+lib/python${MODPY_VERSION}/site-packages/libsvn/_ra.la
+lib/python${MODPY_VERSION}/site-packages/libsvn/_ra.so
+lib/python${MODPY_VERSION}/site-packages/libsvn/_repos.a
+lib/python${MODPY_VERSION}/site-packages/libsvn/_repos.la
+lib/python${MODPY_VERSION}/site-packages/libsvn/_repos.so
+lib/python${MODPY_VERSION}/site-packages/libsvn/_wc.a
+lib/python${MODPY_VERSION}/site-packages/libsvn/_wc.la
+lib/python${MODPY_VERSION}/site-packages/libsvn/_wc.so
+lib/python${MODPY_VERSION}/site-packages/libsvn/client.py
+lib/python${MODPY_VERSION}/site-packages/libsvn/client.pyc
+lib/python${MODPY_VERSION}/site-packages/libsvn/core.py
+lib/python${MODPY_VERSION}/site-packages/libsvn/core.pyc
+lib/python${MODPY_VERSION}/site-packages/libsvn/delta.py
+lib/python${MODPY_VERSION}/site-packages/libsvn/delta.pyc
+lib/python${MODPY_VERSION}/site-packages/libsvn/diff.py
+lib/python${MODPY_VERSION}/site-packages/libsvn/diff.pyc
+lib/python${MODPY_VERSION}/site-packages/libsvn/fs.py
+lib/python${MODPY_VERSION}/site-packages/libsvn/fs.pyc
+lib/python${MODPY_VERSION}/site-packages/libsvn/ra.py
+lib/python${MODPY_VERSION}/site-packages/libsvn/ra.pyc
+lib/python${MODPY_VERSION}/site-packages/libsvn/repos.py
+lib/python${MODPY_VERSION}/site-packages/libsvn/repos.pyc
+lib/python${MODPY_VERSION}/site-packages/libsvn/wc.py
+lib/python${MODPY_VERSION}/site-packages/libsvn/wc.pyc
+lib/python${MODPY_VERSION}/site-packages/svn/
+lib/python${MODPY_VERSION}/site-packages/svn/__init__.py
+lib/python${MODPY_VERSION}/site-packages/svn/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/svn/client.py
+lib/python${MODPY_VERSION}/site-packages/svn/client.pyc
+lib/python${MODPY_VERSION}/site-packages/svn/core.py
+lib/python${MODPY_VERSION}/site-packages/svn/core.pyc
+lib/python${MODPY_VERSION}/site-packages/svn/delta.py
+lib/python${MODPY_VERSION}/site-packages/svn/delta.pyc
+lib/python${MODPY_VERSION}/site-packages/svn/diff.py
+lib/python${MODPY_VERSION}/site-packages/svn/diff.pyc
+lib/python${MODPY_VERSION}/site-packages/svn/fs.py
+lib/python${MODPY_VERSION}/site-packages/svn/fs.pyc
+lib/python${MODPY_VERSION}/site-packages/svn/ra.py
+lib/python${MODPY_VERSION}/site-packages/svn/ra.pyc
+lib/python${MODPY_VERSION}/site-packages/svn/repos.py
+lib/python${MODPY_VERSION}/site-packages/svn/repos.pyc
+lib/python${MODPY_VERSION}/site-packages/svn/wc.py
+lib/python${MODPY_VERSION}/site-packages/svn/wc.pyc
+@comment lib/ruby/
+@comment lib/ruby/site_ruby/
+${MODRUBY_SITEDIR}/
+${MODRUBY_SITEDIR}/svn/
+${MODRUBY_SITEDIR}/svn/client.rb
+${MODRUBY_SITEDIR}/svn/commit-mailer.rb
+${MODRUBY_SITEDIR}/svn/core.rb
+${MODRUBY_SITEDIR}/svn/delta.rb
+${MODRUBY_SITEDIR}/svn/error.rb
+${MODRUBY_SITEDIR}/svn/fs.rb
+${MODRUBY_SITEDIR}/svn/info.rb
+${MODRUBY_SITEDIR}/svn/ra.rb
+${MODRUBY_SITEDIR}/svn/repos.rb
+${MODRUBY_SITEDIR}/svn/synchronizer.rb
+${MODRUBY_SITEDIR}/svn/util.rb
+${MODRUBY_SITEDIR}/svn/wc.rb
+${MODRUBY_SITEDIR}/x86_64-bitrig/
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/client.a
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/client.la
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/client.so
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/core.a
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/core.la
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/core.so
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/delta.a
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/delta.la
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/delta.so
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/diff.a
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/diff.la
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/diff.so
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/fs.a
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/fs.la
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/fs.so
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/ra.a
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/ra.la
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/ra.so
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/repos.a
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/repos.la
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/repos.so
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/wc.a
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/wc.la
+${MODRUBY_SITEDIR}/x86_64-bitrig/svn/ext/wc.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Base.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Client.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Core.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Delta.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Fs.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Ra.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Repos.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Wc.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Client/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Client/_Client.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Client/_Client.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Core/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Core/_Core.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Core/_Core.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Delta/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Delta/_Delta.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Delta/_Delta.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Fs/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Fs/_Fs.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Fs/_Fs.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Ra/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Ra/_Ra.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Ra/_Ra.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Repos/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Repos/_Repos.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Repos/_Repos.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Wc/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Wc/_Wc.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Wc/_Wc.so
 @man man/man1/svn.1
 @man man/man1/svnadmin.1
 @man man/man1/svndumpfilter.1
@@ -136,7 +288,6 @@ share/examples/subversion/getfile.py
 share/examples/subversion/getlocks_test.c
 share/examples/subversion/geturl.py
 share/examples/subversion/headrev.c
-share/examples/subversion/info.rb
 share/examples/subversion/hook-scripts/
 share/examples/subversion/hook-scripts/commit-access-control.cfg.example
 share/examples/subversion/hook-scripts/commit-access-control.pl
@@ -156,6 +307,7 @@ share/examples/subversion/hook-scripts/svn2feed.py
 share/examples/subversion/hook-scripts/svnperms.conf.example
 share/examples/subversion/hook-scripts/svnperms.py
 share/examples/subversion/hook-scripts/verify-po.py
+share/examples/subversion/info.rb
 share/examples/subversion/minimal_client.c
 share/examples/subversion/putfile.py
 share/examples/subversion/revplist.py
