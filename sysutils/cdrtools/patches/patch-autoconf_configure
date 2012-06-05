@@ -1,0 +1,11 @@
+$OpenBSD$
+--- autoconf/configure.orig	Tue Jun  5 14:51:11 2012
++++ autoconf/configure	Tue Jun  5 14:51:38 2012
+@@ -5089,6 +5089,7 @@ if test $ac_cv_dyn_arrays = yes; then
+ EOF
+ 
+ fi
++ac_cv_pragma_weak=no
+ echo $ac_n "checking if compiler allows pragma weak""... $ac_c" 1>&6
+ echo "configure:5094: checking if compiler allows pragma weak" >&5
+ if eval "test \"`echo '$''{'ac_cv_pragma_weak'+set}'`\" = set"; then
