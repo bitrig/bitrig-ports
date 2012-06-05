@@ -1,11 +1,13 @@
 $OpenBSD$
---- include/llvm/ADT/Triple.h.orig	Fri May 18 11:38:15 2012
-+++ include/llvm/ADT/Triple.h	Fri May 18 11:38:52 2012
-@@ -99,6 +99,7 @@ class Triple { (public)
-     Haiku,
+--- include/llvm/ADT/Triple.h.orig	Mon Jun  4 16:23:54 2012
++++ include/llvm/ADT/Triple.h	Mon Jun  4 16:24:26 2012
+@@ -98,7 +98,8 @@ class Triple { (public)
      Minix,
      RTEMS,
-+    Bitrig,
-     NativeClient
+     NativeClient,
+-    CNK         // BG/P Compute-Node Kernel
++    CNK,         // BG/P Compute-Node Kernel
++    Bitrig
    };
    enum EnvironmentType {
+     UnknownEnvironment,

@@ -1,6 +1,6 @@
 $OpenBSD$
---- autoconf/m4/libtool.m4.orig	Thu May 17 10:01:46 2012
-+++ autoconf/m4/libtool.m4	Thu May 17 10:03:25 2012
+--- autoconf/m4/libtool.m4.orig	Mon Jun  4 13:38:21 2012
++++ autoconf/m4/libtool.m4	Mon Jun  4 13:39:27 2012
 @@ -176,7 +176,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
@@ -15,7 +15,7 @@ $OpenBSD$
      ;;
  
 -  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | darwin* | dragonfly* | bitrig*)
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
@@ -28,15 +28,6 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -2302,7 +2302,7 @@ freebsd* | kfreebsd*-gnu | dragonfly*)
-     i*86 )
-       # Not sure whether the presence of OpenBSD here was a mistake.
-       # Let's accept both of them until this is cleared up.
--      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[[3-9]]86 (compact )?demand paged shared library'
-+      lt_cv_deplibs_check_method='file_magic (Bitrig|FreeBSD|OpenBSD|DragonFly)/i[[3-9]]86 (compact )?demand paged shared library'
-       lt_cv_file_magic_cmd=/usr/bin/file
-       lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
-       ;;
 @@ -2372,7 +2372,7 @@ nto-qnx*)
    lt_cv_deplibs_check_method=unknown
    ;;

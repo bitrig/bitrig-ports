@@ -1,20 +1,19 @@
 $OpenBSD$
---- lib/Support/Triple.cpp.orig	Fri May 18 11:54:48 2012
-+++ lib/Support/Triple.cpp	Fri May 18 11:55:39 2012
-@@ -116,6 +116,7 @@ const char *Triple::getOSTypeName(OSType Kind) {
-   case Haiku: return "haiku";
-   case Minix: return "minix";
+--- lib/Support/Triple.cpp.orig	Mon Jun  4 16:31:27 2012
++++ lib/Support/Triple.cpp	Mon Jun  4 16:32:14 2012
+@@ -119,6 +119,7 @@ const char *Triple::getOSTypeName(OSType Kind) {
    case RTEMS: return "rtems";
-+  case Bitrig: return "bitrig";
    case NativeClient: return "nacl";
+   case CNK: return "cnk";
++  case Bitrig: return "bitrig";
    }
  
-@@ -384,6 +385,8 @@ Triple::OSType Triple::ParseOS(StringRef OSName) {
-     return Minix;
-   else if (OSName.startswith("rtems"))
-     return RTEMS;
-+  else if (OSName.startswith("bitrig"))
-+    return Bitrig;
-   else if (OSName.startswith("nacl"))
-     return NativeClient;
-   else
+   llvm_unreachable("Invalid OSType");
+@@ -288,6 +289,7 @@ static Triple::OSType parseOS(StringRef OSName) {
+     .StartsWith("rtems", Triple::RTEMS)
+     .StartsWith("nacl", Triple::NativeClient)
+     .StartsWith("cnk", Triple::CNK)
++    .StartsWith("bitrig", Triple::Bitrig)
+     .Default(Triple::UnknownOS);
+ }
+ 

@@ -1,12 +1,12 @@
 $OpenBSD$
---- tools/llvm-shlib/Makefile.orig	Fri May 18 10:34:09 2012
-+++ tools/llvm-shlib/Makefile	Fri May 18 10:34:47 2012
+--- tools/llvm-shlib/Makefile.orig	Mon Jun  4 16:43:10 2012
++++ tools/llvm-shlib/Makefile	Mon Jun  4 16:43:29 2012
 @@ -63,7 +63,7 @@ ifeq ($(HOST_OS),Darwin)
      endif
  endif
  
--ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux FreeBSD OpenBSD))
-+ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux FreeBSD OpenBSD Bitrig))
+-ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux FreeBSD OpenBSD GNU))
++ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux FreeBSD OpenBSD GNU Bitrig))
      # Include everything from the .a's into the shared library.
      LLVMLibsOptions := -Wl,--whole-archive $(LLVMLibsOptions) \
                         -Wl,--no-whole-archive

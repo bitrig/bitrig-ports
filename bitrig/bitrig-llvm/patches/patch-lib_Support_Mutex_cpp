@@ -1,12 +1,12 @@
 $OpenBSD$
---- lib/Support/Mutex.cpp.orig	Fri May 18 13:36:54 2012
-+++ lib/Support/Mutex.cpp	Fri May 18 13:37:21 2012
-@@ -75,7 +75,7 @@ MutexImpl::MutexImpl( bool recursive)
-     errorcode = pthread_mutexattr_settype(&attr, kind);
-     assert(errorcode == 0);
+--- lib/Support/Mutex.cpp.orig	Mon Jun  4 16:30:49 2012
++++ lib/Support/Mutex.cpp	Mon Jun  4 16:31:07 2012
+@@ -59,7 +59,7 @@ MutexImpl::MutexImpl( bool recursive)
+   errorcode = pthread_mutexattr_settype(&attr, kind);
+   assert(errorcode == 0);
  
 -#if !defined(__FreeBSD__) && !defined(__OpenBSD__) && !defined(__NetBSD__) && !defined(__DragonFly__)
 +#if !defined(__FreeBSD__) && !defined(__OpenBSD__) && !defined(__NetBSD__) && !defined(__DragonFly__) && !defined(__Bitrig__)
-     // Make it a process local mutex
-     errorcode = pthread_mutexattr_setpshared(&attr, PTHREAD_PROCESS_PRIVATE);
-     assert(errorcode == 0);
+   // Make it a process local mutex
+   errorcode = pthread_mutexattr_setpshared(&attr, PTHREAD_PROCESS_PRIVATE);
+   assert(errorcode == 0);

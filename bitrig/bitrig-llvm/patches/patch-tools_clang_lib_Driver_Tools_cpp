@@ -1,7 +1,7 @@
 $OpenBSD$
---- tools/clang/lib/Driver/Tools.cpp.orig	Mon Nov  7 04:27:39 2011
-+++ tools/clang/lib/Driver/Tools.cpp	Fri May 18 15:01:10 2012
-@@ -878,6 +878,11 @@ void Clang::AddX86TargetArgs(const ArgList &Args,
+--- tools/clang/lib/Driver/Tools.cpp.orig	Mon Jun  4 17:16:51 2012
++++ tools/clang/lib/Driver/Tools.cpp	Mon Jun  4 17:56:30 2012
+@@ -977,6 +977,11 @@ void Clang::AddX86TargetArgs(const ArgList &Args,
          CPUName = "x86-64";
        else if (getToolChain().getArch() == llvm::Triple::x86)
          CPUName = "i586";
@@ -13,7 +13,7 @@ $OpenBSD$
      } else if (getToolChain().getOS().startswith("openbsd"))  {
        if (getToolChain().getArch() == llvm::Triple::x86_64)
          CPUName = "x86-64";
-@@ -1738,8 +1743,12 @@ void Clang::ConstructJob(Compilation &C, const JobActi
+@@ -2145,8 +2150,12 @@ void Clang::ConstructJob(Compilation &C, const JobActi
      else if (A->getOption().matches(options::OPT_fstack_protector_all))
        StackProtectorLevel = 2;
    } else {
@@ -28,11 +28,16 @@ $OpenBSD$
    }
    if (StackProtectorLevel) {
      CmdArgs.push_back("-stack-protector");
-@@ -3742,6 +3751,158 @@ void auroraux::Link::ConstructJob(Compilation &C, cons
-   C.addCommand(new Command(JA, *this, Exec, CmdArgs));
- }
+@@ -4563,6 +4572,157 @@ void auroraux::Link::ConstructJob(Compilation &C, cons
+   }
  
-+// bitrig
+   addProfileRT(getToolChain(), Args, CmdArgs, getToolChain().getTriple());
++
++  const char *Exec =
++    Args.MakeArgString(getToolChain().GetProgramPath("ld"));
++  C.addCommand(new Command(JA, *this, Exec, CmdArgs));
++}
++
 +void bitrig::Assemble::ConstructJob(Compilation &C, const JobAction &JA,
 +                                     const InputInfo &Output,
 +                                     const InputInfoList &Inputs,
@@ -96,7 +101,7 @@ $OpenBSD$
 +  if (!Args.hasArg(options::OPT_nostdlib) &&
 +      !Args.hasArg(options::OPT_nostartfiles)) {
 +    if (!Args.hasArg(options::OPT_shared)) {
-+      if (Args.hasArg(options::OPT_pg))  
++      if (Args.hasArg(options::OPT_pg))
 +        CmdArgs.push_back(Args.MakeArgString(
 +                                getToolChain().GetFilePath("gcrt0.o")));
 +      else
@@ -119,6 +124,7 @@ $OpenBSD$
 +                     Args.hasArg(options::OPT_fpic) ||
 +                     Args.hasArg(options::OPT_fPIE) ||
 +                     Args.hasArg(options::OPT_fpie));
++
 +  // i386 does NOT have an fpic directory unlike amd64
 +  if (PICEnabled && getToolChain().getArchName() == "amd64") {
 +    CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc/" + Triple + "/4.6.2/fpic"));
@@ -147,7 +153,7 @@ $OpenBSD$
 +      !Args.hasArg(options::OPT_nodefaultlibs)) {
 +    if (D.CCCIsCXX) {
 +      getToolChain().AddCXXStdlibLibArgs(Args, CmdArgs);
-+      if (Args.hasArg(options::OPT_pg)) 
++      if (Args.hasArg(options::OPT_pg))
 +        CmdArgs.push_back("-lm_p");
 +      else
 +        CmdArgs.push_back("-lm");
@@ -177,87 +183,6 @@ $OpenBSD$
 +      CmdArgs.push_back(Args.MakeArgString(
 +                              getToolChain().GetFilePath("crtendS.o")));
 +  }
-+
-+  const char *Exec =
-+    Args.MakeArgString(getToolChain().GetProgramPath("ld"));
-+  C.addCommand(new Command(JA, *this, Exec, CmdArgs));
-+}
-+
-+// openbsd
- void openbsd::Assemble::ConstructJob(Compilation &C, const JobAction &JA,
-                                      const InputInfo &Output,
-                                      const InputInfoList &Inputs,
-@@ -3805,9 +3966,13 @@ void openbsd::Link::ConstructJob(Compilation &C, const
-   if (!Args.hasArg(options::OPT_nostdlib) &&
-       !Args.hasArg(options::OPT_nostartfiles)) {
-     if (!Args.hasArg(options::OPT_shared)) {
-+      if (Args.hasArg(options::OPT_pg))  
-+        CmdArgs.push_back(Args.MakeArgString(
-+                                getToolChain().GetFilePath("gcrt0.o")));
-+      else
-+        CmdArgs.push_back(Args.MakeArgString(
-+                                getToolChain().GetFilePath("crt0.o")));
-       CmdArgs.push_back(Args.MakeArgString(
--                              getToolChain().GetFilePath("crt0.o")));
--      CmdArgs.push_back(Args.MakeArgString(
-                               getToolChain().GetFilePath("crtbegin.o")));
-     } else {
-       CmdArgs.push_back(Args.MakeArgString(
-@@ -3815,12 +3980,26 @@ void openbsd::Link::ConstructJob(Compilation &C, const
-     }
-   }
  
-+  // XXX this is a terrible hack but needed untile we can switch from amd64 to x86_64
-   std::string Triple = getToolChain().getTripleString();
--  if (Triple.substr(0, 6) == "x86_64")
--    Triple.replace(0, 6, "amd64");
--  CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc-lib/" + Triple +
--                                       "/4.2.1"));
-+  if (Triple.substr(0, 5) == "amd64")
-+    Triple.replace(0, 5, "x86_64");
- 
-+  bool PICEnabled = (Args.hasArg(options::OPT_fPIC) ||
-+                     Args.hasArg(options::OPT_fpic) ||
-+                     Args.hasArg(options::OPT_fPIE) ||
-+                     Args.hasArg(options::OPT_fpie));
-+  // i386 does NOT have an fpic directory unlike amd64
-+  if (PICEnabled && getToolChain().getArchName() == "amd64") {
-+    CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc/" + Triple +
-+                                         "/4.6.2/fpic"));
-+    //llvm::errs() << "LINKJOB " << "-L/usr/lib/gcc/" << Triple << "/4.6.2/fpic\n";
-+  } else {
-+    CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc/" + Triple +
-+                                         "/4.6.2"));
-+    //llvm::errs() << "LINKJOB " << "-L/usr/lib/gcc/" << Triple << "/4.6.2\n";
-+  }
-+
-   Args.AddAllArgs(CmdArgs, options::OPT_L);
-   Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
-   Args.AddAllArgs(CmdArgs, options::OPT_e);
-@@ -3831,7 +4010,10 @@ void openbsd::Link::ConstructJob(Compilation &C, const
-       !Args.hasArg(options::OPT_nodefaultlibs)) {
-     if (D.CCCIsCXX) {
-       getToolChain().AddCXXStdlibLibArgs(Args, CmdArgs);
--      CmdArgs.push_back("-lm");
-+      if (Args.hasArg(options::OPT_pg)) 
-+        CmdArgs.push_back("-lm_p");
-+      else
-+        CmdArgs.push_back("-lm");
-     }
- 
-     // FIXME: For some reason GCC passes -lgcc before adding
-@@ -3840,8 +4022,12 @@ void openbsd::Link::ConstructJob(Compilation &C, const
- 
-     if (Args.hasArg(options::OPT_pthread))
-       CmdArgs.push_back("-lpthread");
--    if (!Args.hasArg(options::OPT_shared))
--      CmdArgs.push_back("-lc");
-+    if (!Args.hasArg(options::OPT_shared)) {
-+      if (Args.hasArg(options::OPT_pg)) 
-+         CmdArgs.push_back("-lc_p");
-+      else
-+         CmdArgs.push_back("-lc");
-+    }
-     CmdArgs.push_back("-lgcc");
-   }
- 
+   const char *Exec =
+     Args.MakeArgString(getToolChain().GetProgramPath("ld"));

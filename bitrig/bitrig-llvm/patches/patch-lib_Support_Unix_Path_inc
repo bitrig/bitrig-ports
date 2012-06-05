@@ -1,21 +1,21 @@
 $OpenBSD$
---- lib/Support/Unix/Path.inc.orig	Fri Jul 29 13:26:59 2011
-+++ lib/Support/Unix/Path.inc	Fri May 18 13:39:03 2012
-@@ -261,7 +261,7 @@ Path::GetCurrentDirectory() {
+--- lib/Support/Unix/Path.inc.orig	Mon Jun  4 16:28:18 2012
++++ lib/Support/Unix/Path.inc	Mon Jun  4 16:29:19 2012
+@@ -260,7 +260,7 @@ Path::GetCurrentDirectory() {
+   return Path(pathname);
  }
  
- #if defined(__FreeBSD__) || defined (__NetBSD__) || \
--    defined(__OpenBSD__) || defined(__minix)
-+    defined(__OpenBSD__) || defined(__minix) || defined(__Bitrig__)
+-#if defined(__FreeBSD__) || defined (__NetBSD__) || \
++#if defined(__FreeBSD__) || defined (__NetBSD__) || defined(__Bitrig__) || \
+     defined(__OpenBSD__) || defined(__minix) || defined(__FreeBSD_kernel__)
  static int
  test_dir(char buf[PATH_MAX], char ret[PATH_MAX],
-     const char *dir, const char *bin)
-@@ -330,7 +330,7 @@ Path Path::GetMainExecutable(const char *argv0, void *
+@@ -329,7 +329,7 @@ Path Path::GetMainExecutable(const char *argv0, void *
+     if (realpath(exe_path, link_path))
        return Path(link_path);
    }
- #elif defined(__FreeBSD__) || defined (__NetBSD__) || \
--      defined(__OpenBSD__) || defined(__minix)
-+      defined(__OpenBSD__) || defined(__minix) || defined(__Bitrig__)
+-#elif defined(__FreeBSD__) || defined (__NetBSD__) || \
++#elif defined(__FreeBSD__) || defined (__NetBSD__) || defined(__Bitrig__) || \
+       defined(__OpenBSD__) || defined(__minix) || defined(__FreeBSD_kernel__)
    char exe_path[PATH_MAX];
  
-   if (getprogpath(exe_path, argv0) != NULL)

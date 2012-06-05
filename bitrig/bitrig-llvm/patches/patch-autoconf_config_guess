@@ -1,6 +1,6 @@
 $OpenBSD$
---- autoconf/config.guess.orig	Thu May 17 09:57:36 2012
-+++ autoconf/config.guess	Thu May 17 09:58:42 2012
+--- autoconf/config.guess.orig	Mon Jun  4 13:32:48 2012
++++ autoconf/config.guess	Mon Jun  4 13:36:46 2012
 @@ -202,6 +202,10 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
  	# CPU_TYPE-MANUFACTURER-OPERATING_SYSTEM is used.
  	echo "${machine}-${os}${release}"

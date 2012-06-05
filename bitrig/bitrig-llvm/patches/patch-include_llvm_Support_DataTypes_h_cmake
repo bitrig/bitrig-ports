@@ -1,0 +1,12 @@
+$OpenBSD$
+--- include/llvm/Support/DataTypes.h.cmake.orig	Mon Jun  4 16:24:53 2012
++++ include/llvm/Support/DataTypes.h.cmake	Mon Jun  4 16:37:52 2012
+@@ -79,7 +79,7 @@ typedef u_int64_t uint64_t;
+ #endif
+ #endif
+ 
+-#ifdef _OpenBSD_
++#if defined(_OpenBSD_) || defined (_Bitrig_)
+ #define INT8_MAX 127
+ #define INT8_MIN -128
+ #define UINT8_MAX 255

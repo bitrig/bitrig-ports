@@ -1,7 +1,7 @@
 $OpenBSD$
---- autoconf/config.sub.orig	Thu May 17 09:57:45 2012
-+++ autoconf/config.sub	Thu May 17 09:58:56 2012
-@@ -1334,7 +1334,7 @@ case $os in
+--- autoconf/config.sub.orig	Mon Jun  4 13:37:06 2012
++++ autoconf/config.sub	Mon Jun  4 13:37:16 2012
+@@ -1336,7 +1336,7 @@ case $os in
  	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
  	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
  	      | -hiux* | -386bsd* | -knetbsd* | -mirbsd* | -netbsd* \
