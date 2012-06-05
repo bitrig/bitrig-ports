@@ -2,6 +2,8 @@ $OpenBSD: patch-Makedefs_in,v 1.8 2012/05/17 10:11:23 ajacoutot Exp $
 
 BSD_INSTALL_PROGRAM is used to respect INSTALL_STRIP.
 
+--- Makedefs.in.orig	Wed Feb 29 18:05:55 2012
++++ Makedefs.in	Mon Jun  4 22:38:13 2012
 @@ -41,12 +41,12 @@ SHELL		=	/bin/sh
  # Installation programs...
  #
@@ -23,19 +25,19 @@ BSD_INSTALL_PROGRAM is used to respect INSTALL_STRIP.
  LIBCUPSSTATIC	=	@LIBCUPSSTATIC@
 -LIBJPEG		=	@LIBJPEG@
 -LIBLDAP		=	@LIBLDAP@
-+LIBJPEG		=	-L${LOCALBASE}/lib @LIBJPEG@
-+LIBLDAP		=	-L${LOCALBASE}/lib @LIBLDAP@
++LIBJPEG		=	-L/usr/local/lib @LIBJPEG@
++LIBLDAP		=	-L/usr/local/lib @LIBLDAP@
  LIBMALLOC	=	@LIBMALLOC@
 -LIBPAPER	=	@LIBPAPER@
 -LIBPNG		=	@LIBPNG@
-+LIBPAPER	=	-L${LOCALBASE}/lib @LIBPAPER@
-+LIBPNG		=	-L${LOCALBASE}/lib @LIBPNG@
++LIBPAPER	=	-L/usr/local/lib @LIBPAPER@
++LIBPNG		=	-L/usr/local/lib @LIBPNG@
  LIBSLP		=	@LIBSLP@
  LIBGSSAPI	=	@LIBGSSAPI@
 -LIBTIFF		=	@LIBTIFF@
 -LIBUSB		=	@LIBUSB@
-+LIBTIFF		=	-L${LOCALBASE}/lib @LIBTIFF@
-+LIBUSB		=	-L${LOCALBASE}/lib @LIBUSB@
++LIBTIFF		=	-L/usr/local/lib @LIBTIFF@
++LIBUSB		=	-L/usr/local/lib @LIBUSB@
  LIBWRAP		=	@LIBWRAP@
  LIBZ		=	@LIBZ@
  
