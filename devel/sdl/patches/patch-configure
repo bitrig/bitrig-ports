@@ -1,6 +1,87 @@
 $OpenBSD: patch-configure,v 1.24 2012/03/22 13:00:42 dcoppa Exp $
---- configure.orig	Thu Jan 19 07:30:12 2012
-+++ configure	Thu Mar 22 13:52:46 2012
+--- configure.orig	Thu Jan 19 00:30:12 2012
++++ configure	Tue Jun  5 19:53:09 2012
+@@ -3857,7 +3857,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -4285,7 +4285,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -4681,7 +4681,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -7791,7 +7791,7 @@ echo $ECHO_N "checking whether the $compiler linker ($
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -8575,7 +8575,7 @@ rm -f core conftest.err conftest.$ac_objext conftest_i
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -9565,7 +9565,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -13659,7 +13659,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd* | bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -15337,7 +15337,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -20201,7 +20201,7 @@ _ACEOF
+ 
+             # We may need to link with ossaudio emulation library
+             case "$host" in
+-                *-*-openbsd*|*-*-netbsd*)
++                *-*-openbsd*|*-*-netbsd*|*-*-bitrig*)
+                     EXTRA_LDFLAGS="$EXTRA_LDFLAGS -lossaudio";;
+             esac
+         fi
 @@ -21000,6 +21000,20 @@ _ACEOF
      fi
  }
@@ -22,7 +103,7 @@ $OpenBSD: patch-configure,v 1.24 2012/03/22 13:00:42 dcoppa Exp $
  CheckPulseAudio()
  {
      # Check whether --enable-pulseaudio was given.
-@@ -24073,6 +24087,12 @@ fi
+@@ -24073,6 +24087,18 @@ fi
                      x11_lib='libX11.so'
                      x11ext_lib='libXext.so'
                      ;;
@@ -32,10 +113,44 @@ $OpenBSD: patch-configure,v 1.24 2012/03/22 13:00:42 dcoppa Exp $
 +                    xrender_lib='libXrender.so'
 +                    xrandr_lib='libXrandr.so'
 +                    ;;
++                *-*-bitrig*)
++                    x11_lib='libX11.so'
++                    x11ext_lib='libXext.so'
++                    xrender_lib='libXrender.so'
++                    xrandr_lib='libXrandr.so'
++                    ;;
                  *)
                      x11_lib=`find_lib "libX11.so.*" "$X_LIBS -L/usr/X11/$base_libdir -L/usr/X11R6/$base_libdir" | sed 's/.*\/\(.*\)/\1/; q'`
                      x11ext_lib=`find_lib "libXext.so.*" "$X_LIBS -L/usr/X11/$base_libdir -L/usr/X11R6/$base_libdir" | sed 's/.*\/\(.*\)/\1/; q'`
-@@ -29551,6 +29571,7 @@ _ACEOF
+@@ -26946,6 +26972,10 @@ fi
+             pthread_cflags="-D_REENTRANT"
+             pthread_lib="-pthread"
+             ;;
++        *-*-bitrig*)
++            pthread_cflags="-D_REENTRANT"
++            pthread_lib="-pthread"
++            ;;
+         *-*-solaris*)
+             pthread_cflags="-D_REENTRANT"
+             pthread_lib="-lpthread -lposix4"
+@@ -29518,7 +29548,7 @@ _ACEOF
+             have_timers=yes
+         fi
+         ;;
+-    *-*-linux*|*-*-uclinux*|*-*-gnu*|*-*-k*bsd*-gnu|*-*-bsdi*|*-*-freebsd*|*-*-dragonfly*|*-*-netbsd*|*-*-openbsd*|*-*-sysv5*|*-*-solaris*|*-*-hpux*|*-*-irix*|*-*-aix*|*-*-osf*)
++    *-*-linux*|*-*-uclinux*|*-*-gnu*|*-*-k*bsd*-gnu|*-*-bsdi*|*-*-freebsd*|*-*-dragonfly*|*-*-netbsd*|*-*-openbsd*|*-*-bitrig*|*-*-sysv5*|*-*-solaris*|*-*-hpux*|*-*-irix*|*-*-aix*|*-*-osf*)
+         case "$host" in
+             *-*-linux*)         ARCH=linux ;;
+             *-*-uclinux*)       ARCH=linux ;;
+@@ -29531,6 +29561,7 @@ _ACEOF
+             *-*-dragonfly*)     ARCH=freebsd ;;
+             *-*-netbsd*)        ARCH=netbsd ;;
+             *-*-openbsd*)       ARCH=openbsd ;;
++            *-*-bitrig*)        ARCH=bitrig ;;
+             *-*-sysv5*)         ARCH=sysv5 ;;
+             *-*-solaris*)       ARCH=solaris ;;
+             *-*-hpux*)          ARCH=hpux ;;
+@@ -29551,6 +29582,7 @@ _ACEOF
          CheckALSA
          CheckARTSC
          CheckESD
@@ -43,7 +158,7 @@ $OpenBSD: patch-configure,v 1.24 2012/03/22 13:00:42 dcoppa Exp $
          CheckPulseAudio
          CheckNAS
          CheckX11
-@@ -29586,7 +29607,7 @@ _ACEOF
+@@ -29586,7 +29618,7 @@ _ACEOF
                  SOURCES="$SOURCES $srcdir/src/audio/sun/*.c"
                  have_audio=yes
              ;;
@@ -51,4 +166,13 @@ $OpenBSD: patch-configure,v 1.24 2012/03/22 13:00:42 dcoppa Exp $
 +            netbsd)
                  cat >>confdefs.h <<\_ACEOF
  #define SDL_AUDIO_DRIVER_BSD 1
+ _ACEOF
+@@ -29636,7 +29668,7 @@ _ACEOF
+                 SOURCES="$SOURCES $srcdir/src/cdrom/freebsd/*.c"
+                 have_cdrom=yes
+             ;;
+-            *openbsd*|*netbsd*)
++            *openbsd*|*netbsd*|*bitrig*)
+                 cat >>confdefs.h <<\_ACEOF
+ #define SDL_CDROM_OPENBSD 1
  _ACEOF
