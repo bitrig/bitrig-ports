@@ -23,7 +23,7 @@ PERMIT_DISTFILES_FTP =	Yes
 
 VMEM_WARNING =	Yes
 
-USE_LIBTOOL =	Yes
+USE_LIBTOOL =	gnu
 USE_GMAKE =	Yes
 
 MODULES =	devel/gettext \
