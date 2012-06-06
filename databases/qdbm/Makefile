@@ -21,8 +21,7 @@ MODULES=		converters/libiconv
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		--enable-zlib \
-			--enable-iconv ${CONFIGURE_SHARED} \
-			CFLAGS="${LOCALBASE}/lib"
+			--enable-iconv ${CONFIGURE_SHARED}
 
 MAKE_FLAGS=		LIBVER=${LIBqdbm_VERSION:R} LIBREV=${LIBqdbm_VERSION:E}
 
