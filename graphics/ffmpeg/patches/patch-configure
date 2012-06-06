@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.29 2012/04/28 08:41:32 ajacoutot Exp $
---- configure.orig	Sat Apr 21 23:53:38 2012
-+++ configure	Sun Apr 22 00:50:49 2012
+--- configure.orig	Sat Apr 21 22:53:38 2012
++++ configure	Tue Jun  5 20:14:05 2012
 @@ -1092,7 +1092,6 @@ HAVE_LIST="
      lzo1x_999_compress
      machine_ioctl_bt848_h
@@ -9,6 +9,15 @@ $OpenBSD: patch-configure,v 1.29 2012/04/28 08:41:32 ajacoutot Exp $
      MapViewOfFile
      memalign
      mkstemp
+@@ -2415,7 +2414,7 @@ case $target_os in
+         oss_indev_extralibs="-lossaudio"
+         oss_outdev_extralibs="-lossaudio"
+         ;;
+-    openbsd)
++    openbsd|bitrig)
+         enable malloc_aligned
+         # On OpenBSD 4.5. the compiler does not use PIC unless
+         # explicitly using -fPIC. FFmpeg builds fine without PIC,
 @@ -2425,6 +2424,7 @@ case $target_os in
          enable pic
          disable symver
