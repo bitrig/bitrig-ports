@@ -79,9 +79,9 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--without-redland \
 			--without-slv2 \
 			--without-liblrdf \
-			--with-portmixer=no
+			--with-portmixer=no \
+			CC=cc CXX=g++
 
-MAKE_FLAGS=		CC="${CC}"
 WRKDIST=		${WRKDIR}/audacity-src-${V}
 
 # Regression tests are in the source tarball but as of 2007, they have
