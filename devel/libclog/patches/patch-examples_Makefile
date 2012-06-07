@@ -1,0 +1,12 @@
+$OpenBSD$
+--- examples/Makefile.orig	Wed Jun  6 20:00:20 2012
++++ examples/Makefile	Wed Jun  6 20:00:27 2012
+@@ -22,7 +22,7 @@ DPADD+= ${.CURDIR}/../libclog.a
+ 
+ SRCS= testclog.c
+ COPT+= -O2
+-CFLAGS+= -Wall -Werror -ggdb3
++CFLAGS+= -Wall -Werror -g
+ LDADD+= -L${LOCALBASE}/lib -lclog
+ 
+ CFLAGS+= -I${.CURDIR}/..

@@ -29,7 +29,7 @@ MODULES=	devel/gettext
 
 SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE= gnu
-CONFIGURE_ARGS+= --enable-elf-shlibs --disable-tls
+CONFIGURE_ARGS+= --enable-elf-shlibs --disable-tls CC=cc CXX=g++
 CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS} -D_EXT2_USE_C_VERSIONS_"
 USE_GMAKE=	Yes
 USE_GROFF=	Yes

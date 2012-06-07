@@ -25,7 +25,8 @@ CONFIGURE_ARGS=		--program-suffix=18 \
 			--enable-ipv6 \
 			--with-dbm-type=bogus \
 			--with-opt-dir="${LOCALBASE}" \
-			--disable-option-checking
+			--disable-option-checking \
+			CC=cc CXX=g++
 
 CONFIGURE_ENV=		LIBruby18_VERSION=${LIBruby18_VERSION}
 
@@ -61,6 +62,7 @@ MULTI_PACKAGES+=	-tk
 CONFIGURE_ARGS+=	--with-tcl-include=${PREFIX}/include/tcl8.5 \
 			--with-tk-include=${PREFIX}/include/tk8.5 \
 			--with-X11-dir=${X11BASE}
+
 WANTLIB-tk =		X11 c m ruby18 tcl85 tk85
 LIB_DEPENDS-tk =		tk->=8.5,<8.6:x11/tk/8.5 \
 			lang/ruby/${REV},-main
