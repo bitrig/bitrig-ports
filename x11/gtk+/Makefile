@@ -33,6 +33,6 @@ CONFIGURE_ARGS+= --enable-static --with-xinput="xfree"
 CONFIGURE_ARGS+= --disable-glibtest
 CONFIGURE_ENV=	CPPFLAGS="-I${DEPBASE}/include" \
 		LDFLAGS="-L${DEPBASE}/lib" \
-		glib_config_args=--prefix=${DEPBASE}
+		glib_config_args=--prefix=${DEPBASE} CC=cc
 
 .include <bsd.port.mk>
