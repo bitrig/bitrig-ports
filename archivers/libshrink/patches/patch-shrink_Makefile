@@ -1,0 +1,12 @@
+$OpenBSD$
+--- shrink/Makefile.orig	Wed Jun  6 19:16:52 2012
++++ shrink/Makefile	Wed Jun  6 19:16:59 2012
+@@ -21,7 +21,7 @@ LDADD+=	-L${.OBJDIR}/../libshrink
+ 
+ SRCS= shrink.c
+ COPT+= -O2
+-CFLAGS+= -Wall -Werror -ggdb3
++CFLAGS+= -Wall -Werror -g
+ LDADD+= -lutil -lssl -lcrypto -L${LOCALBASE}/lib -lshrink
+ 
+ CFLAGS+= -I${.CURDIR}/../libshrink -I.
