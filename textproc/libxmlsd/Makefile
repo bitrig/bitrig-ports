@@ -22,6 +22,8 @@ PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
+FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
+
 do-configure:
 	printf "major=${LIBxmlsd_VERSION:R}\nminor=${LIBxmlsd_VERSION:E}\n" \
             > ${WRKSRC}/shlib_version
