@@ -64,7 +64,7 @@ CONFIGURE_ARGS=	--disable-rpath --with-openssl=/usr \
 		--with-ossp-uuid \
 		--with-libxml \
 		--disable-thread-safety \
-		--with-krb5
+		--with-krb5 --with-template=openbsd
 
 # There is no spinlock support for hppa yet. Until we have access to
 # a system to get this working, disable them for now. There is
