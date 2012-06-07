@@ -1,0 +1,21 @@
+$OpenBSD$
+--- configure.orig	Thu Jun  7 17:34:33 2012
++++ configure	Thu Jun  7 17:34:51 2012
+@@ -8919,7 +8919,7 @@ fi
+ fi
+ 
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-*|Bitrig-*)
+ 	    SHLIB_CFLAGS="-fPIC"
+ 	    SHLIB_LD='${CC} -shared ${SHLIB_CFLAGS}'
+ 	    SHLIB_SUFFIX=".so"
+@@ -9793,7 +9793,7 @@ fi
+ 	    BSD/OS*) ;;
+ 	    CYGWIN_*) ;;
+ 	    IRIX*) ;;
+-	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
+ 	    Darwin-*) ;;
+ 	    SCO_SV-3.2*) ;;
+ 	    windows) ;;
