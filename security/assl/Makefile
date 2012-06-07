@@ -20,6 +20,8 @@ PERMIT_DISTFILES_FTP=	Yes
 
 BUILD_DEPENDS=		devel/libevent2
 
+FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
+
 NO_REGRESS=		Yes
 EG_DIR=			${PREFIX}/share/examples/assl
 
