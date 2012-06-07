@@ -1,0 +1,12 @@
+$OpenBSD$
+--- tests/Makefile.orig	Wed Jun  6 20:02:07 2012
++++ tests/Makefile	Wed Jun  6 20:02:11 2012
+@@ -22,7 +22,7 @@ DPADD+= ${.CURDIR}/../libexude.a
+ 
+ SRCS= exude_threadtest.c
+ COPT+= -O2
+-CFLAGS+= -Wall -Werror -ggdb3
++CFLAGS+= -Wall -Werror -g
+ LDADD+=-pthread -L${LOCALBASE}/lib -lclog -lexude
+ 
+ CFLAGS+= -I${.CURDIR}/..
