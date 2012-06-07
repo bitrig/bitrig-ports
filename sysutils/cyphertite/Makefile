@@ -30,4 +30,6 @@ LIB_DEPENDS =		archivers/libshrink>=0.5.0	\
 
 NO_REGRESS =		Yes
 
+FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
+
 .include <bsd.port.mk>
