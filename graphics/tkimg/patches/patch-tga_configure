@@ -1,0 +1,21 @@
+$OpenBSD$
+--- tga/configure.orig	Thu Jun  7 18:18:42 2012
++++ tga/configure	Thu Jun  7 18:18:47 2012
+@@ -7188,7 +7188,7 @@ fi
+ 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
+ 	    TCL_LIB_VERSIONS_OK=nodots
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-* | Bitrig-*)
+ 	    SHLIB_CFLAGS="-fPIC"
+ 	    SHLIB_LD='${CC} -shared ${SHLIB_CFLAGS}'
+ 	    SHLIB_LD_LIBS='${LIBS}'
+@@ -8037,7 +8037,7 @@ fi
+ 	    BSD/OS*) ;;
+ 	    CYGWIN_*) ;;
+ 	    IRIX*) ;;
+-	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-* | Bitrig-*) ;;
+ 	    Darwin-*) ;;
+ 	    SCO_SV-3.2*) ;;
+ 	    windows) ;;

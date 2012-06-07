@@ -1,0 +1,12 @@
+$OpenBSD$
+--- compat/libtiff/config.sub.orig	Thu Jun  7 17:45:18 2012
++++ compat/libtiff/config.sub	Thu Jun  7 17:45:28 2012
+@@ -1131,7 +1131,7 @@ case $os in
+ 	      | -aos* \
+ 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
+ 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
+-	      | -hiux* | -386bsd* | -knetbsd* | -netbsd* | -openbsd* | -kfreebsd* | -freebsd* | -riscix* \
++	      | -hiux* | -386bsd* | -knetbsd* | -netbsd* | -openbsd* | -kfreebsd* | -freebsd* | -riscix* | -bitrig* \
+ 	      | -lynxos* | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
+ 	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \
+ 	      | -udi* | -eabi* | -lites* | -ieee* | -go32* | -aux* \

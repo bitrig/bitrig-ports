@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.orig	Thu Jun  7 17:40:12 2012
++++ configure	Thu Jun  7 17:40:45 2012
+@@ -9699,7 +9699,7 @@ fi
+ 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
+ 	    TCL_LIB_VERSIONS_OK=nodots
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-* | Bitrig-*)
+ 	    SHLIB_CFLAGS="-fPIC"
+ 	    SHLIB_LD='${CC} -shared ${SHLIB_CFLAGS}'
+ 	    SHLIB_LD_LIBS='${LIBS}'
