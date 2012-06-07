@@ -5,10 +5,13 @@ It contains deprecated and/or linux-only code, it's not used by any
 port and it's already gone bye-bye in upstream svn trunk as well.
 And we avoid depending on ossaudio and esound, which is also good.
 
---- contrib/src/Makefile.in.orig	Thu Apr 15 11:03:42 2010
-+++ contrib/src/Makefile.in	Thu Oct 28 11:21:55 2010
-@@ -2,3 +2,3 @@
+--- contrib/src/Makefile.in.orig	Tue Mar 22 07:00:34 2011
++++ contrib/src/Makefile.in	Thu Jun  7 16:36:27 2012
+@@ -1,6 +1,6 @@
+ # $Id: Makefile.in 42385 2006-10-25 06:51:10Z RD $
  
 -CONTRIB_SUBDIRS=fl gizmos mmedia ogl plot stc svg #deprecated #applet
 +CONTRIB_SUBDIRS=fl gizmos ogl plot stc svg #deprecated #applet #mmedia
  
+ all:
+ 	@for d in $(CONTRIB_SUBDIRS); do (cd $$d && $(MAKE)); done

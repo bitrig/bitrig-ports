@@ -3,9 +3,26 @@ $OpenBSD: patch-build_aclocal_bakefile_m4,v 1.1 2011/05/22 08:13:18 dcoppa Exp $
 Update bakefile.m4 for the new version (unbreak configure).
 From upstream svn revision 66836.
 
---- build/aclocal/bakefile.m4.orig	Wed May 18 11:45:26 2011
-+++ build/aclocal/bakefile.m4	Wed May 18 11:45:51 2011
-@@ -837,7 +837,7 @@ AC_DEFUN([AC_BAKEFILE],
+--- build/aclocal/bakefile.m4.orig	Tue Mar 22 06:59:38 2011
++++ build/aclocal/bakefile.m4	Thu Jun  7 16:46:53 2012
+@@ -444,6 +444,7 @@ AC_DEFUN([AC_BAKEFILE_SHARED_LD],
+ 
+       powerpc-apple-macos* | \
+       *-*-freebsd* | *-*-openbsd* | *-*-netbsd* | *-*-k*bsd*-gnu | \
++      *-*-bitrig* | \
+       *-*-mirbsd* | \
+       *-*-sunos4* | \
+       *-*-osf* | \
+@@ -495,7 +496,7 @@ AC_DEFUN([AC_BAKEFILE_SHARED_VERSIONS],
+ 
+     case "${BAKEFILE_HOST}" in
+       *-*-linux* | *-*-freebsd* | *-*-openbsd* | *-*-netbsd* | \
+-      *-*-k*bsd*-gnu | *-*-mirbsd* )
++      *-*-k*bsd*-gnu | *-*-mirbsd* | *-*-bitrig*)
+         if test "x$SUNCXX" = "xyes"; then
+             SONAME_FLAG="-h "
+         else
+@@ -837,7 +838,7 @@ AC_DEFUN([AC_BAKEFILE],
      AC_SUBST(OBJCXXFLAGS)
  
  

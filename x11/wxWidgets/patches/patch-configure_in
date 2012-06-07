@@ -1,6 +1,15 @@
 $OpenBSD: patch-configure_in,v 1.8 2011/12/06 10:23:38 dcoppa Exp $
---- configure.in.orig	Tue Mar 22 07:59:37 2011
-+++ configure.in	Fri Dec  2 03:18:42 2011
+--- configure.in.orig	Tue Mar 22 06:59:37 2011
++++ configure.in	Thu Jun  7 16:38:22 2012
+@@ -198,7 +198,7 @@ case "${host}" in
+     AC_DEFINE(__BSD__)
+     DEFAULT_DEFAULT_wxUSE_GTK=1
+   ;;
+-  *-*-openbsd*|*-*-mirbsd*)
++  *-*-openbsd*|*-*-mirbsd*|*-*-bitrig*)
+     USE_BSD=1
+     USE_OPENBSD=1
+     AC_DEFINE(__OPENBSD__)
 @@ -3090,7 +3090,7 @@ if test "$wxUSE_LIBJPEG" != "no" ; then
              dnl HAVE_STDLIB_H which are already defined and this provokes
              dnl a compiler warning which configure considers as an error...
