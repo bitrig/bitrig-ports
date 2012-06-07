@@ -38,6 +38,7 @@ MULTI_PACKAGES=		-main -server -tests
 
 # Suggested flags for the C compiler, needed for
 # high load servers otherwise MySQL will crash.
+CC=		cc
 CXX=		${CC}
 CXXFLAGS=	${CFLAGS} -felide-constructors -fno-exceptions -fno-rtti
 
