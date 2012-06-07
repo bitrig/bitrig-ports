@@ -1,0 +1,12 @@
+$OpenBSD$
+--- examples/client/nonblocking/Makefile.orig	Thu Jun  7 08:34:59 2012
++++ examples/client/nonblocking/Makefile	Thu Jun  7 08:35:02 2012
+@@ -3,7 +3,7 @@ NOMAN=
+ 
+ SRCS= nbclient.c
+ COPT+= -O2
+-DEBUG+= -ggdb3
++DEBUG+= -g
+ CFLAGS+= -Wall -Werror
+ CFLAGS+= -I/usr/local/include -I ../../../../
+ LDADD+= -L/usr/local/lib -L ../../../../obj -lssl -lcrypto -lassl -levent_core
