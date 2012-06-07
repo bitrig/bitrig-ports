@@ -1,0 +1,21 @@
+$OpenBSD$
+--- ltconfig.orig	Wed Jun  6 19:31:32 2012
++++ ltconfig	Wed Jun  6 19:31:58 2012
+@@ -1395,7 +1395,7 @@ else
+     hardcode_shlibpath_var=no
+     ;;
+ 
+-  openbsd*)
++  openbsd* | bitrig*)
+     archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linkopts'
+     hardcode_libdir_flag_spec='-R$libdir'
+     hardcode_direct=yes
+@@ -1995,7 +1995,7 @@ netbsd*)
+   shlibpath_var=LD_LIBRARY_PATH
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   if test "$with_gnu_ld" = yes; then
+     need_lib_prefix=no
