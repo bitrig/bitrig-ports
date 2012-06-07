@@ -1,0 +1,12 @@
+$OpenBSD$
+--- makedefs.orig	Tue Jan 17 20:19:48 2012
++++ makedefs	Thu Jun  7 08:15:08 2012
+@@ -161,6 +161,8 @@ case "$SYSTEM.$RELEASE" in
+ 		;;
+   OpenBSD.5*)	SYSTYPE=OPENBSD5
+ 		;;
++  Bitrig.0*)	SYSTYPE=OPENBSD5
++		;;
+   ekkoBSD.1*)	SYSTYPE=EKKOBSD1
+ 		;;
+    NetBSD.1*)	SYSTYPE=NETBSD1
