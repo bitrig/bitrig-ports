@@ -1,6 +1,15 @@
 $OpenBSD: patch-configure,v 1.2 2010/07/29 11:42:56 sebastia Exp $
---- configure.orig	Mon Dec  7 15:26:35 2009
-+++ configure	Mon Dec  7 15:25:27 2009
+--- configure.orig	Tue Mar 25 20:36:50 2008
++++ configure	Thu Jun  7 18:27:39 2012
+@@ -8658,7 +8658,7 @@ fi
+ 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
+ 	    TCL_LIB_VERSIONS_OK=nodots
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-* | Bitrig-*)
+ 	    SHLIB_CFLAGS="-fPIC"
+ 	    SHLIB_LD='${CC} -shared ${SHLIB_CFLAGS}'
+ 	    SHLIB_LD_LIBS='${LIBS}'
 @@ -8671,7 +8671,7 @@ fi
  fi
  
