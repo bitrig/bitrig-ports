@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.orig	Thu Jun  7 11:26:17 2012
++++ Makefile	Thu Jun  7 11:26:21 2012
+@@ -40,7 +40,7 @@ MLINKS+=xmlsd.3 xmlsd_version.3
+ 
+ BUILDVERSION != sh "${.CURDIR}/buildver.sh"
+ 
+-DEBUG+= -ggdb3
++DEBUG+= -g
+ CFLAGS+= -Wall -Werror
+ CFLAGS+= -I${.CURDIR} -I${INCDIR}
+ .if !${BUILDVERSION} == ""
