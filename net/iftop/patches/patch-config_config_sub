@@ -1,0 +1,12 @@
+$OpenBSD$
+--- config/config.sub.orig	Thu Jun  7 20:30:36 2012
++++ config/config.sub	Thu Jun  7 20:30:41 2012
+@@ -1096,7 +1096,7 @@ case $os in
+ 	      | -aos* \
+ 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
+ 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
+-	      | -hiux* | -386bsd* | -netbsd* | -openbsd* | -freebsd* | -riscix* \
++	      | -hiux* | -386bsd* | -netbsd* | -openbsd* | -bitrig* | -freebsd* | -riscix* \
+ 	      | -lynxos* | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
+ 	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \
+ 	      | -udi* | -eabi* | -lites* | -ieee* | -go32* | -aux* \
