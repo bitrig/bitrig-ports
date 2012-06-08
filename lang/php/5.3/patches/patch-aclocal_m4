@@ -1,6 +1,6 @@
 $OpenBSD: patch-aclocal_m4,v 1.6 2011/11/16 12:29:00 espie Exp $
---- aclocal.m4.orig.port	Tue Aug 23 11:33:49 2011
-+++ aclocal.m4	Wed Nov 16 12:59:21 2011
+--- aclocal.m4.orig.port	Tue May  8 04:41:22 2012
++++ aclocal.m4	Fri Jun  8 14:21:24 2012
 @@ -194,7 +194,7 @@ dnl the path is interpreted relative to the top build-
  dnl
  dnl which array to append to?
@@ -63,6 +63,24 @@ $OpenBSD: patch-aclocal_m4,v 1.6 2011/11/16 12:29:00 espie Exp $
        PHP_EVAL_LIBLINE($OPENSSL_LIBS, $1)
        PHP_EVAL_INCLINE($OPENSSL_INCS)
      fi
+@@ -3051,7 +3037,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -3723,7 +3709,7 @@ AC_CACHE_VAL([lt_cv_sys_max_cmd_len], [dnl
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
 @@ -4326,7 +4312,7 @@ bsdi[[45]]*)
    need_version=no
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major $libname${shared_ext}'
@@ -72,6 +90,15 @@ $OpenBSD: patch-aclocal_m4,v 1.6 2011/11/16 12:29:00 espie Exp $
    shlibpath_var=LD_LIBRARY_PATH
    sys_lib_search_path_spec="/shlib /usr/lib /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
    sys_lib_dlsearch_path_spec="/shlib /usr/lib /usr/local/lib"
+@@ -4641,7 +4627,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -4651,7 +4637,7 @@ openbsd*)
      *)                         need_version=no  ;;
    esac
@@ -81,3 +108,39 @@ $OpenBSD: patch-aclocal_m4,v 1.6 2011/11/16 12:29:00 espie Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
+@@ -5385,7 +5371,7 @@ nto-qnx*)
+   lt_cv_deplibs_check_method=unknown
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[[^/]]+(\.so\.[[0-9]]+\.[[0-9]]+|\.so|_pic\.a)$'
+   else
+@@ -6349,7 +6335,7 @@ case $host_os in
+     # C++ shared libraries are fairly broken
+     _LT_AC_TAGVAR(ld_shlibs, $1)=no
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     if test -f /usr/libexec/ld.so; then
+       _LT_AC_TAGVAR(hardcode_direct, $1)=yes
+       _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
+@@ -8269,7 +8255,7 @@ dnl Note also adjust exclude_expsyms for C++ above.
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -8873,7 +8859,7 @@ _LT_EOF
+       _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	_LT_AC_TAGVAR(hardcode_direct, $1)=yes
+ 	_LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no

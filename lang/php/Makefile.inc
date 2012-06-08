@@ -53,7 +53,7 @@ MODULES_DIR=		${LOCALBASE}/${MODULES_SUBDIR}
 PHP_LDFLAGS=		-lstdc++ -lm
 .endif
 
-FLAVORS=		ap2 no_suhosin
+FLAVORS=		no_suhosin
 FLAVOR?=
 
 USE_GROFF=		Yes
@@ -75,12 +75,8 @@ CONFIGURE_ARGS+=	--enable-shared \
 			--with-config-file-scan-dir=${SYSCONFDIR}/php-${PV} \
 			--program-suffix=-${PV}
 
-.if ${FLAVOR:L:Map2}
 CONFIGURE_ARGS+=	--with-apxs2=${LOCALBASE}/sbin/apxs2
 BUILD_DEPENDS=		www/apache-httpd
-.else
-CONFIGURE_ARGS+=	--with-apxs=/usr/sbin/apxs
-.endif
 
 # default included extensions
 CONFIGURE_ARGS+= 	--with-openssl \
@@ -328,7 +324,8 @@ PATCH_DIST_STRIP=	-p1
 CONFIGURE_ARGS+=	--enable-suhosin
 
 pre-patch:
-	@mv ${WRKDIR}/suhosin-${SUHOSIN_V} ${WRKSRC}/ext/suhosin
+	cd ${WRKDIR}/suhosin-${SUHOSIN_V} && patch < ${FILESDIR}/suhosin.patch
+	mv ${WRKDIR}/suhosin-${SUHOSIN_V} ${WRKSRC}/ext/suhosin
 .endif
 
 pre-fake:

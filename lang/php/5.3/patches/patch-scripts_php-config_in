@@ -1,12 +1,12 @@
 $OpenBSD: patch-scripts_php-config_in,v 1.3 2012/04/28 08:34:56 sthen Exp $
---- scripts/php-config.in.orig.port	Wed Apr 18 22:25:28 2012
-+++ scripts/php-config.in	Wed Apr 18 22:21:44 2012
+--- scripts/php-config.in.orig.port	Tue May  8 04:22:27 2012
++++ scripts/php-config.in	Fri Jun  8 13:24:59 2012
 @@ -1,11 +1,11 @@
  #! /bin/sh
  
  SED="@SED@"
 -prefix="@prefix@"
-+prefix=OPENBSD_PEAR_ROOT
++prefix='/var/www/pear'
  exec_prefix="@exec_prefix@"
  version="@PHP_VERSION@"
  vernum="@PHP_VERSION_ID@"
@@ -20,11 +20,11 @@ $OpenBSD: patch-scripts_php-config_in,v 1.3 2012/04/28 08:34:56 sthen Exp $
    case $sapi in
    cli)
 -    php_cli_binary="@bindir@/${program_prefix}php${program_suffix}${exe_extension}"
-+    php_cli_binary="OPENBSD_PREFIX/bin/php${program_suffix}"
++    php_cli_binary="/usr/local/bin/php${program_suffix}"
      ;;
    cgi)
 -    php_cgi_binary="@bindir@/${program_prefix}php-cgi${program_suffix}${exe_extension}"
-+    php_cgi_binary="OPENBSD_PREFIX/bin/php-cgi${program_suffix}"
++    php_cgi_binary="/usr/local/bin/php-cgi${program_suffix}"
      ;;
    esac
  done
