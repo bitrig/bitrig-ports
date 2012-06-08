@@ -15,7 +15,7 @@ REVISION =		3
 EPOCH =			0
 DISTFILES = 		g77-openbsd.tgz
 
-CONFIG = 		${MACHINE_ARCH}-unknown-openbsd${OSREV}
+CONFIG = 		${MACHINE_ARCH}-unknown-bitrig${OSREV}
 SUBST_VARS += 		CONFIG V
 
 COMMENT =		GNU fortran 77 compiler
