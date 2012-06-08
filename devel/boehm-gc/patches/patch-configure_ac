@@ -1,11 +1,11 @@
 $OpenBSD: patch-configure_ac,v 1.2 2012/02/22 12:31:42 kurt Exp $
---- configure.ac.orig	Sat Jun 30 11:40:15 2007
-+++ configure.ac	Sun Feb 19 12:57:00 2012
+--- configure.ac.orig	Sat Jun 30 10:40:15 2007
++++ configure.ac	Fri Jun  8 16:54:18 2012
 @@ -113,6 +113,11 @@ case "$THREADS" in
       *-*-hpux10*)
  	AC_MSG_WARN("Only HP-UX 11 POSIX threads are supported.")
  	;;
-+     *-*-openbsd*)
++     *-*-openbsd*|*-*-bitrig*)
 +	AC_DEFINE(GC_OPENBSD_THREADS)
 +	THREADDLLIBS=-pthread
 +	INCLUDES="$INCLUDES -pthread"
