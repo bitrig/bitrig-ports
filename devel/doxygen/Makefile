@@ -33,7 +33,8 @@ MODULES=	converters/libiconv
 CONFIGURE_STYLE=simple
 CONFIGURE_ARGS=	--prefix ${WRKINST}${LOCALBASE} \
 		--install /usr/bin/install \
-		--dot ${LOCALBASE}/bin/dot
+		--dot ${LOCALBASE}/bin/dot \
+		-platform openbsd-g++
 
 MULTI_PACKAGES=	-main -gui
 
