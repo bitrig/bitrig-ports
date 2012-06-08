@@ -164,6 +164,8 @@ include/net-snmp/session_api.h
 include/net-snmp/snmpv3_api.h
 include/net-snmp/system/
 include/net-snmp/system/aix.h
+include/net-snmp/system/bitrig.h
+include/net-snmp/system/bitrig0.h
 include/net-snmp/system/bsd.h
 include/net-snmp/system/bsdi.h
 include/net-snmp/system/bsdi3.h

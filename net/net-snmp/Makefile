@@ -8,9 +8,9 @@ V=		5.7.1
 
 DISTNAME=	net-snmp-$V
 MULTI_PACKAGES=	-main -perl -tkmib
-REVISION-main=	5
-REVISION-perl=	1
-REVISION-tkmib=	0
+REVISION-main=	6
+REVISION-perl=	2
+REVISION-tkmib=	1
 PKGNAME-main=	${DISTNAME}
 PKGNAME-perl=	p5-SNMP-$V
 PKGNAME-tkmib=	net-snmp-tkmib-$V

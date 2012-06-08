@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.in.orig	Fri Jun  8 14:03:09 2012
++++ Makefile.in	Fri Jun  8 14:03:25 2012
+@@ -22,7 +22,7 @@ INCLUDESUBDIRHEADERS= aix.h bsd.h bsdi3.h bsdi4.h bsdi
+ 	freebsd2.h freebsd3.h freebsd4.h freebsd5.h freebsd6.h freebsd7.h freebsd8.h freebsd9.h freebsd.h \
+ 	generic.h \
+ 	hpux.h irix.h linux.h mingw32.h mips.h netbsd.h osf5.h \
+-	openbsd.h openbsd5.h openbsd4.h \
++	openbsd.h openbsd5.h openbsd4.h bitrig.h bitrig0.h\
+ 	solaris2.3.h solaris2.4.h solaris2.5.h solaris2.6.h \
+ 	solaris.h sunos.h svr5.h sysv.h ultrix4.h
+ INCLUDESUBDIR2=machine
