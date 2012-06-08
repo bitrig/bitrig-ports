@@ -21,6 +21,7 @@ WANTLIB=		c curses
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--without-libstatgrab
 USE_GROFF =		Yes
+CC=			cc
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/bwm-ng
