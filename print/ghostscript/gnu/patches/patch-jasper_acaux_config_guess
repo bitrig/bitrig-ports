@@ -1,0 +1,13 @@
+$OpenBSD$
+--- jasper/acaux/config.guess.orig	Thu Jun  7 19:40:25 2012
++++ jasper/acaux/config.guess	Thu Jun  7 19:40:45 2012
+@@ -236,6 +236,9 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
+     *:OpenBSD:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-openbsd${UNAME_RELEASE}
+ 	exit 0 ;;
++    *:Bitrig:*:*)
++	echo ${UNAME_MACHINE}-unknown-bitrig${UNAME_RELEASE}
++	exit 0 ;;
+     *:ekkoBSD:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-ekkobsd${UNAME_RELEASE}
+ 	exit 0 ;;

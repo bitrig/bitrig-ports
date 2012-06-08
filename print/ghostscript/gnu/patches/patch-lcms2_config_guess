@@ -1,0 +1,13 @@
+$OpenBSD$
+--- lcms2/config.guess.orig	Thu Jun  7 19:41:32 2012
++++ lcms2/config.guess	Thu Jun  7 19:41:46 2012
+@@ -240,6 +240,9 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
+     wgrisc:OpenBSD:*:*)
+ 	echo mipsel-unknown-openbsd${UNAME_RELEASE}
+ 	exit 0 ;;
++    *:Bitrig:*:*)
++	echo ${UNAME_MACHINE}-unknown-bitrig${UNAME_RELEASE}
++	exit 0 ;;
+     *:OpenBSD:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-openbsd${UNAME_RELEASE}
+ 	exit 0 ;;
