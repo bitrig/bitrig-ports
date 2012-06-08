@@ -8,8 +8,10 @@ lib/gcc-lib/${CONFIG}/
 lib/gcc-lib/${CONFIG}/${V}/
 lib/gcc-lib/${CONFIG}/${V}/libfrtbegin.a
 lib/gcc-lib/${CONFIG}/${V}/libfrtbegin_p.a
+lib/gcc-lib/${CONFIG}/${V}/libfrtbegin_pic.a
 lib/gcc-lib/${CONFIG}/${V}/libg2c.a
 lib/gcc-lib/${CONFIG}/${V}/libg2c_p.a
+lib/gcc-lib/${CONFIG}/${V}/libg2c_pic.a
 lib/libfrtbegin.a
 lib/libfrtbegin_p.a
 lib/libg2c.a
