@@ -1,11 +1,12 @@
 $OpenBSD: patch-configure_ac,v 1.1.1.1 2010/07/29 21:40:21 steven Exp $
---- configure.ac.orig	Fri Jul 23 22:03:50 2010
-+++ configure.ac	Fri Jul 23 22:04:32 2010
-@@ -247,6 +247,7 @@ if test "x$enable_pthreads" != "xno"; then
-           PTHREADS_LIBS="-lpthread"
-  	  case "${os_type}" in
-  	  solaris) PTHREADS_CFLAGS="-pthreads" ;;
-+ 	  openbsd) PTHREADS_CFLAGS="-pthread" PTHREADS_LIBS="-pthread" ;;
-  	  *)       PTHREADS_CFLAGS="-pthread" ;;
-  	  esac
-           AC_SUBST(PTHREADS_LIBS)
+--- configure.ac.orig	Fri Jun  8 10:54:13 2012
++++ configure.ac	Fri Jun  8 10:54:25 2012
+@@ -32,7 +32,7 @@ case "${host}" in
+   *-*-linux*)
+     os_type="linux"
+   ;;
+-  *-*-*darwin*|*-*-freebsd*|*-*-netbsd*|*-*-openbsd*)
++  *-*-*darwin*|*-*-freebsd*|*-*-netbsd*|*-*-openbsd*|*-*-bitrig*)
+     AC_DEFINE([OS_BSD], [1], [Indicator for a BSD OS])
+     os_type="bsd"
+   ;;
