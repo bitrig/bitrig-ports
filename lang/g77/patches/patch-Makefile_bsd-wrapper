@@ -1,14 +1,20 @@
 $OpenBSD$
---- Makefile.bsd-wrapper.orig	Thu Jun  7 21:19:11 2012
-+++ Makefile.bsd-wrapper	Thu Jun  7 21:19:14 2012
-@@ -48,13 +48,13 @@ CLEANFILES=	.gdbinit */.gdbinit *.info* \
+--- Makefile.bsd-wrapper.orig	Sun May 23 03:13:51 2010
++++ Makefile.bsd-wrapper	Fri Jun  8 09:10:08 2012
+@@ -47,14 +47,17 @@ CLEANFILES=	.gdbinit */.gdbinit *.info* \
+ 		print-rtl1.c gengtype-lex.c gengtype-yacc.c gengtype-yacc.h \
  		genrtl.c genrtl.h fixinc.sh fixinc/Makefile \
  		po/Makefile  po/Makefile.in  po/POTFILES
++.if ${MACHINE_ARCH:Mamd64}
++GCCARCH=	x86_64-unknown-bitrig${OSREV}
++.else
++GCCARCH=	${MACHINE_ARCH}-unknown-bitrig${OSREV}
++.endif
++GCCINC=	/usr/lib/gcc/${GCCARCH}/$V/include
  
 -GCCARCH=	${MACHINE_ARCH}-unknown-openbsd${OSREV}
-+GCCARCH=	${MACHINE_ARCH}-unknown-bitrig${OSREV}
- GCCINC=	/usr/lib/gcc-lib/${GCCARCH}/$V/include
- 
+-GCCINC=	/usr/lib/gcc-lib/${GCCARCH}/$V/include
+-
  # cross-compilation
  .if defined(CROSS_HOST) && defined(TARGET_ARCH) && defined(CROSSDIR)
 -CONFIGTARGET=	--build=${CROSS_HOST}-unknown-openbsd${OSREV} \
@@ -18,7 +24,7 @@ $OpenBSD$
  
  CONFIGPREFIX=	${CROSSDIR}/usr
  PATH=		/bin:/usr/bin:/sbin:/usr/sbin:${CROSSDIR}/usr/bin
-@@ -64,7 +64,7 @@ HOSTCFLAGS=	${CFLAGS} ${COPTS} -DOPENBSD_CROSS -I${LIB
+@@ -64,7 +67,7 @@ HOSTCFLAGS=	${CFLAGS} ${COPTS} -DOPENBSD_CROSS -I${LIB
  HOST_CC=cc
  MAKE_FLAGS+= 	CFLAGS_FOR_BUILD="${HOSTCFLAGS}" HOST_CC=cc
  .elif defined(TARGET_ARCH) && defined(CROSSDIR)

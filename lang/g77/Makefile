@@ -1,21 +1,23 @@
 # $OpenBSD: Makefile,v 1.15 2012/01/13 00:55:14 naddy Exp $
 
 .include <bsd.own.mk>
-.  if ${COMPILER_VERSION:L:Mgcc4*}
-SYSV=			4.2.1
-.  else
-SYSV=			3.3.5
-.  endif
+
+SYSV=			4.6.2
 
 NOT_FOR_ARCHS =		${GCC2_ARCHS}
 
 V =			3.3.5
 PKGNAME =		g77-$V
-REVISION =		3
+REVISION =		4
 EPOCH =			0
 DISTFILES = 		g77-openbsd.tgz
 
+.if ${MACHINE_ARCH:Mamd64}
+CONFIG = 		x86_64-unknown-bitrig${OSREV}
+.else
 CONFIG = 		${MACHINE_ARCH}-unknown-bitrig${OSREV}
+.endif
+
 SUBST_VARS += 		CONFIG V
 
 COMMENT =		GNU fortran 77 compiler
@@ -58,10 +60,6 @@ MAKE_FLAGS = 		CFLAGS="${GNUCFLAGS}" \
 			USE_COLLECT2= \
 			LANGUAGES=f77
 
-.if ${MACHINE_ARCH} == "vax"
-MAKE_FLAGS +=		HOST_CFLAGS="${VAXHOST_CFLAGS}"
-.endif
-
 CONFIGURE_ENV = INSTALL_PROGRAM="${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP}" \
 			CPPFLAGS=-I${LIBIBERTY_INCLUDES}
 
@@ -76,8 +74,8 @@ ALL_TARGET = 		all doc
 INSTALL_TARGET = 	install-common f77.install-info f77.install-normal
 
 post-install:
-	ln -sf /usr/lib/gcc-lib/${CONFIG}/${SYSV}/libgcc.a ${PREFIX}/lib/gcc-lib/${CONFIG}/$V/libgcc.a
-	ln -s /usr/lib/gcc-lib/${CONFIG}/${SYSV}/cc1 ${PREFIX}/lib/gcc-lib/${CONFIG}/$V/cc1
+	ln -sf /usr/lib/gcc/${CONFIG}/${SYSV}/libgcc.a ${PREFIX}/lib/gcc-lib/${CONFIG}/$V/libgcc.a
+	ln -s /usr/lib/gcc/${CONFIG}/${SYSV}/cc1 ${PREFIX}/lib/gcc-lib/${CONFIG}/$V/cc1
 	${INSTALL_MAN} ${WRKBUILD}/f/g77.1 ${PREFIX}/man/man1/g77.1
 	cd ${PREFIX}/man/man1 && ln -f g77.1 f77.1
 	cd ${PREFIX}/bin && ln -f g77 f77
