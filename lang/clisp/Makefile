@@ -40,7 +40,8 @@ CONFIGURE_ARGS=		--fsstnd=openbsd \
 			--docdir=${PREFIX}/share/doc/clisp \
 			--elispdir=${PREFIX}/share/emacs/site-lisp \
 			--vimdir=${PREFIX}/share/doc/clisp \
-			--srcdir=${WRKSRC} ${WRKBUILD}
+			--srcdir=${WRKSRC} ${WRKBUILD} \
+			CC=cc CXX=g++
 CONFIGURE_ENV =		ac_cv_prog_DVIPDF=''
 
 .if ${MACHINE_ARCH} == "sparc64"
