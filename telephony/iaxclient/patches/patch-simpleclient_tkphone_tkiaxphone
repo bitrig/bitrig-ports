@@ -1,12 +1,18 @@
 $OpenBSD: patch-simpleclient_tkphone_tkiaxphone,v 1.2 2011/01/05 18:00:10 sebastia Exp $
---- simpleclient/tkphone/tkiaxphone.orig	Mon Apr  7 18:05:28 2008
-+++ simpleclient/tkphone/tkiaxphone	Sun Dec 12 13:17:17 2010
-@@ -1,4 +1,4 @@
+--- simpleclient/tkphone/tkiaxphone.orig	Mon Apr  7 11:05:28 2008
++++ simpleclient/tkphone/tkiaxphone	Thu Jun  7 20:34:09 2012
+@@ -1,9 +1,9 @@
 -#!/bin/bash
 +#!/bin/sh
  # TK interface to iax client library command line interface.
  # Copyright 2004-2005 Sun Microsystems, by Stephen Uhler.
  # see License for license terms
+ # This line is a tcl comment (but not a shell comment) \
+-wish $0 -- $* & exit 0
++/usr/local/bin/wish8.5 $0 -- $* & exit 0
+ 
+ # This is my name
+ set appname "tkiaxphone"
 @@ -49,11 +49,11 @@ if {$tcl_platform(platform) == "windows"} {
  }
  
@@ -29,7 +35,7 @@ $OpenBSD: patch-simpleclient_tkphone_tkiaxphone,v 1.2 2011/01/05 18:00:10 sebast
  	set base $env(IAXPHONEHOME)
      } else {
 -	set base [file dirname [file join [pwd] $argv0]]
-+	set base "${LOCALBASE}/lib/tcl/tkphone"
++	set base "/usr/local/lib/tcl/tkphone"
      }
      set result [file join $base $file]
      debug "$result"
