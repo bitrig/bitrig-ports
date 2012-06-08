@@ -4,10 +4,10 @@ lib/irssi/modules/libfe_common_silc.so
 @comment lib/irssi/modules/libfe_silc.so
 lib/irssi/modules/libsilc_core.la
 lib/irssi/modules/libsilc_core.so
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/Irssi/Silc.pm
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Irssi/Silc/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Irssi/Silc/Silc.bs
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Irssi/Silc/Silc.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/Irssi/Silc.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Irssi/Silc/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Irssi/Silc/Silc.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Irssi/Silc/Silc.so
 @comment @man man/man1/silc.1
 share/doc/irssi/silc/
 @comment share/doc/irssi/silc/COPYING
