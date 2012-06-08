@@ -31,7 +31,7 @@ ALL_TARGET=
 INSTALL_TARGET=	install.bin install.lib install.data \
 		install.hdr install.staticlib
 
-MAKE_FLAGS=	CC="${CC}" \
+MAKE_FLAGS=	CC=cc \
 		LIBnetpbm_VERSION=${LIBnetpbm_VERSION}
 FAKE_FLAGS=	PKGDIR="${WRKINST}${TRUEPREFIX}"
 
