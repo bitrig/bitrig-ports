@@ -1,7 +1,16 @@
 $OpenBSD: patch-configure,v 1.5 2011/10/30 07:38:50 sebastia Exp $
---- configure.orig	Tue May 10 21:38:42 2011
-+++ configure	Sun Oct  9 18:18:26 2011
-@@ -8194,7 +8194,6 @@ fi
+--- configure.orig	Sat Oct 15 14:39:44 2011
++++ configure	Thu Jun  7 20:09:45 2012
+@@ -8146,7 +8146,7 @@ fi
+ 		LD_SEARCH_FLAGS='-Wl,-rpath,${LIB_RUNTIME_DIR}'
+ fi
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-* | Bitrig-*)
+ 	    SHLIB_CFLAGS="-fPIC"
+ 	    SHLIB_LD='${CC} -shared ${SHLIB_CFLAGS}'
+ 	    SHLIB_SUFFIX=".so"
+@@ -8193,7 +8193,6 @@ fi
  		# OpenBSD builds and links with -pthread, never -lpthread.
  		LIBS=`echo $LIBS | sed s/-lpthread//`
  		CFLAGS="$CFLAGS -pthread"
@@ -9,3 +18,12 @@ $OpenBSD: patch-configure,v 1.5 2011/10/30 07:38:50 sebastia Exp $
  
  fi
  	    # OpenBSD doesn't do version numbers with dots.
+@@ -8816,7 +8815,7 @@ fi
+ 	    BSD/OS*) ;;
+ 	    CYGWIN_*) ;;
+ 	    IRIX*) ;;
+-	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-* | Bitrig-*) ;;
+ 	    Darwin-*) ;;
+ 	    SCO_SV-3.2*) ;;
+ 	    windows) ;;
