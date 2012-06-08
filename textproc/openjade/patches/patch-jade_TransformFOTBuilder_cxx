@@ -1,0 +1,55 @@
+$OpenBSD$
+--- jade/TransformFOTBuilder.cxx.orig	Fri Jun  8 11:30:38 2012
++++ jade/TransformFOTBuilder.cxx	Fri Jun  8 11:34:48 2012
+@@ -41,6 +41,7 @@ class TransformFOTBuilder : public SerialFOTBuilder { 
+   };
+   class EntityRefFlowObj : public TransformExtensionFlowObj {
+   public:
++    EntityRefFlowObj() {}
+     void atomic(TransformFOTBuilder &fotb, const NodePtr &) const {
+       fotb.entityRef(name_);
+     }
+@@ -56,6 +57,7 @@ class TransformFOTBuilder : public SerialFOTBuilder { 
+   };
+   class ProcessingInstructionFlowObj : public TransformExtensionFlowObj {
+   public:
++    ProcessingInstructionFlowObj() {}
+     void atomic(TransformFOTBuilder &fotb, const NodePtr &) const {
+       fotb.processingInstruction(data_);
+     }
+@@ -100,6 +102,8 @@ class TransformFOTBuilder : public SerialFOTBuilder { 
+     ExtensionFlowObj *copy() const { return new EmptyElementFlowObj(*this); }
+   private:
+     ElementNIC nic_;
++  public:
++    EmptyElementFlowObj() {}
+   };
+   class ElementFlowObj : public TransformCompoundExtensionFlowObj {
+     void start(TransformFOTBuilder &fotb, const NodePtr &nd) const {
+@@ -135,6 +139,8 @@ class TransformFOTBuilder : public SerialFOTBuilder { 
+     ExtensionFlowObj *copy() const { return new ElementFlowObj(*this); }
+   private:
+     ElementNIC nic_;
++  public:
++    ElementFlowObj() {}
+   };
+   class EntityFlowObj : public TransformCompoundExtensionFlowObj {
+     void start(TransformFOTBuilder &fotb, const NodePtr &) const {
+@@ -152,6 +158,8 @@ class TransformFOTBuilder : public SerialFOTBuilder { 
+     ExtensionFlowObj *copy() const { return new EntityFlowObj(*this); }
+   private:
+     StringC systemId_;
++  public:
++    EntityFlowObj() {}
+   };
+   class DocumentTypeFlowObj : public TransformExtensionFlowObj {
+     void atomic(TransformFOTBuilder &fotb, const NodePtr &nd) const {
+@@ -176,6 +184,8 @@ class TransformFOTBuilder : public SerialFOTBuilder { 
+     ExtensionFlowObj *copy() const { return new DocumentTypeFlowObj(*this); }
+   private:
+     DocumentTypeNIC nic_;
++  public:
++    DocumentTypeFlowObj() {};
+   };
+   TransformFOTBuilder(CmdLineApp *, bool xml, const Vector<StringC> &options);
+   ~TransformFOTBuilder();

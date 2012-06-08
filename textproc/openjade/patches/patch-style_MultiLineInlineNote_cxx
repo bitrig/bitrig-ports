@@ -1,0 +1,11 @@
+$OpenBSD$
+--- style/MultiLineInlineNote.cxx.orig	Fri Jun  8 10:57:57 2012
++++ style/MultiLineInlineNote.cxx	Fri Jun  8 10:58:02 2012
+@@ -1,6 +1,6 @@
+ 
+ #include "MultiLineInlineNote.h"
+-#include <iostream.h>
++#include <iostream>
+ 
+ #ifdef DSSSL_NAMESPACE
+ namespace DSSSL_NAMESPACE {

@@ -1,0 +1,21 @@
+$OpenBSD$
+--- jade/TeXFOTBuilder.cxx.orig	Fri Jun  8 11:18:53 2012
++++ jade/TeXFOTBuilder.cxx	Fri Jun  8 11:29:18 2012
+@@ -92,6 +92,8 @@ class TeXFOTBuilder : public SerialFOTBuilder { (publi
+     PageFloatNIC nic_;
+     StringC name_;
+     StringC placement;
++  public:
++    PageFloatFlowObj() {}
+   };
+   class PageFootnoteFlowObj : public TeXCompoundExtensionFlowObj {
+     void start(TeXFOTBuilder &fotb, const NodePtr &) const {
+@@ -102,6 +104,8 @@ class TeXFOTBuilder : public SerialFOTBuilder { (publi
+     }
+     ExtensionFlowObj *copy() const { return new PageFootnoteFlowObj(*this); }
+   private:
++  public:
++    PageFootnoteFlowObj() {}
+   };
+   //////////////////////////////////////////////////////////////////////
+   // Constructor and destructor.
