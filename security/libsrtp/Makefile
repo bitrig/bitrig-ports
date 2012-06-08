@@ -23,6 +23,7 @@ WRKDIST=	${WRKDIR}/srtp
 
 CONFIGURE_STYLE=	gnu
 CFLAGS+=		-fPIC
+CC=			cc
 
 USE_GMAKE=	Yes
 REGRESS_TARGET=	runtest
