@@ -68,6 +68,9 @@ CONFIGURE_ARGS=   ${CONFIGURE_SHARED} \
 	--with-persistent-directory="/var/net-snmp"
 REGRESS_TARGET=	test
 
+post-extract:
+	@cp -Rp ${FILESDIR}/* ${WRKSRC}/
+
 pre-configure:
 	@if ! fgrep '#define NETSNMP_DEFAULT_MIBS "${DEFAULT_MIBS}"' \
 	    ${WRKSRC}/include/net-snmp/net-snmp-config.h.in > /dev/null; then \
