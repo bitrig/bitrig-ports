@@ -11,11 +11,11 @@ lib/libfcgi++.a
 lib/libfcgi++.la
 lib/libfcgi.a
 lib/libfcgi.la
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/FCGI.pm
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/FCGI/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/FCGI/FCGI.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/FCGI.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/FCGI/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/FCGI/FCGI.bs
 @man man/cat1/cgi-fcgi.0
 @man man/cat3/FCGI_Accept.0
 @man man/cat3/FCGI_Finish.0
