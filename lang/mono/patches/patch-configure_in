@@ -1,0 +1,57 @@
+$OpenBSD$
+--- configure.in.orig	Mon Dec 19 15:09:17 2011
++++ configure.in	Fri Jun  8 17:27:22 2012
+@@ -157,7 +157,7 @@ case "$host" in
+ 		with_tls=pthread
+ 		use_sigposix=yes
+ 		;;
+-	*-*-*openbsd*)
++	*-*openbsd* | *-*-bitrig*)
+ 		host_win32=no
+ 		CPPFLAGS="$CPPFLAGS -D_THREAD_SAFE -DGC_OPENBSD_THREADS -DPLATFORM_BSD -D_REENTRANT -DUSE_MMAP"
+ 		if test "x$disable_munmap" != "xyes"; then
+@@ -1360,7 +1360,7 @@ if test x$target_win32 = xno; then
+ 		*-*-*freebsd*)
+ 			AC_CHECK_LIB(pthread, main, LIBS="$LIBS -pthread")
+ 		;;
+-		*-*-*openbsd*)
++		*-*openbsd* | *-*bitrig*)
+ 			AC_CHECK_LIB(pthread, main, LIBS="$LIBS -pthread")
+ 		;;
+ 		*)
+@@ -1921,7 +1921,7 @@ try_dev_random=$enableval, try_dev_random=yes)
+ AC_MSG_RESULT($try_dev_random)
+ 
+ case "{$build}" in
+-    *-openbsd*)
++    *-openbsd* | *-bitrig*)
+     NAME_DEV_RANDOM="/dev/srandom"
+     ;;
+ 
+@@ -2213,7 +2213,7 @@ case "$host" in
+ 			sgen_supported=true
+ 			AOT_SUPPORTED="yes"
+ 			;;
+-		  darwin*|openbsd*|freebsd*)
++		  darwin*|openbsd*|freebsd*|bitrig*)
+ 			sgen_supported=true
+ 		        ;;
+ 		esac
+@@ -2228,7 +2228,7 @@ case "$host" in
+ 			sgen_supported=true
+ 			AOT_SUPPORTED="yes"
+ 			;;
+-		  darwin*|openbsd*|freebsd*)
++		  darwin*|openbsd*|freebsd*|bitrig*)
+ 			sgen_supported=true
+ 			;;
+ 		esac
+@@ -2565,7 +2565,7 @@ case "$host" in
+ 	SQLITE="libsqlite.so"
+ 	SQLITE3="libsqlite3.so"
+ 	;;
+-    *-*-*openbsd*)
++    *-*openbsd*|*-*bitrig*)
+     	LIBC="libc.so"
+ 	INTL="libintl.so"
+         SQLITE="libsqlite.so"

@@ -1,0 +1,14 @@
+$OpenBSD$
+--- libgc/config.guess.orig	Fri Jun  8 17:11:32 2012
++++ libgc/config.guess	Fri Jun  8 17:11:45 2012
+@@ -211,6 +211,10 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
+ 	# CPU_TYPE-MANUFACTURER-OPERATING_SYSTEM is used.
+ 	echo "${machine}-${os}${release}"
+ 	exit ;;
++    *:Bitrig:*:*)
++	UNAME_MACHINE_ARCH=`arch | sed 's/Bitrig.//'`
++	echo ${UNAME_MACHINE_ARCH}-${VENDOR}-bitrig${UNAME_RELEASE}
++	exit ;;
+     *:OpenBSD:*:*)
+ 	UNAME_MACHINE_ARCH=`arch | sed 's/OpenBSD.//'`
+ 	echo ${UNAME_MACHINE_ARCH}-${VENDOR}-openbsd${UNAME_RELEASE}
