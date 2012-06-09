@@ -1,0 +1,12 @@
+$OpenBSD$
+--- menuselect/configure.orig	Mon Dec 19 15:31:04 2011
++++ menuselect/configure	Sat Jun  9 09:18:22 2012
+@@ -1953,7 +1953,7 @@ case "${host_os}" in
+      netbsd*)
+      OSARCH=NetBSD
+      ;;
+-     openbsd*)
++     openbsd* | bitrig*)
+      OSARCH=OpenBSD
+      ;;
+      solaris*)

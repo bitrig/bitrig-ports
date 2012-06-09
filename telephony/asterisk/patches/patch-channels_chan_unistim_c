@@ -3,9 +3,9 @@ $OpenBSD: patch-channels_chan_unistim_c,v 1.7 2012/03/23 22:42:25 sthen Exp $
 Patch is from https://issues.asterisk.org/jira/browse/18229
 https://issues.asterisk.org/jira/secure/attachment/38296/chan_unistim.c.1.8.2.2-9.diff
 
---- channels/chan_unistim.c.orig	Fri Sep  9 17:09:09 2011
-+++ channels/chan_unistim.c	Sat Dec 10 14:34:33 2011
-@@ -73,6 +73,8 @@ ASTERISK_FILE_VERSION(__FILE__, "$Revision: 1.7 $")
+--- channels/chan_unistim.c.orig	Sat Oct  8 20:16:09 2011
++++ channels/chan_unistim.c	Fri Jun  8 22:58:41 2012
+@@ -73,6 +73,8 @@ ASTERISK_FILE_VERSION(__FILE__, "$Revision: 339938 $")
  #include "asterisk/musiconhold.h"
  #include "asterisk/causes.h"
  #include "asterisk/indications.h"
@@ -14,7 +14,7 @@ https://issues.asterisk.org/jira/secure/attachment/38296/chan_unistim.c.1.8.2.2-
  
  /*! Beware, G729 and G723 are not supported by asterisk, except with the proper licence */
  #define CAPABILITY AST_FORMAT_ALAW | AST_FORMAT_ULAW    /* | AST_FORMAT_G729A | AST_FORMAT_G723_1 */
-@@ -82,11 +84,14 @@ ASTERISK_FILE_VERSION(__FILE__, "$Revision: 1.7 $")
+@@ -82,11 +84,14 @@ ASTERISK_FILE_VERSION(__FILE__, "$Revision: 339938 $")
  #define DEFAULTCALLERNAME       " "
  #define DEFAULTHEIGHT	 3
  #define USTM_LOG_DIR	    "unistimHistory"
@@ -29,7 +29,7 @@ https://issues.asterisk.org/jira/secure/attachment/38296/chan_unistim.c.1.8.2.2-
  /*! Try x times before removing the phone */
  #define NB_MAX_RETRANSMIT       8
  /*! Nb of milliseconds waited when no events are scheduled */
-@@ -103,8 +108,9 @@ ASTERISK_FILE_VERSION(__FILE__, "$Revision: 1.7 $")
+@@ -103,8 +108,9 @@ ASTERISK_FILE_VERSION(__FILE__, "$Revision: 339938 $")
  #define MAX_ENTRY_LOG	   30
  
  #define SUB_REAL		0

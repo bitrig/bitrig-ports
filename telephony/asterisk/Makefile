@@ -82,7 +82,8 @@ LDFLAGS+=		-L${X11BASE}/lib -L${LOCALBASE}/lib
 CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}" \
 			CFLAGS="${CFLAGS}" \
 			LDFLAGS="${LDFLAGS}" \
-			LIBS="-pthread"
+			LIBS="-pthread" \
+			CC=cc CXX=g++
 MAKE_FLAGS+=		ASTCFLAGS="${CFLAGS}" \
 			ASTLDFLAGS="${LDFLAGS}" \
 			NOISY_BUILD="Yes" \

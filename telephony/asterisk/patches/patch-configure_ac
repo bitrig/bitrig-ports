@@ -1,15 +1,35 @@
 $OpenBSD: patch-configure_ac,v 1.24 2012/05/03 11:25:27 sthen Exp $
---- configure.ac.orig	Mon Mar 26 20:35:31 2012
-+++ configure.ac	Thu May  3 08:42:50 2012
-@@ -55,7 +55,7 @@ AC_SUBST([astvarrundir],      ['${localstatedir}/run/a
+--- configure.ac.orig	Mon Mar 26 14:35:31 2012
++++ configure.ac	Sat Jun  9 09:26:07 2012
+@@ -54,8 +54,8 @@ AC_SUBST([astlogdir],         ['${localstatedir}/log/a
+ AC_SUBST([astvarrundir],      ['${localstatedir}/run/asterisk'])dnl
  
  case "${host_os}" in
-      *bsd*)
+-     *bsd*)
 -     if test ${prefix} = 'NONE'; then
++     *bsd* | bitrig*)
 +     if test ${prefix} != 'NONE'; then
          astvarlibdir='${prefix}/share/asterisk'
          astdbdir='${localstatedir}/db/asterisk'
       fi
+@@ -73,7 +73,7 @@ case "${host_os}" in
+      CPPFLAGS=-I/usr/local/include
+      LDFLAGS=-L/usr/local/lib
+      ;;
+-     openbsd*)
++     openbsd* | bitrig*)
+      ac_default_prefix=/usr/local
+      if test ${prefix} = '/usr/local' || test ${prefix} = 'NONE'; then
+         if test ${sysconfdir} = '${prefix}/etc'; then
+@@ -158,7 +158,7 @@ case "${host_os}" in
+      netbsd*)
+      OSARCH=NetBSD
+      ;;
+-     openbsd*)
++     openbsd* | bitrig*)
+      OSARCH=OpenBSD
+      ;;
+      solaris*)
 @@ -1590,7 +1590,7 @@ if test "${USE_IMAP_TK}" != "no"; then
  			)
  		else #looking in imap directory didn't work, try c-client
