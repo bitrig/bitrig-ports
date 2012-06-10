@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2012/06/10 20:56:32 jasper Exp $
+# $OpenBSD: Makefile,v 1.6 2012/06/10 21:01:04 jasper Exp $
 
 SUBDIR =
 SUBDIR += CKeditor
@@ -43,6 +43,7 @@ SUBDIR += jquery_plugin
 SUBDIR += locale-fr
 #SUBDIR += locale-it
 #SUBDIR += locale-ja
+SUBDIR += locale-nl
 SUBDIR += masquerade		#1.0rc4
 #SUBDIR += menu_force
 #SUBDIR += metatag		1.0alpha5
