@@ -94,7 +94,8 @@ CONFIGURE_ARGS=	-qt-gif -system-libmng -system-libpng -system-libjpeg -system-zl
 		-I${X11BASE}/include/freetype2 \
 		-I${LOCALBASE}/include \
 		-L${WRKSRC}/lib \
-		-L${LOCALBASE}/lib
+		-L${LOCALBASE}/lib \
+		-platform openbsd-g++
 
 MULTI_PACKAGES+=-main -html -examples -mysql -postgresql -sqlite2
 
@@ -118,7 +119,7 @@ ALL_TARGET=sub-src sub-tools
 CONFIGURE_ARGS+=	-prefix ${QT_LIBDIR}
 CONFIGURE_ARGS+=	-plugindir ${QT_PLUGINSDIR}
 
-CONFIGURE_ENV=	QTDIR="${WRKSRC}" 
+CONFIGURE_ENV=	QTDIR="${WRKSRC}"
 
 LIB_DEPENDS=
 BUILD_DEPENDS=print/cups
