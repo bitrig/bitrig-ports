@@ -1,6 +1,6 @@
 $OpenBSD: patch-qmake_generators_unix_unixmake2_cpp,v 1.15 2011/11/06 12:44:04 espie Exp $
---- qmake/generators/unix/unixmake2.cpp.orig	Mon Sep 12 10:49:28 2011
-+++ qmake/generators/unix/unixmake2.cpp	Sun Oct 30 01:32:03 2011
+--- qmake/generators/unix/unixmake2.cpp.orig	Mon Sep 12 01:49:28 2011
++++ qmake/generators/unix/unixmake2.cpp	Mon Jun 11 12:18:30 2012
 @@ -80,6 +80,9 @@ UnixMakefileGenerator::writeMakefile(QTextStream &t)
  {
  
@@ -120,10 +120,7 @@ $OpenBSD: patch-qmake_generators_unix_unixmake2_cpp,v 1.15 2011/11/06 12:44:04 e
      }
      t << "'\n\n";
  
-@@ -1303,10 +1315,10 @@ UnixMakefileGenerator::writeLibtoolFile()
-     if(!project->isEmpty("QMAKE_INTERNAL_PRL_LIBS"))
-         libs = project->values("QMAKE_INTERNAL_PRL_LIBS");
-     else
+@@ -1306,7 +1318,7 @@ UnixMakefileGenerator::writeLibtoolFile()
          libs << "QMAKE_LIBS"; //obvious one
      t << "dependency_libs='";
      for(QStringList::ConstIterator it = libs.begin(); it != libs.end(); ++it)
