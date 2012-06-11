@@ -1,0 +1,12 @@
+$OpenBSD$
+--- autoconf/ast_check_pwlib.m4.orig	Sun Jun 10 09:26:23 2012
++++ autoconf/ast_check_pwlib.m4	Sun Jun 10 09:26:50 2012
+@@ -5,7 +5,7 @@ case "$host_os" in
+   		;;
+   freebsd* )       PWLIB_OSTYPE=FreeBSD ;
+   		;;
+-  openbsd* )       PWLIB_OSTYPE=OpenBSD ;
++  openbsd* | bitrig* )       PWLIB_OSTYPE=OpenBSD ;
+ 				   ENDLDLIBS="-lossaudio" ;
+ 		;;
+   netbsd* )        PWLIB_OSTYPE=NetBSD ;

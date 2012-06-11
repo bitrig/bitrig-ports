@@ -239,7 +239,6 @@ lib/asterisk/modules/chan_gtalk.so
 lib/asterisk/modules/chan_iax2.so
 lib/asterisk/modules/chan_jingle.so
 lib/asterisk/modules/chan_local.so
-lib/asterisk/modules/chan_mgcp.so
 lib/asterisk/modules/chan_multicast_rtp.so
 lib/asterisk/modules/chan_sip.so
 lib/asterisk/modules/chan_skinny.so
@@ -1087,16 +1086,6 @@ share/examples/asterisk/voicemail/default/1234/INBOX/
 @sample /var/spool/asterisk/voicemail/default/
 @sample /var/spool/asterisk/voicemail/default/1234/
 @mode
-@owner
+@owner _asterisk
 @group
-share/examples/asterisk/voicemail/default/1234/en/
-share/examples/asterisk/voicemail/default/1234/en/busy.gsm
-@owner _asterisk
 @sample /var/spool/asterisk/voicemail/default/1234/en/
-@sample /var/spool/asterisk/voicemail/default/1234/en/busy.gsm
-@owner
-share/examples/asterisk/voicemail/default/1234/en/unavail.gsm
-@owner _asterisk
-@sample /var/spool/asterisk/voicemail/default/1234/en/unavail.gsm
-@owner
-@rcscript ${RCDIR}/asterisk
