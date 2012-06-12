@@ -45,13 +45,16 @@ USE_GMAKE=		Yes
 
 WRKSRC=			${WRKDIST}/mozilla/security/nss
 NSSDIST=		${WRKDIST}/mozilla/dist
-NSSOBJ=			${NSSDIST}/OpenBSD`uname -r`${OBJ64}_OPT.OBJ
+NSSOBJ=			${NSSDIST}/Bitrig`uname -r`${OBJ64}_OPT.OBJ
 
 ALL_TARGET=		nss_build_all
 
 # Don't forget to sync these with http://wiki.mozilla.org/NSS:ToolsToShip
 MAIN_TOOLS=		certutil modutil pk12util signtool ssltap crlutil \
 			cmsutil signver
+
+post-extract:
+	@cp -Rp ${FILESDIR}/mozilla ${WRKSRC}/../../../
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/nss
