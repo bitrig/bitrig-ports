@@ -1,0 +1,11 @@
+$OpenBSD$
+--- exrmaketiled/main.cpp.orig	Mon Jun 11 21:22:08 2012
++++ exrmaketiled/main.cpp	Mon Jun 11 21:22:16 2012
+@@ -46,6 +46,7 @@
+ #include <exception>
+ #include <string>
+ #include <stdlib.h>
++#include <string.h>
+ 
+ using namespace Imf;
+ using namespace std;
