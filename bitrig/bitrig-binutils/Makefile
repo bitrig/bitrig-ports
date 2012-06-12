@@ -20,7 +20,7 @@ PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB =		c kvm m ncurses
 
-MASTER_SITES=	http://www.bitrig.org/files/
+MASTER_SITES=	https://www.bitrig.org/pub/distfiles/
 
 NO_REGRESS=	Yes
 
