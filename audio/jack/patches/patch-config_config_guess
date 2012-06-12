@@ -1,0 +1,14 @@
+$OpenBSD$
+--- config/config.guess.orig	Mon Jun 11 20:39:17 2012
++++ config/config.guess	Mon Jun 11 20:39:28 2012
+@@ -201,6 +201,10 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
+ 	# CPU_TYPE-MANUFACTURER-OPERATING_SYSTEM is used.
+ 	echo "${machine}-${os}${release}"
+ 	exit ;;
++    *:Bitrig:*:*)
++	UNAME_MACHINE_ARCH=`arch | sed 's/Bitrig.//'`
++	echo ${UNAME_MACHINE_ARCH}-unknown-bitrig${UNAME_RELEASE}
++	exit ;;
+     *:OpenBSD:*:*)
+ 	UNAME_MACHINE_ARCH=`arch | sed 's/OpenBSD.//'`
+ 	echo ${UNAME_MACHINE_ARCH}-unknown-openbsd${UNAME_RELEASE}
