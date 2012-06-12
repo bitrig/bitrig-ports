@@ -1,7 +1,13 @@
 $OpenBSD: patch-mozilla_nsprpub_configure_in,v 1.13 2012/02/20 09:17:00 landry Exp $
---- mozilla/nsprpub/configure.in.orig	Tue Feb 14 20:06:00 2012
-+++ mozilla/nsprpub/configure.in	Fri Feb 17 08:51:34 2012
-@@ -2232,9 +2232,11 @@ mips-sony-newsos*)
+--- mozilla/nsprpub/configure.in.orig	Tue Feb 14 13:06:00 2012
++++ mozilla/nsprpub/configure.in	Tue Jun 12 07:35:23 2012
+@@ -2227,14 +2227,16 @@ mips-sony-newsos*)
+     _DEBUG_FLAGS="-gstabs"
+ 	;;
+ 
+-*-openbsd*)
++*-openbsd* | *-bitrig*)
+     AC_DEFINE(XP_UNIX)
      AC_DEFINE(OPENBSD)
      AC_DEFINE(HAVE_BSD_FLOCK)
      AC_DEFINE(HAVE_SOCKLEN_T)
@@ -14,6 +20,24 @@ $OpenBSD: patch-mozilla_nsprpub_configure_in,v 1.13 2012/02/20 09:17:00 landry E
      DSO_CFLAGS=-fPIC
      MDCPUCFG_H=_openbsd.cfg
      PR_MD_CSRCS=openbsd.c
+@@ -3022,7 +3024,7 @@ if test -n "$USE_PTHREADS"; then
+ 	        _PTHREAD_LDFLAGS=
+ 	    fi
+ 	    ;;
+-    *-openbsd*)
++    *-openbsd* | *-bitrig*)
+         if test "$ac_cv_have_dash_pthread" = "yes"; then
+             _PTHREAD_LDFLAGS=-pthread
+         fi
+@@ -3122,7 +3124,7 @@ case "$target" in
+     _PTHREAD_LDFLAGS=
+     USE_USER_PTHREADS=
+     ;;
+-*-netbsd*|*-openbsd*)
++*-netbsd*|*-openbsd*|*-bitrig*)
+     if test -n "$USE_NSPR_THREADS"; then
+         AC_DEFINE(_PR_LOCAL_THREADS_ONLY)
+     fi
 @@ -3357,6 +3359,7 @@ MAKEFILES="
      config/nsprincl.mk
      config/nsprincl.sh
