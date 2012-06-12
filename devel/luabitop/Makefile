@@ -1,12 +1,14 @@
-# $OpenBSD: Makefile,v 1.6 2012/05/15 20:45:12 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2012/06/06 11:52:42 jasper Exp $
 
 SHARED_ONLY=	Yes
+
 COMMENT=	library for bitwise operations in lua
-DISTNAME=	LuaBitOp-1.0.1
-PKGNAME=	luabitop-1.0.1
-REVISION=	2
+
+V=		1.0.2
+DISTNAME=	LuaBitOp-$V
+PKGNAME=	luabitop-$V
 CATEGORIES=	devel
-MASTER_SITES=	http://bitop.luajit.org/download/
+MASTER_SITES=	${HOMEPAGE}/download/
 
 HOMEPAGE=	http://bitop.luajit.org/
 
@@ -18,7 +20,7 @@ PERMIT_PACKAGE_FTP=	Yes
 
 USE_GMAKE=	Yes
 MODULES=	lang/lua
-REGRESS_DEPENDS+=devel/luabitop
+REGRESS_DEPENDS+=${BASE_PKGPATH}
 MAKE_ENV+=	INCLUDES=-I${LOCALBASE}/include
 
 do-install:

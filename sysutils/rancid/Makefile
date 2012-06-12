@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.13 2012/04/28 10:51:44 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.15 2012/06/09 11:26:02 sthen Exp $
 
 COMMENT =	Really Awesome New Cisco confIg Differ
 
-DISTNAME =	rancid-2.3.3
-REVISION =	2
+DISTNAME =	rancid-2.3.8
 EPOCH = 	0
 CATEGORIES =	sysutils
 
@@ -12,8 +11,8 @@ HOMEPAGE =	http://www.shrubbery.net/rancid/
 MAINTAINER =	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # Custom
-PERMIT_PACKAGE_CDROM =	"not for commercial use"
-PERMIT_DISTFILES_CDROM ="not for commercial use"
+PERMIT_PACKAGE_CDROM =	not for commercial use
+PERMIT_DISTFILES_CDROM =not for commercial use
 PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_FTP =	Yes
 
