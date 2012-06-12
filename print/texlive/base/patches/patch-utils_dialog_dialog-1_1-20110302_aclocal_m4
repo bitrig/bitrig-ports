@@ -1,0 +1,12 @@
+$OpenBSD$
+--- utils/dialog/dialog-1.1-20110302/aclocal.m4.origy	Mon Jun 11 21:47:06 2012
++++ utils/dialog/dialog-1.1-20110302/aclocal.m4	Mon Jun 11 21:47:21 2012
+@@ -3893,7 +3893,7 @@ mirbsd*) #(vi
+ netbsd*) #(vi
+ 	# setting _XOPEN_SOURCE breaks IPv6 for lynx on NetBSD 1.6, breaks xterm, is not needed for ncursesw
+ 	;;
+-openbsd*) #(vi
++openbsd*|bitrig*) #(vi
+ 	# setting _XOPEN_SOURCE breaks xterm on OpenBSD 2.8, is not needed for ncursesw
+ 	;;
+ osf[[45]]*) #(vi

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libs/icu/icu-4.6/aclocal.m4.origy	Mon Jun 11 21:36:40 2012
++++ libs/icu/icu-4.6/aclocal.m4	Mon Jun 11 21:37:05 2012
+@@ -40,7 +40,7 @@ powerpc*-*-linux*)
+ 	else
+ 		icu_cv_host_frag=mh-cygwin-msvc
+ 	fi ;;
+-*-*-*bsd*|*-*-dragonfly*) 	icu_cv_host_frag=mh-bsd-gcc ;;
++*-*-*bsd*|*-*-dragonfly*|*-*-bitrig*) 	icu_cv_host_frag=mh-bsd-gcc ;;
+ *-*-aix*)
+ 	if test "$GCC" = yes; then
+ 		icu_cv_host_frag=mh-aix-gcc
