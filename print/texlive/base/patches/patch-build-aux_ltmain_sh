@@ -1,0 +1,30 @@
+$OpenBSD$
+--- build-aux/ltmain.sh.origy	Mon Jun 11 16:46:49 2012
++++ build-aux/ltmain.sh	Mon Jun 11 16:46:52 2012
+@@ -5597,7 +5597,7 @@ func_mode_link ()
+ 	    # These systems don't actually have a C library (as such)
+ 	    test "X$arg" = "X-lc" && continue
+ 	    ;;
+-	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
++	  *-*-openbsd* | *-*-bitrig* | *-*-freebsd* | *-*-dragonfly*)
+ 	    # Do not include libc due to us having libc/libc_r.
+ 	    test "X$arg" = "X-lc" && continue
+ 	    ;;
+@@ -5617,7 +5617,7 @@ func_mode_link ()
+ 	  esac
+ 	elif test "X$arg" = "X-lc_r"; then
+ 	 case $host in
+-	 *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
++	 *-*-openbsd* | *-*-bitrig* | *-*-freebsd* | *-*-dragonfly*)
+ 	   # Do not include libc_r directly, use -pthread flag.
+ 	   continue
+ 	   ;;
+@@ -7615,7 +7615,7 @@ func_mode_link ()
+ 	  *-*-netbsd*)
+ 	    # Don't link with libc until the a.out ld.so is fixed.
+ 	    ;;
+-	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
++	  *-*-openbsd* | *-*-bitrig* | *-*-freebsd* | *-*-dragonfly*)
+ 	    # Do not include libc due to us having libc/libc_r.
+ 	    ;;
+ 	  *-*-sco3.2v5* | *-*-sco5v6*)

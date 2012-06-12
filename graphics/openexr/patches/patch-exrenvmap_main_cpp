@@ -1,0 +1,11 @@
+$OpenBSD$
+--- exrenvmap/main.cpp.orig	Mon Jun 11 21:22:45 2012
++++ exrenvmap/main.cpp	Mon Jun 11 21:22:53 2012
+@@ -45,6 +45,7 @@
+ #include <iostream>
+ #include <exception>
+ #include <stdlib.h>
++#include <string.h>
+ 
+ using namespace Imf;
+ using namespace std;

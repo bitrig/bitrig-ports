@@ -1,0 +1,13 @@
+$OpenBSD$
+--- texk/ps2pkm/type1.c.origy	Mon Jun 11 22:05:52 2012
++++ texk/ps2pkm/type1.c	Mon Jun 11 22:13:44 2012
+@@ -780,7 +780,8 @@ static void PSFakePush(Num)
+ static DOUBLE PSFakePop ()
+ {
+   if (PSFakeTop >= 0) return(PSFakeStack[PSFakeTop--]);
+-  else Error0("PSFakePop : Stack empty\n");
++  else //Error0("PSFakePop : Stack empty\n");
++	return 0.0;
+   /*NOTREACHED*/
+ }
+  

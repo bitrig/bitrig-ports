@@ -257,15 +257,17 @@ WANTLIB-html =
 RUN_DEPENDS-html =
 PKG_ARCH-html =	*
 
-.if ${COMPILER_VERSION:L:Mgcc4*}
+CC= gcc
+CXX=g++
+.if ${COMPILER_VERSION:L:Mgcc3*}
+PKG_ARGS += 		-DGCC4=0
+.else
 CONFIGURE_ARGS +=	-platform openbsd-g++4
 PKG_ARGS += 		-DGCC4=1
 commonWANTLIB += 	stdc++
 sqlWANTLIB += 		stdc++
 WANTLIB-examples +=	lib/qt4/QtWebKit lib/qt4/QtXmlPatterns
 WANTLIB-main += 	sqlite3
-.else
-PKG_ARGS += 		-DGCC4=0
 .endif
 
 commonWANTLIB += 	stdc++

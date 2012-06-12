@@ -1,0 +1,30 @@
+$OpenBSD$
+--- libs/icu/icu-4.6/configure.origy	Mon Jun 11 21:40:02 2012
++++ libs/icu/icu-4.6/configure	Mon Jun 11 21:42:32 2012
+@@ -5109,7 +5109,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
+ 	else
+ 		icu_cv_host_frag=mh-cygwin-msvc
+ 	fi ;;
+-*-*-*bsd*|*-*-dragonfly*) 	icu_cv_host_frag=mh-bsd-gcc ;;
++*-*-*bsd*|*-*-dragonfly*|*-*-bitrig*) 	icu_cv_host_frag=mh-bsd-gcc ;;
+ *-*-aix*)
+ 	if test "$GCC" = yes; then
+ 		icu_cv_host_frag=mh-aix-gcc
+@@ -6218,7 +6218,7 @@ $as_echo_n "checking for genccode assembly... " >&6; }
+ # Check to see if genccode can generate simple assembly.
+ GENCCODE_ASSEMBLY=
+ case "${host}" in
+-*-linux*|i*86-*-*bsd*|i*86-pc-gnu)
++*-linux*|i*86-*-*bsd*|i*86-pc-gnu|i*86-*-bitrig*)
+     if test "$GCC" = yes; then
+         # We're using gcc, and the simple -a gcc command line works for genccode
+         GENCCODE_ASSEMBLY="-a gcc"
+@@ -7734,7 +7734,7 @@ ICUDATA_CHAR=$U_ENDIAN_CHAR
+ case "${host}" in
+ 	*-*-solaris*) 	platform=U_SOLARIS ;;
+ 	*-*-linux*|*-*-gnu|*-*-k*bsd*-gnu|*-*-kopensolaris*-gnu)        platform=U_LINUX ;;
+-	*-*-*bsd*|*-*-dragonfly*) 	platform=U_BSD ;;
++	*-*-*bsd*|*-*-dragonfly*|*-*-bitrig*) 	platform=U_BSD ;;
+ 	*-*-aix*) 	platform=U_AIX ;;
+ 	*-*-hpux*) 	platform=U_HPUX ;;
+ 	*-apple-darwin*|*-apple-rhapsody*)	platform=U_DARWIN ;;

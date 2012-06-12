@@ -1,0 +1,12 @@
+$OpenBSD$
+--- utils/dialog/dialog-1.1-20110302/configure.origy	Mon Jun 11 21:48:04 2012
++++ utils/dialog/dialog-1.1-20110302/configure	Mon Jun 11 21:48:26 2012
+@@ -2947,7 +2947,7 @@ mirbsd*) #(vi
+ netbsd*) #(vi
+ 	# setting _XOPEN_SOURCE breaks IPv6 for lynx on NetBSD 1.6, breaks xterm, is not needed for ncursesw
+ 	;;
+-openbsd*) #(vi
++openbsd* | bitrig*) #(vi
+ 	# setting _XOPEN_SOURCE breaks xterm on OpenBSD 2.8, is not needed for ncursesw
+ 	;;
+ osf[45]*) #(vi
