@@ -50,11 +50,8 @@ AUTOCONF_VERSION= 2.68
 AUTOMAKE_VERSION= 1.11
 
 MODULES=	devel/gettext \
-		x11/qt4 \
-		gcc4
-MODGCC4_VERSION= 4.6
-MODGCC4_ARCHS=	amd64 i386
-MODGCC4_LANGS=	c
+		x11/qt4
+
 LIB_DEPENDS-main= ${MODQT4_LIB_DEPENDS} \
 		${MODGETTEXT_LIB_DEPENDS} \
 		archivers/libtar \
@@ -155,7 +152,8 @@ CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}" \
 		    -L${LOCALBASE}/live/groupsock -L${LOCALBASE}/live/BasicUsageEnvironment \
 		    -L${LOCALBASE}/live/UsageEnvironment" \
 		LOCALBASE="${LOCALBASE}" \
-		PKG_CONFIG_PATH="${LOCALBASE}/lib/qt4/pkgconfig"
+		PKG_CONFIG_PATH="${LOCALBASE}/lib/qt4/pkgconfig" \
+		CC=cc CXX=g++
 
 PSEUDO_FLAVORS=	no_jack
 FLAVOR?=
