@@ -36,6 +36,8 @@ BUILD_DEPENDS = ${MODFORTRAN_BUILD_DEPENDS}
 LIB_DEPENDS=            math/lapack \
 			${MODFORTRAN_LIB_DEPENDS}
 
+COMPILER_VERSION=gcc4
+
 # XXX Segmentation fault on powerpc when building py-scipy:
 # remove '-funroll-loops'
 .if ${MACHINE_ARCH} == "powerpc"
