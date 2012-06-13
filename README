@@ -1,8 +1,7 @@
-Documentation for the ports tree: ports(7), packages(7), mirroring-ports(7),
-library-specs(7), bsd.port.mk(5), bsd.port.arch.mk(5), port-modules(5).
+Bitrig - Ports collection repository.
 
-dpb(1) (manpage under ${PORTSDIR}/man) for bulk builds.
+Bitrig is a free, fast, secure, and highly portable Unix-like Open Source
+operating system. It is available on current hardware platforms. The source
+code is freely available under a non-viral license.
 
-See also the OpenBSD Porter's Handbook http://www.openbsd.org/faq/ports/
-
-$OpenBSD: README,v 1.20 2011/11/15 18:33:16 espie Exp $
+To learn more please visit https://www.bitrig.org
