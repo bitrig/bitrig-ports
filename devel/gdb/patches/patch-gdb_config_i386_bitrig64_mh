@@ -1,0 +1,9 @@
+$OpenBSD$
+--- /dev/null	Mon Jun 11 23:29:01 2012
++++ gdb/config/i386/bitrig64.mh	Mon Jun 11 23:24:06 2012
+@@ -0,0 +1,5 @@
++# Host: Bitrig/amd64
++NATDEPFILES= fork-child.o inf-ptrace.o \
++	amd64-nat.o amd64bsd-nat.o amd64obsd-nat.o bsd-kvm.o
++
++LOADLIBES= -lkvm

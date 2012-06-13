@@ -26,6 +26,7 @@ WANTLIB = c expat kvm m ncurses pthread ${MODPY_WANTLIB} util z
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--program-transform-name=s,^,e, \
 		--disable-nls \
+		--disable-werror \
 	 	--enable-target=all \
 		--with-python=${MODPY_BIN}
 

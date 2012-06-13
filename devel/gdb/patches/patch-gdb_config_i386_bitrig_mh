@@ -1,0 +1,9 @@
+$OpenBSD$
+--- /dev/null	Mon Jun 11 23:29:47 2012
++++ gdb/config/i386/bitrig.mh	Mon Jun 11 23:29:38 2012
+@@ -0,0 +1,5 @@
++# Host: Bitrig/i386
++NATDEPFILES= fork-child.o inf-ptrace.o \
++	i386bsd-nat.o i386obsd-nat.o bsd-kvm.o
++
++LOADLIBES= -lkvm
