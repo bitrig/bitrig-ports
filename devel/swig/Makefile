@@ -33,7 +33,8 @@ CONFIGURE_ARGS+= --with-tclincl=${MODTCL_INCDIR} \
 		 --with-guilelib=${LOCALBASE}/lib \
 		 --with-python=${MODPY_BIN} \
 		 --without-php4 \
-		 --without-ocaml
+		 --without-ocaml \
+		CC=cc CXX=g++
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/Tools/config
 
 ALL_TARGET=	swig
