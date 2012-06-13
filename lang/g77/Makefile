@@ -13,12 +13,14 @@ EPOCH =			0
 DISTFILES = 		g77-openbsd.tgz
 
 .if ${MACHINE_ARCH:Mamd64}
-CONFIG = 		x86_64-unknown-bitrig${OSREV}
+CONFIG_A = 		x86_64-unknown-bitrig${OSREV}
 .else
-CONFIG = 		${MACHINE_ARCH}-unknown-bitrig${OSREV}
+CONFIG_A = 		${MACHINE_ARCH}-unknown-bitrig${OSREV}
 .endif
 
-SUBST_VARS += 		CONFIG V
+CONFIG_B =		${MACHINE_ARCH}-unknown-bitrig${OSREV}
+
+SUBST_VARS += 		CONFIG_A CONFIG_B V
 
 COMMENT =		GNU fortran 77 compiler
 CATEGORIES =		lang math
@@ -74,8 +76,8 @@ ALL_TARGET = 		all doc
 INSTALL_TARGET = 	install-common f77.install-info f77.install-normal
 
 post-install:
-	ln -sf /usr/lib/gcc/${CONFIG}/${SYSV}/libgcc.a ${PREFIX}/lib/gcc-lib/${CONFIG}/$V/libgcc.a
-	ln -s /usr/lib/gcc/${CONFIG}/${SYSV}/cc1 ${PREFIX}/lib/gcc-lib/${CONFIG}/$V/cc1
+	ln -sf /usr/lib/gcc/${CONFIG_A}/${SYSV}/libgcc.a ${PREFIX}/lib/gcc-lib/${CONFIG_B}/$V/libgcc.a
+	ln -s /usr/lib/gcc/${CONFIG_A}/${SYSV}/cc1 ${PREFIX}/lib/gcc-lib/${CONFIG_B}/$V/cc1
 	${INSTALL_MAN} ${WRKBUILD}/f/g77.1 ${PREFIX}/man/man1/g77.1
 	cd ${PREFIX}/man/man1 && ln -f g77.1 f77.1
 	cd ${PREFIX}/bin && ln -f g77 f77
