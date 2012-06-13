@@ -1,6 +1,123 @@
-$OpenBSD: patch-configure,v 1.4 2008/10/15 14:31:04 ajacoutot Exp $
+$OpenBSD$
 --- configure.orig	Fri Aug 22 03:41:04 2008
-+++ configure	Sat Oct 11 18:58:57 2008
++++ configure	Wed Jun 13 23:21:50 2012
+@@ -5063,7 +5063,7 @@ nto-qnx*)
+   lt_cv_deplibs_check_method=unknown
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -7660,7 +7660,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -8418,7 +8418,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -9135,7 +9135,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -9864,7 +9864,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -12379,7 +12379,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+     # C++ shared libraries are fairly broken
+     ld_shlibs_CXX=no
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     if test -f /usr/libexec/ld.so; then
+       hardcode_direct_CXX=yes
+       hardcode_shlibpath_var_CXX=no
+@@ -13832,7 +13832,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -15061,7 +15061,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -15758,7 +15758,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var_F77=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_F77=yes
+ 	hardcode_shlibpath_var_F77=no
+@@ -16435,7 +16435,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -17644,7 +17644,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -18361,7 +18361,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var_GCJ=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_GCJ=yes
+ 	hardcode_shlibpath_var_GCJ=no
+@@ -19038,7 +19038,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -21290,6 +21290,7 @@ fi
    fi
  
@@ -17,6 +134,33 @@ $OpenBSD: patch-configure,v 1.4 2008/10/15 14:31:04 ajacoutot Exp $
  
  
      if test -n "$INTL_MACOSX_LIBS"; then
+@@ -24353,7 +24355,7 @@ else
+       alpine_SSLTYPE="nopwd"
+       alpine_SSLCERTS="/System/Library/OpenSSL/certs"
+       ;;
+-    *-openbsd*)
++    *-openbsd* | *-bitrig*)
+       alpine_SSLTYPE="nopwd"
+       alpine_SSLDIR="/usr"
+       alpine_SSLCERTS="/etc/ssl/certs"
+@@ -26767,7 +26769,7 @@ if test x"$acx_pthread_ok" = xyes; then
+       { echo "$as_me:$LINENO: result: yes" >&5
+ echo "${ECHO_T}yes" >&6; }
+       case "$target" in
+-	  *openbsd*)
++	  *openbsd* | *bitrig*)
+ 	    { echo "$as_me:$LINENO: WARNING: pthread support on OpenBSD is unstable!" >&5
+ echo "$as_me: WARNING: pthread support on OpenBSD is unstable!" >&6;}
+ 	    AM_CFLAGS="$AM_CFLAGS -pthread"
+@@ -33146,7 +33148,7 @@ _ACEOF
+     alpine_c_client_target="bsf"
+     LIBS="$LIBS $LIBINTL"
+     ;;
+-  *-*-openbsd*)
++  *-*-openbsd* | *-*-bitrig*)
+     systype="BSO"
+     alpine_path_delim="/"
+     alpine_mode_readonly="(0600)"
 @@ -34223,10 +34225,10 @@ GMSGFMT!$GMSGFMT$ac_delim
  XGETTEXT!$XGETTEXT$ac_delim
  MSGMERGE!$MSGMERGE$ac_delim
