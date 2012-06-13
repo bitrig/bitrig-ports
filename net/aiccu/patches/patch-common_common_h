@@ -1,0 +1,37 @@
+$OpenBSD$
+--- common/common.h.orig	Thu Jan 11 15:50:51 2007
++++ common/common.h	Wed Jun 13 20:46:22 2012
+@@ -20,6 +20,7 @@
+ #endif
+ 
+ #ifndef _OPENBSD
++#ifndef _BITRIG
+ #ifndef _SUNOS
+ #ifndef _AIX
+ #ifndef _XOPEN_SOURCE
+@@ -28,6 +29,7 @@
+ #endif
+ #endif
+ #endif
++#endif
+ #define __STRICT_ANSI__
+ 
+ /* Don't deprecate strncat etc. */
+@@ -57,7 +59,7 @@
+ #include <arpa/nameser_compat.h>
+ #else
+ #ifndef _WIN32
+-#if defined(_OPENBSD) || defined(_DFBSD) || defined(_FREEBSD) || defined(_NETBSD)
++#if defined(_OPENBSD) || defined(_BITRIG) || defined(_DFBSD) || defined(_FREEBSD) || defined(_NETBSD)
+ #include <sys/endian.h>
+ #else
+ #include <endian.h>
+@@ -127,7 +129,7 @@
+ 	#include <netinet/ip_icmp.h>
+ 	#include <sys/ioctl.h>
+ 
+-#if defined(_OPENBSD) || defined(_DARWIN) || defined(_FREEBSD) || defined(_DFBSD)
++#if defined(_OPENBSD) || defined(_BITRIG) || defined(_DARWIN) || defined(_FREEBSD) || defined(_DFBSD)
+ 	#include <sys/uio.h>
+ #endif
+ 

@@ -1,6 +1,6 @@
-$OpenBSD: patch-doc_aiccu_1,v 1.1.1.1 2007/02/13 20:30:48 naddy Exp $
+$OpenBSD$
 --- doc/aiccu.1.orig	Sat May 21 19:48:53 2005
-+++ doc/aiccu.1	Tue Dec 19 22:50:12 2006
++++ doc/aiccu.1	Wed Jun 13 20:41:31 2012
 @@ -3,7 +3,7 @@
  .\" <http://shell.ipoline.com/~elmert/comp/docbook2X/> 
  .\" Please send any bug reports, improvements, comments, patches, 
@@ -10,7 +10,7 @@ $OpenBSD: patch-doc_aiccu_1,v 1.1.1.1 2007/02/13 20:30:48 naddy Exp $
  
  .SH NAME
  AICCU \- Automatic IPv6 Connectivity Configuration Utility
-@@ -18,10 +18,19 @@ everywhere they want. It uses the TIC (T
+@@ -18,10 +18,19 @@ everywhere they want. It uses the TIC (Tunnel Informat
  protocol to request the information needed to setup a tunnel through
  which the connectivity is created.
  AICCU supports the following tunneling protocols:

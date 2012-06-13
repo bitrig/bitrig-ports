@@ -1,0 +1,17 @@
+$OpenBSD$
+--- unix-console/Makefile.orig	Mon Jan 15 12:04:27 2007
++++ unix-console/Makefile	Wed Jun 13 20:44:58 2012
+@@ -113,6 +113,13 @@ endif
+ CFLAGS	+= -pthread
+ endif
+ 
++# Bitrig
++ifeq ($(shell uname | grep -c "Bitrig"),1)
++CFLAGS  += -D_BITRIG -D HAS_IFHEAD -D AICCU_TYPE="\"bitrig\"" -pthread
++SRCS    += ../common/aiccu_bitrig.c
++OBJS    += ../common/aiccu_bitrig.o
++endif
++
+ # Darwin
+ ifeq ($(shell uname | grep -c "Darwin"),1)
+ CFLAGS	+= -D_DARWIN -D NEED_IFHEAD -D AICCU_TYPE="\"darwin\""
