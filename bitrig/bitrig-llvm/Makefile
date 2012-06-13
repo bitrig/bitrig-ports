@@ -11,7 +11,7 @@ LLVM_V =	3.1
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION =	9
+REVISION =	10
 
 CATEGORIES =	bitrig
 
@@ -19,9 +19,7 @@ CATEGORIES =	bitrig
 HOMEPAGE =	http://www.llvm.org/
 
 VMEM_WARNING =	Yes
-ONLY_FOR_ARCHS = amd64 i386 powerpc sparc64
-# some chance of building on other GCC4 arch, but is known to be
-# broken on alpha/sparc.
+ONLY_FOR_ARCHS = amd64 i386
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
@@ -32,12 +30,15 @@ PERMIT_DISTFILES_FTP =	Yes
 WANTLIB =	c m pthread stdc++
 
 MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
+MASTER_SITES0 = https://www.bitrig.org/pub/distfiles/
 
 DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
+DISTFILES +=	compiler-rt-20120611.tar.gz:0
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 
 post-extract:
 	@mv ${WRKDIR}/clang-${LLVM_V}.src ${WRKDIST}/tools/clang
+	@mv ${WRKDIR}/compiler-rt ${WRKDIST}/projects/compiler-rt
 
 MODULES =	devel/cmake \
 		lang/python
@@ -66,6 +67,12 @@ CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
 SUBST_VARS +=		CLANG_INCLUDE_PATH
 
+.if ${MACHINE_ARCH:Mamd64}
+INSTALL_ARCH = x86_64
+.else
+INSTALL_ARCH = ${ARCH}
+.endif
+
 pre-configure:
 	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/scan-build/scan-build
 	-@ln -s ${MODPY_BIN} ${WRKDIR}/bin/python
@@ -89,5 +96,6 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKSRC}/docs/CommandGuide/man/man1/* \
 	    ${PREFIX}/share/man/man1
+	${INSTALL_DATA} ${WRKBUILD}/lib/libclang_rt.${INSTALL_ARCH}.a ${PREFIX}/lib/libclang_rt.${ARCH}.a
 
 .include <bsd.port.mk>

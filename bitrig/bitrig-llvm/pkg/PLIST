@@ -1030,6 +1030,7 @@ lib/libclangStaticAnalyzerCheckers.a
 lib/libclangStaticAnalyzerCore.a
 lib/libclangStaticAnalyzerFrontend.a
 lib/libclangTooling.a
+lib/libclang_rt.${ARCH}.a
 @comment lib/libgtest.a
 @comment lib/libgtest_main.a
 lib/liblibclang.a

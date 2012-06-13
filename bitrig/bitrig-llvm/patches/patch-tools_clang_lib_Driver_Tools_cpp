@@ -1,6 +1,6 @@
 $OpenBSD$
---- tools/clang/lib/Driver/Tools.cpp.orig	Mon Jun  4 17:16:51 2012
-+++ tools/clang/lib/Driver/Tools.cpp	Mon Jun  4 17:56:30 2012
+--- tools/clang/lib/Driver/Tools.cpp.orig	Wed Apr 18 16:32:25 2012
++++ tools/clang/lib/Driver/Tools.cpp	Wed Jun 13 17:34:17 2012
 @@ -977,6 +977,11 @@ void Clang::AddX86TargetArgs(const ArgList &Args,
          CPUName = "x86-64";
        else if (getToolChain().getArch() == llvm::Triple::x86)
@@ -28,7 +28,7 @@ $OpenBSD$
    }
    if (StackProtectorLevel) {
      CmdArgs.push_back("-stack-protector");
-@@ -4563,6 +4572,157 @@ void auroraux::Link::ConstructJob(Compilation &C, cons
+@@ -4563,6 +4572,139 @@ void auroraux::Link::ConstructJob(Compilation &C, cons
    }
  
    addProfileRT(getToolChain(), Args, CmdArgs, getToolChain().getTriple());
@@ -115,34 +115,6 @@ $OpenBSD$
 +    }
 +  }
 +
-+  // XXX this is a terrible hack but needed untile we can switch from amd64 to x86_64
-+  std::string Triple = getToolChain().getTripleString();
-+  if (Triple.substr(0, 5) == "amd64")
-+    Triple.replace(0, 5, "x86_64");
-+
-+  bool PICEnabled = (Args.hasArg(options::OPT_fPIC) ||
-+                     Args.hasArg(options::OPT_fpic) ||
-+                     Args.hasArg(options::OPT_fPIE) ||
-+                     Args.hasArg(options::OPT_fpie));
-+
-+  // i386 does NOT have an fpic directory unlike amd64
-+  if (PICEnabled && getToolChain().getArchName() == "amd64") {
-+    CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc/" + Triple + "/4.6.2/fpic"));
-+
-+    /* XXX backwards compat for now */
-+    CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc/x86_64-unknown-openbsd5.1/4.6.2/fpic"));
-+    //llvm::errs() << "LINKJOB " << "-L/usr/lib/gcc/" << Triple << "/4.6.2/fpic\n";
-+  } else {
-+    CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc/" + Triple + "/4.6.2"));
-+
-+    /* XXX backwards compat for now */
-+    std::string MyArch = getToolChain().getArchName();
-+    if (MyArch.substr(0, 5) == "amd64")
-+      MyArch.replace(0, 5, "x86_64");
-+    CmdArgs.push_back(Args.MakeArgString("-L/usr/lib/gcc/" + MyArch + "-unknown-openbsd5.1/4.6.2"));
-+    //llvm::errs() << "LINKJOB " << "-L/usr/lib/gcc/" << Triple << "/4.6.2\n";
-+  }
-+
 +  Args.AddAllArgs(CmdArgs, options::OPT_L);
 +  Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
 +  Args.AddAllArgs(CmdArgs, options::OPT_e);
@@ -159,10 +131,6 @@ $OpenBSD$
 +        CmdArgs.push_back("-lm");
 +    }
 +
-+    // FIXME: For some reason GCC passes -lgcc before adding
-+    // the default system libraries. Just mimic this for now.
-+    CmdArgs.push_back("-lgcc");
-+
 +    if (Args.hasArg(options::OPT_pthread))
 +      CmdArgs.push_back("-lpthread");
 +    if (!Args.hasArg(options::OPT_shared)) {
@@ -171,7 +139,21 @@ $OpenBSD$
 +      else
 +         CmdArgs.push_back("-lc");
 +    }
-+    CmdArgs.push_back("-lgcc");
++
++    std::string myarch = "-lclang_rt.";
++    const llvm::Triple &T = getToolChain().getTriple();
++    llvm::Triple::ArchType Arch = T.getArch();
++    switch (Arch) {
++          case llvm::Triple::x86:
++            myarch += ("i386");
++            break;
++          case llvm::Triple::x86_64:
++            myarch += ("amd64");
++            break;
++          default:
++            assert(0 && "Unsupported architecture");
++    }
++    CmdArgs.push_back(Args.MakeArgString(myarch));
 +  }
 +
 +  if (!Args.hasArg(options::OPT_nostdlib) &&

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- projects/CMakeLists.txt.orig	Wed Jun 13 16:23:00 2012
++++ projects/CMakeLists.txt	Wed Jun 13 16:23:07 2012
+@@ -4,8 +4,6 @@
+ file(GLOB entries *)
+ foreach(entry ${entries})
+   if(IS_DIRECTORY ${entry} AND EXISTS ${entry}/CMakeLists.txt)
+-    if(NOT ${entry} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR}/compiler-rt)
+       add_subdirectory(${entry})
+-    endif()
+   endif()
+ endforeach(entry)

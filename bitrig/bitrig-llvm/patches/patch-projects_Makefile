@@ -1,0 +1,12 @@
+$OpenBSD$
+--- projects/Makefile.orig	Wed Jun 13 16:42:40 2012
++++ projects/Makefile	Wed Jun 13 16:42:46 2012
+@@ -15,7 +15,7 @@ include $(LEVEL)/Makefile.config
+ DIRS:= $(filter-out llvm-test test-suite,$(patsubst $(PROJ_SRC_DIR)/%/Makefile,%,$(wildcard $(PROJ_SRC_DIR)/*/Makefile)))
+ 
+ # Don't build compiler-rt, it isn't designed to be built directly.
+-DIRS := $(filter-out compiler-rt,$(DIRS))
++# DIRS := $(filter-out compiler-rt,$(DIRS))
+ 
+ # Don't build libcxx, it isn't designed to be built directly.
+ DIRS := $(filter-out libcxx,$(DIRS))

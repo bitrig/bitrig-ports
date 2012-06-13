@@ -1,0 +1,11 @@
+$OpenBSD$
+--- projects/compiler-rt/lib/CMakeLists.txt.orig	Wed Jun 13 16:24:48 2012
++++ projects/compiler-rt/lib/CMakeLists.txt	Wed Jun 13 16:24:56 2012
+@@ -23,6 +23,6 @@ endif()
+ 
+ # Also support building feature-based runtime libraries in their various
+ # subdircetories.
+-add_subdirectory(asan)
++# add_subdirectory(asan)
+ 
+ # FIXME: Add support for the profile library.

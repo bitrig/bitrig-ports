@@ -1,0 +1,11 @@
+$OpenBSD$
+--- projects/compiler-rt/CMakeLists.txt.orig	Wed Jun 13 16:24:29 2012
++++ projects/compiler-rt/CMakeLists.txt	Wed Jun 13 16:24:40 2012
+@@ -43,7 +43,3 @@ try_compile(CAN_TARGET_I386 ${CMAKE_BINARY_DIR} ${SIMP
+             CMAKE_FLAGS "-DCMAKE_EXE_LINKER_FLAGS:STRING=${TARGET_I386_CFLAGS}")
+ 
+ add_subdirectory(lib)
+-
+-if(LLVM_INCLUDE_TESTS)
+-  add_subdirectory(test)
+-endif()
