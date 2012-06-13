@@ -1,0 +1,13 @@
+$OpenBSD$
+--- config/gnu/config.guess.orig	Mon Feb 16 13:37:15 2004
++++ config/gnu/config.guess	Tue Jun 12 09:03:00 2012
+@@ -245,6 +245,9 @@
+     *:OpenBSD:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-openbsd${UNAME_RELEASE}
+ 	exit 0 ;;
++    *:Bitrig:*:*)
++	echo ${UNAME_MACHINE}-unknown-bitrig${UNAME_RELEASE}
++	exit ;;
+     *:ekkoBSD:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-ekkobsd${UNAME_RELEASE}
+ 	exit 0 ;;

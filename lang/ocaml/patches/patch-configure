@@ -1,16 +1,42 @@
-$OpenBSD: patch-configure,v 1.14 2010/12/17 18:42:04 dcoppa Exp $
---- configure.orig	Wed Jul 28 15:18:22 2010
-+++ configure	Thu Nov 18 10:07:33 2010
-@@ -629,6 +629,8 @@ if test $withsharedlibs = "yes"; then
-     i686-*-kfreebsd*)             natdynlink=true;;
-     x86_64-*-kfreebsd*)           natdynlink=true;;
-     i386-*-gnu0.3)                natdynlink=true;;
-+    i[3456]86-*-openbsd*)         natdynlink=true;;
-+    x86_64-*-openbsd*)            natdynlink=true;;
+$OpenBSD$
+--- configure.orig	Mon Jul  4 23:15:01 2011
++++ configure	Tue Jun 12 09:01:37 2012
+@@ -521,7 +521,7 @@
+       mksharedlib="$flexlink"
+       mkmaindll="$flexlink -maindll"
+       shared_libraries_supported=true;;
+-    *-*-linux-gnu|*-*-linux|*-*-freebsd[3-9]*|*-*-openbsd*|*-*-netbsd*|*-*-gnu*)
++    *-*-linux-gnu|*-*-linux|*-*-freebsd[3-9]*|*-*-openbsd*|*-*-bitrig*|*-*-netbsd*|*-*-gnu*)
+       sharedcccompopts="-fPIC"
+       mksharedlib="$bytecc -shared"
+       bytecclinkopts="$bytecclinkopts -Wl,-E"
+@@ -604,6 +604,14 @@
+       byteccrpath="-Wl,-rpath,"
+       mksharedlibrpath="-Wl,-rpath,"
+       shared_libraries_supported=true;;
++    *-*-bitrig*)
++      sharedcccompopts="-fPIC"
++      mksharedlib="$bytecc -shared"
++      bytecclinkopts="$bytecclinkopts -Wl,-E"
++      natdynlinkopts="-Wl,-E"
++      byteccrpath="-Wl,-rpath,"
++      mksharedlibrpath="-Wl,-rpath,"
++      shared_libraries_supported=true;;
    esac
  fi
  
-@@ -674,6 +676,7 @@ case "$host" in
+@@ -636,6 +644,10 @@
+     i[345]86-*-netbsd*)           natdynlink=true;;
+     x86_64-*-netbsd*)             natdynlink=true;;
+     i386-*-gnu0.3)                natdynlink=true;;
++    i[3456]86-*-openbsd*)         natdynlink=true;;
++    x86_64-*-openbsd*)            natdynlink=true;;
++    i[3456]86-*-bitrig*)          natdynlink=true;;
++    x86_64-*-bitrig*)             natdynlink=true;;
+   esac
+ fi
+ 
+@@ -681,6 +693,7 @@
                                  fi;;
    i[3456]86-*-gnu*)             arch=i386; system=gnu;;
    mips-*-irix6*)                arch=mips; system=irix;;
@@ -18,7 +44,7 @@ $OpenBSD: patch-configure,v 1.14 2010/12/17 18:42:04 dcoppa Exp $
    hppa1.1-*-hpux*)              arch=hppa; system=hpux;;
    hppa2.0*-*-hpux*)             arch=hppa; system=hpux;;
    hppa*-*-linux*)               arch=hppa; system=linux;;
-@@ -683,8 +686,11 @@ case "$host" in
+@@ -690,8 +703,11 @@
    powerpc-*-rhapsody*)          arch=power; model=ppc; system=rhapsody;;
    powerpc-*-darwin*)            arch=power; system=rhapsody
                                  if $arch64; then model=ppc64; else model=ppc; fi;;
@@ -30,7 +56,15 @@ $OpenBSD: patch-configure,v 1.14 2010/12/17 18:42:04 dcoppa Exp $
    ia64-*-linux*)                arch=ia64; system=linux;;
    ia64-*-gnu*)                  arch=ia64; system=gnu;;
    ia64-*-freebsd*)              arch=ia64; system=freebsd;;
-@@ -784,11 +790,15 @@ if test -n "$asppoption"; then aspp="$asppoption"; fi
+@@ -700,6 +716,7 @@
+   x86_64-*-freebsd*)            arch=amd64; system=freebsd;;
+   x86_64-*-netbsd*)             arch=amd64; system=netbsd;;
+   x86_64-*-openbsd*)            arch=amd64; system=openbsd;;
++  x86_64-*-bitrig*)             arch=amd64; system=bitrig;;
+   x86_64-*-darwin9.5)           arch=amd64; system=macosx;;
+ esac
+ 
+@@ -791,11 +808,16 @@
  cc_profile='-pg'
  case "$arch,$model,$system" in
    alpha,*,digital) profiling='prof';;
@@ -41,12 +75,33 @@ $OpenBSD: patch-configure,v 1.14 2010/12/17 18:42:04 dcoppa Exp $
    amd64,*,macosx) profiling='prof';;
    i386,*,macosx) profiling='prof';;
 +  amd64,*,openbsd) profiling='prof';;
++  amd64,*,bitrig) profiling='prof';;
 +  power,*,bsd) profiling='prof';;
 +  sparc,*,bsd) profiling='prof';;
    sparc,*,solaris)
      profiling='prof'
      case "$nativecc" in gcc*) ;; *) cc_profile='-xpg';; esac;;
-@@ -1570,11 +1580,11 @@ fi
+@@ -1207,6 +1229,8 @@
+                    pthread_caml_link="-cclib -pthread";;
+     *-*-openbsd*)  pthread_link="-pthread"
+                    pthread_caml_link="-cclib -pthread";;
++    *-*-bitrig*)   pthread_link="-pthread"
++                   pthread_caml_link="-cclib -pthread";;
+     *)             pthread_link="-lpthread"
+                    pthread_caml_link="-cclib -lpthread";;
+   esac
+@@ -1224,6 +1248,10 @@
+           bytecccompopts="$bytecccompopts -pthread"
+           asppflags="$asppflags -pthread"
+           nativecccompopts="$nativecccompopts -pthread";;
++      *-*-bitrig*)
++          bytecccompopts="$bytecccompopts -pthread"
++          asppflags="$asppflags -pthread"
++          nativecccompopts="$nativecccompopts -pthread";;
+     esac
+     echo "Options for linking with POSIX threads: $pthread_link"
+     if sh ./hasgot $pthread_link sigwait; then
+@@ -1581,11 +1609,11 @@
  
  # Look for BFD library
  
