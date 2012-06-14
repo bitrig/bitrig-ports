@@ -1,0 +1,12 @@
+$OpenBSD$
+--- tools/wafadmin/Utils.py.orig	Thu Jun 14 01:03:05 2012
++++ tools/wafadmin/Utils.py	Thu Jun 14 01:03:27 2012
+@@ -472,7 +472,7 @@ def subst_vars(expr, params):
+ def unversioned_sys_platform_to_binary_format(unversioned_sys_platform):
+ 	"infers the binary format from the unversioned_sys_platform name."
+ 
+-	if unversioned_sys_platform in ('linux', 'freebsd', 'netbsd', 'openbsd', 'sunos'):
++	if unversioned_sys_platform in ('linux', 'freebsd', 'netbsd', 'openbsd', 'bitrig', 'sunos'):
+ 		return 'elf'
+ 	elif unversioned_sys_platform == 'darwin':
+ 		return 'mac-o'

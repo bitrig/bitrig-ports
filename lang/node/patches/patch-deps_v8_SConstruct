@@ -3,8 +3,8 @@ $OpenBSD: patch-deps_v8_SConstruct,v 1.1.1.1 2012/05/23 15:11:43 jasper Exp $
 - Remove extra zoom-zoom!
 - Don't link with -lpthread but use -pthread instead.
 
---- deps/v8/SConstruct.orig	Wed Nov 16 13:43:22 2011
-+++ deps/v8/SConstruct	Wed Nov 16 13:44:20 2011
+--- deps/v8/SConstruct.orig	Thu Jun 14 01:18:08 2012
++++ deps/v8/SConstruct	Thu Jun 14 01:27:47 2012
 @@ -94,7 +94,7 @@ LIBRARY_FLAGS = {
        'CPPDEFINES':   ['ENABLE_DISASSEMBLER', 'DEBUG'],
      },
@@ -14,7 +14,19 @@ $OpenBSD: patch-deps_v8_SConstruct,v 1.1.1.1 2012/05/23 15:11:43 jasper Exp $
                         '-ffunction-sections'],
      },
      'os:linux': {
-@@ -358,7 +358,8 @@ MKSNAPSHOT_EXTRA_FLAGS = {
+@@ -121,6 +121,11 @@ LIBRARY_FLAGS = {
+       'LIBPATH' : ['/usr/local/lib'],
+       'CCFLAGS':      ['-ansi'],
+     },
++    'os:bitrig': {
++      'CPPPATH' : ['/usr/local/include'],
++      'LIBPATH' : ['/usr/local/lib'],
++      'CCFLAGS':      ['-ansi'],
++    },
+     'os:solaris': {
+       # On Solaris, to get isinf, INFINITY, fpclassify and other macros one
+       # needs to define __C99FEATURES__.
+@@ -358,8 +363,13 @@ MKSNAPSHOT_EXTRA_FLAGS = {
        'LINKFLAGS': ['-mt']
      },
      'os:openbsd': {
@@ -22,5 +34,50 @@ $OpenBSD: patch-deps_v8_SConstruct,v 1.1.1.1 2012/05/23 15:11:43 jasper Exp $
 +      'LIBS': ['execinfo'],
 +      'LINKFLAGS': ['-pthread'],
      },
++    'os:bitrig': {
++      'LIBS': ['execinfo'],
++      'LINKFLAGS': ['-pthread'],
++    },
      'os:win32': {
        'LIBS': ['winmm', 'ws2_32'],
+     },
+@@ -424,6 +434,9 @@ CCTEST_EXTRA_FLAGS = {
+     'os:openbsd': {
+       'LIBS':         ['execinfo', 'pthread']
+     },
++    'os:bitrig': {
++      'LIBS':         ['execinfo', 'pthread']
++    },
+     'os:win32': {
+       'LIBS': ['winmm', 'ws2_32']
+     },
+@@ -483,6 +496,10 @@ SAMPLE_FLAGS = {
+       'LIBPATH' :     ['/usr/local/lib'],
+       'LIBS':         ['execinfo', 'pthread']
+     },
++    'os:bitrig': {
++      'LIBPATH' :     ['/usr/local/lib'],
++      'LIBS':         ['execinfo', 'pthread']
++    },
+     'os:win32': {
+       'LIBS':         ['winmm', 'ws2_32']
+     },
+@@ -814,6 +831,9 @@ D8_FLAGS = {
+     'os:openbsd': {
+       'LIBS': ['pthread'],
+     },
++    'os:bitrig': {
++      'LIBS': ['pthread'],
++    },
+     'os:win32': {
+       'LIBS': ['winmm', 'ws2_32'],
+     },
+@@ -950,7 +970,7 @@ PLATFORM_OPTIONS = {
+     'help': 'the architecture to build for'
+   },
+   'os': {
+-    'values': ['freebsd', 'linux', 'macos', 'win32', 'openbsd', 'solaris', 'cygwin'],
++    'values': ['freebsd', 'linux', 'macos', 'win32', 'openbsd', 'bitrig', 'solaris', 'cygwin'],
+     'guess': GuessOS,
+     'help': 'the os to build for'
+   },

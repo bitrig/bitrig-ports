@@ -1,7 +1,18 @@
 $OpenBSD: patch-wscript,v 1.1.1.1 2012/05/23 15:11:43 jasper Exp $
---- wscript.orig	Tue May 15 02:30:00 2012
-+++ wscript	Tue May 15 19:17:28 2012
-@@ -537,7 +537,7 @@ def configure(conf):
+--- wscript.orig	Thu Jun 14 01:01:31 2012
++++ wscript	Thu Jun 14 01:02:35 2012
+@@ -41,6 +41,10 @@ if sys.platform.startswith("cygwin"):
+   print "cygwin not supported"
+   sys.exit(1)
+ 
++if sys.platform.startswith("bitrig"):
++  print "forcing bitrig"
++  sys.platform = 'bsd'
++
+ srcdir = '.'
+ blddir = 'out'
+ supported_archs = ('arm', 'ia32', 'x64') # 'mips' supported by v8, but not node
+@@ -537,7 +541,7 @@ def configure(conf):
  
    # Configure default variant
    conf.setenv('Release')
