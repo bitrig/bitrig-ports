@@ -12,6 +12,8 @@ NODE_VERSION=	v0.6.19
 DISTNAME=	node-${NODE_VERSION}
 PKGNAME=	${DISTNAME:S/v//g}
 
+REVISION= 	0
+
 CATEGORIES=	lang devel
 
 HOMEPAGE=	http://nodejs.org/
