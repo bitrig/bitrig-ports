@@ -1,0 +1,12 @@
+$OpenBSD$
+--- deps/v8/tools/utils.py.orig	Thu Jun 14 01:11:52 2012
++++ deps/v8/tools/utils.py	Thu Jun 14 01:12:18 2012
+@@ -59,6 +59,8 @@ def GuessOS():
+     return 'freebsd'
+   elif id == 'OpenBSD':
+     return 'openbsd'
++  elif id == 'Bitrig':
++    return 'bitrig'
+   elif id == 'SunOS':
+     return 'solaris'
+   else:

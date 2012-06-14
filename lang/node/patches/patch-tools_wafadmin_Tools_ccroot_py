@@ -1,0 +1,13 @@
+$OpenBSD$
+--- tools/wafadmin/Tools/ccroot.py.orig	Thu Jun 14 01:07:22 2012
++++ tools/wafadmin/Tools/ccroot.py	Thu Jun 14 01:07:58 2012
+@@ -67,7 +67,8 @@ def get_cc_version(conf, cc, gcc=False, icc=False):
+ 			'__GNU__'     : 'hurd',
+ 			'__FreeBSD__' : 'freebsd',
+ 			'__NetBSD__'  : 'netbsd',
+-			'__OpenBSD__' : 'openbsd',
++			'__OpenBSD__' : 'bitrig',
++			'__Bitrig__'  : 'bitrig',
+ 			'__sun'       : 'sunos',
+ 			'__hpux'      : 'hpux',
+ 			'__sgi'       : 'irix',

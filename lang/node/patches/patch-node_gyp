@@ -1,0 +1,17 @@
+$OpenBSD$
+--- node.gyp.orig	Thu Jun 14 01:10:19 2012
++++ node.gyp	Thu Jun 14 01:10:53 2012
+@@ -189,6 +189,13 @@
+             '-lkvm',
+           ],
+         }],
++        [ 'OS=="bitrig"', {
++          'sources': [ 'src/platform_bitrig.cc' ],
++          'libraries': [
++            '-lutil',
++            '-lkvm',
++          ],
++        }],
+         [ 'OS=="solaris"', {
+           'sources': [ 'src/platform_sunos.cc' ],
+           'libraries': [
