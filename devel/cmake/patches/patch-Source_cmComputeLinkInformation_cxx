@@ -1,0 +1,23 @@
+$OpenBSD$
+--- Source/cmComputeLinkInformation.cxx.orig	Thu Jun 14 08:44:34 2012
++++ Source/cmComputeLinkInformation.cxx	Thu Jun 14 08:47:04 2012
+@@ -1304,7 +1304,19 @@ void cmComputeLinkInformation::AddUserItem(std::string
+     }
+ 
+   // Create an option to ask the linker to search for the library.
++#if defined(__OpenBSD__) || defined (__Bitrig__)
++  std::string out;
++  if(strcmp(lib.c_str(), "pthread") == 0)
++    {
++    out += "-";
++    }
++  else
++    {
++    out += this->LibLinkFlag;
++    }
++#else
+   std::string out = this->LibLinkFlag;
++#endif
+   out += lib;
+   out += this->LibLinkSuffix;
+   this->Items.push_back(Item(out, false));
