@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.19 2011/10/26 11:52:13 jasper Exp $
 
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build/
+
 COMMENT=		JSON parser for GLib-based libraries and applications
 
 GNOME_PROJECT=		json-glib
