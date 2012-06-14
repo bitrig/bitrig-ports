@@ -1,0 +1,25 @@
+$OpenBSD$
+--- nixtime.i.orig	Tue Jul 16 17:53:46 1991
++++ nixtime.i	Thu Jun 14 22:40:02 2012
+@@ -1,3 +1,6 @@
++#include <time.h>
++#include <sys/time.h>
++
+ #ifndef LINT
+ static char nixtimeid[]="@(#) nixtime.i 2.3 88/01/24 12:49:28";
+ #endif /* LINT */
+@@ -51,9 +54,11 @@ unsigned int date, time;
+ {
+ 	long mstonix();
+ 	long gettz();
+-	long utimbuf[2];
+-	utimbuf[0] = utimbuf[1] = gettz() + mstonix (date, time);
+-	return (utime (path, utimbuf));
++	long t = mstonix (date, time);
++	struct timeval times[2];
++	times[0].tv_sec = times[1].tv_sec = t + gettz(t);
++	times[0].tv_usec = times[1].tv_usec = 0;
++	return utimes(path, times);
+ }
+ 
+ /****************
