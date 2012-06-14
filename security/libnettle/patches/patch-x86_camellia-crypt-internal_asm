@@ -1,0 +1,12 @@
+$OpenBSD$
+--- x86/camellia-crypt-internal.asm.orig	Thu Jun 14 14:13:33 2012
++++ x86/camellia-crypt-internal.asm	Thu Jun 14 14:13:47 2012
+@@ -185,7 +185,7 @@ PROLOGUE(_nettle_camellia_crypt)
+ 	FL(L0, H0, -16)
+ 	FLINV(L1, H1, -8)
+ 	ROUND6
+-	sub 	$8, FRAME_CNT	
++	subl 	$8, FRAME_CNT	
+ 	ja	.Lround_loop
+ 
+ 	movl	FRAME_DST, TMP
