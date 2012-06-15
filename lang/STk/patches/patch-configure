@@ -1,6 +1,6 @@
-$OpenBSD: patch-configure,v 1.4 2011/07/19 07:29:37 jasper Exp $
+$OpenBSD$
 --- configure.orig	Sun Sep 26 17:02:14 1999
-+++ configure	Tue Jul 19 09:27:22 2011
++++ configure	Fri Jun 15 18:40:44 2012
 @@ -618,7 +618,7 @@ DFLGS="-DSTk_CODE -DSCM_CODE"
  EOBJ=""
  ETKOBJ=""
@@ -10,20 +10,26 @@ $OpenBSD: patch-configure,v 1.4 2011/07/19 07:29:37 jasper Exp $
  if test "$machine" = win32
  then 
    FLAVOR=win
-@@ -692,6 +692,7 @@ case $MACHINE in
+@@ -692,6 +692,8 @@ case $MACHINE in
    HP*)	     OS=HPUX; DFLGS="$DFLGS -Dhpux";;
    Linux*)    OS=LINUX;;
    NetBSD-1*) OS=NETBSD1;;
 +  OpenBSD*)  OS=OPENBSD;;
++  Bitrig*)   OS=BITRIG;;
    FreeBSD*)  OS=FREEBSD;;
    IRIX-5*)   OS=IRIX5;;
    IRIX*-6*)  OS=IRIX5;;
-@@ -2277,6 +2278,11 @@ case $OS in 
+@@ -2277,6 +2279,16 @@ case $OS in 
       SH_CCFLAGS="-fpic"
       SH_LDFLAGS="-Bshareable -o"
       SH_LOADER="ld"
 +     SH_SUFFIX='so';;
 +   OPENBSD)
++     SH_CCFLAGS="-fpic"
++     SH_LDFLAGS="-shared -o"
++     SH_LOADER="${CC}"
++     SH_SUFFIX='so';;
++   BITRIG)
 +     SH_CCFLAGS="-fpic"
 +     SH_LDFLAGS="-shared -o"
 +     SH_LOADER="${CC}"

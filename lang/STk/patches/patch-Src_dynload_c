@@ -6,7 +6,7 @@ $OpenBSD: patch-Src_dynload_c,v 1.2 2008/08/19 22:45:27 jasper Exp $
  #endif
  
 -#if defined(LINUX_ELF)
-+#if defined(LINUX_ELF) || defined(OPENBSD)
++#if defined(LINUX_ELF) || defined(OPENBSD) || defined(BITRIG)
  #  include <dlfcn.h>
  #  define DLOPEN_COMPATIBLE
  #endif
@@ -15,7 +15,7 @@ $OpenBSD: patch-Src_dynload_c,v 1.2 2008/08/19 22:45:27 jasper Exp $
  
  
 -#if defined(SUNOS4) || defined(SUNOS5) || defined(NETBSD1) || defined(FREEBSD) || defined(IRIX5) || defined(OSF1) ||defined(LINUX_ELF)
-+#if defined(SUNOS4) || defined(SUNOS5) || defined(NETBSD1) || defined(OPENBSD) || defined(FREEBSD) || defined(IRIX5) || defined(OSF1) ||defined(LINUX_ELF)
++#if defined(SUNOS4) || defined(SUNOS5) || defined(NETBSD1) || defined(OPENBSD) || defined(BITRIG) || defined(FREEBSD) || defined(IRIX5) || defined(OSF1) ||defined(LINUX_ELF)
  
  #define MAKE_STAT_PTR(p) (STk_make_Cpointer(ANONYMOUS_STAT_PTR_ID, (p), TRUE))
  #define MAKE_DYN_PTR(p)  (STk_make_Cpointer(ANONYMOUS_DYN_PTR_ID,  (p), FALSE))

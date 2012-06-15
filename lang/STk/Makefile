@@ -29,7 +29,7 @@ DESTDIRNAME=	root
 
 NO_REGRESS=	Yes
 
-STK_ARCH=	OpenBSD-$(MACHINE)
+STK_ARCH=	Bitrig-$(MACHINE)
 SUBST_VARS=	STK_VERSION STK_ARCH
 
 .include <bsd.port.mk>
