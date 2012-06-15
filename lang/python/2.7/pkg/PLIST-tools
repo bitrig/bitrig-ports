@@ -25,6 +25,10 @@ lib/python2.7/Tools/bgen/bgen/macsupport.py
 lib/python2.7/Tools/bgen/bgen/scantools.py
 lib/python2.7/Tools/buildbot/
 lib/python2.7/Tools/buildbot/README.tcltk-AMD64
+@comment lib/python2.7/Tools/buildbot/build-amd64.bat
+@comment lib/python2.7/Tools/buildbot/clean-amd64.bat
+@comment lib/python2.7/Tools/buildbot/external-amd64.bat
+@comment lib/python2.7/Tools/buildbot/test-amd64.bat
 @comment lib/python2.7/Tools/buildbot/build-${MACHINE_ARCH}.bat
 @comment lib/python2.7/Tools/buildbot/clean-${MACHINE_ARCH}.bat
 @comment lib/python2.7/Tools/buildbot/external-${MACHINE_ARCH}.bat
@@ -37,19 +41,15 @@ lib/python2.7/Tools/buildbot/README.tcltk-AMD64
 @comment lib/python2.7/Tools/buildbot/clean-${MACHINE_ARCH}.bat
 @comment lib/python2.7/Tools/buildbot/external-${MACHINE_ARCH}.bat
 @comment lib/python2.7/Tools/buildbot/test-${MACHINE_ARCH}.bat
-@comment lib/python2.7/Tools/buildbot/build-${MACHINE_ARCH}.bat
-@comment lib/python2.7/Tools/buildbot/clean-${MACHINE_ARCH}.bat
-@comment lib/python2.7/Tools/buildbot/external-${MACHINE_ARCH}.bat
-@comment lib/python2.7/Tools/buildbot/test-${MACHINE_ARCH}.bat
-lib/python2.7/Tools/buildbot/build-${MACHINE_ARCH}.bat
+lib/python2.7/Tools/buildbot/build-amd64.bat
 @comment lib/python2.7/Tools/buildbot/build.bat
 @comment lib/python2.7/Tools/buildbot/buildmsi.bat
-lib/python2.7/Tools/buildbot/clean-${MACHINE_ARCH}.bat
+lib/python2.7/Tools/buildbot/clean-amd64.bat
 @comment lib/python2.7/Tools/buildbot/clean.bat
-lib/python2.7/Tools/buildbot/external-${MACHINE_ARCH}.bat
+lib/python2.7/Tools/buildbot/external-amd64.bat
 @comment lib/python2.7/Tools/buildbot/external-common.bat
 @comment lib/python2.7/Tools/buildbot/external.bat
-lib/python2.7/Tools/buildbot/test-${MACHINE_ARCH}.bat
+lib/python2.7/Tools/buildbot/test-amd64.bat
 @comment lib/python2.7/Tools/buildbot/test.bat
 lib/python2.7/Tools/ccbench/
 lib/python2.7/Tools/ccbench/ccbench.py
