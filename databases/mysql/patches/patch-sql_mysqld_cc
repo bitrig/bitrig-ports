@@ -1,7 +1,6 @@
-$OpenBSD: patch-sql_mysqld_cc,v 1.27 2012/05/11 14:32:36 giovanni Exp $
---- sql/mysqld.cc.orig	Mon Apr 16 02:50:06 2012
-+++ sql/mysqld.cc	Thu May 10 15:18:41 2012
-@@ -4298,7 +4298,7 @@ int main(int argc, char **argv)
+--- sql/mysqld.cc.orig	Mon Apr 16 08:50:06 2012
++++ sql/mysqld.cc	Wed Jun 13 22:27:10 2012
+@@ -4298,7 +4298,7 @@
    select_thread_in_use=1;
  
  #ifdef HAVE_LIBWRAP
@@ -10,3 +9,21 @@ $OpenBSD: patch-sql_mysqld_cc,v 1.27 2012/05/11 14:32:36 giovanni Exp $
    openlog(libwrapName, LOG_PID, LOG_AUTH);
  #endif
  
+@@ -5024,7 +5024,7 @@
+ #endif /* NO_FCNTL_NONBLOCK */
+     for (uint retry=0; retry < MAX_ACCEPT_RETRY; retry++)
+     {
+-      size_socket length=sizeof(struct sockaddr_in);
++      socklen_t length=sizeof(struct sockaddr_in);
+       new_sock = accept(sock, my_reinterpret_cast(struct sockaddr *) (&cAddr),
+ 			&length);
+ #ifdef __NETWARE__ 
+@@ -5096,7 +5096,7 @@
+ #endif /* HAVE_LIBWRAP */
+ 
+     {
+-      size_socket dummyLen;
++      socklen_t dummyLen;
+       struct sockaddr dummy;
+       dummyLen = sizeof(struct sockaddr);
+       if (getsockname(new_sock,&dummy, &dummyLen) < 0)
