@@ -36,7 +36,7 @@ CONFIGURE_ARGS=		--disable-oss \
 			--with-external-speex
 CONFIGURE_ENV+=		CFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib" \
-			ac_cv_lib_uuid_uuid_generate=no CC=cc CXX=g++
+			ac_cv_lib_uuid_uuid_generate=no
 
 USE_GMAKE=		Yes
 NO_REGRESS=		Yes

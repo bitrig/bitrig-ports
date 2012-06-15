@@ -1,0 +1,11 @@
+--- third_party/srtp/crypto/cipher/aes_icm.c.orig	Wed Jan 23 21:17:42 2008
++++ third_party/srtp/crypto/cipher/aes_icm.c	Fri Jun 15 23:12:34 2012
+@@ -283,7 +283,7 @@
+  * this is an internal, hopefully inlined function
+  */
+   
+-inline void
++void
+ aes_icm_advance_ismacryp(aes_icm_ctx_t *c, uint8_t forIsmacryp) {
+   /* fill buffer with new keystream */
+   v128_copy(&c->keystream_buffer, &c->counter);
