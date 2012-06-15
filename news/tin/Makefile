@@ -30,6 +30,7 @@ WANTLIB=		c>=58.2 ncurses pcre idn
 
 CONFIGURE_STYLE=	autoconf no-autoheader
 AUTOCONF_VERSION=	2.13
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}
 # XXX Re-review --disable-gsasl on update, it may become useful in the future.
 #
 # --with-x does not affect the build, but let's be safe.
