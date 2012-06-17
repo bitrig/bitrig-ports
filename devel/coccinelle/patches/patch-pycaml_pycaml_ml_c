@@ -1,0 +1,12 @@
+$OpenBSD$
+--- pycaml/pycaml_ml.c.orig	Sun Jun 17 22:53:51 2012
++++ pycaml/pycaml_ml.c	Sun Jun 17 22:54:28 2012
+@@ -1468,7 +1468,7 @@ value pycaml_setargs(value argv) {
+ 
+   PySys_SetArgv(1, cargv);
+ 
+-  CAMLreturn0; 
++  CAMLreturn(0); 
+ }
+ 
+ value pytrue( value unit ) {
