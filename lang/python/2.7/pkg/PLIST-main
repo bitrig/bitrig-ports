@@ -453,11 +453,12 @@ lib/python2.7/distutils/command/upload.py
 lib/python2.7/distutils/command/upload.pyc
 lib/python2.7/distutils/command/upload.pyo
 @comment lib/python2.7/distutils/command/wininst-9.0-amd64.exe
-@comment lib/python2.7/distutils/command/wininst-9.0-amd64.exe
 @comment lib/python2.7/distutils/command/wininst-6.0.exe
 @comment lib/python2.7/distutils/command/wininst-7.1.exe
 @comment lib/python2.7/distutils/command/wininst-8.0.exe
-lib/python2.7/distutils/command/wininst-9.0-amd64.exe
+@comment lib/python2.7/distutils/command/wininst-9.0-amd64.exe
+@comment lib/python2.7/distutils/command/wininst-9.0-amd64.exe
+lib/python2.7/distutils/command/wininst-9.0-${MACHINE_ARCH}.exe
 @comment lib/python2.7/distutils/command/wininst-9.0.exe
 lib/python2.7/distutils/config.py
 lib/python2.7/distutils/config.pyc
@@ -1380,11 +1381,9 @@ lib/python2.7/lib-dynload/cmath.so
 lib/python2.7/lib-dynload/crypt.so
 lib/python2.7/lib-dynload/datetime.so
 lib/python2.7/lib-dynload/dbm.so
-lib/python2.7/lib-dynload/dl.so
 lib/python2.7/lib-dynload/fcntl.so
 lib/python2.7/lib-dynload/future_builtins.so
 lib/python2.7/lib-dynload/grp.so
-lib/python2.7/lib-dynload/imageop.so
 lib/python2.7/lib-dynload/itertools.so
 lib/python2.7/lib-dynload/math.so
 lib/python2.7/lib-dynload/mmap.so
