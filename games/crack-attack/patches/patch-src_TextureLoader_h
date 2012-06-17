@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/TextureLoader.h.orig	Sun Jun 17 22:35:18 2012
++++ src/TextureLoader.h	Sun Jun 17 22:35:42 2012
+@@ -27,6 +27,7 @@
+ #ifndef TEXTURELOADER_H
+ #define TEXTURELOADER_H
+ 
++#include <cstring>
+ #include <GL/glut.h>
+ 
+ #include "glext.h"
