@@ -27,6 +27,7 @@ MASTER_SITES =		${MASTER_SITE_BERLIOS:=sipsak/}
 CONFIGURE_STYLE =	gnu
 
 CONFIGURE_ARGS =	--disable-gnutls \
+			CFLAGS="-std=gnu89" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 USE_GROFF =	Yes
 
