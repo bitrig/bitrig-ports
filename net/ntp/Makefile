@@ -28,6 +28,7 @@ WANTLIB=	c crypto edit kvm m termcap
 
 USE_LIBTOOL=	Yes
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/sntp
 CONFIGURE_ARGS=	--enable-parse-clocks \
 		--with-binsubdir=sbin
 CONFIGURE_ENV=	CPPFLAGS='-DCONFIG_FILE="\"${SYSCONFDIR}/ntp.conf\"" \

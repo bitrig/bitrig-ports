@@ -1,0 +1,17 @@
+$OpenBSD$
+--- ntpd/ntp_io.c.orig	Thu Dec  1 03:55:17 2011
++++ ntpd/ntp_io.c	Sun Jun 17 07:54:57 2012
+@@ -3394,8 +3394,12 @@ read_network_packet(
+ 	register struct recvbuf *rb;
+ #ifdef HAVE_TIMESTAMP
+ 	struct msghdr msghdr;
+-	struct iovec iovec;
+ 	char control[TIMESTAMP_CTLMSGBUF_SIZE];
++
++	struct iovec {
++		void *iov_base;
++		size_t iov_len;
++	} iovec;
+ #endif
+ 
+ 	/*
