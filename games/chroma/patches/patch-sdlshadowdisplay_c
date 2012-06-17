@@ -1,0 +1,48 @@
+$OpenBSD$
+--- sdlshadowdisplay.c.orig	Sun Jun 17 23:48:24 2012
++++ sdlshadowdisplay.c	Sun Jun 17 23:49:49 2012
+@@ -88,7 +88,7 @@ int display_bevelsquare(struct level* plevel, int x, i
+ void displayshadowed_level(struct level* plevel);
+ void displayshadowed_movers(struct level* plevel, int redraw);
+ 
+-inline void displayshadowed_piece(struct level* plevel, int p, int x, int y, int d)
++void displayshadowed_piece(struct level* plevel, int p, int x, int y, int d)
+ {
+     SDL_Surface *pimage;
+ 
+@@ -255,7 +255,7 @@ inline void displayshadowed_piece(struct level* plevel
+     }
+ }
+ 
+-inline void displayshadowed_pieceshadow(struct level* plevel, int p, int x, int y, int d)
++void displayshadowed_pieceshadow(struct level* plevel, int p, int x, int y, int d)
+ {
+     SDL_Surface *pimage;
+ 
+@@ -310,7 +310,7 @@ inline void displayshadowed_pieceshadow(struct level* 
+     SDL_BlitSurface(pimage, &srect, screen_surface, &drect);
+ }
+ 
+-inline void displayshadowed_piecebase(struct level* plevel, int x, int y)
++void displayshadowed_piecebase(struct level* plevel, int x, int y)
+ {
+     int p;
+     SDL_Surface *pimage;
+@@ -1063,7 +1063,7 @@ inline void displayshadowed_piecebase(struct level* pl
+     }
+ }
+ 
+-inline void displayshadowed_redrawpiece(int p, int x, int y, int d)
++void displayshadowed_redrawpiece(int p, int x, int y, int d)
+ {
+     int dx, dy;
+ 
+@@ -1111,7 +1111,7 @@ void displayshadowed_level(struct level* plevel)
+     screen_redraw(0, 0, screen_width, screen_height);
+ }
+ 
+-inline int displayshadowed_count(struct level* plevel, int x, int y, int delta)
++int displayshadowed_count(struct level* plevel, int x, int y, int delta)
+ {
+     unsigned int d;
+ 

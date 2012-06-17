@@ -1,0 +1,12 @@
+$OpenBSD$
+--- xor.c.orig	Sun Jun 17 23:45:00 2012
++++ xor.c	Sun Jun 17 23:45:55 2012
+@@ -635,7 +635,7 @@ int xor_evolve(struct level* plevel)
+     pmover = plevel->stack_first;
+ 
+     if(pmover == NULL)
+-	return;
++	return 0;
+ 
+     px = pmover->x;
+     py = pmover->y;
