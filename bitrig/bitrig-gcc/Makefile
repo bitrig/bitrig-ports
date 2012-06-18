@@ -108,7 +108,8 @@ CONFIGURE_ARGS += \
 	--enable-threads=posix \
 	--enable-wchar_t \
 	--with-gmp="${LOCALBASE}" \
-	--enable-languages=${LANGS}
+	--enable-languages=${LANGS} \
+	--disable-libstdcxx-pch
 
 # This is needed, as internal cpp is no longer compatible with the
 # visible beast
