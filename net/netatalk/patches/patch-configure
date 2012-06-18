@@ -1,6 +1,123 @@
-$OpenBSD: patch-configure,v 1.2 2012/04/11 18:39:13 sthen Exp $
---- configure.orig	Thu Jan 12 04:11:55 2012
-+++ configure	Mon Jan 16 16:35:56 2012
+$OpenBSD$
+--- configure.orig	Thu Jan 12 10:11:55 2012
++++ configure	Mon Jun 18 21:29:14 2012
+@@ -4810,7 +4810,7 @@ nto-qnx*)
+   lt_cv_deplibs_check_method=unknown
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -7403,7 +7403,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -8474,7 +8474,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -9191,7 +9191,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -9930,7 +9930,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -12438,7 +12438,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+     # C++ shared libraries are fairly broken
+     ld_shlibs_CXX=no
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     if test -f /usr/libexec/ld.so; then
+       hardcode_direct_CXX=yes
+       hardcode_shlibpath_var_CXX=no
+@@ -13908,7 +13908,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -15158,7 +15158,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -15855,7 +15855,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var_F77=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_F77=yes
+ 	hardcode_shlibpath_var_F77=no
+@@ -16542,7 +16542,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -17772,7 +17772,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -18489,7 +18489,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var_GCJ=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_GCJ=yes
+ 	hardcode_shlibpath_var_GCJ=no
+@@ -19176,7 +19176,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -25308,8 +25308,8 @@ for ac_lib in '' pthread; do
    if test -z "$ac_lib"; then
      ac_res="none required"
@@ -12,3 +129,13 @@ $OpenBSD: patch-configure,v 1.2 2012/04/11 18:39:13 sthen Exp $
    fi
    rm -f conftest.$ac_objext conftest$ac_exeext
  if { (ac_try="$ac_link"
+@@ -29939,7 +29939,8 @@ case "$host_os" in
+ 	*osx*)				this_os=macosx ;;
+ 	*darwin*)			this_os=macosx ;;
+ 	*netbsd*) 			this_os=netbsd ;;
+-	*openbsd*) 			this_os=openbsd ;;
++	*openbsd*)			this_os=openbsd ;;
++	*bitrig*)			this_os=bitrig ;;
+ 	*osf*) 				this_os=tru64 ;;
+ 	*solaris*) 			this_os=solaris ;;
+ esac
