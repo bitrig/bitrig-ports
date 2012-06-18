@@ -1,0 +1,53 @@
+$OpenBSD$
+--- tls/gnutls/gtlsconnection-gnutls.c.orig	Mon Jun 18 11:58:45 2012
++++ tls/gnutls/gtlsconnection-gnutls.c	Mon Jun 18 12:01:07 2012
+@@ -149,18 +149,37 @@ g_tls_connection_gnutls_init_priorities (void)
+ {
+   /* First field is "ssl3 only", second is "allow unsafe rehandshaking" */
+ 
+-  gnutls_priority_init (&priorities[FALSE][FALSE],
+-			"NORMAL:%COMPAT",
+-			NULL);
+-  gnutls_priority_init (&priorities[TRUE][FALSE],
+-			"NORMAL:%COMPAT:!VERS-TLS1.2:!VERS-TLS1.1:!VERS-TLS1.0",
+-			NULL);
+-  gnutls_priority_init (&priorities[FALSE][TRUE],
+-			"NORMAL:%COMPAT:%UNSAFE_RENEGOTIATION",
+-			NULL);
+-  gnutls_priority_init (&priorities[TRUE][TRUE],
+-			"NORMAL:%COMPAT:!VERS-TLS1.2:!VERS-TLS1.1:!VERS-TLS1.0:%UNSAFE_RENEGOTIATION",
+-			NULL);
++  /*
++   * SECURE256 prefers 256-bit ciphers in version 2.12.x, but uses
++   * only 256-bit ciphers from version 3 and on
++   */
++  if (gnutls_check_version("3.0.0")) {
++    gnutls_priority_init (&priorities[FALSE][FALSE],
++			  "NORMAL:%COMPAT",
++			  NULL);
++    gnutls_priority_init (&priorities[TRUE][FALSE],
++			  "NORMAL:%COMPAT:!VERS-TLS1.2:!VERS-TLS1.1:!VERS-TLS1.0",
++			  NULL);
++    gnutls_priority_init (&priorities[FALSE][TRUE],
++			  "NORMAL:%COMPAT:%UNSAFE_RENEGOTIATION",
++			  NULL);
++    gnutls_priority_init (&priorities[TRUE][TRUE],
++			  "NORMAL:%COMPAT:!VERS-TLS1.2:!VERS-TLS1.1:!VERS-TLS1.0:%UNSAFE_RENEGOTIATION",
++			  NULL);
++  } else {
++    gnutls_priority_init (&priorities[FALSE][FALSE],
++			  "SECURE256:%COMPAT",
++			  NULL);
++    gnutls_priority_init (&priorities[TRUE][FALSE],
++			  "SECURE256:%COMPAT:!VERS-TLS1.2:!VERS-TLS1.1:!VERS-TLS1.0",
++			  NULL);
++    gnutls_priority_init (&priorities[FALSE][TRUE],
++			  "SECURE256:%COMPAT:%UNSAFE_RENEGOTIATION",
++			  NULL);
++    gnutls_priority_init (&priorities[TRUE][TRUE],
++			  "SECURE256:%COMPAT:!VERS-TLS1.2:!VERS-TLS1.1:!VERS-TLS1.0:%UNSAFE_RENEGOTIATION",
++			  NULL);
++  }
+ }
+ 
+ static void
