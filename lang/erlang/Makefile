@@ -40,7 +40,8 @@ CONFIGURE_STYLE=autoconf no-autoheader
 CONFIGURE_ENV=	LDFLAGS="-pthread"
 AUTOCONF_VERSION=2.59
 MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/erts/autoconf \
-				${WRKSRC}/lib/erl_interface/src/auxdir
+				${WRKSRC}/lib/erl_interface/src/auxdir \
+				${WRKSRC}/lib/common_test/priv/auxdir
 
 .if ${MACHINE_ARCH} == i386
 CONFIGURE_ARGS+=	--enable-ethread-pre-pentium4-compatibility
