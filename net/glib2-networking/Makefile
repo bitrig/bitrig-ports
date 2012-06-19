@@ -9,6 +9,8 @@ GNOME_PROJECT=	glib-networking
 
 PKGNAME=	glib2-networking-${GNOME_VERSION}
 
+REVISION=	0
+
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.gtk.org/
