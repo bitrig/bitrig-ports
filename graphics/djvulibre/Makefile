@@ -31,6 +31,7 @@ USE_GMAKE=	Yes
 USE_LIBTOOL=	Yes
 USE_GROFF =	Yes
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/config
 CONFIGURE_ARGS=	--with-jpeg=${LOCALBASE} \
 		--with-tiff=${LOCALBASE} \
 		--with-extra-libraries=${LOCALBASE}/lib \

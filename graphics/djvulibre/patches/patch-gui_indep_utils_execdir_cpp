@@ -1,0 +1,21 @@
+$OpenBSD$
+--- gui/indep/utils/execdir.cpp.orig	Wed Jun 20 20:51:56 2012
++++ gui/indep/utils/execdir.cpp	Wed Jun 20 21:02:42 2012
+@@ -141,13 +141,13 @@ getDjViewDataFile(const char *fname)
+     {
+       GURL url = GURL(file, paths[pos]);
+       GUTF8String urls = (const char*)url;
+-      int pos = urls.search(osi);
+-      if (pos >= 0)
++      int ipos = urls.search(osi);
++      if (ipos >= 0)
+         {
+           GUTF8String urlx;
+-          urlx += urls.substr(0, pos);
++          urlx += urls.substr(0, ipos);
+           urlx += djview3;
+-          urlx += urls.substr(pos+strlen(osi), -1);
++          urlx += urls.substr(ipos+strlen(osi), -1);
+           GURL url = GURL::UTF8(urlx);
+           if (url.is_file())
+             return url;
