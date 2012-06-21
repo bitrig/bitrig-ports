@@ -211,6 +211,7 @@
      SUBDIR += xps
      SUBDIR += xstatbar
      SUBDIR += xuvmstat
+     SUBDIR += ykpers
      SUBDIR += zap
 
 .include <bsd.port.subdir.mk>
