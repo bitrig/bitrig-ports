@@ -3,7 +3,7 @@
 COMMENT=	easy-to-use, robust, and highly configurable VPN
 
 DISTNAME=	openvpn-2.2.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net security
 
 HOMEPAGE=	http://openvpn.net/
@@ -23,7 +23,8 @@ MASTER_SITES=	http://swupdate.openvpn.net/community/releases/
 LIB_DEPENDS=	archivers/lzo2
 
 SEPARATE_BUILD=	Yes
-CONFIGURE_STYLE= gnu
+CONFIGURE_STYLE= autoconf
+AUTOCONF_VERSION=2.67
 
 CONFIGURE_ARGS+= --with-lzo-headers=${DEPBASE}/include \
 		--with-lzo-lib=${DEPBASE}/lib \

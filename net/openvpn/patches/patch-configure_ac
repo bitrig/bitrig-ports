@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.ac.orig	Fri Jun 22 00:03:27 2012
++++ configure.ac	Fri Jun 22 00:03:38 2012
+@@ -304,7 +304,7 @@ case "$host" in
+ *-*-solaris*)
+ 	AC_DEFINE(TARGET_SOLARIS, 1, [Are we running on Solaris?])
+ 	;;
+-*-*-openbsd*)
++*-*-openbsd* | *-*-bitrig*)
+ 	AC_DEFINE(TARGET_OPENBSD, 1, [Are we running on OpenBSD?])
+ 	;;
+ *-*-freebsd*)
