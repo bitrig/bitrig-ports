@@ -27,6 +27,11 @@ WANTLIB=		c gpg-error
 
 USE_LIBTOOL=		Yes
 
+# really bad asm that doesn't compile
+.if ${MACHINE_ARCH} == "i386"
+CONFIGURE_ENV +=        CC=gcc CXX=g++
+.endif
+
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--enable-static
