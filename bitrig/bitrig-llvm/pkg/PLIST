@@ -973,6 +973,12 @@ ${CLANG_INCLUDE_PATH}/varargs.h
 ${CLANG_INCLUDE_PATH}/wmmintrin.h
 ${CLANG_INCLUDE_PATH}/x86intrin.h
 ${CLANG_INCLUDE_PATH}/xmmintrin.h
+lib/libLLVMARMAsmParser.a
+lib/libLLVMARMAsmPrinter.a
+lib/libLLVMARMCodeGen.a
+lib/libLLVMARMDesc.a
+lib/libLLVMARMDisassembler.a
+lib/libLLVMARMInfo.a
 lib/libLLVMAnalysis.a
 lib/libLLVMArchive.a
 lib/libLLVMAsmParser.a
