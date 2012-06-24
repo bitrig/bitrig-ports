@@ -1,0 +1,11 @@
+$OpenBSD$
+--- lib/XDG.cc.orig	Sun Jun 24 14:05:12 2012
++++ lib/XDG.cc	Sun Jun 24 14:05:41 2012
+@@ -26,6 +26,7 @@
+ #include "XDG.hh"
+ 
+ #include <stdlib.h>
++#include <algorithm>
+ 
+ 
+ // make sure directory names end with a slash

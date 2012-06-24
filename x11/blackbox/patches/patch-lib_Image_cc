@@ -1,0 +1,11 @@
+$OpenBSD$
+--- lib/Image.cc.orig	Sun Jun 24 14:04:20 2012
++++ lib/Image.cc	Sun Jun 24 14:04:29 2012
+@@ -44,6 +44,7 @@
+ #include <math.h>
+ #include <stdio.h>
+ #include <stdlib.h>
++#include <string.h>
+ 
+ // #define COLORTABLE_DEBUG
+ // #define MITSHM_DEBUG

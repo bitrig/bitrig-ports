@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/Screen.cc.orig	Sun Jun 24 14:07:45 2012
++++ src/Screen.cc	Sun Jun 24 14:08:03 2012
+@@ -47,6 +47,7 @@
+ #include <assert.h>
+ #include <ctype.h>
+ #include <dirent.h>
++#include <string.h>
+ 
+ 
+ static bool running = true;

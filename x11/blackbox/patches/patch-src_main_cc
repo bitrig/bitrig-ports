@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/main.cc.orig	Sun Jun 24 14:09:12 2012
++++ src/main.cc	Sun Jun 24 14:09:20 2012
+@@ -35,6 +35,7 @@
+ #include "../version.h"
+ 
+ #include <stdio.h>
++#include <string.h>
+ 
+ 
+ static void showHelp(int exitval) {

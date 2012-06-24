@@ -1,0 +1,12 @@
+$OpenBSD$
+--- util/bsetroot.cc.orig	Sun Jun 24 14:09:54 2012
++++ util/bsetroot.cc	Sun Jun 24 14:10:18 2012
+@@ -31,6 +31,8 @@
+ 
+ #include <X11/Xatom.h>
+ #include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
+ 
+ 
+ // ignore all X errors

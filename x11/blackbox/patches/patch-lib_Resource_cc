@@ -1,0 +1,11 @@
+$OpenBSD$
+--- lib/Resource.cc.orig	Sun Jun 24 14:04:52 2012
++++ lib/Resource.cc	Sun Jun 24 14:05:02 2012
+@@ -29,6 +29,7 @@
+ #include <X11/Xresource.h>
+ 
+ #include <stdio.h>
++#include <string.h>
+ 
+ 
+ bt::Resource::Resource(void)

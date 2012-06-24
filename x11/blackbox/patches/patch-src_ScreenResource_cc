@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/ScreenResource.cc.orig	Sun Jun 24 14:08:45 2012
++++ src/ScreenResource.cc	Sun Jun 24 14:08:54 2012
+@@ -32,6 +32,7 @@
+ #include <Resource.hh>
+ 
+ #include <assert.h>
++#include <strings.h>
+ 
+ 
+ static const int iconify_width  = 9;
