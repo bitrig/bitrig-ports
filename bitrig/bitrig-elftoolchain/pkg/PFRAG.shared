@@ -1,0 +1,3 @@
+@comment $OpenBSD$
+@lib lib/libdwarf.so.${LIBdwarf_VERSION}
+@lib lib/libelf.so.${LIBelf_VERSION}

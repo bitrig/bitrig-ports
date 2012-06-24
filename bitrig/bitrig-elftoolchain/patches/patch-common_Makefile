@@ -1,0 +1,12 @@
+$OpenBSD$
+--- common/Makefile.orig	Sun Jun 24 13:15:16 2012
++++ common/Makefile	Sun Jun 24 13:15:29 2012
+@@ -7,7 +7,7 @@ INCSDIR?=	/usr/include
+ 
+ .PHONY:	all clean clobber depend obj
+ 
+-all depend obj:
++all depend obj install:
+ 
+ clean clobber:
+ 	rm -f ${CLEANFILES}

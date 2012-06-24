@@ -1,0 +1,11 @@
+$OpenBSD$
+--- common/elfdefinitions.h.orig	Sun Jun 24 12:36:08 2012
++++ common/elfdefinitions.h	Sun Jun 24 12:36:34 2012
+@@ -793,6 +793,7 @@ enum {
+ 
+ /* Older synonyms. */
+ #define	EM_ARC_A5		EM_ARC_COMPACT
++#define EM_AMD64               EM_X86_64
+ 
+ /*
+  * ELF file types: (ET_*).
