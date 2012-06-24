@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.127 2012/04/28 11:06:12 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.130 2012/06/22 15:43:47 sthen Exp $
 
 COMMENT=	WWW and FTP proxy cache and accelerator
 
 DISTNAME=	squid-2.7.STABLE9
-REVISION=	16
+REVISION=	18
 CATEGORIES=	www
 MASTER_SITES=	${HOMEPAGE}/Versions/v2/2.7/
 DIST_SUBDIR=	squid
@@ -26,10 +26,10 @@ SUBST_VARS=	LOCALSTATEDIR
 FLAVORS=	ldap ntlm snmp
 FLAVOR?=
 
-.include <bsd.own.mk>
+.include <bsd.port.arch.mk>
 
 # optimization workaround for gcc 2.95
-.if ${COMPILER_VERSION:L:Mgcc2}
+.if ${PROPERTIES:Mgcc2}
 PATCH_LIST=     patch-* gcc-*
 .endif
 

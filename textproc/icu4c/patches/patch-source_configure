@@ -1,7 +1,7 @@
-$OpenBSD: patch-source_configure,v 1.8 2011/06/14 10:12:48 ajacoutot Exp $
---- source/configure.orig	Tue Oct 18 18:15:50 2011
-+++ source/configure	Mon May 21 11:15:09 2012
-@@ -5130,7 +5130,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
+$OpenBSD$
+--- source/configure.orig	Fri Jun  1 16:56:18 2012
++++ source/configure	Mon Jun 25 00:41:05 2012
+@@ -5079,7 +5079,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
  	else
  		icu_cv_host_frag=mh-cygwin-msvc
  	fi ;;
@@ -10,7 +10,7 @@ $OpenBSD: patch-source_configure,v 1.8 2011/06/14 10:12:48 ajacoutot Exp $
  *-*-aix*)
  	if test "$GCC" = yes; then
  		icu_cv_host_frag=mh-aix-gcc
-@@ -5958,13 +5958,13 @@ if test $threads = true; then
+@@ -5844,13 +5844,13 @@ if test $threads = true; then
    # If this fails, then we must test for HPUX specials, before
    # moving on to a more generic test
  
@@ -18,7 +18,7 @@ $OpenBSD: patch-source_configure,v 1.8 2011/06/14 10:12:48 ajacoutot Exp $
 -$as_echo_n "checking for pthread_attr_init in -lpthread... " >&6; }
 +  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_attr_init in -pthread" >&5
 +$as_echo_n "checking for pthread_attr_init in -pthread... " >&6; }
- if test "${ac_cv_lib_pthread_pthread_attr_init+set}" = set; then :
+ if ${ac_cv_lib_pthread_pthread_attr_init+:} false; then :
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -27,7 +27,7 @@ $OpenBSD: patch-source_configure,v 1.8 2011/06/14 10:12:48 ajacoutot Exp $
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -5999,7 +5999,7 @@ if test "x$ac_cv_lib_pthread_pthread_attr_init" = x""y
+@@ -5885,7 +5885,7 @@ if test "x$ac_cv_lib_pthread_pthread_attr_init" = xyes
  #define HAVE_LIBPTHREAD 1
  _ACEOF
  
@@ -36,7 +36,7 @@ $OpenBSD: patch-source_configure,v 1.8 2011/06/14 10:12:48 ajacoutot Exp $
  
  fi
  
-@@ -6087,13 +6087,13 @@ fi
+@@ -5973,13 +5973,13 @@ fi
        ICU_USE_THREADS=1
      else
        # For HP 11
@@ -44,7 +44,7 @@ $OpenBSD: patch-source_configure,v 1.8 2011/06/14 10:12:48 ajacoutot Exp $
 -$as_echo_n "checking for pthread_mutex_init in -lpthread... " >&6; }
 +      { $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_mutex_init in -pthread" >&5
 +$as_echo_n "checking for pthread_mutex_init in -pthread... " >&6; }
- if test "${ac_cv_lib_pthread_pthread_mutex_init+set}" = set; then :
+ if ${ac_cv_lib_pthread_pthread_mutex_init+:} false; then :
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -53,7 +53,7 @@ $OpenBSD: patch-source_configure,v 1.8 2011/06/14 10:12:48 ajacoutot Exp $
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -6128,7 +6128,7 @@ if test "x$ac_cv_lib_pthread_pthread_mutex_init" = x""
+@@ -6014,7 +6014,7 @@ if test "x$ac_cv_lib_pthread_pthread_mutex_init" = xye
  #define HAVE_LIBPTHREAD 1
  _ACEOF
  
@@ -62,7 +62,7 @@ $OpenBSD: patch-source_configure,v 1.8 2011/06/14 10:12:48 ajacoutot Exp $
  
  fi
  
-@@ -7731,7 +7731,7 @@ ICUDATA_CHAR=$U_ENDIAN_CHAR
+@@ -7457,7 +7457,7 @@ ICUDATA_CHAR=$U_ENDIAN_CHAR
  case "${host}" in
  	*-*-solaris*) 	platform=U_SOLARIS ;;
  	*-*-linux*|*-*-gnu|*-*-k*bsd*-gnu|*-*-kopensolaris*-gnu)        platform=U_LINUX ;;

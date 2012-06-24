@@ -1,0 +1,17 @@
+$OpenBSD: patch-fetchmail_man,v 1.2 2012/06/22 14:38:28 jasper Exp $
+--- fetchmail.man.orig	Wed Jun 20 16:16:01 2012
++++ fetchmail.man	Wed Jun 20 16:16:01 2012
+@@ -7075,6 +7076,13 @@ then that name is used as the default local name.  Oth
+ \fBgetpwuid\fP(3) must be able to retrieve a password entry for the
+ session ID (this elaborate logic is designed to handle the case of
+ multiple names per userid gracefully).
++
++.IP \fBFETCHMAIL_DISABLE_CBC_IV_COUNTERMEASURE\fP
++(since v6.3.22):
++If this environment variable is set and not empty, fetchmail will disable
++a countermeasure against an SSL CBC IV attack (by setting 
++SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS).  This is a security risk, but may be
++necessary for connecting to certain non-standards-conforming servers.
+ 
+ .IP \fBFETCHMAIL_INCLUDE_DEFAULT_X509_CA_CERTS\fP
+ (since v6.3.17):

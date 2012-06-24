@@ -1,8 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2012/01/13 00:55:14 naddy Exp $
-
-.include <bsd.own.mk>
-
-SYSV=			4.6.2
+# $OpenBSD: Makefile,v 1.17 2012/06/21 16:17:40 naddy Exp $
 
 NOT_FOR_ARCHS =		${GCC2_ARCHS}
 
@@ -32,9 +28,6 @@ PERMIT_DISTFILES_FTP =	Yes
 PERMIT_PACKAGE_FTP =	Yes
 
 WRKDIST =		${WRKDIR}/g77
-.if ${COMPILER_VERSION:L:Mgcc4*}
-PATCH_LIST=		gcc4-* patch-*
-.endif
 CONFIGURE_SCRIPT =	${WRKDIST}/gcc/configure
 
 SEPARATE_BUILD = 	Yes

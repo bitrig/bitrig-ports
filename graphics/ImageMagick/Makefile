@@ -1,18 +1,18 @@
-# $OpenBSD: Makefile,v 1.121 2012/05/21 13:29:31 okan Exp $
+# $OpenBSD: Makefile,v 1.124 2012/06/19 12:46:12 sthen Exp $
 
 SHARED_ONLY=		Yes
 
 COMMENT=		image processing tools
 
-VER=			6.6.6
-DASHVER=		10
+VER=			6.7.7
+REVISION=		1
+DASHVER=		7
 DISTNAME=		ImageMagick-${VER}-${DASHVER}
 PKGNAME=		ImageMagick-${VER}.${DASHVER}
-REVISION=		8
 
-SHARED_LIBS +=		Magick++	14.0	# .1.0
-SHARED_LIBS +=		MagickCore	2.0	# .1.0
-SHARED_LIBS +=		MagickWand	2.0	# .1.0
+SHARED_LIBS +=		Magick++	15.0	# .1.0
+SHARED_LIBS +=		MagickCore	3.0	# .1.0
+SHARED_LIBS +=		MagickWand	3.0	# .1.0
 
 CATEGORIES=		graphics
 
@@ -34,7 +34,7 @@ PERMIT_DISTFILES_FTP=	Yes
 WANTLIB =		c bz2>=10 djvulibre fftw3 jasper>=1 jbig>=1.2 jpeg \
 			lcms2 lzma ltdl m perl png>=4 pthread stdc++ \
 			tiff>=36 z ICE SM X11 Xext Xt expat fontconfig \
-			freetype wmf-0.2 wmflite-0.2>=7 xcb xml2>=9
+			freetype wmflite-0.2 wmf-0.2 xcb xml2>=9
 
 MODULES =		converters/libiconv
 
@@ -70,8 +70,10 @@ CONFIGURE_ARGS+=	--with-quantum-depth=16 \
 			--without-lqr \
 			--without-modules \
 			--without-openexr \
-			--with-perl=/usr/bin/perl \
+			--without-pango \
+			--with-perl \
 			--without-rsvg \
+			--without-webp \
 			--with-ltdl-include=${LOCALBASE}/include \
 			--with-ltdl-lib=${LOCALBASE}/lib \
 			--disable-ltdl-install
@@ -79,14 +81,19 @@ CONFIGURE_ARGS+=	--with-quantum-depth=16 \
 CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include/libpng -I${LOCALBASE}/include/libxml2 -I${LOCALBASE}/include" \
 			LDFLAGS="-L${WRKBUILD}/magick/.libs -L${WRKBUILD}/wand/.libs -L${LOCALBASE}/lib" \
 			PTHREAD_CFLAGS="-pthread" PTHREAD_LIBS="-pthread" \
-			ac_cv_path_LaunchDelegate=no
+			ac_cv_path_LaunchDelegate=no \
+			ac_cv_lib_wmflite_wmf_lite_create=no
+
+pre-configure:
+	cd ${WRKSRC}; ${SUBST_CMD} $$(find . -name '*.pc.in')
 
 post-install:
-	@perl -pi -e s,'-L${WRKBUILD}/(magick|wand)/.libs','',g \
-		${PREFIX}/bin/Magick-config
-.for f in Magick++ MagickCore MagickWand
-	@perl -pi -e s,'-L${WRKBUILD}/(magick|wand)/.libs','',g \
-		${PREFIX}/lib/lib${f}.la
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/ImageMagick
+.for i in coder.xml colors.xml delegates.xml log.xml magic.xml \
+	mime.xml policy.xml quantization-table.xml \
+	thresholds.xml type-dejavu.xml type-ghostscript.xml \
+	type-windows.xml type.xml
+	${INSTALL_DATA} ${WRKSRC}/config/$i ${PREFIX}/share/examples/ImageMagick
 .endfor
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2012/01/13 00:55:14 naddy Exp $
+# $OpenBSD: Makefile,v 1.15 2012/06/21 16:17:40 naddy Exp $
 
 V =		3.3.5
 CONFIG = 	${MACHINE_ARCH}-unknown-bitrig${OSREV}
@@ -33,7 +33,8 @@ MAKE_FLAGS = MANDIR=${TRUEPREFIX}/man/cat \
 	USE_COLLECT2= \
 	LANGUAGES=f77 \
 	LIBDIR=${TRUEPREFIX}/lib \
-	major=${MAJOR} minor=${MINOR}
+	major=${MAJOR} minor=${MINOR} \
+	libf2c_cv_has_g77_builtin_types=yes
 
 post-install:
 	cd ${WRKBUILD}/obj && ${INSTALL_DATA} g2c.h ${PREFIX}/include
@@ -46,6 +47,3 @@ post-install:
 .endfor
 
 .include <bsd.port.mk>
-.if ${COMPILER_VERSION:L:Mgcc4*}
-MAKE_FLAGS += libf2c_cv_has_g77_builtin_types=yes
-.endif

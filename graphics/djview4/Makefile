@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.14 2011/12/03 18:35:11 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.16 2012/06/15 08:32:16 ajacoutot Exp $
 
 COMMENT=	portable DjVu viewer and browser plugin
 
 DISTNAME=	djview-4.8
 PKGNAME=	${DISTNAME:S/djview/djview4/}
 CATEGORIES=	graphics print
-REVISION=	0
+REVISION=	2
 
 HOMEPAGE=	http://djvu.sourceforge.net/djview4.html
 

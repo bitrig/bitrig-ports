@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.66 2012/06/05 08:24:17 robert Exp $
+# $OpenBSD: Makefile,v 1.68 2012/06/22 21:04:19 sthen Exp $
 
 ONLY_FOR_ARCHS= amd64 i386
 
@@ -15,6 +15,8 @@ PKGNAME-main=	libreoffice-${VERSION}
 PKGNAME-kde=	libreoffice-kde-${VERSION}
 PKGNAME-java=	libreoffice-java-${VERSION}
 CATEGORIES=	editors productivity
+
+REVISION-main=	0
 
 EPOCH=		0
 
@@ -126,7 +128,8 @@ BUILD_DEPENDS+=	archivers/zip \
 		print/cups \
 		boost->=1.41.0:devel/boost \
 		misc/findutils \
-		sysutils/coreutils
+		sysutils/coreutils \
+		textproc/gsed
 
 MODULES+=	gcc4
 MODGCC4_ARCHS=	*

@@ -1,6 +1,6 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4 sw=4 filetype=make:
-#	$OpenBSD: bsd.port.mk,v 1.1175 2012/06/09 21:14:43 espie Exp $
+#	$OpenBSD: bsd.port.mk,v 1.1180 2012/06/20 13:26:17 espie Exp $
 #	$FreeBSD: bsd.port.mk,v 1.264 1996/12/25 02:27:44 imp Exp $
 #	$NetBSD: bsd.port.mk,v 1.62 1998/04/09 12:47:02 hubertf Exp $
 #
@@ -122,7 +122,7 @@ _ALL_VARIABLES_PER_ARCH += BROKEN
 _ALL_VARIABLES_INDEXED += COMMENT PKGNAME \
 	ONLY_FOR_ARCHS NOT_FOR_ARCHS PKGSPEC \
 	PERMIT_PACKAGE_FTP PERMIT_PACKAGE_CDROM WANTLIB CATEGORIES DESCR \
-	EPOCH REVISION
+	EPOCH REVISION STATIC_PLIST
 .endif
 # special purpose user settings
 PATCH_CHECK_ONLY ?= No
@@ -347,7 +347,7 @@ _lt_libs =
 LIBTOOL ?= ${DEPBASE}/bin/libtool
 BUILD_DEPENDS += devel/libtool
 .  else
-LIBTOOL ?= ${PORTSDIR}/infrastructure/bin/libtool
+LIBTOOL ?= /usr/bin/libtool
 MAKE_ENV += PORTSDIR="${PORTSDIR}"
 .  endif
 CONFIGURE_ENV += LIBTOOL="${LIBTOOL} ${LIBTOOL_FLAGS}" ${_lt_libs}
@@ -725,9 +725,10 @@ PKGNAMES += ${FULLPKGNAME${_s}}
 PKGFILES += ${PKGFILE${_s}}
 .endfor
 
+STATIC_PLIST ?= Yes
 .for _s in ${MULTI_PACKAGES}
 .  for _v in PKG_ARCH PERMIT_PACKAGE_FTP PERMIT_PACKAGE_CDROM \
-	RUN_DEPENDS WANTLIB LIB_DEPENDS PREFIX CATEGORIES
+	RUN_DEPENDS WANTLIB LIB_DEPENDS PREFIX CATEGORIES STATIC_PLIST
 ${_v}${_s} ?= ${${_v}}
 .  endfor
 .endfor
@@ -979,10 +980,10 @@ MTREE_FILE += ${PORTSDIR}/infrastructure/db/fake.mtree
 # Fill out package command, and package dependencies
 PKG_ARGS${_S} += -DCOMMENT=${_COMMENT${_S}:Q} -d ${DESCR${_S}}
 PKG_ARGS${_S} += -f ${PLIST${_S}} -p ${PREFIX${_S}}
-.  if defined(MESSAGE${_S})
+.  if defined(MESSAGE${_S}) && !empty(MESSAGE${_S})
 PKG_ARGS${_S} += -M ${MESSAGE${_S}}
 .  endif
-.  if defined(UNMESSAGE${_S})
+.  if defined(UNMESSAGE${_S}) && !empty(UNMESSAGE${_S})
 PKG_ARGS${_S} += -U ${UNMESSAGE${_S}}
 .  endif
 PKG_ARGS${_S} += -A'${PKG_ARCH${_S}}'
@@ -1676,6 +1677,13 @@ _CHECK_LIB_DEPENDS += -d ${_PKG_REPO} -B ${WRKINST}
 _CHECK_LIB_DEPENDS += -o
 .  endif
 
+.for _s in ${MULTI_PACKAGES}
+.  if ${STATIC_PLIST${_s}:L} == "no"
+_register_plist${_s} = :
+.  else
+_register_plist${_s} = ${_register_plist}
+.  endif
+.endfor
 
 ###
 ### end of variable setup. Only targets now
@@ -1731,7 +1739,7 @@ ${_PACKAGE_COOKIE${_S}}:
 		${SUDO} ${_PKG_CREATE} -DPORTSDIR="${PORTSDIR}" \
 			$$deps ${PKG_ARGS${_S}} $$tmp && \
 		${_check_lib_depends} $$tmp && \
-		${_register_plist} $$tmp && \
+		${_register_plist${_S}} $$tmp && \
 		${_checksum_package} && \
 		mv $$tmp ${_PACKAGE_COOKIE${_S}} && \
 		mode=`id -u`:`id -g` && \
@@ -2990,7 +2998,7 @@ _print-package-signature-run:
 	@${_emit_run_depends} |while ${_read_spec}; do \
 		${_parse_spec}; \
 		${_compute_default}; \
-		echo "$$default"; \
+		echo "@$$default"; \
 	done
 
 _print-package-signature-lib:
@@ -2998,7 +3006,7 @@ _print-package-signature-lib:
 	${_emit_lib_depends}| while ${_read_spec}; do \
 		${_if_check_needed}; then \
 			${_complete_pkgspec}; \
-			echo "$$default"; \
+			echo "@$$default"; \
 		fi; \
 	done
 

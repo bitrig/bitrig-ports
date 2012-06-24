@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.28 2012/04/28 08:34:56 sthen Exp $
+# $OpenBSD: Makefile.inc,v 1.30 2012/06/21 06:58:51 ajacoutot Exp $
 
 # This port currently only works with archs supporting dynamic loading
 # and has Apache that supports DSO's.
@@ -21,8 +21,8 @@ HOMEPAGE=		http://www.php.net/
 SUHOSIN_V=		0.9.33
 SUHOSIN_PHPV?=		${V}
 
-MASTER_SITES=		http://us2.php.net/distributions/ \
-			http://se.php.net/distributions/ \
+MASTER_SITES=		http://se.php.net/distributions/ \
+			http://us.php.net/distributions/ \
 			http://no.php.net/distributions/ \
 			http://uk.php.net/distributions/
 MASTER_SITES0=		http://download.suhosin.org/ \
@@ -73,7 +73,9 @@ CONFIGURE_ARGS+=	--enable-shared \
 			--with-pic \
 			--with-pear=${LOCALBASE}/share/php-${PV} \
 			--with-config-file-scan-dir=${SYSCONFDIR}/php-${PV} \
-			--program-suffix=-${PV}
+			--program-suffix=-${PV} \
+			--with-pdo-sqlite \
+			--enable-sqlite-utf8
 
 CONFIGURE_ARGS+=	--with-apxs2=${LOCALBASE}/sbin/apxs2
 BUILD_DEPENDS=		www/apache-httpd
@@ -122,7 +124,7 @@ MULTI_PACKAGES+=	-curl
 COMMENT-curl=		curl URL library extensions for php5
 CONFIGURE_ARGS+=	--with-curl=shared,${LOCALBASE}
 LIB_DEPENDS-curl=	net/curl
-WANTLIB-curl=		crypto idn ssl z curl>=2
+WANTLIB-curl=		crypto idn ssl z curl>=2 ${MODGETTEXT_WANTLIB}
 
 # dba
 MULTI_PACKAGES+=	-dba
@@ -212,13 +214,6 @@ CONFIGURE_ARGS+=        --with-pdo-pgsql=shared,${LOCALBASE}
 LIB_DEPENDS-pdo_pgsql=	databases/postgresql
 WANTLIB-pdo_pgsql=	pq>=2
 
-# pdo-sqlite
-MULTI_PACKAGES+=	-pdo_sqlite
-COMMENT-pdo_sqlite=	PDO sqlite database access extensions for php5
-CONFIGURE_ARGS+=	--with-pdo-sqlite=shared,${LOCALBASE} --enable-sqlite-utf8
-LIB_DEPENDS-pdo_sqlite=	
-WANTLIB-pdo_sqlite=	sqlite3>=8
-
 # pgsql
 MULTI_PACKAGES+=	-pgsql
 COMMENT-pgsql=		pgsql database access extensions for php5
@@ -295,6 +290,13 @@ COMMENT-xsl=		XSL functions for php5
 CONFIGURE_ARGS+=	--with-xsl=shared --enable-dom
 LIB_DEPENDS-xsl=	textproc/libxslt
 WANTLIB-xsl=		${MODLIBICONV_WANTLIB} m xml2 z xslt>=3 exslt
+
+# zip
+MULTI_PACKAGES+=	-zip
+COMMENT-zip=		zip functions for php5
+CONFIGURE_ARGS+=	--enable-zip=shared,${LOCALBASE}
+LIB_DEPENDS-zip=
+WANTLIB-zip=		z
 
 # some variables to substitute
 SUBST_VARS=	MODPHP_CONFIG_PATH PV ^MODULE_NAME

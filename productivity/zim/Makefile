@@ -1,14 +1,13 @@
-# $OpenBSD: Makefile,v 1.6 2011/12/03 23:04:37 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.8 2012/06/21 20:25:45 gonzalo Exp $
 
 COMMENT =		desktop wiki
 
-MODPY_EGG_VERSION =	0.52
+MODPY_EGG_VERSION =	0.56
 DISTNAME =		zim-${MODPY_EGG_VERSION}
-REVISION =		2
 
 CATEGORIES =		productivity
 
-HOMEPAGE = 		http://zim-wiki.org/
+HOMEPAGE =		http://zim-wiki.org/
 
 MAINTAINER =		Sebastian Benoit <benoit-lists@fb12.de>
 

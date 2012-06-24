@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.56 2012/05/07 12:07:35 sthen Exp $
+# $OpenBSD: Makefile,v 1.58 2012/06/21 16:57:55 sthen Exp $
 #
 
     SUBDIR =
@@ -13,6 +13,7 @@
     SUBDIR += libdvdcss
     SUBDIR += libiconv
     SUBDIR += libpst
+    SUBDIR += libunistring
     SUBDIR += mimepp
     SUBDIR += mpack
     SUBDIR += p5-Calendar-Simple
@@ -55,6 +56,7 @@
     SUBDIR += py-iconvcodec
     SUBDIR += qprint
     SUBDIR += recode
+    SUBDIR += ripmime
     SUBDIR += rpm2cpio
     SUBDIR += ruby-multi_json
     SUBDIR += ruby-json

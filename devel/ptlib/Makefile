@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.14 2012/03/02 09:03:52 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.16 2012/06/22 16:53:51 naddy Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	portable tools library
 
-DISTNAME=	ptlib-2.10.4
+DISTNAME=	ptlib-2.10.5
 
 SHARED_LIBS=	pt	4.0	# 2.10.3
 
@@ -34,11 +34,6 @@ LIB_DEPENDS=	databases/openldap \
 		devel/sdl
 
 ALL_TARGET=	default
-
-.include <bsd.own.mk>
-.if !${COMPILER_VERSION:L:Mgcc4}
-PATCH_LIST = patch-* gcc3-patch-*
-.endif
 
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
