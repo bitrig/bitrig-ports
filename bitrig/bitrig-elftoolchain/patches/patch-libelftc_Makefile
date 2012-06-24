@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libelftc/Makefile.orig	Sun Jun 24 15:09:37 2012
++++ libelftc/Makefile	Sun Jun 24 15:06:21 2012
+@@ -24,7 +24,7 @@ WARNS?=	6
+ 
+ CLEANFILES+=	elftc_version.c
+ 
+-LDADD+=	-lelf
++LDADD+=	-l_elf
+ 
+ MAN=	elftc_bfd_find_target.3 \
+ 	elftc_copyfile.3 \

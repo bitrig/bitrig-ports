@@ -1,0 +1,12 @@
+$OpenBSD$
+--- ld/Makefile.orig	Sun Jun 24 15:08:57 2012
++++ ld/Makefile	Sun Jun 24 15:09:01 2012
+@@ -36,7 +36,7 @@ GENSRCS=	amd64_script.c i386_script.c
+ CLEANFILES+=	y.tab.h ${GENSRCS}
+ 
+ DPADD=	${LIBELFTC} ${LIBELF}
+-LDADD=	-lelftc -lelf
++LDADD=	-lelftc -l_elf
+ 
+ CFLAGS+= -I. -I${.CURDIR}
+ 

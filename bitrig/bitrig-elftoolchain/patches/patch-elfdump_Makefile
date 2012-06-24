@@ -1,0 +1,11 @@
+$OpenBSD$
+--- elfdump/Makefile.orig	Sun Jun 24 15:08:30 2012
++++ elfdump/Makefile	Sun Jun 24 15:06:05 2012
+@@ -6,6 +6,6 @@ PROG=	elfdump
+ WARNS?=	6
+ 
+ DPADD=	${LIBELFTC} ${LIBELF}
+-LDADD=	-lelftc -lelf
++LDADD=	-lelftc -l_elf
+ 
+ .include "${TOP}/mk/elftoolchain.prog.mk"

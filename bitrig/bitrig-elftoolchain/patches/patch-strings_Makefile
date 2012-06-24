@@ -1,0 +1,12 @@
+$OpenBSD$
+--- strings/Makefile.orig	Sun Jun 24 15:09:57 2012
++++ strings/Makefile	Sun Jun 24 15:07:00 2012
+@@ -5,7 +5,7 @@ TOP=	..
+ PROG=   strings
+ WARNS?= 6
+ DPADD=	${LIBELFTC} ${LIBELF}
+-LDADD=  -lelftc -lelf
++LDADD=  -lelftc -l_elf
+ 
+ .include "${TOP}/mk/elftoolchain.prog.mk"
+ 

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libelf/Makefile.orig	Sun Jun 24 15:34:21 2012
++++ libelf/Makefile	Sun Jun 24 15:34:24 2012
+@@ -2,7 +2,7 @@
+ 
+ TOP=	${.CURDIR}/..
+ 
+-LIB=	elf
++LIB=	_elf
+ 
+ SRCS=	elf.c							\
+ 	elf_begin.c						\

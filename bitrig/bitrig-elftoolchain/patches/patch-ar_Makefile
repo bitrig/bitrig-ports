@@ -1,0 +1,12 @@
+$OpenBSD$
+--- ar/Makefile.orig	Sun Jun 24 15:08:09 2012
++++ ar/Makefile	Sun Jun 24 15:05:54 2012
+@@ -10,7 +10,7 @@ YSRC=	acpyacc.y
+ WARNS?=	5
+ 
+ DPADD=	${LIBARCHIVE} ${LIBELFTC} ${LIBELF}
+-LDADD=	-larchive -lelftc -lelf
++LDADD=	-larchive -lelftc -l_elf
+ 
+ CFLAGS+=-I. -I${.CURDIR}
+ 

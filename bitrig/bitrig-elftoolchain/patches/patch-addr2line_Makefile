@@ -1,0 +1,12 @@
+$OpenBSD$
+--- addr2line/Makefile.orig	Sun Jun 24 15:08:00 2012
++++ addr2line/Makefile	Sun Jun 24 15:05:47 2012
+@@ -8,7 +8,7 @@ SRCS=	addr2line.c
+ WARNS?=	6
+ 
+ DPADD=	${LIBELF} ${LIBELFTC} ${LIBDWARF}
+-LDADD=	-lelftc -ldwarf -lelf
++LDADD=	-lelftc -ldwarf -l_elf
+ 
+ MAN1=	addr2line.1
+ 

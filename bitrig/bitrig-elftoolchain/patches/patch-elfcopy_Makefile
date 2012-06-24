@@ -1,0 +1,12 @@
+$OpenBSD$
+--- elfcopy/Makefile.orig	Sun Jun 24 15:08:25 2012
++++ elfcopy/Makefile	Sun Jun 24 15:06:03 2012
+@@ -9,7 +9,7 @@ SRCS=	archive.c ascii.c binary.c main.c sections.c seg
+ WARNS?=	5
+ 
+ DPADD=	${LIBELF} ${LIBELFTC}
+-LDADD=	-lelf -lelftc
++LDADD=	-l_elf -lelftc
+ 
+ .if !defined(LIBELF_AR)
+ LDADD+= -larchive

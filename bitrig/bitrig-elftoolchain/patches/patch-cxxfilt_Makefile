@@ -1,0 +1,12 @@
+$OpenBSD$
+--- cxxfilt/Makefile.orig	Sun Jun 24 15:08:20 2012
++++ cxxfilt/Makefile	Sun Jun 24 15:05:59 2012
+@@ -8,7 +8,7 @@ SRCS=	cxxfilt.c
+ WARNS?=	6
+ 
+ DPADD=	${LIBELFTC} ${LIBELF}
+-LDADD=	-lelftc -lelf
++LDADD=	-lelftc -l_elf
+ 
+ MAN1=	c++filt.1
+ 

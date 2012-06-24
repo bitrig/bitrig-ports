@@ -1,0 +1,12 @@
+$OpenBSD$
+--- findtextrel/Makefile.orig	Sun Jun 24 15:08:37 2012
++++ findtextrel/Makefile	Sun Jun 24 15:06:09 2012
+@@ -8,7 +8,7 @@ SRCS=	findtextrel.c
+ WARNS?=	6
+ 
+ DPADD=	${LIBELFTC} ${LIBDWARF} ${LIBELF} 
+-LDADD=	-lelftc -ldwarf -lelf
++LDADD=	-lelftc -ldwarf -l_elf
+ 
+ MAN1=	findtextrel.1
+ 

@@ -17,9 +17,9 @@
 lib/libdwarf.a
 lib/libdwarf_p.a
 lib/libdwarf_pic.a
-lib/libelf.a
-lib/libelf_p.a
-lib/libelf_pic.a
+lib/lib_elf.a
+lib/lib_elf_p.a
+lib/lib_elf_pic.a
 lib/libelftc.a
 lib/libelftc_p.a
 lib/libelftc_pic.a

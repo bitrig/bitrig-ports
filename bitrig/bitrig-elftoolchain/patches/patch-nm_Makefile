@@ -1,0 +1,11 @@
+$OpenBSD$
+--- nm/Makefile.orig	Sun Jun 24 15:09:41 2012
++++ nm/Makefile	Sun Jun 24 15:06:24 2012
+@@ -8,6 +8,6 @@ SRCS=	nm.c
+ 
+ WARNS?=	6
+ 
+-LDADD=	-ldwarf -lelftc -lelf
++LDADD=	-ldwarf -lelftc -l_elf
+ 
+ .include "${TOP}/mk/elftoolchain.prog.mk"

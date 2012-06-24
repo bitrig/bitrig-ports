@@ -27,6 +27,6 @@ pre-configure:
 	@cp ${FILESDIR}/libelf_shlib_version ${WRKSRC}/libelf/shlib_version 
 
 SHARED_LIBS +=  dwarf                     3.0
-SHARED_LIBS +=  elf                       1.0
+SHARED_LIBS +=  _elf                      1.0
 
 .include <bsd.port.mk>

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- mk/elftoolchain.lib.mk.orig	Sun Jun 24 15:29:26 2012
++++ mk/elftoolchain.lib.mk	Sun Jun 24 15:29:06 2012
+@@ -19,7 +19,7 @@ CFLAGS+=	-I${.CURDIR}		# Sources
+ CFLAGS+=	-I${TOP}/common		# common code
+ 
+ .if defined(LDADD)
+-_LDADD_LIBELF=${LDADD:M-lelf}
++_LDADD_LIBELF=${LDADD:M-l_elf}
+ .if !empty(_LDADD_LIBELF)
+ CFLAGS+=	-I${TOP}/libelf
+ LDFLAGS+=	-L${TOP}/libelf

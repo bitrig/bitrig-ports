@@ -1,0 +1,12 @@
+$OpenBSD$
+--- readelf/Makefile.orig	Sun Jun 24 15:42:21 2012
++++ readelf/Makefile	Sun Jun 24 15:42:25 2012
+@@ -8,7 +8,7 @@ SRCS=	readelf.c
+ WARNS?=	6
+ 
+ DPADD=	${LIBDWARF} ${LIBELF}
+-LDADD=	-ldwarf -lelftc -lelf
++LDADD=	-ldwarf -lelftc -l_elf
+ 
+ MAN1=	readelf.1
+ 

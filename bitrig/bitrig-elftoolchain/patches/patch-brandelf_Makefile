@@ -1,0 +1,11 @@
+$OpenBSD$
+--- brandelf/Makefile.orig	Sun Jun 24 15:08:14 2012
++++ brandelf/Makefile	Sun Jun 24 15:08:15 2012
+@@ -4,6 +4,6 @@ TOP=	..
+ 
+ PROG=	brandelf
+ WARNS?=	6
+-LDADD=	-lelftc -lelf
++LDADD=	-lelftc -l_elf
+ 
+ .include "${TOP}/mk/elftoolchain.prog.mk"
