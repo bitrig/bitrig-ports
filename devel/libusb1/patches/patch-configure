@@ -1,6 +1,6 @@
 $OpenBSD$
---- configure.orig	Sun May 20 18:40:02 2012
-+++ configure	Sun May 20 18:41:55 2012
+--- configure.orig	Thu Jun 21 11:10:07 2012
++++ configure	Thu Jun 21 11:11:42 2012
 @@ -4685,7 +4685,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -55,15 +55,12 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -11106,6 +11106,11 @@ $as_echo "Darwin/Mac OS X" >&6; }
- *-openbsd*)
+@@ -11103,7 +11103,7 @@ $as_echo "Linux" >&6; }
+ $as_echo "Darwin/Mac OS X" >&6; }
+ 	backend="darwin"
+ 	;;
+-*-openbsd*)
++*-openbsd* | *-bitrig*)
  	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: OpenBSD" >&5
  $as_echo "OpenBSD" >&6; }
-+	backend="openbsd"
-+	;;
-+*-bitrig*)
-+	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: Bitrig (using OpenBSD backend)" >&5
-+$as_echo "Bitrig (using OpenBSD backend)" >&6; }
  	backend="openbsd"
- 	;;
- *-netbsd*)
