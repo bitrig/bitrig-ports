@@ -28,6 +28,7 @@ LIB_DEPENDS=	devel/libyubikey \
 SEPARATE_BUILD=	Yes
 USE_LIBTOOL=	Yes
 CONFIGURE_STYLE= gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/build-aux
 CONFIGURE_ARGS=	${CONFIGURE_SHARED}
 
 .include <bsd.port.mk>
