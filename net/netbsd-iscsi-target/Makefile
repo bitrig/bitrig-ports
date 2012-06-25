@@ -26,6 +26,7 @@ MASTER_SITES=	http://ftp.netbsd.org/pub/NetBSD/packages/distfiles/ \
 		ftp://ftp.netbsd.org/pub/NetBSD/packages/distfiles/
 
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKDIST} ${WRKDIST}/buildaux
 USE_LIBTOOL=	Yes
 
 pre-configure:
