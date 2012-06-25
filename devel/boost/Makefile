@@ -57,7 +57,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=boost/}
 BJAM_CONFIG=	-sNO_BZIP2=1 \
 		-d+2 -q \
 		-j ${MAKE_JOBS} \
-		cflags='${CFLAGS}' cxxflags='${CXXFLAGS}' \
+		cflags='${CFLAGS}' cxxflags='${CXXFLAGS} -std=c++0x' \
 		variant=release link=static,shared threading=single,multi 
 
 BOOTSTRAP_CONFIG=	--without-icu \
