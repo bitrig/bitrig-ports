@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libdjvu/GContainer.h.orig	Wed Jun 20 21:05:20 2012
++++ libdjvu/GContainer.h	Wed Jun 20 21:07:30 2012
+@@ -962,7 +962,7 @@ class GListTemplate : protected GListImpl<TI> (public)
+   /** Inserts an element before the first element of the list. 
+       The new element is initialized with a copy of argument #elt#. */
+   void prepend(const TYPE &elt)
+-    { GListImpl<TI>::prepend(newnode((const TI&)elt)); }
++    { GListImpl<TI>::prepend(this->newnode((const TI&)elt)); }
+   /** Inserts a new element after the list element at position #pos#.  When
+       position #pos# is null the element is inserted at the beginning of the
+       list.  The new element is initialized with a copy of #elt#. */
