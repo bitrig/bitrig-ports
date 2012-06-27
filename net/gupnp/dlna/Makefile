@@ -25,6 +25,12 @@ RUN_DEPENDS+=		multimedia/gstreamer-0.10/plugins-good
 # support for various media files
 RUN_DEPENDS+=		multimedia/gstreamer-0.10/plugins-ugly
 
+# this doesn't yet work with our libtool, it will get confused and
+# pick up the wrong libraries
+USE_LIBTOOL=		gnu
+
+MODGNU_CONFIG_GUESS_DIRS= ${WRKDIST}/build-aux
+
 # Needs media files which aren't distributed with the tarball.
 NO_REGRESS=		Yes
 

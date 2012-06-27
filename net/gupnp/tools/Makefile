@@ -24,4 +24,6 @@ BUILD_DEPENDS=		x11/gnome/icon-theme
 RUN_DEPENDS=		devel/desktop-file-utils \
 			x11/gnome/icon-theme
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKDIST}/build-aux
+
 .include <bsd.port.mk>

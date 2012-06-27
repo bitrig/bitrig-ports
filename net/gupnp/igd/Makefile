@@ -21,4 +21,6 @@ LIB_DEPENDS=		net/gupnp/core
 BUILD_DEPENDS=		devel/py-gobject
 RUN_DEPENDS=		devel/py-gobject
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKDIST}
+
 .include <bsd.port.mk>

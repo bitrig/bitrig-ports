@@ -18,4 +18,6 @@ LIB_DEPENDS=		net/gupnp/core>=0.18.0
 
 MODGNOME_TOOLS= 	goi
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKDIST}/build-aux
+
 .include <bsd.port.mk>

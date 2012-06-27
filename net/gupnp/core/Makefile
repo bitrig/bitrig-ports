@@ -26,4 +26,6 @@ MODPY_ADJ_FILES=	tools/gupnp-binding-tool
 
 CONFIGURE_ARGS+=	--with-context-manager=unix
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKDIST}/build-aux
+
 .include <bsd.port.mk>
