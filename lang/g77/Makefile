@@ -1,4 +1,8 @@
-# $OpenBSD: Makefile,v 1.17 2012/06/21 16:17:40 naddy Exp $
+# $OpenBSD: Makefile,v 1.15 2012/01/13 00:55:14 naddy Exp $
+
+.include <bsd.own.mk>
+
+SYSV=			4.6.2
 
 NOT_FOR_ARCHS =		${GCC2_ARCHS}
 
