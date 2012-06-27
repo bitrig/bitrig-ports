@@ -1,0 +1,12 @@
+$OpenBSD$
+--- y4mdenoise/MotionSearcher.hh.orig	Wed Jun 27 21:53:47 2012
++++ y4mdenoise/MotionSearcher.hh	Wed Jun 27 21:54:52 2012
+@@ -2196,7 +2196,7 @@ MotionSearcher<PIXEL_NUM,DIM,PIXEL_TOL,PIXELINDEX,FRAM
+ 	{
+ 		// This region is too small to be bothered with.
+ 		// Just get rid of it.
+-		DeleteRegion (a_pRegion);
++		this->DeleteRegion (a_pRegion);
+ 	}
+ 	else
+ 	{
