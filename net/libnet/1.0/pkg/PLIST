@@ -1,6 +1,6 @@
 @comment $OpenBSD: PLIST,v 1.2 2005/09/14 10:53:44 espie Exp $
-@pkgpath net/libnet
 @option no-default-conflict
+@pkgpath net/libnet
 %%SHARED%%
 bin/libnet-config-1.0
 include/libnet-1.0/
@@ -15,4 +15,4 @@ include/libnet-1.0/libnet/libnet-structures.h
 lib/libnet-1.0/
 lib/libnet-1.0/libnet.a
 lib/libnet-1.0/libpwrite.a
-@man man/man3/libnet.3
+man/libnet.3

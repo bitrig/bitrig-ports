@@ -6,9 +6,10 @@
  BIN_PREFIX  =   @bindir@/
 -INC_PREFIX  =   @includedir@/
 -LIB_PREFIX  =   @libdir@/
+-MAN_PREFIX  =   @MAN_PREFIX@
 +INC_PREFIX  =   @includedir@/libnet-1.0/
 +LIB_PREFIX  =   @libdir@/libnet-1.0/
- MAN_PREFIX  =   @MAN_PREFIX@
++MAN_PREFIX  =   @mandir@
  
  LIBNET      =   libnet
 @@ -36,7 +36,7 @@ AR          =   @AR@
