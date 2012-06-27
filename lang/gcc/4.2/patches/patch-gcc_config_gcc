@@ -1,5 +1,14 @@
---- gcc/config.gcc.orig	Thu Mar 13 20:11:43 2008
-+++ gcc/config.gcc	Wed Oct 27 18:39:34 2010
+--- gcc/config.gcc.orig	Thu Mar 13 14:11:43 2008
++++ gcc/config.gcc	Tue Jun 26 19:08:28 2012
+@@ -543,7 +543,7 @@ case ${target} in
+       ;;
+   esac
+   ;;
+-*-*-openbsd*)
++*-*-openbsd* | *-*-bitrig*)
+   tmake_file="t-libc-ok t-openbsd t-libgcc-pic"
+   case ${enable_threads} in
+     yes)
 @@ -555,6 +555,11 @@ case ${target} in
      *-*-openbsd2.*|*-*-openbsd3.[012])
        tm_defines="${tm_defines} HAS_LIBC_R=1" ;;
@@ -27,16 +36,19 @@
  	;;
  alpha*-dec-osf[45]*)
  	if test x$stabs = xyes
-@@ -1085,10 +1090,15 @@ i[34567]86-*-openbsd2.*|i[34567]86-*openbsd3.[0123])
+@@ -1083,12 +1088,17 @@ i[34567]86-*-openbsd2.*|i[34567]86-*openbsd3.[0123])
+ 	# we need collect2 until our bug is fixed...
+ 	use_collect2=yes
  	;;
- i[34567]86-*-openbsd*)
+-i[34567]86-*-openbsd*)
++i[34567]86-*-openbsd* | i[34567]86-*-bitrig*)
  	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h"
 -	tm_file="${tm_file} openbsd.h i386/openbsdelf.h"
 +	tm_file="${tm_file} openbsd.h openbsd-libpthread.h i386/openbsdelf.h"
  	gas=yes
  	gnu_ld=yes
  	;;
-+x86_64-*-openbsd*)
++x86_64-*-openbsd* | x86_64-*-bitrig* | amd64-*-bitrig*)
 +        tm_file="i386/biarch64.h i386/i386.h i386/unix.h i386/att.h dbxelf.h elfos.h openbsd.h openbsd-libpthread.h i386/x86-64.h i386/openbsd64.h"
 +        tm_file="${tm_file} exec-stack.h"
 +        tmake_file="t-libc-ok t-openbsd i386/t-openbsd"

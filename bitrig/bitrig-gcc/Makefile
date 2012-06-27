@@ -52,9 +52,6 @@ HOMEPAGE =	http://gcc.gnu.org/
 
 #DIST_SUBDIR=gcc
 CONFIG=${MACHINE_ARCH}-unknown-bitrig${OSREV}
-.if ${MACHINE_ARCH:Mamd64}
-CONFIG = x86_64-unknown-bitrig${OSREV}
-.endif
 
 SUBST_VARS+=CONFIG V
 

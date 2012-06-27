@@ -82,6 +82,8 @@ MASTER_SITES0 = ftp://quatramaran.ens.fr/pub/espie/
 CONFIGURE_STYLE =	gnu
 MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} ${WRKSRC}/gcc
 
+CONFIG=${MACHINE_ARCH}-unknown-bitrig${OSREV}
+
 LANGS = c
 .if ${BUILD_PACKAGES:M-c++}
 LANGS := ${LANGS},c++
