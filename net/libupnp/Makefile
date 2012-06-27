@@ -25,6 +25,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pupnp/}
 USE_LIBTOOL=	Yes
 
 CONFIGURE_STYLE= gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/build-aux
 # HAVE_COMPAT does not do anything
 CONFIGURE_ENV=	ac_cv_cflags_gcc_option__Os=no \
 		ac_cv_lib_compat_ftime=no
