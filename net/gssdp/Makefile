@@ -33,5 +33,6 @@ LIB_DEPENDS=		devel/libsoup \
 			x11/gtk+2
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKDIST}/build-aux
 
 .include <bsd.port.mk>
