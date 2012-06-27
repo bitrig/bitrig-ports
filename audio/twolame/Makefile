@@ -22,6 +22,7 @@ WANTLIB=	c m sndfile
 LIB_DEPENDS=	audio/libsndfile
 
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKDIST}/build-scripts
 
 USE_LIBTOOL=	Yes
 
