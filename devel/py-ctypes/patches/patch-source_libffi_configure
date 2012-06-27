@@ -1,0 +1,21 @@
+$OpenBSD$
+--- source/libffi/configure.orig	Wed Jun 27 16:33:57 2012
++++ source/libffi/configure	Wed Jun 27 16:36:02 2012
+@@ -3470,7 +3470,7 @@ fi
+ 
+ TARGETDIR="unknown"
+ case "$host" in
+-x86_64-*-openbsd*) TARGET=X86_64; TARGETDIR=x86;;
++x86_64-*-openbsd* | x86_64-*-bitrig*) TARGET=X86_64; TARGETDIR=x86;;
+ mips*-*-openbsd*) TARGET=MIPS; TARGETDIR=mips;;
+ sparc-*-openbsd*) TARGET=SPARC; TARGETDIR=sparc;;
+ sparc64-*-openbsd*) TARGET=SPARC; TARGETDIR=sparc;;
+@@ -3485,7 +3485,7 @@ i*86-*-solaris*) TARGET=X86; TARGETDIR=x86;;
+ i*86-*-beos*) TARGET=X86; TARGETDIR=x86;;
+ i*86-*-freebsd* | i*86-*-kfreebsd*-gnu) TARGET=X86; TARGETDIR=x86;;
+ i*86-*-netbsdelf* | i*86-*-knetbsd*-gnu) TARGET=X86; TARGETDIR=x86;;
+-i*86-*-openbsd*) TARGET=X86; TARGETDIR=x86;;
++i*86-*-openbsd* | i*86-*-bitrig*) TARGET=X86; TARGETDIR=x86;;
+ i*86-*-rtems*) TARGET=X86; TARGETDIR=x86;;
+ i*86-*-win32*) TARGET=X86_WIN32; TARGETDIR=x86;;
+ i*86-*-cygwin*) TARGET=X86_WIN32; TARGETDIR=x86;;
