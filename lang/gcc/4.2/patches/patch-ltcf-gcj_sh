@@ -1,12 +1,14 @@
 $OpenBSD: patch-ltcf-gcj_sh,v 1.1.1.1 2006/07/31 09:50:53 espie Exp $
---- ltcf-gcj.sh.orig	Thu May  5 17:04:39 2005
-+++ ltcf-gcj.sh	Mon May 16 17:43:16 2005
-@@ -489,10 +489,13 @@ else
+--- ltcf-gcj.sh.orig	Thu Mar 13 13:59:29 2008
++++ ltcf-gcj.sh	Thu Jun 28 16:55:44 2012
+@@ -488,11 +488,14 @@ else
+     hardcode_shlibpath_var=no
      ;;
  
-   openbsd*)
+-  openbsd*)
 -    archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'
 -    hardcode_libdir_flag_spec='-R$libdir'
++  openbsd* | bitrig*)
 +    archive_cmds='$CC $pic_flag -shared $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags -o $lib'
 +    archive_expsym_cmds='$CC $pic_flag -shared $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags -o $lib'
 +    hardcode_libdir_flag_spec='${wl}-R$libdir'
