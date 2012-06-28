@@ -22,7 +22,6 @@ RUN_DEPENDS=	devel/p5-Task-Weaken \
 		security/p5-Crypt-SSLeay \
 		security/p5-IO-Socket-SSL \
 		textproc/p5-XML-Parser \
-		www/mod_perl \
 		www/p5-URI \
 		www/p5-libwww
 
