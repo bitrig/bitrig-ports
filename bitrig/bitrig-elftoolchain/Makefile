@@ -12,6 +12,8 @@ CATEGORIES=	bitrig
 HOMEPAGE=	http://sourceforge.net/apps/trac/elftoolchain/
 MAINTAINER =	Marco Peereboom <marco@bitrig.org>
 
+BUILD_DEPENDS = devel/libelf
+
 PERMIT_PACKAGE_CDROM=	Yes
 PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes

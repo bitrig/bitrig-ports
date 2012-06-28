@@ -26,8 +26,7 @@ USE_LIBTOOL=	Yes
 SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	${CONFIGURE_SHARED}
-#CONFIGURE_ARGS+=--without-lzmadec	# old LZMA utils
-CONFIGURE_ARGS+=--without-lzma
+CONFIGURE_ARGS+=--without-lzmadec	# old LZMA utils
 CONFIGURE_ARGS+=--without-nettle	# prefer OpenSSL
 CONFIGURE_ARGS+=--without-xml2		# expat suffices
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
