@@ -1,0 +1,30 @@
+$OpenBSD$
+--- config.rpath.orig	Thu Jun 28 16:52:02 2012
++++ config.rpath	Thu Jun 28 16:53:19 2012
+@@ -117,7 +117,7 @@ case "$host_os" in
+       with_gnu_ld=no
+     fi
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+ esac
+@@ -346,7 +346,7 @@ else
+       hardcode_libdir_flag_spec='${wl}-rpath ${wl}$libdir'
+       hardcode_libdir_separator=:
+       ;;
+-    openbsd*)
++    openbsd* | bitrig*)
+       hardcode_direct=yes
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+         hardcode_libdir_flag_spec='${wl}-rpath,$libdir'
+@@ -492,7 +492,7 @@ case "$host_os" in
+     ;;
+   nto-qnx)
+     ;;
+-  openbsd*)
++  openbsd*|bitrig*)
+     ;;
+   os2*)
+     libname_spec='$name'
