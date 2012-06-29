@@ -1,11 +1,11 @@
-$OpenBSD: patch-provider_soap_stdsoap2_h,v 1.5 2011/06/03 15:52:12 ajacoutot Exp $
---- provider/soap/stdsoap2.h.orig	Wed Apr 20 19:51:43 2011
-+++ provider/soap/stdsoap2.h	Fri Jun  3 16:02:03 2011
+$OpenBSD$
+--- provider/soap/stdsoap2.h.orig	Mon Jun 18 18:55:27 2012
++++ provider/soap/stdsoap2.h	Fri Jun 29 21:50:40 2012
 @@ -426,6 +426,27 @@ A commercial use license is available from Genivia, In
  #  define ULONG64 unsigned LONG64
  #  define SOAP_LONG_FORMAT "%ld"
  #  define SOAP_ULONG_FORMAT "%lu"
-+#elif defined(OPENBSD) || defined(__OpenBSD__)
++#elif defined(OPENBSD) || defined(__OpenBSD__) || defined(BITRIG) || defined(__Bitrig__)
 +/* for FD_SETSIZE */
 +#include <sys/types.h>
 +#include <sys/select.h>
@@ -34,7 +34,7 @@ $OpenBSD: patch-provider_soap_stdsoap2_h,v 1.5 2011/06/03 15:52:12 ajacoutot Exp
  #elif defined(SOCKLEN_T)
  # define SOAP_SOCKLEN_T SOCKLEN_T
 -#elif defined(__socklen_t_defined) || defined(_SOCKLEN_T) || defined(CYGWIN) || defined(FREEBSD) || defined(__FreeBSD__) || defined(__QNX__) || defined(QNX) || defined(OS390)
-+#elif defined(__socklen_t_defined) || defined(_SOCKLEN_T) || defined(CYGWIN) || defined(FREEBSD) || defined(__FreeBSD__) || defined(__QNX__) || defined(QNX) || defined(OS390) || defined(OPENBSD) || defined(__OpenBSD__)
++#elif defined(__socklen_t_defined) || defined(_SOCKLEN_T) || defined(CYGWIN) || defined(FREEBSD) || defined(__FreeBSD__) || defined(__QNX__) || defined(QNX) || defined(OS390) || defined(OPENBSD) || defined(__OpenBSD__)  || defined(BITRIG) || defined(__Bitrig__)
  # define SOAP_SOCKLEN_T socklen_t
  #elif defined(IRIX) || defined(WIN32) || defined(__APPLE__) || defined(HP_UX) || defined(SUN_OS) || defined(OPENSERVER) || defined(TRU64) || defined(VXWORKS)
  # define SOAP_SOCKLEN_T int

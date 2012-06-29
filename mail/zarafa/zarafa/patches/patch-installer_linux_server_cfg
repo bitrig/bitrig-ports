@@ -1,6 +1,6 @@
-$OpenBSD: patch-installer_linux_server_cfg,v 1.15 2012/05/05 16:56:17 ajacoutot Exp $
---- installer/linux/server.cfg.orig	Thu May  3 11:27:51 2012
-+++ installer/linux/server.cfg	Sat May  5 17:39:39 2012
+$OpenBSD$
+--- installer/linux/server.cfg.orig	Mon Jun 18 13:21:33 2012
++++ installer/linux/server.cfg	Fri Jun 29 21:20:41 2012
 @@ -42,16 +42,16 @@ local_admin_users	= root
  system_email_address	= postmaster@localhost
  
@@ -64,11 +64,12 @@ $OpenBSD: patch-installer_linux_server_cfg,v 1.15 2012/05/05 16:56:17 ajacoutot 
  
  ##############################################################
  # THREAD SETTINGS
-@@ -281,23 +281,24 @@ companyquota_warn      = 0
+@@ -281,23 +281,25 @@ companyquota_warn      = 0
  # Name of the plugin that handles users
  # Required, default = ldap
  # Values: ldap, unix, db, ldapms (available in enterprise license)
-+# note: the unix plugin is not supported under OpenBSD
++# note: the unix plugin is not supported under OpenBSD or under
++# Bitrig
  user_plugin		= db
  
  # configuration file of the user plugin, examples can be found in /usr/share/zarafa/example-config
@@ -97,7 +98,7 @@ $OpenBSD: patch-installer_linux_server_cfg,v 1.15 2012/05/05 16:56:17 ajacoutot 
  
  # Set this option to 'yes' to skip the creation and deletion of new users
  # The action will be logged, so you can see if your changes to the plugin
-@@ -354,7 +355,7 @@ client_update_enabled = false
+@@ -354,7 +356,7 @@ client_update_enabled = false
  
  # Place the correct Zarafa Outlook Client in this directory for
  # Windows clients to download through the Zarafa server

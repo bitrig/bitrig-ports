@@ -80,6 +80,9 @@ LIBTOOL_FLAGS=	--tag=disable-static
 USE_GMAKE=	Yes
 USE_GROFF =	Yes
 
+CC =		cc
+CXX =		${CC}
+
 MODPY_ADJ_FILES=tools/python-scripts/optimize-imap.py \
 		installer/linux/zarafa7-upgrade
 
@@ -91,8 +94,10 @@ INSTDIR=	${PREFIX-web}/zarafa-webaccess
 SUBST_VARS=	INSTDIR PREFIX-web
 
 CONFIGURE_STYLE= gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKDIST}/autoconf
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include \
-			-I${LOCALBASE}/include/zarafa" \
+			-I${LOCALBASE}/include/zarafa \
+			-std=c++0x -fpermissive" \
 		LDFLAGS="-L${LOCALBASE}/lib -lexecinfo \
 			-L${LOCALBASE}/lib/zarafa" \
 		ZAFARA_LDFLAGS="-L${LOCALBASE}/lib/zarafa" \

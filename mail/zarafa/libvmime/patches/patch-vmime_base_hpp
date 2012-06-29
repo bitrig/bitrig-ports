@@ -1,0 +1,12 @@
+$OpenBSD$
+--- vmime/base.hpp.orig	Mon Jun 25 23:11:20 2012
++++ vmime/base.hpp	Mon Jun 25 23:11:52 2012
+@@ -252,7 +252,7 @@ namespace vmime
+ 	template <class X, class Y>
+ 	ref <X> dynamicCast(ref <Y> y)
+ 	{
+-		return y.dynamicCast <X>();
++		return y->template dynamicCast <X>();
+ 	}
+ 
+ } // vmime

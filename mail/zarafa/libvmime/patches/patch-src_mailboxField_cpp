@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/mailboxField.cpp.orig	Mon Jun 25 23:18:03 2012
++++ src/mailboxField.cpp	Mon Jun 25 23:18:47 2012
+@@ -51,7 +51,7 @@ void mailboxField::parse(const string& buffer, const s
+ 	// Here, we cannot simply call "m_mailbox.parse()" because it
+ 	// may have more than one address specified (even if this field
+ 	// should contain only one). We are never too much careful...
+-	ref <address> parsedAddress = address::parseNext(buffer, position, end, newPosition);
++	ref <address> parsedAddress = mailbox::parseNext(buffer, position, end, newPosition);
+ 
+ 	if (parsedAddress)
+ 	{

@@ -1,10 +1,143 @@
-$OpenBSD: patch-configure,v 1.22 2012/05/05 16:56:17 ajacoutot Exp $
-
-OpenBSD does NOT require -lcrypt, DES encryption is part of the standard libc.
-
---- configure.orig	Thu May  3 11:28:37 2012
-+++ configure	Sat May  5 17:39:39 2012
-@@ -21942,13 +21942,13 @@ fi
+$OpenBSD$
+--- configure.orig	Mon Jun 18 13:22:24 2012
++++ configure	Fri Jun 29 21:09:53 2012
+@@ -4482,7 +4482,7 @@
+   lt_cv_deplibs_check_method=unknown
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -6405,7 +6405,7 @@
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -7081,7 +7081,7 @@
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -8152,7 +8152,7 @@
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -8869,7 +8869,7 @@
+       hardcode_shlibpath_var=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -9608,7 +9608,7 @@
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -12116,7 +12116,7 @@
+     # C++ shared libraries are fairly broken
+     ld_shlibs_CXX=no
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     if test -f /usr/libexec/ld.so; then
+       hardcode_direct_CXX=yes
+       hardcode_shlibpath_var_CXX=no
+@@ -13586,7 +13586,7 @@
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -14836,7 +14836,7 @@
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -15533,7 +15533,7 @@
+       hardcode_shlibpath_var_F77=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_F77=yes
+ 	hardcode_shlibpath_var_F77=no
+@@ -16220,7 +16220,7 @@
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -17450,7 +17450,7 @@
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -18167,7 +18167,7 @@
+       hardcode_shlibpath_var_GCJ=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_GCJ=yes
+ 	hardcode_shlibpath_var_GCJ=no
+@@ -18854,7 +18854,7 @@
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -21911,6 +21911,9 @@
+ 	*-*-openbsd*)
+ 		BUILDOS="-DOPENBSD"
+ 		;;
++	*-*-bitrig*)
++		BUILDOS="-DBITRIG"
++		;;
+ 	*-*-linux*)
+ 		;;
+ esac
+@@ -21942,13 +21945,13 @@
  
  # Everything uses pthread
  # check lib, but do not set in link list, but use -pthread instead (gnu c/c++ only?)
@@ -21,7 +154,7 @@ OpenBSD does NOT require -lcrypt, DES encryption is part of the standard libc.
  cat >conftest.$ac_ext <<_ACEOF
  /* confdefs.h.  */
  _ACEOF
-@@ -24574,7 +24574,7 @@ if test "${ac_cv_lib_intl_strftime+set}" = set; then
+@@ -24574,7 +24577,7 @@
    echo $ECHO_N "(cached) $ECHO_C" >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -30,7 +163,7 @@ OpenBSD does NOT require -lcrypt, DES encryption is part of the standard libc.
  cat >conftest.$ac_ext <<_ACEOF
  /* confdefs.h.  */
  _ACEOF
-@@ -24634,7 +24634,7 @@ if test $ac_cv_lib_intl_strftime = yes; then
+@@ -24634,7 +24637,7 @@
  #define HAVE_STRFTIME 1
  _ACEOF
  
@@ -39,7 +172,7 @@ OpenBSD does NOT require -lcrypt, DES encryption is part of the standard libc.
  fi
  
  fi
-@@ -26150,7 +26150,7 @@ if test `eval echo '${'$as_ac_Header'}'` = yes; then
+@@ -26150,7 +26153,7 @@
  _ACEOF
  
  		VMIME_CFLAGS=-I$VMIME_PREFIX
@@ -48,7 +181,7 @@ OpenBSD does NOT require -lcrypt, DES encryption is part of the standard libc.
  
  else
  
-@@ -27761,84 +27761,10 @@ sed 's/^/| /' conftest.$ac_ext >&5
+@@ -27761,84 +27764,10 @@
  	 { echo "$as_me:$LINENO: result: no" >&5
  echo "${ECHO_T}no" >&6; }
  
@@ -134,7 +267,7 @@ OpenBSD does NOT require -lcrypt, DES encryption is part of the standard libc.
  CRYPT_LIBS=$LIBS
  LIBS=$LIBS_system
  
-@@ -27853,7 +27779,7 @@ if test "${ac_cv_lib_ssl_SSL_accept+set}" = set; then
+@@ -27853,7 +27782,7 @@
    echo $ECHO_N "(cached) $ECHO_C" >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -143,7 +276,7 @@ OpenBSD does NOT require -lcrypt, DES encryption is part of the standard libc.
  cat >conftest.$ac_ext <<_ACEOF
  /* confdefs.h.  */
  _ACEOF
-@@ -29078,7 +29004,7 @@ if test "${ac_cv_lib_intl_gettext+set}" = set; then
+@@ -29078,7 +29007,7 @@
    echo $ECHO_N "(cached) $ECHO_C" >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -152,7 +285,7 @@ OpenBSD does NOT require -lcrypt, DES encryption is part of the standard libc.
  cat >conftest.$ac_ext <<_ACEOF
  /* confdefs.h.  */
  _ACEOF
-@@ -29134,7 +29060,7 @@ fi
+@@ -29134,7 +29063,7 @@
  { echo "$as_me:$LINENO: result: $ac_cv_lib_intl_gettext" >&5
  echo "${ECHO_T}$ac_cv_lib_intl_gettext" >&6; }
  if test $ac_cv_lib_intl_gettext = yes; then

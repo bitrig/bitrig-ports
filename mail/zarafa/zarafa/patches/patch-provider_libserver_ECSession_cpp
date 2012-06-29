@@ -1,12 +1,14 @@
-$OpenBSD: patch-provider_libserver_ECSession_cpp,v 1.7 2012/03/15 17:04:31 ajacoutot Exp $
---- provider/libserver/ECSession.cpp.orig	Tue Mar 13 16:43:38 2012
-+++ provider/libserver/ECSession.cpp	Thu Mar 15 16:42:28 2012
-@@ -810,11 +810,20 @@ ECRESULT ECAuthSession::ValidateUserSocket(int socket,
+$OpenBSD$
+--- provider/libserver/ECSession.cpp.orig	Mon Jun 18 18:55:32 2012
++++ provider/libserver/ECSession.cpp	Fri Jun 29 22:39:57 2012
+@@ -810,11 +810,25 @@ ECRESULT ECAuthSession::ValidateUserSocket(int socket,
  	uid_t uid;
  	char strbuf[1024];	
  #ifdef SO_PEERCRED
 +#ifndef __OpenBSD__
  	struct ucred cr;
++#elif __BITRIG__
++	struct ucred cr;
 +#else
 +	struct sockpeercred cr;
 +#endif
@@ -15,6 +17,9 @@ $OpenBSD: patch-provider_libserver_ECSession_cpp,v 1.7 2012/03/15 17:04:31 ajaco
 +#ifndef __OpenBSD__
  	cr_len = sizeof(struct ucred);
  	if(getsockopt(socket, SOL_SOCKET, SO_PEERCRED, &cr, &cr_len) != 0 || cr_len != sizeof(struct ucred)) {
++#elif __Bitrig__
++	cr_len = sizeof(struct ucred);
++	if(getsockopt(socket, SOL_SOCKET, SO_PEERCRED, &cr, &cr_len) != 0 || cr_len != sizeof(struct ucred)) {
 +#else
 +	cr_len = sizeof(struct sockpeercred);
 +	if(getsockopt(socket, SOL_SOCKET, SO_PEERCRED, &cr, &cr_len) != 0 || cr_len != sizeof(struct sockpeercred)) {
@@ -22,3 +27,12 @@ $OpenBSD: patch-provider_libserver_ECSession_cpp,v 1.7 2012/03/15 17:04:31 ajaco
  		er = ZARAFA_E_LOGON_FAILED;
  		goto exit;
  	}
+@@ -844,7 +858,7 @@ ECRESULT ECAuthSession::ValidateUserSocket(int socket,
+ #ifdef HAVE_GETPWNAM_R
+ 	getpwnam_r(lpszName, &pwbuf, strbuf, sizeof(strbuf), &pw);
+ #else
+-	// OpenBSD does not have getpwnam_r() .. FIXME: threading issue!
++	// OpenBSD and Bitrig do not have getpwnam_r() .. FIXME: threading issue!
+ 	pw = getpwnam(lpszName);
+ #endif
+ 

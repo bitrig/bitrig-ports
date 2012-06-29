@@ -1,0 +1,12 @@
+$OpenBSD$
+--- common/ECConfigImpl.cpp.orig	Fri Jun 29 22:13:28 2012
++++ common/ECConfigImpl.cpp	Fri Jun 29 22:14:01 2012
+@@ -385,7 +385,7 @@ bool ECConfigImpl::ReadConfigFile(const path_type &fil
+ 
+ 		if(!strName.empty()) {
+ 			// Save it
+-			configsetting_t setting = { strName.c_str(), strValue.c_str(), 0, ulGroup };
++			configsetting_t setting = { strName.c_str(), strValue.c_str(), 0, (short)(ulGroup) };
+ 			AddSetting(&setting, ulFlags);
+ 		}
+ 	}

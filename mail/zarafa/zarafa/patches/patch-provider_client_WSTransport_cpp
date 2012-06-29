@@ -1,7 +1,7 @@
-$OpenBSD: patch-provider_client_WSTransport_cpp,v 1.8 2011/12/22 17:10:04 ajacoutot Exp $
---- provider/client/WSTransport.cpp.orig	Thu Dec 22 01:02:35 2011
-+++ provider/client/WSTransport.cpp	Thu Dec 22 12:14:19 2011
-@@ -56,6 +56,10 @@
+$OpenBSD$
+--- provider/client/WSTransport.cpp.orig	Mon Jun 18 18:55:30 2012
++++ provider/client/WSTransport.cpp	Fri Jun 29 21:26:11 2012
+@@ -56,6 +56,14 @@
  
  #include <fstream>
  
@@ -9,23 +9,23 @@ $OpenBSD: patch-provider_client_WSTransport_cpp,v 1.8 2011/12/22 17:10:04 ajacou
 +#include <pthread.h>
 +#endif
 +
++#ifdef __Bitrig__
++#include <pthread.h>
++#endif
++
  #include "ECIConv.h"
  #include "WSTransport.h"
  #include "ProviderUtil.h"
-@@ -63,7 +67,6 @@
- #include "soapH.h"
- #include "ZarafaUtil.h"
- 
--
- // The header files we use for communication with the server
- #include "ZarafaCode.h"
- #include "soapZarafaCmdProxy.h"
-@@ -101,6 +104,10 @@ static char THIS_FILE[] = __FILE__;
+@@ -101,6 +109,14 @@ static char THIS_FILE[] = __FILE__;
  #endif
  
  #define	pbMUIDECSABGuid	"\xac\x21\xa9\x50\x40\xd3\xee\x48\xb3\x19\xfb\xa7\x53\x30\x44\x25"
 +
 +#ifdef __OpenBSD__
++#define PTHREAD_MUTEX_RECURSIVE_NP PTHREAD_MUTEX_RECURSIVE
++#endif
++
++#ifdef __Bitrig__
 +#define PTHREAD_MUTEX_RECURSIVE_NP PTHREAD_MUTEX_RECURSIVE
 +#endif
  

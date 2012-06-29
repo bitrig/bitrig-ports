@@ -1,11 +1,15 @@
-$OpenBSD: patch-gateway_Gateway_cpp,v 1.7 2011/06/02 12:46:37 ajacoutot Exp $
---- gateway/Gateway.cpp.orig	Wed Apr 20 19:51:46 2011
-+++ gateway/Gateway.cpp	Mon May  2 12:50:37 2011
-@@ -84,6 +84,10 @@
+$OpenBSD$
+--- gateway/Gateway.cpp.orig	Mon Jun 18 18:55:30 2012
++++ gateway/Gateway.cpp	Fri Jun 29 21:17:10 2012
+@@ -84,6 +84,14 @@
  
  #include "UnixUtil.h"
  
 +#ifdef __OpenBSD__
++#include <sys/resource.h>
++#endif
++
++#ifdef __Bitrig__
 +#include <sys/resource.h>
 +#endif
 +

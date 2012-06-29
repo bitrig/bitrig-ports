@@ -1,12 +1,23 @@
-$OpenBSD: patch-common_platform_linux_cpp,v 1.4 2010/06/30 02:46:48 ajacoutot Exp $
---- common/platform.linux.cpp.orig	Mon May 31 19:28:57 2010
-+++ common/platform.linux.cpp	Mon Jun 14 09:16:43 2010
-@@ -70,7 +70,7 @@
+$OpenBSD$
+--- common/platform.linux.cpp.orig	Mon Jun 18 18:55:29 2012
++++ common/platform.linux.cpp	Fri Jun 29 22:09:09 2012
+@@ -70,7 +70,9 @@
  #define ICONV_CONST const
  #elif OPENBSD
  // bsd
 -#define ICONV_CONST const
 +#define ICONV_CONST
++#elif BITRIG
++#define ICONV_CONST
  #else
  // linux
  #define ICONV_CONST
+@@ -96,7 +98,7 @@
+ 		return MAPI_E_INVALID_PARAMETER;
+ 
+ #if HAVE_UUID_CREATE
+-#ifdef OPENBSD
++#if defined(OPENBSD) || defined(BITRIG)
+ 	uuid_t *g = NULL;
+ 	void *vp = NULL;
+ 	size_t n = 0;

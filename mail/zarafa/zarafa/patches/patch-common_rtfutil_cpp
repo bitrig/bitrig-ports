@@ -1,0 +1,39 @@
+$OpenBSD$
+--- common/rtfutil.cpp.orig	Mon Jun 18 18:55:29 2012
++++ common/rtfutil.cpp	Thu Jun 28 05:19:40 2012
+@@ -291,7 +291,7 @@ HRESULT HrExtractHTMLFromRTF(std::string &lpStrRTFIn, 
+                     sState[ulState].szCharset = szANSICharset;
+ 				} else if(strcmp(szCommand,"fcharset") == 0) {
+ 					if(sState[ulState].bInFontTbl) {
+-						mapFontToCharset.insert(make_pair<int,int>(sState[ulState].ulFont, lArg));
++						mapFontToCharset.insert(make_pair<int,int>((int)(sState[ulState].ulFont), (int)(lArg)));
+ 					}
+ 				} else if(strcmp(szCommand,"htmltag") == 0) {
+ 				} else if(strcmp(szCommand,"mhtmltag") == 0) {
+@@ -543,7 +543,7 @@ HRESULT HrExtractHTMLFromTextRTF(std::string &lpStrRTF
+                     sState[ulState].szCharset = szANSICharset;
+ 				} else if(strcmp(szCommand,"fcharset") == 0) {
+ 					if(sState[ulState].bInFontTbl) {
+-						mapFontToCharset.insert(make_pair<int,int>(sState[ulState].ulFont, lArg));
++						mapFontToCharset.insert(make_pair<int,int>((int)(sState[ulState].ulFont), (int)(lArg)));
+ 					}
+ 				} else if(strcmp(szCommand,"htmltag") == 0) {
+ 				} else if(strcmp(szCommand,"mhtmltag") == 0) {
+@@ -852,7 +852,7 @@ HRESULT HrExtractHTMLFromRealRTF(std::string &lpStrRTF
+ 					sState[ulState].szCharset = szANSICharset;
+ 				} else if(strcmp(szCommand,"fcharset") == 0) {
+ 					if(sState[ulState].bInFontTbl) {
+-						mapFontToCharset.insert(make_pair<int,int>(sState[ulState].ulFont, lArg));
++						mapFontToCharset.insert(make_pair<int,int>((int)(sState[ulState].ulFont), (int)(lArg)));
+ 					}
+ 				} else if(strcmp(szCommand,"htmltag") == 0) {
+ 				} else if(strcmp(szCommand,"latentstyles") == 0) {
+@@ -1196,7 +1196,7 @@ HRESULT HrExtractBODYFromTextRTF(std::string &lpStrRTF
+ 					sState[ulState].szCharset = szANSICharset;
+ 				} else if(strcmp(szCommand,"fcharset") == 0) {
+ 					if(sState[ulState].bInFontTbl) {
+-						mapFontToCharset.insert(make_pair<int,int>(sState[ulState].ulFont, lArg));
++						mapFontToCharset.insert(make_pair<int,int>((int)(sState[ulState].ulFont), (int)(lArg)));
+ 					}
+ 				} else if(strcmp(szCommand,"htmltag") == 0) {
+ 				} else if(strcmp(szCommand,"mhtmltag") == 0) {
