@@ -1,0 +1,21 @@
+$OpenBSD$
+--- gas/configure.tgt.orig	Mon Jun 20 09:23:21 2011
++++ gas/configure.tgt	Sun Aug 12 17:41:10 2012
+@@ -116,6 +116,7 @@ case ${generic_target} in
+   arm-*-netbsdelf*)			fmt=elf  em=nbsd ;;
+   arm-*-*n*bsd*)			fmt=aout em=nbsd ;;
+   arm-*-nto*)				fmt=elf ;;
++  arm-*-openbsd* | arm-*-bitrig*)		fmt=elf  em=obsd ;;
+   arm-epoc-pe)				fmt=coff em=epoc-pe ;;
+   arm-wince-pe | arm-*-wince | arm*-*-mingw32ce* | arm*-*-cegcc*)
+ 					fmt=coff em=wince-pe ;;
+@@ -189,7 +190,8 @@ case ${generic_target} in
+     esac ;;
+   i386-*-openbsd[0-2].* | \
+   i386-*-openbsd3.[0-2])		fmt=aout em=nbsd ;;
+-  i386-*-openbsd*)			fmt=elf em=nbsd ;;
++  i386-*-openbsd*)			fmt=elf em=obsd ;;
++  i386-*-bitrig*)			fmt=elf em=obsd ;;
+   i386-*-linux*aout*)			fmt=aout em=linux ;;
+   i386-*-linux*oldld)			fmt=aout em=linux ;;
+   i386-*-linux*coff*)			fmt=coff em=linux ;;

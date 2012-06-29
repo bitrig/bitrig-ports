@@ -1,0 +1,33 @@
+$OpenBSD$
+--- ld/configure.tgt.orig	Mon Nov 21 04:29:37 2011
++++ ld/configure.tgt	Sun Aug 12 17:59:03 2012
+@@ -63,7 +63,10 @@ arm-*-netbsdelf*)	targ_emul=armelf_nbsd;
+ arm-*-netbsd*)		targ_emul=armnbsd;
+ 			targ_extra_emuls="armelf armelf_nbsd armelfb_nbsd"  ;;
+ arm-*-nto*)		targ_emul=armnto ;;
+-arm-*-openbsd*)		targ_emul=armnbsd ;;
++arm-*-openbsd* | \
++arm-*-bitrig*)		targ_emul=armelf_obsd ;;
++arm-*-bitrig*)		targ_emul=armelf_fbsd
++			targ_extra_emuls="armelf" ;;
+ arm-*-rtems*)		targ_emul=armelf ;;
+ armeb-*-elf)		targ_emul=armelfb ;;
+ arm-*-elf | arm*-*-eabi*)
+@@ -228,6 +231,17 @@ x86_64-*-netbsd*)	targ_emul=elf_x86_64
+ 			*)		tdir_elf_i386=`echo ${tdir_elf_i386} | \
+ 				        sed -e 's/netbsd/netbsdelf/'`;;
+ 			esac ;;
++i[3-7]86-*-openbsd*)	targ_emul=elf_i386_obsd ;;
++x86_64-*-openbsd*)	targ_emul=elf_x86_64_obsd
++			targ_extra_emuls="elf_i386_obsd elf_i386"
++			tdir_elf_i386_obsd=`echo ${targ_alias} | \
++			    sed -e 's/x86_64/i386/'`
++			;;
++i[3-7]86-*-bitrig*)	targ_emul=i386nbsd
++			targ_extra_emuls=elf_i386 ;;
++x86_64-*-bitrig*)	targ_emul=elf_x86_64
++			targ_extra_emuls="elf_i386 i386nbsd elf_l1om elf_k1om"
++			;;
+ i[3-7]86-*-netware)	targ_emul=i386nw ;;
+ i[3-7]86-*-elf*)	targ_emul=elf_i386 ;;
+ x86_64-*-elf*)		targ_emul=elf_x86_64

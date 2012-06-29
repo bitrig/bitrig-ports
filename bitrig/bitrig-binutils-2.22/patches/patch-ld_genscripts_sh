@@ -1,0 +1,36 @@
+$OpenBSD$
+--- ld/genscripts.sh.orig	Wed Dec 15 09:56:37 2010
++++ ld/genscripts.sh	Sun Aug 12 23:32:21 2012
+@@ -404,11 +404,32 @@ if test -n "$GENERATE_PIE_SCRIPT"; then
+       . ${srcdir}/scripttempl/${SCRIPT_NAME}.sc
+     ) | sed -e '/^ *$/d;s/[ 	]*$//' > ldscripts/${EMULATION_NAME}.xdw
+     rm -f ${COMBRELOC}
++    LD_FLAG=Zcpie
++    ( echo "/* Script for -pie -z combreloc, -Z: position independent executable, combine & sort relocs, no PLT/GOT padding */"
++      . ${CUSTOMIZER_SCRIPT} ${EMULATION_NAME}
++      . ${srcdir}/scripttempl/${SCRIPT_NAME}.sc
++    ) | sed -e '/^ *$/d;s/[    ]*$//' > ldscripts/${EMULATION_NAME}.xdcz
++    rm -f ${COMBRELOC}
+     COMBRELOC=
+     unset RELRO_NOW
+   fi
++  LD_FLAG=Zpie
++  ( echo "/* Script for -pie -z combreloc, -Z: position independent executable, no PLT/GOT padding */"
++    . ${CUSTOMIZER_SCRIPT} ${EMULATION_NAME}
++    . ${srcdir}/scripttempl/${SCRIPT_NAME}.sc
++  ) | sed -e '/^ *$/d;s/[    ]*$//' > ldscripts/${EMULATION_NAME}.xdz
++  rm -f ${COMBRELOC}
+   unset CREATE_PIE
+ fi
++
++LD_FLAG=Z
++DATA_ALIGNMENT=${DATA_ALIGNMENT_}
++RELOCATING=" "
++( echo "/* Script for -Z: traditional binaries with no PLT/GOT padding */"
++  . ${srcdir}/emulparams/${EMULATION_NAME}.sh
++  . ${srcdir}/scripttempl/${SCRIPT_NAME}.sc
++) | sed -e '/^ *$/d;s/[        ]*$//' > ldscripts/${EMULATION_NAME}.xz
++
+ 
+ if test -n "$GENERATE_AUTO_IMPORT_SCRIPT"; then
+   LD_FLAG=auto_import

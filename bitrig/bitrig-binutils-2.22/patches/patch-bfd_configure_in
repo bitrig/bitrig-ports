@@ -1,0 +1,30 @@
+$OpenBSD$
+--- bfd/configure.in.orig	Thu Jun 28 17:30:15 2012
++++ bfd/configure.in	Thu Jun 28 17:28:58 2012
+@@ -238,7 +238,7 @@ if test "${target}" = "${host}"; then
+ 	;;
+   arm-*-freebsd* | arm-*-kfreebsd*-gnu)
+ 	COREFILE='' ;;
+-  arm-*-netbsd* | arm-*-openbsd*)
++  arm-*-netbsd* | arm-*-openbsd* | arm-*-bitrig*)
+ 	COREFILE=netbsd-core.lo
+ 	;;
+   arm-*-riscix)		COREFILE=trad-core.lo ;;
+@@ -287,7 +287,7 @@ changequote([,])dnl
+ 	TRAD_HEADER='"hosts/i386bsd.h"'
+ 	;;
+ changequote(,)dnl
+-  i[3-7]86-*-netbsd* | i[3-7]86-*-knetbsd*-gnu | i[3-7]86-*-openbsd*)
++  i[3-7]86-*-netbsd* | i[3-7]86-*-knetbsd*-gnu | i[3-7]86-*-openbsd* | i[3-7]86-*-bitrig*)
+ changequote([,])dnl
+ 	COREFILE=netbsd-core.lo
+ 	;;
+@@ -457,7 +457,7 @@ changequote([,])dnl
+   x86_64-*-linux*)
+ 	CORE_HEADER='"hosts/x86-64linux.h"'
+ 	;;
+-  x86_64-*-netbsd* | x86_64-*-openbsd*)
++  x86_64-*-netbsd* | x86_64-*-openbsd* | x86_64-*-bitrig*)
+ 	COREFILE=netbsd-core.lo
+ 	;;
+   esac

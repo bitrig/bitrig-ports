@@ -1,0 +1,16 @@
+$OpenBSD$
+--- ld/ld.texinfo.orig	Sun Aug 12 18:25:32 2012
++++ ld/ld.texinfo	Sun Aug 12 18:19:40 2012
+@@ -1097,6 +1097,12 @@ Set the emulation common page size to @var{value}.
+ 
+ Other keywords are ignored for Solaris compatibility.
+ 
++@kindex -Z
++@item -Z
++Produce 'Standard' executables, disables Writable XOR Executable features
++in resulting binaries.
++
++
+ @kindex -(
+ @cindex groups of archives
+ @item -( @var{archives} -)

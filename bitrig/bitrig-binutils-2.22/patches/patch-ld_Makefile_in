@@ -1,0 +1,49 @@
+$OpenBSD$
+--- ld/Makefile.in.orig	Fri Jul 22 16:22:37 2011
++++ ld/Makefile.in	Mon Aug 13 00:02:59 2012
+@@ -450,6 +450,7 @@ ALL_EMULATION_SOURCES = \
+ 	earmelf_linux.c \
+ 	earmelf_linux_eabi.c \
+ 	earmelf_nbsd.c \
++	earmelf_obsd.c \
+ 	earmelf_vxworks.c \
+ 	earmelfb.c \
+ 	earmelfb_linux.c \
+@@ -566,6 +567,7 @@ ALL_EMULATION_SOURCES = \
+ 	eelf_i386_chaos.c \
+ 	eelf_i386_fbsd.c \
+ 	eelf_i386_ldso.c \
++	eelf_i386_obsd.c \
+ 	eelf_i386_sol2.c \
+ 	eelf_i386_vxworks.c \
+ 	eelf_s390.c \
+@@ -790,6 +792,7 @@ ALL_64_EMULATION_SOURCES = \
+ 	eelf_k1om_fbsd.c \
+ 	eelf_x86_64.c \
+ 	eelf_x86_64_fbsd.c \
++	eelf_x86_64_obsd.c \
+ 	eelf_x86_64_sol2.c \
+ 	ehppa64linux.c \
+ 	emmo.c \
+@@ -2161,6 +2164,11 @@ earmelf_nbsd.c: $(srcdir)/emulparams/armelf_nbsd.sh \
+   $(ELF_DEPS) $(srcdir)/emultempl/armelf.em \
+   $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
+ 	${GENSCRIPTS} armelf_nbsd "$(tdir_armelf_nbsd)"
++earmelf_obsd.c: $(srcdir)/emulparams/armelf_obsd.sh \
++  $(srcdir)/emulparams/armelf.sh \
++  $(ELF_DEPS) $(srcdir)/emultempl/armelf.em \
++  $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
++	${GENSCRIPTS} armelf_obsd "$(tdir_armelf_obsd)"
+ earmelf_vxworks.c: $(srcdir)/emulparams/armelf_vxworks.sh \
+   $(srcdir)/emulparams/vxworks.sh $(srcdir)/emulparams/armelf.sh \
+   $(ELF_DEPS) $(srcdir)/emultempl/vxworks.em \
+@@ -2783,6 +2791,9 @@ ei386nto.c:	$(srcdir)/emulparams/i386nto.sh \
+ ei386nw.c:	$(srcdir)/emulparams/i386nw.sh \
+   $(ELF_DEPS) $(srcdir)/scripttempl/nw.sc ${GEN_DEPENDS}
+ 	${GENSCRIPTS} i386nw "$(tdir_i386nw)"
++ei386obsd.c:   $(srcdir)/emulparams/i386obsd.sh \
++  $(srcdir)/emultempl/generic.em $(srcdir)/scripttempl/aout.sc ${GEN_DEPENDS}
++	${GENSCRIPTS} i386obsd "$(tdir_i386obsd)"
+ ei386pe.c: $(srcdir)/emulparams/i386pe.sh \
+   $(srcdir)/emultempl/pe.em $(srcdir)/scripttempl/pe.sc ${GEN_DEPENDS}
+ 	${GENSCRIPTS} i386pe "$(tdir_i386pe)"

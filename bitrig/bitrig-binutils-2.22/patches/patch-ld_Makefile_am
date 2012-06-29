@@ -1,0 +1,45 @@
+$OpenBSD$
+--- ld/Makefile.am.orig	Sun Aug 12 18:30:25 2012
++++ ld/Makefile.am	Sun Aug 12 18:30:54 2012
+@@ -144,6 +144,7 @@ ALL_EMULATION_SOURCES = \
+ 	earmelf_linux.c \
+ 	earmelf_linux_eabi.c \
+ 	earmelf_nbsd.c \
++	earmelf_obsd.c \
+ 	earmelf_vxworks.c \
+ 	earmelfb.c \
+ 	earmelfb_linux.c \
+@@ -735,6 +736,11 @@ earmelfb_nbsd.c: $(srcdir)/emulparams/armelfb_nbsd.sh 
+   $(ELF_DEPS) $(srcdir)/emultempl/armelf.em \
+   $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
+ 	${GENSCRIPTS} armelfb_nbsd "$(tdir_armelfb_nbsd)"
++earmelf_obsd.c: $(srcdir)/emulparams/armelf_obsd.sh \
++  $(srcdir)/emulparams/armelf.sh \
++  $(srcdir)/emultempl/elf32.em $(srcdir)/emultempl/armelf.em \
++  $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
++       ${GENSCRIPTS} armelf_obsd "$(tdir_armelf_obsd)"
+ earmnbsd.c:	$(srcdir)/emulparams/armnbsd.sh \
+   $(srcdir)/emultempl/generic.em $(srcdir)/scripttempl/aout.sc ${GEN_DEPENDS}
+ 	${GENSCRIPTS} armnbsd "$(tdir_armnbsd)"
+@@ -1187,6 +1193,10 @@ eelf_i386_fbsd.c: $(srcdir)/emulparams/elf_i386_fbsd.s
+ eelf_i386_ldso.c: $(srcdir)/emulparams/elf_i386_ldso.sh \
+   $(ELF_DEPS) $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
+ 	${GENSCRIPTS} elf_i386_ldso "$(tdir_elf_i386_ldso)"
++eelf_i386_obsd.c: $(srcdir)/emulparams/elf_i386_obsd.sh \
++  $(srcdir)/emulparams/elf_i386.sh \
++  $(srcdir)/emultempl/elf32.em $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
++       ${GENSCRIPTS} elf_i386_obsd "$(tdir_elf_i386_obsd)"
+ eelf_i386_sol2.c: $(srcdir)/emulparams/elf_i386_sol2.sh \
+   $(srcdir)/emulparams/solaris2.sh \
+   $(srcdir)/emultempl/solaris2.em \
+@@ -1997,6 +2007,10 @@ eelf_x86_64_fbsd.c: $(srcdir)/emulparams/elf_x86_64_fb
+   $(srcdir)/emulparams/elf_x86_64.sh \
+   $(ELF_DEPS) $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
+ 	${GENSCRIPTS} elf_x86_64_fbsd "$(tdir_elf_x86_64_fbsd)"
++eelf_x86_64_obsd.c: $(srcdir)/emulparams/elf_x86_64_obsd.sh \
++  $(srcdir)/emulparams/elf_x86_64.sh \
++  $(srcdir)/emultempl/elf32.em $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
++       ${GENSCRIPTS} elf_x86_64_obsd "$(tdir_elf_x86_64_obsd)"
+ eelf_x86_64_sol2.c: $(srcdir)/emulparams/elf_x86_64_sol2.sh \
+   $(srcdir)/emulparams/elf_x86_64.sh \
+   $(srcdir)/emulparams/solaris2.sh \

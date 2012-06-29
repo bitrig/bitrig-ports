@@ -1,0 +1,31 @@
+i386-unknown-bitrig0.1/
+i386-unknown-bitrig0.1/bin/
+@bin i386-unknown-bitrig0.1/bin/ar
+@bin i386-unknown-bitrig0.1/bin/as
+@bin i386-unknown-bitrig0.1/bin/ld
+@bin i386-unknown-bitrig0.1/bin/ld.bfd
+@bin i386-unknown-bitrig0.1/bin/nm
+@bin i386-unknown-bitrig0.1/bin/objcopy
+@bin i386-unknown-bitrig0.1/bin/objdump
+@bin i386-unknown-bitrig0.1/bin/ranlib
+@bin i386-unknown-bitrig0.1/bin/strip
+i386-unknown-bitrig0.1/lib/
+i386-unknown-bitrig0.1/lib/ldscripts/
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.x
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xc
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xdc
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xn
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xs
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xsw
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xw
+i386-unknown-bitrig0.1/lib/ldscripts/i386nbsd.xbn
+i386-unknown-bitrig0.1/lib/ldscripts/i386nbsd.xr
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xbn
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xd
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xdw
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xr
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xsc
+i386-unknown-bitrig0.1/lib/ldscripts/elf_i386.xu
+i386-unknown-bitrig0.1/lib/ldscripts/i386nbsd.x
+i386-unknown-bitrig0.1/lib/ldscripts/i386nbsd.xn
+i386-unknown-bitrig0.1/lib/ldscripts/i386nbsd.xu

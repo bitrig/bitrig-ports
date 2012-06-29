@@ -1,0 +1,24 @@
+arm-unknown-bitrig0.1/
+arm-unknown-bitrig0.1/bin/
+@bin arm-unknown-bitrig0.1/bin/ar
+@bin arm-unknown-bitrig0.1/bin/as
+@bin arm-unknown-bitrig0.1/bin/ld
+@bin arm-unknown-bitrig0.1/bin/ld.bfd
+@bin arm-unknown-bitrig0.1/bin/nm
+@bin arm-unknown-bitrig0.1/bin/objcopy
+@bin arm-unknown-bitrig0.1/bin/objdump
+@bin arm-unknown-bitrig0.1/bin/ranlib
+@bin arm-unknown-bitrig0.1/bin/strip
+arm-unknown-bitrig0.1/lib/
+arm-unknown-bitrig0.1/lib/ldscripts/
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.x
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.xbn
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.xc
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.xn
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.xr
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.xs
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.xsc
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.xsw
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.xu
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.xw
+arm-unknown-bitrig0.1/lib/ldscripts/armelf_obsd.xz

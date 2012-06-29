@@ -1,0 +1,12 @@
+$OpenBSD$
+--- ld/ldmain.c.orig	Sun Aug 12 18:25:06 2012
++++ ld/ldmain.c	Sun Aug 12 18:20:00 2012
+@@ -254,6 +254,8 @@ main (int argc, char **argv)
+   config.make_executable = TRUE;
+   config.magic_demand_paged = TRUE;
+   config.text_read_only = TRUE;
++  config.data_bss_contig = FALSE;
++
+ 
+   command_line.warn_mismatch = TRUE;
+   command_line.warn_search_mismatch = TRUE;

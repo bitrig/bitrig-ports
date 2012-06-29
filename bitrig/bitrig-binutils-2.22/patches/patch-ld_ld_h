@@ -1,0 +1,14 @@
+$OpenBSD$
+--- ld/ld.h.orig	Sun Aug 12 18:25:48 2012
++++ ld/ld.h	Sun Aug 12 18:19:23 2012
+@@ -286,6 +286,10 @@ typedef struct {
+ 
+   bfd_boolean text_read_only;
+ 
++  /* Classic ELF executable which has data and bss next to each
++     other with no padding for GOT/PLT. */
++  bfd_boolean data_bss_contig;
++
+   bfd_boolean stats;
+ 
+   /* If set, orphan input sections will be mapped to separate output
