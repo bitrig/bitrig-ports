@@ -1,6 +1,5 @@
-$OpenBSD: patch-configure,v 1.3 2010/09/22 08:42:53 landry Exp $
 --- configure.orig	Fri Jul 25 15:42:43 2008
-+++ configure	Mon Sep 13 22:31:04 2010
++++ configure	Thu Jul  5 22:47:50 2012
 @@ -1325,7 +1325,7 @@ myexec=$exec_prefix
  test "x$myprefix" = xNONE && myprefix=$ac_default_prefix
  test "x$myexec" = xNONE && myexec=${myprefix}
@@ -10,6 +9,15 @@ $OpenBSD: patch-configure,v 1.3 2010/09/22 08:42:53 landry Exp $
  cat >> confdefs.h <<EOF
  #define ABSEXECDIR "$myexec"
  EOF
+@@ -1521,7 +1521,7 @@ cat > conftest.$ac_ext << EOF
+ #line 1522 "configure"
+ #include "confdefs.h"
+ 
+-main(){return(0);}
++int main(){return(0);}
+ EOF
+ if { (eval echo configure:1527: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
+   ac_cv_prog_cc_works=yes
 @@ -3377,7 +3377,7 @@ if test X"$GXX" = Xyes; then
      fi
      ;;
@@ -28,3 +36,552 @@ $OpenBSD: patch-configure,v 1.3 2010/09/22 08:42:53 landry Exp $
  
  if test X"$use_opt" != Xno; then
    CXXFLAGS="$CONF_OPT_FLAGS $CXXFLAGS"
+@@ -7916,7 +7914,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -7958,7 +7956,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8000,7 +7998,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8042,7 +8040,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8084,7 +8082,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8126,7 +8124,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8168,7 +8166,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8210,7 +8208,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8252,7 +8250,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8294,7 +8292,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8336,7 +8334,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8378,7 +8376,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8422,7 +8420,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8464,7 +8462,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8506,7 +8504,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8548,7 +8546,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8590,7 +8588,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8632,7 +8630,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8674,7 +8672,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8716,7 +8714,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8758,7 +8756,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8800,7 +8798,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8842,7 +8840,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8884,7 +8882,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8928,7 +8926,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -8970,7 +8968,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9012,7 +9010,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9054,7 +9052,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9096,7 +9094,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9138,7 +9136,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9180,7 +9178,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9222,7 +9220,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9264,7 +9262,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9306,7 +9304,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9348,7 +9346,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9390,7 +9388,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9434,7 +9432,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9476,7 +9474,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9518,7 +9516,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9560,7 +9558,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9602,7 +9600,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9644,7 +9642,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9686,7 +9684,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9728,7 +9726,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9770,7 +9768,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9812,7 +9810,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9854,7 +9852,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9896,7 +9894,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9950,7 +9948,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -9992,7 +9990,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -10034,7 +10032,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -10076,7 +10074,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -10118,7 +10116,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -10160,7 +10158,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -10202,7 +10200,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -10244,7 +10242,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -10286,7 +10284,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -10328,7 +10326,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -10370,7 +10368,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -10412,7 +10410,7 @@ else
+ #include <stdlib.h>
+ #endif
+ #include <stdio.h>
+-main()
++int main()
+ {
+   FILE *f=fopen("conftestval", "w");
+   if (!f) exit(1);
+@@ -11918,7 +11916,7 @@ else
+ #endif
+ 
+ int
+-main()
++int main()
+ {
+ #define OPENSSL_THREAD_DEFINES
+ #undef THREADS
