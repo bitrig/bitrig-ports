@@ -24,6 +24,8 @@ MASTER_SITES=		${MASTER_SITE_GNU:=sed/}
 MODULES=		devel/gettext
 BUILD_DEPENDS=		devel/bison
 
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/build-aux
+
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--program-prefix=g
 USE_GMAKE=		Yes
