@@ -20,6 +20,8 @@ EXTRACT_SUFX =		.tar.xz
 
 MODULES =		devel/gettext
 
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/build-aux
+
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	--program-prefix=g \
 			--without-gmp
