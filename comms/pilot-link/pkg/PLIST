@@ -87,18 +87,18 @@ lib/libpisync.a
 lib/libpisync.la
 lib/pkgconfig/
 lib/pkgconfig/pilot-link.pc
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/5.10.1/
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/5.10.1/perllocal.pod
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/PDA/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/PDA/Pilot.pm
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/PDA/dump.pl
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/PDA/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/PDA/Pilot/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/PDA/Pilot/Pilot.bs
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/PDA/Pilot/autosplit.ix
+@comment libdata/perl5/${MACHINE_ARCH}-bitrig/
+@comment libdata/perl5/${MACHINE_ARCH}-bitrig/5.10.1/
+@comment libdata/perl5/${MACHINE_ARCH}-bitrig/5.10.1/perllocal.pod
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/PDA/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/PDA/Pilot.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/PDA/dump.pl
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/PDA/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/PDA/Pilot/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/PDA/Pilot/Pilot.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/PDA/Pilot/autosplit.ix
 @man man/man1/ietf2datebook.1
 @man man/man1/pilot-addresses.1
 @man man/man1/pilot-clip.1

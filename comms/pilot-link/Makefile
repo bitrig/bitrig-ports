@@ -40,7 +40,7 @@ CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/libpng"
 			LDFLAGS="-L${LOCALBASE}/lib -pthread" \
 			PTHREAD_CFLAGS="-pthread" \
 			PTHREAD_LIBS="-pthread" \
-			ac_cv_lib_png_main=yes
+			ac_cv_lib_png_main=yes lt_cv_path_LD="/usr/bin/"
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--with-libiconv=${LOCALBASE} \
 			--with-libpng=${LOCALBASE} \
