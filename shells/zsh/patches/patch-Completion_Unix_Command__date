@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Completion/Unix/Command/_date.orig	Fri Jul 13 12:25:27 2012
++++ Completion/Unix/Command/_date	Fri Jul 13 12:25:35 2012
+@@ -31,7 +31,7 @@ else
+ 	'-v:adjustment value'
+       )
+     ;;
+-    openbsd*)
++    openbsd* | bitrig*)
+       args=(
+ 	'-n[only set time on current machine]'
+ 	'-d:daylight saving time value'

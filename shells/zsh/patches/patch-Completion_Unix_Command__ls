@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Completion/Unix/Command/_ls.orig	Fri Jul 13 12:26:54 2012
++++ Completion/Unix/Command/_ls	Fri Jul 13 12:27:13 2012
+@@ -5,7 +5,7 @@ local arguments is_gnu
+ 
+ _pick_variant -r is_gnu gnu=gnu unix --help
+ 
+-if [[ "$OSTYPE" = (netbsd*|freebsd*|openbsd*|darwin*) && "$is_gnu" != gnu ]]; then
++if [[ "$OSTYPE" = (netbsd*|freebsd*|openbsd*|bitrig*|darwin*) && "$is_gnu" != gnu ]]; then
+   arguments=(
+     '(-A)-a[list entries starting with .]'
+     '(-a)-A[list all except . and ..]'

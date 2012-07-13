@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Completion/Unix/Command/_apm.orig	Fri Jul 13 12:24:18 2012
++++ Completion/Unix/Command/_apm	Fri Jul 13 12:25:16 2012
+@@ -26,7 +26,7 @@ elif [[ $OSTYPE == (freebsd|dragonfly)* ]]; then
+     '-Z[transition system into standby mode]' \
+     '-z[suspend the system]' && return
+ 
+-elif [[ $OSTYPE == openbsd* ]]; then
++elif [[ $OSTYPE == (openbsd|bitrig)* ]]; then
+   _arguments \
+     '-z[engage suspend mode]' \
+     '-S[engage stand-by mode]' \

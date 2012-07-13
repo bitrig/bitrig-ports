@@ -1,9 +1,9 @@
 $OpenBSD: patch-Completion_Unix_Command__find,v 1.2 2008/02/08 04:55:08 okan Exp $
---- Completion/Unix/Command/_find.orig	Thu Dec 13 15:04:47 2007
-+++ Completion/Unix/Command/_find	Thu Dec 13 15:13:49 2007
+--- Completion/Unix/Command/_find.orig	Fri Nov 30 16:57:00 2007
++++ Completion/Unix/Command/_find	Fri Jul 13 12:26:08 2012
 @@ -1,71 +1,40 @@
 -#compdef find
-+#compdef find (OpenBSD)
++#compdef find (Bitrig)
 +# Sebastian Stark <seb@todesplanet.de>
  
  _arguments \

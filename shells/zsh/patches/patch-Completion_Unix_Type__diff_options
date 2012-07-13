@@ -1,11 +1,11 @@
 $OpenBSD: patch-Completion_Unix_Type__diff_options,v 1.1 2006/10/19 13:44:51 naddy Exp $
---- Completion/Unix/Type/_diff_options.orig	Thu Sep 30 04:28:18 2004
-+++ Completion/Unix/Type/_diff_options	Wed Oct 11 14:23:55 2006
-@@ -120,9 +120,35 @@ else
+--- Completion/Unix/Type/_diff_options.orig	Sun Oct 18 14:42:43 2009
++++ Completion/Unix/Type/_diff_options	Fri Jul 13 12:22:50 2012
+@@ -119,9 +119,35 @@ else
          '-S+[set first file in comparison]:start with file:_files'
        )
      ;;
-+    openbsd*)
++    openbsd* | bitrig*)
 +      args=(
 +        '(-c -e -f -q -u -C -D -U)-n[produce an rcsdiff(1)-compatible diff]'
 +        '(-c -e -f -n -u -C -D -U)-q[only print a line when the files differ; does not produce a list of changes]'

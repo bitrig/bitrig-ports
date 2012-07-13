@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Completion/Unix/Command/_sysctl.orig	Fri Jul 13 12:27:46 2012
++++ Completion/Unix/Command/_sysctl	Fri Jul 13 12:27:55 2012
+@@ -33,7 +33,7 @@ case $OSTYPE in
+       '(-n -w -p -a *)-A[list all in table form]' \
+       '(-n -p -a -A)*:sysctl variable:_files -W /proc/sys'
+   ;;
+-  openbsd*)
++  openbsd* | openbsd*)
+     : ${(A)_cache_sysctlvars:=${${(f)"$(sysctl -a)"}%% *}}
+     _arguments -s -A "-*" \
+       '(-w -A *)-a[list all string and integer variables]' \

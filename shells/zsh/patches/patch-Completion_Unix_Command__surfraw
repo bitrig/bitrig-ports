@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Completion/Unix/Command/_surfraw.orig	Fri Jul 13 12:27:23 2012
++++ Completion/Unix/Command/_surfraw	Fri Jul 13 12:27:33 2012
+@@ -266,7 +266,7 @@ case $state in
+         [[ "$state" = dictword ]] && _wanted words expl 'dictionary word' \
+             compadd $(look "${PREFIX}") && ret=0
+       ;;
+-      netbsd|openbsd)
++      netbsd|openbsd|bitrig)
+         _arguments $args \
+           '-mail=-[search mailinglists]:enable:(no yes)' \
+           '-pr=-[query problem reports]:enable:(no yes)' && ret=0

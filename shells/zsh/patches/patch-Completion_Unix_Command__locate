@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Completion/Unix/Command/_locate.orig	Fri Jul 13 12:26:27 2012
++++ Completion/Unix/Command/_locate	Fri Jul 13 12:26:42 2012
+@@ -26,7 +26,7 @@ case $basename in
+     ;;
+ 
+     (*illegal option*)
+-    if [[ $OSTYPE == (freebsd|openbsd|dragonfly|darwin)* ]]; then
++    if [[ $OSTYPE == (freebsd|openbsd|bitrig|dragonfly|darwin)* ]]; then
+       ltype=bsd
+     else
+       ltype=$best_guess
