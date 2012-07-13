@@ -35,18 +35,19 @@ LIB_DEPENDS=	audio/flac \
 		audio/jack
 
 USE_GMAKE=	Yes
-USE_LIBTOOL=	Yes
+USE_LIBTOOL=	gnu
 
 BUILD_DEPENDS=	${MODGNU_AUTOCONF_DEPENDS} \
 		${MODGNU_AUTOMAKE_DEPENDS}
 # uses libtoolize
 BUILD_DEPENDS+=	devel/libtool
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/admin
 CONFIGURE_STYLE=	gnu
 AUTOCONF_VERSION=	2.60
 AUTOMAKE_VERSION=	1.9
 CONFIGURE=		/bin/sh ${WRKDIST}/admin/cvs.sh configure
-CONFIGURE_ENV=		PTHREAD_LIBS=-pthread
+CONFIGURE_ENV=		CC=gcc CXX=g++ LIBS=-pthread
 CONFIGURE_ARGS+=	--with-extra-includes=${LOCALBASE}/include \
 			--with-extra-libs=${LOCALBASE}/lib \
 			--with-jack \

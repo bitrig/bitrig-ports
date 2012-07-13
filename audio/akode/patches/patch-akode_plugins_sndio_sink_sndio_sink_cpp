@@ -1,0 +1,11 @@
+$OpenBSD$
+--- akode/plugins/sndio_sink/sndio_sink.cpp.orig	Thu Jul 12 11:58:47 2012
++++ akode/plugins/sndio_sink/sndio_sink.cpp	Thu Jul 12 11:59:09 2012
+@@ -25,6 +25,7 @@
+ #include "sndio_sink.h"
+ 
+ #include <iostream>
++#include <stdlib.h>
+ 
+ namespace aKode {
+ 

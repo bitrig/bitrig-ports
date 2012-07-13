@@ -1,0 +1,11 @@
+$OpenBSD$
+--- akode/lib/magic.cpp.orig	Thu Jul 12 11:57:39 2012
++++ akode/lib/magic.cpp	Thu Jul 12 11:57:58 2012
+@@ -22,6 +22,7 @@
+ #include "magic.h"
+ #include "file.h"
+ #include <iostream>
++#include <string.h>
+ using std::cerr;
+ 
+ namespace aKode {

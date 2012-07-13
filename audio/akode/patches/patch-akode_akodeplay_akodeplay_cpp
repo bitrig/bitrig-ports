@@ -1,0 +1,11 @@
+$OpenBSD$
+--- akode/akodeplay/akodeplay.cpp.orig	Thu Jul 12 11:59:47 2012
++++ akode/akodeplay/akodeplay.cpp	Thu Jul 12 12:00:03 2012
+@@ -30,6 +30,7 @@
+ #else
+   #include <unistd.h>
+ #endif
++#include <stdlib.h>
+ 
+ using namespace std;
+ using namespace aKode;
