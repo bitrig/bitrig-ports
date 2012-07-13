@@ -1,7 +1,16 @@
 $OpenBSD: patch-ldap_sdks_c-sdk_configure_in,v 1.2 2012/04/30 15:32:06 landry Exp $
 Fix typo.. doh
---- ldap/sdks/c-sdk/configure.in.orig	Wed Apr 25 19:45:57 2012
-+++ ldap/sdks/c-sdk/configure.in	Wed Apr 25 19:46:16 2012
+--- ldap/sdks/c-sdk/configure.in.orig	Fri Jun  1 12:20:03 2012
++++ ldap/sdks/c-sdk/configure.in	Thu Jun 14 13:41:44 2012
+@@ -1845,7 +1845,7 @@ mips-sony-newsos*)
+     _DEBUG_FLAGS="-gstabs"
+ 	;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     LD='$(CC)'
+     AC_DEFINE(XP_UNIX)
+     AC_DEFINE(OPENBSD)
 @@ -1854,9 +1854,9 @@ mips-sony-newsos*)
      CFLAGS="$CFLAGS -ansi -Wall"
      CXXFLAGS="$CXXFLAGS -ansi -Wall"
@@ -14,3 +23,12 @@ Fix typo.. doh
      fi
      DSO_CFLAGS=-fPIC
      USE_NSPR_THREADS=1
+@@ -2398,7 +2398,7 @@ if test -n "$USE_PTHREADS"; then
+             _PTHREAD_LDFLAGS=
+         fi
+ 	    ;;
+-    *-freebsd*|*-openbsd*|*-bsdi*|*-netbsd*)
++    *-freebsd*|*-openbsd*|*-bsdi*|*-netbsd*|*-bitrig*)
+ 	    AC_DEFINE(_THREAD_SAFE)
+ 	    dnl -pthread links in -lc_r, so don't specify it explicitly.
+ 	    if test "$ac_cv_have_dash_pthread" = "yes"; then

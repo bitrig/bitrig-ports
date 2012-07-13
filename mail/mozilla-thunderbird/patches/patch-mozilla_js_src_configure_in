@@ -1,11 +1,13 @@
 $OpenBSD: patch-mozilla_js_src_configure_in,v 1.11 2012/06/11 15:33:26 landry Exp $
---- mozilla/js/src/configure.in.orig	Fri May 18 06:10:47 2012
-+++ mozilla/js/src/configure.in	Fri May 18 09:27:57 2012
-@@ -2583,7 +2583,12 @@ ia64*-hpux*)
+--- mozilla/js/src/configure.in.orig	Fri Jun  1 12:19:23 2012
++++ mozilla/js/src/configure.in	Fri Jun 15 16:10:37 2012
+@@ -2582,8 +2582,13 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
- *-openbsd*)
+-*-openbsd*)
 -    DLL_SUFFIX=".so.1.0"
++*-openbsd*|*-bitrig*)
 +    if test "$SO_VERSION"; then
 +        DLL_SUFFIX=".so.$SO_VERSION"
 +    else
@@ -15,14 +17,23 @@ $OpenBSD: patch-mozilla_js_src_configure_in,v 1.11 2012/06/11 15:33:26 landry Ex
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
      DSO_LDOPTS='-shared -fPIC'
-@@ -2871,6 +2876,10 @@ mips*-*)
-     ENABLE_METHODJIT_TYPED_ARRAY=1
+@@ -2872,6 +2877,10 @@ mips*-*)
      AC_DEFINE(JS_CPU_MIPS)
      AC_DEFINE(JS_NUNBOX32)
-+    ;;
+     ;;
 +sparc64-*)
 +    AC_DEFINE(AVMPLUS_SPARC)
 +    AC_DEFINE(AVMPLUS_64BIT)
-     ;;
++    ;;
  esac
  
+ MOZ_ARG_DISABLE_BOOL(methodjit,
+@@ -3419,7 +3428,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bsdi*|*-*-bitrig*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.

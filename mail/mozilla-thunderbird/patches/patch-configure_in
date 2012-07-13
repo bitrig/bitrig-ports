@@ -1,0 +1,21 @@
+$OpenBSD$
+--- configure.in.orig	Thu Jun 14 12:05:14 2012
++++ configure.in	Thu Jun 14 12:05:49 2012
+@@ -2407,7 +2407,7 @@ ia64*-hpux*)
+ 	esac
+ 	;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     if test "$SO_VERSION"; then
+         DLL_SUFFIX=".so.$SO_VERSION"
+     else
+@@ -3359,7 +3359,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bsdi*|*-*-bitrig*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.

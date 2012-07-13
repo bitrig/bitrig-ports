@@ -1,4 +1,5 @@
 # $OpenBSD: Makefile,v 1.152 2012/06/17 07:46:23 landry Exp $
+USE_GMAKE = Yes
 
 COMMENT-main =		Mozilla e-mail, rss and usenet client
 COMMENT-lightning =	Mozilla Thunderbird calendar extension
@@ -54,7 +55,18 @@ MODPY_RUNDEP =	No
 # Regression tests are too hard to adapt to run here
 NO_REGRESS =	Yes
 
-MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/ldap/sdks/c-sdk/config/autoconf
+CC=gcc
+CXX=g++
+
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/mozilla/js/src/ctypes/libffi/ \
+				${WRKSRC}/mozilla/modules/freetype2/builds/unix/ \
+				${WRKSRC}/mozilla/js/src/build/autoconf/ \
+				${WRKSRC}/mozilla/ipc/chromium/src/third_party/libevent/ \
+				${WRKSRC}/mozilla/build/autoconf/ \
+				${WRKSRC}/mozilla/nsprpub/build/autoconf/ \
+				${WRKSRC}/mozilla/toolkit/crashreporter/google-breakpad/autotools \
+				${WRKSRC}/build/autoconf/ \
+				${WRKSRC}/ldap/sdks/c-sdk/config/autoconf/
 
 CONFIGURE_STYLE =	autoconf no-autoheader
 CONFIGURE_ARGS +=	--enable-official-branding
@@ -66,6 +78,8 @@ WANTLIB +=	event
 SEPARATE_BUILD =	Yes
 # XXX solved in firefox by patch-config-autoconf_mk_in ?
 CONFIGURE_ENV +=	CPPFLAGS=-I${X11BASE}/include
+CONFIGURE_ENV +=	ac_cv_thread_keyword=no
+#CONFIGURE_ENV +=	ac_cv_thread_keyword=no ac_cv_visibility_hidden=no ac_cv_visibility_default=no ac_cv_visibility_pragma=no
 
 # XXX needed since 10.0b4, relocation overflow otherwise...
 # replaces -g by -Os
@@ -110,7 +124,7 @@ GNU_ARCH =	${MACHINE_ARCH:S/amd64/x86_64/}
 GUIDS =	gdata-provider {a62ef8ec-5fdc-40c2-873c-223b8a6925cc} \
 	lightning {e2fda1a4-762b-4020-b5ad-a41df1933103} \
 	calendar-timezones calendar-timezones@mozilla.org \
-	../bin/enigmail-1.5-openbsd-${GNU_ARCH} {847b3a00-7ab1-11d4-8f02-006008948af5}
+	../bin/enigmail-1.5-bitrig-${GNU_ARCH} {847b3a00-7ab1-11d4-8f02-006008948af5}
 
 EXTDIR =	${PREFIX}/lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/extensions/
 post-install:

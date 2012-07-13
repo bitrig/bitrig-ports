@@ -1,6 +1,6 @@
 $OpenBSD: patch-mozilla_build_unix_mozilla_in,v 1.3 2011/12/08 02:25:59 nigel Exp $
---- mozilla/build/unix/mozilla.in.orig	Sat Nov  5 09:20:24 2011
-+++ mozilla/build/unix/mozilla.in	Tue Nov  8 15:36:39 2011
+--- mozilla/build/unix/mozilla.in.orig	Fri Jun  1 12:19:12 2012
++++ mozilla/build/unix/mozilla.in	Thu Jun 14 10:12:04 2012
 @@ -50,6 +50,11 @@
  #uncomment for debugging
  #set -x
@@ -18,11 +18,11 @@ $OpenBSD: patch-mozilla_build_unix_mozilla_in,v 1.3 2011/12/08 02:25:59 nigel Ex
    esac
  done
 +
-+if [ `${X11BASE}/bin/fc-list | wc -l` -eq 0 ]; then
++if [ `/usr/X11R6/bin/fc-list | wc -l` -eq 0 ]; then
 +	export GDK_USE_XFT=0
 +fi
 +
-+export MOZ_PLUGIN_PATH=${MOZ_PLUGIN_PATH:=${LOCALBASE}/lib/mozilla-plugins}
++export MOZ_PLUGIN_PATH=${MOZ_PLUGIN_PATH:=/usr/local/lib/mozilla-plugins}
  
  if [ $debugging = 1 ]
  then

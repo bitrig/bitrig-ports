@@ -1,0 +1,12 @@
+$OpenBSD$
+--- mozilla/config/config.mk.orig	Thu Jun 14 11:56:49 2012
++++ mozilla/config/config.mk	Thu Jun 14 11:56:55 2012
+@@ -130,7 +130,7 @@ endif
+ # but save the version to allow multiple versions of the same base
+ # platform to be built in the same tree.
+ #
+-ifneq (,$(filter FreeBSD HP-UX Linux NetBSD OpenBSD OSF1 SunOS,$(OS_ARCH)))
++ifneq (,$(filter FreeBSD HP-UX Linux NetBSD OpenBSD Bitrig OSF1 SunOS,$(OS_ARCH)))
+ OS_RELEASE	:= $(basename $(OS_RELEASE))
+ 
+ # Allow the user to ignore the OS_VERSION, which is usually irrelevant.

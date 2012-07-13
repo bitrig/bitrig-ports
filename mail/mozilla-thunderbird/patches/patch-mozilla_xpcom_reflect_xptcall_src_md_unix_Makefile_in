@@ -1,7 +1,41 @@
 $OpenBSD: patch-mozilla_xpcom_reflect_xptcall_src_md_unix_Makefile_in,v 1.6 2012/03/16 21:35:25 landry Exp $
---- mozilla/xpcom/reflect/xptcall/src/md/unix/Makefile.in.orig	Fri Mar  9 21:29:51 2012
-+++ mozilla/xpcom/reflect/xptcall/src/md/unix/Makefile.in	Sat Mar 10 13:20:45 2012
-@@ -197,7 +197,7 @@ endif
+--- mozilla/xpcom/reflect/xptcall/src/md/unix/Makefile.in.orig	Fri Jun  1 12:19:53 2012
++++ mozilla/xpcom/reflect/xptcall/src/md/unix/Makefile.in	Fri Jun 15 05:58:38 2012
+@@ -82,7 +82,7 @@ endif
+ endif
+ endif
+ 
+-ifneq (,$(filter NetBSD OpenBSD BSD_OS GNU,$(OS_ARCH)))
++ifneq (,$(filter NetBSD OpenBSD Bitrig BSD_OS GNU,$(OS_ARCH)))
+ ifeq (86,$(findstring 86,$(OS_TEST)))
+ CPPSRCS		:= xptcinvoke_gcc_x86_unix.cpp xptcstubs_gcc_x86_unix.cpp
+ endif
+@@ -109,12 +109,24 @@ ASFILES		:= xptcstubs_asm_ipf64.s xptcinvoke_asm_ipf64
+ endif
+ endif
+ #
++# Bitrig/amd64
++#
++ifeq ($(OS_ARCH)$(OS_TEST),Bitrigx86_64)
++CPPSRCS		:= xptcinvoke_amd64_openbsd.cpp xptcstubs_amd64_openbsd.cpp
++endif
++#
+ # OpenBSD/amd64
+ #
+ ifeq ($(OS_ARCH)$(OS_TEST),OpenBSDx86_64)
+ CPPSRCS		:= xptcinvoke_amd64_openbsd.cpp xptcstubs_amd64_openbsd.cpp
+ endif
+ #
++# Bitrig/amd64
++#
++ifeq ($(OS_ARCH)$(OS_TEST),Bitrigx86_64)
++CPPSRCS		:= xptcinvoke_amd64_openbsd.cpp xptcstubs_amd64_openbsd.cpp
++endif
++#
+ # Neutrino/Intel (uses the same unixish_x86 code)
+ #
+ ifeq ($(OS_TARGET),NTO)
+@@ -197,7 +209,7 @@ endif
  #
  # OpenBSD/ARM
  #

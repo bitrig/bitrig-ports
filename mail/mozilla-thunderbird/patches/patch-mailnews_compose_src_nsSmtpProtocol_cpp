@@ -1,0 +1,12 @@
+$OpenBSD$
+--- mailnews/compose/src/nsSmtpProtocol.cpp.orig	Thu Jun 14 18:47:23 2012
++++ mailnews/compose/src/nsSmtpProtocol.cpp	Thu Jun 14 18:47:49 2012
+@@ -104,7 +104,7 @@ static PRLogModuleInfo *SMTPLogModule = nsnull;
+ ///////////////////////////////////////////////////////////////////////////////////////////
+ 
+ /* based on in NET_ExplainErrorDetails in mkmessag.c */
+-nsresult nsExplainErrorDetails(nsISmtpUrl * aSmtpUrl, int code, ...)
++nsresult nsExplainErrorDetails(nsISmtpUrl * aSmtpUrl, int64_t code, ...)
+ {
+   NS_ENSURE_ARG(aSmtpUrl);
+ 

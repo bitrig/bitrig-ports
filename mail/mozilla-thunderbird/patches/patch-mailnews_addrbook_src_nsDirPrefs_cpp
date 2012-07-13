@@ -1,0 +1,21 @@
+$OpenBSD$
+--- mailnews/addrbook/src/nsDirPrefs.cpp.orig	Thu Jun 14 18:37:23 2012
++++ mailnews/addrbook/src/nsDirPrefs.cpp	Thu Jun 14 18:42:07 2012
+@@ -94,7 +94,7 @@ static DIR_PrefId  DIR_AtomizePrefName(const char *pre
+ 
+ #define DIR_POS_APPEND                     0x80000000
+ #define DIR_POS_DELETE                     0x80000001
+-static bool DIR_SetServerPosition(nsVoidArray *wholeList, DIR_Server *server, PRInt32 position);
++static bool DIR_SetServerPosition(nsVoidArray *wholeList, DIR_Server *server, PRInt64 position);
+ 
+ /* These two routines should be called to initialize and save 
+  * directory preferences from the XP Java Script preferences
+@@ -366,7 +366,7 @@ static void DIR_InitServer(DIR_Server *server, Directo
+  *
+  * Returns true if the server list was re-sorted.
+  */
+-static bool DIR_SetServerPosition(nsVoidArray *wholeList, DIR_Server *server, PRInt32 position)
++static bool DIR_SetServerPosition(nsVoidArray *wholeList, DIR_Server *server, PRInt64 position)
+  {
+    NS_ENSURE_TRUE(wholeList, false);
+ 

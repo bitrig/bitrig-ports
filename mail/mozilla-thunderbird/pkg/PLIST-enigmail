@@ -28,7 +28,7 @@ lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-00
 lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/modules/subprocess_worker_unix.js
 lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/modules/subprocess_worker_win.js
 lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/
-lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/OpenBSD/
-lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/OpenBSD/components/
-@lib lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/OpenBSD/components/libenigmime.so.${LIBenigmime_VERSION}
-@lib lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/OpenBSD/components/libipc.so.${LIBipc_VERSION}
+lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig/
+lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig/components/
+@lib lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig/components/libenigmime.so.${LIBenigmime_VERSION}
+@lib lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig/components/libipc.so.${LIBipc_VERSION}

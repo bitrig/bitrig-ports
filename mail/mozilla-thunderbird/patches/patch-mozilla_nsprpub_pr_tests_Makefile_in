@@ -1,0 +1,25 @@
+$OpenBSD$
+--- mozilla/nsprpub/pr/tests/Makefile.in.orig	Fri Jun 15 10:14:06 2012
++++ mozilla/nsprpub/pr/tests/Makefile.in	Fri Jun 15 10:14:21 2012
+@@ -421,6 +421,12 @@ endif
+ LDOPTS += -Xlinker -R $(ABSOLUTE_LIB_DIR)
+ endif
+ 
++ifeq ($(OS_ARCH),Bitrig)
++ifeq ($(USE_PTHREADS),1)
++LDOPTS += -pthread
++endif
++endif
++
+ ifeq ($(OS_ARCH),OpenBSD)
+ ifeq ($(USE_PTHREADS),1)
+ LDOPTS += -pthread
+@@ -442,7 +448,7 @@ LIBPTHREAD = -lpthread
+ ifeq ($(OS_ARCH),AIX)
+ LIBPTHREAD = -lpthreads
+ endif
+-ifeq (,$(filter-out FreeBSD OpenBSD BSD_OS QNX Darwin OpenUNIX,$(OS_ARCH)))
++ifeq (,$(filter-out FreeBSD OpenBSD Bitrig BSD_OS QNX Darwin OpenUNIX,$(OS_ARCH)))
+ LIBPTHREAD =
+ endif
+ ifeq ($(OS_ARCH)$(basename $(OS_RELEASE)),HP-UXB.10)

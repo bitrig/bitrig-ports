@@ -1,0 +1,23 @@
+$OpenBSD$
+--- ldap/sdks/c-sdk/ldap/libraries/libldap/Makefile.in.orig	Thu Jun 14 13:37:10 2012
++++ ldap/sdks/c-sdk/ldap/libraries/libldap/Makefile.in	Thu Jun 14 13:37:33 2012
+@@ -266,6 +266,10 @@ ifeq ($(OS_ARCH), OpenBSD)
+ EXTRA_LIBS = -L$(dist_libdir) -l$(LBER_LIBNAME) -pthread
+ endif
+ 
++ifeq ($(OS_ARCH), Bitrig)
++EXTRA_LIBS = -L$(dist_libdir) -l$(LBER_LIBNAME) -pthread
++endif
++
+ ifeq ($(OS_ARCH), DragonFly)
+ EXTRA_LIBS = -L$(dist_libdir) -l$(LBER_LIBNAME)
+ endif
+@@ -327,7 +331,7 @@ $(LIBLDAP): $(OBJS) $(LIBDIR) $(LDAP_EXPORT_DEFS)
+ ifdef SO_FILES_TO_REMOVE
+ 	-$(RM) $(SO_FILES_TO_REMOVE)
+ endif
+-ifneq (,$(filter AIX Linux HP-UX Darwin BeOS QNX NetBSD OSF1 OpenBSD, $(OS_ARCH)))
++ifneq (,$(filter AIX Linux HP-UX Darwin BeOS QNX NetBSD OSF1 OpenBSD Bitrig, $(OS_ARCH)))
+ 	$(LINK_LIB)
+ else
+ ifeq ($(OS_ARCH),OS2)

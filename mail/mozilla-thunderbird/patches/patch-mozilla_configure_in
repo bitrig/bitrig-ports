@@ -1,0 +1,30 @@
+$OpenBSD$
+--- mozilla/configure.in.orig	Thu Jun 14 12:11:32 2012
++++ mozilla/configure.in	Thu Jun 14 12:12:02 2012
+@@ -2810,7 +2810,7 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
+     ;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     if test "$SO_VERSION"; then
+         DLL_SUFFIX=".so.$SO_VERSION"
+     else
+@@ -3452,7 +3452,7 @@ dnl Checks for header files.
+ dnl ========================================================
+ AC_HEADER_DIRENT
+ case "$target_os" in
+-freebsd*|openbsd*)
++freebsd*|openbsd*|bitrig*)
+ # for stuff like -lXshm
+     CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
+     ;;
+@@ -3746,7 +3746,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bsdi*|*-*-bitrig*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.
