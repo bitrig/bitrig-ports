@@ -55,7 +55,7 @@ LIB_DEPENDS=	audio/faad \
 		graphics/vcdimager
 
 USE_GMAKE=	Yes
-USE_LIBTOOL=	Yes
+USE_LIBTOOL=	gnu
 USE_GROFF=	Yes
 CONFIGURE_STYLE= autoconf
 AUTOCONF_VERSION= 2.69
