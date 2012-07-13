@@ -22,6 +22,7 @@ MASTER_SITES=		ftp://ftp.gnupg.org/gcrypt/gpgme/
 EXTRACT_SUFX=		.tar.bz2
 
 CONFIGURE_STYLE=	gnu
+CONFIGURE_ENV=		CC=gcc CXX=g++
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--with-gpg=${LOCALBASE}/bin/gpg \
 			--with-gpgsm=no \
