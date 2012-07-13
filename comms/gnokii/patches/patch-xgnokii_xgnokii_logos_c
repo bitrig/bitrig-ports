@@ -1,0 +1,12 @@
+$OpenBSD$
+--- xgnokii/xgnokii_logos.c.orig	Thu Jul 12 11:09:35 2012
++++ xgnokii/xgnokii_logos.c	Thu Jul 12 11:09:47 2012
+@@ -1301,7 +1301,7 @@ gint LogoTypeEvent(GtkWidget * widget)
+ 	return 0;
+ }
+ 
+-inline void CloseLogosWindow(void)
++void CloseLogosWindow(void)
+ {
+ 	gtk_widget_hide(GUI_LogosWindow);
+ }

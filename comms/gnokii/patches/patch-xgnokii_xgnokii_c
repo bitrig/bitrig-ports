@@ -1,0 +1,12 @@
+$OpenBSD$
+--- xgnokii/xgnokii.c.orig	Thu Jul 12 11:11:47 2012
++++ xgnokii/xgnokii.c	Thu Jul 12 11:12:03 2012
+@@ -810,7 +810,7 @@ inline void GUI_ShowAbout(void)
+ }
+ 
+ 
+-inline void GUI_HideAbout(void)
++void GUI_HideAbout(void)
+ {
+ 	gtk_widget_hide(AboutDialog);
+ }

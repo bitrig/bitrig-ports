@@ -1,0 +1,12 @@
+$OpenBSD$
+--- xgnokii/xgnokii_data.c.orig	Thu Jul 12 11:10:53 2012
++++ xgnokii/xgnokii_data.c	Thu Jul 12 11:11:17 2012
+@@ -65,7 +65,7 @@ static void UpdateStatus(void)
+ }
+ 
+ 
+-inline void GUI_ShowData(void)
++void GUI_ShowData(void)
+ {
+ 	if (!phoneMonitor.supported & PM_DATA)
+ 		return;
