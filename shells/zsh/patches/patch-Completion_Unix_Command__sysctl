@@ -6,7 +6,7 @@ $OpenBSD$
        '(-n -p -a -A)*:sysctl variable:_files -W /proc/sys'
    ;;
 -  openbsd*)
-+  openbsd* | openbsd*)
++  openbsd* | bitrig*)
      : ${(A)_cache_sysctlvars:=${${(f)"$(sysctl -a)"}%% *}}
      _arguments -s -A "-*" \
        '(-w -A *)-a[list all string and integer variables]' \
