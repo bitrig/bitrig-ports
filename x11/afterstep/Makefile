@@ -37,7 +37,11 @@ LIB_DEPENDS=	x11/dbus \
 
 FAKE=		lib
 USE_GROFF =	Yes
-CONFIGURE_STYLE= gnu
+CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST} \
+				${WRKDIST}/autoconf \
+				${WRKDIST}/libAfterBase \
+				${WRKDIST}/libAfterImage
 CONFIGURE_ARGS=	--with-helpcommand="urxvt -e man" \
 		--with-jpeg-includes=${LOCALBASE}/include \
 		--with-jpeg-library=${LOCALBASE}/lib \
@@ -49,6 +53,8 @@ CONFIGURE_ARGS=	--with-helpcommand="urxvt -e man" \
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		CFLAGS+="${CFLAGS} -fsigned-char"
+
+CC =		cc
 
 NO_REGRESS=	Yes
 
