@@ -165,15 +165,15 @@ lib/pkgconfig/Magick++.pc
 lib/pkgconfig/MagickCore.pc
 lib/pkgconfig/MagickWand.pc
 lib/pkgconfig/Wand.pc
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/Image/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/Image/Magick.pm
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Image/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Image/Magick/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Image/Magick/Magick.bs
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Image/Magick/Magick.so
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Image/Magick/autosplit.ix
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/Image/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/Image/Magick.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Image/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Image/Magick/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Image/Magick/Magick.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Image/Magick/Magick.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Image/Magick/autosplit.ix
 @man man/man1/ImageMagick.1
 @man man/man1/Magick++-config.1
 @man man/man1/Magick-config.1

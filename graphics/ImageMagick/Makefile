@@ -32,7 +32,7 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB =		c bz2>=10 djvulibre fftw3 jasper>=1 jbig>=1.2 jpeg \
-			lcms2 lzma ltdl m perl png>=4 pthread stdc++ \
+			lcms lzma ltdl m perl png>=4 pthread stdc++ \
 			tiff>=36 z ICE SM X11 Xext Xt expat fontconfig \
 			freetype wmflite-0.2 wmf-0.2 xcb xml2>=9
 
@@ -61,6 +61,7 @@ ALL_TARGET=		all perl-build
 USE_LIBTOOL=		Yes
 USE_GROFF =		Yes
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKDIST}/config
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED}
 CONFIGURE_ARGS+=	--with-quantum-depth=16 \
 			--with-wmf \
