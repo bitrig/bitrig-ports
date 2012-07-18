@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.163 2012/06/18 11:46:40 jasper Exp $
+# $OpenBSD: Makefile,v 1.166 2012/07/12 12:04:38 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -10,6 +10,9 @@ GNOME_VERSION=		3.4.3
 
 PKGNAME-main=		${DISTNAME}
 PKGNAME-plugins=	evolution-plugins-${GNOME_VERSION}
+
+REVISION-main=		0
+REVISION-plugins=	0
 
 # NOTE: when R changes, increment EVO_VERSION accordingly and bump:
 # mail/evolution-ews
@@ -127,7 +130,7 @@ MODGCONF2_SCHEMAS_DIR=	evolution
 
 YACC=			bison
 
-AUTOCONF_VERSION=	2.68
+AUTOCONF_VERSION=	2.69
 AUTOMAKE_VERSION=	1.9
 CONFIGURE_STYLE=	autoconf
 MODGNOME_CPPFLAGS=	-I${X11BASE}/include -DBOGOFILTER_BINARY="\\\"${LOCALBASE}/bin/bogofilter\\\""
@@ -137,19 +140,13 @@ MODGNOME_LDFLAGS=	-L${X11BASE}/lib -Wl,-rpath,${TRUEPREFIX}/lib/evolution/${R}:$
 CONFIGURE_ARGS=		--disable-static \
 			--enable-plugins=all \
 			--disable-nm \
-			--disable-sens \
 			--disable-connman \
 			--disable-mono \
 			--disable-python \
-			--disable-contact-maps \
-			--without-clutter \
 			--with-openldap="${LOCALBASE}" \
 			--with-sub-version=" OpenBSD/Ports" \
 			--with-krb5=/usr \
 			--with-krb5-includes=/usr/include/kerberosV
-
-# no gtkimageview release for gtk+3
-CONFIGURE_ARGS+=	--disable-image-inline
 
 FAKE_FLAGS=		autostartdir=${PREFIX}/share/examples/evolution/xdg/autostart
 

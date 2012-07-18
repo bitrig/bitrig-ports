@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.95 2012/06/15 08:30:19 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.98 2012/07/16 08:13:45 jasper Exp $
 
 COMMENT= 		Telepathy based messenger for GNOME
 
 GNOME_PROJECT=		empathy
-GNOME_VERSION=		3.2.2
-REVISION=		6
+GNOME_VERSION=		3.4.2
+REVISION=		1
 
 CATEGORIES=		net
 
@@ -35,6 +35,9 @@ WANTLIB += pulse pulse-mainloop-glib smime3 sndfile softokn3 soup-2.4
 WANTLIB += sqlite3 ssl3 stdc++ tasn1 telepathy-farstream telepathy-glib
 WANTLIB += telepathy-logger vorbis vorbisfile webkitgtk-3.0 xcb
 WANTLIB += xcb-render xcb-shm xml2 xslt z farstream-0.1
+WANTLIB += champlain-0.12 champlain-gtk-0.12 clutter-1.0 clutter-gst-1.0
+WANTLIB += clutter-gtk-1.0 cogl cogl-pango gstbasevideo-0.10 gsttag-0.10
+WANTLIB += json-glib-1.0 soup-gnome-2.4
 
 MODULES=		devel/dconf \
 			devel/gettext \
@@ -42,11 +45,13 @@ MODULES=		devel/dconf \
 			x11/gnome
 
 BUILD_DEPENDS=		devel/gsettings-desktop-schemas \
-			devel/iso-codes
-#XXX see below		x11/gnome/nautilus-sendto
+			devel/iso-codes \
+			x11/gnome/nautilus-sendto
 LIB_DEPENDS=		audio/libcanberra,-gtk3 \
 			audio/pulseaudio>=2.0 \
 			geo/geoclue \
+			geo/libchamplain>=0.12.2 \
+			graphics/clutter/clutter-gst>=1.6.0 \
 			net/telepathy/folks \
 			net/telepathy/telepathy-farstream \
 			net/telepathy/telepathy-logger \
@@ -59,6 +64,7 @@ RUN_DEPENDS=		devel/gsettings-desktop-schemas \
 			net/telepathy/telepathy-gabble \
 			net/telepathy/telepathy-idle \
 			net/telepathy/telepathy-salut \
+			x11/gnome/contacts \
 			x11/gnome/icon-theme
 
 MODGNOME_DESKTOP_FILE=	Yes
@@ -67,31 +73,16 @@ MODGNOME_TOOLS= 	yelp
 
 MODGNOME_LDFLAGS=	-Wl,-rpath,${LOCALBASE}/lib/pulseaudio
 
-AUTOCONF_VERSION=	2.67
-
-CONFIGURE_STYLE=	autoconf
-CONFIGURE_ARGS+=	--enable-spell \
-			--enable-location \
-			--enable-goa \
-			--disable-control-center-embedding \
-			--disable-geocode \
-			--disable-gudev \
+CONFIGURE_ARGS+=	--disable-gudev \
 			--disable-Werror \
 			--with-eds \
-			--with-ca-file=/etc/ssl/cert.pem \
 			--without-cheese
+
+# XXX needs geocode-glib
+CONFIGURE_ARGS +=	--disable-geocode
 
 # needs connman or network-manager
 CONFIGURE_ARGS+=	--without-connectivity
-
-# XXX: Disable map plugin as this requires libchamplain (+clutter)
-CONFIGURE_ARGS+=	--disable-map
-# XXX: Disable call plugin as this requires a newer clutter
-CONFIGURE_ARGS+=	--disable-call \
-			--disable-call-logs
-# XXX lots of 'libnstempathy.so: undefined symbol' at runtime
-# revisit when telepathy-yell is moved out from empathy(?)
-CONFIGURE_ARGS+=	--disable-nautilus-sendto
 
 USE_GROFF=		Yes
 

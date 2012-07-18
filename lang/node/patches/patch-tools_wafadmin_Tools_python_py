@@ -1,6 +1,6 @@
-$OpenBSD: patch-tools_wafadmin_Tools_python_py,v 1.1.1.1 2012/05/23 15:11:43 jasper Exp $
---- tools/wafadmin/Tools/python.py.orig	Wed Nov 16 13:53:19 2011
-+++ tools/wafadmin/Tools/python.py	Wed Nov 16 13:54:02 2011
+$OpenBSD$
+--- tools/wafadmin/Tools/python.py.orig	Sun Jul  8 00:15:17 2012
++++ tools/wafadmin/Tools/python.py	Wed Jul 18 10:53:23 2012
 @@ -374,7 +374,7 @@ def detect(conf):
  	if not conf.env.PYTHON:
  		conf.env.PYTHON = sys.executable

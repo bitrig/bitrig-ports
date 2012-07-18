@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.356 2012/04/28 19:48:00 kili Exp $
+# $OpenBSD: Makefile,v 1.359 2012/07/11 13:29:09 zinke Exp $
 # $FreeBSD: Makefile,v 1.15 1997/11/22 00:31:24 jseger Exp $
 
      SUBDIR =
@@ -16,6 +16,7 @@
      SUBDIR += catfish
      SUBDIR += chmsee
      SUBDIR += clo++
+     SUBDIR += cloc
      SUBDIR += clucene
      SUBDIR += dblatex
      SUBDIR += diction
@@ -120,6 +121,8 @@
      SUBDIR += p5-Font-AFM
      SUBDIR += p5-Font-TTF
      SUBDIR += p5-HTML-Summary
+     SUBDIR += p5-LaTeX-Driver
+     SUBDIR += p5-LaTeX-Encode
      SUBDIR += p5-LaTeX-Pod
      SUBDIR += p5-LaTeX-TOM
      SUBDIR += p5-LibXML-Common

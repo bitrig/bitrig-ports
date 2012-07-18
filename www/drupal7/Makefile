@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2012/06/10 21:01:04 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2012/07/13 10:12:45 jasper Exp $
 
 SUBDIR =
 SUBDIR += CKeditor
@@ -25,6 +25,7 @@ SUBDIR += date
 SUBDIR += devel
 #SUBDIR += dhtml_menu
 #SUBDIR += diff
+SUBDIR += disable_messages
 #SUBDIR += draft
 SUBDIR += entity
 #SUBDIR += faq
@@ -49,6 +50,7 @@ SUBDIR += masquerade		#1.0rc4
 #SUBDIR += metatag		1.0alpha5
 #SUBDIR += modalframe
 SUBDIR += nodeaccess_userreference
+SUBDIR += nodesinblock
 #SUBDIR += nodetype
 #SUBDIR += noderelationships
 #SUBDIR += notify
@@ -72,7 +74,9 @@ SUBDIR += securelogin
 SUBDIR += slideshow_creator
 #SUBDIR += spamspan
 #SUBDIR += tables
+SUBDIR += theme-adaptivetheme
 #SUBDIR += theme-acquia-marina
+SUBDIR += theme-atcommerce
 SUBDIR += theme-danland
 SUBDIR += theme-newsflash
 #SUBDIR += theme-zen

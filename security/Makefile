@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.289 2012/06/13 15:14:31 jasper Exp $
+# $OpenBSD: Makefile,v 1.293 2012/07/12 20:57:51 naddy Exp $
 # $FreeBSD: Makefile,v 1.23 1997/11/09 10:17:02 asami Exp $
 #
 
@@ -46,9 +46,8 @@
      SUBDIR += fragroute
      SUBDIR += fragrouter
      SUBDIR += fwbuilder
-     SUBDIR += gnomint
      SUBDIR += gnupg
-     SUBDIR += gnupg,card,idea,ldap
+     SUBDIR += gnupg,card,ldap
      SUBDIR += gnupg2
      SUBDIR += gnutls
      SUBDIR += gpa
@@ -201,7 +200,6 @@
      SUBDIR += portscanner
      SUBDIR += portsentry
      SUBDIR += ppgen
-     SUBDIR += prelude
      SUBDIR += pwgen
      SUBDIR += pwsafe
      SUBDIR += py-Rijndael
@@ -253,7 +251,6 @@
      SUBDIR += swatch
      SUBDIR += tcltls
      SUBDIR += tempwatch
-     SUBDIR += tinyca
      SUBDIR += towitoko
      SUBDIR += vomit
      SUBDIR += vpnc

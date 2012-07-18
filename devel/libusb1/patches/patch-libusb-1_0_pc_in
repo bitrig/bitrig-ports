@@ -1,4 +1,4 @@
-$OpenBSD: patch-libusb-1_0_pc_in,v 1.1 2012/04/22 19:52:05 mpi Exp $
+$OpenBSD: patch-libusb-1_0_pc_in,v 1.3 2012/07/08 22:21:32 sthen Exp $
 --- libusb-1.0.pc.in.orig	Fri Apr 20 08:44:27 2012
 +++ libusb-1.0.pc.in	Sun Apr 22 21:40:12 2012
 @@ -6,7 +6,7 @@ includedir=@includedir@

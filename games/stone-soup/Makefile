@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2012/05/22 08:08:38 sthen Exp $
+# $OpenBSD: Makefile,v 1.16 2012/07/13 09:08:22 jasper Exp $
 
 COMMENT = 	dungeon crawl stone soup
 CATEGORIES = 	games
@@ -9,7 +9,7 @@ VERSION = 	0.9.1
 DISTNAME=	stone_soup-${VERSION}-nodeps
 EXTRACT_SUFX=	.tar.bz2
 PKGNAME=	stone-soup-${VERSION}
-REVISION =	0
+REVISION =	2
 
 BROKEN-arm=	tilegen.elf loops burning cpu
 
@@ -18,8 +18,10 @@ WRKSRC = 	${WRKDIST}/source
 MAKE_FILE = 	${WRKSRC}/makefile
 USE_GMAKE = 	Yes
 MAKE_FLAGS = 	CC="${CC}" CXX="${CXX}" \
-		LUA_INCLUDE_DIR=${LOCALBASE}/include \
-		LUA_LIB=-llua \
+		CFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/libpng -I${LOCALBASE}/include/SDL" \
+		CXXFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/libpng -I${LOCALBASE}/include/SDL" \
+		LUA_INCLUDE_DIR=${MODLUA_INCL_DIR} \
+		LUA_LIB=${MODLUA_LIB} \
 		SQLITE_INCLUDE_DIR=/usr/include \
 		LDFLAGS=-L${LOCALBASE}/lib \
 		INSTALL_UGRP=root:wheel \
@@ -28,7 +30,7 @@ MAKE_FLAGS = 	CC="${CC}" CXX="${CXX}" \
 		V=1
 
 MODULES = 	lang/lua
-WANTLIB = 	c m stdc++ lua sqlite3
+WANTLIB = 	c m stdc++ ${MODLUA_WANTLIB} sqlite3
 
 BUILD_DEPENDS = devel/bison \
 		graphics/pngcrush

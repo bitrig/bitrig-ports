@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.35 2010/11/17 08:05:17 espie Exp $
+# $OpenBSD: Makefile,v 1.38 2012/07/07 10:15:24 jasper Exp $
 
 COMMENT=	GNU's Ubiquitous Intelligent Language for Extension
 
-VERSION=	1.8.7
+VERSION=	1.8.8
 DISTNAME=	guile-${VERSION}
-REVISION=	2
+REVISION=	0
 SHARED_LIBS=	guile 20.0 \
 		guile-srfi-srfi-1-v-3 3.2 \
 		guile-srfi-srfi-13-14-v-3 3.1 \
@@ -33,8 +33,10 @@ SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=	gnu
 USE_LIBTOOL=		gnu
 USE_GMAKE=		Yes
-USE_GROFF =		Yes
 
+# Needed because otherwise regress tests won't build:
+# warning: format '%ji' expects type 'intmax_t', but argument 4 has type 'scm_t_intmax'
+CONFIGURE_ARGS+=	--disable-error-on-warning
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		PTHREAD_CFLAGS=-pthread \

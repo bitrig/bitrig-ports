@@ -1,12 +1,11 @@
-# $OpenBSD: Makefile,v 1.6 2012/05/23 15:13:20 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2012/07/12 21:42:53 jasper Exp $
 
-COMMENT =	postgresql client for nodejs
+COMMENT =	postgresql client for Node.js
 
-NPM_VERSION =	0.6.10
+NPM_VERSION =	0.7.1
 NPM_NAME =	pg
+REVISION =	0
 CATEGORIES =	databases
-
-REVISION =	2
 
 MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
@@ -28,6 +27,9 @@ BUILD_DEPENDS =	${RUN_DEPENDS}
 LIB_DEPENDS =	databases/postgresql
 RUN_DEPENDS =	devel/node-generic-pool
 MODNODE_DEPENDS = generic-pool
+
+pre-configure:
+	${SUBST_CMD} ${WRKSRC}/binding.gyp
 
 # Must have a database setup running on localhost with
 # user=postgres and password=1234

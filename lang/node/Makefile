@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2012/06/06 20:33:50 sthen Exp $
+# $OpenBSD: Makefile,v 1.5 2012/07/10 00:45:10 abieber Exp $
 
 # XXX:
 # - Needs __ARM_NR_cacheflush (or the like) to work on arm-based ports.
@@ -8,7 +8,8 @@ ONLY_FOR_ARCHS=	amd64 i386
 
 COMMENT=	V8 JavaScript for clients and servers
 
-NODE_VERSION=	v0.6.19
+NODE_VERSION=	v0.8.2
+
 DISTNAME=	node-${NODE_VERSION}
 PKGNAME=	${DISTNAME:S/v//g}
 
@@ -18,7 +19,7 @@ CATEGORIES=	lang devel
 
 HOMEPAGE=	http://nodejs.org/
 
-MAINTAINER=	Aaron Bieber <deftly@gmail.com>
+MAINTAINER=	Aaron Bieber <abieber@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
@@ -38,22 +39,24 @@ LIB_DEPENDS=	devel/libexecinfo
 
 USE_GMAKE=	Yes
 
+BUILD_DEPENDS=	sysutils/flock
 # node-gyp uses it at runtime
 RUN_DEPENDS=	devel/gmake \
 		sysutils/flock
 
-MODPY_ADJ_FILES=wscript \
-		tools/node-waf \
+MODPY_ADJ_FILES= tools/node-waf \
 		tools/waf-light
 
 REGRESS_TARGET= test
 CONFIGURE_STYLE= simple
+CONFIGURE_ARGS= --openssl-use-sys \
+		--shared-zlib
 
 SUBST_VARS+=	CFLAGS
 SUBST_VARS+= 	PREFIX
 SUBST_VARS+= 	DISTFILES
 
-MAKE_ENV+=	CXX=c++ CCFLAGS+="${CFLAGS}" CXXFLAGS="${CXXFLAGS}"
+MAKE_ENV+=	V=1 CXX=c++ CCFLAGS+="${CFLAGS}" CXXFLAGS="${CXXFLAGS}"
 
 NO_CCACHE=	Yes
 
@@ -69,6 +72,12 @@ post-install:
 		${PREFIX}/lib/node/wafadmin
 	${INSTALL_DATA} ${FULLDISTDIR}/${DISTFILES} \
 		${PREFIX}/lib/node/${DISTFILES}
+	ln -s ${TRUEPREFIX}/lib/node_modules/npm/bin/node-gyp-bin/node-gyp \
+		${PREFIX}/bin/node-gyp;
+	cd ${PREFIX}/lib/node_modules/npm/node_modules && for x in *; do \
+		mv $$x ../..; \
+		ln -s ../../$$x $$x; \
+	done
 
 
 .include <bsd.port.mk>

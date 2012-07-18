@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1049 2012/06/16 09:49:32 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.1055 2012/07/16 09:28:32 edd Exp $
 # $FreeBSD: Makefile,v 1.85 1997/11/20 05:22:14 asami Exp $
 
      SUBDIR =
@@ -393,7 +393,10 @@
      SUBDIR += node-generic-pool
      SUBDIR += node-mnm
      SUBDIR += nspr
+     SUBDIR += ocaml-batteries
      SUBDIR += ocaml-calendar
+     SUBDIR += ocaml-camomile
+     SUBDIR += ocaml-net
      SUBDIR += ocaml-pcre
      SUBDIR += ode
      SUBDIR += ois
@@ -403,6 +406,7 @@
      SUBDIR += openocd
      SUBDIR += ophis
      SUBDIR += orc
+     SUBDIR += ounit
      SUBDIR += p5-Acme-Damn
      SUBDIR += p5-Algorithm-Annotate
      SUBDIR += p5-Algorithm-C3
@@ -509,6 +513,7 @@
      SUBDIR += p5-Config-IniFiles
      SUBDIR += p5-Config-Options
      SUBDIR += p5-Config-Simple
+     SUBDIR += p5-Config-Std
      SUBDIR += p5-Config-Tiny
      SUBDIR += p5-Context-Preserve
      SUBDIR += p5-Coro
@@ -800,6 +805,7 @@
      SUBDIR += p5-Probe-Perl
      SUBDIR += p5-Proc-Background
      SUBDIR += p5-Proc-Daemon
+     SUBDIR += p5-Proc-PID-File
      SUBDIR += p5-Proc-Simple
      SUBDIR += p5-Rcs
      SUBDIR += p5-Readonly
@@ -1022,6 +1028,7 @@
      SUBDIR += py-dtopt
      SUBDIR += py-dulwich
      SUBDIR += py-editdist
+     SUBDIR += py-elftools
      SUBDIR += py-epsilon
      SUBDIR += py-extremes
      SUBDIR += py-fpconst
@@ -1106,6 +1113,7 @@
      SUBDIR += rats
      SUBDIR += re2c
      SUBDIR += readline
+     SUBDIR += rebar
      SUBDIR += remake
      SUBDIR += ruby-abstract
      SUBDIR += ruby-actionpack

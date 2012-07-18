@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.174 2012/05/15 06:31:34 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.179 2012/07/15 08:10:41 ajacoutot Exp $
 
 COMMENT-main=		general-purpose utility library
 COMMENT-docs=		glib2 documentation
 
-VERSION=		2.32.3
+VERSION=		2.32.4
 DISTNAME=		glib-${VERSION}
 EXTRACT_SUFX=		.tar.xz
 
@@ -77,7 +77,8 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
-### kqueue(1) backend ##################################################
+### kqueue(2) backend ##################################################
+# https://bugzilla.gnome.org/show_bug.cgi?id=679793
 AUTOMAKE_VERSION=	1.11
 AUTOCONF_VERSION=	2.68
 BUILD_DEPENDS+=		${MODGNU_AUTOCONF_DEPENDS} \

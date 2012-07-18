@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.261 2012/06/20 15:35:09 sthen Exp $
+# $OpenBSD: Makefile,v 1.264 2012/07/12 21:50:09 jasper Exp $
 # $FreeBSD: Makefile,v 1.26 1997/11/20 08:58:51 tg Exp $
 
      SUBDIR =
@@ -71,7 +71,6 @@
      SUBDIR += gpioflicker
      SUBDIR += grub
      SUBDIR += gsmartcontrol
-     SUBDIR += heartbeat
      SUBDIR += hot-babe
      SUBDIR += hotplug-diskmount
      SUBDIR += idled
@@ -107,6 +106,7 @@
      SUBDIR += ndesk-dbus
      SUBDIR += ndesk-dbus-glib
      SUBDIR += notification-daemon
+     SUBDIR += node-always
      SUBDIR += node-daemon
      SUBDIR += node-syslog
      SUBDIR += ns4
@@ -145,6 +145,7 @@
      SUBDIR += radiusreport
      SUBDIR += radmind
      SUBDIR += rancid
+     SUBDIR += ranger
      SUBDIR += rdiff-backup
      SUBDIR += resmon
      SUBDIR += rpl

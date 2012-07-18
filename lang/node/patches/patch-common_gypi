@@ -1,0 +1,12 @@
+$OpenBSD$
+--- common.gypi.orig	Sun Jul  8 00:15:17 2012
++++ common.gypi	Wed Jul 18 10:53:23 2012
+@@ -149,7 +149,7 @@
+             'cflags': [ '-m64' ],
+             'ldflags': [ '-m64' ],
+           }],
+-          [ 'OS=="linux"', {
++          [ 'OS=="linux" or OS=="openbsd" or OS=="bitrig"', {
+             'ldflags': [ '-rdynamic' ],
+           }],
+           [ 'OS=="solaris"', {

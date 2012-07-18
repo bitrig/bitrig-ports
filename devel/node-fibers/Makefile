@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2012/05/23 15:13:20 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2012/07/12 21:42:54 jasper Exp $
 
 # Currently node itself is only for amd64 and i386, but
 # the coroutine library this uses only works on amd64
@@ -6,13 +6,12 @@
 # later, this extension will only support these arches.
 ONLY_FOR_ARCHS= amd64 i386
 
-COMMENT =	fiber/coroutine support for nodejs
+COMMENT =	fiber/coroutine support for Node.js
 
-NPM_VERSION =	0.6.4
+NPM_VERSION =	0.6.8
 NPM_NAME =	fibers
+REVISION =	0
 CATEGORIES =	devel
-
-REVISION =	2
 
 MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
@@ -28,11 +27,13 @@ MODULES =		lang/node
 
 CONFIGURE_STYLE =	npm ext
 USE_GMAKE =		Yes
-SUBST_VARS =		CFLAGS
+FIBERS_ARCH =		openbsd-${PKG_ARCH:S/amd64/x64/:S/i386/ia32/}
+SUBST_VARS =		FIBERS_ARCH
 
-REGRESS_TARGET =	test
+MODNODE_DEPENDS ?= 	node-gyp
+REGRESS_DEPENDS =	${BUILD_PKGPATH}
 
-pre-configure:
-	${SUBST_CMD} ${WRKDIST}/src/platform.mk
+do-regress:
+	cd ${WRKDIST} && node test.js
 
 .include <bsd.port.mk>

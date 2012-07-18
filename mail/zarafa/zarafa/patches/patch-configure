@@ -1,7 +1,7 @@
 $OpenBSD$
 --- configure.orig	Mon Jun 18 13:22:24 2012
-+++ configure	Fri Jun 29 21:09:53 2012
-@@ -4482,7 +4482,7 @@
++++ configure	Wed Jul 18 01:20:32 2012
+@@ -4482,7 +4482,7 @@ nto-qnx*)
    lt_cv_deplibs_check_method=unknown
    ;;
  
@@ -10,7 +10,7 @@ $OpenBSD$
    if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -6405,7 +6405,7 @@
+@@ -6405,7 +6405,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -19,7 +19,7 @@ $OpenBSD$
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -7081,7 +7081,7 @@
+@@ -7081,7 +7081,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -28,7 +28,7 @@ $OpenBSD$
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
-@@ -8152,7 +8152,7 @@
+@@ -8152,7 +8152,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -37,7 +37,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    esac
-@@ -8869,7 +8869,7 @@
+@@ -8869,7 +8869,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
        hardcode_shlibpath_var=no
        ;;
  
@@ -46,7 +46,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -9608,7 +9608,7 @@
+@@ -9608,7 +9608,7 @@ nto-qnx*)
    shlibpath_overrides_runpath=yes
    ;;
  
@@ -55,7 +55,7 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -12116,7 +12116,7 @@
+@@ -12116,7 +12116,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
      # C++ shared libraries are fairly broken
      ld_shlibs_CXX=no
      ;;
@@ -64,7 +64,7 @@ $OpenBSD$
      if test -f /usr/libexec/ld.so; then
        hardcode_direct_CXX=yes
        hardcode_shlibpath_var_CXX=no
-@@ -13586,7 +13586,7 @@
+@@ -13586,7 +13586,7 @@ nto-qnx*)
    shlibpath_overrides_runpath=yes
    ;;
  
@@ -73,7 +73,7 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -14836,7 +14836,7 @@
+@@ -14836,7 +14836,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -82,7 +82,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    esac
-@@ -15533,7 +15533,7 @@
+@@ -15533,7 +15533,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
        hardcode_shlibpath_var_F77=no
        ;;
  
@@ -91,7 +91,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct_F77=yes
  	hardcode_shlibpath_var_F77=no
-@@ -16220,7 +16220,7 @@
+@@ -16220,7 +16220,7 @@ nto-qnx*)
    shlibpath_overrides_runpath=yes
    ;;
  
@@ -100,7 +100,7 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -17450,7 +17450,7 @@
+@@ -17450,7 +17450,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -109,7 +109,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    esac
-@@ -18167,7 +18167,7 @@
+@@ -18167,7 +18167,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
        hardcode_shlibpath_var_GCJ=no
        ;;
  
@@ -118,7 +118,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct_GCJ=yes
  	hardcode_shlibpath_var_GCJ=no
-@@ -18854,7 +18854,7 @@
+@@ -18854,7 +18854,7 @@ nto-qnx*)
    shlibpath_overrides_runpath=yes
    ;;
  
@@ -127,17 +127,16 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -21911,6 +21911,9 @@
- 	*-*-openbsd*)
+@@ -21908,7 +21908,7 @@ LIBS_system=$LIBS
+ # check build OS
+ BUILDOS=""
+ case $host in
+-	*-*-openbsd*)
++	*-*-openbsd* | *-*-bitrig*)
  		BUILDOS="-DOPENBSD"
  		;;
-+	*-*-bitrig*)
-+		BUILDOS="-DBITRIG"
-+		;;
  	*-*-linux*)
- 		;;
- esac
-@@ -21942,13 +21945,13 @@
+@@ -21942,13 +21942,13 @@ fi
  
  # Everything uses pthread
  # check lib, but do not set in link list, but use -pthread instead (gnu c/c++ only?)
@@ -154,7 +153,7 @@ $OpenBSD$
  cat >conftest.$ac_ext <<_ACEOF
  /* confdefs.h.  */
  _ACEOF
-@@ -24574,7 +24577,7 @@
+@@ -24574,7 +24574,7 @@ if test "${ac_cv_lib_intl_strftime+set}" = set; then
    echo $ECHO_N "(cached) $ECHO_C" >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -163,7 +162,7 @@ $OpenBSD$
  cat >conftest.$ac_ext <<_ACEOF
  /* confdefs.h.  */
  _ACEOF
-@@ -24634,7 +24637,7 @@
+@@ -24634,7 +24634,7 @@ if test $ac_cv_lib_intl_strftime = yes; then
  #define HAVE_STRFTIME 1
  _ACEOF
  
@@ -172,16 +171,7 @@ $OpenBSD$
  fi
  
  fi
-@@ -26150,7 +26153,7 @@
- _ACEOF
- 
- 		VMIME_CFLAGS=-I$VMIME_PREFIX
--	VMIME_LIBS="$VMIME_LIBS -lvmime"
-+	VMIME_LIBS="$VMIME_LIBS -lvmime-zarafa"
- 
- else
- 
-@@ -27761,84 +27764,10 @@
+@@ -27761,84 +27761,10 @@ sed 's/^/| /' conftest.$ac_ext >&5
  	 { echo "$as_me:$LINENO: result: no" >&5
  echo "${ECHO_T}no" >&6; }
  
@@ -267,7 +257,7 @@ $OpenBSD$
  CRYPT_LIBS=$LIBS
  LIBS=$LIBS_system
  
-@@ -27853,7 +27782,7 @@
+@@ -27853,7 +27779,7 @@ if test "${ac_cv_lib_ssl_SSL_accept+set}" = set; then
    echo $ECHO_N "(cached) $ECHO_C" >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -276,7 +266,7 @@ $OpenBSD$
  cat >conftest.$ac_ext <<_ACEOF
  /* confdefs.h.  */
  _ACEOF
-@@ -29078,7 +29007,7 @@
+@@ -29078,7 +29004,7 @@ if test "${ac_cv_lib_intl_gettext+set}" = set; then
    echo $ECHO_N "(cached) $ECHO_C" >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -285,7 +275,7 @@ $OpenBSD$
  cat >conftest.$ac_ext <<_ACEOF
  /* confdefs.h.  */
  _ACEOF
-@@ -29134,7 +29063,7 @@
+@@ -29134,7 +29060,7 @@ fi
  { echo "$as_me:$LINENO: result: $ac_cv_lib_intl_gettext" >&5
  echo "${ECHO_T}$ac_cv_lib_intl_gettext" >&6; }
  if test $ac_cv_lib_intl_gettext = yes; then

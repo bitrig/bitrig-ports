@@ -1,6 +1,6 @@
-$OpenBSD: patch-configure_ac,v 1.22 2012/05/28 18:44:26 ajacoutot Exp $
---- configure.ac.orig	Thu Mar  8 06:18:41 2012
-+++ configure.ac	Mon Jun 11 21:05:50 2012
+$OpenBSD$
+--- configure.ac.orig	Mon Jun 25 16:46:34 2012
++++ configure.ac	Wed Jul 18 08:08:39 2012
 @@ -120,12 +120,8 @@ case "${host_os}" in
      LDFLAGS_save="${LDFLAGS_save} -L/usr/local/lib"
      LDFLAGS="${LDFLAGS_save}"
@@ -15,7 +15,7 @@ $OpenBSD: patch-configure_ac,v 1.22 2012/05/28 18:44:26 ajacoutot Exp $
      ;;
    netbsd*)
      SYS=netbsd
-@@ -687,6 +683,20 @@ if test "${SYS}" != "mingw32" -a "${SYS}" != "mingwce"
+@@ -688,6 +684,20 @@ if test "${SYS}" != "mingw32" -a "${SYS}" != "mingwce"
    dnl Check for pthreads - borrowed from XMMS
    THREAD_LIB=error
    if test "${THREAD_LIB}" = "error"; then
@@ -36,7 +36,7 @@ $OpenBSD: patch-configure_ac,v 1.22 2012/05/28 18:44:26 ajacoutot Exp $
      AC_CHECK_LIB(pthread,main,THREAD_LIB="-lpthread")
    fi
    if test "${THREAD_LIB}" = "error"; then
-@@ -963,33 +973,6 @@ dnl Check for various optimization flags
+@@ -964,33 +974,6 @@ dnl Check for various optimization flags
  AS_IF([test "${enable_optimizations}" != "no"], [
  
    C_O=""
@@ -70,7 +70,7 @@ $OpenBSD: patch-configure_ac,v 1.22 2012/05/28 18:44:26 ajacoutot Exp $
    VLC_RESTORE_FLAGS
    CFLAGS="${CFLAGS} ${C_O}"
    CXXFLAGS="${CXXFLAGS} ${C_O}"
-@@ -1735,7 +1718,7 @@ AS_IF([test "${enable_live555}" != "no" -a -n "${CXX}"
+@@ -1736,7 +1719,7 @@ AS_IF([test "${enable_live555}" != "no" -a -n "${CXX}"
    AC_LANG_PUSH(C++)
    CPPFLAGS_save="${CPPFLAGS}"
    AS_IF([test -z "${CONTRIB_DIR}"], [
@@ -79,16 +79,7 @@ $OpenBSD: patch-configure_ac,v 1.22 2012/05/28 18:44:26 ajacoutot Exp $
    ], [
      CPPFLAGS_live555="-I${CONTRIB_DIR}/include/liveMedia -I${CONTRIB_DIR}/include/groupsock -I${CONTRIB_DIR}/include/BasicUsageEnvironment -I${CONTRIB_DIR}/include/UsageEnvironment"
    ])
-@@ -3495,7 +3478,7 @@ dnl
- AC_ARG_ENABLE(oss,
-   [AS_HELP_STRING([--enable-oss],
-     [support the Open Sound System OSS (default enabled on FreeBSD/NetBSD/DragonFlyBSD)])],, [
--  AS_IF([test "$SYS" = "mingw32" -o "$SYS" = "mingwce" -o "$SYS" = "linux" -o "$SYS" = "openbsd"], [
-+  AS_IF([test "$SYS" = "mingw32" -o "$SYS" = "mingwce" -o "$SYS" = "linux" -o "$SYS" = "openbsd" -o "$SYS" = "bitrig"], [
-     enable_oss="no"
-   ])
- ])
-@@ -3511,6 +3494,24 @@ AS_IF([test "$enable_oss" != "no"], [
+@@ -3509,6 +3492,24 @@ AS_IF([test "$enable_oss" != "no"], [
  ])
  AC_SUBST(OSS_LIBS)
  AM_CONDITIONAL([HAVE_OSS], [test "${have_oss}" = "yes"])
@@ -99,7 +90,7 @@ $OpenBSD: patch-configure_ac,v 1.22 2012/05/28 18:44:26 ajacoutot Exp $
 +AC_ARG_ENABLE([sndio],
 +  [AS_HELP_STRING([--disable-sndio],
 +    [support the OpenBSD sndio (default auto)])],, [
-+  AS_IF([test "$SYS" = "openbsd" -o "$SYS" = "bitrig"], [
++  AS_IF([test "$SYS" = "opensd"], [
 +    enable_sndio="yes"
 +  ])
 +])

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.754 2012/06/18 08:52:20 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.761 2012/07/10 14:09:01 zinke Exp $
 # $FreeBSD: Makefile,v 1.129 1997/11/20 13:47:40 itojun Exp $
 #
 
@@ -224,7 +224,6 @@
      SUBDIR += nemesis
      SUBDIR += neon
      SUBDIR += nepenthes
-     SUBDIR += nepenthes,prelude
      SUBDIR += nepim
      SUBDIR += net-snmp
      SUBDIR += netatalk
@@ -334,7 +333,7 @@
      SUBDIR += p5-Net-SFTP
      SUBDIR += p5-Net-SFTP-Foreign
      SUBDIR += p5-Net-SMTP-SSL
-     SUBDIR += p5-Net-SMTP-TLS
+     SUBDIR += p5-Net-SMTP-TLS-ButMaintained
      SUBDIR += p5-Net-SMTP_auth
      SUBDIR += p5-Net-SNMP
      SUBDIR += p5-Net-SNPP
@@ -344,6 +343,7 @@
      SUBDIR += p5-Net-Server-SS-PreFork
      SUBDIR += p5-Net-Snort-Parser
      SUBDIR += p5-Net-Subnets
+     SUBDIR += p5-Net-TCLink
      SUBDIR += p5-Net-TFTP
      SUBDIR += p5-Net-Telnet
      SUBDIR += p5-Net-Telnet-Cisco
@@ -362,6 +362,7 @@
      SUBDIR += p5-NetPacket
      SUBDIR += p5-Nmap-Parser
      SUBDIR += p5-Nmap-Scanner
+     SUBDIR += p5-OSPF-LSDB
      SUBDIR += p5-POE-Component-Client-DNS
      SUBDIR += p5-POE-Component-Client-HTTP
      SUBDIR += p5-POE-Component-Client-Keepalive
@@ -515,6 +516,7 @@
      SUBDIR += sendxmpp
      SUBDIR += sharity-light
      SUBDIR += si
+     SUBDIR += sic
      SUBDIR += silc-client
      SUBDIR += silc-server
      SUBDIR += silc-server,operops
@@ -529,7 +531,6 @@
      SUBDIR += snort
      SUBDIR += snort,mysql
      SUBDIR += snort,postgresql
-     SUBDIR += snort,prelude
      SUBDIR += socat
      SUBDIR += softflowd
      SUBDIR += spectrum
@@ -586,6 +587,7 @@
      SUBDIR += vnstat
      SUBDIR += vsftpd
      SUBDIR += walker
+     SUBDIR += weechat
      SUBDIR += weex
      SUBDIR += wget
      SUBDIR += wide-dhcp

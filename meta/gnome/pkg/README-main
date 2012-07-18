@@ -1,14 +1,19 @@
-$OpenBSD: README-main,v 1.5 2012/02/23 09:22:06 ajacoutot Exp $
+$OpenBSD: README-main,v 1.10 2012/07/12 11:58:15 ajacoutot Exp $
 
 +-----------------------------------------------------------------------
 | Running ${FULLPKGNAME} on OpenBSD
 +-----------------------------------------------------------------------
 
+(see "Cheat sheet" at the end of this file for a quick setup)
+
 The GNOME desktop is composed of 2 meta-packages:
-    * gnome, for a base GNOME installation
+    * gnome, for a standard GNOME installation
     * gnome-extra, for a full GNOME installation
-They are focused on standard usage (i.e. accessibility, development, and
-office type packages are left out on purpose).
+
+The "gnome" package is focused on generic usage to give the user the
+choice to install his favorite applications for daily usage (i.e.
+accessibility, development, PIM and office type packages have been left
+out on purpose).
 
 Starting GNOME
 ==============
@@ -35,8 +40,20 @@ _after_ "dbus_daemon".
 
 A note about accessibility
 ==========================
-Dependency on a11y packages is never enforced so to activate an
-assistive technology you need to explicitely install the corresponding
-packages:
+Dependency on a11y packages is never enforced so to activate a specific
+assistive technology that is not included by default, you need to
+explicitely install the corresponding package(s):
     * mousetweaks - mouse accessibility enhancements
     * orca - assistive technology for visually impaired
+
+Note that "caribou", the input assistive technology (i.e. virtual
+keyboard) is installed automatically with gnome-shell and therefore with
+this "gnome" package.
+
+Cheat sheet
+===========
+* /etc/rc.conf.local
+	multicast_host=YES
+	pkg_scripts="${pkg_scripts} dbus_daemon avahi_daemon"
+* ~.xinitrc | ~.xsession
+	exec ${LOCALBASE}/bin/ck-launch-session ${TRUEPREFIX}/bin/gnome-session

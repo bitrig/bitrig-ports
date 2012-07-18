@@ -1,18 +1,18 @@
-# $OpenBSD: Makefile,v 1.68 2012/06/12 20:11:22 kili Exp $
+# $OpenBSD: Makefile,v 1.70 2012/06/29 05:52:01 kili Exp $
 
 COMMENT-main =		compiler for the functional language Haskell
 COMMENT-doc =		documentation for GHC
 
 DISTNAME =		ghc-${MODGHC_VER}
 PKGNAME-main =		ghc-${MODGHC_VER}
-REVISION-main =		7
+REVISION-main =		8
 PKGNAME-doc =		ghc-doc-${MODGHC_VER}
 REVISION-doc =		0
 CATEGORIES =		lang devel
 HOMEPAGE =		http://www.haskell.org/ghc/
 
 # Version of the precompiled binaries
-BIN_VER =		7.0.4.20111023
+BIN_VER =		7.0.4.20120626
 
 # xhtml replacement version (for meta/haskell-platform)
 XHTML_VER =		3000.2.0.4
@@ -159,7 +159,7 @@ do-regress:
 # It doesn't matter wether this is the actual date of the bootstrapper
 # build. It's just used to get different distfiles whenever new
 # bootstrappers have to be built.
-BOOTSTRAP_DATE =	20111023
+BOOTSTRAP_DATE =	20120626
 
 # Create a bootstrapper. This compiles a stripped-down version of
 # ghc and creates a `bindist', i.e. a tarball with binaries that

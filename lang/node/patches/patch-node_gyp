@@ -1,7 +1,7 @@
 $OpenBSD$
---- node.gyp.orig	Thu Jun 14 01:10:19 2012
-+++ node.gyp	Thu Jun 14 01:10:53 2012
-@@ -189,6 +189,13 @@
+--- node.gyp.orig	Sun Jul  8 00:15:17 2012
++++ node.gyp	Wed Jul 18 10:53:23 2012
+@@ -223,6 +223,13 @@
              '-lkvm',
            ],
          }],
@@ -13,5 +13,5 @@ $OpenBSD$
 +          ],
 +        }],
          [ 'OS=="solaris"', {
-           'sources': [ 'src/platform_sunos.cc' ],
            'libraries': [
+             '-lkstat',

@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.16 2011/08/01 02:13:45 jolan Exp $
+# $OpenBSD: Makefile,v 1.18 2012/07/13 12:36:41 jasper Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	posix library for the lua language
 DISTNAME=	luaposix-5.1.4
 EPOCH=		0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://luaforge.net/frs/download.php/3572/
 
@@ -21,7 +21,7 @@ MODULES=	lang/lua
 REGRESS_DEPENDS=${BUILD_PKGPATH}
 
 do-build:
-	${CC} ${CFLAGS} -fPIC -I${LOCALBASE}/include -shared \
+	${CC} ${CFLAGS} -fPIC -I${MODLUA_INCL_DIR} -shared \
 	${WRKDIST}/lposix.c -o ${WRKDIST}/posix.so
 
 do-install:
@@ -29,6 +29,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/posix.so ${MODLUA_LIBDIR}
 
 do-regress:
-	cd ${WRKSRC} && ${LOCALBASE}/bin/lua *.lua
+	cd ${WRKSRC} && ${MODLUA_BIN} *.lua
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $OpenBSD: cmake.port.mk,v 1.12 2012/03/29 13:38:13 sthen Exp $
+# $OpenBSD: cmake.port.mk,v 1.14 2012/07/10 18:55:58 dcoppa Exp $
 
 BUILD_DEPENDS+=	devel/cmake>=2.8.0
 
@@ -8,6 +8,9 @@ MAKE_ENV+=LIB${_n}_VERSION=${_v}
 .endfor
 
 CONFIGURE_ENV +=	MODJAVA_VER=${MODJAVA_VER} \
+			MODLUA_VERSION=${MODLUA_VERSION} \
+			MODLUA_BIN=${MODLUA_BIN} \
+			MODLUA_INCL_DIR=${MODLUA_INCL_DIR} \
 			MODPY_VERSION=${MODPY_VERSION} \
 			MODPY_BIN=${MODPY_BIN} \
 			MODPY_INCDIR=${MODPY_INCDIR} \

@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.8 2012/06/17 09:31:45 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.12 2012/07/07 17:59:28 ajacoutot Exp $
 
     SUBDIR =
     SUBDIR += cogl
     SUBDIR += core
     SUBDIR += clutter-gst
     SUBDIR += clutter-gtk
-#    SUBDIR += clutter-vala
-#    SUBDIR += pyclutter	Doesn't work yet (makes python crash)
+    SUBDIR += mash
+    SUBDIR += mx
 
 .include <bsd.port.subdir.mk>

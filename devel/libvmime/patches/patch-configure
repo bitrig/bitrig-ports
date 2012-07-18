@@ -1,358 +1,92 @@
-$OpenBSD: patch-configure,v 1.4 2011/05/04 12:52:50 ajacoutot Exp $
---- configure.orig	Tue Nov 16 13:56:00 2010
-+++ configure	Wed May  4 14:39:06 2011
-@@ -4120,13 +4120,13 @@ if test "$ac_test_CFLAGS" = set; then
-   CFLAGS=$ac_save_CFLAGS
- elif test $ac_cv_prog_cc_g = yes; then
-   if test "$GCC" = yes; then
--    CFLAGS="-g -O2"
-+    CFLAGS="-g"
+--- configure.orig	Tue Jan 10 10:33:01 2012
++++ configure	Fri Jun 29 20:19:05 2012
+@@ -6439,7 +6439,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -6794,7 +6794,7 @@ freebsd* | dragonfly*)
+     i*86 )
+       # Not sure whether the presence of OpenBSD here was a mistake.
+       # Let's accept both of them until this is cleared up.
+-      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
++      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|Bitrig|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
+       lt_cv_file_magic_cmd=/usr/bin/file
+       lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
+       ;;
+@@ -6864,7 +6864,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-     CFLAGS="-g"
-   fi
+@@ -7248,7 +7248,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -9981,7 +9981,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   linux* | k*bsd*-gnu)
+@@ -10694,7 +10694,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -11666,7 +11666,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -13471,7 +13471,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd* | bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -15134,7 +15134,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -21349,7 +21349,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
  else
-   if test "$GCC" = yes; then
--    CFLAGS="-O2"
-+    CFLAGS=""
-   else
-     CFLAGS=
-   fi
-@@ -4657,13 +4657,13 @@ if test "$ac_test_CXXFLAGS" = set; then
-   CXXFLAGS=$ac_save_CXXFLAGS
- elif test $ac_cv_prog_cxx_g = yes; then
-   if test "$GXX" = yes; then
--    CXXFLAGS="-g -O2"
-+    CXXFLAGS="-g"
-   else
-     CXXFLAGS="-g"
-   fi
- else
-   if test "$GXX" = yes; then
--    CXXFLAGS="-O2"
-+    CXXFLAGS=""
-   else
-     CXXFLAGS=
-   fi
-@@ -16471,13 +16471,13 @@ $as_echo "no" >&6; }
- #		])
- #	fi
- 	ost_cv_thread_library=none
--	{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_self in -lpthread" >&5
--$as_echo_n "checking for pthread_self in -lpthread... " >&6; }
-+	{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_self in -pthread" >&5
-+$as_echo_n "checking for pthread_self in -pthread... " >&6; }
- if test "${ac_cv_lib_pthread_pthread_self+set}" = set; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-lpthread  $LIBS"
-+LIBS="-pthread  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -16549,13 +16549,13 @@ $as_echo "$ac_cv_lib_c_r_pthread_self" >&6; }
- if test "x$ac_cv_lib_c_r_pthread_self" = x""yes; then :
-   ost_cv_thread_library=c_r
- else
--  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_kill in -lpthread" >&5
--$as_echo_n "checking for pthread_kill in -lpthread... " >&6; }
-+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_kill in -pthread" >&5
-+$as_echo_n "checking for pthread_kill in -pthread... " >&6; }
- if test "${ac_cv_lib_pthread_pthread_kill+set}" = set; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-lpthread  $LIBS"
-+LIBS="-pthread  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -16588,13 +16588,13 @@ $as_echo "$ac_cv_lib_pthread_pthread_kill" >&6; }
- if test "x$ac_cv_lib_pthread_pthread_kill" = x""yes; then :
-   ost_cv_thread_library=pthread
- else
--  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_self in -lpthreads" >&5
--$as_echo_n "checking for pthread_self in -lpthreads... " >&6; }
-+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_self in -pthreads" >&5
-+$as_echo_n "checking for pthread_self in -pthreads... " >&6; }
- if test "${ac_cv_lib_pthreads_pthread_self+set}" = set; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-lpthreads  $LIBS"
-+LIBS="-pthreads  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -16860,13 +16860,13 @@ fi
-     fi
- 
- 	as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_mach_thread_np" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_mach_thread_np in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_mach_thread_np in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_mach_thread_np in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_mach_thread_np in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -16907,13 +16907,13 @@ fi
- 
- 
- 	as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_nanosleep" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for nanosleep in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for nanosleep in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for nanosleep in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for nanosleep in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17415,13 +17415,13 @@ $as_echo "#define PTHREAD_MUTEXTYPE_RECURSIVE PTHREAD_
- 	esac
- 
- 	as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_mutexattr_settype" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_mutexattr_settype in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_mutexattr_settype in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_mutexattr_settype in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_mutexattr_settype in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17460,13 +17460,13 @@ $as_echo "#define HAVE_PTHREAD_MUTEXATTR_SETTYPE 1" >>
- else
- 
- 		as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_mutexattr_settype_np" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_mutexattr_settype_np in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_mutexattr_settype_np in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_mutexattr_settype_np in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_mutexattr_settype_np in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17505,13 +17505,13 @@ $as_echo "#define HAVE_PTHREAD_MUTEXATTR_SETTYPE_NP 1"
- fi
- 
- 		as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_mutexattr_setkind_np" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_mutexattr_setkind_np in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_mutexattr_setkind_np in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_mutexattr_setkind_np in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_mutexattr_setkind_np in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17556,13 +17556,13 @@ fi
- 
- 	ost_cv_thread_rwlock=false
- 	as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_rwlock_init" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_rwlock_init in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_rwlock_init in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_rwlock_init in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_rwlock_init in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17647,13 +17647,13 @@ $as_echo "#define HAVE_PREAD_PWRITE 1" >>confdefs.h
- else
- 
- 		as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pread" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pread in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pread in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pread in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pread in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17740,13 +17740,13 @@ fi
- 
- 
- 	as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_suspend" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_suspend in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_suspend in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_suspend in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_suspend in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17786,13 +17786,13 @@ fi
- 
- 
- 	as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_attr_setstacksize" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_attr_setstacksize in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_attr_setstacksize in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_attr_setstacksize in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_attr_setstacksize in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17832,13 +17832,13 @@ fi
- 
- 
- 	as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_yield_np" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_yield_np in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_yield_np in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_yield_np in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_yield_np in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17877,13 +17877,13 @@ $as_echo "#define HAVE_PTHREAD_YIELD_NP 1" >>confdefs.
- else
- 
- 		as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_yield" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_yield in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_yield in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_yield in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_yield in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17922,13 +17922,13 @@ $as_echo "#define HAVE_PTHREAD_YIELD 1" >>confdefs.h
- else
- 
- 			as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_sched_yield" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for sched_yield in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for sched_yield in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for sched_yield in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for sched_yield in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -17974,13 +17974,13 @@ fi
- 
- 
- 	as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_cancel" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_cancel in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_cancel in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_cancel in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_cancel in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -18018,13 +18018,13 @@ eval as_val=\$$as_ac_Lib
- $as_echo "#define HAVE_PTHREAD_CANCEL 1" >>confdefs.h
- 
- 	  	as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_setcanceltype" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_setcanceltype in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_setcanceltype in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_setcanceltype in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_setcanceltype in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -18112,13 +18112,13 @@ fi
- else
- 
- 		as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_setcanceltype" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_setcanceltype in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_setcanceltype in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_setcanceltype in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_setcanceltype in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-@@ -18164,13 +18164,13 @@ fi
- 
- 
- 	as_ac_Lib=`$as_echo "ac_cv_lib_${ost_cv_thread_library}''_pthread_delay_np" | $as_tr_sh`
--{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_delay_np in -l${ost_cv_thread_library}" >&5
--$as_echo_n "checking for pthread_delay_np in -l${ost_cv_thread_library}... " >&6; }
-+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_delay_np in -${ost_cv_thread_library}" >&5
-+$as_echo_n "checking for pthread_delay_np in -${ost_cv_thread_library}... " >&6; }
- if { as_var=$as_ac_Lib; eval "test \"\${$as_var+set}\" = set"; }; then :
-   $as_echo_n "(cached) " >&6
- else
-   ac_check_lib_save_LIBS=$LIBS
--LIBS="-l${ost_cv_thread_library}  $LIBS"
-+LIBS="-${ost_cv_thread_library}  $LIBS"
- cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
+ 	# -O2
+ 	OLD_CXXFLAGS="$CXXFLAGS"
+-	CXXFLAGS="$CXXFLAGS -O2"
++	CXXFLAGS="$CXXFLAGS"
+ 	{ $as_echo "$as_me:${as_lineno-$LINENO}: checking whether cc accepts -O2" >&5
+ $as_echo_n "checking whether cc accepts -O2... " >&6; }
+ 	cat confdefs.h - <<_ACEOF >conftest.$ac_ext

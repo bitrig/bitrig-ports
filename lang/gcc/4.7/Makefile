@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.7 2012/06/21 13:56:57 sthen Exp $
+# $OpenBSD: Makefile,v 1.9 2012/07/15 08:56:26 pascal Exp $
 
-ONLY_FOR_ARCHS = amd64 i386 hppa powerpc sparc sparc64
+ONLY_FOR_ARCHS = amd64 i386 powerpc sparc sparc64
 
-V = 4.7.0
+V = 4.7.1
 FULL_VERSION = $V
 FULL_PKGVERSION = $V
 BOOTSTRAP_GEN = 0
@@ -13,14 +13,12 @@ PKGNAME-main =  gcc-${FULL_PKGVERSION}
 PKGNAME-c++ =   g++-${FULL_PKGVERSION}
 PKGNAME-estdc = libstdc++-${FULL_PKGVERSION}
 PKGNAME-f95 =   g95-${FULL_PKGVERSION}
-PKGNAME-java =  gcj-${FULL_PKGVERSION}
+# problem in boehm-gc
+#PKGNAME-java =  gcj-${FULL_PKGVERSION}
 PKGNAME-objc =  gobjc-${FULL_PKGVERSION}
 PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 # needs [gs]etcontext
 #PKGNAME-go =	gccgo-${FULL_PKGVERSION}
-REVISION = 1
-REVISION-c++ = 2
-REVISION-java = 3
 PKGSPEC-main = gcc->=4.7,<4.8
 
 SHARED_LIBS =	estdc++		15.0 \
@@ -41,7 +39,7 @@ FLAVOR ?=
 ONLY_FOR_ARCHS-ada = i386
 ONLY_FOR_ARCHS-java = amd64 i386 sparc64
 
-MULTI_PACKAGES = -main -f95 -objc -java -c++ -estdc -ada
+MULTI_PACKAGES = -main -f95 -objc -c++ -estdc -ada
 
 .include <bsd.port.arch.mk>
 
@@ -59,7 +57,8 @@ EXTRACT_ONLY =	${DISTNAME}.tar.bz2
 
 USE_LIBTOOL =	Yes
 
-BUILD_DEPENDS +=	devel/bison
+BUILD_DEPENDS +=	devel/bison \
+			devel/libexecinfo
 
 REGRESS_DEPENDS = 	devel/dejagnu \
 			devel/autogen
@@ -105,6 +104,7 @@ MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} ${WRKSRC}/gcc
 
 EXTRA_ENV += am_cv_func_iconv=no JAR=no
 EXTRA_ENV += ac_cv_prog_M4=/usr/bin/m4
+EXTRA_ENV += ac_cv_header_magic_h=no
 MAKE_FLAGS +=	 ac_cv_path_mkdir=/bin/mkdir
 
 CONFIGURE_ENV += ${EXTRA_ENV}

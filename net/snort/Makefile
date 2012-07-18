@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.65 2012/04/07 08:31:39 mcbride Exp $
+# $OpenBSD: Makefile,v 1.67 2012/07/09 21:10:57 jasper Exp $
 
 SHARED_ONLY = 		Yes
 
@@ -9,7 +9,7 @@ COMMENT =		highly flexible sniffer/NIDS
 # The following hack allows it to work but XXX if updating, the
 # MASTER_SITES URL will need to be adjusted, not just DISTNAME.
 DISTNAME = 		snort-2.8.6
-REVISION=		2
+REVISION=		3
 MASTER_SITES = 		http://dl.snort.org/downloads/14?/ \
 			http://distfiles.nl/
 
@@ -40,7 +40,7 @@ MAKE_FLAGS =		mandir=${TRUEPREFIX}/man
 LIB_DEPENDS =		devel/pcre
 WANTLIB +=		pcre
 
-FLAVORS =		postgresql mysql flexresp prelude
+FLAVORS =		postgresql mysql flexresp
 FLAVOR ?=	
 
 .if ${FLAVOR:L:Mflexresp}
@@ -61,14 +61,6 @@ WANTLIB +=		lib/mysql/mysqlclient>=10
 CONFIGURE_ARGS +=	--with-mysql-libraries="${LOCALBASE}/lib" \
 			--with-mysql-includes="${LOCALBASE}/include"
 WANTLIB +=		z
-.endif
-
-.if ${FLAVOR:L:Mprelude}
-MODULES =		devel/gettext
-LIB_DEPENDS +=		security/prelude/libprelude
-WANTLIB +=		gcrypt gnutls gpg-error pthread tasn1 z prelude>=8
-CONFIGURE_ARGS +=	--enable-prelude
-MESSAGE =		${PKGDIR}/MESSAGE-prelude
 .endif
 
 CONFIGS	=		classification.config gen-msg.map reference.config \

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.490 2012/05/30 20:48:03 edd Exp $
+# $OpenBSD: Makefile,v 1.492 2012/07/10 12:32:16 zinke Exp $
 # $FreeBSD: Makefile,v 1.178 1997/11/24 05:32:52 fenner Exp $
 
      SUBDIR =
@@ -233,9 +233,11 @@
      SUBDIR += slock
      SUBDIR += smplayer
      SUBDIR += spectrwm
+     SUBDIR += sselp
      SUBDIR += st
      SUBDIR += stalonetray
      SUBDIR += swisswatch
+     SUBDIR += tabbed
      SUBDIR += tangerine-icon-theme
      SUBDIR += tango-icon-theme
      SUBDIR += tango-icon-theme-extras

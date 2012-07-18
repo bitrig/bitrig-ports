@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.280 2012/06/22 14:44:07 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.282 2012/07/10 12:14:46 naddy Exp $
 # $FreeBSD: Makefile,v 1.40 1997/11/16 22:49:20 fenner Exp $
 
      SUBDIR =
@@ -128,7 +128,10 @@
      SUBDIR += nspmod
      SUBDIR += oggtag
      SUBDIR += openal
+     SUBDIR += opencore-amr
      SUBDIR += opennap
+     SUBDIR += opus
+     SUBDIR += opus-tools
      SUBDIR += p5-Audio-CD
      SUBDIR += p5-Audio-FLAC-Header
      SUBDIR += p5-Audio-M4P

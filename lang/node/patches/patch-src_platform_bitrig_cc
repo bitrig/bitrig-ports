@@ -1,6 +1,6 @@
 $OpenBSD$
---- src/platform_bitrig.cc.orig	Thu Jun 14 01:09:44 2012
-+++ src/platform_bitrig.cc	Thu Jun 14 01:10:00 2012
+--- src/platform_bitrig.cc.orig	Wed Jul 18 10:53:23 2012
++++ src/platform_bitrig.cc	Wed Jul 18 10:53:23 2012
 @@ -0,0 +1,176 @@
 +// Copyright Joyent, Inc. and other Node contributors.
 +//

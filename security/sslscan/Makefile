@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2011/06/21 21:05:48 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.3 2012/07/16 08:49:31 jasper Exp $
 
 COMMENT=	SSL port scanner
 
 DISTNAME=	sslscan-1.8.2
+REVISION=	1
 EXTRACT_SUFX=	.tgz
 
 CATEGORIES=	security net

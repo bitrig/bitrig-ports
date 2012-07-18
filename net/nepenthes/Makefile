@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.32 2012/04/28 10:51:44 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.34 2012/07/09 21:59:51 sthen Exp $
 SHARED_ONLY=	Yes
 
 COMMENT=	determine the malware activity on a network
 
 DISTNAME=	nepenthes-0.2.2 
 EPOCH=		1
-REVISION=		0
+REVISION=	1
 
 CATEGORIES=	net
 
@@ -47,21 +47,8 @@ CONFIGURE_ARGS+=--enable-debug-logging \
 		--disable-capabilities \
 		--with-curl-lib=${PREFIX}/lib
 
-FLAVORS=        prelude
-FLAVOR?=
-
-.if ${FLAVOR:L:Mprelude}
-LIB_DEPENDS+=   security/prelude/libprelude
-CONFIGURE_ENV=  CPPFLAGS="-I${LOCALBASE}/include  \
-                -I${LOCALBASE}/include/libprelude/" \
-		LDFLAGS="-L${LOCALBASE}/lib -pthread"
-WANTLIB+=	gcrypt gnutls gpg-error pthread tasn1 prelude>=8
-CONFIGURE_ARGS+=--enable-prelude
-MESSAGE=        ${PKGDIR}/MESSAGE-prelude
-.else
 LIB_DEPENDS+=	databases/postgresql
 WANTLIB +=	pq>=4
-.endif
 
 pre-configure:
 	@perl -pi -e "s,%%SYSCONFDIR%%,${SYSCONFDIR}," \

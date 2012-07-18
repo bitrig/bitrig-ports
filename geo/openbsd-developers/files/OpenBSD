@@ -1,4 +1,4 @@
-# $OpenBSD: OpenBSD,v 1.83 2012/05/21 18:19:30 gonzalo Exp $
+# $OpenBSD: OpenBSD,v 1.86 2012/07/13 11:43:20 bmercer Exp $
 #
 # This is a list of OpenBSD developers and related people.
 #
@@ -23,6 +23,7 @@
 37.3706		-122.0138	"ckuethe"	# Chris Kuethe
 37.515049	-122.339528	"marc"		# Marco S. Hyman
 37.75		-122.41		"matthew"	# Matthew Dempsky
+38.2581		-104.6319	"abieber"	# Aaron Bieber
 38.66		-121.5		"jeremy"	# Jeremy Evans
 38.9693		-77.3863	"jason"		# Jason L. Wright
 39.179910	-77.058420	"merdely"	# Michael Erdely
@@ -33,6 +34,7 @@
 40.4		-79.7		"jaredy"	# Jared Yanovich
 40.552889	-8.333124	"rui"		# Rui Reis
 40.721300	-73.858770	"ray"		# Ray Lai
+41.2839		-81.2242	"bmercer"	# Brandon Mercer
 41.92		-87.70		"jcs"		# joshua stein
 42.2731		-83.782		"aaron"		# Aaron Campbell
 42.49538	-82.89954	"nick"		# Nick Holland
@@ -103,6 +105,7 @@
 52.3667		9.71667		"reyk"		# Reyk Floeter
 52.3717		9.73416		"phessler"	# Peter Hessler
 50.7819		6.0856		"mikeb"		# Mike Belopuhov
+52.3963543	13.107545	"zinke"		# Joerg Zinke
 52.4144		12.5524		"sebastia"	# Sebastian Reitenbach
 52.5		21		"alek"		# Aleksander Piotrowski
 53.08566	8.13058		"fkr"		# Felix Kronlage

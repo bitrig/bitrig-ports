@@ -1,0 +1,12 @@
+$OpenBSD$
+--- tools/installer.js.orig	Sun Jul  8 00:15:17 2012
++++ tools/installer.js	Wed Jul 18 10:53:23 2012
+@@ -102,7 +102,7 @@ if (cmd === 'install') {
+   ], 'include/node/');
+ 
+   // man page
+-  copy(['doc/node.1'], 'share/man/man1/');
++  copy(['doc/node.1'], 'man/man1/');
+ 
+   // dtrace
+   if (!process.platform.match(/^linux/)) {
