@@ -1,17 +1,31 @@
-$OpenBSD: patch-media_libsydneyaudio_src_Makefile_in,v 1.5 2012/03/16 21:31:24 landry Exp $
-https://bugzilla.mozilla.org/show_bug.cgi?id=648726
---- media/libsydneyaudio/src/Makefile.in.orig	Thu Feb  2 00:39:20 2012
-+++ media/libsydneyaudio/src/Makefile.in	Tue Feb 14 18:42:12 2012
-@@ -100,6 +100,12 @@ CSRCS		= \
- 		$(NULL)
+$OpenBSD$
+--- media/libsydneyaudio/src/Makefile.in.orig	Thu Jun 14 20:49:59 2012
++++ media/libsydneyaudio/src/Makefile.in	Wed Jul 18 19:43:17 2012
+@@ -48,7 +48,7 @@ ifeq (WINNT,$(OS_TARGET))
+ VISIBILITY_FLAGS =
  endif
  
+-ifneq (,$(filter DragonFly FreeBSD GNU GNU_% NetBSD OpenBSD,$(OS_ARCH)))
++ifneq (,$(filter DragonFly FreeBSD GNU GNU_% NetBSD OpenBSD Bitrig,$(OS_ARCH)))
+ CSRCS		= \
+ 		sydney_audio_oss.c \
+ 		$(NULL)
+@@ -97,6 +97,18 @@ endif
+ ifeq ($(OS_ARCH),AIX)
+ CSRCS		= \
+ 		sydney_audio_aix.c \
++		$(NULL)
++endif
++
 +ifeq ($(OS_ARCH),OpenBSD)
 +CSRCS		= \
 +		sydney_audio_sndio.c \
 +		$(NULL)
 +endif
 +
- ifeq ($(OS_ARCH),WINNT)
- OS_LIBS += winmm.lib
++ifeq ($(OS_ARCH),Bitrig)
++CSRCS		= \
++		sydney_audio_sndio.c \
+ 		$(NULL)
  endif
+ 

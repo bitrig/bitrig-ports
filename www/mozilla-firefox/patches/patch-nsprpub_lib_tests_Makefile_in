@@ -1,0 +1,11 @@
+--- nsprpub/lib/tests/Makefile.in.orig	Thu Jul 19 08:41:38 2012
++++ nsprpub/lib/tests/Makefile.in	Thu Jul 19 08:42:25 2012
+@@ -111,7 +111,7 @@ ifeq ($(OS_ARCH), Linux)
+     endif
+ endif
+ 
+-ifeq (,$(filter-out OpenBSD,$(OS_ARCH)))
++ifeq (,$(filter-out OpenBSD Bitrig,$(OS_ARCH)))
+     ifeq ($(USE_PTHREADS),1)
+         EXTRA_LIBS = -lpthread
+     endif

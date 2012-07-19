@@ -1,0 +1,30 @@
+$OpenBSD$
+--- nsprpub/configure.in.orig	Wed Jul 18 18:39:04 CEST 2012
++++ nsprpub/configure.in	Wed Jul 18 18:39:04 CEST 2012
+@@ -2227,7 +2227,7 @@ mips-sony-newsos*)
+     _DEBUG_FLAGS="-gstabs"
+ 	;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     AC_DEFINE(XP_UNIX)
+     AC_DEFINE(OPENBSD)
+     AC_DEFINE(HAVE_BSD_FLOCK)
+@@ -3022,7 +3022,7 @@ if test -n "$USE_PTHREADS"; then
+ 	        _PTHREAD_LDFLAGS=
+ 	    fi
+ 	    ;;
+-    *-openbsd*)
++    *-openbsd*|*-bitrig*)
+         if test "$ac_cv_have_dash_pthread" = "yes"; then
+             _PTHREAD_LDFLAGS=-pthread
+         fi
+@@ -3122,7 +3122,7 @@ case "$target" in
+     _PTHREAD_LDFLAGS=
+     USE_USER_PTHREADS=
+     ;;
+-*-netbsd*|*-openbsd*)
++*-netbsd*|*-openbsd*|*-bitrig*)
+     if test -n "$USE_NSPR_THREADS"; then
+         AC_DEFINE(_PR_LOCAL_THREADS_ONLY)
+     fi

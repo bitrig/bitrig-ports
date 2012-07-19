@@ -35,7 +35,19 @@ USE_GROFF =	Yes
 NO_REGRESS =	Yes
 SEPARATE_BUILD =	Yes
 
+CC = gcc
+CXX = g++
+
 CONFIGURE_STYLE =	autoconf no-autoheader
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/ \
+				${WRKSRC}/js/src/ \
+				${WRKSRC}/js/src/ctypes/libffi/ \
+				${WRKSRC}/toolkit/crashreporter/google-breakpad/ \
+				${WRKSRC}/nsprpub/ \
+				${WRKSRC}/modules/freetype2/ \
+				${WRKSRC}/modules/freetype2/builds/unix/ \
+				${WRKSRC}/security/nss/tests/pkcs11/netscape/trivial/ \
+				${WRKSRC}/ipc/chromium/src/third_party/libevent/
 CONFIGURE_ARGS +=	--enable-official-branding
 CONFIGURE_ARGS +=	--with-system-libevent=/usr/ --disable-gconf
 CONFIGURE_ARGS +=	--with-system-zlib=/usr/ --with-system-bz2=${LOCALBASE}

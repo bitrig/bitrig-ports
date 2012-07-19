@@ -1,0 +1,21 @@
+$OpenBSD$
+--- js/src/configure.orig	Wed Jul 18 18:40:29 CEST 2012
++++ js/src/configure	Wed Jul 18 18:40:29 CEST 2012
+@@ -7405,7 +7405,7 @@ EOF
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
+     ;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     DLL_SUFFIX=".so.1.0"
+     DSO_CFLAGS=''
+     DSO_PIC_CFLAGS='-fPIC'
+@@ -10372,7 +10372,7 @@ EOF
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
+ 			cat >> confdefs.h <<\EOF
+ #define _REENTRANT 1
+ EOF

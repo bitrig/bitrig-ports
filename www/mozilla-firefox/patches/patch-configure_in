@@ -1,0 +1,30 @@
+$OpenBSD$
+--- configure.in.orig	Wed Jul 18 18:38:21 CEST 2012
++++ configure.in	Wed Jul 18 18:38:21 CEST 2012
+@@ -2810,7 +2810,7 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
+     ;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     if test "$SO_VERSION"; then
+         DLL_SUFFIX=".so.$SO_VERSION"
+     else
+@@ -3452,7 +3452,7 @@ dnl Checks for header files.
+ dnl ========================================================
+ AC_HEADER_DIRENT
+ case "$target_os" in
+-freebsd*|openbsd*)
++freebsd*|openbsd*|bitrig*)
+ # for stuff like -lXshm
+     CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
+     ;;
+@@ -3746,7 +3746,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.

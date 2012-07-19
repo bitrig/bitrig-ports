@@ -1,14 +1,13 @@
-$OpenBSD: patch-js_src_configure_in,v 1.13 2012/06/11 15:29:56 landry Exp $
-https://bugzilla.mozilla.org/show_bug.cgi?id=648721
-https://bugzilla.mozilla.org/show_bug.cgi?id=589754
-chunk 4 : https://bugzilla.mozilla.org/show_bug.cgi?id=714312
---- js/src/configure.in.orig	Wed May  2 05:16:48 2012
-+++ js/src/configure.in	Wed May  9 23:06:34 2012
-@@ -2583,7 +2583,12 @@ ia64*-hpux*)
+$OpenBSD$
+--- js/src/configure.in.orig	Wed Jul 18 18:37:51 CEST 2012
++++ js/src/configure.in	Wed Jul 18 18:37:51 CEST 2012
+@@ -2582,8 +2582,13 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
- *-openbsd*)
+-*-openbsd*)
 -    DLL_SUFFIX=".so.1.0"
++*-openbsd*|*-bitrig*)
 +    if test "$SO_VERSION"; then
 +        DLL_SUFFIX=".so.$SO_VERSION"
 +    else
@@ -18,14 +17,23 @@ chunk 4 : https://bugzilla.mozilla.org/show_bug.cgi?id=714312
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
      DSO_LDOPTS='-shared -fPIC'
-@@ -2871,6 +2876,10 @@ mips*-*)
-     ENABLE_METHODJIT_TYPED_ARRAY=1
+@@ -2872,6 +2877,10 @@ mips*-*)
      AC_DEFINE(JS_CPU_MIPS)
      AC_DEFINE(JS_NUNBOX32)
-+    ;;
+     ;;
 +sparc64-*)
 +    AC_DEFINE(AVMPLUS_SPARC)
 +    AC_DEFINE(AVMPLUS_64BIT)
-     ;;
++    ;;
  esac
  
+ MOZ_ARG_DISABLE_BOOL(methodjit,
+@@ -3419,7 +3428,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.

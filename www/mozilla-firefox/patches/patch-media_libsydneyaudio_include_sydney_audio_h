@@ -1,4 +1,4 @@
-$OpenBSD: patch-media_libsydneyaudio_include_sydney_audio_h,v 1.2 2012/02/20 20:15:04 landry Exp $
+$OpenBSD$
 --- media/libsydneyaudio/include/sydney_audio.h.orig	Wed Jan 11 18:14:57 2012
 +++ media/libsydneyaudio/include/sydney_audio.h	Sat Jan 14 20:31:04 2012
 @@ -48,7 +48,7 @@ async-signal safe.
@@ -6,7 +6,7 @@ $OpenBSD: patch-media_libsydneyaudio_include_sydney_audio_h,v 1.2 2012/02/20 20:
  #include <sys/param.h>
  #include <inttypes.h>
 -#if defined(__FreeBSD__) || defined(ANDROID)
-+#if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(ANDROID)
++#if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__Bitrig__) || defined(ANDROID)
  #include <sys/endian.h>
  #endif
  #else

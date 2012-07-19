@@ -1,0 +1,30 @@
+$OpenBSD$
+--- configure.orig	Wed Jul 18 18:40:02 CEST 2012
++++ configure	Wed Jul 18 18:40:02 CEST 2012
+@@ -8126,7 +8126,7 @@ EOF
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
+     ;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     if test "$SO_VERSION"; then
+         DLL_SUFFIX=".so.$SO_VERSION"
+     else
+@@ -9863,7 +9863,7 @@ fi
+ fi
+ 
+ case "$target_os" in
+-freebsd*|openbsd*)
++freebsd*|openbsd*|bitrig*)
+ # for stuff like -lXshm
+     CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
+     ;;
+@@ -11516,7 +11516,7 @@ EOF
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
+ 			cat >> confdefs.h <<\EOF
+ #define _REENTRANT 1
+ EOF

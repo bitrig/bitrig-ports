@@ -1,0 +1,11 @@
+$OpenBSD$
+--- js/src/shell/Makefile.in.orig	Wed Jul 18 19:17:44 2012
++++ js/src/shell/Makefile.in	Wed Jul 18 19:18:40 2012
+@@ -58,6 +58,7 @@
+ DEFINES         += -DIMPL_MFBT
+ 
+ LIBS      = $(NSPR_LIBS) $(EDITLINE_LIBS) $(DEPTH)/$(LIB_PREFIX)js_static.$(LIB_SUFFIX)
++LIBS      += /usr/lib/libpthread.a
+ ifdef MOZ_NATIVE_FFI
+ EXTRA_LIBS += $(MOZ_FFI_LIBS)
+ endif

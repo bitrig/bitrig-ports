@@ -1,0 +1,11 @@
+--- security/nss/lib/freebl/Makefile.orig	Thu Jul 19 08:34:41 2012
++++ security/nss/lib/freebl/Makefile	Thu Jul 19 08:35:02 2012
+@@ -279,7 +279,7 @@ endif
+ # to bind the blapi function references in FREEBLVector vector
+ # (ldvector.c) to the blapi functions defined in the freebl
+ # shared libraries.
+-ifeq (,$(filter-out BSD_OS FreeBSD Linux NetBSD OpenBSD, $(OS_TARGET)))
++ifeq (,$(filter-out BSD_OS FreeBSD Linux NetBSD OpenBSD Bitrig, $(OS_TARGET)))
+     MKSHLIB += -Wl,-Bsymbolic
+ endif
+ 

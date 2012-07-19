@@ -1,0 +1,11 @@
+--- xpcom/glue/standalone/Makefile.in.orig	Thu Jul 19 08:44:36 2012
++++ xpcom/glue/standalone/Makefile.in	Thu Jul 19 08:44:57 2012
+@@ -64,7 +64,7 @@ endif
+ ifeq ($(OS_ARCH),WINNT)
+ LINKSRC = nsGlueLinkingWin.cpp
+ endif
+-ifneq (,$(filter AIX DragonFly FreeBSD GNU GNU_% Linux NetBSD OpenBSD SunOS,$(OS_ARCH)))
++ifneq (,$(filter AIX DragonFly FreeBSD GNU GNU_% Linux NetBSD OpenBSD Bitrig SunOS,$(OS_ARCH)))
+ LINKSRC = nsGlueLinkingDlopen.cpp
+ endif
+ ifeq (OS2,$(OS_ARCH))
