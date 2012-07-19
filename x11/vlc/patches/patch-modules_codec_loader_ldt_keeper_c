@@ -1,0 +1,39 @@
+$OpenBSD$
+--- modules/codec/loader/ldt_keeper.c.orig	Thu Jul 19 22:26:02 CEST 2012
++++ modules/codec/loader/ldt_keeper.c	Thu Jul 19 22:26:02 CEST 2012
+@@ -72,7 +72,7 @@ int modify_ldt(int func, void *ptr, unsigned long byte
+ }
+ #endif
+ #else
+-#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__DragonFly__)
++#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__Bitrig__) || defined(__DragonFly__)
+ #include <machine/segments.h>
+ #include <machine/sysarch.h>
+ #endif
+@@ -187,7 +187,7 @@ static int LDT_Modify( int func, struct modify_ldt_ldt
+ #endif
+ #endif
+ 
+-#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__DragonFly__)
++#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__Bitrig__) || defined(__DragonFly__)
+ static void LDT_EntryToBytes( unsigned long *buffer, const struct modify_ldt_ldt_s *content )
+ {
+     *buffer++ = ((content->base_addr & 0x0000ffff) << 16) |
+@@ -250,7 +250,7 @@ ldt_fs_t* Setup_LDT_Keeper(void)
+     }
+ #endif /*linux*/
+ 
+-#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__DragonFly__)
++#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__Bitrig__) || defined(__DragonFly__)
+     {
+         unsigned long d[2];
+ 
+@@ -269,7 +269,7 @@ ldt_fs_t* Setup_LDT_Keeper(void)
+             printf("Did you reconfigure the kernel with \"options USER_LDT\"?\n");
+         }
+     }
+-#endif  /* __NetBSD__ || __FreeBSD__ || __OpenBSD__ || __DragonFly__ */
++#endif  /* __NetBSD__ || __FreeBSD__ || __OpenBSD__ || __Bitrig__ || __DragonFly__ */
+ 
+ #if defined(__svr4__)
+     {

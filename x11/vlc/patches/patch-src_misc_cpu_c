@@ -1,0 +1,14 @@
+$OpenBSD$
+--- src/misc/cpu.c.orig	Thu Jul 19 22:06:18 CEST 2012
++++ src/misc/cpu.c	Thu Jul 19 22:06:18 CEST 2012
+@@ -332,8 +332,8 @@ out:
+ #elif defined( __powerpc__ ) || defined( __ppc__ ) || defined( __powerpc64__ ) \
+     || defined( __ppc64__ )
+ 
+-#   if defined(__APPLE__) || defined(__OpenBSD__)
+-#   if defined(__OpenBSD__)
++#   if defined(__APPLE__) || defined(__OpenBSD__) || defined(__Bitrig__)
++#   if defined(__OpenBSD__) || defined(__Bitrig__)
+     int selectors[2] = { CTL_MACHDEP, CPU_ALTIVEC };
+ #   else
+     int selectors[2] = { CTL_HW, HW_VECTORUNIT };

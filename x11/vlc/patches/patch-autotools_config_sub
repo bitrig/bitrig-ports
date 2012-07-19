@@ -1,0 +1,12 @@
+$OpenBSD$
+--- autotools/config.sub.orig	Thu Jul 19 22:15:20 CEST 2012
++++ autotools/config.sub	Thu Jul 19 22:15:20 CEST 2012
+@@ -1341,7 +1341,7 @@ case $os in
+ 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
+ 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
+ 	      | -hiux* | -386bsd* | -knetbsd* | -mirbsd* | -netbsd* \
+-	      | -openbsd* | -solidbsd* \
++	      | -openbsd* | -bitrig* | -solidbsd* \
+ 	      | -ekkobsd* | -kfreebsd* | -freebsd* | -riscix* | -lynxos* \
+ 	      | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
+ 	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \

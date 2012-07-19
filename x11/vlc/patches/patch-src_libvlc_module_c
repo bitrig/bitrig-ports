@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/libvlc-module.c.orig	Thu Jul 19 22:07:17 CEST 2012
++++ src/libvlc-module.c	Thu Jul 19 22:07:17 CEST 2012
+@@ -912,7 +912,7 @@ static const char *const ppsz_prefres[] = {
+ # define CDAUDIO_DEV_LONGTEXT N_( \
+     "This is the default Audio CD device to use." )
+ 
+-# if defined(__OpenBSD__)
++# if defined(__OpenBSD__) || defined(__Bitrig__)
+ #  define DVD_DEVICE     "/dev/cd0c"
+ #  define CD_DEVICE      "/dev/cd0c"
+ # else

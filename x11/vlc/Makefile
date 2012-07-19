@@ -151,8 +151,7 @@ CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}" \
 		    -L${LOCALBASE}/live/groupsock -L${LOCALBASE}/live/BasicUsageEnvironment \
 		    -L${LOCALBASE}/live/UsageEnvironment" \
 		LOCALBASE="${LOCALBASE}" \
-		PKG_CONFIG_PATH="${LOCALBASE}/lib/qt4/pkgconfig" \
-		CC=cc CXX=g++
+		PKG_CONFIG_PATH="${LOCALBASE}/lib/qt4/pkgconfig"
 
 PSEUDO_FLAVORS=	no_jack
 FLAVOR?=
@@ -183,8 +182,7 @@ PKG_ARGS+=-Di386=0
 
 pre-configure:
 	@cp ${FILESDIR}/sndio.c ${WRKSRC}/modules/audio_output
-	@cd ${WRKSRC} && env AUTOCONF_VERSION=${AUTOCONF_VERSION} AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
-	    ./bootstrap
+	@cd ${WRKSRC} && env AUTOCONF_VERSION=${AUTOCONF_VERSION} AUTOMAKE_VERSION=${AUTOMAKE_VERSION}
 
 post-install:
 	@find ${PREFIX}/lib/vlc -name '*.la' -print | xargs rm

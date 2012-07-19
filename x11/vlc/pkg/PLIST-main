@@ -222,7 +222,6 @@ lib/vlc/plugins/demux/libes_plugin.so
 lib/vlc/plugins/demux/libflacsys_plugin.so
 lib/vlc/plugins/demux/libh264_plugin.so
 lib/vlc/plugins/demux/libimage_plugin.so
-lib/vlc/plugins/demux/liblive555_plugin.so
 lib/vlc/plugins/demux/libmjpeg_plugin.so
 lib/vlc/plugins/demux/libmkv_plugin.so
 lib/vlc/plugins/demux/libmp4_plugin.so
