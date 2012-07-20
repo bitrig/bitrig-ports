@@ -2,7 +2,7 @@
 
 COMMENT=	XML validation library
 
-DISTNAME=	xmlsd-0.8.0
+DISTNAME=	xmlsd-0.8.1
 PKGNAME=	lib${DISTNAME}
 CATEGORIES=    	textproc devel
 SHARED_LIBS=	xmlsd	2.1
@@ -22,7 +22,7 @@ PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
-FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
+FAKE_FLAGS=	MANDIR=${PREFIX}/man/man
 
 do-configure:
 	printf "major=${LIBxmlsd_VERSION:R}\nminor=${LIBxmlsd_VERSION:E}\n" \

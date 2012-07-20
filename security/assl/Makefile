@@ -2,11 +2,10 @@
 
 COMMENT=		hide awful SSL API in a sane interface
 
-DISTNAME=		assl-1.0.0
-REVISION=		0
+DISTNAME=		assl-1.1.0
 EPOCH=			0
 CATEGORIES=		security devel
-SHARED_LIBS=		assl	4.0
+SHARED_LIBS=		assl	5.0
 
 HOMEPAGE=		http://opensource.conformal.com/wiki/Assl
 MASTER_SITES=		http://opensource.conformal.com/snapshots/assl/
@@ -18,8 +17,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
-
-BUILD_DEPENDS=		devel/libevent2
 
 FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
 
