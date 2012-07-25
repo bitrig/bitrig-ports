@@ -20,6 +20,7 @@ WANTLIB=		c m ossaudio
 MASTER_SITES=	http://liba52.sourceforge.net/files/
 
 CONFIGURE_STYLE= gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ac3dec

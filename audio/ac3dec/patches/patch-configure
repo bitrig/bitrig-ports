@@ -1,6 +1,6 @@
-$OpenBSD: patch-configure,v 1.9 2010/02/23 19:55:15 phessler Exp $
---- configure.orig	Thu Mar 30 02:51:49 2000
-+++ configure	Sat Feb 13 11:30:23 2010
+$OpenBSD$
+--- configure.orig	Wed Jul 25 16:07:05 CEST 2012
++++ configure	Wed Jul 25 16:07:05 CEST 2012
 @@ -528,7 +528,7 @@ fi
  
  
@@ -10,6 +10,15 @@ $OpenBSD: patch-configure,v 1.9 2010/02/23 19:55:15 phessler Exp $
    if test -f $ac_dir/install-sh; then
      ac_aux_dir=$ac_dir
      ac_install_sh="$ac_aux_dir/install-sh -c"
+@@ -1254,7 +1254,7 @@ fi
+ 
+ case "$host" in
+ *-linux*) rm -f output.c; ln -s output_linux.c output.c;;
+-*-openbsd*|*-freebsd*) rm -f output.c; ln -s output_linux.c output.c;;
++*-openbsd*|*-bitrig*|*-freebsd*) rm -f output.c; ln -s output_linux.c output.c;;
+ *-irix*) rm -f output.c; ln -s output_irix.c output.c;;
+ *-solaris*) rm -f output.c; ln -s output_solaris.c output.c;;
+ *) echo "$host is not currently supported by ac3dec"; exit 1;;
 @@ -1273,8 +1273,36 @@ sparc-*) cat >> confdefs.h <<\EOF
  #define __sparc__ 1
  EOF
