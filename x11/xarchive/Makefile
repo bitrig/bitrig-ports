@@ -32,6 +32,7 @@ RUN_DEPENDS=	devel/desktop-file-utils
 USE_GROFF =	Yes
 
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/config
 CONFIGURE_ENV=	BASH_PROG=/bin/sh
 
 pre-configure:
