@@ -40,6 +40,7 @@ CONFIGURE_STYLE= simple
 CONFIGURE_SCRIPT= ${MODPY_BIN} ./configure.py
 CONFIGURE_ARGS= ${CONFIGURE_SHARED} \
 		--cpu=${MACHINE_ARCH} \
+		--os=openbsd \
 		--prefix=${PREFIX} \
 		--with-bzip2 \
 		--with-gnump \
