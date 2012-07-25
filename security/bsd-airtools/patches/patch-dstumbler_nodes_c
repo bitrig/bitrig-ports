@@ -1,0 +1,12 @@
+$OpenBSD$
+--- dstumbler/nodes.c.orig	Wed Jul 25 07:11:16 CEST 2012
++++ dstumbler/nodes.c	Wed Jul 25 07:11:16 CEST 2012
+@@ -44,7 +44,7 @@
+ #include <sys/time.h>
+ #include <errno.h>
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <curses.h>
+ #else
+ #include <ncurses.h>

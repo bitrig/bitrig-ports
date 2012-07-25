@@ -1,0 +1,12 @@
+$OpenBSD$
+--- prism2dump/prism2dump.h.orig	Wed Jul 25 07:13:27 CEST 2012
++++ prism2dump/prism2dump.h	Wed Jul 25 07:13:27 CEST 2012
+@@ -49,7 +49,7 @@
+ #define le16toh(x) (x)
+ #define le32toh(x) (x)
+ #else
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #define le16toh(x) letoh16(x)
+ #define le32toh(x) letoh32(x)
+ #endif

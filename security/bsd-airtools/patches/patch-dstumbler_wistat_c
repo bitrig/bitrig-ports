@@ -1,0 +1,12 @@
+$OpenBSD$
+--- dstumbler/wistat.c.orig	Wed Jul 25 07:11:34 CEST 2012
++++ dstumbler/wistat.c	Wed Jul 25 07:11:34 CEST 2012
+@@ -44,7 +44,7 @@
+ #include <unistd.h>
+ #include <sys/types.h>
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <curses.h>
+ #else
+ #include <ncurses.h>

@@ -1,6 +1,15 @@
-$OpenBSD: patch-dstumbler_aps_c,v 1.1 2003/01/14 23:52:40 pvalchev Exp $
---- dstumbler/aps.c.orig	Tue Feb 26 04:01:31 2002
-+++ dstumbler/aps.c	Sat Nov 23 11:43:42 2002
+$OpenBSD$
+--- dstumbler/aps.c.orig	Wed Jul 25 07:07:27 CEST 2012
++++ dstumbler/aps.c	Wed Jul 25 07:07:27 CEST 2012
+@@ -44,7 +44,7 @@
+ #include <sys/time.h>
+ #include <errno.h>
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <curses.h>
+ #else
+ #include <ncurses.h>
 @@ -101,8 +101,7 @@ parse_ap(const char *iface)
        redraw_aps();
  

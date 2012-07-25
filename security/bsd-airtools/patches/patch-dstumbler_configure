@@ -1,0 +1,16 @@
+$OpenBSD$
+--- dstumbler/configure.orig	Wed Jul 25 07:08:50 CEST 2012
++++ dstumbler/configure	Wed Jul 25 07:08:50 CEST 2012
+@@ -27,6 +27,12 @@ case $hostos in
+     ldflags="-lcurses"
+     curses="curses"
+     cursesincl="/usr/include/curses.h" ;;
++  "Bitrig"*)
++    hostos="openbsd"; echo $hostos
++    cflags="-Wall -I/usr/local/include"
++    ldflags="-lcurses"
++    curses="curses"
++    cursesincl="/usr/include/curses.h" ;;
+   "FreeBSD"*)
+     hostos="freebsd"; echo $hostos
+     cflags="-Wall -I/usr/local/include"

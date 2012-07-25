@@ -1,0 +1,12 @@
+$OpenBSD$
+--- dstumbler/menu.c.orig	Wed Jul 25 07:10:58 CEST 2012
++++ dstumbler/menu.c	Wed Jul 25 07:10:58 CEST 2012
+@@ -44,7 +44,7 @@
+ #include <errno.h>
+ #include <ctype.h>
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <curses.h>
+ #else
+ #include <ncurses.h>

@@ -1,6 +1,6 @@
 $OpenBSD$
---- dstumbler/dstumbler.h.orig	Wed Jul 25 07:09:43 CEST 2012
-+++ dstumbler/dstumbler.h	Wed Jul 25 07:09:43 CEST 2012
+--- dstumbler.h.orig.orig	Wed Jul 25 07:12:23 CEST 2012
++++ dstumbler/dstumbler.h.orig	Wed Jul 25 07:12:23 CEST 2012
 @@ -37,7 +37,7 @@
  
  #include <stdio.h>
@@ -28,12 +28,3 @@ $OpenBSD$
  #define le16toh(x) letoh16(x)
  #endif
  #endif
-@@ -450,7 +450,7 @@ void mon_stop(void);
-  * audio.c
-  */
- void audio_graph(int);
--void audio_play(char *);
-+void audio_play(void);
- 
- /*
-  * log.c

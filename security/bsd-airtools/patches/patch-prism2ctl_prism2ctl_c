@@ -1,0 +1,21 @@
+$OpenBSD$
+--- prism2ctl/prism2ctl.c.orig	Wed Jul 25 07:13:13 CEST 2012
++++ prism2ctl/prism2ctl.c	Wed Jul 25 07:13:13 CEST 2012
+@@ -41,7 +41,7 @@
+  */
+ #include <stdio.h>
+ #include <sys/types.h>
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <sys/cdefs.h>
+ #include <sys/param.h>
+ #endif
+@@ -62,7 +62,7 @@
+ #define le16toh(x) (x)
+ #define htole16(x) (x)
+ #else
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #define le16toh(x) letoh16(x)
+ #endif
+ #endif

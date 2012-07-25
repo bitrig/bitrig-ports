@@ -1,0 +1,12 @@
+$OpenBSD$
+--- dweputils/dwepdump/dwepdump.c.orig	Wed Jul 25 07:12:49 CEST 2012
++++ dweputils/dwepdump/dwepdump.c	Wed Jul 25 07:12:49 CEST 2012
+@@ -70,7 +70,7 @@
+ #ifdef __FreeBSD__
+ #define le16toh(x) (x)
+ #else
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #define le16toh(x) letoh16(x)
+ #endif
+ #endif

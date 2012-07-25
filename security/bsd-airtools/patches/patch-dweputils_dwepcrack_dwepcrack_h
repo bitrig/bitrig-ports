@@ -1,0 +1,12 @@
+$OpenBSD$
+--- dweputils/dwepcrack/dwepcrack.h.orig	Wed Jul 25 07:12:36 CEST 2012
++++ dweputils/dwepcrack/dwepcrack.h	Wed Jul 25 07:12:36 CEST 2012
+@@ -75,7 +75,7 @@
+ #define le16toh(x) (x)
+ #define le8toh(x)  (x)
+ #else
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #define le16toh(x) letoh16(x)
+ #define le8toh(x)  letoh8(x)
+ #endif
