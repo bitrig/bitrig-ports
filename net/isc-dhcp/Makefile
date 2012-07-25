@@ -35,12 +35,21 @@ MULTI_PACKAGES=		-main -omapi -client
 USE_GROFF=		Yes
 USE_GMAKE=		Yes
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/ \
+				${WRKSRC}/bind/bind-9.8.3/ \
+				${WRKSRC}/bind/bind-9.8.3/unit/atf-src/
+
 CONFIGURE_ARGS+= 	--enable-early-chroot \
 			--enable-paranoia \
+
+CC=			gcc
 
 NO_REGRESS=		Yes
 
 EXAMPLEDIR=		share/examples/isc-dhcp
+
+pre-patch:
+	cd ${WRKDIR}/dhcp-${VERSION}/bind && gunzip -c bind.tar.gz | tar xf -
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${EXAMPLEDIR}
