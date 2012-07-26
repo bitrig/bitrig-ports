@@ -1,0 +1,39 @@
+$OpenBSD$
+--- src/libw32dll/wine/ldt_keeper.c.orig	Thu Jul 26 07:38:35 CEST 2012
++++ src/libw32dll/wine/ldt_keeper.c	Thu Jul 26 07:38:35 CEST 2012
+@@ -78,7 +78,7 @@ int modify_ldt(int func, void *ptr, unsigned long byte
+ }
+ #endif
+ #else
+-#if defined(__NetBSD__) || defined(__FreeBSD_kernel__) || defined(__OpenBSD__)
++#if defined(__NetBSD__) || defined(__FreeBSD_kernel__) || defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <machine/segments.h>
+ #include <machine/sysarch.h>
+ #endif
+@@ -171,7 +171,7 @@ void Check_FS_Segment(ldt_fs_t *ldt_fs)
+ #endif
+ }
+ 
+-#if defined(__NetBSD__) || defined(__FreeBSD_kernel__) || defined(__OpenBSD__)
++#if defined(__NetBSD__) || defined(__FreeBSD_kernel__) || defined(__OpenBSD__) || defined(__Bitrig__)
+ static void LDT_EntryToBytes( unsigned long *buffer, const struct modify_ldt_ldt_s *content )
+ {
+     *buffer++ = ((content->base_addr & 0x0000ffff) << 16) |
+@@ -202,7 +202,7 @@ static int _modify_ldt(ldt_fs_t *ldt_fs, struct modify
+     }
+ #endif /*linux*/
+ 
+-#if defined(__NetBSD__) || defined(__FreeBSD_kernel__) || defined(__OpenBSD__)
++#if defined(__NetBSD__) || defined(__FreeBSD_kernel__) || defined(__OpenBSD__) || defined(__Bitrig__)
+     {
+         unsigned long d[2];
+ 
+@@ -222,7 +222,7 @@ static int _modify_ldt(ldt_fs_t *ldt_fs, struct modify
+         }
+ 	printf("Set_LDT\n");
+     }
+-#endif  /* __NetBSD__ || __FreeBSD__ || __OpenBSD__ */
++#endif  /* __NetBSD__ || __FreeBSD__ || __OpenBSD__ || __Bitrig__ */
+ 
+ #if defined(__svr4__)
+     {

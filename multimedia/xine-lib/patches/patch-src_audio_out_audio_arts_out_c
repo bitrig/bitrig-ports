@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/audio_out/audio_arts_out.c.orig	Thu Jul 26 07:37:35 CEST 2012
++++ src/audio_out/audio_arts_out.c	Thu Jul 26 07:37:35 CEST 2012
+@@ -223,7 +223,7 @@ static void ao_arts_exit(ao_driver_t *this_gen)
+ 
+   ao_arts_close(this_gen);
+   /* FIXME: arts_free() freezes on BSD, so don't use it there */
+-#if !defined(__OpenBSD__) && !defined (__FreeBSD__) && !defined(__NetBSD__)
++#if !defined(__OpenBSD__) && !defined(__Bitrig__) && !defined (__FreeBSD__) && !defined(__NetBSD__)
+   arts_free();
+ #endif
+ 

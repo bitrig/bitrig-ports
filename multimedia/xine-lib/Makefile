@@ -56,6 +56,7 @@ LIB_DEPENDS=	audio/faad \
 
 USE_GMAKE=	Yes
 USE_LIBTOOL=	gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/
 USE_GROFF=	Yes
 CONFIGURE_STYLE= autoconf
 AUTOCONF_VERSION= 2.69
@@ -88,7 +89,8 @@ CONFIGURE_ARGS+=--disable-aalib \
 		--without-jack \
 		--without-pulseaudio
 CONFIGURE_ENV=	CPPFLAGS="-I${X11BASE}/include -I${LOCALBASE}/include" \
-		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib"
+		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib" \
+		CC="gcc"
 
 NO_REGRESS=	Yes
 

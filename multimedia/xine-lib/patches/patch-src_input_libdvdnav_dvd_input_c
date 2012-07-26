@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/input/libdvdnav/dvd_input.c.orig	Thu Jul 26 07:31:40 CEST 2012
++++ src/input/libdvdnav/dvd_input.c	Thu Jul 26 07:31:40 CEST 2012
+@@ -374,7 +374,7 @@ int dvdinput_setup(void)
+ #endif
+ 
+   if(dvdcss_library != NULL) {
+-#if defined(__OpenBSD__) && !defined(__ELF__)
++#if (defined(__OpenBSD__) || defined (__Bitrig__)) && !defined(__ELF__)
+ #define U_S "_"
+ #else
+ #define U_S

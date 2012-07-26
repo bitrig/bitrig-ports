@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/input/input_dvd.c.orig	Thu Jul 26 07:29:41 CEST 2012
++++ src/input/input_dvd.c	Thu Jul 26 07:29:41 CEST 2012
+@@ -123,7 +123,7 @@
+ /* There really isn't a default on Windows! */
+ #define DVD_PATH "d:\\"
+ #define RDVD_PATH "d:\\"
+-#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
+ #define DVD_PATH "/dev/rcd0c"
+ #define RDVD_PATH "/dev/rcd0c"
+ #else

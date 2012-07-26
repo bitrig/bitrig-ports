@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/xine-utils/mangle.h.orig	Thu Jul 26 07:39:46 CEST 2012
++++ src/xine-utils/mangle.h	Thu Jul 26 07:39:46 CEST 2012
+@@ -35,7 +35,7 @@
+ 
+ // Use rip-relative addressing if compiling PIC code on x86-64.
+ #if defined(__MINGW32__) || defined(__CYGWIN__) || defined(__DJGPP__) || \
+-    defined(__OS2__) || (defined (__OpenBSD__) && !defined(__ELF__))
++    defined(__OS2__) || ((defined (__OpenBSD__) || defined(__Bitrig__)) && !defined(__ELF__))
+ #    if defined(__MINGW64__)
+ #      define EXTERN_PREFIX ""
+ #    else

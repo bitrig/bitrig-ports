@@ -1,0 +1,12 @@
+$OpenBSD$
+--- m4/attributes.m4.orig	Thu Jul 26 07:23:31 CEST 2012
++++ m4/attributes.m4	Thu Jul 26 07:23:31 CEST 2012
+@@ -113,7 +113,7 @@ AC_DEFUN([CC_NOUNDEFINED], [
+      dnl MinGW platforms: for libraries required -no-undefined,
+      dnl use it only for libraries in mingw32-w64 
+ 
+-     *-freebsd* | *-openbsd*) ;;
++     *-freebsd* | *-openbsd* | *-bitrig*) ;;
+      *-mingw* | *-cygwin*)
+         LDFLAGS_NOUNDEFINED="-no-undefined"
+         ;;

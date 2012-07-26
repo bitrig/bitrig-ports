@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/video_out/vidix/vidixlib.c.orig	Thu Jul 26 07:35:27 CEST 2012
++++ src/video_out/vidix/vidixlib.c	Thu Jul 26 07:35:27 CEST 2012
+@@ -81,7 +81,7 @@ extern unsigned   vdlGetVersion( void )
+ static void* dlsymm(void* handle, const char* fce)
+ {
+   char b[100];
+-#if defined(__OpenBSD__) && !defined(__ELF__)
++#if (defined(__OpenBSD__) || defined(__Bitrig__)) && !defined(__ELF__)
+   b[0] = '_';
+   b[1] = 0;
+ #else

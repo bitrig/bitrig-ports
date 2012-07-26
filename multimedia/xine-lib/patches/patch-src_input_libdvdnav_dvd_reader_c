@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/input/libdvdnav/dvd_reader.c.orig	Thu Jul 26 07:31:05 CEST 2012
++++ src/input/libdvdnav/dvd_reader.c	Thu Jul 26 07:31:05 CEST 2012
+@@ -60,7 +60,7 @@ static inline int _private_gettimeofday( struct timeva
+ #define lseek64 _lseeki64
+ #endif
+  
+-#if defined(__FreeBSD_kernel__) || defined(__OpenBSD__) || defined(__NetBSD__) || defined(__bsdi__)|| defined(__DARWIN__)
++#if defined(__FreeBSD_kernel__) || defined(__OpenBSD__) || defined (__Bitrig__) || defined(__NetBSD__) || defined(__bsdi__)|| defined(__DARWIN__)
+ #define SYS_BSD 1
+ #endif
+ 

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- misc/cdda_server.c.orig	Thu Jul 26 07:21:50 CEST 2012
++++ misc/cdda_server.c	Thu Jul 26 07:21:50 CEST 2012
+@@ -364,7 +364,7 @@ int dvdinput_setup(void)
+ #endif
+ 
+   if(dvdcss_library != NULL) {
+-#if defined(__OpenBSD__) && !defined(__ELF__)
++#if (defined(__OpenBSD__) || defined(__Bitrig__)) && !defined(__ELF__)
+ #define U_S "_"
+ #else
+ #define U_S

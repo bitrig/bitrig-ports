@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/input/libdvdnav/bswap.h.orig	Thu Jul 26 07:30:36 CEST 2012
++++ src/input/libdvdnav/bswap.h	Thu Jul 26 07:30:36 CEST 2012
+@@ -59,7 +59,7 @@
+ #define B2N_32(x) BE32TOH(x)
+ #define B2N_64(x) BE64TOH(x)
+ 
+-#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <sys/endian.h>
+ #define B2N_16(x) x = swap16(x)
+ #define B2N_32(x) x = swap32(x)

@@ -1,0 +1,21 @@
+$OpenBSD$
+--- src/input/input_vcd.c.orig	Thu Jul 26 07:29:23 CEST 2012
++++ src/input/input_vcd.c	Thu Jul 26 07:29:23 CEST 2012
+@@ -53,7 +53,7 @@
+ 
+ #if defined(__sun)
+ #define	CDROM	       "/vol/dev/aliases/cdrom0"
+-#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
+ #define CDROM          "/dev/rcd0c"
+ #else
+ /* for FreeBSD make a link to the right devnode, like /dev/acd0c */
+@@ -862,7 +862,7 @@ static int vcd_plugin_open (input_plugin_t *this_gen) 
+   this->cur_min   = this->cls->tocent[this->cur_track].cdte_addr.msf.minute;
+   this->cur_sec   = this->cls->tocent[this->cur_track].cdte_addr.msf.second;
+   this->cur_frame = this->cls->tocent[this->cur_track].cdte_addr.msf.frame;
+-#elif defined (__OpenBSD__) || defined(__NetBSD__)
++#elif defined (__OpenBSD__) || defined (__Bitrig__) || defined(__NetBSD__)
+   this->cur_min   = this->cls->tocent[this->cur_track + 1 - this->cls->tochdr.starting_track].addr.msf.minute;
+   this->cur_sec   = this->cls->tocent[this->cur_track + 1 - this->cls->tochdr.starting_track].addr.msf.second;
+   this->cur_frame = this->cls->tocent[this->cur_track + 1 - this->cls->tochdr.starting_track].addr.msf.frame;

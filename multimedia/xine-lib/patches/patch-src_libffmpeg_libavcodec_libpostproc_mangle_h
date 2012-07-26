@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/libffmpeg/libavcodec/libpostproc/mangle.h.orig	Thu Jul 26 07:34:57 CEST 2012
++++ src/libffmpeg/libavcodec/libpostproc/mangle.h	Thu Jul 26 07:34:57 CEST 2012
+@@ -10,7 +10,7 @@
+ /* Feel free to add more to the list, eg. a.out IMO */
+ /* Use rip-relative addressing if compiling PIC code on x86-64. */
+ #if defined(__CYGWIN__) || defined(__MINGW32__) || defined(__OS2__) || \
+-   (defined(__OpenBSD__) && !defined(__ELF__))
++   ((defined(__OpenBSD__) || defined (__Bitrig__)) && !defined(__ELF__))
+ #if defined(ARCH_X86_64) && defined(PIC)
+ #define MANGLE(a) "_" #a"(%%rip)"
+ #else

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/video_out/libdha/sysdep/AsmMacros_powerpc.h.orig	Thu Jul 26 07:36:04 CEST 2012
++++ src/video_out/libdha/sysdep/AsmMacros_powerpc.h	Thu Jul 26 07:36:04 CEST 2012
+@@ -7,7 +7,7 @@
+ #ifndef __ASM_MACROS_POWERPC_H
+ #define __ASM_MACROS_POWERPC_H
+ 
+-#if defined(Lynx) || defined(__OpenBSD__)
++#if defined(Lynx) || defined(__OpenBSD__) || defined(__Bitrig__)
+ 
+ extern unsigned char *ioBase;
+ 

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/input/input_bluray.c.orig	Thu Jul 26 07:33:15 CEST 2012
++++ src/input/input_bluray.c	Thu Jul 26 07:33:15 CEST 2012
+@@ -77,7 +77,7 @@
+ #define BLURAY_MNT_PATH "/mnt/bluray"
+ #if defined(__sun)
+ #define BLURAY_PATH "/vol/dev/aliases/cdrom0"
+-#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined (__Bitrig__) 
+ #define BLURAY_PATH "/dev/rcd0c"
+ #else
+ #define BLURAY_PATH "/dev/dvd"

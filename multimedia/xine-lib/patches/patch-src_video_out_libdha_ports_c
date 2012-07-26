@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/video_out/libdha/ports.c.orig	Thu Jul 26 07:36:39 CEST 2012
++++ src/video_out/libdha/ports.c	Thu Jul 26 07:36:39 CEST 2012
+@@ -75,7 +75,7 @@
+ #include "sysdep/pci_386bsd.c"
+ #elif defined (__NetBSD__)
+ #include "sysdep/pci_netbsd.c"
+-#elif defined (__OpenBSD__)
++#elif defined (__OpenBSD__) || defined(__Bitrig__)
+ #include "sysdep/pci_openbsd.c"
+ #elif defined (__bsdi__)
+ #include "sysdep/pci_bsdi.c"

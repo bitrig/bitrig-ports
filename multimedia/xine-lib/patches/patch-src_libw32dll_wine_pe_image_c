@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/libw32dll/wine/pe_image.c.orig	Thu Jul 26 07:39:08 CEST 2012
++++ src/libw32dll/wine/pe_image.c	Thu Jul 26 07:39:08 CEST 2012
+@@ -900,7 +900,7 @@ void PE_UnloadLibrary(WINE_MODREF *wm)
+  */
+ static void extend_stack_for_dll_alloca(void)
+ {
+-#if !defined(__FreeBSD__) && !defined(__OpenBSD__)
++#if !defined(__FreeBSD__) && !defined(__OpenBSD__) && !defined(__Bitrig__)
+     void* mem=alloca(0x20000);
+     *(int*)mem=0x1234;
+ #endif

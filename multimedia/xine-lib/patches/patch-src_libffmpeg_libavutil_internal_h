@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/libffmpeg/libavutil/internal.h.orig	Thu Jul 26 07:34:21 CEST 2012
++++ src/libffmpeg/libavutil/internal.h	Thu Jul 26 07:34:21 CEST 2012
+@@ -157,7 +157,7 @@
+ 
+ // Use rip-relative addressing if compiling PIC code on x86-64.
+ #if defined(__MINGW32__) || defined(__CYGWIN__) || \
+-    defined(__OS2__) || (defined (__OpenBSD__) && !defined(__ELF__))
++    defined(__OS2__) || (((defined(__OpenBSD__) || defined(__Bitrig__)) && !defined(__ELF__))
+ #    if defined(ARCH_X86_64) && defined(PIC)
+ #        define MANGLE(a) "_" #a"(%%rip)"
+ #    else
