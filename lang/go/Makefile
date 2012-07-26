@@ -9,6 +9,8 @@ EXTRACT_SUFX =		.src.tar.gz
 DISTNAME = 		go${VERSION}
 PKGNAME = 		go-${VERSION}
 CATEGORIES =		lang
+REVISION =		0
+
 
 HOMEPAGE =		http://www.golang.org/
 
@@ -79,7 +81,7 @@ do-install:
 			-exec ${INSTALL_DATA} {} \
 			${GOROOT} \;
 
-.	for dir in doc include lib src pkg
+.	for dir in doc include lib src pkg misc
 		@cd ${WRKDIST} && \
 			find ${dir} -type d \
 				-exec ${INSTALL_DATA_DIR} \
