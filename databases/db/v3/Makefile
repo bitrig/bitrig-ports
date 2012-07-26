@@ -14,6 +14,7 @@ PKGSPEC-main =	db->=3,<4|db->=3v0,<4v0
 PKGSPEC-tcl =	db-tcl->=3,<4|db-tcl->=3v0,<4v0
 
 CONFIGURE_STYLE=gnu dest
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/dist/
 
 DEST_SUBDIR=
 WANTLIB=c
