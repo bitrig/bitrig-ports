@@ -27,7 +27,7 @@ USE_LIBTOOL=	Yes
 USE_GMAKE=	Yes
 
 CONFIGURE_STYLE=gnu
-CONFIGURE_ARGS=	--disable-debug
+CONFIGURE_ARGS=	--disable-debug --disable-werror
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		LIBS="-pthread"
