@@ -1,6 +1,6 @@
-$OpenBSD: patch-lto-plugin_Makefile_in,v 1.3 2012/03/31 20:02:03 pascal Exp $
---- lto-plugin/Makefile.in.orig	Tue Jan  3 14:15:21 2012
-+++ lto-plugin/Makefile.in	Sun Mar 11 19:10:42 2012
+$OpenBSD$
+--- lto-plugin/Makefile.in.orig	Tue Jan  3 07:15:21 2012
++++ lto-plugin/Makefile.in	Wed Jul 25 09:48:02 2012
 @@ -241,9 +241,11 @@ liblto_plugin_la_SOURCES = lto-plugin.c
  liblto_plugin_la_LIBADD = \
  	$(if $(wildcard ../libiberty/pic/libiberty.a),$(Wc)../libiberty/pic/libiberty.a,)

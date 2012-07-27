@@ -1,6 +1,6 @@
-$OpenBSD: patch-libgo_configure,v 1.5 2012/04/06 07:50:32 pascal Exp $
---- libgo/configure.orig	Mon Feb 21 05:17:20 2011
-+++ libgo/configure	Wed Apr  4 23:09:24 2012
+$OpenBSD$
+--- libgo/configure.orig	Sun Feb 20 22:17:20 2011
++++ libgo/configure	Wed Jul 25 09:48:01 2012
 @@ -644,6 +644,8 @@ LIBGO_IS_LINUX_FALSE
  LIBGO_IS_LINUX_TRUE
  LIBGO_IS_FREEBSD_FALSE
@@ -10,6 +10,60 @@ $OpenBSD: patch-libgo_configure,v 1.5 2012/04/06 07:50:32 pascal Exp $
  LIBGO_IS_DARWIN_FALSE
  LIBGO_IS_DARWIN_TRUE
  LIBFFIINCS
+@@ -5099,7 +5101,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -5529,7 +5531,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -5913,7 +5915,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -8529,7 +8531,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -9322,7 +9324,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -10310,7 +10312,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -10320,7 +10322,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
@@ -19,6 +73,24 @@ $OpenBSD: patch-libgo_configure,v 1.5 2012/04/06 07:50:32 pascal Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
+@@ -11945,7 +11947,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -12699,7 +12701,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_GO=yes
+ 	hardcode_shlibpath_var_GO=no
 @@ -13213,6 +13215,7 @@ fi
  
  is_darwin=no
@@ -31,7 +103,7 @@ $OpenBSD: patch-libgo_configure,v 1.5 2012/04/06 07:50:32 pascal Exp $
  case ${host} in
    *-*-darwin*)   is_darwin=yes;  GOOS=darwin ;;
    *-*-freebsd*)  is_freebsd=yes; GOOS=freebsd ;;
-+  *-*-openbsd*)  is_openbsd=yes; GOOS=openbsd ;;
++  *-*-openbsd* | *-*-bitrig*)  is_openbsd=yes; GOOS=openbsd ;;
    *-*-linux*)    is_linux=yes;   GOOS=linux ;;
    *-*-rtems*)    is_rtems=yes;   GOOS=rtems ;;
    *-*-solaris2*) is_solaris=yes; GOOS=solaris ;;

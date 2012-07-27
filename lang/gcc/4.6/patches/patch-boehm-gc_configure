@@ -1,6 +1,51 @@
-$OpenBSD: patch-boehm-gc_configure,v 1.5 2012/02/28 20:00:16 pascal Exp $
---- boehm-gc/configure.orig	Wed Oct 26 11:30:24 2011
-+++ boehm-gc/configure	Mon Feb 20 21:59:55 2012
+$OpenBSD$
+--- boehm-gc/configure.orig	Thu Mar  1 06:03:46 2012
++++ boehm-gc/configure	Wed Jul 25 13:39:04 2012
+@@ -5661,7 +5661,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -6091,7 +6091,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -6475,7 +6475,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -8994,7 +8994,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -9796,7 +9796,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
 @@ -10756,7 +10756,7 @@ netbsd*)
    need_version=no
    if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
@@ -10,6 +55,33 @@ $OpenBSD: patch-boehm-gc_configure,v 1.5 2012/02/28 20:00:16 pascal Exp $
      dynamic_linker='NetBSD (a.out) ld.so'
    else
      library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
+@@ -10787,7 +10787,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -12794,7 +12794,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd* | bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -14470,7 +14470,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -14480,7 +14480,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
@@ -23,7 +95,7 @@ $OpenBSD: patch-boehm-gc_configure,v 1.5 2012/02/28 20:00:16 pascal Exp $
  	{ $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: \"Only HP-UX 11 POSIX threads are supported.\"" >&5
  $as_echo "$as_me: WARNING: \"Only HP-UX 11 POSIX threads are supported.\"" >&2;}
  	;;
-+      *-*-openbsd*)
++      *-*-openbsd* | *-*-bitrig*)
 +	$as_echo "#define GC_OPENBSD_THREADS 1" >>confdefs.h
 +	THREADLIBS=-pthread
 +	INCLUDES="$INCLUDES -pthread"

@@ -1,6 +1,6 @@
-$OpenBSD: patch-gcc_toplev_c,v 1.1 2012/02/16 21:30:15 pascal Exp $
---- gcc/toplev.c.orig	Fri Jan 20 14:23:40 2012
-+++ gcc/toplev.c	Fri Jan 20 14:24:30 2012
+$OpenBSD$
+--- gcc/toplev.c.orig	Thu Feb  3 02:29:03 2011
++++ gcc/toplev.c	Wed Jul 25 09:48:01 2012
 @@ -1580,6 +1580,8 @@ process_options (void)
  
    /* Targets must be able to place spill slots at lower addresses.  If the

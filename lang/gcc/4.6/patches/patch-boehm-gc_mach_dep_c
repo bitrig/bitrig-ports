@@ -1,6 +1,6 @@
-$OpenBSD: patch-boehm-gc_mach_dep_c,v 1.2 2011/11/22 21:46:39 pascal Exp $
---- boehm-gc/mach_dep.c.orig	Wed Jan 25 04:03:14 2006
-+++ boehm-gc/mach_dep.c	Tue Nov 22 14:12:40 2011
+$OpenBSD$
+--- boehm-gc/mach_dep.c.orig	Tue Jan 24 21:03:14 2006
++++ boehm-gc/mach_dep.c	Wed Jul 25 09:48:01 2012
 @@ -27,7 +27,7 @@
  #   endif
  # endif

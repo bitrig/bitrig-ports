@@ -1,6 +1,6 @@
-$OpenBSD: patch-gcc_ada_mlib-utl_adb,v 1.1.1.1 2011/11/14 13:00:56 pascal Exp $
---- gcc/ada/mlib-utl.adb.orig	Mon Nov 14 13:41:37 2011
-+++ gcc/ada/mlib-utl.adb	Mon Nov 14 13:41:45 2011
+$OpenBSD$
+--- gcc/ada/mlib-utl.adb.orig	Tue Jun 22 07:32:34 2010
++++ gcc/ada/mlib-utl.adb	Wed Jul 25 09:48:01 2012
 @@ -412,7 +412,7 @@ package body MLib.Utl is
        if Driver_Name = No_Name then
           if Gcc_Exec = null then

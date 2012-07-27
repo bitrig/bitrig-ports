@@ -104,7 +104,7 @@ LANGS := ${LANGS},go
 .endif
 
 CONFIGURE_STYLE =		gnu
-MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} ${WRKSRC}/gcc
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} ${WRKSRC}/gcc ${WRKSRC}/libjava/classpath
 
 EXTRA_ENV += am_cv_func_iconv=no JAR=no
 EXTRA_ENV += ac_cv_prog_M4=/usr/bin/m4
@@ -134,6 +134,7 @@ CONFIGURE_ARGS += \
 	--enable-threads=posix \
 	--enable-wchar_t \
 	--with-gmp="${LOCALBASE}" \
+	--disable-libstdcxx-pch \
 	--enable-languages=${LANGS}
 
 # This is needed, as internal cpp is no longer compatible with the
@@ -196,7 +197,7 @@ LIB_DEPENDS +=		devel/gmp>=4.2 \
 LIB_DEPENDS-estdc =
 
 .if ${MACHINE_ARCH:Mamd64}
-CONFIG = x86_64-unknown-openbsd${OSREV}
+CONFIG = x86_64-unknown-bitrig${OSREV}
 .endif
 
 post-extract:

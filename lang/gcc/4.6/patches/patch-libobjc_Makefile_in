@@ -1,6 +1,6 @@
-$OpenBSD: patch-libobjc_Makefile_in,v 1.1.1.1 2011/11/14 13:00:57 pascal Exp $
---- libobjc/Makefile.in.orig	Sat Nov 12 14:09:37 2011
-+++ libobjc/Makefile.in	Sat Nov 12 14:11:18 2011
+$OpenBSD$
+--- libobjc/Makefile.in.orig	Thu Dec 23 05:26:14 2010
++++ libobjc/Makefile.in	Wed Jul 25 09:48:02 2012
 @@ -321,18 +321,20 @@ install-html:
  install-pdf:
  install-info:

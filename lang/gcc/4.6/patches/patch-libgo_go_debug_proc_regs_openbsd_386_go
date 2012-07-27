@@ -1,6 +1,6 @@
-$OpenBSD: patch-libgo_go_debug_proc_regs_openbsd_386_go,v 1.1 2011/11/19 22:19:53 pascal Exp $
---- libgo/go/debug/proc/regs_openbsd_386.go.orig	Thu Nov 17 23:37:57 2011
-+++ libgo/go/debug/proc/regs_openbsd_386.go	Thu Nov 17 23:37:34 2011
+$OpenBSD$
+--- libgo/go/debug/proc/regs_openbsd_386.go.orig	Wed Jul 25 09:48:01 2012
++++ libgo/go/debug/proc/regs_openbsd_386.go	Wed Jul 25 09:48:01 2012
 @@ -0,0 +1,5 @@
 +// Copyright 2009 The Go Authors.  All rights reserved.
 +// Use of this source code is governed by a BSD-style

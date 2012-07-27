@@ -1,6 +1,6 @@
-$OpenBSD: patch-libgo_syscalls_syscall_openbsd_ppc_go,v 1.1 2011/11/19 22:19:53 pascal Exp $
---- libgo/syscalls/syscall_openbsd_ppc.go.orig	Fri Nov 18 11:35:33 2011
-+++ libgo/syscalls/syscall_openbsd_ppc.go	Fri Nov 18 11:35:12 2011
+$OpenBSD$
+--- libgo/syscalls/syscall_openbsd_ppc.go.orig	Wed Jul 25 09:48:01 2012
++++ libgo/syscalls/syscall_openbsd_ppc.go	Wed Jul 25 09:48:01 2012
 @@ -0,0 +1,5 @@
 +// Copyright 2009 The Go Authors.  All rights reserved.
 +// Use of this source code is governed by a BSD-style

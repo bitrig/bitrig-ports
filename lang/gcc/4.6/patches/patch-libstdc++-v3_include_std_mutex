@@ -1,6 +1,6 @@
-$OpenBSD: patch-libstdc++-v3_include_std_mutex,v 1.1 2012/05/14 23:39:39 pascal Exp $
---- libstdc++-v3/include/std/mutex.orig	Fri May  4 18:32:34 2012
-+++ libstdc++-v3/include/std/mutex	Fri May  4 18:33:39 2012
+$OpenBSD$
+--- libstdc++-v3/include/std/mutex.orig	Sun Jan 30 16:39:36 2011
++++ libstdc++-v3/include/std/mutex	Wed Jul 25 09:48:02 2012
 @@ -789,7 +789,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
    __get_once_mutex();
  #endif

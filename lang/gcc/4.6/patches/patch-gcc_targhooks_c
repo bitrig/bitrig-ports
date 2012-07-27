@@ -1,6 +1,6 @@
-$OpenBSD: patch-gcc_targhooks_c,v 1.1 2012/02/16 21:30:15 pascal Exp $
---- gcc/targhooks.c.orig	Fri Jan 14 16:02:20 2011
-+++ gcc/targhooks.c	Sat Feb 11 08:52:32 2012
+$OpenBSD$
+--- gcc/targhooks.c.orig	Fri Jan 14 09:02:20 2011
++++ gcc/targhooks.c	Wed Jul 25 09:48:01 2012
 @@ -56,6 +56,7 @@ along with GCC; see the file COPYING3.  If not see
  #include "tree.h"
  #include "expr.h"

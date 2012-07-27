@@ -1,6 +1,6 @@
-$OpenBSD: patch-gcc_lto_lto_c,v 1.2 2012/03/31 20:02:03 pascal Exp $
---- gcc/lto/lto.c.orig	Tue Dec 13 23:03:05 2011
-+++ gcc/lto/lto.c	Sun Mar 11 19:10:40 2012
+$OpenBSD$
+--- gcc/lto/lto.c.orig	Tue Dec 13 16:03:05 2011
++++ gcc/lto/lto.c	Wed Jul 25 09:48:01 2012
 @@ -2483,4 +2483,10 @@ lto_main (void)
      }
  }

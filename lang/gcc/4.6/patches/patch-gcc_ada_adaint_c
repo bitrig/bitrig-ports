@@ -1,6 +1,6 @@
-$OpenBSD: patch-gcc_ada_adaint_c,v 1.1 2012/02/21 08:09:30 pascal Exp $
---- gcc/ada/adaint.c.orig	Mon Feb 20 20:25:53 2012
-+++ gcc/ada/adaint.c	Mon Feb 20 20:27:23 2012
+$OpenBSD$
+--- gcc/ada/adaint.c.orig	Mon Oct 25 10:26:02 2010
++++ gcc/ada/adaint.c	Wed Jul 25 09:48:01 2012
 @@ -3686,3 +3686,9 @@ void *__gnat_lwp_self (void)
     return (void *) syscall (__NR_gettid);
  }

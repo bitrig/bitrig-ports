@@ -1,6 +1,6 @@
-$OpenBSD: patch-gcc_config_openbsd_h,v 1.2 2012/04/23 14:16:34 pascal Exp $
---- gcc/config/openbsd.h.orig	Wed Dec 22 13:06:01 2010
-+++ gcc/config/openbsd.h	Thu Apr 12 14:17:05 2012
+$OpenBSD$
+--- gcc/config/openbsd.h.orig	Wed Dec 22 06:06:01 2010
++++ gcc/config/openbsd.h	Wed Jul 25 09:48:01 2012
 @@ -109,9 +109,9 @@ while (0)
     This two-stage defines makes it easy to pick that for targets that
     have subspecs.  */

@@ -1,6 +1,6 @@
-$OpenBSD: patch-libmudflap_mf-runtime_h,v 1.1.1.1 2011/11/14 13:00:57 pascal Exp $
---- libmudflap/mf-runtime.h.orig	Sat Nov 12 14:08:49 2011
-+++ libmudflap/mf-runtime.h	Sat Nov 12 14:09:20 2011
+$OpenBSD$
+--- libmudflap/mf-runtime.h.orig	Thu Apr  9 10:00:19 2009
++++ libmudflap/mf-runtime.h	Wed Jul 25 09:48:02 2012
 @@ -31,7 +31,7 @@ see the files COPYING3 and COPYING.RUNTIME respectivel
  #define MF_RUNTIME_H
  

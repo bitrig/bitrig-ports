@@ -1,6 +1,6 @@
-$OpenBSD: patch-libstdc++-v3_src_Makefile_in,v 1.1.1.1 2011/11/14 13:00:57 pascal Exp $
---- libstdc++-v3/src/Makefile.in.orig	Wed Mar 16 17:59:24 2011
-+++ libstdc++-v3/src/Makefile.in	Sat Nov 12 21:05:50 2011
+$OpenBSD$
+--- libstdc++-v3/src/Makefile.in.orig	Wed Mar 16 11:59:24 2011
++++ libstdc++-v3/src/Makefile.in	Wed Jul 25 09:48:02 2012
 @@ -340,7 +340,7 @@ WARN_CXXFLAGS = \
  AM_CPPFLAGS = $(GLIBCXX_INCLUDES)
  

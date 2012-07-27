@@ -1,6 +1,6 @@
-$OpenBSD: patch-boehm-gc_tests_test_c,v 1.1.1.1 2011/11/14 13:00:57 pascal Exp $
---- boehm-gc/tests/test.c.orig	Sat Nov 12 10:44:45 2011
-+++ boehm-gc/tests/test.c	Sat Nov 12 10:45:14 2011
+$OpenBSD$
+--- boehm-gc/tests/test.c.orig	Fri Dec 10 04:09:10 2010
++++ boehm-gc/tests/test.c	Wed Jul 25 09:48:01 2012
 @@ -1804,7 +1804,8 @@ main()
  
      pthread_attr_init(&attr);

@@ -1,6 +1,6 @@
-$OpenBSD: patch-libffi_Makefile_in,v 1.1.1.1 2011/11/14 13:00:57 pascal Exp $
---- libffi/Makefile.in.orig	Sat Nov 12 13:53:18 2011
-+++ libffi/Makefile.in	Sat Nov 12 13:54:50 2011
+$OpenBSD$
+--- libffi/Makefile.in.orig	Thu Mar  1 06:03:46 2012
++++ libffi/Makefile.in	Wed Jul 25 09:48:01 2012
 @@ -474,7 +474,8 @@ libffi_convenience_la_SOURCES = $(libffi_la_SOURCES)
  nodist_libffi_convenience_la_SOURCES = $(nodist_libffi_la_SOURCES)
  AM_CFLAGS = -Wall -g -fexceptions

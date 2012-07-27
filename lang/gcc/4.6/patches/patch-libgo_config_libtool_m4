@@ -1,6 +1,6 @@
-$OpenBSD: patch-libgo_config_libtool_m4,v 1.1 2012/01/26 13:17:22 pascal Exp $
---- libgo/config/libtool.m4.orig	Wed Jan 25 10:24:45 2012
-+++ libgo/config/libtool.m4	Wed Jan 25 10:24:56 2012
+$OpenBSD$
+--- libgo/config/libtool.m4.orig	Sun Feb 13 05:45:53 2011
++++ libgo/config/libtool.m4	Wed Jul 25 09:48:01 2012
 @@ -2546,7 +2546,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac

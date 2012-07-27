@@ -1,6 +1,6 @@
-$OpenBSD: patch-zlib_configure,v 1.1 2012/01/26 13:17:22 pascal Exp $
---- zlib/configure.orig	Wed Jan 25 17:52:40 2012
-+++ zlib/configure	Wed Jan 25 17:52:47 2012
+$OpenBSD$
+--- zlib/configure.orig	Sun Nov 20 15:24:07 2011
++++ zlib/configure	Wed Jul 25 09:48:02 2012
 @@ -9793,7 +9793,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac

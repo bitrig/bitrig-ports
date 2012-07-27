@@ -1,6 +1,6 @@
-$OpenBSD: patch-gcc_config_t-openbsd,v 1.1.1.1 2011/11/14 13:00:57 pascal Exp $
---- gcc/config/t-openbsd.orig	Sat Nov 12 13:45:14 2011
-+++ gcc/config/t-openbsd	Sat Nov 12 13:45:45 2011
+$OpenBSD$
+--- gcc/config/t-openbsd.orig	Tue Sep 23 13:56:00 2003
++++ gcc/config/t-openbsd	Wed Jul 25 09:48:01 2012
 @@ -1,2 +1,7 @@
  # We don't need GCC's own include files.
 -USER_H =

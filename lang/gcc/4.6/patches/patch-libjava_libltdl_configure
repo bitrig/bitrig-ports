@@ -1,6 +1,33 @@
-$OpenBSD: patch-libjava_libltdl_configure,v 1.2 2012/01/26 13:17:22 pascal Exp $
---- libjava/libltdl/configure.orig	Wed Oct 26 11:30:24 2011
-+++ libjava/libltdl/configure	Wed Jan 25 21:13:59 2012
+$OpenBSD$
+--- libjava/libltdl/configure.orig	Thu Mar  1 06:03:46 2012
++++ libjava/libltdl/configure	Wed Jul 25 11:18:19 2012
+@@ -4675,7 +4675,7 @@ nto-qnx*)
+   lt_cv_deplibs_check_method=unknown
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -5508,7 +5508,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -6141,7 +6141,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="\$RANLIB -t \$oldlib~$old_postinstall_cmds"
+     ;;
+   *)
 @@ -6891,9 +6891,6 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
        with_gnu_ld=no
      fi
@@ -11,7 +38,22 @@ $OpenBSD: patch-libjava_libltdl_configure,v 1.2 2012/01/26 13:17:22 pascal Exp $
    esac
  
    ld_shlibs=yes
-@@ -8183,7 +8180,7 @@ openbsd*)
+@@ -7469,7 +7466,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       hardcode_direct=yes
+       hardcode_shlibpath_var=no
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -8178,12 +8175,12 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
    need_lib_prefix=no
    need_version=no
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext}$versuffix'
@@ -20,3 +62,12 @@ $OpenBSD: patch-libjava_libltdl_configure,v 1.2 2012/01/26 13:17:22 pascal Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
+@@ -10730,7 +10727,7 @@ else
+   netbsd*)
+     libltdl_cv_sys_dlopen_deplibs=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     libltdl_cv_sys_dlopen_deplibs=yes
+     ;;
+   osf[1234]*)

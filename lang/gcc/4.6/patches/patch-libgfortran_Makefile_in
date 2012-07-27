@@ -1,6 +1,6 @@
-$OpenBSD: patch-libgfortran_Makefile_in,v 1.1.1.1 2011/11/14 13:00:57 pascal Exp $
---- libgfortran/Makefile.in.orig	Sat Nov 12 14:00:34 2011
-+++ libgfortran/Makefile.in	Sat Nov 12 14:01:28 2011
+$OpenBSD$
+--- libgfortran/Makefile.in.orig	Thu Mar  1 06:03:46 2012
++++ libgfortran/Makefile.in	Wed Jul 25 09:48:01 2012
 @@ -485,7 +485,8 @@ LTLDFLAGS = $(shell $(SHELL) $(top_srcdir)/../libtool-
  toolexeclib_LTLIBRARIES = libgfortran.la
  toolexeclib_DATA = libgfortran.spec

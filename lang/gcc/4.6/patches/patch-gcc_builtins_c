@@ -1,6 +1,6 @@
-$OpenBSD: patch-gcc_builtins_c,v 1.1 2012/03/31 20:02:03 pascal Exp $
---- gcc/builtins.c.orig	Sun Mar 11 19:11:50 2012
-+++ gcc/builtins.c	Sun Mar 11 19:12:42 2012
+$OpenBSD$
+--- gcc/builtins.c.orig	Thu Oct  6 14:57:52 2011
++++ gcc/builtins.c	Wed Jul 25 09:48:01 2012
 @@ -6112,9 +6112,11 @@ expand_builtin (tree exp, rtx target, rtx subtarget, e
        break;
  
