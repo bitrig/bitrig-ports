@@ -700,7 +700,6 @@ lib/gcc/${CONFIG}/${V}/include-fixed/stddef.h
 lib/gcc/${CONFIG}/${V}/include-fixed/stdio.h
 lib/gcc/${CONFIG}/${V}/include-fixed/stdlib.h
 lib/gcc/${CONFIG}/${V}/include-fixed/sys/
-lib/gcc/${CONFIG}/${V}/include-fixed/sys/param.h
 lib/gcc/${CONFIG}/${V}/include-fixed/sys/types.h
 lib/gcc/${CONFIG}/${V}/include-fixed/syslimits.h
 lib/gcc/${CONFIG}/${V}/include-fixed/wchar.h
