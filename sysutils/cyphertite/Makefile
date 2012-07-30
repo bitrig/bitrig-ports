@@ -3,6 +3,7 @@
 COMMENT =		tar-like secure remote deduplicating archiver
 
 DISTNAME =		cyphertite-1.3.0
+REVISION =		0
 CATEGORIES =		sysutils archivers security
 
 HOMEPAGE =		https://www.cyphertite.com/
@@ -31,5 +32,8 @@ LIB_DEPENDS =		archivers/libshrink>=0.5.0	\
 NO_REGRESS =		Yes
 
 FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
+
+post-extract:
+	@cp ${WRKDIST}/config/Makefile.openbsd ${WRKDIST}/config/Makefile.bitrig
 
 .include <bsd.port.mk>

@@ -19,7 +19,6 @@ include/cyphertite/ctutil.h
 include/cyphertite/cyphertite.h
 lib/libctutil.a
 lib/libctutil_p.a
-lib/libctutil_pic.a
 lib/libcyphertite.a
 lib/libcyphertite_p.a
 @man man/man1/ct.1
