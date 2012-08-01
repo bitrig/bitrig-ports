@@ -1,0 +1,74 @@
+--- acinclude.m4.orig	Fri Jul 27 15:18:50 2012
++++ acinclude.m4	Fri Jul 27 15:23:05 2012
+@@ -4228,7 +4228,7 @@ AC_DEFUN([KDE_SHADOWPASSWD], [
+   if test "x$use_shadow" = xyes || 
+      ( test "x$use_pam" = xyes && test "x$ac_use_shadow" = xyes ); then
+       case $host in
+-      *-*-freebsd* | *-*-netbsd* | *-*-openbsd*)
++      *-*-freebsd* | *-*-netbsd* | *-*-openbsd* | *-*-bitrig*)
+ 	SETUIDFLAGS="-m 4755 -o root";;
+       *)
+ 	SETUIDFLAGS="-m 4755";;
+@@ -4420,7 +4420,7 @@ AC_DEFUN([KDE_CHECK_LIBPTHREAD],
+   dnl Un-special-case for FreeBSD.
+   if test "x$LIBPTHREAD" = "xPTHREAD" ; then
+     case $host_os in
+-	openbsd*) LIBPTHREAD="-pthread" ;;
++	openbsd* | bitrig*) LIBPTHREAD="-pthread" ;;
+ 	*) LIBPTHREAD="" ;;
+     esac
+   fi
+@@ -6190,7 +6190,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="\$RANLIB -t \$oldlib~$old_postinstall_cmds"
+     ;;
+   *)
+@@ -7481,7 +7481,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   need_lib_prefix=no
+   need_version=no
+@@ -8211,7 +8211,7 @@ nto-qnx*)
+   lt_cv_deplibs_check_method=unknown
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   lt_cv_file_magic_cmd=/usr/bin/file
+   lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
+   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -11037,7 +11037,7 @@ ifelse([$1],[CXX],[
+       with_gnu_ld=no
+     fi
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -11515,7 +11515,7 @@ EOF
+       _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       _LT_AC_TAGVAR(hardcode_direct, $1)=yes
+       _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -12045,7 +12045,7 @@ AC_CACHE_CHECK([whether deplibs are loaded by dlopen],
+ 	linux*)
+ 	  libltdl_cv_sys_dlopen_deplibs=yes
+ 	  ;;
+-	netbsd*|openbsd*|freebsd*|dragonfly*)
++	netbsd*|openbsd*|bitrig*|freebsd*|dragonfly*)
+ 	  libltdl_cv_sys_dlopen_deplibs=yes
+ 	  ;;
+ 	solaris*)

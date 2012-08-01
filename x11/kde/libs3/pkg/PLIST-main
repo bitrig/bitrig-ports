@@ -840,8 +840,6 @@ ${KDE}/kimg_dds.la
 ${KDE}/kimg_dds.so
 ${KDE}/kimg_eps.la
 ${KDE}/kimg_eps.so
-${KDE}/kimg_exr.la
-${KDE}/kimg_exr.so
 ${KDE}/kimg_hdr.la
 ${KDE}/kimg_hdr.so
 ${KDE}/kimg_ico.la
@@ -5523,7 +5521,6 @@ share/mimelnk/image/x-dds.desktop
 share/mimelnk/image/x-djvu-2.desktop
 share/mimelnk/image/x-djvu.desktop
 share/mimelnk/image/x-eps.desktop
-share/mimelnk/image/x-exr.desktop
 share/mimelnk/image/x-hdr.desktop
 share/mimelnk/image/x-ico.desktop
 share/mimelnk/image/x-jng.desktop
@@ -5630,7 +5627,6 @@ share/services/bmp.kimgio
 share/services/data.protocol
 share/services/dds.kimgio
 share/services/eps.kimgio
-share/services/exr.kimgio
 share/services/file.protocol
 share/services/ftp.protocol
 share/services/ghelp.protocol

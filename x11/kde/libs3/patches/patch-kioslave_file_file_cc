@@ -1,11 +1,11 @@
-$OpenBSD: patch-kioslave_file_file_cc,v 1.5 2009/11/14 16:41:03 ajacoutot Exp $
---- kioslave/file/file.cc.orig	Fri Mar 17 11:19:07 2006
-+++ kioslave/file/file.cc	Sat Nov 14 16:51:13 2009
+$OpenBSD$
+--- kioslave/file/file.cc.orig	Fri Jul 27 12:08:01 CEST 2012
++++ kioslave/file/file.cc	Fri Jul 27 12:08:01 CEST 2012
 @@ -1445,6 +1445,9 @@ void FileProtocol::mount( bool _ro, const char *_fstyp
                                  dev.data()
                                  point.data()
                                  tmp );
-+#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
 +              buffer.sprintf( "%s %s %s -t %s %s %s 2>%s", "kdesu", mountProg.latin1(), readonly.data(),
 +                              fstype.data(), dev.data(), point.data(), tmp );
  #else
@@ -15,7 +15,7 @@ $OpenBSD: patch-kioslave_file_file_cc,v 1.5 2009/11/14 16:41:03 ajacoutot Exp $
          error( KIO::ERR_COULD_NOT_UNMOUNT, i18n("Could not find program \"umount\""));
          return;
      }
-+#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
 +    buffer.sprintf( "%s %s %s 2>%s", "kdesu", umountProg.latin1(), QFile::encodeName(KProcess::quote(_point)).data(), tmp );
 +#else
      buffer.sprintf( "%s %s 2>%s", umountProg.latin1(), QFile::encodeName(KProcess::quote(_point)).data(), tmp );

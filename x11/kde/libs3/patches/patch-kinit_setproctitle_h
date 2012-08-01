@@ -1,0 +1,21 @@
+$OpenBSD$
+--- kinit/setproctitle.h.orig	Fri Jul 27 13:19:24 CEST 2012
++++ kinit/setproctitle.h	Fri Jul 27 13:19:24 CEST 2012
+@@ -71,7 +71,7 @@
+ # define SPT_PADCHAR    '\0'    /* pad process title with nulls */
+ #endif
+ 
+-#if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__) || defined(__DragonFly__)
++#if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__) || defined(__Bitrig__) || defined(__DragonFly__)
+ # if defined(__NetBSD__) || defined(__DragonFly__)
+ #  undef SPT_TYPE
+ #  define SPT_TYPE      SPT_BUILTIN     /* setproctitle is in libc */
+@@ -91,7 +91,7 @@
+ #   define SPT_PADCHAR  '\0'            /* pad process title with nulls */
+ #  endif
+ # endif
+-# if defined(__OpenBSD__)
++# if defined(__OpenBSD__) || defined(__Bitrig__)
+ #  undef SPT_TYPE
+ #  define SPT_TYPE      SPT_BUILTIN     /* setproctitle is in libc */
+ # endif

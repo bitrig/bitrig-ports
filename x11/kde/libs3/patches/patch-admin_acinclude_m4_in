@@ -1,0 +1,12 @@
+$OpenBSD$
+--- admin/acinclude.m4.in.orig	Fri Jul 27 12:04:51 CEST 2012
++++ admin/acinclude.m4.in	Fri Jul 27 12:04:51 CEST 2012
+@@ -4228,7 +4228,7 @@ AC_DEFUN([KDE_SHADOWPASSWD], [
+   if test "x$use_shadow" = xyes || 
+      ( test "x$use_pam" = xyes && test "x$ac_use_shadow" = xyes ); then
+       case $host in
+-      *-*-freebsd* | *-*-netbsd* | *-*-openbsd*)
++      *-*-freebsd* | *-*-netbsd* | *-*-openbsd* | *-*-bitrig*)
+ 	SETUIDFLAGS="-m 4755 -o root";;
+       *)
+ 	SETUIDFLAGS="-m 4755";;

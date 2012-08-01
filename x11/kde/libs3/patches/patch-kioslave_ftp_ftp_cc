@@ -1,6 +1,6 @@
-$OpenBSD: patch-kioslave_ftp_ftp_cc,v 1.5 2007/05/25 09:49:54 espie Exp $
---- kioslave/ftp/ftp.cc.orig	Mon May 14 09:52:34 2007
-+++ kioslave/ftp/ftp.cc	Mon May 14 16:18:30 2007
+$OpenBSD$
+--- kioslave/ftp/ftp.cc.orig	Fri Jul 27 12:08:54 CEST 2012
++++ kioslave/ftp/ftp.cc	Fri Jul 27 12:08:54 CEST 2012
 @@ -757,6 +757,14 @@ bool Ftp::ftpSendCmd( const QCString& cmd, int maxretr
      return false;
    }

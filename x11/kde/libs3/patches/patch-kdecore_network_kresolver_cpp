@@ -1,11 +1,11 @@
-$OpenBSD: patch-kdecore_network_kresolver_cpp,v 1.11 2007/03/31 23:33:34 espie Exp $
---- kdecore/network/kresolver.cpp.orig	Sat Jul 22 10:16:40 2006
-+++ kdecore/network/kresolver.cpp	Sat Mar 31 15:09:22 2007
+$OpenBSD$
+--- kdecore/network/kresolver.cpp.orig	Fri Jul 27 13:31:53 CEST 2012
++++ kdecore/network/kresolver.cpp	Fri Jul 27 13:31:53 CEST 2012
 @@ -66,6 +66,10 @@
  QMutex getXXbyYYmutex;
  #endif
  
-+#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
 +#define USE_OPENBSD 1
 +#endif
 +
@@ -16,7 +16,7 @@ $OpenBSD: patch-kdecore_network_kresolver_cpp,v 1.11 2007/03/31 23:33:34 espie E
    pe = getprotobynumber(protonum);
  
  #else
-+# ifdef USE_OPENBSD // OpenBSD uses an HP/IBM/DEC API
++# if defined(USE_OPENBSD) || defined(USE_BITRIG) // OpenBSD uses an HP/IBM/DEC API
 +  struct protoent protobuf;
 +  struct protoent_data pdata;
 +  ::memset(&pdata, 0, sizeof pdata);
@@ -66,7 +66,7 @@ $OpenBSD: patch-kdecore_network_kresolver_cpp,v 1.11 2007/03/31 23:33:34 espie E
    pe = getprotobyname(protoname);
  
  #else
-+# ifdef USE_OPENBSD // OpenBSD uses an HP/IBM/DEC API
++# if defined(USE_OPENBSD) || defined(USE_BITRIG) // OpenBSD uses an HP/IBM/DEC API
 +  struct protoent protobuf;
 +  struct protoent_data pdata;
 +  ::memset(&pdata, 0, sizeof pdata);
@@ -115,7 +115,7 @@ $OpenBSD: patch-kdecore_network_kresolver_cpp,v 1.11 2007/03/31 23:33:34 espie E
    pe = getprotobyname(protoname);
  
  #else
-+# ifdef USE_OPENBSD // OpenBSD uses an HP/IBM/DEC API
++# if defined(USE_OPENBSD) || defined(USE_BITRIG) // OpenBSD uses an HP/IBM/DEC API
 +  struct protoent protobuf;
 +  struct protoent_data pdata;
 +  ::memset(&pdata, 0, sizeof pdata);
@@ -165,7 +165,7 @@ $OpenBSD: patch-kdecore_network_kresolver_cpp,v 1.11 2007/03/31 23:33:34 espie E
    se = getservbyname(servname, protoname);
  
  #else
-+# ifdef USE_OPENBSD // OpenBSD uses an HP/IBM/DEC API
++# if defined(USE_OPENBSD) || defined(USE_BITRIG) // OpenBSD uses an HP/IBM/DEC API
 +  struct servent servbuf;
 +  struct servent_data sdata;
 +  ::memset(&sdata, 0, sizeof sdata);
@@ -206,7 +206,7 @@ $OpenBSD: patch-kdecore_network_kresolver_cpp,v 1.11 2007/03/31 23:33:34 espie E
    se = getservbyname(servname, protoname);
  
  #else
-+# ifdef USE_OPENBSD // OpenBSD uses an HP/IBM/DEC API
++# if defined(USE_OPENBSD) || defined(USE_BITRIG) // OpenBSD uses an HP/IBM/DEC API
 +  struct servent servbuf;
 +  struct servent_data sdata;
 +  ::memset(&sdata, 0, sizeof sdata);
@@ -255,7 +255,7 @@ $OpenBSD: patch-kdecore_network_kresolver_cpp,v 1.11 2007/03/31 23:33:34 espie E
    se = getservbyport(port, protoname);
  
  #else
-+# ifdef USE_OPENBSD // OpenBSD uses an HP/IBM/DEC API
++# if defined(USE_OPENBSD) || defined(USE_BITRIG) // OpenBSD uses an HP/IBM/DEC API
 +  struct servent servbuf;
 +  struct servent_data sdata;
 +  ::memset(&sdata, 0, sizeof sdata);

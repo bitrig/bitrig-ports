@@ -1,0 +1,12 @@
+$OpenBSD$
+--- kdecore/malloc/malloc.c.orig	Fri Jul 27 13:32:54 CEST 2012
++++ kdecore/malloc/malloc.c	Fri Jul 27 13:32:54 CEST 2012
+@@ -628,7 +628,7 @@ Void_t* memcpy();
+ 
+ 
+ #ifdef LACKS_UNISTD_H
+-#if !defined(__FreeBSD__) && !defined(__OpenBSD__) && !defined(__NetBSD__)
++#if !defined(__FreeBSD__) && !defined(__OpenBSD__) && !defined(__Bitrig__) && !defined(__NetBSD__)
+ #if __STD_C
+ extern Void_t*     sbrk(ptrdiff_t);
+ #else

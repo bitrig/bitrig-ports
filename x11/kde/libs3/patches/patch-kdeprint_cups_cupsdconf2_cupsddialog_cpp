@@ -1,6 +1,6 @@
-$OpenBSD: patch-kdeprint_cups_cupsdconf2_cupsddialog_cpp,v 1.1 2007/10/06 12:47:20 ajacoutot Exp $
---- kdeprint/cups/cupsdconf2/cupsddialog.cpp.orig	Mon Oct 10 17:06:30 2005
-+++ kdeprint/cups/cupsdconf2/cupsddialog.cpp	Sat Oct  6 14:48:54 2007
+$OpenBSD$
+--- kdeprint/cups/cupsdconf2/cupsddialog.cpp.orig	Fri Jul 27 13:15:02 CEST 2012
++++ kdeprint/cups/cupsdconf2/cupsddialog.cpp	Fri Jul 27 13:15:02 CEST 2012
 @@ -44,6 +44,7 @@
  #include <kio/passdlg.h>
  #include <kguiitem.h>
@@ -19,7 +19,7 @@ $OpenBSD: patch-kdeprint_cups_cupsdconf2_cupsddialog_cpp,v 1.1 2007/10/06 12:47:
 -		if (dir[i] == "." || dir[i] == ".." || dir[i] == "self") continue;
 -		QFile	f("/proc/" + dir[i] + "/cmdline");
 -		if (f.exists() && f.open(IO_ReadOnly))
-+	#if defined(__OpenBSD__)
++	#if defined(__OpenBSD__) || defined(__Bitrig__)
 +		QProcess *proc = new QProcess();
 +		proc->addArgument("pgrep");
 +		proc->addArgument("cupsd");

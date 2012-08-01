@@ -1,0 +1,14 @@
+--- dcop/KDE-ICE/Xtranssock.c.orig	Sat Sep 10 10:27:21 2005
++++ dcop/KDE-ICE/Xtranssock.c	Fri Jul 27 15:59:45 2012
+@@ -87,9 +87,9 @@ from The Open Group.
+ #ifdef __osf__
+ #include <sys/param.h>
+ #endif /* osf */
+-#if defined(__NetBSD__) || defined(__OpenBSD__) || defined(__FreeBSD__)
++#if defined(__NetBSD__) || defined(__OpenBSD__) || defined(__Bitrig__) || defined(__FreeBSD__)
+ #include <machine/endian.h>
+-#endif /* __NetBSD__ || __OpenBSD__ || __FreeBSD__ */
++#endif /* __NetBSD__ || __OpenBSD__ || __Bitrig__ || __FreeBSD__ */
+ #include <netinet/tcp.h>
+ #endif /* !NO_TCP_H */
+ #include <sys/ioctl.h>
