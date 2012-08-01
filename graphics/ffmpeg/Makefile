@@ -66,6 +66,12 @@ FFMPEG_ARCH=	generic
 FFMPEG_ARCH=	${MACHINE_ARCH}
 .endif
 
+.if ${MACHINE_ARCH} == "i386"
+# silly broken inline asm
+CC=		gcc
+CXX=		g++
+.endif
+
 USE_GMAKE=	Yes
 CONFIGURE_STYLE= simple
 CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
