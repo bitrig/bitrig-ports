@@ -1,0 +1,12 @@
+$OpenBSD$
+--- projects/compiler-rt/lib/CMakeLists.txt.orig	Wed Aug  1 17:18:47 2012
++++ projects/compiler-rt/lib/CMakeLists.txt	Wed Aug  1 17:18:56 2012
+@@ -22,7 +22,7 @@ endfunction()
+ 
+ # First, add the subdirectories which contain feature-based runtime libraries
+ # and several convenience helper libraries.
+-add_subdirectory(asan)
++#add_subdirectory(asan)
+ add_subdirectory(interception)
+ add_subdirectory(sanitizer_common)
+ 

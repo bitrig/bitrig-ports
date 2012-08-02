@@ -1,0 +1,13 @@
+$OpenBSD$
+--- lib/Target/X86/MCTargetDesc/X86MCAsmInfo.cpp.orig	Wed Aug  1 12:45:27 2012
++++ lib/Target/X86/MCTargetDesc/X86MCAsmInfo.cpp	Wed Aug  1 14:36:22 2012
+@@ -93,7 +93,8 @@ X86ELFMCAsmInfo::X86ELFMCAsmInfo(const Triple &T) {
+ 
+   // OpenBSD has buggy support for .quad in 32-bit mode, just split into two
+   // .words.
+-  if (T.getOS() == Triple::OpenBSD && T.getArch() == Triple::x86)
++  if ((T.getOS() == Triple::OpenBSD || T.getOS() == Triple::Bitrig) &&
++      T.getArch() == Triple::x86)
+     Data64bitsDirective = 0;
+ }
+ 

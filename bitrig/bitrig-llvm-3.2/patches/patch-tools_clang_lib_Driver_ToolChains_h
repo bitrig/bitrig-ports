@@ -1,0 +1,43 @@
+$OpenBSD$
+--- tools/clang/lib/Driver/ToolChains.h.orig	Wed Aug  1 12:46:03 2012
++++ tools/clang/lib/Driver/ToolChains.h	Wed Aug  1 14:36:22 2012
+@@ -434,6 +434,28 @@ class LLVM_LIBRARY_VISIBILITY Solaris : public Generic
+ };
+ 
+ 
++class LLVM_LIBRARY_VISIBILITY Bitrig : public Generic_ELF {
++public:
++  Bitrig(const Driver &D, const llvm::Triple& Triple, const ArgList &Args);
++
++  virtual bool IsObjCNonFragileABIDefault() const { return true; }
++  virtual bool IsObjCLegacyDispatchDefault() const {
++    llvm::Triple::ArchType Arch = getTriple().getArch();
++    if (Arch == llvm::Triple::arm ||
++        Arch == llvm::Triple::x86 ||
++        Arch == llvm::Triple::x86_64)
++     return false;
++    return true;
++  }
++
++  virtual Tool &SelectTool(const Compilation &C, const JobAction &JA,
++                           const ActionList &Inputs) const;
++  virtual void AddClangCXXStdlibIncludeArgs(const ArgList &DriverArgs,
++                                            ArgStringList &CC1Args) const;
++  virtual void AddCXXStdlibLibArgs(const ArgList &Args,
++                                   ArgStringList &CmdArgs) const;
++};
++
+ class LLVM_LIBRARY_VISIBILITY OpenBSD : public Generic_ELF {
+ public:
+   OpenBSD(const Driver &D, const llvm::Triple& Triple, const ArgList &Args);
+@@ -443,6 +465,10 @@ class LLVM_LIBRARY_VISIBILITY OpenBSD : public Generic
+ 
+   virtual Tool &SelectTool(const Compilation &C, const JobAction &JA,
+                            const ActionList &Inputs) const;
++  virtual void AddClangCXXStdlibIncludeArgs(const ArgList &DriverArgs,
++                                            ArgStringList &CC1Args) const;
++  virtual void AddCXXStdlibLibArgs(const ArgList &Args,
++                                   ArgStringList &CmdArgs) const;
+ };
+ 
+ class LLVM_LIBRARY_VISIBILITY FreeBSD : public Generic_ELF {
