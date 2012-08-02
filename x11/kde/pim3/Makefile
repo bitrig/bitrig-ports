@@ -86,6 +86,8 @@ LIB_DEPENDS +=	security/gpgme>=0.4.5 \
 		comms/libmal \
 		comms/gnokii
 
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/admin
+
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/HTML/en/common
 	@${post_install_libs}

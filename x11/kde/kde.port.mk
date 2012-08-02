@@ -75,6 +75,6 @@ WANTLIB +=	lib/qt3/qt-mt>=3.33
 PATCH_LIST =	${PORTSDIR}/x11/kde/patches-3.5.7/patch-* patch-* ${SUP_PATCH_LIST}
 AUTOCONF ?=	/bin/sh ${WRKDIST}/admin/cvs.sh configure
 WANTLIB +=	lib/qt3/qt-mt>=3.33
-USE_LIBTOOL ?=	Yes
+USE_LIBTOOL ?=	gnu
 LIBTOOL_FLAGS =	--tag=disable-static
 .endif

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.orig	Thu Jul 12 09:02:05 2012
++++ configure	Thu Jul 12 09:02:20 2012
+@@ -49013,7 +49013,7 @@ ac_link='rm -rf SunWS_cache; ${CXX-g++} -o conftest${a
+ 
+            kde_save_CXXFLAGS="$CXXFLAGS"
+            EXR_FLAGS=`$PKG_CONFIG --cflags OpenEXR`
+-           CXXFLAGS="$CXXFLAGS $all_includes $USER_INCLUDES $EXR_FLAGS"
++           CXXFLAGS="$CXXFLAGS $all_includes $USER_INCLUDES $EXR_FLAGS -fexceptions"
+ 
+            cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */
