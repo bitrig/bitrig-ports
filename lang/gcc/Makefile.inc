@@ -45,5 +45,5 @@ DESCR-go ?=	${PORTSDIR}/lang/gcc/DESCR-go
 HOMEPAGE?=	http://gcc.gnu.org/
 
 DIST_SUBDIR=gcc
-CONFIG=${MACHINE_ARCH}-unknown-openbsd${OSREV}
+CONFIG=${MACHINE_ARCH}-unknown-bitrig${OSREV}
 SUBST_VARS+=CONFIG V
