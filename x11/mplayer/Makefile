@@ -74,6 +74,11 @@ BUILD_DEPENDS +=graphics/ffmpeg:patch
 .if ${MACHINE_ARCH:Mamd64} || ${MACHINE_ARCH:Mi386}
 BUILD_DEPENDS += devel/yasm
 .endif
+.if ${MACHINE_ARCH:Mi386}
+# silly busted asm
+CC=		gcc
+CXX=		g++
+.endif
 
 CONFDIR =	${SYSCONFDIR}/mplayer
 
