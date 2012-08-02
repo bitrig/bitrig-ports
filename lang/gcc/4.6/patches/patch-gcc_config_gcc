@@ -1,6 +1,6 @@
 $OpenBSD$
 --- gcc/config.gcc.orig	Fri Jul 22 11:44:50 2011
-+++ gcc/config.gcc	Wed Jul 25 09:48:01 2012
++++ gcc/config.gcc	Sun Jul 29 18:01:54 2012
 @@ -656,7 +656,7 @@ case ${target} in
        ;;
    esac
@@ -30,7 +30,7 @@ $OpenBSD$
  	use_collect2=yes
  	;;
 -i[34567]86-*-openbsd*)
-+i[34567]86-*-openbsd*|i[34567]86-*-bitrig)
++i[34567]86-*-openbsd*|i[34567]86-*-bitrig*)
  	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h"
  	tm_file="${tm_file} openbsd.h openbsd-stdint.h openbsd-libpthread.h i386/openbsdelf.h"
  	extra_options="${extra_options} openbsd.opt"
