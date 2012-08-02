@@ -1,6 +1,6 @@
 $OpenBSD$
---- tools/clang/lib/Basic/Targets.cpp.orig	Mon Jun  4 17:07:47 2012
-+++ tools/clang/lib/Basic/Targets.cpp	Mon Jun  4 17:08:29 2012
+--- tools/clang/lib/Basic/Targets.cpp.orig	Wed Apr 25 14:26:22 2012
++++ tools/clang/lib/Basic/Targets.cpp	Thu Aug  2 17:20:37 2012
 @@ -353,6 +353,45 @@ class NetBSDTargetInfo : public OSTargetInfo<Target> {
      }
  };
@@ -85,7 +85,16 @@ $OpenBSD$
  class OpenBSDX86_64TargetInfo : public OpenBSDTargetInfo<X86_64TargetInfo> {
  public:
    OpenBSDX86_64TargetInfo(const std::string& triple)
-@@ -4077,6 +4140,8 @@ static TargetInfo *AllocateTarget(const std::string &T
+@@ -3922,6 +3985,8 @@ static TargetInfo *AllocateTarget(const std::string &T
+     switch (os) {
+     case llvm::Triple::Linux:
+       return new LinuxTargetInfo<ARMTargetInfo>(T);
++    case llvm::Triple::Bitrig:
++      return new BitrigTargetInfo<ARMTargetInfo>(T);
+     case llvm::Triple::FreeBSD:
+       return new FreeBSDTargetInfo<ARMTargetInfo>(T);
+     case llvm::Triple::NetBSD:
+@@ -4077,6 +4142,8 @@ static TargetInfo *AllocateTarget(const std::string &T
        return new NetBSDI386TargetInfo(T);
      case llvm::Triple::OpenBSD:
        return new OpenBSDI386TargetInfo(T);
@@ -94,7 +103,7 @@ $OpenBSD$
      case llvm::Triple::FreeBSD:
        return new FreeBSDTargetInfo<X86_32TargetInfo>(T);
      case llvm::Triple::Minix:
-@@ -4112,6 +4177,8 @@ static TargetInfo *AllocateTarget(const std::string &T
+@@ -4112,6 +4179,8 @@ static TargetInfo *AllocateTarget(const std::string &T
        return new NetBSDTargetInfo<X86_64TargetInfo>(T);
      case llvm::Triple::OpenBSD:
        return new OpenBSDX86_64TargetInfo(T);
