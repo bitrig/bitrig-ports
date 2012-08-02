@@ -1,6 +1,6 @@
 $OpenBSD$
---- tools/clang/lib/Driver/Tools.cpp.orig	Wed Apr 18 16:32:25 2012
-+++ tools/clang/lib/Driver/Tools.cpp	Wed Jun 13 17:34:17 2012
+--- tools/clang/lib/Driver/Tools.cpp.orig	Wed Apr 18 17:32:25 2012
++++ tools/clang/lib/Driver/Tools.cpp	Thu Aug  2 19:36:29 2012
 @@ -977,6 +977,11 @@ void Clang::AddX86TargetArgs(const ArgList &Args,
          CPUName = "x86-64";
        else if (getToolChain().getArch() == llvm::Triple::x86)
@@ -28,7 +28,7 @@ $OpenBSD$
    }
    if (StackProtectorLevel) {
      CmdArgs.push_back("-stack-protector");
-@@ -4563,6 +4572,139 @@ void auroraux::Link::ConstructJob(Compilation &C, cons
+@@ -4563,6 +4572,142 @@ void auroraux::Link::ConstructJob(Compilation &C, cons
    }
  
    addProfileRT(getToolChain(), Args, CmdArgs, getToolChain().getTriple());
@@ -144,6 +144,9 @@ $OpenBSD$
 +    const llvm::Triple &T = getToolChain().getTriple();
 +    llvm::Triple::ArchType Arch = T.getArch();
 +    switch (Arch) {
++          case llvm::Triple::arm:
++            myarch += ("arm");
++            break;
 +          case llvm::Triple::x86:
 +            myarch += ("i386");
 +            break;
