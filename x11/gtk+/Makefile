@@ -31,8 +31,8 @@ CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS+= ${CONFIGURE_SHARED}
 CONFIGURE_ARGS+= --enable-static --with-xinput="xfree"
 CONFIGURE_ARGS+= --disable-glibtest
-CONFIGURE_ENV=	CPPFLAGS="-I${DEPBASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-std=c89 -I${DEPBASE}/include" \
 		LDFLAGS="-L${DEPBASE}/lib" \
-		glib_config_args=--prefix=${DEPBASE} CC=cc
+		glib_config_args=--prefix=${DEPBASE}
 
 .include <bsd.port.mk>
