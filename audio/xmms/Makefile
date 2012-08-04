@@ -64,8 +64,8 @@ CONFIGURE_ARGS=		--without-gnome \
 			--with-mikmod-prefix=${LOCALBASE}
 
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
-			CFLAGS="${CFLAGS:C/ *$//} -I${LOCALBASE}/include -I${X11BASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib" CC=cc
+			CFLAGS="-std=c89 ${CFLAGS:C/ *$//} -I${LOCALBASE}/include -I${X11BASE}/include" \
+			LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 
 .if ${MACHINE_ARCH} == "sh"
 CFLAGS +=		-O0
