@@ -1,0 +1,11 @@
+$OpenBSD$
+--- scripts/os-type.orig	Sun Aug  5 08:25:02 MDT 2012
++++ scripts/os-type	Sun Aug  5 08:25:02 MDT 2012
+@@ -84,7 +84,8 @@ linux-*)    os=Linux;;
+ netbsd*)    os=NetBSD;;
+ NetBSD*)    os=NetBSD;;
+ openbsd*)   os=OpenBSD;;
++bitrig*)    os=Bitrig;;
+ osf1)       os=OSF1;;
+ qnx*)       os=QNX;;
+ solaris*)   os=SunOS5;;

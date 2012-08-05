@@ -1,0 +1,17 @@
+--- /dev/null	Sun Aug  5 08:32:37 2012
++++ OS/os.h-Bitrig	Sun Aug  5 08:30:51 2012
+@@ -0,0 +1,14 @@
++/* Exim: OS-specific C header file for Bitrig */
++
++#define HAVE_BSD_GETLOADAVG
++#define HAVE_MMAP
++#define HAVE_SYS_MOUNT_H
++#define SIOCGIFCONF_GIVES_ADDR
++#define HAVE_ARC4RANDOM
++
++typedef struct flock flock_t;
++
++#define os_strsignal strsignal
++#define OS_STRSIGNAL
++
++/* End */
