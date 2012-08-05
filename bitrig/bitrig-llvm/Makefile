@@ -19,7 +19,7 @@ CATEGORIES =	bitrig
 HOMEPAGE =	http://www.llvm.org/
 
 VMEM_WARNING =	Yes
-ONLY_FOR_ARCHS = amd64 i386
+ONLY_FOR_ARCHS = amd64 i386 arm
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
