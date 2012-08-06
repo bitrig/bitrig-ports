@@ -1,7 +1,7 @@
 COMMENT=	System Compiler Meta Package
 
 PKGNAME=	bitrig-syscomp-1.0
-REVISION=	16
+REVISION=	17
 
 MAINTAINER=	Marco Peereboom <marco@bitrig.org>
 
@@ -10,7 +10,8 @@ BUILD_DEPENDS=	bitrig/bitrig-binutils \
 		bitrig/bitrig-gcc,-main \
 		bitrig/bitrig-llvm \
 		devel/git \
-		sysutils/cdrtools
+		sysutils/cdrtools \
+		archivers/libarchive
 
 RUN_DEPENDS = ${BUILD_DEPENDS}
 
