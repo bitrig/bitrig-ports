@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/common/compat.h.orig	Mon Aug  6 12:03:40 MDT 2012
++++ src/common/compat.h	Mon Aug  6 12:03:40 MDT 2012
+@@ -433,7 +433,7 @@ struct in6_addr
+ /** @{ */
+ /** Many BSD variants seem not to define these. */
+ #if defined(__APPLE__) || defined(__darwin__) || defined(__FreeBSD__) \
+-    || defined(__NetBSD__) || defined(__OpenBSD__)
++    || defined(__NetBSD__) || defined(__OpenBSD__) || defined(__Bitrig__)
+ #ifndef s6_addr16
+ #define s6_addr16 __u6_addr.__u6_addr16
+ #endif

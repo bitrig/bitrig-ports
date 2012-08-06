@@ -18,7 +18,8 @@ WANTLIB += c crypto event m pthread ssl z
 
 MASTER_SITES=	${HOMEPAGE}dist/
 
-CONFIGURE_STYLE=gnu
+CONFIGURE_STYLE=autoconf
+AUTOCONF_VERSION=2.69
 CONFIGURE_ARGS=	--with-ssl-dir=/usr
 
 DB_DIR=		/var/tor
