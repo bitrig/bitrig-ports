@@ -1,6 +1,6 @@
-$OpenBSD: patch-acinclude_m4,v 1.2 2011/07/06 15:01:13 dcoppa Exp $
---- acinclude.m4.orig	Thu Jul 12 09:04:18 2012
-+++ acinclude.m4	Thu Jul 12 09:04:24 2012
+$OpenBSD$
+--- acinclude.m4.orig	Wed Aug 20 10:05:01 2008
++++ acinclude.m4	Mon Aug  6 11:34:56 2012
 @@ -2777,7 +2777,7 @@ AC_CACHE_VAL(ac_cv_libexr,
             AC_LANG_CPLUSPLUS
             kde_save_CXXFLAGS="$CXXFLAGS"
@@ -10,3 +10,70 @@ $OpenBSD: patch-acinclude_m4,v 1.2 2011/07/06 15:01:13 dcoppa Exp $
  
             AC_TRY_LINK(dnl
                 [
+@@ -4228,7 +4228,7 @@ AC_DEFUN([KDE_SHADOWPASSWD], [
+   if test "x$use_shadow" = xyes || 
+      ( test "x$use_pam" = xyes && test "x$ac_use_shadow" = xyes ); then
+       case $host in
+-      *-*-freebsd* | *-*-netbsd* | *-*-openbsd*)
++      *-*-freebsd* | *-*-netbsd* | *-*-openbsd* | *-*-bitrig*)
+ 	SETUIDFLAGS="-m 4755 -o root";;
+       *)
+ 	SETUIDFLAGS="-m 4755";;
+@@ -6187,7 +6187,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="\$RANLIB -t \$oldlib~$old_postinstall_cmds"
+     ;;
+   *)
+@@ -7478,7 +7478,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   need_lib_prefix=no
+   need_version=no
+@@ -8218,6 +8218,12 @@ openbsd*)
+   fi
+   ;;
+ 
++bitrig*)
++  lt_cv_file_magic_cmd=/usr/bin/file
++  lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
++  lt_cv_deplibs_check_method='file_magic Bitrig.* shared library'
++  ;;
++
+ osf3* | osf4* | osf5*)
+   # this will be overridden with pass_all, but let us keep it just in case
+   lt_cv_deplibs_check_method='file_magic COFF format alpha shared library'
+@@ -11034,7 +11040,7 @@ ifelse([$1],[CXX],[
+       with_gnu_ld=no
+     fi
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -11512,7 +11518,7 @@ EOF
+       _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       _LT_AC_TAGVAR(hardcode_direct, $1)=yes
+       _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -12042,7 +12048,7 @@ AC_CACHE_CHECK([whether deplibs are loaded by dlopen],
+ 	linux*)
+ 	  libltdl_cv_sys_dlopen_deplibs=yes
+ 	  ;;
+-	netbsd*|openbsd*|freebsd*|dragonfly*)
++	netbsd*|openbsd*|bitrig*|freebsd*|dragonfly*)
+ 	  libltdl_cv_sys_dlopen_deplibs=yes
+ 	  ;;
+ 	solaris*)
