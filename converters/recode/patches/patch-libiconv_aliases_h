@@ -1,0 +1,31 @@
+$OpenBSD$
+--- libiconv/aliases.h.orig	Sat Aug  4 16:00:58 2012
++++ libiconv/aliases.h	Sat Aug  4 16:02:09 2012
+@@ -9,14 +9,8 @@ struct alias { const char* name; unsigned int encoding
+ #define MAX_HASH_VALUE 2446
+ /* maximum key range = 2439, duplicates = 0 */
+ 
+-#ifdef __GNUC__
+-__inline
+-#else
+-#ifdef __cplusplus
+-inline
+-#endif
+-#endif
+-static unsigned int
++static inline
++unsigned int
+ aliases_hash (register const char *str, register unsigned int len)
+ {
+   static const unsigned short asso_values[] =
+@@ -66,9 +60,7 @@ aliases_hash (register const char *str, register unsig
+   return hval + asso_values[(unsigned char) str[len - 1]];
+ }
+ 
+-#ifdef __GNUC__
+-__inline
+-#endif
++static inline
+ const struct alias *
+ aliases_lookup (register const char *str, register unsigned int len)
+ {

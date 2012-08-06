@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/recodext.h.orig	Sat Aug  4 15:49:34 2012
++++ src/recodext.h	Sat Aug  4 15:47:08 2012
+@@ -218,7 +218,7 @@ struct recode_symbol
+     enum recode_symbol_type type : 3;
+ 
+     /* Non zero if this one should be ignored.  */
+-    bool ignore : 2;
++    bool ignore : 1;
+   };
+ 
+ struct recode_surface_list
