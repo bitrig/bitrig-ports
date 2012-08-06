@@ -1,12 +1,12 @@
 $OpenBSD$
---- libobjc/configure.orig	Tue Jun 26 17:03:50 2012
-+++ libobjc/configure	Tue Jun 26 16:57:19 2012
+--- libobjc/configure.orig	Sun Oct 15 02:42:57 2006
++++ libobjc/configure	Mon Aug  6 09:23:22 2012
 @@ -3412,7 +3412,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
 -  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | darwin* | dragonfly* | bitrig*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly* | bitrig*)
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`

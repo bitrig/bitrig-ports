@@ -1,11 +1,11 @@
 $OpenBSD: patch-libffi_configure,v 1.2 2009/06/04 18:24:20 kurt Exp $
 --- libffi/configure.orig	Mon May 19 09:28:07 2008
-+++ libffi/configure	Wed Jun 27 23:57:29 2012
++++ libffi/configure	Mon Aug  6 09:23:00 2012
 @@ -3464,6 +3464,22 @@ linux-gnu*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
-+openbsd*)
++openbsd* | bitrig*)
 +  if echo __ELF__ | $CC -E - | grep __ELF__ > /dev/null; then
 +    lt_cv_deplibs_check_method='match_pattern /lib[^/\.]+\.so\.[0-9]+\.[0-9]+$'
 +  else
@@ -29,7 +29,7 @@ $OpenBSD: patch-libffi_configure,v 1.2 2009/06/04 18:24:20 kurt Exp $
      ;;
  
 -  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | darwin* | dragonfly* | bitrig*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly* | bitrig*)
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`

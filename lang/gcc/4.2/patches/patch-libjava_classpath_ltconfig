@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libjava/classpath/ltconfig.orig	Mon Aug  6 10:23:40 2012
++++ libjava/classpath/ltconfig	Mon Aug  6 10:23:48 2012
+@@ -1299,7 +1299,7 @@ newsos6)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   if test "$with_gnu_ld" = yes; then
+     need_lib_prefix=no
