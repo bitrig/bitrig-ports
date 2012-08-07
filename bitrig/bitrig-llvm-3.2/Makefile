@@ -11,7 +11,7 @@ LLVM_V =	3.2
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-#REVISION =	0
+REVISION =	0
 
 CATEGORIES =	bitrig
 
@@ -19,7 +19,7 @@ CATEGORIES =	bitrig
 HOMEPAGE =	http://www.llvm.org/
 
 VMEM_WARNING =	Yes
-ONLY_FOR_ARCHS = amd64 i386
+ONLY_FOR_ARCHS = amd64 i386 arm
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
@@ -33,7 +33,7 @@ MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
 MASTER_SITES0 = https://www.bitrig.org/pub/distfiles/
 
 DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
-DISTFILES +=	compiler-rt-20120801.tar.gz
+DISTFILES +=	compiler-rt-20120807.tar.gz
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 
 post-extract:
