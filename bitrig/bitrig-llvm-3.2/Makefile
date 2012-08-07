@@ -46,7 +46,8 @@ MODULES =	devel/cmake \
 REGRESS_DEPENDS = devel/dejagnu
 
 # yep, the amount of suck is amazing
-BUILD_DEPENDS = textproc/py-docutils
+BUILD_DEPENDS = textproc/py-docutils \
+		textproc/py-pygments
 
 MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
 		VERBOSE=Yes \
