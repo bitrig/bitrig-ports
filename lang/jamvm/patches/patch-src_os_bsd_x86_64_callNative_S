@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/os/bsd/x86_64/callNative.S.orig	Tue Aug  7 17:35:21 2012
++++ src/os/bsd/x86_64/callNative.S	Tue Aug  7 17:35:36 2012
+@@ -24,7 +24,7 @@
+ .text
+ .align  2
+ .global callJNIMethod
+-.type   callJNIMethod,function
++.type   callJNIMethod,@function
+ 
+ /*
+  * Arguments passed in:

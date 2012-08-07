@@ -31,10 +31,11 @@ BUILD_DEPENDS=	lang/jikes>=1.22 \
 
 RUN_DEPENDS=	lang/classpath>=0.98
 
+AUTOCONF_VERSION= 2.63
 USE_LIBTOOL=	Yes
 USE_GMAKE=	Yes
 SEPARATE_BUILD=	Yes
-CONFIGURE_STYLE= gnu
+CONFIGURE_STYLE= autoconf
 CONFIGURE_ARGS=	--includedir=${LOCALBASE}/include/jamvm \
 		--libdir=${LOCALBASE}/lib/jamvm \
 		--with-classpath-install-dir=${LOCALBASE} \
