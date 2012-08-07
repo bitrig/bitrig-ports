@@ -29,8 +29,8 @@ PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =	c m pthread stdc++
 
-MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
-MASTER_SITES0 = https://www.bitrig.org/pub/distfiles/
+#MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
+MASTER_SITES = https://www.bitrig.org/pub/distfiles/
 
 DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
 DISTFILES +=	compiler-rt-20120807.tar.gz
