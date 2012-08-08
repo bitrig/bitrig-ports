@@ -106,4 +106,10 @@ post-install:
 	    ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKBUILD}/lib/libclang_rt.${INSTALL_ARCH}.a ${PREFIX}/lib/libclang_rt.${ARCH}.a
 
+git:
+	if ! test -d ${WRKDIST}; then make patch; fi 
+	(cd ${WRKDIST} && git pull)
+	(cd ${WRKDIST}/tools/clang && git pull)
+	(cd ${WRKDIST}/projects/compiler-rt && git pull)
+
 .include <bsd.port.mk>
