@@ -71,6 +71,8 @@ CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
 SUBST_VARS +=		CLANG_INCLUDE_PATH
 
+TMPGIT = ${DISTDIR}/tmpgit
+
 .if ${MACHINE_ARCH:Mamd64}
 INSTALL_ARCH = x86_64
 .else
@@ -107,9 +109,25 @@ post-install:
 	${INSTALL_DATA} ${WRKBUILD}/lib/libclang_rt.${INSTALL_ARCH}.a ${PREFIX}/lib/libclang_rt.${ARCH}.a
 
 git:
-	if ! test -d ${WRKDIST}; then make patch; fi 
-	(cd ${WRKDIST} && git pull)
-	(cd ${WRKDIST}/tools/clang && git pull)
-	(cd ${WRKDIST}/projects/compiler-rt && git pull)
+	@mkdir -p ${TMPGIT}
+	if test -d ${TMPGIT}/llvm-3.2.src; then \
+		(cd ${TMPGIT}/llvm-3.2.src && git pull) \
+	else \
+		(cd ${TMPGIT} && git clone http://llvm.org/git/llvm.git llvm-3.2.src) \
+	fi
+	if test -d ${TMPGIT}/clang-3.2.src; then \
+		(cd ${TMPGIT}/clang-3.2.src && git pull) \
+	else \
+		(cd ${TMPGIT} && git clone http://llvm.org/git/clang.git clang-3.2.src) \
+	fi	
+	if test -d ${TMPGIT}/compiler-rt; then \
+		(cd ${TMPGIT}/compiler-rt && git pull) \
+	else \
+		(cd ${TMPGIT} && git clone http://llvm.org/git/compiler-rt.git) \
+	fi
+	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/llvm-3.2.src.tar.gz llvm-3.2.src)
+	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/clang-3.2.src.tar.gz clang-3.2.src)
+	(cd ${TMPGIT} && tar -zvf ${DISTDIR}/compiler-rt-20120807.tar.gz compiler-rt)
+	make makesum
 
 .include <bsd.port.mk>
