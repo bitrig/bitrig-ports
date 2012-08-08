@@ -127,7 +127,7 @@ git:
 	fi
 	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/llvm-3.2.src.tar.gz llvm-3.2.src)
 	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/clang-3.2.src.tar.gz clang-3.2.src)
-	(cd ${TMPGIT} && tar -zvf ${DISTDIR}/compiler-rt-20120807.tar.gz compiler-rt)
+	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/compiler-rt-20120807.tar.gz compiler-rt)
 	make makesum
 
 .include <bsd.port.mk>
