@@ -1,7 +1,7 @@
 $OpenBSD$
---- tools/clang/lib/Driver/ToolChains.h.orig	Mon Apr  9 07:33:41 2012
-+++ tools/clang/lib/Driver/ToolChains.h	Mon Jun  4 17:16:31 2012
-@@ -455,6 +455,28 @@ class LLVM_LIBRARY_VISIBILITY Solaris : public Generic
+--- tools/clang/lib/Driver/ToolChains.h.orig	Mon Apr  9 08:33:41 2012
++++ tools/clang/lib/Driver/ToolChains.h	Tue Aug  7 21:07:55 2012
+@@ -455,6 +455,33 @@ class LLVM_LIBRARY_VISIBILITY Solaris : public Generic
  };
  
  
@@ -9,6 +9,7 @@ $OpenBSD$
 +public:
 +  Bitrig(const Driver &D, const llvm::Triple& Triple, const ArgList &Args);
 +
++  virtual bool IsMathErrnoDefault() const { return false; }
 +  virtual bool IsObjCNonFragileABIDefault() const { return true; }
 +  virtual bool IsObjCLegacyDispatchDefault() const {
 +    llvm::Triple::ArchType Arch = getTriple().getArch();
@@ -21,16 +22,20 @@ $OpenBSD$
 +
 +  virtual Tool &SelectTool(const Compilation &C, const JobAction &JA,
 +                           const ActionList &Inputs) const;
++
 +  virtual void AddClangCXXStdlibIncludeArgs(const ArgList &DriverArgs,
 +                                            ArgStringList &CC1Args) const;
 +  virtual void AddCXXStdlibLibArgs(const ArgList &Args,
 +                                   ArgStringList &CmdArgs) const;
++  virtual unsigned GetDefaultStackProtectorLevel(bool KernelOrKext) const {
++     return 1;
++  }
 +};
 +
  class LLVM_LIBRARY_VISIBILITY OpenBSD : public Generic_ELF {
  public:
    OpenBSD(const Driver &D, const llvm::Triple& Triple, const ArgList &Args);
-@@ -471,6 +493,10 @@ class LLVM_LIBRARY_VISIBILITY OpenBSD : public Generic
+@@ -471,6 +498,10 @@ class LLVM_LIBRARY_VISIBILITY OpenBSD : public Generic
  
    virtual Tool &SelectTool(const Compilation &C, const JobAction &JA,
                             const ActionList &Inputs) const;

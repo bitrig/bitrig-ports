@@ -1,7 +1,7 @@
 $OpenBSD$
 --- tools/clang/lib/Basic/Targets.cpp.orig	Wed Apr 25 14:26:22 2012
-+++ tools/clang/lib/Basic/Targets.cpp	Thu Aug  2 17:20:37 2012
-@@ -353,6 +353,45 @@ class NetBSDTargetInfo : public OSTargetInfo<Target> {
++++ tools/clang/lib/Basic/Targets.cpp	Tue Aug  7 20:55:48 2012
+@@ -353,6 +353,30 @@ class NetBSDTargetInfo : public OSTargetInfo<Target> {
      }
  };
  
@@ -24,30 +24,15 @@ $OpenBSD$
 +  BitrigTargetInfo(const std::string &triple)
 +    : OSTargetInfo<Target>(triple) {
 +      this->UserLabelPrefix = "";
-+
-+      llvm::Triple Triple(triple);
-+      switch (Triple.getArch()) {
-+        default:
-+        case llvm::Triple::x86:
-+        case llvm::Triple::x86_64:
-+        case llvm::Triple::arm:
-+	case llvm::Triple::sparc:
-+          this->MCountName = "__mcount";
-+          break;
-+        case llvm::Triple::mips64:
-+        case llvm::Triple::mips64el:
-+        case llvm::Triple::ppc:
-+	case llvm::Triple::sparcv9:
-+          this->MCountName = "_mcount";
-+          break;
-+      }
++      this->TLSSupported = false;
++      this->MCountName = "__mcount";
 +  }
 +};
 +
  // OpenBSD Target
  template<typename Target>
  class OpenBSDTargetInfo : public OSTargetInfo<Target> {
-@@ -2254,6 +2293,18 @@ class NetBSDI386TargetInfo : public NetBSDTargetInfo<X
+@@ -2254,6 +2278,18 @@ class NetBSDI386TargetInfo : public NetBSDTargetInfo<X
  } // end anonymous namespace
  
  namespace {
@@ -66,7 +51,7 @@ $OpenBSD$
  class OpenBSDI386TargetInfo : public OpenBSDTargetInfo<X86_32TargetInfo> {
  public:
    OpenBSDI386TargetInfo(const std::string& triple) :
-@@ -2591,6 +2642,18 @@ class DarwinX86_64TargetInfo : public DarwinTargetInfo
+@@ -2591,6 +2627,18 @@ class DarwinX86_64TargetInfo : public DarwinTargetInfo
  } // end anonymous namespace
  
  namespace {
@@ -85,7 +70,7 @@ $OpenBSD$
  class OpenBSDX86_64TargetInfo : public OpenBSDTargetInfo<X86_64TargetInfo> {
  public:
    OpenBSDX86_64TargetInfo(const std::string& triple)
-@@ -3922,6 +3985,8 @@ static TargetInfo *AllocateTarget(const std::string &T
+@@ -3922,6 +3970,8 @@ static TargetInfo *AllocateTarget(const std::string &T
      switch (os) {
      case llvm::Triple::Linux:
        return new LinuxTargetInfo<ARMTargetInfo>(T);
@@ -94,7 +79,7 @@ $OpenBSD$
      case llvm::Triple::FreeBSD:
        return new FreeBSDTargetInfo<ARMTargetInfo>(T);
      case llvm::Triple::NetBSD:
-@@ -4077,6 +4142,8 @@ static TargetInfo *AllocateTarget(const std::string &T
+@@ -4077,6 +4127,8 @@ static TargetInfo *AllocateTarget(const std::string &T
        return new NetBSDI386TargetInfo(T);
      case llvm::Triple::OpenBSD:
        return new OpenBSDI386TargetInfo(T);
@@ -103,7 +88,7 @@ $OpenBSD$
      case llvm::Triple::FreeBSD:
        return new FreeBSDTargetInfo<X86_32TargetInfo>(T);
      case llvm::Triple::Minix:
-@@ -4112,6 +4179,8 @@ static TargetInfo *AllocateTarget(const std::string &T
+@@ -4112,6 +4164,8 @@ static TargetInfo *AllocateTarget(const std::string &T
        return new NetBSDTargetInfo<X86_64TargetInfo>(T);
      case llvm::Triple::OpenBSD:
        return new OpenBSDX86_64TargetInfo(T);

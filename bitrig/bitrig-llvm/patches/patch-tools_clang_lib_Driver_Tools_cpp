@@ -1,6 +1,6 @@
 $OpenBSD$
 --- tools/clang/lib/Driver/Tools.cpp.orig	Wed Apr 18 17:32:25 2012
-+++ tools/clang/lib/Driver/Tools.cpp	Thu Aug  2 19:36:29 2012
++++ tools/clang/lib/Driver/Tools.cpp	Tue Aug  7 21:04:19 2012
 @@ -977,6 +977,11 @@ void Clang::AddX86TargetArgs(const ArgList &Args,
          CPUName = "x86-64";
        else if (getToolChain().getArch() == llvm::Triple::x86)
@@ -13,22 +13,7 @@ $OpenBSD$
      } else if (getToolChain().getOS().startswith("openbsd"))  {
        if (getToolChain().getArch() == llvm::Triple::x86_64)
          CPUName = "x86-64";
-@@ -2145,8 +2150,12 @@ void Clang::ConstructJob(Compilation &C, const JobActi
-     else if (A->getOption().matches(options::OPT_fstack_protector_all))
-       StackProtectorLevel = 2;
-   } else {
--    StackProtectorLevel =
--      getToolChain().GetDefaultStackProtectorLevel(KernelOrKext);
-+    if (getToolChain().getTriple().getOS() == llvm::Triple::OpenBSD ||
-+        getToolChain().getTriple().getOS() == llvm::Triple::Bitrig)
-+      StackProtectorLevel = 1;
-+    else
-+      StackProtectorLevel =
-+        getToolChain().GetDefaultStackProtectorLevel(KernelOrKext);
-   }
-   if (StackProtectorLevel) {
-     CmdArgs.push_back("-stack-protector");
-@@ -4563,6 +4572,142 @@ void auroraux::Link::ConstructJob(Compilation &C, cons
+@@ -4563,6 +4568,142 @@ void auroraux::Link::ConstructJob(Compilation &C, cons
    }
  
    addProfileRT(getToolChain(), Args, CmdArgs, getToolChain().getTriple());
