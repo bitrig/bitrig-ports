@@ -130,5 +130,6 @@ git:
 	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/clang-3.2.src.tar.gz clang-3.2.src)
 	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/compiler-rt-20120807.tar.gz compiler-rt)
 	make makesum
+	rm -rf ${TMPGIT}
 
 .include <bsd.port.mk>
