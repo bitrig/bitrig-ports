@@ -62,6 +62,7 @@ include/clang/AST/CanonicalType.h
 include/clang/AST/CharUnits.h
 include/clang/AST/Comment.h
 include/clang/AST/CommentBriefParser.h
+include/clang/AST/CommentCommandTraits.h
 include/clang/AST/CommentDiagnostic.h
 include/clang/AST/CommentLexer.h
 include/clang/AST/CommentNodes.inc
@@ -845,6 +846,7 @@ include/llvm/Support/InstIterator.h
 include/llvm/Support/InstVisitor.h
 include/llvm/Support/IntegersSubset.h
 include/llvm/Support/IntegersSubsetMapping.h
+include/llvm/Support/LEB128.h
 include/llvm/Support/LICENSE.TXT
 include/llvm/Support/LeakDetector.h
 include/llvm/Support/Locale.h
@@ -1073,8 +1075,6 @@ lib/libclangStaticAnalyzerCore.a
 lib/libclangStaticAnalyzerFrontend.a
 lib/libclangTooling.a
 lib/libclang_rt.${MACHINE_ARCH}.a
-lib/libgtest.a
-lib/libgtest_main.a
 lib/libprofile_rt.a
 lib/profile_rt.so
 share/llvm/
