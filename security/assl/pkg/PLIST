@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.6 2011/06/23 22:50:28 naddy Exp $
+@comment $OpenBSD: PLIST,v 1.7 2012/08/07 07:34:23 ajacoutot Exp $
 include/assl.h
 include/assl_socket.h
 lib/libassl.a

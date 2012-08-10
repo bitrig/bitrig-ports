@@ -1,7 +1,6 @@
-$OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.13 2012/06/11 15:33:26 landry Exp $
---- mozilla/toolkit/library/Makefile.in.orig	Thu Jun 14 18:25:55 2012
-+++ mozilla/toolkit/library/Makefile.in	Fri Jul 13 14:15:32 2012
-@@ -455,6 +455,18 @@ OS_LIBS += \
+--- mozilla/toolkit/library/Makefile.in.orig	Fri Jul 13 16:42:23 2012
++++ mozilla/toolkit/library/Makefile.in	Mon Aug  6 18:59:41 2012
+@@ -457,6 +457,18 @@ OS_LIBS += \
    $(NULL)
  endif
  
@@ -13,14 +12,14 @@ $OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.13 2012/06/11 15:33:26 l
 +
 +ifeq ($(OS_ARCH),Bitrig)
 +ifdef MOZ_SYDNEYAUDIO
-+EXTRA_DSO_LDOPTS += -lsndio /usr/lib/libsndio_pic.a /usr/lib/libpthread_pic.a
++EXTRA_DSO_LDOPTS += -lsndio
 +endif
 +endif
 +
  ifeq ($(OS_ARCH),Darwin)
  ifdef MOZ_SYDNEYAUDIO
  OS_LIBS += \
-@@ -469,12 +481,6 @@ OS_LIBS += \
+@@ -471,12 +483,6 @@ OS_LIBS += \
  endif
  endif
  
@@ -33,7 +32,7 @@ $OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.13 2012/06/11 15:33:26 l
  ifdef MOZ_PLATFORM_MAEMO
  EXTRA_DSO_LDOPTS += $(MOZ_PLATFORM_MAEMO_LIBS)
  endif
-@@ -582,6 +588,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
+@@ -586,6 +592,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
  endif
  
  ifeq ($(OS_ARCH),OpenBSD)

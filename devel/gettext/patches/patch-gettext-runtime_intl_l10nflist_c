@@ -1,6 +1,6 @@
-$OpenBSD: patch-gettext-runtime_intl_l10nflist_c,v 1.1 2012/07/13 19:43:18 naddy Exp $
+$OpenBSD: patch-gettext-runtime_intl_l10nflist_c,v 1.3 2012/08/04 14:33:14 naddy Exp $
 --- gettext-runtime/intl/l10nflist.c.orig	Sun Jun 28 21:44:04 2009
-+++ gettext-runtime/intl/l10nflist.c	Tue Jul 10 23:41:41 2012
++++ gettext-runtime/intl/l10nflist.c	Sun Jul 29 16:27:13 2012
 @@ -183,6 +183,7 @@ _nl_make_l10nflist (struct loaded_l10nfile **l10nfile_
    struct loaded_l10nfile **lastp;
    struct loaded_l10nfile *retval;
@@ -26,9 +26,11 @@ $OpenBSD: patch-gettext-runtime_intl_l10nflist_c,v 1.1 2012/07/13 19:43:18 naddy
  
    if (abs_filename == NULL)
      return NULL;
-@@ -218,31 +220,31 @@ _nl_make_l10nflist (struct loaded_l10nfile **l10nfile_
+@@ -217,32 +219,33 @@ _nl_make_l10nflist (struct loaded_l10nfile **l10nfile_
+       cp += dirlist_len;
        cp[-1] = '/';
      }
++  *cp = '\0';
  
 -  cp = stpcpy (cp, language);
 +  strlcat (abs_filename, language, abs_filename_len);
@@ -69,7 +71,7 @@ $OpenBSD: patch-gettext-runtime_intl_l10nflist_c,v 1.1 2012/07/13 19:43:18 naddy
  
    /* Look in list of already loaded domains whether it is already
       available.  */
-@@ -366,7 +368,7 @@ _nl_normalize_codeset (const char *codeset, size_t nam
+@@ -366,7 +369,7 @@ _nl_normalize_codeset (const char *codeset, size_t nam
    if (retval != NULL)
      {
        if (only_digit)

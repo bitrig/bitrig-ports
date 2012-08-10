@@ -1,7 +1,6 @@
-$OpenBSD$
---- toolkit/library/Makefile.in.orig	Thu Jun 14 20:50:06 2012
-+++ toolkit/library/Makefile.in	Wed Jul 18 19:46:43 2012
-@@ -455,6 +455,18 @@ OS_LIBS += \
+--- toolkit/library/Makefile.in.orig	Fri Jul 13 15:43:16 2012
++++ toolkit/library/Makefile.in	Mon Aug  6 18:38:05 2012
+@@ -457,6 +457,18 @@ OS_LIBS += \
    $(NULL)
  endif
  
@@ -20,7 +19,7 @@ $OpenBSD$
  ifeq ($(OS_ARCH),Darwin)
  ifdef MOZ_SYDNEYAUDIO
  OS_LIBS += \
-@@ -469,12 +481,6 @@ OS_LIBS += \
+@@ -471,12 +483,6 @@ OS_LIBS += \
  endif
  endif
  
@@ -33,7 +32,7 @@ $OpenBSD$
  ifdef MOZ_PLATFORM_MAEMO
  EXTRA_DSO_LDOPTS += $(MOZ_PLATFORM_MAEMO_LIBS)
  endif
-@@ -582,6 +588,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
+@@ -586,6 +592,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
  endif
  
  ifeq ($(OS_ARCH),OpenBSD)

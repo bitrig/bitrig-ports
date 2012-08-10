@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2012/04/28 09:27:29 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.8 2012/08/07 07:32:55 ajacoutot Exp $
 
 COMMENT=	memory allocation debugger library
 
@@ -11,8 +11,6 @@ HOMEPAGE=	http://opensource.conformal.com/wiki/Exude
 MASTER_SITES=	http://opensource.conformal.com/snapshots/exude/
 
 MAINTAINER=	David Hill <dhill@mindcry.org>
-
-NO_REGRESS=	Yes
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes

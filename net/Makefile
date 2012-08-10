@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.761 2012/07/10 14:09:01 zinke Exp $
+# $OpenBSD: Makefile,v 1.766 2012/08/05 09:57:23 ajacoutot Exp $
 # $FreeBSD: Makefile,v 1.129 1997/11/20 13:47:40 itojun Exp $
 #
 
@@ -103,13 +103,11 @@
      SUBDIR += gloox
      SUBDIR += gmudix
      SUBDIR += gnaughty
-     SUBDIR += gnet
      SUBDIR += gnugk
      SUBDIR += gopher
      SUBDIR += gotthard
      SUBDIR += gpodder
      SUBDIR += grake
-     SUBDIR += gsnmp
      SUBDIR += gssdp
      SUBDIR += gtk-gnutella
      SUBDIR += gupnp
@@ -156,6 +154,7 @@
      SUBDIR += irssi,socks
      SUBDIR += irssi-icb
      SUBDIR += irssi-silc
+     SUBDIR += isc-bind
      SUBDIR += isc-dhcp
      SUBDIR += jabberd,mysql
      SUBDIR += jabberd,mysql,ldap
@@ -506,13 +505,9 @@
      SUBDIR += ruby-xmpp4r
      SUBDIR += samba
      SUBDIR += samba,ads
-     SUBDIR += samba,cups
-     SUBDIR += samba,cups,ads
-     SUBDIR += samba,cups,ldap
      SUBDIR += samba,ldap
      SUBDIR += scamper
      SUBDIR += scapy
-     SUBDIR += scli
      SUBDIR += sendxmpp
      SUBDIR += sharity-light
      SUBDIR += si
@@ -571,6 +566,7 @@
      SUBDIR += transmission
      SUBDIR += trickle
      SUBDIR += ttcp
+     SUBDIR += ttg
      SUBDIR += twirssi
      SUBDIR += twitux
      SUBDIR += ucspi-unix

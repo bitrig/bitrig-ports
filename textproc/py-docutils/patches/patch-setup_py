@@ -1,4 +1,4 @@
-$OpenBSD: patch-setup_py,v 1.5 2011/08/17 07:08:20 rpointel Exp $
+$OpenBSD: patch-setup_py,v 1.6 2012/08/05 12:32:01 sthen Exp $
 --- setup.py.orig	Sun Jun 17 16:47:10 2012
 +++ setup.py	Thu Aug  2 00:45:53 2012
 @@ -159,16 +159,16 @@ what-you-see-is-what-you-get plaintext markup syntax."

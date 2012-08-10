@@ -1,6 +1,5 @@
-$OpenBSD$
---- Makefile.orig	Fri Mar  9 21:59:23 2012
-+++ Makefile	Fri Mar  9 22:01:00 2012
+--- Makefile.orig	Thu May 26 05:39:40 2005
++++ Makefile	Thu Aug  9 15:59:50 2012
 @@ -1,7 +1,7 @@
  MAJOR=2
  MINOR=1
@@ -11,3 +10,13 @@ $OpenBSD$
  CFLAGS+=-I. -DVERSION=\"$(MAJOR).$(MINOR)\"
  prefix?=/usr/local
  OBJS=\
+@@ -22,6 +22,9 @@ all: cvsps
+ 
+ cvsps: $(OBJS)
+ 	$(CC) -o cvsps $(OBJS) -lz
++
++.c.o:
++	$(CC) $(CFLAGS) -c -o $@ $<
+ 
+ install:
+ 	[ -d $(prefix)/bin ] || mkdir -p $(prefix)/bin

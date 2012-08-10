@@ -1,7 +1,6 @@
-$OpenBSD$
---- xulrunner/app/Makefile.in.orig	Thu Jun 14 20:50:08 2012
-+++ xulrunner/app/Makefile.in	Wed Jul 18 19:54:24 2012
-@@ -80,6 +80,18 @@ ifeq (cocoa,$(MOZ_WIDGET_TOOLKIT))
+--- xulrunner/app/Makefile.in.orig	Fri Jul 13 15:43:18 2012
++++ xulrunner/app/Makefile.in	Mon Aug  6 18:40:55 2012
+@@ -83,6 +83,18 @@ ifeq (cocoa,$(MOZ_WIDGET_TOOLKIT))
  TK_LIBS := -framework Cocoa $(TK_LIBS)
  endif
  
@@ -19,4 +18,4 @@ $OpenBSD$
 +
  LIBS += \
    $(EXTRA_DSO_LIBS) \
-   $(DIST)/lib/$(LIB_PREFIX)xpcomglue_s.$(LIB_SUFFIX) \
+   $(XPCOM_STANDALONE_GLUE_LDOPTS) \

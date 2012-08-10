@@ -1,12 +1,11 @@
-# $OpenBSD: Makefile,v 1.8 2012/07/10 15:22:44 jasper Exp $
+# $OpenBSD: Makefile,v 1.10 2012/07/19 20:26:26 jasper Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	lua bindings to libraries using GObject-Introspection
 
-DISTNAME=	lgi-0.6
+DISTNAME=	lgi-0.6.2
 PKGNAME=	lua-${DISTNAME}
-REVISION=	0
 CATEGORIES=	devel
 
 HOMEPAGE=	https://github.com/pavouk/lgi
@@ -34,6 +33,9 @@ MAKE_ENV=	MAKE=${MAKE_PROGRAM} LUA_CFLAGS="-I${MODLUA_INCL_DIR}" \
 
 REGRESS_TARGET= check
 REGRESS_IS_INTERACTIVE=x11
+
+pre-configure:
+	${SUBST_CMD} ${WRKSRC}/lgi/Makefile
 
 post-install:
 	${INSTALL_DATA_DIR} ${MODLUA_EXAMPLEDIR}

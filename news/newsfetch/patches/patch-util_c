@@ -1,7 +1,11 @@
-$OpenBSD$
 --- util.c.orig	Mon Apr 13 09:47:40 1998
-+++ util.c	Fri Jun 15 09:04:08 2012
-@@ -5,6 +5,7 @@
++++ util.c	Thu Aug  9 16:46:00 2012
+@@ -1,10 +1,12 @@
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <sys/types.h>
+ #include <fcntl.h>
+ #include <sys/stat.h>
  #include <unistd.h>
  #include <errno.h>
  #include <pwd.h>
@@ -9,7 +13,7 @@ $OpenBSD$
  #include "newsfetch.h"
  
  extern int errno;
-@@ -61,17 +62,17 @@ generateProcmailrc(char *homedir, char *rcfile, char *
+@@ -61,17 +63,17 @@ generateProcmailrc(char *homedir, char *rcfile, char *
  FILE *fp, *fp1, *fp2;
  char *tmp, buf[200], group[180], filterfile[100], procmailrcfile[100];
  int i,j;
@@ -37,7 +41,7 @@ $OpenBSD$
         	strcpy(filterfile,homedir);
         	strcat(filterfile,"/");
         	strcat(filterfile, PROCMAIL_TMPL);
-@@ -188,10 +189,7 @@ dest[0] = '\0';
+@@ -188,10 +190,7 @@ dest[0] = '\0';
  		tmp1 = tmp+strlen(search);
                  }
  	else

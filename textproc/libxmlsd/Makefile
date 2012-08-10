@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2012/04/28 09:28:47 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.12 2012/08/07 07:33:55 ajacoutot Exp $
 
 COMMENT=	XML validation library
 
@@ -13,8 +13,6 @@ MASTER_SITES=	https://opensource.conformal.com/snapshots/xmlsd/
 MAINTAINER=	David Hill <dhill@mindcry.org>
 
 WANTLIB= 	expat
-
-NO_REGRESS=	Yes
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes

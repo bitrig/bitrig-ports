@@ -1,12 +1,6 @@
-$OpenBSD: patch-configure,v 1.4 2012/05/28 08:45:38 ajacoutot Exp $
-
-Fix DATADIRNAME: see LOCALBASE/share/aclocal/glib-gettext.m4.
-
-/var/lib -> /var/db
-
---- configure.orig	Fri Jun  8 14:33:46 2012
-+++ configure	Fri Jun  8 14:34:02 2012
-@@ -4828,7 +4828,7 @@ else
+--- configure.orig	Thu Aug  9 20:17:49 2012
++++ configure	Thu Aug  9 20:19:20 2012
+@@ -4818,7 +4818,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -15,7 +9,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/glib-gettext.m4.
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5343,7 +5343,7 @@ newos6*)
+@@ -5333,7 +5333,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -24,7 +18,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/glib-gettext.m4.
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -5960,7 +5960,7 @@ old_postuninstall_cmds=
+@@ -5950,7 +5950,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -33,7 +27,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/glib-gettext.m4.
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -8723,7 +8723,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8713,7 +8713,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -42,7 +36,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/glib-gettext.m4.
      with_gnu_ld=no
      ;;
    esac
-@@ -9599,7 +9599,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -9589,7 +9589,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -51,7 +45,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/glib-gettext.m4.
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10646,7 +10646,7 @@ newsos6)
+@@ -10636,7 +10636,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  

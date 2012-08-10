@@ -1,13 +1,13 @@
 $OpenBSD$
---- js/src/configure.in.orig	Wed Jul 18 18:37:51 CEST 2012
-+++ js/src/configure.in	Wed Jul 18 18:37:51 CEST 2012
-@@ -2582,8 +2582,13 @@ ia64*-hpux*)
+--- js/src/configure.in.orig	Mon Aug  6 18:32:30 MDT 2012
++++ js/src/configure.in	Mon Aug  6 18:32:30 MDT 2012
+@@ -2350,8 +2350,13 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
 -*-openbsd*)
 -    DLL_SUFFIX=".so.1.0"
-+*-openbsd*|*-bitrig*)
++*-openbsd*|bitrig*)
 +    if test "$SO_VERSION"; then
 +        DLL_SUFFIX=".so.$SO_VERSION"
 +    else
@@ -17,7 +17,7 @@ $OpenBSD$
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
      DSO_LDOPTS='-shared -fPIC'
-@@ -2872,6 +2877,10 @@ mips*-*)
+@@ -2640,6 +2645,10 @@ mips*-*)
      AC_DEFINE(JS_CPU_MIPS)
      AC_DEFINE(JS_NUNBOX32)
      ;;
@@ -28,12 +28,12 @@ $OpenBSD$
  esac
  
  MOZ_ARG_DISABLE_BOOL(methodjit,
-@@ -3419,7 +3428,7 @@ then
+@@ -3187,7 +3196,7 @@ then
  			fi
  			;;
  
 -	    *-*-openbsd*|*-*-bsdi*)
-+	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
++	    *-*-openbsd*|bitrig*|*-*-bsdi*)
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.

@@ -1,0 +1,60 @@
+$OpenBSD: README-main,v 1.1 2012/08/04 14:37:04 ajacoutot Exp $
+
++-----------------------------------------------------------------------
+| Running ${FULLPKGNAME} on OpenBSD
++-----------------------------------------------------------------------
+
+Adding and/or configuring CUPS printers can be done with lpadmin(8), but
+for a quick and easy (graphical) setup, after starting the CUPS daemon,
+point your browser to:
+    http://localhost:631
+
+By default, CUPS only supports a handful amount of printers. There is a
+good chance your printer is supported by the Foomatic framework in which
+case the pkg-readmes documentation from the "foomatic-db-engine" package
+will tell you how to add more drivers to the system.
+Note that when using the CUPS cli tools or web interface, it is not
+necessary to use foomatic-ppdfile(1) directly, CUPS will automatically
+generate the required PPD file if the corresponding Foomatic DB is
+installed.
+
+To be able to use CUPS printers from GTK+3 applications, the gtk+3-cups
+package needs to be installed.
+
+USB
+===
+Since USB printing will be handled by libusb, you need to allow the
+_cups user access to the corresponding USB endpoint. To do so, find
+where your printer is attached to using `sudo usbdevs -vd` then change
+the ownerships accordingly.
+
+e.g.
+Controller /dev/usb3:
+addr 1: full speed, self powered, config 1, UHCI root hub(0x0000), Intel(0x8086), rev 1.00
+  uhub3
+ port 1 powered
+ port 2 addr 2: full speed, self powered, config 1, USB MFP(0x082f), EPSON(0x04b8), rev 1.00, iSerialNumber L83010704250947490
+   ugen0
+
+$ sudo chown _cups /dev/ugen0.* /dev/usb3
+
+The reason we are changing the user and not the group is that it will
+allow for multi-function devices to work for both printing and scanning
+(e.g. by being owned by _cups:_saned).
+
+To preserve your changes after a system update, use rc.local(8).
+e.g. for a multi-function printer/scanner add the following lines:
+chown _cups:_saned /dev/ugen0.* /dev/usb1
+
+Alternatively, hotplugd(8) attach/detach scripts can automate this.
+
+*** WARNING ***
+ulpt(4) needs to be disable in the kernel (see config(8)) or the printer
+will not be available to libusb.
+
+UPGRADING
+=========
+If you experience cups-driverd(8) crashes or printing issues after
+upgrading, remove the old CUPS cache and restart cups(8):
+    # rm /var/cache/cups/* 2>/dev/null
+    # ${RCDIR}/cupsd restart

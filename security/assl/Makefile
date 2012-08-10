@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2012/06/26 10:07:27 jasper Exp $
+# $OpenBSD: Makefile,v 1.23 2012/08/07 07:34:23 ajacoutot Exp $
 
 COMMENT=		hide awful SSL API in a sane interface
 
@@ -20,7 +20,6 @@ PERMIT_DISTFILES_FTP=	Yes
 
 FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
 
-NO_REGRESS=		Yes
 EG_DIR=			${PREFIX}/share/examples/assl
 
 .if ${MACHINE_ARCH:Mmips64*}

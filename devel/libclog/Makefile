@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2012/05/09 14:35:53 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.17 2012/08/07 07:32:24 ajacoutot Exp $
 
 COMMENT=		configurable logging library
 
@@ -18,9 +18,7 @@ PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
-NO_REGRESS=		Yes
-
-FAKE_FLAGS=	MANDIR=${PREFIX}/man/man
+FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
 
 do-configure:
 	printf "major=${LIBclog_VERSION:R}\nminor=${LIBclog_VERSION:E}\n" \

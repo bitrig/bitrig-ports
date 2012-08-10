@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2011/09/16 11:41:41 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2012/08/05 12:32:01 sthen Exp $
 
 COMMENT =	process plaintext documentation into other formats
 

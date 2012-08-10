@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2012/05/09 14:35:33 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.9 2012/08/07 07:33:21 ajacoutot Exp $
 
 COMMENT=	compression wrapper library
 
@@ -15,8 +15,6 @@ MAINTAINER=	David Hill <dhill@mindcry.org>
 WANTLIB=	c crypto lzma lzo2 ssl util z
 LIB_DEPENDS=	archivers/lzo2 \
 		archivers/xz
-
-NO_REGRESS=	Yes
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes
