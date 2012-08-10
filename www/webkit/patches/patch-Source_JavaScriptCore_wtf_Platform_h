@@ -1,9 +1,6 @@
-$OpenBSD: patch-Source_JavaScriptCore_wtf_Platform_h,v 1.5 2012/08/07 09:35:38 landry Exp $
-
-Allow webkit to build and run on mips64
-
---- Source/JavaScriptCore/wtf/Platform.h.orig	Wed Aug  1 09:55:05 2012
-+++ Source/JavaScriptCore/wtf/Platform.h	Fri Aug  3 16:33:41 2012
+$OpenBSD$
+--- Source/JavaScriptCore/wtf/Platform.h.orig	Fri Aug 10 13:44:23 MDT 2012
++++ Source/JavaScriptCore/wtf/Platform.h	Fri Aug 10 13:44:23 MDT 2012
 @@ -76,9 +76,14 @@
  
  /* CPU(MIPS) - MIPS 32-bit */
@@ -30,6 +27,31 @@ Allow webkit to build and run on mips64
  #define WTF_CPU_NEEDS_ALIGNED_ACCESS 1
  #endif
  
+@@ -366,9 +371,12 @@
+ #define WTF_OS_NETBSD 1
+ #endif
+ 
+-/* OS(OPENBSD) - OpenBSD */
+-#ifdef __OpenBSD__
+-#define WTF_OS_OPENBSD 1
++/* OS(OPENBSD) || OS(BITRIG) - OpenBSD|Bitrig */
++#if defined(__OpenBSD__)
++#define WTF_OS_OPENBSD 1
++#endif
++#if defined(__Bitrig__)
++#define WTF_OS_BITRIG 1
+ #endif
+ 
+ /* OS(QNX) - QNX */
+@@ -402,7 +407,8 @@
+     || OS(HURD)             \
+     || OS(LINUX)            \
+     || OS(NETBSD)           \
+     || OS(OPENBSD)          \
++    || OS(BITRIG)           \
+     || OS(QNX)              \
+     || OS(SOLARIS)          \
+     || defined(unix)        \
 @@ -899,7 +904,8 @@
      || CPU(ALPHA) \
      || CPU(SPARC64) \

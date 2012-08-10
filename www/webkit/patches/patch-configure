@@ -1,16 +1,6 @@
-$OpenBSD: patch-configure,v 1.10 2012/04/30 13:31:06 landry Exp $
-
-GNOME Bug 627126 - gsettings schema files don't get installed on FreeBSD
-glib commit 136e705e8383ff8848e425ac01278102d7badc52
-
-Don't force the use of -O2, the ports infrastructure
-takes care of that
-
-OpenBSD doesnt have libdl
-
-Fix gstreamer detection : https://bugs.webkit.org/show_bug.cgi?id=82580
---- configure.orig	Tue Apr 24 00:17:08 2012
-+++ configure	Tue Jun  5 15:25:12 2012
+$OpenBSD$
+--- configure.orig	Fri Aug 10 13:44:32 MDT 2012
++++ configure	Fri Aug 10 13:44:32 MDT 2012
 @@ -8028,7 +8028,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -20,6 +10,18 @@ Fix gstreamer detection : https://bugs.webkit.org/show_bug.cgi?id=82580
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -8459,9 +8459,9 @@ freebsd* | dragonfly*)
+   if echo __ELF__ | $CC -E - | $GREP __ELF__ > /dev/null; then
+     case $host_cpu in
+     i*86 )
+-      # Not sure whether the presence of OpenBSD here was a mistake.
++      # Not sure whether the presence of OpenBSD here was a mistake.
+       # Let's accept both of them until this is cleared up.
+-      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
++      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|Bitrig|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
+       lt_cv_file_magic_cmd=/usr/bin/file
+       lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
+       ;;
 @@ -8535,7 +8535,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
@@ -56,7 +58,7 @@ Fix gstreamer detection : https://bugs.webkit.org/show_bug.cgi?id=82580
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -13511,7 +13511,7 @@ newsos6)
+@@ -13511,11 +13511,11 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -65,6 +67,11 @@ Fix gstreamer detection : https://bugs.webkit.org/show_bug.cgi?id=82580
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
+-  # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
++  # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
+   case $host_os in
+     openbsd3.3 | openbsd3.3.*)	need_version=yes ;;
+     *)				need_version=no  ;;
 @@ -15571,7 +15571,7 @@ fi
  	ld_shlibs_CXX=no
  	;;
@@ -74,7 +81,7 @@ Fix gstreamer detection : https://bugs.webkit.org/show_bug.cgi?id=82580
  	if test -f /usr/libexec/ld.so; then
  	  hardcode_direct_CXX=yes
  	  hardcode_shlibpath_var_CXX=no
-@@ -17360,7 +17360,7 @@ newsos6)
+@@ -17360,11 +17360,11 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -83,6 +90,11 @@ Fix gstreamer detection : https://bugs.webkit.org/show_bug.cgi?id=82580
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
+-  # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
++  # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
+   case $host_os in
+     openbsd3.3 | openbsd3.3.*)	need_version=yes ;;
+     *)				need_version=no  ;;
 @@ -18545,8 +18545,8 @@ GSTREAMER_0_11_REQUIRED_VERSION=0.11
  GSTREAMER_0_11_PLUGINS_BASE_REQUIRED_VERSION=0.11.0.2
  

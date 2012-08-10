@@ -35,6 +35,7 @@ MODULES =	devel/gettext \
 MODPY_RUNDEP =	No
 
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/Source/autotools/
 
 CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include/libpng -I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib -lX11" \

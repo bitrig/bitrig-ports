@@ -1,6 +1,6 @@
 $OpenBSD$
---- Source/autotools/ltmain.sh.orig	Tue Jun  5 17:01:47 2012
-+++ Source/autotools/ltmain.sh	Tue Jun  5 17:01:55 2012
+--- Source/autotools/ltmain.sh.orig	Fri Aug 10 13:44:24 MDT 2012
++++ Source/autotools/ltmain.sh	Fri Aug 10 13:44:24 MDT 2012
 @@ -5597,7 +5597,7 @@ func_mode_link ()
  	    # These systems don't actually have a C library (as such)
  	    test "X$arg" = "X-lc" && continue
