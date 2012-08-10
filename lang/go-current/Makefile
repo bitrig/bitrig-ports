@@ -27,6 +27,8 @@ WANTLIB =		c m
 MASTER_SITES =		http://go.googlecode.com/files/
 
 BUILD_DEPENDS =		shells/bash
+# needs to be installed for hg target
+#			devel/mercurial
 
 SEPARATE_BUILD =	simple
 CONFIGURE_STYLE =	None
