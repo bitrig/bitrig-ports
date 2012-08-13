@@ -11,7 +11,7 @@ LLVM_V =	3.2
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION =	2
+REVISION =	3
 
 CATEGORIES =	bitrig
 
@@ -33,7 +33,7 @@ WANTLIB =	c m pthread stdc++
 MASTER_SITES = https://www.bitrig.org/pub/distfiles/
 
 DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
-DISTFILES +=	compiler-rt-20120807.tar.gz
+DISTFILES +=	compiler-rt-20120813.tar.gz
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 
 post-extract:
