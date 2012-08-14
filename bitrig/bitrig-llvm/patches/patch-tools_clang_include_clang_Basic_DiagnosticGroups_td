@@ -1,6 +1,6 @@
 $OpenBSD$
 --- tools/clang/include/clang/Basic/DiagnosticGroups.td.orig	Fri Apr  6 13:12:22 2012
-+++ tools/clang/include/clang/Basic/DiagnosticGroups.td	Mon Jun  4 13:28:06 2012
++++ tools/clang/include/clang/Basic/DiagnosticGroups.td	Tue Aug 14 11:31:26 2012
 @@ -43,6 +43,7 @@ def : DiagGroup<"ctor-dtor-privacy">;
  def : DiagGroup<"declaration-after-statement">;
  def DefaultArgSpecialMember : DiagGroup<"default-arg-special-member">;
@@ -9,3 +9,11 @@ $OpenBSD$
  
  def DeleteNonVirtualDtor : DiagGroup<"delete-non-virtual-dtor">;
  
+@@ -346,6 +347,7 @@ def Most : DiagGroup<"most", [
+     StringPlusInt,
+     Trigraphs,
+     Uninitialized,
++    UninitializedMaybe,
+     UnknownPragmas,
+     Unused,
+     VolatileRegisterVar,
