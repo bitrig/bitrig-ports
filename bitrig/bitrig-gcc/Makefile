@@ -13,8 +13,8 @@ LIBSTDC_VERSION = 14.0
 PKGNAME-main =  bitrig-gcc-${FULL_PKGVERSION}
 PKGNAME-gcclibs= bitrig-gcclibs-${FULL_PKGVERSION}
 
-REVISION-main = 12
-REVISION-gcclibs=12
+REVISION-main = 13
+REVISION-gcclibs=13
 
 SHARED_LIBS =	stdc++		${LIBSTDC_VERSION} \
 		ssp		1.0 \
@@ -179,6 +179,7 @@ post-install:
 	ln ${PREFIX}/bin/gcc ${PREFIX}/bin/cc
 	ln ${PREFIX}/bin/${CONFIG}-gcc ${PREFIX}/bin/${CONFIG}-cc
 	ln ${PREFIX}/bin/${CONFIG}-gcc-${V} ${PREFIX}/bin/${CONFIG}-cc-${V}
+	cd ${PREFIX}/include/c++ && ln -sf ${V} stdc++
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/include
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/gcc/*/$V/include-fixed
 	chown ${BINOWN}:${BINGRP} ${PREFIX}/lib/gcc/${CONFIG}/${V}/libgcc.a
@@ -187,6 +188,11 @@ post-install:
 	chown ${BINOWN}:${BINGRP} ${PREFIX}/lib/gcc/${CONFIG}/${V}/fpic/libgcc.a
 	chown ${BINOWN}:${BINGRP} \
 		${PREFIX}/lib/gcc/${CONFIG}/${V}/fpic/libgcov.a
+	cd ${PREFIX}/lib && ln -sf gcc/${CONFIG}/${V}/fpic/libgcc.a libgcc.a
+	cd ${PREFIX}/lib && ln -sf gcc/${CONFIG}/${V}/fpic/libgcov.a libgcov.a
+.else
+	cd ${PREFIX}/lib && ln -sf gcc/${CONFIG}/${V}/libgcc.a libgcc.a
+	cd ${PREFIX}/lib && ln -sf gcc/${CONFIG}/${V}/libgcov.a libgcov.a
 .endif
 
 .include <bsd.port.mk>

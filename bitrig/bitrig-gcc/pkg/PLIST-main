@@ -676,6 +676,7 @@ include/c++/${V}/${CONFIG}/bits/os_defines.h
 include/c++/${V}/${CONFIG}/bits/stdc++.h
 include/c++/${V}/${CONFIG}/bits/stdtr1c++.h
 include/c++/${V}/${CONFIG}/bits/time_members.h
+include/c++/stdc++
 @info info/cpp.info
 @info info/cppinternals.info
 @info info/gcc.info
@@ -719,6 +720,7 @@ lib/gcc/${CONFIG}/${V}/install-tools/include/limits.h
 lib/gcc/${CONFIG}/${V}/install-tools/macro_list
 lib/gcc/${CONFIG}/${V}/install-tools/mkheaders.conf
 lib/gcc/${CONFIG}/${V}/libgcov.a
+lib/libgcov.a
 @comment lib/libiberty.a
 lib/libssp.a
 lib/libssp.la

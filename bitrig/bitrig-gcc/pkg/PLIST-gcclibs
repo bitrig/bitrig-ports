@@ -1,3 +1,4 @@
 @comment $OpenBSD: PLIST-estdc,v 1.1.1.1 2011/11/14 13:00:55 pascal Exp $
 %%SHARED%%
 lib/gcc/${CONFIG}/${V}/libgcc.a
+lib/libgcc.a
