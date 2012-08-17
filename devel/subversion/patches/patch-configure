@@ -1,6 +1,15 @@
 $OpenBSD$
---- configure.orig	Fri Aug 17 04:10:03 2012
-+++ configure	Fri Aug 17 04:10:24 2012
+--- configure.orig	Fri Aug 17 11:45:27 MDT 2012
++++ configure	Fri Aug 17 11:45:27 MDT 2012
+@@ -1533,7 +1533,7 @@ Optional Features:
+                           Enable preloading of locally built libraries in
+                           locally built executables. This may be necessary for
+                           testing prior to installation on some platforms. It
+-                          does not work on some platforms (Darwin, OpenBSD,
++                          does not work on some platforms (Darwin, OpenBSD, Bitrig,
+                           ...).
+   --disable-keychain      Disable use of Mac OS KeyChain for auth credentials
+   --disable-nls           Disable gettext functionality
 @@ -7747,7 +7747,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -10,6 +19,15 @@ $OpenBSD$
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -8183,7 +8183,7 @@ freebsd* | dragonfly*)
+     i*86 )
+       # Not sure whether the presence of OpenBSD here was a mistake.
+       # Let's accept both of them until this is cleared up.
+-      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
++      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|Bitrig|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
+       lt_cv_file_magic_cmd=/usr/bin/file
+       lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
+       ;;
 @@ -8257,7 +8257,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;

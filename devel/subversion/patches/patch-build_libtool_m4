@@ -1,12 +1,12 @@
 $OpenBSD$
---- build/libtool.m4.orig	Thu Aug 16 18:57:26 CEST 2012
-+++ build/libtool.m4	Thu Aug 16 18:57:26 CEST 2012
+--- build/libtool.m4.orig	Fri Aug 17 11:49:04 MDT 2012
++++ build/libtool.m4	Fri Aug 17 11:49:04 MDT 2012
 @@ -1413,7 +1413,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
 -  openbsd*)
-+  openbsd*|bitrig*)
++  openbsd* | bitrig*)
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
@@ -19,26 +19,18 @@ $OpenBSD$
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -2662,11 +2662,11 @@ newsos6)
+@@ -2662,7 +2662,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
 -openbsd*)
-+openbsd*|bitrig*)
++openbsd* | bitrig*)
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
--  # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
-+  # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
-   case $host_os in
-     openbsd3.3 | openbsd3.3.*)	need_version=yes ;;
-     *)				need_version=no  ;;
-@@ -3172,9 +3172,9 @@ freebsd* | dragonfly*)
-   if echo __ELF__ | $CC -E - | $GREP __ELF__ > /dev/null; then
-     case $host_cpu in
+@@ -3174,7 +3174,7 @@ freebsd* | dragonfly*)
      i*86 )
--      # Not sure whether the presence of OpenBSD here was a mistake.
-+      # Not sure whether the presence of OpenBSD here was a mistake.
+       # Not sure whether the presence of OpenBSD here was a mistake.
        # Let's accept both of them until this is cleared up.
 -      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[[3-9]]86 (compact )?demand paged shared library'
 +      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|Bitrig|DragonFly)/i[[3-9]]86 (compact )?demand paged shared library'
@@ -50,7 +42,7 @@ $OpenBSD$
    ;;
  
 -openbsd*)
-+openbsd*|bitrig*)
++openbsd* | bitrig*)
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[[^/]]+(\.so\.[[0-9]]+\.[[0-9]]+|\.so|_pic\.a)$'
    else
@@ -59,7 +51,7 @@ $OpenBSD$
      with_gnu_ld=yes
      ;;
 -  openbsd*)
-+  openbsd*|bitrig*)
++  openbsd* | bitrig*)
      with_gnu_ld=no
      ;;
    esac
@@ -68,7 +60,7 @@ $OpenBSD$
        ;;
  
 -    openbsd*)
-+    openbsd*|bitrig*)
++    openbsd* | bitrig*)
        if test -f /usr/libexec/ld.so; then
  	_LT_TAGVAR(hardcode_direct, $1)=yes
  	_LT_TAGVAR(hardcode_shlibpath_var, $1)=no
@@ -77,7 +69,7 @@ $OpenBSD$
  	;;
  
 -      openbsd*)
-+      openbsd*|bitrig*)
++      openbsd* | bitrig*)
  	if test -f /usr/libexec/ld.so; then
  	  _LT_TAGVAR(hardcode_direct, $1)=yes
  	  _LT_TAGVAR(hardcode_shlibpath_var, $1)=no

@@ -2,6 +2,40 @@
 @pkgpath devel/subversion,-perl,gnome_keyring
 lib/libsvn_swig_perl-1.a
 lib/libsvn_swig_perl-1.la
+@lib lib/libsvn_swig_perl-1.so.${LIBsvn_swig_perl-1_VERSION}
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Base.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Client.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Core.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Delta.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Fs.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Ra.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Repos.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/SVN/Wc.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Client/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Client/_Client.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Client/_Client.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Core/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Core/_Core.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Core/_Core.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Delta/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Delta/_Delta.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Delta/_Delta.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Fs/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Fs/_Fs.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Fs/_Fs.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Ra/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Ra/_Ra.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Ra/_Ra.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Repos/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Repos/_Repos.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Repos/_Repos.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Wc/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Wc/_Wc.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/SVN/_Wc/_Wc.so
 @man man/man3p/SVN::Base.3p
 @man man/man3p/SVN::Client.3p
 @man man/man3p/SVN::Core.3p

@@ -1,6 +1,6 @@
 $OpenBSD$
---- build/ltmain.sh.orig	Thu Aug 16 18:57:26 CEST 2012
-+++ build/ltmain.sh	Thu Aug 16 18:57:26 CEST 2012
+--- build/ltmain.sh.orig	Fri Aug 17 11:47:18 MDT 2012
++++ build/ltmain.sh	Fri Aug 17 11:47:18 MDT 2012
 @@ -5597,7 +5597,7 @@ func_mode_link ()
  	    # These systems don't actually have a C library (as such)
  	    test "X$arg" = "X-lc" && continue
