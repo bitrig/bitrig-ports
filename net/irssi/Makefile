@@ -29,7 +29,7 @@ LIB_DEPENDS=	devel/glib2
 USE_LIBTOOL=	Yes
 LIBTOOL_FLAGS+=	--tag=disable-static
 CONFIGURE_STYLE=gnu
-MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/build-aux/
 CONFIGURE_ARGS+=--with-pic \
 		--with-proxy \
 		--with-perl=yes \
