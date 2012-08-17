@@ -1,0 +1,12 @@
+$OpenBSD$
+--- tests/deplibs-ident.at.orig	Fri Aug 17 11:16:03 MDT 2012
++++ tests/deplibs-ident.at	Fri Aug 17 11:16:03 MDT 2012
+@@ -67,7 +67,7 @@ int main() { return a1() + a2() + a3() + c(); }
+ 	   [0],[stdout],[ignore])
+   AT_CHECK([$EGREP 'cee.*cee' stdout], 1, [ignore], [ignore])
+   AT_XFAIL_IF([case $host in
+-                 *-*-aix*|hppa*-*-hpux*|*-*-interix*|*-*-openbsd*) false;;
++                 *-*-aix*|hppa*-*-hpux*|*-*-interix*|*-*-openbsd*|*-*-bitrig*) false;;
+                  *):;;
+                esac])
+   dnl This is currently broken in libtool

@@ -1,6 +1,6 @@
-$OpenBSD: patch-libltdl_config_ltmain_sh,v 1.2 2011/11/01 16:07:31 jasper Exp $
---- libltdl/config/ltmain.sh.orig	Mon Oct 17 05:19:35 2011
-+++ libltdl/config/ltmain.sh	Tue May 15 12:44:11 2012
+$OpenBSD$
+--- libltdl/config/ltmain.sh.orig	Fri Aug 17 11:07:01 MDT 2012
++++ libltdl/config/ltmain.sh	Fri Aug 17 11:07:01 MDT 2012
 @@ -2714,51 +2714,6 @@ func_mode_finish ()
      # Exit here if they wanted silent mode.
      $opt_silent && exit $EXIT_SUCCESS
@@ -104,7 +104,7 @@ $OpenBSD: patch-libltdl_config_ltmain_sh,v 1.2 2011/11/01 16:07:31 jasper Exp $
  	    test "X$arg" = "X-lc" && continue
  	    ;;
 -	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
-+	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-bitrig*)
++	  *-*-openbsd* | *-*-bitrig* | *-*-freebsd* | *-*-dragonfly*)
  	    # Do not include libc due to us having libc/libc_r.
  	    test "X$arg" = "X-lc" && continue
  	    ;;
@@ -113,7 +113,7 @@ $OpenBSD: patch-libltdl_config_ltmain_sh,v 1.2 2011/11/01 16:07:31 jasper Exp $
  	elif test "X$arg" = "X-lc_r"; then
  	 case $host in
 -	 *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
-+	 *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-bitrig*)
++	 *-*-openbsd* | *-*-bitrig* | *-*-freebsd* | *-*-dragonfly*)
  	   # Do not include libc_r directly, use -pthread flag.
  	   continue
  	   ;;
@@ -168,7 +168,7 @@ $OpenBSD: patch-libltdl_config_ltmain_sh,v 1.2 2011/11/01 16:07:31 jasper Exp $
  	    # Don't link with libc until the a.out ld.so is fixed.
  	    ;;
 -	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
-+	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* | *-*-bitrig*)
++	  *-*-openbsd* | *-*-bitrig* | *-*-freebsd* | *-*-dragonfly*)
  	    # Do not include libc due to us having libc/libc_r.
  	    ;;
  	  *-*-sco3.2v5* | *-*-sco5v6*)

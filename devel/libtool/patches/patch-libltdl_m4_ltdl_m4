@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libltdl/m4/ltdl.m4.orig	Fri Aug 17 11:11:20 MDT 2012
++++ libltdl/m4/ltdl.m4	Fri Aug 17 11:11:20 MDT 2012
+@@ -496,7 +496,7 @@ AC_CACHE_CHECK([whether deplibs are loaded by dlopen],
+   netbsd*)
+     lt_cv_sys_dlopen_deplibs=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     lt_cv_sys_dlopen_deplibs=yes
+     ;;
+   osf[[1234]]*)

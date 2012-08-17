@@ -1,16 +1,16 @@
 $OpenBSD$
---- libltdl/configure.orig	Fri Aug 17 11:08:32 MDT 2012
-+++ libltdl/configure	Fri Aug 17 11:08:32 MDT 2012
-@@ -4548,7 +4548,7 @@ else
+--- tests/mdemo2/configure.orig	Fri Aug 17 11:24:04 MDT 2012
++++ tests/mdemo2/configure	Fri Aug 17 11:24:04 MDT 2012
+@@ -4422,7 +4422,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
 -  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | bitrig* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -4986,7 +4986,7 @@ freebsd* | dragonfly*)
+@@ -4863,7 +4863,7 @@ freebsd* | dragonfly*)
      i*86 )
        # Not sure whether the presence of OpenBSD here was a mistake.
        # Let's accept both of them until this is cleared up.
@@ -19,7 +19,7 @@ $OpenBSD$
        lt_cv_file_magic_cmd=/usr/bin/file
        lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
        ;;
-@@ -5060,7 +5060,7 @@ newos6*)
+@@ -4937,7 +4937,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -28,7 +28,7 @@ $OpenBSD$
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -5674,7 +5674,7 @@ old_postuninstall_cmds=
+@@ -5554,7 +5554,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -37,7 +37,7 @@ $OpenBSD$
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -8734,7 +8734,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8316,7 +8316,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -46,7 +46,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    esac
-@@ -9610,7 +9610,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -9192,7 +9192,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -55,7 +55,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10653,7 +10653,7 @@ newsos6)
+@@ -10235,7 +10235,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -64,12 +64,3 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -12199,7 +12199,7 @@ else
-   netbsd*)
-     lt_cv_sys_dlopen_deplibs=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     lt_cv_sys_dlopen_deplibs=yes
-     ;;
-   osf[1234]*)
