@@ -64,7 +64,7 @@ MAKE_ENV =		REQUIRES_RTTI=1
 PREFIX=			/usr
 CONFIGURE_STYLE =	cmake
 CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
-			-DLLVM_INCLUDE_TESTS:Bool=False \
+			-DLLVM_INCLUDE_TESTS:Bool=True \
 			-DLLVM_TARGETS_TO_BUILD:String="ARM;X86" \
 			-DCMAKE_INSTALL_PREFIX:PATH=${PREFIX} \
 			-DCMAKE_BUILD_TYPE:String=Release
@@ -128,7 +128,7 @@ git:
 	fi
 	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/llvm-3.2.src.tar.gz llvm-3.2.src)
 	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/clang-3.2.src.tar.gz clang-3.2.src)
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/compiler-rt-20120807.tar.gz compiler-rt)
+	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/compiler-rt-20120813.tar.gz compiler-rt)
 	make makesum
 	rm -rf ${TMPGIT}
 
