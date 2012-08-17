@@ -1,6 +1,6 @@
 $OpenBSD$
---- config/ltmain.sh.orig	Tue Jun  5 20:41:01 2012
-+++ config/ltmain.sh	Tue Jun  5 20:41:08 2012
+--- config/ltmain.sh.orig	Fri Aug 17 12:50:32 MDT 2012
++++ config/ltmain.sh	Fri Aug 17 12:50:32 MDT 2012
 @@ -1607,7 +1607,7 @@ EOF
  	    # These systems don't actually have a C library (as such)
  	    test "X$arg" = "X-lc" && continue

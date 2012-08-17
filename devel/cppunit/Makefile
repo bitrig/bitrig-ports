@@ -20,6 +20,7 @@ USE_GROFF =		Yes
 WANTLIB=		c m stdc++
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config/
 CONFIGURE_ARGS+=	--disable-doxygen
 
 .include <bsd.port.mk>
