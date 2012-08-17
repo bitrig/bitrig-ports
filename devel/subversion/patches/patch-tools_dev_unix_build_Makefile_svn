@@ -1,0 +1,35 @@
+$OpenBSD$
+--- tools/dev/unix-build/Makefile.svn.orig	Thu Aug 16 18:57:24 CEST 2012
++++ tools/dev/unix-build/Makefile.svn	Thu Aug 16 18:57:24 CEST 2012
+@@ -403,7 +403,7 @@ $(GNU_ICONV_OBJDIR)/lib_aliases.gperf.diff:
+ 	mv -f $@.tmp $@
+ 
+ # retrieve gnu-iconv
+-# Add 646 as an alias for ASCII to fix prop_test 22 on OpenBSD
++# Add 646 as an alias for ASCII to fix prop_test 22 on OpenBSD|Bitrig
+ $(GNU_ICONV_OBJDIR)/.retrieved: $(DISTDIR)/$(GNU_ICONV_DIST) \
+ 		$(GNU_ICONV_OBJDIR)/lib_encodings.def.diff \
+ 		$(GNU_ICONV_OBJDIR)/lib_aliases.gperf.diff
+@@ -603,9 +603,9 @@ $(NEON_OBJDIR)/.retrieved: $(DISTDIR)/$(NEON_DIST)
+ 	tar -C $(SRCDIR) -zxf $(DISTDIR)/$(NEON_DIST)
+ 	touch $@
+ 
+-# OpenBSD does not have krb5-config in PATH, but the neon port has
++# OpenBSD|Bitrig does not have krb5-config in PATH, but the neon port has
+ # a suitable replacement.
+-ifeq ($(UNAME),OpenBSD)
++ifeq ($(UNAME),OpenBSD|Bitrig)
+ KRB5_CONFIG_PATH=/usr/ports/net/neon/files
+ endif
+ 
+@@ -812,8 +812,8 @@ $(CYRUS_SASL_OBJDIR)/.retrieved: $(DISTDIR)/$(CYRUS_SA
+ 		> $(CYRUS_SASL_SRCDIR)/plugins/digestmd5.c.patched
+ 	mv $(CYRUS_SASL_SRCDIR)/plugins/digestmd5.c.patched \
+ 		$(CYRUS_SASL_SRCDIR)/plugins/digestmd5.c
+-ifeq ($(UNAME),OpenBSD)
+-	# Fixes GSSAPI support on OpenBSD, which hasn't got libroken:
++ifeq ($(UNAME),OpenBSD|Bitrig)
++	# Fixes GSSAPI support on OpenBSD|Bitrig, which hasn't got libroken:
+ 	for f in `grep -l -R -- -lroken $(CYRUS_SASL_SRCDIR)`; do \
+ 		sed -e 's/-lroken//g' < $$f > $$f.tmp && \
+ 		mv $$f.tmp $$f; \

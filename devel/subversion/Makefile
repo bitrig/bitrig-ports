@@ -62,9 +62,7 @@ MODULES=	devel/gettext lang/python
 
 WANTLIB=	expat magic z
 
-# autogen.sh checks for libtoolize
-BUILD_DEPENDS=	${MODGNU_AUTOCONF_DEPENDS} \
-		devel/libtool
+BUILD_DEPENDS=	devel/libtool
 
 MULTI_PACKAGES = -main -ap2 -perl -python -ruby -gnome-keyring
 
@@ -141,8 +139,8 @@ RUN_DEPENDS-gnome-keyring=	${MODGETTEXT_RUN_DEPENDS}
 CFLAGS+=	-pthread
 MAKE_FLAGS=	MAKE=${MAKE_PROGRAM}
 USE_LIBTOOL=	Yes
-AUTOCONF_VERSION=2.64
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/build/
 CONFIGURE_ENV=	PYTHON2=${MODPY_BIN} MKDIR="/bin/mkdir -p"
 CONFIGURE_ARGS+=${CONFIGURE_SHARED} \
 		--with-sasl=${LOCALBASE} \
@@ -188,10 +186,8 @@ pre-patch:
 	@ln -s ${MODPY_BIN} ${WRKDIR}/bin/python
 
 pre-configure:
-	@${SUBST_CMD} ${WRKSRC}/Makefile.in ${WRKSRC}/configure.ac \
+	@${SUBST_CMD} ${WRKSRC}/Makefile.in \
 		${WRKSRC}/subversion/libsvn_subr/auth.c
-	@cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} \
-		AUTOCONF_VERSION=${AUTOCONF_VERSION} ./autogen.sh
 
 .if ${BUILD_PACKAGES:M-python}
 REGRESS_DEPENDS+=	${FULLPKGNAME-python}:${BUILD_PKGPATH},-python
