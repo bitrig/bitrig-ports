@@ -1,6 +1,6 @@
 $OpenBSD$
---- configure.orig	Sat Aug 18 10:57:50 MDT 2012
-+++ configure	Sat Aug 18 10:57:50 MDT 2012
+--- configure.orig	Sun Apr 29 12:49:59 2012
++++ configure	Sat Aug 18 12:45:40 2012
 @@ -5819,7 +5819,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -94,3 +94,12 @@ $OpenBSD$
  
  
  
+@@ -33549,7 +33546,7 @@ _ACEOF
+ 
+ 
+ case $host in
+-*-linux*|*-*bsd*|*-solaris*|*-*-darwin*|*-dragonfly*|*-*-gnu*)
++*-linux*|*-*bsd*|*-solaris*|*-*-darwin*|*-dragonfly*|*-bitrig*|*-*-gnu*)
+ 	have_ld_preload="yes"
+ 	;;
+ *)
