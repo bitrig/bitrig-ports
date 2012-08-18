@@ -1,5 +1,4 @@
-# $OpenBSD: Makefile,v 1.494 2012/08/08 11:48:34 stu Exp $
-# $FreeBSD: Makefile,v 1.178 1997/11/24 05:32:52 fenner Exp $
+# $OpenBSD: Makefile,v 1.496 2012/08/18 07:25:26 ajacoutot Exp $
 
      SUBDIR =
      SUBDIR += Xaw3d
@@ -143,7 +142,6 @@
      SUBDIR += libxdg-basedir
      SUBDIR += lupe
      SUBDIR += lxrandr
-     SUBDIR += matchbox
      SUBDIR += mlterm
      SUBDIR += mono-gtk2
      SUBDIR += mouseclock

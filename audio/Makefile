@@ -1,5 +1,4 @@
-# $OpenBSD: Makefile,v 1.282 2012/07/10 12:14:46 naddy Exp $
-# $FreeBSD: Makefile,v 1.40 1997/11/16 22:49:20 fenner Exp $
+# $OpenBSD: Makefile,v 1.287 2012/08/18 07:25:25 ajacoutot Exp $
 
      SUBDIR =
      SUBDIR += abcde
@@ -9,7 +8,9 @@
      SUBDIR += alac_decoder
      SUBDIR += amarok
      SUBDIR += aqualung
+     SUBDIR += ardour
      SUBDIR += ascd
+     SUBDIR += aubio
      SUBDIR += aucatctl
      SUBDIR += audacious
      SUBDIR += audacious-plugins
@@ -29,6 +30,7 @@
      SUBDIR += cmus
      SUBDIR += cplay
      SUBDIR += daapd
+     SUBDIR += deadbeef
      SUBDIR += disc-cover
      SUBDIR += dumb
      SUBDIR += easytag
@@ -73,6 +75,7 @@
      SUBDIR += libdca
      SUBDIR += libgpod
      SUBDIR += libid3tag
+     SUBDIR += liblo
      SUBDIR += libmad
      SUBDIR += libmikmod
      SUBDIR += libmodplug

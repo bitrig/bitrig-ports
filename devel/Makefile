@@ -1,5 +1,4 @@
-# $OpenBSD: Makefile,v 1.1058 2012/07/17 19:34:09 landry Exp $
-# $FreeBSD: Makefile,v 1.85 1997/11/20 05:22:14 asami Exp $
+# $OpenBSD: Makefile,v 1.1061 2012/08/18 07:25:25 ajacoutot Exp $
 
      SUBDIR =
      SUBDIR += ElectricFence
@@ -384,6 +383,7 @@
      SUBDIR += msp430
      SUBDIR += mspdebug
      SUBDIR += mysql++
+     SUBDIR += nagelfar
      SUBDIR += naken430asm
      SUBDIR += nant
      SUBDIR += nasm
@@ -998,7 +998,6 @@
      SUBDIR += physfs
      SUBDIR += pkgconfig
      SUBDIR += plib
-     SUBDIR += pmk
      SUBDIR += poedit
      SUBDIR += popt
      SUBDIR += proj

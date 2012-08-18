@@ -1,6 +1,5 @@
-# $OpenBSD: Makefile,v 1.216 2012/06/29 16:38:21 jeremy Exp $
-# $FreeBSD: Makefile,v 1.24 1997/10/04 23:32:05 andreas Exp $
-#
+# $OpenBSD: Makefile,v 1.218 2012/08/18 07:25:25 ajacoutot Exp $
+
      SUBDIR =
      SUBDIR += apache-couchdb
      SUBDIR += architect
@@ -26,6 +25,7 @@
      SUBDIR += libdbi
      SUBDIR += libdbi-drivers
      SUBDIR += libpqxx
+     SUBDIR += luadbi
      SUBDIR += luasqlite3
      SUBDIR += luma
      SUBDIR += mdbtools/snapshot
