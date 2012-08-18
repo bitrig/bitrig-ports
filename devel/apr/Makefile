@@ -23,6 +23,7 @@ MASTER_SITES=	${MASTER_SITE_APACHE:=apr/}
 
 USE_LIBTOOL=	Yes
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--includedir=${LOCALBASE}/include/apr-1/ \
 		--with-installbuilddir=${LOCALBASE}/lib/apr-1/ \

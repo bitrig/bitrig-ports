@@ -32,5 +32,6 @@ LIB_DEPENDS=		graphics/gdk-pixbuf2
 MODGNOME_TOOLS= 	goi
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
 
 .include <bsd.port.mk>

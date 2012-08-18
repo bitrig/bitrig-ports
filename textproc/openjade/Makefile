@@ -26,6 +26,7 @@ LIB_DEPENDS=		textproc/opensp
 WANTLIB=		c m pthread stdc++ osp
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/config
 USE_LIBTOOL=		Yes
 USE_GMAKE=		Yes
 

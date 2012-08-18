@@ -36,6 +36,7 @@ USE_LIBTOOL=		Yes
 USE_GROFF=		Yes
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/admin
 CONFIGURE_ARGS=		--with-iodbc-inidir="${SYSCONFDIR}/iodbc" \
 			--disable-libodbc
 

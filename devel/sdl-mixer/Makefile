@@ -32,6 +32,7 @@ LIB_DEPENDS=	audio/flac \
 USE_LIBTOOL=	Yes
 USE_GMAKE=	Yes
 CONFIGURE_STYLE= gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-scripts
 CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
 		--disable-music-flac-shared \
 		--disable-music-fluidsynth-midi \

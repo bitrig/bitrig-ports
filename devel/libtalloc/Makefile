@@ -18,6 +18,7 @@ PERMIT_DISTFILES_FTP=	Yes
 MASTER_SITES=	http://samba.org/ftp/talloc/
 
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/libreplace
 MAKE_FLAGS+=	TALLOC_SOLIB=libtalloc.so.${LIBtalloc_VERSION} \
 		TALLOC_SONAME=libtalloc.so.${LIBtalloc_VERSION}
 

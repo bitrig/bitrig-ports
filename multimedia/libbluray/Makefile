@@ -34,6 +34,7 @@ BUILD_DEPENDS =		devel/bison \
 MAKE_FLAGS =		CFLAGS="${CFLAGS}"
 
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
 USE_LIBTOOL =		yes
 YACC =			${LOCALBASE}/bin/bison -y
 CONFIGURE_ENV =		ac_cv_prog_LEX="${LOCALBASE}/bin/gflex"

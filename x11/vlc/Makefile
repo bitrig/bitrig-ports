@@ -100,7 +100,7 @@ USE_GMAKE=	Yes
 USE_LIBTOOL=	gnu
 LIBTOOL_FLAGS=	--tag=disable-static
 CONFIGURE_STYLE= gnu
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/autotools
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/autotools
 CONFIGURE_ARGS+=--disable-a52 \
 		--disable-alsa \
 		--disable-altivec \

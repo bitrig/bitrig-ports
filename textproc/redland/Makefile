@@ -24,6 +24,7 @@ MODULES=	devel/gettext
 LIB_DEPENDS=	textproc/raptor
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/rasqal
 USE_LIBTOOL=		Yes
 USE_GROFF =		Yes
 

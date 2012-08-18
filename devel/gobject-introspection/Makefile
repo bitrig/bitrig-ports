@@ -39,6 +39,7 @@ USE_GROFF =		Yes
 YACC=			bison
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
 
 CFLAGS+=		-pthread
 

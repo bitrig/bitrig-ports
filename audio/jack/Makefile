@@ -41,6 +41,7 @@ LIBTOOL_FLAGS +=	--tag=disable-static
 AUTOCONF_VERSION =	2.65
 AUTOMAKE_VERSION =	1.10
 CONFIGURE_STYLE =	autoconf automake
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC} ${WRKSRC}/config
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
 			--with-default-tmpdir=/var/tmp \
 			--disable-sun \

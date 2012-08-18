@@ -21,6 +21,7 @@ MASTER_SITES =		${MASTER_SITE_GNU:=wget/}
 MODULES =		devel/gettext
 
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC} ${WRKSRC}/build-aux
 CONFIGURE_ENV +=	CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS +=	--with-ssl=openssl

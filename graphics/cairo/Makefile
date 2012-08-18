@@ -36,6 +36,7 @@ LIB_DEPENDS=		graphics/png \
 			devel/glib2
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build
 CONFIGURE_ENV=		PTHREAD_LIBS="-pthread"
 CONFIGURE_ARGS=		--enable-gl \
 			--enable-tee \

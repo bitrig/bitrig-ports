@@ -19,7 +19,8 @@ WANTLIB=	c sigsegv
 
 LIB_DEPENDS=	devel/libsigsegv
 
-CONFIGURE_STYLE= gnu 
+CONFIGURE_STYLE= gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
 CONFIGURE_ARGS=	--program-prefix="g"
 
 post-install:

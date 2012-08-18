@@ -20,6 +20,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=musicpd/}
 USE_LIBTOOL=		Yes
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build
 CONFIGURE_ARGS=		ac_cv_path_DOXYGEN=""
 
 .include <bsd.port.mk>

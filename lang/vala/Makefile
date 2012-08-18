@@ -37,6 +37,7 @@ USE_GROFF=		Yes
 SUBST_VARS+=		API_V
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
 CONFIGURE_ARGS+=	--enable-vapigen
 
 pre-configure:

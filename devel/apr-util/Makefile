@@ -29,6 +29,7 @@ LIB_DEPENDS=	databases/db/v4,no_java,no_tcl
 MODULES=	converters/libiconv		
 USE_LIBTOOL=	Yes
 CONFIGURE_STYLE=autoconf
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build
 AUTOCONF_VERSION=2.68
 CONFIGURE_ARGS=	--with-apr=${LOCALBASE} \
 		--with-dbm=db4 \

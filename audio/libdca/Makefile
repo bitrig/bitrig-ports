@@ -23,5 +23,6 @@ WANTLIB=	c m ossaudio
 
 USE_LIBTOOL=	Yes
 CONFIGURE_STYLE= gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/autotools
 
 .include <bsd.port.mk>

@@ -29,6 +29,8 @@ MAKE_FLAGS =		GMAKE_NOWARN=true CC="${CC}" CC++="${CXX}" \
 
 NO_REGRESS=		Yes
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/autoconf
+
 post-extract:
 	cp -R ${FILESDIR}/* ${WRKSRC}
 
