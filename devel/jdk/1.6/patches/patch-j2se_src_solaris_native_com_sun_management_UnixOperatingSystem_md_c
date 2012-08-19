@@ -1,6 +1,15 @@
-$OpenBSD: patch-j2se_src_solaris_native_com_sun_management_UnixOperatingSystem_md_c,v 1.1 2008/03/17 03:28:26 kurt Exp $
---- j2se/src/solaris/native/com/sun/management/UnixOperatingSystem_md.c.orig	Sun Mar 16 09:33:26 2008
-+++ j2se/src/solaris/native/com/sun/management/UnixOperatingSystem_md.c	Sun Mar 16 09:40:42 2008
+$OpenBSD$
+--- j2se/src/solaris/native/com/sun/management/UnixOperatingSystem_md.c.orig	Sat Aug 11 12:02:46 MDT 2012
++++ j2se/src/solaris/native/com/sun/management/UnixOperatingSystem_md.c	Sat Aug 11 12:02:46 MDT 2012
+@@ -231,7 +231,7 @@ Java_com_sun_management_UnixOperatingSystem_getCommitt
+   
+     fclose(fp);
+     return (jlong)vsize;
+-#else /* __NetBSD__ || __OpenBSD__ */
++#else /* __NetBSD__ || __OpenBSD__ || __Bitrig__ */
+     /*
+      * XXXBSD: there's no way available to do it in *BSD, AFAIK.
+      */
 @@ -324,12 +324,15 @@ Java_com_sun_management_UnixOperatingSystem_getTotalPh
    (JNIEnv *env, jobject mbean)
  {
@@ -21,3 +30,21 @@ $OpenBSD: patch-j2se_src_solaris_native_com_sun_management_UnixOperatingSystem_m
      rlen = sizeof(result);
      if (sysctl(mib, 2, &result, &rlen, NULL, 0) == -1)
  	result = 256 * MB;
+@@ -345,7 +348,7 @@ JNIEXPORT jlong JNICALL
+ Java_com_sun_management_UnixOperatingSystem_getOpenFileDescriptorCount
+   (JNIEnv *env, jobject mbean)
+ {
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+     return -1;
+ #else
+ #ifdef _ALLBSD_SOURCE
+@@ -375,7 +378,7 @@ Java_com_sun_management_UnixOperatingSystem_getOpenFil
+     closedir(dirp);
+     // subtract by 1 which was the fd open for this implementation
+     return (fds - 1);
+-#endif /* __OpenBSD__ */
++#endif /* __OpenBSD__ || __Bitrig__ */
+ }
+ 
+ JNIEXPORT jlong JNICALL

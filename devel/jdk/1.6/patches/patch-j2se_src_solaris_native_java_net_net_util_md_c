@@ -1,0 +1,21 @@
+$OpenBSD$
+--- j2se/src/solaris/native/java/net/net_util_md.c.orig	Sat Aug 11 12:09:44 MDT 2012
++++ j2se/src/solaris/native/java/net/net_util_md.c	Sat Aug 11 12:09:44 MDT 2012
+@@ -21,7 +21,7 @@
+ #include <sys/sysctl.h>
+ #endif
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <sys/socketvar.h>
+ #endif
+ 
+@@ -1270,7 +1270,7 @@ NET_SetSockOpt(int fd, int level, int  opt, const void
+                maxsockbuf = (maxsockbuf/5)*4;
+ #endif
+            }
+-#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
+ 	   maxsockbuf = SB_MAX;
+ #else
+ 	   maxsockbuf = 64 * 1024;	/* XXX: NetBSD */

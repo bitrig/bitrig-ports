@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/share/classes/com/sun/tools/javah/Util.java.orig	Sun Aug 19 03:16:55 2012
++++ j2se/src/share/classes/com/sun/tools/javah/Util.java	Sun Aug 19 03:24:19 2012
+@@ -168,6 +168,8 @@ public class Util {
+ 	    os = "NetBSD";
+ 	} else if (os.indexOf("OpenBSD") >= 0) {
+ 	    os = "OpenBSD";
++	} else if (os.indexOf("Bitrig") >= 0) {
++	    os = "Bitrig";
+ 	}
+ 	String arch = System.getProperty("os.arch");
+ 	String resname = "com.sun.tools.javah.resources." + os + "_" + arch;

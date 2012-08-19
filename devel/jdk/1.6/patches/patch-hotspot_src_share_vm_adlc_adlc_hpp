@@ -1,0 +1,14 @@
+--- hotspot/src/share/vm/adlc/adlc.hpp.orig	Tue Aug  7 23:21:41 2012
++++ hotspot/src/share/vm/adlc/adlc.hpp	Tue Aug  7 23:22:26 2012
+@@ -13,11 +13,7 @@
+ // standard library constants
+ #include "stdio.h"
+ #include "stdlib.h"
+-#if _MSC_VER >= 1300  // Visual C++ 7.0 or later
+ #include <iostream>
+-#else
+-#include <iostream.h>
+-#endif
+ #include "string.h"
+ #include "ctype.h"
+ #include "stdarg.h"

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/share/native/sun/awt/medialib/mlib_types.h.orig	Sat Aug 11 11:55:08 MDT 2012
++++ j2se/src/share/native/sun/awt/medialib/mlib_types.h	Sat Aug 11 11:55:08 MDT 2012
+@@ -47,7 +47,7 @@ typedef double             mlib_d64;
+ 
+ #if defined(_ALLBSD_SOURCE)
+ #include <stddef.h>                     /* for ptrdiff_t */
+-#if defined(__OpenBSD__)
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <inttypes.h>                   /* for uintptr_t */
+ #else
+ #include <stdint.h>                     /* for uintptr_t */

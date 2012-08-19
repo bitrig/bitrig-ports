@@ -1,0 +1,14 @@
+$OpenBSD$
+--- j2se/src/solaris/instrument/EncodingSupport_md.c.orig	Sat Aug 11 12:01:00 MDT 2012
++++ j2se/src/solaris/instrument/EncodingSupport_md.c	Sat Aug 11 12:01:00 MDT 2012
+@@ -14,6 +14,10 @@
+ #define HAVE_NL_LANGINFO
+ #include <langinfo.h>
+ #endif
++#ifndef __Bitrig__
++#define HAVE_NL_LANGINFO
++#include <langinfo.h>
++#endif
+ #include <iconv.h>
+ 
+ /* Routines to convert back and forth between Platform Encoding and UTF-8 */

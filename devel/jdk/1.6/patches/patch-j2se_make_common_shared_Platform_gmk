@@ -1,0 +1,36 @@
+$OpenBSD$
+--- j2se/make/common/shared/Platform.gmk.orig	Sat Aug 11 11:42:37 MDT 2012
++++ j2se/make/common/shared/Platform.gmk	Sat Aug 11 11:42:37 MDT 2012
+@@ -374,6 +374,13 @@ ifeq ($(SYSTEM_UNAME), OpenBSD)
+   REQUIRED_OS_VERSION = 4.0
+ endif
+ 
++ifeq ($(SYSTEM_UNAME), Bitrig)
++  PLATFORM = bsd
++  OS_NAME = bitrig
++  OS_VENDOR = Bitrig
++  REQUIRED_OS_VERSION = 0.1
++endif
++
+ # Platform settings specific to BSD
+ ifeq ($(PLATFORM), bsd)
+   OS_VERSION := $(shell uname -r)
+@@ -420,10 +427,16 @@ ifeq ($(PLATFORM), bsd)
+   #    a fully built workspace.
+   REQUIRED_FREE_SPACE=1500000
+   # How much RAM does this machine have:
+-  ifeq ($(OS_VENDOR), OpenBSD)
++  ifeq ($(OS_VENDOR), Bitrig)
+     MB_OF_MEMORY=$(shell perl -e 'printf "%d", `sysctl hw.physmem | cut -d'=' -f2` / 1048576' )
+   else
+-    MB_OF_MEMORY=$(shell sysctl hw.physmem | awk '{print int($$NF / 1048576); }' )
++    ifeq ($(OS_VENDOR), OpenBSD)
++      MB_OF_MEMORY=$(shell perl -e 'printf "%d", `sysctl hw.physmem | cut -d'=' -f2` / 1048576' )
++    elif ($(OS_VENDOR), Bitrig)
++      MB_OF_MEMORY=$(shell perl -e 'printf "%d", `sysctl hw.physmem | cut -d'=' -f2` / 1048576' )
++    else
++      MB_OF_MEMORY=$(shell sysctl hw.physmem | awk '{print int($$NF / 1048576); }' )
++    endif
+   endif
+ endif
+ 

@@ -1,6 +1,15 @@
-$OpenBSD: patch-j2se_src_solaris_bin_java_md_c,v 1.1 2008/03/17 03:28:26 kurt Exp $
---- j2se/src/solaris/bin/java_md.c.orig	Sun Mar 16 09:33:26 2008
-+++ j2se/src/solaris/bin/java_md.c	Sun Mar 16 09:33:27 2008
+$OpenBSD$
+--- j2se/src/solaris/bin/java_md.c.orig	Sat Aug 11 11:55:36 MDT 2012
++++ j2se/src/solaris/bin/java_md.c	Sat Aug 11 11:55:36 MDT 2012
+@@ -79,7 +79,7 @@ extern char **environ;
+ #if defined(__FreeBSD__)
+ static const char *system_dir	= "/usr/local/jdk1.6.0";
+ static const char *user_dir	= "/java";
+-#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
+ static const char *system_dir	= "/usr/local/jdk-1.6.0";
+ static const char *user_dir	= "/java";
+ #elif defined(__APPLE__)
 @@ -1032,21 +1032,28 @@ uint64_t
  physical_memory(void) {
  

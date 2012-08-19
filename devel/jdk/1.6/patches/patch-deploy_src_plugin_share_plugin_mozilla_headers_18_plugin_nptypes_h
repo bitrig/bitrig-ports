@@ -1,0 +1,24 @@
+$OpenBSD$
+--- deploy/src/plugin/share/plugin/mozilla_headers_18/plugin/nptypes.h.orig	Sat Aug 11 13:16:40 MDT 2012
++++ deploy/src/plugin/share/plugin/mozilla_headers_18/plugin/nptypes.h	Sat Aug 11 13:16:40 MDT 2012
+@@ -58,9 +58,9 @@
+   #ifndef __cplusplus
+     typedef int bool;
+   #endif
+-#elif defined(bsdi) || defined(FREEBSD) || defined(OPENBSD)
++#elif defined(bsdi) || defined(FREEBSD) || defined(OPENBSD) || defined(BITRIG)
+   /*
+-   * BSD/OS, FreeBSD, and OpenBSD ship sys/types.h that define int32_t and 
++   * BSD/OS, FreeBSD OpenBSD, and Bitrig ship sys/types.h that define int32_t and 
+    * u_int32_t.
+    */
+   #include <sys/types.h>
+@@ -76,7 +76,7 @@
+   #endif
+   #else
+   /*
+-   * FreeBSD and OpenBSD define uint32_t and bool.
++   * FreeBSD, OpenBSD, and Bitrig define uint32_t and bool.
+    */
+     #include <inttypes.h>
+     #include <stdbool.h>

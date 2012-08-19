@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/share/native/java/lang/fdlibm/include/fdlibm.h.orig	Sat Aug 11 11:53:30 MDT 2012
++++ j2se/src/share/native/java/lang/fdlibm/include/fdlibm.h	Sat Aug 11 11:53:30 MDT 2012
+@@ -5,7 +5,7 @@
+  * SUN PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+  */
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <sys/types.h>
+ #endif
+ #include <machine/endian.h>

@@ -1,7 +1,16 @@
-$OpenBSD: patch-hotspot_build_bsd_Makefile,v 1.1 2011/10/07 02:04:12 kurt Exp $
---- hotspot/build/bsd/Makefile.orig	Mon Sep 26 16:56:07 2011
-+++ hotspot/build/bsd/Makefile	Mon Sep 26 16:59:17 2011
-@@ -237,8 +237,7 @@ endif
+--- hotspot/build/bsd/Makefile.orig	Sun Aug 19 03:16:55 2012
++++ hotspot/build/bsd/Makefile	Sun Aug 19 03:16:55 2012
+@@ -37,6 +37,9 @@ unexport GAMMADIR
+ 
+ UNAME.s := $(shell uname -s)
+ OS      := $(subst SunOS,solaris,$(subst Linux,linux,$(UNAME.s)))
++ifeq (Bitrig,$(OS))
++  OS=bsd
++endif
+ ifneq ($(findstring BSD,$(OS)),)
+   OS=bsd
+ endif
+@@ -237,8 +240,7 @@ endif
  XSLT_CHECK	= $(RUN.JAVAP) javax.xml.transform.TransformerFactory
  # If not found then fail fast.
  check_j2se_version:

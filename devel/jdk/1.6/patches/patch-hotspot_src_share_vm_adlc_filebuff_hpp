@@ -1,0 +1,16 @@
+--- hotspot/src/share/vm/adlc/filebuff.hpp.orig	Tue Sep 25 06:19:15 2007
++++ hotspot/src/share/vm/adlc/filebuff.hpp	Tue Aug  7 23:46:04 2012
+@@ -8,11 +8,9 @@
+ 
+ // FILEBUFF.HPP - Definitions for parser file buffering routines
+ 
+-#if _MSC_VER >= 1300  // Visual C++ 7.0 or later
+ #include <iostream>
+-#else
+-#include <iostream.h>
+-#endif
++using std::istream;
++using std::ostream;
+ 
+ // STRUCTURE FOR HANDLING INPUT AND OUTPUT FILES
+ typedef struct {

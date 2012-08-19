@@ -1,10 +1,11 @@
-$OpenBSD: patch-j2se_src_solaris_native_java_lang_UNIXProcess_md_c,v 1.1 2012/03/22 18:53:16 kurt Exp $
---- j2se/src/solaris/native/java/lang/UNIXProcess_md.c.orig	Thu Mar 22 12:29:53 2012
-+++ j2se/src/solaris/native/java/lang/UNIXProcess_md.c	Thu Mar 22 12:38:41 2012
-@@ -257,19 +257,10 @@ Java_java_lang_UNIXProcess_waitForProcessExit(JNIEnv* 
+$OpenBSD$
+--- j2se/src/solaris/native/java/lang/UNIXProcess_md.c.orig	Sat Aug 11 12:07:47 MDT 2012
++++ j2se/src/solaris/native/java/lang/UNIXProcess_md.c	Sat Aug 11 12:07:47 MDT 2012
+@@ -256,20 +256,11 @@ Java_java_lang_UNIXProcess_waitForProcessExit(JNIEnv* 
+     }
  }
  
- #if defined(__OpenBSD__)
+-#if defined(__OpenBSD__)
 -/*
 - * Directly call _thread_sys_closefrom() so the child process
 - * doesn't reset the parrent's file descriptors to be blocking.
@@ -14,6 +15,7 @@ $OpenBSD: patch-j2se_src_solaris_native_java_lang_UNIXProcess_md_c,v 1.1 2012/03
 - */
 -int _thread_sys_closefrom(int);
 -
++#if defined(__OpenBSD__) || defined(__Bitrig__)
  static int
  closeDescriptors(void)
  {

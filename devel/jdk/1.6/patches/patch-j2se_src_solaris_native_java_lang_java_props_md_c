@@ -1,0 +1,14 @@
+$OpenBSD$
+--- j2se/src/solaris/native/java/lang/java_props_md.c.orig	Sat Aug 11 12:08:19 MDT 2012
++++ j2se/src/solaris/native/java/lang/java_props_md.c	Sat Aug 11 12:08:19 MDT 2012
+@@ -18,6 +18,10 @@
+ #define HAVE_NL_LANGINFO
+ #include <langinfo.h>           /* For nl_langinfo */
+ #endif
++#ifndef __Bitrig__
++#define HAVE_NL_LANGINFO
++#include <langinfo.h>           /* For nl_langinfo */
++#endif
+ #include <sys/utsname.h>	/* For os_name and os_version */
+ #include <stdlib.h>
+ #include <string.h>

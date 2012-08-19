@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/share/classes/sun/print/PSPrinterJob.java.orig	Sun Aug 19 03:16:55 2012
++++ j2se/src/share/classes/sun/print/PSPrinterJob.java	Sun Aug 19 03:29:26 2012
+@@ -1514,7 +1514,7 @@ public class PSPrinterJob extends RasterPrinterJob {
+         }
+ 
+ 	String osname = System.getProperty("os.name");
+-       if (osname.equals("Linux") || osname.equals("FreeBSD") || osname.equals("NetBSD") || osname.equals("OpenBSD")) {
++       if (osname.equals("Linux") || osname.equals("FreeBSD") || osname.equals("NetBSD") || osname.equals("OpenBSD") || osname.equals("Bitrig")) {
+             execCmd = new String[ncomps];
+             execCmd[n++] = "/usr/bin/lpr";
+             if ((pFlags & PRINTER) != 0) {

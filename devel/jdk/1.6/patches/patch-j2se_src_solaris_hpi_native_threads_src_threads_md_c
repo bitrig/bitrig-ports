@@ -1,16 +1,25 @@
-$OpenBSD: patch-j2se_src_solaris_hpi_native_threads_src_threads_md_c,v 1.1 2012/03/20 16:57:58 kurt Exp $
---- j2se/src/solaris/hpi/native_threads/src/threads_md.c.orig	Tue Mar 13 16:58:01 2012
-+++ j2se/src/solaris/hpi/native_threads/src/threads_md.c	Tue Mar 13 16:58:57 2012
-@@ -488,6 +488,12 @@ sysThreadCreate(sys_thread_t **tidP, long ss, void (*s
+$OpenBSD$
+--- j2se/src/solaris/hpi/native_threads/src/threads_md.c.orig	Sat Aug 11 11:57:26 MDT 2012
++++ j2se/src/solaris/hpi/native_threads/src/threads_md.c	Sat Aug 11 11:57:26 MDT 2012
+@@ -83,7 +83,7 @@ static thread_key_t tid_key = (thread_key_t) -1;
+ #ifdef __linux__
+ thread_key_t intrJmpbufkey;
+ static sigset_t squm = {{sigmask(SIGUSR1), 0, 0, 0}};
+-#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
+ thread_key_t sigusr1Jmpbufkey;
+ sigset_t sigusr1Mask = sigmask(SIGUSR1);
+ static sigset_t squm = sigmask(SIGUSR1);
+@@ -486,6 +486,12 @@ sysThreadCreate(sys_thread_t **tidP, long ss, void (*s
+     tid->start_parm = arg;
+ #ifdef __linux__
      tid->state = SUSPENDED;
- #endif
- 
-+#ifdef __OpenBSD__
++#endif
++
++#if defined(__OpenBSD__) || defined(__Bitrig__)
 +    /* Semaphore used to block thread until np_suspend() is called */
 +    err = sem_init(&tid->sem_suspended, 0, 0);
 +    sysAssert(err == 0);
-+#endif
-+
- #ifdef __linux__
-     tid->primordial_thread = 0;
+ #endif
  
+ #ifdef __linux__

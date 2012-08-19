@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/solaris/native/sun/nio/ch/FileChannelImpl.c.orig	Sat Aug 11 12:10:26 MDT 2012
++++ j2se/src/solaris/native/sun/nio/ch/FileChannelImpl.c	Sat Aug 11 12:10:26 MDT 2012
+@@ -352,7 +352,7 @@ Java_sun_nio_ch_FileChannelImpl_release0(JNIEnv *env, 
+     fl.l_start = (off64_t)pos;
+     fl.l_type = F_UNLCK;
+     lockResult = fcntl(fd, cmd, &fl);
+-#if defined(__FreeBSD__) || defined(__OpenBSD__)
++#if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__Bitrig__)
+     /* XXXFREEBSD:  While doing of preClose0() we're closing actual fd which
+        was locked, so here we'll get an error which need to be ignored to
+        satisfy TCK FileLock test */

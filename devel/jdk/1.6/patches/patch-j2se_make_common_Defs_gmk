@@ -1,0 +1,14 @@
+$OpenBSD$
+--- j2se/make/common/Defs.gmk.orig	Sat Aug 11 11:40:04 MDT 2012
++++ j2se/make/common/Defs.gmk	Sat Aug 11 11:40:04 MDT 2012
+@@ -116,6 +116,10 @@ ifdef PROGRAM
+     LDLIBS_COMMON =
+   endif
+ 
++ ifeq ($(OS_VENDOR), Bitrig)
++    LDLIBS_COMMON =
++  endif
++
+   ifeq ($(OS_VENDOR), Apple)
+     LDLIBS_COMMON =
+   endif

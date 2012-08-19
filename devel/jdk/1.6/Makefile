@@ -58,6 +58,10 @@ USE_GROFF =		Yes
 
 TAR=			${LOCALBASE}/bin/gtar
 
+CC = gcc
+CXX = g++
+CXXFLAGS+=-D__Bitrig__
+CFLAGS+=${CXXFLAGS}
 MAKE_ENV=		ALT_MOTIF_DIR="${LOCALBASE}" \
 			ALT_CUPS_HEADERS_PATH="${LOCALBASE}/include" \
 			ALT_DEVTOOLS_PATH="${LOCALBASE}/bin" \

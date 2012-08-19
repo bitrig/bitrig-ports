@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/share/classes/java/awt/GraphicsEnvironment.java.orig	Sun Aug 19 03:16:55 2012
++++ j2se/src/share/classes/java/awt/GraphicsEnvironment.java	Sun Aug 19 03:26:26 2012
+@@ -134,7 +134,7 @@ public abstract class GraphicsEnvironment {
+                         } else {
+                             String osName = System.getProperty("os.name");                        
+                             headless = defaultHeadless =
+-                                Boolean.valueOf(("Linux".equals(osName) || "SunOS".equals(osName) || "FreeBSD".equals(osName) || "NetBSD".equals(osName) || "OpenBSD".equals(osName)) &&
++                                Boolean.valueOf(("Linux".equals(osName) || "SunOS".equals(osName) || "FreeBSD".equals(osName) || "NetBSD".equals(osName) || "OpenBSD".equals(osName) || "Bitrig".equals(osName)) &&
+                                                 (System.getenv("DISPLAY") == null));
+                         }
+                     } else if (nm.equals("true")) {

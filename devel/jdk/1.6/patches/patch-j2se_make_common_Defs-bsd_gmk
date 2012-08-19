@@ -1,7 +1,6 @@
-$OpenBSD: patch-j2se_make_common_Defs-bsd_gmk,v 1.1 2008/12/22 13:16:56 kurt Exp $
---- j2se/make/common/Defs-bsd.gmk.orig	Sat Dec 20 23:00:33 2008
-+++ j2se/make/common/Defs-bsd.gmk	Sat Dec 20 23:01:56 2008
-@@ -347,6 +347,14 @@ override WRITE_LIBVERSION        = false
+--- j2se/make/common/Defs-bsd.gmk.orig	Sun Aug 19 03:16:55 2012
++++ j2se/make/common/Defs-bsd.gmk	Sun Aug 19 03:16:55 2012
+@@ -347,6 +347,18 @@ override WRITE_LIBVERSION        = false
  # installation area.
  override USE_EXECNAME            = true
  
@@ -10,6 +9,10 @@ $OpenBSD: patch-j2se_make_common_Defs-bsd_gmk,v 1.1 2008/12/22 13:16:56 kurt Exp
 +endif
 +
 +ifeq ($(OS_VENDOR), OpenBSD)
++  SYSTEM_ZLIB = true
++endif
++
++ifeq ($(OS_VENDOR), Bitrig)
 +  SYSTEM_ZLIB = true
 +endif
 +

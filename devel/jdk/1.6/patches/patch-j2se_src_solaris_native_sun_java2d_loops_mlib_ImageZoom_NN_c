@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/solaris/native/sun/java2d/loops/mlib_ImageZoom_NN.c.orig	Sat Aug 11 12:10:07 MDT 2012
++++ j2se/src/solaris/native/sun/java2d/loops/mlib_ImageZoom_NN.c	Sat Aug 11 12:10:07 MDT 2012
+@@ -49,7 +49,7 @@
+  *    MLIB_EDGE_SRC_PADDED
+  */
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <sys/types.h>
+ #endif
+ #include <machine/endian.h>

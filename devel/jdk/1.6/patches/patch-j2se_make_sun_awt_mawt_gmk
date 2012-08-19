@@ -1,0 +1,13 @@
+$OpenBSD$
+--- j2se/make/sun/awt/mawt.gmk.orig	Sat Aug 11 11:47:56 MDT 2012
++++ j2se/make/sun/awt/mawt.gmk	Sat Aug 11 11:47:56 MDT 2012
+@@ -16,6 +16,9 @@ ifeq ($(STATIC_MOTIF),false)
+ ifneq ($(OS_VENDOR), OpenBSD)
+ INIT += $(LIB_LOCATION)/libXm.so
+ endif
++ifneq ($(OS_VENDOR), Bitrig)
++INIT += $(LIB_LOCATION)/libXm.so
++endif
+ endif
+ endif
+ endif

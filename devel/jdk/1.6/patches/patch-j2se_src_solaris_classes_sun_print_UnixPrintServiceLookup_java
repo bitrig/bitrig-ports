@@ -1,0 +1,13 @@
+$OpenBSD$
+--- j2se/src/solaris/classes/sun/print/UnixPrintServiceLookup.java.orig	Sun Aug 19 03:16:55 2012
++++ j2se/src/solaris/classes/sun/print/UnixPrintServiceLookup.java	Sun Aug 19 03:30:53 2012
+@@ -105,7 +105,8 @@ public class UnixPrintServiceLookup extends PrintServi
+ 	return (osname.equals("Linux") ||
+ 		osname.equals("FreeBSD") ||
+ 		osname.equals("NetBSD") ||
+-		osname.equals("OpenBSD"));
++		osname.equals("OpenBSD") ||
++		osname.equals("Bitrig"));
+     } 
+ 
+     static final int UNINITIALIZED = -1;

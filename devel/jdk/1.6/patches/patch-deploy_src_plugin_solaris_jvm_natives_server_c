@@ -1,0 +1,12 @@
+$OpenBSD$
+--- deploy/src/plugin/solaris/jvm_natives/server.c.orig	Sat Aug 11 13:18:40 MDT 2012
++++ deploy/src/plugin/solaris/jvm_natives/server.c	Sat Aug 11 13:18:40 MDT 2012
+@@ -28,7 +28,7 @@
+ #ifdef _ALLBSD_SOURCE
+ #include <sys/uio.h>
+ #include <string.h>
+-#ifdef __OpenBSD__
++#if defined (__OpenBSD__) || defined(__Bitrig__)
+ #include <stdint.h>
+ #endif
+ #endif

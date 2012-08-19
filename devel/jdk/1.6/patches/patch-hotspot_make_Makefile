@@ -1,7 +1,16 @@
-$OpenBSD: patch-hotspot_make_Makefile,v 1.1 2011/10/07 02:04:12 kurt Exp $
---- hotspot/make/Makefile.orig	Mon Sep 26 19:51:17 2011
-+++ hotspot/make/Makefile	Mon Sep 26 19:52:48 2011
-@@ -488,7 +488,7 @@ ifeq ($(OSNAME),bsd)
+--- hotspot/make/Makefile.orig	Sun Aug 19 03:16:55 2012
++++ hotspot/make/Makefile	Sun Aug 19 03:16:55 2012
+@@ -112,6 +112,9 @@ ifeq ($(OS),)
+   ifneq ($(findstring BSD,$(OS)),)
+     OS=bsd
+   endif
++  ifeq (Bitrig,$(OS))
++    OS=bsd
++  endif
+   ifeq (Darwin,$(OS))
+     OS=bsd
+   endif
+@@ -488,7 +491,7 @@ ifeq ($(OSNAME),bsd)
    ifneq ($(ARCH),ia64)
  # FIXME: Reenable when SA builds correctly.
  #    EXPORT_LIST += $(EXPORT_JRE_LIB_ARCH_DIR)/libsaproc.so

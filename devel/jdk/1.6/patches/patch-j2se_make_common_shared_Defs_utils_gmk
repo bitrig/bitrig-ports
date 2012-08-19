@@ -1,6 +1,7 @@
---- j2se/make/common/shared/Defs-utils.gmk.orig	Sun Aug 19 03:16:55 2012
-+++ j2se/make/common/shared/Defs-utils.gmk	Sun Aug 19 03:16:55 2012
-@@ -184,6 +184,14 @@ ifeq ($(SYSTEM_UNAME),Bitrig)
+$OpenBSD$
+--- j2se/make/common/shared/Defs-utils.gmk.orig	Sat Aug 11 11:41:26 MDT 2012
++++ j2se/make/common/shared/Defs-utils.gmk	Sat Aug 11 11:41:26 MDT 2012
+@@ -176,6 +176,14 @@ ifeq ($(SYSTEM_UNAME),NetBSD)
    NAWK = $(USRBIN_PATH)awk
  endif
  

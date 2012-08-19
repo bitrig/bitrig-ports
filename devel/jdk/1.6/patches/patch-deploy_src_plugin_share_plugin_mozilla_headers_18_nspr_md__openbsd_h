@@ -1,0 +1,14 @@
+$OpenBSD$
+--- deploy/src/plugin/share/plugin/mozilla_headers_18/nspr/md/_openbsd.h.orig	Sat Aug 11 13:10:27 MDT 2012
++++ deploy/src/plugin/share/plugin/mozilla_headers_18/nspr/md/_openbsd.h	Sat Aug 11 13:10:27 MDT 2012
+@@ -46,6 +46,10 @@
+ #define OPENBSD
+ #endif
+ 
++#ifndef Bitrig
++#define BITRIG
++#endif
++
+ #define PR_AF_INET6 24  /* same as AF_INET6 */
+ 
+ #if defined(__i386__) || defined(__arm__)

@@ -1,0 +1,39 @@
+$OpenBSD$
+--- deploy/src/plugin/share/plugin/mozilla_headers_18/nspr/md/_pth.h.orig	Sat Aug 11 13:11:37 MDT 2012
++++ deploy/src/plugin/share/plugin/mozilla_headers_18/nspr/md/_pth.h	Sat Aug 11 13:11:37 MDT 2012
+@@ -144,7 +144,7 @@
+ #define _PT_PTHREAD_COPY_THR_HANDLE(st, dt)   (dt) = (st)
+ #elif defined(IRIX) || defined(OSF1) || defined(AIX) || defined(SOLARIS) \
+ 	|| defined(HPUX) || defined(LINUX) || defined(FREEBSD) \
+-	|| defined(NETBSD) || defined(OPENBSD) || defined(BSDI) \
++	|| defined(NETBSD) || defined(OPENBSD) || defined(BITRIG) || defined(BSDI) \
+ 	|| defined(VMS) || defined(NTO) || defined(DARWIN) \
+ 	|| defined(UNIXWARE)
+ #define _PT_PTHREAD_INVALIDATE_THR_HANDLE(t)  (t) = 0
+@@ -196,7 +196,7 @@
+  * These platforms don't have sigtimedwait()
+  */
+ #if (defined(AIX) && !defined(AIX4_3_PLUS)) || defined(LINUX) \
+-	|| defined(FREEBSD) || defined(NETBSD) || defined(OPENBSD) \
++	|| defined(FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(BITRIG) \
+ 	|| defined(BSDI) || defined(VMS) || defined(UNIXWARE) \
+ 	|| defined(DARWIN)
+ #define PT_NO_SIGTIMEDWAIT
+@@ -255,7 +255,7 @@
+  */
+ #define PT_PRIO_MIN            1
+ #define PT_PRIO_MAX            127
+-#elif defined(OPENBSD)
++#elif defined(OPENBSD) || defined(BITRIG)
+ #define PT_PRIO_MIN            0
+ #define PT_PRIO_MAX            31
+ #elif defined(NETBSD) \
+@@ -291,7 +291,7 @@ extern int (*_PT_aix_yield_fcn)();
+         nanosleep(&onemillisec,NULL);			\
+     PR_END_MACRO
+ #elif defined(HPUX) || defined(LINUX) || defined(SOLARIS) \
+-	|| defined(FREEBSD) || defined(NETBSD) || defined(OPENBSD) \
++	|| defined(FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(BITRIG) \
+ 	|| defined(BSDI) || defined(NTO) || defined(DARWIN) \
+ 	|| defined(UNIXWARE)
+ #define _PT_PTHREAD_YIELD()            	sched_yield()

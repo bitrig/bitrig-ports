@@ -1,0 +1,12 @@
+$OpenBSD$
+--- deploy/src/plugin/share/plugin/mozilla_headers_18/nspr/md/prosdep.h.orig	Sat Aug 11 13:12:10 MDT 2012
++++ deploy/src/plugin/share/plugin/mozilla_headers_18/nspr/md/prosdep.h	Sat Aug 11 13:12:10 MDT 2012
+@@ -78,7 +78,7 @@ PR_BEGIN_EXTERN_C
+ #elif defined(NETBSD)
+ #include "md/_netbsd.h"
+ 
+-#elif defined(OPENBSD)
++#elif defined(OPENBSD) || defined(BITRIG)
+ #include "md/_openbsd.h"
+ 
+ #elif defined(BSDI)

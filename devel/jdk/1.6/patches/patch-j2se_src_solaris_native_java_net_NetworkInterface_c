@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/solaris/native/java/net/NetworkInterface.c.orig	Sat Aug 11 12:09:17 MDT 2012
++++ j2se/src/solaris/native/java/net/NetworkInterface.c	Sat Aug 11 12:09:17 MDT 2012
+@@ -38,7 +38,7 @@
+ #if defined(__FreeBSD__) || defined(__APPLE__)
+ #include <net/ethernet.h>
+ #include <net/if_var.h>
+-#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <netinet/if_ether.h>
+ #endif
+ #include <net/if_dl.h>

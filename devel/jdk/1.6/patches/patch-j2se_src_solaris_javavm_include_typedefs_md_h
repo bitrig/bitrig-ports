@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/solaris/javavm/include/typedefs_md.h.orig	Sat Aug 11 12:01:43 MDT 2012
++++ j2se/src/solaris/javavm/include/typedefs_md.h	Sat Aug 11 12:01:43 MDT 2012
+@@ -20,7 +20,7 @@
+ #define HAVE_INTPTR_T
+ #define _UINT64_T
+ #elif defined(_ALLBSD_SOURCE)
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <inttypes.h>
+ #endif
+ #if defined(__NetBSD__) || (__APPLE__)

@@ -1,0 +1,35 @@
+$OpenBSD$
+--- deploy/src/plugin/share/plugin/mozilla_headers_18/plugin/nptypes.h.orig.bsd.orig	Sat Aug 11 13:17:53 MDT 2012
++++ deploy/src/plugin/share/plugin/mozilla_headers_18/plugin/nptypes.h.orig.bsd	Sat Aug 11 13:17:53 MDT 2012
+@@ -58,26 +58,26 @@
+   #ifndef __cplusplus
+     typedef int bool;
+   #endif
+-#elif defined(bsdi) || defined(FREEBSD) || defined(OPENBSD)
++#elif defined(bsdi) || defined(FREEBSD) || defined(OPENBSD) || defined(BITRIG)
+   /*
+-   * BSD/OS, FreeBSD, and OpenBSD ship sys/types.h that define int32_t and 
++   * BSD/OS, FreeBSD, OpenBSD, and Bitrig ship sys/types.h that define int32_t and 
+    * u_int32_t.
+    */
+   #include <sys/types.h>
+ 
+   /*
+    * BSD/OS ships no header that defines uint32_t, nor bool (for C)
+-   * OpenBSD ships no header that defines uint32_t, but provides bool as a 
++   * OpenBSD and Bitrig ship no header that defines uint32_t, but provides bool as a 
+    * macro.
+    */
+-  #if defined(bsdi) || defined(OPENBSD)
++  #if defined(bsdi) || defined(OPENBSD) || defined(BITRIG)
+   typedef u_int32_t uint32_t;
+ 
+   #if defined(bsdi)
+   #if !defined(__cplusplus)
+     typedef int bool;
+   #endif
+-  #else /* OPENBSD is defined, so use its bool */
++  #else /* OPENBSD or BITRIG is defined, so use its bool */
+     #include <stdbool.h>
+   #endif
+   #else

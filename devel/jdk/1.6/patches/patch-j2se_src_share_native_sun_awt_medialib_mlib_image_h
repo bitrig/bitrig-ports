@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/share/native/sun/awt/medialib/mlib_image.h.orig	Sat Aug 11 11:54:51 MDT 2012
++++ j2se/src/share/native/sun/awt/medialib/mlib_image.h	Sat Aug 11 11:54:51 MDT 2012
+@@ -13,7 +13,7 @@
+ #pragma ident	"@(#)mlib_image.h	1.16	98/10/21 SMI"
+ #endif /* __SUNPRO_C */
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <sys/types.h>
+ #endif
+ #include <machine/endian.h>

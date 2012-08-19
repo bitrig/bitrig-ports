@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/solaris/native/sun/java2d/j2d_md.h.orig	Sat Aug 11 12:09:57 MDT 2012
++++ j2se/src/solaris/native/sun/java2d/j2d_md.h	Sat Aug 11 12:09:57 MDT 2012
+@@ -13,7 +13,7 @@
+  * Linux version of <sys/types.h> does not define intptr_t
+  * NetBSD's doesn't either, so let's do it for everyone.
+  */
+-#if defined(__OpenBSD__)
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <inttypes.h>
+ #elif defined(__linux__) || defined(_ALLBSD_SOURCE)
+ #include <stdint.h>

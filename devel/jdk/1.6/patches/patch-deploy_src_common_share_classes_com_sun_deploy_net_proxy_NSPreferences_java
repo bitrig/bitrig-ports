@@ -1,0 +1,13 @@
+$OpenBSD$
+--- deploy/src/common/share/classes/com/sun/deploy/net/proxy/NSPreferences.java.orig	Sat Aug 11 13:07:36 MDT 2012
++++ deploy/src/common/share/classes/com/sun/deploy/net/proxy/NSPreferences.java	Sat Aug 11 13:07:36 MDT 2012
+@@ -357,7 +357,8 @@ public class NSPreferences
+ 	        (System.getProperty("os.name").equals("Linux") ||
+ 		 System.getProperty("os.name").equals("FreeBSD") ||
+ 		 System.getProperty("os.name").equals("NetBSD") ||
+-		 System.getProperty("os.name").equals("OpenBSD")) &&
++		 System.getProperty("os.name").equals("OpenBSD") ||
++		 System.getProperty("os.name").equals("Bitrig")) &&
+ 		version >= 4) {
+ 		info.setType(ProxyType.NONE);
+ 		return;

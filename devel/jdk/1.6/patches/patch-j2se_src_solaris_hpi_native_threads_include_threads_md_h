@@ -1,11 +1,11 @@
-$OpenBSD: patch-j2se_src_solaris_hpi_native_threads_include_threads_md_h,v 1.1 2012/03/20 16:57:58 kurt Exp $
---- j2se/src/solaris/hpi/native_threads/include/threads_md.h.orig	Tue Mar 13 16:42:45 2012
-+++ j2se/src/solaris/hpi/native_threads/include/threads_md.h	Tue Mar 13 16:57:21 2012
+$OpenBSD$
+--- j2se/src/solaris/hpi/native_threads/include/threads_md.h.orig	Sat Aug 11 11:56:50 MDT 2012
++++ j2se/src/solaris/hpi/native_threads/include/threads_md.h	Sat Aug 11 11:56:50 MDT 2012
 @@ -162,6 +162,11 @@ struct sys_thread {
      sem_t sem_selfsuspend;
      int selfsuspended;
  #endif
-+#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
 +    sem_t sem_suspended;
 +    sem_t sem_selfsuspend;
 +    int selfsuspended;

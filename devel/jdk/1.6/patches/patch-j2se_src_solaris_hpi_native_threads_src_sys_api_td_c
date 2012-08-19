@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/solaris/hpi/native_threads/src/sys_api_td.c.orig	Sat Aug 11 11:57:03 MDT 2012
++++ j2se/src/solaris/hpi/native_threads/src/sys_api_td.c	Sat Aug 11 11:57:03 MDT 2012
+@@ -21,7 +21,7 @@
+ #include <sys/ioctl.h>
+ #endif
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <sys/ioctl.h>
+ #endif
+ 

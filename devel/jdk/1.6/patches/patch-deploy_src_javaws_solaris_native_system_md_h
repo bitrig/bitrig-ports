@@ -1,0 +1,12 @@
+$OpenBSD$
+--- deploy/src/javaws/solaris/native/system_md.h.orig	Sat Aug 11 13:08:57 MDT 2012
++++ deploy/src/javaws/solaris/native/system_md.h	Sat Aug 11 13:08:57 MDT 2012
+@@ -42,6 +42,8 @@
+ #define PLATFORM "NetBSD"
+ #elif __OpenBSD__
+ #define PLATFORM "OpenBSD"
++#elif __Bitrig__
++#define PLATFORM "Bitrig"
+ #elif __DragonFly__
+ #define PLATFORM "DragonFly"
+ #endif

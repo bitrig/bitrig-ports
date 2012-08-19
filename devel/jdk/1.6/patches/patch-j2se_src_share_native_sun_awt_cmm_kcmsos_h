@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/share/native/sun/awt/cmm/kcmsos.h.orig	Sat Aug 11 11:54:05 MDT 2012
++++ j2se/src/share/native/sun/awt/cmm/kcmsos.h	Sat Aug 11 11:54:05 MDT 2012
+@@ -258,7 +258,7 @@ extern "C" {
+ 
+ 	#define KPINT32		1
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <sys/types.h>
+ #endif
+ #include <machine/endian.h>

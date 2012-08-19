@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/share/classes/sun/java2d/SunGraphicsEnvironment.java.orig	Sat Aug 11 11:52:13 MDT 2012
++++ j2se/src/share/classes/sun/java2d/SunGraphicsEnvironment.java	Sat Aug 11 11:52:13 MDT 2012
+@@ -134,6 +134,8 @@ public abstract class SunGraphicsEnvironment extends G
+ 		    isLinuxOrBSD = true;
+ 		} else if ("OpenBSD".equals(osName)) {
+ 		    isLinuxOrBSD = true;
++		} else if ("Bitrig".equals(osName)) {
++		    isLinuxOrBSD = true;
+ 		} else if ("SunOS".equals(osName)) {
+ 		    isSolaris = true;
+ 		}

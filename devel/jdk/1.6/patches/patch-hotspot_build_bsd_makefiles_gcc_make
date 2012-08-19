@@ -1,6 +1,5 @@
-$OpenBSD: patch-hotspot_build_bsd_makefiles_gcc_make,v 1.2 2008/03/17 03:28:26 kurt Exp $
---- hotspot/build/bsd/makefiles/gcc.make.orig	Sun Mar 16 09:33:24 2008
-+++ hotspot/build/bsd/makefiles/gcc.make	Sun Mar 16 09:35:24 2008
+--- hotspot/build/bsd/makefiles/gcc.make.orig	Sun Aug 19 03:16:55 2012
++++ hotspot/build/bsd/makefiles/gcc.make	Sun Aug 19 03:16:55 2012
 @@ -13,8 +13,7 @@ UNAME.s         = $(shell $(UNAME) -s)
  #------------------------------------------------------------------------
  # CC, CPP & AS
@@ -20,3 +19,31 @@ $OpenBSD: patch-hotspot_build_bsd_makefiles_gcc_make,v 1.2 2008/03/17 03:28:26 k
  # Special cases
  CFLAGS_WARN/BYFILE = $(CFLAGS_WARN/$@)$(CFLAGS_WARN/DEFAULT$(CFLAGS_WARN/$@)) 
  CFLAGS_WARN/os_bsd_i486.o = $(CFLAGS_WARN/DEFAULT) -Wno-deprecated-declarations
+@@ -137,6 +136,27 @@ endif
+ # BSD Shared Library
+ #
+ ifneq ($(findstring BSD,$(UNAME.s)),)
++
++# Enable linker optimization
++LFLAGS += -Xlinker -O1
++
++# Use $(MAPFLAG:FILENAME=real_file_name) to specify a map file.
++MAPFLAG = -Xlinker --version-script=FILENAME
++
++# Use $(SONAMEFLAG:SONAME=soname) to specify the intrinsic name of a shared obj
++SONAMEFLAG = -Xlinker -soname=SONAME
++
++# Build shared library
++SHARED_FLAG = -shared $(VM_PICFLAG)
++
++# Keep symbols even they are not used
++AOUT_FLAGS += -export-dynamic
++endif
++
++#
++# Bitrig Shared Library
++#
++ifeq (Bitrig, $(UNAME.s))
+ 
+ # Enable linker optimization
+ LFLAGS += -Xlinker -O1

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- j2se/src/share/native/sun/font/t2k/cpu.h.orig	Sat Aug 11 11:55:19 MDT 2012
++++ j2se/src/share/native/sun/font/t2k/cpu.h	Sat Aug 11 11:55:19 MDT 2012
+@@ -177,7 +177,7 @@
+ 
+ 	/* Macros to do byte swapping when used on littleEndian machines and do NOTHING on others */
+ 
+-#ifdef __OpenBSD__
++#if defined(__OpenBSD__) || defined(__Bitrig__)
+ #include <sys/types.h>
+ #endif
+ #include <machine/endian.h>
