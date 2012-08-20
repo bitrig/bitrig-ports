@@ -1,0 +1,32 @@
+$OpenBSD$
+--- gdk/x11/gdkdevicemanager-core-x11.c.orig	Sun Jul 15 11:48:47 2012
++++ gdk/x11/gdkdevicemanager-core-x11.c	Mon Aug 20 10:36:50 2012
+@@ -803,7 +803,7 @@ _gdk_device_manager_core_handle_focus (GdkWindow *wind
+                                        int        mode)
+ {
+   GdkToplevelX11 *toplevel;
+-  gboolean had_focus;
++  gboolean has_focus, had_focus;
+ 
+   g_return_if_fail (GDK_IS_WINDOW (window));
+   g_return_if_fail (GDK_IS_DEVICE (device));
+@@ -823,7 +823,7 @@ _gdk_device_manager_core_handle_focus (GdkWindow *wind
+   if (toplevel->focus_window == original)
+     return;
+ 
+-  had_focus = HAS_FOCUS (toplevel);
++  had_focus = toplevel->has_focus | (toplevel->has_pointer_focus << 1);
+ 
+   switch (detail)
+     {
+@@ -870,7 +870,9 @@ _gdk_device_manager_core_handle_focus (GdkWindow *wind
+       break;
+     }
+ 
+-  if (HAS_FOCUS (toplevel) != had_focus)
++  has_focus = toplevel->has_focus | (toplevel->has_pointer_focus << 1);
++
++  if (has_focus != had_focus)
+     {
+       GdkEvent *event;
+ 
