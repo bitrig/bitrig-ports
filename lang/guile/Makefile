@@ -31,7 +31,10 @@ MODULES=	devel/gettext
 
 SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=	gnu
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
+
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/guile-readline \
+				${WRKSRC}/build-aux
+
 USE_LIBTOOL=		gnu
 USE_GMAKE=		Yes
 
