@@ -1,6 +1,6 @@
---- mozilla/toolkit/library/Makefile.in.orig	Fri Jul 13 16:42:23 2012
-+++ mozilla/toolkit/library/Makefile.in	Mon Aug  6 18:59:41 2012
-@@ -457,6 +457,18 @@ OS_LIBS += \
+--- mozilla/toolkit/library/Makefile.in.orig	Fri Jul 13 17:42:23 2012
++++ mozilla/toolkit/library/Makefile.in	Tue Aug 21 00:12:07 2012
+@@ -457,6 +457,19 @@ OS_LIBS += \
    $(NULL)
  endif
  
@@ -12,14 +12,15 @@
 +
 +ifeq ($(OS_ARCH),Bitrig)
 +ifdef MOZ_SYDNEYAUDIO
-+EXTRA_DSO_LDOPTS += -lsndio
++#EXTRA_DSO_LDOPTS += -lsndio
++EXTRA_DSO_LDOPTS += /usr/lib/libsndio_pic.a /usr/lib/libpthread_pic.a
 +endif
 +endif
 +
  ifeq ($(OS_ARCH),Darwin)
  ifdef MOZ_SYDNEYAUDIO
  OS_LIBS += \
-@@ -471,12 +483,6 @@ OS_LIBS += \
+@@ -471,12 +484,6 @@ OS_LIBS += \
  endif
  endif
  
@@ -32,7 +33,7 @@
  ifdef MOZ_PLATFORM_MAEMO
  EXTRA_DSO_LDOPTS += $(MOZ_PLATFORM_MAEMO_LIBS)
  endif
-@@ -586,6 +592,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
+@@ -586,6 +593,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
  endif
  
  ifeq ($(OS_ARCH),OpenBSD)
