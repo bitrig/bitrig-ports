@@ -21,6 +21,7 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=check/}
 USE_LIBTOOL =		Yes
 
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build-aux
 CONFIGURE_ARGS = 	--enable-plain-docdir
 
 .include <bsd.port.mk>
