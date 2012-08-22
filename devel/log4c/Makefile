@@ -20,6 +20,7 @@ WANTLIB += expat
 USE_LIBTOOL=   	Yes
 
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
 CONFIGURE_ENV=	ac_cv_path_DOT="" \
 		ac_cv_path_DOXYGEN="" \
 		ac_cv_path_LATEX=""
