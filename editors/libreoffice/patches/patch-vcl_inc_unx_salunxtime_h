@@ -1,0 +1,12 @@
+$OpenBSD$
+--- vcl/inc/unx/salunxtime.h.orig	Fri Aug  3 21:33:59 CEST 2012
++++ vcl/inc/unx/salunxtime.h	Fri Aug  3 21:33:59 CEST 2012
+@@ -30,7 +30,7 @@
+ #define _SALUNX_TIME_H
+ 
+ #if defined LINUX || defined FREEBSD || \
+-    defined NETBSD || defined OPENBSD || defined DRAGONFLY
++    defined NETBSD || defined OPENBSD || defined BITRIG || defined DRAGONFLY
+ #include <sys/time.h>
+ #elif defined AIX
+ #include <time.h>

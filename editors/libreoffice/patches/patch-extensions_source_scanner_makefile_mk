@@ -1,0 +1,12 @@
+$OpenBSD$
+--- extensions/source/scanner/makefile.mk.orig	Fri Aug  3 21:32:53 CEST 2012
++++ extensions/source/scanner/makefile.mk	Fri Aug  3 21:32:53 CEST 2012
+@@ -77,7 +77,7 @@ SHL1STDLIBS=\
+     $(SVTOOLLIB)
+ 
+ .IF "$(GUI)"=="UNX" && "$(OS)"!="FREEBSD" && \
+-    "$(OS)"!="NETBSD" && "$(OS)"!="OPENBSD" && "$(OS)"!="DRAGONFLY"
++    "$(OS)"!="NETBSD" && "$(OS)"!="OPENBSD" && "$(OS)"!="BITRIG" && "$(OS)"!="DRAGONFLY"
+ SHL1STDLIBS+=$(SVTOOLLIB) -ldl
+ .ENDIF
+ 

@@ -1,0 +1,21 @@
+$OpenBSD$
+--- bridges/source/cpp_uno/gcc3_linux_intel/cpp2uno.cxx.orig	Mon Aug 20 19:27:55 CEST 2012
++++ bridges/source/cpp_uno/gcc3_linux_intel/cpp2uno.cxx	Mon Aug 20 19:27:55 CEST 2012
+@@ -357,7 +357,7 @@ extern "C" typedef void (*PrivateSnippetExecutor)();
+ 
+ int const codeSnippetSize = 16;
+ 
+-#if defined (FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(MACOSX) || \
++#if defined (FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(BITRIG) || defined(MACOSX) || \
+     defined(DRAGONFLY)
+ namespace
+ {
+@@ -406,7 +406,7 @@ unsigned char * codeSnippet(
+         break;
+     case typelib_TypeClass_STRUCT:
+     case typelib_TypeClass_EXCEPTION:
+-#if defined(FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(MACOSX) || \
++#if defined(FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(BITRIG) || defined(MACOSX) || \
+     defined(DRAGONFLY)
+         exec = returnsInRegister(pReturnTypeRef);
+         if (!exec)

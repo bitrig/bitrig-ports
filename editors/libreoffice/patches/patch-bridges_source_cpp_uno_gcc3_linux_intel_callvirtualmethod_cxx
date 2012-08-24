@@ -1,0 +1,12 @@
+$OpenBSD$
+--- bridges/source/cpp_uno/gcc3_linux_intel/callvirtualmethod.cxx.orig	Mon Aug 20 19:26:14 CEST 2012
++++ bridges/source/cpp_uno/gcc3_linux_intel/callvirtualmethod.cxx	Mon Aug 20 19:26:14 CEST 2012
+@@ -137,7 +137,7 @@ void CPPU_CURRENT_NAMESPACE::callVirtualMethod(
+             break;
+         default:
+         {
+-#if defined (FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(MACOSX) || \
++#if defined (FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(BITRIG) || defined(MACOSX) || \
+     defined(DRAGONFLY)
+             sal_Int32 const nRetSize = pReturnTypeDescr->nSize;
+             if (bSimpleReturn && nRetSize <= 8 && nRetSize > 0)

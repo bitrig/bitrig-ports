@@ -1,0 +1,39 @@
+$OpenBSD$
+--- sal/osl/unx/nlsupport.c.orig	Fri Aug  3 21:33:07 CEST 2012
++++ sal/osl/unx/nlsupport.c	Fri Aug  3 21:33:07 CEST 2012
+@@ -32,7 +32,7 @@
+ #include <rtl/memory.h>
+ 
+ #if defined(LINUX) || defined(SOLARIS) || defined(NETBSD) || \
+-    defined(FREEBSD) || defined(MACOSX)  || defined(IOS) || defined(OPENBSD) || \
++    defined(FREEBSD) || defined(MACOSX)  || defined(IOS) || defined(OPENBSD) || defined(BITRIG) || \
+     defined(DRAGONFLY)
+ #include <pthread.h>
+ #if !defined(MACOSX) && !defined(IOS)
+@@ -235,7 +235,7 @@ static rtl_Locale * _parse_locale( const char * locale
+ }
+ 
+ #if defined(LINUX) || defined(SOLARIS) || defined(NETBSD) || \
+-    defined(FREEBSD) || defined(OPENBSD) || defined(DRAGONFLY)
++    defined(FREEBSD) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY)
+ 
+ /*
+  * This implementation of osl_getTextEncodingFromLocale maps
+@@ -546,7 +546,7 @@ const _pair _nl_language_list[] = {
+     { "UTF-8",         RTL_TEXTENCODING_UTF8           }  /* ISO-10646/UTF-8 */
+ };
+ 
+-#elif defined(OPENBSD)
++#elif defined(OPENBSD) || defined(BITRIG)
+ 
+ const _pair _nl_language_list[] = {
+     { "ASCII",         RTL_TEXTENCODING_ASCII_US       }, /* US-ASCII */
+@@ -570,7 +570,7 @@ const _pair _nl_language_list[] = {
+     { "UTF-8",         RTL_TEXTENCODING_UTF8           }  /* ISO-10646/UTF-8 */
+ };
+ 
+-#endif /* ifdef SOLARIS LINUX FREEBSD NETBSD OPENBSD */
++#endif /* ifdef SOLARIS LINUX FREEBSD NETBSD OPENBSD BITRIG */
+ 
+ static pthread_mutex_t aLocalMutex = PTHREAD_MUTEX_INITIALIZER;
+ 

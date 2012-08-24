@@ -7,8 +7,8 @@ lib/libreoffice/share/autotext/fa/crdbus50.bau
 lib/libreoffice/share/autotext/fa/standard.bau
 lib/libreoffice/share/autotext/fa/template.bau
 lib/libreoffice/share/extensions/presenter-screen/help/fa/
-lib/libreoffice/share/extensions/presenter-screen/help/fa/com.sun.PresenterScreen-openbsd_${OA}/
-lib/libreoffice/share/extensions/presenter-screen/help/fa/com.sun.PresenterScreen-openbsd_${OA}/presenter.xhp
+lib/libreoffice/share/extensions/presenter-screen/help/fa/com.sun.PresenterScreen-bitrig_${OA}/
+lib/libreoffice/share/extensions/presenter-screen/help/fa/com.sun.PresenterScreen-bitrig_${OA}/presenter.xhp
 lib/libreoffice/share/extensions/presenter-screen/help/fa/help.db_
 lib/libreoffice/share/extensions/presenter-screen/help/fa/help.ht_
 lib/libreoffice/share/extensions/presenter-screen/help/fa/help.jar

@@ -1,0 +1,23 @@
+$OpenBSD$
+--- desktop/source/deployment/misc/dp_platform.cxx.orig	Sat Aug  4 11:07:11 2012
++++ desktop/source/deployment/misc/dp_platform.cxx	Sat Aug  4 11:14:11 2012
+@@ -68,6 +68,8 @@
+ #define PLATFORM_MACOSX_PPC         "macosx_powerpc"
+ #define PLATFORM_OPENBSD_X86        "openbsd_x86"
+ #define PLATFORM_OPENBSD_X86_64     "openbsd_x86_64"
++#define PLATFORM_BITRIG_X86         "bitrig_x86"
++#define PLATFORM_BITRIG_X86_64      "bitrig_x86_64"
+ #define PLATFORM_DRAGONFLY_X86      "dragonfly_x86"
+ #define PLATFORM_DRAGONFLY_X86_64   "dragonfly_x86_64"
+ 
+@@ -191,6 +193,10 @@ namespace
+             ret = checkOSandCPU(OUSTR("OpenBSD"), OUSTR("x86"));
+         else if (token.equals(OUSTR(PLATFORM_OPENBSD_X86_64)))
+             ret = checkOSandCPU(OUSTR("OpenBSD"), OUSTR("X86_64"));
++        else if (token.equals(OUSTR(PLATFORM_BITRIG_X86)))
++            ret = checkOSandCPU(OUSTR("Bitrig"), OUSTR("x86"));
++        else if (token.equals(OUSTR(PLATFORM_BITRIG_X86_64)))
++            ret = checkOSandCPU(OUSTR("Bitrig"), OUSTR("X86_64"));
+         else if (token.equals(OUSTR(PLATFORM_DRAGONFLY_X86)))
+             ret = checkOSandCPU(OUSTR("DragonFly"), OUSTR("x86"));
+         else if (token.equals(OUSTR(PLATFORM_DRAGONFLY_X86_64)))

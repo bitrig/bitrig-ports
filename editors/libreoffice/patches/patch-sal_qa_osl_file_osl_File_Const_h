@@ -1,0 +1,12 @@
+$OpenBSD$
+--- sal/qa/osl/file/osl_File_Const.h.orig	Fri Aug  3 21:33:08 CEST 2012
++++ sal/qa/osl/file/osl_File_Const.h	Fri Aug  3 21:33:08 CEST 2012
+@@ -89,7 +89,7 @@ const sal_Char pBuffer_Blank[]  = "";
+ #   include <errno.h>
+ #   include <fcntl.h>
+ #   include <sys/stat.h>
+-#   if !defined(MACOSX) && !defined(IOS) && !defined(__OpenBSD__) && !defined(__FreeBSD__) && !defined(__NetBSD__) && !defined (DRAGONFLY)
++#   if !defined(MACOSX) && !defined(IOS) && !defined(__OpenBSD__) && !defined(__Bitrig__) && !defined(__FreeBSD__) && !defined(__NetBSD__) && !defined (DRAGONFLY)
+ #       include <sys/statfs.h>
+ #   else
+ #       include <sys/param.h>

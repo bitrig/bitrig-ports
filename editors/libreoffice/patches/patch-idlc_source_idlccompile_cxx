@@ -1,0 +1,12 @@
+$OpenBSD$
+--- idlc/source/idlccompile.cxx.orig	Fri Aug  3 21:33:01 CEST 2012
++++ idlc/source/idlccompile.cxx	Fri Aug  3 21:33:01 CEST 2012
+@@ -42,7 +42,7 @@
+ #include <errno.h>
+ #include <unistd.h>
+ #if defined(MACOSX) || defined(FREEBSD) || defined(NETBSD) || \
+-    defined(AIX) || defined(OPENBSD) || defined(DRAGONFLY)
++    defined(AIX) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY)
+ #include <sys/wait.h>
+ #else
+ #include <wait.h>

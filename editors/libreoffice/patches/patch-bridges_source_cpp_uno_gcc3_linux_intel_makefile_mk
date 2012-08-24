@@ -1,0 +1,11 @@
+$OpenBSD$
+--- bridges/source/cpp_uno/gcc3_linux_intel/makefile.mk.orig	Mon Aug 20 19:26:55 CEST 2012
++++ bridges/source/cpp_uno/gcc3_linux_intel/makefile.mk	Mon Aug 20 19:26:55 CEST 2012
+@@ -40,6 +40,7 @@ ENABLE_EXCEPTIONS=TRUE
+ 
+ .IF "$(COM)$(OS)$(CPU)$(COMNAME)" == "GCCLINUXIgcc3" || \
+     "$(COM)$(OS)$(CPU)$(COMNAME)" == "GCCOPENBSDIgcc3" || \
++    "$(COM)$(OS)$(CPU)$(COMNAME)" == "GCCBITRIGIgcc3" || \
+     "$(COM)$(OS)$(CPU)$(COMNAME)" == "GCCFREEBSDIgcc3" || \
+     "$(COM)$(OS)$(CPU)$(COMNAME)" == "GCCNETBSDIgcc3" || \
+     "$(COM)$(OS)$(CPU)$(COMNAME)" == "GCCDRAGONFLYIgcc3"

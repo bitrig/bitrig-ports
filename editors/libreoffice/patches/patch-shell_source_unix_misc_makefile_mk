@@ -1,0 +1,12 @@
+$OpenBSD$
+--- shell/source/unix/misc/makefile.mk.orig	Fri Aug  3 21:33:56 CEST 2012
++++ shell/source/unix/misc/makefile.mk	Fri Aug  3 21:33:56 CEST 2012
+@@ -57,7 +57,7 @@ APP1OBJS = \
+     $(OBJ)$/gnome-open-url.obj
+ APP1LIBS =
+ APP1RPATH = OOO
+-.IF "$(OS)"!="FREEBSD" && "$(OS)"!="NETBSD" && "$(OS)"!="OPENBSD" && \
++.IF "$(OS)"!="FREEBSD" && "$(OS)"!="NETBSD" && "$(OS)"!="OPENBSD" && "$(OS)"!="BITRIG" && \
+     "$(OS)"!="DRAGONFLY"
+ APP1STDLIBS=-ldl
+ .ENDIF

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- sal/osl/unx/socket.c.orig	Fri Aug  3 21:33:07 CEST 2012
++++ sal/osl/unx/socket.c	Fri Aug  3 21:33:07 CEST 2012
+@@ -46,7 +46,7 @@
+ #endif
+ 
+ #if defined(LINUX) || defined(NETBSD) || defined ( FREEBSD ) || \
+-    defined (MACOSX) || defined (OPENBSD) || defined(DRAGONFLY)
++    defined (MACOSX) || defined (OPENBSD) || defined(BITRIG) || defined(DRAGONFLY)
+ #include <sys/poll.h>
+ #define HAVE_POLL_H
+ #endif /* HAVE_POLL_H */

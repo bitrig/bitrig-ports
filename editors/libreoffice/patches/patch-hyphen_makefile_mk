@@ -1,0 +1,13 @@
+$OpenBSD$
+--- hyphen/makefile.mk.orig	Mon Aug 20 13:24:44 2012
++++ hyphen/makefile.mk	Mon Aug 20 13:24:13 2012
+@@ -44,7 +44,8 @@ ADDITIONAL_FILES += makefile.mk
+ PATCH_FILES= \
+     hyphen-2.7.1.patch \
+     hyphen-2.7.1-read-charset.patch \
+-    hyphen-2.7.1-2.8.3.patch
++    hyphen-2.7.1-2.8.3.patch \
++    bitrig.patch
+ 
+ .IF "$(GUI)"=="UNX"
+ CONFIGURE_DIR=$(BUILD_DIR)

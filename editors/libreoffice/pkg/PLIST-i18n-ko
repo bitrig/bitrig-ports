@@ -65,8 +65,8 @@ lib/libreoffice/share/autotext/ko/crdbus50.bau
 lib/libreoffice/share/autotext/ko/standard.bau
 lib/libreoffice/share/autotext/ko/template.bau
 lib/libreoffice/share/extensions/presenter-screen/help/ko/
-lib/libreoffice/share/extensions/presenter-screen/help/ko/com.sun.PresenterScreen-openbsd_${OA}/
-lib/libreoffice/share/extensions/presenter-screen/help/ko/com.sun.PresenterScreen-openbsd_${OA}/presenter.xhp
+lib/libreoffice/share/extensions/presenter-screen/help/ko/com.sun.PresenterScreen-bitrig_${OA}/
+lib/libreoffice/share/extensions/presenter-screen/help/ko/com.sun.PresenterScreen-bitrig_${OA}/presenter.xhp
 lib/libreoffice/share/extensions/presenter-screen/help/ko/help.db_
 lib/libreoffice/share/extensions/presenter-screen/help/ko/help.ht_
 lib/libreoffice/share/extensions/presenter-screen/help/ko/help.jar

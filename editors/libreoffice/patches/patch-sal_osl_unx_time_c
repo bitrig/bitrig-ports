@@ -1,0 +1,12 @@
+$OpenBSD$
+--- sal/osl/unx/time.c.orig	Fri Aug  3 21:33:07 CEST 2012
++++ sal/osl/unx/time.c	Fri Aug  3 21:33:07 CEST 2012
+@@ -34,7 +34,7 @@
+ 
+ /* FIXME: detection should be done in configure script */
+ #if defined(MACOSX) || defined(FREEBSD) || defined(NETBSD) || \
+-    defined(LINUX) || defined(OPENBSD) || defined(DRAGONFLY)
++    defined(LINUX) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY)
+ #define STRUCT_TM_HAS_GMTOFF 1
+ 
+ #elif defined(SOLARIS)

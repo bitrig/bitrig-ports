@@ -1,0 +1,12 @@
+$OpenBSD$
+--- dmake/unix/runargv.c.orig	Fri Aug  3 21:33:53 CEST 2012
++++ dmake/unix/runargv.c	Fri Aug  3 21:33:53 CEST 2012
+@@ -445,7 +445,7 @@ private_strerror (errnum)
+ {
+ #ifndef __APPLE__
+ # if defined(arm32) || defined(linux) || defined(__FreeBSD__) || \
+-     defined(__NetBSD__) || defined(__OpenBSD__) || defined(__DragonFly__)
++     defined(__NetBSD__) || defined(__OpenBSD__) || defined(__Bitrig__) || defined(__DragonFly__)
+   extern  const char * const sys_errlist[];
+ # else
+   extern  char *sys_errlist[];

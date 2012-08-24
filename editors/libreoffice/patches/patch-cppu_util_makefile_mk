@@ -1,0 +1,12 @@
+$OpenBSD$
+--- cppu/util/makefile.mk.orig	Fri Aug  3 21:32:49 CEST 2012
++++ cppu/util/makefile.mk	Fri Aug  3 21:32:49 CEST 2012
+@@ -64,7 +64,7 @@ SHL1IMPLIB=i$(TARGET)
+ .ELSE
+ SHL1IMPLIB=uno_$(TARGET)
+ .ENDIF
+-.IF "$(OS)"!="FREEBSD" && "$(OS)"!="NETBSD" && "$(OS)"!="OPENBSD" && "$(OS)"!="DRAGONFLY"
++.IF "$(OS)"!="FREEBSD" && "$(OS)"!="NETBSD" && "$(OS)"!="OPENBSD && "$(OS)"!="BITRIG" && "$(OS)"!="DRAGONFLY"
+ SHL1DEF=$(MISC)$/$(SHL1TARGET).def
+ .ENDIF
+ 

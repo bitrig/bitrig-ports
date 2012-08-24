@@ -1,0 +1,108 @@
+$OpenBSD$
+--- configure.orig	Sat Aug  4 07:48:40 2012
++++ configure	Sat Aug  4 07:53:02 2012
+@@ -4704,6 +4704,15 @@ openbsd*)
+     _os=OpenBSD
+     ;;
+ 
++bitrig*)
++    test_gtk=yes
++    test_kde=yes
++    test_freetype=yes
++    PTHREAD_CFLAGS="-D_THREAD_SAFE"
++    PTHREAD_LIBS="-pthread"
++    _os=Bitrig
++    ;;
++
+ dragonfly*)
+     test_gtk=yes
+     build_gstreamer=yes
+@@ -13982,7 +13991,7 @@ $as_echo_n "checking which package format to use... " 
+     AIX)
+         PKGFORMAT=rpm
+         ;;
+-    OpenBSD|DragonFly)
++    OpenBSD|Bitrig|DragonFly)
+         PKGFORMAT=portable
+         ;;
+     *BSD)
+@@ -14004,7 +14013,7 @@ $as_echo_n "checking which package format to use... " 
+             *)
+                 as_fn_error $? "unsupported format $i. Supported by EPM are:
+ aix - AIX software distribution
+-bsd - FreeBSD, NetBSD, or OpenBSD software distribution
++bsd - FreeBSD, NetBSD, OpenBSD, or Bitrig software distribution
+ deb - Debian software distribution
+ inst or tardist - IRIX software distribution
+ osx - MacOS X software distribution
+@@ -16471,7 +16480,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
+     SYSTEM_DB_CFLAGS="-DSYSTEM_DB_HEADER='<$db_header>'"
+ 
+     DB_LIB=
+-        if test "$_os" = "OpenBSD"; then
++        if test "$_os" = "OpenBSD" -o "$_os" = "Bitrig"; then
+         dbver=''
+     fi
+     for dash in - ''; do
+@@ -20846,7 +20855,7 @@ fi
+ 
+ fi
+ 
+-if test "$_os" = "Darwin" -o "$_os" = "NetBSD" -o "$_os" = "OpenBSD" -o \
++if test "$_os" = "Darwin" -o "$_os" = "NetBSD" -o "$_os" = "OpenBSD" -o "$_os" = "Bitrig" -o \
+         "$_os" = "DragonFly" && test "$with_system_openssl" != "no"; then
+     with_system_openssl=yes
+ fi
+@@ -20857,7 +20866,7 @@ if test "$with_system_openssl" = "yes"; then
+ $as_echo "external" >&6; }
+     # Mac OS builds should get out without extra stuff is the Mac porters'
+     # wish. And pkg-config is although Xcode ships a .pc for openssl
+-    if test "$_os" = "Darwin" -o "$_os" = "NetBSD" -o "$_os" = "OpenBSD" -o \
++    if test "$_os" = "Darwin" -o "$_os" = "NetBSD" -o "$_os" = "OpenBSD" -o "$_os" = "Bitrig" -o \
+             "$_os" = "DragonFly"; then
+         OPENSSL_CFLAGS=
+         OPENSSL_LIBS="-lssl -lcrypto"
+@@ -22304,7 +22313,7 @@ elif $GNUCP --version 2>/dev/null | grep "GNU fileutil
+ $as_echo "yes" >&6; }
+ else
+     case "$build_os" in
+-    darwin*|netbsd*|openbsd*|freebsd*|dragonfly*|aix*)
++    darwin*|netbsd*|openbsd*|bitrig*|freebsd*|dragonfly*|aix*)
+         GNUCP=''
+         { $as_echo "$as_me:${as_lineno-$LINENO}: result: no gnucp found - using the system's cp command" >&5
+ $as_echo "no gnucp found - using the system's cp command" >&6; }
+@@ -25074,7 +25083,7 @@ esac
+ 
+ KDE_CFLAGS=""
+ KDE_LIBS=""
+-if test "$_os" != "OpenBSD"; then
++if test "$_os" != "OpenBSD" -o "$_os" = "Bitrig"; then
+     MOC="moc"
+ fi
+ if test "$test_kde" = "yes" -a "$ENABLE_KDE" = "TRUE" ; then
+@@ -25112,12 +25121,12 @@ if test "$test_kde" = "yes" -a "$ENABLE_KDE" = "TRUE" 
+         qt_test_include="qstyle.h"
+     kde_test_include="kapp.h"
+ 
+-    if test "$_os" != "OpenBSD"; then
+-        qt_test_library="libqt-mt.so"
+-        kde_test_library="libDCOP.so"
+-    else
++    if test "$_os" = "OpenBSD" "$_os" = "Bitrig"; then
+         qt_test_library="libqt-mt.so*"
+         kde_test_library="libDCOP.so*"
++    else
++        qt_test_library="libqt-mt.so"
++        kde_test_library="libDCOP.so"
+     fi
+ 
+         { $as_echo "$as_me:${as_lineno-$LINENO}: checking for Qt3 headers" >&5
+@@ -28096,7 +28105,7 @@ if test -n "$with_num_cpus"; then
+ else
+     case `uname -s` in
+ 
+-    Darwin|FreeBSD|NetBSD|OpenBSD)
++    Darwin|FreeBSD|NetBSD|OpenBSD|Bitrig)
+         BUILD_NCPUS=`sysctl -n hw.ncpu`
+         ;;
+ 

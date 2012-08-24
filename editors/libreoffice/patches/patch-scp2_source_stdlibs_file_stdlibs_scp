@@ -1,0 +1,21 @@
+$OpenBSD$
+--- scp2/source/stdlibs/file_stdlibs.scp.orig	Fri Aug  3 21:32:38 CEST 2012
++++ scp2/source/stdlibs/file_stdlibs.scp	Fri Aug  3 21:32:38 CEST 2012
+@@ -27,7 +27,7 @@
+ 
+ #include "macros.inc"
+ 
+-#if defined _gcc3 && !(defined FREEBSD || defined NETBSD || defined OPENBSD \
++#if defined _gcc3 && !(defined FREEBSD || defined NETBSD || defined OPENBSD || defined BITRIG \
+ 	|| defined MACOSX || defined SYSTEM_STDLIBS || defined(WNT) || defined(DRAGONFLY))
+ File gid_File_Dl_GccS
+     LIB_FILE_BODY;
+@@ -42,7 +42,7 @@ File gid_File_Dl_GccS
+ End
+ #endif
+ 
+-#if defined _gcc3 && !(defined FREEBSD || defined NETBSD || defined OPENBSD \
++#if defined _gcc3 && !(defined FREEBSD || defined NETBSD || defined OPENBSD || defined BITRIG \
+ 	|| defined MACOSX || defined SYSTEM_STDLIBS || defined(WNT) || defined(DRAGONFLY))
+ File gid_File_Dl_Stdcpp
+     Dir = SCP2_URE_DL_DIR;

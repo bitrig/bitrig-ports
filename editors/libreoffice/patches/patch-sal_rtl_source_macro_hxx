@@ -1,0 +1,12 @@
+$OpenBSD$
+--- sal/rtl/source/macro.hxx.orig	Sat Aug  4 11:19:24 2012
++++ sal/rtl/source/macro.hxx	Sat Aug  4 11:20:11 2012
+@@ -57,6 +57,8 @@
+ #define THIS_OS "AIX"
+ #elif defined OPENBSD
+ #define THIS_OS "OpenBSD"
++#elif defined BITRIG
++#define THIS_OS "Bitrig"
+ #elif defined DRAGONFLY
+ #define THIS_OS "DragonFly"
+ #endif

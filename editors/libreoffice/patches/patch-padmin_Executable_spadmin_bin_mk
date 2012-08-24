@@ -1,0 +1,12 @@
+$OpenBSD$
+--- padmin/Executable_spadmin.bin.mk.orig	Fri Aug  3 21:33:54 CEST 2012
++++ padmin/Executable_spadmin.bin.mk	Fri Aug  3 21:33:54 CEST 2012
+@@ -61,7 +61,7 @@ $(eval $(call gb_Executable_add_exception_objects,spad
+     padmin/source/pamain \
+ ))
+ 
+-ifneq (,$(filter LINUX DRAGONFLY OPENBSD FREEBSD NETBSD, $(OS)))
++ifneq (,$(filter LINUX DRAGONFLY OPENBSD BITRIG FREEBSD NETBSD, $(OS)))
+ $(eval $(call gb_Executable_add_linked_libs,spadmin.bin,\
+     pthread \
+ ))

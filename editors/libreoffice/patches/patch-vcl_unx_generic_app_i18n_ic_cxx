@@ -1,0 +1,21 @@
+$OpenBSD$
+--- vcl/unx/generic/app/i18n_ic.cxx.orig	Fri Aug  3 21:33:58 CEST 2012
++++ vcl/unx/generic/app/i18n_ic.cxx	Fri Aug  3 21:33:58 CEST 2012
+@@ -329,7 +329,7 @@ SalI18N_InputContext::SalI18N_InputContext ( SalFrame 
+ 
+         if ( mnPreeditStyle != XIMPreeditNone )
+         {
+-#if defined LINUX || defined FREEBSD || defined NETBSD || defined OPENBSD || defined DRAGONFLY
++#if defined LINUX || defined FREEBSD || defined NETBSD || defined OPENBSD || defined BITRIG || defined DRAGONFLY
+             if ( mpPreeditAttributes != NULL )
+ #endif
+                 mpAttributes = XVaAddToNestedList( mpAttributes,
+@@ -337,7 +337,7 @@ SalI18N_InputContext::SalI18N_InputContext ( SalFrame 
+         }
+         if ( mnStatusStyle != XIMStatusNone )
+         {
+-#if defined LINUX || defined FREEBSD || defined NETBSD || defined OPENBSD || defined DRAGONFLY
++#if defined LINUX || defined FREEBSD || defined NETBSD || defined OPENBSD || defined BITRIG || defined DRAGONFLY
+             if ( mpStatusAttributes != NULL )
+ #endif
+                 mpAttributes = XVaAddToNestedList( mpAttributes,

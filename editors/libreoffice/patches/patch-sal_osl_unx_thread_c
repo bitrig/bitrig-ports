@@ -1,0 +1,48 @@
+$OpenBSD$
+--- sal/osl/unx/thread.c.orig	Fri Aug  3 21:33:07 CEST 2012
++++ sal/osl/unx/thread.c	Fri Aug  3 21:33:07 CEST 2012
+@@ -28,7 +28,7 @@
+ 
+ #include "system.h"
+ #include <string.h>
+-#if defined(OPENBSD)
++#if defined(OPENBSD) || defined(BITRIG)
+ #include <sched.h>
+ #endif
+ #include <osl/diagnose.h>
+@@ -291,7 +291,7 @@ static oslThread osl_thread_create_Impl (
+     short             nFlags)
+ {
+     Thread_Impl* pImpl;
+-#if defined(OPENBSD)
++#if defined(OPENBSD) || defined(BITRIG)
+     pthread_attr_t attr;
+ #endif
+     int nRet=0;
+@@ -306,7 +306,7 @@ static oslThread osl_thread_create_Impl (
+ 
+     pthread_mutex_lock (&(pImpl->m_Lock));
+ 
+-#if defined(OPENBSD)
++#if defined(OPENBSD) || defined(BITRIG)
+     if (pthread_attr_init(&attr) != 0)
+         return (0);
+ 
+@@ -318,7 +318,7 @@ static oslThread osl_thread_create_Impl (
+ 
+     if ((nRet = pthread_create (
+         &(pImpl->m_hThread),
+-#if defined(OPENBSD)
++#if defined(OPENBSD) || defined(BITRIG)
+         &attr,
+ #else
+         PTHREAD_ATTR_DEFAULT,
+@@ -335,7 +335,7 @@ static oslThread osl_thread_create_Impl (
+         return (0);
+     }
+ 
+-#if defined(OPENBSD)
++#if defined(OPENBSD) || defined(BITRIG)
+     pthread_attr_destroy(&attr);
+ #endif
+ 

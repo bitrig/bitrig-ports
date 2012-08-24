@@ -1,0 +1,21 @@
+$OpenBSD$
+--- vcl/unx/generic/printer/printerinfomanager.cxx.orig	Fri Aug  3 21:33:58 CEST 2012
++++ vcl/unx/generic/printer/printerinfomanager.cxx	Fri Aug  3 21:33:58 CEST 2012
+@@ -1244,7 +1244,7 @@ struct SystemCommandParameters
+     tokenHandler    pHandler;
+ };
+ 
+-#if ! (defined(LINUX) || defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD))
++#if ! (defined(LINUX) || defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD) || defined (BITRIG))
+ static void lpgetSysQueueTokenHandler(
+     const std::list< rtl::OString >& i_rLines,
+     std::list< PrinterInfoManager::SystemPrintQueue >& o_rQueues,
+@@ -1389,7 +1389,7 @@ static void standardSysQueueTokenHandler(
+ 
+ static const struct SystemCommandParameters aParms[] =
+ {
+-    #if defined(LINUX) || defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD)
++    #if defined(LINUX) || defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD) || defined(BITRIG)
+     { "/usr/sbin/lpc status", "lpr -P \"(PRINTER)\"", "", ":", 0, standardSysQueueTokenHandler },
+     { "lpc status", "lpr -P \"(PRINTER)\"", "", ":", 0, standardSysQueueTokenHandler },
+     { "LANG=C;LC_ALL=C;export LANG LC_ALL;lpstat -s", "lp -d \"(PRINTER)\"", "system for ", ": ", 1, standardSysQueueTokenHandler }

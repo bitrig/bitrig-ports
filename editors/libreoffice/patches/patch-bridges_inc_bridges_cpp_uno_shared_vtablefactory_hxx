@@ -1,0 +1,12 @@
+$OpenBSD$
+--- bridges/inc/bridges/cpp_uno/shared/vtablefactory.hxx.orig	Fri Aug  3 21:32:55 CEST 2012
++++ bridges/inc/bridges/cpp_uno/shared/vtablefactory.hxx	Fri Aug  3 21:32:55 CEST 2012
+@@ -38,7 +38,7 @@
+ #include <boost/unordered_map.hpp>
+ 
+ /*See: http://people.redhat.com/drepper/selinux-mem.html*/
+-#if defined(LINUX) || defined(OPENBSD) || defined(FREEBSD) \
++#if defined(LINUX) || defined(OPENBSD) || defined(BITRIG) || defined(FREEBSD) \
+     || defined(NETBSD) || defined(DRAGONFLY)
+ #define USE_DOUBLE_MMAP
+ #endif

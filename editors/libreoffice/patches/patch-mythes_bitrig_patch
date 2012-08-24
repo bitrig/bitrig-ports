@@ -1,0 +1,27 @@
+--- /dev/null	Mon Aug 20 18:02:41 2012
++++ mythes/bitrig.patch	Mon Aug 20 18:00:14 2012
+@@ -0,0 +1,24 @@
++--- misc/build/mythes-1.2.0/config.guess.orig	Mon Aug 20 17:55:16 2012
+++++ misc/build/mythes-1.2.0/config.guess	Mon Aug 20 17:57:15 2012
++@@ -205,6 +205,10 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
++ 	UNAME_MACHINE_ARCH=`arch | sed 's/OpenBSD.//'`
++ 	echo ${UNAME_MACHINE_ARCH}-unknown-openbsd${UNAME_RELEASE}
++ 	exit ;;
+++    *:Bitrig:*:*)
+++	UNAME_MACHINE_ARCH=`arch | sed 's/Bitrig.//'`
+++	echo ${UNAME_MACHINE_ARCH}-unknown-openbsd${UNAME_RELEASE}
+++	exit ;;
++     *:ekkoBSD:*:*)
++ 	echo ${UNAME_MACHINE}-unknown-ekkobsd${UNAME_RELEASE}
++ 	exit ;;
++--- misc/build/mythes-1.2.0/config.sub.orig	Mon Aug 20 17:55:16 2012
+++++ misc/build/myhtes-1.2.0/config.sub	Mon Aug 20 17:55:38 2012
++@@ -1287,7 +1287,7 @@ case $os in
++ 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
++ 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
++ 	      | -hiux* | -386bsd* | -knetbsd* | -mirbsd* | -netbsd* \
++-	      | -openbsd* | -solidbsd* \
+++	      | -openbsd* | -bitrig* | -solidbsd* \
++ 	      | -ekkobsd* | -kfreebsd* | -freebsd* | -riscix* | -lynxos* \
++ 	      | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
++ 	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \

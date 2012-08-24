@@ -1,6 +1,6 @@
-$OpenBSD: patch-sal_osl_unx_system_h,v 1.1 2012/04/03 08:56:50 robert Exp $
---- sal/osl/unx/system.h.orig.port	Fri Mar 30 21:59:29 2012
-+++ sal/osl/unx/system.h	Fri Mar 30 23:14:19 2012
+$OpenBSD$
+--- sal/osl/unx/system.h.orig.port	Tue Jul  3 13:01:28 2012
++++ sal/osl/unx/system.h	Mon Aug 20 16:56:17 2012
 @@ -120,34 +120,7 @@
  #endif
  
@@ -36,9 +36,12 @@ $OpenBSD: patch-sal_osl_unx_system_h,v 1.1 2012/04/03 08:56:50 robert Exp $
  #endif
  
  #ifdef FREEBSD
-@@ -182,7 +155,6 @@
+@@ -180,9 +153,8 @@
+ #   define  NO_PTHREAD_RTL
+ #endif
  
- #ifdef OPENBSD
+-#ifdef OPENBSD
++#if defined(OPENBSD) || defined(BITRIG)
  #   define  ETIME ETIMEDOUT
 -#   define _POSIX_THREAD_SYSCALL_SOFT 1
  #   include <pthread.h>
@@ -53,7 +56,13 @@ $OpenBSD: patch-sal_osl_unx_system_h,v 1.1 2012/04/03 08:56:50 robert Exp $
  #   define  ETIME ETIMEDOUT
  #   include <pthread.h>
  #   include <sys/sem.h>
-@@ -343,24 +315,6 @@ int macxp_resolveAlias(char *path, int buflen);
+@@ -338,29 +310,11 @@ int macxp_resolveAlias(char *path, int buflen);
+     !defined(LINUX)   && !defined(NETBSD) && !defined(FREEBSD) && \
+     !defined(AIX)     && \
+     !defined(SOLARIS) && !defined(MACOSX) && \
+-    !defined(OPENBSD) && !defined(DRAGONFLY) && \
++    !defined(OPENBSD) && !defined(BITRIG) && !defined(DRAGONFLY) && \
+     !defined(IOS) && !defined(ANDROID)
  #   error "Target platform not specified!"
  #endif
  

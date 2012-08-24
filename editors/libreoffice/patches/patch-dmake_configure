@@ -1,0 +1,12 @@
+$OpenBSD$
+--- dmake/configure.orig	Fri Aug  3 21:33:53 CEST 2012
++++ dmake/configure	Fri Aug  3 21:33:53 CEST 2012
+@@ -4223,7 +4223,7 @@ case "$_os" in
+ 	"AIX")
+ 	  OS_VERSION=sysvr4
+ 	  ;;
+-	"OpenBSD"|DragonFly)
++	"OpenBSD"|"Bitrig"|DragonFly)
+ 	  OS_VERSION=linux
+ 	  ;;
+    *)

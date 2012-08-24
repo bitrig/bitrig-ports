@@ -1,0 +1,114 @@
+--- set_soenv.in.orig	Sat Aug  4 06:46:56 2012
++++ set_soenv.in	Sat Aug  4 07:02:11 2012
+@@ -391,6 +391,40 @@
+    }
+       $INPATH         = $OUTPATH.$PROEXT;
+ }
++elsif ( $platform =~ m/bitrig/ )
++{     $COM            = "GCC";
++      $COMPATH        = '@COMPATH@';
++      $GUI            = "UNX";
++      $GUIBASE        = "unx";
++      $GVER           = "VCL";
++      $OS             = "BITRIG";
++      $PATH_SEPERATOR = $ps;
++      $OSVERSION      = '@OSVERSION@';
++      $OUTPATH        = "unxbitrig";
++      $oldoutfile     = "BitrigEnv.Set.sh";
++   if ($platform =~ m/^(amd64|x86_64)/)
++   {
++      print "Setting Bitrig AMD64 specific values... ";
++      $CPU            = "X";
++      $CPUNAME        = "X86_64";
++      $JRELIBDIR      = $JAVA_HOME.$ds."jre".$ds."lib".$ds."amd64";
++      $JRETOOLKITDIR  = $JAVA_HOME.$ds."jre".$ds."lib".$ds."amd64".$ds."server";
++      $JRETHREADDIR   = $JAVA_HOME.$ds."jre".$ds."lib".$ds."amd64".$ds."native_threads";
++   }
++   elsif ($platform =~ m/^i386/)
++   {  print "Setting Bitrig x86 specific values... ";
++      $CPU            = "I";
++      $CPUNAME        = "INTEL";
++      $JRELIBDIR      = $JAVA_HOME.$ds."jre".$ds."lib".$ds."i386";
++      $JRETOOLKITDIR  = $JAVA_HOME.$ds."jre".$ds."lib".$ds."i386".$ds."client";
++      $JRETHREADDIR   = $JAVA_HOME.$ds."jre".$ds."lib".$ds."i386".$ds."native_threads";
++   }
++   else
++   {  print "Unsupported Bitrig architecture: $platform \n";
++         exit 1;
++   }
++      $INPATH         = $OUTPATH.$PROEXT;
++}
+ elsif ( $platform =~ m/linux/ )
+ {
+ # General Linux settings:
+@@ -1004,7 +1038,7 @@
+                         $L.$USR_DT.$LIB.
+                         $L.$USR_OPENWIN.$LIB;
+ }
+-elsif ($platform =~ m/linux|netbsd|freebsd|aix|openbsd|dragonfly/)
++elsif ($platform =~ m/linux|netbsd|freebsd|aix|openbsd|bitrig|dragonfly/)
+ {
+    $SOLAREXTRALIB     = $L.$par_dir.$LIB64;
+ }
+@@ -1047,7 +1081,7 @@
+ }
+ 
+ # The general environment path.
+-if ($platform =~ m/linux|netbsd|freebsd|aix|solaris|openbsd|dragonfly/)
++if ($platform =~ m/linux|netbsd|freebsd|aix|solaris|openbsd|bitrig|dragonfly/)
+ {  $PATH              = $cur_dir.
+ #                        $ps.'$SOLARVER'.$ds.'$INPATH'.$BIN.
+                         $ps.'$SOLARENV'.$ds.'$OUTPATH'.$BIN.
+@@ -1222,12 +1256,12 @@
+                         $L.$JRETOOLKITDIR.
+                         $L.$JRETHREADDIR;
+ }
+-elsif ($platform =~ m/linux|netbsd|aix|freebsd|openbsd|dragonfly/)
++elsif ($platform =~ m/linux|netbsd|aix|freebsd|openbsd|bitrig|dragonfly/)
+ {  $SOLARLIB          = $L.$par_dir.$LIB.
+                         $L.'$SOLARENV'.$ds.'$OUTPATH'.$LIB.
+                         $L.'$SOLARVER'.$ds.'$INPATH'.$LIB.
+                         $L.'$SOLARENV'.$ds.'$OUTPATH'.$LIB;
+-   if ($platform =~ m/openbsd/) {
++   if ($platform =~ m/openbsd|bitrig/) {
+       $SOLARLIB       .= $L.$USR_LOCAL.$LIB;
+    }
+    if ( $XLIB ne "/usr/lib" && $XLIB ne "/usr/lib64" && $XLIB ne "no_x_libraries" ) {
+@@ -1262,7 +1296,7 @@
+                         $I.'$SOLARENV'.$INC.
+                         $I.'$SRC_ROOT'.$ds."res";
+ 
+-if ($platform =~ m/solaris|linux|freebsd|netbsd|aix|openbsd|dragonfly/ && '@CROSS_COMPILING@' ne 'YES')
++if ($platform =~ m/solaris|linux|freebsd|netbsd|aix|openbsd|bitrig|dragonfly/ && '@CROSS_COMPILING@' ne 'YES')
+ {
+     if ($platform =~ m/solaris/ && ! $CC =~ "gcc")
+     {
+@@ -1274,8 +1308,8 @@
+         $SOLARINC         .= $I.$COMPATH.$INCLUDE;
+     }
+ 
+-	# pickup system jpeg over java jpeg on OpenBSD
+-	if ($platform =~ m/openbsd/)
++	# pickup system jpeg over java jpeg on OpenBSD and Bitrig
++	if ($platform =~ m/openbsd|bitrig/)
+ 	{   $SOLARINC  .= $I.$USR_LOCAL.$INCLUDE;
+ 	}
+     if ( $JAVA_HOME ne "" && $JAVA_HOME ne "NO_JAVA_HOME" )
+@@ -1306,13 +1340,16 @@
+ 		elsif ($platform =~ m/openbsd/)
+ 		{  $SOLARINC   .=$I.$JAVA_HOME.$INCLUDE.$ds."openbsd";
+ 		}
++                elsif ($platform =~ m/bitrig/)
++                {  $SOLARINC   .=$I.$JAVA_HOME.$INCLUDE.$ds."bitrig";
++                }
+ 
+    		#java threads include path
+ 
+         $SOLARINC .=$I.$JAVA_HOME.$INCLUDE.$ds."native_threads".$INCLUDE;
+ 	}
+     #The tail, if needed
+-    if ($platform =~ m/linux|freebsd|netbsd|aix|openbsd|dragonfly/)
++    if ($platform =~ m/linux|freebsd|netbsd|aix|openbsd|bitrig|dragonfly/)
+     {  if ( $XINC ne "/usr/include" && $XINC ne 'no_x_includes' ) {
+             $SOLARINC  .= $I.$XINC;
+        }

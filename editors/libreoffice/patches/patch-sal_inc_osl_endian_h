@@ -1,0 +1,12 @@
+$OpenBSD$
+--- sal/inc/osl/endian.h.orig	Fri Aug  3 21:33:08 CEST 2012
++++ sal/inc/osl/endian.h	Fri Aug  3 21:33:08 CEST 2012
+@@ -145,7 +145,7 @@ extern "C" {
+  */
+ #if !defined(_WIN32)  && \
+     !defined(LINUX)   && !defined(NETBSD) && \
+-    !defined(AIX)     && !defined(OPENBSD) && \
++    !defined(AIX)     && !defined(OPENBSD) && !defined(BITRIG) && \
+     !defined(SOLARIS) && !defined(MACOSX) && !defined(FREEBSD) && \
+     !defined(DRAGONFLY) && \
+     !defined(IOS)     && !defined(ANDROID)

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- solenv/inc/unitools.mk.orig	Fri Aug  3 21:33:55 CEST 2012
++++ solenv/inc/unitools.mk	Fri Aug  3 21:33:55 CEST 2012
+@@ -109,7 +109,7 @@ PERL*=perl
+ TYPE=cat
+ CDD=cd
+ COPY=cp -f
+-.IF "$(OS_FOR_BUILD)"=="MACOSX" || "$(OS_FOR_BUILD)"=="NETBSD" || "$(OS_FOR_BUILD)"=="OPENBSD" || \
++.IF "$(OS_FOR_BUILD)"=="MACOSX" || "$(OS_FOR_BUILD)"=="NETBSD" || "$(OS_FOR_BUILD)"=="OPENBSD" || "$(OS_FOR_BUILD)"="BITRIG" || \
+     "$(OS_FOR_BUILD)"=="DRAGONFLY"
+ COPYRECURSE=-R
+ .ELSE # Not BSD based ones:

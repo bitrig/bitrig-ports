@@ -1,0 +1,12 @@
+$OpenBSD$
+--- sfx2/Module_sfx2.mk.orig	Fri Aug  3 21:32:15 CEST 2012
++++ sfx2/Module_sfx2.mk	Fri Aug  3 21:32:15 CEST 2012
+@@ -44,7 +44,7 @@ $(eval $(call gb_Module_add_subsequentcheck_targets,sf
+     JunitTest_sfx2_unoapi \
+ ))
+ 
+-ifneq (,$(filter LINUX DRAGONFLY OPENBSD FREEBSD NETBSD, $(OS)))
++ifneq (,$(filter LINUX DRAGONFLY OPENBSD BITRIG FREEBSD NETBSD, $(OS)))
+ ifeq ($(ENABLE_SYSTRAY_GTK),TRUE)
+ $(eval $(call gb_Module_add_targets,sfx2,\
+     Library_qstart \

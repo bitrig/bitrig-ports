@@ -1,0 +1,12 @@
+$OpenBSD$
+--- padmin/Library_spa.mk.orig	Fri Aug  3 21:33:54 CEST 2012
++++ padmin/Library_spa.mk	Fri Aug  3 21:33:54 CEST 2012
+@@ -63,7 +63,7 @@ $(eval $(call gb_Library_add_exception_objects,spa,\
+     padmin/source/titlectrl \
+ ))
+ 
+-ifneq (,$(filter LINUX DRAGONFLY OPENBSD FREEBSD NETBSD, $(OS)))
++ifneq (,$(filter LINUX DRAGONFLY OPENBSD BITRIG FREEBSD NETBSD, $(OS)))
+ $(eval $(call gb_Library_add_linked_libs,spa,\
+     m \
+     pthread \

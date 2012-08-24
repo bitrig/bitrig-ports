@@ -1,0 +1,31 @@
+$OPenBSD$
+--- soltools/mkdepend/imakemdep.h.orig	Sun Aug 19 22:54:51 2012
++++ soltools/mkdepend/imakemdep.h	Sun Aug 19 22:56:29 2012
+@@ -217,7 +217,7 @@ in this Software without prior written authorization f
+ #ifdef _CRAY
+ #define DEFAULT_CPP "/lib/pcpp"
+ #endif
+-#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__DragonFly__)
++#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__Bitrig__) || defined(__DragonFly__)
+ #define DEFAULT_CPP "/usr/libexec/cpp"
+ #endif
+ #ifdef  MACH
+@@ -255,7 +255,7 @@ char *cpp_argv[ARGUMENTS] = {
+ #ifdef unix
+     "-Uunix",   /* remove unix symbol so that filename unix.c okay */
+ #endif
+-#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__) || \
++#if defined(__NetBSD__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__Bitrig__) || \
+     defined(MACH) || defined(DRAGONFLY)
+ /* FIXME: strange list of obsolete systems */
+ # ifdef __i386__
+@@ -685,6 +685,9 @@ struct pair predefs[] = {
+ #endif
+ #ifdef __OpenBSD__
+     {"__OpenBSD__", "1", NULL},
++#endif
++#ifdef __Bitrig__
++    {"__Bitrig__", "1", NULL},
+ #endif
+ #ifdef __DragonFly__
+     {"__DragonFly__", "1", NULL},

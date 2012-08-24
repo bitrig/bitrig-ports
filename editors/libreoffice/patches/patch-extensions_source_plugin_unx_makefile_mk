@@ -1,0 +1,12 @@
+$OpenBSD$
+--- extensions/source/plugin/unx/makefile.mk.orig	Fri Aug  3 21:32:54 CEST 2012
++++ extensions/source/plugin/unx/makefile.mk	Fri Aug  3 21:32:54 CEST 2012
+@@ -70,7 +70,7 @@ APP1STDLIBS= $(SALLIB)
+ .IF "$(OS)"=="SOLARIS" || "$(OS)"=="SCO"
+ APP1STDLIBS+=-lXm -lXt $(X11LINK_DYNAMIC) -ldl
+ .ELSE
+-.IF "$(OS)"=="FREEBSD" || "$(OS)"=="NETBSD" || "$(OS)"=="OPENBSD" || "$(OS)"=="DRAGONFLY"
++.IF "$(OS)"=="FREEBSD" || "$(OS)"=="NETBSD" || "$(OS)"=="OPENBSD" || "$(OS)"=="BITRIG" || "$(OS)"=="DRAGONFLY"
+ APP1STDLIBS+= -lXt -lXext -lX11
+ .ELIF "$(OS)"=="AIX"
+ APP1STDLIBS+= -lXpm -lXmu -lXt $(X11LINK_DYNAMIC) -ldl

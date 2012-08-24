@@ -1,0 +1,12 @@
+$OpenBSD$
+--- sal/inc/sal/types.h.orig	Fri Aug  3 21:33:08 CEST 2012
++++ sal/inc/sal/types.h	Fri Aug  3 21:33:08 CEST 2012
+@@ -356,7 +356,7 @@ typedef struct _sal_Sequence
+ #ifdef __cplusplus
+ #if defined SAL_W32 || defined SOLARIS || defined LINUX || defined MACOSX || \
+     defined FREEBSD || defined NETBSD || defined AIX || \
+-    defined OPENBSD || defined DRAGONFLY
++    defined OPENBSD || defined BITRIG || defined DRAGONFLY
+ #define SAL_CONST_CAST(type, expr) (const_cast< type >(expr))
+ #define SAL_REINTERPRET_CAST(type, expr) (reinterpret_cast< type >(expr))
+ #define SAL_STATIC_CAST(type, expr) (static_cast< type >(expr))

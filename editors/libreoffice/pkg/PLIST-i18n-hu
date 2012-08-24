@@ -71,8 +71,8 @@ lib/libreoffice/share/extensions/dict-hu/help/hu/org.openoffice.hu.hunspell.dict
 lib/libreoffice/share/extensions/dict-hu/help/hu/org.openoffice.hu.hunspell.dictionaries/page1.xhp
 lib/libreoffice/share/extensions/dict-hu/help/hu/org.openoffice.hu.hunspell.dictionaries/szinonima.png
 lib/libreoffice/share/extensions/presenter-screen/help/hu/
-lib/libreoffice/share/extensions/presenter-screen/help/hu/com.sun.PresenterScreen-openbsd_${OA}/
-lib/libreoffice/share/extensions/presenter-screen/help/hu/com.sun.PresenterScreen-openbsd_${OA}/presenter.xhp
+lib/libreoffice/share/extensions/presenter-screen/help/hu/com.sun.PresenterScreen-bitrig_${OA}/
+lib/libreoffice/share/extensions/presenter-screen/help/hu/com.sun.PresenterScreen-bitrig_${OA}/presenter.xhp
 lib/libreoffice/share/extensions/presenter-screen/help/hu/help.db_
 lib/libreoffice/share/extensions/presenter-screen/help/hu/help.ht_
 lib/libreoffice/share/extensions/presenter-screen/help/hu/help.jar

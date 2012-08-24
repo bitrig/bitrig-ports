@@ -1,0 +1,30 @@
+$OpenBSD$
+--- sal/osl/unx/backtrace.h.orig	Fri Aug  3 21:33:07 CEST 2012
++++ sal/osl/unx/backtrace.h	Fri Aug  3 21:33:07 CEST 2012
+@@ -28,7 +28,7 @@
+ 
+ 
+ #if defined (SOLARIS) || defined (FREEBSD) || defined (NETBSD) || \
+-    defined (OPENBSD) || defined (DRAGONFLY)
++    defined (OPENBSD) || defined (BITRIG) || defined (DRAGONFLY)
+ 
+ #ifdef __cplusplus
+ extern "C" {
+@@ -41,7 +41,7 @@ int backtrace( void **buffer, int max_frames );
+ void backtrace_symbols_fd( void **buffer, int size, int fd );
+ 
+ /* no frame.h on FreeBSD */
+-#if defined (FREEBSD) || defined (NETBSD) || defined (OPENBSD) || \
++#if defined (FREEBSD) || defined (NETBSD) || defined (OPENBSD) || defined (BITRIG) || \
+     defined (DRAGONFLY)
+ struct frame {
+     long    arg0[8];
+@@ -56,7 +56,7 @@ struct frame {
+ } /* extern "C" */
+ #endif
+ 
+-#endif /* defined SOLARIS || FREEBSD || NETBSD || OPENBSD */
++#endif /* defined SOLARIS || FREEBSD || NETBSD || OPENBSD || BITRIG */
+ 
+ #if defined (LINUX)
+ #include <execinfo.h>

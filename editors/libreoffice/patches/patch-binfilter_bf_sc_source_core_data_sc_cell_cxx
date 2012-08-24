@@ -1,0 +1,12 @@
+$OpenBSD$
+--- binfilter/bf_sc/source/core/data/sc_cell.cxx.orig	Fri Aug  3 21:34:00 CEST 2012
++++ binfilter/bf_sc/source/core/data/sc_cell.cxx	Fri Aug  3 21:34:00 CEST 2012
+@@ -41,7 +41,7 @@
+ #endif
+ 
+ #if defined(SOLARIS) || defined(FREEBSD) || defined(NETBSD) || \
+-    defined(OPENBSD) || defined(DRAGONFLY)
++    defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY)
+ #include <ieeefp.h>
+ #elif ( defined ( LINUX ) && ( GLIBC < 2 ) )
+ #include <i386/ieeefp.h>

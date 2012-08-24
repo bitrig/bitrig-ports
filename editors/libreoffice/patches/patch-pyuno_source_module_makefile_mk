@@ -1,0 +1,12 @@
+$OpenBSD$
+--- pyuno/source/module/makefile.mk.orig	Fri Aug  3 21:32:28 CEST 2012
++++ pyuno/source/module/makefile.mk	Fri Aug  3 21:32:28 CEST 2012
+@@ -148,7 +148,7 @@ $(PYUNO_MODULE) : $(SLO)$/pyuno_dlopenwrapper.obj
+     @echo ld -shared -o $@ $(SLO)$/pyuno_dlopenwrapper.o > $(MISC)$/$(@:b).cmd
+ .ELIF "$(OS)" == "NETBSD"
+     @echo $(LINK) $(LINKFLAGSSHLCUI) -o $@ $(SLO)$/pyuno_dlopenwrapper.o > $(MISC)$/$(@:b).cmd
+-.ELIF "$(OS)" == "OPENBSD"
++.ELIF "$(OS)" == "OPENBSD" || "$(OS)" == "BITRIG"
+     @echo ld -shared -o $@ $(SLO)$/pyuno_dlopenwrapper.o > $(MISC)$/$(@:b).cmd
+ .ELIF "$(OS)" == "DRAGONFLY"
+     @echo ld -shared -o $@ $(SLO)$/pyuno_dlopenwrapper.o > $(MISC)$/$(@:b).cmd

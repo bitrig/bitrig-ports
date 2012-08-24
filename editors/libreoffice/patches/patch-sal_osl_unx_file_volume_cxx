@@ -1,0 +1,87 @@
+$OpenBSD$
+--- sal/osl/unx/file_volume.cxx.orig	Fri Aug  3 21:33:07 CEST 2012
++++ sal/osl/unx/file_volume.cxx	Fri Aug  3 21:33:07 CEST 2012
+@@ -68,7 +68,7 @@ static const sal_Char* MOUNTTAB="/etc/mnttab";
+ #define  HAVE_STATFS_H
+ static const sal_Char* MOUNTTAB="/etc/mtab";
+ 
+-#elif defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD) || defined(DRAGONFLY)
++#elif defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY)
+ 
+ #include <sys/param.h>
+ #include <sys/ucred.h>
+@@ -176,12 +176,12 @@ oslFileError osl_getVolumeInformation( rtl_uString* us
+ 
+ #ifdef HAVE_STATFS_H
+ 
+-#if defined(FREEBSD) || defined(MACOSX) || defined(OPENBSD) || defined(DRAGONFLY)
++#if defined(FREEBSD) || defined(MACOSX) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY)
+ #   define __OSL_STATFS_STRUCT                  struct statfs
+ #   define __OSL_STATFS(dir, sfs)               statfs((dir), (sfs))
+ #   define __OSL_STATFS_BLKSIZ(a)               ((sal_uInt64)((a).f_bsize))
+ #   define __OSL_STATFS_TYPENAME(a)             ((a).f_fstypename)
+-#if defined(OPENBSD)
++#if defined(OPENBSD) || defined(BITRIG)
+ #   define __OSL_STATFS_ISREMOTE(a)             (rtl_str_compare((a).f_fstypename, "nfs") == 0)
+ #else
+ #   define __OSL_STATFS_ISREMOTE(a)             (((a).f_type & MNT_LOCAL) == 0)
+@@ -192,7 +192,7 @@ oslFileError osl_getVolumeInformation( rtl_uString* us
+    of the target platforms fix it!!!! */
+ #   define __OSL_STATFS_IS_CASE_SENSITIVE_FS(a)  (1)
+ #   define __OSL_STATFS_IS_CASE_PRESERVING_FS(a) (1)
+-#endif /* FREEBSD || MACOSX || OPENBSD */
++#endif /* FREEBSD || MACOSX || OPENBSD || BITRIG */
+ 
+ #if defined(NETBSD)
+ 
+@@ -1119,7 +1119,7 @@ osl_isFloppyMounted (oslVolumeDeviceHandleImpl* pDevic
+  *****************************************************************************/
+ 
+ #if (defined(MACOSX) || defined(IOS) || defined(ANDROID) || defined(NETBSD) || defined(FREEBSD) || \
+-    defined(AIX) || defined(OPENBSD) || defined(DRAGONFLY))
++    defined(AIX) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY))
+ static oslVolumeDeviceHandle osl_isFloppyDrive(const sal_Char* pszPath)
+ {
+     (void)pszPath;
+@@ -1128,7 +1128,7 @@ static oslVolumeDeviceHandle osl_isFloppyDrive(const s
+ #endif
+ 
+ #if ( defined(MACOSX) || defined(IOS) || defined(ANDROID) || defined(NETBSD) || defined(FREEBSD) || \
+-    defined(AIX) || defined(OPENBSD) || defined(DRAGONFLY))
++    defined(AIX) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY))
+ static oslFileError osl_mountFloppy(oslVolumeDeviceHandle hFloppy)
+ {
+     (void)hFloppy;
+@@ -1137,7 +1137,7 @@ static oslFileError osl_mountFloppy(oslVolumeDeviceHan
+ #endif
+ 
+ #if ( defined(MACOSX) || defined(IOS) || defined(ANDROID) || defined(NETBSD) || defined(FREEBSD) || \
+-    defined(AIX) || defined(OPENBSD) || defined(DRAGONFLY))
++    defined(AIX) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY))
+ static oslFileError osl_unmountFloppy(oslVolumeDeviceHandle hFloppy)
+ {
+     (void)hFloppy;
+@@ -1145,19 +1145,19 @@ static oslFileError osl_unmountFloppy(oslVolumeDeviceH
+ }
+ #endif
+ 
+-#if ( defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD) || defined(DRAGONFLY) )
++#if ( defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY) )
+ static sal_Bool osl_getFloppyMountEntry(const sal_Char* pszPath, oslVolumeDeviceHandleImpl* pItem)
+ {
+     return sal_False;
+ }
+-#endif /* NETBSD || FREEBSD || OPENBSD */
++#endif /* NETBSD || FREEBSD || OPENBSD || BITRIG */
+ 
+-#if ( defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD) || defined(DRAGONFLY) )
++#if ( defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY) )
+ static sal_Bool osl_isFloppyMounted(oslVolumeDeviceHandleImpl* pDevice)
+ {
+     return sal_False;
+ }
+-#endif /* NETBSD || FREEBSD || OPENBSD */
++#endif /* NETBSD || FREEBSD || OPENBSD || BITRIG */
+ 
+ 
+ #ifdef DEBUG_OSL_FILE

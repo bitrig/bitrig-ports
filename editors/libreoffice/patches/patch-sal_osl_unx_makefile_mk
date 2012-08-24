@@ -1,0 +1,12 @@
+$OpenBSD$
+--- sal/osl/unx/makefile.mk.orig	Fri Aug  3 21:33:07 CEST 2012
++++ sal/osl/unx/makefile.mk	Fri Aug  3 21:33:07 CEST 2012
+@@ -119,7 +119,7 @@ SLOFILES += $(SLO)$/osxlocale.obj
+ 
+ .IF "$(OS)"=="SOLARIS" || "$(OS)"=="FREEBSD" || "$(OS)"=="NETBSD" || \
+     "$(OS)$(CPU)"=="LINUXS" || "$(OS)"=="MACOSX" || "$(OS)"=="AIX" || \
+-    "$(OS)"=="OPENBSD" || "$(OS)"=="DRAGONFLY"
++    "$(OS)"=="OPENBSD" || "$(OS)"=="BITRIG" || "$(OS)"=="DRAGONFLY"
+ SLOFILES += $(SLO)$/backtrace.obj
+ OBJFILES += $(OBJ)$/backtrace.obj
+ .ENDIF

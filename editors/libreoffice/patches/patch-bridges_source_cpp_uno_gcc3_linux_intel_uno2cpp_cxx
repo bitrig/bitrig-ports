@@ -1,0 +1,21 @@
+$OpenBSD$
+--- bridges/source/cpp_uno/gcc3_linux_intel/uno2cpp.cxx.orig	Mon Aug 20 19:28:26 CEST 2012
++++ bridges/source/cpp_uno/gcc3_linux_intel/uno2cpp.cxx	Mon Aug 20 19:28:26 CEST 2012
+@@ -27,7 +27,7 @@
+  ************************************************************************/
+ 
+ 
+-#if defined (FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(DRAGONFLY)
++#if defined (FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY)
+ #include <stdlib.h>
+ #else
+ #include <alloca.h>
+@@ -236,7 +236,7 @@ namespace x86
+     {
+         if (bridges::cpp_uno::shared::isSimpleType( pTD ))
+             return true;
+-#if defined(FREEBSD) || defined(NETBSD) || defined(OPENBSD) || \
++#if defined(FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(BITRIG) || \
+     defined(MACOSX) || defined(DRAGONFLY)
+         // Only structs of exactly 1, 2, 4, or 8 bytes are returned through
+         // registers, see <http://developer.apple.com/documentation/DeveloperTools/

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- sal/osl/unx/file_error_transl.cxx.orig	Fri Aug  3 21:33:07 CEST 2012
++++ sal/osl/unx/file_error_transl.cxx	Fri Aug  3 21:33:07 CEST 2012
+@@ -215,7 +215,7 @@ oslFileError oslTranslateFileError(sal_Bool bIsError, 
+             osl_error = osl_File_E_LOOP;
+             break;
+ 
+-#if !(defined(MACOSX) || defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD) || defined(DRAGONFLY))
++#if !(defined(MACOSX) || defined(NETBSD) || defined(FREEBSD) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY))
+         case EILSEQ:
+             osl_error = osl_File_E_ILSEQ;
+             break;

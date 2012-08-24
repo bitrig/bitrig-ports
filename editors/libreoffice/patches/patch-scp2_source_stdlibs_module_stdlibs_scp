@@ -1,0 +1,12 @@
+$OpenBSD$
+--- scp2/source/stdlibs/module_stdlibs.scp.orig	Sat Aug  4 11:21:51 2012
++++ scp2/source/stdlibs/module_stdlibs.scp	Sat Aug  4 11:22:20 2012
+@@ -38,7 +38,7 @@ Module gid_Module_Optional_Stdlibs
+     Styles = (DONTSHOWINUSERINSTALL);
+ #endif
+     Files = (
+-#if defined _gcc3 && !(defined FREEBSD || defined NETBSD || defined OPENBSD \
++#if defined _gcc3 && !(defined FREEBSD || defined NETBSD || defined OPENBSD || defined BITRIG \
+ 	|| defined MACOSX || defined SYSTEM_STDLIBS || defined(WNT) || defined(DRAGONFLY))
+         gid_File_Dl_GccS,
+         gid_File_Dl_Stdcpp

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- toolkit/Library_tk.mk.orig	Fri Aug  3 21:33:03 CEST 2012
++++ toolkit/Library_tk.mk	Fri Aug  3 21:33:03 CEST 2012
+@@ -141,7 +141,7 @@ $(eval $(call gb_Library_add_cxxflags,tk,\
+     $(gb_OBJCXXFLAGS)))
+ endif
+ 
+-ifneq (,$(filter LINUX DRAGONFLY OPENBSD FREEBSD NETBSD, $(OS)))
++ifneq (,$(filter LINUX DRAGONFLY OPENBSD BITRIG FREEBSD NETBSD, $(OS)))
+ $(eval $(call gb_Library_add_linked_libs,tk,\
+     X11 \
+ ))

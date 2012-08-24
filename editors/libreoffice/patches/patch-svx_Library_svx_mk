@@ -1,0 +1,12 @@
+$OpenBSD$
+--- svx/Library_svx.mk.orig	Fri Aug  3 21:33:49 CEST 2012
++++ svx/Library_svx.mk	Fri Aug  3 21:33:49 CEST 2012
+@@ -215,7 +215,7 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
+     svx/source/unogallery/unogalthemeprovider \
+ ))
+ 
+-ifneq (,$(filter LINUX DRAGONFLY OPENBSD FREEBSD NETBSD, $(OS)))
++ifneq (,$(filter LINUX DRAGONFLY OPENBSD BITRIG FREEBSD NETBSD, $(OS)))
+ $(eval $(call gb_Library_add_exception_objects,svx,\
+     svx/source/dialog/sendreportunx \
+ ))

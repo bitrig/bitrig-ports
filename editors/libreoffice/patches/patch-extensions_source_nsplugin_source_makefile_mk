@@ -1,0 +1,12 @@
+$OpenBSD$
+--- extensions/source/nsplugin/source/makefile.mk.orig	Fri Aug  3 21:32:53 CEST 2012
++++ extensions/source/nsplugin/source/makefile.mk	Fri Aug  3 21:32:53 CEST 2012
+@@ -58,7 +58,7 @@ dummy:
+ 
+ .ELSE           # ENABLE_NSPLUGIN
+ .IF "$(OS)"=="LINUX" || "$(OS)"=="FREEBSD" || "$(OS)"=="NETBSD" || \
+-    "$(OS)"=="OPENBSD" || "$(OS)"=="DRAGONFLY"
++    "$(OS)"=="OpenBSD" || "$(OS)"=="Bitrig" || "$(OS)"=="DRAGONFLY"
+ INC+= -DNP_LINUX
+ .ENDIF
+ PKGCONFIG_MODULES=gtk+-2.0

@@ -1,0 +1,21 @@
+$OpenBSD$
+--- solenv/inc/unx.mk.orig.port	Tue Jul  3 13:01:28 2012
++++ solenv/inc/unx.mk	Sun Aug 19 23:07:35 2012
+@@ -111,6 +111,10 @@
+ .INCLUDE : unxobsd.mk
+ .ENDIF
+ 
++.IF "$(COM)$(OS)" == "GCCBITRIG"
++.INCLUDE : unxbitrig.mk
++.ENDIF
++
+ .IF "$(COM)$(OS)" == "GCCDRAGONFLY"
+ .INCLUDE : unxdfly.mk
+ .ENDIF
+@@ -183,4 +187,4 @@ SOLARLIB+=-L$(KDE_ROOT)/lib64
+ OOO_LIBRARY_PATH_VAR *= DYLD_LIBRARY_PATH
+ .ELSE
+ OOO_LIBRARY_PATH_VAR *= LD_LIBRARY_PATH
+-.ENDIF
+\ No newline at end of file
++.ENDIF

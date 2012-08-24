@@ -132,11 +132,6 @@ BUILD_DEPENDS+=	archivers/zip \
 # is only dlopen()ed if found
 BUILD_DEPENDS +=	print/cups,-libs
 
-MODULES+=	gcc4
-MODGCC4_ARCHS=	*
-MODGCC4_LANGS=	c++
-MODGCC4_VERSION=4.6
-
 MODULES+=	lang/python \
 		devel/gettext
 
@@ -144,7 +139,6 @@ LIB_DEPENDS-main=x11/gtk+2 \
 		${MODPY_LIB_DEPENDS} \
 		databases/postgresql \
 		databases/db/v4 \
-		lang/gcc/4.6,-estdc>=4.6,<4.7 \
 		textproc/libxslt \
 		net/curl \
 		net/neon \
@@ -154,7 +148,7 @@ LIB_DEPENDS-main=x11/gtk+2 \
 		textproc/hunspell \
 		print/poppler
 
-WANTLIB-main=	estdc++ gdk-x11-2.0>=400.14 gtk-x11-2.0>=400.14 \
+WANTLIB-main=	gdk-x11-2.0>=400.14 gtk-x11-2.0>=400.14 \
 		db>=4 xslt>=3 curl>=7 neon>=24 pq>=2 \
 		icuuc>=0 icui18n icule \
 		raptor>=2 rasqal rdf>=0 poppler
@@ -176,10 +170,9 @@ RUN_DEPENDS-main=	devel/desktop-file-utils \
 MODULES+=		x11/qt3
 RUN_DEPENDS-kde=	editors/libreoffice
 LIB_DEPENDS-kde=	${MODQT_LIB_DEPENDS} \
-			lang/gcc/4.6,-estdc>=4.6,<4.7 \
 			x11/kde/libs3
 WANTLIB-kde=		${MODQT_WANTLIB} \
-			X11 c estdc++ m pthread \
+			X11 c m pthread \
 			lib/kde3/kabc lib/kde3/kdecore \
 			lib/kde3/kdeui lib/kde3/kio
 WANTLIB-kde+=		ICE SM Xext icule icuuc
@@ -189,12 +182,11 @@ MODULES+=		java
 MODJAVA_VER=		1.6
 MODJAVA_JRERUN=		Yes
 .endif
-LIB_DEPENDS-java=	lang/gcc/4.6,-estdc>=4.6,<4.7
 RUN_DEPENDS-java=	${MODJAVA_RUN_DEPENDS} \
 			databases/db/v4,-java \
 			editors/libreoffice \
 			java/javaPathHelper
-WANTLIB-java=		c estdc++ m pthread
+WANTLIB-java=		c m pthread
 
 USE_GMAKE=	Yes
 NO_REGRESS=	Yes
@@ -203,10 +195,12 @@ VMEM_WARNING=	Yes
 PATCHORIG=	.orig.port
 
 CONFIGURE_STYLE=	autoconf no-autoheader
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/dmake
 AUTOCONF_VERSION=	2.68
 AUTOMAKE_VERSION=	1.9
 
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
+CONFIGURE_ENV=	CC=gcc CXX=g++ \
+		CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
 		QTINC="${MODQT_INCDIR}" QTDIR="${MODQT_LIBDIR}" \
 		AUTOCONF_VERSION=${AUTOCONF_VERSION} \
@@ -352,7 +346,7 @@ post-install:
 	for _f in `find ${PREFIX}/share/icons/*/*/apps -type f`; \
 		do mv $${_f} `echo $${_f} | sed "s,apps/,apps/libreoffice-,g"`; done
 
-	${INSTALL_DATA} ${WRKSRC}/sysui/unxobsd.pro/misc/libreoffice/openoffice.org.xml \
+	${INSTALL_DATA} ${WRKSRC}/sysui/unxbitrig.pro/misc/libreoffice/openoffice.org.xml \
 		${PREFIX}/share/mime/packages
 
 .include <bsd.port.mk>

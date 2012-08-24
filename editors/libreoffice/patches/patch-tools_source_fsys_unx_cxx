@@ -1,0 +1,21 @@
+$OpenBSD$
+--- tools/source/fsys/unx.cxx.orig	Fri Aug  3 21:32:26 CEST 2012
++++ tools/source/fsys/unx.cxx	Fri Aug  3 21:32:26 CEST 2012
+@@ -41,7 +41,7 @@
+ extern "C" int mntctl( int cmd, size_t size, char* buf );
+ #elif defined(NETBSD)
+ #include <sys/mount.h>
+-#elif defined(FREEBSD) || defined(MACOSX) || defined(OPENBSD) || \
++#elif defined(FREEBSD) || defined(MACOSX) || defined(OPENBSD) || defined(BITRIG) || \
+       defined(DRAGONFLY) || defined(IOS)
+ struct mnttab
+ {
+@@ -83,7 +83,7 @@ struct mymnttab
+ 
+ 
+ #if defined(NETBSD) || defined(FREEBSD) || defined(MACOSX) || \
+-    defined(OPENBSD) || defined(DRAGONFLY) || defined(IOS)
++    defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY) || defined(IOS)
+ sal_Bool GetMountEntry(dev_t /* dev */, struct mymnttab * /* mytab */ )
+ {
+     DBG_WARNING( "Sorry, not implemented: GetMountEntry" );

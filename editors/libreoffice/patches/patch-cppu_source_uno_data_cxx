@@ -1,0 +1,12 @@
+$OpenBSD$
+--- cppu/source/uno/data.cxx.orig	Fri Aug  3 21:32:49 CEST 2012
++++ cppu/source/uno/data.cxx	Fri Aug  3 21:32:49 CEST 2012
+@@ -358,7 +358,7 @@ sal_Bool SAL_CALL uno_type_isAssignableFromData(
+ 
+ #if defined(INTEL) \
+     && (defined(__GNUC__) && (defined(LINUX) || defined(FREEBSD) \
+-        || defined(NETBSD) || defined(OPENBSD)) || defined(MACOSX) || defined(DRAGONFLY) \
++        || defined(NETBSD) || defined(OPENBSD) || defined(BITRIG)) || defined(MACOSX) || defined(DRAGONFLY) \
+         || defined(__SUNPRO_CC) && defined(SOLARIS))
+ #define MAX_ALIGNMENT_4
+ #endif

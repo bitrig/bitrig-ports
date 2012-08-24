@@ -1,4 +1,5 @@
-$OpenBSD: patch-sal_osl_unx_system_c,v 1.1 2012/04/03 08:56:50 robert Exp $
+$OpenBSD$
+: patch-sal_osl_unx_system_c,v 1.1 2012/04/03 08:56:50 robert Exp $
 --- sal/osl/unx/system.c.orig.port	Tue Mar 27 18:22:01 2012
 +++ sal/osl/unx/system.c	Fri Mar 30 23:14:11 2012
 @@ -33,12 +33,12 @@
@@ -6,7 +7,7 @@ $OpenBSD: patch-sal_osl_unx_system_c,v 1.1 2012/04/03 08:56:50 robert Exp $
  
  /* struct passwd differs on some platforms */
 -#if defined(MACOSX) || defined(IOS) || defined(NETBSD)
-+#if defined(MACOSX) || defined(IOS) || defined(OPENBSD) || defined(NETBSD)
++#if defined(MACOSX) || defined(IOS) || defined(OPENBSD) || defined(BITRIG) || defined(NETBSD)
  
  extern int h_errno;
  
@@ -21,7 +22,7 @@ $OpenBSD: patch-sal_osl_unx_system_c,v 1.1 2012/04/03 08:56:50 robert Exp $
        return res;
  }
 -#endif // OSX || IOS || NETBSD
-+#endif // OSX || IOS || OPENBSD || NETBSD
++#endif // OSX || IOS || OPENBSD || BITRIG || NETBSD
  
  #if defined(MACOSX)
  /*

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- sal/inc/sal/alloca.h.orig	Fri Aug  3 21:33:08 CEST 2012
++++ sal/inc/sal/alloca.h	Fri Aug  3 21:33:08 CEST 2012
+@@ -36,7 +36,7 @@
+ #define INCLUDED_ALLOCA_H
+ #endif
+ 
+-#elif defined (FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(DRAGONFLY)
++#elif defined (FREEBSD) || defined(NETBSD) || defined(OPENBSD) || defined(BITRIG) || defined(DRAGONFLY)
+ 
+ #ifndef INCLUDED_STDLIB_H
+ #include <stdlib.h>

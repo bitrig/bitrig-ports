@@ -1,0 +1,12 @@
+$OpenBSD$
+--- desktop/scripts/soffice.sh.in.orig	Fri Aug  3 21:32:21 CEST 2012
++++ desktop/scripts/soffice.sh.in	Fri Aug  3 21:32:21 CEST 2012
+@@ -129,7 +129,7 @@ if echo "$checks" | grep -q "cc" ; then
+ fi
+ 
+ case "`uname -s`" in
+-NetBSD|OpenBSD|FreeBSD|DragonFly)
++NetBSD|OpenBSD|Bitrig|FreeBSD|DragonFly)
+ # this is a temporary hack until we can live with the default search paths
+     sd_prog1="$sd_prog"
+     sd_prog2="$sd_prog/../ure-link/lib"

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- distro-configs/LibreOfficeOpenBSD.conf.orig	Fri Aug  3 21:33:00 CEST 2012
++++ distro-configs/LibreOfficeOpenBSD.conf	Fri Aug  3 21:33:00 CEST 2012
+@@ -45,7 +45,7 @@
+ --with-system-redland
+ --with-system-stdlibs
+ --with-system-zlib
+---with-vendor=The OpenBSD project
++--with-vendor=The OpenBSD and Bitrig project
+ --without-junit
+ --without-openldap
+ --without-system-mozilla

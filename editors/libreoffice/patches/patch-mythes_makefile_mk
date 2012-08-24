@@ -1,0 +1,12 @@
+--- mythes/makefile.mk.orig	Mon Aug 20 18:00:57 2012
++++ mythes/makefile.mk	Mon Aug 20 18:01:17 2012
+@@ -45,7 +45,8 @@ PATCH_FILES=\
+     mythes-1.2.0-vanilla-th-gen-idx.patch \
+     mythes-1.2.0-makefile-mk.diff \
+     mythes-1.2.1-rhbz675806.patch \
+-    mythes-1.2.0-android.patch
++    mythes-1.2.0-android.patch \
++    bitrig.patch
+ 
+ .IF "$(GUI)"=="UNX"
+ CONFIGURE_DIR=$(BUILD_DIR)
