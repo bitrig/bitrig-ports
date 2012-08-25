@@ -1,4 +1,4 @@
-# $OpenBSD: arch-defines.mk,v 1.6 2012/07/08 18:35:48 sthen Exp $
+# $OpenBSD: arch-defines.mk,v 1.8 2012/08/21 16:32:04 sthen Exp $
 #
 # ex:ts=4 sw=4 filetype=make:
 #
@@ -11,7 +11,7 @@
 
 ARCH ?!= uname -m
 
-ALL_ARCHS = alpha amd64 arm armish arm hppa hppa64 i386 landisk \
+ALL_ARCHS = alpha amd64 arm armish hppa hppa64 i386 landisk \
 	loongson luna88k m68k m88k macppc mips64 mips64el \
 	mvme68k mvme88k palm sgi socppc sparc sparc64 vax zaurus
 # not all powerpc have apm(4), hence the use of macppc
@@ -28,8 +28,12 @@ GCC2_ARCHS = aviion luna88k m68k m88k mvme68k mvme88k vax
 # XXX easier for ports that depend on mono
 MONO_ARCHS = amd64 i386
 LLVM_ARCHS = amd64 i386 powerpc sparc64
+OCAML_NATIVE_ARCHS = i386 sparc amd64 powerpc
+OCAML_NATIVE_DYNLINK_ARCHS = i386 amd64
 
-.for PROP in ALL APM BE LE LP64 NO_SHARED GCC4 GCC3 GCC2 MONO LLVM
+
+.for PROP in ALL APM BE LE LP64 NO_SHARED GCC4 GCC3 GCC2 MONO LLVM \
+                               OCAML_NATIVE OCAML_NATIVE_DYNLINK
 .  for A B in ${MACHINE_ARCH} ${ARCH}
 .    if !empty(${PROP}_ARCHS:M$A) || !empty(${PROP}_ARCHS:M$B)
 PROPERTIES += ${PROP:L}

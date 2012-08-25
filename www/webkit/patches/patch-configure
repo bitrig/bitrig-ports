@@ -1,101 +1,17 @@
-$OpenBSD$
---- configure.orig	Fri Aug 10 13:44:32 MDT 2012
-+++ configure	Fri Aug 10 13:44:32 MDT 2012
-@@ -8028,7 +8028,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
- 
--  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -8459,9 +8459,9 @@ freebsd* | dragonfly*)
-   if echo __ELF__ | $CC -E - | $GREP __ELF__ > /dev/null; then
-     case $host_cpu in
-     i*86 )
--      # Not sure whether the presence of OpenBSD here was a mistake.
-+      # Not sure whether the presence of OpenBSD here was a mistake.
-       # Let's accept both of them until this is cleared up.
--      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
-+      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|Bitrig|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
-       lt_cv_file_magic_cmd=/usr/bin/file
-       lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
-       ;;
-@@ -8535,7 +8535,7 @@ newos6*)
-   lt_cv_deplibs_check_method=pass_all
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-   else
-@@ -9148,7 +9148,7 @@ old_postuninstall_cmds=
- 
- if test -n "$RANLIB"; then
-   case $host_os in
--  openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
-     ;;
-   *)
-@@ -11563,7 +11563,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   linux* | k*bsd*-gnu | gnu*)
-@@ -12447,7 +12447,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
-     *nto* | *qnx*)
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct=yes
- 	hardcode_shlibpath_var=no
-@@ -13511,11 +13511,11 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
--  # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
-+  # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
-   case $host_os in
-     openbsd3.3 | openbsd3.3.*)	need_version=yes ;;
-     *)				need_version=no  ;;
-@@ -15571,7 +15571,7 @@ fi
- 	ld_shlibs_CXX=no
- 	;;
- 
--      openbsd*)
-+      openbsd* | bitrig*)
- 	if test -f /usr/libexec/ld.so; then
- 	  hardcode_direct_CXX=yes
- 	  hardcode_shlibpath_var_CXX=no
-@@ -17360,11 +17360,11 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
--  # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
-+  # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
-   case $host_os in
-     openbsd3.3 | openbsd3.3.*)	need_version=yes ;;
-     *)				need_version=no  ;;
-@@ -18545,8 +18545,8 @@ GSTREAMER_0_11_REQUIRED_VERSION=0.11
+$OpenBSD: patch-configure,v 1.11 2012/08/22 07:48:37 landry Exp $
+
+GNOME Bug 627126 - gsettings schema files don't get installed on FreeBSD
+glib commit 136e705e8383ff8848e425ac01278102d7badc52
+
+Don't force the use of -O2, the ports infrastructure
+takes care of that
+
+OpenBSD doesnt have libdl
+
+Fix gstreamer detection : https://bugs.webkit.org/show_bug.cgi?id=82580
+--- configure.orig	Tue Aug 21 04:57:19 2012
++++ configure	Tue Aug 21 09:36:54 2012
+@@ -18629,8 +18629,8 @@ GSTREAMER_0_11_REQUIRED_VERSION=0.11
  GSTREAMER_0_11_PLUGINS_BASE_REQUIRED_VERSION=0.11.0.2
  
  case "$with_gstreamer" in
@@ -106,7 +22,7 @@ $OpenBSD$
             GST_API_VERSION=0.10
             ;;
       0.11) GSTREAMER_REQUIRED_VERSION=GSTREAMER_0_11_REQUIRED_VERSION
-@@ -19143,22 +19143,10 @@ install-data-am: install-gsettings-schemas
+@@ -19227,22 +19227,10 @@ install-data-am: install-gsettings-schemas
  
  .SECONDARY: $(gsettings_SCHEMAS)
  
@@ -131,7 +47,7 @@ $OpenBSD$
  	test -n "$(GSETTINGS_DISABLE_SCHEMAS_COMPILE)$(DESTDIR)" || $(GLIB_COMPILE_SCHEMAS) $(gsettingsschemadir)
  
  uninstall-gsettings-schemas:
-@@ -20440,7 +20428,7 @@ fi
+@@ -20524,7 +20512,7 @@ fi
  
  done
  
@@ -140,7 +56,7 @@ $OpenBSD$
  fi
  
  
-@@ -21576,8 +21564,8 @@ fi
+@@ -21660,8 +21648,8 @@ fi
  
  # Add the appropriate 'O' level for optimized builds
  if test "$enable_optimizations" = "yes"; then

@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.22 2012/07/10 15:22:45 jasper Exp $
+# $OpenBSD: Makefile,v 1.24 2012/08/21 14:25:41 sthen Exp $
 
 COMMENT =		complex graphical design & layout library
 DISTNAME =		edje-1.0.0
 
-REVISION =		2
+REVISION =		3
 EPOCH =			2
 
 # XXX stop lua module creating a no-arch package
@@ -22,7 +22,7 @@ WANTLIB += Xrandr Xrender Xss Xtst c cares crypto curl ecore ecore_con
 WANTLIB += ecore_evas ecore_file ecore_imf ecore_imf_evas ecore_input
 WANTLIB += ecore_input_evas ecore_x eet eina embryo evas expat fontconfig
 WANTLIB += freetype fribidi glib-2.0 idn jpeg m pcre pthread
-WANTLIB += ssl xcb z ${MODLUA_WANTLIB
+WANTLIB += ssl xcb z ${MODLUA_WANTLIB}
 
 MODULES =		devel/gettext \
 			lang/lua

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.154 2012/08/04 21:53:56 sthen Exp $
+# $OpenBSD: Makefile,v 1.156 2012/08/22 08:04:22 sthen Exp $
 
 SHARED_ONLY=		Yes
 COMMENT-main=		open source multi-protocol PBX and telephony toolkit
