@@ -19,7 +19,7 @@ PKGNAME-lightning =	lightning-1.7beta1
 ENIG_V =		1.4.4
 PKGNAME-enigmail =	enigmail-${ENIG_V}
 EPOCH-lightning =	0
-REVISION-lighting =	0
+REVISION-lightning =	0
 EPOCH-enigmail =	0
 REVISION-enigmail =	0
 
