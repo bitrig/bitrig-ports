@@ -1,7 +1,7 @@
 $OpenBSD$
---- binutils/Makefile.bsd-wrapper.orig	Thu Mar  1 15:06:56 2012
-+++ binutils/Makefile.bsd-wrapper	Tue Mar 13 19:46:08 2012
-@@ -16,17 +16,16 @@ CONF_SUBDIRS=	opcodes bfd
+--- binutils/Makefile.bsd-wrapper.orig	Thu Sep  6 18:29:02 2012
++++ binutils/Makefile.bsd-wrapper	Thu Sep  6 18:35:36 2012
+@@ -17,9 +17,8 @@ CFLAGS+=	${PIE_DEFAULT}
  # This allows moving the whole binutils installation around for 
  # testing purposes
  PREFIX=/usr
@@ -13,17 +13,7 @@ $OpenBSD$
  
  MAN=		binutils/doc/addr2line.1 binutils/doc/objcopy.1 \
  		binutils/doc/objdump.1 binutils/doc/readelf.1 \
- 		c++filt.1
- 
- CONF_SUBDIRS+=	gdb
--SUBDIRS+=	gdb cxxfilt
--INST_SUBDIRS+=	gdb cxxfilt
-+SUBDIRS+=	gdb
-+INST_SUBDIRS+=	gdb
- MAN+=		gdb/gdb.1
- 
- .if ${USING_NEW_BINUTILS:L} == "yes"
-@@ -61,15 +60,16 @@ all:	config.status
+@@ -62,15 +61,16 @@ all:	config.status
  	SUBDIRS='${SUBDIRS}' \
  	  CONFIGURE_HOST_MODULES='${CONFIGURE_HOST_MODULES}' \
  	  ${MAKE} CC="${CC}" \
@@ -39,17 +29,17 @@ $OpenBSD$
  	    ALL_MODULES="${ALL_MODULES}" \
  	    ALL_HOST_MODULES='${ALL_HOST_MODULES}' \
  	    INFO_HOST_MODULES='${INFO_HOST_MODULES}' all info
-+	cd ${.OBJDIR}/cxxfilt && ${MAKE}	
++	cd ${.OBJDIR}/cxxfilt && ${MAKE}
  .if ${USING_NEW_BINUTILS:L} != "yes"
  	cd ${.OBJDIR}/binutils && \
  	    ${MAKE} CC="${CC}" CFLAGS="${CFLAGS} ${COPTS}" \
-@@ -89,8 +89,14 @@ do-config: .USE
+@@ -88,8 +88,15 @@ CF=
+ do-config: .USE
+ 	PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin" \
  	MAKEINFO='makeinfo --no-split' \
- 	CC="${CC}" \
- 	CFLAGS="${CFLAGS} ${COPTS}" \
 -	sh ${.CURDIR}/configure --prefix=${PREFIX} \
--	    --infodir='$${prefix}/share/info' \
 +	sh ${.CURDIR}/configure --prefix=${LOCALBASE} \
+ 	    --infodir='$${prefix}/share/info' \
 +	    --bindir=${LOCALBASE}/bin \
 +	    --mandir=${LOCALBASE}/man \
 +	    --includedir=${LOCALBASE}/include \
@@ -60,7 +50,7 @@ $OpenBSD$
  	    --disable-nls --disable-gdbtk --disable-install-libbfd ${CF} \
  	    ${CONFIGTARGET}
  	cd ${.OBJDIR} && \
-@@ -117,18 +123,21 @@ config.status: do-config
+@@ -116,18 +123,21 @@ config.status: do-config
  # Need to pass SUBDIRS because of install-info
  install: maninstall
  	SUBDIRS='${INST_SUBDIRS}' ${MAKE} DESTDIR='${DESTDIR}' \
@@ -76,8 +66,8 @@ $OpenBSD$
  	    INSTALL_INFO_HOST_MODULES='${INSTALL_INFO_HOST_MODULES}' \
  	      install install-info
 +	${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -o ${BINOWN} \
-+		-g ${BINGRP} -m ${BINMODE} ${.OBJDIR}/cxxfilt/c++filt \
-+		${DESTDIR}${LOCALBASE}/bin
++	    -g ${BINGRP} -m ${BINMODE} ${.OBJDIR}/cxxfilt/c++filt \
++	    ${DESTDIR}${LOCALBASE}/bin
  .if ${USING_NEW_BINUTILS:L} != "yes"
  	cd ${.OBJDIR}/binutils && \
  		${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -o ${BINOWN} \
