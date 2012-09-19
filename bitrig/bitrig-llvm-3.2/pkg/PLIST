@@ -1,4 +1,6 @@
 @comment $OpenBSD$
+%%amd64%%
+%%i386%%
 @bin bin/bugpoint
 bin/c++-analyzer
 bin/ccc-analyzer
@@ -29,6 +31,7 @@ bin/llvm-lit
 @bin bin/llvm-rtdyld
 @bin bin/llvm-size
 @bin bin/llvm-stress
+@bin bin/llvm-symbolizer
 @bin bin/llvm-tblgen
 @bin bin/macho-dump
 @bin bin/opt
@@ -62,8 +65,11 @@ include/clang/AST/CanonicalType.h
 include/clang/AST/CharUnits.h
 include/clang/AST/Comment.h
 include/clang/AST/CommentBriefParser.h
+include/clang/AST/CommentCommandInfo.inc
 include/clang/AST/CommentCommandTraits.h
 include/clang/AST/CommentDiagnostic.h
+include/clang/AST/CommentHTMLTags.inc
+include/clang/AST/CommentHTMLTagsProperties.inc
 include/clang/AST/CommentLexer.h
 include/clang/AST/CommentNodes.inc
 include/clang/AST/CommentParser.h
@@ -125,6 +131,7 @@ include/clang/ASTMatchers/ASTMatchFinder.h
 include/clang/ASTMatchers/ASTMatchers.h
 include/clang/ASTMatchers/ASTMatchersInternal.h
 include/clang/ASTMatchers/ASTMatchersMacros.h
+include/clang/ASTMatchers/ASTTypeTraits.h
 include/clang/Analysis/
 include/clang/Analysis/Analyses/
 include/clang/Analysis/Analyses/CFGReachabilityAnalysis.h
@@ -143,6 +150,7 @@ include/clang/Analysis/CFGStmtMap.h
 include/clang/Analysis/CallGraph.h
 include/clang/Analysis/DomainSpecific/
 include/clang/Analysis/DomainSpecific/CocoaConventions.h
+include/clang/Analysis/DomainSpecific/ObjCNoReturn.h
 include/clang/Analysis/FlowSensitive/
 include/clang/Analysis/FlowSensitive/DataflowSolver.h
 include/clang/Analysis/FlowSensitive/DataflowValues.h
@@ -257,8 +265,6 @@ include/clang/Edit/Rewriters.h
 include/clang/Frontend/
 include/clang/Frontend/ASTConsumers.h
 include/clang/Frontend/ASTUnit.h
-include/clang/Frontend/Analyses.def
-include/clang/Frontend/AnalyzerOptions.h
 include/clang/Frontend/ChainedDiagnosticConsumer.h
 include/clang/Frontend/ChainedIncludesSource.h
 include/clang/Frontend/CodeGenOptions.h
@@ -321,15 +327,17 @@ include/clang/Parse/ParseAST.h
 include/clang/Parse/ParseDiagnostic.h
 include/clang/Parse/Parser.h
 include/clang/Rewrite/
-include/clang/Rewrite/ASTConsumers.h
-include/clang/Rewrite/DeltaTree.h
-include/clang/Rewrite/FixItRewriter.h
-include/clang/Rewrite/FrontendActions.h
-include/clang/Rewrite/HTMLRewrite.h
-include/clang/Rewrite/RewriteRope.h
-include/clang/Rewrite/Rewriter.h
-include/clang/Rewrite/Rewriters.h
-include/clang/Rewrite/TokenRewriter.h
+include/clang/Rewrite/Core/
+include/clang/Rewrite/Core/DeltaTree.h
+include/clang/Rewrite/Core/HTMLRewrite.h
+include/clang/Rewrite/Core/RewriteRope.h
+include/clang/Rewrite/Core/Rewriter.h
+include/clang/Rewrite/Core/TokenRewriter.h
+include/clang/Rewrite/Frontend/
+include/clang/Rewrite/Frontend/ASTConsumers.h
+include/clang/Rewrite/Frontend/FixItRewriter.h
+include/clang/Rewrite/Frontend/FrontendActions.h
+include/clang/Rewrite/Frontend/Rewriters.h
 include/clang/Sema/
 include/clang/Sema/AnalysisBasedWarnings.h
 include/clang/Sema/AttrParsedAttrKinds.inc
@@ -378,9 +386,10 @@ include/clang/StaticAnalyzer/
 include/clang/StaticAnalyzer/Checkers/
 include/clang/StaticAnalyzer/Checkers/ClangCheckers.h
 include/clang/StaticAnalyzer/Checkers/CommonBugCategories.h
-include/clang/StaticAnalyzer/Checkers/DereferenceChecker.h
 include/clang/StaticAnalyzer/Checkers/LocalCheckers.h
 include/clang/StaticAnalyzer/Core/
+include/clang/StaticAnalyzer/Core/Analyses.def
+include/clang/StaticAnalyzer/Core/AnalyzerOptions.h
 include/clang/StaticAnalyzer/Core/BugReporter/
 include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h
 include/clang/StaticAnalyzer/Core/BugReporter/BugReporterVisitor.h
@@ -401,6 +410,7 @@ include/clang/StaticAnalyzer/Core/PathSensitive/CheckerContext.h
 include/clang/StaticAnalyzer/Core/PathSensitive/CheckerHelpers.h
 include/clang/StaticAnalyzer/Core/PathSensitive/ConstraintManager.h
 include/clang/StaticAnalyzer/Core/PathSensitive/CoreEngine.h
+include/clang/StaticAnalyzer/Core/PathSensitive/DynamicTypeInfo.h
 include/clang/StaticAnalyzer/Core/PathSensitive/Environment.h
 include/clang/StaticAnalyzer/Core/PathSensitive/ExplodedGraph.h
 include/clang/StaticAnalyzer/Core/PathSensitive/ExprEngine.h
@@ -424,8 +434,10 @@ include/clang/StaticAnalyzer/Frontend/CheckerRegistration.h
 include/clang/StaticAnalyzer/Frontend/FrontendActions.h
 include/clang/Tooling/
 include/clang/Tooling/ArgumentsAdjusters.h
-include/clang/Tooling/CommandLineClangTool.h
+include/clang/Tooling/CommonOptionsParser.h
 include/clang/Tooling/CompilationDatabase.h
+include/clang/Tooling/CompilationDatabasePluginRegistry.h
+include/clang/Tooling/JSONCompilationDatabase.h
 include/clang/Tooling/Refactoring.h
 include/clang/Tooling/RefactoringCallbacks.h
 include/clang/Tooling/Tooling.h
@@ -475,6 +487,7 @@ include/llvm/ADT/IndexedMap.h
 include/llvm/ADT/IntEqClasses.h
 include/llvm/ADT/IntervalMap.h
 include/llvm/ADT/IntrusiveRefCntPtr.h
+include/llvm/ADT/MapVector.h
 include/llvm/ADT/NullablePtr.h
 include/llvm/ADT/Optional.h
 include/llvm/ADT/OwningPtr.h
@@ -502,7 +515,6 @@ include/llvm/ADT/StringRef.h
 include/llvm/ADT/StringSet.h
 include/llvm/ADT/StringSwitch.h
 include/llvm/ADT/TinyPtrVector.h
-include/llvm/ADT/Trie.h
 include/llvm/ADT/Triple.h
 include/llvm/ADT/Twine.h
 include/llvm/ADT/UniqueVector.h
@@ -552,6 +564,8 @@ include/llvm/Analysis/Passes.h
 include/llvm/Analysis/PathNumbering.h
 include/llvm/Analysis/PathProfileInfo.h
 include/llvm/Analysis/PostDominators.h
+include/llvm/Analysis/ProfileDataLoader.h
+include/llvm/Analysis/ProfileDataTypes.h
 include/llvm/Analysis/ProfileInfo.h
 include/llvm/Analysis/ProfileInfoLoader.h
 include/llvm/Analysis/ProfileInfoTypes.h
@@ -633,6 +647,7 @@ include/llvm/CodeGen/MachineModuleInfo.h
 include/llvm/CodeGen/MachineModuleInfoImpls.h
 include/llvm/CodeGen/MachineOperand.h
 include/llvm/CodeGen/MachinePassRegistry.h
+include/llvm/CodeGen/MachinePostDominators.h
 include/llvm/CodeGen/MachineRegisterInfo.h
 include/llvm/CodeGen/MachineRelocation.h
 include/llvm/CodeGen/MachineSSAUpdater.h
@@ -664,6 +679,7 @@ include/llvm/CodeGen/SelectionDAGISel.h
 include/llvm/CodeGen/SelectionDAGNodes.h
 include/llvm/CodeGen/SlotIndexes.h
 include/llvm/CodeGen/TargetLoweringObjectFileImpl.h
+include/llvm/CodeGen/TargetSchedule.h
 include/llvm/CodeGen/ValueTypes.h
 include/llvm/CodeGen/ValueTypes.td
 include/llvm/Config/
@@ -738,6 +754,7 @@ include/llvm/MC/MCDwarf.h
 include/llvm/MC/MCELFObjectWriter.h
 include/llvm/MC/MCELFSymbolFlags.h
 include/llvm/MC/MCExpr.h
+include/llvm/MC/MCFixedLenDisassembler.h
 include/llvm/MC/MCFixup.h
 include/llvm/MC/MCFixupKindInfo.h
 include/llvm/MC/MCInst.h
@@ -946,9 +963,11 @@ include/llvm/Transforms/Utils/
 include/llvm/Transforms/Utils/AddrModeMatcher.h
 include/llvm/Transforms/Utils/BasicBlockUtils.h
 include/llvm/Transforms/Utils/BuildLibCalls.h
+include/llvm/Transforms/Utils/BypassSlowDivision.h
 include/llvm/Transforms/Utils/Cloning.h
 include/llvm/Transforms/Utils/CmpInstAnalysis.h
 include/llvm/Transforms/Utils/CodeExtractor.h
+include/llvm/Transforms/Utils/IntegerDivision.h
 include/llvm/Transforms/Utils/Local.h
 include/llvm/Transforms/Utils/ModuleUtils.h
 include/llvm/Transforms/Utils/PromoteMemToReg.h
@@ -994,6 +1013,9 @@ ${CLANG_INCLUDE_PATH}/module.map
 ${CLANG_INCLUDE_PATH}/nmmintrin.h
 ${CLANG_INCLUDE_PATH}/pmmintrin.h
 ${CLANG_INCLUDE_PATH}/popcntintrin.h
+${CLANG_INCLUDE_PATH}/sanitizer/
+${CLANG_INCLUDE_PATH}/sanitizer/asan_interface.h
+${CLANG_INCLUDE_PATH}/sanitizer/common_interface_defs.h
 ${CLANG_INCLUDE_PATH}/smmintrin.h
 ${CLANG_INCLUDE_PATH}/stdalign.h
 ${CLANG_INCLUDE_PATH}/stdarg.h
@@ -1008,6 +1030,8 @@ ${CLANG_INCLUDE_PATH}/wmmintrin.h
 ${CLANG_INCLUDE_PATH}/x86intrin.h
 ${CLANG_INCLUDE_PATH}/xmmintrin.h
 ${CLANG_INCLUDE_PATH}/xopintrin.h
+lib/clang/3.2/lib/
+lib/clang/3.2/lib/bitrig/
 lib/libLLVMARMAsmParser.a
 lib/libLLVMARMAsmPrinter.a
 lib/libLLVMARMCodeGen.a
@@ -1067,7 +1091,8 @@ lib/libclangFrontend.a
 lib/libclangFrontendTool.a
 lib/libclangLex.a
 lib/libclangParse.a
-lib/libclangRewrite.a
+lib/libclangRewriteCore.a
+lib/libclangRewriteFrontend.a
 lib/libclangSema.a
 lib/libclangSerialization.a
 lib/libclangStaticAnalyzerCheckers.a
@@ -1075,8 +1100,10 @@ lib/libclangStaticAnalyzerCore.a
 lib/libclangStaticAnalyzerFrontend.a
 lib/libclangTooling.a
 lib/libclang_rt.${MACHINE_ARCH}.a
+lib/libgtest.a
+lib/libgtest_main.a
 lib/libprofile_rt.a
-lib/profile_rt.so
+lib/libprofile_rt.so
 share/llvm/
 share/llvm/cmake/
 share/llvm/cmake/AddLLVM.cmake

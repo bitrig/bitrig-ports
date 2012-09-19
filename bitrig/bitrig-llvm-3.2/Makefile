@@ -76,8 +76,22 @@ TMPGIT = ${DISTDIR}/tmpgit
 
 .if ${MACHINE_ARCH:Mamd64}
 INSTALL_ARCH = x86_64
+PKG_ARGS+=-Damd64=1
 .else
-INSTALL_ARCH = ${ARCH}
+INSTALL_ARCH = ${MACHINE_ARCH}
+PKG_ARGS+=-Damd64=0
+.endif
+
+.if ${MACHINE_ARCH:Mi386}
+PKG_ARGS+=-Di386=1
+.else
+PKG_ARGS+=-Di386=0
+.endif
+
+.if ${MACHINE_ARCH:Marm}
+PKG_ARGS+=-Darm=1
+.else
+PKG_ARGS+=-Darm=0
 .endif
 
 pre-configure:
@@ -107,7 +121,8 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKSRC}/docs/CommandGuide/man/man1/* \
 	    ${PREFIX}/share/man/man1
-	${INSTALL_DATA} ${WRKBUILD}/lib/libclang_rt.${INSTALL_ARCH}.a ${PREFIX}/lib/libclang_rt.${ARCH}.a
+	${INSTALL_DATA} ${WRKBUILD}/lib/clang/3.2/lib/bitrig/libclang_rt.${INSTALL_ARCH}.a \
+	    ${PREFIX}/lib/libclang_rt.${ARCH}.a
 
 git:
 	@mkdir -p ${TMPGIT}
