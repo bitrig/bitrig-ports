@@ -7,6 +7,7 @@ EXTRACT_SUFX =		.tgz
 CATEGORIES =		bitrig devel
 SHARED_LIBS =		iberty 10.1 \
 			readline 3.0
+REVISION=		0
 
 HOMEPAGE =		https://www.bitrig.org/
 MAINTAINER =		Marco Peereboom <marco@bitrig.org>

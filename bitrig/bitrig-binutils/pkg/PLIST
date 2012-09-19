@@ -32,11 +32,9 @@ info/
 lib/libiberty.a
 @lib lib/libiberty.so.${LIBiberty_VERSION}
 lib/libiberty_p.a
-lib/libiberty_pic.a
 lib/libreadline.a
 @lib lib/libreadline.so.${LIBreadline_VERSION}
 lib/libreadline_p.a
-lib/libreadline_pic.a
 libdata/ldscripts/
 @info share/info/history.info
 @info share/info/libiberty.info
