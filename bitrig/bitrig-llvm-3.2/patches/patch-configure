@@ -1,7 +1,7 @@
 $OpenBSD: patch-configure,v 1.1 2012/05/25 09:05:49 sthen Exp $
---- configure.orig	Wed Aug  1 12:45:27 2012
-+++ configure	Wed Aug  1 14:36:22 2012
-@@ -12550,13 +12550,13 @@ fi
+--- configure.orig	Thu Sep 20 17:38:18 2012
++++ configure	Thu Sep 20 17:42:35 2012
+@@ -12629,13 +12629,13 @@ fi
  
  if test "$LLVM_ENABLE_THREADS" -eq 1 && test "$ENABLE_PTHREADS" -eq 1 ; then
  
@@ -18,7 +18,7 @@ $OpenBSD: patch-configure,v 1.1 2012/05/25 09:05:49 sthen Exp $
  cat >conftest.$ac_ext <<_ACEOF
  /* confdefs.h.  */
  _ACEOF
-@@ -12632,7 +12632,7 @@ if test $ac_cv_lib_pthread_pthread_mutex_init = yes; t
+@@ -12711,7 +12711,7 @@ if test $ac_cv_lib_pthread_pthread_mutex_init = yes; t
  #define HAVE_LIBPTHREAD 1
  _ACEOF
  
