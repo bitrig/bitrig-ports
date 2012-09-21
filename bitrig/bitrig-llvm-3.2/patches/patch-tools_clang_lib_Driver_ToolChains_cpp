@@ -1,7 +1,7 @@
 $OpenBSD$
---- tools/clang/lib/Driver/ToolChains.cpp.orig	Thu Sep 20 11:12:43 2012
-+++ tools/clang/lib/Driver/ToolChains.cpp	Thu Sep 20 16:33:19 2012
-@@ -1635,19 +1635,38 @@ void Bitrig::AddClangCXXStdlibIncludeArgs(const ArgLis
+--- tools/clang/lib/Driver/ToolChains.cpp.orig	Thu Sep 20 16:41:54 2012
++++ tools/clang/lib/Driver/ToolChains.cpp	Fri Sep 21 14:29:48 2012
+@@ -1635,19 +1635,42 @@ void Bitrig::AddClangCXXStdlibIncludeArgs(const ArgLis
        DriverArgs.hasArg(options::OPT_nostdincxx))
      return;
  
@@ -11,7 +11,8 @@ $OpenBSD$
 +  CXXStdlibType Type = GetCXXStdlibType(DriverArgs);
 +  switch (Type) {
 +  case ToolChain::CST_Libcxx:
-+    addSystemInclude(DriverArgs, CC1Args, getDriver().SysRoot + "/usr/include/c++/");
++    addSystemInclude(DriverArgs, CC1Args,
++                     getDriver().SysRoot + "/usr/include/c++/");
 +    break;
 +  case ToolChain::CST_Libstdcxx:
 +    std::string Triple = getTriple().str();
@@ -22,9 +23,12 @@ $OpenBSD$
 -  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2/backward");
 -  addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/4.6.2/" + Triple);
 -
-+    addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/stdc++");
-+    addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/stdc++/backward");
-+    addSystemInclude(DriverArgs, CC1Args, "/usr/include/c++/stdc++/" + Triple);
++    addSystemInclude(DriverArgs, CC1Args,
++                     getDriver().SysRoot + "/usr/include/c++/stdc++");
++    addSystemInclude(DriverArgs, CC1Args,
++                     getDriver().SysRoot + "/usr/include/c++/stdc++/backward");
++    addSystemInclude(DriverArgs, CC1Args,
++                     getDriver().SysRoot + "/usr/include/c++/stdc++/" + Triple);
 +    break;
 +  }
  }
