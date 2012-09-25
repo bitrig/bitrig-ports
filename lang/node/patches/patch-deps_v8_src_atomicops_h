@@ -1,11 +1,13 @@
 $OpenBSD$
---- deps/v8/src/atomicops.h.orig	Sun Jul  8 00:15:17 2012
-+++ deps/v8/src/atomicops.h	Wed Jul 18 10:53:23 2012
-@@ -69,7 +69,11 @@ typedef intptr_t Atomic64;
+--- deps/v8/src/atomicops.h.orig	Tue Sep 25 10:26:16 CEST 2012
++++ deps/v8/src/atomicops.h	Tue Sep 25 10:26:16 CEST 2012
+@@ -69,7 +69,13 @@ typedef intptr_t Atomic64;
  
  // Use AtomicWord for a machine-sized pointer.  It will use the Atomic32 or
  // Atomic64 routines below, depending on your architecture.
-+#if (defined(__OpenBSD__) || defined(__Bitrig__)) && defined(__i386__)
++#if defined(__OpenBSD__) && defined(__i386__)
++typedef Atomic32 AtomicWord;
++#elif defined(__Bitrig__) && defined(__i386__)
 +typedef Atomic32 AtomicWord;
 +#else
  typedef intptr_t AtomicWord;

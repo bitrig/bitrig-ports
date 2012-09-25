@@ -1,4 +1,4 @@
-# $OpenBSD: gnome.port.mk,v 1.60 2012/03/29 16:34:43 ajacoutot Exp $
+# $OpenBSD: gnome.port.mk,v 1.62 2012/09/11 09:28:56 ajacoutot Exp $
 #
 # Module for GNOME related ports
 
@@ -21,10 +21,6 @@ MODULES+=		textproc/intltool
         _MODGNOME_ldflags ?= LDFLAGS="-L${LOCALBASE}/lib ${MODGNOME_LDFLAGS}"
         CONFIGURE_ENV += ${_MODGNOME_cppflags} \
                          ${_MODGNOME_ldflags}
-        # Older versions of glib-gettext.m4 used to set DATADIRNAME to
-        # "lib" which resulted in locale files being installed under the
-        # wrong directory.
-        CONFIGURE_ENV += DATADIRNAME=share
         # If one of these tools is found at configure stage, it might be used, no
         # matter whether we use --disable-gtk-doc or not.
 .       if !defined(MODGNOME_TOOLS) || defined(MODGNOME_TOOLS) && ! ${MODGNOME_TOOLS:Mgtk-doc}
@@ -80,7 +76,7 @@ MODGNOME_CONFIGURE_ARGS_vala=--disable-vala --disable-vala-bindings
 
 .   if ${MODGNOME_TOOLS:Mvala}
         MODGNOME_CONFIGURE_ARGS_vala=--enable-vala --enable-vala-bindings
-        MODGNOME_BUILD_DEPENDS+=lang/vala>=0.16.0
+        MODGNOME_BUILD_DEPENDS+=lang/vala>=0.17.5
 .   endif
 
 .   if ${MODGNOME_TOOLS:Myelp}

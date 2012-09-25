@@ -1,6 +1,6 @@
-$OpenBSD: patch-configure_ac,v 1.5 2011/10/04 06:45:41 ajacoutot Exp $
---- configure.ac.orig	Sun Oct  2 22:34:22 2011
-+++ configure.ac	Mon Jun  4 23:37:20 2012
+$OpenBSD$
+--- configure.ac.orig	Mon Oct  3 05:34:22 2011
++++ configure.ac	Mon Sep 24 10:49:53 2012
 @@ -97,7 +97,7 @@ case "${host_os}" in
    mingw*|pw32*|cygwin*)
      AC_DEFINE(HAVE_CODEMEM_VIRTUALALLOC, 1, [Use VirtualAlloc to allocate code for execution])
@@ -15,7 +15,7 @@ $OpenBSD: patch-configure_ac,v 1.5 2011/10/04 06:45:41 ajacoutot Exp $
  AC_SUBST(ORC_CFLAGS)
  
 -ORC_LIBS="\$(top_builddir)/orc/liborc-$ORC_MAJORMINOR.la $LIBM $LIBRT"
-+ORC_LIBS="\$(top_builddir)/orc/liborc-$ORC_MAJORMINOR.la -pthread $LIBM $LIBRT"
++ORC_LIBS="\$(top_builddir)/orc/liborc-$ORC_MAJORMINOR.la -lpthread $LIBM $LIBRT"
  AC_SUBST(ORC_LIBS)
  
  #CFLAGS=`echo $CFLAGS | sed s/O2/O0/`

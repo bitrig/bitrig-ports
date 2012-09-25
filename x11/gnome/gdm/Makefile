@@ -1,15 +1,13 @@
-# $OpenBSD: Makefile,v 1.121 2012/06/15 08:30:19 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.128 2012/09/13 08:38:12 ajacoutot Exp $
 
-BROKEN=			needs PAM(7)
+BROKEN=			needs pam(3)
 
 SHARED_ONLY=		Yes
 
 COMMENT=		GNOME display manager
 
 GNOME_PROJECT=		gdm
-GNOME_VERSION=		3.2.1.1
-
-REVISION=		2
+GNOME_VERSION=		3.4.1
 
 HOMEPAGE=		http://projects.gnome.org/gdm/
 
@@ -25,74 +23,57 @@ PERMIT_DISTFILES_FTP=	Yes
 WANTLIB += GL X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes
 WANTLIB += Xi Xinerama Xrandr Xrender Xxf86vm accountsservice
 WANTLIB += atk-1.0 c cairo cairo-gobject canberra canberra-gtk3
-WANTLIB += crypto dbus-1 dbus-glib-1 drm execinfo expat ffi fontconfig
+WANTLIB += dbus-1 dbus-glib-1 drm execinfo expat ffi fontconfig
 WANTLIB += freetype gdk-3 gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0
 WANTLIB += gobject-2.0 gthread-2.0 gtk-3 ltdl m nspr4 nss3 nssutil3
-WANTLIB += ogg pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
+WANTLIB += ogg pam pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB += pixman-1 plc4 plds4 png pthread pthread-stubs smime3
 WANTLIB += softokn3 sqlite3 ssl3 stdc++ upower-glib util vorbis
-WANTLIB += vorbisfile wrap xcb xcb-render xcb-shm xkbfile xklavier
-WANTLIB += xml2 z
-
-BUILD_DEPENDS=		x11/gnome/zenity
-
-#XXX
-#RUN_DEPENDS=		audio/sox \
-#			x11/hicolor-icon-theme \
-#			x11/gnome/zenity \
-#			sysutils/consolekit
-
-LIB_DEPENDS=		audio/libcanberra,-gtk3 \
-			sysutils/upower \
-			sysutils/accountsservice \
-			x11/gnome/libxklavier \
-			devel/libexecinfo \
-			security/nss
+WANTLIB += vorbisfile xcb xcb-render xcb-shm xkbfile xklavier xml2 z
 
 MODULES=		devel/gettext \
-			devel/gconf2 \
 			x11/gnome \
 			devel/dconf
 
-MODGCONF2_SCHEMAS_DIR=	gdm
+# bring _all_ runtime dependencies (including sysutils/consolekit)
+RUN_DEPENDS=		x11/gnome/session
+
+LIB_DEPENDS=		audio/libcanberra,-gtk3 \
+			devel/libexecinfo \
+			security/nss \
+			sysutils/accountsservice \
+			sysutils/upower \
+			x11/gnome/libxklavier 
+# XXX 
+#LIB_DEPENDS +=		security/openpam
+
+LIBTOOL_FLAGS=		--tag=disable-static
 
 MODGNOME_TOOLS= 	yelp
 MODGNOME_ICON_CACHE=	Yes
-
 MODGNOME_CPPFLAGS=	-I${X11BASE}/include -DHAS_SA_LEN
 MODGNOME_LDFLAGS=	-L${X11BASE}/lib
 
-CONFIGURE_ARGS=		--mandir=${PREFIX}/man \
+CONFIGURE_ARGS=		--disable-static \
+			--mandir=${PREFIX}/man \
+			--with-lang-file=${SYSCONFDIR}/gdm/i18n \
 			--with-at-spi-registryd-directory=${LOCALBASE}/libexec \
-			--with-custom-conf=${SYSCONFDIR}/X11/gdm/custom.conf \
+			--with-custom-conf=${SYSCONFDIR}/gdm/custom.conf \
 			--with-dbus-sys=${SYSCONFDIR}/dbus-1/system.d \
 			--with-log-dir=/var/log/gdm \
 			--with-working-directory=/var/db/gdm \
-			--with-selinux=no \
-			--with-xevie=no \
-			--with-libaudit=no \
-			--with-sysconfsubdir=X11/gdm \
+			--with-sysconfsubdir=gdm \
 			--with-pid-file=/var/run/gdm.pid \
 			--with-dmconfdir="${LOCALBASE}/share/xsessions" \
 			--with-screenshot-dir=/var/run/gdm/greeter \
 			--with-incomplete-locales \
 			--with-user=_gdm \
 			--with-group=_gdm \
-			--with-tcp-wrappers \
-			--with-x \
-			--with-xinerama \
-			--with-xdmcp \
 			--with-console-kit \
 			--with-xauth-dir=/var/run/gdm \
-			--with-screenshot-dir=/var/run/gdm/greeter \
-			--enable-authentication-scheme=crypt \
+			--without-systemd \
+			--without-tcp-wrappers \
 			--disable-console-helper
-
-# --with-lang-file=${SYSCONFDIR}/sysconfig/i18n
-# XXX --enable-authentication-scheme=bsdauth
-
-# XXX IPv6-only FLAVOR?
-CONFIGURE_ARGS+=	--disable-ipv6
 
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/Makefile.in \
@@ -112,28 +93,19 @@ pre-configure:
 		${WRKSRC}/data/applications/gdm-simple-greeter.desktop.in
 .endfor
 
-pre-fake:
-	# cf. gconftool-2 below
-	${INSTALL_DATA_DIR} ${WRKINST}/var/db/gdm/.gconf.mandatory
-	touch ${WRKINST}/var/db/gdm/.gconf.mandatory/%gconf-tree.xml
-
 post-install:
-	# PATH is modified by the gconf2 MODULE, so give the full path
-	# to the real gconftool-2 binary.
-	${LOCALBASE}/bin/gconftool-2 --direct \
-		--config-source=xml:merged:${WRKINST}/var/db/gdm/.gconf.mandatory \
-		--recursive-unset /
-	${LOCALBASE}/bin/gconftool-2 --direct \
-		--config-source=xml:merged:${WRKINST}/var/db/gdm/.gconf.mandatory \
-		--load ${WRKSRC}/data/session-setup.entries
-	# clean up the mess
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/gdm/db
-	mv ${WRKINST}/etc/dbus-1 ${PREFIX}/share/examples/gdm
-	mv ${WRKINST}/etc/X11/ ${PREFIX}/share/examples/gdm/
-	mv ${WRKINST}/etc/dconf ${PREFIX}/share/examples/gdm/
-	mv ${WRKINST}/var/db/gdm ${PREFIX}/share/examples/gdm/db
-# XXX
-	rm -rf ${WRKINST}/etc/pam.d ${WRKINST}/var/run/gdm
+	rm ${PREFIX}/lib/gdm/simple-greeter/extensions/*.la
+	rm -r ${WRKINST}/etc/pam.d
+	rm -rf ${WRKINST}/var/run/gdm
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/gdm/{etc/pam.d,var/db}
+	${INSTALL_DATA} ${FILESDIR}/gdm-* \
+		${PREFIX}/share/examples/gdm/etc/pam.d
+	mv ${WRKINST}/etc/gdm ${PREFIX}/share/examples/gdm/etc
+	mv ${WRKINST}/etc/dbus-1 ${PREFIX}/share/examples/gdm/etc
+	mv ${WRKINST}/etc/dconf ${PREFIX}/share/examples/gdm/etc
+	mv ${WRKINST}/var/db/gdm ${PREFIX}/share/examples/gdm/var/db
+	${INSTALL_DATA} ${FILESDIR}/i18n \
+		${PREFIX}/share/examples/gdm/etc/gdm/i18n
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/examples/gdm/*
 
 .include <bsd.port.mk>

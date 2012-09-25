@@ -1,0 +1,22 @@
+$OpenBSD$
+--- deps/openssl/openssl/crypto/dso/dso_dlfcn.c.orig	Tue Sep 25 10:58:17 CEST 2012
++++ deps/openssl/openssl/crypto/dso/dso_dlfcn.c	Tue Sep 25 10:58:17 CEST 2012
+@@ -86,7 +86,8 @@ DSO_METHOD *DSO_METHOD_dlfcn(void)
+ # if defined(_AIX) || defined(__CYGWIN__) || \
+      defined(__SCO_VERSION__) || defined(_SCO_ELF) || \
+      (defined(__osf__) && !defined(RTLD_NEXT))     || \
+-     (defined(__OpenBSD__) && !defined(RTLD_SELF))
++     (defined(__OpenBSD__) && !defined(RTLD_SELF)) || \
++     (defined(__Bitrig__) && !defined(RTLD_SELF))
+ #  undef HAVE_DLINFO
+ # endif
+ #endif
+@@ -141,7 +142,7 @@ DSO_METHOD *DSO_METHOD_dlfcn(void)
+  * as we don't have autoconf yet, I'm implementing a hack that could
+  * be hacked further relatively easily to deal with cases as we find
+  * them. Initially this is to cope with OpenBSD. */
+-#if defined(__OpenBSD__) || defined(__NetBSD__)
++#if defined(__OpenBSD__) || defined(__Bitrig__) || defined(__NetBSD__)
+ #	ifdef DL_LAZY
+ #		define DLOPEN_FLAG DL_LAZY
+ #	else

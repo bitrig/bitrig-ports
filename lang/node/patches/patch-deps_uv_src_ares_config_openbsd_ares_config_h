@@ -1,6 +1,6 @@
 $OpenBSD$
---- deps/uv/src/ares/config_openbsd/ares_config.h.orig	Sun Jul  8 00:15:17 2012
-+++ deps/uv/src/ares/config_openbsd/ares_config.h	Wed Jul 18 10:53:23 2012
+--- deps/uv/src/ares/config_openbsd/ares_config.h.orig	Tue Sep 25 10:40:30 CEST 2012
++++ deps/uv/src/ares/config_openbsd/ares_config.h	Tue Sep 25 10:40:30 CEST 2012
 @@ -53,7 +53,7 @@
  #define HAVE_ARPA_INET_H 1
  

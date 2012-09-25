@@ -1,0 +1,37 @@
+$OpenBSD: patch-libraries_Cabal_Cabal_Distribution_Simple_Register_hs,v 1.1 2012/09/02 19:53:46 kili Exp $
+--- libraries/Cabal/Cabal/Distribution/Simple/Register.hs.orig	Wed Feb  1 19:10:49 2012
++++ libraries/Cabal/Cabal/Distribution/Simple/Register.hs	Sat Jun  9 21:36:25 2012
+@@ -127,13 +127,14 @@ register pkg@PackageDescription { library       = Just
+ 
+     installedPkgInfo <- generateRegistrationInfo
+                            verbosity pkg lib lbi clbi inplace distPref
++    let installedPkgInfo' = installedPkgInfo { IPI.pkgpath = pkgPath }
+ 
+      -- Three different modes:
+     case () of
+-     _ | modeGenerateRegFile   -> writeRegistrationFile installedPkgInfo
+-       | modeGenerateRegScript -> writeRegisterScript   installedPkgInfo
++     _ | modeGenerateRegFile   -> writeRegistrationFile installedPkgInfo'
++       | modeGenerateRegScript -> writeRegisterScript   installedPkgInfo'
+        | otherwise             -> registerPackage verbosity
+-                                    installedPkgInfo pkg lbi inplace packageDbs
++                                    installedPkgInfo' pkg lbi inplace packageDbs
+ 
+   where
+     modeGenerateRegFile = isJust (flagToMaybe (regGenPkgConf regFlags))
+@@ -149,6 +150,7 @@ register pkg@PackageDescription { library       = Just
+     packageDbs = nub $ withPackageDB lbi
+                     ++ maybeToList (flagToMaybe  (regPackageDB regFlags))
+     distPref  = fromFlag (regDistPref regFlags)
++    pkgPath = fromFlag (regPkgPath regFlags)
+     verbosity = fromFlag (regVerbosity regFlags)
+ 
+     writeRegistrationFile installedPkgInfo = do
+@@ -272,6 +274,7 @@ generalInstalledPackageInfo adjustRelIncDirs pkg lib c
+     IPI.synopsis           = synopsis    pkg,
+     IPI.description        = description pkg,
+     IPI.category           = category    pkg,
++    IPI.pkgpath            = "",
+     IPI.exposed            = libExposed  lib,
+     IPI.exposedModules     = exposedModules lib,
+     IPI.hiddenModules      = otherModules bi,

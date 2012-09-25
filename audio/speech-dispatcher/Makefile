@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2011/10/20 11:28:27 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.3 2012/09/01 14:36:56 ajacoutot Exp $
 
 COMMENT=	common interface to speech synthesis
 
 DISTNAME=	speech-dispatcher-0.7.1
+REVISION=	0
 
 SHARED_LIBS +=  sdaudio              0.0      # 2.4
 SHARED_LIBS +=  speechd              0.0      # 5.0
@@ -54,15 +55,6 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/speech-dispatcher
 
 pre-configure:
-	perl -pi -e 's,-lpthread,-pthread,g' \
-		${WRKSRC}/configure \
-		${WRKSRC}/src/audio/Makefile.in \
-		${WRKSRC}/src/server/Makefile.in \
-		${WRKSRC}/src/tests/Makefile.in \
-		${WRKSRC}/src/modules/Makefile.in \
-		${WRKSRC}/src/c/api/Makefile.in \
-		${WRKSRC}/src/c/clients/say/Makefile.in \
-		${WRKSRC}/src/c/clients/spdsend/Makefile.in
 	perl -pi -e 's,/usr/share,${LOCALBASE}/share,g;' \
 		-e 's,/usr/bin,${LOCALBASE}/bin,g' \
 		${WRKSRC}/config/modules/*.conf

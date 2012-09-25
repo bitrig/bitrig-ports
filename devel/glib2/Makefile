@@ -1,14 +1,13 @@
-# $OpenBSD: Makefile,v 1.179 2012/07/15 08:10:41 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.183 2012/09/07 14:40:59 ajacoutot Exp $
 
-COMMENT-main=		general-purpose utility library
-COMMENT-docs=		glib2 documentation
+COMMENT=		general-purpose utility library
 
-VERSION=		2.32.4
-DISTNAME=		glib-${VERSION}
+V=			2.32.4
+DISTNAME=		glib-${V}
+PKGNAME=		${DISTNAME:S/glib/glib2/}
 EXTRACT_SUFX=		.tar.xz
 
-PKGNAME-main=		glib2-${VERSION}
-PKGNAME-docs=		glib2-docs-${VERSION}
+REVISION=		2
 
 CATEGORIES=		devel
 
@@ -28,9 +27,9 @@ PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/glib/${VERSION:C/^([0-9]+\.[0-9]+).*/\1/}/}
+WANTLIB += c elf ffi pcre pthread z
 
-MULTI_PACKAGES=		-main -docs
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/glib/${V:C/^([0-9]+\.[0-9]+).*/\1/}/}
 
 MODULES=		devel/gettext \
 			lang/python
@@ -39,17 +38,9 @@ MODPY_ADJ_FILES=	glib/gtester-report \
 			gio/gdbus-2.0/codegen/gdbus-codegen.in \
 			gio/tests/gdbus-testserver.py
 
-WANTLIB-main += ${WANTLIB} c elf ffi pcre pthread z
-
-LIB_DEPENDS-main=	${LIB_DEPENDS} \
-			devel/pcre \
+LIB_DEPENDS=		devel/pcre \
 			devel/libelf \
 			devel/libffi
-
-PKG_ARCH-docs=		*
-WANTLIB-docs=
-LIB_DEPENDS-docs=
-RUN_DEPENDS-docs=
 
 # need X11 because DBus is used in the GDBus test cases;
 # also requires bumped limits (stack >= 24576)

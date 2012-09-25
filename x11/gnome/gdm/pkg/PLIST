@@ -1,4 +1,5 @@
-@comment $OpenBSD: PLIST,v 1.40 2012/06/15 08:30:19 ajacoutot Exp $
+@comment $OpenBSD: PLIST,v 1.46 2012/09/13 08:38:12 ajacoutot Exp $
+@comment starts a full gnome-session as _gdm which requires a valid homedir
 @newgroup _gdm:676
 @newuser _gdm:676:_gdm:daemon:GNOME Display Manager:/var/db/gdm:/sbin/nologin
 @unexec-delete rm -f ${SYSCONFDIR}/dconf/db/gdm
@@ -6,8 +7,6 @@
 @extraunexec rm -rf /var/db/gdm/.aucat_cookie
 @extraunexec rm -rf /var/db/gdm/.cache
 @extraunexec rm -rf /var/db/gdm/.dbus
-@extraunexec rm -rf /var/db/gdm/.gconf
-@extraunexec rm -rf /var/db/gdm/.gconfd
 @extraunexec rm -rf /var/db/gdm/.pulse-cookie
 @extraunexec rm -rf /var/db/gdm/.config/dconf/*
 @extraunexec rm -rf /var/db/gdm/*
@@ -25,19 +24,11 @@ include/gdm/simple-greeter/gdm-login-extension.h
 lib/gdm/
 lib/gdm/simple-greeter/
 lib/gdm/simple-greeter/extensions/
-@comment lib/gdm/simple-greeter/extensions/libfingerprint.a
-@comment lib/gdm/simple-greeter/extensions/libfingerprint.la
 lib/gdm/simple-greeter/extensions/libfingerprint.so
-@comment lib/gdm/simple-greeter/extensions/libpassword.a
-@comment lib/gdm/simple-greeter/extensions/libpassword.la
 lib/gdm/simple-greeter/extensions/libpassword.so
-@comment lib/gdm/simple-greeter/extensions/libsmartcard.a
-@comment lib/gdm/simple-greeter/extensions/libsmartcard.la
 lib/gdm/simple-greeter/extensions/libsmartcard.so
-lib/libgdmgreeter.a
 lib/libgdmgreeter.la
 @lib lib/libgdmgreeter.so.${LIBgdmgreeter_VERSION}
-lib/libgdmsimplegreeter.a
 lib/libgdmsimplegreeter.la
 @lib lib/libgdmsimplegreeter.so.${LIBgdmsimplegreeter_VERSION}
 lib/pkgconfig/gdmgreeter.pc
@@ -55,98 +46,97 @@ lib/pkgconfig/gdmsimplegreeter.pc
 sbin/gdm
 @bin sbin/gdm-binary
 share/examples/gdm/
-share/examples/gdm/X11/
-share/examples/gdm/X11/gdm/
-@sample ${SYSCONFDIR}/X11/gdm/
-share/examples/gdm/X11/gdm/Init/
-@sample ${SYSCONFDIR}/X11/gdm/Init/
+share/examples/gdm/etc/
+share/examples/gdm/etc/dbus-1/
+share/examples/gdm/etc/dbus-1/system.d/
+share/examples/gdm/etc/dbus-1/system.d/gdm.conf
+@sample ${SYSCONFDIR}/dbus-1/system.d/gdm.conf
+share/examples/gdm/etc/dconf/
+share/examples/gdm/etc/dconf/db/
+share/examples/gdm/etc/dconf/db/gdm.d/
+@sample ${SYSCONFDIR}/dconf/db/gdm.d/
+share/examples/gdm/etc/dconf/db/gdm.d/00-upstream-settings
+@sample ${SYSCONFDIR}/dconf/db/gdm.d/00-upstream-settings
+share/examples/gdm/etc/dconf/db/gdm.d/locks/
+@sample ${SYSCONFDIR}/dconf/db/gdm.d/locks/
+share/examples/gdm/etc/dconf/db/gdm.d/locks/00-upstream-settings-locks
+@sample ${SYSCONFDIR}/dconf/db/gdm.d/locks/00-upstream-settings-locks
+share/examples/gdm/etc/dconf/profile/
+share/examples/gdm/etc/dconf/profile/gdm
+@sample ${SYSCONFDIR}/dconf/profile/gdm
+share/examples/gdm/etc/gdm/
+@sample ${SYSCONFDIR}/gdm/
+share/examples/gdm/etc/gdm/Init/
+@sample ${SYSCONFDIR}/gdm/Init/
 @mode 555
-share/examples/gdm/X11/gdm/Init/Default
-@sample ${SYSCONFDIR}/X11/gdm/Init/Default
+share/examples/gdm/etc/gdm/Init/Default
+@sample ${SYSCONFDIR}/gdm/Init/Default
 @mode
-share/examples/gdm/X11/gdm/PostLogin/
-@sample ${SYSCONFDIR}/X11/gdm/PostLogin/
+share/examples/gdm/etc/gdm/PostLogin/
+@sample ${SYSCONFDIR}/gdm/PostLogin/
 @mode 555
-share/examples/gdm/X11/gdm/PostLogin/Default.sample
-@sample ${SYSCONFDIR}/X11/gdm/PostLogin/Default.sample
+share/examples/gdm/etc/gdm/PostLogin/Default.sample
+@sample ${SYSCONFDIR}/gdm/PostLogin/Default.sample
 @mode
-share/examples/gdm/X11/gdm/PostSession/
-@sample ${SYSCONFDIR}/X11/gdm/PostSession/
+share/examples/gdm/etc/gdm/PostSession/
+@sample ${SYSCONFDIR}/gdm/PostSession/
 @mode 555
-share/examples/gdm/X11/gdm/PostSession/Default
-@sample ${SYSCONFDIR}/X11/gdm/PostSession/Default
+share/examples/gdm/etc/gdm/PostSession/Default
+@sample ${SYSCONFDIR}/gdm/PostSession/Default
 @mode
-share/examples/gdm/X11/gdm/PreSession/
-@sample ${SYSCONFDIR}/X11/gdm/PreSession/
+share/examples/gdm/etc/gdm/PreSession/
+@sample ${SYSCONFDIR}/gdm/PreSession/
 @mode 555
-share/examples/gdm/X11/gdm/PreSession/Default
-@sample ${SYSCONFDIR}/X11/gdm/PreSession/Default
-share/examples/gdm/X11/gdm/Xsession
-@sample ${SYSCONFDIR}/X11/gdm/Xsession
+share/examples/gdm/etc/gdm/PreSession/Default
+@sample ${SYSCONFDIR}/gdm/PreSession/Default
+share/examples/gdm/etc/gdm/Xsession
+@sample ${SYSCONFDIR}/gdm/Xsession
 @mode
-share/examples/gdm/X11/gdm/custom.conf
-@sample ${SYSCONFDIR}/X11/gdm/custom.conf
-share/examples/gdm/db/
-share/examples/gdm/db/gdm/
+share/examples/gdm/etc/gdm/custom.conf
+@sample ${SYSCONFDIR}/gdm/custom.conf
+share/examples/gdm/etc/gdm/i18n
+@sample ${SYSCONFDIR}/gdm/i18n
+share/examples/gdm/etc/pam.d/
+@mode 0444
+share/examples/gdm/etc/pam.d/gdm-autologin
+@sample ${SYSCONFDIR}/pam.d/gdm-autologin
+share/examples/gdm/etc/pam.d/gdm-password
+@sample ${SYSCONFDIR}/pam.d/gdm-password
+share/examples/gdm/etc/pam.d/gdm-welcome
+@sample ${SYSCONFDIR}/pam.d/gdm-welcome
+@mode
+share/examples/gdm/var/
+share/examples/gdm/var/db/
+share/examples/gdm/var/db/gdm/
 @mode 1770
 @group _gdm
 @sample /var/db/gdm/
 @mode
 @group
-share/examples/gdm/db/gdm/.config/
+share/examples/gdm/var/db/gdm/.config/
 @group _gdm
 @sample /var/db/gdm/.config/
 @group
-share/examples/gdm/db/gdm/.config/dconf/
+share/examples/gdm/var/db/gdm/.config/dconf/
 @owner _gdm
 @group _gdm
 @sample /var/db/gdm/.config/dconf/
 @owner
 @group
-share/examples/gdm/db/gdm/.gconf.mandatory/
-@mode 1750
-@group _gdm
-@sample /var/db/gdm/.gconf.mandatory/
-@mode
-@group
-share/examples/gdm/db/gdm/.gconf.mandatory/%gconf-tree.xml
-@mode 1640
-@group _gdm
-@sample /var/db/gdm/.gconf.mandatory/%gconf-tree.xml
-@mode
-@group
-share/examples/gdm/db/gdm/.gconf.path
-@sample /var/db/gdm/.gconf.path
-share/examples/gdm/db/gdm/.local/
+share/examples/gdm/var/db/gdm/.local/
 @group _gdm
 @sample /var/db/gdm/.local/
 @group
-share/examples/gdm/db/gdm/.local/share/
+share/examples/gdm/var/db/gdm/.local/share/
 @group _gdm
 @sample /var/db/gdm/.local/share/
 @group
-share/examples/gdm/db/gdm/.local/share/applications/
+share/examples/gdm/var/db/gdm/.local/share/applications/
 @owner _gdm
 @group _gdm
 @sample /var/db/gdm/.local/share/applications/
 @owner
 @group
-share/examples/gdm/dbus-1/
-share/examples/gdm/dbus-1/system.d/
-share/examples/gdm/dbus-1/system.d/gdm.conf
-@sample ${SYSCONFDIR}/dbus-1/system.d/gdm.conf
-share/examples/gdm/dconf/
-share/examples/gdm/dconf/db/
-share/examples/gdm/dconf/db/gdm.d/
-@sample ${SYSCONFDIR}/dconf/db/gdm.d/
-share/examples/gdm/dconf/db/gdm.d/00-upstream-settings
-@sample ${SYSCONFDIR}/dconf/db/gdm.d/00-upstream-settings
-share/examples/gdm/dconf/db/gdm.d/locks/
-@sample ${SYSCONFDIR}/dconf/db/gdm.d/locks/
-share/examples/gdm/dconf/db/gdm.d/locks/00-upstream-settings-locks
-share/examples/gdm/dconf/profile/
-share/examples/gdm/dconf/profile/gdm
-@sample ${SYSCONFDIR}/dconf/profile/gdm
 share/gdm/gdb-cmd
 share/gdm/gdm-greeter-login-window.ui
 share/gdm/gdm.schemas
@@ -171,15 +161,14 @@ share/gdm/simple-greeter/extensions/smartcard/page.ui
 share/gdm/simple-greeter/extensions/unified/
 share/gdm/simple-greeter/extensions/unified/page.ui
 share/glib-2.0/schemas/org.gnome.login-screen.gschema.xml
-share/gnome-session/
-share/gnome-session/sessions/
 share/gnome-session/sessions/gdm-fallback.session
 share/gnome-session/sessions/gdm-shell.session
-share/gnome/help/
 share/gnome/help/gdm/
 share/gnome/help/gdm/C/
 share/gnome/help/gdm/C/gdm.xml
 share/gnome/help/gdm/C/legal.xml
+share/gnome/help/gdm/ca/
+share/gnome/help/gdm/ca/gdm.xml
 share/gnome/help/gdm/de/
 share/gnome/help/gdm/de/gdm.xml
 share/gnome/help/gdm/el/
@@ -190,6 +179,8 @@ share/gnome/help/gdm/es/
 share/gnome/help/gdm/es/gdm.xml
 share/gnome/help/gdm/fr/
 share/gnome/help/gdm/fr/gdm.xml
+share/gnome/help/gdm/gl/
+share/gnome/help/gdm/gl/gdm.xml
 share/gnome/help/gdm/id/
 share/gnome/help/gdm/id/gdm.xml
 share/gnome/help/gdm/it/
@@ -204,6 +195,8 @@ share/gnome/help/gdm/sl/
 share/gnome/help/gdm/sl/gdm.xml
 share/gnome/help/gdm/sv/
 share/gnome/help/gdm/sv/gdm.xml
+share/gnome/help/gdm/te/
+share/gnome/help/gdm/te/gdm.xml
 share/gnome/help/gdm/uk/
 share/gnome/help/gdm/uk/gdm.xml
 share/gnome/help/gdm/zh_CN/
@@ -217,8 +210,6 @@ share/icons/hicolor/48x48/apps/gdm-fingerprint.png
 share/icons/hicolor/48x48/apps/gdm-smartcard.png
 share/locale/af/LC_MESSAGES/gdm.mo
 share/locale/am/LC_MESSAGES/gdm.mo
-share/locale/an/
-share/locale/an/LC_MESSAGES/
 share/locale/an/LC_MESSAGES/gdm.mo
 share/locale/ar/LC_MESSAGES/gdm.mo
 share/locale/as/LC_MESSAGES/gdm.mo
@@ -255,8 +246,6 @@ share/locale/fy/LC_MESSAGES/gdm.mo
 share/locale/ga/LC_MESSAGES/gdm.mo
 share/locale/gl/LC_MESSAGES/gdm.mo
 share/locale/gu/LC_MESSAGES/gdm.mo
-share/locale/gv/
-share/locale/gv/LC_MESSAGES/
 share/locale/gv/LC_MESSAGES/gdm.mo
 share/locale/he/LC_MESSAGES/gdm.mo
 share/locale/hi/LC_MESSAGES/gdm.mo
@@ -269,6 +258,7 @@ share/locale/it/LC_MESSAGES/gdm.mo
 share/locale/ja/LC_MESSAGES/gdm.mo
 share/locale/ka/LC_MESSAGES/gdm.mo
 share/locale/kk/LC_MESSAGES/gdm.mo
+share/locale/km/LC_MESSAGES/gdm.mo
 share/locale/kn/LC_MESSAGES/gdm.mo
 share/locale/ko/LC_MESSAGES/gdm.mo
 share/locale/ku/LC_MESSAGES/gdm.mo
@@ -320,14 +310,15 @@ share/locale/zh_CN/LC_MESSAGES/gdm.mo
 share/locale/zh_HK/LC_MESSAGES/gdm.mo
 share/locale/zh_TW/LC_MESSAGES/gdm.mo
 share/locale/zu/LC_MESSAGES/gdm.mo
-share/omf/
 share/omf/gdm/
 share/omf/gdm/gdm-C.omf
+share/omf/gdm/gdm-ca.omf
 share/omf/gdm/gdm-de.omf
 share/omf/gdm/gdm-el.omf
 share/omf/gdm/gdm-en_GB.omf
 share/omf/gdm/gdm-es.omf
 share/omf/gdm/gdm-fr.omf
+share/omf/gdm/gdm-gl.omf
 share/omf/gdm/gdm-id.omf
 share/omf/gdm/gdm-it.omf
 share/omf/gdm/gdm-ko.omf
@@ -335,6 +326,7 @@ share/omf/gdm/gdm-oc.omf
 share/omf/gdm/gdm-ru.omf
 share/omf/gdm/gdm-sl.omf
 share/omf/gdm/gdm-sv.omf
+share/omf/gdm/gdm-te.omf
 share/omf/gdm/gdm-uk.omf
 share/omf/gdm/gdm-zh_CN.omf
 share/pixmaps/gdm-foot-logo.png
@@ -343,10 +335,6 @@ share/pixmaps/gdm-xnest.png
 share/pixmaps/gdm.png
 share/pixmaps/nobody.png
 share/pixmaps/nohost.png
-@unexec GCONF_CONFIG_SOURCE=`%D/bin/gconftool-2 --get-default-source` %D/bin/gconftool-2 --makefile-uninstall-rule %D/${SCHEMAS_INSTDIR}/*.schemas > /dev/null
-${SCHEMAS_INSTDIR}/
-${SCHEMAS_INSTDIR}/gdm-simple-greeter.schemas
-@exec GCONF_CONFIG_SOURCE=`%D/bin/gconftool-2 --get-default-source` %D/bin/gconftool-2 --makefile-install-rule %D/${SCHEMAS_INSTDIR}/*.schemas > /dev/null
 @mode 0755
 @sample /var/log/gdm/
 @mode 1755

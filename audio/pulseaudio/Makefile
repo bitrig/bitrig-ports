@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2012/07/07 11:28:01 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.22 2012/09/01 14:36:56 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -6,7 +6,7 @@ COMMENT=		cross-platform networked sound server
 
 VERSION=		2.0
 DISTNAME=		pulseaudio-${VERSION}
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  pulse                1.1      # .14.2
 SHARED_LIBS +=  pulse-simple         0.0      # .0.3
@@ -90,8 +90,7 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--disable-orc
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib \
-				-Wl,-rpath,${TRUEPREFIX}/lib/pulse-${VERSION}/modules/" \
-			PTHREAD_LIBS="-pthread"
+				-Wl,-rpath,${TRUEPREFIX}/lib/pulse-${VERSION}/modules/"
 
 FAKE_FLAGS=		pulseconfdir="${PREFIX}/share/examples/pulseaudio/pulse/"
 

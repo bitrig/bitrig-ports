@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.569 2012/08/20 18:02:31 bluhm Exp $
+# $OpenBSD: Makefile,v 1.573 2012/09/11 23:50:57 sthen Exp $
 
      SUBDIR =
      SUBDIR += ajaxterm
@@ -58,6 +58,7 @@
      SUBDIR += flyspray
      SUBDIR += gcap
      SUBDIR += gecko-mediaplayer
+     SUBDIR += glpi
      SUBDIR += gnash
      SUBDIR += gtkhtml3
      SUBDIR += gtkhtml4
@@ -139,12 +140,12 @@
      SUBDIR += mono-xsp
      SUBDIR += moodle
      SUBDIR += mozilla-firefox
+     SUBDIR += mozilla-sync
      SUBDIR += mozplugger
      SUBDIR += mycalendar
      SUBDIR += myreview
      SUBDIR += netsurf
      SUBDIR += nginx
-     SUBDIR += nginx,passenger
      SUBDIR += nostromo
      SUBDIR += opera
      SUBDIR += owncloud
@@ -408,6 +409,7 @@
      SUBDIR += py-tempita
      SUBDIR += py-tornado
      SUBDIR += py-turbogears
+     SUBDIR += py-urlgrabber
      SUBDIR += py-weberror
      SUBDIR += py-webhelpers
      SUBDIR += py-webkitgtk

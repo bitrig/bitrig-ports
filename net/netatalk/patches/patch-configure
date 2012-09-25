@@ -1,6 +1,15 @@
 $OpenBSD$
 --- configure.orig	Thu Apr 26 16:27:12 2012
-+++ configure	Mon Jun 25 22:49:45 2012
++++ configure	Mon Sep 24 22:26:59 2012
+@@ -5241,7 +5241,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
 @@ -5756,7 +5756,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
@@ -46,17 +55,6 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -14154,8 +14154,8 @@ for ac_lib in '' pthread; do
-   if test -z "$ac_lib"; then
-     ac_res="none required"
-   else
--    ac_res=-l$ac_lib
--    LIBS="-l$ac_lib  $ac_func_search_save_LIBS"
-+    ac_res=-$ac_lib
-+    LIBS="-$ac_lib  $ac_func_search_save_LIBS"
-   fi
-   if ac_fn_c_try_link "$LINENO"; then :
-   ac_cv_search_pthread_sigmask=$ac_res
 @@ -15761,7 +15761,7 @@ fi
  	for ac_header in rpc/rpc.h rpc/pmap_prot.h rpcsvc/rquota.h
  do :
@@ -66,11 +64,12 @@ $OpenBSD$
  if eval test \"x\$"$as_ac_Header"\" = x"yes"; then :
    cat >>confdefs.h <<_ACEOF
  #define `$as_echo "HAVE_$ac_header" | $as_tr_cpp` 1
-@@ -17239,6 +17239,7 @@ case "$host_os" in
+@@ -17238,7 +17238,7 @@ case "$host_os" in
+ 	*osx*)				this_os=macosx ;;
  	*darwin*)			this_os=macosx ;;
  	*netbsd*) 			this_os=netbsd ;;
- 	*openbsd*) 			this_os=openbsd ;;
-+	*bitrig*)			this_os=bitrig ;;
+-	*openbsd*) 			this_os=openbsd ;;
++	*openbsd* | bitrig*) 		this_os=openbsd ;;
  	*osf*) 				this_os=tru64 ;;
  	*solaris*) 			this_os=solaris ;;
  esac

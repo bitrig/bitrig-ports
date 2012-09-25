@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.8 2012/06/18 07:56:13 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.10 2012/08/30 14:09:21 sthen Exp $
 
 COMMENT=	PHP support for geocoding IPv4 addresses
 
 DISTNAME=	geoip-1.0.7
-REVISION=	4
+REVISION=	6
 
 # PHP
 PERMIT_PACKAGE_CDROM=	Yes

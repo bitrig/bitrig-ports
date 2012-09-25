@@ -1,0 +1,47 @@
+$OpenBSD: patch-libraries_Cabal_Cabal_Distribution_Simple_Setup_hs,v 1.1 2012/09/02 19:53:46 kili Exp $
+--- libraries/Cabal/Cabal/Distribution/Simple/Setup.hs.orig	Wed Feb  1 19:10:49 2012
++++ libraries/Cabal/Cabal/Distribution/Simple/Setup.hs	Sat Jun  9 21:36:25 2012
+@@ -839,6 +839,7 @@ data RegisterFlags = RegisterFlags {
+     regGenPkgConf  :: Flag (Maybe FilePath),
+     regInPlace     :: Flag Bool,
+     regDistPref    :: Flag FilePath,
++    regPkgPath     :: Flag String,
+     regVerbosity   :: Flag Verbosity
+   }
+   deriving Show
+@@ -850,6 +851,7 @@ defaultRegisterFlags = RegisterFlags {
+     regGenPkgConf  = NoFlag,
+     regInPlace     = Flag False,
+     regDistPref    = Flag defaultDistPref,
++    regPkgPath     = Flag "",
+     regVerbosity   = Flag normal
+   }
+ 
+@@ -886,6 +888,11 @@ registerCommand = makeCommand name shortDesc longDesc 
+          "instead of registering, generate a package registration file"
+          regGenPkgConf (\v flags -> flags { regGenPkgConf  = v })
+          (optArg' "PKG" Flag flagToList)
++
++      ,option "" ["pkgpath"]
++	 "set the pkgpath field"
++	 regPkgPath (\v flags -> flags { regPkgPath = v })
++	 (reqArgFlag "PKGPATH")
+       ]
+ 
+ unregisterCommand :: CommandUI RegisterFlags
+@@ -923,6 +930,7 @@ instance Monoid RegisterFlags where
+     regGenPkgConf  = mempty,
+     regInPlace     = mempty,
+     regDistPref    = mempty,
++    regPkgPath     = mempty,
+     regVerbosity   = mempty
+   }
+   mappend a b = RegisterFlags {
+@@ -931,6 +939,7 @@ instance Monoid RegisterFlags where
+     regGenPkgConf  = combine regGenPkgConf,
+     regInPlace     = combine regInPlace,
+     regDistPref    = combine regDistPref,
++    regPkgPath     = combine regPkgPath,
+     regVerbosity   = combine regVerbosity
+   }
+     where combine field = field a `mappend` field b

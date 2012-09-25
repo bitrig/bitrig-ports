@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2012/04/20 13:28:50 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.23 2012/08/23 16:34:10 jasper Exp $
 
 SHARED_ONLY =		Yes
 
@@ -7,7 +7,7 @@ COMMENT =		low latency sound server
 V =			0.121.3
 DISTNAME =		jack-audio-connection-kit-${V}
 PKGNAME =		jack-${V}
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=		jack		0.0	# 0.28
 SHARED_LIBS +=		jackserver	0.0	# 0.28
@@ -50,7 +50,6 @@ CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
 
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib" \
-			LIBS="-pthread" \
 			HAVE_DOXYGEN="false"
 
 .ifdef DEBUG

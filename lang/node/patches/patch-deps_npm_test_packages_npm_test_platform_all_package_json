@@ -1,0 +1,10 @@
+$OpenBSD$
+--- deps/npm/test/packages/npm-test-platform-all/package.json.orig	Tue Sep 25 10:05:41 CEST 2012
++++ deps/npm/test/packages/npm-test-platform-all/package.json	Tue Sep 25 10:05:41 CEST 2012
+@@ -1,5 +1,5 @@
+ {"name":"npm-test-platform-all"
+ ,"version":"9.9.9-9"
+ ,"homepage":"http://www.zombo.com/"
+-,"os":["darwin","linux","win32","solaris","haiku","sunos","freebsd","openbsd","netbsd"]
++,"os":["darwin","linux","win32","solaris","haiku","sunos","freebsd","openbsd","bitrig","netbsd"]
+ ,"cpu":["arm","mips","ia32","x64","sparc"]}

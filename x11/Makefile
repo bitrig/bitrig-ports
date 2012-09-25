@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.496 2012/08/18 07:25:26 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.499 2012/09/04 19:03:36 jasper Exp $
 
      SUBDIR =
      SUBDIR += Xaw3d
@@ -14,7 +14,6 @@
      SUBDIR += astime
      SUBDIR += autocutsel
      SUBDIR += awesome
-     SUBDIR += awn
      SUBDIR += bbdate
      SUBDIR += bbkeys
      SUBDIR += bbpager
@@ -135,7 +134,6 @@
      SUBDIR += kountdown
      SUBDIR += krusader
      SUBDIR += lablgtk2
-     SUBDIR += libdesktop-agnostic
      SUBDIR += libdnd
      SUBDIR += libgdiplus
      SUBDIR += libsexy
@@ -347,7 +345,8 @@
      SUBDIR += xprompt
      SUBDIR += xrestop
      SUBDIR += xrootconsole
-     SUBDIR += xscreensaver,
+     SUBDIR += xruskb
+     SUBDIR += xscreensaver
      SUBDIR += xscribble
      SUBDIR += xsel
      SUBDIR += xsettingsd

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2011/09/16 09:48:10 espie Exp $
+# $OpenBSD: Makefile,v 1.17 2012/09/07 08:12:50 sthen Exp $
 
 SHARED_ONLY =		Yes
 
@@ -8,9 +8,9 @@ COMMENT-server =	server for the frozen-bubble bubble popping game
 VER =			2.2.0
 DISTNAME =		frozen-bubble-${VER}
 PKGNAME-main =		${DISTNAME}
-REVISION-main =		6
+REVISION-main =		7
 PKGNAME-server =	frozen-bubble-server-${VER}
-REVISION-server =	3
+REVISION-server =	4
 CATEGORIES =		games
 
 HOMEPAGE =		http://www.frozen-bubble.org
@@ -26,7 +26,8 @@ MASTER_SITES =		${HOMEPAGE}/data/
 EXTRACT_SUFX =		.tar.bz2
 
 USE_GMAKE =		Yes
-USE_GROFF =		Yes
+
+MAKE_ENV =	LD_PRELOAD=libpthread.so # XXX remove when perl is -lpthread
 
 # No regress tests here
 NO_REGRESS =		Yes
@@ -58,5 +59,13 @@ WANTLIB-main =		${MODGETTEXT_WANTLIB} \
 WANTLIB-server =	${MODGETTEXT_WANTLIB} c glib-2.0
 
 MULTI_PACKAGES =	-main -server
+
+post-configure:
+	${SUBST_CMD} -c ${FILESDIR}/wrapper.sh ${WRKDIR}/wrapper.sh
+
+post-install:
+	mv ${PREFIX}/bin/frozen-bubble* ${PREFIX}/libexec/frozen-bubble/
+	${INSTALL_SCRIPT} ${WRKDIR}/wrapper.sh ${PREFIX}/bin/frozen-bubble
+	${INSTALL_SCRIPT} ${WRKDIR}/wrapper.sh ${PREFIX}/bin/frozen-bubble-editor
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.36 2012/04/23 17:15:18 espie Exp $
+# $OpenBSD: Makefile,v 1.38 2012/09/01 14:36:58 ajacoutot Exp $
 
 COMMENT=	flexible communications framework, logger component
 
 DISTNAME=	telepathy-logger-0.4.0
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS +=  telepathy-logger     3.1      # 4.1
 SHARED_LIBS +=  tpl-extensions       0.0      # 2.0
@@ -32,7 +32,6 @@ LIB_DEPENDS=	net/telepathy/telepathy-glib \
 MODGCONF2_SCHEMAS_DIR=	telepathy-logger
 MODPY_RUNDEP=		No
 
-CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--disable-call \
 			--enable-public-extensions
 

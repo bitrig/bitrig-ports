@@ -1,0 +1,12 @@
+$OpenBSD$
+--- deps/openssl/openssl/crypto/uid.c.orig	Tue Sep 25 10:53:09 CEST 2012
++++ deps/openssl/openssl/crypto/uid.c	Tue Sep 25 10:53:09 CEST 2012
+@@ -56,7 +56,7 @@
+ #include <openssl/crypto.h>
+ #include <openssl/opensslconf.h>
+ 
+-#if defined(__OpenBSD__) || (defined(__FreeBSD__) && __FreeBSD__ > 2)
++#if defined(__OpenBSD__) || defined(__Bitrig__) ||  (defined(__FreeBSD__) && __FreeBSD__ > 2)
+ 
+ #include OPENSSL_UNISTD
+ 

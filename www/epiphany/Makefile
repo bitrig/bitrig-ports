@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.80 2012/08/14 08:10:53 jasper Exp $
+# $OpenBSD: Makefile,v 1.82 2012/09/07 06:00:27 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -11,6 +11,7 @@ COMMENT=	GNOME web browser based on webkit
 
 GNOME_PROJECT=	epiphany
 GNOME_VERSION=	3.4.3
+REVISION=	1
 
 # NOTE: when M changes, increment M accordingly and bump:
 # www/epiphany-extensions
@@ -53,7 +54,8 @@ LIB_DEPENDS=	textproc/libxslt \
 		devel/libexecinfo \
 		devel/libnotify \
 		devel/libsoup,-gnome \
-		www/webkit,gtk3>=1.8.2v0 \
+		net/avahi \
+		www/webkit,gtk3 \
 		x11/gnome/seed
 
 MODULES=	devel/dconf \

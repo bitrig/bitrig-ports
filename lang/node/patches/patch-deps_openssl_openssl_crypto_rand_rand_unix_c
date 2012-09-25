@@ -1,0 +1,30 @@
+$OpenBSD$
+--- deps/openssl/openssl/crypto/rand/rand_unix.c.orig	Tue Sep 25 10:52:38 CEST 2012
++++ deps/openssl/openssl/crypto/rand/rand_unix.c	Tue Sep 25 10:52:38 CEST 2012
+@@ -216,7 +216,7 @@ int RAND_poll(void)
+ 	}
+ 	return 1;
+ }
+-#elif defined __OpenBSD__
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
+ int RAND_poll(void)
+ {
+ 	u_int32_t rnd = 0, i;
+@@ -233,7 +233,7 @@ int RAND_poll(void)
+ 
+ 	return 1;
+ }
+-#else /* !defined(__OpenBSD__) */
++#else /* !defined(__OpenBSD__) && !defined(__Bitrig__) */
+ int RAND_poll(void)
+ {
+ 	unsigned long l;
+@@ -419,7 +419,7 @@ int RAND_poll(void)
+ #endif
+ }
+ 
+-#endif /* defined(__OpenBSD__) */
++#endif /* defined(__OpenBSD__) || defined(__Bitrig__) */
+ #endif /* !(defined(OPENSSL_SYS_WINDOWS) || defined(OPENSSL_SYS_WIN32) || defined(OPENSSL_SYS_VMS) || defined(OPENSSL_SYS_OS2) || defined(OPENSSL_SYS_VXWORKS) || defined(OPENSSL_SYS_NETWARE)) */
+ 
+ 

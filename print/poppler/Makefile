@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.63 2012/07/13 15:03:19 kili Exp $
+# $OpenBSD: Makefile,v 1.66 2012/09/02 15:21:17 kili Exp $
 
 COMMENT-main=	PDF rendering library
 COMMENT-qt=	qt interface to PDF rendering library
 COMMENT-qt4=	qt4 interface to PDF rendering library
 COMMENT-utils=	PDF conversion tools and utilities
 
-V=		0.20.2
+V=		0.20.3
 DISTNAME=	poppler-$V
 CATEGORIES=	print
 PKGNAME-main=	poppler-$V
@@ -14,7 +14,7 @@ PKGNAME-qt=	poppler-qt-$V
 PKGNAME-qt4=	poppler-qt4-$V
 OLDSHIT = poppler-0.16.7
 
-SHARED_LIBS +=	poppler              12.0
+SHARED_LIBS +=	poppler              13.0
 SHARED_LIBS +=  poppler-cpp          2.0
 SHARED_LIBS +=	poppler-glib         10.0
 SHARED_LIBS +=	poppler-qt           9.0
@@ -33,8 +33,9 @@ PERMIT_DISTFILES_CDROM=	Yes
 
 MASTER_SITES=	${HOMEPAGE}
 
-PSEUDO_FLAVORS=no_qt no_qt4
-FLAVOR?=
+PSEUDO_FLAVORS=no_qt no_qt4 bootstrap
+# XXX not strictly a bootstrap loop, but on the critical path for libreoffice
+FLAVOR?=no_qt no_qt4 bootstrap
 
 NOT_FOR_ARCHS-qt4 = arm
 

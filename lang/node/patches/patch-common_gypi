@@ -1,12 +1,12 @@
 $OpenBSD$
---- common.gypi.orig	Sun Jul  8 00:15:17 2012
-+++ common.gypi	Wed Jul 18 10:53:23 2012
-@@ -149,7 +149,7 @@
-             'cflags': [ '-m64' ],
-             'ldflags': [ '-m64' ],
-           }],
--          [ 'OS=="linux"', {
-+          [ 'OS=="linux" or OS=="openbsd" or OS=="bitrig"', {
-             'ldflags': [ '-rdynamic' ],
-           }],
-           [ 'OS=="solaris"', {
+--- common.gypi.orig	Tue Sep 25 10:59:32 CEST 2012
++++ common.gypi	Tue Sep 25 10:59:32 CEST 2012
+@@ -160,7 +160,7 @@
+           '_FILE_OFFSET_BITS=64',
+         ],
+       }],
+-      [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris"', {
++      [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or OS=="solaris"', {
+         'cflags': [ '-Wall', '-pthread', ],
+         'cflags_cc': [ '-fno-rtti', '-fno-exceptions' ],
+         'ldflags': [ '-pthread', '-rdynamic' ],

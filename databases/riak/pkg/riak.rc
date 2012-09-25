@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# $OpenBSD: riak.rc,v 1.2 2012/08/28 05:46:41 ajacoutot Exp $
+
+daemon="${TRUEPREFIX}/sbin/riak"
+daemon_user="_riak"
+
+. /etc/rc.d/rc.subr
+
+rc_reload=NO
+rc_usercheck=NO
+
+rc_check() {
+	${rcexec} "${daemon} ping"
+}
+
+rc_start() {
+	${rcexec} "${daemon} start"
+}
+
+rc_stop() {
+	${rcexec} "${daemon} stop"
+}
+
+rc_cmd $1

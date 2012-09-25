@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2012/05/08 03:00:41 okan Exp $
+# $OpenBSD: Makefile,v 1.25 2012/09/11 20:42:21 landry Exp $
 
 BROKEN-hppa=		linking .libs/python-libpst.o fails
 
@@ -11,7 +11,8 @@ SHARED_LIBS +=  pst                  2.0      # .4.1
 PKGNAME-main=		${DISTNAME}
 PKGNAME-python=		py-${DISTNAME}
 
-REVISION-main=		0
+REVISION-main=		1
+REVISION-python=	0
 
 CATEGORIES=		converters mail
 
@@ -63,11 +64,9 @@ CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include -I${MODPY_INCDIR}" \
 			PYTHON_LDFLAGS="-L${LOCALBASE}/lib -lpython${MODPY_VERSION} -lm" \
 			PYTHON_BIN="python${MODPY_VERSION}"
 
-CFLAGS+=		-pthread
-
 # XXX eats all memory
 .if ${MACHINE_ARCH} == "sparc64" || ${MACHINE_ARCH} == "hppa"
-CFLAGS+=        -O0
+CFLAGS+=	-O0
 .endif
 
 FAKE_FLAGS+=		htmldir="${PREFIX}/share/doc/libpst/" \

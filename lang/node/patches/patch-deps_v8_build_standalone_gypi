@@ -1,0 +1,39 @@
+$OpenBSD$
+--- deps/v8/build/standalone.gypi.orig	Tue Sep 25 10:18:25 CEST 2012
++++ deps/v8/build/standalone.gypi	Tue Sep 25 10:18:25 CEST 2012
+@@ -37,7 +37,7 @@
+       'variables': {
+         'variables': {
+           'conditions': [
+-            ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or \
++            ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or \
+                OS=="netbsd" or OS=="mac"', {
+               # This handles the Unix platforms we generally deal with.
+               # Anything else gets passed through, which probably won't work
+@@ -47,7 +47,7 @@
+                 '<!(uname -m | sed -e "s/i.86/ia32/;\
+                   s/x86_64/x64/;s/amd64/x64/;s/arm.*/arm/;s/mips.*/mips/")',
+             }, {
+-              # OS!="linux" and OS!="freebsd" and OS!="openbsd" and
++              # OS!="linux" and OS!="freebsd" and OS!="openbsd" and OS!="bitrig" and
+               # OS!="netbsd" and OS!="mac"
+               'host_arch%': 'ia32',
+             }],
+@@ -87,7 +87,7 @@
+     },
+   },
+   'conditions': [
+-    ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris" \
++    ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or OS=="solaris" \
+        or OS=="netbsd"', {
+       'target_defaults': {
+         'cflags': [ '-Wall', '<(werror)', '-W', '-Wno-unused-parameter',
+@@ -107,7 +107,7 @@
+         ],
+       },
+     }],
+-    # 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris"
++    # 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or OS=="solaris"
+     #  or OS=="netbsd"'
+     ['OS=="win"', {
+       'target_defaults': {

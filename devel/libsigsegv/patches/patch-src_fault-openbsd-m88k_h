@@ -1,0 +1,9 @@
+$OpenBSD: patch-src_fault-openbsd-m88k_h,v 1.2 2012/09/06 06:29:05 jasper Exp $
+--- src/fault-openbsd-m88k.h.orig	Wed Sep  5 18:54:11 2012
++++ src/fault-openbsd-m88k.h	Wed Sep  5 18:54:52 2012
+@@ -22,4 +22,4 @@
+    and the definition of 'struct reg' in
+    openbsd-src/sys/arch/m88k/include/reg.h.  */
+ 
+-#define SIGSEGV_FAULT_STACKPOINTER  scp->sc_regs.r[31]
++#define SIGSEGV_FAULT_STACKPOINTER  scp->sc_regs[31]

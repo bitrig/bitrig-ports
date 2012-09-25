@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.13 2012/08/11 23:02:23 pascal Exp $
+# $OpenBSD: Makefile,v 1.15 2012/08/30 20:54:59 pascal Exp $
 
 # not yet ported to other arches
 ONLY_FOR_ARCHS =	amd64 i386 powerpc
 
 COMMENT=		compiler and runtime system for ANSI Common Lisp
 
-V =			1.0.54
+V =			1.0.58
 DISTNAME=		sbcl-${V}-source
 PKGNAME=		sbcl-${V}
 WRKDIST=		${WRKDIR}/sbcl-${V}
@@ -24,8 +24,6 @@ PERMIT_DISTFILES_FTP=	Yes
 WANTLIB=		c m util
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sbcl/}
-DISTFILES =		${DISTNAME}${EXTRACT_SUFX} \
-			sbcl-${V}-documentation-html${EXTRACT_SUFX}
 
 PSEUDO_FLAVORS=		native_bootstrap
 FLAVOR?=
@@ -53,7 +51,7 @@ USE_GMAKE=		Yes
 PORTHOME=		${TMPDIR}
 MAKE_ENV=		GNUMAKE=${GMAKE} INSTALL_ROOT=${PREFIX} \
 			MAN_DIR=${PREFIX}/man INFO_DIR=${PREFIX}/info \
-			LINKFLAGS="-fno-pie"
+			LINKFLAGS="-nopie" LDFLAGS="-nopie"
 CFLAGS +=		-fno-pie
 
 # Upstream asks that packagers append something like this to the
@@ -74,7 +72,7 @@ do-build:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} /bin/sh make.sh \
 		--prefix=${PREFIX} --xc-host="${BOOTSTRAP_CMD}"
 	cd ${WRKSRC}/doc/manual && touch sbcl.texinfo && \
-		${SETENV} ${MAKE_ENV} ${GMAKE} asdf.info sbcl.info
+		${SETENV} ${MAKE_ENV} ${GMAKE} asdf.info sbcl.info html
 
 do-install:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} /bin/sh install.sh

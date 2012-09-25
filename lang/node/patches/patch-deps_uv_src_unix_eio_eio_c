@@ -1,0 +1,12 @@
+$OpenBSD$
+--- deps/uv/src/unix/eio/eio.c.orig	Tue Sep 25 10:42:13 CEST 2012
++++ deps/uv/src/unix/eio/eio.c	Tue Sep 25 10:42:13 CEST 2012
+@@ -278,7 +278,7 @@ static int gettimeofday(struct timeval *tv, struct tim
+   #define D_NAME(entp) entp->d_name
+ 
+   /* POSIX_SOURCE is useless on bsd's, and XOPEN_SOURCE is unreliable there, too */
+-  #if __FreeBSD__ || defined __NetBSD__ || defined __OpenBSD__
++  #if __FreeBSD__ || defined __NetBSD__ || defined __OpenBSD__ || defined __Bitrig__
+     #define _DIRENT_HAVE_D_TYPE /* sigh */
+     #define D_INO(de) (de)->d_fileno
+     #define D_NAMLEN(de) (de)->d_namlen

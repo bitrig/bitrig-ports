@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.70 2012/08/18 12:41:37 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.72 2012/09/04 19:05:45 jasper Exp $
 
 PKGPATH =
 MIRROR_MK ?= ${.CURDIR}/distfiles/Makefile
@@ -57,11 +57,9 @@ SUBDIR += misc
 SUBDIR += multimedia
 SUBDIR += net
 SUBDIR += news
-SUBDIR += palm
 SUBDIR += plan9
 SUBDIR += print
 SUBDIR += productivity
-SUBDIR += russian
 SUBDIR += security
 SUBDIR += shells
 SUBDIR += sysutils

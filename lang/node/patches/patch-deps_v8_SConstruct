@@ -1,6 +1,6 @@
 $OpenBSD$
---- deps/v8/SConstruct.orig	Sun Jul  8 00:15:17 2012
-+++ deps/v8/SConstruct	Wed Jul 18 10:57:43 2012
+--- deps/v8/SConstruct.orig	Tue Sep 25 10:16:50 CEST 2012
++++ deps/v8/SConstruct	Tue Sep 25 10:16:50 CEST 2012
 @@ -95,7 +95,7 @@ LIBRARY_FLAGS = {
        'CPPDEFINES':   ['ENABLE_DISASSEMBLER', 'DEBUG'],
      },
@@ -73,7 +73,7 @@ $OpenBSD$
    },
    'os': {
 -    'values': ['freebsd', 'linux', 'macos', 'win32', 'openbsd', 'solaris', 'cygwin', 'netbsd'],
-+    'values': ['freebsd', 'linux', 'macos', 'win32', 'openbsd', 'bitrig', 'solaris', 'cygwin', 'netbsd'],
++    'values': ['freebsd', 'linux', 'macos', 'win32', 'openbsd', bitrig', 'solaris', 'cygwin', 'netbsd'],
      'guess': GuessOS,
      'help': 'the os to build for'
    },

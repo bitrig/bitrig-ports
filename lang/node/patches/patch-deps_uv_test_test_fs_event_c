@@ -1,0 +1,12 @@
+$OpenBSD$
+--- deps/uv/test/test-fs-event.c.orig	Tue Sep 25 10:39:30 CEST 2012
++++ deps/uv/test/test-fs-event.c	Tue Sep 25 10:39:30 CEST 2012
+@@ -26,7 +26,7 @@
+ #include <fcntl.h>
+ 
+ #ifndef HAVE_KQUEUE
+-# if __APPLE__ || __FreeBSD__ || __OpenBSD__ || __NetBSD__
++# if __APPLE__ || __FreeBSD__ || __OpenBSD__ || __Bitrig__ || __NetBSD__
+ #  define HAVE_KQUEUE 1
+ # endif
+ #endif

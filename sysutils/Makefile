@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.266 2012/08/18 07:25:26 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.269 2012/09/05 15:07:18 jasper Exp $
 
      SUBDIR =
      SUBDIR += LPRng
@@ -45,6 +45,7 @@
      SUBDIR += dmassage
      SUBDIR += dmidecode
      SUBDIR += downtimed
+     SUBDIR += dsh
      SUBDIR += dtpstree
      SUBDIR += duplicity
      SUBDIR += dvd+rw-tools
@@ -82,6 +83,7 @@
      SUBDIR += libretto-config
      SUBDIR += librelp
      SUBDIR += libstatgrab
+     SUBDIR += libvirt
      SUBDIR += logfmon
      SUBDIR += login_fingerprint
      SUBDIR += login_ldap
@@ -127,6 +129,7 @@
      SUBDIR += p5-Schedule-At
      SUBDIR += p5-Set-Crontab
      SUBDIR += p5-Sys-Syscall
+     SUBDIR += p5-Sys-Virt
      SUBDIR += p5-UPS-Nut
      SUBDIR += p5-Unix-PID
      SUBDIR += p5-Unix-Statgrab
