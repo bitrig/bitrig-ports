@@ -34,6 +34,17 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED}
 FLAVORS=	optimized
 FLAVOR?=
 
+# kcthread.cc/SpinLock uses a void* pointer to embed several kinds
+# of locks depending of the platform. If __sync_bool_compare_and_swap 
+# is avaliable it uses __sync_bool_compare_and_swap(&opq_,0, 1) as a
+# lock mechanism. This won't compile in clang++ (but compiles on gcc)
+# because the last elements are int and &opq_ is void**. Casting the
+# argumets to void* makes clang accept the program but the backend
+# crash
+# (http://lists.cs.uiuc.edu/pipermail/llvmbugs/2012-February/022080.html).
+CC=gcc
+CXX=${CC}
+
 .if ${FLAVOR:Moptimized}
 CONFIGURE_ARGS += --enable-opt
 .else
