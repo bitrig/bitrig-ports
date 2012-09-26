@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.134 2012/08/19 15:50:25 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.139 2012/09/05 08:07:24 ajacoutot Exp $
 
 COMMENT-main=	MS Exchange groupware suite replacement
 COMMENT-web=	zarafa webaccess frontend and MAPI extensions for PHP
@@ -7,22 +7,24 @@ PKGNAME=	zarafa-${V}
 PKGNAME-main=	zarafa-${V}
 PKGNAME-web=	zarafa-webaccess-${V}
 
-REVISION-main=	5
-REVISION-web=	2
+REVISION-main=	1
+REVISION-web=	0
 
 CATEGORIES=	mail www productivity
 
-SHARED_LIBS +=  mapi                 2.0      # 0.0
-SHARED_LIBS +=  zarafaclient         2.0      # 0.0
-SHARED_LIBS +=  icalmapi             2.0      # 1.0
-SHARED_LIBS +=  inetmapi             2.0      # 1.0
-SHARED_LIBS +=  archiver             1.0      # 0.0
-SHARED_LIBS +=  common_util          2.0      # 1.0
-SHARED_LIBS +=  common_mapi          2.0      # 1.0
-SHARED_LIBS +=  common_ssl           2.0      # 1.0
-SHARED_LIBS +=  freebusy             2.0      # 1.0
-SHARED_LIBS +=  zarafasync           2.0      # 1.0
-SHARED_LIBS +=  zarafacontacts       0.0      # 0.0
+SHARED_LIBS +=  common_util          2.0      # .0.0
+SHARED_LIBS +=  common_mapi          2.0      # .0.0
+SHARED_LIBS +=  common_ssl           2.0      # .0.0
+SHARED_LIBS +=  common_service       2.0      # .0.0
+SHARED_LIBS +=  freebusy             2.0      # .0.0
+SHARED_LIBS +=  mapi                 2.0      # .0.0
+SHARED_LIBS +=  zarafasync           2.0      # .0.0
+SHARED_LIBS +=  zarafaclient         2.0      # .0.0
+SHARED_LIBS +=  zarafacontacts       0.0      # .0.0
+SHARED_LIBS +=  icalmapi             2.0      # .1.0
+SHARED_LIBS +=  inetmapi             2.0      # .1.0
+SHARED_LIBS +=  archiver             1.0      # .0.0
+SHARED_LIBS +=  archiver-core        0.0      # .0.0
 
 MULTI_PACKAGES=	-main -web
 
@@ -34,58 +36,58 @@ MODPHP_DO_SAMPLE=mapi
 MESSAGE-main=	# empty
 UNMESSAGE-main=	# empty
 
-BUILD_DEPENDS=	textproc/xmlto \
-		net/curl \
-		devel/boost \
-		textproc/clucene
+BUILD_DEPENDS=	textproc/xmlto
+
+# libcurl is searched by configure but unused
+BUILD_DEPENDS += net/curl
 
 WANTLIB += ${MODGETTEXT_WANTLIB}
-WANTLIB += m pthread stdc++ z vmime
-WANTLIB += execinfo icudata icui18n icuuc uuid
+WANTLIB += m pthread stdc++ z vmime execinfo icudata icui18n icuuc uuid
+WANTLIB += boost_filesystem-mt boost_system-mt
 
 WANTLIB-main += ${WANTLIB} ${MODPY_WANTLIB}
-WANTLIB-main += asn1 boost_filesystem-mt boost_system-mt c com_err
-WANTLIB-main += crypto gssapi ical icalss krb5 lber ldap mysqlclient
-WANTLIB-main += ncursesw sasl2 ssl util uuid xml2
+WANTLIB-main += asn1 c com_err crypto gssapi ical icalss krb5 lber-2.4 ldap-2.4
+WANTLIB-main += mysqlclient ncursesw sasl2 ssl util uuid xml2 kyotocabinet
+WANTLIB-main += clucene-core clucene-shared
 
 RUN_DEPENDS-main=${MODGETTEXT_RUN_DEPENDS} \
 		${MODPY_RUN_DEPENDS} \
 		textproc/catdoc
 LIB_DEPENDS-main= ${MODGETTEXT_LIB_DEPENDS} \
-		textproc/libxml \
+		databases/kyotocabinet \
 		databases/mysql \
 		databases/openldap \
-		devel/uuid \
+		devel/boost \
 		devel/libexecinfo \
 		devel/libvmime>=0.9.2p1 \
-		textproc/libical \
+		devel/uuid \
+		textproc/clucene>=2.3.3.4 \
 		textproc/icu4c \
-		devel/boost
+		textproc/libical \
+		textproc/libxml
 
 WANTLIB-web += ${WANTLIB}
-WANTLIB-web += boost_filesystem-mt boost_system-mt common_mapi common_util
-WANTLIB-web += freebusy ical icalmapi icalss inetmapi mapi
+WANTLIB-web += common_util freebusy ical icalmapi icalss inetmapi mapi
+WANTLIB-web += common_mapi
 
-LIB_DEPENDS-web= ${BASE_PKGPATH}>=7.0.0
+LIB_DEPENDS-web= ${BASE_PKGPATH}>=${V}
 RUN_DEPENDS-web= ${MODPHP_RUN_DEPENDS} \
 		${MODGETTEXT_RUN_DEPENDS}
 
-# XXX  ../../common/.libs/libcommon_mapi.so.1.0: undefined reference to
-# `MAPILogonEx', `zarafa_dcgettext_wide' (and more)
-# see patch-provider_server_Makefile_in
-#     patch-ECtools_zarafa-cfgchecker_Makefile_in
-#     patch-ECtools_zarafa-cfgchecker_Makefile_in
-USE_LIBTOOL=	gnu
+USE_LIBTOOL=	yes
+USE_GMAKE=	Yes
+USE_GROFF=	Yes
+
+CC=		cc
+CXX=		${CC}
+
 LIBTOOL_FLAGS=	--tag=disable-static
 
-USE_GMAKE=	Yes
-USE_GROFF =	Yes
-
-CC =		cc
-CXX =		${CC}
-
 MODPY_ADJ_FILES=tools/python-scripts/optimize-imap.py \
-		installer/linux/zarafa7-upgrade
+		tools/python-scripts/update-resource-recipients \
+		installer/linux/zarafa7-upgrade \
+		ECtools/zarafa-utils/zarafa-mailbox-permissions \
+		ECtools/zarafa-utils/zarafa-set-oof
 
 WEBROOT=	/var/www
 
@@ -106,15 +108,15 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include \
 		ac_cv_lib_pam_pam_start=no
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--disable-static \
-		--disable-perl \
 		--with-mapi-configdir=${SYSCONFDIR}/mapi \
 		--with-userscript-prefix=${SYSCONFDIR}/zarafa/userscripts \
 		--with-quotatemplate-prefix=${SYSCONFDIR}/zarafa/quotamail \
-		--enable-dependency-tracking \
+		--with-searchscripts-prefix=${SYSCONFDIR}/zarafa/searchscripts \
 		--enable-release \
 		--enable-oss \
 		--enable-unicode \
 		--enable-python \
+		--enable-icu \
 		--with-distro=openbsd \
 		--with-vmime-prefix=${LOCALBASE}/include \
 		--with-ical-prefix=${LOCALBASE}/include \
@@ -126,10 +128,15 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 # XXX in-tree heimdal does not provide krb5_free_unparsed_name()
 CONFIGURE_ARGS+= --with-krb5-config=/usr/bin/true
 
+# force build with clucene >= 2.x
+CONFIGURE_ENV +=ac_cv_lib_clucene__ZN6lucene5index11IndexReader4openEPKc=yes
+MAKE_FLAGS +=	CLUCENE_CFLAGS="$$(pkg-config --cflags libclucene-core)" \
+		CLUCENE_LIBS="$$(pkg-config --libs libclucene-core)"
+
 FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples \
 		USERSCRIPTDIR=${PREFIX}/share/examples/zarafa/userscripts \
 		QUOTATEMPLATEDIR=${PREFIX}/share/examples/zarafa/quotamail \
-		INDEXERSCRIPTSDIR=${PREFIX}/share/examples/zarafa/indexerscripts \
+		SEARCHSCRIPTSDIR=${PREFIX}/share/examples/zarafa/searchscripts \
 		MAPICONFIGDIR=${PREFIX}/share/examples/zarafa/mapi
 
 SUB_SCRIPTS=	createcompany.d/00createpublic groups_common.sh \
@@ -151,8 +158,7 @@ pre-configure:
 	for i in ${SUB_SCRIPTS}; do \
 		${SUBST_CMD} ${WRKSRC}/installer/userscripts/$$i; done
 	${SUBST_CMD} ${WRKSRC}/php-ext/Makefile.in \
-		${WRKSRC}/spooler/DAgent.cpp \
-		${WRKSRC}/installer/linux/zarafa-client-update.cron
+		${WRKSRC}/spooler/{DAgent,Spooler}.cpp
 	perl -pi -e 's,/usr/share/zarafa,${PREFIX}/share/examples/zarafa,g;' \
 		-e 's,/etc/zarafa,${SYSCONFDIR}/zarafa,g;' \
 		-e 's,/usr/bin,${PREFIX}/bin,g;' \
@@ -160,7 +166,7 @@ pre-configure:
 		-e 's,ssl-certificate.sh,ssl-certificates.sh,g' \
 		${WRKSRC}/doc/manual.xml
 	perl -pi -e 's,/bin/bash,/bin/sh,g' \
-		${WRKSRC}/installer/indexerscripts/{attachments_parser,zmktemp}
+		${WRKSRC}/installer/searchscripts/{attachments_parser,zmktemp}
 
 post-install:
 	${INSTALL_DATA_DIR} ${WRKINST}${INSTDIR}
@@ -199,8 +205,7 @@ post-install:
 	mv ${PREFIX}/share/examples/zarafa/zarafa.ini \
 		${PREFIX}/share/examples/php-${MODPHP_VERSION}/${MODPHP_DO_SAMPLE}.ini
 	mv ${PREFIX}/share/php ${WRKINST}${PREFIX-web}/include/php
-	mv ${PREFIX}/share/examples/cron.daily/zarafa-client-update \
-		${PREFIX}/share/examples/zarafa/
+	rm ${PREFIX}/share/examples/cron.daily/zarafa-client-update
 	rm ${PREFIX}/share/examples/zarafa/unix.cfg
 	rm ${PREFIX}/share/doc/zarafa/ssl-certificates.sh
 	rmdir ${PREFIX}/share/doc/{zarafa/example-config,zarafa-gateway}
@@ -217,12 +222,20 @@ post-install:
 		man/man1/zarafa-report.1 \
 		man/man1/za-aclsync.1 \
 		man/man1/zarafa-msr.1 \
+		man/man5/zarafa-ldapms.cfg.5 \
 		man/man5/zarafa-msr.cfg.5 \
 		man/man5/zarafa-backup.cfg.5
 	rmdir ${PREFIX}/share/examples/zarafa/report-ca
+	rmdir ${WRKINST}/var/lib/zarafa/{dagent,spooler}/plugins
+	rmdir ${WRKINST}/var/lib/zarafa/{dagent,spooler}
 	rmdir ${WRKINST}/var/lib/zarafa/report
 	rmdir ${WRKINST}/var/lib/zarafa/
 	rmdir ${WRKINST}/var/lib/
+
+	${MODPY_BIN} ${MODPY_LIBDIR}/compileall.py \
+		${PREFIX}/share/zarafa-dagent/python \
+		${PREFIX}/share/zarafa-spooler/python \
+		${PREFIX}/lib/python${MODPY_VERSION}/site-packages
 
 	chown -R ${SHAREOWN}:${SHAREGRP} ${WRKINST}${INSTDIR}
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/doc/zarafa

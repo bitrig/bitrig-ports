@@ -1,7 +1,7 @@
-$OpenBSD$
---- provider/server/ECServer.cpp.orig	Mon Jun 18 18:55:31 2012
-+++ provider/server/ECServer.cpp	Fri Jun 29 21:43:08 2012
-@@ -86,6 +86,14 @@
+$OpenBSD: patch-provider_server_ECServer_cpp,v 1.23 2012/08/30 14:28:22 ajacoutot Exp $
+--- provider/server/ECServer.cpp.orig	Mon Aug 27 09:41:44 2012
++++ provider/server/ECServer.cpp	Mon Aug 27 09:42:43 2012
+@@ -87,6 +87,10 @@
  #include "unicode/uclean.h"
  #endif
  
@@ -9,32 +9,28 @@ $OpenBSD$
 +#include <sys/resource.h>
 +#endif
 +
-+#ifdef __Bitrig__
-+#include <sys/resource.h>
-+#endif
-+
  #ifdef _DEBUG
  #define new DEBUG_NEW
  #undef THIS_FILE
-@@ -830,7 +838,7 @@ int running_server(char *szName, const char *szConfig)
+@@ -897,7 +901,7 @@ int running_server(char *szName, const char *szConfig)
  		{ "mysql_config_file",			"/etc/zarafa/my.cnf" },
  #endif
  		{ "attachment_storage",			"database" },
--		{ "attachment_path",			"/var/lib/zarafa" },
-+		{ "attachment_path",			"/var/db/zarafa" },
+-		{ "attachment_path",			"/var/lib/zarafa/attachments" },
++		{ "attachment_path",			"/var/db/zarafa/attachments" },
  		{ "attachment_compression",		"6" },
  
  		// Log options
-@@ -902,7 +910,7 @@ int running_server(char *szName, const char *szConfig)
+@@ -970,7 +974,7 @@ int running_server(char *szName, const char *szConfig)
  
  		{ "client_update_enabled",	"no" },
  		{ "client_update_log_level", "1", CONFIGSETTING_RELOADABLE },
 -		{ "client_update_path",		"/var/lib/zarafa/client", CONFIGSETTING_RELOADABLE },
 +		{ "client_update_path",		"/var/db/zarafa/client", CONFIGSETTING_RELOADABLE },
  		{ "client_update_log_path",	"/var/log/zarafa/autoupdate", CONFIGSETTING_RELOADABLE },
-         { "index_services_enabled", "no", CONFIGSETTING_RELOADABLE }, 
-         { "index_services_path",    "file:///var/run/zarafa-indexer", CONFIGSETTING_RELOADABLE },        
-@@ -925,10 +933,14 @@ int running_server(char *szName, const char *szConfig)
+ 		{ "index_services_enabled", "", CONFIGSETTING_UNUSED },
+ 		{ "index_services_path",    "", CONFIGSETTING_UNUSED },
+@@ -999,10 +1003,14 @@ int running_server(char *szName, const char *szConfig)
  		{ NULL, NULL },
  	};
  
@@ -43,7 +39,7 @@ $OpenBSD$
  	confstr(_CS_GNU_LIBPTHREAD_VERSION, buffer, sizeof(buffer));
  	if (strncmp(buffer, "linuxthreads", strlen("linuxthreads")) == 0)
  		m_bNPTL = false;
-+#elif defined(__OpenBSD__) || defined(__Bitrig__)
++#elif defined(__OpenBSD__)
 +	m_bNPTL = true;
 +#endif
  

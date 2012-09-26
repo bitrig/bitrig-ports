@@ -1,11 +1,11 @@
-$OpenBSD$
---- common/platform.linux.h.orig	Mon Jun 18 18:55:29 2012
-+++ common/platform.linux.h	Fri Jun 29 22:28:03 2012
+$OpenBSD: patch-common_platform_linux_h,v 1.13 2012/08/30 14:28:22 ajacoutot Exp $
+--- common/platform.linux.h.orig	Wed Aug  8 17:14:57 2012
++++ common/platform.linux.h	Wed Aug 29 10:16:58 2012
 @@ -63,8 +63,16 @@
  #include <dlfcn.h>
  #include <stddef.h>
  #include <libgen.h>
-+#if defined(__OpenBSD__) || defined(__Bitrig__)
++#if defined(__OpenBSD__)
 +#include <sys/endian.h>
 +#include <sys/param.h>
 +#ifndef MAX_PATH
@@ -16,33 +16,38 @@ $OpenBSD$
  #include <endian.h>
 +#endif
  #include <errno.h>
+ #include <locale.h>
  
- #include <string>
-@@ -663,7 +671,13 @@ time_t GetProcessTime();
+@@ -99,6 +107,8 @@
+ #define _snprintf snprintf
+ #ifdef HAVE_VSNPRINTF_L
+ #define _vsnprintf_l vsnprintf_l
++#elif defined __OpenBSD__
++#define _vsnprintf_l vsnprintf
+ #else
+ inline int _vsnprintf_l(char *str, size_t size, const char *format, locale_t locale, va_list ap) {
+ 	locale_t prev = uselocale(locale);
+@@ -676,7 +686,11 @@ time_t GetProcessTime();
  
  #ifndef ntohll
  	#if __BYTE_ORDER == __LITTLE_ENDIAN
 +#ifndef __OpenBSD__
  		#define ntohll(x) __bswap_64(x)
-+#elif __Bitrig__
-+		#define ntohll(x) __bswap_64(x)
 +#else
 +		#define ntohll(x) __swap64(x)
-+#endif
++#endif // __OpenBSD__
  	#else
  		#define ntohll(x) (x)
  	#endif
-@@ -671,14 +685,20 @@ time_t GetProcessTime();
+@@ -684,14 +698,18 @@ time_t GetProcessTime();
  
  #ifndef htonll
  	#if __BYTE_ORDER == __LITTLE_ENDIAN
 +#ifndef __OpenBSD__
  		#define htonll(x) __bswap_64(x)
-+#elif __Bitrig__
-+		#define htonll(x) __bswap_64(x)
 +#else
 +		#define htonll(x) __swap64(x)
-+#endif
++#endif // __OpenBSD__
  	#else
  		#define htonll(x) (x)
  	#endif
