@@ -1,0 +1,48 @@
+$OpenBSD$
+--- configure.in.orig	Tue Sep 11 14:42:39 2012
++++ configure.in	Thu Sep 27 15:00:35 2012
+@@ -374,7 +374,7 @@ if test "$enable_static_libevent" = "yes"; then
+     fi
+ fi
+ 
+-TOR_SEARCH_LIBRARY(libevent, $trylibeventdir, [-levent $STATIC_LIBEVENT_FLAGS $TOR_LIB_WS32], [
++TOR_SEARCH_LIBRARY(libevent, $trylibeventdir, [-levent_core -levent_extra $STATIC_LIBEVENT_FLAGS $TOR_LIB_WS32], [
+ #ifdef _WIN32
+ #include <winsock2.h>
+ #endif
+@@ -397,7 +397,7 @@ dnl Now check for particular libevent functions.
+ save_LIBS="$LIBS"
+ save_LDFLAGS="$LDFLAGS"
+ save_CPPFLAGS="$CPPFLAGS"
+-LIBS="-levent $STATIC_LIBEVENT_FLAGS $TOR_LIB_WS32 $LIBS"
++LIBS="-levent_core -levent_extra $STATIC_LIBEVENT_FLAGS $TOR_LIB_WS32 $LIBS"
+ LDFLAGS="$TOR_LDFLAGS_libevent $LDFLAGS"
+ CPPFLAGS="$TOR_CPPFLAGS_libevent $CPPFLAGS"
+ AC_CHECK_FUNCS(event_get_version event_get_version_number event_get_method event_set_log_callback evdns_set_outgoing_bind_address event_base_loopexit)
+@@ -421,7 +421,7 @@ if test "$enable_static_libevent" = "yes"; then
+      TOR_LIBEVENT_LIBS="$TOR_LIBDIR_libevent/libevent.a $STATIC_LIBEVENT_FLAGS"
+    fi
+ else
+-     TOR_LIBEVENT_LIBS="-levent"
++     TOR_LIBEVENT_LIBS="-levent_core -levent_extra"
+ fi
+ 
+ dnl This isn't the best test for Libevent 2.0.3-alpha.  Once it's released,
+@@ -760,7 +760,7 @@ if test x$transparent = xtrue ; then
+    if test x$transparent_ok = x1 ; then
+      AC_DEFINE(USE_TRANSPARENT, 1, "Define to enable transparent proxy support")
+      case $host in
+-       *-*-openbsd*)
++       *-*-openbsd* | *-*-bitrig*)
+          AC_DEFINE(OPENBSD, 1, "Define to handle pf on OpenBSD properly") ;;
+      esac
+    else
+@@ -1258,7 +1258,7 @@ if test x$enable_gcc_warnings = xyes || test x$enable_
+   CFLAGS="$save_CFLAGS"
+ 
+   case $host in
+-    *-*-openbsd*)
++    *-*-openbsd* | *-*-bitrig*)
+       # Some OpenBSD versions (like 4.8) have -Wsystem-headers by default.
+       # That's fine, except that the headers don't pass -Wredundant-decls.
+       # Therefore, let's disable -Wsystem-headers when we're building

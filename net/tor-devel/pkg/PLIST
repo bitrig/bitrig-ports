@@ -1,0 +1,19 @@
+@comment $OpenBSD$
+@bin bin/tor
+@bin bin/tor-gencert
+@bin bin/tor-resolve
+bin/torify
+@man man/man1/tor-gencert.1
+@man man/man1/tor-resolve.1
+@man man/man1/tor.1
+@man man/man1/torify.1
+share/doc/tor/
+share/doc/tor/tor-gencert.html
+share/doc/tor/tor-resolve.html
+share/doc/tor/tor.html
+share/doc/tor/torify.html
+share/examples/tor/
+share/examples/tor/tor-tsocks.conf
+share/examples/tor/torrc.sample
+share/tor/
+share/tor/geoip
