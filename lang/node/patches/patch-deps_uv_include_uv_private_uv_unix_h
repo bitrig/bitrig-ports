@@ -1,0 +1,11 @@
+$OpenBSD$
+--- deps/uv/include/uv-private/uv-unix.h.orig	Tue Sep 25 10:40:03 CEST 2012
++++ deps/uv/include/uv-private/uv-unix.h	Tue Sep 25 10:40:03 CEST 2012
+@@ -284,6 +284,7 @@ struct uv__io_s {
+   || defined(__FreeBSD__) \
+   || defined(__DragonFly__) \
+   || defined(__OpenBSD__) \
++  || defined(__Bitrig__) \
+   || defined(__NetBSD__)
+ 
+ #define UV_FS_EVENT_PRIVATE_FIELDS \

@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.7 2012/07/13 16:35:26 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.11 2012/09/07 07:19:36 ajacoutot Exp $
 
 COMMENT=		next generation GNOME shell
 
 GNOME_PROJECT=		gnome-shell
-GNOME_VERSION=		3.4.1
-REVISION=		4
+GNOME_VERSION=		3.4.2
+REVISION=		1
 
 HOMEPAGE=		http://live.gnome.org/GnomeShell
 
@@ -44,6 +44,7 @@ LIB_DEPENDS=		audio/pulseaudio \
 			net/telepathy/folks \
 			net/telepathy/telepathy-logger \
 			sysutils/polkit \
+			www/libcroco \
 			x11/gnome/gcr \
 			x11/gnome/gjs \
 			x11/gnome/menus \
@@ -61,10 +62,26 @@ MODGNOME_DESKTOP_FILE=	Yes
 
 LIBTOOL_FLAGS= 		--tag=disable-static
 
-AUTOCONF_VERSION=	2.68
 CONFIGURE_STYLE=	autoconf
 CONFIGURE_ARGS=		--disable-static \
 			--with-ca-certificates=/etc/ssl/cert.pem \
 			--without-systemd
+
+AUTOCONF_VERSION=	2.69
+AUTOMAKE_VERSION=	1.11
+BUILD_DEPENDS +=	devel/autoconf/${AUTOCONF_VERSION} \
+			devel/automake/${AUTOMAKE_VERSION} \
+			devel/libtool \
+			x11/gnome/common
+
+pre-configure:
+	cd ${WRKSRC} && env AUTOCONF_VERSION=${AUTOCONF_VERSION} \
+		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} aclocal -I m4
+	cd ${WRKSRC} && env AUTOCONF_VERSION=${AUTOCONF_VERSION} \
+		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} autoconf
+	cd ${WRKSRC} && env AUTOCONF_VERSION=${AUTOCONF_VERSION} \
+		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} autoheader
+	cd ${WRKSRC} && env AUTOCONF_VERSION=${AUTOCONF_VERSION} \
+		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} automake
 
 .include <bsd.port.mk>

@@ -1,17 +1,22 @@
 $OpenBSD$
---- node.gyp.orig	Sun Jul  8 00:15:17 2012
-+++ node.gyp	Wed Jul 18 10:53:23 2012
-@@ -223,6 +223,13 @@
-             '-lkvm',
+--- node.gyp.orig	Tue Sep 25 10:05:00 CEST 2012
++++ node.gyp	Tue Sep 25 10:05:00 CEST 2012
+@@ -133,6 +133,9 @@
+       ],
+ 
+       'conditions': [
++        [ 'OS=="openbsd" or OS=="bitrig"', {
++          'ldflags': [ '-rdynamic' ],
++        }],
+         [ 'node_use_openssl=="true"', {
+           'defines': [ 'HAVE_OPENSSL=1' ],
+           'sources': [ 'src/node_crypto.cc' ],
+@@ -217,7 +220,7 @@
+             'PLATFORM="darwin"',
            ],
          }],
-+        [ 'OS=="bitrig"', {
-+          'sources': [ 'src/platform_bitrig.cc' ],
-+          'libraries': [
-+            '-lutil',
-+            '-lkvm',
-+          ],
-+        }],
-         [ 'OS=="solaris"', {
+-        [ 'OS=="freebsd"', {
++        [ 'OS=="freebsd" or OS=="openbsd" or OS=="bitrig"', {
            'libraries': [
-             '-lkstat',
+             '-lutil',
+             '-lkvm',

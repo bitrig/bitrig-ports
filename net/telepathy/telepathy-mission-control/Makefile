@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2012/04/04 14:41:34 jasper Exp $
+# $OpenBSD: Makefile,v 1.35 2012/08/29 18:27:53 jasper Exp $
 
 COMMENT=		abstraction layer between apps and connection managers
 
@@ -23,7 +23,6 @@ LIB_DEPENDS=		net/telepathy/telepathy-glib>=0.18.0
 
 LIBTOOL_FLAGS=		--tag=disable-static
 
-CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--disable-static \
 			--disable-gtk-doc \
@@ -31,7 +30,5 @@ CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--disable-upower \
 			--enable-mcclient-so6 \
 			--with-connectivity=no
-CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

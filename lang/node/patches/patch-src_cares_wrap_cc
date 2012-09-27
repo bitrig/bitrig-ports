@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/cares_wrap.cc.orig	Tue Sep 25 11:00:04 CEST 2012
++++ src/cares_wrap.cc	Tue Sep 25 11:00:04 CEST 2012
+@@ -26,7 +26,7 @@
+ 
+ #include <string.h>
+ 
+-#if defined(__OpenBSD__) || defined(__MINGW32__) || defined(_MSC_VER)
++#if defined(__OpenBSD__) || defined(__Bitrig__) || defined(__MINGW32__) || defined(_MSC_VER)
+ # include <nameser.h>
+ #else
+ # include <arpa/nameser.h>

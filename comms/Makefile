@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.54 2012/08/18 07:25:25 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.56 2012/09/02 15:54:30 ajacoutot Exp $
 
      SUBDIR =
      SUBDIR += amtterm
@@ -17,10 +17,8 @@
      SUBDIR += hylafax
      SUBDIR += hylafax,a4
      SUBDIR += jpilot
-     SUBDIR += jpilot-syncmal
      SUBDIR += kermit
      SUBDIR += lcdproc
-     SUBDIR += libmal
      SUBDIR += lrzsz
      SUBDIR += mgetty+sendfax
      SUBDIR += minicom

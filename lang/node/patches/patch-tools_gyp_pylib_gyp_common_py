@@ -1,12 +1,12 @@
 $OpenBSD$
---- tools/gyp/pylib/gyp/common.py.orig	Sun Jul  8 00:15:17 2012
-+++ tools/gyp/pylib/gyp/common.py	Wed Jul 18 10:53:23 2012
-@@ -356,6 +356,8 @@ def GetFlavor(params):
+--- tools/gyp/pylib/gyp/common.py.orig	Tue Sep 25 11:02:45 CEST 2012
++++ tools/gyp/pylib/gyp/common.py	Tue Sep 25 11:02:45 CEST 2012
+@@ -365,6 +365,8 @@ def GetFlavor(params):
      'freebsd7': 'freebsd',
      'freebsd8': 'freebsd',
      'freebsd9': 'freebsd',
 +    'openbsd5': 'openbsd',
-+    'bitrig0': 'openbsd',
++    'bitrig0':  'bitrig',
    }
    flavor = flavors.get(sys.platform, 'linux')
    return params.get('flavor', flavor)

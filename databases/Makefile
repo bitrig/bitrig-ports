@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.218 2012/08/18 07:25:25 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.220 2012/09/04 07:02:57 ajacoutot Exp $
 
      SUBDIR =
      SUBDIR += apache-couchdb
@@ -20,6 +20,7 @@
      SUBDIR += iodbc
      SUBDIR += jxplorer
      SUBDIR += keximdb
+     SUBDIR += kyotocabinet
      SUBDIR += lbdb
      SUBDIR += leveldb
      SUBDIR += libdbi
@@ -100,6 +101,7 @@
      SUBDIR += p5-GDBM_File
      SUBDIR += p5-Ima-DBI
      SUBDIR += p5-Jifty-DBI
+     SUBDIR += p5-Palm
      SUBDIR += p5-Redis
      SUBDIR += p5-Rose-DB
      SUBDIR += p5-Rose-DB-Object

@@ -1,14 +1,12 @@
-# $OpenBSD: Makefile,v 1.15 2012/01/13 00:55:14 naddy Exp $
+# $OpenBSD: Makefile,v 1.18 2012/09/01 00:00:32 pascal Exp $
 
 .include <bsd.own.mk>
-
-SYSV=			4.6.2
 
 NOT_FOR_ARCHS =		${GCC2_ARCHS}
 
 V =			3.3.5
 PKGNAME =		g77-$V
-REVISION =		4
+REVISION =		5
 EPOCH =			0
 DISTFILES = 		g77-openbsd.tgz
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.44 2012/06/15 09:47:38 jasper Exp $
+# $OpenBSD: Makefile,v 1.46 2012/08/29 18:27:53 jasper Exp $
 
 COMMENT=		flexible communications framework, glib bindings
 
@@ -24,13 +24,10 @@ BUILD_DEPENDS=		devel/gobject-introspection>=1.30.0 \
 			textproc/libxslt
 LIB_DEPENDS=		x11/dbus-glib
 
-CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--disable-gtk-doc \
 			--enable-introspection \
 			--enable-vala-bindings
 #CONFIGURE_ARGS+=	--enable-backtrace (add -llibexecinfo)
-CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

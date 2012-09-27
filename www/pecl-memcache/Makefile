@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.17 2012/06/18 07:56:13 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.19 2012/08/30 14:09:21 sthen Exp $
 
 COMMENT=	PHP interface to memcached
 
 DISTNAME=	memcache-3.0.6
-REVISION=	1
+REVISION=	3
 MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 # PHP

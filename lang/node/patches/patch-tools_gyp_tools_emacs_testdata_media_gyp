@@ -1,0 +1,24 @@
+$OpenBSD$
+--- tools/gyp/tools/emacs/testdata/media.gyp.orig	Tue Sep 25 11:05:37 CEST 2012
++++ tools/gyp/tools/emacs/testdata/media.gyp	Tue Sep 25 11:05:37 CEST 2012
+@@ -371,6 +371,20 @@
+             'audio/openbsd/audio_manager_openbsd.h',
+           ],
+         }],
++        ['OS=="bitrig"', {
++          'sources/': [ ['exclude', '/alsa_' ],
++                        ['exclude', '/audio_manager_linux' ] ],
++          'link_settings': {
++            'libraries': [
++            ],
++          },
++        }],
++        ['OS!="bitrig"', {
++          'sources!': [
++            'audio/openbsd/audio_manager_openbsd.cc',
++            'audio/openbsd/audio_manager_openbsd.h',
++          ],
++        }],
+         ['OS=="linux"', {
+           'variables': {
+             'conditions': [

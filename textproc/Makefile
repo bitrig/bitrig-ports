@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.362 2012/08/18 22:52:31 avsm Exp $
+# $OpenBSD: Makefile,v 1.366 2012/09/04 07:11:51 ajacoutot Exp $
 
      SUBDIR =
      SUBDIR += TclXML
@@ -7,6 +7,7 @@
      SUBDIR += arabica
      SUBDIR += asciidoc
      SUBDIR += aspell
+     SUBDIR += bibelot
      SUBDIR += boust
      SUBDIR += c2html
      SUBDIR += calibre
@@ -40,7 +41,6 @@
      SUBDIR += groff
      SUBDIR += gsed
      SUBDIR += gtk-doc
-     SUBDIR += gtkaml
      SUBDIR += gtkspell
      SUBDIR += gtkspell3
      SUBDIR += gtranslator
@@ -52,6 +52,7 @@
      SUBDIR += hs-attoparsec-enumerator
      SUBDIR += hs-attoparsec-iteratee
      SUBDIR += hs-blaze-html
+     SUBDIR += hs-blaze-markup
      SUBDIR += hs-bytestring-nums
      SUBDIR += hs-bytestring-show
      SUBDIR += hs-heist
@@ -263,6 +264,7 @@
      SUBDIR += p5-ack
      SUBDIR += p5-sdf
      SUBDIR += p5-tkispell
+     SUBDIR += palm-bookmarks
      SUBDIR += par
      SUBDIR += pdftk
      SUBDIR += pear-File

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- deps/openssl/openssl/crypto/des/des_old.h.orig	Tue Sep 25 10:50:05 CEST 2012
++++ deps/openssl/openssl/crypto/des/des_old.h	Tue Sep 25 10:50:05 CEST 2012
+@@ -178,7 +178,7 @@ typedef struct _ossl_old_des_ks_struct
+ #if 0
+ #define des_crypt(b,s)\
+ 	DES_crypt((b),(s))
+-#if !defined(PERL5) && !defined(__FreeBSD__) && !defined(NeXT) && !defined(__OpenBSD__)
++#if !defined(PERL5) && !defined(__FreeBSD__) && !defined(NeXT) && !defined(__OpenBSD__) && !defined(__Bitrig__)
+ #define crypt(b,s)\
+ 	DES_crypt((b),(s))
+ #endif

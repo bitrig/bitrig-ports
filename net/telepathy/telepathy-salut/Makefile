@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2012/04/25 14:46:16 jasper Exp $
+# $OpenBSD: Makefile,v 1.34 2012/08/29 18:27:53 jasper Exp $
 
 COMMENT=		flexible communications framework, local-link component
 
@@ -28,9 +28,6 @@ LIB_DEPENDS=		net/avahi \
 
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/lib/ext/wocky
 
-CONFIGURE_STYLE=	gnu
-CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--disable-Werror \
 			--disable-avahi-tests

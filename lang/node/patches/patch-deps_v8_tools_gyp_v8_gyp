@@ -1,0 +1,21 @@
+$OpenBSD$
+--- deps/v8/tools/gyp/v8.gyp.orig	Tue Sep 25 10:30:53 CEST 2012
++++ deps/v8/tools/gyp/v8.gyp	Tue Sep 25 10:30:53 CEST 2012
+@@ -686,6 +686,17 @@
+                 ],
+               }
+             ],
++            ['OS=="bitrig"', {
++                'link_settings': {
++                  'libraries': [
++                    '-L/usr/local/lib -lexecinfo',
++                ]},
++                'sources': [
++                  '../../src/platform-openbsd.cc',
++                  '../../src/platform-posix.cc'
++                ],
++              }
++            ],
+             ['OS=="netbsd"', {
+                 'link_settings': {
+                   'libraries': [

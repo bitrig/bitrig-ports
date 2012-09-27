@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.111 2012/08/04 15:36:11 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.114 2012/09/11 06:03:27 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -17,9 +17,9 @@ PKGNAME-main=		meta-tracker-${VERSION}
 PKGNAME-evolution=	evolution-meta-tracker-${VERSION}
 PKGNAME-nautilus=	nautilus-meta-tracker-${VERSION}
 
-REVISION-main=		3
-REVISION-evolution=	0
-REVISION-nautilus=	0
+REVISION-main=		5
+REVISION-evolution=	3
+REVISION-nautilus=	3
 
 # Only get the first x.y which is needed in the PLIST.
 # NOTE: when MAJ_V changes, increment TRACKER_VERSION accordingly and bump:
@@ -56,7 +56,7 @@ WANTLIB += GL X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes
 WANTLIB += Xi Xinerama Xrandr Xrender Xxf86vm drm expat ffi fontconfig
 WANTLIB += freetype gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += kvm m pcre pixman-1 pthread-stubs xcb xcb-render xcb-shm
-WANTLIB += z unistring
+WANTLIB += z unistring pthread
 
 WANTLIB-main += ${WANTLIB}
 WANTLIB-main += archive atk-1.0 bz2 c cairo cairo-gobject
@@ -65,7 +65,7 @@ WANTLIB-main += gcrypt gdk-3 gdk_pixbuf-2.0 gee gif gmime-2.6
 WANTLIB-main += gnome-keyring gpg-error gsf-1 gtk-3
 WANTLIB-main += jpeg lcms2 lzma openjpeg panel-applet-4 cue
 WANTLIB-main += pango-1.0 pangocairo-1.0 pangoft2-1.0 png poppler poppler-glib
-WANTLIB-main += pthread rest-0.7 soup-2.4 soup-gnome-2.4 sqlite3 stdc++
+WANTLIB-main += rest-0.7 soup-2.4 soup-gnome-2.4 sqlite3 stdc++
 WANTLIB-main += tag tag_c tiff totem-plparser upower-glib xml2
 WANTLIB-main += gstbase-0.10 gstpbutils-0.10 gstreamer-0.10 gsttag-0.10
 WANTLIB-main += crypto curl idn lua5.1 quvi ssl
@@ -116,16 +116,17 @@ LIB_DEPENDS-main=	${LIB_DEPENDS} \
 			sysutils/e2fsprogs \
 			graphics/libexif \
 			graphics/libungif \
-			audio/libcue
+			audio/libcue \
+			converters/enca
 
 RUN_DEPENDS-evolution=	${MODGETTEXT_RUN_DEPENDS}
 LIB_DEPENDS-evolution=	${LIB_DEPENDS} \
-			x11/gnome/tracker,-main \
+			x11/gnome/tracker,-main=${GNOME_VERSION} \
 			mail/evolution,-main>=3.4.0
 
 RUN_DEPENDS-nautilus=	${MODGETTEXT_RUN_DEPENDS}
 LIB_DEPENDS-nautilus=	${LIB_DEPENDS} \
-			x11/gnome/tracker,-main \
+			x11/gnome/tracker,-main=${GNOME_VERSION} \
 			x11/gnome/nautilus>=3.0.0
 
 LIBTOOL_FLAGS=	--tag=disable-static

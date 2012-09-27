@@ -1,0 +1,19 @@
+$OpenBSD$
+--- deps/openssl/openssl/crypto/engine/eng_cryptodev.c.orig	Tue Sep 25 10:55:31 CEST 2012
++++ deps/openssl/openssl/crypto/engine/eng_cryptodev.c	Tue Sep 25 10:55:31 CEST 2012
+@@ -32,12 +32,12 @@
+ #include <openssl/bn.h>
+ 
+ #if (defined(__unix__) || defined(unix)) && !defined(USG) && \
+-	(defined(OpenBSD) || defined(__FreeBSD__))
++	(defined(OpenBSD) || defined(Bitrig) || defined(__FreeBSD__))
+ #include <sys/param.h>
+-# if (OpenBSD >= 200112) || ((__FreeBSD_version >= 470101 && __FreeBSD_version < 500000) || __FreeBSD_version >= 500041)
++# if (OpenBSD >= 200112) || (Bitrig >= 200112) || ((__FreeBSD_version >= 470101 && __FreeBSD_version < 500000) || __FreeBSD_version >= 500041)
+ #  define HAVE_CRYPTODEV
+ # endif
+-# if (OpenBSD >= 200110)
++# if (OpenBSD >= 200110) || (Bitrig >= 200110)
+ #  define HAVE_SYSLOG_R
+ # endif
+ #endif

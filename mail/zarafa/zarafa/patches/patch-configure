@@ -1,24 +1,6 @@
---- configure.orig	Mon Jun 18 13:22:24 2012
-+++ configure	Sat Aug 25 19:45:49 2012
-@@ -4412,7 +4412,7 @@ freebsd* | dragonfly*)
-     i*86 )
-       # Not sure whether the presence of OpenBSD here was a mistake.
-       # Let's accept both of them until this is cleared up.
--      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
-+      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|Bitrig|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
-       lt_cv_file_magic_cmd=/usr/bin/file
-       lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
-       ;;
-@@ -4482,7 +4482,7 @@ nto-qnx*)
-   lt_cv_deplibs_check_method=unknown
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-   else
-@@ -6405,7 +6405,7 @@ else
+--- configure.orig	Wed Aug  8 16:35:42 2012
++++ configure	Wed Sep 26 19:38:15 2012
+@@ -5224,7 +5224,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -27,7 +9,16 @@
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -7081,7 +7081,7 @@ old_postuninstall_cmds=
+@@ -5649,7 +5649,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -6033,7 +6033,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -36,7 +27,7 @@
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
-@@ -8152,7 +8152,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+@@ -8477,7 +8477,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -44,9 +35,9 @@
 +  openbsd* | bitrig*)
      with_gnu_ld=no
      ;;
-   esac
-@@ -8869,7 +8869,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
-       hardcode_shlibpath_var=no
+   linux* | k*bsd*-gnu)
+@@ -9190,7 +9190,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
        ;;
  
 -    openbsd*)
@@ -54,8 +45,8 @@
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -9608,7 +9608,7 @@ nto-qnx*)
-   shlibpath_overrides_runpath=yes
+@@ -10162,7 +10162,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
    ;;
  
 -openbsd*)
@@ -63,17 +54,17 @@
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -12116,7 +12116,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
-     # C++ shared libraries are fairly broken
-     ld_shlibs_CXX=no
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     if test -f /usr/libexec/ld.so; then
-       hardcode_direct_CXX=yes
-       hardcode_shlibpath_var_CXX=no
-@@ -13586,7 +13586,7 @@ nto-qnx*)
-   shlibpath_overrides_runpath=yes
+@@ -13690,7 +13690,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd* | bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -15353,7 +15353,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
    ;;
  
 -openbsd*)
@@ -81,61 +72,7 @@
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -14836,7 +14836,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -15533,7 +15533,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
-       hardcode_shlibpath_var_F77=no
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct_F77=yes
- 	hardcode_shlibpath_var_F77=no
-@@ -16220,7 +16220,7 @@ nto-qnx*)
-   shlibpath_overrides_runpath=yes
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -17450,7 +17450,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -18167,7 +18167,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
-       hardcode_shlibpath_var_GCJ=no
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct_GCJ=yes
- 	hardcode_shlibpath_var_GCJ=no
-@@ -18854,7 +18854,7 @@ nto-qnx*)
-   shlibpath_overrides_runpath=yes
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -21908,7 +21908,7 @@ LIBS_system=$LIBS
+@@ -15993,7 +15993,7 @@ LIBS_system=$LIBS
  # check build OS
  BUILDOS=""
  case $host in
@@ -144,40 +81,50 @@
  		BUILDOS="-DOPENBSD"
  		;;
  	*-*-linux*)
-@@ -24574,7 +24574,7 @@ if test "${ac_cv_lib_intl_strftime+set}" = set; then
-   echo $ECHO_N "(cached) $ECHO_C" >&6
+@@ -17292,7 +17292,7 @@ if test "${ac_cv_lib_intl_strftime+set}" = set; then :
+   $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
 -LIBS="-lintl  $LIBS"
 +LIBS="-lintl -liconv $LIBS"
- cat >conftest.$ac_ext <<_ACEOF
- /* confdefs.h.  */
- _ACEOF
-@@ -24634,7 +24634,7 @@ if test $ac_cv_lib_intl_strftime = yes; then
- #define HAVE_STRFTIME 1
- _ACEOF
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ 
+@@ -17325,7 +17325,7 @@ $as_echo "$ac_cv_lib_intl_strftime" >&6; }
+ if test "x$ac_cv_lib_intl_strftime" = x""yes; then :
+   $as_echo "#define HAVE_STRFTIME 1" >>confdefs.h
  
 -LIBS="-lintl $LIBS"
 +LIBS="-lintl -liconv $LIBS"
  fi
  
  fi
-@@ -27761,84 +27761,10 @@ sed 's/^/| /' conftest.$ac_ext >&5
- 	 { echo "$as_me:$LINENO: result: no" >&5
- echo "${ECHO_T}no" >&6; }
+@@ -18713,74 +18713,12 @@ rm -f core conftest.err conftest.$ac_objext \
  
--{ echo "$as_me:$LINENO: checking for crypt in -lcrypt" >&5
--echo $ECHO_N "checking for crypt in -lcrypt... $ECHO_C" >&6; }
--if test "${ac_cv_lib_crypt_crypt+set}" = set; then
--  echo $ECHO_N "(cached) $ECHO_C" >&6
+ LIBS=$LIBS_system
+ 
+-{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for crypt" >&5
+-$as_echo_n "checking for crypt... " >&6; }
+-cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+-/* end confdefs.h.  */
+- int main() {
+-  char crypt();  crypt();
+-}
+-_ACEOF
+-if ac_fn_cxx_try_link "$LINENO"; then :
+-   { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
+-$as_echo "yes" >&6; }
+-else
+-   { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+-$as_echo "no" >&6; }
+-	  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for crypt in -lcrypt" >&5
+-$as_echo_n "checking for crypt in -lcrypt... " >&6; }
+-if test "${ac_cv_lib_crypt_crypt+set}" = set; then :
+-  $as_echo_n "(cached) " >&6
 -else
 -  ac_check_lib_save_LIBS=$LIBS
 -LIBS="-lcrypt  $LIBS"
--cat >conftest.$ac_ext <<_ACEOF
--/* confdefs.h.  */
--_ACEOF
--cat confdefs.h >>conftest.$ac_ext
--cat >>conftest.$ac_ext <<_ACEOF
+-cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 -/* end confdefs.h.  */
 -
 -/* Override any GCC internal prototype to avoid an error.
@@ -195,83 +142,53 @@
 -  return 0;
 -}
 -_ACEOF
--rm -f conftest.$ac_objext conftest$ac_exeext
--if { (ac_try="$ac_link"
--case "(($ac_try" in
--  *\"* | *\`* | *\\*) ac_try_echo=\$ac_try;;
--  *) ac_try_echo=$ac_try;;
--esac
--eval "echo \"\$as_me:$LINENO: $ac_try_echo\"") >&5
--  (eval "$ac_link") 2>conftest.er1
--  ac_status=$?
--  grep -v '^ *+' conftest.er1 >conftest.err
--  rm -f conftest.er1
--  cat conftest.err >&5
--  echo "$as_me:$LINENO: \$? = $ac_status" >&5
--  (exit $ac_status); } && {
--	 test -z "$ac_cxx_werror_flag" ||
--	 test ! -s conftest.err
--       } && test -s conftest$ac_exeext &&
--       $as_test_x conftest$ac_exeext; then
+-if ac_fn_cxx_try_link "$LINENO"; then :
 -  ac_cv_lib_crypt_crypt=yes
 -else
--  echo "$as_me: failed program was:" >&5
--sed 's/^/| /' conftest.$ac_ext >&5
--
--	ac_cv_lib_crypt_crypt=no
- fi
--
-+        
- rm -f core conftest.err conftest.$ac_objext conftest_ipa8_conftest.oo \
-       conftest$ac_exeext conftest.$ac_ext
+-  ac_cv_lib_crypt_crypt=no
+-fi
+-rm -f core conftest.err conftest.$ac_objext \
+-    conftest$ac_exeext conftest.$ac_ext
 -LIBS=$ac_check_lib_save_LIBS
 -fi
--{ echo "$as_me:$LINENO: result: $ac_cv_lib_crypt_crypt" >&5
--echo "${ECHO_T}$ac_cv_lib_crypt_crypt" >&6; }
--if test $ac_cv_lib_crypt_crypt = yes; then
--  cat >>confdefs.h <<_ACEOF
--#define HAVE_LIBCRYPT 1
--_ACEOF
--
--  LIBS="-lcrypt $LIBS"
--
--else
--  { { echo "$as_me:$LINENO: error: required library libcrypt missing or unusable" >&5
--echo "$as_me: error: required library libcrypt missing or unusable" >&2;}
--   { (exit 1); exit 1; }; }
--fi
--
--fi
--
--rm -f core conftest.err conftest.$ac_objext conftest_ipa8_conftest.oo \
--      conftest$ac_exeext conftest.$ac_ext
- CRYPT_LIBS=$LIBS
- LIBS=$LIBS_system
+-{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_crypt_crypt" >&5
+-$as_echo "$ac_cv_lib_crypt_crypt" >&6; }
+-if test "x$ac_cv_lib_crypt_crypt" = x""yes; then :
+   cat >>confdefs.h <<_ACEOF
+ #define HAVE_LIBCRYPT 1
+ _ACEOF
  
-@@ -27853,7 +27779,7 @@ if test "${ac_cv_lib_ssl_SSL_accept+set}" = set; then
-   echo $ECHO_N "(cached) $ECHO_C" >&6
+-  LIBS="-lcrypt $LIBS"
+ 
+-else
+-  as_fn_error $? "required library libcrypt missing or unusable" "$LINENO" 5
+-fi
+ 
+-fi
+-rm -f core conftest.err conftest.$ac_objext \
+-    conftest$ac_exeext conftest.$ac_ext
+-CRYPT_LIBS=$LIBS
+-LIBS=$LIBS_system
+-
+-
+ # Only specific links with uuid and dl, clients only with crypto and ssl for ssl connections
+ SSL_LIBS=
+ # TODO: version of ssl check??
+@@ -18791,7 +18729,7 @@ if test "${ac_cv_lib_ssl_SSL_accept+set}" = set; then 
+   $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
 -LIBS="-lssl  $LIBS"
 +LIBS="-lssl -lcrypto $LIBS"
- cat >conftest.$ac_ext <<_ACEOF
- /* confdefs.h.  */
- _ACEOF
-@@ -29078,7 +29004,7 @@ if test "${ac_cv_lib_intl_gettext+set}" = set; then
-   echo $ECHO_N "(cached) $ECHO_C" >&6
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ 
+@@ -19298,7 +19236,7 @@ if test "${ac_cv_lib_intl_gettext+set}" = set; then :
+   $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
 -LIBS="-lintl  $LIBS"
 +LIBS="-lintl -liconv $LIBS"
- cat >conftest.$ac_ext <<_ACEOF
- /* confdefs.h.  */
- _ACEOF
-@@ -29134,7 +29060,7 @@ fi
- { echo "$as_me:$LINENO: result: $ac_cv_lib_intl_gettext" >&5
- echo "${ECHO_T}$ac_cv_lib_intl_gettext" >&6; }
- if test $ac_cv_lib_intl_gettext = yes; then
--  INTL_LIBS="-lintl"
-+  INTL_LIBS="-lintl -liconv"
- else
-       { { echo "$as_me:$LINENO: error: required library libintl missing or unusable" >&5
- echo "$as_me: error: required library libintl missing or unusable" >&2;}
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ 

@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.28 2012/07/08 16:35:19 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.30 2012/09/12 12:36:53 ajacoutot Exp $
 
 COMMENT=	D-Bus interface for user account query and manipulation
 
-DISTNAME=	accountsservice-0.6.22
+DISTNAME=	accountsservice-0.6.24
 EXTRACT_SUFX=	.tar.xz
-
 REVISION=	0
 
 SHARED_LIBS +=  accountsservice           0.0 # 0.0
@@ -50,10 +49,7 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/accountsservice
 
 pre-configure:
-	${SUBST_CMD} ${WRKSRC}/src/daemon.c
-
-# XXX
-post-configure:
-	echo '#undef WITH_SYSTEMD' >> ${WRKBUILD}/config.h
+	perl -pi -e 's,/etc/gdm,${SYSCONFDIR}/gdm,g' \
+		${WRKSRC}/src/daemon.c
 
 .include <bsd.port.mk>

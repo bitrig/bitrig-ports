@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.280 2012/08/18 07:25:25 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.283 2012/09/05 02:34:57 lteo Exp $
  
      SUBDIR =
      SUBDIR += abook
@@ -61,8 +61,9 @@
      SUBDIR += fdm
      SUBDIR += femail
      SUBDIR += fetchmail
+     SUBDIR += geary
      SUBDIR += getmail
-     SUBDIR += gmime
+     SUBDIR += gmime,
      SUBDIR += grepmail
      SUBDIR += greyscanner
      SUBDIR += hashcash
@@ -171,7 +172,6 @@
      SUBDIR += poppy
      SUBDIR += postfix
      SUBDIR += postgrey
-     SUBDIR += postler
      SUBDIR += prepop
      SUBDIR += procmail
      SUBDIR += py-authres
@@ -188,7 +188,6 @@
      SUBDIR += ruby-mailfactory
      SUBDIR += ruby-mime
      SUBDIR += ruby-mime-types
-     SUBDIR += ruby-rmail
      SUBDIR += sieve-connect
      SUBDIR += signify
      SUBDIR += sma

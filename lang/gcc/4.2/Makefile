@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.80 2012/08/20 12:35:41 pascal Exp $
+# $OpenBSD: Makefile,v 1.83 2012/09/01 00:00:32 pascal Exp $
 
 ONLY_FOR_ARCHS = alpha i386 m68k sparc sparc64 powerpc vax amd64
 #BROKEN=adjust for types changes
@@ -7,7 +7,7 @@ V = 4.2.4
 FULL_VERSION = $V
 FULL_PKGVERSION = $V
 BOOTSTRAP_GEN = 5
-# XXX this needs libc.so.60.1 (from OpenBSD 5.0) to build on i386
+# XXX adastrap bundles libc.so.60.1 (from OpenBSD 5.0) to build on i386
 LIBC_VERSION = 60.1
 ADASTRAP = adastrap-i386-$V-${BOOTSTRAP_GEN}.tgz
 
@@ -19,13 +19,13 @@ PKGNAME-java =  gcj-${FULL_PKGVERSION}
 PKGNAME-objc =  gobjc-${FULL_PKGVERSION}
 PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 
-REVISION-main = 10
-REVISION-c++ = 14
-REVISION-estdc = 3
-REVISION-f95 = 12
-REVISION-java = 12
-REVISION-objc = 11
-REVISION-ada = 10
+REVISION-main = 12
+REVISION-c++ = 16
+REVISION-estdc = 4
+REVISION-f95 = 14
+REVISION-java = 14
+REVISION-objc = 13
+REVISION-ada = 12
 EPOCH = 0
 
 SHARED_LIBS =	estdc++		13.0 \
@@ -152,6 +152,7 @@ CONFIGURE_ARGS += \
 	--with-gnu-as \
 	--enable-threads=posix \
 	--enable-wchar_t \
+	--disable-libstdcxx-pch \
 	--enable-languages=${LANGS}
 
 # This is needed, as internal cpp is no longer compatible with the
@@ -207,7 +208,7 @@ RUN_DEPENDS-java =	archivers/unzip \
 			archivers/zip>=2.3p0
 
 RUN_DEPENDS-c++ =	${RUN_DEPENDS} libstdc++->=4.2,<4.3|libstdc++->=4.2v0,<4.3v0:${BUILD_PKGPATH},-estdc
-WANTLIB-estdc =		c m
+WANTLIB-estdc =		m
 WANTLIB-java =		c m pthread z
 
 LIB_DEPENDS-f95 =	devel/gmp>=4.2 \

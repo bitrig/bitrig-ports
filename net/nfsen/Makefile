@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2012/04/22 11:41:55 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.18 2012/08/31 16:57:23 sthen Exp $
 
 MULTI_PACKAGES=		-main -web
 COMMENT-main=		web-based front end for the nfdump netflow tools

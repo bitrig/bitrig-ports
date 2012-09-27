@@ -1,0 +1,12 @@
+$OpenBSD$
+--- tools/addon.gypi.orig	Tue Sep 25 11:05:54 CEST 2012
++++ tools/addon.gypi	Tue Sep 25 11:05:54 CEST 2012
+@@ -16,7 +16,7 @@
+       [ 'OS=="win"', {
+         'libraries': [ '-l<(node_root_dir)/$(Configuration)/node.lib' ],
+       }],
+-      [ 'OS=="freebsd" or OS=="openbsd" or OS=="solaris" or (OS=="linux" and target_arch!="ia32")', {
++      [ 'OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or OS=="solaris" or (OS=="linux" and target_arch!="ia32")', {
+         'cflags': [ '-fPIC' ],
+       }]
+     ]

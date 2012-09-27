@@ -1,0 +1,19 @@
+$OpenBSD: README,v 1.1 2012/09/10 09:16:34 jasper Exp $
+
++-----------------------------------------------------------------------
+| Running ${FULLPKGNAME} on OpenBSD
++-----------------------------------------------------------------------
+
+The Puppet Dashboard has been installed into ${INSTDIR}
+
+To configure your database you must first edit config/database.yaml
+and then run the following command from ${INSTDIR}:
+
+	$ rake install
+
+After that you can start your server by calling:
+
+	$ script/server
+
+This will start a Rails server on port 3000. For more information on
+Puppet Dashboard, please refer to ${INSTDIR}/README.markdown

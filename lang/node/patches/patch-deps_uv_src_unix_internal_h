@@ -1,0 +1,11 @@
+$OpenBSD$
+--- deps/uv/src/unix/internal.h.orig	Tue Sep 25 10:45:15 CEST 2012
++++ deps/uv/src/unix/internal.h	Tue Sep 25 10:45:15 CEST 2012
+@@ -59,6 +59,7 @@
+ #if defined(__APPLE__)  \
+   || defined(__FreeBSD__) \
+   || defined(__OpenBSD__) \
++  || defined(__Bitrig__) \
+   || defined(__NetBSD__)
+ # define HAVE_KQUEUE 1
+ #endif

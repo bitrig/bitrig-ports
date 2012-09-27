@@ -1,0 +1,17 @@
+$OpenBSD: README,v 1.1 2012/08/30 10:08:46 ajacoutot Exp $
+
++-----------------------------------------------------------------------
+| Running ${FULLPKGNAME} on OpenBSD
++-----------------------------------------------------------------------
+
+File and directory monitor
+==========================
+GLib (GFileMonitor) provides realtime kqueue(2) notifications and
+monitoring up to the open file descriptors limit.
+If gio-kqueue needs to handle large directories, the kern.maxfiles
+sysctl(8) should be increased by adding an entry in sysctl.conf(5) and
+the user's login(1) class modified accordingly by bumping the "cur" and
+"max" openfiles limit in login.conf(5).
+
+The ${SYSCONFDIR}/gio-kqueue.conf file contains the paths that should be
+monitored using traditional polling instead of kqueue(2).

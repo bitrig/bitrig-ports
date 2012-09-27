@@ -1,0 +1,12 @@
+$OpenBSD$
+--- deps/v8/src/d8.gyp.orig	Tue Sep 25 10:29:48 CEST 2012
++++ deps/v8/src/d8.gyp	Tue Sep 25 10:29:48 CEST 2012
+@@ -62,7 +62,7 @@
+               'sources': [ 'd8-readline.cc' ],
+             }],
+             ['(OS=="linux" or OS=="mac" or OS=="freebsd" or OS=="netbsd" \
+-               or OS=="openbsd" or OS=="solaris" or OS=="android")', {
++               or OS=="openbsd" or OS=="bitrig" or OS=="solaris" or OS=="android")', {
+               'sources': [ 'd8-posix.cc', ]
+             }],
+             [ 'OS=="win"', {

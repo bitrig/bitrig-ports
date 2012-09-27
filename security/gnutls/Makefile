@@ -1,15 +1,17 @@
-# $OpenBSD: Makefile,v 1.57 2012/08/19 13:31:39 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.60 2012/09/05 07:15:50 ajacoutot Exp $
+
+# XXX check why our getopt_long(3) fails the configure test
+# + rm patch-gl_unistd_in_h
 
 COMMENT=	GNU Transport Layer Security library
 
-DISTNAME=	gnutls-3.0.22
+DISTNAME=	gnutls-3.1.1
 EXTRACT_SUFX=	.tar.xz
-REVISION=	1
 
 CATEGORIES=	security
 
-SHARED_LIBS +=  gnutls               38.0     # 38.0
-SHARED_LIBS +=  gnutlsxx             28.0     # 28.0
+SHARED_LIBS +=  gnutls               39.0     # 40.0
+SHARED_LIBS +=  gnutlsxx             29.0     # 29.0
 SHARED_LIBS +=  gnutls-openssl       27.2     # 27.2
 
 HOMEPAGE=	http://www.gnutls.org/
@@ -25,13 +27,14 @@ PERMIT_DISTFILES_FTP=	Yes
 WANTLIB += c gmp hogweed idn m nettle p11-kit pthread stdc++ tasn1
 WANTLIB += z
 
-MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/
+MASTER_SITES=	http://ftp.gnu.org/gnu/gnutls/ \
+		ftp://ftp.gnu.org/pub/gnu/gnutls/
 
 MODULES=	devel/gettext
 
 LIB_DEPENDS=	devel/libidn \
 		security/libtasn1 \
-		security/libnettle>=2.2 \
+		security/libnettle>=2.5 \
 		security/p11-kit
 
 USE_LIBTOOL=	Yes
@@ -49,8 +52,12 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--with-libtasn1-prefix=${LOCALBASE} \
 		--with-packager="OpenBSD Ports"
 
+# requires security/trousers: not committed, needs kernel support for tpm(4):
+# http://bsssd.sourceforge.net/
+CONFIGURE_ARGS += --without-tpm
+
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib -pthread"
+		LDFLAGS="-L${LOCALBASE}/lib"
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/gnutls

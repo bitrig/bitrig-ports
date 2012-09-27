@@ -1,11 +1,11 @@
 $OpenBSD$
---- deps/v8/src/SConscript.orig	Sun Jul  8 00:15:17 2012
-+++ deps/v8/src/SConscript	Wed Jul 18 10:53:23 2012
+--- deps/v8/src/SConscript.orig	Tue Sep 25 10:25:34 CEST 2012
++++ deps/v8/src/SConscript	Tue Sep 25 10:25:34 CEST 2012
 @@ -224,6 +224,7 @@ SOURCES = {
    'simulator:mips': ['mips/simulator-mips.cc'],
    'os:freebsd': ['platform-freebsd.cc', 'platform-posix.cc'],
    'os:openbsd': ['platform-openbsd.cc', 'platform-posix.cc'],
-+  'os:bitrig':  ['platform-bitrig.cc', 'platform-posix.cc'],
++  'os:bitrig':  ['platform-openbsd.cc', 'platform-posix.cc'],
    'os:linux':   ['platform-linux.cc', 'platform-posix.cc'],
    'os:android': ['platform-linux.cc', 'platform-posix.cc'],
    'os:macos':   ['platform-macos.cc', 'platform-posix.cc'],
