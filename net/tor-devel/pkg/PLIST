@@ -14,6 +14,7 @@ share/doc/tor/tor.html
 share/doc/tor/torify.html
 share/examples/tor/
 share/examples/tor/tor-tsocks.conf
-share/examples/tor/torrc.sample
+@sample share/examples/tor/torrc.sample
 share/tor/
 share/tor/geoip
+@rcscript ${RCDIR}/tor
