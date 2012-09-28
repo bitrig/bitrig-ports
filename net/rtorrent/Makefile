@@ -34,6 +34,10 @@ BUILD_DEPENDS=		devel/cppunit
 LIB_DEPENDS=		net/libtorrent>=0.12.9 \
 			net/curl
 
+# work around some bad c++
+CC=gcc
+CXX=g++
+
 USE_LIBTOOL=		Yes
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV +=	LDFLAGS=-pthread

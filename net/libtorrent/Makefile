@@ -24,6 +24,10 @@ LIB_DEPENDS=		devel/libsigc++-2
 
 USE_LIBTOOL=		Yes
 
+# work around some bad c++
+CC=gcc
+CXX=g++
+
 AUTOCONF_VERSION=	2.68
 CONFIGURE_STYLE=	autoconf
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
