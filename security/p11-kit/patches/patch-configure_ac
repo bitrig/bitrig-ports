@@ -10,8 +10,21 @@ From: Antoine Jacoutot <ajacoutot@openbsd.org>
 Date: Tue, 21 Aug 2012 09:16:00 +0000
 Subject: Use AC_LANG_PROGRAM to detect program_invocation_short_name functionality
 
---- configure.ac.orig	Mon Jul 16 15:05:03 2012
-+++ configure.ac	Thu Aug 23 15:19:04 2012
+--- configure.ac.orig	Mon Jul 16 08:05:03 2012
++++ configure.ac	Thu Sep 27 17:55:50 2012
+@@ -37,9 +37,9 @@ AM_PROG_CC_C_O
+ LINGUAS=""
+ AM_GNU_GETTEXT([external], [need-ngettext])
+ 
+-if test "$enable_static" = "yes"; then
+-	AC_MSG_ERROR([p11-kit cannot be used as a static library])
+-fi
++#if test "$enable_static" = "yes"; then
++#	AC_MSG_ERROR([p11-kit cannot be used as a static library])
++#fi
+ 
+ AC_MSG_CHECKING([for win32])
+ case "$host" in
 @@ -71,8 +71,13 @@ if test "$os_unix" = "yes"; then
  
  	# Check if these are declared and/or available to link against
