@@ -32,7 +32,7 @@ USE_GMAKE=	Yes
 NO_REGRESS=	Yes
 
 post-extract:
-	@cp ${FILESDIR}/Makefile.openbsd ${WRKSRC}/config
+	@cp ${FILESDIR}/Makefile.bitrig ${WRKSRC}/config
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/GL
