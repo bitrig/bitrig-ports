@@ -105,7 +105,7 @@ CONFIGURE_ARGS+= --disable-gtk-doc \
 CONFIGURE_ENV+= CPPFLAGS="-I${X11BASE}/include -I${LOCALBASE}/include -I${LOCALBASE}/include/libpng" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
-USE_LIBTOOL=	Yes
+USE_LIBTOOL=	gnu
 USE_GMAKE=	Yes
 
 post-extract:
