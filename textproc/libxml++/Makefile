@@ -21,6 +21,7 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxml++/${V:C/^([0-9]+\.[0-9]+).*/\1/}/}
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/macros
 
 WANTLIB += m z glib-2.0 gmodule-2.0 gobject-2.0 pcre sigc-2.0 gthread-2.0
 WANTLIB += glibmm-2.4 xml2 stdc++ ffi
