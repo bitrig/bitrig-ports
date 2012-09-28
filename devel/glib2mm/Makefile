@@ -24,6 +24,8 @@ PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
+
 WANTLIB += pcre z m stdc++ sigc-2.0 glib-2.0>=1803 gmodule-2.0 gobject-2.0
 WANTLIB += gio-2.0 gthread-2.0 ffi
 
