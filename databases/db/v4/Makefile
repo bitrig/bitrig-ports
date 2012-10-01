@@ -49,6 +49,8 @@ WANTLIB-java=
 
 SUBST_VARS=	LIBdb_tcl_VERSION
 
+CFLAGS+=-DHAVE_CXX_STDHEADERS
+
 pre-configure:
 	@perl -pi -e "s,db_(archive|checkpoint|deadlock|dump|hotbackup),db5_\0,g" ${WRKSRC}/test/*tcl
 	@perl -pi -e "s,db_(load|printlog|recover|stat|upgrade|verify),db5_\0,g" ${WRKSRC}/test/*tcl
