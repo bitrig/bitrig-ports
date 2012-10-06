@@ -1,4 +1,5 @@
-@comment $OpenBSD: PLIST-main,v 1.1 2012/09/10 11:32:32 ajacoutot Exp $
+@comment $OpenBSD: PLIST-main,v 1.3 2012/09/18 07:54:14 ajacoutot Exp $
+@conflict gstreamer1-plugins-bad-<0.11.99
 lib/gstreamer-${VERSION}/libgstalaw.so
 lib/gstreamer-${VERSION}/libgstalpha.so
 lib/gstreamer-${VERSION}/libgstalphacolor.so
@@ -16,6 +17,7 @@ lib/gstreamer-${VERSION}/libgstequalizer.so
 lib/gstreamer-${VERSION}/libgstflac.so
 lib/gstreamer-${VERSION}/libgstflv.so
 lib/gstreamer-${VERSION}/libgstflxdec.so
+lib/gstreamer-${VERSION}/libgstgdkpixbuf.so
 lib/gstreamer-${VERSION}/libgstgoom.so
 lib/gstreamer-${VERSION}/libgstgoom2k1.so
 lib/gstreamer-${VERSION}/libgsticydemux.so
@@ -49,6 +51,7 @@ lib/gstreamer-${VERSION}/libgstvideobox.so
 lib/gstreamer-${VERSION}/libgstvideocrop.so
 lib/gstreamer-${VERSION}/libgstvideofilter.so
 lib/gstreamer-${VERSION}/libgstvideomixer.so
+lib/gstreamer-${VERSION}/libgstvpx.so
 lib/gstreamer-${VERSION}/libgstwavenc.so
 lib/gstreamer-${VERSION}/libgstwavpack.so
 lib/gstreamer-${VERSION}/libgstwavparse.so
@@ -58,6 +61,7 @@ share/gstreamer-${VERSION}/
 share/gstreamer-${VERSION}/presets/
 share/gstreamer-${VERSION}/presets/GstIirEqualizer10Bands.prs
 share/gstreamer-${VERSION}/presets/GstIirEqualizer3Bands.prs
+share/gstreamer-${VERSION}/presets/GstVP8Enc.prs
 share/locale/af/LC_MESSAGES/gst-plugins-good-${VERSION}.mo
 share/locale/az/LC_MESSAGES/gst-plugins-good-${VERSION}.mo
 share/locale/bg/LC_MESSAGES/gst-plugins-good-${VERSION}.mo

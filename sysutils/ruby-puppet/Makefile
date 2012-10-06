@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.41 2012/05/05 19:32:01 robert Exp $
+# $OpenBSD: Makefile,v 1.44 2012/10/01 09:26:18 jasper Exp $
 
 COMMENT=	centralised configuration management for networks
 
-VERSION=	2.7.14
+VERSION=	2.7.19
 DISTNAME=	puppet-${VERSION}
 PKGNAME=	ruby-${DISTNAME}
+REVISION=	1
 CATEGORIES=	sysutils net
 
 HOMEPAGE=	http://reductivelabs.com/projects/puppet/
@@ -20,7 +21,7 @@ PERMIT_DISTFILES_FTP=	Yes
 
 MODULES=	lang/ruby
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	converters/ruby-json \
+RUN_DEPENDS=	converters/ruby-json,${MODRUBY_FLAVOR} \
 		sysutils/ruby-facter \
 		${MODRUBY_ICONV_DEPENDS}
 
@@ -29,6 +30,7 @@ NO_REGRESS=	Yes
 NO_BUILD=	Yes
 
 do-install:
+	${SUBST_CMD} ${WRKSRC}/lib/puppet/defaults.rb
 	${INSTALL_DATA_DIR} ${MODRUBY_EXAMPLEDIR}/puppet
 	@cd ${WRKSRC} && ${ALL_FAKE_FLAGS} ${RUBY} install.rb
 	for f in `ls -1 ${WRKSRC}/examples/etc/puppet/*.conf`; do \

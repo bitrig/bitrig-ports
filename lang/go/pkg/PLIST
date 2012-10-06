@@ -1,9 +1,9 @@
-@comment $OpenBSD: PLIST,v 1.4 2012/07/04 15:18:39 jsing Exp $
+@comment $OpenBSD: PLIST,v 1.5 2012/10/01 06:20:09 jsing Exp $
 %%amd64%%
 %%i386%%
-bin/go
-bin/godoc
-bin/gofmt
+@bin bin/go
+@bin bin/godoc
+@bin bin/gofmt
 go/
 go/AUTHORS
 go/CONTRIBUTORS
@@ -71,7 +71,6 @@ go/doc/articles/wiki/test_view.good
 go/doc/articles/wiki/view.html
 go/doc/cmd.html
 go/doc/code.html
-go/doc/codereview_with_mq.html
 go/doc/codewalk/
 go/doc/codewalk/codewalk.css
 go/doc/codewalk/codewalk.js
@@ -177,25 +176,6 @@ go/doc/root.html
 go/doc/share.png
 go/doc/sieve.gif
 go/doc/style.css
-go/doc/talks/
-go/doc/talks/go_talk-20091030.pdf
-go/doc/talks/go_talk-20100112.html
-go/doc/talks/go_talk-20100121.html
-go/doc/talks/go_talk-20100323.html
-go/doc/talks/gofrontend-gcc-summit-2010.pdf
-go/doc/talks/io2010/
-go/doc/talks/io2010/balance.go
-go/doc/talks/io2010/decrypt.go
-go/doc/talks/io2010/encrypt.go
-go/doc/talks/io2010/eval1.go
-go/doc/talks/io2010/eval2.go
-go/doc/talks/io2010/talk.pdf
-go/doc/talks/io2011/
-go/doc/talks/io2011/Real_World_Go.pdf
-go/doc/talks/io2011/Writing_Web_Apps_in_Go.pdf
-go/doc/talks/java-typing.png
-go/doc/talks/slidy.css
-go/doc/talks/slidy.js
 go/doc/tos.html
 go/favicon.ico
 go/include/
@@ -281,7 +261,9 @@ go/misc/cgo/test/helpers.go
 go/misc/cgo/test/issue1222.go
 go/misc/cgo/test/issue1328.go
 go/misc/cgo/test/issue1560.go
+go/misc/cgo/test/issue1635.go
 go/misc/cgo/test/issue2462.go
+go/misc/cgo/test/issue3945.go
 go/misc/cgo/test/sleep_windows.go
 go/misc/cgo/testso/
 go/misc/cgo/testso/cgoso.go
@@ -387,6 +369,7 @@ go/misc/vim/ftplugin/go/
 go/misc/vim/ftplugin/go/fmt.vim
 go/misc/vim/ftplugin/go/godoc.vim
 go/misc/vim/ftplugin/go/import.vim
+go/misc/vim/ftplugin/go/test.sh
 go/misc/vim/indent/
 go/misc/vim/indent/go.vim
 go/misc/vim/plugin/
@@ -580,16 +563,16 @@ go/pkg/tool${GOCFG}/
 @bin go/pkg/tool${GOEXE}g
 @bin go/pkg/tool${GOEXE}l
 @bin go/pkg/tool${GOCFG}/addr2line
-go/pkg/tool${GOCFG}/api
-go/pkg/tool${GOCFG}/cgo
+@bin go/pkg/tool${GOCFG}/api
+@bin go/pkg/tool${GOCFG}/cgo
 @bin go/pkg/tool${GOCFG}/dist
-go/pkg/tool${GOCFG}/fix
+@bin go/pkg/tool${GOCFG}/fix
 @bin go/pkg/tool${GOCFG}/nm
 @bin go/pkg/tool${GOCFG}/objdump
 @bin go/pkg/tool${GOCFG}/pack
 go/pkg/tool${GOCFG}/pprof
-go/pkg/tool${GOCFG}/vet
-go/pkg/tool${GOCFG}/yacc
+@bin go/pkg/tool${GOCFG}/vet
+@bin go/pkg/tool${GOCFG}/yacc
 go/robots.txt
 go/src/
 go/src/Make.dist
@@ -1316,6 +1299,7 @@ go/src/pkg/compress/flate/flate_test.go
 go/src/pkg/compress/flate/huffman_bit_writer.go
 go/src/pkg/compress/flate/huffman_code.go
 go/src/pkg/compress/flate/inflate.go
+go/src/pkg/compress/flate/reader_test.go
 go/src/pkg/compress/flate/reverse_bits.go
 go/src/pkg/compress/flate/token.go
 go/src/pkg/compress/gzip/
@@ -1391,6 +1375,7 @@ go/src/pkg/crypto/md5/md5.go
 go/src/pkg/crypto/md5/md5_test.go
 go/src/pkg/crypto/md5/md5block.go
 go/src/pkg/crypto/rand/
+go/src/pkg/crypto/rand/example_test.go
 go/src/pkg/crypto/rand/rand.go
 go/src/pkg/crypto/rand/rand_test.go
 go/src/pkg/crypto/rand/rand_unix.go
@@ -2184,6 +2169,7 @@ go/src/pkg/net/mail/message.go
 go/src/pkg/net/mail/message_test.go
 go/src/pkg/net/multicast_test.go
 go/src/pkg/net/net.go
+go/src/pkg/net/net_posix.go
 go/src/pkg/net/net_test.go
 go/src/pkg/net/newpollserver.go
 go/src/pkg/net/parse.go
@@ -2265,6 +2251,7 @@ go/src/pkg/os/error_plan9.go
 go/src/pkg/os/error_posix.go
 go/src/pkg/os/error_test.go
 go/src/pkg/os/error_windows.go
+go/src/pkg/os/error_windows_test.go
 go/src/pkg/os/exec/
 go/src/pkg/os/exec.go
 go/src/pkg/os/exec/example_test.go
@@ -2402,6 +2389,7 @@ go/src/pkg/runtime/cgo/gcc_windows_386.c
 go/src/pkg/runtime/cgo/gcc_windows_amd64.c
 go/src/pkg/runtime/cgo/iscgo.c
 go/src/pkg/runtime/cgo/libcgo.h
+go/src/pkg/runtime/cgo/netbsd.c
 go/src/pkg/runtime/cgocall.c
 go/src/pkg/runtime/cgocall.h
 go/src/pkg/runtime/chan.c
@@ -2575,6 +2563,7 @@ go/src/pkg/runtime/traceback_arm.c
 go/src/pkg/runtime/traceback_x86.c
 go/src/pkg/runtime/type.go
 go/src/pkg/runtime/type.h
+go/src/pkg/runtime/vdso_linux_amd64.c
 go/src/pkg/runtime/vlop_386.s
 go/src/pkg/runtime/vlop_arm.s
 go/src/pkg/runtime/vlrt_386.c

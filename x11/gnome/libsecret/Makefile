@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.8 2012/09/05 14:15:41 jasper Exp $
+# $OpenBSD: Makefile,v 1.13 2012/09/27 17:26:05 ajacoutot Exp $
 
 COMMENT=	library for storing and retrieving passwords and secrets
 
 GNOME_PROJECT=	libsecret
-GNOME_VERSION=	0.8
-REVISION=	0
+GNOME_VERSION=	0.10
 
 SHARED_LIBS +=  secret-1             0.0      # unknown
 
@@ -23,9 +22,12 @@ MODULES=	devel/gettext \
 		lang/python \
 		x11/gnome
 
-MODGNOME_TOOLS=	goi # vala XXX: Enable when updating to next release.
+MODGNOME_TOOLS=	goi vala
 MODPY_BUILDDEP=	No
 MODPY_RUNDEP=	No
+
+# man pages
+BUILD_DEPENDS += textproc/docbook-xsl
 
 LIB_DEPENDS=	devel/glib2 \
 		security/libgcrypt

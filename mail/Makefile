@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.283 2012/09/05 02:34:57 lteo Exp $
+# $OpenBSD: Makefile,v 1.285 2012/09/28 14:08:59 ajacoutot Exp $
  
      SUBDIR =
      SUBDIR += abook
      SUBDIR += adcomplain
      SUBDIR += akpop3d
-     SUBDIR += alpine
      SUBDIR += altermime
      SUBDIR += amavisd-new
      SUBDIR += archivemail
@@ -48,7 +47,6 @@
      SUBDIR += elm
      SUBDIR += evolution
      SUBDIR += evolution-ews
-     SUBDIR += evolution-exchange
      SUBDIR += evolution-rss
      SUBDIR += exim
      SUBDIR += exim,ldap
@@ -69,7 +67,6 @@
      SUBDIR += hashcash
      SUBDIR += hypermail
      SUBDIR += hypermail,gdbm
-     SUBDIR += imap-uw
      SUBDIR += imapfilter
      SUBDIR += imapproxy
      SUBDIR += imapsync
@@ -181,6 +178,7 @@
      SUBDIR += pyzor
      SUBDIR += razor-agents
      SUBDIR += rcube-sieverules
+     SUBDIR += re-alpine
      SUBDIR += relaydb
      SUBDIR += roundcubemail
      SUBDIR += ruby-actionmailer

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2012/09/01 14:36:56 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.43 2012/09/29 19:27:33 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -6,16 +6,16 @@ COMMENT-main=	configuration backend system
 COMMENT-editor=	editor for the dconf configuration storage system
 
 GNOME_PROJECT=	dconf
-GNOME_VERSION=	0.12.1
+GNOME_VERSION=	0.14.0
 
 PKGNAME-main=	${DISTNAME}
 PKGNAME-editor=	dconf-editor-${GNOME_VERSION}
 
-REVISION-main=	0
+REVISION-main=	1
 REVISION-editor=1
 
-SHARED_LIBS+=	dconf        0.0 # 0.0.0
-SHARED_LIBS+=	dconf-dbus-1 0.0 # 0.0.0
+SHARED_LIBS+=	dconf        1.0 # 1.0.0
+SHARED_LIBS+=	dconf-dbus-1 1.0 # 1.0.0
 
 CATEGORIES=	devel
 
@@ -53,6 +53,9 @@ MODGNOME_DESKTOP_FILE= Yes
 
 BUILD_DEPENDS=	lang/vala
 
+# man pages
+BUILD_DEPENDS += textproc/docbook-xsl # adds textproc/libxslt
+
 RUN_DEPENDS-main=	# empty
 LIB_DEPENDS-main=	devel/glib2 \
 			x11/dbus
@@ -60,12 +63,11 @@ LIB_DEPENDS-main=	devel/glib2 \
 RUN_DEPENDS-editor=	${RUN_DEPENDS} \
 			devel/desktop-file-utils
 LIB_DEPENDS-editor=	${MODGETTEXT_LIB_DEPENDS} \
+			${BASE_PKGPATH},-main=${GNOME_VERSION} \
 			x11/gtk+3
 
 CONFIGURE_STYLE=gnu
 MODGNOME_LDFLAGS=	-pthread
-
-FAKE_FLAGS=	completiondir=${PREFIX}/share/examples/dconf/bash_completion.d
 
 .include <bsd.port.arch.mk>
 

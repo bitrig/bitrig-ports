@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.13 2012/09/02 22:01:25 kili Exp $
+# $OpenBSD: Makefile,v 1.15 2012/10/02 10:27:56 dcoppa Exp $
 
 COMMENT =		minimalistic text based status bar
 
-DISTNAME =		xmobar-0.14
+DISTNAME =		xmobar-0.15
 REVISION =		0
 CATEGORIES =		x11
 HOMEPAGE =		http://projects.haskell.org/xmobar
@@ -20,7 +20,7 @@ WANTLIB =	c gmp m pthread util X11 Xext Xft Xinerama Xrandr
 MODULES =		lang/ghc converters/libiconv
 
 MODGHC_BUILD =		cabal hackage nort
-MODGHC_SETUP_CONF_ARGS = --flags="with_xft with_mpd with_utf8"
+MODGHC_SETUP_CONF_ARGS = --flags="with_xft with_mpd"
 
 LIB_DEPENDS =		devel/gmp
 

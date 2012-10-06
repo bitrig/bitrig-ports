@@ -1,17 +1,18 @@
-# $OpenBSD: Makefile,v 1.24 2012/07/05 10:05:34 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.26 2012/09/26 19:49:39 sthen Exp $
 
 COMMENT=		International Components for Unicode
 
 VERSION=		49.1.2
 DISTNAME=		icu4c-${VERSION:S/./_/g}-src
 PKGNAME=		icu4c-${VERSION}
-REVISION =		1
+REVISION =		2
 SO_VERSION=		5.0
 .for _lib in icudata icui18n icuio icule iculx icutest icutu icuuc
 SHARED_LIBS+=		${_lib} ${SO_VERSION}
 .endfor
 SUBST_VARS+=		VERSION
 CATEGORIES=		textproc devel
+DPB_PROPERTIES=		parallel
 
 HOMEPAGE=		http://www.icu-project.org
 

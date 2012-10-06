@@ -1,13 +1,11 @@
-# $OpenBSD: Makefile,v 1.183 2012/09/07 14:40:59 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.189 2012/10/02 20:56:18 landry Exp $
 
 COMMENT=		general-purpose utility library
 
-V=			2.32.4
+V=			2.34.0
 DISTNAME=		glib-${V}
 PKGNAME=		${DISTNAME:S/glib/glib2/}
 EXTRACT_SUFX=		.tar.xz
-
-REVISION=		2
 
 CATEGORIES=		devel
 
@@ -15,11 +13,11 @@ HOMEPAGE=		http://www.gtk.org/
 
 MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
-SHARED_LIBS +=  glib-2.0             3200.0   # 3200.0
-SHARED_LIBS +=  gmodule-2.0          3200.0   # 3200.0
-SHARED_LIBS +=  gthread-2.0          3200.0   # 3200.0
-SHARED_LIBS +=  gobject-2.0          3200.0   # 3200.0
-SHARED_LIBS +=  gio-2.0              3200.0   # 3200.0
+SHARED_LIBS +=  glib-2.0             3400.0   # 3400.0
+SHARED_LIBS +=  gmodule-2.0          3400.0   # 3400.0
+SHARED_LIBS +=  gthread-2.0          3400.0   # 3400.0
+SHARED_LIBS +=  gobject-2.0          3400.0   # 3400.0
+SHARED_LIBS +=  gio-2.0              3400.0   # 3400.0
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes
@@ -37,6 +35,10 @@ MODULES=		devel/gettext \
 MODPY_ADJ_FILES=	glib/gtester-report \
 			gio/gdbus-2.0/codegen/gdbus-codegen.in \
 			gio/tests/gdbus-testserver.py
+
+# man pages
+BUILD_DEPENDS +=	textproc/docbook>=4.5p1 \
+			textproc/libxslt
 
 LIB_DEPENDS=		devel/pcre \
 			devel/libelf \
@@ -59,7 +61,6 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--enable-static \
 			--with-pcre=system \
 			--disable-gtk-doc \
-			--disable-Bsymbolic \
 			--disable-fam \
 			--disable-selinux \
 			--disable-systemtap \
@@ -67,6 +68,12 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
+
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
 
 ### kqueue(2) backend ##################################################
 # https://bugzilla.gnome.org/show_bug.cgi?id=679793
@@ -77,7 +84,8 @@ BUILD_DEPENDS+=		${MODGNU_AUTOCONF_DEPENDS} \
 			devel/libtool
 #MASTER_SITES0=		http://dmitrymatveev.co.uk/files/
 MASTER_SITES0=		http://distfiles.bsdfrog.org/
-PATCHFILES=		glib-gio-kqueue-2.32.1-v1.patch:0
+PATCHFILES=		glib-gio-kqueue-2.32.4-v3.patch:0
+PATCH_DIST_STRIP=	-p1
 AUTO_ENV=		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
 			AUTOCONF_VERSION=${AUTOCONF_VERSION}
 post-patch:
@@ -99,10 +107,5 @@ pre-configure:
 		${WRKSRC}/gio/gdbusconnection.c \
 		${WRKSRC}/gio/gdbusprivate.c \
 		${WRKSRC}/po/*.po
-
-post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/glib2
-	${INSTALL_DATA} ${FILESDIR}/gio-kqueue.conf \
-		${PREFIX}/share/examples/glib2
 
 .include <bsd.port.mk>

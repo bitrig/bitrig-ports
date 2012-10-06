@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.13 2012/07/13 02:26:03 gsoares Exp $
+# $OpenBSD: Makefile,v 1.15 2012/09/27 17:26:05 ajacoutot Exp $
 
 COMMENT =		C/C++ static checker
 
-DISTNAME =		cppcheck-1.55
+DISTNAME =		cppcheck-1.56
 
 CATEGORIES =		devel
 
@@ -18,8 +18,7 @@ PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		c m pcre stdc++
 
-BUILD_DEPENDS =		textproc/docbook-xsl \
-			textproc/libxslt
+BUILD_DEPENDS =		textproc/docbook-xsl
 
 LIB_DEPENDS =		devel/pcre
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.769 2012/09/12 08:26:27 sthen Exp $
+# $OpenBSD: Makefile,v 1.778 2012/10/03 19:27:18 bluhm Exp $
 
      SUBDIR =
      SUBDIR += BitTorrent
@@ -56,6 +56,7 @@
      SUBDIR += cvsup
      SUBDIR += cvsup,no_x11
      SUBDIR += cvsync
+     SUBDIR += daq
      SUBDIR += darkstat
      SUBDIR += dclib
      SUBDIR += ddclient
@@ -103,6 +104,7 @@
      SUBDIR += gnaughty
      SUBDIR += gnugk
      SUBDIR += gopher
+     SUBDIR += gophernicus
      SUBDIR += gotthard
      SUBDIR += gpodder
      SUBDIR += grake
@@ -231,6 +233,7 @@
      SUBDIR += netsed
      SUBDIR += nfdump
      SUBDIR += nfsen
+     SUBDIR += ngircd
      SUBDIR += ngrep
      SUBDIR += nicotine
      SUBDIR += nload
@@ -306,12 +309,14 @@
      SUBDIR += p5-Net-Google
      SUBDIR += p5-Net-ICQ2000
      SUBDIR += p5-Net-ICal
+     SUBDIR += p5-Net-IMP
      SUBDIR += p5-Net-INET6Glue
      SUBDIR += p5-Net-IP
      SUBDIR += p5-Net-IPTrie
      SUBDIR += p5-Net-IPv4Addr
      SUBDIR += p5-Net-IPv6Addr
      SUBDIR += p5-Net-IRC
+     SUBDIR += p5-Net-Inspect
      SUBDIR += p5-Net-Jabber
      SUBDIR += p5-Net-MySQL
      SUBDIR += p5-Net-NTP
@@ -323,6 +328,7 @@
      SUBDIR += p5-Net-Patricia
      SUBDIR += p5-Net-Pcap
      SUBDIR += p5-Net-Pcap-Reassemble
+     SUBDIR += p5-Net-PcapWriter
      SUBDIR += p5-Net-Ping-External
      SUBDIR += p5-Net-Radius
      SUBDIR += p5-Net-RawIP
@@ -482,11 +488,9 @@
      SUBDIR += rtmpdump
      SUBDIR += rtorrent
      SUBDIR += ruby-amqp
-     SUBDIR += ruby-amqp-utils
      SUBDIR += ruby-bunny
-     SUBDIR += ruby-errand
      SUBDIR += ruby-eventmachine
-     SUBDIR += ruby-eventmachine,ruby19
+     SUBDIR += ruby-eventmachine,ruby18
      SUBDIR += ruby-minion
      SUBDIR += ruby-net-dns
      SUBDIR += ruby-net-scp
@@ -521,8 +525,6 @@
      SUBDIR += smokeping
      SUBDIR += snmptt
      SUBDIR += snort
-     SUBDIR += snort,mysql
-     SUBDIR += snort,postgresql
      SUBDIR += socat
      SUBDIR += softflowd
      SUBDIR += spectrum

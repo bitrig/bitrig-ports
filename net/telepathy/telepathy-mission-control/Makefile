@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.35 2012/08/29 18:27:53 jasper Exp $
+# $OpenBSD: Makefile,v 1.40 2012/09/29 14:01:54 ajacoutot Exp $
 
 COMMENT=		abstraction layer between apps and connection managers
 
-DISTNAME=		telepathy-mission-control-5.12.0
-REVISION=		0
+DISTNAME=		telepathy-mission-control-5.12.3
 
 SHARED_LIBS +=  mission-control-plugins 1.1      # 3.1
 
@@ -25,10 +24,16 @@ LIBTOOL_FLAGS=		--tag=disable-static
 
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--disable-static \
-			--disable-gtk-doc \
-			--disable-gnome-keyring \
-			--disable-upower \
-			--enable-mcclient-so6 \
+			--disable-gtk-doc
+
+# both are dependant
+CONFIGURE_ARGS+=	--disable-upower \
 			--with-connectivity=no
+
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.15 2012/08/04 15:00:16 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.17 2012/09/27 06:55:04 ajacoutot Exp $
 
 COMMENT=	device color profile management daemon
 
-DISTNAME=	colord-0.1.22
+DISTNAME=	colord-0.1.23
 EXTRACT_SUFX=	.tar.xz
 
 SHARED_LIBS +=  colord               0.1      # 1.11
@@ -53,6 +53,12 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--with-daemon-user=_colord \
 		--disable-sane # needs gudev, libgusb
 
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
+
 FAKE_FLAGS=	sysconfdir="${PREFIX}/share/examples/colord"
 
 pre-configure:
@@ -66,6 +72,6 @@ pre-configure:
 		${WRKSRC}/configure
 
 post-install:
-	rm -r ${WRKINST}/lib
+	rm -r ${WRKINST}/rules.d
 
 .include <bsd.port.mk>

@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.78 2012/09/01 14:36:59 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.82 2012/10/02 15:58:02 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	password agent for the GNOME project
 
 GNOME_PROJECT=	gnome-keyring
-GNOME_VERSION=	3.4.1
+GNOME_VERSION=	3.6.0
 REVISION=	1
 
 HOMEPAGE=	https://live.gnome.org/GnomeKeyring
@@ -23,16 +23,17 @@ WANTLIB += gck-1 gcr-3 gcr-base-3 gcrypt gdk-3 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gpg-error
 WANTLIB += gthread-2.0 gtk-3 m p11-kit pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
-WANTLIB += stdc++ xcb xcb-render xcb-shm z
+WANTLIB += stdc++ xcb xcb-render xcb-shm z icuuc
+WANTLIB += ICE SM atk-bridge-2.0 atspi harfbuzz icudata icule
 
 MODULES=	devel/gettext \
 		x11/gnome \
 		devel/dconf
 
-# only required during build for parsing ASN.1 files
+# asn1Parser(1) is used by configure for parsing ASN.1 files
 BUILD_DEPENDS += security/libtasn1
 
-LIB_DEPENDS=	x11/gnome/gcr
+LIB_DEPENDS=	x11/gnome/gcr>=3.6.0
 
 LIBTOOL_ARGS=	--tag=disable-static
 
@@ -46,5 +47,7 @@ FAKE_FLAGS=	configdir=${PREFIX}/share/examples/gnome-keyring/pkcs11/modules
 
 post-install:
 	mv ${WRKINST}/etc/xdg ${PREFIX}/share/examples/gnome-keyring
+	rm ${PREFIX}/lib/gnome-keyring/devel/*.{a,la}
+	rm ${PREFIX}/lib/pkcs11/*.{a,la}
 
 .include <bsd.port.mk>

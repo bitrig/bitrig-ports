@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2012/08/04 14:59:04 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.3 2012/09/28 08:17:44 ajacoutot Exp $
 
 COMMENT=	GTK+ support library for colord
 
-DISTNAME=	colord-gtk-0.1.22
+DISTNAME=	colord-gtk-0.1.23
 EXTRACT_SUFX=	.tar.xz
 
 SHARED_LIBS +=  colord-gtk           0.0      # 1.0
@@ -25,7 +25,8 @@ WANTLIB += colord drm expat ffi fontconfig freetype gdk-3 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-3 lcms2 m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png pthread-stubs stdc++ xcb xcb-render
-WANTLIB += xcb-shm z
+WANTLIB += icule icuuc pthread xcb-shm z
+WANTLIB += ICE SM atk-bridge-2.0 atspi dbus-1 harfbuzz icudata
 
 MASTER_SITES=	http://www.freedesktop.org/software/colord/releases/
 
@@ -48,6 +49,12 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--enable-introspection \
 		--disable-gtk-doc
+
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
 
 pre-configure:
 	perl -pi -e 's,-Wclobbered,,g;' \

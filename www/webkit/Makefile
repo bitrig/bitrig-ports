@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.71 2012/09/06 12:38:35 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.75 2012/10/03 06:35:46 ajacoutot Exp $
 
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
@@ -9,8 +9,9 @@ DISTNAME =	webkit-${V}
 REVISION =	0
 EPOCH =		0
 CATEGORIES =	www
+DPB_PROPERTIES =parallel
 EXTRACT_SUFX=	.tar.xz
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE =	http://webkitgtk.org/
 MASTER_SITES =	${HOMEPAGE}/releases/
@@ -42,6 +43,12 @@ CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include/libpng -I${LOCALBASE}/include -
 		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib -lX11" \
 		ac_cv_path_FLEX=${LOCALBASE}/bin/gflex
 
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
+
 LIBTOOL_FLAGS =	--tag=disable-static
 CONFIGURE_ARGS+=${CONFIGURE_SHARED} \
 		--disable-static \
@@ -57,9 +64,6 @@ MAKE_FILE =	GNUmakefile
 .if ${MACHINE_ARCH:Msparc64}
 MAKE_FLAGS=	EXTRA_FLAGS="-O0"
 .endif
-
-RUN_DEPENDS =	multimedia/gstreamer-0.10/plugins-ffmpeg \
-		multimedia/gstreamer-0.10/plugins-good
 
 WANTLIB =	ICE SM X11 Xcomposite Xcursor Xdamage Xext \
 		Xfixes Xi Xinerama Xrandr Xrender Xt atk-1.0 c xcb-render \
@@ -85,6 +89,8 @@ BUILD_DEPENDS =	devel/bison \
 		devel/flex \
 		devel/gperf \
 		devel/gobject-introspection
+# required for parallel building
+BUILD_DEPENDS+=	gmake->=3.82p2:devel/gmake
 
 FLAVORS = gtk3
 FLAVOR ?=

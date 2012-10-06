@@ -1,11 +1,11 @@
-$OpenBSD: patch-src_tree_c,v 1.4 2012/03/29 11:44:21 ajacoutot Exp $
+$OpenBSD: patch-src_tree_c,v 1.6 2012/09/27 08:00:06 jasper Exp $
 
 https://bugzilla.gnome.org/show_bug.cgi?id=653468
 --auto-close broken by fix for #540560
 
---- src/tree.c.orig	Fri Mar 23 14:46:09 2012
-+++ src/tree.c	Thu Mar 29 13:42:37 2012
-@@ -187,7 +187,7 @@ zenity_tree_handle_stdin (GIOChannel  *channel,
+--- src/tree.c.orig	Wed Sep 26 00:46:11 2012
++++ src/tree.c	Wed Sep 26 09:22:29 2012
+@@ -225,7 +225,7 @@ zenity_tree_handle_stdin (GIOChannel  *channel,
      g_string_free (string, TRUE);
    }
  

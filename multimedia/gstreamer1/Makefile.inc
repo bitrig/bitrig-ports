@@ -1,19 +1,19 @@
-# $OpenBSD: Makefile.inc,v 1.1 2012/09/06 12:57:49 ajacoutot Exp $
+# $OpenBSD: Makefile.inc,v 1.5 2012/09/22 09:25:06 ajacoutot Exp $
 
 # Most frequent usage of the GStreamer packages:
 # core		base library
-# plugins-base	minimal set: gio, playback, Ogg Vorbis
-# plugins-good	audio (sndio), volume control
+# plugins-base	minimal set: audio (sndio), gio, playback, Ogg Vorbis
+# plugins-good	audio mixer (oss)
 # plugins-ugly	mp3 decoding, dvd
 # plugins-bad	vaapi
 # plugins-libav	divx, mpeg4, h264, vp8 (same decoding capabilities as FFmpeg)
 #
 # i.e. applications that use GStreamer require:
-#     gstreamer-plugins-base and gstreamer-plugins-good
+#     gstreamer1-plugins-base and gstreamer1-plugins-good
 # audio/video support for MP3 decoding requires:
-#     gstreamer-plugins-ugly
+#     gstreamer1-plugins-ugly
 # support for most video codecs is provided by
-#     gstreamer-plugins-ffmpeg
+#     gstreamer1-plugins-libav
 
 SHARED_ONLY=		Yes
 
@@ -73,6 +73,12 @@ CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
 			--disable-gtk-doc \
 			--disable-valgrind \
 			--disable-static
+
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
 
 CPPFLAGS +=		-I${LOCALBASE}/include \
 			-I${LOCALBASE}/include/libpng \

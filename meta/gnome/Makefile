@@ -1,16 +1,16 @@
-# $OpenBSD: Makefile,v 1.29 2012/08/04 15:11:36 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.34 2012/10/04 07:07:16 ajacoutot Exp $
 
 COMMENT-main=	GNOME desktop meta-package (base installation)
 COMMENT-extra=	GNOME desktop meta-package (full installation)
 
-V=		3.4.2
+V=		3.6.0.1
 PKGNAME=	gnome-${V}
 
 PKGNAME-main=	gnome-${V}
 PKGNAME-extra=	gnome-extra-${V}
 
-REVISION-main=	8
-REVISION-extra=	2
+REVISION-main=	1
+REVISION-extra=	0
 
 MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
 		Antoine Jacoutot <ajacoutot@openbsd.org>
@@ -27,7 +27,6 @@ RUN_DEPENDS-main += \
 		x11/gnome/file-roller \
 		x11/gnome/gedit \
 		x11/gnome/keyring \
-		x11/gnome/media \
 		x11/gnome/nautilus \
 		x11/gnome/session \
 		x11/gnome/system-monitor \
@@ -39,10 +38,6 @@ RUN_DEPENDS-main += devel/gconf2,-polkit
 
 # colord and gtk+3 are already dependencies (obviously)
 RUN_DEPENDS-main += graphics/colord-gtk
-
-# Install accessibility components -- daemons will start only if
-# accessibility is enabled by the user.
-RUN_DEPENDS-main += x11/gnome/at-spi2-atk
 
 # GNOME spooler is CUPS (gnome-printers-panel in gnome-control-center),
 # add gtk+3-cups so that gtkprint() can see native CUPS printers.
@@ -66,6 +61,7 @@ RUN_DEPENDS-main += \
 
 # "Make it fancy!"
 RUN_DEPENDS-main += \
+		x11/gnome/clocks \
 		x11/gnome/documents \
 		x11/gnome/eog-plugins \
 		x11/gnome/gedit-plugins \
@@ -95,7 +91,6 @@ RUN_DEPENDS-extra += \
 		x11/gnome/icon-theme-extras \
 		x11/gnome/nautilus-sendto \
 		x11/gnome/totem,-nautilus \
-		x11/gnome/tracker,-evolution \
 		x11/gnome/vinagre \
 		x11/gnome/vino
 

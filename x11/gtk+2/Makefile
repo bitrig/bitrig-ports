@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.149 2012/09/03 22:18:54 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.152 2012/09/24 04:47:09 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT-main=	multi-platform graphical toolkit
 COMMENT-guic=	gtk+ icon theme caching utility
 
-V=		2.24.12
+V=		2.24.13
 DISTNAME=	gtk+-${V}
 
 PKGNAME-main=	gtk+2-${V}
@@ -56,6 +56,7 @@ WANTLIB-main += GL X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes
 WANTLIB-main += Xi Xinerama Xrandr Xrender Xxf86vm cairo drm expat
 WANTLIB-main += fontconfig freetype pixman-1 pthread-stubs stdc++ xcb
 WANTLIB-main += xcb-render xcb-shm png asn1 crypto cups gssapi krb5 ssl
+WANTLIB-main += harfbuzz icudata icule icuuc
 
 # python is only used by gtk-builder-convert, so let's not enforce the
 # dependency
@@ -84,6 +85,12 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--enable-introspection \
 		--with-xinput \
 		--disable-papi
+
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
 
 FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/gtk+2
 

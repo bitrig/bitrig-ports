@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2012/09/04 09:06:12 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.22 2012/09/27 17:26:05 ajacoutot Exp $
 
 ONLY_FOR_ARCHS =${APM_ARCHS}
 
@@ -33,6 +33,13 @@ CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
 
 CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
+
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
+
 FAKE_FLAGS =	sysconfdir=${PREFIX}/share/examples/upower
 
 USE_GMAKE =	Yes
@@ -43,7 +50,6 @@ MODULES =	textproc/intltool
 LIB_DEPENDS =	sysutils/polkit>=0.101 \
 		x11/dbus-glib
 BUILD_DEPENDS =	devel/gobject-introspection \
-		textproc/libxslt,-main \
 		textproc/docbook-xsl
 
 WANTLIB += c dbus-1 dbus-glib-1 glib-2.0 gobject-2.0 gthread-2.0

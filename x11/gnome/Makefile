@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.187 2012/08/16 13:14:30 stsp Exp $
+# $OpenBSD: Makefile,v 1.193 2012/10/03 08:06:26 ajacoutot Exp $
 
      SUBDIR =
      SUBDIR += anjuta
@@ -10,6 +10,7 @@
      SUBDIR += baker
      SUBDIR += baobab
      SUBDIR += caribou
+     SUBDIR += clocks
      SUBDIR += color-manager
      SUBDIR += common
      SUBDIR += contacts
@@ -24,7 +25,6 @@
      SUBDIR += empathy
      SUBDIR += eog
      SUBDIR += eog-plugins
-     SUBDIR += f-spot
      SUBDIR += file-roller
      SUBDIR += font-viewer
      SUBDIR += games
@@ -32,7 +32,6 @@
      SUBDIR += gcalctool
      SUBDIR += gcr
      SUBDIR += gdl
-     SUBDIR += gdl1
      SUBDIR += gdlmm
      SUBDIR += gdm
      SUBDIR += gedit
@@ -54,9 +53,7 @@
      SUBDIR += icon-theme
      SUBDIR += icon-theme-extras
      SUBDIR += icon-theme-symbolic
-     SUBDIR += js-common
      SUBDIR += keyring
-     SUBDIR += krb5-auth-dialog
      SUBDIR += latexila
      SUBDIR += libbonobo
      SUBDIR += libbonoboui
@@ -65,7 +62,6 @@
      SUBDIR += libgdamm
      SUBDIR += libgnome
      SUBDIR += libgnome-keyring
-     SUBDIR += libgnome-media-profiles
      SUBDIR += libgnomecanvas
      SUBDIR += libgnomecanvasmm
      SUBDIR += libgnomekbd
@@ -74,12 +70,11 @@
      SUBDIR += librsvg
      SUBDIR += libsecret
      SUBDIR += libxklavier
-     SUBDIR += media
+     SUBDIR += libzapojit
      SUBDIR += menus
      SUBDIR += metacity
      SUBDIR += mime-data
      SUBDIR += mono-gnome
-     SUBDIR += mono-keyring
      SUBDIR += moserial
      SUBDIR += mousetweaks
      SUBDIR += mutter
@@ -101,7 +96,6 @@
      SUBDIR += seahorse-nautilus
      SUBDIR += seahorse-sharing
      SUBDIR += search-tool
-     SUBDIR += seed
      SUBDIR += session
      SUBDIR += settings-daemon
      SUBDIR += shell

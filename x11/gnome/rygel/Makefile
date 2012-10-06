@@ -1,11 +1,18 @@
-# $OpenBSD: Makefile,v 1.20 2012/08/12 20:51:02 jasper Exp $
+# $OpenBSD: Makefile,v 1.22 2012/09/29 10:52:28 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
 COMMENT=		home media solution that allows easy media sharing
 
 GNOME_PROJECT=		rygel
-GNOME_VERSION=		0.14.3
+GNOME_VERSION=		0.16.0
+REVISION=		1
+
+SHARED_LIBS +=	rygel-core-1.0            0.0 # 0.0
+SHARED_LIBS +=	rygel-renderer-1.0        0.0 # 0.0
+SHARED_LIBS +=	rygel-server-1.0          0.0 # 0.0
+
+TRACKER_VERSION=	0.14
 
 CATEGORIES=		multimedia
 
@@ -27,6 +34,10 @@ WANTLIB += gtk-3 gupnp-1.0 gupnp-av-1.0 gupnp-dlna-1.0 m orc-0.4
 WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB += png pthread pthread-stubs soup-2.4 sqlite3 stdc++ unistring
 WANTLIB += xcb xcb-render xcb-shm xml2 z
+WANTLIB += ICE SM atk-bridge-2.0 atspi dbus-1 harfbuzz icudata
+WANTLIB += icule icuuc kvm tracker-sparql-${TRACKER_VERSION}
+WANTLIB += lib/tracker-${TRACKER_VERSION}/tracker-common
+WANTLIB += lib/tracker-${TRACKER_VERSION}/tracker-data
 
 MODULES=		devel/gettext \
 			x11/gnome
@@ -37,7 +48,8 @@ LIB_DEPENDS=		converters/libunistring \
 			devel/libgee06 \
 			net/gupnp/av \
 			net/gupnp/dlna \
-			x11/gtk+3
+			x11/gtk+3 \
+			x11/gnome/tracker>=${TRACKER_VERSION}
 
 MODGNOME_DESKTOP_FILE=	Yes
 MODGNOME_ICON_CACHE=	Yes
@@ -54,5 +66,8 @@ CONFIGURE_ARGS+=	--disable-static \
 			--disable-mediathek-plugin
 
 FAKE_FLAGS+=		sysconfdir=${PREFIX}/share/examples/rygel/
+
+post-install:
+	rm ${PREFIX}/lib/rygel-1.0/*.la
 
 .include <bsd.port.mk>

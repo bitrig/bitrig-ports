@@ -1,17 +1,17 @@
-# $OpenBSD: Makefile,v 1.46 2012/08/29 18:27:53 jasper Exp $
+# $OpenBSD: Makefile,v 1.48 2012/09/28 14:26:40 jasper Exp $
 
 COMMENT=		flexible communications framework, glib bindings
 
-DISTNAME=		telepathy-glib-0.18.1
+DISTNAME=		telepathy-glib-0.19.10
 
-SHARED_LIBS +=	telepathy-glib       70.0      # 70.1
+SHARED_LIBS +=	telepathy-glib       77.0      # 77.0
 
 HOMEPAGE=		${HOMEPAGE_TP:=Telepathy GLib}
 
 MASTER_SITES=		${MASTER_SITES_TP:=telepathy-glib/}
 
 WANTLIB += dbus-1 ffi gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
-WANTLIB += dbus-glib-1 pcre z
+WANTLIB += dbus-glib-1 pcre z pthread
 
 MODULES=		devel/gettext \
 			lang/python
@@ -29,5 +29,11 @@ CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--enable-introspection \
 			--enable-vala-bindings
 #CONFIGURE_ARGS+=	--enable-backtrace (add -llibexecinfo)
+
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
 
 .include <bsd.port.mk>

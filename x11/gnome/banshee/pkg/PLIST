@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.2 2012/06/15 08:30:19 ajacoutot Exp $
+@comment $OpenBSD: PLIST,v 1.4 2012/09/30 07:01:14 ajacoutot Exp $
 bin/bamz
 bin/banshee
 bin/muinshee
@@ -14,7 +14,6 @@ lib/banshee/Backends/Banshee.NowPlaying.X11.dll.mdb
 lib/banshee/Backends/Banshee.Unix.dll
 lib/banshee/Backends/Banshee.Unix.dll.config
 lib/banshee/Backends/Banshee.Unix.dll.mdb
-@comment lib/banshee/Backends/libbnpx11.la
 lib/banshee/Backends/libbnpx11.so
 lib/banshee/Banshee.CollectionIndexer.dll
 lib/banshee/Banshee.CollectionIndexer.dll.mdb
@@ -44,8 +43,6 @@ lib/banshee/Extensions/Banshee.AmazonMp3.exe
 lib/banshee/Extensions/Banshee.AmazonMp3.exe.mdb
 lib/banshee/Extensions/Banshee.Audiobook.dll
 lib/banshee/Extensions/Banshee.Audiobook.dll.mdb
-lib/banshee/Extensions/Banshee.BooScript.dll
-lib/banshee/Extensions/Banshee.BooScript.dll.mdb
 lib/banshee/Extensions/Banshee.Bpm.dll
 lib/banshee/Extensions/Banshee.Bpm.dll.mdb
 lib/banshee/Extensions/Banshee.CoverArt.dll
@@ -129,9 +126,7 @@ lib/banshee/MusicBrainz.dll.mdb
 lib/banshee/Nereid.exe
 lib/banshee/Nereid.exe.mdb
 lib/banshee/gconf-schema-extractor.exe
-@comment lib/banshee/libbanshee.la
 lib/banshee/libbanshee.so
-@comment lib/banshee/libossifer.la
 lib/banshee/libossifer.so
 lib/monodoc/sources/banshee-docs.source
 lib/monodoc/sources/banshee-docs.tree
@@ -158,6 +153,7 @@ share/applications/banshee.desktop
 share/banshee/
 share/banshee/audio-profiles/
 share/banshee/audio-profiles/aac-novell.xml
+share/banshee/audio-profiles/aac.xml
 share/banshee/audio-profiles/base.xml
 share/banshee/audio-profiles/flac.xml
 share/banshee/audio-profiles/mp3-lame.xml
@@ -702,6 +698,7 @@ share/locale/lv/LC_MESSAGES/banshee.mo
 share/locale/mk/LC_MESSAGES/banshee.mo
 share/locale/nb/LC_MESSAGES/banshee.mo
 share/locale/nl/LC_MESSAGES/banshee.mo
+share/locale/nn/LC_MESSAGES/banshee.mo
 share/locale/oc/LC_MESSAGES/banshee.mo
 share/locale/pa/LC_MESSAGES/banshee.mo
 share/locale/pl/LC_MESSAGES/banshee.mo

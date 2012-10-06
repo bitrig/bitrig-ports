@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.10 2011/09/16 11:41:41 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2012/09/23 16:57:35 jeremy Exp $
 
 COMMENT=		iCalendar support for Ruby
 
-DISTNAME=		icalendar-1.1.0
-REVISION =		4
+DISTNAME=		icalendar-1.2.0
+REVISION =		0
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://icalendar.rubyforge.org/
@@ -18,9 +18,6 @@ MODULES=		lang/ruby
 
 CONFIGURE_STYLE=	ruby gem
 
-MODRUBY_REGRESS=	rake
-
-do-regress:
-	@cd ${WRKDIST} && ${SETENV} TZ=GMT ${RAKE} test
+NO_REGRESS=		Yes
 
 .include <bsd.port.mk>

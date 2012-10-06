@@ -1,6 +1,9 @@
-# $OpenBSD: Makefile,v 1.4 2012/08/20 12:51:55 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.7 2012/09/29 07:17:47 landry Exp $
 
 SHARED_ONLY=	Yes
+# 1.8.5 is based on ffx 10 engine, broken at runtime on sparc64
+# but let's keep it to build more packages
+ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64
 
 COMMENT =	Mozilla C implementation of JavaScript
 
@@ -8,7 +11,7 @@ MOZILLA_VERSION =	1.8.5
 DISTNAME =		js185-1.0.0
 PKGNAME =		spidermonkey-${MOZILLA_VERSION}
 PKGSPEC =		spidermonkey->=1.8,<1.9
-REVISION =		2
+REVISION =		3
 
 SO_VERSION =	0.0
 SHARED_LIBS =	mozjs185 ${SO_VERSION}
@@ -24,6 +27,8 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB += c m pthread readline nspr4 ncurses plc4 plds4 stdc++
+
+VMEM_WARNING =	Yes
 
 .if ${MACHINE_ARCH} == "i386"
 PKG_ARGS+=	-Djit=1 -Damd64=0

@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.86 2012/09/01 14:36:59 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.89 2012/09/30 12:43:41 jasper Exp $
 
 COMMENT=		lightweight GNOME text editor
 
 GNOME_PROJECT=		gedit
-GNOME_VERSION=		3.4.2
-REVISION=	0
+GNOME_VERSION=		3.6.0
+REVISION=		1
 
 CATEGORIES=		editors
 
@@ -24,6 +24,8 @@ WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 gtk-3
 WANTLIB += gtksourceview-3.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre peas-1.0 peas-gtk-1.0 pixman-1 png pthread pthread-stubs
 WANTLIB += stdc++ xcb xcb-render xcb-shm xml2 z
+WANTLIB += atk-bridge-2.0 atspi dbus-1 harfbuzz icudata icule
+WANTLIB += icuuc zeitgeist-1.0
 
 MODULES=		devel/dconf \
 			devel/gettext \
@@ -34,6 +36,7 @@ BUILD_DEPENDS=		devel/gsettings-desktop-schemas \
 			devel/iso-codes
 
 LIB_DEPENDS=		devel/libpeas>=1.1.4p1 \
+			productivity/libzeitgeist \
 			textproc/enchant \
 			x11/gtksourceview3
 
@@ -47,12 +50,13 @@ LIBTOOL_FLAGS=		--tag=disable-static
 CONFIGURE_ARGS=		--disable-static \
 			--enable-python \
 			--enable-spell \
+			--enable-zeitgeist \
 			--enable-gvfs-metadata \
-			--disable-updater \
-			--disable-zeitgeist
+			--disable-updater
 
 REGRESS_IS_INTERACTIVE=	X11
 
-USE_GROFF=		Yes
+post-install:
+	rm ${PREFIX}/lib/gedit/plugins/*.la
 
 .include <bsd.port.mk>

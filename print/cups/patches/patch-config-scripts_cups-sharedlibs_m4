@@ -1,7 +1,8 @@
-$OpenBSD: patch-config-scripts_cups-sharedlibs_m4,v 1.7 2012/08/04 14:37:04 ajacoutot Exp $
+$OpenBSD$
 --- config-scripts/cups-sharedlibs.m4.orig	Fri Jan 20 17:22:58 2012
-+++ config-scripts/cups-sharedlibs.m4	Thu Jul 26 11:15:00 2012
-@@ -79,11 +79,11 @@ if test x$enable_shared != xno; then
++++ config-scripts/cups-sharedlibs.m4	Fri Oct  5 22:58:53 2012
+@@ -78,15 +78,15 @@ if test x$enable_shared != xno; then
+ 			DSOXX="\$(CXX)"
  			DSOFLAGS="$DSOFLAGS -set_version,sgi2.6,-soname,\`basename \$@\` -shared \$(OPTIM)"
  			;;
 -		OSF1* | Linux | GNU | *BSD*)
@@ -10,7 +11,7 @@ $OpenBSD: patch-config-scripts_cups-sharedlibs_m4,v 1.7 2012/08/04 14:37:04 ajac
 -			LIBCUPSIMAGE="libcupsimage.so.2"
 -			LIBCUPSMIME="libcupsmime.so.1"
 -			LIBCUPSPPDC="libcupsppdc.so.1"
-+		OSF1* | Linux | GNU | *BSD* | Bitrig*)
++		OSF1* | Linux | GNU | *BSD* | *Bitrig*)
 +			LIBCUPS="lib$cupsbase.so.${LIBcups_VERSION}"
 +			LIBCUPSCGI="libcupscgi.so.${LIBcupscgi_VERSION}"
 +			LIBCUPSIMAGE="libcupsimage.so.${LIBcupsimage_VERSION}"
@@ -18,13 +19,17 @@ $OpenBSD: patch-config-scripts_cups-sharedlibs_m4,v 1.7 2012/08/04 14:37:04 ajac
 +			LIBCUPSPPDC="libcupsppdc.so.${LIBcupsppdc_VERSION}"
  			DSO="\$(CC)"
  			DSOXX="\$(CXX)"
- 			DSOFLAGS="$DSOFLAGS -Wl,-soname,\`basename \$@\` -shared \$(OPTIM)"
-@@ -235,7 +235,7 @@ if test "$DSO" != ":"; then
+-			DSOFLAGS="$DSOFLAGS -Wl,-soname,\`basename \$@\` -shared \$(OPTIM)"
++			DSOFLAGS="$DSOFLAGS -shared \$(OPTIM)"
+ 			;;
+ 		Darwin*)
+ 			LIBCUPS="lib$cupsbase.2.dylib"
+@@ -207,7 +207,7 @@ if test "$DSO" != ":"; then
  				EXPORT_LDFLAGS="-R$libdir"
  			fi
  			;;
 -                *BSD*)
-+                *BSD* | Bitrig*)
++                *BSD* | *Bitrig*)
                          # *BSD...
  			if test $exec_prefix != /usr; then
  				DSOFLAGS="-Wl,-R$libdir $DSOFLAGS"

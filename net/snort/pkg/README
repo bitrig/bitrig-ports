@@ -1,0 +1,16 @@
+$OpenBSD: README,v 1.1 2012/09/26 02:11:05 lteo Exp $
+
++-----------------------------------------------------------------------
+| Running ${FULLPKGNAME} on OpenBSD
++-----------------------------------------------------------------------
+
+An up-to-date set of rules is needed for Snort to be useful as an IDS.
+These can be downloaded manually or net/oinkmaster can be used to
+download the latest rules from several different sources.
+
+It is recommended that snort be run as an unprivileged chrooted user.
+A _snort user/group and a log directory have been created for this
+purpose. You should start snort with the following options to take
+advantage of this:
+
+  -c /etc/snort/snort.conf -u _snort -g _snort -t /var/snort -l /var/snort/log

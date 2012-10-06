@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.2 2012/09/06 14:22:49 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.5 2012/09/26 07:39:17 ajacoutot Exp $
 
 COMMENT=		ugly elements for GStreamer
 
-V=			0.11.93
+V=			1.0.0
 DISTNAME=		gst-plugins-ugly-${V}
 PKGNAME=		${GST_PKGNAME_PREFIX}-plugins-ugly-${V}
 

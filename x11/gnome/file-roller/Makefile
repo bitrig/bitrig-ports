@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.71 2012/09/01 14:36:59 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.74 2012/09/29 10:10:45 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -6,12 +6,11 @@ COMMENT-main=		archive manager utility for GNOME
 COMMENT-nautilus=	file-roller plugin for nautilus
 
 GNOME_PROJECT=		file-roller
-GNOME_VERSION=		3.4.2
+GNOME_VERSION=		3.6.0
 
 PKGNAME-main=		${DISTNAME}
 PKGNAME-nautilus=	nautilus-${DISTNAME}
 
-REVISION-main=		1
 REVISION-nautilus=	0
 
 CATEGORIES=		archivers
@@ -28,7 +27,9 @@ WANTLIB += cairo-gobject drm expat fontconfig freetype gdk-3 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-3 m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB += pixman-1 png pthread-stubs xcb xcb-render xcb-shm
-WANTLIB += z ffi stdc++
+WANTLIB += z ffi stdc++ pthread
+WANTLIB += ICE SM atk-bridge-2.0 atspi dbus-1 harfbuzz icudata
+WANTLIB += icule icuuc
 
 MODULES=		devel/dconf \
 			devel/gettext \
@@ -36,17 +37,23 @@ MODULES=		devel/dconf \
 
 MULTI_PACKAGES= 	-main -nautilus
 
-WANTLIB-main=		${WANTLIB} c pthread
+WANTLIB-main=		${WANTLIB} bz2 c lzma archive json-glib-1.0 notify
 RUN_DEPENDS-main=	archivers/gcpio \
 			archivers/gtar \
 			archivers/p7zip \
-			archivers/unrar \
 			archivers/unzip \
 			archivers/xz \
 			archivers/zip \
 			sysutils/cdrtools \
 			${RUN_DEPENDS}
-LIB_DEPENDS-main=	x11/gtk+3
+
+# "The Unarchiver" has not been ported to OpenBSD yet
+RUN_DEPENDS-main +=	archivers/unrar
+
+LIB_DEPENDS-main=	archivers/libarchive \
+			devel/json-glib \
+			devel/libnotify \
+			x11/gtk+3
 
 WANTLIB-nautilus=	${WANTLIB} nautilus-extension
 LIB_DEPENDS-nautilus=	x11/gnome/nautilus
@@ -56,5 +63,8 @@ MODGNOME_TOOLS= 	yelp
 MODGNOME_DESKTOP_FILE=		Yes
 
 CONFIGURE_ARGS=		--disable-packagekit
+
+post-install:
+	rm ${PREFIX}/lib/nautilus/extensions-3.0/*.{a,la}
 
 .include <bsd.port.mk>

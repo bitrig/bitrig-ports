@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.287 2012/08/18 07:25:25 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.290 2012/09/29 12:11:28 ajacoutot Exp $
 
      SUBDIR =
      SUBDIR += abcde
@@ -23,6 +23,7 @@
      SUBDIR += caps-plugins
      SUBDIR += cdparanoia
      SUBDIR += celt
+     SUBDIR += celt051
      SUBDIR += cmixer
      SUBDIR += cmt
      SUBDIR += cmu-sphinx3
@@ -83,6 +84,7 @@
      SUBDIR += libmpd
      SUBDIR += libmpdclient
      SUBDIR += libmusicbrainz
+     SUBDIR += libmusicbrainz5
      SUBDIR += libnjb
      SUBDIR += libofa
      SUBDIR += libogg
@@ -186,9 +188,9 @@
      SUBDIR += rsynth
      SUBDIR += rtunes
      SUBDIR += ruby-id3lib
-     SUBDIR += ruby-id3lib,ruby19
+     SUBDIR += ruby-id3lib,ruby18
      SUBDIR += ruby-vorbis_comment
-     SUBDIR += ruby-vorbis_comment,ruby19
+     SUBDIR += ruby-vorbis_comment,ruby18
      SUBDIR += scmpc
      SUBDIR += shell-fm
      SUBDIR += shntool

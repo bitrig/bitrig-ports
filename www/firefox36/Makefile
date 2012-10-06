@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.25 2012/09/01 14:35:06 landry Exp $
+# $OpenBSD: Makefile,v 1.27 2012/09/22 10:30:17 landry Exp $
 
 COMMENT =	Mozilla web browser
 
 # Don't forget to update devel/xulrunner/1.9 if patches changes.
 
 MOZILLA_VERSION =	3.6.28
-REVISION =		3
+REVISION =		5
 MOZILLA_BRANCH =	1.9.2
 MOZILLA_PROJECT =	firefox36
 MOZILLA_DIST =		firefox

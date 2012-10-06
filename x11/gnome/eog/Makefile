@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.86 2012/09/01 14:36:59 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.88 2012/09/28 08:28:02 ajacoutot Exp $
 
 COMMENT=		Eye of GNOME, image viewing and cataloging program
 
 GNOME_PROJECT=		eog
-GNOME_VERSION=		3.4.3
-REVISION=	0
+GNOME_VERSION=		3.6.0
+REVISION=		0
 
 CATEGORIES=		graphics
 
@@ -25,6 +25,8 @@ WANTLIB += gtk-3 jpeg m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre peas-1.0 peas-gtk-1.0 pixman-1 png pthread pthread-stubs
 WANTLIB += rsvg-2 xcb xcb-render xcb-shm xml2 z
 WANTLIB += gnome-desktop-3 lcms2 stdc++
+WANTLIB += ICE SM atk-bridge-2.0 atspi dbus-1 harfbuzz icudata
+WANTLIB += icule icuuc xkbfile
 
 MODULES=		devel/dconf \
 			devel/gettext \
@@ -47,5 +49,8 @@ MODGNOME_ICON_CACHE=	Yes
 
 CONFIGURE_ARGS+=	--with-xmp \
 			--with-libexif
+
+post-install:
+	rm ${PREFIX}/lib/eog/plugins/*.{a,la}
 
 .include <bsd.port.mk>

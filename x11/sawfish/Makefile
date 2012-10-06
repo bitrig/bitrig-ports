@@ -1,11 +1,13 @@
-# $OpenBSD: Makefile,v 1.62 2012/07/07 09:19:16 jasper Exp $
+# $OpenBSD: Makefile,v 1.65 2012/09/21 13:21:45 ajacoutot Exp $
 
 COMMENT=	extensible window manager
 
 SHARED_ONLY=	Yes
 
-VERSION=	1.9.0
+VERSION=	1.9.1
 DISTNAME=	sawfish-${VERSION}
+REVISION=	0
+
 CATEGORIES=	x11
 
 MASTER_SITES=	http://download.tuxfamily.org/sawfish/
@@ -26,14 +28,17 @@ RUN_DEPENDS=	devel/desktop-file-utils \
 		x11/rep-gtk>=0.90.8.1 \
 		x11/gtk+2,-guic
 
+LIB_DEPENDS=	lang/librep \
+		x11/gtk+2
+
 WANTLIB += GL ICE SM X11 Xcomposite Xcursor Xdamage Xext Xfixes
-WANTLIB += Xft Xi Xinerama Xrandr Xrender atk-1.0 c cairo expat
-WANTLIB += ffi fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
+WANTLIB += Xft Xi Xinerama Xrandr Xrender Xtst atk-1.0 c cairo
+WANTLIB += expat ffi fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gdk_pixbuf_xlib-2.0 gio-2.0 glib-2.0 gmodule-2.0 gmp
-WANTLIB += gobject-2.0 gthread-2.0 gtk-x11-2.0 m pango-1.0 pangocairo-1.0
-WANTLIB += pangoft2-1.0 pangox-1.0 pangoxft-1.0 pcre pixman-1
-WANTLIB += png pthread pthread-stubs rep xcb xcb-render xcb-shm
-WANTLIB += z Xtst
+WANTLIB += gobject-2.0 gthread-2.0 gtk-x11-2.0 harfbuzz icudata
+WANTLIB += icule icuuc m pango-1.0 pangocairo-1.0 pangoft2-1.0
+WANTLIB += pangoxft-1.0 pcre pixman-1 png pthread pthread-stubs
+WANTLIB += rep xcb xcb-render xcb-shm z
 
 MODULES=	devel/gettext
 
@@ -46,7 +51,7 @@ CONFIGURE_ARGS+=${CONFIGURE_SHARED} \
 		--without-kde4session \
 		--with-gnome2session \
 		--with-xdmsession
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I{X11BASE}/include -pthread" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include -pthread" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 NO_REGRESS=	Yes

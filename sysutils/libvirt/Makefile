@@ -1,13 +1,12 @@
-# $OpenBSD: Makefile,v 1.2 2012/09/05 06:29:02 jasper Exp $
+# $OpenBSD: Makefile,v 1.5 2012/09/27 17:59:37 ajacoutot Exp $
 
 COMMENT=		tool/library for managing platform virtualization
 
-DISTNAME=		libvirt-0.10.1
-REVISION=		0
+DISTNAME=		libvirt-0.10.2
 CATEGORIES=		sysutils devel
 
-SHARED_LIBS +=  virt-qemu                 0.0 # 10.1
-SHARED_LIBS +=  virt                      0.0 # 10.1
+SHARED_LIBS +=  virt-qemu                 0.1 # 10.2
+SHARED_LIBS +=  virt                      0.1 # 10.2
 
 HOMEPAGE=		http://libvirt.org/
 
@@ -26,24 +25,25 @@ MODULES=		devel/gettext \
 
 WANTLIB += avahi-client avahi-common c crypto curl dbus-1 gcrypt
 WANTLIB += gmp gnutls gpg-error hogweed idn m ncurses nettle p11-kit
-WANTLIB += pthread readline ssl tasn1 util xml2 z
+WANTLIB += pthread readline ssh2 ssl tasn1 util xml2 z
+
+BUILD_DEPENDS=		textproc/docbook
 
 LIB_DEPENDS=		net/avahi \
 			net/curl \
 			security/gnutls \
 			security/libgcrypt \
+			security/libssh2 \
 			textproc/libxml
 
 USE_GMAKE=		Yes
 USE_LIBTOOL=		Yes
 
-AUTOCONF_VERSION=	2.68
-
-CONFIGURE_STYLE=	autoconf
+CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--with-avahi \
+			--with-libssh2 \
 			--with-python \
-			--with-xml-catalog-file=${LOCALBASE}/share/xml/catalog \
 			--without-yajl \
 			--without-netcf \
 			--without-network

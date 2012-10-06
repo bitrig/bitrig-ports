@@ -1,6 +1,7 @@
-# $OpenBSD: Makefile,v 1.35 2012/09/03 13:24:58 pascal Exp $
+# $OpenBSD: Makefile,v 1.37 2012/09/28 15:02:29 pascal Exp $
 
 ONLY_FOR_ARCHS = amd64 i386 powerpc sparc sparc64
+DPB_PROPERTIES = parallel
 
 V = 4.6.3
 FULL_VERSION = $V
@@ -70,8 +71,7 @@ REGRESS_DEPENDS = 	devel/dejagnu \
 			devel/autogen
 
 MASTER_SITES =	${MASTER_SITE_GCC:=releases/gcc-$(FULL_VERSION)/}
-MASTER_SITES0 =	http://spacehopper.org/mirrors/
-#MASTER_SITES0 = ftp://quatramaran.ens.fr/pub/espie/
+MASTER_SITES0 =	http://distfiles.tmux.org/adastrap/
 MASTER_SITES1 =	ftp://sources.redhat.com/pub/java/
 
 LANGS = c

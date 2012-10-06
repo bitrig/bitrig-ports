@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.56 2012/09/10 10:24:12 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.58 2012/10/03 15:57:18 ajacoutot Exp $
 
 # if ekiga ever moves to gstreamer, detect_sndiosink_devices() will need
 # to be implemented in:
@@ -10,6 +10,8 @@ COMMENT=	SIP and H.323 compatible conferencing application
 
 GNOME_PROJECT=	ekiga
 GNOME_VERSION=	3.9.90
+REVISION=	1
+
 SUBST_VARS +=	GNOME_VERSION # pkg/PLIST
 
 CATEGORIES=	net multimedia
@@ -34,7 +36,8 @@ WANTLIB += opal pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 plc4 plds4 png pt pthread pthread-stubs
 WANTLIB += sasl2 smime3 sndio softokn3 soup-2.4 speexdsp sqlite3
 WANTLIB += ssl ssl3 stdc++ usbhid xcb xcb-render xcb-shm xml2
-WANTLIB += z
+WANTLIB += gck-1 gcr-base-3 gcrypt gpg-error harfbuzz icudata
+WANTLIB += icule icuuc nssutil3 p11-kit secret-1 z
 
 MODULES=	devel/gettext \
 		x11/gnome \
@@ -43,7 +46,7 @@ MODULES=	devel/gettext \
 LIB_DEPENDS=	net/avahi \
 		net/opal>=3.10.7 \
 		devel/sdl \
-		databases/evolution-data-server \
+		databases/evolution-data-server>=3.6.0p3 \
 		devel/libnotify>=0.7.2 \
 		devel/boost \
 		x11/gtk+2
@@ -65,5 +68,8 @@ CONFIGURE_ARGS=	--disable-static \
 		--enable-h323 \
 		--with-ldap-dir=${LOCALBASE} \
 		--with-libsasl2-dir=${LOCALBASE}
+
+post-install:
+	rm ${PREFIX}/lib/ekiga/${GNOME_VERSION}/{,plugins}/*.la
 
 .include <bsd.port.mk>

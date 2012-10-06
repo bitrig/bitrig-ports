@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.110 2012/09/01 14:36:59 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.112 2012/09/29 10:52:28 ajacoutot Exp $
 
 COMMENT=		GNOME file manager
 
@@ -15,8 +15,8 @@ COMMENT=		GNOME file manager
 # x11/gnome/tracker
 
 GNOME_PROJECT=		nautilus
-GNOME_VERSION=		3.4.2
-REVISION=		3
+GNOME_VERSION=		3.6.0
+REVISION=		0
 
 SHARED_LIBS +=  nautilus-extension   3.0      # 5.0
 
@@ -37,8 +37,9 @@ WANTLIB += fontconfig freetype gailutil-3 gdk-3 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gnome-desktop-3 gobject-2.0
 WANTLIB += gthread-2.0 gtk-3 m notify pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
-WANTLIB += xcb xcb-render xcb-shm
-WANTLIB += xml2 z ffi stdc++
+WANTLIB += xcb xcb-render xcb-shm xml2 z ffi stdc++
+WANTLIB += ICE SM atk-bridge-2.0 atspi dbus-1 harfbuzz icudata
+WANTLIB += icule icuuc xkbfile
 
 MODULES=		devel/gettext \
 			x11/gnome \
@@ -60,9 +61,6 @@ LIB_DEPENDS=		x11/gnome/desktop \
 
 MODGNOME_TOOLS= 	goi
 MODGNOME_DESKTOP_FILE=	Yes
-MODGNOME_ICON_CACHE=	Yes
-
-USE_GROFF=		Yes
 
 CONFIGURE_ARGS+= 	--disable-update-mimedb \
 			--disable-packagekit \
@@ -82,5 +80,8 @@ FAKE_FLAGS=		sysconfdir=${PREFIX}/share/examples/nautilus
 # needs 'org.gnome.nautilus.preferences'
 REGRESS_DEPENDS=	${BASE_PKGPATH}
 REGRESS_IS_INTERACTIVE=	x11
+
+post-install:
+	rm ${PREFIX}/lib/nautilus/extensions-3.0/*.{a,la}
 
 .include <bsd.port.mk>

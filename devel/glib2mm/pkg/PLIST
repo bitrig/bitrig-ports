@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.18 2012/07/11 10:44:20 ajacoutot Exp $
+@comment $OpenBSD: PLIST,v 1.20 2012/09/25 22:45:32 ajacoutot Exp $
 @conflict glib2mm-docs-*
 @pkgpath devel/glib2mm,-main
 @pkgpath devel/glib2mm,-docs
@@ -18,7 +18,11 @@ include/giomm-${V}/giomm/asyncresult.h
 include/giomm-${V}/giomm/bufferedinputstream.h
 include/giomm-${V}/giomm/bufferedoutputstream.h
 include/giomm-${V}/giomm/cancellable.h
+include/giomm-${V}/giomm/charsetconverter.h
 include/giomm-${V}/giomm/contenttype.h
+include/giomm-${V}/giomm/converter.h
+include/giomm-${V}/giomm/converterinputstream.h
+include/giomm-${V}/giomm/converteroutputstream.h
 include/giomm-${V}/giomm/credentials.h
 include/giomm-${V}/giomm/datainputstream.h
 include/giomm-${V}/giomm/dataoutputstream.h
@@ -80,6 +84,8 @@ include/giomm-${V}/giomm/mountoperation.h
 include/giomm-${V}/giomm/networkaddress.h
 include/giomm-${V}/giomm/networkservice.h
 include/giomm-${V}/giomm/outputstream.h
+include/giomm-${V}/giomm/pollableinputstream.h
+include/giomm-${V}/giomm/pollableoutputstream.h
 include/giomm-${V}/giomm/private/
 include/giomm-${V}/giomm/private/action_p.h
 include/giomm-${V}/giomm/private/actiongroup_p.h
@@ -93,6 +99,10 @@ include/giomm-${V}/giomm/private/asyncresult_p.h
 include/giomm-${V}/giomm/private/bufferedinputstream_p.h
 include/giomm-${V}/giomm/private/bufferedoutputstream_p.h
 include/giomm-${V}/giomm/private/cancellable_p.h
+include/giomm-${V}/giomm/private/charsetconverter_p.h
+include/giomm-${V}/giomm/private/converter_p.h
+include/giomm-${V}/giomm/private/converterinputstream_p.h
+include/giomm-${V}/giomm/private/converteroutputstream_p.h
 include/giomm-${V}/giomm/private/credentials_p.h
 include/giomm-${V}/giomm/private/datainputstream_p.h
 include/giomm-${V}/giomm/private/dataoutputstream_p.h
@@ -153,11 +163,14 @@ include/giomm-${V}/giomm/private/mountoperation_p.h
 include/giomm-${V}/giomm/private/networkaddress_p.h
 include/giomm-${V}/giomm/private/networkservice_p.h
 include/giomm-${V}/giomm/private/outputstream_p.h
+include/giomm-${V}/giomm/private/pollableinputstream_p.h
+include/giomm-${V}/giomm/private/pollableoutputstream_p.h
 include/giomm-${V}/giomm/private/proxy_p.h
 include/giomm-${V}/giomm/private/proxyaddress_p.h
 include/giomm-${V}/giomm/private/proxyresolver_p.h
 include/giomm-${V}/giomm/private/remoteactiongroup_p.h
 include/giomm-${V}/giomm/private/resolver_p.h
+include/giomm-${V}/giomm/private/resource_p.h
 include/giomm-${V}/giomm/private/seekable_p.h
 include/giomm-${V}/giomm/private/settings_p.h
 include/giomm-${V}/giomm/private/simpleaction_p.h
@@ -184,11 +197,14 @@ include/giomm-${V}/giomm/private/unixoutputstream_p.h
 include/giomm-${V}/giomm/private/unixsocketaddress_p.h
 include/giomm-${V}/giomm/private/volume_p.h
 include/giomm-${V}/giomm/private/volumemonitor_p.h
+include/giomm-${V}/giomm/private/zlibcompressor_p.h
+include/giomm-${V}/giomm/private/zlibdecompressor_p.h
 include/giomm-${V}/giomm/proxy.h
 include/giomm-${V}/giomm/proxyaddress.h
 include/giomm-${V}/giomm/proxyresolver.h
 include/giomm-${V}/giomm/remoteactiongroup.h
 include/giomm-${V}/giomm/resolver.h
+include/giomm-${V}/giomm/resource.h
 include/giomm-${V}/giomm/seekable.h
 include/giomm-${V}/giomm/settings.h
 include/giomm-${V}/giomm/simpleaction.h
@@ -216,11 +232,14 @@ include/giomm-${V}/giomm/unixsocketaddress.h
 include/giomm-${V}/giomm/volume.h
 include/giomm-${V}/giomm/volumemonitor.h
 include/giomm-${V}/giomm/wrap_init.h
+include/giomm-${V}/giomm/zlibcompressor.h
+include/giomm-${V}/giomm/zlibdecompressor.h
 include/glibmm-${V}/
 include/glibmm-${V}/glibmm/
 include/glibmm-${V}/glibmm.h
 include/glibmm-${V}/glibmm/arrayhandle.h
 include/glibmm-${V}/glibmm/balancedtree.h
+include/glibmm-${V}/glibmm/bytes.h
 include/glibmm-${V}/glibmm/checksum.h
 include/glibmm-${V}/glibmm/class.h
 include/glibmm-${V}/glibmm/containerhandle_shared.h
@@ -256,6 +275,7 @@ include/glibmm-${V}/glibmm/pattern.h
 include/glibmm-${V}/glibmm/priorities.h
 include/glibmm-${V}/glibmm/private/
 include/glibmm-${V}/glibmm/private/balancedtree_p.h
+include/glibmm-${V}/glibmm/private/bytes_p.h
 include/glibmm-${V}/glibmm/private/checksum_p.h
 include/glibmm-${V}/glibmm/private/convert_p.h
 include/glibmm-${V}/glibmm/private/date_p.h
@@ -427,6 +447,18 @@ share/doc/glibmm-${V}/reference/html/classGio_1_1BufferedOutputStream__inherit__
 share/doc/glibmm-${V}/reference/html/classGio_1_1Cancellable-members.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1Cancellable.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1Cancellable__inherit__graph.png
+share/doc/glibmm-${V}/reference/html/classGio_1_1CharsetConverter-members.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1CharsetConverter.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1CharsetConverter__inherit__graph.png
+share/doc/glibmm-${V}/reference/html/classGio_1_1Converter-members.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1Converter.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ConverterInputStream-members.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ConverterInputStream.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ConverterInputStream__inherit__graph.png
+share/doc/glibmm-${V}/reference/html/classGio_1_1ConverterOutputStream-members.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ConverterOutputStream.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ConverterOutputStream__inherit__graph.png
+share/doc/glibmm-${V}/reference/html/classGio_1_1Converter__inherit__graph.png
 share/doc/glibmm-${V}/reference/html/classGio_1_1Credentials-members.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1Credentials.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1Credentials__inherit__graph.png
@@ -598,6 +630,12 @@ share/doc/glibmm-${V}/reference/html/classGio_1_1NetworkService__inherit__graph.
 share/doc/glibmm-${V}/reference/html/classGio_1_1OutputStream-members.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1OutputStream.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1OutputStream__inherit__graph.png
+share/doc/glibmm-${V}/reference/html/classGio_1_1PollableInputStream-members.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1PollableInputStream.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1PollableInputStream__inherit__graph.png
+share/doc/glibmm-${V}/reference/html/classGio_1_1PollableOutputStream-members.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1PollableOutputStream.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1PollableOutputStream__inherit__graph.png
 share/doc/glibmm-${V}/reference/html/classGio_1_1Proxy-members.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1Proxy.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1ProxyAddress-members.html
@@ -616,6 +654,9 @@ share/doc/glibmm-${V}/reference/html/classGio_1_1ResolverError-members.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1ResolverError.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1ResolverError__inherit__graph.png
 share/doc/glibmm-${V}/reference/html/classGio_1_1Resolver__inherit__graph.png
+share/doc/glibmm-${V}/reference/html/classGio_1_1ResourceError-members.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ResourceError.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ResourceError__inherit__graph.png
 share/doc/glibmm-${V}/reference/html/classGio_1_1Seekable-members.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1Seekable.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1Seekable__inherit__graph.png
@@ -693,6 +734,12 @@ share/doc/glibmm-${V}/reference/html/classGio_1_1VolumeMonitor-members.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1VolumeMonitor.html
 share/doc/glibmm-${V}/reference/html/classGio_1_1VolumeMonitor__inherit__graph.png
 share/doc/glibmm-${V}/reference/html/classGio_1_1Volume__inherit__graph.png
+share/doc/glibmm-${V}/reference/html/classGio_1_1ZlibCompressor-members.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ZlibCompressor.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ZlibCompressor__inherit__graph.png
+share/doc/glibmm-${V}/reference/html/classGio_1_1ZlibDecompressor-members.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ZlibDecompressor.html
+share/doc/glibmm-${V}/reference/html/classGio_1_1ZlibDecompressor__inherit__graph.png
 share/doc/glibmm-${V}/reference/html/classGlib_1_1ArrayHandle-members.html
 share/doc/glibmm-${V}/reference/html/classGlib_1_1ArrayHandle.html
 share/doc/glibmm-${V}/reference/html/classGlib_1_1ArrayHandle_3_01bool_00_01Container__Helpers_1_1TypeTraits_3_01bool_01_4_01_4.html
@@ -702,6 +749,8 @@ share/doc/glibmm-${V}/reference/html/classGlib_1_1ArrayHandler_3_01bool_01_4-mem
 share/doc/glibmm-${V}/reference/html/classGlib_1_1ArrayHandler_3_01bool_01_4.html
 share/doc/glibmm-${V}/reference/html/classGlib_1_1BalancedTree-members.html
 share/doc/glibmm-${V}/reference/html/classGlib_1_1BalancedTree.html
+share/doc/glibmm-${V}/reference/html/classGlib_1_1Bytes-members.html
+share/doc/glibmm-${V}/reference/html/classGlib_1_1Bytes.html
 share/doc/glibmm-${V}/reference/html/classGlib_1_1Checksum-members.html
 share/doc/glibmm-${V}/reference/html/classGlib_1_1Checksum.html
 share/doc/glibmm-${V}/reference/html/classGlib_1_1Cond-members.html
@@ -1120,6 +1169,8 @@ share/doc/glibmm-${V}/reference/html/classGlib_1_1ustring__Iterator.html
 share/doc/glibmm-${V}/reference/html/classes.html
 share/doc/glibmm-${V}/reference/html/classresize__policy.html
 share/doc/glibmm-${V}/reference/html/classresize__policy__inherit__graph.png
+share/doc/glibmm-${V}/reference/html/classsigc_1_1trackable.html
+share/doc/glibmm-${V}/reference/html/classsigc_1_1trackable__inherit__graph.png
 share/doc/glibmm-${V}/reference/html/closed.png
 share/doc/glibmm-${V}/reference/html/deprecated.html
 share/doc/glibmm-${V}/reference/html/dir_02fef2a40270467d72a7f717cf991d8a.html
@@ -1167,6 +1218,7 @@ share/doc/glibmm-${V}/reference/html/functions_0x75.html
 share/doc/glibmm-${V}/reference/html/functions_0x76.html
 share/doc/glibmm-${V}/reference/html/functions_0x77.html
 share/doc/glibmm-${V}/reference/html/functions_0x79.html
+share/doc/glibmm-${V}/reference/html/functions_0x7a.html
 share/doc/glibmm-${V}/reference/html/functions_0x7e.html
 share/doc/glibmm-${V}/reference/html/functions_enum.html
 share/doc/glibmm-${V}/reference/html/functions_eval.html
@@ -1217,6 +1269,7 @@ share/doc/glibmm-${V}/reference/html/functions_func_0x75.html
 share/doc/glibmm-${V}/reference/html/functions_func_0x76.html
 share/doc/glibmm-${V}/reference/html/functions_func_0x77.html
 share/doc/glibmm-${V}/reference/html/functions_func_0x79.html
+share/doc/glibmm-${V}/reference/html/functions_func_0x7a.html
 share/doc/glibmm-${V}/reference/html/functions_func_0x7e.html
 share/doc/glibmm-${V}/reference/html/functions_rela.html
 share/doc/glibmm-${V}/reference/html/functions_type.html
@@ -1274,6 +1327,7 @@ share/doc/glibmm-${V}/reference/html/inherit_graph_104.png
 share/doc/glibmm-${V}/reference/html/inherit_graph_105.png
 share/doc/glibmm-${V}/reference/html/inherit_graph_106.png
 share/doc/glibmm-${V}/reference/html/inherit_graph_107.png
+share/doc/glibmm-${V}/reference/html/inherit_graph_108.png
 share/doc/glibmm-${V}/reference/html/inherit_graph_11.png
 share/doc/glibmm-${V}/reference/html/inherit_graph_12.png
 share/doc/glibmm-${V}/reference/html/inherit_graph_13.png
@@ -1405,6 +1459,7 @@ share/doc/glibmm-${V}/reference/html/namespacemembers_0x75.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_0x76.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_0x77.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_0x78.html
+share/doc/glibmm-${V}/reference/html/namespacemembers_0x7a.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_enum.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_eval.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_eval_0x62.html
@@ -1422,6 +1477,7 @@ share/doc/glibmm-${V}/reference/html/namespacemembers_eval_0x72.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_eval_0x73.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_eval_0x74.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_eval_0x75.html
+share/doc/glibmm-${V}/reference/html/namespacemembers_eval_0x7a.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_func.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_func_0x62.html
 share/doc/glibmm-${V}/reference/html/namespacemembers_func_0x63.html

@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.11 2012/09/07 07:19:36 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.15 2012/10/03 15:56:49 ajacoutot Exp $
 
 COMMENT=		next generation GNOME shell
 
 GNOME_PROJECT=		gnome-shell
-GNOME_VERSION=		3.4.2
+GNOME_VERSION=		3.6.0
 REVISION=		1
 
 HOMEPAGE=		http://live.gnome.org/GnomeShell
@@ -16,22 +16,23 @@ PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB += GL ICE SM X11 X11-xcb Xau Xcomposite Xcursor Xdamage
 WANTLIB += Xdmcp Xext Xfixes Xi Xinerama Xrandr Xrender Xxf86vm
-WANTLIB += asn1 atk-1.0 c cairo cairo-gobject camel-1.2 canberra
-WANTLIB += canberra-gtk3 clutter-1.0 cogl cogl-pango com_err croco-0.6
-WANTLIB += crypto dbus-1 dbus-glib-1 drm ebook-1.2 ecal-1.2 edataserver-1.2
-WANTLIB += edataserverui-3.0 execinfo expat ffi folks fontconfig
-WANTLIB += freetype gck-1 gconf-2 gcr-3 gcr-base-3 gcrypt gdbm
-WANTLIB += gdk-3 gdk_pixbuf-2.0 gee gio-2.0 girepository-1.0 gjs
-WANTLIB += glib-2.0 gmodule-2.0 gnome-keyring gnome-menu-3 gobject-2.0
-WANTLIB += gpg-error gssapi gstbase-0.10 gstreamer-0.10 gthread-2.0
-WANTLIB += gtk-3 ical icalss icalvcal json json-glib-1.0 krb5
-WANTLIB += ltdl m mozjs185 mutter ncurses nspr4 nss3 ogg p11-kit
-WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
-WANTLIB += plc4 plds4 png polkit-agent-1 polkit-gobject-1 pthread
-WANTLIB += pthread-stubs pulse pulse-mainloop-glib smime3 sndfile
-WANTLIB += softokn3 soup-2.4 sqlite3 ssl3 startup-notification-1
+WANTLIB += asn1 atk-1.0 atk-bridge-2.0 atspi c cairo cairo-gobject
+WANTLIB += camel-1.2 canberra canberra-gtk3 clutter-1.0 cogl cogl-pango
+WANTLIB += com_err croco-0.6 crypto db dbus-1 dbus-glib-1 drm
+WANTLIB += ebackend-1.2 ebook-1.2 ecal-1.2 edataserver-1.2 edataserverui-3.0
+WANTLIB += execinfo expat ffi fontconfig freetype gck-1 gcr-3
+WANTLIB += gcr-base-3 gcrypt gdbm gdk-3 gdk_pixbuf-2.0 gio-2.0
+WANTLIB += girepository-1.0 gjs glib-2.0 gmodule-2.0 gnome-desktop-3
+WANTLIB += gnome-keyring gnome-menu-3 gobject-2.0 gpg-error gssapi
+WANTLIB += gstbase-1.0 gstreamer-1.0 gthread-2.0 gtk-3 harfbuzz
+WANTLIB += ical icalss icalvcal icudata icule icuuc json json-glib-1.0
+WANTLIB += krb5 ltdl m mozjs185 mutter ncurses nspr4 nss3 nssutil3
+WANTLIB += ogg p11-kit pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
+WANTLIB += pixman-1 plc4 plds4 png polkit-agent-1 polkit-gobject-1
+WANTLIB += pthread pthread-stubs pulse pulse-mainloop-glib smime3
+WANTLIB += sndfile softokn3 soup-2.4 sqlite3 ssl3 startup-notification-1
 WANTLIB += stdc++ telepathy-glib telepathy-logger vorbis vorbisfile
-WANTLIB += xcb xcb-aux xcb-render xcb-shm xml2 z
+WANTLIB += xcb xcb-aux xcb-render xcb-shm xkbfile xml2 z secret-1
 
 MODULES=		devel/dconf \
 			devel/gettext \
@@ -40,11 +41,16 @@ MODULES=		devel/dconf \
 
 MODGNOME_TOOLS=		goi
 
+# gnome-keybindings.pc
+BUILD_DEPENDS +=	x11/gnome/controlcenter
+
 LIB_DEPENDS=		audio/pulseaudio \
-			net/telepathy/folks \
+			databases/evolution-data-server>=3.6.0p3 \
+			multimedia/gstreamer1/core \
 			net/telepathy/telepathy-logger \
 			sysutils/polkit \
 			www/libcroco \
+			x11/gnome/desktop \
 			x11/gnome/gcr \
 			x11/gnome/gjs \
 			x11/gnome/menus \
@@ -83,5 +89,9 @@ pre-configure:
 		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} autoheader
 	cd ${WRKSRC} && env AUTOCONF_VERSION=${AUTOCONF_VERSION} \
 		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} automake
+
+post-install:
+	rm ${PREFIX}/lib/gnome-shell/*.la
+	rm ${PREFIX}/lib/mozilla/plugins/*.la
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2012/08/04 15:06:55 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.34 2012/09/27 21:49:58 naddy Exp $
 
 SHARED_ONLY=		Yes
 ONLY_FOR_ARCHS= 	amd64 i386
@@ -13,6 +13,7 @@ PKGNAME-jre=		jre-${V}
 REVISION-jre =		17
 
 CATEGORIES=		devel/jdk java
+DPB_PROPERTIES=		parallel
 
 MULTI_PACKAGES= 	-main -jre
 
@@ -56,6 +57,9 @@ WANTLIB=		X11 Xext Xi Xtst c m ossaudio pthread \
 USE_GMAKE=		Yes
 USE_GROFF =		Yes
 
+# Don't call make -jN, instead pass MAKE_JOBS to HOTSPOT_BUILD_JOBS
+PARALLEL_BUILD=		No
+
 TAR=			${LOCALBASE}/bin/gtar
 
 CC = gcc
@@ -72,7 +76,7 @@ MAKE_ENV=		ALT_MOTIF_DIR="${LOCALBASE}" \
 			CXX="${CXX}" \
 			DEFAULT_LIBPATH="/usr/lib:${X11BASE}/lib:${LOCALBASE}/lib" \
 			USER="${USER}" \
-			HOTSPOT_BUILD_JOBS=${HOTSPOT_BUILD_JOBS}
+			HOTSPOT_BUILD_JOBS=${MAKE_JOBS}
 
 # Error message for distfile.
 FETCH_MANUALLY=		"You must manually fetch the distribution files, place"

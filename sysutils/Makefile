@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.269 2012/09/05 15:07:18 jasper Exp $
+# $OpenBSD: Makefile,v 1.272 2012/10/03 07:59:37 ajacoutot Exp $
 
      SUBDIR =
      SUBDIR += LPRng
@@ -79,7 +79,6 @@
      SUBDIR += knutclient
      SUBDIR += krename
      SUBDIR += ktsuss
-     SUBDIR += lat
      SUBDIR += libretto-config
      SUBDIR += librelp
      SUBDIR += libstatgrab
@@ -103,6 +102,7 @@
      SUBDIR += moreutils
      SUBDIR += mtools
      SUBDIR += multitail
+     SUBDIR += multitime
      SUBDIR += ncdu
      SUBDIR += ndesk-dbus
      SUBDIR += ndesk-dbus-glib
@@ -158,7 +158,6 @@
      SUBDIR += ruby-capistrano
      SUBDIR += ruby-directory_watcher
      SUBDIR += ruby-facter
-     SUBDIR += ruby-mongrel_cluster
      SUBDIR += ruby-puppet
      SUBDIR += ruby-puppet-lint
      SUBDIR += ruby-thor

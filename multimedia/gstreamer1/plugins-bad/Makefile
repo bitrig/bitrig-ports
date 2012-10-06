@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2012/09/06 13:02:41 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2012/09/28 10:18:24 ajacoutot Exp $
 
 COMMENT=		bad elements for GStreamer
 
-V=			0.11.93
+V=			1.0.0
 DISTNAME=		gst-plugins-bad-${V}
 PKGNAME=		${GST_PKGNAME_PREFIX}-plugins-bad-${V}
+REVISION=		0
 
 SHARED_LIBS +=  gstbasecamerabinsrc-1.0   0.0 # 0.0
 SHARED_LIBS +=  gstbasevideo-1.0          0.0 # 0.0
@@ -14,22 +15,22 @@ SHARED_LIBS +=  gstsignalprocessor-1.0    0.0 # 0.0
 
 MASTER_SITES =		${MASTER_SITE_GST:=gst-plugins-bad/}
 
-WANTLIB += ass bz2 enca expat ffi fontconfig freetype fribidi
-WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gstapp-1.0
+WANTLIB += BPM SoundTouch ass bz2 enca expat ffi fontconfig freetype
+WANTLIB += fribidi gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gstapp-1.0
 WANTLIB += gstaudio-1.0 gstbase-1.0 gstfft-1.0 gstpbutils-1.0
 WANTLIB += gstreamer-1.0 gstrtp-1.0 gstsdp-1.0 gsttag-1.0 gstvideo-1.0
 WANTLIB += gthread-2.0 m mms orc-0.4 pcre pthread schroedinger-1.0
-WANTLIB += vpx z
+WANTLIB += stdc++ z
 
 MODULES =		devel/dconf
 
-#BUILD_DEPENDS +=        audio/ladspa \
-#			graphics/libexif
+# needed for ${WRKSRC}/tests/
+BUILD_DEPENDS +=	graphics/libexif
 
 LIB_DEPENDS=		${P}/plugins-base \
+			audio/soundtouch \
 			multimedia/libass \
 			multimedia/libmms \
-			multimedia/libvpx \
 			multimedia/schroedinger
 
 # each plugin that has an external dependency is disabled unless proved useful
@@ -66,7 +67,6 @@ CONFIGURE_ARGS=		--disable-cdaudio \
 			--disable-rtmp \
 			--disable-sndfile \
 			--disable-shm \
-			--disable-soundtouch \
 			--disable-spandsp \
 			--disable-spc \
 			--disable-swfdec \
@@ -80,7 +80,7 @@ CONFIGURE_ARGS=		--disable-cdaudio \
 			--disable-xvid \
 			--disable-zbar
 
-# sndio(7) support has been patched into plugins-good:
+# sndio(7) support has been patched into plugins-base:
 # we do not want to depends on plugins-bad for audio
 CONFIGURE_ARGS +=	--disable-sndio
 

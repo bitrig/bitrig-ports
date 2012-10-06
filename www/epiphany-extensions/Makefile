@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2012/09/01 14:36:58 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.44 2012/09/29 13:14:04 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -6,7 +6,7 @@ COMMENT=		collection of extensions for Epiphany
 
 GNOME_PROJECT=		epiphany-extensions
 GNOME_VERSION=		3.4.0
-REVISION=	0
+REVISION=		2
 
 M=			${GNOME_VERSION:R}
 SUBST_VARS=		M
@@ -35,6 +35,7 @@ WANTLIB += gtk-3 icudata icui18n icuuc javascriptcoregtk-3.0 jpeg
 WANTLIB += m orc-0.4 pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB += pixman-1 png pthread-stubs soup-2.4 sqlite3 stdc++
 WANTLIB += webkitgtk-3.0 xcb xcb-render xcb-shm xml2 xslt z
+WANTLIB += atk-bridge-2.0 atspi harfbuzz icule pthread
 
 MODULES=	devel/dconf \
 		devel/gettext \
@@ -54,5 +55,8 @@ CONFIGURE_ARGS=	--disable-static \
 
 # part of ALL_EXTENSIONS, not DEFAULT
 CONFIGURE_ARGS += --disable-opensp
+
+post-install:
+	rm ${PREFIX}/lib/epiphany/${M}/extensions/*.la
 
 .include <bsd.port.mk>

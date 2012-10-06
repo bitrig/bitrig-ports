@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.366 2012/09/04 07:11:51 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.369 2012/09/29 10:27:36 jasper Exp $
 
      SUBDIR =
      SUBDIR += TclXML
@@ -292,6 +292,7 @@
      SUBDIR += py-polib
      SUBDIR += py-prettytable
      SUBDIR += py-pygments
+     SUBDIR += py-rdflib
      SUBDIR += py-rtf
      SUBDIR += py-sphinx
      SUBDIR += py-vatnumber
@@ -308,13 +309,13 @@
      SUBDIR += ruby-builder
      SUBDIR += ruby-classifier
      SUBDIR += ruby-erubis
-     SUBDIR += ruby-fastercsv
-     SUBDIR += ruby-fastri
+     SUBDIR += ruby-fastercsv,ruby18
+     SUBDIR += ruby-fastri,ruby18
      SUBDIR += ruby-fast-stemmer
-     SUBDIR += ruby-fast-stemmer,ruby19
+     SUBDIR += ruby-fast-stemmer,ruby18
      SUBDIR += ruby-haml
      SUBDIR += ruby-hpricot
-     SUBDIR += ruby-hpricot,ruby19
+     SUBDIR += ruby-hpricot,ruby18
      SUBDIR += ruby-htmlentities
      SUBDIR += ruby-hyperestraier
      SUBDIR += ruby-hyperestraier,ruby19
@@ -324,21 +325,18 @@
      SUBDIR += ruby-maruku
      SUBDIR += ruby-mustache
      SUBDIR += ruby-nokogiri
-     SUBDIR += ruby-nokogiri,ruby19
+     SUBDIR += ruby-nokogiri,ruby18
      SUBDIR += ruby-pdf-reader
-     SUBDIR += ruby-pdf-writer
-     SUBDIR += ruby-prawn
      SUBDIR += ruby-randexp
      SUBDIR += ruby-rdiscount
-     SUBDIR += ruby-rdiscount,ruby19
+     SUBDIR += ruby-rdiscount,ruby18
      SUBDIR += ruby-redcarpet
-     SUBDIR += ruby-redcarpet,ruby19
+     SUBDIR += ruby-redcarpet,ruby18
      SUBDIR += ruby-redcloth
-     SUBDIR += ruby-redcloth,ruby19
+     SUBDIR += ruby-redcloth,ruby18
      SUBDIR += ruby-ronn
      SUBDIR += ruby-rss
      SUBDIR += ruby-rtex
-     SUBDIR += ruby-rubigen
      SUBDIR += ruby-syntax
      SUBDIR += ruby-templater
      SUBDIR += ruby-treetop

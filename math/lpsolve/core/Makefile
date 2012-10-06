@@ -1,9 +1,10 @@
-# $OpenBSD: Makefile,v 1.2 2012/05/11 23:29:30 edd Exp $
+# $OpenBSD: Makefile,v 1.4 2012/09/29 05:02:50 brad Exp $
 
 COMMENT =		mixed integer linear programming solver
 
 DISTNAME =		lp_solve_${V}_source
 PKGNAME =		lpsolve-${V}
+REVISION =		0
 WRKDIST =		${WRKDIR}/lp_solve_${V_MAJOR}
 
 SHARED_LIBS =		lpsolve55	0.0	# unversioned upstream

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.114 2012/09/11 06:03:27 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.117 2012/10/04 07:21:57 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -17,9 +17,9 @@ PKGNAME-main=		meta-tracker-${VERSION}
 PKGNAME-evolution=	evolution-meta-tracker-${VERSION}
 PKGNAME-nautilus=	nautilus-meta-tracker-${VERSION}
 
-REVISION-main=		5
-REVISION-evolution=	3
-REVISION-nautilus=	3
+REVISION-main=		7
+REVISION-evolution=	4
+REVISION-nautilus=	4
 
 # Only get the first x.y which is needed in the PLIST.
 # NOTE: when MAJ_V changes, increment TRACKER_VERSION accordingly and bump:
@@ -50,13 +50,14 @@ MODULES=	devel/gettext \
 		devel/dconf \
 		lang/python
 
-MULTI_PACKAGES=	-main -evolution -nautilus
+MULTI_PACKAGES=	-main -nautilus
 
 WANTLIB += GL X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes
 WANTLIB += Xi Xinerama Xrandr Xrender Xxf86vm drm expat ffi fontconfig
 WANTLIB += freetype gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += kvm m pcre pixman-1 pthread-stubs xcb xcb-render xcb-shm
-WANTLIB += z unistring pthread
+WANTLIB += ICE SM atk-bridge-2.0 atspi harfbuzz icudata icule
+WANTLIB += z unistring pthread icuuc
 
 WANTLIB-main += ${WANTLIB}
 WANTLIB-main += archive atk-1.0 bz2 c cairo cairo-gobject
@@ -99,8 +100,10 @@ WANTLIB-nautilus += ${WANTLIB}
 WANTLIB-nautilus += lib/tracker-${MAJ_V}/tracker-common
 WANTLIB-nautilus += lib/tracker-${MAJ_V}/tracker-data
 WANTLIB-nautilus += atk-1.0 cairo cairo-gobject e2fs-uuid gdk-3 gdk_pixbuf-2.0
-WANTLIB-nautilus += gtk-3 nautilus-extension pango-1.0 pangocairo-1.0
+WANTLIB-nautilus += gtk-3 nautilus-extension pango-1.0 pangocairo-1.0 dbus-1
 WANTLIB-nautilus += pangoft2-1.0 png sqlite3 tracker-sparql-0.14 stdc++
+
+BUILD_DEPENDS=		lang/vala
 
 LIB_DEPENDS=		converters/libunistring
 
@@ -117,7 +120,8 @@ LIB_DEPENDS-main=	${LIB_DEPENDS} \
 			graphics/libexif \
 			graphics/libungif \
 			audio/libcue \
-			converters/enca
+			converters/enca \
+			audio/taglib
 
 RUN_DEPENDS-evolution=	${MODGETTEXT_RUN_DEPENDS}
 LIB_DEPENDS-evolution=	${LIB_DEPENDS} \
@@ -131,7 +135,7 @@ LIB_DEPENDS-nautilus=	${LIB_DEPENDS} \
 
 LIBTOOL_FLAGS=	--tag=disable-static
 
-MODGNOME_TOOLS= 	goi vala
+MODGNOME_TOOLS= 	goi
 MODGNOME_DESKTOP_FILE=	Yes
 MODGNOME_ICON_CACHE=	Yes
 MODPY_BUILDDEP=		No
@@ -146,11 +150,21 @@ CONFIGURE_ARGS=	--disable-static \
 		--disable-network-manager \
 		--disable-qt
 
+# needs libosinfo
+CONFIGURE_ARGS += --disable-libosinfo
+
 # needs libgrss
 CONFIGURE_ARGS += --disable-miner-rss
 
 # needs libiptcdata
 CONFIGURE_ARGS += --disable-libiptcdata
+
+# XXX temporarily disable tracker,-evolution which does not build with evo >= 3.6.0
+# when fixed:
+#  uncomment the rm call in post-install
+#  add -evolution to MULTI_PACKAGES
+#  add x11/gnome/tracker,-evolution to RUN_DEPENDS-extra in meta/gnome
+CONFIGURE_ARGS += --disable-miner-evolution
 
 MODGNOME_LDFLAGS=	-Wl,-rpath,${TRUEPREFIX}/lib/tracker-${MAJ_V}
 
@@ -158,5 +172,11 @@ FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/meta-tracker/
 
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/src/tracker-needle/tracker-utils.vala
+
+post-install:
+	rm ${PREFIX}/lib/tracker-${MAJ_V}/extract-modules/*.la
+	rm ${PREFIX}/lib/tracker-${MAJ_V}/writeback-modules/*.la
+#	rm ${PREFIX}/lib/evolution/${EVO_VERSION}/plugins/*.la
+	rm ${PREFIX}/lib/nautilus/extensions-3.0/*.la
 
 .include <bsd.port.mk>

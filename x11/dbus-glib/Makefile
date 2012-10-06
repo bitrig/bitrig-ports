@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.38 2012/09/01 14:36:58 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.40 2012/09/27 15:51:15 ajacoutot Exp $
 
 COMMENT=	glib bindings for dbus message system
 
 DISTNAME=	dbus-glib-0.100
-REVISION=	0
+REVISION=	1
 EPOCH=		0
 
 SHARED_LIBS+=	dbus-glib-1	4.3 # .4.2
@@ -41,6 +41,14 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
-FAKE_FLAGS=	completiondir="${PREFIX}/share/examples/dbus-glib"
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
+
+post-install:
+	rm ${WRKINST}/etc/bash_completion.d/dbus-bash-completion.sh
+	rmdir ${WRKINST}/etc/bash_completion.d/
 
 .include <bsd.port.mk>

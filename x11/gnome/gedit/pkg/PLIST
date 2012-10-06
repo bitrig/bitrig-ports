@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.25 2012/05/24 13:35:44 jasper Exp $
+@comment $OpenBSD: PLIST,v 1.28 2012/09/30 12:43:41 jasper Exp $
 @bin bin/gedit
 bin/gnome-text-editor
 include/gedit-3.0/
@@ -59,20 +59,14 @@ lib/gedit/plugins/externaltools/windowactivatable.py
 lib/gedit/plugins/externaltools/windowactivatable.pyc
 lib/gedit/plugins/externaltools/windowactivatable.pyo
 lib/gedit/plugins/filebrowser.plugin
-@comment lib/gedit/plugins/libchangecase.la
 lib/gedit/plugins/libchangecase.so
-@comment lib/gedit/plugins/libdocinfo.la
 lib/gedit/plugins/libdocinfo.so
-@comment lib/gedit/plugins/libfilebrowser.la
 lib/gedit/plugins/libfilebrowser.so
-@comment lib/gedit/plugins/libmodelines.la
 lib/gedit/plugins/libmodelines.so
-@comment lib/gedit/plugins/libsort.la
 lib/gedit/plugins/libsort.so
-@comment lib/gedit/plugins/libspell.la
 lib/gedit/plugins/libspell.so
-@comment lib/gedit/plugins/libtime.la
 lib/gedit/plugins/libtime.so
+lib/gedit/plugins/libzeitgeistplugin.so
 lib/gedit/plugins/modelines.plugin
 lib/gedit/plugins/pythonconsole/
 lib/gedit/plugins/pythonconsole.plugin
@@ -155,6 +149,7 @@ lib/gedit/plugins/snippets/windowactivatable.pyo
 lib/gedit/plugins/sort.plugin
 lib/gedit/plugins/spell.plugin
 lib/gedit/plugins/time.plugin
+lib/gedit/plugins/zeitgeist.plugin
 lib/pkgconfig/gedit.pc
 lib/python${MODPY_VERSION}/site-packages/gi/overrides/Gedit.py
 lib/python${MODPY_VERSION}/site-packages/gi/overrides/Gedit.pyc
@@ -171,7 +166,6 @@ share/gedit/gir-1.0/Gedit-3.0.gir
 share/gedit/logo/
 share/gedit/logo/gedit-logo.png
 share/gedit/plugins/
-share/gedit/plugins/changecase/
 share/gedit/plugins/externaltools/
 share/gedit/plugins/externaltools/tools/
 share/gedit/plugins/externaltools/tools/build

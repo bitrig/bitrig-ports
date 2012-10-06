@@ -1,17 +1,17 @@
-# $OpenBSD: Makefile,v 1.60 2012/09/05 07:15:50 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.63 2012/09/27 06:35:07 ajacoutot Exp $
 
 # XXX check why our getopt_long(3) fails the configure test
 # + rm patch-gl_unistd_in_h
 
 COMMENT=	GNU Transport Layer Security library
 
-DISTNAME=	gnutls-3.1.1
+DISTNAME=	gnutls-3.1.2
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	security
 
-SHARED_LIBS +=  gnutls               39.0     # 40.0
-SHARED_LIBS +=  gnutlsxx             29.0     # 29.0
+SHARED_LIBS +=  gnutls               39.1     # 40.0
+SHARED_LIBS +=  gnutlsxx             29.1     # 29.0
 SHARED_LIBS +=  gnutls-openssl       27.2     # 27.2
 
 HOMEPAGE=	http://www.gnutls.org/
@@ -33,7 +33,7 @@ MASTER_SITES=	http://ftp.gnu.org/gnu/gnutls/ \
 MODULES=	devel/gettext
 
 LIB_DEPENDS=	devel/libidn \
-		security/libtasn1 \
+		security/libtasn1>=2.14 \
 		security/libnettle>=2.5 \
 		security/p11-kit
 
@@ -58,6 +58,12 @@ CONFIGURE_ARGS += --without-tpm
 
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
+
+# If one of these tools is found at configure stage, it might be used,
+# no matter whether we use --disable-gtk-doc or not.
+CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
+		ac_cv_path_GTKDOC_REBASE="" \
+		ac_cv_path_GTKDOC_MKPDF=""
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/gnutls

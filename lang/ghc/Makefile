@@ -1,16 +1,17 @@
-# $OpenBSD: Makefile,v 1.75 2012/09/02 23:01:29 kili Exp $
+# $OpenBSD: Makefile,v 1.81 2012/09/27 17:26:05 ajacoutot Exp $
 
 COMMENT-main =		compiler for the functional language Haskell
 COMMENT-doc =		documentation for GHC
 
 DISTNAME =		ghc-${MODGHC_VER}
 PKGNAME-main =		ghc-${MODGHC_VER}
+REVISION-main =		0
 PKGNAME-doc =		ghc-doc-${MODGHC_VER}
 CATEGORIES =		lang devel
 HOMEPAGE =		http://www.haskell.org/ghc/
 
 # Version of the precompiled binaries
-BIN_VER =		7.0.4.20120626
+BIN_VER =		7.4.2.20120917
 
 # xhtml replacement version (for meta/haskell-platform)
 XHTML_VER =		3000.2.1
@@ -21,6 +22,8 @@ SUBST_VARS +=		XHTML_VER
 # in ghc.port.mk. lang/python needed for regress.
 MODULES =		lang/ghc lang/python converters/libiconv
 
+PSEUDO_FLAVORS =	no_doc
+FLAVOR ?=
 MULTI_PACKAGES =	-main -doc
 
 # BSD w/o advertising clause.
@@ -32,10 +35,8 @@ PERMIT_DISTFILES_CDROM =	Yes
 PERMIT_DISTFILES_FTP =		Yes
 
 PKG_ARCH-doc =		*
-BUILD_DEPENDS =		textproc/dblatex \
-			textproc/docbook>=4.5 \
-			textproc/docbook-xsl \
-			textproc/libxslt
+BUILD_DEPENDS =		archivers/gtar \
+			textproc/docbook-xsl
 LIB_DEPENDS-doc =
 LIB_DEPENDS-main =	${LIB_DEPENDS} devel/gmp
 RUN_DEPENDS-doc =
@@ -88,6 +89,16 @@ CONFIGURE_ENV =		CONF_CC_OPTS_STAGE0="-fno-pie -nopie" \
 MAKE_FLAGS +=		StripLibraries=YES \
 			INSTALL_BIN_OPTS=-s \
 			HSCOLOUR_SRCS=NO
+
+.if ${FLAVOR:Mno_doc}
+MAKE_FLAGS +=		HADDOCK_DOCS=NO \
+			LATEX_DOCS=NO \
+			BUILD_DOCBOOK_HTML=NO \
+			BUILD_DOCBOOK_PDF=NO \
+			BUILD_DOCBOOK_PS=NO
+.else
+BUILD_DEPENDS +=	textproc/dblatex
+.endif
 
 # Thank god that they're only building compilers and no nuclear
 # power plants. Note that we do not override CREATE_DATA, because
@@ -162,21 +173,16 @@ do-regress:
 # It doesn't matter wether this is the actual date of the bootstrapper
 # build. It's just used to get different distfiles whenever new
 # bootstrappers have to be built.
-BOOTSTRAP_DATE =	20120626
+BOOTSTRAP_DATE =	20120917
 
 # Create a bootstrapper. This compiles a stripped-down version of
 # ghc and creates a `bindist', i.e. a tarball with binaries that
 # can be used for bootstrapping.
-# You have to install gtar in order to run this target!
 bootstrap: patch
-	@if [ ! -x ${LOCALBASE}/bin/gtar ]; then \
-		echo Please pkg_add gtar.; \
-		false; \
-	fi
 	cd ${WRKDIR} && rm -rf bin
 
 	echo HSCOLOUR_SRCS=NO > ${WRKSRC}/mk/build.mk
-	echo GhcLibHcOpts=-O -fgenerics -fasm >> ${WRKSRC}/mk/build.mk
+	echo GhcLibHcOpts=-O -fasm >> ${WRKSRC}/mk/build.mk
 	echo GhcStage1HcOpts=-O -fasm >> ${WRKSRC}/mk/build.mk
 	echo GhcStage2HcOpts=-O -fasm >> ${WRKSRC}/mk/build.mk
 	echo SplitObjs=NO >> ${WRKSRC}/mk/build.mk
@@ -191,7 +197,7 @@ bootstrap: patch
 	echo BUILD_DOCBOOK_PDF=NO >> ${WRKSRC}/mk/build.mk
 	echo BUILD_DOCBOOK_PS=NO >> ${WRKSRC}/mk/build.mk
 	echo GhcWithSMP=NO >> ${WRKSRC}/mk/build.mk
-	echo INSTALL_BIN_OPTS=-s >> ${WRKSRC}/mk/build.mk
+	echo LD_OPTS=-optl-static -optl-s >> ${WRKSRC}/mk/build.mk
 
 	echo ${BOOTSTRAP_DATE} > ${WRKSRC}/VERSION_DATE
 

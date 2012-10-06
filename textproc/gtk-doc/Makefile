@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.31 2012/03/19 10:28:48 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.33 2012/09/27 17:59:37 ajacoutot Exp $
 
 COMMENT=	GTK C code documentation system
 
 GNOME_VERSION=	1.18
 GNOME_PROJECT=	gtk-doc
-REVISION=	1
+REVISION=	3
 
 CATEGORIES=    	textproc devel
 
@@ -23,26 +23,16 @@ MODPY_RUNDEP=		No
 MODGNOME_TOOLS= 	yelp
 
 CONFIGURE_STYLE=	gnu
-CONFIGURE_ARGS=		--with-xml-catalog=${WRKDIR}/catalog.xml
 
 # only files under tests/ are compiled but not installed
 PKG_ARCH=		*
 
 BUILD_DEPENDS=		${RUN_DEPENDS}
 RUN_DEPENDS=		textproc/openjade \
-			textproc/docbook \
 			textproc/docbook-xsl \
-			textproc/libxslt \
 			editors/vim,no_x11
 
 REGRESS_DEPENDS=	shells/bash
-
-post-extract:
-	cp ${LOCALBASE}/share/xml/docbook/catalog.xml \
-		${WRKDIR}/catalog.xml
-	xmlcatalog --add nextCatalog \
-		--id ${LOCALBASE}/share/xsl/docbook/catalog.xml \
-		--noout ${WRKDIR}/catalog.xml ${WRKDIR}/catalog.xml
 
 pre-configure:
 	perl -pi -e "s,/bin/bash,${LOCALBASE}/bin/bash," \
