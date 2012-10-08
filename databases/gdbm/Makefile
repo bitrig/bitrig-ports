@@ -28,6 +28,8 @@ USE_GROFF =		Yes
 CONFIGURE_STYLE= 	gnu
 CONFIGURE_ARGS+= 	${CONFIGURE_SHARED}
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
+
 NO_REGRESS=	Yes
 
 .include <bsd.port.mk>
