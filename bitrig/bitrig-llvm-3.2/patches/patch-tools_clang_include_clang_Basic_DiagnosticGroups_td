@@ -13,7 +13,7 @@ $OpenBSD$
      StringPlusInt,
      Trigraphs,
      Uninitialized,
-+    UninitializedMaybe,
++    UninitializedSometimes,
      UnknownPragmas,
      Unused,
      VolatileRegisterVar,

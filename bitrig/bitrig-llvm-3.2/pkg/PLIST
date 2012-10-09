@@ -437,6 +437,7 @@ include/clang/Tooling/ArgumentsAdjusters.h
 include/clang/Tooling/CommonOptionsParser.h
 include/clang/Tooling/CompilationDatabase.h
 include/clang/Tooling/CompilationDatabasePluginRegistry.h
+include/clang/Tooling/FileMatchTrie.h
 include/clang/Tooling/JSONCompilationDatabase.h
 include/clang/Tooling/Refactoring.h
 include/clang/Tooling/RefactoringCallbacks.h
@@ -523,6 +524,7 @@ include/llvm/ADT/VariadicFunction.h
 include/llvm/ADT/edit_distance.h
 include/llvm/ADT/ilist.h
 include/llvm/ADT/ilist_node.h
+include/llvm/AddressingMode.h
 include/llvm/Analysis/
 include/llvm/Analysis/AliasAnalysis.h
 include/llvm/Analysis/AliasSetTracker.h
@@ -588,6 +590,7 @@ include/llvm/Assembly/Parser.h
 include/llvm/Assembly/PrintModulePass.h
 include/llvm/Assembly/Writer.h
 include/llvm/Attributes.h
+include/llvm/AttributesImpl.h
 include/llvm/AutoUpgrade.h
 include/llvm/BasicBlock.h
 include/llvm/Bitcode/
@@ -692,6 +695,7 @@ include/llvm/Config/llvm-config.h
 include/llvm/Constant.h
 include/llvm/Constants.h
 include/llvm/DIBuilder.h
+include/llvm/DataLayout.h
 include/llvm/DebugInfo/
 include/llvm/DebugInfo.h
 include/llvm/DebugInfo/DIContext.h
@@ -700,13 +704,14 @@ include/llvm/DerivedTypes.h
 include/llvm/ExecutionEngine/
 include/llvm/ExecutionEngine/ExecutionEngine.h
 include/llvm/ExecutionEngine/GenericValue.h
-include/llvm/ExecutionEngine/IntelJITEventsWrapper.h
 include/llvm/ExecutionEngine/Interpreter.h
 include/llvm/ExecutionEngine/JIT.h
 include/llvm/ExecutionEngine/JITEventListener.h
 include/llvm/ExecutionEngine/JITMemoryManager.h
 include/llvm/ExecutionEngine/MCJIT.h
 include/llvm/ExecutionEngine/OProfileWrapper.h
+include/llvm/ExecutionEngine/ObjectBuffer.h
+include/llvm/ExecutionEngine/ObjectImage.h
 include/llvm/ExecutionEngine/RuntimeDyld.h
 include/llvm/Function.h
 include/llvm/GVMaterializer.h
@@ -927,14 +932,12 @@ include/llvm/TableGen/Error.h
 include/llvm/TableGen/Main.h
 include/llvm/TableGen/Record.h
 include/llvm/TableGen/StringMatcher.h
-include/llvm/TableGen/TableGenAction.h
 include/llvm/TableGen/TableGenBackend.h
 include/llvm/Target/
 include/llvm/Target/Mangler.h
 include/llvm/Target/Target.td
 include/llvm/Target/TargetCallingConv.h
 include/llvm/Target/TargetCallingConv.td
-include/llvm/Target/TargetData.h
 include/llvm/Target/TargetELFWriterInfo.h
 include/llvm/Target/TargetFrameLowering.h
 include/llvm/Target/TargetInstrInfo.h
