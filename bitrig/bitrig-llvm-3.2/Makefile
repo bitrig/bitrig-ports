@@ -11,7 +11,7 @@ LLVM_V =	3.2
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION = 	8
+REVISION = 	9
 
 CATEGORIES =	bitrig
 
@@ -125,6 +125,7 @@ post-install:
 	    ${PREFIX}/lib/libclang_rt.${ARCH}.a
 
 git:
+	rm -rf ${DISTDIR}/llvm* ${DISTDIR}/clang* ${DISTDIR}/compiler-rt*
 	@mkdir -p ${TMPGIT}
 	if test -d ${TMPGIT}/llvm-3.2.src; then \
 		(cd ${TMPGIT}/llvm-3.2.src && git pull) \
