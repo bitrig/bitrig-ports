@@ -4,6 +4,7 @@ COMMENT=	GNU debugger
 CATEGORIES=	devel
 
 DISTNAME=	gdb-7.5
+REVISION =	0
 
 HOMEPAGE=	http://www.gnu.org/software/gdb/
 
