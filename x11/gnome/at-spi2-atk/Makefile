@@ -33,6 +33,9 @@ MODGNOME_CPPFLAGS=-I${X11BASE}/include
 # connects to DBus
 REGRESS_IS_INTERACTIVE=	x11
 
+CFLAGS+=-Wno-deprecated-declarations
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
+
 post-install:
 	rm ${PREFIX}/lib/gtk-2.0/modules/*.{a,la}
 
