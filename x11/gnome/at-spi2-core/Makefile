@@ -32,6 +32,8 @@ CONFIGURE_ARGS= --disable-xevie
 # connects to DBus
 REGRESS_IS_INTERACTIVE=	x11
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
+
 FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/at-spi2-core
 
 .include <bsd.port.mk>
