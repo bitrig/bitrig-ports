@@ -1,7 +1,7 @@
 $OpenBSD$
---- bfd/config.bfd.orig	Mon Jun 11 23:03:04 2012
-+++ bfd/config.bfd	Mon Jun 11 23:04:19 2012
-@@ -552,7 +552,7 @@
+--- bfd/config.bfd.orig	Tue May 15 08:55:34 2012
++++ bfd/config.bfd	Wed Oct 10 11:01:14 2012
+@@ -566,7 +566,7 @@ case "${targ}" in
      targ_selvecs="bfd_elf32_i386_vec i386bsd_vec"
      targ_underscore=yes
      ;;
@@ -10,7 +10,7 @@ $OpenBSD$
      targ_defvec=bfd_elf32_i386_vec
      targ_selvecs=i386netbsd_vec
      ;;
-@@ -601,7 +601,7 @@
+@@ -617,7 +617,7 @@ case "${targ}" in
      targ_selvecs="bfd_elf32_i386_freebsd_vec i386coff_vec i386pei_vec x86_64pei_vec bfd_elf32_i386_vec bfd_elf64_x86_64_vec bfd_elf64_l1om_vec bfd_elf64_l1om_freebsd_vec bfd_elf64_k1om_vec bfd_elf64_k1om_freebsd_vec"
      want64=true
      ;;
