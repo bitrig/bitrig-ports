@@ -1,7 +1,7 @@
 $OpenBSD$
---- configure.in.orig	Thu Jun 14 12:05:14 2012
-+++ configure.in	Thu Jun 14 12:05:49 2012
-@@ -2407,7 +2407,7 @@ ia64*-hpux*)
+--- configure.in.orig	Fri Sep  7 16:04:15 2012
++++ configure.in	Wed Oct 10 05:25:25 2012
+@@ -2347,7 +2347,7 @@ ia64*-hpux*)
  	esac
  	;;
  
@@ -10,7 +10,7 @@ $OpenBSD$
      if test "$SO_VERSION"; then
          DLL_SUFFIX=".so.$SO_VERSION"
      else
-@@ -3359,7 +3359,7 @@ then
+@@ -3297,7 +3297,7 @@ then
  			fi
  			;;
  

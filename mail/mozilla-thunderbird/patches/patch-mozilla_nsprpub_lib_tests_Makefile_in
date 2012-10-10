@@ -1,7 +1,7 @@
 $OpenBSD$
---- mozilla/nsprpub/lib/tests/Makefile.in.orig	Fri Jun 15 10:13:23 2012
-+++ mozilla/nsprpub/lib/tests/Makefile.in	Fri Jun 15 10:13:39 2012
-@@ -111,6 +111,12 @@ ifeq ($(OS_ARCH), Linux)
+--- mozilla/nsprpub/lib/tests/Makefile.in.orig	Fri Sep  7 16:06:21 2012
++++ mozilla/nsprpub/lib/tests/Makefile.in	Wed Oct 10 05:47:18 2012
+@@ -79,6 +79,12 @@ ifeq ($(OS_ARCH), Linux)
      endif
  endif
  

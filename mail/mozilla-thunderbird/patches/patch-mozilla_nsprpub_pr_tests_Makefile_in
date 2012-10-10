@@ -1,7 +1,7 @@
 $OpenBSD$
---- mozilla/nsprpub/pr/tests/Makefile.in.orig	Fri Jun 15 10:14:06 2012
-+++ mozilla/nsprpub/pr/tests/Makefile.in	Fri Jun 15 10:14:21 2012
-@@ -421,6 +421,12 @@ endif
+--- mozilla/nsprpub/pr/tests/Makefile.in.orig	Fri Sep  7 16:06:21 2012
++++ mozilla/nsprpub/pr/tests/Makefile.in	Wed Oct 10 05:25:26 2012
+@@ -389,6 +389,12 @@ endif
  LDOPTS += -Xlinker -R $(ABSOLUTE_LIB_DIR)
  endif
  
@@ -14,7 +14,7 @@ $OpenBSD$
  ifeq ($(OS_ARCH),OpenBSD)
  ifeq ($(USE_PTHREADS),1)
  LDOPTS += -pthread
-@@ -442,7 +448,7 @@ LIBPTHREAD = -lpthread
+@@ -410,7 +416,7 @@ LIBPTHREAD = -lpthread
  ifeq ($(OS_ARCH),AIX)
  LIBPTHREAD = -lpthreads
  endif

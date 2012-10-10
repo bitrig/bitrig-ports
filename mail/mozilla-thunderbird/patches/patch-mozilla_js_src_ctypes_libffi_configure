@@ -1,6 +1,6 @@
 $OpenBSD: patch-mozilla_js_src_ctypes_libffi_configure,v 1.3 2012/04/30 15:32:06 landry Exp $
---- mozilla/js/src/ctypes/libffi/configure.orig	Fri Jun  1 12:19:23 2012
-+++ mozilla/js/src/ctypes/libffi/configure	Thu Jun 14 10:34:54 2012
+--- mozilla/js/src/ctypes/libffi/configure.orig	Fri Sep  7 16:05:53 2012
++++ mozilla/js/src/ctypes/libffi/configure	Wed Oct 10 05:25:25 2012
 @@ -5120,7 +5120,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -63,3 +63,4 @@ $OpenBSD: patch-mozilla_js_src_ctypes_libffi_configure,v 1.3 2012/04/30 15:32:06
 +  amd64-*-freebsd* | amd64-*-openbsd* | amd64-*-bitrig*)
  	TARGET=X86_64; TARGETDIR=x86
    	;;
+ 

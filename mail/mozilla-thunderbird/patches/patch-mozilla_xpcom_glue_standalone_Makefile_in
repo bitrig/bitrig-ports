@@ -1,7 +1,7 @@
 $OpenBSD$
---- mozilla/xpcom/glue/standalone/Makefile.in.orig	Thu Jun 14 14:01:21 2012
-+++ mozilla/xpcom/glue/standalone/Makefile.in	Thu Jun 14 14:01:37 2012
-@@ -64,7 +64,7 @@ endif
+--- mozilla/xpcom/glue/standalone/Makefile.in.orig	Fri Sep  7 16:06:35 2012
++++ mozilla/xpcom/glue/standalone/Makefile.in	Wed Oct 10 05:25:26 2012
+@@ -38,7 +38,7 @@ endif
  ifeq ($(OS_ARCH),WINNT)
  LINKSRC = nsGlueLinkingWin.cpp
  endif

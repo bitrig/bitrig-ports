@@ -1,7 +1,7 @@
 $OpenBSD$
---- mozilla/configure.in.orig	Thu Jun 14 12:11:32 2012
-+++ mozilla/configure.in	Thu Jun 14 12:12:02 2012
-@@ -2810,7 +2810,7 @@ ia64*-hpux*)
+--- mozilla/configure.in.orig	Fri Sep  7 16:05:31 2012
++++ mozilla/configure.in	Wed Oct 10 05:25:25 2012
+@@ -2614,7 +2614,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
@@ -10,7 +10,7 @@ $OpenBSD$
      if test "$SO_VERSION"; then
          DLL_SUFFIX=".so.$SO_VERSION"
      else
-@@ -3452,7 +3452,7 @@ dnl Checks for header files.
+@@ -3256,7 +3256,7 @@ dnl Checks for header files.
  dnl ========================================================
  AC_HEADER_DIRENT
  case "$target_os" in
@@ -19,7 +19,7 @@ $OpenBSD$
  # for stuff like -lXshm
      CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
      ;;
-@@ -3746,7 +3746,7 @@ then
+@@ -3550,7 +3550,7 @@ then
  			fi
  			;;
  

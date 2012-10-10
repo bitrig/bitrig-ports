@@ -1,7 +1,7 @@
 $OpenBSD$
---- mozilla/js/src/shell/Makefile.in.orig	Fri Jul 13 14:36:12 2012
-+++ mozilla/js/src/shell/Makefile.in	Fri Jul 13 14:36:42 2012
-@@ -58,6 +58,7 @@ DEFINES         += -DEXPORT_JS_API
+--- mozilla/js/src/shell/Makefile.in.orig	Fri Sep  7 16:05:57 2012
++++ mozilla/js/src/shell/Makefile.in	Wed Oct 10 05:25:25 2012
+@@ -25,6 +25,7 @@ DEFINES         += -DEXPORT_JS_API
  DEFINES         += -DIMPL_MFBT
  
  LIBS      = $(NSPR_LIBS) $(EDITLINE_LIBS) $(DEPTH)/$(LIB_PREFIX)js_static.$(LIB_SUFFIX)
