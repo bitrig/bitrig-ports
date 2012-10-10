@@ -1,6 +1,60 @@
 $OpenBSD: patch-configure,v 1.1.1.1 2012/09/27 15:09:53 ajacoutot Exp $
---- configure.orig	Sat Oct  2 10:39:41 2010
-+++ configure	Sun Sep 23 12:03:50 2012
+--- configure.orig	Sat Oct  2 03:39:41 2010
++++ configure	Wed Oct 10 12:45:36 2012
+@@ -5602,7 +5602,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -6027,7 +6027,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig* )
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -6411,7 +6411,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -8890,7 +8890,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -9598,7 +9598,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -10558,7 +10558,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -12854,6 +12854,7 @@ $as_echo "$LIBICONV" >&6; }
    fi
  
@@ -17,6 +71,15 @@ $OpenBSD: patch-configure,v 1.1.1.1 2012/09/27 15:09:53 ajacoutot Exp $
  
  
      if test -n "$INTL_MACOSX_LIBS"; then
+@@ -15497,7 +15499,7 @@ else
+       alpine_SSLTYPE="nopwd"
+       alpine_SSLCERTS="/System/Library/OpenSSL/certs"
+       ;;
+-    *-openbsd*)
++    *-openbsd* | *-bitrig*)
+       alpine_SSLTYPE="nopwd"
+       alpine_SSLDIR="/usr"
+       alpine_SSLCERTS="/etc/ssl/certs"
 @@ -16422,8 +16424,8 @@ ac_res=$ac_cv_search_gss_init_sec_context
  if test "$ac_res" != no; then :
    test "$ac_res" = "none required" || LIBS="$ac_res $LIBS"
@@ -28,3 +91,21 @@ $OpenBSD: patch-configure,v 1.1.1.1 2012/09/27 15:09:53 ajacoutot Exp $
  
  else
  
+@@ -17000,7 +17002,7 @@ if test x"$acx_pthread_ok" = xyes; then
+       { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
+ $as_echo "yes" >&6; }
+       case "$target" in
+-	  *openbsd*)
++	  *openbsd* | *bitrig*)
+ 	    { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: pthread support on OpenBSD is unstable!" >&5
+ $as_echo "$as_me: WARNING: pthread support on OpenBSD is unstable!" >&6;}
+ 	    AM_CFLAGS="$AM_CFLAGS -pthread"
+@@ -18953,7 +18955,7 @@ $as_echo "#define __EXTENSIONS__ 1" >>confdefs.h
+     alpine_c_client_target="bsf"
+     LIBS="$LIBS $LIBINTL"
+     ;;
+-  *-*-openbsd*)
++  *-*-openbsd* | *-*-bitrig*)
+     systype="BSO"
+     alpine_path_delim="/"
+     alpine_mode_readonly="(0600)"
