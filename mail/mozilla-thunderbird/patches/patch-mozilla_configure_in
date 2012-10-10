@@ -1,6 +1,27 @@
 $OpenBSD$
 --- mozilla/configure.in.orig	Fri Sep  7 16:05:31 2012
-+++ mozilla/configure.in	Wed Oct 10 05:25:25 2012
++++ mozilla/configure.in	Wed Oct 10 11:18:51 2012
+@@ -1710,15 +1710,15 @@ if test "$GNU_CC"; then
+     _MOZ_RTTI_FLAGS_OFF=-fno-rtti
+ 
+     # Check for -mssse3 on $CC
+-    AC_MSG_CHECKING([for -mssse3 option to $CC])
+-    HAVE_COMPILER_FLAG_MSSSE3=
+     _SAVE_CFLAGS=$CFLAGS
+     CFLAGS="$CFLAGS -mssse3"
+-    AC_TRY_COMPILE(,,AC_MSG_RESULT([yes])
+-                     [HAVE_COMPILER_FLAG_MSSSE3=1],
++    AC_MSG_CHECKING([if toolchain supports -mssse3 option])
++    HAVE_TOOLCHAIN_SUPPORT_MSSSE3=
++    AC_TRY_COMPILE([asm ("pmaddubsw %xmm2,%xmm3");],,AC_MSG_RESULT([yes])
++                     [HAVE_TOOLCHAIN_SUPPORT_MSSSE3=1],
+                      AC_MSG_RESULT([no]))
+     CFLAGS=$_SAVE_CFLAGS
+-    AC_SUBST(HAVE_COMPILER_FLAG_MSSSE3)
++    AC_SUBST(HAVE_TOOLCHAIN_SUPPORT_MSSSE3)
+ 
+     # Turn on GNU-specific warnings:
+     # -Wall - turn on a lot of warnings
 @@ -2614,7 +2614,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
