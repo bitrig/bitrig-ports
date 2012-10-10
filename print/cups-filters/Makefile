@@ -27,6 +27,10 @@ WANTLIB += ssl stdc++ tiff z pcre qpdf
 
 MASTER_SITES=	http://www.openprinting.org/download/cups-filters/
 
+# work around some issues in libstc++
+CC=gcc
+CXX=g++
+
 # cc1plus: error: unrecognized command line option "-std=c++0x"
 MODULES +=	gcc4
 MODGCC4_ARCHS=	*
