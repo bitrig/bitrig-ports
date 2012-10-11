@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.221 2012/09/23 17:20:41 jeremy Exp $
+# $OpenBSD: Makefile,v 1.223 2012/10/10 10:45:30 jeremy Exp $
 
      SUBDIR =
      SUBDIR += apache-couchdb
@@ -142,6 +142,7 @@
      SUBDIR += postgresql
      SUBDIR += postgresql-jdbc
      SUBDIR += postgresql-odbc
+     SUBDIR += postgresql-pllua
      SUBDIR += postgresql_autodoc
      SUBDIR += py-axiom
      SUBDIR += py-cdb
@@ -161,6 +162,7 @@
      SUBDIR += py-sqlobject
      SUBDIR += py-storm
      SUBDIR += py-sybase
+     SUBDIR += py-whisper
      SUBDIR += qdbm
      SUBDIR += qt3-sqlite3-plugin
      SUBDIR += redis

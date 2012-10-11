@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.53 2012/06/29 14:02:54 landry Exp $
+# $OpenBSD: Makefile,v 1.55 2012/10/09 17:01:15 sthen Exp $
 
 SHARED_ONLY=		Yes
 
@@ -9,6 +9,9 @@ COMMENT-spamassassin=	spamassassin plugin
 
 V=			3.8.1
 DISTNAME=		claws-mail-${V}
+REVISION-main=		1
+REVISION-bogofilter=	0
+REVISION-spamassassin=	0
 PKGNAME-main=		${DISTNAME}
 PKGNAME-bogofilter=	claws-mail-bogofilter-${V}
 PKGNAME-spamassassin=	claws-mail-spamassassin-${V}
@@ -35,9 +38,9 @@ FLAVOR_STRING=		${FLAVOR_EXT:S/-/,/g}
 SUBST_VARS=		FLAVOR_STRING
 
 RUN_DEPENDS-bogofilter=	${BUILD_PKGPATH} \
-			mail/bogofilter 
+			mail/bogofilter
 RUN_DEPENDS-spamassassin=${BUILD_PKGPATH} \
-			mail/p5-Mail-SpamAssassin 
+			mail/p5-Mail-SpamAssassin
 
 WANTLIB=		X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes \
 			Xi Xinerama Xrandr Xrender atk-1.0 cairo crypto curl \
@@ -87,7 +90,7 @@ CONFIGURE_ENV+=		CPPFLAGS="-I${X11BASE}/include" \
 			LDFLAGS="-L${X11BASE}/lib"
 
 .if ${FLAVOR:Mjpilot}
-LIB_DEPENDS-main+=	comms/pilot-link 
+LIB_DEPENDS-main+=	comms/pilot-link
 WANTLIB-main +=		pisock
 RUN_DEPENDS-main+=	comms/jpilot
 .else

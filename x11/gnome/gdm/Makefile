@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.130 2012/10/03 16:20:09 ajacoutot Exp $
-
-BROKEN=			needs pam(3)
+# $OpenBSD: Makefile,v 1.136 2012/10/10 12:34:35 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -8,6 +6,7 @@ COMMENT=		GNOME display manager
 
 GNOME_PROJECT=		gdm
 GNOME_VERSION=		3.6.0
+REVISION=		1
 
 HOMEPAGE=		http://projects.gnome.org/gdm/
 
@@ -36,20 +35,23 @@ MODULES=		devel/gettext \
 			x11/gnome \
 			devel/dconf
 
+# cyclic dependency, see pkg/DESCR
 # bring _all_ runtime dependencies (including sysutils/consolekit and zenity)
-RUN_DEPENDS=		x11/gnome/session
+#RUN_DEPENDS +=		x11/gnome/session
+
+# orca-autostart.desktop
+RUN_DEPENDS +=		x11/gnome/orca
 
 LIB_DEPENDS=		audio/libcanberra,-gtk3 \
 			devel/libexecinfo \
 			security/nss \
+			security/openpam \
 			sysutils/accountsservice \
 			sysutils/upower
-# XXX 
-#LIB_DEPENDS +=		security/openpam
 
 LIBTOOL_FLAGS=		--tag=disable-static
 
-MODGNOME_TOOLS= 	yelp
+MODGNOME_TOOLS= 	goi yelp
 MODGNOME_ICON_CACHE=	Yes
 MODGNOME_CPPFLAGS=	-I${X11BASE}/include -DHAS_SA_LEN
 MODGNOME_LDFLAGS=	-L${X11BASE}/lib
@@ -71,6 +73,7 @@ CONFIGURE_ARGS=		--disable-static \
 			--with-group=_gdm \
 			--with-console-kit \
 			--with-xauth-dir=/var/run/gdm \
+			--with-initial-vt=05 \
 			--without-systemd \
 			--without-tcp-wrappers \
 			--disable-console-helper
@@ -86,8 +89,7 @@ pre-configure:
 	perl -pi -e 's,/bin/true,/usr/bin/true,g' \
 		${WRKSRC}/data/applications/mime-dummy-handler.desktop \
 		${WRKSRC}/configure \
-		${WRKSRC}/data/00-upstream-settings \
-		${WRKSRC}/data/session-setup.entries
+		${WRKSRC}/data/00-upstream-settings
 .for i in gdm-simple-greeter gnome-session-check-accelerated gnome-settings-daemon
 	perl -pi -e 's,/usr/libexec,${PREFIX},g' \
 		${WRKSRC}/data/applications/gdm-simple-greeter.desktop.in
@@ -99,6 +101,8 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/gdm/{etc/pam.d,var/db}
 	${INSTALL_DATA} ${FILESDIR}/gdm-* \
 		${PREFIX}/share/examples/gdm/etc/pam.d
+	${INSTALL_DATA} ${FILESDIR}/org.gnome.login-screen.gschema.override \
+		${PREFIX}/share/glib-2.0/schemas
 	mv ${WRKINST}/etc/gdm ${PREFIX}/share/examples/gdm/etc
 	mv ${WRKINST}/etc/dbus-1 ${PREFIX}/share/examples/gdm/etc
 	mv ${WRKINST}/etc/dconf ${PREFIX}/share/examples/gdm/etc

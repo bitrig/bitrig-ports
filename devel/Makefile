@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1078 2012/10/03 08:07:41 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.1082 2012/10/10 11:38:40 sthen Exp $
 
      SUBDIR =
      SUBDIR += ElectricFence
@@ -387,7 +387,6 @@
      SUBDIR += mingw
      SUBDIR += mk
      SUBDIR += mm
-     SUBDIR += mm-common
      SUBDIR += mono-addins
      SUBDIR += mono-gdata
      SUBDIR += mono-notify
@@ -873,6 +872,7 @@
      SUBDIR += p5-Sub-Name
      SUBDIR += p5-Sub-Override
      SUBDIR += p5-Sub-Uplevel
+     SUBDIR += p5-Switch
      SUBDIR += p5-Sys-SigAction
      SUBDIR += p5-System-Command
      SUBDIR += p5-TAP-Harness-Archive
@@ -1135,6 +1135,7 @@
      SUBDIR += qgit
      SUBDIR += qt-creator
      SUBDIR += qt4-eventsview
+     SUBDIR += quilt
      SUBDIR += quirks
      SUBDIR += radare2
      SUBDIR += ragel
@@ -1252,6 +1253,7 @@
      SUBDIR += svk
      SUBDIR += swig
      SUBDIR += t1lib
+     SUBDIR += tclap
      SUBDIR += tclcl
      SUBDIR += tcllib
      SUBDIR += teensyloader

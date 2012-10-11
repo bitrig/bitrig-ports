@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.74 2012/10/02 20:51:18 sthen Exp $
+# $OpenBSD: Makefile,v 1.76 2012/10/08 17:19:42 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
 COMMENT=		GNOME control center
 
 GNOME_PROJECT=		gnome-control-center
-GNOME_VERSION=		3.6.0
+GNOME_VERSION=		3.6.1
 
 CATEGORIES=		x11
 
@@ -47,13 +47,15 @@ LIB_DEPENDS=		x11/gnome/desktop>=3.6.0 \
 			audio/libcanberra,-gtk3 \
 			graphics/colord
 
-BUILD_DEPENDS=		x11/gnome/settings-daemon>=3.6.0 \
-			textproc/docbook-xsl \
+BUILD_DEPENDS=		x11/gnome/settings-daemon>=3.6.1 \
 			devel/iso-codes \
 			devel/gsettings-desktop-schemas
-RUN_DEPENDS=		x11/gnome/settings-daemon>=3.6.0 \
+RUN_DEPENDS=		x11/gnome/settings-daemon>=3.6.1 \
 			devel/iso-codes \
 			devel/gsettings-desktop-schemas
+
+# man pages
+BUILD_DEPENDS += textproc/docbook-xsl
 
 # XXX when the user account panel is re-enabled
 BUILD_DEPENDS +=	security/libpwquality

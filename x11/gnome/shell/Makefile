@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.15 2012/10/03 15:56:49 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.18 2012/10/10 08:42:40 ajacoutot Exp $
 
 COMMENT=		next generation GNOME shell
 
 GNOME_PROJECT=		gnome-shell
 GNOME_VERSION=		3.6.0
-REVISION=		1
+REVISION=		3
 
 HOMEPAGE=		http://live.gnome.org/GnomeShell
 
@@ -64,13 +64,16 @@ RUN_DEPENDS=		devel/py-gobject3 \
 # be installed separately or as part of the "gnome-extra" meta-package.
 #RUN_DEPENDS +=		mail/evolution
 
+# add required introspection libs that are not in the dependency chain
+RUN_DEPENDS +=	inputmethods/ibus \
+		x11/gnome/gdm
+
 MODGNOME_DESKTOP_FILE=	Yes
 
 LIBTOOL_FLAGS= 		--tag=disable-static
 
 CONFIGURE_STYLE=	autoconf
 CONFIGURE_ARGS=		--disable-static \
-			--with-ca-certificates=/etc/ssl/cert.pem \
 			--without-systemd
 
 AUTOCONF_VERSION=	2.69
