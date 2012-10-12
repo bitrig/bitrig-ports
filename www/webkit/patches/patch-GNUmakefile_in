@@ -7,7 +7,7 @@ $OpenBSD: patch-GNUmakefile_in,v 1.19 2012/08/22 07:48:37 landry Exp $
   by emitting a fdtox %r8, %r7 call, whose second operand isn't even and thus invalid.
 (on Source/JavaScriptCore/runtime/NumberPrototype.cpp)
 --- GNUmakefile.in.orig	Mon Aug 20 22:37:15 2012
-+++ GNUmakefile.in	Tue Aug 21 09:40:46 2012
++++ GNUmakefile.in	Fri Oct 12 07:49:13 2012
 @@ -11414,7 +11414,7 @@ COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES
  	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
  AM_V_CC = $(am__v_CC_@AM_V@)
@@ -53,7 +53,7 @@ $OpenBSD: patch-GNUmakefile_in,v 1.19 2012/08/22 07:48:37 landry Exp $
  noinst_HEADERS := 
  
  # We have a different library with only the files that require GTK+. It allows us
-@@ -62651,7 +62653,7 @@ Source/JavaScriptCore/runtime/libjavascriptcoregtk_@WE
+@@ -62651,7 +62651,7 @@ Source/JavaScriptCore/runtime/libjavascriptcoregtk_@WE
  @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libjavascriptcoregtk_@WEBKITGTK_API_MAJOR_VERSION@_@WEBKITGTK_API_MINOR_VERSION@_la_CPPFLAGS) $(CPPFLAGS) $(libjavascriptcoregtk_@WEBKITGTK_API_MAJOR_VERSION@_@WEBKITGTK_API_MINOR_VERSION@_la_CXXFLAGS) $(CXXFLAGS) -c -o Source/JavaScriptCore/runtime/libjavascriptcoregtk_@WEBKITGTK_API_MAJOR_VERSION@_@WEBKITGTK_API_MINOR_VERSION@_la-NumberObject.lo `test -f 'Source/JavaScriptCore/runtime/NumberObject.cpp' || echo '$(srcdir)/'`Source/JavaScriptCore/runtime/NumberObject.cpp
  
  Source/JavaScriptCore/runtime/libjavascriptcoregtk_@WEBKITGTK_API_MAJOR_VERSION@_@WEBKITGTK_API_MINOR_VERSION@_la-NumberPrototype.lo: Source/JavaScriptCore/runtime/NumberPrototype.cpp
@@ -62,7 +62,7 @@ $OpenBSD: patch-GNUmakefile_in,v 1.19 2012/08/22 07:48:37 landry Exp $
  @am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) Source/JavaScriptCore/runtime/$(DEPDIR)/libjavascriptcoregtk_@WEBKITGTK_API_MAJOR_VERSION@_@WEBKITGTK_API_MINOR_VERSION@_la-NumberPrototype.Tpo Source/JavaScriptCore/runtime/$(DEPDIR)/libjavascriptcoregtk_@WEBKITGTK_API_MAJOR_VERSION@_@WEBKITGTK_API_MINOR_VERSION@_la-NumberPrototype.Plo
  @AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='Source/JavaScriptCore/runtime/NumberPrototype.cpp' object='Source/JavaScriptCore/runtime/libjavascriptcoregtk_@WEBKITGTK_API_MAJOR_VERSION@_@WEBKITGTK_API_MINOR_VERSION@_la-NumberPrototype.lo' libtool=yes @AMDEPBACKSLASH@
  @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@@ -70538,7 +70540,7 @@ install-data-local:
+@@ -70538,7 +70538,7 @@ install-data-local:
  	  if test -n "$(DOC_MODULE_VERSION)"; then \
  	    installdir="$(DESTDIR)$(HTML_DIR)/webkitgtk-$(DOC_MODULE_VERSION)"; \
  	  else \
@@ -71,7 +71,7 @@ $OpenBSD: patch-GNUmakefile_in,v 1.19 2012/08/22 07:48:37 landry Exp $
  	  fi; \
  	  $(mkinstalldirs) $${installdir} ; \
  	  for i in $$installfiles; do \
-@@ -70570,7 +70572,7 @@ install-data-local:
+@@ -70570,7 +70570,7 @@ install-data-local:
  @ENABLE_WEBKIT2_TRUE@	      $${installdir}/webkit2gtk-$(DOC_MODULE_VERSION).devhelp2; \
  @ENABLE_WEBKIT2_TRUE@	  fi; \
  @ENABLE_WEBKIT2_TRUE@	fi

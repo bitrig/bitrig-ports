@@ -1,7 +1,7 @@
 $OpenBSD$
---- Source/JavaScriptCore/wtf/InlineASM.h.orig	Fri Aug 10 13:44:23 MDT 2012
-+++ Source/JavaScriptCore/wtf/InlineASM.h	Fri Aug 10 13:44:23 MDT 2012
-@@ -61,7 +61,8 @@
+--- Source/JavaScriptCore/wtf/InlineASM.h.orig	Mon Aug 20 18:26:05 2012
++++ Source/JavaScriptCore/wtf/InlineASM.h	Fri Oct 12 07:49:13 2012
+@@ -61,6 +61,7 @@
  #elif   OS(LINUX)               \
       || OS(FREEBSD)             \
       || OS(OPENBSD)             \
