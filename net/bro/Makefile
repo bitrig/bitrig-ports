@@ -32,6 +32,9 @@ LIB_DEPENDS=	net/GeoIP \
 USE_LIBTOOL=	Yes
 CONFIGURE_STYLE=autoconf
 AUTOCONF_VERSION=2.59
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST} \
+				${WRKDIST}/aux/binpac \
+				${WRKDIST}/aux/broccoli
 
 WRKDIST=	${WRKDIR}/bro-${V}
 
