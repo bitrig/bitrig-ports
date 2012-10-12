@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.4 2010/06/26 14:32:15 ckuethe Exp $
---- configure.orig	Fri Jun 25 21:20:03 2010
-+++ configure	Fri Jun 25 21:38:41 2010
+--- configure.orig	Sun Mar  6 17:21:39 2005
++++ configure	Fri Oct 12 14:07:07 2012
 @@ -6433,12 +6433,12 @@ cat >>conftest.$ac_ext <<_ACEOF
  /* end confdefs.h.  */
  #include <libintl.h>
@@ -56,3 +56,21 @@ $OpenBSD: patch-configure,v 1.4 2010/06/26 14:32:15 ckuethe Exp $
        fi
  
        if test "$gt_use_preinstalled_gnugettext" = "yes" \
+@@ -7185,7 +7185,7 @@ LIBS="$aputils_save_LIBS"
+ 
+ # Check for OS and make OS define OS specific variables
+ case "$host_os" in
+- *bsd*|*darwin* )
++ *bsd*|*bitrig*|*darwin* )
+ 
+ cat >>confdefs.h <<\_ACEOF
+ #define OS_BSD 1
+@@ -7196,7 +7196,7 @@ _ACEOF
+ 	    ap_config_LDADD="-lncurses"
+ 	    CC="$CC -R/usr/pkg/lib -L/usr/pkg/lib -I/usr/pkg/include"
+ 	    ;;
+-	 openbsd* )
++	 openbsd* | bitrig* )
+ 	    ;;
+ 	 *darwin* )
+ 
