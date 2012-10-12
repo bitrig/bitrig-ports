@@ -22,6 +22,9 @@ NO_REGRESS =	Yes
 
 LIB_DEPENDS =	net/flow-tools
 
+CC =	cc
+CXX =	${CC}
+
 CONFIGURE_STYLE = 	gnu
 CONFIGURE_ARGS +=	--with-libft=${LOCALBASE} \
 			--without-mysql \
