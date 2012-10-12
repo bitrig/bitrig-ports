@@ -44,6 +44,9 @@ BUILD_DEPENDS=	devel/m4 \
 
 FAKE_FLAGS=	sysconfdir=${TRUEPREFIX}/share/examples/bird
 
+CC=	cc
+CXX=	${CC}
+
 USE_GMAKE=	Yes
 CONFIGURE_STYLE=gnu
 
