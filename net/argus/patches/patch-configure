@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.orig	Fri Oct 12 14:18:38 2012
++++ configure	Fri Oct 12 14:19:01 2012
+@@ -8306,7 +8306,7 @@ fi
+ 
+   if test "$with_threads" != no; then
+     case "$host_os" in
+-      *openbsd*)
++      *openbsd* | *bitrig*)
+         ;;
+ 
+       *)
