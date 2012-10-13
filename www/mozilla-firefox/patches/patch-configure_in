@@ -1,40 +1,44 @@
-<<<<<<< HEAD
-$OpenBSD$
---- configure.in.orig	Wed Jul 18 18:38:21 CEST 2012
-+++ configure.in	Wed Jul 18 18:38:21 CEST 2012
-@@ -2810,7 +2810,7 @@ ia64*-hpux*)
+$OpenBSD: patch-configure_in,v 1.26 2012/10/10 20:56:14 landry Exp $
+https://bugzilla.mozilla.org/show_bug.cgi?id=776838
+--- configure.in.orig	Wed Oct 10 23:42:45 2012
++++ configure.in	Sat Oct 13 14:33:49 2012
+@@ -2353,7 +2353,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
 -*-openbsd*)
-+*-openbsd*|*-bitrig*)
++*-openbsd* | *-bitrig*)
      if test "$SO_VERSION"; then
          DLL_SUFFIX=".so.$SO_VERSION"
      else
-@@ -3452,7 +3452,7 @@ dnl Checks for header files.
+@@ -2974,7 +2974,7 @@ dnl Checks for header files.
  dnl ========================================================
  AC_HEADER_DIRENT
  case "$target_os" in
 -freebsd*|openbsd*)
-+freebsd*|openbsd*|bitrig*)
++freebsd* | openbsd* | bitrig*)
  # for stuff like -lXshm
      CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
      ;;
-@@ -3746,7 +3746,7 @@ then
+@@ -3232,7 +3232,7 @@ then
  			fi
  			;;
  
 -	    *-*-openbsd*|*-*-bsdi*)
-+	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
++	    *-*-openbsd* | *-*-bitrig* | *-*-bsdi*)
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
-=======
-$OpenBSD: patch-configure_in,v 1.24 2012/08/07 08:55:40 landry Exp $
-https://bugzilla.mozilla.org/show_bug.cgi?id=776838
---- configure.in.orig	Tue Jul 24 11:02:39 2012
-+++ configure.in	Tue Jul 24 11:02:51 2012
-@@ -5825,7 +5825,7 @@ if test "$MOZ_GSTREAMER"; then
+@@ -5555,7 +5555,7 @@ if test -n "$MOZ_CUBEB"; then
+     *-darwin*)
+         AC_DEFINE(MOZ_CUBEB)
+         ;;
+-    *-openbsd*)
++    *-openbsd* | *-bitrig*)
+         AC_DEFINE(MOZ_CUBEB)
+         ;;
+     *)
+@@ -5616,7 +5616,7 @@ if test "$MOZ_GSTREAMER"; then
                        gstreamer-plugins-base-$GST_API_VERSION)
      if test -n "$GSTREAMER_LIBS"; then
         _SAVE_LDFLAGS=$LDFLAGS
@@ -43,4 +47,3 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=776838
         AC_TRY_LINK(,[return 0;],_HAVE_LIBGSTVIDEO=1,_HAVE_LIBGSTVIDEO=)
         if test -n "$_HAVE_LIBGSTVIDEO" ; then
            GSTREAMER_LIBS="$GSTREAMER_LIBS -lgstvideo-$GST_API_VERSION"
->>>>>>> origin/openbsd

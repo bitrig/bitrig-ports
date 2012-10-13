@@ -1,7 +1,7 @@
 $OpenBSD: patch-m4_gssapi_m4,v 1.2 2010/10/18 20:29:53 jsg Exp $
 --- m4/gssapi.m4.orig	Wed May 23 03:17:53 2007
-+++ m4/gssapi.m4	Sat Oct 16 14:27:15 2010
-@@ -49,11 +49,20 @@ AC_DEFUN(MUTT_AM_PATH_GSSAPI,
++++ m4/gssapi.m4	Sat Oct 13 18:57:49 2012
+@@ -49,11 +49,27 @@ AC_DEFUN(MUTT_AM_PATH_GSSAPI,
      dnl Heimdal kerberos V support
      if test "$GSSAPI_IMPL" = "none"
      then
@@ -11,6 +11,13 @@ $OpenBSD: patch-m4_gssapi_m4,v 1.2 2010/10/18 20:29:53 jsg Exp $
 -          GSSAPI_LIBS="$GSSAPI_LIBS -lcrypt -lcom_err"
 -          ],, -lkrb5 -ldes -lasn1 -lroken -lcrypt -lcom_err)
 +      if test `uname -s` = "OpenBSD"
++      then
++          AC_CHECK_LIB(gssapi, gss_init_sec_context, [
++            GSSAPI_IMPL="Heimdal"
++            GSSAPI_LIBS="$GSSAPI_LDFLAGS -lgssapi -lkrb5 -lcrypto"
++            GSSAPI_CFLAGS="$CPPFLAGS -I/usr/include/kerberosV"
++            ],, -lkrb5 -lcrypto)
++      elif test `uname -s` = "Bitrig"
 +      then
 +          AC_CHECK_LIB(gssapi, gss_init_sec_context, [
 +            GSSAPI_IMPL="Heimdal"

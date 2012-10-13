@@ -1,0 +1,39 @@
+$OpenBSD: patch-extras_cuetag_sh,v 1.2 2012/10/11 14:37:04 sthen Exp $
+--- extras/cuetag.sh.orig	Wed Feb 15 01:10:02 2006
++++ extras/cuetag.sh	Thu Oct 11 16:36:37 2012
+@@ -18,7 +18,7 @@ vorbis()
+ {
+ 	# FLAC tagging
+ 	# --remove-vc-all overwrites existing comments
+-	METAFLAC="metaflac --remove-vc-all --import-vc-from=-"
++	METAFLAC="metaflac --remove-all-tags --import-tags-from=-"
+ 
+ 	# Ogg Vorbis tagging
+ 	# -w overwrites existing comments
+@@ -63,7 +63,7 @@ vorbis()
+ 	(for field in $fields; do
+ 		value=""
+ 		for conv in `eval echo \\$$field`; do
+-			value=`$CUEPRINT -n $1 -t "$conv\n" $cue_file`
++			value=`$CUEPRINT -n $1 -t "$conv\n" "$cue_file"`
+ 
+ 			if [ -n "$value" ]; then
+ 				echo "$field=$value"
+@@ -96,7 +96,7 @@ id3()
+ 	for field in $fields; do
+ 		value=""
+ 		for conv in `eval echo \\$$field`; do
+-			value=`$CUEPRINT -n $1 -t "$conv\n" $cue_file`
++			value=`$CUEPRINT -n $1 -t "$conv\n" "$cue_file"`
+ 
+ 			if [ -n "$value" ]; then
+ 				break
+@@ -141,7 +141,7 @@ main()
+ 	cue_file=$1
+ 	shift
+ 
+-	ntrack=`cueprint -d '%N' $cue_file`
++	ntrack=`cueprint -d '%N' "$cue_file"`
+ 	trackno=1
+ 
+ 	if [ $# -ne $ntrack ]; then

@@ -1,0 +1,20 @@
+$OpenBSD: patch-conf_zabbix_agentd_conf,v 1.1 2012/10/10 22:04:57 robert Exp $
+--- conf/zabbix_agentd.conf.orig	Wed Oct 10 19:55:23 2012
++++ conf/zabbix_agentd.conf	Wed Oct 10 19:55:43 2012
+@@ -9,6 +9,7 @@
+ # Mandatory: no
+ # Default:
+ # PidFile=/tmp/zabbix_agentd.pid
++PidFile=/var/run/zabbix/zabbix_agentd.pid
+ 
+ ### Option: LogFile
+ #	Name of log file.
+@@ -18,7 +19,7 @@
+ # Default:
+ # LogFile=
+ 
+-LogFile=/tmp/zabbix_agentd.log
++# LogFile=/tmp/zabbix_agentd.log
+ 
+ ### Option: LogFileSize
+ #	Maximum size of log file in MB.

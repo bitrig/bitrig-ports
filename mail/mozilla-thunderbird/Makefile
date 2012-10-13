@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.154 2012/09/01 14:22:45 landry Exp $
+# $OpenBSD: Makefile,v 1.160 2012/10/11 18:39:32 landry Exp $
 
 COMMENT-main =		Mozilla e-mail, rss and usenet client
 COMMENT-lightning =	Mozilla Thunderbird calendar extension
@@ -8,15 +8,15 @@ BROKEN-sparc64 =	https://bugzilla.mozilla.org/show_bug.cgi?id=577056
 # Don't forget to bump mail/thunderbird-i18n after updates.
 # Don't forget to update productivity/sunbird if patches changes.
 
-MOZILLA_VERSION =	15.0.1
+MOZILLA_VERSION =	16.0.1
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	thunderbird
 MOZILLA_CODENAME =	mail
 
 MULTI_PACKAGES =	-main -lightning -enigmail
 PKGNAME-main =		${PKGNAME}
-PKGNAME-lightning =	lightning-1.7beta1
-ENIG_V =		1.4.4
+PKGNAME-lightning =	lightning-1.8beta1
+ENIG_V =		1.4.5
 PKGNAME-enigmail =	enigmail-${ENIG_V}
 EPOCH-lightning =	0
 REVISION-lightning =	0
@@ -29,7 +29,7 @@ DISTFILES +=	${MOZILLA_PROJECT}-${MOZILLA_VERSION}.source.tar.bz2 \
 		enigmail-${ENIG_V}.tar.gz:0
 EXTRACT_CASES =	enigmail-*.tar.gz) ${GZIP_CMD} -dc ${FULLDISTDIR}/$$archive | tar -C comm-${MOZILLA_BRANCH}/mailnews/extensions/ -xf -;;
 
-SO_VERSION =	25.0
+SO_VERSION =	26.0
 # NOTE: Must bump minor version if any shlib's are removed from the
 # components dir to avoid pkg_add -r issues.
 
@@ -54,18 +54,21 @@ MODPY_RUNDEP =	No
 # Regression tests are too hard to adapt to run here
 NO_REGRESS =	Yes
 
-CC=gcc
-CXX=g++
+CC =	gcc
+CXX =	g++
 
-MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/mozilla/js/src/ctypes/libffi/ \
-				${WRKSRC}/mozilla/modules/freetype2/builds/unix/ \
-				${WRKSRC}/mozilla/js/src/build/autoconf/ \
-				${WRKSRC}/mozilla/ipc/chromium/src/third_party/libevent/ \
-				${WRKSRC}/mozilla/build/autoconf/ \
-				${WRKSRC}/mozilla/nsprpub/build/autoconf/ \
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build/autoconf \
+				${WRKSRC}/ldap/sdks/c-sdk/config/autoconf \
+				${WRKSRC}/mozilla/build/autoconf \
+				${WRKSRC}/mozilla/ipc/chromium/src/third_party/libevent \
+				${WRKSRC}/mozilla/js/src/build/autoconf \
+				${WRKSRC}/mozilla/js/src/ctypes/libffi \
+				${WRKSRC}/mozilla/memory/jemalloc/src \
+				${WRKSRC}/mozilla/modules/freetype2/builds/unix \
+				${WRKSRC}/mozilla/nsprpub/build/autoconf \
 				${WRKSRC}/mozilla/toolkit/crashreporter/google-breakpad/autotools \
-				${WRKSRC}/build/autoconf/ \
-				${WRKSRC}/ldap/sdks/c-sdk/config/autoconf/
+				${WRKSRC}/mozilla/tools/profiler/libunwind/src/aux_ \
+				${WRKSRC}/mozilla/tools/profiler/libunwind/src/config
 
 CONFIGURE_STYLE =	autoconf no-autoheader
 CONFIGURE_ARGS +=	--enable-official-branding
@@ -77,8 +80,6 @@ WANTLIB +=	event
 SEPARATE_BUILD =	Yes
 # XXX solved in firefox by patch-config-autoconf_mk_in ?
 CONFIGURE_ENV +=	CPPFLAGS=-I${X11BASE}/include
-CONFIGURE_ENV +=	ac_cv_thread_keyword=no
-#CONFIGURE_ENV +=	ac_cv_thread_keyword=no ac_cv_visibility_hidden=no ac_cv_visibility_default=no ac_cv_visibility_pragma=no
 
 # XXX needed since 10.0b4, relocation overflow otherwise...
 # replaces -g by -Os
@@ -107,7 +108,6 @@ CONFIGURE_ARGS +=	--enable-calendar \
 ALL_TARGET =	default
 
 MOZILLA_AUTOCONF_DIRS =		ldap/sdks/c-sdk mozilla mozilla/js/src
-MOZILLA_SUBST_FILES +=		config/autoconf.mk.in
 
 ENIGMAIL_DIR =	mailnews/extensions/enigmail
 
@@ -123,7 +123,7 @@ GNU_ARCH =	${MACHINE_ARCH:S/amd64/x86_64/}
 GUIDS =	gdata-provider {a62ef8ec-5fdc-40c2-873c-223b8a6925cc} \
 	lightning {e2fda1a4-762b-4020-b5ad-a41df1933103} \
 	calendar-timezones calendar-timezones@mozilla.org \
-	../bin/enigmail-1.5-bitrig-${GNU_ARCH} {847b3a00-7ab1-11d4-8f02-006008948af5}
+	../bin/enigmail-1.5-openbsd-${GNU_ARCH} {847b3a00-7ab1-11d4-8f02-006008948af5}
 
 EXTDIR =	${PREFIX}/lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/extensions/
 post-install:

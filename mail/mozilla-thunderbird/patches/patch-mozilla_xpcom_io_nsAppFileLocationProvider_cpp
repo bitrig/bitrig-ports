@@ -11,7 +11,7 @@ $OpenBSD: patch-mozilla_xpcom_io_nsAppFileLocationProvider_cpp,v 1.7 2012/09/01 
 -#else
 -          "/usr/lib/mozilla/plugins";
 -#endif
-+        static const char *const sysLPlgDir = "/usr/local/lib/mozilla/plugins";
++        static const char *const sysLPlgDir = "${LOCALBASE}/lib/mozilla/plugins";
          rv = NS_NewNativeLocalFile(nsDependentCString(sysLPlgDir),
                                     false, getter_AddRefs(localFile));
  #else

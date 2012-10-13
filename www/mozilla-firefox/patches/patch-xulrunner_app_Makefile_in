@@ -1,6 +1,8 @@
---- xulrunner/app/Makefile.in.orig	Fri Jul 13 15:43:18 2012
-+++ xulrunner/app/Makefile.in	Mon Aug  6 18:40:55 2012
-@@ -83,6 +83,18 @@ ifeq (cocoa,$(MOZ_WIDGET_TOOLKIT))
+$OpenBSD: patch-xulrunner_app_Makefile_in,v 1.9 2012/09/01 13:56:45 landry Exp $
+https://bugzilla.mozilla.org/show_bug.cgi?id=648726
+--- xulrunner/app/Makefile.in.orig	Wed Oct 10 23:43:56 2012
++++ xulrunner/app/Makefile.in	Sat Oct 13 14:51:02 2012
+@@ -41,6 +41,18 @@ ifeq (cocoa,$(MOZ_WIDGET_TOOLKIT))
  TK_LIBS := -framework Cocoa $(TK_LIBS)
  endif
  
@@ -12,7 +14,7 @@
 +
 +ifeq ($(OS_ARCH),Bitrig)
 +ifdef MOZ_SYDNEYAUDIO
-+LIBS += -lsndio
++LIBS += /usr/lib/libsndio_pic.a /usr/lib/libpthread_pic.a
 +endif
 +endif
 +

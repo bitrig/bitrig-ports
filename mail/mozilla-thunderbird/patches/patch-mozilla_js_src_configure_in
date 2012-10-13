@@ -1,7 +1,7 @@
-$OpenBSD: patch-mozilla_js_src_configure_in,v 1.13 2012/09/01 14:22:45 landry Exp $
---- mozilla/js/src/configure.in.orig	Wed Oct 10 05:27:58 2012
-+++ mozilla/js/src/configure.in	Wed Oct 10 05:28:05 2012
-@@ -2299,8 +2299,13 @@ ia64*-hpux*)
+$OpenBSD: patch-mozilla_js_src_configure_in,v 1.14 2012/10/10 21:08:05 landry Exp $
+--- mozilla/js/src/configure.in.orig	Thu Oct 11 00:11:42 2012
++++ mozilla/js/src/configure.in	Sat Oct 13 07:14:05 2012
+@@ -1982,8 +1982,13 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
@@ -9,20 +9,31 @@ $OpenBSD: patch-mozilla_js_src_configure_in,v 1.13 2012/09/01 14:22:45 landry Ex
 -    DLL_SUFFIX=".so.1.0"
 +*-openbsd* | *-bitrig*)
 +    if test "$SO_VERSION"; then
-+	DLL_SUFFIX=".so.$SO_VERSION"
++        DLL_SUFFIX=".so.$SO_VERSION"
 +    else
-+	DLL_SUFFIX=".so.1.0"
++        DLL_SUFFIX=".so.1.0"
 +    fi
 +    MOZ_FIX_LINK_PATHS='-Wl,-rpath-link,$(LIBXUL_DIST)/bin -Wl,-rpath-link,$(prefix)/lib -Wl,-rpath-link,$(if $(X11BASE),$(X11BASE),/usr/X11R6)/lib'
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
      DSO_LDOPTS='-shared -fPIC'
-@@ -3133,7 +3138,7 @@ then
+@@ -2272,6 +2277,10 @@ mips*-*)
+     AC_DEFINE(JS_CPU_MIPS)
+     AC_DEFINE(JS_NUNBOX32)
+     ;;
++sparc64-*)
++    AC_DEFINE(AVMPLUS_SPARC)
++    AC_DEFINE(AVMPLUS_64BIT)
++    ;;
+ esac
+ 
+ MOZ_ARG_DISABLE_BOOL(methodjit,
+@@ -2794,7 +2803,7 @@ then
  			fi
  			;;
  
 -	    *-*-openbsd*|*-*-bsdi*)
-+	    *-*-openbsd*|*-*-bsdi*|*-*-bitrig*)
++	    *-*-openbsd* | *-*-bitrig* | *-*-bsdi*)
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.

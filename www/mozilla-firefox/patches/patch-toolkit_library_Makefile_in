@@ -1,6 +1,9 @@
---- toolkit/library/Makefile.in.orig	Fri Jul 13 15:43:16 2012
-+++ toolkit/library/Makefile.in	Mon Aug  6 18:38:05 2012
-@@ -457,6 +457,18 @@ OS_LIBS += \
+$OpenBSD: patch-toolkit_library_Makefile_in,v 1.19 2012/10/10 20:56:14 landry Exp $
+https://bugzilla.mozilla.org/show_bug.cgi?id=648726
+https://bugzilla.mozilla.org/show_bug.cgi?id=648730
+--- toolkit/library/Makefile.in.orig	Wed Oct 10 23:43:51 2012
++++ toolkit/library/Makefile.in	Sat Oct 13 14:58:52 2012
+@@ -455,6 +455,18 @@ OS_LIBS += \
    $(NULL)
  endif
  
@@ -12,27 +15,35 @@
 +
 +ifeq ($(OS_ARCH),Bitrig)
 +ifdef MOZ_SYDNEYAUDIO
-+EXTRA_DSO_LDOPTS += -lsndio /usr/lib/libsndio_pic.a /usr/lib/libpthread_pic.a
++EXTRA_DSO_LDOPTS += /usr/lib/libsndio_pic.a /usr/lib/libpthread_pic.a
 +endif
 +endif
 +
  ifeq ($(OS_ARCH),Darwin)
  ifdef MOZ_SYDNEYAUDIO
  OS_LIBS += \
-@@ -471,12 +483,6 @@ OS_LIBS += \
+@@ -470,15 +482,15 @@ OS_LIBS += \
  endif
  endif
  
 -ifneq (,$(filter NetBSD OpenBSD,$(OS_ARCH)))
 -ifdef MOZ_SYDNEYAUDIO
 -EXTRA_DSO_LDOPTS += -lossaudio
--endif
--endif
--
- ifdef MOZ_PLATFORM_MAEMO
- EXTRA_DSO_LDOPTS += $(MOZ_PLATFORM_MAEMO_LIBS)
++ifeq (OpenBSD,$(OS_ARCH))
++ifdef MOZ_CUBEB
++EXTRA_DSO_LDOPTS += -lsndio
  endif
-@@ -586,6 +592,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
+ endif
+ 
+-ifeq (OpenBSD,$(OS_ARCH))
++ifeq (Bitrig,$(OS_ARCH))
+ ifdef MOZ_CUBEB
+-EXTRA_DSO_LDOPTS += -lsndio
++EXTRA_DSO_LDOPTS += /usr/lib/libsndio_pic.a /usr/lib/libpthread_pic.a
+ endif
+ endif
+ 
+@@ -603,6 +615,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
  endif
  
  ifeq ($(OS_ARCH),OpenBSD)

@@ -1,6 +1,6 @@
-$OpenBSD: patch-mozilla_media_libsydneyaudio_src_Makefile_in,v 1.4 2012/03/16 21:35:25 landry Exp $
---- mozilla/media/libsydneyaudio/src/Makefile.in.orig	Fri Sep  7 16:06:14 2012
-+++ mozilla/media/libsydneyaudio/src/Makefile.in	Wed Oct 10 05:25:25 2012
+$OpenBSD: patch-mozilla_media_libsydneyaudio_src_Makefile_in,v 1.5 2012/09/01 14:22:45 landry Exp $
+--- mozilla/media/libsydneyaudio/src/Makefile.in.orig	Thu Oct 11 00:12:07 2012
++++ mozilla/media/libsydneyaudio/src/Makefile.in	Sat Oct 13 10:57:28 2012
 @@ -16,7 +16,7 @@ ifeq (WINNT,$(OS_TARGET))
  VISIBILITY_FLAGS =
  endif

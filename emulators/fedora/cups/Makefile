@@ -1,58 +1,31 @@
-# $OpenBSD: Makefile,v 1.2 2010/11/15 23:22:08 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2012/10/11 12:02:42 ajacoutot Exp $
 
-COMMENT=	Linux CUPS package based on Fedora Core 4
+COMMENT=	Linux CUPS package based on Fedora Core 10
 
-PKGNAME=	fedora_cups-4.0
-# clean up after make plist:
-#	- perl -pi -e "s,^\@lib ,," pkg/PLIST
+PKGNAME=	fedora_cups-${FEDORA_V}.0
+REVISION=	0
 
-SHARED_LIBS=	com_err	2.1 \
-		gssapi_krb5 2.2 \
-		k5crypto 3.0 \
-		krb5	3.2 \
-		krb5support 0.0
-
-MASTER_SITES=	${MASTER_SITE_FEDORA:=4/i386/os/Fedora/RPMS/}
-MASTER_SITES0=	${MASTER_SITE_FEDORA:=updates/4/i386/}
+SHARED_LIBS +=  des425                    3.0
+SHARED_LIBS +=  gssapi_krb5               2.2
+SHARED_LIBS +=  gssrpc                    4.0
+SHARED_LIBS +=  k5crypto                  3.1
+SHARED_LIBS +=  kadm5clnt                 5.1
+SHARED_LIBS +=  kadm5srv                  5.1
+SHARED_LIBS +=  kdb5                      4.0
+SHARED_LIBS +=  krb4                      2.0
+SHARED_LIBS +=  krb5                      3.3
+SHARED_LIBS +=  krb5support               0.1
 
 RUN_DEPENDS=	emulators/fedora/base
 
-DISTFILES=	${RPMS}
+RPMS=		audit-libs-1.7.13-1.fc10.i386.rpm:0 \
+		cups-libs-1.3.11-4.fc10.i386.rpm:0 \
+		gnutls-2.4.2-5.fc10.i386.rpm:0 \
+		krb5-libs-1.6.3-18.fc10.i386.rpm:0 \
+		libgcrypt-1.4.4-1.fc10.i386.rpm:0 \
+		libgpg-error-1.6-2.i386.rpm \
+		libtasn1-1.5-1.fc10.i386.rpm
 
-RPMDIR=		${FULLDISTDIR}
-
-RPMS=		cups-libs-1.1.23-15.4.i386.rpm:0 \
-		e2fsprogs-1.37-4.i386.rpm \
-		krb5-libs-1.4-3.i386.rpm \
-		openssl-0.9.7f-7.10.i386.rpm:0 \
-
-REMOVE_DIRS=	/usr/share/doc /usr/share/man etc/pki usr/kerberos
-REMOVE_FILES=	sbin/*e2* sbin/*fs sbin/*ext[23]* \
-		usr/sbin/ext2online usr/bin/*attr usr/bin/uuidgen \
-		usr/sbin/filefrag usr/sbin/mklost+found sbin/badblocks \
-		sbin/blkid sbin/fsck sbin/logsave \
-		usr/share/locale/*/LC_MESSAGES/e2fsprogs.mo \
-		${REMOVE_LIB:=lib/%} ${REMOVE_USRLIB:=usr/lib/%}
-REMOVE_LIB=	libuuid* libss.so* libe2p* libblkid* libext2fs*
-REMOVE_USRLIB=	libdes425* libgssrpc* libkrb4* libkdb5* libkadm5*
-
-do-install:
-	${INSTALL_DATA_DIR} ${FEDORADIR}
-.for rpm in ${RPMS:S/:0//}
-	cd ${FEDORADIR}; rpm2cpio ${RPMDIR}/${rpm} | cpio -id
-.endfor
-
-# get rid of some unnecessary files and directories
-.for D in ${REMOVE_DIRS}
-	rm -rf ${FEDORADIR}/${D}
-.endfor
-.for F in ${REMOVE_FILES}
-	rm -f ${FEDORADIR}/${F}
-.endfor
-
-# better safe than sorry
-	find ${FEDORADIR} -perm -4000 | xargs -r chmod u-s
-	find ${FEDORADIR} \( -user 37 -o -user 5041 -o -group 37 \) -print | \
-		xargs -r chown -h root:wheel
+REMOVE_DIRS=	usr/kerberos usr/share/man usr/share/doc
 
 .include <bsd.port.mk>

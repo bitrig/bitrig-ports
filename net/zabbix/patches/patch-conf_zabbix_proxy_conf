@@ -1,0 +1,61 @@
+$OpenBSD: patch-conf_zabbix_proxy_conf,v 1.1 2012/10/10 22:04:57 robert Exp $
+--- conf/zabbix_proxy.conf.orig	Wed Oct 10 19:55:52 2012
++++ conf/zabbix_proxy.conf	Wed Oct 10 19:56:54 2012
+@@ -74,7 +74,7 @@ Hostname=Zabbix proxy
+ # Default:
+ # LogFile=
+ 
+-LogFile=/tmp/zabbix_proxy.log
++# LogFile=/tmp/zabbix_proxy.log
+ 
+ ### Option: LogFileSize
+ #	Maximum size of log file in MB.
+@@ -104,6 +104,7 @@ LogFile=/tmp/zabbix_proxy.log
+ # Mandatory: no
+ # Default:
+ # PidFile=/tmp/zabbix_proxy.pid
++PidFile=/var/run/zabbix/zabbix_proxy.pid
+ 
+ ### Option: DBHost
+ #	Database host name.
+@@ -137,7 +138,7 @@ DBName=zabbix
+ # Default:
+ # DBUser=
+ 
+-DBUser=root
++DBUser=zabbix
+ 
+ ### Option: DBPassword
+ #	Database password. Ignored for SQLite.
+@@ -153,6 +154,7 @@ DBUser=root
+ # Mandatory: no
+ # Default:
+ # DBSocket=/tmp/mysql.sock
++DBSocket=/var/www/var/run/mysql/mysql.sock
+ 
+ # Option: DBPort
+ #	Database port when not using local socket. Ignored for SQLite.
+@@ -399,6 +401,7 @@ DBUser=root
+ # Mandatory: no
+ # Default:
+ # ExternalScripts=${datadir}/zabbix/externalscripts
++ExternalScripts=${SYSCONFDIR}/zabbix/externalscripts
+ 
+ ### Option: FpingLocation
+ #	Location of fping.
+@@ -407,6 +410,7 @@ DBUser=root
+ # Mandatory: no
+ # Default:
+ # FpingLocation=/usr/sbin/fping
++FpingLocation=${LOCALBASE}/sbin/fping
+ 
+ ### Option: Fping6Location
+ #	Location of fping6.
+@@ -416,6 +420,7 @@ DBUser=root
+ # Mandatory: no
+ # Default:
+ # Fping6Location=/usr/sbin/fping6
++Fping6Location=${LOCALBASE}/sbin/fping6
+ 
+ ### Option: SSHKeyLocation
+ #	Location of public and private keys for SSH checks and actions

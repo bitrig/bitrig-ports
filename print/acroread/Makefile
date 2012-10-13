@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2011/09/16 11:13:41 espie Exp $
+# $OpenBSD: Makefile,v 1.41 2012/10/11 15:05:37 ajacoutot Exp $
 
 ONLY_FOR_ARCHS=	i386
 SHARED_ONLY=	Yes
@@ -10,8 +10,8 @@ V=		7.0.9
 DISTNAME=	AdobeReader_enu-${V}-1.i386
 PKGNAME-main=	acroread-${V}
 PKGNAME-plugins=acroread-plugins-${V}
-REVISION-main=		0
-REVISION-plugins=	1
+REVISION-main=		1
+REVISION-plugins=	2
 CATEGORIES=	print
 SHARED_LIBS=	ACE	2.07 \
 		AGM	4.14 \
@@ -32,10 +32,11 @@ MULTI_PACKAGES=	-main -plugins
 
 MASTER_SITES=	http://ardownload.adobe.com/pub/adobe/reader/unix/7x/7.0.9/enu/
 
-RUN_DEPENDS=	emulators/fedora/base \
-		devel/desktop-file-utils
+RUN_DEPENDS-main=	emulators/fedora/base \
+			emulators/fedora/gtk+2 \
+			devel/desktop-file-utils
 
-RUN_DEPENDS-plugins=	${RUN_DEPENDS} ${PKGNAME-main}:print/acroread
+RUN_DEPENDS-plugins=	print/acroread,-main
 
 WRKDIST=	${WRKDIR}/AdobeReader
 NO_BUILD=	Yes

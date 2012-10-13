@@ -1,7 +1,7 @@
 $OpenBSD$
---- mozilla/config/config.mk.orig	Fri Sep  7 16:05:31 2012
-+++ mozilla/config/config.mk	Wed Oct 10 05:25:25 2012
-@@ -97,7 +97,7 @@ endif
+--- mozilla/config/config.mk.orig	Sat Oct 13 12:13:38 2012
++++ mozilla/config/config.mk	Sat Oct 13 12:15:14 2012
+@@ -100,7 +100,7 @@ endif
  # but save the version to allow multiple versions of the same base
  # platform to be built in the same tree.
  #

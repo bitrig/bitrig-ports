@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.290 2012/09/29 12:11:28 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.292 2012/10/11 14:18:00 sthen Exp $
 
      SUBDIR =
      SUBDIR += abcde
@@ -30,6 +30,7 @@
      SUBDIR += cmu-sphinxbase
      SUBDIR += cmus
      SUBDIR += cplay
+     SUBDIR += cuetools
      SUBDIR += daapd
      SUBDIR += deadbeef
      SUBDIR += disc-cover
@@ -44,6 +45,7 @@
      SUBDIR += flac
      SUBDIR += flite
      SUBDIR += fluidsynth
+     SUBDIR += fookebox
      SUBDIR += freealut
      SUBDIR += gimmix
      SUBDIR += gmpc

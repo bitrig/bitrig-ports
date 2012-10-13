@@ -1,15 +1,17 @@
-$OpenBSD: patch-base_debug_stack_trace_posix_cc,v 1.5 2012/07/10 09:22:34 robert Exp $
---- base/debug/stack_trace_posix.cc.orig	Tue Jul 10 10:37:42 2012
-+++ base/debug/stack_trace_posix.cc	Tue Jul 10 10:42:08 2012
-@@ -153,6 +153,11 @@ StackTrace::StackTrace() {
-     count_ = 0;
-     return;
-   }
-+#elif defined(OS_BSD)
-+  // Disable backtrace for now, libexecinfo crashes in getframeaddr
-+  // in release build / i386.
+$OpenBSD: patch-base_debug_stack_trace_posix_cc,v 1.7 2012/10/12 17:34:17 robert Exp $
+--- base/debug/stack_trace_posix.cc.orig	Fri Oct 12 21:20:33 2012
++++ base/debug/stack_trace_posix.cc	Fri Oct 12 21:21:03 2012
+@@ -148,9 +148,13 @@ bool GetBacktraceStrings(void *const *trace, int size,
+ }  // namespace
+ 
+ StackTrace::StackTrace() {
++#if defined(OS_BSD)
 +  count_ = 0;
-+  return;
- #endif
++#else
    // Though the backtrace API man page does not list any possible negative
    // return values, we take no chance.
+   count_ = std::max(backtrace(trace_, arraysize(trace_)), 0);
++#endif
+ }
+ 
+ void StackTrace::PrintBacktrace() const {

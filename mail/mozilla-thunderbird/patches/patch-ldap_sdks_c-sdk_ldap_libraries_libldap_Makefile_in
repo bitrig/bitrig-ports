@@ -1,6 +1,6 @@
 $OpenBSD$
---- ldap/sdks/c-sdk/ldap/libraries/libldap/Makefile.in.orig	Fri Sep  7 16:07:02 2012
-+++ ldap/sdks/c-sdk/ldap/libraries/libldap/Makefile.in	Wed Oct 10 05:47:19 2012
+--- ldap/sdks/c-sdk/ldap/libraries/libldap/Makefile.in.orig	Sat Oct 13 11:12:45 2012
++++ ldap/sdks/c-sdk/ldap/libraries/libldap/Makefile.in	Sat Oct 13 14:17:39 2012
 @@ -266,6 +266,10 @@ ifeq ($(OS_ARCH), OpenBSD)
  EXTRA_LIBS = -L$(dist_libdir) -l$(LBER_LIBNAME) -pthread
  endif
