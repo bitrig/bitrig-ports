@@ -28,6 +28,7 @@ USE_GROFF =		Yes
 MAKE_FLAGS =		INTLLIBS='$$(LTLIBINTL)'
 
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/auto-aux
 CONFIGURE_ARGS =	${CONFIGURE_SHARED} \
 			--without-aalib \
 			--without-cdk

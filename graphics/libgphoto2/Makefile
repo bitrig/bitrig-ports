@@ -29,6 +29,7 @@ MAKE_FLAGS =		INTLLIBS='$$(LTLIBINTL)'
 USE_LIBTOOL =		Yes
 USE_GROFF =		Yes
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/auto-aux ${WRKSRC}/libgphoto2_port/auto-aux
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib" \
 			ac_cv_path_DOXYGEN=false
