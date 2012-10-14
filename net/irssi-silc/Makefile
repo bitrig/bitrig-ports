@@ -31,6 +31,9 @@ RUN_DEPENDS=	net/irssi>=0.8.15
 MAKE_FLAGS=	libfe_common_silc_la_LDFLAGS=-avoid-version \
 		libsilc_core_la_LDFLAGS=-avoid-version
 
+CC=	gcc
+CXX=	g++
+
 USE_LIBTOOL=	  Yes
 LIBTOOL_FLAGS+=	  --tag=disable-static
 USE_GROFF =	Yes
@@ -47,6 +50,9 @@ CONFIGURE_ARGS+=  --docdir=${PREFIX}/share/doc/irssi/silc \
 		  --with-perl-lib=${PREFIX}/libdata/perl5/site_perl \
 		  --with-pic \
 		  --with-silc-plugin=${PREFIX}/lib/irssi
+
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST} \
+				${WRKDIST}/apps/irssi/build-aux
 
 .if ${MACHINE_ARCH} != "amd64" && ${MACHINE_ARCH} != "i386"
 CONFIGURE_ARGS+=  --disable-asm

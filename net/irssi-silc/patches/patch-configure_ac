@@ -1,11 +1,13 @@
 $OpenBSD: patch-configure_ac,v 1.2 2009/08/03 21:29:47 martynas Exp $
---- configure.ac.orig	Sat Aug  1 09:53:41 2009
-+++ configure.ac	Sun Aug  2 22:20:58 2009
-@@ -51,7 +51,7 @@ case "$target" in
+--- configure.ac.orig	Sat Aug  1 08:53:41 2009
++++ configure.ac	Sun Oct 14 11:59:44 2012
+@@ -50,8 +50,8 @@ case "$target" in
+   *-*-netbsd*)
      check_threads=true
      ;;
-   *-*-openbsd*)
+-  *-*-openbsd*)
 -    check_threads=true
++  *-*-openbsd* | *-*-bitrig*)
 +    check_threads=false
      ;;
    *-*-*bsd*)
