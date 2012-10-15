@@ -1,24 +1,23 @@
 @comment $OpenBSD: PLIST,v 1.11 2012/08/25 19:15:44 pascal Exp $
-@conflict libbfd-*
-@bin bin/egdb
-include/ansidecl.h
-include/bfd.h
-include/bfdlink.h
-include/dis-asm.h
-include/gdb/
-include/gdb/jit-reader.h
-include/symcat.h
-@info info/annotate.info
-@info info/bfd.info
+@bin bin/gdb
+@comment include/ansidecl.h
+@comment include/bfd.h
+@comment include/bfdlink.h
+@comment include/dis-asm.h
+@comment include/gdb/
+@comment include/gdb/jit-reader.h
+@comment include/symcat.h
+@comment @info info/annotate.info
+@comment @info info/bfd.info
 @info info/gdb.info
 @info info/gdbint.info
 @info info/stabs.info
 @comment lib/charset.alias
-lib/libbfd.a
-lib/libbfd.la
-lib/libopcodes.a
-lib/libopcodes.la
-@man man/man1/egdb.1
+@comment lib/libbfd.a
+@comment lib/libbfd.la
+@comment lib/libopcodes.a
+@comment lib/libopcodes.la
+@man man/man1/gdb.1
 @comment share/gdb/
 @comment share/gdb/python/
 @comment share/gdb/python/gdb/

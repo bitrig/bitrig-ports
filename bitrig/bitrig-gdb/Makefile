@@ -22,14 +22,15 @@ PERMIT_DISTFILES_CDROM=	Yes
 MASTER_SITES=	${MASTER_SITE_GNU:=gdb/}
 DIST_SUBDIR=	gdb
 
+PREFIX = 	/usr
+
 MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC} ${WRKSRC}/gdb
 
 WANTLIB = c expat kvm m ncurses pthread ${MODPY_WANTLIB} util z
 
 #SEPARATE_BUILD = Yes
 CONFIGURE_STYLE=gnu
-CONFIGURE_ARGS=	--program-transform-name=s,^,e, \
-		--disable-nls \
+CONFIGURE_ARGS=	--disable-nls \
 		--disable-werror \
 	 	--enable-target=all \
 		--with-python=${MODPY_BIN}
