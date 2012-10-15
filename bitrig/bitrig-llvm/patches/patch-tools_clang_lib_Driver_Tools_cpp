@@ -1,6 +1,6 @@
 $OpenBSD$
 --- tools/clang/lib/Driver/Tools.cpp.orig	Wed Apr 18 17:32:25 2012
-+++ tools/clang/lib/Driver/Tools.cpp	Mon Oct 15 14:18:26 2012
++++ tools/clang/lib/Driver/Tools.cpp	Mon Oct 15 14:23:37 2012
 @@ -977,6 +977,11 @@ void Clang::AddX86TargetArgs(const ArgList &Args,
          CPUName = "x86-64";
        else if (getToolChain().getArch() == llvm::Triple::x86)
@@ -13,7 +13,7 @@ $OpenBSD$
      } else if (getToolChain().getOS().startswith("openbsd"))  {
        if (getToolChain().getArch() == llvm::Triple::x86_64)
          CPUName = "x86-64";
-@@ -4563,6 +4568,142 @@ void auroraux::Link::ConstructJob(Compilation &C, cons
+@@ -4563,6 +4568,148 @@ void auroraux::Link::ConstructJob(Compilation &C, cons
    }
  
    addProfileRT(getToolChain(), Args, CmdArgs, getToolChain().getTriple());
@@ -116,8 +116,14 @@ $OpenBSD$
 +        CmdArgs.push_back("-lm");
 +    }
 +
-+    if (Args.hasArg(options::OPT_pthread))
-+      CmdArgs.push_back("-lpthread");
++    if (Args.hasArg(options::OPT_pthread)) {
++      if (!Args.hasArg(options::OPT_shared) &&
++          Args.hasArg(options::OPT_pg))
++        CmdArgs.push_back("-lpthread_p");
++     else
++        CmdArgs.push_back("-lpthread");
++    }
++
 +    if (!Args.hasArg(options::OPT_shared)) {
 +      if (Args.hasArg(options::OPT_pg)) 
 +         CmdArgs.push_back("-lc_p");
