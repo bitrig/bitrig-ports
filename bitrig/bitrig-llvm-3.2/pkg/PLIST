@@ -311,6 +311,7 @@ include/clang/Lex/ModuleLoader.h
 include/clang/Lex/ModuleMap.h
 include/clang/Lex/MultipleIncludeOpt.h
 include/clang/Lex/PPCallbacks.h
+include/clang/Lex/PPMutationListener.h
 include/clang/Lex/PTHLexer.h
 include/clang/Lex/PTHManager.h
 include/clang/Lex/Pragma.h
@@ -538,6 +539,7 @@ include/llvm/Analysis/CodeMetrics.h
 include/llvm/Analysis/ConstantFolding.h
 include/llvm/Analysis/ConstantsScanner.h
 include/llvm/Analysis/DOTGraphTraitsPass.h
+include/llvm/Analysis/DependenceAnalysis.h
 include/llvm/Analysis/DomPrinter.h
 include/llvm/Analysis/DominanceFrontier.h
 include/llvm/Analysis/DominatorInternals.h
@@ -590,7 +592,6 @@ include/llvm/Assembly/Parser.h
 include/llvm/Assembly/PrintModulePass.h
 include/llvm/Assembly/Writer.h
 include/llvm/Attributes.h
-include/llvm/AttributesImpl.h
 include/llvm/AutoUpgrade.h
 include/llvm/BasicBlock.h
 include/llvm/Bitcode/
@@ -607,6 +608,7 @@ include/llvm/CodeGen/Analysis.h
 include/llvm/CodeGen/AsmPrinter.h
 include/llvm/CodeGen/CalcSpillWeights.h
 include/llvm/CodeGen/CallingConvLower.h
+include/llvm/CodeGen/CommandFlags.h
 include/llvm/CodeGen/DFAPacketizer.h
 include/llvm/CodeGen/EdgeBundles.h
 include/llvm/CodeGen/FastISel.h
@@ -673,6 +675,7 @@ include/llvm/CodeGen/RegisterScavenging.h
 include/llvm/CodeGen/ResourcePriorityQueue.h
 include/llvm/CodeGen/RuntimeLibcalls.h
 include/llvm/CodeGen/ScheduleDAG.h
+include/llvm/CodeGen/ScheduleDAGILP.h
 include/llvm/CodeGen/ScheduleDAGInstrs.h
 include/llvm/CodeGen/ScheduleHazardRecognizer.h
 include/llvm/CodeGen/SchedulerRegistry.h
@@ -955,6 +958,8 @@ include/llvm/Target/TargetSchedule.td
 include/llvm/Target/TargetSelectionDAG.td
 include/llvm/Target/TargetSelectionDAGInfo.h
 include/llvm/Target/TargetSubtargetInfo.h
+include/llvm/Target/TargetTransformImpl.h
+include/llvm/TargetTransformInfo.h
 include/llvm/Transforms/
 include/llvm/Transforms/IPO/
 include/llvm/Transforms/IPO.h
@@ -977,6 +982,7 @@ include/llvm/Transforms/Utils/PromoteMemToReg.h
 include/llvm/Transforms/Utils/SSAUpdater.h
 include/llvm/Transforms/Utils/SSAUpdaterImpl.h
 include/llvm/Transforms/Utils/SimplifyIndVar.h
+include/llvm/Transforms/Utils/SimplifyLibCalls.h
 include/llvm/Transforms/Utils/UnifyFunctionExitNodes.h
 include/llvm/Transforms/Utils/UnrollLoop.h
 include/llvm/Transforms/Utils/ValueMapper.h
@@ -1002,6 +1008,7 @@ ${CLANG_INCLUDE_PATH}/bmi2intrin.h
 ${CLANG_INCLUDE_PATH}/bmiintrin.h
 ${CLANG_INCLUDE_PATH}/cpuid.h
 ${CLANG_INCLUDE_PATH}/emmintrin.h
+${CLANG_INCLUDE_PATH}/f16cintrin.h
 ${CLANG_INCLUDE_PATH}/float.h
 ${CLANG_INCLUDE_PATH}/fma4intrin.h
 ${CLANG_INCLUDE_PATH}/fmaintrin.h
