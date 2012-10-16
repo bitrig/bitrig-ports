@@ -1,0 +1,21 @@
+$OpenBSD$
+--- configure.orig	Mon Oct 15 15:02:09 2012
++++ configure	Mon Oct 15 15:01:48 2012
+@@ -2868,7 +2868,7 @@ case "${ENABLE_GOLD}" in
+     case "${target}" in
+       *-*-elf* | *-*-sysv4* | *-*-unixware* | *-*-eabi* | hppa*64*-*-hpux* \
+       | *-*-linux* | frv-*-uclinux* | *-*-irix5* | *-*-irix6* \
+-      | *-*-netbsd* | *-*-openbsd* | *-*-freebsd* | *-*-dragonfly* \
++      | *-*-netbsd* | *-*-openbsd* | *-*-bitrig* | *-*-freebsd* | *-*-dragonfly* \
+       | *-*-solaris2* | *-*-nto* | *-*-nacl*)
+         case "${target}" in
+           *-*-linux*aout* | *-*-linux*oldld*)
+@@ -3052,7 +3052,7 @@ if test x$enable_libgomp = x ; then
+     case "${target}" in
+     *-*-linux* | *-*-gnu* | *-*-k*bsd*-gnu | *-*-kopensolaris*-gnu)
+ 	;;
+-    *-*-netbsd* | *-*-freebsd* | *-*-openbsd* | *-*-dragonfly*)
++    *-*-netbsd* | *-*-freebsd* | *-*-openbsd* | *-*-bitrig* | *-*-dragonfly*)
+ 	;;
+     *-*-solaris2* | *-*-hpux11*)
+ 	;;
