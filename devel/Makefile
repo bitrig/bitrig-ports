@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1085 2012/10/17 12:00:44 pea Exp $
+# $OpenBSD: Makefile,v 1.1086 2012/10/18 08:00:28 landry Exp $
 
      SUBDIR =
      SUBDIR += ElectricFence
@@ -1046,7 +1046,6 @@
      SUBDIR += py-configobj
      SUBDIR += py-country
      SUBDIR += py-coverage
-     SUBDIR += py-ctypes
      SUBDIR += py-dateutil
      SUBDIR += py-decorator
      SUBDIR += py-decoratortools
