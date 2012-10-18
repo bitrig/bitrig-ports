@@ -3,15 +3,13 @@
 # XXX: Remember to bump MODCLANG_VERSION in lang/clang/clang.port.mk when
 # updating this port.
 
-SHARED_LIBS +=  libclang                  0.0 # 3.0
-
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 
 LLVM_V =	3.2
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION = 	11
+REVISION = 	12
 
 CATEGORIES =	bitrig
 

@@ -1088,7 +1088,7 @@ lib/libLLVMipo.a
 lib/libLTO.a
 lib/libLTO.so
 lib/libclang.a
-@lib lib/libclang.so.3.2
+lib/libclang.so
 lib/libclangARCMigrate.a
 lib/libclangAST.a
 lib/libclangASTMatchers.a
