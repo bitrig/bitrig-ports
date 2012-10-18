@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.60 2012/08/07 15:15:09 edd Exp $
+# $OpenBSD: Makefile,v 1.61 2012/10/18 21:23:51 espie Exp $
 
 COMMENT =		base binaries for TeXLive typesetting distribution
 
@@ -49,7 +49,7 @@ MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
 CONFIGURE_ENV +=	TL_MAKE=${GMAKE} \
 			CPPFLAGS="-I${TRUEPREFIX}/include/poppler -I${X11BASE}/include"
 
-WRKBUILD =              ${WRKSRC}/Work # Can't build in same dir
+WRKBUILD =              ${WRKSRC}/Work# Can't build in same dir
 CONFIGURE_SCRIPT =      ../configure
 MAKE_ENV =		${CONFIGURE_ENV}
 NO_REGRESS =		Yes # not worth the effort.
