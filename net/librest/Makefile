@@ -33,7 +33,7 @@ MODGNOME_TOOLS= 	goi
 LIB_DEPENDS =		devel/libsoup,-gnome
 
 CONFIGURE_STYLE =	gnu
-
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/build
 CONFIGURE_ARGS =	--with-gnome \
 			--with-ca-certificates=/etc/ssl/cert.pem
 
