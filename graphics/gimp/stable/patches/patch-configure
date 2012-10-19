@@ -1,7 +1,6 @@
-$OpenBSD$
---- configure.orig	Sat Aug 25 20:17:41 CEST 2012
-+++ configure	Sat Aug 25 20:17:41 CEST 2012
-@@ -5381,7 +5381,7 @@ else
+--- configure.orig	Thu Aug 23 14:41:09 2012
++++ configure	Fri Oct 19 15:34:05 2012
+@@ -5401,7 +5401,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -10,7 +9,7 @@ $OpenBSD$
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5819,7 +5819,7 @@ freebsd* | dragonfly*)
+@@ -5839,7 +5839,7 @@ freebsd* | dragonfly*)
      i*86 )
        # Not sure whether the presence of OpenBSD here was a mistake.
        # Let's accept both of them until this is cleared up.
@@ -19,25 +18,25 @@ $OpenBSD$
        lt_cv_file_magic_cmd=/usr/bin/file
        lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
        ;;
-@@ -5893,7 +5893,7 @@ newos6*)
+@@ -5909,7 +5909,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
 -openbsd*)
 +openbsd* | bitrig*)
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(.so.[0-9]+.[0-9]+|.so|_pic.a)$'
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -6507,7 +6507,7 @@ old_postuninstall_cmds=
+@@ -6523,7 +6523,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
 -  openbsd*)
 +  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~$RANLIB -t $tool_oldlib"
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -9563,7 +9563,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -9579,7 +9579,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -46,7 +45,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    linux* | k*bsd*-gnu | gnu*)
-@@ -10443,7 +10443,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -10459,7 +10459,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -55,7 +54,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -11498,7 +11498,7 @@ newsos6)
+@@ -11503,7 +11503,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -64,7 +63,7 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -15701,7 +15701,7 @@ else
+@@ -15705,7 +15705,7 @@ else
  fi
  
  	    ;;
@@ -73,7 +72,7 @@ $OpenBSD$
  	    CATOBJEXT=.mo
              DATADIRNAME=share
  	    ;;
-@@ -20081,7 +20081,7 @@ if ${ac_cv_lib_mng_mng_create+:} false; then :
+@@ -20085,7 +20085,7 @@ if ${ac_cv_lib_mng_mng_create+:} false; then :
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -82,7 +81,7 @@ $OpenBSD$
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -20124,7 +20124,7 @@ fi
+@@ -20128,7 +20128,7 @@ fi
  
    if test "$mng_ok" = yes; then
      have_libmng=yes
