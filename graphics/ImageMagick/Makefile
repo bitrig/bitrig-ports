@@ -32,7 +32,7 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB =		c bz2>=10 djvulibre fftw3 jasper>=1 jbig>=1.2 jpeg \
-			lcms lzma ltdl m perl png>=4 pthread stdc++ \
+			lcms2 lzma ltdl m perl png>=4 pthread stdc++ \
 			tiff>=36 z ICE SM X11 Xext Xt expat fontconfig \
 			freetype wmflite-0.2 wmf-0.2 xcb xml2>=9
 
