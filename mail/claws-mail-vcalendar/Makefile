@@ -43,4 +43,6 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--disable-static
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/config
+
 .include <bsd.port.mk>
