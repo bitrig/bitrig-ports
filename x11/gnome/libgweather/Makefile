@@ -33,7 +33,7 @@ MODULES=		devel/gettext \
 
 # XXX: get_symbollist: object list is empty
 USE_LIBTOOL=		gnu
-
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/build-aux
 MODGNOME_TOOLS= 	goi
 MODGNOME_ICON_CACHE=	Yes
 
