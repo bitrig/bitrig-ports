@@ -28,6 +28,8 @@ MASTER_SITES =		${MASTER_SITE_GNU:=emacs/}
 MULTI_PACKAGES =	-main -el
 
 USE_GMAKE =		Yes
+CC=gcc
+CXX=g++
 
 FLAVORS =		athena no_x11
 FLAVOR ?=
@@ -40,7 +42,8 @@ CONFIGURE_ARGS =	${GCCARCH} --with-system-malloc
 
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include \
 				  -I${LOCALBASE}/include/libpng" \
-			LDFLAGS="-L${LOCALBASE}/lib -nopie"
+			LDFLAGS="-L${LOCALBASE}/lib"
+#			LDFLAGS="-L${LOCALBASE}/lib -nopie"
 CFLAGS +=		-fno-pie
 
 MAKE_ENV =		INSTALL_EMACS="${INSTALL_SCRIPT}" \
