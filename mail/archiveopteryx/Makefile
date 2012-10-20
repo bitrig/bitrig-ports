@@ -32,7 +32,7 @@ JAMFLAGS = \
 	-sAOXUSER=_aox \
 	-sAOXGROUP=_aox \
 	-sBUILD= \
-	-sOPTIM="${CFLAGS}" \
+	-sOPTIM="${CFLAGS} -Wno-error" \
 	-sCXXFLAGS="${CXXFLAGS}" \
 	-sLDFLAGS="${LDFLAGS}"
 
