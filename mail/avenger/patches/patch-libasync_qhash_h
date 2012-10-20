@@ -1,0 +1,21 @@
+$OpenBSD$
+--- libasync/qhash.h.orig	Sat Oct 20 11:31:56 2012
++++ libasync/qhash.h	Sat Oct 20 11:34:47 2012
+@@ -71,7 +71,7 @@ class qhash (private)
+ 
+   slot *getslot (const K &k) const {
+     slot *s;
+-    for (s = lookup_val (hash (k)); s && !eq (s->key, k); s = next_val (s))
++    for (s = this->lookup_val (hash (k)); s && !eq (s->key, k); s = this->next_val (s))
+       ;
+     return s;
+   }
+@@ -156,7 +156,7 @@ class bhash // <K, void, H, E, kludge> (private)
+ 
+   slot *getslot (const K &k) const {
+     slot *s;
+-    for (s = lookup_val (hash (k)); s && !eq (s->key, k); s = next_val (s))
++    for (s = this->lookup_val (hash (k)); s && !eq (s->key, k); s = this->next_val (s))
+       ;
+     return s;
+   }

@@ -1,0 +1,21 @@
+$OpenBSD$
+--- libasync/vec.h.orig	Sat Oct 20 11:28:06 2012
++++ libasync/vec.h	Sat Oct 20 11:29:05 2012
+@@ -102,7 +102,7 @@ template<class T, size_t N = 0> class vec : public vec
+   static void destroy (elm_t &e) { e.~elm_t (); }
+ 
+   void init () { lastp = firstp = basep = def_basep (); limp = def_limp (); }
+-  void del () { while (firstp < lastp) firstp++->~elm_t (); bfree (basep); }
++  void del () { while (firstp < lastp) firstp++->~elm_t (); this->bfree (basep); }
+ 
+ #define append(v)						\
+ do {								\
+@@ -143,7 +143,7 @@ do {								\ (public)
+       elm_t *obasep = basep;
+       move (static_cast<elm_t *> (txmalloc (nalloc * sizeof (elm_t))));
+       limp = basep + nalloc;
+-      bfree (obasep);
++      this->bfree (obasep);
+     }
+     else
+       move (basep);

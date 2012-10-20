@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libasync/itree.h.orig	Sat Oct 20 11:31:19 2012
++++ libasync/itree.h	Sat Oct 20 11:31:33 2012
+@@ -250,7 +250,7 @@ class itree (public)
+ #else
+   V *operator[] (const K &k) {
+     // return search (wrap (this, &kvcmp, &k));
+-    return search (skvcmp, &kcmp, &k);
++    return this->search (skvcmp, &kcmp, &k);
+   }
+ #endif
+ };
