@@ -32,7 +32,7 @@ CFLAGS+=		"-I${LOCALBASE}/include/mysql"
 CONFIGURE_ARGS=		--without-mysql --with-libdb
 .endif
 
-MAKE_ENV=		CC="${CC}"
+MAKE_ENV=		"LDFLAGS=${LDFLAGS} -L${LOCALBASE}/lib" 
 INSTALL_TARGET=		MANDIR=${PREFIX}/man \
 			BINDIR=${PREFIX}/bin \
 			install
