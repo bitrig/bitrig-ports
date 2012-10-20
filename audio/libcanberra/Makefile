@@ -99,6 +99,8 @@ CONFIGURE_ARGS= 	${CONFIGURE_SHARED} \
 			--disable-tdb \
 			--enable-sndio
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/build-aux
+
 # If one of these tools is found at configure stage, it might be used,
 # no matter whether we use --disable-gtk-doc or not.
 CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
