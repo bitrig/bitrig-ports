@@ -46,4 +46,6 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 CONFIGURE_ARGS=	--disable-static \
 		--disable-libcanberra-gtk
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/config
+
 .include <bsd.port.mk>
