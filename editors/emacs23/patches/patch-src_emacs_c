@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/emacs.c.orig	Wed Jan 11 07:35:01 2012
++++ src/emacs.c	Fri Oct 19 13:44:45 2012
+@@ -609,7 +609,7 @@ static char dump_tz[] = "UtC0";
+    Provide dummy definitions to avoid error.
+    (We don't have any real constructors or destructors.)  */
+ #ifdef __GNUC__
+-#ifndef GCC_CTORS_IN_LIBC
++#if !defined(GCC_CTORS_IN_LIBC) && !defined(__Bitrig__)
+ void __do_global_ctors ()
+ {}
+ void __do_global_ctors_aux ()
