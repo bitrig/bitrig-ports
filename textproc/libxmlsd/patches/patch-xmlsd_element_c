@@ -1,0 +1,21 @@
+$OpenBSD$
+--- xmlsd_element.c.orig	Mon Oct 22 18:31:29 2012
++++ xmlsd_element.c	Mon Oct 22 18:32:24 2012
+@@ -152,7 +152,7 @@ xmlsd_elem_get_attr_hexnum(struct xmlsd_element *xe, c
+ {
+ 	const char		*str;
+ 	char			*end;
+-	unsigned long long	 val;
++	unsigned long long	 val = 0;
+ 
+ 	*errstr = NULL;
+ 	if ((str = xmlsd_elem_get_attr(xe, attr)) == NULL) {
+@@ -407,7 +407,7 @@ xmlsd_elem_get_value_hexnum(struct xmlsd_element *xe,
+ {
+ 	const char		*str;
+ 	char			*end;
+-	unsigned long long	 val;
++	unsigned long long	 val = 0;
+ 
+ 	*errstr = NULL;
+ 	if ((str = xmlsd_elem_get_value(xe)) == NULL) {
