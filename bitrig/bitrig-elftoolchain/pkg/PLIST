@@ -14,15 +14,12 @@
 @bin bin/size
 @bin bin/strings
 @bin bin/strip
-lib/libdwarf.a
-lib/libdwarf_p.a
-lib/libdwarf_pic.a
 lib/lib_elf.a
 lib/lib_elf_p.a
-lib/lib_elf_pic.a
+lib/libdwarf.a
+lib/libdwarf_p.a
 lib/libelftc.a
 lib/libelftc_p.a
-lib/libelftc_pic.a
 @man man/man1/addr2line.1
 @man man/man1/ar.1
 @man man/man1/brandelf.1

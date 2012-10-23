@@ -5,7 +5,7 @@ PKGNAME=	bitrig-elftoolchain-${V}
 DISTNAME=	elftoolchain-${V}
 #EXTRACT_SUFX=	.tgz
 CATEGORIES=	bitrig
-#REVISION =	0
+REVISION =	0
 LIB_DEPENDS=	archivers/libarchive
 
 HOMEPAGE=	http://sourceforge.net/apps/trac/elftoolchain/
