@@ -1,7 +1,7 @@
 $OpenBSD$
---- binutils/Makefile.bsd-wrapper.orig	Thu Sep  6 18:29:02 2012
-+++ binutils/Makefile.bsd-wrapper	Thu Sep  6 18:35:36 2012
-@@ -17,9 +17,8 @@ CFLAGS+=	${PIE_DEFAULT}
+--- binutils/Makefile.bsd-wrapper.orig	Mon Sep 17 15:10:14 2012
++++ binutils/Makefile.bsd-wrapper	Tue Oct 23 17:38:18 2012
+@@ -17,19 +17,13 @@ CFLAGS+=	${PIE_DEFAULT}
  # This allows moving the whole binutils installation around for 
  # testing purposes
  PREFIX=/usr
@@ -13,7 +13,17 @@ $OpenBSD$
  
  MAN=		binutils/doc/addr2line.1 binutils/doc/objcopy.1 \
  		binutils/doc/objdump.1 binutils/doc/readelf.1 \
-@@ -62,15 +61,16 @@ all:	config.status
+ 		c++filt.1
+ 
+-CONF_SUBDIRS+=	gdb
+-SUBDIRS+=	gdb
+-INST_SUBDIRS+=	gdb
+-MAN+=		gdb/gdb.1
+-
+ .if ${USING_NEW_BINUTILS:L} == "yes"
+ SUBDIRS+=	binutils ld gas
+ CONF_SUBDIRS+=	binutils ld gas
+@@ -62,15 +56,16 @@ all:	config.status
  	SUBDIRS='${SUBDIRS}' \
  	  CONFIGURE_HOST_MODULES='${CONFIGURE_HOST_MODULES}' \
  	  ${MAKE} CC="${CC}" \
@@ -33,7 +43,7 @@ $OpenBSD$
  .if ${USING_NEW_BINUTILS:L} != "yes"
  	cd ${.OBJDIR}/binutils && \
  	    ${MAKE} CC="${CC}" CFLAGS="${CFLAGS} ${COPTS}" \
-@@ -88,8 +88,15 @@ CF=
+@@ -88,8 +83,15 @@ CF=
  do-config: .USE
  	PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin" \
  	MAKEINFO='makeinfo --no-split' \
@@ -50,7 +60,7 @@ $OpenBSD$
  	    --disable-nls --disable-gdbtk --disable-install-libbfd ${CF} \
  	    ${CONFIGTARGET}
  	cd ${.OBJDIR} && \
-@@ -116,18 +123,21 @@ config.status: do-config
+@@ -116,18 +118,21 @@ config.status: do-config
  # Need to pass SUBDIRS because of install-info
  install: maninstall
  	SUBDIRS='${INST_SUBDIRS}' ${MAKE} DESTDIR='${DESTDIR}' \

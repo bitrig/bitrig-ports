@@ -5,9 +5,8 @@ COMMENT =		Bitrig binutils
 DISTNAME =		bitrig-binutils-0.4
 EXTRACT_SUFX =		.tgz
 CATEGORIES =		bitrig devel
-SHARED_LIBS =		iberty 10.1 \
-			readline 3.0
-REVISION=		0
+SHARED_LIBS =		iberty 10.1
+REVISION=		1
 
 HOMEPAGE =		https://www.bitrig.org/
 MAINTAINER =		Marco Peereboom <marco@bitrig.org>
