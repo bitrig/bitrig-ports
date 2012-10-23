@@ -356,6 +356,7 @@ include/clang/Sema/IdentifierResolver.h
 include/clang/Sema/Initialization.h
 include/clang/Sema/LocInfoType.h
 include/clang/Sema/Lookup.h
+include/clang/Sema/MultiplexExternalSemaSource.h
 include/clang/Sema/ObjCMethodList.h
 include/clang/Sema/Overload.h
 include/clang/Sema/Ownership.h
