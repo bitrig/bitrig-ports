@@ -9,7 +9,7 @@ BUILD_DEPENDS=	bitrig/bitrig-binutils \
 		bitrig/bitrig-gcc,-gcclibs \
 		bitrig/bitrig-gcc,-main \
 		bitrig/bitrig-llvm \
-		devel/gdb \
+		bitrig/bitrig-gdb \
 		devel/git \
 		sysutils/cdrtools \
 		archivers/libarchive
