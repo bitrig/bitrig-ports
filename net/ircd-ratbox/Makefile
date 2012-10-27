@@ -33,6 +33,10 @@ USE_LIBTOOL =		Yes
 LIBTOOL_FLAGS =		--tag=disable-static
 CONFIGURE_STYLE =	autoconf
 AUTOCONF_VERSION =	2.68
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST} \
+				${WRKDIST}/libltdl \
+				${WRKDIST}/libratbox
+
 CONFIGURE_ARGS =	--enable-openssl=/usr \
 			--with-confdir=${CONFDIR} \
 			--with-logdir=${LOGDIR} \
