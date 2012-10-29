@@ -77,7 +77,7 @@ USE_LIBTOOL=	Yes
 USE_GMAKE =	Yes
 USE_GROFF =	Yes
 CONFIGURE_STYLE=gnu
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/libltdl
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config ${WRKSRC}/libltdl/config
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--enable-tcl=yes \
 		--enable-perl \

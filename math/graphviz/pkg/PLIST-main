@@ -144,8 +144,8 @@ lib/tcl/graphviz/libtclplan.la
 lib/tcl/graphviz/libtkspline.a
 lib/tcl/graphviz/libtkspline.la
 lib/tcl/graphviz/pkgIndex.tcl
-lib/tcl${MODTCL_VERSION}/
-lib/tcl${MODTCL_VERSION}/graphviz
+lib/tcl${MODTK_VERSION}/
+lib/tcl${MODTK_VERSION}/graphviz
 ${P5ARCH}/
 ${P5ARCH}/gv.pm
 @man man/man1/acyclic.1
