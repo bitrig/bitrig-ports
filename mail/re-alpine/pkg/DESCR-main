@@ -11,5 +11,5 @@ This package is built using the re-alpine source, the continuation of
 the Alpine email client from University of Washington.
 
 The passfile flavor builds alpine with the option to store passwords
-in the file "~/.pine-passflie".  This should only be used in cases
+in the file "~/.pine-passfile".  This should only be used in cases
 where you are sure of the security of your local $HOME directory.

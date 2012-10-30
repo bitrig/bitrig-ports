@@ -11,6 +11,8 @@ V=			2.02
 DISTNAME=		re-alpine-${V}
 EXTRACT_SUFX=		.tar.bz2
 
+REVISION=		1
+
 SHARED_LIBS=		c-client 5.1
 
 # grep "PICO version" ${WRKSRC}/pico/pico.h
