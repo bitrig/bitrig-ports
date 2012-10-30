@@ -11,6 +11,8 @@ V=			2.02
 DISTNAME=		re-alpine-${V}
 EXTRACT_SUFX=		.tar.bz2
 
+REVISION=		1
+
 SHARED_LIBS=		c-client 5.1
 
 # grep "PICO version" ${WRKSRC}/pico/pico.h
@@ -24,6 +26,9 @@ PKGNAME-imap=		imap-uw-${V}
 PKGNAME-mailutil=	mailutil-uw-${V}
 PKGNAME-pico=		pico-${PICO_V}
 PKGNAME-pilot=		pilot-${PILOT_V}
+
+FLAVORS=               passfile
+FLAVOR?=
 
 EPOCH-c-client=		0
 EPOCH-imap=		0
@@ -86,6 +91,10 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--without-tcl \
 			--enable-quotas \
 			--disable-debug
+
+.if ${FLAVOR:L:Mpassfile}
+CONFIGURE_ARGS += 	--with-passfile=".pine-passfile"
+.endif
 
 HEADERS=		c-client.h dummy.h env.h env_unix.h fdstring.h \
 			flockcyg.h flocksim.h flstring.h fs.h ftl.h \
