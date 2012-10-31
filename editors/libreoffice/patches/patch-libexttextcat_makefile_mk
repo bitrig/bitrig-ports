@@ -1,11 +1,13 @@
---- libexttextcat/makefile.mk.orig	Mon Aug 20 13:58:45 2012
-+++ libexttextcat/makefile.mk	Mon Aug 20 13:58:21 2012
-@@ -47,7 +47,7 @@
- TARFILE_NAME=libexttextcat-3.2.0
- TARFILE_MD5=e1c178b18f130b40494561f02bc1a948
- TARFILE_ROOTDIR=libexttextcat-3.2.0
--PATCH_FILES=libexttextcat-3.2.0-visibility.patch android.patch
-+PATCH_FILES=libexttextcat-3.2.0-visibility.patch android.patch bitrig.patch
+$OpenBSD$
+--- libexttextcat/makefile.mk.orig	Sat Nov 10 13:32:39 2012
++++ libexttextcat/makefile.mk	Sat Nov 10 13:33:09 2012
+@@ -47,7 +47,8 @@ all:
+ TARFILE_NAME=libexttextcat-3.3.1
+ TARFILE_MD5=6097739c841f671cb21332b9cc593ae7
+ TARFILE_ROOTDIR=libexttextcat-3.3.1
+-PATCH_FILES=android.patch
++PATCH_FILES=	android.patch \
++		libexttextcat-bitrig.patch
  
  .IF "$(GUI)"=="UNX"
  .IF "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE"

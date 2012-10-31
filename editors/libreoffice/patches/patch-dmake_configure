@@ -1,6 +1,6 @@
 $OpenBSD$
---- dmake/configure.orig	Fri Aug  3 21:33:53 CEST 2012
-+++ dmake/configure	Fri Aug  3 21:33:53 CEST 2012
+--- dmake/configure.orig	Sat Nov 10 13:02:54 2012
++++ dmake/configure	Sat Nov 10 13:03:10 2012
 @@ -4223,7 +4223,7 @@ case "$_os" in
  	"AIX")
  	  OS_VERSION=sysvr4
