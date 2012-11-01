@@ -1,6 +1,6 @@
 $OpenBSD$
---- binutils/gdb/Makefile.in.orig	Wed Feb 29 23:05:15 2012
-+++ binutils/gdb/Makefile.in	Tue Mar 13 13:59:40 2012
+--- binutils/gdb/Makefile.in.orig	Sun Oct  7 08:41:06 2012
++++ binutils/gdb/Makefile.in	Wed Oct 31 22:27:28 2012
 @@ -103,7 +103,7 @@ MAKEHTMLFLAGS = -glossary -menu -split_chapter
  # Set this up with gcc if you have gnu ld and the loader will print out
  # line numbers for undefined references.
@@ -18,6 +18,6 @@ $OpenBSD$
 -LIBIBERTY = -liberty
 +LIBIBERTY = ../../libiberty/libiberty.a
 +#LIBIBERTY = -liberty
+ LIBIBERTY_DEP =
  
  # Where is the BFD library?  Typically in ../bfd.
- BFD_DIR = ../bfd
