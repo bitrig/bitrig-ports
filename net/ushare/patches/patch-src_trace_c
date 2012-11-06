@@ -1,6 +1,6 @@
 $OpenBSD$
---- src/trace.c.orig	Sun Dec  9 08:03:36 2007
-+++ src/trace.c	Sat Oct 13 11:31:33 2012
+--- src/trace.c.orig	Wed Nov  7 16:02:50 2012
++++ src/trace.c	Wed Nov  7 16:03:00 2012
 @@ -57,7 +57,7 @@ print_log (log_level level, const char *format, ...)
    va_end (va);
  }
