@@ -23,6 +23,7 @@ bin/clang++
 @bin bin/llvm-link
 bin/llvm-lit
 @bin bin/llvm-mc
+@bin bin/llvm-mcmarkup
 @bin bin/llvm-nm
 @bin bin/llvm-objdump
 @bin bin/llvm-prof
@@ -189,6 +190,8 @@ include/clang/Basic/DiagnosticGroups.inc
 include/clang/Basic/DiagnosticIDs.h
 include/clang/Basic/DiagnosticIndexName.inc
 include/clang/Basic/DiagnosticLexKinds.inc
+include/clang/Basic/DiagnosticOptions.def
+include/clang/Basic/DiagnosticOptions.h
 include/clang/Basic/DiagnosticParseKinds.inc
 include/clang/Basic/DiagnosticSemaKinds.inc
 include/clang/Basic/DiagnosticSerializationKinds.inc
@@ -213,6 +216,7 @@ include/clang/Basic/OperatorKinds.def
 include/clang/Basic/OperatorKinds.h
 include/clang/Basic/PartialDiagnostic.h
 include/clang/Basic/PrettyStackTrace.h
+include/clang/Basic/Sanitizers.def
 include/clang/Basic/SourceLocation.h
 include/clang/Basic/SourceManager.h
 include/clang/Basic/SourceManagerInternals.h
@@ -267,26 +271,24 @@ include/clang/Frontend/ASTConsumers.h
 include/clang/Frontend/ASTUnit.h
 include/clang/Frontend/ChainedDiagnosticConsumer.h
 include/clang/Frontend/ChainedIncludesSource.h
+include/clang/Frontend/CodeGenOptions.def
 include/clang/Frontend/CodeGenOptions.h
 include/clang/Frontend/CommandLineSourceLoc.h
 include/clang/Frontend/CompilerInstance.h
 include/clang/Frontend/CompilerInvocation.h
 include/clang/Frontend/DependencyOutputOptions.h
-include/clang/Frontend/DiagnosticOptions.h
 include/clang/Frontend/DiagnosticRenderer.h
 include/clang/Frontend/FrontendAction.h
 include/clang/Frontend/FrontendActions.h
 include/clang/Frontend/FrontendDiagnostic.h
 include/clang/Frontend/FrontendOptions.h
 include/clang/Frontend/FrontendPluginRegistry.h
-include/clang/Frontend/HeaderSearchOptions.h
 include/clang/Frontend/LangStandard.h
 include/clang/Frontend/LangStandards.def
 include/clang/Frontend/LayoutOverrideSource.h
 include/clang/Frontend/LogDiagnosticPrinter.h
 include/clang/Frontend/MigratorOptions.h
 include/clang/Frontend/MultiplexConsumer.h
-include/clang/Frontend/PreprocessorOptions.h
 include/clang/Frontend/PreprocessorOutputOptions.h
 include/clang/Frontend/SerializedDiagnosticPrinter.h
 include/clang/Frontend/TextDiagnostic.h
@@ -303,6 +305,7 @@ include/clang/Lex/DirectoryLookup.h
 include/clang/Lex/ExternalPreprocessorSource.h
 include/clang/Lex/HeaderMap.h
 include/clang/Lex/HeaderSearch.h
+include/clang/Lex/HeaderSearchOptions.h
 include/clang/Lex/LexDiagnostic.h
 include/clang/Lex/Lexer.h
 include/clang/Lex/LiteralSupport.h
@@ -318,6 +321,7 @@ include/clang/Lex/Pragma.h
 include/clang/Lex/PreprocessingRecord.h
 include/clang/Lex/Preprocessor.h
 include/clang/Lex/PreprocessorLexer.h
+include/clang/Lex/PreprocessorOptions.h
 include/clang/Lex/ScratchBuffer.h
 include/clang/Lex/Token.h
 include/clang/Lex/TokenConcatenation.h
@@ -557,7 +561,6 @@ include/llvm/Analysis/LibCallAliasAnalysis.h
 include/llvm/Analysis/LibCallSemantics.h
 include/llvm/Analysis/Lint.h
 include/llvm/Analysis/Loads.h
-include/llvm/Analysis/LoopDependenceAnalysis.h
 include/llvm/Analysis/LoopInfo.h
 include/llvm/Analysis/LoopInfoImpl.h
 include/llvm/Analysis/LoopIterator.h
@@ -942,7 +945,6 @@ include/llvm/Target/Mangler.h
 include/llvm/Target/Target.td
 include/llvm/Target/TargetCallingConv.h
 include/llvm/Target/TargetCallingConv.td
-include/llvm/Target/TargetELFWriterInfo.h
 include/llvm/Target/TargetFrameLowering.h
 include/llvm/Target/TargetInstrInfo.h
 include/llvm/Target/TargetIntrinsicInfo.h
@@ -1000,6 +1002,8 @@ lib/LLVMHello.so
 lib/clang/
 lib/clang/3.2/
 ${CLANG_INCLUDE_PATH}/
+${CLANG_INCLUDE_PATH}/__wmmintrin_aes.h
+${CLANG_INCLUDE_PATH}/__wmmintrin_pclmul.h
 ${CLANG_INCLUDE_PATH}/altivec.h
 ${CLANG_INCLUDE_PATH}/ammintrin.h
 ${CLANG_INCLUDE_PATH}/arm_neon.h
