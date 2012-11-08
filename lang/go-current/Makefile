@@ -4,7 +4,7 @@ ONLY_FOR_ARCHS =	amd64 i386
 
 COMMENT =		Go programming language
 
-VERSION =		20120809
+VERSION =		20121021
 EXTRACT_SUFX =		.src.tar.gz
 DISTNAME = 		go-${VERSION}
 PKGNAME = 		go-${VERSION}

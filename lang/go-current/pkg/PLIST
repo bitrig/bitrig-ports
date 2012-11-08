@@ -1,9 +1,7 @@
-@comment $OpenBSD: PLIST,v 1.4 2012/07/04 15:18:39 jsing Exp $
-%%amd64%%
-%%i386%%
-bin/go
-bin/godoc
-bin/gofmt
+@comment $OpenBSD$
+@bin bin/go
+@bin bin/godoc
+@bin bin/gofmt
 go/
 go/AUTHORS
 go/CONTRIBUTORS
@@ -12,7 +10,6 @@ go/PATENTS
 go/README
 go/VERSION.cache
 go/doc/
-go/doc/ExpressivenessOfGo.pdf
 go/doc/Makefile
 go/doc/articles/
 go/doc/articles/c_go_cgo.html
@@ -63,6 +60,8 @@ go/doc/articles/wiki/notemplate.go
 go/doc/articles/wiki/part1-noerror.go
 go/doc/articles/wiki/part1.go
 go/doc/articles/wiki/part2.go
+go/doc/articles/wiki/part3-errorhandling.go
+go/doc/articles/wiki/part3.go
 go/doc/articles/wiki/srcextract.go
 go/doc/articles/wiki/test.bash
 go/doc/articles/wiki/test_Test.txt.good
@@ -95,6 +94,7 @@ go/doc/gccgo_install.html
 go/doc/go-logo-black.png
 go/doc/go-logo-blue.png
 go/doc/go-logo-white.png
+go/doc/go1.1.html
 go/doc/go1.html
 go/doc/go1compat.html
 go/doc/go_faq.html
@@ -125,6 +125,7 @@ go/doc/help.html
 go/doc/ie.css
 go/doc/install-source.html
 go/doc/install.html
+go/doc/jquery.js
 go/doc/logo-153x55.png
 go/doc/play/
 go/doc/play/fib.go
@@ -135,17 +136,20 @@ go/doc/play/playground.js
 go/doc/play/sieve.go
 go/doc/play/solitaire.go
 go/doc/play/tree.go
-go/doc/popups.js
 go/doc/progs/
 go/doc/progs/cgo1.go
 go/doc/progs/cgo2.go
 go/doc/progs/cgo3.go
 go/doc/progs/cgo4.go
 go/doc/progs/defer.go
+go/doc/progs/defer.out
 go/doc/progs/defer2.go
+go/doc/progs/defer2.out
 go/doc/progs/eff_bytesize.go
+go/doc/progs/eff_bytesize.out
 go/doc/progs/eff_qr.go
 go/doc/progs/eff_sequence.go
+go/doc/progs/eff_sequence.out
 go/doc/progs/error.go
 go/doc/progs/error2.go
 go/doc/progs/error3.go
@@ -155,15 +159,23 @@ go/doc/progs/gobs1.go
 go/doc/progs/gobs2.go
 go/doc/progs/image_draw.go
 go/doc/progs/image_package1.go
+go/doc/progs/image_package1.out
 go/doc/progs/image_package2.go
+go/doc/progs/image_package2.out
 go/doc/progs/image_package3.go
+go/doc/progs/image_package3.out
 go/doc/progs/image_package4.go
+go/doc/progs/image_package4.out
 go/doc/progs/image_package5.go
+go/doc/progs/image_package5.out
 go/doc/progs/image_package6.go
+go/doc/progs/image_package6.out
 go/doc/progs/interface.go
 go/doc/progs/interface2.go
+go/doc/progs/interface2.out
 go/doc/progs/json1.go
 go/doc/progs/json2.go
+go/doc/progs/json2.out
 go/doc/progs/json3.go
 go/doc/progs/json4.go
 go/doc/progs/json5.go
@@ -171,30 +183,12 @@ go/doc/progs/run
 go/doc/progs/slices.go
 go/doc/progs/timeout1.go
 go/doc/progs/timeout2.go
+go/doc/progs/update.bash
 go/doc/reference.html
 go/doc/root.html
 go/doc/share.png
 go/doc/sieve.gif
 go/doc/style.css
-go/doc/talks/
-go/doc/talks/go_talk-20091030.pdf
-go/doc/talks/go_talk-20100112.html
-go/doc/talks/go_talk-20100121.html
-go/doc/talks/go_talk-20100323.html
-go/doc/talks/gofrontend-gcc-summit-2010.pdf
-go/doc/talks/io2010/
-go/doc/talks/io2010/balance.go
-go/doc/talks/io2010/decrypt.go
-go/doc/talks/io2010/encrypt.go
-go/doc/talks/io2010/eval1.go
-go/doc/talks/io2010/eval2.go
-go/doc/talks/io2010/talk.pdf
-go/doc/talks/io2011/
-go/doc/talks/io2011/Real_World_Go.pdf
-go/doc/talks/io2011/Writing_Web_Apps_in_Go.pdf
-go/doc/talks/java-typing.png
-go/doc/talks/slidy.css
-go/doc/talks/slidy.js
 go/doc/tos.html
 go/favicon.ico
 go/include/
@@ -207,6 +201,8 @@ go/include/mach.h
 go/include/plan9/
 go/include/plan9/386/
 go/include/plan9/386/u.h
+go/include/plan9/${MACHINE_ARCH}/
+go/include/plan9/${MACHINE_ARCH}/u.h
 go/include/plan9/libc.h
 go/include/plan9/mach.h
 go/include/plan9/ureg_${MACHINE_ARCH}.h
@@ -269,9 +265,7 @@ go/misc/cgo/stdio/hello.go
 go/misc/cgo/stdio/hello.out
 go/misc/cgo/stdio/run.out
 go/misc/cgo/stdio/stdio.go
-go/misc/cgo/stdio/stdio_netbsd.go
 go/misc/cgo/test/
-go/misc/cgo/test/Makefile
 go/misc/cgo/test/align.go
 go/misc/cgo/test/backdoor/
 go/misc/cgo/test/backdoor/backdoor.go
@@ -288,10 +282,17 @@ go/misc/cgo/test/helpers.go
 go/misc/cgo/test/issue1222.go
 go/misc/cgo/test/issue1328.go
 go/misc/cgo/test/issue1560.go
+go/misc/cgo/test/issue1635.go
 go/misc/cgo/test/issue2462.go
+go/misc/cgo/test/issue3261.go
 go/misc/cgo/test/issue3741.go
+go/misc/cgo/test/issue3945.go
+go/misc/cgo/test/issue4029.go
+go/misc/cgo/test/issue4029w.go
+go/misc/cgo/test/issue4054a.go
+go/misc/cgo/test/issue4054b.go
 go/misc/cgo/test/setgid_linux.go
-go/misc/cgo/test/sleep_windows.go
+go/misc/cgo/test/sleep_windows_386.go
 go/misc/cgo/testso/
 go/misc/cgo/testso/cgoso.go
 go/misc/cgo/testso/cgoso_c.c
@@ -301,10 +302,12 @@ go/misc/chrome/
 go/misc/chrome/gophertool/
 go/misc/chrome/gophertool/README.txt
 go/misc/chrome/gophertool/background.html
+go/misc/chrome/gophertool/background.js
 go/misc/chrome/gophertool/gopher.js
 go/misc/chrome/gophertool/gopher.png
 go/misc/chrome/gophertool/manifest.json
 go/misc/chrome/gophertool/popup.html
+go/misc/chrome/gophertool/popup.js
 go/misc/dashboard/
 go/misc/dashboard/README
 go/misc/dashboard/app/
@@ -522,8 +525,9 @@ go/pkg${GOCFG}/exp/locale/collate/
 go/pkg${GOCFG}/exp/locale/collate.a
 go/pkg${GOCFG}/exp/locale/collate/build.a
 go/pkg${GOCFG}/exp/norm.a
-go/pkg${GOCFG}/exp/proxy.a
+go/pkg${GOCFG}/exp/types/
 go/pkg${GOCFG}/exp/types.a
+go/pkg${GOCFG}/exp/types/staging.a
 go/pkg${GOCFG}/exp/utf8string.a
 go/pkg${GOCFG}/expvar.a
 go/pkg${GOCFG}/flag.a
@@ -632,20 +636,21 @@ go/pkg/tool${GOCFG}/
 @bin go/pkg/tool${GOEXE}g
 @bin go/pkg/tool${GOEXE}l
 @bin go/pkg/tool${GOCFG}/addr2line
-go/pkg/tool${GOCFG}/api
-go/pkg/tool${GOCFG}/cgo
+@bin go/pkg/tool${GOCFG}/api
+@bin go/pkg/tool${GOCFG}/cgo
+@bin go/pkg/tool${GOCFG}/colcmp
 @bin go/pkg/tool${GOCFG}/cov
 @bin go/pkg/tool${GOCFG}/dist
-go/pkg/tool${GOCFG}/ebnflint
-go/pkg/tool${GOCFG}/fix
-go/pkg/tool${GOCFG}/gotype
+@bin go/pkg/tool${GOCFG}/ebnflint
+@bin go/pkg/tool${GOCFG}/fix
+@bin go/pkg/tool${GOCFG}/gotype
 @bin go/pkg/tool${GOCFG}/nm
 @bin go/pkg/tool${GOCFG}/objdump
 @bin go/pkg/tool${GOCFG}/pack
 go/pkg/tool${GOCFG}/pprof
 @bin go/pkg/tool${GOCFG}/prof
-go/pkg/tool${GOCFG}/vet
-go/pkg/tool${GOCFG}/yacc
+@bin go/pkg/tool${GOCFG}/vet
+@bin go/pkg/tool${GOCFG}/yacc
 go/robots.txt
 go/src/
 go/src/Make.dist
@@ -745,6 +750,7 @@ go/src/cmd/6l/6.out.h
 go/src/cmd/6l/Makefile
 go/src/cmd/6l/asm.c
 go/src/cmd/6l/doc.go
+go/src/cmd/6l/enam.c
 go/src/cmd/6l/l.h
 go/src/cmd/6l/list.c
 go/src/cmd/6l/mkenam
@@ -817,6 +823,9 @@ go/src/cmd/api/testdata/src/pkg/p1/p1.go
 go/src/cmd/api/testdata/src/pkg/p2/
 go/src/cmd/api/testdata/src/pkg/p2/golden.txt
 go/src/cmd/api/testdata/src/pkg/p2/p2.go
+go/src/cmd/api/testdata/src/pkg/p3/
+go/src/cmd/api/testdata/src/pkg/p3/golden.txt
+go/src/cmd/api/testdata/src/pkg/p3/p3.go
 go/src/cmd/cc/
 go/src/cmd/cc/Makefile
 go/src/cmd/cc/acid.c
@@ -1009,6 +1018,7 @@ go/src/cmd/gc/obj.c
 go/src/cmd/gc/opnames.h
 go/src/cmd/gc/order.c
 go/src/cmd/gc/pgen.c
+go/src/cmd/gc/racewalk.c
 go/src/cmd/gc/range.c
 go/src/cmd/gc/reflect.c
 go/src/cmd/gc/runtime.go
@@ -1089,6 +1099,9 @@ go/src/cmd/godoc/godoc.go
 go/src/cmd/godoc/index.go
 go/src/cmd/godoc/main.go
 go/src/cmd/godoc/parser.go
+go/src/cmd/godoc/play-appengine.go
+go/src/cmd/godoc/play-local.go
+go/src/cmd/godoc/play.go
 go/src/cmd/godoc/setup-godoc-app.bash
 go/src/cmd/godoc/snippet.go
 go/src/cmd/godoc/spec.go
@@ -1108,6 +1121,8 @@ go/src/cmd/gofmt/testdata/comments.golden
 go/src/cmd/gofmt/testdata/comments.input
 go/src/cmd/gofmt/testdata/composites.golden
 go/src/cmd/gofmt/testdata/composites.input
+go/src/cmd/gofmt/testdata/crlf.golden
+go/src/cmd/gofmt/testdata/crlf.input
 go/src/cmd/gofmt/testdata/import.golden
 go/src/cmd/gofmt/testdata/import.input
 go/src/cmd/gofmt/testdata/old.golden
@@ -1140,6 +1155,7 @@ go/src/cmd/gofmt/testdata/stdin4.input
 go/src/cmd/gofmt/testdata/stdin4.input.gofmt
 go/src/cmd/ld/
 go/src/cmd/ld/data.c
+go/src/cmd/ld/decodesym.c
 go/src/cmd/ld/doc.go
 go/src/cmd/ld/dwarf.c
 go/src/cmd/ld/dwarf.h
@@ -1177,6 +1193,7 @@ go/src/cmd/vet/doc.go
 go/src/cmd/vet/main.go
 go/src/cmd/vet/method.go
 go/src/cmd/vet/print.go
+go/src/cmd/vet/rangeloop.go
 go/src/cmd/vet/structtag.go
 go/src/cmd/vet/taglit.go
 go/src/cmd/yacc/
@@ -1357,6 +1374,7 @@ go/src/pkg/archive/zip/testdata/symlink.zip
 go/src/pkg/archive/zip/testdata/test.zip
 go/src/pkg/archive/zip/testdata/unix.zip
 go/src/pkg/archive/zip/testdata/winxp.zip
+go/src/pkg/archive/zip/testdata/zip64.zip
 go/src/pkg/archive/zip/writer.go
 go/src/pkg/archive/zip/writer_test.go
 go/src/pkg/archive/zip/zip_test.go
@@ -1432,8 +1450,11 @@ go/src/pkg/container/ring/ring_test.go
 go/src/pkg/crypto/
 go/src/pkg/crypto/aes/
 go/src/pkg/crypto/aes/aes_test.go
+go/src/pkg/crypto/aes/asm_${MACHINE_ARCH}.s
 go/src/pkg/crypto/aes/block.go
 go/src/pkg/crypto/aes/cipher.go
+go/src/pkg/crypto/aes/cipher_asm.go
+go/src/pkg/crypto/aes/cipher_generic.go
 go/src/pkg/crypto/aes/const.go
 go/src/pkg/crypto/cipher/
 go/src/pkg/crypto/cipher/cbc.go
@@ -1520,9 +1541,13 @@ go/src/pkg/crypto/tls/handshake_server_test.go
 go/src/pkg/crypto/tls/key_agreement.go
 go/src/pkg/crypto/tls/prf.go
 go/src/pkg/crypto/tls/prf_test.go
+go/src/pkg/crypto/tls/ticket.go
 go/src/pkg/crypto/tls/tls.go
+go/src/pkg/crypto/tls/tls_test.go
 go/src/pkg/crypto/x509/
 go/src/pkg/crypto/x509/cert_pool.go
+go/src/pkg/crypto/x509/pem_decrypt.go
+go/src/pkg/crypto/x509/pem_decrypt_test.go
 go/src/pkg/crypto/x509/pkcs1.go
 go/src/pkg/crypto/x509/pkcs8.go
 go/src/pkg/crypto/x509/pkcs8_test.go
@@ -1530,6 +1555,7 @@ go/src/pkg/crypto/x509/pkix/
 go/src/pkg/crypto/x509/pkix/pkix.go
 go/src/pkg/crypto/x509/root.go
 go/src/pkg/crypto/x509/root_darwin.go
+go/src/pkg/crypto/x509/root_plan9.go
 go/src/pkg/crypto/x509/root_stub.go
 go/src/pkg/crypto/x509/root_unix.go
 go/src/pkg/crypto/x509/root_windows.go
@@ -1609,9 +1635,11 @@ go/src/pkg/encoding/asn1/marshal_test.go
 go/src/pkg/encoding/base32/
 go/src/pkg/encoding/base32/base32.go
 go/src/pkg/encoding/base32/base32_test.go
+go/src/pkg/encoding/base32/example_test.go
 go/src/pkg/encoding/base64/
 go/src/pkg/encoding/base64/base64.go
 go/src/pkg/encoding/base64/base64_test.go
+go/src/pkg/encoding/base64/example_test.go
 go/src/pkg/encoding/binary/
 go/src/pkg/encoding/binary/binary.go
 go/src/pkg/encoding/binary/binary_test.go
@@ -1704,8 +1732,10 @@ go/src/pkg/exp/html/doctype.go
 go/src/pkg/exp/html/entity.go
 go/src/pkg/exp/html/entity_test.go
 go/src/pkg/exp/html/escape.go
+go/src/pkg/exp/html/example_test.go
 go/src/pkg/exp/html/foreign.go
 go/src/pkg/exp/html/node.go
+go/src/pkg/exp/html/node_test.go
 go/src/pkg/exp/html/parse.go
 go/src/pkg/exp/html/parse_test.go
 go/src/pkg/exp/html/render.go
@@ -1760,50 +1790,6 @@ go/src/pkg/exp/html/testdata/webkit/tests_innerHTML_1.dat
 go/src/pkg/exp/html/testdata/webkit/tricky01.dat
 go/src/pkg/exp/html/testdata/webkit/webkit01.dat
 go/src/pkg/exp/html/testdata/webkit/webkit02.dat
-go/src/pkg/exp/html/testlogs/
-go/src/pkg/exp/html/testlogs/adoption01.dat.log
-go/src/pkg/exp/html/testlogs/adoption02.dat.log
-go/src/pkg/exp/html/testlogs/comments01.dat.log
-go/src/pkg/exp/html/testlogs/doctype01.dat.log
-go/src/pkg/exp/html/testlogs/entities01.dat.log
-go/src/pkg/exp/html/testlogs/entities02.dat.log
-go/src/pkg/exp/html/testlogs/html5test-com.dat.log
-go/src/pkg/exp/html/testlogs/inbody01.dat.log
-go/src/pkg/exp/html/testlogs/isindex.dat.log
-go/src/pkg/exp/html/testlogs/pending-spec-changes-plain-text-unsafe.dat.log
-go/src/pkg/exp/html/testlogs/pending-spec-changes.dat.log
-go/src/pkg/exp/html/testlogs/plain-text-unsafe.dat.log
-go/src/pkg/exp/html/testlogs/scriptdata01.dat.log
-go/src/pkg/exp/html/testlogs/tables01.dat.log
-go/src/pkg/exp/html/testlogs/tests1.dat.log
-go/src/pkg/exp/html/testlogs/tests10.dat.log
-go/src/pkg/exp/html/testlogs/tests11.dat.log
-go/src/pkg/exp/html/testlogs/tests12.dat.log
-go/src/pkg/exp/html/testlogs/tests14.dat.log
-go/src/pkg/exp/html/testlogs/tests15.dat.log
-go/src/pkg/exp/html/testlogs/tests16.dat.log
-go/src/pkg/exp/html/testlogs/tests17.dat.log
-go/src/pkg/exp/html/testlogs/tests18.dat.log
-go/src/pkg/exp/html/testlogs/tests19.dat.log
-go/src/pkg/exp/html/testlogs/tests2.dat.log
-go/src/pkg/exp/html/testlogs/tests20.dat.log
-go/src/pkg/exp/html/testlogs/tests21.dat.log
-go/src/pkg/exp/html/testlogs/tests22.dat.log
-go/src/pkg/exp/html/testlogs/tests23.dat.log
-go/src/pkg/exp/html/testlogs/tests24.dat.log
-go/src/pkg/exp/html/testlogs/tests25.dat.log
-go/src/pkg/exp/html/testlogs/tests26.dat.log
-go/src/pkg/exp/html/testlogs/tests3.dat.log
-go/src/pkg/exp/html/testlogs/tests4.dat.log
-go/src/pkg/exp/html/testlogs/tests5.dat.log
-go/src/pkg/exp/html/testlogs/tests6.dat.log
-go/src/pkg/exp/html/testlogs/tests7.dat.log
-go/src/pkg/exp/html/testlogs/tests8.dat.log
-go/src/pkg/exp/html/testlogs/tests9.dat.log
-go/src/pkg/exp/html/testlogs/tests_innerHTML_1.dat.log
-go/src/pkg/exp/html/testlogs/tricky01.dat.log
-go/src/pkg/exp/html/testlogs/webkit01.dat.log
-go/src/pkg/exp/html/testlogs/webkit02.dat.log
 go/src/pkg/exp/html/token.go
 go/src/pkg/exp/html/token_test.go
 go/src/pkg/exp/inotify/
@@ -1819,6 +1805,8 @@ go/src/pkg/exp/locale/collate/build/colelem.go
 go/src/pkg/exp/locale/collate/build/colelem_test.go
 go/src/pkg/exp/locale/collate/build/contract.go
 go/src/pkg/exp/locale/collate/build/contract_test.go
+go/src/pkg/exp/locale/collate/build/order.go
+go/src/pkg/exp/locale/collate/build/order_test.go
 go/src/pkg/exp/locale/collate/build/table.go
 go/src/pkg/exp/locale/collate/build/trie.go
 go/src/pkg/exp/locale/collate/build/trie_test.go
@@ -1835,6 +1823,15 @@ go/src/pkg/exp/locale/collate/regtest.go
 go/src/pkg/exp/locale/collate/table.go
 go/src/pkg/exp/locale/collate/table_test.go
 go/src/pkg/exp/locale/collate/tables.go
+go/src/pkg/exp/locale/collate/tools/
+go/src/pkg/exp/locale/collate/tools/colcmp/
+go/src/pkg/exp/locale/collate/tools/colcmp/Makefile
+go/src/pkg/exp/locale/collate/tools/colcmp/chars.go
+go/src/pkg/exp/locale/collate/tools/colcmp/col.go
+go/src/pkg/exp/locale/collate/tools/colcmp/colcmp.go
+go/src/pkg/exp/locale/collate/tools/colcmp/darwin.go
+go/src/pkg/exp/locale/collate/tools/colcmp/gen.go
+go/src/pkg/exp/locale/collate/tools/colcmp/icu.go
 go/src/pkg/exp/locale/collate/trie.go
 go/src/pkg/exp/locale/collate/trie_test.go
 go/src/pkg/exp/norm/
@@ -1858,13 +1855,6 @@ go/src/pkg/exp/norm/trie.go
 go/src/pkg/exp/norm/trie_test.go
 go/src/pkg/exp/norm/triedata_test.go
 go/src/pkg/exp/norm/triegen.go
-go/src/pkg/exp/proxy/
-go/src/pkg/exp/proxy/direct.go
-go/src/pkg/exp/proxy/per_host.go
-go/src/pkg/exp/proxy/per_host_test.go
-go/src/pkg/exp/proxy/proxy.go
-go/src/pkg/exp/proxy/proxy_test.go
-go/src/pkg/exp/proxy/socks5.go
 go/src/pkg/exp/types/
 go/src/pkg/exp/types/check.go
 go/src/pkg/exp/types/check_test.go
@@ -1873,6 +1863,38 @@ go/src/pkg/exp/types/exportdata.go
 go/src/pkg/exp/types/gcimporter.go
 go/src/pkg/exp/types/gcimporter_test.go
 go/src/pkg/exp/types/resolver_test.go
+go/src/pkg/exp/types/staging/
+go/src/pkg/exp/types/staging/builtins.go
+go/src/pkg/exp/types/staging/check.go
+go/src/pkg/exp/types/staging/check_test.go
+go/src/pkg/exp/types/staging/const.go
+go/src/pkg/exp/types/staging/conversions.go
+go/src/pkg/exp/types/staging/errors.go
+go/src/pkg/exp/types/staging/exportdata.go
+go/src/pkg/exp/types/staging/expr.go
+go/src/pkg/exp/types/staging/gcimporter.go
+go/src/pkg/exp/types/staging/gcimporter_test.go
+go/src/pkg/exp/types/staging/operand.go
+go/src/pkg/exp/types/staging/predicates.go
+go/src/pkg/exp/types/staging/resolver_test.go
+go/src/pkg/exp/types/staging/stmt.go
+go/src/pkg/exp/types/staging/testdata/
+go/src/pkg/exp/types/staging/testdata/builtins.src
+go/src/pkg/exp/types/staging/testdata/const0.src
+go/src/pkg/exp/types/staging/testdata/conversions.src
+go/src/pkg/exp/types/staging/testdata/decls0.src
+go/src/pkg/exp/types/staging/testdata/decls1.src
+go/src/pkg/exp/types/staging/testdata/decls2a.src
+go/src/pkg/exp/types/staging/testdata/decls2b.src
+go/src/pkg/exp/types/staging/testdata/exports.go
+go/src/pkg/exp/types/staging/testdata/expr0.src
+go/src/pkg/exp/types/staging/testdata/expr1.src
+go/src/pkg/exp/types/staging/testdata/expr2.src
+go/src/pkg/exp/types/staging/testdata/expr3.src
+go/src/pkg/exp/types/staging/testdata/stmt0.src
+go/src/pkg/exp/types/staging/types.go
+go/src/pkg/exp/types/staging/types_test.go
+go/src/pkg/exp/types/staging/universe.go
 go/src/pkg/exp/types/testdata/
 go/src/pkg/exp/types/testdata/exports.go
 go/src/pkg/exp/types/testdata/test0.src
@@ -1921,6 +1943,8 @@ go/src/pkg/go/build/build.go
 go/src/pkg/go/build/build_test.go
 go/src/pkg/go/build/deps_test.go
 go/src/pkg/go/build/doc.go
+go/src/pkg/go/build/read.go
+go/src/pkg/go/build/read_test.go
 go/src/pkg/go/build/syslist.go
 go/src/pkg/go/build/syslist_test.go
 go/src/pkg/go/build/testdata/
@@ -2004,6 +2028,8 @@ go/src/pkg/go/printer/testdata/
 go/src/pkg/go/printer/testdata/comments.golden
 go/src/pkg/go/printer/testdata/comments.input
 go/src/pkg/go/printer/testdata/comments.x
+go/src/pkg/go/printer/testdata/comments2.golden
+go/src/pkg/go/printer/testdata/comments2.input
 go/src/pkg/go/printer/testdata/declarations.golden
 go/src/pkg/go/printer/testdata/declarations.input
 go/src/pkg/go/printer/testdata/empty.golden
@@ -2091,10 +2117,13 @@ go/src/pkg/image/gif/reader.go
 go/src/pkg/image/image.go
 go/src/pkg/image/image_test.go
 go/src/pkg/image/jpeg/
+go/src/pkg/image/jpeg/dct_test.go
 go/src/pkg/image/jpeg/fdct.go
 go/src/pkg/image/jpeg/huffman.go
 go/src/pkg/image/jpeg/idct.go
 go/src/pkg/image/jpeg/reader.go
+go/src/pkg/image/jpeg/reader_test.go
+go/src/pkg/image/jpeg/scan.go
 go/src/pkg/image/jpeg/writer.go
 go/src/pkg/image/jpeg/writer_test.go
 go/src/pkg/image/names.go
@@ -2162,8 +2191,19 @@ go/src/pkg/image/testdata/video-001.gif
 go/src/pkg/image/testdata/video-001.interlaced.gif
 go/src/pkg/image/testdata/video-001.jpeg
 go/src/pkg/image/testdata/video-001.png
+go/src/pkg/image/testdata/video-001.progressive.jpeg
+go/src/pkg/image/testdata/video-001.q50.420.jpeg
+go/src/pkg/image/testdata/video-001.q50.420.progressive.jpeg
+go/src/pkg/image/testdata/video-001.q50.422.jpeg
+go/src/pkg/image/testdata/video-001.q50.422.progressive.jpeg
+go/src/pkg/image/testdata/video-001.q50.440.jpeg
+go/src/pkg/image/testdata/video-001.q50.440.progressive.jpeg
+go/src/pkg/image/testdata/video-001.q50.444.jpeg
+go/src/pkg/image/testdata/video-001.q50.444.progressive.jpeg
 go/src/pkg/image/testdata/video-005.gray.jpeg
 go/src/pkg/image/testdata/video-005.gray.png
+go/src/pkg/image/testdata/video-005.gray.q50.jpeg
+go/src/pkg/image/testdata/video-005.gray.q50.progressive.jpeg
 go/src/pkg/image/ycbcr.go
 go/src/pkg/image/ycbcr_test.go
 go/src/pkg/index/
@@ -2175,6 +2215,8 @@ go/src/pkg/io/
 go/src/pkg/io/io.go
 go/src/pkg/io/io_test.go
 go/src/pkg/io/ioutil/
+go/src/pkg/io/ioutil/blackhole.go
+go/src/pkg/io/ioutil/blackhole_race.go
 go/src/pkg/io/ioutil/ioutil.go
 go/src/pkg/io/ioutil/ioutil_test.go
 go/src/pkg/io/ioutil/tempfile.go
@@ -2372,22 +2414,22 @@ go/src/pkg/net/dial_test.go
 go/src/pkg/net/dialgoogle_test.go
 go/src/pkg/net/dnsclient.go
 go/src/pkg/net/dnsclient_unix.go
-go/src/pkg/net/dnsconfig.go
+go/src/pkg/net/dnsconfig_unix.go
 go/src/pkg/net/dnsmsg.go
 go/src/pkg/net/dnsmsg_test.go
 go/src/pkg/net/dnsname_test.go
-go/src/pkg/net/doc.go
 go/src/pkg/net/example_test.go
-go/src/pkg/net/fd.go
 go/src/pkg/net/fd_darwin.go
 go/src/pkg/net/fd_freebsd.go
 go/src/pkg/net/fd_linux.go
 go/src/pkg/net/fd_netbsd.go
 go/src/pkg/net/fd_openbsd.go
+go/src/pkg/net/fd_unix.go
+go/src/pkg/net/fd_unix_test.go
 go/src/pkg/net/fd_windows.go
-go/src/pkg/net/file.go
 go/src/pkg/net/file_plan9.go
 go/src/pkg/net/file_test.go
+go/src/pkg/net/file_unix.go
 go/src/pkg/net/file_windows.go
 go/src/pkg/net/hosts.go
 go/src/pkg/net/hosts_test.go
@@ -2421,6 +2463,7 @@ go/src/pkg/net/http/header.go
 go/src/pkg/net/http/header_test.go
 go/src/pkg/net/http/httptest/
 go/src/pkg/net/http/httptest/recorder.go
+go/src/pkg/net/http/httptest/recorder_test.go
 go/src/pkg/net/http/httptest/server.go
 go/src/pkg/net/http/httptest/server_test.go
 go/src/pkg/net/http/httputil/
@@ -2447,6 +2490,7 @@ go/src/pkg/net/http/response_test.go
 go/src/pkg/net/http/responsewrite_test.go
 go/src/pkg/net/http/serve_test.go
 go/src/pkg/net/http/server.go
+go/src/pkg/net/http/server_test.go
 go/src/pkg/net/http/sniff.go
 go/src/pkg/net/http/sniff_test.go
 go/src/pkg/net/http/status.go
@@ -2478,6 +2522,7 @@ go/src/pkg/net/iprawsock_posix.go
 go/src/pkg/net/ipsock.go
 go/src/pkg/net/ipsock_plan9.go
 go/src/pkg/net/ipsock_posix.go
+go/src/pkg/net/lookup.go
 go/src/pkg/net/lookup_plan9.go
 go/src/pkg/net/lookup_test.go
 go/src/pkg/net/lookup_unix.go
@@ -2487,11 +2532,11 @@ go/src/pkg/net/mac_test.go
 go/src/pkg/net/mail/
 go/src/pkg/net/mail/message.go
 go/src/pkg/net/mail/message_test.go
-go/src/pkg/net/multicast_test.go
+go/src/pkg/net/multicast_posix_test.go
 go/src/pkg/net/net.go
 go/src/pkg/net/net_posix.go
 go/src/pkg/net/net_test.go
-go/src/pkg/net/newpollserver.go
+go/src/pkg/net/newpollserver_unix.go
 go/src/pkg/net/parse.go
 go/src/pkg/net/parse_test.go
 go/src/pkg/net/pipe.go
@@ -2517,22 +2562,19 @@ go/src/pkg/net/smtp/
 go/src/pkg/net/smtp/auth.go
 go/src/pkg/net/smtp/smtp.go
 go/src/pkg/net/smtp/smtp_test.go
-go/src/pkg/net/sock.go
 go/src/pkg/net/sock_bsd.go
 go/src/pkg/net/sock_linux.go
+go/src/pkg/net/sock_posix.go
 go/src/pkg/net/sock_windows.go
-go/src/pkg/net/sockopt.go
 go/src/pkg/net/sockopt_bsd.go
 go/src/pkg/net/sockopt_linux.go
+go/src/pkg/net/sockopt_posix.go
 go/src/pkg/net/sockopt_windows.go
-go/src/pkg/net/sockoptip.go
 go/src/pkg/net/sockoptip_bsd.go
-go/src/pkg/net/sockoptip_darwin.go
-go/src/pkg/net/sockoptip_freebsd.go
 go/src/pkg/net/sockoptip_linux.go
-go/src/pkg/net/sockoptip_netbsd.go
-go/src/pkg/net/sockoptip_openbsd.go
+go/src/pkg/net/sockoptip_posix.go
 go/src/pkg/net/sockoptip_windows.go
+go/src/pkg/net/tcp_test.go
 go/src/pkg/net/tcpsock.go
 go/src/pkg/net/tcpsock_plan9.go
 go/src/pkg/net/tcpsock_posix.go
@@ -2553,7 +2595,7 @@ go/src/pkg/net/udp_test.go
 go/src/pkg/net/udpsock.go
 go/src/pkg/net/udpsock_plan9.go
 go/src/pkg/net/udpsock_posix.go
-go/src/pkg/net/unicast_test.go
+go/src/pkg/net/unicast_posix_test.go
 go/src/pkg/net/unixsock.go
 go/src/pkg/net/unixsock_plan9.go
 go/src/pkg/net/unixsock_posix.go
@@ -2609,6 +2651,7 @@ go/src/pkg/os/path_unix.go
 go/src/pkg/os/path_windows.go
 go/src/pkg/os/proc.go
 go/src/pkg/os/signal/
+go/src/pkg/os/signal/example_test.go
 go/src/pkg/os/signal/sig.s
 go/src/pkg/os/signal/signal.go
 go/src/pkg/os/signal/signal_stub.go
@@ -2652,7 +2695,13 @@ go/src/pkg/path/path.go
 go/src/pkg/path/path_test.go
 go/src/pkg/reflect/
 go/src/pkg/reflect/all_test.go
+go/src/pkg/reflect/asm_386.s
+go/src/pkg/reflect/asm_${MACHINE_ARCH}.s
+go/src/pkg/reflect/asm_arm.s
 go/src/pkg/reflect/deepequal.go
+go/src/pkg/reflect/example_test.go
+go/src/pkg/reflect/export_test.go
+go/src/pkg/reflect/makefunc.go
 go/src/pkg/reflect/set_test.go
 go/src/pkg/reflect/tostring_test.go
 go/src/pkg/reflect/type.go
@@ -2665,6 +2714,7 @@ go/src/pkg/regexp/find_test.go
 go/src/pkg/regexp/regexp.go
 go/src/pkg/regexp/syntax/
 go/src/pkg/regexp/syntax/compile.go
+go/src/pkg/regexp/syntax/doc.go
 go/src/pkg/regexp/syntax/make_perl_groups.pl
 go/src/pkg/regexp/syntax/parse.go
 go/src/pkg/regexp/syntax/parse_test.go
@@ -2747,6 +2797,7 @@ go/src/pkg/runtime/defs_darwin_${MACHINE_ARCH}.h
 go/src/pkg/runtime/defs_freebsd.go
 go/src/pkg/runtime/defs_freebsd_386.h
 go/src/pkg/runtime/defs_freebsd_${MACHINE_ARCH}.h
+go/src/pkg/runtime/defs_freebsd_arm.h
 go/src/pkg/runtime/defs_linux.go
 go/src/pkg/runtime/defs_linux_386.h
 go/src/pkg/runtime/defs_linux_${MACHINE_ARCH}.h
@@ -2760,6 +2811,7 @@ go/src/pkg/runtime/defs_openbsd.go
 go/src/pkg/runtime/defs_openbsd_386.h
 go/src/pkg/runtime/defs_openbsd_${MACHINE_ARCH}.h
 go/src/pkg/runtime/defs_plan9_386.h
+go/src/pkg/runtime/defs_plan9_${MACHINE_ARCH}.h
 go/src/pkg/runtime/defs_windows.go
 go/src/pkg/runtime/defs_windows_386.h
 go/src/pkg/runtime/defs_windows_${MACHINE_ARCH}.h
@@ -2800,6 +2852,7 @@ go/src/pkg/runtime/mfinal.c
 go/src/pkg/runtime/mfinal_test.go
 go/src/pkg/runtime/mfixalloc.c
 go/src/pkg/runtime/mgc0.c
+go/src/pkg/runtime/mgc0.h
 go/src/pkg/runtime/mheap.c
 go/src/pkg/runtime/mkasmh.sh
 go/src/pkg/runtime/mkversion.c
@@ -2822,10 +2875,19 @@ go/src/pkg/runtime/print.c
 go/src/pkg/runtime/proc.c
 go/src/pkg/runtime/proc.p
 go/src/pkg/runtime/proc_test.go
+go/src/pkg/runtime/race/
+go/src/pkg/runtime/race.c
+go/src/pkg/runtime/race.go
+go/src/pkg/runtime/race.h
+go/src/pkg/runtime/race/race.go
+go/src/pkg/runtime/race/race_darwin_${MACHINE_ARCH}.syso
+go/src/pkg/runtime/race/race_linux_${MACHINE_ARCH}.syso
+go/src/pkg/runtime/race0.c
 go/src/pkg/runtime/rt0_darwin_386.s
 go/src/pkg/runtime/rt0_darwin_${MACHINE_ARCH}.s
 go/src/pkg/runtime/rt0_freebsd_386.s
 go/src/pkg/runtime/rt0_freebsd_${MACHINE_ARCH}.s
+go/src/pkg/runtime/rt0_freebsd_arm.s
 go/src/pkg/runtime/rt0_linux_386.s
 go/src/pkg/runtime/rt0_linux_${MACHINE_ARCH}.s
 go/src/pkg/runtime/rt0_linux_arm.s
@@ -2834,6 +2896,7 @@ go/src/pkg/runtime/rt0_netbsd_${MACHINE_ARCH}.s
 go/src/pkg/runtime/rt0_openbsd_386.s
 go/src/pkg/runtime/rt0_openbsd_${MACHINE_ARCH}.s
 go/src/pkg/runtime/rt0_plan9_386.s
+go/src/pkg/runtime/rt0_plan9_${MACHINE_ARCH}.s
 go/src/pkg/runtime/rt0_windows_386.s
 go/src/pkg/runtime/rt0_windows_${MACHINE_ARCH}.s
 go/src/pkg/runtime/rune.c
@@ -2848,6 +2911,7 @@ go/src/pkg/runtime/signal_darwin_386.c
 go/src/pkg/runtime/signal_darwin_${MACHINE_ARCH}.c
 go/src/pkg/runtime/signal_freebsd_386.c
 go/src/pkg/runtime/signal_freebsd_${MACHINE_ARCH}.c
+go/src/pkg/runtime/signal_freebsd_arm.c
 go/src/pkg/runtime/signal_linux_386.c
 go/src/pkg/runtime/signal_linux_${MACHINE_ARCH}.c
 go/src/pkg/runtime/signal_linux_arm.c
@@ -2856,6 +2920,7 @@ go/src/pkg/runtime/signal_netbsd_${MACHINE_ARCH}.c
 go/src/pkg/runtime/signal_openbsd_386.c
 go/src/pkg/runtime/signal_openbsd_${MACHINE_ARCH}.c
 go/src/pkg/runtime/signal_plan9_386.c
+go/src/pkg/runtime/signal_plan9_${MACHINE_ARCH}.c
 go/src/pkg/runtime/signal_unix.c
 go/src/pkg/runtime/signal_windows_386.c
 go/src/pkg/runtime/signal_windows_${MACHINE_ARCH}.c
@@ -2881,6 +2946,7 @@ go/src/pkg/runtime/sys_darwin_386.s
 go/src/pkg/runtime/sys_darwin_${MACHINE_ARCH}.s
 go/src/pkg/runtime/sys_freebsd_386.s
 go/src/pkg/runtime/sys_freebsd_${MACHINE_ARCH}.s
+go/src/pkg/runtime/sys_freebsd_arm.s
 go/src/pkg/runtime/sys_linux_386.s
 go/src/pkg/runtime/sys_linux_${MACHINE_ARCH}.s
 go/src/pkg/runtime/sys_linux_arm.s
@@ -2889,6 +2955,7 @@ go/src/pkg/runtime/sys_netbsd_${MACHINE_ARCH}.s
 go/src/pkg/runtime/sys_openbsd_386.s
 go/src/pkg/runtime/sys_openbsd_${MACHINE_ARCH}.s
 go/src/pkg/runtime/sys_plan9_386.s
+go/src/pkg/runtime/sys_plan9_${MACHINE_ARCH}.s
 go/src/pkg/runtime/sys_windows_386.s
 go/src/pkg/runtime/sys_windows_${MACHINE_ARCH}.s
 go/src/pkg/runtime/syscall_windows.goc
@@ -2906,15 +2973,19 @@ go/src/pkg/runtime/traceback_x86.c
 go/src/pkg/runtime/type.go
 go/src/pkg/runtime/type.h
 go/src/pkg/runtime/typekind.h
+go/src/pkg/runtime/vdso_linux_${MACHINE_ARCH}.c
 go/src/pkg/runtime/vlop_386.s
 go/src/pkg/runtime/vlop_arm.s
 go/src/pkg/runtime/vlop_arm_test.go
 go/src/pkg/runtime/vlrt_386.c
 go/src/pkg/runtime/vlrt_arm.c
+go/src/pkg/runtime/zasm_openbsd_${MACHINE_ARCH}.h
+go/src/pkg/runtime/zgoarch_${MACHINE_ARCH}.go
 go/src/pkg/runtime/zgoos_openbsd.go
 go/src/pkg/runtime/zmalloc_openbsd_${MACHINE_ARCH}.c
 go/src/pkg/runtime/zmprof_openbsd_${MACHINE_ARCH}.c
 go/src/pkg/runtime/zruntime1_openbsd_${MACHINE_ARCH}.c
+go/src/pkg/runtime/zruntime_defs_openbsd_${MACHINE_ARCH}.go
 go/src/pkg/runtime/zsema_openbsd_${MACHINE_ARCH}.c
 go/src/pkg/runtime/zsigqueue_openbsd_${MACHINE_ARCH}.c
 go/src/pkg/runtime/zstring_openbsd_${MACHINE_ARCH}.c
@@ -2958,17 +3029,21 @@ go/src/pkg/strings/reader.go
 go/src/pkg/strings/reader_test.go
 go/src/pkg/strings/replace.go
 go/src/pkg/strings/replace_test.go
+go/src/pkg/strings/search.go
+go/src/pkg/strings/search_test.go
 go/src/pkg/strings/strings.go
 go/src/pkg/strings/strings_test.go
 go/src/pkg/sync/
 go/src/pkg/sync/atomic/
-go/src/pkg/sync/atomic/64bit_linux_arm.go
+go/src/pkg/sync/atomic/64bit_arm.go
 go/src/pkg/sync/atomic/asm_386.s
 go/src/pkg/sync/atomic/asm_${MACHINE_ARCH}.s
 go/src/pkg/sync/atomic/asm_arm.s
+go/src/pkg/sync/atomic/asm_freebsd_arm.s
 go/src/pkg/sync/atomic/asm_linux_arm.s
 go/src/pkg/sync/atomic/atomic_test.go
 go/src/pkg/sync/atomic/doc.go
+go/src/pkg/sync/atomic/race.go
 go/src/pkg/sync/cond.go
 go/src/pkg/sync/cond_test.go
 go/src/pkg/sync/example_test.go
@@ -2977,6 +3052,8 @@ go/src/pkg/sync/mutex.go
 go/src/pkg/sync/mutex_test.go
 go/src/pkg/sync/once.go
 go/src/pkg/sync/once_test.go
+go/src/pkg/sync/race.go
+go/src/pkg/sync/race0.go
 go/src/pkg/sync/runtime.go
 go/src/pkg/sync/runtime_sema_test.go
 go/src/pkg/sync/rwmutex.go
@@ -2988,6 +3065,7 @@ go/src/pkg/syscall/asm_darwin_386.s
 go/src/pkg/syscall/asm_darwin_${MACHINE_ARCH}.s
 go/src/pkg/syscall/asm_freebsd_386.s
 go/src/pkg/syscall/asm_freebsd_${MACHINE_ARCH}.s
+go/src/pkg/syscall/asm_freebsd_arm.s
 go/src/pkg/syscall/asm_linux_386.s
 go/src/pkg/syscall/asm_linux_${MACHINE_ARCH}.s
 go/src/pkg/syscall/asm_linux_arm.s
@@ -2996,9 +3074,11 @@ go/src/pkg/syscall/asm_netbsd_${MACHINE_ARCH}.s
 go/src/pkg/syscall/asm_openbsd_386.s
 go/src/pkg/syscall/asm_openbsd_${MACHINE_ARCH}.s
 go/src/pkg/syscall/asm_plan9_386.s
+go/src/pkg/syscall/asm_plan9_${MACHINE_ARCH}.s
 go/src/pkg/syscall/asm_windows_386.s
 go/src/pkg/syscall/asm_windows_${MACHINE_ARCH}.s
 go/src/pkg/syscall/bpf_bsd.go
+go/src/pkg/syscall/creds_test.go
 go/src/pkg/syscall/dll_windows.go
 go/src/pkg/syscall/env_plan9.go
 go/src/pkg/syscall/env_unix.go
@@ -3023,6 +3103,8 @@ go/src/pkg/syscall/mksysnum_openbsd.pl
 go/src/pkg/syscall/mksysnum_plan9.sh
 go/src/pkg/syscall/netlink_linux.go
 go/src/pkg/syscall/passfd_test.go
+go/src/pkg/syscall/race.go
+go/src/pkg/syscall/race0.go
 go/src/pkg/syscall/route_bsd.go
 go/src/pkg/syscall/route_darwin.go
 go/src/pkg/syscall/route_freebsd.go
@@ -3040,6 +3122,7 @@ go/src/pkg/syscall/syscall_darwin_${MACHINE_ARCH}.go
 go/src/pkg/syscall/syscall_freebsd.go
 go/src/pkg/syscall/syscall_freebsd_386.go
 go/src/pkg/syscall/syscall_freebsd_${MACHINE_ARCH}.go
+go/src/pkg/syscall/syscall_freebsd_arm.go
 go/src/pkg/syscall/syscall_linux.go
 go/src/pkg/syscall/syscall_linux_386.go
 go/src/pkg/syscall/syscall_linux_${MACHINE_ARCH}.go
@@ -3052,6 +3135,7 @@ go/src/pkg/syscall/syscall_openbsd_386.go
 go/src/pkg/syscall/syscall_openbsd_${MACHINE_ARCH}.go
 go/src/pkg/syscall/syscall_plan9.go
 go/src/pkg/syscall/syscall_plan9_386.go
+go/src/pkg/syscall/syscall_plan9_${MACHINE_ARCH}.go
 go/src/pkg/syscall/syscall_unix.go
 go/src/pkg/syscall/syscall_windows.go
 go/src/pkg/syscall/syscall_windows_386.go
@@ -3067,6 +3151,7 @@ go/src/pkg/syscall/zerrors_darwin_386.go
 go/src/pkg/syscall/zerrors_darwin_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zerrors_freebsd_386.go
 go/src/pkg/syscall/zerrors_freebsd_${MACHINE_ARCH}.go
+go/src/pkg/syscall/zerrors_freebsd_arm.go
 go/src/pkg/syscall/zerrors_linux_386.go
 go/src/pkg/syscall/zerrors_linux_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zerrors_linux_arm.go
@@ -3075,6 +3160,7 @@ go/src/pkg/syscall/zerrors_netbsd_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zerrors_openbsd_386.go
 go/src/pkg/syscall/zerrors_openbsd_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zerrors_plan9_386.go
+go/src/pkg/syscall/zerrors_plan9_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zerrors_windows.go
 go/src/pkg/syscall/zerrors_windows_386.go
 go/src/pkg/syscall/zerrors_windows_${MACHINE_ARCH}.go
@@ -3082,6 +3168,7 @@ go/src/pkg/syscall/zsyscall_darwin_386.go
 go/src/pkg/syscall/zsyscall_darwin_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsyscall_freebsd_386.go
 go/src/pkg/syscall/zsyscall_freebsd_${MACHINE_ARCH}.go
+go/src/pkg/syscall/zsyscall_freebsd_arm.go
 go/src/pkg/syscall/zsyscall_linux_386.go
 go/src/pkg/syscall/zsyscall_linux_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsyscall_linux_arm.go
@@ -3090,6 +3177,7 @@ go/src/pkg/syscall/zsyscall_netbsd_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsyscall_openbsd_386.go
 go/src/pkg/syscall/zsyscall_openbsd_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsyscall_plan9_386.go
+go/src/pkg/syscall/zsyscall_plan9_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsyscall_windows_386.go
 go/src/pkg/syscall/zsyscall_windows_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsysctl_openbsd.go
@@ -3097,6 +3185,7 @@ go/src/pkg/syscall/zsysnum_darwin_386.go
 go/src/pkg/syscall/zsysnum_darwin_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsysnum_freebsd_386.go
 go/src/pkg/syscall/zsysnum_freebsd_${MACHINE_ARCH}.go
+go/src/pkg/syscall/zsysnum_freebsd_arm.go
 go/src/pkg/syscall/zsysnum_linux_386.go
 go/src/pkg/syscall/zsysnum_linux_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsysnum_linux_arm.go
@@ -3105,12 +3194,14 @@ go/src/pkg/syscall/zsysnum_netbsd_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsysnum_openbsd_386.go
 go/src/pkg/syscall/zsysnum_openbsd_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsysnum_plan9_386.go
+go/src/pkg/syscall/zsysnum_plan9_${MACHINE_ARCH}.go
 go/src/pkg/syscall/zsysnum_windows_386.go
 go/src/pkg/syscall/zsysnum_windows_${MACHINE_ARCH}.go
 go/src/pkg/syscall/ztypes_darwin_386.go
 go/src/pkg/syscall/ztypes_darwin_${MACHINE_ARCH}.go
 go/src/pkg/syscall/ztypes_freebsd_386.go
 go/src/pkg/syscall/ztypes_freebsd_${MACHINE_ARCH}.go
+go/src/pkg/syscall/ztypes_freebsd_arm.go
 go/src/pkg/syscall/ztypes_linux_386.go
 go/src/pkg/syscall/ztypes_linux_${MACHINE_ARCH}.go
 go/src/pkg/syscall/ztypes_linux_arm.go
@@ -3119,6 +3210,7 @@ go/src/pkg/syscall/ztypes_netbsd_${MACHINE_ARCH}.go
 go/src/pkg/syscall/ztypes_openbsd_386.go
 go/src/pkg/syscall/ztypes_openbsd_${MACHINE_ARCH}.go
 go/src/pkg/syscall/ztypes_plan9_386.go
+go/src/pkg/syscall/ztypes_plan9_${MACHINE_ARCH}.go
 go/src/pkg/syscall/ztypes_windows.go
 go/src/pkg/syscall/ztypes_windows_386.go
 go/src/pkg/syscall/ztypes_windows_${MACHINE_ARCH}.go
@@ -3198,6 +3290,7 @@ go/src/pkg/unicode/utf16/export_test.go
 go/src/pkg/unicode/utf16/utf16.go
 go/src/pkg/unicode/utf16/utf16_test.go
 go/src/pkg/unicode/utf8/
+go/src/pkg/unicode/utf8/example_test.go
 go/src/pkg/unicode/utf8/utf8.go
 go/src/pkg/unicode/utf8/utf8_test.go
 go/src/pkg/unsafe/
