@@ -1,7 +1,7 @@
 $OpenBSD$
---- configure.orig	Sun Apr 29 12:49:59 2012
-+++ configure	Sat Aug 18 12:45:40 2012
-@@ -5819,7 +5819,7 @@ else
+--- configure.orig	Sat Nov 17 02:32:24 2012
++++ configure	Sat Nov 17 02:38:47 2012
+@@ -5861,7 +5861,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -10,7 +10,7 @@ $OpenBSD$
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -6257,7 +6257,7 @@ freebsd* | dragonfly*)
+@@ -6299,7 +6299,7 @@ freebsd* | dragonfly*)
      i*86 )
        # Not sure whether the presence of OpenBSD here was a mistake.
        # Let's accept both of them until this is cleared up.
@@ -19,7 +19,7 @@ $OpenBSD$
        lt_cv_file_magic_cmd=/usr/bin/file
        lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
        ;;
-@@ -6331,7 +6331,7 @@ newos6*)
+@@ -6373,7 +6373,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -28,7 +28,7 @@ $OpenBSD$
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -6944,7 +6944,7 @@ old_postuninstall_cmds=
+@@ -6986,7 +6986,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -37,7 +37,7 @@ $OpenBSD$
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -9738,7 +9738,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -9780,7 +9780,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -46,7 +46,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    linux* | k*bsd*-gnu | gnu*)
-@@ -10618,7 +10618,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -10660,7 +10660,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -55,7 +55,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -11673,7 +11673,7 @@ newsos6)
+@@ -11715,7 +11715,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -64,7 +64,7 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -15352,7 +15352,7 @@ fi
+@@ -15610,7 +15610,7 @@ fi
  	ld_shlibs_CXX=no
  	;;
  
@@ -73,7 +73,7 @@ $OpenBSD$
  	if test -f /usr/libexec/ld.so; then
  	  hardcode_direct_CXX=yes
  	  hardcode_shlibpath_var_CXX=no
-@@ -17138,7 +17138,7 @@ newsos6)
+@@ -17396,7 +17396,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -82,24 +82,12 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -17696,10 +17696,7 @@ if test "x$PKG_CONFIG" = x; then
- 	as_fn_error $? "pkg-config >= $PKGCONFIG_REQUIRED required but not found (http://pkgconfig.freedesktop.org/)" "$LINENO" 5
- fi
- 
--case `$PKG_CONFIG --version` in
--0.?|0.?.?|0.1[0-7]|0.1[0-7].?) PKGCONFIG_REQUIRES="Requires"; ;;
--*) PKGCONFIG_REQUIRES="Requires.private"; ;;
--esac
-+PKGCONFIG_REQUIRES="Requires"
- 
- 
- 
-@@ -33549,7 +33546,7 @@ _ACEOF
+@@ -33939,7 +33939,7 @@ _ACEOF
  
  
  case $host in
 -*-linux*|*-*bsd*|*-solaris*|*-*-darwin*|*-dragonfly*|*-*-gnu*)
-+*-linux*|*-*bsd*|*-solaris*|*-*-darwin*|*-dragonfly*|*-bitrig*|*-*-gnu*)
++*-linux*|*-*bsd*|*-solaris*|*-*-darwin*|*-dragonfly*|*-*-gnu*|*-bitrig*)
  	have_ld_preload="yes"
  	;;
  *)
