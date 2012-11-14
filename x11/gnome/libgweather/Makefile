@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2012/11/13 17:23:00 jasper Exp $
+# $OpenBSD: Makefile,v 1.40 2012/11/14 08:08:55 jasper Exp $
 
 SHARED_ONLY=		Yes
 
@@ -31,7 +31,6 @@ MODULES=		devel/gettext \
 			devel/dconf \
 			x11/gnome
 
-# XXX: get_symbollist: object list is empty
 USE_LIBTOOL=		gnu
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/build-aux
 MODGNOME_TOOLS= 	goi
