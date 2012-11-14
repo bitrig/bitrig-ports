@@ -1,6 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2012/03/07 20:39:37 kurt Exp $
 
 COMMENT=	GNU binutils
+DPB_PROPERTIES= parallel
 
 VER = 2.22
 .if "${FLAVOR}" != ""

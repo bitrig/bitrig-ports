@@ -1,4 +1,5 @@
 COMMENT=	 BSD licensed compilation tools
+DPB_PROPERTIES= parallel
 
 V=		0.6.1
 PKGNAME=	bitrig-elftoolchain-${V}

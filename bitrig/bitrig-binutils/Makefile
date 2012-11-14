@@ -1,4 +1,5 @@
 SHARED_ONLY=		Yes
+DPB_PROPERTIES= parallel
 
 COMMENT =		Bitrig binutils
 

@@ -6,6 +6,7 @@
 SHARED_LIBS +=  libclang                  0.0 # 3.0
 
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
+DPB_PROPERTIES= parallel
 
 LLVM_V =	3.1
 DISTREALNAME =	llvm-${LLVM_V}

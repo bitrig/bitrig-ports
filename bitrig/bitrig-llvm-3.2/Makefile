@@ -4,6 +4,7 @@
 # updating this port.
 
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
+DPB_PROPERTIES= parallel
 
 LLVM_V =	3.2
 DISTREALNAME =	llvm-${LLVM_V}
