@@ -1,0 +1,11 @@
+--- libstdc++-v3/include/std/type_traits.orig	Sat Nov 17 05:49:49 2012
++++ libstdc++-v3/include/std/type_traits	Sat Nov 17 05:50:26 2012
+@@ -1110,7 +1110,7 @@
+ 
+   template<typename _Tp, typename _Up>
+     struct common_type<_Tp, _Up>
+-    { typedef decltype(true ? declval<_Tp>() : declval<_Up>()) type; };
++    { typedef typename decay<decltype(true ? declval<_Tp>() : declval<_Up>())>::type type; };
+ 
+   template<typename _Tp, typename _Up, typename... _Vp>
+     struct common_type<_Tp, _Up, _Vp...>

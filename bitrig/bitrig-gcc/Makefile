@@ -8,13 +8,13 @@ FULL_VERSION = $V
 FULL_PKGVERSION = $V
 BOOTSTRAP_GEN = 4
 LIBC_VERSION = 60.1
-LIBSTDC_VERSION = 14.0
+LIBSTDC_VERSION = 14.1
 
 PKGNAME-main =  bitrig-gcc-${FULL_PKGVERSION}
 PKGNAME-gcclibs= bitrig-gcclibs-${FULL_PKGVERSION}
 
-REVISION-main = 13
-REVISION-gcclibs=13
+REVISION-main = 14
+REVISION-gcclibs=14
 
 SHARED_LIBS =	stdc++		${LIBSTDC_VERSION} \
 		ssp		1.0 \
@@ -109,7 +109,8 @@ CONFIGURE_ARGS += \
 	--enable-wchar_t \
 	--with-gmp="${LOCALBASE}" \
 	--enable-languages=${LANGS} \
-	--disable-libstdcxx-pch
+	--disable-libstdcxx-pch \
+	--enable-libstdcxx-time
 
 # This is needed, as internal cpp is no longer compatible with the
 # visible beast
