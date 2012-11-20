@@ -1,0 +1,51 @@
+$OpenBSD: patch-src_polkitbackend_polkitbackendinteractiveauthority_c,v 1.1 2012/11/20 14:11:48 ajacoutot Exp $
+--- src/polkitbackend/polkitbackendinteractiveauthority.c.orig	Tue Sep 18 20:43:17 2012
++++ src/polkitbackend/polkitbackendinteractiveauthority.c	Tue Nov 20 14:23:46 2012
+@@ -23,7 +23,11 @@
+ #include <errno.h>
+ #include <pwd.h>
+ #include <grp.h>
++#if defined __OpenBSD__
++#include <netgroup.h>
++#else
+ #include <netdb.h>
++#endif
+ #include <string.h>
+ #include <glib/gstdio.h>
+ #include <locale.h>
+@@ -2113,15 +2117,25 @@ get_users_in_net_group (PolkitIdentity                
+   ret = NULL;
+   name = polkit_unix_netgroup_get_name (POLKIT_UNIX_NETGROUP (group));
+ 
++/* Under BSD, setnetgrent() returns void. */
++#if defined __OpenBSD__
++  setnetgrent (name);
++#else
++
+   if (setnetgrent (name) == 0)
+     {
+       g_warning ("Error looking up net group with name %s: %s", name, g_strerror (errno));
+       goto out;
+     }
++#endif
+ 
+   for (;;)
+     {
++#if defined __OpenBSD__
++      const char *hostname, *username, *domainname;
++#else
+       char *hostname, *username, *domainname;
++#endif
+       PolkitIdentity *user;
+       GError *error = NULL;
+ 
+@@ -2150,7 +2164,9 @@ get_users_in_net_group (PolkitIdentity                
+ 
+   ret = g_list_reverse (ret);
+ 
++#ifndef __OpenBSD__
+  out:
++#endif
+   endnetgrent ();
+   return ret;
+ }

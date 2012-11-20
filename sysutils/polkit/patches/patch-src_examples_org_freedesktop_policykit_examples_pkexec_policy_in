@@ -1,12 +1,12 @@
-$OpenBSD: patch-src_examples_org_freedesktop_policykit_examples_pkexec_policy_in,v 1.1.1.1 2010/07/01 07:46:21 ajacoutot Exp $
---- src/examples/org.freedesktop.policykit.examples.pkexec.policy.in.orig	Tue Oct 18 12:02:27 2011
-+++ src/examples/org.freedesktop.policykit.examples.pkexec.policy.in	Mon May 21 09:39:52 2012
-@@ -16,7 +16,7 @@
+$OpenBSD: patch-src_examples_org_freedesktop_policykit_examples_pkexec_policy_in,v 1.2 2012/11/20 14:11:48 ajacoutot Exp $
+--- src/examples/org.freedesktop.policykit.examples.pkexec.policy.in.orig	Mon Jun  4 19:47:39 2012
++++ src/examples/org.freedesktop.policykit.examples.pkexec.policy.in	Fri Aug 17 09:23:26 2012
+@@ -15,7 +15,7 @@
        <allow_inactive>no</allow_inactive>
        <allow_active>auth_self_keep</allow_active>
      </defaults>
 -    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/pk-example-frobnicate</annotate>
-+    <annotate key="org.freedesktop.policykit.exec.path">/usr/local/bin/pk-example-frobnicate</annotate>
++    <annotate key="org.freedesktop.policykit.exec.path">${PREFIX}/bin/pk-example-frobnicate</annotate>
    </action>
  
  </policyconfig>
