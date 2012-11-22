@@ -1,25 +1,21 @@
-$OpenBSD: patch-configure,v 1.16 2012/05/26 11:08:44 pascal Exp $
---- configure.orig	Thu May 24 09:34:53 2012
-+++ configure	Sat May 26 12:20:11 2012
-@@ -5557,8 +5557,8 @@ for ac_lib in '' nsl; do
-   if test -z "$ac_lib"; then
-     ac_res="none required"
-   else
--    ac_res=-l$ac_lib
--    LIBS="-l$ac_lib  $ac_func_search_save_LIBS"
-+    ac_res=-$ac_lib
-+    LIBS="-$ac_lib  $ac_func_search_save_LIBS"
-   fi
-   if ac_fn_c_try_link "$LINENO"; then :
-   ac_cv_search_gethostbyname=$ac_res
-@@ -5613,8 +5613,8 @@ for ac_lib in '' dl; do
-   if test -z "$ac_lib"; then
-     ac_res="none required"
-   else
--    ac_res=-l$ac_lib
--    LIBS="-l$ac_lib  $ac_func_search_save_LIBS"
-+    ac_res=-$ac_lib
-+    LIBS="-$ac_lib  $ac_func_search_save_LIBS"
-   fi
-   if ac_fn_c_try_link "$LINENO"; then :
-   ac_cv_search_dlopen=$ac_res
+$OpenBSD$
+--- configure.orig	Sat Nov 24 12:30:35 2012
++++ configure	Sat Nov 24 12:32:05 2012
+@@ -9285,7 +9285,7 @@ if test x$transparent = xtrue ; then
+ $as_echo "#define USE_TRANSPARENT 1" >>confdefs.h
+ 
+      case $host in
+-       *-*-openbsd*)
++       *-*-openbsd* | *-*-bitrig*)
+ 
+ $as_echo "#define OPENBSD 1" >>confdefs.h
+  ;;
+@@ -11152,7 +11152,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
+   CFLAGS="$save_CFLAGS"
+ 
+   case $host in
+-    *-*-openbsd*)
++    *-*-openbsd* | *-*-bitrig*)
+       # Some OpenBSD versions (like 4.8) have -Wsystem-headers by default.
+       # That's fine, except that the headers don't pass -Wredundant-decls.
+       # Therefore, let's disable -Wsystem-headers when we're building
