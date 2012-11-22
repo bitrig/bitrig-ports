@@ -33,4 +33,6 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		--enable-parsers=all \
 			--with-www=curl
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/build
+
 .include <bsd.port.mk>
