@@ -10,7 +10,7 @@ LLVM_V =	3.2
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION = 	15
+REVISION = 	16
 
 CATEGORIES =	bitrig
 
@@ -32,7 +32,7 @@ WANTLIB =	c m pthread stdc++
 MASTER_SITES = https://www.bitrig.org/pub/distfiles/
 
 DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
-DISTFILES +=	compiler-rt-20120813.tar.gz
+DISTFILES +=	compiler-rt-20121112.tar.gz
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 
 post-extract:
@@ -71,7 +71,7 @@ CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
 SUBST_VARS +=		CLANG_INCLUDE_PATH
 
-TMPGIT = ${DISTDIR}/tmpgit
+TMPGIT = ${DISTDIR}/tmpgit32
 
 .if ${MACHINE_ARCH:Mamd64}
 INSTALL_ARCH = x86_64
@@ -129,22 +129,21 @@ git:
 	if test -d ${TMPGIT}/llvm-3.2.src; then \
 		(cd ${TMPGIT}/llvm-3.2.src && git pull) \
 	else \
-		(cd ${TMPGIT} && git clone http://llvm.org/git/llvm.git llvm-3.2.src) \
+		(cd ${TMPGIT} && git clone -b release_32 http://llvm.org/git/llvm.git llvm-3.2.src) \
 	fi
 	if test -d ${TMPGIT}/clang-3.2.src; then \
 		(cd ${TMPGIT}/clang-3.2.src && git pull) \
 	else \
-		(cd ${TMPGIT} && git clone http://llvm.org/git/clang.git clang-3.2.src) \
+		(cd ${TMPGIT} && git clone -b release_32 http://llvm.org/git/clang.git clang-3.2.src) \
 	fi	
 	if test -d ${TMPGIT}/compiler-rt; then \
 		(cd ${TMPGIT}/compiler-rt && git pull) \
 	else \
-		(cd ${TMPGIT} && git clone http://llvm.org/git/compiler-rt.git) \
+		(cd ${TMPGIT} && git clone -b release_32 http://llvm.org/git/compiler-rt.git) \
 	fi
 	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/llvm-3.2.src.tar.gz llvm-3.2.src)
 	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/clang-3.2.src.tar.gz clang-3.2.src)
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/compiler-rt-20120813.tar.gz compiler-rt)
+	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/compiler-rt-20121112.tar.gz compiler-rt)
 	make makesum
-	rm -rf ${TMPGIT}
 
 .include <bsd.port.mk>
