@@ -1,9 +1,9 @@
-$OpenBSD: patch-js_src_configure_in,v 1.16 2012/10/10 20:56:14 landry Exp $
+$OpenBSD: patch-js_src_configure_in,v 1.17 2012/11/24 10:21:50 landry Exp $
 https://bugzilla.mozilla.org/show_bug.cgi?id=648721
 https://bugzilla.mozilla.org/show_bug.cgi?id=589754
---- js/src/configure.in.orig	Wed Oct 10 23:43:05 2012
-+++ js/src/configure.in	Sat Oct 13 14:49:56 2012
-@@ -1982,8 +1982,13 @@ ia64*-hpux*)
+--- js/src/configure.in.orig	Tue Nov 20 02:46:01 2012
++++ js/src/configure.in	Sun Nov 25 11:38:44 2012
+@@ -1911,8 +1911,13 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
@@ -19,7 +19,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=589754
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
      DSO_LDOPTS='-shared -fPIC'
-@@ -2272,6 +2277,10 @@ mips*-*)
+@@ -2201,6 +2206,10 @@ mips*-*)
      AC_DEFINE(JS_CPU_MIPS)
      AC_DEFINE(JS_NUNBOX32)
      ;;
@@ -30,7 +30,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=589754
  esac
  
  MOZ_ARG_DISABLE_BOOL(methodjit,
-@@ -2794,7 +2803,7 @@ then
+@@ -2710,7 +2719,7 @@ then
  			fi
  			;;
  

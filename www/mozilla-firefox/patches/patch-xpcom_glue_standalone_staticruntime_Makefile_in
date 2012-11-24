@@ -1,6 +1,6 @@
 $OpenBSD$
---- xpcom/glue/standalone/staticruntime/Makefile.in.orig	Sat Oct 13 14:27:51 2012
-+++ xpcom/glue/standalone/staticruntime/Makefile.in	Sat Oct 13 14:53:14 2012
+--- xpcom/glue/standalone/staticruntime/Makefile.in.orig	Sun Nov 25 11:31:22 2012
++++ xpcom/glue/standalone/staticruntime/Makefile.in	Sun Nov 25 11:42:36 2012
 @@ -31,7 +31,7 @@ endif
  ifeq ($(OS_ARCH),WINNT)
  LINKSRC = nsGlueLinkingWin.cpp

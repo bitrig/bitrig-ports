@@ -1,6 +1,6 @@
 $OpenBSD$
---- gfx/skia/Makefile.in.orig	Sat Oct 13 18:36:25 2012
-+++ gfx/skia/Makefile.in	Sat Oct 13 18:37:39 2012
+--- gfx/skia/Makefile.in.orig	Sun Nov 25 12:35:46 2012
++++ gfx/skia/Makefile.in	Sun Nov 25 12:36:25 2012
 @@ -370,7 +370,7 @@ CPPSRCS += \
  	SkUtils_opts_SSE2.cpp \
  	opts_check_SSE2.cpp \

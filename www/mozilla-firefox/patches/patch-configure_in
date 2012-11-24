@@ -1,8 +1,28 @@
-$OpenBSD: patch-configure_in,v 1.26 2012/10/10 20:56:14 landry Exp $
-https://bugzilla.mozilla.org/show_bug.cgi?id=776838
---- configure.in.orig	Wed Oct 10 23:42:45 2012
-+++ configure.in	Sat Oct 13 14:33:49 2012
-@@ -2353,7 +2353,7 @@ ia64*-hpux*)
+$OpenBSD$
+--- configure.in.orig	Tue Nov 20 02:45:51 2012
++++ configure.in	Sun Nov 25 12:44:33 2012
+@@ -1398,15 +1398,15 @@ if test "$GNU_CC"; then
+                   LDFLAGS=$_SAVE_LDFLAGS)
+ 
+     # Check for -mssse3 on $CC
+-    AC_MSG_CHECKING([for -mssse3 option to $CC])
+-    HAVE_COMPILER_FLAG_MSSSE3=
++    AC_MSG_CHECKING([if toolchain supports -mssse3 option])
++    HAVE_TOOLCHAIN_SUPPORT_MSSSE3=
+     _SAVE_CFLAGS=$CFLAGS
+     CFLAGS="$CFLAGS -mssse3"
+-    AC_TRY_COMPILE(,,AC_MSG_RESULT([yes])
+-                     [HAVE_COMPILER_FLAG_MSSSE3=1],
++    AC_TRY_COMPILE([asm ("pmaddubsw %xmm2,%xmm3");],,AC_MSG_RESULT([yes])
++                     [HAVE_TOOLCHAIN_SUPPORT_MSSSE3=1],
+                      AC_MSG_RESULT([no]))
+     CFLAGS=$_SAVE_CFLAGS
+-    AC_SUBST(HAVE_COMPILER_FLAG_MSSSE3)
++    AC_SUBST(HAVE_TOOLCHAIN_SUPPORT_MSSSE3)
+ 
+     # Turn on GNU-specific warnings:
+     # -Wall - turn on a lot of warnings
+@@ -2288,7 +2288,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
@@ -11,7 +31,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=776838
      if test "$SO_VERSION"; then
          DLL_SUFFIX=".so.$SO_VERSION"
      else
-@@ -2974,7 +2974,7 @@ dnl Checks for header files.
+@@ -2924,7 +2924,7 @@ dnl Checks for header files.
  dnl ========================================================
  AC_HEADER_DIRENT
  case "$target_os" in
@@ -20,7 +40,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=776838
  # for stuff like -lXshm
      CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
      ;;
-@@ -3232,7 +3232,7 @@ then
+@@ -3182,7 +3182,7 @@ then
  			fi
  			;;
  
@@ -29,7 +49,16 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=776838
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -5555,7 +5555,7 @@ if test -n "$MOZ_CUBEB"; then
+@@ -3611,7 +3611,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
+     *-android*|*-linuxandroid*)
+       :
+       ;;
+-    *-openbsd*)
++    *-openbsd* | *-bitrig*)
+       :
+       ;;
+     *)
+@@ -5481,7 +5481,7 @@ if test -n "$MOZ_CUBEB"; then
      *-darwin*)
          AC_DEFINE(MOZ_CUBEB)
          ;;
@@ -38,12 +67,3 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=776838
          AC_DEFINE(MOZ_CUBEB)
          ;;
      *)
-@@ -5616,7 +5616,7 @@ if test "$MOZ_GSTREAMER"; then
-                       gstreamer-plugins-base-$GST_API_VERSION)
-     if test -n "$GSTREAMER_LIBS"; then
-        _SAVE_LDFLAGS=$LDFLAGS
--       LDFLAGS="$LDFLAGS -lgstvideo-$GST_API_VERSION"
-+       LDFLAGS="$LDFLAGS $GSTREAMER_LIBS -lgstvideo-$GST_API_VERSION"
-        AC_TRY_LINK(,[return 0;],_HAVE_LIBGSTVIDEO=1,_HAVE_LIBGSTVIDEO=)
-        if test -n "$_HAVE_LIBGSTVIDEO" ; then
-           GSTREAMER_LIBS="$GSTREAMER_LIBS -lgstvideo-$GST_API_VERSION"

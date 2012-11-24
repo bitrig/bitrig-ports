@@ -1,7 +1,7 @@
 $OpenBSD$
---- media/libcubeb/src/Makefile.in.orig	Sat Oct 13 14:27:45 2012
-+++ media/libcubeb/src/Makefile.in	Sat Oct 13 14:35:11 2012
-@@ -42,4 +42,10 @@ CSRCS           = \
+--- media/libcubeb/src/Makefile.in.orig	Sun Nov 25 11:31:20 2012
++++ media/libcubeb/src/Makefile.in	Sun Nov 25 11:34:50 2012
+@@ -42,6 +42,12 @@ CSRCS           = \
                  $(NULL)
  endif
  
@@ -11,4 +11,6 @@ $OpenBSD$
 +                $(NULL)
 +endif
 +
- include $(topsrcdir)/config/rules.mk
+ ifdef MOZ_PULSEAUDIO
+ CSRCS		= \
+ 		cubeb_pulse.c \

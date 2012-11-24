@@ -1,6 +1,6 @@
 $OpenBSD$
---- security/coreconf/config.mk.orig	Sat Oct 13 14:27:47 2012
-+++ security/coreconf/config.mk	Sat Oct 13 14:37:19 2012
+--- security/coreconf/config.mk.orig	Sun Nov 25 11:31:21 2012
++++ security/coreconf/config.mk	Sun Nov 25 11:37:13 2012
 @@ -63,7 +63,7 @@ endif
  #######################################################################
  
