@@ -1,7 +1,7 @@
 $OpenBSD$
---- config/config.mk.orig	Sat Oct 13 11:06:53 2012
-+++ config/config.mk	Sat Oct 13 11:07:16 2012
-@@ -93,7 +93,7 @@ endif
+--- config/config.mk.orig	Sun Nov 25 14:34:23 2012
++++ config/config.mk	Sun Nov 25 14:53:22 2012
+@@ -95,7 +95,7 @@ endif
  # but save the version to allow multiple versions of the same base
  # platform to be built in the same tree.
  #

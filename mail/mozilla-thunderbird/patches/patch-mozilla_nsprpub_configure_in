@@ -1,6 +1,6 @@
 $OpenBSD$
---- mozilla/nsprpub/configure.in.orig	Sat Oct 13 07:04:33 2012
-+++ mozilla/nsprpub/configure.in	Sat Oct 13 07:05:19 2012
+--- mozilla/nsprpub/configure.in.orig	Sun Nov 25 14:34:21 2012
++++ mozilla/nsprpub/configure.in	Sun Nov 25 14:45:51 2012
 @@ -2183,7 +2183,7 @@ mips-sony-newsos*)
      _DEBUG_FLAGS="-gstabs"
  	;;

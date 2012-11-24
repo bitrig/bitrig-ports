@@ -1,6 +1,6 @@
 $OpenBSD$
---- mozilla/security/coreconf/config.mk.orig	Sat Oct 13 12:13:36 2012
-+++ mozilla/security/coreconf/config.mk	Sat Oct 13 12:14:11 2012
+--- mozilla/security/coreconf/config.mk.orig	Sun Nov 25 14:34:19 2012
++++ mozilla/security/coreconf/config.mk	Sun Nov 25 14:41:44 2012
 @@ -63,7 +63,7 @@ endif
  #######################################################################
  

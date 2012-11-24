@@ -1,6 +1,6 @@
 $OpenBSD: patch-mozilla_widget_gtk2_Makefile_in,v 1.2 2012/09/01 14:22:45 landry Exp $
---- mozilla/widget/gtk2/Makefile.in.orig	Thu Oct 11 00:12:31 2012
-+++ mozilla/widget/gtk2/Makefile.in	Sat Oct 13 12:03:09 2012
+--- mozilla/widget/gtk2/Makefile.in.orig	Fri Nov 16 21:16:44 2012
++++ mozilla/widget/gtk2/Makefile.in	Sun Nov 25 14:51:05 2012
 @@ -21,6 +21,17 @@ LIBXUL_LIBRARY = 1
  NATIVE_THEME_SUPPORT = 1
  
@@ -13,7 +13,7 @@ $OpenBSD: patch-mozilla_widget_gtk2_Makefile_in,v 1.2 2012/09/01 14:22:45 landry
 +
 +ifeq ($(OS_ARCH),Bitrig)
 +ifdef MOZ_SYDNEYAUDIO
-+EXTRA_DSO_LDOPTS += -lsndio
++EXTRA_DSO_LDOPTS += /usr/lib/libsndio_pic.a /usr/lib/libpthread_pic.a
 +endif
 +endif
  

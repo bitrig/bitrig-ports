@@ -1,6 +1,6 @@
 $OpenBSD$
---- mailnews/extensions/enigmail/Makefile.in.orig	Sat Oct 13 11:12:44 2012
-+++ mailnews/extensions/enigmail/Makefile.in	Sat Oct 13 11:13:49 2012
+--- mailnews/extensions/enigmail/Makefile.in.orig	Sun Nov 25 14:34:17 2012
++++ mailnews/extensions/enigmail/Makefile.in	Sun Nov 25 14:36:56 2012
 @@ -81,6 +81,10 @@ ifeq ($(OS_ARCH),OpenBSD)
  PLATFORM_STR = openbsd
  endif

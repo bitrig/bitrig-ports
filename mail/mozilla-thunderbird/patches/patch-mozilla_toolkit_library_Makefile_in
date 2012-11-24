@@ -1,7 +1,7 @@
-$OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.16 2012/10/10 21:08:05 landry Exp $
---- mozilla/toolkit/library/Makefile.in.orig	Thu Oct 11 00:12:27 2012
-+++ mozilla/toolkit/library/Makefile.in	Sat Oct 13 10:46:33 2012
-@@ -455,6 +455,18 @@ OS_LIBS += \
+$OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.17 2012/11/24 10:32:42 landry Exp $
+--- mozilla/toolkit/library/Makefile.in.orig	Fri Nov 16 21:16:41 2012
++++ mozilla/toolkit/library/Makefile.in	Sun Nov 25 14:49:50 2012
+@@ -461,6 +461,18 @@ OS_LIBS += \
    $(NULL)
  endif
  
@@ -20,7 +20,7 @@ $OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.16 2012/10/10 21:08:05 l
  ifeq ($(OS_ARCH),Darwin)
  ifdef MOZ_SYDNEYAUDIO
  OS_LIBS += \
-@@ -470,15 +482,15 @@ OS_LIBS += \
+@@ -476,15 +488,15 @@ OS_LIBS += \
  endif
  endif
  
@@ -41,7 +41,7 @@ $OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.16 2012/10/10 21:08:05 l
  endif
  endif
  
-@@ -603,6 +615,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
+@@ -609,6 +621,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
  endif
  
  ifeq ($(OS_ARCH),OpenBSD)
