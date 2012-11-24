@@ -44,7 +44,9 @@ REGRESS_DEPENDS = ${MODPY_RUN_DEPENDS}
 BUILD_DEPENDS =	archivers/zip
 LIB_DEPENDS =	devel/nspr
 
-MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/ctypes/libffi
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} \
+				${WRKSRC}/ctypes/libffi \
+				${WRKSRC}/build/autoconf
 
 SUBST_VARS +=	MOZILLA_VERSION
 
@@ -57,7 +59,8 @@ CONFIGURE_ARGS =	--with-pthreads \
 			--enable-ctypes \
 			--enable-threadsafe
 
-CONFIGURE_ENV +=	SO_VERSION="${SO_VERSION}" \
+CONFIGURE_ENV +=	CC=gcc CXX=c++ \
+			SO_VERSION="${SO_VERSION}" \
 			MOZILLA_VERSION="${MOZILLA_VERSION}" \
 			LIBS=-lncurses
 

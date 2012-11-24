@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure_in,v 1.1.1.1 2012/04/07 13:48:18 landry Exp $
 --- configure.in.orig	Thu Mar 31 21:08:36 2011
-+++ configure.in	Wed Apr  4 16:46:03 2012
++++ configure.in	Sat Nov 24 11:44:06 2012
 @@ -1211,7 +1211,7 @@ WIN_TOP_SRC=
  MOZ_USER_DIR=".mozilla"
  
@@ -10,11 +10,13 @@ $OpenBSD: patch-configure_in,v 1.1.1.1 2012/04/07 13:48:18 landry Exp $
  
  MOZ_COMPONENT_NSPR_LIBS='-L$(LIBXUL_DIST)/bin $(NSPR_LIBS)'
  
-@@ -2582,7 +2582,7 @@ ia64*-hpux*)
+@@ -2581,8 +2581,8 @@ ia64*-hpux*)
+ 	esac
  	;;
  
- *-openbsd*)
+-*-openbsd*)
 -    DLL_SUFFIX=".so.1.0"
++*-openbsd* | *-bitrig*)
 +    DLL_SUFFIX=".so.${SO_VERSION}"
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
@@ -28,13 +30,22 @@ $OpenBSD: patch-configure_in,v 1.1.1.1 2012/04/07 13:48:18 landry Exp $
      ENABLE_TRACEJIT=1
      NANOJIT_ARCH=Sparc
      AC_DEFINE(JS_CPU_SPARC)
-@@ -3039,6 +3039,9 @@ case "$target" in
+@@ -3041,6 +3041,9 @@ case "$target" in
+ *-freebsd*|*-kfreebsd*)
      AC_DEFINE(AVMPLUS_UNIX)
      ;;
- *-freebsd*|*-kfreebsd*)
++*-openbsd* | *-bitrig*)
 +    AC_DEFINE(AVMPLUS_UNIX)
 +    ;;
-+*-openbsd*)
+ *-gnu*)
      AC_DEFINE(AVMPLUS_UNIX)
      ;;
- *-gnu*)
+@@ -3660,7 +3663,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd* | *-*-bitrig* | *-*-bsdi*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.
