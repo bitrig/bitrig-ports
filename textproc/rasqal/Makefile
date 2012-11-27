@@ -34,6 +34,7 @@ LIB_DEPENDS=		devel/mpfr \
 			textproc/raptor
 
 CONFIGURE_STYLE=	gnu autoconf
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
 AUTOCONF_VERSION=	2.69
 SEPARATE_BUILD=		Yes
 

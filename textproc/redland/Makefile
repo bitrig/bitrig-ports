@@ -35,7 +35,7 @@ LIB_DEPENDS=		devel/libtool,-ltdl \
 			textproc/rasqal
 
 CONFIGURE_STYLE=	gnu
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/rasqal
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build ${WRKSRC}/libltdl/config
 USE_LIBTOOL=		Yes
 
 CONFIGURE_ARGS=	--with-raptor=system \
