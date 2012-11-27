@@ -46,7 +46,7 @@ CPPFLAGS+=	-fdollars-in-identifiers \
 CXXFLAGS+=	-L$(LOCALBASE)/lib
 LDLIBS+=	-lgcj -liconv -lz -pthread
 
-MAKE_ENV+=	CXX="$(CXX)" \
+MAKE_ENV+=	CXX=g++ \
 		GCJ="$(GCJ)" \
 		GCJH="$(GCJH)" \
 		GJAR="$(GJAR)" \
