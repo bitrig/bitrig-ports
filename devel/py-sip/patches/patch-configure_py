@@ -1,0 +1,11 @@
+$OpenBSD$
+--- configure.py.orig	Thu Nov 22 23:25:36 2012
++++ configure.py	Thu Nov 22 23:25:52 2012
+@@ -126,6 +126,7 @@ def set_defaults():
+     # Set the platform specific default specification.
+     platdefaults = {
+         "aix":          "aix-xlc",
++        "bitrig":       "openbsd-g++",
+         "bsd":          "bsdi-g++",
+         "cygwin":       "cygwin-g++",
+         "darwin":       "macx-g++",
