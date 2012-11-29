@@ -41,6 +41,9 @@ REGRESS_DEPENDS =	${PKGPATH}
 
 SEPARATE_BUILD =	Yes
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/compat/libjpeg \
+				${WRKSRC}/compat/libtiff \
+				${WRKSRC}/compat/libtiff/config
 CONFIGURE_ARGS= --libdir=${MODTCL_TCLDIR} \
 		--with-tcl=${MODTCL_LIBDIR} \
 		--with-tclinclude=$(MODTCL_INCDIR) \
