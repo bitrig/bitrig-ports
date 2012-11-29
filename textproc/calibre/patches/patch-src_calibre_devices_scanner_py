@@ -1,16 +1,18 @@
 $OpenBSD: patch-src_calibre_devices_scanner_py,v 1.2 2011/09/05 12:38:36 jasper Exp $
 --- src/calibre/devices/scanner.py.orig	Fri Jun 24 20:01:27 2011
 +++ src/calibre/devices/scanner.py	Tue Jun 28 23:45:46 2011
-@@ -10,6 +10,8 @@ from threading import RLock
+@@ -10,6 +10,10 @@ from threading import RLock
  
  from calibre.constants import iswindows, isosx, plugins, islinux
  
 +isopenbsd = 'openbsd' in sys.platform.lower()
 +
++isbitrig = 'bitrig' in sys.platform.lower()
++
  osx_scanner = win_scanner = linux_scanner = None
  
  if iswindows:
-@@ -160,12 +162,18 @@ linux_scanner = None
+@@ -160,12 +162,21 @@ linux_scanner = None
  if islinux:
      linux_scanner = LinuxScanner()
  
@@ -20,13 +22,16 @@ $OpenBSD: patch-src_calibre_devices_scanner_py,v 1.2 2011/09/05 12:38:36 jasper 
 +if isopenbsd:
 +    openbsd_scanner = None
 +
++if isbitrig:
++    bitrig_scanner = None
++
  class DeviceScanner(object):
  
      def __init__(self, *args):
          if isosx and osx_scanner is None:
              raise RuntimeError('The Python extension usbobserver must be available on OS X.')
 -        self.scanner = win_scanner if iswindows else osx_scanner if isosx else linux_scanner
-+        self.scanner = win_scanner if iswindows else osx_scanner if isosx else openbsd_scanner if isopenbsd else linux_scanner
++        self.scanner = win_scanner if iswindows else osx_scanner if isosx else openbsd_scanner if isopenbsd else bitrig_scanner if isbitrig else linux_scanner
          self.devices = []
  
      def scan(self):
