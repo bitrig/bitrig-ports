@@ -43,8 +43,8 @@ EXAMPLE_DIR =		${PREFIX}/share/examples/p5-SDL
 EXAMPLE_LOC =		${WRKSRC}/test
 
 pre-configure:
-	${SUBST_CMD} -c ${FILESDIR}/Openbsd.pm \
-		${WRKSRC}/make/lib/SDL/Build/Openbsd.pm
+	${SUBST_CMD} -c ${FILESDIR}/Bitrig.pm \
+		${WRKSRC}/make/lib/SDL/Build/Bitrig.pm
 
 post-install:
 	${INSTALL_DATA_DIR} -d ${EXAMPLE_DIR}/data

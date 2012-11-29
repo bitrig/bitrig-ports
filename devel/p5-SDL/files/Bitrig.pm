@@ -1,4 +1,4 @@
-package SDL::Build::Openbsd;
+package SDL::Build::Bitrig;
 
 use base 'SDL::Build';
 # ${LOCALBASE}
