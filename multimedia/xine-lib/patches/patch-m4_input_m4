@@ -1,0 +1,12 @@
+$OpenBSD$
+--- m4/input.m4.orig	Sat Dec  1 06:52:49 2012
++++ m4/input.m4	Sat Dec  1 06:53:25 2012
+@@ -33,7 +33,7 @@ AC_DEFUN([XINE_INPUT_PLUGINS], [
+         freebsd*|kfreebsd*)
+             default_enable_vcdo=yes
+             ;;
+-        netbsd* | openbsd*)
++        netbsd* | openbsd* | bitrig*)
+             default_enable_v4l2=yes
+             ;;
+         linux*)

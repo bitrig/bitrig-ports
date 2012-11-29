@@ -1,6 +1,6 @@
 $OpenBSD$
---- m4/attributes.m4.orig	Thu Jul 26 07:23:31 CEST 2012
-+++ m4/attributes.m4	Thu Jul 26 07:23:31 CEST 2012
+--- m4/attributes.m4.orig	Sat Dec  1 06:52:49 2012
++++ m4/attributes.m4	Sat Dec  1 06:54:16 2012
 @@ -113,7 +113,7 @@ AC_DEFUN([CC_NOUNDEFINED], [
       dnl MinGW platforms: for libraries required -no-undefined,
       dnl use it only for libraries in mingw32-w64 

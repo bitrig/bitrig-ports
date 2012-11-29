@@ -1,0 +1,12 @@
+$OpenBSD$
+--- m4/audio_out.m4.orig	Sat Dec  1 06:52:49 2012
++++ m4/audio_out.m4	Sat Dec  1 06:54:37 2012
+@@ -58,7 +58,7 @@ AC_DEFUN([XINE_AUDIO_OUT_PLUGINS], [
+         netbsd*)
+             default_enable_sunaudio=yes
+             ;;
+-        openbsd*)
++        openbsd* | bitrig*)
+             default_enable_oss=no
+             default_enable_sndio=yes
+             ;;
