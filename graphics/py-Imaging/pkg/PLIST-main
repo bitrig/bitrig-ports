@@ -170,4 +170,3 @@ lib/python${MODPY_VERSION}/site-packages/PIL/_imaging.so
 lib/python${MODPY_VERSION}/site-packages/PIL/_imagingcms.so
 lib/python${MODPY_VERSION}/site-packages/PIL/_imagingft.so
 lib/python${MODPY_VERSION}/site-packages/PIL/_imagingmath.so
-lib/python${MODPY_VERSION}/site-packages/PIL/_imagingtk.so
