@@ -23,5 +23,6 @@ PERMIT_PACKAGE_FTP=	Yes
 
 USE_LIBTOOL=	Yes
 CONFIGURE_STYLE= gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/.auto
 
 .include <bsd.port.mk>
