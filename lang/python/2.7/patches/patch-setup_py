@@ -1,6 +1,6 @@
 $OpenBSD: patch-setup_py,v 1.3 2012/02/27 19:30:46 rpointel Exp $
---- setup.py.orig	Mon Apr  9 18:07:36 2012
-+++ setup.py	Wed May  9 09:56:17 2012
+--- setup.py.orig	Tue Apr 10 01:07:36 2012
++++ setup.py	Fri Nov 30 20:39:36 2012
 @@ -23,6 +23,11 @@ COMPILED_WITH_PYDEBUG = hasattr(sys, 'gettotalrefcount
  # This global variable is used to hold the list of modules to be disabled.
  disabled_module_list = []
@@ -146,6 +146,15 @@ $OpenBSD: patch-setup_py,v 1.3 2012/02/27 19:30:46 rpointel Exp $
              tklib = self.compiler.find_library_file(lib_dirs,
                                                          'tk' + version)
              tcllib = self.compiler.find_library_file(lib_dirs,
+@@ -1725,7 +1737,7 @@ class PyBuildExt(build_ext):
+             # Check for the include files on Debian and {Free,Open}BSD, where
+             # they're put in /usr/include/{tcl,tk}X.Y
+             dotversion = version
+-            if '.' not in dotversion and "bsd" in sys.platform.lower():
++            if '.' not in dotversion and "bitrig" in sys.platform.lower():
+                 # OpenBSD and FreeBSD use Tcl/Tk library names like libtcl83.a,
+                 # but the include subdirs are named like .../include/tcl8.3.
+                 dotversion = dotversion[:-1] + '.' + dotversion[-1]
 @@ -1754,17 +1766,9 @@ class PyBuildExt(build_ext):
          if platform == 'sunos5':
              include_dirs.append('/usr/openwin/include')

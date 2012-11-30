@@ -2,7 +2,7 @@
 
 VERSION =		2.7
 PATCHLEVEL =		.3
-REVISION =		1
+REVISION =		2
 SHARED_LIBS =		python2.7 0.0
 VERSION_SPEC =		>=2.7,<2.8
 
