@@ -1,6 +1,6 @@
 $OpenBSD$
 --- gdb/configure.tgt.orig	Wed Aug  1 14:48:44 2012
-+++ gdb/configure.tgt	Fri Oct 12 15:35:09 2012
++++ gdb/configure.tgt	Thu Nov 29 22:03:57 2012
 @@ -88,6 +88,11 @@ arm*-*-openbsd*)
  	gdb_target_obs="arm-tdep.o armbsd-tdep.o armobsd-tdep.o obsd-tdep.o \
  			solib-svr4.o"
@@ -20,7 +20,7 @@ $OpenBSD$
 +i[34567]86-*-bitrig*)
 +	# Target: bitrig/i386
 +	gdb_target_obs="i386-tdep.o i387-tdep.o i386bsd-tdep.o i386obsd-tdep.o \
-+		bsd-uthread.o corelow.o solib.o solib-svr4.o"
++		bsd-uthread.o solib-svr4.o"
 +	;;
  i[34567]86-*-nto*)
  	# Target: Intel 386 running qnx6.
