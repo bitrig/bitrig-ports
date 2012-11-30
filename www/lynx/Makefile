@@ -4,8 +4,7 @@ DISTNAME=		lynx-2.8.7rel.2
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		www
 
-HOMEPAGE=		http://www.bitrig.org/
-MAINTAINER=		Lawrence Teo <lteo@bitrig.org>
+HOMEPAGE=		https://www.bitrig.org/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
@@ -15,7 +14,7 @@ PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB +=	c crypto ncurses ssl
 
-MASTER_SITES=	http://www.bitrig.org/files/
+MASTER_SITES=	https://www.bitrig.org/pub/distfiles/
 
 NO_REGRESS=	Yes
 

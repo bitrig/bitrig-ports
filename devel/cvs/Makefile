@@ -4,8 +4,7 @@ DISTNAME=		cvs-1.11.1p1
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		devel
 
-HOMEPAGE=		http://www.bitrig.org/
-MAINTAINER=		Lawrence Teo <lteo@bitrig.org>
+HOMEPAGE=		https://www.bitrig.org/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
@@ -15,7 +14,7 @@ PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB +=	c crypto gssapi krb5 z
 
-MASTER_SITES=	http://www.bitrig.org/files/
+MASTER_SITES=	https://www.bitrig.org/pub/distfiles/
 
 NO_REGRESS=	Yes
 
