@@ -41,6 +41,7 @@ CONFIGURE_ARGS=		--fsstnd=openbsd \
 			--vimdir=${PREFIX}/share/doc/clisp \
 			--srcdir=${WRKSRC} ${WRKBUILD}
 CONFIGURE_ENV =		ac_cv_prog_DVIPDF=''
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/src/build-aux
 
 .if ${MACHINE_ARCH} == "sparc64"
 CFLAGS +=		-DSAFETY=2 -DNO_ASM -mcmodel=medany
