@@ -45,5 +45,6 @@ CONFIGURE_ARGS+=	--disable-doc \
 			--disable-java \
 			--disable-csharp \
 			--disable-cxx
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/.auto
 
 .include <bsd.port.mk>
