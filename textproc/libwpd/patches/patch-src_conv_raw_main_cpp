@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/conv/raw/main.cpp.orig	Fri Nov 30 10:58:14 2012
++++ src/conv/raw/main.cpp	Fri Nov 30 10:58:24 2012
+@@ -26,6 +26,7 @@
+ #include <gsf/gsf-utils.h>
+ #include <gsf/gsf-input-stdio.h>
+ #include <stdio.h>
++#include <string.h>
+ #include "libwpd.h"
+ #include "GSFStream.h"
+ #include "RawListener.h"
