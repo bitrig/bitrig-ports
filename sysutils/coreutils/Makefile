@@ -25,6 +25,7 @@ MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/build-aux
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	--program-prefix=g \
 			--without-gmp
+CONFIGURE_ENV=		"FORCE_UNSAFE_CONFIGURE=1"
 
 # Prevent conflicts with: id, gpr and god
 post-install:
