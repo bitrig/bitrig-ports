@@ -1,6 +1,6 @@
-$OpenBSD$
+$OpenBSD: patch-gcc_config_gcc,v 1.2 2012/12/12 21:54:41 jasper Exp $
 --- gcc/config.gcc.orig	Sat May 22 18:18:42 2010
-+++ gcc/config.gcc	Mon Sep 24 11:41:40 2012
++++ gcc/config.gcc	Sat Dec 22 11:14:21 2012
 @@ -402,7 +402,7 @@ case $machine in
  		;;
  	esac
@@ -38,15 +38,15 @@ $OpenBSD$
  	tm_file="i386/biarch64.h i386/i386.h i386/unix.h i386/att.h dbxelf.h elfos.h openbsd.h openbsd-libpthread.h i386/x86-64.h i386/openbsd64.h"
  	tm_file="${tm_file} exec-stack.h"
  	tmake_file="t-libc-ok t-openbsd i386/t-openbsd"
-@@ -1935,7 +1936,7 @@ mips*-*-linux*)				# Linux MIPS, either endian.
- 	tmake_file="t-slibgcc-elf-ver t-linux mips/t-linux"
- 	;;
- mips*-*-openbsd*)
--	target_cpu_default="MASK_GAS|MASK_ABICALLS"
-+	target_cpu_default="MASK_GAS|MASK_ABICALLS PIE_DEFAULT=1"
+@@ -1939,7 +1940,7 @@ mips*-*-openbsd*)
  	tm_file="elfos.h ${tm_file}"
  	case $machine in
          mips64*-*)
+-		tm_defines="MIPS_ISA_DEFAULT=3 MIPS_ABI_DEFAULT=ABI_64"
++		tm_defines="MIPS_ISA_DEFAULT=3 MIPS_ABI_DEFAULT=ABI_64 PIE_DEFAULT=1"
+ 		tmake_file="t-openbsd mips/t-openbsd64"
+ 		;;
+         mips*-*)
 @@ -2460,6 +2461,7 @@ sparc-*-openbsd*)
  	use_collect2=yes
  	;;
