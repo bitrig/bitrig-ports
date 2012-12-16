@@ -1,0 +1,22 @@
+$OpenBSD$
+--- tagutils/misc.h.orig	Sat Dec 15 19:06:13 2012
++++ tagutils/misc.h	Sat Dec 15 19:05:50 2012
+@@ -37,12 +37,12 @@ typedef signed long long __s64;
+ #endif
+ 
+ 
+-inline __u16 le16_to_cpu(__u16 le16);
+-inline __u32 le32_to_cpu(__u32 le32);
+-inline __u64 le64_to_cpu(__u64 le64);
+-inline __u8 fget_byte(FILE *fp);
+-inline __u16 fget_le16(FILE *fp);
+-inline __u32 fget_le32(FILE *fp);
++__u16 le16_to_cpu(__u16 le16);
++__u32 le32_to_cpu(__u32 le32);
++__u64 le64_to_cpu(__u64 le64);
++__u8 fget_byte(FILE *fp);
++__u16 fget_le16(FILE *fp);
++__u32 fget_le32(FILE *fp);
+ 
+ inline __u32 cpu_to_be32(__u32 cpu32);
+ 

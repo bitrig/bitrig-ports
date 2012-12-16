@@ -1,7 +1,7 @@
 $OpenBSD: patch-tagutils_misc_c,v 1.1.1.1 2012/10/10 10:45:05 sthen Exp $
---- tagutils/misc.c.orig	Sat Sep 22 01:18:18 2012
-+++ tagutils/misc.c	Sat Sep 22 01:18:21 2012
-@@ -21,7 +21,7 @@
+--- tagutils/misc.c.orig	Thu Nov 11 18:48:14 2010
++++ tagutils/misc.c	Sat Dec 15 19:05:43 2012
+@@ -21,11 +21,11 @@
  
  #include <stdio.h>
  #include <string.h>
@@ -10,3 +10,62 @@ $OpenBSD: patch-tagutils_misc_c,v 1.1.1.1 2012/10/10 10:45:05 sthen Exp $
  
  #include "misc.h"
  
+-inline __u16
++__u16
+ le16_to_cpu(__u16 le16)
+ {
+ #if __BYTE_ORDER == __LITTLE_ENDIAN
+@@ -36,7 +36,7 @@ le16_to_cpu(__u16 le16)
+ #endif
+ }
+ 
+-inline __u32
++__u32
+ le32_to_cpu(__u32 le32)
+ {
+ #if __BYTE_ORDER == __LITTLE_ENDIAN
+@@ -51,7 +51,7 @@ le32_to_cpu(__u32 le32)
+ #endif
+ }
+ 
+-inline __u64
++__u64
+ le64_to_cpu(__u64 le64)
+ {
+ #if __BYTE_ORDER == __LITTLE_ENDIAN
+@@ -72,7 +72,7 @@ le64_to_cpu(__u64 le64)
+ #endif
+ }
+ 
+-inline __u8
++__u8
+ fget_byte(FILE *fp)
+ {
+ 	__u8 d;
+@@ -81,7 +81,7 @@ fget_byte(FILE *fp)
+ 	return d;
+ }
+ 
+-inline __u16
++__u16
+ fget_le16(FILE *fp)
+ {
+ 	__u16 d;
+@@ -91,7 +91,7 @@ fget_le16(FILE *fp)
+ 	return d;
+ }
+ 
+-inline __u32
++__u32
+ fget_le32(FILE *fp)
+ {
+ 	__u32 d;
+@@ -101,7 +101,7 @@ fget_le32(FILE *fp)
+ 	return d;
+ }
+ 
+-inline __u32
++__u32
+ cpu_to_be32(__u32 cpu32)
+ {
+ #if __BYTE_ORDER == __LITTLE_ENDIAN

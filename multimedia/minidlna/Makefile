@@ -32,14 +32,7 @@ LIB_DEPENDS=	audio/flac \
 		graphics/jpeg \
 		graphics/libexif
 
-MAKE_FLAGS=	CC="${CC}" CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}" \
-		INSTALLPREFIX="${WRKINST}${TRUEPREFIX}"
-CFLAGS+=	-Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 \
-		-I${LOCALBASE}/include \
-		-I${LOCALBASE}/include/libavcodec \
-		-I${LOCALBASE}/include/libavformat \
-		-I${LOCALBASE}/include/libavutil
-LDFLAGS=	-L${LOCALBASE}/lib
+MAKE_FLAGS=	CC="${CC}" INSTALLPREFIX="${WRKINST}${TRUEPREFIX}"
 
 NO_REGRESS=	Yes
 E=		${PREFIX}/share/examples/minidlna
