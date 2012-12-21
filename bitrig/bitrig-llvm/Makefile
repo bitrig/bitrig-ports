@@ -3,17 +3,15 @@
 # XXX: Remember to bump MODCLANG_VERSION in lang/clang/clang.port.mk when
 # updating this port.
 
-SHARED_LIBS +=  libclang                  0.0 # 3.0
+SHARED_LIBS +=  clang                  0.0 # 3.2
 
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 DPB_PROPERTIES= parallel
 
-LLVM_V =	3.1
+LLVM_V =	3.2
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION =	18
-
 CATEGORIES =	bitrig
 
 # packager notes in http://llvm.org/docs/Packaging.html
@@ -31,20 +29,20 @@ PERMIT_DISTFILES_FTP =	Yes
 WANTLIB =	c m pthread stdc++
 
 MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
-MASTER_SITES0 = https://www.bitrig.org/pub/distfiles/
 
 DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
-DISTFILES +=	compiler-rt-20120611.tar.gz:0
+DISTFILES +=	compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 
 post-extract:
 	@mv ${WRKDIR}/clang-${LLVM_V}.src ${WRKDIST}/tools/clang
-	@mv ${WRKDIR}/compiler-rt ${WRKDIST}/projects/compiler-rt
+	@mv ${WRKDIR}/compiler-rt-${LLVM_V}.src ${WRKDIST}/projects/compiler-rt
 
 MODULES =	devel/cmake \
 		lang/python
 
 REGRESS_DEPENDS = devel/dejagnu
+BUILD_DEPENDS += textproc/py-docutils
 
 MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
 		VERBOSE=Yes \
@@ -63,15 +61,30 @@ CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 			-DLLVM_REQUIRES_RTTI:Bool=True \
 			-DLLVM_TARGETS_TO_BUILD:String="ARM;X86" \
 			-DCMAKE_INSTALL_PREFIX:PATH=${PREFIX} \
-			-DCMAKE_BUILD_TYPE:String=Release
+			-DCMAKE_BUILD_TYPE:String=Release \
+			-DCMAKE_DISABLE_FIND_PACKAGE_LibXml2:Bool=True
 
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
 SUBST_VARS +=		CLANG_INCLUDE_PATH
 
 .if ${MACHINE_ARCH:Mamd64}
 INSTALL_ARCH = x86_64
+PKG_ARGS+=-Damd64=1
 .else
-INSTALL_ARCH = ${ARCH}
+INSTALL_ARCH = ${MACHINE_ARCH}
+PKG_ARGS+=-Damd64=0
+.endif
+
+.if ${MACHINE_ARCH:Mi386}
+PKG_ARGS+=-Di386=1
+.else
+PKG_ARGS+=-Di386=0
+.endif
+
+.if ${MACHINE_ARCH:Marm}
+PKG_ARGS+=-Darm=1
+.else
+PKG_ARGS+=-Darm=0
 .endif
 
 pre-configure:
@@ -79,9 +92,10 @@ pre-configure:
 	-@ln -s ${MODPY_BIN} ${WRKDIR}/bin/python
 
 post-build:
-	cd ${WRKSRC}/docs/CommandGuide && for i in *.pod; do \
-	pod2man --release=CVS --center="LLVM Command Guide" \
-	    $$i man/man1/$${i%.pod}.1; \
+	${INSTALL_DATA_DIR} ${WRKSRC}/docs/CommandGuide/man/man1/
+	cd ${WRKSRC}/docs/CommandGuide && for i in *.rst; do \
+	rst2man -q --title="LLVM Command Guide" \
+	    $$i man/man1/$${i%.rst}.1; \
 	done
 	pod2man --release=CVS --center="LLVM Command Guide" \
 	    ${WRKSRC}/tools/clang/docs/tools/clang.pod \
@@ -97,6 +111,7 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKSRC}/docs/CommandGuide/man/man1/* \
 	    ${PREFIX}/share/man/man1
-	${INSTALL_DATA} ${WRKBUILD}/lib/libclang_rt.${INSTALL_ARCH}.a ${PREFIX}/lib/libclang_rt.${ARCH}.a
+	${INSTALL_DATA} ${WRKBUILD}/lib/clang/${LLVM_V}/lib/bitrig/libclang_rt.${INSTALL_ARCH}.a \
+	    ${PREFIX}/lib/libclang_rt.${ARCH}.a
 
 .include <bsd.port.mk>

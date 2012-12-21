@@ -1,99 +1,11 @@
 $OpenBSD$
---- tools/clang/lib/Basic/Targets.cpp.orig	Wed Apr 25 14:26:22 2012
-+++ tools/clang/lib/Basic/Targets.cpp	Tue Aug  7 20:55:48 2012
-@@ -353,6 +353,30 @@ class NetBSDTargetInfo : public OSTargetInfo<Target> {
-     }
- };
+--- tools/clang/lib/Basic/Targets.cpp.orig	Thu Sep 20 11:12:43 2012
++++ tools/clang/lib/Basic/Targets.cpp	Thu Sep 20 14:47:02 2012
+@@ -406,6 +406,7 @@ class BitrigTargetInfo : public OSTargetInfo<Target> {
+     // Bitrig defines; list based off of gcc output
  
-+// Bitrig Target
-+template<typename Target>
-+class BitrigTargetInfo : public OSTargetInfo<Target> {
-+protected:
-+  virtual void getOSDefines(const LangOptions &Opts, const llvm::Triple &Triple,
-+                            MacroBuilder &Builder) const {
-+    // Bitrig defines; list based off of gcc output
-+
-+    Builder.defineMacro("__Bitrig__");
+     Builder.defineMacro("__Bitrig__");
 +    Builder.defineMacro("__OpenBSD__");
-+    DefineStd(Builder, "unix", Opts);
-+    Builder.defineMacro("__ELF__");
-+    if (Opts.POSIXThreads)
-+      Builder.defineMacro("_REENTRANT");
-+  }
-+public:
-+  BitrigTargetInfo(const std::string &triple)
-+    : OSTargetInfo<Target>(triple) {
-+      this->UserLabelPrefix = "";
-+      this->TLSSupported = false;
-+      this->MCountName = "__mcount";
-+  }
-+};
-+
- // OpenBSD Target
- template<typename Target>
- class OpenBSDTargetInfo : public OSTargetInfo<Target> {
-@@ -2254,6 +2278,18 @@ class NetBSDI386TargetInfo : public NetBSDTargetInfo<X
- } // end anonymous namespace
- 
- namespace {
-+class BitrigI386TargetInfo : public BitrigTargetInfo<X86_32TargetInfo> {
-+public:
-+  BitrigI386TargetInfo(const std::string& triple) :
-+    BitrigTargetInfo<X86_32TargetInfo>(triple) {
-+    SizeType = UnsignedLong;
-+    IntPtrType = SignedLong;
-+    PtrDiffType = SignedLong;
-+  }
-+};
-+} // end anonymous namespace
-+
-+namespace {
- class OpenBSDI386TargetInfo : public OpenBSDTargetInfo<X86_32TargetInfo> {
- public:
-   OpenBSDI386TargetInfo(const std::string& triple) :
-@@ -2591,6 +2627,18 @@ class DarwinX86_64TargetInfo : public DarwinTargetInfo
- } // end anonymous namespace
- 
- namespace {
-+class BitrigX86_64TargetInfo : public BitrigTargetInfo<X86_64TargetInfo> {
-+public:
-+  BitrigX86_64TargetInfo(const std::string& triple)
-+      : BitrigTargetInfo<X86_64TargetInfo>(triple) {
-+    IntMaxType = SignedLongLong;
-+    UIntMaxType = UnsignedLongLong;
-+    Int64Type = SignedLongLong;
-+  }
-+};
-+} // end anonymous namespace
-+
-+namespace {
- class OpenBSDX86_64TargetInfo : public OpenBSDTargetInfo<X86_64TargetInfo> {
- public:
-   OpenBSDX86_64TargetInfo(const std::string& triple)
-@@ -3922,6 +3970,8 @@ static TargetInfo *AllocateTarget(const std::string &T
-     switch (os) {
-     case llvm::Triple::Linux:
-       return new LinuxTargetInfo<ARMTargetInfo>(T);
-+    case llvm::Triple::Bitrig:
-+      return new BitrigTargetInfo<ARMTargetInfo>(T);
-     case llvm::Triple::FreeBSD:
-       return new FreeBSDTargetInfo<ARMTargetInfo>(T);
-     case llvm::Triple::NetBSD:
-@@ -4077,6 +4127,8 @@ static TargetInfo *AllocateTarget(const std::string &T
-       return new NetBSDI386TargetInfo(T);
-     case llvm::Triple::OpenBSD:
-       return new OpenBSDI386TargetInfo(T);
-+    case llvm::Triple::Bitrig:
-+      return new BitrigI386TargetInfo(T);
-     case llvm::Triple::FreeBSD:
-       return new FreeBSDTargetInfo<X86_32TargetInfo>(T);
-     case llvm::Triple::Minix:
-@@ -4112,6 +4164,8 @@ static TargetInfo *AllocateTarget(const std::string &T
-       return new NetBSDTargetInfo<X86_64TargetInfo>(T);
-     case llvm::Triple::OpenBSD:
-       return new OpenBSDX86_64TargetInfo(T);
-+    case llvm::Triple::Bitrig:
-+      return new BitrigX86_64TargetInfo(T);
-     case llvm::Triple::FreeBSD:
-       return new FreeBSDTargetInfo<X86_64TargetInfo>(T);
-     case llvm::Triple::Solaris:
+     DefineStd(Builder, "unix", Opts);
+     Builder.defineMacro("__ELF__");
+     if (Opts.POSIXThreads)
