@@ -1,12 +1,12 @@
-$OpenBSD$
---- mozilla/nsprpub/configure.in.orig	Fri Jun  1 00:48:19 2012
-+++ mozilla/nsprpub/configure.in	Fri Oct  5 21:10:23 2012
-@@ -2183,14 +2183,16 @@ mips-sony-newsos*)
+$OpenBSD: patch-mozilla_nsprpub_configure_in,v 1.15 2012/12/29 19:58:22 landry Exp $
+--- mozilla/nsprpub/configure.in.orig	Thu Oct 25 00:19:07 2012
++++ mozilla/nsprpub/configure.in	Mon Dec 31 13:32:33 2012
+@@ -2112,14 +2112,16 @@ tools are selected during the Xcode/Developer Tools in
      _DEBUG_FLAGS="-gstabs"
  	;;
  
 -*-openbsd*)
-+*-openbsd* | *-bitrig*)
++*-openbsd*|*-bitrig*)
      AC_DEFINE(XP_UNIX)
      AC_DEFINE(OPENBSD)
      AC_DEFINE(HAVE_BSD_FLOCK)
@@ -20,16 +20,16 @@ $OpenBSD$
      DSO_CFLAGS=-fPIC
      MDCPUCFG_H=_openbsd.cfg
      PR_MD_CSRCS=openbsd.c
-@@ -2978,7 +2980,7 @@ if test -n "$USE_PTHREADS"; then
+@@ -2847,7 +2849,7 @@ if test -n "$USE_PTHREADS"; then
  	        _PTHREAD_LDFLAGS=
  	    fi
  	    ;;
 -    *-openbsd*)
-+    *-openbsd* | *-bitrig*)
++    *-openbsd*|*-bitrig*)
          if test "$ac_cv_have_dash_pthread" = "yes"; then
              _PTHREAD_LDFLAGS=-pthread
          fi
-@@ -3078,7 +3080,7 @@ case "$target" in
+@@ -2947,7 +2949,7 @@ case "$target" in
      _PTHREAD_LDFLAGS=
      USE_USER_PTHREADS=
      ;;
