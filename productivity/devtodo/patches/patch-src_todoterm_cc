@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/todoterm.cc.orig	Fri Jan  4 09:38:45 2013
++++ src/todoterm.cc	Fri Jan  4 09:39:26 2013
+@@ -7,6 +7,7 @@
+ #include <stdexcept>
+ #include <curses.h>
+ #include <term.h>
++#include <stdlib.h>
+ 
+ static char info[2048];
+ static bool term_initialized;
