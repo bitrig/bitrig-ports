@@ -1,28 +1,7 @@
 $OpenBSD$
---- configure.in.orig	Tue Nov 20 02:45:51 2012
-+++ configure.in	Sun Nov 25 12:44:33 2012
-@@ -1398,15 +1398,15 @@ if test "$GNU_CC"; then
-                   LDFLAGS=$_SAVE_LDFLAGS)
- 
-     # Check for -mssse3 on $CC
--    AC_MSG_CHECKING([for -mssse3 option to $CC])
--    HAVE_COMPILER_FLAG_MSSSE3=
-+    AC_MSG_CHECKING([if toolchain supports -mssse3 option])
-+    HAVE_TOOLCHAIN_SUPPORT_MSSSE3=
-     _SAVE_CFLAGS=$CFLAGS
-     CFLAGS="$CFLAGS -mssse3"
--    AC_TRY_COMPILE(,,AC_MSG_RESULT([yes])
--                     [HAVE_COMPILER_FLAG_MSSSE3=1],
-+    AC_TRY_COMPILE([asm ("pmaddubsw %xmm2,%xmm3");],,AC_MSG_RESULT([yes])
-+                     [HAVE_TOOLCHAIN_SUPPORT_MSSSE3=1],
-                      AC_MSG_RESULT([no]))
-     CFLAGS=$_SAVE_CFLAGS
--    AC_SUBST(HAVE_COMPILER_FLAG_MSSSE3)
-+    AC_SUBST(HAVE_TOOLCHAIN_SUPPORT_MSSSE3)
- 
-     # Turn on GNU-specific warnings:
-     # -Wall - turn on a lot of warnings
-@@ -2288,7 +2288,7 @@ ia64*-hpux*)
+--- configure.in.orig	Sun Jan 27 10:07:07 2013
++++ configure.in	Sun Jan 27 10:22:11 2013
+@@ -2350,7 +2350,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
@@ -31,34 +10,34 @@ $OpenBSD$
      if test "$SO_VERSION"; then
          DLL_SUFFIX=".so.$SO_VERSION"
      else
-@@ -2924,7 +2924,7 @@ dnl Checks for header files.
+@@ -2972,7 +2972,7 @@ dnl Checks for header files.
  dnl ========================================================
  AC_HEADER_DIRENT
  case "$target_os" in
 -freebsd*|openbsd*)
-+freebsd* | openbsd* | bitrig*)
++freebsd*|openbsd*|bitrig*)
  # for stuff like -lXshm
      CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
      ;;
-@@ -3182,7 +3182,7 @@ then
+@@ -3278,7 +3278,7 @@ then
  			fi
  			;;
  
 -	    *-*-openbsd*|*-*-bsdi*)
-+	    *-*-openbsd* | *-*-bitrig* | *-*-bsdi*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -3611,7 +3611,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
+@@ -3708,7 +3708,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
      *-android*|*-linuxandroid*)
        :
        ;;
 -    *-openbsd*)
-+    *-openbsd* | *-bitrig*)
++    *-openbsd*|*-bitrig*)
        :
        ;;
      *)
-@@ -5481,7 +5481,7 @@ if test -n "$MOZ_CUBEB"; then
+@@ -5616,7 +5616,7 @@ if test -n "$MOZ_CUBEB"; then
      *-darwin*)
          AC_DEFINE(MOZ_CUBEB)
          ;;

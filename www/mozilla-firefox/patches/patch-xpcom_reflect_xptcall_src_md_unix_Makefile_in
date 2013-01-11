@@ -1,6 +1,6 @@
 $OpenBSD$
---- xpcom/reflect/xptcall/src/md/unix/Makefile.in.orig	Sun Nov 25 11:31:22 2012
-+++ xpcom/reflect/xptcall/src/md/unix/Makefile.in	Sun Nov 25 11:42:00 2012
+--- xpcom/reflect/xptcall/src/md/unix/Makefile.in.orig	Sun Jan 27 10:06:53 2013
++++ xpcom/reflect/xptcall/src/md/unix/Makefile.in	Sun Jan 27 10:10:30 2013
 @@ -50,7 +50,7 @@ endif
  endif
  endif
@@ -10,16 +10,29 @@ $OpenBSD$
  ifeq (86,$(findstring 86,$(OS_TEST)))
  CPPSRCS		:= xptcinvoke_gcc_x86_unix.cpp xptcstubs_gcc_x86_unix.cpp
  endif
-@@ -80,6 +80,12 @@ endif
- # OpenBSD/amd64
- #
- ifeq ($(OS_ARCH)$(OS_TEST),OpenBSDx86_64)
-+CPPSRCS		:= xptcinvoke_amd64_openbsd.cpp xptcstubs_amd64_openbsd.cpp
-+endif
-+#
-+# Bitrig/amd64
-+#
-+ifeq ($(OS_ARCH)$(OS_TEST),Bitrigx86_64)
+@@ -83,6 +83,12 @@ ifeq ($(OS_ARCH)$(OS_TEST),OpenBSDx86_64)
  CPPSRCS		:= xptcinvoke_amd64_openbsd.cpp xptcstubs_amd64_openbsd.cpp
  endif
  #
++# Bitrig/amd64
++#
++ifeq ($(OS_ARCH)$(OS_TEST),Bitrigx86_64)
++CPPSRCS		:= xptcinvoke_amd64_openbsd.cpp xptcstubs_amd64_openbsd.cpp
++endif
++#
+ # Neutrino/Intel (uses the same unixish_x86 code)
+ #
+ ifeq ($(OS_TARGET),NTO)
+@@ -166,6 +172,12 @@ endif
+ # OpenBSD/ARM
+ #
+ ifeq ($(OS_ARCH)$(OS_TEST),OpenBSDarm)
++CPPSRCS		:= xptcinvoke_arm_openbsd.cpp xptcstubs_arm_openbsd.cpp
++endif
++#
++# Bitrig/ARM
++#
++ifeq ($(OS_ARCH)$(OS_TEST),Bitrigarm)
+ CPPSRCS		:= xptcinvoke_arm_openbsd.cpp xptcstubs_arm_openbsd.cpp
+ endif
+ 
