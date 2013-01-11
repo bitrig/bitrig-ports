@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.21 2011/12/02 14:36:14 espie Exp $
+# $OpenBSD: Makefile,v 1.22 2013/01/11 23:18:26 espie Exp $
 
 COMMENT=		color ascii art library
 
 DISTNAME=		libcaca-0.99.beta17
 PKGNAME=		libcaca-0.99.17
-REVISION=		0
+REVISION=		1
 SHARED_LIBS +=  caca           1.0               # .0.99
 CATEGORIES=		graphics
 
@@ -19,10 +19,6 @@ WANTLIB=		c ncursesw m z
 HOMEPAGE=		http://caca.zoy.org/
 MASTER_SITES=		${HOMEPAGE}/files/libcaca/ \
 			http://distfiles.nl/
-
-BUILD_DEPENDS=		${RUN_DEPENDS}
-RUN_DEPENDS=		misc/zzuf
-REGRESS_DEPENDS=	devel/cppunit
 
 USE_LIBTOOL=		Yes
 USE_GROFF =		Yes
@@ -39,12 +35,14 @@ WANTLIB +=		X11 Xext freetype xcb Imlib2>=1
 .endif
 
 CONFIGURE_STYLE= 	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/.auto
 CONFIGURE_ARGS+=	--disable-doc \
 			--disable-slang \
 			--disable-ruby \
 			--disable-java \
 			--disable-csharp \
-			--disable-cxx
-MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/.auto
+			--disable-cxx \
+			--disable-zzuf \
+			--disable-cppunit
 
 .include <bsd.port.mk>
