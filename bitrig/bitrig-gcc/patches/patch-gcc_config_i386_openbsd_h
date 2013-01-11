@@ -1,7 +1,15 @@
 $OpenBSD: patch-gcc_config_i386_openbsd_h,v 1.1.1.1 2011/11/14 13:00:57 pascal Exp $
---- gcc/config/i386/openbsd.h.orig	Sat Nov 12 13:36:52 2011
-+++ gcc/config/i386/openbsd.h	Sat Nov 12 13:37:45 2011
-@@ -40,16 +40,19 @@ along with GCC; see the file COPYING3.  If not see
+--- gcc/config/i386/openbsd.h.orig	Thu Aug  2 06:49:31 2007
++++ gcc/config/i386/openbsd.h	Fri Jan 11 13:54:46 2013
+@@ -30,6 +30,7 @@ along with GCC; see the file COPYING3.  If not see
+     {						\
+ 	builtin_define ("__unix__");		\
+ 	builtin_define ("__OpenBSD__");		\
++	builtin_define ("__Bitrig__");		\
+ 	builtin_assert ("system=unix");		\
+ 	builtin_assert ("system=bsd");		\
+ 	builtin_assert ("system=OpenBSD");	\
+@@ -40,16 +41,19 @@ along with GCC; see the file COPYING3.  If not see
  
  /* This must agree with <machine/ansi.h> */
  #undef SIZE_TYPE

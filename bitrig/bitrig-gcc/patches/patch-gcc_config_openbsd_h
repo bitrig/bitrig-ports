@@ -1,7 +1,15 @@
 $OpenBSD$
 --- gcc/config/openbsd.h.orig	Wed Dec 22 07:06:01 2010
-+++ gcc/config/openbsd.h	Tue Apr 24 21:59:50 2012
-@@ -109,9 +109,9 @@ while (0)
++++ gcc/config/openbsd.h	Fri Jan 11 13:53:40 2013
+@@ -77,6 +77,7 @@ along with GCC; see the file COPYING3.  If not see
+   do						\
+     {						\
+       builtin_define ("__OpenBSD__");		\
++      builtin_define ("__Bitrig__");		\
+       builtin_define ("__unix__");		\
+       builtin_define ("__ANSI_COMPAT");		\
+       builtin_assert ("system=unix");		\
+@@ -109,9 +110,9 @@ while (0)
     This two-stage defines makes it easy to pick that for targets that
     have subspecs.  */
  #ifdef CPP_CPU_SPEC
