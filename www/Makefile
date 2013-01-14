@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.592 2013/01/02 10:14:29 sthen Exp $
+# $OpenBSD: Makefile,v 1.593 2013/01/14 19:31:42 jeremy Exp $
 
      SUBDIR =
      SUBDIR += ajaxterm
@@ -438,7 +438,6 @@
      SUBDIR += reportmagic
      SUBDIR += retawq
      SUBDIR += rt
-     SUBDIR += ruby-activeresource
      SUBDIR += ruby-addressable
      SUBDIR += ruby-capybara
      SUBDIR += ruby-capybara-webkit
@@ -450,13 +449,7 @@
      SUBDIR += ruby-passenger
      SUBDIR += ruby-passenger,ruby18
      SUBDIR += ruby-rack
-     SUBDIR += ruby-rack-cache
-     SUBDIR += ruby-rack-mount
-     SUBDIR += ruby-rack-ssl
      SUBDIR += ruby-rack-test
-     SUBDIR += ruby-rails
-     SUBDIR += ruby-rails,ruby18
-     SUBDIR += ruby-railties
      SUBDIR += ruby-rainbows
      SUBDIR += ruby-rainbows,ruby18
      SUBDIR += ruby-raindrops
