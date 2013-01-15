@@ -14,7 +14,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648726
 +
 +ifeq ($(OS_ARCH),Bitrig)
 +ifdef MOZ_SYDNEYAUDIO
-+EXTRA_DSO_LDOPTS += /usr/lib/libsndio_pic.a /usr/lib/libpthread_pic.a
++EXTRA_DSO_LDOPTS += -lsndio -lpthread
 +endif
 +endif
  

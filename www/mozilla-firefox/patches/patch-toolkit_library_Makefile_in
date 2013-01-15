@@ -15,7 +15,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648730
 +
 +ifeq ($(OS_ARCH),Bitrig)
 +ifdef MOZ_SYDNEYAUDIO
-+EXTRA_DSO_LDOPTS += /usr/lib/libsndio_pic.a /usr/lib/libpthread_pic.a
++EXTRA_DSO_LDOPTS += -lsndio -lpthread
 +endif
 +endif
 +
@@ -39,7 +39,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648730
 +ifeq (Bitrig,$(OS_ARCH))
  ifdef MOZ_CUBEB
 -EXTRA_DSO_LDOPTS += -lsndio
-+EXTRA_DSO_LDOPTS += /usr/lib/libsndio_pic.a /usr/lib/libpthread_pic.a
++EXTRA_DSO_LDOPTS += -lsndio -lpthread
  endif
  endif
  
