@@ -1,6 +1,6 @@
-$OpenBSD$
---- libffi/configure.orig	Thu Mar  1 06:03:46 2012
-+++ libffi/configure	Wed Jul 25 09:48:01 2012
+$OpenBSD: patch-libffi_configure,v 1.3 2013/01/16 19:28:48 pascal Exp $
+--- libffi/configure.orig	Thu Mar  1 13:03:46 2012
++++ libffi/configure	Sun Feb  3 21:26:21 2013
 @@ -5071,7 +5071,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -73,7 +73,17 @@ $OpenBSD$
  	TARGET=X86_64; TARGETDIR=x86
  	;;
  
-@@ -11346,7 +11346,7 @@ case "$host" in
+@@ -11339,6 +11339,9 @@ case "$host" in
+   hppa*-*-linux* | parisc*-*-linux*)
+ 	TARGET=PA_LINUX; TARGETDIR=pa
+ 	;;
++  hppa-*-openbsd*)
++	TARGET=PA_LINUX; TARGETDIR=pa
++	;;
+   hppa*64-*-hpux*)
+ 	TARGET=PA64_HPUX; TARGETDIR=pa
+ 	;;
+@@ -11346,7 +11349,7 @@ case "$host" in
  	TARGET=PA_HPUX; TARGETDIR=pa
  	;;
  
@@ -82,7 +92,7 @@ $OpenBSD$
  	TARGET=X86_FREEBSD; TARGETDIR=x86
  	;;
    i?86-win32* | i?86-*-cygwin* | i?86-*-mingw* | i?86-*-os2*)
-@@ -11410,6 +11410,9 @@ case "$host" in
+@@ -11410,6 +11413,9 @@ case "$host" in
   powerpc64-*-freebsd*)
  	TARGET=POWERPC; TARGETDIR=powerpc
  	;;
@@ -92,7 +102,7 @@ $OpenBSD$
    powerpc*-*-rtems*)
  	TARGET=POWERPC; TARGETDIR=powerpc
  	;;
-@@ -12493,7 +12496,7 @@ $as_echo "#define HAVE_AS_STRING_PSEUDO_OP 1" >>confde
+@@ -12493,7 +12499,7 @@ $as_echo "#define HAVE_AS_STRING_PSEUDO_OP 1" >>confde
  fi
  
  case "$target" in
