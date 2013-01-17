@@ -153,7 +153,7 @@ LIB_DEPENDS-main=x11/gtk+2 \
 WANTLIB-main=	gdk-x11-2.0>=400.14 gtk-x11-2.0>=400.14 \
 		db>=4 xslt>=3 curl>=7 neon>=24 pq>=2 \
 		icuuc>=0 icui18n icule \
-		raptor>=2 rasqal rdf>=0 poppler
+		raptor2>=0 rasqal rdf>=0 poppler
 WANTLIB-main+=	ICE SM X11 Xcomposite Xcursor Xdamage \
 		Xext Xfixes Xi Xinerama Xrandr Xrender atk-1.0 c cairo \
 		crypto expat fontconfig freetype gio-2.0 glib-2.0 \
