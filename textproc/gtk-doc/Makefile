@@ -23,6 +23,7 @@ MODPY_RUNDEP=		No
 MODGNOME_TOOLS= 	yelp
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/build-aux
 
 # only files under tests/ are compiled but not installed
 PKG_ARCH=		*
