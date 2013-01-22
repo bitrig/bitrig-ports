@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/cmd/usynergy/uSynergyUnix.c.orig	Wed Jul 11 10:06:46 2012
++++ src/cmd/usynergy/uSynergyUnix.c	Mon Jan 21 22:34:51 2013
+@@ -27,7 +27,7 @@ freely, subject to the following restrictions:
+ #include "uSynergy.h"
+ 
+ // TODO: implement callbacks.
+-int main(char* argv, int argc) {
++int main(int argc, char** argv) {
+ 	uSynergyContext context;
+ 	uSynergyInit(&context);
+ 	
