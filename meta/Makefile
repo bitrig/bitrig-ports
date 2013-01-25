@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2012/04/26 17:20:59 jasper Exp $
+# $OpenBSD: Makefile,v 1.7 2013/01/25 19:02:57 bentley Exp $
 
      SUBDIR =
      SUBDIR += geda
@@ -7,6 +7,7 @@
      SUBDIR += haskell-platform
      SUBDIR += msp430
      SUBDIR += bitrig-syscomp
+     SUBDIR += mupen64plus
      SUBDIR += xfce
 
 .include <bsd.port.subdir.mk>
