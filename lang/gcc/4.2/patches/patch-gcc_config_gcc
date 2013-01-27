@@ -1,6 +1,5 @@
-$OpenBSD$
 --- gcc/config.gcc.orig	Thu Mar 13 20:11:43 2008
-+++ gcc/config.gcc	Mon Sep 24 21:39:54 2012
++++ gcc/config.gcc	Sun Feb  3 21:37:45 2013
 @@ -543,7 +543,7 @@ case ${target} in
        ;;
    esac
@@ -37,7 +36,18 @@ $OpenBSD$
  	;;
  alpha*-dec-osf[45]*)
  	if test x$stabs = xyes
-@@ -1083,12 +1088,18 @@ i[34567]86-*-openbsd2.*|i[34567]86-*openbsd3.[0123])
+@@ -694,6 +699,10 @@ arm*-*-freebsd*|strongarm*-*-freebsd*)
+ 	tm_file="dbxelf.h elfos.h ${fbsd_tm_file} arm/elf.h arm/aout.h arm/freebsd.h arm/arm.h"
+ 	tmake_file="${tmake_file} arm/t-arm arm/t-strongarm-elf"
+ 	;;
++arm-*-openbsd*)
++	tm_file="dbxelf.h elfos.h arm/elf.h arm/aout.h arm/arm.h openbsd.h openbsd-libpthread.h arm/openbsd.h"
++	tmake_file="${tmake_file} arm/t-arm"
++	;;
+ arm*-*-netbsdelf*)
+ 	tm_file="dbxelf.h elfos.h netbsd.h netbsd-elf.h arm/elf.h arm/aout.h arm/arm.h arm/netbsd-elf.h"
+ 	tmake_file="${tmake_file} arm/t-arm arm/t-netbsd"
+@@ -1083,12 +1092,18 @@ i[34567]86-*-openbsd2.*|i[34567]86-*openbsd3.[0123])
  	# we need collect2 until our bug is fixed...
  	use_collect2=yes
  	;;
@@ -51,14 +61,14 @@ $OpenBSD$
  	;;
 +x86_64-*-openbsd* | x86_64-*-bitrig*)
 +	tm_defines="${tm_defines} PIE_DEFAULT=1"
-+	tm_file="i386/biarch64.h i386/i386.h i386/unix.h i386/att.h dbxelf.h elfos.h openbsd.h openbsd-libpthread.h i386/x86-64.h i386/openbsd64.h"
-+	tm_file="${tm_file} exec-stack.h"
-+	tmake_file="t-libc-ok t-openbsd i386/t-openbsd"
-+	;;
++        tm_file="i386/biarch64.h i386/i386.h i386/unix.h i386/att.h dbxelf.h elfos.h openbsd.h openbsd-libpthread.h i386/x86-64.h i386/openbsd64.h"
++        tm_file="${tm_file} exec-stack.h"
++        tmake_file="t-libc-ok t-openbsd i386/t-openbsd"
++        ;;
  i[34567]86-*-coff*)
  	tm_file="${tm_file} i386/unix.h i386/bsd.h i386/gas.h dbxcoff.h i386/i386-coff.h"
  	use_fixproto=yes
-@@ -1479,7 +1490,7 @@ m68010-*-netbsdelf* | m68k*-*-netbsdelf*)
+@@ -1479,7 +1494,7 @@ m68010-*-netbsdelf* | m68k*-*-netbsdelf*)
  m68k*-*-openbsd*)
  	# needed to unconfuse gdb
  	tm_defines="${tm_defines} OBSD_OLD_GAS TARGET_DEFAULT=(MASK_68020|MASK_68881|MASK_BITFIELD)"
@@ -67,7 +77,7 @@ $OpenBSD$
  	tmake_file="t-libc-ok t-openbsd m68k/t-openbsd"
  	# we need collect2 until our bug is fixed...
  	use_collect2=yes
-@@ -1569,7 +1580,7 @@ mips*-*-linux*)				# Linux MIPS, either endian.
+@@ -1569,7 +1584,7 @@ mips*-*-linux*)				# Linux MIPS, either endian.
  mips*-*-openbsd*)
  	tm_defines="${tm_defines} OBSD_HAS_DECLARE_FUNCTION_NAME OBSD_HAS_DECLARE_OBJECT OBSD_HAS_CORRECT_SPECS"
  	target_cpu_default="MASK_ABICALLS"
@@ -76,7 +86,7 @@ $OpenBSD$
  	case ${target} in
  	mips*el-*-openbsd*)
  	    tm_defines="${tm_defines} TARGET_ENDIAN_DEFAULT=0";;
-@@ -1687,11 +1698,11 @@ pdp11-*-bsd)
+@@ -1687,11 +1702,11 @@ pdp11-*-bsd)
  pdp11-*-*)
  	use_fixproto=yes
  	;;
@@ -93,7 +103,7 @@ $OpenBSD$
  powerpc64-*-linux*)
  	tm_file="${tm_file} dbxelf.h elfos.h svr4.h freebsd-spec.h rs6000/sysv4.h"
  	test x$with_cpu != x || cpu_is_64bit=yes
-@@ -2163,7 +2174,8 @@ sparc-*-netbsdelf*)
+@@ -2163,7 +2178,8 @@ sparc-*-netbsdelf*)
  	extra_options="${extra_options} sparc/long-double-switch.opt"
  	;;
  sparc64-*-openbsd*)
@@ -103,7 +113,7 @@ $OpenBSD$
  	extra_options="${extra_options} sparc/little-endian.opt"
  	gas=yes gnu_ld=yes
  	with_cpu=ultrasparc
-@@ -2408,7 +2420,7 @@ vax-*-netbsd*)
+@@ -2408,7 +2424,7 @@ vax-*-netbsd*)
  	use_collect2=yes
  	;;
  vax-*-openbsd*)
