@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2011/06/15 16:11:25 sthen Exp $
+# $OpenBSD: Makefile,v 1.23 2013/01/29 12:40:05 tobiasu Exp $
 
 COMMENT=	library for arbitrary precision arithmetic
 
