@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/doxygen.pro.in.orig	Thu Jan 31 03:53:52 2013
++++ src/doxygen.pro.in	Thu Jan 31 03:54:23 2013
+@@ -18,7 +18,7 @@ TEMPLATE     =	app.t
+ CONFIG       =	console warn_on $extraopts
+ HEADERS      =	doxygen.h 
+ SOURCES      =	main.cpp 
+-unix:LIBS                  += -L../lib -ldoxygen -ldoxycfg -lqtools -lmd5 -lpthread
++unix:LIBS                  += -L../lib -ldoxygen -ldoxycfg -lqtools -lmd5 -lpthread -L/usr/local/lib
+ win32:INCLUDEPATH          += .
+ win32-mingw:LIBS           += -L../lib -ldoxygen -ldoxycfg -lqtools -lmd5 -lpthread
+ win32-msvc:LIBS            += qtools.lib md5.lib doxygen.lib doxycfg.lib shell32.lib iconv.lib
