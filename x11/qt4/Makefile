@@ -256,9 +256,6 @@ WANTLIB-html =
 RUN_DEPENDS-html =
 PKG_ARCH-html =	*
 
-CC= gcc
-CXX=g++
-
 QT_BASEDIR =	${PREFIX}/lib/qt4
 QT_INCDIR =	${PREFIX}/include/X11/qt4
 QT_EXAMPLES =	${QT_BASEDIR}/examples

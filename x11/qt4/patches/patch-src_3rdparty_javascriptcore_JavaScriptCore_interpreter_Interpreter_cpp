@@ -1,0 +1,14 @@
+$OpenBSD$
+--- src/3rdparty/javascriptcore/JavaScriptCore/interpreter/Interpreter.cpp.orig	Thu Jan 31 04:07:58 2013
++++ src/3rdparty/javascriptcore/JavaScriptCore/interpreter/Interpreter.cpp	Thu Jan 31 04:08:06 2013
+@@ -2493,8 +2493,10 @@ JSValue Interpreter::privateExecute(ExecutionFlag flag
+             vPC += OPCODE_LENGTH(op_get_by_pname);
+             NEXT_INSTRUCTION();
+         }
++	{
+         Identifier propertyName(callFrame, subscript.toString(callFrame));
+         result = baseValue.get(callFrame, propertyName);
++	}
+         CHECK_FOR_EXCEPTION();
+         callFrame->r(dst) = result;
+         vPC += OPCODE_LENGTH(op_get_by_pname);
