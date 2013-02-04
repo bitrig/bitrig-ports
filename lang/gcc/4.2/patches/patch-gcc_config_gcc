@@ -103,7 +103,18 @@
  powerpc64-*-linux*)
  	tm_file="${tm_file} dbxelf.h elfos.h svr4.h freebsd-spec.h rs6000/sysv4.h"
  	test x$with_cpu != x || cpu_is_64bit=yes
-@@ -2163,7 +2178,8 @@ sparc-*-netbsdelf*)
+@@ -2142,6 +2157,10 @@ sh-*-symbianelf* | sh[12346l]*-*-symbianelf* | \
+ 	fi
+ 	use_fixproto=yes
+ 	;;
++sh-*-openbsd*)
++	tm_file="sh/little.h sh/sh.h dbxelf.h elfos.h sh/elf.h openbsd.h openbsd-libpthread.h sh/openbsd.h"
++	tmake_file="${tmake_file} sh/t-sh"
++;;
+ sh-*-rtemscoff*)
+ 	tmake_file="sh/t-sh t-rtems sh/t-rtems"
+ 	tm_file="${tm_file} dbxcoff.h sh/coff.h sh/rtems.h rtems.h"
+@@ -2163,7 +2182,8 @@ sparc-*-netbsdelf*)
  	extra_options="${extra_options} sparc/long-double-switch.opt"
  	;;
  sparc64-*-openbsd*)
@@ -113,7 +124,7 @@
  	extra_options="${extra_options} sparc/little-endian.opt"
  	gas=yes gnu_ld=yes
  	with_cpu=ultrasparc
-@@ -2408,7 +2424,7 @@ vax-*-netbsd*)
+@@ -2408,7 +2428,7 @@ vax-*-netbsd*)
  	use_collect2=yes
  	;;
  vax-*-openbsd*)
