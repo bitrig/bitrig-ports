@@ -1,0 +1,17 @@
+$OpenBSD$
+--- genconfig.sh.orig	Wed Feb  6 11:25:40 2013
++++ genconfig.sh	Wed Feb  6 11:30:17 2013
+@@ -80,6 +80,13 @@ echo "#define UPNP_VERSION	\"$UPNP_VERSION\"" >> ${CON
+ 
+ # OS Specific stuff
+ case $OS_NAME in
++	Bitrig)
++		echo "#define PF_NEWSTYLE" >> ${CONFIGFILE}
++		echo "#define PFRULE_HAS_ONRDOMAIN" >> ${CONFIGFILE}
++		FW=pf
++		echo "#define USE_IFACEWATCHER 1" >> ${CONFIGFILE}
++		OS_URL=http://www.openbsd.org/
++		;;
+ 	OpenBSD)
+ 		MAJORVER=`echo $OS_VERSION | cut -d. -f1`
+ 		MINORVER=`echo $OS_VERSION | cut -d. -f2`
