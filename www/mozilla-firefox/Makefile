@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.225 2013/02/07 18:54:27 landry Exp $
+# $OpenBSD: Makefile,v 1.226 2013/02/07 19:13:49 ajacoutot Exp $
 
 COMMENT =	Mozilla web browser
 BROKEN-sparc64 =	https://bugzilla.mozilla.org/show_bug.cgi?id=577056
@@ -33,8 +33,7 @@ MODULES =	www/mozilla devel/gettext lang/python
 MODPY_RUNDEP =	No
 
 # necessary glue to build with the correct compiler after fx 17
-MODULES +=		gcc4
-MODGCC4_VERSION =	4.6
+MODULES +=		gcc4 lang/clang
 MODGCC4_ARCHS =		i386 powerpc
 MODGCC4_LANGS =		c c++
 MODCLANG_ARCHS =	amd64
