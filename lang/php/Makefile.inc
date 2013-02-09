@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.35 2012/11/30 12:56:02 sthen Exp $
+# $OpenBSD: Makefile.inc,v 1.36 2013/02/09 14:49:51 sthen Exp $
 
 # This port currently only works with archs supporting dynamic loading
 # and has Apache that supports DSO's.
@@ -312,7 +312,7 @@ RUN_DEPENDS-main=	${MODGETTEXT_RUN_DEPENDS} \
 			mail/femail,-chroot
 LIB_DEPENDS-fastcgi=	${LIB_DEPENDS-main}
 
-.if ${FLAVOR:L:Mno_suhosin}
+.if ${FLAVOR:Mno_suhosin}
 SUPDISTFILES=		suhosin-${SUHOSIN_V}.tgz:0 \
 			suhosin-patch-${SUHOSIN_PHPV}-${SUHOSIN_P_V}.patch.gz:0
 .else
@@ -338,7 +338,7 @@ pre-configure:
 		${WRKSRC}/scripts/phpize.in \
 		${WRKSRC}/scripts/php-config.in
 
-.if ${FLAVOR:L:Map2}
+.if ${FLAVOR:Map2}
 MULTI_PACKAGES :=       ${MULTI_PACKAGES:N-fpm:N-fastcgi}
 .endif
 
