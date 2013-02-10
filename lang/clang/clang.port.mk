@@ -30,7 +30,7 @@ _MODCLANG_ARCH_USES = Yes
 _MODCLANG_LINKS =
 .if ${_MODCLANG_ARCH_USES:L} == "yes"
 
-BUILD_DEPENDS += devel/llvm>=${MODCLANG_VERSION}
+BUILD_DEPENDS += bitrig/bitrig-llvm-${MODCLANG_VERSION}
 _MODCLANG_LINKS = clang gcc clang cc
 
 .if ${MODCLANG_LANGS:L:Mc++}
