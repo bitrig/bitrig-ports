@@ -44,6 +44,7 @@ SUBST_VARS +=		MODRUBY_BINREV MODPY_VERSION
 # Never set SEPARATE_BUILD
 CONFIGURE_STYLE =	gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
+MODGNU_CONFIG_GUESS_DIRS+= ${WRKSRC}/libs/icu/icu-49.1
 
 # Don't put ${PREFIX}/include in CPPFLAGS or system icu .h's are picked up
 # TeX Live uses a modified version of icu.

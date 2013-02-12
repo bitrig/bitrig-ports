@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libs/icu/icu-49.1/configure.origy	Tue Feb 12 08:18:04 2013
++++ libs/icu/icu-49.1/configure	Tue Feb 12 08:18:13 2013
+@@ -5082,7 +5082,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
+ 	else
+ 		icu_cv_host_frag=mh-cygwin-msvc
+ 	fi ;;
+-*-*-*bsd*|*-*-dragonfly*) 	icu_cv_host_frag=mh-bsd-gcc ;;
++*-*-*bsd*|*-*-dragonfly*|*-*-bitrig*) 	icu_cv_host_frag=mh-bsd-gcc ;;
+ *-*-aix*)
+ 	if test "$GCC" = yes; then
+ 		icu_cv_host_frag=mh-aix-gcc

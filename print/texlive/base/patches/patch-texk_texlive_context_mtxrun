@@ -1,7 +1,7 @@
 $OpenBSD: patch-texk_texlive_context_mtxrun,v 1.1 2011/11/23 12:00:45 edd Exp $
---- texk/texlive/context/mtxrun.origy	Thu Jun 23 02:35:14 2011
-+++ texk/texlive/context/mtxrun	Mon Jun 11 16:43:15 2012
-@@ -14424,8 +14424,8 @@ runners.applications = {
+--- texk/texlive/context/mtxrun.origy	Fri Jun  8 08:19:55 2012
++++ texk/texlive/context/mtxrun	Tue Feb 12 08:12:23 2013
+@@ -16000,8 +16000,8 @@ runners.applications = {
      ["lua"] = "luatex --luaonly",
      ["luc"] = "luatex --luaonly",
      ["pl"] = "perl",
