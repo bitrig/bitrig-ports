@@ -47,7 +47,7 @@ SHARED_LIBS =	estdc++		14.0 \
 PSEUDO_FLAVORS = no_c++ no_f95 no_objc no_java no_ada no_go full
 FLAVOR ?= 
 
-ONLY_FOR_ARCHS-ada = i386 amd64 sparc64
+ONLY_FOR_ARCHS-ada = i386 sparc64
 ONLY_FOR_ARCHS-java = amd64 i386 sparc64
 NOT_FOR_ARCHS-go = alpha hppa mips64el
 
