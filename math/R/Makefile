@@ -85,7 +85,8 @@ CONFIGURE_ARGS= ${CONFIGURE_SHARED} \
 
 CONFIGURE_ENV=	FFLAGS="${FFLAGS}" \
 		LDFLAGS="-L${PREFIX}/lib -Wl,-R${PREFIX}/lib/R/lib" \
-		ac_cv_path_TAR="${LOCALBASE}/bin/gtar"
+		ac_cv_path_TAR="${LOCALBASE}/bin/gtar" \
+		r_cv_mktime_errno=yes
 
 MAKE_FLAGS=	INSTALL_DATA='install -c -m 644' \
 		INSTALL_PROGRAM='install -c -s -m 555' \
