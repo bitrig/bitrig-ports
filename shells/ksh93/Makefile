@@ -33,13 +33,7 @@ MAKE_ENV =		CC="${CC}" CCFLAGS="${CFLAGS}" SHELL=/bin/sh \
 USE_GROFF =		Yes
 
 WRKDIST =		${WRKDIR}
-.if ${MACHINE_ARCH} == "hppa"
-AST_ARCH =		${WRKSRC}/arch/openbsd.pa
-.elif ${MACHINE_ARCH} == "powerpc"
-AST_ARCH =		${WRKSRC}/arch/openbsd.ppc
-.else
-AST_ARCH =		${WRKSRC}/arch/openbsd.${MACHINE_ARCH}
-.endif
+AST_ARCH =		${WRKSRC}/arch/bitrig.${MACHINE_ARCH}
 AST_INC =		${AST_ARCH}/include/ast
 
 do-build:
