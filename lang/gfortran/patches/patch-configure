@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.1.1.1 2010/10/10 17:39:06 steven Exp $
 --- configure.orig	Thu Jun 21 01:07:21 2007
-+++ configure	Sun Jun 20 18:18:43 2010
++++ configure	Sun Feb 24 21:30:55 2013
 @@ -904,14 +904,14 @@ extra_host_args=
  # these library is used by various programs built for the build
  # environment
@@ -27,11 +27,20 @@ $OpenBSD: patch-configure,v 1.1.1.1 2010/10/10 17:39:06 steven Exp $
  		target-libgloss \
  		target-newlib \
  		target-libstdc++-v3 \
+@@ -1191,7 +1191,7 @@ if test x$enable_libgomp = x ; then
+     case "${target}" in
+     *-*-linux* | *-*-gnu* | *-*-k*bsd*-gnu)
+ 	;;
+-    *-*-netbsd* | *-*-freebsd* | *-*-openbsd*)
++    *-*-netbsd* | *-*-freebsd* | *-*-openbsd* | *-*-bitrig*)
+ 	;;
+     *-*-solaris2* | *-*-sysv4* | *-*-irix6* | *-*-osf* | *-*-hpux11*)
+ 	;;
 @@ -1243,6 +1243,8 @@ case "${target}" in
      skipdirs="$skipdirs zlib fastjar target-libjava target-boehm-gc target-zlib"
      noconfigdirs="$noconfigdirs target-libgloss"
      ;;
-+  *-*-openbsd*)
++  *-*-openbsd* | *-*-bitrig*)
 +    ;;
    *-*-netbsd*)
      # Skip some stuff on all NetBSD configurations.
