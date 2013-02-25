@@ -27,7 +27,7 @@ MODULES =	converters/libiconv
 WANTLIB +=	c crypto pthread z
 
 PREFIX =	/var/www
-MAKE_FLAGS +=	V=1 NEEDS_LIBICONV=1 LDFLAGS+='-static -L${LOCALBASE}/lib'
+MAKE_FLAGS +=	CC=clang V=1 NEEDS_LIBICONV=1 LDFLAGS+='-static -L${LOCALBASE}/lib'
 
 post-extract:
 	rmdir ${WRKSRC}/git
