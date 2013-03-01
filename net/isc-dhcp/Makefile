@@ -37,8 +37,8 @@ USE_GROFF=		Yes
 USE_GMAKE=		Yes
 CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/ \
-				${WRKSRC}/bind/bind-9.8.3/ \
-				${WRKSRC}/bind/bind-9.8.3/unit/atf-src/
+				${WRKSRC}/bind/bind-9.8.3-P3/ \
+				${WRKSRC}/bind/bind-9.8.3-P3/unit/atf-src/
 
 CONFIGURE_ARGS+= 	--enable-early-chroot \
 			--enable-paranoia \
