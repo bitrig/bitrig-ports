@@ -1,0 +1,12 @@
+$OpenBSD$
+--- plugins/video/H.264/shared/h264frame.cxx.orig	Sat Mar  2 18:45:40 2013
++++ plugins/video/H.264/shared/h264frame.cxx	Sat Mar  2 18:46:16 2013
+@@ -464,7 +464,7 @@ bool H264Frame::IsStartCode (const uint8_t *positionIn
+ }
+ 
+ 
+-void H264Frame::AddDataToEncodedFrame(const uint8_t * data, size_t len)
++void H264Frame::AddDataToEncodedFrame(const uint8_t * data, __gnu_cxx::size_t len)
+ {
+   if (m_encodedFrameLen+len >= m_encodedFrame.size())
+     m_encodedFrame.resize(m_encodedFrame.size()+len+1000);

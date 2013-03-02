@@ -1,0 +1,41 @@
+$OpenBSD$
+--- plugins/video/H.264/shared/h264frame.h.orig	Sat Mar  2 18:47:46 2013
++++ plugins/video/H.264/shared/h264frame.h	Sat Mar  2 18:48:09 2013
+@@ -67,7 +67,7 @@ class H264Frame (public)
+ 
+   void AddNALU(uint8_t type, uint32_t length, const uint8_t * payload);
+ 
+-  void SetMaxPayloadSize(size_t maxPayloadSize) 
++  void SetMaxPayloadSize(__gnu_cxx::size_t maxPayloadSize) 
+   {
+     m_maxPayloadSize = maxPayloadSize;
+   }
+@@ -115,7 +115,7 @@ class H264Frame (public)
+   void SetSPS(const uint8_t * payload);
+ 
+   void AddDataToEncodedFrame(uint8_t one) { AddDataToEncodedFrame(&one, 1); }
+-  void AddDataToEncodedFrame(const uint8_t * data, size_t len);
++  void AddDataToEncodedFrame(const uint8_t * data, __gnu_cxx::size_t len);
+ 
+     // general stuff
+   unsigned m_profile;
+@@ -125,7 +125,7 @@ class H264Frame (public)
+   bool     m_constraint_set2;
+   bool     m_constraint_set3;
+   uint32_t m_timestamp;
+-  size_t   m_maxPayloadSize;
++  __gnu_cxx::size_t   m_maxPayloadSize;
+   std::vector<uint8_t> m_encodedFrame;
+   uint32_t m_encodedFrameLen;
+ 
+@@ -137,8 +137,8 @@ class H264Frame (public)
+   };
+ 
+   std::vector<NALU> m_NALs;
+-  size_t m_numberOfNALsInFrame;
+-  size_t m_currentNAL; 
++  __gnu_cxx::size_t m_numberOfNALsInFrame;
++  __gnu_cxx::size_t m_currentNAL; 
+   
+   // for encapsulation
+   uint32_t m_currentNALFURemainingLen;
