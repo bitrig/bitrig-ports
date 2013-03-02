@@ -1,0 +1,12 @@
+$OpenBSD$
+--- include/pqxx/largeobject.hxx.orig	Sat Mar  2 20:32:27 2013
++++ include/pqxx/largeobject.hxx	Sat Mar  2 20:32:46 2013
+@@ -419,7 +419,7 @@ template<typename CHAR=char, typename TRAITS=PGSTD::ch
+     if (!this->gptr()) return EoF();
+     char *const eb = this->eback();
+     const int res = AdjustEOF(m_Obj.cread(this->eback(), m_BufSize));
+-    setg(eb, eb, eb + ((res==EoF()) ? 0 : res));
++    std::streambuf::setg(eb, eb, eb + ((res==EoF()) ? 0 : res));
+     return (!res || (res == EoF())) ? EoF() : *eb;
+   }
+ 

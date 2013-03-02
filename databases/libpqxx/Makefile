@@ -26,6 +26,7 @@ USE_LIBTOOL=	Yes
 
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	${CONFIGURE_SHARED}
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
 
 # Regression tests connect to real database
 NO_REGRESS=	Yes
