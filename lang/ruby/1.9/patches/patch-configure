@@ -5,10 +5,32 @@ Fix so name.
 Override the arch setting to remove OpenBSD version from it,
 so ports don't have to be bumped when OpenBSD version changes.
 
---- configure.orig	Wed Feb  6 05:17:31 2013
-+++ configure	Wed Feb  6 10:51:17 2013
-@@ -16795,7 +16795,7 @@ _ACEOF
-   openbsd*) :
+--- configure.orig	Fri Feb 22 04:44:43 2013
++++ configure	Fri Mar  8 00:58:31 2013
+@@ -15784,7 +15784,7 @@ done
+     MAINLIBS="-pthread $MAINLIBS" ;; #(
+   *) :
+     case "$target_os" in #(
+-  openbsd*) :
++  opebsd* | bitrig*) :
+     LIBS="-pthread $LIBS" ;; #(
+   *) :
+     LIBS="-l$pthread_lib $LIBS" ;;
+@@ -16246,7 +16246,7 @@ esac ;; #(
+ 			  test "$GCC" = yes && test "$rb_cv_prog_gnu_ld" = yes || LDSHARED="ld -Bshareable"
+ 			fi
+ 			rb_cv_dlopen=yes ;; #(
+-  openbsd*) :
++  opebsd* | bitrig*) :
+     	: ${LDSHARED='$(CC) -shared ${CCDLFLAGS}'}
+ 			if test "$rb_cv_binary_elf" = yes; then
+ 			    LDFLAGS="$LDFLAGS -Wl,-E"
+@@ -16792,10 +16792,10 @@ _ACEOF
+ 	   LIBRUBY_ALIASES=""
+ 	fi
+ 	 ;; #(
+-  openbsd*) :
++  opebsd* | bitrig*) :
  
  	SOLIBS='$(LIBS)'
 -	LIBRUBY_SO='lib$(RUBY_SO_NAME).so.$(MAJOR).'`expr ${MINOR} \* 10 + ${TEENY}`
@@ -16,13 +38,14 @@ so ports don't have to be bumped when OpenBSD version changes.
  	 ;; #(
    solaris*) :
  
-@@ -17625,7 +17625,10 @@ _ACEOF
+@@ -17625,7 +17625,11 @@ _ACEOF
  _ACEOF
  
  else
 -    arch="${target_cpu}-${target_os}"
 +    case "$target_os" in
-+      openbsd*) arch="$target_cpu-openbsd" ;;
++      opebsd*) arch="$target_cpu-openbsd" ;;
++      bitrig*) arch="$target_cpu-bitrig" ;;
 +      *) arch="${target_cpu}-${target_os}" ;;
 +    esac
      cat >>confdefs.h <<_ACEOF

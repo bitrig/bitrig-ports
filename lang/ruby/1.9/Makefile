@@ -34,6 +34,8 @@ CONFIGURE_ENV =		LIBruby19_VERSION=${LIBruby19_VERSION} \
 			ac_cv_prog_DOXYGEN="" \
 			ac_cv_prog_DOT=""
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/tool
+
 ALL_TARGET =		V=1 main
 INSTALL_TARGET =	V=1 install-nodoc
 
