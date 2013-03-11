@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/03/03 22:37:07 sthen Exp $
+# $OpenBSD: Makefile,v 1.4 2013/03/11 11:35:44 espie Exp $
 
 COMMENT=	lightweight DLNA/UPnP-AV media server
 
@@ -16,9 +16,6 @@ HOMEPAGE=	http://sourceforge.net/projects/minidlna/
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB += FLAC avcodec avformat avutil c exif id3tag jpeg ogg
 WANTLIB += pthread sqlite3 vorbis
@@ -34,7 +31,7 @@ LIB_DEPENDS=	audio/flac \
 
 MAKE_FLAGS=	CC="${CC}" INSTALLPREFIX="${WRKINST}${TRUEPREFIX}"
 
-NO_REGRESS=	Yes
+NO_TEST=	Yes
 E=		${PREFIX}/share/examples/minidlna
 
 do-configure:
