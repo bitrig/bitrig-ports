@@ -22,6 +22,7 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/build-aux
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
 			--disable-gtk-doc \
 			--disable-systemd \
@@ -43,7 +44,7 @@ CONFIGURE_ENV +=ac_cv_path_GTKDOC_CHECK="" \
 FAKE_FLAGS =	sysconfdir=${PREFIX}/share/examples/upower
 
 USE_GMAKE =	Yes
-USE_LIBTOOL =	Yes
+USE_LIBTOOL =	gnu
 
 MODULES =	textproc/intltool
 
