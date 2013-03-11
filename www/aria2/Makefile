@@ -24,6 +24,8 @@ REGRESS_DEPENDS +=	devel/cppunit
 WANTLIB += c cares crypto expat m sqlite3 ssl stdc++ z
 
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} \
+				${WRKSRC}/deps/wslay
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
