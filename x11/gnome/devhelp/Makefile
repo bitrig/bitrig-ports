@@ -40,6 +40,8 @@ BUILD_DEPENDS=	x11/gnome/doc-utils
 LIB_DEPENDS=	multimedia/gstreamer-0.10/plugins-base \
 		www/webkit,gtk3
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/build-aux
+
 # for convenience
 RUN_DEPENDS +=	x11/gnome/devel-docs
 
