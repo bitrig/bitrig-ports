@@ -1,14 +1,14 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/11 11:20:27 espie Exp $
+# $OpenBSD: Makefile,v 1.22 2013/03/13 21:23:49 miod Exp $
 
 .include <bsd.own.mk>
 
 NOT_FOR_ARCHS =		${GCC2_ARCHS}
 
-V =			3.3.5
+V =			3.3.6
 PKGNAME =		g77-$V
-REVISION =		7
-EPOCH =			0
-DISTFILES = 		g77-openbsd.tgz
+REVISION =		1
+EPOCH =			1
+DISTFILES = 		g77-openbsd-3.3.6.tgz
 
 .if ${MACHINE_ARCH:Mamd64}
 CONFIG_A = 		x86_64-unknown-bitrig${OSREV}
@@ -19,6 +19,13 @@ CONFIG_A = 		${MACHINE_ARCH}-unknown-bitrig${OSREV}
 CONFIG_B =		${MACHINE_ARCH}-unknown-bitrig${OSREV}
 
 SUBST_VARS += 		CONFIG_A CONFIG_B V
+LIBDIR =		${PREFIX}/lib/gcc-lib/${CONFIG}/$V
+
+.if ${MACHINE_ARCH} == "m68k" || ${MACHINE_ARCH} == "m88k"
+PKG_ARGS += -DPIC=1
+.else
+PKG_ARGS += -DPIC=0
+.endif
 
 COMMENT =		GNU fortran 77 compiler
 CATEGORIES =		lang math
@@ -39,7 +46,6 @@ LIBIBERTY_INCLUDES =	${WRKDIST}/libiberty/include
 GNUCFLAGS =		${CFLAGS} ${COPTS} -DOPENBSD_NATIVE \
 			-I${LIBIBERTY_INCLUDES}
 
-VAXHOST_CFLAGS =	-DIN_GCC -DOPENBSD_NATIVE -DHAVE_CONFIG_H -O0
 CONFIGURE_STYLE = 	gnu
 
 MAKE_FLAGS = 		CFLAGS="${GNUCFLAGS}" \
@@ -74,6 +80,12 @@ INSTALL_TARGET = 	install-common f77.install-info f77.install-normal
 post-install:
 	ln -sf /usr/lib/gcc/${CONFIG_A}/${SYSV}/libgcc.a ${PREFIX}/lib/gcc-lib/${CONFIG_B}/$V/libgcc.a
 	ln -s /usr/lib/gcc/${CONFIG_A}/${SYSV}/cc1 ${PREFIX}/lib/gcc-lib/${CONFIG_B}/$V/cc1
+.if ${MACHINE_ARCH} == "m68k" || ${MACHINE_ARCH} == "m88k"
+	mkdir ${LIBDIR}/fpic
+	ln -sf ${SYSLIBPATH}/fpic/libgcc.a ${LIBDIR}/fpic/libgcc.a
+	mkdir ${LIBDIR}/fPIC
+	ln -sf ${SYSLIBPATH}/fPIC/libgcc.a ${LIBDIR}/fPIC/libgcc.a
+.endif
 	${INSTALL_MAN} ${WRKBUILD}/f/g77.1 ${PREFIX}/man/man1/g77.1
 	cd ${PREFIX}/man/man1 && ln -f g77.1 f77.1
 	cd ${PREFIX}/bin && ln -f g77 f77
