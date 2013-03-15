@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:35:44 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2013/03/15 17:15:24 sthen Exp $
 
 COMMENT=	lightweight DLNA/UPnP-AV media server
 
 V=		1.0.25
-REVISION=	1
+REVISION=	2
 DISTNAME=	minidlna_$V_src
 WRKDIST=	${WRKDIR}/minidlna-$V
 PKGNAME=	minidlna-$V
@@ -29,7 +29,11 @@ LIB_DEPENDS=	audio/flac \
 		graphics/jpeg \
 		graphics/libexif
 
-MAKE_FLAGS=	CC="${CC}" INSTALLPREFIX="${WRKINST}${TRUEPREFIX}"
+MAKE_FLAGS=	CC="${CC}" CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}" \
+		INSTALLPREFIX="${WRKINST}${TRUEPREFIX}"
+CFLAGS+=	-Wall -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 \
+		-I${LOCALBASE}/include
+LDFLAGS=	-L${LOCALBASE}/lib
 
 NO_TEST=	Yes
 E=		${PREFIX}/share/examples/minidlna
