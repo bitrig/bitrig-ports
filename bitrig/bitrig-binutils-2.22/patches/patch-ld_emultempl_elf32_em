@@ -1,6 +1,6 @@
 $OpenBSD$
 --- ld/emultempl/elf32.em.orig	Mon Nov 21 04:29:39 2011
-+++ ld/emultempl/elf32.em	Sun Aug 12 23:48:21 2012
++++ ld/emultempl/elf32.em	Sun Mar 17 13:35:44 2013
 @@ -82,6 +82,235 @@ EOF
    esac
  fi
@@ -263,7 +263,82 @@ $OpenBSD$
    needed.name = n->name;
  
    len = strlen (name);
-@@ -1626,6 +1874,20 @@ gld${EMULATION_NAME}_open_dynamic_archive
+@@ -619,7 +867,65 @@ gld${EMULATION_NAME}_check_ld_elf_hints (const char *n
+ EOF
+     # FreeBSD
+     ;;
++    *-*-openbsd* | *-*-bitrig*)
++      fragment <<EOF
++/* Read the system search path the OpenBSD way. */
++#include <link.h>
+ 
++static bfd_boolean
++gld${EMULATION_NAME}_check_ld_elf_hints (const char *name, int force)
++{
++  static bfd_boolean initialized;
++  static char *ld_elf_hints;
++  struct dt_needed needed;
++
++  if (!initialized)
++    {
++      FILE *f;
++      char *tmppath;
++
++      tmppath = concat (ld_sysroot, _PATH_LD_HINTS, (const char *) NULL);
++      f = fopen (tmppath, FOPEN_RB);
++      free (tmppath);
++      if (f != NULL)
++	{
++	  struct hints_header hdr;
++
++	  if (fread (&hdr, 1, sizeof (hdr), f) == sizeof (hdr)
++	      && hdr.hh_magic == HH_MAGIC
++	      && hdr.hh_version == LD_HINTS_VERSION_2)
++	    {
++	      if (fseek (f, hdr.hh_strtab + hdr.hh_dirlist, SEEK_SET) != -1)
++		{
++		  char *b;
++		  uint dirmaxlen = hdr.hh_strtab_sz - hdr.hh_dirlist;
++
++		  b = xmalloc (dirmaxlen + 1);
++		  if (fread (b, 1, dirmaxlen, f) ==
++		      dirmaxlen)
++		    ld_elf_hints = gld${EMULATION_NAME}_add_sysroot (b);
++
++		  free (b);
++		}
++	    }
++	  fclose (f);
++	}
++
++      initialized = TRUE;
++    }
++
++  if (ld_elf_hints == NULL)
++    return FALSE;
++
++  needed.by = NULL;
++  needed.name = name;
++  return gld${EMULATION_NAME}_search_needed (ld_elf_hints, & needed,
++					     force);
++}
++EOF
++    # OpenBSD
++    ;;
++
+     *-*-linux-* | *-*-k*bsd*-*)
+       fragment <<EOF
+ /* For a native linker, check the file /etc/ld.so.conf for directories
+@@ -1302,7 +1608,7 @@ EOF
+ fi
+ if [ "x${USE_LIBPATH}" = xyes ] ; then
+   case ${target} in
+-    *-*-freebsd* | *-*-dragonfly*)
++    *-*-freebsd* | *-*-dragonfly* | *-*-openbsd* | *-*-bitrig*)
+       fragment <<EOF
+ 	  if (gld${EMULATION_NAME}_check_ld_elf_hints (l->name, force))
+ 	    break;
+@@ -1626,6 +1932,20 @@ gld${EMULATION_NAME}_open_dynamic_archive
  
    filename = entry->filename;
  
@@ -284,7 +359,7 @@ $OpenBSD$
    /* This allocates a few bytes too many when EXTRA_SHLIB_EXTENSION
       is defined, but it does not seem worth the headache to optimize
       away those two bytes of space.  */
-@@ -1639,6 +1901,11 @@ gld${EMULATION_NAME}_open_dynamic_archive
+@@ -1639,6 +1959,11 @@ gld${EMULATION_NAME}_open_dynamic_archive
  
    sprintf (string, "%s/lib%s%s.so", search->name, filename, arch);
  
@@ -296,7 +371,7 @@ $OpenBSD$
  #ifdef EXTRA_SHLIB_EXTENSION
    /* Try the .so extension first.  If that fails build a new filename
       using EXTRA_SHLIB_EXTENSION.  */
-@@ -2008,9 +2275,13 @@ echo '  ; else if (link_info.pie && link_info.combrelo
+@@ -2008,9 +2333,13 @@ echo '  ; else if (link_info.pie && link_info.combrelo
  echo '             && link_info.relro' >> e${EMULATION_NAME}.c
  echo '             && (link_info.flags & DF_BIND_NOW)) return' >> e${EMULATION_NAME}.c
  sed $sc ldscripts/${EMULATION_NAME}.xdw			>> e${EMULATION_NAME}.c
@@ -310,7 +385,7 @@ $OpenBSD$
  echo '  ; else if (link_info.pie) return'		>> e${EMULATION_NAME}.c
  sed $sc ldscripts/${EMULATION_NAME}.xd			>> e${EMULATION_NAME}.c
  fi
-@@ -2064,11 +2335,16 @@ fragment <<EOF
+@@ -2064,11 +2393,16 @@ fragment <<EOF
    else if (link_info.pie && link_info.combreloc
  	   && link_info.relro && (link_info.flags & DF_BIND_NOW))
      return "ldscripts/${EMULATION_NAME}.xdw";
@@ -327,7 +402,7 @@ $OpenBSD$
    else if (link_info.pie)
      return "ldscripts/${EMULATION_NAME}.xd";
  EOF
-@@ -2088,6 +2364,10 @@ fragment <<EOF
+@@ -2088,6 +2422,10 @@ fragment <<EOF
      return "ldscripts/${EMULATION_NAME}.xs";
  EOF
  fi
