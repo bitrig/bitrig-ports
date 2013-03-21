@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.78 2013/03/11 11:44:50 espie Exp $
+# $OpenBSD: Makefile,v 1.79 2013/03/21 08:48:55 ajacoutot Exp $
 
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
@@ -23,7 +23,6 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 VMEM_WARNING =	Yes
 
-USE_LIBTOOL =	gnu
 USE_GMAKE =	Yes
 
 MODULES =	devel/gettext \

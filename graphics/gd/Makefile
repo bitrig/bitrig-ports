@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.57 2013/03/11 11:10:52 espie Exp $
+# $OpenBSD: Makefile,v 1.58 2013/03/21 08:45:18 ajacoutot Exp $
 
 COMMENT=	library for dynamic creation of images
 
@@ -23,7 +23,6 @@ CONFIGURE_STYLE= gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/config
 CONFIGURE_ARGS+= --without-xpm
 
-USE_LIBTOOL=	Yes
 
 post-patch:
 	@cd ${WRKSRC} && touch Makefile.in aclocal.m4 config.hin configure

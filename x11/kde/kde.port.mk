@@ -1,4 +1,4 @@
-# $OpenBSD: kde.port.mk,v 1.38 2013/02/09 14:49:53 sthen Exp $
+# $OpenBSD: kde.port.mk,v 1.39 2013/03/21 08:48:56 ajacoutot Exp $
 
 SHARED_ONLY ?=	Yes
 

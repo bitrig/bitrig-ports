@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/03/11 11:41:25 espie Exp $
+# $OpenBSD: Makefile,v 1.15 2013/03/21 08:48:53 ajacoutot Exp $
 
 COMMENT=	error codes for GnuPG related software
 
@@ -21,9 +21,6 @@ MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/libgpg-error/ \
 EXTRACT_SUFX=	.tar.bz2
 
 MODULES=	devel/gettext
-
-USE_LIBTOOL=	gnu
-USE_GMAKE=	Yes
 
 SEPARATE_BUILD=	Yes
 

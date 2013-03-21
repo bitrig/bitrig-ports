@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/03/11 10:50:10 espie Exp $
+# $OpenBSD: Makefile,v 1.17 2013/03/21 08:45:16 ajacoutot Exp $
 
 ONLY_FOR_ARCHS = 	alpha amd64 arm i386 hppa m68k m88k mips64 mips64el powerpc sparc64 sparc sh vax
 
