@@ -14,10 +14,7 @@ HOMEPAGE=	http://www.gnu.org/software/gdb/
 MAINTAINER=	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2 and GPLv3
-PERMIT_PACKAGE_FTP=	Yes
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_GNU:=gdb/}
 DIST_SUBDIR=	gdb

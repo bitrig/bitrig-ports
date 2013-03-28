@@ -13,9 +13,6 @@ HOMEPAGE=	http://sourceforge.net/apps/trac/elftoolchain/
 MAINTAINER =	Marco Peereboom <marco@bitrig.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 #MASTER_SITES = https://www.bitrig.org/pub/distfiles/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=elftoolchain/}
