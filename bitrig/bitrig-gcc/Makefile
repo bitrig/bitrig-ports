@@ -59,7 +59,7 @@ USE_LIBTOOL =	gnu
 
 BUILD_DEPENDS +=	devel/bison
 
-REGRESS_DEPENDS = 	devel/dejagnu \
+TEST_DEPENDS = 	devel/dejagnu \
 			devel/autogen
 
 MASTER_SITES =	${MASTER_SITE_GCC:=releases/gcc-$(FULL_VERSION)/}
@@ -70,7 +70,7 @@ MASTER_SITES1 =	ftp://sources.redhat.com/pub/java/
 LANGS = c
 .if ${BUILD_PACKAGES:M-gcclibs}
 LANGS := ${LANGS},c++
-REGRESS_DEPENDS += 	${BUILD_PKGPATH},-gcclibs>=4.6,<4.7
+TEST_DEPENDS += 	${BUILD_PKGPATH},-gcclibs>=4.6,<4.7
 .endif
 
 CONFIGURE_STYLE =		gnu

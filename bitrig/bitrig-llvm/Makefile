@@ -39,14 +39,14 @@ post-extract:
 MODULES =	devel/cmake \
 		lang/python
 
-REGRESS_DEPENDS = devel/dejagnu
+TEST_DEPENDS = devel/dejagnu
 BUILD_DEPENDS += textproc/py-docutils
 
 MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
 		VERBOSE=Yes \
 		INSTALL="install -c"
 
-REGRESS_FLAGS =	RUNTESTFLAGS=
+TEST_FLAGS =	RUNTESTFLAGS=
 
 SEPARATE_BUILD =	Yes
 USE_LIBTOOL =		Yes

@@ -19,7 +19,7 @@ WANTLIB =		c kvm m ncurses
 
 MASTER_SITES=	https://www.bitrig.org/pub/distfiles/
 
-NO_REGRESS=	Yes
+NO_TEST=	Yes
 
 PREFIX = 	/usr
 INSTDIR =	${PREFIX}
