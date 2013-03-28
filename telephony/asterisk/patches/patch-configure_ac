@@ -1,7 +1,7 @@
-$OpenBSD: patch-configure_ac,v 1.27 2012/12/11 14:46:41 sthen Exp $
---- configure.ac.orig	Thu Oct 18 21:53:08 2012
-+++ configure.ac	Wed Dec 12 19:45:03 2012
-@@ -59,7 +59,7 @@ AC_SUBST([astvarrundir],      ['${localstatedir}/run/a
+$OpenBSD: patch-configure_ac,v 1.28 2013/03/28 20:24:53 sthen Exp $
+--- configure.ac.orig	Wed Jan 30 18:46:52 2013
++++ configure.ac	Sat Mar 30 13:47:18 2013
+@@ -60,7 +60,7 @@ AC_SUBST([astvarrundir],      ['${localstatedir}/run/a
  
  case "${host_os}" in
       *bsd*)
@@ -10,7 +10,7 @@ $OpenBSD: patch-configure_ac,v 1.27 2012/12/11 14:46:41 sthen Exp $
          astvarlibdir='${prefix}/share/asterisk'
          astdbdir='${localstatedir}/db/asterisk'
       fi
-@@ -77,7 +77,7 @@ case "${host_os}" in
+@@ -78,7 +78,7 @@ case "${host_os}" in
       CPPFLAGS=-I/usr/local/include
       LDFLAGS=-L/usr/local/lib
       ;;
@@ -19,7 +19,7 @@ $OpenBSD: patch-configure_ac,v 1.27 2012/12/11 14:46:41 sthen Exp $
       ac_default_prefix=/usr/local
       if test ${prefix} = '/usr/local' || test ${prefix} = 'NONE'; then
          if test ${sysconfdir} = '${prefix}/etc'; then
-@@ -162,7 +162,7 @@ case "${host_os}" in
+@@ -164,7 +164,7 @@ case "${host_os}" in
       netbsd*)
       OSARCH=NetBSD
       ;;
@@ -28,7 +28,7 @@ $OpenBSD: patch-configure_ac,v 1.27 2012/12/11 14:46:41 sthen Exp $
       OSARCH=OpenBSD
       ;;
       solaris*)
-@@ -1618,7 +1618,7 @@ if test "${USE_IMAP_TK}" != "no"; then
+@@ -1733,7 +1733,7 @@ if test "${USE_IMAP_TK}" != "no"; then
  			)
  		else #looking in imap directory didn't work, try c-client
  			imap_ldflags=""
@@ -37,12 +37,12 @@ $OpenBSD: patch-configure_ac,v 1.27 2012/12/11 14:46:41 sthen Exp $
  			imap_include="-DUSE_SYSTEM_CCLIENT"
  			CPPFLAGS="${saved_cppflags}"
  			LIBS="${saved_libs}"
-@@ -1804,7 +1804,7 @@ AST_EXT_TOOL_CHECK([NETSNMP], [net-snmp-config], , [--
+@@ -1919,7 +1919,7 @@ AST_EXT_TOOL_CHECK([NETSNMP], [net-snmp-config], , [--
  
  AST_EXT_LIB_CHECK([NEWT], [newt], [newtBell], [newt.h])
  
 -AST_EXT_LIB_CHECK([UNIXODBC], [odbc], [SQLConnect], [sql.h], [])
-+AST_EXT_LIB_CHECK([UNIXODBC], [iodbc], [SQLConnect], [sql.h], [-pthread])
++AST_EXT_LIB_CHECK([UNIXODBC], [iodbc], [SQLConnect], [sql.h], [-lpthread])
  
  AST_EXT_LIB_CHECK([OGG], [ogg], [ogg_sync_init], [])
  
