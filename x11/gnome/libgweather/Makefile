@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2013/03/29 10:45:59 jasper Exp $
+# $OpenBSD: Makefile,v 1.43 2013/03/29 11:00:06 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -33,7 +33,6 @@ MODULES=		devel/gettext \
 # base gcc and remove use of the gcc4 module.
 MODULES+= 	gcc4
 MODGCC4_ARCHS = *
-#MODGCC4_LANGS=	c
 
 USE_LIBTOOL=		gnu
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/build-aux
