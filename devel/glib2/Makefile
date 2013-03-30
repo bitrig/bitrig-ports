@@ -44,7 +44,8 @@ TEST_DEPENDS=		devel/desktop-file-utils \
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		--enable-static \
 			--with-pcre=system \
-			--disable-fam --disable-maintainer-mode
+			--disable-fam --disable-maintainer-mode \
+			CFLAGS=-Wno-format-nonliteral
 
 pre-configure:
 	perl -pi -e "s,/usr/local,${LOCALBASE},g;" \
