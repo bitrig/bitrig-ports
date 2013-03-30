@@ -1,6 +1,6 @@
 $OpenBSD$
---- menuselect/mxml/configure.in.orig	Sat Jun  9 10:54:12 2012
-+++ menuselect/mxml/configure.in	Sat Jun  9 10:54:32 2012
+--- menuselect/mxml/configure.in.orig	Sat Mar 30 15:03:55 2013
++++ menuselect/mxml/configure.in	Sat Mar 30 15:04:45 2013
 @@ -87,7 +87,7 @@ fi
  
  dnl Flags for "ar" command...
@@ -15,7 +15,7 @@ $OpenBSD$
  			;;
  
 -		*BSD*)
-+		*BSD | Bitrig*)
++		*BSD* | Bitrig*)
  			AC_MSG_RESULT(yes)
  			LIBMXML="libmxml.so.1.4"
  			DSO="\$(CC)"

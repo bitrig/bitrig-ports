@@ -1,6 +1,6 @@
 $OpenBSD$
---- menuselect/configure.ac.orig	Mon Dec 19 15:31:04 2011
-+++ menuselect/configure.ac	Mon Jun 11 10:12:24 2012
+--- menuselect/configure.ac.orig	Sat Mar 30 15:02:28 2013
++++ menuselect/configure.ac	Sat Mar 30 15:03:09 2013
 @@ -31,7 +31,7 @@ case "${host_os}" in
       netbsd*)
       OSARCH=NetBSD

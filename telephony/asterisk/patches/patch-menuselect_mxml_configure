@@ -1,6 +1,6 @@
 $OpenBSD$
---- menuselect/mxml/configure.orig	Sat Jun  9 11:16:28 2012
-+++ menuselect/mxml/configure	Sat Jun  9 11:16:53 2012
+--- menuselect/mxml/configure.orig	Sat Mar 30 14:42:59 2013
++++ menuselect/mxml/configure	Sat Mar 30 14:43:48 2013
 @@ -3677,7 +3677,7 @@ if test -z $AR ; then
  fi
  

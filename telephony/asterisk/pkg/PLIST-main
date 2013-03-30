@@ -248,7 +248,6 @@ lib/asterisk/modules/chan_agent.so
 lib/asterisk/modules/chan_bridge.so
 lib/asterisk/modules/chan_iax2.so
 lib/asterisk/modules/chan_local.so
-lib/asterisk/modules/chan_mgcp.so
 lib/asterisk/modules/chan_motif.so
 lib/asterisk/modules/chan_multicast_rtp.so
 lib/asterisk/modules/chan_sip.so

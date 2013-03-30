@@ -64,8 +64,11 @@ USE_GMAKE=		Yes
 
 CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC} \
+				${WRKSRC}/main/editline \
 				${WRKSRC}/menuselect \
-				${WRKSRC}/res/pjproject
+				${WRKSRC}/res/pjproject \
+				${WRKSRC}/res/pjproject/third_party/portaudio \
+				${WRKSRC}/res/pjproject/third_party/srtp
 AUTOCONF_VERSION=	2.68
 AUTOMAKE_VERSION=	1.10
 BUILD_DEPENDS+=		${MODGNU_AUTOCONF_DEPENDS} \
@@ -79,7 +82,7 @@ CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}" \
 			LDFLAGS="${LDFLAGS}" \
 			LIBS="-lpthread" \
 			ac_cv_path_LDCONFIG=: \
-			CC=cc CXX=g++
+			CC=gcc GXX=g++
 MAKE_FLAGS+=		ASTCFLAGS="${CFLAGS}" \
 			ASTLDFLAGS="${LDFLAGS}" \
 			ASTSSL_SO_VERSION="${LIBasteriskssl_VERSION}" \
@@ -116,7 +119,7 @@ CONFIGURE_ARGS+=	--with-jack=no \
 			--with-portaudio=no \
 			--with-radius=no \
 			--with-resample=no \
-			--with-tds=no \
+			--with-tds=no
 
 # Some build options (including a useful malloc debug) are available
 # via menuselect. They may be enabled by running 'make configure', cd

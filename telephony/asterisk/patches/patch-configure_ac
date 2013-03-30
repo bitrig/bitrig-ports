@@ -1,11 +1,13 @@
 $OpenBSD: patch-configure_ac,v 1.28 2013/03/28 20:24:53 sthen Exp $
 --- configure.ac.orig	Wed Jan 30 18:46:52 2013
-+++ configure.ac	Sat Mar 30 13:47:18 2013
-@@ -60,7 +60,7 @@ AC_SUBST([astvarrundir],      ['${localstatedir}/run/a
++++ configure.ac	Sat Mar 30 15:31:17 2013
+@@ -59,8 +59,8 @@ AC_SUBST([astlogdir],         ['${localstatedir}/log/a
+ AC_SUBST([astvarrundir],      ['${localstatedir}/run/asterisk'])dnl
  
  case "${host_os}" in
-      *bsd*)
+-     *bsd*)
 -     if test ${prefix} = 'NONE'; then
++     *bsd* | bitrig*)
 +     if test ${prefix} != 'NONE'; then
          astvarlibdir='${prefix}/share/asterisk'
          astdbdir='${localstatedir}/db/asterisk'
