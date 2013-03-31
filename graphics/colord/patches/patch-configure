@@ -1,12 +1,12 @@
-$OpenBSD: patch-configure,v 1.8 2013/03/08 06:58:38 ajacoutot Exp $
+$OpenBSD: patch-configure,v 1.9 2013/03/31 19:41:23 ajacoutot Exp $
 
 Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
 
 /var/lib -> /var/db
 
---- configure.orig	Sun Feb 17 22:05:29 2013
-+++ configure	Fri Mar  8 19:55:00 2013
-@@ -4897,7 +4897,7 @@ else
+--- configure.orig	Thu Mar 28 11:16:11 2013
++++ configure	Tue Apr  2 22:33:04 2013
+@@ -4937,7 +4937,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -15,7 +15,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5412,7 +5412,7 @@ newos6*)
+@@ -5452,7 +5452,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -24,7 +24,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -6029,7 +6029,7 @@ old_postuninstall_cmds=
+@@ -6069,7 +6069,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -33,7 +33,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -8792,7 +8792,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8832,7 +8832,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -42,7 +42,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
      with_gnu_ld=no
      ;;
    esac
-@@ -9668,7 +9668,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -9708,7 +9708,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -51,7 +51,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10715,7 +10715,7 @@ newsos6)
+@@ -10755,7 +10755,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -60,7 +60,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -13866,6 +13866,9 @@ else
+@@ -13906,6 +13906,9 @@ else
  fi
  
      ;;
@@ -70,7 +70,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
      *)
      DATADIRNAME=lib
      ;;
-@@ -17543,7 +17546,7 @@ fi
+@@ -17763,7 +17766,7 @@ fi
  fi
  
  # per-machine directory
