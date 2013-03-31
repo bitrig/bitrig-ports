@@ -1,6 +1,10 @@
---- configure.orig	Wed Aug  8 16:35:42 2012
-+++ configure	Wed Sep 26 19:38:15 2012
-@@ -5224,7 +5224,7 @@ else
+$OpenBSD: patch-configure,v 1.26 2013/03/31 13:01:19 robert Exp $
+
+Our crypt(3) is in libc.
+
+--- configure.orig	Thu Feb 28 16:13:46 2013
++++ configure	Tue Apr  2 22:28:30 2013
+@@ -5226,7 +5226,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -9,7 +13,7 @@
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5649,7 +5649,7 @@ newos6*)
+@@ -5651,7 +5651,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -18,7 +22,7 @@
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -6033,7 +6033,7 @@ old_postuninstall_cmds=
+@@ -6035,7 +6035,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -27,7 +31,7 @@
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
-@@ -8477,7 +8477,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8479,7 +8479,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -36,7 +40,7 @@
      with_gnu_ld=no
      ;;
    linux* | k*bsd*-gnu)
-@@ -9190,7 +9190,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -9192,7 +9192,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -45,7 +49,7 @@
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10162,7 +10162,7 @@ newsos6)
+@@ -10164,7 +10164,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -54,7 +58,7 @@
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -13690,7 +13690,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+@@ -13692,7 +13692,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
  	ld_shlibs_CXX=no
  	;;
  
@@ -63,7 +67,7 @@
  	if test -f /usr/libexec/ld.so; then
  	  hardcode_direct_CXX=yes
  	  hardcode_shlibpath_var_CXX=no
-@@ -15353,7 +15353,7 @@ newsos6)
+@@ -15355,7 +15355,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -72,7 +76,7 @@
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -15993,7 +15993,7 @@ LIBS_system=$LIBS
+@@ -15995,7 +15995,7 @@ LIBS_system=$LIBS
  # check build OS
  BUILDOS=""
  case $host in
@@ -81,7 +85,7 @@
  		BUILDOS="-DOPENBSD"
  		;;
  	*-*-linux*)
-@@ -17292,7 +17292,7 @@ if test "${ac_cv_lib_intl_strftime+set}" = set; then :
+@@ -17302,7 +17302,7 @@ if test "${ac_cv_lib_intl_strftime+set}" = set; then :
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -90,7 +94,7 @@
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -17325,7 +17325,7 @@ $as_echo "$ac_cv_lib_intl_strftime" >&6; }
+@@ -17335,7 +17335,7 @@ $as_echo "$ac_cv_lib_intl_strftime" >&6; }
  if test "x$ac_cv_lib_intl_strftime" = x""yes; then :
    $as_echo "#define HAVE_STRFTIME 1" >>confdefs.h
  
@@ -99,7 +103,7 @@
  fi
  
  fi
-@@ -18713,74 +18713,12 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -18780,74 +18780,12 @@ rm -f core conftest.err conftest.$ac_objext \
  
  LIBS=$LIBS_system
  
@@ -174,7 +178,7 @@
  # Only specific links with uuid and dl, clients only with crypto and ssl for ssl connections
  SSL_LIBS=
  # TODO: version of ssl check??
-@@ -18791,7 +18729,7 @@ if test "${ac_cv_lib_ssl_SSL_accept+set}" = set; then 
+@@ -18858,7 +18796,7 @@ if test "${ac_cv_lib_ssl_SSL_accept+set}" = set; then 
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -183,7 +187,7 @@
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -19298,7 +19236,7 @@ if test "${ac_cv_lib_intl_gettext+set}" = set; then :
+@@ -19365,7 +19303,7 @@ if test "${ac_cv_lib_intl_gettext+set}" = set; then :
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
