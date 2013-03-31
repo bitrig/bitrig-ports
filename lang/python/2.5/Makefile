@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.57 2012/08/23 19:19:17 sthen Exp $
+# $OpenBSD: Makefile,v 1.58 2013/03/31 21:35:26 bcallah Exp $
 
 VERSION=		2.5
 PATCHLEVEL=		.4

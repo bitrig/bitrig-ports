@@ -1,18 +1,13 @@
-$OpenBSD: patch-configure_in,v 1.8 2012/04/27 08:18:59 rpointel Exp $
+$OpenBSD: patch-configure_in,v 1.9 2013/03/31 21:35:26 bcallah Exp $
 
 Wrong value of LDSHARED in sysconfig, cf http://bugs.python.org/issue10547
+Fix wrong value of INSTSONAME. SOVERSION defaults to 1.0 which leads to
+INSTSONAME being libpython2.7.so.1.0, which is incorrect.
+This breaks linking for ports that look for INSTSONAME in their configure
+stage.
 
---- configure.in.orig	Mon Apr  9 18:07:36 2012
-+++ configure.in	Fri Jun 15 11:19:26 2012
-@@ -325,7 +325,7 @@ case $ac_sys_system/$ac_sys_release in
-     # As this has a different meaning on Linux, only define it on OpenBSD
-     AC_DEFINE(_BSD_SOURCE, 1, [Define on OpenBSD to activate all library features])
-     ;;
--  OpenBSD/*)
-+  OpenBSD/*|Bitrig/*)
-     # OpenBSD undoes our definition of __BSD_VISIBLE if _XOPEN_SOURCE is
-     # also defined. This can be overridden by defining _BSD_SOURCE
-     # As this has a different meaning on Linux, only define it on OpenBSD
+--- configure.in.orig	Tue Apr 10 01:07:36 2012
++++ configure.in	Tue Apr  2 22:42:18 2013
 @@ -779,7 +779,7 @@ if test $enable_shared = "yes"; then
  	  RUNSHARED=LD_LIBRARY_PATH=`pwd`:${LD_LIBRARY_PATH}
  	  INSTSONAME="$LDLIBRARY".$SOVERSION
@@ -22,7 +17,17 @@ Wrong value of LDSHARED in sysconfig, cf http://bugs.python.org/issue10547
  	  LDLIBRARY='libpython$(VERSION).so'
  	  BLDLIBRARY='-L. -lpython$(VERSION)'
  	  RUNSHARED=LD_LIBRARY_PATH=`pwd`:${LD_LIBRARY_PATH}
-@@ -1880,7 +1880,7 @@ then
+@@ -787,6 +787,9 @@ if test $enable_shared = "yes"; then
+ 	      FreeBSD*)
+ 		SOVERSION=`echo $SOVERSION|cut -d "." -f 1`
+ 		;;
++	      OpenBSD*|Bitrig*)
++		SOVERSION=0.0
++		;;
+ 	  esac
+ 	  INSTSONAME="$LDLIBRARY".$SOVERSION
+ 	  ;;
+@@ -1880,7 +1883,7 @@ then
  		else
  			LDSHARED="ld -Bshareable"
  		fi;;
@@ -31,25 +36,25 @@ Wrong value of LDSHARED in sysconfig, cf http://bugs.python.org/issue10547
  		if [[ "`$CC -dM -E - </dev/null | grep __ELF__`" != "" ]]
  		then
  				LDSHARED='$(CC) -shared $(CCSHARED)'
-@@ -1940,7 +1940,7 @@ then
+@@ -1940,7 +1943,7 @@ then
  		 fi;;
  	Linux*|GNU*) CCSHARED="-fPIC";;
  	BSD/OS*/4*) CCSHARED="-fpic";;
 -	FreeBSD*|NetBSD*|OpenBSD*|DragonFly*) CCSHARED="-fPIC";;
-+	FreeBSD*|NetBSD*|OpenBSD*|DragonFly*|Bitrig*) CCSHARED="-fPIC";;
++	FreeBSD*|NetBSD*|OpenBSD*|Bitrig*|DragonFly*) CCSHARED="-fPIC";;
  	OpenUNIX*|UnixWare*)
  		if test "$GCC" = "yes"
  		then CCSHARED="-fPIC"
-@@ -1990,7 +1990,7 @@ then
+@@ -1990,7 +1993,7 @@ then
  	OpenUNIX*|UnixWare*) LINKFORSHARED="-Wl,-Bexport";;
  	SCO_SV*) LINKFORSHARED="-Wl,-Bexport";;
  	ReliantUNIX*) LINKFORSHARED="-W1 -Blargedynsym";;
 -	FreeBSD*|NetBSD*|OpenBSD*|DragonFly*) 
-+	FreeBSD*|NetBSD*|OpenBSD*|DragonFly*|Bitrig*) 
++	FreeBSD*|NetBSD*|OpenBSD*|Bitrig*|DragonFly*) 
  		if [[ "`$CC -dM -E - </dev/null | grep __ELF__`" != "" ]]
  		then
  			LINKFORSHARED="-Wl,--export-dynamic"
-@@ -2057,9 +2057,10 @@ AC_CHECK_LIB(dld, shl_load)	# Dynamic linking for HP-U
+@@ -2057,9 +2060,10 @@ AC_CHECK_LIB(dld, shl_load)	# Dynamic linking for HP-U
  
  # only check for sem_init if thread support is requested
  if test "$with_threads" = "yes" -o -z "$with_threads"; then

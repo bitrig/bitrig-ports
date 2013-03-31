@@ -1,16 +1,37 @@
-$OpenBSD: patch-configure_in,v 1.7 2011/12/10 19:06:03 naddy Exp $
+Fix wrong value of INSTSONAME. Same as in Python 2.7
+
+$OpenBSD: patch-configure_in,v 1.8 2013/03/31 21:35:26 bcallah Exp $
 --- configure.in.orig	Sat Dec 13 15:13:52 2008
-+++ configure.in	Fri Nov 30 09:38:50 2012
++++ configure.in	Tue Apr  2 22:39:45 2013
 @@ -201,7 +201,7 @@ case $ac_sys_system/$ac_sys_release in
    # On OpenBSD, select(2) is not available if _XOPEN_SOURCE is defined,
    # even though select is a POSIX function. Reported by J. Ribbens.
    # Reconfirmed for OpenBSD 3.3 by Zachary Hamm, for 3.4 by Jason Ish.
 -  OpenBSD/2.* | OpenBSD/3.@<:@0123456789@:>@ | OpenBSD/4.@<:@0123@:>@) 
-+  OpenBSD* | Bitrig*)
++  OpenBSD*|Bitrig*)
      define_xopen_source=no
      # OpenBSD undoes our definition of __BSD_VISIBLE if _XOPEN_SOURCE is
      # also defined. This can be overridden by defining _BSD_SOURCE
-@@ -1521,20 +1521,8 @@ then
+@@ -637,7 +637,7 @@ if test $enable_shared = "yes"; then
+ 	  RUNSHARED=LD_LIBRARY_PATH=`pwd`:${LD_LIBRARY_PATH}
+ 	  INSTSONAME="$LDLIBRARY".$SOVERSION
+           ;;
+-    Linux*|GNU*|NetBSD*|FreeBSD*|DragonFly*)
++    Linux*|GNU*|NetBSD*|FreeBSD*|DragonFly*|OpenBSD*|Bitrig*)
+ 	  LDLIBRARY='libpython$(VERSION).so'
+ 	  BLDLIBRARY='-L. -lpython$(VERSION)'
+ 	  RUNSHARED=LD_LIBRARY_PATH=`pwd`:${LD_LIBRARY_PATH}
+@@ -645,6 +645,9 @@ if test $enable_shared = "yes"; then
+ 	      FreeBSD*)
+ 		SOVERSION=`echo $SOVERSION|cut -d "." -f 1`
+ 		;;
++	      OpenBSD*|Bitrig*)
++		SOVERSION=1.0
++		;;
+ 	  esac
+ 	  INSTSONAME="$LDLIBRARY".$SOVERSION
+ 	  ;;
+@@ -1521,20 +1524,8 @@ then
  		else
  			LDSHARED="ld -Bshareable ${LDFLAGS}"
  		fi;;
@@ -28,12 +49,12 @@ $OpenBSD: patch-configure_in,v 1.7 2011/12/10 19:06:03 naddy Exp $
 -				   ;;
 -				esac
 -		fi;;
-+	OpenBSD* | Bitrig*)
++	OpenBSD*|Bitrig*)
 +		LDSHARED="$CC -shared ${LDFLAGS}";;
  	NetBSD*|DragonFly*) LDSHARED="cc -shared ${LDFLAGS}";;
  	OpenUNIX*|UnixWare*)
  		if test "$GCC" = "yes"
-@@ -1568,7 +1556,7 @@ then
+@@ -1568,7 +1559,7 @@ then
  		 fi;;
  	Linux*|GNU*) CCSHARED="-fPIC";;
  	BSD/OS*/4*) CCSHARED="-fpic";;
@@ -42,7 +63,7 @@ $OpenBSD: patch-configure_in,v 1.7 2011/12/10 19:06:03 naddy Exp $
  	OpenUNIX*|UnixWare*)
  		if test "$GCC" = "yes"
  		then CCSHARED="-fPIC"
-@@ -1619,7 +1607,7 @@ then
+@@ -1619,7 +1610,7 @@ then
  	OpenUNIX*|UnixWare*) LINKFORSHARED="-Wl,-Bexport";;
  	SCO_SV*) LINKFORSHARED="-Wl,-Bexport";;
  	ReliantUNIX*) LINKFORSHARED="-W1 -Blargedynsym";;
@@ -51,7 +72,7 @@ $OpenBSD: patch-configure_in,v 1.7 2011/12/10 19:06:03 naddy Exp $
  		if [[ "`$CC -dM -E - </dev/null | grep __ELF__`" != "" ]]
  		then
  			LINKFORSHARED="-Wl,--export-dynamic"
-@@ -1678,9 +1666,10 @@ AC_CHECK_LIB(dld, shl_load)	# Dynamic linking for HP-U
+@@ -1678,9 +1669,10 @@ AC_CHECK_LIB(dld, shl_load)	# Dynamic linking for HP-U
  
  # only check for sem_ini if thread support is requested
  if test "$with_threads" = "yes" -o -z "$with_threads"; then
