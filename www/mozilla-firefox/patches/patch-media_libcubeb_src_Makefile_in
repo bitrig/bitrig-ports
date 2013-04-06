@@ -1,8 +1,8 @@
 $OpenBSD$
---- media/libcubeb/src/Makefile.in.orig	Sun Jan 27 10:06:54 2013
-+++ media/libcubeb/src/Makefile.in	Sun Jan 27 10:12:25 2013
-@@ -47,6 +47,12 @@ CSRCS           = \
-                 $(NULL)
+--- media/libcubeb/src/Makefile.in.orig	Tue Mar 26 23:17:56 2013
++++ media/libcubeb/src/Makefile.in	Wed Apr 10 20:53:02 2013
+@@ -49,6 +49,12 @@ CSRCS         = \
+               $(NULL)
  endif
  
 +ifeq ($(OS_ARCH),Bitrig)

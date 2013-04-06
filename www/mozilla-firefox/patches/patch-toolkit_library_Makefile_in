@@ -1,9 +1,9 @@
-$OpenBSD: patch-toolkit_library_Makefile_in,v 1.22 2013/03/03 17:34:15 landry Exp $
+$OpenBSD: patch-toolkit_library_Makefile_in,v 1.23 2013/04/06 14:44:52 landry Exp $
 https://bugzilla.mozilla.org/show_bug.cgi?id=648726
 https://bugzilla.mozilla.org/show_bug.cgi?id=648730
---- toolkit/library/Makefile.in.orig	Fri Mar  8 02:16:05 2013
-+++ toolkit/library/Makefile.in	Fri Mar  8 02:20:30 2013
-@@ -517,6 +517,18 @@ OS_LIBS += \
+--- toolkit/library/Makefile.in.orig	Tue Mar 26 23:18:05 2013
++++ toolkit/library/Makefile.in	Wed Apr 10 20:57:46 2013
+@@ -518,6 +518,18 @@ OS_LIBS += \
    $(NULL)
  endif
  
@@ -22,7 +22,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648730
  ifeq ($(OS_ARCH),Darwin)
  ifdef MOZ_SYDNEYAUDIO
  OS_LIBS += \
-@@ -532,13 +544,13 @@ OS_LIBS += \
+@@ -533,13 +545,13 @@ OS_LIBS += \
  endif
  endif
  
@@ -40,7 +40,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648730
  ifdef MOZ_CUBEB
  EXTRA_DSO_LDOPTS += -lsndio
  endif
-@@ -589,7 +601,7 @@ EXTRA_DSO_LDOPTS += -lelf -ldemangle
+@@ -590,7 +602,7 @@ EXTRA_DSO_LDOPTS += -lelf -ldemangle
  endif
  endif
  
@@ -49,7 +49,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648730
  OS_LIBS += $(call EXPAND_LIBNAME,kvm)
  # keep `environ' unresolved, see bug 14426 for binutils
  EXTRA_DSO_LDOPTS += -Wl,--warn-unresolved-symbols
-@@ -673,6 +685,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
+@@ -674,6 +686,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
  endif
  
  ifeq ($(OS_ARCH),OpenBSD)

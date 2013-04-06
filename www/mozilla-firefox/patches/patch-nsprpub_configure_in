@@ -1,7 +1,7 @@
 $OpenBSD$
---- nsprpub/configure.in.orig	Sun Jan 27 10:07:08 2013
-+++ nsprpub/configure.in	Sun Jan 27 10:25:15 2013
-@@ -2112,7 +2112,7 @@ tools are selected during the Xcode/Developer Tools in
+--- nsprpub/configure.in.orig	Tue Mar 26 23:18:01 2013
++++ nsprpub/configure.in	Wed Apr 10 20:53:02 2013
+@@ -2123,7 +2123,7 @@ tools are selected during the Xcode/Developer Tools in
      _DEBUG_FLAGS="-gstabs"
  	;;
  
@@ -10,7 +10,7 @@ $OpenBSD$
      AC_DEFINE(XP_UNIX)
      AC_DEFINE(OPENBSD)
      AC_DEFINE(HAVE_BSD_FLOCK)
-@@ -2847,7 +2847,7 @@ if test -n "$USE_PTHREADS"; then
+@@ -2858,7 +2858,7 @@ if test -n "$USE_PTHREADS"; then
  	        _PTHREAD_LDFLAGS=
  	    fi
  	    ;;
@@ -19,7 +19,7 @@ $OpenBSD$
          if test "$ac_cv_have_dash_pthread" = "yes"; then
              _PTHREAD_LDFLAGS=-pthread
          fi
-@@ -2947,7 +2947,7 @@ case "$target" in
+@@ -2958,7 +2958,7 @@ case "$target" in
      _PTHREAD_LDFLAGS=
      USE_USER_PTHREADS=
      ;;

@@ -1,12 +1,12 @@
 $OpenBSD$
---- security/coreconf/config.mk.orig	Sun Jan 27 10:07:08 2013
-+++ security/coreconf/config.mk	Sun Jan 27 10:27:13 2013
+--- security/coreconf/config.mk.orig	Wed Apr 10 21:09:41 2013
++++ security/coreconf/config.mk	Wed Apr 10 21:10:08 2013
 @@ -31,7 +31,7 @@ endif
  #######################################################################
  
  TARGET_OSES = FreeBSD BSD_OS NetBSD OpenUNIX OS2 QNX Darwin BeOS OpenBSD \
--              AIX RISCOS WINNT WIN95 Linux
-+              Bitrig AIX RISCOS WINNT WIN95 Linux
+-              AIX RISCOS WINNT WIN95 Linux Android
++              Bitrig AIX RISCOS WINNT WIN95 Linux Android
  
  ifeq (,$(filter-out $(TARGET_OSES),$(OS_TARGET)))
  include $(CORE_DEPTH)/coreconf/$(OS_TARGET).mk

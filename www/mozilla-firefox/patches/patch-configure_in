@@ -1,7 +1,7 @@
 $OpenBSD$
---- configure.in.orig	Wed Feb 27 02:29:57 2013
-+++ configure.in	Thu Mar  7 23:11:36 2013
-@@ -2310,7 +2310,7 @@ ia64*-hpux*)
+--- configure.in.orig	Tue Mar 26 23:17:37 2013
++++ configure.in	Wed Apr 10 20:53:02 2013
+@@ -2346,7 +2346,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
@@ -10,7 +10,7 @@ $OpenBSD$
      if test "$SO_VERSION"; then
          DLL_SUFFIX=".so.$SO_VERSION"
      else
-@@ -2932,7 +2932,7 @@ dnl Checks for header files.
+@@ -2968,7 +2968,7 @@ dnl Checks for header files.
  dnl ========================================================
  AC_HEADER_DIRENT
  case "$target_os" in
@@ -19,7 +19,7 @@ $OpenBSD$
  # for stuff like -lXshm
      CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
      ;;
-@@ -3238,7 +3238,7 @@ then
+@@ -3274,7 +3274,7 @@ then
  			fi
  			;;
  
@@ -28,7 +28,7 @@ $OpenBSD$
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -3668,7 +3668,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
+@@ -3704,7 +3704,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
      *-android*|*-linuxandroid*)
        :
        ;;
@@ -37,7 +37,7 @@ $OpenBSD$
        :
        ;;
      *)
-@@ -5593,7 +5593,7 @@ if test -n "$MOZ_CUBEB"; then
+@@ -5686,7 +5686,7 @@ if test -n "$MOZ_CUBEB"; then
      *-darwin*)
          AC_DEFINE(MOZ_CUBEB)
          ;;
