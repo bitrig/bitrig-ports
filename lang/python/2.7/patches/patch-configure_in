@@ -6,8 +6,17 @@ INSTSONAME being libpython2.7.so.1.0, which is incorrect.
 This breaks linking for ports that look for INSTSONAME in their configure
 stage.
 
---- configure.in.orig	Tue Apr 10 01:07:36 2012
-+++ configure.in	Tue Apr  2 22:42:18 2013
+--- configure.in.orig	Mon Apr  9 19:07:36 2012
++++ configure.in	Thu Apr 11 18:18:55 2013
+@@ -325,7 +325,7 @@ case $ac_sys_system/$ac_sys_release in
+     # As this has a different meaning on Linux, only define it on OpenBSD
+     AC_DEFINE(_BSD_SOURCE, 1, [Define on OpenBSD to activate all library features])
+     ;;
+-  OpenBSD/*)
++  OpenBSD/*|Bitrig/*)
+     # OpenBSD undoes our definition of __BSD_VISIBLE if _XOPEN_SOURCE is
+     # also defined. This can be overridden by defining _BSD_SOURCE
+     # As this has a different meaning on Linux, only define it on OpenBSD
 @@ -779,7 +779,7 @@ if test $enable_shared = "yes"; then
  	  RUNSHARED=LD_LIBRARY_PATH=`pwd`:${LD_LIBRARY_PATH}
  	  INSTSONAME="$LDLIBRARY".$SOVERSION
