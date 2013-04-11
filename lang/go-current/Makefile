@@ -4,7 +4,7 @@ ONLY_FOR_ARCHS =	amd64 i386
 
 COMMENT =		Go programming language
 
-VERSION =		20130121
+VERSION =		20130411
 EXTRACT_SUFX =		.src.tar.gz
 DISTNAME = 		go-${VERSION}
 PKGNAME = 		go-${VERSION}
@@ -18,9 +18,6 @@ MAINTAINER = 		Marco Peereboom <marco@peereboom.us>
 
 # software: BSD, documentation: CC-BY-3.0
 PERMIT_PACKAGE_CDROM =	 Yes
-PERMIT_PACKAGE_FTP =	 Yes
-PERMIT_DISTFILES_CDROM = Yes
-PERMIT_DISTFILES_FTP =	 Yes
 
 WANTLIB =		c m
 
@@ -107,7 +104,7 @@ do-install:
 hg:
 	@mkdir -p ${TMPHG}
 	if test -d ${TMPHG}/go; then \
-		(cd ${TMPHG}/go && hg pull) \
+		(cd ${TMPHG}/go && hg pull && hg update) \
 	else \
 		(cd ${TMPHG} && hg clone https://code.google.com/p/go/) \
 	fi
