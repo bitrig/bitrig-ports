@@ -1,0 +1,11 @@
+--- lib/configure.orig	Fri Apr 12 00:37:15 2013
++++ lib/configure	Fri Apr 12 00:37:24 2013
+@@ -94,7 +94,7 @@
+ 			LIBRESOLV=
+ 		fi
+ 		;;
+-        openbsd)
++        openbsd|bitrig)
+ 	        echo_n " obsd-device"
+ 		echo >>$c '#define PCI_HAVE_PM_OBSD_DEVICE'
+ 		echo >>$c '#define PCI_PATH_OBSD_DEVICE "/dev/pci"'
