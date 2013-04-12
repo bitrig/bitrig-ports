@@ -8,15 +8,12 @@ HOMEPAGE=		https://www.bitrig.org/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB +=	c crypto gssapi krb5 z
 
 MASTER_SITES=	https://www.bitrig.org/pub/distfiles/
 
-NO_REGRESS=	Yes
+NO_TEST=	Yes
 
 MAKE_FILE=	Makefile.bsd-wrapper
 MAKE_FLAGS=	SYSCONFDIR="${SYSCONFDIR}" PREFIX="${LOCALBASE}"
