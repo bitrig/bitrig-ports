@@ -1,7 +1,7 @@
 $OpenBSD: patch-giscanner_dumper_py,v 1.6 2013/03/28 19:32:11 jasper Exp $
---- giscanner/dumper.py.orig	Sat Feb 23 11:40:08 2013
-+++ giscanner/dumper.py	Tue Mar 26 17:12:03 2013
-@@ -82,7 +82,7 @@ class DumpCompiler(object):
+--- giscanner/dumper.py.orig	Fri Apr 12 11:44:49 2013
++++ giscanner/dumper.py	Fri Apr 12 11:44:57 2013
+@@ -82,14 +82,14 @@
          self._get_type_functions = get_type_functions
          self._error_quark_functions = error_quark_functions
  
@@ -10,7 +10,15 @@ $OpenBSD: patch-giscanner_dumper_py,v 1.6 2013/03/28 19:32:11 jasper Exp $
          self._linker_cmd = os.environ.get('CC', self._compiler_cmd)
          self._pkgconfig_cmd = os.environ.get('PKG_CONFIG', 'pkg-config')
          self._pkgconfig_msvc_flags = ''
-@@ -204,7 +204,7 @@ class DumpCompiler(object):
+         # Enable the --msvc-syntax pkg-config flag when
+         # the Microsoft compiler is used
+         # (This is the other way to check whether Visual C++ is used subsequently)
+-        if 'cl' in self._compiler_cmd:
++        if not 'clang' in self._compiler_cmd and 'cl' in self._compiler_cmd:
+             self._pkgconfig_msvc_flags = '--msvc-syntax'
+         self._uninst_srcdir = os.environ.get(
+             'UNINSTALLED_INTROSPECTION_SRCDIR')
+@@ -204,7 +204,7 @@
          args = self._compiler_cmd.split()
          # Do not add -Wall when using init code as we do not include any
          # header of the library being introspected
