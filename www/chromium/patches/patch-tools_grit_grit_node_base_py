@@ -1,0 +1,12 @@
+--- tools/grit/grit/node/base.py.orig	Fri Mar 22 02:16:03 2013
++++ tools/grit/grit/node/base.py	Fri Apr 12 13:39:10 2013
+@@ -448,7 +448,8 @@
+         'is_macosx': target_platform == 'darwin',
+         'is_win': target_platform in ('cygwin', 'win32'),
+         'is_posix': (target_platform in ('darwin', 'linux2', 'linux3', 'sunos5')
+-                     or 'bsd' in target_platform),
++                     or 'bsd' in target_platform
++                     or target_platform.startswith('bitrig')),
+         'pp_ifdef' : pp_ifdef,
+         'pp_if' : pp_if,
+     }
