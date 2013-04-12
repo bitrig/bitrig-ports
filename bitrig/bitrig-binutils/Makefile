@@ -37,6 +37,8 @@ PKG_ARGS+=-Di386=1
 PKG_ARGS+=-Di386=0
 .endif
 
+USE_LIBTOOL=No
+
 pre-build:
 	cd ${WRKSRC}/libiberty && ${MAKE} -f Makefile.bsd-wrapper config.status
 
