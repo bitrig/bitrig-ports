@@ -2,15 +2,86 @@ $OpenBSD: patch-configure,v 1.1 2013/03/29 10:08:49 ajacoutot Exp $
 
 Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
 
---- configure.orig	Mon Mar 25 13:40:46 2013
-+++ configure	Fri Mar 29 10:54:56 2013
+--- configure.orig	Mon Mar 25 07:40:46 2013
++++ configure	Sat Apr 13 08:26:55 2013
+@@ -4739,7 +4739,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -5251,7 +5251,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -5865,7 +5865,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
+@@ -8926,7 +8926,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -9802,7 +9802,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -10849,7 +10849,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -12926,6 +12926,9 @@ else
  fi
  
      ;;
-+    *-*-openbsd*)
++    *-*-openbsd* | *-*-bitrig*)
 +    DATADIRNAME=share
 +    ;;
      *)
      DATADIRNAME=lib
      ;;
+@@ -13794,16 +13797,6 @@ _ACEOF
+ # Check whether --enable-more-warnings was given.
+ if test "${enable_more_warnings+set}" = set; then :
+   enableval=$enable_more_warnings; set_more_warnings=no
+-fi
+-
+-
+-if test "$GCC" = "yes" -a "$set_more_warnings" != "no"; then
+-	CFLAGS="$CFLAGS \
+-		-Wall -Wstrict-prototypes -Werror=missing-prototypes \
+-		-Werror=implicit-function-declaration \
+-		-Werror=pointer-arith -Werror=init-self -Werror=format=2 \
+-		-Werror=missing-include-dirs -Werror=aggregate-return \
+-		-Werror=declaration-after-statement"
+ fi
+ 
+ 
