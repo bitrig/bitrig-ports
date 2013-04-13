@@ -32,4 +32,6 @@ CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	${NO_SHARED_LIBS:S/Yes/--enable-static-link/:S/No//}
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/support
 
+CFLAGS=-Wno-parentheses -DHAVE_DPRINTF
+
 .include <bsd.port.mk>
