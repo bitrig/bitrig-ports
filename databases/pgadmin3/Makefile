@@ -40,4 +40,6 @@ CONFIGURE_ARGS=	--with-pgsql=${LOCALBASE}
 
 USE_GMAKE=	Yes
 
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/config
+
 .include <bsd.port.mk>
