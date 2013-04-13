@@ -13,8 +13,8 @@ CATEGORIES=		devel
 SHARED_LIBS=		uuid	13.22 \
 			uuid++	14.21
 
-REVISION-main=		2
-REVISION-perl=		2
+REVISION-main=		3
+REVISION-perl=		3
 
 # Note there is a different libuuid in sysutils/e2fsprogs,-uuid.
 # If you are porting something which needs libuuid, you may need
