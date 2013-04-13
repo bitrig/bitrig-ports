@@ -3,3 +3,6 @@
 ac_cv_path_SED=${ac_cv_path_SED=/usr/bin/sed}
 ac_cv_prog_SED=${ac_cv_prog_SED=/usr/bin/sed}
 lt_cv_path_SED=${lt_cv_path_SED=/usr/bin/sed}
+# workaround bug in common autoconf fragment, SED is only set
+# if lt_cv_path_SED is not set.
+SED=${SED=/usr/bin/sed}
