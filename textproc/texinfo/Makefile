@@ -9,15 +9,12 @@ MAINTAINER=		Marco Peereboom <marco@bitrig.org>
 
 # GPL2
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB +=	c
 
 MASTER_SITES=	http://www.bitrig.org/files/
 
-NO_REGRESS=	Yes
+NO_TEST=	Yes
 
 MAKE_FILE=	Makefile.bsd-wrapper
 MAKE_FLAGS=	SYSCONFDIR="${SYSCONFDIR}" PREFIX="${LOCALBASE}"
