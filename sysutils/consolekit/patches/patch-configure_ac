@@ -1,11 +1,11 @@
 $OpenBSD: patch-configure_ac,v 1.5 2011/04/28 13:08:33 ajacoutot Exp $
---- configure.ac.orig	Tue Oct 26 16:34:03 2010
-+++ configure.ac	Tue Nov 30 15:34:31 2010
+--- configure.ac.orig	Wed Feb 16 18:37:16 2011
++++ configure.ac	Sun Apr 14 08:13:42 2013
 @@ -176,6 +176,14 @@ dnl --------------------------------------------------
  CK_BACKEND=""
  KVM_LIBS=""
  case "$host" in
-+       *-*-openbsd*)
++       *-*-openbsd* | *-*-bitrig*)
 +       CK_BACKEND="openbsd"
 +        AC_CHECK_LIB(kvm, kvm_openfiles, have_kvm=yes,
 +                AC_MSG_ERROR([Unable to find libkvm which is needed on OpenBSD]))
