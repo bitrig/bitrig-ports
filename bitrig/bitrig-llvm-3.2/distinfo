@@ -1,6 +1,0 @@
-SHA256 (clang-3.2.src.tar.gz) = lxIfH9XRw9kpXqXnsYNPWZ4X9q62o+1odfPEfQz3GMQ=
-SHA256 (compiler-rt-20121112.tar.gz) = /XVEjFX9gWw+Wpf5Zz5oKUiLSg57hMyTvBcTh5A9I9A=
-SHA256 (llvm-3.2.src.tar.gz) = aCrNzZQtHU2qQnf4nwTbj5P2feUY/UL68rb8QTpsduE=
-SIZE (clang-3.2.src.tar.gz) = 74347811
-SIZE (compiler-rt-20121112.tar.gz) = 4389502
-SIZE (llvm-3.2.src.tar.gz) = 139679170

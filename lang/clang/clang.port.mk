@@ -30,7 +30,12 @@ _MODCLANG_ARCH_USES = Yes
 _MODCLANG_LINKS =
 .if ${_MODCLANG_ARCH_USES:L} == "yes"
 
+BITRIG_LLVM_VERSION=	3.2
+.if ${MODCLANG_VERSION} == ${BITRIG_LLVM_VERSION}
+BUILD_DEPENDS += bitrig/bitrig-llvm
+.else
 BUILD_DEPENDS += bitrig/bitrig-llvm-${MODCLANG_VERSION}
+.endif
 _MODCLANG_LINKS = clang gcc clang cc
 
 .if ${MODCLANG_LANGS:L:Mc++}
