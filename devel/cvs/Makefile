@@ -3,6 +3,7 @@ COMMENT=		CVS from OpenBSD base
 DISTNAME=		cvs-1.11.1p1
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		devel
+REVISION=		0
 
 HOMEPAGE=		https://www.bitrig.org/
 
