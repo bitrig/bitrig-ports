@@ -1,0 +1,37 @@
+$OpenBSD$
+--- configure.in.orig	Mon Apr 15 22:41:08 2013
++++ configure.in	Mon Apr 15 22:41:55 2013
+@@ -321,7 +321,7 @@ AC_ARG_WITH(randomdev,
+ case "$use_randomdev" in
+ 	unspec)
+ 		case "$host" in
+-			*-openbsd*)
++			*-openbsd* |*-bitrig*)
+ 				devrandom=/dev/srandom
+ 				;;
+ 			*)
+@@ -353,7 +353,7 @@ then
+ 			CCOPT="$CCOPT -pthread"
+ 			STD_CDEFINES="$STD_CDEFINES -D_THREAD_SAFE"
+ 			;;
+-		*-openbsd*)
++		*-openbsd* | *-bitrig*)
+ 			CC="$CC -pthread"
+ 			CCOPT="$CCOPT -pthread"
+ 			;;
+@@ -1049,6 +1049,7 @@ case "$host" in
+ 	*-netbsd*)	have_minimum_ifreq=yes;;
+ 	*-next*)	have_minimum_ifreq=yes;;
+ 	*-openbsd*)	have_minimum_ifreq=yes;;
++	*-bitrig*)	have_minimum_ifreq=yes;;
+ 	*-rhapsody*)	have_minimum_ifreq=yes;;
+ esac
+ 
+@@ -1095,6 +1096,7 @@ case "$host" in
+ 	*-netbsd*)	PORT_DIR="port/netbsd";;
+ 	*-next*)	PORT_DIR="port/next";;
+ 	*-openbsd*)	PORT_DIR="port/openbsd";;
++	*-bitrig*)	PORT_DIR="port/openbsd";; # XXX
+ 	*-qnx*)		PORT_DIR="port/qnx";;
+ 	*-rhapsody*)	PORT_DIR="port/rhapsody";;
+ 	*-sunos4*)
