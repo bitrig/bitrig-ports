@@ -49,9 +49,7 @@ MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build/autoconf \
 				${WRKDIST}/memory/jemalloc/src \
 				${WRKDIST}/modules/freetype2/builds/unix \
 				${WRKDIST}/nsprpub/build/autoconf \
-				${WRKDIST}/toolkit/crashreporter/google-breakpad/autotools \
-				${WRKDIST}/tools/profiler/libunwind/src/aux_ \
-				${WRKDIST}/tools/profiler/libunwind/src/config
+				${WRKDIST}/toolkit/crashreporter/google-breakpad/autotools
 
 CONFIGURE_ARGS +=	--enable-gstreamer
 LIB_DEPENDS +=	multimedia/gstreamer-0.10/plugins-base
