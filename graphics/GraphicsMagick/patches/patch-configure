@@ -1,7 +1,7 @@
-$OpenBSD: patch-configure,v 1.6 2012/12/22 19:37:35 brad Exp $
---- configure.orig	Sat Oct 13 23:32:07 2012
-+++ configure	Sat Dec 29 18:13:23 2012
-@@ -8266,7 +8266,7 @@ else
+$OpenBSD: patch-configure,v 1.7 2013/04/15 01:58:32 brad Exp $
+--- configure.orig	Sun Mar 10 00:21:59 2013
++++ configure	Sat Apr 27 11:24:23 2013
+@@ -8274,7 +8274,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -10,7 +10,7 @@ $OpenBSD: patch-configure,v 1.6 2012/12/22 19:37:35 brad Exp $
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -8778,7 +8778,7 @@ newos6*)
+@@ -8786,7 +8786,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -19,7 +19,7 @@ $OpenBSD: patch-configure,v 1.6 2012/12/22 19:37:35 brad Exp $
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -9391,7 +9391,7 @@ old_postuninstall_cmds=
+@@ -9399,7 +9399,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -28,7 +28,7 @@ $OpenBSD: patch-configure,v 1.6 2012/12/22 19:37:35 brad Exp $
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -12182,7 +12182,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -12190,7 +12190,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -37,7 +37,7 @@ $OpenBSD: patch-configure,v 1.6 2012/12/22 19:37:35 brad Exp $
      with_gnu_ld=no
      ;;
    esac
-@@ -13058,7 +13058,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -13066,7 +13066,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -46,7 +46,7 @@ $OpenBSD: patch-configure,v 1.6 2012/12/22 19:37:35 brad Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -14101,7 +14101,7 @@ newsos6)
+@@ -14109,7 +14109,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -55,7 +55,7 @@ $OpenBSD: patch-configure,v 1.6 2012/12/22 19:37:35 brad Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -16579,7 +16579,7 @@ fi
+@@ -16587,7 +16587,7 @@ fi
  	ld_shlibs_CXX=no
  	;;
  
@@ -64,7 +64,7 @@ $OpenBSD: patch-configure,v 1.6 2012/12/22 19:37:35 brad Exp $
  	if test -f /usr/libexec/ld.so; then
  	  hardcode_direct_CXX=yes
  	  hardcode_shlibpath_var_CXX=no
-@@ -18350,7 +18350,7 @@ newsos6)
+@@ -18358,7 +18358,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -73,16 +73,7 @@ $OpenBSD: patch-configure,v 1.6 2012/12/22 19:37:35 brad Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -19242,7 +19242,7 @@ else
-   netbsd*)
-     lt_cv_sys_dlopen_deplibs=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     lt_cv_sys_dlopen_deplibs=yes
-     ;;
-   osf[1234]*)
-@@ -27950,7 +27950,7 @@ fi
+@@ -26935,7 +26935,7 @@ fi
  #
  
  # Subdirectory under lib to place GraphicsMagick lib files
@@ -91,7 +82,7 @@ $OpenBSD: patch-configure,v 1.6 2012/12/22 19:37:35 brad Exp $
  
  cat >>confdefs.h <<_ACEOF
  #define MagickLibSubdir "$MagickLibSubdir"
-@@ -28054,7 +28054,7 @@ _ACEOF
+@@ -27039,7 +27039,7 @@ _ACEOF
  
  #
  # Path to GraphicsMagick share files
