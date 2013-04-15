@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.46 2013/04/10 02:47:10 kurt Exp $
+# $OpenBSD: Makefile,v 1.47 2013/04/15 03:01:06 kurt Exp $
 
 CC = gcc
 CXX = g++
