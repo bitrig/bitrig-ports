@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/11 10:50:09 espie Exp $
+# $OpenBSD: Makefile,v 1.22 2013/04/16 13:17:00 ajacoutot Exp $
 
 MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build/
 
@@ -28,7 +28,7 @@ MODULES=		devel/gettext \
 
 LIB_DEPENDS=		devel/glib2
 
-MODGNOME_TOOLS= 	goi
+MODGNOME_TOOLS= 	gi
 
 CONFIGURE_STYLE=	gnu
 
