@@ -19,6 +19,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=		${MASTER_SITE_GNU:=emacs/}
 
 USE_GMAKE=		Yes
+CC=gcc
+CXX=g++
 
 FLAVORS=		gtk3 athena no_x11
 FLAVOR?=
@@ -33,8 +35,7 @@ CONFIGURE_ARGS=		--build="${GCCARCH}" \
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include \
 				  -I${LOCALBASE}/include/libpng \
 				  -DHAVE_SOUND" \
-			LDFLAGS="-L${LOCALBASE}/lib -nopie"
-CFLAGS+=		-fno-pie
+			LDFLAGS="-L${LOCALBASE}/lib"
 
 MAKE_ENV=		INSTALL_EMACS="${INSTALL_SCRIPT}" \
 			LOGNAME="${SHAREOWN}"
