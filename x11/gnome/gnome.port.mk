@@ -1,4 +1,4 @@
-# $OpenBSD: gnome.port.mk,v 1.65 2013/03/26 16:28:22 ajacoutot Exp $
+# $OpenBSD: gnome.port.mk,v 1.67 2013/04/16 13:16:30 ajacoutot Exp $
 #
 # Module for GNOME related ports
 
@@ -50,7 +50,7 @@ USE_GMAKE?=		Yes
 # or for ensuring documentation is available. If an option is not set, it's
 # explicitly disabled.
 # Currently supported tools are:
-# * goi:  Build and enable GObject Introspection data.
+# * gi: Build and enable GObject Introspection data.
 # * gtk-doc: Enable to build the included docs.
 # * vala: Enable vala bindings.
 # * yelp: Use this if there are any files under share/gnome/help/
@@ -63,13 +63,13 @@ USE_GMAKE?=		Yes
 # MODGNOME_RUN_DEPENDS_${tool} in your multi package RUN_DEPENDS.
 
 MODGNOME_CONFIGURE_ARGS_gtkdoc=--disable-gtk-doc
-MODGNOME_CONFIGURE_ARGS_goi=--disable-introspection
+MODGNOME_CONFIGURE_ARGS_gi=--disable-introspection
 MODGNOME_CONFIGURE_ARGS_vala=--disable-vala --disable-vala-bindings
 
 .if defined(MODGNOME_TOOLS)
-.   if ${MODGNOME_TOOLS:Mgoi}
-        MODGNOME_CONFIGURE_ARGS_goi=--enable-introspection
-        MODGNOME_BUILD_DEPENDS+=devel/gobject-introspection>=1.34.0
+.   if ${MODGNOME_TOOLS:Mgi}
+        MODGNOME_CONFIGURE_ARGS_gi=--enable-introspection
+        MODGNOME_BUILD_DEPENDS+=devel/gobject-introspection>=1.36.0
 .   endif
 
 .   if ${MODGNOME_TOOLS:Mgtk-doc}
@@ -79,19 +79,19 @@ MODGNOME_CONFIGURE_ARGS_vala=--disable-vala --disable-vala-bindings
 
 .   if ${MODGNOME_TOOLS:Mvala}
         MODGNOME_CONFIGURE_ARGS_vala=--enable-vala --enable-vala-bindings
-        MODGNOME_BUILD_DEPENDS+=lang/vala>=0.18.0
+        MODGNOME_BUILD_DEPENDS+=lang/vala>=0.20.0
 .   endif
 
 .   if ${MODGNOME_TOOLS:Myelp}
         MODGNOME_BUILD_DEPENDS+=x11/gnome/yelp-tools
-        MODGNOME_BUILD_DEPENDS+=x11/gnome/doc-utils
+        MODGNOME_BUILD_DEPENDS+=x11/gnome/doc-utils>=0.20.10p0
         _yelp_depend=x11/gnome/yelp
         MODGNOME_RUN_DEPENDS+=${_yelp_depend}
         MODGNOME_RUN_DEPENDS_yelp=${_yelp_depend}
 .   endif
 .endif
 
-CONFIGURE_ARGS+=${MODGNOME_CONFIGURE_ARGS_goi} \
+CONFIGURE_ARGS+=${MODGNOME_CONFIGURE_ARGS_gi} \
 		${MODGNOME_CONFIGURE_ARGS_gtkdoc} \
 		${MODGNOME_CONFIGURE_ARGS_vala}
 
