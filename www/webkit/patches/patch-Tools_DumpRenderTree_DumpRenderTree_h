@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Tools/DumpRenderTree/DumpRenderTree.h.orig	Thu Jan 10 03:58:45 2013
++++ Tools/DumpRenderTree/DumpRenderTree.h	Thu Apr 18 13:55:58 2013
+@@ -51,7 +51,7 @@
+ #include <string>
+ #include <wtf/RefPtr.h>
+ 
+-#if !OS(OPENBSD)
++#if !(OS(OPENBSD) || OS(BITRIG))
+ std::wstring urlSuitableForTestResult(const std::wstring& url);
+ #endif
+ 

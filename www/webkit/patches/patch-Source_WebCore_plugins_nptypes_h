@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Source/WebCore/plugins/nptypes.h.orig	Mon Oct 31 06:36:33 2011
++++ Source/WebCore/plugins/nptypes.h	Thu Apr 18 13:59:45 2013
+@@ -67,7 +67,7 @@
+     #define true   1
+     #define false  0
+   #endif
+-#elif defined(bsdi) || defined(FREEBSD) || defined(OPENBSD)
++#elif defined(bsdi) || defined(FREEBSD) || defined(OPENBSD) || defined(__Bitrig__)
+   /*
+    * BSD/OS, FreeBSD, and OpenBSD ship sys/types.h that define int32_t and 
+    * u_int32_t.

@@ -2,8 +2,8 @@ $OpenBSD: patch-Source_WTF_wtf_Platform_h,v 1.1 2013/04/13 09:11:02 landry Exp $
 
 Allow webkit to build and run on mips64
 
---- Source/WTF/wtf/Platform.h.orig	Tue Mar  5 09:57:37 2013
-+++ Source/WTF/wtf/Platform.h	Fri Mar  8 00:57:25 2013
+--- Source/WTF/wtf/Platform.h.orig	Tue Apr 16 03:00:35 2013
++++ Source/WTF/wtf/Platform.h	Thu Apr 18 13:50:15 2013
 @@ -76,9 +76,14 @@
  
  /* CPU(MIPS) - MIPS 32-bit */
@@ -42,7 +42,36 @@ Allow webkit to build and run on mips64
  #define WTF_CPU_NEEDS_ALIGNED_ACCESS 1
  #endif
  
-@@ -744,7 +754,8 @@
+@@ -388,6 +398,11 @@
+ #define WTF_OS_OPENBSD 1
+ #endif
+ 
++/* OS(BITRIG) - Bitrig */
++#ifdef __Bitrig__
++#define WTF_OS_BITRIG 1
++#endif
++
+ /* OS(QNX) - QNX */
+ #if defined(__QNXNTO__)
+ #define WTF_OS_QNX 1
+@@ -420,6 +435,7 @@
+     || OS(LINUX)            \
+     || OS(NETBSD)           \
+     || OS(OPENBSD)          \
++    || OS(BITRIG)           \
+     || OS(QNX)              \
+     || OS(SOLARIS)          \
+     || defined(unix)        \
+@@ -647,7 +663,7 @@
+ #define HAVE_LANGINFO_H 1
+ #endif
+ 
+-#if (OS(FREEBSD) || OS(OPENBSD)) && !defined(__GLIBC__)
++#if (OS(FREEBSD) || OS(OPENBSD) || OS(BITRIG)) && !defined(__GLIBC__)
+ #define HAVE_PTHREAD_NP_H 1
+ #endif
+ 
+@@ -744,7 +760,8 @@
      || CPU(ALPHA) \
      || CPU(SPARC64) \
      || CPU(S390X) \

@@ -1,0 +1,21 @@
+$OpenBSD$
+--- Source/WTF/wtf/MathExtras.h.orig	Tue Apr 16 03:00:35 2013
++++ Source/WTF/wtf/MathExtras.h	Thu Apr 18 13:57:38 2013
+@@ -38,7 +38,7 @@
+ #include <ieeefp.h>
+ #endif
+ 
+-#if OS(OPENBSD)
++#if OS(OPENBSD) || OS(BITRIG)
+ #include <sys/types.h>
+ #include <machine/ieee.h>
+ #endif
+@@ -101,7 +101,7 @@ inline bool isinf(double x) { return !finite(x) && !is
+ 
+ #endif
+ 
+-#if OS(OPENBSD)
++#if OS(OPENBSD) || OS(BITRIG)
+ 
+ namespace std {
+ 

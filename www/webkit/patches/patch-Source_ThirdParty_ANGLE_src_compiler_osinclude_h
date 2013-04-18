@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Source/ThirdParty/ANGLE/src/compiler/osinclude.h.orig	Mon Jan 21 11:37:26 2013
++++ Source/ThirdParty/ANGLE/src/compiler/osinclude.h	Thu Apr 18 13:47:06 2013
+@@ -18,7 +18,7 @@
+       defined(__FreeBSD__) || defined(__OpenBSD__) || \
+       defined(__sun) || defined(ANDROID) || \
+       defined(__GLIBC__) || defined(__GNU__) || \
+-      defined(__QNX__)
++      defined(__QNX__) || defined(__Bitrig__)
+ #define ANGLE_OS_POSIX
+ #else
+ #error Unsupported platform.

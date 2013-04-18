@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Source/WebCore/bindings/js/JSInspectorFrontendHostCustom.cpp.orig	Mon Oct  1 09:06:28 2012
++++ Source/WebCore/bindings/js/JSInspectorFrontendHostCustom.cpp	Thu Apr 18 14:00:25 2013
+@@ -63,6 +63,8 @@ JSValue JSInspectorFrontendHost::platform(ExecState* e
+     DEFINE_STATIC_LOCAL(const String, platform, (ASCIILiteral("freebsd")));
+ #elif OS(OPENBSD)
+     DEFINE_STATIC_LOCAL(const String, platform, (ASCIILiteral("openbsd")));
++#elif OS(BITRIG)
++    EFINE_STATIC_LOCAL(const String, platform, (ASCIILiteral("bitrig")));
+ #elif OS(SOLARIS)
+     DEFINE_STATIC_LOCAL(const String, platform, (ASCIILiteral("solaris")));
+ #else
