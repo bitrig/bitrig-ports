@@ -8,7 +8,7 @@ SHARED_LIBS +=  clang                  0.0 # 3.2
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 DPB_PROPERTIES= parallel
 
-REVISION = 	19
+REVISION = 	20
 LLVM_V =	3.2
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
