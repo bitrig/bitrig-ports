@@ -48,7 +48,6 @@ LIB_DEPENDS=		${P}/core \
 # needed for the gio plugin
 RUN_DEPENDS +=		x11/gnome/gvfs
 
-USE_LIBTOOL=		gnu
 # XXX libvisual needs to be ported
 CONFIGURE_ARGS=		--disable-libvisual \
 			--disable-gnome_vfs
