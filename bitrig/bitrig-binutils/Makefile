@@ -1,13 +1,13 @@
 SHARED_ONLY=		Yes
-DPB_PROPERTIES= parallel
+DPB_PROPERTIES= 	parallel
 
 COMMENT =		Bitrig binutils
 
 DISTNAME =		bitrig-binutils-0.6
+REVISION =		0
 EXTRACT_SUFX =		.tgz
 CATEGORIES =		bitrig devel
-SHARED_LIBS =		iberty 10.1 \
-			readline 3.0
+SHARED_LIBS =		iberty 10.1
 
 HOMEPAGE =		https://www.bitrig.org/
 MAINTAINER =		Marco Peereboom <marco@bitrig.org>
