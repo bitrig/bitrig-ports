@@ -8,6 +8,7 @@ bin/clang
 bin/clang++
 @bin bin/clang-3.3
 @bin bin/clang-check
+@bin bin/clang-format
 @bin bin/clang-tblgen
 @bin bin/llc
 @bin bin/lli
@@ -55,9 +56,11 @@ include/clang/AST/ASTContext.h
 include/clang/AST/ASTDiagnostic.h
 include/clang/AST/ASTImporter.h
 include/clang/AST/ASTMutationListener.h
+include/clang/AST/ASTTypeTraits.h
 include/clang/AST/ASTUnresolvedSet.h
 include/clang/AST/ASTVector.h
 include/clang/AST/Attr.h
+include/clang/AST/AttrDump.inc
 include/clang/AST/AttrImpl.inc
 include/clang/AST/AttrIterator.h
 include/clang/AST/Attrs.inc
@@ -69,8 +72,10 @@ include/clang/AST/CharUnits.h
 include/clang/AST/Comment.h
 include/clang/AST/CommentBriefParser.h
 include/clang/AST/CommentCommandInfo.inc
+include/clang/AST/CommentCommandList.inc
 include/clang/AST/CommentCommandTraits.h
 include/clang/AST/CommentDiagnostic.h
+include/clang/AST/CommentHTMLNamedCharacterReferences.inc
 include/clang/AST/CommentHTMLTags.inc
 include/clang/AST/CommentHTMLTagsProperties.inc
 include/clang/AST/CommentLexer.h
@@ -88,6 +93,7 @@ include/clang/AST/DeclGroup.h
 include/clang/AST/DeclLookups.h
 include/clang/AST/DeclNodes.inc
 include/clang/AST/DeclObjC.h
+include/clang/AST/DeclOpenMP.h
 include/clang/AST/DeclTemplate.h
 include/clang/AST/DeclVisitor.h
 include/clang/AST/DeclarationName.h
@@ -134,7 +140,6 @@ include/clang/ASTMatchers/ASTMatchFinder.h
 include/clang/ASTMatchers/ASTMatchers.h
 include/clang/ASTMatchers/ASTMatchersInternal.h
 include/clang/ASTMatchers/ASTMatchersMacros.h
-include/clang/ASTMatchers/ASTTypeTraits.h
 include/clang/Analysis/
 include/clang/Analysis/Analyses/
 include/clang/Analysis/Analyses/CFGReachabilityAnalysis.h
@@ -179,7 +184,8 @@ include/clang/Basic/BuiltinsMips.def
 include/clang/Basic/BuiltinsNVPTX.def
 include/clang/Basic/BuiltinsPPC.def
 include/clang/Basic/BuiltinsX86.def
-include/clang/Basic/ConvertUTF.h
+include/clang/Basic/CharInfo.h
+include/clang/Basic/CommentOptions.h
 include/clang/Basic/Diagnostic.h
 include/clang/Basic/DiagnosticASTKinds.inc
 include/clang/Basic/DiagnosticAnalysisKinds.inc
@@ -214,8 +220,11 @@ include/clang/Basic/ObjCRuntime.h
 include/clang/Basic/OnDiskHashTable.h
 include/clang/Basic/OpenCL.h
 include/clang/Basic/OpenCLExtensions.def
+include/clang/Basic/OpenMPKinds.def
+include/clang/Basic/OpenMPKinds.h
 include/clang/Basic/OperatorKinds.def
 include/clang/Basic/OperatorKinds.h
+include/clang/Basic/OperatorPrecedence.h
 include/clang/Basic/PartialDiagnostic.h
 include/clang/Basic/PrettyStackTrace.h
 include/clang/Basic/Sanitizers.def
@@ -224,6 +233,7 @@ include/clang/Basic/SourceManager.h
 include/clang/Basic/SourceManagerInternals.h
 include/clang/Basic/Specifiers.h
 include/clang/Basic/TargetBuiltins.h
+include/clang/Basic/TargetCXXABI.h
 include/clang/Basic/TargetInfo.h
 include/clang/Basic/TargetOptions.h
 include/clang/Basic/TemplateKinds.h
@@ -319,7 +329,6 @@ include/clang/Lex/ModuleMap.h
 include/clang/Lex/MultipleIncludeOpt.h
 include/clang/Lex/PPCallbacks.h
 include/clang/Lex/PPConditionalDirectiveRecord.h
-include/clang/Lex/PPMutationListener.h
 include/clang/Lex/PTHLexer.h
 include/clang/Lex/PTHManager.h
 include/clang/Lex/Pragma.h
@@ -352,6 +361,7 @@ include/clang/Sema/
 include/clang/Sema/AnalysisBasedWarnings.h
 include/clang/Sema/AttrParsedAttrKinds.inc
 include/clang/Sema/AttrParsedAttrList.inc
+include/clang/Sema/AttrSpellingListIndex.inc
 include/clang/Sema/AttrTemplateInstantiate.inc
 include/clang/Sema/AttributeList.h
 include/clang/Sema/CXXFieldCollector.h
@@ -390,6 +400,7 @@ include/clang/Serialization/ASTWriter.h
 include/clang/Serialization/AttrPCHRead.inc
 include/clang/Serialization/AttrPCHWrite.inc
 include/clang/Serialization/ContinuousRangeMap.h
+include/clang/Serialization/GlobalModuleIndex.h
 include/clang/Serialization/Module.h
 include/clang/Serialization/ModuleManager.h
 include/clang/Serialization/SerializationDiagnostic.h
@@ -460,7 +471,6 @@ include/llvm-c/BitReader.h
 include/llvm-c/BitWriter.h
 include/llvm-c/Core.h
 include/llvm-c/Disassembler.h
-include/llvm-c/EnhancedDisassembly.h
 include/llvm-c/ExecutionEngine.h
 include/llvm-c/Initialization.h
 include/llvm-c/LinkTimeOptimizer.h
@@ -500,6 +510,7 @@ include/llvm/ADT/IntEqClasses.h
 include/llvm/ADT/IntervalMap.h
 include/llvm/ADT/IntrusiveRefCntPtr.h
 include/llvm/ADT/MapVector.h
+include/llvm/ADT/None.h
 include/llvm/ADT/NullablePtr.h
 include/llvm/ADT/Optional.h
 include/llvm/ADT/OwningPtr.h
@@ -519,6 +530,7 @@ include/llvm/ADT/SmallSet.h
 include/llvm/ADT/SmallString.h
 include/llvm/ADT/SmallVector.h
 include/llvm/ADT/SparseBitVector.h
+include/llvm/ADT/SparseMultiSet.h
 include/llvm/ADT/SparseSet.h
 include/llvm/ADT/Statistic.h
 include/llvm/ADT/StringExtras.h
@@ -535,7 +547,6 @@ include/llvm/ADT/VariadicFunction.h
 include/llvm/ADT/edit_distance.h
 include/llvm/ADT/ilist.h
 include/llvm/ADT/ilist_node.h
-include/llvm/AddressingMode.h
 include/llvm/Analysis/
 include/llvm/Analysis/AliasAnalysis.h
 include/llvm/Analysis/AliasSetTracker.h
@@ -544,6 +555,8 @@ include/llvm/Analysis/BlockFrequencyInfo.h
 include/llvm/Analysis/BranchProbabilityInfo.h
 include/llvm/Analysis/CFGPrinter.h
 include/llvm/Analysis/CallGraph.h
+include/llvm/Analysis/CallGraphSCCPass.h
+include/llvm/Analysis/CallPrinter.h
 include/llvm/Analysis/CaptureTracking.h
 include/llvm/Analysis/CodeMetrics.h
 include/llvm/Analysis/ConstantFolding.h
@@ -592,18 +605,16 @@ include/llvm/Analysis/ScalarEvolutionExpander.h
 include/llvm/Analysis/ScalarEvolutionExpressions.h
 include/llvm/Analysis/ScalarEvolutionNormalization.h
 include/llvm/Analysis/SparsePropagation.h
+include/llvm/Analysis/TargetTransformInfo.h
 include/llvm/Analysis/Trace.h
 include/llvm/Analysis/ValueTracking.h
 include/llvm/Analysis/Verifier.h
-include/llvm/Argument.h
 include/llvm/Assembly/
 include/llvm/Assembly/AssemblyAnnotationWriter.h
 include/llvm/Assembly/Parser.h
 include/llvm/Assembly/PrintModulePass.h
 include/llvm/Assembly/Writer.h
-include/llvm/Attributes.h
 include/llvm/AutoUpgrade.h
-include/llvm/BasicBlock.h
 include/llvm/Bitcode/
 include/llvm/Bitcode/Archive.h
 include/llvm/Bitcode/BitCodes.h
@@ -611,14 +622,13 @@ include/llvm/Bitcode/BitstreamReader.h
 include/llvm/Bitcode/BitstreamWriter.h
 include/llvm/Bitcode/LLVMBitCodes.h
 include/llvm/Bitcode/ReaderWriter.h
-include/llvm/CallGraphSCCPass.h
-include/llvm/CallingConv.h
 include/llvm/CodeGen/
 include/llvm/CodeGen/Analysis.h
 include/llvm/CodeGen/AsmPrinter.h
 include/llvm/CodeGen/CalcSpillWeights.h
 include/llvm/CodeGen/CallingConvLower.h
 include/llvm/CodeGen/CommandFlags.h
+include/llvm/CodeGen/DAGCombine.h
 include/llvm/CodeGen/DFAPacketizer.h
 include/llvm/CodeGen/EdgeBundles.h
 include/llvm/CodeGen/FastISel.h
@@ -668,6 +678,7 @@ include/llvm/CodeGen/MachineRegisterInfo.h
 include/llvm/CodeGen/MachineRelocation.h
 include/llvm/CodeGen/MachineSSAUpdater.h
 include/llvm/CodeGen/MachineScheduler.h
+include/llvm/CodeGen/MachineTraceMetrics.h
 include/llvm/CodeGen/PBQP/
 include/llvm/CodeGen/PBQP/Graph.h
 include/llvm/CodeGen/PBQP/HeuristicBase.h
@@ -707,15 +718,11 @@ include/llvm/Config/Disassemblers.def
 include/llvm/Config/Targets.def
 include/llvm/Config/config.h
 include/llvm/Config/llvm-config.h
-include/llvm/Constant.h
-include/llvm/Constants.h
 include/llvm/DIBuilder.h
-include/llvm/DataLayout.h
 include/llvm/DebugInfo/
 include/llvm/DebugInfo.h
 include/llvm/DebugInfo/DIContext.h
-include/llvm/DefaultPasses.h
-include/llvm/DerivedTypes.h
+include/llvm/DebugInfo/DWARFFormValue.h
 include/llvm/ExecutionEngine/
 include/llvm/ExecutionEngine/ExecutionEngine.h
 include/llvm/ExecutionEngine/GenericValue.h
@@ -729,37 +736,60 @@ include/llvm/ExecutionEngine/ObjectBuffer.h
 include/llvm/ExecutionEngine/ObjectImage.h
 include/llvm/ExecutionEngine/RuntimeDyld.h
 include/llvm/ExecutionEngine/SectionMemoryManager.h
-include/llvm/Function.h
 include/llvm/GVMaterializer.h
-include/llvm/GlobalAlias.h
-include/llvm/GlobalValue.h
-include/llvm/GlobalVariable.h
-include/llvm/IRBuilder.h
+include/llvm/IR/
+include/llvm/IR/Argument.h
+include/llvm/IR/Attributes.h
+include/llvm/IR/BasicBlock.h
+include/llvm/IR/CallingConv.h
+include/llvm/IR/Constant.h
+include/llvm/IR/Constants.h
+include/llvm/IR/DataLayout.h
+include/llvm/IR/DerivedTypes.h
+include/llvm/IR/Function.h
+include/llvm/IR/GlobalAlias.h
+include/llvm/IR/GlobalValue.h
+include/llvm/IR/GlobalVariable.h
+include/llvm/IR/IRBuilder.h
+include/llvm/IR/InlineAsm.h
+include/llvm/IR/InstrTypes.h
+include/llvm/IR/Instruction.def
+include/llvm/IR/Instruction.h
+include/llvm/IR/Instructions.h
+include/llvm/IR/IntrinsicInst.h
+include/llvm/IR/Intrinsics.gen
+include/llvm/IR/Intrinsics.h
+include/llvm/IR/Intrinsics.td
+include/llvm/IR/IntrinsicsARM.td
+include/llvm/IR/IntrinsicsHexagon.td
+include/llvm/IR/IntrinsicsMips.td
+include/llvm/IR/IntrinsicsNVVM.td
+include/llvm/IR/IntrinsicsPowerPC.td
+include/llvm/IR/IntrinsicsR600.td
+include/llvm/IR/IntrinsicsX86.td
+include/llvm/IR/IntrinsicsXCore.td
+include/llvm/IR/LLVMContext.h
+include/llvm/IR/MDBuilder.h
+include/llvm/IR/Metadata.h
+include/llvm/IR/Module.h
+include/llvm/IR/OperandTraits.h
+include/llvm/IR/Operator.h
+include/llvm/IR/SymbolTableListTraits.h
+include/llvm/IR/Type.h
+include/llvm/IR/TypeBuilder.h
+include/llvm/IR/TypeFinder.h
+include/llvm/IR/Use.h
+include/llvm/IR/User.h
+include/llvm/IR/Value.h
+include/llvm/IR/ValueSymbolTable.h
+include/llvm/IRReader/
+include/llvm/IRReader/IRReader.h
 include/llvm/InitializePasses.h
-include/llvm/InlineAsm.h
 include/llvm/InstVisitor.h
-include/llvm/InstrTypes.h
-include/llvm/Instruction.def
-include/llvm/Instruction.h
-include/llvm/Instructions.h
-include/llvm/IntrinsicInst.h
-include/llvm/Intrinsics.gen
-include/llvm/Intrinsics.h
-include/llvm/Intrinsics.td
-include/llvm/IntrinsicsARM.td
-include/llvm/IntrinsicsHexagon.td
-include/llvm/IntrinsicsMips.td
-include/llvm/IntrinsicsNVVM.td
-include/llvm/IntrinsicsPowerPC.td
-include/llvm/IntrinsicsR600.td
-include/llvm/IntrinsicsX86.td
-include/llvm/IntrinsicsXCore.td
-include/llvm/LLVMContext.h
+include/llvm/LinkAllIR.h
 include/llvm/LinkAllPasses.h
-include/llvm/LinkAllVMCore.h
 include/llvm/Linker.h
 include/llvm/MC/
-include/llvm/MC/EDInstInfo.h
 include/llvm/MC/MCAsmBackend.h
 include/llvm/MC/MCAsmInfo.h
 include/llvm/MC/MCAsmInfoCOFF.h
@@ -811,7 +841,6 @@ include/llvm/MC/MCSectionMachO.h
 include/llvm/MC/MCStreamer.h
 include/llvm/MC/MCSubtargetInfo.h
 include/llvm/MC/MCSymbol.h
-include/llvm/MC/MCTargetAsmLexer.h
 include/llvm/MC/MCTargetAsmParser.h
 include/llvm/MC/MCValue.h
 include/llvm/MC/MCWin64EH.h
@@ -819,9 +848,6 @@ include/llvm/MC/MCWinCOFFObjectWriter.h
 include/llvm/MC/MachineLocation.h
 include/llvm/MC/SectionKind.h
 include/llvm/MC/SubtargetFeature.h
-include/llvm/MDBuilder.h
-include/llvm/Metadata.h
-include/llvm/Module.h
 include/llvm/Object/
 include/llvm/Object/Archive.h
 include/llvm/Object/Binary.h
@@ -833,8 +859,6 @@ include/llvm/Object/MachOFormat.h
 include/llvm/Object/MachOObject.h
 include/llvm/Object/ObjectFile.h
 include/llvm/Object/RelocVisitor.h
-include/llvm/OperandTraits.h
-include/llvm/Operator.h
 include/llvm/Option/
 include/llvm/Option/Arg.h
 include/llvm/Option/ArgList.h
@@ -852,6 +876,7 @@ include/llvm/Support/
 include/llvm/Support/AIXDataTypesFix.h
 include/llvm/Support/AlignOf.h
 include/llvm/Support/Allocator.h
+include/llvm/Support/ArrayRecycler.h
 include/llvm/Support/Atomic.h
 include/llvm/Support/BlockFrequency.h
 include/llvm/Support/BranchProbability.h
@@ -865,6 +890,7 @@ include/llvm/Support/CommandLine.h
 include/llvm/Support/Compiler.h
 include/llvm/Support/ConstantFolder.h
 include/llvm/Support/ConstantRange.h
+include/llvm/Support/ConvertUTF.h
 include/llvm/Support/CrashRecoveryContext.h
 include/llvm/Support/DOTGraphTraits.h
 include/llvm/Support/DataExtractor.h
@@ -880,6 +906,7 @@ include/llvm/Support/ELF.h
 include/llvm/Support/Endian.h
 include/llvm/Support/Errno.h
 include/llvm/Support/ErrorHandling.h
+include/llvm/Support/ErrorOr.h
 include/llvm/Support/FEnv.h
 include/llvm/Support/FileOutputBuffer.h
 include/llvm/Support/FileSystem.h
@@ -890,7 +917,6 @@ include/llvm/Support/GCOV.h
 include/llvm/Support/GetElementPtrTypeIterator.h
 include/llvm/Support/GraphWriter.h
 include/llvm/Support/Host.h
-include/llvm/Support/IRReader.h
 include/llvm/Support/IncludeFile.h
 include/llvm/Support/InstIterator.h
 include/llvm/Support/IntegersSubset.h
@@ -946,6 +972,7 @@ include/llvm/Support/Timer.h
 include/llvm/Support/ToolOutputFile.h
 include/llvm/Support/Valgrind.h
 include/llvm/Support/ValueHandle.h
+include/llvm/Support/Watchdog.h
 include/llvm/Support/Win64EH.h
 include/llvm/Support/YAMLParser.h
 include/llvm/Support/YAMLTraits.h
@@ -954,7 +981,6 @@ include/llvm/Support/raw_os_ostream.h
 include/llvm/Support/raw_ostream.h
 include/llvm/Support/system_error.h
 include/llvm/Support/type_traits.h
-include/llvm/SymbolTableListTraits.h
 include/llvm/TableGen/
 include/llvm/TableGen/Error.h
 include/llvm/TableGen/Main.h
@@ -962,6 +988,7 @@ include/llvm/TableGen/Record.h
 include/llvm/TableGen/StringMatcher.h
 include/llvm/TableGen/TableGenBackend.h
 include/llvm/Target/
+include/llvm/Target/CostTable.h
 include/llvm/Target/Mangler.h
 include/llvm/Target/Target.td
 include/llvm/Target/TargetCallingConv.h
@@ -982,18 +1009,17 @@ include/llvm/Target/TargetSchedule.td
 include/llvm/Target/TargetSelectionDAG.td
 include/llvm/Target/TargetSelectionDAGInfo.h
 include/llvm/Target/TargetSubtargetInfo.h
-include/llvm/Target/TargetTransformImpl.h
-include/llvm/TargetTransformInfo.h
 include/llvm/Transforms/
 include/llvm/Transforms/IPO/
 include/llvm/Transforms/IPO.h
 include/llvm/Transforms/IPO/InlinerPass.h
 include/llvm/Transforms/IPO/PassManagerBuilder.h
 include/llvm/Transforms/Instrumentation.h
+include/llvm/Transforms/ObjCARC.h
 include/llvm/Transforms/Scalar.h
 include/llvm/Transforms/Utils/
-include/llvm/Transforms/Utils/AddrModeMatcher.h
 include/llvm/Transforms/Utils/BasicBlockUtils.h
+include/llvm/Transforms/Utils/BlackList.h
 include/llvm/Transforms/Utils/BuildLibCalls.h
 include/llvm/Transforms/Utils/BypassSlowDivision.h
 include/llvm/Transforms/Utils/Cloning.h
@@ -1011,13 +1037,6 @@ include/llvm/Transforms/Utils/UnifyFunctionExitNodes.h
 include/llvm/Transforms/Utils/UnrollLoop.h
 include/llvm/Transforms/Utils/ValueMapper.h
 include/llvm/Transforms/Vectorize.h
-include/llvm/Type.h
-include/llvm/TypeBuilder.h
-include/llvm/TypeFinder.h
-include/llvm/Use.h
-include/llvm/User.h
-include/llvm/Value.h
-include/llvm/ValueSymbolTable.h
 lib/BugpointPasses.so
 lib/LLVMHello.so
 lib/clang/
@@ -1049,10 +1068,13 @@ ${CLANG_INCLUDE_PATH}/module.map
 ${CLANG_INCLUDE_PATH}/nmmintrin.h
 ${CLANG_INCLUDE_PATH}/pmmintrin.h
 ${CLANG_INCLUDE_PATH}/popcntintrin.h
+${CLANG_INCLUDE_PATH}/prfchwintrin.h
+${CLANG_INCLUDE_PATH}/rdseedintrin.h
 ${CLANG_INCLUDE_PATH}/rtmintrin.h
 ${CLANG_INCLUDE_PATH}/sanitizer/
 ${CLANG_INCLUDE_PATH}/sanitizer/asan_interface.h
 ${CLANG_INCLUDE_PATH}/sanitizer/common_interface_defs.h
+${CLANG_INCLUDE_PATH}/sanitizer/linux_syscall_hooks.h
 ${CLANG_INCLUDE_PATH}/sanitizer/msan_interface.h
 ${CLANG_INCLUDE_PATH}/smmintrin.h
 ${CLANG_INCLUDE_PATH}/stdalign.h
@@ -1060,6 +1082,7 @@ ${CLANG_INCLUDE_PATH}/stdarg.h
 ${CLANG_INCLUDE_PATH}/stdbool.h
 ${CLANG_INCLUDE_PATH}/stddef.h
 ${CLANG_INCLUDE_PATH}/stdint.h
+${CLANG_INCLUDE_PATH}/stdnoreturn.h
 ${CLANG_INCLUDE_PATH}/tgmath.h
 ${CLANG_INCLUDE_PATH}/tmmintrin.h
 ${CLANG_INCLUDE_PATH}/unwind.h
@@ -1086,6 +1109,7 @@ lib/libLLVMCodeGen.a
 lib/libLLVMCore.a
 lib/libLLVMDebugInfo.a
 lib/libLLVMExecutionEngine.a
+lib/libLLVMIRReader.a
 lib/libLLVMInstCombine.a
 lib/libLLVMInstrumentation.a
 lib/libLLVMInterpreter.a
@@ -1095,6 +1119,7 @@ lib/libLLVMMC.a
 lib/libLLVMMCDisassembler.a
 lib/libLLVMMCJIT.a
 lib/libLLVMMCParser.a
+lib/libLLVMObjCARCOpts.a
 lib/libLLVMObject.a
 lib/libLLVMOption.a
 lib/libLLVMRuntimeDyld.a
@@ -1149,6 +1174,7 @@ share/llvm/cmake/
 share/llvm/cmake/AddLLVM.cmake
 share/llvm/cmake/AddLLVMDefinitions.cmake
 share/llvm/cmake/ChooseMSVCCRT.cmake
+share/llvm/cmake/GetSVN.cmake
 share/llvm/cmake/HandleLLVMOptions.cmake
 share/llvm/cmake/LLVM-Config.cmake
 share/llvm/cmake/LLVMConfig.cmake
@@ -1178,6 +1204,8 @@ share/llvm/sorttable.js
 @man share/man/man1/llvm-nm.rst.1
 @man share/man/man1/llvm-prof.rst.1
 @man share/man/man1/llvm-ranlib.rst.1
+@man share/man/man1/llvm-readobj.rst.1
 @man share/man/man1/llvm-stress.rst.1
+@man share/man/man1/llvm-symbolizer.rst.1
 @man share/man/man1/opt.rst.1
 @man share/man/man1/tblgen.rst.1
