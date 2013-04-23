@@ -1,6 +1,7 @@
-$OpenBSD$
+$OpenBSD: patch-Source_WTF_wtf_StackBounds_cpp,v 1.1 2013/04/23 09:40:58 landry Exp $
+https://bugs.webkit.org/show_bug.cgi?id=114978
 --- Source/WTF/wtf/StackBounds.cpp.orig	Thu Jun 14 06:23:17 2012
-+++ Source/WTF/wtf/StackBounds.cpp	Fri Apr 19 19:47:05 2013
++++ Source/WTF/wtf/StackBounds.cpp	Mon Apr 22 11:13:12 2013
 @@ -60,10 +60,10 @@ namespace WTF {
  // These platforms should now be working correctly:
  //     DARWIN, QNX, UNIX
@@ -23,12 +24,17 @@ $OpenBSD$
  
  void StackBounds::initialize()
  {
-@@ -125,7 +125,7 @@ void StackBounds::initialize()
+@@ -125,7 +125,12 @@ void StackBounds::initialize()
      stack_t stack;
      pthread_stackseg_np(thread, &stack);
      m_origin = stack.ss_sp;
 -    m_bound = estimateStackBound(m_origin);
++#if defined(__hppa__) || defined(__hppa64__)
++    // hppa's stack grows up
++    m_bound = static_cast<char*>(m_origin) + stack.ss_size;
++#else
 +    m_bound = static_cast<char*>(m_origin) - stack.ss_size;
++#endif
  }
  
  #elif OS(UNIX)
