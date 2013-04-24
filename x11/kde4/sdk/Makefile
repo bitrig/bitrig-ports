@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.2 2013/04/24 19:04:15 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2013/04/24 19:12:58 zhuk Exp $
 
 COMMENT =	KDE software development kit
 DISTNAME =	kdesdk-${MODKDE4_VERSION}
