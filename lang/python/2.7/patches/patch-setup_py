@@ -1,6 +1,6 @@
 $OpenBSD: patch-setup_py,v 1.6 2013/04/28 22:42:41 fgsch Exp $
 --- setup.py.orig	Sat Apr  6 16:02:41 2013
-+++ setup.py	Tue Apr 30 19:02:54 2013
++++ setup.py	Tue Apr 30 19:08:08 2013
 @@ -35,6 +35,11 @@ COMPILED_WITH_PYDEBUG = ('--with-pydebug' in sysconfig
  # This global variable is used to hold the list of modules to be disabled.
  disabled_module_list = []
