@@ -1,7 +1,7 @@
 $OpenBSD$
---- binutils/Makefile.bsd-wrapper.orig	Sat Jan 26 16:04:04 2013
-+++ binutils/Makefile.bsd-wrapper	Tue Feb  5 13:41:31 2013
-@@ -8,20 +8,17 @@ CONF_SUBDIRS=	opcodes bfd
+--- binutils/Makefile.bsd-wrapper.orig	Tue Mar 26 19:06:40 2013
++++ binutils/Makefile.bsd-wrapper	Sat Apr 27 21:40:54 2013
+@@ -5,9 +5,9 @@
  CFLAGS+=	${PIE_DEFAULT}
  # This allows moving the whole binutils installation around for 
  # testing purposes
@@ -12,22 +12,23 @@ $OpenBSD$
 +.if ${LOCALBASE} != "/usr"
 +MANDIR=${LOCALBASE}/share/man/man
  .endif
-+LOCALBASE=/usr
-+SYSCONFDIR=/etc
  
- MAN=		binutils/doc/addr2line.1 binutils/doc/objcopy.1 \
+ .if ${BINUTILS_VERSION} == "binutils-2.17"
+@@ -26,13 +26,6 @@ MAN=		binutils/doc/addr2line.1 binutils/doc/objcopy.1 
  		binutils/doc/objdump.1 binutils/doc/readelf.1 \
  		c++filt.1
  
+-.if !defined(TARGET_ARCH)
 -CONF_SUBDIRS+=	gdb
 -SUBDIRS+=	gdb
 -INST_SUBDIRS+=	gdb
 -MAN+=		gdb/gdb.1
+-.endif
 -
  .if ${ELF_TOOLCHAIN:L} == "yes"
  SUBDIRS+=	binutils ld gas
  CONF_SUBDIRS+=	binutils ld gas
-@@ -55,14 +52,15 @@ all:	config.status
+@@ -68,14 +61,15 @@ all:	config.status
  	  CONFIGURE_HOST_MODULES='${CONFIGURE_HOST_MODULES}' \
  	  ${MAKE} CC="${CC}" \
  	    CFLAGS="${CFLAGS} ${COPTS}" LDFLAGS=${LDSTATIC} \
@@ -45,7 +46,7 @@ $OpenBSD$
  .if ${ELF_TOOLCHAIN:L} != "yes"
  	cd ${.OBJDIR}/binutils && \
  	    ${MAKE} CC="${CC}" CFLAGS="${CFLAGS} ${COPTS}" \
-@@ -78,10 +76,17 @@ CF=
+@@ -91,10 +85,14 @@ CF=
  .endif
  
  do-config: .USE
@@ -53,19 +54,17 @@ $OpenBSD$
 +	PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin" \
  	MAKEINFO='makeinfo --no-split' \
 -	sh ${.CURDIR}/configure --prefix=${PREFIX} \
+-	    --infodir='$${prefix}/share/info' \
 +	sh ${.CURDIR}/configure --prefix=${LOCALBASE} \
- 	    --infodir='$${prefix}/share/info' \
 +	    --bindir=${LOCALBASE}/bin \
 +	    --mandir=${LOCALBASE}/man \
 +	    --includedir=${LOCALBASE}/include \
-+	    --infodir=${LOCALBASE}/info \
++	    --infodir=${LOCALBASE}/share/info \
 +	    --libdir=${LOCALBASE}/lib \
-+	    --localstatedir=/var \
-+	    --sysconfdir=${SYSCONFDIR} \
  	    --disable-nls --disable-gdbtk --disable-install-libbfd ${CF} \
  	    ${CONFIGTARGET}
  	cd ${.OBJDIR} && \
-@@ -108,18 +113,21 @@ config.status: do-config
+@@ -121,18 +119,21 @@ config.status: do-config
  # Need to pass SUBDIRS because of install-info
  install: maninstall
  	SUBDIRS='${INST_SUBDIRS}' ${MAKE} DESTDIR='${DESTDIR}' \
@@ -83,7 +82,7 @@ $OpenBSD$
 +	${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -o ${BINOWN} \
 +	    -g ${BINGRP} -m ${BINMODE} ${.OBJDIR}/cxxfilt/c++filt \
 +	    ${DESTDIR}${LOCALBASE}/bin
- .if ${ELF_TOOLCHAIN:L} != "yes"
+ .if ${ELF_TOOLCHAIN:L} != "yes" && ${BINUTILS_VERSION} != "binutils-2.17"
  	cd ${.OBJDIR}/binutils && \
  		${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -o ${BINOWN} \
 -		    -g ${BINGRP} -m ${BINMODE} objdump ${DESTDIR}${PREFIX}/bin

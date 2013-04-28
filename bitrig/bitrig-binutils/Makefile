@@ -3,8 +3,7 @@ DPB_PROPERTIES= 	parallel
 
 COMMENT =		Bitrig binutils
 
-DISTNAME =		bitrig-binutils-0.6
-REVISION =		0
+DISTNAME =		bitrig-binutils-0.7
 EXTRACT_SUFX =		.tgz
 CATEGORIES =		bitrig devel
 SHARED_LIBS =		iberty 10.1

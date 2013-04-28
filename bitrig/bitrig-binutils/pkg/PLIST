@@ -12,14 +12,13 @@
 @bin bin/readelf
 @bin bin/strings
 @bin bin/strip
-info/
-@info info/as.info
-@info info/binutils.info
-@info info/ld.info
 lib/libiberty.a
 @lib lib/libiberty.so.${LIBiberty_VERSION}
 lib/libiberty_p.a
 libdata/ldscripts/
+@info share/info/as.info
+@info share/info/binutils.info
+@info share/info/ld.info
 @info share/info/libiberty.info
 @man share/man/man1/addr2line.1
 @man share/man/man1/ar.1
