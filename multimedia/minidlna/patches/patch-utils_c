@@ -1,19 +1,10 @@
-$OpenBSD: patch-utils_c,v 1.1.1.1 2012/10/10 10:45:05 sthen Exp $
+$OpenBSD: patch-utils_c,v 1.2 2013/05/07 20:37:23 sthen Exp $
 
 avoid mkdir /, from freebsd ports
 
---- utils.c.orig	Tue Feb 14 13:26:53 2012
-+++ utils.c	Sat Dec 15 19:04:16 2012
-@@ -19,7 +19,7 @@
- #include <ctype.h>
- #include <string.h>
- #include <stdlib.h>
--#include <linux/limits.h>
-+#include <sys/syslimits.h>
- #include <sys/stat.h>
- #include <unistd.h>
- #include <sys/types.h>
-@@ -31,7 +31,7 @@
+--- utils.c.orig	Wed Apr  3 01:29:21 2013
++++ utils.c	Fri May 10 13:27:36 2013
+@@ -33,7 +33,7 @@
  #include "upnpglobalvars.h"
  #include "log.h"
  
@@ -22,7 +13,7 @@ avoid mkdir /, from freebsd ports
  strcatf(struct string_s *str, const char *fmt, ...)
  {
  	int ret;
-@@ -45,7 +45,7 @@ strcatf(struct string_s *str, const char *fmt, ...)
+@@ -52,14 +52,14 @@ strcatf(struct string_s *str, const char *fmt, ...)
  	return ret;
  }
  
@@ -31,7 +22,15 @@ avoid mkdir /, from freebsd ports
  strncpyt(char *dst, const char *src, size_t len)
  {
  	strncpy(dst, src, len);
-@@ -253,13 +253,17 @@ make_dir(char * path, mode_t mode)
+ 	dst[len-1] = '\0';
+ }
+ 
+-inline int
++int
+ xasprintf(char **strp, char *fmt, ...)
+ {
+ 	va_list args;
+@@ -264,7 +264,9 @@ make_dir(char * path, mode_t mode)
  			++s;
  		}
  
@@ -42,12 +41,3 @@ avoid mkdir /, from freebsd ports
  			/* If we failed for any other reason than the directory
  			 * already exists, output a diagnostic and return -1.*/
  			if (errno != EEXIST || (stat(path, &st) < 0 || !S_ISDIR(st.st_mode))) {
--				DPRINTF(E_WARN, L_GENERAL, "make_dir: cannot create directory '%s'\n", path);
- 				if (c)
- 					*s = c;
-+				DPRINTF(E_WARN, L_GENERAL, "make_dir: cannot "
-+				    "create directory '%.*s' (to create %s): "
-+				    "%s\n", s - path, path, path, strerror(e));
- 				return -1;
- 			}
- 		}

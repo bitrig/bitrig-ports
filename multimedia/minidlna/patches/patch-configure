@@ -1,0 +1,22 @@
+$OpenBSD$
+--- configure.orig	Fri May 10 13:17:18 2013
++++ configure	Fri May 10 13:18:59 2013
+@@ -8421,7 +8421,7 @@ $as_echo "#define SOLARIS 1" >>confdefs.h
+     *-*-freebsd*)
+         FREEBSD_OS=1
+         ;;
+-    *-*-openbsd*)
++    *-*-openbsd* | *-*-bitirg*)
+         OPENBSD_OS=1
+         ;;
+     *-*-linux*)
+@@ -9989,6 +9989,9 @@ $as_echo "#define SOLARIS_KSTATS 1" >>confdefs.h
+         openbsd*)
+                 OS_URL=http://www.openbsd.org/
+                 ;;
++	bitrig*)
++		OS_URL=http://www.bitrig.org/
++		;;
+         *)
+                 echo "Unknown OS : $target_os"
+                 ;;
