@@ -1,0 +1,6 @@
+SHA256 (clang-3.4.src.tar.gz) = qrNhlFUkN9sfPzd2EaKRzdBz8IZ9X4ErCSIRjS9GwwQ=
+SHA256 (compiler-rt-3.4.src.tar.gz) = WlX1Du/PVVXwOVZ9VtxnFrqTfePwcyDrECP+P5aUaHs=
+SHA256 (llvm-3.4.src.tar.gz) = BqUbN5f2gOhiOICOgCM9PGxq8tmieTX+ZTdIMuzgxL8=
+SIZE (clang-3.4.src.tar.gz) = 82932834
+SIZE (compiler-rt-3.4.src.tar.gz) = 5987262
+SIZE (llvm-3.4.src.tar.gz) = 153929129
