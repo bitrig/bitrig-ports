@@ -29,12 +29,12 @@ WANTLIB =	c m pthread stdc++
 MASTER_SITES = https://www.bitrig.org/pub/distfiles/
 
 DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
-DISTFILES +=	compiler-rt-20121119.tar.gz
+DISTFILES +=	compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 
 post-extract:
 	@mv ${WRKDIR}/clang-${LLVM_V}.src ${WRKDIST}/tools/clang
-	@mv ${WRKDIR}/compiler-rt ${WRKDIST}/projects/compiler-rt
+	@mv ${WRKDIR}/compiler-rt-${LLVM_V}.src ${WRKDIST}/projects/compiler-rt
 
 MODULES =	devel/cmake \
 		lang/python
@@ -116,30 +116,30 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKSRC}/docs/CommandGuide/man/man1/* \
 	    ${PREFIX}/share/man/man1
-	${INSTALL_DATA} ${WRKBUILD}/lib/clang/3.3/lib/bitrig/libclang_rt.${INSTALL_ARCH}.a \
+	${INSTALL_DATA} ${WRKBUILD}/lib/clang/${LLVM_V}/lib/bitrig/libclang_rt.${INSTALL_ARCH}.a \
 	    ${PREFIX}/lib/libclang_rt.${ARCH}.a
 
 git:
 	rm -rf ${DISTDIR}/llvm* ${DISTDIR}/clang* ${DISTDIR}/compiler-rt*
 	@mkdir -p ${TMPGIT}
-	if test -d ${TMPGIT}/llvm-3.3.src; then \
-		(cd ${TMPGIT}/llvm-3.3.src && git pull) \
+	if test -d ${TMPGIT}/llvm-${LLVM_V}.src; then \
+		(cd ${TMPGIT}/llvm-${LLVM_V}.src && git pull) \
 	else \
-		(cd ${TMPGIT} && git clone http://llvm.org/git/llvm.git llvm-3.3.src) \
+		(cd ${TMPGIT} && git clone -b release_33 http://llvm.org/git/llvm.git llvm-${LLVM_V}.src) \
 	fi
-	if test -d ${TMPGIT}/clang-3.3.src; then \
-		(cd ${TMPGIT}/clang-3.3.src && git pull) \
+	if test -d ${TMPGIT}/clang-${LLVM_V}.src; then \
+		(cd ${TMPGIT}/clang-${LLVM_V}.src && git pull) \
 	else \
-		(cd ${TMPGIT} && git clone http://llvm.org/git/clang.git clang-3.3.src) \
+		(cd ${TMPGIT} && git clone -b release_33 http://llvm.org/git/clang.git clang-${LLVM_V}.src) \
 	fi	
-	if test -d ${TMPGIT}/compiler-rt; then \
-		(cd ${TMPGIT}/compiler-rt && git pull) \
+	if test -d ${TMPGIT}/compiler-rt-${LLVM_V}.src; then \
+		(cd ${TMPGIT}/compiler-rt-${LLVM_V}.src && git pull) \
 	else \
-		(cd ${TMPGIT} && git clone http://llvm.org/git/compiler-rt.git) \
+		(cd ${TMPGIT} && git clone -b release_33 http://llvm.org/git/compiler-rt.git compiler-rt-${LLVM_V}.src) \
 	fi
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/llvm-3.3.src.tar.gz llvm-3.3.src)
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/clang-3.3.src.tar.gz clang-3.3.src)
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/compiler-rt-20121119.tar.gz compiler-rt)
+	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/llvm-${LLVM_V}.src.tar.gz llvm-${LLVM_V}.src)
+	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/clang-${LLVM_V}.src.tar.gz clang-${LLVM_V}.src)
+	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/compiler-rt-${LLVM_V}.src.tar.gz compiler-rt-${LLVM_V}.src)
 	make makesum
 	rm -rf ${TMPGIT}
 

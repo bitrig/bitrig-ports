@@ -178,12 +178,14 @@ include/clang/Basic/AttrKinds.h
 include/clang/Basic/AttrList.inc
 include/clang/Basic/Builtins.def
 include/clang/Basic/Builtins.h
+include/clang/Basic/BuiltinsAArch64.def
 include/clang/Basic/BuiltinsARM.def
 include/clang/Basic/BuiltinsHexagon.def
 include/clang/Basic/BuiltinsMips.def
 include/clang/Basic/BuiltinsNVPTX.def
 include/clang/Basic/BuiltinsPPC.def
 include/clang/Basic/BuiltinsX86.def
+include/clang/Basic/CapturedStmt.h
 include/clang/Basic/CharInfo.h
 include/clang/Basic/CommentOptions.h
 include/clang/Basic/Diagnostic.h
@@ -323,6 +325,7 @@ include/clang/Lex/HeaderSearchOptions.h
 include/clang/Lex/LexDiagnostic.h
 include/clang/Lex/Lexer.h
 include/clang/Lex/LiteralSupport.h
+include/clang/Lex/MacroArgs.h
 include/clang/Lex/MacroInfo.h
 include/clang/Lex/ModuleLoader.h
 include/clang/Lex/ModuleMap.h
@@ -341,6 +344,7 @@ include/clang/Lex/Token.h
 include/clang/Lex/TokenConcatenation.h
 include/clang/Lex/TokenLexer.h
 include/clang/Parse/
+include/clang/Parse/AttrExprArgs.inc
 include/clang/Parse/AttrLateParsed.inc
 include/clang/Parse/ParseAST.h
 include/clang/Parse/ParseDiagnostic.h
@@ -504,7 +508,6 @@ include/llvm/ADT/ImmutableIntervalMap.h
 include/llvm/ADT/ImmutableList.h
 include/llvm/ADT/ImmutableMap.h
 include/llvm/ADT/ImmutableSet.h
-include/llvm/ADT/InMemoryStruct.h
 include/llvm/ADT/IndexedMap.h
 include/llvm/ADT/IntEqClasses.h
 include/llvm/ADT/IntervalMap.h
@@ -733,6 +736,7 @@ include/llvm/ExecutionEngine/JITMemoryManager.h
 include/llvm/ExecutionEngine/MCJIT.h
 include/llvm/ExecutionEngine/OProfileWrapper.h
 include/llvm/ExecutionEngine/ObjectBuffer.h
+include/llvm/ExecutionEngine/ObjectCache.h
 include/llvm/ExecutionEngine/ObjectImage.h
 include/llvm/ExecutionEngine/RuntimeDyld.h
 include/llvm/ExecutionEngine/SectionMemoryManager.h
@@ -856,7 +860,6 @@ include/llvm/Object/ELF.h
 include/llvm/Object/Error.h
 include/llvm/Object/MachO.h
 include/llvm/Object/MachOFormat.h
-include/llvm/Object/MachOObject.h
 include/llvm/Object/ObjectFile.h
 include/llvm/Object/RelocVisitor.h
 include/llvm/Option/
@@ -880,6 +883,7 @@ include/llvm/Support/ArrayRecycler.h
 include/llvm/Support/Atomic.h
 include/llvm/Support/BlockFrequency.h
 include/llvm/Support/BranchProbability.h
+include/llvm/Support/CBindingWrapping.h
 include/llvm/Support/CFG.h
 include/llvm/Support/COFF.h
 include/llvm/Support/CallSite.h
@@ -888,6 +892,7 @@ include/llvm/Support/Casting.h
 include/llvm/Support/CodeGen.h
 include/llvm/Support/CommandLine.h
 include/llvm/Support/Compiler.h
+include/llvm/Support/Compression.h
 include/llvm/Support/ConstantFolder.h
 include/llvm/Support/ConstantRange.h
 include/llvm/Support/ConvertUTF.h
