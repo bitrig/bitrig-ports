@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.609 2013/05/20 09:16:36 giovanni Exp $
+# $OpenBSD: Makefile,v 1.610 2013/05/29 20:44:52 jasper Exp $
 
      SUBDIR =
      SUBDIR += ajaxterm
@@ -530,7 +530,6 @@
      SUBDIR += wwwoffle
      SUBDIR += xapian-omega
      SUBDIR += xcache
-     SUBDIR += xmhtml
      SUBDIR += xombrero
      SUBDIR += yaws
      SUBDIR += youtube-dl
