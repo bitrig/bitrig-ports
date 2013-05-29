@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.92 2013/03/21 08:46:34 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.93 2013/05/29 14:08:06 jasper Exp $
 
 COMMENT=	shell-like command line ftp and sftp client
 
-DISTNAME=	lftp-4.3.3
+DISTNAME=	lftp-4.4.5
 CATEGORIES=	net
 
 REVISION=	0
@@ -15,6 +15,7 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 PERMIT_PACKAGE_CDROM=   Yes
 
 WANTLIB=	c crypto curses expat m readline ssl stdc++ util
+
 LIB_DEPENDS=	devel/readline
 
 MASTER_SITES=	http://ftp.yars.free.net/pub/source/lftp/ \
@@ -22,7 +23,7 @@ MASTER_SITES=	http://ftp.yars.free.net/pub/source/lftp/ \
 		ftp://ftp.yars.free.net/pub/source/lftp/
 
 LIBTOOL_FLAGS=	--tag=disable-shared
-CONFIGURE_STYLE= gnu 
+CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS=	--with-openssl \
 		--without-gnutls \
 		--disable-shared
