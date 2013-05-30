@@ -1,9 +1,6 @@
-$OpenBSD: patch-configure,v 1.10 2013/04/18 13:57:14 ajacoutot Exp $
-
-Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
+$OpenBSD: patch-configure,v 1.13 2013/06/01 19:19:16 ajacoutot Exp $
 
 /var/lib -> /var/db
-
 --- configure.orig	Mon Apr  1 23:03:05 2013
 +++ configure		Thu Apr 18 15:51:58 2013
 @@ -4937,7 +4937,7 @@ else
