@@ -744,7 +744,6 @@ include/llvm/ExecutionEngine/SectionMemoryManager.h
 include/llvm/GVMaterializer.h
 include/llvm/IR/
 include/llvm/IR/Argument.h
-include/llvm/IR/AsmWriter.h
 include/llvm/IR/Attributes.h
 include/llvm/IR/BasicBlock.h
 include/llvm/IR/CallingConv.h
@@ -814,9 +813,11 @@ include/llvm/MC/MCELFObjectWriter.h
 include/llvm/MC/MCELFStreamer.h
 include/llvm/MC/MCELFSymbolFlags.h
 include/llvm/MC/MCExpr.h
+include/llvm/MC/MCExternalSymbolizer.h
 include/llvm/MC/MCFixedLenDisassembler.h
 include/llvm/MC/MCFixup.h
 include/llvm/MC/MCFixupKindInfo.h
+include/llvm/MC/MCFunction.h
 include/llvm/MC/MCInst.h
 include/llvm/MC/MCInstBuilder.h
 include/llvm/MC/MCInstPrinter.h
@@ -828,8 +829,10 @@ include/llvm/MC/MCLabel.h
 include/llvm/MC/MCMachOSymbolFlags.h
 include/llvm/MC/MCMachObjectWriter.h
 include/llvm/MC/MCModule.h
+include/llvm/MC/MCObjectDisassembler.h
 include/llvm/MC/MCObjectFileInfo.h
 include/llvm/MC/MCObjectStreamer.h
+include/llvm/MC/MCObjectSymbolizer.h
 include/llvm/MC/MCObjectWriter.h
 include/llvm/MC/MCParser/
 include/llvm/MC/MCParser/AsmCond.h
@@ -839,6 +842,7 @@ include/llvm/MC/MCParser/MCAsmParser.h
 include/llvm/MC/MCParser/MCAsmParserExtension.h
 include/llvm/MC/MCParser/MCParsedAsmOperand.h
 include/llvm/MC/MCRegisterInfo.h
+include/llvm/MC/MCRelocationInfo.h
 include/llvm/MC/MCSchedule.h
 include/llvm/MC/MCSection.h
 include/llvm/MC/MCSectionCOFF.h
@@ -847,6 +851,7 @@ include/llvm/MC/MCSectionMachO.h
 include/llvm/MC/MCStreamer.h
 include/llvm/MC/MCSubtargetInfo.h
 include/llvm/MC/MCSymbol.h
+include/llvm/MC/MCSymbolizer.h
 include/llvm/MC/MCTargetAsmParser.h
 include/llvm/MC/MCValue.h
 include/llvm/MC/MCWin64EH.h
@@ -969,6 +974,7 @@ include/llvm/Support/Solaris.h
 include/llvm/Support/SourceMgr.h
 include/llvm/Support/StreamableMemoryObject.h
 include/llvm/Support/StringPool.h
+include/llvm/Support/StringRefMemoryObject.h
 include/llvm/Support/SwapByteOrder.h
 include/llvm/Support/SystemUtils.h
 include/llvm/Support/TargetFolder.h
