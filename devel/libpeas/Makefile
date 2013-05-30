@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.31 2013/04/18 09:00:54 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.32 2013/05/30 13:09:21 ajacoutot Exp $
 
 COMMENT=	gobject-based plugins engine
 
