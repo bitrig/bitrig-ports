@@ -1,9 +1,6 @@
-$OpenBSD: patch-configure,v 1.1 2013/03/29 10:08:49 ajacoutot Exp $
-
-Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
-
---- configure.orig	Mon Mar 25 07:40:46 2013
-+++ configure	Sat Apr 13 08:26:55 2013
+$OpenBSD$
+--- configure.orig	Sat Jun 29 12:18:44 2013
++++ configure	Sat Jun 29 12:19:37 2013
 @@ -4739,7 +4739,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -58,17 +55,7 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -12926,6 +12926,9 @@ else
- fi
- 
-     ;;
-+    *-*-openbsd* | *-*-bitrig*)
-+    DATADIRNAME=share
-+    ;;
-     *)
-     DATADIRNAME=lib
-     ;;
-@@ -13794,16 +13797,6 @@ _ACEOF
+@@ -13796,16 +13796,6 @@ _ACEOF
  # Check whether --enable-more-warnings was given.
  if test "${enable_more_warnings+set}" = set; then :
    enableval=$enable_more_warnings; set_more_warnings=no
