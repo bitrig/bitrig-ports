@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.50 2013/05/31 15:35:10 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.51 2013/06/01 18:56:08 ajacoutot Exp $
 
 COMMENT=		next generation GNOME shell
 
@@ -97,7 +97,6 @@ MODGNOME_DESKTOP_FILE=	Yes
 
 LIBTOOL_FLAGS= 		--tag=disable-static
 
-CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		--disable-static \
 			--without-systemd
 

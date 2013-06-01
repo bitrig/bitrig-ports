@@ -1,66 +1,10 @@
-$OpenBSD: patch-configure,v 1.10 2013/03/29 14:31:14 ajacoutot Exp $
+$OpenBSD: patch-configure,v 1.11 2013/06/01 18:56:09 ajacoutot Exp $
 
 https://bugzilla.gnome.org/show_bug.cgi?id=627126
 
-Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
-
---- configure.orig	Mon Oct 15 11:50:23 2012
-+++ configure	Fri Oct 19 16:10:23 2012
-@@ -4721,7 +4721,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
- 
--  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5152,7 +5152,7 @@ newos6*)
-   lt_cv_deplibs_check_method=pass_all
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-   else
-@@ -5536,7 +5536,7 @@ old_postuninstall_cmds=
- 
- if test -n "$RANLIB"; then
-   case $host_os in
--  openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
-     ;;
-   *)
-@@ -8049,7 +8049,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -8846,7 +8846,7 @@ rm -f core conftest.err conftest.$ac_objext \
-     *nto* | *qnx*)
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct=yes
- 	hardcode_shlibpath_var=no
-@@ -9842,7 +9842,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -11372,22 +11372,10 @@ install-data-am: install-gsettings-schemas
+--- configure.orig	Tue Mar 26 01:48:35 2013
++++ configure	Fri Mar 29 15:18:04 2013
+@@ -11440,22 +11440,10 @@ install-data-am: install-gsettings-schemas
  
  .SECONDARY: $(gsettings_SCHEMAS)
  
@@ -85,13 +29,3 @@ Fix DATADIRNAME: see LOCALBASE/share/aclocal/{glib-gettext.m4,intltool.m4}
  	test -n "$(GSETTINGS_DISABLE_SCHEMAS_COMPILE)$(DESTDIR)" || $(GLIB_COMPILE_SCHEMAS) $(gsettingsschemadir)
  
  uninstall-gsettings-schemas:
-@@ -12370,6 +12358,9 @@ else
-   DATADIRNAME=lib
- fi
- 
-+    ;;
-+    *-*-openbsd* | *-*-bitrig*)
-+    DATADIRNAME=share
-     ;;
-     *)
-     DATADIRNAME=lib
