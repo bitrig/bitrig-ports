@@ -1,7 +1,7 @@
 $OpenBSD: patch-gdb_python_python-config_py,v 1.2 2012/03/03 19:22:42 pascal Exp $
---- gdb/python/python-config.py.orig	Mon Jan 31 05:42:08 2011
-+++ gdb/python/python-config.py	Wed Feb 29 00:21:30 2012
-@@ -71,6 +71,8 @@ for opt in opt_flags:
+--- gdb/python/python-config.py.orig	Wed Dec 12 11:47:30 2012
++++ gdb/python/python-config.py	Tue Jun  4 11:32:39 2013
+@@ -72,6 +72,8 @@ for opt in opt_flags:
                      libs.insert(0, '-L' + getvar('LIBPL'))
                  elif os.name == 'nt':
                      libs.insert(0, '-L' + sysconfig.PREFIX + '/libs')
@@ -9,4 +9,4 @@ $OpenBSD: patch-gdb_python_python-config_py,v 1.2 2012/03/03 19:22:42 pascal Exp
 +                libs.insert(0, getvar('LDFLAGS'))
              if getvar('LINKFORSHARED') is not None:
                  libs.extend(getvar('LINKFORSHARED').split())
-         print to_unix_path(' '.join(libs))
+         print (to_unix_path(' '.join(libs)))

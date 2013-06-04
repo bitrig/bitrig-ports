@@ -7,6 +7,7 @@
 @comment include/gdb/
 @comment include/gdb/jit-reader.h
 @comment include/symcat.h
+info/
 @comment @info info/annotate.info
 @comment @info info/bfd.info
 @info info/gdb.info
@@ -17,6 +18,8 @@
 @comment lib/libbfd.la
 @comment lib/libopcodes.a
 @comment lib/libopcodes.la
+man/
+man/man1/
 @man man/man1/gdb.1
 @comment share/gdb/
 @comment share/gdb/python/
