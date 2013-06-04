@@ -1,0 +1,12 @@
+$OpenBSD$
+--- cmd-line-utils/libedit/chartype.h.orig	Mon Mar 11 06:29:19 2013
++++ cmd-line-utils/libedit/chartype.h	Tue Jun  4 19:52:03 2013
+@@ -49,7 +49,7 @@
+   TODO : Verify if FreeBSD & AIX stores ISO 10646 in wchar_t. */
+ #if !defined(__NetBSD__) && !defined(__sun) \
+   && !(defined(__APPLE__) && defined(__MACH__)) \
+-  && !defined(__FreeBSD__) && !defined(_AIX) && !defined(__OpenBSD__)
++  && !defined(__FreeBSD__) && !defined(_AIX) && !defined(__OpenBSD__) && !defined(__Bitrig__)
+ #ifndef __STDC_ISO_10646__
+ /* In many places it is assumed that the first 127 code points are ASCII
+  * compatible, so ensure wchar_t indeed does ISO 10646 and not some other

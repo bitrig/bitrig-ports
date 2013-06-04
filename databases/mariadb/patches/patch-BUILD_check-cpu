@@ -1,0 +1,12 @@
+$OpenBSD$
+--- BUILD/check-cpu.orig	Mon Mar 11 06:29:16 2013
++++ BUILD/check-cpu	Tue Jun  4 19:52:59 2013
+@@ -134,7 +134,7 @@ check_cpu () {
+     # Fallback when there is no /proc/cpuinfo
+     CPUINFO=" "
+     case "`uname -s`" in
+-      FreeBSD|OpenBSD)
++      FreeBSD|OpenBSD|Bitrig)
+         cpu_family=`uname -m`;
+         model_name=`sysctl -n hw.model`
+         ;;

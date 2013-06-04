@@ -1,0 +1,12 @@
+$OpenBSD$
+--- extra/yassl/taocrypt/include/misc.hpp.orig	Mon Mar 11 06:29:11 2013
++++ extra/yassl/taocrypt/include/misc.hpp	Tue Jun  4 19:46:59 2013
+@@ -172,7 +172,7 @@ void CleanUp();
+ #endif
+ 
+ 
+-#if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__)
++#if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__) || defined(__Bitrig__)
+ #	define TAOCRYPT_MALLOC_ALIGNMENT_IS_16
+ #endif
+ 

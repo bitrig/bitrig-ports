@@ -1,0 +1,12 @@
+$OpenBSD$
+--- BUILD/build_mccge.sh.orig	Mon Mar 11 06:29:16 2013
++++ BUILD/build_mccge.sh	Tue Jun  4 19:53:25 2013
+@@ -856,7 +856,7 @@ check_os()
+     Linux)
+       os="linux"
+       ;;
+-    FreeBSD|OpenBSD)
++    FreeBSD|OpenBSD|Bitrig)
+       os="bsd"
+       ;;
+     Darwin)

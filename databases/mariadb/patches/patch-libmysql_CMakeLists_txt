@@ -1,6 +1,6 @@
 $OpenBSD: patch-libmysql_CMakeLists_txt,v 1.1.1.1 2013/04/04 18:58:44 brad Exp $
 --- libmysql/CMakeLists.txt.orig	Mon Mar 11 06:29:13 2013
-+++ libmysql/CMakeLists.txt	Sun Mar 17 01:30:25 2013
++++ libmysql/CMakeLists.txt	Tue Jun  4 19:51:24 2013
 @@ -226,6 +226,8 @@ dynamic_column_get
  dynamic_column_prepare_decimal
  )
@@ -16,7 +16,7 @@ $OpenBSD: patch-libmysql_CMakeLists_txt,v 1.1.1.1 2013/04/04 18:58:44 brad Exp $
        SET(OS_SHARED_LIB_VERSION "${SHARED_LIB_MAJOR_VERSION}")
 -    ELSEIF(CMAKE_SYSTEM_NAME MATCHES "HP-UX")
 -      SET(OS_SHARED_LIB_VERSION "${SHARED_LIB_MAJOR_VERSION}.0")
-+    ELSEIF(CMAKE_SYSTEM_NAME MATCHES "HP-UX" OR CMAKE_SYSTEM_NAME MATCHES "OpenBSD")
++    ELSEIF(CMAKE_SYSTEM_NAME MATCHES "HP-UX" OR CMAKE_SYSTEM_NAME MATCHES "OpenBSD" OR CMAKE_SYSTEM_NAME MATCHES "Bitrig")
 +      IF(LIBVER_OVERRIDE)
 +        SET(OS_SHARED_LIB_VERSION "${LIBVER_OVERRIDE}")
 +      ELSE()
