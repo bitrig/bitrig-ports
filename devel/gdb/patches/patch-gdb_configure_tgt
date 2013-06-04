@@ -1,7 +1,7 @@
 $OpenBSD$
---- gdb/configure.tgt.orig	Wed Aug  1 15:48:44 2012
-+++ gdb/configure.tgt	Mon Oct 15 15:05:46 2012
-@@ -88,6 +88,11 @@ arm*-*-openbsd*)
+--- gdb/configure.tgt.orig	Tue Mar  5 08:37:10 2013
++++ gdb/configure.tgt	Tue Jun  4 10:31:30 2013
+@@ -100,6 +100,11 @@ arm*-*-openbsd*)
  	gdb_target_obs="arm-tdep.o armbsd-tdep.o armobsd-tdep.o obsd-tdep.o \
  			solib-svr4.o"
  	;;
@@ -13,7 +13,7 @@ $OpenBSD$
  arm*-*-symbianelf*)
  	# Target: SymbianOS/arm
  	gdb_target_obs="arm-tdep.o arm-symbian-tdep.o"
-@@ -188,6 +193,11 @@ i[34567]86-*-openbsd*)
+@@ -200,6 +205,11 @@ i[34567]86-*-openbsd*)
  	gdb_target_obs="i386-tdep.o i387-tdep.o i386bsd-tdep.o i386obsd-tdep.o \
  			bsd-uthread.o solib-svr4.o"
  	;;
@@ -25,7 +25,7 @@ $OpenBSD$
  i[34567]86-*-nto*)
  	# Target: Intel 386 running qnx6.
  	gdb_target_obs="i386-tdep.o i387-tdep.o solib-svr4.o \
-@@ -624,6 +634,12 @@ x86_64-*-openbsd*)
+@@ -668,6 +678,12 @@ x86_64-*-openbsd*)
  	# Target: OpenBSD/amd64
  	gdb_target_obs="amd64-tdep.o amd64obsd-tdep.o i386-tdep.o \
  			i387-tdep.o i386bsd-tdep.o i386obsd-tdep.o \
@@ -38,7 +38,7 @@ $OpenBSD$
  			bsd-uthread.o solib-svr4.o"
  	;;
  xtensa*-*-linux*)	gdb_target=linux
-@@ -649,6 +665,7 @@ case "${targ}" in
+@@ -693,6 +709,7 @@ case "${targ}" in
  *-*-nto*)	gdb_osabi=GDB_OSABI_QNXNTO ;;
  m68*-*-openbsd* | m88*-*-openbsd* | vax-*-openbsd*) ;;
  *-*-openbsd*)	gdb_osabi=GDB_OSABI_OPENBSD_ELF ;;

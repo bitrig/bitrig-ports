@@ -1,7 +1,7 @@
 $OpenBSD$
---- opcodes/configure.orig	Mon Oct 15 15:05:59 2012
-+++ opcodes/configure	Mon Oct 15 15:09:39 2012
-@@ -5738,7 +5738,7 @@ else
+--- opcodes/configure.orig	Wed Feb  6 18:22:25 2013
++++ opcodes/configure	Tue Jun  4 10:31:30 2013
+@@ -5739,7 +5739,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -10,7 +10,7 @@ $OpenBSD$
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -6168,7 +6168,7 @@ newos6*)
+@@ -6169,7 +6169,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -19,7 +19,7 @@ $OpenBSD$
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -6552,7 +6552,7 @@ old_postuninstall_cmds=
+@@ -6553,7 +6553,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -28,7 +28,7 @@ $OpenBSD$
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
-@@ -8765,7 +8765,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8774,7 +8774,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -37,7 +37,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    esac
-@@ -9558,7 +9558,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -9567,7 +9567,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -46,7 +46,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10546,7 +10546,7 @@ newsos6)
+@@ -10555,7 +10555,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
