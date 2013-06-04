@@ -23,20 +23,17 @@ PREFIX = 	/usr
 
 MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC} ${WRKSRC}/gdb
 
-WANTLIB = c expat kvm m ncurses pthread ${MODPY_WANTLIB} util z
+WANTLIB = c expat kvm m ncurses pthread util z
 
 #SEPARATE_BUILD = Yes
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--disable-nls \
 		--disable-werror \
 	 	--enable-target=all \
-		--with-python=${MODPY_BIN}
+		--with-python=no
 
 USE_GMAKE=	Yes
 
 USE_LIBTOOL =	Yes
-MODULES +=	lang/python
-LIB_DEPENDS += 	${MODPY_LIB_DEPENDS}
-MODPY_BUILDDEP = No
 
 .include <bsd.port.mk>

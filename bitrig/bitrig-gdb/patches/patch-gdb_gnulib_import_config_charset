@@ -1,0 +1,12 @@
+$OpenBSD$
+--- gdb/gnulib/import/config.charset.orig	Tue Jun  4 14:07:28 2013
++++ gdb/gnulib/import/config.charset	Tue Jun  4 14:07:46 2013
+@@ -401,7 +401,7 @@ case "$os" in
+     echo "BIG5 BIG5"
+     echo "SJIS SHIFT_JIS"
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     echo "646 ASCII"
+     echo "ISO8859-1 ISO-8859-1"
+     echo "ISO8859-2 ISO-8859-2"
