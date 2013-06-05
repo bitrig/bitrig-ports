@@ -3,7 +3,7 @@ $OpenBSD: patch-libproxy_url_cpp,v 1.2 2013/05/08 16:14:34 ajacoutot Exp $
 https://code.google.com/p/libproxy/source/detail?r=870
 
 --- libproxy/url.cpp.orig	Tue Oct 16 13:52:03 2012
-+++ libproxy/url.cpp	Wed Jun  5 17:48:17 2013
++++ libproxy/url.cpp	Wed Jun  5 17:57:46 2013
 @@ -46,6 +46,10 @@
  using namespace libproxy;
  using namespace std;
@@ -30,11 +30,11 @@ https://code.google.com/p/libproxy/source/detail?r=870
 +	pthread_mutex_lock(&servmtx);
 +#endif
 +	serv = getservbyname(scheme.c_str(), NULL);
++	if (serv)
++		ret = ntohs(serv->s_port);
 +#ifndef WIN32
 +	pthread_mutex_unlock(&servmtx);
 +#endif
-+	if (serv)
-+		ret = ntohs(serv->s_port);
  
 -	return 0;
 +	return ret;
