@@ -3,7 +3,7 @@
 COMMENT =		library to edit command lines as they are typed in
 
 V =			6.2
-REVISION =		0
+REVISION =		1
 DISTNAME =		readline-${V}
 PKGNAME =		readline-${V}pl4
 PATCHFILES =		readline62-001:0 \
@@ -11,7 +11,7 @@ PATCHFILES =		readline62-001:0 \
 			readline62-003:0 \
 			readline62-004:0
 
-LIBV =			${V}
+LIBV =			5.0
 SHARED_LIBS +=		history ${LIBV}
 SHARED_LIBS +=		readline ${LIBV}
 
