@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libproxy/CMakeLists.txt.orig	Fri Nov 30 17:31:35 2012
++++ libproxy/CMakeLists.txt	Wed Jun  5 15:00:37 2013
+@@ -7,7 +7,7 @@ if (WIN32)
+   add_definitions(-D_CRT_SECURE_NO_WARNINGS=1)
+ else(WIN32)
+   add_definitions(-D_POSIX_C_SOURCE=200112L)
+-  set(CMAKE_CXX_FLAGS "-fvisibility=hidden ${CMAKE_CXX_FLAGS}")
++  set(CMAKE_CXX_FLAGS "-fvisibility=hidden -pthread ${CMAKE_CXX_FLAGS}")
+ endif(WIN32)
+ 
+ ### Modules

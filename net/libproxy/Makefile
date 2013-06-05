@@ -16,7 +16,9 @@ PKGNAME-main=		libproxy-${VERSION}
 PKGNAME-mozilla=	libproxy-mozilla-${VERSION}
 PKGNAME-webkit=		libproxy-webkit-${VERSION}
 
-REVISION-main=		0
+REVISION-main=		1
+REVISION-mozilla=	0
+REVISION-webkit=	0
 
 CATEGORIES=		net
 
