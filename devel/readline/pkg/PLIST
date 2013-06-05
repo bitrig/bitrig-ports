@@ -8,15 +8,15 @@ include/readline/rlconf.h
 include/readline/rlstdc.h
 include/readline/rltypedefs.h
 include/readline/tilde.h
-@info info/ehistory.info
-@info info/ereadline.info
-@info info/erluserman.info
-lib/libehistory.a
-@lib lib/libehistory.so.${LIBehistory_VERSION}
-lib/libereadline.a
-@lib lib/libereadline.so.${LIBereadline_VERSION}
-@man man/man3/ehistory.3
-@man man/man3/ereadline.3
+@info info/history.info
+@info info/readline.info
+@info info/rluserman.info
+lib/libhistory.a
+@lib lib/libhistory.so.${LIBhistory_VERSION}
+lib/libreadline.a
+@lib lib/libreadline.so.${LIBreadline_VERSION}
+@man man/man3/history.3
+@man man/man3/readline.3
 share/readline/
 share/readline/excallback.c
 share/readline/fileman.c
