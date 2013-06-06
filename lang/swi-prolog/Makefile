@@ -9,7 +9,7 @@ COMMENT =		Prolog for the real world
 V =			6.2.2
 DISTNAME =		pl-$V
 PKGNAME =		swi-prolog-$V
-REVISION =		1
+REVISION =		2
 CATEGORIES =		lang
 
 SHARED_LIBS =		pl	4.0
@@ -51,7 +51,8 @@ MAKE_FLAGS =		SONAMEOPT= \
 BUILD_DEPENDS =		${RUN_DEPENDS}
 LIB_DEPENDS =		devel/gmp \
 			devel/libexecinfo \
-			graphics/jpeg
+			graphics/jpeg \
+			devel/readline
 
 WANTLIB += ICE SM X11 Xext Xft Xinerama Xpm Xt c crypto execinfo
 WANTLIB += expat fontconfig freetype gmp jpeg m ncursesw pthread

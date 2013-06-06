@@ -8,6 +8,7 @@ COMMENT-tests=	multithreaded SQL database (regression test suite/benchmark)
 
 VERSION=	5.5.30
 DISTNAME=	mariadb-${VERSION}
+REViSION=	0
 PKGNAME-main=	mariadb-client-${VERSION}
 PKGNAME-server=	mariadb-server-${VERSION}
 PKGNAME-tests= 	mariadb-tests-${VERSION}
@@ -38,6 +39,7 @@ SUBST_VARS=	SOCKET_DIR
 MODULES=	devel/cmake
 BUILD_DEPENDS=	devel/bison
 
+LIB_DEPENDS-main+=	devel/readline
 RUN_DEPENDS-server=	${BASE_PKGPATH}>=5.5,<5.6 \
 			databases/p5-DBD-mysql \
 			devel/p5-Term-ReadKey

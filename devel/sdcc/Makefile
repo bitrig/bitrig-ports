@@ -7,7 +7,7 @@ DISTNAME=	sdcc-src-2.8.0
 PKGNAME=	${DISTNAME:S/-src//}
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	devel
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://sdcc.sourceforge.net/
 
@@ -21,6 +21,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sdcc/}
 
 BUILD_DEPENDS=		${RUN_DEPENDS}
 RUN_DEPENDS=		devel/gputils
+LIB_DEPENDS=		devel/readline
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	docdir=${PREFIX}/share/doc/sdcc

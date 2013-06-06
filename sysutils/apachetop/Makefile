@@ -5,6 +5,8 @@ COMMENT =		top-like monitor for Apache
 DISTNAME =		apachetop-0.12.6
 CATEGORIES =		sysutils
 
+REVISION=		0
+
 MAINTAINER =		Gonzalo L. R. <gonzalo@x61.com.ar>
 
 HOMEPAGE =		http://freshmeat.net/projects/apachetop/
@@ -22,5 +24,6 @@ CONFIGURE_ARGS =	--disable-fam \
 			--with-logfile=/var/www/logs/access_log
 
 WANTLIB +=		c m ncurses readline stdc++
+LIB_DEPENDS=		devel/readline
 
 .include <bsd.port.mk>

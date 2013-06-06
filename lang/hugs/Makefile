@@ -4,7 +4,7 @@ COMMENT =	Haskell 98 interpreter
 
 DISTNAME =	hugs98-plus-Sep2006
 PKGNAME =	hugs98-2006.09
-REVISION =	2
+REVISION =	3
 CATEGORIES =	lang
 MAINTAINER =	Matthias Kilian <kili@openbsd.org>
 HOMEPAGE =	http://www.haskell.org/hugs/
@@ -27,5 +27,6 @@ CONFIGURE_ARGS +=	--with-pthreads --libdir=${PREFIX}/lib
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		GL GLU X11 c m ncurses pthread readline
+LIB_DEPENDS=		devel/readline
 
 .include <bsd.port.mk>

@@ -12,7 +12,7 @@ COMMENT =	Ruby virtual machine and core library
 V=		1.2.4
 DISTNAME =	rubinius-${V}-20110705
 PKGNAME =	rubinius-$V
-REVISION =	3
+REVISION =	4
 
 CATEGORIES =	lang lang/ruby
 
@@ -34,7 +34,8 @@ BUILD_DEPENDS =	devel/bison \
 		devel/libffi
 LIB_DEPENDS =	databases/gdbm \
 		databases/db/v4 \
-		${MODRUBY_LIB_DEPENDS}
+		${MODRUBY_LIB_DEPENDS} \
+		devel/readline
 MODULES =	lang/ruby
 
 USE_GMAKE =	Yes

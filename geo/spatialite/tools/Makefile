@@ -4,8 +4,11 @@ COMMENT =	CLI tools for spatialite
 PROJECT =	spatialite-tools
 DISTNAME =	${PROJECT}-4.0.0
 
+REVISION=	0
+
 LIB_DEPENDS +=	geo/spatialite/libspatialite \
-		geo/spatialite/readosm
+		geo/spatialite/readosm \
+		devel/readline
 
 WANTLIB += freexl geos geos_c m proj pthread sqlite3 stdc++
 WANTLIB += c curses expat readline readosm spatialite z

@@ -6,13 +6,14 @@ COMMENT=		GNU Readline Library Wrapper Module
 
 MODULES=		cpan
 DISTNAME=		Term-ReadLine-Gnu-1.16
-REVISION=		4
+REVISION=		5
 CATEGORIES=		devel
 USE_GROFF =		Yes
 
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c readline termcap
+LIB_DEPENDS=		devel/readline
 
 TEST_DEPENDS=	x11/p5-Tk
 TEST_FLAGS=		TERM=${TERM}

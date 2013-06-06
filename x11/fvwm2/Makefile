@@ -10,6 +10,8 @@ PKGNAME-main=	fvwm2+fvicons-${VERSION}
 FULLPKGNAME-fvicons=fvicons-${VERSION}
 PKGNAME-fvwm2=	fvwm2-${VERSION}
 
+REVISION=	0
+
 CATEGORIES=     x11
 
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} fvwm_icons-20070101.tar.gz
@@ -31,7 +33,8 @@ MODULES=	devel/gettext
 MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/
 
 LIB_DEPENDS+=	graphics/png \
-		x11/gnome/librsvg
+		x11/gnome/librsvg \
+		devel/readline
 
 BUILD_DEPENDS=	textproc/libxslt
 

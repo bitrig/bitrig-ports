@@ -12,6 +12,8 @@ PKGNAME-share=	freeciv-share-${VERSION}
 CATEGORIES=	games
 HOMEPAGE=	http://www.freeciv.org/
 
+REVISION=	0
+
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -44,7 +46,8 @@ LIB_DEPENDS-share=
 WANTLIB-share=
 
 LIB_DEPENDS =	archivers/bzip2 \
-		x11/gtk+2
+		x11/gtk+2 \
+		devel/readline
 
 WANTLIB +=		bz2 c m z
 WANTLIB +=		atk-1.0 cairo ffi gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0

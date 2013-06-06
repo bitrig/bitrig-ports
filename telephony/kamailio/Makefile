@@ -16,6 +16,7 @@ PKGNAME-snmpstats =	kamailio-snmpstats-${VERSION}
 PKGNAME-perl =		kamailio-perl-${VERSION}
 #PKGNAME-radius =	kamailio-radius-${VERSION}	TODO
 
+REVision-main =		0
 REVISION-mysql =	0
 
 CATEGORIES =		telephony
@@ -48,7 +49,8 @@ LIB_DEPENDS-main =	net/curl \
 			devel/pcre \
 			textproc/libxml,-main,no_python \
 			converters/libunistring \
-			${MODGETTEXT_LIB_DEPENDS}
+			${MODGETTEXT_LIB_DEPENDS} \
+			devel/readline
 
 KAMAILIO_MODULES =	cpl-c db_berkeley dialplan dialog_ng jabber lcr \
 			presence presence_dialoginfo presence_mwi presence_reginfo \

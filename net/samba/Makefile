@@ -10,6 +10,8 @@ PKGNAME-main=		${DISTNAME}
 FULLPKGNAME-docs=	${DISTNAME:S/-/-docs-/}
 FULLPKGPATH-docs=	net/samba,-docs
 
+REVISION=		0
+
 SHARED_LIBS=		smbclient	3.0 \
 			smbsharemodes	1.0 \
 			netapi		1.0 \
@@ -40,7 +42,8 @@ LIB_DEPENDS=	databases/tdb>=1.2.7 \
 		devel/libexecinfo \
 		devel/libtalloc \
 		devel/popt \
-		print/cups,-libs
+		print/cups,-libs \
+		devel/readline
 
 MAKE_FLAGS+=	PASSWD_PROGRAM="/usr/bin/passwd" \
 		LIBSMBCLIENT_SHARED_TARGET_SONAME="bin/libsmbclient.so.${LIBsmbclient_VERSION}" \

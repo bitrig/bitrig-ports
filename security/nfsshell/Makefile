@@ -3,7 +3,7 @@
 COMMENT=	NFS auditing tool
 
 PKGNAME=	nfsshell-1.0
-REVISION =	1
+REVISION =	2
 DISTNAME=	nfsshell
 CATEGORIES=	security
 
@@ -15,6 +15,8 @@ PERMIT_PACKAGE_CDROM=	no obvious license
 PERMIT_PACKAGE_FTP=	Yes
 
 WANTLIB=		c readline termcap
+
+LIB_DEPENDS=		devel/readline
 
 ALL_TARGET=	nfs
 

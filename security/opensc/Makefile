@@ -3,7 +3,7 @@
 COMMENT=	set of libraries and utilities to access smart cards
 
 DISTNAME=	opensc-0.11.13
-REVISION=	1
+REVISION=	2
 CATEGORIES=	security
 SHARED_LIBS +=  scconf               2.0      # .1.0
 SHARED_LIBS +=  opensc               2.0      # .1.0
@@ -25,7 +25,8 @@ MASTER_SITES=	${HOMEPAGE}/files/opensc/
 
 WANTLIB=	c crypto ltdl ncurses readline z openct>=1
 
-LIB_DEPENDS=	security/openct
+LIB_DEPENDS=	security/openct \
+		devel/readline
 
 USE_GMAKE=	Yes
 USE_GROFF =	Yes

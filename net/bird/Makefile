@@ -8,6 +8,8 @@ DISTNAME=	bird-$V
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${DISTNAME:S/-/-doc-/}${EXTRACT_SUFX}
 
+REVISION=	0
+
 CATEGORIES=	net
 
 HOMEPAGE=	http://bird.network.cz/
@@ -18,6 +20,7 @@ MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB-main=	c ncurses readline
+LIB_DEPENDS=	devel/readline
 
 MULTI_PACKAGES=	-main -doc
 FULLPKGNAME-doc=bird-doc-$V

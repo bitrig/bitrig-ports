@@ -4,6 +4,8 @@ COMMENT =	small, portable, general purpose computer algebra system
 
 DISTNAME =	mathomatic-16.0.0
 
+REVISION=	0
+
 CATEGORIES =	math
 
 HOMEPAGE =	http://mathomatic.org/
@@ -12,6 +14,7 @@ HOMEPAGE =	http://mathomatic.org/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =	c m ncurses readline
+LIB_DEPENDS=	devel/readline
 
 MASTER_SITES =	${HOMEPAGE}
 EXTRACT_SUFX =	.tar.bz2

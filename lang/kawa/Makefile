@@ -3,7 +3,7 @@
 COMMENT=		Scheme and language framework for the Java platform
 
 DISTNAME=		kawa-1.13
-REVISION=		0
+REVISION=		1
 CATEGORIES=		lang java
 
 HOMEPAGE=		http://www.gnu.org/software/kawa/
@@ -22,6 +22,7 @@ USE_GMAKE=		Yes
 USE_GROFF=		Yes
 
 WANTLIB += c ncurses readline
+LIB_DEPENDS+=		devel/readline
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--enable-kawa-frontend

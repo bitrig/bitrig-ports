@@ -7,7 +7,7 @@ V=		0.9.8.5
 VEXTRA=		3
 DISTNAME=	omake-${V}-${VEXTRA}
 PKGNAME=	omake-${V}pl${VEXTRA}
-REVISION =	5
+REVISION =	6
 WRKDIST=	${WRKDIR}/omake-${V}
 MASTER_SITES=	http://omake.metaprl.org/downloads/ \
 		http://www.ocaml-programming.de/godi-backup/
@@ -24,6 +24,7 @@ DESTDIRNAME=	INSTALL_ROOT
 
 MAKE_ENV=	MAN_ENABLED=Yes
 WANTLIB=	curses m pthread readline ncurses c
+LIB_DEPENDS=	devel/readline
 
 DOC_DIR=	${PREFIX}/share/doc/omake
 DOC_FILES=	LICENSE LICENSE.OMake doc/txt/omake-doc.txt doc/ps/omake-doc.ps \

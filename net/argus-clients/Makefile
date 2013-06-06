@@ -5,6 +5,8 @@ COMMENT =	utilities to read and parse Argus data
 DISTNAME =	argus-clients-3.0.6.2
 CATEGORIES =	net
 
+REVISION=	0
+
 HOMEPAGE =	http://qosient.com/argus/
 MASTER_SITES =	${HOMEPAGE}/src/
 
@@ -17,7 +19,8 @@ WANTLIB =	c m ncurses readline z
 
 NO_TEST =	Yes
 
-LIB_DEPENDS =	net/flow-tools
+LIB_DEPENDS =	net/flow-tools \
+		devel/readline
 
 CC =	cc
 CXX =	${CC}

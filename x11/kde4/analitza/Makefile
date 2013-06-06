@@ -3,6 +3,8 @@
 COMMENT =	KDE math features
 DISTNAME =	analitza-${MODKDE4_VERSION}
 
+REVISION=	0
+
 SHARED_LIBS =	analitza		50.0	# 4.7
 SHARED_LIBS +=	analitzagui		50.0	# 4.7
 SHARED_LIBS +=	analitzaplot		50.0	# 4.10
@@ -13,6 +15,8 @@ WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtOpenGL lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui
 WANTLIB += ncurses readline
+
+LIB_DEPENDS=	devel/readline
 
 CONFIGURE_ARGS=	-DCMAKE_SHARED_LINKER_FLAGS:STRING="-L${LOCALBASE}/lib"
 

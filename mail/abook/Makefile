@@ -3,7 +3,7 @@
 COMMENT=	addressbook program with mutt support
 
 DISTNAME=	abook-0.5.6
-REVISION=	1
+REVISION=	2
 CATEGORIES=	mail
 
 HOMEPAGE=	http://abook.sourceforge.net/
@@ -16,6 +16,7 @@ WANTLIB += c ncursesw readline
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=abook/}
 
 MODULES=	devel/gettext
+LIB_DEPENDS=	devel/readline
 
 CONFIGURE_STYLE=gnu
 

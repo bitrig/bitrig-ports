@@ -3,7 +3,7 @@
 COMMENT=		Scorched Earth-clone
 
 DISTNAME=		xscorch-0.2.1-pre2
-REVISION=		3
+REVISION=		4
 CATEGORIES=		games
 
 HOMEPAGE=		http://www.xscorch.org/
@@ -23,7 +23,8 @@ WANTLIB += gdk-x11-2.0 gtk-x11-2.0 mikmod
 MODULES=		devel/gettext
 
 LIB_DEPENDS=		audio/libmikmod \
-			x11/gtk+2
+			x11/gtk+2 \
+			devel/readline
 
 USE_GROFF =		Yes
 

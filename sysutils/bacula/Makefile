@@ -7,7 +7,7 @@ COMMENT-server=		network backup solution (server)
 COMMENT-bat=		network backup solution (gui-client)
 
 V=			5.2.13
-REVISION-main=		0
+REVISION-main=		1
 DISTNAME=		bacula-$V
 FULLPKGNAME-main=	bacula-client-$V
 FULLPKGPATH-main=	${PKGPATH},-main
@@ -161,7 +161,8 @@ ERRORS+=		"Fatal: choose one of pgsql or mysql or sqlite3"
 
 WANTLIB-main += ${WANTLIB} lzo2 ncurses readline
 LIB_DEPENDS-main=	${LIB_DEPENDS} \
-			archivers/lzo2
+			archivers/lzo2 \
+			devel/readline
 
 WANTLIB-bat += ${WANTLIB}
 WANTLIB-bat += ICE QtCore QtGui SM X11 Xext Xi Xinerama Xrender bac

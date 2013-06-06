@@ -3,7 +3,7 @@
 COMMENT=		command-line WebDAV client
 
 DISTNAME=		cadaver-0.23.3
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net www
 
 HOMEPAGE=		http://www.webdav.org/cadaver/
@@ -16,7 +16,8 @@ WANTLIB += z neon proxy pthread
 
 MODULES=		devel/gettext
 
-LIB_DEPENDS=		net/neon
+LIB_DEPENDS=		net/neon \
+			devel/readline
 
 MASTER_SITES=		${HOMEPAGE}
 

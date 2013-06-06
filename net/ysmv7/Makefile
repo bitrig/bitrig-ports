@@ -6,11 +6,14 @@ DISTNAME=		ysmv7_2_9_9_1
 PKGNAME=		${DISTNAME:S/_/-/:S/_/./g}
 CATEGORIES=		net
 
+REVISION=		0
+
 HOMEPAGE=		http://ysmv7.sourceforge.net/
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ysmv7/}
 
 MODULES=		converters/libiconv
+LIB_DEPENDS=		devel/readline
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

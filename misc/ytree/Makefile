@@ -5,6 +5,8 @@ COMMENT=	DOS-XTREE(tm) look-a-like file manager
 DISTNAME=	ytree-1.97
 CATEGORIES=	misc
 
+REVISION=	0
+
 HOMEPAGE=	http://www.han.de/~werner/ytree.html
 
 MASTER_SITES=	http://www.han.de/~werner/
@@ -13,6 +15,7 @@ MASTER_SITES=	http://www.han.de/~werner/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	c curses readline
+LIB_DEPENDS=	devel/readline
 
 ALL_TARGET=	ytree
 

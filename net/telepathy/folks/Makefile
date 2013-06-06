@@ -7,6 +7,8 @@ GNOME_VERSION=		0.9.1
 # MODULE_VERSION in config.h
 API_V=			38
 
+REVISION=		0
+
 SHARED_LIBS +=  folks-telepathy           5.0 # 38.1
 SHARED_LIBS +=  folks                     5.2 # 38.1
 SHARED_LIBS +=  folks-eds                 1.0 # 38.1
@@ -33,7 +35,8 @@ LIB_DEPENDS=	databases/evolution-data-server>=3.8.0 \
 		devel/libgee \
 		net/telepathy/telepathy-glib>=0.20.1 \
 		net/libsocialweb \
-		productivity/libzeitgeist
+		productivity/libzeitgeist \
+		devel/readline
 RUN_DEPENDS=	net/telepathy/telepathy-mission-control
 
 TEST_DEPENDS=	${FULLPKGNAME}:${BASE_PKGPATH}

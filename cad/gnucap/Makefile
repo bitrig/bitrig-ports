@@ -3,7 +3,7 @@
 COMMENT=		Gnu Circuit Analysis Package
 
 DISTNAME=		gnucap-0.35
-REVISION=		0
+REVISION=		1
 CATEGORIES=		cad
 
 HOMEPAGE=		http://www.gnucap.org/
@@ -14,6 +14,8 @@ MAINTAINER=		Andreas Bihlmaier <andreas.bihlmaier@gmx.de>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c m stdc++ readline termcap
+
+LIB_DEPENDS=		devel/readline
 
 MASTER_SITES=		${HOMEPAGE}dist/ \
 			http://www.geda.seul.org/dist/

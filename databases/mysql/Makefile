@@ -15,6 +15,7 @@ CATEGORIES=	databases
 V=		MySQL-5.1
 MASTER_SITES=	${MASTER_SITE_MYSQL:=Downloads/$V/}
 
+REVISION-main=	0
 REVISION-server=0
 
 SHARED_LIBS=	mysqlclient_r	21.0 \
@@ -64,6 +65,8 @@ CONFIGURE_ARGS+= --enable-assembler
 RUN_DEPENDS-server=	${BASE_PKGPATH}>=5.1,<5.2 \
 			databases/p5-DBD-mysql
 LIB_DEPENDS-server=	${BASE_PKGPATH}>=5.1,<5.2
+
+LIB_DEPENDS-main=	devel/readline
 
 WANTLIB-server=		${WANTLIB} crypto mysqlclient ssl wrap z
 WANTLIB-main=		${WANTLIB} crypto ncursesw readline ssl z

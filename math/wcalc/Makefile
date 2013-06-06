@@ -8,13 +8,15 @@ CATEGORIES =		math
 HOMEPAGE =		http://w-calc.sourceforge.net/
 MAINTAINER =		Amarendra Godbole <amarendra.godbole@gmail.com>
 
+REVISION=		0
+
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=w-calc/}
 
 WANTLIB =		c m readline termcap gmp>=7 mpfr>=0.2
-LIB_DEPENDS =		devel/gmp devel/mpfr
+LIB_DEPENDS =		devel/gmp devel/mpfr devel/readline
 
 USE_GMAKE =		Yes
 CONFIGURE_STYLE =	gnu

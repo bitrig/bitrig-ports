@@ -5,6 +5,8 @@ COMMENT=		debugger for use with MSP 430 MCUs
 DISTNAME=		mspdebug-0.21
 CATEGORIES=		devel
 
+REVISION=		0
+
 HOMEPAGE=		http://mspdebug.sourceforge.net/
 
 MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
@@ -16,7 +18,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mspdebug/}
 
 WANTLIB += c pthread readline termcap usb
 
-LIB_DEPENDS=		devel/libusb-compat
+LIB_DEPENDS=		devel/libusb-compat \
+			devel/readline
 
 USE_GMAKE=		Yes
 MAKE_FLAGS=		CC="${CC}" GCC_CFLAGS="" LDFLAGS=""

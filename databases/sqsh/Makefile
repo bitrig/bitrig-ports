@@ -4,6 +4,8 @@ COMMENT=	SQL shell for FreeTDS
 
 DISTNAME=	sqsh-2.1.8
 
+REVISION=	0
+
 CATEGORIES=	databases shells
 
 HOMEPAGE=	http://www.sqsh.org/
@@ -16,7 +18,8 @@ WANTLIB += c ct>=2 curses m readline
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sqsh/}
 
 MODULES=	devel/gettext
-LIB_DEPENDS=	databases/freetds
+LIB_DEPENDS=	databases/freetds \
+		devel/readline
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=	--with-readline

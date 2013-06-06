@@ -3,7 +3,7 @@
 COMMENT = 	gnu privacy guard - a free PGP replacement
 
 DISTNAME = 	gnupg-2.0.19
-REVISION =	3
+REVISION =	4
 CATEGORIES = 	security
 
 MASTER_SITES = 	ftp://ftp.gnupg.org/gcrypt/gnupg/ \
@@ -39,7 +39,8 @@ LIB_DEPENDS =		archivers/bzip2 \
 			security/libgcrypt \
 			security/libksba \
 			net/curl \
-			devel/pth
+			devel/pth \
+			devel/readline
 
 .if ${FLAVOR:Mldap}
 CONFIGURE_ARGS +=	--enable-ldap

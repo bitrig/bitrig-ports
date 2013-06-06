@@ -21,7 +21,7 @@ PKGNAME-mysql=		libgda-mysql-${GNOME_VERSION}
 PKGNAME-pgsql=		libgda-pgsql-${GNOME_VERSION}
 PKGNAME-ui=		libgda-ui-${GNOME_VERSION}
 
-REVISION-main=		1
+REVISION-main=		2
 REVISION-mysql=		0
 REVISION-ui=		0
 
@@ -107,7 +107,8 @@ RUN_DEPENDS-main=	${MODGETTEXT_RUN_DEPENDS} \
 LIB_DEPENDS-main=	${LIB_DEPENDS} \
 			devel/libsoup \
 			textproc/libxslt \
-			graphics/gdk-pixbuf2
+			graphics/gdk-pixbuf2 \
+			devel/readline
 
 .if ${FLAVOR:Mno_ui}
 CONFIGURE_ARGS+=	--without-ui

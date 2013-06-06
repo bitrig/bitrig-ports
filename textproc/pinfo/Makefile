@@ -5,6 +5,8 @@ COMMENT=		info viewer with lynx-style navigation
 DISTNAME=		pinfo-0.6.9
 CATEGORIES=		textproc devel
 
+REVISION=		0
+
 HOMEPAGE=		https://alioth.debian.org/frs/?group_id=30592
 
 MAINTAINER=		Marc Espie <espie@openbsd.org>
@@ -15,6 +17,7 @@ MASTER_SITES=		https://alioth.debian.org/frs/download.php/1502/ \
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c ncurses readline 
+LIB_DEPENDS=		devel/readline
 
 USE_GROFF =		Yes
 

@@ -3,7 +3,7 @@
 COMMENT=		configuration editing tool and API
 
 DISTNAME=		augeas-1.0.0
-REVISION=		13
+REVISION=		14
 CATEGORIES=		sysutils devel
 
 SHARED_LIBS +=  augeas                    0.0 # 16.0
@@ -20,7 +20,8 @@ MASTER_SITES=		http://download.augeas.net/
 
 MODULES=		devel/gettext
 
-LIB_DEPENDS=		textproc/libxml
+LIB_DEPENDS=		textproc/libxml \
+			devel/readline
 
 WANTLIB += c m ncurses readline xml2 z
 

@@ -4,7 +4,7 @@ COMMENT=	gobject-based plugins engine
 
 GNOME_PROJECT=	libpeas
 GNOME_VERSION=	1.8.0
-REVISION=	4
+REVISION=	5
 
 CATEGORIES=	devel
 
@@ -41,7 +41,8 @@ RUN_DEPENDS=	devel/py-gobject3 \
 
 LIB_DEPENDS=	devel/gobject-introspection \
 		x11/gnome/gjs \
-		x11/gtk+3
+		x11/gtk+3 \
+		devel/readline
 
 MODGNOME_ICON_CACHE=	Yes
 MODPY_VERSION=		${MODPY_DEFAULT_VERSION_3}

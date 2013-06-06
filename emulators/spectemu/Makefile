@@ -3,7 +3,7 @@
 COMMENT=		ZX Spectrum 48k emulator
 
 DISTNAME=		spectemu-0.94
-REVISION=		1
+REVISION=		2
 CATEGORIES=		emulators
 
 HOMEPAGE=		http://www.inf.bme.hu/~mszeredi/spectemu/
@@ -12,6 +12,7 @@ HOMEPAGE=		http://www.inf.bme.hu/~mszeredi/spectemu/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		X11 Xext c pthread-stubs readline termcap xcb
+LIB_DEPENDS=		devel/readline
 
 MASTER_SITES=		${HOMEPAGE}
 

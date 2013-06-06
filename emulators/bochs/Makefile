@@ -6,12 +6,15 @@ DISTNAME=	bochs-2.6.1
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bochs/}
 
+REVISION=	0
+
 HOMEPAGE=	http://bochs.sourceforge.net/
 
 # LGPLv2.1+ and MIT
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	c m pthread stdc++ termlib
+LIB_DEPENDS=	devel/readline
 
 CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS=	--enable-all-optimizations \

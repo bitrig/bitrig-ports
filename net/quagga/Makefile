@@ -7,6 +7,8 @@ CATEGORIES=	net
 MASTER_SITES=	http://download.savannah.gnu.org/releases/quagga/
 EXTRACT_SUFX=	.tar.xz
 
+REVISION=	0
+
 SHARED_LIBS=	ospf		0.0 \
 		ospfapiclient	0.0 \
 		zebra		0.0
@@ -17,6 +19,7 @@ HOMEPAGE=	http://www.quagga.net/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	c curses m readline termcap
+LIB_DEPENDS=	devel/readline
 
 LOCALSTATEDIR=	${BASELOCALSTATEDIR}/quagga
 SUBST_VARS=	LOCALSTATEDIR
@@ -45,7 +48,7 @@ FLAVORS=	snmp
 FLAVOR?=
 
 .if ${FLAVOR:Msnmp}
-LIB_DEPENDS=	net/net-snmp
+LIB_DEPENDS+=	net/net-snmp
 WANTLIB+=	crypto netsnmp
 CONFIGURE_ARGS+= --enable-snmp=agentx
 CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include" \

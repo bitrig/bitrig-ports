@@ -7,7 +7,7 @@ ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 COMMENT =		music studio with tracking, sampling and MIDI
 
 DISTNAME =		lmms-0.4.8
-REVISION =		3
+REVISION =		4
 CATEGORIES =		audio
 
 HOMEPAGE =		http://lmms.sourceforge.net/
@@ -33,7 +33,8 @@ LIB_DEPENDS =		audio/jack \
 			audio/fluidsynth \
 			audio/libsamplerate \
 			audio/libvorbis \
-			x11/fltk
+			x11/fltk \
+			devel/readline
 
 USE_X11 =		Yes
 

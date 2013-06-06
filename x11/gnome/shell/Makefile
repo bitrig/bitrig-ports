@@ -4,7 +4,7 @@ COMMENT=		next generation GNOME shell
 
 GNOME_PROJECT=		gnome-shell
 GNOME_VERSION=		3.8.2
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://live.gnome.org/GnomeShell
 
@@ -61,7 +61,8 @@ LIB_DEPENDS=		audio/pulseaudio \
 			x11/gnome/gcr \
 			x11/gnome/gjs \
 			x11/gnome/menus \
-			x11/gnome/mutter>=3.8.1
+			x11/gnome/mutter>=3.8.1 \
+			devel/readline
 
 # polkit(8) almost always needs to know the "active" session
 RUN_DEPENDS +=		sysutils/consolekit

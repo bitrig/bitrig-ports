@@ -2,7 +2,7 @@
 
 COMMENT =		SoundFont2 software synthesizer
 DISTNAME =		fluidsynth-1.1.6
-REVISION =		2
+REVISION =		3
 
 SHARED_LIBS +=	fluidsynth           1.0      # 6.2
 
@@ -19,7 +19,8 @@ MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=fluidsynth/}
 
 MODULES =		devel/gettext
 LIB_DEPENDS =		audio/libsndfile \
-			devel/glib2
+			devel/glib2 \
+			devel/readline
 
 AUTOCONF_VERSION =	2.61
 AUTOMAKE_VERSION =	1.9

@@ -4,7 +4,7 @@ COMMENT=	library and tools for creating SVF and XSVF JTAG players
 
 # svn rev 62
 DISTNAME=	libxsvf-0.0.62
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.clifford.at/libxsvf/
@@ -16,7 +16,8 @@ MASTER_SITES=	http://distfiles.nl/
 
 WANTLIB += c ftdi pthread readline termcap usb
 
-LIB_DEPENDS=	devel/libftdi
+LIB_DEPENDS=	devel/libftdi \
+		devel/readline
 
 USE_GMAKE=	Yes
 

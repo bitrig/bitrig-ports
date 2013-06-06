@@ -2,7 +2,7 @@
 
 COMMENT=	Embedded SQL implementation
 DISTNAME=	sqlite-2.8.17
-REVISION =	3
+REVISION =	4
 CATEGORIES=	databases
 SHARED_LIBS +=	sqlite               8.6      # .0.0
 
@@ -17,6 +17,7 @@ AUTOCONF_VERSION=2.59
 USE_GMAKE=	Yes
 
 WANTLIB=	c ncurses readline
+LIB_DEPENDS=	devel/readline
 
 FLAVORS=no_tcl
 FLAVOR?=

@@ -4,7 +4,7 @@ COMMENT=		powerful descriptive vector graphics language
 
 DISTNAME=		asymptote-2.10.src
 PKGNAME=		${DISTNAME:S/.src//g}
-REVISION =		5
+REVISION =		6
 CATEGORIES=		graphics
 
 HOMEPAGE=		http://asymptote.sourceforge.net/
@@ -29,7 +29,8 @@ LIB_DEPENDS=		devel/boehm-gc \
 			devel/gsl \
 			devel/libsigsegv \
 			graphics/freeglut \
-			math/fftw3
+			math/fftw3 \
+			devel/readline
 
 USE_GMAKE=		Yes
 USE_GROFF =		Yes

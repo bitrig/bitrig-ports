@@ -6,6 +6,8 @@ DISTNAME=	coldfire-0.3.1
 CATEGORIES=	emulators
 HOMEPAGE=	http://www.slicer.ca/coldfire/
 
+REVISION=	0
+
 MAINTAINER=	Martin Reindl <martin@openbsd.org>
 
 # GPL
@@ -14,6 +16,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=		${HOMEPAGE}/files/
 
 WANTLIB=		c ncurses pthread readline
+LIB_DEPENDS=		devel/readline
 
 USE_GMAKE=		Yes
 CONFIGURE_STYLE=	gnu

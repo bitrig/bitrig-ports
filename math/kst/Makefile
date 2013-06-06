@@ -4,7 +4,7 @@ CATEGORIES=	math x11/kde
 COMMENT=	data viewing/plotting tool
 
 DISTNAME=	kst-1.2.1
-REVISION=	6
+REVISION=	7
 SHARED_ONLY=	Yes
 SHARED_LIBS=	kst		4.0 \
 		kstapp		4.0 \
@@ -37,7 +37,8 @@ RUN_DEPENDS =	x11/gtk+2,-guic
 LIB_DEPENDS =	x11/kde/libs3 \
 		devel/gsl>=1.6 \
 		math/netcdf \
-		math/cfitsio
+		math/cfitsio \
+		devel/readline
 
 WANTLIB =	c m util stdc++ pthread z X11 ICE Xrender SM Xext \
 		png jpeg art_lgpl_2 idn pcre pcreposix \

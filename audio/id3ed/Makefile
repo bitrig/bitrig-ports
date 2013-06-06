@@ -3,7 +3,7 @@
 COMMENT=		interactive console id3 tag editor
 
 DISTNAME=		id3ed-1.10.4
-REVISION=		1
+REVISION=		2
 CATEGORIES=     	audio
 
 HOMEPAGE=		http://users.dakotacom.net/~donut/programs/id3ed.html
@@ -14,6 +14,8 @@ MAINTAINER=		Nick Nauwelaerts <nick@nauwelaerts.net>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c curses m readline stdc++
+
+LIB_DEPENDS=		devel/readline
 
 MASTER_SITES=		${HOMEPAGE:S/id3ed.html//:=id3ed/}
 

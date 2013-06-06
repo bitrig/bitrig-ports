@@ -3,7 +3,7 @@
 COMMENT=	shell (clone of plan9 shell)
 
 DISTNAME=	rc-1.6
-REVISION=	0
+REVISION=	1
 CATEGORIES=	plan9 shells
 MASTER_SITES=	http://www.star.le.ac.uk/~tjg/rc/release/ \
 		ftp://ftp.sys.toronto.edu/pub/rc/
@@ -15,6 +15,7 @@ MAINTAINER=	Markus Friedl <markus@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c
+LIB_DEPENDS=		devel/readline
 
 SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE= gnu

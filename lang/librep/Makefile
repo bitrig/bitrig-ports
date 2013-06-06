@@ -7,6 +7,8 @@ SHARED_ONLY=	Yes
 VERSION=	0.92.2.1
 DISTNAME=	librep-${VERSION}
 
+REVISION=	0
+
 SHARED_LIBS +=  rep                  14.0     # .16.0
 
 CATEGORIES=	lang
@@ -26,7 +28,8 @@ WANTLIB=		c gdbm gmp ffi m ncurses pthread readline
 MODULES=		devel/gettext
 LIB_DEPENDS=		databases/gdbm \
 			devel/gmp \
-			devel/libffi
+			devel/libffi \
+			devel/readline
 
 USE_GMAKE=		Yes
 USE_GROFF =		Yes

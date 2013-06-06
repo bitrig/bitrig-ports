@@ -16,8 +16,8 @@ DISTNAME=	amanda-${DISTVERSION}
 PKGNAME-main=	amanda-${PKGVERSION}
 PKGNAME-client=	amanda-client-${PKGVERSION}
 PKGNAME-doc=	amanda-doc-${PKGVERSION}
-REVISION-main=	3
-REVISION-client=2
+REVISION-main=	4
+REVISION-client=3
 
 CATEGORIES=	misc
 
@@ -43,6 +43,8 @@ BUILD_DEPENDS+= archivers/gtar \
 # AMANDA will gracefully tell them what is required.
 
 WANTLIB=		c m readline termcap
+LIB_DEPENDS-main=	devel/readline
+LIB_DEPENDS-client=	devel/readline
 PKG_ARCH-doc=               *
 WANTLIB-doc=
 LIB_DEPENDS-doc=

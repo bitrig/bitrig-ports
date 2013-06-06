@@ -4,6 +4,7 @@ COMMENT=		generic readline wrapper for various programs
 
 DISTNAME=		rlwrap-0.37
 CATEGORIES=		misc
+REVISION=		0
 
 HOMEPAGE=		http://utopia.knoware.nl/~hlub/uck/rlwrap/
 
@@ -13,6 +14,7 @@ MASTER_SITES=		${HOMEPAGE}
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c curses readline util
+LIB_DEPENDS=		devel/readline
 
 CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST} \

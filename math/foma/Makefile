@@ -4,7 +4,7 @@ COMMENT =		finite-state compiler and C library
 
 DISTNAME =		foma-0.9.16alpha
 PKGNAME =		${DISTNAME:S/alpha//}
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=		foma                      0.0 # 0.9.16
 
@@ -16,6 +16,7 @@ HOMEPAGE =		https://code.google.com/p/foma/
 PERMIT_PACKAGE_CDROM =		Yes
 
 WANTLIB +=		c readline termcap z
+LIB_DEPENDS+=		devel/readline
 
 MASTER_SITES =		https://foma.googlecode.com/files/
 

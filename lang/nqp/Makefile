@@ -10,6 +10,8 @@ COMMENT =		Not Quite Perl
 V =			2012.10
 DISTNAME =		nqp-${V}
 
+REVISION=		0
+
 PARROT_VERSION =	4.9.0
 SUBST_VARS +=		PARROT_VERSION
 
@@ -27,7 +29,8 @@ WANTLIB += readline stdc++ util ffi
 
 MASTER_SITES =		http://cloud.github.com/downloads/perl6/nqp/
 
-LIB_DEPENDS =		lang/parrot>=${PARROT_VERSION}
+LIB_DEPENDS =		lang/parrot>=${PARROT_VERSION} \
+			devel/readline
 
 USE_GMAKE =		Yes
 CONFIGURE_STYLE =	simple

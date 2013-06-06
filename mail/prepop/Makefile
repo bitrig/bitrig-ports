@@ -3,12 +3,13 @@
 COMMENT=	simple interactive POP3 client
 
 DISTNAME=	prepop-0.1b7
-REVISION =	1
+REVISION =	2
 CATEGORIES=	mail
 
 # GPL
 PERMIT_PACKAGE_CDROM=   Yes
 WANTLIB=		c m readline stdc++ termcap
+LIB_DEPENDS=		devel/readline
 
 MAKE_FLAGS= \
 	CC='${CXX}' \

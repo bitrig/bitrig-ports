@@ -6,7 +6,7 @@ COMMENT-daemon =stand-alone daemon/cmdline for amule
 
 V =		2.3.1
 DISTNAME =	aMule-$V
-REVISION =	12
+REVISION =	13
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.amule.org/
@@ -44,9 +44,11 @@ LIB_DEPENDS-main =	${LIB_DEPENDS} ${commonLIB_DEPENDS} \
 			net/GeoIP
 
 LIB_DEPENDS-daemon =	${LIB_DEPENDS} ${commonLIB_DEPENDS} \
-			devel/cryptopp>=5.6.0
+			devel/cryptopp>=5.6.0 \
+			devel/readline
 
-LIB_DEPENDS-web =	${LIB_DEPENDS} ${commonLIB_DEPENDS}
+LIB_DEPENDS-web =	${LIB_DEPENDS} ${commonLIB_DEPENDS} \
+			devel/readline
 
 RUN_DEPENDS-main =	${RUN_DEPENDS} \
 			devel/desktop-file-utils

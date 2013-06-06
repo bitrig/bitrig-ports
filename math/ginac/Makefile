@@ -6,6 +6,8 @@ DISTNAME=	ginac-1.6.2
 SHARED_LIBS +=	ginac	3.0	# 0.3
 CATEGORIES=	math
 
+REVISION=	0
+
 HOMEPAGE=	http://www.ginac.de/
 
 MAINTAINER=	Paul Irofti <pirofti@openbsd.org>
@@ -19,7 +21,8 @@ EXTRACT_SUFX=	.tar.bz2
 
 WANTLIB=	c m ncurses readline stdc++ gmp cln
 
-LIB_DEPENDS=	devel/cln
+LIB_DEPENDS=	devel/cln \
+		devel/readline
 
 USE_GMAKE=	Yes
 USE_GROFF =	Yes

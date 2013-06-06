@@ -4,7 +4,7 @@ COMMENT=	newLISP is a LISP like, general purpose scripting language
 
 V=		10.4.5
 DISTNAME=	newlisp-$V
-REVISION=	0
+REVISION=	1
 CATEGORIES=	lang
 HOMEPAGE=	http://newlisp.org/
 MAINTAINER=	Ted Walther <ted@reactor-core.org>
@@ -13,6 +13,7 @@ MAINTAINER=	Ted Walther <ted@reactor-core.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c m ncurses readline
+LIB_DEPENDS=		devel/readline
 
 MASTER_SITES=		${HOMEPAGE}/downloads/
 EXTRACT_SUFX=		.tgz

@@ -16,7 +16,7 @@ PKGNAME-gdbm=		ruby-gdbm-${VERSION}.${PATCHLEVEL}
 PKGNAME-tk=		ruby-tk-${VERSION}.${PATCHLEVEL}
 PKGNAME-ri_docs=	ruby-ri_docs-${VERSION}.${PATCHLEVEL}
 
-REVISION-main=		1
+REVISION-main=		2
 
 PKG_ARCH-ri_docs=	*
 PKGSPEC-main=		ruby->=1.8,<1.9
@@ -34,7 +34,7 @@ MODULES=		converters/libiconv
 USE_GROFF =		Yes
 
 WANTLIB-main= 		c m readline termcap util crypto ncurses ssl z
-LIB_DEPENDS-main=
+LIB_DEPENDS-main=	devel/readline
 RUN_DEPENDS-main=
 
 PSEUDO_FLAVORS= 	no_x11 no_ri_docs

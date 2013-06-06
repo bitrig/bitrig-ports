@@ -5,12 +5,15 @@ COMMENT=		HP48sx emulator
 DISTNAME=		x48-0.6.4
 CATEGORIES=		emulators
 
+REVISION=		0
+
 MAINTAINER=		Todd T. Fries <todd@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		X11 Xext c ncurses readline util
+LIB_DEPENDS=		devel/readline
 
 MASTER_SITES=		${MASTER_SITE_BERLIOS:=x48/}
 EXTRACT_SUFX=		.tar.bz2

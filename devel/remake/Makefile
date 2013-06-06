@@ -4,7 +4,7 @@ COMMENT=		GNU make debugger
 
 PKGNAME=		remake-0.61p0
 DISTNAME=		remake-3.80+dbg-0.61
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		devel
 
@@ -17,6 +17,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 CONFIGURE_STYLE=	gnu
 USE_GROFF =		Yes
 WANTLIB=		c readline termcap
+LIB-DEPENDS=		devel/readline
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/make ${PREFIX}/bin/remake

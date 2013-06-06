@@ -13,6 +13,8 @@ CATEGORIES=	databases
 IGNORE-main = "--${FULLPKGNAME-main} comes with OpenBSD as of release 5.2"
 SUBPACKAGE ?= -lemon
 
+REVISION=	0
+
 MASTER_SITES=	${HOMEPAGE}
 
 HOMEPAGE=	http://www.sqlite.org/
@@ -44,7 +46,7 @@ MULTI_PACKAGES=-main -lemon -tcl
 .include <bsd.port.arch.mk>
 
 CC=			gcc
-LIB_DEPENDS-main=	bitrig/bitrig-binutils
+LIB_DEPENDS-main=	bitrig/bitrig-binutils devel/readline
 
 .if !${PROPERTIES:Mno_shared}
 CONFIGURE_ARGS +=	--enable-load-extension

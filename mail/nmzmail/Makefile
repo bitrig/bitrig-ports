@@ -3,7 +3,7 @@
 COMMENT=	fast maildir search engine
 
 DISTNAME=	nmzmail-1.1
-REVISION =	2
+REVISION =	3
 
 CATEGORIES=	mail textproc
 HOMEPAGE=	http://www.ecademix.com/JohannesHofmann/nmzmail.html
@@ -19,6 +19,7 @@ MASTER_SITES=	${HOMEPAGE:nmzmail.html=}
 
 BUILD_DEPENDS=	textproc/namazu
 RUN_DEPENDS=	textproc/namazu
+LIB_DEPENDS=	devel/readline
 
 AUTOCONF_VERSION=2.63
 CONFIGURE_STYLE=autoconf

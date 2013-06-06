@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	multimedia player
 
 DISTNAME=	xine-ui-0.99.7
-REVISION=	4
+REVISION=	5
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xine/}
 EXTRACT_SUFX=	.tar.xz
@@ -25,7 +25,8 @@ RUN_DEPENDS=	devel/desktop-file-utils \
 LIB_DEPENDS=	graphics/jpeg \
 		graphics/png \
 		multimedia/xine-lib \
-		net/curl
+		net/curl \
+		devel/readline
 
 MAKE_FLAGS=	V=1
 

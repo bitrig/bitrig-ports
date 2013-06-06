@@ -4,6 +4,8 @@ COMMENT=	database drivers for Sybase/Microsoft SQL Server
 
 DISTNAME=	freetds-0.91.49
 
+REVISION=	0
+
 SHARED_LIBS += ct                   5.0      # .4.0
 SHARED_LIBS += sybdb                7.0      # .5.0
 SHARED_LIBS += tdsodbc              1.0      # .0.0
@@ -34,7 +36,8 @@ BUILD_DEPENDS=  devel/doxygen,no_gui,bootstrap>=1.7.2 \
 		textproc/openjade \
 		${MODGNU_AUTOCONF_DEPENDS} \
 		${MODGNU_AUTOMAKE_DEPENDS}
-LIB_DEPENDS=	databases/iodbc,-main
+LIB_DEPENDS=	databases/iodbc,-main \
+		devel/readline
 
 # requires database server
 TEST_IS_INTERACTIVE=Yes

@@ -7,6 +7,8 @@ COMMENT=	document manager for GNOME
 GNOME_PROJECT=	gnome-documents
 GNOME_VERSION=	3.8.2.1
 
+REVISION=	0
+
 HOMEPAGE=	https://live.gnome.org/GnomeDocuments
 
 TRACKER_VERSION=0.16
@@ -47,7 +49,8 @@ LIB_DEPENDS=	devel/libgdata \
 		graphics/evince \
 		x11/gnome/gjs \
 		x11/gnome/libzapojit \
-		x11/gnome/tracker
+		x11/gnome/tracker \
+		devel/readline
 
 MODGNOME_TOOLS=		gi vala
 MODGNOME_ICON_CACHE=	Yes

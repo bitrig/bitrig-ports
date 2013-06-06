@@ -5,7 +5,7 @@ ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64
 COMMENT =		ANSI Common Lisp implementation
 
 DISTNAME=		clisp-2.48
-REVISION =		3
+REVISION =		4
 CATEGORIES=		lang
 HOMEPAGE=		http://clisp.cons.org/
 MAINTAINER =		Joshua Elsasser <joshe@openbsd.org>
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES=		devel/gettext
 
 LIB_DEPENDS =		devel/libsigsegv \
-			devel/ffcall>=1.10p1
+			devel/ffcall>=1.10p1 \
+			devel/readline
 WANTLIB =		avcall c callback m ncurses readline sigsegv
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=clisp/}

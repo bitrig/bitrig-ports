@@ -6,6 +6,8 @@ CATEGORIES =	math devel
 DISTNAME =	libqalculate-0.9.7
 HOMEPAGE =	http://qalculate.sourceforge.net/
 
+REVISION=	0
+
 SHARED_LIBS =	qalculate		0.0	# 5.0
 
 # GPLv2+
@@ -21,7 +23,8 @@ MODULES =	devel/gettext \
 
 LIB_DEPENDS =	devel/cln \
 		devel/glib2 \
-		textproc/libxml
+		textproc/libxml \
+		devel/readline
 
 # Without recreating Makefile, shell globs in docs/reference/Makefile are
 # not expanded, and "fake" and "test" stages fail.

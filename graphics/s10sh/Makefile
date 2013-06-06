@@ -3,7 +3,7 @@
 COMMENT=	S10sh - a Canon PowerShot digital camera driver
 
 DISTNAME=	s10sh-0.2.0
-REVISION =	2
+REVISION =	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.kyuzz.org/antirez/s10sh-src/
 
@@ -18,7 +18,8 @@ WANTLIB=	readline c termcap usb pthread
 
 DOCDIR=		${PREFIX}/share/doc/s10sh
 
-LIB_DEPENDS=	devel/libusb-compat
+LIB_DEPENDS=	devel/libusb-compat \
+		devel/readline
 
 CONFIGURE_STYLE= simple
 

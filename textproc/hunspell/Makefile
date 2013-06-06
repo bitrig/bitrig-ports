@@ -4,6 +4,8 @@ COMMENT =	spelling, stemming, morphological analysis and generation
 
 DISTNAME =	hunspell-1.3.2
 
+REVISION=	0
+
 SHARED_LIBS =	hunspell-1.3 	0.0 #	.0.0
 
 CATEGORIES =	textproc
@@ -16,6 +18,7 @@ MAINTAINER =	Edd Barrett <edd@openbsd.org>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += c m ncurses ncursesw readline stdc++
+LIB_DEPENDS=	devel/readline
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=hunspell/}
 

@@ -14,6 +14,8 @@ VERSION =		2012.10
 DISTNAME =		${PORTNAME}-star-${VERSION}
 PKGNAME =		${PORTNAME}-${VERSION}
 
+REVISION=		0
+
 PARROT_VERSION =	4.9.0
 SUBST_VARS +=		PARROT_VERSION
 
@@ -35,7 +37,8 @@ MASTER_SITES =		http://cloud.github.com/downloads/rakudo/star/
 
 BUILD_DEPENDS =		lang/nqp
 LIB_DEPENDS =		lang/parrot>=${PARROT_VERSION} \
-			textproc/icu4c
+			textproc/icu4c \
+			devel/readline
 
 FAKE_FLAGS =		PERL6LIB="${WRKINST}${PREFIX}/lib/parrot/${PARROT_VERSION}/languages/nqp/lib:${WRKINST}${PREFIX}/lib/parrot/${PARROT_VERSION}/languages/perl6/lib"
 FAKE_FLAGS +=		LD_LIBRARY_PATH="${WRKINST}${PREFIX}/lib/parrot/${PARROT_VERSION}/dynext"

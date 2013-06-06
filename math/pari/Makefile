@@ -3,7 +3,7 @@
 COMMENT=	number theory-oriented computer algebra system
 
 DISTNAME=	pari-2.1.6
-REVISION=	2
+REVISION=	3
 EXTRACT_SUFX=	.tgz
 CATEGORIES=	math
 
@@ -12,6 +12,7 @@ HOMEPAGE=	http://pari.math.u-bordeaux.fr/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		X11 c m ncurses readline
+LIB_DEPENDS=		devel/readline
 
 MASTER_SITES=		${HOMEPAGE}/pub/pari/unix/
 

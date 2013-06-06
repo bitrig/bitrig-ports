@@ -8,7 +8,7 @@ COMMENT =	high-level language for numerical computations
 
 VERSION =	3.0.5
 DISTNAME =	octave-${VERSION}
-REVISION =	10
+REVISION =	11
 CATEGORIES =	math
 
 SHARED_LIBS =	cruft		5.0 \
@@ -45,7 +45,8 @@ LIB_DEPENDS =	${MODFORTRAN_LIB_DEPENDS} \
 		math/amd \
 		math/umfpack \
 		devel/pcre \
-		net/curl
+		net/curl \
+		devel/readline
 
 USE_GMAKE =	Yes
 USE_GROFF =	Yes

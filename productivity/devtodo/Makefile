@@ -3,7 +3,7 @@
 COMMENT=		reminder/task program aimed at developers
 
 DISTNAME=		devtodo-0.1.20
-REVISION=		1
+REVISION=		2
 CATEGORIES=		productivity devel
 
 HOMEPAGE=		http://swapoff.org/devtodo1.html
@@ -15,6 +15,7 @@ MASTER_SITES=		http://swapoff.org/files/devtodo/ \
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c m ncurses readline stdc++
+LIB_DEPENDS=		devel/readline
 
 USE_GROFF=		Yes
 CONFIGURE_STYLE=	gnu

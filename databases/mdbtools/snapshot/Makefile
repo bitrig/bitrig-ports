@@ -8,7 +8,7 @@ PKGNAME-main=	mdbtools-${DATE}
 PKGNAME-gmdb=	gmdb-${DATE}
 HOMEPAGE=	http://mdbtools.sourceforge.net/
 
-REVISION-main=	7
+REVISION-main=	8
 REVISION-gmdb=	11
 
 CATEGORIES=	databases converters
@@ -36,6 +36,7 @@ WANTLIB=	c pcre glib-2.0 pthread
 
 MODULES=	devel/gettext
 
+LIB_DEPENDS-main=devel/readline
 
 LIB_DEPENDS-gmdb=${LIB_DEPENDS} \
 		x11/gnome/libgnomeui \

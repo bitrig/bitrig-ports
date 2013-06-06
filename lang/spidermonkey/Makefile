@@ -12,7 +12,7 @@ DISTNAME =		firefox-${FFX_VERSION}.source
 PKGNAME =	${MOZILLA_PROJECT}-${MOZILLA_VERSION}
 PKGSPEC =	spidermonkey->=1.9v0,<1.10v0
 EPOCH =		0
-REVISION =	0
+REVISION =	1
 
 SO_VERSION =	0.0
 SHARED_LIBS =	mozjs ${SO_VERSION}
@@ -43,7 +43,8 @@ PATCH_STRIP =	-p2
 MODULES =	lang/python
 MODPY_RUNDEP =	No
 BUILD_DEPENDS =	archivers/zip archivers/unzip
-LIB_DEPENDS =	devel/nspr
+LIB_DEPENDS =	devel/nspr \
+		devel/readline
 WANTLIB =	c m pthread readline nspr4 ncurses plc4 plds4 stdc++
 
 WRKDIST =	${WRKDIR}/mozilla-${MOZILLA_BRANCH}/js/src

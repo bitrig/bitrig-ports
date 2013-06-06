@@ -7,6 +7,8 @@ COMMENT=		assembly language debugger
 DISTNAME=		ald-0.1.7
 CATEGORIES=		devel
 
+REVISION=		0
+
 HOMEPAGE=		http://ald.sourceforge.net/
 
 MAINTAINER=		Patrick Alken <alken@colorado.edu>
@@ -14,6 +16,7 @@ MAINTAINER=		Patrick Alken <alken@colorado.edu>
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c readline termcap
+LIB_DEPENDS=		devel/readline
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ald/}
 

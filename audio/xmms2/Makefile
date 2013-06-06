@@ -6,7 +6,7 @@ BROKEN-sparc64 =	waf build goes into an infinite loop
 V =			0.8
 DISTNAME =		xmms2-${V}DrO_o
 PKGNAME =		xmms2-${V}
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS +=		xmmsclient++		2.0 # 4.0.0
 SHARED_LIBS +=		xmmsclient++-glib	1.0 # 1.0.0
@@ -52,7 +52,8 @@ LIB_DEPENDS =		devel/glib2 \
 			audio/libmad \
 			net/avahi \
 			audio/libsndfile \
-			audio/tremor
+			audio/tremor \
+			devel/readline
 
 WSCRIPT_PATCHES =	src/clients/lib/xmmsclient++/wscript \
 			src/clients/lib/xmmsclient++-glib/wscript \

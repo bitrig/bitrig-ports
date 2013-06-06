@@ -5,6 +5,8 @@ COMMENT=	relay for bidirectional data transfer
 DISTNAME=	socat-1.7.2.1
 CATEGORIES=	net
 
+REVISION=	0
+
 HOMEPAGE=	http://www.dest-unreach.org/socat/
 
 MAINTAINER=	Nigel Taylor <nigel@openbsd.org>
@@ -15,6 +17,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=	${HOMEPAGE}/download/
 
 WANTLIB=	curses c readline crypto util ssl wrap
+LIB_DEPENDS=	devel/readline
 
 NO_TEST=	Yes
 

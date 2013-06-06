@@ -7,6 +7,8 @@ DISTNAME=	avrdude-${V}
 DISTFILES+=	avrdude-${V}.tar.gz avrdude-doc-${V}.pdf
 CATEGORIES=	devel
 
+REVISION=	0
+
 HOMEPAGE=	http://www.nongnu.org/avrdude/
 
 MAINTAINER=	Chris Kuethe <ckuethe@openbsd.org>
@@ -23,7 +25,8 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib -pthread"
 
-LIB_DEPENDS=		devel/libusb-compat
+LIB_DEPENDS=		devel/libusb-compat \
+			devel/readline
 
 SUBST_VARS+=		V
 

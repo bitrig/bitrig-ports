@@ -4,7 +4,7 @@ COMMENT=	GNU's Ubiquitous Intelligent Language for Extension
 
 VERSION=	1.8.8
 DISTNAME=	guile-${VERSION}
-REVISION=	0
+REVISION=	1
 SHARED_LIBS=	guile 20.0 \
 		guile-srfi-srfi-1-v-3 3.2 \
 		guile-srfi-srfi-13-14-v-3 3.1 \
@@ -21,7 +21,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c gmp>=6 ltdl m ncurses pthread readline
 
 LIB_DEPENDS=	devel/gmp>=4.1 \
-		devel/libtool,-ltdl
+		devel/libtool,-ltdl \
+		devel/readline 
 RUN_DEPENDS=	devel/slib
 
 MODULES=	devel/gettext

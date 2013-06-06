@@ -5,6 +5,8 @@ PATCHLEVEL =		.2
 SHARED_LIBS =		python3.3m 0.0
 VERSION_SPEC =		>=3.3,<3.4
 
+REVISION=		0
+
 CONFIGURE_ARGS +=	--with-cxx_main \
 			--with-system-expat
 

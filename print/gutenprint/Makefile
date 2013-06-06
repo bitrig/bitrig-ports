@@ -5,7 +5,7 @@ COMMENT=		high quality print drivers for foomatic and CUPS
 V=			5.2.9
 DISTNAME=		gutenprint-${V}
 
-REVISION=		1
+REVISION=		2
 
 MAJOR_V=		${V:C/^([0-9]+\.[0-9]+).*/\1/}
 SUBST_VARS=		MAJOR_V
@@ -33,7 +33,8 @@ MODULES=		devel/gettext
 BUILD_DEPENDS=		print/foomatic-db-engine
 
 LIB_DEPENDS=		print/cups,-libs \
-			print/ijs
+			print/ijs \
+			devel/readline
 
 # gutenprint with foomatic needs xml drivers information from foomatic-db
 RUN_DEPENDS +=		print/foomatic-db

@@ -7,6 +7,8 @@ COMMENT=	quick previewer for Nautilus
 GNOME_PROJECT=	sushi
 GNOME_VERSION=	3.8.1
 
+REVISION=	0
+
 HOMEPAGE=	https://live.gnome.org/ThreePointOne/Features/FilePreviewing
 
 # GPLv2+
@@ -38,7 +40,8 @@ LIB_DEPENDS=	audio/libmusicbrainz5 \
 		graphics/evince \
 		www/webkit,gtk3 \
 		x11/gnome/gjs \
-		x11/gtksourceview3
+		x11/gtksourceview3 \
+		devel/readline
 
 LIBTOOL_FLAGS=	--tag=disable-static
 

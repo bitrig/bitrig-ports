@@ -6,12 +6,15 @@ DISTNAME=	datalog-2.3
 SHARED_LIBS +=  datalog                   0.0 # 0.0
 CATEGORIES=	lang
 
+REVISON=	0
+
 HOMEPAGE=	http://datalog.sourceforge.net/
 
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c m readline termcap
+LIB-DEPENDS=		devel/readline
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=datalog/}
 

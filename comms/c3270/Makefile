@@ -4,6 +4,7 @@ COMMENT=	curses-based 3270 terminal editor
 
 DISTNAME=	suite3270-3.3.11ga6-src
 PKGNAME=	c3270-3.3.11.6
+REVISION=	0
 EXTRACT_SUFX=	.tgz
 CATEGORIES=	comms
 
@@ -14,6 +15,7 @@ MAINTAINER=	Jeremy Evans <jeremy@openbsd.org>
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c crypto ssl ncursesw readline util
+LIB_DEPENDS=		devel/readline
 
 MODULES=                converters/libiconv
 

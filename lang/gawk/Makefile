@@ -4,7 +4,7 @@ COMMENT=	GNU awk
 
 V=		4.0.1
 DISTNAME=	gawk-$V
-REVISION=	1
+REVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU:=gawk/}
 
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=	c m readline sigsegv termcap
 
 MODULES=	devel/gettext
-LIB_DEPENDS=	devel/libsigsegv
+LIB_DEPENDS=	devel/libsigsegv \
+		devel/readline
 
 SUBST_VARS=	V
 

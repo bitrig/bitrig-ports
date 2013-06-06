@@ -15,6 +15,7 @@ DISTNAME=	freeradius-server-$V
 EXTRACT_SUFX=	.tar.bz2
 
 PKGNAME-main=	freeradius-$V
+REVISION-main=  0
 PKGNAME-iodbc=	freeradius-iodbc-$V
 PKGNAME-mysql=	freeradius-mysql-$V
 REVISION-mysql=	0
@@ -75,7 +76,8 @@ TAR=			${LOCALBASE}/bin/gtar
 BUILD_DEPENDS=		archivers/gtar \
 			net/net-snmp
 LIB_DEPENDS-main =	databases/gdbm \
-			devel/libtool,-ltdl
+			devel/libtool,-ltdl \
+			devel/readline
 WANTLIB-main=		${WANTLIB} c com_err krb5 pcap pthread readline \
 			termcap gdbm>=3 ltdl>=4
 

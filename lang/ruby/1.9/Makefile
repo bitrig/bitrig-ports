@@ -12,6 +12,8 @@ VERSION =		1.9.3
 PATCHLEVEL =		429
 RUBYLIBREV =		1.9.1
 
+REVISION=		0
+
 SHARED_LIBS =		ruby19 1.0
 PKGNAME-main =		ruby-${VERSION}.${PATCHLEVEL}
 PKGNAME-gdbm =		ruby-gdbm-${VERSION}.${PATCHLEVEL}
@@ -46,7 +48,8 @@ WANTLIB-main =		c crypto ffi m ncurses ncursesw pthread readline ssl \
 			termcap util yaml z ${MODLIBICONV_WANTLIB}
 LIB_DEPENDS-main =	${MODLIBICONV_LIB_DEPENDS} \
 			devel/libyaml \
-			devel/libffi
+			devel/libffi \
+			devel/readline
 RUN_DEPENDS-main =	${MODLIBICONV_RUN_DEPENDS}
 
 PSEUDO_FLAVORS=		no_x11 no_ri_docs

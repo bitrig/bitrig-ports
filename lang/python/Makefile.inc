@@ -67,7 +67,8 @@ RUN_DEPENDS=		${FULLPKGNAME-main}:lang/python/${VERSION},-main
 LIB_DEPENDS=
 
 LIB_DEPENDS-main =	archivers/bzip2 \
-			${MODGETTEXT_LIB_DEPENDS}
+			${MODGETTEXT_LIB_DEPENDS} \
+			devel/readline
 RUN_DEPENDS-main =
 WANTLIB-main =		bz2 c crypto expat m ncursesw panelw pthread \
 			readline sqlite3 ssl stdc++ util z \

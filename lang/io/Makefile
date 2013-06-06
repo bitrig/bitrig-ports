@@ -7,7 +7,7 @@ COMMENT =	embeddable prototype-based language
 
 DISTNAME =	stevedekorte-io-2011.09.12-106-g02f9800
 PKGNAME =	io-20110905
-REVISION =	4
+REVISION =	5
 
 CATEGORIES =	lang
 
@@ -52,7 +52,8 @@ LIB_DEPENDS =	archivers/lzo2 \
 		lang/python/2.7 \
 		multimedia/libtheora \
 		sysutils/e2fsprogs \
-		textproc/libxml,no_python
+		textproc/libxml,no_python \
+		devel/readline
 
 MODULES =	devel/cmake \
 		devel/gettext

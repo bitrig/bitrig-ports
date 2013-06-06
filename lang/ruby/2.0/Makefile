@@ -12,6 +12,8 @@ PATCHLEVEL =		195
 RUBYLIBREV =		2.0
 DISTNAME =		ruby-${VERSION}-p${PATCHLEVEL}
 
+REVISION=		0
+
 SHARED_LIBS =		ruby20	0.0
 PKGNAME-main =		ruby-${VERSION}.${PATCHLEVEL}
 PKGNAME-gdbm =		ruby20-gdbm-${VERSION}.${PATCHLEVEL}
@@ -46,7 +48,8 @@ USE_GROFF =		Yes
 WANTLIB-main =		c crypto ffi m ncurses ncursesw pthread readline ssl \
 			termcap util yaml z
 LIB_DEPENDS-main =	devel/libyaml \
-			devel/libffi
+			devel/libffi \
+			devel/readline
 
 PSEUDO_FLAVORS=		no_x11 no_ri_docs
 # Do not build the RI docs on slow arches

@@ -5,6 +5,8 @@ SHARED_ONLY=	Yes
 COMMENT=	powerful math/statistics/graphics language
 DISTNAME=	R-2.15.2
 
+REVISON=	0
+
 SHARED_LIBS=	R	1.0  \
 		Rlapack	31.0 \
 		Rblas	31.0
@@ -57,7 +59,8 @@ LIB_DEPENDS=	${MODFORTRAN_LIB_DEPENDS} \
 		devel/pango \
 		graphics/png \
 		graphics/tiff \
-		textproc/icu4c
+		textproc/icu4c \
+		devel/readline
 RUN_DEPENDS=	archivers/gtar \
 		devel/xdg-utils
 

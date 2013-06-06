@@ -6,6 +6,8 @@ CATEGORIES=		audio
 HOMEPAGE=		http://caoua.org/midish/
 MAINTAINER=		Alexandre Ratchov <alex@caoua.org>
 
+REVISION=		0
+
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -15,6 +17,8 @@ CONFIGURE_STYLE=	simple
 CONFIGURE_ARGS=		--prefix=${PREFIX}
 NO_TEST=		Yes
 MAKE_FLAGS=		CC="${CC}"
+
+LIB_DEPENDS=		devel/readline
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKBUILD}/midish ${WRKBUILD}/rmidish ${PREFIX}/bin

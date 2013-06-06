@@ -15,7 +15,7 @@ MOZILLA_VERSION =	1.8.5
 DISTNAME =		js185-1.0.0
 PKGNAME =		spidermonkey-${MOZILLA_VERSION}
 PKGSPEC =		spidermonkey->=1.8,<1.9
-REVISION =		6
+REVISION =		7
 
 SO_VERSION =	0.0
 SHARED_LIBS =	mozjs185 ${SO_VERSION}
@@ -43,7 +43,8 @@ MODULES =	lang/python
 MODPY_RUNDEP =	No
 TEST_DEPENDS = ${MODPY_RUN_DEPENDS}
 BUILD_DEPENDS =	archivers/zip
-LIB_DEPENDS =	devel/nspr
+LIB_DEPENDS =	devel/nspr \
+		devel/readline
 
 MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} \
 				${WRKSRC}/ctypes/libffi \

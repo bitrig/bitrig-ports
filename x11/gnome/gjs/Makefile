@@ -7,6 +7,8 @@ COMMENT=		Javascript bindings for GNOME
 GNOME_PROJECT=		gjs
 GNOME_VERSION=		1.36.1
 
+REVISION=		0
+
 SHARED_LIBS +=  gjs                  3.0      # 0.0
 
 CATEGORIES=		devel
@@ -33,7 +35,8 @@ MODPY_BUILDDEP= 	No
 LIBTOOL_FLAGS=		--tag=disable-static
 
 LIB_DEPENDS=		devel/gobject-introspection \
-			devel/spidermonkey
+			devel/spidermonkey \
+			devel/readline
 
 CONFIGURE_ARGS=		--disable-static
 

@@ -7,6 +7,8 @@ CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}downloads/
 EXTRACT_SUFX=	.tar.bz2
 
+REVISION=	0
+
 SHARED_LIBS=	physfs		2.0
 
 HOMEPAGE=	http://icculus.org/physfs/
@@ -15,6 +17,7 @@ HOMEPAGE=	http://icculus.org/physfs/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	c curses pthread readline z
+LIB_DEPENDS=	devel/readline
 
 MODULES=	devel/cmake
 

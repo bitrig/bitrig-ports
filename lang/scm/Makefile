@@ -11,7 +11,7 @@ CATEGORIES=	lang
 
 V=5e5
 DISTNAME=	scm-$V
-REVISION=	0
+REVISION=	1
 EXTRACT_SUFX=	.zip
 
 HOMEPAGE=	http://people.csail.mit.edu/jaffer/SCM
@@ -61,6 +61,7 @@ WANTLIB+=	X11 pthread-stubs xcb
 
 BUILD_DEPENDS=devel/slib
 RUN_DEPENDS=devel/slib
+LIB_DEPENDS=devel/readline
 
 FEATURE_LIST=
 .for f in ${FEATURES}

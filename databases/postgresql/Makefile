@@ -12,6 +12,8 @@ PKGNAME-server=	postgresql-server-${VERSION}
 PKGNAME-docs=	postgresql-docs-${VERSION}
 PKGNAME-contrib=postgresql-contrib-${VERSION}
 
+REVISION=	0
+
 CATEGORIES=	databases
 SHARED_LIBS=	ecpg		7.4 \
 		ecpg_compat	4.4 \
@@ -76,7 +78,7 @@ MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/config
 ALL_TARGET=	world
 INSTALL_TARGET=	install-world
 
-LIB_DEPENDS-main= textproc/libxml
+LIB_DEPENDS-main= textproc/libxml devel/readline
 WANTLIB-main =	${WANTLIB} xml2
 
 

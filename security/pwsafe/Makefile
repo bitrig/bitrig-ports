@@ -2,7 +2,7 @@
 
 COMMENT=		program that manages encrypted password databases
 DISTNAME=		pwsafe-0.2.0
-REVISION=		3
+REVISION=		4
 CATEGORIES=		security
 
 HOMEPAGE=		http://nsd.dyndns.org/pwsafe/
@@ -12,6 +12,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		Xmu m X11 ncurses crypto c stdc++ SM readline ICE \
 			curses
+LIB_DEPENDS=		devel/readline
 
 MASTER_SITES=		${HOMEPAGE}releases/
 

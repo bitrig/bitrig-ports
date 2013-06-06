@@ -3,7 +3,7 @@
 COMMENT=		Z39.50/SR client and API library
 DISTNAME=		yaz-3.0.49
 CATEGORIES=		net
-REVISION=		1
+REVISION=		2
 
 SHARED_LIBS+=		yaz		1.1	# 3.0
 SHARED_LIBS+=		yaz_icu		1.2	# 3.0
@@ -31,7 +31,8 @@ LIB_DEPENDS=		textproc/libxml \
 			security/libgpg-error \
 			security/libgcrypt \
 			textproc/libxslt \
-			textproc/icu4c
+			textproc/icu4c \
+			devel/readline
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--without-gnutls

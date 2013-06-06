@@ -9,6 +9,8 @@ DISTNAME=	parrot-$V
 CATEGORIES=	lang perl6
 SHARED_LIBS=	parrot	7.0
 
+REVISION=	0
+
 HOMEPAGE=	http://www.parrot.org/
 
 MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
@@ -26,7 +28,8 @@ BUILD_DEPENDS=		graphics/glew \
 LIB_DEPENDS=		textproc/icu4c \
 			devel/gmp \
 			graphics/freeglut \
-			devel/libffi
+			devel/libffi \
+			devel/readline
 TEST_DEPENDS=	devel/p5-TAP-Harness-Multiple \
 			devel/p5-Test-Perl-Critic
 

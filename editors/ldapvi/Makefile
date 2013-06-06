@@ -5,7 +5,7 @@ COMMENT=	update LDAP entries with a text editor
 DISTNAME=	ldapvi-1.7
 CATEGORIES=	editors
 
-REVISION=	5
+REVISION=	6
 
 HOMEPAGE=	http://www.lichteblau.com/ldapvi.html
 
@@ -22,7 +22,8 @@ MODULES=	devel/gettext
 BUILD_DEPENDS=	textproc/libxslt
 LIB_DEPENDS=	devel/glib2 \
 		databases/openldap \
-		devel/popt
+		devel/popt \
+		devel/readline
 WANTLIB +=	glib-2.0>=0.8 lber ldap popt
 
 MAKE_FILE=	GNUmakefile

@@ -9,6 +9,8 @@ VERSION =	2.5.2
 DISTNAME =	gphoto2-${VERSION}
 PKGNAME =	gphoto-${VERSION}
 
+REVISION=	0
+
 HOMEPAGE =	http://gphoto.sourceforge.net/
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=gphoto/}
@@ -34,6 +36,7 @@ CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 
 MODULES =	devel/gettext
 LIB_DEPENDS =	graphics/libgphoto2>=2.5.1 \
-		devel/popt
+		devel/popt \
+		devel/readline
 
 .include <bsd.port.mk>

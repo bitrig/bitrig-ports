@@ -3,7 +3,7 @@
 COMMENT=	powerful console ftp client with many features
 
 DISTNAME=	yafc-1.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=yafc/}
 
@@ -14,6 +14,7 @@ MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c ncurses readline
+LIB_DEPENDS=		devel/readline
 
 CONFIGURE_STYLE= gnu
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/support

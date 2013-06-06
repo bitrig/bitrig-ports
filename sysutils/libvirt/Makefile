@@ -5,6 +5,8 @@ COMMENT=		tool/library for managing platform virtualization
 DISTNAME=		libvirt-1.0.5.1
 CATEGORIES=		sysutils devel
 
+REVISION=		0
+
 SHARED_LIBS +=  virt-qemu                 0.2 # 1000.5
 SHARED_LIBS +=  virt                      0.2 # 1000.5
 SHARED_LIBS +=	virt-lxc		  0.0 # 1000.5
@@ -33,7 +35,8 @@ LIB_DEPENDS=		net/avahi \
 			security/gnutls \
 			security/libgcrypt \
 			security/libssh2 \
-			textproc/libxml
+			textproc/libxml \
+			devel/readline
 
 USE_GMAKE=		Yes
 

@@ -5,6 +5,8 @@ COMMENT=	shell-like command line ftp and sftp client
 DISTNAME=	lftp-4.3.3
 CATEGORIES=	net
 
+REVISION=	0
+
 HOMEPAGE=	http://lftp.yar.ru/
 
 MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
@@ -13,6 +15,7 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 PERMIT_PACKAGE_CDROM=   Yes
 
 WANTLIB=	c crypto curses expat m readline ssl stdc++ util
+LIB_DEPENDS=	devel/readline
 
 MASTER_SITES=	http://ftp.yars.free.net/pub/source/lftp/ \
 		http://ftp.yars.free.net/pub/source/lftp/old/ \

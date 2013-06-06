@@ -7,7 +7,7 @@ COMMENT =		low latency sound server
 V =			0.121.3
 DISTNAME =		jack-audio-connection-kit-${V}
 PKGNAME =		jack-${V}
-REVISION =		3
+REVISION =		4
 CATEGORIES =		audio
 
 SHARED_LIBS +=		jack		0.0	# 0.28
@@ -25,7 +25,8 @@ MASTER_SITES =		${HOMEPAGE}downloads/
 
 LIB_DEPENDS =		audio/libsndfile \
 			audio/libsamplerate \
-			audio/celt>=0.11.0
+			audio/celt>=0.11.0 \
+			devel/readline
 
 # uses macros from libtool.m4
 BUILD_DEPENDS =		devel/libtool

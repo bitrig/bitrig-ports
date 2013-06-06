@@ -3,7 +3,7 @@
 COMMENT=	console based Jabber client
 
 DISTNAME=	freetalk-3.2
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	net
 
@@ -21,7 +21,8 @@ MASTER_SITES=	${MASTER_SITE_SAVANNAH:=freetalk/}
 
 MODULES=	devel/gettext
 LIB_DEPENDS=	lang/guile \
-		net/loudmouth
+		net/loudmouth \
+		devel/readline
 
 AUTOCONF_VERSION=	2.61
 CONFIGURE_STYLE= autoconf no-autoheader
