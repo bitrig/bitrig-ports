@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure_in,v 1.2 2013/01/21 20:02:09 bcallah Exp $
---- configure.in.orig	Thu Mar 31 21:08:36 2011
-+++ configure.in	Sun Jan 27 07:40:10 2013
+--- configure.in.orig	Thu Mar 31 20:08:36 2011
++++ configure.in	Thu Jun  6 19:23:44 2013
 @@ -1211,7 +1211,7 @@ WIN_TOP_SRC=
  MOZ_USER_DIR=".mozilla"
  
@@ -67,3 +67,15 @@ $OpenBSD: patch-configure_in,v 1.2 2013/01/21 20:02:09 bcallah Exp $
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
+@@ -5616,8 +5619,9 @@ esac
+ if test -z "$SKIP_LIBRARY_CHECKS" -a -z "$NO_EDITLINE"; then
+   if test -n "$JS_WANT_READLINE"; then
+     AC_CHECK_LIB(readline, readline,
+-                 EDITLINE_LIBS="-lreadline",
+-                 AC_MSG_ERROR([No system readline library found.]))
++                 EDITLINE_LIBS="-L${LOCALBASE}/lib -lreadline",
++                 AC_MSG_ERROR([No system readline library found.]),
++		 -L${LOCALBASE}/lib)
+   else
+     dnl By default, we use editline
+     JS_NATIVE_EDITLINE=1

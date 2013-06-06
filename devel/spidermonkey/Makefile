@@ -65,5 +65,8 @@ CONFIGURE_ENV +=	CC=gcc CXX=c++ \
 			SO_VERSION="${SO_VERSION}" \
 			MOZILLA_VERSION="${MOZILLA_VERSION}" \
 			LIBS=-lncurses
+post-patch:
+	$(SUBST_CMD) ${WRKDIST}/configure.in
+
 
 .include <bsd.port.mk>
