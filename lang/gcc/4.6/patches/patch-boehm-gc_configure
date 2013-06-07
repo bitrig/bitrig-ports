@@ -1,6 +1,6 @@
-$OpenBSD$
---- boehm-gc/configure.orig	Thu Mar  1 06:03:46 2012
-+++ boehm-gc/configure	Wed Jul 25 13:39:04 2012
+$OpenBSD: patch-boehm-gc_configure,v 1.6 2013/06/07 07:54:23 pascal Exp $
+--- boehm-gc/configure.orig	Fri Apr 12 11:58:00 2013
++++ boehm-gc/configure	Sat Apr 13 16:20:18 2013
 @@ -5661,7 +5661,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -111,7 +111,7 @@ $OpenBSD$
  # Darwin needs a few extra special tests to deal with variation in the
  # system headers.
  case "$host" in
-@@ -15294,6 +15298,9 @@ $as_echo "#define DATASTART_IS_ETEXT 1" >>confdefs.h
+@@ -15305,6 +15309,9 @@ $as_echo "#define DATASTART_IS_ETEXT 1" >>confdefs.h
      ;;
   sparc-*-netbsd*)
      machdep="sparc_netbsd_mach_dep.lo"

@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-gcc_configure,v 1.4 2013/06/07 07:54:23 pascal Exp $
 --- gcc/configure.orig	Sun Nov 20 15:24:07 2011
 +++ gcc/configure	Wed Jul 25 09:48:01 2012
 @@ -12071,7 +12071,7 @@ else
@@ -55,7 +55,7 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -16917,7 +16917,7 @@ openbsd*)
+@@ -16949,7 +16949,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext}$versuffix'
@@ -82,7 +82,7 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -20576,7 +20576,7 @@ openbsd*)
+@@ -20608,7 +20608,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext}$versuffix'
@@ -91,7 +91,7 @@ $OpenBSD$
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
-@@ -25778,6 +25778,7 @@ else
+@@ -25814,6 +25814,7 @@ else
  fi
  
          ;;
