@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.88 2013/05/31 14:50:11 robert Exp $
+# $OpenBSD: Makefile,v 1.89 2013/06/07 09:07:50 sthen Exp $
 
 ONLY_FOR_ARCHS= amd64 i386
 
