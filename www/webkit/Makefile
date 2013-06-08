@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.88 2013/06/08 11:59:46 landry Exp $
+# $OpenBSD: Makefile,v 1.89 2013/06/08 12:07:38 landry Exp $
 
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
@@ -36,10 +36,10 @@ MODPY_ADJ_FILES =	Tools/gtk/generate-feature-defines-files
 
 CONFIGURE_STYLE =	gnu
 MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/Source/autotools/
+PORTHOME =	${WRKDIST}
 
 CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib -lX11" \
-		PORTHOME=${WRKDIST} \
 		ac_cv_path_FLEX=${LOCALBASE}/bin/gflex \
 		ac_cv_path_RUBY=${RUBY}
 
