@@ -1,9 +1,9 @@
 $OpenBSD$
---- tools/clang/tools/c-index-test/CMakeLists.txt.orig	Fri Aug 17 21:13:35 2012
-+++ tools/clang/tools/c-index-test/CMakeLists.txt	Fri Aug 17 22:19:10 2012
-@@ -19,5 +19,6 @@ set_target_properties(c-index-test
- if (LIBXML2_FOUND)
-   add_definitions(${LIBXML2_DEFINITIONS} "-DCLANG_HAVE_LIBXML")
+--- tools/clang/tools/c-index-test/CMakeLists.txt.orig	Fri Dec 14 19:30:20 2012
++++ tools/clang/tools/c-index-test/CMakeLists.txt	Fri Jun 14 23:05:55 2013
+@@ -25,5 +25,6 @@ set_target_properties(c-index-test
+ # If libxml2 is available, make it available for c-index-test.
+ if (CLANG_HAVE_LIBXML)
    include_directories(${LIBXML2_INCLUDE_DIR})
 +  include_directories(/usr/local/include)
    target_link_libraries(c-index-test ${LIBXML2_LIBRARIES})

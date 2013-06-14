@@ -23,26 +23,23 @@ ONLY_FOR_ARCHS = amd64 i386 arm
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c m pthread stdc++
+WANTLIB =	c m pthread stdc++ z
 
-#MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
-MASTER_SITES = https://www.bitrig.org/pub/distfiles/
+MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
 
-DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
+DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} cfe-${LLVM_V}.src${EXTRACT_SUFX}
 DISTFILES +=	compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 
 post-extract:
-	@mv ${WRKDIR}/clang-${LLVM_V}.src ${WRKDIST}/tools/clang
+	@mv ${WRKDIR}/cfe-${LLVM_V}.src ${WRKDIST}/tools/clang
 	@mv ${WRKDIR}/compiler-rt-${LLVM_V}.src ${WRKDIST}/projects/compiler-rt
 
 MODULES =	devel/cmake \
 		lang/python
 
 TEST_DEPENDS = devel/dejagnu
-
-# yep, the amount of suck is amazing
-BUILD_DEPENDS = textproc/py-docutils
+BUILD_DEPENDS += textproc/py-docutils
 
 MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
 		VERBOSE=Yes \
@@ -59,15 +56,13 @@ PREFIX=			/usr
 CONFIGURE_STYLE =	cmake
 CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 			-DLLVM_REQUIRES_RTTI:Bool=True \
-			-DLLVM_INCLUDE_TESTS:Bool=True \
 			-DLLVM_TARGETS_TO_BUILD:String="ARM;X86" \
 			-DCMAKE_INSTALL_PREFIX:PATH=${PREFIX} \
-			-DCMAKE_BUILD_TYPE:String=Release
+			-DCMAKE_BUILD_TYPE:String=Release \
+			-DCMAKE_DISABLE_FIND_PACKAGE_LibXml2:Bool=True
 
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
 SUBST_VARS +=		CLANG_INCLUDE_PATH
-
-TMPGIT = ${DISTDIR}/tmpgit
 
 .if ${MACHINE_ARCH:Mamd64}
 INSTALL_ARCH = x86_64
@@ -118,29 +113,5 @@ post-install:
 	    ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKBUILD}/lib/clang/${LLVM_V}/lib/bitrig/libclang_rt.${INSTALL_ARCH}.a \
 	    ${PREFIX}/lib/libclang_rt.${ARCH}.a
-
-git:
-	rm -rf ${DISTDIR}/llvm* ${DISTDIR}/clang* ${DISTDIR}/compiler-rt*
-	@mkdir -p ${TMPGIT}
-	if test -d ${TMPGIT}/llvm-${LLVM_V}.src; then \
-		(cd ${TMPGIT}/llvm-${LLVM_V}.src && git pull) \
-	else \
-		(cd ${TMPGIT} && git clone -b release_33 http://llvm.org/git/llvm.git llvm-${LLVM_V}.src) \
-	fi
-	if test -d ${TMPGIT}/clang-${LLVM_V}.src; then \
-		(cd ${TMPGIT}/clang-${LLVM_V}.src && git pull) \
-	else \
-		(cd ${TMPGIT} && git clone -b release_33 http://llvm.org/git/clang.git clang-${LLVM_V}.src) \
-	fi	
-	if test -d ${TMPGIT}/compiler-rt-${LLVM_V}.src; then \
-		(cd ${TMPGIT}/compiler-rt-${LLVM_V}.src && git pull) \
-	else \
-		(cd ${TMPGIT} && git clone -b release_33 http://llvm.org/git/compiler-rt.git compiler-rt-${LLVM_V}.src) \
-	fi
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/llvm-${LLVM_V}.src.tar.gz llvm-${LLVM_V}.src)
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/clang-${LLVM_V}.src.tar.gz clang-${LLVM_V}.src)
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/compiler-rt-${LLVM_V}.src.tar.gz compiler-rt-${LLVM_V}.src)
-	make makesum
-	rm -rf ${TMPGIT}
 
 .include <bsd.port.mk>
