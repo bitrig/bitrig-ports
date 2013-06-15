@@ -10,12 +10,14 @@ LLVM_V =	3.3
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	bitrig
 
 # packager notes in http://llvm.org/docs/Packaging.html
 HOMEPAGE =	http://www.llvm.org/
+
+SHARED_LIBS +=  clang 3.3      # 3.3
 
 VMEM_WARNING =	Yes
 ONLY_FOR_ARCHS = amd64 i386 arm
