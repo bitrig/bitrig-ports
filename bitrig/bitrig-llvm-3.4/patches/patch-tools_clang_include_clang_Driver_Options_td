@@ -1,7 +1,7 @@
 $OpenBSD$
---- tools/clang/include/clang/Driver/Options.td.orig	Tue Oct 23 16:03:15 2012
-+++ tools/clang/include/clang/Driver/Options.td	Tue Oct 23 16:08:50 2012
-@@ -942,7 +942,7 @@ def private__bundle : Flag<["-"], "private_bundle">;
+--- tools/clang/include/clang/Driver/Options.td.orig	Sun Jun 16 21:08:39 2013
++++ tools/clang/include/clang/Driver/Options.td	Sun Jun 16 21:09:44 2013
+@@ -1074,7 +1074,7 @@ def private__bundle : Flag<["-"], "private_bundle">;
  def pthreads : Flag<["-"], "pthreads">;
  def pthread : Flag<["-"], "pthread">, Flags<[CC1Option]>,
    HelpText<"Support POSIX threads in generated code">;

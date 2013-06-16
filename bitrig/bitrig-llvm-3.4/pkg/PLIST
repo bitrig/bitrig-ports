@@ -28,7 +28,6 @@ bin/llvm-lit
 @bin bin/llvm-nm
 @bin bin/llvm-objdump
 @bin bin/llvm-prof
-@bin bin/llvm-ranlib
 @bin bin/llvm-readobj
 @bin bin/llvm-rtdyld
 @bin bin/llvm-size
@@ -254,8 +253,6 @@ include/clang/CodeGen/ModuleBuilder.h
 include/clang/Config/
 include/clang/Driver/
 include/clang/Driver/Action.h
-include/clang/Driver/Arg.h
-include/clang/Driver/ArgList.h
 include/clang/Driver/CC1AsOptions.h
 include/clang/Driver/CC1AsOptions.inc
 include/clang/Driver/CC1Options.h
@@ -263,9 +260,6 @@ include/clang/Driver/Compilation.h
 include/clang/Driver/Driver.h
 include/clang/Driver/DriverDiagnostic.h
 include/clang/Driver/Job.h
-include/clang/Driver/OptSpecifier.h
-include/clang/Driver/OptTable.h
-include/clang/Driver/Option.h
 include/clang/Driver/Options.h
 include/clang/Driver/Options.inc
 include/clang/Driver/Phases.h
@@ -863,13 +857,15 @@ include/llvm/Object/
 include/llvm/Object/Archive.h
 include/llvm/Object/Binary.h
 include/llvm/Object/COFF.h
-include/llvm/Object/COFFYaml.h
+include/llvm/Object/COFFYAML.h
 include/llvm/Object/ELF.h
+include/llvm/Object/ELFYAML.h
 include/llvm/Object/Error.h
 include/llvm/Object/MachO.h
 include/llvm/Object/MachOFormat.h
 include/llvm/Object/ObjectFile.h
 include/llvm/Object/RelocVisitor.h
+include/llvm/Object/YAML.h
 include/llvm/Option/
 include/llvm/Option/Arg.h
 include/llvm/Option/ArgList.h
@@ -953,7 +949,6 @@ include/llvm/Support/OutputBuffer.h
 include/llvm/Support/PassNameParser.h
 include/llvm/Support/Path.h
 include/llvm/Support/PathV1.h
-include/llvm/Support/PathV2.h
 include/llvm/Support/PatternMatch.h
 include/llvm/Support/PluginLoader.h
 include/llvm/Support/PointerLikeTypeTraits.h
@@ -1091,6 +1086,7 @@ ${CLANG_INCLUDE_PATH}/sanitizer/
 ${CLANG_INCLUDE_PATH}/sanitizer/asan_interface.h
 ${CLANG_INCLUDE_PATH}/sanitizer/common_interface_defs.h
 ${CLANG_INCLUDE_PATH}/sanitizer/linux_syscall_hooks.h
+${CLANG_INCLUDE_PATH}/sanitizer/lsan_interface.h
 ${CLANG_INCLUDE_PATH}/sanitizer/msan_interface.h
 ${CLANG_INCLUDE_PATH}/smmintrin.h
 ${CLANG_INCLUDE_PATH}/stdalign.h
@@ -1158,7 +1154,6 @@ lib/libLLVMipo.a
 lib/libLTO.a
 lib/libLTO.so
 @lib lib/libclang.so.${LIBclang_VERSION}
-lib/libclang.so
 lib/libclangARCMigrate.a
 lib/libclangAST.a
 lib/libclangASTMatchers.a
@@ -1201,28 +1196,22 @@ share/llvm/cmake/LLVMProcessSources.cmake
 share/llvm/cmake/TableGen.cmake
 share/llvm/scanview.css
 share/llvm/sorttable.js
-@man share/man/man1/FileCheck.rst.1
-@man share/man/man1/bugpoint.rst.1
 @man share/man/man1/clang.1
-@man share/man/man1/index.rst.1
-@man share/man/man1/lit.rst.1
-@man share/man/man1/llc.rst.1
-@man share/man/man1/lli.rst.1
-@man share/man/man1/llvm-ar.rst.1
-@man share/man/man1/llvm-as.rst.1
-@man share/man/man1/llvm-bcanalyzer.rst.1
-@man share/man/man1/llvm-build.rst.1
-@man share/man/man1/llvm-config.rst.1
-@man share/man/man1/llvm-cov.rst.1
-@man share/man/man1/llvm-diff.rst.1
-@man share/man/man1/llvm-dis.rst.1
-@man share/man/man1/llvm-extract.rst.1
-@man share/man/man1/llvm-link.rst.1
-@man share/man/man1/llvm-nm.rst.1
-@man share/man/man1/llvm-prof.rst.1
-@man share/man/man1/llvm-ranlib.rst.1
-@man share/man/man1/llvm-readobj.rst.1
-@man share/man/man1/llvm-stress.rst.1
-@man share/man/man1/llvm-symbolizer.rst.1
-@man share/man/man1/opt.rst.1
-@man share/man/man1/tblgen.rst.1
+@man share/man/man1/index.1
+@man share/man/man1/lit.1
+@man share/man/man1/llc.1
+@man share/man/man1/llvm-ar.1
+@man share/man/man1/llvm-as.1
+@man share/man/man1/llvm-bcanalyzer.1
+@man share/man/man1/llvm-build.1
+@man share/man/man1/llvm-cov.1
+@man share/man/man1/llvm-diff.1
+@man share/man/man1/llvm-dis.1
+@man share/man/man1/llvm-extract.1
+@man share/man/man1/llvm-link.1
+@man share/man/man1/llvm-nm.1
+@man share/man/man1/llvm-prof.1
+@man share/man/man1/llvm-readobj.1
+@man share/man/man1/llvm-stress.1
+@man share/man/man1/opt.1
+@man share/man/man1/tblgen.1
