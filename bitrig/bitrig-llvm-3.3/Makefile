@@ -91,13 +91,10 @@ pre-configure:
 	-@ln -s ${MODPY_BIN} ${WRKDIR}/bin/python
 
 post-build:
-#	pod2man --release=CVS --center="LLVM Command Guide" \
-#	    $$i man/man1/$${i%.pod}.1; \
-#
-#	rst2man blows chunks but it is all i got right now
-	mkdir -p ${WRKSRC}/docs/CommandGuide/man/man1
+	${INSTALL_DATA_DIR} ${WRKSRC}/docs/CommandGuide/man/man1/
 	cd ${WRKSRC}/docs/CommandGuide && for i in *.rst; do \
-		rst2man $$i > man/man1/$$i.1; \
+	rst2man -q --title="LLVM Command Guide" \
+	    $$i man/man1/$${i%.rst}.1; \
 	done
 	pod2man --release=CVS --center="LLVM Command Guide" \
 	    ${WRKSRC}/tools/clang/docs/tools/clang.pod \
