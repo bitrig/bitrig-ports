@@ -1157,7 +1157,7 @@ lib/libLLVMipa.a
 lib/libLLVMipo.a
 lib/libLTO.a
 lib/libLTO.so
-lib/libclang.a
+@lib lib/libclang.so.${LIBclang_VERSION}
 lib/libclang.so
 lib/libclangARCMigrate.a
 lib/libclangAST.a

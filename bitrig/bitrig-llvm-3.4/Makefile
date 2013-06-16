@@ -17,6 +17,8 @@ CATEGORIES =	bitrig
 # packager notes in http://llvm.org/docs/Packaging.html
 HOMEPAGE =	http://www.llvm.org/
 
+SHARED_LIBS +=  clang 2.0      # 3.4
+
 VMEM_WARNING =	Yes
 ONLY_FOR_ARCHS = amd64 i386 arm
 
