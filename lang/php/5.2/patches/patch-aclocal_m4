@@ -1,5 +1,6 @@
+$OpenBSD: patch-aclocal_m4,v 1.6 2013/06/17 19:30:33 ajacoutot Exp $
 --- aclocal.m4.orig.port	Fri Jan  7 00:04:40 2011
-+++ aclocal.m4	Sat Aug 25 19:03:44 2012
++++ aclocal.m4	Sat Jun 15 17:03:59 2013
 @@ -194,7 +194,7 @@ dnl the path is interpreted relative to the top build-
  dnl
  dnl which array to append to?
@@ -39,20 +40,7 @@
    dnl Some systems require that we link $2 to $1 when building
  ])
  
-@@ -2274,10 +2260,9 @@ AC_DEFUN([PHP_SETUP_KERBEROS],[
-     if test "$PHP_KERBEROS_DIR"; then
-       found_kerberos=yes
-       PHP_ADD_LIBPATH($PHP_KERBEROS_DIR/$PHP_LIBDIR, $1)
--      PHP_ADD_LIBRARY(gssapi_krb5, 1, $1)
-       PHP_ADD_LIBRARY(krb5, 1, $1)
--      PHP_ADD_LIBRARY(k5crypto, 1, $1)
--      PHP_ADD_LIBRARY(com_err,  1, $1)
-+      PHP_ADD_LIBRARY(crypto, 1, $1)
-+      PHP_ADD_LIBRARY(gssapi, 1, $1)
-       PHP_ADD_INCLUDE($PHP_KERBEROS_DIR/include)
-     fi
-   fi
-@@ -2325,7 +2310,7 @@ AC_DEFUN([PHP_SETUP_OPENSSL],[
+@@ -2325,7 +2311,7 @@ AC_DEFUN([PHP_SETUP_OPENSSL],[
        AC_MSG_ERROR([OpenSSL version 0.9.6 or greater required.])
      fi
  
@@ -61,7 +49,7 @@
        PHP_EVAL_LIBLINE($OPENSSL_LIBS, $1)
        PHP_EVAL_INCLINE($OPENSSL_INCS)
      fi
-@@ -3044,7 +3029,7 @@ old_postuninstall_cmds=
+@@ -3044,7 +3030,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -70,7 +58,7 @@
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
-@@ -3716,7 +3701,7 @@ AC_CACHE_VAL([lt_cv_sys_max_cmd_len], [dnl
+@@ -3716,7 +3702,7 @@ AC_CACHE_VAL([lt_cv_sys_max_cmd_len], [dnl
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -79,7 +67,7 @@
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -4319,7 +4304,7 @@ bsdi[[45]]*)
+@@ -4319,7 +4305,7 @@ bsdi[[45]]*)
    need_version=no
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major $libname${shared_ext}'
    soname_spec='${libname}${release}${shared_ext}$major'
@@ -88,7 +76,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    sys_lib_search_path_spec="/shlib /usr/lib /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
    sys_lib_dlsearch_path_spec="/shlib /usr/lib /usr/local/lib"
-@@ -4634,7 +4619,7 @@ nto-qnx*)
+@@ -4634,7 +4620,7 @@ nto-qnx*)
    shlibpath_overrides_runpath=yes
    ;;
  
@@ -97,7 +85,7 @@
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -4644,7 +4629,7 @@ openbsd*)
+@@ -4644,7 +4630,7 @@ openbsd*)
      *)                         need_version=no  ;;
    esac
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext}$versuffix'
@@ -106,16 +94,7 @@
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
-@@ -5308,7 +5293,7 @@ freebsd* | dragonfly*)
-     i*86 )
-       # Not sure whether the presence of OpenBSD here was a mistake.
-       # Let's accept both of them until this is cleared up.
--      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[[3-9]]86 (compact )?demand paged shared library'
-+      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|Bitrig|DragonFly)/i[[3-9]]86 (compact )?demand paged shared library'
-       lt_cv_file_magic_cmd=/usr/bin/file
-       lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
-       ;;
-@@ -5378,7 +5363,7 @@ nto-qnx*)
+@@ -5378,7 +5364,7 @@ nto-qnx*)
    lt_cv_deplibs_check_method=unknown
    ;;
  
@@ -124,7 +103,7 @@
    if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[[^/]]+(\.so\.[[0-9]]+\.[[0-9]]+|\.so|_pic\.a)$'
    else
-@@ -6342,7 +6327,7 @@ case $host_os in
+@@ -6342,7 +6328,7 @@ case $host_os in
      # C++ shared libraries are fairly broken
      _LT_AC_TAGVAR(ld_shlibs, $1)=no
      ;;
@@ -133,7 +112,7 @@
      if test -f /usr/libexec/ld.so; then
        _LT_AC_TAGVAR(hardcode_direct, $1)=yes
        _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
-@@ -8262,7 +8247,7 @@ dnl Note also adjust exclude_expsyms for C++ above.
+@@ -8262,7 +8248,7 @@ dnl Note also adjust exclude_expsyms for C++ above.
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -142,7 +121,7 @@
      with_gnu_ld=no
      ;;
    esac
-@@ -8866,7 +8851,7 @@ _LT_EOF
+@@ -8866,7 +8852,7 @@ _LT_EOF
        _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
        ;;
  
