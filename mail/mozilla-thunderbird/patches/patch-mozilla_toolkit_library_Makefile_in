@@ -1,6 +1,6 @@
-$OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.17 2012/11/24 10:32:42 landry Exp $
---- mozilla/toolkit/library/Makefile.in.orig	Fri Nov 16 21:16:41 2012
-+++ mozilla/toolkit/library/Makefile.in	Sun Nov 25 14:49:50 2012
+$OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.18 2013/06/17 19:29:05 ajacoutot Exp $
+--- mozilla/toolkit/library/Makefile.in.orig	Fri May 10 00:42:08 2013
++++ Makefile.in	Sat Jun 29 14:48:57 2013
 @@ -461,6 +461,18 @@ OS_LIBS += \
    $(NULL)
  endif
@@ -13,14 +13,14 @@ $OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.17 2012/11/24 10:32:42 l
 +
 +ifeq ($(OS_ARCH),Bitrig)
 +ifdef MOZ_SYDNEYAUDIO
-+EXTRA_DSO_LDOPTS += -lsndio -lpthread
++EXTRA_DSO_LDOPTS += -lsndio
 +endif
 +endif
 +
  ifeq ($(OS_ARCH),Darwin)
  ifdef MOZ_SYDNEYAUDIO
  OS_LIBS += \
-@@ -476,15 +488,15 @@ OS_LIBS += \
+@@ -476,13 +488,13 @@ OS_LIBS += \
  endif
  endif
  
@@ -36,20 +36,19 @@ $OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.17 2012/11/24 10:32:42 l
 -ifeq (OpenBSD,$(OS_ARCH))
 +ifeq (Bitrig,$(OS_ARCH))
  ifdef MOZ_CUBEB
--EXTRA_DSO_LDOPTS += -lsndio
-+EXTRA_DSO_LDOPTS += -lsndio -lpthread
+ EXTRA_DSO_LDOPTS += -lsndio
  endif
- endif
- 
-@@ -609,6 +621,11 @@ OS_LIBS += $(call EXPAND_LIBNAME,usp10 oleaut32)
- endif
+@@ -610,7 +622,12 @@ endif
  
  ifeq ($(OS_ARCH),OpenBSD)
-+# Needed by nsAuthGSSAPI
-+EXTRA_DSO_LDOPTS += -lkrb5 -lcrypto
+ # Needed by nsAuthGSSAPI
+-EXTRA_DSO_LDOPTS += -lkrb5 -lcrypto
++EXTRA_DSO_LDOPTS += `krb5-config --libs`
 +endif
 +
 +ifeq ($(OS_ARCH),Bitrig)
- # Needed by nsAuthGSSAPI
- EXTRA_DSO_LDOPTS += -lkrb5 -lcrypto
++# Needed by nsAuthGSSAPI
++EXTRA_DSO_LDOPTS += `krb5-config --libs`
  endif
+ 
+ ifdef MOZ_DEBUG

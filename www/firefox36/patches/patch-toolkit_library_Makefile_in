@@ -1,6 +1,6 @@
-$OpenBSD: patch-toolkit_library_Makefile_in,v 1.4 2011/10/03 21:09:43 landry Exp $
---- toolkit/library/Makefile.in.orig	Thu Feb 16 03:36:21 2012
-+++ toolkit/library/Makefile.in	Sat Mar 10 14:25:00 2012
+$OpenBSD: patch-toolkit_library_Makefile_in,v 1.5 2013/06/17 19:29:05 ajacoutot Exp $
+--- toolkit/library/Makefile.in.orig	Tue Sep 20 16:23:11 2011
++++ toolkit/library/Makefile.in	Tue Sep 27 21:46:45 2011
 @@ -291,6 +291,12 @@ ifeq ($(OS_ARCH),OpenBSD)
  OS_LIBS += -lkrb5 -lcrypto
  endif
@@ -9,7 +9,7 @@ $OpenBSD: patch-toolkit_library_Makefile_in,v 1.4 2011/10/03 21:09:43 landry Exp
 +EXTRA_DSO_LDOPTS += /usr/lib/libsndio_pic.a
 +
 +# Needed by nsAuthGSSAPI
-+EXTRA_DSO_LDOPTS += -lkrb5 -lcrypto
++EXTRA_DSO_LDOPTS += `krb5-config --libs`
 +
  ifdef MOZ_JAVAXPCOM
  dlldeps-javaxpcom.cpp: $(topsrcdir)/extensions/java/xpcom/src/dlldeps-javaxpcom.cpp
