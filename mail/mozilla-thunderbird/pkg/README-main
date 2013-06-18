@@ -1,7 +1,7 @@
 $OpenBSD: README-main,v 1.4 2012/10/10 21:08:05 landry Exp $
 
 +-----------------------------------------------------------------------
-| Running ${FULLPKGNAME} on OpenBSD
+| Running ${FULLPKGNAME} on Bitrig
 +-----------------------------------------------------------------------
 
 If you encounter strange problems or Thunderbird doesn't start at

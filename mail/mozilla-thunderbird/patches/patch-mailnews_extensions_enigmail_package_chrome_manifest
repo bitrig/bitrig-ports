@@ -1,0 +1,11 @@
+$OpenBSD$
+--- mailnews/extensions/enigmail/package/chrome.manifest.orig	Tue Jun 18 15:55:59 2013
++++ mailnews/extensions/enigmail/package/chrome.manifest	Tue Jun 18 15:56:02 2013
+@@ -12,6 +12,7 @@ skin          enigmail    classic/1.0 jar:chrome/enigm
+ skin          enigmail    classic/1.0 jar:chrome/enigmail.jar!/skin/tb-linux/enigmail/ application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a} os=SunOS
+ skin          enigmail    classic/1.0 jar:chrome/enigmail.jar!/skin/tb-linux/enigmail/ application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a} os=FreeBSD
+ skin          enigmail    classic/1.0 jar:chrome/enigmail.jar!/skin/tb-linux/enigmail/ application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a} os=OpenBSD
++skin          enigmail    classic/1.0 jar:chrome/enigmail.jar!/skin/tb-linux/enigmail/ application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a} os=Bitrig
+ skin          enigmail    classic/1.0 jar:chrome/enigmail.jar!/skin/tb-linux/enigmail/ application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a} os=NetBSD
+ skin          enigmail    classic/1.0 jar:chrome/enigmail.jar!/skin/tb-linux/enigmail/ application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a} os=AIX
+ skin          enigmail    classic/1.0 jar:chrome/enigmail.jar!/skin/tb-linux/enigmail/ application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a} os=HP-UX

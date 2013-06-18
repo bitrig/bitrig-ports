@@ -29,8 +29,8 @@ lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-00
 lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/modules/subprocess_worker_unix.js
 lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/modules/subprocess_worker_win.js
 lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/
-lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/OpenBSD_${XPCOM_ABI}-gcc3/
-lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/OpenBSD_${XPCOM_ABI}-gcc3/components/
+lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig_${XPCOM_ABI}-gcc3/
+lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig_${XPCOM_ABI}-gcc3/components/
 @lib lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig_${XPCOM_ABI}-gcc3/components/libenigmime-${XPCOM_ABI}-gcc3.so.${LIBenigmime-${XPCOM_ABI}-gcc3_VERSION}
-lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/OpenBSD_${XPCOM_ABI}-gcc3/lib/
+lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig_${XPCOM_ABI}-gcc3/lib/
 @lib lib/${MOZILLA_PROJECT}-${MOZILLA_VERSION}/extensions/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig_${XPCOM_ABI}-gcc3/lib/libsubprocess-${XPCOM_ABI}-gcc3.so.${LIBsubprocess-${XPCOM_ABI}-gcc3_VERSION}

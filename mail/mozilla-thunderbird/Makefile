@@ -20,7 +20,8 @@ PKGNAME-enigmail =	enigmail-${ENIG_V}
 EPOCH-lightning =	0
 EPOCH-enigmail =	0
 REVISION-lightning =	3
-REVISION-enigmail =	1
+REVISION-enigmail =	2
+REVISION-main =		0
 
 HOMEPAGE =	http://www.mozilla.org/thunderbird/
 
@@ -114,7 +115,7 @@ GNU_ARCH =	${MACHINE_ARCH:S/amd64/x86_64/}
 GUIDS =	gdata-provider {a62ef8ec-5fdc-40c2-873c-223b8a6925cc} \
 	lightning {e2fda1a4-762b-4020-b5ad-a41df1933103} \
 	calendar-timezones calendar-timezones@mozilla.org \
-	../bin/enigmail-1.5-openbsd-${GNU_ARCH} {847b3a00-7ab1-11d4-8f02-006008948af5}
+	../bin/enigmail-1.5-bitrig-${GNU_ARCH} {847b3a00-7ab1-11d4-8f02-006008948af5}
 
 EXTDIR =	${PREFIX}/lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/extensions/
 post-install:
