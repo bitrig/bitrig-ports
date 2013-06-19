@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.46 2013/03/21 08:45:16 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.47 2013/06/19 14:34:50 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -8,12 +8,13 @@ COMMENT-perl=	UUID modules for Perl
 VERSION=		1.6.2
 DISTNAME=		uuid-${VERSION}
 FULLPKGNAME-main=	ossp-uuid-${VERSION}
-FULLPKGNAME-perl= 	p5-ossp-UUID-${VERSION}
+FULLPKGNAME-perl=	p5-ossp-UUID-${VERSION}
 CATEGORIES=		devel
-SHARED_LIBS=		uuid	13.22 \
-			uuid++	14.21
 
-REVISION-main=		3
+SHARED_LIBS +=	ossp-uuid            0.0      # 16.22
+SHARED_LIBS +=	ossp-uuid++          0.0      # 16.22
+
+REVISION-main=		2
 REVISION-perl=		3
 
 # Note there is a different libuuid in sysutils/e2fsprogs,-uuid.
@@ -35,15 +36,18 @@ MULTI_PACKAGES=		-main -perl
 WANTLIB-main=		c m stdc++
 
 CATEGORIES-perl=	devel perl5
-WANTLIB-perl=		c uuid>=12
+# libperl will show as "extra" but this should be kept as it depends on perl ABI
+WANTLIB-perl=		perl ossp-uuid
 LIB_DEPENDS-perl=	${BASE_PKGPATH}
 
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--with-perl --with-cxx \
-			--without-php --without-pgsql
+			--without-php --without-pgsql \
+			--includedir=${TRUEPREFIX}/include/ossp
 
 post-install:
 	mv ${PREFIX}/lib/pkgconfig/uuid.pc ${PREFIX}/lib/pkgconfig/ossp-uuid.pc
+	rm -rf ${PREFIX}/libdata/perl5/${MACHINE_ARCH}-openbsd/
 
 .include <bsd.port.mk>

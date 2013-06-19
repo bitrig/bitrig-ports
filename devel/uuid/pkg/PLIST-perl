@@ -1,6 +1,13 @@
-@comment $OpenBSD: PLIST-perl,v 1.9 2011/07/12 09:10:22 jasper Exp $
+@comment $OpenBSD: PLIST-perl,v 1.10 2013/06/19 14:34:53 sthen Exp $
 @conflict p5-UUID-*
 @pkgpath devel/uuid,-perl
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/5.12.2/
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/5.12.2/perllocal.pod
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/OSSP/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/OSSP/uuid.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/OSSP/uuid.pod
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/OSSP/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/OSSP/uuid/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/OSSP/uuid/uuid.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/OSSP/uuid/uuid.so
 @man man/man3p/OSSP::uuid.3
