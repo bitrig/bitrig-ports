@@ -1,6 +1,9 @@
-$OpenBSD: patch-configure_ac,v 1.29 2013/06/17 19:31:17 ajacoutot Exp $
---- configure.ac.orig	Wed Jan 30 17:46:52 2013
-+++ configure.ac	Sat Feb 23 21:29:27 2013
+$OpenBSD: patch-configure_ac,v 1.30 2013/06/20 21:33:53 sthen Exp $
+
+c-client requires both kerbV libs *and* (separately) libssl.
+
+--- configure.ac.orig	Tue Feb 26 12:45:09 2013
++++ configure.ac	Thu Jun 20 15:14:30 2013
 @@ -60,7 +60,7 @@ AC_SUBST([astvarrundir],      ['${localstatedir}/run/a
  
  case "${host_os}" in
@@ -34,7 +37,7 @@ $OpenBSD: patch-configure_ac,v 1.29 2013/06/17 19:31:17 ajacoutot Exp $
  		else #looking in imap directory didn't work, try c-client
  			imap_ldflags=""
 -			imap_libs="-lc-client"
-+			imap_libs="-lcrypto -lssl -lgssapi -lkrb5 -lc-client"
++			imap_libs="`krb5-config --libs gssapi` -lssl -lc-client"
  			imap_include="-DUSE_SYSTEM_CCLIENT"
  			CPPFLAGS="${saved_cppflags}"
  			LIBS="${saved_libs}"
