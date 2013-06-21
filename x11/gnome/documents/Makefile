@@ -8,8 +8,6 @@ GNOME_PROJECT=	gnome-documents
 GNOME_VERSION=	3.8.3.1
 REVISION=	0
 
-REVISION=	0
-
 HOMEPAGE=	https://live.gnome.org/GnomeDocuments
 
 TRACKER_VERSION=0.16
