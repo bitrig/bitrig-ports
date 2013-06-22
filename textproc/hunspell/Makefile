@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.9 2013/03/21 08:57:49 fgsch Exp $
+# $OpenBSD: Makefile,v 1.10 2013/06/22 09:31:51 espie Exp $
 
 COMMENT =	spelling, stemming, morphological analysis and generation
 
 DISTNAME =	hunspell-1.3.2
+REVISION =	0
 
 REVISION=	0
 
@@ -32,7 +33,7 @@ CONFIGURE_ARGS =	${CONFIGURE_SHARED} \
 			--with-readline
 
 # default dictionary
-RUN_DEPENDS =		textproc/mozilla-dicts,-en-GB
+RUN_DEPENDS =		textproc/mozilla-dicts/en-GB
 
 TEST_DEPENDS =	shells/bash
 
