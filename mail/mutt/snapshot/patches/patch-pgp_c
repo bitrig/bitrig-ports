@@ -1,0 +1,14 @@
+$OpenBSD$
+--- pgp.c.orig	Mon Jun 24 12:50:21 2013
++++ pgp.c	Mon Jun 24 12:59:54 2013
+@@ -81,6 +81,10 @@ int pgp_valid_passphrase (void)
+       return 1; /* handled by gpg-agent */
+     }
+ 
++  if (PgpTimeout == -1 && *PgpPass != 0) {
++    /* Use cached copy forever.  */
++    return 1;
++  }
+   if (now < PgpExptime)
+     /* Use cached copy.  */
+     return 1;
