@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.ac.orig	Tue Jun 25 13:43:04 2013
++++ configure.ac	Tue Jun 25 13:44:23 2013
+@@ -517,7 +517,7 @@ if test "$found" = "no"; then
+     fi
+     AC_CHECK_FILE($dir/include/readline/readline.h, found=yes)
+     if test "$found" = "yes"; then
+-      TARGET_READLINE_INC="-I$dir/include/readline"
++      TARGET_READLINE_INC="-I$dir/include"
+       break
+     fi
+   done
