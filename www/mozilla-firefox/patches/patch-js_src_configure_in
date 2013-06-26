@@ -2,7 +2,7 @@ $OpenBSD: patch-js_src_configure_in,v 1.22 2013/06/26 19:29:14 landry Exp $
 https://bugzilla.mozilla.org/show_bug.cgi?id=648721
 --- js/src/configure.in.orig	Wed May 29 03:15:39 2013
 +++ js/src/configure.in	Fri May 31 16:53:03 2013
-@@ -1821,8 +1821,12 @@ ia64*-hpux*)
+@@ -1826,8 +1826,12 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
  
@@ -17,12 +17,12 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648721
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
      DSO_LDOPTS='-shared -fPIC'
-@@ -2637,7 +2641,7 @@ then
+@@ -2652,7 +2656,7 @@ then
  			fi
  			;;
  
 -	    *-*-openbsd*|*-*-bsdi*)
-+	    *-*-openbsd* | *-*-bitrig* | *-*-bsdi*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
