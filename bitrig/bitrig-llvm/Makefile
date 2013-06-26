@@ -8,7 +8,7 @@ SHARED_LIBS +=  clang                  0.0 # 3.2
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 DPB_PROPERTIES= parallel
 
-REVISION = 	20
+REVISION = 	21
 LLVM_V =	3.2
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
@@ -40,7 +40,6 @@ MODULES =	devel/cmake \
 		lang/python
 
 TEST_DEPENDS = devel/dejagnu
-BUILD_DEPENDS += textproc/py-docutils
 
 MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
 		VERBOSE=Yes \
@@ -91,10 +90,6 @@ pre-configure:
 
 post-build:
 	${INSTALL_DATA_DIR} ${WRKSRC}/docs/CommandGuide/man/man1/
-	cd ${WRKSRC}/docs/CommandGuide && for i in *.rst; do \
-	rst2man -q --title="LLVM Command Guide" \
-	    $$i man/man1/$${i%.rst}.1; \
-	done
 	pod2man --release=CVS --center="LLVM Command Guide" \
 	    ${WRKSRC}/tools/clang/docs/tools/clang.pod \
 	    ${WRKSRC}/docs/CommandGuide/man/man1/clang.1
