@@ -10,7 +10,7 @@ LLVM_V =	3.4
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION =	1
+REVISION = 	2
 
 CATEGORIES =	bitrig
 
@@ -33,14 +33,11 @@ DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} cfe-${LLVM_V}.src${EXTRACT_SUFX}
 DISTFILES +=	compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 
-post-extract:
-	@mv ${WRKDIR}/cfe-${LLVM_V}.src ${WRKDIST}/tools/clang
-	@mv ${WRKDIR}/compiler-rt-${LLVM_V}.src ${WRKDIST}/projects/compiler-rt
-
 MODULES =	devel/cmake \
 		lang/python
 
-TEST_DEPENDS = devel/dejagnu
+TEST_DEPENDS =	devel/dejagnu
+BUILD_DEPENDS += textproc/py-sphinx
 
 MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
 		VERBOSE=Yes \
@@ -49,12 +46,8 @@ MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
 TEST_FLAGS =	RUNTESTFLAGS=
 
 SEPARATE_BUILD =	Yes
-USE_LIBTOOL =		Yes
-# uncomment if you want to use MAKE_JOBS
-USE_GMAKE =		Yes
 
 PREFIX=			/usr
-CONFIGURE_STYLE =	cmake
 CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 			-DLLVM_REQUIRES_RTTI:Bool=True \
 			-DLLVM_TARGETS_TO_BUILD:String="ARM;X86" \
@@ -63,7 +56,7 @@ CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 			-DCMAKE_DISABLE_FIND_PACKAGE_LibXml2:Bool=True
 
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
-SUBST_VARS +=		CLANG_INCLUDE_PATH
+SUBST_VARS +=		CLANG_INCLUDE_PATH LLVM_V
 
 TMPGIT = ${DISTDIR}/tmpgit
 
@@ -87,16 +80,20 @@ PKG_ARGS+=-Darm=1
 PKG_ARGS+=-Darm=0
 .endif
 
+post-extract:
+	@mv ${WRKDIR}/cfe-${LLVM_V}.src ${WRKDIST}/tools/clang
+	@mv ${WRKDIR}/compiler-rt-${LLVM_V}.src ${WRKDIST}/projects/compiler-rt
+
 pre-configure:
 	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/scan-build/scan-build
 	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/c-index-test/CMakeLists.txt
 	-@ln -s ${MODPY_BIN} ${WRKDIR}/bin/python
 
 post-build:
-	${INSTALL_DATA_DIR} ${WRKSRC}/docs/CommandGuide/man/man1/
-	pod2man --release=CVS --center="LLVM Command Guide" \
+	cd ${WRKSRC}/docs && make -f Makefile.sphinx man
+	pod2man --release=CVS --center="LLVM" \
 	    ${WRKSRC}/tools/clang/docs/tools/clang.pod \
-	    ${WRKSRC}/docs/CommandGuide/man/man1/clang.1
+	    ${WRKSRC}/docs/_build/man/clang.1
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-build/ccc-analyzer \
@@ -106,7 +103,7 @@ post-install:
 	    ${WRKSRC}/tools/clang/tools/scan-build/scanview.css \
 	    ${PREFIX}/share/llvm
 	${INSTALL_DATA_DIR} ${PREFIX}/share/man/man1
-	${INSTALL_DATA} ${WRKSRC}/docs/CommandGuide/man/man1/* \
+	${INSTALL_DATA} ${WRKSRC}/docs/_build/man/* \
 	    ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKBUILD}/lib/clang/${LLVM_V}/lib/bitrig/libclang_rt.${INSTALL_ARCH}.a \
 	    ${PREFIX}/lib/libclang_rt.${ARCH}.a
