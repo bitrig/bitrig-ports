@@ -3,37 +3,38 @@
 # XXX: Remember to bump MODCLANG_VERSION in lang/clang/clang.port.mk when
 # updating this port.
 
-SHARED_LIBS +=  clang                  0.0 # 3.2
-
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 DPB_PROPERTIES= parallel
 
-REVISION = 	21
-LLVM_V =	3.2
+LLVM_V =	3.3
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
+REVISION =	3
+
 CATEGORIES =	bitrig
 
 # packager notes in http://llvm.org/docs/Packaging.html
 HOMEPAGE =	http://www.llvm.org/
 
+SHARED_LIBS +=  clang 1.0      # 3.3
+
 VMEM_WARNING =	Yes
 ONLY_FOR_ARCHS = amd64 i386 arm
 
 # BSD
-PERMIT_PACKAGE_CDROM =Yes
+PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c m pthread stdc++
+WANTLIB =	c m pthread stdc++ z
 
 MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
 
-DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
+DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} cfe-${LLVM_V}.src${EXTRACT_SUFX}
 DISTFILES +=	compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 
 post-extract:
-	@mv ${WRKDIR}/clang-${LLVM_V}.src ${WRKDIST}/tools/clang
+	@mv ${WRKDIR}/cfe-${LLVM_V}.src ${WRKDIST}/tools/clang
 	@mv ${WRKDIR}/compiler-rt-${LLVM_V}.src ${WRKDIST}/projects/compiler-rt
 
 MODULES =	devel/cmake \

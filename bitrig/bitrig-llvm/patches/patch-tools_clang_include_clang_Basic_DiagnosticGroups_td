@@ -1,15 +1,15 @@
 $OpenBSD$
---- tools/clang/include/clang/Basic/DiagnosticGroups.td.orig	Tue Nov  6 20:43:44 2012
-+++ tools/clang/include/clang/Basic/DiagnosticGroups.td	Fri Dec 21 11:11:39 2012
-@@ -45,6 +45,7 @@ def Comment : DiagGroup<"comment">;
+--- tools/clang/include/clang/Basic/DiagnosticGroups.td.orig	Tue May 21 02:22:29 2013
++++ tools/clang/include/clang/Basic/DiagnosticGroups.td	Fri Jun 14 23:05:55 2013
+@@ -52,6 +52,7 @@ def Comment : DiagGroup<"comment">;
+ def ConfigMacros : DiagGroup<"config-macros">;
  def : DiagGroup<"ctor-dtor-privacy">;
- def DefaultArgSpecialMember : DiagGroup<"default-arg-special-member">;
  def GNUDesignator : DiagGroup<"gnu-designator">;
 +def : DiagGroup<"bounded">;
  
  def DeleteNonVirtualDtor : DiagGroup<"delete-non-virtual-dtor">;
  def AbstractFinalClass : DiagGroup<"abstract-final-class">;
-@@ -390,6 +391,7 @@ def Most : DiagGroup<"most", [
+@@ -443,6 +444,7 @@ def Most : DiagGroup<"most", [
      StringPlusInt,
      Trigraphs,
      Uninitialized,

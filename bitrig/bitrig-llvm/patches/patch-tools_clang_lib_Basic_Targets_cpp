@@ -9,31 +9,12 @@ $OpenBSD$
      DefineStd(Builder, "unix", Opts);
      Builder.defineMacro("__ELF__");
      if (Opts.POSIXThreads)
-@@ -3443,6 +3444,18 @@ const Builtin::Info ARMTargetInfo::BuiltinInfo[] = {
- } // end anonymous namespace.
- 
- namespace {
-+class BitrigARMTargetInfo : public BitrigTargetInfo<ARMTargetInfo> {
-+public:
-+  BitrigARMTargetInfo(const std::string& triple)
-+      : BitrigTargetInfo<ARMTargetInfo>(triple) {
-+    // Bitrig always has 64-bit atomic instructions.
-+    // FIXME: This should be based off of the target features in ARMTargetInfo.
-+    MaxAtomicInlineWidth = 64;
-+  }
-+};
-+} // end anonymous namespace
-+
-+namespace {
- class DarwinARMTargetInfo :
-   public DarwinTargetInfo<ARMTargetInfo> {
- protected:
-@@ -4430,7 +4443,7 @@ static TargetInfo *AllocateTarget(const std::string &T
-     case llvm::Triple::OpenBSD:
-       return new OpenBSDTargetInfo<ARMTargetInfo>(T);
-     case llvm::Triple::Bitrig:
--      return new BitrigTargetInfo<ARMTargetInfo>(T);
-+      return new BitrigARMTargetInfo(T);
-     case llvm::Triple::RTEMS:
-       return new RTEMSTargetInfo<ARMTargetInfo>(T);
-     case llvm::Triple::NativeClient:
+@@ -3533,7 +3534,7 @@ class ARMTargetInfo : public TargetInfo {
+     // the kernel which on armv6 and newer uses ldrex and strex. The net result
+     // is that if we assume the kernel is at least as recent as the hardware,
+     // it is safe to use atomic instructions on armv6 and newer.
+-    if (T.getOS() != llvm::Triple::Linux)
++    if (T.getOS() != llvm::Triple::Linux && T.getOS() != llvm::Triple::Bitrig)
+      return false;
+     StringRef ArchName = T.getArchName();
+     if (T.getArch() == llvm::Triple::arm) {

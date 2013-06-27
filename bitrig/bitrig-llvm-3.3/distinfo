@@ -1,6 +1,0 @@
-SHA256 (cfe-3.3.src.tar.gz) = sbVd5Ks6V9PgMxqD4ChGEBkcd9kk40RkmNkRPQjfuZY=
-SHA256 (compiler-rt-3.3.src.tar.gz) = Di8xgNYxbmxD8GT91AbFxlFeaCxfMcV8KDNbaMdSVCM=
-SHA256 (llvm-3.3.src.tar.gz) = aHZrHnDQWiXi9QLpl6PLOTcYejKWWVz24Jd9XNZydXg=
-SIZE (cfe-3.3.src.tar.gz) = 9425539
-SIZE (compiler-rt-3.3.src.tar.gz) = 1568034
-SIZE (llvm-3.3.src.tar.gz) = 13602421
