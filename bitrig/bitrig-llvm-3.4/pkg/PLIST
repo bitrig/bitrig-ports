@@ -1,6 +1,7 @@
 @comment $OpenBSD$
 %%amd64%%
 %%i386%%
+%%arm%%
 @bin bin/bugpoint
 bin/c++-analyzer
 bin/ccc-analyzer
