@@ -10,7 +10,7 @@ LLVM_V =	3.4
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	bitrig
 
@@ -41,7 +41,6 @@ MODULES =	devel/cmake \
 		lang/python
 
 TEST_DEPENDS = devel/dejagnu
-BUILD_DEPENDS += textproc/py-docutils
 
 MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
 		VERBOSE=Yes \
@@ -90,14 +89,11 @@ PKG_ARGS+=-Darm=0
 
 pre-configure:
 	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/scan-build/scan-build
+	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/c-index-test/CMakeLists.txt
 	-@ln -s ${MODPY_BIN} ${WRKDIR}/bin/python
 
 post-build:
 	${INSTALL_DATA_DIR} ${WRKSRC}/docs/CommandGuide/man/man1/
-	cd ${WRKSRC}/docs/CommandGuide && for i in *.rst; do \
-	rst2man -q --title="LLVM Command Guide" \
-	    $$i man/man1/$${i%.rst}.1; \
-	done
 	pod2man --release=CVS --center="LLVM Command Guide" \
 	    ${WRKSRC}/tools/clang/docs/tools/clang.pod \
 	    ${WRKSRC}/docs/CommandGuide/man/man1/clang.1
