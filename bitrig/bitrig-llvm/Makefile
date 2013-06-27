@@ -87,6 +87,7 @@ PKG_ARGS+=-Darm=0
 
 pre-configure:
 	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/scan-build/scan-build
+	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/c-index-test/CMakeLists.txt
 	-@ln -s ${MODPY_BIN} ${WRKDIR}/bin/python
 
 post-build:
