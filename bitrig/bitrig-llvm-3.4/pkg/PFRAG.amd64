@@ -1,2 +1,2 @@
 @comment $OpenBSD$
-lib/clang/3.4/lib/bitrig/libclang_rt.x86_64.a
+lib/clang/${LLVM_V}/lib/bitrig/libclang_rt.x86_64.a

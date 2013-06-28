@@ -7,7 +7,7 @@ bin/c++-analyzer
 bin/ccc-analyzer
 bin/clang
 bin/clang++
-@bin bin/clang-3.4
+@bin bin/clang-${LLVM_V}
 @bin bin/clang-check
 @bin bin/clang-format
 @bin bin/clang-tblgen
@@ -54,6 +54,7 @@ include/clang/AST/AST.h
 include/clang/AST/ASTConsumer.h
 include/clang/AST/ASTContext.h
 include/clang/AST/ASTDiagnostic.h
+include/clang/AST/ASTFwd.h
 include/clang/AST/ASTImporter.h
 include/clang/AST/ASTMutationListener.h
 include/clang/AST/ASTTypeTraits.h
@@ -614,7 +615,6 @@ include/llvm/Assembly/PrintModulePass.h
 include/llvm/Assembly/Writer.h
 include/llvm/AutoUpgrade.h
 include/llvm/Bitcode/
-include/llvm/Bitcode/Archive.h
 include/llvm/Bitcode/BitCodes.h
 include/llvm/Bitcode/BitstreamReader.h
 include/llvm/Bitcode/BitstreamWriter.h
@@ -864,6 +864,7 @@ include/llvm/Object/ELFYAML.h
 include/llvm/Object/Error.h
 include/llvm/Object/MachO.h
 include/llvm/Object/MachOFormat.h
+include/llvm/Object/MachOUniversal.h
 include/llvm/Object/ObjectFile.h
 include/llvm/Object/RelocVisitor.h
 include/llvm/Object/YAML.h
@@ -949,7 +950,6 @@ include/llvm/Support/NoFolder.h
 include/llvm/Support/OutputBuffer.h
 include/llvm/Support/PassNameParser.h
 include/llvm/Support/Path.h
-include/llvm/Support/PathV1.h
 include/llvm/Support/PatternMatch.h
 include/llvm/Support/PluginLoader.h
 include/llvm/Support/PointerLikeTypeTraits.h
@@ -1052,7 +1052,7 @@ include/llvm/Transforms/Vectorize.h
 lib/BugpointPasses.so
 lib/LLVMHello.so
 lib/clang/
-lib/clang/3.4/
+lib/clang/${LLVM_V}/
 ${CLANG_INCLUDE_PATH}/
 ${CLANG_INCLUDE_PATH}/__wmmintrin_aes.h
 ${CLANG_INCLUDE_PATH}/__wmmintrin_pclmul.h
@@ -1104,8 +1104,8 @@ ${CLANG_INCLUDE_PATH}/wmmintrin.h
 ${CLANG_INCLUDE_PATH}/x86intrin.h
 ${CLANG_INCLUDE_PATH}/xmmintrin.h
 ${CLANG_INCLUDE_PATH}/xopintrin.h
-lib/clang/3.4/lib/
-lib/clang/3.4/lib/bitrig/
+lib/clang/${LLVM_V}/lib/
+lib/clang/${LLVM_V}/lib/bitrig/
 lib/libLLVMARMAsmParser.a
 lib/libLLVMARMAsmPrinter.a
 lib/libLLVMARMCodeGen.a
@@ -1113,7 +1113,6 @@ lib/libLLVMARMDesc.a
 lib/libLLVMARMDisassembler.a
 lib/libLLVMARMInfo.a
 lib/libLLVMAnalysis.a
-lib/libLLVMArchive.a
 lib/libLLVMAsmParser.a
 lib/libLLVMAsmPrinter.a
 lib/libLLVMBitReader.a
@@ -1197,4 +1196,26 @@ share/llvm/cmake/LLVMProcessSources.cmake
 share/llvm/cmake/TableGen.cmake
 share/llvm/scanview.css
 share/llvm/sorttable.js
+@man share/man/man1/FileCheck.1
+@man share/man/man1/bugpoint.1
 @man share/man/man1/clang.1
+@man share/man/man1/lit.1
+@man share/man/man1/llc.1
+@man share/man/man1/lli.1
+@man share/man/man1/llvm-ar.1
+@man share/man/man1/llvm-as.1
+@man share/man/man1/llvm-bcanalyzer.1
+@man share/man/man1/llvm-build.1
+@man share/man/man1/llvm-config.1
+@man share/man/man1/llvm-cov.1
+@man share/man/man1/llvm-diff.1
+@man share/man/man1/llvm-dis.1
+@man share/man/man1/llvm-extract.1
+@man share/man/man1/llvm-link.1
+@man share/man/man1/llvm-nm.1
+@man share/man/man1/llvm-prof.1
+@man share/man/man1/llvm-readobj.1
+@man share/man/man1/llvm-stress.1
+@man share/man/man1/llvm-symbolizer.1
+@man share/man/man1/opt.1
+@man share/man/man1/tblgen.1

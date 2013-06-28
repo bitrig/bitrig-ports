@@ -1,6 +1,6 @@
 $OpenBSD$
---- projects/Makefile.orig	Wed Aug  1 17:17:05 2012
-+++ projects/Makefile	Wed Aug  1 17:17:09 2012
+--- projects/Makefile.orig	Fri Jun 28 17:04:54 2013
++++ projects/Makefile	Fri Jun 28 17:14:14 2013
 @@ -15,10 +15,10 @@ include $(LEVEL)/Makefile.config
  DIRS:= $(filter-out llvm-test test-suite,$(patsubst $(PROJ_SRC_DIR)/%/Makefile,%,$(wildcard $(PROJ_SRC_DIR)/*/Makefile)))
  
@@ -12,5 +12,5 @@ $OpenBSD$
 -DIRS := $(filter-out libcxx,$(DIRS))
 +#DIRS := $(filter-out libcxx,$(DIRS))
  
- # Sparc cannot link shared libraries (libtool problem?)
- ifeq ($(ARCH), Sparc)
+ # DragonEgg may be checked out here but doesn't (yet) build directly.
+ DIRS := $(filter-out dragonegg,$(DIRS))
