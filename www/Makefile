@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.610 2013/05/29 20:44:52 jasper Exp $
+# $OpenBSD: Makefile,v 1.611 2013/06/29 09:33:09 sthen Exp $
 
      SUBDIR =
      SUBDIR += ajaxterm
@@ -298,6 +298,7 @@
      SUBDIR += p5-HTTP-Server-Simple-PSGI
      SUBDIR += p5-HTTP-Server-Simple-Recorder
      SUBDIR += p5-HTTPD-Log-Filter
+     SUBDIR += p5-IO-HTML
      SUBDIR += p5-JavaScript-Minifier
      SUBDIR += p5-LWP-Authen-Wsse
      SUBDIR += p5-LWP-Protocol-socks
@@ -520,6 +521,7 @@
      SUBDIR += webacula
      SUBDIR += webalizer
      SUBDIR += webcollab
+     SUBDIR += webgui
      SUBDIR += webkit
      SUBDIR += webkit,gtk3
      SUBDIR += weblint
