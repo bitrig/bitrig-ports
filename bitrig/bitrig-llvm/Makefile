@@ -10,7 +10,7 @@ LLVM_V =	3.3
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION =	4
+REVISION =	5
 
 CATEGORIES =	bitrig
 
