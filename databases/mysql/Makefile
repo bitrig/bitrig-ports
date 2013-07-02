@@ -55,7 +55,7 @@ CONFIGURE_ARGS+= --with-big-tables \
 		 --with-ssl=/usr \
 		 --with-unix-socket-path="${SOCKET_DIR}/mysql.sock" \
 		 --without-docs \
-		 --without-readline
+		 --with-readline
 
 .include <bsd.port.arch.mk>
 
