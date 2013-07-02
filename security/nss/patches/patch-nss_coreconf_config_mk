@@ -1,6 +1,7 @@
---- mozilla/security/coreconf/config.mk.orig	Fri Apr 12 01:46:13 2013
-+++ mozilla/security/coreconf/config.mk	Fri Apr 12 01:46:27 2013
-@@ -31,7 +31,7 @@
+$OpenBSD$
+--- nss/coreconf/config.mk.orig	Tue Jul  2 07:07:30 2013
++++ nss/coreconf/config.mk	Tue Jul  2 07:07:59 2013
+@@ -31,7 +31,7 @@ endif
  #######################################################################
  
  TARGET_OSES = FreeBSD BSD_OS NetBSD OpenUNIX OS2 QNX Darwin BeOS OpenBSD \

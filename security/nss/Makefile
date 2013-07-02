@@ -51,7 +51,7 @@ MAIN_TOOLS=		certutil modutil pk12util signtool ssltap crlutil \
 			cmsutil signver
 
 post-extract:
-	@cp -Rp ${FILESDIR}/mozilla ${WRKSRC}/../../../
+	@cp -Rp ${FILESDIR}/coreconf ${WRKSRC}/
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/nss
