@@ -1,0 +1,12 @@
+$OpenBSD$
+--- include/qpdf/QPDF.hh.orig	Wed Jul  3 10:31:26 2013
++++ include/qpdf/QPDF.hh	Wed Jul  3 10:31:43 2013
+@@ -523,7 +523,7 @@ class QPDF
+     {
+       public:
+ 	ObjGen();
+-	ObjGen(int obj, int gen);
++	ObjGen(int obj = 0, int gen = 0);
+ 	bool operator<(ObjGen const&) const;
+ 
+ 	int obj;
