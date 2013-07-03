@@ -25,7 +25,7 @@ SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE= autoconf
 AUTOCONF_VERSION= 2.69
 CONFIGURE_ARGS+= --enable-elf-shlibs --disable-tls CC=cc CXX=g++
-CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS} -D_EXT2_USE_C_VERSIONS_"
+CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS} -D_EXT2_USE_C_VERSIONS_ -fPIC"
 USE_GMAKE=	Yes
 
 MAKE_FLAGS=	V=1 \
@@ -38,6 +38,8 @@ MAKE_FLAGS=	V=1 \
 FAKE_FLAGS=	root_sysconfdir=${PREFIX}/share/examples/e2fsprogs
 
 INSTALL_TARGET=	install install-libs
+
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/config
 
 post-install:
 	cd ${PREFIX}/sbin && mv fsck fsck_ext2fs
