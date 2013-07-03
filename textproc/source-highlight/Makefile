@@ -23,6 +23,8 @@ TEST_DEPENDS=	textproc/gsed
 
 USE_GROFF =	Yes
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/build-aux
+
 CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
 		--with-bash-completion="${PREFIX}/share/source-highlight/bash_completion.d/"
