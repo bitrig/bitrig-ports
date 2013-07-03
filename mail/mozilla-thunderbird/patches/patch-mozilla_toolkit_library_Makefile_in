@@ -1,44 +1,29 @@
 $OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.18 2013/06/17 19:29:05 ajacoutot Exp $
---- mozilla/toolkit/library/Makefile.in.orig	Fri May 10 00:42:08 2013
-+++ Makefile.in	Sat Jun 29 14:48:57 2013
-@@ -461,6 +461,18 @@ OS_LIBS += \
-   $(NULL)
- endif
- 
-+ifeq ($(OS_ARCH),OpenBSD)
-+ifdef MOZ_SYDNEYAUDIO
-+EXTRA_DSO_LDOPTS += -lsndio
-+endif
-+endif
-+
-+ifeq ($(OS_ARCH),Bitrig)
-+ifdef MOZ_SYDNEYAUDIO
-+EXTRA_DSO_LDOPTS += -lsndio
-+endif
-+endif
-+
- ifeq ($(OS_ARCH),Darwin)
- ifdef MOZ_SYDNEYAUDIO
- OS_LIBS += \
-@@ -476,13 +488,13 @@ OS_LIBS += \
+--- mozilla/toolkit/library/Makefile.in.orig	Thu Jun 20 10:48:11 2013
++++ mozilla/toolkit/library/Makefile.in	Wed Jul  3 16:52:21 2013
+@@ -476,7 +476,7 @@ OS_LIBS += \
  endif
  endif
  
 -ifneq (,$(filter NetBSD OpenBSD,$(OS_ARCH)))
--ifdef MOZ_SYDNEYAUDIO
--EXTRA_DSO_LDOPTS += -lossaudio
-+ifeq (OpenBSD,$(OS_ARCH))
-+ifdef MOZ_CUBEB
-+EXTRA_DSO_LDOPTS += -lsndio
++ifneq (,$(filter NetBSD OpenBSD Bitrig,$(OS_ARCH)))
+ ifdef MOZ_SYDNEYAUDIO
+ EXTRA_DSO_LDOPTS += -lossaudio
+ endif
+@@ -488,6 +488,12 @@ EXTRA_DSO_LDOPTS += -lsndio
  endif
  endif
  
--ifeq (OpenBSD,$(OS_ARCH))
 +ifeq (Bitrig,$(OS_ARCH))
- ifdef MOZ_CUBEB
- EXTRA_DSO_LDOPTS += -lsndio
++ifdef MOZ_CUBEB
++EXTRA_DSO_LDOPTS += -lsndio
++endif
++endif
++
+ ifdef MOZ_PLATFORM_MAEMO
+ EXTRA_DSO_LDOPTS += $(MOZ_PLATFORM_MAEMO_LIBS)
  endif
-@@ -610,7 +622,12 @@ endif
+@@ -610,7 +616,12 @@ endif
  
  ifeq ($(OS_ARCH),OpenBSD)
  # Needed by nsAuthGSSAPI
