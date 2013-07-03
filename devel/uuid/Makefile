@@ -48,6 +48,6 @@ CONFIGURE_ARGS+=	--with-perl --with-cxx \
 
 post-install:
 	mv ${PREFIX}/lib/pkgconfig/uuid.pc ${PREFIX}/lib/pkgconfig/ossp-uuid.pc
-	rm -rf ${PREFIX}/libdata/perl5/${MACHINE_ARCH}-openbsd/
+	rm -rf ${PREFIX}/libdata/perl5/${MACHINE_ARCH}-bitrig/
 
 .include <bsd.port.mk>
