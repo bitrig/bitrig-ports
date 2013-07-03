@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Lib/test/test_subprocess.py.orig	Wed Jul  3 13:30:27 2013
++++ Lib/test/test_subprocess.py	Wed Jul  3 13:30:43 2013
+@@ -1412,7 +1412,7 @@ class POSIXProcessTestCase(BaseTestCase):
+         getattr(p, method)(*args)
+         return p
+ 
+-    @unittest.skipIf(sys.platform.startswith(('netbsd', 'openbsd')),
++    @unittest.skipIf(sys.platform.startswith(('netbsd', 'openbsd', 'bitrig')),
+                      "Due to known OS bug (issue #16762)")
+     def _kill_dead_process(self, method, *args):
+         # Do not inherit file handles from the parent.

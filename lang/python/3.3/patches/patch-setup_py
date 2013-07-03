@@ -1,6 +1,6 @@
 $OpenBSD: patch-setup_py,v 1.2 2013/04/28 22:42:41 fgsch Exp $
---- setup.py.orig	Sat Apr  6 08:41:59 2013
-+++ setup.py	Sun Apr 28 17:53:00 2013
+--- setup.py.orig	Wed May 15 11:33:00 2013
++++ setup.py	Wed Jul  3 13:34:23 2013
 @@ -716,6 +716,8 @@ class PyBuildExt(build_ext):
                                                       'termcap'):
                  readline_libs.append('termcap')
@@ -10,7 +10,18 @@ $OpenBSD: patch-setup_py,v 1.2 2013/04/28 22:42:41 fgsch Exp $
                                     library_dirs=['/usr/lib/termcap'],
                                     extra_link_args=readline_extra_link_args,
                                     libraries=readline_libs) )
-@@ -1631,8 +1633,7 @@ class PyBuildExt(build_ext):
+@@ -1471,6 +1473,10 @@ class PyBuildExt(build_ext):
+             macros = dict()
+             libraries = []
+ 
++        elif host_platform.startswith('bitrig'):
++            macros = dict()
++            libraries = []
++
+         elif host_platform.startswith('netbsd'):
+             macros = dict()
+             libraries = []
+@@ -1631,8 +1637,7 @@ class PyBuildExt(build_ext):
          # The versions with dots are used on Unix, and the versions without
          # dots on Windows, for detection by cygwin.
          tcllib = tklib = tcl_includes = tk_includes = None
@@ -20,3 +31,14 @@ $OpenBSD: patch-setup_py,v 1.2 2013/04/28 22:42:41 fgsch Exp $
              tklib = self.compiler.find_library_file(lib_dirs,
                                                          'tk' + version)
              tcllib = self.compiler.find_library_file(lib_dirs,
+@@ -1646,8 +1651,8 @@ class PyBuildExt(build_ext):
+             # Check for the include files on Debian and {Free,Open}BSD, where
+             # they're put in /usr/include/{tcl,tk}X.Y
+             dotversion = version
+-            if '.' not in dotversion and "bsd" in host_platform.lower():
+-                # OpenBSD and FreeBSD use Tcl/Tk library names like libtcl83.a,
++            if '.' not in dotversion and ("bsd" in host_platform.lower() or "bitrig" in host_platform.lower()):
++                # Bitrig, OpenBSD and FreeBSD use Tcl/Tk library names like libtcl83.a,
+                 # but the include subdirs are named like .../include/tcl8.3.
+                 dotversion = dotversion[:-1] + '.' + dotversion[-1]
+             tcl_include_sub = []
