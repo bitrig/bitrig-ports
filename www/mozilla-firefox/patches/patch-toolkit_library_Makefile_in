@@ -1,0 +1,25 @@
+$OpenBSD$
+--- toolkit/library/Makefile.in.orig	Fri Jul  5 17:33:31 2013
++++ toolkit/library/Makefile.in	Fri Jul  5 17:34:21 2013
+@@ -519,6 +519,12 @@ OS_LIBS += \
+   $(NULL)
+ endif
+ 
++ifeq (Bitrig,$(OS_ARCH))
++ifdef MOZ_CUBEB
++EXTRA_DSO_LDOPTS += -lsndio
++endif
++endif
++
+ ifeq (OpenBSD,$(OS_ARCH))
+ ifdef MOZ_CUBEB
+ EXTRA_DSO_LDOPTS += -lsndio
+@@ -570,7 +576,7 @@ EXTRA_DSO_LDOPTS += -lelf -ldemangle
+ endif
+ endif
+ 
+-ifneq (,$(filter DragonFly FreeBSD NetBSD OpenBSD,$(OS_ARCH)))
++ifneq (,$(filter DragonFly FreeBSD NetBSD OpenBSD Bitrig,$(OS_ARCH)))
+ OS_LIBS += $(call EXPAND_LIBNAME,kvm)
+ # keep `environ' unresolved, see bug 14426 for binutils
+ EXTRA_DSO_LDOPTS += -Wl,--warn-unresolved-symbols
