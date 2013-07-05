@@ -1,16 +1,17 @@
 $OpenBSD$
---- media/libcubeb/src/Makefile.in.orig	Tue Mar 26 23:17:56 2013
-+++ media/libcubeb/src/Makefile.in	Wed Apr 10 20:53:02 2013
-@@ -49,6 +49,12 @@ CSRCS         = \
-               $(NULL)
+--- media/libcubeb/src/Makefile.in.orig	Tue Jun 18 06:01:33 2013
++++ media/libcubeb/src/Makefile.in	Fri Jul  5 08:31:11 2013
+@@ -46,6 +46,13 @@ CSRCS           += \
+ DEFINES         += -DUSE_AUDIOUNIT
  endif
  
 +ifeq ($(OS_ARCH),Bitrig)
-+CSRCS           = \
++CSRCS           += \
 +                cubeb_sndio.c \
 +                $(NULL)
++DEFINES         += -DUSE_SNDIO
 +endif
 +
- ifdef MOZ_PULSEAUDIO
- CSRCS		= \
- 		cubeb_pulse.c \
+ ifeq ($(OS_ARCH),OpenBSD)
+ CSRCS           += \
+                 cubeb_sndio.c \
