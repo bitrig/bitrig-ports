@@ -1,7 +1,7 @@
-$OpenBSD$
---- unix/configure.orig	Tue May  8 13:29:19 2012
-+++ unix/configure	Tue May  8 13:30:35 2012
-@@ -7555,7 +7555,7 @@ fi
+$OpenBSD: patch-unix_configure,v 1.1 2013/07/06 11:04:19 stu Exp $
+--- unix/configure.orig	Mon Apr  1 20:36:35 2013
++++ unix/configure	Wed Jul 17 19:56:01 2013
+@@ -7616,10 +7616,10 @@ fi
  	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
  	    TCL_LIB_VERSIONS_OK=nodots
  	    ;;
@@ -9,10 +9,23 @@ $OpenBSD$
 +	OpenBSD-* | Bitrig-*)
  	    arch=`arch -s`
  	    case "$arch" in
- 	    m88k|vax)
-@@ -8877,7 +8877,7 @@ fi
+-	    m88k|vax)
++	    vax)
+ 		# Equivalent using configure option --disable-load
+ 		# Step 4 will set the necessary variables
+ 		DL_OBJS=""
+@@ -7641,7 +7641,7 @@ fi
+ 		;;
+ 	    esac
+ 	    case "$arch" in
+-	    m88k|vax)
++	    vax)
+ 		CFLAGS_OPTIMIZE="-O1"
+ 		;;
+ 	    sh)
+@@ -8938,7 +8938,7 @@ fi
  	    BSD/OS*) ;;
- 	    CYGWIN_*) ;;
+ 	    CYGWIN_*|MINGW32_*) ;;
  	    IRIX*) ;;
 -	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
 +	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
