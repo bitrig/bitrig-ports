@@ -16,7 +16,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES=		devel/gettext
 
 LIB_DEPENDS =		devel/libsigsegv \
-			devel/ffcall>=1.10p1 \
+			devel/ffcall>=1.10p1 \
 			devel/readline
 WANTLIB =		avcall c callback m ncurses readline sigsegv
 
