@@ -21,8 +21,6 @@ WANTLIB=		c m ncurses ossaudio pthread execinfo gnutls xml2
 MASTER_SITES=		${MASTER_SITE_GNU:=emacs/}
 
 USE_GMAKE=		Yes
-CC=gcc
-CXX=g++
 
 FLAVORS=		athena gtk2 gtk3 no_x11
 FLAVOR?=		gtk3
@@ -45,6 +43,13 @@ SUBST_VARS=		GCCARCH VERSION
 
 MODULES=		devel/gettext
 LIB_DEPENDS=		devel/libexecinfo security/gnutls textproc/libxml
+
+MODULES+=		gcc4
+MODGCC4_VERSION=	4.6
+MODGCC4_ARCHS=		*
+MODGCC4_LANGS=		c
+CC=gcc
+CXX=g++
 
 .if ${FLAVOR} == "no_x11"
 CONFIGURE_ARGS+=	--without-x \
