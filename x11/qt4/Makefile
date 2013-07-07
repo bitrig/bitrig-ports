@@ -1,5 +1,9 @@
 # $OpenBSD: Makefile,v 1.114 2013/06/12 20:36:34 brad Exp $
 
+# work around clang 3.3 crash
+CC=gcc
+CXX=g++
+
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 SHARED_ONLY =		Yes
 
