@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.48 2013/05/06 17:49:37 naddy Exp $
+# $OpenBSD: Makefile,v 1.49 2013/07/07 21:25:31 naddy Exp $
 
 BROKEN-mips64 = 	undefined reference to `__sync_fetch_and_add_8'
 BROKEN-hppa =		undefined reference to `__sync_fetch_and_add_4'

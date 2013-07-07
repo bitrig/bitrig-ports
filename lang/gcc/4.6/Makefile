@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.56 2013/06/18 20:24:29 sthen Exp $
+# $OpenBSD: Makefile,v 1.57 2013/07/07 21:25:29 naddy Exp $
 
 ONLY_FOR_ARCHS = alpha amd64 hppa i386 powerpc sparc64
 DPB_PROPERTIES = parallel
@@ -6,7 +6,6 @@ DPB_PROPERTIES = parallel
 V = 4.6.4
 FULL_VERSION = $V
 FULL_PKGVERSION = $V
-REVISION-main = 0
 
 ADASTRAP_LIBC-i386 = 68.2
 ADASTRAP-i386 = adastrap-i386-$V-0.tar.xz
@@ -25,14 +24,14 @@ PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 PKGNAME-go =	gccgo-${FULL_PKGVERSION}
 PKGSPEC-main = gcc->=4.6,<4.7
 
-REVISION-main = 16
-REVISION-c++ = 14
-REVISION-estdc = 10
-REVISION-f95 = 14
-REVISION-java = 15
-REVISION-objc = 14
-REVISION-ada = 16
-REVISION-go = 14
+REVISION-main =	1
+REVISION-c++ =	0
+#REVISION-estdc =
+REVISION-f95 =	0
+REVISION-java =	0
+REVISION-objc =	0
+REVISION-ada =	0
+REVISION-go =	0
 
 SHARED_LIBS =	estdc++		14.0 \
 		gfortran	3.0 \
