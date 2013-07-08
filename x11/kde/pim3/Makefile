@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.78 2013/01/23 21:10:38 zhuk Exp $
+# $OpenBSD: Makefile,v 1.79 2013/07/08 14:03:30 zhuk Exp $
 
 COMMENT = 		KDE personal information applications
 COMMENT-kpilot =	KDE interface to sync with Palm Pilot
@@ -88,7 +88,6 @@ MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/admin
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/HTML/en/common
-	@${post_install_libs}
 
 #MULTI_PACKAGES=-kpilot
 FULLPKGNAME-kpilot = kpilot-${VERSION}
