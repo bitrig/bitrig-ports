@@ -34,6 +34,8 @@ LIB_DEPENDS=		databases/gdbm \
 USE_GMAKE=		Yes
 USE_GROFF =		Yes
 
+CC =			gcc
+
 MAKE_FLAGS=		rep_LIBTOOL=${LIBTOOL}
 
 CONFIGURE_STYLE=	gnu

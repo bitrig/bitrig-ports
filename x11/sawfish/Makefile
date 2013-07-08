@@ -43,6 +43,8 @@ MODULES=	devel/gettext
 USE_GROFF =	Yes
 USE_GMAKE=      Yes
 
+CC= 		gcc
+
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS+=${CONFIGURE_SHARED} \
 		--disable-linguas \
