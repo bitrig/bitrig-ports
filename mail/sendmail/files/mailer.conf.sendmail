@@ -1,0 +1,9 @@
+# $OpenBSD$
+#
+sendmail	${TRUEPREFIX}/libexec/sendmail/sendmail
+send-mail	${TRUEPREFIX}/libexec/sendmail/sendmail
+mailq		${TRUEPREFIX}/libexec/sendmail/sendmail
+makemap		${TRUEPREFIX}/libexec/sendmail/makemap
+newaliases	${TRUEPREFIX}/libexec/sendmail/sendmail
+hoststat	${TRUEPREFIX}/libexec/sendmail/sendmail
+purgestat	${TRUEPREFIX}/libexec/sendmail/sendmail
