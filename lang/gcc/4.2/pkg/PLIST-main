@@ -17,7 +17,6 @@ lib/gcc/${CONFIG}/
 lib/gcc/${CONFIG}/${V}/
 lib/gcc/${CONFIG}/${V}/include/
 lib/gcc/${CONFIG}/${V}/include/README
-lib/gcc/${CONFIG}/${V}/include/com_err.h
 lib/gcc/${CONFIG}/${V}/include/limits.h
 lib/gcc/${CONFIG}/${V}/include/rpc/
 lib/gcc/${CONFIG}/${V}/include/rpc/rpc_des.h
