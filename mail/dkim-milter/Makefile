@@ -17,12 +17,18 @@ PERMIT_PACKAGE_FTP=		Yes
 
 WANTLIB=	c crypto milter pthread ssl
 
+RUN_DEPENDS=	mail/sendmail
+BUILD_DEPENDS=	${RUN_DEPENDS}
+
 EXAMPLESDIR=	share/examples/dkim-milter
 USE_GROFF =	Yes
 
+post-extract:
+	@cp ${WRKDIST}/devtools/OS/OpenBSD ${WRKDIST}/devtools/OS/Bitrig
+
 post-configure:
-	@(echo "define(\`confCC', \`${CC}')"; \
-	  echo "define(\`confOPTIMIZE', \`${CFLAGS}')") \
+	@(echo "define(\`confCC', \`${CC} ${LDFLAGS} -L${LOCALBASE}/lib')"; \
+	  echo "define(\`confOPTIMIZE', \`${CFLAGS} -I${LOCALBASE}/include')") \
 		>${WRKSRC}/devtools/Site/site.config.m4
 
 do-install:
