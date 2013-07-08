@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.ac.orig	Sun Jul  7 19:21:11 2013
++++ configure.ac	Sun Jul  7 19:21:29 2013
+@@ -156,7 +156,7 @@ case "$THREADS" in
+      *-*-hpux10*)
+         AC_MSG_WARN("Only HP-UX 11 POSIX threads are supported.")
+         ;;
+-     *-*-openbsd*)
++     *-*-openbsd*|*-*-bitrig*)
+         AC_DEFINE(GC_OPENBSD_THREADS)
+         THREADDLLIBS=-pthread
+         INCLUDES="$INCLUDES -pthread"

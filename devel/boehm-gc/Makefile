@@ -37,6 +37,8 @@ USE_GROFF =	Yes
 AUTOCONF_VERSION= 2.68
 CONFIGURE_STYLE= autoconf no-autoheader
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKDIST} ${WRKDIST}/libatomic_ops/
+
 CONFIGURE_ARGS= ${CONFIGURE_SHARED} \
 		--with-libatomic-ops=no \
 		--enable-cplusplus \

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libatomic_ops/configure.ac.orig	Sun Jul  7 19:25:45 2013
++++ libatomic_ops/configure.ac	Sun Jul  7 19:26:06 2013
+@@ -85,7 +85,7 @@ case "$host" in
+     *-*-netbsd*)
+       AC_DEFINE(_PTHREADS)
+       ;;
+-    *-*-openbsd* | *-*-kfreebsd*-gnu | *-*-dgux*)
++    *-*-openbsd* | *-*-bitrig* | *-*-kfreebsd*-gnu | *-*-dgux*)
+       THREADDLLIBS=-pthread
+       ;;
+     *-*-cygwin* | *-*-darwin*)
