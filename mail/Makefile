@@ -193,6 +193,7 @@
      SUBDIR += ruby-mailfactory
      SUBDIR += ruby-mime
      SUBDIR += ruby-mime-types
+     SUBDIR += sendmail
      SUBDIR += sieve-connect
      SUBDIR += signify
      SUBDIR += sma
