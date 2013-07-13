@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.13 2013/04/01 14:05:37 sthen Exp $
+# $OpenBSD: Makefile,v 1.14 2013/07/13 11:53:22 sthen Exp $
 
 COMMENT=	BIND stub resolver library
 
 V=		6.0
 DISTNAME=	libbind-6.0
 EPOCH=		0
+REVISION=	0
 
 SHARED_LIBS +=	bind                      3.0 # 6.1
 
@@ -22,7 +23,8 @@ MASTER_SITES=	${MASTER_SITE_ISC:=libbind/$V/}
 AUTOCONF_VERSION=	2.61
 CONFIGURE_STYLE=	autoconf no-autoheader
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
-			--with-libtool
+			--with-libtool \
+			--libdir=${TRUEPREFIX}/lib/libbind
 
 NO_TEST=	Yes
 
