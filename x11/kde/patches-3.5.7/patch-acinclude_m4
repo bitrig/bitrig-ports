@@ -1,6 +1,6 @@
 $OpenBSD: patch-acinclude_m4,v 1.4 2013/06/03 20:07:39 zhuk Exp $
---- acinclude.m4.orig	Wed Aug 20 19:52:36 2008
-+++ acinclude.m4	Fri May  3 12:21:11 2013
+--- acinclude.m4.orig	Wed Aug 20 18:07:05 2008
++++ acinclude.m4	Mon Jul 22 15:38:10 2013
 @@ -1809,7 +1809,7 @@ AC_CACHE_VAL(ac_cv_have_kde,
  
  if test "$kde_qtver" = 1; then
@@ -19,23 +19,94 @@ $OpenBSD: patch-acinclude_m4,v 1.4 2013/06/03 20:07:39 zhuk Exp $
  kde_libdirs="$ac_kde_libraries $libdir $kde_libdirs"
  AC_FIND_FILE($kde_check_lib, $kde_libdirs, kde_libdir)
  ac_kde_libraries="$kde_libdir"
+@@ -4228,7 +4228,7 @@ AC_DEFUN([KDE_SHADOWPASSWD], [
+   if test "x$use_shadow" = xyes || 
+      ( test "x$use_pam" = xyes && test "x$ac_use_shadow" = xyes ); then
+       case $host in
+-      *-*-freebsd* | *-*-netbsd* | *-*-openbsd*)
++      *-*-freebsd* | *-*-netbsd* | *-*-openbsd* | *-*-bitrig*)
+ 	SETUIDFLAGS="-m 4755 -o root";;
+       *)
+ 	SETUIDFLAGS="-m 4755";;
 @@ -4419,7 +4419,10 @@ AC_DEFUN([KDE_CHECK_LIBPTHREAD],
  
    dnl Un-special-case for FreeBSD.
    if test "x$LIBPTHREAD" = "xPTHREAD" ; then
 -    LIBPTHREAD=""
 +    case $host_os in
-+	openbsd*) LIBPTHREAD="-pthread" ;;
++	openbsd* | bitrig*) LIBPTHREAD="-pthread" ;;
 +	*) LIBPTHREAD="" ;;
 +    esac
    fi
  
    AC_SUBST(LIBPTHREAD)
-@@ -4650,2 +4653,3 @@ fi
+@@ -4649,6 +4652,7 @@ fi
+ 
  AC_DEFUN([KDE_CHECK_PYTHON],
  [
 +  KDE_CHECK_PYTHON_INTERN("2.7", [
-@@ -4663,2 +4667,3 @@ AC_DEFUN([KDE_CHECK_PYTHON],
-         ])
+   KDE_CHECK_PYTHON_INTERN("2.5",
+     [KDE_CHECK_PYTHON_INTERN("2.4",
+      [KDE_CHECK_PYTHON_INTERN("2.3", 
+@@ -4661,6 +4665,7 @@ AC_DEFUN([KDE_CHECK_PYTHON],
+        ])
+      ])
+   ])
 +       ])
-       ])
+ ])
+ 
+ AC_DEFUN([KDE_CHECK_STL],
+@@ -6187,7 +6192,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="\$RANLIB -t \$oldlib~$old_postinstall_cmds"
+     ;;
+   *)
+@@ -7478,7 +7483,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   need_lib_prefix=no
+   need_version=no
+@@ -8208,7 +8213,7 @@ nto-qnx*)
+   lt_cv_deplibs_check_method=unknown
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   lt_cv_file_magic_cmd=/usr/bin/file
+   lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
+   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -11034,7 +11039,7 @@ ifelse([$1],[CXX],[
+       with_gnu_ld=no
+     fi
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -11512,7 +11517,7 @@ EOF
+       _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       _LT_AC_TAGVAR(hardcode_direct, $1)=yes
+       _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -12042,7 +12047,7 @@ AC_CACHE_CHECK([whether deplibs are loaded by dlopen],
+ 	linux*)
+ 	  libltdl_cv_sys_dlopen_deplibs=yes
+ 	  ;;
+-	netbsd*|openbsd*|freebsd*|dragonfly*)
++	netbsd*|openbsd*|bitrig*|freebsd*|dragonfly*)
+ 	  libltdl_cv_sys_dlopen_deplibs=yes
+ 	  ;;
+ 	solaris*)
