@@ -33,6 +33,12 @@ LIB_DEPENDS =		devel/t1lib \
 			print/poppler
 
 MODULES =		textproc/intltool converters/libiconv
+
+# clang crashes on textlive
+MODULES +=		gcc4 lang/clang
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
+
 # These following modules are mostly for variable substitution in patches
 # They are not real dependencies of _base, but of _texmf-full
 MODULES +=		lang/lua lang/ruby lang/python x11/tk perl
@@ -126,7 +132,9 @@ CPPFLAGS +=	-DU_IS_BIG_ENDIAN=1
 .endif
 
 CONFIGURE_ENV +=	TL_MAKE=${GMAKE} \
-			CPPFLAGS="${CPPFLAGS}"
+			CPPFLAGS="${CPPFLAGS}" \
+			CC="gcc" \
+			CXX="g++"
 
 # Can't build in same dir
 WRKBUILD =              ${WRKSRC}/Work
