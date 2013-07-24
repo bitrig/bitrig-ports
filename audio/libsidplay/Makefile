@@ -21,6 +21,7 @@ MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/scripts
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		${CONFIGURE_SHARED}
+CONFIGURE_ENV+=		sid_cv_have_ios_binary="yes"
 .if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ARGS+=	--enable-optfixpoint --enable-optendian
 .endif
