@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.orig	Wed Jul 24 15:12:06 2013
++++ configure	Wed Jul 24 15:12:19 2013
+@@ -4553,7 +4553,7 @@ fi
+ done
+ 
+         ;;
+-    *bsd*)
++    *bsd* | *bitrig*)
+ 
+ $as_echo "#define HAVE_BSD 1" >>confdefs.h
+ 
