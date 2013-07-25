@@ -98,7 +98,8 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--disable-waveout \
 			--disable-gconf \
 			--disable-avahi \
-			--disable-orc
+			--disable-orc \
+			--enable-neon-opt=no
 # linked "privately" to lib/pulseaudio/libpulsecommon-X.Y.so
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib \
