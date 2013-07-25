@@ -1,0 +1,11 @@
+$OpenBSD$
+--- libffmpegthumbnailer/pngwriter.cpp.orig	Thu Jul 25 16:53:22 2013
++++ libffmpegthumbnailer/pngwriter.cpp	Thu Jul 25 16:53:36 2013
+@@ -17,6 +17,7 @@
+ #include "pngwriter.h"
+ #include <stdexcept>
+ #include <cassert>
++#include <cstring>
+ 
+ using namespace std;
+ 
