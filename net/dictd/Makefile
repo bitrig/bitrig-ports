@@ -25,6 +25,8 @@ MASTER_SITES=	ftp://ftp.us0.dict.org/pub/dict/ \
 USE_GMAKE=	Yes
 USE_GROFF =	Yes
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST} \
+				${WRKDIST}/libmaa
 CONFIGURE_ARGS=	--without-local-zlib \
 		--enable-dictorg
 
