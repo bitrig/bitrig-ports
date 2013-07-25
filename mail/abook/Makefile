@@ -19,6 +19,7 @@ MODULES=	devel/gettext
 LIB_DEPENDS=	devel/readline
 
 CONFIGURE_STYLE=gnu
+CONFIGURE_ARGS+= --with-readline=${LOCALBASE}
 
 EXAMPLESDIR=	${PREFIX}/share/examples/abook
 WHITELIST=README abook2whitelist.sh mutt.whitelist whitelist.rc
