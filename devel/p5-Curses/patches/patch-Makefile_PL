@@ -1,0 +1,11 @@
+$OpenBSD$
+--- Makefile.PL.orig	Thu Jul 25 08:48:35 2013
++++ Makefile.PL	Thu Jul 25 08:48:57 2013
+@@ -144,6 +144,7 @@ my $guess_cfg = {
+   },
+   'next'      => [ ''                       , '-lcurses -ltermcap'        ],
+   'openbsd'   => [ ''                       , '-lcurses -ltermcap'        ],  
++  'bitrig'    => [ ''                       , '-lcurses -ltermcap'        ],  
+   'os2'       => {
+     'bsd'     => [ ''                       , '-lcurses -ltermcap'        ],
+     'ncurses' => [ ''                       , '-lncurses'                 ],

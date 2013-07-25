@@ -20,4 +20,7 @@ WANTLIB += c curses form menu panel termcap
 MAKE_FLAGS=PASTHRU_DEFINE='-idirafter $${PERL_INC}'
 CONFIGURE_ARGS=	PANELS MENUS FORMS
 
+post-extract:
+	@cp ${WRKDIST}/hints/c-openbsd.h ${WRKDIST}/hints/c-bitrig.h
+
 .include <bsd.port.mk>
