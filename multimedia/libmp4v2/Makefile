@@ -26,5 +26,7 @@ USE_GMAKE =		Yes
 MAKE_FILE =		GNUmakefile
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST} \
+				${WRKDIST}/autoaux
 
 .include <bsd.port.mk>
