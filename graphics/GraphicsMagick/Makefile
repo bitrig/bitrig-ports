@@ -41,7 +41,7 @@ RUN_DEPENDS=		print/ghostscript/gnu \
 BUILD_DEPENDS=		${RUN_DEPENDS}
 
 CONFIGURE_STYLE=	gnu
-MODGNU_CONFIG_GUESS_DIRS=${WRKDIST} ${WRKDIST}/TclMagick ${WRKDIST}/ltdl/config
+MODGNU_CONFIG_GUESS_DIRS=${WRKDIST} ${WRKDIST}/TclMagick
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--with-ltdl-include=${LOCALBASE}/include \
 			--with-ltdl-lib=${LOCALBASE}/lib \
