@@ -1,0 +1,30 @@
+$OpenBSD$
+--- Modules/_ctypes/libffi/configure.ac.orig	Thu Jul 25 20:22:05 2013
++++ Modules/_ctypes/libffi/configure.ac	Thu Jul 25 20:23:05 2013
+@@ -84,7 +84,7 @@ case "$host" in
+ 	TARGET=ARM; TARGETDIR=arm
+ 	;;
+ 
+-  amd64-*-freebsd* | amd64-*-openbsd*)
++  amd64-*-freebsd* | amd64-*-openbsd* | amd64-*-bitrig*)
+ 	TARGET=X86_64; TARGETDIR=x86
+   	;;
+ 
+@@ -122,7 +122,7 @@ case "$host" in
+ 	TARGET=PA_HPUX; TARGETDIR=pa
+ 	;;
+ 
+-  i?86-*-freebsd* | i?86-*-openbsd*)
++  i?86-*-freebsd* | i?86-*-openbsd* | i?86-*-bitrig*)
+ 	TARGET=X86_FREEBSD; TARGETDIR=x86
+ 	;;
+   i?86-win32* | i?86-*-cygwin* | i?86-*-mingw* | i?86-*-os2* | i?86-*-interix*)
+@@ -428,7 +428,7 @@ case "$target" in
+                  [Cannot use PROT_EXEC on this target, so, we revert to
+                    alternative means])
+      ;;
+-     *-apple-darwin1* | *-*-freebsd* | *-*-kfreebsd* | *-*-openbsd* | *-pc-solaris*)
++     *-apple-darwin1* | *-*-freebsd* | *-*-kfreebsd* | *-*-openbsd* | *-*-bitrig* | *-pc-solaris*)
+        AC_DEFINE(FFI_MMAP_EXEC_WRIT, 1,
+                  [Cannot use malloc on this target, so, we revert to
+                    alternative means])
