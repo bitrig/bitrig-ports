@@ -45,7 +45,7 @@ _MODCLANG_LINKS += clang++ g++ clang++ c++
 
 .if !empty(_MODCLANG_LINKS)
 .  for _src _dest in ${_MODCLANG_LINKS}
-MODCLANG_post-patch += ln -sf ${LOCALBASE}/bin/${_src} ${WRKDIR}/bin/${_dest};
+MODCLANG_post-patch += ln -sf ${USRBASE}/bin/${_src} ${WRKDIR}/bin/${_dest};
 .  endfor
 .endif
 

@@ -154,6 +154,7 @@ REFETCH ?= false
 PORTSDIR ?= /usr/ports
 LOCALBASE ?= /usr/local
 X11BASE ?= /usr/X11R6
+USRBASE ?= /usr
 VARBASE ?= /var
 DISTDIR ?= ${PORTSDIR}/distfiles
 BULK_COOKIES_DIR ?= ${PORTSDIR}/bulk/${MACHINE_ARCH}
