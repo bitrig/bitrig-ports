@@ -17,8 +17,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 BUILD_DEPENDS=	devel/libclog
 
-FAKE_FLAGS=	MANDIR=${PREFIX}/man/man
-
 do-configure:
 	printf "major=${LIBexude_VERSION:R}\nminor=${LIBexude_VERSION:E}\n" \
             > ${WRKSRC}/shlib_version

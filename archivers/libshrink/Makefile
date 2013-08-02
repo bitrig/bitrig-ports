@@ -20,8 +20,6 @@ LIB_DEPENDS=	archivers/lzo2 \
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes
 
-FAKE_FLAGS=	MANDIR=${PREFIX}/man/man
-
 do-configure:
 	printf "major=${LIBshrink_VERSION:R}\nminor=${LIBshrink_VERSION:E}\n" \
             > ${WRKSRC}/libshrink/shlib_version

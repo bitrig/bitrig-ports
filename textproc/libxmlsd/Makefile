@@ -17,8 +17,6 @@ WANTLIB= 	expat
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes
 
-FAKE_FLAGS=	MANDIR=${PREFIX}/man/man
-
 do-configure:
 	printf "major=${LIBxmlsd_VERSION:R}\nminor=${LIBxmlsd_VERSION:E}\n" \
             > ${WRKSRC}/shlib_version

@@ -25,8 +25,6 @@ LIB_DEPENDS =		archivers/libshrink>=0.5.0	\
 			security/assl>=1.3.0		\
 			textproc/libxmlsd>=0.9.0
 
-FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
-
 post-extract:
 	@cp ${WRKDIST}/config/Makefile.openbsd ${WRKDIST}/config/Makefile.bitrig
 

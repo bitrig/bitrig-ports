@@ -15,8 +15,6 @@ MAINTAINER=		David Hill <dhill@mindcry.org>
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes
 
-FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
-
 EG_DIR=			${PREFIX}/share/examples/assl
 
 .if ${MACHINE_ARCH:Mmips64*}

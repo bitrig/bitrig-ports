@@ -15,8 +15,6 @@ MAINTAINER =		David Hill <dhill@mindcry.org>
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes
 
-FAKE_FLAGS=		MANDIR=${PREFIX}/man/man
-
 do-configure:
 	printf "major=${LIBclog_VERSION:R}\nminor=${LIBclog_VERSION:E}\n" \
 		> ${WRKSRC}/shlib_version
