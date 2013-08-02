@@ -37,8 +37,6 @@ USE_GROFF=		Yes
 CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS=${WRKDIST}/source
 
-CC=			gcc
-CXX=			g++
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--enable-static \
 			--disable-extras \
