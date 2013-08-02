@@ -65,7 +65,7 @@ WANTLIB-demos=		${WANTLIB} Xm Mrm
 NO_TEST=	Yes
 
 pre-patch:
-	cd ${WRKSRC}; AUTOCONF_VERSION=${AUTOCONF_VERSION} AUTOMAKE_VERSION=${AUTOMAKE_VERSION} ./autogen.sh
+	cd ${WRKSRC}; AUTOCONF_VERSION=${AUTOCONF_VERSION} AUTOMAKE_VERSION=${AUTOMAKE_VERSION} CC="${CC}" ./autogen.sh
 
 pre-configure:
 # fix sections
