@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.orig	Sun Jul 21 09:40:04 2013
++++ configure	Sun Jul 21 09:40:57 2013
+@@ -14744,7 +14744,7 @@ if test "$GCC" = "yes" -a "$set_more_warnings" != "no"
+ 	CFLAGS="$CFLAGS \
+ 		-Wall -Wstrict-prototypes -Werror=missing-prototypes \
+ 		-Werror=implicit-function-declaration \
+-		-Werror=pointer-arith -Werror=init-self -Werror=format=2 \
++		-Werror=pointer-arith -Werror=init-self \
+ 		-Werror=missing-include-dirs \
+ 		-Werror=declaration-after-statement"
+ fi
