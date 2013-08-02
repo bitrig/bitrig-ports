@@ -37,9 +37,9 @@ PKG_ARGS+=-Di386=0
 .endif
 
 USE_LIBTOOL=No
-
+MAKE_FLAGS="CC=${CC}"
 pre-build:
-	cd ${WRKSRC}/libiberty && ${MAKE} -f Makefile.bsd-wrapper config.status
+	cd ${WRKSRC}/libiberty && CC="${CC}" ${MAKE} -f Makefile.bsd-wrapper config.status
 
 pre-fake:
 	${INSTALL_DATA_DIR} ${PREFIX}/bin
