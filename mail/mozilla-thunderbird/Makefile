@@ -52,8 +52,12 @@ MODPY_RUNDEP =	No
 # Regression tests are too hard to adapt to run here
 NO_TEST =	Yes
 
-CC =	gcc
-CXX =	g++
+MODULES+=		gcc4
+MODGCC4_VERSION=	4.6
+MODGCC4_ARCHS=		*
+MODGCC4_LANGS=		c c++
+CC =			gcc
+CXX =			g++
 
 MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build/autoconf \
 				${WRKSRC}/ldap/sdks/c-sdk/config/autoconf \
