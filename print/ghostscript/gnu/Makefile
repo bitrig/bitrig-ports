@@ -81,7 +81,8 @@ MAKE_FLAGS=	BINDIR=./obj				\
 		TRUE_PREFIX='${LOCALBASE}'		\
 		USE_GTK=${USE_GTK}			\
 		XLDFLAGS=-L${LOCALBASE}/lib		\
-		prefix='${PREFIX}'
+		prefix='${PREFIX}'			\
+		CC=${CC}
 
 USE_GMAKE=	Yes
 
