@@ -24,7 +24,7 @@ MODULES=	devel/gettext
 SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE= autoconf
 AUTOCONF_VERSION= 2.69
-CONFIGURE_ARGS+= --enable-elf-shlibs --disable-tls CC=cc CXX=g++
+CONFIGURE_ARGS+= --enable-elf-shlibs --disable-tls
 CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS} -D_EXT2_USE_C_VERSIONS_ -fPIC"
 USE_GMAKE=	Yes
 
