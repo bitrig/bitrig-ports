@@ -18,7 +18,6 @@ MASTER_SITES=		ftp://sourceware.org/pub/libffi/
 
 TEST_DEPENDS=		devel/dejagnu
 
-CC=			gcc
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED}
 
