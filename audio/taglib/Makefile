@@ -21,11 +21,7 @@ WANTLIB=	stdc++ m z
 
 BUILD_DEPENDS=	devel/cppunit
 
-# use g stuff because clang++ trips over cppunit
-CC=gcc
-CXX=g++
-CONFIGURE_ARGS+=-DCMAKE_BUILD_TYPE=Release \
-		-DBUILD_TESTS=ON
+CONFIGURE_ARGS+=-DCMAKE_BUILD_TYPE=Release
 
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/cmake/modules/FindCppUnit.cmake
