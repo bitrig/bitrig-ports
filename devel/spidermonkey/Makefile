@@ -52,6 +52,11 @@ MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} \
 
 SUBST_VARS +=	MOZILLA_VERSION
 
+MODULES+=	gcc4
+MODGCC4_VERSION=4.6
+MODGCC4_ARCHS=	*
+MODGCC4_LANGS=	c c++
+
 WRKDIST =	${WRKDIR}/js-${MOZILLA_VERSION}/js/src
 USE_GMAKE =	yes
 CONFIGURE_STYLE =	autoconf no-autoheader
@@ -61,7 +66,7 @@ CONFIGURE_ARGS =	--with-pthreads \
 			--enable-ctypes \
 			--enable-threadsafe
 
-CONFIGURE_ENV +=	CC=gcc CXX=c++ \
+CONFIGURE_ENV +=	CC=gcc CXX=g++ \
 			SO_VERSION="${SO_VERSION}" \
 			MOZILLA_VERSION="${MOZILLA_VERSION}" \
 			LIBS=-lncurses
