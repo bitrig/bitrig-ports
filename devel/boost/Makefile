@@ -55,6 +55,10 @@ WANTLIB=	c m pthread stdc++ util z
 MODULES=	lang/python
 MODPY_RUNDEP=	No
 
+MODULES+=		lang/clang
+MODCLANG_ARCHS =        amd64 i386
+MODCLANG_LANGS =        c c++
+
 MAKE_ENV=	GCC="${CC}" GXX="${CXX}"
 
 BJAM_CONFIG=	-sNO_BZIP2=1 \
