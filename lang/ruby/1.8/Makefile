@@ -19,16 +19,21 @@ PKGNAME-ri_docs=	ruby-ri_docs-${VERSION}.${PATCHLEVEL}
 PKG_ARCH-ri_docs=	*
 PKGSPEC-main=		ruby->=1.8,<1.9
 
+MODULES=		converters/libiconv
+MODULES+=		gcc4
+MODGCC4_VERSION=	4.6
+MODGCC4_ARCHS=		*
+MODGCC4_LANGS=		c
+
 CONFIGURE_ARGS=		--program-suffix=18 \
 			--enable-ipv6 \
 			--with-dbm-type=bogus \
 			--with-opt-dir="${LOCALBASE}" \
 			--disable-option-checking \
-			CC=cc CXX=g++
+			CC=gcc
 
 CONFIGURE_ENV=		LIBruby18_VERSION=${LIBruby18_VERSION}
 
-MODULES=		converters/libiconv
 USE_GROFF =		Yes
 
 WANTLIB-main= 		c m readline termcap util crypto ncurses ssl z
