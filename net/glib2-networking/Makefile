@@ -40,8 +40,6 @@ CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--disable-static \
 		--with-ca-certificates=/etc/ssl/cert.pem
 
-CC=		gcc
-
 TEST_IS_INTERACTIVE=	x11
 
 .include <bsd.port.mk>
