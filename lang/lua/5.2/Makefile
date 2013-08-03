@@ -1,14 +1,18 @@
 # $OpenBSD: Makefile,v 1.3 2013/03/27 22:13:53 jasper Exp $
 
 VERSION=	5.2.2
+REVISION=	0
 PKGSPEC=	lua->=5.2,<5.3
 
 SHARED_LIBS=	lua5.2 ${VERSION:R}
 
-WANTLIB=	c m edit curses
+LIB_DEPENDS=	devel/readline
+
+WANTLIB=	c m edit curses readline
 
 SUBST_VARS+=	VERSION
 
+CFLAGS+=	-I${LOCALBASE}/include
 MAKE_FLAGS+=	LIBlua5.2_VERSION="${LIBlua5.2_VERSION}"
 
 post-install:
