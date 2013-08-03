@@ -2,13 +2,17 @@
 
 VERSION=	5.1.5
 PKGSPEC=	lua->=5.1,<5.2
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS=	lua5.1 ${VERSION:R}
 
-WANTLIB=	c m edit curses
+LIB_DEPENDS=	devel/readline
+
+WANTLIB=	c m edit curses readline
 
 MAKE_FLAGS+=	LIBlua5.1_VERSION="${LIBlua5.1_VERSION}"
+
+CFLAGS+= 	-I${LOCALBASE}/include
 
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/etc/lua.pc
