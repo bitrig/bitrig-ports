@@ -1,7 +1,7 @@
 $OpenBSD$
---- tools/clang/lib/Basic/Targets.cpp.orig	Sun Jun 16 21:08:39 2013
-+++ tools/clang/lib/Basic/Targets.cpp	Sun Jun 16 21:20:01 2013
-@@ -406,6 +406,7 @@ class BitrigTargetInfo : public OSTargetInfo<Target> {
+--- tools/clang/lib/Basic/Targets.cpp.orig	Mon Aug  5 23:27:57 2013
++++ tools/clang/lib/Basic/Targets.cpp	Thu Aug  8 14:21:50 2013
+@@ -396,6 +396,7 @@ class BitrigTargetInfo : public OSTargetInfo<Target> {
      // Bitrig defines; list based off of gcc output
  
      Builder.defineMacro("__Bitrig__");
@@ -9,3 +9,12 @@ $OpenBSD$
      DefineStd(Builder, "unix", Opts);
      Builder.defineMacro("__ELF__");
      if (Opts.POSIXThreads)
+@@ -404,7 +405,7 @@ class BitrigTargetInfo : public OSTargetInfo<Target> {
+ public:
+   BitrigTargetInfo(const llvm::Triple &Triple) : OSTargetInfo<Target>(Triple) {
+     this->UserLabelPrefix = "";
+-    this->TLSSupported = false;
++    this->TLSSupported = true;
+     this->MCountName = "__mcount";
+   }
+ };
