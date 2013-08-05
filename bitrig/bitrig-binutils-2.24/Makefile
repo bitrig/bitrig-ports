@@ -3,8 +3,7 @@
 COMMENT=	GNU binutils
 DPB_PROPERTIES= parallel
 
-VER = 2.22
-REVISION = 3
+VER = 2.24
 .if "${FLAVOR}" != ""
 FLAVOR_VERSION=-${FLAVOR}
 PKGNAME =  bitrig-binutils${FLAVOR_VERSION}-${VER}
@@ -19,40 +18,40 @@ EXTRACT_SUFX=	.tar.bz2
 
 REALDISTNAME = 	binutils-${VER}
 DISTNAME =	${REALDISTNAME}
-#DISTNAME =	bitrig-${REALDISTNAME}
 DISTFILES =	${REALDISTNAME}.tar.bz2
 EXTRACT_ONLY =	${REALDISTNAME}.tar.bz2
 
-CATEGORIES=	bitrig 
-CC=gcc
+CATEGORIES=	bitrig
 
 #GPLv3
 PERMIT_PACKAGE_CDROM=Yes
 WANTLIB=	c
 
-FLAVORS= armcross i386cross amd64cross
+BUILD_DEPENDS+=	devel/gettext
 
+FLAVORS= aarch64cross armcross amd64cross
+
+AARCH64=0
 AMD64=0
-I386=0
 ARM=0
 COMMON=0
-.if "${FLAVOR}" == "armcross"
-TARGET_ARCH=arm
+.if "${FLAVOR}" == "aarch64cross"
+TARGET_ARCH=aarch64
 CONFIGURE_ARGS+=--target=${TARGET_ARCH}-unknown-bitrig${OSREV}
-ARM=1
-.elif "${FLAVOR}" == "i386cross"
-TARGET_ARCH=i386
-CONFIGURE_ARGS+=--target=${TARGET_ARCH}-unknown-bitrig${OSREV}
-I386=1
+AARCH64=1
 .elif "${FLAVOR}" == "amd64cross"
 TARGET_ARCH=x86_64
 CONFIGURE_ARGS+=--target=${TARGET_ARCH}-unknown-bitrig${OSREV}
 AMD64=1
+.elif "${FLAVOR}" == "armcross"
+TARGET_ARCH=arm
+CONFIGURE_ARGS+=--target=${TARGET_ARCH}-unknown-bitrig${OSREV}
+ARM=1
+.elif ${MACHINE_ARCH} == "aarch64"
+AARCH64=1
+COMMON=1
 .elif ${MACHINE_ARCH} == "amd64"
 AMD64=1
-COMMON=1
-.elif ${MACHINE_ARCH} == "i386"
-I386=1
 COMMON=1
 .elif ${MACHINE_ARCH} == "arm"
 ARM=1
@@ -65,16 +64,16 @@ PKG_ARGS+=-Dcommon=1
 PKG_ARGS+=-Dcommon=0
 .endif
 
+.if ${AARCH64} == 1
+PKG_ARGS+=-Daarch64=1
+.else
+PKG_ARGS+=-Daarch64=0
+.endif
+
 .if ${AMD64} == 1
 PKG_ARGS+=-Damd64=1
 .else
 PKG_ARGS+=-Damd64=0
-.endif
-
-.if ${I386} == 1
-PKG_ARGS+=-Di386=1
-.else
-PKG_ARGS+=-Di386=0
 .endif
 
 .if ${ARM} == 1
@@ -97,6 +96,7 @@ CONFIGURE_STYLE=	GNU
 
 post-extract:
 	@cp ${FILESDIR}/te-obsd.h ${WRKSRC}/gas/config/te-obsd.h
+	@cp ${FILESDIR}/aarch64bitrig.sh ${WRKSRC}/ld/emulparams/
 	@cp ${FILESDIR}/armelf_obsd.sh ${WRKSRC}/ld/emulparams/
 	@cp ${FILESDIR}/elf_obsd.sh ${WRKSRC}/ld/emulparams/
 

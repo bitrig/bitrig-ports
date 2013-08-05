@@ -1,6 +1,6 @@
 $OpenBSD$
---- ld/emultempl/elf32.em.orig	Mon Nov 21 04:29:39 2011
-+++ ld/emultempl/elf32.em	Thu Sep 12 14:52:27 2013
+--- ld/emultempl/elf32.em.orig	Tue Nov 26 12:37:33 2013
++++ ld/emultempl/elf32.em	Mon May 12 14:42:14 2014
 @@ -82,6 +82,235 @@ EOF
    esac
  fi
@@ -237,7 +237,7 @@ $OpenBSD$
  # Import any needed special functions and/or overrides.
  #
  source_em ${srcdir}/emultempl/elf-generic.em
-@@ -467,6 +696,25 @@ gld${EMULATION_NAME}_search_needed (const char *path,
+@@ -471,6 +700,25 @@ gld${EMULATION_NAME}_search_needed (const char *path,
      return FALSE;
  
    needed.by = n->by;
@@ -263,19 +263,7 @@ $OpenBSD$
    needed.name = n->name;
  
    len = strlen (name);
-@@ -987,7 +1235,10 @@ gld${EMULATION_NAME}_write_build_id_section (bfd *abfd
-   bfd_h_put_32 (abfd, sizeof "GNU", &e_note->namesz);
-   bfd_h_put_32 (abfd, size, &e_note->descsz);
-   bfd_h_put_32 (abfd, NT_GNU_BUILD_ID, &e_note->type);
--  memcpy (e_note->name, "GNU", sizeof "GNU");
-+  {
-+   void *pname = &e_note->name[0]; 
-+  memcpy (pname, "GNU", sizeof "GNU");
-+  }
- 
-   if (!strcmp (info->style, "md5"))
-     {
-@@ -1282,6 +1533,33 @@ fragment <<EOF
+@@ -1276,6 +1524,33 @@ fragment <<EOF
  	    break;
  EOF
  fi
@@ -309,7 +297,7 @@ $OpenBSD$
  if [ "x${USE_LIBPATH}" = xyes ] ; then
  fragment <<EOF
  	  found = 0;
-@@ -1626,6 +1904,20 @@ gld${EMULATION_NAME}_open_dynamic_archive
+@@ -1644,6 +1919,20 @@ gld${EMULATION_NAME}_open_dynamic_archive
  
    filename = entry->filename;
  
@@ -321,7 +309,7 @@ $OpenBSD$
 +  if (string == NULL)
 +    return FALSE;
 +
-+  arch = arch; /* gcc -Werror */
++  (void)arch; /* -Werror */
 +EOF
 +   ;;
 +  *)
@@ -330,7 +318,7 @@ $OpenBSD$
    /* This allocates a few bytes too many when EXTRA_SHLIB_EXTENSION
       is defined, but it does not seem worth the headache to optimize
       away those two bytes of space.  */
-@@ -1639,6 +1931,11 @@ gld${EMULATION_NAME}_open_dynamic_archive
+@@ -1657,6 +1946,11 @@ gld${EMULATION_NAME}_open_dynamic_archive
  
    sprintf (string, "%s/lib%s%s.so", search->name, filename, arch);
  
@@ -342,7 +330,7 @@ $OpenBSD$
  #ifdef EXTRA_SHLIB_EXTENSION
    /* Try the .so extension first.  If that fails build a new filename
       using EXTRA_SHLIB_EXTENSION.  */
-@@ -2008,9 +2305,13 @@ echo '  ; else if (link_info.pie && link_info.combrelo
+@@ -2026,9 +2320,13 @@ echo '  ; else if (link_info.pie && link_info.combrelo
  echo '             && link_info.relro' >> e${EMULATION_NAME}.c
  echo '             && (link_info.flags & DF_BIND_NOW)) return' >> e${EMULATION_NAME}.c
  sed $sc ldscripts/${EMULATION_NAME}.xdw			>> e${EMULATION_NAME}.c
@@ -356,7 +344,7 @@ $OpenBSD$
  echo '  ; else if (link_info.pie) return'		>> e${EMULATION_NAME}.c
  sed $sc ldscripts/${EMULATION_NAME}.xd			>> e${EMULATION_NAME}.c
  fi
-@@ -2064,11 +2365,16 @@ fragment <<EOF
+@@ -2082,11 +2380,16 @@ fragment <<EOF
    else if (link_info.pie && link_info.combreloc
  	   && link_info.relro && (link_info.flags & DF_BIND_NOW))
      return "ldscripts/${EMULATION_NAME}.xdw";
@@ -373,7 +361,7 @@ $OpenBSD$
    else if (link_info.pie)
      return "ldscripts/${EMULATION_NAME}.xd";
  EOF
-@@ -2088,6 +2394,10 @@ fragment <<EOF
+@@ -2106,6 +2409,10 @@ fragment <<EOF
      return "ldscripts/${EMULATION_NAME}.xs";
  EOF
  fi

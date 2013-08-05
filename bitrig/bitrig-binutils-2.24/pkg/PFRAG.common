@@ -29,7 +29,7 @@ include/symcat.h
 @info info/standards.info
 lib/libbfd.a
 lib/libbfd.la
-lib/libiberty.a
+@comment lib/libiberty.a
 lib/libopcodes.a
 lib/libopcodes.la
 @man man/man1/addr2line.1
@@ -38,7 +38,7 @@ lib/libopcodes.la
 @man man/man1/c++filt.1
 @man man/man1/dlltool.1
 @man man/man1/elfedit.1
-@man man/man1/gprof.1
+@comment man/man1/gprof.1
 @man man/man1/ld.1
 @man man/man1/nlmconv.1
 @comment man/man1/nm.1
@@ -100,6 +100,9 @@ share/locale/ga/LC_MESSAGES/
 @comment share/locale/ga/LC_MESSAGES/gprof.mo
 share/locale/ga/LC_MESSAGES/ld.mo
 share/locale/ga/LC_MESSAGES/opcodes.mo
+share/locale/hr/
+share/locale/hr/LC_MESSAGES/
+share/locale/hr/LC_MESSAGES/binutils.mo
 share/locale/id/
 share/locale/id/LC_MESSAGES/
 share/locale/id/LC_MESSAGES/bfd.mo
@@ -108,10 +111,18 @@ share/locale/id/LC_MESSAGES/gas.mo
 @comment share/locale/id/LC_MESSAGES/gprof.mo
 share/locale/id/LC_MESSAGES/ld.mo
 share/locale/id/LC_MESSAGES/opcodes.mo
+share/locale/it/
+share/locale/it/LC_MESSAGES/
+share/locale/it/LC_MESSAGES/binutils.mo
+@comment share/locale/it/LC_MESSAGES/gprof.mo
+share/locale/it/LC_MESSAGES/ld.mo
+share/locale/it/LC_MESSAGES/opcodes.mo
 share/locale/ja/
 share/locale/ja/LC_MESSAGES/
 share/locale/ja/LC_MESSAGES/bfd.mo
 share/locale/ja/LC_MESSAGES/binutils.mo
+share/locale/ja/LC_MESSAGES/gas.mo
+@comment share/locale/ja/LC_MESSAGES/gprof.mo
 share/locale/ja/LC_MESSAGES/ld.mo
 share/locale/ms/
 share/locale/ms/LC_MESSAGES/
@@ -145,6 +156,9 @@ share/locale/rw/LC_MESSAGES/gas.mo
 share/locale/sk/
 share/locale/sk/LC_MESSAGES/
 share/locale/sk/LC_MESSAGES/binutils.mo
+share/locale/sr/
+share/locale/sr/LC_MESSAGES/
+@comment share/locale/sr/LC_MESSAGES/gprof.mo
 share/locale/sv/
 share/locale/sv/LC_MESSAGES/
 share/locale/sv/LC_MESSAGES/bfd.mo
@@ -162,7 +176,11 @@ share/locale/tr/LC_MESSAGES/ld.mo
 share/locale/tr/LC_MESSAGES/opcodes.mo
 share/locale/uk/
 share/locale/uk/LC_MESSAGES/
+share/locale/uk/LC_MESSAGES/bfd.mo
 share/locale/uk/LC_MESSAGES/binutils.mo
+@comment share/locale/uk/LC_MESSAGES/gprof.mo
+share/locale/uk/LC_MESSAGES/ld.mo
+share/locale/uk/LC_MESSAGES/opcodes.mo
 share/locale/vi/
 share/locale/vi/LC_MESSAGES/
 share/locale/vi/LC_MESSAGES/bfd.mo

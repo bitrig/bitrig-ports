@@ -1,7 +1,15 @@
 $OpenBSD$
---- gas/configure.tgt.orig	Mon Jun 20 09:23:21 2011
-+++ gas/configure.tgt	Sun Aug 12 17:41:10 2012
-@@ -116,6 +116,7 @@ case ${generic_target} in
+--- gas/configure.tgt.orig	Mon Nov  4 16:33:37 2013
++++ gas/configure.tgt	Fri Jan 31 22:05:22 2014
+@@ -118,6 +118,7 @@ generic_target=${cpu_type}-$vendor-$os
+ case ${generic_target} in
+   aarch64*-*-elf)			fmt=elf;;
+   aarch64*-*-linux*)			fmt=elf em=linux ;;
++  aarch64*-*-bitrig*)			fmt=elf em=obsd ;;
+ 
+   alpha-*-*vms*)			fmt=evax ;;
+   alpha-*-osf*)				fmt=ecoff ;;
+@@ -145,6 +146,7 @@ case ${generic_target} in
    arm-*-netbsdelf*)			fmt=elf  em=nbsd ;;
    arm-*-*n*bsd*)			fmt=aout em=nbsd ;;
    arm-*-nto*)				fmt=elf ;;
@@ -9,7 +17,7 @@ $OpenBSD$
    arm-epoc-pe)				fmt=coff em=epoc-pe ;;
    arm-wince-pe | arm-*-wince | arm*-*-mingw32ce* | arm*-*-cegcc*)
  					fmt=coff em=wince-pe ;;
-@@ -189,7 +190,8 @@ case ${generic_target} in
+@@ -224,7 +226,8 @@ case ${generic_target} in
      esac ;;
    i386-*-openbsd[0-2].* | \
    i386-*-openbsd3.[0-2])		fmt=aout em=nbsd ;;

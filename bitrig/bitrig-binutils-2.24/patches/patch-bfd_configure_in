@@ -1,7 +1,7 @@
 $OpenBSD$
---- bfd/configure.in.orig	Thu Jun 28 17:30:15 2012
-+++ bfd/configure.in	Thu Jun 28 17:28:58 2012
-@@ -238,7 +238,7 @@ if test "${target}" = "${host}"; then
+--- bfd/configure.in.orig	Mon Dec  2 10:30:28 2013
++++ bfd/configure.in	Fri Jan 31 22:05:22 2014
+@@ -266,7 +266,7 @@ if test "${target}" = "${host}"; then
  	;;
    arm-*-freebsd* | arm-*-kfreebsd*-gnu)
  	COREFILE='' ;;
@@ -10,7 +10,7 @@ $OpenBSD$
  	COREFILE=netbsd-core.lo
  	;;
    arm-*-riscix)		COREFILE=trad-core.lo ;;
-@@ -287,7 +287,7 @@ changequote([,])dnl
+@@ -315,7 +315,7 @@ changequote([,])dnl
  	TRAD_HEADER='"hosts/i386bsd.h"'
  	;;
  changequote(,)dnl
@@ -19,7 +19,7 @@ $OpenBSD$
  changequote([,])dnl
  	COREFILE=netbsd-core.lo
  	;;
-@@ -457,7 +457,7 @@ changequote([,])dnl
+@@ -489,7 +489,7 @@ changequote([,])dnl
    x86_64-*-linux*)
  	CORE_HEADER='"hosts/x86-64linux.h"'
  	;;

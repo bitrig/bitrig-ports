@@ -1,7 +1,7 @@
 $OpenBSD$
---- ld/ld.texinfo.orig	Sun Aug 12 18:25:32 2012
-+++ ld/ld.texinfo	Sun Aug 12 18:19:40 2012
-@@ -1097,6 +1097,12 @@ Set the emulation common page size to @var{value}.
+--- ld/ld.texinfo.orig	Tue Nov 26 12:37:33 2013
++++ ld/ld.texinfo	Fri Jan 31 22:05:22 2014
+@@ -1106,6 +1106,12 @@ Specifying zero will override any default non-zero siz
  
  Other keywords are ignored for Solaris compatibility.
  

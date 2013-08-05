@@ -1,7 +1,7 @@
 %%common%%
+%%aarch64%%
 %%amd64%%
-%%i386%%
 %%arm%%
+%%aarch64cross%%
 %%amd64cross%%
-%%i386cross%%
 %%armcross%%
