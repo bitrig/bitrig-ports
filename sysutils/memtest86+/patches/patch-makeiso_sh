@@ -66,10 +66,10 @@ $OpenBSD: patch-makeiso_sh,v 1.4 2011/03/10 08:02:36 form Exp $
 -
 -echo "Done! Memtest86+ 4.20 ISO is mt420.iso"
 +mv ../memtest.img boot
-+mkhybrid -J -V "Memtest86+ ${V-4.20}" -b boot/memtest.img -c boot/boot.catalog \
++/usr/local/bin/mkisofs -J -V "Memtest86+ ${V-4.20}" -b boot/memtest.img -c boot/boot.catalog \
 +    -hide boot -hide-joliet boot -o ../memtest.iso .
 +rm -f boot/*
 + 
 +mv ../memtest_s.img boot
-+mkhybrid -J -V "Memtest86+ ${V-4.20}" -b boot/memtest_s.img -c boot/boot.catalog \
++/usr/local/bin/mkisofs -J -V "Memtest86+ ${V-4.20}" -b boot/memtest_s.img -c boot/boot.catalog \
 +    -hide boot -hide-joliet boot -o ../memtest_s.iso .
