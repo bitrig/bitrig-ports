@@ -2,6 +2,7 @@
 %%amd64%%
 %%i386%%
 %%arm%%
+%%aarch64%%
 @bin bin/bugpoint
 bin/c++-analyzer
 bin/ccc-analyzer
@@ -1138,6 +1139,13 @@ ${CLANG_INCLUDE_PATH}/xmmintrin.h
 ${CLANG_INCLUDE_PATH}/xopintrin.h
 lib/clang/${LLVM_V}/lib/
 lib/clang/${LLVM_V}/lib/bitrig/
+lib/libLLVMAArch64AsmParser.a
+lib/libLLVMAArch64AsmPrinter.a
+lib/libLLVMAArch64CodeGen.a
+lib/libLLVMAArch64Desc.a
+lib/libLLVMAArch64Disassembler.a
+lib/libLLVMAArch64Info.a
+lib/libLLVMAArch64Utils.a
 lib/libLLVMARMAsmParser.a
 lib/libLLVMARMAsmPrinter.a
 lib/libLLVMARMCodeGen.a

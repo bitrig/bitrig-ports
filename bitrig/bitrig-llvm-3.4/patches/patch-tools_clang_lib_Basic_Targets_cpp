@@ -18,3 +18,12 @@ $OpenBSD$
      this->MCountName = "__mcount";
    }
  };
+@@ -5149,6 +5150,8 @@ static TargetInfo *AllocateTarget(const llvm::Triple &
+     switch (os) {
+     case llvm::Triple::Linux:
+       return new LinuxTargetInfo<AArch64TargetInfo>(Triple);
++    case llvm::Triple::Bitrig:
++      return new BitrigTargetInfo<AArch64TargetInfo>(Triple);
+     default:
+       return new AArch64TargetInfo(Triple);
+     }

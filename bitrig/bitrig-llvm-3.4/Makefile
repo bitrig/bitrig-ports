@@ -10,7 +10,7 @@ LLVM_V =	3.4
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION = 	6
+REVISION = 	7
 
 CATEGORIES =	bitrig
 
@@ -44,7 +44,7 @@ SEPARATE_BUILD =	Yes
 PREFIX=			/usr
 CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 			-DLLVM_REQUIRES_RTTI:Bool=True \
-			-DLLVM_TARGETS_TO_BUILD:String="ARM;X86" \
+			-DLLVM_TARGETS_TO_BUILD:String="AArch64;ARM;X86" \
 			-DCMAKE_INSTALL_PREFIX:PATH=${PREFIX} \
 			-DCMAKE_BUILD_TYPE:String=Release \
 			-DCMAKE_DISABLE_FIND_PACKAGE_LibXml2:Bool=True
@@ -74,6 +74,12 @@ PKG_ARGS+=-Di386=0
 PKG_ARGS+=-Darm=1
 .else
 PKG_ARGS+=-Darm=0
+.endif
+
+.if ${MACHINE_ARCH:Maarch64}
+PKG_ARGS+=-Daarch64=1
+.else
+PKG_ARGS+=-Daarch64=0
 .endif
 
 post-extract:

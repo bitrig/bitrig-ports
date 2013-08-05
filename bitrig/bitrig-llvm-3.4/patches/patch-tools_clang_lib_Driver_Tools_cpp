@@ -1,0 +1,12 @@
+--- tools/clang/lib/Driver/Tools.cpp.orig	Sat Feb  1 23:26:47 2014
++++ tools/clang/lib/Driver/Tools.cpp	Sat Feb  1 23:25:57 2014
+@@ -5698,6 +5698,9 @@ void bitrig::Link::ConstructJob(Compilation &C, const 
+ 
+     StringRef MyArch;
+     switch (getToolChain().getTriple().getArch()) {
++    case llvm::Triple::aarch64:
++      MyArch = "aarch64";
++      break;
+     case llvm::Triple::arm:
+       MyArch = "arm";
+       break;
