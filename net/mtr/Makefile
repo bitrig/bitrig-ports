@@ -20,7 +20,8 @@ MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/
 
 CONFIGURE_STYLE= gnu
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/bind" \
-		LDFLAGS="-L${LOCALBASE}/lib -L${LOCALBASE}/lib/libbind -R${LOCALBASE}/lib/libbind -lbind"
+		LDFLAGS="-L${LOCALBASE}/lib -L${LOCALBASE}/lib/libbind -Wl,-rpath,${LOCALBASE}/lib/libbind -lbind"
+
 
 FLAVORS=	gtk
 FLAVOR?=
