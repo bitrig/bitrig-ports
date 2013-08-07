@@ -402,9 +402,9 @@ ${JDKHOME}/include/jdwpTransport.h
 ${JDKHOME}/include/jni.h
 ${JDKHOME}/include/jvmti.h
 ${JDKHOME}/include/jvmticmlr.h
-${JDKHOME}/include/openbsd/
-${JDKHOME}/include/openbsd/jawt_md.h
-${JDKHOME}/include/openbsd/jni_md.h
+${JDKHOME}/include/bitrig/
+${JDKHOME}/include/bitrig/jawt_md.h
+${JDKHOME}/include/bitrig/jni_md.h
 ${JDKHOME}/jre/
 ${JDKHOME}/jre/ASSEMBLY_EXCEPTION
 ${JDKHOME}/jre/LICENSE

@@ -1,6 +1,6 @@
 $OpenBSD: patch-jdk_make_common_shared_Platform_gmk,v 1.1 2013/02/01 15:34:35 kurt Exp $
---- jdk/make/common/shared/Platform.gmk.orig	Tue Feb  5 19:09:30 2013
-+++ jdk/make/common/shared/Platform.gmk	Tue Feb  5 19:09:30 2013
+--- jdk/make/common/shared/Platform.gmk.orig	Wed Aug  7 21:20:21 2013
++++ jdk/make/common/shared/Platform.gmk	Wed Aug  7 21:23:39 2013
 @@ -101,7 +101,7 @@ REQUIRED_FREETYPE_VERSION=2.3.0
  SCM_DIRs = .hg .svn CVS RCS SCCS Codemgr_wsdata deleted_files .hgignore .hgtags
  # When changing SCM_DIRs also change SCM_DIRS_rexp and SCM_DIRS_prune:
@@ -20,9 +20,9 @@ $OpenBSD: patch-jdk_make_common_shared_Platform_gmk,v 1.1 2013/02/01 15:34:35 ku
  
 +ifeq ($(SYSTEM_UNAME), Bitrig)
 +  PLATFORM = bsd
-+  OS_NAME = openbsd
++  OS_NAME = bitrig
 +  OS_VENDOR = OpenBSD
-+  REQUIRED_OS_VERSION = 5.1
++  REQUIRED_OS_VERSION = 0.1
 +endif
 +
  # Platform settings specific to BSD

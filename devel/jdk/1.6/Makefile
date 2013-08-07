@@ -13,9 +13,9 @@ UPDATE=		32
 BUILD=		b27
 PKGNAME=	jdk-${VERSION}
 PKGNAME-main=	jdk-${VERSION}
-REVISION-main=	4
+REVISION-main=	5
 PKGNAME-jre=	jre-${VERSION}
-REVISION-jre=	4
+REVISION-jre=	5
 
 # see jaxp/jaxp.properties & jaxws/jaxws.properties 
 # in ${WRKDIR} for names and download locations of extra distfiles

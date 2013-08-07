@@ -1,6 +1,6 @@
 $OpenBSD: patch-corba_make_common_shared_Platform_gmk,v 1.1 2013/02/01 15:34:35 kurt Exp $
---- corba/make/common/shared/Platform.gmk.orig	Tue Feb  5 19:09:30 2013
-+++ corba/make/common/shared/Platform.gmk	Tue Feb  5 19:44:40 2013
+--- corba/make/common/shared/Platform.gmk.orig	Wed Aug  7 21:20:21 2013
++++ corba/make/common/shared/Platform.gmk	Wed Aug  7 21:23:09 2013
 @@ -286,9 +286,16 @@ ifeq ($(SYSTEM_UNAME), OpenBSD)
    PLATFORM = bsd
    OS_NAME = openbsd
@@ -11,7 +11,7 @@ $OpenBSD: patch-corba_make_common_shared_Platform_gmk,v 1.1 2013/02/01 15:34:35 
  
 +ifeq ($(SYSTEM_UNAME), Bitrig)
 +  PLATFORM = bsd
-+  OS_NAME = openbsd
++  OS_NAME = bitrig
 +  OS_VENDOR = OpenBSD
 +  REQUIRED_OS_VERSION = 0.1
 +endif
