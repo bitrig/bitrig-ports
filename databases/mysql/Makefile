@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.218 2013/08/07 15:37:08 naddy Exp $
+# $OpenBSD: Makefile,v 1.219 2013/08/07 23:38:55 brad Exp $
 
 SHARED_ONLY=	Yes
 
@@ -6,7 +6,7 @@ COMMENT-main=	multithreaded SQL database (client)
 COMMENT-server=	multithreaded SQL database (server)
 COMMENT-tests=	multithreaded SQL database (regression test suite/benchmark)
 
-VERSION=	5.1.70
+VERSION=	5.1.71
 DISTNAME=	mysql-${VERSION}
 PKGNAME-main=	mysql-client-${VERSION}
 PKGNAME-server=	mysql-server-${VERSION}
@@ -47,9 +47,11 @@ CONFIGURE_STYLE= autoconf
 AUTOCONF_VERSION= 2.63
 CONFIGURE_ARGS+= ${CONFIGURE_SHARED}
 CONFIGURE_ARGS+= --with-big-tables \
+		 --with-client-ldflags=-lsupc++ \
 		 --with-comment='OpenBSD port: ${FULLPKGNAME-server}' \
 		 --with-libwrap \
 		 --with-low-memory \
+		 --with-mysqld-ldflags=-lsupc++ \
 		 --with-mysqld-user="_mysql" \
 		 --with-plugins=max-no-ndb \
 		 --with-ssl=/usr \
