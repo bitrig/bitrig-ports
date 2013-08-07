@@ -1,0 +1,11 @@
+$OpenBSD$
+--- libvisio/ExternalProject_libvisio.mk.orig.port	Wed Aug  7 11:26:00 2013
++++ libvisio/ExternalProject_libvisio.mk	Wed Aug  7 11:26:28 2013
+@@ -66,6 +66,7 @@ $(call gb_ExternalProject_get_state_target,libvisio,bu
+ 	&& export ICU_LIBS=" " \
+ 	$(if $(filter NO,$(SYSTEM_ICU)),&& export ICU_CFLAGS="-I$(OUTDIR)/inc/external") \
+ 	$(if $(filter YES,$(SYSTEM_ICU)),&& export ICU_CFLAGS=" ") \
++	$(if $(filter OPENBSD,$(OS)),CPPFLAGS=-I/usr/local/include) \
+ 	&& ./configure \
+ 		--with-pic \
+ 		--enable-static \

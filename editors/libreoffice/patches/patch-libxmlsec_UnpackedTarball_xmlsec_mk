@@ -1,0 +1,11 @@
+$OpenBSD$
+--- libxmlsec/UnpackedTarball_xmlsec.mk.orig.port	Wed Aug  7 11:31:12 2013
++++ libxmlsec/UnpackedTarball_xmlsec.mk	Wed Aug  7 11:31:36 2013
+@@ -25,6 +25,7 @@ $(eval $(call gb_UnpackedTarball_add_patches,xmlsec,\
+ 	libxmlsec/xmlsec1-android.patch \
+ 	libxmlsec/xmlsec1-1.2.14-ansi.patch \
+ 	libxmlsec/xmlsec1-customkeymanage.patch \
++	libxmlsec/bitrig.patch \
+ ))
+ 
+ $(eval $(call gb_UnpackedTarball_add_file,xmlsec,include/xmlsec/mscrypto/akmngr.h,libxmlsec/include/akmngr_mscrypto.h))

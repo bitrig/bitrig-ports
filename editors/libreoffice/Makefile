@@ -159,8 +159,8 @@ MODPY_VERSION=	3.3
 LIB_DEPENDS-main=x11/gtk+2 \
 		${MODPY_LIB_DEPENDS} \
 		databases/postgresql \
-		databases/db/v4 \
 		graphics/lcms2 \
+		${MODGCC4_CPPLIBDEP} \
 		textproc/libxslt \
 		net/curl \
 		net/neon \
@@ -169,10 +169,10 @@ LIB_DEPENDS-main=x11/gtk+2 \
 		textproc/hunspell \
 		print/poppler
 
-WANTLIB-main=	gdk-x11-2.0>=400.14 gtk-x11-2.0>=400.14 \
+WANTLIB-main=	estdc++ gdk-x11-2.0>=400.14 gtk-x11-2.0>=400.14 \
 		xslt>=3 curl>=7 neon>=24 pq>=2 \
 		icuuc>=0 icui18n icule \
-		rasqal rdf>=0 poppler
+		rdf>=0 poppler
 WANTLIB-main+=	ICE SM X11 Xcomposite Xcursor Xdamage \
 		Xext Xfixes Xi Xinerama Xrandr Xrender atk-1.0 c cairo \
 		crypto expat fontconfig freetype gio-2.0 glib-2.0 \
@@ -197,9 +197,10 @@ RUN_DEPENDS-main=	devel/desktop-file-utils \
 MODULES+=		x11/qt3
 RUN_DEPENDS-kde=	editors/libreoffice
 LIB_DEPENDS-kde=	${MODQT_LIB_DEPENDS} \
+			${MODGCC4_CPPLIBDEP} \
 			x11/kde/libs3
 WANTLIB-kde=		${MODQT_WANTLIB} \
-			X11 c m pthread \
+			X11 c estdc++ m pthread \
 			lib/kde3/kdecore \
 			lib/kde3/kdeui lib/kde3/kio
 
@@ -208,11 +209,12 @@ MODULES+=		java
 MODJAVA_VER=		1.6
 MODJAVA_JRERUN=		Yes
 .endif
+LIB_DEPENDS-java=	${MODGCC4_CPPLIBDEP}
 RUN_DEPENDS-java=	${MODJAVA_RUN_DEPENDS} \
 			databases/db/v4,-java \
 			editors/libreoffice \
 			java/javaPathHelper
-WANTLIB-java=		c m pthread
+WANTLIB-java=		c estdc++ m pthread
 
 USE_GMAKE=	Yes
 NO_TEST=	Yes
@@ -227,9 +229,7 @@ AUTOMAKE_VERSION=	1.12
 MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC} \
 				${WRKSRC}/dmake
 
-
-CONFIGURE_ENV=	CC=gcc CXX=g++ \
-		CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
 		QTINC="${MODQT_INCDIR}" QTDIR="${MODQT_LIBDIR}" \
 		KDEDIR="${LOCALBASE}" \

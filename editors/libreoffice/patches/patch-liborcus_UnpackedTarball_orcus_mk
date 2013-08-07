@@ -1,0 +1,11 @@
+$OpenBSD$
+--- liborcus/UnpackedTarball_orcus.mk.orig.port	Wed Aug  7 11:13:27 2013
++++ liborcus/UnpackedTarball_orcus.mk	Wed Aug  7 11:19:49 2013
+@@ -29,6 +29,7 @@ $(eval $(call gb_UnpackedTarball_fix_end_of_line,orcus
+ 
+ $(eval $(call gb_UnpackedTarball_add_patches,orcus,\
+ 	$(foreach patch,$(orcus_patches),liborcus/$(patch)) \
++	liborcus/bitrig.patch \
+ ))
+ 
+ # vim: set noet sw=4 ts=4:

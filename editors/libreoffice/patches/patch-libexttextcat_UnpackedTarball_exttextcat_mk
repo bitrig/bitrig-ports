@@ -1,0 +1,11 @@
+$OpenBSD$
+--- libexttextcat/UnpackedTarball_exttextcat.mk.orig.port	Wed Aug  7 10:56:28 2013
++++ libexttextcat/UnpackedTarball_exttextcat.mk	Wed Aug  7 10:56:52 2013
+@@ -13,6 +13,7 @@ $(eval $(call gb_UnpackedTarball_set_tarball,exttextca
+ 
+ $(eval $(call gb_UnpackedTarball_add_patches,exttextcat,\
+ 	libexttextcat/android.patch \
++	libexttextcat/bitrig.patch \
+ ))
+ 
+ # vim: set noet sw=4 ts=4:

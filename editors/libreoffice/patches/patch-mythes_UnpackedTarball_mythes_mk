@@ -1,0 +1,11 @@
+$OpenBSD$
+--- mythes/UnpackedTarball_mythes.mk.orig.port	Wed Aug  7 11:35:51 2013
++++ mythes/UnpackedTarball_mythes.mk	Wed Aug  7 11:36:24 2013
+@@ -15,6 +15,7 @@ $(eval $(call gb_UnpackedTarball_add_patches,mythes,\
+ 	mythes/mythes-1.2.0-vanilla-th-gen-idx.patch \
+ 	mythes/mythes-1.2.0-android.patch \
+ 	mythes/mythes-ssizet.patch \
++	mythes/bitrig.patch \
+ ))
+ 
+ # vim: set noet sw=4 ts=4:

@@ -1,0 +1,11 @@
+$OpenBSD$
+--- hyphen/UnpackedTarball_hyphen.mk.orig.port	Wed Aug  7 10:32:28 2013
++++ hyphen/UnpackedTarball_hyphen.mk	Wed Aug  7 10:32:47 2013
+@@ -17,6 +17,7 @@ $(eval $(call gb_UnpackedTarball_add_patches,hyphen,\
+ 	hyphen/hyphen-android.patch \
+ 	hyphen/hyphen-rhmin.patch \
+ 	hyphen/hyphen-build.patch \
++	hyphen/bitrig.patch \
+ ))
+ 
+ # vim: set noet sw=4 ts=4:

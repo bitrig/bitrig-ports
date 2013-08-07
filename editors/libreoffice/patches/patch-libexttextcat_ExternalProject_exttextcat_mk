@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libexttextcat/ExternalProject_exttextcat.mk.orig.port	Wed Aug  7 10:59:14 2013
++++ libexttextcat/ExternalProject_exttextcat.mk	Wed Aug  7 11:03:34 2013
+@@ -22,6 +22,7 @@ $(call gb_ExternalProject_get_state_target,exttextcat,
+ 	CFLAGS="$(if $(filter TRUE,$(HAVE_GCC_VISIBILITY_FEATURE)),-fvisibility=hidden) \
+ 	$(if $(filter AIX,$(OS)),-D_LINUX_SOURCE_COMPAT)" \
+ 	&& $(MAKE) \
+-	&& touch $@
++	&& touch $@ \
++	$(if $(filter OPENBSD,$(OS)),CPPFLAGS=-I/usr/local/include) \
+ 
+ # vim: set noet sw=4 ts=4:
