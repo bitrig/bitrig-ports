@@ -1,12 +1,11 @@
 $OpenBSD$
---- libexttextcat/ExternalProject_exttextcat.mk.orig.port	Wed Aug  7 10:59:14 2013
-+++ libexttextcat/ExternalProject_exttextcat.mk	Wed Aug  7 11:03:34 2013
-@@ -22,6 +22,7 @@ $(call gb_ExternalProject_get_state_target,exttextcat,
- 	CFLAGS="$(if $(filter TRUE,$(HAVE_GCC_VISIBILITY_FEATURE)),-fvisibility=hidden) \
- 	$(if $(filter AIX,$(OS)),-D_LINUX_SOURCE_COMPAT)" \
- 	&& $(MAKE) \
--	&& touch $@
-+	&& touch $@ \
-+	$(if $(filter OPENBSD,$(OS)),CPPFLAGS=-I/usr/local/include) \
+--- libexttextcat/ExternalProject_exttextcat.mk.orig.port	Tue Jun 11 11:33:38 2013
++++ libexttextcat/ExternalProject_exttextcat.mk	Thu Aug  8 02:39:38 2013
+@@ -16,6 +16,7 @@ $(eval $(call gb_ExternalProject_register_targets,extt
+ ))
  
- # vim: set noet sw=4 ts=4:
+ $(call gb_ExternalProject_get_state_target,exttextcat,build):
++	$(if $(filter OPENBSD,$(OS)),CPPFLAGS=-I/usr/local/include) \
+ 	cd $(EXTERNAL_WORKDIR) \
+ 	&& ./configure --disable-shared --with-pic \
+ 	$(if $(filter YES,$(CROSS_COMPILING)),--build=$(BUILD_PLATFORM) --host=$(HOST_PLATFORM)) \
