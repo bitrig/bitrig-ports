@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure_ac,v 1.2 2013/06/19 09:11:24 sthen Exp $
 --- configure.ac.orig.port	Tue Jun 11 11:33:38 2013
-+++ configure.ac	Wed Aug  7 07:37:22 2013
++++ configure.ac	Wed Aug  7 23:10:03 2013
 @@ -442,7 +442,7 @@ aix*)
      _os=AIX
      ;;
@@ -19,16 +19,30 @@ $OpenBSD: patch-configure_ac,v 1.2 2013/06/19 09:11:24 sthen Exp $
      COM=GCC
      GUI=UNX
      GUIBASE=unx
-@@ -6429,7 +6429,7 @@ if test "$SOLAR_JAVA" != ""; then
+@@ -6445,6 +6445,22 @@ if test "$SOLAR_JAVA" != ""; then
          SOLARINC="$SOLARINC -I$JAVA_HOME/include/native_threads/include"
-        ;;
+         ;;
  
--    openbsd*)
-+    openbsd*|bitrig*)
-         case "$host_cpu" in
-         i*86)
-             JAVA_ARCH="i386"
-@@ -7685,7 +7685,7 @@ if test "x$enable_postgresql_sdbc" != "xno"; then
++    bitrig*)
++        case "$host_cpu" in
++        i*86)
++            JAVA_ARCH="i386"
++            JAVA_TOOLKIT="client"
++            ;;
++        x86_64)
++            JAVA_ARCH="amd64"
++            JAVA_TOOLKIT="server"
++            ;;
++        esac
++        SOLARINC="$SOLARINC -I$JAVA_HOME/include"
++        SOLARINC="$SOLARINC -I$JAVA_HOME/include/bitrig"
++        SOLARINC="$SOLARINC -I$JAVA_HOME/include/native_threads/include"
++        ;;
++
+     solaris*)
+ 
+         JAVA_TOOLKIT="xawt"
+@@ -7685,7 +7701,7 @@ if test "x$enable_postgresql_sdbc" != "xno"; then
          if test "$with_gssapi" != "no"; then
              WITH_GSSAPI=YES
              save_LIBS=$LIBS
@@ -37,7 +51,7 @@ $OpenBSD: patch-configure_ac,v 1.2 2013/06/19 09:11:24 sthen Exp $
                  [AC_MSG_ERROR([could not find function 'gss_init_sec_context' required for GSSAPI])])
              LIBS=$save_LIBS
          fi
-@@ -7871,7 +7871,7 @@ if test "$with_system_boost" = "yes"; then
+@@ -7871,7 +7887,7 @@ if test "$with_system_boost" = "yes"; then
  ]], [[]])],[ac_cv_cxx_boost_no_exceptions_broken=no],[ac_cv_cxx_boost_no_exceptions_broken=yes])
  
      if test "$ac_cv_cxx_boost_no_exceptions_broken" = "yes"; then
@@ -46,7 +60,7 @@ $OpenBSD: patch-configure_ac,v 1.2 2013/06/19 09:11:24 sthen Exp $
      else
          AC_MSG_RESULT([yes])
      fi
-@@ -9086,7 +9086,7 @@ elif $GNUCP --version 2>/dev/null | grep "GNU fileutil
+@@ -9086,7 +9102,7 @@ elif $GNUCP --version 2>/dev/null | grep "GNU fileutil
      AC_MSG_RESULT([yes])
  else
      case "$build_os" in
@@ -55,7 +69,7 @@ $OpenBSD: patch-configure_ac,v 1.2 2013/06/19 09:11:24 sthen Exp $
          x_GNUCP=[\#]
          GNUCP=''
          AC_MSG_RESULT([no gnucp found - using the system's cp command])
-@@ -10195,11 +10195,11 @@ if test "$test_kde" = "yes" -a "$ENABLE_KDE" = "TRUE";
+@@ -10195,11 +10211,11 @@ if test "$test_kde" = "yes" -a "$ENABLE_KDE" = "TRUE";
          kde_libdirs="/usr/lib64/kde/lib64 /usr/local/kde/lib64 /usr/kde/lib64 /usr/lib64/kde /usr/lib64/kde3 /usr/X11R6/lib64 /usr/local/lib64 /opt/kde3/lib64 /opt/kde/lib64 /usr/X11R6/kde/lib64 /usr/lib/kde/lib /usr/local/kde/lib /usr/kde/lib /usr/lib/kde /usr/lib/kde3 /usr/lib /usr/X11R6/lib /usr/local/lib /opt/kde3/lib /opt/kde/lib /usr/X11R6/kde/lib /usr/lib64 $x_libraries"
      fi
      if test -n "$KDEDIR"; then
@@ -70,7 +84,7 @@ $OpenBSD: patch-configure_ac,v 1.2 2013/06/19 09:11:24 sthen Exp $
          fi
      fi
  
-@@ -12192,7 +12192,7 @@ else
+@@ -12192,7 +12208,7 @@ else
  
      case "$host_os" in
  
