@@ -1,64 +1,16 @@
-$OpenBSD: patch-configure_in,v 1.2 2013/01/21 20:02:09 bcallah Exp $
---- configure.in.orig	Thu Mar 31 20:08:36 2011
-+++ configure.in	Thu Jun  6 19:23:44 2013
-@@ -1211,7 +1211,7 @@ WIN_TOP_SRC=
- MOZ_USER_DIR=".mozilla"
- 
- MOZ_JS_LIBS='-L$(libdir) -lmozjs'
--MOZ_FIX_LINK_PATHS='-Wl,-rpath-link,$(LIBXUL_DIST)/bin -Wl,-rpath-link,$(prefix)/lib'
-+MOZ_FIX_LINK_PATHS='-Wl,-rpath-link,$(LIBXUL_DIST)/bin -Wl,-rpath-link,$(PREFIX)/lib -L$(LIBXUL_DIST)/bin'
- 
- MOZ_COMPONENT_NSPR_LIBS='-L$(LIBXUL_DIST)/bin $(NSPR_LIBS)'
- 
-@@ -1534,7 +1534,7 @@ arm*)
-     CPU_ARCH=arm
+$OpenBSD$
+--- configure.in.orig	Mon Mar 25 21:34:20 2013
++++ configure.in	Sat Aug 10 22:13:28 2013
+@@ -1958,7 +1958,7 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
- 
--mips|mipsel)
-+mips*)
-     CPU_ARCH="mips"
-     ;;
- esac
-@@ -2515,7 +2515,7 @@ ia64*-hpux*)
-     alpha-*)
-     	AC_DEFINE(_ALPHA_)
- 	;;
--    mips-*)
-+    mips*-*)
-     	AC_DEFINE(_MIPS_)
- 	;;
-     x86_64-*)
-@@ -2581,8 +2581,8 @@ ia64*-hpux*)
- 	esac
- 	;;
  
 -*-openbsd*)
--    DLL_SUFFIX=".so.1.0"
 +*-openbsd*|*-bitrig*)
-+    DLL_SUFFIX=".so.${SO_VERSION}"
-     DSO_CFLAGS=''
-     DSO_PIC_CFLAGS='-fPIC'
-     DSO_LDOPTS='-shared -fPIC'
-@@ -2956,7 +2956,7 @@ arm*-*)
-     AC_DEFINE(JS_CPU_ARM)
-     AC_DEFINE(JS_NUNBOX32)
-     ;;
--sparc*-*)
-+sparc-*)
-     ENABLE_TRACEJIT=1
-     NANOJIT_ARCH=Sparc
-     AC_DEFINE(JS_CPU_SPARC)
-@@ -3041,6 +3041,9 @@ case "$target" in
- *-freebsd*|*-kfreebsd*)
-     AC_DEFINE(AVMPLUS_UNIX)
-     ;;
-+*-openbsd*|*-bitrig*)
-+    AC_DEFINE(AVMPLUS_UNIX)
-+    ;;
- *-gnu*)
-     AC_DEFINE(AVMPLUS_UNIX)
-     ;;
-@@ -3660,7 +3663,7 @@ then
+     if test "$SO_VERSION"; then
+         DLL_SUFFIX=".so.$SO_VERSION"
+     else
+@@ -2762,7 +2762,7 @@ then
  			fi
  			;;
  
@@ -67,7 +19,7 @@ $OpenBSD: patch-configure_in,v 1.2 2013/01/21 20:02:09 bcallah Exp $
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -5616,8 +5619,9 @@ esac
+@@ -4203,8 +4203,9 @@ esac
  if test -z "$SKIP_LIBRARY_CHECKS" -a -z "$NO_EDITLINE"; then
    if test -n "$JS_WANT_READLINE"; then
      AC_CHECK_LIB(readline, readline,
