@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.40 2013/03/14 12:57:36 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.41 2013/08/13 12:46:15 dcoppa Exp $
 
 COMMENT-main =	another eDonkey P2P file sharing client
 COMMENT-web =	webserver interface to amuled
