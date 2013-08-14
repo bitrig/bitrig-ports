@@ -1,0 +1,12 @@
+$OpenBSD$
+--- desktop/scripts/unopkg.sh.orig.port	Wed Aug 14 12:03:18 2013
++++ desktop/scripts/unopkg.sh	Wed Aug 14 12:02:55 2013
+@@ -35,7 +35,7 @@ cd "$sd_cwd"
+ 
+ # this is a temporary hack until we can live with the default search paths
+ case "`uname -s`" in
+-NetBSD|OpenBSD|FreeBSD|DragonFly)
++NetBSD|OpenBSD|Bitrig|FreeBSD|DragonFly)
+     sd_prog1="$sd_prog"
+     sd_prog2="$sd_prog/../ure-link/lib"
+     LD_LIBRARY_PATH=$sd_prog1:$sd_prog2${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}

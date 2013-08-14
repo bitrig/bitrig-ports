@@ -17,6 +17,7 @@ PKGNAME-java=	libreoffice-java-${VERSION}
 CATEGORIES=	editors productivity
 DPB_PROPERTIES=	parallel
 
+REVISION=	1
 EPOCH=		0
 
 MAINTAINER=	Robert Nagy <robert@openbsd.org>
@@ -338,6 +339,13 @@ pre-patch:
 	@ln -fs /usr/local/bin/gsed ${WRKDIR}/bin/sed
 	@ln -fs /usr/local/bin/gtouch ${WRKDIR}/bin/touch
 	touch ${WRKSRC}/src.downloaded ${WRKSRC}/autogen.lastrun
+
+post-patch:
+	${SUBST_CMD} ${WRKDIST}/libcdr/ExternalProject_libcdr.mk
+	${SUBST_CMD} ${WRKDIST}/libexttextcat/ExternalProject_exttextcat.mk
+	${SUBST_CMD} ${WRKDIST}/libmspub/ExternalProject_libmspub.mk
+	${SUBST_CMD} ${WRKDIST}/liborcus/ExternalProject_liborcus.mk
+	${SUBST_CMD} ${WRKDIST}/libvisio/ExternalProject_libvisio.mk
 
 post-install:
 	${INSTALL_SCRIPT} ${FILESDIR}/soffice.sh ${PREFIX}/bin/soffice

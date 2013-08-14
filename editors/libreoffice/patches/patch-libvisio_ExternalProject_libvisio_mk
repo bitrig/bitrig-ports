@@ -5,7 +5,7 @@ $OpenBSD$
  	&& export ICU_LIBS=" " \
  	$(if $(filter NO,$(SYSTEM_ICU)),&& export ICU_CFLAGS="-I$(OUTDIR)/inc/external") \
  	$(if $(filter YES,$(SYSTEM_ICU)),&& export ICU_CFLAGS=" ") \
-+	$(if $(filter OPENBSD,$(OS)),CPPFLAGS=-I/usr/local/include) \
++	$(if $(filter OPENBSD,$(OS)),CPPFLAGS=-I${LOCALBASE}/include) \
  	&& ./configure \
  		--with-pic \
  		--enable-static \

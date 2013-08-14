@@ -5,7 +5,7 @@ $OpenBSD$
  ))
  
  $(call gb_ExternalProject_get_state_target,exttextcat,build):
-+	$(if $(filter OPENBSD,$(OS)),CPPFLAGS=-I/usr/local/include) \
++	$(if $(filter OPENBSD,$(OS)),CPPFLAGS=-I${LOCALBASE}/include) \
  	cd $(EXTERNAL_WORKDIR) \
  	&& ./configure --disable-shared --with-pic \
  	$(if $(filter YES,$(CROSS_COMPILING)),--build=$(BUILD_PLATFORM) --host=$(HOST_PLATFORM)) \
