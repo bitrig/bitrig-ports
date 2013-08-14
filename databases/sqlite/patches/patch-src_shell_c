@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/shell.c.orig	Wed Aug 14 17:08:40 2013
++++ src/shell.c	Wed Aug 14 17:09:41 2013
+@@ -692,7 +692,7 @@ static int do_meta_command(char *zLine, struct callbac
+   }else
+ 
+   if( c=='h' && strncmp(azArg[0], "help", n)==0 ){
+-    fprintf(stderr,zHelp);
++    fprintf(stderr,"%s", zHelp);
+   }else
+ 
+   if( c=='i' && strncmp(azArg[0], "indices", n)==0 && nArg>1 ){

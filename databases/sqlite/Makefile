@@ -33,6 +33,7 @@ MODULES=	lang/tcl
 BUILD_DEPENDS+=	${MODTCL_BUILD_DEPENDS}
 CONFIGURE_ENV+=	config_TARGET_TCL_LIBS="-L${LOCALBASE}/lib -ltcl${MODTCL_VERSION:S/.//} -lm"
 CONFIGURE_ENV+=	config_TARGET_TCL_INC="-I${MODTCL_INCDIR}"
+CONFIGURE_ENV+=	config_TARGET_READLINE_LIBS="-L${LOCALBASE}/lib -lreadline -lcurses"
 .endif
 
 .include <bsd.port.mk>
