@@ -1,0 +1,12 @@
+$OpenBSD$
+--- server/gam_eq.c.orig	Wed Aug 14 06:30:47 2013
++++ server/gam_eq.c	Wed Aug 14 06:31:44 2013
+@@ -124,7 +124,7 @@ gam_eq_flush (gam_eq_t *eq, GamConnDataPtr conn)
+ {
+ 	gboolean done_work = FALSE;
+ 	if (!eq)
+-		return;
++		return 0;
+ 
+ #ifdef GAM_EQ_VERBOSE
+ 	GAM_DEBUG(DEBUG_INFO, "gam_eq: Flushing event queue for %s\n", gam_connection_get_pidname (conn));
