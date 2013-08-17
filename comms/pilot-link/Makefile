@@ -26,7 +26,7 @@ WANTLIB=		c m png>=4 popt readline termcap z pthread
 MODULES=		devel/gettext
 LIB_DEPENDS=		graphics/png \
 			devel/popt \
-			deve/readline
+			devel/readline
 
 USE_GMAKE=		Yes
 USE_GROFF =		Yes
