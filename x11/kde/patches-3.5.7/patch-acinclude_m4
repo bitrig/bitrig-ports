@@ -1,6 +1,6 @@
 $OpenBSD: patch-acinclude_m4,v 1.4 2013/06/03 20:07:39 zhuk Exp $
---- acinclude.m4.orig	Wed Aug 20 18:07:05 2008
-+++ acinclude.m4	Mon Jul 22 15:38:10 2013
+--- acinclude.m4.orig	Wed Aug 20 17:24:07 2008
++++ acinclude.m4	Sat Aug 17 19:18:08 2013
 @@ -1809,7 +1809,7 @@ AC_CACHE_VAL(ac_cv_have_kde,
  
  if test "$kde_qtver" = 1; then
@@ -101,12 +101,3 @@ $OpenBSD: patch-acinclude_m4,v 1.4 2013/06/03 20:07:39 zhuk Exp $
        _LT_AC_TAGVAR(hardcode_direct, $1)=yes
        _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
        if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-@@ -12042,7 +12047,7 @@ AC_CACHE_CHECK([whether deplibs are loaded by dlopen],
- 	linux*)
- 	  libltdl_cv_sys_dlopen_deplibs=yes
- 	  ;;
--	netbsd*|openbsd*|freebsd*|dragonfly*)
-+	netbsd*|openbsd*|bitrig*|freebsd*|dragonfly*)
- 	  libltdl_cv_sys_dlopen_deplibs=yes
- 	  ;;
- 	solaris*)
