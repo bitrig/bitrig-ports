@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.47 2013/04/15 03:01:06 kurt Exp $
+# $OpenBSD: Makefile,v 1.48 2013/08/22 16:21:17 sthen Exp $
 
 CC = gcc
 CXX = g++
@@ -60,6 +60,7 @@ MASTER_SITES4=  https://java.net/downloads/jax-ws/OpenJDK6/ \
 		http://distfiles.nl/
 MASTER_SITES5=	${MASTER_SITE_APACHE:=ant/binaries/} \
 		http://archive.apache.org/dist/ant/binaries/
+MASTER_SITES6=	http://spacehopper.org/mirrors/
 
 MAINTAINER=	Kurt Miller <kurt@openbsd.org>
 
@@ -78,8 +79,8 @@ MODULES=	converters/libiconv
 WANTLIB=	X11 Xext Xi Xtst c freetype m pthread sndio stdc++ z
 
 APACHE_ANT=	apache-ant-1.8.4-bin.tar.gz
-SUPDISTFILES+=	openjdk6-bootjdk-amd64-20130414.tar.gz:1 \
-		openjdk6-bootjdk-i386-20130414.tar.gz:1 \
+SUPDISTFILES+=	openjdk6-bootjdk-amd64-20130822.tar.gz:6 \
+		openjdk6-bootjdk-i386-20130822.tar.gz:6 \
 		${APACHE_ANT}:5
 
 .if ${FLAVOR:Mnative_bootstrap}
@@ -91,10 +92,10 @@ BUILD_DEPENDS+=	jdk->=1.6,<1.7:devel/jdk/1.6 \
 		devel/apache-ant>=1.8.2
 ALT_BOOTDIR=	${LOCALBASE}/${JDKHOME}
 .else
-BOOT_JDK=	openjdk6-bootjdk-${ARCH}-20130414.tar.gz
+BOOT_JDK=	openjdk6-bootjdk-${ARCH}-20130822.tar.gz
 .include <bsd.port.arch.mk>
 .if (${ARCH}==amd64) || (${ARCH}==i386)
-DISTFILES+=	${BOOT_JDK}:1
+DISTFILES+=	${BOOT_JDK}:6
 .endif
 DISTFILES+=	${APACHE_ANT}:5
 EXTRACT_ONLY+=	${BOOT_JDK} ${APACHE_ANT}
