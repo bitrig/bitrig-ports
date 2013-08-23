@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.208 2013/08/07 16:25:34 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.209 2013/08/23 07:55:30 ajacoutot Exp $
 
 COMMENT=		general-purpose utility library
 
@@ -46,6 +46,11 @@ CONFIGURE_ARGS=		--enable-static \
 			--with-pcre=system \
 			--disable-fam --disable-maintainer-mode \
 			CFLAGS=-Wno-format-nonliteral
+
+.include <bsd.port.arch.mk>
+.if ${PROPERTIES:Mgcc3}
+PATCH_LIST=	patch-* gcc3-*
+.endif
 
 pre-configure:
 	perl -pi -e "s,/usr/local,${LOCALBASE},g;" \
