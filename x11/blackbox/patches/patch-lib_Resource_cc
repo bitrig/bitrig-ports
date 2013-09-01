@@ -1,6 +1,9 @@
-$OpenBSD$
---- lib/Resource.cc.orig	Sun Jun 24 14:04:52 2012
-+++ lib/Resource.cc	Sun Jun 24 14:05:02 2012
+$OpenBSD: patch-lib_Resource_cc,v 1.1 2013/09/01 12:49:10 sthen Exp $
+
+64bit time_t fix.
+
+--- lib/Resource.cc.orig	Wed Apr  6 23:16:50 2005
++++ lib/Resource.cc	Tue Sep  3 21:07:32 2013
 @@ -29,6 +29,7 @@
  #include <X11/Xresource.h>
  
@@ -9,3 +12,17 @@ $OpenBSD$
  
  
  bt::Resource::Resource(void)
+@@ -203,6 +204,13 @@ void bt::Resource::write(const char* resource, long va
+ void bt::Resource::write(const char* resource, unsigned long value) {
+   char tmp[64];
+   sprintf(tmp, "%lu", value);
++  write(resource, tmp);
++}
++
++
++void bt::Resource::write(const char* resource, unsigned long long value) {
++  char tmp[64];
++  sprintf(tmp, "%llu", value);
+   write(resource, tmp);
+ }
+ 
