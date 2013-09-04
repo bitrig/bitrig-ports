@@ -1,6 +1,6 @@
 $OpenBSD$
---- configure.in.orig	Mon Mar 25 21:34:20 2013
-+++ configure.in	Sat Aug 10 22:13:28 2013
+--- configure.in.orig	Mon Mar 25 15:34:20 2013
++++ configure.in	Wed Sep  4 09:30:24 2013
 @@ -1958,7 +1958,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
      ;;
@@ -25,9 +25,9 @@ $OpenBSD$
      AC_CHECK_LIB(readline, readline,
 -                 EDITLINE_LIBS="-lreadline",
 -                 AC_MSG_ERROR([No system readline library found.]))
-+                 EDITLINE_LIBS="-L${LOCALBASE}/lib -lreadline",
++                 EDITLINE_LIBS="-L/usr/local/lib -lreadline",
 +                 AC_MSG_ERROR([No system readline library found.]),
-+		 -L${LOCALBASE}/lib)
++		 -L/usr/local/lib)
    else
      dnl By default, we use editline
      JS_NATIVE_EDITLINE=1
