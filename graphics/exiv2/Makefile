@@ -20,6 +20,7 @@ USE_GMAKE=	Yes
 USE_GROFF =	Yes
 
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/config
 
 MODULES=	devel/gettext
 
