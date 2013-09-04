@@ -23,6 +23,8 @@ USE_GROFF =		Yes
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	${CONFIGURE_SHARED}
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/config
+
 # test_connect_delay.cpp:260:2: error: no newline at end of file
 post-extract:
 	echo "" >> ${WRKSRC}/tests/test_connect_delay.cpp
