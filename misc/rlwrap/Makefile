@@ -22,6 +22,7 @@ MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST} \
 
 USE_GROFF =		Yes
 TEST_IS_INTERACTIVE=	Yes
+CONFIGURE_ARGS =	CPPFLAGS="-I${LOCALBASE}/include" LDFLAGS="-L${LOCALBASE}/lib"
 
 do-test:
 	cd ${WRKSRC} && src/rlwrap perl test/testclient
