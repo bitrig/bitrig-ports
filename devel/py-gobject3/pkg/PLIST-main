@@ -83,7 +83,7 @@ ${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/gi/repository/${MODPY_P
 lib/python${MODPY_VERSION}/site-packages/gi/repository/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/gi/repository/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyo
 lib/python${MODPY_VERSION}/site-packages/gi/types.py
-lib/python${MODPY_VERSION}/site-packages/pygobject-${MODPY_EGG_VERSION}-py${MODPY_VERSION}-openbsd-${OSREV}-${ARCH}.egg-info
+lib/python${MODPY_VERSION}/site-packages/pygobject-${MODPY_EGG_VERSION}-py${MODPY_VERSION}-bitrig-${OSREV}-${ARCH}.egg-info
 lib/python${MODPY_VERSION}/site-packages/pygtkcompat/
 lib/python${MODPY_VERSION}/site-packages/pygtkcompat/__init__.py
 ${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/pygtkcompat/${MODPY_PYCACHE}/
