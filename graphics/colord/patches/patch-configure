@@ -1,10 +1,10 @@
-$OpenBSD: patch-configure,v 1.14 2013/08/06 19:10:05 ajacoutot Exp $
+$OpenBSD: patch-configure,v 1.15 2013/09/13 14:23:02 ajacoutot Exp $
 
 /var/lib -> /var/db
 
---- configure.orig	Mon May 13 10:39:34 2013
-+++ configure	Sat Jun  1 20:00:39 2013
-@@ -4954,7 +4954,7 @@ else
+--- configure.orig	Mon Aug 19 11:25:25 2013
++++ configure	Wed Sep 18 10:41:18 2013
+@@ -4994,7 +4994,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -13,7 +13,7 @@ $OpenBSD: patch-configure,v 1.14 2013/08/06 19:10:05 ajacoutot Exp $
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5469,7 +5469,7 @@ newos6*)
+@@ -5509,7 +5509,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -22,7 +22,7 @@ $OpenBSD: patch-configure,v 1.14 2013/08/06 19:10:05 ajacoutot Exp $
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -6086,7 +6086,7 @@ old_postuninstall_cmds=
+@@ -6126,7 +6126,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -31,7 +31,7 @@ $OpenBSD: patch-configure,v 1.14 2013/08/06 19:10:05 ajacoutot Exp $
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -8849,7 +8849,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8889,7 +8889,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -40,7 +40,7 @@ $OpenBSD: patch-configure,v 1.14 2013/08/06 19:10:05 ajacoutot Exp $
      with_gnu_ld=no
      ;;
    esac
-@@ -9725,7 +9725,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -9765,7 +9765,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -49,7 +49,7 @@ $OpenBSD: patch-configure,v 1.14 2013/08/06 19:10:05 ajacoutot Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10772,7 +10772,7 @@ newsos6)
+@@ -10812,7 +10812,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -58,7 +58,7 @@ $OpenBSD: patch-configure,v 1.14 2013/08/06 19:10:05 ajacoutot Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -18099,7 +18099,7 @@ _ACEOF
+@@ -18123,7 +18123,7 @@ _ACEOF
  fi
  
  # per-machine directory
