@@ -10,11 +10,13 @@ $OpenBSD: patch-js_src_configure_in,v 1.3 2011/03/26 10:58:36 landry Exp $
  
  MOZ_COMPONENT_NSPR_LIBS='-L$(LIBXUL_DIST)/bin $(NSPR_LIBS)'
  MOZ_XPCOM_OBSOLETE_LIBS='-L$(LIBXUL_DIST)/lib -lxpcom_compat'
-@@ -2133,7 +2133,7 @@ case "$target" in
+@@ -2132,8 +2132,8 @@ case "$target" in
+ 	esac
  	;;
  
- *-openbsd*)
+-*-openbsd*)
 -    DLL_SUFFIX=".so.1.0"
++*-openbsd*|*-bitrig*)
 +    DLL_SUFFIX=".so.${SO_VERSION}"
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
@@ -53,7 +55,16 @@ $OpenBSD: patch-js_src_configure_in,v 1.3 2011/03/26 10:58:36 landry Exp $
      AC_DEFINE(AVMPLUS_UNIX)
      ;;
 -freebsd*|kfreebsd*)
-+freebsd*|kfreebsd*|openbsd*)
++freebsd*|kfreebsd*|openbsd*|bitrig*)
      AC_DEFINE(AVMPLUS_UNIX)
      ;;
  *cygwin*|*mingw*|*mks*|*msvc*|*wince)
+@@ -3034,7 +3041,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.
