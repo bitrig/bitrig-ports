@@ -1,12 +1,12 @@
 $OpenBSD$
---- config/config.mk.orig	Sun Nov 25 14:34:23 2012
-+++ config/config.mk	Sun Nov 25 14:53:22 2012
-@@ -95,7 +95,7 @@ endif
+--- config/config.mk.orig	Fri Sep 20 10:57:33 2013
++++ config/config.mk	Fri Sep 20 11:28:55 2013
+@@ -100,7 +100,7 @@ AUTOCONF_TOOLS	= $(MOZILLA_SRCDIR)/build/autoconf
  # but save the version to allow multiple versions of the same base
  # platform to be built in the same tree.
  #
--ifneq (,$(filter FreeBSD HP-UX IRIX Linux NetBSD OpenBSD OSF1 SunOS,$(OS_ARCH)))
-+ifneq (,$(filter FreeBSD HP-UX IRIX Linux NetBSD OpenBSD Bitrig OSF1 SunOS,$(OS_ARCH)))
+-ifneq (,$(filter FreeBSD HP-UX Linux NetBSD OpenBSD SunOS,$(OS_ARCH)))
++ifneq (,$(filter FreeBSD HP-UX Linux NetBSD OpenBSD Bitrig SunOS,$(OS_ARCH)))
  OS_RELEASE	:= $(basename $(OS_RELEASE))
  
  # Allow the user to ignore the OS_VERSION, which is usually irrelevant.

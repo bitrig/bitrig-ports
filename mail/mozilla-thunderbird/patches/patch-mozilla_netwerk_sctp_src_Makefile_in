@@ -1,0 +1,24 @@
+$OpenBSD$
+--- mozilla/netwerk/sctp/src/Makefile.in.orig	Fri Sep 20 10:57:25 2013
++++ mozilla/netwerk/sctp/src/Makefile.in	Fri Sep 20 11:12:21 2013
+@@ -109,6 +109,12 @@ DEFINES += \
+   -U__OpenBSD__ \
+   $(NULL)
+ else
++ifeq ($(OS_TARGET),Bitrig)
++DEFINES += \
++  -D__Userspace_os_OpenBSD=1 \
++  -U__OpenBSD__ \
++  $(NULL)
++else
+ ifeq ($(OS_TARGET),DragonFly)
+ DEFINES += \
+   -D__Userspace_os_DragonFly=1 \
+@@ -116,6 +122,7 @@ DEFINES += \
+   $(NULL)
+ else
+ #error Unsupported platform!
++endif
+ endif
+ endif
+ endif

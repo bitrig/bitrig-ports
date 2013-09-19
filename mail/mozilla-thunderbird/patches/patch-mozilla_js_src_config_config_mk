@@ -1,7 +1,7 @@
 $OpenBSD$
---- mozilla/js/src/config/config.mk.orig	Sun Nov 25 14:34:20 2012
-+++ mozilla/js/src/config/config.mk	Sun Nov 25 14:43:09 2012
-@@ -92,7 +92,7 @@ AUTOCONF_TOOLS	= $(topsrcdir)/build/autoconf
+--- mozilla/js/src/config/config.mk.orig	Fri Sep 20 10:57:32 2013
++++ mozilla/js/src/config/config.mk	Fri Sep 20 11:28:33 2013
+@@ -103,7 +103,7 @@ AUTOCONF_TOOLS	= $(topsrcdir)/build/autoconf
  # but save the version to allow multiple versions of the same base
  # platform to be built in the same tree.
  #

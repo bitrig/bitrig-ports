@@ -1,16 +1,10 @@
-$OpenBSD: patch-mailnews_extensions_enigmail_ipc_src_Makefile_enig,v 1.1 2013/01/11 23:06:36 landry Exp $
-2nd chunk only needed on older gcc
---- mailnews/extensions/enigmail/ipc/src/Makefile.enig.orig	Thu Dec 27 08:22:50 2012
-+++ mailnews/extensions/enigmail/ipc/src/Makefile.enig	Sat Feb  9 08:31:24 2013
-@@ -29,6 +29,16 @@ LDFLAGS += -Wl,-Bsymbolic
+$OpenBSD$
+--- mailnews/extensions/enigmail/ipc/src/Makefile.enig.orig	Fri Sep 20 10:57:21 2013
++++ mailnews/extensions/enigmail/ipc/src/Makefile.enig	Fri Sep 20 11:04:03 2013
+@@ -34,6 +34,11 @@ LDFLAGS += -shared -Wl,-Bsymbolic
  CFLAGS += -fPIC
  endif
  
-+ifeq ($(OS_ARCH),OpenBSD)
-+LDFLAGS += -shared -Wl,-Bsymbolic
-+CFLAGS += -fPIC
-+endif
-+
 +ifeq ($(OS_ARCH),Bitrig)
 +LDFLAGS += -shared -Wl,-Bsymbolic
 +CFLAGS += -fPIC
@@ -19,12 +13,3 @@ $OpenBSD: patch-mailnews_extensions_enigmail_ipc_src_Makefile_enig,v 1.1 2013/01
  ifeq ($(OS_ARCH),HP-UX)
  ifeq ($(GNU_CC)$(GNU_CXX),)
  LDFLAGS += -Wl,-Bsymbolic
-@@ -62,7 +72,7 @@ libs: source
- 	$(CC) $(LDFLAGS) -o $(libname) $(objfiles)
- 
- source: $(source)
--	$(CC) $(CFLAGS) -Wno-return-type-c-linkage -c -o $(objfiles) $^
-+	$(CC) $(CFLAGS) -c -o $(objfiles) $^
- 
- 
- clean:

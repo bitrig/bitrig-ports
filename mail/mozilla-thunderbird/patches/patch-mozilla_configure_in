@@ -1,69 +1,48 @@
 $OpenBSD$
---- mozilla/configure.in.orig	Sun Nov 25 14:34:18 2012
-+++ mozilla/configure.in	Sun Nov 25 14:39:45 2012
-@@ -1398,15 +1398,15 @@ if test "$GNU_CC"; then
-                   LDFLAGS=$_SAVE_LDFLAGS)
- 
-     # Check for -mssse3 on $CC
--    AC_MSG_CHECKING([for -mssse3 option to $CC])
--    HAVE_COMPILER_FLAG_MSSSE3=
-+    AC_MSG_CHECKING([if toolchain supports -mssse3 option])
-+    HAVE_TOOLCHAIN_SUPPORT_MSSSE3=
-     _SAVE_CFLAGS=$CFLAGS
-     CFLAGS="$CFLAGS -mssse3"
--    AC_TRY_COMPILE(,,AC_MSG_RESULT([yes])
--                     [HAVE_COMPILER_FLAG_MSSSE3=1],
-+    AC_TRY_COMPILE([asm ("pmaddubsw %xmm2,%xmm3");],,AC_MSG_RESULT([yes])
-+                     [HAVE_TOOLCHAIN_SUPPORT_MSSSE3=1],
-                      AC_MSG_RESULT([no]))
-     CFLAGS=$_SAVE_CFLAGS
--    AC_SUBST(HAVE_COMPILER_FLAG_MSSSE3)
-+    AC_SUBST(HAVE_TOOLCHAIN_SUPPORT_MSSSE3)
- 
-     # Turn on GNU-specific warnings:
-     # -Wall - turn on a lot of warnings
-@@ -2288,7 +2288,7 @@ ia64*-hpux*)
-     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
+--- mozilla/configure.in.orig	Fri Sep 20 10:40:40 2013
++++ mozilla/configure.in	Fri Sep 20 10:43:04 2013
+@@ -1564,7 +1564,7 @@ MOZ_ARG_ENABLE_BOOL(profiling,
+ # For profiling builds keep the symbol information
+ if test "$MOZ_PROFILING" -a -z "$STRIP_FLAGS"; then
+     case "$OS_TARGET" in
+-    Linux|DragonFly|FreeBSD|NetBSD|OpenBSD)
++    Linux|DragonFly|FreeBSD|NetBSD|OpenBSD|Bitrig)
+         STRIP_FLAGS="--strip-debug"
+         ;;
+     esac
+@@ -2276,7 +2276,7 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@)) -o $@'
      ;;
  
 -*-openbsd*)
-+*-openbsd* | *-bitrig*)
++*-openbsd*|*-bitrig*)
      if test "$SO_VERSION"; then
          DLL_SUFFIX=".so.$SO_VERSION"
      else
-@@ -2924,7 +2924,7 @@ dnl Checks for header files.
+@@ -2914,7 +2914,7 @@ dnl Checks for header files.
  dnl ========================================================
  AC_HEADER_DIRENT
  case "$target_os" in
 -freebsd*|openbsd*)
-+freebsd* | openbsd* | bitrig*)
++freebsd*|openbsd*|bitrig*)
  # for stuff like -lXshm
      CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
      ;;
-@@ -3182,7 +3182,7 @@ then
+@@ -3220,7 +3220,7 @@ then
  			fi
  			;;
  
 -	    *-*-openbsd*|*-*-bsdi*)
-+	    *-*-openbsd* | *-*-bitrig* | *-*-bsdi*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -3611,7 +3611,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
+@@ -3623,7 +3623,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
      *-android*|*-linuxandroid*)
        :
        ;;
 -    *-openbsd*)
-+    *-openbsd* | *-bitrig*)
++    *-openbsd*|*-bitrig*)
        :
        ;;
-     *)
-@@ -5481,7 +5481,7 @@ if test -n "$MOZ_CUBEB"; then
-     *-darwin*)
-         AC_DEFINE(MOZ_CUBEB)
-         ;;
--    *-openbsd*)
-+    *-openbsd* | *-bitrig*)
-         AC_DEFINE(MOZ_CUBEB)
-         ;;
      *)

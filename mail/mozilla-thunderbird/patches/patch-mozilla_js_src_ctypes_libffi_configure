@@ -1,69 +1,6 @@
 $OpenBSD: patch-mozilla_js_src_ctypes_libffi_configure,v 1.4 2012/09/01 14:22:45 landry Exp $
---- mozilla/js/src/ctypes/libffi/configure.orig	Fri Nov 16 21:16:14 2012
-+++ mozilla/js/src/ctypes/libffi/configure	Sun Nov 25 14:33:58 2012
-@@ -5120,7 +5120,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
- 
--  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5545,7 +5545,7 @@ newos6*)
-   lt_cv_deplibs_check_method=pass_all
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-   else
-@@ -5929,7 +5929,7 @@ old_postuninstall_cmds=
- 
- if test -n "$RANLIB"; then
-   case $host_os in
--  openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
-     ;;
-   *)
-@@ -8404,7 +8404,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -9112,7 +9112,7 @@ rm -f core conftest.err conftest.$ac_objext \
-     *nto* | *qnx*)
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct=yes
- 	hardcode_shlibpath_var=no
-@@ -10075,7 +10075,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -11193,7 +11193,7 @@ case "$host" in
- 	TARGET=ARM; TARGETDIR=arm
- 	;;
- 
--  amd64-*-freebsd* | amd64-*-openbsd*)
-+  amd64-*-freebsd* | amd64-*-openbsd* | amd64-*-bitrig*)
- 	TARGET=X86_64; TARGETDIR=x86
-   	;;
- 
+--- mozilla/js/src/ctypes/libffi/configure.orig	Sat Aug 25 02:31:11 2012
++++ mozilla/js/src/ctypes/libffi/configure	Sat Sep  1 02:02:55 2012
 @@ -11213,7 +11213,7 @@ case "$host" in
  	TARGET=FRV; TARGETDIR=frv
  	;;
@@ -73,30 +10,12 @@ $OpenBSD: patch-mozilla_js_src_ctypes_libffi_configure,v 1.4 2012/09/01 14:22:45
  	TARGET=PA_LINUX; TARGETDIR=pa
  	;;
    hppa*64-*-hpux*)
-@@ -11223,7 +11223,7 @@ case "$host" in
- 	TARGET=PA_HPUX; TARGETDIR=pa
- 	;;
- 
--  i?86-*-freebsd* | i?86-*-openbsd*)
-+  i?86-*-freebsd* | i?86-*-openbsd* | i?86-*-bitrig*)
- 	TARGET=X86_FREEBSD; TARGETDIR=x86
- 	;;
-   i?86-win32* | i?86-*-cygwin* | i?86-*-mingw* | i?86-*-os2*)
 @@ -11256,7 +11256,7 @@ case "$host" in
    mips-sgi-irix5.* | mips-sgi-irix6.*)
  	TARGET=MIPS; TARGETDIR=mips
  	;;
 -  mips*-*linux*)
-+  mips*-*-linux* | mips*-*-openbsd*)
++  mips*-*-linux* | mips*-*-openbsd* )
  	# Support 128-bit long double for NewABI.
  	HAVE_LONG_DOUBLE='defined(__mips64)'
  	TARGET=MIPS; TARGETDIR=mips
-@@ -12420,7 +12420,7 @@ _ACEOF
- fi
- 
- case "$target" in
--     *-apple-darwin1* | *-*-freebsd* | *-*-openbsd* | *-pc-solaris*)
-+     *-apple-darwin1* | *-*-freebsd* | *-*-openbsd* | *-*-bitrig* | *-pc-solaris*)
- 
- $as_echo "#define FFI_MMAP_EXEC_WRIT 1" >>confdefs.h
- 

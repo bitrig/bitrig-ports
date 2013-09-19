@@ -1,16 +1,17 @@
 $OpenBSD$
---- mozilla/media/libcubeb/src/Makefile.in.orig	Sun Nov 25 14:34:19 2012
-+++ mozilla/media/libcubeb/src/Makefile.in	Sun Nov 25 14:40:41 2012
-@@ -42,6 +42,12 @@ CSRCS           = \
-                 $(NULL)
+--- mozilla/media/libcubeb/src/Makefile.in.orig	Fri Sep 20 10:57:29 2013
++++ mozilla/media/libcubeb/src/Makefile.in	Fri Sep 20 11:24:25 2013
+@@ -53,6 +53,13 @@ DISABLED_CSRCS           += \
+ DEFINES         += -DUSE_SNDIO
  endif
  
 +ifeq ($(OS_ARCH),Bitrig)
-+CSRCS           = \
++DISABLED_CSRCS           += \
 +                cubeb_sndio.c \
 +                $(NULL)
++DEFINES         += -DUSE_SNDIO
 +endif
 +
- ifdef MOZ_PULSEAUDIO
- CSRCS		= \
- 		cubeb_pulse.c \
+ ifdef MOZ_ALSA
+ DISABLED_CSRCS           += \
+                 cubeb_alsa.c \

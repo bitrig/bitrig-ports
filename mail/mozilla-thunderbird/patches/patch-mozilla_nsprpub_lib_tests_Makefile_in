@@ -1,6 +1,6 @@
 $OpenBSD$
---- mozilla/nsprpub/lib/tests/Makefile.in.orig	Sun Nov 25 14:34:21 2012
-+++ mozilla/nsprpub/lib/tests/Makefile.in	Sun Nov 25 14:47:29 2012
+--- mozilla/nsprpub/lib/tests/Makefile.in.orig	Fri Sep 20 10:57:31 2013
++++ mozilla/nsprpub/lib/tests/Makefile.in	Fri Sep 20 11:25:36 2013
 @@ -85,6 +85,12 @@ ifeq (,$(filter-out OpenBSD,$(OS_ARCH)))
      endif
  endif

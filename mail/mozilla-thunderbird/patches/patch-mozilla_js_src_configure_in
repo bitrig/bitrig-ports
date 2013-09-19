@@ -1,13 +1,13 @@
-$OpenBSD: patch-mozilla_js_src_configure_in,v 1.16 2013/04/06 14:50:04 landry Exp $
---- mozilla/js/src/configure.in.orig	Sun Apr 14 12:26:45 2013
-+++ mozilla/js/src/configure.in	Sun Apr 14 12:30:47 2013
-@@ -1918,8 +1918,13 @@ ia64*-hpux*)
-     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
+$OpenBSD: patch-mozilla_js_src_configure_in,v 1.17 2013/09/19 13:37:52 landry Exp $
+--- mozilla/js/src/configure.in.orig	Thu Sep 12 03:38:44 2013
++++ mozilla/js/src/configure.in	Fri Sep 20 10:46:45 2013
+@@ -1826,8 +1826,13 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@) -o $@'
      ;;
  
 -*-openbsd*)
 -    DLL_SUFFIX=".so.1.0"
-+*-openbsd* | *-bitrig*)
++*-openbsd*|*-bitrig*)
 +    if test "$SO_VERSION"; then
 +        DLL_SUFFIX=".so.$SO_VERSION"
 +    else
@@ -17,12 +17,23 @@ $OpenBSD: patch-mozilla_js_src_configure_in,v 1.16 2013/04/06 14:50:04 landry Ex
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
      DSO_LDOPTS='-shared -fPIC'
-@@ -2717,7 +2722,7 @@ then
+@@ -2122,6 +2127,10 @@ mips*-*)
+     AC_DEFINE(JS_CPU_MIPS)
+     AC_DEFINE(JS_NUNBOX32)
+     ;;
++sparc64-*)
++    AC_DEFINE(AVMPLUS_SPARC)
++    AC_DEFINE(AVMPLUS_64BIT)
++    ;;
+ esac
+ 
+ MOZ_ARG_DISABLE_BOOL(ion,
+@@ -2666,7 +2675,7 @@ then
  			fi
  			;;
  
 -	    *-*-openbsd*|*-*-bsdi*)
-+	    *-*-openbsd*|*-*-bsdi*|*-*-bitrig*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.

@@ -1,16 +1,7 @@
-$OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.18 2013/06/17 19:29:05 ajacoutot Exp $
---- mozilla/toolkit/library/Makefile.in.orig	Thu Jun 20 10:48:11 2013
-+++ mozilla/toolkit/library/Makefile.in	Wed Jul  3 16:52:21 2013
-@@ -476,7 +476,7 @@ OS_LIBS += \
- endif
- endif
- 
--ifneq (,$(filter NetBSD OpenBSD,$(OS_ARCH)))
-+ifneq (,$(filter NetBSD OpenBSD Bitrig,$(OS_ARCH)))
- ifdef MOZ_SYDNEYAUDIO
- EXTRA_DSO_LDOPTS += -lossaudio
- endif
-@@ -488,6 +488,12 @@ EXTRA_DSO_LDOPTS += -lsndio
+$OpenBSD$
+--- mozilla/toolkit/library/Makefile.in.orig	Fri Sep 20 10:57:25 2013
++++ mozilla/toolkit/library/Makefile.in	Fri Sep 20 11:08:45 2013
+@@ -514,6 +514,12 @@ EXTRA_DSO_LDOPTS += -lsndio
  endif
  endif
  
@@ -23,17 +14,12 @@ $OpenBSD: patch-mozilla_toolkit_library_Makefile_in,v 1.18 2013/06/17 19:29:05 a
  ifdef MOZ_PLATFORM_MAEMO
  EXTRA_DSO_LDOPTS += $(MOZ_PLATFORM_MAEMO_LIBS)
  endif
-@@ -610,7 +616,12 @@ endif
- 
- ifeq ($(OS_ARCH),OpenBSD)
- # Needed by nsAuthGSSAPI
--EXTRA_DSO_LDOPTS += -lkrb5 -lcrypto
-+EXTRA_DSO_LDOPTS += `krb5-config --libs`
-+endif
-+
-+ifeq ($(OS_ARCH),Bitrig)
-+# Needed by nsAuthGSSAPI
-+EXTRA_DSO_LDOPTS += `krb5-config --libs`
+@@ -560,7 +566,7 @@ EXTRA_DSO_LDOPTS += -lelf -ldemangle
+ endif
  endif
  
- ifdef MOZ_DEBUG
+-ifneq (,$(filter DragonFly FreeBSD NetBSD OpenBSD,$(OS_ARCH)))
++ifneq (,$(filter DragonFly FreeBSD NetBSD OpenBSD Bitrig,$(OS_ARCH)))
+ OS_LIBS += $(call EXPAND_LIBNAME,kvm)
+ # keep `environ' unresolved, see bug 14426 for binutils
+ EXTRA_DSO_LDOPTS += -Wl,--warn-unresolved-symbols

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- mozilla/media/libopus/Makefile.in.orig	Fri Sep 20 10:57:29 2013
++++ mozilla/media/libopus/Makefile.in	Fri Sep 20 11:24:51 2013
+@@ -19,7 +19,7 @@ DEFINES += \
+   -Drestrict= \
+   $(NULL)
+ 
+-ifneq ($(filter $(OS_ARCH),Linux Darwin DragonFly FreeBSD NetBSD OpenBSD),)
++ifneq ($(filter $(OS_ARCH),Linux Darwin DragonFly FreeBSD NetBSD OpenBSD Bitrig),)
+   DEFINES += -DHAVE_LRINTF
+ endif
+ ifeq ($(OS_ARCH), WINNT)
