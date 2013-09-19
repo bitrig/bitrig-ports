@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.60 2013/09/06 12:22:33 espie Exp $
+# $OpenBSD: Makefile,v 1.61 2013/09/19 17:11:20 sthen Exp $
 
 COMMENT=	database drivers for Sybase/Microsoft SQL Server
 
-DISTNAME=	freetds-0.91.49
+DISTNAME=	freetds-0.92.79
 
 REVISION=	0
 
@@ -24,8 +24,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c crypto iodbc iodbcinst ncurses pthread readline ssl
 
-MASTER_SITES=	http://mirrors.ibiblio.org/freetds/stable/git/ \
-		ftp://ftp.freetds.org/pub/freetds/stable/
+MASTER_SITES=	ftp://ftp.freetds.org/pub/freetds/stable/
 
 AUTOCONF_VERSION=2.65
 AUTOMAKE_VERSION=1.11
@@ -61,6 +60,9 @@ FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/freetds
 DOC=		share/doc/freetds
 SUBST_VARS=	DOC V
 
+post-extract:
+	rm -r ${WRKSRC}/doc/doc/freetds-*
+
 pre-configure:
 	cd ${WRKSRC}; \
 		AUTOCONF_VERSION=${AUTOCONF_VERSION} \
@@ -70,7 +72,7 @@ pre-configure:
 
 post-install:
 	cd ${PREFIX}/lib && ln -s libtdsodbc.so.${LIBtdsodbc_VERSION} \
-		libtdsodbc.so; \
+		libtdsodbc.so
 	mv ${PREFIX}/share/doc/freetds-* ${PREFIX}/share/doc/freetds
 
 .include <bsd.port.mk>
