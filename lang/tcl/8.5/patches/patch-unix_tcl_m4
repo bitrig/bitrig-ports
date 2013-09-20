@@ -1,16 +1,16 @@
 $OpenBSD$
---- unix/tcl.m4.orig	Mon Apr  1 20:36:35 2013
-+++ unix/tcl.m4	Wed Jul 17 19:54:11 2013
-@@ -1507,7 +1507,7 @@ AC_DEFUN([SC_CONFIG_CFLAGS], [
- 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
- 	    TCL_LIB_VERSIONS_OK=nodots
+--- unix/tcl.m4.orig	Fri Sep 13 18:07:56 2013
++++ unix/tcl.m4	Sun Sep 22 15:15:06 2013
+@@ -1481,7 +1481,7 @@ AC_DEFUN([SC_CONFIG_CFLAGS], [
+ 	    CC_SEARCH_FLAGS=""
+ 	    LD_SEARCH_FLAGS=""
  	    ;;
 -	OpenBSD-*)
 +	OpenBSD-* | Bitrig-*)
  	    arch=`arch -s`
  	    case "$arch" in
- 	    m88k|vax)
-@@ -2077,7 +2077,7 @@ dnl # preprocessing tests use only CPPFLAGS.
+ 	    vax)
+@@ -2043,7 +2043,7 @@ dnl # preprocessing tests use only CPPFLAGS.
  	    BSD/OS*) ;;
  	    CYGWIN_*|MINGW32_*) ;;
  	    IRIX*) ;;
