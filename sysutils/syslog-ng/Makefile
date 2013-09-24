@@ -7,6 +7,7 @@ SHARED_ONLY =	Yes
 V =		3.3.11
 DISTNAME =	syslog-ng-$V
 CATEGORIES =	sysutils
+REVISION =	0
 
 MAINTAINER =	Steven Mestdagh <steven@openbsd.org>
 
@@ -40,11 +41,13 @@ CONFIGURE_ARGS +=	--enable-tcp-wrapper \
 			--with-libmongo-client=no \
 			--disable-mongodb \
 			--with-ivykis=system \
-			--enable-sql
+			--enable-sql \
+			--without-libnet
 CONFIGURE_ENV +=	OPENSSL_CFLAGS="-I/usr/include/openssl" \
 			OPENSSL_LIBS="-lssl -lcrypto" \
 			LIBDBI_CFLAGS="-I/usr/include/openssl" \
 			LIBDBI_LIBS="-ldbi"
+
 USE_GMAKE =	Yes
 USE_GROFF =	Yes
 

@@ -1,0 +1,14 @@
+$OpenBSD$
+--- configure.orig	Fri Jun 14 08:20:11 2013
++++ configure	Tue Sep 24 15:30:06 2013
+@@ -12880,10 +12880,6 @@ a=0;
+ }
+ _ACEOF
+ if ac_fn_c_try_link "$LINENO"; then :
+-  ac_cv_have_tls=yes;
+-cat >>confdefs.h <<_ACEOF
+-#define HAVE_THREAD_KEYWORD 1
+-_ACEOF
+ 
+ fi
+ rm -f core conftest.err conftest.$ac_objext \
