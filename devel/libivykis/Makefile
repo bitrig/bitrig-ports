@@ -2,7 +2,7 @@
 
 COMMENT =		asynchronous I/O readiness notification library
 
-V =			0.36.2
+V =			0.39
 DISTNAME =		ivykis-$V
 PKGNAME =		lib${DISTNAME}
 
