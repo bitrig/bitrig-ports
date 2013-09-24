@@ -14,7 +14,7 @@ PERMIT_PACKAGE_CDROM=   Yes
 
 WANTLIB += c
 
-RUN_DEPENDS=		www/mod_perl
+RUN_DEPENDS=		www/ap2-mod_perl
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/Apache/DB

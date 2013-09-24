@@ -26,7 +26,7 @@ RUN_DEPENDS=	databases/p5-DBD-Chart \
 		databases/p5-DBI \
 		graphics/p5-GD \
 		graphics/p5-GD-TextUtil \
-		www/mod_perl \
+		www/ap2-mod_perl \
 		www/p5-HTML-Template
 
 do-configure:

@@ -20,7 +20,7 @@ RUN_DEPENDS=		www/p5-URI \
 			graphics/p5-Image-Size>=3.1.1 \
 			textproc/p5-Text-Template \
 			graphics/p5-Image-Imlib2 \
-			www/mod_perl \
+			www/ap2-mod_perl \
 			www/p5-libapreq>=1.0
 
 BUILD_DEPENDS=		${RUN_DEPENDS}

@@ -9,7 +9,7 @@ CATEGORIES =	www perl5
 MODULES =	cpan
 
 BUILD_DEPENDS =	${RUN_DEPENDS}
-RUN_DEPENDS =	www/mod_perl
+RUN_DEPENDS =	www/ap2-mod_perl
 
 # Apache License 2.0
 PERMIT_PACKAGE_CDROM =	Yes

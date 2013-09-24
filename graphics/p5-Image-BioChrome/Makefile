@@ -14,6 +14,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 RUN_DEPENDS=		misc/p5-File-MMagic
 TEST_DEPENDS=	textproc/p5-Template \
-			www/mod_perl
+			www/ap2-mod_perl
 
 .include <bsd.port.mk>

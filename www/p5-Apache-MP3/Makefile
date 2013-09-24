@@ -12,7 +12,7 @@ USE_GROFF =	Yes
 PERMIT_PACKAGE_CDROM=	Yes
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	www/mod_perl \
+RUN_DEPENDS=	www/ap2-mod_perl \
 		audio/p5-MP3-Info \
 		audio/p5-libvorbis
 
