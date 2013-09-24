@@ -1,12 +1,12 @@
 $OpenBSD$
 --- Makefile.bsd-wrapper.orig	Wed Nov 30 11:41:37 2011
-+++ Makefile.bsd-wrapper	Thu Mar  1 01:01:02 2012
++++ Makefile.bsd-wrapper	Tue Sep 24 10:48:01 2013
 @@ -2,6 +2,8 @@
  
  .include <bsd.own.mk>
  
-+BINDIR=	${PREFIX}/bin
-+MANDIR=	${PREFIX}/man/man
++BINDIR=	${LOCALBASE}/bin
++MANDIR=	${LOCALBASE}/man/man
  MAN=	man/cvs.1 man/cvs.5 man/cvsbug.8 man/rcs2log.1
  GNUCFLAGS=	CC="${CC}" CFLAGS="${CFLAGS} ${COPTS}" CPP="${CPP}"
  CLEANFILES=	src/version.c lib/getdate.c lib/getdate.h macintosh/Makefile \
@@ -16,8 +16,8 @@ $OpenBSD$
  		MAKEINFO='makeinfo --no-split' \
 -		sh ${.CURDIR}/configure --prefix=/usr --mandir=/usr/share/man \
 -			--datadir=/usr/libdata ${KRB} ${KRB5} ${CF}
-+		sh ${.CURDIR}/configure --prefix=${PREFIX} --mandir=${PREFIX}/man \
-+			--datadir=${PREFIX}/libdata ${KRB} ${KRB5} ${CF}
++		sh ${.CURDIR}/configure --prefix=${LOCALBASE} --mandir=${LOCALBASE}/man \
++			--datadir=${LOCALBASE}/libdata ${KRB} ${KRB5} ${CF}
  
  config.status:
  	PATH="/bin:/usr/bin:/sbin:/usr/sbin" \
@@ -27,8 +27,8 @@ $OpenBSD$
  		MAKEINFO='makeinfo --no-split' \
 -		sh ${.CURDIR}/configure --prefix=/usr --mandir=/usr/share/man \
 -			--datadir=/usr/libdata ${KRB} ${KRB5} ${CF}
-+		sh ${.CURDIR}/configure --prefix=${PREFIX} --mandir=${PREFIX}/man \
-+			--datadir=${PREFIX}/libdata ${KRB} ${KRB5} ${CF}
++		sh ${.CURDIR}/configure --prefix=${LOCALBASE} --mandir=${LOCALBASE}/man \
++			--datadir=${LOCALBASE}/libdata ${KRB} ${KRB5} ${CF}
  
  .ifdef NOMAN
  maninstall:
@@ -40,10 +40,10 @@ $OpenBSD$
 -		infodir=/usr/share/info \
 -		libexecdir=/usr/libexec \
 -		bindir=/usr/bin INSTALL_MAN= install
-+	${MAKE} ${GNUCFLAGS} prefix=${DESTDIR}/${PREFIX} \
-+		infodir=${PREFIX}/info \
-+		libexecdir=${PREFIX}/libexec \
-+		bindir=${PREFIX}/bin INSTALL_MAN= install
++	${MAKE} ${GNUCFLAGS} prefix=${DESTDIR}/${LOCALBASE} \
++		infodir=${LOCALBASE}/info \
++		libexecdir=${LOCALBASE}/libexec \
++		bindir=${LOCALBASE}/bin INSTALL_MAN= install
  
  clean cleandir:
  	-@if [ -e Makefile ]; then ${MAKE} distclean; fi
