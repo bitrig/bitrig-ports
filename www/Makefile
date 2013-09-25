@@ -9,6 +9,7 @@
      SUBDIR += ap2-mod_jk
      SUBDIR += ap2-mod_perl
      SUBDIR += apache-httpd
+     SUBDIR += apache-httpd-openbsd
      SUBDIR += aria2
      SUBDIR += arora
      SUBDIR += asql

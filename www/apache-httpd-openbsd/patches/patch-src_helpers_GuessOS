@@ -1,0 +1,15 @@
+$OpenBSD$
+--- src/helpers/GuessOS.orig	Wed Sep 25 10:14:48 2013
++++ src/helpers/GuessOS	Wed Sep 25 10:16:13 2013
+@@ -176,6 +176,11 @@ case "${SYSTEM}:${RELEASE}:${VERSION}:${MACHINE}" in
+ 	echo "${MACHINE}-whatever-openbsd${OPENBSDVERS}"; exit 0
+ 	;;
+ 
++    Bitrig:*)
++	BITRIGVERS=`echo ${RELEASE}|sed -e 's/[-(].*//'`
++	echo "${MACHINE}-whatever-bitrig${BITRIGVERS}"; exit 0
++	;;
++
+     OSF1:*:*:*alpha*)
+ 	echo "${MACHINE}-dec-osf"; exit 0
+ 	;;

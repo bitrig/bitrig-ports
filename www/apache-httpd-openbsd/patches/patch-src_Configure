@@ -1,0 +1,21 @@
+$OpenBSD$
+--- src/Configure.orig	Wed Sep 25 10:08:27 2013
++++ src/Configure	Wed Sep 25 10:09:19 2013
+@@ -512,7 +512,7 @@ case "$PLAT" in
+ 	DBM_LIB=""
+ 	DB_LIB=""
+ 	;;
+-    *-openbsd*)
++    *-openbsd*|*-bitrig*)
+ 	OS='OpenBSD'
+ 	DBM_LIB=""
+ 	DB_LIB=""
+@@ -1134,7 +1134,7 @@ if [ "x$using_shlib" = "x1" ] ; then
+ 		SHLIB_SUFFIX_DEPTH=2
+ 	    fi  
+ 	    ;;
+-	*-openbsd*)
++	*-openbsd*|*-bitrig*)
+ 	    PLATOSVERS=`echo $PLAT | sed 's/^.*openbsd//'`
+ 	    CFLAGS_SHLIB="-fPIC"
+ 	    LDFLAGS_SHLIB_EXPORT=""
