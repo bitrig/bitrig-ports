@@ -1,0 +1,12 @@
+$OpenBSD$
+--- lqr/lqr_energy_priv.h.orig	Wed Sep 25 19:48:19 2013
++++ lqr/lqr_energy_priv.h	Wed Sep 25 19:48:42 2013
+@@ -40,7 +40,7 @@
+ 
+ inline gdouble lqr_pixel_get_norm(void *src, gint src_ind, LqrColDepth col_depth);
+ inline void lqr_pixel_set_norm(gdouble val, void *rgb, gint rgb_ind, LqrColDepth col_depth);
+-inline gdouble lqr_pixel_get_rgbcol(void *rgb, gint rgb_ind, LqrColDepth col_depth, LqrImageType image_type,
++gdouble lqr_pixel_get_rgbcol(void *rgb, gint rgb_ind, LqrColDepth col_depth, LqrImageType image_type,
+                                     gint channel);
+ inline gdouble lqr_carver_read_brightness_grey(LqrCarver *r, gint x, gint y);
+ inline gdouble lqr_carver_read_brightness_std(LqrCarver *r, gint x, gint y);
