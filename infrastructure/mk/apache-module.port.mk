@@ -31,7 +31,7 @@ SHARED_ONLY ?= Yes
 
 MODAPACHE_ENABLE ?= mod_${MODAPACHE_NAME}-enable
 MODAPACHE_MODULE ?= mod_${MODAPACHE_NAME}.so
-MODAPACHE_FINAL = /usr/lib/apache/modules/${MODAPACHE_MODULE}
+MODAPACHE_FINAL = ${LOCALBASE}/lib/apache/modules/${MODAPACHE_MODULE}
 MODAPACHE_LOCATION ?= ${WRKBUILD}
 MODAPACHE_FILE ?= ${MODAPACHE_LOCATION}/${MODAPACHE_MODULE}
 
@@ -49,7 +49,7 @@ MODAPACHE_CREATE_ENABLE_SCRIPT = \
 	echo '    exit 1'; \
 	echo 'else'; \
 	echo '    echo "Enabling ${MODAPACHE_LONG_DESCRIPTION} module..."'; \
-	echo '    /usr/sbin/apxs -i -a -n ${MODAPACHE_NAME} $${MODULE}'; \
+	echo '    ${LOCALBASE}/sbin/apxs -i -a -n ${MODAPACHE_NAME} $${MODULE}'; \
 	echo 'fi'
 
 MODAPACHE_INSTALL= \
