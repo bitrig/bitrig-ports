@@ -40,6 +40,9 @@ CONFIGURE_ENV =		CPPFLAGS="-I${WRKSRC}/src -I${LOCALBASE}/include" \
 			ac_cv_header_execinfo_h=no \
 			ac_cv_header_lwres_netdb_h=no
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST} \
+				${WRKDIST}/configure_aux
+
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/mediatomb/
 	${SUBST_CMD} -c -o ${SHAREOWN} -g ${SHAREGRP} ${FILESDIR}/config.xml \

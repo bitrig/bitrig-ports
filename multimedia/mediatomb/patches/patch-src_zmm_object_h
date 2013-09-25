@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/zmm/object.h.orig	Wed Sep 25 20:38:14 2013
++++ src/zmm/object.h	Wed Sep 25 20:38:39 2013
+@@ -48,7 +48,7 @@ class Object (public)
+     void release();
+     int getRefCount();
+ 
+-    static void* operator new (size_t size); 
++    static void* operator new (std::size_t size); 
+     static void operator delete (void *ptr);
+ protected:
+     mt_atomic_t _ref_count;
