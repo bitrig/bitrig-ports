@@ -1,0 +1,12 @@
+$OpenBSD: patch-native_configure,v 1.2 2012/12/13 15:19:19 kurt Exp $
+--- native/configure.orig	Tue Nov 27 10:17:55 2012
++++ native/configure	Tue Nov 27 10:18:50 2012
+@@ -24046,7 +24046,7 @@ fi
+   jk_val_changed=0
+   for i in $APXSLDFLAGS; do
+     case $i in
+-      -Wl,*)
++      -Wl,* | -D*)
+         jk_new_val="$jk_new_val $i"
+         ;;
+       *)
