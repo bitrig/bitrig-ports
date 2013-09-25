@@ -25,6 +25,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c m perl util
 
 RUN_DEPENDS=		devel/p5-Devel-Symdump \
+			www/apache-httpd-openbsd \
 			www/p5-libwww \
 			www/p5-HTML-Parser
 BUILD_DEPENDS=		${RUN_DEPENDS}
@@ -34,7 +35,7 @@ SUBST_VARS=	PKGNAME
 NO_TEST=	Yes
 
 CONFIGURE_STYLE= perl
-CONFIGURE_ARGS=	USE_APXS="1" EVERYTHING="1" WITH_APXS="/usr/sbin/apxs"
+CONFIGURE_ARGS=	USE_APXS="1" EVERYTHING="1" WITH_APXS="${LOCALBASE}/sbin/apxs"
 
 INSTALL_TARGET=	pure_install doc_install
 
