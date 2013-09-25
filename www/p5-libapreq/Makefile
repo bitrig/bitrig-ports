@@ -19,10 +19,10 @@ WANTLIB += c
 
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache/}
 
-BUILD_DEPENDS=	www/ap2-mod_perl \
+BUILD_DEPENDS=	www/mod_perl \
 		www/p5-Apache-Test
 
-RUN_DEPENDS=	www/ap2-mod_perl
+RUN_DEPENDS=	www/mod_perl
 
 MAKE_ENV+=	APACHE_TEST_HTTPD=/usr/sbin/httpd
 PORTHOME=	${WRKDIR}

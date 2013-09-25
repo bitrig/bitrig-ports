@@ -8,7 +8,7 @@ REVISION=	2
 CATEGORIES=	www databases
 USE_GROFF =	Yes
 
-RUN_DEPENDS=	www/ap2-mod_perl \
+RUN_DEPENDS=	www/mod_perl \
 		databases/p5-DBI
 
 # GPL

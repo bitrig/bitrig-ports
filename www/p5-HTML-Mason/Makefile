@@ -22,7 +22,7 @@ RUN_DEPENDS=	devel/p5-Cache-Cache>=1.02 \
 		devel/p5-Test-Deep \
 		www/p5-HTML-Parser \
 		www/p5-libapreq>=1.1 \
-		www/ap2-mod_perl
+		www/mod_perl>=1.27 
 
 MAKE_ENV=       TEST_POD=Yes
 

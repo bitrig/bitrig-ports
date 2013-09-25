@@ -17,7 +17,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB += c m xml2>=10 xslt>=3 z
 
 MASTER_SITES=	ftp://ftp.dev.ecos.de/pub/perl/embperl/
-RUN_DEPENDS=	www/ap2-mod_perl>=1.22
+RUN_DEPENDS=	www/mod_perl>=1.22
 BUILD_DEPENDS=	${RUN_DEPENDS}
 LIB_DEPENDS=	textproc/libxml \
 		textproc/libxslt

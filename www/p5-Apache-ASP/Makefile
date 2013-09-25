@@ -9,7 +9,7 @@ CATEGORIES=	www
 USE_GROFF =	Yes
 
 RUN_DEPENDS=	devel/p5-MLDBM-Sync>=0.25 \
-		www/ap2-mod_perl
+		www/mod_perl
 BUILD_DEPENDS=	devel/p5-MLDBM-Sync>=0.25
 
 # perl

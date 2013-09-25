@@ -13,7 +13,7 @@ MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 RUN_DEPENDS=	www/p5-Catalyst-Runtime \
-		www/ap2-mod_perl
+		mod_perl-*|ap2-mod_perl-*:www/mod_perl
 
 MAKE_ENV=	TEST_POD=Yes
 

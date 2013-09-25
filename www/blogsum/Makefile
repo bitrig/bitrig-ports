@@ -27,7 +27,7 @@ RUN_DEPENDS =	databases/p5-DBD-SQLite \
 		databases/p5-DBI \
 		textproc/p5-XML-RSS \
 		textproc/p5-XML-Simple \
-		www/ap2-mod_perl \
+		www/mod_perl \
 		www/p5-HTML-Template \
 		www/p5-HTTP-Lite
 

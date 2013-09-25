@@ -24,7 +24,7 @@ MODULES =	perl
 RUN_DEPENDS=	p5-DBD-SQLite-*|p5-DBD-Pg-*|p5-DBD-mysql-*:databases/p5-DBD-SQLite \
 		misc/p5-Spreadsheet-WriteExcel \
 		net/p5-Net-DNS \
-		www/ap2-mod_perl \
+		www/mod_perl \
 		www/p5-HTML-Template \
 		www/p5-HTML-Parser
 
