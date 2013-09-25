@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.2 2013/09/25 07:49:50 sthen Exp $
+# $OpenBSD: Makefile,v 1.21 2013/09/25 07:52:04 sthen Exp $
 
 COMMENT=	tools and library routines for working with GIF images
 
