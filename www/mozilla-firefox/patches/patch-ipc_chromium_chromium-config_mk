@@ -1,7 +1,7 @@
 $OpenBSD$
---- ipc/chromium/chromium-config.mk.orig	Sat Jan  5 00:44:34 2013
-+++ ipc/chromium/chromium-config.mk	Sun Jan 27 10:53:19 2013
-@@ -105,7 +105,18 @@ DEFINES += \
+--- ipc/chromium/chromium-config.mk.orig	Wed Sep 11 01:15:04 2013
++++ ipc/chromium/chromium-config.mk	Fri Sep 27 23:35:37 2013
+@@ -103,12 +103,24 @@ DEFINES += \
    $(NULL)
  
  else # } {
@@ -20,9 +20,7 @@ $OpenBSD$
  OS_LINUX = 1
  DEFINES += \
    -DOS_LINUX=1 \
-@@ -114,6 +125,7 @@ DEFINES += \
- # NB: to stop gcc warnings about exporting template instantiation
- OS_CXXFLAGS := $(filter-out -pedantic,$(OS_CXXFLAGS))
+   $(NULL)
  
 +endif # }
  endif # }
