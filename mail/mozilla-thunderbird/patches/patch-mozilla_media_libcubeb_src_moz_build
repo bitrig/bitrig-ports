@@ -1,0 +1,12 @@
+$OpenBSD$
+--- mozilla/media/libcubeb/src/moz.build.orig	Fri Sep 27 23:53:33 2013
++++ mozilla/media/libcubeb/src/moz.build	Fri Sep 27 23:55:57 2013
+@@ -20,7 +20,7 @@ if CONFIG['MOZ_PULSEAUDIO']:
+         'cubeb_pulse.c',
+     ]
+ 
+-if CONFIG['OS_ARCH'] == 'OpenBSD':
++if CONFIG['OS_ARCH'] in ['OpenBSD', 'Bitrig'];
+     CSRCS += [
+         'cubeb_sndio.c',
+     ]

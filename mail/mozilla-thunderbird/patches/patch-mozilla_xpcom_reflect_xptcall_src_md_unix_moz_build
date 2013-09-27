@@ -1,0 +1,12 @@
+$OpenBSD$
+--- mozilla/xpcom/reflect/xptcall/src/md/unix/moz.build.orig	Fri Sep 27 23:53:32 2013
++++ mozilla/xpcom/reflect/xptcall/src/md/unix/moz.build	Fri Sep 27 23:55:16 2013
+@@ -19,7 +19,7 @@ if CONFIG['OS_ARCH'] == 'Darwin':
+                 'xptcstubs_gcc_x86_unix.cpp',
+             ]
+ 
+-if CONFIG['OS_ARCH'] in ('NetBSD', 'OpenBSD', 'GNU'):
++if CONFIG['OS_ARCH'] in ('NetBSD', 'OpenBSD', 'Bitrig', 'GNU'):
+     if CONFIG['CPU_ARCH'] == 'x86':
+         CPP_SOURCES += [
+             'xptcinvoke_gcc_x86_unix.cpp',
