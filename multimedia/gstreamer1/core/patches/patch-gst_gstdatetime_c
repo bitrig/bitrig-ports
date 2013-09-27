@@ -1,0 +1,13 @@
+$OpenBSD$
+--- gst/gstdatetime.c.orig	Fri Sep 27 12:29:47 2013
++++ gst/gstdatetime.c	Fri Sep 27 12:30:01 2013
+@@ -21,8 +21,8 @@
+ #include "config.h"
+ #endif
+ 
+-#include "glib-compat-private.h"
+ #include "gst_private.h"
++#include "glib-compat-private.h"
+ #include "gstdatetime.h"
+ #include "gstvalue.h"
+ #include <glib.h>
