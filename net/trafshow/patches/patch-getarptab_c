@@ -1,0 +1,12 @@
+$OpenBSD$
+--- getarptab.c.orig	Fri Sep 27 12:10:09 2013
++++ getarptab.c	Fri Sep 27 12:10:34 2013
+@@ -10,6 +10,8 @@
+ 
+ /* getarptab.c -- translate MAC addresses to IP addresses using ARP table */
+ 
++#include <sys/types.h>
++
+ #ifdef	HAVE_CONFIG_H
+ #include <config.h>
+ #endif
