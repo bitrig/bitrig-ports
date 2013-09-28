@@ -20,8 +20,9 @@ RUN_DEPENDS =		squeak-sources-${SOURCEV}:lang/squeak/sources
 CONFIGURE_STYLE =	gnu
 AUTOCONF_VERSION =	2.60
 DESTDIRNAME =		ROOT
-CONFIGURE_ENV =		LDFLAGS="-lpthread ${LDFLAGS}" RANLIB=ranlib \
-			ac_cv_socklen_t=yes
+CONFIGURE_ENV =		LDFLAGS="-lpthread -L${LOCALBASE}/lib ${LDFLAGS}" \
+			RANLIB=ranlib CFLAGS="-I${LOCALBASE}/include ${CFLAGS}" \
+			CC=gcc ac_cv_socklen_t=yes
 USE_GMAKE =		Yes
 USE_GROFF =		Yes
 USE_LIBTOOL =		No
