@@ -6,7 +6,7 @@ $OpenBSD$
  endif
  
 +ifeq ($(OS_ARCH),Bitrig)
-+CSRCS           += \
++DISABLED_CSRCS           += \
 +                cubeb_sndio.c \
 +                $(NULL)
 +DEFINES         += -DUSE_SNDIO
