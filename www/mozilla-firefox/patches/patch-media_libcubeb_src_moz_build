@@ -6,7 +6,7 @@ $OpenBSD$
      ]
  
 -if CONFIG['OS_ARCH'] == 'OpenBSD':
-+if CONFIG['OS_ARCH'] in ['OpenBSD', 'Bitrig']:
++if CONFIG['OS_ARCH'] in ('OpenBSD', 'Bitrig'):
      CSRCS += [
          'cubeb_sndio.c',
      ]
