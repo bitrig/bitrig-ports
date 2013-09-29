@@ -46,6 +46,7 @@ LIB_DEPENDS=		devel/gobject-introspection \
 AUTOCONF_VERSION=	2.63
 CONFIGURE_STYLE=	autoconf
 CONFIGURE_ARGS=		--disable-static
+CONFIGURE_ENV=		"CFLAGS=-Wno-error=format=2 ${CFLAGS}"
 
 TEST_DEPENDS=		sysutils/e2fsprogs #uuidgen(1)
 
