@@ -1,6 +1,6 @@
-$OpenBSD: patch-makefile,v 1.6 2013/08/07 03:40:25 bcallah Exp $
---- makefile.orig	Tue Jun 11 09:47:45 2013
-+++ makefile	Tue Jun 11 09:47:46 2013
+$OpenBSD: patch-makefile,v 1.7 2013/09/29 19:36:09 bcallah Exp $
+--- makefile.orig	Wed Oct  2 07:09:09 2013
++++ makefile	Wed Oct  2 07:09:54 2013
 @@ -92,6 +92,9 @@ endif
  ifeq ($(firstword $(filter OpenBSD,$(UNAME))),OpenBSD)
  TARGETOS = openbsd
@@ -11,7 +11,7 @@ $OpenBSD: patch-makefile,v 1.6 2013/08/07 03:40:25 bcallah Exp $
  ifeq ($(firstword $(filter Darwin,$(UNAME))),Darwin)
  TARGETOS = macosx
  endif
-@@ -214,10 +217,10 @@ endif
+@@ -217,10 +220,10 @@ endif
  # BIGENDIAN = 1
  
  # uncomment next line to build expat as part of MAME build
@@ -24,7 +24,7 @@ $OpenBSD: patch-makefile,v 1.6 2013/08/07 03:40:25 bcallah Exp $
  
  # uncomment next line to build libflac as part of MAME build
  BUILD_FLAC = 1
-@@ -318,7 +321,7 @@ endif
+@@ -330,7 +333,7 @@ endif
  
  # compiler, linker and utilities
  AR = @ar
@@ -33,7 +33,7 @@ $OpenBSD: patch-makefile,v 1.6 2013/08/07 03:40:25 bcallah Exp $
  LD = @g++
  MD = -mkdir$(EXE)
  RM = @rm -f
-@@ -367,7 +370,7 @@ NAME = $(TARGET)$(SUBTARGET)
+@@ -379,7 +382,7 @@ NAME = $(TARGET)$(SUBTARGET)
  endif
  
  # fullname is prefix+name+suffix+suffix64+suffixdebug
@@ -42,7 +42,7 @@ $OpenBSD: patch-makefile,v 1.6 2013/08/07 03:40:25 bcallah Exp $
  
  # add an EXE suffix to get the final emulator name
  EMULATOR = $(FULLNAME)$(EXE)
-@@ -458,7 +461,7 @@ CPPONLYFLAGS =
+@@ -473,7 +476,7 @@ CPPONLYFLAGS =
  
  # CFLAGS is defined based on C or C++ targets
  # (remember, expansion only happens when used, so doing it here is ok)
@@ -51,7 +51,7 @@ $OpenBSD: patch-makefile,v 1.6 2013/08/07 03:40:25 bcallah Exp $
  
  # we compile C-only to C89 standard with GNU extensions
  # we compile C++ code to C++98 standard with GNU extensions
-@@ -485,7 +488,7 @@ CCOMFLAGS += -pg
+@@ -506,7 +509,7 @@ CCOMFLAGS += -pg
  endif
  
  # add the optimization flag
