@@ -1,6 +1,6 @@
-$OpenBSD: patch-ptlib_m4,v 1.3 2012/06/21 14:23:51 ajacoutot Exp $
---- ptlib.m4.orig	Mon Nov 26 11:45:08 2012
-+++ ptlib.m4	Wed Nov 28 11:04:13 2012
+$OpenBSD: patch-ptlib_m4,v 1.4 2013/10/02 10:45:26 ajacoutot Exp $
+--- ptlib.m4.orig	Thu Aug 15 01:20:33 2013
++++ ptlib.m4	Thu Oct  3 21:44:32 2013
 @@ -262,7 +262,7 @@ AC_DEFUN([PTLIB_FIND_LIBDL],
              else
                AC_MSG_RESULT(yes)
@@ -10,12 +10,22 @@ $OpenBSD: patch-ptlib_m4,v 1.3 2012/06/21 14:23:51 ajacoutot Exp $
                    AC_CHECK_LIB([c],[dlopen],
                                [
                                  ptlib_libdl=yes
-@@ -368,7 +368,10 @@ AC_DEFUN([PTLIB_FIND_OPENLDAP],
+@@ -332,7 +332,8 @@ AC_DEFUN([PTLIB_CHECK_SASL_INCLUDE],
+ 
+           if test "x${HAS_INCLUDE_SASL_H}" != "xyes" ; then
+             AC_MSG_CHECKING([if <sasl/sasl.h> works])
+-            AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[ #include <sasl/sasl.h> ]],
++            AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[ #include <stdlib.h>
++						  #include <sasl/sasl.h> ]],
+                                [[ int v = SASL_LOG_PASS; ]])],
+                               [
+                                 AC_MSG_RESULT(yes)
+@@ -368,7 +369,10 @@ AC_DEFUN([PTLIB_FIND_OPENLDAP],
                              dnl posix4 is required by libldap_r on Solaris
                              ptlib_openldap_libs="-lposix4"
                              ;;
 -                            * )
-+            openbsd* | bitrig*)
++            openbsd*|bitrig*)
 +                            ptlib_openldap_libs="-llber -lldap_r -pthread"
 +                            ;;
 +            * )
