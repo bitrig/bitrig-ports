@@ -1,6 +1,6 @@
-$OpenBSD$
---- configure.ac.orig	Mon Oct  3 05:34:22 2011
-+++ configure.ac	Mon Sep 24 10:49:53 2012
+$OpenBSD: patch-configure_ac,v 1.7 2013/10/05 19:54:46 brad Exp $
+--- configure.ac.orig	Sat Aug 24 13:16:03 2013
++++ configure.ac	Fri Oct  4 03:33:54 2013
 @@ -97,7 +97,7 @@ case "${host_os}" in
    mingw*|pw32*|cygwin*)
      AC_DEFINE(HAVE_CODEMEM_VIRTUALALLOC, 1, [Use VirtualAlloc to allocate code for execution])
@@ -10,12 +10,12 @@ $OpenBSD$
      AC_DEFINE(HAVE_CODEMEM_MMAP, 1, [Use mmap to allocate code for execution])
      ;;
    *)
-@@ -171,7 +171,7 @@ ORC_CFLAGS="$ORC_CFLAGS \$(ERROR_CFLAGS) -I\$(top_srcd
+@@ -188,7 +188,7 @@ ORC_CFLAGS="$ORC_CFLAGS \$(ERROR_CFLAGS) -I\$(top_srcd
  AC_SUBST(ERROR_CFLAGS)
  AC_SUBST(ORC_CFLAGS)
  
 -ORC_LIBS="\$(top_builddir)/orc/liborc-$ORC_MAJORMINOR.la $LIBM $LIBRT"
-+ORC_LIBS="\$(top_builddir)/orc/liborc-$ORC_MAJORMINOR.la -lpthread $LIBM $LIBRT"
++ORC_LIBS="\$(top_builddir)/orc/liborc-$ORC_MAJORMINOR.la $LIBM $LIBRT $PTHREAD_LIBS"
  AC_SUBST(ORC_LIBS)
  
  #CFLAGS=`echo $CFLAGS | sed s/O2/O0/`
