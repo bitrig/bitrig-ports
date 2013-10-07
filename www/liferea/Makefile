@@ -53,7 +53,7 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--docdir=${PREFIX}/share/doc/liferea \
 			--enable-libnotify
-CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include -Wno-return-type" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
 USE_GMAKE=		Yes
