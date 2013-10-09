@@ -14,6 +14,7 @@ bin/clang-cl
 bin/git-clang-format
 @bin bin/llc
 @bin bin/lli
+@bin bin/lli-child-target
 @bin bin/llvm-ar
 @bin bin/llvm-as
 @bin bin/llvm-bcanalyzer
@@ -29,7 +30,6 @@ bin/git-clang-format
 @bin bin/llvm-mcmarkup
 @bin bin/llvm-nm
 @bin bin/llvm-objdump
-@bin bin/llvm-prof
 @bin bin/llvm-readobj
 @bin bin/llvm-rtdyld
 @bin bin/llvm-size
@@ -57,6 +57,7 @@ include/clang/AST/ASTContext.h
 include/clang/AST/ASTDiagnostic.h
 include/clang/AST/ASTFwd.h
 include/clang/AST/ASTImporter.h
+include/clang/AST/ASTLambda.h
 include/clang/AST/ASTMutationListener.h
 include/clang/AST/ASTTypeTraits.h
 include/clang/AST/ASTUnresolvedSet.h
@@ -415,7 +416,6 @@ include/clang/Serialization/SerializationDiagnostic.h
 include/clang/StaticAnalyzer/
 include/clang/StaticAnalyzer/Checkers/
 include/clang/StaticAnalyzer/Checkers/ClangCheckers.h
-include/clang/StaticAnalyzer/Checkers/CommonBugCategories.h
 include/clang/StaticAnalyzer/Checkers/LocalCheckers.h
 include/clang/StaticAnalyzer/Checkers/ObjCRetainCount.h
 include/clang/StaticAnalyzer/Core/
@@ -425,6 +425,7 @@ include/clang/StaticAnalyzer/Core/BugReporter/
 include/clang/StaticAnalyzer/Core/BugReporter/BugReporter.h
 include/clang/StaticAnalyzer/Core/BugReporter/BugReporterVisitor.h
 include/clang/StaticAnalyzer/Core/BugReporter/BugType.h
+include/clang/StaticAnalyzer/Core/BugReporter/CommonBugCategories.h
 include/clang/StaticAnalyzer/Core/BugReporter/PathDiagnostic.h
 include/clang/StaticAnalyzer/Core/Checker.h
 include/clang/StaticAnalyzer/Core/CheckerManager.h
@@ -596,14 +597,7 @@ include/llvm/Analysis/MemoryBuiltins.h
 include/llvm/Analysis/MemoryDependenceAnalysis.h
 include/llvm/Analysis/PHITransAddr.h
 include/llvm/Analysis/Passes.h
-include/llvm/Analysis/PathNumbering.h
-include/llvm/Analysis/PathProfileInfo.h
 include/llvm/Analysis/PostDominators.h
-include/llvm/Analysis/ProfileDataLoader.h
-include/llvm/Analysis/ProfileDataTypes.h
-include/llvm/Analysis/ProfileInfo.h
-include/llvm/Analysis/ProfileInfoLoader.h
-include/llvm/Analysis/ProfileInfoTypes.h
 include/llvm/Analysis/PtrUseVisitor.h
 include/llvm/Analysis/RegionInfo.h
 include/llvm/Analysis/RegionIterator.h
@@ -714,6 +708,7 @@ include/llvm/CodeGen/SelectionDAG.h
 include/llvm/CodeGen/SelectionDAGISel.h
 include/llvm/CodeGen/SelectionDAGNodes.h
 include/llvm/CodeGen/SlotIndexes.h
+include/llvm/CodeGen/StackProtector.h
 include/llvm/CodeGen/TargetLoweringObjectFileImpl.h
 include/llvm/CodeGen/TargetSchedule.h
 include/llvm/CodeGen/ValueTypes.h
@@ -1116,6 +1111,7 @@ ${CLANG_INCLUDE_PATH}/stdbool.h
 ${CLANG_INCLUDE_PATH}/stddef.h
 ${CLANG_INCLUDE_PATH}/stdint.h
 ${CLANG_INCLUDE_PATH}/stdnoreturn.h
+${CLANG_INCLUDE_PATH}/tbmintrin.h
 ${CLANG_INCLUDE_PATH}/tgmath.h
 ${CLANG_INCLUDE_PATH}/tmmintrin.h
 ${CLANG_INCLUDE_PATH}/unwind.h
@@ -1124,8 +1120,6 @@ ${CLANG_INCLUDE_PATH}/wmmintrin.h
 ${CLANG_INCLUDE_PATH}/x86intrin.h
 ${CLANG_INCLUDE_PATH}/xmmintrin.h
 ${CLANG_INCLUDE_PATH}/xopintrin.h
-lib/clang/${LLVM_V}/lib/
-lib/clang/${LLVM_V}/lib/bitrig/
 lib/libLLVMARMAsmParser.a
 lib/libLLVMARMAsmPrinter.a
 lib/libLLVMARMCodeGen.a
@@ -1201,8 +1195,6 @@ lib/libclangTooling.a
 lib/libclang_rt.${MACHINE_ARCH}.a
 lib/libgtest.a
 lib/libgtest_main.a
-lib/libprofile_rt.a
-lib/libprofile_rt.so
 share/llvm/
 share/llvm/cmake/
 share/llvm/cmake/AddLLVM.cmake
