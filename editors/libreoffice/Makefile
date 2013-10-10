@@ -149,11 +149,7 @@ BUILD_DEPENDS+=	archivers/zip \
 BUILD_DEPENDS +=	print/cups,-libs \
 			x11/gnome/librsvg
 
-MODULES+=	gcc4
-MODGCC4_ARCHS=	*
-MODGCC4_LANGS=	c++
-
-MODULES+=	lang/python \
+MODULES=	lang/python \
 		devel/gettext
 
 MODPY_VERSION=	3.3
