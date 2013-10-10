@@ -5,8 +5,17 @@ Fix so name, checking for DOT and DOXYGEN.
 Override the arch setting to remove OpenBSD version from it,
 so ports don't have to be bumped when OpenBSD version changes.
 
---- configure.orig	Tue May 14 05:02:28 2013
-+++ configure	Tue May 14 08:45:49 2013
+--- configure.orig	Thu Jun 27 06:16:17 2013
++++ configure	Thu Oct 10 12:45:40 2013
+@@ -14793,7 +14793,7 @@ _ACEOF
+ fi
+ 
+ case "$target_os" in #(
+-  openbsd*) :
++  openbsd*|bitrig*) :
+ 
+   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for heap align log on openbsd" >&5
+ $as_echo_n "checking for heap align log on openbsd... " >&6; }
 @@ -16987,13 +16987,13 @@ fi
  if test x"$enable_pthread" = xyes; then
      for pthread_lib in thr pthread pthreads c c_r root; do
@@ -24,8 +33,30 @@ so ports don't have to be bumped when OpenBSD version changes.
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -18274,7 +18274,7 @@ esac
-   openbsd*) :
+@@ -17061,7 +17061,7 @@ done
+     MAINLIBS="-pthread $MAINLIBS" ;; #(
+   *) :
+     case "$target_os" in #(
+-  openbsd*) :
++  openbsd*|bitrig*) :
+     LIBS="-pthread $LIBS" ;; #(
+   *) :
+     LIBS="-l$pthread_lib $LIBS" ;;
+@@ -17446,7 +17446,7 @@ esac ;; #(
+ 			  test "$GCC" = yes && test "$rb_cv_prog_gnu_ld" = yes || LDSHARED='$(LD) -Bshareable'
+ 			fi
+ 			rb_cv_dlopen=yes ;; #(
+-  openbsd*|mirbsd*) :
++  openbsd*|bitrig*|mirbsd*) :
+     	: ${LDSHARED='$(CC) -shared ${CCDLFLAGS}'}
+ 			if test "$rb_cv_binary_elf" = yes; then
+ 			    LDFLAGS="$LDFLAGS -Wl,-E"
+@@ -18271,10 +18271,10 @@ esac
+ 	   LIBRUBY_ALIASES=""
+ 	fi
+ 	 ;; #(
+-  openbsd*) :
++  openbsd*|bitrig*) :
  
  	SOLIBS='$(LIBS)'
 -	LIBRUBY_SO='lib$(RUBY_SO_NAME).so.$(MAJOR).'`expr ${MINOR} \* 10 + ${TEENY}`
@@ -33,13 +64,14 @@ so ports don't have to be bumped when OpenBSD version changes.
  	 ;; #(
    solaris*) :
  
-@@ -19499,7 +19499,10 @@ _ACEOF
+@@ -19499,7 +19499,11 @@ _ACEOF
  _ACEOF
  
  else
 -    arch="${target_cpu}-${target_os}"
 +    case "$target_os" in
 +      openbsd*) arch="$target_cpu-openbsd" ;;
++      bitrig*) arch="$target_cpu-bitrig" ;;
 +      *) arch="${target_cpu}-${target_os}" ;;
 +    esac
      cat >>confdefs.h <<_ACEOF

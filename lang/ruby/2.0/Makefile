@@ -10,6 +10,7 @@ COMMENT-tk =		tk interface for ruby
 COMMENT-ri_docs =	ri documentation files for ruby
 
 VERSION =		2.0.0
+REVISION =		0
 PATCHLEVEL =		247
 RUBYLIBREV =		2.0
 DISTNAME =		ruby-${VERSION}-p${PATCHLEVEL}
@@ -26,6 +27,8 @@ WANTLIB-ri_docs =	# empty
 PKGSPEC-main =		ruby->=2.0,<2.1
 
 BUILD_DEPENDS =		shells/bash
+
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/tool
 
 CONFIGURE_ARGS =	--program-suffix=20 \
 			--with-soname=ruby20 \
