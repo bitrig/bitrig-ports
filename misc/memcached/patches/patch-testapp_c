@@ -1,0 +1,12 @@
+$OpenBSD$
+--- testapp.c.orig	Thu Oct 10 18:38:09 2013
++++ testapp.c	Thu Oct 10 18:39:40 2013
+@@ -1783,7 +1783,7 @@ static enum test_return test_binary_pipeline_hickup(vo
+ 
+ 
+ static enum test_return test_issue_101(void) {
+-    const int max = 2;
++    int max = 2;
+     enum test_return ret = TEST_PASS;
+     int fds[max];
+     int ii = 0;
