@@ -1,8 +1,8 @@
 $OpenBSD: patch-Source_WTF_wtf_MathExtras_h,v 1.1 2013/10/06 14:03:43 landry Exp $
 signbit & isfinite are defined in gcc's cmath for 4.6 & 4.8..
 so partly revert https://bugs.webkit.org/show_bug.cgi?id=19975, make it conditional to older gcc
---- Source/WTF/wtf/MathExtras.h.orig	Fri Sep 20 09:24:34 2013
-+++ Source/WTF/wtf/MathExtras.h	Mon Oct  7 20:56:41 2013
+--- Source/WTF/wtf/MathExtras.h.orig	Fri Sep 20 02:24:34 2013
++++ Source/WTF/wtf/MathExtras.h	Thu Oct 10 14:39:29 2013
 @@ -38,7 +38,7 @@
  #include <ieeefp.h>
  #endif
@@ -12,13 +12,25 @@ so partly revert https://bugs.webkit.org/show_bug.cgi?id=19975, make it conditio
  #include <sys/types.h>
  #include <machine/ieee.h>
  #endif
-@@ -106,7 +106,8 @@ inline bool isinf(double x) { return !finite(x) && !is
- 
+@@ -100,21 +100,6 @@ inline bool signbit(double x) { return copysign(1.0, x
+ #endif
+ #ifndef isinf
+ inline bool isinf(double x) { return !finite(x) && !isnand(x); }
+-#endif
+-
+-} // namespace std
+-
+-#endif
+-
+-#if OS(OPENBSD)
+-
+-namespace std {
+-
+-#ifndef isfinite
+-inline bool isfinite(double x) { return finite(x); }
+-#endif
+-#ifndef signbit
+-inline bool signbit(double x) { struct ieee_double *p = (struct ieee_double *)&x; return p->dbl_sign; }
  #endif
  
--#if OS(OPENBSD)
-+/* isfinite and signbit exist in gcc 4.6 or 4.8, not in 4.2 */
-+#if (OS(OPENBSD) || OS(BITRIG)) && (defined(__GNUC__) && __GNUC__ >= 4 && __GNUC_MINOR__ <= 2)
- 
- namespace std {
- 
+ } // namespace std
