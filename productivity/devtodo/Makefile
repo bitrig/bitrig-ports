@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/21 08:48:52 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.22 2013/10/11 23:50:41 naddy Exp $
 
 COMMENT=		reminder/task program aimed at developers
 
@@ -17,7 +17,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c m ncurses readline stdc++
 LIB_DEPENDS=		devel/readline
 
-USE_GROFF=		Yes
 CONFIGURE_STYLE=	gnu
 
 EXAMPLES=		doc/scripts.* doc/todorc.example contrib/*

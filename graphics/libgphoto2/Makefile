@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2013/05/08 09:10:39 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.30 2013/10/11 23:49:48 naddy Exp $
 
 COMMENT =	digital camera library
 CATEGORIES =	graphics devel
@@ -24,7 +24,6 @@ WANTLIB += pthread pthread-stubs usb usb-1.0 z
 
 MAKE_FLAGS =		INTLLIBS='$$(LTLIBINTL)'
 
-USE_GROFF =		Yes
 CONFIGURE_STYLE =	gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/auto-aux ${WRKSRC}/libgphoto2_port/auto-aux
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \

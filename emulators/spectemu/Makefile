@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/03/11 11:06:04 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2013/10/11 23:49:31 naddy Exp $
 
 COMMENT=		ZX Spectrum 48k emulator
 
@@ -16,7 +16,6 @@ LIB_DEPENDS=		devel/readline
 
 MASTER_SITES=		${HOMEPAGE}
 
-USE_GROFF =		Yes
 
 CONFIGURE_STYLE=	gnu
 
