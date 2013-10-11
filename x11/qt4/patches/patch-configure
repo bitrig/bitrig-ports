@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.25 2013/10/04 13:15:40 dcoppa Exp $
 --- configure.orig	Fri Jun  7 07:16:41 2013
-+++ configure	Fri Sep 27 10:10:55 2013
++++ configure	Fri Oct 11 19:19:48 2013
 @@ -917,7 +917,7 @@ CFG_SILENT=no
  CFG_GRAPHICS_SYSTEM=default
  CFG_RUNTIME_SYSTEM=
@@ -19,6 +19,15 @@ $OpenBSD: patch-configure,v 1.25 2013/10/04 13:15:40 dcoppa Exp $
              else
                  OPT_VERBOSE=yes
              fi
+@@ -2892,7 +2892,7 @@ if [ -z "$PLATFORM" ]; then
+             - Also available for FreeBSD: freebsd-icc
+         "
+         ;;
+-     OpenBSD:*)
++     OpenBSD:* | Bitrig:*)
+         PLATFORM=openbsd-g++
+         ;;
+      NetBSD:*)
 @@ -4958,7 +4958,7 @@ if true; then ###[ '!' -f "$outpath/bin/qmake" ];
          EXTRA_OBJS=
          EXTRA_SRCS=
