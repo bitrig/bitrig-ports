@@ -45,6 +45,17 @@ MOZILLA_DATADIRS =	chrome components defaults dictionaries extensions \
 MOZILLA_AUTOCONF_DIRS +=	js/src
 MOZILLA_SUBST_FILES +=		config/autoconf.mk.in
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/build/autoconf \
+				${WRKSRC}/ipc/chromium/src/third_party/libevent \
+				${WRKSRC}/js/ctypes/libffi \
+				${WRKSRC}/js/src/build/autoconf \
+				${WRKSRC}/modules/freetype2/builds/unix \
+				${WRKSRC}/nsprpub/build/autoconf \
+				${WRKSRC}/toolkit/crashreporter/google-breakpad/autotools
+
+CC =	gcc
+CXX =	g++
+
 pre-install:
 	ln -sf ${MOB}/firefox{,36}
 	ln -sf ${MOB}/firefox{,36}-bin

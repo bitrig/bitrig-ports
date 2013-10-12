@@ -1,7 +1,29 @@
 $OpenBSD: patch-xpcom_reflect_xptcall_src_md_unix_Makefile_in,v 1.3 2011/03/26 10:58:36 landry Exp $
---- xpcom/reflect/xptcall/src/md/unix/Makefile.in.orig	Wed Jan  6 05:35:35 2010
-+++ xpcom/reflect/xptcall/src/md/unix/Makefile.in	Sun Jan 10 17:47:30 2010
-@@ -207,7 +207,7 @@ endif
+--- xpcom/reflect/xptcall/src/md/unix/Makefile.in.orig	Tue Mar  6 15:45:48 2012
++++ xpcom/reflect/xptcall/src/md/unix/Makefile.in	Fri Oct 11 20:52:41 2013
+@@ -76,7 +76,7 @@ endif
+ endif
+ endif
+ 
+-ifneq (,$(filter FreeBSD NetBSD OpenBSD BSD_OS,$(OS_ARCH)))
++ifneq (,$(filter FreeBSD NetBSD OpenBSD Bitrig BSD_OS,$(OS_ARCH)))
+ ifeq (86,$(findstring 86,$(OS_TEST)))
+ CPPSRCS		:= xptcinvoke_unixish_x86.cpp xptcstubs_unixish_x86.cpp
+ endif
+@@ -109,6 +109,12 @@ ifeq ($(OS_ARCH)$(OS_TEST),OpenBSDx86_64)
+ CPPSRCS		:= xptcinvoke_amd64_openbsd.cpp xptcstubs_amd64_openbsd.cpp
+ endif
+ #
++# Bitrig/amd64
++#
++ifeq ($(OS_ARCH)$(OS_TEST),Bitrigx86_64)
++CPPSRCS		:= xptcinvoke_amd64_openbsd.cpp xptcstubs_amd64_openbsd.cpp
++endif
++#
+ # FreeBSD/amd64
+ #
+ ifeq ($(OS_ARCH)$(OS_TEST),FreeBSDx86_64)
+@@ -207,9 +213,15 @@ endif
  #
  # OpenBSD/ARM
  #
@@ -9,8 +31,16 @@ $OpenBSD: patch-xpcom_reflect_xptcall_src_md_unix_Makefile_in,v 1.3 2011/03/26 1
 +ifeq ($(OS_ARCH)$(OS_TEST),OpenBSDarm)
  CPPSRCS		:= xptcinvoke_arm_openbsd.cpp xptcstubs_arm_openbsd.cpp
  endif
++#
++# Bitrig/ARM
++#
++ifeq ($(OS_ARCH)$(OS_TEST),Bitrigarm)
++CPPSRCS		:= xptcinvoke_arm_openbsd.cpp xptcstubs_arm_openbsd.cpp
++endif
  
-@@ -351,6 +351,7 @@ endif
+ ######################################################################
+ # HPPA
+@@ -351,6 +363,7 @@ endif
  ifeq ($(OS_ARCH)$(OS_TEST),OpenBSDpowerpc)
  CPPSRCS		:= xptcinvoke_ppc_openbsd.cpp xptcstubs_ppc_openbsd.cpp
  ASFILES		:= xptcinvoke_asm_ppc_openbsd.s xptcstubs_asm_ppc_openbsd.s

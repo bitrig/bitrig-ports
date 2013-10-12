@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure_in,v 1.4 2011/12/15 23:06:32 nigel Exp $
---- configure.in.orig	Thu Nov  3 13:12:39 2011
-+++ configure.in	Wed Dec 14 14:31:15 2011
+--- configure.in.orig	Tue Mar  6 15:45:23 2012
++++ configure.in	Fri Oct 11 20:44:32 2013
 @@ -1059,7 +1059,7 @@ MOZ_PNG_LIBS='$(call EXPAND_LIBNAME_PATH,mozpng,$(DEPT
  
  MOZ_JS_LIBS='-L$(LIBXUL_DIST)/bin -lmozjs'
@@ -10,15 +10,26 @@ $OpenBSD: patch-configure_in,v 1.4 2011/12/15 23:06:32 nigel Exp $
  XPCOM_FROZEN_LDOPTS='-L$(LIBXUL_DIST)/bin -lxpcom'
  LIBXUL_LIBS='$(XPCOM_FROZEN_LDOPTS) -lxul'
  XPCOM_GLUE_LDOPTS='$(LIBXUL_DIST)/lib/$(LIB_PREFIX)xpcomglue_s.$(LIB_SUFFIX) $(XPCOM_FROZEN_LDOPTS)'
-@@ -2403,7 +2403,7 @@ case "$target" in
+@@ -2402,8 +2402,8 @@ case "$target" in
+ 	esac
  	;;
  
- *-openbsd*)
+-*-openbsd*)
 -    DLL_SUFFIX=".so.1.0"
++*-openbsd* | *-bitrig*)
 +    DLL_SUFFIX=".so.${SO_VERSION}"
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
      DSO_LDOPTS='-shared -fPIC'
+@@ -3425,7 +3425,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.
 @@ -4132,9 +4132,9 @@ AC_CACHE_CHECK(for __thread keyword for TLS variables,
                              ac_cv_thread_keyword=yes,
                              ac_cv_thread_keyword=no)])

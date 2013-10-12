@@ -1,0 +1,16 @@
+$OpenBSD$
+--- nsprpub/lib/tests/Makefile.in.orig	Fri Oct 11 20:41:40 2013
++++ nsprpub/lib/tests/Makefile.in	Fri Oct 11 20:55:21 2013
+@@ -117,6 +117,12 @@ ifeq (,$(filter-out OpenBSD,$(OS_ARCH)))
+     endif
+ endif
+ 
++ifeq (,$(filter-out Bitrig,$(OS_ARCH)))
++    ifeq ($(USE_PTHREADS),1)
++        EXTRA_LIBS = -lpthread
++    endif
++endif
++
+ ifeq ($(OS_ARCH), OSF1)
+ LDOPTS += -rpath $(PWD)/$(dist_libdir) -lpthread
+ endif

@@ -1,0 +1,30 @@
+$OpenBSD$
+--- nsprpub/configure.orig	Fri Oct 11 20:41:40 2013
++++ nsprpub/configure	Fri Oct 11 20:54:32 2013
+@@ -4673,7 +4673,7 @@ EOF
+     _DEBUG_FLAGS="-gstabs"
+ 	;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     cat >> confdefs.h <<\EOF
+ #define XP_UNIX 1
+ EOF
+@@ -5961,7 +5961,7 @@ EOF
+ 	        _PTHREAD_LDFLAGS=
+ 	    fi
+ 	    ;;
+-    *-openbsd*)
++    *-openbsd*|*-bitrig*)
+         if test "$ac_cv_have_dash_pthread" = "yes"; then
+             _PTHREAD_LDFLAGS=-pthread
+         fi
+@@ -6116,7 +6116,7 @@ EOF
+     _PTHREAD_LDFLAGS=
+     USE_USER_PTHREADS=
+     ;;
+-*-netbsd*|*-openbsd*)
++*-netbsd*|*-openbsd*|*-bitrig*)
+     if test -n "$USE_NSPR_THREADS"; then
+         cat >> confdefs.h <<\EOF
+ #define _PR_LOCAL_THREADS_ONLY 1
