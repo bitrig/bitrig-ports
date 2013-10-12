@@ -38,6 +38,17 @@ PCFILES =		libxul.pc libxul-embedding.pc mozilla-js.pc \
 WANTLIB-devel =		${MOZILLA_PROJECT}/mozjs ${MOZILLA_PROJECT}/xpcom \
 			${MOZILLA_PROJECT}/xul
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/build/autoconf \
+				${WRKSRC}/ipc/chromium/src/third_party/libevent \
+				${WRKSRC}/js/ctypes/libffi \
+				${WRKSRC}/js/src/build/autoconf \
+				${WRKSRC}/modules/freetype2/builds/unix \
+				${WRKSRC}/nsprpub/build/autoconf \
+				${WRKSRC}/toolkit/crashreporter/google-breakpad/autotools
+
+CC =	gcc
+CXX =	g++
+
 post-build:
 	cd ${WRKSRC}/xulrunner/installer && env -i ${MAKE_ENV} \
 		${MAKE_PROGRAM} ${MAKE_FLAGS} ${PCFILES}
