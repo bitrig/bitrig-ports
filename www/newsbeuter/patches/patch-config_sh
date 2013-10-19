@@ -5,14 +5,14 @@ This is covered in the pull request sent upstream:
 
 If this pull request is merged, this patch will no longer apply.
 
---- config.sh.orig	Tue Aug 27 06:20:39 2013
-+++ config.sh	Tue Oct 15 18:15:15 2013
+--- config.sh.orig	Tue Aug 27 14:20:39 2013
++++ config.sh	Sat Oct 19 20:41:07 2013
 @@ -103,7 +103,7 @@ check_pkg "stfl" || fail "stfl"
  
  if [ `uname -s` = "Darwin" ]; then
  	check_custom "ncurses5.4" "ncurses5.4-config" || fail "ncurses5.4"
 -else 
-+elif [ `uname -s` != "OpenBSD" ]; then
++elif [[ `uname -s` != "OpenBSD" && `uname -s` != "Bitrig" ]]; then
  	check_custom "ncursesw5" "ncursesw5-config" || fail "ncursesw5"
  fi
  check_ssl_implementation
