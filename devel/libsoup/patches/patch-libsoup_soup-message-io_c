@@ -1,0 +1,13 @@
+$OpenBSD$
+--- libsoup/soup-message-io.c.orig	Mon Oct 28 18:49:15 2013
++++ libsoup/soup-message-io.c	Mon Oct 28 18:51:45 2013
+@@ -988,7 +988,8 @@ soup_message_io_run_until_finish (SoupMessage   *msg,
+ 	g_object_ref (msg);
+ 
+ 	if (io) {
+-		g_return_if_fail (io->mode == SOUP_MESSAGE_IO_CLIENT);
++		if (io->mode != SOUP_MESSAGE_IO_CLIENT)
++			return FALSE;
+ 
+ 		if (io->read_state < SOUP_MESSAGE_IO_STATE_BODY_DONE)
+ 			io->read_state = SOUP_MESSAGE_IO_STATE_BODY_DONE;
