@@ -1,7 +1,7 @@
 $OpenBSD$
---- tools/dev/unix-build/Makefile.svn.orig	Fri Aug 17 11:46:47 MDT 2012
-+++ tools/dev/unix-build/Makefile.svn	Fri Aug 17 11:46:47 MDT 2012
-@@ -609,6 +609,10 @@ ifeq ($(UNAME),OpenBSD)
+--- tools/dev/unix-build/Makefile.svn.orig	Tue Apr  2 18:28:10 2013
++++ tools/dev/unix-build/Makefile.svn	Mon Oct 28 23:03:49 2013
+@@ -645,6 +645,10 @@ ifeq ($(UNAME),OpenBSD)
  KRB5_CONFIG_PATH=/usr/ports/net/neon/files
  endif
  
@@ -12,17 +12,37 @@ $OpenBSD$
  # configure neon
  $(NEON_OBJDIR)/.configured: $(NEON_OBJDIR)/.retrieved
  	cd $(NEON_SRCDIR) && ./autogen.sh
-@@ -819,6 +823,13 @@ ifeq ($(UNAME),OpenBSD)
- 		mv $$f.tmp $$f; \
+@@ -856,6 +860,13 @@ ifeq ($(UNAME),OpenBSD)
  	done
  	chmod +x $(CYRUS_SASL_SRCDIR)/configure
-+endif
+ endif
 +ifeq ($(UNAME),Bitrig)
 +        for f in `grep -l -R -- -lroken $(CYRUS_SASL_SRCDIR)`; do \
 +                sed -e 's/-lroken//g' < $$f > $$f.tmp && \
 +                mv $$f.tmp $$f; \
 +        done
 +        chmod +x $(CYRUS_SASL_SRCDIR)/configure
++endif
+ 	# Fixes excessive auth log spam from sasl if broken .la files exist
+ 	sed 's/SASL_LOG_WARN/SASL_LOG_DEBUG/' \
+ 		< $(CYRUS_SASL_SRCDIR)/lib/dlopen.c \
+@@ -1062,7 +1073,7 @@ $(PYTHON_OBJDIR)/.retrieved: $(DISTDIR)/$(PYTHON_DIST)
+ 	# http://bugs.python.org/issue12560
+ 	# Also fix compilation error on OpenBSD 5.0 and later (undefined
+ 	# reference to 'lstat' -- already fixed in hg.python.org/cpython).
+-	sed -e '4930s#NetBSD\*|#NetBSD*|OpenBSD*|#' \
++	sed -e '4930s#NetBSD\*|#NetBSD*|OpenBSD*|Bitrig*|#' \
+ 	 	-e 's#OpenBSD/4\.\[789\]#OpenBSD/*#' \
+ 		< $(PYTHON_SRCDIR)/configure \
+ 		> $(PYTHON_SRCDIR)/configure.patched
+@@ -1367,6 +1378,10 @@ libpath:
+ # libpthread (e.g. libsvn_auth_gnome_keyring.so) into executables that
+ # aren't linked to libpthread.
+ ifeq ($(UNAME),OpenBSD)
++LIB_PTHREAD_HACK=LD_PRELOAD=libpthread.so
++endif
++
++ifeq ($(UNAME),Bitrig)
+ LIB_PTHREAD_HACK=LD_PRELOAD=libpthread.so
  endif
- 	touch $@
  

@@ -1,0 +1,19 @@
+$OpenBSD$
+--- build/ac-macros/compiler.m4.orig	Tue Oct 29 00:03:33 2013
++++ build/ac-macros/compiler.m4	Tue Oct 29 00:06:16 2013
+@@ -71,8 +71,6 @@ AC_DEFUN([SVN_CC_MODE_SETUP],
+   AC_SUBST(CMODEFLAGS)
+   AC_SUBST(CMAINTAINERFLAGS)
+ 
+-  dnl Tell clang to not accept unknown warning flags
+-  SVN_CFLAGS_ADD_IFELSE([-Werror=unknown-warning-option])
+ ])
+ 
+ 
+@@ -90,6 +88,4 @@ AC_DEFUN([SVN_CXX_MODE_SETUP],
+   AC_SUBST(CXXMODEFLAGS)
+   AC_SUBST(CXXMAINTAINERFLAGS)
+ 
+-  dnl Tell clang++ to not accept unknown warning flags
+-  SVN_CXXFLAGS_ADD_IFELSE([-Werror=unknown-warning-option])
+ ])
