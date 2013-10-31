@@ -1,7 +1,7 @@
 $OpenBSD$
---- modules/freetype2/builds/unix/configure.orig	Sun Jan 27 10:07:06 2013
-+++ modules/freetype2/builds/unix/configure	Sun Jan 27 10:18:05 2013
-@@ -5950,7 +5950,7 @@ else
+--- modules/freetype2/builds/unix/configure.orig	Sat Oct 26 00:27:37 2013
++++ modules/freetype2/builds/unix/configure	Fri Nov  8 19:43:36 2013
+@@ -6006,7 +6006,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -10,7 +10,7 @@ $OpenBSD$
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -6388,7 +6388,7 @@ freebsd* | dragonfly*)
+@@ -6444,7 +6444,7 @@ freebsd* | dragonfly*)
      i*86 )
        # Not sure whether the presence of OpenBSD here was a mistake.
        # Let's accept both of them until this is cleared up.
@@ -19,7 +19,7 @@ $OpenBSD$
        lt_cv_file_magic_cmd=/usr/bin/file
        lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
        ;;
-@@ -6462,7 +6462,7 @@ newos6*)
+@@ -6518,7 +6518,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -28,7 +28,7 @@ $OpenBSD$
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -7075,7 +7075,7 @@ old_postuninstall_cmds=
+@@ -7131,7 +7131,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -37,7 +37,7 @@ $OpenBSD$
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -9907,7 +9907,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -9963,7 +9963,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -46,7 +46,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    esac
-@@ -10783,7 +10783,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -10839,7 +10839,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -55,7 +55,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -11826,7 +11826,7 @@ newsos6)
+@@ -11882,7 +11882,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  

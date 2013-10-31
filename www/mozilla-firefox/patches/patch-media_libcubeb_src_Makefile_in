@@ -1,7 +1,7 @@
 $OpenBSD$
---- media/libcubeb/src/Makefile.in.orig	Wed Sep 11 01:15:15 2013
-+++ media/libcubeb/src/Makefile.in	Fri Sep 27 23:35:43 2013
-@@ -46,6 +46,13 @@ DISABLED_CSRCS           += \
+--- media/libcubeb/src/Makefile.in.orig	Sat Oct 26 00:27:33 2013
++++ media/libcubeb/src/Makefile.in	Fri Nov  8 19:43:36 2013
+@@ -30,6 +30,13 @@ ifeq ($(OS_TARGET),Darwin)
  DEFINES         += -DUSE_AUDIOUNIT
  endif
  
@@ -13,5 +13,5 @@ $OpenBSD$
 +endif
 +
  ifeq ($(OS_ARCH),OpenBSD)
- DISABLED_CSRCS           += \
-                 cubeb_sndio.c \
+ DEFINES         += -DUSE_SNDIO
+ endif
