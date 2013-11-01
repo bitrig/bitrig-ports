@@ -11,6 +11,8 @@ V=			2.11
 DISTNAME=		alpine-${V}
 EXTRACT_SUFX=		.tar.xz
 
+REVISION=		1
+
 SHARED_LIBS=		c-client 5.1
 
 # grep "PICO version" ${WRKSRC}/pico/pico.h
@@ -26,6 +28,9 @@ PKGNAME-pico=		pico-${PICO_V}
 PKGNAME-pilot=		pilot-${PILOT_V}
 
 REVISION-pilot=		11
+
+FLAVORS=		passfile
+FLAVOR?=
 
 EPOCH-c-client=		0
 EPOCH-imap=		0
@@ -92,6 +97,10 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--without-tcl \
 			--enable-quotas \
 			--disable-debug
+
+.if ${FLAVOR:L:Mpassfile}
+CONFIGURE_ARGS +=	--with-passfile=".pine-passfile"
+.endif
 
 HEADERS=		c-client.h dummy.h env.h env_unix.h fdstring.h \
 			flockcyg.h flocksim.h flstring.h fs.h ftl.h \
