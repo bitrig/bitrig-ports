@@ -1,12 +1,12 @@
-$OpenBSD: patch-configure_ac,v 1.4 2009/08/11 21:17:21 sthen Exp $
---- configure.ac.orig	Fri Aug  7 06:51:30 2009
-+++ configure.ac	Thu Jun  7 20:48:50 2012
+$OpenBSD: patch-configure_ac,v 1.6 2013/11/04 21:49:48 brad Exp $
+--- configure.ac.orig	Fri Aug  7 13:51:30 2009
++++ configure.ac	Fri Nov  8 20:28:32 2013
 @@ -50,7 +50,7 @@ case "$target" in
    *-*-netbsd*)
      check_threads=true
      ;;
 -  *-*-openbsd*)
-+  *-*-openbsd* | *-*-bitrig*)
++  *-*-openbsd*|*-*-bitrig*)
      check_threads=true
      ;;
    *-*-*bsd*)
@@ -82,21 +82,20 @@ $OpenBSD: patch-configure_ac,v 1.4 2009/08/11 21:17:21 sthen Exp $
  #
  # Workaround a bug in GCC 2.x which causes memory exhaustion
  # when compiling sha1 with optimizations on UltraSPARC.
-@@ -1013,7 +960,7 @@ if test x$check_threads = xtrue; then
-   AC_MSG_RESULT(yes)
-   AC_CHECK_HEADERS(pthread.h,
-     [
--      LIBS="$LIBS -lpthread"
-+      LIBS="$LIBS -pthread"
-       AC_CHECK_LIB(pthread, pthread_attr_init, has_threads=true,
-         [
-           # FreeBSD
-@@ -1047,7 +994,7 @@ if test x$check_threads = xtrue; then
+@@ -1294,7 +1241,7 @@ fi
  
-           AC_CHECK_HEADERS(pthread.h,
-             [
--              LIBS="$LIBS -lpthread"
-+              LIBS="$LIBS -pthread"
-               AC_CHECK_LIB(pthread, pthread_attr_init, has_threads=true,
-                 [
-                   has_threads=false
+ SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fno-regmove)
+ if test x$summary_debug = xno -a x$want_cc_optimizations = xtrue; then
+-  SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fomit-frame-pointer -O3)
++  SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fomit-frame-pointer)
+ fi
+ 
+ AC_SUBST(SILC_CRYPTO_CFLAGS)
+@@ -1330,7 +1277,6 @@ if test x$compile_libs = xtrue; then
+ AC_MSG_NOTICE([configuring math library])
+ 
+ if test x$want_cc_optimizations = xtrue; then
+-  SILC_ADD_CC_FLAGS(MATH, -O3, SILC_ADD_CC_FLAGS(MATH, -O2))
+   SILC_ADD_CC_FLAGS(MATH, -funroll-all-loops)
+ fi
+ if test x$enable_stack_trace != xyes; then
