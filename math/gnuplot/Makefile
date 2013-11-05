@@ -62,7 +62,7 @@ WANTLIB +=	gobject-2.0 pangocairo-1.0 cairo glib-2.0 pango-1.0 pangoft2-1.0
 .if ${FLAVOR:Mwith_emacs}
 BUILD_DEPENDS =	editors/emacs
 .else
-CONFIGURE_ARGS += --without-cairo
+CONFIGURE_ARGS += --without-lisp-files
 .endif
 
 post-install:
