@@ -4,7 +4,7 @@ COMMENT =	command-driven interactive function plotting program
 
 V =		4.6
 PATCHLEVEL =	3
-REVISION =	4
+REVISION =	5
 DISTNAME =	gnuplot-${V}.${PATCHLEVEL}
 CATEGORIES =	math graphics
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=gnuplot/}
@@ -18,9 +18,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =	c m ncurses readline stdc++ termcap z
 LIB_DEPENDS=	devel/readline
 
-BUILD_DEPENDS =	editors/emacs21
-
-FLAVORS =	no_cairo no_x11
+FLAVORS =	no_cairo no_x11 with_emacs
 FLAVOR ?=
 
 CONFIGURE_STYLE =	gnu
@@ -59,6 +57,12 @@ MODULES +=	devel/gettext
 LIB_DEPENDS +=	devel/pango	\
 		graphics/cairo
 WANTLIB +=	gobject-2.0 pangocairo-1.0 cairo glib-2.0 pango-1.0 pangoft2-1.0
+.endif
+
+.if ${FLAVOR:Mwith_emacs}
+BUILD_DEPENDS =	editors/emacs
+.else
+CONFIGURE_ARGS += --without-lisp-files
 .endif
 
 post-install:

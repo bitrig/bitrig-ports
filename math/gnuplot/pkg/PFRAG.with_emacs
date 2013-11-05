@@ -1,0 +1,3 @@
+@info info/gnuplot.info
+share/emacs/site-lisp/gnuplot-eldoc.el
+share/emacs/site-lisp/gnuplot-eldoc.elc
