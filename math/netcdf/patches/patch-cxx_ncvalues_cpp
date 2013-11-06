@@ -1,0 +1,12 @@
+$OpenBSD$
+--- cxx/ncvalues.cpp.orig	Wed Nov  6 15:27:23 2013
++++ cxx/ncvalues.cpp	Wed Nov  6 15:35:51 2013
+@@ -9,7 +9,7 @@
+ 
+ #include <config.h>
+ #include <iostream>
+-#include <string>
++#include <string.h>
+ 
+ #include "ncvalues.h"
+ 
