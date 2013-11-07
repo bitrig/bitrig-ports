@@ -2,7 +2,7 @@
 
 COMMENT =		virtual Python environment builder
 
-MODPY_EGG_VERSION =	1.7
+MODPY_EGG_VERSION =	1.10.1
 DISTNAME =		virtualenv-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		devel
@@ -19,7 +19,7 @@ MASTER_SITES =		${MASTER_SITE_PYPI:=v/virtualenv/}
 MODULES =		lang/python
 
 TEST_DEPENDS =	devel/py-nose \
-			devel/py-mock
+		devel/py-mock
 
 MODPY_SETUPTOOLS =	Yes
 
