@@ -1,6 +1,5 @@
-$OpenBSD$
---- binutils/Makefile.bsd-wrapper.orig	Tue Mar 26 19:06:40 2013
-+++ binutils/Makefile.bsd-wrapper	Sat Apr 27 21:40:54 2013
+--- binutils/Makefile.bsd-wrapper.orig	Fri Jul  5 17:29:51 2013
++++ binutils/Makefile.bsd-wrapper	Thu Nov  7 16:06:56 2013
 @@ -5,9 +5,9 @@
  CFLAGS+=	${PIE_DEFAULT}
  # This allows moving the whole binutils installation around for 
@@ -18,17 +17,17 @@ $OpenBSD$
  		binutils/doc/objdump.1 binutils/doc/readelf.1 \
  		c++filt.1
  
--.if !defined(TARGET_ARCH)
+-.if !defined(TARGET_ARCH) && !defined(BOOTSTRAP)
 -CONF_SUBDIRS+=	gdb
 -SUBDIRS+=	gdb
 -INST_SUBDIRS+=	gdb
 -MAN+=		gdb/gdb.1
 -.endif
 -
- .if ${ELF_TOOLCHAIN:L} == "yes"
  SUBDIRS+=	binutils ld gas
  CONF_SUBDIRS+=	binutils ld gas
-@@ -68,14 +61,15 @@ all:	config.status
+ INST_SUBDIRS+=	binutils ld gas
+@@ -63,15 +56,15 @@ all:	config.status
  	  CONFIGURE_HOST_MODULES='${CONFIGURE_HOST_MODULES}' \
  	  ${MAKE} CC="${CC}" \
  	    CFLAGS="${CFLAGS} ${COPTS}" LDFLAGS=${LDSTATIC} \
@@ -42,11 +41,12 @@ $OpenBSD$
  	    ALL_MODULES="${ALL_MODULES}" \
  	    ALL_HOST_MODULES='${ALL_HOST_MODULES}' \
  	    INFO_HOST_MODULES='${INFO_HOST_MODULES}' all info
+-
 +	cd ${.OBJDIR}/cxxfilt && ${MAKE}
- .if ${ELF_TOOLCHAIN:L} != "yes"
- 	cd ${.OBJDIR}/binutils && \
- 	    ${MAKE} CC="${CC}" CFLAGS="${CFLAGS} ${COPTS}" \
-@@ -91,10 +85,14 @@ CF=
+ .include <bsd.own.mk>
+ 
+ .ifdef GLOBAL_AUTOCONF_CACHE
+@@ -81,10 +74,14 @@ CF=
  .endif
  
  do-config: .USE
@@ -64,7 +64,7 @@ $OpenBSD$
  	    --disable-nls --disable-gdbtk --disable-install-libbfd ${CF} \
  	    ${CONFIGTARGET}
  	cd ${.OBJDIR} && \
-@@ -121,18 +119,21 @@ config.status: do-config
+@@ -109,14 +106,17 @@ config.status: do-config
  # Need to pass SUBDIRS because of install-info
  install: maninstall
  	SUBDIRS='${INST_SUBDIRS}' ${MAKE} DESTDIR='${DESTDIR}' \
@@ -82,11 +82,6 @@ $OpenBSD$
 +	${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -o ${BINOWN} \
 +	    -g ${BINGRP} -m ${BINMODE} ${.OBJDIR}/cxxfilt/c++filt \
 +	    ${DESTDIR}${LOCALBASE}/bin
- .if ${ELF_TOOLCHAIN:L} != "yes" && ${BINUTILS_VERSION} != "binutils-2.17"
- 	cd ${.OBJDIR}/binutils && \
- 		${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -o ${BINOWN} \
--		    -g ${BINGRP} -m ${BINMODE} objdump ${DESTDIR}${PREFIX}/bin
-+		    -g ${BINGRP} -m ${BINMODE} objdump ${DESTDIR}${LOCALBASE}/bin
- .endif
  
  clean cleandir:
+ 	-@if [ -e Makefile ]; then ${MAKE} distclean; fi

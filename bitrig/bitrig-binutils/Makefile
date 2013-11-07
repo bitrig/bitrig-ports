@@ -3,10 +3,10 @@ DPB_PROPERTIES= 	parallel
 
 COMMENT =		Bitrig binutils
 
-DISTNAME =		bitrig-binutils-0.7
+DISTNAME =		bitrig-binutils-0.8
 EXTRACT_SUFX =		.tgz
 CATEGORIES =		bitrig devel
-SHARED_LIBS =		iberty 10.1
+SHARED_LIBS =		iberty 11.0
 
 HOMEPAGE =		https://www.bitrig.org/
 MAINTAINER =		Marco Peereboom <marco@bitrig.org>
