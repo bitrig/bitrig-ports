@@ -2,7 +2,7 @@
 
 COMMENT =	code coverage measurement for Python
 
-MODPY_EGG_VERSION = 3.6
+MODPY_EGG_VERSION = 3.7
 DISTNAME =	coverage-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
 
