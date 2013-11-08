@@ -2,7 +2,7 @@
 
 COMMENT=		discovery-based unittest extension
 
-MODPY_EGG_VERSION=	1.1.2
+MODPY_EGG_VERSION=	1.3.0
 DISTNAME=		nose-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
 REVISION=		2
