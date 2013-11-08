@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.85 2013/11/05 15:46:07 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.86 2013/11/08 10:44:30 ajacoutot Exp $
 
 COMMENT=	GNU Transport Layer Security library
 
@@ -42,8 +42,7 @@ MODGNU_CONFIG_GUESS_DIRS=${WRKDIST} ${WRKDIST}/build-aux
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--disable-gtk-doc \
 		--disable-guile \
-		--disable-valgrind-tests \
-		--with-packager="OpenBSD Ports"
+		--disable-valgrind-tests
 
 # add dependency on net/unbound; see post-install as well
 CONFIGURE_ARGS += --disable-libdane
