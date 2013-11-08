@@ -2,10 +2,9 @@
 
 COMMENT =	network library for easy and scalable concurrency
 
-MODPY_EGG_VERSION =	0.13.7
+MODPY_EGG_VERSION =	0.13.8
 DISTNAME =	gevent-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
-REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	http://www.gevent.org/
