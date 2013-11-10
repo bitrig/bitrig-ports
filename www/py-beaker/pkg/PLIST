@@ -27,10 +27,12 @@ lib/python${MODPY_VERSION}/site-packages/beaker/crypto/__init__.py
 ${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/beaker/crypto/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/beaker/crypto/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/beaker/crypto/${MODPY_PYCACHE}jcecrypto.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/beaker/crypto/${MODPY_PYCACHE}nsscrypto.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/beaker/crypto/${MODPY_PYCACHE}pbkdf2.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/beaker/crypto/${MODPY_PYCACHE}pycrypto.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/beaker/crypto/${MODPY_PYCACHE}util.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/beaker/crypto/jcecrypto.py
+lib/python${MODPY_VERSION}/site-packages/beaker/crypto/nsscrypto.py
 lib/python${MODPY_VERSION}/site-packages/beaker/crypto/pbkdf2.py
 lib/python${MODPY_VERSION}/site-packages/beaker/crypto/pycrypto.py
 lib/python${MODPY_VERSION}/site-packages/beaker/crypto/util.py
