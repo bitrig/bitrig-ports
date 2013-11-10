@@ -15,8 +15,6 @@
      SUBDIR += emacs
      SUBDIR += emacs,no_x11
      SUBDIR += emacs,gtk2
-     SUBDIR += emacs21
-     SUBDIR += emacs21,no_x11
      SUBDIR += focuswriter
      SUBDIR += fte
      SUBDIR += ged
