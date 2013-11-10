@@ -2,7 +2,7 @@
 
 COMMENT=	pythonic, object-oriented web development framework
 
-MODPY_EGG_VERSION=	3.2.2
+MODPY_EGG_VERSION=	3.2.4
 DISTNAME=		CherryPy-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
 CATEGORIES=		www
@@ -12,12 +12,12 @@ HOMEPAGE=	http://www.cherrypy.org/
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=	http://download.cherrypy.org/cherrypy/${MODPY_EGG_VERSION}/
+MASTER_SITES=	${MASTER_SITE_PYPI:=C/CherryPy/}
 
 MODULES=	lang/python
 
 TEST_DEPENDS =	devel/py-nose \
-			www/py-routes
+		www/py-routes
 
 MODPY_SETUPTOOLS =	Yes
 
