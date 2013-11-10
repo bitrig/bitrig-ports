@@ -14,6 +14,8 @@ lib/python${MODPY_VERSION}/site-packages/cherrypy/_cpchecker.py
 lib/python${MODPY_VERSION}/site-packages/cherrypy/_cpchecker.pyc
 lib/python${MODPY_VERSION}/site-packages/cherrypy/_cpcompat.py
 lib/python${MODPY_VERSION}/site-packages/cherrypy/_cpcompat.pyc
+lib/python${MODPY_VERSION}/site-packages/cherrypy/_cpcompat_subprocess.py
+lib/python${MODPY_VERSION}/site-packages/cherrypy/_cpcompat_subprocess.pyc
 lib/python${MODPY_VERSION}/site-packages/cherrypy/_cpconfig.py
 lib/python${MODPY_VERSION}/site-packages/cherrypy/_cpconfig.pyc
 lib/python${MODPY_VERSION}/site-packages/cherrypy/_cpdispatch.py
@@ -139,6 +141,8 @@ lib/python${MODPY_VERSION}/site-packages/cherrypy/test/test_bus.py
 lib/python${MODPY_VERSION}/site-packages/cherrypy/test/test_bus.pyc
 lib/python${MODPY_VERSION}/site-packages/cherrypy/test/test_caching.py
 lib/python${MODPY_VERSION}/site-packages/cherrypy/test/test_caching.pyc
+lib/python${MODPY_VERSION}/site-packages/cherrypy/test/test_compat.py
+lib/python${MODPY_VERSION}/site-packages/cherrypy/test/test_compat.pyc
 lib/python${MODPY_VERSION}/site-packages/cherrypy/test/test_config.py
 lib/python${MODPY_VERSION}/site-packages/cherrypy/test/test_config.pyc
 lib/python${MODPY_VERSION}/site-packages/cherrypy/test/test_config_server.py
