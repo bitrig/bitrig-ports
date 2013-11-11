@@ -6,7 +6,7 @@ $OpenBSD: patch-Modules_FindQt4_cmake,v 1.21 2013/10/14 12:58:03 dcoppa Exp $
  set(QT4_INSTALLED_VERSION_TOO_OLD FALSE)
  
 -set(_QT4_QMAKE_NAMES qmake qmake4 qmake-qt4 qmake-mac)
-+if (CMAKE_SYSTEM_NAME MATCHES "OpenBSD")
++if(CMAKE_SYSTEM_NAME MATCHES "OpenBSD" OR CMAKE_SYSTEM_NAME MATCHES "Bitrig")
 +  set(_QT4_QMAKE_NAMES qmake4)
 +else()
 +  set(_QT4_QMAKE_NAMES qmake qmake4 qmake-qt4 qmake-mac)
