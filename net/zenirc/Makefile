@@ -5,7 +5,7 @@ COMMENT-el=	elisp sources of zenirc
 
 VERSION=	2.112
 DISTNAME=	zenirc-${VERSION}
-REVISION=		0
+REVISION=	1
 PKGNAME-main=	emacs-zenirc-${VERSION}
 PKGNAME-el=	emacs-zenirc-el-${VERSION}
 CATEGORIES=	net
@@ -21,7 +21,7 @@ MASTER_SITES=	ftp://ftp.zenirc.org/pub/zenirc/
 
 CONFIGURE_STYLE=gnu old dest
 
-RUN_DEPENDS=	editors/emacs21
+RUN_DEPENDS=	editors/emacs
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
 MULTI_PACKAGES=	-main -el

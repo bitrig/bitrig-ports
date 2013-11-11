@@ -2,7 +2,7 @@
 
 VERSION=	1.10
 DISTNAME=	automake-${VERSION}.3
-REVISION=	7
+REVISION=	8
 PKGSPEC=	automake->=${VERSION},<1.11
 
 # GPLv2
@@ -33,7 +33,7 @@ TEST_DEPENDS=	${BASE_PKGPATH} \
 			devel/gmake \
 			archivers/bzip2 \
 			devel/bison \
-			editors/emacs21 \
+			editors/emacs \
 			devel/dejagnu
 
 TEST_ENV=		AUTOCONF_VERSION=${AUTOCONF_VERSION} \

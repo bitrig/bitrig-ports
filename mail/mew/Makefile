@@ -3,7 +3,7 @@
 COMMENT=	emacs-based mail client
 
 DISTNAME=	mew-5.2
-REVISION=		0
+REVISION=	1
 CATEGORIES=	mail
 HOMEPAGE=	http://www.mew.org/
 
@@ -15,7 +15,7 @@ WANTLIB=		c z
 
 MASTER_SITES=		http://www.mew.org/Release/
 
-RUN_DEPENDS=		editors/emacs21
+RUN_DEPENDS=		editors/emacs
 BUILD_DEPENDS=		${RUN_DEPENDS}
 
 CONFIGURE_STYLE=	simple

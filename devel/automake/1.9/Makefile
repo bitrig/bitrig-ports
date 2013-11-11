@@ -2,7 +2,7 @@
 
 VERSION=	1.9
 DISTNAME=	automake-${VERSION}.6
-REVISION=	11
+REVISION=	12
 PKGSPEC=	automake->=${VERSION},<1.10
 
 MODULES=		lang/python
@@ -30,7 +30,7 @@ TEST_DEPENDS=	${MODGNU_AUTOCONF_DEPENDS} \
 			devel/gmake \
 			archivers/bzip2 \
 			devel/bison \
-			editors/emacs21 \
+			editors/emacs \
 			print/texlive/base \
 			devel/dejagnu
 

@@ -1,8 +1,8 @@
 # $OpenBSD: Makefile,v 1.11 2013/11/09 23:19:02 naddy Exp $
 
 VERSION=	1.12
+REVISION=       1
 DISTNAME=	automake-${VERSION}.6
-REVISION=	0
 PKGSPEC=	automake->=${VERSION},<1.13
 EXTRACT_SUFX=	.tar.xz
 
@@ -31,7 +31,7 @@ TEST_DEPENDS=	${BASE_PKGPATH} \
 			devel/gmake \
 			archivers/bzip2 \
 			devel/bison \
-			editors/emacs21 \
+			editors/emacs \
 			devel/dejagnu
 
 TEST_ENV=		AUTOCONF_VERSION=${AUTOCONF_VERSION} \

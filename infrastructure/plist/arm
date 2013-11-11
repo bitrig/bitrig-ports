@@ -7,7 +7,7 @@ databases/sqlports
 net/rsync
 net/cvsync
 editors/vim,no_x11
-editors/emacs21
+editors/emacs
 archivers/unzip
 archivers/bzip2
 net/nmap

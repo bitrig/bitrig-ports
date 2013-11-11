@@ -2,7 +2,7 @@
 
 VERSION=	1.11
 DISTNAME=	automake-${VERSION}.6
-REVISION=	1
+REVISION=	2
 PKGSPEC=	automake->=${VERSION},<1.12
 
 MODULES=		lang/python
@@ -31,7 +31,7 @@ TEST_DEPENDS=	${BASE_PKGPATH} \
 			devel/gmake \
 			archivers/bzip2 \
 			devel/bison \
-			editors/emacs21 \
+			editors/emacs \
 			devel/dejagnu
 
 TEST_ENV=		AUTOCONF_VERSION=${AUTOCONF_VERSION} \

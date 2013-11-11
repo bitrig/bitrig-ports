@@ -3,7 +3,7 @@
 COMMENT=	extensible emacs interface for TeX
 
 DISTNAME=	auctex-11.14
-REVISION=	5
+REVISION=	6
 CATEGORIES=	print
 
 HOMEPAGE=	https://www.gnu.org/software/auctex/
@@ -17,9 +17,9 @@ MASTER_SITES=	${MASTER_SITE_GNU:=auctex/11.14/}
 
 FAKE_FLAGS=	lispdir=${DESTDIR}${PREFIX}/share/emacs/site-lisp
 
-RUN_DEPENDS=	emacs->=21,<22:editors/emacs21 \
+RUN_DEPENDS=	editors/emacs \
 		print/texlive/base
-BUILD_DEPENDS=	emacs->=21,<22:editors/emacs21
+BUILD_DEPENDS=	editors/emacs
 
 post-install:
 	@chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/emacs/site-lisp/auctex
