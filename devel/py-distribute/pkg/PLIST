@@ -6,7 +6,12 @@ bin/easy_install-${MODPY_VERSION}
 ${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/${MODPY_PYCACHE}easy_install.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/${MODPY_PYCACHE}pkg_resources.${MODPY_PYC_MAGIC_TAG}pyc
-lib/python${MODPY_VERSION}/site-packages/${MODPY_PYCACHE}site.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/_markerlib/
+lib/python${MODPY_VERSION}/site-packages/_markerlib/__init__.py
+${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/_markerlib/${MODPY_PYCACHE}/
+lib/python${MODPY_VERSION}/site-packages/_markerlib/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/_markerlib/${MODPY_PYCACHE}markers.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/_markerlib/markers.py
 lib/python${MODPY_VERSION}/site-packages/distribute-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/distribute-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
 lib/python${MODPY_VERSION}/site-packages/distribute-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
@@ -27,12 +32,15 @@ lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}depends.${MO
 lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}dist.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}extension.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}package_index.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}py24compat.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}sandbox.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}script template (dev).${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}script template.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}site-patch.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/archive_util.py
 @comment lib/python${MODPY_VERSION}/site-packages/setuptools/cli-32.exe
 @comment lib/python${MODPY_VERSION}/site-packages/setuptools/cli-64.exe
+@comment lib/python${MODPY_VERSION}/site-packages/setuptools/cli-arm-32.exe
 @comment lib/python${MODPY_VERSION}/site-packages/setuptools/cli.exe
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/__init__.py
@@ -72,6 +80,7 @@ lib/python${MODPY_VERSION}/site-packages/setuptools/command/install.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/install_egg_info.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/install_lib.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/install_scripts.py
+lib/python${MODPY_VERSION}/site-packages/setuptools/command/launcher manifest.xml
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/register.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/rotate.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/saveopts.py
@@ -85,31 +94,45 @@ lib/python${MODPY_VERSION}/site-packages/setuptools/dist.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/extension.py
 @comment lib/python${MODPY_VERSION}/site-packages/setuptools/gui-32.exe
 @comment lib/python${MODPY_VERSION}/site-packages/setuptools/gui-64.exe
+@comment lib/python${MODPY_VERSION}/site-packages/setuptools/gui-arm-32.exe
 @comment lib/python${MODPY_VERSION}/site-packages/setuptools/gui.exe
 lib/python${MODPY_VERSION}/site-packages/setuptools/package_index.py
+lib/python${MODPY_VERSION}/site-packages/setuptools/py24compat.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/sandbox.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/script template (dev).py
 lib/python${MODPY_VERSION}/site-packages/setuptools/script template.py
+lib/python${MODPY_VERSION}/site-packages/setuptools/site-patch.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/__init__.py
 ${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}doctest.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}py26compat.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}server.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_bdist_egg.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_build_ext.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_develop.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_dist_info.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_easy_install.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_markerlib.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_packageindex.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_resources.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_sandbox.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_sdist.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_test.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}test_upload_docs.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/doctest.py
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/py26compat.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/server.py
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_bdist_egg.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_build_ext.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_develop.py
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_dist_info.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_easy_install.py
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_markerlib.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_packageindex.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_resources.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_sandbox.py
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_sdist.py
+lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_test.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/test_upload_docs.py
-lib/python${MODPY_VERSION}/site-packages/site.py

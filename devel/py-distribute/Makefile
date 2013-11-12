@@ -2,10 +2,9 @@
 
 COMMENT =		fork of setuptools Python packages
 
-MODPY_EGG_VERSION =	0.6.27
+MODPY_EGG_VERSION =	0.6.49
 DISTNAME =		distribute-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		0
 
 CATEGORIES =		devel
 
