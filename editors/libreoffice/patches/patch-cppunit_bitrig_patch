@@ -1,8 +1,8 @@
 $OpenBSD$
---- cppunit/bitrig.patch.orig.port	Wed Aug  7 06:38:52 2013
-+++ cppunit/bitrig.patch	Wed Aug  7 06:38:52 2013
+--- cppunit/bitrig.patch.orig.port	Wed Nov 13 11:47:48 2013
++++ cppunit/bitrig.patch	Wed Nov 13 18:52:57 2013
 @@ -0,0 +1,98 @@
-+--- misc/build/cppunit-1.13.1/config/config.guess.orig	Mon Aug  5 23:11:24 2013
++--- misc/cppunit-1.13.1/config/config.guess	Mon Aug  5 23:11:24 2013
 ++++ misc/build/cppunit-1.13.1/config/config.guess	Mon Aug  5 23:14:31 2013
 +@@ -210,6 +210,10 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
 + 	# CPU_TYPE-MANUFACTURER-OPERATING_SYSTEM is used.
@@ -15,7 +15,7 @@ $OpenBSD$
 +     *:OpenBSD:*:*)
 + 	UNAME_MACHINE_ARCH=`arch | sed 's/OpenBSD.//'`
 + 	echo ${UNAME_MACHINE_ARCH}-${VENDOR}-openbsd${UNAME_RELEASE}
-+--- misc/build/cppunit-1.13.1/config/config.sub.orig	Mon Aug  5 23:11:33 2013
++--- misc/cppunit-1.13.1/config/config.sub	Mon Aug  5 23:11:33 2013
 ++++ misc/build/cppunit-1.13.1/config/config.sub	Mon Aug  5 23:13:18 2013
 +@@ -1352,7 +1352,7 @@ case $os in
 + 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
@@ -26,7 +26,7 @@ $OpenBSD$
 + 	      | -ekkobsd* | -kfreebsd* | -freebsd* | -riscix* | -lynxos* \
 + 	      | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
 + 	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \
-+--- misc/build/cppunit-1.13.1/configure.orig	Mon Aug  5 23:10:32 2013
++--- misc/cppunit-1.13.1/configure	Mon Aug  5 23:10:32 2013
 ++++ misc/build/cppunit-1.13.1/configure	Mon Aug  5 23:12:41 2013
 +@@ -5597,7 +5597,7 @@ else
 +     lt_cv_sys_max_cmd_len=8192;

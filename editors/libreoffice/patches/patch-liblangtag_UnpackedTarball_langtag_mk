@@ -1,16 +1,15 @@
-$OpenBSD: patch-liblangtag_UnpackedTarball_langtag_mk,v 1.1 2013/05/31 14:50:13 robert Exp $
---- liblangtag/UnpackedTarball_langtag.mk.orig.port	Tue Jun 11 11:33:38 2013
-+++ liblangtag/UnpackedTarball_langtag.mk	Wed Aug  7 07:02:00 2013
-@@ -18,10 +18,11 @@ $(eval $(call gb_UnpackedTarball_add_patches,langtag,\
-     # <https://github.com/tagoh/liblangtag/pull/8> "Use xmlDocCopyNode to merge
-     #  nodes into different docs"
- 
--ifeq ($(OS),MACOSX)
-+ifeq ($(OS),OPENBSD)
- $(eval $(call gb_UnpackedTarball_add_patches,langtag,\
- 	liblangtag/liblangtag-0.4.0-mac.patch \
- 	liblangtag/liblangtag-0.4.0-configure-atomic-cflag-pollution.patch \
-+	liblangtag/bitrig.patch \
+$OpenBSD$
+--- liblangtag/UnpackedTarball_langtag.mk.orig.port	Wed Nov 13 10:31:25 2013
++++ liblangtag/UnpackedTarball_langtag.mk	Wed Nov 13 20:35:54 2013
+@@ -32,4 +32,11 @@ $(eval $(call gb_UnpackedTarball_add_patches,langtag,\
  ))
- else
- $(eval $(call gb_UnpackedTarball_add_patches,langtag,\
+ endif
+ endif
++
++ifeq ($(OS),OPENBSD)
++$(eval $(call gb_UnpackedTarball_add_patches,langtag, \
++	liblangtag/bitrig.patch \
++))
++endif
++
+ # vim: set noet sw=4 ts=4:

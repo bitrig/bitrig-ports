@@ -1,6 +1,6 @@
 $OpenBSD$
---- mythes/bitrig.patch.orig.port	Wed Aug  7 11:36:02 2013
-+++ mythes/bitrig.patch	Wed Aug  7 11:36:02 2013
+--- mythes/bitrig.patch.orig.port	Wed Nov 13 11:28:56 2013
++++ mythes/bitrig.patch	Wed Nov 13 11:28:56 2013
 @@ -0,0 +1,24 @@
 +--- config.guess.orig	Mon Aug  5 23:11:24 2013
 ++++ config.guess	Mon Aug  5 23:14:31 2013

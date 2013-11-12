@@ -1,6 +1,6 @@
 $OpenBSD$
---- mythes/UnpackedTarball_mythes.mk.orig.port	Wed Aug  7 11:35:51 2013
-+++ mythes/UnpackedTarball_mythes.mk	Wed Aug  7 11:36:24 2013
+--- mythes/UnpackedTarball_mythes.mk.orig.port	Wed Nov 13 11:26:48 2013
++++ mythes/UnpackedTarball_mythes.mk	Wed Nov 13 11:27:07 2013
 @@ -15,6 +15,7 @@ $(eval $(call gb_UnpackedTarball_add_patches,mythes,\
  	mythes/mythes-1.2.0-vanilla-th-gen-idx.patch \
  	mythes/mythes-1.2.0-android.patch \
