@@ -1,0 +1,76 @@
+#!/bin/ksh
+#
+# Copyright (c) 2013 Martin Natano <natano@natano.net>
+#
+# Permission to use, copy, modify, and distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+set -e
+set -u
+
+MIRROR="${MIRROR:-https://pypi.python.org/pypi}"
+PORTSDIR="${PORTSDIR:-/usr/ports}"
+
+
+usage() {
+	echo "usage: ${0##*/} [-m maintainer]" >&2
+	exit 1
+}
+
+get_pypi_version() {
+	info_url="${MIRROR}/$1/json"
+	ftp -V -o - "${info_url}" | \
+	    sed -En 's/.*"version": *"(.+)".*/\1/p'
+}
+
+list_python_ports() {
+	awk -F '\|' \
+	    '/^py3?-/ { split($2, path, ","); print path[1] "|" $6 }' \
+	    "${PORTSDIR}/INDEX" |
+	sort | uniq
+}
+
+
+# Parsing command line options
+maintainer=
+
+while getopts "m:" OPT; do
+	case $OPT in
+	m)
+		maintainer="$OPTARG"
+		;;
+
+	*)
+		usage
+		;;
+	esac
+done
+
+shift $(($OPTIND - 1))
+(($# == 0)) || usage
+
+
+list_python_ports | while IFS='|' read -r path maint; do
+	if [ -n "$maintainer" ]; then
+		echo "$maint" | grep -Eq "$maintainer" || continue
+	fi
+	grep -q MASTER_SITE_PYPI "${PORTSDIR}/${path}/Makefile" || continue
+
+	distname=$(cd "${PORTSDIR}/${path}" && make show=DISTNAME)
+	name=${distname%-*}
+	version=${distname##*-}
+
+	pypi_version=$(get_pypi_version $name)
+	if [ -n "$pypi_version" -a "$version" != "$pypi_version" ]; then
+		echo "Out of date: ${path} ${version} vs ${pypi_version}. ${maint}"
+	fi
+done

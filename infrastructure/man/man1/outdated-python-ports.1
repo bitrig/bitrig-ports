@@ -1,0 +1,50 @@
+.\" Copyright (c) 2013 Martin Natano <natano@natano.net>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: November 12 2013 $
+.Dt OUTDATED-PYTHON-PORTS 1
+.Os
+.Sh NAME
+.Nm outdated-python-ports
+.Nd compare PYPI releases and the ports tree
+.Sh SYNOPSIS
+.Nm outdated-python-ports
+.Bk -words
+.Op Fl m Ar maintainer
+.Ek
+.Sh DESCRIPTION
+.Nm
+retrieves and compares the packages list provided by PYPI with the ports
+recorded in
+.Pa ${PORTSDIR}/INDEX
+and reports which ports have a newer version available upstream. Ports
+that do not use MASTER_SITE_PYPI are not processed.
+.Pp
+Options are as follows:
+.Bl -tag -width XXXmaintainer
+.It Fl m Ar maintainer
+Only display ports that are being maintained by
+.Ar maintainer ,
+where
+.Ar maintainer
+is a POSIX extended regular expression matching name and e-mail address.
+.El
+.Sh ENVIRONMENT
+.Bl -tag -width PORTSDIR
+.It Ev MIRROR
+If this environment variable is set, it is used as the base URL for fetching
+Python package information.
+.It Ev PORTSDIR
+If this variable is set, it is used as the root of the ports tree.
+.El
