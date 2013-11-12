@@ -2,11 +2,10 @@
 
 COMMENT =		Python easy_install replacement
 
-MODPY_EGG_VERSION =	1.1
+MODPY_EGG_VERSION =	1.4.1
 DISTNAME =		pip-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		devel
-REVISION =		1
 
 MAINTAINER =		Wen Heping <wenheping@gmail.com>
 
