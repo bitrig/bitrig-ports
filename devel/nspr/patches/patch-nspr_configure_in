@@ -1,12 +1,12 @@
-$OpenBSD: patch-nspr_configure_in,v 1.1 2013/06/23 18:36:50 landry Exp $
---- nspr/configure.in.orig	Tue May 28 23:39:29 2013
-+++ nspr/configure.in	Sat Jun 29 15:20:40 2013
-@@ -2131,14 +2131,16 @@ tools are selected during the Xcode/Developer Tools in
+$OpenBSD: patch-nspr_configure_in,v 1.2 2013/11/13 20:54:45 landry Exp $
+--- nspr/configure.in.orig	Sat Nov  9 10:49:40 2013
++++ nspr/configure.in	Thu Nov 14 22:24:09 2013
+@@ -2142,14 +2142,16 @@ tools are selected during the Xcode/Developer Tools in
      _DEBUG_FLAGS="-gstabs"
  	;;
  
 -*-openbsd*)
-+*-openbsd* | *-bitrig*)
++*-openbsd*|bitrig*)
      AC_DEFINE(XP_UNIX)
      AC_DEFINE(OPENBSD)
      AC_DEFINE(HAVE_BSD_FLOCK)
@@ -20,16 +20,16 @@ $OpenBSD: patch-nspr_configure_in,v 1.1 2013/06/23 18:36:50 landry Exp $
      DSO_CFLAGS=-fPIC
      MDCPUCFG_H=_openbsd.cfg
      PR_MD_CSRCS=openbsd.c
-@@ -2866,7 +2868,7 @@ if test -n "$USE_PTHREADS"; then
+@@ -2877,7 +2879,7 @@ if test -n "$USE_PTHREADS"; then
  	        _PTHREAD_LDFLAGS=
  	    fi
  	    ;;
 -    *-openbsd*)
-+    *-openbsd* | *-bitrig*)
++    *-openbsd*|*-bitrig*)
          if test "$ac_cv_have_dash_pthread" = "yes"; then
              _PTHREAD_LDFLAGS=-pthread
          fi
-@@ -2966,7 +2968,7 @@ case "$target" in
+@@ -2977,7 +2979,7 @@ case "$target" in
      _PTHREAD_LDFLAGS=
      USE_USER_PTHREADS=
      ;;
