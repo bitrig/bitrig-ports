@@ -1,0 +1,16 @@
+$OpenBSD$
+--- configure.orig	Wed Nov 13 16:21:15 2013
++++ configure	Wed Nov 13 16:21:44 2013
+@@ -375,8 +375,11 @@ else
+ if [ "$HOST_OS" = "openbsd" ]; then
+ USEROSTYPE="gnulinux"
+ else
++if [ "$HOST_OS" = "bitrig" ]; then
++USEROSTYPE="gnulinux"
++else
+ if [ "$HOST_OS" = "darwin" ]; then
+-USEROSTYPE="darwin"; fi; fi; fi; fi; fi; fi
++USEROSTYPE="darwin"; fi; fi; fi; fi; fi; fi; fi
+ printf 'checking pkg-config flags for r_core... '
+ tmp=`pkg-config --cflags r_core 2>/dev/null`
+ if [ $? = 1 ]; then echo no ; HAVE_PKGCFG_R_CORE=0; 

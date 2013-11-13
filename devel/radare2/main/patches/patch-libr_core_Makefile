@@ -1,0 +1,13 @@
+$OpenBSD$
+--- libr/core/Makefile.orig	Wed Nov 13 16:06:52 2013
++++ libr/core/Makefile	Wed Nov 13 16:08:41 2013
+@@ -15,5 +15,9 @@ ifeq ($(shell uname),OpenBSD)
+ LDFLAGS+=-lpthread
+ endif
+ 
++ifeq ($(shell uname),Bitrig)
++LDFLAGS+=-lpthread
++endif
++
+ 
+ include ../rules.mk

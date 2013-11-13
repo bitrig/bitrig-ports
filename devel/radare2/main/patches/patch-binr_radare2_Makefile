@@ -1,0 +1,14 @@
+$OpenBSD$
+--- binr/radare2/Makefile.orig	Wed Nov 13 16:06:51 2013
++++ binr/radare2/Makefile	Wed Nov 13 16:07:55 2013
+@@ -34,6 +34,10 @@ ifeq ($(uname),OpenBSD)
+ LDFLAGS+=-pthread
+ endif
+ 
++ifeq ($(uname),Bitrig)
++LDFLAGS+=-pthread
++endif
++
+ ifeq (${HAVE_LIB_SSL},1)
+ CFLAGS+=${SSL_CFLAGS}
+ LDFLAGS+=${SSL_LDFLAGS}

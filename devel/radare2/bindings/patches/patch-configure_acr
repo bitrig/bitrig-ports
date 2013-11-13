@@ -1,0 +1,17 @@
+$OpenBSD$
+--- configure.acr.orig	Wed Nov 13 16:21:15 2013
++++ configure.acr	Wed Nov 13 16:22:12 2013
+@@ -25,9 +25,12 @@ IFEQ USEROSTYPE auto ; {
+ 	IFEQ HOST_OS openbsd ; {
+ 		USEROSTYPE = gnulinux ;
+ 	}{
++	IFEQ HOST_OS bitrig ; {
++		USEROSTYPE = gnulinux ;
++	}{
+ 	IFEQ HOST_OS darwin ; {
+ 		USEROSTYPE = darwin ;
+-	} } } } }
++	} } } } } }
+ }
+ 
+ PKGCFG! FOO FOO r_core

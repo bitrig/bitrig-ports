@@ -1,0 +1,16 @@
+$OpenBSD$
+--- configure.orig	Tue Oct 18 18:06:22 2011
++++ configure	Wed Nov 13 16:12:29 2013
+@@ -405,8 +405,11 @@ else
+ if [ "$HOST_OS" = "openbsd" ]; then
+ USEROSTYPE="gnulinux"
+ else
++if [ "$HOST_OS" = "bitrig" ]; then
++USEROSTYPE="gnulinux"
++else
+ if [ "$HOST_OS" = "darwin" ]; then
+-USEROSTYPE="darwin"; fi; fi; fi; fi; fi; fi; fi; fi
++USEROSTYPE="darwin"; fi; fi; fi; fi; fi; fi; fi; fi; fi
+ if [ "$LIBVERSION" = "xxx" ]; then
+ LIBVERSION="$VERSION"; fi
+ SEDFLAGS=" -e '"
