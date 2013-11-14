@@ -23,6 +23,7 @@ CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--without-libregex \
 		--includedir=${PREFIX}/include/autogen \
 		${ENABLE_SHARED}
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/config
 
 MAKE_FLAGS+=	INFO_DEPS=
 USE_GROFF =	Yes

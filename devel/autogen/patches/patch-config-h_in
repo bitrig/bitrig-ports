@@ -1,0 +1,9 @@
+$OpenBSD$
+--- config-h.in.orig	Thu Nov 14 21:38:30 2013
++++ config-h.in	Thu Nov 14 21:39:34 2013
+@@ -376,4 +376,4 @@
+ #undef wchar_t
+ 
+ /* Define to `unsigned int' if <sys/types.h> does not define. */
+-#undef wint_t
++/* #undef wint_t */
