@@ -23,6 +23,7 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	--enable-easc
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build-aux
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/gcal
