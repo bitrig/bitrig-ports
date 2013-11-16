@@ -5,7 +5,7 @@ COMMENT =		Python web development megaframework
 MODPY_EGG_VERSION =	1.1.1
 DISTNAME =		TurboGears-${MODPY_EGG_VERSION}
 PKGNAME =		py-turbogears-${MODPY_EGG_VERSION}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		www
 

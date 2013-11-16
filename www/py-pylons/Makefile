@@ -4,6 +4,7 @@ COMMENT =	rapid web application development framework
 
 # "Pylons 1.0 series is stable and production ready."
 MODPY_EGG_VERSION = 1.0.1
+REVISION =	0
 DISTNAME =	Pylons-${MODPY_EGG_VERSION}rc1
 PKGNAME =	py-${DISTNAME:L}
 

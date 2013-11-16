@@ -5,7 +5,7 @@ COMMENT =	Mozilla sync server
 PART =	full
 MODPY_EGG_VERSION =	1.0
 PKGNAME =	mozilla-sync-${MODPY_EGG_VERSION}.pre20120901
-REVISION =	1
+REVISION =	2
 
 RUN_DEPENDS +=	www/mozilla-sync/core
 RUN_DEPENDS +=	www/mozilla-sync/reg

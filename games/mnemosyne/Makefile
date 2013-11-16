@@ -5,6 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	flash-card tool which optimises your learning process
 
 MODPY_EGG_VERSION=2.2.1
+REVISION=	0
 DISTNAME=	Mnemosyne-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:L}
 CATEGORIES=	games education

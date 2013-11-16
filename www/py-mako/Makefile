@@ -3,6 +3,7 @@
 COMMENT =	super-fast templating language
 
 MODPY_EGG_VERSION = 0.9.0
+REVISION =	0
 DISTNAME =	Mako-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
 
