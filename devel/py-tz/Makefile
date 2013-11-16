@@ -7,6 +7,7 @@ DISTNAME =		pytz-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/^py/py-/}
 CATEGORIES =		devel
 REVISION =		0
+EPOCH =			0
 
 HOMEPAGE =		http://pytz.sourceforge.net/
 MAINTAINER =		frantisek holop <minusf@obiit.org>
