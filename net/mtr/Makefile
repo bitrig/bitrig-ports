@@ -2,8 +2,7 @@
 
 COMMENT=	Matt's traceroute - network diagnostic tool#'
 
-DISTNAME=	mtr-0.82
-REVISION=	2
+DISTNAME=	mtr-0.85
 CATEGORIES=	net
 
 MAINTAINER=     Jakob Schlyter <jakob@openbsd.org>
