@@ -2,7 +2,7 @@
 
 COMMENT =	high-level Python web framework
 
-MODPY_EGG_VERSION =	1.5.5
+MODPY_EGG_VERSION =	1.6
 LNAME =			django
 DISTNAME =		Django-${MODPY_EGG_VERSION}
 PKGNAME =		py-${LNAME}-${MODPY_EGG_VERSION}
