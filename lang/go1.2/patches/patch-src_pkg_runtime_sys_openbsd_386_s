@@ -1,7 +1,13 @@
 $OpenBSD: patch-src_pkg_runtime_sys_openbsd_386_s,v 1.5 2013/08/25 11:57:27 jsing Exp $
---- src/pkg/runtime/sys_openbsd_386.s.orig	Thu Oct 31 20:58:07 2013
-+++ src/pkg/runtime/sys_openbsd_386.s	Mon Nov 18 18:57:42 2013
-@@ -50,16 +50,17 @@ TEXT runtime·usleep(SB),NOSPLIT,$20
+--- src/pkg/runtime/sys_openbsd_386.s.orig	Sun Nov 17 19:52:52 2013
++++ src/pkg/runtime/sys_openbsd_386.s	Mon Nov 18 21:03:58 2013
+@@ -45,21 +45,22 @@ TEXT runtime·write(SB),NOSPLIT,$-4
+ 	INT	$0x80
+ 	RET
+ 
+-TEXT runtime·usleep(SB),NOSPLIT,$20
++TEXT runtime·usleep(SB),NOSPLIT,$24
+ 	MOVL	$0, DX
  	MOVL	usec+0(FP), AX
  	MOVL	$1000000, CX
  	DIVL	CX
