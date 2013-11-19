@@ -2,7 +2,7 @@
 
 COMMENT=	simplified packaging system for Python modules
 
-MODPY_EGG_VERSION=	1.1.6
+MODPY_EGG_VERSION=	1.3.2
 DISTNAME=		setuptools-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME:S/c/./}
 EPOCH = 		0
