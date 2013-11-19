@@ -1,0 +1,14 @@
+$OpenBSD$
+--- testsuite/lib/libffi-dg.exp.orig	Tue Nov 19 23:13:22 2013
++++ testsuite/lib/libffi-dg.exp	Tue Nov 19 23:13:35 2013
+@@ -201,6 +201,10 @@ proc libffi_target_compile { source dest type options 
+ 	lappend options "libs= -lpthread"
+     }
+ 
++    if { [string match "*-*-bitrig*" $target_triplet] } {
++	lappend options "libs= -lpthread"
++    }
++
+     lappend options "libs= -lffi"
+ 
+     verbose "options: $options"
