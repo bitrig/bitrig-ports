@@ -1,127 +1,87 @@
 $OpenBSD: patch-configure,v 1.5 2013/05/01 10:11:54 miod Exp $
 
-Enable libffi on hppa, m88k, mips64(el), powerpc and vax platforms.
+Enable libffi on amd64 amd i386.
 
---- configure.orig	Thu Dec 31 12:41:51 2009
-+++ configure	Wed Apr 24 15:46:57 2013
-@@ -807,6 +807,8 @@ SH_FALSE
- SH_TRUE
- X86_64_FALSE
- X86_64_TRUE
-+VAX_FALSE
-+VAX_TRUE
- S390_FALSE
- S390_TRUE
- FRV_FALSE
-@@ -825,6 +827,8 @@ POWERPC_AIX_FALSE
- POWERPC_AIX_TRUE
- POWERPC_FALSE
- POWERPC_TRUE
-+M88K_FALSE
-+M88K_TRUE
- M68K_FALSE
- M68K_TRUE
- M32R_FALSE
-@@ -12167,7 +12171,7 @@ case "$host" in
- 	TARGET=FRV; TARGETDIR=frv
+--- configure.orig	Sun Mar 17 23:36:19 2013
++++ configure	Wed Nov 27 13:40:10 2013
+@@ -5313,7 +5313,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -5829,7 +5829,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -6446,7 +6446,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
+@@ -9216,7 +9216,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -10092,7 +10092,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -11139,7 +11139,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -13303,7 +13303,7 @@ case "$host" in
+ 	TARGET=ARM; TARGETDIR=arm
  	;;
  
--  hppa*-*-linux* | parisc*-*-linux*)
-+  hppa*-*-linux* | hppa*-*-openbsd* | parisc*-*-linux*)
- 	TARGET=PA_LINUX; TARGETDIR=pa
- 	;;
-   hppa*64-*-hpux*)
-@@ -12207,10 +12211,14 @@ case "$host" in
- 	TARGET=M68K; TARGETDIR=m68k
+-  amd64-*-freebsd* | amd64-*-openbsd*)
++  amd64-*-freebsd* | amd64-*-openbsd* | amd64-*-bitrig*)
+ 	TARGET=X86_64; TARGETDIR=x86
+   	;;
+ 
+@@ -13341,7 +13341,7 @@ case "$host" in
+ 	TARGET=PA_HPUX; TARGETDIR=pa
  	;;
  
-+  m88k-*-openbsd*)
-+	TARGET=M88K; TARGETDIR=m88k
-+	;;
-+
-   mips-sgi-irix5.* | mips-sgi-irix6.*)
- 	TARGET=MIPS; TARGETDIR=mips
+-  i?86-*-freebsd* | i?86-*-openbsd*)
++  i?86-*-freebsd* | i?86-*-openbsd* | i?86-*-bitrig*)
+ 	TARGET=X86_FREEBSD; TARGETDIR=x86
  	;;
--  mips*-*-linux*)
-+  mips*-*-linux* | mips*-*-openbsd*)
- 	# Support 128-bit long double for NewABI.
- 	HAVE_LONG_DOUBLE='defined(__mips64)'
- 	TARGET=MIPS; TARGETDIR=mips
-@@ -12228,7 +12236,7 @@ case "$host" in
-   powerpc-*-aix* | rs6000-*-aix*)
- 	TARGET=POWERPC_AIX; TARGETDIR=powerpc
- 	;;
--  powerpc-*-freebsd*)
-+  powerpc-*-freebsd* | powerpc-*-openbsd*)
- 	TARGET=POWERPC_FREEBSD; TARGETDIR=powerpc
- 	;;
-   powerpc*-*-rtems*)
-@@ -12250,6 +12258,10 @@ case "$host" in
- 	TARGET=SPARC; TARGETDIR=sparc
- 	;;
+   i?86-win32* | i?86-*-cygwin* | i?86-*-mingw* | i?86-*-os2* | i?86-*-interix*)
+@@ -14661,7 +14661,7 @@ case "$target" in
+ $as_echo "#define FFI_EXEC_TRAMPOLINE_TABLE 1" >>confdefs.h
  
-+  vax-*-openbsd*)
-+	TARGET=VAX; TARGETDIR=vax
-+	;;
-+
-   x86_64-*-darwin*)
- 	TARGET=X86_DARWIN; TARGETDIR=x86
- 	;;
-@@ -12360,6 +12372,14 @@ else
-   M68K_FALSE=
- fi
+      ;;
+-     *-apple-darwin1* | *-*-freebsd* | *-*-kfreebsd* | *-*-openbsd* | *-pc-solaris*)
++     *-apple-darwin1* | *-*-freebsd* | *-*-kfreebsd* | *-*-openbsd* | *-*-bitrig* | *-pc-solaris*)
  
-+ if test x$TARGET = xM88K; then
-+  M88K_TRUE=
-+  M88K_FALSE='#'
-+else
-+  M88K_TRUE='#'
-+  M88K_FALSE=
-+fi
-+
-  if test x$TARGET = xPOWERPC; then
-   POWERPC_TRUE=
-   POWERPC_FALSE='#'
-@@ -12432,6 +12452,14 @@ else
-   S390_FALSE=
- fi
+ $as_echo "#define FFI_MMAP_EXEC_WRIT 1" >>confdefs.h
  
-+ if test x$TARGET = xVAX; then
-+  VAX_TRUE=
-+  VAX_FALSE='#'
-+else
-+  VAX_TRUE='#'
-+  VAX_FALSE=
-+fi
-+
-  if test x$TARGET = xX86_64; then
-   X86_64_TRUE=
-   X86_64_FALSE='#'
-@@ -14887,6 +14915,13 @@ $as_echo "$as_me: error: conditional \"M68K\" was neve
- Usually this means the macro was only invoked conditionally." >&2;}
-    { (exit 1); exit 1; }; }
- fi
-+if test -z "${M88K_TRUE}" && test -z "${M88K_FALSE}"; then
-+  { { $as_echo "$as_me:$LINENO: error: conditional \"M88K\" was never defined.
-+Usually this means the macro was only invoked conditionally." >&5
-+$as_echo "$as_me: error: conditional \"M88K\" was never defined.
-+Usually this means the macro was only invoked conditionally." >&2;}
-+   { (exit 1); exit 1; }; }
-+fi
- if test -z "${POWERPC_TRUE}" && test -z "${POWERPC_FALSE}"; then
-   { { $as_echo "$as_me:$LINENO: error: conditional \"POWERPC\" was never defined.
- Usually this means the macro was only invoked conditionally." >&5
-@@ -14947,6 +14982,13 @@ if test -z "${S390_TRUE}" && test -z "${S390_FALSE}"; 
-   { { $as_echo "$as_me:$LINENO: error: conditional \"S390\" was never defined.
- Usually this means the macro was only invoked conditionally." >&5
- $as_echo "$as_me: error: conditional \"S390\" was never defined.
-+Usually this means the macro was only invoked conditionally." >&2;}
-+   { (exit 1); exit 1; }; }
-+fi
-+if test -z "${VAX_TRUE}" && test -z "${VAX_FALSE}"; then
-+  { { $as_echo "$as_me:$LINENO: error: conditional \"VAX\" was never defined.
-+Usually this means the macro was only invoked conditionally." >&5
-+$as_echo "$as_me: error: conditional \"VAX\" was never defined.
- Usually this means the macro was only invoked conditionally." >&2;}
-    { (exit 1); exit 1; }; }
- fi
