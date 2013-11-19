@@ -60,6 +60,8 @@ do-configure:
 
 do-build:
 	@cd ${WRKSRC} && \
+		CC=${CC} \
+		CXX=${CXX} \
 		GOROOT=${WRKDIST} \
 		GOBIN=${WRKDIST}/bin \
 		GOROOT_FINAL=${GOROOT} ./make.bash --no-banner
