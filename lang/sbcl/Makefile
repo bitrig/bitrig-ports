@@ -48,9 +48,7 @@ PKG_ARGS +=		-D${arch}=0
 USE_GMAKE=		Yes
 PORTHOME=		${TMPDIR}
 MAKE_ENV=		GNUMAKE=${GMAKE} INSTALL_ROOT=${PREFIX} \
-			MAN_DIR=${PREFIX}/man INFO_DIR=${PREFIX}/info \
-			LINKFLAGS="-nopie" LDFLAGS="-nopie"
-CFLAGS +=		-fno-pie
+			MAN_DIR=${PREFIX}/man INFO_DIR=${PREFIX}/info
 
 # Upstream asks that packagers append something like this to the
 # version to distinguish official tarballs from third-party packages.
