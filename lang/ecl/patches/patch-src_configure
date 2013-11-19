@@ -1,6 +1,15 @@
 $OpenBSD: patch-src_configure,v 1.5 2013/06/11 10:30:54 sthen Exp $
---- src/configure.orig	Mon May 27 23:37:36 2013
-+++ src/configure	Tue Jun  4 07:28:28 2013
+--- src/configure.orig	Mon May 27 22:37:36 2013
++++ src/configure	Tue Nov 19 20:52:44 2013
+@@ -4939,7 +4939,7 @@ case "${host_os}" in
+ 		SONAME="${SHAREDPREFIX}ecl.${SHAREDEXT}.SOVERSION"
+ 		SONAME_LDFLAGS="-Wl,-soname,SONAME"
+ 		;;
+-	openbsd*)
++	openbsd*|bitrig*)
+ 		thehost='openbsd'
+ 		THREAD_CFLAGS=''
+ 		THREAD_LIBS=''
 @@ -4947,7 +4947,7 @@ case "${host_os}" in
  		BUNDLE_LDFLAGS="-shared ${LDFLAGS}"
  		ECL_LDRPATH="-Wl,--rpath,~A"
