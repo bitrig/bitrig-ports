@@ -79,11 +79,7 @@ _MODPY_PRE_BUILD_STEPS = :
 .if defined(MODPY_SETUPTOOLS) && ${MODPY_SETUPTOOLS:L} == "yes"
 # The setuptools module provides a package locator (site.py) that is
 # required at runtime for the pkg_resources stuff to work
-.  if ${MODPY_MAJOR_VERSION} == 2
-MODPY_SETUPUTILS_DEPEND ?= devel/py-setuptools
-.  elif ${MODPY_MAJOR_VERSION} == 3
-MODPY_SETUPUTILS_DEPEND ?= devel/py-distribute${MODPY_FLAVOR}
-.  endif
+MODPY_SETUPUTILS_DEPEND ?= devel/py-setuptools${MODPY_FLAVOR}
 
 MODPY_RUN_DEPENDS +=	${MODPY_SETUPUTILS_DEPEND}
 BUILD_DEPENDS +=	${MODPY_SETUPUTILS_DEPEND}
