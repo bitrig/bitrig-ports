@@ -7,8 +7,8 @@ the 'BUILD_DEPENDS=x11/qt4:patch' target
 
 if updating patches, watch out for WRKDIR subst in last chunk.
 
---- setup/build_environment.py.orig	Fri Nov  8 03:44:31 2013
-+++ setup/build_environment.py	Sat Nov  9 14:24:16 2013
+--- setup/build_environment.py.orig	Fri Nov  8 04:44:31 2013
++++ setup/build_environment.py	Tue Nov 19 21:05:12 2013
 @@ -7,11 +7,12 @@ __copyright__ = '2009, Kovid Goyal <kovid@kovidgoyal.n
  __docformat__ = 'restructuredtext en'
  
@@ -19,7 +19,7 @@ if updating patches, watch out for WRKDIR subst in last chunk.
  from PyQt4 import pyqtconfig
  
 -from setup import isosx, iswindows, islinux, is64bit
-+from setup import isosx, iswindows, islinux, is64bit, isopenbsd
++from setup import isosx, iswindows, islinux, is64bit, isopenbsd, isbitrig
  is64bit
  
  OSX_SDK = '/Developer/SDKs/MacOSX10.5.sdk'
@@ -27,7 +27,7 @@ if updating patches, watch out for WRKDIR subst in last chunk.
      ft_lib_dirs = pkgconfig_lib_dirs('freetype2', 'FT_LIB_DIR', '/usr/lib')
      ft_libs = pkgconfig_libs('freetype2', '', '')
  
-+if isopenbsd:
++if isopenbsd or isbitrig:
 +    sw_inc_dir = os.path.join(sysconfig.PREFIX, 'include')
 +    icu_inc_dirs = [sw_inc_dir]
 +    chmlib_inc_dirs = [sw_inc_dir]

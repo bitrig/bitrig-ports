@@ -8,14 +8,14 @@ may need /sys/ access to actually detect devices..)
 
 if updating patches, watch out for X11BASE -> /usr/X11R6 in last chunk
 
---- setup/extensions.py.orig	Fri Nov  8 03:44:31 2013
-+++ setup/extensions.py	Sat Nov  9 14:24:16 2013
+--- setup/extensions.py.orig	Fri Nov  8 04:44:31 2013
++++ setup/extensions.py	Tue Nov 19 21:04:27 2013
 @@ -12,7 +12,7 @@ from multiprocessing import cpu_count
  
  from PyQt4.pyqtconfig import QtGuiModuleMakefile
  
 -from setup import Command, islinux, isbsd, isosx, SRC, iswindows
-+from setup import Command, islinux, isbsd, isosx, SRC, iswindows, isopenbsd
++from setup import Command, islinux, isbsd, isosx, SRC, iswindows, isopenbsd, isbitrig
  from setup.build_environment import (chmlib_inc_dirs,
          podofo_inc, podofo_lib, podofo_error, pyqt, OSX_SDK, NMAKE, QMAKE,
          msvc, MT, win_inc, win_lib, win_ddk, magick_inc_dirs, magick_lib_dirs,
@@ -46,7 +46,7 @@ if updating patches, watch out for X11BASE -> /usr/X11R6 in last chunk
              )
  
 -if islinux or isosx:
-+if islinux or isosx or isopenbsd:
++if islinux or isosx or isopenbsd or isbitrig:
      extensions.append(Extension('libusb',
          ['calibre/devices/libusb/libusb.c'],
 +        inc_dirs=[os.path.join(sysconfig.PREFIX, 'include')],
