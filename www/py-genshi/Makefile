@@ -16,7 +16,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += ${MODPY_WANTLIB} pthread
 
-MASTER_SITES =	ftp://ftp.edgewall.com/pub/genshi/
+MASTER_SITES =	http://ftp.edgewall.com/pub/genshi/
 
 MODULES =	lang/python
 
