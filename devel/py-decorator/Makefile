@@ -2,7 +2,7 @@
 
 COMMENT =	simplify usage of decorators
 
-MODPY_EGG_VERSION = 3.3.2
+MODPY_EGG_VERSION = 3.4.0
 DISTNAME =	decorator-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
 
@@ -18,6 +18,9 @@ MASTER_SITES =	${MASTER_SITE_PYPI:=d/decorator/}
 MODULES =	lang/python
 
 MODPY_SETUPTOOLS = Yes
+
+FLAVORS =	python3
+FLAVOR ?=
 
 NO_TEST =	Yes
 
