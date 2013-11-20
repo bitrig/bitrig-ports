@@ -84,8 +84,6 @@ RUN_DEPENDS =	x11/kde/base3 \
 		devel/desktop-file-utils \
 		x11/gtk+2,-guic
 
-MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/admin
-
 CONFIGURE_ENV += CPPFLAGS="-pthread" \
 		LDFLAGS="-pthread"
 

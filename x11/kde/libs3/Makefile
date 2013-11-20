@@ -103,7 +103,3 @@ pre-configure:
 		${WRKSRC}/kdeprint/cups/kmcupsmanager.cpp
 
 .include <bsd.port.mk>
-
-MODGNU_AUTOCONF_FILES +=	dcop/dcop-path.h.in
-MODGNU_CONFIG_GUESS_DIRS+=	${WRKSRC}/ \
-				${WRKSRC}/admin/
