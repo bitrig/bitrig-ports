@@ -21,6 +21,8 @@ PERMIT_DISTFILES_FTP=	no license
 
 WANTLIB=		X11 Xext Xpm c rplay
 
+CFLAGS+=			-Wno-return-type
+
 USE_GROFF =	Yes
 
 CONFIGURE_STYLE= gnu dest
