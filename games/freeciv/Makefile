@@ -80,4 +80,6 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		CFLAGS="-I${LOCALBASE}/include ${CFLAGS}" \
 		LDFLAGS="-L${LOCALBASE}/lib -lintl -liconv"
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/bootstrap
+
 .include <bsd.port.mk>
