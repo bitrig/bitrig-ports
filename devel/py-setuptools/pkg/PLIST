@@ -1,12 +1,12 @@
 @comment $OpenBSD: PLIST,v 1.7 2013/09/20 11:24:33 edd Exp $
 @comment bin/easy_install
 bin/easy_install-${MODPY_VERSION}
-${MODPY_COMMEND}lib/python${MODPY_VERSION}/site-packages/${MODPY_PYCACHE}/
+${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/${MODPY_PYCACHE}easy_install.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/${MODPY_PYCACHE}pkg_resources.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/_markerlib/
 lib/python${MODPY_VERSION}/site-packages/_markerlib/__init__.py
-${MODPY_COMMEND}lib/python${MODPY_VERSION}/site-packages/_markerlib/${MODPY_PYCACHE}/
+${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/_markerlib/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/_markerlib/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/_markerlib/${MODPY_PYCACHE}markers.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/_markerlib/markers.py
@@ -22,7 +22,7 @@ lib/python${MODPY_VERSION}/site-packages/setuptools-${MODPY_EGG_VERSION}-py${MOD
 lib/python${MODPY_VERSION}/site-packages/setuptools-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/requires.txt
 lib/python${MODPY_VERSION}/site-packages/setuptools-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt
 lib/python${MODPY_VERSION}/site-packages/setuptools/__init__.py
-${MODPY_COMMEND}lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}/
+${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}archive_util.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}compat.${MODPY_PYC_MAGIC_TAG}pyc
@@ -42,11 +42,11 @@ lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}svn_utils.${
 lib/python${MODPY_VERSION}/site-packages/setuptools/${MODPY_PYCACHE}version.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/
 lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/__init__.py
-${MODPY_COMMEND}lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/${MODPY_PYCACHE}/
+${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/hashlib/
 lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/hashlib/__init__.py
-${MODPY_COMMEND}lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/hashlib/${MODPY_PYCACHE}/
+${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/hashlib/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/hashlib/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/hashlib/${MODPY_PYCACHE}_sha.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/hashlib/${MODPY_PYCACHE}_sha256.${MODPY_PYC_MAGIC_TAG}pyc
@@ -57,7 +57,7 @@ lib/python${MODPY_VERSION}/site-packages/setuptools/_backport/hashlib/_sha512.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/archive_util.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/__init__.py
-${MODPY_COMMEND}lib/python${MODPY_VERSION}/site-packages/setuptools/command/${MODPY_PYCACHE}/
+${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/setuptools/command/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/${MODPY_PYCACHE}alias.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/command/${MODPY_PYCACHE}bdist_egg.${MODPY_PYC_MAGIC_TAG}pyc
@@ -117,7 +117,7 @@ lib/python${MODPY_VERSION}/site-packages/setuptools/ssl_support.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/svn_utils.py
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/__init__.py
-${MODPY_COMMEND}lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}/
+${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}doctest.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/setuptools/tests/${MODPY_PYCACHE}environment.${MODPY_PYC_MAGIC_TAG}pyc
