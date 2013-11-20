@@ -2,7 +2,7 @@
 
 COMMENT =	messagepack (de)serializer
 
-MODPY_EGG_VERSION =	0.3.0
+MODPY_EGG_VERSION =	0.4.0
 DISTNAME =	msgpack-python-${MODPY_EGG_VERSION}
 PKGNAME =	py-msgpack-${MODPY_EGG_VERSION}
 
@@ -18,6 +18,9 @@ MASTER_SITES =	${MASTER_SITE_PYPI:=m/msgpack-python/}
 MODULES =	lang/python
 MODPY_SETUPTOOLS =	Yes
 WANTLIB +=	${MODPY_WANTLIB} m pthread stdc++
+
+FLAVORS =	python3
+FLAVOR ?=
 
 TEST_DEPENDS =	devel/py-test \
 		devel/py-nose \
