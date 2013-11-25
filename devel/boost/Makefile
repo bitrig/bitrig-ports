@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.47 2013/09/22 14:31:24 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.48 2013/11/25 14:16:22 sthen Exp $
 
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
@@ -84,8 +84,6 @@ BOOTSTRAP=	--with-toolset=clang \
 # python.port.mk makes assumptions about an empty CONFIGURE_STYLE
 CONFIGURE_STYLE= none
 CONFIGURE_ENV=	BJAM_CONFIG="${BJAM_CONFIG}"
-
-VMEM_WARNING=	Yes
 
 DPB_PROPERTIES= parallel
 
