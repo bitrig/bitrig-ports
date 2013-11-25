@@ -1,25 +1,25 @@
-$OpenBSD: patch-configure,v 1.16 2012/11/01 07:57:26 avsm Exp $
---- configure.orig	Tue Jun 26 17:33:50 2012
-+++ configure	Wed Nov  7 15:00:44 2012
-@@ -537,7 +537,7 @@ if test $withsharedlibs = "yes"; then
+$OpenBSD: patch-configure,v 1.17 2013/11/25 14:40:15 dcoppa Exp $
+--- configure.orig	Fri Aug 23 08:22:36 2013
++++ configure	Mon Nov 25 21:05:07 2013
+@@ -545,7 +545,7 @@ if test $withsharedlibs = "yes"; then
        mksharedlib="$flexlink"
        mkmaindll="$flexlink -maindll"
        shared_libraries_supported=true;;
--    *-*-linux-gnu|*-*-linux|*-*-freebsd[3-9]*|*-*-openbsd*|*-*-netbsd*|*-*-gnu*)
-+    *-*-linux-gnu|*-*-linux|*-*-freebsd[3-9]*|*-*-openbsd*|*-*-bitrig*|*-*-netbsd*|*-*-gnu*)
+-    *-*-linux-gnu|*-*-linux|*-*-freebsd[3-9]*|*-*-freebsd[1-9][0-9]*|*-*-openbsd*|*-*-netbsd*|*-*-gnu*)
++    *-*-linux-gnu|*-*-linux|*-*-freebsd[3-9]*|*-*-freebsd[1-9][0-9]*|*-*-openbsd*|*-*-bitrig*|*-*-netbsd*|*-*-gnu*)
        sharedcccompopts="-fPIC"
        mksharedlib="$bytecc -shared"
        bytecclinkopts="$bytecclinkopts -Wl,-E"
-@@ -606,7 +606,7 @@ if test $withsharedlibs = "yes"; then
+@@ -614,7 +614,7 @@ if test $withsharedlibs = "yes"; then
        shared_libraries_supported=false;;
      vax-*-openbsd*)
        shared_libraries_supported=false;;
 -    *-*-openbsd*)
-+    *-*-openbsd* | *-*-bitrig*)
++    *-*-openbsd*|*-*-bitrig*)
        sharedcccompopts="-fPIC"
        mksharedlib="$bytecc -shared"
        bytecclinkopts="$bytecclinkopts -Wl,-E"
-@@ -641,11 +641,13 @@ if test $withsharedlibs = "yes"; then
+@@ -649,11 +649,13 @@ if test $withsharedlibs = "yes"; then
      sparc*-*-linux*)              natdynlink=true;;
      i686-*-kfreebsd*)             natdynlink=true;;
      x86_64-*-kfreebsd*)           natdynlink=true;;
@@ -28,29 +28,25 @@ $OpenBSD: patch-configure,v 1.16 2012/11/01 07:57:26 avsm Exp $
      x86_64-*-freebsd*)            natdynlink=true;;
 -    i[345]86-*-openbsd*)          natdynlink=true;;
 +    i[3456]86-*-openbsd*)          natdynlink=true;;
++    i[3456]86-*-bitrig*)          natdynlink=true;;
      x86_64-*-openbsd*)            natdynlink=true;;
 -    i[345]86-*-netbsd*)           natdynlink=true;;
-+    i[3456]86-*-bitrig*)           natdynlink=true;;
 +    x86_64-*-bitrig*)             natdynlink=true;;
 +    i[3456]86-*-netbsd*)           natdynlink=true;;
      x86_64-*-netbsd*)             natdynlink=true;;
      i386-*-gnu0.3)                natdynlink=true;;
      arm*-*-linux*)                natdynlink=true;;
-@@ -688,10 +690,13 @@ case "$host" in
-   i[3456]86-*-gnu*)             arch=i386; system=gnu;;
-   powerpc*-*-linux*)            arch=power; model=ppc; system=elf;;
-   powerpc-*-netbsd*)            arch=power; model=ppc; system=elf;;
-+  powerpc-*-openbsd*)           arch=power; model=ppc; system=bsd;;
-   powerpc-*-rhapsody*)          arch=power; model=ppc; system=rhapsody;;
-   powerpc-*-darwin*)            arch=power; system=rhapsody
-                                 if $arch64; then model=ppc64; else model=ppc; fi;;
+@@ -702,6 +704,9 @@ case "$host" in
+                                 if $arch64;then model=ppc64;else model=ppc;fi;;
+   armv6*-*-linux-gnueabihf)     arch=arm; model=armv6; system=linux_eabihf;;
    arm*-*-linux-gnueabihf)       arch=arm; system=linux_eabihf;;
 +  arm*-*-openbsd*)              arch=arm; system=bsd;;
++  arm*-*-bitrig*)               arch=arm; system=bsd;;
 +  zaurus*-*-openbsd*)           arch=arm; system=bsd;;
    armv7*-*-linux-gnueabi)       arch=arm; model=armv7; system=linux_eabi;;
    armv6t2*-*-linux-gnueabi)     arch=arm; model=armv6t2; system=linux_eabi;;
    armv6*-*-linux-gnueabi)       arch=arm; model=armv6; system=linux_eabi;;
-@@ -703,6 +708,7 @@ case "$host" in
+@@ -713,6 +718,7 @@ case "$host" in
    x86_64-*-freebsd*)            arch=amd64; system=freebsd;;
    x86_64-*-netbsd*)             arch=amd64; system=netbsd;;
    x86_64-*-openbsd*)            arch=amd64; system=openbsd;;
@@ -58,7 +54,7 @@ $OpenBSD: patch-configure,v 1.16 2012/11/01 07:57:26 avsm Exp $
    x86_64-*-darwin*)             arch=amd64; system=macosx;;
  esac
  
-@@ -780,10 +786,15 @@ case "$arch,$model,$system" in
+@@ -797,10 +803,15 @@ case "$arch,$model,$system" in
    i386,*,bsd_elf) profiling='prof';;
    amd64,*,macosx) profiling='prof';;
    i386,*,macosx) profiling='prof';;
@@ -74,7 +70,7 @@ $OpenBSD: patch-configure,v 1.16 2012/11/01 07:57:26 avsm Exp $
    amd64,*,gnu) profiling='prof';;
    arm,*,linux*) profiling='prof';;
    *) profiling='noprof';;
-@@ -1191,6 +1202,8 @@ if test "$pthread_wanted" = "yes"; then
+@@ -1208,6 +1219,8 @@ if test "$pthread_wanted" = "yes"; then
                     pthread_caml_link="-cclib -pthread";;
      *-*-openbsd*)  pthread_link="-pthread"
                     pthread_caml_link="-cclib -pthread";;
@@ -83,16 +79,16 @@ $OpenBSD: patch-configure,v 1.16 2012/11/01 07:57:26 avsm Exp $
      *)             pthread_link="-lpthread"
                     pthread_caml_link="-cclib -lpthread";;
    esac
-@@ -1204,7 +1217,7 @@ if test "$pthread_wanted" = "yes"; then
+@@ -1221,7 +1234,7 @@ if test "$pthread_wanted" = "yes"; then
        *-*-freebsd*)
            bytecccompopts="$bytecccompopts -D_THREAD_SAFE"
            nativecccompopts="$nativecccompopts -D_THREAD_SAFE";;
 -      *-*-openbsd*)
-+      *-*-openbsd* | *-*-bitrig*)
++      *-*-openbsd*|*-*-bitrig*)
            bytecccompopts="$bytecccompopts -pthread"
            asppflags="$asppflags -pthread"
            nativecccompopts="$nativecccompopts -pthread";;
-@@ -1543,11 +1556,11 @@ fi
+@@ -1563,11 +1576,11 @@ fi
  
  # Look for BFD library
  
