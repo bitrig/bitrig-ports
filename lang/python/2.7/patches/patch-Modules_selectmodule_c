@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Modules/selectmodule.c.orig	Tue Nov 26 21:20:24 2013
++++ Modules/selectmodule.c	Tue Nov 26 21:21:00 2013
+@@ -1219,7 +1219,7 @@ static PyTypeObject kqueue_queue_Type;
+ /*
+  * kevent is not standard and its members vary across BSDs.
+  */
+-#if !defined(__OpenBSD__)
++#if !defined(__OpenBSD__) && !defined(__Bitrig__)
+ #   define IDENT_TYPE	T_UINTPTRT
+ #   define IDENT_CAST	Py_intptr_t
+ #   define DATA_TYPE	T_INTPTRT
