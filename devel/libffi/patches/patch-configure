@@ -2,8 +2,8 @@ $OpenBSD: patch-configure,v 1.5 2013/05/01 10:11:54 miod Exp $
 
 Enable libffi on hppa, m88k, mips64(el), powerpc and vax platforms.
 
---- configure.orig	Thu Dec 31 12:41:51 2009
-+++ configure	Wed Apr 24 15:46:57 2013
+--- configure.orig	Thu Dec 31 13:41:51 2009
++++ configure	Tue Nov 19 23:16:50 2013
 @@ -807,6 +807,8 @@ SH_FALSE
  SH_TRUE
  X86_64_FALSE
@@ -22,6 +22,69 @@ Enable libffi on hppa, m88k, mips64(el), powerpc and vax platforms.
  M68K_FALSE
  M68K_TRUE
  M32R_FALSE
+@@ -4843,7 +4847,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -5268,7 +5272,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -5652,7 +5656,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -8454,7 +8458,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -9250,7 +9254,7 @@ rm -f core conftest.err conftest.$ac_objext conftest_i
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -10245,7 +10249,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -12151,7 +12155,7 @@ case "$host" in
+ 	TARGET=ARM; TARGETDIR=arm
+ 	;;
+ 
+-  amd64-*-freebsd* | amd64-*-openbsd*)
++  amd64-*-freebsd* | amd64-*-openbsd* | amd64-*-bitrig*)
+ 	TARGET=X86_64; TARGETDIR=x86
+   	;;
+ 
 @@ -12167,7 +12171,7 @@ case "$host" in
  	TARGET=FRV; TARGETDIR=frv
  	;;
@@ -31,6 +94,15 @@ Enable libffi on hppa, m88k, mips64(el), powerpc and vax platforms.
  	TARGET=PA_LINUX; TARGETDIR=pa
  	;;
    hppa*64-*-hpux*)
+@@ -12177,7 +12181,7 @@ case "$host" in
+ 	TARGET=PA_HPUX; TARGETDIR=pa
+ 	;;
+ 
+-  i?86-*-freebsd* | i?86-*-openbsd*)
++  i?86-*-freebsd* | i?86-*-openbsd* | i?86-*-bitrig*)
+ 	TARGET=X86_FREEBSD; TARGETDIR=x86
+ 	;;
+   i?86-win32* | i?86-*-cygwin* | i?86-*-mingw*)
 @@ -12207,10 +12211,14 @@ case "$host" in
  	TARGET=M68K; TARGETDIR=m68k
  	;;
@@ -97,6 +169,15 @@ Enable libffi on hppa, m88k, mips64(el), powerpc and vax platforms.
   if test x$TARGET = xX86_64; then
    X86_64_TRUE=
    X86_64_FALSE='#'
+@@ -14501,7 +14529,7 @@ _ACEOF
+ fi
+ 
+ case "$target" in
+-     *-apple-darwin10* | *-*-freebsd* | *-*-openbsd* | *-pc-solaris*)
++     *-apple-darwin10* | *-*-freebsd* | *-*-openbsd* | *-*-bitrig* | *-pc-solaris*)
+ 
+ cat >>confdefs.h <<\_ACEOF
+ #define FFI_MMAP_EXEC_WRIT 1
 @@ -14887,6 +14915,13 @@ $as_echo "$as_me: error: conditional \"M68K\" was neve
  Usually this means the macro was only invoked conditionally." >&2;}
     { (exit 1); exit 1; }; }
