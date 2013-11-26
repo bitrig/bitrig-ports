@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Lib/uuid.py.orig	Wed Nov 27 19:15:51 2013
++++ Lib/uuid.py	Wed Nov 27 19:15:54 2013
+@@ -318,7 +318,7 @@ def _ifconfig_getnode():
+ 
+     # This works on Linux ('' or '-a'), Tru64 ('-av'), but not all Unixes.
+     for args in ('', '-a', '-av'):
+-        mac = _find_mac('ifconfig', args, ['hwaddr', 'ether'], lambda i: i+1)
++        mac = _find_mac('ifconfig', args, ['hwaddr', 'ether', 'lladdr'], lambda i: i+1)
+         if mac:
+             return mac
+ 

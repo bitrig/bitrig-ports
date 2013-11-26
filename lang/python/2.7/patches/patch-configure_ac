@@ -4,9 +4,9 @@ SOVERSION defaults to 1.0. SHARED_LIBS, however, could be changed
 at any point.  Ensure they are on sync in case INSTSONAME is used
 by a third party.
 
---- configure.ac.orig	Sat Apr  6 16:02:41 2013
-+++ configure.ac	Sun Apr 21 16:25:34 2013
-@@ -395,7 +395,7 @@ case $ac_sys_system/$ac_sys_release in
+--- configure.ac.orig	Sun Nov 10 08:36:41 2013
++++ configure.ac	Tue Nov 12 14:22:12 2013
+@@ -396,7 +396,7 @@ case $ac_sys_system/$ac_sys_release in
      # As this has a different meaning on Linux, only define it on OpenBSD
      AC_DEFINE(_BSD_SOURCE, 1, [Define on OpenBSD to activate all library features])
      ;;
@@ -15,7 +15,7 @@ by a third party.
      # OpenBSD undoes our definition of __BSD_VISIBLE if _XOPEN_SOURCE is
      # also defined. This can be overridden by defining _BSD_SOURCE
      # As this has a different meaning on Linux, only define it on OpenBSD
-@@ -882,7 +882,7 @@ if test $enable_shared = "yes"; then
+@@ -883,7 +883,7 @@ if test $enable_shared = "yes"; then
  	  RUNSHARED=LD_LIBRARY_PATH=`pwd`:${LD_LIBRARY_PATH}
  	  INSTSONAME="$LDLIBRARY".$SOVERSION
            ;;
@@ -24,7 +24,7 @@ by a third party.
  	  LDLIBRARY='libpython$(VERSION).so'
  	  BLDLIBRARY='-L. -lpython$(VERSION)'
  	  RUNSHARED=LD_LIBRARY_PATH=`pwd`:${LD_LIBRARY_PATH}
-@@ -890,6 +890,9 @@ if test $enable_shared = "yes"; then
+@@ -891,6 +891,9 @@ if test $enable_shared = "yes"; then
  	      FreeBSD*)
  		SOVERSION=`echo $SOVERSION|cut -d "." -f 1`
  		;;

@@ -1,0 +1,13 @@
+$OpenBSD$
+--- Lib/test/test_posix.py.orig	Tue Nov 26 21:15:08 2013
++++ Lib/test/test_posix.py	Tue Nov 26 21:15:45 2013
+@@ -464,7 +464,8 @@ class PosixTester(unittest.TestCase):
+                         quirky_platform = (
+                             'sunos' in sys.platform or
+                             'netbsd' in sys.platform or
+-                            'openbsd' in sys.platform
++                            'openbsd' in sys.platform or
++                            'bitrig' in sys.platform
+                         )
+                         if quirky_platform:
+                             expected_errno = errno.ERANGE
