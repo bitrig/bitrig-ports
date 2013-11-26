@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Include/pyport.h.orig	Tue Nov 26 21:46:15 2013
++++ Include/pyport.h	Tue Nov 26 21:46:28 2013
+@@ -467,7 +467,7 @@ extern "C" {
+  *    This isn't reliable.  See Py_OVERFLOWED comments.
+  *    X is evaluated more than once.
+  */
+-#if defined(__FreeBSD__) || defined(__OpenBSD__) || (defined(__hpux) && defined(__ia64))
++#if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__Bitrig__) || (defined(__hpux) && defined(__ia64))
+ #define _Py_SET_EDOM_FOR_NAN(X) if (isnan(X)) errno = EDOM;
+ #else
+ #define _Py_SET_EDOM_FOR_NAN(X) ;
