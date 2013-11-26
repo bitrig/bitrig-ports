@@ -1,7 +1,7 @@
 $OpenBSD$
---- configure.orig	Sun May 13 05:07:32 2012
-+++ configure	Sun May 13 05:09:04 2012
-@@ -7479,7 +7479,7 @@ done
+--- configure.orig	Tue Nov 26 12:23:56 2013
++++ configure	Tue Nov 26 12:26:47 2013
+@@ -8632,7 +8632,7 @@ done
  
  
              case "$host_os" in
@@ -10,7 +10,25 @@ $OpenBSD$
         FAULT_YIELDS_SIGBUS=1 ;;
       hpux*) # HP-UX
         FAULT_YIELDS_SIGBUS=1 ;;
-@@ -13661,7 +13661,7 @@ else
+@@ -12753,7 +12753,7 @@ if ${gl_cv_func_getopt_long_gnu+:} false; then :
+ else
+   if test "$cross_compiling" = yes; then :
+               case "$host_os" in
+-              openbsd*) gl_cv_func_getopt_long_gnu="guessing no";;
++              openbsd* | bitrig*) gl_cv_func_getopt_long_gnu="guessing no";;
+               *)        gl_cv_func_getopt_long_gnu="guessing yes";;
+             esac
+ 
+@@ -15020,7 +15020,7 @@ else
+   if test "$cross_compiling" = yes; then :
+   case "$host_os" in
+           # Guess yes on platforms where we know the result.
+-          *-gnu* | freebsd* | netbsd* | openbsd* \
++          *-gnu* | freebsd* | netbsd* | openbsd* | bitrig* \
+           | hpux* | solaris* | cygwin* | mingw*)
+             ac_cv_func_malloc_0_nonnull=yes ;;
+           # If we don't know, assume the worst.
+@@ -16541,7 +16541,7 @@ else
                                   # Guess yes on OpenBSD >= 3.9.
             openbsd[1-2].* | openbsd3.[0-8] | openbsd3.[0-8].*)
                                   gl_cv_func_snprintf_retval_c99="guessing no";;
@@ -19,7 +37,7 @@ $OpenBSD$
                                   # Guess yes on Solaris >= 2.10.
             solaris2.[1-9][0-9]*) gl_cv_func_printf_sizes_c99="guessing yes";;
             solaris*)             gl_cv_func_printf_sizes_c99="guessing no";;
-@@ -14809,7 +14809,7 @@ else
+@@ -18301,7 +18301,7 @@ else
                                   # Guess yes on OpenBSD >= 3.9.
             openbsd[1-2].* | openbsd3.[0-8] | openbsd3.[0-8].*)
                                   gl_cv_func_printf_sizes_c99="guessing no";;
@@ -28,20 +46,30 @@ $OpenBSD$
                                   # Guess yes on Solaris >= 2.10.
             solaris2.[1-9][0-9]*) gl_cv_func_printf_sizes_c99="guessing yes";;
             solaris*)             gl_cv_func_printf_sizes_c99="guessing no";;
-@@ -15583,6 +15583,7 @@ else
+@@ -19121,7 +19121,7 @@ else
+       if test "$cross_compiling" = yes; then :
  
           case "$host_os" in
-            openbsd*)        gl_cv_func_printf_directive_ls="guessing no";;
-+           bitrig*)        gl_cv_func_printf_directive_ls="guessing no";;
+-           openbsd*)        gl_cv_func_printf_directive_ls="guessing no";;
++           openbsd* | bitrig*) gl_cv_func_printf_directive_ls="guessing no";;
             irix*)           gl_cv_func_printf_directive_ls="guessing no";;
             solaris*)        gl_cv_func_printf_directive_ls="guessing no";;
             cygwin*)         gl_cv_func_printf_directive_ls="guessing no";;
-@@ -17729,7 +17730,7 @@ _ACEOF
- 
+@@ -21500,7 +21500,7 @@ _ACEOF
    FLOAT_H=
+   REPLACE_FLOAT_LDBL=0
    case "$host_os" in
--    beos* | openbsd* | mirbsd*)
-+    beos* | openbsd* | bitrig* | mirbsd*)
+-    aix* | beos* | openbsd* | mirbsd* | irix*)
++    aix* | beos* | openbsd* | bitrig* | mirbsd* | irix*)
        FLOAT_H=float.h
- 
- 
+       ;;
+     freebsd*)
+@@ -25149,7 +25149,7 @@ else
+   if test "$cross_compiling" = yes; then :
+   case "$host_os" in
+           # Guess yes on platforms where we know the result.
+-          *-gnu* | freebsd* | netbsd* | openbsd* \
++          *-gnu* | freebsd* | netbsd* | openbsd* | bitrig* \
+           | hpux* | solaris* | cygwin* | mingw*)
+             ac_cv_func_malloc_0_nonnull=yes ;;
+           # If we don't know, assume the worst.
