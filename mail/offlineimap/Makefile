@@ -2,7 +2,7 @@
 
 COMMENT=	powerful IMAP/Maildir synchronization and reader support
 
-MODPY_EGG_VERSION= 6.5.4
+MODPY_EGG_VERSION= 6.5.5
 DISTNAME=	offlineimap-${MODPY_EGG_VERSION}
 CATEGORIES=	mail
 
@@ -13,7 +13,7 @@ MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=	https://github.com/spaetz/offlineimap/tarball/v${MODPY_EGG_VERSION}/
+MASTER_SITES=	https://github.com/OfflineIMAP/offlineimap/tarball/v${MODPY_EGG_VERSION}/
 
 NO_TEST=	Yes
 
@@ -21,7 +21,7 @@ MODULES=	lang/python
 
 BUILD_DEPENDS=	textproc/py-docutils
 
-WRKDIST=	${WRKDIR}/spaetz-offlineimap-c9e9690
+WRKDIST=	${WRKDIR}/OfflineIMAP-offlineimap-8bc2f35
 
 EXAMPLESDIR=	${PREFIX}/share/examples/offlineimap
 
