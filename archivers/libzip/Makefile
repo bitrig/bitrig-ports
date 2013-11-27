@@ -2,8 +2,7 @@
 
 COMMENT=		library for reading, creating and modifying zip archives
 
-DISTNAME=		libzip-0.10.1
-REVISION=		0
+DISTNAME=		libzip-0.11.1
 CATEGORIES=		archivers
 SHARED_LIBS +=  zip                  0.0      # 1.0
 
