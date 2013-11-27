@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.37 2013/06/19 20:26:05 steven Exp $
+# $OpenBSD: Makefile,v 1.38 2013/11/27 07:52:54 ajacoutot Exp $
 
 COMMENT=	syslogd replacement
 
