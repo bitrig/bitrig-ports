@@ -171,7 +171,7 @@ LIB_DEPENDS-main=x11/gtk+2 \
 		textproc/hunspell \
 		print/poppler
 
-WANTLIB-main=	estdc++ gdk-x11-2.0>=400.14 gtk-x11-2.0>=400.14 \
+WANTLIB-main=	gdk-x11-2.0>=400.14 gtk-x11-2.0>=400.14 \
 		xslt>=3 curl>=7 neon>=24 pq>=2 \
 		icuuc>=0 icui18n icule \
 		rdf>=0 poppler
@@ -203,7 +203,7 @@ LIB_DEPENDS-kde=	${MODQT_LIB_DEPENDS} \
 			${MODGCC4_CPPLIBDEP} \
 			x11/kde/libs3
 WANTLIB-kde=		${MODQT_WANTLIB} \
-			X11 c estdc++ m pthread \
+			X11 c m pthread \
 			lib/kde3/kdecore \
 			lib/kde3/kdeui lib/kde3/kio
 WANTLIB-kde+=		ICE SM Xext icule icuuc
@@ -220,7 +220,7 @@ RUN_DEPENDS-java=	${MODJAVA_RUN_DEPENDS} \
 			databases/db/v4,-java \
 			editors/libreoffice \
 			java/javaPathHelper
-WANTLIB-java=		c estdc++ m pthread
+WANTLIB-java=		c m pthread
 
 USE_GMAKE=	Yes
 NO_TEST=	Yes
