@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/cpu/cpu.cpp.orig	Thu Nov 28 23:14:19 2013
++++ src/cpu/cpu.cpp	Thu Nov 28 23:14:31 2013
+@@ -20,6 +20,7 @@
+ 
+ #include <assert.h>
+ #include <sstream>
++#include <cstddef>
+ #include "dosbox.h"
+ #include "cpu.h"
+ #include "memory.h"

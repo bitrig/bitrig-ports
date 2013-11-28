@@ -1,0 +1,12 @@
+$OpenBSD$
+--- include/dos_inc.h.orig	Mon May 10 19:43:54 2010
++++ include/dos_inc.h	Fri Nov 29 00:12:21 2013
+@@ -21,6 +21,8 @@
+ #ifndef DOSBOX_DOS_INC_H
+ #define DOSBOX_DOS_INC_H
+ 
++#include <cstddef>
++
+ #ifndef DOSBOX_DOS_SYSTEM_H
+ #include "dos_system.h"
+ #endif
