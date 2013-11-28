@@ -4,38 +4,23 @@ $OpenBSD: patch-Lib_test_regrtest_py,v 1.5 2013/05/22 12:39:30 fgsch Exp $
   on i386 and amd64.
 
 --- Lib/test/regrtest.py.orig	Sun Nov 10 08:36:40 2013
-+++ Lib/test/regrtest.py	Wed Nov 27 19:22:55 2013
-@@ -1416,22 +1416,17 @@ _expectations = {
++++ Lib/test/regrtest.py	Thu Nov 28 17:25:28 2013
+@@ -1433,6 +1433,18 @@ _expectations = {
+         test_ttk_textonly
+         test_multiprocessing
          """,
-     'openbsd3':
-         """
--        test_ascii_formatd
-         test_bsddb
-         test_bsddb3
-         test_ctypes
++    'bitrig0':
++        """
++        test_bsddb
++        test_bsddb3
 +        test_curses
-         test_dl
-         test_epoll
--        test_gdbm
--        test_locale
--        test_normalization
++        test_dl
++        test_epoll
 +        test_gdb
-+        test_multiprocessing
-         test_ossaudiodev
--        test_pep277
--        test_tcl
-         test_tk
-         test_ttk_guionly
--        test_ttk_textonly
--        test_multiprocessing
-         """,
++        test_ossaudiodev
++        test_tk
++        test_ttk_guionly
++        """,
      'netbsd3':
          """
-@@ -1458,6 +1453,7 @@ _expectations['freebsd5'] = _expectations['freebsd4']
- _expectations['freebsd6'] = _expectations['freebsd4']
- _expectations['freebsd7'] = _expectations['freebsd4']
- _expectations['freebsd8'] = _expectations['freebsd4']
-+_expectations['bitrig0'] = _expectations['openbsd3']
- 
- class _ExpectedSkips:
-     def __init__(self):
+         test_ascii_formatd
