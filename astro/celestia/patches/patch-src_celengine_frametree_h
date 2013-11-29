@@ -1,0 +1,14 @@
+$OpenBSD$
+
+NULL is defined in stddef.h
+
+--- src/celengine/frametree.h.orig	Sun Jun  5 18:11:09 2011
++++ src/celengine/frametree.h	Fri Nov 29 05:39:31 2013
+@@ -13,6 +13,7 @@
+ #ifndef _CELENGINE_FRAMETREE_H_
+ #define _CELENGINE_FRAMETREE_H_
+ 
++#include <cstddef>
+ #include <vector>
+ 
+ class Star;

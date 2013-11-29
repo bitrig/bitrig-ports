@@ -1,0 +1,14 @@
+$OpenBSD$
+
+memcpy needs string.h.
+
+--- src/celengine/texture.cpp.orig	Fri Nov 29 05:04:29 2013
++++ src/celengine/texture.cpp	Fri Nov 29 05:04:40 2013
+@@ -28,6 +28,7 @@
+ #include <cstdlib>
+ #include <cstdio>
+ #include <cassert>
++#include <cstring>
+ 
+ #ifndef _WIN32
+ #ifndef TARGET_OS_MAC

@@ -6,7 +6,7 @@ $OpenBSD: patch-src_celengine_astro_cpp,v 1.3 2009/07/20 10:35:20 ajacoutot Exp 
      cal_time.tm_wday = wday;
      cal_time.tm_gmtoff = utc_offset;
 -#if defined(TARGET_OS_MAC) || defined(__FreeBSD__)
-+#if defined(TARGET_OS_MAC) || defined(__FreeBSD__) || defined(__OpenBSD__)
++#if defined(TARGET_OS_MAC) || defined(__FreeBSD__) || defined(__Bitrig__)
      // tm_zone is a non-const string field on the Mac and FreeBSD (why?)
      cal_time.tm_zone = const_cast<char*>(tzname.c_str());
  #else
