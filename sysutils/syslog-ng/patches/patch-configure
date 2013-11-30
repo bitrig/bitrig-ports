@@ -1,7 +1,7 @@
 $OpenBSD$
---- configure.orig	Fri Jun 14 08:20:11 2013
-+++ configure	Tue Sep 24 15:30:06 2013
-@@ -12880,10 +12880,6 @@ a=0;
+--- configure.orig	Wed Nov 27 16:40:28 2013
++++ configure	Sat Nov 30 20:41:55 2013
+@@ -13140,10 +13140,6 @@ a=0;
  }
  _ACEOF
  if ac_fn_c_try_link "$LINENO"; then :

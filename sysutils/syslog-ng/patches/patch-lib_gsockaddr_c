@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-lib_gsockaddr_c,v 1.1 2013/11/30 10:02:12 steven Exp $
 --- lib/gsockaddr.c.orig	Fri Jun 14 07:54:20 2013
 +++ lib/gsockaddr.c	Tue Sep 24 01:24:06 2013
 @@ -355,7 +355,7 @@ g_sockaddr_inet_range_new(gchar *ip, guint16 min_port,
