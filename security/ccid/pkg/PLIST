@@ -1,11 +1,11 @@
-@comment $OpenBSD: PLIST,v 1.1.1.1 2012/08/06 13:20:48 dcoppa Exp $
+@comment $Bitrig: PLIST,v 1.1.1.1 2012/08/06 13:20:48 dcoppa Exp $
 lib/pcsc/
 lib/pcsc/drivers/
 lib/pcsc/drivers/ifd-ccid.bundle/
 lib/pcsc/drivers/ifd-ccid.bundle/Contents/
 lib/pcsc/drivers/ifd-ccid.bundle/Contents/Info.plist
-lib/pcsc/drivers/ifd-ccid.bundle/Contents/OpenBSD/
-lib/pcsc/drivers/ifd-ccid.bundle/Contents/OpenBSD/libccid.so
+lib/pcsc/drivers/ifd-ccid.bundle/Contents/Bitrig/
+lib/pcsc/drivers/ifd-ccid.bundle/Contents/Bitrig/libccid.so
 lib/pcsc/drivers/serial/
 lib/pcsc/drivers/serial/libccidtwin.so
 share/examples/ccid/
