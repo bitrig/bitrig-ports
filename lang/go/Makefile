@@ -1,17 +1,14 @@
-# $OpenBSD: Makefile,v 1.14 2013/10/31 21:12:12 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2013/12/02 15:35:49 jsing Exp $
 
 ONLY_FOR_ARCHS =	amd64 i386
 
 COMMENT =		Go programming language
 
-VERSION =		1.1.1
-REVISION =		1
+VERSION =		1.2
 EXTRACT_SUFX =		.src.tar.gz
 DISTNAME = 		go${VERSION}
 PKGNAME = 		go-${VERSION}
 CATEGORIES =		lang
-REVISION =		0
-
 
 HOMEPAGE =		http://www.golang.org/
 
@@ -63,6 +60,8 @@ do-configure:
 
 do-build:
 	@cd ${WRKSRC} && \
+		CC=${CC} \
+		CXX=${CXX} \
 		GOROOT=${WRKDIST} \
 		GOBIN=${WRKDIST}/bin \
 		GOROOT_FINAL=${GOROOT} ./make.bash --no-banner
@@ -73,7 +72,7 @@ do-test:
 		PATH=${WRKDIST}/bin:${PATH} GOROOT=${WRKDIST} ./run.bash
 
 do-install:
-	${INSTALL_PROGRAM} -p ${WRKDIST}/bin/go{,doc,fmt} ${PREFIX}/bin
+	${INSTALL_PROGRAM} -p ${WRKDIST}/bin/go{,fmt} ${PREFIX}/bin
 
 	${INSTALL_PROGRAM_DIR} ${GOROOT}
 

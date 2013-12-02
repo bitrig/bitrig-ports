@@ -1,0 +1,14 @@
+$OpenBSD: patch-src_pkg_syscall_route_bsd_go,v 1.1 2013/12/02 15:35:49 jsing Exp $
+--- src/pkg/syscall/route_bsd.go.orig	Fri Nov 29 08:38:29 2013
++++ src/pkg/syscall/route_bsd.go	Mon Dec  2 13:06:54 2013
+@@ -201,6 +201,10 @@ func (m *InterfaceAddrMessage) sockaddr() (sas []Socka
+ func ParseRoutingMessage(b []byte) (msgs []RoutingMessage, err error) {
+ 	for len(b) >= anyMessageLen {
+ 		any := (*anyMessage)(unsafe.Pointer(&b[0]))
++		if any.Version == RTM_VERSION - 1 {
++			b = b[any.Msglen:]
++			continue
++		}
+ 		if any.Version != RTM_VERSION {
+ 			return nil, EINVAL
+ 		}
