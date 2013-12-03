@@ -1,0 +1,2 @@
+O_ARCH=         bitrig
+-O_ARCH=        -$(O_ARCH)

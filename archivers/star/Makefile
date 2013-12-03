@@ -17,8 +17,7 @@ FLAVOR?=
 
 USE_GMAKE=	Yes
 USE_GROFF=	Yes
-MAKE_FLAGS=	CC="${CC}" CC++="${CXX}" \
-		CC_COM="${CC}" CC++_COM="${CXX}" COPTOPT="${CFLAGS}" \
+MAKE_FLAGS=	CC="${CC}" CCOM="${CC}" CC_COM="${CC}" COPTOPT="${CFLAGS}" \
 		CPPOPTX="-DDEFTAPE=\\\"/dev/rst0\\\" \
 			 -DSYSCONFDIR=\\\"$(SYSCONFDIR)\\\"" \
 		GMAKE_NOWARN=1
@@ -36,15 +35,16 @@ post-patch:
 	    ${WRKSRC}/rmt/rmt.c ${WRKSRC}/rmt/rmt.1
 
 do-configure:
-.if ${MACHINE} != "i386" || ${CC} != "cc"
+	cp ${FILESDIR}/RULES_os-bitrig.id ${WRKSRC}/RULES/os-bitrig.id
+	cd ${WRKSRC}/RULES && ln -sf os-openbsd.def os-bitrig.def
+	cd ${WRKSRC}/DEFAULTS && ln -sf Defaults.openbsd Defaults.bitrig
 	cd ${WRKSRC}/RULES && \
-	    ln -sf i386-openbsd-cc.rul ${MACHINE}-openbsd-${CC}.rul
-.endif
+	    ln -sf i386-openbsd-cc.rul ${MACHINE}-bitrig-${CC}.rul
 .if ${CC} != "cc" && ${CC} != "gcc"
 	cd ${WRKSRC}/RULES && ln -sf cc-gcc.rul cc-${CC}.rul
 .endif
 
-OBJ=	OBJ/${MACHINE_ARCH}-openbsd-${CC}
+OBJ=	OBJ/${MACHINE_ARCH}-bitrig-${CC}
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/star
