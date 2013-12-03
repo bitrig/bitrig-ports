@@ -45,7 +45,7 @@ WANTLIB += X11 Xext Xfixes Xrender Xss bz2 c cairo cups dbus-1 event
 WANTLIB += execinfo expat fontconfig freetype gconf-2 gcrypt gdk-x11-2.0
 WANTLIB += gdk_pixbuf-2.0 glib-2.0 gobject-2.0 gtk-x11-2.0
 WANTLIB += jpeg m nspr4 nss3 nssutil3 pango-1.0 pangocairo-1.0
-WANTLIB += plc4 png pthread smime3 speex
+WANTLIB += plc4 png pthread smime3 speex opus
 WANTLIB += xml2 xslt
 WANTLIB += atk-1.0 usb-1.0 Xrandr sndio
 WANTLIB += Xcomposite
@@ -73,6 +73,7 @@ LIB_DEPENDS=	archivers/bzip2 \
 		textproc/libxslt \
 		x11/gtk+2 \
 		audio/speex \
+		audio/opus \
 		print/cups,-libs
 
 .include <bsd.own.mk>
@@ -99,6 +100,7 @@ GYP_DEFS=	-Duse_system_bzip2=1 \
 		-Duse_system_libvpx=0 \
 		-Duse_system_libxml=1 \
 		-Duse_system_speex=1 \
+		-Duse_system_opus=1 \
 		-Duse_system_sqlite=0 \
 		-Duse_system_yasm=1 \
 		-Duse_system_zlib=0 \
@@ -116,12 +118,6 @@ GYP_DEFS=	-Duse_system_bzip2=1 \
 		-Dclang_use_chrome_plugins=0 \
 		-Dno_gc_sections=1 \
 		-DOS=openbsd
-
-# Note: these keys are for OpenBSD use ONLY. For your own distribution,
-# please get your own set of keys. It's free!
-GYP_DEFS+=	-Dgoogle_api_key='AIzaSyA015yecfJyWi8UQpneQVrNzIKlxjv4MhI' \
-		-Dgoogle_default_client_id='451220141585.apps.googleusercontent.com' \
-		-Dgoogle_default_client_secret='nQcDyaBvDyCeDrsRqKIWSHJn'
 
 .if ${FLAVOR:Mproprietary}
 GYP_DEFS+=	-Dffmpeg_branding=Chrome \

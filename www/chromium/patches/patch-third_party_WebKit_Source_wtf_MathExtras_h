@@ -1,0 +1,15 @@
+$OpenBSD$
+
+stc++ has isfinite and signbite. Both of them are defined inline, not as macro.
+
+--- third_party/WebKit/Source/wtf/MathExtras.h.orig.port	Tue Dec  3 06:29:38 2013
++++ third_party/WebKit/Source/wtf/MathExtras.h	Tue Dec  3 06:30:32 2013
+@@ -95,7 +95,7 @@ inline bool isinf(double x) { return !finite(x) && !is
+ 
+ #endif
+ 
+-#if OS(OPENBSD)
++#if OS(OPENBSD) && !defined(__Bitrig__)
+ 
+ namespace std {
+ 
