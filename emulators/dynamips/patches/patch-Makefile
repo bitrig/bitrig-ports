@@ -16,7 +16,7 @@ $OpenBSD: patch-Makefile,v 1.1.1.1 2008/01/18 09:09:48 sthen Exp $
  #PCAP_LIB=/usr/local/lib/libpcap.a
  PCAP_LIB=-lpcap
  
-+ifeq ($(shell uname), OpenBSD)
++ifeq ($(shell uname), Bitrig)
 +   PTHREAD_LIBS?=-pthread
 +   PCAP_LIB=-lpcap
 +   LOCALBASE?=/usr/local
