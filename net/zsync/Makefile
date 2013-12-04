@@ -21,4 +21,6 @@ MASTER_SITES=	${HOMEPAGE}download/
 CONFIGURE_STYLE=	gnu
 USE_GROFF=		Yes
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/autotools
+
 .include <bsd.port.mk>
