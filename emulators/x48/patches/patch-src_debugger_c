@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/debugger.c.orig	Wed Dec  4 11:16:18 2013
++++ src/debugger.c	Wed Dec  4 11:16:28 2013
+@@ -1585,7 +1585,7 @@ get_stack ()
+   saturn.mem_cntl[1].config[0] = ram_base;
+   saturn.mem_cntl[1].config[1] = ram_mask;
+ 
+-  return;
++  return NULL;
+ }
+ 
+ static void

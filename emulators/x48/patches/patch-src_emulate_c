@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/emulate.c.orig	Wed Dec  4 11:23:28 2013
++++ src/emulate.c	Wed Dec  4 11:23:12 2013
+@@ -695,7 +695,7 @@ decode_group_1()
+   }
+ }
+ 
+-inline int
++static inline int
+ #ifdef __FunctionProto__
+ decode_8_thru_f(int op1)
+ #else
