@@ -1,0 +1,15 @@
+$OpenBSD$
+
+clang is not happy about extraneous parentheses.
+
+--- src/player.cpp.orig	Wed Dec  4 13:32:00 2013
++++ src/player.cpp	Wed Dec  4 13:32:19 2013
+@@ -290,7 +290,7 @@ void doPlayer()
+ 					Math::addBit(&player.flags, ENT_FLIES);
+ 					player.setSprites(graphics.getSprite("JPBobRight", true), graphics.getSprite("JPBobLeft", true), graphics.getSprite("BobSpin", true));
+ 				}
+-				else if ((player.environment == ENV_WATER))
++				else if (player.environment == ENV_WATER)
+ 				{
+ 					engine.setInfoMessage("Jetpack cannot be used underwater", 0, INFO_NORMAL);
+ 				}
