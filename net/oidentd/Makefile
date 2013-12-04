@@ -16,6 +16,8 @@ WANTLIB=		c
 CONFIGURE_STYLE=gnu
 USE_GROFF =	Yes
 
+CONFIGURE_ENV=	CFLAGS="-std=gnu89"
+
 pre-configure:
 	@perl -pi -e 's,/etc,${SYSCONFDIR},g' \
 		${WRKSRC}/doc/oidentd_masq.conf.5 ${WRKSRC}/doc/oidentd.8 \

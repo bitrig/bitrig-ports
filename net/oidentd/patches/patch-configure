@@ -1,12 +1,21 @@
 $OpenBSD: patch-configure,v 1.2 2011/07/20 13:59:13 naddy Exp $
---- configure.orig	Fri Jul 11 09:50:57 2003
-+++ configure	Wed Jul 20 07:57:29 2011
+--- configure.orig	Fri Jul 11 17:50:57 2003
++++ configure	Wed Dec  4 17:10:55 2013
+@@ -5839,7 +5839,7 @@ case "$host_os" in
+ 		fi
+ 	;;
+ 
+-	*openbsd* )
++	*openbsd* | *bitrig* )
+ 		case "$host_os" in
+ 			*openbsd2* )
+ 				if test "$ac_cv_ipf_nat_p" = "no"; then
 @@ -5863,7 +5863,7 @@ case "$host_os" in
  					os_src=openbsd29.c
  				;;
  
 -				*openbsd3*)
-+				*openbsd*)
++				*openbsd* | *bitrig*)
  					os_src=openbsd30.c
  				;;
  			esac
@@ -15,7 +24,7 @@ $OpenBSD: patch-configure,v 1.2 2011/07/20 13:59:13 naddy Exp $
  				;;
  
 -				*openbsd3* )
-+				*openbsd* )
++				*openbsd* | *bitrig* )
  					os_src=openbsd30.c
  				;;
  			esac
