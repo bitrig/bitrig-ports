@@ -1,5 +1,5 @@
---- TiMidity++-2.13.2/configure.in.orig	Sun Oct  3 05:39:52 2004
-+++ TiMidity++-2.13.2/configure.in	Tue Mar 24 01:31:03 2009
+--- TiMidity++-2.13.2/configure.in.orig	Sun Oct  3 14:39:52 2004
++++ TiMidity++-2.13.2/configure.in	Wed Dec  4 21:44:40 2013
 @@ -81,7 +81,7 @@ if test "x$timidity_cv_debug" = "xno"; then
  fi
  AC_MSG_RESULT($timidity_cv_debug)
@@ -37,6 +37,15 @@
    [ if test "$enable_audio" != no; then
      DEFAULT_PLAYMODE=$withval
      eval "au_enable_$DEFAULT_PLAYMODE=yes"
+@@ -838,7 +840,7 @@ if test "x$au_enable_oss" = xyes; then
+ 
+   dnl Why OpenBSD use /dev/audio instead of /dev/dsp for OSS
+   case "$target" in
+-    *openbsd*)
++    *openbsd* | *bitrig*)
+       if test ! -e "/dev/dsp"; then
+         oss_device=/dev/audio
+       fi
 @@ -1158,6 +1160,22 @@ else
    AC_MSG_RESULT(no)
  fi
@@ -69,6 +78,15 @@
    *)         TIMIDITY_OUTPUT_ID= ;;
  esac
  AC_MSG_RESULT($DEFAULT_PLAYMODE/$TIMIDITY_OUTPUT_ID)
+@@ -1461,7 +1481,7 @@ dnl configure must check ncurses header with -I/usr/in
+ 	    ],
+ 	    [ dnl OpenBSD use -lcurses instead of -lncurses.
+ 	      case "$target" in
+-		*openbsd*)
++		*openbsd* | *bitrig*)
+ 		  AC_CHECK_LIB(curses,initscr,lib_curses_opt=-lcurses,
+ 		    [ AC_MSG_WARN(ncurses interface is not enabled)
+ 		      enable_ncurses=no ])
 @@ -1506,10 +1526,10 @@ CONFIG_INTERFACE(slang,SLANG,s,
      ])
      AC_CHECK_HEADERS(slang/slang.h slang.h)
