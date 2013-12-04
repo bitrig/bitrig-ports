@@ -1,0 +1,12 @@
+$OpenBSD$
+--- scripts/checks.sh.orig	Wed Dec  4 11:39:42 2013
++++ scripts/checks.sh	Wed Dec  4 11:39:08 2013
+@@ -640,7 +640,7 @@ check_x11()
+ check_pthread()
+ {
+ 	case `uname -s` in
+-	OpenBSD)
++	OpenBSD | Bitrig)
+ 		PTHREAD_LIBS="$PTHREAD_LIBS -pthread"
+ 		;;
+ 	esac

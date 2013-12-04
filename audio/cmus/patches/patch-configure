@@ -3,7 +3,7 @@ Remove -Wredundant-decls which makes a lot of useless noise on
 OpenBSD because of some problems in system headers.
 (+ sndio support)
 --- configure.orig	Wed Nov  7 09:46:17 2012
-+++ configure	Wed Nov  7 19:18:57 2012
++++ configure	Wed Dec  4 11:41:49 2013
 @@ -5,7 +5,7 @@
  check_cflags()
  {
@@ -20,7 +20,7 @@ OpenBSD because of some problems in system headers.
 +check_sndio()
 +{
 +	case `uname -s` in
-+	OpenBSD)
++	OpenBSD | Bitrig)
 +		check_library SNDIO "" "-lsndio"
 +		return $?
 +	esac
