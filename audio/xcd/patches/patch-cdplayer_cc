@@ -1,6 +1,6 @@
 $OpenBSD: patch-cdplayer_cc,v 1.2 2011/10/31 16:55:41 stu Exp $
---- cdplayer.cc.orig	Tue Feb  2 18:28:24 1999
-+++ cdplayer.cc	Sun Oct 30 13:07:48 2011
+--- cdplayer.cc.orig	Wed Feb  3 00:28:24 1999
++++ cdplayer.cc	Wed Dec  4 22:38:03 2013
 @@ -29,7 +29,7 @@ class button { (private)
  public:
      button (char *s) {state=0; strcpy (name, s);}
@@ -10,3 +10,11 @@ $OpenBSD: patch-cdplayer_cc,v 1.2 2011/10/31 16:55:41 stu Exp $
  	if (state != i) {
  	    state = i;
  	    if (state == 0)
+@@ -90,6 +90,7 @@ button play_button ("play"),  pause_button ("pause"), 
+ #define S(t) toc_buffer[t].addr.msf.second
+ #define F(t) toc_buffer[t].addr.msf.frame
+ 
++int
+ main (int argc, char **argv)
+ {
+     char dev[20], line[50];
