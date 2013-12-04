@@ -1,0 +1,12 @@
+$OpenBSD$
+--- scripts/os.orig	Wed Dec  4 22:56:51 2013
++++ scripts/os	Wed Dec  4 22:57:15 2013
+@@ -10,7 +10,7 @@ case `uname -s` in 
+ 	*Linux*)        echo linux;;
+ 	*IRIX*)         echo irix;;
+ 	*AIX*)          echo aix;;
+-	*BSD*)          echo bsd;;
++	*BSD* | Bitrig) echo bsd;;
+ 	*OSF1*)         echo osf1;;
+ 	*SunOS*)        case `uname -r` in 
+ 				4*)     echo sunos;;
