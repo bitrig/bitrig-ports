@@ -1,8 +1,8 @@
 @comment $OpenBSD: PLIST,v 1.3 2011/06/28 09:10:32 rpointel Exp $
-%%SHARED%%
 include/confuse.h
 lib/libconfuse.a
 lib/libconfuse.la
+@lib lib/libconfuse.so.${LIBconfuse_VERSION}
 lib/pkgconfig/
 lib/pkgconfig/libconfuse.pc
 share/doc/libconfuse/
