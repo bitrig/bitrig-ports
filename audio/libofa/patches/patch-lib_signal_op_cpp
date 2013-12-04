@@ -1,0 +1,11 @@
+$OpenBSD$
+--- lib/signal_op.cpp.orig	Wed Dec  4 22:23:13 2013
++++ lib/signal_op.cpp	Wed Dec  4 22:23:30 2013
+@@ -13,6 +13,7 @@
+ 
+ 
+ #include <math.h>
++#include <cstdlib>
+ #include "signal_op.h"
+ #include "AFLIB/aflibConverter.h"
+ #include "error_op.h"
