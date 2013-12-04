@@ -1,6 +1,7 @@
-$OpenBSD$
+$OpenBSD: patch-configure,v 1.1 2013/12/04 07:13:31 steven Exp $
+do not pick up libuuid
 --- configure.orig	Wed Nov 27 16:40:28 2013
-+++ configure	Sat Nov 30 20:41:55 2013
++++ configure	Wed Dec  4 17:58:48 2013
 @@ -13140,10 +13140,6 @@ a=0;
  }
  _ACEOF
@@ -12,3 +13,11 @@ $OpenBSD$
  
  fi
  rm -f core conftest.err conftest.$ac_objext \
+@@ -15379,6 +15375,7 @@ fi
+  else
+     pkg_failed=untried
+ fi
++pkg_failed=yes
+ 
+ 
+ 
