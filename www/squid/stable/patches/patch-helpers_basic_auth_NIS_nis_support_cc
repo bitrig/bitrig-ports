@@ -1,0 +1,13 @@
+$OpenBSD$
+--- helpers/basic_auth/NIS/nis_support.cc.orig	Wed Dec  4 17:11:39 2013
++++ helpers/basic_auth/NIS/nis_support.cc	Wed Dec  4 17:11:54 2013
+@@ -9,8 +9,7 @@
+ #include <sys/types.h>
+ #include <rpc/rpc.h>
+ 
+-#if _SQUID_FREEBSD_  && !defined(BOOL_DEFINED)
+-// BUG: FreeBSD rpcsvc/yp_* headers try to redefine bool unless we match their non-standard hack.
++#ifndef BOOL_DEFINED
+ #define BOOL_DEFINED
+ #endif
+ 

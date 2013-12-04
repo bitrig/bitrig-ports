@@ -88,7 +88,7 @@ CONFIGURE_ARGS+= --disable-pf-transparent \
 # kerberos_ldap_group fails
 CONFIGURE_ARGS+= --enable-external-acl-helpers="${EXTERNAL_ACL}"
 
-CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include -Wno-sizeof-array-decay -Wno-deprecated-declarations" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		ac_cv_header_et_com_err_h=false
 E=		${TRUEPREFIX}/share/examples/squid
