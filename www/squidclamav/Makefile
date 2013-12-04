@@ -26,6 +26,8 @@ CONFIGURE_ARGS=	--with-c-icap=${LOCALBASE}
 
 FAKE_FLAGS=	DEFAULT_DOC_DIR=${PREFIX}/share/doc/squidclamav
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/config
+
 pre-configure:
 	perl -pi -e 's,/etc/squidclamav.conf,${SYSCONFDIR}/squidclamav.conf,' \
 	    ${WRKSRC}/src/squidclamav.h
