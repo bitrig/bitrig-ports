@@ -5,6 +5,6 @@ and Carnegie Mellon University's FestVox project, tools, scripts and
 documentation for building synthetic voices.  However, flite itself
 does not require either of these systems to compile and run.
 
-The festival lite package was modified from the original source. 
+The festival lite package was modified from the original source.
 You can find the modifications on
 http://www.openbsd.org/cgi-bin/cvsweb/ports/audio/flite/patches/

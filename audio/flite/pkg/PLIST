@@ -40,9 +40,14 @@ include/flite/cst_wave.h
 include/flite/flite.h
 include/flite/flite_version.h
 lib/libflite.a
+@lib lib/libflite.so.${LIBflite_VERSION}
 lib/libflite_cmu_time_awb.a
+@lib lib/libflite_cmu_time_awb.so.${LIBflite_cmu_time_awb_VERSION}
 lib/libflite_cmu_us_kal.a
+@lib lib/libflite_cmu_us_kal.so.${LIBflite_cmu_us_kal_VERSION}
 lib/libflite_cmu_us_kal16.a
+@lib lib/libflite_cmu_us_kal16.so.${LIBflite_cmu_us_kal16_VERSION}
 lib/libflite_cmulex.a
+@lib lib/libflite_cmulex.so.${LIBflite_cmulex_VERSION}
 lib/libflite_usenglish.a
-%%SHARED%%
+@lib lib/libflite_usenglish.so.${LIBflite_usenglish_VERSION}
