@@ -22,6 +22,9 @@ MODAPACHE_NAME=		bsd_auth
 MODAPACHE_ENABLE=	mod_auth_bsd-enable
 MODAPACHE_MODULE=	mod_auth_bsd.so
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 NO_TEST=	Yes
 
 post-build:
