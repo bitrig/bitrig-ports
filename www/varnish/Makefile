@@ -27,6 +27,8 @@ USE_GROFF =		Yes
 CONFIGURE_STYLE =	autoconf
 AUTOCONF_VERSION =	2.69
 
+CFLAGS+=	-I${LOCALBASE}/include
+
 TEST_TARGET =		check
 
 post-install:
