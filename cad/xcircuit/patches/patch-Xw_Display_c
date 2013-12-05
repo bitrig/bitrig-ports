@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Xw/Display.c.orig	Thu Dec  5 11:43:17 2013
++++ Xw/Display.c	Thu Dec  5 11:43:47 2013
+@@ -512,7 +512,7 @@ static Boolean initialized = FALSE;
+ static XContext asciiSinkContext;
+ 
+ /*--------------------------------------------------------------------------+*/
+-AsciiSinkInitialize()
++void AsciiSinkInitialize()
+ /*--------------------------------------------------------------------------+*/
+ {
+     if (initialized)
