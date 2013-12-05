@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/io_findf.cc.orig	Thu Dec  5 11:18:30 2013
++++ src/io_findf.cc	Thu Dec  5 11:18:38 2013
+@@ -32,6 +32,7 @@
+  * PATHSEP, ENDDIR are system dependent, defined in md.h
+  */
+ //testing=script,sparse 2006.07.17
++#include <cstring>
+ #include "l_lib.h"
+ /*--------------------------------------------------------------------------*/
+ std::string findfile(const std::string& filename, const std::string& path,

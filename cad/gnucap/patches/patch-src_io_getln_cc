@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/io_getln.cc.orig	Thu Dec  5 11:18:47 2013
++++ src/io_getln.cc	Thu Dec  5 11:18:54 2013
+@@ -27,6 +27,7 @@
+  * start with + is extension line, spice compatibility.
+  */
+ //testing=script 2006.07.17
++#include <cstring>
+ #include "l_lib.h"
+ /*--------------------------------------------------------------------------*/
+ std::string getlines(FILE *fileptr)

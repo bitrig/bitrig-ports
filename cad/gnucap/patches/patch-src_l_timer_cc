@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/l_timer.cc.orig	Thu Dec  5 11:19:43 2013
++++ src/l_timer.cc	Thu Dec  5 11:19:51 2013
+@@ -22,6 +22,7 @@
+  * Time a command, or whatever
+  */
+ //testing=script,sparse 2006.07.13
++#include <cstring>
+ #include "l_timer.h"
+ /*--------------------------------------------------------------------------*/
+ //		TIMER::TIMER();

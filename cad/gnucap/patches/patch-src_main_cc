@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/main.cc.orig	Thu Dec  5 11:17:48 2013
++++ src/main.cc	Thu Dec  5 11:17:58 2013
+@@ -23,6 +23,7 @@
+  * it all starts here
+  */
+ //testing=script 2006.07.14
++#include <cstring>
+ #include "patchlev.h"
+ #include "c_comand.h"
+ #include "declare.h"	/* lots */

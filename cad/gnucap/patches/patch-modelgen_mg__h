@@ -1,0 +1,45 @@
+$OpenBSD$
+--- modelgen/mg_.h.orig	Thu Dec  5 11:12:23 2013
++++ modelgen/mg_.h	Thu Dec  5 11:15:09 2013
+@@ -99,6 +99,20 @@ class List_Base (public)
+   int		 size()const	 {return _list.size();}
+ };
+ /*--------------------------------------------------------------------------*/
++class C_Comment
++  :public Base
++{
++public:
++  void parse(CS& f);
++};
++/*--------------------------------------------------------------------------*/
++class Cxx_Comment
++  :public Base
++{
++public:
++  void parse(CS& f);
++};
++/*--------------------------------------------------------------------------*/
+ template <class T, char BEGIN, char END>
+ class List
+   :public List_Base<T>
+@@ -147,20 +161,6 @@ class Collection (public)
+       file.warn(0, "what's this??");
+     }}
+   }
+-};
+-/*--------------------------------------------------------------------------*/
+-class C_Comment
+-  :public Base
+-{
+-public:
+-  void parse(CS& f);
+-};
+-/*--------------------------------------------------------------------------*/
+-class Cxx_Comment
+-  :public Base
+-{
+-public:
+-  void parse(CS& f);
+ };
+ /*--------------------------------------------------------------------------*/
+ class Key

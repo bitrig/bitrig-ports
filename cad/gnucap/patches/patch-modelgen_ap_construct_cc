@@ -1,0 +1,11 @@
+$OpenBSD$
+--- modelgen/ap_construct.cc.orig	Thu Dec  5 11:08:18 2013
++++ modelgen/ap_construct.cc	Thu Dec  5 11:09:42 2013
+@@ -22,6 +22,7 @@
+  * construction, copy, etc.
+  */
+ //testing=script,sparse 2006.07.17
++#include <cstring>
+ #include "ap.h"
+ /*--------------------------------------------------------------------------*/
+ CS::CS(CS_FILE, const std::string& name, int i)

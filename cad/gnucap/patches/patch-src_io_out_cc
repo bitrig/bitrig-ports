@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/io_out.cc.orig	Thu Dec  5 11:19:06 2013
++++ src/io_out.cc	Thu Dec  5 11:19:14 2013
+@@ -31,6 +31,7 @@
+  * but I have yet to find a system that did not meet this form.
+  */
+ //testing=script,sparse 2006.07.17
++#include <cstring>
+ #include "u_opt.h"
+ /*--------------------------------------------------------------------------*/
+ 	const char* octal(int x);

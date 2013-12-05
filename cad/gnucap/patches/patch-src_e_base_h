@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/e_base.h.orig	Thu Dec  5 11:16:53 2013
++++ src/e_base.h	Thu Dec  5 11:17:14 2013
+@@ -24,6 +24,7 @@
+ //testing=script,complete 2006.07.12
+ #ifndef E_BASE_H
+ #define E_BASE_H
++#include <cstring>
+ #include "l_compar.h"
+ #include "u_opt.h"
+ #include "u_status.h"

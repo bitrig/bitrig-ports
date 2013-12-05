@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/ap.h.orig	Thu Dec  5 11:08:51 2013
++++ src/ap.h	Thu Dec  5 11:09:07 2013
+@@ -24,6 +24,7 @@
+ //testing=script,sparse 2006.07.17
+ #ifndef AP_H
+ #define AP_H
++#include <cstring>
+ #include "md.h"
+ /*--------------------------------------------------------------------------*/
+ enum AP_MOD{
