@@ -14,6 +14,7 @@ HOMEPAGE=	http://www.remlab.net/libident/
 PERMIT_PACKAGE_CDROM=	Yes
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/admin
 
 USE_GROFF=	Yes
 

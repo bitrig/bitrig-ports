@@ -29,6 +29,8 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		ac_cv_path_DOXYGEN=no \
 		ac_cv_header_gnutls_gnutls_h=no
 
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/autoconf
+
 do-test:
 	cd ${WRKDIST}/tests && ${SETENV} ${MAKE_ENV} ${MAKE} && \
 		./test.sh

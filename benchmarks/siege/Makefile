@@ -25,6 +25,7 @@ LOCALSTATEDIR=		${BASELOCALSTATEDIR}/log/siege
 SYSCONFDIR=		${BASESYSCONFDIR}/siege
 
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/utils
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/siege

@@ -24,6 +24,7 @@ MODULES =		converters/libiconv
 USE_LIBTOOL =		gnu
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build-aux
 
 # XXX: One regression test fails:
 # test-wcwidth fails on: ASSERT (wcwidth (0x05B0) == 0);

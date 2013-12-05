@@ -17,6 +17,8 @@ MAKE_FLAGS+=		MAKEINFO="makeinfo --no-split" \
 			pkgvdatadir=${PREFIX}/share/automake${SUFFIX} \
 			APIVERSION=${VERSION}
 
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/lib
+
 TEST_DEPENDS=	${MODGNU_AUTOCONF_DEPENDS} \
 			devel/libtool
 TEST_FLAGS=		AUTOCONF_VERSION=${AUTOCONF_VERSION}

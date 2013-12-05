@@ -19,6 +19,7 @@ MODULES=		devel/gettext
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV+=		LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include"
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/support
 
 
 post-install:

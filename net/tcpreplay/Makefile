@@ -19,6 +19,7 @@ WANTLIB=	c dnet>=1
 
 CONFIGURE_STYLE= gnu
 USE_GROFF =	Yes
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/config
 
 LIB_DEPENDS=	net/libdnet
 

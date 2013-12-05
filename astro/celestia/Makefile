@@ -46,6 +46,8 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--enable-cairo \
 		--enable-theora
 
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/admin
+
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/src/celestia/celestiacore.cpp
 

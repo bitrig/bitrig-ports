@@ -32,6 +32,8 @@ CONFIGURE_ARGS= --enable-audio=sndio \
 		--enable-server \
 		--with-default-path=${SYSCONFDIR}
 
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/autoconf
+
 USE_GROFF =	Yes
 FLAVORS=	gtk2 xaw
 FLAVOR?=
