@@ -1,12 +1,12 @@
 $OpenBSD: patch-setup_py,v 1.1 2013/01/02 20:40:21 landry Exp $
 --- setup.py.orig	Thu May 26 11:46:38 2011
-+++ setup.py	Wed Nov 28 21:55:27 2012
++++ setup.py	Thu Dec  5 13:43:50 2013
 @@ -159,7 +159,7 @@ elif sys.platform.lower().startswith('darwin'):
      )
  
  # Linux
 -elif sys.platform.lower().startswith('linux'):
-+elif sys.platform.lower().startswith('openbsd'):
++elif sys.platform.lower().startswith('bitrig'):
      # Include the application icon in various sizes, so that icon themers
      # can change this as per the iconthemeing standards defined by
      # freedesktop.org
