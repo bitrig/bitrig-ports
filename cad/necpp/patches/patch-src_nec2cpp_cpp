@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/nec2cpp.cpp.orig	Thu Dec  5 11:27:56 2013
++++ src/nec2cpp.cpp	Thu Dec  5 11:28:12 2013
+@@ -53,6 +53,7 @@
+ #include <signal.h>
+ #include <vector>
+ #include <string>
++#include <cstdlib>
+ 
+ using namespace std;
+ 

@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/safe_array.h.orig	Thu Dec  5 11:26:04 2013
++++ src/safe_array.h	Thu Dec  5 11:26:21 2013
+@@ -20,6 +20,7 @@
+ 
+ #include <iostream>
+ #include <string>
++#include <cstring>
+ #include <sstream>
+ 
+ #ifdef NEC_ERROR_CHECK
