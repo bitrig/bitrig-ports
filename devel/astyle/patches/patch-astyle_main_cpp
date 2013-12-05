@@ -1,7 +1,16 @@
 $OpenBSD: patch-astyle_main_cpp,v 1.1 2010/05/20 09:52:14 espie Exp $
---- astyle_main.cpp.orig	Thu May 20 11:49:16 2010
-+++ astyle_main.cpp	Thu May 20 11:50:24 2010
-@@ -150,6 +150,7 @@ void error(const char *why, const char* what)
+--- astyle_main.cpp.orig	Thu Mar  7 08:22:30 2002
++++ astyle_main.cpp	Thu Dec  5 14:11:55 2013
+@@ -29,6 +29,8 @@
+ #include <fstream>
+ #include <string>
+ #include <stdio.h>
++#include <cstring>
++#include <cstdlib>
+ 
+ 
+ #define IS_OPTION(arg,op)          ((arg).compare(op)==0)
+@@ -150,6 +152,7 @@ void error(const char *why, const char* what)
  }
  
  
