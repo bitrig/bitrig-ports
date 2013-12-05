@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/ball.h.orig	Thu Dec  5 20:07:10 2013
++++ src/ball.h	Thu Dec  5 20:07:19 2013
+@@ -22,6 +22,8 @@
+ #ifndef __ball_h__
+ #define __ball_h__
+ 
++#include <cstddef>
++
+ class ball;
+ 
+ #include "square.h"
