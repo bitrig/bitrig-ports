@@ -1,0 +1,12 @@
+$OpenBSD$
+--- mimepp/headers.h.orig	Thu Dec  5 12:31:03 2013
++++ mimepp/headers.h	Thu Dec  5 12:31:06 2013
+@@ -25,7 +25,7 @@
+ #ifndef DW_HEADERS_H
+ #define DW_HEADERS_H
+ 
+-#include <iostream.h>
++#include <iostream>
+ 
+ #ifndef DW_CONFIG_H
+ #include <mimepp/config.h>

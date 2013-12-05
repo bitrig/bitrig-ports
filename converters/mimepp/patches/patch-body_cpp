@@ -1,0 +1,12 @@
+$OpenBSD$
+--- body.cpp.orig	Thu Dec  5 12:30:53 2013
++++ body.cpp	Thu Dec  5 12:30:57 2013
+@@ -30,7 +30,7 @@
+ #include <string.h>
+ #include <ctype.h>
+ #include <stdlib.h>
+-#include <iostream.h>
++#include <iostream>
+ #include <mimepp/string.h>
+ #include <mimepp/headers.h>
+ #include <mimepp/bodypart.h>

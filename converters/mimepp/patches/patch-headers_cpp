@@ -1,0 +1,12 @@
+$OpenBSD$
+--- headers.cpp.orig	Thu Dec  5 12:31:37 2013
++++ headers.cpp	Thu Dec  5 12:31:39 2013
+@@ -30,7 +30,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <time.h>
+-#include <iostream.h>
++#include <iostream>
+ #include <mimepp/string.h>
+ #include <mimepp/headers.h>
+ #include <mimepp/field.h>

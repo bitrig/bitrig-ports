@@ -1,0 +1,12 @@
+$OpenBSD$
+--- mailbox.cpp.orig	Thu Dec  5 12:31:44 2013
++++ mailbox.cpp	Thu Dec  5 12:31:46 2013
+@@ -29,7 +29,7 @@
+ #include <ctype.h>
+ #include <stdlib.h>
+ #include <string.h>
+-#include <iostream.h>
++#include <iostream>
+ #include <mimepp/string.h>
+ #include <mimepp/mailbox.h>
+ #include <mimepp/token.h>

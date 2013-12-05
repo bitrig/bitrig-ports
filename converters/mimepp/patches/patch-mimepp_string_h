@@ -1,0 +1,14 @@
+$OpenBSD$
+--- mimepp/string.h.orig	Thu Dec  5 12:30:02 2013
++++ mimepp/string.h	Thu Dec  5 12:30:30 2013
+@@ -27,7 +27,9 @@
+ 
+ #include <assert.h>
+ #include <stddef.h>
+-#include <iostream.h>
++#include <iostream>
++
++using namespace std;
+ 
+ #ifndef DW_CONFIG_H
+ #include <mimepp/config.h>

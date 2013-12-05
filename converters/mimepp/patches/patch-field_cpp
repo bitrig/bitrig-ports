@@ -1,0 +1,12 @@
+$OpenBSD$
+--- field.cpp.orig	Thu Dec  5 12:31:20 2013
++++ field.cpp	Thu Dec  5 12:31:23 2013
+@@ -28,7 +28,7 @@
+ #include <mimepp/debug.h>
+ #include <assert.h>
+ #include <ctype.h>
+-#include <iostream.h>
++#include <iostream>
+ #include <stdlib.h>
+ #include <string.h>
+ #include <mimepp/string.h>

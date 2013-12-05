@@ -1,0 +1,12 @@
+$OpenBSD$
+--- mboxlist.cpp.orig	Thu Dec  5 12:31:54 2013
++++ mboxlist.cpp	Thu Dec  5 12:31:58 2013
+@@ -29,7 +29,7 @@
+ #include <ctype.h>
+ #include <stdlib.h>
+ #include <string.h>
+-#include <iostream.h>
++#include <iostream>
+ #include <mimepp/string.h>
+ #include <mimepp/mailbox.h>
+ #include <mimepp/mboxlist.h>

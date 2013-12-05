@@ -1,0 +1,12 @@
+$OpenBSD$
+--- string.cpp.orig	Thu Dec  5 12:32:13 2013
++++ string.cpp	Thu Dec  5 12:32:18 2013
+@@ -29,7 +29,7 @@
+ #include <ctype.h>
+ #include <stdlib.h>
+ #include <string.h>
+-#include <new.h>
++#include <new>
+ #include <mimepp/string.h>
+ 
+ #define DW_MIN(a,b) ((a) <= (b) ? (a) : (b))

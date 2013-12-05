@@ -1,0 +1,12 @@
+$OpenBSD$
+--- proto_un.cpp.orig	Thu Dec  5 12:33:46 2013
++++ proto_un.cpp	Thu Dec  5 12:33:51 2013
+@@ -37,7 +37,7 @@
+ #include <assert.h>
+ #include <stdio.h>
+ #include <string.h>
+-#include <iostream.h>
++#include <iostream>
+ #include <unistd.h>
+ #include <netdb.h>
+ #include <arpa/inet.h>
