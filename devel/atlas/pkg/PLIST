@@ -65,20 +65,27 @@ include/Atlas/Objects/Root.h
 include/Atlas/Task.h
 lib/libAtlas.a
 lib/libAtlas.la
+@lib lib/libAtlas.so.${LIBAtlas_VERSION}
 lib/libAtlasCodecs.a
 lib/libAtlasCodecs.la
+@lib lib/libAtlasCodecs.so.${LIBAtlasCodecs_VERSION}
 lib/libAtlasFunky.a
 lib/libAtlasFunky.la
+@lib lib/libAtlasFunky.so.${LIBAtlasFunky_VERSION}
 lib/libAtlasMessage.a
 lib/libAtlasMessage.la
+@lib lib/libAtlasMessage.so.${LIBAtlasMessage_VERSION}
 lib/libAtlasNet.a
 lib/libAtlasNet.la
+@lib lib/libAtlasNet.so.${LIBAtlasNet_VERSION}
 lib/libAtlasObjects.a
 lib/libAtlasObjects.la
+@lib lib/libAtlasObjects.so.${LIBAtlasObjects_VERSION}
 lib/libAtlasObjectsEntity.a
 lib/libAtlasObjectsEntity.la
+@lib lib/libAtlasObjectsEntity.so.${LIBAtlasObjectsEntity_VERSION}
 lib/libAtlasObjectsOperation.a
 lib/libAtlasObjectsOperation.la
+@lib lib/libAtlasObjectsOperation.so.${LIBAtlasObjectsOperation_VERSION}
 share/aclocal/
 share/aclocal/atlas.m4
-%%SHARED%%

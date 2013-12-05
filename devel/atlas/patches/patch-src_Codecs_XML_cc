@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/Codecs/XML.cc.orig	Thu Dec  5 14:38:55 2013
++++ src/Codecs/XML.cc	Thu Dec  5 14:39:02 2013
+@@ -2,6 +2,7 @@
+ // GNU Lesser General Public License (See COPYING for details).
+ // Copyright (C) 2000-2001 Michael Day, Stefanus Du Toit
+ 
++#include <cstdlib>
+ #include "XML.h"
+ 
+ namespace Atlas { namespace Codecs {
