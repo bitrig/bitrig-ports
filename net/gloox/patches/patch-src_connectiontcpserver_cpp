@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/connectiontcpserver.cpp.orig	Thu Dec  5 18:16:10 2013
++++ src/connectiontcpserver.cpp	Thu Dec  5 18:16:21 2013
+@@ -49,6 +49,7 @@
+ #endif
+ 
+ #include <cstdlib>
++#include <cstring>
+ #include <string>
+ 
+ #ifndef _WIN32_WCE

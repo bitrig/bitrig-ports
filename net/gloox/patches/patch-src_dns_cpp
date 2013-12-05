@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/dns.cpp.orig	Thu Dec  5 18:13:35 2013
++++ src/dns.cpp	Thu Dec  5 18:13:50 2013
+@@ -22,6 +22,7 @@
+ #endif
+ 
+ #include <stdio.h>
++#include <cstring>
+ 
+ #if ( !defined( _WIN32 ) && !defined( _WIN32_WCE ) ) || defined( __SYMBIAN32__ )
+ # include <netinet/in.h>
