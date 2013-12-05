@@ -1,6 +1,6 @@
 $OpenBSD: patch-SConstruct,v 1.7 2013/09/24 04:53:18 brad Exp $
---- SConstruct.orig	Sun Jun  2 08:41:11 2013
-+++ SConstruct	Sat Sep 14 21:46:08 2013
+--- SConstruct.orig	Sun Jun  2 14:41:11 2013
++++ SConstruct	Thu Dec  5 19:39:22 2013
 @@ -32,12 +32,12 @@ SConsignFile()
  
  def DefineOptions(filename, args):
@@ -31,7 +31,7 @@ $OpenBSD: patch-SConstruct,v 1.7 2013/09/24 04:53:18 brad Exp $
        'LIBS': ['GL'], 
        'LIBPATH': ['/usr/lib', '/usr/X11R6/lib'],
        'CPPPATH': ['/usr/include']}
-+  opengl['openbsd'] = { 
++  opengl['bitrig'] = { 
 +      'LIBS': ['GL'], 
 +      'LIBPATH': ['/usr/X11R6/lib'],
 +      'CPPPATH': ['/usr/X11R6/include']}
@@ -42,8 +42,8 @@ $OpenBSD: patch-SConstruct,v 1.7 2013/09/24 04:53:18 brad Exp $
    else:
       if sys.platform[:5] == 'linux' or sys.platform.startswith('gnukfreebsd'):
          platform = 'linux'
-+     if sys.platform[:7] == 'openbsd':
-+        platform = 'openbsd'
++     if sys.platform[:6] == 'bitrig':
++        platform = 'bitrig'
       glconfig = opengl.get(platform, {})
    for key in glconfig:
        if key != 'LIBS':
@@ -70,7 +70,7 @@ $OpenBSD: patch-SConstruct,v 1.7 2013/09/24 04:53:18 brad Exp $
 +  if not conf.CheckLibWithHeader('png', 'png.h', 'c'):
 +     print 'Did not find png library or headers, exiting!'
 +     Exit(1)
-+  if not 'USE_WIN32' in env['CPPDEFINES'] and not sys.platform.startswith('openbsd'):
++  if not 'USE_WIN32' in env['CPPDEFINES'] and not sys.platform.startswith('bitrig'):
       if not conf.CheckLib('dl'):
          print 'Did not find dl library or header which is needed on some systems for lua. Exiting!'
          Exit(1)
