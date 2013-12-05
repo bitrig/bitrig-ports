@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.orig	Thu Dec  5 15:13:05 2013
++++ configure	Thu Dec  5 15:13:11 2013
+@@ -15724,7 +15724,7 @@ fi
+ 
+   FLOAT_H=
+   case "$host_os" in
+-    beos* | openbsd*)
++    beos* | openbsd* | bitrig*)
+       FLOAT_H=float.h
+ 
+ 
