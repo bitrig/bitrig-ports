@@ -26,4 +26,6 @@ CONFIGURE_ARGS +=	--disable-shave \
 CONFIGURE_ENV +=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib -pthread"
 
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build
+
 .include <bsd.port.mk>
