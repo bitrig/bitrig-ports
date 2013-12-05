@@ -7,7 +7,7 @@ deletes /dev/null, which is kind of bad.
 Do not use SONAME.
 
 --- build_detect_platform.orig	Wed May 30 18:56:59 2012
-+++ build_detect_platform	Tue Mar 19 14:05:59 2013
++++ build_detect_platform	Thu Dec  5 13:19:37 2013
 @@ -51,7 +51,7 @@ PLATFORM_CCFLAGS=
  PLATFORM_CXXFLAGS=
  PLATFORM_LDFLAGS=
@@ -17,6 +17,15 @@ Do not use SONAME.
  PLATFORM_SHARED_CFLAGS="-fPIC"
  PLATFORM_SHARED_VERSIONED=true
  
+@@ -88,7 +88,7 @@ case "$TARGET_OS" in
+         PLATFORM_LDFLAGS="-lpthread -lgcc_s"
+         PORT_FILE=port/port_posix.cc
+         ;;
+-    OpenBSD)
++    OpenBSD | Bitrig)
+         PLATFORM=OS_OPENBSD
+         COMMON_FLAGS="-fno-builtin-memcmp -D_REENTRANT -DOS_OPENBSD"
+         PLATFORM_LDFLAGS="-pthread"
 @@ -132,36 +132,8 @@ if [ "$CROSS_COMPILE" = "true" ]; then
      # Cross-compiling; do not try any compilation tests.
      true
