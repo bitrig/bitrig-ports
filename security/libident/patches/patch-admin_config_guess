@@ -1,0 +1,13 @@
+$OpenBSD$
+--- admin/config.guess.orig	Thu Dec  5 19:14:17 2013
++++ admin/config.guess	Thu Dec  5 19:14:47 2013
+@@ -239,6 +239,9 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
+     *:OpenBSD:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-openbsd${UNAME_RELEASE}
+ 	exit 0 ;;
++    *:Bitrig:*:*)
++	echo ${UNAME_MACHINE}-unknown-bitrig${UNAME_RELEASE}
++	exit 0 ;;
+     alpha:OSF1:*:*)
+ 	if test $UNAME_RELEASE = "V4.0"; then
+ 		UNAME_RELEASE=`/usr/sbin/sizer -v | awk '{print $3}'`

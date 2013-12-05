@@ -1,0 +1,111 @@
+$OpenBSD$
+--- configure.orig	Thu Dec  5 19:16:57 2013
++++ configure	Thu Dec  5 19:17:29 2013
+@@ -3508,7 +3508,7 @@ nto-qnx*)
+   lt_cv_deplibs_check_method=unknown
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   lt_cv_file_magic_cmd=/usr/bin/file
+   lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
+   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -5915,7 +5915,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="\$RANLIB -t \$oldlib~$old_postinstall_cmds"
+     ;;
+   *)
+@@ -6595,7 +6595,7 @@ echo $ECHO_N "checking whether the $compiler linker ($
+       with_gnu_ld=no
+     fi
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -7209,7 +7209,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       hardcode_direct=yes
+       hardcode_shlibpath_var=no
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -7886,7 +7886,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   need_lib_prefix=no
+   need_version=yes
+@@ -11582,7 +11582,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   need_lib_prefix=no
+   need_version=yes
+@@ -13458,7 +13458,7 @@ echo $ECHO_N "checking whether the $compiler linker ($
+       with_gnu_ld=no
+     fi
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -14052,7 +14052,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var_F77=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       hardcode_direct_F77=yes
+       hardcode_shlibpath_var_F77=no
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -14729,7 +14729,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   need_lib_prefix=no
+   need_version=yes
+@@ -15790,7 +15790,7 @@ echo $ECHO_N "checking whether the $compiler linker ($
+       with_gnu_ld=no
+     fi
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -16404,7 +16404,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var_GCJ=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       hardcode_direct_GCJ=yes
+       hardcode_shlibpath_var_GCJ=no
+       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -17081,7 +17081,7 @@ nto-qnx*)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   need_lib_prefix=no
+   need_version=yes
