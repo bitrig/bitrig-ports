@@ -1,5 +1,5 @@
---- configure.in.orig	Wed Nov 15 03:43:56 2006
-+++ configure.in	Thu Jun 16 16:09:24 2011
+--- configure.in.orig	Wed Nov 15 04:43:56 2006
++++ configure.in	Thu Dec  5 18:42:04 2013
 @@ -111,47 +111,12 @@ else
  fi
  
@@ -51,8 +51,12 @@
  echo
  echo 'Configuring Network Grep (ngrep) ...'
  echo 
-@@ -194,18 +159,6 @@ unsigned short bar = foo.source;
- *bsd*)
+@@ -191,21 +156,9 @@ unsigned short bar = foo.source;
+ 
+         ;;
+ 
+-*bsd*)
++*bsd* | *bitrig*)
  	AC_SUBST(OS, BSD)
  
 -	if test "$USE_PCAP_RESTART" = "0"; then 
