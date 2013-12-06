@@ -11,7 +11,7 @@ libdata/perl5/site_perl/Git/
 libdata/perl5/site_perl/Git.pm
 libdata/perl5/site_perl/Git/I18N.pm
 libdata/perl5/site_perl/Git/IndexInfo.pm
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/
 libexec/git/
 @bin libexec/git/git
 @bin libexec/git/git-add
