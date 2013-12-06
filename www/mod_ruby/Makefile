@@ -12,6 +12,9 @@ MAINTAINER=		Adam Montague <amontague@siriushosting.com>
 
 MODULES=		apache-module lang/ruby
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		m ${MODRUBY_WANTLIB}
@@ -25,7 +28,7 @@ MODRUBY_REV=		1.8
 
 CONFIGURE_STYLE=	simple
 CONFIGURE_SCRIPT=	configure.rb
-CONFIGURE_ARGS+=	--with-apxs=/usr/sbin/apxs
+CONFIGURE_ARGS+=	--with-apxs=${LOCALBASE}/sbin/apxs
 
 NO_TEST=		Yes
 
