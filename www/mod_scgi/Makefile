@@ -12,13 +12,16 @@ MASTER_SITES=	http://quixote.python.ca/releases/
 
 MODULES+=	apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # MIT/CNRI
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODAPACHE_NAME=	scgi
 
 NO_TEST=	Yes
-APXS=		/usr/sbin/apxs
+APXS=		${LOCALBASE}/sbin/apxs
 
 WRKSRC=		${WRKDIST}/apache1
 
