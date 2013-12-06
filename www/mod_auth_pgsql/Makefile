@@ -19,12 +19,16 @@ WANTLIB += pq>=5
 
 MODAPACHE_NAME =	auth_pgsql
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 LIB_DEPENDS =		databases/postgresql
 
 NO_TEST =		Yes
 
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ARGS =	--with-pgsql-lib=${LOCALBASE}/lib \
+CONFIGURE_ARGS =	--with-apxs=${LOCALBASE}/sbin/apxs \
+			--with-pgsql-lib=${LOCALBASE}/lib \
 			--with-pgsql-include=${LOCALBASE}/include/postgresql
 
 post-build:
