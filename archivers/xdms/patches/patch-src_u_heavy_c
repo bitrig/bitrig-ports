@@ -1,0 +1,32 @@
+$OpenBSD$
+--- src/u_heavy.c.orig	Fri Dec  6 12:01:35 2013
++++ src/u_heavy.c	Fri Dec  6 12:02:11 2013
+@@ -30,8 +30,8 @@ USHORT heavy_text_loc;
+ 
+ static USHORT read_tree_c(void);
+ static USHORT read_tree_p(void);
+-INLINE USHORT decode_c(void);
+-INLINE USHORT decode_p(void);
++static INLINE USHORT decode_c(void);
++static INLINE USHORT decode_p(void);
+ 
+ 
+ 
+@@ -74,7 +74,7 @@ USHORT Unpack_HEAVY(UCHAR *in, UCHAR *out, UCHAR flags
+ 
+ 
+ 
+-INLINE USHORT decode_c(void){
++static INLINE USHORT decode_c(void){
+ 	USHORT i, j, m;
+ 
+ 	j = c_table[GETBITS(12)];
+@@ -96,7 +96,7 @@ INLINE USHORT decode_c(void){
+ 
+ 
+ 
+-INLINE USHORT decode_p(void){
++static INLINE USHORT decode_p(void){
+ 	USHORT i, j, m;
+ 
+ 	j = pt_table[GETBITS(8)];

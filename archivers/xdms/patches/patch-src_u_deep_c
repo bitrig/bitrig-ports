@@ -1,0 +1,43 @@
+$OpenBSD$
+--- src/u_deep.c.orig	Fri Dec  6 12:02:23 2013
++++ src/u_deep.c	Fri Dec  6 12:03:07 2013
+@@ -17,9 +17,9 @@
+ #include "getbits.h"
+ 
+ 
+-INLINE USHORT DecodeChar(void);
+-INLINE USHORT DecodePosition(void);
+-INLINE void update(USHORT c);
++static INLINE USHORT DecodeChar(void);
++static INLINE USHORT DecodePosition(void);
++static INLINE void update(USHORT c);
+ static void reconst(void);
+ 
+ 
+@@ -98,7 +98,7 @@ USHORT Unpack_DEEP(UCHAR *in, UCHAR *out, USHORT origs
+ 
+ 
+ 
+-INLINE USHORT DecodeChar(void){
++static INLINE USHORT DecodeChar(void){
+ 	USHORT c;
+ 
+ 	c = son[R];
+@@ -117,7 +117,7 @@ INLINE USHORT DecodeChar(void){
+ 
+ 
+ 
+-INLINE USHORT DecodePosition(void){
++static INLINE USHORT DecodePosition(void){
+ 	USHORT i, j, c;
+ 
+ 	i = GETBITS(8);  DROPBITS(8);
+@@ -171,7 +171,7 @@ static void reconst(void){
+ 
+ /* increment frequency of given code by one, and update tree */
+ 
+-INLINE void update(USHORT c){
++static INLINE void update(USHORT c){
+ 	USHORT i, j, k, l;
+ 
+ 	if (freq[R] == MAX_FREQ) {
