@@ -18,13 +18,16 @@ MASTER_SITES=	${HOMEPAGE}dist/ \
 MODULES=	apache-module
 MODAPACHE_NAME=	fastcgi
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # Proprietary license
 PERMIT_PACKAGE_CDROM=   Yes
 
 NO_TEST=     Yes
 
 do-build:
-	(cd ${WRKBUILD}; apxs -o mod_fastcgi.so -c *.c)
+	(cd ${WRKBUILD}; ${LOCALBASE}/sbin/apxs -o mod_fastcgi.so -c *.c)
 
 post-build:
 	@${MODAPACHE_CREATE_ENABLE_SCRIPT}
