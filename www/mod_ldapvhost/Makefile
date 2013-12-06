@@ -12,6 +12,9 @@ MASTER_SITES=		http://www.etc.msys.ch/software/mod_ldapvhost/
 EXTRACT_SUFX=		.tgz
 MODULES+=		apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # BSD
 PERMIT_PACKAGE_CDROM=   Yes
 
