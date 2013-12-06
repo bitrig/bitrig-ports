@@ -11,6 +11,9 @@ HOMEPAGE=	http://sourceforge.net/projects/mod-auth-mysql
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mod-auth-mysql/}
 MODULES+=	apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # Apache license
 PERMIT_PACKAGE_CDROM=	Yes
 
