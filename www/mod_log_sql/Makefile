@@ -10,6 +10,9 @@ HOMEPAGE=	http://www.outoforder.cc/projects/apache/mod_log_sql/
 
 MODULES+=	apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -29,7 +32,7 @@ NO_TEST=	Yes
 WRKSRC=		${WRKDIR}/mod_log_sql
 EXAMPLES=	create_tables.sql make_combined_log.pl
 
-APXS=		/usr/sbin/apxs
+APXS=		${LOCALBASE}/sbin/apxs
 FLAGS=		-I${LOCALBASE}/include/mysql -L${LOCALBASE}/lib \
 		-DWANT_SSL_LOGGING -lmysqlclient -lz
 
