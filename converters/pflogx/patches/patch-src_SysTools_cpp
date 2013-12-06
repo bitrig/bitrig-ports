@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/SysTools.cpp.orig	Fri Dec  6 16:24:51 2013
++++ src/SysTools.cpp	Fri Dec  6 16:25:23 2013
+@@ -30,6 +30,7 @@
+ 
+ #include "SysTools.h"
+ #include <errno.h>
++#include <cstring>
+ 
+ 
+ /* Retrieve last system error message */
