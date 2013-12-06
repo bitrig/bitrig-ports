@@ -12,6 +12,9 @@ MASTER_SITES=	http://www.maxmind.com/download/geoip/api/mod_geoip/
 
 MODULES+=	apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # Apache Software License
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -25,7 +28,7 @@ FLAGS=		-I${LOCALBASE}/include -L${LOCALBASE}/lib
 
 NO_TEST=	Yes
 
-APXS=		/usr/sbin/apxs
+APXS=		${LOCALBASE}/sbin/apxs
 
 do-build:
 	cd ${WRKSRC} && \
