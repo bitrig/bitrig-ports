@@ -1,5 +1,4 @@
 @comment $OpenBSD: PLIST,v 1.1.1.1 2011/12/22 09:46:46 ajacoutot Exp $
-%%SHARED%%
 @bin bin/adaptmaptest
 @bin bin/adaptnorm_reg
 @bin bin/affine_reg
@@ -235,3 +234,4 @@ include/leptonica/sudoku.h
 include/leptonica/watershed.h
 lib/liblept.a
 lib/liblept.la
+@lib lib/liblept.so.${LIBlept_VERSION}
