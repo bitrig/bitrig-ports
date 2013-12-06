@@ -13,6 +13,9 @@ HOMEPAGE=	http://www.schroepl.net/projekte/mod_gzip/
 
 MODULES+=	apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # Apache
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -27,7 +30,7 @@ HTML_DOCS=	browser.htm cache.htm config.htm encoding.htm \
 		valid-xhtml11.png versions.htm
 
 do-build:
-	cd ${WRKSRC} && /usr/sbin/apxs -Wc,"${CFLAGS}" -c mod_gzip.c \
+	cd ${WRKSRC} && ${LOCALBASE}/sbin/apxs -Wc,"${CFLAGS}" -c mod_gzip.c \
 		mod_gzip_debug.c mod_gzip_compress.c -o ${WRKBUILD}/mod_gzip.so
 	@${MODAPACHE_CREATE_ENABLE_SCRIPT}
 
