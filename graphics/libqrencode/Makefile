@@ -28,6 +28,7 @@ CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--with-tests
 CONFIGURE_ENV+= 	png_CFLAGS="`pkg-config --cflags libpng`" \
 			png_LIBS="`pkg-config --libs libpng`"
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/use
 
 TEST_TARGETS= 	test_qrinput test_bitstream test_estimatebit \
 			test_qrspec test_rs test_qrencode prof_qrencode \
