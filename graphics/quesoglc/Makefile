@@ -26,6 +26,7 @@ CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS+= --without-glew --disable-executables
 CONFIGURE_ENV=	CPPFLAGS="-I${X11BASE}/include -I${LOCALBASE}/include" \
 		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib"
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
 
 NO_TEST=	Yes
 
