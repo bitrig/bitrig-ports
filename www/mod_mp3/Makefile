@@ -11,6 +11,9 @@ MASTER_SITES=	http://download.tangent.org/
 
 MODULES+=	apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # Apache
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -21,7 +24,7 @@ MODAPACHE_NAME=		mp3
 MODAPACHE_LOCATION=	${WRKBUILD}/src
 
 CONFIGURE_STYLE=	gnu
-CONFIGURE_ARGS+=	--with-apxs=/usr/sbin/apxs \
+CONFIGURE_ARGS+=	--with-apxs=${LOCALBASE}/sbin/apxs \
 			--with-perl=/usr/bin/perl
 
 NO_TEST=	Yes
