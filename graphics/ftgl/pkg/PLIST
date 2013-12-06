@@ -1,5 +1,4 @@
 @comment $OpenBSD: PLIST,v 1.2 2011/09/16 17:22:13 phessler Exp $
-%%SHARED%%
 include/FTGL/
 include/FTGL/FTBBox.h
 include/FTGL/FTBitmapGlyph.h
@@ -28,6 +27,7 @@ include/FTGL/FTTextureGlyph.h
 include/FTGL/ftgl.h
 lib/libftgl.a
 lib/libftgl.la
+@lib lib/libftgl.so.${LIBftgl_VERSION}
 lib/pkgconfig/
 lib/pkgconfig/ftgl.pc
 share/doc/ftgl/

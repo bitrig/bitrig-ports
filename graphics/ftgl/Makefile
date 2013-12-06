@@ -25,8 +25,8 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED}			\
 			--with-gl-inc=${X11BASE}/include	\
 			--with-gl-lib=${X11BASE}/lib
-
 CONFIGURE_ENV +=	ac_cv_path_DOXYGEN=no
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/.auto
 
 # 2.1.3~rc5 is a ridiculous version to stow in a pkg-config file,
 # so add this workaround to prevent pkg-config from choking.
