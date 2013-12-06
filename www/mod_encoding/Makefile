@@ -20,10 +20,13 @@ MODULES=	apache-module \
 
 MODAPACHE_NAME=	encoding
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 NO_TEST=	Yes
 
 do-build:
-	cd ${WRKSRC} && /usr/sbin/apxs -Wc,"${CFLAGS}" -I${LOCALBASE}/include -c mod_encoding.c \
+	cd ${WRKSRC} && ${LOCALBASE}/sbin/apxs -Wc,"${CFLAGS}" -I${LOCALBASE}/include -c mod_encoding.c \
 		-L${LOCALBASE}/lib -liconv -o ${WRKBUILD}/mod_encoding.so
 	@${MODAPACHE_CREATE_ENABLE_SCRIPT}
 
