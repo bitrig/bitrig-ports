@@ -1,6 +1,6 @@
 $OpenBSD: patch-mod_auth_radius_c,v 1.1 2005/01/14 17:33:17 jcs Exp $
---- mod_auth_radius.c.orig	Mon Mar 24 13:16:15 2003
-+++ mod_auth_radius.c	Fri Jan 14 11:28:55 2005
+--- mod_auth_radius.c.orig	Mon Mar 24 20:16:15 2003
++++ mod_auth_radius.c	Fri Dec  6 08:07:56 2013
 @@ -302,7 +302,7 @@ module radius_auth_module;
  #define DPRINTF printf
  #else
@@ -10,7 +10,7 @@ $OpenBSD: patch-mod_auth_radius_c,v 1.1 2005/01/14 17:33:17 jcs Exp $
  
  /*
    RFC 2138 says that this port number is wrong, but everyone's using it.
-@@ -971,9 +971,9 @@ find_attribute(radius_packet_t *packet, 
+@@ -971,9 +971,9 @@ find_attribute(radius_packet_t *packet, unsigned char 
    }
    return attr;
  }

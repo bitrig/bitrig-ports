@@ -12,6 +12,9 @@ MODAPACHE_NAME=		radius_auth
 MODAPACHE_ENABLE=	mod_auth_radius-enable
 MODAPACHE_MODULE=	mod_auth_radius.so
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 COMMENT=	Apache RADIUS authentication module
 HOMEPAGE=	http://www.freeradius.org/mod_auth_radius/
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/radius/
@@ -20,7 +23,7 @@ EXTRACT_SUFX=	.tar
 NO_TEST=	Yes
 
 do-build:
-	@cd ${WRKSRC}; /usr/sbin/apxs -c mod_auth_radius.c
+	@cd ${WRKSRC}; ${LOCALBASE}/sbin/apxs -c mod_auth_radius.c
 	@${MODAPACHE_CREATE_ENABLE_SCRIPT}
 
 do-install:
