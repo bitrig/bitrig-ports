@@ -10,6 +10,9 @@ HOMEPAGE=	http://tangent.org/
 MASTER_SITES=	http://download.tangent.org/
 MODULES+=	apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # Apache Software License
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -17,7 +20,7 @@ MODAPACHE_NAME=	text2html
 
 NO_TEST=	Yes
 
-APXS=		/usr/sbin/apxs
+APXS=		${LOCALBASE}/sbin/apxs
 
 do-build:
 	cd ${WRKBUILD} && \
