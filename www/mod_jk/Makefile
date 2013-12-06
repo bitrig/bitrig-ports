@@ -11,6 +11,9 @@ HOMEPAGE=		http://tomcat.apache.org/connectors-doc/index.html
 
 MODULES+=		apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # Apache Software License 2.0
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -23,7 +26,7 @@ MODAPACHE_NAME=		jk
 MODAPACHE_FILE=		${MODAPACHE_LOCATION}/apache-1.3/mod_jk.so
 
 CONFIGURE_STYLE=	gnu
-CONFIGURE_ARGS=		--with-apxs=/usr/sbin/apxs
+CONFIGURE_ARGS=		--with-apxs=${LOCALBASE}/sbin/apxs
 CONFIGURE_ENV+=		CFLAGS='${CFLAGS} -DCHROOTED_APACHE'
 
 WRKSRC=			${WRKDIST}/native
