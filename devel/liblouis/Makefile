@@ -28,6 +28,8 @@ CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--with-packager="OpenBSD Ports"
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
+
 post-install:
 	${INSTALL_DATA_DIR} ${WRKINST}/${MODPY_SITEPKG}/louis
 	${INSTALL_DATA} ${WRKSRC}/python/louis/__init__.py \
