@@ -14,6 +14,9 @@ MASTER_SITES=	${HOMEPAGE}
 
 MODULES+=	apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # Apache License, one unused function GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -27,6 +30,8 @@ LIB_DEPENDS=	databases/openldap
 NO_TEST=	Yes
 
 CONFIGURE_STYLE=gnu
+CONFIGURE_ARGS=	--with-apxs=${LOCALBASE}/sbin/apxs
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/lib/apache/include"
 
 post-build:
 	@${MODAPACHE_CREATE_ENABLE_SCRIPT}
