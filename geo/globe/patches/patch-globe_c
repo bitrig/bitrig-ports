@@ -1,0 +1,20 @@
+$OpenBSD$
+--- globe.c.orig	Fri Dec  6 18:14:44 2013
++++ globe.c	Fri Dec  6 18:21:47 2013
+@@ -27,6 +27,7 @@
+ 
+ #include <sys/types.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <time.h>
+ 
+ 
+@@ -733,7 +734,7 @@ static char* globes[NGLOBES][NLINES] =
+ 
+ 
+ int
+-main( int argc, char* argv )
++main( int argc, char** argv )
+     {
+     time_t now;
+     int gnum, lnum;
