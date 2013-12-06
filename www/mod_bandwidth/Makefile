@@ -16,6 +16,9 @@ HOMEPAGE=	http://www.cohprog.com/mod_bandwidth.html
 
 MODULES+=	apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # Apache Group licence
 PERMIT_PACKAGE_CDROM=   Yes
 
@@ -32,7 +35,7 @@ do-extract:
 .endfor
 
 do-build:
-	cd ${WRKSRC} && /usr/sbin/apxs -Wc,"${CFLAGS}" -c mod_bandwidth.c \
+	cd ${WRKSRC} && ${LOCALBASE}/sbin/apxs -Wc,"${CFLAGS}" -c mod_bandwidth.c \
 		-o ${WRKBUILD}/mod_bandwidth.so
 	@perl -pi -e "s,\/usr\/local\/bin\/perl,\/usr\/bin\/perl,g" ${WRKSRC}/cleanlink.pl
 	@perl -pi -e "s,\/tmp\/apachebw,\/var\/www\/tmp\/apachebw,g" ${WRKSRC}/cleanlink.pl
