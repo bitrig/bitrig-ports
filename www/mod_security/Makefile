@@ -16,6 +16,9 @@ HOMEPAGE=	http://www.modsecurity.org/
 
 MODULES+=	apache-module
 
+BUILD_DEPENDS=	www/apache-httpd-openbsd
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -27,7 +30,7 @@ DOCS=	CHANGES INSTALL LICENSE README doc/modsecurity-manual.pdf
 SUBST_VARS=	PKGNAME
 
 do-build:
-	cd ${WRKSRC}/apache1 && /usr/sbin/apxs -Wc,"${CFLAGS}" -c \
+	cd ${WRKSRC}/apache1 && ${LOCALBASE}/sbin/apxs -Wc,"${CFLAGS}" -c \
 		mod_security.c -o ${WRKBUILD}/mod_security.so
 	@${MODAPACHE_CREATE_ENABLE_SCRIPT}
 
