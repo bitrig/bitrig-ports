@@ -1,0 +1,24 @@
+$OpenBSD$
+--- sidplay.cpp.orig	Sat Sep 28 20:44:02 2002
++++ sidplay.cpp	Fri Dec  6 12:58:45 2013
+@@ -18,8 +18,9 @@
+ //
+ 
+ #include <ctype.h>
+-#include <iomanip.h>
+-#include <fstream.h>
++#include <iostream>
++#include <iomanip>
++#include <fstream>
+ #include <signal.h>
+ #include <stdlib.h>
+ #include <string.h>
+@@ -40,6 +41,8 @@
+ #define DISALLOW_16BIT_SOUND
+ #define DISALLOW_STEREO_SOUND
+ #endif
++
++using namespace std;
+ 
+ // Error and status message numbers.
+ enum

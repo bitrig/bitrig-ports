@@ -1,0 +1,19 @@
+$OpenBSD$
+--- sidcon.cpp.orig	Fri Dec  6 12:59:34 2013
++++ sidcon.cpp	Fri Dec  6 12:59:59 2013
+@@ -25,11 +25,13 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
+-#include <iostream.h>
+-#include <iomanip.h>
++#include <iostream>
++#include <iomanip>
+ 
+ #include <sidplay/sidtune.h>
+ #include <sidplay/fformat.h>
++
++using namespace std;
+ 
+ static bool toPSID = true,
+     toSIDPLAY = false,

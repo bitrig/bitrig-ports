@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.orig	Fri Dec  6 12:50:28 2013
++++ configure	Fri Dec  6 12:50:38 2013
+@@ -1586,7 +1586,7 @@ EOF
+       { echo "configure: error: libossaudio required, but not found." 1>&2; exit 1; };
+     fi
+        ;;
+-  *openbsd*) cat >> confdefs.h <<\EOF
++  *openbsd* | *bitrig*) cat >> confdefs.h <<\EOF
+ #define HAVE_OPENBSD 1
+ EOF
+ 
