@@ -516,10 +516,9 @@ check_port_dir() {
 	local show_items="$show_items MASTER_SITES MULTI_PACKAGES PKGPATH"
 	local show_items="$show_items PSEUDO_FLAVOR PSEUDO_FLAVORS"
 	local show_items="$show_items SHARED_LIBS SUBST_CMD"
+	local read_ok=false
 
-	local read_failed=false
 	(cd -- "$dir"; make "${make_args[@]}" show="$show_items" || true) </dev/null |&
-	read_ok=false
 	read -pr dist_subdir &&
 	read -pr distfiles &&
 	read -pr flavor &&
@@ -536,6 +535,7 @@ check_port_dir() {
 	if $read_ok; then
 		exec 3<&p
 		exec 3<&-
+		wait
 	else
 		error=true
 		return
@@ -641,7 +641,7 @@ check_master_sites() {
 		esac
 		[[ -n $name ]] && err "$portref$name does not hold real" \
 			"releases, please host the distfiles somewhere" \
-			"somewhere else or ask someone to do this for you"
+			"else or ask someone to do this for you"
 		shift
 	done
 }
@@ -681,6 +681,7 @@ sub_checks() {
 				(make "${make_args[@]}" print-plist-with-depends ||
 				    true) </dev/null |&
 				check_plist "$portref" "$fullpkgname" "$flavor"
+				wait
 			fi
 
 			! $error
@@ -1366,6 +1367,7 @@ check_perms_in_dir() {
 		ignoring "$F" && continue
 		err "executable file: ${F#./}"
 	done
+	wait
 }
 
 
