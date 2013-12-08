@@ -25,5 +25,6 @@ MASTER_SITES=	${MASTER_SITE_GNU:=osip/}
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--disable-debug \
 		--enable-test
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/scripts
 
 .include <bsd.port.mk>
