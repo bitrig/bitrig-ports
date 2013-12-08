@@ -17,6 +17,7 @@ WANTLIB=	c m slang termcap
 
 CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS=	--with-slang=${LOCALBASE}
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/autoconf
 
 USE_GROFF =	Yes
 NO_TEST=	Yes
