@@ -27,6 +27,7 @@ CONFIGURE_ARGS =	--with-libgsasl=no \
 			--with-libidn=yes \
 			--with-ssl=openssl \
 			--without-gnome-keyring
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build-aux
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/msmtp
