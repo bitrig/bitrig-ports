@@ -21,6 +21,8 @@ BUILD_DEPENDS=		devel/bison
 MODULES=		devel/gettext
 USE_GMAKE=		Yes
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build/autotools
+
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/lifelines
 	${INSTALL_DATA} ${FILESDIR}/linesrc ${PREFIX}/share/examples/lifelines
