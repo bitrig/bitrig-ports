@@ -18,6 +18,7 @@ LIB_DEPENDS=	graphics/tiff
 
 CONFIGURE_STYLE= gnu
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib"
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/lib/libiax2 ${WRKSRC}/lib/spandsp/config
 
 CFLAGS+=	-I${LOCALBASE}/include
 
