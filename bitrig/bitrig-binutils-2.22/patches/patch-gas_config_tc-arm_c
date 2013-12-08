@@ -1,6 +1,6 @@
 $OpenBSD$
 --- gas/config/tc-arm.c.orig	Mon Nov 21 04:29:31 2011
-+++ gas/config/tc-arm.c	Mon Aug 13 10:50:03 2012
++++ gas/config/tc-arm.c	Sun Dec  8 12:11:02 2013
 @@ -108,7 +108,7 @@ enum arm_float_abi
  #ifndef FPU_DEFAULT
  # ifdef TE_LINUX
@@ -10,6 +10,15 @@ $OpenBSD$
  #  ifdef OBJ_ELF
  #   define FPU_DEFAULT FPU_ARCH_VFP	/* Soft-float, but VFP order.  */
  #  else
+@@ -6189,7 +6189,7 @@ parse_operands (char *str, const unsigned int *pattern
+   unsigned const int *upat = pattern;
+   char *backtrack_pos = 0;
+   const char *backtrack_error = 0;
+-  int i, val, backtrack_index = 0;
++  int i, val = 0, backtrack_index = 0;
+   enum arm_reg_type rtype;
+   parse_operand_result result;
+   unsigned int op_parse_code;
 @@ -22429,8 +22429,8 @@ md_begin (void)
      }
    else if (!mfpu_opt)

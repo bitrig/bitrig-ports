@@ -4,15 +4,15 @@
 @bin bin/as
 @bin bin/c++filt
 @bin bin/elfedit
-@bin bin/gprof
+@comment bin/gprof
 @bin bin/ld
 @bin bin/ld.bfd
-@bin bin/nm
+@comment bin/nm
 @bin bin/objcopy
 @bin bin/objdump
 @bin bin/ranlib
 @bin bin/readelf
-@bin bin/size
+@comment bin/size
 @bin bin/strings
 @bin bin/strip
 include/ansidecl.h
@@ -41,12 +41,12 @@ lib/libopcodes.la
 @man man/man1/gprof.1
 @man man/man1/ld.1
 @man man/man1/nlmconv.1
-@man man/man1/nm.1
+@comment man/man1/nm.1
 @man man/man1/objcopy.1
 @man man/man1/objdump.1
 @man man/man1/ranlib.1
 @man man/man1/readelf.1
-@man man/man1/size.1
+@comment man/man1/size.1
 @man man/man1/strings.1
 @man man/man1/strip.1
 @man man/man1/windmc.1
@@ -55,28 +55,28 @@ share/locale/
 share/locale/bg/
 share/locale/bg/LC_MESSAGES/
 share/locale/bg/LC_MESSAGES/binutils.mo
-share/locale/bg/LC_MESSAGES/gprof.mo
+@comment share/locale/bg/LC_MESSAGES/gprof.mo
 share/locale/bg/LC_MESSAGES/ld.mo
 share/locale/da/
 share/locale/da/LC_MESSAGES/
 share/locale/da/LC_MESSAGES/bfd.mo
 share/locale/da/LC_MESSAGES/binutils.mo
-share/locale/da/LC_MESSAGES/gprof.mo
+@comment share/locale/da/LC_MESSAGES/gprof.mo
 share/locale/da/LC_MESSAGES/ld.mo
 share/locale/da/LC_MESSAGES/opcodes.mo
 share/locale/de/
 share/locale/de/LC_MESSAGES/
-share/locale/de/LC_MESSAGES/gprof.mo
+@comment share/locale/de/LC_MESSAGES/gprof.mo
 share/locale/de/LC_MESSAGES/opcodes.mo
 share/locale/eo/
 share/locale/eo/LC_MESSAGES/
-share/locale/eo/LC_MESSAGES/gprof.mo
+@comment share/locale/eo/LC_MESSAGES/gprof.mo
 share/locale/es/
 share/locale/es/LC_MESSAGES/
 share/locale/es/LC_MESSAGES/bfd.mo
 share/locale/es/LC_MESSAGES/binutils.mo
 share/locale/es/LC_MESSAGES/gas.mo
-share/locale/es/LC_MESSAGES/gprof.mo
+@comment share/locale/es/LC_MESSAGES/gprof.mo
 share/locale/es/LC_MESSAGES/ld.mo
 share/locale/es/LC_MESSAGES/opcodes.mo
 share/locale/fi/
@@ -84,7 +84,7 @@ share/locale/fi/LC_MESSAGES/
 share/locale/fi/LC_MESSAGES/bfd.mo
 share/locale/fi/LC_MESSAGES/binutils.mo
 share/locale/fi/LC_MESSAGES/gas.mo
-share/locale/fi/LC_MESSAGES/gprof.mo
+@comment share/locale/fi/LC_MESSAGES/gprof.mo
 share/locale/fi/LC_MESSAGES/ld.mo
 share/locale/fi/LC_MESSAGES/opcodes.mo
 share/locale/fr/
@@ -92,12 +92,12 @@ share/locale/fr/LC_MESSAGES/
 share/locale/fr/LC_MESSAGES/bfd.mo
 share/locale/fr/LC_MESSAGES/binutils.mo
 share/locale/fr/LC_MESSAGES/gas.mo
-share/locale/fr/LC_MESSAGES/gprof.mo
+@comment share/locale/fr/LC_MESSAGES/gprof.mo
 share/locale/fr/LC_MESSAGES/ld.mo
 share/locale/fr/LC_MESSAGES/opcodes.mo
 share/locale/ga/
 share/locale/ga/LC_MESSAGES/
-share/locale/ga/LC_MESSAGES/gprof.mo
+@comment share/locale/ga/LC_MESSAGES/gprof.mo
 share/locale/ga/LC_MESSAGES/ld.mo
 share/locale/ga/LC_MESSAGES/opcodes.mo
 share/locale/id/
@@ -105,7 +105,7 @@ share/locale/id/LC_MESSAGES/
 share/locale/id/LC_MESSAGES/bfd.mo
 share/locale/id/LC_MESSAGES/binutils.mo
 share/locale/id/LC_MESSAGES/gas.mo
-share/locale/id/LC_MESSAGES/gprof.mo
+@comment share/locale/id/LC_MESSAGES/gprof.mo
 share/locale/id/LC_MESSAGES/ld.mo
 share/locale/id/LC_MESSAGES/opcodes.mo
 share/locale/ja/
@@ -115,33 +115,33 @@ share/locale/ja/LC_MESSAGES/binutils.mo
 share/locale/ja/LC_MESSAGES/ld.mo
 share/locale/ms/
 share/locale/ms/LC_MESSAGES/
-share/locale/ms/LC_MESSAGES/gprof.mo
+@comment share/locale/ms/LC_MESSAGES/gprof.mo
 share/locale/nl/
 share/locale/nl/LC_MESSAGES/
-share/locale/nl/LC_MESSAGES/gprof.mo
+@comment share/locale/nl/LC_MESSAGES/gprof.mo
 share/locale/nl/LC_MESSAGES/opcodes.mo
 share/locale/pt_BR/
 share/locale/pt_BR/LC_MESSAGES/
-share/locale/pt_BR/LC_MESSAGES/gprof.mo
+@comment share/locale/pt_BR/LC_MESSAGES/gprof.mo
 share/locale/pt_BR/LC_MESSAGES/opcodes.mo
 share/locale/ro/
 share/locale/ro/LC_MESSAGES/
 share/locale/ro/LC_MESSAGES/bfd.mo
 share/locale/ro/LC_MESSAGES/binutils.mo
-share/locale/ro/LC_MESSAGES/gprof.mo
+@comment share/locale/ro/LC_MESSAGES/gprof.mo
 share/locale/ro/LC_MESSAGES/opcodes.mo
 share/locale/ru/
 share/locale/ru/LC_MESSAGES/
 share/locale/ru/LC_MESSAGES/bfd.mo
 share/locale/ru/LC_MESSAGES/binutils.mo
 share/locale/ru/LC_MESSAGES/gas.mo
-share/locale/ru/LC_MESSAGES/gprof.mo
+@comment share/locale/ru/LC_MESSAGES/gprof.mo
 share/locale/rw/
 share/locale/rw/LC_MESSAGES/
 share/locale/rw/LC_MESSAGES/bfd.mo
 share/locale/rw/LC_MESSAGES/binutils.mo
 share/locale/rw/LC_MESSAGES/gas.mo
-share/locale/rw/LC_MESSAGES/gprof.mo
+@comment share/locale/rw/LC_MESSAGES/gprof.mo
 share/locale/sk/
 share/locale/sk/LC_MESSAGES/
 share/locale/sk/LC_MESSAGES/binutils.mo
@@ -149,7 +149,7 @@ share/locale/sv/
 share/locale/sv/LC_MESSAGES/
 share/locale/sv/LC_MESSAGES/bfd.mo
 share/locale/sv/LC_MESSAGES/binutils.mo
-share/locale/sv/LC_MESSAGES/gprof.mo
+@comment share/locale/sv/LC_MESSAGES/gprof.mo
 share/locale/sv/LC_MESSAGES/ld.mo
 share/locale/sv/LC_MESSAGES/opcodes.mo
 share/locale/tr/
@@ -157,7 +157,7 @@ share/locale/tr/LC_MESSAGES/
 share/locale/tr/LC_MESSAGES/bfd.mo
 share/locale/tr/LC_MESSAGES/binutils.mo
 share/locale/tr/LC_MESSAGES/gas.mo
-share/locale/tr/LC_MESSAGES/gprof.mo
+@comment share/locale/tr/LC_MESSAGES/gprof.mo
 share/locale/tr/LC_MESSAGES/ld.mo
 share/locale/tr/LC_MESSAGES/opcodes.mo
 share/locale/uk/
@@ -167,7 +167,7 @@ share/locale/vi/
 share/locale/vi/LC_MESSAGES/
 share/locale/vi/LC_MESSAGES/bfd.mo
 share/locale/vi/LC_MESSAGES/binutils.mo
-share/locale/vi/LC_MESSAGES/gprof.mo
+@comment share/locale/vi/LC_MESSAGES/gprof.mo
 share/locale/vi/LC_MESSAGES/ld.mo
 share/locale/vi/LC_MESSAGES/opcodes.mo
 share/locale/zh_CN/
