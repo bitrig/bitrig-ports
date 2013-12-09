@@ -25,6 +25,7 @@ MODULES+=		devel/gettext
 
 AUTOCONF_VERSION=	2.59
 CONFIGURE_STYLE=	autoconf
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/tools
 
 MAKE_FLAGS+=	INTLLIBS='-L${LOCALBASE}/lib -lintl -liconv'
 
