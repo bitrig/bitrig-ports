@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.10 2012/10/18 08:12:17 giovanni Exp $
---- configure.orig	Tue Aug 21 20:39:21 2012
-+++ configure	Fri Oct 19 14:57:28 2012
+--- configure.orig	Wed Nov 13 11:51:41 2013
++++ configure	Sun Dec  8 11:54:54 2013
 @@ -3113,7 +3113,7 @@ do
    ap_last="${ap_cur}"
    ap_cur=`eval "echo ${ap_cur}"`
@@ -28,7 +28,7 @@ $OpenBSD: patch-configure,v 1.10 2012/10/18 08:12:17 giovanni Exp $
  
  ac_ext=c
  ac_cpp='$CPP $CPPFLAGS'
-@@ -7360,7 +7360,7 @@ if test "${enable_v4_mapped+set}" = set; then :
+@@ -7361,7 +7361,7 @@ if test "${enable_v4_mapped+set}" = set; then :
  else
  
      case $host in

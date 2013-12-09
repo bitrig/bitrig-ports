@@ -1,0 +1,12 @@
+$OpenBSD$
+--- srclib/apr/include/apr_general.h.orig	Sun Dec  8 12:26:07 2013
++++ srclib/apr/include/apr_general.h	Sun Dec  8 12:26:56 2013
+@@ -76,7 +76,7 @@ typedef int               apr_signum_t;
+  * @return offset
+  */
+ 
+-#if defined(CRAY) || (defined(__arm) && !(defined(LINUX) || defined(__FreeBSD__)))
++#if defined(CRAY) || (defined(__arm) && !(defined(LINUX) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__Bitrig__)))
+ #ifdef __STDC__
+ #define APR_OFFSET(p_type,field) _Offsetof(p_type,field)
+ #else
