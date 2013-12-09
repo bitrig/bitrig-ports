@@ -1,0 +1,14 @@
+$OpenBSD$
+--- configure.ac.orig	Fri Jan 17 21:14:29 2014
++++ configure.ac	Fri Jan 17 21:14:33 2014
+@@ -1517,10 +1517,6 @@ if test "$found" = "1" ; then
+          # Build with the assembly implementation
+          GCRYPT_CIPHERS="$GCRYPT_CIPHERS blowfish-amd64.lo"
+       ;;
+-      arm*-*-*)
+-         # Build with the assembly implementation
+-         GCRYPT_CIPHERS="$GCRYPT_CIPHERS blowfish-arm.lo"
+-      ;;
+    esac
+ fi
+ 

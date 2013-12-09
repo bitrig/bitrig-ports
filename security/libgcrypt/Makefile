@@ -19,6 +19,11 @@ MASTER_SITES=	${MASTER_SITES_GNUPG:=libgcrypt/}
 MODULES=		devel/gettext
 LIB_DEPENDS=		security/libgpg-error
 
+# missing arm asm and clang enables neon which is also missing src
+.if ${MACHINE_ARCH} == "arm"
+CONFIGURE_ENV +=        CC=gcc CXX=g++
+.endif
+
 # really bad asm that doesn't compile
 .if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ENV +=        CC=gcc CXX=g++

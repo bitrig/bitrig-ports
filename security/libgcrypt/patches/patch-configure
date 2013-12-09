@@ -1,0 +1,14 @@
+$OpenBSD$
+--- configure.orig	Fri Jan 17 21:28:16 2014
++++ configure	Fri Jan 17 21:28:19 2014
+@@ -18206,10 +18206,6 @@ $as_echo "#define USE_BLOWFISH 1" >>confdefs.h
+          # Build with the assembly implementation
+          GCRYPT_CIPHERS="$GCRYPT_CIPHERS blowfish-amd64.lo"
+       ;;
+-      arm*-*-*)
+-         # Build with the assembly implementation
+-         GCRYPT_CIPHERS="$GCRYPT_CIPHERS blowfish-arm.lo"
+-      ;;
+    esac
+ fi
+ 
