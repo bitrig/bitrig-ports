@@ -18,5 +18,6 @@ TEST_DEPENDS=	misc/screen
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		--prefix="${PREFIX}"
 USE_GMAKE=		Yes
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
 
 .include <bsd.port.mk>
