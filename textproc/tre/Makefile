@@ -25,5 +25,6 @@ MODULES=		devel/gettext
 USE_GROFF =		Yes
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--enable-static
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/utils
 
 .include <bsd.port.mk>
