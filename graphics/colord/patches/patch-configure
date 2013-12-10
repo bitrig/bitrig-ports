@@ -1,9 +1,9 @@
-$OpenBSD: patch-configure,v 1.15 2013/09/13 14:23:02 ajacoutot Exp $
+$OpenBSD: patch-configure,v 1.16 2013/12/10 13:51:16 ajacoutot Exp $
 
 /var/lib -> /var/db
 
---- configure.orig	Mon Aug 19 11:25:25 2013
-+++ configure	Wed Sep 18 10:41:18 2013
+--- configure.orig	Wed Dec  4 17:12:01 2013
++++ configure	Wed Dec 11 19:17:55 2013
 @@ -4994,7 +4994,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -31,7 +31,7 @@ $OpenBSD: patch-configure,v 1.15 2013/09/13 14:23:02 ajacoutot Exp $
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -8889,7 +8889,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8895,7 +8895,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -40,7 +40,7 @@ $OpenBSD: patch-configure,v 1.15 2013/09/13 14:23:02 ajacoutot Exp $
      with_gnu_ld=no
      ;;
    esac
-@@ -9765,7 +9765,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -9771,7 +9771,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -49,7 +49,7 @@ $OpenBSD: patch-configure,v 1.15 2013/09/13 14:23:02 ajacoutot Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10812,7 +10812,7 @@ newsos6)
+@@ -10818,7 +10818,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -58,7 +58,7 @@ $OpenBSD: patch-configure,v 1.15 2013/09/13 14:23:02 ajacoutot Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -18123,7 +18123,7 @@ _ACEOF
+@@ -18129,7 +18129,7 @@ _ACEOF
  fi
  
  # per-machine directory
