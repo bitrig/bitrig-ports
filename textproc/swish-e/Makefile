@@ -32,5 +32,6 @@ RUN_DEPENDS =		www/p5-URI \
 USE_GROFF =		Yes
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	--with-pcre
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/config
 
 .include <bsd.port.mk>
