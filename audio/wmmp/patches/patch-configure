@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.orig	Thu Dec 12 00:21:20 2013
++++ configure	Thu Dec 12 00:21:31 2013
+@@ -10014,7 +10014,7 @@ freebsd*)
+   LIBS="$LIBS -lkvm"
+   SETGID_FLAGS="-g kmem -m 2755 -o root"
+   ;;
+-openbsd*)
++openbsd* | bitrig*)
+   OS=openbsd
+   ;;
+ solaris*)
