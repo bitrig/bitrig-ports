@@ -1,0 +1,39 @@
+$OpenBSD$
+--- g3/g3cat.c.orig	Thu Dec 12 00:40:39 2013
++++ g3/g3cat.c	Thu Dec 12 00:41:13 2013
+@@ -44,7 +44,7 @@ static int b_written = 0;		/* bytes of a line already 
+ 					/* written */
+ 
+ #ifdef __GNUC__
+-inline
++static inline
+ #endif
+ void putcode _P2( (code, len), int code, int len )
+ {
+@@ -67,7 +67,7 @@ void putcode _P2( (code, len), int code, int len )
+ }
+ 
+ #ifdef __GNUC__
+-inline
++static inline
+ #endif
+ void putwhitespan _P1( (l), int l )
+ {
+@@ -98,7 +98,7 @@ void putwhitespan _P1( (l), int l )
+ }
+ 
+ #ifdef __GNUC__
+-inline
++static inline
+ #endif
+ void putblackspan _P1( (l), int l )
+ {
+@@ -129,7 +129,7 @@ void putblackspan _P1( (l), int l )
+ }
+ 
+ #ifdef __GNUC__
+-inline
++static inline
+ #endif
+ void puteol _P0( void )			/* write byte-aligned EOL */
+ {
