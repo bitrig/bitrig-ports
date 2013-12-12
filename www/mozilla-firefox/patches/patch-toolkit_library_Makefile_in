@@ -1,7 +1,7 @@
 $OpenBSD$
---- toolkit/library/Makefile.in.orig	Wed Sep 11 01:15:25 2013
-+++ toolkit/library/Makefile.in	Fri Sep 27 23:35:45 2013
-@@ -508,6 +508,12 @@ OS_LIBS += \
+--- toolkit/library/Makefile.in.orig	Thu Dec  5 17:07:57 2013
++++ toolkit/library/Makefile.in	Sat Dec 14 23:01:02 2013
+@@ -491,6 +491,12 @@ OS_LIBS += \
    $(NULL)
  endif
  
@@ -14,7 +14,7 @@ $OpenBSD$
  ifeq (OpenBSD,$(OS_ARCH))
  ifdef MOZ_CUBEB
  EXTRA_DSO_LDOPTS += -lsndio
-@@ -560,7 +566,7 @@ EXTRA_DSO_LDOPTS += -lelf -ldemangle
+@@ -535,7 +541,7 @@ EXTRA_DSO_LDOPTS += -lelf -ldemangle
  endif
  endif
  

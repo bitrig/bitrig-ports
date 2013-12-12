@@ -1,8 +1,8 @@
 $OpenBSD: patch-js_src_configure_in,v 1.24 2013/09/19 13:19:17 landry Exp $
 https://bugzilla.mozilla.org/show_bug.cgi?id=648721
---- js/src/configure.in.orig	Sat Oct 26 00:27:22 2013
-+++ js/src/configure.in	Fri Nov  8 19:47:40 2013
-@@ -1752,7 +1752,7 @@ ia64*-hpux*)
+--- js/src/configure.in.orig	Thu Dec  5 17:07:35 2013
++++ js/src/configure.in	Sat Dec 14 23:01:02 2013
+@@ -1777,7 +1777,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@) -o $@'
      ;;
  
@@ -11,7 +11,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648721
      DLL_SUFFIX=".so.1.0"
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
-@@ -2581,7 +2581,7 @@ then
+@@ -2524,7 +2524,7 @@ then
  			fi
  			;;
  

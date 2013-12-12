@@ -1,7 +1,7 @@
 $OpenBSD$
---- xpcom/reflect/xptcall/src/md/unix/Makefile.in.orig	Tue Sep 10 18:15:27 2013
-+++ xpcom/reflect/xptcall/src/md/unix/Makefile.in	Fri Sep 27 14:50:10 2013
-@@ -50,6 +50,21 @@ ifneq (,$(findstring ia64,$(OS_TEST)))
+--- xpcom/reflect/xptcall/src/md/unix/Makefile.in.orig	Thu Dec  5 17:08:00 2013
++++ xpcom/reflect/xptcall/src/md/unix/Makefile.in	Sat Dec 14 23:01:02 2013
+@@ -41,6 +41,21 @@ ifneq (,$(findstring ia64,$(OS_TEST)))
  ASFILES		:= xptcstubs_asm_ipf64.s xptcinvoke_asm_ipf64.s
  endif
  endif
