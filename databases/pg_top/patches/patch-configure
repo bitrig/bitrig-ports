@@ -1,0 +1,11 @@
+$OpenBSD$
+--- configure.orig	Thu Dec 12 04:22:32 2013
++++ configure	Thu Dec 12 04:22:45 2013
+@@ -6628,6 +6628,7 @@ else
+ 	linux*)		MODULE=linux; SET_MODE=755;;
+ 	netbsd*)	MODULE=netbsd; SET_MODE=755;;
+ 	openbsd*)	MODULE=openbsd;;
++	bitrig*)	MODULE=openbsd;;
+ 	solaris2*)	MODULE=sunos5; SET_MODE=755;;
+ 	sunos4*)	MODULE=sunos4;;
+ 	sysv4*)		MODULE=svr4;;
