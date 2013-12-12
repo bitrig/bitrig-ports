@@ -1,13 +1,13 @@
-$OpenBSD: patch-mozilla_js_src_configure_in,v 1.17 2013/09/19 13:37:52 landry Exp $
---- mozilla/js/src/configure.in.orig	Thu Sep 12 03:38:44 2013
-+++ mozilla/js/src/configure.in	Fri Sep 20 10:46:45 2013
-@@ -1826,8 +1826,13 @@ ia64*-hpux*)
+$OpenBSD: patch-mozilla_js_src_configure_in,v 1.18 2013/12/12 19:55:32 landry Exp $
+--- mozilla/js/src/configure.in.orig	Fri Dec  6 16:45:01 2013
++++ mozilla/js/src/configure.in	Sat Dec 14 23:23:00 2013
+@@ -1828,8 +1828,13 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@) -o $@'
      ;;
  
 -*-openbsd*)
 -    DLL_SUFFIX=".so.1.0"
-+*-openbsd*|*-bitrig*)
++*-openbsd* | *-bitrig*)
 +    if test "$SO_VERSION"; then
 +        DLL_SUFFIX=".so.$SO_VERSION"
 +    else
@@ -17,7 +17,7 @@ $OpenBSD: patch-mozilla_js_src_configure_in,v 1.17 2013/09/19 13:37:52 landry Ex
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
      DSO_LDOPTS='-shared -fPIC'
-@@ -2122,6 +2127,10 @@ mips*-*)
+@@ -2124,6 +2129,10 @@ mips*-*)
      AC_DEFINE(JS_CPU_MIPS)
      AC_DEFINE(JS_NUNBOX32)
      ;;
@@ -28,7 +28,7 @@ $OpenBSD: patch-mozilla_js_src_configure_in,v 1.17 2013/09/19 13:37:52 landry Ex
  esac
  
  MOZ_ARG_DISABLE_BOOL(ion,
-@@ -2666,7 +2675,7 @@ then
+@@ -2668,7 +2677,7 @@ then
  			fi
  			;;
  
