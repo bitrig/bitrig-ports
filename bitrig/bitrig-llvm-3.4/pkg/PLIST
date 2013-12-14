@@ -18,6 +18,7 @@ bin/git-clang-format
 @bin bin/llvm-ar
 @bin bin/llvm-as
 @bin bin/llvm-bcanalyzer
+@bin bin/llvm-c-test
 @bin bin/llvm-config
 @bin bin/llvm-cov
 @bin bin/llvm-diff
@@ -255,6 +256,8 @@ include/clang/Basic/Visibility.h
 include/clang/Basic/arm_neon.inc
 include/clang/CodeGen/
 include/clang/CodeGen/BackendUtil.h
+include/clang/CodeGen/CGFunctionInfo.h
+include/clang/CodeGen/CodeGenABITypes.h
 include/clang/CodeGen/CodeGenAction.h
 include/clang/CodeGen/ModuleBuilder.h
 include/clang/Config/
@@ -317,6 +320,7 @@ include/clang/Frontend/VerifyDiagnosticConsumer.h
 include/clang/FrontendTool/
 include/clang/FrontendTool/Utils.h
 include/clang/Index/
+include/clang/Index/CommentToXML.h
 include/clang/Index/USRGeneration.h
 include/clang/Lex/
 include/clang/Lex/AttrSpellings.inc
@@ -348,8 +352,9 @@ include/clang/Lex/Token.h
 include/clang/Lex/TokenConcatenation.h
 include/clang/Lex/TokenLexer.h
 include/clang/Parse/
-include/clang/Parse/AttrExprArgs.inc
+include/clang/Parse/AttrIdentifierArg.inc
 include/clang/Parse/AttrLateParsed.inc
+include/clang/Parse/AttrTypeArg.inc
 include/clang/Parse/ParseAST.h
 include/clang/Parse/ParseDiagnostic.h
 include/clang/Parse/Parser.h
@@ -397,6 +402,7 @@ include/clang/Sema/SemaConsumer.h
 include/clang/Sema/SemaDiagnostic.h
 include/clang/Sema/SemaFixItUtils.h
 include/clang/Sema/SemaInternal.h
+include/clang/Sema/SemaLambda.h
 include/clang/Sema/Template.h
 include/clang/Sema/TemplateDeduction.h
 include/clang/Sema/TypoCorrection.h
@@ -483,10 +489,12 @@ include/llvm-c/BitWriter.h
 include/llvm-c/Core.h
 include/llvm-c/Disassembler.h
 include/llvm-c/ExecutionEngine.h
+include/llvm-c/IRReader.h
 include/llvm-c/Initialization.h
 include/llvm-c/LinkTimeOptimizer.h
 include/llvm-c/Linker.h
 include/llvm-c/Object.h
+include/llvm-c/Support.h
 include/llvm-c/Target.h
 include/llvm-c/TargetMachine.h
 include/llvm-c/Transforms/
@@ -556,6 +564,7 @@ include/llvm/ADT/VariadicFunction.h
 include/llvm/ADT/edit_distance.h
 include/llvm/ADT/ilist.h
 include/llvm/ADT/ilist_node.h
+include/llvm/ADT/polymorphic_ptr.h
 include/llvm/Analysis/
 include/llvm/Analysis/AliasAnalysis.h
 include/llvm/Analysis/AliasSetTracker.h
@@ -651,6 +660,7 @@ include/llvm/CodeGen/LiveIntervalAnalysis.h
 include/llvm/CodeGen/LiveIntervalUnion.h
 include/llvm/CodeGen/LiveRangeEdit.h
 include/llvm/CodeGen/LiveRegMatrix.h
+include/llvm/CodeGen/LiveRegUnits.h
 include/llvm/CodeGen/LiveStackAnalysis.h
 include/llvm/CodeGen/LiveVariables.h
 include/llvm/CodeGen/MachORelocation.h
@@ -708,6 +718,7 @@ include/llvm/CodeGen/SelectionDAG.h
 include/llvm/CodeGen/SelectionDAGISel.h
 include/llvm/CodeGen/SelectionDAGNodes.h
 include/llvm/CodeGen/SlotIndexes.h
+include/llvm/CodeGen/StackMaps.h
 include/llvm/CodeGen/StackProtector.h
 include/llvm/CodeGen/TargetLoweringObjectFileImpl.h
 include/llvm/CodeGen/TargetSchedule.h
@@ -775,11 +786,14 @@ include/llvm/IR/IntrinsicsR600.td
 include/llvm/IR/IntrinsicsX86.td
 include/llvm/IR/IntrinsicsXCore.td
 include/llvm/IR/LLVMContext.h
+include/llvm/IR/LegacyPassManager.h
+include/llvm/IR/LegacyPassManagers.h
 include/llvm/IR/MDBuilder.h
 include/llvm/IR/Metadata.h
 include/llvm/IR/Module.h
 include/llvm/IR/OperandTraits.h
 include/llvm/IR/Operator.h
+include/llvm/IR/PassManager.h
 include/llvm/IR/SymbolTableListTraits.h
 include/llvm/IR/Type.h
 include/llvm/IR/TypeBuilder.h
@@ -803,6 +817,7 @@ include/llvm/MC/MCAsmBackend.h
 include/llvm/MC/MCAsmInfo.h
 include/llvm/MC/MCAsmInfoCOFF.h
 include/llvm/MC/MCAsmInfoDarwin.h
+include/llvm/MC/MCAsmInfoELF.h
 include/llvm/MC/MCAsmLayout.h
 include/llvm/MC/MCAssembler.h
 include/llvm/MC/MCAtom.h
@@ -889,7 +904,6 @@ include/llvm/Option/Option.h
 include/llvm/Pass.h
 include/llvm/PassAnalysisSupport.h
 include/llvm/PassManager.h
-include/llvm/PassManagers.h
 include/llvm/PassRegistry.h
 include/llvm/PassSupport.h
 include/llvm/Support/
@@ -1047,6 +1061,7 @@ include/llvm/Transforms/Utils/BypassSlowDivision.h
 include/llvm/Transforms/Utils/Cloning.h
 include/llvm/Transforms/Utils/CmpInstAnalysis.h
 include/llvm/Transforms/Utils/CodeExtractor.h
+include/llvm/Transforms/Utils/GlobalStatus.h
 include/llvm/Transforms/Utils/IntegerDivision.h
 include/llvm/Transforms/Utils/Local.h
 include/llvm/Transforms/Utils/LoopUtils.h
@@ -1120,6 +1135,8 @@ ${CLANG_INCLUDE_PATH}/wmmintrin.h
 ${CLANG_INCLUDE_PATH}/x86intrin.h
 ${CLANG_INCLUDE_PATH}/xmmintrin.h
 ${CLANG_INCLUDE_PATH}/xopintrin.h
+lib/clang/${LLVM_V}/lib/
+lib/clang/${LLVM_V}/lib/bitrig/
 lib/libLLVMARMAsmParser.a
 lib/libLLVMARMAsmPrinter.a
 lib/libLLVMARMCodeGen.a
@@ -1195,6 +1212,12 @@ lib/libclangTooling.a
 lib/libclang_rt.${MACHINE_ARCH}.a
 lib/libgtest.a
 lib/libgtest_main.a
+share/clang/
+share/clang/clang-format-bbedit.applescript
+share/clang/clang-format-diff.py
+share/clang/clang-format-sublime.py
+share/clang/clang-format.el
+share/clang/clang-format.py
 share/llvm/
 share/llvm/cmake/
 share/llvm/cmake/AddLLVM.cmake

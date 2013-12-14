@@ -10,7 +10,7 @@ LLVM_V =	3.4
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION = 	4
+REVISION = 	5
 
 CATEGORIES =	bitrig
 
@@ -114,17 +114,17 @@ git:
 	if test -d ${TMPGIT}/llvm-${LLVM_V}.src; then \
 		(cd ${TMPGIT}/llvm-${LLVM_V}.src && git pull) \
 	else \
-		(cd ${TMPGIT} && git clone -b master http://llvm.org/git/llvm.git llvm-${LLVM_V}.src) \
+		(cd ${TMPGIT} && git clone -b release_34 http://llvm.org/git/llvm.git llvm-${LLVM_V}.src) \
 	fi
 	if test -d ${TMPGIT}/cfe-${LLVM_V}.src; then \
 		(cd ${TMPGIT}/cfe-${LLVM_V}.src && git pull) \
 	else \
-		(cd ${TMPGIT} && git clone -b master http://llvm.org/git/clang.git cfe-${LLVM_V}.src) \
+		(cd ${TMPGIT} && git clone -b release_34 http://llvm.org/git/clang.git cfe-${LLVM_V}.src) \
 	fi	
 	if test -d ${TMPGIT}/compiler-rt-${LLVM_V}.src; then \
 		(cd ${TMPGIT}/compiler-rt-${LLVM_V}.src && git pull) \
 	else \
-		(cd ${TMPGIT} && git clone -b master http://llvm.org/git/compiler-rt.git compiler-rt-${LLVM_V}.src) \
+		(cd ${TMPGIT} && git clone -b release_34 http://llvm.org/git/compiler-rt.git compiler-rt-${LLVM_V}.src) \
 	fi
 	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/llvm-${LLVM_V}.src.tar.gz llvm-${LLVM_V}.src)
 	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/cfe-${LLVM_V}.src.tar.gz cfe-${LLVM_V}.src)
