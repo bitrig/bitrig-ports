@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.orig	Sat Dec 14 13:20:26 2013
++++ configure	Sat Dec 14 13:21:05 2013
+@@ -2757,7 +2757,7 @@ _ACEOF
+         { echo "$as_me:$LINENO: result: Linux" >&5
+ echo "${ECHO_T}Linux" >&6; }
+         ;;
+-      *-freebsd*|*-openbsd*|*-netbsd*|*-k*bsd*-gnu)
++      *-freebsd*|*-openbsd*|*-netbsd*|*-k*bsd*-gnu|*-bitrig*)
+ 
+ cat >>confdefs.h <<\_ACEOF
+ #define OS_BSD

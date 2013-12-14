@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/bsd.c.orig	Sat Dec 14 13:26:25 2013
++++ src/bsd.c	Sat Dec 14 13:27:15 2013
+@@ -12,7 +12,7 @@
+ hid_return hid_os_force_claim(HIDInterface* const hidif, int const interface,
+     HIDInterfaceMatcher const* const matcher, unsigned short retries)
+ {
+-  retries = retries;
++  (void)retries;
+ 	
+   if (!hidif) {
+     ERROR("cannot open NULL HIDInterface.");
