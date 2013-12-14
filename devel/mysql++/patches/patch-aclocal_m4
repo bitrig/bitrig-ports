@@ -1,0 +1,20 @@
+$OpenBSD$
+--- aclocal.m4.orig	Sat Dec 14 14:51:26 2013
++++ aclocal.m4	Sat Dec 14 14:51:43 2013
+@@ -1189,6 +1189,7 @@ AC_DEFUN([AC_BAKEFILE_SHARED_LD],
+       powerpc-apple-macos* | \
+       *-*-freebsd* | *-*-openbsd* | *-*-netbsd* | *-*-k*bsd*-gnu | \
+       *-*-mirbsd* | \
++      *-*-bitrig* | \
+       *-*-sunos4* | \
+       *-*-osf* | \
+       *-*-dgux5* | \
+@@ -1239,7 +1240,7 @@ AC_DEFUN([AC_BAKEFILE_SHARED_VERSIONS],
+ 
+     case "${BAKEFILE_HOST}" in
+       *-*-linux* | *-*-freebsd* | *-*-openbsd* | *-*-netbsd* | \
+-      *-*-k*bsd*-gnu | *-*-mirbsd* )
++      *-*-k*bsd*-gnu | *-*-mirbsd* | *-*-bitrig* )
+         if test "x$SUNCXX" = "xyes"; then
+             SONAME_FLAG="-h "
+         else

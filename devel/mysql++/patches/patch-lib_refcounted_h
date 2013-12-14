@@ -1,0 +1,11 @@
+$OpenBSD$
+--- lib/refcounted.h.orig	Sat Dec 14 14:46:00 2013
++++ lib/refcounted.h	Sat Dec 14 14:47:17 2013
+@@ -28,6 +28,7 @@
+ #if !defined(MYSQLPP_REFCOUNTED_H)
+ #define MYSQLPP_REFCOUNTED_H
+ 
++#include <cstddef>
+ #include <memory>
+ 
+ namespace mysqlpp {

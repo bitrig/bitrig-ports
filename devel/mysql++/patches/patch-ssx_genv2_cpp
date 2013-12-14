@@ -1,0 +1,11 @@
+$OpenBSD$
+--- ssx/genv2.cpp.orig	Sat Dec 14 14:47:46 2013
++++ ssx/genv2.cpp	Sat Dec 14 14:47:59 2013
+@@ -34,6 +34,7 @@
+ 
+ #include <iostream>
+ #include <fstream>
++#include <cstring>
+ #include <typeinfo>
+ 
+ using namespace std;
