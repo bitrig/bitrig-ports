@@ -17,6 +17,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=		http://www.hyperrealm.com/libconfig/
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/aux-build
 
 WANTLIB += m stdc++
 
