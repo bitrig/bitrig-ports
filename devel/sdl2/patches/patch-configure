@@ -1,0 +1,56 @@
+$OpenBSD$
+--- configure.orig	Sat Dec 14 15:04:21 2013
++++ configure	Sat Dec 14 15:06:13 2013
+@@ -17381,7 +17381,7 @@ fi
+     if test x$enable_oss = xmaybe; then
+         enable_oss=yes
+         case "$host" in
+-            *-*-openbsd*)
++            *-*-openbsd* | *-*-bitrig*)
+                 enable_oss=no;;
+         esac
+     fi
+@@ -17450,7 +17450,7 @@ $as_echo "#define SDL_AUDIO_DRIVER_OSS 1" >>confdefs.h
+ 
+             # We may need to link with ossaudio emulation library
+             case "$host" in
+-                *-*-openbsd*|*-*-netbsd*)
++                *-*-openbsd*|*-*-netbsd*|*-*-bitrig*)
+                     EXTRA_LDFLAGS="$EXTRA_LDFLAGS -lossaudio";;
+             esac
+         fi
+@@ -19345,7 +19345,7 @@ fi
+                     xss_lib='/usr/X11R6/lib/libXss.1.dylib'
+                     xvidmode_lib='/usr/X11R6/lib/libXxf86vm.1.dylib'
+                     ;;
+-                *-*-openbsd*)
++                *-*-openbsd*|*-*-bitrig*)
+                     x11_lib='libX11.so'
+                     x11ext_lib='libXext.so'
+                     xcursor_lib='libXcursor.so'
+@@ -20975,7 +20975,7 @@ fi
+             pthread_cflags="-D_REENTRANT -D_THREAD_SAFE"
+             pthread_lib="-lpthread"
+             ;;
+-        *-*-openbsd*)
++        *-*-openbsd*|*-*-bitrig*)
+             pthread_cflags="-D_REENTRANT"
+             pthread_lib="-pthread"
+             ;;
+@@ -22069,7 +22069,7 @@ fi
+ }
+ 
+ case "$host" in
+-    *-*-linux*|*-*-uclinux*|*-*-gnu*|*-*-k*bsd*-gnu|*-*-bsdi*|*-*-freebsd*|*-*-dragonfly*|*-*-netbsd*|*-*-openbsd*|*-*-sysv5*|*-*-solaris*|*-*-hpux*|*-*-aix*|*-*-minix*)
++    *-*-linux*|*-*-uclinux*|*-*-gnu*|*-*-k*bsd*-gnu|*-*-bsdi*|*-*-freebsd*|*-*-dragonfly*|*-*-netbsd*|*-*-openbsd*|*-*-bitrig*|*-*-sysv5*|*-*-solaris*|*-*-hpux*|*-*-aix*|*-*-minix*)
+         case "$host" in
+             *-raspberry-linux*)
+                 # Raspberry Pi
+@@ -22097,6 +22097,7 @@ case "$host" in
+             *-*-dragonfly*)     ARCH=freebsd ;;
+             *-*-netbsd*)        ARCH=netbsd ;;
+             *-*-openbsd*)       ARCH=openbsd ;;
++            *-*-bitrig*)        ARCH=openbsd ;;
+             *-*-sysv5*)         ARCH=sysv5 ;;
+             *-*-solaris*)       ARCH=solaris ;;
+             *-*-hpux*)          ARCH=hpux ;;

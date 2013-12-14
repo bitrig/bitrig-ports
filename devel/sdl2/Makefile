@@ -32,6 +32,7 @@ CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
 # in case devel/usb is installed, don't pick it up.
 CONFIGURE_ENV+= ac_cv_lib_usb_hid_init=no \
 		ac_cv_header_usb_h=no
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-scripts
 
 WANTLIB=	m pthread sndio usbhid
 # GL/X11/Xext/Xrender/Xrandr are dlopen'd by SDL
