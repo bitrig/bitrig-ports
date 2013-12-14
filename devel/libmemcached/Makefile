@@ -22,7 +22,8 @@ PERMIT_PACKAGE_CDROM=   Yes
 
 USE_GROFF =	Yes
 WANTLIB += c event m pthread sasl2
-LIB_DEPENDS= 		security/cyrus-sasl2
+BUILD_DEPENDS=	misc/memcached
+LIB_DEPENDS= 	security/cyrus-sasl2
 TEST_DEPENDS=	misc/memcached
 
 # XXX Build memslap (benchmark tool) only on systems with GCC atomic built-ins. 
@@ -38,5 +39,6 @@ pre-configure:
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV+=		LDFLAGS="-L${LOCALBASE}/lib" 
 CONFIGURE_ENV+= 	CFLAGS="-I${LOCALBASE}/include"
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/config
 
 .include "bsd.port.mk"

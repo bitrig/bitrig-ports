@@ -1,5 +1,4 @@
 @comment $OpenBSD: PLIST,v 1.1.1.1 2010/10/01 09:32:36 sebastia Exp $
-%%SHARED%%
 %%atomic%%
 @bin bin/memcapable
 @bin bin/memcat
@@ -67,12 +66,16 @@ include/libmemcached/visibility.h
 include/libmemcached/watchpoint.h
 lib/libhashkit.a
 lib/libhashkit.la
+@lib lib/libhashkit.so.${LIBhashkit_VERSION}
 lib/libmemcached.a
 lib/libmemcached.la
+@lib lib/libmemcached.so.${LIBmemcached_VERSION}
 lib/libmemcachedprotocol.a
 lib/libmemcachedprotocol.la
+@lib lib/libmemcachedprotocol.so.${LIBmemcachedprotocol_VERSION}
 lib/libmemcachedutil.a
 lib/libmemcachedutil.la
+@lib lib/libmemcachedutil.so.${LIBmemcachedutil_VERSION}
 lib/pkgconfig/
 lib/pkgconfig/libmemcached.pc
 @man man/man1/memcapable.1
