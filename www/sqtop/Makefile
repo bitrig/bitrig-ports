@@ -20,5 +20,6 @@ WANTLIB += c m ncurses pthread stdc++
 MASTER_SITES=		https://sqtop.googlecode.com/files/
 
 CONFIGURE_STYLE=	gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/cfgaux
 
 .include <bsd.port.mk>
