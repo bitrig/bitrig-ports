@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/ImageContainer.cpp.orig	Sun Dec 15 23:06:55 2013
++++ src/ImageContainer.cpp	Sun Dec 15 23:07:28 2013
+@@ -15,6 +15,7 @@
+ #include <fstream>
+ #include <stdexcept>
+ #include <cerrno>
++#include <cstring>
+ #include <limits.h>
+ 
+ 
