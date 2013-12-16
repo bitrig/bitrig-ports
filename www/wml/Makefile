@@ -33,6 +33,8 @@ CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 MAKE_ENV=		EXT_TIDY=${LOCALBASE}/bin/tidy \
 			EXT_HTMLCLEAN=${LOCALBASE}/bin/htmlclean
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/etc ${WRKSRC}/wml_backend/p2_mp4h
+
 post-extract:
 	rm ${WRKSRC}/wml_aux/tidy/*.orig
 
