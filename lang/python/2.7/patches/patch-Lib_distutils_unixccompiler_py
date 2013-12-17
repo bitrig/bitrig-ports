@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Lib/distutils/unixccompiler.py.orig	Tue Dec 17 09:37:18 2013
++++ Lib/distutils/unixccompiler.py	Tue Dec 17 09:38:39 2013
+@@ -209,7 +209,7 @@ class UnixCCompiler(CCompiler):
+         return "-L" + dir
+ 
+     def _is_gcc(self, compiler_name):
+-        return "gcc" in compiler_name or "g++" in compiler_name
++        return "gcc" in compiler_name or "g++" in compiler_name or "clang" in compiler_name
+ 
+     def runtime_library_dir_option(self, dir):
+         # XXX Hackish, at the very least.  See Python bug #445902:
