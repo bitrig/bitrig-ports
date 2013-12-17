@@ -1,6 +1,6 @@
 $OpenBSD: patch-support_shobj-conf,v 1.1 2013/04/18 15:08:01 sthen Exp $
---- support/shobj-conf.orig	Sun Apr 21 17:14:24 2013
-+++ support/shobj-conf	Sun Apr 21 17:14:58 2013
+--- support/shobj-conf.orig	Tue Dec 17 08:51:08 2013
++++ support/shobj-conf	Tue Dec 17 08:56:27 2013
 @@ -197,7 +197,16 @@ darwin*|macosx*)
  	SHLIB_LIBS='-lncurses'	# see if -lcurses works on MacOS X 10.1 
  	;;
@@ -11,7 +11,7 @@ $OpenBSD: patch-support_shobj-conf,v 1.1 2013/04/18 15:08:01 sthen Exp $
 +	SHOBJ_LD='${CC}'
 +	SHOBJ_LDFLAGS='-shared'
 +
-+	SHLIB_XLDFLAGS='-R$(libdir)'
++	SHLIB_XLDFLAGS='-Wl,-R $(libdir)'
 +	SHLIB_LIBVERSION='$(SHLIB_LIBSUFF).$(RL_SHLIB_V)'
 +	;;
 +
