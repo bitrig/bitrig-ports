@@ -10,7 +10,7 @@ LLVM_V =	3.3
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION =	6
+REVISION =	7
 
 CATEGORIES =	bitrig
 
@@ -39,12 +39,6 @@ MODULES =	devel/cmake \
 TEST_DEPENDS =	devel/dejagnu
 BUILD_DEPENDS += textproc/py-sphinx
 
-MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
-		VERBOSE=Yes \
-		INSTALL="install -c"
-
-TEST_FLAGS =	RUNTESTFLAGS=
-
 SEPARATE_BUILD =	Yes
 
 PREFIX=			/usr
@@ -57,6 +51,8 @@ CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
 SUBST_VARS +=		CLANG_INCLUDE_PATH LLVM_V
+
+TEST_TARGET=		check
 
 .if ${MACHINE_ARCH:Mamd64}
 INSTALL_ARCH = x86_64
