@@ -9,7 +9,7 @@ COMMENT=	Network Time Protocol reference implementation
 VERSION=	4.2.6p5
 DISTNAME=	ntp-${VERSION}
 PKGNAME=	ntp-${VERSION:S/p/pl/}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://archive.ntp.org/ntp4/ntp-4.2/
 
@@ -18,7 +18,8 @@ HOMEPAGE=	http://www.ntp.org/
 # modified ISC
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c crypto edit kvm m termcap
+LIB_DEPENDS=	devel/readline
+WANTLIB=	c crypto kvm m readline termcap
 
 # enabling SEPARATE_BUILD causes the parser to be rebuilt .y -> .c,
 # which requires bison
@@ -26,9 +27,12 @@ WANTLIB=	c crypto edit kvm m termcap
 CONFIGURE_STYLE=gnu
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/sntp
 CONFIGURE_ARGS=	--enable-parse-clocks \
-		--with-binsubdir=sbin
+		--with-binsubdir=sbin \
+		--with-lineeditlibs=readline
 CONFIGURE_ENV=	CPPFLAGS='-DCONFIG_FILE="\"${SYSCONFDIR}/ntp.conf\"" \
-			  -DKEYFILE="\"${SYSCONFDIR}/ntp.keys\""'
+			  -DKEYFILE="\"${SYSCONFDIR}/ntp.keys\"" \
+			  -I${LOCALBASE}/include' \
+		LDFLAGS='-L${LOCALBASE}/lib'
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ntp
