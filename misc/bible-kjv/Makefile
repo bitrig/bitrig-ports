@@ -21,8 +21,9 @@ MASTER_SITES=	${MASTER_SITE_DEBIAN:=main/b/bible-kjv/}
 WRKDIST=	${WRKDIR}/bible-kjv
 
 MAKE_FLAGS=	DEST=${PREFIX} \
+		CPPFLAGS='-I${LOCALBASE}/include' \
 		CFLAGS='${CFLAGS} -DDESTLIB=\"${PREFIX}/lib\"' \
-		LDFLAGS='-lreadline -lcurses'
+		LDFLAGS='-L${LOCALBASE}/lib -lreadline -lcurses'
 
 post-build:
 	perl -i.bak -pe 's:/usr/lib:${PREFIX}/lib:g' ${WRKSRC}/bible.1
