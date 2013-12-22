@@ -1,0 +1,21 @@
+$OpenBSD$
+--- src/eval.c.orig	Sun Dec 22 22:28:25 2013
++++ src/eval.c	Sun Dec 22 22:33:11 2013
+@@ -1480,7 +1480,7 @@ char *wclist;	/* list of characters to consider "in a 
+ 	/* if we are turning this facility off, just flag so */
+ 	if (wclist == NULL || *wclist == 0) {
+ 		wlflag = FALSE;
+-		return;
++		return 0;
+ 	}
+ 
+ 	/* first clear the table */
+@@ -1492,7 +1492,7 @@ char *wclist;	/* list of characters to consider "in a 
+ 	while (*wclist)
+ 		wordlist[(unsigned char)(*wclist++)] = TRUE;	/* ep */
+ 	wlflag = TRUE;
+-	return;
++	return 0;
+ }
+ 
+ /*	getwlist:	place in a buffer a list of characters
