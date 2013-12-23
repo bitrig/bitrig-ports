@@ -15,9 +15,14 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=bashdb/}
 PERMIT_PACKAGE_CDROM=	Yes
 
 CONFIGURE_STYLE=	gnu
+CONFIGURE_ENV=		CPPFLAGS='-I${LOCALBASE}/include' \
+			LDFLAGS='-L${LOCALBASE}/lib'
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
+
 USE_GROFF =		Yes
 WANTLIB=		c readline termcap
-LIB-DEPENDS=		devel/readline
+LIB_DEPENDS=		devel/readline
+
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/make ${PREFIX}/bin/remake
