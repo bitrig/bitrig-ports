@@ -1,0 +1,18 @@
+$OpenBSD$
+--- app/gui-subs.h.orig	Mon Dec 23 19:20:06 2013
++++ app/gui-subs.h	Mon Dec 23 19:19:27 2013
+@@ -146,10 +146,10 @@ void gui_list_thaw(GtkWidget *list, GtkTreeModel *mode
+ 
+ void gui_list_handle_selection(GtkWidget *list, GCallback handler, gpointer data);
+ 
+-inline gboolean gui_list_get_iter(guint n, GtkListStore *tree_model, GtkTreeIter *iter);
+-inline void gui_list_moveto(GtkWidget *list, guint n);
+-inline void gui_string_list_set_text(GtkWidget *list, guint row, guint col, const gchar *string);
+-inline void gui_list_select(GtkWidget *list, guint row);
++extern inline gboolean gui_list_get_iter(guint n, GtkListStore *tree_model, GtkTreeIter *iter);
++extern inline void gui_list_moveto(GtkWidget *list, guint n);
++extern inline void gui_string_list_set_text(GtkWidget *list, guint row, guint col, const gchar *string);
++extern inline void gui_list_select(GtkWidget *list, guint row);
+ 
+ GtkWidget* gui_button(GtkWidget * win, gchar *stock, void *callback, gpointer userdata, GtkWidget *box);
+ 
