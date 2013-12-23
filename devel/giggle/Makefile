@@ -37,6 +37,7 @@ MODGNOME_DESKTOP_FILE=	Yes
 MODGNOME_ICON_CACHE=	Yes
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--disable-evolution-data-server
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
 
 # Disable the terminal for now: https://bugzilla.gnome.org/show_bug.cgi?id=662332
 CONFIGURE_ARGS+=--disable-terminal
