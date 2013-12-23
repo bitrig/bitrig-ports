@@ -1,0 +1,39 @@
+$OpenBSD$
+--- libpcsxcore/psxinterpreter.c.orig	Mon Dec 23 10:33:57 2013
++++ libpcsxcore/psxinterpreter.c	Mon Dec 23 10:34:36 2013
+@@ -38,7 +38,7 @@ static u32 branchPC;
+ #define debugI()
+ #endif
+ 
+-inline void execI();
++static inline void execI();
+ 
+ // Subsets
+ void (*psxBSC[64])();
+@@ -273,7 +273,7 @@ void psxDelayTest(int reg, u32 bpc) {
+ 	psxBranchTest();
+ }
+ 
+-__inline void doBranch(u32 tar) {
++static __inline void doBranch(u32 tar) {
+ 	u32 *code;
+ 	u32 tmp;
+ 
+@@ -641,7 +641,7 @@ void psxTestSWInts() {
+ 	}
+ }
+ 
+-__inline void MTC0(int reg, u32 val) {
++static __inline void MTC0(int reg, u32 val) {
+ //	SysPrintf("MTC0 %d: %x\n", reg, val);
+ 	switch (reg) {
+ 		case 12: // Status
+@@ -780,7 +780,7 @@ static void intShutdown() {
+ }
+ 
+ // interpreter execution
+-inline void execI() { 
++static inline void execI() { 
+ 	u32 *code = (u32 *)PSXM(psxRegs.pc);
+ 	psxRegs.code = ((code == NULL) ? 0 : SWAP32(*code));
+ 
