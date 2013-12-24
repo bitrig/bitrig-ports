@@ -28,5 +28,6 @@ LIB_DEPENDS =		net/curl \
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	${CONFIGURE_SHARED} --with-raptor=2
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build
 
 .include <bsd.port.mk>
