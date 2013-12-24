@@ -33,6 +33,8 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--disable-dot \
 		--disable-gengetopt
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
+
 post-install:
 	@chown -R ${SHAREOWN}:${SHAREGRP} \
 		${PREFIX}/share/doc/libofx/html
