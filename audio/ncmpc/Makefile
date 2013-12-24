@@ -25,6 +25,7 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		CPP=${CPP} \
 			CPPFLAGS=-I${LOCALBASE}/include \
 			LDFLAGS=-L${LOCALBASE}/lib
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/ncmpc
