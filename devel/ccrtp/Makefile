@@ -24,6 +24,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		ac_cv_path_DOXYGEN=no \
 		ac_cv_path_LIBGCRYPT_CONFIG=no
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/autoconf
 
 NO_TEST=	Yes
 

@@ -1,5 +1,4 @@
 @comment $OpenBSD: PLIST,v 1.1.1.1 2007/12/08 05:23:20 jakemsr Exp $
-%%SHARED%%
 include/ccrtp/
 include/ccrtp/CryptoContext.h
 include/ccrtp/base.h
@@ -19,5 +18,6 @@ include/ccrtp/sources.h
 @info info/ccrtp.info
 lib/libccrtp1.a
 lib/libccrtp1.la
+@lib lib/libccrtp1.so.${LIBccrtp1_VERSION}
 lib/pkgconfig/
 lib/pkgconfig/libccrtp1.pc
