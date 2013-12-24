@@ -26,6 +26,7 @@ LIB_DEPENDS =		net/curl \
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	--with-http-client=curl
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/mpdscribble ${PREFIX}/bin/mpdscribble
