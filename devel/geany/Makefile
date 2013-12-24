@@ -43,6 +43,7 @@ LIBTOOL_FLAGS =	--tag=disable-static
 CONFIGURE_STYLE=gnu
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
 
 post-install:
 	rm -f ${PREFIX}/lib/geany/*.la
