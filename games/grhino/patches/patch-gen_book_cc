@@ -1,0 +1,11 @@
+$OpenBSD$
+--- gen_book.cc.orig	Tue Dec 24 11:54:30 2013
++++ gen_book.cc	Tue Dec 24 11:54:47 2013
+@@ -22,6 +22,7 @@
+ 
+ #include <fstream>
+ #include <sstream>
++#include <cstring>
+ 
+ #include <vector>
+ 

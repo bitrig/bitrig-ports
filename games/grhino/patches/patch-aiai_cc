@@ -1,0 +1,11 @@
+$OpenBSD$
+--- aiai.cc.orig	Tue Dec 24 11:55:29 2013
++++ aiai.cc	Tue Dec 24 11:55:40 2013
+@@ -39,6 +39,7 @@
+ #include <deque>
+ #include <vector>
+ #include <sstream>
++#include <cstdlib>
+ 
+ #include "alphabeta.h"
+ #include "board.h"

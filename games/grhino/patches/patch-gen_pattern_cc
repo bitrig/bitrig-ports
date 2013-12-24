@@ -1,0 +1,11 @@
+$OpenBSD$
+--- gen_pattern.cc.orig	Tue Dec 24 11:54:57 2013
++++ gen_pattern.cc	Tue Dec 24 11:55:06 2013
+@@ -22,6 +22,7 @@
+ 
+ #include <fstream>
+ #include <sstream>
++#include <cstring>
+ 
+ #include <math.h>
+ #include <unistd.h>

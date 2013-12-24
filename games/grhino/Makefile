@@ -31,6 +31,7 @@ MODGNOME_DESKTOP_FILE =	yes
 LIB_DEPENDS =		x11/gnome/libgnomeui
 
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/scripts
 
 NO_TEST =		Yes
 
