@@ -30,6 +30,7 @@ LIB_DEPENDS=		x11/gtk+2
 SEPARATE_BUILD= 	Yes
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--with-lib-GL
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/.auto
 
 DOC_DIR=		${PREFIX}/share/doc/gtkglarea2
 
