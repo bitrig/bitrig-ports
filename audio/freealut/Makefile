@@ -22,6 +22,7 @@ CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--enable-dependency-tracking
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/" \
 		LDFLAGS="-L${LOCALBASE}/lib"
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/admin/autotools
 
 TESTS=	errorstuff fileloader memoryloader retrostuff version waveforms
 
