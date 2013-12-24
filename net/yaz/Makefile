@@ -34,5 +34,6 @@ LIB_DEPENDS=		textproc/libxml \
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--without-gnutls
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
 
 .include <bsd.port.mk>
