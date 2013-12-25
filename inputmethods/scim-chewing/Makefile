@@ -41,5 +41,6 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--disable-static
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/autotools
 
 .include <bsd.port.mk>
