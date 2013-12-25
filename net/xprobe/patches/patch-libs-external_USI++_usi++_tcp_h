@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libs-external/USI++/usi++/tcp.h.orig	Wed Dec 25 11:42:24 2013
++++ libs-external/USI++/usi++/tcp.h	Wed Dec 25 11:42:41 2013
+@@ -12,6 +12,8 @@
+ #ifndef _TCP_H_
+ #define _TCP_H_
+ 
++#include <cstring>
++
+ #include "usi-structs.h"
+ #include "datalink.h"
+ #include "ip.h"

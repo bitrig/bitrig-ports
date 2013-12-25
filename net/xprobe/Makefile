@@ -15,7 +15,9 @@ WANTLIB=		c m pcap stdc++
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xprobe/}
 
 CONFIGURE_STYLE=	gnu
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/cfg-scripts
+MODGNU_CONFIG_GUESS_DIRS=				\
+	${WRKSRC}/cfg-scripts				\
+	${WRKSRC}/libs-external/USI++/src/cfgaux
 
 USE_GROFF=		Yes
 NO_TEST=		Yes
