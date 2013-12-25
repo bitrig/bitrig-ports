@@ -34,5 +34,6 @@ SEPARATE_BUILD =	Yes
 CONFIGURE_STYLE =	gnu
 YACC =			${LOCALBASE}/bin/bison -y
 CONFIGURE_ENV =		ac_cv_prog_LEX="${LOCALBASE}/bin/gflex"
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build-aux
 
 .include <bsd.port.mk>
