@@ -29,5 +29,6 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS+=	--without-djvu
 FAKE_FLAGS =		sysconfdir=${PREFIX}/share/examples/apvlv
 USE_GROFF =		Yes
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/scripts
 
 .include <bsd.port.mk>
