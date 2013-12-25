@@ -1,5 +1,4 @@
 @comment $OpenBSD: PLIST-main,v 1.8 2011/12/22 09:47:50 ajacoutot Exp $
-%%SHARED%%
 @bin bin/cntraining
 @bin bin/combine_tessdata
 @bin bin/mftraining
@@ -276,6 +275,7 @@ include/tesseract/workingpartset.h
 include/tesseract/xform2d.h
 lib/libtesseract.a
 lib/libtesseract.la
+@lib lib/libtesseract.so.${LIBtesseract_VERSION}
 @man man/man1/cntraining.1
 @man man/man1/combine_tessdata.1
 @man man/man1/mftraining.1
