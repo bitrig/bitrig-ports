@@ -44,5 +44,6 @@ USE_GROFF =	Yes
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--disable-video --without-qt
 USE_GMAKE=		Yes
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
 
 .include <bsd.port.mk>
