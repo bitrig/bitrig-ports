@@ -3,7 +3,6 @@
 @conflict foomatic-db-gutenprint-*
 @pkgpath print/gutenprint,-foomatic
 @pkgpath print/gutenprint,-main
-%%SHARED%%
 @bin bin/cups-calibrate
 @bin bin/escputil
 @bin bin/ijsgutenprint.${MAJOR_V}
@@ -38,6 +37,7 @@ lib/gutenprint/${MAJOR_V}/
 lib/gutenprint/${MAJOR_V}/modules/
 lib/libgutenprint.a
 lib/libgutenprint.la
+@lib lib/libgutenprint.so.${LIBgutenprint_VERSION}
 lib/pkgconfig/gutenprint.pc
 @bin libexec/cups/driver/gutenprint.${MAJOR_V}
 @bin libexec/cups/filter/commandtocanon

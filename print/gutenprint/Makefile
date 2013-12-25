@@ -54,6 +54,7 @@ CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib" \
 			LIBS="-liconv -lintl" \
 			am_cv_prog_tar_ustar=plaintar
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/scripts
 
 .for i in DVIPS DB2PDF DVIPDF DB2PS DB2HTML DOXYGEN TEXI2HTML CONVERT
 CONFIGURE_ENV+=		ac_cv_path_$i=""
