@@ -21,7 +21,9 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=siproxd/}
 USE_LIBTOOL=	gnu
 
 CONFIGURE_STYLE=gnu
-CONFIGURE_ENV+=	LDFLAGS="-L${PREFIX}/lib"
+CONFIGURE_ENV+=	LDFLAGS='-L${PREFIX}/lib -L${LOCALBASE}/lib' \
+		CPPFLAGS='-I${LOCALBASE}/include'
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/scripts ${WRKSRC}/libltdl
 
 LIB_DEPENDS=	telephony/libosip2 \
 		devel/libtool,-ltdl
