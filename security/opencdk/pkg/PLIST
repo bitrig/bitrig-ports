@@ -3,6 +3,7 @@ bin/opencdk-config
 include/opencdk.h
 lib/libopencdk.a
 lib/libopencdk.la
+@lib lib/libopencdk.so.${LIBopencdk_VERSION}
 lib/pkgconfig/
 lib/pkgconfig/opencdk.pc
 share/doc/opencdk/
@@ -29,4 +30,3 @@ share/examples/opencdk/t-stream.c
 share/examples/opencdk/testpa.c
 share/examples/opencdk/ts.gpg
 share/examples/opencdk/wkold.gpg
-%%SHARED%%

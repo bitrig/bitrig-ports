@@ -36,6 +36,7 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--with-libgcrypt-prefix=${LOCALBASE}
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/opencdk
