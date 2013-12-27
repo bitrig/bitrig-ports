@@ -25,6 +25,7 @@ CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--enable-fortran=no \
 		--enable-test=yes
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
 
 TESTS=	copy write writecompressed writecell readslab \
 	writeslab writesparse writenan writeinf readslab4 ind2sub sub2ind \
