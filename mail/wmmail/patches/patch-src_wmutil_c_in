@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/wmutil.c.in.orig	Fri Dec 27 11:15:57 2013
++++ src/wmutil.c.in	Fri Dec 27 11:16:02 2013
+@@ -114,7 +114,7 @@ void *wrealloc(void *ptr, size_t newsize)
+ }
+ 
+ 
+-inline void wfree(void *ptr)
++void wfree(void *ptr)
+ {
+   if (ptr != NULL)
+     free(ptr);

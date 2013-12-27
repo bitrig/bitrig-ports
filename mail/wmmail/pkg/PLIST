@@ -51,4 +51,4 @@ GNUstep/Apps/WMMail.app/Sounds/doorbell.au
 GNUstep/Apps/WMMail.app/Sounds/drip.au
 GNUstep/Apps/WMMail.app/Sounds/hammer.au
 GNUstep/Apps/WMMail.app/Sounds/monkey.au
-GNUstep/Apps/WMMail.app/WMMail
+@bin GNUstep/Apps/WMMail.app/WMMail

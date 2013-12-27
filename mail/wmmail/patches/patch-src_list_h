@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/list.h.orig	Fri Dec 27 11:16:10 2013
++++ src/list.h	Fri Dec 27 11:19:32 2013
+@@ -29,7 +29,7 @@ Boston, MA 02111-1307, USA.  */
+ #ifndef __LIST_H_
+ #define __LIST_H_
+ 
+-#if defined(__GNUC__) && !defined(__STRICT_ANSI__)
++#if defined(__GNUC__) && !defined(__STRICT_ANSI__) && !(__STDC_VERSION__ >= 199901L)
+ # define INLINE inline
+ #else
+ # define INLINE
