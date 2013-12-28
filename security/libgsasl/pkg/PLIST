@@ -1,10 +1,10 @@
 @comment $OpenBSD: PLIST,v 1.2 2012/07/12 16:01:53 sebastia Exp $
-%%SHARED%%
 include/gsasl-compat.h
 include/gsasl-mech.h
 include/gsasl.h
 lib/libgsasl.a
 lib/libgsasl.la
+@lib lib/libgsasl.so.${LIBgsasl_VERSION}
 lib/pkgconfig/
 lib/pkgconfig/libgsasl.pc
 share/locale/en@boldquot/LC_MESSAGES/libgsasl.mo

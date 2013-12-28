@@ -25,5 +25,6 @@ LIB_DEPENDS +=	security/libgpg-error
 
 SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
 
 .include <bsd.port.mk>
