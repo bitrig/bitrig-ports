@@ -47,4 +47,6 @@ CONFIGURE_ARGS =	--with-libsoup \
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC} ${WRKSRC}/protocol/liblivejournal
+
 .include <bsd.port.mk>
