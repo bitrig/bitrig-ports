@@ -6,13 +6,13 @@ DISTNAME=	libmikmod-3.2.0
 SHARED_LIBS +=	mikmod               3.0      # .3.0
 CATEGORIES=	audio devel
 
-HOMEPAGE=	http://mikmod.shlomifish.org/
+HOMEPAGE=	http://mikmod.sourceforge.net/
 
 MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=	${HOMEPAGE}files/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mikmod/}
 
 WANTLIB=	m sndio
 
