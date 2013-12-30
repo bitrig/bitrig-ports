@@ -3,9 +3,9 @@
 COMMENT =	module audio player
 DISTNAME =	mikmod-3.2.2
 CATEGORIES =	audio
-REVISION =	1
+REVISION =	2
 
-HOMEPAGE =	http://mikmod.shlomifish.org/
+HOMEPAGE=	http://mikmod.sourceforge.net/
 
 MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
@@ -14,7 +14,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c m mikmod ncurses pthread sndio
 
-MASTER_SITES =	${HOMEPAGE}/files/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mikmod/}
 
 CONFIGURE_STYLE =	gnu
 
