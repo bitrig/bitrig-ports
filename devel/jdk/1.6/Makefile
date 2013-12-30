@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.50 2013/11/25 14:16:22 sthen Exp $
+# $OpenBSD: Makefile,v 1.51 2013/12/30 23:21:41 sthen Exp $
 
 CC = gcc
 CXX = g++
 
 SHARED_ONLY=	Yes
 ONLY_FOR_ARCHS=	amd64 i386
+BROKEN-i386=	guarantee(get_thread() == thread) failed: must be the same thread, quickly
 
 COMMENT-main=	Java2(TM) SE Dev Kit v${VERSION}
 COMMENT-jre=	Java2(TM) SE Runtime Environment v${VERSION}
