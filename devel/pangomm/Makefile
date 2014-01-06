@@ -31,5 +31,6 @@ LIB_DEPENDS =		devel/pango \
 
 CONFIGURE_STYLE=	gnu
 MODGNOME_CPPFLAGS=	-I${X11BASE}/include
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
 
 .include <bsd.port.mk>
