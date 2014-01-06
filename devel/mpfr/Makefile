@@ -2,8 +2,8 @@
 
 COMMENT=	library for multiple-precision floating-point computations
 
-DISTNAME=	mpfr-3.1.0
-PKGNAME=	${DISTNAME}.3# patch level
+DISTNAME=	mpfr-3.1.2
+PKGNAME=	${DISTNAME}.5# patch level
 SHARED_LIBS=	mpfr		1.1	# 5.0
 CATEGORIES=	devel math
 HOMEPAGE=	http://www.mpfr.org/
@@ -15,7 +15,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${HOMEPAGE}${DISTNAME}/
 DIST_SUBDIR=	${DISTNAME}
-.for i in 01 02 03
+.for i in 01 02 03 04 05
 PATCHFILES+=	patch$i
 .endfor
 PATCH_DIST_STRIP=-p1
