@@ -4,6 +4,7 @@ include/gmpxx.h
 @info info/gmp.info
 lib/libgmp.a
 lib/libgmp.la
-%%SHARED%%
+@lib lib/libgmp.so.${LIBgmp_VERSION}
 lib/libgmpxx.a
 lib/libgmpxx.la
+@lib lib/libgmpxx.so.${LIBgmpxx_VERSION}
