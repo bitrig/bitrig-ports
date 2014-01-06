@@ -39,7 +39,7 @@ LIB_DEPENDS =		devel/boost \
 # wow, forgot to change version?
 WRKDIST =		${WRKDIR}/CGAL-3.8
 
-CFLAGS +=		-I${X11BASE}/include
+CXXFLAGS +=		-I${X11BASE}/include
 
 CONFIGURE_ARGS +=	-DCGAL_INSTALL_MAN_DIR="man/man1"
 CONFIGURE_ENV =		LDFLAGS="-L${X11BASE}/lib"
