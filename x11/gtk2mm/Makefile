@@ -38,5 +38,6 @@ SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--enable-static \
 		--disable-dependency-tracking
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
 
 .include <bsd.port.mk>
