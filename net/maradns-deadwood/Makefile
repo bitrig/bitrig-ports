@@ -2,7 +2,7 @@
 
 COMMENT=	recursive DNS resolver
 
-DISTNAME=	deadwood-3.2.03c
+DISTNAME=	deadwood-3.2.04
 PKGNAME=	${DISTNAME:S/^/maradns-/}
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	net
@@ -19,9 +19,6 @@ MASTER_SITES=	http://www.maradns.org/deadwood/stable/ \
 
 MAKE_FLAGS=	FLAGS="${CFLAGS} -DIPV6" CC="${CC}"
 WRKSRC=		${WRKDIST}/src
-
-post-extract:
-	rm ${WRKSRC}/*.orig
 
 do-configure:
 	cd ${WRKSRC}; perl -pi -e 's,/etc/,${SYSCONFDIR}/,g' DwMararc.h DwMain.c
