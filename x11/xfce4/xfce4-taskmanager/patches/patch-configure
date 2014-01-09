@@ -1,7 +1,7 @@
-$OpenBSD: patch-configure,v 1.1.1.1 2010/06/14 19:54:29 landry Exp $
---- configure.orig	Mon Jun 14 05:02:27 2010
-+++ configure	Thu Sep  5 00:58:02 2013
-@@ -4792,7 +4792,7 @@ else
+$OpenBSD$
+--- configure.orig	Sat Jan 11 20:41:56 2014
++++ configure	Sat Jan 11 20:42:41 2014
+@@ -4924,7 +4924,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -10,7 +10,7 @@ $OpenBSD: patch-configure,v 1.1.1.1 2010/06/14 19:54:29 landry Exp $
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5223,7 +5223,7 @@ newos6*)
+@@ -5439,7 +5439,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -19,16 +19,16 @@ $OpenBSD: patch-configure,v 1.1.1.1 2010/06/14 19:54:29 landry Exp $
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -5607,7 +5607,7 @@ old_postuninstall_cmds=
+@@ -6056,7 +6056,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
 -  openbsd*)
 +  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -8117,7 +8117,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8815,7 +8815,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -37,7 +37,7 @@ $OpenBSD: patch-configure,v 1.1.1.1 2010/06/14 19:54:29 landry Exp $
      with_gnu_ld=no
      ;;
    esac
-@@ -8914,7 +8914,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -9691,7 +9691,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -46,7 +46,7 @@ $OpenBSD: patch-configure,v 1.1.1.1 2010/06/14 19:54:29 landry Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -9906,7 +9906,7 @@ newsos6)
+@@ -10734,7 +10734,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -55,7 +55,16 @@ $OpenBSD: patch-configure,v 1.1.1.1 2010/06/14 19:54:29 landry Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -12925,7 +12925,7 @@ fi
+@@ -13078,7 +13078,7 @@ else
+ fi
+ 
+ 	    ;;
+-	    *-*-openbsd*)
++	    *-*-openbsd* | *-*-bitrig*)
+ 	    CATOBJEXT=.mo
+             DATADIRNAME=share
+ 	    ;;
+@@ -14193,7 +14193,7 @@ fi
  done
  
  		;;
@@ -64,12 +73,3 @@ $OpenBSD: patch-configure,v 1.1.1.1 2010/06/14 19:54:29 landry Exp $
  		ac_os_implementation="bsd"
  		for ac_header in err.h pwd.h stdlib.h string.h sys/param.h sys/sched.h \
  				sys/swap.h sys/sysctl.h sys/types.h unistd.h
-@@ -15568,7 +15568,7 @@ fi
- echo
- echo "Build Configuration:"
- echo
--echo "* Wnck:          ${WNCK_FOUND:-no} ${WNCK_VERSION:+(libwnck $WNCK_VERSION)}"
-+echo "* Wnck:          ${WNCK_FOUND:-no} ${WNCK_VERSION}"
- echo "* Target OS:     $target_os ($ac_os_implementation)"
- echo "* Debug Support: $enable_debug"
- echo
