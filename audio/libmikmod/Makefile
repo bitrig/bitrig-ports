@@ -5,6 +5,7 @@ COMMENT=	mikmod sound library
 DISTNAME=	libmikmod-3.2.0
 SHARED_LIBS +=	mikmod               3.0      # .3.0
 CATEGORIES=	audio devel
+REVISION=0
 
 HOMEPAGE=	http://mikmod.sourceforge.net/
 
