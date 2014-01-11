@@ -1,7 +1,7 @@
 $OpenBSD$
---- extra/yassl/taocrypt/include/misc.hpp.orig	Mon Mar 11 06:29:11 2013
-+++ extra/yassl/taocrypt/include/misc.hpp	Tue Jun  4 19:46:59 2013
-@@ -172,7 +172,7 @@ void CleanUp();
+--- extra/yassl/taocrypt/include/misc.hpp.orig	Mon Dec 23 10:35:04 2013
++++ extra/yassl/taocrypt/include/misc.hpp	Mon Jan 13 20:22:45 2014
+@@ -176,7 +176,7 @@ void CleanUp();
  #endif
  
  

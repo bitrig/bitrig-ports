@@ -1,9 +1,9 @@
 $OpenBSD$
---- include/my_global.h.orig	Mon Mar 11 06:29:20 2013
-+++ include/my_global.h	Tue Jun  4 19:50:41 2013
-@@ -54,7 +54,7 @@
- #define USE_PRAGMA_INTERFACE
- #endif
+--- include/my_global.h.orig	Mon Dec 23 10:35:05 2013
++++ include/my_global.h	Mon Jan 13 20:22:45 2014
+@@ -50,7 +50,7 @@
+ #define _POSIX_THREAD_CPUTIME
+ #endif /* __CYGWIN__ */
  
 -#if defined(__OpenBSD__) && (OpenBSD >= 200411)
 +#if (defined(__OpenBSD__) && (OpenBSD >= 200411)) || defined(__Bitrig__)
