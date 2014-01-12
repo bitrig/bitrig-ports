@@ -1,7 +1,7 @@
 $OpenBSD: patch-gcc_configure,v 1.4 2013/06/07 07:54:23 pascal Exp $
---- gcc/configure.orig	Sun Nov 20 15:24:07 2011
-+++ gcc/configure	Wed Jul 25 09:48:01 2012
-@@ -12071,7 +12071,7 @@ else
+--- gcc/configure.orig	Mon Jan 14 17:35:23 2013
++++ gcc/configure	Mon Jan 13 20:47:18 2014
+@@ -12103,7 +12103,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -10,7 +10,7 @@ $OpenBSD: patch-gcc_configure,v 1.4 2013/06/07 07:54:23 pascal Exp $
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -12501,7 +12501,7 @@ newos6*)
+@@ -12533,7 +12533,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -19,7 +19,7 @@ $OpenBSD: patch-gcc_configure,v 1.4 2013/06/07 07:54:23 pascal Exp $
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -12885,7 +12885,7 @@ old_postuninstall_cmds=
+@@ -12917,7 +12917,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -28,7 +28,7 @@ $OpenBSD: patch-gcc_configure,v 1.4 2013/06/07 07:54:23 pascal Exp $
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
-@@ -15126,7 +15126,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -15158,7 +15158,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -37,7 +37,7 @@ $OpenBSD: patch-gcc_configure,v 1.4 2013/06/07 07:54:23 pascal Exp $
      with_gnu_ld=no
      ;;
    esac
-@@ -15919,7 +15919,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -15951,7 +15951,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -46,7 +46,7 @@ $OpenBSD: patch-gcc_configure,v 1.4 2013/06/07 07:54:23 pascal Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -16907,7 +16907,7 @@ newsos6)
+@@ -16939,7 +16939,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -64,7 +64,7 @@ $OpenBSD: patch-gcc_configure,v 1.4 2013/06/07 07:54:23 pascal Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
-@@ -18893,7 +18893,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+@@ -18925,7 +18925,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
  	ld_shlibs_CXX=no
  	;;
  
@@ -73,7 +73,7 @@ $OpenBSD: patch-gcc_configure,v 1.4 2013/06/07 07:54:23 pascal Exp $
  	if test -f /usr/libexec/ld.so; then
  	  hardcode_direct_CXX=yes
  	  hardcode_shlibpath_var_CXX=no
-@@ -20566,7 +20566,7 @@ newsos6)
+@@ -20598,7 +20598,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  

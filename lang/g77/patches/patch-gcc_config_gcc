@@ -1,6 +1,6 @@
-$OpenBSD: patch-gcc_config_gcc,v 1.4 2013/08/09 08:52:03 miod Exp $
+$OpenBSD: patch-gcc_config_gcc,v 1.5 2014/01/12 22:16:02 pascal Exp $
 --- gcc/config.gcc.orig	Sun Feb 24 16:51:55 2013
-+++ gcc/config.gcc	Sat Aug 10 20:43:56 2013
++++ gcc/config.gcc	Mon Jan 13 20:42:22 2014
 @@ -401,7 +401,7 @@ case $machine in
  		;;
  	esac
@@ -19,16 +19,17 @@ $OpenBSD: patch-gcc_config_gcc,v 1.4 2013/08/09 08:52:03 miod Exp $
  	tm_file="dbxelf.h elfos.h arm/openbsd1.h arm/elf.h arm/aout.h arm/arm.h openbsd.h ${tm_file}"
  	tm_file="${tm_file} exec-stack.h"
  	tmake_file="${tmake_file} arm/t-openbsd"
-@@ -1173,7 +1173,7 @@ i[34567]86-*-openbsd2* | i[34567]86-*-openbsd3.[0123])
+@@ -1173,7 +1173,8 @@ i[34567]86-*-openbsd2* | i[34567]86-*-openbsd3.[0123])
  	# we need collect2 until our bug is fixed...
  	use_collect2=yes
  	;;
 -i[34567]86-*-openbsd*)
 +i[34567]86-*-openbsd* | i[34567]86-*-bitrig*)
++	tm_defines="${tm_defines} PIE_DEFAULT=1"
  	# needed to unconfuse gdb
  	tmake_file="t-libc-ok t-openbsd i386/t-openbsd"
  	tm_file="${cpu_type}/${cpu_type}.h i386/unix.h i386/att.h dbxelf.h elfos.h"
-@@ -1182,7 +1182,7 @@ i[34567]86-*-openbsd*)
+@@ -1182,7 +1183,7 @@ i[34567]86-*-openbsd*)
  	gas=yes
  	gnu_ld=yes
    	;;
@@ -37,7 +38,7 @@ $OpenBSD: patch-gcc_config_gcc,v 1.4 2013/08/09 08:52:03 miod Exp $
  	tm_defines="${tm_defines} PIE_DEFAULT=1"
  	tm_file="i386/biarch64.h i386/i386.h i386/unix.h i386/att.h dbxelf.h elfos.h openbsd.h openbsd-libpthread.h i386/x86-64.h i386/openbsd64.h"
  	tm_file="${tm_file} exec-stack.h"
-@@ -2780,10 +2780,13 @@ vax-*-netbsd*)
+@@ -2780,10 +2781,13 @@ vax-*-netbsd*)
  	use_collect2=yes
  	;;
  vax-*-openbsd*)
