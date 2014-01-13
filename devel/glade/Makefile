@@ -45,6 +45,7 @@ MODGNOME_ICON_CACHE=	Yes
 MODGNOME_TOOLS= gi yelp
 
 CONFIGURE_STYLE=	gnu
+CONFIGURE_ARGS=		--enable-compile-warnings=minimum
 MODGNOME_CPPFLAGS=	-pthread
 MODGNOME_LDFLAGS=	-pthread -lutil
 
