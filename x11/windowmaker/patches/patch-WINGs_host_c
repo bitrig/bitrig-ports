@@ -1,0 +1,12 @@
+$OpenBSD$
+--- WINGs/host.c.orig	Mon Jan 13 18:12:01 2014
++++ WINGs/host.c	Mon Jan 13 18:12:19 2014
+@@ -97,7 +97,7 @@ getHostWithHostEntry(struct hostent *host, char *name)
+         if (!hostCache)
+             hostCache = WMCreateHashTable(WMStringPointerHashCallbacks);
+         hPtr->name = wstrdup(name);
+-        wassertr(WMHashInsert(hostCache, hPtr->name, hPtr)==NULL);
++        wassertrv(WMHashInsert(hostCache, hPtr->name, hPtr)==NULL, NULL);
+         hPtr->refCount++;
+     }
+ 

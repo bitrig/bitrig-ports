@@ -1,0 +1,21 @@
+$OpenBSD$
+--- WINGs/proplist.c.orig	Mon Jan 13 18:45:42 2014
++++ WINGs/proplist.c	Mon Jan 13 18:46:09 2014
+@@ -1220,7 +1220,7 @@ WMMergePLDictionaries(WMPropList *dest, WMPropList *so
+     WMPropList *key, *value, *dvalue;
+     WMHashEnumerator e;
+ 
+-    wassertr(source->type==WPLDictionary && dest->type==WPLDictionary);
++    wassertrv(source->type==WPLDictionary && dest->type==WPLDictionary, NULL);
+ 
+     if (source == dest)
+         return dest;
+@@ -1249,7 +1249,7 @@ WMSubtractPLDictionaries(WMPropList *dest, WMPropList 
+     WMPropList *key, *value, *dvalue;
+     WMHashEnumerator e;
+ 
+-    wassertr(source->type==WPLDictionary && dest->type==WPLDictionary);
++    wassertrv(source->type==WPLDictionary && dest->type==WPLDictionary, NULL);
+ 
+     if (source == dest) {
+         WMPropList *keys = WMGetPLDictionaryKeys(dest);
