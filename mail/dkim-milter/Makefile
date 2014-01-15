@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.37 2013/10/23 16:33:20 jca Exp $
+# $OpenBSD: Makefile,v 1.38 2014/01/15 00:20:42 sthen Exp $
 
 COMMENT=	DKIM milter
 
 DISTNAME=	dkim-milter-2.8.3
-REVISION =	2
+REVISION=	3
 CATEGORIES=	mail
 HOMEPAGE=	http://sourceforge.net/projects/dkim-milter/
 
@@ -21,7 +21,6 @@ RUN_DEPENDS=	mail/sendmail
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
 EXAMPLESDIR=	share/examples/dkim-milter
-USE_GROFF =	Yes
 
 post-extract:
 	@cp ${WRKDIST}/devtools/OS/OpenBSD ${WRKDIST}/devtools/OS/Bitrig
@@ -29,6 +28,7 @@ post-extract:
 post-configure:
 	@(echo "define(\`confCC', \`${CC} ${LDFLAGS} -L${LOCALBASE}/lib')"; \
 	  echo "define(\`confOPTIMIZE', \`${CFLAGS} -I${LOCALBASE}/include')") \
+	  echo "define(\`confNO_MAN_BUILD')") \
 		>${WRKSRC}/devtools/Site/site.config.m4
 
 do-install:
