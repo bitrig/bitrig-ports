@@ -47,6 +47,6 @@ $OpenBSD: patch-dmassage,v 1.3 2014/01/07 17:41:23 sthen Exp $
 +
 +Additionally, note that using a custom kernel is unsupported.
 +If reporting any OS bugs, be sure to verify that they still occur
-+with GENERIC or GENERIC.MP.
++with GENERIC or GENERIC.SP.
  
  =cut
