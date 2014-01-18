@@ -29,5 +29,6 @@ CONFIGURE_ARGS+=	--with-xkb-base="${X11BASE}/share/X11/xkb/" \
 			--with-xkb-bin-base="${X11BASE}/bin/" \
 			--with-xmodmap-base="/usr/share/xmodmap"
 MODGNOME_CPPFLAGS=	-I${X11BASE}/include
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
 
 .include <bsd.port.mk>
