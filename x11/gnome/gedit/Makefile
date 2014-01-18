@@ -45,7 +45,8 @@ MODGNOME_DESKTOP_FILE=	Yes
 LIBTOOL_FLAGS=		--tag=disable-static
 
 CONFIGURE_ARGS=		--disable-static \
-			--disable-updater
+			--disable-updater \
+			--enable-compile-warnings=minimum
 
 TEST_IS_INTERACTIVE=	X11
 
