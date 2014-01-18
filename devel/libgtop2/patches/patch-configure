@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.19 2013/11/26 12:01:19 sthen Exp $
 --- configure.orig	Mon Aug 19 22:31:42 2013
-+++ configure	Mon Aug 26 10:23:43 2013
++++ configure	Sat Jan 18 09:56:55 2014
 @@ -7120,10 +7120,12 @@ newos6*)
    ;;
  
@@ -17,6 +17,24 @@ $OpenBSD: patch-configure,v 1.19 2013/11/26 12:01:19 sthen Exp $
    fi
    ;;
  
+@@ -13226,7 +13228,7 @@ $as_echo_n "checking for libgtop sysdeps directory... 
+ 	  libgtop_need_server=yes
+ 	  libgtop_postinstall='chgrp kmem $(bindir)/libgtop_server2 && chmod 2755 $(bindir)/libgtop_server2'
+ 	  ;;
+-	openbsd*)
++	openbsd*|bitrig*)
+ 	  libgtop_sysdeps_dir=openbsd
+ 	  libgtop_use_machine_h=yes
+ 	  libgtop_need_server=yes
+@@ -13306,7 +13308,7 @@ $as_echo "$libgtop_sysdeps_dir" >&6; }
+ 
+ 
+ 	case "$host_os" in
+-	*bsd*)
++	*bsd*|bitrig*)
+ 	  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for kvm_open in -lkvm" >&5
+ $as_echo_n "checking for kvm_open in -lkvm... " >&6; }
+ if ${ac_cv_lib_kvm_kvm_open+:} false; then :
 @@ -16385,11 +16387,6 @@ glib_save_datarootdir="$datarootdir"
  test "x$prefix" = xNONE && prefix=$ac_default_prefix
  test "x$exec_prefix" = xNONE && exec_prefix=$prefix

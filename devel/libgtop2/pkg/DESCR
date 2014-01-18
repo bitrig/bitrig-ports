@@ -1,5 +1,5 @@
-LibGTop is a library for obtaining information about processes and the system.
-This includes information about the following areas:
+LibGTop is a library for obtaining information about processes and the
+system. This includes information about the following areas:
 
 * General System Information
 * SYS V IPC Limits:
