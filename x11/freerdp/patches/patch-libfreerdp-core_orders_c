@@ -1,0 +1,30 @@
+$OpenBSD$
+--- libfreerdp-core/orders.c.orig	Sat Jan 18 19:21:16 2014
++++ libfreerdp-core/orders.c	Sat Jan 18 19:21:59 2014
+@@ -316,7 +316,7 @@ INLINE void update_seek_glyph_delta(STREAM* s)
+ 		stream_seek_uint8(s);
+ }
+ 
+-INLINE void update_read_brush(STREAM* s, rdpBrush* brush, uint8 fieldFlags)
++static INLINE void update_read_brush(STREAM* s, rdpBrush* brush, uint8 fieldFlags)
+ {
+ 	if (fieldFlags & ORDER_FIELD_01)
+ 		stream_read_uint8(s, brush->x);
+@@ -354,7 +354,7 @@ INLINE void update_read_brush(STREAM* s, rdpBrush* bru
+ 	}
+ }
+ 
+-INLINE void update_read_delta_rects(STREAM* s, DELTA_RECT* rectangles, int number)
++static INLINE void update_read_delta_rects(STREAM* s, DELTA_RECT* rectangles, int number)
+ {
+ 	int i;
+ 	uint8 flags = 0;
+@@ -399,7 +399,7 @@ INLINE void update_read_delta_rects(STREAM* s, DELTA_R
+ 	}
+ }
+ 
+-INLINE void update_read_delta_points(STREAM* s, DELTA_POINT* points, int number, sint16 x, sint16 y)
++static INLINE void update_read_delta_points(STREAM* s, DELTA_POINT* points, int number, sint16 x, sint16 y)
+ {
+ 	int i;
+ 	uint8 flags = 0;
