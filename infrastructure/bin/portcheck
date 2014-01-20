@@ -1163,7 +1163,6 @@ check_files_dir() {
 }
 
 # Checks made:
-#   * Each patch contains OpenBSD RCS tag.
 #   * Directory is not empty and consists only of plain files starting
 #     with 'patch-' and not ending with '.orig'.
 check_patches_dir() {
@@ -1183,8 +1182,6 @@ check_patches_dir() {
 		empty=false
 		test -f "$F" ||
 			err "$F is not a file"
-		$rootrun || head -n 1 -- "$F" | egrep -q '^\$OpenBSD.*\$$' ||
-			err "$F does not have \$OpenBSD\$ RCS tag at the top"
 		;;
 
 	*)
@@ -1197,8 +1194,7 @@ check_patches_dir() {
 
 # Checks made:
 #   * Directory is not empty and consist only of plain files with fixed names.
-#   * PFRAG, PLIST, README and .rc files contain appropriate OpenBSD RCS
-#     tags; other files should NOT contain OpenBSD RCS tag.
+#   * DESCR, MESSAGE and UNMESSAGE do not contain OpenBSD RCS tags.
 #   * PFRAG.shared should be merged in PLIST if it contains @lib items only.
 #   * No trailing whitespace for DESCR, MESSAGE, README, UNMESSAGE and
 #     .rc files (PLIST and PFRAG are better checked with "make package").
@@ -1266,9 +1262,6 @@ check_pkg_dir() {
 		check_newline_at_eof "$F"
 		check_long_lines 80 "$F"
 		check_hardcoded "$F"
-		head -n 1 -- "$F" |
-			egrep -q '^(#[[:space:]]*)?\$OpenBSD(:.*)?\$$' ||
-			err "$F does not have \$OpenBSD\$ RCS tag at the top"
 		;;
 
 	*.rc)
@@ -1277,9 +1270,6 @@ check_pkg_dir() {
 		check_trailing_whitespace "$F"
 		check_long_lines 80 "$F"
 		check_hardcoded "$F"
-		head -n 5 -- "$F" |
-			egrep -q '^#[[:space:]]*\$OpenBSD(:.*)?\$$' ||
-			err "$F does not have \$OpenBSD\$ RCS tag at the top"
 		;;
 
 	MESSAGE?(-*)|UNMESSAGE?(-*))
@@ -1327,16 +1317,12 @@ check_long_lines() {
 }
 
 # Checks made:
-#   * There is an OpenBSD RCS tag at the top.
 #   * No items with ${FULLPKGNAME} are allowed, except readme.
 check_plist_file() {
 	$debugging && echo "CALLED: check_plist_file($*)" >&2
 
 	[[ -f $1 ]] ||
 		err "$1 is not a file"
-	head -n 1 -- "$1" |
-		egrep -q '^@comment \$OpenBSD.*\$$' ||
-		err "$1 does not have \$OpenBSD\$ RCS tag at the top"
 
 	# Do not match just '${FULLPKGNAME}' because many ports use the
 	# following trick:
@@ -1362,7 +1348,6 @@ check_subst_vars() {
 }
 
 # Checks made:
-#   * Contains OpenBSD RCS tag at the top line.
 #   * No REVISION marks present in given file (unless in update mode).
 #   * Each REVISION mark presents only once.
 #   * BUILD_DEPENDS and MODULES are not defined in VAR-subpkg manner.
@@ -1375,9 +1360,6 @@ check_makefile() {
 	local F="$1"
 	check_trailing_whitespace "$F"
 	check_long_lines 80 "$F"
-	head -n 1 -- "$F" |
-		egrep -q '^#[[:space:]]*\$OpenBSD.*\$' ||
-		err "$F does not have \$OpenBSD\$ RCS tag at the top"
 
 	local iflevel=0 l lnum=0 revs= t r mkvars= var dupfound
 	# do not unset mkvars, having empty element(-s) is fine
