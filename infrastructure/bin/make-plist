@@ -1058,9 +1058,6 @@ for my $plist (@l) {
 		$orig->copy_annotations($plist);
 		$orphans->clone_tags($plist);
 	}
-	if (!$plist->has('cvstags')) {
-	    OpenBSD::PackingElement::CVSTag->add($plist, '$OpenBSD'.'$');
-	}
 }
 
 print "Sorting out destdir files\n";
