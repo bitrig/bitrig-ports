@@ -80,8 +80,7 @@ do
     # Build a sensible name for the patch file
     patchname=patch-`echo $file|sed -e s,[\ /.],_,g`
     echo 1>&2 "No patch-* found for $file, creating $patchname"
-    { echo "$"OpenBSD$; \
-	(cd "$WRKDIST" && diff -u -p -a ${DIFF_ARGS} "$file$PATCHORIG" "$file") }>$patchname
+    (cd "$WRKDIST" && diff -u -p -a ${DIFF_ARGS} "$file$PATCHORIG" "$file") >$patchname
     edit="$edit $patchname"
     accounted="$accounted $patchname"
 done
