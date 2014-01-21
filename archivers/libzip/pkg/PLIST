@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.4 2013/04/04 16:03:55 brad Exp $
+@comment $OpenBSD: PLIST,v 1.5 2014/01/21 22:27:34 jca Exp $
 @bin bin/zipcmp
 @bin bin/zipmerge
 @bin bin/ziptorrent
@@ -39,9 +39,11 @@ lib/pkgconfig/libzip.pc
 @man man/man3/zip_file_extra_fields_count.3
 @man man/man3/zip_file_extra_fields_count_by_id.3
 @man man/man3/zip_file_get_comment.3
+@man man/man3/zip_file_get_external_attributes.3
 @man man/man3/zip_file_rename.3
 @man man/man3/zip_file_replace.3
 @man man/man3/zip_file_set_comment.3
+@man man/man3/zip_file_set_external_attributes.3
 @man man/man3/zip_file_strerror.3
 @man man/man3/zip_fopen.3
 @man man/man3/zip_fopen_encrypted.3
