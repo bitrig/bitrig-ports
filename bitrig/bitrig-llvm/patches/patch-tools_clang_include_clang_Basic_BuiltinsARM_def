@@ -1,0 +1,12 @@
+$OpenBSD$
+--- tools/clang/include/clang/Basic/BuiltinsARM.def.orig	Sat May 28 00:11:33 2011
++++ tools/clang/include/clang/Basic/BuiltinsARM.def	Wed Jan 22 08:39:25 2014
+@@ -15,7 +15,7 @@
+ // The format of this database matches clang/Basic/Builtins.def.
+ 
+ // In libgcc
+-BUILTIN(__clear_cache, "v.", "")
++BUILTIN(__clear_cache, "v.", "i")
+ BUILTIN(__builtin_thread_pointer, "v*", "")
+ 
+ // Saturating arithmetic

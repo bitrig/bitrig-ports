@@ -1,0 +1,12 @@
+$OpenBSD$
+--- tools/clang/include/clang/Basic/Builtins.def.orig	Thu Jan 17 18:46:04 2013
++++ tools/clang/include/clang/Basic/Builtins.def	Wed Jan 22 08:39:25 2014
+@@ -70,6 +70,8 @@
+ //  f -> this is a libc/libm function without the '__builtin_' prefix. It can
+ //       be followed by ':headername:' to state which header this function
+ //       comes from.
++//  i -> this is a runtime library implemented function without the
++//       '__builtin_' prefix. It will be implemented in compiter-rt or libgcc.
+ //  p:N: -> this is a printf-like function whose Nth argument is the format
+ //          string.
+ //  P:N: -> similar to the p:N: attribute, but the function is like vprintf

@@ -1,0 +1,9 @@
+$OpenBSD$
+--- tools/clang/include/clang/Basic/BuiltinsAArch64.def.orig	Sat May  4 03:15:13 2013
++++ tools/clang/include/clang/Basic/BuiltinsAArch64.def	Wed Jan 22 08:39:25 2014
+@@ -15,4 +15,4 @@
+ // The format of this database matches clang/Basic/Builtins.def.
+ 
+ // In libgcc
+-BUILTIN(__clear_cache, "vv*v*", "")
++BUILTIN(__clear_cache, "vv*v*", "i")

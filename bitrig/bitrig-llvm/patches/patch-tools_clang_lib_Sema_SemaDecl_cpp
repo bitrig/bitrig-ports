@@ -1,0 +1,13 @@
+$OpenBSD$
+--- tools/clang/lib/Sema/SemaDecl.cpp.orig	Tue May 21 09:48:39 2013
++++ tools/clang/lib/Sema/SemaDecl.cpp	Wed Jan 22 08:39:25 2014
+@@ -8671,7 +8671,8 @@ Decl *Sema::ActOnStartOfFunctionDef(Scope *FnBodyScope
+ 
+   // Builtin functions cannot be defined.
+   if (unsigned BuiltinID = FD->getBuiltinID()) {
+-    if (!Context.BuiltinInfo.isPredefinedLibFunction(BuiltinID)) {
++    if (!Context.BuiltinInfo.isPredefinedLibFunction(BuiltinID) &&
++        !Context.BuiltinInfo.isPredefinedRuntimeFunction(BuiltinID)) {
+       Diag(FD->getLocation(), diag::err_builtin_definition) << FD;
+       FD->setInvalidDecl();
+     }
