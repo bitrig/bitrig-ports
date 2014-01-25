@@ -1,6 +1,6 @@
 $OpenBSD$
---- gas/config/tc-arm.c.orig	Mon Nov 21 04:29:31 2011
-+++ gas/config/tc-arm.c	Sun Dec  8 12:11:02 2013
+--- gas/config/tc-arm.c.orig	Mon Nov 21 10:29:31 2011
++++ gas/config/tc-arm.c	Sat Jan 25 03:17:30 2014
 @@ -108,7 +108,7 @@ enum arm_float_abi
  #ifndef FPU_DEFAULT
  # ifdef TE_LINUX
@@ -19,7 +19,32 @@ $OpenBSD$
    enum arm_reg_type rtype;
    parse_operand_result result;
    unsigned int op_parse_code;
-@@ -22429,8 +22429,8 @@ md_begin (void)
+@@ -16474,13 +16474,18 @@ check_it_blocks_finished (void)
+ #ifdef OBJ_ELF
+   asection *sect;
+ 
++
+   for (sect = stdoutput->sections; sect != NULL; sect = sect->next)
+-    if (seg_info (sect)->tc_segment_info_data.current_it.state
+-	== MANUAL_IT_BLOCK)
+-      {
+-	as_warn (_("section '%s' finished with an open IT block."),
+-		 sect->name);
+-      }
++  {
++	segment_info_type *seginfo = seg_info (sect);
++
++	if (seginfo && seginfo->tc_segment_info_data.current_it.state
++	    == MANUAL_IT_BLOCK)
++	{
++		as_warn (_("section '%s' finished with an open IT block."),
++		    sect->name);
++        }
++  }
+ #else
+   if (now_it.state == MANUAL_IT_BLOCK)
+     as_warn (_("file finished with an open IT block."));
+@@ -22429,8 +22434,8 @@ md_begin (void)
      }
    else if (!mfpu_opt)
      {
