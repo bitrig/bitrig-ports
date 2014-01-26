@@ -131,7 +131,7 @@ SH_ADJ_SCRIPTS =	texk/texlive/linked_scripts/typeoutfileinfo/typeoutfileinfo.sh 
 # Never set SEPARATE_BUILD
 CONFIGURE_STYLE =	gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
-MODGNU_CONFIG_GUESS_DIRS+= ${WRKSRC}/libs/icu/icu-49.1
+MODGNU_CONFIG_GUESS_DIRS+= ${WRKSRC}/libs/icu/icu-51.1/source
 
 # Don't put ${PREFIX}/include in CPPFLAGS or system icu .h's are picked up
 # TeX Live uses a modified version of icu.
@@ -199,6 +199,8 @@ CONFIGURE_ARGS +=	--mandir=${PREFIX}/man \
 			--with-t1lib-includes=${LOCALBASE}/include \
 			--with-xpdf-includes=${LOCALBASE}/include/poppler \
 			--with-xpdf-libdir=${LOCALBASE}/lib \
+			--with-iconv-include=${LOCALBASE}/include \
+			--with-iconv-libdir=${LOCALBASE}/lib \
 			--enable-texinfo=no \
 			--with-xdvi-x-toolkit=xaw \
 			--enable-texi2html=no \
@@ -211,7 +213,7 @@ CONFIGURE_ARGS +=	--mandir=${PREFIX}/man \
 			--with-old-mac-fonts \
 			--disable-multiplatform \
 			--disable-native-texlive-build \
-			--with-banner-add="-OpenBSD_Ports" \
+			--with-banner-add="-Bitrig_Ports" \
 			--with-system-xpdf #link poppler
 
 SUBST_VARS +=		TRUEPREFIX LOCALBASE

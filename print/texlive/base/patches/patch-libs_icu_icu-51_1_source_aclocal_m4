@@ -1,7 +1,7 @@
 $OpenBSD$
---- libs/icu/icu-49.1/configure.origy	Tue Feb 12 08:18:04 2013
-+++ libs/icu/icu-49.1/configure	Tue Feb 12 08:18:13 2013
-@@ -5082,7 +5082,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
+--- libs/icu/icu-51.1/source/aclocal.m4.origy	Thu Mar  7 14:41:10 2013
++++ libs/icu/icu-51.1/source/aclocal.m4	Sat Jan 25 21:35:46 2014
+@@ -43,7 +43,7 @@ powerpc*-*-linux*)
  	else
  		icu_cv_host_frag=mh-cygwin-msvc
  	fi ;;
