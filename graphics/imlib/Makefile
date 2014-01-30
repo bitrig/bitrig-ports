@@ -26,6 +26,8 @@ LIB_DEPENDS= 	x11/gtk+ \
 		graphics/png \
 		graphics/tiff
 
+CFLAGS+= -fgnu89-inline
+
 USE_GMAKE=	Yes
 SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE= gnu
