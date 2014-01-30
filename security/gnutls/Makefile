@@ -3,6 +3,7 @@
 COMMENT=	GNU Transport Layer Security library
 
 V=		3.2.8
+REVISION=	0
 DISTNAME=	gnutls-${V}
 EXTRACT_SUFX=	.tar.xz
 
@@ -37,11 +38,12 @@ USE_GMAKE=	Yes
 PORTHOME=	${WRKDIR}
 
 CONFIGURE_STYLE=gnu
-MODGNU_CONFIG_GUESS_DIRS=${WRKDIST} ${WRKDIST}/build-aux
+MODGNU_CONFIG_GUESS_DIRS=${WRKDIST}/build-aux
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--disable-gtk-doc \
 		--disable-guile \
-		--disable-valgrind-tests
+		--disable-valgrind-tests \
+		--enable-local-libopts
 
 # add dependency on net/unbound; see post-install as well
 CONFIGURE_ARGS += --disable-libdane
