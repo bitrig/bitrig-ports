@@ -33,4 +33,6 @@ WANTLIB +=	db>=4
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib/db4" \
 		CPPFLAGS="-I${LOCALBASE}/include/db4"
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/admin
+
 .include <bsd.port.mk>
