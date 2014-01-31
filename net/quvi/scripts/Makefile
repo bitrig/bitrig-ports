@@ -9,6 +9,7 @@ DISTNAME =	libquvi-scripts-${V}
 SUBST_VARS +=	V
 
 MODULES =	lang/lua
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/config.aux
 
 RUN_DEPENDS =	net/luasocket
 
