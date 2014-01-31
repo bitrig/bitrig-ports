@@ -27,7 +27,7 @@ post-extract:
 
 post-configure:
 	@(echo "define(\`confCC', \`${CC} ${LDFLAGS} -L${LOCALBASE}/lib')"; \
-	  echo "define(\`confOPTIMIZE', \`${CFLAGS} -I${LOCALBASE}/include')") \
+	  echo "define(\`confOPTIMIZE', \`${CFLAGS} -I${LOCALBASE}/include')"; \
 	  echo "define(\`confNO_MAN_BUILD')") \
 		>${WRKSRC}/devtools/Site/site.config.m4
 
