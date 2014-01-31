@@ -29,21 +29,15 @@ WANTLIB =	c m pthread stdc++ z
 
 MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
 
-DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} cfe-${LLVM_V}.src${EXTRACT_SUFX}
+DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
 DISTFILES +=	compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
-WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
+WRKDIST =	${WRKDIR}/llvm-${LLVM_V}
 
 MODULES =	devel/cmake \
 		lang/python
 
 TEST_DEPENDS =	devel/dejagnu
 BUILD_DEPENDS += textproc/py-sphinx
-
-MAKE_FLAGS =	OPTIMIZE_OPTION="${CFLAGS}" \
-		VERBOSE=Yes \
-		INSTALL="install -c"
-
-TEST_FLAGS =	RUNTESTFLAGS=
 
 SEPARATE_BUILD =	Yes
 
@@ -57,6 +51,8 @@ CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
 SUBST_VARS +=		CLANG_INCLUDE_PATH LLVM_V
+
+TEST_TARGET=		check
 
 TMPGIT = ${DISTDIR}/tmpgit
 
@@ -81,8 +77,8 @@ PKG_ARGS+=-Darm=0
 .endif
 
 post-extract:
-	@mv ${WRKDIR}/cfe-${LLVM_V}.src ${WRKDIST}/tools/clang
-	@mv ${WRKDIR}/compiler-rt-${LLVM_V}.src ${WRKDIST}/projects/compiler-rt
+	@mv ${WRKDIR}/clang-${LLVM_V} ${WRKDIST}/tools/clang
+	@mv ${WRKDIR}/compiler-rt-${LLVM_V} ${WRKDIST}/projects/compiler-rt
 
 pre-configure:
 	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/scan-build/scan-build
@@ -107,29 +103,5 @@ post-install:
 	    ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKBUILD}/lib/clang/${LLVM_V}/lib/bitrig/libclang_rt.${INSTALL_ARCH}.a \
 	    ${PREFIX}/lib/libclang_rt.${ARCH}.a
-
-git:
-	rm -rf ${DISTDIR}/llvm* ${DISTDIR}/cfe* ${DISTDIR}/compiler-rt*
-	@mkdir -p ${TMPGIT}
-	if test -d ${TMPGIT}/llvm-${LLVM_V}.src; then \
-		(cd ${TMPGIT}/llvm-${LLVM_V}.src && git pull) \
-	else \
-		(cd ${TMPGIT} && git clone -b release_34 http://llvm.org/git/llvm.git llvm-${LLVM_V}.src) \
-	fi
-	if test -d ${TMPGIT}/cfe-${LLVM_V}.src; then \
-		(cd ${TMPGIT}/cfe-${LLVM_V}.src && git pull) \
-	else \
-		(cd ${TMPGIT} && git clone -b release_34 http://llvm.org/git/clang.git cfe-${LLVM_V}.src) \
-	fi	
-	if test -d ${TMPGIT}/compiler-rt-${LLVM_V}.src; then \
-		(cd ${TMPGIT}/compiler-rt-${LLVM_V}.src && git pull) \
-	else \
-		(cd ${TMPGIT} && git clone -b release_34 http://llvm.org/git/compiler-rt.git compiler-rt-${LLVM_V}.src) \
-	fi
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/llvm-${LLVM_V}.src.tar.gz llvm-${LLVM_V}.src)
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/cfe-${LLVM_V}.src.tar.gz cfe-${LLVM_V}.src)
-	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/compiler-rt-${LLVM_V}.src.tar.gz compiler-rt-${LLVM_V}.src)
-	make makesum
-	rm -rf ${TMPGIT}
 
 .include <bsd.port.mk>

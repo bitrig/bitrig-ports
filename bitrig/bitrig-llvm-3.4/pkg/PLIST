@@ -319,6 +319,7 @@ include/clang/Frontend/Utils.h
 include/clang/Frontend/VerifyDiagnosticConsumer.h
 include/clang/FrontendTool/
 include/clang/FrontendTool/Utils.h
+include/clang/IDE/
 include/clang/Index/
 include/clang/Index/CommentToXML.h
 include/clang/Index/USRGeneration.h
