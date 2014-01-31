@@ -20,6 +20,8 @@ MODULES=	devel/gettext \
 		x11/gnome
 
 MODGNOME_TOOLS=	gi
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
+CFLAGS+= -Wno-error=format-nonliteral
 
 LIB_DEPENDS=	devel/glib2
 
