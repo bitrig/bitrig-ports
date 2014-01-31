@@ -1,0 +1,11 @@
+--- src/goabackend/goaproviderfactory.c.orig	Fri Jan 31 23:47:37 2014
++++ src/goabackend/goaproviderfactory.c	Fri Jan 31 23:52:28 2014
+@@ -114,7 +114,7 @@ goa_provider_factory_get_providers_finish (GoaProvider
+ {
+   GoaProviderFactoryClass *klass;
+ 
+-  g_return_if_fail (GOA_IS_PROVIDER_FACTORY (factory));
++  g_return_val_if_fail (GOA_IS_PROVIDER_FACTORY (factory), FALSE);
+ 
+   klass = GOA_PROVIDER_FACTORY_GET_CLASS (factory);
+   return klass->get_providers_finish (factory, out_providers, result, error);
