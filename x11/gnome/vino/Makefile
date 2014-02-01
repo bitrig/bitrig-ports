@@ -32,6 +32,7 @@ LIB_DEPENDS=		devel/libnotify \
 			x11/gnome/libsecret \
 			x11/gtk+3
 
+CFLAGS+=		-Wno-error=format-nonliteral
 MODGNOME_CPPFLAGS=	-I${X11BASE}/include
 
 FAKE_FLAGS=		sysconfdir=${PREFIX}/share/examples/vino
