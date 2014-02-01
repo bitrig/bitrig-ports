@@ -1,0 +1,20 @@
+--- gkr/gkr-backend.vala.orig	Sat Feb  1 18:38:27 2014
++++ gkr/gkr-backend.vala	Sat Feb  1 18:39:28 2014
+@@ -64,7 +64,7 @@ public class Backend: GLib.Object , Gcr.Collection, Se
+ 	private Gtk.ActionGroup _actions;
+ 
+ 	construct {
+-		return_if_fail(_instance == null);
++		return_val_if_fail(_instance == null, null);
+ 		Backend._instance = this;
+ 
+ 		this._actions = BackendActions.instance(this);
+@@ -154,7 +154,7 @@ public class Backend: GLib.Object , Gcr.Collection, Se
+ 	}
+ 
+ 	public static Backend instance() {
+-		return_if_fail(Backend._instance != null);
++		return_val_if_fail(Backend._instance != null, null);
+ 		return Backend._instance;
+ 	}
+ 
