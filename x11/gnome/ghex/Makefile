@@ -30,6 +30,8 @@ MODULES=		devel/dconf \
 
 LIB_DEPENDS=		x11/gtk+3
 
+CFLAGS+= -Wno-error=format-nonliteral
+
 MODGNOME_TOOLS= 	yelp
 MODGNOME_DESKTOP_FILE=	Yes
 MODGNOME_ICON_CACHE=	Yes
