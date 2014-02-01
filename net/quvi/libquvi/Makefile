@@ -23,5 +23,6 @@ MODLUA_SA=	Yes
 
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--with-manual
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config.aux
 
 .include <bsd.port.mk>
