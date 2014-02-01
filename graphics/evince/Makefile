@@ -44,6 +44,7 @@ WANTLIB += atk-bridge-2.0 atspi harfbuzz
 WANTLIB += gmodule-2.0 graphite2
 
 MODGNOME_TOOLS= gi yelp
+CFLAGS += -Wno-error=format-nonliteral
 
 LIB_DEPENDS=	x11/gtk+3
 
