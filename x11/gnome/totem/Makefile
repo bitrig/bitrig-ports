@@ -65,6 +65,8 @@ MODGNOME_DESKTOP_FILE=	Yes
 MODGNOME_ICON_CACHE=	Yes
 MODGNOME_TOOLS=		gi vala yelp
 
+CFLAGS+= -Wno-error=format-nonliteral
+
 LIBTOOL_FLAGS=		--tag=disable-static
 
 CONFIGURE_ARGS=		--disable-static
