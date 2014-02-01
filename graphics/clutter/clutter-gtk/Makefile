@@ -18,6 +18,7 @@ WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB += png pthread pthread-stubs xcb xcb-render xcb-shm z
 
 MODGNOME_TOOLS=		gi
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
 
 LIB_DEPENDS=		graphics/clutter/core>=${MAJOR} \
 			x11/gtk+3
