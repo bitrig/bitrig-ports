@@ -29,6 +29,8 @@ WANTLIB += xcb-shm z
 MODULES=	devel/gettext \
 		x11/gnome
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/scripts
+
 LIB_DEPENDS=	x11/gnome/libgnomecanvas \
 		x11/gtk2mm>=2.24.4
 
