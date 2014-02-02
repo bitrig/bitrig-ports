@@ -3,7 +3,7 @@
 COMMENT=	open video codec
 
 DISTNAME=	libtheora-1.1.1
-REVISION=	2
+REVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	http://downloads.xiph.org/releases/theora/
 EXTRACT_SUFX=	.tar.bz2

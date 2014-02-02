@@ -4,5 +4,6 @@ VERSION =		3.3
 PATCHLEVEL =		.3
 SHARED_LIBS =		python3.3m 0.0
 VERSION_SPEC =		>=3.3,<3.4
+REVISION =		0
 
 .include <bsd.port.mk>

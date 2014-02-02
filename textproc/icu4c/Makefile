@@ -8,6 +8,7 @@ CFLAGS+=		-O1 -fno-stack-protector
 COMMENT=		International Components for Unicode
 
 VERSION=		52.1
+REVISION=		0
 DISTNAME=		icu4c-${VERSION:S/./_/g}-src
 PKGNAME=		icu4c-${VERSION}
 SO_VERSION=		6.3

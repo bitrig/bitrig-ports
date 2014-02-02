@@ -1,7 +1,15 @@
 $OpenBSD: patch-configure_ac,v 1.8 2013/08/15 18:40:20 kili Exp $
---- configure.ac.orig	Mon Jul 29 19:10:39 2013
-+++ configure.ac	Sat Aug  3 22:05:07 2013
-@@ -569,6 +569,24 @@ AC_SUBST(POPPLER_GLIB_DISABLE_SINGLE_INCLUDES)
+--- configure.ac.orig	Thu Jan  2 15:55:24 2014
++++ configure.ac	Sun Feb  2 13:29:50 2014
+@@ -34,7 +34,6 @@ if test "x$GXX" = "xyes"; then
+       *-std=*)
+         ;;
+       *)
+-        CXXFLAGS="$CXXFLAGS -ansi"
+         ;;
+       esac
+     ;;
+@@ -569,6 +568,24 @@ AC_SUBST(POPPLER_GLIB_DISABLE_SINGLE_INCLUDES)
  
  GTK_DOC_CHECK([1.14],[--flavour no-tmpl])
  
@@ -26,7 +34,7 @@ $OpenBSD: patch-configure_ac,v 1.8 2013/08/15 18:40:20 kili Exp $
  dnl 
  dnl Try Qt4
  dnl
-@@ -601,7 +619,7 @@ AC_SUBST(POPPLER_QT4_LIBS)
+@@ -601,7 +618,7 @@ AC_SUBST(POPPLER_QT4_LIBS)
  AC_SUBST(POPPLER_QT4_TEST_LIBS)
  
  if test x$enable_poppler_qt4 = xyes; then
@@ -35,7 +43,23 @@ $OpenBSD: patch-configure_ac,v 1.8 2013/08/15 18:40:20 kili Exp $
    AC_MSG_CHECKING([for Qt4 moc])
    mocversion=`$MOCQT4 -v 2>&1`
    mocversiongrep=`echo $mocversion | grep "Qt 4"`
-@@ -856,6 +874,9 @@ glib/reference/Makefile
+@@ -815,13 +832,13 @@ if test "x$GCC" != xyes; then
+ fi
+ case "$enable_compile_warnings" in
+   no)	;;
+-  yes)	CXXFLAGS="-Wall -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-align -fno-exceptions -fno-check-new -fno-common $CXXFLAGS";
++  yes)	CXXFLAGS="-Wall -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-align -fno-exceptions -fno-common $CXXFLAGS";
+         CFLAGS="-Wall $CFLAGS" ;;
+   kde)	CXXFLAGS="-Wnon-virtual-dtor -Wno-long-long -Wundef \
+ 		-D_XOPEN_SOURCE=600 -D_BSD_SOURCE -Wcast-align \
+ 		-Wconversion -Wall -W -Wpointer-arith \
+ 		-Wwrite-strings -O2 -Wformat-security \
+-		-Wmissing-format-attribute -fno-exceptions -fno-check-new \
++		-Wmissing-format-attribute -fno-exceptions \
+ 		-fno-common $CXXFLAGS" ;;
+ esac
+ CXXFLAGS="-fPIC $CXXFLAGS";
+@@ -856,6 +873,9 @@ glib/reference/Makefile
  glib/reference/version.xml
  glib/demo/Makefile
  test/Makefile
@@ -45,7 +69,7 @@ $OpenBSD: patch-configure_ac,v 1.8 2013/08/15 18:40:20 kili Exp $
  qt4/Makefile
  qt4/src/Makefile
  qt4/tests/Makefile
-@@ -888,6 +909,7 @@ echo "Building poppler with support for:"
+@@ -888,6 +908,7 @@ echo "Building poppler with support for:"
  echo "  font configuration: $with_font_configuration"
  echo "  splash output:      $enable_splash_output"
  echo "  cairo output:       $use_cairo"

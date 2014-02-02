@@ -1,0 +1,12 @@
+--- configure.ac.orig	Sun Feb  2 13:37:50 2014
++++ configure.ac	Sun Feb  2 13:38:02 2014
+@@ -164,9 +164,6 @@ fi
+ if test x$GCC = xyes
+ then
+     CFLAGS="$CFLAGS -Wall -g -fno-strict-aliasing -Wno-unused -Wno-comment"
+-    if test ` $CC -dumpversion | sed -e 's/\(^.\).*/\1/'` = "4" ; then
+-        CFLAGS="$CFLAGS -fno-tree-ter"
+-    fi
+ fi
+ AC_DEFINE(NO_OL_COMPAT, 1, "No OL Compatability")
+ 

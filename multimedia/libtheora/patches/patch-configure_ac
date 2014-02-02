@@ -7,7 +7,7 @@ $OpenBSD: patch-configure_ac,v 1.1 2009/12/13 22:01:32 sthen Exp $
                  DEBUG="-g -Wall -Wno-parentheses -DDEBUG -D__NO_MATH_INLINES"
 -                CFLAGS="-Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops"
 -                PROFILE="-Wall -Wno-parentheses -pg -g -O3 -fno-inline-functions -DDEBUG";;
-+                CFLAGS="-Wall -Wno-parentheses -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops"
++                CFLAGS="-Wall -Wno-parentheses -fomit-frame-pointer -finline-functions -funroll-loops"
 +                PROFILE="-Wall -Wno-parentheses -pg -g -fno-inline-functions -DDEBUG";;
          esac
  fi

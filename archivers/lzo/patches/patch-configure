@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.1 2002/10/09 14:14:40 brad Exp $
---- configure.orig	Wed Oct  9 09:44:30 2002
-+++ configure	Wed Oct  9 09:45:01 2002
+--- configure.orig	Fri Jul 12 20:31:52 2002
++++ configure	Sun Feb  2 13:20:59 2014
 @@ -6024,7 +6024,7 @@ else
      hardcode_direct=yes
      hardcode_shlibpath_var=no
@@ -19,3 +19,12 @@ $OpenBSD: patch-configure,v 1.1 2002/10/09 14:14:40 brad Exp $
          hardcode_libdir_flag_spec='${wl}-rpath,$libdir'
          ;;
        esac
+@@ -12081,7 +12081,7 @@ if test "X$GCC" = Xyes; then
+       ;;
+   esac
+   if test "X$mfx_cv_prog_gcc_bug_schedule_insns" = Xyes; then
+-    CFLAGS="$CFLAGS -fno-schedule-insns -fno-schedule-insns2"
++    CFLAGS="$CFLAGS -fno-schedule-insns"
+   fi
+ fi
+ 

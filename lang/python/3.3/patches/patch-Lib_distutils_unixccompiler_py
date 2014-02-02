@@ -1,0 +1,11 @@
+--- Lib/distutils/unixccompiler.py.orig	Sun Feb  2 15:46:24 2014
++++ Lib/distutils/unixccompiler.py	Sun Feb  2 15:46:50 2014
+@@ -247,7 +247,7 @@ class UnixCCompiler(CCompiler):
+                 # No idea how --enable-new-dtags would be passed on to
+                 # ld if this system was using GNU ld.  Don't know if a
+                 # system like this even exists.
+-                return "-R" + dir
++                return "-Wl,--rpath=" + dir
+ 
+     def library_option(self, lib):
+         return "-l" + lib
