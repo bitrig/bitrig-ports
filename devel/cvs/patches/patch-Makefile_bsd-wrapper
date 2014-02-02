@@ -1,6 +1,6 @@
 $OpenBSD$
---- Makefile.bsd-wrapper.orig	Wed Nov 30 11:41:37 2011
-+++ Makefile.bsd-wrapper	Tue Sep 24 10:48:01 2013
+--- Makefile.bsd-wrapper.orig	Tue Aug  6 15:05:57 2013
++++ Makefile.bsd-wrapper	Sun Feb  2 00:04:58 2014
 @@ -2,6 +2,8 @@
  
  .include <bsd.own.mk>
@@ -10,7 +10,7 @@ $OpenBSD$
  MAN=	man/cvs.1 man/cvs.5 man/cvsbug.8 man/rcs2log.1
  GNUCFLAGS=	CC="${CC}" CFLAGS="${CFLAGS} ${COPTS}" CPP="${CPP}"
  CLEANFILES=	src/version.c lib/getdate.c lib/getdate.h macintosh/Makefile \
-@@ -38,8 +40,8 @@ config: .FORCE
+@@ -43,8 +45,8 @@ config: .FORCE
  		INSTALL_SCRIPT="${INSTALL} ${INSTALL_COPY}" \
  		ACLOCAL=true AUTOCONF=true AUTOMAKE=true AUTOHEADER=true \
  		MAKEINFO='makeinfo --no-split' \
@@ -21,7 +21,7 @@ $OpenBSD$
  
  config.status:
  	PATH="/bin:/usr/bin:/sbin:/usr/sbin" \
-@@ -47,8 +49,8 @@ config.status:
+@@ -52,8 +54,8 @@ config.status:
  		INSTALL_SCRIPT="${INSTALL} ${INSTALL_COPY}" \
  		ACLOCAL=true AUTOCONF=true AUTOMAKE=true AUTOHEADER=true \
  		MAKEINFO='makeinfo --no-split' \
@@ -32,7 +32,7 @@ $OpenBSD$
  
  .ifdef NOMAN
  maninstall:
-@@ -57,10 +59,10 @@ maninstall:
+@@ -62,10 +64,10 @@ maninstall:
  
  BEFOREMAN=config.status
  install: maninstall
