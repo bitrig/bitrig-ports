@@ -34,6 +34,7 @@ MODULES=		devel/gettext \
 			lang/python \
 			x11/gnome
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/gnome-pty-helper
 MODPY_RUNDEP=		No
 MULTI_PACKAGES= 	-main -python
 
