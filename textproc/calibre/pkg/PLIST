@@ -19,6 +19,9 @@ bin/lrfviewer
 bin/lrs2lrf
 bin/markdown-calibre
 bin/web2disk
+etc/
+etc/bash_completion.d/
+etc/bash_completion.d/calibre
 lib/calibre/
 lib/calibre/calibre/
 lib/calibre/calibre/__init__.py
@@ -2834,10 +2837,7 @@ share/applications/calibre-ebook-edit.desktop
 share/applications/calibre-ebook-viewer.desktop
 share/applications/calibre-gui.desktop
 share/applications/calibre-lrfviewer.desktop
-share/bash_completion.d/
 @sample ${SYSCONFDIR}/bash_completion.d/
-share/bash_completion.d/calibre
-@sample ${SYSCONFDIR}/bash_completion.d/calibre
 share/calibre/
 share/calibre/builtin_recipes.xml
 share/calibre/builtin_recipes.zip
