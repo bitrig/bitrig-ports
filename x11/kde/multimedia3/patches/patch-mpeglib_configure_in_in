@@ -4,7 +4,7 @@
    NetBSD)
      kde_mpeglib_compiles=yes
      ;;
-+  OpenBSD)
++  OpenBSD | Bitrig)
 +    kde_mpeglib_compiles=yes
 +    ;;
    Linux)
@@ -16,7 +16,7 @@
      AC_DEFINE(OS_Linux,1,[Define if you have linux pthread])
 +    ;;
 +
-+  OpenBSD)
++  OpenBSD | Bitrig)
 +    OS_TYPE="BSD"
 +    AC_CHECK_LIB(c_r, pthread_create, [LIBPTHREAD="-pthread"])
 +    AC_DEFINE(OS_BSD,1,[Define if you have BSD pthread])
