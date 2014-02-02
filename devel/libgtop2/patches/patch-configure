@@ -1,53 +1,79 @@
-$OpenBSD: patch-configure,v 1.19 2013/11/26 12:01:19 sthen Exp $
+$OpenBSD: patch-configure,v 1.20 2014/02/02 11:33:45 ajacoutot Exp $
 --- configure.orig	Mon Aug 19 22:31:42 2013
-+++ configure	Sat Jan 18 09:56:55 2014
-@@ -7120,10 +7120,12 @@ newos6*)
++++ configure	Mon Feb 10 21:00:28 2014
+@@ -6607,7 +6607,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -7119,7 +7119,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
    ;;
  
- openbsd*)
--  if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
--    lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-+  lt_cv_file_magic_cmd=/usr/bin/file
-+  lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
-+  if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`"; then
-+    lt_cv_deplibs_check_method='file_magic ELF [0-9][0-9]*-bit [LM]SB shared object'
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
--    lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|_pic\.a)$'
-+    lt_cv_deplibs_check_method='file_magic OpenBSD.* shared library'
-   fi
+@@ -7735,7 +7735,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
+@@ -10255,7 +10255,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   linux* | k*bsd*-gnu | gnu*)
+@@ -11135,7 +11135,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -12179,7 +12179,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
    ;;
  
-@@ -13226,7 +13228,7 @@ $as_echo_n "checking for libgtop sysdeps directory... 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -13226,7 +13226,7 @@ $as_echo_n "checking for libgtop sysdeps directory... 
  	  libgtop_need_server=yes
  	  libgtop_postinstall='chgrp kmem $(bindir)/libgtop_server2 && chmod 2755 $(bindir)/libgtop_server2'
  	  ;;
 -	openbsd*)
-+	openbsd*|bitrig*)
++	openbsd* | bitrig*)
  	  libgtop_sysdeps_dir=openbsd
  	  libgtop_use_machine_h=yes
  	  libgtop_need_server=yes
-@@ -13306,7 +13308,7 @@ $as_echo "$libgtop_sysdeps_dir" >&6; }
+@@ -16256,7 +16256,7 @@ else
+ fi
  
- 
- 	case "$host_os" in
--	*bsd*)
-+	*bsd*|bitrig*)
- 	  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for kvm_open in -lkvm" >&5
- $as_echo_n "checking for kvm_open in -lkvm... " >&6; }
- if ${ac_cv_lib_kvm_kvm_open+:} false; then :
-@@ -16385,11 +16387,6 @@ glib_save_datarootdir="$datarootdir"
- test "x$prefix" = xNONE && prefix=$ac_default_prefix
- test "x$exec_prefix" = xNONE && exec_prefix=$prefix
- datarootdir=`eval echo "${datarootdir}"`
--if test "x$CATOBJEXT" = "x.mo" ; then
--  localedir=`eval echo "${libdir}/locale"`
--else
--  localedir=`eval echo "${datadir}/locale"`
--fi
- prefix="$glib_save_prefix"
- exec_prefix="$glib_save_exec_prefix"
- datarootdir="$glib_save_datarootdir"
-@@ -17547,9 +17544,9 @@ else
+ 	    ;;
+-	    *-*-openbsd*)
++	    *-*-openbsd* | *-*-bitrig*)
+ 	    CATOBJEXT=.mo
+             DATADIRNAME=share
+ 	    ;;
+@@ -17547,9 +17547,9 @@ else
    cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
