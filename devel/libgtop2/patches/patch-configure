@@ -1,6 +1,6 @@
-$OpenBSD: patch-configure,v 1.20 2014/02/02 11:33:45 ajacoutot Exp $
+$OpenBSD$
 --- configure.orig	Mon Aug 19 22:31:42 2013
-+++ configure	Mon Feb 10 21:00:28 2014
++++ configure	Mon Feb 10 21:04:58 2014
 @@ -6607,7 +6607,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -73,14 +73,3 @@ $OpenBSD: patch-configure,v 1.20 2014/02/02 11:33:45 ajacoutot Exp $
  	    CATOBJEXT=.mo
              DATADIRNAME=share
  	    ;;
-@@ -17547,9 +17547,9 @@ else
-   cat confdefs.h - <<_ACEOF >conftest.$ac_ext
- /* end confdefs.h.  */
- 
-+#include <sys/param.h>
- #include <sys/types.h>
- #include <sys/mount.h>
--#include <sys/fs_types.h>
- int
- main ()
- {
