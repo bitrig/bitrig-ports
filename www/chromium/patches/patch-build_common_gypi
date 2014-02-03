@@ -1,6 +1,6 @@
 $OpenBSD: patch-build_common_gypi,v 1.20 2014/01/18 11:42:03 robert Exp $
---- build/common.gypi.orig.port	Thu Jan 16 12:28:43 2014
-+++ build/common.gypi	Thu Jan 16 12:49:12 2014
+--- build/common.gypi.orig.port	Mon Jan 13 21:59:33 2014
++++ build/common.gypi	Sat Feb  1 15:09:24 2014
 @@ -223,7 +223,7 @@
        'image_loader_extension%': 0,
  
@@ -52,16 +52,7 @@ $OpenBSD: patch-build_common_gypi,v 1.20 2014/01/18 11:42:03 robert Exp $
  
                # This warns about auto_ptr<>, used in third-party code.
                '-Wno-deprecated-declarations',
-@@ -4590,15 +4598,15 @@
-         ['OS=="android"', {
-           # Android could use the goma with clang.
-           'make_global_settings': [
--            ['CC', '<!(/bin/echo -n ${ANDROID_GOMA_WRAPPER} ${CHROME_SRC}/<(make_clang_dir)/bin/clang)'],
--            ['CXX', '<!(/bin/echo -n ${ANDROID_GOMA_WRAPPER} ${CHROME_SRC}/<(make_clang_dir)/bin/clang++)'],
-+            ['CC', '/usr/local/bin/clang'],
-+            ['CXX', '/usr/local/bin/clang++'],
-             ['CC.host', '$(CC)'],
-             ['CXX.host', '$(CXX)'],
+@@ -4597,8 +4605,8 @@
            ],
          }, {
            'make_global_settings': [
@@ -69,7 +60,6 @@ $OpenBSD: patch-build_common_gypi,v 1.20 2014/01/18 11:42:03 robert Exp $
 -            ['CXX', '<(make_clang_dir)/bin/clang++'],
 +            ['CC', '/usr/bin/clang'],
 +            ['CXX', '/usr/bin/clang++'],
-             ['LINK', '$(CXX)'],
              ['CC.host', '$(CC)'],
              ['CXX.host', '$(CXX)'],
            ],
