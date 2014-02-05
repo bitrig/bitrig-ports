@@ -1,7 +1,7 @@
 $OpenBSD$
---- tools/clang/lib/Basic/Targets.cpp.orig	Wed May 15 17:07:09 2013
-+++ tools/clang/lib/Basic/Targets.cpp	Thu Jul 18 23:22:06 2013
-@@ -406,6 +406,7 @@ class BitrigTargetInfo : public OSTargetInfo<Target> {
+--- tools/clang/lib/Basic/Targets.cpp.orig	Mon Dec  9 03:58:56 2013
++++ tools/clang/lib/Basic/Targets.cpp	Sat Feb  1 23:24:42 2014
+@@ -430,6 +430,7 @@ class BitrigTargetInfo : public OSTargetInfo<Target> {
      // Bitrig defines; list based off of gcc output
  
      Builder.defineMacro("__Bitrig__");
@@ -9,21 +9,21 @@ $OpenBSD$
      DefineStd(Builder, "unix", Opts);
      Builder.defineMacro("__ELF__");
      if (Opts.POSIXThreads)
-@@ -415,7 +416,7 @@ class BitrigTargetInfo : public OSTargetInfo<Target> {
-   BitrigTargetInfo(const std::string &triple)
-     : OSTargetInfo<Target>(triple) {
-       this->UserLabelPrefix = "";
--      this->TLSSupported = false;
-+      this->TLSSupported = true;
-       this->MCountName = "__mcount";
+@@ -438,7 +439,7 @@ class BitrigTargetInfo : public OSTargetInfo<Target> {
+ public:
+   BitrigTargetInfo(const llvm::Triple &Triple) : OSTargetInfo<Target>(Triple) {
+     this->UserLabelPrefix = "";
+-    this->TLSSupported = false;
++    this->TLSSupported = true;
+     this->MCountName = "__mcount";
    }
  };
-@@ -3533,7 +3534,7 @@ class ARMTargetInfo : public TargetInfo {
-     // the kernel which on armv6 and newer uses ldrex and strex. The net result
-     // is that if we assume the kernel is at least as recent as the hardware,
-     // it is safe to use atomic instructions on armv6 and newer.
--    if (T.getOS() != llvm::Triple::Linux)
-+    if (T.getOS() != llvm::Triple::Linux && T.getOS() != llvm::Triple::Bitrig)
-      return false;
-     StringRef ArchName = T.getArchName();
-     if (T.getArch() == llvm::Triple::arm) {
+@@ -5548,6 +5549,8 @@ static TargetInfo *AllocateTarget(const llvm::Triple &
+     switch (os) {
+     case llvm::Triple::Linux:
+       return new LinuxTargetInfo<AArch64TargetInfo>(Triple);
++    case llvm::Triple::Bitrig:
++      return new BitrigTargetInfo<AArch64TargetInfo>(Triple);
+     default:
+       return new AArch64TargetInfo(Triple);
+     }

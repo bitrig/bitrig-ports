@@ -6,18 +6,18 @@
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 DPB_PROPERTIES= parallel
 
-LLVM_V =	3.3
+LLVM_V =	3.4
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION =	9
+REVISION = 	8
 
 CATEGORIES =	bitrig
 
 # packager notes in http://llvm.org/docs/Packaging.html
 HOMEPAGE =	http://www.llvm.org/
 
-SHARED_LIBS +=  clang 1.0      # 3.3
+SHARED_LIBS +=  clang 2.0      # 3.4
 
 VMEM_WARNING =	Yes
 ONLY_FOR_ARCHS = amd64 i386 arm
@@ -29,9 +29,9 @@ WANTLIB =	c m pthread stdc++ z
 
 MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
 
-DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} cfe-${LLVM_V}.src${EXTRACT_SUFX}
+DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} clang-${LLVM_V}.src${EXTRACT_SUFX}
 DISTFILES +=	compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
-WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
+WRKDIST =	${WRKDIR}/llvm-${LLVM_V}
 
 MODULES =	devel/cmake \
 		lang/python
@@ -44,7 +44,7 @@ SEPARATE_BUILD =	Yes
 PREFIX=			/usr
 CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 			-DLLVM_REQUIRES_RTTI:Bool=True \
-			-DLLVM_TARGETS_TO_BUILD:String="ARM;X86" \
+			-DLLVM_TARGETS_TO_BUILD:String="AArch64;ARM;X86" \
 			-DCMAKE_INSTALL_PREFIX:PATH=${PREFIX} \
 			-DCMAKE_BUILD_TYPE:String=Release \
 			-DCMAKE_DISABLE_FIND_PACKAGE_LibXml2:Bool=True
@@ -74,9 +74,15 @@ PKG_ARGS+=-Darm=1
 PKG_ARGS+=-Darm=0
 .endif
 
+.if ${MACHINE_ARCH:Maarch64}
+PKG_ARGS+=-Daarch64=1
+.else
+PKG_ARGS+=-Daarch64=0
+.endif
+
 post-extract:
-	@mv ${WRKDIR}/cfe-${LLVM_V}.src ${WRKDIST}/tools/clang
-	@mv ${WRKDIR}/compiler-rt-${LLVM_V}.src ${WRKDIST}/projects/compiler-rt
+	@mv ${WRKDIR}/clang-${LLVM_V} ${WRKDIST}/tools/clang
+	@mv ${WRKDIR}/compiler-rt-${LLVM_V} ${WRKDIST}/projects/compiler-rt
 
 pre-configure:
 	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/scan-build/scan-build
