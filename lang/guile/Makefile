@@ -4,7 +4,7 @@ COMMENT=	GNU's Ubiquitous Intelligent Language for Extension
 
 VERSION=	1.8.8
 DISTNAME=	guile-${VERSION}
-REVISION=	3
+REVISION=	4
 SHARED_LIBS=	guile 20.0 \
 		guile-srfi-srfi-1-v-3 3.2 \
 		guile-srfi-srfi-13-14-v-3 3.1 \
@@ -18,11 +18,10 @@ HOMEPAGE=	https://www.gnu.org/software/guile/
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c gmp>=6 ltdl m ncurses pthread readline
+WANTLIB=		c gmp>=6 ltdl m ncurses pthread
 
 LIB_DEPENDS=	devel/gmp>=4.1 \
-		devel/libtool,-ltdl \
-		devel/readline 
+		devel/libtool,-ltdl
 RUN_DEPENDS=	devel/slib>=3b4
 
 MODULES=	devel/gettext
@@ -30,11 +29,9 @@ MODULES=	devel/gettext
 SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=	gnu
 
-MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/guile-readline \
-				${WRKSRC}/build-aux
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux ${WRKSRC}/guile-readline
 
-USE_LIBTOOL=		gnu
-USE_GMAKE=		Yes
+USE_LIBTOOL=		Yes
 
 # Needed because otherwise regress tests won't build:
 # warning: format '%ji' expects type 'intmax_t', but argument 4 has type 'scm_t_intmax'
