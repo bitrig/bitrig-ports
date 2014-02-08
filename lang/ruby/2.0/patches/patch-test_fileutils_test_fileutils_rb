@@ -1,0 +1,11 @@
+--- test/fileutils/test_fileutils.rb.orig	Fri Feb  7 23:32:24 2014
++++ test/fileutils/test_fileutils.rb	Fri Feb  7 23:32:40 2014
+@@ -942,7 +942,7 @@ class TestFileUtils
+     # regular file. It's slightly strange. Anyway it's no effect bit.
+     # see /usr/src/sys/ufs/ufs/ufs_chmod()
+     # NetBSD, OpenBSD and Solaris also denies it.
+-    if /freebsd|netbsd|openbsd|solaris/ !~ RUBY_PLATFORM
++    if /freebsd|netbsd|openbsd|solaris|bitrig/ !~ RUBY_PLATFORM
+       chmod "u+t,o+t", 'tmp/a'
+       assert_equal 07500, File.stat('tmp/a').mode & 07777
+       chmod "a-t,a-s", 'tmp/a'

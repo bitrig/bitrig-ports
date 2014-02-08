@@ -1,0 +1,11 @@
+--- test/dl/test_base.rb.orig	Fri Feb  7 20:59:44 2014
++++ test/dl/test_base.rb	Fri Feb  7 20:59:55 2014
+@@ -36,7 +36,7 @@ when /kfreebsd/
+ when /gnu/	#GNU/Hurd
+   libc_so = "/lib/libc.so.0.3"
+   libm_so = "/lib/libm.so.6"
+-when /bsd|dragonfly/
++when /bsd|dragonfly|bitrig/
+   libc_so = "/usr/lib/libc.so"
+   libm_so = "/usr/lib/libm.so"
+ when /solaris/

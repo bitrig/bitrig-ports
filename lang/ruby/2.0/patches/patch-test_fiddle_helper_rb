@@ -1,0 +1,11 @@
+--- test/fiddle/helper.rb.orig	Fri Feb  7 19:45:09 2014
++++ test/fiddle/helper.rb	Fri Feb  7 19:44:31 2014
+@@ -37,7 +37,7 @@ when /kfreebsd/
+ when /gnu/	#GNU/Hurd
+   libc_so = "/lib/libc.so.0.3"
+   libm_so = "/lib/libm.so.6"
+-when /bsd|dragonfly/
++when /bsd|dragonfly|bitrig/
+   libc_so = "/usr/lib/libc.so"
+   libm_so = "/usr/lib/libm.so"
+ when /solaris/

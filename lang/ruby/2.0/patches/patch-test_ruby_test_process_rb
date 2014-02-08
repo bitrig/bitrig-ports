@@ -1,0 +1,11 @@
+--- test/ruby/test_process.rb.orig	Fri Feb  7 23:31:39 2014
++++ test/ruby/test_process.rb	Fri Feb  7 23:31:59 2014
+@@ -1607,7 +1607,7 @@ class TestProcess < Test::Unit::TestCase
+     return unless Process.respond_to?(:getsid)
+     # OpenBSD doesn't allow Process::getsid(pid) when pid is in
+     # different session.
+-    return if /openbsd/ =~ RUBY_PLATFORM
++    return if /openbsd|bitrig/ =~ RUBY_PLATFORM
+ 
+     IO.popen([RUBY, "-e", <<EOS]) do|io|
+ 	Marshal.dump(Process.getsid, STDOUT)
