@@ -1,0 +1,38 @@
+--- configure.ac.orig	Mon Feb 10 22:04:20 2014
++++ configure.ac	Mon Feb 10 22:05:13 2014
+@@ -817,7 +817,7 @@ case "$host" in
+  *-*-netbsdelf1*)
+     # Just stubs.  Sigh.
+     ;;
+- *-*-openbsd*)
++ *-*-openbsd* | *-*-bitrig*)
+     # Just stubs.  Sigh.
+     ;;
+  *)
+@@ -841,7 +841,7 @@ AC_ARG_WITH(
+ case "$ans" in
+  yes | no)
+     case "$host" in
+-     *-*-openbsd*)
++     *-*-openbsd* | *-*-bitrig*)
+ 	ans=200
+ 	;;
+      *) ans=50
+@@ -888,7 +888,7 @@ case "$ac_cv_func__exit::$host_os" in
+  yes::netbsd*)
+     ntp_worker_child_exit=_exit
+     ;;
+- yes::openbsd*)
++ yes::openbsd* | yes::bitrig*)
+     ntp_worker_child_exit=_exit
+     ;;
+ esac
+@@ -1251,7 +1251,7 @@ AC_CACHE_CHECK(
+ 	 *-*-netbsd3.[[0-8]]*|*-*-netbsd[[0-2]].*|*-*-netbsd3.99.[[0-7]])
+ 	    ans=yes
+ 	    ;;
+-	 *-*-openbsd*)
++	 *-*-openbsd* | *-*-bitrig*)
+ 	    ans=yes
+ 	    ;;
+ 	 *-*-osf*)
