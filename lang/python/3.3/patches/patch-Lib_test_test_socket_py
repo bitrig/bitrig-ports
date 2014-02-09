@@ -1,0 +1,17 @@
+--- Lib/test/test_socket.py.orig	Sun Nov 17 08:22:47 2013
++++ Lib/test/test_socket.py	Mon Feb 10 21:49:26 2014
+@@ -4532,6 +4532,14 @@ class BufferIOTest(SocketConnectedTest):
+ 
+     _testRecvFromIntoMemoryview = _testRecvFromIntoArray
+ 
++    def testRecvFromIntoSmallBuffer(self):
++        # See issue #20246.
++        buf = bytearray(8)
++        self.assertRaises(ValueError, self.cli_conn.recvfrom_into, buf, 1024)
++
++    def _testRecvFromIntoSmallBuffer(self):
++        self.serv_conn.send(MSG)
++
+ 
+ TIPC_STYPE = 2000
+ TIPC_LOWER = 200

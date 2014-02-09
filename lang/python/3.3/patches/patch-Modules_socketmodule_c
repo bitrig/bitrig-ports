@@ -1,6 +1,8 @@
-$OpenBSD$
---- Modules/socketmodule.c.orig	Wed Nov 27 23:03:36 2013
-+++ Modules/socketmodule.c	Wed Nov 27 23:04:25 2013
+$OpenBSD: patch-Modules_socketmodule_c,v 1.1 2014/02/09 09:49:26 rpointel Exp $
+security fix: http://bugs.python.org/issue20246
+
+--- Modules/socketmodule.c.orig	Sun Nov 17 08:23:02 2013
++++ Modules/socketmodule.c	Mon Feb 10 21:49:26 2014
 @@ -156,7 +156,7 @@ if_indextoname(index) -- return the corresponding inte
  # undef HAVE_GETHOSTBYNAME_R_6_ARG
  #endif
@@ -19,3 +21,15 @@ $OpenBSD$
      defined(__VMS) || !defined(HAVE_GETADDRINFO))
  #define USE_GETADDRINFO_LOCK
  #endif
+@@ -2935,6 +2935,11 @@ sock_recvfrom_into(PySocketSockObject *s, PyObject *ar
+     if (recvlen == 0) {
+         /* If nbytes was not specified, use the buffer's length */
+         recvlen = buflen;
++    } else if (recvlen > buflen) {
++        PyBuffer_Release(&pbuf);
++        PyErr_SetString(PyExc_ValueError,
++                        "nbytes is greater than the length of the buffer");
++        return NULL;
+     }
+ 
+     readlen = sock_recvfrom_guts(s, buf, recvlen, flags, &addr);
