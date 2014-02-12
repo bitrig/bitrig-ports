@@ -3,7 +3,7 @@
 COMMENT=	spell checker designed to eventually replace Ispell
 
 DISTNAME=	aspell-0.60.6.1
-REVISION=	1
+REVISION=	2
 SHARED_LIBS +=  aspell               17.0     # .16.4
 SHARED_LIBS +=  pspell               17.0     # .16.4
 DIST_SUBDIR=	aspell
@@ -24,7 +24,11 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c m ncursesw stdc++ pthread
 
-MODULES=		devel/gettext
+MODULES +=		gcc4 devel/gettext
+MODGCC4_VERSION=	4.6
+MODGCC4_ARCHS=		*
+MODGCC4_LANGS=		c++
+CXX=			g++
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
