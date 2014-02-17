@@ -1137,7 +1137,6 @@
      SUBDIR += py-dateutil
      SUBDIR += py-decorator
      SUBDIR += py-decoratortools
-     SUBDIR += py-distribute,python3
      SUBDIR += py-distutils-extra
      SUBDIR += py-doit
      SUBDIR += py-dtopt

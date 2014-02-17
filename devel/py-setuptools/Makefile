@@ -21,4 +21,7 @@ MODPY_SETUPTOOLS=	Yes
 # Override automatic py-setuptools depend to avoid recursion
 MODPY_SETUPUTILS_DEPEND=
 
+FLAVORS=		python3
+FLAVOR?=
+
 .include <bsd.port.mk>
