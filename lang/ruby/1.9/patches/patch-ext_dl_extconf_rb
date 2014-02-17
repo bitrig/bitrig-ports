@@ -1,0 +1,11 @@
+--- ext/dl/extconf.rb.orig	Mon Feb 17 00:30:55 2014
++++ ext/dl/extconf.rb	Mon Feb 17 00:34:03 2014
+@@ -1,7 +1,7 @@
+ require 'mkmf'
+ 
+ if RbConfig::CONFIG['GCC'] == 'yes'
+-  $CFLAGS << " -fno-defer-pop -fno-omit-frame-pointer"
++  $CFLAGS << " -fno-omit-frame-pointer"
+ end
+ 
+ $INSTALLFILES = [
