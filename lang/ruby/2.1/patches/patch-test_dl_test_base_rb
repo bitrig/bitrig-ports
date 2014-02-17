@@ -1,0 +1,11 @@
+--- test/dl/test_base.rb.orig	Sat Sep 28 07:43:50 2013
++++ test/dl/test_base.rb	Mon Feb 17 21:07:49 2014
+@@ -39,7 +39,7 @@ when /gnu/	#GNU/Hurd
+ when /mirbsd/
+   libc_so = "/usr/lib/libc.so.41.10"
+   libm_so = "/usr/lib/libm.so.7.0"
+-when /bsd|dragonfly/
++when /bsd|bitrig|dragonfly/
+   libc_so = "/usr/lib/libc.so"
+   libm_so = "/usr/lib/libm.so"
+ when /solaris/

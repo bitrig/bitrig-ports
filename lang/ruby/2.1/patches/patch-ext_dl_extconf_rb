@@ -1,0 +1,10 @@
+--- ext/dl/extconf.rb.orig	Mon Feb 17 20:14:30 2014
++++ ext/dl/extconf.rb	Mon Feb 17 20:14:32 2014
+@@ -1,7 +1,6 @@
+ require 'mkmf'
+ 
+ if RbConfig::CONFIG['GCC'] == 'yes'
+-  (have_macro("__clang__") ? $LDFLAGS : $CFLAGS) << " -fno-defer-pop"
+   $CFLAGS << " -fno-omit-frame-pointer"
+ end
+ 
