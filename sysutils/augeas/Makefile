@@ -31,7 +31,6 @@ CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--enable-compile-warnings=yes
 CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build/aux
 
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/man/augparse.1
