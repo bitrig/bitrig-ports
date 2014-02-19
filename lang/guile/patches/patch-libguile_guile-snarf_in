@@ -1,0 +1,14 @@
+The C preprocessor is not guaranteed to preserve newlines, so don't expect the
+markers from SCM_SNARF_INIT ("^^", "^:^") to be at the start of a line.
+
+--- libguile/guile-snarf.in.orig	Wed Feb 19 07:55:24 2014
++++ libguile/guile-snarf.in	Wed Feb 19 07:56:17 2014
+@@ -51,7 +51,7 @@ modern_snarf ()                         # writes stdou
+     ## empty file.
+     echo "/* cpp arguments: $@ */" ;
+     ${cpp} -DSCM_MAGIC_SNARF_INITS -DSCM_MAGIC_SNARFER "$@" > ${temp} && cpp_ok_p=true
+-    grep "^ *\^ *\^" ${temp} | sed -e "s/^ *\^ *\^//" -e "s/\^\ *:\ *\^.*/;/"
++    egrep -o '\^\^[^^]*\^:\^' ${temp} | sed -e "s/^ *\^ *\^//" -e "s/\^\ *:\ *\^.*/;/"
+ }
+ 
+ ## main

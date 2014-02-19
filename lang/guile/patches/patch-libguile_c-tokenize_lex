@@ -1,0 +1,18 @@
+Don't emit eol and hash tokens when called with --filter-snarfage. The output
+is mainly used by snarf-check-and-output-texi, which by mistake doesn't expect
+these tokens to be there.
+
+--- libguile/c-tokenize.lex.orig	Wed Feb 19 20:30:23 2014
++++ libguile/c-tokenize.lex	Wed Feb 19 20:30:28 2014
+@@ -68,9 +68,9 @@ int cookie_was_last = 0; 
+ 
+ ({SPACE}*(\\\n)*{SPACE}*)+                 ;
+ 
+-({SPACE}*\n*{SPACE}*)+                     { OUT(eol); }
++({SPACE}*\n*{SPACE}*)+                     { if (!filter_snarfage) OUT(eol); }
+ 
+-#.*\n                                      { OUT(hash); IS_NOT_COOKIE; }
++#.*\n                                      { if (!filter_snarfage) OUT(hash); IS_NOT_COOKIE; }
+ 
+ {LETTER}({LETTER}|{DIGIT})*                { OUT_T (id); IS_NOT_COOKIE; }
+ 
