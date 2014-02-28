@@ -1,0 +1,20 @@
+--- sw/source/core/inc/frame.hxx.orig.port	Mon Feb 24 21:38:59 2014
++++ sw/source/core/inc/frame.hxx	Tue Feb 25 07:06:10 2014
+@@ -219,6 +219,8 @@ enum MakePageType
+     MAKEPAGE_NOSECTION  // Don't create section frames
+ };
+ 
++SwFrm *SaveCntnt( SwLayoutFrm *, SwFrm* pStart = NULL );
++
+ /**
+  * Base class of the Writer layout elements.
+  *
+@@ -234,7 +236,7 @@ class SwFrm: public SwClient, public SfxBroadcaster
+     friend class SwLooping;
+ 
+     // voids lower during creation of a column
+-    friend SwFrm *SaveCntnt( SwLayoutFrm *, SwFrm* pStart = NULL );
++    friend SwFrm *SaveCntnt( SwLayoutFrm *, SwFrm* pStart );
+     friend void   RestoreCntnt( SwFrm *, SwLayoutFrm *, SwFrm *pSibling, bool bGrow );
+ 
+ #ifdef DBG_UTIL
