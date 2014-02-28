@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
---- configure.ac.orig.port	Tue Oct 22 19:49:23 2013
-+++ configure.ac	Tue Nov 12 22:18:36 2013
+--- configure.ac.orig.port	Tue Dec 10 17:11:21 2013
++++ configure.ac	Sun Feb 23 18:33:26 2014
 @@ -540,7 +540,7 @@ aix*)
      _os=AIX
      ;;
@@ -10,7 +10,7 @@ $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
      test_gtk=yes
      test_tde=yes
      test_kde=yes
-@@ -3882,7 +3882,7 @@ mingw*)
+@@ -3887,7 +3887,7 @@ mingw*)
      SOLARLIB="-L${SOLARVER}/${OUTPATH}${PROEXT}/lib"
      ;;
  
@@ -19,7 +19,7 @@ $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
      COM=GCC
      GUI=UNX
      GUIBASE=unx
-@@ -6720,6 +6720,22 @@ if test -n "$SOLAR_JAVA" -a \( -z "$JAVALIB" -o -z "$J
+@@ -6725,6 +6725,22 @@ if test -n "$SOLAR_JAVA" -a \( -z "$JAVALIB" -o -z "$J
          test -d "$JAVA_HOME/include/native_thread" && JAVAINC="$JAVAINC -I$JAVA_HOME/include/native_thread"
          ;;
  
@@ -42,7 +42,7 @@ $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
      solaris*)
  
          JAVA_TOOLKIT="xawt"
-@@ -7817,7 +7833,7 @@ if test "x$enable_postgresql_sdbc" != "xno"; then
+@@ -7852,7 +7868,7 @@ if test "x$enable_postgresql_sdbc" != "xno"; then
              if test "$with_gssapi" != "no"; then
                WITH_GSSAPI=YES
                save_LIBS=$LIBS
@@ -51,7 +51,7 @@ $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
                      [AC_MSG_ERROR([could not find function 'gss_init_sec_context' required for GSSAPI])])
                GSSAPI_LIBS=$LIBS
                LIBS=$save_LIBS
-@@ -8014,7 +8030,7 @@ if test "$with_system_boost" = "yes"; then
+@@ -8049,7 +8065,7 @@ if test "$with_system_boost" = "yes"; then
      AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <boost/function.hpp>
  ]], [[]])],[ac_cv_cxx_boost_no_exceptions_broken=no],[ac_cv_cxx_boost_no_exceptions_broken=yes])
      if test "$ac_cv_cxx_boost_no_exceptions_broken" = "yes"; then
@@ -60,7 +60,7 @@ $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
      else
          AC_MSG_RESULT([yes])
      fi
-@@ -8401,11 +8417,7 @@ AC_MSG_CHECKING([whether to enable HarfBuzz support])
+@@ -8436,11 +8452,7 @@ AC_MSG_CHECKING([whether to enable HarfBuzz support])
  if test "$_os" != "WINNT" -a "$_os" != "Darwin"; then
      AC_MSG_RESULT([yes])
      ENABLE_HARFBUZZ="TRUE"
@@ -73,7 +73,7 @@ $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
  else
      AC_MSG_RESULT([no])
  fi
-@@ -8724,7 +8736,7 @@ if test "$with_system_hunspell" = "yes"; then
+@@ -8759,7 +8771,7 @@ if test "$with_system_hunspell" = "yes"; then
      fi
      AC_LANG_POP([C++])
      libo_MINGW_CHECK_DLL([libhunspell-1.3])
@@ -82,7 +82,7 @@ $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
  else
      AC_MSG_RESULT([internal])
      SYSTEM_HUNSPELL=NO
-@@ -9139,7 +9151,7 @@ elif $GNUCP --version 2>/dev/null | grep "GNU fileutil
+@@ -9174,7 +9186,7 @@ elif $GNUCP --version 2>/dev/null | grep "GNU fileutil
      AC_MSG_RESULT([yes])
  else
      case "$build_os" in
@@ -91,7 +91,7 @@ $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
          x_GNUCP=[\#]
          GNUCP=''
          AC_MSG_RESULT([no gnucp found - using the system's cp command])
-@@ -10236,11 +10248,11 @@ if test "$test_kde" = "yes" -a "$ENABLE_KDE" = "TRUE";
+@@ -10271,11 +10283,11 @@ if test "$test_kde" = "yes" -a "$ENABLE_KDE" = "TRUE";
          kde_libdirs="/usr/lib64/kde/lib64 /usr/local/kde/lib64 /usr/kde/lib64 /usr/lib64/kde /usr/lib64/kde3 /usr/X11R6/lib64 /usr/local/lib64 /opt/kde3/lib64 /opt/kde/lib64 /usr/X11R6/kde/lib64 /usr/lib/kde/lib /usr/local/kde/lib /usr/kde/lib /usr/lib/kde /usr/lib/kde3 /usr/lib /usr/X11R6/lib /usr/local/lib /opt/kde3/lib /opt/kde/lib /usr/X11R6/kde/lib /usr/lib64 $x_libraries"
      fi
      if test -n "$KDEDIR"; then
@@ -106,7 +106,7 @@ $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
          fi
      fi
  
-@@ -11617,7 +11629,7 @@ else
+@@ -11652,7 +11664,7 @@ else
      else
          case `uname -s` in
  
@@ -115,7 +115,7 @@ $OpenBSD: patch-configure_ac,v 1.4 2013/11/12 07:57:23 robert Exp $
              PARALLELISM=`sysctl -n hw.ncpu`
              ;;
  
-@@ -11861,7 +11873,7 @@ else
+@@ -11896,7 +11908,7 @@ else
  
      case "$host_os" in
  
