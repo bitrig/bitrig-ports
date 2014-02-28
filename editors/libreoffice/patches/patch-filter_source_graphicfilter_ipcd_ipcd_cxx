@@ -1,0 +1,11 @@
+--- filter/source/graphicfilter/ipcd/ipcd.cxx.orig.port	Tue Dec 10 17:11:21 2013
++++ filter/source/graphicfilter/ipcd/ipcd.cxx	Sun Feb 23 18:11:15 2014
+@@ -151,7 +151,7 @@ sal_Bool PCDReader::ReadPCD( Graphic & rGraphic, Filte
+             nBMPHeight = nWidth;
+         }
+         aBmp = Bitmap( Size( nBMPWidth, nBMPHeight ), 24 );
+-        if ( ( mpAcc = aBmp.AcquireWriteAccess() ) == sal_False )
++        if ( ( mpAcc = aBmp.AcquireWriteAccess() ) == NULL )
+             return sal_False;
+ 
+         ReadImage( 5 ,65 );

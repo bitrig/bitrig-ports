@@ -1,0 +1,11 @@
+--- filter/source/graphicfilter/iras/iras.cxx.orig.port	Tue Dec 10 17:11:21 2013
++++ filter/source/graphicfilter/iras/iras.cxx	Sun Feb 23 18:11:56 2014
+@@ -98,7 +98,7 @@ sal_Bool RASReader::ReadRAS(Graphic & rGraphic)
+         return sal_False;
+ 
+     maBmp = Bitmap( Size( mnWidth, mnHeight ), mnDstBitsPerPix );
+-    if ( ( mpAcc = maBmp.AcquireWriteAccess() ) == sal_False )
++    if ( ( mpAcc = maBmp.AcquireWriteAccess() ) == NULL )
+         return sal_False;
+ 
+     if ( mnDstBitsPerPix <= 8 )     // paletten bildchen

@@ -1,0 +1,11 @@
+--- vcl/headless/svptext.cxx.orig.port	Tue Dec 10 17:11:21 2013
++++ vcl/headless/svptext.cxx	Sun Feb 23 18:30:41 2014
+@@ -172,7 +172,7 @@ void SvpGlyphPeer::RemovingFont( ServerFont& )
+ 
+ void SvpGlyphPeer::RemovingGlyph( ServerFont&, GlyphData& rGlyphData, int /*nGlyphIndex*/ )
+ {
+-    if( rGlyphData.ExtDataRef().mpData != Format::NONE )
++    if( rGlyphData.ExtDataRef().mpData != NULL )
+     {
+         // release the glyph related resources
+         DBG_ASSERT( (rGlyphData.ExtDataRef().meInfo <= Format::MAX), "SVP::RG() invalid alpha format" );

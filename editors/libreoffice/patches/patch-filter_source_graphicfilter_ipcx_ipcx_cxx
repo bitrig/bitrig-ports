@@ -1,0 +1,11 @@
+--- filter/source/graphicfilter/ipcx/ipcx.cxx.orig.port	Tue Dec 10 17:11:21 2013
++++ filter/source/graphicfilter/ipcx/ipcx.cxx	Sun Feb 23 18:11:33 2014
+@@ -100,7 +100,7 @@ sal_Bool PCXReader::ReadPCX(Graphic & rGraphic)
+     if ( nStatus )
+     {
+         aBmp = Bitmap( Size( nWidth, nHeight ), nDestBitsPerPixel );
+-        if ( ( pAcc = aBmp.AcquireWriteAccess() ) == sal_False )
++        if ( ( pAcc = aBmp.AcquireWriteAccess() ) == NULL )
+             return sal_False;
+ 
+         if ( nDestBitsPerPixel <= 8 )
