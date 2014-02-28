@@ -1,0 +1,10 @@
+--- sc/Library_sc.mk.orig.port	Mon Feb 24 21:08:40 2014
++++ sc/Library_sc.mk	Mon Feb 24 21:06:05 2014
+@@ -27,6 +27,7 @@ $(eval $(call gb_Library_set_include,sc,\
+ $(eval $(call gb_Library_add_defs,sc,\
+ 	-DSC_DLLIMPLEMENTATION \
+ 	-DSC_INFO_OSVERSION=\"$(OS)\" \
++	-DBOOST_SP_NO_ATOMIC_ACCESS \
+ ))
+ 
+ $(eval $(call gb_Library_use_custom_headers,sc,\
