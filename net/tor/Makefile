@@ -2,7 +2,7 @@
 
 COMMENT=	anonymity service using onion routing
 
-DISTNAME=	tor-0.2.4.20
+DISTNAME=	tor-0.2.4.21
 PKGNAME=	${DISTNAME:S/-rc/rc/}
 CATEGORIES=	net
 HOMEPAGE=	https://www.torproject.org/
