@@ -1,0 +1,11 @@
+--- Makefile.am.orig	Sat Jan 26 16:11:02 2013
++++ Makefile.am	Wed Feb 26 21:15:38 2014
+@@ -88,6 +88,8 @@ EXTRA_smartctl_SOURCES = \
+         os_netbsd.h \
+         os_openbsd.cpp \
+         os_openbsd.h \
++        os_bitrig.cpp \
++        os_bitrig.h \
+         os_qnxnto.cpp \
+         os_qnxnto.h \
+         os_solaris.cpp \

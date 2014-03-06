@@ -1,0 +1,15 @@
+--- configure.orig	Wed Mar  5 20:17:13 2014
++++ configure	Wed Mar  5 20:17:17 2014
+@@ -6378,6 +6378,12 @@ fi
+     os_dltools='curl wget lynx ftp'
+     os_man_filter=OpenBSD
+     ;;
++  *-*-bitrig*)
++    os_deps='os_bitrig.o'
++    os_libs='-lutil'
++    os_dltools='curl wget lynx ftp'
++    os_man_filter=Bitrig
++    ;;
+   *-*-cygwin*)
+     os_deps='os_win32.o dev_areca.o'
+     os_win32=yes
