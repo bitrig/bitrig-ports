@@ -1,7 +1,7 @@
 $OpenBSD$
---- configure.orig	Fri May 10 13:17:18 2013
-+++ configure	Fri May 10 13:18:59 2013
-@@ -8421,7 +8421,7 @@ $as_echo "#define SOLARIS 1" >>confdefs.h
+--- configure.orig	Fri Mar  7 01:53:01 2014
++++ configure	Thu Mar 13 06:15:29 2014
+@@ -8490,7 +8490,7 @@ $as_echo "#define SOLARIS 1" >>confdefs.h
      *-*-freebsd*)
          FREEBSD_OS=1
          ;;
@@ -10,7 +10,7 @@ $OpenBSD$
          OPENBSD_OS=1
          ;;
      *-*-linux*)
-@@ -9989,6 +9989,9 @@ $as_echo "#define SOLARIS_KSTATS 1" >>confdefs.h
+@@ -10068,6 +10068,9 @@ $as_echo "#define SOLARIS_KSTATS 1" >>confdefs.h
          openbsd*)
                  OS_URL=http://www.openbsd.org/
                  ;;
