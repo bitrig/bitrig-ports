@@ -37,5 +37,6 @@ LIBTOOL_FLAGS =	--tag=disable-static
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--disable-static
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
 
 .include <bsd.port.mk>
