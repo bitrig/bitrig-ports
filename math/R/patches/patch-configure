@@ -1,4 +1,4 @@
-$OpenBSD: patch-configure,v 1.17 2014/03/09 23:01:41 espie Exp $
+$OpenBSD: patch-configure,v 1.18 2014/03/12 11:04:41 dcoppa Exp $
 
 Use GNU readline instead of our base readline
 
@@ -8,9 +8,9 @@ Fix "--export-dynamic" linker flag
 
 Fix linking with external libintl
 
---- configure.orig	Sat Feb 23 00:06:28 2013
-+++ configure	Thu Mar 13 06:27:31 2014
-@@ -9026,7 +9026,7 @@ else
+--- configure.orig	Thu Feb 27 00:06:14 2014
++++ configure	Wed Mar 12 10:01:47 2014
+@@ -9087,7 +9087,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -19,7 +19,7 @@ Fix linking with external libintl
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -9451,7 +9451,7 @@ newos6*)
+@@ -9512,7 +9512,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -28,7 +28,7 @@ Fix linking with external libintl
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -9835,7 +9835,7 @@ old_postuninstall_cmds=
+@@ -9896,7 +9896,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -37,7 +37,7 @@ Fix linking with external libintl
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
-@@ -12441,7 +12441,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -12502,7 +12502,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -46,7 +46,7 @@ Fix linking with external libintl
      with_gnu_ld=no
      ;;
    esac
-@@ -13149,7 +13149,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -13210,7 +13210,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -55,7 +55,7 @@ Fix linking with external libintl
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -14109,7 +14109,7 @@ newsos6)
+@@ -14170,7 +14170,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -64,7 +64,7 @@ Fix linking with external libintl
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -15907,7 +15907,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+@@ -15968,7 +15968,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
  	ld_shlibs_CXX=no
  	;;
  
@@ -73,7 +73,7 @@ Fix linking with external libintl
  	if test -f /usr/libexec/ld.so; then
  	  hardcode_direct_CXX=yes
  	  hardcode_shlibpath_var_CXX=no
-@@ -17555,7 +17555,7 @@ newsos6)
+@@ -17616,7 +17616,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -82,7 +82,7 @@ Fix linking with external libintl
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -18532,7 +18532,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -18593,7 +18593,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -91,7 +91,7 @@ Fix linking with external libintl
      with_gnu_ld=no
      ;;
    esac
-@@ -19227,7 +19227,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -19288,7 +19288,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -100,7 +100,7 @@ Fix linking with external libintl
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct_F77=yes
  	hardcode_shlibpath_var_F77=no
-@@ -20027,7 +20027,7 @@ newsos6)
+@@ -20088,7 +20088,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -109,23 +109,13 @@ Fix linking with external libintl
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -20812,7 +20812,7 @@ if test "x$ac_cv_lib_readline_rl_callback_read_char" =
- #define HAVE_LIBREADLINE 1
- _ACEOF
- 
--  LIBS="-lreadline $LIBS"
-+  LIBS="-lereadline $LIBS"
- 
- fi
- 
-@@ -20939,13 +20939,14 @@ fi
- 
- fi
- 
--    { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lreadline" >&5
+@@ -20842,13 +20842,13 @@ done
+   LIBS=
+   ## don't use the cached value as we need to rebuild LIBS
+   unset ac_cv_lib_readline_rl_callback_read_char
+-  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lreadline" >&5
 -$as_echo_n "checking for rl_callback_read_char in -lreadline... " >&6; }
-+    { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char
-+in -lereadline" >&5
++  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lereadline" >&5
 +$as_echo_n "checking for rl_callback_read_char in -lereadline... " >&6; }
  if ${ac_cv_lib_readline_rl_callback_read_char+:} false; then :
    $as_echo_n "(cached) " >&6
@@ -136,7 +126,7 @@ Fix linking with external libintl
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -20980,7 +20981,7 @@ if test "x$ac_cv_lib_readline_rl_callback_read_char" =
+@@ -20883,7 +20883,7 @@ if test "x$ac_cv_lib_readline_rl_callback_read_char" =
  #define HAVE_LIBREADLINE 1
  _ACEOF
  
@@ -145,7 +135,33 @@ Fix linking with external libintl
  
  fi
  
-@@ -25818,7 +25819,7 @@ fi
+@@ -21010,13 +21010,13 @@ fi
+ 
+ fi
+ 
+-    { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lreadline" >&5
+-$as_echo_n "checking for rl_callback_read_char in -lreadline... " >&6; }
++    { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lereadline" >&5
++$as_echo_n "checking for rl_callback_read_char in -lereadline... " >&6; }
+ if ${ac_cv_lib_readline_rl_callback_read_char+:} false; then :
+   $as_echo_n "(cached) " >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lreadline  $LIBS"
++LIBS="-lereadline  $LIBS"
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ 
+@@ -21051,7 +21051,7 @@ if test "x$ac_cv_lib_readline_rl_callback_read_char" =
+ #define HAVE_LIBREADLINE 1
+ _ACEOF
+ 
+-  LIBS="-lreadline $LIBS"
++  LIBS="-lereadline $LIBS"
+ 
+ fi
+ 
+@@ -25932,7 +25932,7 @@ fi
          ;;
      esac
      ;;
@@ -154,7 +170,7 @@ Fix linking with external libintl
      if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`"; then
        $as_echo "#define HAVE_NO_SYMBOL_UNDERSCORE 1" >>confdefs.h
  
-@@ -26069,7 +26070,7 @@ if test "${GCC}" = yes; then
+@@ -26183,7 +26183,7 @@ if test "${GCC}" = yes; then
  ## has 32k and so can use -fpic.
  ## However, although the gcc docs do not mention it, it seems s390/s390x
  ## also supports and needs -fPIC
@@ -163,7 +179,7 @@ Fix linking with external libintl
        cpicflags="-fPIC"
        ;;
      *)
-@@ -26080,7 +26081,7 @@ if test "${GCC}" = yes; then
+@@ -26194,7 +26194,7 @@ if test "${GCC}" = yes; then
  fi
  if test "${G77}" = yes; then
    case "${host_cpu}" in
@@ -172,7 +188,7 @@ Fix linking with external libintl
        fpicflags="-fPIC"
        ;;
      *)
-@@ -26090,7 +26091,7 @@ if test "${G77}" = yes; then
+@@ -26204,7 +26204,7 @@ if test "${G77}" = yes; then
  fi
  if test "${GXX}" = yes; then
    case "${host_cpu}" in
@@ -181,7 +197,7 @@ Fix linking with external libintl
        cxxpicflags="-fPIC"
        ;;
      *)
-@@ -26340,10 +26341,10 @@ $as_echo "$as_me: WARNING: Use of flat namespace is re
+@@ -26457,10 +26457,10 @@ $as_echo "$as_me: WARNING: Use of flat namespace is re
        shlib_ldflags="-Bshareable"
      fi
      ;;
@@ -194,7 +210,7 @@ Fix linking with external libintl
        shlib_ldflags="-shared -fPIC"
      fi
      ;;
-@@ -26534,13 +26535,6 @@ case "${host_os}" in
+@@ -26663,13 +26663,6 @@ case "${host_os}" in
        LAPACK_LDFLAGS="+s"
      fi
      ;;
@@ -208,7 +224,7 @@ Fix linking with external libintl
  esac
  
  if test -z "${DYLIB_LD}"; then
-@@ -36437,7 +36431,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -36094,7 +36087,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -217,7 +233,7 @@ Fix linking with external libintl
      with_gnu_ld=no
      ;;
    esac
-@@ -37132,7 +37126,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -36789,7 +36782,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -226,7 +242,7 @@ Fix linking with external libintl
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct_FC=yes
  	hardcode_shlibpath_var_FC=no
-@@ -37932,7 +37926,7 @@ newsos6)
+@@ -37589,7 +37582,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -235,7 +251,7 @@ Fix linking with external libintl
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -38424,7 +38418,7 @@ fi
+@@ -38081,7 +38074,7 @@ fi
  ## use this to pick out gfortran (even though it is unreliable).
  if test "${ac_cv_fc_compiler_gnu}" = yes; then
    case "${host_cpu}" in
@@ -244,7 +260,7 @@ Fix linking with external libintl
        fcpicflags="-fPIC"
        ;;
      *)
-@@ -42533,7 +42527,7 @@ else
+@@ -41835,7 +41828,7 @@ else
    gt_save_CPPFLAGS="$CPPFLAGS"
              CPPFLAGS="$CPPFLAGS $INCINTL"
              gt_save_LIBS="$LIBS"
@@ -253,7 +269,7 @@ Fix linking with external libintl
                          cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  #include <libintl.h>
-@@ -42690,8 +42684,8 @@ $as_echo "$gt_source" >&6; }
+@@ -41992,8 +41985,8 @@ $as_echo "$gt_source" >&6; }
        if { eval "gt_val=\$$gt_func_gnugettext_libintl"; test "$gt_val" = "yes"; }; then
          { $as_echo "$as_me:${as_lineno-$LINENO}: checking how to link with libintl" >&5
  $as_echo_n "checking how to link with libintl... " >&6; }
@@ -264,12 +280,3 @@ Fix linking with external libintl
  
    for element in $INCINTL; do
      haveit=
-@@ -46192,7 +46186,7 @@ fi
- done
- r_external_libs=
- if test "${use_readline}" = yes; then
--  r_external_libs=readline
-+  r_external_libs=ereadline
- fi
- if test "${acx_blas_ok}" = "yes"; then
-   ## Try to figure out which BLAS was used.
