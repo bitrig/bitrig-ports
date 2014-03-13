@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.656 2014/03/12 09:04:00 jasper Exp $
+# $OpenBSD: Makefile,v 1.657 2014/03/13 17:32:26 sthen Exp $
 
      SUBDIR =
      SUBDIR += ajaxterm
