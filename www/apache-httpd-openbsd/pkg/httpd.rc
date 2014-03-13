@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $OpenBSD$
+# $OpenBSD: httpd.rc,v 1.1.1.1 2014/03/13 17:28:04 sthen Exp $
 
 daemon="${TRUEPREFIX}/sbin/httpd"
 

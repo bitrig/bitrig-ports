@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PFRAG.shared,v 1.1.1.1 2014/03/13 17:28:04 sthen Exp $
 lib/apache/modules/libproxy.so
 lib/apache/modules/mod_auth_anon.so
 lib/apache/modules/mod_auth_db.so

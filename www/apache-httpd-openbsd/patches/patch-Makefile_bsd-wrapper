@@ -1,104 +1,22 @@
-$OpenBSD$
---- Makefile.bsd-wrapper.orig	Tue Aug  6 21:05:57 2013
-+++ Makefile.bsd-wrapper	Wed Sep 25 13:47:31 2013
-@@ -7,10 +7,12 @@ LNDIR=	/usr/bin/lndir
- 
- .include <bsd.own.mk>
- 
-+MANDIR=	${LOCALBASE}/man/man
-+
- #    OpenBSD Layout
- #<Layout OpenBSD>
--#    prefix:        /var/www
--#    exec_prefix:   /usr
-+#    prefix:        ${LOCALBASE}/share/examples/apache
-+#    exec_prefix:   ${LOCALBASE}
- #    bindir:        $exec_prefix/bin
- #    sbindir:       $exec_prefix/sbin
- #    libexecdir:    $exec_prefix/lib/apache/modules
-@@ -28,8 +30,8 @@ LNDIR=	/usr/bin/lndir
+$OpenBSD: patch-Makefile_bsd-wrapper,v 1.1.1.1 2014/03/13 17:28:04 sthen Exp $
+--- Makefile.bsd-wrapper.orig	Thu Mar 13 01:50:02 2014
++++ Makefile.bsd-wrapper	Thu Mar 13 01:52:23 2014
+@@ -28,15 +28,15 @@ LNDIR=	/usr/bin/lndir
  #    proxycachedir: $prefix/proxy
  #</Layout>
  
--HTTPD_PREFIX=		/var/www
--HTTPD_EXEC_PREFIX=	/usr
-+HTTPD_PREFIX=		${LOCALBASE}/share/examples/apache
-+HTTPD_EXEC_PREFIX=	${LOCALBASE}
+-HTTPD_EXEC_PREFIX=	TRUEPREFIX
++HTTPD_EXEC_PREFIX=	${TRUEPREFIX}
  HTTPD_BINDIR=		${HTTPD_EXEC_PREFIX}/bin
  HTTPD_SBINDIR=		${HTTPD_EXEC_PREFIX}/sbin
  HTTPD_LIBEXECDIR=	${HTTPD_EXEC_PREFIX}/lib/apache/modules
-@@ -652,12 +654,14 @@ ${.OBJDIR}/config.layout: ${.CURDIR}/config.layout
- 
- 
- includes:
-+	${INSTALL} -d ${DESTDIR}${HTTPD_INCLUDEDIR}
- 	@-for i in ${INCFILES}; do \
- 		j=`basename $$i`; \
- 		echo "Installing ${DESTDIR}${HTTPD_INCLUDEDIR}/$$j"; \
- 		${INSTALL} ${INSTALL_COPY} -g ${BINGRP} -m 444 \
- 		    ${.CURDIR}/$$i ${DESTDIR}${HTTPD_INCLUDEDIR}; \
- 	done
-+	${INSTALL} -d ${DESTDIR}${HTTPD_INCLUDEDIR}/xml
- 	@-for i in ${XMLFILES}; do \
- 		j=`basename $$i`; \
- 		echo "Installing ${DESTDIR}${HTTPD_INCLUDEDIR}/xml/$$j"; \
-@@ -665,7 +669,7 @@ includes:
- 		    ${.CURDIR}/$$i ${DESTDIR}${HTTPD_INCLUDEDIR}/xml; \
- 	done
- 
--install: maninstall htmlinstall
-+install: maninstall htmlinstall includes distribution
- 	@-for i in ${BINFILES}; do \
- 		j=`basename $$i`; \
- 		echo "Installing ${DESTDIR}${HTTPD_BINDIR}/$$j"; \
-@@ -678,6 +682,7 @@ install: maninstall htmlinstall
- 		${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -g ${BINGRP} \
- 		    -m 555 ${.OBJDIR}/$$i ${DESTDIR}${HTTPD_SBINDIR}; \
- 	done
-+	${INSTALL} -d ${DESTDIR}${HTTPD_LIBEXECDIR}
- 	@-for i in ${INSTALL_MODULES}; do \
- 		j=`basename $$i`; \
- 		echo "Installing ${DESTDIR}${HTTPD_LIBEXECDIR}/$$j"; \
-@@ -749,11 +754,13 @@ htmlinstall:
- 		j=`dirname $$i | sed 's;^manual/*;;'`; \
- 		k=`basename $$i`; \
- 		echo "Installing ${DESTDIR}${HTTPD_MANUALDIR}/$$j/$$k"; \
-+		${INSTALL} -d ${DESTDIR}${HTTPD_MANUALDIR}/$$j; \
- 		${INSTALL} ${INSTALL_COPY} -g ${BINGRP} -m 444 \
- 		    ${.OBJDIR}/htdocs/$$i ${DESTDIR}${HTTPD_MANUALDIR}/$$j/; \
- 	done
- 
- distribution:
-+	${INSTALL} -d ${DESTDIR}${HTTPD_SYSCONFDIR}
- 	@-for i in ${MODCONFDIR}; do \
- 		echo "Installing ${DESTDIR}${HTTPD_SYSCONFDIR}/$$i"; \
- 		${INSTALL} -d -m 755 ${DESTDIR}${HTTPD_SYSCONFDIR}/$$i; \
-@@ -761,24 +768,28 @@ distribution:
- 	@-for i in ${CONFFILES}; do \
- 		j=`dirname $$i`; \
- 		echo "Installing ${DESTDIR}${HTTPD_PREFIX}/$$i"; \
-+		${INSTALL} -d ${DESTDIR}${HTTPD_PREFIX}/$$j; \
- 		${INSTALL} ${INSTALL_COPY} -g ${BINGRP} -m 444 \
- 		    ${.OBJDIR}/$$i ${DESTDIR}${HTTPD_PREFIX}/$$j/; \
- 	done
- 	@-for i in ${HTDOCS}; do \
- 		j=`dirname $$i`; \
- 		echo "Installing ${DESTDIR}${HTTPD_PREFIX}/$$i"; \
-+		${INSTALL} -d ${DESTDIR}${HTTPD_PREFIX}/$$j; \
- 		${INSTALL} ${INSTALL_COPY} -g ${BINGRP} -m 444 \
- 		    ${.OBJDIR}/$$i ${DESTDIR}${HTTPD_PREFIX}/$$j/; \
- 	done
- 	@-for i in ${CGIFILES}; do \
- 		j=`dirname $$i`; \
- 		echo "Installing ${DESTDIR}${HTTPD_PREFIX}/$$i"; \
-+		${INSTALL} -d ${DESTDIR}${HTTPD_PREFIX}/$$j; \
- 		${INSTALL} ${INSTALL_COPY} -g ${BINGRP} -m 000 \
- 		    ${.OBJDIR}/$$i ${DESTDIR}${HTTPD_PREFIX}/$$j/; \
- 	done
- 	@-for i in ${ICONFILES}; do \
- 		j=`dirname $$i`; \
- 		echo "Installing ${DESTDIR}${HTTPD_PREFIX}/$$i"; \
-+		${INSTALL} -d ${DESTDIR}${HTTPD_PREFIX}/$$j; \
- 		${INSTALL} ${INSTALL_COPY} -g ${BINGRP} -m 444 \
- 		    ${.OBJDIR}/$$i ${DESTDIR}${HTTPD_PREFIX}/$$j/; \
- 	done
+ HTTPD_SYSCONFDIR=	${HTTPD_PREFIX}/conf
+ HTTPD_ICONSDIR=		${HTTPD_PREFIX}/icons
+ HTTPD_HTDOCSDIR=	${HTTPD_PREFIX}/htdocs
+-HTTPD_MANUALDIR=	${HTTPD_EXEC_PREFIX}/share/apache-httpd-openbsd/doc/
+-HTTPD_PREFIX=		${HTTPD_EXEC_PREFIX}/share/apache-httpd-openbsd/www
++HTTPD_MANUALDIR=	${HTTPD_EXEC_PREFIX}/share/doc/apache-httpd-openbsd
++HTTPD_PREFIX=		/var/www
+ HTTPD_INCLUDEDIR=	${HTTPD_EXEC_PREFIX}/lib/apache/include
+ HTTPD_RUNDIR=		${HTTPD_PREFIX}/logs
+ HTTPD_LOGDIR=		${HTTPD_PREFIX}/logs
