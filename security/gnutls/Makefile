@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.95 2014/03/09 22:08:50 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.96 2014/03/14 17:42:59 ajacoutot Exp $
 
 COMMENT=	GNU Transport Layer Security library
 
@@ -44,6 +44,7 @@ MODGNU_CONFIG_GUESS_DIRS=${WRKDIST}/build-aux
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--disable-gtk-doc \
 		--disable-guile \
+		--with-default-trust-store-file=/etc/ssl/cert.pem \
 		--disable-valgrind-tests \
 		--enable-local-libopts
 
