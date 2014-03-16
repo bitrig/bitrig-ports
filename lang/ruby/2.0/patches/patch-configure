@@ -5,9 +5,9 @@ Fix so name, checking for DOT and DOXYGEN.
 Override the arch setting to remove OpenBSD version from it,
 so ports don't have to be bumped when OpenBSD version changes.
 
---- configure.orig	Fri Nov 22 05:23:39 2013
-+++ configure	Fri Jan 24 18:06:53 2014
-@@ -14794,7 +14794,7 @@ _ACEOF
+--- configure.orig	Mon Feb 24 06:50:32 2014
++++ configure	Sun Mar 16 18:08:12 2014
+@@ -14832,7 +14832,7 @@ _ACEOF
  fi
  
  case "$target_os" in #(
@@ -16,7 +16,7 @@ so ports don't have to be bumped when OpenBSD version changes.
  
    { $as_echo "$as_me:${as_lineno-$LINENO}: checking for heap align log on openbsd" >&5
  $as_echo_n "checking for heap align log on openbsd... " >&6; }
-@@ -17000,13 +17000,13 @@ fi
+@@ -17038,13 +17038,13 @@ fi
  if test x"$enable_pthread" = xyes; then
      for pthread_lib in thr pthread pthreads c c_r root; do
  	as_ac_Lib=`$as_echo "ac_cv_lib_$pthread_lib''_pthread_kill" | $as_tr_sh`
@@ -33,7 +33,7 @@ so ports don't have to be bumped when OpenBSD version changes.
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -17074,7 +17074,7 @@ done
+@@ -17112,7 +17112,7 @@ done
      MAINLIBS="-pthread $MAINLIBS" ;; #(
    *) :
      case "$target_os" in #(
@@ -42,7 +42,7 @@ so ports don't have to be bumped when OpenBSD version changes.
      LIBS="-pthread $LIBS" ;; #(
    *) :
      LIBS="-l$pthread_lib $LIBS" ;;
-@@ -17459,7 +17459,7 @@ esac ;; #(
+@@ -17497,7 +17497,7 @@ esac ;; #(
  			  test "$GCC" = yes && test "$rb_cv_prog_gnu_ld" = yes || LDSHARED='$(LD) -Bshareable'
  			fi
  			rb_cv_dlopen=yes ;; #(
@@ -51,7 +51,7 @@ so ports don't have to be bumped when OpenBSD version changes.
      	: ${LDSHARED='$(CC) -shared ${CCDLFLAGS}'}
  			if test "$rb_cv_binary_elf" = yes; then
  			    LDFLAGS="$LDFLAGS -Wl,-E"
-@@ -18287,10 +18287,10 @@ esac
+@@ -18325,10 +18325,10 @@ esac
  	   LIBRUBY_ALIASES=""
  	fi
  	 ;; #(
@@ -64,7 +64,7 @@ so ports don't have to be bumped when OpenBSD version changes.
  	 ;; #(
    solaris*) :
  
-@@ -19521,7 +19521,11 @@ _ACEOF
+@@ -19559,7 +19559,11 @@ _ACEOF
  _ACEOF
  
  else
