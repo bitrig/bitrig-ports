@@ -76,11 +76,6 @@ CONFIGURE_ARGS+=	--enable-shared \
 			--program-suffix=-${PV}
 
 BUILD_DEPENDS=		www/apache-httpd
-.else
-# doesn't use apache-module.port.mk so MODAPACHE_APXS not available
-CONFIGURE_ARGS+=	--with-apxs=${LOCALBASE}/sbin/apxs
-BUILD_DEPENDS=		www/apache-httpd-openbsd
-.endif
 
 # default included extensions
 CONFIGURE_ARGS+= 	--with-openssl \
