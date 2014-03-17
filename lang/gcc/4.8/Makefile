@@ -144,7 +144,7 @@ CONFIGURE_ARGS += \
 	--with-system-zlib \
 	--disable-libmudflap \
 	--disable-libgomp \
-	--disable-tls \
+	--enable-tls \
 	--with-as=/usr/bin/as \
 	--with-ld=/usr/bin/ld \
 	--with-gnu-ld \
