@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure_ac,v 1.6 2013/11/04 21:49:48 brad Exp $
 --- configure.ac.orig	Fri Aug  7 13:51:30 2009
-+++ configure.ac	Fri Nov  8 20:28:32 2013
++++ configure.ac	Mon Mar 17 20:37:33 2014
 @@ -50,7 +50,7 @@ case "$target" in
    *-*-netbsd*)
      check_threads=true
@@ -82,16 +82,18 @@ $OpenBSD: patch-configure_ac,v 1.6 2013/11/04 21:49:48 brad Exp $
  #
  # Workaround a bug in GCC 2.x which causes memory exhaustion
  # when compiling sha1 with optimizations on UltraSPARC.
-@@ -1294,7 +1241,7 @@ fi
+@@ -1292,9 +1239,8 @@ case "$host_cpu" in
+ esac
+ fi
  
- SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fno-regmove)
+-SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fno-regmove)
  if test x$summary_debug = xno -a x$want_cc_optimizations = xtrue; then
 -  SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fomit-frame-pointer -O3)
 +  SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fomit-frame-pointer)
  fi
  
  AC_SUBST(SILC_CRYPTO_CFLAGS)
-@@ -1330,7 +1277,6 @@ if test x$compile_libs = xtrue; then
+@@ -1330,7 +1276,6 @@ if test x$compile_libs = xtrue; then
  AC_MSG_NOTICE([configuring math library])
  
  if test x$want_cc_optimizations = xtrue; then
