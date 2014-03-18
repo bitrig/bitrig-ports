@@ -1,6 +1,6 @@
-$OpenBSD: patch-configure_in,v 1.2 2011/06/02 15:43:05 kili Exp $
---- configure.in.orig	Tue Jul 15 02:07:48 2008
-+++ configure.in	Fri Oct 12 19:22:40 2012
+$OpenBSD: patch-configure_in,v 1.3 2014/03/18 17:53:17 sthen Exp $
+--- configure.in.orig	Tue Jul 15 01:07:48 2008
++++ configure.in	Tue Mar 18 17:52:25 2014
 @@ -130,7 +130,7 @@ AC_ARG_WITH(binpac,
  
  AC_LBL_ENABLE_CHECK([activemapping binpac broccoli brov6 debug \
@@ -33,3 +33,17 @@ $OpenBSD: patch-configure_in,v 1.2 2011/06/02 15:43:05 kili Exp $
  	AM_CONDITIONAL(USE_NMALLOC, true)
  	AC_DEFINE(HAVE_OPENBSD,,[We are on a OpenBSD system])
  	LDFLAGS="${LDFLAGS} -L/usr/local/lib"
+@@ -506,9 +513,10 @@ dnl We assume worst case first and improve on it below
+ AM_CONDITIONAL(USE_NBDNS, false)
+ 
+ dnl Add potential header locations to path
+-if test -d /usr/local/include/bind; then
+-   CFLAGS="$CFLAGS -I/usr/local/include/bind"
+-fi
++dnl XXX OpenBSD build fails if libbind package is picked up
++dnlif test -d /usr/local/include/bind; then
++dnl   CFLAGS="$CFLAGS -I/usr/local/include/bind"
++dnlfi
+ 
+ AC_CHECK_TYPE(ns_msg, bro_check_nb_dns=yes, bro_check_nb_dns=no, [#include <arpa/nameser.h>])
+ 
