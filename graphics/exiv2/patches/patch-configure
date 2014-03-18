@@ -1,6 +1,9 @@
-$OpenBSD$
---- configure.orig	Wed Sep  4 20:32:38 2013
-+++ configure	Wed Sep  4 20:33:02 2013
+$OpenBSD: patch-configure,v 1.1 2014/03/18 12:02:22 jasper Exp $
+
+Don't blindly add -ldl to LDFLAGS.
+
+--- configure.orig	Tue Mar 18 12:40:19 2014
++++ configure	Tue Mar 18 12:40:50 2014
 @@ -6486,7 +6486,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -73,3 +76,12 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
+@@ -17069,6 +17069,8 @@ fi
+ case "$host_os" in
+ *mingw* | *cygwin*)
+     LDFLAGS="$LDFLAGS -no-undefined -lpsapi" ;;
++*openbsd* | *bitrig*)
++    LDFLAGS="$LDFLAGS" ;;
+ *)
+     LDFLAGS="$LDFLAGS -ldl" ;;
+ esac
