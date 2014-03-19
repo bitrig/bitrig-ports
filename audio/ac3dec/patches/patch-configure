@@ -1,6 +1,6 @@
-$OpenBSD$
---- configure.orig	Wed Jul 25 16:07:05 CEST 2012
-+++ configure	Wed Jul 25 16:07:05 CEST 2012
+$OpenBSD: patch-configure,v 1.10 2014/03/19 13:37:41 jasper Exp $
+--- configure.orig	Thu Mar 30 02:51:49 2000
++++ configure	Wed Mar 19 14:35:33 2014
 @@ -528,7 +528,7 @@ fi
  
  
@@ -19,7 +19,7 @@ $OpenBSD$
  *-irix*) rm -f output.c; ln -s output_irix.c output.c;;
  *-solaris*) rm -f output.c; ln -s output_solaris.c output.c;;
  *) echo "$host is not currently supported by ac3dec"; exit 1;;
-@@ -1273,8 +1273,36 @@ sparc-*) cat >> confdefs.h <<\EOF
+@@ -1273,8 +1273,32 @@ sparc-*) cat >> confdefs.h <<\EOF
  #define __sparc__ 1
  EOF
  ;;
@@ -34,10 +34,6 @@ $OpenBSD$
 +;;
 +vax-*) cat >> confdefs.h <<\EOF
 +#define __vax__ 1
-+EOF
-+;;
-+m68k-*) cat >> confdefs.h <<\EOF
-+#define __m68k__ 1
 +EOF
 +;;
 +hppa-*) cat >> confdefs.h <<\EOF
