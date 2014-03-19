@@ -1,12 +1,12 @@
 $OpenBSD$
---- hal/moz.build.orig	Fri Sep 27 23:48:08 2013
-+++ hal/moz.build	Fri Sep 27 23:50:55 2013
-@@ -94,7 +94,7 @@ elif CONFIG['MOZ_WIDGET_TOOLKIT'] == 'cocoa':
-         'FallbackScreenConfiguration.cpp',
-         'FallbackAlarm.cpp',
+--- hal/moz.build.orig	Wed Feb 12 16:29:00 2014
++++ hal/moz.build	Wed Mar 19 15:37:40 2014
+@@ -99,7 +99,7 @@ elif CONFIG['MOZ_WIDGET_TOOLKIT'] == 'cocoa':
+         'fallback/FallbackScreenConfiguration.cpp',
+         'fallback/FallbackVibration.cpp',
      ]
 -elif CONFIG['OS_TARGET'] in ('OpenBSD', 'NetBSD', 'FreeBSD', 'DragonFly'):
 +elif CONFIG['OS_TARGET'] in ('OpenBSD', 'Bitrig', 'NetBSD', 'FreeBSD', 'DragonFly'):
-     CPP_SOURCES += [
-         'FallbackSensor.cpp',
-         'FallbackVibration.cpp',
+     SOURCES += [
+         'fallback/FallbackAlarm.cpp',
+         'fallback/FallbackMemory.cpp',

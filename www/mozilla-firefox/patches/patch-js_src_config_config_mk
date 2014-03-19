@@ -1,7 +1,7 @@
 $OpenBSD$
---- js/src/config/config.mk.orig	Thu Dec  5 17:07:35 2013
-+++ js/src/config/config.mk	Sat Dec 14 23:01:02 2013
-@@ -104,7 +104,7 @@ AUTOCONF_TOOLS	= $(topsrcdir)/build/autoconf
+--- js/src/config/config.mk.orig	Wed Feb 12 16:29:02 2014
++++ js/src/config/config.mk	Wed Mar 19 15:54:46 2014
+@@ -200,7 +200,7 @@ endif
  # but save the version to allow multiple versions of the same base
  # platform to be built in the same tree.
  #

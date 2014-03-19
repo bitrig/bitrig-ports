@@ -1,7 +1,7 @@
 $OpenBSD$
---- media/libcubeb/src/Makefile.in.orig	Thu Dec  5 17:07:47 2013
-+++ media/libcubeb/src/Makefile.in	Sat Dec 14 23:01:02 2013
-@@ -22,6 +22,13 @@ ifeq ($(OS_TARGET),Darwin)
+--- media/libcubeb/src/Makefile.in.orig	Wed Feb 12 16:29:13 2014
++++ media/libcubeb/src/Makefile.in	Wed Mar 19 15:54:46 2014
+@@ -21,6 +21,13 @@ ifeq ($(OS_TARGET),Darwin)
  DEFINES         += -DUSE_AUDIOUNIT
  endif
  

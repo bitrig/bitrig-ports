@@ -1,8 +1,8 @@
 $OpenBSD$
---- media/libopus/Makefile.in.orig	Thu Dec  5 17:07:47 2013
-+++ media/libopus/Makefile.in	Sat Dec 14 23:01:02 2013
-@@ -11,7 +11,7 @@ DEFINES += \
-   -Drestrict= \
+--- media/libopus/Makefile.in.orig	Wed Feb 12 16:29:13 2014
++++ media/libopus/Makefile.in	Wed Mar 19 15:54:46 2014
+@@ -8,7 +8,7 @@ DEFINES += \
+   -DUSE_ALLOCA \
    $(NULL)
  
 -ifneq ($(filter $(OS_ARCH),Linux Darwin DragonFly FreeBSD NetBSD OpenBSD),)
