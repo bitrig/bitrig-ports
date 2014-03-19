@@ -25,6 +25,8 @@ MODULES=	devel/gettext \
 		lang/python \
 		textproc/intltool
 
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/test/mocklibc
+
 BUILD_DEPENDS=	${MODGNU_AUTOMAKE_DEPENDS} \
 		${MODGNU_AUTOCONF_DEPENDS} \
 		devel/gettext \
