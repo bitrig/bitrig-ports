@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2014/01/12 22:16:02 pascal Exp $
+# $OpenBSD: Makefile,v 1.28 2014/03/19 13:53:29 jasper Exp $
 
 V =			3.3.6
 PKGNAME =		g77-$V
@@ -17,7 +17,7 @@ CONFIG_B =		${MACHINE_ARCH}-unknown-bitrig${OSREV}
 SUBST_VARS += 		CONFIG_A CONFIG_B V
 LIBDIR =		${PREFIX}/lib/gcc-lib/${CONFIG}/$V
 
-.if ${MACHINE_ARCH} == "m68k" || ${MACHINE_ARCH} == "m88k"
+.if ${MACHINE_ARCH} == "m88k"
 PKG_ARGS += -DPIC=1
 .else
 PKG_ARGS += -DPIC=0
