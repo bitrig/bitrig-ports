@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1204 2014/03/22 13:49:23 jasper Exp $
+# $OpenBSD: Makefile,v 1.1205 2014/03/22 13:51:37 jasper Exp $
 
      SUBDIR =
      SUBDIR += ElectricFence
@@ -581,6 +581,7 @@
      SUBDIR += p5-Class-InsideOut
      SUBDIR += p5-Class-Inspector
      SUBDIR += p5-Class-Load
+     SUBDIR += p5-Class-Load-XS
      SUBDIR += p5-Class-Loader
      SUBDIR += p5-Class-MakeMethods
      SUBDIR += p5-Class-Meta
