@@ -90,7 +90,7 @@
  	case ${target} in
  	mips*el-*-openbsd*)
  	    tm_defines="${tm_defines} TARGET_ENDIAN_DEFAULT=0";;
-@@ -1682,11 +1698,11 @@ pdp11-*-bsd)
+@@ -1682,11 +1698,12 @@ pdp11-*-bsd)
  pdp11-*-*)
  	use_fixproto=yes
  	;;
@@ -100,6 +100,7 @@
 -#	extra_headers=
 -#	;;
 +powerpc-*-openbsd*)
++	tm_defines="${tm_defines} PIE_DEFAULT=2"
 +	tm_file="${tm_file} dbxelf.h elfos.h openbsd.h openbsd-libpthread.h freebsd-spec.h rs6000/sysv4.h rs6000/openbsd.h"
 +	tmake_file="${tmake_file} rs6000/t-openbsd"
 +	extra_options="${extra_options} rs6000/sysv4.opt"
@@ -107,7 +108,7 @@
  powerpc64-*-linux*)
  	tm_file="${tm_file} dbxelf.h elfos.h svr4.h freebsd-spec.h rs6000/sysv4.h"
  	test x$with_cpu != x || cpu_is_64bit=yes
-@@ -2150,7 +2166,8 @@ sparc-*-netbsdelf*)
+@@ -2150,7 +2167,8 @@ sparc-*-netbsdelf*)
  	extra_options="${extra_options} sparc/long-double-switch.opt"
  	;;
  sparc64-*-openbsd*)
@@ -117,7 +118,7 @@
  	extra_options="${extra_options} sparc/little-endian.opt"
  	gas=yes gnu_ld=yes
  	with_cpu=ultrasparc
-@@ -2395,7 +2412,7 @@ vax-*-netbsd*)
+@@ -2395,7 +2413,7 @@ vax-*-netbsd*)
  	use_collect2=yes
  	;;
  vax-*-openbsd*)
