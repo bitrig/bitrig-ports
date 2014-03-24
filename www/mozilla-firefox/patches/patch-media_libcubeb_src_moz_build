@@ -1,9 +1,9 @@
 $OpenBSD$
---- media/libcubeb/src/moz.build.orig	Wed Feb 12 16:29:13 2014
-+++ media/libcubeb/src/moz.build	Wed Mar 19 16:04:15 2014
-@@ -20,7 +20,7 @@ if CONFIG['MOZ_PULSEAUDIO']:
-         'cubeb_pulse.c',
-     ]
+--- media/libcubeb/src/moz.build.orig	Fri Apr 11 19:47:23 2014
++++ media/libcubeb/src/moz.build	Fri Apr 11 19:48:08 2014
+@@ -22,7 +22,7 @@ if CONFIG['MOZ_PULSEAUDIO']:
+     if CONFIG['MOZ_WIDGET_TOOLKIT'] == 'gonk':
+         DEFINES['DISABLE_LIBPULSE_DLOPEN'] = True
  
 -if CONFIG['OS_ARCH'] == 'OpenBSD':
 +if CONFIG['OS_ARCH'] in ('OpenBSD', 'Bitrig'):

@@ -1,7 +1,7 @@
 $OpenBSD$
---- js/src/config/config.mk.orig	Wed Feb 12 16:29:02 2014
-+++ js/src/config/config.mk	Wed Mar 19 15:54:46 2014
-@@ -200,7 +200,7 @@ endif
+--- js/src/config/config.mk.orig	Fri Apr 11 19:47:23 2014
++++ js/src/config/config.mk	Fri Apr 11 19:48:08 2014
+@@ -205,7 +205,7 @@ endif
  # but save the version to allow multiple versions of the same base
  # platform to be built in the same tree.
  #

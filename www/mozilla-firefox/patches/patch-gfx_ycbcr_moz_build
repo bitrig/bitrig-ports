@@ -1,7 +1,7 @@
 $OpenBSD$
---- gfx/ycbcr/moz.build.orig	Wed Feb 12 16:29:00 2014
-+++ gfx/ycbcr/moz.build	Wed Mar 19 15:28:15 2014
-@@ -52,7 +52,7 @@ if CONFIG['_MSC_VER']:
+--- gfx/ycbcr/moz.build.orig	Fri Apr 11 19:47:23 2014
++++ gfx/ycbcr/moz.build	Fri Apr 11 19:48:08 2014
+@@ -50,7 +50,7 @@ if CONFIG['_MSC_VER']:
              'yuv_row_win.cpp',
          ]
  elif CONFIG['OS_ARCH'] in ('Linux', 'SunOS', 'Darwin', 'DragonFly',

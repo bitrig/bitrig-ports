@@ -1,12 +1,30 @@
 $OpenBSD$
---- xpcom/reflect/xptcall/src/md/unix/moz.build.orig	Wed Feb 12 16:29:26 2014
-+++ xpcom/reflect/xptcall/src/md/unix/moz.build	Wed Mar 19 15:54:47 2014
-@@ -12,7 +12,7 @@ if CONFIG['OS_ARCH'] == 'Darwin':
-         'xptcstubs_darwin.cpp',
-     ]
+--- xpcom/reflect/xptcall/src/md/unix/moz.build.orig	Sat Mar 15 01:19:39 2014
++++ xpcom/reflect/xptcall/src/md/unix/moz.build	Fri Apr 11 18:05:24 2014
+@@ -19,7 +19,7 @@ if CONFIG['OS_ARCH'] == 'Darwin':
+     if '86' in CONFIG['OS_TEST'] and CONFIG['OS_TEST'] != 'x86_64':
+         DEFINES['MOZ_NEED_LEADING_UNDERSCORE'] = True
  
 -if CONFIG['OS_ARCH'] in ('NetBSD', 'OpenBSD', 'GNU'):
 +if CONFIG['OS_ARCH'] in ('NetBSD', 'OpenBSD', 'Bitrig', 'GNU'):
      if CONFIG['CPU_ARCH'] == 'x86':
          SOURCES += [
              'xptcinvoke_gcc_x86_unix.cpp',
+@@ -48,7 +48,7 @@ if CONFIG['OS_ARCH'] in ('Linux', 'FreeBSD'):
+             'xptcstubs_ipf64.cpp'
+         ]
+ 
+-if CONFIG['OS_ARCH'] == 'OpenBSD' and CONFIG['OS_TEST'] == 'x86_64':
++if CONFIG['OS_ARCH'] in ('OpenBSD', 'Bitrig') and CONFIG['OS_TEST'] == 'x86_64':
+     SOURCES += [
+         'xptcinvoke_amd64_openbsd.cpp',
+         'xptcstubs_amd64_openbsd.cpp'
+@@ -123,7 +123,7 @@ if CONFIG['CPU_ARCH'] == 'arm' or CONFIG['OS_TEST'] ==
+             'xptcstubs_arm_netbsd.cpp',
+         ]
+ 
+-if CONFIG['CPU_ARCH'] == 'arm' and CONFIG['OS_ARCH'] == 'OpenBSD':
++if CONFIG['CPU_ARCH'] == 'arm' and CONFIG['OS_ARCH'] in ('OpenBSD', 'Bitrig'):
+     SOURCES += [
+         'xptcinvoke_arm_openbsd.cpp',
+         'xptcstubs_arm_openbsd.cpp',

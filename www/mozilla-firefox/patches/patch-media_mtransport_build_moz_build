@@ -1,0 +1,11 @@
+--- media/mtransport/build/moz.build.orig	Fri Apr 11 17:55:48 2014
++++ media/mtransport/build/moz.build	Fri Apr 11 18:35:06 2014
+@@ -55,7 +55,7 @@ LOCAL_INCLUDES += [
+     '/media/mtransport/third_party/nrappkit/src/util/libekr',
+ ]
+ 
+-if CONFIG['OS_TARGET'] in ['Darwin', 'DragonFly', 'FreeBSD', 'NetBSD', 'OpenBSD']:
++if CONFIG['OS_TARGET'] in ['Darwin', 'DragonFly', 'FreeBSD', 'NetBSD', 'OpenBSD', 'Bitrig']:
+     if CONFIG['OS_TARGET'] == 'Darwin':
+         DEFINES['DARWIN'] = True
+     else:
