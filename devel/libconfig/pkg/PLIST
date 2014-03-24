@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.4 2011/01/16 11:16:12 rpointel Exp $
+@comment $OpenBSD: PLIST,v 1.5 2014/03/24 12:45:38 ajacoutot Exp $
 include/libconfig.h
 include/libconfig.h++
 @info info/libconfig.info
