@@ -1,7 +1,7 @@
 $OpenBSD$
---- mozilla/configure.in.orig	Fri Dec  6 16:44:50 2013
-+++ mozilla/configure.in	Sat Dec 14 23:21:36 2013
-@@ -1564,7 +1564,7 @@ MOZ_ARG_ENABLE_BOOL(profiling,
+--- mozilla/configure.in.orig	Sun Mar 16 21:32:22 2014
++++ mozilla/configure.in	Fri Apr 11 20:12:17 2014
+@@ -1569,7 +1569,7 @@ MOZ_ARG_ENABLE_BOOL(profiling,
  # For profiling builds keep the symbol information
  if test "$MOZ_PROFILING" -a -z "$STRIP_FLAGS"; then
      case "$OS_TARGET" in
@@ -10,7 +10,7 @@ $OpenBSD$
          STRIP_FLAGS="--strip-debug"
          ;;
      esac
-@@ -2278,7 +2278,7 @@ ia64*-hpux*)
+@@ -2283,7 +2283,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@)) -o $@'
      ;;
  
@@ -19,7 +19,7 @@ $OpenBSD$
      if test "$SO_VERSION"; then
          DLL_SUFFIX=".so.$SO_VERSION"
      else
-@@ -2916,7 +2916,7 @@ dnl Checks for header files.
+@@ -2921,7 +2921,7 @@ dnl Checks for header files.
  dnl ========================================================
  AC_HEADER_DIRENT
  case "$target_os" in
@@ -28,7 +28,7 @@ $OpenBSD$
  # for stuff like -lXshm
      CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
      ;;
-@@ -3222,7 +3222,7 @@ then
+@@ -3227,7 +3227,7 @@ then
  			fi
  			;;
  
@@ -37,7 +37,7 @@ $OpenBSD$
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -3625,7 +3625,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
+@@ -3630,7 +3630,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
      *-android*|*-linuxandroid*)
        :
        ;;
