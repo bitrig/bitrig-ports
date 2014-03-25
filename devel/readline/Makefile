@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/04/18 15:08:01 sthen Exp $
+# $OpenBSD: Makefile,v 1.11 2014/03/25 21:20:39 espie Exp $
 
 COMMENT =		library to edit command lines as they are typed in
 
@@ -14,12 +14,13 @@ PATCHFILES =		readline62-001:0 \
 LIBV =			5.0
 SHARED_LIBS +=		history ${LIBV}
 SHARED_LIBS +=		readline ${LIBV}
+REVISION =		1
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://tiswww.case.edu/php/chet/readline/rltop.html
 
-MAINTAINER =		Laurent Fanis <laurent@openbsd.org>
+MAINTAINER =		Laurent Fanis <laurent.fanis@gmail.com>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
