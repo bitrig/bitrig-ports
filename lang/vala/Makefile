@@ -1,12 +1,12 @@
-# $OpenBSD: Makefile,v 1.65 2014/03/24 19:40:22 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.66 2014/03/25 08:59:45 jasper Exp $
 
 COMMENT=		compiler for the GObject type system
 
 GNOME_PROJECT=		vala
-GNOME_VERSION=		0.22.1
+GNOME_VERSION=		0.24.0
 
-API_V=			0.22
-SHARED_LIBS +=  vala-0.22            0.0      # 0.0
+API_V=			0.24
+SHARED_LIBS +=  vala-0.24            0.0      # 0.0
 
 CATEGORIES=		lang
 
@@ -31,6 +31,5 @@ SUBST_VARS+=		API_V
 
 CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
-CONFIGURE_ARGS+=	--enable-vapigen
 
 .include <bsd.port.mk>
