@@ -1,27 +1,13 @@
-$OpenBSD: patch-Source_WTF_wtf_MathExtras_h,v 1.1 2013/10/06 14:03:43 landry Exp $
+$OpenBSD: patch-Source_WTF_wtf_MathExtras_h,v 1.2 2014/03/25 06:25:45 landry Exp $
 signbit & isfinite are defined in gcc's cmath for 4.6 & 4.8..
 so partly revert https://bugs.webkit.org/show_bug.cgi?id=19975, make it conditional to older gcc
---- Source/WTF/wtf/MathExtras.h.orig	Fri Sep 20 02:24:34 2013
-+++ Source/WTF/wtf/MathExtras.h	Thu Oct 10 14:39:29 2013
-@@ -38,7 +38,7 @@
- #include <ieeefp.h>
+https://bugs.webkit.org/show_bug.cgi?id=129927
+--- Source/WTF/wtf/MathExtras.h.orig	Mon Mar 24 06:05:14 2014
++++ Source/WTF/wtf/MathExtras.h	Fri Apr 11 11:24:22 2014
+@@ -94,21 +94,6 @@ inline bool isinf(double x) { return !finite(x) && !is
+ 
  #endif
  
--#if OS(OPENBSD)
-+#if OS(OPENBSD) || OS(BITRIG)
- #include <sys/types.h>
- #include <machine/ieee.h>
- #endif
-@@ -100,21 +100,6 @@ inline bool signbit(double x) { return copysign(1.0, x
- #endif
- #ifndef isinf
- inline bool isinf(double x) { return !finite(x) && !isnand(x); }
--#endif
--
--} // namespace std
--
--#endif
--
 -#if OS(OPENBSD)
 -
 -namespace std {
@@ -31,6 +17,12 @@ so partly revert https://bugs.webkit.org/show_bug.cgi?id=19975, make it conditio
 -#endif
 -#ifndef signbit
 -inline bool signbit(double x) { struct ieee_double *p = (struct ieee_double *)&x; return p->dbl_sign; }
- #endif
+-#endif
+-
+-} // namespace std
+-
+-#endif
+-
+ #if COMPILER(MSVC)
  
- } // namespace std
+ // Work around a bug in Win, where atan2(+-infinity, +-infinity) yields NaN instead of specific values.
