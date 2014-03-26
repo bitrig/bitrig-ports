@@ -1,16 +1,15 @@
-$OpenBSD$
---- configure.in.orig	Mon Mar 25 15:34:20 2013
-+++ configure.in	Wed Sep  4 09:30:24 2013
-@@ -1958,7 +1958,7 @@ ia64*-hpux*)
-     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
+--- configure.in.orig	Sat Apr  5 13:40:57 2014
++++ configure.in	Sat Apr  5 13:41:47 2014
+@@ -1825,7 +1825,7 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@) -o $@'
      ;;
  
 -*-openbsd*)
-+*-openbsd*|*-bitrig*)
-     if test "$SO_VERSION"; then
-         DLL_SUFFIX=".so.$SO_VERSION"
-     else
-@@ -2762,7 +2762,7 @@ then
++*-openbsd* | *-bitrig*)
+     DLL_SUFFIX=".so.1.0"
+     DSO_CFLAGS=''
+     DSO_PIC_CFLAGS='-fPIC'
+@@ -2665,7 +2665,7 @@ then
  			fi
  			;;
  
@@ -19,15 +18,3 @@ $OpenBSD$
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -4203,8 +4203,9 @@ esac
- if test -z "$SKIP_LIBRARY_CHECKS" -a -z "$NO_EDITLINE"; then
-   if test -n "$JS_WANT_READLINE"; then
-     AC_CHECK_LIB(readline, readline,
--                 EDITLINE_LIBS="-lreadline",
--                 AC_MSG_ERROR([No system readline library found.]))
-+                 EDITLINE_LIBS="-L/usr/local/lib -lreadline",
-+                 AC_MSG_ERROR([No system readline library found.]),
-+		 -L/usr/local/lib)
-   else
-     dnl By default, we use editline
-     JS_NATIVE_EDITLINE=1

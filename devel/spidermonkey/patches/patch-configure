@@ -1,17 +1,19 @@
-$OpenBSD: patch-configure,v 1.1 2013/08/11 09:09:04 landry Exp $
+$OpenBSD: patch-configure,v 1.2 2014/03/26 10:11:01 landry Exp $
 Disable methodjit on mips64
---- configure.orig	Mon Mar 25 15:34:20 2013
-+++ configure	Wed Sep  4 09:36:37 2013
-@@ -7891,7 +7891,7 @@ EOF
-     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,lib$(LIBRARY_NAME)$(DLL_SUFFIX) -o $@'
+--- configure.orig	Wed Dec 11 23:23:20 2013
++++ configure	Sat Apr  5 13:39:25 2014
+@@ -7863,8 +7863,8 @@ EOF
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@) -o $@'
      ;;
  
 -*-openbsd*)
-+*-openbsd*|*-bitrig*)
-     if test "$SO_VERSION"; then
-         DLL_SUFFIX=".so.$SO_VERSION"
-     else
-@@ -8359,7 +8359,7 @@ EOF
+-    DLL_SUFFIX=".so.1.0"
++*-openbsd* | *-bitrig*)
++    DLL_SUFFIX=".so.${SO_VERSION}"
+     DSO_CFLAGS=''
+     DSO_PIC_CFLAGS='-fPIC'
+     DSO_LDOPTS='-shared -fPIC'
+@@ -8331,7 +8331,7 @@ EOF
  
      fi
      ;;
@@ -20,12 +22,12 @@ Disable methodjit on mips64
      ENABLE_METHODJIT=1
      ENABLE_MONOIC=1
      ENABLE_POLYIC=1
-@@ -11078,7 +11078,7 @@ EOF
+@@ -11134,7 +11134,7 @@ EOF
  			fi
  			;;
  
 -	    *-*-openbsd*|*-*-bsdi*)
 +	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
  			cat >> confdefs.pytmp <<\EOF
-         (''' _REENTRANT ''', ' 1 ')
+     (''' _REENTRANT ''', ' 1 ')
  EOF
