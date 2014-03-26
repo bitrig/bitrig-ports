@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2014/03/26 10:42:00 jasper Exp $
+# $OpenBSD: Makefile,v 1.25 2014/03/26 11:05:32 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -6,6 +6,7 @@ COMMENT=		Javascript bindings for GNOME
 
 GNOME_PROJECT=		gjs
 GNOME_VERSION=		1.40.0
+REVISION=		0
 
 REVISION=		1
 
@@ -43,7 +44,7 @@ MODPY_BUILDDEP= 	No
 LIBTOOL_FLAGS=		--tag=disable-static
 
 LIB_DEPENDS=		devel/gobject-introspection \
-			devel/spidermonkey>=24.2.0 \
+			devel/spidermonkey>=24.0,<25.0 \
 			x11/gtk+3 \
 			devel/readline
 
