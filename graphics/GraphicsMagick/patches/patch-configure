@@ -1,4 +1,4 @@
-$OpenBSD: patch-configure,v 1.7 2013/04/15 01:58:32 brad Exp $
+$OpenBSD: patch-configure,v 1.8 2014/03/27 02:15:34 brad Exp $
 --- configure.orig	Sun Mar 10 00:21:59 2013
 +++ configure	Sat Apr 27 11:24:23 2013
 @@ -8274,7 +8274,7 @@ else
@@ -82,7 +82,7 @@ $OpenBSD: patch-configure,v 1.7 2013/04/15 01:58:32 brad Exp $
  
  cat >>confdefs.h <<_ACEOF
  #define MagickLibSubdir "$MagickLibSubdir"
-@@ -27039,7 +27039,7 @@ _ACEOF
+@@ -27199,7 +27199,7 @@ _ACEOF
  
  #
  # Path to GraphicsMagick share files
