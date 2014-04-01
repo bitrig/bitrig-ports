@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.55 2014/04/01 15:31:47 jasper Exp $
+# $OpenBSD: Makefile,v 1.56 2014/04/01 18:06:32 jasper Exp $
 
 SHARED_ONLY=	Yes
 
@@ -19,7 +19,7 @@ WANTLIB += pthread z
 MODULES=	devel/gettext \
 		x11/gnome
 
-MODGNOME_TOOLS=	gobject-introspection
+MODGNOME_TOOLS +=	gobject-introspection
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
 CFLAGS+= -Wno-error=format-nonliteral
 
