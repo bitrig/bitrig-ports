@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.237 2014/03/27 12:42:05 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.238 2014/04/01 07:18:34 ajacoutot Exp $
 
 COMMENT=		GNOME session
 
@@ -55,7 +55,6 @@ CFLAGS+= -Wno-error=format-nonliteral
 MODGNOME_CPPFLAGS=-I${X11BASE}/include
 MODGNOME_LDFLAGS=-L${X11BASE}/lib
 
-CONFIGURE_ARGS=	--disable-systemd \
-		--enable-docbook-docs
+CONFIGURE_ARGS=	--disable-systemd
 
 .include <bsd.port.mk>
