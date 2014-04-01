@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2014/03/26 16:05:38 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.27 2014/04/01 13:21:46 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -6,7 +6,7 @@ COMMENT=		Javascript bindings for GNOME
 
 GNOME_PROJECT=		gjs
 GNOME_VERSION=		1.40.0
-REVISION=		0
+REVISION=		1
 
 REVISION=		1
 
@@ -42,14 +42,11 @@ MODCLANG_LANGS =	c c++
 MODPY_RUNDEP=		No
 MODPY_BUILDDEP= 	No
 
-LIBTOOL_FLAGS=		--tag=disable-static
-
 LIB_DEPENDS=		devel/gobject-introspection \
 			devel/spidermonkey>=24.0,<25.0 \
 			x11/gtk+3 \
 			devel/readline
 
-CONFIGURE_ARGS=		--disable-static
 CONFIGURE_ENV=		"CFLAGS=-Wno-error=format=2 ${CFLAGS}"
 
 TEST_DEPENDS=		sysutils/e2fsprogs #uuidgen(1)
