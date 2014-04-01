@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.118 2014/04/01 13:21:46 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.119 2014/04/01 15:31:47 jasper Exp $
 
 SHARED_ONLY=		Yes
 
@@ -64,7 +64,7 @@ RUN_DEPENDS +=		multimedia/gstreamer1/plugins-good \
 
 MODGNOME_DESKTOP_FILE=	Yes
 MODGNOME_ICON_CACHE=	Yes
-MODGNOME_TOOLS=		gi vala yelp
+MODGNOME_TOOLS=		gobject-introspection vala yelp
 
 CFLAGS+= -Wno-error=format-nonliteral
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.57 2014/03/27 08:23:28 jasper Exp $
+# $OpenBSD: Makefile,v 1.58 2014/04/01 15:31:47 jasper Exp $
 
 SHARED_ONLY=		Yes
 
@@ -29,7 +29,7 @@ MODULES=		devel/gettext \
 			x11/gnome
 
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/build-aux
-MODGNOME_TOOLS= 	gi vala
+MODGNOME_TOOLS= 	gobject-introspection vala
 MODGNOME_ICON_CACHE=	Yes
 
 LIB_DEPENDS=		devel/libsoup>=2.42.0 \
