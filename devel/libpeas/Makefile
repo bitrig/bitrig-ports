@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2014/04/01 18:38:53 jasper Exp $
+# $OpenBSD: Makefile,v 1.43 2014/04/02 09:36:10 jasper Exp $
 
 COMMENT=	gobject-based plugins engine
 
@@ -39,7 +39,7 @@ LIB_DEPENDS=	devel/gobject-introspection \
 		x11/gtk+3 \
 		devel/readline
 
-MODGNOME_TOOLS=		gtk-update-icon-cache
+MODGNOME_TOOLS +=	gtk-update-icon-cache
 MODPY_VERSION=		${MODPY_DEFAULT_VERSION_3}
 
 CONFIGURE_STYLE=gnu
