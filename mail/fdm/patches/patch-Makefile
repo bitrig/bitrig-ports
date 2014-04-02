@@ -1,0 +1,11 @@
+--- Makefile.orig	Fri Jun 26 17:58:00 2009
++++ Makefile	Wed Apr  2 21:03:19 2014
+@@ -15,7 +15,7 @@ LIBS+= -lssl -lcrypto -ltdb -lz
+ 
+ # This sort of sucks but gets rid of the stupid warning and should work on
+ # most platforms...
+-CCV!= (LC_ALL=C ${CC} -v 2>&1|awk '/gcc version 4/') || true
++CCV!= (LC_ALL=C ${CC} -v 2>&1|awk '/gcc version 4|clang version/') || true
+ .if empty(CCV)
+ CPPFLAGS:= -I. -I- -I/usr/local/include ${CPPFLAGS}
+ .else

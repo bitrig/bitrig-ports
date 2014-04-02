@@ -1,0 +1,11 @@
+--- configure.orig	Wed Apr  2 20:50:23 2014
++++ configure	Wed Apr  2 20:51:31 2014
+@@ -11,7 +11,7 @@ echo "# $FDM_PLATFORM" >|$CONFIG_MK
+ 
+ case $FDM_PLATFORM in
+ # ------------------------------------------------------------------------------
+-    OpenBSD)
++    OpenBSD|Bitrig)
+ 	cat <<EOF >>$CONFIG_H
+ #define HAVE_QUEUE_H
+ #define HAVE_SETPROCTITLE
