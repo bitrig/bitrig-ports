@@ -37,6 +37,8 @@ CONFIGURE_ENV +=	CPPFLAGS="-I${LOCALBASE}/include" \
 CONFIGURE_ARGS +=	--datarootdir=${LOCALBASE}/lib \
 			--datadir=${LOCALBASE}/share/usbutils
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/usbhid-dump/auxdir
+
 pre-configure:
 	cd ${WRKSRC} && ${SETENV} AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
 				AUTOCONF_VERSION=${AUTOCONF_VERSION} \
