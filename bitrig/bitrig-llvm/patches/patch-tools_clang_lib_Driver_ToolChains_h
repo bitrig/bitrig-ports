@@ -1,0 +1,10 @@
+--- tools/clang/lib/Driver/ToolChains.h.orig	Sat Apr  5 14:03:59 2014
++++ tools/clang/lib/Driver/ToolChains.h	Sat Apr  5 14:04:25 2014
+@@ -485,6 +485,7 @@ class LLVM_LIBRARY_VISIBILITY Bitrig : public Generic_
+   virtual bool IsObjCNonFragileABIDefault() const { return true; }
+   virtual bool IsObjCLegacyDispatchDefault() const { return false; }
+ 
++  virtual CXXStdlibType GetCXXStdlibType(const llvm::opt::ArgList &Args) const;
+   virtual void
+   AddClangCXXStdlibIncludeArgs(const llvm::opt::ArgList &DriverArgs,
+                                llvm::opt::ArgStringList &CC1Args) const;
