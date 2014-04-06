@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.48 2014/01/10 19:05:07 landry Exp $
+# $OpenBSD: Makefile,v 1.49 2014/04/06 21:10:30 sthen Exp $
 
 COMMENT=	Python charting and plotting API
 
@@ -31,7 +31,7 @@ RUN_DEPENDS=	devel/py-tz \
 		devel/py-dateutil \
 		math/py-numpy \
 		x11/py-gtk2 \
-		graphics/py-Imaging \
+		graphics/py-Pillow \
 		${MODPY_TKINTER_DEPENDS}
 BUILD_DEPENDS=	${RUN_DEPENDS}
 LIB_DEPENDS=	graphics/png
