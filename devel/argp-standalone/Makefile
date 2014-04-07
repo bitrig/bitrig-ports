@@ -17,7 +17,7 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED}
 CONFIGURE_ARGS+=	--disable-dependency-tracking
 
-CFLAGS=			"-std=c89"
+CFLAGS=			-std=gnu89
 
 do-install:
 	${INSTALL_DATA} ${WRKBUILD}/libargp.a ${PREFIX}/lib
