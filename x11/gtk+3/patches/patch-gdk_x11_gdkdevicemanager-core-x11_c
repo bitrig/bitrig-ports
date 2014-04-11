@@ -1,7 +1,7 @@
 $OpenBSD$
---- gdk/x11/gdkdevicemanager-core-x11.c.orig	Sun Jul 15 11:48:47 2012
-+++ gdk/x11/gdkdevicemanager-core-x11.c	Mon Aug 20 10:36:50 2012
-@@ -803,7 +803,7 @@ _gdk_device_manager_core_handle_focus (GdkWindow *wind
+--- gdk/x11/gdkdevicemanager-core-x11.c.orig	Wed Mar  5 23:42:58 2014
++++ gdk/x11/gdkdevicemanager-core-x11.c	Fri Apr 11 06:29:06 2014
+@@ -807,7 +807,7 @@ _gdk_device_manager_core_handle_focus (GdkWindow *wind
                                         int        mode)
  {
    GdkToplevelX11 *toplevel;
@@ -10,7 +10,7 @@ $OpenBSD$
  
    g_return_if_fail (GDK_IS_WINDOW (window));
    g_return_if_fail (GDK_IS_DEVICE (device));
-@@ -823,7 +823,7 @@ _gdk_device_manager_core_handle_focus (GdkWindow *wind
+@@ -827,7 +827,7 @@ _gdk_device_manager_core_handle_focus (GdkWindow *wind
    if (toplevel->focus_window == original)
      return;
  
@@ -19,7 +19,7 @@ $OpenBSD$
  
    switch (detail)
      {
-@@ -870,7 +870,9 @@ _gdk_device_manager_core_handle_focus (GdkWindow *wind
+@@ -886,7 +886,9 @@ _gdk_device_manager_core_handle_focus (GdkWindow *wind
        break;
      }
  
