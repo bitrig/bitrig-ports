@@ -33,7 +33,7 @@ WANTLIB += c m pthread readline nspr4 ncurses plc4 plds4 stdc++ z
 MODULES =	lang/python
 MODPY_RUNDEP =	No
 TEST_DEPENDS = ${MODPY_RUN_DEPENDS}
-LIB_DEPENDS =	devel/nspr
+LIB_DEPENDS =	devel/nspr devel/readline
 
 SUBST_VARS +=	MOZILLA_VERSION
 
@@ -46,8 +46,15 @@ CONFIGURE_ARGS =	--with-pthread \
 			--enable-ctypes \
 			--enable-threadsafe
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build/autoconf \
+				${WRKDIST}/ctypes/libffi
+
 CONFIGURE_ENV +=	SO_VERSION="${SO_VERSION}" \
 			MOZILLA_VERSION="${MOZILLA_VERSION}" \
-			LIBS=-lncurses
+			LIBS=-lncurses \
+			LDFLAGS="${LDFLAGS} -L${LOCALBASE}/lib"
+
+CC =			gcc
+CXX =			g++
 
 .include <bsd.port.mk>
