@@ -1,15 +1,6 @@
 $OpenBSD: patch-gst-libs_ext_libav_configure,v 1.1 2013/02/05 13:07:09 brad Exp $
---- gst-libs/ext/libav/configure.orig	Wed Nov  2 16:16:24 2011
-+++ gst-libs/ext/libav/configure	Mon Feb 11 07:39:26 2013
-@@ -2379,7 +2379,7 @@ case $target_os in
-         oss_indev_extralibs="-lossaudio"
-         oss_outdev_extralibs="-lossaudio"
-         ;;
--    openbsd)
-+    openbsd | bitrig)
-         enable malloc_aligned
-         # On OpenBSD 4.5. the compiler does not use PIC unless
-         # explicitly using -fPIC. Libav builds fine without PIC,
+--- gst-libs/ext/libav/configure.orig	Mon Feb  4 08:39:50 2013
++++ gst-libs/ext/libav/configure	Mon Feb  4 08:40:36 2013
 @@ -2562,7 +2562,7 @@ die_license_disabled version3 libvo_amrwbenc
  
  enabled version3 && { enabled gpl && enable gplv3 || enable lgplv3; }

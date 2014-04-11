@@ -21,8 +21,6 @@ WANTLIB += xml++-2.6 xml2 z
 
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/${NAME}/${V:C/^([0-9]+\.[0-9]+).*/\1/}/}
 
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
-
 BUILD_DEPENDS=	devel/doxygen
 LIB_DEPENDS=	devel/glib2mm>=2.33.12 \
 		multimedia/gstreamer-0.10/plugins-base \
