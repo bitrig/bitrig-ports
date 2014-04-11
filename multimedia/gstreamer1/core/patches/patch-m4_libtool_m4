@@ -1,0 +1,65 @@
+--- m4/libtool.m4.orig	Fri Apr 11 02:54:20 2014
++++ m4/libtool.m4	Fri Apr 11 02:56:06 2014
+@@ -1477,7 +1477,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
+@@ -1645,7 +1645,7 @@ AC_CACHE_VAL([lt_cv_sys_max_cmd_len], [dnl
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -2730,7 +2730,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -3312,7 +3312,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[[^/]]+(\.so\.[[0-9]]+\.[[0-9]]+|\.so|_pic\.a)$'
+   else
+@@ -4645,7 +4645,7 @@ dnl Note also adjust exclude_expsyms for C++ above.
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   linux* | k*bsd*-gnu | gnu*)
+@@ -5376,7 +5376,7 @@ _LT_EOF
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	_LT_TAGVAR(hardcode_direct, $1)=yes
+ 	_LT_TAGVAR(hardcode_shlibpath_var, $1)=no
+@@ -6581,7 +6581,7 @@ if test "$_lt_caught_CXX_error" != yes; then
+ 	_LT_TAGVAR(ld_shlibs, $1)=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd* | bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  _LT_TAGVAR(hardcode_direct, $1)=yes
+ 	  _LT_TAGVAR(hardcode_shlibpath_var, $1)=no
