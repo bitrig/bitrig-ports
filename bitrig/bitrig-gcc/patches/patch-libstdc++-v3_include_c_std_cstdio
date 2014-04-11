@@ -1,0 +1,10 @@
+--- libstdc++-v3/include/c_std/cstdio.orig	Fri Apr 11 16:12:30 2014
++++ libstdc++-v3/include/c_std/cstdio	Fri Apr 11 16:12:41 2014
+@@ -114,7 +114,6 @@ namespace std
+   using ::fwrite;
+   using ::getc;
+   using ::getchar;
+-  using ::gets;
+   using ::perror;
+   using ::printf;
+   using ::putc;

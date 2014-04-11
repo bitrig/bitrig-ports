@@ -13,8 +13,8 @@ LIBSTDC_VERSION = 15.0
 PKGNAME-main =  bitrig-gcc-${FULL_PKGVERSION}
 PKGNAME-gcclibs= bitrig-gcclibs-${FULL_PKGVERSION}
 
-REVISION-main = 19
-REVISION-gcclibs=19
+REVISION-main = 20
+REVISION-gcclibs=20
 
 SHARED_LIBS =	stdc++		${LIBSTDC_VERSION} \
 		ssp		1.0 \
