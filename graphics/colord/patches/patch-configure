@@ -1,10 +1,10 @@
-$OpenBSD: patch-configure,v 1.16 2013/12/10 13:51:16 ajacoutot Exp $
+penBSD: patch-configure,v 1.17 2014/04/11 10:48:17 ajacoutot Exp $
 
 /var/lib -> /var/db
 
---- configure.orig	Wed Dec  4 17:12:01 2013
-+++ configure	Wed Dec 11 19:17:55 2013
-@@ -4994,7 +4994,7 @@ else
+--- configure.orig	Fri Feb 28 13:44:15 2014
++++ configure	Sat Apr 12 08:36:21 2014
+@@ -5006,7 +5006,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -13,7 +13,7 @@ $OpenBSD: patch-configure,v 1.16 2013/12/10 13:51:16 ajacoutot Exp $
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5509,7 +5509,7 @@ newos6*)
+@@ -5521,7 +5521,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -22,7 +22,7 @@ $OpenBSD: patch-configure,v 1.16 2013/12/10 13:51:16 ajacoutot Exp $
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -6126,7 +6126,7 @@ old_postuninstall_cmds=
+@@ -6138,7 +6138,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -31,7 +31,7 @@ $OpenBSD: patch-configure,v 1.16 2013/12/10 13:51:16 ajacoutot Exp $
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -8895,7 +8895,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8907,7 +8907,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -40,7 +40,7 @@ $OpenBSD: patch-configure,v 1.16 2013/12/10 13:51:16 ajacoutot Exp $
      with_gnu_ld=no
      ;;
    esac
-@@ -9771,7 +9771,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -9783,7 +9783,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -49,7 +49,7 @@ $OpenBSD: patch-configure,v 1.16 2013/12/10 13:51:16 ajacoutot Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10818,7 +10818,7 @@ newsos6)
+@@ -10830,7 +10830,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -58,12 +58,12 @@ $OpenBSD: patch-configure,v 1.16 2013/12/10 13:51:16 ajacoutot Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -18129,7 +18129,7 @@ _ACEOF
- fi
+@@ -18237,7 +18237,7 @@ fi
+ 
  
  # per-machine directory
 -CD_SYSTEM_PROFILES_DIR="\$(localstatedir)/lib/colord/icc"
 +CD_SYSTEM_PROFILES_DIR="\$(localstatedir)/db/colord/icc"
  
  
- ac_config_files="$ac_config_files Makefile etc/Makefile contrib/Makefile contrib/session-helper/Makefile contrib/colord-sane/Makefile examples/Makefile man/Makefile doc/Makefile doc/api/Makefile doc/api/dbus/Makefile doc/api/version.xml data/Makefile data/figures/Makefile data/profiles/Makefile data/ti1/Makefile data/org.freedesktop.ColorManager.conf data/tests/Makefile policy/Makefile rules/Makefile rules/69-cd-sensors.rules po/Makefile.in src/Makefile src/plugins/Makefile src/sensors/Makefile client/Makefile lib/Makefile lib/colord/cd-version.h lib/colord/colord.pc lib/colord/Makefile lib/colorhug/Makefile lib/colorhug/colorhug.pc lib/colorhug/ch-version.h lib/dtp94/Makefile lib/huey/Makefile lib/munki/Makefile"
+ # only include the colord.pc Requires.private of the libraries we actually use
