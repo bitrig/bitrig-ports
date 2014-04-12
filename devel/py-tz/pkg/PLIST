@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.14 2013/09/05 19:05:42 nigel Exp $
+@comment $OpenBSD: PLIST,v 1.15 2014/04/12 09:00:56 shadchin Exp $
 lib/python${MODPY_VERSION}/site-packages/pytz/
 lib/python${MODPY_VERSION}/site-packages/pytz-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/pytz-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
@@ -255,6 +255,7 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/Palmer
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/Rothera
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/South_Pole
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/Syowa
+lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/Troll
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/Vostok
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Arctic/
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Arctic/Longyearbyen
@@ -326,9 +327,6 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Qatar
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Qyzylorda
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Rangoon
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Riyadh
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Riyadh87
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Riyadh88
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Riyadh89
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Saigon
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Sakhalin
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Samarkand
@@ -548,10 +546,6 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mexico/
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mexico/BajaNorte
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mexico/BajaSur
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mexico/General
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mideast/
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mideast/Riyadh87
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mideast/Riyadh88
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mideast/Riyadh89
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/NZ
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/NZ-CHAT
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Navajo
