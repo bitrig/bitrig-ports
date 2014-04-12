@@ -22,6 +22,8 @@ USE_GROFF =		Yes
 
 CONFIGURE_ARGS =	--disable-fam \
 			--with-logfile=/var/www/logs/access_log
+CONFIGURE_ENV =		CPPFLAGS='-I${LOCALBASE}/include' \
+			LDFLAGS='-L${LOCALBASE}/lib'
 
 WANTLIB +=		c m ncurses readline stdc++
 LIB_DEPENDS=		devel/readline
