@@ -17,6 +17,8 @@ WANTLIB=		c curses
 
 NO_TEST=		Yes
 
+MAKE_FLAGS=		CFLAGS=-Wnoself-assign
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/apcd/apcd ${PREFIX}/sbin
 	${INSTALL_PROGRAM} ${WRKSRC}/apcmon/apcmon ${PREFIX}/sbin
