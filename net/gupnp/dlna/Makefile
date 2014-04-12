@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2014/04/02 09:36:11 jasper Exp $
+# OpenBSD: Makefile,v 1.25 2014/04/02 09:36:11 jasper Exp $
 
 COMMENT=		DLNA integration for GUPnP
 
@@ -23,10 +23,6 @@ RUN_DEPENDS=		net/gupnp/core
 
 # support for various media files
 RUN_DEPENDS+=		multimedia/gstreamer1/plugins-ugly
-
-# this doesn't yet work with our libtool, it will get confused and
-# pick up the wrong libraries
-USE_LIBTOOL=		gnu
 
 MODGNU_CONFIG_GUESS_DIRS= ${WRKDIST}/build-aux
 

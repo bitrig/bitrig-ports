@@ -1,7 +1,7 @@
 $OpenBSD$
---- configure.orig	Wed Jun 27 10:53:13 CEST 2012
-+++ configure	Wed Jun 27 10:53:13 CEST 2012
-@@ -4849,7 +4849,7 @@ else
+--- configure.orig	Thu May 30 13:01:35 2013
++++ configure	Sat Apr 12 07:21:22 2014
+@@ -5059,7 +5059,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -10,7 +10,7 @@ $OpenBSD$
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5356,7 +5356,7 @@ newos6*)
+@@ -5568,7 +5568,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -19,16 +19,16 @@ $OpenBSD$
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -5969,7 +5969,7 @@ old_postuninstall_cmds=
+@@ -6181,7 +6181,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
 -  openbsd*)
 +  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -8721,7 +8721,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8999,7 +8999,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -37,7 +37,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    linux* | k*bsd*-gnu | gnu*)
-@@ -9605,7 +9605,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -9879,7 +9879,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -46,7 +46,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10669,7 +10669,7 @@ newsos6)
+@@ -10923,7 +10923,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
