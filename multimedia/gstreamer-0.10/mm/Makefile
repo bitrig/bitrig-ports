@@ -31,6 +31,8 @@ BUILD_DEPENDS += x11/gtk3mm
 
 CONFIGURE_STYLE=	gnu
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
+
 post-install:
 	# post-install: do nothing to override Makefile.inc
 
