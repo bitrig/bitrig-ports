@@ -1,0 +1,39 @@
+--- configure.orig	Mon Aug  5 10:05:12 2013
++++ configure	Sat Apr 12 11:38:17 2014
+@@ -9516,7 +9516,7 @@ _ACEOF
+ #define HAVE_NETBSD_OS 1
+ _ACEOF
+   ;;
+-   *-*-openbsd*) cat >>confdefs.h <<\_ACEOF
++   *-*-openbsd* | *-*-bitrig*) cat >>confdefs.h <<\_ACEOF
+ #define HAVE_OPENBSD_OS 1
+ _ACEOF
+  ;;
+@@ -10579,7 +10579,7 @@ if test "${enable_usb+set}" = set; then
+             echo "$as_me:$LINENO: result: Using Linux USB driver." >&5
+ echo "${ECHO_T}Using Linux USB driver." >&6
+             ;;
+-         *-*-freebsd* | *-*-openbsd* | *-*-netbsd*)
++         *-*-freebsd* | *-*-openbsd* | *-*-bitrig* | *-*-netbsd*)
+             LIBUSBHIDINC="-I\$(topdir)/src/libusbhid"
+             LIBUSBHID=libusbhid
+             APCDRVLIBS="$APCDRVLIBS \$(topdir)/src/libusbhid/libusbhid.a"
+@@ -12233,6 +12233,9 @@ then
+ elif test $HAVE_UNAME=yes -a x`uname -s` = xOpenBSD
+ then
+    DISTNAME=openbsd
++elif test $HAVE_UNAME=yes -a x`uname -s` = xBitrig
++then
++   DISTNAME=openbsd
+ elif test $HAVE_UNAME=yes -a x`uname -s` = xBSD/OS
+ then
+    DISTNAME=bsdi
+@@ -12394,7 +12397,7 @@ netbsd)
+    DFILES="\
+       platforms/netbsd/apcupsd"
+    ;;
+-openbsd)
++openbsd | bitrig)
+    DISTVER=`uname -a |awk '{print $3}'`
+    SERIALDEV=/dev/cua01
+    LOCKDIR=/var/spool/lock

@@ -30,6 +30,8 @@ USE_GMAKE =		Yes
 NO_TEST =		Yes
 MAKE_FLAGS =		VERBOSE=2
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/autoconf
+
 WEB_ROOT =		${VARBASE}/www
 SUBST_VARS +=		WEB_ROOT ^BASESYSCONFDIR
 SYSCONFDIR =		${BASESYSCONFDIR}/apcupsd
@@ -42,6 +44,8 @@ CONFIGURE_ARGS =	--mandir=${PREFIX}/man \
 			--with-nisip=127.0.0.1 \
 			--enable-test \
 			--enable-usb
+CONFIGURE_ENV +=	LIBS="-lstdc++"
+
 
 PSEUDO_FLAVORS =	no_x11
 FLAVOR ?=
