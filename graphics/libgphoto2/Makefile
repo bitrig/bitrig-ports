@@ -25,6 +25,7 @@ WANTLIB += pthread pthread-stubs tiff usb usb-1.0 vpx xml2 z
 MAKE_FLAGS =		INTLLIBS='$$(LTLIBINTL)'
 
 CONFIGURE_STYLE =	gnu
+USE_LIBTOOL =		gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/auto-aux ${WRKSRC}/libgphoto2_port/auto-aux
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
