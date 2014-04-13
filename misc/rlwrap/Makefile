@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 11:23:58 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2014/04/13 01:01:39 naddy Exp $
 
 COMMENT=		generic readline wrapper for various programs
 
@@ -20,7 +20,6 @@ CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST} \
 				${WRKDIST}/tools
 
-USE_GROFF =		Yes
 TEST_IS_INTERACTIVE=	Yes
 CONFIGURE_ARGS =	CPPFLAGS="-I${LOCALBASE}/include" LDFLAGS="-L${LOCALBASE}/lib"
 
