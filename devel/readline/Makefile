@@ -14,7 +14,6 @@ PATCHFILES =		readline62-001:0 \
 LIBV =			5.0
 SHARED_LIBS +=		history ${LIBV}
 SHARED_LIBS +=		readline ${LIBV}
-REVISION =		1
 
 CATEGORIES =		devel
 
