@@ -43,6 +43,8 @@ CONFIGURE_ARGS=	--with-libpcap=included \
 		--without-nmap-update \
 		--disable-nls
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/libpcap
+
 WANTLIB-main=	c crypto m ssl stdc++ pcre pthread ${MODLUA_WANTLIB}
 LIB_DEPENDS-main=devel/pcre \
 		${MODLUA_LIB_DEPENDS}
