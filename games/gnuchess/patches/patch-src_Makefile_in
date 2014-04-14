@@ -1,0 +1,11 @@
+--- src/Makefile.in.orig	Sun Apr 13 11:20:46 2014
++++ src/Makefile.in	Sun Apr 13 11:20:48 2014
+@@ -393,7 +393,7 @@ AM_LDFLAGS = $(PTHREAD_LDFLAGS) $(PTHREAD_LIBS)
+ AM_CPPFLAGS = -I$(top_srcdir)/lib -I$(top_builddir)/lib
+ DISTCLEANFILES = *~
+ SUBDIRS = frontend adapter engine
+-gnuchess_LDADD = $(LIBINTL) frontend/libfrontend.a adapter/libadapter.a engine/libengine.a
++gnuchess_LDADD = frontend/libfrontend.a adapter/libadapter.a engine/libengine.a $(LIBINTL) 
+ BUILT_SOURCES = configmake.h
+ CLEANFILES = configmake.h configmake.h-t
+ all: $(BUILT_SOURCES) config.h
