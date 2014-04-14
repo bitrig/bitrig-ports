@@ -6,6 +6,7 @@ COMMENT=	OpenPrinting CUPS filters
 
 DISTNAME=	cups-filters-1.0.52
 CATEGORIES=	print
+REVISION=	0
 
 SHARED_LIBS +=  cupsfilters          1.0      # 1.0
 SHARED_LIBS +=  fontembed            0.0      # 1.0
@@ -24,15 +25,6 @@ WANTLIB += pcre png poppler pthread pthread-stubs qpdf roken ssl
 WANTLIB += tiff wind z
 
 MASTER_SITES=	http://www.openprinting.org/download/cups-filters/
-
-# work around some issues in libstc++
-CC=gcc
-CXX=g++
-
-# cc1plus: error: unrecognized command line option "-std=c++0x"
-MODULES +=	gcc4
-MODGCC4_ARCHS=	*
-MODGCC4_LANGS=	c++
 
 BUILD_DEPENDS=	print/ghostscript/gnu
 
