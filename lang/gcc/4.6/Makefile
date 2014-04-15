@@ -24,9 +24,9 @@ PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 PKGNAME-go =	gccgo-${FULL_PKGVERSION}
 PKGSPEC-main = gcc->=4.6,<4.7
 
-REVISION-main =	7
-REVISION-c++ =	4
-#REVISION-estdc =
+REVISION-main =	8
+REVISION-c++ =	5
+REVISION-estdc =0
 REVISION-f95 =	4
 REVISION-java =	4
 REVISION-objc =	3
