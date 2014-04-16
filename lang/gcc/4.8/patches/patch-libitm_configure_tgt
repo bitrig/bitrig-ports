@@ -1,0 +1,11 @@
+--- libitm/configure.tgt.orig	Mon Mar  3 16:57:39 2014
++++ libitm/configure.tgt	Mon Mar  3 16:59:16 2014
+@@ -135,7 +135,7 @@ case "${target}" in
+ 	;;
+ 
+   *-*-gnu* | *-*-k*bsd*-gnu \
+-  | *-*-netbsd* | *-*-freebsd* | *-*-openbsd* \
++  | *-*-netbsd* | *-*-freebsd* | *-*-openbsd* | *-*-bitrig* \
+   | *-*-solaris2* | *-*-sysv4* | *-*-hpux11* \
+   | *-*-darwin* | *-*-aix*)
+ 	# POSIX system.  The OS is supported.

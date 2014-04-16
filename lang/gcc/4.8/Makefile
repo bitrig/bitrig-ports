@@ -57,7 +57,8 @@ FLAVOR ?=
 ONLY_FOR_ARCHS-ada = amd64 i386 sparc64
 ONLY_FOR_ARCHS-java = amd64 i386 powerpc sparc64
 
-MULTI_PACKAGES = -main -f95 -objc -c++ -estdc -java -ada
+#MULTI_PACKAGES = -main -f95 -objc -c++ -estdc -java -ada
+MULTI_PACKAGES = -main -f95 -objc -c++ -estdc -java
 
 MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
@@ -234,7 +235,7 @@ LIB_DEPENDS +=		devel/gmp>=4.2 \
 LIB_DEPENDS-estdc =
 
 .if ${MACHINE_ARCH:Mamd64}
-CONFIG = x86_64-unknown-openbsd${OSREV}
+CONFIG = x86_64-unknown-bitrig${OSREV}
 .endif
 
 post-extract:
@@ -248,7 +249,7 @@ post-extract:
 	echo 'GNAT_ROOT=${WRKDIR}/bootstrap GCC_ROOT=${WRKDIR}/bootstrap LD_LIBRARY_PATH=${WRKDIR}/bootstrap/system-libs exec ${WRKDIR}/bootstrap/bin/e$f "$$@"' >>${WRKDIR}/bin/$f
 	chmod a+x ${WRKDIR}/bin/$f
 .endfor
-	rm -rf ${WRKDIR}/bootstrap/lib/gcc/*-unknown-openbsd*/$V/include-fixed
+	rm -rf ${WRKDIR}/bootstrap/lib/gcc/*-unknown-bitrig*/$V/include-fixed
 	ln -sf /usr/bin/nm ${WRKDIR}/bin/enm
 	echo "# This file automatically generated" >> ${WRKSRC}/libversions
 .for l v in ${SHARED_LIBS}
@@ -294,7 +295,7 @@ adastrap: ${ADA_PACKAGE} ${GCC_PACKAGE} ${GXX_PACKAGE}
 	cd ${WRKDIR}/prepare/bootstrap && tar zxf ${GCC_PACKAGE}
 	cd ${WRKDIR}/prepare/bootstrap && tar zxf ${GXX_PACKAGE}
 	rm -rf ${WRKDIR}/prepare/bootstrap/{+*,info,man,share}
-	rm -rf ${WRKDIR}/prepare/bootstrap/lib/gcc/*-unknown-openbsd*/$V/include-fixed
+	rm -rf ${WRKDIR}/prepare/bootstrap/lib/gcc/*-unknown-bitrig*/$V/include-fixed
 	if ! ldd ${WRKDIR}/prepare/bootstrap/bin/egcc | \
 		fgrep libc.so.${ADASTRAP_LIBC-${MACHINE_ARCH}} >/dev/null; then \
 		echo 1>&2 "Error: adastrap egcc linked against unbundled libc"; \

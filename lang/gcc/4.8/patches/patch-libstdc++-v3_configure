@@ -1,6 +1,42 @@
 $OpenBSD: patch-libstdc++-v3_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
---- libstdc++-v3/configure.orig	Thu Dec 20 15:36:56 2012
-+++ libstdc++-v3/configure	Sat Jan 12 13:27:16 2013
+--- libstdc++-v3/configure.orig	Fri May 24 14:10:37 2013
++++ libstdc++-v3/configure	Mon Mar  3 16:46:28 2014
+@@ -5917,7 +5917,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -6347,7 +6347,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -9919,7 +9919,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd*|bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -10910,7 +10910,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -10920,7 +10920,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
@@ -10,6 +46,24 @@ $OpenBSD: patch-libstdc++-v3_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp 
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
+@@ -12917,7 +12917,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd*|bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -14594,7 +14594,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -14604,7 +14604,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
@@ -19,3 +73,12 @@ $OpenBSD: patch-libstdc++-v3_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp 
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
+@@ -15828,7 +15828,7 @@ fi
+       darwin* | freebsd*)
+ 	enable_clocale_flag=darwin
+ 	;;
+-      openbsd*)
++      openbsd*|bitrig*)
+ 	enable_clocale_flag=newlib
+ 	;;
+       *)

@@ -1,7 +1,13 @@
 $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
---- libjava/configure.orig	Wed Dec 12 14:40:15 2012
-+++ libjava/configure	Sat Jan 12 13:27:15 2013
-@@ -6397,7 +6397,7 @@ openbsd*)
+--- libjava/configure.orig	Thu Jun 20 09:12:44 2013
++++ libjava/configure	Mon Mar  3 16:49:35 2014
+@@ -6392,12 +6392,12 @@ nto-qnx)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   version_type=sunos
    need_lib_prefix=no
    need_version=no
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext}$versuffix'
@@ -10,6 +16,42 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
+@@ -7647,7 +7647,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -8077,7 +8077,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -11788,7 +11788,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd*|bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -12779,7 +12779,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -12789,7 +12789,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
@@ -19,6 +61,24 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
+@@ -14786,7 +14786,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd*|bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -16463,7 +16463,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -16473,7 +16473,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
@@ -28,12 +88,21 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
+@@ -18711,7 +18711,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd*|bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_GCJ=yes
+ 	hardcode_shlibpath_var_GCJ=no
 @@ -20754,7 +20754,7 @@ case "$THREADS" in
  	# support for weak references to pthread_* functions ala gthr.h API.
  	THREADSPEC='%{!pthread: %{!shared: %eUnder this configuration, the user must provide -pthread when linking.}}'
  	;;
 -     *-*-freebsd*)
-+     *-*-freebsd* | *-*-openbsd*)
++     *-*-freebsd* | *-*-openbsd*| *-*-bitrig*)
  	# FreeBSD >=5.3 implements a model much closer to other modern UNIX
  	# systems which support threads and -lpthread.
  	THREADLDFLAGS=-pthread

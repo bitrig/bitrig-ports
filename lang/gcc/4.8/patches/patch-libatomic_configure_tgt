@@ -1,0 +1,11 @@
+--- libatomic/configure.tgt.orig	Mon Mar  3 16:43:32 2014
++++ libatomic/configure.tgt	Mon Mar  3 16:43:34 2014
+@@ -106,7 +106,7 @@ case "${target}" in
+ 	;;
+ 
+   *-*-linux* | *-*-gnu* | *-*-k*bsd*-gnu \
+-  | *-*-netbsd* | *-*-freebsd* | *-*-openbsd* \
++  | *-*-netbsd* | *-*-freebsd* | *-*-openbsd* | *-*-bitrig* \
+   | *-*-solaris2* | *-*-sysv4* | *-*-irix6* | *-*-osf* | *-*-hpux11* \
+   | *-*-darwin* | *-*-aix*)
+ 	# POSIX system.  The OS is supported.

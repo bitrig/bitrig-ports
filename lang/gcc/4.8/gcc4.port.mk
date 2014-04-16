@@ -81,6 +81,7 @@ MODGCC4_post-patch +=	chmod +x ${WRKDIR}/bin/${_dest};
 .  else
 .    for _src _dest in ${_MODGCC4_LINKS}
 MODGCC4_post-patch += ln -sf ${LOCALBASE}/bin/${_src} ${WRKDIR}/bin/${_dest};
+MODGCC4_post-patch += echo ln -sf ${LOCALBASE}/bin/${_src} ${WRKDIR}/bin/${_dest};
 .    endfor
 .  endif
 .endif

@@ -1,6 +1,42 @@
 $OpenBSD: patch-libgfortran_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
---- libgfortran/configure.orig	Sat Oct  6 22:56:05 2012
-+++ libgfortran/configure	Fri Oct 12 10:42:48 2012
+--- libgfortran/configure.orig	Wed Oct 16 03:27:58 2013
++++ libgfortran/configure	Mon Mar  3 16:57:02 2014
+@@ -6868,7 +6868,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -7298,7 +7298,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -10739,7 +10739,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd*|bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -11730,7 +11730,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -11740,7 +11740,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
@@ -10,6 +46,24 @@ $OpenBSD: patch-libgfortran_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
+@@ -14536,7 +14536,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd*|bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_FC=yes
+ 	hardcode_shlibpath_var_FC=no
+@@ -15353,7 +15353,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -15363,7 +15363,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
