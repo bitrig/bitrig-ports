@@ -1,0 +1,10 @@
+--- src/rdf_init.c.orig	Thu Apr 17 15:34:51 2014
++++ src/rdf_init.c	Thu Apr 17 15:35:02 2014
+@@ -769,6 +769,7 @@ main(int argc, char *argv[]) 
+     fprintf(stderr, "%s: librdf_new_world failed\n", program);
+     return 1;
+   }
++  librdf_world_init_mutex(world);
+ 
+   fprintf(stdout, "%s: Generating an identifier\n", program);
+   id = librdf_world_get_genid(world);
