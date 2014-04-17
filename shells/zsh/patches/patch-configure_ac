@@ -1,16 +1,25 @@
-$OpenBSD: patch-configure_ac,v 1.1 2010/09/06 18:53:51 nicm Exp $
---- configure.ac.orig	Thu Aug 11 13:08:59 2011
-+++ configure.ac	Fri Jul 13 12:21:25 2012
-@@ -2645,7 +2645,7 @@ char *argv[];
+penBSD: patch-configure_ac,v 1.2 2014/04/17 12:12:20 jasper Exp $
+--- configure.ac.orig	Wed Nov 27 14:00:20 2013
++++ configure.ac	Fri Apr 18 02:14:48 2014
+@@ -756,7 +756,7 @@ AH_TEMPLATE([ZSH_NO_XOPEN],
+ AC_CACHE_CHECK(if _XOPEN_SOURCE_EXTENDED should not be defined,
+ zsh_cv_no_xopen,
+ [[case "$host_os" in
+-  *openbsd*|*freebsd5*|*freebsd6.[012]*|*aix*)
++  *freebsd5*|*freebsd6.[012]*|*aix*)
+   zsh_cv_no_xopen=yes
+   ;;
+   *)
+@@ -2721,7 +2721,7 @@ char *argv[];
      esac
    else
      case "$host" in
 -      *openbsd*)
-+      *openbsd*|*bitrig*)
++      *openbsd* | *bitrig*)
  	case "$host_os" in
  	  openbsd[01].* | openbsd2.[0-7] | openbsd2.[0-7].*)
  	    DLLD="${DLLD=ld}"
-@@ -2692,7 +2692,7 @@ char *argv[];
+@@ -2772,7 +2772,7 @@ char *argv[];
      solaris*|sysv4*|esix*) DLLDFLAGS="${DLLDFLAGS=-G}" ;;
      darwin*)      DLLDFLAGS="${DLLDFLAGS=-bundle -flat_namespace -undefined suppress}" ;;
      beos*|haiku*) DLLDFLAGS="${DLLDFLAGS=-nostart}" ;;
@@ -19,7 +28,7 @@ $OpenBSD: patch-configure_ac,v 1.1 2010/09/06 18:53:51 nicm Exp $
        if test x$zsh_cv_sys_elf = xyes; then
  	DLLDFLAGS="${DLLDFLAGS=-shared -fPIC}"
        else
-@@ -2709,7 +2709,7 @@ char *argv[];
+@@ -2789,7 +2789,7 @@ char *argv[];
    esac
    case "$host" in
      *-hpux*)  EXTRA_LDFLAGS="${EXTRA_LDFLAGS=-Wl,-E}" ;;

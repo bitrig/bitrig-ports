@@ -1,6 +1,6 @@
-$OpenBSD: patch-Completion_Unix_Command__tmux,v 1.2 2009/12/16 15:03:28 pea Exp $
---- Completion/Unix/Command/_tmux.orig	Fri Jun  3 14:52:25 2011
-+++ Completion/Unix/Command/_tmux	Fri Jul 13 12:21:00 2012
+$OpenBSD: patch-Completion_Unix_Command__tmux,v 1.3 2014/04/17 12:12:20 jasper Exp $
+--- Completion/Unix/Command/_tmux.orig	Wed Nov 27 20:00:19 2013
++++ Completion/Unix/Command/_tmux	Mon Apr 14 18:10:09 2014
 @@ -69,6 +69,1497 @@ _tmux_aliasmap=(
      displayp    display-panes
      downp       down-pane

@@ -1,6 +1,6 @@
-$OpenBSD: patch-Doc_zsh_texi,v 1.6 2010/09/06 18:53:51 nicm Exp $
---- Doc/zsh.texi.orig	Wed Feb 22 13:31:24 2012
-+++ Doc/zsh.texi	Fri Jul 13 12:21:01 2012
+$OpenBSD: patch-Doc_zsh_texi,v 1.7 2014/04/17 12:12:20 jasper Exp $
+--- Doc/zsh.texi.orig	Sun Jan  5 19:22:46 2014
++++ Doc/zsh.texi	Mon Apr 14 18:10:09 2014
 @@ -7,6 +7,10 @@
  @end iftex
  @setfilename zsh.info
@@ -12,7 +12,7 @@ $OpenBSD: patch-Doc_zsh_texi,v 1.6 2010/09/06 18:53:51 nicm Exp $
  @c %**end of header
  
  @ifinfo
-@@ -3838,7 +3842,7 @@ you may see in your prompt (see
+@@ -3924,7 +3928,7 @@ you may see in your prompt (see
  A history expansion begins with the first character of the @t{histchars}
  parameter, which is `@t{!}' by default, and may occur anywhere on the
  command line; history expansions do not nest.  The `@t{!}' can be escaped
@@ -21,7 +21,7 @@ $OpenBSD: patch-Doc_zsh_texi,v 1.6 2010/09/06 18:53:51 nicm Exp $
  to suppress its special meaning.  Double quotes will @emph{not} work for
  this.  Following this history character is an optional event designator
  (@ref{Event Designators}) and then an optional word
-@@ -9992,7 +9996,7 @@ For example,
+@@ -10233,7 +10237,7 @@ For example,
  @example
  unsetopt localtraps
  trap - INT
@@ -30,7 +30,7 @@ $OpenBSD: patch-Doc_zsh_texi,v 1.6 2010/09/06 18:53:51 nicm Exp $
  @end example
  
  @noindent
-@@ -19490,7 +19494,7 @@ zstyle ':completion:*:default' list-colors $@{(s.:.)LS
+@@ -20012,7 +20016,7 @@ zstyle ':completion:*:default' list-colors $@{(s.:.)LS
  
  @noindent
  The default colors are the same as for the GNU @t{ls} command and can be
@@ -39,7 +39,7 @@ $OpenBSD: patch-Doc_zsh_texi,v 1.6 2010/09/06 18:53:51 nicm Exp $
  
  @kindex list-dirs-first, completion style
  @item @t{list-dirs-first}
-@@ -19623,7 +19627,7 @@ generates no matches, case-insensitive completion:
+@@ -20145,7 +20149,7 @@ generates no matches, case-insensitive completion:
  
  @noindent
  @example
@@ -48,7 +48,7 @@ $OpenBSD: patch-Doc_zsh_texi,v 1.6 2010/09/06 18:53:51 nicm Exp $
  @end example
  
  @noindent
-@@ -19647,7 +19651,7 @@ case-insensitive completion with @t{_complete}:
+@@ -20169,7 +20173,7 @@ case-insensitive completion with @t{_complete}:
  @example
  zstyle ':completion:*' completer _complete _prefix
  zstyle ':completion:*:complete:*' matcher-list \ 
@@ -57,7 +57,7 @@ $OpenBSD: patch-Doc_zsh_texi,v 1.6 2010/09/06 18:53:51 nicm Exp $
  @end example
  
  @noindent
-@@ -23106,7 +23110,7 @@ generates at least one match. E.g.:
+@@ -23701,7 +23705,7 @@ generates at least one match. E.g.:
  
  @noindent
  @example
@@ -66,7 +66,7 @@ $OpenBSD: patch-Doc_zsh_texi,v 1.6 2010/09/06 18:53:51 nicm Exp $
  @end example
  
  @noindent
-@@ -23318,7 +23322,7 @@ use is
+@@ -23913,7 +23917,7 @@ use is
  
  @noindent
  @example
@@ -75,7 +75,7 @@ $OpenBSD: patch-Doc_zsh_texi,v 1.6 2010/09/06 18:53:51 nicm Exp $
  @end example
  
  @noindent
-@@ -23406,7 +23410,7 @@ performed on the first word in the range.  For example
+@@ -24001,7 +24005,7 @@ performed on the first word in the range.  For example
  
  @noindent
  @example
