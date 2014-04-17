@@ -45,11 +45,8 @@ MODULES=		devel/gettext
 LIB_DEPENDS=		devel/libexecinfo security/gnutls textproc/libxml
 
 MODULES+=		gcc4
-MODGCC4_VERSION=	4.6
 MODGCC4_ARCHS=		*
 MODGCC4_LANGS=		c
-CC=gcc
-CXX=g++
 
 .if ${FLAVOR} == "no_x11"
 CONFIGURE_ARGS+=	--without-x \
