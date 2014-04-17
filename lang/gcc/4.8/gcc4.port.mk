@@ -35,6 +35,7 @@ _MODGCC4_LINKS =
 .  if ${MODGCC4_LANGS:L:Mc}
 BUILD_DEPENDS += lang/gcc/4.8>=4.8,<4.9
 _MODGCC4_LINKS += egcc gcc egcc cc
+CC=egcc
 .  endif
 
 .  if ${MODGCC4_LANGS:L:Mc++}
@@ -45,6 +46,7 @@ LIB_DEPENDS += ${MODGCC4_CPPLIBDEP}
 MODGCC4_CPPWANTLIB = estdc++>=16
 WANTLIB += ${MODGCC4_CPPWANTLIB}
 _MODGCC4_LINKS += eg++ g++ eg++ c++
+CXX=eg++
 .  endif
 
 .  if ${MODGCC4_LANGS:L:Mfortran}
