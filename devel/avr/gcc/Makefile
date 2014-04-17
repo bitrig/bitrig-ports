@@ -20,10 +20,8 @@ DISTFILES=	gcc-core-${V}${EXTRACT_SUFX} \
 MASTER_SITES= 	${MASTER_SITE_GCC:=releases/gcc-$(V)/}
 
 MODULES +=	gcc4
-MODGCC4_VERSION = 4.6
 MODGCC4_ARCHS =	*
 MODGCC4_LANGS =	c
-CC=gcc
 
 DIST_SUBDIR=	gcc
 
