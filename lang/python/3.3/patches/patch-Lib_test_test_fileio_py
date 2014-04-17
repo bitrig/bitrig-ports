@@ -1,7 +1,7 @@
 $OpenBSD$
---- Lib/test/test_fileio.py.orig	Wed Nov 27 23:05:27 2013
-+++ Lib/test/test_fileio.py	Wed Nov 27 23:06:16 2013
-@@ -296,6 +296,7 @@ class OtherFileTests(unittest.TestCase):
+--- Lib/test/test_fileio.py.orig	Sun Mar  9 04:40:17 2014
++++ Lib/test/test_fileio.py	Fri Apr 18 01:34:21 2014
+@@ -295,6 +295,7 @@ class OtherFileTests(unittest.TestCase):
                      self.assertEqual(f.writable(), True)
                      if sys.platform != "darwin" and \
                         'bsd' not in sys.platform and \

@@ -1,8 +1,9 @@
---- Lib/test/test_socket.py.orig	Sun Nov 17 08:22:47 2013
-+++ Lib/test/test_socket.py	Mon Feb 10 21:49:26 2014
-@@ -4532,6 +4532,14 @@ class BufferIOTest(SocketConnectedTest):
+$OpenBSD: patch-Lib_test_test_socket_py,v 1.2 2014/04/17 06:05:59 rpointel Exp $
+--- Lib/test/test_socket.py.orig	Sun Mar  9 04:40:19 2014
++++ Lib/test/test_socket.py	Fri Apr 18 01:34:21 2014
+@@ -4581,6 +4581,14 @@ class BufferIOTest(SocketConnectedTest):
  
-     _testRecvFromIntoMemoryview = _testRecvFromIntoArray
+     _testRecvFromIntoEmptyBuffer = _testRecvFromIntoArray
  
 +    def testRecvFromIntoSmallBuffer(self):
 +        # See issue #20246.

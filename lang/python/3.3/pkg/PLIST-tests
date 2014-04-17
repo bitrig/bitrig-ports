@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST-tests,v 1.2 2013/05/22 12:37:05 fgsch Exp $
+@comment $OpenBSD: PLIST-tests,v 1.3 2014/04/17 06:05:59 rpointel Exp $
 @option no-default-conflict
 @conflict python-tests->=3.3,<3.4
 @pkgpath lang/python3/3.3,-tests
@@ -18,6 +18,8 @@ lib/python3.3/test/__pycache__/autotest.cpython-33.pyc
 lib/python3.3/test/__pycache__/autotest.cpython-33.pyo
 lib/python3.3/test/__pycache__/buffer_tests.cpython-33.pyc
 lib/python3.3/test/__pycache__/buffer_tests.cpython-33.pyo
+lib/python3.3/test/__pycache__/coding20731.cpython-33.pyc
+lib/python3.3/test/__pycache__/coding20731.cpython-33.pyo
 lib/python3.3/test/__pycache__/curses_tests.cpython-33.pyc
 lib/python3.3/test/__pycache__/curses_tests.cpython-33.pyo
 lib/python3.3/test/__pycache__/datetimetester.cpython-33.pyc
@@ -360,6 +362,8 @@ lib/python3.3/test/__pycache__/test_getargs2.cpython-33.pyc
 lib/python3.3/test/__pycache__/test_getargs2.cpython-33.pyo
 lib/python3.3/test/__pycache__/test_getopt.cpython-33.pyc
 lib/python3.3/test/__pycache__/test_getopt.cpython-33.pyo
+lib/python3.3/test/__pycache__/test_getpass.cpython-33.pyc
+lib/python3.3/test/__pycache__/test_getpass.cpython-33.pyo
 lib/python3.3/test/__pycache__/test_gettext.cpython-33.pyc
 lib/python3.3/test/__pycache__/test_gettext.cpython-33.pyo
 lib/python3.3/test/__pycache__/test_glob.cpython-33.pyc
@@ -396,6 +400,8 @@ lib/python3.3/test/__pycache__/test_idle.cpython-33.pyc
 lib/python3.3/test/__pycache__/test_idle.cpython-33.pyo
 lib/python3.3/test/__pycache__/test_imaplib.cpython-33.pyc
 lib/python3.3/test/__pycache__/test_imaplib.cpython-33.pyo
+lib/python3.3/test/__pycache__/test_imghdr.cpython-33.pyc
+lib/python3.3/test/__pycache__/test_imghdr.cpython-33.pyo
 lib/python3.3/test/__pycache__/test_imp.cpython-33.pyc
 lib/python3.3/test/__pycache__/test_imp.cpython-33.pyo
 lib/python3.3/test/__pycache__/test_import.cpython-33.pyc
@@ -923,6 +929,7 @@ lib/python3.3/test/cjkencodings/shift_jis.txt
 lib/python3.3/test/cjkencodings/shift_jisx0213-utf8.txt
 lib/python3.3/test/cjkencodings/shift_jisx0213.txt
 lib/python3.3/test/cmath_testcases.txt
+lib/python3.3/test/coding20731.py
 lib/python3.3/test/curses_tests.py
 lib/python3.3/test/data/
 lib/python3.3/test/data/README
@@ -1096,6 +1103,18 @@ lib/python3.3/test/future_test2.py
 lib/python3.3/test/gdb_sample.py
 lib/python3.3/test/https_svn_python_org_root.pem
 lib/python3.3/test/ieee754.txt
+lib/python3.3/test/imghdrdata/
+lib/python3.3/test/imghdrdata/python.bmp
+lib/python3.3/test/imghdrdata/python.gif
+lib/python3.3/test/imghdrdata/python.jpg
+lib/python3.3/test/imghdrdata/python.pbm
+lib/python3.3/test/imghdrdata/python.pgm
+lib/python3.3/test/imghdrdata/python.png
+lib/python3.3/test/imghdrdata/python.ppm
+lib/python3.3/test/imghdrdata/python.ras
+lib/python3.3/test/imghdrdata/python.sgi
+lib/python3.3/test/imghdrdata/python.tiff
+lib/python3.3/test/imghdrdata/python.xbm
 lib/python3.3/test/inspect_fodder.py
 lib/python3.3/test/inspect_fodder2.py
 lib/python3.3/test/keycert.passwd.pem
@@ -1475,6 +1494,7 @@ lib/python3.3/test/test_genericpath.py
 lib/python3.3/test/test_genexps.py
 lib/python3.3/test/test_getargs2.py
 lib/python3.3/test/test_getopt.py
+lib/python3.3/test/test_getpass.py
 lib/python3.3/test/test_gettext.py
 lib/python3.3/test/test_glob.py
 lib/python3.3/test/test_global.py
@@ -1493,6 +1513,7 @@ lib/python3.3/test/test_httplib.py
 lib/python3.3/test/test_httpservers.py
 lib/python3.3/test/test_idle.py
 lib/python3.3/test/test_imaplib.py
+lib/python3.3/test/test_imghdr.py
 lib/python3.3/test/test_imp.py
 lib/python3.3/test/test_import.py
 lib/python3.3/test/test_importhooks.py
