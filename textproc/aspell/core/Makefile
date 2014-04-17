@@ -25,10 +25,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c m ncursesw stdc++ pthread
 
 MODULES +=		gcc4 devel/gettext
-MODGCC4_VERSION=	4.6
 MODGCC4_ARCHS=		*
 MODGCC4_LANGS=		c++
-CXX=			g++
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
