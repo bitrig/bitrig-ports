@@ -5,6 +5,7 @@ COMMENT-lightning =	Mozilla Thunderbird calendar extension
 
 # Don't forget to bump mail/thunderbird-i18n after updates.
 
+REVISION =		0
 MOZILLA_VERSION =	24.4.0
 MOZILLA_BRANCH =	esr24
 MOZILLA_PROJECT =	thunderbird
@@ -47,13 +48,6 @@ MODCLANG_LANGS =	c c++
 
 # Regression tests are too hard to adapt to run here
 NO_TEST =	Yes
-
-MODULES+=		gcc4
-MODGCC4_VERSION=	4.6
-MODGCC4_ARCHS=		*
-MODGCC4_LANGS=		c c++
-CC =			gcc
-CXX =			g++
 
 MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build/autoconf \
 				${WRKSRC}/ldap/sdks/c-sdk/config/autoconf \
