@@ -21,11 +21,7 @@ WANTLIB =	X11 Xft Xrender c fontconfig gdk_pixbuf-2.0 \
 		glib-2.0 gobject-2.0 m perl pthread \
 		startup-notification-1 util
 
-MODULES =	gcc4 devel/gettext
-MODGCC4_VERSION=	4.6
-MODGCC4_ARCHS=		*
-MODGCC4_LANGS=		c++
-CXX=g++
+MODULES =	devel/gettext
 
 LIB_DEPENDS =	devel/startup-notification \
 		graphics/gdk-pixbuf2
