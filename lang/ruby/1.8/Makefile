@@ -23,7 +23,6 @@ REVISION-main=		0
 
 MODULES=		converters/libiconv
 MODULES+=		gcc4
-MODGCC4_VERSION=	4.6
 MODGCC4_ARCHS=		*
 MODGCC4_LANGS=		c
 
@@ -31,8 +30,7 @@ CONFIGURE_ARGS=		--program-suffix=18 \
 			--enable-ipv6 \
 			--with-dbm-type=bogus \
 			--with-opt-dir="${LOCALBASE}" \
-			--disable-option-checking \
-			CC=gcc
+			--disable-option-checking
 
 CONFIGURE_ENV=		LIBruby18_VERSION=${LIBruby18_VERSION}
 
