@@ -28,11 +28,8 @@ MODULES=		gcc4 devel/gettext
 
 # SIGBUS during startup on sparc64 when built using gcc 4.2.1
 # https://github.com/rakshasa/rtorrent/issues/28
-MODGCC4_VERSION=	4.6
 MODGCC4_ARCHS=		*
 MODGCC4_LANGS=		c++
-CC=gcc
-CXX=g++
 
 BUILD_DEPENDS=		devel/cppunit
 LIB_DEPENDS=		net/libtorrent>=0.12.9 \
