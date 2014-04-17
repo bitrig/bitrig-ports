@@ -49,11 +49,6 @@ MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} \
 
 SUBST_VARS +=	MOZILLA_VERSION
 
-MODULES+=	gcc4
-MODGCC4_VERSION=4.6
-MODGCC4_ARCHS=	*
-MODGCC4_LANGS=	c c++
-
 WRKDIST =	${WRKDIR}/${DISTNAME}/js/src
 USE_GMAKE =	yes
 CONFIGURE_STYLE =	gnu
@@ -64,10 +59,10 @@ CONFIGURE_ARGS =	--with-pthread \
 			--disable-intl-api \
 			--enable-threadsafe
 
-CONFIGURE_ENV +=	CC=gcc CXX=g++ \
-			SO_VERSION="${SO_VERSION}" \
+CONFIGURE_ENV +=	SO_VERSION="${SO_VERSION}" \
 			MOZILLA_VERSION="${MOZILLA_VERSION}" \
-			LIBS=-lncurses
+			LIBS=-lncurses \
+			LDFLAGS=-L${LOCALBASE}/lib
 
 post-patch:
 	$(SUBST_CMD) ${WRKDIST}/configure.in
