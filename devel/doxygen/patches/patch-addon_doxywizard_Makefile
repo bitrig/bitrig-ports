@@ -1,0 +1,11 @@
+--- addon/doxywizard/Makefile.orig	Thu Apr 17 16:09:31 2014
++++ addon/doxywizard/Makefile	Thu Apr 17 16:09:47 2014
+@@ -29,7 +29,7 @@ HAVE_DOT  = /usr/local/bin/dot
+ # See the GNU General Public License for more details.
+ # 
+ 
+-QMAKE=qmake $(MKSPECS)
++QMAKE=qmake4 $(MKSPECS)
+ 
+ all: Makefile.doxywizard  
+ 	$(MAKE) -f Makefile.doxywizard 
