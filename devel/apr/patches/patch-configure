@@ -1,7 +1,7 @@
 $OpenBSD: patch-configure,v 1.10 2013/11/03 07:52:01 ajacoutot Exp $
---- configure.orig	Wed Feb  8 00:17:57 2012
-+++ configure	Fri Nov  8 20:21:28 2013
-@@ -6631,8 +6631,13 @@ if test "x$apr_preload_done" != "xyes" ; then
+--- configure.orig	Wed Nov 13 11:14:28 2013
++++ configure	Fri Apr 18 07:45:51 2014
+@@ -6554,8 +6554,13 @@ if test "x$apr_preload_done" != "xyes" ; then
                  ;;
          esac
          ;;
@@ -16,7 +16,7 @@ $OpenBSD: patch-configure,v 1.10 2013/11/03 07:52:01 ajacoutot Exp $
    if test "x$CPPFLAGS" = "x"; then
      test "x$silent" != "xyes" && echo "  setting CPPFLAGS to \"-D_POSIX_THREADS\""
      CPPFLAGS="-D_POSIX_THREADS"
-@@ -11326,7 +11331,7 @@ else
+@@ -11270,7 +11275,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -25,7 +25,7 @@ $OpenBSD: patch-configure,v 1.10 2013/11/03 07:52:01 ajacoutot Exp $
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -11764,7 +11769,7 @@ freebsd* | dragonfly*)
+@@ -11708,7 +11713,7 @@ freebsd* | dragonfly*)
      i*86 )
        # Not sure whether the presence of OpenBSD here was a mistake.
        # Let's accept both of them until this is cleared up.
@@ -34,7 +34,7 @@ $OpenBSD: patch-configure,v 1.10 2013/11/03 07:52:01 ajacoutot Exp $
        lt_cv_file_magic_cmd=/usr/bin/file
        lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
        ;;
-@@ -11838,7 +11843,7 @@ newos6*)
+@@ -11782,7 +11787,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -43,7 +43,7 @@ $OpenBSD: patch-configure,v 1.10 2013/11/03 07:52:01 ajacoutot Exp $
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -12451,7 +12456,7 @@ old_postuninstall_cmds=
+@@ -12395,7 +12400,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -52,7 +52,7 @@ $OpenBSD: patch-configure,v 1.10 2013/11/03 07:52:01 ajacoutot Exp $
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -13934,7 +13939,7 @@ fi
+@@ -13878,7 +13883,7 @@ fi
  LIBTOOL_DEPS="$ltmain"
  
  # Always use our own libtool.
@@ -61,7 +61,7 @@ $OpenBSD: patch-configure,v 1.10 2013/11/03 07:52:01 ajacoutot Exp $
  
  
  
-@@ -14945,7 +14950,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -14889,7 +14894,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -70,7 +70,7 @@ $OpenBSD: patch-configure,v 1.10 2013/11/03 07:52:01 ajacoutot Exp $
      with_gnu_ld=no
      ;;
    esac
-@@ -15821,7 +15826,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -15765,7 +15770,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -79,7 +79,7 @@ $OpenBSD: patch-configure,v 1.10 2013/11/03 07:52:01 ajacoutot Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -16864,7 +16869,7 @@ newsos6)
+@@ -16808,7 +16813,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -88,7 +88,7 @@ $OpenBSD: patch-configure,v 1.10 2013/11/03 07:52:01 ajacoutot Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -25452,7 +25457,7 @@ for ac_spec in func:semget func:semctl define:SEM_UNDO
+@@ -25498,7 +25503,7 @@ for ac_spec in func:semget func:semctl define:SEM_UNDO
  done
  if test ".$ac_rc" = .yes; then
      :
