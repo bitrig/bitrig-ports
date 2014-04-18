@@ -31,8 +31,8 @@ lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d
 lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/modules/subprocess_worker_unix.js
 lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/modules/subprocess_worker_win.js
 lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/
-lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/OpenBSD_${XPCOM_ABI}-gcc3/
-lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/OpenBSD_${XPCOM_ABI}-gcc3/lib/
-lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/OpenBSD_${XPCOM_ABI}-gcc3/lib/libsubprocess-${XPCOM_ABI}-gcc3.so
+lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig_${XPCOM_ABI}-gcc3/
+lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig_${XPCOM_ABI}-gcc3/lib/
+lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/platform/Bitrig_${XPCOM_ABI}-gcc3/lib/libsubprocess-${XPCOM_ABI}-gcc3.so
 lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/wrappers/
 lib/mozilla/extensions/{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}/{847b3a00-7ab1-11d4-8f02-006008948af5}/wrappers/gpg-agent-wrapper.sh

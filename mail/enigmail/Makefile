@@ -10,6 +10,7 @@ EXTRACT_SUFX =	.zip
 PKGNAME-main =	enigmail-1.6.20140324
 PKGNAME-seamonkey =	enigmail-seamonkey-1.6.20140324
 EPOCH =		0
+REVISION =	0
 HOMEPAGE =	http://www.mozilla-enigmail.org/
 #MASTER_SITES =	http://www.mozilla-enigmail.org/download/source/
 MASTER_SITES =	http://rhaalovely.net/stuff/
