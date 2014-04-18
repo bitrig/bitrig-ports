@@ -4,7 +4,7 @@ COMMENT =	clone of rxvt with Unicode and Xft support
 
 DISTNAME =	rxvt-unicode-9.19
 CATEGORIES =	x11
-REVISION =	0
+REVISION =	1
 
 EXTRACT_SUFX =	.tar.bz2
 MASTER_SITES =	http://dist.schmorp.de/rxvt-unicode/ \
