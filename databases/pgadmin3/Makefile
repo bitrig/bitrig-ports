@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.27 2014/01/20 16:08:47 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.28 2014/04/19 21:03:58 pea Exp $
 
 COMMENT=	administration and development platform for PostgreSQL
 
-V=		1.16.1
+V=		1.18.1
 DISTNAME=	pgadmin3-$V
 CATEGORIES=	databases devel
-REVISION=	1
 
 HOMEPAGE=	http://www.pgadmin.org/
 
@@ -14,7 +13,7 @@ MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 # Artistic license
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m pthread
+WANTLIB=	c m pthread crypto z
 WANTLIB+=	c++ c++abi
 
 MASTER_SITES=	ftp://ftp2.uk.postgresql.org/sites/ftp.postgresql.org/pgadmin3/release/v$V/src/ \
@@ -34,7 +33,7 @@ WANTLIB +=      wx_base_xml wx_gtk2_html \
 BUILD_DEPENDS +=	databases/postgresql,-server
 
 CONFIGURE_STYLE=gnu
-CONFIGURE_ENV=	CPPFLAGS="${CXXFLAGS}"
+CONFIGURE_ENV=	CPPFLAGS="${CXXFLAGS} -DAI_ADDRCONFIG=0"
 CONFIGURE_ARGS=	--with-pgsql=${LOCALBASE} 
 
 USE_GMAKE=	Yes
