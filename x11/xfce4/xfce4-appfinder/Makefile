@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.41 2014/04/14 19:52:45 matthieu Exp $
+# $OpenBSD: Makefile,v 1.42 2014/04/20 21:19:44 jasper Exp $
 
 COMMENT=	Xfce4 application finder
 
@@ -10,7 +10,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=	x11/xfce4
 MODXFCE_DESKTOP_FILE=	Yes
-MODXFCE_ICON_CACHE=	Yes
 
 CONFIGURE_ARGS= --disable-linker-opts
 LIB_DEPENDS=	x11/xfce4/garcon \
