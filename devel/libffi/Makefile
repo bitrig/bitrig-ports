@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2014/04/20 16:09:47 jasper Exp $
+# $OpenBSD: Makefile,v 1.26 2014/04/20 16:44:30 jasper Exp $
 
 COMMENT=		Foreign Function Interface
 
