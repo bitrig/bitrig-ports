@@ -1,0 +1,33 @@
+$OpenBSD: patch-configure_ac,v 1.1 2014/04/20 16:09:47 jasper Exp $
+
+Enable libffi on hppa, m88k, mips64(el), powerpc and vax platforms.
+
+--- configure.ac.orig	Sun Mar 17 23:36:15 2013
++++ configure.ac	Mon Apr 21 19:30:04 2014
+@@ -81,7 +81,7 @@ case "$host" in
+ 	TARGET=ARM; TARGETDIR=arm
+ 	;;
+ 
+-  amd64-*-freebsd* | amd64-*-openbsd*)
++  amd64-*-freebsd* | amd64-*-openbsd* | amd64-*-bitrig*)
+ 	TARGET=X86_64; TARGETDIR=x86
+   	;;
+ 
+@@ -119,7 +119,7 @@ case "$host" in
+ 	TARGET=PA_HPUX; TARGETDIR=pa
+ 	;;
+ 
+-  i?86-*-freebsd* | i?86-*-openbsd*)
++  i?86-*-freebsd* | i?86-*-openbsd* | i?86-*-bitrig*)
+ 	TARGET=X86_FREEBSD; TARGETDIR=x86
+ 	;;
+   i?86-win32* | i?86-*-cygwin* | i?86-*-mingw* | i?86-*-os2* | i?86-*-interix*)
+@@ -421,7 +421,7 @@ case "$target" in
+                  [Cannot use PROT_EXEC on this target, so, we revert to
+                    alternative means])
+      ;;
+-     *-apple-darwin1* | *-*-freebsd* | *-*-kfreebsd* | *-*-openbsd* | *-pc-solaris*)
++     *-apple-darwin1* | *-*-freebsd* | *-*-kfreebsd* | *-*-openbsd* | *-*-bitrig* | *-pc-solaris*)
+        AC_DEFINE(FFI_MMAP_EXEC_WRIT, 1,
+                  [Cannot use malloc on this target, so, we revert to
+                    alternative means])
