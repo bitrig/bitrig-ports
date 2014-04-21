@@ -37,4 +37,12 @@ MODULES =	devel/gettext \
 LIB_DEPENDS =	x11/gtk+2 \
 		x11/dbus-glib
 
+
+pre-configure:
+# https://bugzilla.gnome.org/show_bug.cgi?id=726571
+# XXX check if still needed at next release
+	perl -pi -e 's,--libtool="\$$\(top_builddir\)/libtool",--libtool="\$${LIBTOOL}",g' \
+		${WRKSRC}/unique/Makefile.in
+
+
 .include <bsd.port.mk>
