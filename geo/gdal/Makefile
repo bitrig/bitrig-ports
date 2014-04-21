@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2013/10/30 15:22:33 landry Exp $
+# $OpenBSD: Makefile,v 1.30 2014/04/21 15:20:06 ajacoutot Exp $
 
 COMMENT-main =	translator library for geospatial data formats
 COMMENT-python =python bindings and utilities for GDAL
@@ -6,9 +6,9 @@ COMMENT-perl =	perl bindings for GDAL
 
 V =		1.10.0
 DISTNAME =	gdal-${V}
-REVISION-main =	2
-REVISION-python =	0
-REVISION-perl =	0
+REVISION-main =	3
+REVISION-python =	1
+REVISION-perl =	1
 SHARED_ONLY =	Yes
 
 PKGNAME-main =	${DISTNAME}
@@ -47,10 +47,9 @@ LIB_DEPENDS-main =	${LIB_DEPENDS} \
 			devel/proj \
 			devel/geotiff
 
-WANTLIB-main =		${WANTLIB} c crypto expat m ssl z tiff \
+WANTLIB-main =		${WANTLIB} c expat m z tiff openjp2 \
 			curl pq geos geos_c idn png gif jpeg jasper geotiff \
-			asn1 heimbase krb5 openjp2 roken wind \
-			com_err proj pthread freexl pcre spatialite sqlite3 xml2
+			proj pthread freexl pcre spatialite sqlite3 xml2
 WANTLIB-main +=		c++ c++abi
 
 
