@@ -1,6 +1,6 @@
-$OpenBSD: patch-configure,v 1.6 2013/10/17 09:08:05 ajacoutot Exp $
---- configure.orig	Thu Aug 15 06:36:22 2013
-+++ configure	Sat Oct 19 20:22:09 2013
+$OpenBSD: patch-configure,v 1.7 2014/04/21 12:26:19 ajacoutot Exp $
+--- configure.orig	Thu Aug 15 00:36:22 2013
++++ configure	Fri Apr 25 00:07:35 2014
 @@ -5639,7 +5639,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -85,7 +85,7 @@ $OpenBSD: patch-configure,v 1.6 2013/10/17 09:08:05 ajacoutot Exp $
        alpine_SSLCERTS="/System/Library/OpenSSL/certs"
        ;;
 -    *-openbsd*)
-+    *-openbsd* | *-bitrig*)
++    *-openbsd* | *-bitrig*) 
        alpine_SSLTYPE="nopwd"
        alpine_SSLDIR="/usr"
        alpine_SSLCERTS="/etc/ssl/certs"
@@ -98,17 +98,6 @@ $OpenBSD: patch-configure,v 1.6 2013/10/17 09:08:05 ajacoutot Exp $
      systype="BSO"
      alpine_path_delim="/"
      alpine_mode_readonly="(0600)"
-@@ -16998,8 +17000,8 @@ if test "$ac_res" != no; then :
-   test "$ac_res" = "none required" || LIBS="$ac_res $LIBS"
- 
-             LIBS="$LIBS -lkrb5"
--      ac_fn_c_check_header_mongrel "$LINENO" "gssapi/gssapi_generic.h" "ac_cv_header_gssapi_gssapi_generic_h" "$ac_includes_default"
--if test "x$ac_cv_header_gssapi_gssapi_generic_h" = xyes; then :
-+      ac_fn_c_check_header_mongrel "$LINENO" "gssapi.h" "ac_cv_header_gssapi_h" "$ac_includes_default"
-+if test "x$ac_cv_header_gssapi_h" = xyes; then :
- 
- else
- 
 @@ -17579,7 +17581,7 @@ if test x"$acx_pthread_ok" = xyes; then
        { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
  $as_echo "yes" >&6; }
