@@ -5,6 +5,7 @@ COMMENT=	OpenBSD improved and secured version of Apache 1.3
 DISTNAME=	apache-httpd-openbsd-1.3p54
 PKGNAME=	apache-httpd-openbsd-1.3
 REVISION=	55
+EPOCH=		0
 CATEGORIES=	www
 
 HOMEPAGE=	https://github.com/fobser/apache-httpd-openbsd
