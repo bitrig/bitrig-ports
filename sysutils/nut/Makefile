@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.76 2014/03/29 15:39:13 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.77 2014/04/21 11:26:16 sthen Exp $
 
 COMMENT-main=		UPS monitoring program supporting many brands
 COMMENT-cgi=		CGIs for monitoring Nut-based UPSs
@@ -6,7 +6,8 @@ COMMENT-snmp=		driver for monitoring UPS via SNMP
 COMMENT-xml=		driver for monitoring UPS via XML/HTTP
 
 DISTNAME=		nut-2.7.1
-REVISION-main=		2
+REVISION-main=		3
+REVISION-xml=		1
 
 PKGNAME-main=		${DISTNAME}
 PKGNAME-cgi=		${DISTNAME:S/-/-cgi-/}
@@ -28,7 +29,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 COMMON +=	c crypto pthread
 WANTLIB-main +=	${COMMON} ltdl m ssl usb usb-1.0
 WANTLIB-main +=	c++ c++abi
-WANTLIB-xml +=	${COMMON} ${MODGETTEXT_WANTLIB} asn1 expat gssapi krb5 neon ssl z proxy
+WANTLIB-xml +=	${COMMON} ${MODGETTEXT_WANTLIB} expat neon proxy ssl z
 WANTLIB-xml +=	com_err heimbase roken wind
 WANTLIB-cgi +=	${COMMON} ${MODGETTEXT_WANTLIB} X11 expat fontconfig
 WANTLIB-cgi +=	freetype gd jpeg m png ssl upsclient xcb z
