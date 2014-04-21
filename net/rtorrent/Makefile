@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2014/04/11 18:11:10 pirofti Exp $
+# $OpenBSD: Makefile,v 1.43 2014/04/21 21:46:23 tobiasu Exp $
 
 BROKEN-hppa =		undefined references to __sync atomic ops
 BROKEN-mips64 =		undefined references to __sync atomic ops
