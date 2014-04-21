@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.112 2014/04/13 07:47:15 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.113 2014/04/21 12:23:22 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -20,8 +20,10 @@ PKGNAME-hpcups=		hpcups-${V}
 PKGNAME-hpijs=		hpijs-${V}
 PKGNAME-gui=		hplip-gui-${V}
 
-REVISION-hpcups=	0
-REVISION-hpijs=		0
+REVISION-main=		0
+REVISION-hpaio=		0
+REVISION-hpcups=	1
+REVISION-hpijs=		1
 
 SHARED_LIBS +=  hpmud		2.0 # 0.6
 SHARED_LIBS +=  hpip		2.0 # 0.1
@@ -48,9 +50,8 @@ cWANTLIB += crypto m pthread
 
 ### -main
 WANTLIB-main += ${WANTLIB} ${cWANTLIB}
-WANTLIB-main += asn1 avahi-client avahi-common com_err cups dbus-1
-WANTLIB-main += gssapi heimbase hpmud krb5 netsnmp roken ssl usb-1.0
-WANTLIB-main += wind z
+WANTLIB-main += avahi-client avahi-common cups dbus-1 hpmud netsnmp
+WANTLIB-main += ssl usb-1.0 z
 
 LIB_DEPENDS-main=	${LIB_DEPENDS} \
 			print/cups,-libs \
@@ -77,9 +78,8 @@ RUN_DEPENDS-common=	#empty
 
 ### -hpaio
 WANTLIB-hpaio += ${WANTLIB} ${cWANTLIB}
-WANTLIB-hpaio += asn1 avahi-client avahi-common com_err cups dbus-1
-WANTLIB-hpaio += gssapi heimbase hpip hpmud jpeg krb5 netsnmp roken
-WANTLIB-hpaio += sane ssl tiff usb usb-1.0 wind z
+WANTLIB-hpaio += avahi-client avahi-common cups dbus-1 hpip hpmud
+WANTLIB-hpaio += jpeg netsnmp sane ssl tiff usb usb-1.0 z
 
 LIB_DEPENDS-hpaio=	print/hplip,-common \
 			graphics/sane-backends
@@ -87,10 +87,9 @@ LIB_DEPENDS-hpaio=	print/hplip,-common \
 RUN_DEPENDS-hpaio=	${MODGETTEXT_RUN_DEPENDS}
 
 ### -hpcups
-WANTLIB-hpcups += ${WANTLIB} ${cWANTLIB} z asn1 gssapi krb5 ssl
+WANTLIB-hpcups += ${WANTLIB} ${cWANTLIB} z ssl netsnmp
 WANTLIB-hpcups += c jpeg hpip cups cupsimage dbus-1
-WANTLIB-hpcups += com_err heimbase roken wind usb-1.0
-WANTLIB-hpcups += avahi-client avahi-common hpmud netsnmp
+WANTLIB-hpcups += z ssl usb-1.0 avahi-client avahi-common hpmud
 WANTLIB-hpcups += c++ c++abi
 
 LIB_DEPENDS-hpcups=	graphics/jpeg \
