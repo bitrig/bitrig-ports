@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/06/22 13:43:46 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.5 2014/04/21 14:25:15 ajacoutot Exp $
 
 COMMENT=		library for audio metadata lookup (v5)
 
