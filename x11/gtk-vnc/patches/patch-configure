@@ -1,6 +1,60 @@
 $OpenBSD: patch-configure,v 1.14 2013/09/18 19:18:16 ajacoutot Exp $
---- configure.orig	Wed Sep 18 13:08:35 2013
-+++ configure	Wed Sep 18 20:26:35 2013
+--- configure.orig	Wed Sep 18 07:08:35 2013
++++ configure	Tue Apr 22 15:34:38 2014
+@@ -4829,7 +4829,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -5341,7 +5341,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -5955,7 +5955,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
+@@ -9015,7 +9015,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -9891,7 +9891,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -10938,7 +10938,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -10948,7 +10948,6 @@ openbsd*)
      *)				need_version=no  ;;
    esac
@@ -9,11 +63,20 @@ $OpenBSD: patch-configure,v 1.14 2013/09/18 19:18:16 ajacoutot Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
+@@ -13617,7 +13616,7 @@ else
+ fi
+ 
+ 	    ;;
+-	    *-*-openbsd*)
++	    *-*-openbsd* | *-*-bitrig*)
+ 	    CATOBJEXT=.mo
+             DATADIRNAME=share
+ 	    ;;
 @@ -14714,6 +14713,12 @@ case "$host" in
      NO_UNDEFINED_FLAGS="-no-undefined"
      ;;
  
-+  *-*-openbsd*)
++  *-*-openbsd* | *-*-bitrig*)
 +    NO_UNDEFINED_FLAGS=""
 +    VERSION_SCRIPT_FLAGS=-Wl,--version-script=
 +    `ld --help 2>&1 | grep -- --version-script >/dev/null` || \
