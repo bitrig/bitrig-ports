@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2014/04/19 01:26:30 gonzalo Exp $
+# $OpenBSD: Makefile,v 1.27 2014/04/22 15:07:53 juanfra Exp $
 
 COMMENT =		lightweight multi-protocol & multi-source download utility
 DISTNAME =		aria2-1.18.5
@@ -21,7 +21,8 @@ MODGCC4_LANGS =		c c++
 LIB_DEPENDS =		net/libcares
 
 BUILD_DEPENDS =		devel/m4 \
-			devel/cppunit
+			devel/cppunit \
+			textproc/py-docutils
 
 TEST_DEPENDS =		${BUILD_DEPENDS}
 
