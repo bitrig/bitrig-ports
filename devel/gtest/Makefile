@@ -27,6 +27,8 @@ WANTLIB += 		c++ c++abi pthread
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build-aux
+
 NO_TEST =	Yes
 
 .include <bsd.port.mk>
