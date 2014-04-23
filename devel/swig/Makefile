@@ -20,7 +20,10 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=swig/}
 
 MODULES =	lang/python \
 		lang/ruby \
-		lang/tcl
+		lang/tcl \
+		gcc4
+MODGCC4_ARCHS =	*
+MODGCC4_LANGS =	c c++
 MODRUBY_RUNDEP = No
 MODPY_RUNDEP =	No
 BUILD_DEPENDS =	${MODTCL_BUILD_DEPENDS} \
@@ -37,8 +40,8 @@ CONFIGURE_ARGS += --with-tclincl=${MODTCL_INCDIR} \
 		 --with-ruby=${RUBY} \
 		 --without-mzscheme \
 		 --without-php4 \
-		 --without-ocaml \
-		CC=cc CXX=g++
+		 --without-ocaml
+
 MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/Tools/config
 
 ALL_TARGET =	swig
