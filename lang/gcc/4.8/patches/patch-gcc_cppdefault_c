@@ -1,0 +1,27 @@
+--- gcc/cppdefault.c.orig	Wed Apr 23 14:20:00 2014
++++ gcc/cppdefault.c	Wed Apr 23 14:21:28 2014
+@@ -35,6 +35,13 @@
+ # undef CROSS_INCLUDE_DIR
+ #endif
+ 
++#if defined(__Bitrig__)
++#undef GPLUSPLUS_INCLUDE_DIR
++#undef GPLUSPLUS_TOOL_INCLUDE_DIR
++#undef GPLUSPLUS_BACKWARD_INCLUDE_DIR
++#define CPLUSPLUS_INCLUDE_DIR "/usr/include/c++/v1"
++#endif
++
+ const struct default_include cpp_include_defaults[]
+ #ifdef INCLUDE_DEFAULTS
+ = INCLUDE_DEFAULTS;
+@@ -54,6 +61,10 @@ const struct default_include cpp_include_defaults[]
+     /* Pick up GNU C++ backward and deprecated include files.  */
+     { GPLUSPLUS_BACKWARD_INCLUDE_DIR, "G++", 1, 1,
+       GPLUSPLUS_INCLUDE_DIR_ADD_SYSROOT, 0 },
++#endif
++#ifdef CPLUSPLUS_INCLUDE_DIR
++    /* Pick up libc++ include files.  */
++    { CPLUSPLUS_INCLUDE_DIR, "G++", 1, 1, 1, 0 },
+ #endif
+ #ifdef GCC_INCLUDE_DIR
+     /* This is the dir for gcc's private headers.  */
