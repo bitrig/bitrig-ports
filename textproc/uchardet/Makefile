@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/03/23 21:10:57 sthen Exp $
+# $OpenBSD: Makefile,v 1.2 2014/04/24 19:13:28 schwarze Exp $
 
 COMMENT=	universal charset detection library and tool
 
