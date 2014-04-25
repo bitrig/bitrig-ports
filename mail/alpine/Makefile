@@ -11,8 +11,6 @@ V=			2.11
 DISTNAME=		alpine-${V}
 EXTRACT_SUFX=		.tar.xz
 
-REVISION=		1
-
 SHARED_LIBS=		c-client 5.1
 
 # grep "PICO version" ${WRKSRC}/pico/pico.h
@@ -27,12 +25,12 @@ PKGNAME-mailutil=	mailutil-uw-${V}
 PKGNAME-pico=		pico-${PICO_V}
 PKGNAME-pilot=		pilot-${PILOT_V}
 
+REVISION-main=		2
+REVISION-mailutil=	2
 REVISION-imap=		3
-REVISION-main=		0
-REVISION-mailutil=	0
-REVISION-pico=		0
+REVISION-pico=		2
 REVISION-pilot=		12
-REVISION-c-client=	0
+REVISION-c-client=	1
 
 FLAVORS=		passfile
 FLAVOR?=
