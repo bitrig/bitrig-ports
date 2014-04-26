@@ -10,11 +10,22 @@ $OpenBSD: patch-js_src_configure_in,v 1.1 2013/12/09 16:31:59 landry Exp $
  
  MOZ_COMPONENT_NSPR_LIBS='-L$(LIBXUL_DIST)/bin $(NSPR_LIBS)'
  MOZ_XPCOM_OBSOLETE_LIBS='-L$(LIBXUL_DIST)/lib -lxpcom_compat'
-@@ -2133,7 +2133,7 @@ case "$target" in
+@@ -1194,7 +1194,7 @@ if test "$GNU_CC"; then
+     _MOZ_RTTI_FLAGS_ON=${_COMPILER_PREFIX}-frtti
+     _MOZ_RTTI_FLAGS_OFF=${_COMPILER_PREFIX}-fno-rtti
+     _MOZ_EXCEPTIONS_FLAGS_ON='-fhandle-exceptions'
+-    _MOZ_EXCEPTIONS_FLAGS_OFF='-fno-handle-exceptions'
++    _MOZ_EXCEPTIONS_FLAGS_OFF=''
+ 
+     # Turn on GNU specific features
+     # -Wall - turn on all warnings
+@@ -2132,8 +2132,8 @@ case "$target" in
+ 	esac
  	;;
  
- *-openbsd*)
+-*-openbsd*)
 -    DLL_SUFFIX=".so.1.0"
++*-openbsd*|*-bitrig*)
 +    DLL_SUFFIX=".so.${SO_VERSION}"
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
@@ -53,7 +64,31 @@ $OpenBSD: patch-js_src_configure_in,v 1.1 2013/12/09 16:31:59 landry Exp $
      AC_DEFINE(AVMPLUS_UNIX)
      ;;
 -freebsd*|kfreebsd*)
-+freebsd*|kfreebsd*|openbsd*)
++freebsd*|kfreebsd*|openbsd*|bitrig*)
      AC_DEFINE(AVMPLUS_UNIX)
      ;;
  *cygwin*|*mingw*|*mks*|*msvc*|*wince)
+@@ -3034,7 +3041,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.
+@@ -3416,12 +3423,12 @@ if test "$GNU_CXX"; then
+   AC_CACHE_VAL(ac_cv_cxx_exceptions_flags,
+   [echo "int main() { return 0; }" | cat > conftest.C
+ 
+-  ${CXX-g++} ${CXXFLAGS} -c -fno-handle-exceptions conftest.C > conftest.out 2>&1
++  ${CXX-g++} ${CXXFLAGS} -c  conftest.C > conftest.out 2>&1
+ 
+   if egrep "warning.*renamed" conftest.out >/dev/null; then
+     ac_cv_cxx_exceptions_flags=${_COMPILER_PREFIX}-fno-exceptions
+   else
+-    ac_cv_cxx_exceptions_flags=${_COMPILER_PREFIX}-fno-handle-exceptions
++    ac_cv_cxx_exceptions_flags=${_COMPILER_PREFIX}
+   fi
+ 
+   rm -f conftest*])
