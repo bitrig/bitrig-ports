@@ -1,0 +1,10 @@
+--- src/shared/CLucene/LuceneThreads.h.orig	Sat Apr 26 18:49:47 2014
++++ src/shared/CLucene/LuceneThreads.h	Sat Apr 26 18:49:22 2014
+@@ -7,6 +7,7 @@
+ #ifndef _LuceneThreads_h
+ #define  _LuceneThreads_h
+ 
++#include <pthread.h>
+ 
+ CL_NS_DEF(util)
+ class CLuceneThreadIdCompare;
