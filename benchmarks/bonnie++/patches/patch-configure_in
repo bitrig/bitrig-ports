@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure_in,v 1.2 2012/08/19 18:55:08 jasper Exp $
---- configure.in.orig	Fri Jul  3 21:23:53 2009
-+++ configure.in	Sat Nov 12 14:46:10 2011
+--- configure.in.orig	Tue Jan 18 22:35:28 2011
++++ configure.in	Thu Apr 24 14:48:33 2014
 @@ -60,7 +60,7 @@ if [[ -n "$snprintf" ]]; then
     snprintf="#define NO_SNPRINTF"
  fi
@@ -10,7 +10,7 @@ $OpenBSD: patch-configure_in,v 1.2 2012/08/19 18:55:08 jasper Exp $
  
  AC_SUBST(linux_pthread)
  AC_TRY_COMPILE([#define _GNU_SOURCE
-@@ -89,9 +82,18 @@ AC_TRY_RUN([#ifndef _LARGEFILE64_SOURCE
+@@ -89,9 +89,18 @@ AC_TRY_RUN([#ifndef _LARGEFILE64_SOURCE
  #include <stdio.h>
  #include <sys/types.h>
  #include <sys/stat.h>
