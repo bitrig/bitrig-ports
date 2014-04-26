@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		low-latency voice chat client
 
 DISTNAME =		mumble-1.2.5
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		audio
 
@@ -20,7 +20,8 @@ WANTLIB +=		ICE SM X11 Xext Xi Xinerama Xrender c crypto
 WANTLIB +=		fontconfig freetype lib/qt4/QtDBus lib/qt4/QtGui
 WANTLIB +=		lib/qt4/QtNetwork lib/qt4/QtSql lib/qt4/QtSvg
 WANTLIB +=		lib/qt4/QtXml m opus portaudio protobuf
-WANTLIB +=		pthread sndfile speex speexdsp ssl stdc++
+WANTLIB +=		pthread sndfile speex speexdsp ssl
+WANTLIB +=		c++ c++abi
 
 MODULES =		x11/qt4
 

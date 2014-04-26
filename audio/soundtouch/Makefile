@@ -3,7 +3,7 @@
 COMMENT=	tempo/pitch audio processing library
 
 DISTNAME=	soundtouch-1.3.1
-REVISION=	1
+REVISION=	2
 SHARED_LIBS +=	BPM		0.0      # .0.0
 SHARED_LIBS +=	SoundTouch	0.0      # .0.0
 CATEGORIES=	audio devel
@@ -15,7 +15,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${HOMEPAGE}
 
-WANTLIB=	c m stdc++
+WANTLIB=	c m
+WANTLIB+=	c++ c++abi pthread
 
 BUILD_DEPENDS=	${MODGNU_AUTOCONF_DEPENDS} \
 		${MODGNU_AUTOMAKE_DEPENDS} \

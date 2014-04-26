@@ -8,6 +8,7 @@ V =			3.4.3
 
 DISTNAME =		audacious-plugins-$V
 CATEGORIES =		audio multimedia
+REVISION =		0
 
 HOMEPAGE =		http://audacious-media-player.org/
 
@@ -20,8 +21,9 @@ WANTLIB += cddb cdio cdio_cdda cue curl dbus-1 dbus-glib-1
 WANTLIB += faad fontconfig freetype gdk-3 gdk_pixbuf-2.0 gio-2.0
 WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gtk-3 m mms modplug
 WANTLIB += mp3lame mpg123 neon notify ogg pango-1.0 pangocairo-1.0
-WANTLIB += pangoft2-1.0 pthread samplerate sndfile sndio soxr stdc++
+WANTLIB += pangoft2-1.0 pthread samplerate sndfile sndio soxr
 WANTLIB += vorbis vorbisenc vorbisfile wavpack xml2 z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		http://distfiles.audacious-media-player.org/
 

@@ -3,7 +3,7 @@
 COMMENT =	Open Fingerprint Architecture library
 
 DISTNAME =	libofa-0.9.3
-REVISION =	4
+REVISION =	5
 CATEGORIES =	audio devel
 HOMEPAGE =	https://code.google.com/p/musicip-libofa/
 SHARED_LIBS +=	ofa	0.0
@@ -13,7 +13,8 @@ PERMIT_PACKAGE_CDROM =		Yes
 
 MASTER_SITES =	https://musicip-libofa.googlecode.com/files/
 
-WANTLIB +=	m pthread stdc++ fftw3
+WANTLIB +=	m pthread fftw3
+WANTLIB +=	c++ c++abi
 
 # needed to build the examples
 BUILD_DEPENDS =	net/curl \

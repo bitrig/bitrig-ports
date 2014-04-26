@@ -6,7 +6,7 @@ COMMENT=	Monkey's audio lossless codec
 
 DISTNAME=	mac-3.99-u4-b5
 PKGNAME=	mac-3.99.4.5
-REVISION=	0
+REVISION=	1
 SHARED_LIBS +=  mac                  0.0      # .2.0
 CATEGORIES=	audio
 
@@ -18,7 +18,8 @@ MAINTAINER=	Vlad Glagolev <stealth@sourcemage.org>
 # http://www.monkeysaudio.com/license.html
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m stdc++
+WANTLIB=	c m
+WANTLIB+=	c++ c++abi pthread
 
 MASTER_SITES=	http://bsd.cenkes.org/myports/
 

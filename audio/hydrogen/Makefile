@@ -3,7 +3,7 @@
 COMMENT=		software drum machine
 
 DISTNAME=		hydrogen-0.9.4
-REVISION=		3
+REVISION=		4
 CATEGORIES=		audio
 
 HOMEPAGE=		http://www.hydrogen-music.org/
@@ -11,8 +11,9 @@ HOMEPAGE=		http://www.hydrogen-music.org/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m ogg pthread sndio stdc++ QtGui QtNetwork QtXml sndfile>=1
+WANTLIB += c m ogg pthread sndio QtGui QtNetwork QtXml sndfile>=1
 WANTLIB += FLAC>=8 FLAC++>=7 jack archive lrdf
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=hydrogen/}
 

@@ -3,7 +3,7 @@
 COMMENT =	music collection manager and player
 DISTNAME =	gogglesmm-0.12.7
 EXTRACT_SUFX =	.tar.xz
-REVISION =	0
+REVISION =	1
 CATEGORIES =	audio x11
 
 HOMEPAGE =	https://code.google.com/p/gogglesmm/
@@ -14,7 +14,8 @@ MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 PERMIT_PACKAGE_CDROM =		Yes
 
 WANTLIB += FOX-1.6 GL GLU X11 c dbus-1 expat
-WANTLIB += m sqlite3 stdc++ tag xine
+WANTLIB += m sqlite3 tag xine
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =	https://gogglesmm.googlecode.com/files/
 

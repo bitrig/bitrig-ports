@@ -3,7 +3,7 @@
 COMMENT=	server for the DAA protocol
 
 DISTNAME=	daapd-0.2.4b
-REVISION=	5
+REVISION=	6
 EXTRACT_SUFX=	.tgz
 CATEGORIES=	audio net
 MASTER_SITES=	${HOMEPAGE}
@@ -13,7 +13,8 @@ HOMEPAGE=	http://www.deleet.de/projekte/daap/daapd/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m pthread stdc++ z mp4v2>=1 id3tag>=3.0 howl
+WANTLIB=	c m pthread z mp4v2>=1 id3tag>=3.0 howl
+WANTLIB+=	c++ c++abi
 
 LIB_DEPENDS=	multimedia/libmp4v2>=1.9.1 \
 		audio/libid3tag \

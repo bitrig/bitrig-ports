@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	decoding library for KDE Multimedia
 
 DISTNAME=	akode-2.0.2
-REVISION=	20
+REVISION=	21
 
 SHARED_LIBS +=	akode                2.1      # .2.0
 
@@ -20,8 +20,9 @@ DISTFILES=	30375-${DISTNAME}${EXTRACT_SUFX}
 # LGPLv2
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB=	FLAC c ltdl m mad ogg pthread samplerate sndio speex stdc++ \
+WANTLIB=	FLAC c ltdl m mad ogg pthread samplerate sndio speex \
 		vorbis vorbisenc vorbisfile z
+WANTLIB+=	c++ c++abi
 
 LIB_DEPENDS=	audio/flac \
 		audio/libmad \

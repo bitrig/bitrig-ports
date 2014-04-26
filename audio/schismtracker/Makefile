@@ -5,6 +5,7 @@ COMMENT =	free module tracker editor and player
 DISTNAME =	schismtracker-20100101
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	audio x11
+REVISION =	0
 
 HOMEPAGE =	http://schismtracker.org/
 MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
@@ -12,7 +13,8 @@ MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += SDL X11 Xext Xv Xxf86misc c m pthread stdc++
+WANTLIB += SDL X11 Xext Xv Xxf86misc c m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	http://schismtracker.org/dl/
 

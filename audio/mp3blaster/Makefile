@@ -5,11 +5,13 @@ COMMENT=	text console audio player with an interactive interface
 DISTNAME=	mp3blaster-3.2.5
 CATEGORIES=	audio
 HOMEPAGE=	http://mp3blaster.sourceforge.net/
+REVISION=	0
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m ncurses ogg pthread sidplay sndio stdc++ vorbis vorbisfile
+WANTLIB=	c m ncurses ogg pthread sidplay sndio vorbis vorbisfile
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mp3blaster/}
 

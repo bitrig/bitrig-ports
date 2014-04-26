@@ -5,6 +5,7 @@ DISTNAME =	paulstretch-2.2-2
 PKGNAME =	paulstretch-2.2.2
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	audio x11
+REVISION =	0
 
 HOMEPAGE =	http://hypermammut.sourceforge.net/paulstretch/
 MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
@@ -13,8 +14,9 @@ MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += X11 Xau Xdmcp Xext Xft Xinerama audiofile c fltk fontconfig
-WANTLIB += m mad mxml ogg portaudio pthread stdc++ vorbis vorbisenc
+WANTLIB += m mad mxml ogg portaudio pthread vorbis vorbisenc
 WANTLIB += vorbisfile z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=hypermammut/}
 

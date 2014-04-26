@@ -8,14 +8,15 @@ SHARED_ONLY=	Yes
 DISTNAME=	cmt_src_1.15
 WRKDIST=	${WRKDIR}/cmt
 PKGNAME=	cmt-1.15
-REVISION=	2
+REVISION=	3
 EXTRACT_SUFX=	.tgz
 MASTER_SITES=	${HOMEPAGE:=download/}
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 BUILD_DEPENDS=	audio/ladspa
 

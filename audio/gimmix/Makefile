@@ -3,7 +3,7 @@
 COMMENT=		small and easy to use graphical MPD client
 
 DISTNAME=		gimmix-0.5.7.1
-REVISION=		3
+REVISION=		4
 CATEGORIES=		audio x11
 
 HOMEPAGE=		http://gimmix.berlios.de/
@@ -15,10 +15,11 @@ WANTLIB += X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes
 WANTLIB += Xi Xinerama Xrandr Xrender atk-1.0 c cairo expat fontconfig
 WANTLIB += freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0
 WANTLIB += gmodule-2.0 gobject-2.0 gtk-x11-2.0 m pango-1.0
-WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png stdc++
+WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png
 WANTLIB += xml2 z gthread-2.0 pthread xcb-render
 WANTLIB += pthread-stubs xcb crypto ssl curl idn
 WANTLIB += mpd nxml tag tag_c glade-2.0 GL Xxf86vm drm ffi xcb-shm
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_BERLIOS:=gimmix/}
 EXTRACT_SUFX=		.tar.bz2

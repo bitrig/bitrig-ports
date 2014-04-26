@@ -5,7 +5,7 @@ COMMENT=		library for audio metadata lookup (v5)
 V=			5.0.1
 DISTNAME=		libmusicbrainz-${V}
 PKGNAME=		libmusicbrainz5-${V}
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  musicbrainz5              0.0 # 0.0
 
@@ -16,7 +16,8 @@ HOMEPAGE=		http://musicbrainz.org/doc/libmusicbrainz
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m neon stdc++
+WANTLIB += m neon
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=		https://github.com/downloads/metabrainz/libmusicbrainz/
 

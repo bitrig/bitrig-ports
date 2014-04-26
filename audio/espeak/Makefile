@@ -5,6 +5,7 @@ COMMENT=		compact speech synthesizer
 DISTNAME=		espeak-1.48.04-source
 EXTRACT_SUFX=		.zip
 PKGNAME=		${DISTNAME:S/-source//}
+REVISION=		0
 
 SHARED_LIBS=		espeak 1.2
 
@@ -15,7 +16,8 @@ HOMEPAGE=		http://espeak.sourceforge.net/
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m portaudio pthread stdc++
+WANTLIB += c m portaudio pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=espeak/}
 

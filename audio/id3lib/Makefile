@@ -4,7 +4,7 @@ COMMENT=		library for manipulating ID3v1 and ID3v2 tags
 
 VERSION=		3.8
 DISTNAME=		id3lib-${VERSION}.3
-REVISION=		3
+REVISION=		4
 CATEGORIES=     	audio
 SHARED_LIBS +=	id3                  4.0      # .3.8
 
@@ -13,7 +13,8 @@ HOMEPAGE=		http://id3lib.sourceforge.net/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m stdc++ z
+WANTLIB=		c m z
+WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=id3lib/}
 

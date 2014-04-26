@@ -4,6 +4,7 @@ COMMENT =		library for decoding mod-like music formats
 
 DISTNAME =		libmodplug-0.8.8.4
 CATEGORIES =		audio
+REVISION =		0
 
 HOMEPAGE =		http://modplug-xmms.sourceforge.net/
 
@@ -16,7 +17,8 @@ PERMIT_PACKAGE_CDROM = Yes
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=modplug-xmms/}
 
-WANTLIB +=		m stdc++
+WANTLIB +=		m
+WANTLIB +=		c++ c++abi pthread
 
 NO_TEST =		Yes
 

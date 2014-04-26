@@ -4,7 +4,7 @@ COMMENT=	front-end to external cd audio rippers and mp3 encoders
 
 DISTNAME=	grip-3.3.1
 CATEGORIES=	audio
-REVISION=	1
+REVISION=	3
 
 HOMEPAGE=	http://sourceforge.net/projects/grip/
 
@@ -21,8 +21,9 @@ WANTLIB += gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0
 WANTLIB += gmodule-2.0 gnome-2 gnomecanvas-2 gnomeui-2 gnomevfs-2
 WANTLIB += gobject-2.0 gthread-2.0 gtk-x11-2.0 id3 idn m pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pixman-1 png popt pthread
-WANTLIB += pthread-stubs ssl stdc++ vte xcb xcb-render xcb-shm
+WANTLIB += pthread-stubs ssl vte xcb xcb-render xcb-shm
 WANTLIB += z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=grip/}
 

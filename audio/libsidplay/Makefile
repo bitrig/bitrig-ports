@@ -3,7 +3,7 @@
 COMMENT=	C64 music player and SID chip emulator library
 
 DISTNAME=	libsidplay-1.36.57
-REVISION=	3
+REVISION=	4
 CATEGORIES=	audio
 SHARED_LIBS +=	sidplay              2.0      # .1.3
 
@@ -12,7 +12,8 @@ MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB =		m stdc++
+WANTLIB =		m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_OPENBSD}
 EXTRACT_SUFX=	.tgz

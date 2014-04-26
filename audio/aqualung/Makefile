@@ -3,7 +3,7 @@
 COMMENT=	advanced music player
 
 DISTNAME=	aqualung-0.9beta11
-REVISION=	13
+REVISION=	14
 EPOCH=		0
 CATEGORIES=	audio
 
@@ -18,11 +18,12 @@ WANTLIB += X11 Xcomposite Xcursor Xdamage Xext Xfixes Xi Xinerama
 WANTLIB += Xrandr Xrender atk-1.0 bz2 c cairo fontconfig
 WANTLIB += freetype gio-2.0 glib-2.0 gobject-2.0
 WANTLIB += gthread-2.0 m mp3lame ogg pango-1.0 pangocairo-1.0
-WANTLIB += pangoft2-1.0 pthread samplerate sndfile sndio stdc++
+WANTLIB += pangoft2-1.0 pthread samplerate sndfile sndio
 WANTLIB += vorbis vorbisenc vorbisfile z gtk-x11-2.0 gdk-x11-2.0
 WANTLIB += gdk_pixbuf-2.0 xml2 mac mad mpcdec FLAC avcodec
 WANTLIB += avformat avutil jack wavpack lrdf oggz speex cddb cdio
 WANTLIB += cdio_cdda cdio_paranoia modplug ${MODLUA_WANTLIB}
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=aqualung/}
 

@@ -5,7 +5,7 @@ HOMEPAGE=	http://www.ladspa.org/
 CATEGORIES=	audio devel
 
 V=		1.13
-REVISION=	0
+REVISION=	1
 
 SHARED_ONLY=	Yes
 DISTNAME=	ladspa_sdk_${V}
@@ -24,7 +24,8 @@ ALL_TARGET=	targets
 MAKE_FLAGS=	LIBRARIES=-lm OPTS="${CFLAGS}"
 
 PROGRAMS=	analyseplugin applyplugin listplugins
-WANTLIB=	c m stdc++
+WANTLIB=	c m
+WANTLIB+=	c++ c++abi pthread
 
 do-install:
 .for i in ${PROGRAMS}

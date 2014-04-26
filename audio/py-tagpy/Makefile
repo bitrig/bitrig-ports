@@ -5,7 +5,7 @@ COMMENT=		Python bindings to TagLib audio file tag library
 MODPY_EGG_VERSION =	2013.1
 DISTNAME =		tagpy-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		audio devel
 
@@ -14,7 +14,8 @@ HOMEPAGE =		http://mathema.tician.de/software/tagpy
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += boost_python-mt m pthread stdc++ tag ${MODPY_WANTLIB}
+WANTLIB += boost_python-mt m pthread tag ${MODPY_WANTLIB}
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_PYPI:=t/tagpy/}
 

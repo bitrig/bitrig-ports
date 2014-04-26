@@ -6,7 +6,7 @@ COMMENT =		MCP LADSPA plugins
 
 DISTNAME =		MCP-plugins-0.4.0
 PKGNAME =		${DISTNAME:L}
-REVISION =		0
+REVISION =		1
 CATEGORIES =		audio
 
 HOMEPAGE =		http://kokkinizita.net/linuxaudio/ladspa/index.html
@@ -14,7 +14,8 @@ HOMEPAGE =		http://kokkinizita.net/linuxaudio/ladspa/index.html
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		m stdc++
+WANTLIB =		m
+WANTLIB +=		c++ c++abi pthread
 
 EXTRACT_SUFX =		.tar.bz2
 

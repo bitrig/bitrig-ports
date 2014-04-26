@@ -4,7 +4,7 @@ COMMENT=	Commodore 64 music player and SID chip emulator
 
 DISTNAME=	sidplay-base-1.0.9
 PKGNAME=	${DISTNAME:S/-base//}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
@@ -12,7 +12,8 @@ MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m ossaudio sidplay>=1 stdc++
+WANTLIB=		c m ossaudio sidplay>=1
+WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_OPENBSD}
 EXTRACT_SUFX=	.tgz

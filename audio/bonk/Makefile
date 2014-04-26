@@ -3,7 +3,7 @@
 COMMENT=	lossy/lossless audio coder
 
 DISTNAME=	bonk-0.6
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 HOMEPAGE=	http://www.logarithmic.net/pfh/bonk
 
@@ -12,7 +12,8 @@ MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m sndio stdc++
+WANTLIB=		c m sndio
+WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=	http://www.logarithmic.net/pfh-files/bonk/
 

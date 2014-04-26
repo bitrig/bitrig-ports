@@ -6,7 +6,7 @@ COMMENT=		integrated music management application for GNOME
 
 GNOME_PROJECT=		rhythmbox
 GNOME_VERSION=		3.0.2
-REVISION=		1
+REVISION=		2
 
 SHARED_LIBS +=  rhythmbox-core       0.0      # 7.0
 
@@ -31,8 +31,9 @@ WANTLIB += icudata icui18n icuuc javascriptcoregtk-3.0 jpeg json-glib-1.0
 WANTLIB += lzma m notify orc-0.4 pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre peas-1.0 peas-gtk-1.0 pixman-1 plist png pthread
 WANTLIB += pthread-stubs secret-1 soup-2.4 sqlite3
-WANTLIB += stdc++ tdb totem-plparser webkitgtk-3.0 webp xcb xcb-render
+WANTLIB += tdb totem-plparser webkitgtk-3.0 webp xcb xcb-render
 WANTLIB += xcb-shm xml2 xslt z
+WANTLIB += c++ c++abi
 
 MODULES=		devel/dconf \
 			devel/gettext \

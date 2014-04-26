@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	XMMS input plugin for playing WavPack files
 
 DISTNAME=	xmms-wavpack-1.0.3
-REVISION=	2
+REVISION=	3
 CATEGORIES=	audio
 HOMEPAGE=	http://www.wavpack.com/
 
@@ -13,7 +13,8 @@ HOMEPAGE=	http://www.wavpack.com/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += X11 Xext Xi gdk glib gmodule gtk
-WANTLIB += m stdc++ xcb wavpack xmms
+WANTLIB += m xcb wavpack xmms
+WANTLIB += c++ c++abi pthread
 
 MODULES +=	devel/gettext
 

@@ -6,6 +6,7 @@ MODPY_EGG_VERSION =	0.16
 DISTNAME =		picard-${MODPY_EGG_VERSION}
 
 CATEGORIES =		audio
+REVISION =		0
 
 HOMEPAGE =		http://musicbrainz.org/doc/Picard_Tagger
 
@@ -14,7 +15,8 @@ MAINTAINER =		Amaury Gauthier <amaury.gauthier@etu.unilim.fr>
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += m stdc++ avcodec avformat ofa ${MODPY_WANTLIB}
+WANTLIB += m avcodec avformat ofa ${MODPY_WANTLIB}
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		http://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
 			ftp://ftp.musicbrainz.org/pub/musicbrainz/picard/

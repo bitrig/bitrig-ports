@@ -3,10 +3,12 @@
 COMMENT =	graphical music player focused on a clean ui
 DISTNAME =	musique-1.3
 CATEGORIES =	audio
+REVISION =	0
 
 HOMEPAGE =	http://flavio.tordini.org/musique/
 
 MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
+
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
@@ -15,7 +17,8 @@ MASTER_SITES =	http://flavio.tordini.org/files/musique/
 
 WANTLIB += ICE QtDBus QtGui QtNetwork QtSql QtXml SM
 WANTLIB += X11 Xext Xi Xinerama Xrender c fontconfig
-WANTLIB += freetype m phonon pthread stdc++ tag
+WANTLIB += freetype m phonon pthread tag
+WANTLIB += c++ c++abi
 
 MODULES =	x11/qt4
 

@@ -10,7 +10,7 @@ SHARED_ONLY=		Yes
 VERSION=		1.2.11
 DISTNAME=		xmms-${VERSION}
 PKGNAME-main=		xmms-${VERSION}
-REVISION-main=		13
+REVISION-main=		14
 PKGNAME-vorbis=		xmms-vorbis-${VERSION}
 REVISION-vorbis=	6
 PKGNAME-mikmod=		xmms-mikmod-${VERSION}
@@ -33,8 +33,9 @@ MASTER_SITES=		${HOMEPAGE}/files/$V/ \
 
 MULTI_PACKAGES=		-main -vorbis -mikmod -mp3
 
-WANTLIB-main=		${WANTLIB} GL ICE c Xxf86vm SM sndio stdc++ \
+WANTLIB-main=		${WANTLIB} GL ICE c Xxf86vm SM sndio \
 			Xdamage Xfixes drm
+WANTLIB-main+=		c++ c++abi pthread
 
 MODULES=		devel/gettext
 BUILD_DEPENDS=		${MODGNU_AUTOCONF_DEPENDS} ${MODGNU_AUTOMAKE_DEPENDS}

@@ -2,14 +2,15 @@
 
 COMMENT =	Tcl/Tk CD player
 DISTNAME =	xcd-1.7
-REVISION =	4
+REVISION =	5
 CATEGORIES =	audio
 MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # custom free license; see top of cdplayer.cc
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c m stdc++
+WANTLIB =	c m
+WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES =	${MASTER_SITE_FREEBSD_LOCAL:=jmz/}
 

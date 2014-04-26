@@ -4,13 +4,15 @@ COMMENT =		Fasttracker II inspired MOD tracker
 
 DISTNAME =		milkytracker-0.90.86
 CATEGORIES =		audio
+REVISION =		0
 
 HOMEPAGE =		http://www.milkytracker.org/
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		SDL c m pthread stdc++ z
+WANTLIB =		SDL c m pthread z
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${HOMEPAGE}files/
 

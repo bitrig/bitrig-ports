@@ -6,7 +6,7 @@ COMMENT =	Qt-based C++ library for the Last.fm webservices
 V =		1.0.6
 DISTNAME =	$V
 PKGNAME =	liblastfm-$V
-REVISION =	0
+REVISION =	1
 CATEGORIES =	audio devel net
 
 HOMEPAGE =	https://github.com/lastfm/liblastfm
@@ -24,7 +24,8 @@ DIST_SUBDIR =	liblastfm
 WRKDIST =	${WRKDIR}/${PKGNAME}
 
 WANTLIB =  lib/qt4/QtDBus lib/qt4/QtNetwork lib/qt4/QtSql lib/qt4/QtXml
-WANTLIB += fftw3f c m pthread samplerate stdc++
+WANTLIB += fftw3f c m pthread samplerate
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS =	audio/libsamplerate \
 		math/fftw3,float

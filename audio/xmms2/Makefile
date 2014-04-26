@@ -6,7 +6,7 @@ BROKEN-sparc64 =	waf build goes into an infinite loop
 V =			0.8
 DISTNAME =		xmms2-${V}DrO_o
 PKGNAME =		xmms2-${V}
-REVISION =		2
+REVISION =		3
 
 SHARED_LIBS +=		xmmsclient++		2.0 # 4.0.0
 SHARED_LIBS +=		xmmsclient++-glib	1.0 # 1.0.0
@@ -26,8 +26,9 @@ WANTLIB += FLAC ao avahi-client avahi-common avahi-glib avcodec
 WANTLIB += avutil c curl gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0
 WANTLIB += gthread-2.0 jack m mad ncurses ogg orc-0.4
 WANTLIB += pcre pthread readline schroedinger-1.0 sndfile speex
-WANTLIB += sqlite3 stdc++ theoradec theoraenc vorbis
+WANTLIB += sqlite3 theoradec theoraenc vorbis
 WANTLIB += vorbisfile vorbisidec vpx x264 xml2
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=xmms2/}
 

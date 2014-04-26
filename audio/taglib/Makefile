@@ -2,7 +2,7 @@
 
 COMMENT=	managing meta-data of audio formats
 DISTNAME=	taglib-1.9.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio devel
 
 MASTER_SITES=	http://taglib.github.io/releases/
@@ -17,7 +17,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=	devel/cmake
 
-WANTLIB=	stdc++ m z
+WANTLIB=	m z
+WANTLIB+=	c++ c++abi pthread
 
 BUILD_DEPENDS=	devel/cppunit
 

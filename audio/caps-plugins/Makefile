@@ -7,7 +7,7 @@ COMMENT =		CAPS LADSPA plugins
 V =			0.4.4
 DISTNAME =		caps_${V}
 PKGNAME =		caps-plugins-${V}
-REVISION =		0
+REVISION =		1
 CATEGORIES =		audio
 
 HOMEPAGE =		http://quite.de/dsp/caps.html
@@ -15,7 +15,8 @@ HOMEPAGE =		http://quite.de/dsp/caps.html
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		m stdc++
+WANTLIB =		m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		http://quitte.de/dsp/
 

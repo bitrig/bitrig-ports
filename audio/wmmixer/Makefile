@@ -4,13 +4,14 @@ COMMENT=		wm-dockapp; audio mixer
 
 DISTNAME=		wmmixer-1.0-beta1
 PKGNAME=		wmmixer-1.0b1
-REVISION=		3
+REVISION=		4
 CATEGORIES=		audio x11 x11/windowmaker
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		X11 Xau Xdmcp Xext Xpm c m ossaudio stdc++
+WANTLIB=		X11 Xau Xdmcp Xext Xpm c m ossaudio
+WANTLIB+=		c++ c++abi pthread
 
 EXTRACT_SUFX=		.tgz
 

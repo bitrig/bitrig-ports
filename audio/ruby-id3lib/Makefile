@@ -5,14 +5,15 @@ COMMENT=	Ruby interface to the id3lib C++ library
 VERSION=	0.6.0
 DISTNAME=	id3lib-ruby-${VERSION}
 PKGNAME=	id3lib-${VERSION}
-REVISION =	6
+REVISION =	7
 CATEGORIES=	audio
 
 # Ruby License
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=	lang/ruby converters/libiconv
-WANTLIB=	id3>=4 stdc++ z
+WANTLIB=	id3>=4 z
+WANTLIB+=	c++ c++abi pthread
 LIB_DEPENDS=	audio/id3lib
 
 CONFIGURE_STYLE=	ruby gem ext

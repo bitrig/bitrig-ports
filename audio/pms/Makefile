@@ -5,14 +5,15 @@ COMMENT=		curses based frontend for mpd
 DISTNAME=		pms-0.42
 EXTRACT_SUFX = 		.tar.bz2
 CATEGORIES=		audio
-REVISION =		2
+REVISION =		3
 
 HOMEPAGE=		http://pms.sourceforge.net/
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c glib-2.0 m ncursesw stdc++
+WANTLIB=		c glib-2.0 m ncursesw
+WANTLIB +=		c++ c++abi pthread
 LIB_DEPENDS=		devel/glib2
 
 MODULES=		devel/gettext \

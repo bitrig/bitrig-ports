@@ -3,7 +3,7 @@
 COMMENT=	compact disk input and control library
 
 DISTNAME=	libcdio-0.80
-REVISION=	6
+REVISION=	7
 CATEGORIES=	audio devel
 MASTER_SITES=	${MASTER_SITE_GNU:=libcdio/}
 
@@ -19,7 +19,8 @@ HOMEPAGE=	https://www.gnu.org/software/libcdio/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=	c cddb m ncurses stdc++
+WANTLIB=	c cddb m ncurses
+WANTLIB+=	c++ c++abi pthread
 
 MODULES=	converters/libiconv
 LIB_DEPENDS=	audio/libcddb

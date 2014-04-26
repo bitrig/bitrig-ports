@@ -3,7 +3,7 @@
 COMMENT=	MPEG-2 and MPEG-4 AAC encoder
 
 DISTNAME=	faac-1.28
-REVISION=	4
+REVISION=	5
 CATEGORIES=    	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=faac/}
 
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_CDROM=	Cannot distribute
 PERMIT_PACKAGE_FTP=	Cannot distribute
 PERMIT_DISTFILES_FTP=	Yes
 
-WANTLIB=	c m stdc++ mp4v2>=3
+WANTLIB=	c m mp4v2>=3
+WANTLIB+=	c++ c++abi pthread
 
 # uses macros from libtool.m4
 BUILD_DEPENDS=	${MODGNU_AUTOCONF_DEPENDS} \

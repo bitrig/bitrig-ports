@@ -3,7 +3,7 @@
 COMMENT=		interactive console id3 tag editor
 
 DISTNAME=		id3ed-1.10.4
-REVISION=		2
+REVISION=		3
 CATEGORIES=     	audio
 
 HOMEPAGE=		http://users.dakotacom.net/~donut/programs/id3ed.html
@@ -13,7 +13,8 @@ MAINTAINER=		Nick Nauwelaerts <nick@nauwelaerts.net>
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c curses m readline stdc++
+WANTLIB=		c curses m readline
+WANTLIB+=		c++ c++abi pthread
 
 LIB_DEPENDS=		devel/readline
 

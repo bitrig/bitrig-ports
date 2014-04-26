@@ -5,14 +5,15 @@ COMMENT=	sends AM radio signals using a monitor
 VERSION=	1.0.5
 DISTNAME=	tempest_for_eliza-${VERSION}
 PKGNAME=	tempest-${VERSION}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	audio
 
 HOMEPAGE=	http://www.erikyyy.de/tempest/
 
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB += SDL c m pthread stdc++
+WANTLIB += SDL c m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${HOMEPAGE}
 

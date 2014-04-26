@@ -3,7 +3,7 @@
 COMMENT=	free lossless audio codec
 
 DISTNAME=	flac-1.3.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio archivers
 HOMEPAGE=	https://www.xiph.org/flac/
 SHARED_LIBS +=  FLAC                 10.0     # 11.0
@@ -17,7 +17,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=	http://downloads.xiph.org/releases/flac/
 EXTRACT_SUFX=	.tar.xz
 
-WANTLIB=	c m ogg stdc++
+WANTLIB=	c m ogg
+WANTLIB+=	c++ c++abi pthread
 
 MODULES=	converters/libiconv
 LIB_DEPENDS=	audio/libogg

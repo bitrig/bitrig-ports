@@ -7,7 +7,7 @@ COMMENT=	XMMS input plugin to play bonk files
 VERSION=	0.12
 DISTNAME=	bonk-xmms-${VERSION}
 PKGNAME=	xmms-bonk-${VERSION}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	audio
 
 MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
@@ -15,7 +15,8 @@ MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		m stdc++
+WANTLIB=		m
+WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=	http://www.proustmedia.de/bonk-xmms/
 

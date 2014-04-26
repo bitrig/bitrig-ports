@@ -3,7 +3,7 @@
 COMMENT=		library for audio metadata lookup
 
 DISTNAME=		libmusicbrainz-3.0.2
-REVISION=		3
+REVISION=		4
 
 SHARED_LIBS=		musicbrainz3	0.0	# .6.1
 CATEGORIES=		audio
@@ -18,7 +18,8 @@ MASTER_SITES=		ftp://ftp.musicbrainz.org/pub/musicbrainz/ \
 
 MODULES=		devel/cmake
 
-WANTLIB=		m neon stdc++
+WANTLIB=		m neon
+WANTLIB+=		c++ c++abi pthread
 
 LIB_DEPENDS=		net/neon
 

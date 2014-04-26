@@ -8,7 +8,7 @@ COMMENT =		digital audio workstation
 DISTNAME =		ardour-2.8.14
 CATEGORIES =		audio
 HOMEPAGE =		http://ardour.org
-REVISION =		5
+REVISION =		6
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
@@ -22,8 +22,9 @@ WANTLIB += glibmm-2.4 gmodule-2.0 gnomecanvas-2 gnomecanvasmm-2.6
 WANTLIB += gobject-2.0 gthread-2.0 gtk-x11-2.0 gtkmm-2.4 harfbuzz
 WANTLIB += jack lo lrdf m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pangomm-1.4 pcre pixman-1 png pthread pthread-stubs
-WANTLIB += samplerate sigc-2.0 sndfile sndio stdc++ xcb xcb-render
+WANTLIB += samplerate sigc-2.0 sndfile sndio xcb xcb-render
 WANTLIB += xcb-shm xml2 xslt z
+WANTLIB += c++ c++abi
 
 # Use mirrors as official site has click-through donation-request download.
 MASTER_SITES =		http://stsp.name/openbsd/distfiles/ \

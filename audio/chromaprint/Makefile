@@ -4,6 +4,7 @@ COMMENT =		audio fingerprint extraction library
 CATEGORIES =		audio devel
 HOMEPAGE =		http://acoustid.org/chromaprint/
 DISTNAME =		chromaprint-0.6
+REVISION =		0
 
 MASTER_SITES =		http://www.ohvost.ru/dnl/ \
 			http://malcolm.ecentrum.hu/distfiles/
@@ -13,7 +14,8 @@ SHARED_LIBS =		chromaprint		0.0  # 0.1
 # LGPL2.1+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		avcodec avutil m stdc++
+WANTLIB =		avcodec avutil m
+WANTLIB +=		c++ c++abi pthread
 
 MODULES =		devel/cmake
 

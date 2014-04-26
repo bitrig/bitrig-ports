@@ -9,8 +9,8 @@ VERSION =	11.8.16
 DISTNAME =	gmpc-plugins-${VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-wikipedia =	gmpc-wikipedia-${VERSION}
-REVISION-main =		3
-REVISION-wikipedia =	5
+REVISION-main =		4
+REVISION-wikipedia =	6
 
 CATEGORIES =	audio
 
@@ -53,8 +53,9 @@ WANTLIB += Xi Xinerama Xrandr Xrender Xxf86vm atk-1.0 cairo drm
 WANTLIB += expat fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-x11-2.0 m mpd pango-1.0 pangocairo-1.0 pangoft2-1.0
-WANTLIB += pcre pixman-1 png pthread-stubs sqlite3 stdc++ xcb
+WANTLIB += pcre pixman-1 png pthread-stubs sqlite3 xcb
 WANTLIB += xcb-render xcb-shm xml2 z ffi harfbuzz
+WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	audio/gmpc>=${VERSION} \
 		audio/vorbis-tools
