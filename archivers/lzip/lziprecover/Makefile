@@ -3,13 +3,14 @@
 COMMENT =		data recovery tool and decompressor for lzip files
 
 DISTNAME =		lziprecover-1.15
-REVISION =		1
+REVISION =		2
 
 HOMEPAGE =		http://lzip.nongnu.org/lziprecover.html
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m stdc++
+WANTLIB =		c m
+WANTLIB +=		c++ c++abi pthread
 
 .include <bsd.port.mk>

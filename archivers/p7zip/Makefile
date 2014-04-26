@@ -10,8 +10,8 @@ DISTNAME=	p7zip_${V}_src_all
 PKGNAME=	p7zip-${V}
 PKGNAME-main=	p7zip-${V}
 PKGNAME-rar=	p7zip-rar-${V}
-REVISION-main=	0
-REVISION-rar=	1
+REVISION-main=	1
+REVISION-rar=	2
 CATEGORIES=	archivers
 
 HOMEPAGE=	http://sourceforge.net/projects/p7zip/
@@ -23,7 +23,8 @@ PERMIT_PACKAGE_CDROM-rar=	no fee
 PERMIT_PACKAGE_CDROM=		Yes
 PERMIT_PACKAGE_FTP=		Yes
 
-WANTLIB=	m pthread stdc++
+WANTLIB=	m pthread
+WANTLIB+=	c++ c++abi
 WANTLIB-main=	${WANTLIB} c
 WANTLIB-rar=	${WANTLIB}
 

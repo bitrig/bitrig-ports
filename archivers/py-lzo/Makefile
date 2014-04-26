@@ -5,7 +5,7 @@ COMMENT =		Python implementation of the LZO library
 MODPY_EGG_VERSION =	1.08
 DISTNAME =		python-lzo-${MODPY_EGG_VERSION}
 PKGNAME =		py-lzo-${MODPY_EGG_VERSION}
-REVISION =		3
+REVISION =		4
 CATEGORIES =		archivers
 
 HOMEPAGE =		http://www.oberhumer.com/opensource/lzo/
@@ -20,7 +20,7 @@ MASTER_SITES =	http://www.oberhumer.com/opensource/lzo/download/LZO-v1/
 MODULES =	lang/python
 
 LIB_DEPENDS =	archivers/lzo
-WANTLIB =	lzo ${MODPY_WANTLIB}
+WANTLIB =	lzo ${MODPY_WANTLIB} pthread
 
 MAKE_ENV +=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"

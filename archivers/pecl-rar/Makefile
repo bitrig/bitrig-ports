@@ -4,11 +4,13 @@ COMMENT=	PHP support for rar archives
 
 DISTNAME=	rar-3.0.1
 CATEGORIES=	archivers
+REVISION=	0
 
 # PHP
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	m stdc++
+WANTLIB=	m
+WANTLIB+=	c++ c++abi pthread
 
 MODULES=	lang/php/pecl
 CONFIGURE_STYLE= gnu

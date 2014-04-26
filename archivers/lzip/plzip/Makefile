@@ -3,14 +3,15 @@
 COMMENT =		multi-threaded data compressor based on lzlib
 
 DISTNAME =		plzip-1.1
-REVISION =		2
+REVISION =		3
 
 HOMEPAGE =		http://lzip.nongnu.org/plzip.html
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c lz m pthread stdc++
+WANTLIB =		c lz m pthread
+WANTLIB +=		c++ c++abi
 
 LIB_DEPENDS =		archivers/lzip/lzlib
 

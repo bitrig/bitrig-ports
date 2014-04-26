@@ -13,6 +13,7 @@ PKGNAME=	unrar-5.00
 EPOCH=		1
 DISTNAME=	unrarsrc-5.0.11
 CATEGORIES=	archivers
+REVISION=	0
 
 HOMEPAGE=	http://www.rarlab.com/
 
@@ -21,7 +22,8 @@ MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 # nonstandard
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c crypto m pthread stdc++
+WANTLIB=	c crypto m pthread
+WANTLIB+=	c++ c++abi
 
 MASTER_SITES=	${HOMEPAGE}rar/
 

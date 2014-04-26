@@ -10,8 +10,9 @@ HOMEPAGE=	http://parchive.sourceforge.net/\#client_par2cmdline
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-REVISION =	1
-WANTLIB=		c m stdc++
+REVISION =	2
+WANTLIB=	c m
+WANTLIB+=	c++ c++abi pthread
 
 CONFIGURE_STYLE=gnu
 

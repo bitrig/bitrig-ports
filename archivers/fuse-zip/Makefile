@@ -6,12 +6,15 @@ DISTNAME =		fuse-zip-0.4.0
 
 CATEGORIES =		archivers
 
+REVISION=	0
+
 HOMEPAGE =		https://code.google.com/p/fuse-zip/
 
 # LGPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c fuse m stdc++ z zip
+WANTLIB += c fuse m z zip
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		https://fuse-zip.googlecode.com/files/
 

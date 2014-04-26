@@ -3,6 +3,7 @@
 COMMENT =	Qt/C++ wrapper for ZIP/UNZIP package
 DISTNAME =	quazip-0.6.2
 CATEGORIES =	archivers
+REVISION =	0
 
 SHARED_LIBS =	quazip 1.0		# 1.0
 
@@ -13,7 +14,8 @@ HOMEPAGE =	http://quazip.sourceforge.net/
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB += m stdc++ z
+WANTLIB += m z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=quazip/}
 
