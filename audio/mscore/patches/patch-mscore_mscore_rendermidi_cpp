@@ -1,0 +1,10 @@
+--- mscore/mscore/rendermidi.cpp.orig	Sat Apr 26 17:29:21 2014
++++ mscore/mscore/rendermidi.cpp	Sat Apr 26 17:28:50 2014
+@@ -553,6 +553,7 @@ void Score::fixPpitch()
+       int ns = nstaves();
+       
+ //ugly but clang cannot deal with 2/ while gcc4.6 can cope with 1/
++#define Q_WS_MAC
+ #ifdef Q_WS_MAC
+       QList<OttavaShiftSegment>* osl = new QList<OttavaShiftSegment>[ns];
+ #else

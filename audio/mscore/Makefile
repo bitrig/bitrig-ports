@@ -4,7 +4,7 @@ BROKEN-hppa =	ICE on moc_qtsingleapplication.cxx
 
 COMMENT =	WYSIWYG music notation software (MuseScore)
 DISTNAME =	mscore-1.3
-REVISION =	3
+REVISION =	4
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	audio x11
 SUBST_VARS +=	DISTNAME
@@ -26,12 +26,6 @@ WANTLIB += lib/qt4/QtWebKit lib/qt4/QtXml lib/qt4/QtXmlPatterns
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=mscore/}
 
 MODULES =	x11/qt4
-
-# ICE building moc_qtsingleapplication.cxx with base gcc 4.2.1 on amd64.
-# possible problems with ppc. unsure about other arch.
-MODULES +=		gcc4
-MODGCC4_ARCHS +=	*
-MODGCC4_LANGS +=	c++
 
 BUILD_DEPENDS =	devel/cmake
 
