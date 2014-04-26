@@ -40,10 +40,10 @@ CC=egcc
 
 .  if ${MODGCC4_LANGS:L:Mc++}
 BUILD_DEPENDS += lang/gcc/4.8,-c++>=4.8,<4.9
-MODGCC4STDCPP = estdc++
+MODGCC4STDCPP = c++ c++abi pthread
 MODGCC4_CPPLIBDEP = lang/gcc/4.8,-estdc>=4.8,<4.9
 LIB_DEPENDS += ${MODGCC4_CPPLIBDEP}
-MODGCC4_CPPWANTLIB = estdc++>=16
+MODGCC4_CPPWANTLIB = c++ c++abi pthread
 WANTLIB += ${MODGCC4_CPPWANTLIB}
 _MODGCC4_LINKS += eg++ g++ eg++ c++
 CXX=eg++

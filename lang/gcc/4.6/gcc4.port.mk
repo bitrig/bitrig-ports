@@ -39,10 +39,10 @@ _MODGCC4_LINKS += egcc gcc egcc cc
 
 .  if ${MODGCC4_LANGS:L:Mc++}
 BUILD_DEPENDS += lang/gcc/4.6,-c++>=4.6,<4.7
-MODGCC4STDCPP = estdc++
+MODGCC4STDCPP = c++ c++abi pthread
 MODGCC4_CPPLIBDEP = lang/gcc/4.6,-estdc>=4.6,<4.7
 LIB_DEPENDS += ${MODGCC4_CPPLIBDEP}
-MODGCC4_CPPWANTLIB = estdc++>=14
+MODGCC4_CPPWANTLIB = c++ c++abi pthread
 WANTLIB += ${MODGCC4_CPPWANTLIB}
 _MODGCC4_LINKS += eg++ g++ eg++ c++
 .  endif
