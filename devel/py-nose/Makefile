@@ -2,10 +2,9 @@
 
 COMMENT=		discovery-based unittest extension
 
-MODPY_EGG_VERSION=	1.3.0
+MODPY_EGG_VERSION=	1.3.1
 DISTNAME=		nose-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION=		2
 CATEGORIES=		devel
 
 HOMEPAGE=		http://readthedocs.org/docs/nose/en/latest/
