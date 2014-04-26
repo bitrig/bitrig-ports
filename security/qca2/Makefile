@@ -7,7 +7,7 @@ DISTNAME =	qca-2.0.3
 PKGNAME =	qca2-2.0.3
 CATEGORIES =	security
 SHARED_LIBS +=	qca2	0.0
-REVISION =	2
+REVISION =	3
 
 HOMEPAGE =	http://delta.affinix.com/qca/
 
