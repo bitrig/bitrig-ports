@@ -1,6 +1,6 @@
 $OpenBSD: patch-src_3rdparty_javascriptcore_JavaScriptCore_wtf_Platform_h,v 1.7 2013/10/04 13:15:40 dcoppa Exp $
---- src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h.orig	Fri Jun  7 07:16:58 2013
-+++ src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h	Fri Sep 27 10:10:55 2013
+--- src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h.orig	Thu Apr 10 20:37:12 2014
++++ src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h	Sat Apr 26 00:24:17 2014
 @@ -142,6 +142,30 @@
  #endif
  #endif
@@ -32,24 +32,23 @@ $OpenBSD: patch-src_3rdparty_javascriptcore_JavaScriptCore_wtf_Platform_h,v 1.7 
  /* CPU(HPPA) - a.k.a. PA-RISC */
  #if defined(__hppa) || defined(__hppa__)
  #define WTF_CPU_HPPA 1
-@@ -325,8 +349,10 @@
+@@ -333,6 +357,10 @@
  
  #endif /* ARM */
  
 +#if CPU(ARM) || CPU(MIPS) || CPU(SH4) || CPU(MIPS64) || CPU(SPARC64)
 +#define WTF_CPU_NEEDS_ALIGNED_ACCESS 1
 +#endif
- 
--
- /* ==== OS() - underlying operating system; only to be used for mandated low-level services like 
-    virtual memory, not to choose a GUI toolkit ==== */
- 
-@@ -873,7 +899,7 @@
++
+ /* CPU(MIPS) - MIPS, any version */
+ #if (defined(mips) || defined(__mips__) || defined(MIPS) || defined(_MIPS_))
+ #define WTF_CPU_MIPS 1
+@@ -903,7 +931,7 @@
  #endif
  
  #if !defined(WTF_USE_JSVALUE64) && !defined(WTF_USE_JSVALUE32) && !defined(WTF_USE_JSVALUE32_64)
--#if (CPU(X86_64) && (OS(UNIX) || OS(WINDOWS) || OS(SOLARIS) || OS(HPUX))) || (CPU(IA64) && !CPU(IA64_32)) || CPU(ALPHA) || CPU(AIX64) || CPU(SPARC64)
-+#if (CPU(X86_64) && (OS(UNIX) || OS(WINDOWS) || OS(SOLARIS) || OS(HPUX) || OS(OPENBSD))) || (CPU(IA64) && !CPU(IA64_32)) || CPU(ALPHA) || CPU(AIX64) || CPU(SPARC64) || CPU(MIPS64)
+-#if (CPU(X86_64) && (OS(UNIX) || OS(WINDOWS) || OS(SOLARIS) || OS(HPUX))) || (CPU(IA64) && !CPU(IA64_32)) || CPU(ALPHA) || CPU(AIX64) || CPU(SPARC64) || CPU(MIPS64) || CPU(AARCH64)
++#if (CPU(X86_64) && (OS(UNIX) || OS(WINDOWS) || OS(SOLARIS) || OS(HPUX) || OS(OPENBSD))) || (CPU(IA64) && !CPU(IA64_32)) || CPU(ALPHA) || CPU(AIX64) || CPU(SPARC64) || CPU(MIPS64) || CPU(AARCH64)
  #define WTF_USE_JSVALUE64 1
  #elif CPU(ARM) || CPU(PPC64)
  #define WTF_USE_JSVALUE32 1

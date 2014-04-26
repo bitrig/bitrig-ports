@@ -24,8 +24,6 @@ PKGNAME-debug =		qt4-debug-${PKGVERSION}
 FULLPKGNAME-html =	qt4-html-${PKGVERSION}
 FULLPKGPATH-html =	${BASE_PKGPATH},-html
 
-REVISION-main =		3
-
 # XXX qmake include parser is bogus
 DPB_PROPERTIES =	parallel	nojunk
 
@@ -52,8 +50,8 @@ SHARED_LIBS =	Qt3Support 8.0 \
 		QtDeclarative 0.0
 
 
-VERSION =	4.8.5
-PKGVERSION =	4.8.5
+VERSION =	4.8.6
+PKGVERSION =	4.8.6
 DISTNAME =	qt-everywhere-opensource-src-${VERSION}
 
 CATEGORIES =	x11

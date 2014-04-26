@@ -1,0 +1,11 @@
+--- src/3rdparty/webkit/Source/JavaScriptCore/wtf/Atomics.h.orig	Fri Apr 25 23:07:28 2014
++++ src/3rdparty/webkit/Source/JavaScriptCore/wtf/Atomics.h	Fri Apr 25 23:07:10 2014
+@@ -69,7 +69,7 @@
+ #include <cutils/atomic.h>
+ #elif OS(QNX)
+ #include <atomic.h>
+-#elif COMPILER(GCC) && !OS(SYMBIAN)
++#elif COMPILER(GCC) && !OS(SYMBIAN) && !OS(OPENBSD)
+ #if (__GNUC__ > 4) || ((__GNUC__ == 4) && (__GNUC_MINOR__ >= 2))
+ #include <ext/atomicity.h>
+ #else

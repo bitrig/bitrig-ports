@@ -1,0 +1,10 @@
+--- src/3rdparty/javascriptcore/JavaScriptCore/runtime/Collector.cpp.orig	Thu Apr 10 20:37:12 2014
++++ src/3rdparty/javascriptcore/JavaScriptCore/runtime/Collector.cpp	Sat Apr 26 12:29:23 2014
+@@ -67,6 +67,7 @@
+ #elif OS(UNIX)
+ 
+ #include <stdlib.h>
++#include <pthread.h>
+ #if !OS(HAIKU)
+ #include <sys/mman.h>
+ #endif
