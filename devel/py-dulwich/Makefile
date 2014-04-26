@@ -2,7 +2,7 @@
 
 COMMENT =	pure Python implementation of Git file formats and protocols
 
-MODPY_EGG_VERSION =	0.9.5
+MODPY_EGG_VERSION =	0.9.6
 DISTNAME =		dulwich-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 
@@ -21,7 +21,7 @@ MODPY_SETUPTOOLS =	Yes
 TEST_DEPENDS =	devel/py-nose \
 		devel/git,-main
 
-WANTLIB +=	${MODPY_WANTLIB}
+WANTLIB +=	pthread ${MODPY_WANTLIB}
 
 do-test:
 	cd ${WRKSRC} && nosetests
