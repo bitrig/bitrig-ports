@@ -10,6 +10,7 @@ NOT_FOR_ARCHS=		${GCC3_ARCHS}
 COMMENT=	straightforward implementation of DBM
 
 DISTNAME=	kyotocabinet-1.2.76
+REVISION=	0
 
 SHARED_LIBS +=	kyotocabinet 0.0 # 16.0
 
@@ -45,7 +46,7 @@ FLAVOR?=
 # crash
 # (http://lists.cs.uiuc.edu/pipermail/llvmbugs/2012-February/022080.html).
 CC=gcc
-CXX=${CC}
+CXX=g++
 
 .if ${FLAVOR:Moptimized}
 CONFIGURE_ARGS += --enable-opt

@@ -4,7 +4,7 @@ Put our CFLAGS, CXXFLAGS, CPPFLAGS and LDFLAGS at the end so that we can
 override optimisations...
 
 --- configure.orig	Thu May 24 13:31:45 2012
-+++ configure	Wed Aug 29 08:56:20 2012
++++ configure	Fri Apr 25 14:52:51 2014
 @@ -3352,10 +3352,10 @@ $as_echo "$as_me: WARNING: another compiler except for
    MYCFLAGS=""
    MYCXXFLAGS=""
@@ -20,7 +20,23 @@ override optimisations...
  
  # Byte order
  
-@@ -4554,9 +4554,7 @@ then
+@@ -4202,7 +4202,6 @@ if ${ac_cv_lib_stdcpp_main+:} false; then :
+   $as_echo_n "(cached) " >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lstdc++  $LIBS"
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ 
+@@ -4231,7 +4230,6 @@ if test "x$ac_cv_lib_stdcpp_main" = xyes; then :
+ #define HAVE_LIBSTDC__ 1
+ _ACEOF
+ 
+-  LIBS="-lstdc++ $LIBS"
+ 
+ fi
+ 
+@@ -4554,9 +4552,7 @@ then
      MYLIBRARYFILES="$MYLIBRARYFILES libkyotocabinet.dylib"
      MYLDLIBPATHENV="DYLD_LIBRARY_PATH"
    else

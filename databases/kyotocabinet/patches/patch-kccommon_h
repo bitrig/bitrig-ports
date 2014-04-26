@@ -1,0 +1,26 @@
+--- kccommon.h.orig	Fri Apr 25 14:49:14 2014
++++ kccommon.h	Fri Apr 25 14:49:37 2014
+@@ -82,23 +82,8 @@ using ::modfl;
+ using ::snprintf;
+ }
+ 
+-#if __cplusplus > 199711L || defined(__GXX_EXPERIMENTAL_CXX0X__) || defined(_MSC_VER)
+-
+ #include <unordered_map>
+ #include <unordered_set>
+-
+-#else
+-
+-#include <tr1/unordered_map>
+-#include <tr1/unordered_set>
+-
+-namespace std {
+-using tr1::hash;
+-using tr1::unordered_map;
+-using tr1::unordered_set;
+-}
+-
+-#endif
+ 
+ #undef VERSION
+ #undef LIBVER
