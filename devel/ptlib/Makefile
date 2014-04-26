@@ -6,7 +6,7 @@ COMMENT=	portable tools library
 
 V=		2.10.11
 DISTNAME=	ptlib-${V}
-REVISION=	0
+REVISION=	1
 EXTRACT_SUFX=	.tar.bz2
 SUBST_VARS=	V
 
