@@ -28,6 +28,11 @@ RUN_DEPENDS=		archivers/lha \
 			archivers/arc \
 			archivers/unzip
 
+### XXX clamav relies on libmilter, which is not part of base
+#
+BUILD_DEPENDS+=		mail/sendmail
+RUN_DEPENDS+=		mail/sendmail
+
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=clamav/}
 
 CONFIGURE_STYLE=        gnu
@@ -43,6 +48,8 @@ CONFIGURE_ARGS+=        --disable-clamav \
 			--with-dbdir=/var/db/clamav \
 			--with-ltdl-include=${LOCALBASE}/include \
 			--with-ltdl-lib=${LOCALBASE}/lib
+
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/config
 
 TEST_TARGET=	check
 MODULES=	lang/python converters/libiconv

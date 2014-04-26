@@ -1,0 +1,11 @@
+--- libclamav/bytecode_detect.c.orig	Sat Apr 26 02:29:40 2014
++++ libclamav/bytecode_detect.c	Sat Apr 26 02:32:18 2014
+@@ -210,7 +210,7 @@ void cli_detect_environment(struct cli_environment *en
+     /* DARWIN must come before BSD since it defines both */
+ #elif defined(C_DARWIN)
+     env->os_category = os_darwin;
+-#elif defined(C_BSD)
++#elif defined(C_BSD) || defined(BITRIG)
+     env->os_category = os_bsd;
+ #elif defined(C_GNU_HURD)
+     env->os_category = os_gnu_hurd;
