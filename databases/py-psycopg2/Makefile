@@ -4,7 +4,7 @@ SHARED_ONLY =		Yes
 
 COMMENT =		PostgreSQL database adapter for Python
 
-MODPY_EGG_VERSION =	2.5.1
+MODPY_EGG_VERSION =	2.5.2
 DISTNAME =		psycopg2-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		databases
@@ -21,7 +21,7 @@ MASTER_SITES =	${MASTER_SITE_PYPI:=p/psycopg2/} \
 
 MODULES =	lang/python
 LIB_DEPENDS =	databases/postgresql
-WANTLIB +=	pq ${MODPY_WANTLIB}
+WANTLIB +=	pq pthread ${MODPY_WANTLIB}
 RUN_DEPENDS =	databases/postgresql
 TEST_DEPENDS = ${RUN_DEPENDS}
 
