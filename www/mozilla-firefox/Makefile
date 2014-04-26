@@ -35,11 +35,6 @@ MODGCC4_LANGS =		c c++
 MODCLANG_ARCHS =	amd64
 MODCLANG_LANGS =	c c++
 
-# fix for 982693, apply only on clang archs
-.if ${MACHINE_ARCH:Mamd64}
-MAKE_ENV += VPXHACK="-fno-integrated-as"
-.endif
-
 # Regression tests are too hard to adapt to run here
 NO_TEST =	Yes
 
