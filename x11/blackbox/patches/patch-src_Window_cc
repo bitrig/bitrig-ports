@@ -1,0 +1,11 @@
+--- src/Window.cc.orig	Sat Apr 26 22:35:00 2014
++++ src/Window.cc	Sat Apr 26 22:35:13 2014
+@@ -44,6 +44,8 @@
+ 
+ #include <assert.h>
+ 
++#include <cstdlib>
++
+ /*
+   sometimes C++ is a pain in the ass... it gives us stuff like the
+   default copy constructor and assignment operator (which does member

@@ -1,0 +1,10 @@
+--- lib/Display.cc.orig	Sat Apr 26 22:28:06 2014
++++ lib/Display.cc	Sat Apr 26 22:28:23 2014
+@@ -24,6 +24,7 @@
+ 
+ #include "Display.hh"
+ 
++#include <cstdlib>
+ #include <algorithm>
+ 
+ #include <X11/Xutil.h>
