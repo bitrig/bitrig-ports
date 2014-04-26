@@ -1,0 +1,10 @@
+--- ebml/EbmlBinary.h.orig	Sat Apr 26 18:57:31 2014
++++ ebml/EbmlBinary.h	Sat Apr 26 18:57:46 2014
+@@ -38,6 +38,7 @@
+ #define LIBEBML_BINARY_H
+ 
+ #include <cstring>
++#include <cstdlib>
+ 
+ #include "EbmlTypes.h"
+ #include "EbmlElement.h"
