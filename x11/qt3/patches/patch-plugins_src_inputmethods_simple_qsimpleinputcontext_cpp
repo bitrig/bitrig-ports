@@ -1,14 +1,14 @@
 $OpenBSD: patch-plugins_src_inputmethods_simple_qsimpleinputcontext_cpp,v 1.2 2007/03/31 22:49:46 espie Exp $
---- plugins/src/inputmethods/simple/qsimpleinputcontext.cpp.orig	Mon Jun 11 11:31:03 2012
-+++ plugins/src/inputmethods/simple/qsimpleinputcontext.cpp	Mon Jun 11 12:04:23 2012
-@@ -45,6 +45,7 @@
- #include <qnamespace.h>
+--- plugins/src/inputmethods/simple/qsimpleinputcontext.cpp.orig	Fri Apr 25 18:05:20 2014
++++ plugins/src/inputmethods/simple/qsimpleinputcontext.cpp	Fri Apr 25 18:07:23 2014
+@@ -46,6 +46,7 @@
  #include <qevent.h>
  #include <qglobal.h>
-+#include <ext/bitmap_allocator.h>
  
++
  static const int ignoreKeys[] = {
      Qt::Key_Shift,
+     Qt::Key_Control,
 @@ -140,7 +141,7 @@ bool QSimpleInputContext::filterEvent( const QEvent *e
          // only one character. See description of
          // QInputContext::filterEvent() about key compression.
@@ -48,15 +48,7 @@ $OpenBSD: patch-plugins_src_inputmethods_simple_qsimpleinputcontext_cpp,v 1.2 20
          break;
      default:
          break;
-@@ -233,14 +234,14 @@ bool QSimpleInputContext::isComposingKeys( int keyval 
- 
- bool QSimpleInputContext::checkComposeTable( uint* composeBuffer, const QComposeTable *composeTable )
- {
--    const QComposeTableElement *p = std::lower_bound( composeTable->data,
-+    const QComposeTableElement *p = __gnu_cxx::__detail::__lower_bound( composeTable->data,
- 						      composeTable->data + composeTable->size,
- 						      composeBuffer,
- 						      Cmp() );
+@@ -240,7 +241,7 @@ bool QSimpleInputContext::checkComposeTable( uint* com
  
      // no entries were found
      if ( p == composeTable->data + composeTable->size ) {
