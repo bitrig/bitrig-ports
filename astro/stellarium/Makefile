@@ -6,6 +6,8 @@ DISTNAME=	stellarium-0.12.4
 
 CATEGORIES=	astro x11
 
+REVISION=	0
+
 HOMEPAGE=	http://www.stellarium.org/
 
 MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
@@ -16,7 +18,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=stellarium/}
 
 WANTLIB += GL GLU ICE QtGui QtNetwork QtOpenGL QtScript SM X11
-WANTLIB += Xext c m pthread stdc++ z
+WANTLIB += Xext c m pthread z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		devel/cmake \
