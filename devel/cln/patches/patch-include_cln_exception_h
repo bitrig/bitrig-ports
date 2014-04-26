@@ -1,0 +1,14 @@
+--- include/cln/exception.h.orig	Sat Apr 26 17:26:28 2014
++++ include/cln/exception.h	Sat Apr 26 17:28:13 2014
+@@ -11,8 +11,10 @@ namespace cln {
+ class runtime_exception : public std::runtime_error {
+ public:
+ 	runtime_exception ()
+-		: std::runtime_error(std::string()) {}
++		: std::runtime_error("") {}
+ 	explicit runtime_exception (const std::string & what)
++		: std::runtime_error(what) {}
++	explicit runtime_exception (const char *what)
+ 		: std::runtime_error(what) {}
+ };
+ 

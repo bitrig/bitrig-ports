@@ -5,6 +5,7 @@ NOT_FOR_ARCHS =	arm mips64 mips64el sparc64 hppa
 COMMENT =	library for efficient computations
 
 DISTNAME =	cln-1.3.3
+REVISION =	0
 SHARED_LIBS +=  cln                  2.0      # .6.3
 CATEGORIES =	devel
 
