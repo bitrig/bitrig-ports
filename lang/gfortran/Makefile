@@ -13,7 +13,7 @@ PKGNAME-main =	gfortran-$V
 PKGNAME-lib =	libgfortran-$V
 SHARED_LIBS =	gfortran	2.0
 
-REVISION = 11
+REVISION = 12
 
 CATEGORIES =	lang math
 
@@ -81,7 +81,7 @@ CONFIGURE_ARGS += \
 	--with-system-zlib \
 	--disable-libmudflap \
 	--disable-libgomp \
-	--disable-tls \
+	--enable-tls \
 	--with-as=/usr/bin/as \
 	--with-ld=/usr/bin/ld \
 	--with-gnu-ld \
