@@ -7,7 +7,7 @@ DISTNAME=	libvmime-${VMIME_V}+svn603
 EXTRACT_SUFX=	.tar.bz2
 
 PKGNAME=	libvmime-${VMIME_V}
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS+=  vmime    2.0     # 0.0
 
