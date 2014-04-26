@@ -2,7 +2,7 @@
 
 COMMENT =		computer algebra system (CAS) in Python
 
-MODPY_EGG_VERSION =	0.7.2
+MODPY_EGG_VERSION =	0.7.5
 DISTNAME =		sympy-${MODPY_EGG_VERSION}
 PKGNAME =		py-sympy-${MODPY_EGG_VERSION}
 CATEGORIES =		math
