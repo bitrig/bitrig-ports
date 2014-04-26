@@ -20,7 +20,7 @@ Databases
 =========
 Django supports number of different databases, but you need
 to install Python database adapter(s) to use them:
-* py-mysql - for MySQL database, 
+* py-mysql - for MySQL database,
 * py-psycopg2 - for PostgreSQL database.
 
 SQLite works out-of-the-box.
@@ -41,7 +41,7 @@ or configure your application server to pass this setting.
 
 Python 3
 ========
-Django 1.5 is the first Django release with support for 
-Python 3 (specifically, Python 3.2 and newer). Python 3 
-support is still considered experimental so please use at 
-your own risk. 
+Django 1.5 is the first Django release with support for
+Python 3 (specifically, Python 3.2 and newer). Python 3
+support is still considered experimental so please use at
+your own risk.
