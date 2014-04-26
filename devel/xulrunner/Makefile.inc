@@ -24,7 +24,8 @@ MODPY_RUNDEP =		No
 LIB_DEPENDS-main =	${LIB_DEPENDS}
 WANTLIB-main =		${WANTLIB}
 
-MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build/autoconf
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build/autoconf \
+				${WRKSRC}/js/src/ctypes/libffi
 
 CONFIGURE_STYLE =	autoconf no-autoheader
 CONFIGURE_ARGS +=	--disable-javaxpcom \
