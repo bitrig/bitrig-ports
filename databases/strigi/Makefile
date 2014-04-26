@@ -7,6 +7,7 @@ HOMEPAGE =	https://projects.kde.org/projects/kdesupport/strigi/
 
 # hand-rolled from strigi* submodules at quickgit.kde.org
 DISTNAME =	strigi-0.7.7pl1
+REVISION =	0
 SHARED_ONLY =	Yes
 
 MASTER_SITES =	http://spacehopper.org/mirrors/ \
