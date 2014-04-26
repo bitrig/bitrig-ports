@@ -9,7 +9,7 @@ EPOCH =		1
 CATEGORIES =	www
 DPB_PROPERTIES =parallel
 EXTRACT_SUFX =	.tar.xz
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://webkitgtk.org/
 MASTER_SITES =	${HOMEPAGE}/releases/
@@ -25,9 +25,6 @@ MODULES =	devel/gettext \
 		lang/ruby \
 		x11/gnome
 
-MODULES +=		gcc4
-MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		c++
 # cant use clang = needs <chrono> header in StdLib ?
 #MODULES +=		lang/clang
 #MODCLANG_ARCHS =        amd64
