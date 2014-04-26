@@ -312,7 +312,7 @@ MODULES=		converters/libiconv devel/gettext
 WANTLIB-main+=		c crypto m pthread ssl xml2>=8 z ${MODGETTEXT_WANTLIB}
 # php 5.4/5.5 : WANTLIB-main += c++ c++abi pthread
 WANTLIB-fastcgi=	${WANTLIB-main}
-LIB_DEPENDS-main=	textproc/libxml
+LIB_DEPENDS-main=	devel/readline textproc/libxml
 RUN_DEPENDS-main=	${MODGETTEXT_RUN_DEPENDS} \
 			mail/femail,-chroot
 LIB_DEPENDS-fastcgi=	${LIB_DEPENDS-main}
