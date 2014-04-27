@@ -18,6 +18,7 @@ WANTLIB += m stdc++
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=cpptest/}
 
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/config
 
 do-test:
 	${WRKSRC}/test/mytest
