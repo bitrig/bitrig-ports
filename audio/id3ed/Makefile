@@ -13,7 +13,7 @@ MAINTAINER=		Nick Nauwelaerts <nick@nauwelaerts.net>
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c curses m readline
+WANTLIB=		c curses m
 WANTLIB+=		c++ c++abi pthread
 
 LIB_DEPENDS=		devel/readline
