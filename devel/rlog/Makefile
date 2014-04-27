@@ -12,5 +12,6 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		m pthread stdc++
 MASTER_SITES =		http://rlog.googlecode.com/files/
 CONFIGURE_STYLE =	gnu
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/config
 
 .include <bsd.port.mk>
