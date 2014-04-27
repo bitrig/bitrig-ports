@@ -5,6 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT-main=		open source multi-protocol PBX and telephony toolkit
 
 VER=			11.8.1
+REVISION-main=		0
 REVISION-snmp=		0
 DISTNAME=		asterisk-${VER:S/beta/-beta/:S/rc/-rc/}
 PKGNAME-main=		asterisk-${VER}
@@ -24,8 +25,9 @@ PERMIT_PACKAGE_FTP=	Yes
 
 WANTLIB-main += avcodec avformat avutil c crypto curl execinfo gsm idn
 WANTLIB-main += iksemel m ogg opencore-amrnb portaudio pthread spandsp
-WANTLIB-main += sqlite3 ssl stdc++ swscale termcap tiff uuid vorbis
+WANTLIB-main += sqlite3 ssl swscale termcap tiff uuid vorbis
 WANTLIB-main += vorbisenc vorbisfile xml2 z ${MODGETTEXT_WANTLIB}
+WANTLIB-main += c++ c++abi
 
 SHARED_LIBS=		asteriskssl 0.0		# 1
 

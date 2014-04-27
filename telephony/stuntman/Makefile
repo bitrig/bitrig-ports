@@ -6,6 +6,7 @@ NOT_FOR_ARCHS = hppa mips64 mips64el sparc64 # atomic ops
 VERSION =	1.2.5
 DISTNAME =	stunserver-${VERSION}
 PKGNAME =	stuntman-${VERSION}
+REVISION =	0
 CATEGORIES =	telephony net
 EXTRACT_SUFX =	.tgz
 
@@ -18,7 +19,8 @@ MASTER_SITES =	${HOMEPAGE}
 # Apache 2.0 license
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB +=	c crypto m pthread stdc++
+WANTLIB +=	c crypto m pthread
+WANTLIB +=	c++ c++abi
 
 BUILD_DEPENDS =	devel/boost
 
