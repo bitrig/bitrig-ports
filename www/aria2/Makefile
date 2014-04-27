@@ -1,7 +1,7 @@
 # $OpenBSD: Makefile,v 1.25 2013/05/30 12:16:05 gonzalo Exp $
 
 COMMENT =		lightweight multi-protocol & multi-source download utility
-DISTNAME =		aria2-1.17.1
+DISTNAME =		aria2-1.18.5
 CATEGORIES =		www
 HOMEPAGE =		http://aria2.sourceforge.net/
 
