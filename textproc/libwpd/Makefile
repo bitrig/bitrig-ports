@@ -20,8 +20,9 @@ PERMIT_PACKAGE_CDROM=   Yes
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libwpd/}
 
 WANTLIB += bz2 c gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 m pcre
-WANTLIB += stdc++ xml2 z gsf-1 ffi
+WANTLIB += xml2 z gsf-1 ffi
 WANTLIB += gthread-2.0 pthread
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext
 

@@ -3,7 +3,7 @@
 COMMENT=	create a document with syntax highlighting
 
 DISTNAME=	source-highlight-3.1.7
-REVISION=	0
+REVISION=	1
 SHARED_LIBS +=	source-highlight     1.0      # 4.0
 CATEGORIES=	textproc
 
@@ -12,7 +12,8 @@ HOMEPAGE=	https://www.gnu.org/software/src-highlite/
 # GPLv3
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB=	c m stdc++ boost_regex-mt pthread
+WANTLIB=	c m boost_regex-mt pthread
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_GNU:=src-highlite/}
 

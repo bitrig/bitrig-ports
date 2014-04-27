@@ -4,7 +4,7 @@ COMMENT=	convert text into the Doc format used by PalmPilots
 
 PKGNAME=	pilot_makedoc-0.7
 CATEGORIES=	textproc
-REVISION=	0
+REVISION=	1
 
 MASTER_SITES=	ftp://ftp.cs.tu-berlin.de/pub/palmtops/pilot/
 DISTFILES=	makedoc7.cpp
@@ -14,7 +14,8 @@ EXTRACT_ONLY=
 PERMIT_PACKAGE_CDROM=	no license
 PERMIT_PACKAGE_FTP=	no license
 PERMIT_DISTFILES_FTP=	no license
-WANTLIB=		c m stdc++ 
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 WRKDIST=	${WRKDIR}
 ALL_TARGET=	pilot_makedoc

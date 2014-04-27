@@ -2,6 +2,7 @@
 
 COMMENT =		implementation of XMP
 DISTNAME =		exempi-2.2.1
+REVISION =		0
 
 CATEGORIES =		textproc
 
@@ -12,7 +13,8 @@ HOMEPAGE =		http://libopenraw.freedesktop.org/wiki/Exempi
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c expat m pthread stdc++ z
+WANTLIB += c expat m pthread z
+WANTLIB += c++ c++abi
 
 # configure checks for libiconv but it's unused
 BUILD_DEPENDS =		converters/libiconv

@@ -17,7 +17,8 @@ MAINTAINER=	Brad Smith <brad@comstyle.com>
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	m stdc++
+WANTLIB=	m
+WANTLIB +=	c++ c++abi pthread
 
 MAKE_ENV+=	LIBebml_VERSION=${LIBebml_VERSION}
 MAKE_FLAGS+=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}"

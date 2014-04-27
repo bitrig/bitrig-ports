@@ -17,7 +17,8 @@ MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c crypto fontconfig freetype idn jpeg m png pthread
-WANTLIB += stdc++ tiff z
+WANTLIB += tiff z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=podofo/}
 

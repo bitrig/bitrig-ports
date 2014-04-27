@@ -4,7 +4,7 @@ COMMENT =		GNU troff typesetter
 VERSION =		1.22.2
 SUBST_VARS =		VERSION
 DISTNAME =		groff-${VERSION}
-REVISION =		4
+REVISION =		5
 
 CATEGORIES =		textproc
 DPB_PROPERTIES =	parallel
@@ -15,7 +15,8 @@ MAINTAINER =		Ingo Schwarze <schwarze@openbsd.org>
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m stdc++
+WANTLIB =		c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_GNU:=groff/}
 

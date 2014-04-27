@@ -3,6 +3,7 @@
 COMMENT =		ebook management application
 
 DISTNAME =		calibre-1.31.0
+REVISION =		0
 CATEGORIES =		textproc
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=calibre/}
 EXTRACT_SUFX =		.tar.xz
@@ -19,7 +20,8 @@ WANTLIB += ${MODPY_WANTLIB}
 WANTLIB += ICE MagickCore MagickWand lib/qt4/QtDBus lib/qt4/QtGui
 WANTLIB += lib/qt4/QtSvg lib/qt4/QtXml SM X11 Xext Xi Xinerama Xrender
 WANTLIB += chm fontconfig freetype icudata icui18n icuio icuuc m mtp
-WANTLIB += podofo pthread stdc++ usb-1.0 z
+WANTLIB += podofo pthread usb-1.0 z
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=		devel/chmlib \
 			devel/libmtp \

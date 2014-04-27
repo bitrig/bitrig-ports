@@ -4,7 +4,7 @@ COMMENT =	full-text search engine library
 CATEGORIES =	textproc
 DISTNAME =	clucene-core-2.3.3.4
 
-REVISION =	1
+REVISION =	2
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=clucene/}
 
@@ -17,7 +17,8 @@ SHARED_LIBS +=  clucene-shared            0.0 # 2.3
 # LGPL or Apache License 2.0
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += m pthread stdc++ z
+WANTLIB += m pthread z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/cmake
 

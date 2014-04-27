@@ -4,7 +4,7 @@ COMMENT=	c++ validating XML parser
 
 DISTNAME=	xerces-c-src_2_8_0
 PKGNAME=	xerces-c-2.8.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc devel
 
 SO_VERSION=	0.0 # .28.0
@@ -21,7 +21,8 @@ MASTER_SITES=	http://apache.mirrors.crysys.hit.bme.hu/dist/xerces/c/2/sources/
 
 USE_GMAKE=	Yes
 
-WANTLIB=	m stdc++
+WANTLIB=	m
+WANTLIB +=	c++ c++abi pthread
 
 XERCESCROOT=	${WRKDIR}/${DISTNAME}
 WRKSRC=		${XERCESCROOT}/src/xercesc

@@ -3,14 +3,15 @@
 COMMENT=	command line parser generator
 
 DISTNAME=	clo++-0.3.0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://pmade.org/~pjones/software/clo++/
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m stdc++ z xml2>=6
+WANTLIB=		c m z xml2>=6
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES=	${HOMEPAGE}/download/
 

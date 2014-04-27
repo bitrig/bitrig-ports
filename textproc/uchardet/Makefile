@@ -3,6 +3,7 @@
 COMMENT=	universal charset detection library and tool
 
 DISTNAME=	uchardet-0.0.1
+REVISION=	0
 
 SHARED_LIBS +=	uchardet                  0.0 # 0.0
 
@@ -13,7 +14,8 @@ HOMEPAGE=	https://code.google.com/p/uchardet/
 # MPL 1.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m stdc++
+WANTLIB += c m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	https://uchardet.googlecode.com/files/
 

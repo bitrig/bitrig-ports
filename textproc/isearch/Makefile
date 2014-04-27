@@ -4,12 +4,13 @@ COMMENT=	text search engine by CNIDR
 
 DISTNAME=	Isearch-1.14
 PKGNAME=	${DISTNAME:L}
-REVISION =	0
+REVISION =	1
 CATEGORIES=	textproc databases
 
 # License: BSD
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m stdc++ 
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES=	ftp://ftp.cnidr.org/pub/software/Isearch/
 

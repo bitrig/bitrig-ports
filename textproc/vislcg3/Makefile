@@ -3,6 +3,7 @@
 COMMENT =		constraint grammar formalism variant
 
 DISTNAME =		vislcg3-0.9.8.8406
+REVISION =		0
 
 SHARED_LIBS =		cg3                       0.0 # 0.0
 
@@ -13,7 +14,8 @@ HOMEPAGE =		http://beta.visl.sdu.dk/cg3/chunked/
 # GPLv3+
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB +=		c icui18n icuio icuuc m pthread stdc++
+WANTLIB +=		c icui18n icuio icuuc m pthread
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://beta.visl.sdu.dk/download/vislcg3/
 

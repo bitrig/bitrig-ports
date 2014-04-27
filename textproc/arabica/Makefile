@@ -3,6 +3,7 @@
 COMMENT =	XML and HTML processing toolkit
 DISTNAME =	arabica-2010-November
 PKGNAME =	arabica-2010.11
+REVISION =	0
 CATEGORIES =	textproc
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=arabica/}
 
@@ -17,6 +18,7 @@ CONFIGURE_STYLE =	gnu
 
 BUILD_DEPENDS =	devel/boost
 CONFIGURE_ENV =	CPPFLAGS='-I${LOCALBASE}/include'
-WANTLIB +=	c expat m stdc++
+WANTLIB +=	c expat m
+WANTLIB +=	c++ c++abi pthread
 
 .include <bsd.port.mk>

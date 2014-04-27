@@ -3,7 +3,7 @@
 COMMENT=	spell checker designed to eventually replace Ispell
 
 DISTNAME=	aspell-0.60.6.1
-REVISION=	3
+REVISION=	4
 SHARED_LIBS +=  aspell               17.0     # .16.4
 SHARED_LIBS +=  pspell               17.0     # .16.4
 DIST_SUBDIR=	aspell
@@ -22,7 +22,8 @@ HOMEPAGE=	http://aspell.net/
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m ncursesw stdc++ pthread
+WANTLIB=		c m ncursesw pthread
+WANTLIB +=		c++ c++abi
 
 MODULES +=		gcc4 devel/gettext
 MODGCC4_ARCHS=		*

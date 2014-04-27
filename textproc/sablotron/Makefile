@@ -5,7 +5,7 @@ COMMENT =	fast, compact and portable XSL/XSLT processor
 V =		1.0.3
 DISTNAME =	Sablot-${V}
 PKGNAME =	sablotron-${V}
-REVISION =	1
+REVISION =	2
 SHARED_LIBS =	sablot	103.0	# .100.3
 CATEGORIES =	textproc
 
@@ -14,7 +14,8 @@ HOMEPAGE =	http://freshmeat.net/projects/sablotron/
 # MPL1.1 / GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c expat m ncurses readline stdc++
+WANTLIB =	c expat m ncurses readline
+WANTLIB +=	c++ c++abi pthread
 LIB_DEPENDS=	devel/readline
 
 MASTER_SITES =	http://www.arcane-labs.net/download/OpenBSD/

@@ -3,7 +3,7 @@
 COMMENT=	graphical file comparator and merge tool
 
 DISTNAME=	xxdiff-3.1
-REVISION=	4
+REVISION=	5
 CATEGORIES=	textproc x11
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=xxdiff/}
 
@@ -12,7 +12,8 @@ HOMEPAGE=	http://xxdiff.sourceforge.net/
 # GPL
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB=	X11 Xext c m png pthread stdc++
+WANTLIB=	X11 Xext c m png pthread
+WANTLIB +=	c++ c++abi
 
 BUILD_DEPENDS=	devel/bison \
 		devel/tmake>=1.10

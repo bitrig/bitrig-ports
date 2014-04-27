@@ -16,7 +16,8 @@ HOMEPAGE=	http://openjade.sourceforge.net/
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=	devel/gettext textproc/intltool
-WANTLIB=	c m pthread stdc++
+WANTLIB=	c m pthread
+WANTLIB +=	c++ c++abi
 USE_GMAKE=	Yes
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--with-libiconv-prefix=${LOCALBASE} \

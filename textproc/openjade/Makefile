@@ -4,7 +4,7 @@ COMMENT=	object-oriented DSSSL engine
 
 DISTNAME=	openjade-1.3.3-pre1
 PKGNAME=	openjade-1.3.3pre1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openjade/}
 
@@ -20,7 +20,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=		devel/gettext
 LIB_DEPENDS=		textproc/opensp
-WANTLIB=		c m pthread stdc++ osp
+WANTLIB=		c m pthread osp
+WANTLIB +=		c++ c++abi
 
 CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/config

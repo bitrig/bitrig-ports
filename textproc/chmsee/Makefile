@@ -4,6 +4,7 @@ COMMENT =	html help viewer
 BROKEN =	doesnt work with newer xulrunner
 
 DISTNAME =	chmsee-2.0.2
+REVISION =	0
 
 CATEGORIES =	textproc x11
 
@@ -35,7 +36,8 @@ RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/gtk+2,-guic
 LIB_DEPENDS =	devel/nspr \
 		devel/chmlib
-WANTLIB += chm m nspr4 plc4 plds4 pthread stdc++
+WANTLIB += chm m nspr4 plc4 plds4 pthread
+WANTLIB += c++ c++abi
 
 NO_TEST =	Yes
 

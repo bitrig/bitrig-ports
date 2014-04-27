@@ -3,7 +3,7 @@
 COMMENT =		source code beautifier
 
 DISTNAME =		uncrustify-0.59
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		textproc devel
 
@@ -14,7 +14,8 @@ MAINTAINER =		Remi Pointel <rpointel@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m stdc++
+WANTLIB += c m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=uncrustify/}
 

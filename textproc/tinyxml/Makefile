@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	simple and small C++ XML parser
 
 V=		2.6.2
-REVISION=	0
+REVISION=	1
 DISTNAME=	tinyxml_${V:S/./_/g}
 PKGNAME=	tinyxml-${V}
 EXTRACT_SUFX=	.zip
@@ -19,7 +19,8 @@ HOMEPAGE=	http://www.grinninglizard.com/tinyxml/
 # zlib license
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tinyxml/}
 

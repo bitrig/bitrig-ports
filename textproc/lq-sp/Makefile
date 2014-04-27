@@ -3,7 +3,7 @@
 COMMENT=	SGML parser and entity manager
 
 DISTNAME=	lq-sp-1.3.4.12
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 HOMEPAGE=	http://www.htmlhelp.com/tools/validator/offline/
 
@@ -11,7 +11,8 @@ MAINTAINER=	Gerardo Santana Gomez Garrido <gerardo.santana@gmail.com>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m stdc++ 
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES=	${HOMEPAGE}
 

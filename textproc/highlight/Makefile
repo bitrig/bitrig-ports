@@ -3,6 +3,7 @@
 COMMENT =		convert source code to markup formats
 
 DISTNAME =		highlight-3.18
+REVISION =		0
 CATEGORIES =		textproc converters
 
 HOMEPAGE =		http://www.andre-simon.de/
@@ -12,7 +13,8 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m stdc++ ${MODLUA_WANTLIB}
+WANTLIB =		c m ${MODLUA_WANTLIB}
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${HOMEPAGE}/zip/
 EXTRACT_SUFX =		.tar.bz2

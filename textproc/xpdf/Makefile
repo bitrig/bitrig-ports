@@ -3,7 +3,7 @@
 COMMENT=	PDF viewer for X11
 
 DISTNAME=	xpdf-3.03
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc x11
 
 MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/ \
@@ -29,7 +29,8 @@ MAKE_ENV+=MOTIFLIB='-L${LOCALBASE}/lib -lXm'
 RUN_DEPENDS=	print/ghostscript/gnu-fonts
 
 WANTLIB=	ICE SM X11 Xext Xpm Xt freetype Xm \
-		c m pthread stdc++ z
+		c m pthread z
+WANTLIB +=	c++ c++abi
 
 NO_TEST=	Yes
 

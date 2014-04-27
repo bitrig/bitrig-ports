@@ -6,7 +6,7 @@ V=		2.36.0
 DISTNAME=	libxml++-$V
 SHARED_LIBS+=	xml++-2.6	1.1 # .2.7
 CATEGORIES=	textproc
-REVISION=	0
+REVISION=	1
 
 EXTRACT_SUFX=	.tar.xz
 
@@ -22,7 +22,8 @@ MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxml++/${V:C/^([0-9]+\.[0-9]+).*/\1
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/macros
 
 WANTLIB += ffi glib-2.0 glibmm-2.4 gmodule-2.0 gobject-2.0 gthread-2.0
-WANTLIB += m pcre pthread sigc-2.0 stdc++ xml2 z
+WANTLIB += m pcre pthread sigc-2.0 xml2 z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext
 
