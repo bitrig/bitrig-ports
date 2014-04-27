@@ -48,9 +48,9 @@ WANTLIB += plc4 png pthread smime3 speex opus
 WANTLIB += xml2 xslt
 WANTLIB += atk-1.0 usb-1.0 sndio
 WANTLIB += Xcomposite
-WANTLIB += stdc++
 WANTLIB += Xi Xtst
 WANTLIB += icui18n icuuc
+WANTLIB += c++ c++abi
 
 RUN_DEPENDS=	devel/xdg-utils \
 		devel/desktop-file-utils \

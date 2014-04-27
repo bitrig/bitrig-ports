@@ -7,6 +7,7 @@ GITREV =		38b6279c2053854c2e8f24e70facb5328d9f170c
 DISTNAME =		conkeror-1.0pre.${DATE}
 DISTFILES =		conkeror-${DATE}-${GITREV}${EXTRACT_SUFX}
 WRKDIST =		${WRKDIR}/conkeror
+REVISION =		0
 
 CATEGORIES =		www
 
@@ -17,7 +18,8 @@ MAINTAINER =		Joshua Elsasser <joshe@openbsd.org>
 # mozilla public license
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m pthread stdc++
+WANTLIB =		c m pthread
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://www.elsasser.org/openbsd/distfiles/
 

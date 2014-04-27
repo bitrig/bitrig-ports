@@ -3,6 +3,7 @@
 COMMENT=	HTML editor for experienced web designers
 
 DISTNAME =	bluefish-2.2.5
+REVISION =	0
 CATEGORIES=	www editors
 HOMEPAGE=	http://bluefish.openoffice.nl/
 
@@ -18,8 +19,9 @@ WANTLIB += enchant expat ffi fontconfig freetype gdk-3 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-3 gucharmap_2_90 harfbuzz m
 WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
-WANTLIB += png pthread pthread-stubs ${MODPY_WANTLIB} stdc++ util xcb
+WANTLIB += png pthread pthread-stubs ${MODPY_WANTLIB} util xcb
 WANTLIB += xcb-render xcb-shm xml2 z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		lang/python \

@@ -14,7 +14,7 @@ EXTRACT_SUFX=		.tar.bz2
 
 PKGNAME=		gtkhtml3-${VERSION}
 
-REVISION=		8
+REVISION=		9
 
 SHARED_LIBS +=  gtkhtml-3.14         4.0      # 20.1
 SHARED_LIBS +=  gtkhtml-editor-3.14  0.0      # unknown
@@ -33,8 +33,9 @@ WANTLIB += expat ffi fontconfig freetype gailutil gconf-2 gdk-x11-2.0
 WANTLIB += gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0
 WANTLIB += graphite2 gthread-2.0 gtk-x11-2.0 harfbuzz
 WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0
-WANTLIB += pcre pixman-1 png pthread pthread-stubs stdc++ xcb
+WANTLIB += pcre pixman-1 png pthread pthread-stubs xcb
 WANTLIB += xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
 			x11/gnome

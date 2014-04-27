@@ -7,7 +7,7 @@ COMMENT=	simple Qt4-based browser using WebKit
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
 DISTNAME=	arora-0.11.0
-REVISION=	5
+REVISION=	6
 CATEGORIES=	www
 MASTER_SITES=	https://arora.googlecode.com/files/
 
@@ -18,8 +18,9 @@ MAINTAINER=	Brad Smith <brad@comstyle.com>
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += QtGui QtNetwork QtScript QtSql QtWebKit c m pthread stdc++
+WANTLIB += QtGui QtNetwork QtScript QtSql QtWebKit c m pthread
 WANTLIB += ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
+WANTLIB += c++ c++abi
 
 MODULES=	x11/qt4
 RUN_DEPENDS=	devel/desktop-file-utils \

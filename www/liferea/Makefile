@@ -5,6 +5,7 @@ SHARED_ONLY=		Yes
 V=			1.10.8
 COMMENT=		simple GTK desktop news aggregator
 DISTNAME=		liferea-${V}
+REVISION=		0
 CATEGORIES=		www x11
 EXTRACT_SUFX=		.tar.bz2
 
@@ -26,8 +27,9 @@ WANTLIB += harfbuzz-icu icudata icui18n icuuc javascriptcoregtk-3.0
 WANTLIB += jpeg json-glib-1.0 m notify orc-0.4 pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre peas-1.0 peas-gtk-1.0
 WANTLIB += pixman-1 png pthread pthread-stubs secret-1 soup-2.4
-WANTLIB += sqlite3 stdc++ webkitgtk-3.0 webp xcb xcb-render xcb-shm
+WANTLIB += sqlite3 webkitgtk-3.0 webp xcb xcb-render xcb-shm
 WANTLIB += xml2 xslt z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		https://github.com/lwindolf/liferea/releases/download/v${V}/
 

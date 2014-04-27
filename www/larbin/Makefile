@@ -3,7 +3,7 @@
 COMMENT=	little and fast Web crawler
 
 DISTNAME=	larbin-2.6.3
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 
 HOMEPAGE=	http://larbin.sourceforge.net/index-eng.html
@@ -11,7 +11,8 @@ HOMEPAGE=	http://larbin.sourceforge.net/index-eng.html
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += adns>=1 c m pthread stdc++
+WANTLIB += adns>=1 c m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=larbin/}
 

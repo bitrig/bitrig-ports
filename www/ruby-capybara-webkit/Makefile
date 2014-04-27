@@ -3,7 +3,7 @@
 COMMENT =	capybara driver that uses WebKit
 
 DISTNAME =	capybara-webkit-0.13.0
-REVISION =	5
+REVISION =	6
 CATEGORIES =	www
 
 HOMEPAGE=	https://github.com/thoughtbot/capybara-webkit
@@ -15,7 +15,8 @@ MODULES =	lang/ruby
 CONFIGURE_STYLE = ruby gem ext
 
 WANTLIB += ICE QtCore QtGui QtNetwork QtWebKit SM X11 Xext Xi
-WANTLIB += Xinerama Xrender fontconfig freetype pthread stdc++
+WANTLIB += Xinerama Xrender fontconfig freetype pthread
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS =	${RUN_DEPENDS}
 RUN_DEPENDS =	converters/ruby-json,${MODRUBY_FLAVOR} \

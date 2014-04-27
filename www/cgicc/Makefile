@@ -3,7 +3,7 @@
 COMMENT=	c++ compliant CGI applications libraries
 
 DISTNAME=	cgicc-3.2.1
-REVISION=	4
+REVISION=	5
 CATEGORIES=	www devel
 SHARED_LIBS=	cgicc	5.0
 MODGNU_SHARED_LIBS=cgicc ''
@@ -14,7 +14,8 @@ HOMEPAGE=	https://www.gnu.org/software/cgicc/cgicc.html
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 
 CONFIGURE_STYLE= gnu

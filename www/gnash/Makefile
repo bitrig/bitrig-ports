@@ -8,7 +8,7 @@ COMMENT=	SWF player with Firefox browser plugin
 
 VER=		0.8.10
 DISTNAME=	gnash-${VER}
-REVISION=	7
+REVISION=	8
 EPOCH=		0
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_GNU:=gnash/${VER}/}
@@ -25,7 +25,8 @@ WANTLIB=	SDL X11 agg avcodec avformat avutil boost_iostreams \
 		boost_program_options-mt boost_system-mt boost_thread-mt \
 		c curl fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0 \
 		gif glib-2.0 gobject-2.0 gtk-x11-2.0 jpeg ltdl m png \
-		pthread speex speexdsp stdc++ swresample swscale z
+		pthread speex speexdsp swresample swscale z
+WANTLIB +=	c++ c++abi
 
 MODULES=	devel/gettext
 BUILD_DEPENDS=	devel/xulrunner/24,-devel

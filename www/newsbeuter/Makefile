@@ -2,6 +2,7 @@
 
 COMMENT =		open-source RSS/Atom feed reader for text terminals
 DISTNAME =		newsbeuter-2.7
+REVISION =		0
 CATEGORIES =		www
 
 HOMEPAGE =		http://newsbeuter.org/
@@ -12,7 +13,8 @@ MAINTAINER =		Kyle Isom <kyle@tyrfingr.is>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += c crypto curl json-c m ncursesw pthread sqlite3
-WANTLIB += stdc++ stfl xml2
+WANTLIB += stfl xml2
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		http://newsbeuter.org/downloads/
 

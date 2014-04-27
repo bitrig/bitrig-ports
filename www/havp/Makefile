@@ -6,7 +6,7 @@ DISTNAME=	havp-0.92a
 CATEGORIES=	www
 MASTER_SITES=	${HOMEPAGE}/download/
 
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	http://www.server-side.de/
 
@@ -15,7 +15,8 @@ MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m pthread stdc++ clamav
+WANTLIB=		c m pthread clamav
+WANTLIB +=		c++ c++abi
 
 LIB_DEPENDS=		security/clamav
 

@@ -4,7 +4,7 @@ COMMENT =		gnome-mplayer browser media plugin
 V =			1.0.9alpha
 DISTNAME =		gecko-mediaplayer-1.0.9a
 PKGNAME =		gecko-mediaplayer-${V}
-REVISION =		1
+REVISION =		2
 CATEGORIES =		www
 
 MAINTAINER =		David Coppa <dcoppa@openbsd.org>
@@ -17,7 +17,8 @@ MASTER_SITES =		https://gecko-mediaplayer.googlecode.com/files/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		curl dbus-1 dbus-glib-1 glib-2.0 gmlib \
-			gobject-2.0 m stdc++
+			gobject-2.0 m
+WANTLIB +=		c++ c++abi pthread
 
 MODULES =		devel/gettext
 

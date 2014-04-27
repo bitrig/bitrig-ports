@@ -2,6 +2,7 @@
 
 COMMENT =	content scanning web filter
 DISTNAME =	dansguardian-2.12.0.3
+REVISION =	0
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	www net
 
@@ -10,7 +11,8 @@ HOMEPAGE =	http://www.dansguardian.org/
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m pcre pcreposix stdc++ z
+WANTLIB =		c m pcre pcreposix z
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=dansguardian/}
 

@@ -3,6 +3,7 @@
 COMMENT =		fast and light graphical web browser
 
 DISTNAME =		dillo-3.0.4
+REVISION =		0
 CATEGORIES =		www
 
 MAINTAINER =		Brian Callahan <bcallah@openbsd.org>
@@ -13,7 +14,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += X11 Xau Xdmcp Xext Xft Xinerama c
 WANTLIB += crypto fltk>=7 fontconfig m pthread ssl
-WANTLIB += stdc++ z jpeg>=62 png>=2
+WANTLIB += z jpeg>=62 png>=2
+WANTLIB += c++ c++abi
 
 MODULES =	converters/libiconv
 

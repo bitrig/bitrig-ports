@@ -4,6 +4,7 @@ COMMENT=	web search application
 
 V=		1.2.15
 DISTNAME=	xapian-omega-${V}
+REVISION=	0
 
 CATEGORIES=	www textproc
 
@@ -12,7 +13,8 @@ HOMEPAGE=	http://xapian.org/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m uuid stdc++ z xapian pcre magic
+WANTLIB += c m uuid z xapian pcre magic
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	http://oligarchy.co.uk/xapian/${V}/
 

@@ -12,6 +12,8 @@ SUBST_VARS=		API_VERSION
 
 PKGNAME=		gtkhtml4-${VERSION}
 
+REVISION=		0
+
 SHARED_LIBS +=  gtkhtml-4.0               0.0 # 0.0
 SHARED_LIBS +=  gtkhtml-editor-4.0        0.0 # 0.0
 
@@ -29,9 +31,10 @@ WANTLIB += cairo-gobject enchant expat fontconfig freetype
 WANTLIB += gailutil-3 gdk-3 gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0
 WANTLIB += gobject-2.0 gthread-2.0 gtk-3 m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
-WANTLIB += stdc++ xcb xcb-render xcb-shm z ffi
+WANTLIB += xcb xcb-render xcb-shm z ffi
 WANTLIB += ICE SM atk-bridge-2.0 atspi dbus-1 harfbuzz
 WANTLIB += graphite2
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
 			x11/gnome

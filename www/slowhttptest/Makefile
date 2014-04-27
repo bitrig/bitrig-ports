@@ -3,6 +3,7 @@
 COMMENT=	test tool for slow HTTP reads/posts
 
 DISTNAME =	slowhttptest-1.6
+REVISION =	0
 
 CATEGORIES=	www security
 
@@ -11,7 +12,8 @@ HOMEPAGE=	https://slowhttptest.googlecode.com/
 # Apache 2.0
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c crypto m ssl stdc++
+WANTLIB += c crypto m ssl
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${HOMEPAGE}files/
 

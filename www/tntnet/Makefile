@@ -3,7 +3,7 @@
 COMMENT=		modular webapplication server for C++
 
 DISTNAME=		tntnet-1.6.2
-REVISION=		2
+REVISION=		3
 CATEGORIES=		www devel
 
 HOMEPAGE=		http://www.tntnet.org/
@@ -20,7 +20,8 @@ SHARED_LIBS+=	${_lib}	${SO_VERSION}
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c crypto cxxtools>=2 m pthread ssl stdc++ z
+WANTLIB += c crypto cxxtools>=2 m pthread ssl z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${HOMEPAGE}download/
 

@@ -5,6 +5,7 @@ COMMENT =	standalone YouTube.com video browser/player
 # XXX: upstream's tagging mismatch
 DISTNAME =	minitube-1.2.6
 PKGNAME =	minitube-2.1.6
+REVISION =	0
 
 CATEGORIES =	www multimedia
 
@@ -22,7 +23,8 @@ MODULES =	x11/qt4
 WANTLIB +=	ICE SM X11 Xext Xi Xinerama Xrender c fontconfig
 WANTLIB +=	freetype lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB +=	lib/qt4/QtScript lib/qt4/QtSql lib/qt4/QtXml m
-WANTLIB +=	phonon pthread stdc++
+WANTLIB +=	phonon pthread
+WANTLIB +=	c++ c++abi
 
 RUN_DEPENDS =	multimedia/gstreamer-0.10/plugins-good \
 		multimedia/gstreamer-0.10/plugins-ffmpeg \

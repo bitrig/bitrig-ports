@@ -8,10 +8,12 @@ MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	seamonkey
 MOZILLA_CODENAME =	suite
 
+
 MULTI_PACKAGES =	-main -lightning
 PKGNAME-main =		${PKGNAME}
 PKGNAME-lightning =	lightning-seamonkey-3.0beta1
 EPOCH-lightning =	0
+REVISION-lightning =	0
 
 HOMEPAGE =	http://www.seamonkey-project.org/
 #MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla.org/${MOZILLA_PROJECT}/nightly/${MOZILLA_VERSION}-candidates/build1/source/
@@ -46,7 +48,8 @@ CONFIGURE_STYLE =	autoconf no-autoheader
 LIB_DEPENDS-lightning = STEM->=${MOZILLA_VERSION:S/b/beta/}:${BUILD_PKGPATH},-main
 WANTLIB-lightning =	lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/xul \
 			lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/mozalloc \
-			c m stdc++ nspr4 plc4 plds4 pthread
+			c m nspr4 plc4 plds4 pthread
+WANTLIB-lightning +=	c++ c++abi
 
 # build lightning xpi
 CONFIGURE_ARGS +=	--enable-calendar

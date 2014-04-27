@@ -4,7 +4,7 @@ SHARED_ONLY =	Yes
 COMMENT =	Java web browser plugin
 DISTNAME =	icedtea-web-1.4.1
 CATEGORIES =	www
-REVISION =	0
+REVISION =	1
 
 MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
@@ -29,6 +29,7 @@ BUILD_DEPENDS =	archivers/zip \
 
 USE_GMAKE =	Yes
 LIB_DEPENDS =	devel/glib2
-WANTLIB += glib-2.0 m stdc++
+WANTLIB += glib-2.0 m
+WANTLIB += c++ c++abi pthread
 
 .include <bsd.port.mk>

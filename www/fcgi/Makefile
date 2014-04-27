@@ -3,7 +3,7 @@
 COMMENT=		FastCGI Development Kit
 
 DISTNAME=		fcgi-2.4.0
-REVISION=		8
+REVISION=		9
 CATEGORIES=		www
 SHARED_LIBS +=	fcgi                 0.0      # .0.0
 SHARED_LIBS +=	fcgi++               1.0      # .1.0
@@ -15,7 +15,8 @@ MAINTAINER=		Adam Montague <amontague@siriushosting.com>
 # BSD-like
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB=		c m stdc++
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES=		${HOMEPAGE}/dist/
 

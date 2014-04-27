@@ -5,7 +5,7 @@ COMMENT=		python bindings for the WebKit GTK+ port
 V=			1.1.8
 DISTNAME=		pywebkitgtk-$V
 PKGNAME=		py-webkitgtk-$V
-REVISION=		12
+REVISION=		13
 CATEGORIES=		www
 
 HOMEPAGE=		https://pywebkitgtk.googlecode.com/
@@ -24,12 +24,13 @@ WANTLIB += gobject-2.0 gstbase-1.0 gstpbutils-1.0
 WANTLIB += gstreamer-1.0 gstvideo-1.0 gthread-2.0 gtk-x11-2.0
 WANTLIB += icui18n jpeg m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread-stubs soup-2.4
-WANTLIB += sqlite3 stdc++ xcb xml2 z gstapp-1.0 xcb-render
+WANTLIB += sqlite3 xcb xml2 z gstapp-1.0 xcb-render
 WANTLIB += GL Xxf86vm drm xcb-shm xslt webkitgtk-1.0
 WANTLIB += javascriptcoregtk-1.0 orc-0.4
 WANTLIB += dbus-1 dbus-glib-1 gcrypt geoclue gpg-error graphite2
 WANTLIB += gstaudio-1.0 gstfft-1.0 gsttag-1.0 harfbuzz
 WANTLIB += pthread secret-1 webp
+WANTLIB += c++ c++abi
 
 MODULES=		lang/python \
 			devel/gettext

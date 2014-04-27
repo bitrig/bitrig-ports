@@ -81,8 +81,9 @@ WANTLIB =	ICE SM X11 Xcomposite Xcursor Xdamage Xext \
 		gstreamer-1.0 gstbase-1.0 gstvideo-1.0 gstapp-1.0 gstpbutils-1.0 \
 		icudata icui18n icuuc sqlite3 xslt enchant soup-2.4 \
 		pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pthread GL xcb-shm \
-		z cairo pixman-1 png pthread-stubs xcb xml2 stdc++ ffi \
+		z cairo pixman-1 png pthread-stubs xcb xml2 ffi \
 		harfbuzz graphite2 gcrypt gpg-error gsttag-1.0 secret-1 webp
+WANTLIB +=	c++ c++abi
 
 LIB_DEPENDS =	multimedia/gstreamer1/core \
 		multimedia/gstreamer1/plugins-base \

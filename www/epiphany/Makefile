@@ -6,7 +6,7 @@ COMMENT=	GNOME web browser based on webkit
 
 GNOME_PROJECT=	epiphany
 GNOME_VERSION=	3.12.0
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	www
 
@@ -29,9 +29,10 @@ WANTLIB += gsttag-1.0 gstvideo-1.0 gthread-2.0 gtk-3 harfbuzz
 WANTLIB += icui18n javascriptcoregtk-3.0 jpeg orc-0.4 EGL harfbuzz-icu
 WANTLIB += m notify p11-kit pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png pthread pthread-stubs secret-1 soup-2.4
-WANTLIB += sqlite3 startup-notification-1 stdc++ webkit2gtk-3.0
+WANTLIB += sqlite3 startup-notification-1 webkit2gtk-3.0
 WANTLIB += webp wnck-3 xcb xcb-util xcb-render xcb-shm
 WANTLIB += xml2 xslt z icudata icuuc
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS=	devel/iso-codes \
 		devel/gsettings-desktop-schemas

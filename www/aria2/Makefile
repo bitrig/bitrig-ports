@@ -18,7 +18,8 @@ LIB_DEPENDS =		net/libcares
 
 TEST_DEPENDS +=	devel/cppunit
 
-WANTLIB += c cares crypto expat m sqlite3 ssl stdc++ z
+WANTLIB += c cares crypto expat m sqlite3 ssl z
+WANTLIB += c++ c++abi pthread
 
 CONFIGURE_STYLE =	gnu
 MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} \
