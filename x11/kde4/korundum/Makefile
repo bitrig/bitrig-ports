@@ -2,8 +2,9 @@
 
 COMMENT =	KDE bindings for Ruby
 DISTNAME =	korundum-${MODKDE4_VERSION}
+REVISION =	0
 
-WANTLIB =  c m pthread stdc++ ${MODRUBY_WANTLIB}
+WANTLIB =  c m pthread ${MODRUBY_WANTLIB}
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml lib/qt4/QtOpenGL lib/qt4/QtSql
 WANTLIB += ${KDE4LIB}/akonadi-kde ${KDE4LIB}/akonadi-kmime
@@ -26,6 +27,7 @@ WANTLIB += ${KDE4LIB}/smokeqtopengl ${KDE4LIB}/smokeqtsql
 WANTLIB += ${KDE4LIB}/smokeqtsvg ${KDE4LIB}/smokeqtxml
 WANTLIB += ${KDE4LIB}/smokesolid ${KDE4LIB}/smokesoprano
 WANTLIB += qtruby4shared soprano
+WANTLIB += c++ c++abi
 
 MODULES =	lang/ruby
 MODKDE4_USE =	libs pim

@@ -3,7 +3,7 @@
 COMMENT=	OpenGL extension to GTK+ 2.0 and later
 
 DISTNAME=	gtkglext-1.2.0
-REVISION=	10
+REVISION=	11
 SHARED_LIBS=	gdkglext-x11-1.0	0.0 \
 		gtkglext-x11-1.0	0.0
 CATEGORIES=	x11 graphics devel
@@ -23,8 +23,9 @@ WANTLIB += atk-1.0 cairo drm expat ffi fontconfig freetype gdk-x11-2.0
 WANTLIB += gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0
 WANTLIB += gthread-2.0 gtk-x11-2.0 harfbuzz
 WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0 pangox-1.0
-WANTLIB += pcre pixman-1 png pthread pthread-stubs stdc++ xcb
+WANTLIB += pcre pixman-1 png pthread pthread-stubs xcb
 WANTLIB += xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext
 

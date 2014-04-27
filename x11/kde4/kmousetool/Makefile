@@ -2,11 +2,13 @@
 
 COMMENT =	KDE mouse clicker for accessibility users
 DISTNAME =	kmousetool-${MODKDE4_VERSION}
+REVISION =	0
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += ICE SM X11 Xext Xtst
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg
 WANTLIB += ${KDE4LIB}/kdeui
+WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 

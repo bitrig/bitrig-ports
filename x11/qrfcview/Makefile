@@ -3,7 +3,7 @@
 COMMENT=	viewer for IETF RFCs
 
 DISTNAME=	qrfcview-0.62
-REVISION=	7
+REVISION=	8
 CATEGORIES=	x11
 
 HOMEPAGE=	http://qrfcview.berlios.de/
@@ -13,7 +13,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += ICE SM X11 Xext Xi Xinerama Xrender c expat fontconfig
 WANTLIB += freetype glib-2.0 gobject-2.0 gthread-2.0
-WANTLIB += m png pthread stdc++ z lib/qt4/QtGui lib/qt4/QtNetwork
+WANTLIB += m png pthread z lib/qt4/QtGui lib/qt4/QtNetwork
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	x11/qt4
 

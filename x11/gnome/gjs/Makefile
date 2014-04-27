@@ -7,7 +7,7 @@ COMMENT=		Javascript bindings for GNOME
 GNOME_PROJECT=		gjs
 GNOME_VERSION=		1.40.1
 
-REVISION=		1
+REVISION=		2
 
 SHARED_LIBS +=  gjs                  4.0      # 0.0
 
@@ -22,10 +22,11 @@ WANTLIB += X11 Xext Xrender c cairo cairo-gobject expat ffi fontconfig
 WANTLIB += freetype gio-2.0 girepository-1.0 glib-2.0 gmodule-2.0
 WANTLIB += gobject-2.0 gthread-2.0 m mozjs-24 ncurses ncursesw
 WANTLIB += nspr4 pcre pixman-1 plc4 plds4 png pthread pthread-stubs
-WANTLIB += readline stdc++ xcb xcb-render xcb-shm z Xrandr
+WANTLIB += readline xcb xcb-render xcb-shm z Xrandr
 WANTLIB += ICE SM Xcomposite Xcursor Xdamage Xfixes Xi Xinerama
 WANTLIB += atk-1.0 atk-bridge-2.0 atspi dbus-1 gdk-3 gdk_pixbuf-2.0
 WANTLIB += graphite2 gtk-3 harfbuzz pango-1.0 pangocairo-1.0 pangoft2-1.0
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
 			lang/clang \

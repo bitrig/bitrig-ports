@@ -3,7 +3,7 @@
 COMMENT=	MS-Explorer like file manager for X
 
 DISTNAME=	xfe-1.37
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11
 
 HOMEPAGE=	http://roland65.free.fr/xfe/
@@ -14,7 +14,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xfe/}
 
-WANTLIB +=	X11 Xft c freetype m png pthread stdc++ util z
+WANTLIB +=	X11 Xft c freetype m png pthread util z
+WANTLIB +=	c++ c++abi
 
 MODULES=	devel/gettext textproc/intltool
 LIB_DEPENDS =	devel/fox

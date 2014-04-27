@@ -6,7 +6,7 @@ COMMENT=	GnuPG extension for nautilus(1)
 
 GNOME_PROJECT=	seahorse-nautilus
 GNOME_VERSION=	3.10.1
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	security
 
@@ -21,8 +21,9 @@ WANTLIB += gcrypt gdk-3 gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0
 WANTLIB += gnome-keyring gobject-2.0 gpg-error gpgme graphite2
 WANTLIB += gthread-2.0 gtk-3 harfbuzz m nautilus-extension notify
 WANTLIB += p11-kit pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
-WANTLIB += pixman-1 png pthread pthread-stubs stdc++ xcb xcb-render
+WANTLIB += pixman-1 png pthread pthread-stubs xcb xcb-render
 WANTLIB += xcb-shm z
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	x11/gnome/gcr \
 		x11/gnome/nautilus \

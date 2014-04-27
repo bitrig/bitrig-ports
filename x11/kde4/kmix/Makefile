@@ -2,11 +2,13 @@
 COMMENT =	KDE audio mixer
 CATEGORIES =	audio
 DISTNAME =	kmix-${MODKDE4_VERSION}
+REVISION =	0
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/plasma ${KDE4LIB}/solid
 WANTLIB += canberra glib-2.0 pulse pulse-mainloop-glib
+WANTLIB += c++ c++abi
 
 MODKDE4_USE =	libs
 

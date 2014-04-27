@@ -4,7 +4,7 @@ COMMENT=	Xfce4 simple text editor
 
 XFCE_VERSION=	0.3.0
 XFCE_GOODIE=	mousepad
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.xfce.org/projects/mousepad
 # GPLv2
@@ -22,9 +22,10 @@ WANTLIB=	X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext \
 		gmodule-2.0 gobject-2.0 gtk-x11-2.0 m pango-1.0 \
 		pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png \
 		z pthread-stubs xcb \
-		ffi stdc++ \
+		ffi \
 		gthread-2.0 pthread xcb-render GL Xxf86vm drm xcb-shm \
 		dbus-1 dbus-glib-1 gtksourceview-2.0 xml2
 WANTLIB += harfbuzz
+WANTLIB += c++ c++abi
 
 .include <bsd.port.mk>

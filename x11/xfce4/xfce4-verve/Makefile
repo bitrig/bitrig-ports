@@ -4,7 +4,7 @@ COMMENT=	Xfce4 command line panel plugin
 
 XFCE_VERSION=	1.0.0
 XFCE_PLUGIN=	verve
-REVISION =	5
+REVISION =	6
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
@@ -19,7 +19,8 @@ WANTLIB += ffi fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-x11-2.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png pthread pthread-stubs startup-notification-1
-WANTLIB += xcb xcb-util xcb-render xcb-shm xfce4util xfcegui4 z stdc++
+WANTLIB += xcb xcb-util xcb-render xcb-shm xfce4util xfcegui4 z
 WANTLIB += harfbuzz
+WANTLIB += c++ c++abi
 
 .include <bsd.port.mk>

@@ -7,7 +7,7 @@ COMMENT =	beautiful glass-like GTK+ 2.x engine and themes
 GNOME_VERSION =	0.98.2
 GNOME_PROJECT =	murrine
 PKGNAME =	gtk2-murrine-engine-${GNOME_VERSION}
-REVISION =	2
+REVISION =	3
 CATEGORIES =	x11
 
 HOMEPAGE =	http://cimitan.com/murrine/
@@ -41,8 +41,9 @@ WANTLIB += Xi Xinerama Xrandr Xrender Xxf86vm atk-1.0 cairo drm
 WANTLIB += expat ffi fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-x11-2.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0
-WANTLIB += pcre pixman-1 png pthread-stubs stdc++ xcb xcb-render
+WANTLIB += pcre pixman-1 png pthread-stubs xcb xcb-render
 WANTLIB += xcb-shm z
+WANTLIB += c++ c++abi pthread
 
 MODULES =	devel/gettext \
 		x11/gnome

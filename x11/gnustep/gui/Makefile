@@ -3,6 +3,7 @@
 COMMENT=	GNUstep gui library
 
 DISTNAME =	gnustep-gui-0.24.0
+REVISION =	0
 
 CATEGORIES=	devel
 
@@ -12,9 +13,10 @@ SHARED_LIBS =	gnustep-gui 0.24	# .0.23.1
 
 HOMEPAGE=	http://www.gnustep.org/
 
-WANTLIB += objc2 gnustep-base stdc++ flite flite_cmu_us_kal sndio
+WANTLIB += objc2 gnustep-base flite flite_cmu_us_kal sndio
 WANTLIB += tiff z ao jpeg gif png cups aspell c m pthread sndfile
 WANTLIB += icudata icui18n icuuc flite_cmulex flite_usenglish
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=core/}
 
@@ -34,7 +36,7 @@ LIB_DEPENDS=	audio/flite \
 AUTOCONF_VERSION = 2.69
 CONFIGURE_STYLE=autoconf gnu
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib -lstdc++ -lm"
+		LDFLAGS="-L${LOCALBASE}/lib -lc++ -lc++abi -lpthread -lm"
 CONFIGURE_ARGS=	--with-x
 
 LIBDIR =	lib/GNUstep/Libraries/gnustep-gui/Versions/${LIBgnustep-gui_VERSION}

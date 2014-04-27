@@ -10,6 +10,8 @@ DISTNAME=	PyQt-x11-gpl-${V}
 PKGNAME=	py-qt4-${V}
 PKGNAME-main=	py-qt4-${V}
 PKGNAME-docs=	py-qt4-docs-${V}
+REVISION-main=	0
+REVISION-docs=	0
 EPOCH=		0
 
 CATEGORIES=	x11 devel
@@ -22,8 +24,9 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB += GL ICE QtDBus QtDeclarative QtDesigner QtGui QtHelp QtMultimedia
 WANTLIB += QtNetwork QtOpenGL QtScript QtScriptTools QtSql QtSvg QtTest
 WANTLIB += QtWebKit QtXml QtXmlPatterns SM X11 Xext Xi Xinerama Xrender
-WANTLIB += c dbus-1 fontconfig freetype m phonon pthread stdc++
+WANTLIB += c dbus-1 fontconfig freetype m phonon pthread
 WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += c++ c++abi
 
 MULTI_PACKAGES=	-main -docs
 

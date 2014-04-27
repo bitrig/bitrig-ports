@@ -3,7 +3,7 @@
 COMMENT =	pager for the Blackbox window manager
 
 DISTNAME =	bbpager-0.4.7
-REVISION=	0
+REVISION=	1
 
 CATEGORIES =	x11
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=bbtools/}
@@ -21,6 +21,7 @@ MODULES =	converters/libiconv
 
 WANTLIB =	ICE SM X11 Xau Xdmcp Xext Xft Xrender c expat fontconfig \
 		freetype m stdc++ z pthread-stubs xcb
+WANTLIB+=	c++ c++abi pthread
 
 
 CONFIGURE_STYLE = gnu

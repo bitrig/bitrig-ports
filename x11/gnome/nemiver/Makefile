@@ -8,6 +8,7 @@ COMMENT=	C/C++ debugger for GNOME
 
 GNOME_PROJECT=	nemiver
 GNOME_VERSION=	0.9.5
+REVISION=	0
 
 CATEGORIES=	devel
 
@@ -23,8 +24,9 @@ WANTLIB += glibmm-2.4 gmodule-2.0 gobject-2.0 graphite2 gthread-2.0
 WANTLIB += gtk-3 gtkhex-3 gtkmm-3.0 gtksourceview-3.0 gtksourceviewmm-3.0
 WANTLIB += gtop-2.0 harfbuzz kvm m ncurses pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pangomm-1.4 pcre pixman-1 png pthread
-WANTLIB += pthread-stubs sigc-2.0 sqlite3 stdc++ util vte2_90
+WANTLIB += pthread-stubs sigc-2.0 sqlite3 util vte2_90
 WANTLIB += xcb xcb-render xcb-shm xml2 z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/dconf \
 		devel/gettext \

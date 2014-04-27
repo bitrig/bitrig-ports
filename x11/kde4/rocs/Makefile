@@ -2,6 +2,7 @@
 
 COMMENT =	graph theory IDE for KDE
 DISTNAME =	rocs-${MODKDE4_VERSION}
+REVISION =	0
 
 # XXX Crashes sometimes.
 
@@ -9,7 +10,7 @@ DISTNAME =	rocs-${MODKDE4_VERSION}
 SHARED_LIBS =	rocscore		50.0 # 4.10
 SHARED_LIBS +=	rocsvisualeditor	50.0 # 4.10
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB += lib/qt4/QtScript lib/qt4/QtScriptTools lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtWebKit lib/qt4/QtXml lib/qt4/QtXmlPatterns
@@ -18,6 +19,7 @@ WANTLIB += ${KDE4LIB}/kparts ${KDE4LIB}/krosscore ${KDE4LIB}/krossui
 WANTLIB += ${KDE4LIB}/ktexteditor ${KDE4LIB}/nepomuk
 WANTLIB += ${KDE4LIB}/nepomukutils ${KDE4LIB}/plasma
 WANTLIB += grantlee_core soprano
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS =	devel/boost>=1.49
 

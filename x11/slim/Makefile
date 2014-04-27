@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	simple login manager
 
 DISTNAME=	slim-1.3.6
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS=	slim	0.0 # 1.3
 
@@ -25,7 +25,8 @@ LIB_DEPENDS=	graphics/jpeg \
 		graphics/png
 
 WANTLIB += X11 Xft Xmu Xrandr Xrender c ck-connector dbus-1
-WANTLIB += fontconfig freetype jpeg m png pthread stdc++ z
+WANTLIB += fontconfig freetype jpeg m png pthread z
+WANTLIB += c++ c++abi
 
 CONFIGURE_ARGS= -DUSE_CONSOLEKIT:Bool=Yes
 

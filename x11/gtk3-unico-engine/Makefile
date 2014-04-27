@@ -7,7 +7,7 @@ COMMENT=	Unico GTK+3 engine
 V=		1.0.2.1
 DISTNAME=	unico-${V}
 PKGNAME=	gtk3-unico-engine-${V}
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	x11
 
@@ -23,7 +23,8 @@ WANTLIB += expat ffi fontconfig freetype gdk-3 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-3 harfbuzz m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
-WANTLIB += stdc++ xcb xcb-render xcb-shm z
+WANTLIB += xcb xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://distfiles.nl/
 

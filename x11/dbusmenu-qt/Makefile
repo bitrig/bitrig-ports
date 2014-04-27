@@ -5,6 +5,7 @@ COMMENT =	D-Bus menu implementation for Qt
 V =		0.9.2
 DISTNAME =	libdbusmenu-qt-${V}
 PKGNAME =	dbusmenu-qt-${V}
+REVISION =	0
 CATEGORIES =	x11 devel
 HOMEPAGE =	https://launchpad.net/libdbusmenu-qt/
 
@@ -17,7 +18,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 MASTER_SITES =	${HOMEPAGE}trunk/${V}/+download/
 
 MODULES =	devel/cmake x11/qt4
-WANTLIB =	lib/qt4/QtDBus lib/qt4/QtGui m stdc++
+WANTLIB =	lib/qt4/QtDBus lib/qt4/QtGui m
+WANTLIB+=	c++ c++abi pthread
 BUILD_DEPENDS =	devel/qjson \
 		devel/doxygen
 TEST_DEPENDS =	devel/qjson

@@ -5,7 +5,7 @@ CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
 DISTNAME =		kdeutils-${VERSION}
 MODKDE_VERSION =	3.5.8
-REVISION =		16
+REVISION =		17
 
 SHARED_LIBS +=	khexeditcommon       1.0      # .0.0
 SHARED_LIBS +=	kcmlaptop            1.0      # .0.0
@@ -34,7 +34,8 @@ WANTLIB +=	lib/kde3/kabc lib/kde3/kdecore>=6 lib/kde3/kdefx
 WANTLIB +=	lib/kde3/kdeprint lib/kde3/kdesu lib/kde3/kdeui lib/kde3/kio
 WANTLIB +=	lib/kde3/kparts lib/kde3/kresources lib/kde3/kutils
 WANTLIB +=	lib/kde3/kwalletclient lib/kde3/vcard m mng netsnmp png
-WANTLIB +=	pthread pthread-stubs stdc++ util xcb xmms z ${MODPY_WANTLIB}
+WANTLIB +=	pthread pthread-stubs util xcb xmms z ${MODPY_WANTLIB}
+WANTLIB +=	c++ c++abi
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${MODKDE_HTML_SUBDIR}/en/common

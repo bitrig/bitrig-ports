@@ -2,13 +2,15 @@
 
 COMMENT =	jigsaw puzzle game for KDE
 DISTNAME =	palapeli-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	pala		51.0
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kfile ${KDE4LIB}/kio
+WANTLIB += c++ c++abi
 
 # Does not link to libkdegames but uses data from the latter package.
 MODKDE4_USE =	games

@@ -4,6 +4,7 @@ COMMENT =	Xfce4 alternative applications menu panel plugin
 
 XFCE_VERSION =	1.3.1
 XFCE_PLUGIN =	whiskermenu
+REVISION =	0
 
 MASTER_SITES =	http://gottcode.org/xfce4-whiskermenu-plugin/
 DISTNAME =	xfce4-${XFCE_PLUGIN}-plugin-${XFCE_VERSION}-src
@@ -20,6 +21,7 @@ CONFIGURE_STYLE =	cmake
 MODXFCE_ICON_CACHE=	Yes
 
 WANTLIB += cairo exo-1 garcon-1 gdk-x11-2.0 gio-2.0 glib-2.0 gobject-2.0
-WANTLIB += gtk-x11-2.0 stdc++ xfce4ui-1 xfce4util
+WANTLIB += gtk-x11-2.0 xfce4ui-1 xfce4util
+WANTLIB += c++ c++abi pthread
 
 .include <bsd.port.mk>

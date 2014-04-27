@@ -4,6 +4,7 @@ COMMENT=		lightweight GNOME text editor
 
 GNOME_PROJECT=		gedit
 GNOME_VERSION=		3.12.1
+REVISION=		0
 
 CATEGORIES=		editors
 
@@ -17,8 +18,9 @@ WANTLIB += freetype gdk-3 gdk_pixbuf-2.0 gio-2.0 girepository-1.0
 WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 graphite2 gthread-2.0
 WANTLIB += gtk-3 gtksourceview-3.0 harfbuzz m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre peas-1.0 peas-gtk-1.0 pixman-1 png
-WANTLIB += pthread pthread-stubs sqlite3 stdc++ xcb xcb-render
+WANTLIB += pthread pthread-stubs sqlite3 xcb xcb-render
 WANTLIB += xcb-shm xml2 z zeitgeist-2.0
+WANTLIB += c++ c++abi
 
 MODULES=		devel/dconf \
 			devel/gettext \

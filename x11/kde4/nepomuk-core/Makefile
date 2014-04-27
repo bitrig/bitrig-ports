@@ -2,6 +2,7 @@
 
 COMMENT =	KDE Nepomuk core libraries
 DISTNAME =	nepomuk-core-${MODKDE4_VERSION}
+REVISION =	0
 
 DPB_PROPERTIES =	parallel
 
@@ -12,13 +13,14 @@ SHARED_LIBS +=	kdeinit4_nepomukserver	52.0 # 4.10
 SHARED_LIBS +=	nepomukextractor	52.0
 SHARED_LIBS +=	nepomukcleaner		0.0
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kidletime ${KDE4LIB}/kio
 WANTLIB += ${KDE4LIB}/solid
 WANTLIB += avcodec avformat avutil epub exiv2 poppler-qt4 soprano
 WANTLIB += sopranoserver tag
+WANTLIB += c++ c++abi
 
 MODKDE4_USE =	libs
 

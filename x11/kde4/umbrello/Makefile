@@ -2,16 +2,18 @@
 
 COMMENT =	UML editor for KDE
 DISTNAME =	umbrello-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	devel productivity
 #HOMEPAGE =	http://umbrello.kde.org/
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/umbrello
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kfile ${KDE4LIB}/kio
 WANTLIB += xml2 xslt
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS =	devel/boost
 

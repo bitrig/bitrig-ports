@@ -9,10 +9,10 @@ VERSION =		3.5.10
 DISTNAME =		kdegraphics-${VERSION}
 MODKDE_VERSION =	3.5.8
 
-REVISION-main =		22
-REVISION-kamera =	12
-REVISION-kpov =		11
-REVISION-sane =		15
+REVISION-main =		23
+REVISION-kamera =	13
+REVISION-kpov =		12
+REVISION-sane =		16
 
 SEPARATE_BUILD =	flavored
 MULTI_PACKAGES =	-main -kpov -kamera -sane
@@ -35,7 +35,8 @@ MODULES =		x11/kde devel/gettext
 BUILD_DEPENDS =		print/texlive/base
 WANTLIB = ICE SM X11 Xext art_lgpl_2 idn jpeg lib/kde3/DCOP \
 	lib/kde3/kdecore>=6 lib/kde3/kdefx lib/kde3/kdesu lib/kde3/kdeui \
-	lib/kde3/kio m png qt-mt stdc++ util xcb z
+	lib/kde3/kio m png qt-mt util xcb z
+WANTLIB+= c++ c++abi pthread
 LIB_DEPENDS =		${MODGETTEXT_LIB_DEPENDS} \
 			x11/kde/libs3
 
@@ -77,18 +78,18 @@ WANTLIB-main +=	 GL Half ICE Iex IlmImf IlmThread Imath Imlib SM \
 	Xxf86vm c drm expat fontconfig freetype fribidi lcms lib/kde3/kdeprint \
 	lib/kde3/khtml lib/kde3/kjs lib/kde3/kparts lib/kde3/kutils \
 	lib/kde3/kwalletclient mng openjpeg pcre pcreposix poppler \
-	poppler-qt pthread tiff gif
+	poppler-qt tiff gif
 
 WANTLIB-kpov += GL GLU Xdamage Xfixes Xi Xmu Xrender Xt Xxf86vm c \
-	drm freetype lib/kde3/kparts lib/kde3/kwalletclient pthread \
+	drm freetype lib/kde3/kparts lib/kde3/kwalletclient \
 	expat fontconfig
 
-WANTLIB-kamera +=  Xrender exif gphoto2 gphoto2_port pthread \
+WANTLIB-kamera +=  Xrender exif gphoto2 gphoto2_port \
 	lib/kde3/kwalletclient Xfixes Xt expat fontconfig freetype ltdl
 
 WANTLIB-sane +=	c Xfixes Xrender Xt expat fontconfig freetype lib/kde3/kwalletclient \
 	lib/kde3/kabc lib/kde3/kdeprint lib/kde3/kparts lib/kde3/kresources \
-	lib/kde3/kspell lib/kde3/ktexteditor lib/kde3/vcard pthread sane \
+	lib/kde3/kspell lib/kde3/ktexteditor lib/kde3/vcard sane \
 	tiff usb usb-1.0
 
 post-patch:

@@ -5,7 +5,7 @@ COMMENT =	GTK+2 engine from Fedora
 VERSION =	0.7.5
 DISTNAME =	gtk-nodoka-engine-${VERSION}
 PKGNAME =	gtk2-nodoka-engine-${VERSION}
-REVISION=	2
+REVISION=	3
 
 CATEGORIES =	x11
 
@@ -20,7 +20,8 @@ WANTLIB += expat fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-x11-2.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png pthread-stubs xcb xcb-render xcb-shm
-WANTLIB += z ffi stdc++
+WANTLIB += z ffi
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =	http://fedorahosted.org/releases/n/o/nodoka/
 

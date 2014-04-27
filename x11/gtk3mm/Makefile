@@ -4,6 +4,7 @@ COMMENT=	C++ interface for gtk3+
 
 GNOME_PROJECT=	gtkmm
 GNOME_VERSION=	3.12.0
+REVISION=	0
 
 PKGNAME=	gtk3mm-${GNOME_VERSION}
 
@@ -24,8 +25,9 @@ WANTLIB += ffi fontconfig freetype gdk-3 gdk_pixbuf-2.0 gio-2.0
 WANTLIB += giomm-2.4 glib-2.0 glibmm-2.4 gmodule-2.0 gobject-2.0
 WANTLIB += graphite2 gthread-2.0 gtk-3 harfbuzz m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pangomm-1.4 pcre pixman-1 png pthread
-WANTLIB += pthread-stubs sigc-2.0 stdc++ xcb xcb-render xcb-shm
+WANTLIB += pthread-stubs sigc-2.0 xcb xcb-render xcb-shm
 WANTLIB += z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		x11/gnome

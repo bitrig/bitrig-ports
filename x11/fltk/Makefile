@@ -5,6 +5,7 @@ COMMENT=	Fast-Light Tool Kit
 VER=		1.3.2
 DISTNAME=	fltk-${VER}-source
 PKGNAME=	fltk-${VER}
+REVISION=	0
 
 CATEGORIES=	x11
 SHARED_LIBS=	fltk		7.1 \
@@ -20,7 +21,8 @@ MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += X11 Xau Xdmcp Xext Xft Xinerama c fontconfig jpeg m
-WANTLIB += png pthread stdc++ z
+WANTLIB += png pthread z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/fltk/${VER}/ \
 		http://ftp.easysw.com/pub/fltk/${VER}/ \

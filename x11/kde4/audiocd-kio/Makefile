@@ -2,16 +2,18 @@
 
 COMMENT =	KDE KIOslave for accessing audio CDs
 DISTNAME =	audiocd-kio-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	audiocdplugins		50.0
 
-WANTLIB =  m pthread stdc++
+WANTLIB =  m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kcddb ${KDE4LIB}/kcompactdisc ${KDE4LIB}/kdeui
 WANTLIB += ${KDE4LIB}/kio
 WANTLIB += FLAC cdda_interface cdda_paranoia ogg vorbis vorbisenc
 WANTLIB += vorbisfile
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS =	audio/cdparanoia \
 		audio/flac \

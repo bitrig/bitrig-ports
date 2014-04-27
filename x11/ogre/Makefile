@@ -13,7 +13,8 @@ V =			1.8.1
 DISTNAME =		ogre_src_v${V:S/./-/g}
 PKGNAME-main =		ogre-${V}
 PKGNAME-samples =	ogre-samples-${V}
-REVISION-main =		0
+REVISION-main =		1
+REVISION-samples =	0
 
 MULTI_PACKAGES =	-main -samples
 
@@ -34,7 +35,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += ICE SM X11 Xaw Xext Xt boost_date_time-mt
 WANTLIB += boost_chrono-mt boost_system-mt boost_thread-mt c
-WANTLIB += freeimage freetype m pthread stdc++ z zzip
+WANTLIB += freeimage freetype m pthread z zzip
+WANTLIB += c++ c++abi
 
 WANTLIB-main = ${WANTLIB} GL GLU Xrandr
 WANTLIB-samples += ${WANTLIB} OIS OgreMain OgrePaging OgreRTShaderSystem

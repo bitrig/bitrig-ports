@@ -3,7 +3,7 @@
 COMMENT=	screen saver that displays a countdown to a selected date
 
 DISTNAME=	kountdown-0.4.1
-REVISION=	9
+REVISION=	10
 
 CATEGORIES=	x11
 
@@ -17,10 +17,11 @@ PERMIT_PACKAGE_CDROM=  Yes
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft
 WANTLIB += Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c drm
 WANTLIB += expat fam fontconfig freetype idn jpeg lcms m mng png
-WANTLIB += pthread pthread-stubs stdc++ util xcb z
+WANTLIB += pthread pthread-stubs util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kscreensaver
 WANTLIB += ${KDE}/kwalletclient
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://www.lysator.liu.se/~erre/download/kountdown/
 

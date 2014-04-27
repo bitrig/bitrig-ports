@@ -2,12 +2,14 @@
 
 COMMENT =	KDE versatile math calculator
 DISTNAME =	kcalc-${MODKDE4_VERSION}
+REVISION =	0
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui
 WANTLIB += gmp
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS =	devel/gmp
 

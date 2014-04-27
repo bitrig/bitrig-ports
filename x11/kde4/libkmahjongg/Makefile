@@ -3,12 +3,14 @@
 COMMENT =	common library for Mah Jongg-based KDE games
 CATEGORIES =	devel
 DISTNAME =	libkmahjongg-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kmahjongglib		50.1 # 4.10
 
-WANTLIB =  m pthread stdc++
+WANTLIB =  m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg
 WANTLIB += ${KDE4LIB}/kdeui
+WANTLIB += c++ c++abi
 
 MODKDE4_USE =	games libs
 

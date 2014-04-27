@@ -6,7 +6,7 @@ COMMENT=	graphics library for GNOME
 
 GNOME_PROJECT=	libgnomecanvas
 GNOME_VERSION=	2.30.3
-REVISION=	3
+REVISION=	4
 
 EXTRACT_SUFX=	.tar.bz2
 
@@ -22,8 +22,9 @@ WANTLIB=	X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes \
 		freetype gailutil gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 \
 		glib-2.0 gmodule-2.0 gobject-2.0 gtk-x11-2.0 \
 		m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1 \
-		png xml2 z pthread-stubs xcb xcb-render ffi stdc++ \
+		png xml2 z pthread-stubs xcb xcb-render ffi \
 		gthread-2.0 glade-2.0 art_lgpl_2 GL Xxf86vm drm xcb-shm
+WANTLIB+=	c++ c++abi pthread
 
 MODULES=	devel/gettext \
 		x11/gnome

@@ -12,7 +12,7 @@ PKGNAME-main =		${DISTNAME}
 PKGSPEC-main =		kdelibs->=3,<4
 PKGNAME-langlist =	kde3-langlist-${VERSION}
 PKG_ARCH-langlist =	*
-REVISION-main =		32
+REVISION-main =		33
 
 MODKDE_VERSION =	3.5.8
 
@@ -57,7 +57,7 @@ SHARED_LIBS +=	kimproxy             1.0      # .0.0
 SHARED_LIBS +=	katepartinterfaces   1.0      # .0.0
 
 WANTLIB-main =  asn1 crypto gssapi util jpeg krb5 m FLAC X11
-WANTLIB-main += ICE Xrender c SM pthread stdc++ Xext z png
+WANTLIB-main += ICE Xrender c SM pthread Xext z png
 WANTLIB-main += Xau Xdmcp pthread-stubs xcb art_lgpl_2 idn
 WANTLIB-main += fam>=1
 WANTLIB-main +=	GL Half Iex IlmImf>=4 IlmThread Imath Xcursor Xdamage Xfixes
@@ -68,6 +68,7 @@ WANTLIB-main +=	gmodule-2.0 gthread-2.0 jasper kmedia2_idl lcms mad mcop mng
 WANTLIB-main +=	ogg pcre pcreposix qtmcop sndio soundserver_idl tiff>=35
 WANTLIB-main +=	vorbis vorbisenc vorbisfile xml2 xslt>=1.10
 WANTLIB-main += com_err heimbase roken wind
+WANTLIB-main += c++ c++abi
 WANTLIB-langlist =
 
 MULTI_PACKAGES =	-main -langlist

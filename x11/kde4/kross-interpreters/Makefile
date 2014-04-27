@@ -5,6 +5,8 @@ COMMENT-java =	KDE Java bindings
 DISTNAME =	kross-interpreters-${MODKDE4_VERSION}
 PKGNAME-main =	${PKGNAME}
 PKGNAME-java =	${PKGNAME:C/interpreters/java/}
+REVISION-main =	0
+REVISION-java =	0
 
 MULTI_PACKAGES =	-main -java
 
@@ -13,9 +15,10 @@ MULTI_PACKAGES =	-main -java
 PSEUDO_FLAVORS =	no_java
 FLAVOR ?=
 
-WANTLIB =  m pthread stdc++
+WANTLIB =  m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtScript lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/krosscore
+WANTLIB += c++ c++abi
 
 WANTLIB-main =  ${WANTLIB} ${MODPY_WANTLIB} ${MODRUBY_WANTLIB}
 WANTLIB-main += lib/qt4/QtGui

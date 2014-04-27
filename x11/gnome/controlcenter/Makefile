@@ -11,6 +11,7 @@ COMMENT=		GNOME control center
 
 GNOME_PROJECT=		gnome-control-center
 GNOME_VERSION=		3.12.1
+REVISION=		0
 
 CATEGORIES=		x11
 
@@ -34,9 +35,10 @@ WANTLIB += krb5 kvm lcms2 ltdl m ogg orc-0.4 pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png polkit-gobject-1 pthread
 WANTLIB += pthread-stubs pulse pulse-mainloop-glib pwquality rest-0.7
 WANTLIB += roken secret-1 smbclient sndfile soup-2.4 soup-gnome-2.4
-WANTLIB += sqlite3 stdc++ telepathy-glib upower-glib vorbis vorbisenc
+WANTLIB += sqlite3 telepathy-glib upower-glib vorbis vorbisenc
 WANTLIB += vorbisfile webkitgtk-3.0 webp wind xcb xcb-render xcb-shm
 WANTLIB += xml2 xslt z grilo-0.2
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
 			x11/gnome

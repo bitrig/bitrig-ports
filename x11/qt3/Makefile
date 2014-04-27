@@ -148,10 +148,11 @@ LIB_DEPENDS=		graphics/png \
 			graphics/libmng
 WANTLIB=		GL GLU ICE SM X11>=10 Xcursor Xext Xft Xi Xinerama \
 			Xmu png mng \
-			Xrandr Xrender fontconfig freetype jpeg lcms m stdc++ z
+			Xrandr Xrender fontconfig freetype jpeg lcms m z
+WANTLIB +=		c++ c++abi pthread
 
 
-WANTLIB-main=		${WANTLIB} pthread c
+WANTLIB-main=		${WANTLIB} c
 
 
 LIB_DEPENDS-mysql=	${LIB_DEPENDS} \
@@ -171,7 +172,7 @@ WANTLIB-sqlite2=	${WANTLIB} qt-mt sqlite
 
 LIB_DEPENDS-examples=	${LIB_DEPENDS} \
 			${BUILD_PKGPATH}
-WANTLIB-examples=	${WANTLIB} pthread stdc++ c qt-mt
+WANTLIB-examples=	${WANTLIB} c qt-mt
 
 
 LIB_DEPENDS-html=

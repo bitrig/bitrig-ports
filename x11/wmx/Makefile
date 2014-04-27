@@ -3,6 +3,7 @@
 COMMENT=	minimal window manager
 
 DISTNAME=	wmx-7
+REVISION=	0
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.all-day-breakfast.com/wmx/
@@ -13,7 +14,8 @@ PERMIT_PACKAGE_FTP=	no license
 PERMIT_DISTFILES_FTP=	no license
 
 WANTLIB += ICE SM X11 Xau Xdmcp Xext Xft Xpm Xrender c expat fontconfig
-WANTLIB += freetype m pthread-stubs stdc++ xcb z
+WANTLIB += freetype m pthread-stubs xcb z
+WANTLIB += c++ c++abi pthread
 
 CONFIGURE_STYLE=	gnu
 

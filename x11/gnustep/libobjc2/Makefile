@@ -7,7 +7,7 @@ NOT_FOR_ARCHS = ${GCC3_ARCHS}
 
 # note: this port does not use the gnustep module
 DISTNAME =	libobjc2-1.7
-REVISION =	0
+REVISION =	1
 PKGNAME =	gnustep-${DISTNAME}
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	x11/gnustep devel
@@ -19,7 +19,8 @@ HOMEPAGE =	http://www.gnustep.org/
 MASTER_SITES =	http://download.gna.org/gnustep/
 
 MODULES =	devel/cmake lang/clang
-WANTLIB += 	m stdc++ pthread
+WANTLIB += 	m pthread
+WANTLIB += 	c++ c++abi
 
 MODCLANG_ARCHS =	amd64 i386
 MODCLANG_LANGS =	c++

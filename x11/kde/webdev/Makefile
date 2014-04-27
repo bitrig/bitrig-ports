@@ -4,7 +4,7 @@ COMMENT = 		web development tool
 CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
 DISTNAME =		kdewebdev-${VERSION}
-REVISION =		12
+REVISION =		13
 MODKDE_VERSION =	3.5.8
 PKGSPEC =		kdewebdev->=3,<4
 
@@ -37,7 +37,8 @@ WANTLIB +=	lib/kde3/kdeui lib/kde3/khtml lib/kde3/kio lib/kde3/kjs
 WANTLIB +=	lib/kde3/kparts lib/kde3/kresources lib/kde3/kspell
 WANTLIB +=	lib/kde3/ktexteditor lib/kde3/kutils lib/kde3/kwalletclient
 WANTLIB +=	lib/kde3/vcard m pcre pcreposix png pthread pthread-stubs
-WANTLIB +=	stdc++ util xcb xml2 xslt z
+WANTLIB +=	util xcb xml2 xslt z
+WANTLIB +=	c++ c++abi
 
 # don't pick up gtar
 CONFIGURE_ENV=		TAR=tar

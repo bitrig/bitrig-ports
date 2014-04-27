@@ -3,6 +3,7 @@
 COMMENT=	displays the date and resembles the toolbar
 
 DISTNAME=	bbdate-0.2.4
+REVISION=	0
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bbtools/} \
 		http://openbsd.rutgers.edu/
@@ -12,7 +13,8 @@ MAINTAINER=	William Yodlowsky <bsd@openbsd.rutgers.edu>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		ICE SM X11 c m stdc++
+WANTLIB=		ICE SM X11 c m
+WANTLIB+=		c++ c++abi pthread
 
 
 CONFIGURE_STYLE= gnu

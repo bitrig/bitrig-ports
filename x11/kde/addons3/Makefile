@@ -3,7 +3,7 @@
 COMMENT =		K Desktop Environment, addons
 CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
-REVISION =		15
+REVISION =		16
 DISTNAME =		kdeaddons-${VERSION}
 MODKDE_VERSION =	3.5.8
 
@@ -51,7 +51,8 @@ WANTLIB +=	lib/kde3/kresources lib/kde3/ktexteditor lib/kde3/kutils
 WANTLIB +=	lib/kde3/kwalletclient lib/kde3/noatun
 WANTLIB +=	lib/kde3/noatuncontrols lib/kde3/noatuntags lib/kde3/vcard m
 WANTLIB +=	mad mcop mng ogg pcre pcreposix png pthread pthread-stubs
-WANTLIB +=	qtmcop sndio soundserver_idl stdc++ usbhid util
+WANTLIB +=	qtmcop sndio soundserver_idl usbhid util
 WANTLIB +=	vorbis vorbisenc vorbisfile xcb xmms z
+WANTLIB +=	c++ c++abi
 
 .include <bsd.port.mk>

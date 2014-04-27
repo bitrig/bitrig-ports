@@ -5,7 +5,7 @@ COMMENT=	.NET language bindings for assorted GNOME libraries
 GNOME_PROJECT=	gnome-sharp
 GNOME_VERSION=	2.24.2
 PKGNAME=	mono-gnome-${VERSION}
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	x11
 
@@ -29,8 +29,9 @@ WANTLIB += gcrypt gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0
 WANTLIB += gmodule-2.0 gnome-2 gnome-keyring gnomecanvas-2 gnomeui-2
 WANTLIB += gnomevfs-2 gobject-2.0 gpg-error gthread-2.0 gtk-x11-2.0
 WANTLIB += ltdl m ogg pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
-WANTLIB += pixman-1 png popt pthread-stubs ssl stdc++ util vorbis
+WANTLIB += pixman-1 png popt pthread-stubs ssl util vorbis
 WANTLIB += vorbisfile xcb xcb-render xcb-shm xml2 z
+WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS=	x11/gnome/libgnomeui
 

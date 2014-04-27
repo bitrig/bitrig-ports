@@ -3,6 +3,7 @@
 COMMENT=	display chm files
 
 DISTNAME=	xchm-1.20
+REVISION=	0
 
 CATEGORIES=	devel textproc x11
 
@@ -18,9 +19,10 @@ LIB_DEPENDS=	devel/chmlib \
 
 RUN_DEPENDS=	devel/desktop-file-utils
 
-WANTLIB += m c stdc++ pthread chm wx_base_xml wx_gtk2_qa wx_base_odbc
+WANTLIB += m c pthread chm wx_base_xml wx_gtk2_qa wx_base_odbc
 WANTLIB += wx_gtk2_html wx_base wx_gtk2_adv wx_gtk2_xrc wx_gtk2_core
 WANTLIB += wx_base_net wx_gtk2_dbgrid wx_gtk2_aui wx_gtk2_richtext
+WANTLIB += c++ c++abi
 
 CONFIGURE_STYLE=gnu
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib"

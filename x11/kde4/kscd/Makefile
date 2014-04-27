@@ -2,12 +2,14 @@
 
 COMMENT =	audio CD player for KDE
 DISTNAME =	kscd-${MODKDE4_VERSION}
+REVISION =	0
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kio ${KDE4LIB}/solid
 WANTLIB += musicbrainz3
+WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 

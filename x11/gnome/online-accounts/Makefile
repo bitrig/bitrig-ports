@@ -4,6 +4,7 @@ COMMENT=	interfaces for interacting with online accounts
 
 GNOME_PROJECT=	gnome-online-accounts
 GNOME_VERSION=	3.12.1
+REVISION=	0
 
 SHARED_LIBS +=  goa-1.0              3.0      # .0.0
 SHARED_LIBS +=  goa-backend-1.0      3.0      # .0.0
@@ -22,8 +23,9 @@ WANTLIB += gthread-2.0 gtk-3 harfbuzz harfbuzz-icu icudata icui18n
 WANTLIB += icuuc javascriptcoregtk-3.0 jpeg json-glib-1.0 m orc-0.4
 WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB += png pthread pthread-stubs rest-0.7 secret-1 soup-2.4
-WANTLIB += soup-gnome-2.4 sqlite3 stdc++ telepathy-glib webkitgtk-3.0
+WANTLIB += soup-gnome-2.4 sqlite3 telepathy-glib webkitgtk-3.0
 WANTLIB += webp xcb xcb-render xcb-shm xml2 xslt z
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
 			x11/gnome

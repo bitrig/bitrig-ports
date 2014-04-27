@@ -10,7 +10,7 @@ PKGNAME-main =		${DISTNAME}
 PKGNAME-kopsounds =	kde3-kopete-sounds-${VERSION}
 PKGSPEC-main =		kdenetwork->=3,<4
 PKG_ARCH-kopsounds =	*
-REVISION-main = 	13
+REVISION-main = 	14
 
 SHARED_LIBS +=	kopete               2.0      # .1.0
 SHARED_LIBS +=	kopete_videodevice   1.0      # .0.0
@@ -49,7 +49,8 @@ WANTLIB-main = ${WANTLIB} \
 	lib/kde3/knewstuff lib/kde3/kparts lib/kde3/kresources lib/kde3/kspell \
 	lib/kde3/ktexteditor lib/kde3/kutils lib/kde3/kwalletclient \
 	lib/kde3/vcard m meanwhile mng pcre pcreposix png pthread \
-	pthread-stubs ssl stdc++ util xcb xml2 xmms xslt z
+	pthread-stubs ssl util xcb xml2 xmms xslt z
+WANTLIB-main += c++ c++abi
 
 CONFIGURE_ARGS =	--disable-jingle \
 			--disable-ortp \

@@ -3,7 +3,7 @@
 COMMENT=	3D earth viewer with GPS support
 
 DISTNAME=	gaia-0.1.2
-REVISION=	8
+REVISION=	9
 CATEGORIES=	x11 geo
 
 EXTRACT_SUFX=	.tar.bz2
@@ -15,8 +15,9 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gaia-clean/}
 
-WANTLIB +=	GL GLU c crypto idn m pthread ssl stdc++ z
+WANTLIB +=	GL GLU c crypto idn m pthread ssl z
 WANTLIB +=	SDL>=6 gps>=19 curl>=4 png>=5 jpeg>=62
+WANTLIb +=	c++ c++abi
 
 MODULES=	devel/scons
 MODSCONS_FLAGS=	prefix=${PREFIX} \

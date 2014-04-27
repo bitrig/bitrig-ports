@@ -5,7 +5,7 @@ COMMENT=		text editor widget for FLTK
 V=			0.4.5
 DISTNAME=		fl_editor-${V}
 PKGNAME=		fleditor-${V}
-REVISION=		4
+REVISION=		5
 
 SHARED_LIBS=		fleditor 3.0
 CATEGORIES=		x11
@@ -15,7 +15,8 @@ HOMEPAGE=		http://www.robertk.com/source/
 # LPGL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=		http://www.robertk.com/source/fl_editor/
 EXTRACT_SUFX=		.tgz

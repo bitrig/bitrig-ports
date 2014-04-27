@@ -7,16 +7,18 @@ DISTNAME =	libkdcraw-${MODKDE4_VERSION}
 PKGNAME-main =	${DISTNAME}
 PKGNAME-icons =	kde4-libkdcraw-icons-${MODKDE4_VERSION}
 PKGSPEC-main =	libkdcraw->=4,<5
+REVISION-main =	0
 
 SHARED_LIBS =	kdcraw			50.0	# 20.0
 
 WANTLIB-icons =
-WANTLIB-main =  ${WANTLIB} m pthread stdc++
+WANTLIB-main =  ${WANTLIB} m pthread
 WANTLIB-main += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB-main += lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB-main += ${KDE4LIB}/kdeui ${KDE4LIB}/kio ${KDE4LIB}/solid
 WANTLIB-main += ${KDE4LIB}/threadweaver
 WANTLIB-main += raw_r
+WANTLIB-main += c++ c++abi
 
 MULTI_PACKAGES =	-main -icons
 

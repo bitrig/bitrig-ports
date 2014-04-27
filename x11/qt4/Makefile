@@ -186,9 +186,11 @@ LIB_DEPENDS =
 WANTLIB =
 RUN_DEPENDS =
 
-commonWANTLIB =		c pthread GL m stdc++
+commonWANTLIB =		c pthread GL m
+commonWANTLIB +=	c++ c++abi
 
-sqlWANTLIB =		m lib/qt4/QtCore>=4 QtSql stdc++ pthread
+sqlWANTLIB =		m lib/qt4/QtCore>=4 QtSql pthread
+sqlWANTLIB +=		c++ c++abi
 
 RUN_DEPENDS-main=	${MODGETTEXT_RUN_DEPENDS}
 LIB_DEPENDS-main =	${LIB_DEPENDS} \

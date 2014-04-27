@@ -3,6 +3,7 @@
 COMMENT=	aewm++ based pretty themable window manager
 
 DISTNAME=	pekwm-0.1.15
+REVISION=	0
 CATEGORIES=	x11
 
 HOMEPAGE=	http://pekwm.org/
@@ -13,7 +14,8 @@ MAINTAINER=	Nicholas Marriott <nicm@users.sourceforge.net>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += ICE SM X11 Xext Xft Xinerama Xpm Xrandr c jpeg m png
-WANTLIB += stdc++ z
+WANTLIB += z
+WANTLIB += c++ c++abi pthread
 
 MODULES=	converters/libiconv
 

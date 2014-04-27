@@ -9,7 +9,7 @@ COMMENT=		powerful desktop search tool and indexer
 
 GNOME_PROJECT=		tracker
 GNOME_VERSION=		1.0.0
-REVISION=		1
+REVISION=		2
 
 # there is already audio/tracker, so this port has to live
 # as meta-tracker.
@@ -46,8 +46,9 @@ WANTLIB += gstvideo-1.0 gthread-2.0 gtk-3 harfbuzz icudata icui18n
 WANTLIB += icuuc jpeg kvm lcms2 lzma m openjpeg
 WANTLIB += orc-0.4 osinfo-1.0 pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png poppler poppler-glib pthread pthread-stubs
-WANTLIB += soup-2.4 sqlite3 stdc++ tag tag_c tiff totem-plparser
+WANTLIB += soup-2.4 sqlite3 tag tag_c tiff totem-plparser
 WANTLIB += upower-glib uuid xcb xcb-render xcb-shm xml2 xslt z
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
 			x11/gnome \

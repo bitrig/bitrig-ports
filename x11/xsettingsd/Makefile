@@ -4,7 +4,7 @@ COMMENT=	lightweight XSETTINGS daemon
 
 DISTNAME=	derat-xsettingsd-486be8b
 PKGNAME=	xsettingsd-0.20120312
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	x11
 
@@ -13,7 +13,8 @@ HOMEPAGE=	https://code.google.com/p/xsettingsd/
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += X11 Xau Xdmcp c m pthread-stubs stdc++ xcb
+WANTLIB += X11 Xau Xdmcp c m pthread-stubs xcb
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	http://spacehopper.org/mirrors/
 

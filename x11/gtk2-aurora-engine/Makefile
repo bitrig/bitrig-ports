@@ -7,7 +7,7 @@ COMMENT=	Aurora GTK+2 engine
 V=		1.5.1
 DISTNAME=	56438-aurora-${V}
 PKGNAME=	gtk2-aurora-engine-${V}
-REVISION=	4
+REVISION=	5
 
 EXTRACT_SUFX=	.tar.bz2
 
@@ -30,7 +30,8 @@ WANTLIB += Xi Xinerama Xrandr Xrender atk-1.0 cairo expat fontconfig
 WANTLIB += freetype gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0
 WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0 gdk_pixbuf-2.0
 WANTLIB += pcre pixman-1 png pthread-stubs xcb z gdk-x11-2.0 gtk-x11-2.0
-WANTLIB += GL Xxf86vm drm ffi gthread-2.0 stdc++ xcb-render xcb-shm
+WANTLIB += GL Xxf86vm drm ffi gthread-2.0 xcb-render xcb-shm
+WANTLIB += c++ c++abi pthread
 
 CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS=	${CONFIGURE_SHARED}

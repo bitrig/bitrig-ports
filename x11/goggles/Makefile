@@ -4,7 +4,7 @@ COMMENT=	gui for ogle
 CATEGORIES=	x11
 
 DISTNAME=	goggles-0.9.1
-REVISION=	2
+REVISION=	3
 
 EXTRACT_SUFX=	.tar.bz2
 MASTER_SITES=	https://gogglesmm.googlecode.com/files/
@@ -27,9 +27,10 @@ NO_TEST=	Yes
 CONFIGURE_ENV=LOCALBASE=${LOCALBASE} X11BASE=${X11BASE} LP64_ARCHS="${LP64_ARCHS}"
 
 WANTLIB=	GL GLU X11 Xext Xcursor Xrandr bz2 c jpeg \
-		m png pthread stdc++ tiff z Xau Xdmcp Xft \
+		m png pthread tiff z Xau Xdmcp Xft \
 		Xrender expat fontconfig freetype \
 		pthread-stubs xcb
+WANTLIB+=	c++ c++abi pthread
 
 LIB_DEPENDS=	devel/fox \
 		x11/ogle

@@ -3,7 +3,7 @@
 COMMENT=		terminal emulator for X
 
 DISTNAME=		roxterm-2.0.1
-REVISION=		8
+REVISION=		9
 CATEGORIES=		x11
 
 HOMEPAGE=		http://roxterm.sourceforge.net/
@@ -18,8 +18,9 @@ WANTLIB += c cairo cairo-gobject dbus-1 dbus-glib-1 drm expat
 WANTLIB += ffi fontconfig freetype gdk-3 gdk_pixbuf-2.0 gio-2.0
 WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 gtk-3
 WANTLIB += m ncurses pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
-WANTLIB += pixman-1 png pthread pthread-stubs stdc++ vte2_90 xcb
+WANTLIB += pixman-1 png pthread pthread-stubs vte2_90 xcb
 WANTLIB += xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext
 

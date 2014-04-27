@@ -5,9 +5,11 @@ COMMENT=		library to compress the standard X protocol
 DASHVERSION=		2
 DISTNAME=		nxcomp-${MAJOR_VERSION}-${DASHVERSION}
 PKGNAME=		nxcomp-${MAJOR_VERSION}.${DASHVERSION}
+REVISION=		0
 SHARED_LIBS=		Xcomp	1.0
 
-WANTLIB += jpeg m png stdc++ z
+WANTLIB += jpeg m png z
+WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS=		graphics/jpeg \
 			graphics/png

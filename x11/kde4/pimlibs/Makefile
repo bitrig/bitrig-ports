@@ -2,7 +2,7 @@
 
 COMMENT =	libraries for KDE PIM services
 DISTNAME =	kdepimlibs-${MODKDE4_VERSION}
-REVISION =	0
+REVISION =	1
 
 DPB_PROPERTIES =	parallel
 
@@ -42,7 +42,7 @@ SHARED_LIBS +=  kmbox			51.0 # 4.7
 
 SHARED_LIBS +=  akonadi-socialutils	51.0 # 4.10
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSql
 WANTLIB += lib/qt4/QtSvg lib/qt4/QtTest lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kcmutils ${KDE4LIB}/kdeui ${KDE4LIB}/kemoticons
@@ -50,6 +50,7 @@ WANTLIB += ${KDE4LIB}/kio ${KDE4LIB}/kparts ${KDE4LIB}/nepomuk
 WANTLIB += ${KDE4LIB}/nepomukcore ${KDE4LIB}/nepomukutils ${KDE4LIB}/solid
 WANTLIB += akonadiprotocolinternals assuan uuid gpg-error gpgme
 WANTLIB += gpgme-pthread ical icalss lber ldap prison qjson sasl2 soprano
+WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext multimedia/phonon
 

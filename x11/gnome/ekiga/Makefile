@@ -10,7 +10,7 @@ COMMENT=	SIP and H.323 compatible conferencing application
 
 GNOME_PROJECT=	ekiga
 GNOME_VERSION=	4.0.1
-REVISION=	9
+REVISION=	10
 
 # pkg/PLIST
 SUBST_VARS +=	GNOME_VERSION
@@ -34,8 +34,9 @@ WANTLIB += ldap_r-2.4 m notify nspr4 nss3 nssutil3 opal p11-kit
 WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB += plc4 plds4 png pt pthread pthread-stubs roken sasl2
 WANTLIB += secret-1 smime3 sndio softokn3 soup-2.4 speexdsp sqlite3
-WANTLIB += ssl ssl3 stdc++ usbhid wind xcb xcb-render xcb-shm
+WANTLIB += ssl ssl3 usbhid wind xcb xcb-render xcb-shm
 WANTLIB += xml2 z icudata icui18n icuuc
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		x11/gnome \

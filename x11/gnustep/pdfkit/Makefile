@@ -5,6 +5,7 @@ COMMENT =	framework for accessing and rendering PDF content
 BROKEN =	shows PDFs only white, and breaks GWorkspace on macppc
 
 DISTNAME =	PDFKit-0.9.3
+REVISION =	0
 SHARED_LIBS +=	PDFKit	0.0
 
 HOMEPAGE =	http://wiki.gnustep.org/index.php/PDFKit
@@ -13,7 +14,8 @@ MASTER_SITES =	${MASTER_SITE_SAVANNAH:=gap/}
 MODULES =		x11/gnustep
 MODGNUSTEP_NEEDS_BASE =	No
 MODGNUSTEP_NEEDS_GUI =	No
-WANTLIB += 		stdc++ pthread freetype m
+WANTLIB += 		pthread freetype m
+WANTLIB += 		c++ c++abi
 BUILD_DEPENDS =		x11/gnustep/gui
 
 CONFIGURE_STYLE =	gnu

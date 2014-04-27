@@ -8,7 +8,7 @@ COMMENT=	document manager for GNOME
 
 GNOME_PROJECT=	gnome-documents
 GNOME_VERSION=	3.12.0
-REVISION=	1
+REVISION=	2
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
@@ -27,13 +27,14 @@ WANTLIB += jpeg json-glib-1.0 kvm m mozjs-24 ncursesw nspr4
 WANTLIB += nss3 oauth orc-0.4 p11-kit pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 plc4 plds4 png pthread pthread-stubs
 WANTLIB += readline rest-0.7 secret-1 smime3 softokn3 soup-2.4
-WANTLIB += soup-gnome-2.4 sqlite3 ssl ssl3 stdc++
+WANTLIB += soup-gnome-2.4 sqlite3 ssl ssl3
 WANTLIB += uuid webkitgtk-3.0 webp xcb xcb-render xcb-shm
 WANTLIB += xml2 xslt z zapojit-0.0 mediaart-1.0
 WANTLIB += tracker-control-${TRACKER_VERSION}
 WANTLIB += tracker-sparql-${TRACKER_VERSION}
 WANTLIB += lib/tracker-${TRACKER_VERSION}/tracker-data
 WANTLIB += lib/tracker-${TRACKER_VERSION}/tracker-common
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		devel/dconf \

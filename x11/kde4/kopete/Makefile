@@ -3,6 +3,7 @@
 COMMENT-main =		multi-protocol instant messenger for KDE
 COMMENT-sounds =	notification sounds for Kopete
 DISTNAME =		kopete-${MODKDE4_VERSION}
+REVISION-main =		0
 PKGNAME-main =		${DISTNAME}
 PKGNAME-sounds =	kde4-kopete-sounds-${MODKDE4_VERSION}
 PKG_ARCH-sounds =	*
@@ -27,7 +28,7 @@ SHARED_LIBS +=	qgroupwise		51.0 # 4.10
 MULTI_PACKAGES =	-main -sounds
 
 WANTLIB-sounds =
-WANTLIB-main =  ${WANTLIB} c m pthread stdc++ z
+WANTLIB-main =  ${WANTLIB} c m pthread z
 WANTLIB-main += ICE SM X11 Xext
 WANTLIB-main += lib/qt4/Qt3Support lib/qt4/QtDBus lib/qt4/QtGui
 WANTLIB-main += lib/qt4/QtNetwork lib/qt4/QtSql lib/qt4/QtSvg lib/qt4/QtXml
@@ -42,6 +43,7 @@ WANTLIB-main += ${KDE4LIB}/kutils ${KDE4LIB}/nepomuk
 WANTLIB-main += ${KDE4LIB}/nepomukutils ${KDE4LIB}/solid
 WANTLIB-main += gadu glib-2.0 idn jasper jpeg meanwhile otr qca2
 WANTLIB-main += qimageblitz soprano xml2 xmms xslt
+WANTLIB-main += c++ c++abi
 
 MODULES =	multimedia/phonon
 MODKDE4_USE =	pim

@@ -2,14 +2,16 @@
 
 COMMENT =	Mah Jongg solitare board game for KDE
 DISTNAME =	kmahjongg-${MODKDE4_VERSION}
+REVISION =	0
 
 MODKDE4_USE =	games
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdegamesprivate ${KDE4LIB}/kdeui ${KDE4LIB}/kio
 WANTLIB += ${KDE4LIB}/kmahjongglib
+WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/gtk+2,-guic

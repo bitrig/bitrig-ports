@@ -8,9 +8,9 @@ DISTNAME =		kdesdk-${VERSION}
 
 PKGNAME-main =		${DISTNAME}
 PKGSPEC-main =		kdesdk->=3,<4
-REVISION-main =		19
+REVISION-main =		20
 PKGNAME-svn =		kdesvn-${VERSION}
-REVISION-svn =		19
+REVISION-svn =		20
 
 MODKDE_VERSION =	3.5.8
 SHARED_LIBS +=	cvsservice           1.0      # .0.1
@@ -38,11 +38,12 @@ LIB_DEPENDS-svn = 	${LIB_DEPENDS} \
 
 SEPARATE_BUILD =	flavored
 
-WANTLIB =  c m png pthread pthread-stubs stdc++ util z
+WANTLIB =  c m png pthread pthread-stubs util z
 WANTLIB += ICE SM X11 Xext Xrender xcb
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=6 ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kwalletclient
 WANTLIB += art_lgpl_2 fam idn
+WANTLIB += c++ c++abi
 
 WANTLIB-main =  ${WANTLIB}
 WANTLIB-main += GL GLU Xcursor Xdamage Xfixes Xft Xi Xinerama Xmu Xrandr Xt

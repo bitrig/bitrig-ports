@@ -3,7 +3,7 @@
 COMMENT=	Windows 95/98/NT like window manager
 
 DISTNAME=	qvwm-1.1.8
-REVISION=	4
+REVISION=	5
 CATEGORIES=     x11
 MASTER_SITES=	${HOMEPAGE}/archive/qvwm/
 
@@ -11,7 +11,8 @@ HOMEPAGE=	http://www.csg.is.titech.ac.jp/~kourai/qvwm/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		ICE SM X11 Xext Xpm Xss c m sndio stdc++
+WANTLIB=		ICE SM X11 Xext Xpm Xss c m sndio
+WANTLIB +=		c++ c++abi pthread
 
 USE_GROFF =	Yes
 

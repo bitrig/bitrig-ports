@@ -4,7 +4,7 @@ COMMENT = 		some useless KDE applications
 CATEGORIES =		x11 x11/kde games
 VERSION =		3.5.10
 DISTNAME =		kdetoys-${VERSION}
-REVISION =		11
+REVISION =		12
 MODKDE_VERSION ?=	3.5.8
 PKGSPEC =		kdetoys->=3,<4
 
@@ -23,7 +23,8 @@ WANTLIB +=	lib/kde3/kdecore>=6 lib/kde3/kdefx lib/kde3/kdeprint
 WANTLIB +=	lib/kde3/kdesu lib/kde3/kdeui lib/kde3/khtml lib/kde3/kio
 WANTLIB +=	lib/kde3/kjs lib/kde3/kparts lib/kde3/kscreensaver
 WANTLIB +=	lib/kde3/kutils lib/kde3/kwalletclient m pcre pcreposix png
-WANTLIB +=	pthread pthread-stubs stdc++ util xcb z
+WANTLIB +=	pthread pthread-stubs util xcb z
+WANTLIB +=	c++ c++abi
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${MODKDE_HTML_SUBDIR}/en/common

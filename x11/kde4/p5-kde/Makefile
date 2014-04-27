@@ -3,11 +3,12 @@
 COMMENT =	KDE bindings for Perl
 DISTNAME =	perlkde-${MODKDE4_VERSION}
 PKGNAME =	p5-kde-${MODKDE4_VERSION}
+REVISION =	0
 
 # for perl module
 SHARED_ONLY =	Yes
 
-WANTLIB =  c m perl pthread stdc++ util
+WANTLIB =  c m perl pthread util
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB += lib/qt4/QtOpenGL lib/qt4/QtSql lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/smokebase ${KDE4LIB}/smokekate
@@ -22,6 +23,7 @@ WANTLIB += ${KDE4LIB}/smokeqtgui ${KDE4LIB}/smokeqtnetwork
 WANTLIB += ${KDE4LIB}/smokesolid ${KDE4LIB}/smokesoprano
 WANTLIB += ${KDE4LIB}/smokesopranoclient ${KDE4LIB}/smokesopranoserver
 WANTLIB += ${KDE4LIB}/smokeakonadi
+WANTLIB += c++ c++abi
 
 MODULES =	perl
 MODKDE4_USE =	libs

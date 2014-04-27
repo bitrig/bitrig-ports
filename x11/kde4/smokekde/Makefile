@@ -3,6 +3,7 @@
 CATEGORIES =	devel
 COMMENT =	introspective wrappers around KDE
 DISTNAME =	smokekde-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	smokeakonadi		51.0 # 3.0
 #SHARED_LIBS +=	smokeattica		50.0 # 3.0
@@ -26,7 +27,7 @@ SHARED_LIBS +=	smokesoprano		51.0 # 3.0
 SHARED_LIBS +=	smokesopranoclient	51.0 # 3.0
 SHARED_LIBS +=	smokesopranoserver	51.0 # 3.0
 
-WANTLIB =  m pthread stdc++
+WANTLIB =  m pthread
 WANTLIB += lib/qt4/Qt3Support lib/qt4/QtDBus lib/qt4/QtGui
 WANTLIB += lib/qt4/QtNetwork lib/qt4/QtOpenGL lib/qt4/QtSql
 WANTLIB += lib/qt4/QtSvg lib/qt4/QtXml
@@ -46,6 +47,7 @@ WANTLIB += ${KDE4LIB}/akonadi-kde ${KDE4LIB}/akonadi-kmime ${KDE4LIB}/kabc
 WANTLIB += ${KDE4LIB}/kcalcore ${KDE4LIB}/kmime ${KDE4LIB}/kpimutils
 WANTLIB += ${KDE4LIB}/kresources
 WANTLIB += soprano sopranoclient sopranoserver
+WANTLIB += c++ c++abi
 
 MODKDE4_USE =	pim libs
 

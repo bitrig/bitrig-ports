@@ -4,7 +4,7 @@ COMMENT=	Xfce4 advanced calendar
 
 XFCE_GOODIE=	orage
 XFCE_VERSION=	4.8.4
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.xfce.org/projects/orage
 # GPLv2
@@ -26,7 +26,8 @@ WANTLIB=	X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext xcb-render \
 		gmodule-2.0 gobject-2.0 gtk-x11-2.0 m pango-1.0 gthread-2.0 \
 		pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread \
 		xfce4util z pthread-stubs xcb ical icalss icalvcal popt ffi \
-		GL Xxf86vm drm xcb-shm xfce4panel-1.0 notify dbus-1 dbus-glib-1 stdc++ \
+		GL Xxf86vm drm xcb-shm xfce4panel-1.0 notify dbus-1 dbus-glib-1 \
 		harfbuzz
+WANTLIB +=	c++ c++abi
 
 .include <bsd.port.mk>

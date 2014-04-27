@@ -4,6 +4,7 @@ COMMENT=	API documentation browser for GNOME
 
 GNOME_PROJECT=	devhelp
 GNOME_VERSION=	3.12.1
+REVISION=	0
 
 SHARED_LIBS +=  devhelp-3                 0.0 # 0.0
 
@@ -22,8 +23,9 @@ WANTLIB += gstpbutils-1.0 gstreamer-1.0 gsttag-1.0 gstvideo-1.0
 WANTLIB += gthread-2.0 gtk-3 harfbuzz harfbuzz-icu icudata icui18n
 WANTLIB += icuuc javascriptcoregtk-3.0 jpeg m orc-0.4 pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread
-WANTLIB += pthread-stubs secret-1 soup-2.4 sqlite3 stdc++ webkit2gtk-3.0
+WANTLIB += pthread-stubs secret-1 soup-2.4 sqlite3 webkit2gtk-3.0
 WANTLIB += webp xcb xcb-render xcb-shm xml2 xslt z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/dconf \
 		devel/gettext \

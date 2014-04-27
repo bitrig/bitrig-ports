@@ -6,6 +6,7 @@ COMMENT=		simple note editor
 
 GNOME_PROJECT=		bijiben
 GNOME_VERSION=		3.12.0
+REVISION=		0
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
@@ -26,11 +27,12 @@ WANTLIB += gstvideo-1.0 gthread-2.0 gtk-3 harfbuzz harfbuzz-icu
 WANTLIB += icudata icui18n icuuc javascriptcoregtk-3.0 jpeg json-glib-1.0
 WANTLIB += kvm m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB += png pthread pthread-stubs secret-1 soup-2.4 sqlite3
-WANTLIB += stdc++ uuid webkitgtk-3.0 webp xcb xcb-render xcb-shm
+WANTLIB += uuid webkitgtk-3.0 webp xcb xcb-render xcb-shm
 WANTLIB += xml2 xslt z zeitgeist-2.0 orc-0.4 cogl-path
 WANTLIB += tracker-sparql-${TRACKER_VERSION}
 WANTLIB += lib/tracker-${TRACKER_VERSION}/tracker-common
 WANTLIB += lib/tracker-${TRACKER_VERSION}/tracker-data
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=		graphics/clutter/clutter-gtk \
 			productivity/zeitgeist \

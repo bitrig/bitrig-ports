@@ -2,17 +2,19 @@
 
 COMMENT =	KDE math features
 DISTNAME =	analitza-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	analitza		51.0	# 4.7
 SHARED_LIBS +=	analitzagui		51.0	# 4.7
 SHARED_LIBS +=	analitzaplot		51.0	# 4.10
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += GL GLU
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtOpenGL lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui
 WANTLIB += ncurses readline
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	devel/readline
 

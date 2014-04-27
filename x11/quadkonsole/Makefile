@@ -3,7 +3,7 @@
 COMMENT=	terminal application that embeds Konsole for KDE
 
 DISTNAME=	quadkonsole-2.0
-REVISION=	11
+REVISION=	12
 CATEGORIES=	x11 x11/kde
 
 MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
@@ -13,9 +13,10 @@ PERMIT_PACKAGE_CDROM=  Yes
 
 WANTLIB =  ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 c
 WANTLIB += expat fam fontconfig freetype idn m png pthread
-WANTLIB += pthread-stubs stdc++ util xcb z
+WANTLIB += pthread-stubs util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kparts ${KDE}/kwalletclient
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://nomis80.org/quadkonsole/
 

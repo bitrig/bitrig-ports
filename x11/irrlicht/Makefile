@@ -2,6 +2,7 @@
 
 COMMENT =		fast, real time 3D engine
 DISTNAME =		irrlicht-1.8
+REVISION =		0
 
 SO_VERSION =		1.0
 SHARED_LIBS =		Irrlicht ${SO_VERSION}
@@ -15,7 +16,8 @@ MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 # BSD-style (zlib/libpng)
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += 		GL Xxf86vm bz2 jpeg m png stdc++>=51.0 z
+WANTLIB += 		GL Xxf86vm bz2 jpeg m png z
+WANTLIB += 		c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=irrlicht/}
 

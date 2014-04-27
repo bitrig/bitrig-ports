@@ -5,6 +5,7 @@ COMMENT =		template and text document library for Qt
 PKG_VERSION =		0.3.0
 PLIST_VERSION =		${PKG_VERSION:R}
 DISTNAME =		grantlee-${PKG_VERSION}
+REVISION =		0
 CATEGORIES =		devel x11
 HOMEPAGE =		http://www.gitorious.org/grantlee/
 
@@ -17,8 +18,9 @@ PERMIT_PACKAGE_CDROM =	Yes
 MASTER_SITES =		http://downloads.grantlee.org/ \
 			http://www.loegria.net/grantlee/
 
-WANTLIB =		c m stdc++ pthread
+WANTLIB =		c m pthread
 WANTLIB +=		lib/qt4/QtGui lib/qt4/QtScript
+WANTLIB +=		c++ c++abi
 
 MODULES =		devel/cmake x11/qt4
 

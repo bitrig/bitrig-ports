@@ -3,6 +3,7 @@
 COMMENT =	KDE 4 bindings for Python
 DISTNAME =	pykde4-${MODKDE4_VERSION}
 PKGNAME =	py-kde-${MODKDE4_VERSION}
+REVISION =	0
 
 MODULES =	lang/python
 
@@ -11,7 +12,7 @@ MODULES =	lang/python
 # /usr/local/include/kconfig.h:387: warning: 'virtual const KConfigGroup KConfig::groupImpl(const QByteArray&) const' was hidden
 # /usr/ports/pobj/py-kde-4.9.0/build-i386/sip/kdecore/sipkdecorepart6.cpp:19561: warning:   by 'virtual KConfigGroup sipKConfig::groupImpl(const QByteArray&)'
 
-WANTLIB =  m pthread stdc++
+WANTLIB =  m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kcmutils ${KDE4LIB}/kdeui ${KDE4LIB}/kdnssd
@@ -24,6 +25,7 @@ WANTLIB += ${KDE4LIB}/nepomukutils ${KDE4LIB}/phonon_s ${KDE4LIB}/plasma
 WANTLIB += ${KDE4LIB}/solid
 WANTLIB += ${KDE4LIB}/akonadi-kde ${KDE4LIB}/akonadi-kmime
 WANTLIB += ${MODPY_WANTLIB} soprano sopranoclient sopranoserver
+WANTLIB += c++ c++abi
 
 MODKDE4_USE =	pim libs
 

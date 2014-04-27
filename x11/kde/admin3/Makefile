@@ -15,15 +15,16 @@ LIB_DEPENDS =	x11/kde/libs3
 
 SEPARATE_BUILD =	flavored
 
-REVISION =	12
+REVISION =	13
 
-WANTLIB =  c expat m pthread pthread-stubs stdc++ util z
+WANTLIB =  c expat m pthread pthread-stubs util z
 WANTLIB += ICE SM X11 Xext Xfixes Xrender Xt fontconfig freetype xcb
 WANTLIB += ${KDE}/DCOP ${KDE}/kabc ${KDE}/kdecore>=6 ${KDE}/kdefx
 WANTLIB += ${KDE}/kdeprint ${KDE}/kdesu ${KDE}/kdeui ${KDE}/kio
 WANTLIB += ${KDE}/kntlm ${KDE}/kparts ${KDE}/kresources
 WANTLIB += ${KDE}/kwalletclient ${KDE}/vcard
 WANTLIB += art_lgpl_2 fam idn png
+WANTLIB += c++ c++abi
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${MODKDE_HTML_SUBDIR}/en/common

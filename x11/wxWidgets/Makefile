@@ -9,8 +9,8 @@ V =		2.8.12
 DISTNAME =	wxWidgets-${V}
 PKGNAME-main =	wxWidgets-gtk2-${V}
 PKGNAME-media =	wxWidgets-media-${V}
-REVISION-main =	9
-REVISION-media =5
+REVISION-main =	10
+REVISION-media =6
 CATEGORIES =	x11
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=wxwindows/}
 
@@ -48,7 +48,8 @@ WANTLIB += Xi Xinerama Xrandr Xrender Xxf86vm atk-1.0 expat
 WANTLIB += fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0
 WANTLIB += glib-2.0 gobject-2.0 gthread-2.0 gtk-x11-2.0
 WANTLIB += jpeg m pango-1.0 pangoft2-1.0 pixman-1 png pthread
-WANTLIB += pthread-stubs stdc++ tiff xcb xcb-render xcb-shm z
+WANTLIB += pthread-stubs tiff xcb xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MODULES	=	devel/gettext
 

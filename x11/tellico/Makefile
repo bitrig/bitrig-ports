@@ -3,7 +3,7 @@
 COMMENT=	organizer for book/dvd/music collections
 
 DISTNAME=	tellico-1.3.6
-REVISION=	11
+REVISION=	12
 
 CATEGORIES=	x11 databases
 
@@ -17,7 +17,7 @@ WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c drm exempi expat
 WANTLIB += exslt fam fontconfig freetype gcrypt gpg-error idn jpeg
 WANTLIB += lcms lcms2 m mng openjpeg pcre pcreposix png poppler
-WANTLIB += poppler-qt>=3 pthread stdc++ tag tiff util xcb xml2 xslt
+WANTLIB += poppler-qt>=3 pthread tag tiff util xcb xml2 xslt
 WANTLIB += yaz z
 WANTLIB += ${KDE}/DCOP ${KDE}/kabc ${KDE}/kcal ${KDE}/kcddb
 WANTLIB += ${KDE}/kdecore>=6 ${KDE}/kdefx ${KDE}/kdeprint ${KDE}/kdesu
@@ -25,6 +25,7 @@ WANTLIB += ${KDE}/kdeui ${KDE}/khtml ${KDE}/kio ${KDE}/kjs
 WANTLIB += ${KDE}/kmime ${KDE}/knewstuff ${KDE}/kparts
 WANTLIB += ${KDE}/kresources ${KDE}/ktnef ${KDE}/kutils
 WANTLIB += ${KDE}/kwalletclient ${KDE}/vcard
+WANTLIB += c++ c++abi
 
 MODULES=	x11/kde \
 		lang/python \

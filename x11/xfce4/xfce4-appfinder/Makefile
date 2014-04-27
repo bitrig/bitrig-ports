@@ -3,7 +3,7 @@
 COMMENT=	Xfce4 application finder
 
 XFCE_PROJECT=	xfce4-appfinder
-REVISION=	0
+REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
@@ -27,6 +27,7 @@ WANTLIB=	X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes \
 		pthread-stubs xcb X11-xcb ffi \
 		xcb-util gthread-2.0 xcb-render xcb-shm \
 		xfconf-0 gdk-x11-2.0 GL Xxf86vm drm garcon-1 \
-		gdk_pixbuf-2.0 gtk-x11-2.0 stdc++ harfbuzz
+		gdk_pixbuf-2.0 gtk-x11-2.0 harfbuzz
+WANTLIB +=	c++ c++abi
 
 .include <bsd.port.mk>

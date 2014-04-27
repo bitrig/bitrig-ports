@@ -2,10 +2,11 @@
 
 COMMENT =	world maps
 DISTNAME =	marble-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	marblewidget		51.0 # 0.12
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtDeclarative lib/qt4/QtGui
 WANTLIB += lib/qt4/QtNetwork lib/qt4/QtScript lib/qt4/QtSql
 WANTLIB += lib/qt4/QtSvg lib/qt4/QtWebKit lib/qt4/QtXml
@@ -13,6 +14,7 @@ WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kio ${KDE4LIB}/knewstuff3
 WANTLIB += ${KDE4LIB}/kparts ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += ${KDE4LIB}/plasma
 WANTLIB += gps quazip shp soprano
+WANTLIB += c++ c++abi
 
 # TODO split non-KDE4 parts off
 

@@ -4,7 +4,7 @@ COMMENT =		Mac OS-X style lightweight application launcher
 
 DISTNAME =		wbar-2.3.4
 EXTRACT_SUFX =		.tgz
-REVISION =		2
+REVISION =		3
 
 CATEGORIES=		x11
 
@@ -13,7 +13,8 @@ HOMEPAGE=		https://code.google.com/p/wbar/
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += Imlib2 X11 Xext c freetype m stdc++ z
+WANTLIB += Imlib2 X11 Xext c freetype m z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		https://wbar.googlecode.com/files/
 

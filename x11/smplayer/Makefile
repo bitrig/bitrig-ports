@@ -3,6 +3,7 @@
 COMMENT =		complete front-end for MPlayer
 
 DISTNAME =		smplayer-0.8.6
+REVISION =		0
 
 CATEGORIES =		multimedia x11
 
@@ -13,9 +14,10 @@ MAINTAINER =		Edd Barrett <edd@openbsd.org>
 # GPLv2 (docs/en/gpl.html)
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += ICE QtGui QtNetwork QtScript QtXml SM X11 Xext Xi Xinerama
-WANTLIB += Xrender c fontconfig freetype m pthread stdc++ z
+WANTLIB += Xrender c fontconfig freetype m z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=smplayer/}
 

@@ -6,7 +6,7 @@ COMMENT=	GNOME panel
 
 GNOME_PROJECT=	gnome-panel
 GNOME_VERSION=	3.6.2
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS=	panel-applet-4            1.1 # 1.1
 
@@ -29,10 +29,11 @@ WANTLIB += gtk-3 gweather-3 ical icalss icalvcal krb5 m nspr4
 WANTLIB += nss3 pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB += plc4 plds4 png polkit-gobject-1 pthread pthread-stubs
 WANTLIB += rsvg-2 smime3 softokn3 soup-2.4 soup-gnome-2.4 sqlite3
-WANTLIB += ssl3 startup-notification-1 stdc++ telepathy-glib wnck-3
+WANTLIB += ssl3 startup-notification-1 telepathy-glib wnck-3
 WANTLIB += xcb xcb-aux xcb-render xcb-shm xml2 z
 WANTLIB += atk-bridge-2.0 atspi gck-1 gconf-2 gcr-base-3 harfbuzz
 WANTLIB += icudata icule icuuc nssutil3 p11-kit xkbfile
+WANTLIB += c++ c++abi
 
 MODULES=	devel/dconf \
 		devel/gettext \

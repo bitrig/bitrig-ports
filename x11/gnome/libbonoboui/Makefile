@@ -4,7 +4,7 @@ COMMENT=	user interface components for bonobo
 
 GNOME_PROJECT=	libbonoboui
 GNOME_VERSION=	2.24.5
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS +=	bonoboui-2	3.0        # .0.0
 
@@ -21,8 +21,9 @@ WANTLIB += gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glade-2.0 popt
 WANTLIB += glib-2.0 gmodule-2.0 gnomevfs-2 gobject-2.0 gthread-2.0
 WANTLIB += gtk-x11-2.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png pthread pthread-stubs ssl util xcb
-WANTLIB += xml2 z xcb-render gnome-2 gnomecanvas-2 ffi stdc++
+WANTLIB += xml2 z xcb-render gnome-2 gnomecanvas-2 ffi
 WANTLIB += canberra ltdl ogg vorbis vorbisfile GL Xxf86vm drm xcb-shm
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		x11/gnome

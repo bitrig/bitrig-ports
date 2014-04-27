@@ -26,7 +26,7 @@ LIB_DEPENDS-mono =
 
 SEPARATE_BUILD =	flavored
 
-REVISION-main =	17
+REVISION-main =	18
 
 WANTLIB =	GL FLAC ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi
 WANTLIB +=	Xinerama Xmu Xrandr Xrender Xt Xtst Xxf86vm art_lgpl_2
@@ -38,8 +38,9 @@ WANTLIB +=	lib/kde3/kdeprint lib/kde3/kdesu lib/kde3/kdeui lib/kde3/kio
 WANTLIB +=	lib/kde3/kparts lib/kde3/kresources lib/kde3/kspell
 WANTLIB +=	lib/kde3/ktexteditor lib/kde3/kutils lib/kde3/kwalletclient
 WANTLIB +=	lib/kde3/vcard m mad mcop mng ogg pcre png pthread
-WANTLIB +=	pthread-stubs qtmcop sndio soundserver_idl stdc++ util
+WANTLIB +=	pthread-stubs qtmcop sndio soundserver_idl util
 WANTLIB +=	vorbis vorbisenc vorbisfile xcb z
+WANTLIB +=	c++ c++abi
 WANTLIB-mono =
 
 post-install:

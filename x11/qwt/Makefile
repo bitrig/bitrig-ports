@@ -7,7 +7,7 @@ DISTNAME =		qwt-5.2.1
 SHARED_LIBS =		qwt 6.0
 CATEGORIES =		x11
 EXTRACT_SUFX =		.tar.bz2
-REVISION =		2
+REVISION =		3
 
 HOMEPAGE =		http://qwt.sourceforge.net/
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=qwt/}
@@ -23,7 +23,8 @@ USE_GMAKE =		Yes
 MAKE_FLAGS =		LIBqwt_VERSION=${LIBqwt_VERSION}
 
 WANTLIB +=	ICE QtDesigner QtGui QtScript QtXml SM X11 Xext Xi
-WANTLIB +=	Xinerama Xrender fontconfig freetype m pthread stdc++
+WANTLIB +=	Xinerama Xrender fontconfig freetype m pthread
+WANTLIB +=	c++ c++abi
 
 # svgmap example not included to prevent the need of svg dependencies
 EXAMPLES =	bode realtime_plot cpuplot dials radio event_filter \

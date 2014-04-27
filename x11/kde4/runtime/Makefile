@@ -6,7 +6,7 @@ DISTNAME =		kde-runtime-${MODKDE4_VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-locale =	kde4-locale-${MODKDE4_VERSION}
 PKG_ARCH-locale =	*
-REVISION-main =		1
+REVISION-main =		2
 
 DPB_PROPERTIES =	parallel
 
@@ -19,7 +19,7 @@ SHARED_LIBS +=	kdeinit4_khelpcenter	51.0
 SHARED_LIBS +=	kdeinit4_kuiserver 	51.0
 SHARED_LIBS +=	kdeinit4_kwalletd 	51.0
 
-WANTLIB-main =  ${WANTLIB} c m pthread stdc++ util
+WANTLIB-main =  ${WANTLIB} c m pthread util
 WANTLIB-main += Half ICE Iex IlmImf IlmThread Imath SM X11 Xcursor Xext
 WANTLIB-main += lib/qt4/QtDBus lib/qt4/QtDeclarative lib/qt4/QtGui
 WANTLIB-main += lib/qt4/QtNetwork lib/qt4/QtScript lib/qt4/QtSvg
@@ -36,6 +36,7 @@ WANTLIB-main += ${KDE4LIB}/nepomukcore ${KDE4LIB}/nepomukutils
 WANTLIB-main += ${KDE4LIB}/plasma ${KDE4LIB}/solid
 WANTLIB-main += attica canberra exiv2 glib-2.0 jpeg pulse
 WANTLIB-main += pulse-mainloop-glib smbclient ssh soprano webp
+WANTLIB-main += c++ c++abi
 WANTLIB-locale =
 
 MULTI_PACKAGES =	-main -locale

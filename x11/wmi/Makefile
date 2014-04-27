@@ -3,7 +3,7 @@
 COMMENT=	window manager improved - key driven window manager
 
 DISTNAME=	wmi-10
-REVISION=	4
+REVISION=	5
 CATEGORIES=	x11
 
 HOMEPAGE=	http://wmi.suckless.org/
@@ -14,7 +14,8 @@ MAINTAINER=	Julian Frede <julian.frede@gmail.com>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += ICE SM X11 Xau Xdmcp Xft Xrender c expat fontconfig
-WANTLIB += freetype m stdc++ z pthread-stubs xcb
+WANTLIB += freetype m z pthread-stubs xcb
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	http://code.suckless.org/dl/misc/
 

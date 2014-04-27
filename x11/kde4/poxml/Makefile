@@ -2,12 +2,14 @@
 
 COMMENT =	convert PO files to XML
 DISTNAME =	poxml-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/poxml
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtXml
+WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext
 MODKDE4_USE =	libs

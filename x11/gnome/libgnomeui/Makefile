@@ -4,7 +4,7 @@ COMMENT=		user interface components for GNOME
 
 GNOME_PROJECT=		libgnomeui
 GNOME_VERSION=		2.24.5
-REVISION=		5
+REVISION=		6
 
 SHARED_LIBS +=	gnomeui-2      2400.0         # .2400.2
 
@@ -23,7 +23,8 @@ WANTLIB += gtk-x11-2.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png popt pthread-stubs ssl util xcb xml2
 WANTLIB += gcrypt gpg-error xcb-render GL Xxf86vm drm xcb-shm
 WANTLIB += gnome-keyring>=6 gnome-2 gnomecanvas-2 bonoboui-2
-WANTLIB += canberra ltdl ogg vorbis vorbisfile z ffi stdc++
+WANTLIB += canberra ltdl ogg vorbis vorbisfile z ffi
+WANTLIB += c++ c++abi pthread
 
 MODULES=	devel/gettext \
 		x11/gnome

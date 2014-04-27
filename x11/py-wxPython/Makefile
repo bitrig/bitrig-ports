@@ -25,7 +25,8 @@ LIB_DEPENDS=    x11/wxWidgets>=2.8.12
 WANTLIB +=	wx_gtk2_aui wx_gtk2_richtext wx_gtk2_gizmos wx_gtk2_stc \
 		wx_base_xml wx_gtk2_qa wx_base_odbc wx_gtk2_html \
 		wx_gtk2_gl wx_base wx_gtk2_adv wx_gtk2_xrc wx_gtk2_core \
-		wx_base_net wx_gtk2_dbgrid m pthread stdc++ ${MODPY_WANTLIB}
+		wx_base_net wx_gtk2_dbgrid m pthread ${MODPY_WANTLIB}
+WANTLIB +=	c++ c++abi
 
 WRKSRC=		${WRKDIST}/wxPython
 

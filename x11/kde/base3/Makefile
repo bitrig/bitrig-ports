@@ -13,8 +13,8 @@ PKGNAME-en_US =		kde3-locale-en_US-${VERSION}
 PKGNAME-locale =	kde3-locale-${VERSION}
 PKG_ARCH-en_US =	*
 PKG_ARCH-locale =	*
-REVISION-main =		34
-REVISION-samba =	12
+REVISION-main =		35
+REVISION-samba =	13
 REVISION-en_US =	0
 REVISION-locale =	0
 
@@ -64,7 +64,8 @@ LIB_DEPENDS-samba =	${LIB_DEPENDS} \
 WANTLIB = ICE SM X11 Xext Xrender art_lgpl_2 idn \
 	lib/kde3/DCOP lib/kde3/kdecore>=6 lib/kde3/kdefx lib/kde3/kdesu \
 	lib/kde3/kdeui lib/kde3/kio lib/kde3/kwalletclient m png \
-	stdc++ util xcb z fam pthread-stubs
+	util xcb z fam pthread-stubs
+WANTLIB+= c++ c++abi pthread
 
 WANTLIB-main = ${WANTLIB} GL GLU Half Iex IlmImf IlmThread Imath Xcomposite \
 	Xcursor Xdamage Xdamage Xfixes Xfixes Xft Xi Xinerama Xmu Xrandr Xss \

@@ -7,16 +7,18 @@ DISTNAME =	libkipi-${MODKDE4_VERSION}
 PKGNAME-main =	${DISTNAME}
 PKGNAME-icons =	kde4-libkipi-icons-${MODKDE4_VERSION}
 PKGSPEC-main =	libkipi->=4,<5
+REVISION-main =	0
 
 SHARED_LIBS =	kipi		50.1
 
 WANTLIB-icons =
-WANTLIB-main =  ${WANTLIB} c m pthread stdc++
+WANTLIB-main =  ${WANTLIB} c m pthread
 WANTLIB-main += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB-main += lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB-main += ${KDE4LIB}/kdeui ${KDE4LIB}/kio ${KDE4LIB}/kfile
 WANTLIB-main += ${KDE4LIB}/kparts ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB-main += soprano
+WANTLIB-main += c++ c++abi
 
 MULTI_PACKAGES =	-main -icons
 

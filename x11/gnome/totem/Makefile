@@ -6,7 +6,7 @@ COMMENT=		official media player for GNOME
 
 GNOME_PROJECT=		totem
 GNOME_VERSION=		3.12.0
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  totem                0.0      # unknown
 
@@ -26,8 +26,9 @@ WANTLIB += gstbase-1.0 gstpbutils-1.0 gstreamer-1.0 gsttag-1.0
 WANTLIB += gstvideo-1.0 gthread-2.0 gtk-3 harfbuzz json-glib-1.0
 WANTLIB += lzma m nautilus-extension orc-0.4 pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre peas-1.0 peas-gtk-1.0 pixman-1 png
-WANTLIB += pthread pthread-stubs soup-2.4 sqlite3 stdc++ totem-plparser
+WANTLIB += pthread pthread-stubs soup-2.4 sqlite3 totem-plparser
 WANTLIB += totem-plparser-mini xcb xcb-render xcb-shm xml2 z zeitgeist-2.0
+WANTLIB += c++ c++abi
 
 MODULES=		devel/dconf \
 			devel/gettext \

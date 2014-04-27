@@ -2,6 +2,7 @@
 
 COMMENT =	KDE base applications
 DISTNAME =	kde-baseapps-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	konq			51.0	# 6.0
 SHARED_LIBS +=	konqsidebarplugin	51.0	# 4.0
@@ -9,7 +10,7 @@ SHARED_LIBS +=	dolphinprivate		51.0	# 1.0
 SHARED_LIBS +=	konquerorprivate	51.0	# 4.0
 SHARED_LIBS +=	kbookmarkmodel_private	51.0	# 4.7
 
-WANTLIB =  c m pthread stdc++ z
+WANTLIB =  c m pthread z
 WANTLIB += ICE SM X11 Xext Xt Xrender
 WANTLIB += lib/qt4/Qt3Support lib/qt4/QtDBus lib/qt4/QtGui
 WANTLIB += lib/qt4/QtNetwork lib/qt4/QtScript lib/qt4/QtSql lib/qt4/QtSvg
@@ -21,6 +22,7 @@ WANTLIB += ${KDE4LIB}/kparts ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukcore
 WANTLIB += ${KDE4LIB}/nepomukutils ${KDE4LIB}/nepomukwidgets ${KDE4LIB}/plasma
 WANTLIB += ${KDE4LIB}/solid
 WANTLIB += glib-2.0 soprano tidyp
+WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 

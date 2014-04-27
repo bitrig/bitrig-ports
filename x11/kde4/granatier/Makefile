@@ -2,10 +2,12 @@
 
 COMMENT =	bomberman clone game for KDE
 DISTNAME =	granatier-${MODKDE4_VERSION}
+REVISION =	0
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/knewstuff3
+WANTLIB += c++ c++abi
 
 MODKDE4_USE =	games
 

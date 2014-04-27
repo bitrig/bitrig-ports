@@ -5,7 +5,7 @@ CATEGORIES=	x11 x11/kde
 DISTNAME=	kmplayer-0.6.4
 EXTRACT_SUFX=	.tar.bz2
 
-REVISION=	9
+REVISION=	10
 
 SHARED_LIBS=	kparts_kmplayer  0.0 \
 		kdeinit_kmplayer 0.0
@@ -40,12 +40,13 @@ PERMIT_PACKAGE_CDROM=Yes
 WANTLIB =  ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 audiofile c
 WANTLIB += expat fam fontconfig freetype glib-2.0 gmodule-2.0
 WANTLIB += gthread-2.0 idn m mad mcop ogg pcre png pthread sndio
-WANTLIB += stdc++ util vorbis vorbisenc vorbisfile xcb z
+WANTLIB += util vorbis vorbisenc vorbisfile xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/artsflow ${KDE}/artsflow_idl
 WANTLIB += ${KDE}/artskde ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kmedia2_idl
 WANTLIB += ${KDE}/kmediaplayer ${KDE}/kparts ${KDE}/kwalletclient
 WANTLIB += ${KDE}/qtmcop ${KDE}/soundserver_idl
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=x11/kde/libs3
 

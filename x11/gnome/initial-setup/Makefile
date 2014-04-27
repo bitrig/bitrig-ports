@@ -4,7 +4,7 @@ COMMENT=		initial-setup firstboot-like tool
 
 GNOME_PROJECT=		gnome-initial-setup
 GNOME_VERSION=		3.12.0
-REVISION=		0
+REVISION=		1
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
@@ -23,8 +23,9 @@ WANTLIB += icui18n icuuc javascriptcoregtk-3.0 jpeg json-glib-1.0 krb5
 WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB += png polkit-gobject-1 pthread pthread-stubs pwquality
 WANTLIB += rest-0.7 roken secret-1 soup-2.4 soup-gnome-2.4 sqlite3
-WANTLIB += stdc++ telepathy-glib webkitgtk-3.0 webp wind xcb xcb-render
+WANTLIB += telepathy-glib webkitgtk-3.0 webp wind xcb xcb-render
 WANTLIB += xcb-shm xml2 xslt z orc-0.4
+WANTLIB += c++ c++abi
 
 MODULES=		x11/gnome \
 			devel/dconf \

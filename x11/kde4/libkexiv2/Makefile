@@ -4,13 +4,15 @@ COMMENT =	KDE exiv2 wrapper
 CATEGORIES =	graphics devel
 DISTNAME =	libkexiv2-${MODKDE4_VERSION}
 PKGSPEC =	libkexiv2->=4,<5
+REVISION =	0
 
 SHARED_LIBS =	kexiv2			50.0	# 10.0
 
-WANTLIB =  m pthread stdc++
+WANTLIB =  m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui
 WANTLIB += exiv2
+WANTLIB += c++ c++abi
 
 MODKDE4_USE =	libs
 

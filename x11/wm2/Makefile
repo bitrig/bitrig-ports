@@ -3,7 +3,7 @@
 COMMENT=		stylish window manager
 
 DISTNAME=		wm2-4
-REVISION=		0
+REVISION=		1
 CATEGORIES=		x11
 
 HOMEPAGE=		http://www.all-day-breakfast.com/wm2/
@@ -11,7 +11,8 @@ HOMEPAGE=		http://www.all-day-breakfast.com/wm2/
 # X11/MIT
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		X11 Xext Xau Xdmcp c m stdc++
+WANTLIB=		X11 Xext Xau Xdmcp c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES=		http://www.all-day-breakfast.com/wm2/
 

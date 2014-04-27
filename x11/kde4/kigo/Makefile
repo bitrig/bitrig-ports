@@ -2,12 +2,14 @@
 
 COMMENT =	Go implementation for KDE
 DISTNAME =	kigo-${MODKDE4_VERSION}
+REVISION =	0
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdegamesprivate ${KDE4LIB}/knewstuff3
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kio
+WANTLIB += c++ c++abi
 
 MODKDE4_USE =	games
 

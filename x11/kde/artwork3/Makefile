@@ -8,7 +8,7 @@ DISTNAME =		kdeartwork-${VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-emoticons =	kde-emoticons-${VERSION}
 PKGSPEC-main =		kdeartwork->=3,<4
-REVISION-main =		16
+REVISION-main =		17
 
 MODULES =		x11/kde devel/gettext
 MODKDE_VERSION =	3.5.8
@@ -36,8 +36,9 @@ WANTLIB +=	gthread-2.0 idn kmedia2_idl kwalletclient lib/kde3/DCOP
 WANTLIB +=	lib/kde3/kdecorations lib/kde3/kdecore>=6 lib/kde3/kdefx
 WANTLIB +=	lib/kde3/kdesu lib/kde3/kdeui lib/kde3/kio lib/kde3/kparts
 WANTLIB +=	lib/kde3/kscreensaver m mad mcop ogg pcre png pthread
-WANTLIB +=	pthread-stubs qtmcop sndio soundserver_idl stdc++
+WANTLIB +=	pthread-stubs qtmcop sndio soundserver_idl
 WANTLIB +=	util vorbis vorbisenc vorbisfile xcb z
+WANTLIB +=	c++ c++abi
 
 
 .include <bsd.port.mk>

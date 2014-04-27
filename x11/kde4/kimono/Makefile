@@ -3,6 +3,7 @@
 CATEGORIES =	devel
 COMMENT =	KDE bindings for .NET
 DISTNAME =	kimono-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kimono			51.0 # 2.0
 SHARED_LIBS +=	akonadi-sharp		51.0
@@ -12,7 +13,7 @@ SHARED_LIBS +=	nepomuk-sharp		51.0
 SHARED_LIBS +=	plasma-sharp		51.0
 SHARED_LIBS +=	soprano-sharp		51.0
 
-WANTLIB =  m pthread stdc++
+WANTLIB =  m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB += lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/akonadi-kde ${KDE4LIB}/akonadi-kmime
@@ -33,6 +34,7 @@ WANTLIB += ${KDE4LIB}/smokeqtopengl ${KDE4LIB}/smokeqtsql
 WANTLIB += ${KDE4LIB}/smokeqtsvg ${KDE4LIB}/smokeqtxml
 WANTLIB += ${KDE4LIB}/smokesoprano
 WANTLIB += gc mono-2.0 soprano sopranoclient sopranoserver sopranoindex
+WANTLIB += c++ c++abi
 
 MODULES =		lang/mono
 MODKDE4_USE =		libs

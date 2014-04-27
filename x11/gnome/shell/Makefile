@@ -4,6 +4,7 @@ COMMENT=		next generation GNOME shell
 
 GNOME_PROJECT=		gnome-shell
 GNOME_VERSION=		3.12.1
+REVISION=		0
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
@@ -24,9 +25,10 @@ WANTLIB += nssutil3 ogg p11-kit pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 plc4 plds4 png polkit-agent-1 polkit-gobject-1
 WANTLIB += pthread pthread-stubs pulse pulse-mainloop-glib readline
 WANTLIB += roken secret-1 smime3 sndfile softokn3 soup-2.4 sqlite3
-WANTLIB += ssl3 startup-notification-1 stdc++ telepathy-glib vorbis
+WANTLIB += ssl3 startup-notification-1 telepathy-glib vorbis
 WANTLIB += vorbisenc vorbisfile wind xcb xcb-util xcb-render xcb-shm
 WANTLIB += xml2 z gnome-desktop-3 upower-glib icudata icui18n icuuc
+WANTLIB += c++ c++abi
 
 MODULES=		devel/dconf \
 			devel/gettext \

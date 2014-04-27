@@ -2,7 +2,7 @@
 
 COMMENT=		tree window manager
 DISTNAME=		treewm-0.4.5
-REVISION=		0
+REVISION=		1
 CATEGORIES=		x11
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=treewm/} \
@@ -15,7 +15,8 @@ MAINTAINER=		William Yodlowsky <bsd@openbsd.rutgers.edu>
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		ICE SM X11 Xau Xdmcp Xext Xmu Xpm Xt Xxf86vm c m stdc++
+WANTLIB=		ICE SM X11 Xau Xdmcp Xext Xmu Xpm Xt Xxf86vm c m
+WANTLIB +=		c++ c++abi pthread
 
 BUILD_DEPENDS=		devel/imake
 

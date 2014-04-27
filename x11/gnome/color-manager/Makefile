@@ -4,6 +4,7 @@ COMMENT=		color profile manager for GNOME
 
 GNOME_PROJECT=		gnome-color-manager
 GNOME_VERSION=		3.12.1
+REVISION=		0
 
 CATEGORIES=		graphics
 
@@ -18,8 +19,9 @@ WANTLIB += fontconfig freetype gdk-3 gdk_pixbuf-2.0 gio-2.0 glib-2.0
 WANTLIB += gmodule-2.0 gobject-2.0 graphite2 gthread-2.0 gtk-3
 WANTLIB += harfbuzz jpeg lcms2 ltdl m ncurses ogg pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
-WANTLIB += stdc++ tiff util vorbis vorbisfile vte2_90 xcb xcb-render
+WANTLIB += tiff util vorbis vorbisfile vte2_90 xcb xcb-render
 WANTLIB += xcb-shm z
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
 			x11/gnome

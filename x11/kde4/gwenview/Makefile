@@ -2,11 +2,11 @@
 
 COMMENT =	KDE image viewer
 DISTNAME =	gwenview-${MODKDE4_VERSION}
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	gwenviewlib               50.0 # 4.7
 
-WANTLIB =  c m pthread stdc++ z
+WANTLIB =  c m pthread z
 WANTLIB += X11
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB += lib/qt4/QtSvg lib/qt4/QtXml lib/qt4/QtOpenGL
@@ -15,6 +15,7 @@ WANTLIB += ${KDE4LIB}/kio ${KDE4LIB}/kipi ${KDE4LIB}/konq ${KDE4LIB}/kparts
 WANTLIB += ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukcore
 WANTLIB += ${KDE4LIB}/nepomukutils ${KDE4LIB}/solid exiv2 jpeg lcms2
 WANTLIB += png soprano
+WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 

@@ -4,6 +4,7 @@ COMMENT=	integrated LaTeX environment for GNOME
 
 GNOME_PROJECT=	latexila
 GNOME_VERSION=	2.12.0
+REVISION=	0
 
 CATEGORIES=	editors print
 
@@ -17,7 +18,8 @@ WANTLIB += freetype gdk-3 gdk_pixbuf-2.0 gee gio-2.0 glib-2.0
 WANTLIB += gmodule-2.0 gobject-2.0 graphite2 gthread-2.0 gtk-3
 WANTLIB += gtksourceview-3.0 gtkspell3-3 harfbuzz m pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread
-WANTLIB += pthread-stubs stdc++ xcb xcb-render xcb-shm xml2 z
+WANTLIB += pthread-stubs xcb xcb-render xcb-shm xml2 z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/dconf \
 		devel/gettext \

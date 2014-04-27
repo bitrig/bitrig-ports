@@ -9,13 +9,14 @@ HOMEPAGE=	http://www.cs.unc.edu/~scheuerm/xglobe/
 MASTER_SITES=	ftp://quatramaran.ens.fr/pub/espie/
 DISTNAME=	xglobe-0.5p2
 PKGNAME=	xglobe-0.5
-REVISION=	38
+REVISION=	39
 
 MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 # GPL, included map is free
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		X11 c m pthread stdc++
+WANTLIB=		X11 c m pthread
+WANTLIB +=		c++ c++abi
 
 MODULES=		x11/qt3
 

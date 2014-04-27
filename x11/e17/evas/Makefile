@@ -4,7 +4,7 @@ COMMENT =		canvas API for X
 
 VERSION = 		1.7.9
 DISTNAME =		evas-${VERSION}
-REVISION =		0
+REVISION =		1
 EPOCH =			2
 
 SHARED_LIBS +=	evas                 3.0      # 8.6
@@ -16,8 +16,9 @@ WANTLIB += GL X11 X11-xcb Xau Xdamage Xdmcp Xext Xfixes Xrender Xxf86vm
 WANTLIB += crypto drm
 WANTLIB += eet eina expat fontconfig freetype fribidi gif glapi
 WANTLIB += glib-2.0 graphite2 harfbuzz
-WANTLIB += jpeg m pcre png pthread pthread-stubs ssl stdc++
+WANTLIB += jpeg m pcre png pthread pthread-stubs ssl
 WANTLIB += tiff xcb xcb-dri2 xcb-glx
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
 			x11/e17

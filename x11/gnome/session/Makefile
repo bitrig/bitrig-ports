@@ -4,6 +4,7 @@ COMMENT=		GNOME session
 
 GNOME_PROJECT=		gnome-session
 GNOME_VERSION=		3.12.1
+REVISION=		0
 
 CATEGORIES=		x11
 
@@ -18,8 +19,9 @@ WANTLIB += freetype gconf-2 gdk-3 gdk_pixbuf-2.0 gio-2.0 glapi
 WANTLIB += glib-2.0 gmodule-2.0 gnome-desktop-3 gobject-2.0 graphite2
 WANTLIB += gthread-2.0 gtk-3 harfbuzz json-glib-1.0 m pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread
-WANTLIB += pthread-stubs stdc++ xcb xcb-dri2 xcb-glx
+WANTLIB += pthread-stubs xcb xcb-dri2 xcb-glx
 WANTLIB += xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/dconf \
 		devel/gettext \

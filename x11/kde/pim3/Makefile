@@ -5,7 +5,7 @@ CATEGORIES =		x11 x11/kde productivity
 VERSION =		3.5.10
 DISTNAME =		kdepim-${VERSION}
 PKGSPEC =		kdepim->=3,<4
-REVISION =		18
+REVISION =		19
 
 MODKDE_VERSION =	3.5.8
 # XXX switch back to gnu libtool until the name.la vs libname.la
@@ -74,8 +74,9 @@ WANTLIB += kabc_file kdecore kdefakes kdefx kdeprint kdesu kdeui
 WANTLIB += khtml kimproxy kio kjs kmedia2_idl knewstuff kparts
 WANTLIB += kresources kspell kutils kwalletclient lcms m mad
 WANTLIB += mcop mng ogg pcre pcreposix pisock png pthread qtmcop
-WANTLIB += qui sasl2 sndio soundserver_idl stdc++ usb usb-1.0
+WANTLIB += qui sasl2 sndio soundserver_idl usb usb-1.0
 WANTLIB += util vcard vorbis vorbisenc vorbisfile xcb z
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS =	x11/kde/libs3 \
 		security/gpgme>=0.4.5 \

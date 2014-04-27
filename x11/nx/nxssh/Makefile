@@ -5,12 +5,13 @@ COMMENT=	OpenSSH client and daemon for NX
 DASH_VER=	2
 DISTNAME=	nxssh-${MAJOR_VERSION}-${DASH_VER}
 PKGNAME=	nxssh-${MAJOR_VERSION}.${DASH_VER}
-REVISION=	5
+REVISION=	6
 
 CATEGORIES=	net
 
 WANTLIB += Xcomp asn1 c com_err crypto gssapi jpeg kafs krb5 m png
-WANTLIB += heimbase roken wind stdc++ util z
+WANTLIB += heimbase roken wind util z
+WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS=	x11/nx/nxcomp
 

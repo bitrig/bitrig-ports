@@ -4,6 +4,7 @@ COMMENT= 		Telepathy based messenger for GNOME
 
 GNOME_PROJECT=		empathy
 GNOME_VERSION=		3.12.1
+REVISION=		0
 SUBST_VARS=		GNOME_VERSION
 
 CATEGORIES=		net
@@ -28,10 +29,11 @@ WANTLIB += javascriptcoregtk-3.0 jpeg json-c json-glib-1.0 ltdl
 WANTLIB += m mission-control-plugins nettle notify cogl-path
 WANTLIB += ogg orc-0.4 p11-kit pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png pthread pthread-stubs pulse pulse-mainloop-glib
-WANTLIB += secret-1 sndfile soup-2.4 soup-gnome-2.4 sqlite3 stdc++
+WANTLIB += secret-1 sndfile soup-2.4 soup-gnome-2.4 sqlite3
 WANTLIB += tasn1 telepathy-farstream telepathy-glib telepathy-logger
 WANTLIB += vorbis vorbisenc vorbisfile webkitgtk-3.0 webp xcb
 WANTLIB += xcb-render xcb-shm xml2 xslt z zeitgeist-2.0
+WANTLIB += c++ c++abi
 
 MODULES=		devel/dconf \
 			devel/gettext \

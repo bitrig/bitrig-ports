@@ -3,7 +3,7 @@
 COMMENT=	small and fast window manager
 
 DISTNAME=	icewm-1.3.8
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11	
 
 HOMEPAGE=	http://www.icewm.org/
@@ -13,7 +13,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += ICE SM X11 Xext Xft Xinerama Xrandr Xrender c fontconfig
 WANTLIB += freetype gdk_pixbuf-2.0 gdk_pixbuf_xlib-2.0 glib-2.0
-WANTLIB += gmodule-2.0 gobject-2.0 m pthread stdc++ z
+WANTLIB += gmodule-2.0 gobject-2.0 m pthread z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=icewm/}
 

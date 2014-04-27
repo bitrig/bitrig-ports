@@ -3,7 +3,7 @@
 COMMENT=		office suite for KDE
 
 VERSION=		1.6.3
-REVISION =		34
+REVISION =		35
 CATEGORIES=		x11 x11/kde productivity
 MASTER_SITES?=		${MASTER_SITE_KDE:S@$@stable/koffice-${VERSION}/src/@}
 
@@ -109,10 +109,11 @@ WANTLIB= GL GLU GraphicsMagick>=1 Half ICE Iex IlmImf IlmThread Imath \
 	lib/kde3/ktexteditor lib/kde3/kutils lib/kde3/kwalletclient \
 	lib/kde3/vcard m mad mcop mng mysqlclient ogg openjpeg pcre \
 	pcreposix png poppler poppler-qt pq pqxx pthread \
-	qtmcop readline sndio soundserver_idl ssl stdc++ \
+	qtmcop readline sndio soundserver_idl ssl \
 	termcap tiff util vorbis vorbisenc vorbisfile wpd-0.8 \
 	wv2 xcb xml2 xslt z djvulibre ffi fftw3 lcms2 lzma wmf-0.2 wmflite-0.2 \
 	${MODPY_WANTLIB} ${MODRUBY_WANTLIB}
+WANTLIB+= c++ c++abi
 
 CONFIGURE_ARGS+= --with-pgsqlincdir=${LOCALBASE}/include/postgresql
 

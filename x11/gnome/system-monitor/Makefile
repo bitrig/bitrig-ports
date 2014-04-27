@@ -4,6 +4,7 @@ COMMENT=	sytem monitor for GNOME
 
 GNOME_PROJECT=	gnome-system-monitor
 GNOME_VERSION=	3.12.1
+REVISION=	0
 
 CATEGORIES=	sysutils
 
@@ -18,8 +19,9 @@ WANTLIB += gdkmm-3.0 gio-2.0 giomm-2.4 glib-2.0 glibmm-2.4 gmodule-2.0
 WANTLIB += gobject-2.0 graphite2 gthread-2.0 gtk-3 gtkmm-3.0 gtop-2.0
 WANTLIB += harfbuzz kvm m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pangomm-1.4 pcre pixman-1 png pthread pthread-stubs
-WANTLIB += rsvg-2 sigc-2.0 stdc++ xcb xcb-render xcb-shm xml2
+WANTLIB += rsvg-2 sigc-2.0 xcb xcb-render xcb-shm xml2
 WANTLIB += z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/dconf \
 		devel/gettext \

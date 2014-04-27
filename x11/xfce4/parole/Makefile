@@ -4,7 +4,7 @@ COMMENT =	Xfce4 media player
 
 XFCE_VERSION =	0.5.4
 XFCE_GOODIE =	parole
-REVISION =	0
+REVISION =	1
 CATEGORIES +=	audio
 
 # GPLv2
@@ -33,11 +33,12 @@ WANTLIB += dbus-glib-1 expat fontconfig freetype gdk-x11-2.0
 WANTLIB += gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0
 WANTLIB += gthread-2.0 gtk-x11-2.0 m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
-WANTLIB += startup-notification-1 stdc++ xcb xcb-util
+WANTLIB += startup-notification-1 xcb xcb-util
 WANTLIB += xfce4util xml2 z notify tag tag_c xfce4ui-1
 WANTLIB += gstvideo-0.10 gstinterfaces-0.10 gstreamer-0.10 gstbase-0.10
 WANTLIB += gstaudio-0.10 gstpbutils-0.10 gsttag-0.10 xfconf-0
 WANTLIB += xcb-render xcb-shm X11-xcb ffi graphite2
 WANTLIB += harfbuzz orc-0.4
+WANTLIB += c++ c++abi
 
 .include <bsd.port.mk>

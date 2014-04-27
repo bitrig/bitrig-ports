@@ -4,7 +4,7 @@ COMMENT =	OpenGL window and compositing manager
 
 V =		0.8.8
 DISTNAME =	compiz-${V}
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	decoration	1.0
 
@@ -18,8 +18,9 @@ WANTLIB +=	GL GLU ICE SM X11 X11-xcb XRes Xau Xcomposite Xcursor \
 		gio-2.0 glapi glib-2.0 gmodule-2.0 gobject-2.0 graphite2 \
 		gthread-2.0 gtk-x11-2.0 harfbuzz m pango-1.0 pangocairo-1.0 \
 		pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs \
-		rsvg-2 startup-notification-1 stdc++ wnck-1 xcb xcb-util \
+		rsvg-2 startup-notification-1 wnck-1 xcb xcb-util \
 		xcb-dri2 xcb-glx xcb-render xcb-shm xml2 xslt z
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =	http://releases.compiz.org/${V}/
 

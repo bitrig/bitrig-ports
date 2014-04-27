@@ -5,6 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	personal search and metasearch
 
 DISTNAME=	pinot-1.06
+REVISION=	0
 
 SHARED_LIBS +=  xapianbackend             0.0 # 1.0
 
@@ -24,8 +25,9 @@ WANTLIB += glib-2.0 glibmm-2.4 gmime-2.6 gmodule-2.0 gobject-2.0
 WANTLIB += graphite2 gthread-2.0 gtk-3 gtkmm-3.0 harfbuzz idn
 WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0 pangomm-1.4
 WANTLIB += pcre pixman-1 png pthread pthread-stubs sigc-2.0 sqlite3
-WANTLIB += ssl stdc++ tag textcat xapian xcb xcb-render xcb-shm
+WANTLIB += ssl tag textcat xapian xcb xcb-render xcb-shm
 WANTLIB += xml++-2.6 xml2 z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	https://pinot-search.googlecode.com/files/
 

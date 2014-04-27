@@ -14,7 +14,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=blackboxwm/}
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += X11 Xext Xft Xrender c expat fontconfig freetype m
-WANTLIB += pthread-stubs stdc++ xcb z
+WANTLIB += pthread-stubs xcb z
+WANTLIB += c++ c++abi pthread
 
 MODULES=		converters/libiconv
 

@@ -11,7 +11,7 @@ PKGNAME-langlist =	kde4-langlist-${MODKDE4_VERSION}
 PKG_ARCH-en_US =	*
 PKG_ARCH-langlist =	*
 PKGSPEC-main =		kdelibs->=4
-REVISION-main =		4
+REVISION-main =		5
 
 DPB_PROPERTIES =	parallel tag:kde4
 
@@ -67,7 +67,7 @@ SHARED_LIBS +=	kdeinit4_klauncher		50.1
 
 WANTLIB-en_US =
 WANTLIB-langlist =
-WANTLIB-main += ${WANTLIB} c com_err crypto krb5 m pthread stdc++ util z
+WANTLIB-main += ${WANTLIB} c com_err crypto krb5 m pthread util z
 WANTLIB-main += Half ICE Iex IlmImf IlmThread Imath SM X11 Xau Xcursor Xdmcp
 WANTLIB-main += Xext Xfixes Xft Xpm Xrender Xss Xtst
 WANTLIB-main += lib/qt4/Qt3Support lib/qt4/QtDBus lib/qt4/QtDeclarative
@@ -79,6 +79,7 @@ WANTLIB-main += gif gssapi jasper jpeg lzma pcre pcreposix
 WANTLIB-main += png polkit-qt-core-1 qca2 soprano sopranoclient
 WANTLIB-main += streamanalyzer streams xml2 xslt
 WANTLIB-main += heimbase roken wind
+WANTLIB-main += c++ c++abi
 
 MULTI_PACKAGES =	-main -langlist -en_US
 

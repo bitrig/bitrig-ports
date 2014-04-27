@@ -5,6 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		equinox desktop library
 
 DISTNAME =		edelib-${V}
+REVISION =		0
 
 API_VER =		0.0
 .for l in edelib edelib_dbus edelib_gui
@@ -12,7 +13,8 @@ SHARED_LIBS +=		$l	${API_VER}
 .endfor
 
 WANTLIB += X11 Xau Xdmcp Xext Xft Xinerama c dbus-1 fltk fltk_images
-WANTLIB += fontconfig jpeg m png pthread stdc++ z
+WANTLIB += fontconfig jpeg m png pthread z
+WANTLIB += c++ c++abi
 
 MODULES =		lang/python
 BUILD_DEPENDS =		devel/jam \

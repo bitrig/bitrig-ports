@@ -9,7 +9,7 @@ V=		2.0.10
 DISTNAME=	vlc-${V}
 PKGNAME-main=	${DISTNAME}
 PKGNAME-jack=	vlc-jack-${V}
-REVISION-main=	0
+REVISION-main=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://download.videolan.org/pub/videolan/vlc/${V}/
 EXTRACT_SUFX=	.tar.xz
@@ -35,10 +35,11 @@ WANTLIB-main=	GL ICE lib/qt4/QtGui QtCore SM SDL SDL_image X11 Xcomposite \
 		gtk-x11-2.0 harfbuzz hogweed jpeg matroska nettle notify opus \
 		orc-0.4 ogg p11-kit pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre \
 		pixman-1 png postproc pthread-stubs samplerate \
-		schroedinger-1.0>=2.0 sndio speex speexdsp stdc++ swscale tag tar \
+		schroedinger-1.0>=2.0 sndio speex speexdsp swscale tag tar \
 		tasn1 tiff usbhid vorbis vorbisenc webp x264 xcb-composite \
 		xcb-keysyms xcb-randr xcb-render xcb-shape xcb-shm xcb-xfixes \
 		xcb-xv xcb xml2 z ${WANTLIB-common}
+WANTLIB +=	c++ c++abi
 WANTLIB-jack=	jack vlccore ${WANTLIB-common}
 
 AUTOCONF_VERSION= 2.69

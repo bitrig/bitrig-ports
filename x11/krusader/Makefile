@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	twin panel file manager for KDE
 
 DISTNAME=	krusader-1.80.0
-REVISION=	13
+REVISION=	14
 
 CATEGORIES=	x11 x11/kde
 
@@ -19,11 +19,12 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=krusader/}
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft
 WANTLIB += Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c drm
 WANTLIB += expat fam fontconfig freetype idn jpeg lcms m mng pcre
-WANTLIB += pcreposix png pthread pthread-stubs qui-mt stdc++ util xcb z
+WANTLIB += pcreposix png pthread pthread-stubs qui-mt util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdeprint
 WANTLIB += ${KDE}/kdesu ${KDE}/kdeui ${KDE}/khtml ${KDE}/kio
 WANTLIB += ${KDE}/kjs ${KDE}/kjsembed ${KDE}/konq ${KDE}/kparts
 WANTLIB += ${KDE}/kutils ${KDE}/kwalletclient
+WANTLIB += c++ c++abi
 
 PORTHOME=	${WRKDIR}
 

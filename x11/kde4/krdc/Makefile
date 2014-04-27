@@ -2,18 +2,20 @@
 
 COMMENT =	KDE remote desktop client
 DISTNAME =	krdc-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	network
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdenetwork/krdc
 
 SHARED_LIBS =	krdccore		51.0 # 4.11
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kcmutils ${KDE4LIB}/kdeui ${KDE4LIB}/kdnssd
 WANTLIB += ${KDE4LIB}/kfile ${KDE4LIB}/kio ${KDE4LIB}/knotifyconfig
 WANTLIB += telepathy-qt4
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS =	x11/freerdp
 

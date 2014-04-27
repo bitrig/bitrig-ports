@@ -2,13 +2,14 @@
 
 COMMENT =	download manager for KDE
 DISTNAME =	kget-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	network
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdenetwork/kget
 
 SHARED_LIBS =	kgetcore		51.0 # 4.11
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSql
 WANTLIB += lib/qt4/QtSvg lib/qt4/QtTest lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kcmutils ${KDE4LIB}/kdeui ${KDE4LIB}/khtml
@@ -19,6 +20,7 @@ WANTLIB += ${KDE4LIB}/nepomukcore ${KDE4LIB}/nepomukutils
 WANTLIB += ${KDE4LIB}/nepomukwidgets ${KDE4LIB}/plasma ${KDE4LIB}/solid
 WANTLIB += assuan gpg-error gpgme++-pthread gpgme-pthread mms
 WANTLIB += qca2 qgpgme soprano
+WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext multimedia/phonon
 MODKDE4_USE =	pim

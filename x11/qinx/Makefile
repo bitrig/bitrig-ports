@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	QNX Photon inspired theme for KDE
 
 DISTNAME=	qinx-1.4
-REVISION=	6
+REVISION=	7
 
 CATEGORIES=	x11 x11/kde
 MASTER_SITES=	http://www.usermode.org/code/
@@ -17,10 +17,11 @@ HOMEPAGE=	http://www.usermode.org/code.html
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB =  ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 expat
-WANTLIB += fontconfig freetype idn m png pthread pthread-stubs stdc++
+WANTLIB += fontconfig freetype idn m png pthread pthread-stubs
 WANTLIB += util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecorations ${KDE}/kdecore ${KDE}/kdefx
 WANTLIB += ${KDE}/kdeui
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	graphics/libart \
 		x11/kde/libs3 \

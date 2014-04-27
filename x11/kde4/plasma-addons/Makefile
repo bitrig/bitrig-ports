@@ -2,7 +2,7 @@
 
 COMMENT =	extra KDE plasmoids
 DISTNAME =	kdeplasma-addons-${MODKDE4_VERSION}
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	lancelot-datamodels		51.0 # 1.7
 SHARED_LIBS +=	lancelot			51.0 # 1.9
@@ -12,7 +12,7 @@ SHARED_LIBS +=	plasmapotdprovidercore		51.0 # 1.0
 SHARED_LIBS +=	plasmaweather			51.0 # 4.7
 SHARED_LIBS +=	rtm				51.0 # 4.7
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += ICE SM X11 Xext Xrender Xtst
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtDeclarative lib/qt4/QtGui
 WANTLIB += lib/qt4/QtNetwork lib/qt4/QtScript lib/qt4/QtSql lib/qt4/QtSvg
@@ -35,6 +35,7 @@ WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 ibus-1.0
 WANTLIB += scim-1.0
 WANTLIB += attica cln dbusmenu-qt qalculate qca2 qimageblitz qjson qoauth
 WANTLIB += qwt soprano xml2
+WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext multimedia/phonon
 

@@ -3,13 +3,14 @@
 BROKEN =	requires key dependencies update
 COMMENT =	periodic system of elements for KDE
 DISTNAME =	kalzium-${MODKDE4_VERSION}
+REVISION =	0
 
 # TODO Works, but loops forever on exit. Previously there was double free.
 
 SHARED_LIBS =	science			50.0 # 4.7
 SHARED_LIBS +=	compoundviewer		50.0 # 4.7
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus
 WANTLIB += lib/qt4/QtDeclarative lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB += lib/qt4/QtOpenGL lib/qt4/QtScript lib/qt4/QtSvg lib/qt4/QtXml
@@ -18,6 +19,7 @@ WANTLIB += ${KDE4LIB}/knewstuff3 ${KDE4LIB}/kparts
 WANTLIB += ${KDE4LIB}/kunitconversion ${KDE4LIB}/nepomuk
 WANTLIB += ${KDE4LIB}/nepomukutils ${KDE4LIB}/plasma
 WANTLIB += avogadro openbabel soprano
+WANTLIB += c++ c++abi
 
 MODULES =	x11/kde4 multimedia/phonon lang/ocaml
 

@@ -2,6 +2,7 @@
 
 COMMENT =	KDE mathematical applications
 DISTNAME =	cantor-${MODKDE4_VERSION}
+REVISION =	0
 
 # Bogus message about "backend /usr/local/bin/latex" at startup when no
 # backend is choosen on the command line.
@@ -9,7 +10,7 @@ DISTNAME =	cantor-${MODKDE4_VERSION}
 SHARED_LIBS =  cantorlibs                50.0 # 0.0
 SHARED_LIBS += cantor_config             50.0 # 0.0
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml lib/qt4/QtXmlPatterns
 WANTLIB += ${KDE4LIB}/analitza ${KDE4LIB}/analitzagui ${KDE4LIB}/analitzaplot
@@ -18,6 +19,7 @@ WANTLIB += ${KDE4LIB}/kparts ${KDE4LIB}/kpty ${KDE4LIB}/ktexteditor
 WANTLIB += ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += lib/R/lib/R lib/R/lib/Rblas lib/R/lib/Rlapack
 WANTLIB += cln gfortran glib-2.0 qalculate soprano spectre xml2
+WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext
 

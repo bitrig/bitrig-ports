@@ -15,7 +15,7 @@ SUBST_VARS += 		PREFIX CONFDIR
 # Distfiles must be hand-rolled, see README
 N =			mplayer
 DISTNAME =		mplayer-${V}
-REVISION =		3
+REVISION =		4
 EXTRACT_SUFX =		.tar.xz
 
 CATEGORIES =		x11 multimedia
@@ -30,8 +30,9 @@ WANTLIB =	EGL GL X11 Xext Xinerama Xss Xv Xxf86dga Xxf86vm ass avcodec \
 		avformat avutil bluray bz2 c cdda_interface cdda_paranoia \
 		crypto dv dvdnavmini dvdread enca fontconfig freetype \
 		fribidi jpeg m mng mp3lame ncurses ogg>=5 opus png postproc \
-		pthread SDL sndio speex stdc++ swscale gif util x264>=5 \
+		pthread SDL sndio speex swscale gif util x264>=5 \
 		xvidcore z
+WANTLIB += c++ c++abi
 
 # we use a snapshot
 MASTER_SITES =	http://comstyle.com/source/

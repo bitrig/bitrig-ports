@@ -6,7 +6,7 @@ COMMENT=	music management and playback application for GNOME
 
 GNOME_VERSION=	2.6.2
 GNOME_PROJECT=	banshee
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	audio multimedia
 
@@ -28,8 +28,9 @@ WANTLIB += gstvideo-0.10 gstvideo-1.0 gthread-2.0 gtk-x11-2.0
 WANTLIB += harfbuzz harfbuzz-icu icudata icui18n icuuc javascriptcoregtk-1.0
 WANTLIB += jpeg m orc-0.4 pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png pthread pthread-stubs secret-1 soup-2.4
-WANTLIB += soup-gnome-2.4 sqlite3 stdc++ webkitgtk-1.0 webp xcb
+WANTLIB += soup-gnome-2.4 sqlite3 webkitgtk-1.0 webp xcb
 WANTLIB += xcb-render xcb-shm xml2 xslt z
+WANTLIB += c++ c++abi
 
 MODULES=	x11/gnome \
 		lang/mono \

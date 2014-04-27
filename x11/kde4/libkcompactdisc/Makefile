@@ -3,12 +3,14 @@
 COMMENT =	KDE compact discs interface library
 CATEGORIES =	audio net devel
 DISTNAME =	libkcompactdisc-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kcompactdisc		50.0
 
-WANTLIB =  m pthread stdc++
+WANTLIB =  m pthread
 WANTLIB += lib/qt4/QtDBus
 WANTLIB += ${KDE4LIB}/solid
+WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 MODKDE4_USE =	libs

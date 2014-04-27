@@ -2,7 +2,7 @@
 
 COMMENT =	KDE personal information management
 DISTNAME =	kdepim-${MODKDE4_VERSION}
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	akonadi_next			51.0
 SHARED_LIBS +=	akregatorinterfaces		51.0
@@ -51,7 +51,7 @@ MODULES =	devel/gettext
 
 MODKDE4_USE =	pim
 
-WANTLIB =  c m pthread stdc++ z
+WANTLIB =  c m pthread z
 WANTLIB += X11 Xss
 WANTLIB += lib/qt4/Qt3Support lib/qt4/QtDBus
 WANTLIB += lib/qt4/QtGui lib/qt4/QtNetwork
@@ -78,6 +78,7 @@ WANTLIB += ${KDE4LIB}/syndication
 WANTLIB += akonadiprotocolinternals prison soprano
 WANTLIB += assuan gpg-error gpgme++ gpgme++-pthread gpgme-pthread
 WANTLIB += grantlee_core grantlee_gui link-grammar qgpgme sasl2
+WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext multimedia/phonon
 

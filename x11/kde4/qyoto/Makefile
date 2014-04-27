@@ -3,6 +3,7 @@
 CATEGORIES =	devel
 COMMENT =	Qt4 bindings for .NET/Mono
 DISTNAME =	qyoto-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	qyoto			50.0 # 2.0
 SHARED_LIBS +=	phonon-sharp		50.0
@@ -12,7 +13,7 @@ SHARED_LIBS +=	qttest-sharp		50.0
 SHARED_LIBS +=	qtuitools-sharp		50.0
 SHARED_LIBS +=	qtwebkit-sharp		50.0
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB += lib/qt4/QtScript lib/qt4/QtTest lib/qt4/QtWebKit
 WANTLIB += lib/qt4/QtXml
@@ -24,6 +25,7 @@ WANTLIB += ${KDE4LIB}/smokeqtsvg ${KDE4LIB}/smokeqtxml
 WANTLIB += ${KDE4LIB}/smokeqtscript ${KDE4LIB}/smokeqttest
 WANTLIB += ${KDE4LIB}/smokeqtuitools ${KDE4LIB}/smokeqtwebkit
 WANTLIB += qscintilla2
+WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon lang/mono
 

@@ -4,12 +4,14 @@ COMMENT =	compiz configuration system library
 
 V =		0.8.8
 DISTNAME =	libcompizconfig-${V}
+REVISION =	0
 
 SHARED_LIBS =	compizconfig	0.0 # 0.0
 
 MASTER_SITES =	http://releases.compiz.org/${V}/
 
-WANTLIB =	X11 m stdc++ xcb xml2 z
+WANTLIB =	X11 m xcb xml2 z
+WANTLIB+=	c++ c++abi pthread
 
 MODULES =	converters/libiconv \
 		textproc/intltool

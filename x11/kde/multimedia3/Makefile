@@ -3,7 +3,7 @@
 COMMENT =		K Desktop Environment, multimedia applications
 CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
-REVISION =		16
+REVISION =		17
 DISTNAME =		kdemultimedia-${VERSION}
 MODKDE_VERSION =	3.5.8
 SHARED_LIBS +=	artsbuilder          1.0      # .0.0
@@ -70,8 +70,9 @@ WANTLIB += lib/kde3/kjs lib/kde3/kmedia2_idl lib/kde3/kmediaplayer
 WANTLIB += lib/kde3/kmid lib/kde3/kparts lib/kde3/kutils
 WANTLIB += lib/kde3/kwalletclient lib/kde3/mcop lib/kde3/qtmcop
 WANTLIB += lib/kde3/soundserver_idl ltdl m mad mng ogg ossaudio pcre
-WANTLIB += pcreposix png pthread sndio stdc++ tag theora util
+WANTLIB += pcreposix png pthread sndio tag theora util
 WANTLIB += vorbis vorbisenc vorbisfile xcb xine xml2 z
+WANTLIB += c++ c++abi
 
 
 post-extract:

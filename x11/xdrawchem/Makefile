@@ -3,7 +3,7 @@
 COMMENT=	two-dimensional molecule drawing program
 
 DISTNAME=	xdrawchem-1.9.9
-REVISION=	5
+REVISION=	6
 CATEGORIES=	x11 biology
 
 HOMEPAGE=	http://xdrawchem.sourceforge.net/
@@ -15,7 +15,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xdrawchem/}
 
 WANTLIB =	GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB +=	Xmu Xrandr Xrender Xt Xxf86vm c drm expat fontconfig
-WANTLIB +=	freetype jpeg lcms m mng png pthread pthread-stubs stdc++ xcb z
+WANTLIB +=	freetype jpeg lcms m mng png pthread pthread-stubs xcb z
+WANTLIB +=	c++ c++abi
 
 MODULES=	x11/qt3
 

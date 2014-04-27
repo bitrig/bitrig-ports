@@ -6,7 +6,7 @@ COMMENT=	quick previewer for Nautilus
 
 GNOME_PROJECT=	sushi
 GNOME_VERSION=	3.10.0
-REVISION=	4
+REVISION=	5
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
@@ -25,9 +25,10 @@ WANTLIB += harfbuzz harfbuzz-icu heimbase icudata icui18n icuuc
 WANTLIB += javascriptcoregtk-3.0 jpeg json-glib-1.0 krb5 m mozjs-24
 WANTLIB += musicbrainz5 ncursesw neon orc-0.4 pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png proxy pthread pthread-stubs
-WANTLIB += readline roken secret-1 soup-2.4 sqlite3 ssl stdc++
+WANTLIB += readline roken secret-1 soup-2.4 sqlite3 ssl
 WANTLIB += webkitgtk-3.0 webp wind xcb xcb-render xcb-shm xml2
 WANTLIB += xslt z cogl-path
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		x11/gnome

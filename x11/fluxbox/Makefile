@@ -3,7 +3,7 @@
 COMMENT=		window manager based on the original Blackbox code
 
 DISTNAME=		fluxbox-1.3.5
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		x11
 
@@ -20,7 +20,8 @@ MODULES=		converters/libiconv
 
 WANTLIB=		ICE Imlib2 SM X11 Xext Xft Xinerama \
 			Xpm Xrandr Xrender c fontconfig \
-			freetype fribidi m stdc++ z
+			freetype fribidi m z
+WANTLIB+=		c++ c++abi pthread
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \

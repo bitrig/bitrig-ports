@@ -3,6 +3,7 @@
 COMMENT =		browse and download YouTube videos
 
 DISTNAME =		smtube-2.1
+REVISION =		0
 
 CATEGORIES =		multimedia x11
 
@@ -11,9 +12,10 @@ HOMEPAGE =		http://smplayer.sourceforge.net/
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
 WANTLIB += lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtScript lib/qt4/QtXml
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=smplayer/}
 
