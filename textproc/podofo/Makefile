@@ -3,6 +3,7 @@
 COMMENT=	library and tools to modify and parse PDF documents
 
 DISTNAME=	podofo-0.9.2
+REVISION=	0
 
 SHARED_LIBS +=	podofo                    0.0 # 0.9
 

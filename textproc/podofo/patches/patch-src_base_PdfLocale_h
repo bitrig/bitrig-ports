@@ -9,14 +9,3 @@
  
  namespace PoDoFo {
  
---- src/base/PdfLocale.h.orig	Sat Apr 26 22:19:19 2014
-+++ src/base/PdfLocale.h	Sat Apr 26 22:19:40 2014
-@@ -1,7 +1,7 @@
- #ifndef PODOFO_PDFLOCALE_H
- #define PODOFO_PDFLOCALE_H
- 
--namespace std { class ios_base; };
-+#include <ios>
- 
- namespace PoDoFo {
- 
