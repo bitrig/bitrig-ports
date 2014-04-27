@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2014/04/22 19:47:02 kili Exp $
+# $OpenBSD: Makefile,v 1.26 2014/04/27 16:39:46 sthen Exp $
 
 COMMENT-main=		UW e-mail client
 COMMENT-c-client=	UW c-client mail access routines
@@ -11,7 +11,7 @@ V=			2.11
 DISTNAME=		alpine-${V}
 EXTRACT_SUFX=		.tar.xz
 
-SHARED_LIBS=		c-client 5.1
+SHARED_LIBS=		c-client 6.0
 
 # grep "PICO version" ${WRKSRC}/pico/pico.h
 PICO_V=			5.07
@@ -25,12 +25,12 @@ PKGNAME-mailutil=	mailutil-uw-${V}
 PKGNAME-pico=		pico-${PICO_V}
 PKGNAME-pilot=		pilot-${PILOT_V}
 
-REVISION-main=		2
-REVISION-mailutil=	2
-REVISION-imap=		3
-REVISION-pico=		2
-REVISION-pilot=		12
-REVISION-c-client=	1
+REVISION-main=		3
+REVISION-mailutil=	3
+REVISION-imap=		4
+REVISION-pico=		3
+REVISION-pilot=		13
+REVISION-c-client=	2
 
 FLAVORS=		passfile
 FLAVOR?=
@@ -55,7 +55,7 @@ MASTER_SITES=		http://patches.freeiz.com/alpine/release/src/ \
 
 MULTI_PACKAGES=		-main -c-client -imap -mailutil -pico -pilot
 
-WANTLIB += c ncurses
+WANTLIB += c crypto ncurses ssl
 
 WANTLIB-main=		${WANTLIB} pthread
 WANTLIB-c-client=	# empty
@@ -82,7 +82,8 @@ MAKE_FLAGS=		EXTRACFLAGS="${CFLAGS}" \
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib" \
-			ac_cv_search_regcomp=-lc
+			ac_cv_search_regcomp=-lc \
+			ac_cv_search_SSL_library_init="-lcrypto -lssl"
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--with-system-pinerc=${SYSCONFDIR}/pine.conf \
 			--with-system-fixed-pinerc=${SYSCONFDIR}/pine.conf.fixed \
