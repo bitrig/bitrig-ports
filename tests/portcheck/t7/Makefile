@@ -4,7 +4,8 @@ COMMENT=	tempo/pitch audio processing library
 
 DISTNAME=	soundtouch-1.3.1
 MASTER_SITES=	${HOMEPAGE}
-WANTLIB=	c m stdc++
+WANTLIB=	c m
+WANTLIB +=	c++ c++abi pthread
 
 AUTOCONF_VERSION=2.61
 AUTOMAKE_VERSION=1.9
