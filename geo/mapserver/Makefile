@@ -16,6 +16,8 @@ PKGNAME-php=	php-mapscript-${V}
 PKGNAME-perl=	p5-mapscript-${V}
 SHARED_LIBS +=	mapserver 1.0
 
+REVISION-main=	0
+
 CATEGORIES=	geo www
 
 HOMEPAGE=	http://www.mapserver.org/
@@ -45,7 +47,8 @@ WANTLIB += gdal geos_c cairo fribidi gif
 LIB_DEPENDS-utils =	STEM->=${V}:${BUILD_PKGPATH},-main
 LIB_DEPENDS-php =	STEM->=${V}:${BUILD_PKGPATH},-main
 LIB_DEPENDS-perl =	STEM->=${V}:${BUILD_PKGPATH},-main
-WANTLIB-main =	${WANTLIB} c fcgi pthread stdc++
+WANTLIB-main =	${WANTLIB} c fcgi pthread
+WANTLIB-main +=	c++ c++abi
 WANTLIB-utils =	${WANTLIB} c mapserver pthread
 WANTLIB-php =	${WANTLIB} mapserver
 WANTLIB-perl =	${WANTLIB} mapserver perl

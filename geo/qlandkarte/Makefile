@@ -4,7 +4,7 @@ COMMENT=	garmin gps map management tool
 
 DISTNAME=	QLandkarte_final
 PKGNAME=	qlandkarte-0.7.4
-REVISION=	5
+REVISION=	6
 
 CATEGORIES=	geo x11
 
@@ -22,8 +22,9 @@ LIB_DEPENDS+=	devel/proj \
 		devel/libusb-compat
 RUN_DEPENDS=	devel/desktop-file-utils
 
-WANTLIB += QtGui QtNetwork QtXml X11 Xext c m proj pthread stdc++
+WANTLIB += QtGui QtNetwork QtXml X11 Xext c m proj pthread
 WANTLIB += usb ICE SM Xi Xinerama Xrender fontconfig freetype
+WANTLIB += c++ c++abi
 
 PORTHOME=	${WRKDIR}
 

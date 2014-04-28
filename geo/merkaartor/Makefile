@@ -3,6 +3,7 @@
 COMMENT =	OpenStreetMap editor
 
 DISTNAME =	merkaartor-0.18.1
+REVISION =	0
 EXTRACT_SUFX =	.tar.bz2
 SHARED_ONLY =	Yes
 
@@ -24,7 +25,8 @@ RUN_DEPENDS =	devel/desktop-file-utils \
 LIB_DEPENDS =	devel/proj geo/gdal
 
 WANTLIB += QtGui QtNetwork QtSvg QtWebKit QtXml c m proj pthread gdal
-WANTLIB += stdc++ z ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
+WANTLIB += z ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
+WANTLIB += c++ c++abi
 
 do-configure:
 	cd ${WRKSRC} && env ${CONFIGURE_ENV} qmake4 PROJ=1 NODEBUG=1 RELEASE=1 \

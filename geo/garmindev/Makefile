@@ -4,7 +4,7 @@ SHARED_ONLY =	Yes
 
 COMMENT =	garmin gps device driver
 
-REVISION =	1
+REVISION =	2
 DISTNAME =	garmindev-0.3.4
 CATEGORIES =	geo x11
 HOMEPAGE =	http://www.qlandkarte.org/
@@ -15,7 +15,8 @@ MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 PERMIT_PACKAGE_CDROM =		Yes
 
 MODULES =	devel/cmake
-WANTLIB +=	m pthread stdc++ usb
+WANTLIB +=	m pthread usb
+WANTLIB +=	c++ c++abi
 LIB_DEPENDS +=	devel/libusb-compat
 
 # libgarmindev is only needed to compile the drivers, but not on runtime

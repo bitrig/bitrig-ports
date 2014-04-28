@@ -6,7 +6,7 @@ COMMENT-devel=		GPStk development libraries and headers
 V=			1.5
 DISTNAME=		gpstk${V}
 PKGNAME-main=		gpstk-${V}
-REVISION-main=		4
+REVISION-main=		5
 PKGNAME-devel=		gpstk-devel-${V}
 REVISION-devel=		6
 CATEGORIES=		geo devel
@@ -49,7 +49,8 @@ BUILD_DEPENDS=		${MODGNU_AUTOCONF_DEPENDS} \
 			devel/libtool \
 			${MODGNU_AUTOMAKE_DEPENDS}
 MULTI_PACKAGES=		-main -devel
-WANTLIB-main=		m c stdc++ curses
+WANTLIB-main=		m c curses
+WANTLIB-main +=		c++ c++abi pthread
 WANTLIB-devel=
 RUN_DEPENDS-devel=	${PKGNAME-main}:geo/gpstk
 

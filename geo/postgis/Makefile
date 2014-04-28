@@ -5,6 +5,7 @@ SHARED_ONLY=	Yes
 V =	2.1.0
 COMMENT=	geographic objects support for PostgreSQL
 DISTNAME=	postgis-${V}
+REVISION=	0
 CATEGORIES=	geo databases
 
 HOMEPAGE=	http://www.postgis.org/
@@ -18,8 +19,9 @@ MASTER_SITES=	http://download.osgeo.org/postgis/source/
 
 WANTLIB=	c geos_c m pq>=5.3 proj xml2 z
 WANTLIB +=	com_err crypto curl expat gdal geos geotiff gif idn
-WANTLIB +=	jasper jpeg json-c png pthread ssl stdc++ tiff
+WANTLIB +=	jasper jpeg json-c png pthread ssl tiff
 WANTLIB +=	asn1 freexl heimbase krb5 pcre roken spatialite sqlite3 wind
+WANTLIB +=	c++ c++abi
 
 MODULES =	devel/gettext
 

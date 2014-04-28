@@ -3,6 +3,7 @@
 COMMENT =	store rasters coverages within spatialite
 PROJECT =	librasterlite
 DISTNAME =	${PROJECT}-1.1f
+REVISION =	0
 SHARED_LIBS =	rasterlite 0.0 #2.0
 
 # breaks build if static is disabled
@@ -13,6 +14,7 @@ LIB_DEPENDS +=	geo/spatialite/libspatialite \
 		devel/geotiff
 
 WANTLIB += c freexl geos geos_c geotiff jpeg m png proj pthread
-WANTLIB += spatialite sqlite3 stdc++ tiff z
+WANTLIB += spatialite sqlite3 tiff z
+WANTLIB += c++ c++abi
 
 .include <bsd.port.mk>

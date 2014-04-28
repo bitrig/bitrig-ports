@@ -8,7 +8,7 @@ ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 SHARED_ONLY =	Yes
 
 DISTNAME =	qgis-1.7.4
-REVISION =	0
+REVISION =	1
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	geo x11
 
@@ -51,10 +51,11 @@ LIB_DEPENDS =	${MODPY_LIB_DEPENDS} \
 
 WANTLIB += 	ICE SM X11 Xext Xi Xinerama Xrender c expat \
 		fontconfig freetype glib-2.0 gthread-2.0 lcms m \
-		mng png pthread util stdc++ z proj \
+		mng png pthread util z proj \
 		QtGui QtNetwork QtXml QtSql QtCore QtSvg \
 		QtWebKit gdal geos_c gsl gslcblas pq qwt fcgi
 WANTLIB += ${MODPY_WANTLIB} jpeg tiff
+WANTLIB += c++ c++abi
 
 CONFIGURE_ENV+=	VERBOSE=1
 CONFIGURE_ARGS =	-DWITH_MAPSERVER=TRUE

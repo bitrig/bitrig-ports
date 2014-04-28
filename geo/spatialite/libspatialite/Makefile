@@ -3,12 +3,14 @@
 COMMENT=	sqlite extented with spatial SQL capabilities
 PROJECT =	libspatialite
 DISTNAME =	${PROJECT}-4.0.0
+REVISION =	0
 SHARED_LIBS =	spatialite 0.0 #5.1
 
 LIB_DEPENDS +=	geo/spatialite/freexl \
 		geo/geos \
 		devel/proj
 
-WANTLIB += freexl geos geos_c m proj pthread sqlite3 stdc++
+WANTLIB += freexl geos geos_c m proj pthread sqlite3
+WANTLIB += c++ c++abi
 
 .include <bsd.port.mk>

@@ -3,6 +3,7 @@
 COMMENT =	library for spatial indexing and querying
 DISTNAME=	spatialindex-src-1.8.0
 PKGNAME =	${DISTNAME:S/-src//}
+REVISION =	0
 CATEGORIES =	geo
 SHARED_LIBS =	spatialindex 0.0 \
 		spatialindex_c 0.0 #3.0
@@ -14,6 +15,7 @@ HOMEPAGE =	http://libspatialindex.github.com/
 MASTER_SITES =	http://download.osgeo.org/libspatialindex/
 
 CONFIGURE_STYLE =	gnu
-WANTLIB =	m pthread stdc++
+WANTLIB =	m pthread
+WANTLIB +=	c++ c++abi
 
 .include <bsd.port.mk>

@@ -13,7 +13,7 @@ CATEGORIES=		geo
 
 REVISION-main=		0
 REVISION-tk=		0
-REVISION-qt=		0
+REVISION-qt=		1
 
 HOMEPAGE=		http://www.gpsbabel.org/
 
@@ -46,7 +46,8 @@ cWANTLIB = 		c m pthread
 WANTLIB-main += expat shp>=1 usb z ${cWANTLIB}
 WANTLIB-tk = 
 WANTLIB-qt += ICE QtCore QtGui QtNetwork QtWebKit QtXml SM X11 Xext Xi
-WANTLIB-qt += Xinerama Xrender fontconfig freetype stdc++ ${cWANTLIB}
+WANTLIB-qt += Xinerama Xrender fontconfig freetype ${cWANTLIB}
+WANTLIB-qt += c++ c++abi
 
 LIB_DEPENDS-tk=
 PKG_ARCH-tk=	*

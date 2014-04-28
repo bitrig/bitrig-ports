@@ -3,6 +3,7 @@
 COMMENT =	garmin gps map management tool
 
 DISTNAME =	qlandkartegt-1.7.5
+REVISION =	0
 CATEGORIES =	geo x11
 
 HOMEPAGE =	http://www.qlandkarte.org/
@@ -13,9 +14,10 @@ MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 PERMIT_PACKAGE_CDROM =		Yes
 
 MODULES =	devel/cmake x11/qt4
-WANTLIB +=	GL GLU ICE SM X11 Xext c m pthread stdc++ z gdal gps>=19
+WANTLIB +=	GL GLU ICE SM X11 Xext c m pthread z gdal gps>=19
 WANTLIB +=	exif QtDBus QtGui QtNetwork QtOpenGL QtSql QtXml QtCore proj
 WANTLIB +=	QtWebKit QtXmlPatterns phonon jpeg dmtx QtScript
+WANTLIB +=	c++ c++abi
 BUILD_DEPENDS +=	geo/gpsbabel
 LIB_DEPENDS +=	devel/proj \
 		x11/qt4 \

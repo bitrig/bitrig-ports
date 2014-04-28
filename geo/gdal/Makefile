@@ -6,7 +6,8 @@ COMMENT-perl =	perl bindings for GDAL
 
 V =		1.10.0
 DISTNAME =	gdal-${V}
-REVISION-main =	1
+REVISION-main =	2
+REVISION-python =	0
 REVISION-perl =	0
 SHARED_ONLY =	Yes
 
@@ -46,14 +47,16 @@ LIB_DEPENDS-main =	${LIB_DEPENDS} \
 			devel/proj \
 			devel/geotiff
 
-WANTLIB-main =		${WANTLIB} c crypto expat m ssl stdc++ z tiff \
+WANTLIB-main =		${WANTLIB} c crypto expat m ssl z tiff \
 			curl pq geos geos_c idn png gif jpeg jasper geotiff \
 			asn1 heimbase krb5 openjp2 roken wind \
 			com_err proj pthread freexl pcre spatialite sqlite3 xml2
+WANTLIB-main +=		c++ c++abi
 
 
 LIB_DEPENDS-python =	${PKGNAME}:${BASE_PKGPATH},-main
-WANTLIB-python =	${MODPY_WANTLIB} gdal m pthread stdc++
+WANTLIB-python =	${MODPY_WANTLIB} gdal m pthread
+WANTLIB-python +=	c++ c++abi
 
 LIB_DEPENDS-perl =	${PKGNAME}:${BASE_PKGPATH},-main
 WANTLIB-perl =		gdal crypto curl expat geos_c geotiff gif idn \
