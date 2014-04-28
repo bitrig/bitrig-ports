@@ -3,7 +3,7 @@
 COMMENT =		data recovery tool
 
 DISTNAME =		ddrescue-1.16
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		sysutils
 
@@ -12,7 +12,8 @@ HOMEPAGE =		https://www.gnu.org/software/ddrescue/ddrescue.html
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m stdc++
+WANTLIB =		c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_GNU:=ddrescue/}
 

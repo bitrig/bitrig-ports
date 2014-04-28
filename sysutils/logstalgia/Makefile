@@ -3,7 +3,7 @@
 COMMENT =	website access log visualization
 
 DISTNAME =	logstalgia-1.0.3
-REVISION =	0
+REVISION =	1
 CATEGORIES =	sysutils graphics
 HOMEPAGE =	https://code.google.com/p/logstalgia/
 
@@ -14,7 +14,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =	https://logstalgia.googlecode.com/files/
 
-WANTLIB += ftgl GL GLU SDL SDL_image c jpeg m pcre png pthread stdc++
+WANTLIB += ftgl GL GLU SDL SDL_image c jpeg m pcre png pthread
+WANTLIB += c++ c++abi
 
 MODULES =	converters/libiconv
 

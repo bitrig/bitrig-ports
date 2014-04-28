@@ -3,7 +3,7 @@
 COMMENT=		forensic toolkit based on TCT
 
 DISTNAME=		sleuthkit-3.0.1
-REVISION =		0
+REVISION =		1
 CATEGORIES=		sysutils security
 
 SHARED_LIBS=		tsk3 4.3
@@ -18,7 +18,8 @@ PERMIT_PACKAGE_FTP=	Yes
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sleuthkit/}
 
-WANTLIB=		c m stdc++
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 CONFIGURE_STYLE=        simple
 USE_GROFF =		Yes

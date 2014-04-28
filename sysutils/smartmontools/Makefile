@@ -5,6 +5,7 @@ ONLY_FOR_ARCHS=		amd64 i386 powerpc
 COMMENT=		control and monitor storage systems using SMART
 
 DISTNAME=		smartmontools-6.1
+REVISION=		0
 CATEGORIES=		sysutils
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=smartmontools/}
@@ -23,6 +24,7 @@ CONFIGURE_ARGS=	--with-docdir=${PREFIX}/share/doc/smartmontools \
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m stdc++ util
+WANTLIB=		c m util
+WANTLIB +=		c++ c++abi pthread
 
 .include <bsd.port.mk>

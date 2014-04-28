@@ -4,7 +4,7 @@ COMMENT=		KDE UPS monitoring tool
 
 RELEASE=		0.6.0
 DISTNAME=		knutclient-${RELEASE}
-REVISION =		8
+REVISION =		9
 CATEGORIES=		sysutils x11 x11/kde
 
 HOMEPAGE=		http://www.alo.cz/knutclient-pop-en.html
@@ -17,8 +17,9 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c drm expat
 WANTLIB += fontconfig freetype idn jpeg lcms m mng png pthread
-WANTLIB += pthread-stubs stdc++ util xcb z
+WANTLIB += pthread-stubs util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdeui
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		ftp://ftp.buzuluk.cz/pub/alo/knutclient/
 

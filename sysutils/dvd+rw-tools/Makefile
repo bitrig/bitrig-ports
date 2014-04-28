@@ -3,7 +3,7 @@
 COMMENT=		mastering tools for DVD+RW/+R/-R/-RW
 
 DISTNAME=		dvd+rw-tools-7.0
-REVISION =		1
+REVISION =		2
 CATEGORIES=		sysutils
 HOMEPAGE=		http://fy.chalmers.se/~appro/linux/DVD+RW/
 
@@ -13,7 +13,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=		${HOMEPAGE}tools/
 
 RUN_DEPENDS=		sysutils/cdrtools>=1.10
-WANTLIB=		c m pthread stdc++
+WANTLIB=		c m pthread
+WANTLIB +=		c++ c++abi
 
 # allow growisofs to work under sudo(8)
 CFLAGS+=		-DI_KNOW_ALL_ABOUT_SUDO

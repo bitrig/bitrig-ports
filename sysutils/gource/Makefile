@@ -3,7 +3,7 @@
 COMMENT =	software version control visualization tool
 
 DISTNAME =	gource-0.39
-REVISION =	0
+REVISION =	1
 CATEGORIES =	sysutils graphics
 HOMEPAGE =	https://gource.googlecode.com/
 
@@ -17,7 +17,8 @@ MASTER_SITES =	${HOMEPAGE}/files/
 CONFIGURE_STYLE =	gnu noman
 
 WANTLIB += GL GLEW GLU SDL SDL_image boost_filesystem boost_system
-WANTLIB += c freetype m pcre pthread stdc++ z
+WANTLIB += c freetype m pcre pthread z
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS =           devel/boost \
 			devel/pcre \

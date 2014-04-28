@@ -5,7 +5,7 @@ COMMENT =		top-like monitor for Apache
 DISTNAME =		apachetop-0.12.6
 CATEGORIES =		sysutils
 
-REVISION=		0
+REVISION=		1
 
 MAINTAINER =		Gonzalo L. R. <gonzalo@x61.com.ar>
 
@@ -25,7 +25,8 @@ CONFIGURE_ARGS =	--disable-fam \
 CONFIGURE_ENV =		CPPFLAGS='-I${LOCALBASE}/include' \
 			LDFLAGS='-L${LOCALBASE}/lib'
 
-WANTLIB +=		c m ncurses readline stdc++
+WANTLIB +=		c m ncurses readline
+WANTLIB +=		c++ c++abi pthread
 LIB_DEPENDS=		devel/readline
 
 .include <bsd.port.mk>

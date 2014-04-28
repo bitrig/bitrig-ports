@@ -6,7 +6,7 @@ COMMENT-snmp=		driver for monitoring UPS via SNMP
 COMMENT-xml=		driver for monitoring UPS via XML/HTTP
 
 DISTNAME=		nut-2.7.1
-REVISION-main=		1
+REVISION-main=		2
 
 PKGNAME-main=		${DISTNAME}
 PKGNAME-cgi=		${DISTNAME:S/-/-cgi-/}
@@ -26,7 +26,8 @@ MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 COMMON +=	c crypto pthread
-WANTLIB-main +=	${COMMON} ltdl m ssl stdc++ usb usb-1.0
+WANTLIB-main +=	${COMMON} ltdl m ssl usb usb-1.0
+WANTLIB-main +=	c++ c++abi
 WANTLIB-xml +=	${COMMON} ${MODGETTEXT_WANTLIB} asn1 expat gssapi krb5 neon ssl z proxy
 WANTLIB-xml +=	com_err heimbase roken wind
 WANTLIB-cgi +=	${COMMON} ${MODGETTEXT_WANTLIB} X11 expat fontconfig

@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	concentric segmented-rings disk usage visualisation
 
 DISTNAME=	filelight-1.0
-REVISION =	12
+REVISION =	13
 CATEGORIES=	sysutils x11/kde
 PKGSPEC =	filelight-<2
 
@@ -21,9 +21,10 @@ MASTER_SITES=	http://www.methylblue.com/filelight/packages/
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi
 WANTLIB += Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c drm
 WANTLIB += expat fam fontconfig freetype idn jpeg lcms m mng png
-WANTLIB += pthread pthread-stubs stdc++ util xcb z
+WANTLIB += pthread pthread-stubs util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=7 ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kparts ${KDE}/kwalletclient
+WANTLIB += c++ c++abi
 
 MODULES=	x11/kde \
 		devel/gettext

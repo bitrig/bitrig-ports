@@ -3,7 +3,7 @@
 COMMENT =		display a tree of processes
 
 DISTNAME =		dtpstree-1.0.3
-REVISION =		0
+REVISION =		1
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://code.douglasthrift.net/trac/dtpstree
@@ -13,7 +13,8 @@ MAINTAINER =		Douglas William Thrift <douglas@douglasthrift.net>
 # Apache 2.0
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c kvm m ncurses stdc++
+WANTLIB =		c kvm m ncurses
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		http://code.douglasthrift.net/files/dtpstree/ \
 			http://apt.douglasthrift.net/files/dtpstree/

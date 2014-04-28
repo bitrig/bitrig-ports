@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT =	powerful KDE batch file renamer
 
 DISTNAME =	krename-3.0.14
-REVISION =	11
+REVISION =	12
 
 SRCFILES =	${DISTNAME}.tar.bz2
 DOCFILES =	krename-3.0.12.pdf \
@@ -26,10 +26,11 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =  GL Xcursor Xdamage Xfixes Xft Xi Xinerama Xmu Xrandr Xt Xxf86vm
 WANTLIB += drm expat fam fontconfig freetype lcms mng ICE SM X11 Xext
-WANTLIB += Xrender c jpeg m png pthread stdc++ util xcb z
+WANTLIB += Xrender c jpeg m png pthread util xcb z
 WANTLIB += art_lgpl_2>=5 idn>=16.30
 WANTLIB += ${KDE}/DCOP>=7 ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kparts ${KDE}/kwalletclient
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=krename/}
 

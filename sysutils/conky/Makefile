@@ -7,7 +7,7 @@ COMMENT=	light-weight system monitor
 DISTNAME=	conky-1.9.0
 CATEGORIES=	sysutils
 HOMEPAGE=	http://conky.sourceforge.net/
-REVISION=	0
+REVISION=	1
 
 MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
 
@@ -60,7 +60,8 @@ WANTLIB +=	GL ICE Xau Xcomposite Xcursor Xdmcp Xi Xinerama \
 		gio-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 \
 		gtk-3 harfbuzz pango-1.0 \
 		pangocairo-1.0 pangoft2-1.0 pixman-1 png \
-		pthread-stubs SM stdc++ xcb-render xcb-shm
+		pthread-stubs SM xcb-render xcb-shm
+WANTLIB +=	c++ c++abi
 .endif
 
 .if ${FLAVOR:Mxmms2}

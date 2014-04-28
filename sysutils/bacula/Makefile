@@ -15,8 +15,8 @@ FULLPKGNAME-bat=	bacula-bat-$V
 FULLPKGPATH-bat=	${PKGPATH},-bat
 CATEGORIES=		sysutils
 
-REVISION-main=		3
-REVISION-server=	6
+REVISION-main=		4
+REVISION-server=	7
 
 # XXX build fails if a previous version is installed
 SHARED_LIBS +=  bac                  4.0
@@ -32,7 +32,8 @@ HOMEPAGE=		http://www.bacula.org/
 
 MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
-WANTLIB += c pthread crypto ssl z m stdc++
+WANTLIB += c pthread crypto ssl z m
+WANTLIB += c++ c++abi
 
 # AGPLv3 with exception for OpenSSL (majority),
 # FDL (docs), LGPL (some libraries), and PD

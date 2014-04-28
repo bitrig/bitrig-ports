@@ -5,7 +5,9 @@ COMMENT-cgi =		CGI scripts for web monitoring
 COMMENT-x11 =		gapcmon - GUI for apcupsd
 
 DISTNAME =		apcupsd-3.14.11
-REVISION-x11 =		0
+REVISION-main =		0
+REVISION-cgi =		0
+REVISION-x11 =		1
 PKGNAME-main =		${DISTNAME}
 PKGNAME-cgi =		${DISTNAME:S/-/-cgi-/}
 PKGNAME-x11 =		${DISTNAME:S/-/-x11-/}
@@ -44,7 +46,7 @@ CONFIGURE_ARGS =	--mandir=${PREFIX}/man \
 			--with-nisip=127.0.0.1 \
 			--enable-test \
 			--enable-usb
-CONFIGURE_ENV +=	LIBS="-lstdc++"
+CONFIGURE_ENV +=	LIBS="-lc++ -lc++abi -lpthread"
 
 
 PSEUDO_FLAVORS =	no_x11
