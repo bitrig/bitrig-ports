@@ -3,6 +3,7 @@
 SHARED_ONLY =	Yes
 COMMENT =	RDF framework
 CATEGORIES =	databases devel textproc sysutils
+REVISION=	0
 HOMEPAGE =	http://soprano.sourceforge.net/
 DISTNAME =	soprano-2.9.4
 
@@ -27,9 +28,10 @@ LIB_DEPENDS = 	textproc/clucene \
 		textproc/raptor \
 		textproc/redland
 
-WANTLIB =  c m stdc++
+WANTLIB =  c m
 WANTLIB += lib/qt4/QtCore lib/qt4/QtDBus lib/qt4/QtNetwork lib/qt4/QtXml
 WANTLIB += clucene-core clucene-shared iodbc raptor2 rdf
+WANTLIB += c++ c++abi pthread
 
 # No Java, thanks
 CONFIGURE_ARGS =	-DSOPRANO_DISABLE_SESAME2_BACKEND:Bool=Yes \

@@ -9,12 +9,15 @@ SHARED_LIBS +=  xapian	3.1	# .28.2
 
 CATEGORIES=	databases textproc
 
+REVISION=	0
+
 HOMEPAGE=	http://xapian.org/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m stdc++ z uuid
+WANTLIB += c m z uuid
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	http://oligarchy.co.uk/xapian/${V}/
 

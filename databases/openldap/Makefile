@@ -5,7 +5,7 @@ COMMENT-server =	open-source LDAP software (server)
 
 DISTNAME =		openldap-2.4.39
 REVISION-main =		0
-REVISION-server =	0
+REVISION-server =	1
 PKGNAME-main =		${DISTNAME:S/-/-client-/}
 PKGNAME-server =	${DISTNAME:S/-/-server-/}
 
@@ -107,7 +107,8 @@ CONFIGURE_ENV +=	CPPFLAGS="-I${LOCALBASE}/include/sasl -I${LOCALBASE}/include/db
 
 RUN_DEPENDS-server =	databases/openldap,-main
 WANTLIB-server +=	${WANTLIB} perl util m icudata icuuc uuid
-WANTLIB-server +=	stdc++ lib/db4/db>=4
+WANTLIB-server +=	lib/db4/db>=4
+WANTLIB-server +=	c++ c++abi pthread
 
 pre-build:
 	@cd ${WRKBUILD}; ${MAKE_PROGRAM} depend

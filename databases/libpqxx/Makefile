@@ -3,7 +3,7 @@
 COMMENT=	C++ client API for PostgreSQL
 
 DISTNAME=	libpqxx-2.5.3
-REVISION=	4
+REVISION=	5
 CATEGORIES=	databases
 SHARED_LIBS +=	pqxx                 1.0      # .0.0
 
@@ -12,7 +12,8 @@ HOMEPAGE=	http://pqxx.org/development/libpqxx/
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += pq>=4 com_err crypto m ssl stdc++
+WANTLIB += pq>=4 com_err crypto m ssl
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	http://pqxx.org/download/software/libpqxx/ \
 		ftp://pqxx.org/software/libpqxx/

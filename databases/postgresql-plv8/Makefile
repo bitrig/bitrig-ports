@@ -7,7 +7,7 @@ COMMENT =		PostgreSQL V8 javascript procedual language
 
 VERSION =		1.3.0
 DISTNAME =		plv8-${VERSION}
-REVISION =		1
+REVISION =		2
 PKGNAME =		postgresql-${DISTNAME}
 
 CATEGORIES =		databases
@@ -19,7 +19,8 @@ MAINTAINER =		Jeremy Evans <jeremy@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m stdc++ v8 execinfo pthread
+WANTLIB =		c m v8 execinfo pthread
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://api.pgxn.org/dist/plv8/${VERSION}/
 EXTRACT_SUFX =		.zip

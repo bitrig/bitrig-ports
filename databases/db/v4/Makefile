@@ -12,11 +12,11 @@ PKGSPEC-tcl =   db-tcl->=4,<5|db-tcl->=4v0,<5v0
 PKGNAME-java=	db-java-${VERSION}
 PKGNAME-tcl=	db-tcl-${VERSION}
 EPOCH-main=	0
-REVISION-main = 0
+REVISION-main = 1
 EPOCH-java=	0
 EPOCH-tcl=	0
-REVISION-java =	1
-REVISION-tcl =	0
+REVISION-java =	2
+REVISION-tcl =	1
 DBLIBDIR=	lib/db4
 
 # XXX sync LIBdb_VERSION in x11/gnome/libgda
@@ -37,7 +37,8 @@ PATCHFILES=	patch.${VERSION}.1:2 \
 CONFIGURE_STYLE=gnu
 
 DEST_SUBDIR=	${REV}
-WANTLIB=	c m stdc++
+WANTLIB=	c m
+WANTLIB+=	c++ c++abi pthread
 
 PSEUDO_FLAVORS=	no_java bootstrap
 FLAVOR?= 

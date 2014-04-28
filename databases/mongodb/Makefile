@@ -12,6 +12,8 @@ SHARED_LIBS =	mongoclient	2.0
 
 CATEGORIES =	databases
 
+REVISION =	0
+
 HOMEPAGE =	http://www.mongodb.org/
 
 # Apache 2.0 + AGPLv3
@@ -19,7 +21,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =	boost_filesystem-mt boost_program_options-mt boost_system-mt \
 		boost_thread-mt c execinfo m pcap pcre pcrecpp pthread \
-		stdc++ v8
+		v8
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =	http://downloads.mongodb.org/src/
 

@@ -2,6 +2,7 @@
 
 COMMENT =	gui for sqlite
 CATEGORIES =	databases x11
+REVISION =	0
 
 DISTNAME =	sqliteman-1.2.2
 
@@ -12,7 +13,8 @@ HOMEPAGE =	http://sourceforge.net/projects/sqliteman/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += lib/qt4/QtCore lib/qt4/QtGui lib/qt4/QtSql lib/qt4/QtXml
-WANTLIB += c m qscintilla2 stdc++
+WANTLIB += c m qscintilla2
+WANTLIB += c++ c++abi pthread
 
 MODULES =		devel/cmake
 CONFIGURE_STYLE =	cmake

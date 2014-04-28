@@ -8,7 +8,7 @@ COMMENT-tests=	multithreaded SQL database (regression test suite/benchmark)
 
 VERSION=	10.0.10
 DISTNAME=	mariadb-${VERSION}
-REVISION=	0
+REVISION=	1
 PKGNAME-main=	mariadb-client-${VERSION}
 PKGNAME-server=	mariadb-server-${VERSION}
 PKGNAME-tests= 	mariadb-tests-${VERSION}
@@ -29,7 +29,8 @@ MAINTAINER=	Brad Smith <brad@comstyle.com>
 # GPLv2 and LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c crypto m pthread ssl stdc++ z
+WANTLIB=	c crypto m pthread ssl z
+WANTLIB+=	c++ c++abi
 WANTLIB-main=	curses readline ${WANTLIB}
 WANTLIB-server=	mysqlclient ${WANTLIB}
 WANTLIB-tests=	mysqlclient ${WANTLIB}

@@ -6,7 +6,7 @@ COMMENT=		C++ database API
 
 DISTNAME=		deepfryed-dbicpp-v0.6.0
 PKGNAME=		dbic++-0.6.0
-REVISION=		5
+REVISION=		6
 CATEGORIES=		databases
 HOMEPAGE=		https://github.com/deepfryed/dbicpp
 
@@ -20,7 +20,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 # port-lib-depends-check says that uuid and pcrecpp are
 # Extra, but they are used in a .a file that doesn't have a
 # .so shared library equivalent.
-WANTLIB =		uuid m mysqlclient pcrecpp pq stdc++ sqlite3
+WANTLIB =		uuid m mysqlclient pcrecpp pq sqlite3
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		https://distfiles.bsdfrog.org/
 

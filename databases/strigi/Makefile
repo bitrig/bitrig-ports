@@ -7,7 +7,7 @@ HOMEPAGE =	https://projects.kde.org/projects/kdesupport/strigi/
 
 # hand-rolled from strigi* submodules at quickgit.kde.org
 DISTNAME =	strigi-0.7.7pl1
-REVISION =	0
+REVISION =	1
 SHARED_ONLY =	Yes
 
 MASTER_SITES =	http://spacehopper.org/mirrors/ \
@@ -36,7 +36,8 @@ LIB_DEPENDS =	archivers/bzip2 \
 
 WANTLIB =  lib/qt4/QtDBus lib/qt4/QtGui
 WANTLIB += bz2 c clucene-core clucene-shared dbus-1 exiv2 fam m pthread
-WANTLIB += stdc++ xml2 z avcodec avformat avutil swscale
+WANTLIB += xml2 z avcodec avformat avutil swscale
+WANTLIB += c++ c++abi
 
 MODULES =		devel/cmake \
 			converters/libiconv \

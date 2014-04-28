@@ -6,7 +6,7 @@ COMMENT =	ODBC bindings for Python
 
 MODPY_EGG_VERSION=2.1.8
 DISTNAME =	pyodbc-${MODPY_EGG_VERSION}
-REVISION =	3
+REVISION =	4
 PKGNAME =	${DISTNAME:S/py/py-/}
 
 CATEGORIES =	databases
@@ -16,7 +16,8 @@ HOMEPAGE =	https://pyodbc.googlecode.com/
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += m stdc++ ${MODPY_WANTLIB}
+WANTLIB += m ${MODPY_WANTLIB}
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${HOMEPAGE}files/
 EXTRACT_SUFX =	.zip

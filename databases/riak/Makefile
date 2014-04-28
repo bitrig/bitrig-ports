@@ -3,6 +3,7 @@
 COMMENT=			distributed data store
 DISTNAME=			riak-1.4.7
 CATEGORIES=			databases
+REVISION=			0
 HOMEPAGE=			http://basho.com/
 
 MAINTAINER=			Jonathan Matthew <jmatthew@openbsd.org>
@@ -91,7 +92,8 @@ MODGNU_CONFIG_GUESS_DIRS = ${WRKCONF}
 CONFIGURE_STYLE = gnu
 CONFIGURE_ARGS += --with-pic
 
-WANTLIB = c crypto m ncurses pthread ssl stdc++ util mozjs nspr4
+WANTLIB = c crypto m ncurses pthread ssl util mozjs nspr4
+WANTLIB += c++ c++abi
 LIB_DEPENDS = lang/spidermonkey
 BUILD_DEPENDS = lang/erlang>=15b.02
 

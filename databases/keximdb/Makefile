@@ -7,7 +7,7 @@ VERSION=	1.6.1
 MASTER_SITES=	${MASTER_SITE_KDE:S@$@stable/koffice-${VERSION}/src/@}
 DISTNAME=	keximdb-1.1.0
 DIST_SUBDIR=	kde
-REVISION=	9
+REVISION=	10
 HOMEPAGE=	http://www.kexi-project.org/wiki/wikiview/index.php?MDBDriver
 
 SHARED_ONLY=	Yes
@@ -32,7 +32,7 @@ LIB_DEPENDS +=	x11/kde/libs3 \
 		databases/mdbtools/snapshot
 
 WANTLIB += ICE SM X11 Xext Xrender jpeg m png
-WANTLIB += stdc++ util z art_lgpl_2 glib-2.0 idn
+WANTLIB += util z art_lgpl_2 glib-2.0 idn
 WANTLIB += pcre xcb
 WANTLIB += GL Xcursor Xdamage Xfixes Xft Xi Xinerama Xmu Xrandr
 WANTLIB += Xt Xxf86vm drm expat fontconfig freetype lcms mdb mng
@@ -45,5 +45,6 @@ WANTLIB += ${KDE}/kexidatatable ${KDE}/kexidb ${KDE}/kexidbparser
 WANTLIB += ${KDE}/kexiextendedwidgets ${KDE}/kexiguiutils ${KDE}/keximain
 WANTLIB += ${KDE}/keximigrate ${KDE}/kexiutils ${KDE}/kofficeui
 WANTLIB += ${KDE}/koproperty ${KDE}/kowmf ${KDE}/kstore ${KDE}/kwmf
+WANTLIB += c++ c++abi pthread
 
 .include <bsd.port.mk>

@@ -10,6 +10,7 @@ GNOME_PROJECT=		evolution-data-server
 GNOME_VERSION=		3.12.1
 
 CATEGORIES=		databases productivity
+REVISION=		0
 
 SHARED_LIBS +=  camel-1.2            37.0     # 49.0
 SHARED_LIBS +=  edataserver-1.2      18.0     # 18.0
@@ -38,7 +39,8 @@ WANTLIB += nss3 nssutil3 oauth p11-kit pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 plc4 plds4 png pthread pthread-stubs
 WANTLIB += roken sasl2 secret-1 smime3 softokn3 soup-2.4 sqlite3
 WANTLIB += ssl ssl3 wind xcb xcb-render xcb-shm xml2 z
-WANTLIB += Xau Xdmcp gcr-3 icudata icui18n icuuc stdc++
+WANTLIB += Xau Xdmcp gcr-3 icudata icui18n icuuc
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
 			devel/dconf \

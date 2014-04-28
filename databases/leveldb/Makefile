@@ -8,14 +8,15 @@ COMMENT=	fast and lightweight key/value database library
 DISTNAME=	leveldb-1.5.0
 SHARED_LIBS=	leveldb 1.0
 CATEGORIES=	databases
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	https://leveldb.googlecode.com/
 
 # BSD3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m pthread stdc++
+WANTLIB += c m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	https://leveldb.googlecode.com/files/
 

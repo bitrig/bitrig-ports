@@ -10,13 +10,14 @@ MASTER_SITES=	http://kde-apps.org/CONTENT/content-files/
 V=		0.2
 DISTNAME=	23011-qt-sqlite3-$V
 PKGNAME=	qt3-sqlite3-$V
-REVISION=	5
+REVISION=	6
 
 WRKDIST=	${WRKDIR}/qt-sqlite3-${V}
 
 MODULES=	x11/qt3
 
-WANTLIB +=	sqlite3 m stdc++
+WANTLIB +=	sqlite3 m
+WANTLIB +=	c++ c++abi pthread
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,7 +5,7 @@ COMMENT=		GUI client for MySQL
 VERSION=		0.9.8
 DISTNAME=		mysqlcc-${VERSION}-src
 PKGNAME=		mysqlcc-${VERSION}
-REVISION=		5
+REVISION=		6
 CATEGORIES=		databases
 
 HOMEPAGE=		http://mysqlcc.sourceforge.net/
@@ -13,8 +13,9 @@ HOMEPAGE=		http://mysqlcc.sourceforge.net/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += X11 Xext c m pthread stdc++ z
+WANTLIB += X11 Xext c m pthread z
 WANTLIB += lib/mysql/mysqlclient>=10
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mysqlcc/}
 

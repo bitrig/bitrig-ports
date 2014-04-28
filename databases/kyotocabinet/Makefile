@@ -10,7 +10,7 @@ NOT_FOR_ARCHS=		${GCC3_ARCHS}
 COMMENT=	straightforward implementation of DBM
 
 DISTNAME=	kyotocabinet-1.2.76
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=	kyotocabinet 0.0 # 16.0
 
@@ -21,7 +21,8 @@ HOMEPAGE=	http://fallabs.com/kyotocabinet/
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m pthread stdc++ z
+WANTLIB += c m pthread z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${HOMEPAGE}pkg/
 

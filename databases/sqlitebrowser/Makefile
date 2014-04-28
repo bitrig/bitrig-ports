@@ -2,7 +2,7 @@
 
 COMMENT=	graphical interface to sqlite databases
 DISTNAME=	sqlitebrowser-1.3
-REVISION=	7
+REVISION=	8
 DISTFILES=	${DISTNAME}-src.tar.gz
 WRKDIST=	${WRKDIR}/sqlitebrowser
 CATEGORIES=	databases x11
@@ -12,7 +12,8 @@ HOMEPAGE=	http://sqlitebrowser.sourceforge.net/
 MODULES=	x11/qt3
 NO_TEST=	Yes
 
-WANTLIB=	Xext m X11 c pthread stdc++ sqlite3
+WANTLIB=	Xext m X11 c pthread sqlite3
+WANTLIB+=	c++ c++abi
 
 # Special: files are macintosh encoded.
 post-extract:

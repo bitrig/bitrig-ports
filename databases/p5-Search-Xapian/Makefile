@@ -5,6 +5,7 @@ COMMENT=		perl bindings for the xapian search library
 V=			1.2.15
 DISTNAME=		Search-Xapian-${V}.0
 CATEGORIES=		databases
+REVISION=		0
 MODULES=		cpan
 
 HOMEPAGE=		http://xapian.org/
@@ -12,7 +13,8 @@ HOMEPAGE=		http://xapian.org/
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		m stdc++ xapian
+WANTLIB=		m xapian
+WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=		http://oligarchy.co.uk/xapian/${V}/
 

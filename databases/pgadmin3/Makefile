@@ -5,7 +5,7 @@ COMMENT=	administration and development platform for PostgreSQL
 V=		1.16.1
 DISTNAME=	pgadmin3-$V
 CATEGORIES=	databases devel
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.pgadmin.org/
 
@@ -14,7 +14,8 @@ MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 # Artistic license
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m pthread stdc++
+WANTLIB=	c m pthread
+WANTLIB+=	c++ c++abi
 
 MASTER_SITES=	ftp://ftp2.uk.postgresql.org/sites/ftp.postgresql.org/pgadmin3/release/v$V/src/ \
     ftp://ftp5.us.postgresql.org/pub/PostgreSQL/pgadmin3/release/v$V/src/ \

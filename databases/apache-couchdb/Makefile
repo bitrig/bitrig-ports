@@ -4,7 +4,7 @@ COMMENT =	distributed, document-oriented database
 
 COUCH_VER =	1.0.4
 DISTNAME =	apache-couchdb-${COUCH_VER}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	databases
 
 HOMEPAGE =	http://couchdb.apache.org/
@@ -15,7 +15,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 MODULES =	devel/gettext
 
 WANTLIB += c crypto curl icudata icui18n icuuc idn m mozjs ncurses
-WANTLIB += nspr4 plc4 plds4 pthread ssl stdc++ z
+WANTLIB += nspr4 plc4 plds4 pthread ssl z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_APACHE:=couchdb/${COUCH_VER}/}
 
