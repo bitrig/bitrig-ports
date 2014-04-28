@@ -12,8 +12,8 @@ PKGNAME-main =		texworks-${V}
 PKGNAME-lua =		texworks-lua-${V}
 PKGNAME-python =	texworks-python-${V}
 
-REVISION-main =		0
-REVISION-lua =		0
+REVISION-main =		1
+REVISION-lua =		1
 
 WRKDIST =		${WRKDIR}/texworks-${V}
 
@@ -33,7 +33,8 @@ SHARED_ONLY =		Yes
 
 WANTLIB += ICE QtDBus QtGui QtScript QtScriptTools QtXml SM X11
 WANTLIB += Xext Xi Xinerama Xrender c fontconfig freetype hunspell-1.3
-WANTLIB += m poppler-qt4 pthread stdc++ z
+WANTLIB += m poppler-qt4 pthread z
+WANTLIB += c++ c++abi
 
 WANTLIB-lua =	${MODLUA_WANTLIB}
 WANTLIB-lua +=	ICE QtCore QtGui QtXml SM X11 Xext Xi Xinerama Xrender

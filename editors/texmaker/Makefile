@@ -3,6 +3,7 @@
 COMMENT=		LaTeX development environment
 DISTNAME=		texmaker-4.1.1
 CATEGORIES=		editors
+REVISION=		0
 
 HOMEPAGE=		http://www.xm1math.net/texmaker/
 
@@ -16,7 +17,8 @@ EXTRACT_SUFX=		.tar.bz2
 
 WANTLIB += ICE QtGui QtNetwork QtWebKit QtXml SM X11 Xext Xi Xinerama
 WANTLIB += Xrender c fontconfig freetype hunspell-1.3 m poppler-qt4
-WANTLIB += pthread stdc++ z
+WANTLIB += pthread z
+WANTLIB += c++ c++abi
 
 MODULES=		x11/qt4
 

@@ -6,6 +6,7 @@ VERSION =	2.8
 DISTNAME =	QScintilla-gpl-${VERSION}
 PKGNAME =	py-qscintilla-${VERSION}
 CATEGORIES =	editors x11 devel
+REVISION =	0
 
 HOMEPAGE =	http://www.riverbankcomputing.com/software/qscintilla/
 
@@ -23,7 +24,8 @@ RUN_DEPENDS = devel/py-sip \
 LIB_DEPENDS = editors/qscintilla
 
 WANTLIB += ICE QtGui SM X11 Xext Xi Xinerama Xrender fontconfig
-WANTLIB += freetype m qscintilla2 stdc++ pthread
+WANTLIB += freetype m qscintilla2 pthread
+WANTLIB += c++ c++abi
 
 WRKSRC =	${WRKDIST}/Python
 

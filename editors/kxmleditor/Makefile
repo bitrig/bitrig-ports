@@ -7,6 +7,7 @@ COMMENT=	XML editor for KDE
 DISTNAME=	kxmleditor-1.1.3
 REVISION=	11
 CATEGORIES=	editors x11 x11/kde
+REVISION=	0
 
 SHARED_LIBS=	kxmleditorpart	2.0
 
@@ -20,10 +21,11 @@ PERMIT_PACKAGE_CDROM=  Yes
 WANTLIB =	GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi
 WANTLIB +=	Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c drm
 WANTLIB +=	expat fam fontconfig freetype idn jpeg lcms m mng png
-WANTLIB +=	pthread pthread-stubs stdc++ util xcb z
+WANTLIB +=	pthread pthread-stubs util xcb z
 WANTLIB +=	${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdeprint
 WANTLIB +=	${KDE}/kdesu ${KDE}/kdeui ${KDE}/kio ${KDE}/kparts
 WANTLIB +=	${KDE}/kwalletclient
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kxmleditor/}
 

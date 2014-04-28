@@ -5,6 +5,7 @@ COMMENT =	simple, distraction-free writing environment
 DISTNAME =	focuswriter-1.4.4
 CATEGORIES =	editors
 EXTRACT_SUFX =	-src.tar.bz2
+REVISION=	0
 
 HOMEPAGE =	http://gottcode.org/focuswriter/
 
@@ -19,7 +20,8 @@ RUN_DEPENDS +=	devel/desktop-file-utils x11/gtk+2,-guic
 LIB_DEPENDS +=	archivers/libzip textproc/enchant
 WANTLIB +=	ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
 WANTLIB +=	QtNetwork enchant glib-2.0 gmodule-2.0 z
-WANTLIB +=	QtGui c m pthread stdc++ zip
+WANTLIB +=	QtGui c m pthread zip
+WANTLIB +=	c++ c++abi pthread
 
 MAKE_FLAGS +=	CXX=${CXX} \
 		QMAKE_CXXFLAGS="${CXXFLAGS}"

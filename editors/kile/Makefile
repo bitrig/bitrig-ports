@@ -2,7 +2,7 @@
 
 COMMENT=	integrated LaTeX environment for KDE
 DISTNAME=	kile-2.0
-REVISION=	7
+REVISION=	8
 CATEGORIES=	editors x11/kde
 
 HOMEPAGE=	http://kile.sourceforge.net/
@@ -17,12 +17,13 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB =	ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 c expat
 WANTLIB +=	fam fontconfig freetype idn jpeg m pcre pcreposix png
-WANTLIB +=	pthread pthread-stubs stdc++ util xcb z
+WANTLIB +=	pthread pthread-stubs util xcb z
 WANTLIB +=	${KDE}/DCOP ${KDE}/kabc ${KDE}/katepartinterfaces
 WANTLIB +=	${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdeprint ${KDE}/kdesu
 WANTLIB +=	${KDE}/kdeui ${KDE}/khtml ${KDE}/kio ${KDE}/kjs
 WANTLIB +=	${KDE}/kparts ${KDE}/kresources ${KDE}/kspell ${KDE}/ktexteditor
 WANTLIB +=	${KDE}/kutils ${KDE}/kwalletclient ${KDE}/vcard
+WANTLIB +=	c++ c++abi
 
 RUN_DEPENDS=	x11/kde/graphics3 \
 		print/texlive/base \

@@ -4,13 +4,15 @@ COMMENT=	powerful and intuitive editor for programmers
 
 DISTNAME=	fte-20090118
 CATEGORIES=	editors devel
+REVISION=	0
 
 HOMEPAGE=	http://fte.sourceforge.net/
 
 # GPLv2 or later / Artistic License
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB+=	X11 Xau Xdmcp Xpm c m stdc++
+WANTLIB+=	X11 Xau Xdmcp Xpm c m
+WANTLIB+=	c++ c++abi pthread
 
 MASTER_SITES=	ftp://ftp.mrsserver.net/pub/distfiles/
 

@@ -4,6 +4,7 @@ COMMENT =		file editor/viewer/analyzer for executables
 
 DISTNAME =		ht-2.0.22
 CATEGORIES =		editors
+REVISION =		0
 
 HOMEPAGE =		http://hte.sourceforge.net/
 
@@ -12,7 +13,8 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m ncursesw stdc++
+WANTLIB =		c m ncursesw
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=hte/}
 

@@ -8,7 +8,7 @@ COMMENT=	GTK+2 subtitles editor
 
 V=		0.40.0
 DISTNAME=	subtitleeditor-${V}
-REVISION=	7
+REVISION=	8
 
 CATEGORIES=	graphics editors
 
@@ -29,8 +29,9 @@ WANTLIB += gstnet-0.10 gstnetbuffer-0.10 gstpbutils-0.10 gstreamer-0.10
 WANTLIB += gstreamermm-0.10 gstrtp-0.10 gsttag-0.10 gstvideo-0.10
 WANTLIB += gthread-2.0 gtk-x11-2.0 gtkmm-2.4 harfbuzz m
 WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pangomm-1.4 pcre
-WANTLIB += pixman-1 png pthread pthread-stubs sigc-2.0 stdc++
+WANTLIB += pixman-1 png pthread pthread-stubs sigc-2.0
 WANTLIB += xcb xcb-render xcb-shm xml++-2.6 xml2 z orc-0.4
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://download.gna.org/subtitleeditor/${V:R}/
 

@@ -6,6 +6,7 @@ VERSION=	3.0.0
 DISTNAME=	scintilla${VERSION:S/.//g}
 PKGNAME=	scintilla-${VERSION}
 CATEGORIES=	editors x11
+REVISION=	0
 
 SHARED_LIBS=	scintilla		8.0 \
 		scintilla_lexers	8.0
@@ -29,7 +30,8 @@ MAKE_ENV=	CXX='${CXX}' CXXFLAGS='${CXXFLAGS}' \
 		NO_SHARED_LIBS='${NO_SHARED_LIBS:L}' \
 		CC='${CC}' GTK3=1
 
-WANTLIB=	m stdc++
+WANTLIB=	m
+WANTLIB+=	c++ c++abi pthread
 
 # Not LIB_DEPENDS as it's only shared libraries that don't link directly
 # to gtk+3

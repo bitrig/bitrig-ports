@@ -7,6 +7,7 @@ VERSION =	2.8
 DISTNAME =	QScintilla-gpl-${VERSION}
 PKGNAME =	qscintilla-${VERSION}
 CATEGORIES =	editors x11
+REVISION =	0
 
 SHARED_LIBS =	qscintilla2 4.0
 
@@ -16,7 +17,8 @@ HOMEPAGE =	http://www.riverbankcomputing.com/software/qscintilla/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += ICE QtGui SM X11 Xext Xi Xinerama Xrender fontconfig
-WANTLIB += freetype m pthread stdc++
+WANTLIB += freetype m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES =  ${MASTER_SITE_SOURCEFORGE:=pyqt/}
 

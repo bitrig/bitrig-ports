@@ -6,6 +6,7 @@ VERSION=		3.0.0
 DISTNAME=		scite${VERSION:S/.//g}
 PKGNAME=		scite-${VERSION}
 CATEGORIES=		editors x11
+REVISION=		0
 
 HOMEPAGE=		http://www.scintilla.org/SciTE.html
 
@@ -16,7 +17,8 @@ PERMIT_PACKAGE_CDROM=	may not sell
 PERMIT_PACKAGE_FTP=	Yes
 
 WANTLIB += c cairo gdk-3 gdk_pixbuf-2.0 glib-2.0 gobject-2.0 gthread-2.0
-WANTLIB += gtk-3 pthread scintilla scintilla_lexers stdc++
+WANTLIB += gtk-3 pthread scintilla scintilla_lexers
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=scintilla/}
 EXTRACT_SUFX=		.tgz

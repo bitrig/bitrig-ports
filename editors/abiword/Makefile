@@ -8,7 +8,7 @@ COMMENT=	free cross-platform WYSIWYG word processor
 
 VERSION=	3.0.0
 DISTNAME=	abiword-${VERSION}
-REVISION=	1
+REVISION=	2
 
 MAJORVER=	${VERSION:C/..$//}
 SUBST_VARS=	MAJORVER
@@ -31,8 +31,9 @@ WANTLIB += gmp gobject-2.0 goffice-0.10 gpg-error graphite2 gs
 WANTLIB += gsf-1 gthread-2.0 gtk-3 harfbuzz idn jpeg ltdl m mpfr
 WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB += png pthread pthread-stubs raptor2 rasqal rdf rsvg-2
-WANTLIB += spectre ssl stdc++ wmf-0.2 wmflite-0.2 wv-1.2 xcb xcb-render
+WANTLIB += spectre ssl wmf-0.2 wmflite-0.2 wv-1.2 xcb xcb-render
 WANTLIB += xcb-shm xml2 xslt yajl z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=   http://www.abisource.com/downloads/abiword/${VERSION}/source/
 

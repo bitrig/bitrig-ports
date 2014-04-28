@@ -8,6 +8,7 @@ PKGNAME =	teaqt-${V}
 CATEGORIES =	editors x11
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=tea-editor/}
 EXTRACT_SUFX =	.tar.bz2
+REVISION =	0
 
 HOMEPAGE =	http://tea-editor.sf.net/
 
@@ -15,8 +16,9 @@ HOMEPAGE =	http://tea-editor.sf.net/
 PERMIT_PACKAGE_CDROM =	Yes
 
 LIB_DEPENDS =	textproc/aspell/core
-WANTLIB += c m pthread stdc++ z QtGui QtXml aspell
+WANTLIB += c m pthread z QtGui QtXml aspell
 WANTLIB += ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
+WANTLIB += c++ c++abi
 
 MODULES =	x11/qt4
 CONFIGURE_ENV =	USE_ASPELL=true USE_HUNSPELL=false
