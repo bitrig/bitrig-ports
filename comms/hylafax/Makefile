@@ -2,7 +2,7 @@
 
 COMMENT=		send/receive faxes and share modems
 DISTNAME=		hylafax-6.0.6
-REVISION=		2
+REVISION=		3
 CATEGORIES=		comms
 
 HOMEPAGE=		http://www.HylaFAX.org/
@@ -20,8 +20,9 @@ PERMIT_PACKAGE_CDROM=	Yes
 FLAVORS=		a4
 FLAVOR?=
 
-WANTLIB=		c jbig m stdc++ tiff util z
+WANTLIB=		c jbig m tiff util z
 MODULES=		devel/gettext
+WANTLIB+=		c++ c++abi pthread
 
 BUILD_DEPENDS=		print/ghostscript/gnu
 RUN_DEPENDS=		${BUILD_DEPENDS} \

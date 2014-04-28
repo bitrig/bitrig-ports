@@ -6,6 +6,8 @@ DISTNAME =	owx-20110917
 
 CATEGORIES =	comms
 
+REVISION =	0
+
 HOMEPAGE =	http://owx.chmurka.net/
 
 MAINTAINER =	Mitja Muzenic <mitja@kerberos.si>
@@ -13,7 +15,8 @@ MAINTAINER =	Mitja Muzenic <mitja@kerberos.si>
 # Apache 2.0 license
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB =	c m stdc++
+WANTLIB =	c m 
+WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES =	http://distfiles.nl/
 

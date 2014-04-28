@@ -6,6 +6,8 @@ DISTNAME=	fldigi-3.21.79
 
 CATEGORIES=	comms hamradio
 
+REVISION=	0
+
 HOMEPAGE=	http://www.w1hkj.com/Fldigi.html
 
 # GPLv3+
@@ -13,7 +15,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += X11 Xau Xdmcp Xext Xft Xinerama c fltk fltk_images
 WANTLIB += fontconfig hamlib jpeg m png portaudio pthread samplerate
-WANTLIB += sndfile stdc++ z
+WANTLIB += sndfile z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://www.w1hkj.com/downloads/fldigi/
 

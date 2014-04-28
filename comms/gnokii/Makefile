@@ -3,7 +3,7 @@
 COMMENT=	tools to talk to GSM cellular phones
 
 DISTNAME=	gnokii-0.6.14
-REVISION=	17
+REVISION=	18
 CATEGORIES=	comms x11
 SHARED_LIBS +=	gnokii               2.7      # .3.0
 
@@ -49,7 +49,8 @@ WANTLIB += pangoft2-1.0>=600 pangocairo-1.0 cairo png expat Xcursor
 WANTLIB += Xext Xfixes Xi Xinerama Xrandr pthread-stubs xcb ical
 WANTLIB += gtk-x11-2.0>=400.13 gdk-x11-2.0>=400.13 gdk_pixbuf-2.0>=400.13
 WANTLIB += gthread-2.0 xcb-render
-WANTLIB += GL Xxf86vm drm ffi stdc++ xcb-shm
+WANTLIB += GL Xxf86vm drm ffi xcb-shm
+WANTLIB += c++ c++abi
 .endif
 
 WANTLIB += usb usb-1.0

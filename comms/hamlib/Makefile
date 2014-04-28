@@ -12,6 +12,7 @@ PKGNAME-main=	hamlib-${VERSION}
 PKGNAME-python=	hamlib-python-${VERSION}
 PKGNAME-tcl=	hamlib-tcl-${VERSION}
 CATEGORIES=	comms hamradio
+REVISION-main=	0
 
 MULTI_PACKAGES=	-main -python -tcl
 
@@ -30,7 +31,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 LIBTOOL_FLAGS=		--tag=disable-static
 
 cWANTLIB=		ltdl m pthread usb usb-1.0
-WANTLIB-main=		${cWANTLIB} c stdc++ z xml2 ${MODLIBICONV_WANTLIB}
+WANTLIB-main=		${cWANTLIB} c z xml2 ${MODLIBICONV_WANTLIB}
+WANTLIB=main+=		c++ c++abi pthread
 WANTLIB-python=		${cWANTLIB} hamlib ${MODPY_WANTLIB}
 WANTLIB-tcl=		${cWANTLIB} hamlib ${MODTCL_WANTLIB}
 
