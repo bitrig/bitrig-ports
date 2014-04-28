@@ -2,6 +2,7 @@
 
 COMMENT =		lightweight multi-protocol & multi-source download utility
 DISTNAME =		aria2-1.18.5
+REVISION =		0
 CATEGORIES =		www
 HOMEPAGE =		http://aria2.sourceforge.net/
 

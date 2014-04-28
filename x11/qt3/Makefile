@@ -16,12 +16,12 @@ FULLPKGNAME-html=	qt3-html-${VERSION}
 FULLPKGPATH-html=	x11/qt3,-html
 PKGNAME-sqlite2=	qt3-sqlite2-${VERSION}
 
-REVISION-mysql= 	7
-REVISION-postgresql= 	5
-REVISION-main= 		8
+REVISION-mysql= 	8
+REVISION-postgresql= 	6
+REVISION-main= 		9
 REVISION-html= 		2
-REVISION-examples=	2
-REVISION-sqlite2= 	5
+REVISION-examples=	3
+REVISION-sqlite2= 	6
 
 # the qt-mt library version number is used in a directory name.
 # when bumping, be sure to also bump MODQT3_PLUGINS in qt3.port.mk

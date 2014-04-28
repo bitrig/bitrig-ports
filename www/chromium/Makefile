@@ -7,7 +7,7 @@ COMMENT=		Chromium browser
 
 V=			34.0.1847.116
 DISTNAME=		chromium-${V}
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		www
 

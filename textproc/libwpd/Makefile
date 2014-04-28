@@ -5,7 +5,7 @@ COMMENT=	import and export WordPerfect(tm) documents
 DISTNAME=	libwpd-0.8.9
 CATEGORIES=	textproc
 
-REVISION=	7
+REVISION=	8
 
 SHARED_LIBS=	wpd-0.8		8.9 \
 		wpd-stream-0.8	8.9

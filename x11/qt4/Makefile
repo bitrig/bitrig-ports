@@ -24,6 +24,13 @@ PKGNAME-debug =		qt4-debug-${PKGVERSION}
 FULLPKGNAME-html =	qt4-html-${PKGVERSION}
 FULLPKGPATH-html =	${BASE_PKGPATH},-html
 
+REVISION-mysql=		0
+REVISION-postgresql=	0
+REVISION-main=		0
+REVISION-examples=	0
+REVISION-sqlite2=	0
+REVISION-tds =		0
+
 # XXX qmake include parser is bogus
 DPB_PROPERTIES =	parallel	nojunk
 
