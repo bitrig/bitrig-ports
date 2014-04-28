@@ -20,6 +20,9 @@ PKGNAME-hpcups=		hpcups-${V}
 PKGNAME-hpijs=		hpijs-${V}
 PKGNAME-gui=		hplip-gui-${V}
 
+REVISION-hpcups=	0
+REVISION-hpijs=		0
+
 SHARED_LIBS +=  hpmud		2.0 # 0.6
 SHARED_LIBS +=  hpip		2.0 # 0.1
 
@@ -85,9 +88,10 @@ RUN_DEPENDS-hpaio=	${MODGETTEXT_RUN_DEPENDS}
 
 ### -hpcups
 WANTLIB-hpcups += ${WANTLIB} ${cWANTLIB} z asn1 gssapi krb5 ssl
-WANTLIB-hpcups += c jpeg stdc++ hpip cups cupsimage dbus-1
+WANTLIB-hpcups += c jpeg hpip cups cupsimage dbus-1
 WANTLIB-hpcups += com_err heimbase roken wind usb-1.0
 WANTLIB-hpcups += avahi-client avahi-common hpmud netsnmp
+WANTLIB-hpcups += c++ c++abi
 
 LIB_DEPENDS-hpcups=	graphics/jpeg \
 			print/hplip,-common \
@@ -98,7 +102,8 @@ RUN_DEPENDS-hpcups=	${MODGETTEXT_RUN_DEPENDS}
 
 ### -hpijs
 WANTLIB-hpijs += ${cWANTLIB} hpip usb-1.0
-WANTLIB-hpijs += c jpeg netsnmp stdc++ dbus-1 hpmud
+WANTLIB-hpijs += c jpeg netsnmp dbus-1 hpmud
+WANTLIB-hpijs += c++ c++abi
 
 LIB_DEPENDS-hpijs=	print/hplip,-common \
 			graphics/jpeg \

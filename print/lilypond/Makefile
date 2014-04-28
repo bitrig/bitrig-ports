@@ -10,7 +10,7 @@ DISTNAME=		lilypond-${VERSION}
 DISTNAME-docs=		${DISTNAME}-1.documentation
 PKGNAME-main=		lilypond-${VERSION}
 PKGNAME-docs=		lilypond-docs-${VERSION}
-REVISION-main =		1
+REVISION-main =		2
 CATEGORIES=		print
 
 DISTFILES=		${DISTNAME}.tar.gz ${DISTNAME-docs}.tar.bz2:0
@@ -57,9 +57,10 @@ LIB_DEPENDS-docs=
 RUN_DEPENDS-docs=
 
 WANTLIB-main=		X11 c expat fontconfig freetype gmp gthread-2.0 ltdl m \
-			pthread stdc++ z guile>=20 glib-2.0>=1000 \
+			pthread z guile>=20 glib-2.0>=1000 \
 			gmodule-2.0>=1000 gobject-2.0>=1000 \
 			pango-1.0>=1200 pangoft2-1.0>=1200 ${WANTLIB}
+WANTLIB-main +=		c++ c++abi
 MODULES=		devel/gettext lang/python
 LIB_DEPENDS-main=	${LIB_DEPENDS} \
 			lang/guile \

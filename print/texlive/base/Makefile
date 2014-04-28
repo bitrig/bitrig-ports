@@ -4,7 +4,7 @@ COMMENT =		base binaries for TeXLive typesetting distribution
 
 DISTNAME =		texlive-${DIST_V}-source
 PKGNAME =		texlive_base-${V}
-REVISION =		2
+REVISION =		3
 
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} \
 			texlive-${DIST_V}-extra${EXTRACT_SUFX}
@@ -14,8 +14,9 @@ SHARED_LIBS +=		ptexenc		3.0
 
 WANTLIB +=		ICE SM X11 Xau Xaw Xdmcp Xext Xmu Xpm Xt c expat
 WANTLIB +=		fontconfig freetype gd jpeg lcms2 m
-WANTLIB +=		openjpeg png>=3 poppler pthread pthread-stubs stdc++
+WANTLIB +=		openjpeg png>=3 poppler pthread pthread-stubs
 WANTLIB +=		t1>=4 tiff ttf vpx xcb z
+WANTLIB +=		c++ c++abi
 
 RUN_DEPENDS =		print/ghostscript/gnu \
 			print/detex \

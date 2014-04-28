@@ -3,6 +3,7 @@
 COMMENT=	PDF transformation and inspection utility
 
 DISTNAME=	qpdf-5.1.1
+REVISION=	0
 
 SHARED_LIBS +=  qpdf                 2.1      # 13.0
 
@@ -15,7 +16,8 @@ MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 # Artistic License 2.0
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m pcre stdc++ z
+WANTLIB += c m pcre z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qpdf/}
 

@@ -5,6 +5,7 @@ COMMENT-libs=		CUPS libraries and headers
 
 VERSION=		1.7.2
 DISTNAME=		cups-${VERSION}-source
+REVISION=		0
 EXTRACT_SUFX=		.tar.bz2
 
 PKGNAME-main=		cups-${VERSION}
@@ -27,7 +28,8 @@ MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += asn1 avahi-client avahi-common crypto gssapi krb5 m pthread
-WANTLIB += com_err heimbase roken wind ssl stdc++ z
+WANTLIB += com_err heimbase roken wind ssl z
+WANTLIB += c++ c++abi
 
 WANTLIB-main += ${WANTLIB}
 WANTLIB-main += c cups cupscgi cupsimage cupsmime cupsppdc dbus-1 usb-1.0

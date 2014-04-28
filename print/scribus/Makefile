@@ -4,7 +4,7 @@ SHARED_ONLY=	Yes
 
 COMMENT=	DTP program
 DISTNAME=	scribus-1.4.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	print
 
 HOMEPAGE=	http://www.scribus.net/
@@ -13,8 +13,9 @@ HOMEPAGE=	http://www.scribus.net/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB +=	QtGui QtNetwork QtXml aspell c cairo cups execinfo
-WANTLIB +=	fontconfig freetype jpeg lcms2 m pthread stdc++
+WANTLIB +=	fontconfig freetype jpeg lcms2 m pthread
 WANTLIB +=	tiff util xml2 z ${MODPY_WANTLIB}
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scribus/}
 

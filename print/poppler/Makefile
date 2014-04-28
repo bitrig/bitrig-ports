@@ -6,7 +6,7 @@ COMMENT-qt4=	qt4 interface to PDF rendering library
 COMMENT-utils=	PDF conversion tools and utilities
 
 V=		0.24.5
-REVISION=	0
+REVISION=	1
 DISTNAME=	poppler-$V
 CATEGORIES=	print
 PKGNAME-main=	poppler-$V
@@ -42,7 +42,8 @@ MULTI_PACKAGES=-main -qt -qt4 -utils
 
 .include <bsd.port.arch.mk>
 
-cWANTLIB=	expat freetype fontconfig jpeg m pthread tiff z stdc++
+cWANTLIB=	expat freetype fontconfig jpeg m pthread tiff z
+cWANTLIB +=	c++ c++abi
 
 .if ${BUILD_PACKAGES:M-qt}
 MODULES+=	x11/qt3

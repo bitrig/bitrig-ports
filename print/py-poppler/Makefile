@@ -6,7 +6,7 @@ DISTNAME=	pypoppler-0.12.1
 PKGNAME=        ${DISTNAME:S/^py/py-/}
 CATEGORIES=	print
 
-REVISION=	5
+REVISION=	6
 
 MASTER_SITES=	${HOMEPAGE}/trunk/development/+download/
 HOMEPAGE=	http://launchpad.net/poppler-python/
@@ -23,7 +23,8 @@ WANTLIB += expat ffi fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-x11-2.0 jpeg lcms2 m openjpeg pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png poppler>=10 poppler-glib>=8
-WANTLIB += pthread-stubs stdc++ tiff xcb xcb-render xcb-shm z
+WANTLIB += pthread-stubs tiff xcb xcb-render xcb-shm z
+WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS=		devel/libffi \
 			print/poppler>=0.16

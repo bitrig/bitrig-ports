@@ -3,7 +3,7 @@
 COMMENT=	lightweight PDF document viewer with vi bindings
 
 DISTNAME=	apvlv-0.0.9.6
-REVISION=	6
+REVISION=	7
 CATEGORIES=	print
 HOMEPAGE=	https://code.google.com/p/apvlv/
 
@@ -18,7 +18,8 @@ WANTLIB +=	fontconfig freetype gdk-x11-2.0>=0.14 gdk_pixbuf-2.0>=0.14
 WANTLIB +=	gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB +=	gtk-x11-2.0>=0.14 m pango-1.0 pangocairo-1.0
 WANTLIB +=	pangoft2-1.0 pixman-1 png poppler-glib>=3 poppler>=3
-WANTLIB +=	pthread pthread-stubs stdc++ xcb xcb-shm xcb-render z
+WANTLIB +=	pthread pthread-stubs xcb xcb-shm xcb-render z
+WANTLIB +=	c++ c++abi
 
 MODULES=	devel/gettext
 

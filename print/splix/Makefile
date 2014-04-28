@@ -7,7 +7,7 @@ DISTNAME=	splix-${V}svn
 PKGNAME=	splix-${V}
 EXTRACT_SUFX=	.tar.bz2
 WRKDIST=	${WRKDIR}/splix
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	print
 
@@ -18,7 +18,8 @@ MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c cups cupsimage jbig85 m pthread stdc++
+WANTLIB += c cups cupsimage jbig85 m pthread
+WANTLIB += c++ c++abi
 
 # snapshot of SVN (Fedora tarball)
 MASTER_SITES=	http://pkgs.fedoraproject.org/repo/pkgs/splix/${DISTNAME}${EXTRACT_SUFX}/2901e9482dd1a7c44f7b730696868e09/
