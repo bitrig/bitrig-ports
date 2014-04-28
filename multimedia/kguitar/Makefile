@@ -3,7 +3,7 @@
 COMMENT =		guitar tab editor
 
 DISTNAME =		kguitar-0.5.1
-REVISION=		6
+REVISION=		7
 
 CATEGORIES =		multimedia kde
 
@@ -15,11 +15,12 @@ MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =  ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 c expat
-WANTLIB += fontconfig freetype idn jpeg m png pthread stdc++ util
+WANTLIB += fontconfig freetype idn jpeg m png pthread util
 WANTLIB += xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdeprint
 WANTLIB += ${KDE}/kdesu ${KDE}/kdeui ${KDE}/kio ${KDE}/kparts
 WANTLIB += ${KDE}/kwalletclient
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=kguitar/}
 EXTRACT_SUFX =		.tar.bz2

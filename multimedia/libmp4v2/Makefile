@@ -4,7 +4,7 @@ COMMENT =		read and manipulate the MP4 container format
 
 DISTNAME =		mp4v2-1.9.1
 PKGNAME =		lib${DISTNAME}
-REVISION =		0
+REVISION =		1
 CATEGORIES =		multimedia audio
 
 SHARED_LIBS =		mp4v2	4.0 #1.9
@@ -15,7 +15,8 @@ HOMEPAGE =		https://code.google.com/p/mp4v2/
 PERMIT_PACKAGE_CDROM =	Patents
 PERMIT_PACKAGE_FTP =	Yes
 
-WANTLIB =		c m stdc++
+WANTLIB =		c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		https://mp4v2.googlecode.com/files/
 EXTRACT_SUFX =		.tar.bz2

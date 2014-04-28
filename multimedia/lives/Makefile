@@ -7,7 +7,7 @@ COMMENT =		video editor and a VJ tool
 V =			1.0.10
 DISTNAME =		LiVES-${V}
 PKGNAME =		${DISTNAME:L}
-REVISION =		3
+REVISION =		4
 
 SHARED_LIBS +=		weed		0.0 # 0.2
 SHARED_LIBS +=		weed_slice	0.0 # 0.2
@@ -26,8 +26,9 @@ WANTLIB += cairo drm dv expat ffi fontconfig freetype gdk-x11-2.0
 WANTLIB += gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0
 WANTLIB += gthread-2.0 gtk-x11-2.0 harfbuzz
 WANTLIB += m mjpegutils ogg oil-0.3 pango-1.0 pangocairo-1.0 pangoft2-1.0
-WANTLIB += pcre pixman-1 png pthread pthread-stubs sndio stdc++
+WANTLIB += pcre pixman-1 png pthread pthread-stubs sndio
 WANTLIB += theora usbhid xcb xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MODULES =		devel/gettext
 RUN_DEPENDS =		graphics/ImageMagick \

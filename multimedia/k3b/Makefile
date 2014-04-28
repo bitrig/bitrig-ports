@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		CD/DVD creator
 
 DISTNAME =		k3b-1.0.4
-REVISION=		20
+REVISION=		21
 CATEGORIES =		multimedia
 
 SHARED_LIBS =		k3b	0.0	# 3.0
@@ -21,11 +21,12 @@ WANTLIB += art_lgpl_2 avcodec avformat avutil bz2 c crypto
 WANTLIB += dvdread expat fam fontconfig freetype gsm idn jpeg
 WANTLIB += m mad mp3lame
 WANTLIB += mpcdec ogg orc-0.4 png pthread samplerate schroedinger-1.0
-WANTLIB += sndfile speex ssl stdc++ tag theoradec theoraenc util vorbis
+WANTLIB += sndfile speex ssl tag theoradec theoraenc util vorbis
 WANTLIB += vorbisenc vorbisfile vpx x264 xcb xvidcore z
 WANTLIB += ${KDE}/DCOP ${KDE}/artsc ${KDE}/kdecore ${KDE}/kdefx
 WANTLIB += ${KDE}/kdesu ${KDE}/kdeui ${KDE}/kio ${KDE}/kparts
 WANTLIB += ${KDE}/kwalletclient
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=k3b/}
 EXTRACT_SUFX =		.tar.bz2

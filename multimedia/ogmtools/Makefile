@@ -2,6 +2,7 @@
 
 COMMENT=		ogg mux/demuxer
 DISTNAME=		ogmtools-1.5
+REVISION=		0
 EXTRACT_SUFX=		.tar.bz2
 CATEGORIES=		multimedia
 MASTER_SITES=		${HOMEPAGE}
@@ -11,7 +12,8 @@ HOMEPAGE=		http://www.bunkus.org/videotools/ogmtools/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m stdc++ ogg dvdread vorbis vorbisenc
+WANTLIB += c m ogg dvdread vorbis vorbisenc
+WANTLIB += c++ c++abi pthread
 
 USE_GMAKE=		Yes
 CONFIGURE_STYLE=	gnu

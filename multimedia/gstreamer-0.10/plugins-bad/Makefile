@@ -12,8 +12,8 @@ PKGNAME-main=		gstreamer-plugins-bad-${V}
 PKGNAME-neon=		gstreamer-neon-${V}
 PKGNAME-mjpeg=		gstreamer-mjpeg-${V}
 
-REVISION-main=		16
-REVISION-mjpeg=		7
+REVISION-main=		17
+REVISION-mjpeg=		8
 REVISION-neon=		7
 
 SHARED_LIBS +=  gstphotography-0.10       1.0 # 23.0
@@ -41,16 +41,18 @@ WANTLIB-main += gstpbutils-0.10 gstriff-0.10 gstrtp-0.10 gstsdp-0.10
 WANTLIB-main += gsttag-0.10 gstvideo-0.10 idn jasper jpeg lrdf mms
 WANTLIB-main += mpcdec opus orc-0.4 pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB-main += pixman-1 png pthread-stubs raptor2 rsvg-2 schroedinger-1.0
-WANTLIB-main += sndfile sndio spandsp ssl stdc++ tiff usbhid vpx xcb
+WANTLIB-main += sndfile sndio spandsp ssl tiff usbhid vpx xcb
 WANTLIB-main += xcb-render xcb-shm xslt harfbuzz
 WANTLIB-main += yajl FLAC dvdcss graphite2 ogg vorbis vorbisenc
+WANTLIB-main += c++ c++abi
 
 WANTLIB-neon += ${WANTLIB}
 WANTLIB-neon += asn1 crypto expat gssapi gstbase-0.10 krb5 neon proxy
 WANTLIB-neon += ssl com_err heimbase roken wind
 
 WANTLIB-mjpeg += ${WANTLIB}
-WANTLIB-mjpeg += gstbase-0.10 mjpegutils mpeg2encpp mplex2 stdc++
+WANTLIB-mjpeg += gstbase-0.10 mjpegutils mpeg2encpp mplex2
+WANTLIB-mjpeg += c++ c++abi
 
 BUILD_DEPENDS=		audio/ladspa \
 			graphics/libexif

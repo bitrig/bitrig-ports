@@ -5,7 +5,7 @@ CATEGORIES =	multimedia devel
 VERSION =	4.6.0
 DISTNAME =	phonon-${VERSION}
 HOMEPAGE =	http://phonon.kde.org/
-REVISION =	0
+REVISION =	1
 
 # Renamed to avoid clashing with Qt4's one
 SHARED_LIBS =	phonon_s		0.0 \
@@ -20,11 +20,12 @@ MODULES =		x11/kde4
 MODKDE4_USE =
 MODKDE4_LIB_LINKS =	Yes
 
-WANTLIB =	m pthread stdc++
+WANTLIB =	m pthread
 WANTLIB +=	lib/qt4/QtDBus lib/qt4/QtDeclarative lib/qt4/QtGui
 WANTLIB +=	lib/qt4/QtNetwork lib/qt4/QtScript lib/qt4/QtSql lib/qt4/QtSvg
 WANTLIB +=	lib/qt4/QtTest lib/qt4/QtXml lib/qt4/QtXmlPatterns
 WANTLIB +=	pulse pulse-mainloop-glib qzeitgeist
+WANTLIB +=	c++ c++abi
 
 LIB_DEPENDS =	productivity/libqzeitgeist>=0.8.0 \
 		audio/pulseaudio

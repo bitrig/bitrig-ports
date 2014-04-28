@@ -3,12 +3,13 @@
 COMMENT =	VLC-based Phonon backend
 VERSION =	0.6.1
 DISTNAME =	phonon-backend-vlc-${VERSION}
-REVISION =	2
+REVISION =	3
 
 MASTER_SITES =	${MASTER_SITE_KDE:=stable/phonon/phonon-backend-vlc/${VERSION}/src/}
 
 LIB_DEPENDS =	x11/vlc>=2
 
-WANTLIB =	lib/qt4/QtGui m stdc++ vlc vlccore
+WANTLIB =	lib/qt4/QtGui m vlc vlccore
+WANTLIB +=	c++ c++abi pthread
 
 .include <bsd.port.mk>

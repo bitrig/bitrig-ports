@@ -3,7 +3,7 @@
 COMMENT=	xml2swf and swf2xml processor with import functionalities
 
 DISTNAME=	swfmill-0.3.1
-REVISION=		0
+REVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	${HOMEPAGE}releases/
 
@@ -12,7 +12,8 @@ HOMEPAGE=	http://swfmill.org/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c exslt freetype gcrypt gpg-error m png stdc++ xml2 xslt z
+WANTLIB=	c exslt freetype gcrypt gpg-error m png xml2 xslt z
+WANTLIB +=	c++ c++abi pthread
 
 MODULES=	devel/gettext
 LIB_DEPENDS=	graphics/png \

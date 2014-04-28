@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	library for reading and writing QuickTime files
 
 DISTNAME=	libquicktime-1.2.4
-REVISION=	2
+REVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libquicktime/}
 
@@ -23,9 +23,10 @@ WANTLIB += ffi faad fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gsm gthread-2.0
 WANTLIB += gtk-x11-2.0 jpeg m mp3lame ogg orc-0.4 pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
-WANTLIB += schroedinger-1.0 sndio speex stdc++ swscale theoradec
+WANTLIB += schroedinger-1.0 sndio speex swscale theoradec
 WANTLIB += theoraenc vorbis vorbisenc vorbisfile vpx x264 xcb
 WANTLIB += xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext
 BUILD_DEPENDS=	devel/doxygen>=1.7.2

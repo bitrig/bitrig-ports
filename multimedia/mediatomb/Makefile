@@ -4,7 +4,7 @@ COMMENT =	UPnP media server
 
 VER =		0.12.1
 DISTNAME =	mediatomb-${VER}
-REVISION =	11
+REVISION =	12
 
 CATEGORIES =	multimedia
 
@@ -14,7 +14,8 @@ HOMEPAGE =	http://mediatomb.cc/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =	avformat avutil c crypto curl exif expat ffmpegthumbnailer idn
-WANTLIB +=	m magic mozjs mp4v2 pthread sqlite3 ssl stdc++ tag z
+WANTLIB +=	m magic mozjs mp4v2 pthread sqlite3 ssl tag z
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=mediatomb/}
 

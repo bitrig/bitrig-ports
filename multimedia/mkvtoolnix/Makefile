@@ -3,7 +3,7 @@
 COMMENT=	create, alter and inspect Matroska files
 
 DISTNAME=	mkvtoolnix-4.0.0
-REVISION=	3
+REVISION=	4
 CATEGORIES=	multimedia x11
 MASTER_SITES=	${HOMEPAGE}/sources/
 EXTRACT_SUFX=	.tar.bz2
@@ -17,7 +17,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	FLAC boost_filesystem-mt boost_regex-mt boost_system-mt \
 		bz2 c ebml expat lzo2 m magic matroska ogg pthread \
-		stdc++ vorbis z
+		vorbis z
+WANTLIB +=	c++ c++abi
 
 MODULES=	devel/gettext
 

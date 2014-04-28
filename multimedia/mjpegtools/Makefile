@@ -3,7 +3,7 @@
 COMMENT=		tools to edit/modify/encode video streams
 
 DISTNAME=		mjpegtools-2.0.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mjpeg/}
 
@@ -25,8 +25,9 @@ WANTLIB=		GL SDL SDL_gfx X11 Xau Xcomposite Xcursor Xdamage \
 			gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0 \
 			gobject-2.0 gthread-2.0 gtk-x11-2.0 jpeg m pango-1.0 \
 			pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread \
-			pthread-stubs sndio stdc++ usbhid xcb xcb-render \
+			pthread-stubs sndio usbhid xcb xcb-render \
 			xcb-shm z
+WANTLIB +=		c++ c++abi
 
 MODULES=		devel/gettext
 LIB_DEPENDS=		devel/sdl \

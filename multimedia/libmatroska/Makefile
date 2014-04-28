@@ -3,6 +3,7 @@
 COMMENT=	extensible open standard audio/video container library
 
 DISTNAME=	libmatroska-1.3.0
+REVISION=	0
 CATEGORIES=	multimedia
 MASTER_SITES=	http://dl.matroska.org/downloads/libmatroska/
 EXTRACT_SUFX=	.tar.bz2
@@ -16,7 +17,8 @@ MAINTAINER=	Brad Smith <brad@comstyle.com>
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	ebml>=2.1 m stdc++
+WANTLIB=	ebml>=2.1 m
+WANTLIB +=	c++ c++abi pthread
 
 LIB_DEPENDS=	textproc/libebml>=1.2.2
 

@@ -5,6 +5,7 @@ CATEGORIES =	multimedia
 COMMENT =	closed caption subtitles extractor
 HOMEPAGE = 	http://ccextractor.sourceforge.net/
 V =		0.56
+REVISION =	0
 DISTFILES =	ccextractor.${V:S/.//}-src.zip
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=ccextractor/}
 DISTNAME =	ccextractor-$V
@@ -27,6 +28,7 @@ do-install:
 		${INSTALL_DATA} $$i ${DOCDIR}; \
 	done
 
-WANTLIB +=	c m stdc++ 
+WANTLIB +=	c m
+WANTLIB +=	c++ c++abi pthread
 
 .include <bsd.port.mk>

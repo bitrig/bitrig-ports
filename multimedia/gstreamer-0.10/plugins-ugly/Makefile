@@ -13,7 +13,7 @@ PKGNAME-sidplay=	gstreamer-sidplay-${V}
 PKGNAME-lame=		gstreamer-lame-${V}
 
 REVISION-main=		4
-REVISION-sidplay=	2
+REVISION-sidplay=	3
 REVISION-lame=		2
 
 PERMIT_PACKAGE_CDROM=	Patent issues
@@ -32,7 +32,8 @@ WANTLIB-main += gstsdp-0.10 gsttag-0.10 gstvideo-0.10 mad orc-0.4 twolame
 WANTLIB-main += x264 dvdcss
 
 WANTLIB-sidplay += ${WANTLIB}
-WANTLIB-sidplay += gstbase-0.10 sidplay stdc++
+WANTLIB-sidplay += gstbase-0.10 sidplay
+WANTLIB-sidplay += c++ c++abi
 
 WANTLIB-lame += ${WANTLIB}
 WANTLIB-lame += gstaudio-0.10 gstbase-0.10 gstinterfaces-0.10 gstpbutils-0.10

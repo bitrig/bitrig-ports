@@ -6,7 +6,7 @@ SRCS=		AP_commons.cpp AtomicParsley_genres.cpp AP_iconv.cpp \
 		APar_uuid.cpp main.cpp
 NOMAN =
 BINDIR =	${TRUEPREFIX}/bin
-LDFLAGS =	-lstdc++ -lm
+LDFLAGS =	-lc++ -lc++abi -lpthread -lm
 
 .SUFFIXES: .cpp
 

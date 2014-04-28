@@ -18,7 +18,7 @@ PKGNAME-dv=		gstreamer-dv-${V}
 PKGNAME-caca=		gstreamer-libcaca-${V}
 EPOCH-main=		0
 
-REVISION-main=		11
+REVISION-main=		12
 REVISION-aalib=		5
 REVISION-dv=		5
 REVISION-caca=		5
@@ -43,7 +43,8 @@ WANTLIB-main += gstfft-0.10 gstinterfaces-0.10 gstnetbuffer-0.10 gstpbutils-0.10
 WANTLIB-main += gstriff-0.10 gstrtp-0.10 gstrtsp-0.10 gstsdp-0.10 gsttag-0.10
 WANTLIB-main += gstvideo-0.10 jpeg ogg orc-0.4 ossaudio pixman-1 png
 WANTLIB-main += pthread-stubs shout sndio soup-2.4 soup-gnome-2.4 speex
-WANTLIB-main += sqlite3 stdc++ tag theora vorbis wavpack xcb xcb-render
+WANTLIB-main += sqlite3 tag theora vorbis wavpack xcb xcb-render
+WANTLIB-main += c++ c++abi
 
 WANTLIB-aalib += ${WANTLIB}
 WANTLIB-aalib += X11 aa ncurses xcb

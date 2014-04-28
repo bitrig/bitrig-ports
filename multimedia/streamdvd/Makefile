@@ -3,7 +3,7 @@
 COMMENT=	fast tool to backup video DVDs 'on the fly'
 
 DISTNAME=	streamdvd-0.4
-REVISION=	0
+REVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.badabum.de/down/
 
@@ -17,7 +17,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 NO_TEST=	Yes
 
 LIB_DEPENDS=	devel/libdvdread>=4.2.0
-WANTLIB=	c m stdc++ dvdread
+WANTLIB=	c m dvdread
+WANTLIB +=	c++ c++abi pthread
 
 WRKDIST=	${WRKDIR}/StreamDVD-0.4
 

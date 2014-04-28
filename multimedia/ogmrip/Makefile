@@ -10,7 +10,7 @@ DISTNAME =		ogmrip-$V
 PKGNAME-main =		ogmrip-$V
 PKGNAME-dvdcpy =	dvdcpy-$V
 
-REVISION-main=		3
+REVISION-main=		4
 REVISION-dvdcpy=	1
 
 SHARED_LIBS +=  ogmdvd-gtk                0.0 # 1.0
@@ -39,8 +39,9 @@ WANTLIB-main += fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0
 WANTLIB-main += glade-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB-main += gtk-x11-2.0 jpeg m notify ogg pango-1.0 pangocairo-1.0
 WANTLIB-main += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
-WANTLIB-main += stdc++ theora tiff xcb xcb-render xcb-shm xml2 z
+WANTLIB-main += theora tiff xcb xcb-render xcb-shm xml2 z
 WANTLIB-main += harfbuzz dvdcss graphite2
+WANTLIB-main += c++ c++abi
 
 WANTLIB-dvdcpy += c dvdread dvdcss
 

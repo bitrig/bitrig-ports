@@ -3,7 +3,7 @@
 COMMENT=	high-speed Dirac codec
 
 DISTNAME=	schroedinger-1.0.11
-REVISION=	0
+REVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	${HOMEPAGE}/download/schroedinger/
 
@@ -16,7 +16,8 @@ MAINTAINER=	Brad Smith <brad@comstyle.com>
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	m orc-0.4>=4.0 pthread stdc++
+WANTLIB=	m orc-0.4>=4.0 pthread
+WANTLIB +=	c++ c++abi
 
 LIB_DEPENDS=	devel/orc>=0.4.16p0
 

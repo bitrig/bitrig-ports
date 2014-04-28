@@ -3,6 +3,7 @@
 COMMENT=		command line MPEG audio/video/system file toolbox
 
 DISTNAME=		mpgtx-1.3.1
+REVISION=		0
 CATEGORIES=		multimedia sysutils
 
 HOMEPAGE=		http://mpgtx.sourceforge.net/
@@ -12,7 +13,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mpgtx/}
 
-WANTLIB=		c m stdc++
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 USE_GMAKE=		Yes
 

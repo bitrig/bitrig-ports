@@ -6,7 +6,7 @@ V=		2.4.4
 DISTNAME=	avidemux_${V}
 PKGNAME=	avidemux-${V}
 
-REVISION=	15
+REVISION=	16
 
 CATEGORIES=	multimedia
 
@@ -22,9 +22,10 @@ WANTLIB += Xi Xinerama Xrandr Xrender Xv Xxf86vm atk-1.0 c cairo drm
 WANTLIB += expat fontconfig freetype gio-2.0 glib-2.0 gmodule-2.0
 WANTLIB += gobject-2.0 gthread-2.0 m ogg pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs sndio
-WANTLIB += stdc++ xcb xcb-render xcb-shm z gdk_pixbuf-2.0 gdk-x11-2.0
+WANTLIB += xcb xcb-render xcb-shm z gdk_pixbuf-2.0 gdk-x11-2.0
 WANTLIB += gtk-x11-2.0 faad mp3lame vorbis vorbisenc xml2 xvidcore
 WANTLIB += ffi harfbuzz
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext
 

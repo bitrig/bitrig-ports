@@ -4,7 +4,7 @@ COMMENT=		bad elements for GStreamer
 
 DISTNAME=		gst-plugins-bad-${V}
 PKGNAME=		${GST_PKGNAME_PREFIX}-plugins-bad-${V}
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  gstphotography-1.0      1.0    # 202.0
 SHARED_LIBS +=  gstbasecamerabinsrc-1.0 1.0    # 202.0
@@ -23,8 +23,9 @@ WANTLIB += gstreamer-1.0 gstrtp-1.0 gstsdp-1.0 gsttag-1.0 gstvideo-1.0
 WANTLIB += gthread-2.0 harfbuzz hogweed m mms nettle opus orc-0.4
 WANTLIB += p11-kit pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB += pixman-1 png pthread pthread-stubs rsvg-2 schroedinger-1.0
-WANTLIB += stdc++ tasn1 xcb xcb-dri2 xcb-render xcb-shape xcb-shm
+WANTLIB += tasn1 xcb xcb-dri2 xcb-render xcb-shape xcb-shm
 WANTLIB += xcb-xfixes xml2 z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_GST:=gst-plugins-bad/}
 
