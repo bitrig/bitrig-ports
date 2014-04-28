@@ -3,7 +3,7 @@
 COMMENT=		ASCII art mathematics
 
 DISTNAME=		aamath-0.3
-REVISION=		1
+REVISION=		2
 CATEGORIES=		math
 
 HOMEPAGE=		http://fuse.superglue.se/aamath/
@@ -15,7 +15,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=		http://openbsd.dead-parrot.de/distfiles/
 
-WANTLIB=		c m stdc++ termcap readline
+WANTLIB=		c m termcap readline
+WANTLIB +=		c++ c++abi pthread
 LIB_DEPENDS=		devel/readline
 
 NO_TEST=		Yes

@@ -3,7 +3,7 @@
 COMMENT=		minimalistic Boolean satisfiability solver
 
 DISTNAME=		minisat-2.2.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=		math
 
 HOMEPAGE=		http://minisat.se/
@@ -18,7 +18,8 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX} \
 			MiniSat.pdf
 EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
 
-WANTLIB +=		c m stdc++ z
+WANTLIB +=		c m z
+WANTLIB +=		c++ c++abi pthread
 
 USE_GMAKE=		Yes
 ALL_TARGET=		minisat

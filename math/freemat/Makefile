@@ -5,7 +5,7 @@ BROKEN-hppa =	undefined reference to lapack funcs
 
 V=		4.0
 DISTNAME=	FreeMat-${V}-Source
-REVISION=		1
+REVISION=	2
 PKGNAME=	freemat-${V}
 
 CATEGORIES=	graphics math
@@ -15,9 +15,10 @@ HOMEPAGE=	http://freemat.sourceforge.net/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += GL GLU ICE SM X11 Xext c m ncurses pcre pthread stdc++
+WANTLIB += GL GLU ICE SM X11 Xext c m ncurses pcre pthread
 WANTLIB += z amd fftw3 fftw3f portaudio umfpack
 WANTLIB += QtGui QtNetwork QtOpenGL QtSvg QtXml
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=freemat/}
 

@@ -3,7 +3,7 @@
 COMMENT-main=	graph drawing software
 
 DISTNAME=	graphviz-2.36.0
-REVISION=	0
+REVISION=	1
 PKGNAME-main=	${DISTNAME}
 CATEGORIES=	math devel graphics
 
@@ -53,8 +53,9 @@ WANTLIB += freetype gd gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0
 WANTLIB += gmodule-2.0 gmp gobject-2.0 graphite2 gthread-2.0 gtk-x11-2.0
 WANTLIB += guile harfbuzz jpeg lcms2 ltdl m openjpeg pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre perl pixman-1 png
-WANTLIB += poppler poppler-glib pthread pthread-stubs rsvg-2 stdc++
+WANTLIB += poppler poppler-glib pthread pthread-stubs rsvg-2
 WANTLIB += tiff tk85 util vpx xcb xcb-render xcb-shm xml2 z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		x11/tk \

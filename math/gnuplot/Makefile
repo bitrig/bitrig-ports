@@ -4,7 +4,7 @@ COMMENT =	command-driven interactive function plotting program
 
 V =		4.6
 PATCHLEVEL =	3
-REVISION =	1
+REVISION =	2
 DISTNAME =	gnuplot-${V}.${PATCHLEVEL}
 CATEGORIES =	math graphics
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=gnuplot/}
@@ -15,7 +15,8 @@ HOMEPAGE =	http://www.gnuplot.info/
 # http://gnuplot.cvs.sourceforge.net/gnuplot/gnuplot/Copyright
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m ncurses pthread readline stdc++ z
+WANTLIB += c m ncurses pthread readline z
+WANTLIB += c++ c++abi
 LIB_DEPENDS=	devel/readline
 
 FLAVORS =	no_cairo no_x11 with_emacs

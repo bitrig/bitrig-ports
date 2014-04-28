@@ -18,7 +18,7 @@ PKGNAME-main =	${DISTNAME}
 PKGNAME-c++ =	plplot-c++-${VERSION}
 PKGNAME-f77 =	plplot-f77-${VERSION}
 REVISION-main =	9
-REVISION-c++ =	9
+REVISION-c++ =	10
 REVISION-f77 =	12
 
 CATEGORIES =	math graphics
@@ -75,7 +75,8 @@ myWANTLIB += gobject-2.0 jpeg m pango-1.0 pangocairo-1.0 pangoft2-1.0
 myWANTLIB += png z ${MODGETTEXT_WANTLIB}
 
 WANTLIB-main =	${myWANTLIB} c pthread
-WANTLIB-c++ =	${myWANTLIB} csirocsa plplotd stdc++
+WANTLIB-c++ =	${myWANTLIB} csirocsa plplotd
+WANTLIB-c++ +=	c++ c++abi pthread
 WANTLIB-f77 +=	${myWANTLIB} csirocsa plplotd ${MODFORTRAN_WANTLIB}
 
 myLIB_DEPENDS =	devel/glib2 \

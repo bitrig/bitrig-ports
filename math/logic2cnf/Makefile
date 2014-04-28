@@ -2,6 +2,7 @@
 COMMENT =		easy to use propositional logic solver based on MiniSAT
 
 DISTNAME =		logic2cnf-0.7.2
+REVISION =		0
 
 CATEGORIES =		math lang
 
@@ -11,7 +12,8 @@ MAINTAINER =		Edd Barrett <edd@openbsd.org>
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=		c m stdc++
+WANTLIB +=		c m
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${HOMEPAGE}/raw-attachment/wiki/releases/
 

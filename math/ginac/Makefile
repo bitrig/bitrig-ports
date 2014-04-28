@@ -6,7 +6,7 @@ DISTNAME=	ginac-1.6.2
 SHARED_LIBS +=	ginac	3.0	# 0.3
 CATEGORIES=	math
 
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.ginac.de/
 
@@ -19,7 +19,8 @@ MASTER_SITES=	ftp://ftpthep.physik.uni-mainz.de/pub/GiNaC/ \
 		${HOMEPAGE}
 EXTRACT_SUFX=	.tar.bz2
 
-WANTLIB=	c m ncurses readline stdc++ gmp cln
+WANTLIB=	c m ncurses readline gmp cln
+WANTLIB +=	c++ c++abi pthread
 
 LIB_DEPENDS=	devel/cln \
 		devel/readline

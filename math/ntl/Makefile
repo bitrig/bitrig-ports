@@ -3,6 +3,7 @@
 COMMENT =	Victor Shoup's Number Theory Library
 
 DISTNAME =	ntl-6.1.0
+REVISION =	0
 SHARED_LIBS =	ntl	1.1	# 0.0
 CATEGORIES =	math
 
@@ -13,7 +14,8 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		m gmp stdc++
+WANTLIB =		m gmp
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${HOMEPAGE}
 

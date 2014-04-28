@@ -6,6 +6,7 @@ COMMENT =		weighted finite-state transducers library
 NOT_FOR_ARCHS=		${GCC3_ARCHS}
 
 DISTNAME =		openfst-1.3.1
+REVISION=		0
 
 SHARED_LIBS +=		fst                       0.0 # 0.0
 SHARED_LIBS +=		fstscript                 0.0 # 0.0
@@ -17,7 +18,8 @@ HOMEPAGE =		http://www.openfst.org/twiki/bin/view/FST/WebHome
 # Apache 2.0
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB +=		c m stdc++
+WANTLIB +=		c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		http://www.openfst.org/twiki/pub/FST/FstDownload/
 

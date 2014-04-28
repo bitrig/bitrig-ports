@@ -3,6 +3,7 @@
 COMMENT =		wxWidgets GUI for the computer algebra system maxima
 
 DISTNAME =		wxMaxima-12.09.0
+REVISION =		0
 CATEGORIES =		math
 
 HOMEPAGE =		http://wxmaxima.sourceforge.net/
@@ -13,8 +14,9 @@ PERMIT_PACKAGE_CDROM =	Yes
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=wxmaxima/}
 MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
-WANTLIB += c m pthread stdc++ wx_base wx_base_net wx_base_xml
+WANTLIB += c m pthread wx_base wx_base_net wx_base_xml
 WANTLIB += wx_gtk2_adv wx_gtk2_aui wx_gtk2_core wx_gtk2_html
+WANTLIB += c++ c++abi
 
 RUN_DEPENDS =		devel/desktop-file-utils \
 			math/gnuplot \

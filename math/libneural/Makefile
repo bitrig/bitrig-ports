@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		three layer backpropagation neural network library
 
 DISTNAME=		libneural-1.0.3
-REVISION=		2
+REVISION=		3
 SHARED_LIBS +=		neural 0.0      # .0.0
 CATEGORIES=		math devel
 
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=		${HOMEPAGE}
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 
 CONFIGURE_STYLE=	gnu

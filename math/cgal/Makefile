@@ -13,6 +13,7 @@ COMMENT =		Computational Geometry Algorithms Library
 DISTNAME =		CGAL-3.8
 MASTER_SITES =		https://gforge.inria.fr/frs/download.php/28500/
 PKGNAME =		${DISTNAME:L}
+REVISION=		0
 EPOCH =			0
 
 SHARED_ONLY =		Yes
@@ -30,7 +31,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 # m>=5.3 for fenv.h support
 WANTLIB =		GL GLU ICE SM X11 Xext boost_thread-mt gmp gmpxx \
-			lib/qt4/QtGui lib/qt4/QtOpenGL m>=5.3 mpfr stdc++ z
+			lib/qt4/QtGui lib/qt4/QtOpenGL m>=5.3 mpfr z
+WANTLIB +=		c++ c++abi pthread
 
 MODULES =		devel/cmake \
 			x11/qt4

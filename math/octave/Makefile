@@ -8,7 +8,7 @@ COMMENT =	high-level language for numerical computations
 
 VERSION =	3.0.5
 DISTNAME =	octave-${VERSION}
-REVISION =	13
+REVISION =	14
 CATEGORIES =	math
 
 SHARED_LIBS =	cruft		5.0 \
@@ -22,8 +22,9 @@ MAINTAINER =	Steven Mestdagh <steven@openbsd.org>
 # GPL v3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB=	c m ncurses readline stdc++ z ${MODFORTRAN_WANTLIB} \
+WANTLIB=	c m ncurses readline z ${MODFORTRAN_WANTLIB} \
 		fftw3>=3 lapack>=3 blas>=1 amd umfpack pcre>=1 curl>=6
+WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES =	${MASTER_SITE_GNU:=octave/}
 

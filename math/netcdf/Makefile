@@ -6,7 +6,7 @@ BROKEN-hppa =	fails to configure
 COMMENT=	library for machine-independent, array-oriented data access
 
 DISTNAME=	netcdf-3.6.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	math
 
 SHARED_LIBS=	netcdf		4.0 \
@@ -23,7 +23,8 @@ BUILD_DEPENDS =	${MODFORTRAN_BUILD_DEPENDS}
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m stdc++
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES=		ftp://ftp.unidata.ucar.edu/pub/netcdf/
 

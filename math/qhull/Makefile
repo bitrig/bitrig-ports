@@ -4,6 +4,7 @@ COMMENT =		computing the convex hull
 
 VERSION =		2011.1
 DISTNAME =		qhull-${VERSION}
+REVISION =		0
 
 SHARED_LIBS =		qhull6		0.0 # 6.2
 
@@ -14,7 +15,8 @@ HOMEPAGE =		http://www.qhull.org/
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m stdc++
+WANTLIB =		c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${HOMEPAGE}download/
 DISTFILES =		${DISTNAME}-src${EXTRACT_SUFX}
