@@ -4,6 +4,7 @@ COMMENT=	GNU Transport Layer Security library
 
 V=		3.2.13
 DISTNAME=	gnutls-${V}
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	security
@@ -20,8 +21,9 @@ MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 # LGPLv2.1+ - GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c ffi gmp hogweed m nettle p11-kit pthread stdc++ tasn1
+WANTLIB += c ffi gmp hogweed m nettle p11-kit pthread tasn1
 WANTLIB += z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	ftp://ftp.gnutls.org/gcrypt/gnutls/v${V:R}/
 

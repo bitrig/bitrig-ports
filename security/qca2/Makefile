@@ -7,7 +7,7 @@ DISTNAME =	qca-2.0.3
 PKGNAME =	qca2-2.0.3
 CATEGORIES =	security
 SHARED_LIBS +=	qca2	0.0
-REVISION =	3
+REVISION =	4
 
 HOMEPAGE =	http://delta.affinix.com/qca/
 
@@ -26,6 +26,7 @@ MAKE_FLAGS =	LIBqca2_VERSION=${LIBqca2_VERSION}
 FAKE_FLAGS =	INSTALL_ROOT=${WRKINST}
 NO_TEST =	Yes
 
-WANTLIB += c m pthread stdc++
+WANTLIB += c m pthread
+WANTLIB += c++ c++abi
 
 .include <bsd.port.mk>

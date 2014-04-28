@@ -6,6 +6,7 @@ COMMENT=	portable, easy to use, and efficient C++ crypto library
 
 DISTNAME=	Botan-1.10.8
 PKGNAME=	${DISTNAME:L}
+REVISION=	0
 CATEGORIES=	security
 MASTER_SITES=	${HOMEPAGE}files/
 EXTRACT_SUFX=	.tbz
@@ -17,7 +18,8 @@ HOMEPAGE=	http://botan.randombit.net/
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	bz2 crypto gmp m pthread stdc++ z
+WANTLIB=	bz2 crypto gmp m pthread z
+WANTLIB +=	c++ c++abi
 
 MODULES=	lang/python
 MODPY_RUNDEP=	No

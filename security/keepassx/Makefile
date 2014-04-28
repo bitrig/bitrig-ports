@@ -3,7 +3,7 @@
 COMMENT =	management tool for sensitive data
 
 DISTNAME =	keepassx-0.4.3
-REVISION =	2
+REVISION =	3
 CATEGORIES =	security
 
 HOMEPAGE =	http://www.keepassx.org/
@@ -17,7 +17,8 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=keepassx/}
 
 MODULES =	x11/qt4 devel/cmake
 
-WANTLIB += QtGui QtXml X11 Xtst c m pthread stdc++
+WANTLIB += QtGui QtXml X11 Xtst c m pthread
+WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		misc/shared-mime-info 

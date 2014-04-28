@@ -5,6 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		GnuPG plugin for QCA2
 DISTNAME =		qca-gnupg-2.0.0-beta3
 PKGNAME =		${DISTNAME:S/-beta/beta/}
+REVISION= 		0
 CATEGORIES =		security
 HOMEPAGE =		http://delta.affinix.com/qca/
 
@@ -14,7 +15,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 MASTER_SITES =		http://delta.affinix.com/download/qca/2.0/plugins/
 EXTRACT_SUFX =		.tar.bz2
 
-WANTLIB += m pthread qca2 stdc++
+WANTLIB += m pthread qca2
+WANTLIB += c++ c++abi
 
 MODULES =		x11/qt4
 

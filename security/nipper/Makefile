@@ -5,7 +5,7 @@ COMMENT =		audit network device configuration
 V =			0.12.0
 DISTNAME =		nipper-cli-$V
 PKGNAME =		nipper-$V
-REVISION =		1
+REVISION =		2
 CATEGORIES =		security net
 
 HOMEPAGE =		http://nipper.sf.net/
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_FTP =	Yes
 
 EXTRACT_SUFX =		.tgz
 
-WANTLIB =		c m stdc++ nipper
+WANTLIB =		c m nipper
+WANTLIB +=		c++ c++abi pthread
 
 LIB_DEPENDS=		security/libnipper
 

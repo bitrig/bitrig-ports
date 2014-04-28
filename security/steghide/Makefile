@@ -3,7 +3,7 @@
 COMMENT =		software able to hide data in various kind of files
 
 DISTNAME =		steghide-0.5.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		security
 HOMEPAGE =		http://steghide.sf.net/
 
@@ -17,7 +17,8 @@ MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=steghide/}
 LIB_DEPENDS =		security/libmcrypt \
 			security/mhash \
 			graphics/jpeg
-WANTLIB =		c jpeg m mhash mcrypt stdc++ z
+WANTLIB =		c jpeg m mhash mcrypt z
+WANTLIB +=		c++ c++abi pthread
 MODULES =		devel/gettext
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \

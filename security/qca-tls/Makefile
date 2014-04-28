@@ -3,7 +3,7 @@
 COMMENT=		Qt Cryptographic Architecture, TLS plugin
 
 DISTNAME=		qca-tls-1.0
-REVISION=		10
+REVISION=		11
 CATEGORIES=		security
 
 HOMEPAGE=		http://delta.affinix.com/qca/
@@ -11,7 +11,8 @@ HOMEPAGE=		http://delta.affinix.com/qca/
 RUN_DEPENDS=		security/qca
 
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		crypto m ssl stdc++
+WANTLIB=		crypto m ssl
+WANTLIB +=		c++ c++abi pthread
 
 SHARED_ONLY=		Yes
 MODULES=		x11/qt3

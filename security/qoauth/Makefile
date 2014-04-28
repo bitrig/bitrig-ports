@@ -5,6 +5,7 @@ COMMENT =	OAuth support library for Qt-based applications
 V =		1.0.1
 DISTNAME =	qoauth-${V}-src
 PKGNAME =	${DISTNAME:C/-src//}
+REVISION =	0
 CATEGORIES =	security devel
 HOMEPAGE =	https://github.com/ayoy/qoauth
 
@@ -13,7 +14,8 @@ SHARED_LIBS =	qoauth		0.0
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		lib/qt4/QtNetwork m pthread qca2 stdc++
+WANTLIB =		lib/qt4/QtNetwork m pthread qca2
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://files.ayoy.net/qoauth/$V/
 EXTRACT_SUFX =		.tar.bz2

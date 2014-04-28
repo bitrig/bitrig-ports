@@ -2,7 +2,7 @@
 
 COMMENT =		fuse-based cryptographic filesystem
 DISTNAME =		encfs-1.7.4
-REVISION =		0
+REVISION =		1
 SHARED_LIBS = 		encfs	0.0	# 6.1
 CATEGORIES =		security
 HOMEPAGE =		http://www.arg0.net/encfs
@@ -11,7 +11,8 @@ HOMEPAGE =		http://www.arg0.net/encfs
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB = 		boost_filesystem boost_serialization boost_system c \
-			crypto fuse m pthread rlog ssl stdc++
+			crypto fuse m pthread rlog ssl
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://encfs.googlecode.com/files/
 EXTRACT_SUFX =		.tgz

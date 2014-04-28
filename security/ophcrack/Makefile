@@ -3,6 +3,7 @@
 COMMENT =		password cracker based on rainbow tables
 
 DISTNAME =		ophcrack-3.6.0
+REVISION =		0
 CATEGORIES =		security
 
 HOMEPAGE =		http://ophcrack.sourceforge.net/
@@ -31,7 +32,8 @@ FLAVOR ?=
 
 .if ${FLAVOR:Mgui}
 WANTLIB +=		ICE SM X11 Xext Xi Xinerama Xrender fontconfig
-WANTLIB +=		freetype stdc++ QtGui>=8 QtCore>=7 qwt
+WANTLIB +=		freetype QtGui>=8 QtCore>=7 qwt
+WANTLIB +=		c++ c++abi pthread
 
 MODULES +=		x11/qt4
 

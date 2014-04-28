@@ -3,6 +3,7 @@
 COMMENT=	create and manage certificates, CSRs, keys, etc
 
 DISTNAME=	xca-0.9.3
+REVISION=	0
 CATEGORIES=	security x11
 
 HOMEPAGE=	http://xca.sourceforge.net/
@@ -18,7 +19,8 @@ USE_GMAKE=	Yes
 
 CONFIGURE_STYLE=simple
 
-WANTLIB += QtGui X11 c crypto ltdl pthread ssl stdc++
+WANTLIB += QtGui X11 c crypto ltdl pthread ssl
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	devel/libtool,-ltdl
 RUN_DEPENDS=	devel/desktop-file-utils \

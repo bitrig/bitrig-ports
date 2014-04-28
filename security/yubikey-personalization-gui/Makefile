@@ -3,6 +3,7 @@
 COMMENT=	Qt GUI to configure YubiKeys
 
 DISTNAME=	yubikey-personalization-gui-3.1.14
+REVISION=	0
 
 CATEGORIES=	security x11
 
@@ -14,7 +15,8 @@ MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += ICE QtGui SM X11 Xext Xi Xinerama Xrender c fontconfig
-WANTLIB += freetype m pthread stdc++ ykpers-1 yubikey
+WANTLIB += freetype m pthread ykpers-1 yubikey
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://yubico.github.io/yubikey-personalization-gui/releases/
 

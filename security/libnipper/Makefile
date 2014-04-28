@@ -3,7 +3,7 @@
 COMMENT =		library for nipper
 
 DISTNAME =		libnipper-0.12.6
-REVISION =		2
+REVISION =		3
 CATEGORIES =		security net
 
 SHARED_LIBS =		nipper 0.0
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_FTP =	Yes
 
 EXTRACT_SUFX =		.tgz
 
-WANTLIB=		m stdc++
+WANTLIB=		m
+WANTLIB +=		c++ c++abi pthread
 CONFIGURE_STYLE =	cmake
 MODULES +=		devel/cmake
 

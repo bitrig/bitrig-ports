@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		SSL/TLS plugin for QCA2
 DISTNAME =		qca-ossl-2.0.0-beta3
 PKGNAME =		${DISTNAME:S/-beta/beta/}
-REVISION =		1
+REVISION =		2
 CATEGORIES =		security
 HOMEPAGE =		http://delta.affinix.com/qca/
 MAINTAINER =		Vadim Zhukov <persgray@gmail.com>
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 MASTER_SITES =		http://delta.affinix.com/download/qca/2.0/plugins/
 EXTRACT_SUFX =		.tar.bz2
 
-WANTLIB +=		crypto m qca2 ssl stdc++
+WANTLIB +=		crypto m qca2 ssl
+WANTLIB +=		c++ c++abi pthread
 
 MODULES =		x11/qt4
 LIB_DEPENDS =		security/qca2

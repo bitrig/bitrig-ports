@@ -5,6 +5,7 @@ COMMENT =	OAuth support library for Qt-based applications
 V =		0.97
 DISTNAME =	${V}
 PKGNAME =	kqoauth-${V}
+REVISION=	0
 CATEGORIES =	security devel
 HOMEPAGE =	https://github.com/kypeli/kQOAuth
 
@@ -14,8 +15,9 @@ SHARED_LIBS =	kqoauth		0.0
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =  ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
-WANTLIB += m pthread stdc++
+WANTLIB += m pthread
 WANTLIB += lib/qt4/QtGui lib/qt4/QtNetwork
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${HOMEPAGE}/archive/
 DIST_SUBDIR =	kqoauth

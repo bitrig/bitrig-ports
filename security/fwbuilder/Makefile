@@ -3,7 +3,7 @@
 COMMENT =	firewall GUI
 DISTNAME =	fwbuilder-5.1.0.3599
 CATEGORIES =	net security
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://www.fwbuilder.org/
 
@@ -52,8 +52,9 @@ TEST_ENV +=		COPTS="${COPTS}"
 TEST_IS_INTERACTIVE =	X11
 
 WANTLIB += c crypto m netsnmp QtGui QtNetwork
-WANTLIB += pthread stdc++ util xml2 xslt z
+WANTLIB += pthread util xml2 xslt z
 WANTLIB += ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
+WANTLIB += c++ c++abi
 
 FAKE_FLAGS =	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		INSTALL_FILE="${INSTALL_DATA}"

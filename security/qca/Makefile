@@ -3,7 +3,7 @@
 COMMENT=	Qt Cryptographic Architecture
 
 DISTNAME=	qca-1.0
-REVISION=	6
+REVISION=	7
 CATEGORIES=	security
 SHARED_LIBS=	qca	2.0
 
@@ -18,7 +18,8 @@ MASTER_SITES=		http://delta.affinix.com/download/qca/
 EXTRACT_SUFX=		.tar.bz2
 
 MODULES=		x11/qt3
-WANTLIB=		m stdc++
+WANTLIB=		m
+WANTLIB +=		c++ c++abi pthread
 
 NO_TEST=		Yes
 USE_GMAKE=		Yes

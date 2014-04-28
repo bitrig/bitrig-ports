@@ -3,7 +3,7 @@
 COMMENT=	scan C/C++ source code for security problems
 
 DISTNAME=	its4-1.1.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	#see-do-fetch-target
 EXTRACT_SUFX=	.tgz
@@ -11,7 +11,8 @@ EXTRACT_SUFX=	.tgz
 PERMIT_PACKAGE_CDROM=	commercial. licensing restrictions.
 PERMIT_PACKAGE_FTP=	commercial. licensing restrictions.
 PERMIT_DISTFILES_FTP=	commercial. licensing restrictions.
-WANTLIB=		c m stdc++
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 CONFIGURE_STYLE= simple
 CONFIGURE_ARGS=	--prefix='${PREFIX}' \
