@@ -4,6 +4,7 @@ COMMENT=	opensource implementation of the OFX specification
 
 DISTNAME=	libofx-0.9.9
 CATEGORIES=	devel
+REVISION=	0
 
 HOMEPAGE=	http://libofx.sourceforge.net/
 
@@ -17,7 +18,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libofx/}
 
 MODULES=	devel/gettext
-WANTLIB=	c m pthread stdc++ osp
+WANTLIB=	c m pthread osp
+WANTLIB+=	c++ c++abi
 
 LIB_DEPENDS=	textproc/opensp
 BUILD_DEPENDS =	devel/help2man

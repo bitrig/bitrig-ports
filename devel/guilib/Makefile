@@ -9,13 +9,15 @@ SHARED_LIBS +=	GUI                  2.0      # .0.1
 
 CATEGORIES=	devel graphics
 MASTER_SITES=	${HOMEPAGE}/src/
+REVISION=	0
 
 HOMEPAGE=	http://www.libsdl.org/projects/GUIlib/
 
 # Public Domain
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB += SDL m sndio stdc++ usbhid
+WANTLIB += SDL m sndio usbhid
+WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS=	devel/sdl
 

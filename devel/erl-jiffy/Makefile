@@ -7,7 +7,7 @@ COMMENT=	JSON NIFs for Erlang
 VERSION=	0.8.2
 DISTNAME=	jiffy-${VERSION}
 PKGNAME=	erl-${DISTNAME}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 HOMEPAGE=	https://github.com/davisp/jiffy
@@ -20,6 +20,7 @@ MASTER_SITES=	http://distfiles.nl/
 MODULES=	lang/erlang
 
 WANTLIB=	stdc++
+WANTLIB+=	c++ c++abi pthread
 
 ERL_APP_SUBST=	Yes
 

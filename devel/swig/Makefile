@@ -4,7 +4,7 @@ COMMENT =	simplified wrapper and interface generator
 
 SUBST_VARS =	VERSION
 VERSION =	2.0.11
-REVISION =	1
+REVISION =	2
 
 DISTNAME =	swig-${VERSION}
 CATEGORIES =	devel
@@ -14,7 +14,8 @@ HOMEPAGE =	http://www.swig.org/
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c m pcre stdc++ z
+WANTLIB =	c m pcre z
+WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=swig/}
 

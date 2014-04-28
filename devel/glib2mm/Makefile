@@ -14,6 +14,7 @@ SHARED_LIBS +=  glibmm-2.4           12.0     # 4.0
 SHARED_LIBS +=  giomm-2.4            12.0     # 4.0
 
 CATEGORIES=	devel
+REVISION=	0
 
 HOMEPAGE=	http://www.gtkmm.org/
 
@@ -21,7 +22,8 @@ HOMEPAGE=	http://www.gtkmm.org/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += ffi gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 m pcre
-WANTLIB += pthread sigc-2.0 stdc++ z
+WANTLIB += pthread sigc-2.0 z
+WANTLIB += c++ c++abi pthread
 
 MODULES=	devel/gettext \
 		x11/gnome

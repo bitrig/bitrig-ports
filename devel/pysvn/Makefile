@@ -6,6 +6,7 @@ MODPY_EGG_VERSION =	1.7.8
 DISTNAME = 		pysvn-${MODPY_EGG_VERSION}
 PKGNAME = 		py-pysvn-${MODPY_EGG_VERSION}
 CATEGORIES =		devel
+REVISION =		0
 
 HOMEPAGE =		http://pysvn.tigris.org
 
@@ -18,7 +19,8 @@ MASTER_SITES =	http://pysvn.barrys-emacs.org/source_kits/
 
 MODULES = 	lang/python
 LIB_DEPENDS = 	devel/subversion,-main
-WANTLIB = 	expat m stdc++ svn_client-1 svn_diff-1 svn_repos-1
+WANTLIB = 	expat m svn_client-1 svn_diff-1 svn_repos-1
+WANTLIB +=	c++ c++abi pthread
 
 USE_GMAKE = 	Yes
 _PYSVN_PYVERSION = ${MODPY_VERSION:S/./_/}

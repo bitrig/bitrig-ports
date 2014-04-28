@@ -3,7 +3,7 @@
 COMMENT =	C++ unit test framework
 
 DISTNAME =	gtest-1.4.0
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS +=	gtest		0.0   # .0.0
 SHARED_LIBS +=	gtest_main	0.0   # .0.0
@@ -21,7 +21,8 @@ MASTER_SITES =	https://googletest.googlecode.com/files/
 
 SEPARATE_BUILD =	Yes
 
-WANTLIB =		m stdc++
+WANTLIB =		m
+WANTLIB += 		c++ c++abi pthread
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED}

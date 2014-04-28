@@ -6,13 +6,15 @@ DISTNAME =		lutok-0.4
 SHARED_LIBS +=		lutok                     0.0 # 2.0
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/jmmv/lutok/
+REVISION =		0
 
 MAINTAINER =		Sergey Bronnikov <estetus@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += atf-c atf-c++ c ${MODLUA_WANTLIB} m stdc++
+WANTLIB += atf-c atf-c++ c ${MODLUA_WANTLIB} m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		https://github.com/jmmv/lutok/releases/download/${DISTNAME}/
 

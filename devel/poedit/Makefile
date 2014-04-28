@@ -3,7 +3,7 @@
 COMMENT=	cross-platform gettext catalogs (PO-files) editor
 
 DISTNAME=	poedit-1.3.7
-REVISION=	6
+REVISION=	7
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.poedit.net/
@@ -17,8 +17,9 @@ PERMIT_PACKAGE_CDROM=   Yes
 
 USE_GROFF =	Yes
 
-WANTLIB=	c m pthread stdc++ wx_base_xml wx_gtk2_html wx_gtk2_adv \
+WANTLIB=	c m pthread wx_base_xml wx_gtk2_html wx_gtk2_adv \
 		wx_gtk2_xrc wx_base wx_gtk2_core
+WANTLIB += c++ c++abi pthread
 RUN_DEPENDS=	devel/desktop-file-utils \
 		x11/gtk+2,-guic
 LIB_DEPENDS=	x11/wxWidgets>=2.6.3

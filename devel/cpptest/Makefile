@@ -7,13 +7,15 @@ DISTNAME =		cpptest-1.1.2
 SHARED_LIBS +=  cpptest                   0.0 # 0.7
 
 CATEGORIES =		devel
+REVISION=		0
 
 HOMEPAGE =		http://cpptest.sourceforge.net/
 
 # LGPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=cpptest/}
 

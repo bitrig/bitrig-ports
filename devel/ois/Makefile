@@ -5,7 +5,7 @@ COMMENT =		object-oriented input system
 V =			1.3
 DISTNAME =		ois-v${V:S/./-/g}
 PKGNAME =		ois-${V}
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		OIS	0.0
 
@@ -18,7 +18,8 @@ MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 # zlib/libpng
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		X11 m stdc++ xcb
+WANTLIB =		X11 m xcb
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=wgois/}
 EXTRACT_SUFX =		.zip

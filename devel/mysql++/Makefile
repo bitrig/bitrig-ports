@@ -6,7 +6,7 @@ SHARED_ONLY =		Yes
 COMMENT =		C++ API for MySQL
 
 DISTNAME =		mysql++-3.1.0
-REVISION =		4
+REVISION =		5
 
 SHARED_LIBS += mysqlpp	4.0	# 3
 
@@ -17,7 +17,8 @@ HOMEPAGE =		http://tangentsoft.net/mysql++/
 # LPGLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += m mysqlclient stdc++
+WANTLIB += m mysqlclient
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		${HOMEPAGE}releases/
 

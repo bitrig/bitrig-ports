@@ -3,7 +3,7 @@
 COMMENT =		c++ protocol buffers
 
 DISTNAME =		protobuf-2.4.1
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS +=		protobuf	1.0   # 7.0
 SHARED_LIBS +=		protoc		1.0   # 7.0
@@ -18,7 +18,8 @@ MAINTAINER =		Vincent Auclair <auclair.vincent@gmail.com>
 # New BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=	c m pthread stdc++ z
+WANTLIB +=	c m pthread z
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =		https://protobuf.googlecode.com/files/
 

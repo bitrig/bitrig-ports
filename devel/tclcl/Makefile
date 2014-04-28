@@ -5,7 +5,7 @@ COMMENT=	Tcl/C++ interface used by ns and nam
 V=		1.20
 DISTNAME=	tclcl-src-$V
 PKGNAME=	tclcl-$V
-REVISION =	0
+REVISION =	1
 CATEGORIES=	devel
 MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
@@ -15,7 +15,8 @@ HOMEPAGE=	http://otcl-tclcl.sourceforge.net/tclcl/
 PERMIT_PACKAGE_CDROM=   Yes
 
 MODULES +=	x11/tk
-WANTLIB=		c m stdc++ otcl>=1
+WANTLIB=		c m ++ otcl>=1
+WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=otcl-tclcl/}
 WRKDIST=	${WRKDIR}/tclcl-$V

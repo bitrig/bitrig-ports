@@ -5,7 +5,7 @@ COMMENT=	C++ reference implementation of the Atlas protocol
 VERSION=	0.4.3.1
 DISTNAME=	Atlas-C++-${VERSION}
 PKGNAME=	${DISTNAME:S/C++-//:L}
-REVISION=	3
+REVISION=	4
 SHARED_LIBS +=	Atlas                2.0      # .1.1
 SHARED_LIBS +=	AtlasObjects         2.0      # .1.1
 SHARED_LIBS +=	AtlasObjectsEntity   2.0      # .1.1
@@ -23,7 +23,8 @@ PERMIT_PACKAGE_CDROM=   Yes
 MASTER_SITES=	ftp://ftp.ecs.soton.ac.uk/pub/worldforge/acorn/0.4/src/ \
 		http://kafka.i-site.com/~novalis/mirrors/acorn/0.4/src/
 
-WANTLIB+=	m stdc++
+WANTLIB+=	m
+WANTLIB+=	c++ c++abi pthread
 
 
 SEPARATE_BUILD=	Yes

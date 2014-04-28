@@ -5,7 +5,7 @@ COMMENT=		callback framework for C++
 GNOME_VERSION=		2.2.11
 GNOME_PROJECT=		libsigc++
 CATEGORIES=		devel
-REVISION=		1
+REVISION=		2
 
 SHARED_LIBS +=  sigc-2.0             2.0      # 0.0
 
@@ -17,7 +17,8 @@ HOMEPAGE=		http://libsigc.sourceforge.net/
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 MODULES=		x11/gnome
 

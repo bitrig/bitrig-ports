@@ -9,13 +9,15 @@ COMMENT=	automatically generate Python bindings for C and C++ libs
 DISTNAME=	sip-4.15.3
 PKGNAME=	py-${DISTNAME}
 CATEGORIES=	devel
+REVISION=	0
 
 HOMEPAGE=	http://www.riverbankcomputing.co.uk/software/sip/intro
 
 # SIP license (Python like)
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	m c stdc++
+WANTLIB=	m c
+WANTLIB+=	c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyqt/}
 

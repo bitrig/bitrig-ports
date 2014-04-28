@@ -8,7 +8,7 @@ V=		10.05
 P=		1
 DISTNAME=	codeblocks-${V}-${P}debian-src
 PKGNAME=	codeblocks-${V}
-REVISION=	11
+REVISION=	12
 
 EXTRACT_SUFX=	.tar.bz2
 WRKDIST=	${WRKDIR}/codeblocks-${V}
@@ -32,8 +32,9 @@ WANTLIB += expat ffi fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 graphite2
 WANTLIB += gthread-2.0 gtk-x11-2.0 harfbuzz
 WANTLIB += iodbc jpeg m mspack pango-1.0 pangocairo-1.0 pangoft2-1.0
-WANTLIB += pcre pixman-1 png pthread pthread-stubs sndio stdc++
+WANTLIB += pcre pixman-1 png pthread pthread-stubs sndio
 WANTLIB += tiff usbhid xcb xcb-render xcb-shm z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_BERLIOS:=codeblocks/}
 

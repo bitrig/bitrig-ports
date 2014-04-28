@@ -6,7 +6,7 @@ V=		2.3.13
 DISTNAME=	mico-${V}
 CATEGORIES=	devel
 
-REVISION=	0
+REVISION=	1
 
 # The build framework accommodates only a single shared lib extension.
 SHARED_LIBS=	mico${V}	${LIB_VERSION} \
@@ -22,8 +22,9 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mico/}
 # LGPL/GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m ncurses readline stdc++
+WANTLIB=		c m ncurses readline
 WANTLIB+=		crypto ssl ICE SM X11 Xt pthread
+WANTLIB+=		c++ c++abi
 LIB_DEPENDS=		devel/readline
 
 USE_GMAKE=		Yes

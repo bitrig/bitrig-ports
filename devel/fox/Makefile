@@ -2,6 +2,7 @@
 
 COMMENT =	C++ toolkit for GUI
 CATEGORIES =	devel
+REVISION=	0
 
 DISTNAME =	fox-1.6.49
 
@@ -34,7 +35,8 @@ FOX =		fox-1.6
 SUBST_VARS =	FOX
 
 WANTLIB =	GL GLU X11 Xau Xcursor Xdmcp Xext Xfixes Xrender Xrandr c m \
-		stdc++ z pthread Xft expat fontconfig freetype \
+		z pthread Xft expat fontconfig freetype \
 		pthread-stubs xcb bz2 jpeg png tiff Xdamage Xxf86vm drm
+WANTLIB +=	c++ c++abi
 
 .include <bsd.port.mk>

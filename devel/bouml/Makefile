@@ -8,8 +8,8 @@ DISTNAME=		bouml_$V
 PKGNAME=		bouml-$V
 PKGNAME-main=		bouml-$V
 PKGNAME-docs=		bouml-docs-$V
-REVISION-main =		3
-REVISION-docs=		0
+REVISION-main =		4
+REVISION-docs=		1
 
 CATEGORIES=		devel x11
 
@@ -27,7 +27,8 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX} \
 
 MULTI_PACKAGES= 	-main -docs
 
-WANTLIB =		X11 Xext c m pthread stdc++
+WANTLIB =		X11 Xext c m pthread
+WANTLIB +=		c++ c++abi
 
 RUN_DEPENDS-main=	devel/desktop-file-utils \
 			x11/gtk+2,-guic

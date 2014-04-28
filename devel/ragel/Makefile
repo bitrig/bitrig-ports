@@ -4,6 +4,7 @@ COMMENT =	state machine compiler
 
 DISTNAME =	ragel-6.7
 CATEGORIES =	devel
+REVISION =	0
 
 HOMEPAGE =	http://www.complang.org/ragel/
 
@@ -12,7 +13,8 @@ PERMIT_PACKAGE_CDROM = Yes
 
 MASTER_SITES =		${HOMEPAGE}
 
-WANTLIB =		c m stdc++
+WANTLIB =		c m
+WANTLIB +=		c++ c++abi pthread
 BUILD_DEPENDS =		lang/ruby/1.8,-main
 
 USE_GMAKE =		Yes

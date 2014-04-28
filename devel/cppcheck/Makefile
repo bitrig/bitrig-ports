@@ -5,6 +5,7 @@ COMMENT =		C/C++ static checker
 DISTNAME =		cppcheck-1.63
 
 CATEGORIES =		devel
+REVISION=		0
 
 HOMEPAGE =		http://cppcheck.sourceforge.net/
 
@@ -13,7 +14,8 @@ MAINTAINER =		Gleydson Soares <gsoares@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m pcre stdc++
+WANTLIB =		c m pcre
+WANTLIB +=		c++ c++abi pthread
 
 BUILD_DEPENDS =		textproc/docbook-xsl
 

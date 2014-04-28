@@ -6,12 +6,14 @@ DISTNAME =		ninja-${GH_VER:S/v//}
 CATEGORIES =		devel
 HOMEPAGE =		http://martine.github.io/ninja/
 MAINTAINER =		Matthew Dempsky <matthew@dempsky.org>
+REVISION =		0
 
 # Apache License v2.0
 PERMIT_PACKAGE_CDROM =	Yes
 
 # c>=68.1 needed for ppoll
-WANTLIB =		c>=68.1 m stdc++
+WANTLIB =		c>=68.1 m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		https://github.com/martine/ninja/archive/
 DISTFILES =		${DISTNAME}{${GH_VER}}${EXTRACT_SUFX}

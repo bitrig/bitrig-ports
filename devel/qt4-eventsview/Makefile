@@ -16,7 +16,7 @@ DIST_SUBDIR=	qt4-eventsview-$V
 V=		0.1
 DISTNAME=	57337-eventsview
 PKGNAME=	qt4-eventsview-$V
-REVISION =	4
+REVISION =	5
 MASTER_SITES=	http://qt-apps.org/CONTENT/content-files/
 
 WRKDIST=	${WRKDIR}/eventsview
@@ -40,8 +40,9 @@ do-install:
 LIB_DEPENDS=	devel/glib2
 
 WANTLIB += ICE SM X11 Xext Xi Xinerama Xrender c expat fontconfig
-WANTLIB += freetype m png pthread pthread-stubs stdc++ xcb z
+WANTLIB += freetype m png pthread pthread-stubs ++ xcb z
 WANTLIB += glib-2.0 gobject-2.0 gthread-2.0 lib/qt4/QtGui
+WANTLIB += c++ c++abi pthread
 
 SUBST_VARS=	SAMPLE
 

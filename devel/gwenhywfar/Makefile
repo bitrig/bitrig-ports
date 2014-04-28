@@ -14,6 +14,7 @@ SHARED_LIBS +=	gwengui-qt4          0.0      # 0.0
 SHARED_LIBS +=	gwengui-cpp          0.0      # unknown
 
 CATEGORIES=	devel
+REVISION=	0
 
 HOMEPAGE=	http://www2.aquamaniac.de/sites/download/packages.php?package=01&showall=1
 
@@ -29,6 +30,7 @@ WANTLIB += m nettle p11-kit pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png pthread pthread-stubs ssl stdc++
 WANTLIB += tasn1 xcb xcb-render xcb-shm z
 WANTLIB += ICE lib/qt4/QtGui SM gmp
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	http://www.aquamaniac.de/sites/download/
 

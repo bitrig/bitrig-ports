@@ -5,11 +5,13 @@ CATEGORIES =	devel
 COMMENT=	Qt-based library that maps JSON data to QVariant objects
 DISTNAME =	qjson-0.8.1
 HOMEPAGE =	http://qjson.sourceforge.net/
+REVISION =	0
 
 SHARED_LIBS =	qjson	0.0
 
 MODULES =	devel/cmake x11/qt4
-WANTLIB =	m stdc++
+WANTLIB =	m
+WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES =	https://github.com/downloads/flavio/qjson/
 EXTRACT_SUFX =	.tar.bz2

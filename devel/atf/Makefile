@@ -8,13 +8,15 @@ SHARED_LIBS +=		atf-c                     0.0 # 0.0
 
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/jmmv/atf
+REVISION=		0
 
 MAINTAINER =		Sergey Bronnikov <estetus@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m stdc++
+WANTLIB += c m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		https://github.com/jmmv/atf/releases/download/${DISTNAME}/
 

@@ -5,7 +5,7 @@ NOT_FOR_ARCHS =	arm mips64 mips64el sparc64 hppa
 COMMENT =	library for efficient computations
 
 DISTNAME =	cln-1.3.3
-REVISION =	0
+REVISION =	1
 SHARED_LIBS +=  cln                  2.0      # .6.3
 CATEGORIES =	devel
 
@@ -19,7 +19,8 @@ PERMIT_PACKAGE_CDROM =		Yes
 MASTER_SITES =		${HOMEPAGE}
 EXTRACT_SUFX =		.tar.bz2
 
-WANTLIB	+=		m stdc++ gmp
+WANTLIB	+=		m gmp
+WANTLIB +=		c++ c++abi pthread
 
 LIB_DEPENDS =		devel/gmp
 

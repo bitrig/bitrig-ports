@@ -14,6 +14,7 @@ SHARED_LIBS +=  BulletSoftBody            0.0 # 2.79
 SHARED_LIBS +=  LinearMath                0.0 # 2.79
 
 CATEGORIES =		devel
+REVISION =		0
 
 HOMEPAGE =		http://bulletphysics.org
 
@@ -25,7 +26,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 MASTER_SITES =		https://bullet.googlecode.com/files/
 EXTRACT_SUFX =		.tgz
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 MODULES =		devel/cmake
 BUILD_DEPENDS =		graphics/freeglut

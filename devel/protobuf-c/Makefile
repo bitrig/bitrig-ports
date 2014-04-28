@@ -3,7 +3,7 @@
 COMMENT =		c protocol buffers
 
 DISTNAME =		protobuf-c-0.15
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS =		protobuf-c 0.0	# 0.0
 
@@ -18,7 +18,8 @@ MAINTAINER =		Jonathon Sisson <sisson.j@gmail.com>
 # New BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m protobuf protoc pthread stdc++ z
+WANTLIB =		c m protobuf protoc pthread z
+WANTLIB +=		c++ c++abi
 
 LIB_DEPENDS =		devel/protobuf
 

@@ -8,13 +8,16 @@ SHARED_LIBS +=  dee-1.0                   0.0 # 5.1
 
 CATEGORIES=		devel
 
+REVISION=		0
+
 HOMEPAGE=		https://launchpad.net/dee
 
 # GPLv3 - LGPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c ffi gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
-WANTLIB += icudata icui18n icuuc m pcre pthread stdc++ z
+WANTLIB += icudata icui18n icuuc m pcre pthread z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	https://launchpad.net/dee/1.0/1.0.14/+download/
 

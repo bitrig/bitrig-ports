@@ -14,6 +14,7 @@ SHARED_LIBS +=  harfbuzz             4.3      # 927.0
 SHARED_LIBS +=  harfbuzz-icu         0.1      # 927.0
 
 CATEGORIES=		devel graphics textproc
+REVISION=		0
 
 HOMEPAGE=		http://www.freedesktop.org/wiki/Software/HarfBuzz
 
@@ -22,7 +23,8 @@ MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += freetype glib-2.0 graphite2 m pcre pthread stdc++ z
+WANTLIB += freetype glib-2.0 graphite2 m pcre pthread z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=		http://www.freedesktop.org/software/harfbuzz/release/
 

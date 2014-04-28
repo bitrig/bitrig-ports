@@ -3,7 +3,7 @@
 COMMENT=	documentation system for C, C++, IDL and Java
 
 DISTNAME=	doc++-3.4.10
-REVISION=	4
+REVISION=	5
 CATEGORIES=	devel
 
 HOMEPAGE=	http://docpp.sourceforge.net/
@@ -11,7 +11,8 @@ HOMEPAGE=	http://docpp.sourceforge.net/
 MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m stdc++
+WANTLIB=		c m
+WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=docpp/}
 

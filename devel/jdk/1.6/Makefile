@@ -17,9 +17,9 @@ UPDATE=		32
 BUILD=		b27
 PKGNAME=	jdk-${VERSION}
 PKGNAME-main=	jdk-${VERSION}
-REVISION-main=	6
+REVISION-main=	7
 PKGNAME-jre=	jre-${VERSION}
-REVISION-jre=	6
+REVISION-jre=	7
 
 # see jaxp/jaxp.properties & jaxws/jaxws.properties 
 # in ${WRKDIR} for names and download locations of extra distfiles
@@ -79,7 +79,8 @@ BUILD_DEPENDS=	archivers/zip \
 		print/cups,-libs \
 		x11/openmotif
 MODULES=	converters/libiconv
-WANTLIB=	X11 Xext Xi Xtst c freetype m pthread sndio stdc++ z
+WANTLIB=	X11 Xext Xi Xtst c freetype m pthread sndio z
+WANTLIB+=	c++ c++abi pthread
 
 APACHE_ANT=	apache-ant-1.8.4-bin.tar.gz
 SUPDISTFILES+=	openjdk6-bootjdk-amd64-20130822.tar.gz:6 \

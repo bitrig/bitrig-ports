@@ -11,7 +11,7 @@ HOMEPAGE =	http://www.cmake.org/
 CATEGORIES =	devel
 COMMENT =	portable build system
 DISTNAME =	cmake-2.8.12.2
-REVISION =	0
+REVISION =	1
 MASTER_SITES =	${HOMEPAGE}files/v2.8/
 
 MAINTAINER =	David Coppa <dcoppa@openbsd.org>
@@ -20,7 +20,8 @@ MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		archive c curl curses expat form m \
-			stdc++ z
+			z
+WANTLIB +=		c++ c++abi pthread
 
 # XXX: CMake's built-in ELF parser is broken on arm
 .if ${MACHINE_ARCH} != "arm"

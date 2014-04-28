@@ -6,6 +6,7 @@ DISTNAME=	gmp-5.1.3
 SHARED_LIBS +=	gmp                  10.0     # 11.3
 SHARED_LIBS +=	gmpxx                2.0      # 7.3
 CATEGORIES=	devel math
+REVISION=	0
 
 HOMEPAGE=	http://gmplib.org/
 
@@ -14,7 +15,8 @@ MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 # LGPLv3+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	ftp://ftp.gmplib.org/pub/${DISTNAME}/ \
 		${MASTER_SITE_GNU:=gmp/}

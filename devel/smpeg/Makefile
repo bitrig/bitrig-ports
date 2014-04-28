@@ -3,7 +3,7 @@
 COMMENT=	MPEG video player library with sound support
 
 DISTNAME=	smpeg-0.4.4
-REVISION=	12
+REVISION=	13
 CATEGORIES=	devel graphics
 MASTER_SITES=	http://mirrors.sunsite.dk/lokigames/open-source/smpeg/
 
@@ -16,7 +16,8 @@ MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB=	SDL c m pthread sndio stdc++ usbhid
+WANTLIB=	SDL c m pthread sndio usbhid
+WANTLIB +=	c++ c++abi
 
 MODULES=	converters/libiconv
 LIB_DEPENDS=	devel/sdl

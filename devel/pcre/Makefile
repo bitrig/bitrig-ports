@@ -4,7 +4,7 @@ COMMENT=	perl-compatible regular expression library
 
 DISTNAME=	pcre-8.33
 
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  pcre                 3.0      # 0.1
 SHARED_LIBS +=  pcre16               0.0      # 0.0
@@ -24,7 +24,8 @@ MAINTAINER=	Robert Nagy <robert@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c curses m readline stdc++
+WANTLIB += c curses m readline
+WANTLIB += c++ c++abi pthread
 LIB_DEPENDS=		devel/readline
 
 USE_GROFF =		Yes

@@ -5,7 +5,7 @@ COMMENT=	decision procedure for bit-vectors and arrays
 V=		0.1
 DISTNAME=	stp-ver-${V}-11-18-2008
 PKGNAME=	stp-${V}
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	devel
 
@@ -16,7 +16,8 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 # MIT license
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m stdc++
+WANTLIB=	c m
+WANTLIB+=	c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=stp-fast-prover/}
 EXTRACT_SUFX=	.tgz

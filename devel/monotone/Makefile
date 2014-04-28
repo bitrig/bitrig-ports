@@ -5,7 +5,7 @@ COMMENT=	distributed version control system
 VERSION=	0.39
 DISTNAME=	monotone-${VERSION}
 CATEGORIES=	devel
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE=	http://monotone.ca/
 
@@ -13,7 +13,8 @@ MAINTAINER=	Aleksander Piotrowski <alek@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB += c m stdc++ z
+WANTLIB += c m z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${HOMEPAGE}downloads/${VERSION}/
 

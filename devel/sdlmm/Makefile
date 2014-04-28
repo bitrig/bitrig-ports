@@ -5,7 +5,7 @@ COMMENT=	C++ wrapper for the Simple DirectMedia Layer
 VERSION=	0.1.8
 DISTNAME=	SDLmm-${VERSION}
 PKGNAME=	sdlmm-${VERSION}
-REVISION=	12
+REVISION=	13
 CATEGORIES=	devel
 
 SHARED_LIBS +=	SDLmm                9.0      # .8.0
@@ -15,7 +15,8 @@ HOMEPAGE=	http://sdlmm.sourceforge.net/
 # LGPLv2+
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB +=	SDL m pthread sndio stdc++ usbhid
+WANTLIB +=	SDL m pthread sndio usbhid
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sdlmm/}
 

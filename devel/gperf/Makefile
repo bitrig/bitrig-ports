@@ -3,7 +3,7 @@
 COMMENT =	perfect hash functions, to help write parsers
 
 DISTNAME =	gperf-3.0.4
-REVISION =	0
+REVISION =	1
 CATEGORIES =   	devel
 
 MAINTAINER =	Marc Espie <espie@openbsd.org>
@@ -13,7 +13,8 @@ HOMEPAGE =	https://www.gnu.org/software/gperf/
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m stdc++
+WANTLIB =		c m
+WANTLIB += 		c++ c++abi pthread
 
 MASTER_SITES =	${MASTER_SITE_GNU:=gperf/}
 

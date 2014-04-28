@@ -8,13 +8,14 @@ DISTNAME=	sdcc-src-2.8.0
 PKGNAME=	${DISTNAME:S/-src//}
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	devel
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://sdcc.sourceforge.net/
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m stdc++ readline termcap
+WANTLIB=		c m readline termcap
+WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sdcc/}
 

@@ -5,13 +5,15 @@ DISTNAME =		kyua-cli-0.8
 
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/jmmv/kyua
+REVISION =		0
 
 MAINTAINER =		Sergey Bronnikov <estetus@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += atf-c atf-c++ c ${MODLUA_WANTLIB} lutok m sqlite3 stdc++
+WANTLIB += atf-c atf-c++ c ${MODLUA_WANTLIB} lutok m sqlite3
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		https://github.com/jmmv/kyua/releases/download/${DISTNAME}/
 

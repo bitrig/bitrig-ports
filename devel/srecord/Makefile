@@ -6,6 +6,7 @@ COMMENT=		collection of tools for manipulating EPROM load files
 
 DISTNAME=		srecord-1.61
 CATEGORIES=		devel
+REVISION=		0
 
 SHARED_LIBS +=  srecord              0.0      # 0.0
 
@@ -18,7 +19,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=srecord/}
 
 MODULES=		devel/gettext
 
-WANTLIB += c gcrypt gpg-error m stdc++
+WANTLIB += c gcrypt gpg-error m
+WANTLIB += c++ c++abi pthread
 
 BUILD_DEPENDS=		devel/boost \
 			print/ghostscript/gnu

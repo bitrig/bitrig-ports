@@ -8,6 +8,7 @@ SHARED_LIBS +=  config               9.2      # 10.3
 SHARED_LIBS +=  config++             9.2      # 10.3
 
 CATEGORIES=		devel
+REVISION=		0
 
 HOMEPAGE=		http://www.hyperrealm.com/libconfig/libconfig.html
 
@@ -19,7 +20,8 @@ MASTER_SITES=		http://www.hyperrealm.com/libconfig/
 CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/aux-build
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 TEST_TARGET = test
 

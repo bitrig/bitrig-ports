@@ -15,6 +15,7 @@ SHARED_LIBS +=		plist		1.0 # 1.1
 SHARED_LIBS +=		plist++		1.0 # 1.1
 
 CATEGORIES =		devel audio
+REVISION =		0
 
 HOMEPAGE =		http://www.libimobiledevice.org
 
@@ -35,7 +36,8 @@ LIB_DEPENDS-python =	${LIB_DEPENDS} \
 LIB_DEPENDS =		devel/glib2 \
 			textproc/libxml
 
-WANTLIB +=		glib-2.0 m stdc++ xml2
+WANTLIB +=		glib-2.0 m xml2
+WANTLIB +=		c++ c++abi pthread
 WANTLIB-main += 	${WANTLIB} c pthread
 WANTLIB-python += 	${WANTLIB} plist plist++ python${MODPY_VERSION}
 

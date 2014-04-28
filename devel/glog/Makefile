@@ -3,7 +3,7 @@
 COMMENT =		C++ application-level logging library
 
 DISTNAME =		glog-0.3.1
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=		glog 0.0 # 0.2.1
 
@@ -16,7 +16,8 @@ MAINTAINER =		Vincent Auclair <auclair.vincent@gmail.com>
 # New BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += gflags m pthread stdc++
+WANTLIB += gflags m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${HOMEPAGE}/files/
 

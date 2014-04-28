@@ -4,7 +4,7 @@ SHARED_ONLY=	Yes
 COMMENT=	graphical debugger for KDE
 
 DISTNAME=	kdbg-1.2.5
-REVISION =	9
+REVISION =	10
 CATEGORIES=	devel
 HOMEPAGE=	http://www.kdbg.org/
 
@@ -13,9 +13,10 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB =	ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 c expat
 WANTLIB +=	fam fontconfig freetype idn
-WANTLIB +=	m png pthread pthread-stubs stdc++ util xcb z
+WANTLIB +=	m png pthread pthread-stubs util xcb z
 WANTLIB +=	${KDE}/DCOP ${KDE}/kdecore>=4 ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB +=	${KDE}/kdeui ${KDE}/kio ${KDE}/kwalletclient
+WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kdbg/}
 

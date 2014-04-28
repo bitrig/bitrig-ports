@@ -7,7 +7,7 @@ DISTNAME=	libvmime-${VMIME_V}+svn603
 EXTRACT_SUFX=	.tar.bz2
 
 PKGNAME=	libvmime-${VMIME_V}
-REVISION=	5
+REVISION=	6
 
 SHARED_LIBS+=  vmime    2.0     # 0.0
 
@@ -33,7 +33,8 @@ MAINTAINER=	Robert Nagy <robert@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 WRKDIST=	${WRKDIR}/libvmime-${VMIME_V}
 

@@ -7,7 +7,7 @@ SHARED_ONLY =		Yes
 V = 			1.3.1
 DISTNAME =		qt-creator-${V}-src
 PKGNAME =		qt-creator-${V}
-REVISION =		6
+REVISION =		7
 EXTRACT_SUFX = 		.zip
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 
@@ -32,11 +32,12 @@ HOMEPAGE =		http://qt.nokia.com/products/appdev/developer-tools/developer-tools
 # LGPL 2.1 with C++ headers exception (more permissive than LGPL)
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=	c m pthread stdc++ sqlite3
+WANTLIB +=	c m pthread sqlite3
 WANTLIB +=	QtDBus QtWebKit QtXmlPatterns QtDesigner>=7 
 WANTLIB +=	QtDesignerComponents>=7 QtGui>=8 QtHelp QtNetwork>=7 
 WANTLIB +=	QtScript QtSql>=7 QtSvg>=7 QtXml>=7 phonon
 WANTLIB +=	ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
+WANTLIB +=	c++ c++abi
 MASTER_SITES =	http://get.qt.nokia.com/qtcreator/
 
 MODULES =	x11/qt4

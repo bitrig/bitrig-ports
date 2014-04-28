@@ -5,7 +5,7 @@ COMMENT=	graphical file comparator
 V=		1.9
 DISTNAME=	beediff_${V}_src
 PKGNAME=	beediff-${V}
-REVISION =	5
+REVISION =	6
 CATEGORIES=	textproc x11 devel
 
 HOMEPAGE=	http://www.beesoft.pl/index.php?id=beediff
@@ -14,8 +14,9 @@ MASTER_SITES=	http://www.beesoft.pl/download/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += X11 Xext c m pthread stdc++
+WANTLIB += X11 Xext c m pthread
 WANTLIB += lib/qt4/QtGui ICE SM Xi Xinerama Xrender fontconfig freetype
+WANTLIB += c++ c++abi pthread
 
 WRKDIST=	${WRKDIR}/beediff
 

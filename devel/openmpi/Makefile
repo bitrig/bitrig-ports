@@ -6,7 +6,7 @@ BROKEN-powerpc =	checking if Fortran 77 compiler works... no
 
 V=			1.4.1
 DISTNAME =		openmpi-$V
-REVISION =		2
+REVISION =		3
 
 SHARED_LIBS =		mca_common_sm 1.0 \
 			mpi 0.1 \
@@ -26,7 +26,8 @@ BUILD_DEPENDS +=	${MODFORTRAN_BUILD_DEPENDS}
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB	+=		c m pthread stdc++ util z
+WANTLIB	+=		c m pthread util z
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${HOMEPAGE}/software/ompi/v${V:C/^([0-9]+\.[0-9]+).*/\1/}/downloads/
 

@@ -9,7 +9,7 @@ DPB_PROPERTIES = parallel
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 
 LLVM_V =	3.3
-REVISION =	4
+REVISION =	5
 DISTNAME =	llvm-${LLVM_V}.src
 PKGNAME =	llvm-${LLVM_V}
 CATEGORIES =	devel
@@ -25,7 +25,8 @@ HOMEPAGE =	http://www.llvm.org/
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c m pthread stdc++ z
+WANTLIB =	c m pthread z
+WANTLIB +=	c++ c++abi
 
 WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
 

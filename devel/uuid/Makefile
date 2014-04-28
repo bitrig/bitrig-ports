@@ -14,7 +14,7 @@ CATEGORIES=		devel
 SHARED_LIBS +=	ossp-uuid            0.0      # 16.22
 SHARED_LIBS +=	ossp-uuid++          0.0      # 16.22
 
-REVISION-main=		2
+REVISION-main=		3
 REVISION-perl=		3
 
 # Note there is a different libuuid in sysutils/e2fsprogs,-uuid.
@@ -33,7 +33,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 USE_GROFF =		Yes
 MULTI_PACKAGES=		-main -perl
 
-WANTLIB-main=		c m stdc++
+WANTLIB-main=		c m
+WANTLIB-main+=		c++ c++abi pthread
 
 CATEGORIES-perl=	devel perl5
 # libperl will show as "extra" but this should be kept as it depends on perl ABI

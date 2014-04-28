@@ -14,8 +14,8 @@ PKGNAME-main=	doxygen-${VERSION}
 FULLPKGNAME-gui=doxygen-gui-${VERSION}
 CATEGORIES=	devel textproc
 
-REVISION-main=	0
-REVISION-gui=	0
+REVISION-main=	1
+REVISION-gui=	1
 
 HOMEPAGE=	http://www.doxygen.org/
 
@@ -51,7 +51,8 @@ CONFIGURE_ARGS+= --english-only
 .endif
 
 BUILD_DEPENDS +=	devel/bison
-COMMON_WANTLIB =	c m pthread stdc++ ${MODLIBICONV_WANTLIB}
+COMMON_WANTLIB =	c m pthread ${MODLIBICONV_WANTLIB}
+COMMON_WANTLIB +=	c++ c++abi
 COMMON_LIB_DEPENDS =	${MODLIBICONV_LIB_DEPENDS}
 
 WANTLIB-main = ${COMMON_WANTLIB} z

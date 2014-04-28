@@ -5,12 +5,14 @@ COMMENT=		indenter and formatter of C/C++/Java source files
 DISTNAME=		astyle_1.15.3
 PKGNAME=		${DISTNAME:S/_/-/}
 CATEGORIES=		devel
+REVISION=		0
 
 HOMEPAGE=		http://astyle.sourceforge.net/
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m stdc++
+WANTLIB=		c m
+WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=astyle/}
 EXTRACT_SUFX=		.zip

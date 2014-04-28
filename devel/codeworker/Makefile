@@ -4,7 +4,7 @@ COMMENT =		universal parsing tool & source code generator
 
 V =			4.5.4
 PKGNAME =		codeworker-${V}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
 
@@ -15,7 +15,8 @@ MAINTAINER =		Vincent Auclair <auclair.vincent@gmail.com>
 # LGPL
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m stdc++
+WANTLIB =		c m
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		https://codeworker.googlecode.com/files/ \
 			http://codeworker.free.fr/downloads/

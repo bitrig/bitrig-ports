@@ -7,7 +7,7 @@ COMMENT=	free peer-reviewed portable C++ source libraries
 VERSION=	1.53.0
 DISTNAME=	boost_${VERSION:S/./_/g}
 PKGNAME=	boost-${VERSION}
-REVISION=	6
+REVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=boost/}
 EXTRACT_SUFX=	.tar.bz2
@@ -52,7 +52,8 @@ MAINTAINER=	Brad Smith <brad@comstyle.com>
 # MIT-like
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m pthread stdc++ util z
+WANTLIB=	c m pthread util z
+WANTLIB+=	c++ c++abi
 
 MODULES=	converters/libiconv \
 		lang/python

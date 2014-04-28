@@ -11,6 +11,7 @@ PKGNAME=	lib${DISTNAME}
 SHARED_LIBS +=  audiofile            1.0      # 1.0
 
 CATEGORIES=	devel audio
+REVISION=	0
 
 MASTER_SITES=	${HOMEPAGE}
 
@@ -19,7 +20,8 @@ HOMEPAGE=	http://www.68k.org/~michael/audiofile/
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += FLAC c m ogg stdc++
+WANTLIB += FLAC c m ogg
+WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS=	audio/flac
 

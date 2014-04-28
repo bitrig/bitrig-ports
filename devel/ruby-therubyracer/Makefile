@@ -3,7 +3,7 @@
 COMMENT =	embeds the V8 javascript interpreter into ruby
 
 DISTNAME =	therubyracer-0.11.0
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel
 
 HOMEPAGE=	https://github.com/cowboyd/therubyracer
@@ -11,7 +11,8 @@ HOMEPAGE=	https://github.com/cowboyd/therubyracer
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	pthread stdc++ v8
+WANTLIB =	pthread v8
+WANTLIB +=	c++ c++abi
 MODULES =	lang/ruby
 CONFIGURE_STYLE = ruby gem ext
 

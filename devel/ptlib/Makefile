@@ -6,7 +6,7 @@ COMMENT=	portable tools library
 
 V=		2.10.11
 DISTNAME=	ptlib-${V}
-REVISION=	1
+REVISION=	2
 EXTRACT_SUFX=	.tar.bz2
 SUBST_VARS=	V
 
@@ -22,7 +22,8 @@ MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += SDL c crypto expat lber ldap ldap_r m pthread sasl2
-WANTLIB += sndio ssl stdc++
+WANTLIB += sndio ssl
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=opalvoip/}
 

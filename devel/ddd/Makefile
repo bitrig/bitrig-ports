@@ -3,7 +3,7 @@
 COMMENT=	Data Display Debugger, graphical front-end for GDB, etc
 
 DISTNAME=	ddd-3.3.12
-REVISION=	6
+REVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=ddd/}
 
@@ -12,9 +12,10 @@ HOMEPAGE=	https://www.gnu.org/software/ddd/
 # GPLv2 / LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	ICE SM X11 Xaw Xau Xdmcp Xext Xmu Xpm Xt c m z stdc++ \
+WANTLIB=	ICE SM X11 Xaw Xau Xdmcp Xext Xmu Xpm Xt c m z \
 		Xft Xrender expat fontconfig freetype ncurses \
 		pthread-stubs xcb jpeg png Xm
+WANTLIB+=	c++ c++abi pthread
 
 MODULES=	converters/libiconv
 

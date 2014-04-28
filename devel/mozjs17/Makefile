@@ -14,7 +14,7 @@ COMMENT =	Mozilla C implementation of JavaScript
 MOZILLA_VERSION =	17.0
 DISTNAME =		mozjs17.0.0
 PKGNAME =		mozjs17-${MOZILLA_VERSION}
-REVISION =		0
+REVISION =		1
 
 SO_VERSION =	0.0
 SHARED_LIBS =	mozjs-17.0 ${SO_VERSION}
@@ -28,7 +28,8 @@ MAINTAINER =	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 # MPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m pthread readline nspr4 ncurses plc4 plds4 stdc++ z
+WANTLIB += c m pthread readline nspr4 ncurses plc4 plds4 z
+WANTLIB += c++ c++abi
 
 MODULES =	lang/python
 MODPY_RUNDEP =	No

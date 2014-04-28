@@ -11,7 +11,7 @@ B=		b11
 PKGNAME=	jdk-${V}
 PKGNAME-main=	jdk-${V}
 PKGNAME-jre=	jre-${V}
-REVISION=	2
+REVISION=	3
 EPOCH=		0
 
 JDK_SRC=	openjdk-7u6-fcs-src-b24-28_aug_2012.zip
@@ -63,7 +63,8 @@ BUILD_DEPENDS+=	devel/apache-ant>=1.8.2 \
 		archivers/unzip \
 		print/cups,-libs
 MODULES=	converters/libiconv
-WANTLIB=	X11 Xext Xi Xtst Xrender c freetype m pthread sndio stdc++ z
+WANTLIB=	X11 Xext Xi Xtst Xrender c freetype m pthread sndio z
+WANTLIB+=	c++ c++abi pthread
 
 USE_GMAKE=	Yes
 

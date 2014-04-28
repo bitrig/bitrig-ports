@@ -2,6 +2,7 @@
 
 COMMENT = 	C++ library of cryptographic algorithms
 CATEGORIES = 	devel security
+REVISION=		0
 
 HOMEPAGE = 	http://www.cryptopp.com/
 MASTER_SITES = 	${HOMEPAGE}
@@ -17,7 +18,8 @@ MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 # compilation just has supplementary disclaimers (patents dreck)
 PERMIT_PACKAGE_CDROM = 		Yes
 
-WANTLIB +=	m pthread stdc++
+WANTLIB +=	m pthread
+WANTLIB +=	c++ c++abi
 
 SHARED_LIBS = 	cryptopp	1.0
 

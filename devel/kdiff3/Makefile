@@ -5,6 +5,7 @@ COMMENT =	compares and merges multiple files or directories
 DISTNAME =	kdiff3-0.9.97
 CATEGORIES =	devel x11/kde
 HOMEPAGE =	http://kdiff3.sourceforge.net/
+REVISION=	0
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=kdiff3/}
 
@@ -14,7 +15,8 @@ MAINTAINER =	Lawrence Teo <lteo@openbsd.org>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =	ICE QtGui SM X11 Xext Xi Xinerama Xrender
-WANTLIB +=	c fontconfig freetype m pthread stdc++
+WANTLIB +=	c fontconfig freetype m pthread
+WANTLIB +=	c++ c++abi
 
 MODULES =	x11/qt4
 

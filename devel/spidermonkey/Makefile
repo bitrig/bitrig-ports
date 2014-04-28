@@ -19,6 +19,7 @@ PKGSPEC =		spidermonkey->=24.0,<25.0
 SO_VERSION =	0.0
 SHARED_LIBS =	mozjs-24 ${SO_VERSION}
 CATEGORIES =	devel
+REVISION=	0
 
 HOMEPAGE =	http://www.mozilla.org/js/spidermonkey/
 MASTER_SITES =	http://ftp.mozilla.org/pub/mozilla.org/js/
@@ -36,7 +37,8 @@ MODGCC4_LANGS =		c c++
 MODCLANG_ARCHS =	amd64
 MODCLANG_LANGS =	c c++
 
-WANTLIB += c m pthread readline nspr4 ncurses plc4 plds4 stdc++ z
+WANTLIB += c m pthread readline nspr4 ncurses plc4 plds4 z
+WANTLIB += c++ c++abi
 
 MODPY_RUNDEP =	No
 TEST_DEPENDS = ${MODPY_RUN_DEPENDS}

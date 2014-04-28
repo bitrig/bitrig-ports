@@ -3,7 +3,7 @@
 COMMENT=		various reusable C++-components
 
 DISTNAME=		cxxtools-1.4.7
-REVISION=		2
+REVISION=		3
 SHARED_LIBS +=	cxxtools             2.0      # .5.0
 CATEGORIES=		devel
 
@@ -14,7 +14,8 @@ MAINTAINER=		Vijay Ramesh <vramesh2@uiuc.edu>
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		pthread m stdc++
+WANTLIB=		pthread m
+WANTLIB+=		c++ c++abi
 
 MASTER_SITES=		http://www.tntnet.org/download/
 

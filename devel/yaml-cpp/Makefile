@@ -2,7 +2,7 @@
 
 COMMENT =		YAML parser and emitter in C++
 DISTNAME =		yaml-cpp-0.3.0
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		yaml-cpp	1.0 # 0.3
 
@@ -13,7 +13,8 @@ HOMEPAGE =		https://code.google.com/p/yaml-cpp/
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		https://yaml-cpp.googlecode.com/files/
 

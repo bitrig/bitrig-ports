@@ -5,7 +5,7 @@ COMMENT=	GNU project portable class framework for C++
 VER=		1.7.3
 DISTNAME=	commoncpp2-${VER}
 PKGNAME=	commoncpp-${VER}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=commoncpp/}
 
@@ -17,7 +17,8 @@ HOMEPAGE=	http://www.gnutelephony.org/index.php/GNU_Common_C++
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	crypto ssl z m stdc++ pthread
+WANTLIB=	crypto ssl z m pthread
+WANTLIB+=	c++ c++abi
 
 CONFIGURE_STYLE= autoconf
 AUTOCONF_VERSION= 2.61

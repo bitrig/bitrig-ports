@@ -5,6 +5,7 @@ COMMENT=	MPEG video player library with sound support
 DISTNAME=	smpeg2-2.0.0
 CATEGORIES=	devel graphics
 MASTER_SITES=	http://www.libsdl.org/projects/smpeg/release/
+REVISION=	0
 
 SHARED_LIBS=	smpeg2	2.0
 
@@ -13,7 +14,8 @@ HOMEPAGE=	http://icculus.org/smpeg/
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB=	SDL2 c m pthread sndio stdc++ usbhid
+WANTLIB=	SDL2 c m pthread sndio usbhid
+WANTLIB+=	c++ c++abi pthread
 
 LIB_DEPENDS=	devel/sdl2
 

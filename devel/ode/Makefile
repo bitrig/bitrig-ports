@@ -4,6 +4,7 @@ COMMENT =	high performance library for simulating rigid body dynamics
 SHARED_LIBS += 	ode	1.0	# 3.0
 DISTNAME = 	ode-0.12
 CATEGORIES =	devel
+REVISION=	0
 
 HOMEPAGE =	http://www.ode.org/
 
@@ -15,7 +16,8 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=opende/}
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL GLU X11 Xdamage Xext Xfixes Xxf86vm c drm m 
-WANTLIB += pthread stdc++ xcb 
+WANTLIB += pthread xcb 
+WANTLIB += c++ c++abi
 
 
 CONFIGURE_STYLE =	gnu
