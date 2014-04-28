@@ -3,7 +3,7 @@
 COMMENT=	enhanced performance test of filesystem I/O
 
 DISTNAME=	bonnie++-1.97
-REVISION=	0
+REVISION=	1
 WRKDIST=	${WRKDIR}/${DISTNAME}.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.coker.com.au/bonnie++/experimental/
@@ -14,7 +14,8 @@ HOMEPAGE=	http://www.coker.com.au/bonnie++/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m pthread stdc++
+WANTLIB=	c m pthread
+WANTLIB+=	c++ c++abi
 
 USE_GMAKE=	Yes
 CONFIGURE_STYLE= autoconf dest
