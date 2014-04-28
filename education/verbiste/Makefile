@@ -6,6 +6,7 @@ DISTNAME=	verbiste-0.1.41
 SHARED_LIBS=	verbiste-0.1	5.0	# .0.0
 CATEGORIES=	education
 HOMEPAGE=	http://sarrazip.com/dev/verbiste.html
+REVISION=	0
 
 MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
@@ -27,7 +28,8 @@ WANTLIB=	X11 Xcomposite Xcursor Xdamage Xext Xfixes Xi Xinerama \
 		gmodule-2.0 gobject-2.0 graphite2 gthread-2.0 gtk-x11-2.0 \
 		harfbuzz m pango-1.0 pangocairo-1.0 \
 		pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs \
-		stdc++ xcb xcb-render xcb-shm xml2 z
+		xcb xcb-render xcb-shm xml2 z
+WANTLIB+=	c++ c++abi
 
 SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE=gnu
