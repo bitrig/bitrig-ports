@@ -4,7 +4,7 @@ COMMENT =	personal dictionary manager for anthy
 
 DISTNAME =	kasumi-2.5
 
-REVISION =	4
+REVISION =	5
 
 CATEGORIES =	japanese
 
@@ -18,8 +18,9 @@ WANTLIB += Xrandr Xrender anthy anthydic atk-1.0 c cairo expat
 WANTLIB += fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0
 WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 gtk-x11-2.0
 WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0 pixman-1 png
-WANTLIB += pthread pthread-stubs stdc++ xcb xcb-render xcb-shm
+WANTLIB += pthread pthread-stubs xcb xcb-render xcb-shm
 WANTLIB += z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE_JP:=kasumi/41436/}
 

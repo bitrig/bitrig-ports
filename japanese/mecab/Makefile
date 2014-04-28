@@ -10,6 +10,7 @@ COMMENT-main =	japanese morphological analyzer engine
 COMMENT-ipadic = IPA japanese dictionary for mecab
 
 DISTNAME =	mecab-0.996
+REVISION-main = 0
 REVISION-ipadic = 1
 PKGNAME-main =	${DISTNAME}
 PKGNAME-ipadic = mecab-ipadic-2.7.0
@@ -25,7 +26,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MULTI_PACKAGES = -main -ipadic
 
-WANTLIB-main =	c m pthread stdc++ ${MODLIBICONV_WANTLIB}
+WANTLIB-main =	c m pthread ${MODLIBICONV_WANTLIB}
+WANTLIB-main +=	c++ c++abi
 WANTLIB-ipadic =
 
 MASTER_SITES =	https://mecab.googlecode.com/files/

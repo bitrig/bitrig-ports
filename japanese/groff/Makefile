@@ -5,7 +5,7 @@ COMMENT=	japanese groff
 CATEGORIES=	japanese textproc print
 
 PKGNAME=	ja-groff-1.10_0.99
-REVISION=	0
+REVISION=	1
 DISTNAME=	groff-1.10
 
 PATCHFILES=	jgroff-0.99.diff.gz:0
@@ -17,7 +17,8 @@ MASTER_SITES0=	ftp://ftp.ae.keio.ac.jp/pub/GNU/ \
 
 
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c stdc++ m
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 PATCH_DIST_STRIP=	-p1
 
