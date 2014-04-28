@@ -10,7 +10,7 @@ NOT_FOR_ARCHS=	m88k vax
 
 V=		2008-05-R1
 DISTNAME=	kismet-${V}
-REVISION=	2
+REVISION=	3
 PKGNAME-main=	kismet-${V:S,-,,g}
 PKGNAME-gpsmap=	kismet-gpsmap-${V:S,-,,g}
 CATEGORIES=	net security
@@ -50,9 +50,11 @@ FLAVOR?=
 
 MULTI_PACKAGES=		-main -gpsmap
 
-WANTLIB-main=		c m ncurses panel pcap stdc++
-WANTLIB-gpsmap=		c expat m pthread stdc++ z \
+WANTLIB-main=		c m ncurses panel pcap
+WANTLIB-main +=		c++ c++abi pthread
+WANTLIB-gpsmap=		c expat m pthread z \
 			MagickCore>=1 gmp>=6
+WANTLIB-gpsmap +=	c++ c++abi
 LIB_DEPENDS-gpsmap=	graphics/ImageMagick \
 			devel/gmp
 

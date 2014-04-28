@@ -5,7 +5,7 @@ COMMENT=		mouse and keyboard sharing utility
 V=			1.4.15
 DISTNAME=		synergy-${V}-Source
 PKGNAME=		synergy-${V}
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net x11
 
 MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
@@ -16,7 +16,8 @@ HOMEPAGE=		http://synergy-foss.org/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		ICE SM X11 Xext Xi Xinerama Xrandr Xtst \
-			c cryptopp m pthread stdc++
+			c cryptopp m pthread
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES=		https://synergy.googlecode.com/files/
 

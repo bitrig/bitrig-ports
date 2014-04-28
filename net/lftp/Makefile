@@ -5,7 +5,7 @@ COMMENT=	shell-like command line ftp and sftp client
 DISTNAME=	lftp-4.4.10
 CATEGORIES=	net
 
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://lftp.yar.ru/
 
@@ -14,7 +14,8 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 # GPLv3+
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB=	c crypto curses expat m readline ssl stdc++ util z
+WANTLIB=	c crypto curses expat m readline ssl util z
+WANTLIB +=	c++ c++abi pthread
 
 # lftp needs add_history_time()
 LIB_DEPENDS=	devel/readline

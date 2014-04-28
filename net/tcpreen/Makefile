@@ -3,7 +3,7 @@
 COMMENT=		simple tcp re-engineering tool
 
 DISTNAME=		tcpreen-1.4.4
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.remlab.net/tcpreen/
@@ -14,7 +14,8 @@ MASTER_SITES=		http://www.remlab.net/files/tcpreen/stable/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m stdc++ 
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 EXTRACT_SUFX=		.tar.bz2
 

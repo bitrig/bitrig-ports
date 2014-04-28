@@ -3,6 +3,7 @@
 COMMENT =	IRC-friendly instant messaging client
 
 DISTNAME=	minbif-1.0.5
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE =	http://minbif.im/
@@ -15,7 +16,8 @@ MODULES =	devel/gettext devel/cmake
 
 LIB_DEPENDS =	net/pidgin,-libpurple \
 		security/gnutls
-WANTLIB =	purple c glib-2.0 gthread-2.0 m pthread stdc++ gnutls
+WANTLIB =	purple c glib-2.0 gthread-2.0 m pthread gnutls
+WANTLIB +=	c++ c++abi
 CONFIGURE_ENV+=	CPPFLAGS+="-I${X11BASE}/include"
 
 USE_GROFF =	Yes

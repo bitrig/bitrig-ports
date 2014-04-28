@@ -2,6 +2,7 @@
 COMMENT =		Qt/C++ library wrapper for the GPodder
 DISTNAME =		libmygpo-qt.1.0.7
 PKGNAME =		${DISTNAME:S/./-/}
+REVISION =		0
 
 SHARED_LIBS =		mygpo-qt	0.0
 
@@ -11,7 +12,8 @@ HOMEPAGE =		http://wiki.gpodder.org/wiki/Libmygpo-qt
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		lib/qt4/QtNetwork m qjson stdc++
+WANTLIB =		lib/qt4/QtNetwork m qjson
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		http://stefan.derkits.at/files/libmygpo-qt/
 

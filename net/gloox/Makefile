@@ -3,6 +3,7 @@
 COMMENT =	extensible C++ library for XMPP clients and components
 
 DISTNAME =	gloox-1.0.3
+REVISION =	0
 SHARED_LIBS +=	gloox                1.0      # 8.0
 CATEGORIES =	net devel
 
@@ -15,7 +16,8 @@ MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 PERMIT_PACKAGE_CDROM =		Yes
 
 MODULES =			devel/gettext
-WANTLIB =			idn m stdc++ ssl crypto z
+WANTLIB =			idn m ssl crypto z
+WANTLIB +=			c++ c++abi pthread
 LIB_DEPENDS =			devel/libidn
 
 USE_GMAKE =			Yes

@@ -3,6 +3,7 @@
 COMMENT =		open source message queue optimised for performance
 
 DISTNAME =		zeromq-3.2.3
+REVISION =		0
 
 SHARED_ONLY =		Yes
 SHARED_LIBS +=	zmq                  2.0      # 3.0
@@ -13,7 +14,8 @@ HOMEPAGE =		http://zeromq.org/
 # LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB=		pthread stdc++ ssl crypto m
+WANTLIB=		pthread ssl crypto m
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://download.zeromq.org/
 

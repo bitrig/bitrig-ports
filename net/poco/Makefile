@@ -5,6 +5,7 @@ COMMENT =	POCO C++ libraries for network based applications
 VERSION =	1.4.6p1
 DISTNAME =	poco-${VERSION}-all
 PKGNAME =	poco-${VERSION:S/p/pl/}
+REVISION=	0
 CATEGORIES =	net devel
 SHLIB_VERSION =	1.0
 
@@ -20,8 +21,9 @@ MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 # Boost software license
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c crypto m pthread ssl stdc++ iodbc iodbcinst mysqlclient
+WANTLIB += c crypto m pthread ssl iodbc iodbcinst mysqlclient
 WANTLIB += expat pcre sqlite3 z
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS =	databases/iodbc \
 		databases/mysql \

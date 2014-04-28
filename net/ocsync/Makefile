@@ -8,7 +8,7 @@ COMMENT=	bidirectional directories synchronizer (owncloud version)
 
 DISTNAME=	ocsync-0.90.4
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=	ocsync                    0.0 # 0.2
 
@@ -21,7 +21,8 @@ MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c iniparser m neon pthread smbclient sqlite3 ssh stdc++
+WANTLIB += c iniparser m neon pthread smbclient sqlite3 ssh
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://download.owncloud.com/download/
 

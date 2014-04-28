@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	advanced IRC bouncer
 
 DISTNAME=	znc-1.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	${HOMEPAGE}releases/
 
@@ -16,7 +16,8 @@ MAINTAINER=	Brad Smith <brad@comstyle.com>
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c crypto m ssl stdc++
+WANTLIB=	c crypto m ssl
+WANTLIB +=	c++ c++abi pthread
 
 MAKE_FLAGS=	VERBOSE=1
 

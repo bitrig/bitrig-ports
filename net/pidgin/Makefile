@@ -15,6 +15,7 @@ PKGNAME-libpurple= libpurple-${VERSION}
 FULLPKGNAME$i= ${PKGNAME$i}${FLAVOR_EXT:S/-gtkspell//}
 FULLPKGPATH$i= ${PKGPATH},$i${FLAVOR_EXT:S/-gtkspell//:S/-/,/g}
 .endfor
+REVISION-main=	0
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pidgin/}
 EXTRACT_SUFX=	.tar.bz2
@@ -39,8 +40,9 @@ WANTLIB-main=	X11 ICE SM Xcomposite Xcursor Xdamage Xext Xfixes Xi \
 		Xinerama Xrandr Xrender Xss atk-1.0 cairo expat fontconfig \
 		freetype gdk-x11-2.0 gdk_pixbuf-2.0 graphite2 gtk-x11-2.0 \
 		harfbuzz pango-1.0 pangocairo-1.0 pangoft2-1.0 pixman-1 \
-		png pthread-stubs purple stdc++ xcb-render xcb-shm xcb \
+		png pthread-stubs purple xcb-render xcb-shm xcb \
 		${WANTLIB}
+WANTLIB-main +=	c++ c++abi
 WANTLIB-libpurple= crypto gadu>=5 meanwhile ssl silc>=7 silcclient>=5 \
 		${WANTLIB}
 WANTLIB-finch=	X11 ncursesw panelw purple xcb ${WANTLIB} ${MODPY_WANTLIB}

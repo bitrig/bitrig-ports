@@ -3,6 +3,7 @@
 COMMENT=		network traffic and bandwidth usage in real time
 
 DISTNAME=		nload-0.7.4
+REVISION=		0
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.roland-riegel.de/nload/
@@ -16,6 +17,7 @@ MASTER_SITES=		${HOMEPAGE}
 CONFIGURE_STYLE=	gnu
 SEPARATE_BUILD=		Yes
 
-WANTLIB=		c form m ncurses stdc++
+WANTLIB=		c form m ncurses
+WANTLIB +=		c++ c++abi pthread
 
 .include <bsd.port.mk>

@@ -6,7 +6,7 @@ COMMENT-daemon =stand-alone daemon/cmdline for amule
 
 V =		2.3.1
 DISTNAME =	aMule-$V
-REVISION =	17
+REVISION =	18
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.amule.org/
@@ -55,8 +55,9 @@ LIB_DEPENDS-web =	${LIB_DEPENDS} ${commonLIB_DEPENDS} \
 RUN_DEPENDS-main =	${RUN_DEPENDS} \
 			devel/desktop-file-utils
 
-commonWANTLIB =		c ixml m pthread stdc++ threadutil upnp \
+commonWANTLIB =		c ixml m pthread threadutil upnp \
 			wx_base wx_base_net z
+commonWANTLIB +=	c++ c++abi
 WANTLIB-main =		${WANTLIB} ${commonWANTLIB} \
 			GeoIP X11 cryptopp fontconfig tiff vpx \
 			freetype gd jpeg png wx_gtk2_adv wx_gtk2_core

@@ -5,7 +5,7 @@ COMMENT =		libpcap module for Python
 MODPY_EGG_VERSION =	0.10.5
 DISTNAME =		pcapy-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		6
+REVISION =		7
 
 CATEGORIES =		net devel
 
@@ -14,7 +14,8 @@ HOMEPAGE =		http://oss.coresecurity.com/projects/pcapy.html
 # Apache
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += 		${MODPY_WANTLIB} m stdc++ pcap
+WANTLIB += 		${MODPY_WANTLIB} m pcap
+WANTLIB += 		c++ c++abi pthread
 
 MASTER_SITES =		http://oss.coresecurity.com/repo/
 

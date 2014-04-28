@@ -4,6 +4,7 @@ COMMENT=		RTSP proxy reference implementation
 
 DISTNAME=		osrtspproxy_2_0
 PKGNAME=		osrtspproxy-2.0
+REVISION=		0
 CATEGORIES=		net
 HOMEPAGE=		http://www.rtsp.org/
 
@@ -20,7 +21,8 @@ CONFIGURE_ENV=		CFLAGS="${CFLAGS}" \
 
 NO_TEST=Yes
 
-WANTLIB += c m pthread stdc++
+WANTLIB += c m pthread
+WANTLIB += c++ c++abi
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/osrtspproxy

@@ -3,7 +3,7 @@
 COMMENT=	tool for measuring maximum TCP and UDP bandwidth
 
 DISTNAME=	iperf-2.0.5
-REVISION=	4
+REVISION=	5
 CATEGORIES=	net
 
 HOMEPAGE=	http://sourceforge.net/projects/iperf/
@@ -13,7 +13,8 @@ MAINTAINER=	Lawrence Teo <lteo@openbsd.org>
 # MIT'ish
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m pthread stdc++
+WANTLIB=	c m pthread
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=iperf/}
 

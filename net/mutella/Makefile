@@ -3,14 +3,15 @@
 COMMENT=		gnutella client with an easy to use interface
 
 DISTNAME=		mutella-0.4.5
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 
 HOMEPAGE=		http://mutella.sourceforge.net/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c curses m pthread readline stdc++ z
+WANTLIB=		c curses m pthread readline z
+WANTLIB +=		c++ c++abi
 LIB_DEPENDS=		devel/readline
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mutella/}

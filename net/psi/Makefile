@@ -3,7 +3,7 @@
 COMMENT=	multiplatform Jabber client
 
 DISTNAME=	psi-0.15
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 
 HOMEPAGE=	http://psi-im.org/
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += ICE QtDBus QtGui QtNetwork QtXml SM X11 Xext Xi Xinerama
 WANTLIB += Xrender Xss c enchant fontconfig freetype glib-2.0
-WANTLIB += gmodule-2.0 m pthread qca2 stdc++ z
+WANTLIB += gmodule-2.0 m pthread qca2 z
+WANTLIB += c++ c++abi
 
 MODULES=		x11/qt4 \
 			devel/gettext

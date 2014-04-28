@@ -5,6 +5,7 @@ COMMENT=	UCB/LBNL Network Animator
 V=		1.15
 DISTNAME=	nam-src-$V
 PKGNAME=	nam-$V
+REVISION=	0
 CATEGORIES=	net
 MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
@@ -16,7 +17,8 @@ HOMEPAGE=	http://nsnam.sourceforge.net/
 PERMIT_PACKAGE_CDROM=   Yes
 
 MODULES	+=		x11/tk
-WANTLIB +=		X11 Xext c m otcl stdc++ z
+WANTLIB +=		X11 Xext c m otcl z
+WANTLIB +=		c++ c++abi pthread
 WANTLIB +=		${MODTK_WANTLIB}
 LIB_DEPENDS +=		${MODTK_LIB_DEPENDS}
 

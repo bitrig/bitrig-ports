@@ -5,6 +5,7 @@ COMMENT =	messagepack (de)serializer
 MODPY_EGG_VERSION =	0.4.0
 DISTNAME =	msgpack-python-${MODPY_EGG_VERSION}
 PKGNAME =	py-msgpack-${MODPY_EGG_VERSION}
+REVISION =	0
 
 CATEGORIES =	net textproc
 
@@ -17,7 +18,8 @@ MASTER_SITES =	${MASTER_SITE_PYPI:=m/msgpack-python/}
 
 MODULES =	lang/python
 MODPY_SETUPTOOLS =	Yes
-WANTLIB +=	${MODPY_WANTLIB} m pthread stdc++
+WANTLIB +=	${MODPY_WANTLIB} m pthread
+WANTLIB +=	c++ c++abi
 
 FLAVORS =	python3
 FLAVOR ?=

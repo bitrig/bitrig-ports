@@ -5,7 +5,7 @@ COMMENT-zenmap=	graphical frontend for nmap
 
 MODPY_EGG_VERSION=	6.40
 DISTNAME=		nmap-${MODPY_EGG_VERSION}
-REVISION-main=		0
+REVISION-main=		1
 PKGNAME-main=		${DISTNAME}
 PKGNAME-zenmap=		nmap-zenmap-${MODPY_EGG_VERSION}
 
@@ -48,7 +48,8 @@ MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/libpcap \
 				${WRKDIST}/nping \
 				${WRKDIST}
 
-WANTLIB-main=	c crypto m ssl stdc++ pcre pthread ${MODLUA_WANTLIB}
+WANTLIB-main=	c crypto m ssl pcre pthread ${MODLUA_WANTLIB}
+WANTLIB-main +=	c++ c++abi
 LIB_DEPENDS-main=devel/pcre \
 		${MODLUA_LIB_DEPENDS}
 

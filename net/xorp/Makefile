@@ -5,7 +5,7 @@ COMMENT-main=	eXtensible Open Router Platform
 VERSION=	1.6
 DISTNAME=	xorp-${VERSION}
 PKGNAME-main=	${DISTNAME}
-REVISION-main=	4
+REVISION-main=	5
 CATEGORIES=	net
 HOMEPAGE=	http://www.xorp.org/
 
@@ -20,7 +20,8 @@ MULTI_PACKAGES=	-main
 PREFIX=		${LOCALBASE}/xorp
 PREFIX-main=	${LOCALBASE}
 
-WANTLIB=	c crypto curses m pcap stdc++
+WANTLIB=	c crypto curses m pcap
+WANTLIB +=	c++ c++abi pthread
 
 USE_GMAKE=	Yes
 LIBTOOL_FLAGS=	--tag=disable-shared

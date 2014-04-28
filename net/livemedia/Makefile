@@ -6,7 +6,7 @@ COMMENT=	LIVE555 streaming media library
 
 DISTNAME=	live.2012.02.04
 PKGNAME=	liveMedia-20120204
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net devel
 MASTER_SITES=	http://comstyle.com/source/
 
@@ -15,7 +15,8 @@ HOMEPAGE=	http://www.live555.com/liveMedia/
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m stdc++
+WANTLIB=	c m
+WANTLIB +=	c++ c++abi pthread
 
 CONFIGURE_STYLE=simple
 CONFIGURE_SCRIPT=genMakefiles

@@ -3,7 +3,7 @@
 COMMENT=		HTTP and WebDAV client library, with C interface
 
 DISTNAME=		neon-0.29.6
-REVISION=		4
+REVISION=		5
 SHARED_LIBS=		neon    28.0 # 29.6
 CATEGORIES=     	net www devel
 
@@ -13,7 +13,8 @@ HOMEPAGE=		http://www.webdav.org/neon/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += asn1 com_err crypto expat gssapi heimbase
-WANTLIB += krb5 m proxy pthread roken ssl stdc++ wind z
+WANTLIB += krb5 m proxy pthread roken ssl wind z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${HOMEPAGE}
 

@@ -31,8 +31,8 @@ REVISION-gtk=		5
 REVISION-gtk3=		5
 REVISION-gui=		8
 REVISION-mono=		2
-REVISION-qt3=		3
-REVISION-qt4=		3
+REVISION-qt3=		4
+REVISION-qt4=		4
 REVISION-ui=		3
 REVISION-python=	0
 
@@ -189,9 +189,10 @@ LIB_DEPENDS-qt3=	${MODGETTEXT_LIB_DEPENDS} \
 WANTLIB-qt3 += GL ICE SM X11 Xcursor Xext Xfixes Xft Xi
 WANTLIB-qt3 += Xinerama Xmu Xrandr Xrender Xt expat fontconfig
 WANTLIB-qt3 += freetype jpeg lcms m mng png pthread xcb z
-WANTLIB-qt3 += avahi-common stdc++ ${MODQT3_WANTLIB} ${MODGETTEXT_WANTLIB}
+WANTLIB-qt3 += avahi-common ${MODQT3_WANTLIB} ${MODGETTEXT_WANTLIB}
 WANTLIB-qt3 += X11-xcb Xau Xdmcp glapi xcb-dri2 xcb-glx
 WANTLIB-qt3 += Xdamage Xxf86vm drm pthread-stubs
+WANTLIB-qt3 += c++ c++abi
 .else
 CONFIGURE_ARGS+=	--disable-qt3
 .endif
@@ -202,7 +203,8 @@ MODULES+=		x11/qt4
 LIB_DEPENDS-qt4=	${MODGETTEXT_LIB_DEPENDS} \
 			x11/qt4 \
 			${BUILD_PKGPATH}
-WANTLIB-qt4 += QtCore avahi-common m stdc++ ${MODGETTEXT_WANTLIB} pthread
+WANTLIB-qt4 += QtCore avahi-common m ${MODGETTEXT_WANTLIB} pthread
+WANTLIB-qt4 += c++ c++abi
 .else
 CONFIGURE_ARGS+=	--disable-qt4
 .endif

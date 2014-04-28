@@ -8,7 +8,7 @@ V=		3.10.11
 DISTNAME=	opal-${V}
 EXTRACT_SUFX=	.tar.bz2
 SUBST_VARS=	V
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS=	opal	3.1	# 3.10.11
 
@@ -22,7 +22,8 @@ MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += avutil c celt0 crypto gsm m pt spandsp speex speexdsp
-WANTLIB += stdc++ theora tiff x264
+WANTLIB += theora tiff x264
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=opalvoip/}
 

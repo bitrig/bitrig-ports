@@ -7,7 +7,7 @@ COMMENT-qt=	BitTorrent client with Qt interface
 VER=		2.82
 REVISION-main=	1
 REVISION-gtk=	1
-REVISION-qt=	0
+REVISION-qt=	1
 DISTNAME=	transmission-${VER}
 PKGNAME-main=	transmission-${VER}
 PKGNAME-gtk=	transmission-gtk-${VER}
@@ -47,7 +47,8 @@ WANTLIB-gtk=	${WANTLIB-common} ICE SM X11 Xcomposite Xcursor Xdamage \
 WANTLIB-qt=	${WANTLIB-common} ${MODQT_WANTLIB} \
 		lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtXml \
 		ICE SM X11 Xext Xi Xinerama Xrender \
-		fontconfig freetype stdc++
+		fontconfig freetype
+WANTLIB-qt +=	c++ c++abi
 
 MODULES=	devel/gettext textproc/intltool
 .if ${BUILD_PACKAGES:M-qt}

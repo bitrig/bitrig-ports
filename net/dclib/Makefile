@@ -3,7 +3,7 @@
 COMMENT=	Library for direct-connect protocol
 
 DISTNAME=	dclib-0.3.7
-REVISION=	5
+REVISION=	6
 CATEGORIES=	net
 SHARED_LIBS=	dc	1.0
 
@@ -14,7 +14,8 @@ MAINTAINER=	Andrew Sveikauskas <asveikau@mail.rochester.edu>
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += crypto m ssl stdc++ z bz2 xml2
+WANTLIB += crypto m ssl z bz2 xml2
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	http://spacehopper.org/mirrors/berlios/dcgui/
 

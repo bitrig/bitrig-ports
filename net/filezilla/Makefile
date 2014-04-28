@@ -5,6 +5,7 @@ COMMENT=	fast FTP and SFTP GUI client with a lot of features
 V=		3.7.4.1
 PKGNAME=	filezilla-$V
 DISTNAME=	FileZilla_$V_src
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
@@ -17,7 +18,7 @@ HOMEPAGE=	http://www.filezilla-project.org/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m pthread stdc++ tasn1 z hogweed nettle
+WANTLIB += c m pthread tasn1 z hogweed nettle
 WANTLIB += X11 Xcomposite Xcursor Xdamage Xext Xfixes
 WANTLIB += Xi Xinerama Xrandr Xrender atk-1.0 cairo expat fontconfig
 WANTLIB += freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0
@@ -30,6 +31,7 @@ WANTLIB += sqlite3 ffi p11-kit
 WANTLIB += gmp harfbuzz
 WANTLIB += ICE SDL SM Xxf86vm graphite2 jpeg mspack sndio tiff
 WANTLIB += usbhid wx_gtk2_html
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext
 LIB_DEPENDS=	devel/libidn \

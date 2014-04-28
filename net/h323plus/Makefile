@@ -8,7 +8,7 @@ V=		1_25_0
 DISTNAME=	h323plus-v${V}
 PKGNAME=	h323plus-${V:S/_/./g}
 WRKDIST=	${WRKDIR}/h323plus
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	net devel
 
@@ -22,7 +22,8 @@ MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += SDL c crypto expat lber ldap ldap_r m pt pthread sasl2
-WANTLIB += ssl stdc++
+WANTLIB += ssl
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${HOMEPAGE}source/download/
 

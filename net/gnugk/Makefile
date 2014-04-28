@@ -6,7 +6,7 @@ COMMENT=	H.323 gatekeeper
 
 V=		3.5
 DISTNAME=	gnugk-${V}
-REVISION=	2
+REVISION=	3
 
 WRKDIST=	${WRKDIR}/gnugk-${V}
 
@@ -21,7 +21,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += SDL c crypto expat h323 kvm lber ldap ldap_r lua5.1
 WANTLIB += m netsnmp netsnmpagent netsnmpmibs pt pthread sasl2
-WANTLIB += ssh ssl stdc++
+WANTLIB += ssh ssl
+WANTLIB += c++ c++abi
 
 MODULES=	lang/lua
 

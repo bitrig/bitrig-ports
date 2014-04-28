@@ -6,7 +6,7 @@ COMMENT=		BitTorrent library written in C++
 NOT_FOR_ARCHS=		${GCC3_ARCHS}
 
 DISTNAME=		libtorrent-0.12.9
-REVISION=		2
+REVISION=		3
 EPOCH=			0
 SHARED_LIBS +=  	torrent 20.0	# .14.1
 CATEGORIES=		net devel
@@ -19,7 +19,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=		${HOMEPAGE}downloads/
 
-WANTLIB=		crypto m sigc-2.0 stdc++
+WANTLIB=		crypto m sigc-2.0
+WANTLIB +=		c++ c++abi pthread
 BUILD_DEPENDS=		devel/cppunit
 LIB_DEPENDS=		devel/libsigc++-2
 

@@ -5,6 +5,7 @@ COMMENT=	UCB/LBNL Network Simulator Version 2
 V=		2.35
 DISTNAME=	ns-src-$V
 PKGNAME=	ns-$V
+REVISION=	0
 CATEGORIES=	net
 MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
@@ -14,7 +15,8 @@ HOMEPAGE=	http://nsnam.sourceforge.net/
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES +=	x11/tk
-WANTLIB +=	X11 Xext c m pcap stdc++ otcl
+WANTLIB +=	X11 Xext c m pcap otcl
+WANTLIB +=	c++ c++abi pthread
 WANTLIB +=	${MODTK_WANTLIB}
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nsnam/}

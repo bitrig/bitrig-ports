@@ -3,6 +3,7 @@
 COMMENT=		text based IM client
 
 DISTNAME=		centerim-4.22.10
+REVISION=		0
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.centerim.org/
@@ -12,7 +13,8 @@ MAINTAINER=		Gonzalo L. R. <gonzalo@x61.com.ar>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += assuan c crypto curl gpg-error gpgme idn jpeg m ncursesw
-WANTLIB += pthread ssl stdc++ z
+WANTLIB += pthread ssl z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		http://centerim.org/download/releases/
 

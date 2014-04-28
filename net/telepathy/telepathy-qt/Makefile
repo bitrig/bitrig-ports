@@ -2,6 +2,7 @@
 
 COMMENT =		flexible communications framework, Qt bindings
 DISTNAME =		telepathy-qt-0.9.3
+REVISION =		0
 MAINTAINER =		KDE porting team <openbsd-kde@googlegroups.com>
 
 SHARED_LIBS =		telepathy-qt4		0.0
@@ -11,8 +12,9 @@ HOMEPAGE =		${HOMEPAGE_TP:=Telepathy Qt}
 
 MASTER_SITES =		${MASTER_SITES_TP:=telepathy-qt/}
 
-WANTLIB =  lib/qt4/QtDBus lib/qt4/QtNetwork lib/qt4/QtXml m stdc++
+WANTLIB =  lib/qt4/QtDBus lib/qt4/QtNetwork lib/qt4/QtXml m
 WANTLIB += telepathy-farstream telepathy-glib
+WANTLIB += c++ c++abi pthread
 
 MODULES =		devel/cmake \
 			devel/gettext \

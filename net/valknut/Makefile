@@ -3,7 +3,7 @@
 COMMENT=	Graphical Direct-Connect client
 
 DISTNAME=	valknut-0.3.7
-REVISION=	4
+REVISION=	5
 CATEGORIES=	net
 
 HOMEPAGE=	http://wxdcgui.sourceforge.net/
@@ -18,7 +18,8 @@ LIB_DEPENDS=	net/dclib \
 WANTLIB =	GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB +=	Xmu Xrandr Xrender Xt Xxf86vm bz2 c crypto dc drm expat
 WANTLIB +=	fontconfig freetype jpeg lcms m mng png pthread
-WANTLIB +=	pthread-stubs ssl stdc++ xcb xml2 z
+WANTLIB +=	pthread-stubs ssl xcb xml2 z
+WANTLIB +=	c++ c++abi
 
 USE_GMAKE=	Yes
 CONFIGURE_STYLE=gnu

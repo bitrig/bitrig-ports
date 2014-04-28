@@ -5,7 +5,7 @@ COMMENT=	determine the malware activity on a network
 
 DISTNAME=	nepenthes-0.2.2
 EPOCH=		1
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	net
 
@@ -26,8 +26,9 @@ LIB_DEPENDS=	net/adns \
 		devel/libmagic \
 		devel/pcre
 
-WANTLIB=	c crypto idn m ssl stdc++ pcap z \
+WANTLIB=	c crypto idn m ssl pcap z \
 		adns>=1 curl>=3 magic>=1 pcre>=1
+WANTLIB +=	c++ c++abi pthread
 
 FAKE_FLAGS+=	localstatedir='/var/nepenthes' \
 		sysconfdir='${PREFIX}/share/examples'

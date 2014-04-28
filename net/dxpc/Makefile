@@ -3,7 +3,7 @@
 COMMENT =	X11 over a low bandwidth link
 VERSION =	3.8.2
 DISTNAME =	dxpc-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	net x11
 
 MAINTAINER =	Marc Espie <espie@openbsd.org>
@@ -15,7 +15,8 @@ MASTER_SITES =		http://www.vigor.nu/dxpc/${VERSION}/
 HOMEPAGE =		http://www.vigor.nu/dxpc/
 
 LIB_DEPENDS =		archivers/lzo
-WANTLIB =		c m stdc++ lzo
+WANTLIB =		c m lzo
+WANTLIB +=		c++ c++abi pthread
 
 USE_X11 = 		Yes
 

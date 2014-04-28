@@ -5,6 +5,7 @@ COMMENT=		connect to VNC server and save screen images
 V=			1.2a
 DISTNAME=		vncsnapshot-$V-src
 PKGNAME=		vncsnapshot-$V
+REVISION=		0
 
 CATEGORIES=		net
 
@@ -17,7 +18,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 LIB_DEPENDS=		graphics/jpeg
 
-WANTLIB += c m stdc++ z jpeg
+WANTLIB += c m z jpeg
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vncsnapshot/}
 

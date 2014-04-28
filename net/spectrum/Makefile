@@ -4,7 +4,7 @@ COMMENT =	XMPP transport/gateway
 
 DISTNAME =	spectrum-1.4.8
 CATEGORIES =	net
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://spectrum.im/
 MASTER_SITES =	https://github.com/downloads/hanzz/libtransport/
@@ -13,9 +13,10 @@ MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m pthread stdc++ gloox purple glib-2.0 gthread-2.0 ev
+WANTLIB += c m pthread gloox purple glib-2.0 gthread-2.0 ev
 WANTLIB += PocoData PocoFoundation PocoDataMySQL PocoDataODBC PocoDataSQLite
 WANTLIB += Magick++
+WANTLIB += c++ c++abi
 
 MODULES =	lang/python devel/cmake
 

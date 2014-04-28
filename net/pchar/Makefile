@@ -3,12 +3,14 @@
 COMMENT=	Sandia Internet path characterization tool
 
 DISTNAME=	pchar-1.5
+REVISION=	0
 CATEGORIES=	net
 
 MASTER_SITES=	${HOMEPAGE}
 
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m pcap stdc++ 
+WANTLIB=		c m pcap
+WANTLIB +=		c++ c++abi pthread
 
 HOMEPAGE=	http://www.kitchenlab.org/www/bmah/Software/pchar/
 

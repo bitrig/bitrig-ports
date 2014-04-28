@@ -6,7 +6,7 @@ COMMENT =		mobile shell
 
 DISTNAME =		mosh-1.2.4
 
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		net
 
@@ -17,8 +17,9 @@ MAINTAINER =		Jeremie Courreges-Anglas <jca@wxcvbn.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=		c crypto m ncursesw protobuf pthread ssl stdc++ util
+WANTLIB +=		c crypto m ncursesw protobuf pthread ssl util
 WANTLIB +=		z
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${HOMEPAGE}
 

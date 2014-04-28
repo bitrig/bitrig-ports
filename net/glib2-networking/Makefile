@@ -9,7 +9,7 @@ GNOME_PROJECT=	glib-networking
 
 PKGNAME=	glib2-networking-${GNOME_VERSION}
 
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	net
 
@@ -21,8 +21,9 @@ MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c ffi gio-2.0 glib-2.0 gmodule-2.0 gmp gnutls gobject-2.0
-WANTLIB += hogweed m nettle p11-kit pcre proxy pthread stdc++
+WANTLIB += hogweed m nettle p11-kit pcre proxy pthread
 WANTLIB += tasn1 z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		x11/gnome

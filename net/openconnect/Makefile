@@ -3,7 +3,7 @@
 COMMENT=	client for Cisco AnyConnect SSL VPN
 
 DISTNAME=	openconnect-5.99
-REVISION=	1
+REVISION=	2
 DIST_SUBDIR=	openconnect
 
 SHARED_LIBS +=  openconnect               2.0 # 3.2
@@ -18,7 +18,8 @@ MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c gmp gnutls hogweed m nettle oath p11-kit proxy pthread
-WANTLIB += stdc++ tasn1 xml2 z ffi
+WANTLIB += tasn1 xml2 z ffi
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	ftp://ftp.infradead.org/pub/openconnect/
 

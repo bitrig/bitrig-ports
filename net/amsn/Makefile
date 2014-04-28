@@ -5,7 +5,7 @@ COMMENT=	open source MSN Messenger clone
 V=		0.98.9
 DISTNAME=	amsn-$V-src
 PKGNAME=	${DISTNAME:S/-src//}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.amsn-project.net/
@@ -18,7 +18,8 @@ PERMIT_PACKAGE_CDROM=   Yes
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=project/amsn/amsn/${V}/}
 EXTRACT_SUFX=	.tar.bz2
 
-WANTLIB += ICE SM X11 jpeg m png stdc++ z
+WANTLIB += ICE SM X11 jpeg m png z
+WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS=	graphics/jpeg \
 		graphics/png

@@ -5,6 +5,7 @@ COMMENT =		secure decentralised communication platform
 V = 			0.5.5b
 DISTNAME =		retroshare_0.5.5-0.6864_src
 PKGNAME =		retroshare-${V}
+REVISION =		0
 CATEGORIES =		net security
 HOMEPAGE =		http://retroshare.sourceforge.net
 
@@ -14,7 +15,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB += 	ICE QtGui QtMultimedia QtNetwork QtScript QtXml SM
 WANTLIB += 	X11 Xext Xi Xinerama Xrender bz2 c crypto curl fontconfig
 WANTLIB += 	freetype gpgme gnome-keyring ixml m pthread protobuf speex
-WANTLIB += 	speexdsp ssh ssh_threads ssl stdc++ upnp xml2 xslt z
+WANTLIB += 	speexdsp ssh ssh_threads ssl upnp xml2 xslt z
+WANTLIB += 	c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=retroshare/RetroShare/${V}/}
 MODULES =		x11/qt4

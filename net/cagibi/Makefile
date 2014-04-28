@@ -4,6 +4,7 @@ CATEGORIES =	net
 COMMENT =	SSDP cache/proxy daemon for KDE
 HOMEPAGE =	https://projects.kde.org/projects/kdesupport/cagibi
 DISTNAME =	cagibi-0.2.0
+REVISION =	0
 
 MASTER_SITES =	${MASTER_SITE_KDE:=stable/cagibi/}
 EXTRACT_SUFX =	.tar.bz2
@@ -11,8 +12,9 @@ EXTRACT_SUFX =	.tar.bz2
 # GPLv2+ and LGPLv2.1+
 PERMIT_PACKAGE_CDROM =          Yes
 
-WANTLIB =	c m stdc++
+WANTLIB =	c m
 WANTLIB +=	lib/qt4/QtDBus lib/qt4/QtNetwork lib/qt4/QtXml
+WANTLIB +=	c++ c++abi pthread
 
 MODULES =	x11/kde4
 MODKDE4_USE =

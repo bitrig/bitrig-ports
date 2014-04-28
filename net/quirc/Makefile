@@ -3,7 +3,7 @@
 COMMENT=	irc client that uses Tcl/Tk
 
 DISTNAME=	quirc-0.9.84
-REVISION =	6
+REVISION =	7
 CATEGORIES=	net
 
 HOMEPAGE=	http://quirc.sourceforge.net/
@@ -13,7 +13,8 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB=		ICE SM X11 c m stdc++ ${MODTCL_LIB}
+WANTLIB=		ICE SM X11 c m ${MODTCL_LIB}
+WANTLIB +=		c++ c++abi pthread
 
 MODULES=	x11/tk
 

@@ -17,17 +17,18 @@ PKGNAME-ldap=		powerdns-ldap-${V}
 CATEGORIES=		net
 HOMEPAGE=		http://www.powerdns.com/
 
-REVISION-main=		2
-REVISION-mysql=		3
-REVISION-pgsql=		1
-REVISION-ldap=		1
+REVISION-main=		3
+REVISION-mysql=		4
+REVISION-pgsql=		2
+REVISION-ldap=		2
 
 MULTI_PACKAGES=		-main -mysql -pgsql -ldap
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		m stdc++ z pthread
+WANTLIB=		m z pthread
+WANTLIB +=		c++ c++abi
 WANTLIB-main=		c sqlite3>=8 ${WANTLIB}
 
 MASTER_SITES=		http://downloads.powerdns.com/releases/

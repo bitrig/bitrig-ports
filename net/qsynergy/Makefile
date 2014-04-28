@@ -3,7 +3,7 @@
 COMMENT=		GUI for synergy
 
 DISTNAME=		qsynergy-0.9.1
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net x11
 
 HOMEPAGE=		http://sourceforge.net/projects/qsynergy/
@@ -16,7 +16,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=qsynergy/}
 MODULES=		x11/qt4
 
 WANTLIB += 		ICE QtGui QtNetwork SM X11 Xext Xi Xinerama Xrender
-WANTLIB += 		c fontconfig freetype m pthread stdc++
+WANTLIB += 		c fontconfig freetype m pthread
+WANTLIB += 		c++ c++abi
 
 RUN_DEPENDS=		devel/desktop-file-utils \
 			net/synergy

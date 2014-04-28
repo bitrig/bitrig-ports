@@ -7,7 +7,7 @@ BROKEN-sh =		undefined references to __sync atomic ops
 COMMENT=		ncurses BitTorrent client based on libTorrent
 
 DISTNAME=		rtorrent-0.8.9
-REVISION=		0
+REVISION=		1
 EPOCH=			0
 CATEGORIES=		net
 
@@ -19,8 +19,9 @@ MAINTAINER=		David Coppa <dcoppa@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c crypto curl>=14 idn m ncursesw \
-			pthread sigc-2.0 ssl stdc++ \
+			pthread sigc-2.0 ssl \
 			torrent>=20 z
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES=		${HOMEPAGE}downloads/
 

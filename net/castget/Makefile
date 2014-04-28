@@ -3,7 +3,7 @@
 COMMENT=		command-line podcast downloader
 
 DISTNAME=		castget-1.0.1
-REVISION=		2
+REVISION=		3
 SHARED_LIBS +=	castget              0.0      # .0.0
 CATEGORIES=		net
 
@@ -16,8 +16,9 @@ MAINTAINER=		Gleydson Soares <gsoares@trusted.com.br>
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c crypto curl glib-2.0 id3 idn m pcre pthread ssl stdc++
+WANTLIB += c crypto curl glib-2.0 id3 idn m pcre pthread ssl
 WANTLIB += xml2 z
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext
 

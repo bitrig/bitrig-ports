@@ -3,7 +3,7 @@
 COMMENT=	console based Jabber client
 
 DISTNAME=	freetalk-3.2
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	net
 
@@ -14,8 +14,9 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c glib-2.0 gmp idn ltdl m ncurses pthread readline stdc++ \
+WANTLIB=	c glib-2.0 gmp idn ltdl m ncurses pthread readline \
 		guile loudmouth-1>=3
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SAVANNAH:=freetalk/}
 

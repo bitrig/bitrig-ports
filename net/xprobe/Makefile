@@ -3,14 +3,15 @@
 COMMENT=		ICMP active OS fingerprint scanner
 
 DISTNAME=		xprobe2-0.3
-REVISION=		0
+REVISION=		1
 CATEGORIES=    		net security
 
 HOMEPAGE=		http://xprobe.sourceforge.net/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m pcap stdc++
+WANTLIB=		c m pcap
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xprobe/}
 

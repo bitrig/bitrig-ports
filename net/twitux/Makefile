@@ -4,7 +4,7 @@ COMMENT=		Gtk-based GUI client for Twitter
 
 GNOME_PROJECT=		twitux
 GNOME_VERSION=		0.69
-REVISION=		9
+REVISION=		10
 EPOCH=			0
 
 CATEGORIES=     	net
@@ -23,8 +23,9 @@ WANTLIB += gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0 gnome-keyring
 WANTLIB += gobject-2.0 gpg-error gthread-2.0 gtk-x11-2.0 ltdl
 WANTLIB += m notify ogg pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 png pthread pthread-stubs sexy soup-2.4
-WANTLIB += stdc++ vorbis vorbisfile xcb xcb-render xcb-shm xml2
+WANTLIB += vorbis vorbisfile xcb xcb-render xcb-shm xml2
 WANTLIB += z
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS=	devel/iso-codes
 RUN_DEPENDS=	devel/iso-codes
