@@ -3,7 +3,7 @@
 COMMENT =		small SRCP client to control digital model trains
 
 DISTNAME =		dtcltiny-0.8.4
-REVISION=		0
+REVISION=		1
 CATEGORIES =		misc x11
 
 HOMEPAGE =		http://dtcltiny.sourceforge.net/
@@ -15,7 +15,8 @@ PERMIT_PACKAGE_CDROM =		Yes
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=dtcltiny/}
 
 MODULES =		x11/qt3
-WANTLIB += 		ICE SM X11 Xext c jpeg m pthread stdc++ z
+WANTLIB += 		ICE SM X11 Xext c jpeg m pthread z
+WANTLIB +=		c++ c++abi
 
 SEPARATE_BUILD =	Yes
 USE_GMAKE =		Yes

@@ -13,7 +13,7 @@ SHARED_LIBS=		gps	19.0 \
 			gpsd	0.0
 CATEGORIES=		misc geo
 
-REVISION-main=		5
+REVISION-main=		6
 REVISION-php=		5
 REVISION-x11=		1
 
@@ -55,7 +55,8 @@ CONFIGURE_ARGS+=	--without-x
 CONFIGURE_ENV +=	LDFLAGS="-lm -pthread -lutil"
 .endif
 
-WANTLIB-main=		m ncurses c pthread stdc++ usb-1.0 util ${MODPY_WANTLIB}
+WANTLIB-main=		m ncurses c pthread usb-1.0 util ${MODPY_WANTLIB}
+WANTLIB-main +=		c++ c++abi
 
 # the php display script doesn't depend on having any of gpsd around,
 # it just sits there and looks pretty.

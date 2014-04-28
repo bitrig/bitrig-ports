@@ -4,7 +4,7 @@ COMMENT=	chemistry file translation program
 
 V=		2.2.3
 DISTNAME=	openbabel-${V}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	misc
 
 SUBST_VARS=	V
@@ -18,7 +18,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openbabel/}
 
-WANTLIB=	c m stdc++ xml2 z
+WANTLIB=	c m xml2 z
+WANTLIB +=	c++ c++abi pthread
 
 MODULES=	converters/libiconv
 

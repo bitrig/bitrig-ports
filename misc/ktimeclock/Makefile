@@ -4,7 +4,7 @@ COMMENT=	task-based timeclock for KDE
 
 VERSION=	2.0.2
 DISTNAME=	ktimeclock-${VERSION}
-REVISION=	7
+REVISION=	8
 CATEGORIES=	misc x11
 
 HOMEPAGE=	http://www.howlingfrog.com/opensource/ktimeclock/
@@ -15,9 +15,10 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 PERMIT_PACKAGE_CDROM=  Yes
 
 WANTLIB =  ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 c expat fam
-WANTLIB += fontconfig freetype idn m png pthread stdc++ util xcb z 
+WANTLIB += fontconfig freetype idn m png pthread util xcb z 
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kwalletclient
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${HOMEPAGE}/downloads/v${VERSION}/tarball/
 

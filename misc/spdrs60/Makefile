@@ -3,7 +3,7 @@
 COMMENT =	graphical SRCP client to control a digital model railway
 
 DISTNAME =	spdrs60-0.5.6
-REVISION =	1
+REVISION =	2
 CATEGORIES =	misc x11
 
 HOMEPAGE =	http://spdrs60.sourceforge.net/
@@ -17,7 +17,8 @@ PERMIT_PACKAGE_CDROM =		Yes
 MODULES =		x11/qt3
 WANTLIB += GL ICE SM X11 Xcursor Xext Xft Xi Xinerama Xmu Xrandr
 WANTLIB += Xrender c fontconfig freetype jpeg lcms m mng png pthread
-WANTLIB += stdc++ z
+WANTLIB += z
+WANTLIB += c++ c++abi
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	${MODQT_CONFIGURE_ARGS} --disable-html-doc

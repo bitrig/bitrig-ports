@@ -3,7 +3,7 @@
 COMMENT=	filemanager for X Window
 
 DISTNAME=	xnc-4.4.7
-REVISION=	5
+REVISION=	6
 DISTFILES=	${DISTNAME}.src${EXTRACT_SUFX}
 SHARED_LIBS=	xncaqua	1.0 \
 		xncfive	1.0
@@ -16,7 +16,8 @@ MASTER_SITES=	${HOMEPAGE}/src/
 
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += ICE SM X11 Xext c jpeg m pthread-stubs stdc++ xcb z tiff png
+WANTLIB += ICE SM X11 Xext c jpeg m pthread-stubs xcb z tiff png
+WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS=	graphics/tiff \
 		graphics/png

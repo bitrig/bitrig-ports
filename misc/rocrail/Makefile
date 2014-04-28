@@ -13,7 +13,7 @@ PKGNAME-gui =		rocview-${VERSION}.${REV}
 CATEGORIES =		misc x11
 
 REVISION-main =		1
-REVISION-gui =		0
+REVISION-gui =		1
 
 HOMEPAGE =		http://www.rocrail.net/
 MAINTAINER =		Sebastian Reitenbach <sebastia@openbsd.org>
@@ -25,10 +25,11 @@ MASTER_SITES =		http://bugs.launchpad.net/rocrail/sunrise/2.0/+download/
 
 MULTI_PACKAGES =	-main -gui
 WANTLIB +=		c pthread
-WANTLIB-gui += 		${WANTLIB} m stdc++
+WANTLIB-gui += 		${WANTLIB} m
 WANTLIB-gui += 		wx_base wx_base_net wx_base_odbc wx_base_xml wx_gtk2_adv
 WANTLIB-gui += 		wx_gtk2_aui wx_gtk2_core wx_gtk2_dbgrid wx_gtk2_html
 WANTLIB-gui += 		wx_gtk2_qa wx_gtk2_richtext wx_gtk2_xrc
+WANTLIB-gui += 		c++ c++abi pthread
 LIB_DEPENDS-gui +=	x11/wxWidgets
 RUN_DEPENDS-gui +=	${PKGPATH},-main
 
