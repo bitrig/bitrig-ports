@@ -3,7 +3,7 @@
 COMMENT=	cross platform, open source .NET developement framework
 
 DISTNAME=	mono-2.10.9
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	lang devel
 
@@ -21,7 +21,8 @@ MAINTAINER=	Robert Nagy <robert@openbsd.org>
 # GPLv2, LGPL, MIT X11, MPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m pthread z stdc++
+WANTLIB=	c m pthread z
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	http://download.mono-project.com/sources/mono/ \
 		http://ftp.novell.com/pub/mono/sources/mono/

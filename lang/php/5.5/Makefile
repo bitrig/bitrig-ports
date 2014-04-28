@@ -8,12 +8,14 @@ USE_LIBTOOL=	No
 
 PV=		5.5
 V=		${PV}.11
+REVISION-main=	0
+REVISION-fpm=	0
 
 INI_TEMPLATES=	development production
 
 CONFIGURE_ARGS+=	--enable-mysqlnd
 
-WANTLIB-main+=		stdc++
+WANTLIB-main+=		c++ c++abi pthread
 
 # fpm
 PKGNAME-fpm?=		php-fpm-${V}

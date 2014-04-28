@@ -13,6 +13,7 @@ COMMENT =	Ruby virtual machine and core library
 V=		2.2.3
 EXTRACT_SUFX=	.tar.bz2
 DISTNAME =	rubinius-${V}
+REVISION =	0
 
 MASTER_SITES =	http://releases.rubini.us/
 
@@ -25,8 +26,9 @@ MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c crypto m ncurses ncursesw pthread readline ssl stdc++
+WANTLIB += c crypto m ncurses ncursesw pthread readline ssl
 WANTLIB += termcap util yaml z
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS =	devel/bison \
 		devel/libffi \

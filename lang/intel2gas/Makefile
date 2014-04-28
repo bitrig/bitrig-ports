@@ -4,6 +4,7 @@ COMMENT=	convert Intel assembly language (nasm) to AT&T syntax (gas)
 
 VERSION=	1.3.3
 DISTNAME=	intel2gas-${VERSION}
+REVISION=	0
 CATEGORIES=	lang
 
 HOMEPAGE=	http://www.niksula.cs.hut.fi/~mtiihone/intel2gas/
@@ -11,7 +12,8 @@ MASTER_SITES=	${HOMEPAGE}
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c stdc++ m
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 NO_TEST=	Yes
 CONFIGURE_STYLE=gnu

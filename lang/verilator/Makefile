@@ -3,6 +3,7 @@
 COMMENT=	very fast free Verilog HDL simulator
 
 DISTNAME =	verilator-3.847
+REVISION =	0
 CATEGORIES=	lang devel
 
 HOMEPAGE=	http://www.veripool.org/wiki/verilator/Intro
@@ -13,7 +14,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=		http://www.veripool.org/ftp/
 EXTRACT_SUFX=		.tgz
 
-WANTLIB=		c m stdc++
+WANTLIB=		c m
+WANTLIB +=		c++ c++abi pthread
 
 BUILD_DEPENDS +=	devel/bison
 

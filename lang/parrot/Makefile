@@ -5,12 +5,10 @@ SHARED_ONLY =	Yes
 COMMENT=	virtual machine designed for interpreted languages
 
 V=		5.4.0
-REVISION=	2
+REVISION=	3
 DISTNAME=	parrot-$V
 CATEGORIES=	lang perl6
 SHARED_LIBS=	parrot	8.0
-
-REVISION=	0
 
 HOMEPAGE=	http://www.parrot.org/
 
@@ -22,7 +20,8 @@ MASTER_SITES=	ftp://ftp.parrot.org/pub/parrot/releases/all/$V/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += GL GLU c glut gmp icudata icuuc m ncurses pthread
-WANTLIB += readline stdc++ util z ffi
+WANTLIB += readline util z ffi
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS=		graphics/glew \
 			devel/pcre

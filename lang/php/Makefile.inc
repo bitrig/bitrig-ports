@@ -308,7 +308,7 @@ MODULES=		converters/libiconv devel/gettext
 WANTLIB-main+=		c crypto ssl z pthread gssapi krb5 xml2>=8 \
 			m asn1 com_err heimbase roken \
 			wind ${MODGETTEXT_WANTLIB}
-# php 5.4/5.5 : WANTLIB-main += stdc++
+# php 5.4/5.5 : WANTLIB-main += c++ c++abi pthread
 WANTLIB-fastcgi=	${WANTLIB-main}
 LIB_DEPENDS-main=	textproc/libxml
 RUN_DEPENDS-main=	${MODGETTEXT_RUN_DEPENDS} \

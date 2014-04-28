@@ -12,6 +12,7 @@ NODE_VERSION=	v0.10.24
 
 DISTNAME=	node-${NODE_VERSION}
 PKGNAME=	${DISTNAME:S/v//g}
+REVISION=	0
 
 CATEGORIES=	lang devel
 
@@ -26,7 +27,8 @@ MASTER_SITES=	${HOMEPAGE}dist/${NODE_VERSION}/
 
 MODULES=	lang/python
 
-WANTLIB +=	c crypto execinfo kvm m pthread ssl stdc++ util z
+WANTLIB +=	c crypto execinfo kvm m pthread ssl util z
+WANTLIB +=	c++ c++abi
 
 LIB_DEPENDS=	devel/libexecinfo
 

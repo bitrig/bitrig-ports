@@ -7,6 +7,7 @@ COMMENT =	pure-Java implementation of the Ruby language
 V =		1.7.9
 DISTNAME =	jruby-bin-${V}
 PKGNAME =	jruby-${V}
+REVISION =	0
 CATEGORIES =	lang lang/ruby
 DISTFILES =	${DISTNAME}.tar.gz \
 		jnr-jffi-1.2.2-0-g4c196bb.tar.gz:0 \
@@ -30,7 +31,8 @@ MODJAVA_VER =	1.7+
 MODJAVA_JRERUN = Yes
 USE_GMAKE =	Yes
 
-WANTLIB =	c m pthread stdc++
+WANTLIB =	c m pthread
+WANTLIB +=	c++ c++abi
 
 BUILD_DEPENDS =	archivers/unzip \
 		archivers/zip \

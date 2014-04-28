@@ -72,8 +72,9 @@ LIB_DEPENDS-main =	archivers/bzip2 \
 			devel/readline
 RUN_DEPENDS-main =
 WANTLIB-main =		bz2 c crypto expat ffi m ncursesw panelw pthread \
-			readline sqlite3 ssl stdc++ util z \
+			readline sqlite3 ssl util z \
 			${MODGETTEXT_WANTLIB}
+WANTLIB-main +=		c++ c++abi
 .if ${VERSION} == "2.7"
 WANTLIB-main +=		ossaudio
 .elif ${VERSION} == "3.3" || ${VERSION} == "3.4"

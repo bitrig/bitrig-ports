@@ -7,7 +7,7 @@ DISTNAME=		verilog-$V
 PKGNAME=		iverilog-$V
 CATEGORIES=		lang devel
 
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://www.icarus.com/eda/verilog/
 
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=		ftp://ftp.icarus.com/pub/eda/verilog/v0.9/
 
-WANTLIB += c m readline stdc++ termcap z
+WANTLIB += c m readline termcap z
+WANTLIB += c++ c++abi pthread
 LIB_DEPENDS=		devel/readline
 
 USE_GMAKE=		Yes

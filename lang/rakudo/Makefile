@@ -12,6 +12,7 @@ PORTNAME =		rakudo
 V =			2013.05
 DISTNAME =		rakudo-star-$V
 PKGNAME =		rakudo-$V
+REVISION =		0
 
 PARROT_VERSION =	5.4.0
 NQP_VERSION =		2013.05
@@ -27,7 +28,8 @@ MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB = 		c gmp icudata icuuc m ncurses parrot pthread
-WANTLIB += 		readline stdc++ util ffi
+WANTLIB += 		readline util ffi
+WANTLIB += 		c++ c++abi
 
 MASTER_SITES =		${HOMEPAGE}/downloads/star/
 

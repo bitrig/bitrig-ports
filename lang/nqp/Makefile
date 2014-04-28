@@ -11,6 +11,7 @@ V =			2013.05
 DISTNAME =		$V
 PKGNAME =		nqp-${V}
 DIST_SUBDIR =		nqp
+REVISION =		0
 
 PARROT_VERSION =	5.4.0
 SUBST_VARS +=		PARROT_VERSION
@@ -25,7 +26,8 @@ MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += c gmp icudata icuuc m ncurses parrot pthread
-WANTLIB += readline stdc++ util ffi
+WANTLIB += readline util ffi
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		https://github.com/perl6/nqp/archive/
 

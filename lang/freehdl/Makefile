@@ -3,6 +3,7 @@
 COMMENT=	open-source (C++ generating) VHDL simulator
 
 DISTNAME=	freehdl-0.0.7
+REVISION=	0
 CATEGORIES=	lang cad
 
 SHARED_LIBS +=  ieee                      0.0 # 0.0
@@ -19,7 +20,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${HOMEPAGE}/~enaroska/
 
-WANTLIB += c m stdc++
+WANTLIB += c m
+WANTLIB += c++ c++abi pthread
 
 USE_GMAKE=	Yes
 
