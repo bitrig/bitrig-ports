@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	scim plugin for qt
 
 DISTNAME=	scim-qtimm-0.9.4
-REVISION=	4
+REVISION=	5
 
 CATEGORIES=	inputmethods
 
@@ -16,7 +16,8 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	X11 stdc++ xcb scim-1.0 scim-x11utils-1.0 m
+WANTLIB=	X11 xcb scim-1.0 scim-x11utils-1.0 m
+WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scim/}
 EXTRACT_SUFX=	.tar.bz2

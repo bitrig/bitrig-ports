@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT =	smart common input method platform
 
 DISTNAME =	scim-1.4.9
-REVISION =	12
+REVISION =	13
 
 SHARED_LIBS +=  scim-1.0           0.0           # .10.4
 SHARED_LIBS +=  scim-x11utils-1.0  0.0           # .10.4
@@ -24,9 +24,10 @@ WANTLIB =	X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes \
 		Xi Xinerama Xrandr Xrender atk-1.0 c cairo expat fontconfig \
 		freetype glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 \
 		gio-2.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1 \
-		png pthread pthread-stubs stdc++ xcb z gtk-x11-2.0 \
+		png pthread pthread-stubs xcb z gtk-x11-2.0 \
 		gdk-x11-2.0 gdk_pixbuf-2.0 xcb-render \
 		GL Xxf86vm drm ffi xcb-shm
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=scim/}
 

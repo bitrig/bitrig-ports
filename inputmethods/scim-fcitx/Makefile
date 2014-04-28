@@ -7,7 +7,7 @@ COMMENT=	scim input method module for fcitx
 V=		3.1.1
 DISTNAME=	scim-fcitx.$V
 PKGNAME=	scim-fcitx-$V
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	inputmethods chinese
 
@@ -18,7 +18,8 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m stdc++ scim-1.0 pthread
+WANTLIB=	c m scim-1.0 pthread
+WANTLIB +=	c++ c++abi
 
 MODULES=	devel/gettext
 

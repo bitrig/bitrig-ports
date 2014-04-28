@@ -17,10 +17,10 @@ PKGNAME-gtk=	uim-gtk-$V
 PKGNAME-qt=	uim-qt-$V
 PKGNAME-kde=	uim-kde-$V
 
-REVISION-main=	11
-REVISION-gtk=	13
-REVISION-qt=	7
-REVISION-kde=	10
+REVISION-main=	12
+REVISION-gtk=	14
+REVISION-qt=	8
+REVISION-kde=	11
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
@@ -53,7 +53,8 @@ RUN_DEPENDS-main=${RUN_DEPENDS} \
 LIB_DEPENDS-main =	inputmethods/anthy \
 			${MODGETTEXT_LIB_DEPENDS}
 WANTLIB-main=	${Wcommon} curses \
-		util Xft stdc++ anthy anthydic \
+		util Xft stdc++ anthy anthydic
+WANTLIB-main +=	c++ c++abi pthread
 
 uim_LIB_DEPENDS=inputmethods/uim
 
@@ -67,9 +68,10 @@ LIB_DEPENDS-qt=		${MODQT_LIB_DEPENDS} \
 #common to -qt and -kde
 Wqt =		${Wcommon} ${Wx} ${MODQT_WANTLIB} \
 		ICE SM Xft Xmu Xt jpeg lcms mng png \
-		 stdc++ uim gcroots uim-scm
+		uim gcroots uim-scm
+Wqt +=		c++ c++abi pthread
 
-WANTLIB-qt =	${Wqt} uim-custom pthread
+WANTLIB-qt =	${Wqt} uim-custom
 
 LIB_DEPENDS-kde	=	inputmethods/uim \
 			${MODGETTEXT_LIB_DEPENDS} \
@@ -86,7 +88,8 @@ WANTLIB-gtk=	${Wcommon} ${Wx} gio-2.0 glib-2.0 gmodule-2.0 pangoft2-1.0 \
 		pangocairo-1.0 cairo png Xcomposite xcb-render xcb-shm \
 		pcre pixman-1 gtk-x11-2.0 \
 		gdk-x11-2.0 gdk_pixbuf-2.0 gthread-2.0 pthread anthy anthydic \
-		uim-custom Xau Xdmcp ffi pthread-stubs stdc++
+		uim-custom Xau Xdmcp ffi pthread-stubs
+WANTLIB-gtk +=	c++ c++abi
 
 MAKE_FLAGS=	moduledir='${LOCALBASE}/lib/gtk-2.0/2.10.0/immodules' \
 		UIM_QT_LDFLAGS='-pthread -L${X11BASE}/lib -L${MODQT_LIBDIR} -lqt-mt -lXext -lX11'

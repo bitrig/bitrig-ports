@@ -6,7 +6,7 @@ COMMENT =	scim input method module for anthy
 
 DISTNAME =	scim-anthy-1.2.7
 
-REVISION =	4
+REVISION =	5
 
 CATEGORIES =	inputmethods japanese
 
@@ -22,8 +22,9 @@ WANTLIB =	X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes \
 		gobject-2.0 gthread-2.0 gtk-x11-2.0 m pango-1.0 \
 		pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png \
 		pthread-stubs scim-1.0 scim-gtkutils-1.0 scim-x11utils-1.0 \
-		stdc++ xcb-render xcb z \
+		xcb-render xcb z \
 		GL Xxf86vm drm ffi xcb-shm
+WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE_JP:=scim-imengine/37309/}
 

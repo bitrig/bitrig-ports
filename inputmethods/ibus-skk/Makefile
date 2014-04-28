@@ -3,7 +3,7 @@
 COMMENT =	japanese skk input engine for ibus
 
 DISTNAME =	ibus-skk-1.4.1
-REVISION =	2
+REVISION =	3
 
 CATEGORIES =	inputmethods japanese
 
@@ -23,8 +23,9 @@ WANTLIB =	GL ICE SM X11 Xau Xcomposite Xcursor Xdamage Xdmcp \
 		gee gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 \
 		gtk-3 harfbuzz ibus-1.0 json-glib-1.0 \
 		m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1 \
-		png pthread pthread-stubs skk stdc++ xcb xcb-render \
+		png pthread pthread-stubs skk xcb xcb-render \
 		xcb-shm z
+WANTLIB +=	c++ c++abi
 
 MODULES =	devel/gettext \
 		textproc/intltool

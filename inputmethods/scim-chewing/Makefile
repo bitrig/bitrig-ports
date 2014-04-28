@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	scim input method module for chewing
 
 DISTNAME=	scim-chewing-0.3.4
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	inputmethods chinese
 
@@ -22,7 +22,8 @@ WANTLIB=	GL X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes \
 		gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 \
 		gtk-x11-2.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0 \
 		pcre pixman-1 png pthread-stubs scim-1.0 scim-gtkutils-1.0 \
-		scim-x11utils-1.0 stdc++ xcb xcb-render xcb-shm z ffi
+		scim-x11utils-1.0 xcb xcb-render xcb-shm z ffi
+WANTLIB +=	c++ c++abi pthread
 
 MODULES=	devel/gettext \
 		textproc/intltool
