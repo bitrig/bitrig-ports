@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.2 2013/03/06 14:46:37 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.3 2014/04/28 14:56:10 benoit Exp $
 bin/isympy
 lib/python${MODPY_VERSION}/site-packages/sympy/
 lib/python${MODPY_VERSION}/site-packages/sym${MODPY_PY_PREFIX}${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
