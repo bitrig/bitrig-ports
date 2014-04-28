@@ -4,7 +4,7 @@ SHARED_ONLY=	Yes
 COMMENT= 	logic circuit simulator for KDE
 
 DISTNAME=	klogic-1.6
-REVISION=	10
+REVISION=	11
 CATEGORIES=	cad education x11 x11/kde
 
 MASTER_SITES=	http://distfiles.nl/
@@ -15,9 +15,10 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB += GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft
 WANTLIB += Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2
 WANTLIB += c drm expat fontconfig freetype idn jpeg
-WANTLIB += lcms m mng png pthread stdc++ util xcb z
+WANTLIB += lcms m mng png pthread util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kwalletclient
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	x11/kde/libs3
 

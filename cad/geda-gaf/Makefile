@@ -6,7 +6,7 @@ CATEGORIES =		cad
 HOMEPAGE =		http://geda.seul.org
 MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
-REVISION =		6
+REVISION =		7
 
 SHARED_LIBS = 		geda	0.0	# 38.0
 USE_GROFF =	Yes
@@ -22,7 +22,8 @@ WANTLIB =		X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext \
 			z gdk_pixbuf-2.0 gio-2.0 glib-2.0 \
 			gobject-2.0 gmodule-2.0 guile gmp gtk-x11-2.0 \
 			gdk-x11-2.0 gthread-2.0 \
-			GL Xxf86vm drm ffi stdc++ xcb-shm
+			GL Xxf86vm drm ffi xcb-shm
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://geda.seul.org/release/v1.6/1.6.0/
 

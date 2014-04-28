@@ -6,6 +6,7 @@ V=		0.8.7
 DISTNAME=	fritzing-$Vb.source
 PKGNAME=	fritzing-$V
 CATEGORIES=	cad
+REVISION=	0
 
 HOMEPAGE=	http://fritzing.org/
 
@@ -16,8 +17,9 @@ PERMIT_PACKAGE_CDROM =	Yes
 MASTER_SITES=	${HOMEPAGE}download/$Vb/source-tarball/
 EXTRACT_SUFX=	.tar.bz2
 
-WANTLIB += QtGui QtNetwork QtSql QtSvg QtXml c m pthread stdc++ z
+WANTLIB += QtGui QtNetwork QtSql QtSvg QtXml c m pthread z
 WANTLIB += ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
+WANTLIB += c++ c++abi
 
 MODULES=        x11/qt4
 NO_TEST=	Yes

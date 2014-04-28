@@ -10,7 +10,7 @@ PKGNAME=	kicad-${V:S/-//g}
 PKGNAME-main=	kicad-${V:S/-//g}
 PKGNAME-docs=	kicad-docs-${V:S/-//g}
 
-REVISION-main=	2
+REVISION-main=	3
 
 CATEGORIES=	cad
 
@@ -43,9 +43,10 @@ RUN_DEPENDS-main=	cad/kicad-library \
 
 LIB_DEPENDS=	x11/wxWidgets
 
-WANTLIB-main += ${WANTLIB} GL GLU c m pthread stdc++
+WANTLIB-main += ${WANTLIB} GL GLU c m pthread
 WANTLIB-main += ICE SM X11 Xext wx_base wx_base_net wx_gtk2_adv wx_gtk2_aui
 WANTLIB-main += wx_gtk2_core wx_gtk2_gl wx_gtk2_html z
+WANTLIB-main += c++ c++abi
 WANTLIB-docs=
 RUN_DEPENDS-docs=
 LIB_DEPENDS-docs=

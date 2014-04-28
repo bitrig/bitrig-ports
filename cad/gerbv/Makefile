@@ -3,7 +3,7 @@
 COMMENT=		viewer for Gerber (RS-274X) files
 DISTNAME=		gerbv-2.5.0
 CATEGORIES=		cad graphics
-REVISION=		4
+REVISION=		5
 
 HOMEPAGE=		http://gerbv.gpleda.org/
 
@@ -16,9 +16,10 @@ WANTLIB += X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes
 WANTLIB += Xi Xinerama Xrandr Xrender atk-1.0 c cairo expat fontconfig
 WANTLIB += freetype gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0
 WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0 pixman-1 png
-WANTLIB += pthread-stubs xcb z GL Xxf86vm drm ffi stdc++ xcb-shm
+WANTLIB += pthread-stubs xcb z GL Xxf86vm drm ffi xcb-shm
 WANTLIB += gthread-2.0 pcre pthread xcb-render
 WANTLIB += gdk-x11-2.0 gdk_pixbuf-2.0 gtk-x11-2.0
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gerbv/}
 

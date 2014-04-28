@@ -7,16 +7,19 @@ DISTNAME =		openscad-${V}
 
 CATEGORIES =		cad
 
+REVISION =		0
+
 HOMEPAGE =		http://www.openscad.org/
 
 # GPLv2+ with CGAL exception
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m pthread stdc++
+WANTLIB += c m pthread
 WANTLIB += CGAL GL GLEW GLU ICE lib/qt4/QtGui lib/qt4/QtOpenGL
 WANTLIB += SM X11 Xext Xi Xinerama Xrender boost_filesystem-mt
 WANTLIB += boost_program_options-mt boost_regex-mt boost_system-mt
 WANTLIB += boost_thread-mt fontconfig freetype gmp mpfr opencsg
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		https://openscad.googlecode.com/files/
 DISTFILES =		openscad-${V}.src.tar.gz

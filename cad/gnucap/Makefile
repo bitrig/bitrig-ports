@@ -3,7 +3,7 @@
 COMMENT=		Gnu Circuit Analysis Package
 
 DISTNAME=		gnucap-0.35
-REVISION=		1
+REVISION=		2
 CATEGORIES=		cad
 
 HOMEPAGE=		http://www.gnucap.org/
@@ -11,7 +11,8 @@ HOMEPAGE=		http://www.gnucap.org/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m stdc++ readline termcap
+WANTLIB=		c m readline termcap
+WANTLIB+=		c++ c++abi
 
 LIB_DEPENDS=		devel/readline
 

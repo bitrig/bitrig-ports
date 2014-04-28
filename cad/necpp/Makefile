@@ -3,7 +3,7 @@
 COMMENT=	NEC2++ antenna simulator
 
 DISTNAME=	necpp-1.2.3
-REVISION=	2
+REVISION=	3
 CATEGORIES=    	cad hamradio
 
 HOMEPAGE=	http://elec.otago.ac.nz/w/index.php/Necpp
@@ -16,7 +16,8 @@ CONFIGURE_STYLE=gnu
 
 SHARED_LIBS=necpp 0.0
 
-WANTLIB=c m stdc++
+WANTLIB=c m
+WANTLIB+=c++ c++abi pthread
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/necpp

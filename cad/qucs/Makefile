@@ -3,9 +3,8 @@
 COMMENT=	graphical circuit design and simulation tool
 
 DISTNAME=	qucs-0.0.16
-REVISION=	0
+REVISION=	1
 CATEGORIES=	cad
-REVISION =	0
 
 HOMEPAGE=	http://qucs.sourceforge.net/
 
@@ -14,7 +13,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qucs/}
 
-WANTLIB += ICE SM X11 c m pthread stdc++
+WANTLIB += ICE SM X11 c m pthread
+WANTLIB += c++ c++abi
 
 MODULES=	x11/qt3
 

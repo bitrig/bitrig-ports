@@ -5,7 +5,7 @@ COMMENT=	Qt-based 2D CAD system
 V=		2.0.5.0
 DISTNAME=	qcad-${V}-1-community.src
 PKGNAME=	qcad-${V}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	cad graphics
 
 HOMEPAGE=	http://www.ribbonsoft.com/qcad.html
@@ -15,7 +15,8 @@ PERMIT_PACKAGE_CDROM=	Non-free data files
 PERMIT_PACKAGE_FTP=	Non-free data files
 PERMIT_DISTFILES_FTP=	Non-free data files
 
-WANTLIB=		X11 Xext c m pthread stdc++
+WANTLIB=		X11 Xext c m pthread
+WANTLIB+=		c++ c++abi
 
 MASTER_SITES=	http://www.ribbonsoft.com/archives/qcad/
 
