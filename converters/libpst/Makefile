@@ -6,8 +6,8 @@ COMMENT-main=		read and convert Microsoft Outlook mail files
 COMMENT-python=		python interface to libpst
 
 DISTNAME=		libpst-0.6.63
-REVISION-main=		2
-REVISION-python=	2
+REVISION-main=		3
+REVISION-python=	3
 
 SHARED_LIBS +=  pst                  3.0      # 5.10
 
@@ -21,12 +21,13 @@ HOMEPAGE=		http://www.five-ten-sg.com/libpst/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-cWANTLIB += m pthread stdc++
+cWANTLIB += m pthread
+cWANTLIB += c++ c++abi
 
 WANTLIB-main += ${cWANTLIB} ${MODGETTEXT_WANTLIB}
 WANTLIB-main += bz2 c expat ffi fontconfig freetype gd gio-2.0
 WANTLIB-main += glib-2.0 gmodule-2.0 gobject-2.0 gsf-1 jpeg pcre png
-WANTLIB-main += pthread-stubs tiff vpx xml2 z m pthread stdc++
+WANTLIB-main += pthread-stubs tiff vpx xml2 z m pthread
 
 WANTLIB-python += ${cWANTLIB} ${MODLIBICONV_WANTLIB}
 WANTLIB-python += pst util boost_python

@@ -3,7 +3,7 @@
 COMMENT=		advanced HTML-to-text converter
 
 DISTNAME=		html2text-1.3.2a
-REVISION=		0
+REVISION=		1
 CATEGORIES=		converters textproc
 
 
@@ -12,7 +12,8 @@ HOMEPAGE=		http://www.mbayer.de/html2text/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m stdc++
+WANTLIB += c m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=		http://www.mbayer.de/html2text/downloads/ \
 			ftp://ftp.ibiblio.org/pub/linux/apps/www/converters/

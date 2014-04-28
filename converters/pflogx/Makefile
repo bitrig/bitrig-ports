@@ -4,7 +4,7 @@ COMMENT=		convert pf(4) logs to XML
 
 DISTNAME=		pflogx_086
 PKGNAME=		pflogx-0.86
-REVISION=		3
+REVISION=		4
 CATEGORIES=		converters
 
 HOMEPAGE=		http://akldev.free.fr/pflogx/
@@ -12,7 +12,8 @@ HOMEPAGE=		http://akldev.free.fr/pflogx/
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB= 		c expat m pcap stdc++
+WANTLIB= 		c expat m pcap
+WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=		${HOMEPAGE}/releases/ \
 			http://distfiles.nl/
