@@ -4,6 +4,7 @@ COMMENT =	digital photo organizer
 
 GNOME_VERSION =	0.18.0
 GNOME_PROJECT =	shotwell
+REVISION =	0
 
 CATEGORIES =	graphics
 
@@ -20,8 +21,9 @@ WANTLIB += gmodule-2.0 gobject-2.0 gphoto2 gphoto2_port gstbase-1.0
 WANTLIB += gstpbutils-1.0 gstreamer-1.0 gthread-2.0 gtk-3 harfbuzz
 WANTLIB += javascriptcoregtk-3.0 json-glib-1.0 lcms2 m pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread
-WANTLIB += pthread-stubs raw rest-0.7 soup-2.4 sqlite3 stdc++
+WANTLIB += pthread-stubs raw rest-0.7 soup-2.4 sqlite3
 WANTLIB += webkitgtk-3.0 xcb xcb-render xcb-shm xml2 z
+WANTLIB += c++ c++abi
 
 MODULES =	devel/dconf \
 		devel/gettext \

@@ -7,6 +7,7 @@ COMMENT =		library for reading and writing images
 V =			1.3.12
 DISTNAME =		Release-$V
 PKGNAME =		openimageio-${V}
+REVISION =		0
 
 SHARED_LIBS +=		OpenImageIO	2.0 # 1.0
 
@@ -23,7 +24,8 @@ WANTLIB += GL GLEW GLU Half ICE Iex IlmImf IlmThread Imath OpenColorIO
 WANTLIB += QtGui QtOpenGL SM X11 Xext boost_filesystem-mt boost_python-mt
 WANTLIB += boost_regex-mt boost_system-mt boost_thread-mt c crypto
 WANTLIB += freetype gif jpeg m openjpeg png pthread ${MODPY_WANTLIB}
-WANTLIB += ssl stdc++ tiff webp z
+WANTLIB += ssl tiff webp z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		https://github.com/OpenImageIO/oiio/archive/
 DIST_SUBDIR =		openimageio

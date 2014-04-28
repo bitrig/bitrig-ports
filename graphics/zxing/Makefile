@@ -4,7 +4,7 @@ COMMENT =		barcode image processing library
 
 DISTNAME =		ZXing-2.0
 PKGNAME =		${DISTNAME:L}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		graphics
 
@@ -13,7 +13,8 @@ HOMEPAGE =		https://code.google.com/p/zxing/
 # Apache 2.0
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB +=	Magick++ MagickCore MagickWand c m pthread stdc++
+WANTLIB +=	Magick++ MagickCore MagickWand c m pthread
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =		https://zxing.googlecode.com/files/
 EXTRACT_SUFX =		.zip

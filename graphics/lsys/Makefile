@@ -4,6 +4,7 @@ COMMENT=	intepreter for Lindenmayer-systems
 
 # CVS checkout on 04-30-2010
 DISTNAME=	lsys-0.8
+REVISION=	0
 CATEGORIES=	graphics math
 
 HOMEPAGE=	http://software.schmorp.de/pkg/lsys
@@ -13,7 +14,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=		http://crappydiffs.org/
 
-WANTLIB += GL GLU X11 Xext c m pthread stdc++
+WANTLIB += GL GLU X11 Xext c m pthread
+WANTLIB += c++ c++abi
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \

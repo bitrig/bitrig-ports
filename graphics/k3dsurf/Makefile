@@ -3,7 +3,7 @@
 COMMENT=	visualize and manipulate mathematical models
 
 DISTNAME=	k3dsurf-0.6.2
-REVISION =	4
+REVISION =	5
 CATEGORIES=	graphics math
 
 HOMEPAGE=	http://k3dsurf.sourceforge.net/
@@ -13,7 +13,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=k3dsurf/}
 
-WANTLIB=	GL GLU X11 Xext Xmu c m pthread stdc++
+WANTLIB=	GL GLU X11 Xext Xmu c m pthread
+WANTLIB +=	c++ c++abi
 
 MODULES=	x11/qt3
 NO_TEST=	Yes

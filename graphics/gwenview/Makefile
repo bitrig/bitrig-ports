@@ -4,7 +4,7 @@ COMMENT=	image viewer for KDE
 
 DISTNAME=	gwenview-1.4.2
 PKGSPEC=	gwenview-<4
-REVISION =	17
+REVISION =	18
 
 SHARED_LIBS +=	gwenviewcore         5.0      # .1.0
 CATEGORIES=	graphics x11 x11/kde
@@ -19,11 +19,12 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c drm expat exiv2
 WANTLIB += fam fontconfig freetype idn jpeg lcms m mng png pthread
-WANTLIB += pthread-stubs stdc++ util xcb z
+WANTLIB += pthread-stubs util xcb z
 WANTLIB += ${KDE}/kdecore>=6 ${KDE}/DCOP ${KDE}/kdefx ${KDE}/kdeprint
 WANTLIB += ${KDE}/kdesu ${KDE}/kparts ${KDE}/kdeui ${KDE}/kio
 WANTLIB += ${KDE}/kmediaplayer ${KDE}/kutils ${KDE}/kwalletclient
 WANTLIB += ${KDE}/kipi
+WANTLIB += c++ c++abi
 
 RUN_DEPENDS=	devel/desktop-file-utils \
 		x11/gtk+2,-guic

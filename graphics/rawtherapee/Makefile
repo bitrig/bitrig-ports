@@ -3,7 +3,7 @@
 COMMENT =		RAW image processing application
 
 DISTNAME =		rawtherapee-4.0.9
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		graphics
 
@@ -21,7 +21,8 @@ WANTLIB += gdkmm-2.4 gio-2.0 giomm-2.4 glib-2.0 glibmm-2.4
 WANTLIB += gobject-2.0 gthread-2.0 gtk-x11-2.0 gtkmm-2.4
 WANTLIB += iptcdata jpeg lcms2 m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pangomm-1.4 pixman-1 png pthread pthread-stubs
-WANTLIB += sigc-2.0 stdc++ tiff xcb xcb-render xcb-shm z
+WANTLIB += sigc-2.0 tiff xcb xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		https://rawtherapee.googlecode.com/files/
 EXTRACT_SUFX = 		.tar.xz

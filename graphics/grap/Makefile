@@ -3,6 +3,7 @@
 COMMENT =	language for typesetting graphs
 
 DISTNAME =	grap-1.44
+REVISION =	0
 CATEGORIES =	textproc graphics
 
 HOMEPAGE =	http://lunabase.org/~faber/Vault/software/grap/
@@ -13,7 +14,8 @@ MAINTAINER =	Hermann Gottschalk <magnum@pestilenz.org>
 PERMIT_PACKAGE_CDROM = Yes
 
 MASTER_SITES =		${HOMEPAGE}
-WANTLIB =		c m stdc++
+WANTLIB =		c m
+WANTLIB +=		c++ c++abi pthread
 CONFIGURE_STYLE =	gnu
 
 .include <bsd.port.mk>

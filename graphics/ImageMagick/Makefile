@@ -6,7 +6,7 @@ COMMENT=		image processing tools
 
 VER=			6.7.7
 DASHVER=		7
-REVISION=		6
+REVISION=		7
 DISTNAME=		ImageMagick-${VER}-${DASHVER}
 PKGNAME=		ImageMagick-${VER}.${DASHVER}
 
@@ -30,8 +30,9 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB =		ICE SM X11 Xext Xt c bz2 djvulibre expat fftw3 \
 			fontconfig freetype jasper jbig jpeg lcms2 lzma \
-			ltdl m perl png pthread pthread-stubs stdc++ \
+			ltdl m perl png pthread pthread-stubs \
 			tiff wmflite-0.2 wmf-0.2 xcb xml2 z
+WANTLIB +=		c++ c++abi
 
 MODULES =		converters/libiconv
 

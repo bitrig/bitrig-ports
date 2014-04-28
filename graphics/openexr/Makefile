@@ -7,9 +7,9 @@ COMMENT-doc=	developer documentation for OpenEXR
 V=		1.6.1
 DISTNAME=	openexr-$V
 PKGNAME-main=	OpenEXR-$V
-REVISION-main = 2
+REVISION-main = 3
 PKGNAME-tools=  OpenEXR-tools-$V
-REVISION-tools =	1
+REVISION-tools =	2
 PKGNAME-doc=	OpenEXR-doc-$V
 SHARED_LIBS=	IlmImf               4.0      # .6.0	
 CATEGORIES=	graphics
@@ -24,10 +24,11 @@ MASTER_SITES=		${MASTER_SITE_SAVANNAH:=openexr/}
 
 MULTI_PACKAGES= 	-main -tools -doc
 
-WANTLIB-main=		m z stdc++ Half Iex Imath IlmThread pthread
+WANTLIB-main=		m z Half Iex Imath IlmThread pthread
+WANTLIB-main +=		c++ c++abi
 LIB_DEPENDS-main=	graphics/ilmbase
 
-WANTLIB-tools=		${WANTLIB-main} c m pthread stdc++ IlmImf>=4
+WANTLIB-tools=		${WANTLIB-main} c IlmImf>=4
 LIB_DEPENDS-tools=	${LIB_DEPENDS-main} graphics/openexr
 PKG_ARCH-doc=		*
 

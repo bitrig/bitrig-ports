@@ -5,7 +5,7 @@ COMMENT=		powerful descriptive vector graphics language
 DISTNAME=		asymptote-2.24.src
 PKGNAME=		asymptote-2.24
 CATEGORIES=		graphics
-REVISION =		1
+REVISION =		2
 
 HOMEPAGE=		http://asymptote.sourceforge.net/
 
@@ -18,7 +18,8 @@ EXTRACT_SUFX=		.tgz
 MODULES=		lang/python
 
 WANTLIB += GL GLU c fftw3 gc glut gsl gslcblas m ncurses pthread
-WANTLIB += pthread-stubs readline sigsegv stdc++ z
+WANTLIB += pthread-stubs readline sigsegv z
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS=		print/texlive/base
 RUN_DEPENDS=		graphics/py-Pillow \

@@ -3,7 +3,7 @@
 COMMENT =		Color Transformation Language interpreter
 
 DISTNAME =		ctl-1.4.1
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=  IlmCtl               0.0      # .2.0
 SHARED_LIBS +=  IlmCtlMath           0.0      # .2.0
@@ -15,7 +15,8 @@ HOMEPAGE =		http://www.oscars.org/science-technology/council/projects/ctl.html
 # 3-clause BSD license
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		m stdc++ Half Iex IlmThread Imath pthread
+WANTLIB =		m Half Iex IlmThread Imath pthread
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=ampasctl/}
 

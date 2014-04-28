@@ -7,7 +7,7 @@ CATEGORIES =	graphics
 DISTNAME =	pigment-0.3.17
 MASTER_SITES =	http://elisa.fluendo.com/static/download/pigment/
 
-REVISION =	5
+REVISION =	6
 
 SHARED_LIBS +=	pigment-0.3 0.0 \
 		pigment-gtk-0.3 0.0 \
@@ -40,6 +40,7 @@ WANTLIB += freetype gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0
 WANTLIB += gthread-2.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre xml2
 WANTLIB += pixman-1 png pthread-stubs xcb z gstbase-0.10 gstreamer-0.10
 WANTLIB += gdk_pixbuf-2.0 gdk_pixbuf_xlib-2.0 gtk-x11-2.0 gdk-x11-2.0
-WANTLIB += gstvideo-0.10 Xxf86vm drm ffi stdc++ xcb-render xcb-shm
+WANTLIB += gstvideo-0.10 Xxf86vm drm ffi xcb-render xcb-shm
+WANTLIB += c++ c++abi pthread
 
 .include <bsd.port.mk>

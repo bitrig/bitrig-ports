@@ -16,6 +16,9 @@ PKGNAME-main =		${PKGNAME}
 PKGNAME-docs =		opencv-docs-$V
 PKGNAME-java =		opencv-java-$V
 
+REVISION-main =		0
+REVISION-java =		0
+
 HOMEPAGE =		http://www.opencv.org/
 MAINTAINER =		Rafael Sadowski <rafael@sizeofvoid.org>
 
@@ -47,16 +50,18 @@ WANTLIB-main += freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0
 WANTLIB-main += gmodule-2.0 gobject-2.0 gstapp-0.10 gstbase-0.10
 WANTLIB-main += gstreamer-0.10 gstvideo-0.10 gthread-2.0 gtk-x11-2.0
 WANTLIB-main += jasper jpeg m pango-1.0 pangocairo-1.0
-WANTLIB-main += pangoft2-1.0 png pthread stdc++ swscale tiff xml2 z
+WANTLIB-main += pangoft2-1.0 png pthread swscale tiff xml2 z
 WANTLIB-main += ${MODGETTEXT_WANTLIB} ${MODPY_WANTLIB}
+WANTLIB-main += c++ c++abi
 
 WANTLIB-docs =
 
-WANTLIB-java =  m pthread stdc++ z
+WANTLIB-java =  m pthread z
 WANTLIB-java += opencv_calib3d opencv_contrib opencv_core
 WANTLIB-java += opencv_features2d opencv_flann opencv_highgui
 WANTLIB-java += opencv_imgproc opencv_ml opencv_objdetect
 WANTLIB-java += opencv_photo opencv_video
+WANTLIB-java += c++ c++abi
 
 MULTI_PACKAGES =	-main -docs -java
 PSEUDO_FLAVORS =	no_docs no_java

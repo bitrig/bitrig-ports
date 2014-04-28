@@ -4,7 +4,7 @@ COMMENT =		digital image kde application
 CATEGORIES =		graphics x11 x11/kde
 V =			0.9.6
 DISTNAME =		digikam-$V
-REVISION =		13
+REVISION =		14
 PKGSPEC =		digikam-<1
 
 SHARED_LIBS +=		digikam              3.0      # .0.0
@@ -29,13 +29,14 @@ WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xt Xxf86vm Xrender art_lgpl_2 c drm fam
 WANTLIB += fontconfig freetype exif expat exiv2 gphoto2 gphoto2_port
 WANTLIB += idn jasper jpeg lcms ltdl m mng pcre pcreposix png pthread
-WANTLIB += stdc++ tiff util xcb z
+WANTLIB += tiff util xcb z
 WANTLIB += lib/qt3/qt-mt>=3.33
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=6 ${KDE}/kparts ${KDE}/kdeui
 WANTLIB += ${KDE}/kdesu ${KDE}/kio ${KDE}/kdefx ${KDE}/kdcraw
 WANTLIB += ${KDE}/kdeprint ${KDE}/kexiv2>=1 ${KDE}/kipi ${KDE}/kutils
 WANTLIB += ${KDE}/kabc ${KDE}/kresources ${KDE}/khtml ${KDE}/kjs
 WANTLIB += ${KDE}/kwalletclient ${KDE}/vcard
+WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext \
 		x11/kde

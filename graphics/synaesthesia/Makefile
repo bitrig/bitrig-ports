@@ -3,7 +3,7 @@
 COMMENT=		visual sound representation
 
 DISTNAME=		synaesthesia-2.1
-REVISION =		1
+REVISION =		2
 CATEGORIES=     	graphics x11
 
 HOMEPAGE=		http://yoyo.cc.monash.edu.au/~pfh/synaesthesia.html
@@ -11,7 +11,8 @@ HOMEPAGE=		http://yoyo.cc.monash.edu.au/~pfh/synaesthesia.html
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		ICE SM X11 c m ossaudio pthread stdc++ SDL
+WANTLIB=		ICE SM X11 c m ossaudio pthread SDL
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES=		http://yoyo.cc.monash.edu.au/~pfh/
 

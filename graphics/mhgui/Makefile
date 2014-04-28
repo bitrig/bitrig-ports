@@ -4,7 +4,7 @@ COMMENT=	GUI widget library used in MakeHuman
 
 DISTNAME=	mhgui-0.2
 CATEGORIES=	graphics
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  mhgui                1.0      # unknown
 
@@ -14,7 +14,8 @@ HOMEPAGE=	http://www.dedalo-3d.com/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += GL GLU ICE SM X11 Xdamage Xext Xfixes Xi Xmu Xt Xxf86vm
-WANTLIB += animorph drm glut m png stdc++ xcb z
+WANTLIB += animorph drm glut m png xcb z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=makehuman/}
 

@@ -4,7 +4,7 @@ COMMENT =		geometry viewer for OOGL file formats
 
 V =			1.9.4
 DISTNAME =		geomview-$V
-REVISION =		3
+REVISION =		4
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://www.geomview.org
@@ -24,7 +24,8 @@ LIB_DEPENDS =		x11/openmotif
 
 WANTLIB += ICE SM X11 Xext Xft Xm Xmu Xrender Xt c expat
 WANTLIB += fontconfig freetype jpeg m png
-WANTLIB += stdc++ xcb z
+WANTLIB += xcb z
+WANTLIB += c++ c++abi pthread
 
 USE_GMAKE =	Yes
 

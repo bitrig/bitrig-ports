@@ -5,7 +5,7 @@ COMMENT=	parametrical modeling of 3D humanoid characters
 DISTNAME=	makehuman-0.9.1-rc1a
 PKGNAME=	makehuman-0.9.1rc1
 CATEGORIES=	graphics
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.dedalo-3d.com/
 
@@ -13,7 +13,8 @@ HOMEPAGE=	http://www.dedalo-3d.com/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += GL GLU ICE SM X11 Xdamage Xext Xfixes Xi Xmu Xt Xxf86vm
-WANTLIB += animorph c drm glut m mhgui png stdc++ xcb z
+WANTLIB += animorph c drm glut m mhgui png xcb z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=makehuman/}
 

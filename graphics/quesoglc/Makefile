@@ -3,7 +3,7 @@
 COMMENT=	implementation of the OpenGL Character Renderer
 
 DISTNAME=	quesoglc-0.7.2
-REVISION =	1
+REVISION =	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=quesoglc/}
 
@@ -17,7 +17,8 @@ MAINTAINER=	Brad Smith <brad@comstyle.com>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	GL GLU X11 expat fontconfig freetype m \
-		xcb z fribidi Xdamage Xext Xfixes Xxf86vm drm stdc++
+		xcb z fribidi Xdamage Xext Xfixes Xxf86vm drm
+WANTLIB +=	c++ c++abi pthread
 
 LIB_DEPENDS=	devel/fribidi
 

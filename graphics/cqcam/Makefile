@@ -5,13 +5,14 @@ ONLY_FOR_ARCHS= i386
 COMMENT=	color QuickCam control program
 
 DISTNAME=	cqcam-0.91
-REVISION=	4
+REVISION=	5
 CATEGORIES=	graphics
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m stdc++ jpeg>=62
+WANTLIB=	c m jpeg>=62
+WANTLIB +=	c++ c++abi pthread
 
 HOMEPAGE=	http://www.cs.duke.edu/~reynolds/cqcam/
 MASTER_SITES=	${HOMEPAGE}

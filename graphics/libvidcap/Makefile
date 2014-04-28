@@ -3,7 +3,7 @@
 COMMENT=	video capture library
 
 DISTNAME=	libvidcap-0.2.1
-REVISION =	0
+REVISION =	1
 SHARED_LIBS=	vidcap	0.0
 CATEGORIES=	graphics
 
@@ -15,7 +15,8 @@ PERMIT_PACKAGE_CDROM=   Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libvidcap/}
 
-WANTLIB=	pthread m stdc++
+WANTLIB=	pthread m
+WANTLIB +=	c++ c++abi
 
 SEPARATE_BUILD= Yes
 CONFIGURE_STYLE=gnu

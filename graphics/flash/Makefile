@@ -3,7 +3,7 @@
 COMMENT=	open source standalone flash(tm) player
 
 DISTNAME=	flash-0.4.10
-REVISION =	0
+REVISION =	1
 CATEGORIES=	graphics	
 EXTRACT_SUFX=	.tgz
 
@@ -13,7 +13,8 @@ MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		X11 Xext c m ossaudio pthread-stubs stdc++ xcb
+WANTLIB=		X11 Xext c m ossaudio pthread-stubs xcb
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES=	${HOMEPAGE}
 

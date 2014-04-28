@@ -5,7 +5,7 @@ COMMENT =	toolkit for developing mapping applications
 DISTNAME =	mapnik-v2.2.0
 PKGNAME =	${DISTNAME:S/v//}
 EXTRACT_SUFX =	.tar.bz2
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS =	mapnik 2.0 #2.0
 CATEGORIES =	graphics geo
@@ -38,10 +38,11 @@ WANTLIB =	cairo icuuc png>=17.0 pq proj jpeg \
 		boost_filesystem-mt tiff sqlite3 \
 		boost_program_options-mt boost_python-mt \
 		boost_regex-mt boost_system-mt boost_thread-mt \
-		c freetype m stdc++ xml2 z curl gdal \
+		c freetype m xml2 z curl gdal \
 		X11 Xau Xdmcp Xext Xrender fontconfig glib-2.0 \
 		gobject-2.0 pcre pixman-1 pthread-stubs \
 		xcb xcb-render xcb-shm pthread
+WANTLIB +=	c++ c++abi
 
 MODSCONS_FLAGS =	PREFIX="${TRUEPREFIX}" \
 			DESTDIR="${WRKINST}" \

@@ -2,7 +2,7 @@
 
 COMMENT =	skeletal based character animation library
 DISTNAME =	cal3d-0.11.0
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS =	cal3d	1.0	# .12.0
 
@@ -15,7 +15,8 @@ MAINTAINER =	Laurent Fanis <laurent.fanis@gmail.com>
 # LGPL
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c m stdc++
+WANTLIB =	c m
+WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES =	http://download.gna.org/cal3d/sources/
 

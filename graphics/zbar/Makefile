@@ -2,7 +2,7 @@
 
 COMMENT=	ZBar barcode reader
 DISTNAME=	zbar-0.10
-REVISION=	10
+REVISION=	11
 
 SHARED_LIBS=	zbar	0.0 \
 		zbargtk	0.0
@@ -29,8 +29,9 @@ WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-x11-2.0 jasper jbig jpeg ltdl lzma m pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread
 WANTLIB += pthread-stubs tiff xcb xcb-render xcb-shm z
-WANTLIB += Xt stdc++ xml2
+WANTLIB += Xt xml2
 WANTLIB += lcms2 wmf-0.2 wmflite-0.2
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	graphics/ImageMagick \
 		devel/libffi \

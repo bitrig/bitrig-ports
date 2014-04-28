@@ -3,7 +3,7 @@
 COMMENT=	3D image rendering package
 
 DISTNAME=	povray-3.6.1
-REVISION=	5
+REVISION=	6
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://www.povray.org/
@@ -11,7 +11,8 @@ HOMEPAGE=	http://www.povray.org/
 PERMIT_PACKAGE_CDROM=	Perhaps we qualify for commercial distribution
 PERMIT_PACKAGE_FTP=	Yes
 
-WANTLIB += ICE SM X11 Xpm c jpeg m stdc++ tiff z
+WANTLIB += ICE SM X11 Xpm c jpeg m tiff z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=		http://www.povray.org/ftp/pub/povray/Official/Unix/ \
 			ftp://ftp.povray.org/pub/povray/Official/Unix/

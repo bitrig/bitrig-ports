@@ -3,6 +3,7 @@
 COMMENT=	rendering for complex writing systems
 
 DISTNAME=	graphite2-1.2.4
+REVISION=	0
 EXTRACT_SUFX=	.tgz
 
 SHARED_LIBS=	graphite2 0.0 # 3.0.1
@@ -16,7 +17,8 @@ MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m stdc++
+WANTLIB += c m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=silgraphite/}
 

@@ -4,7 +4,7 @@ COMMENT=	morphing engine
 
 DISTNAME=	animorph-0.3
 CATEGORIES=	graphics
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  animorph             1.0      # unknown
 
@@ -13,7 +13,8 @@ HOMEPAGE=	http://www.dedalo-3d.com/
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m stdc++
+WANTLIB += m
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=makehuman/}
 

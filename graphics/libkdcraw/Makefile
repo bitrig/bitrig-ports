@@ -8,7 +8,7 @@ V =		0.1.9
 DISTNAME =	libkdcraw-${V}
 PKGNAME-main =	${PKGNAME}
 PKGNAME-icons =	libkdcraw-icons-${V}
-REVISION-main =	9
+REVISION-main =	10
 REVISION-icons =1
 
 PKGSPEC-main =	libkdcraw-<0.2.0
@@ -49,9 +49,10 @@ WANTLIB-main =  ${WANTLIB}
 WANTLIB-main += GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB-main += Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 drm expat fam
 WANTLIB-main += fontconfig freetype idn jpeg lcms m mng png pthread
-WANTLIB-main += pthread-stubs stdc++ util xcb z
+WANTLIB-main += pthread-stubs util xcb z
 WANTLIB-main += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB-main += ${KDE}/kdeui ${KDE}/kio ${KDE}/kwalletclient
+WANTLIB-main += c++ c++abi
 WANTLIB-icons =
 
 # GPL

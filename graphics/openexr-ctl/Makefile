@@ -2,7 +2,7 @@
 
 COMMENT =		OpenEXR bindings for CTL
 DISTNAME =		openexr_ctl-1.0.1
-REVISION=		0
+REVISION=		1
 
 PKGNAME =		${DISTNAME:S/_/-/}
 
@@ -14,8 +14,9 @@ HOMEPAGE =		http://www.oscars.org/science-technology/council/projects/ctl.html
 # 3-clause BSD license
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += Half Iex IlmThread Imath c m pthread stdc++ z 
+WANTLIB += Half Iex IlmThread Imath c m pthread z
 WANTLIB += IlmImf IlmCtl IlmCtlMath IlmCtlSimd
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=ampasctl/}
 

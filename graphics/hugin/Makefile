@@ -7,6 +7,7 @@ SHARED_ONLY =		Yes
 COMMENT =		panorama image stitcher
 
 DISTNAME =		hugin-2013.0.0
+REVISION =		0
 EXTRACT_SUFX =		.tar.bz2
 
 # not needed for releases, but makes RCs/betas easier to work with
@@ -37,10 +38,11 @@ WANTLIB += GL GLEW GLU Half Iex Imath IlmImf IlmThread ICE SM X11
 WANTLIB += Xext Xi Xmu boost_date_time-mt boost_filesystem-mt
 WANTLIB += boost_iostreams-mt boost_regex-mt boost_signals-mt
 WANTLIB += boost_system-mt boost_thread-mt c exiv2 glut>=4.1
-WANTLIB += jpeg lensfun m pano13>=2.0 png pthread stdc++ tiff
+WANTLIB += jpeg lensfun m pano13>=2.0 png pthread tiff
 WANTLIB += wx_base>=3 wx_base_net>=3 wx_base_xml>=3
 WANTLIB += wx_gtk2_adv>=3 wx_gtk2_aui>=3 wx_gtk2_core>=3
 WANTLIB += wx_gtk2_gl>=3 wx_gtk2_html>=3 wx_gtk2_xrc>=3 z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=hugin/}
 

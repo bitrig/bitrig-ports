@@ -3,7 +3,7 @@
 COMMENT =		kde interface to exif
 CATEGORIES =		graphics devel x11 x11/kde
 DISTNAME =		libkexif-0.2.5
-REVISION =		7
+REVISION =		8
 SHARED_LIBS =		kexif	2.2
 EXTRACT_SUFX =		.tar.bz2
 HOMEPAGE =		http://extragear.kde.org/apps/kipi/
@@ -16,10 +16,11 @@ LIB_DEPENDS =	x11/kde/libs3 \
 
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 drm exif expat
-WANTLIB += fontconfig freetype idn jpeg lcms m mng png stdc++ util
-WANTLIB += xcb z 
+WANTLIB += fontconfig freetype idn jpeg lcms m mng png util
+WANTLIB += xcb z
 WANTLIB += lib/qt3/qt-mt>=3.33
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=6 ${KDE}/kdeui ${KDE}/kdefx
+WANTLIB += c++ c++abi pthread
 
 MODULES =	devel/gettext \
 		x11/kde

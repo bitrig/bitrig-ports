@@ -14,7 +14,7 @@ COMMENT =	blend seams in panoramic image mosaics
 DISTNAME =	enblend-enfuse-4.0
 PKGNAME =	${DISTNAME:L}
 WRKDIST =	${WRKDIR}/enblend-enfuse-4.0-753b534c819d
-REVISION =	3
+REVISION =	4
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://enblend.sourceforge.net/
@@ -26,7 +26,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =	GL GLEW GLU Half ICE Iex IlmImf IlmThread Imath SM X11 Xi Xmu
 WANTLIB +=	boost_filesystem boost_system c glut>=4 jpeg lcms m png pthread
-WANTLIB +=	stdc++ tiff xmi z
+WANTLIB +=	tiff xmi z
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=enblend/}
 

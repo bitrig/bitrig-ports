@@ -3,6 +3,7 @@
 COMMENT =		library set for simulations, games and visualizations
 
 DISTNAME =		simgear-3.0.0
+REVISION =		0
 
 SHARED_LIBS +=  SimGearCore               1.0 # 2.10
 SHARED_LIBS +=  SimGearScene              1.0 # 2.10
@@ -21,7 +22,8 @@ EXTRACT_SUFX =		.tar.bz2
 
 WANTLIB += GL GLU ICE OpenThreads SM X11 Xext expat m openal osg
 WANTLIB += osgDB osgGA osgParticle osgSim osgText osgUtil pthread
-WANTLIB += stdc++ z
+WANTLIB += z
+WANTLIB += c++ c++abi
 
 MODULES =		devel/cmake
 BUILD_DEPENDS =		devel/boost

@@ -7,8 +7,8 @@ DISTNAME =		kipi-plugins-0.1.6
 PKGNAME-main =		${DISTNAME}
 PKGNAME-cal =		kipi-kcal-plugin-0.1.6
 PKGSPEC-main =		kipi-plugins-<1
-REVISION-main =		10
-REVISION-cal =		8
+REVISION-main =		11
+REVISION-cal =		9
 
 HOMEPAGE =		http://extragear.kde.org/apps/kipi/
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=kipi/}
@@ -39,12 +39,13 @@ MODULES =	devel/gettext \
 
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 drm expat
-WANTLIB += fontconfig freetype idn jpeg lcms m mng png stdc++ util xcb
+WANTLIB += fontconfig freetype idn jpeg lcms m mng png util xcb
 WANTLIB += z 
 WANTLIB += lib/qt3/qt-mt>=3.33
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=6 ${KDE}/kdefx ${KDE}/kdeprint
 WANTLIB += ${KDE}/kdesu ${KDE}/kdeui ${KDE}/kio ${KDE}/kipi ${KDE}/kparts
 WANTLIB += ${KDE}/kwalletclient
+WANTLIB += c++ c++abi pthread
 
 WANTLIB-main =  ${WANTLIB} exif exiv2 exslt gcrypt gpg-error gphoto2
 WANTLIB-main += gphoto2_port ltdl pcre pcreposix tiff xml2 xslt 

@@ -3,7 +3,7 @@
 COMMENT=	ILM base libraries
 
 DISTNAME=	ilmbase-1.0.1
-REVISION =	2
+REVISION =	3
 CATEGORIES=	graphics
 
 SHARED_LIBS +=	Half                 4.0      # .6.0
@@ -19,10 +19,11 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SAVANNAH:=openexr/}
 
-WANTLIB=	m stdc++
+WANTLIB=	m
+WANTLIB +=	c++ c++abi pthread
 
 CONFIGURE_STYLE=gnu
-CONFIGURE_ENV=	LIBS="-lstdc++ -lm"
+CONFIGURE_ENV=	LIBS="-lc++ -lc++abi -lpthread -lm"
 
 USE_GMAKE=	Yes
 

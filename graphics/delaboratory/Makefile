@@ -3,7 +3,7 @@
 COMMENT =	color correction utility for digital images
 DISTNAME =	delaboratory-0.8
 CATEGORIES =	graphics x11
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	https://code.google.com/p/delaboratory/
 
@@ -12,9 +12,10 @@ MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m pthread stdc++ tiff wx_base wx_base_net wx_base_odbc
+WANTLIB += c m pthread tiff wx_base wx_base_net wx_base_odbc
 WANTLIB += wx_base_xml wx_gtk2_adv wx_gtk2_aui wx_gtk2_core wx_gtk2_dbgrid
 WANTLIB += wx_gtk2_html wx_gtk2_qa wx_gtk2_richtext wx_gtk2_xrc xml2 z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	https://delaboratory.googlecode.com/files/
 

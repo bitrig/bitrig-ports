@@ -2,7 +2,7 @@
 
 COMMENT =		open source alternative to glut
 DISTNAME =		freeglut-2.8.0
-REVISION =		0
+REVISION =		1
 SHARED_LIBS =		glut 5.0
 CATEGORIES =		graphics
 HOMEPAGE =		http://freeglut.sourceforge.net/
@@ -12,7 +12,8 @@ MAINTAINER =		Tobias Ulmer <tobiasu@tmux.org>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL X11 Xdamage Xext Xfixes Xi Xrandr Xrender Xxf86vm
-WANTLIB += drm m stdc++ usbhid xcb
+WANTLIB += drm m usbhid xcb
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=freeglut/}
 

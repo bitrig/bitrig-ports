@@ -4,6 +4,7 @@ COMMENT=	portable DjVu viewer and browser plugin
 
 DISTNAME=	djview-4.9
 PKGNAME=	${DISTNAME:S/djview/djview4/}
+REVISION=	0
 CATEGORIES=	graphics print
 
 HOMEPAGE=	http://djvu.sourceforge.net/djview4.html
@@ -14,7 +15,8 @@ MAINTAINER=	Alexandr Shadchin <shadchin@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += ICE QtGui QtNetwork SM X11 Xext Xi Xinerama Xrender
-WANTLIB += c djvulibre fontconfig freetype m pthread stdc++ tiff
+WANTLIB += c djvulibre fontconfig freetype m pthread tiff
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=djvu/}
 

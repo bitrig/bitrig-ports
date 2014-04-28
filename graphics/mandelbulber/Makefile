@@ -5,7 +5,7 @@ COMMENT =		3D fractal renderer
 V =			1.15
 DISTNAME =		mandelbulber${V}
 PKGNAME =		mandelbulber-${V}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		graphics
 
@@ -17,7 +17,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB += atk-1.0 c cairo fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gobject-2.0 gthread-2.0 gtk-x11-2.0
 WANTLIB += jpeg m pango-1.0 pangocairo-1.0 pangoft2-1.0 png pthread
-WANTLIB += stdc++
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=mandelbulber/}
 

@@ -5,7 +5,7 @@ COMMENT =		creates DjVu files from PDF files
 V =			0.7.17
 DISTNAME =		pdf2djvu_${V}
 PKGNAME =		pdf2djvu-${V}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		graphics
 
@@ -17,7 +17,8 @@ MAINTAINER =		Juan Francisco Cantero Hurtado <juanfra@openbsd.org>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GraphicsMagick GraphicsMagick++ c djvulibre m poppler
-WANTLIB += pthread stdc++ xml2 xslt z
+WANTLIB += pthread xml2 xslt z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		https://pdf2djvu.googlecode.com/files/
 

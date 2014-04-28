@@ -3,7 +3,7 @@
 COMMENT=		DICOM toolkit
 
 DISTNAME=		dcmtk-3.5.4
-REVISION=		2
+REVISION=		3
 
 CATEGORIES=		graphics
 
@@ -14,8 +14,9 @@ MASTER_SITES=		ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk354/
 # Several ISC and BSDish
 # ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk354/COPYRIGHT
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c crypto m ssl stdc++ z jpeg>=62 png>=4 \
+WANTLIB=		c crypto m ssl z jpeg>=62 png>=4 \
 			tiff>=36 xml2>=9
+WANTLIB +=		c++ c++abi pthread
 
 LIB_DEPENDS=		graphics/jpeg \
 			graphics/png \

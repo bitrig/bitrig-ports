@@ -6,7 +6,7 @@ V=		3.02.02
 DISTNAME=	tesseract-ocr-${V}
 PKGNAME=	tesseract-${V}
 WRKDIST=	${WRKDIR}/tesseract-ocr
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  tesseract            3.1      # 3.2
 
@@ -19,7 +19,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${HOMEPAGE}/files/
 
-WANTLIB += c jpeg m pthread stdc++ z tiff png gif lept webp
+WANTLIB += c jpeg m pthread z tiff png gif lept webp
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	graphics/leptonica
 

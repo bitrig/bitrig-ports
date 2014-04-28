@@ -5,6 +5,7 @@ COMMENT =	Context Free Design Grammar
 VERSION =	2.2.2
 DISTNAME =	ContextFreeSource${VERSION}
 PKGNAME =	cfdg-${VERSION}
+REVISION =	0
 
 CATEGORIES =	graphics
 
@@ -15,7 +16,8 @@ MAINTAINER =	jared r r spiegel <jrrs@ice-nine.org>
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c m png stdc++ z
+WANTLIB =	c m png z
+WANTLIB +=	c++ c++abi pthread
 LIB_DEPENDS =	graphics/png
 
 MASTER_SITES =	http://www.contextfreeart.org/download/

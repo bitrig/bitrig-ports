@@ -5,6 +5,7 @@ COMMENT=	Convert PNG images to Windows .ico files
 VERSION=	2002-12-08
 PKGNAME=	png2ico-${VERSION:S/-//g}
 DISTNAME=	png2ico-src-${VERSION}
+REVISION=	0
 CATEGORIES=	graphics www
 HOMEPAGE=	http://www.winterdrache.de/freeware/png2ico/
 MASTER_SITES=	${HOMEPAGE}data/
@@ -13,7 +14,8 @@ MAINTAINER=	Wilbern Cobb <wcobb@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m stdc++ z png>=3
+WANTLIB=		c m z png>=3
+WANTLIB +=		c++ c++abi pthread
 
 LIB_DEPENDS=	graphics/png
 

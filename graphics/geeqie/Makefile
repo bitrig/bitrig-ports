@@ -4,6 +4,7 @@ COMMENT=	lightweight Gtk+2 based image viewer
 
 DISTNAME=	geeqie-1.1
 CATEGORIES=	graphics
+REVISION=	0
 EPOCH=		0
 
 HOMEPAGE=	http://geeqie.sourceforge.net/
@@ -16,8 +17,9 @@ WANTLIB += Xi Xinerama Xrandr Xrender atk-1.0 c cairo
 WANTLIB += exiv2 expat fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 jpeg tiff gobject-2.0 gthread-2.0
 WANTLIB += gtk-x11-2.0 lcms m pango-1.0 pangocairo-1.0 pangoft2-1.0
-WANTLIB += pixman-1 png pthread pthread-stubs stdc++ xcb xcb-render
+WANTLIB += pixman-1 png pthread pthread-stubs xcb xcb-render
 WANTLIB += xcb-shm z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=geeqie/}
 

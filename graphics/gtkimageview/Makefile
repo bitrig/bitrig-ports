@@ -3,7 +3,7 @@
 COMMENT=	image viewer widget for gtk
 
 DISTNAME=	gtkimageview-1.6.4
-REVISION=	5
+REVISION=	6
 
 SHARED_LIBS=	gtkimageview	0.0
 
@@ -19,7 +19,8 @@ WANTLIB += Xi Xinerama Xrandr Xrender atk-1.0 cairo expat fontconfig freetype
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 m pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread-stubs
 WANTLIB += xcb z gdk_pixbuf-2.0 gdk-x11-2.0 gtk-x11-2.0
-WANTLIB += GL Xxf86vm drm ffi gthread-2.0 stdc++ xcb-render xcb-shm
+WANTLIB += GL Xxf86vm drm ffi gthread-2.0 xcb-render xcb-shm
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	${HOMEPAGE}chrome/common/releases/
 

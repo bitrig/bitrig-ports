@@ -14,7 +14,7 @@ PKGNAME-main=	gegl-${V}
 PKGNAME-plugins=gegl-plugins-${V}
 
 REVISION-main=		2
-REVISION-plugins=	2
+REVISION-plugins=	3
 
 SHARED_LIBS +=  gegl-${API_VERSION}		0.0 # 199.1
 
@@ -60,7 +60,8 @@ WANTLIB-plugins += gsm mp3lame ogg orc-0.4 IlmImf avutil bz2
 WANTLIB-plugins += schroedinger-1.0 speex theoradec theoraenc
 WANTLIB-plugins += vorbis vorbisenc x264 avcodec avformat vpx
 WANTLIB-plugins += Half Iex IlmThread Imath xvidcore
-WANTLIB-plugins += crypto opus pthread stdc++ ssl
+WANTLIB-plugins += crypto opus pthread ssl
+WANTLIB-plugins += c++ c++abi
 
 RUN_DEPENDS-plugins= 	${BUILD_PKGPATH},-main
 LIB_DEPENDS-plugins= 	${LIB_DEPENDS} \

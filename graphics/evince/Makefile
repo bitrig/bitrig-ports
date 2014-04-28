@@ -8,6 +8,7 @@ COMMENT-nautilus= evince plugin for nautilus
 
 GNOME_PROJECT=	evince
 GNOME_VERSION=	3.12.1
+REVISION=	0
 
 PKGNAME-main=	${DISTNAME}
 PKGNAME-dvi=	evince-dvi-${GNOME_VERSION}
@@ -50,10 +51,11 @@ CFLAGS += -Wno-error=format-nonliteral
 LIB_DEPENDS=	x11/gtk+3
 
 WANTLIB-main=	${WANTLIB} ICE SM c dbus-1 gailutil-3 \
-		gs gcrypt gpg-error stdc++ secret-1 \
+		gs gcrypt gpg-error secret-1 \
 		jpeg pthread tiff xml2 lcms2 openjpeg \
 		poppler poppler-glib spectre avahi-common \
 		djvulibre
+WANTLIB-main +=	c++ c++abi
 LIB_DEPENDS-main= print/poppler \
 		print/libspectre \
 		graphics/djvulibre \

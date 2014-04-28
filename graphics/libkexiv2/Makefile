@@ -3,7 +3,7 @@
 COMMENT =	kde wrapper around exiv2
 CATEGORIES =	graphics
 DISTNAME =	libkexiv2-0.1.9
-REVISION =	7
+REVISION =	8
 HOMEPAGE =	http://www.kipi-plugins.org/
 EXTRACT_SUFX =	.tar.bz2
 PKGSPEC =	libkexiv2-<0.2.0
@@ -29,8 +29,9 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft
 WANTLIB += Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2
 WANTLIB += drm exiv2 expat fontconfig freetype idn jpeg lcms m mng png
-WANTLIB += stdc++ util xcb z
+WANTLIB += util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx
+WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS =	graphics/exiv2>=0.22 \
 		x11/kde/libs3

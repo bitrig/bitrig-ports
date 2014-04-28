@@ -9,7 +9,7 @@ PKGNAME-main = 		${DISTNAME}
 PKGNAME-x11 = 		zint-gui-${V}
 
 REVISION-main =		1
-REVISION-x11 =		1
+REVISION-x11 =		2
 
 SHARED_ONLY = 		Yes
 
@@ -25,7 +25,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 cWANTLIB = 		c m png z
 WANTLIB-main = 		${cWANTLIB}
-WANTLIB-x11 = 		${cWANTLIB} QtCore QtGui QtXml stdc++ zint
+WANTLIB-x11 = 		${cWANTLIB} QtCore QtGui QtXml zint
+WANTLIB-x11 +=		c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=zint/}
 

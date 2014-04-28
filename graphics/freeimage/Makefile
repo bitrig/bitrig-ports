@@ -4,7 +4,7 @@ COMMENT=		c++ library for common image format
 
 DISTNAME=		FreeImage3152
 PKGNAME=		freeimage-3.15.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=		graphics
 
 SHARED_LIBS+=		freeimage	2.0
@@ -16,7 +16,7 @@ MAINTAINER=		Eric Faurot <eric@openbsd.org>
 # GPL / "FreeImage Public Nons^WLicense"
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		stdc++
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=freeimage/}
 EXTRACT_SUFX=		.zip

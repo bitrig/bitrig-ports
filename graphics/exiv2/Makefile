@@ -3,6 +3,7 @@
 COMMENT=	manipulate image meta-data such as exif and ipct
 
 DISTNAME=	exiv2-0.24
+REVISION=	0
 CATEGORIES=	graphics devel
 
 SHARED_LIBS +=  exiv2                7.0      # 13.0
@@ -14,7 +15,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${HOMEPAGE}
 
-WANTLIB += 	c m stdc++ z expat pthread
+WANTLIB += 	c m z expat pthread
+WANTLIB += 	c++ c++abi
 
 USE_GMAKE=	Yes
 USE_GROFF =	Yes

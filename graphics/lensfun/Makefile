@@ -2,6 +2,7 @@
 
 COMMENT=	library to adjust for photographic lens characteristics
 DISTNAME=	lensfun-0.2.7
+REVISION=	0
 SHARED_LIBS=	lensfun 1.0
 
 CATEGORIES=	graphics
@@ -10,7 +11,8 @@ HOMEPAGE=	http://lensfun.berlios.de/
 # library LGPLv3, lens db CC-BY-SA, build infrastructure/applications GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c glib-2.0 m png stdc++ z
+WANTLIB += c glib-2.0 m png z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=lensfun.berlios/}
 EXTRACT_SUFX=		.tar.bz2

@@ -6,7 +6,7 @@ V =			7.1.2
 SUBST_VARS +=		V
 DISTNAME =		ipe-${V}-src
 PKGNAME =		ipe-${V}
-REVISION =		3
+REVISION =		4
 
 # their libraries would be installed as libxxx.so.${V}, overide this.
 SHLIB_VERSION =	0.0
@@ -26,8 +26,9 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL QtGui X11 Xrender c cairo expat fontconfig freetype
 WANTLIB += glib-2.0 gobject-2.0 ${MODLUA_WANTLIB} m pixman-1 png
-WANTLIB += pthread pthread-stubs stdc++ xcb xcb-render xcb-shm
+WANTLIB += pthread pthread-stubs xcb xcb-render xcb-shm
 WANTLIB += z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=ipe7/}
 

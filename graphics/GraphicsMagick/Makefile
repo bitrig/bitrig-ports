@@ -5,6 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	image processing tools with stable ABI
 
 DISTNAME=	GraphicsMagick-1.3.19
+REVISION=	0
 CATEGORIES=	graphics devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=graphicsmagick/}
 EXTRACT_SUFX=	.tar.xz
@@ -21,8 +22,9 @@ MAINTAINER=	Brad Smith <brad@comstyle.com>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		ICE SM X11 Xext bz2 c freetype jasper jbig jpeg lcms2 \
-			ltdl lzma m png16 pthread stdc++ tiff webp wmflite-0.2 \
+			ltdl lzma m png16 pthread tiff webp wmflite-0.2 \
 			xcb xml2 z
+WANTLIB +=		c++ c++abi
 
 MODULES=		converters/libiconv
 

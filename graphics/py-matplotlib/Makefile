@@ -3,7 +3,7 @@
 COMMENT=	Python charting and plotting API
 
 MODPY_EGG_VERSION =	1.2.1
-REVISION =		0
+REVISION =		1
 DISTNAME =		matplotlib-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		graphics devel math
@@ -18,8 +18,9 @@ WANTLIB += Xi Xinerama Xrandr Xrender atk-1.0 cairo ffi
 WANTLIB += fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0
 WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gtk-x11-2.0 harfbuzz
 WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
-WANTLIB += png pthread pthread-stubs ${MODPY_WANTLIB} stdc++ tcl85 tk85
+WANTLIB += png pthread pthread-stubs ${MODPY_WANTLIB} tcl85 tk85
 WANTLIB += xcb xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=matplotlib/}
 

@@ -3,7 +3,7 @@
 COMMENT=		library for powerful image loading capabilities
 
 DISTNAME=		DevIL-1.7.8
-REVISION=		6
+REVISION=		7
 SHARED_LIBS+=		IL	0.0 # 2.0
 SHARED_LIBS+=		ILU	0.0 # 2.0
 SHARED_LIBS+=		ILUT	0.0 # 2.0
@@ -21,7 +21,8 @@ EXTRACT_SUFX=		.zip
 WANTLIB += GL GLU Half ICE Iex IlmImf IlmThread Imath SDL SM X11
 WANTLIB += Xdamage Xext Xfixes Xi Xmu Xrandr Xrender Xt Xxf86vm
 WANTLIB += c drm glut jasper jpeg lcms m mng png pthread sndio
-WANTLIB += stdc++ tiff usbhid xcb z
+WANTLIB += tiff usbhid xcb z
+WANTLIB += c++ c++abi
 
 MODULES=		converters/libiconv
 LIB_DEPENDS=		devel/sdl \

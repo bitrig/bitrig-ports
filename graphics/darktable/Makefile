@@ -12,7 +12,7 @@ CFLAGS += -march=i586 -fomit-frame-pointer
 COMMENT=	virtual lighttable and darkroom for photographers
 DISTNAME=	darktable-1.2.3
 EXTRACT_SUFX=	.tar.xz
-REVISION=	1
+REVISION=	2
 
 SHARED_ONLY=	Yes
 
@@ -31,7 +31,8 @@ WANTLIB += atk-1.0 c cairo curl exiv2 flickcurl freetype gdk-x11-2.0
 WANTLIB += gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0 gnome-keyring
 WANTLIB += gobject-2.0 gphoto2 gthread-2.0 gtk-x11-2.0 jpeg lcms2
 WANTLIB += m openjpeg pango-1.0 pangocairo-1.0 png pthread rsvg-2
-WANTLIB += sqlite3 stdc++ tiff xml2 z gphoto2_port soup-2.4 json-glib-1.0
+WANTLIB += sqlite3 tiff xml2 z gphoto2_port soup-2.4 json-glib-1.0
+WANTLIB += c++ c++abi
 
 WANTLIB += lensfun # dlopen'd. this is "Extra" in check-lib-depends; that's ok,
 

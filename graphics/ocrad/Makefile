@@ -3,6 +3,7 @@
 COMMENT=	OCR program for pnm files
 
 DISTNAME=	ocrad-0.18
+REVISION=	0
 CATEGORIES=	graphics
 
 MAINTAINER=	William Yodlowsky <william@openbsd.org>
@@ -10,7 +11,8 @@ MAINTAINER=	William Yodlowsky <william@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m stdc++
+WANTLIB=	c m
+WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_GNU:=ocrad/}
 

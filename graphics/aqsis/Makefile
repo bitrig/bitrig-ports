@@ -8,7 +8,7 @@ COMMENT=	photorealistic 3D rendering solution
 
 V=		1.8.2
 DISTNAME=	aqsis-${V}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	graphics
 
 SO_VERSION=	1.0 # 1.6
@@ -28,7 +28,8 @@ WANTLIB += GL Half Iex IlmImf IlmThread Imath boost_filesystem-mt
 WANTLIB += boost_iostreams-mt boost_program_options-mt boost_regex-mt
 WANTLIB += boost_system-mt boost_thread-mt boost_wave-mt c
 WANTLIB += lib/qt4/QtCore lib/qt4/QtGui lib/qt4/QtOpenGL
-WANTLIB += m png pthread stdc++ tiff tiffxx z
+WANTLIB += m png pthread tiff tiffxx z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/cmake
 

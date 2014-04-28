@@ -3,6 +3,7 @@
 COMMENT=	translate PostScript/PDF graphics to other vector formats
 
 DISTNAME=	pstoedit-3.61
+REVISION=	0
 SHARED_LIBS=	pstoedit 3.0
 CATEGORIES=	graphics
 
@@ -25,7 +26,8 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED}	\
 		--without-emf	 	\
 		--without-swf		\
 		--without-magick
-WANTLIB=	c stdc++ m
+WANTLIB=	c m
+WANTLIB +=	c++ c++abi pthread
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/pstoedit.1 ${PREFIX}/man/man1

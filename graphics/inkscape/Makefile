@@ -3,7 +3,7 @@
 COMMENT=	SVG vector drawing application
 
 DISTNAME=	inkscape-0.48.4
-REVISION =	0
+REVISION =	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=inkscape/}
 
@@ -19,7 +19,8 @@ WANTLIB += gdk-x11-2.0 gdk_pixbuf-2.0 gdkmm-2.4 gio-2.0 giomm-2.4
 WANTLIB += glib-2.0 glibmm-2.4 gobject-2.0 gsl gslcblas gthread-2.0
 WANTLIB += gtk-x11-2.0 gtkmm-2.4 gtkspell lcms2 m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pangomm-1.4 png poppler poppler-glib popt
-WANTLIB += pthread sigc-2.0 stdc++ xml2 xslt z
+WANTLIB += pthread sigc-2.0 xml2 xslt z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		textproc/intltool \

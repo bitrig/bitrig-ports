@@ -3,6 +3,7 @@
 COMMENT =	Amide a Medical Imaging Data Examiner
 
 DISTNAME =	amide-1.0.5
+REVISION =	0
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://amide.sourceforge.net/
@@ -20,10 +21,11 @@ WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gnomecanvas-2 gobject-2.0
 WANTLIB += gsl gslcblas gsm gthread-2.0 gtk-x11-2.0 m mdc mp3lame
 WANTLIB += ogg orc-0.4 pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB += pixman-1 png pthread pthread-stubs schroedinger-1.0
-WANTLIB += speex stdc++ theoradec theoraenc vorbis vorbisenc vpx
+WANTLIB += speex theoradec theoraenc vorbis vorbisenc vpx
 WANTLIB += x264 xcb xcb-render xcb-shm xml2 z
 WANTLIB += dbus-1 dbus-glib-1 ffi graphite2 opus
 WANTLIB += harfbuzz xvidcore
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=amide/}
 

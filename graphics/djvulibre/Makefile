@@ -3,7 +3,7 @@
 COMMENT=	view, decode and encode DjVu files
 
 DISTNAME=	djvulibre-3.5.25.3
-REVISION=	0
+REVISION=	1
 SHARED_LIBS=	djvulibre	25.0	# 25.0
 CATEGORIES=	graphics print
 
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=djvu/}
 
-WANTLIB=	c m jpeg pthread stdc++ tiff z
+WANTLIB=	c m jpeg pthread tiff z
+WANTLIB +=	c++ c++abi
 
 LIB_DEPENDS=	graphics/jpeg \
 		graphics/tiff

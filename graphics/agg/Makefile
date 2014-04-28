@@ -3,7 +3,7 @@
 COMMENT=	anti-grain geometry graphics library
 
 DISTNAME=	agg-2.5
-REVISION=	4
+REVISION=	5
 SHARED_LIBS=	agg		3.0 \
 		aggfontfreetype	3.0 \
 		aggplatformsdl	3.0 \
@@ -15,7 +15,8 @@ HOMEPAGE=	http://www.antigrain.com/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	X11 freetype m sndio usbhid xcb z SDL>=6 stdc++ pthread
+WANTLIB=	X11 freetype m sndio usbhid xcb z SDL>=6 pthread
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	${HOMEPAGE}
 

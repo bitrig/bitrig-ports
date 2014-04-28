@@ -3,6 +3,7 @@
 CATEGORIES =	graphics
 COMMENT =	KDE image effects
 DISTNAME =	qimageblitz-0.0.6
+REVISION =	0
 
 EXTRACT_SUFX =	.tar.bz2
 
@@ -13,7 +14,8 @@ PERMIT_PACKAGE_CDROM =          Yes
 
 MASTER_SITES =	${MASTER_SITE_KDE:=stable/qimageblitz/}
 
-WANTLIB =  c lib/qt4/QtGui m pthread stdc++
+WANTLIB =  c lib/qt4/QtGui m pthread
+WANTLIB += c++ c++abi
 
 MODULES =	x11/kde4
 MODKDE4_USE =

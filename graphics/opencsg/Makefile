@@ -5,6 +5,7 @@ COMMENT =		constructive solid geometry rendering library
 V =			1.3.2
 DISTNAME =		OpenCSG-${V}
 PKGNAME =		opencsg-${V}
+REVISION =		0
 
 SHARED_ONLY =		Yes
 SHARED_LIBS =		opencsg		0.0
@@ -16,8 +17,9 @@ HOMEPAGE =		http://www.opencsg.org/
 # GPLv2 with CGAL exception
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=		GL GLEW lib/qt4/QtGui m stdc++ pthread
+WANTLIB +=		GL GLEW lib/qt4/QtGui m pthread
 WANTLIB +=		ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
+WANTLIB +=		c++ c++abi
 
 MODULES =		x11/qt4
 LIB_DEPENDS =		graphics/glew

@@ -3,7 +3,7 @@
 COMMENT =		identify control points from groups of overlapping images
 
 DISTNAME =		autopano-sift-C-2.5.1
-REVISION=		0
+REVISION=		1
 PKGNAME =		${DISTNAME:L}
 
 CATEGORIES =		graphics
@@ -16,7 +16,8 @@ MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
 PERMIT_PACKAGE_CDROM =	US patent, see README
 PERMIT_PACKAGE_FTP =	Yes
 
-WANTLIB +=		c m stdc++ z jpeg pano13 png tiff xml2
+WANTLIB +=		c m z jpeg pano13 png tiff xml2
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=hugin/}
 

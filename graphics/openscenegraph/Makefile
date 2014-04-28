@@ -7,6 +7,7 @@ COMMENT =		3D graphics toolkit
 V =			3.2.0
 DISTNAME =		OpenSceneGraph-${V}
 PKGNAME =		openscenegraph-${V}
+REVISION =		0
 
 SUBST_VARS +=		V
 
@@ -41,8 +42,9 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB += GL Half Iex IlmImf IlmThread QtGui QtOpenGL X11 Xrandr
 WANTLIB += avcodec avdevice avformat avutil c cairo curl freetype
 WANTLIB += gdk_pixbuf-2.0 gif gio-2.0 glib-2.0 gobject-2.0
-WANTLIB += jasper jpeg m png poppler-glib pthread rsvg-2 stdc++
+WANTLIB += jasper jpeg m png poppler-glib pthread rsvg-2
 WANTLIB += swscale tiff z SDL
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		${HOMEPAGE}/downloads/developer_releases/
 EXTRACT_SUFX =		.zip

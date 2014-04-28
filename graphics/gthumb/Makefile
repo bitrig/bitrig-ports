@@ -6,7 +6,7 @@ COMMENT=	image viewer and browser for GNOME
 
 GNOME_PROJECT=	gthumb
 GNOME_VERSION=	3.2.7
-REVISION=	1
+REVISION=	2
 
 API_V=		${GNOME_VERSION:R}
 SUBST_VARS=	API_V
@@ -27,8 +27,9 @@ WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 graphite2
 WANTLIB += gstreamer-1.0 gthread-2.0 gtk-3 harfbuzz jpeg json-glib-1.0
 WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB += png pthread pthread-stubs rsvg-2 secret-1 soup-2.4
-WANTLIB += soup-gnome-2.4 stdc++ tiff webkit2gtk-3.0 webp xcb
+WANTLIB += soup-gnome-2.4 tiff webkit2gtk-3.0 webp xcb
 WANTLIB += xcb-render xcb-shm z gstvideo-1.0
+WANTLIB += c++ c++abi
 
 MODULES=	devel/dconf \
 		devel/gettext \

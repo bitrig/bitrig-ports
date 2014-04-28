@@ -4,7 +4,7 @@ COMMENT =		fractal image generator
 
 DISTNAME =		gnofract4d-${MODPY_EGG_VERSION}
 MODPY_EGG_VERSION =	3.14
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		graphics
 
@@ -13,7 +13,8 @@ HOMEPAGE =		http://gnofract4d.sourceforge.net
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB += m png stdc++ z ${MODPY_WANTLIB}
+WANTLIB += m png z ${MODPY_WANTLIB}
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gnofract4d/}
 

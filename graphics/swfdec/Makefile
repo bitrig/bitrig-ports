@@ -3,7 +3,7 @@
 COMMENT=	flash rendering library
 
 DISTNAME=	swfdec-0.8.4
-REVISION=	8
+REVISION=	9
 SHARED_LIBS +=	swfdec-0.8           0.0      # .90.0
 SHARED_LIBS +=	swfdec-gtk-0.8       0.0      # .90.0
 CATEGORIES=	graphics
@@ -23,8 +23,9 @@ WANTLIB += gstpbutils-0.10 gstreamer-0.10 gthread-2.0 gtk-x11-2.0
 WANTLIB += m oil-0.3 pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB += pixman-1 png pthread-stubs sndio soup-2.4 xcb
 WANTLIB += xcb-render xml2 z
-WANTLIB += GL Xxf86vm drm ffi gstbase-0.10 gstvideo-0.10 stdc++
+WANTLIB += GL Xxf86vm drm ffi gstbase-0.10 gstvideo-0.10
 WANTLIB += xcb-shm
+WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS=	devel/libsoup \
 		devel/liboil \

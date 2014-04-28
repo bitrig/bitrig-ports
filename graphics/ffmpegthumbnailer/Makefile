@@ -3,7 +3,7 @@
 COMMENT=	lightweight video thumbnailer for file managers
 
 DISTNAME=	ffmpegthumbnailer-2.0.8
-REVISION=	0
+REVISION=	1
 CATEGORIES=	graphics multimedia
 MASTER_SITES=	https://ffmpegthumbnailer.googlecode.com/files/
 
@@ -14,8 +14,9 @@ HOMEPAGE=	https://code.google.com/p/ffmpegthumbnailer
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += avcodec avformat avutil c jpeg m png pthread stdc++
+WANTLIB += avcodec avformat avutil c jpeg m png pthread
 WANTLIB += swscale
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	graphics/ffmpeg \
 		graphics/jpeg \

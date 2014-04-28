@@ -7,7 +7,7 @@ CATEGORIES =	graphics
 V=		0.3.12
 DISTNAME =	pigment-python-$V
 PKGNAME =	py-pigment-$V
-REVISION=	5
+REVISION=	6
 MASTER_SITES =	http://elisa.fluendo.com/static/download/pigment/
 
 # LGPLv2.1
@@ -37,6 +37,7 @@ WANTLIB += pcre pixman-1 png pthread-stubs xcb z xml2
 WANTLIB += gstvideo-0.10 gtk-x11-2.0 gdk-x11-2.0 gdk_pixbuf-2.0 
 WANTLIB += gstbase-0.10 gstreamer-0.10
 WANTLIB += pigment-0.3 pigment-gtk-0.3 pigment-imaging-0.3
-WANTLIB += GL Xxf86vm drm stdc++ xcb-render xcb-shm
+WANTLIB += GL Xxf86vm drm xcb-render xcb-shm
+WANTLIB += c++ c++abi pthread
 
 .include <bsd.port.mk>

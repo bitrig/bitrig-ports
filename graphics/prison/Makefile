@@ -4,6 +4,7 @@ CATEGORIES =	graphics print
 COMMENT =	Qt-based barcode abstraction library
 VERSION =	1.0
 DISTNAME =	prison-${VERSION}
+REVISION =	0
 HOMEPAGE =	http://projects.kde.org/prison
 
 SHARED_LIBS =	prison			0.0
@@ -20,7 +21,8 @@ MODKDE4_USE =
 LIB_DEPENDS =	graphics/libdmtx \
 		graphics/libqrencode
 
-WANTLIB =	dmtx lib/qt4/QtGui m qrencode stdc++
+WANTLIB =	dmtx lib/qt4/QtGui m qrencode
+WANTLIB +=	c++ c++abi pthread
 
 post-patch:
 	${SUBST_CMD} ${WRKSRC}/lib/prison/PrisonConfig.cmake.in

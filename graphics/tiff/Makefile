@@ -5,7 +5,7 @@ COMMENT=	tools and library routines for working with TIFF images
 DISTNAME=	tiff-4.0.3
 SHARED_LIBS=	tiff	39.2	# 7.0
 SHARED_LIBS+=	tiffxx	40.1	# 7.0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	graphics
 
 MASTER_SITES=	http://download.osgeo.org/libtiff/
@@ -13,7 +13,8 @@ MASTER_SITES=	http://download.osgeo.org/libtiff/
 HOMEPAGE=	http://www.remotesensing.org/libtiff/
 
 LIB_DEPENDS=	graphics/jpeg
-WANTLIB=	c m stdc++ z jpeg
+WANTLIB=	c m z jpeg
+WANTLIB +=	c++ c++abi pthread
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

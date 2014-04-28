@@ -3,7 +3,7 @@
 COMMENT =	tool for working with RAW images
 
 DISTNAME =	rawstudio-1.2
-REVISION =	9
+REVISION =	10
 
 CATEGORIES =	graphics
 
@@ -24,8 +24,9 @@ WANTLIB += Xrandr Xrender atk-1.0 c cairo dbus-1 exiv2 expat fontconfig
 WANTLIB += freetype gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0
 WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 gtk-x11-2.0
 WANTLIB += jpeg lcms m pango-1.0 pangocairo-1.0 pangoft2-1.0 pixman-1
-WANTLIB += png pthread pthread-stubs stdc++ tiff xcb xcb-render
+WANTLIB += png pthread pthread-stubs tiff xcb xcb-render
 WANTLIB += xcb-shm xml2 z
+WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext
 LIB_DEPENDS +=	x11/dbus \
