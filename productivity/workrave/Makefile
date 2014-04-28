@@ -3,7 +3,7 @@
 COMMENT=		reminder program for prevention of RSI
 
 DISTNAME=		workrave-1.9.4
-REVISION=		7
+REVISION=		8
 CATEGORIES=		productivity x11
 
 HOMEPAGE=		http://www.workrave.org/
@@ -18,8 +18,9 @@ WANTLIB += freetype gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0 gdkmm-2.4
 WANTLIB += gio-2.0 giomm-2.4 glib-2.0 glibmm-2.4 gmodule-2.0 gobject-2.0
 WANTLIB += graphite2 gstreamer-0.10 gthread-2.0 gtk-x11-2.0 gtkmm-2.4
 WANTLIB += harfbuzz m pango-1.0 pangocairo-1.0 pangoft2-1.0 pangomm-1.4
-WANTLIB += pcre pixman-1 png pthread pthread-stubs sigc-2.0 stdc++
+WANTLIB += pcre pixman-1 png pthread pthread-stubs sigc-2.0
 WANTLIB += xcb xcb-render xcb-shm xml2 z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=workrave/}
 

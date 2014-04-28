@@ -4,17 +4,18 @@ CATEGORIES =	productivity
 COMMENT =	PIM cache and access services
 DISTNAME =	akonadi-1.11.0
 HOMEPAGE =	http://community.kde.org/KDE_PIM/Akonadi
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS = 	akonadiprotocolinternals 2.0	# 1.0
 
 EXTRACT_SUFX =	.tar.bz2
 MASTER_SITES =	${MASTER_SITE_KDE:=stable/akonadi/src/}
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB += lib/qt4/QtSql lib/qt4/QtXml
 WANTLIB += boost_program_options-mt sqlite3 soprano
+WANTLIB += c++ c++abi
 
 # LGPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

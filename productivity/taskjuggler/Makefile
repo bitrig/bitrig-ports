@@ -6,7 +6,7 @@ BROKEN-hppa=	self-checks fail with 64-bit time_t
 BROKEN-powerpc=	self-checks fail with 64-bit time_t
 
 DISTNAME=	taskjuggler-2.4.1
-REVISION=	10
+REVISION=	11
 
 CATEGORIES=	productivity
 
@@ -18,12 +18,13 @@ HOMEPAGE=	http://www.taskjuggler.org/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB =  ICE SM X11 Xext Xrender Xfixes Xt art_lgpl_2 c expat fam
-WANTLIB += fontconfig freetype idn m png pthread stdc++ util xcb z
+WANTLIB += fontconfig freetype idn m png pthread util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kabc ${KDE}/kcal ${KDE}/kdecore
 WANTLIB += ${KDE}/kdefx ${KDE}/kdeprint ${KDE}/kdesu ${KDE}/kdeui
 WANTLIB += ${KDE}/khtml ${KDE}/kio ${KDE}/kmime ${KDE}/ktnef
 WANTLIB += ${KDE}/kresources ${KDE}/ktexteditor ${KDE}/kwalletclient
 WANTLIB += ${KDE}/vcard
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${HOMEPAGE}/download/
 EXTRACT_SUFX=	.tar.bz2

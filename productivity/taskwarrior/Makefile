@@ -5,6 +5,7 @@ COMMENT =	command line todo list manager
 VERSION =	2.3.0
 DISTNAME =	task-${VERSION}
 PKGNAME =	taskwarrior-${VERSION}
+REVISION =	0
 CATEGORIES =	productivity
 
 HOMEPAGE =	http://www.taskwarrior.org/
@@ -20,7 +21,8 @@ MODULES =		devel/cmake \
 			lang/lua
 MODLUA_SA =		Yes
 
-WANTLIB += c gnutls m ncurses pthread readline stdc++ uuid
+WANTLIB += c gnutls m ncurses pthread readline uuid
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS =	security/gnutls \
 		sysutils/e2fsprogs>=1.42.7

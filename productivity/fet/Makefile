@@ -3,7 +3,7 @@
 COMMENT=		automatically create timetables
 
 DISTNAME=		fet-5.14.1
-REVISION=		2
+REVISION=		3
 CATEGORIES=		productivity x11
 
 HOMEPAGE=		http://www.lalescu.ro/liviu/fet/
@@ -12,8 +12,8 @@ HOMEPAGE=		http://www.lalescu.ro/liviu/fet/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += Qt3Support QtGui QtNetwork QtSql QtXml c m pthread
-WANTLIB += stdc++
 WANTLIB += ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${HOMEPAGE}/download/ \
 			http://timetabling.de/download/

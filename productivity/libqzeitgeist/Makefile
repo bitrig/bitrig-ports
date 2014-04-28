@@ -4,6 +4,7 @@ COMMENT =		Qt wrapper for Zeitgeist, event logging framework
 
 V =			0.8.0
 DISTNAME =		libqzeitgeist-${V}
+REVISION =		0
 
 SHARED_LIBS =		qzeitgeist	0.0
 
@@ -14,11 +15,12 @@ HOMEPAGE =		http://zeitgeist-project.com/
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		m stdc++
+WANTLIB =		m
 WANTLIB +=		lib/qt4/QtDBus lib/qt4/QtDeclarative lib/qt4/QtGui
 WANTLIB +=		lib/qt4/QtNetwork lib/qt4/QtTest lib/qt4/QtScript
 WANTLIB +=		lib/qt4/QtSql lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB +=		lib/qt4/QtXmlPatterns
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_KDE:=stable/libqzeitgeist/${V}/src/}
 EXTRACT_SUFX =		.tar.bz2

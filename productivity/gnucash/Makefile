@@ -8,7 +8,7 @@ GNOME_PROJECT =		gnucash
 GNOME_VERSION =		2.6.2
 DOC_VERSION = 		2.6.2
 EXTRACT_SUFX =		.tar.bz2
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=  gnc-qof              2.0      # 1.4
 SHARED_LIBS +=  gnc-core-utils       0.0      # unknown
@@ -38,8 +38,9 @@ WANTLIB += gthread-2.0 gtk-x11-2.0 guile harfbuzz harfbuzz-icu
 WANTLIB += icudata icui18n icuuc javascriptcoregtk-1.0 jpeg ltdl
 WANTLIB += m orc-0.4 pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB += pixman-1 png pthread pthread-stubs secret-1 soup-2.4
-WANTLIB += sqlite3 stdc++ webkitgtk-1.0 webp xcb xcb-render xcb-shm
+WANTLIB += sqlite3 webkitgtk-1.0 webp xcb xcb-render xcb-shm
 WANTLIB += xml2 xslt z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gnucash/}
 

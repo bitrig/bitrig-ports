@@ -3,7 +3,7 @@
 COMMENT=	qt home accounting program
 
 DISTNAME=	qhacc-3.4
-REVISION=	4
+REVISION=	5
 CATEGORIES=	productivity x11
 
 HOMEPAGE=	http://qhacc.sourceforge.net/
@@ -24,10 +24,11 @@ SHARED_LIBS+=   ${_lib} ${SO_VERSION}
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += GL X11 c m pthread stdc++ xcb
+WANTLIB += GL X11 c m pthread xcb
 WANTLIB += ICE SM Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm drm expat fontconfig
 WANTLIB += freetype jpeg lcms mng png z pthread-stubs
+WANTLIB += c++ c++abi
 
 MODULES=	x11/qt3
 

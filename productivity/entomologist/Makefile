@@ -2,6 +2,7 @@
 
 COMMENT =	bug tracker client
 DISTNAME =	entomologist-1.1
+REVISION =	0
 CATEGORIES =	productivity
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=entomologist/}
@@ -14,8 +15,9 @@ MODULES =	x11/qt4
 RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/gtk+2 \
 		x11/gtk+2,-guic
-WANTLIB +=	QtGui QtNetwork QtSql QtXml c m pthread stdc++
+WANTLIB +=	QtGui QtNetwork QtSql QtXml c m pthread
 WANTLIB +=	ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
+WANTLIB +=	c++ c++abi
 
 MAKE_FLAGS =	CXX=${CXX} \
 		QMAKE_CXXFLAGS="${CXXFLAGS} -g"

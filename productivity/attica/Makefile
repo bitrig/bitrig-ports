@@ -3,13 +3,15 @@
 CATEGORIES =	productivity
 COMMENT =	collaboration services library for KDE
 DISTNAME =	attica-0.4.2
+REVISION=	0
 
 SHARED_LIBS =	attica		1.0
 EXTRACT_SUFX =	.tar.bz2
 
 MASTER_SITES =	${MASTER_SITE_KDE:=stable/attica/}
 
-WANTLIB =	m stdc++ lib/qt4/QtNetwork
+WANTLIB =	m lib/qt4/QtNetwork
+WANTLIB +=	c++ c++abi
 
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes

@@ -7,6 +7,7 @@ COMMENT=	online banking interface and financial data framework
 # update the "release=XX" in DISTFILES, not just DISTNAME
 DISTNAME=	aqbanking-5.4.1beta
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}{download.php?package=03\&release=113\&file=01}
+REVISION=	0
 
 SHARED_LIBS +=	aqbanking            1.1      # 38.1
 SHARED_LIBS +=	aqbankingpp          0.0      # unknown
@@ -23,8 +24,9 @@ HOMEPAGE=	http://www.aquamaniac.de/sites/aqbanking/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c ffi gcrypt gmp gnutls gpg-error gwenhywfar hogweed
-WANTLIB += ltdl m nettle p11-kit pthread stdc++ tasn1 xml2 xmlsec1
+WANTLIB += ltdl m nettle p11-kit pthread tasn1 xml2 xmlsec1
 WANTLIB += xmlsec1-gcrypt xmlsec1-gnutls xslt z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://www.aquamaniac.de/sites/download/
 

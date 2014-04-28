@@ -3,7 +3,7 @@
 COMMENT=	command line double-entry accounting ledger
 
 DISTNAME=	ledger-2.6.3
-REVISION=	2
+REVISION=	3
 CATEGORIES=	productivity
 
 HOMEPAGE=	http://www.ledger-cli.org/
@@ -17,7 +17,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	https://github.com/downloads/jwiegley/ledger/
 
-WANTLIB=	c gmp>=4 m pcre stdc++
+WANTLIB=	c gmp>=4 m pcre
+WANTLIB +=	c++ c++abi pthread
 
 LIB_DEPENDS=	devel/gmp \
 		devel/pcre

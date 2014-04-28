@@ -3,6 +3,7 @@
 COMMENT=	generate and manipulate maps of your thoughts
 
 DISTNAME=	vym-2.2.2
+REVISION=	0
 CATEGORIES=	productivity x11
 
 HOMEPAGE=	http://www.insilmaril.de/vym/
@@ -15,7 +16,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 WANTLIB += ICE QtDBus QtGui QtNetwork QtSvg QtXml SM X11 Xext
 WANTLIB += Xi Xinerama Xrender c fontconfig freetype m pthread
-WANTLIB += stdc++
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		x11/qt4
