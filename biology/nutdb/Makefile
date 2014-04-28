@@ -5,14 +5,15 @@ COMMENT=	record and analyze your meals for nutrient composition
 V=		16.12
 DISTNAME=	nut-${V}
 PKGNAME=	nutdb-${V}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	biology
 HOMEPAGE=	http://nut.sourceforge.net/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += X11 Xau Xdmcp Xext Xft Xinerama c fltk fontconfig m pthread stdc++
+WANTLIB += X11 Xau Xdmcp Xext Xft Xinerama c fltk fontconfig m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nut/}
 
