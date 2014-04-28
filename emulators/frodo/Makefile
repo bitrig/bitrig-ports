@@ -4,7 +4,7 @@ COMMENT=	Commodore 64 emulator
 
 DISTNAME=	FrodoV4_1b.Src
 PKGNAME=	frodo-4.1b
-REVISION=	7
+REVISION=	8
 DISTFILES=	FrodoV4_1b.Src${EXTRACT_SUFX}
 
 CATEGORIES=	emulators games
@@ -16,7 +16,8 @@ HOMEPAGE=	http://frodo.cebix.net/
 # FreeWare
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		SDL c m pthread sndio stdc++
+WANTLIB=		SDL c m pthread sndio
+WANTLIB +=		c++ c++abi
 
 CONFIGURE_STYLE=	gnu
 

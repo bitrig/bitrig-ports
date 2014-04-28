@@ -6,6 +6,8 @@ DISTNAME =		stella-3.9
 CATEGORIES =		emulators
 DISTFILES =		${DISTNAME}-src.tar.gz
 
+REVISION =		0
+
 HOMEPAGE =		http://stella.sourceforge.net/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -13,7 +15,8 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c stdc++ m z pthread SDL>=1.2 png
+WANTLIB =		c m z pthread SDL>=1.2 png
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=stella/}
 

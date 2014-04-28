@@ -6,6 +6,8 @@ DISTNAME =	desmume-0.9.10
 
 CATEGORIES =	emulators
 
+REVISION =	0
+
 HOMEPAGE =	http://desmume.org/
 
 MAINTAINER =	Anthony J. Bentley <anthony@cathet.us>
@@ -13,12 +15,13 @@ MAINTAINER =	Anthony J. Bentley <anthony@cathet.us>
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB += agg c m pthread stdc++ z GL GLU X11 Xcomposite
+WANTLIB += agg c m pthread z GL GLU X11 Xcomposite
 WANTLIB += Xcursor Xdamage Xext Xfixes Xi Xinerama Xrandr Xrender
 WANTLIB += fontconfig freetype gdk_pixbuf-2.0 gio-2.0
 WANTLIB += glib-2.0 gobject-2.0 gthread-2.0 SDL
 WANTLIB += atk-1.0 cairo gdk-x11-2.0 gtk-x11-2.0
 WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 zzip
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=desmume/}
 

@@ -6,6 +6,7 @@ V =			2.2.2
 DISTNAME =		fceux-${V}.src
 PKGNAME =		fceux-${V}
 CATEGORIES =		emulators games
+REVISION =		0
 
 HOMEPAGE =		http://fceux.com/
 
@@ -18,7 +19,8 @@ MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=fceultra/}
 
 WANTLIB += 		GL SDL X11 c gd gdk-x11-2.0 gdk_pixbuf-2.0 glib-2.0
 WANTLIB += 		gobject-2.0 gtk-x11-2.0 lua5.1 m pthread
-WANTLIB += 		stdc++ z ${MODLUA_WANTLIB}
+WANTLIB += 		z ${MODLUA_WANTLIB}
+WANTLIB +=		c++ c++abi
 
 RUN_DEPENDS =		devel/desktop-file-utils
 LIB_DEPENDS =		devel/sdl \

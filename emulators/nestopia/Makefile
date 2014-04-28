@@ -6,6 +6,8 @@ DISTNAME =		nestopia-1.45
 
 CATEGORIES =		emulators
 
+REVISION =		0
+
 HOMEPAGE =		http://0ldsk00l.ca/nestopia.html
 
 MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
@@ -14,7 +16,8 @@ MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
 PERMIT_PACKAGE_CDROM =		Yes
 
 WANTLIB += GL SDL X11 c gdk-3 gdk_pixbuf-2.0 glib-2.0 gobject-2.0
-WANTLIB += gtk-3 m pthread stdc++ z archive
+WANTLIB += gtk-3 m pthread z archive
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=nestopiaue/}
 EXTRACT_SUFX =		.tgz

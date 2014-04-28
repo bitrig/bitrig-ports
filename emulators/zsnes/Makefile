@@ -6,7 +6,7 @@ COMMENT=		Super Nintendo emulator for x86
 VERSION=		1.42
 DISTNAME=		zsnes_${VERSION:S/./_/}
 PKGNAME=		zsnes-${VERSION}
-REVISION=		0
+REVISION=		1
 CATEGORIES=		emulators games
 HOMEPAGE=		http://www.zsnes.com/
 
@@ -18,7 +18,8 @@ DISTFILES=		zsnes${VERSION:S/.//}src${EXTRACT_SUFX}
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		GL SDL c m png pthread stdc++ z
+WANTLIB=		GL SDL c m png pthread z
+WANTLIB+=		c++ c++abi
 
 BUILD_DEPENDS=		devel/nasm
 LIB_DEPENDS=		sdl-*-!no_x11:devel/sdl \

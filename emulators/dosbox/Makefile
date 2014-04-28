@@ -6,7 +6,7 @@ COMMENT=	x86 with DOS emulator targeted at playing games
 BROKEN-hppa =	mpu401.cpp:42: error: expected identifier before numeric constant
 
 DISTNAME=	dosbox-0.74
-REVISION=	4
+REVISION=	5
 CATEGORIES=	games x11 emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dosbox/}
 
@@ -17,7 +17,8 @@ MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 # GPL
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB += SDL SDL_net SDL_sound stdc++ png X11 c m pthread sndio z
+WANTLIB += SDL SDL_net SDL_sound png X11 c m pthread sndio z
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	devel/sdl-net \
 		devel/sdl-sound \

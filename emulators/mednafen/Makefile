@@ -5,7 +5,7 @@ COMMENT =	emulates numerous game consoles
 V =		0.9.28
 DISTNAME =	mednafen-${V}-wip
 PKGNAME =	mednafen-${V}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	emulators games
 HOMEPAGE =	http://mednafen.sourceforge.net/
@@ -20,8 +20,9 @@ EXTRACT_SUFX =	.tar.bz2
 
 MODULES =	devel/gettext
 
-WANTLIB += SDL c cdio m pthread sndfile sndio stdc++ usbhid z
+WANTLIB += SDL c cdio m pthread sndfile sndio usbhid z
 WANTLIB += FLAC ogg vorbis vorbisenc
+WANTLIB += c++ c++abi
 
 USE_GMAKE =	Yes
 

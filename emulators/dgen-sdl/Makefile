@@ -6,6 +6,7 @@ DISTNAME =		dgen-sdl-1.32
 CATEGORIES =		emulators games
 HOMEPAGE =		http://dgen.sourceforge.net/
 MAINTAINER =		Edd Barrett <edd@openbsd.org>
+REVISION =		0
 
 FLAVORS =		debugger
 FLAVOR ?=
@@ -21,7 +22,8 @@ FLAVOR ?=
 PERMIT_PACKAGE_CDROM =	No
 PERMIT_PACKAGE_FTP =	Yes
 
-WANTLIB =		GL SDL archive c m pthread stdc++
+WANTLIB =		GL SDL archive c m pthread
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=dgen/}
 

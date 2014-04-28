@@ -18,9 +18,10 @@ WANTLIB =	X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes \
 		Xi Xinerama Xrandr Xrender Xv atk-1.0 c cairo expat \
 		fontconfig freetype gio-2.0 glib-2.0 gmodule-2.0 \
 		gobject-2.0 gthread-2.0 m pango-1.0 pangocairo-1.0 \
-		pangoft2-1.0 pixman-1 pthread pthread-stubs stdc++ \
+		pangoft2-1.0 pixman-1 pthread pthread-stubs \
 		xcb xcb-render xcb-render-util z gdk_pixbuf-2.0 \
 		glade-2.0 SDL png xml2 gtk-x11-2.0 gdk-x11-2.0
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =	https://sites.google.com/site/bearoso/snes9x/
 EXTRACT_SUFX =	.tar.bz2

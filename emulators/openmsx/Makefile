@@ -10,6 +10,8 @@ DISTNAME =	openmsx-0.9.1
 
 CATEGORIES =	emulators
 
+REVISION =	0
+
 HOMEPAGE =	http://openmsx.sourceforge.net/
 
 MAINTAINER =	Anthony J. Bentley <anthony@cathet.us>
@@ -26,8 +28,9 @@ MAKE_ENV +=	INSTALL_BASE=${PREFIX}/share/openmsx \
 		INSTALL_SHARE_DIR=${PREFIX}/share/openmsx \
 		INSTALL_DOC_DIR=${PREFIX}/share/doc/openmsx
 
-WANTLIB +=	GL c freetype m pthread stdc++ z ${MODTCL_LIB} ao
+WANTLIB +=	GL c freetype m pthread z ${MODTCL_LIB} ao
 WANTLIB +=	GLEW SDL SDL_ttf ogg png theoradec vorbis xml2
+WANTLIB +=	c++ c++abi
 
 LIB_DEPENDS =	audio/libao \
 		audio/libvorbis \

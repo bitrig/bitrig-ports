@@ -10,6 +10,8 @@ PKGNAME =	pcsxr-1.9.94beta0
 CATEGORIES =	emulators games
 HOMEPAGE =	http://pcsxr.codeplex.com/
 
+REVISION =		0
+
 MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # GPLv2
@@ -28,8 +30,9 @@ WANTLIB += cdio dbus-1 drm expat ffi fontconfig freetype gdk-3
 WANTLIB += gdk_pixbuf-2.0 gio-2.0 glapi glib-2.0 gmodule-2.0 gobject-2.0
 WANTLIB += graphite2 gthread-2.0 gtk-3 harfbuzz m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
-WANTLIB += sndio stdc++ usbhid xcb xcb-dri2 xcb-glx xcb-render
+WANTLIB += sndio usbhid xcb xcb-dri2 xcb-glx xcb-render
 WANTLIB += xcb-shm z
+WANTLIB += c++ c++abi
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ENV =		CPPFLAGS="-I${X11BASE}/include" \

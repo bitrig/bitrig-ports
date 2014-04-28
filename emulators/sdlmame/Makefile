@@ -15,6 +15,8 @@ PKGNAME-tools =		sdlmame-tools-0.${V}
 
 CATEGORIES =		emulators games
 
+REVISION =		0
+
 HOMEPAGE =		http://mamedev.org/
 
 MAINTAINER =		Brian Callahan <bcallah@openbsd.org>
@@ -28,7 +30,8 @@ WANTLIB =	SDL SDL_ttf X11 Xcomposite Xcursor Xdamage Xext Xfixes \
 		Xi Xinerama Xrandr Xrender atk-1.0 c cairo expat fontconfig \
 		freetype gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 \
 		glib-2.0 gobject-2.0 gtk-x11-2.0 m pango-1.0 pangocairo-1.0 \
-		pangoft2-1.0 pthread stdc++ util z
+		pangoft2-1.0 pthread util z
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =		http://mamedev.org/downloader.php?file=releases/ \
 			http://whiper.com/mame/${V}/

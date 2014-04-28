@@ -4,9 +4,10 @@ COMMENT =		n64 emulator opengl video plugin
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
-REVISION =		1
+REVISION =		2
 
-WANTLIB =		GL SDL m png pthread stdc++
+WANTLIB =		GL SDL m png pthread
+WANTLIB +=		c++ c++abi
 LIB_DEPENDS =		devel/sdl graphics/png
 MUPEN64PLUS_MOD = 	video-rice
 

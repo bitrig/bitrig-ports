@@ -2,12 +2,13 @@
 
 COMMENT =		n64 emulator core
 SHARED_LIBS =		mupen64plus 2.2 # 2.0
-REVISION =		2
+REVISION =		3
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		GL GLU c m stdc++ z freetype png pthread SDL
+WANTLIB =		GL GLU c m z freetype png pthread SDL
+WANTLIB +=		c++ c++abi
 LIB_DEPENDS =		devel/sdl \
 			graphics/png \
 			print/freetype

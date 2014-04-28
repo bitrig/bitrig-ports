@@ -9,6 +9,7 @@ V =			2.4.0
 MODPY_EGG_VERSION =	${V}
 DISTNAME =		fs-uae-$V
 CATEGORIES =		emulators
+REVISION =		0
 
 HOMEPAGE =		http://fengestad.no/fs-uae/
 MAINTAINER =		Edd Barrett <edd@openbsd.org>
@@ -17,7 +18,8 @@ MAINTAINER =		Edd Barrett <edd@openbsd.org>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL GLU SDL X11 c freetype glib-2.0 gthread-2.0 m openal png
-WANTLIB += pthread stdc++ z
+WANTLIB += pthread z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${HOMEPAGE}stable/$V/
 
