@@ -4,7 +4,7 @@ COMMENT =	dungeon explorin', hackin', game.  Piece of cake
 V =		3.4.3
 DISTNAME =	nethack-$V
 PKGNAME =	${DISTNAME}
-REVISION =	5
+REVISION =	6
 CATEGORIES =	games
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=nethack/} \
@@ -35,7 +35,8 @@ NETHACKCONFIG =	${FILESDIR}/simple-config
 .elif ${FLAVOR} == "qt"
 NETHACKCONFIG =	${FILESDIR}/qt-config
 MODULES =	x11/qt3
-WANTLIB +=	SM m pthread stdc++
+WANTLIB +=	SM m pthread
+WANTLIB +=	c++ c++abi
 .else
 NETHACKCONFIG =	${FILESDIR}/x-config
 WANTLIB +=	X11 Xaw Xext Xmu Xpm Xt pthread-stubs xcb

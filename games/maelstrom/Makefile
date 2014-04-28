@@ -4,7 +4,7 @@ COMMENT =		asteroid-like game
 
 DISTNAME =		Maelstrom-3.0.6
 PKGNAME = 		${DISTNAME:L}
-REVISION =		0
+REVISION =		1
 CATEGORIES =		games x11
 HOMEPAGE =		http://www.devolution.com/~slouken/Maelstrom/
 MASTER_SITES =		${HOMEPAGE}/src/
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 CONFIGURE_STYLE = 	gnu
 
-WANTLIB =		SDL c m pthread stdc++ SDL_net
+WANTLIB =		SDL c m pthread SDL_net
+WANTLIB +=		c++ c++abi
 LIB_DEPENDS =		devel/sdl-net
 
 pre-configure:

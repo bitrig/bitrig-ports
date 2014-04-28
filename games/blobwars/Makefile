@@ -3,7 +3,7 @@
 COMMENT =	2D arcade game
 
 DISTNAME =	blobwars-1.19
-REVISION=	4
+REVISION=	5
 
 CATEGORIES =	games
 
@@ -15,7 +15,8 @@ MAINTAINER =	Matthias Kilian <kili@openbsd.org>
 # LGPLv2.1, BSD, GPLv2, "Public Domain", "Fair use".
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB =	SDL SDL_image SDL_mixer SDL_net SDL_ttf c m pthread stdc++ z
+WANTLIB =	SDL SDL_image SDL_mixer SDL_net SDL_ttf c m pthread z
+WANTLIB+=	c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=blobwars/}
 

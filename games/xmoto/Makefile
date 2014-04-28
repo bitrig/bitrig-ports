@@ -6,6 +6,7 @@ V =	 	0.5.10
 DISTNAME =	xmoto-${V}-src
 PKGNAME =	xmoto-${V}
 CATEGORIES =	games
+REVISION =	0
 
 MAINTAINER =	Antti Harri <iku@openbsd.fi>
 HOMEPAGE =	http://xmoto.tuxfamily.org/
@@ -16,7 +17,8 @@ MASTER_SITES =	http://download.tuxfamily.org/xmoto/xmoto/${V}/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL GLU SDL SDL_mixer SDL_net SDL_ttf X11 bz2 c curl jpeg
-WANTLIB += ${MODLUA_WANTLIB} m ode png pthread sqlite3 stdc++ xdg-basedir xml2 z
+WANTLIB += ${MODLUA_WANTLIB} m ode png pthread sqlite3 xdg-basedir xml2 z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		lang/lua

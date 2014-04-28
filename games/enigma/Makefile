@@ -5,7 +5,7 @@ COMMENT=	Oxyd/Rock'n'Roll clone
 V=		1.01
 DISTNAME=	enigma-${V}-64bit
 PKGNAME=	enigma-${V}
-REVISION =	3
+REVISION =	4
 
 CATEGORIES=	games x11
 
@@ -14,9 +14,10 @@ HOMEPAGE=	http://www.nongnu.org/enigma/
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB=	SDL c m enet pthread stdc++ z SDL_image>=1 \
+WANTLIB=	SDL c m enet pthread z SDL_image>=1 \
 		SDL_mixer>=2 SDL_ttf>=7 png>=8 zipios>=1 \
 		xerces-c
+WANTLIB+=	c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_BERLIOS:=enigma-game/}
 

@@ -6,14 +6,17 @@ DISTNAME =	cosmosmash-1.4.7
 
 CATEGORIES=	games
 
+REVISION=	0
+
 HOMEPAGE=	http://sarrazip.com/dev/cosmosmash.html
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB += SDL SDL_image SDL_mixer c flatzebra-0.1 m pthread stdc++
+WANTLIB += SDL SDL_image SDL_mixer c flatzebra-0.1 m pthread
 WANTLIB += FLAC jpeg mikmod ogg png smpeg sndio tiff usbhid
 WANTLIB += vorbis vorbisfile webp z
+WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=	http://sarrazip.com/dev/
 

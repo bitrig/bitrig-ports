@@ -3,14 +3,15 @@
 COMMENT=	sdl shoot 'em up; stop evil army from getting your oil
 DISTNAME=	OilWar-1.2.1
 PKGNAME=	${DISTNAME:L}
-REVISION =	4
+REVISION =	5
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_BACKUP}
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	SDL c m pthread stdc++ SDL_image SDL_mixer
+WANTLIB=	SDL c m pthread SDL_image SDL_mixer
+WANTLIB+=	c++ c++abi
 
 NO_TEST=     Yes
 

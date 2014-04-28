@@ -6,14 +6,17 @@ DISTNAME =		pushover-0.0.5
 
 CATEGORIES =		games
 
+REVISION =		0
+
 HOMEPAGE =		http://pushover.sourceforge.net/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += FLAC SDL SDL_mixer SDL_ttf c freetype m mikmod ogg
-WANTLIB += png pthread smpeg sndio stdc++ usbhid vorbis vorbisfile z
+WANTLIB += png pthread smpeg sndio usbhid vorbis vorbisfile z
 WANTLIB += ${MODLUA_WANTLIB}
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=pushover/}
 

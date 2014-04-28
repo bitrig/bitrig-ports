@@ -4,7 +4,7 @@ COMMENT =	infinite-world block sandbox game
 V =		0.4.9
 DISTNAME =	minetest-${V}
 CATEGORIES =	games x11
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	http://www.minetest.net/
 
@@ -29,7 +29,8 @@ LIB_DEPENDS =	audio/openal \
 BUILD_DEPENDS +=	x11/irrlicht
 
 WANTLIB += GL GLU ICE SM X11 Xext Xxf86vm bz2 c curl jpeg m ogg openal
-WANTLIB += png pthread sqlite3 stdc++ vorbis vorbisfile z GLESv2
+WANTLIB += png pthread sqlite3 vorbis vorbisfile z GLESv2
+WANTLIB += c++ c++abi
 
 NO_TEST =	Yes
 

@@ -4,6 +4,7 @@ V =		2.1
 COMMENT =	scrabble game
 DISTNAME =	eliot-${V}
 CATEGORIES =	games
+REVISION=	0
 
 HOMEPAGE =	http://nongnu.org/eliot/
 MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
@@ -33,8 +34,9 @@ BUILD_DEPENDS =	devel/boost \
 		devel/libexecinfo
 RUN_DEPENDS =	devel/desktop-file-utils
 LIB_DEPENDS =	textproc/arabica devel/libconfig
-WANTLIB +=	lib/qt4/QtGui lib/qt4/QtNetwork c m pthread stdc++
+WANTLIB +=	lib/qt4/QtGui lib/qt4/QtNetwork c m pthread
 WANTLIB +=	arabica config++ expat ncursesw
+WANTLIB +=	c++ c++abi
 
 post-configure:
 	${SUBST_CMD} ${WRKSRC}/qt/main_window.cpp

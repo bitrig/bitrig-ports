@@ -6,6 +6,7 @@ DISTFILES =	easyrpg-player-{}${V}.tar.gz:0 \
 		easyrpg-readers-{}${V}.tar.gz:1
 PKGNAME =	easyrpg-${V}
 CATEGORIES =	games x11
+REVISION =	0
 
 HOMEPAGE =	https://easy-rpg.org/
 
@@ -15,7 +16,8 @@ MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 PERMIT_PACKAGE_CDROM =		Yes
 
 WANTLIB += FLAC SDL SDL_mixer c expat freetype jpeg m ogg openal
-WANTLIB += pixman-1 png pthread sndfile stdc++ vorbis vorbisenc z
+WANTLIB += pixman-1 png pthread sndfile ++ vorbis vorbisenc z
+WANTLIB += c++ c++abi
 
 MASTER_SITES0 =	https://github.com/EasyRPG/Player/archive/
 MASTER_SITES1 =	https://github.com/EasyRPG/Readers/archive/

@@ -4,11 +4,13 @@ COMMENT =		hexagonal tile-based puzzle game
 DISTNAME =		hex-a-hop-1.1.0
 CATEGORIES =		games
 HOMEPAGE =		http://hexahop.sourceforge.net
+REVISION =		0
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		SDL SDL_mixer SDL_ttf c m pthread stdc++
+WANTLIB =		SDL SDL_mixer SDL_ttf c m pthread
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=hexahop/}
 

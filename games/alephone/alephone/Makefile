@@ -8,6 +8,7 @@ PKGNAME =		alephone-1.1
 
 EXTRACT_SUFX =		.tar.bz2
 CATEGORIES =		games x11
+REVISION =	0
 
 HOMEPAGE =		http://source.bungie.org
 
@@ -18,10 +19,11 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=marathon/}
 
-WANTLIB +=		GL GLU c m pthread stdc++ z
+WANTLIB +=		GL GLU c m pthread z
 WANTLIB +=		SDL SDL_net SDL_image SDL_ttf mad png sndfile
 WANTLIB +=		smpeg speex speexdsp vorbisfile zzip
-WANTLIB += avcodec avformat avutil swscale
+WANTLIB +=		avcodec avformat avutil swscale
+WANTLIB +=		c++ c++abi pthread
 
 BUILD_DEPENDS =		devel/automake/${AUTOMAKE_VER} \
 			devel/autoconf/${AUTOCONF_VER} \

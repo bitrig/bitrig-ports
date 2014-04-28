@@ -4,7 +4,7 @@ COMMENT=	graphical adventure game interpreter
 DISTNAME=	scummvm-1.6.0
 CATEGORIES=	games x11 emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scummvm/}
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://scummvm.sourceforge.net/
 
@@ -13,8 +13,9 @@ MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += FLAC SDL c faad freetype m mad png pthread sndio stdc++
+WANTLIB += FLAC SDL c faad freetype m mad png pthread sndio
 WANTLIB += theoradec z
+WANTLIB += c++ c++abi
 
 .if ${MACHINE_ARCH} == "i386"
 BUILD_DEPENDS=	devel/nasm

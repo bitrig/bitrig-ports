@@ -7,6 +7,7 @@ DISTNAME= 	widelands-build${V}-src
 PKGNAME=	widelands-0.${V}
 CATEGORIES=	games
 EXTRACT_SUFX=	.tar.bz2
+REVISION =	0
 
 HOMEPAGE=	http://widelands.org/
 
@@ -20,7 +21,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 BUILD_DEPENDS =	devel/boost
 
 WANTLIB +=	GL GLEW SDL SDL_gfx SDL_image SDL_mixer SDL_net SDL_ttf
-WANTLIB +=	c m png pthread stdc++ z execinfo ${MODLUA_WANTLIB}
+WANTLIB +=	c m png pthread z execinfo ${MODLUA_WANTLIB}
+WANTLIB +=	c++ c++abi
 
 LIB_DEPENDS =	devel/libexecinfo \
 		devel/sdl-gfx \

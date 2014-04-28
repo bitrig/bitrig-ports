@@ -3,12 +3,13 @@
 COMMENT =		3D real-time strategy game
 DISTNAME =		megaglest-source-${V}
 PKGNAME =		megaglest-${V}
-REVISION =		2
+REVISION =		3
 
 WANTLIB += GL GLU GLEW ICE SDL SM X11 Xext c crypto curl fontconfig ftgl
 WANTLIB += freetype idn ircclient jpeg ${MODLUA_WANTLIB}
-WANTLIB += m miniupnpc ogg openal png pthread ssl stdc++ vlc vlccore vorbis
+WANTLIB += m miniupnpc ogg openal png pthread ssl vlc vlccore vorbis
 WANTLIB += vorbisfile wx_base wx_gtk2_core wx_gtk2_gl xerces-c z
+WANTLIB += c++ c++abi
 
 MODULES =		devel/gettext \
 			lang/lua

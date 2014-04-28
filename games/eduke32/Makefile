@@ -25,7 +25,8 @@ BUILD_DEPENDS = archivers/unzip \
 BUILD_DEPENDS += devel/nasm
 .endif
 
-WANTLIB =	SDL c m pthread stdc++ SDL_mixer>=3 vorbisfile vpx
+WANTLIB =	SDL c m pthread SDL_mixer>=3 vorbisfile vpx
+WANTLIB +=	c++ c++abi
 
 LIB_DEPENDS =	audio/libvorbis \
 		multimedia/libvpx \

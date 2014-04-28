@@ -4,13 +4,14 @@ COMMENT=	puzzle game for KDE
 
 DISTNAME=	kslide-1.0.1
 CATEGORIES=	games
+REVISION =	0
 
 HOMEPAGE=	http://kde-apps.org/content/show.php/KSlide?content=10317
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=  Yes
 
-WANTLIB =  c expat m pthread pthread-stubs stdc++ util z
+WANTLIB =  c expat m pthread pthread-stubs util z
 WANTLIB += GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft
 WANTLIB += Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm
 WANTLIB += X11-xcb Xau Xdmcp drm glapi xcb xcb-dri2 xcb-glx
@@ -18,6 +19,7 @@ WANTLIB += fontconfig freetype
 WANTLIB += art_lgpl_2 fam idn jpeg lcms mng png
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=4 ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kwalletclient
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${_MASTER_SITE_FREEBSD}
 EXTRACT_SUFX=	.tar.bz2

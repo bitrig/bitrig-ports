@@ -14,7 +14,7 @@ MULTI_PACKAGES=	-main -data
 
 N=		redeclipse
 V=		1.4
-REVISION-main=	2
+REVISION-main=	3
 REVISION-data=	2
 PKGNAME=	${N}-${V}
 PKGNAME-main=	${N}-${V}
@@ -35,7 +35,8 @@ BUILD_DEPENDS=		textproc/gsed
 LIB_DEPENDS-main=	devel/sdl-mixer \
 			devel/sdl-image \
 			net/enet
-WANTLIB-main+=		GL X11 SDL SDL_image SDL_mixer c enet m pthread stdc++ z
+WANTLIB-main+=		GL X11 SDL SDL_image SDL_mixer c enet m pthread z
+WANTLIB-main+=		c++ c++abi
 
 WRKDIST=		${WRKDIR}/${N}-${V}/src
 USE_GMAKE=		Yes

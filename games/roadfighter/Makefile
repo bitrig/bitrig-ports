@@ -4,7 +4,7 @@ COMMENT=	remake of Konami's Road Fighter
 
 DISTNAME=	roadfighter.src_1.0.1269
 PKGNAME=	${DISTNAME:S/.src_/-/}
-REVISION =	0
+REVISION =	1
 WRKDIST=	${WRKDIR}/${DISTNAME:S/.src_/-/}
 
 EXTRACT_SUFX=	.tgz
@@ -24,6 +24,7 @@ LIB_DEPENDS=	devel/sdl-sound \
 		devel/sdl-image \
 		devel/sdl-ttf \
 		devel/sdl-mixer
-WANTLIB=	SDL c stdc++ m pthread SDL_sound SDL_image SDL_ttf SDL_mixer
+WANTLIB=	SDL c m pthread SDL_sound SDL_image SDL_ttf SDL_mixer
+WANTLIB+=	c++ c++abi
 
 .include <bsd.port.mk>

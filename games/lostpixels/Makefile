@@ -7,7 +7,7 @@ COMMENT =		blinkensisters - hunt for the lost pixels
 V =			0.5.3
 DISTNAME =		LostPixels-${V}-source-with-addons
 PKGNAME =		lostpixels-${V}
-REVISION =		4
+REVISION =		5
 HOMEPAGE =		http://www.blinkensisters.org
 
 CATEGORIES =		games
@@ -23,7 +23,8 @@ LIB_DEPENDS =		devel/sdl-net		\
 			devel/sdl-ttf
 
 WANTLIB +=		SDL SDL_image SDL_mixer SDL_net SDL_ttf X11 Xau
-WANTLIB +=		Xdmcp Xext Xrandr Xrender c freetype m pthread stdc++
+WANTLIB +=		Xdmcp Xext Xrandr Xrender c freetype m pthread
+WANTLIB +=		c++ c++abi
 
 USE_GMAKE =		Yes
 MODULES +=		devel/cmake \

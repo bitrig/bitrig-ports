@@ -3,7 +3,7 @@
 COMMENT=	breakout game for the X Window System
 
 DISTNAME=	xbreaky-0.0.5
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games x11
 MASTER_SITES=	${HOMEPAGE}
 
@@ -13,7 +13,8 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes
-WANTLIB=		X11 Xpm c m pthread-stubs sndio stdc++ xcb
+WANTLIB=		X11 Xpm c m pthread-stubs sndio xcb
+WANTLIB+=		c++ c++abi
 
 USE_GROFF =	Yes
 

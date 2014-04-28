@@ -5,7 +5,7 @@ COMMENT=		2D games framework for use with Lua
 V=			0.8.0
 DISTNAME=		love-$V-linux-src
 PKGNAME=		love-$V
-REVISION=		4
+REVISION=		5
 
 HOMEPAGE=		http://love2d.org/
 
@@ -23,8 +23,9 @@ MODULES=		converters/libiconv \
 WANTLIB += GL Half IL Iex IlmImf IlmThread Imath SDL X11 Xdamage
 WANTLIB += Xext Xfixes Xxf86vm c drm freetype jasper jpeg lcms
 WANTLIB += ltdl ${MODLUA_WANTLIB} m modplug mpg123 ogg openal physfs
-WANTLIB += png pthread sndio stdc++ tiff usbhid vorbis vorbisfile
+WANTLIB += png pthread sndio tiff usbhid vorbis vorbisfile
 WANTLIB += xcb z mng
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=		audio/libmodplug \
 			audio/mpg123 \

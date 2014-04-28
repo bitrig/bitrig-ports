@@ -5,6 +5,7 @@ COMMENT =	third person, 3D physics game
 DISTNAME =	irrlamb-${V}-src
 PKGNAME =	irrlamb-${V}
 CATEGORIES =	games x11
+REVISION =	0
 
 HOMEPAGE =	https://code.google.com/p/irrlamb/
 
@@ -14,7 +15,8 @@ MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 PERMIT_PACKAGE_CDROM =		Yes
 
 WANTLIB += BulletCollision BulletDynamics BulletSoftBody Irrlicht
-WANTLIB += LinearMath c m openal pthread stdc++
+WANTLIB += LinearMath c m openal pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	https://irrlamb.googlecode.com/files/
 

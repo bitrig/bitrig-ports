@@ -6,6 +6,8 @@ PKGNAME =		dangerdeep-0.3.99.3327
 
 CATEGORIES =		games
 
+REVISION =		0
+
 HOMEPAGE =		http://dangerdeep.sourceforge.net/
 
 # Code GPLv2+
@@ -14,8 +16,9 @@ HOMEPAGE =		http://dangerdeep.sourceforge.net/
 PERMIT_PACKAGE_CDROM =	Noncommercial
 PERMIT_PACKAGE_FTP =	Yes
 
-WANTLIB += GL GLU SDL SDL_image SDL_mixer bz2 c fftw3f m stdc++
+WANTLIB += GL GLU SDL SDL_image SDL_mixer bz2 c fftw3f m
 WANTLIB += pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=dangerdeep/}
 DISTFILES =		dangerdeep-0.4.0_pre3327.tar.gz \

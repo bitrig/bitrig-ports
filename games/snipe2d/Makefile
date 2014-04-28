@@ -5,7 +5,7 @@ COMMENT =		overhead shooting game
 V = 			1.30
 DISTNAME =		orbital_eunuchs_sniper-${V}
 PKGNAME = 		snipe2d-${V}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		games
 
@@ -16,7 +16,8 @@ MAINTAINER =		Edd Barrett <edd@openbsd.org>
 # zlib-a-like - see COPYING in sources
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=		SDL c m pthread stdc++ SDL_image>=2 SDL_mixer>=3
+WANTLIB +=		SDL c m pthread SDL_image>=2 SDL_mixer>=3
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://icculus.org/oes/
 

@@ -8,6 +8,7 @@ DISTNAME=	warzone2100-3.1.1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=warzone2100/}
 EXTRACT_SUFX=	.tar.xz
+REVISION =	0
 
 HOMEPAGE=	http://wz2100.net/
 
@@ -15,8 +16,9 @@ HOMEPAGE=	http://wz2100.net/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += GL GLEW GLU QtNetwork QtScript SDL X11 Xrandr c fontconfig
-WANTLIB += freetype fribidi m ogg openal physfs png pthread stdc++
+WANTLIB += freetype fribidi m ogg openal physfs png pthread
 WANTLIB += theora vorbis vorbisfile z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		x11/qt4

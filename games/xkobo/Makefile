@@ -3,7 +3,7 @@
 COMMENT=	multi-way scrolling shoot'em up for X11, addictive
 
 DISTNAME=	xkobo-1.11
-REVISION =	3
+REVISION =	4
 CATEGORIES=	games
 
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=games/}  \
@@ -21,7 +21,8 @@ MAINTAINER=	Marc Espie <espie@openbsd.org>
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 	
-WANTLIB=	X11 Xau Xdmcp Xext c m pthread-stubs stdc++ xcb
+WANTLIB=	X11 Xau Xdmcp Xext c m pthread-stubs xcb
+WANTLIB+=	c++ c++abi
 
 CONFIGURE_STYLE=	imake
 

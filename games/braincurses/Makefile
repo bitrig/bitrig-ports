@@ -5,6 +5,7 @@ COMMENT=	clone of the Mastermind game
 DISTNAME=	braincurses-0.5b
 CATEGORIES=	games
 HOMEPAGE=	http://sourceforge.net/projects/braincurses/
+REVISION=	0
 
 MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
@@ -13,7 +14,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=braincurses/}
 
-WANTLIB=	c m ncurses stdc++
+WANTLIB=	c m ncurses
+WANTLIB+=	c++ c++abi pthread
 
 do-build:
 	cd ${WRKBUILD} && ${CXX} ${CXXFLAGS} -o braincurses \

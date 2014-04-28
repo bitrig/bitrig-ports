@@ -14,7 +14,8 @@ MULTI_PACKAGES=	-main -data
 
 N=		sauerbraten
 V=		20130203
-REVISION=	0
+REVISION-main=	1
+REVISION-data=	0
 PKGNAME=	${N}-${V}
 PKGNAME-main=	${N}-${V}
 PKGNAME-data=	${N}-data-${V}
@@ -38,7 +39,8 @@ RUN_DEPENDS-main +=	${BASE_PKGPATH},-data
 LIB_DEPENDS-main=	devel/sdl-mixer \
 			devel/sdl-image \
 			net/enet
-WANTLIB-main=		GL X11 SDL SDL_image SDL_mixer c enet m pthread stdc++ z
+WANTLIB-main=		GL X11 SDL SDL_image SDL_mixer c enet m pthread z
+WANTLIB-main+=		c++ c++abi
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sauer_client ${PREFIX}/libexec

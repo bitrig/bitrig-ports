@@ -16,6 +16,8 @@ DIST_SUBDIR=	openttd
 
 CATEGORIES=	games
 
+REVISION=	0
+
 HOMEPAGE=	https://www.openttd.org/en/
 
 MAINTAINER =	Anthony J. Bentley <anthony@cathet.us>
@@ -24,7 +26,8 @@ MAINTAINER =	Anthony J. Bentley <anthony@cathet.us>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += SDL c fontconfig freetype icudata icui18n icuuc
-WANTLIB += icule iculx lzma lzo2 m png pthread stdc++ xdg-basedir z
+WANTLIB += icule iculx lzma lzo2 m png pthread xdg-basedir z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		http://binaries.openttd.org/releases/${V}/
 MASTER_SITES0=		https://bundles.openttdcoop.org/opengfx/releases/${GFX_V}/

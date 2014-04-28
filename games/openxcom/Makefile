@@ -3,7 +3,7 @@
 BROKEN-alpha =	OOM on XcomRuleset.cpp
 COMMENT =		open source reimplementation of the original X-Com
 DISTNAME =		openxcom-20120217
-REVISION =		0
+REVISION =		1
 CATEGORIES =		games x11
 
 HOMEPAGE =		http://openxcom.ninex.info/
@@ -12,7 +12,8 @@ MAINTAINER =		Antti Harri <iku@openbsd.fi>
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		SDL SDL_gfx SDL_mixer c m pthread stdc++ yaml-cpp
+WANTLIB =		SDL SDL_gfx SDL_mixer c m pthread yaml-cpp
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://openbsd.fi/dist/
 

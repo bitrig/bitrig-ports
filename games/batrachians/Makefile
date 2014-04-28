@@ -4,6 +4,7 @@ COMMENT=	clone of the classic Frog Bog game
 
 DISTNAME =	batrachians-0.1.6
 CATEGORIES=	games
+REVISION=	0
 
 HOMEPAGE=	http://sarrazip.com/dev/batrachians.html
 
@@ -12,7 +13,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	http://sarrazip.com/dev/
 
-WANTLIB=	SDL SDL_image SDL_mixer c m pthread stdc++ flatzebra-0.1>=1
+WANTLIB=	SDL SDL_image SDL_mixer c m pthread flatzebra-0.1>=1
+WANTLIB+=	c++ c++abi
 
 RUN_DEPENDS=	devel/desktop-file-utils
 LIB_DEPENDS=	devel/flatzebra>=0.1.5

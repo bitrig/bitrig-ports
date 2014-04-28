@@ -3,7 +3,7 @@
 COMMENT =		commander keen clone
 DISTNAME =		clonekeen-src-84
 PKGNAME =		clonekeen-8.4
-REVISION =		1
+REVISION =		2
 CATEGORIES =		games
 
 WRKDIST = 		${WRKDIR}/keen
@@ -17,7 +17,8 @@ MAINTAINER =		Edd Barrett <edd@openbsd.org>
 PERMIT_PACKAGE_CDROM =	Yes
 
 LIB_DEPENDS = 		devel/sdl
-WANTLIB =		SDL c m pthread stdc++
+WANTLIB =		SDL c m pthread
+WANTLIB+=		c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=clonekeen/}
 

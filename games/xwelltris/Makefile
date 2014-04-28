@@ -4,7 +4,7 @@ COMMENT=	2.5 dimensional tetris-like game
 
 DISTNAME=	xwelltris-1.0.1
 DISTFILES=	${DISTNAME}.src.tar.gz
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games x11
 MASTER_SITES=	${HOMEPAGE}src/
 
@@ -13,7 +13,8 @@ HOMEPAGE=	http://xnc.jinr.ru/xwelltris/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m stdc++
+WANTLIB=	c m
+WANTLIB+=	c++ c++abi
 
 NO_TEST=	Yes
 

@@ -3,7 +3,7 @@
 COMMENT=	city simulation game
 
 DISTNAME=	lincity-ng-2.0
-REVISION =	4
+REVISION =	5
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	games x11
 
@@ -14,8 +14,9 @@ MASTER_SITES=	${MASTER_SITE_BERLIOS:=lincity-ng/}
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	GL SDL X11 c m pthread pthread-stubs stdc++ xcb z \
+WANTLIB=	GL SDL X11 c m pthread pthread-stubs xcb z \
 		SDL_gfx SDL_image SDL_mixer SDL_ttf physfs xml2
+WANTLIB+=	c++ c++abi
 
 MODULES=	devel/gettext
 

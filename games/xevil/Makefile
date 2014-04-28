@@ -6,7 +6,7 @@ COMMENT=	side-view, fast-action, kill everything type of game
 V=		2.02r2
 DISTNAME=	xevilsrc${V}
 PKGNAME=	xevil-${V}
-REVISION =	1
+REVISION =	2
 
 CATEGORIES=	games
 
@@ -17,7 +17,8 @@ EXTRACT_SUFX=	.zip
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	X11 Xpm c m pthread-stubs stdc++ xcb
+WANTLIB=	X11 Xpm c m pthread-stubs xcb
+WANTLIB+=	c++ c++abi
 
 USE_GMAKE=	Yes
 

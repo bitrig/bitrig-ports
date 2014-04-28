@@ -4,7 +4,7 @@ COMMENT =		3D light cycle game
 
 DISTNAME =		armagetronad-0.2.8.3.2.src
 PKGNAME =		${DISTNAME:S/.src//}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		games
 
@@ -14,7 +14,8 @@ HOMEPAGE =		http://armagetronad.org/
 PERMIT_PACKAGE_CDROM =		Yes
 
 WANTLIB +=		GL GLU SDL SDL_image SDL_mixer c jpeg m png pthread
-WANTLIB +=		stdc++ xml2 z
+WANTLIB +=		xml2 z
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=armagetronad/}
 

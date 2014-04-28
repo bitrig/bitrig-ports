@@ -4,13 +4,15 @@ COMMENT=	drive a toy wood engine
 
 DISTNAME=	Ri-li-2.0.1
 CATEGORIES=	games
+REVISION =	0
 
 HOMEPAGE=	http://ri-li.sourceforge.net
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += SDL SDL_mixer c m pthread stdc++
+WANTLIB += SDL SDL_mixer c m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ri-li/}
 EXTRACT_SUFX=	.tar.bz2

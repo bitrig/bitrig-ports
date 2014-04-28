@@ -5,7 +5,7 @@ COMMENT =	platform game featuring buggers equipped with weapons
 V =		0.5.2
 DISTNAME =	teeworlds-${V}-src
 PKGNAME =	teeworlds-${V}
-REVISION =	4
+REVISION =	5
 CATEGORIES =	games
 
 MAINTAINER =	Jonathan Armani <armani@openbsd.org>
@@ -21,7 +21,8 @@ DISTFILES =	${DISTNAME}${EXTRACT_SUFX} bam-${BAM_VERSION}${EXTRACT_SUFX}
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	GL GLU SDL X11 c m pthread stdc++ z
+WANTLIB =	GL GLU SDL X11 c m pthread z
+WANTLIB +=	c++ c++abi
 LIB_DEPENDS =	devel/sdl
 
 MODULES =	lang/python

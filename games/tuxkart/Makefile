@@ -3,7 +3,7 @@
 COMMENT =	tuxkart is a simple Go-Kart racing game.
 
 DISTNAME =	tuxkart-0.4.0
-REVISION =	2
+REVISION =	3
 CATEGORIES =	games
 
 HOMEPAGE =	http://tuxkart.sourceforge.net/
@@ -15,7 +15,8 @@ MAINTAINER =	Gallon Sylvestre <ccna.syl@gmail.com>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		GL ICE SM X11 Xext Xi Xmu c m pthread pthread-stubs \
-			sndio stdc++ xcb
+			sndio xcb
+WANTLIB +=		c++ c++abi
 
 BUILD_DEPENDS =		devel/plib
 

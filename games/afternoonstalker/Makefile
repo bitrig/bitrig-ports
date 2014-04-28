@@ -6,12 +6,15 @@ DISTNAME=	afternoonstalker-1.1.5
 
 CATEGORIES=	games
 
+REVISION=	0
+
 HOMEPAGE=	http://sarrazip.com/dev/afternoonstalker.html
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB += SDL SDL_image SDL_mixer c flatzebra-0.1 m pthread stdc++
+WANTLIB += SDL SDL_image SDL_mixer c flatzebra-0.1 m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://sarrazip.com/dev/
 

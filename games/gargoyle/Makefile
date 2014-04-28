@@ -7,7 +7,7 @@ COMMENT =	cross-platform interactive fiction player
 DISTNAME =	gargoyle-2011.1-sources
 PKGNAME =	gargoyle-2011.1
 EPOCH =		0
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	games x11
 
@@ -25,8 +25,9 @@ WANTLIB += SDL SDL_mixer SDL_sound X11 Xcomposite Xcursor Xdamage
 WANTLIB += Xext Xfixes Xi Xinerama Xrandr Xrender atk-1.0 c cairo
 WANTLIB += expat fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gobject-2.0 gtk-x11-2.0 jpeg m pango-1.0
-WANTLIB += pangocairo-1.0 pangoft2-1.0 png pthread smpeg stdc++
+WANTLIB += pangocairo-1.0 pangoft2-1.0 png pthread smpeg
 WANTLIB += vorbisfile z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	https://garglk.googlecode.com/files/
 EXTRACT_SUFX =	.zip

@@ -17,6 +17,8 @@ PKGNAME-data =		speeddreams-data-$V
 
 CATEGORIES =		games
 
+REVISION-main =		0
+
 HOMEPAGE =		http://www.speed-dreams.org/
 
 MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
@@ -25,7 +27,8 @@ MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB-main += GL GLU ICE SDL SM X11 Xext Xrandr c enet jpeg m openal
-WANTLIB-main += png pthread stdc++ z
+WANTLIB-main += png pthread z
+WANTLIB-main += c++ c++abi
 WANTLIB-data = #empty
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=speed-dreams/}

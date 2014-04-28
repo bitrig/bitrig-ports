@@ -3,6 +3,7 @@
 COMMENT =	puzzle game collecting diamonds and avoiding obstacles
 DISTNAME =	xye-0.12.2
 CATEGORIES =	games x11
+REVISION =	0
 
 HOMEPAGE =	http://xye.sourceforge.net/
 
@@ -13,7 +14,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=xye/}
 
-WANTLIB += SDL SDL_image SDL_ttf c m pthread stdc++
+WANTLIB += SDL SDL_image SDL_ttf c m pthread
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS =	devel/sdl-image \
 		devel/sdl-ttf

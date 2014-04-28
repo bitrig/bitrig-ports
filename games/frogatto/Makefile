@@ -6,7 +6,7 @@ COMMENT=	2D adventure platformer game
 
 # repackaged source from github minus the MacOS* dirs
 DISTNAME=	frogatto-1.3.20130317
-REVISION=	1
+REVISION=	2
 MASTER_SITES=	https://distfiles.bsdfrog.org/
 EXTRACT_SUFX=	.tar.bz2
 
@@ -21,7 +21,8 @@ PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB += GL GLEW GLU SDL SDL_image SDL_mixer SDL_ttf X11 boost_iostreams-mt
 WANTLIB += boost_regex-mt boost_system-mt boost_thread-mt c jpeg
-WANTLIB += m png pthread stdc++ tiff webp z
+WANTLIB += m png pthread tiff webp z
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	devel/sdl-image \
 		devel/sdl-mixer \

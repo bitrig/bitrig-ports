@@ -8,7 +8,7 @@ DISTNAME=	bzflag-2.4.2
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bzflag/}
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.bzflag.org/
 
@@ -17,7 +17,8 @@ PERMIT_PACKAGE_CDROM=   Yes
 
 WANTLIB += GL GLEW GLU ICE SDL SM X11 Xdamage Xext Xfixes Xi Xmu
 WANTLIB += Xt Xxf86vm c cares crypto curl drm idn m ncurses pthread
-WANTLIB += sndio ssl stdc++ usbhid xcb z
+WANTLIB += sndio ssl usbhid xcb z
+WANTLIB += c++ c++abi pthread
 
 MODULES=	devel/gettext
 LIB_DEPENDS=	devel/sdl \

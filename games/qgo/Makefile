@@ -3,7 +3,7 @@
 COMMENT=	go client and fully featured sgf editor
 
 DISTNAME=	qgo-1.5.4
-REVISION =	4
+REVISION =	5
 CATEGORIES=	games
 
 # GPL
@@ -11,7 +11,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB = GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm c drm expat fontconfig
 WANTLIB += freetype jpeg lcms m mng png pthread pthread-stubs
-WANTLIB += stdc++ xcb z
+WANTLIB += xcb z
+WANTLIB += c++ c++abi
 
 MODULES=	x11/qt3
 

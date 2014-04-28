@@ -2,6 +2,7 @@
 
 COMMENT = 	dungeon crawl stone soup
 CATEGORIES = 	games
+REVISION =	0
 
 HOMEPAGE = 	http://crawl.develz.org/
 MASTER_SITES = 	${MASTER_SITE_SOURCEFORGE:=crawl-ref/}
@@ -29,7 +30,8 @@ MAKE_FLAGS = 	CC="${CC}" CXX="${CXX}" \
 
 MAKE_ENV +=	MODLUA_DEP_VERSION=${MODLUA_DEP_VERSION}
 MODULES = 	lang/lua
-WANTLIB = 	c m stdc++ ${MODLUA_WANTLIB} sqlite3
+WANTLIB = 	c m ${MODLUA_WANTLIB} sqlite3
+WANTLIB +=		c++ c++abi
 
 BUILD_DEPENDS = devel/bison \
 		graphics/pngcrush

@@ -11,6 +11,7 @@ MULTI_PACKAGES =	-main -npcomplete
 
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	games
+REVISION-main =	0
 
 MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
@@ -25,7 +26,8 @@ DISTFILES =	${DISTNAME}${EXTRACT_SUFX} \
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB-main =		SDL SDL_image SDL_ttf X11 c m \
-			pthread stdc++ z
+			pthread z
+WANTLIB-main +=		c++ c++abi
 
 RUN_DEPENDS-main =	devel/desktop-file-utils \
 			x11/gtk+2,-guic

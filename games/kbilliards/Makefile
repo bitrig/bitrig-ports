@@ -3,7 +3,7 @@
 COMMENT= 		billiard game
 CATEGORIES=		x11 x11/kde games
 DISTNAME=		kbilliards-0.8.7b
-REVISION =		11
+REVISION =		12
 
 HOMEPAGE=		http://www.hostnotfound.it/kbilliards.php
 MASTER_SITES=		http://www.hostnotfound.it/kbilliards/
@@ -15,13 +15,14 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB =	FLAC ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2
 WANTLIB +=	audiofile bz2 c expat fam fontconfig freetype glib-2.0
 WANTLIB +=	gmodule-2.0 gthread-2.0 idn m mad ogg pcre png 
-WANTLIB +=	pthread pthread-stubs sndio stdc++ util vorbis
+WANTLIB +=	pthread pthread-stubs sndio util vorbis
 WANTLIB +=	vorbisenc vorbisfile xcb z
 WANTLIB +=	${KDE}/DCOP ${KDE}/artsflow ${KDE}/artsflow_idl
 WANTLIB +=	${KDE}/artskde ${KDE}/kdecore>=6 ${KDE}/kdefx
 WANTLIB +=	${KDE}/kdeprint ${KDE}/kdesu ${KDE}/kdeui ${KDE}/kio
 WANTLIB +=	${KDE}/kmedia2_idl ${KDE}/kparts ${KDE}/kwalletclient
 WANTLIB +=	${KDE}/mcop ${KDE}/qtmcop ${KDE}/soundserver_idl 
+WANTLIB +=	c++ c++abi
 
 MODULES=		x11/kde	devel/gettext
 

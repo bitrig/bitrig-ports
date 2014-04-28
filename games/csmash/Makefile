@@ -3,7 +3,7 @@
 COMMENT=	Cannon Smash 3D table tennis
 
 DISTNAME=	csmash-0.6.6
-REVISION=	6
+REVISION=	7
 CATEGORIES=	games
 HOMEPAGE=	http://cannonsmash.sourceforge.net/
 
@@ -26,8 +26,9 @@ WANTLIB+=	GL GLU ICE Xcomposite Xcursor Xdamage Xfixes \
 		Xi Xinerama Xmu Xrandr Xrender Xt atk-1.0 c cairo \
 		fontconfig freetype gio-2.0 glib-2.0 \
 		gobject-2.0 pango-1.0 pangocairo-1.0 pangoft2-1.0 \
-		pthread stdc++ z X11 Xext m SDL \
+		pthread z X11 Xext m SDL \
 		gdk_pixbuf-2.0 SDL_image SDL_mixer gdk-x11-2.0 gtk-x11-2.0
+WANTLIB+=	c++ c++abi
 
 CONFIGURE_STYLE= gnu
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

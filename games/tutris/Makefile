@@ -3,13 +3,14 @@
 COMMENT=	graphical tetris clone
 DISTNAME=	Tutris-1.0.1
 PKGNAME =	${DISTNAME:L}
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games x11
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=	SDL X11 Xext c m pthread pthread-stubs stdc++ usbhid xcb \
+WANTLIB=	SDL X11 Xext c m pthread pthread-stubs usbhid xcb \
 		SDL_image
+WANTLIB+=	c++ c++abi
 
 LIB_DEPENDS=	devel/sdl-image
 

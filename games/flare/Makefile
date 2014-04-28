@@ -7,6 +7,8 @@ PKGNAME =		flare-${V}
 
 CATEGORIES =		games
 
+REVISION =		0
+
 HOMEPAGE =		http://flarerpg.org
 
 # code GPLv3+, data CC BY-SA 3.0+
@@ -14,7 +16,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
-WANTLIB +=		SDL SDL_image SDL_mixer SDL_ttf c m pthread stdc++
+WANTLIB +=		SDL SDL_image SDL_mixer SDL_ttf c m pthread
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=flare-game/}
 DISTFILES =		flare-engine.${V}.tar.gz \

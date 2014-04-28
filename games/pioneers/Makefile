@@ -4,7 +4,7 @@ COMMENT=	Settlers of Catan for GNOME/Gtk
 
 GNOME_PROJECT=	pioneers
 GNOME_VERSION=	14.1
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	games
 
@@ -23,8 +23,9 @@ WANTLIB += freetype gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0
 WANTLIB += glib-2.0 gmodule-2.0 gnome-2 gnomevfs-2 gobject-2.0
 WANTLIB += gthread-2.0 gtk-x11-2.0 ltdl m ogg pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png popt pthread pthread-stubs
-WANTLIB += ssl stdc++ util vorbis vorbisfile xcb xcb-render xcb-shm
+WANTLIB += ssl util vorbis vorbisfile xcb xcb-render xcb-shm
 WANTLIB += xml2 z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pio/}
 

@@ -7,6 +7,7 @@ PKGNAME =	abuse-0.8
 EPOCH =		0
 ABUSE_SFX =	abuse-free-sounds-20120309
 CATEGORIES =	games x11
+REVISION =	0
 
 HOMEPAGE =	http://abuse.zoy.org/
 
@@ -18,7 +19,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += FLAC GL SDL SDL_mixer X11 Xdamage Xext Xfixes Xrandr
 WANTLIB += Xrender Xxf86vm c drm iconv m mikmod ogg pthread smpeg
-WANTLIB += sndio stdc++ usbhid vorbis vorbisfile xcb
+WANTLIB += sndio usbhid vorbis vorbisfile xcb
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${HOMEPAGE}raw-attachment/wiki/download/
 MASTER_SITES0 =	http://openbsd.fi/dist/

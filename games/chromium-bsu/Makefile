@@ -4,6 +4,7 @@ COMMENT =		fast paced arcade-style space shooter
 DISTNAME =		chromium-bsu-0.9.15.1
 CATEGORIES =		games x11
 HOMEPAGE =		http://chromium-bsu.sourceforge.net/
+REVISION=		0
 
 MAINTAINER =		Antti Harri <iku@openbsd.fi>
 
@@ -11,7 +12,8 @@ MAINTAINER =		Antti Harri <iku@openbsd.fi>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL GLU SDL SDL_image alut c fontconfig ftgl glpng
-WANTLIB += jpeg m openal png pthread stdc++ tiff webp z
+WANTLIB += jpeg m openal png pthread tiff webp z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=chromium-bsu/}
 

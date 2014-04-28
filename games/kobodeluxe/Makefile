@@ -5,7 +5,7 @@ DISTNAME=	KoboDeluxe-0.5.1
 PKGNAME=	${DISTNAME:L}
 CATEGORIES=	games x11
 MASTER_SITES=	${HOMEPAGE}download/
-REVISION=	0
+REVISION=	1
 
 EXTRACT_SUFX=	.tar.bz2
 
@@ -20,7 +20,8 @@ PATCH_LIST=patch-* extra-hard
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	SDL c m pthread stdc++ SDL_image
+WANTLIB=	SDL c m pthread SDL_image
+WANTLIB+=	c++ c++abi
 
 LIB_DEPENDS=	devel/sdl-image
 

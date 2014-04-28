@@ -5,7 +5,7 @@ COMMENT=	chess program
 DISTNAME=	gnuchess-6.1.1
 DISTFILES=	${DISTNAME}.tar.gz book_1.02.pgn.gz
 
-REVISON=	0
+REVISION=	1
 
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_GNU:=chess/}
@@ -13,7 +13,8 @@ MASTER_SITES=	${MASTER_SITE_GNU:=chess/}
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m ncurses pthread readline stdc++
+WANTLIB += c m ncurses pthread readline
+WANTLIB += c++ c++abi
 LIB_DEPENDS=		devel/readline
 
 MODULES=	devel/gettext

@@ -9,6 +9,8 @@ PKGNAME =		${BASENAME}
 
 CATEGORIES =		games
 
+REVISION =	0
+
 HOMEPAGE =		http://supertuxkart.sourceforge.net
 
 MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
@@ -18,7 +20,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += BulletCollision BulletDynamics BulletSoftBody GL GLU
 WANTLIB += ICE LinearMath SM X11 Xext Xxf86vm bz2 c curl enet
-WANTLIB += jpeg m ogg openal png pthread stdc++ vorbis vorbisfile
+WANTLIB += jpeg m ogg openal png pthread vorbis vorbisfile
+WANTLIB += c++ c++abi
 WANTLIB += z
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=supertuxkart/SuperTuxKart/}

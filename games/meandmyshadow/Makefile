@@ -5,6 +5,7 @@ COMMENT =	puzzle/platform game
 DISTNAME =	meandmyshadow-0.4-src
 CATEGORIES =	games
 PKGNAME =	${DISTNAME:S/-src//}
+REVISION =	0
 
 HOMEPAGE =	http://meandmyshadow.sourceforge.net/
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=meandmyshadow/}
@@ -23,7 +24,8 @@ LIB_DEPENDS =	net/curl \
 		archivers/libarchive
 
 WANTLIB += SDL SDL_gfx SDL_image SDL_mixer SDL_ttf archive c crypto
-WANTLIB += curl m pthread ssl stdc++ GL GLU ICE SM X11 Xext
+WANTLIB += curl m pthread ssl GL GLU ICE SM X11 Xext
+WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/gtk+2,-guic

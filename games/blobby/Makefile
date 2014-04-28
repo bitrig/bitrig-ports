@@ -8,12 +8,15 @@ PKGNAME =		blobby-${V}
 
 CATEGORIES =		games
 
+REVISION =		0
+
 HOMEPAGE =		http://blobby.sourceforge.net/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB +=		GL GLU ICE SDL SM X11 Xext c m physfs pthread stdc++
+WANTLIB +=		GL GLU ICE SDL SM X11 Xext c m physfs pthread
+WANTLIB+=		c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=blobby/}
 

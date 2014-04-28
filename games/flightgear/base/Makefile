@@ -3,12 +3,14 @@
 COMMENT =		modern, open-source flight simulator
 
 DISTNAME =		flightgear-${V}
+REVISION =		0
 
 WANTLIB += GL GLU ICE OpenThreads SM SimGearCore SimGearScene
 WANTLIB += X11 Xext Xft Xi Xinerama Xmu c fltk fltk_forms fltk_gl
 WANTLIB += fltk_images glut m openal osg osgDB osgFX osgGA osgParticle
 WANTLIB += osgSim osgText osgUtil osgViewer png pthread sqlite3
-WANTLIB += stdc++ z
+WANTLIB += z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	ftp://ftp.de.flightgear.org/pub/fgfs/Source/ \
 		http://ftp.igh.cnrs.fr/pub/flightgear/ftp/Source/

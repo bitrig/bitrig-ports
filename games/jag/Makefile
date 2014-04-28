@@ -4,13 +4,15 @@ V = 			0.3.2
 DISTNAME =		jag-${V}
 CATEGORIES =		games
 HOMEPAGE =		http://jag.xlabsoft.com
+REVISION =		0
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL ICE QtGui QtOpenGL QtXml SDL SDL_mixer SM X11 Xext
 WANTLIB += Xi Xinerama Xrandr Xrender c fontconfig freetype m
-WANTLIB += pthread stdc++
+WANTLIB += pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES = 		http://jag.xlabsoft.com/files/
 DISTFILES = 		jag-${V}-src.zip jag-${V}-data.zip

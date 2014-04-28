@@ -9,6 +9,7 @@ DISTNAME =	${PKGNAME}-src
 WRKSRC =	${WRKDIST}/gui-wx/configure
 CATEGORIES =	games math
 MAINTAINER =	Donovan Watteau <tsoomi@gmail.com>
+REVISION =	0
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=golly/}
 
@@ -23,8 +24,9 @@ RUN_DEPENDS =		devel/desktop-file-utils
 
 # Note: perl and python are loaded with wxDynamicLibrary.Load(), and
 # python needs libutil to prevent undefined openpty and forkpty symbols.
-WANTLIB += c m perl pthread stdc++ util wx_base wx_base_net wx_gtk2_adv
+WANTLIB += c m perl pthread util wx_base wx_base_net wx_gtk2_adv
 WANTLIB += wx_gtk2_core wx_gtk2_html z ${MODPY_WANTLIB}
+WANTLIB += c++ c++abi
 
 CONFIGURE_STYLE =		gnu
 CONFIGURE_ARGS =		--enable-unicode

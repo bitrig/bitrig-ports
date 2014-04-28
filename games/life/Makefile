@@ -3,14 +3,15 @@
 COMMENT=	SDL clone of the popular Game of Life
 
 DISTNAME=	life-1.0
-REVISION =	1
+REVISION =	2
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	games
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m pthread stdc++ SDL
+WANTLIB=		c m pthread SDL
+WANTLIB+=		c++ c++abi
 
 NO_TEST=	Yes
 

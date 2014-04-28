@@ -9,6 +9,7 @@ DISTNAME=	dc400b26-src
 EXTRACT_SUFX=	.tbz2
 V=		4.0.0b26
 PKGNAME=	dungeon-crawl-$V
+REVISION=	0
 
 BUILD_DEPENDS+=	archivers/bzip2
 
@@ -22,7 +23,8 @@ USE_GROFF =	Yes
 
 ALL_TARGET=debug
 
-WANTLIB=	c m stdc++ ncurses
+WANTLIB=	c m ncurses
+WANTLIB+=	c++ c++abi pthread
 
 
 # Almost nethack... http://www.dungeoncrawl.org/?d.l

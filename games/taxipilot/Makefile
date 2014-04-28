@@ -3,7 +3,7 @@
 COMMENT=	silly little game based on Spacetaxi for the C64
 
 DISTNAME=	taxipilot-0.7.2
-REVISION =	9
+REVISION =	10
 CATEGORIES=	games
 
 HOMEPAGE=	http://taxipilot.sourceforge.net/
@@ -16,10 +16,11 @@ PERMIT_PACKAGE_CDROM=  Yes
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft
 WANTLIB += Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c drm
 WANTLIB += expat fam fontconfig freetype idn jpeg lcms m mng png
-WANTLIB += pthread pthread-stubs stdc++ util xcb z
+WANTLIB += pthread pthread-stubs util xcb z
 WANTLIB += lib/kde3/DCOP lib/kde3/kdecore>=4 lib/kde3/kdefx
 WANTLIB += lib/kde3/kdesu lib/kde3/kdeui lib/kde3/kio
 WANTLIB += lib/kde3/kwalletclient
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=taxipilot/}
 

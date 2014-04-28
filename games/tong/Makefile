@@ -3,6 +3,7 @@
 COMMENT =	Tetris and Pong played simultaneously on one playing field
 DISTNAME =	tong-1.2
 CATEGORIES =	games x11
+REVISION =	0
 
 HOMEPAGE =	http://www.nongnu.org/tong/
 
@@ -11,7 +12,8 @@ MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += SDL SDL_image SDL_mixer c m pthread stdc++
+WANTLIB += SDL SDL_image SDL_mixer c m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	http://www.nongnu.org/tong/
 

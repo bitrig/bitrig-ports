@@ -8,18 +8,20 @@ V=		1.0
 DISTNAME=	PokerTH-${V}-src
 PKGNAME=	pokerth-${V}
 CATEGORIES=	games x11
+REVISION=	0
 
 HOMEPAGE=	http://www.pokerth.net/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m pthread stdc++
+WANTLIB += c m pthread
 WANTLIB += ICE lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSql SDL SDL_mixer SM
 WANTLIB += X11 Xext Xi Xinerama Xrender boost_filesystem-mt boost_iostreams-mt
 WANTLIB += boost_program_options-mt boost_random-mt boost_regex-mt
 WANTLIB += boost_system-mt boost_thread-mt crypto curl fontconfig
 WANTLIB += freetype gsasl ircclient protobuf sqlite3 ssl tinyxml
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pokerth/}
 

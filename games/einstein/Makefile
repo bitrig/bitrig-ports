@@ -3,7 +3,7 @@
 COMMENT =	open source remake of old DOS game Sherlock
 
 DISTNAME =	einstein-2.0
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	games
 
@@ -13,7 +13,8 @@ HOMEPAGE =	http://games.flowix.com/
 # "you can download game for free under GPL license terms".
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB =	c freetype m pthread stdc++ z SDL>=8 SDL_mixer>=3 SDL_ttf>=7
+WANTLIB =	c freetype m pthread z SDL>=8 SDL_mixer>=3 SDL_ttf>=7
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =	${HOMEPAGE}files/einstein/
 EXTRACT_SUFX =	-src.tar.gz

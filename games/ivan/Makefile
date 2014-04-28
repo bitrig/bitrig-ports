@@ -5,7 +5,7 @@ BROKEN-sparc64=	SIGBUS on sparc64 when starting
 COMMENT=	graphical roguelike game
 
 DISTNAME=	ivan-0.50
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games
 
 HOMEPAGE=	http://ivan.sourceforge.net/
@@ -15,7 +15,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ivan/}
 
-WANTLIB=	X11 Xext c m pthread pthread-stubs stdc++ usbhid xcb SDL>=6
+WANTLIB=	X11 Xext c m pthread pthread-stubs usbhid xcb SDL>=6
+WANTLIB+=	c++ c++abi
 
 LIB_DEPENDS=	devel/sdl
 

@@ -3,7 +3,7 @@
 COMMENT=		Rich city simulation game for X
 
 DISTNAME=		lincity-1.11
-REVISION =		2
+REVISION =		3
 CATEGORIES=		games
 HOMEPAGE=		http://lincity.sourceforge.net/
 
@@ -11,7 +11,8 @@ MAINTAINER=		Wilbern Cobb <wcobb@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		X11 Xau Xdmcp Xext c m pthread-stubs stdc++ xcb
+WANTLIB=		X11 Xau Xdmcp Xext c m pthread-stubs xcb
+WANTLIB+=		c++ c++abi
 
 MASTER_SITES=		http://www.linklevel.net/distfiles/
 

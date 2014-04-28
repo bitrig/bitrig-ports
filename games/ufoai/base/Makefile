@@ -6,6 +6,7 @@ COMMENT-editor = 	UFO:AI map editor
 DISTNAME =		ufoai-${V}-source
 PKGNAME-main =		${DISTNAME:S/-source//}
 PKGNAME-editor = 	uforadiant-${V}
+REVISION-editor =	0
 
 EXTRACT_SUFX =		.tar.bz2
 
@@ -24,7 +25,8 @@ WANTLIB-editor += gdk-x11-2.0 gdk_pixbuf-2.0 gdkglext-x11-1.0
 WANTLIB-editor += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB-editor += gtk-x11-2.0 gtkglext-x11-1.0 gtksourceview-2.0
 WANTLIB-editor += openal pango-1.0 pangocairo-1.0 pangoft2-1.0
-WANTLIB-editor += pangox-1.0 stdc++ xml2 ${cWANTLIB}
+WANTLIB-editor += pangox-1.0 xml2 ${cWANTLIB}
+WANTLIB-editor += c++ c++abi
 
 MODULES = 		devel/gettext
 

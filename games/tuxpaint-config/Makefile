@@ -5,7 +5,7 @@ COMMENT=	graphical tool to change Tux Paint's settings
 DISTNAME=	tuxpaint-config-0.0.12
 CATEGORIES=	games graphics
 
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://www.tuxpaint.org/
 
@@ -16,8 +16,9 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tuxpaint/}
 
-WANTLIB += X11 Xau Xdmcp Xext c m stdc++ pthread fltk paper
+WANTLIB += X11 Xau Xdmcp Xext c m pthread fltk paper
 WANTLIB += Xft Xinerama fontconfig
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext
 LIB_DEPENDS=	x11/fltk \

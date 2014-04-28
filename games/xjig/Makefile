@@ -3,7 +3,7 @@
 COMMENT=	jigsaw puzzle game for X11
 
 DISTNAME=	xjig-2.4
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games
 
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=games/}
@@ -12,7 +12,8 @@ EXTRACT_SUFX=	.tgz
 # License: BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	X11 Xau Xdmcp Xext c m pthread-stubs stdc++ xcb
+WANTLIB=	X11 Xau Xdmcp Xext c m pthread-stubs xcb
+WANTLIB+=	c++ c++abi
 
 USE_GROFF =	Yes
 

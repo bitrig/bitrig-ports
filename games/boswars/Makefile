@@ -7,14 +7,16 @@ DISTNAME=	boswars-${V}-src
 PKGNAME=	boswars-${V}
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.boswars.org/dist/releases/
+REVISION=	0
 
 HOMEPAGE=	http://www.boswars.org/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB +=	GL SDL X11 c m ogg png pthread stdc++ theora vorbis z
+WANTLIB +=	GL SDL X11 c m ogg png pthread theora vorbis z
 WANTLIB +=	${MODLUA_WANTLIB}
+WANTLIB +=	c++ c++abi
 
 MODULES=	devel/scons \
 		lang/lua

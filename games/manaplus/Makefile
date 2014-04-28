@@ -8,6 +8,8 @@ EXTRACT_SUFX =	.tar.xz
 
 CATEGORIES =	games x11
 
+REVISION =	0
+
 HOMEPAGE =	http://manaplus.org/
 
 MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
@@ -15,7 +17,8 @@ MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += GL X11 c crypto curl idn m physfs png pthread ssl stdc++ xml2 z
+WANTLIB += GL X11 c crypto curl idn m physfs png pthread ssl xml2 z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	http://download.evolonline.org/manaplus/download/${V}/
 

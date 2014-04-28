@@ -6,6 +6,7 @@ DISTNAME= 	amoebax-0.2.1
 
 CATEGORIES=	games
 EXTRACT_SUFX=	.tar.bz2
+REVISION=	1
 
 HOMEPAGE=	http://www.emma-soft.com/games/amoebax/
 
@@ -16,7 +17,8 @@ MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 # GPL/LAL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	SDL c m pthread stdc++ SDL_image SDL_mixer
+WANTLIB=	SDL c m pthread SDL_image SDL_mixer
+WANTLIB+=	c++ c++abi
 
 LIB_DEPENDS=	devel/sdl-image \
 		devel/sdl-mixer

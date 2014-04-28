@@ -6,12 +6,13 @@ DISTNAME =		capitan-sevilla-${VERSION}
 CATEGORIES =		games
 HOMEPAGE =		http://computeremuzone.com/ficha.php?id=754&l=en
 
-REVISION =		0
+REVISION =		1
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB = 	alleg c freetype m ogg png pthread stdc++ vorbis vorbisfile z
+WANTLIB = 	alleg c freetype m ogg png pthread vorbis vorbisfile z
+WANTLIB+=	c++ c++abi pthread
 
 MASTER_SITES =		http://computeremuzone.com/cezgs/remakes/
 EXTRACT_SUFX = 		.tar.bz2

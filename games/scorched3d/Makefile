@@ -4,7 +4,7 @@ COMMENT =		modernization of the classic DOS game Scorched Earth
 
 DISTNAME =		Scorched3D-43.1c-src
 PKGNAME =		${DISTNAME:L:S/-src//}
-REVISION =		2
+REVISION =		4
 
 CATEGORIES =		games x11
 
@@ -13,11 +13,12 @@ HOMEPAGE =		http://www.scorched3d.co.uk/
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=		GL GLU c expat freetype m pthread stdc++ z
+WANTLIB +=		GL GLU c expat freetype m pthread z
 WANTLIB +=		SDL SDL_net alut fftw3f jpeg openal png ogg vorbisfile
 WANTLIB +=		wx_base wx_base_net wx_base_odbc wx_base_xml vorbis
 WANTLIB +=		wx_gtk2_adv wx_gtk2_aui wx_gtk2_core wx_gtk2_dbgrid
 WANTLIB +=		wx_gtk2_html wx_gtk2_qa wx_gtk2_richtext wx_gtk2_xrc
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=scorched3d/}
 

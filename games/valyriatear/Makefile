@@ -4,7 +4,7 @@ V =		0.6.0
 COMMENT =	free J-RPG game
 DISTNAME =	ValyriaTear-${V}
 PKGNAME =	valyriatear-${V}
-REVISION =	1
+REVISION =	2
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://valyriatear.blogspot.com/
@@ -18,8 +18,9 @@ MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL GLU ICE SDL SDL_image SDL_ttf SM X11 Xext c m
-WANTLIB += ogg openal png pthread stdc++ vorbis vorbisfile
+WANTLIB += ogg openal png pthread vorbis vorbisfile
 WANTLIB += z ${MODLUA_WANTLIB}
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=valyriatear/}
 

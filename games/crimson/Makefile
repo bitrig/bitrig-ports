@@ -5,7 +5,7 @@ BROKEN-arm=	mktileset buggy, loops at high CPU use
 COMMENT=	tactical war game like Battle Isle; multiplayer
 DISTNAME=	crimson-0.5.1
 PKGNAME=	${DISTNAME}
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games x11
 MASTER_SITES=	${HOMEPAGE}files/
 
@@ -13,8 +13,9 @@ HOMEPAGE=	http://crimson.seul.org/
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		SDL X11 Xext c m pthread pthread-stubs stdc++ usbhid \
+WANTLIB=		SDL X11 Xext c m pthread pthread-stubs usbhid \
 			xcb z SDL_mixer SDL_net SDL_ttf
+WANTLIB+=		c++ c++abi
 
 USE_GMAKE=	Yes
 USE_GROFF =	Yes

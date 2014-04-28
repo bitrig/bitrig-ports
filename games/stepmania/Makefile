@@ -8,7 +8,7 @@ SHARED_ONLY =	Yes
 
 DISTNAME = 	stepmania-5.0b2a
 PKGNAME =	stepmania-5.0beta2a
-REVISION =	3
+REVISION =	4
 EXTRACT_SUFX = 	-src.tar.bz2
 HOMEPAGE =	http://www.stepmania.com
 MASTER_SITES = 	${MASTER_SITE_SOURCEFORGE:=stepmania/}
@@ -38,11 +38,12 @@ LIB_DEPENDS =	audio/libvorbis \
 
 WANTLIB += GL GLU X11 Xcomposite Xcursor Xdamage Xext Xfixes Xi
 WANTLIB += Xinerama Xrandr Xrender Xtst c fontconfig freetype
-WANTLIB += m pthread stdc++ z
+WANTLIB += m pthread z
 WANTLIB += GLEW avcodec avformat avutil bz2 gio-2.0 glib-2.0 gobject-2.0
 WANTLIB += mad ogg pulse swscale vorbis vorbisfile
 WANTLIB += atk-1.0 cairo gdk-x11-2.0 gdk_pixbuf-2.0 gtk-x11-2.0
 WANTLIB += jpeg pango-1.0 pangocairo-1.0 pangoft2-1.0 png
+WANTLIB += c++ c++abi
 
 DATADIR = libdata/stepmania
 D = 	Announcers BGAnimations BackgroundEffects BackgroundTransitions \

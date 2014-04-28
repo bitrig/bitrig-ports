@@ -3,7 +3,7 @@
 COMMENT=		free software clone of Worms(R) game concept
 
 DISTNAME=		warmux-11.04.1
-REVISION=		2
+REVISION=		3
 WRKDIST=		${WRKDIR}/warmux-11.04
 CATEGORIES=		games
 
@@ -11,8 +11,9 @@ HOMEPAGE=		http://wormux.org
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		SDL X11 c m png pthread stdc++ SDL_gfx SDL_image \
+WANTLIB=		SDL X11 c m png pthread SDL_gfx SDL_image \
 			SDL_mixer SDL_net SDL_ttf curl>=5 xml2
+WANTLIB+=		c++ c++abi
 
 MASTER_SITES=		http://download.gna.org/warmux/ \
 			http://download.gna.org/warmux/archive/

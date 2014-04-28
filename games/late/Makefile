@@ -2,7 +2,7 @@
 
 COMMENT=	puzzle game resembling the arcade game Qix
 DISTNAME=	late-0.1.0
-REVISION=	1
+REVISION=	2
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=late/}
@@ -11,8 +11,9 @@ HOMEPAGE=	http://late.sourceforge.net/
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		SDL X11 Xext c m pthread pthread-stubs stdc++ \
+WANTLIB=		SDL X11 Xext c m pthread pthread-stubs \
 			usbhid xcb SDL_image
+WANTLIB+=		c++ c++abi
 
 LIB_DEPENDS=	devel/sdl-image
 

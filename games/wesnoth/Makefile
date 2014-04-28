@@ -9,6 +9,8 @@ DISTNAME=	wesnoth-1.10.7
 
 CATEGORIES=	games x11
 
+REVISION =	0
+
 MAINTAINER=	Kirill Bychkov <kirby@openbsd.org>
 
 HOMEPAGE=	http://www.wesnoth.org/
@@ -23,7 +25,8 @@ WANTLIB += ICE SDL SDL_image SDL_mixer SDL_net SDL_ttf SM X11
 WANTLIB += Xext boost_iostreams-mt boost_program_options-mt
 WANTLIB += boost_regex-mt boost_system-mt c cairo dbus-1
 WANTLIB += fontconfig freetype fribidi glib-2.0 gobject-2.0 m
-WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pthread stdc++ z
+WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pthread z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/cmake \
 		devel/gettext
