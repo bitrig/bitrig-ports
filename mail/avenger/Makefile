@@ -2,6 +2,7 @@
 
 COMMENT=		anti-spam SMTP server
 DISTNAME=		avenger-0.8.3
+REVISION=		0
 CATEGORIES=		mail
 
 HOMEPAGE=		http://www.mailavenger.org/
@@ -9,7 +10,8 @@ HOMEPAGE=		http://www.mailavenger.org/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c crypto m pcap ssl stdc++ lib/db4/db>=4
+WANTLIB=		c crypto m pcap ssl lib/db4/db>=4
+WANTLIB +=		c++ c++abi pthread
 
 MASTER_SITES=		${HOMEPAGE}/dist/
 

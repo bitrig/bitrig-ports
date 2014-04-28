@@ -3,7 +3,7 @@
 COMMENT=		new mail notification utility for KDE
 
 DISTNAME=		kbiff-3.8
-REVISION =		8
+REVISION =		9
 SHARED_LIBS=		kbiff 2.0
 CATEGORIES=		mail
 EXTRACT_SUFX=		.tar.bz2
@@ -17,9 +17,10 @@ PERMIT_PACKAGE_CDROM=  	Yes
 
 WANTLIB =  ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2
 WANTLIB += c expat fam fontconfig freetype idn m png pthread
-WANTLIB += pthread-stubs stdc++ util xcb z
+WANTLIB += pthread-stubs util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=4 ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kwalletclient>=1
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kbiff/}
 

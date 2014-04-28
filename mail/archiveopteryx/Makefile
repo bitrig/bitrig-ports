@@ -3,7 +3,7 @@
 COMMENT =		mail server storing messages in a database
 
 DISTNAME =		archiveopteryx-3.1.3
-REVISION =		10
+REVISION =		11
 CATEGORIES =		mail databases
 
 HOMEPAGE =		http://www.archiveopteryx.org/
@@ -12,7 +12,8 @@ MAINTAINER =		Landry Breuil <landry@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c crypto m pthread ssl stdc++ z
+WANTLIB =		c crypto m pthread ssl z
+WANTLIB +=		c++ c++abi
 
 
 MASTER_SITES =		${HOMEPAGE}/download/

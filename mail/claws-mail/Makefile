@@ -11,7 +11,7 @@ COMMENT-pdfviewer=	pdfviewer plugin
 COMMENT-gdata=		gdata plugin
 
 V=			3.9.3
-REVISION=		0
+REVISION=		1
 DISTNAME=		claws-mail-${V}
 PKGNAME-main=		${DISTNAME}
 PKGNAME-bogofilter=	claws-mail-bogofilter-${V}
@@ -56,8 +56,9 @@ WANTLIB += asn1 com_err graphite2 gssapi heimbase krb5 roken wind
 WANTLIB-main =  ${WANTLIB}
 WANTLIB-main += ICE SM X11-xcb assuan c dbus-1 dbus-glib-1 enchant
 WANTLIB-main += gmp gnutls gpg-error gpgme hogweed nettle p11-kit perl
-WANTLIB-main += startup-notification-1 stdc++ tasn1 util xcb-util xml2
+WANTLIB-main += startup-notification-1 tasn1 util xcb-util xml2
 WANTLIB-main += canberra canberra-gtk notify ltdl ogg vorbis vorbisfile
+WANTLIB-main += c++ c++abi
 
 WANTLIB-gdata = ${WANTLIB} 
 WANTLIB-gdata += gck-1 gcr-base-3 gcrypt gdata goa-1.0 gpg-error nspr4
@@ -71,7 +72,8 @@ WANTLIB-htmlviewer += gstapp-1.0 gstaudio-1.0 gstbase-1.0 gstfft-1.0 gstpbutils-
 WANTLIB-htmlviewer += gstreamer-1.0 gsttag-1.0 gstvideo-1.0 harfbuzz-icu
 WANTLIB-htmlviewer += icudata icui18n icuuc javascriptcoregtk-1.0
 WANTLIB-htmlviewer += jpeg secret-1 soup-2.4 soup-gnome-2.4 sqlite3
-WANTLIB-htmlviewer += stdc++ webkitgtk-1.0 webp xml2 xslt
+WANTLIB-htmlviewer += webkitgtk-1.0 webp xml2 xslt
+WANTLIB-htmlviewer += c++ c++abi
 
 WANTLIB-pdfviewer =  ${WANTLIB}
 WANTLIB-pdfviewer += jpeg lcms2 openjpeg poppler poppler-glib tiff

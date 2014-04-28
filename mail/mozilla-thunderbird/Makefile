@@ -5,7 +5,7 @@ COMMENT-lightning =	Mozilla Thunderbird calendar extension
 
 # Don't forget to bump mail/thunderbird-i18n after updates.
 
-REVISION =		0
+REVISION =		1
 MOZILLA_VERSION =	24.4.0
 MOZILLA_BRANCH =	esr24
 MOZILLA_PROJECT =	thunderbird
@@ -67,7 +67,8 @@ CONFIGURE_STYLE =	autoconf no-autoheader
 LIB_DEPENDS-lightning = STEM->=${MOZILLA_VERSION:S/b/beta/}:${BUILD_PKGPATH},-main
 WANTLIB-lightning =	lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/xul \
 			lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/mozalloc \
-			c m stdc++ nspr4 plc4 plds4 pthread
+			c m nspr4 plc4 plds4 pthread
+WANTLIB-lightning +=	c++ c++abi
 
 # build lightning xpi
 CONFIGURE_ARGS +=	--enable-calendar

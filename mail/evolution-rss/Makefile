@@ -9,7 +9,7 @@ COMMENT=		RSS reader plugin for evolution
 
 GNOME_PROJECT=		evolution-rss
 GNOME_VERSION=		0.3.94
-REVISION=		4
+REVISION=		5
 
 MASTER_SITES0=		https://distfiles.bsdfrog.org/evolution-rss/
 PATCH_DIST_STRIP=	-p1
@@ -49,8 +49,9 @@ WANTLIB += icudata icui18n icuuc javascriptcoregtk-3.0 jpeg krb5
 WANTLIB += m nspr4 nss3 nssutil3 orc-0.4 p11-kit pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 plc4 plds4 png pthread pthread-stubs
 WANTLIB += roken secret-1 smime3 softokn3 soup-2.4 soup-gnome-2.4
-WANTLIB += sqlite3 ssl3 stdc++ webkitgtk-3.0 webp wind xcb xcb-render
+WANTLIB += sqlite3 ssl3 webkitgtk-3.0 webp wind xcb xcb-render
 WANTLIB += xcb-shm xml2 xslt z
+WANTLIB += c++ c++abi
 
 #MASTER_SITES=		http://gnome.eu.org/
 MASTER_SITES=		http://pkgs.fedoraproject.org/repo/pkgs/evolution-rss/evolution-rss-${GNOME_VERSION}${EXTRACT_SUFX}/77f38f8c98f64f181f74443f331c7336/

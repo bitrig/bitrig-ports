@@ -10,7 +10,7 @@ FULLPKGNAME-utils=	courier-utils-$V
 FULLPKGPATH-utils=	mail/maildrop,-utils
 CATEGORIES=		mail
 
-REVISION-main=		1
+REVISION-main=		2
 REVISION-utils=		0
 
 HOMEPAGE=		http://www.courier-mta.org/maildrop/
@@ -82,7 +82,8 @@ LIB_DEPENDS=		devel/libidn
 
 WANTLIB =		c idn
 
-WANTLIB-main=		${WANTLIB} gdbm m stdc++ gdbm>=3 pcre>=1 courierauth
+WANTLIB-main=		${WANTLIB} gdbm m gdbm>=3 pcre>=1 courierauth
+WANTLIB-main +=		c++ c++abi pthread
 LIB_DEPENDS-main=	${LIB_DEPENDS} \
 			databases/gdbm \
 			devel/pcre \

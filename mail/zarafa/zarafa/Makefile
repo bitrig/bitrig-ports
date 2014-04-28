@@ -7,6 +7,8 @@ PKGNAME=	zarafa-${V}
 PKGNAME-main=	zarafa-${V}
 PKGNAME-web=	zarafa-webaccess-${V}
 
+REVISION=	0
+
 CATEGORIES=	mail www productivity
 
 SHARED_LIBS +=  common_util          2.0      # .0.0
@@ -43,8 +45,9 @@ BUILD_DEPENDS=	devel/swig \
 BUILD_DEPENDS += net/curl
 
 WANTLIB += ${MODGETTEXT_WANTLIB}
-WANTLIB += m pthread stdc++ z vmime execinfo icudata icui18n icuuc
+WANTLIB += m pthread z vmime execinfo icudata icui18n icuuc
 WANTLIB += boost_filesystem-mt boost_system-mt uuid
+WANTLIB += c++ c++abi
 
 WANTLIB-main += ${WANTLIB} ${MODPY_WANTLIB}
 WANTLIB-main += asn1 c com_err crypto gssapi ical icalss krb5 lber-2.4

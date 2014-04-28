@@ -3,7 +3,7 @@
 COMMENT=	mail purpose library
 
 DISTNAME=	libetpan-1.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	mail devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libetpan/}
 
@@ -16,7 +16,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=	devel/gettext
 
-WANTLIB=	crypto expat m ssl stdc++ z curl idn sasl2
+WANTLIB=	crypto expat m ssl z curl idn sasl2
+WANTLIB +=	c++ c++abi pthread
 
 LIB_DEPENDS+=	net/curl \
 		devel/libidn \

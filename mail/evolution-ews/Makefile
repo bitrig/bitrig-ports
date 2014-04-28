@@ -9,6 +9,7 @@ COMMENT=		evolution connector for MS Exchange via EWS
 
 GNOME_PROJECT=		evolution-ews
 GNOME_VERSION=		3.12.1
+REVISION=		0
 
 CATEGORIES=		mail
 
@@ -38,8 +39,9 @@ WANTLIB += javascriptcoregtk-3.0 jpeg krb5 ltdl m mspack nspr4
 WANTLIB += nss3 nssutil3 ogg orc-0.4 p11-kit pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 plc4 plds4 png pthread pthread-stubs
 WANTLIB += roken secret-1 smime3 softokn3 soup-2.4 sqlite3 ssl3
-WANTLIB += stdc++ vorbis vorbisfile webkitgtk-3.0 webp wind xcb
+WANTLIB += vorbis vorbisfile webkitgtk-3.0 webp wind xcb
 WANTLIB += xcb-render xcb-shm xml2 xslt z
+WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
 			x11/gnome
