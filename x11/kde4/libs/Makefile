@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.48 2014/04/21 17:12:51 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.49 2014/04/29 09:39:32 zhuk Exp $
 
 COMMENT-main =		KDE core libraries
 COMMENT-en_US =		KDE en_US locale data

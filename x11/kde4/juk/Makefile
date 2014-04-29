@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/02/08 17:26:56 zhuk Exp $
+# $OpenBSD: Makefile,v 1.8 2014/04/29 09:39:32 zhuk Exp $
 
 COMMENT =	music collection manager and player for KDE
 DISTNAME =	juk-${MODKDE4_VERSION}
@@ -17,6 +17,7 @@ WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 
+BUILD_DEPENDS =	${MODKDE4_DEP_DIR}/libs,-main>=4.11.5p6
 RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/gtk+2,-guic
 
