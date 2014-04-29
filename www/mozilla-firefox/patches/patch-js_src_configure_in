@@ -1,8 +1,17 @@
 $OpenBSD: patch-js_src_configure_in,v 1.24 2013/09/19 13:19:17 landry Exp $
 https://bugzilla.mozilla.org/show_bug.cgi?id=648721
---- js/src/configure.in.orig	Fri Apr 11 19:47:23 2014
-+++ js/src/configure.in	Fri Apr 11 19:48:08 2014
-@@ -1788,7 +1788,7 @@ ia64*-hpux*)
+--- js/src/configure.in.orig	Tue Apr 22 01:27:51 2014
++++ js/src/configure.in	Sat May 10 12:21:28 2014
+@@ -789,7 +789,7 @@ if test -n "$CROSS_COMPILE"; then
+         dragonfly*)   OS_ARCH=DragonFly OS_TARGET=DragonFly ;;
+         freebsd*)     OS_ARCH=FreeBSD OS_TARGET=FreeBSD ;;
+         netbsd*)      OS_ARCH=NetBSD OS_TARGET=NetBSD ;;
+-        openbsd*)     OS_ARCH=OpenBSD OS_TARGET=OpenBSD ;;
++        openbsd* | bitrig*)     OS_ARCH=OpenBSD OS_TARGET=OpenBSD ;;
+     esac
+     case "${target}" in
+         *-android*|*-linuxandroid*) OS_ARCH=Linux OS_TARGET=Android ;;
+@@ -1805,7 +1805,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@) -o $@'
      ;;
  
@@ -11,7 +20,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648721
      DLL_SUFFIX=".so.1.0"
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
-@@ -2465,7 +2465,7 @@ then
+@@ -2477,7 +2477,7 @@ then
  			fi
  			;;
  
@@ -20,3 +29,12 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648721
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
+@@ -2956,7 +2956,7 @@ if test "$_USE_SYSTEM_NSPR" || (test "$NSPR_CFLAGS" -o
+ fi
+ 
+ case "$target" in
+-  *linux*|*darwin*|*dragonfly*|*freebsd*|*netbsd*|*openbsd*)
++  *linux*|*darwin*|*dragonfly*|*freebsd*|*netbsd*|*openbsd*|*bitrig*)
+     if test -z "$_HAS_NSPR" && test "$JS_THREADSAFE"; then
+       JS_POSIX_NSPR_DEFAULT=1
+     fi

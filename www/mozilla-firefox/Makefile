@@ -1,19 +1,17 @@
-# $OpenBSD: Makefile,v 1.250 2014/04/22 11:38:33 landry Exp $
+# $OpenBSD: Makefile,v 1.251 2014/04/29 21:26:43 landry Exp $
 
 COMMENT =	Mozilla web browser
 
 # Don't forget to bump www/firefox-i18n after updates.
 # Don't forget to update devel/xulrunner/2.0 if patches changes.
 
-REVISION =		0
-MOZILLA_VERSION =	28.0
+MOZILLA_VERSION =	29.0
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	firefox
 MOZILLA_CODENAME =	browser
-REVISION =		0
 
 #MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla.org/${MOZILLA_PROJECT}/nightly/${MOZILLA_VERSION}-candidates/build1/source/
-SO_VERSION =	46.0
+SO_VERSION =	47.0
 # NOTE: Must bump minor version if any shlib's are removed from the
 # components dir to avoid pkg_add -r issues.
 MOZILLA_LIBS =	browsercomps mozalloc mozgnome xul
@@ -42,7 +40,6 @@ CONFIGURE_STYLE =	autoconf no-autoheader
 
 MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build/autoconf \
 				${WRKDIST}/ipc/chromium/src/third_party/libevent \
-				${WRKDIST}/js/src/build/autoconf \
 				${WRKDIST}/js/src/ctypes/libffi \
 				${WRKDIST}/memory/jemalloc/src \
 				${WRKDIST}/modules/freetype2/builds/unix \
@@ -76,8 +73,8 @@ post-install:
 	cd ${PREFIX}/bin/ && ln -sf firefox mozilla-firefox
 	# install prefs
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/browser/defaults/preferences
-	${INSTALL_DATA} ${FILESDIR}/all-openbsd.js \
-		${PREFIX}/lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/browser/defaults/preferences/
+	${SUBST_CMD} -o ${SHAREOWN} -g ${SHAREGRP} -c ${FILESDIR}/all-openbsd.js \
+		${PREFIX}/lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/browser/defaults/preferences/all-openbsd.js
 	# install desktop file
 	${INSTALL_DATA_DIR} ${PREFIX}/share/applications/
 	${SUBST_CMD} -o ${SHAREOWN} -g ${SHAREGRP} -c ${FILESDIR}/${MOZILLA_PROJECT}.desktop \
