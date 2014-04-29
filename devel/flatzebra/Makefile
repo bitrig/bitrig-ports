@@ -17,7 +17,7 @@ HOMEPAGE=	http://sarrazip.com/dev/afternoonstalker.html
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += FLAC SDL SDL_image SDL_mixer jpeg m mikmod ogg png
-WANTLIB += smpeg sndio stdc++ tiff usbhid vorbis vorbisfile z
+WANTLIB += smpeg sndio tiff usbhid vorbis vorbisfile z
 WANTLIB += pthread webp
 WANTLIB += c++ c++abi
 

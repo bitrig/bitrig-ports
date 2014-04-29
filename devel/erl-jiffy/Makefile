@@ -19,7 +19,6 @@ MASTER_SITES=	http://distfiles.nl/
 
 MODULES=	lang/erlang
 
-WANTLIB=	stdc++
 WANTLIB+=	c++ c++abi pthread
 
 ERL_APP_SUBST=	Yes

@@ -7,7 +7,7 @@ VERSION=	7.2d
 DISTNAME=	gc-${VERSION}
 PKGNAME-atomic=	libatomic_ops-${VERSION}
 PKGNAME-main=	boehm-gc-${VERSION}
-REVISION-main=	0
+REVISION-main=	1
 
 WRKDIST=	${WRKDIR}/gc-7.2
 MULTI_PACKAGES=	-main -atomic
@@ -28,6 +28,8 @@ NOT_FOR_ARCHS=	m88k vax mips64 mips64el
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB-main += pthread
+WANTLIB-main += c++ c++abi m
+
 
 MAKE_ENV=	CP="cp" \
 		INSTALL_DATA="${INSTALL_DATA}" \

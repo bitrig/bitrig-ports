@@ -23,7 +23,7 @@ MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=	converters/libiconv
-WANTLIB=	c expat m ncurses stdc++
+WANTLIB=	c expat m ncurses
 WANTLIB+=	c++ c++abi pthread
 
 CONFIGURE_STYLE=gnu
