@@ -5,6 +5,7 @@ COMMENT =		tile map editor
 V =			0.9.0
 DISTNAME =		tiled-qt-${V}
 PKGNAME =		tiled-${V}
+REVISION =		0
 
 SHARED_LIBS +=		tiled                     0.0 # 1.0
 
@@ -16,7 +17,8 @@ HOMEPAGE =		http://www.mapeditor.org/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL ICE QtGui QtOpenGL SM X11 Xext Xi Xinerama Xrender
-WANTLIB += c fontconfig freetype m pthread stdc++ z
+WANTLIB += c fontconfig freetype m pthread z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=tiled/}
 

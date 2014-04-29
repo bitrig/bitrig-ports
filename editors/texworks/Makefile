@@ -12,8 +12,9 @@ PKGNAME-main =		texworks-${V}
 PKGNAME-lua =		texworks-lua-${V}
 PKGNAME-python =	texworks-python-${V}
 
-REVISION-main =		1
-REVISION-lua =		1
+REVISION-main =		2
+REVISION-lua =		2
+REVISION-python =	0
 
 WRKDIST =		${WRKDIR}/texworks-${V}
 
@@ -38,11 +39,13 @@ WANTLIB += c++ c++abi
 
 WANTLIB-lua =	${MODLUA_WANTLIB}
 WANTLIB-lua +=	ICE QtCore QtGui QtXml SM X11 Xext Xi Xinerama Xrender
-WANTLIB-lua +=	fontconfig freetype m stdc++
+WANTLIB-lua +=	fontconfig freetype m
+WANTLIB-lua +=	c++ c++abi pthread
 
 WANTLIB-python =  ${MODPY_WANTLIB}
 WANTLIB-python += ICE QtCore QtGui QtXml SM X11 Xext Xi Xinerama Xrender
-WANTLIB-python += fontconfig freetype m stdc++
+WANTLIB-python += fontconfig freetype m
+WANTLIB-lua +=	c++ c++abi pthread
 
 MULTI_PACKAGES =	-main -lua -python
 
