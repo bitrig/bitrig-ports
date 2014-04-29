@@ -15,7 +15,9 @@ CATEGORIES=	databases
 V=		MySQL-5.1
 MASTER_SITES=	${MASTER_SITE_MYSQL:=Downloads/$V/}
 
-REVISION-server= 0
+REVISION-main= 0
+REVISION-server= 1
+REVISION-tests= 0
 EPOCH-main=	0
 EPOCH-server=	0
 EPOCH-tests=	0
@@ -30,6 +32,8 @@ MAINTAINER=	Brad Smith <brad@comstyle.com>
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c m pthread
+WANTLIB+=		c++ c++abi
+
 
 LOCALSTATEDIR=	${BASELOCALSTATEDIR}/mysql
 SOCKET_DIR=	/var/run/mysql
