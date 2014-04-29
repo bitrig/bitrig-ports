@@ -1,75 +1,13 @@
-$OpenBSD$
---- configure.orig	Mon Aug 19 22:31:42 2013
-+++ configure	Mon Feb 10 21:04:58 2014
-@@ -6607,7 +6607,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
+$OpenBSD: patch-configure,v 1.22 2014/04/29 06:27:57 jasper Exp $
+--- configure.orig	Mon Apr 28 23:55:19 2014
++++ configure	Mon Apr 28 23:56:30 2014
+@@ -17809,8 +17809,8 @@ else
+ /* end confdefs.h.  */
  
--  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -7119,7 +7119,7 @@ newos6*)
-   lt_cv_deplibs_check_method=pass_all
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-   else
-@@ -7735,7 +7735,7 @@ old_postuninstall_cmds=
- 
- if test -n "$RANLIB"; then
-   case $host_os in
--  openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
-     ;;
-   *)
-@@ -10255,7 +10255,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   linux* | k*bsd*-gnu | gnu*)
-@@ -11135,7 +11135,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
-     *nto* | *qnx*)
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct=yes
- 	hardcode_shlibpath_var=no
-@@ -12179,7 +12179,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -13226,7 +13226,7 @@ $as_echo_n "checking for libgtop sysdeps directory... 
- 	  libgtop_need_server=yes
- 	  libgtop_postinstall='chgrp kmem $(bindir)/libgtop_server2 && chmod 2755 $(bindir)/libgtop_server2'
- 	  ;;
--	openbsd*)
-+	openbsd* | bitrig*)
- 	  libgtop_sysdeps_dir=openbsd
- 	  libgtop_use_machine_h=yes
- 	  libgtop_need_server=yes
-@@ -16256,7 +16256,7 @@ else
- fi
- 
- 	    ;;
--	    *-*-openbsd*)
-+	    *-*-openbsd* | *-*-bitrig*)
- 	    CATOBJEXT=.mo
-             DATADIRNAME=share
- 	    ;;
+ #include <sys/types.h>
++#include <sys/param.h>
+ #include <sys/mount.h>
+-#include <sys/fs_types.h>
+ int
+ main ()
+ {
