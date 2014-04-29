@@ -25,7 +25,8 @@ ONLY_FOR_ARCHS = amd64 i386 arm
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c m pthread stdc++ z
+WANTLIB =	c m pthread z
+WANTLIB =	c++ c++abi
 
 MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
 
