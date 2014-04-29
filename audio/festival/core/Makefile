@@ -4,7 +4,7 @@ COMMENT=	general multi-lingual speech synthesis system
 V=		1.95
 DISTNAME=	festival-${V}-beta
 PKGNAME=	${DISTNAME:S/-beta/beta/}
-REVISION=	5
+REVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	http://www.cstr.ed.ac.uk/downloads/festival/${V}/ \
 		http://festvox.org/packed/festival/${V}/
@@ -51,7 +51,8 @@ PERMIT_DISTFILES_FTP=	Yes
 PERMIT_PACKAGE_CDROM?=	Yes
 PERMIT_PACKAGE_FTP=	Yes
 
-WANTLIB=		c m sndio stdc++ termcap
+WANTLIB=		c m sndio termcap
+WANTLIB+=		c++ c++abi pthread
 
 post-patch:
 	@cp ${FILESDIR}/OpenBSD.mak ${WRKSRC}/speech_tools/config/systems/OpenBSD.mak

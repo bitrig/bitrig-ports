@@ -5,6 +5,7 @@ DISTNAME =		mpd-0.17.6
 CATEGORIES =		audio
 HOMEPAGE =		http://www.musicpd.org/
 MAINTAINER =		David Coppa <dcoppa@openbsd.org>
+REVISION =		0
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
@@ -12,7 +13,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		FLAC ao audiofile c cdio cdio_cdda cdio_paranoia \
 			curl glib-2.0 gthread-2.0 id3tag m mad \
 			mikmod ogg pthread samplerate sndfile sndio \
-			stdc++ z
+			z
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://www.musicpd.org/download/mpd/0.17/
 

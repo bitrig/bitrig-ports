@@ -45,7 +45,6 @@ WANTLIB-gtk += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB-gtk += gtk-x11-2.0 pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB-gtk += pixman-1 png pthread-stubs xcb xcb-render xcb-shm z
 WANTLIB-gtk += harfbuzz
-WANTLIB-gtk += c++ c++abi
 
 WANTLIB-gtk3 += ${cWANTLIB} ${MODGETTEXT_WANTLIB}
 WANTLIB-gtk3 += GL X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes
@@ -56,7 +55,6 @@ WANTLIB-gtk3 += gthread-2.0 gtk-3 pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB-gtk3 += pcre pixman-1 png pthread-stubs xcb xcb-render
 WANTLIB-gtk3 += xcb-shm z
 WANTLIB-gtk3 += ICE SM atk-bridge-2.0 atspi dbus-1 harfbuzz
-WANTLIB-gtk3 += c++ c++abi
 
 MODULES=		devel/gettext
 
