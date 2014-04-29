@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/12/04 04:40:39 joshe Exp $
+# $OpenBSD: Makefile,v 1.5 2014/04/29 21:38:42 landry Exp $
 
 COMMENT =		keyboard-oriented Mozilla-based browser
 
