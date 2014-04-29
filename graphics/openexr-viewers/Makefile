@@ -4,7 +4,7 @@ COMMENT =		viewers for OpenEXR
 DISTNAME =		openexr_viewers-1.0.1
 PKGNAME =		${DISTNAME:S/_/-/}
 
-REVISION =		2
+REVISION =		3
 
 CATEGORIES =		graphics
 HOMEPAGE =		http://www.openexr.com/
@@ -14,9 +14,10 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL GLU Half Iex IlmCtl IlmCtlMath IlmCtlSimd IlmImf
 WANTLIB += IlmThread Imath X11 Xau Xdmcp Xext c m pthread
-WANTLIB += stdc++ xcb z IlmImfCtl fltk fltk_gl
+WANTLIB += xcb z IlmImfCtl fltk fltk_gl
 WANTLIB += Xdamage Xfixes Xxf86vm drm
 WANTLIB += Xft Xinerama Xrender expat freetype fontconfig pthread-stubs
+WANTLIB += c++ c+abi
 
 MASTER_SITES =		${MASTER_SITE_SAVANNAH:=openexr/}
 
