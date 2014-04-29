@@ -77,7 +77,8 @@ NGX_UPSTREAM_CHECK_PATCH= check_1.2.6+.patch
 CONFIGURE_ARGS+=	--add-module=${LOCALBASE}/lib/phusion-passenger19/ext/nginx
 BUILD_DEPENDS+=		ruby19-passenger-*:www/ruby-passenger,-main
 RUN_DEPENDS+=		ruby-passenger-*|ruby19-passenger-*:www/ruby-passenger,-main
-WANTLIB+=		m pthread stdc++
+WANTLIB+=		m pthread
+WANTLIB+=		c++ c++abi
 .endif
 
 .if ${FLAVOR:Mlua}

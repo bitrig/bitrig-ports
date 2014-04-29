@@ -23,7 +23,8 @@ HOMEPAGE=	http://www.squid-cache.org/
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m pthread stdc++
+WANTLIB += c m pthread 
+WANTLIB += c++ c++abi
 
 WANTLIB-main +=	${WANTLIB} asn1 com_err crypto db execinfo gssapi
 WANTLIB-main +=	heimbase krb5 roken ssl wind
