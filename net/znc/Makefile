@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2013/07/17 07:19:38 jasper Exp $
+# $OpenBSD: Makefile,v 1.20 2014/04/30 14:12:19 naddy Exp $
 
 SHARED_ONLY=	Yes
 
@@ -23,8 +23,7 @@ MAKE_FLAGS=	VERBOSE=1
 
 SEPARATE_BUILD=	Yes
 USE_GMAKE=	Yes
-CONFIGURE_STYLE= autoconf
-AUTOCONF_VERSION= 2.68
+CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS= --disable-optimization
 
 NO_TEST=	Yes
