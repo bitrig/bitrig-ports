@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/05/15 17:34:03 bcallah Exp $
+# $OpenBSD: Makefile,v 1.4 2014/04/30 14:01:29 naddy Exp $
 
 COMMENT =	music collection manager and player
 DISTNAME =	gogglesmm-0.12.7
