@@ -1,0 +1,12 @@
+--- jdk/src/share/classes/java/awt/GraphicsEnvironment.java.orig	Sat May 10 02:31:21 2014
++++ jdk/src/share/classes/java/awt/GraphicsEnvironment.java	Sat May 10 04:49:02 2014
+@@ -181,7 +181,8 @@ public abstract class GraphicsEnvironment {
+                                                      "SunOS".equals(osName) ||
+                                                      "FreeBSD".equals(osName) ||
+                                                      "NetBSD".equals(osName) ||
+-                                                     "OpenBSD".equals(osName)) &&
++                                                     "OpenBSD".equals(osName) ||
++                                                     "Bitrig".equals(osName)) &&
+                                                      (System.getenv("DISPLAY") == null));
+                             }
+                         }

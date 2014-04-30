@@ -1,0 +1,16 @@
+--- corba/make/common/shared/Platform.gmk.orig	Sat May 10 02:16:02 2014
++++ corba/make/common/shared/Platform.gmk	Sat May 10 02:25:14 2014
+@@ -259,6 +259,13 @@ ifeq ($(SYSTEM_UNAME), OpenBSD)
+   REQUIRED_OS_VERSION = 4.9
+ endif
+ 
++ifeq ($(SYSTEM_UNAME), Bitrig)
++  PLATFORM = bsd
++  OS_NAME = bitrig
++  OS_VENDOR = OpenBSD
++  REQUIRED_OS_VERSION = 0.1
++endif
++
+ # Platform settings specific to BSD
+ ifeq ($(PLATFORM), bsd)
+   OS_VERSION := $(shell uname -r)

@@ -1,0 +1,11 @@
+--- hotspot/agent/src/share/classes/sun/jvm/hotspot/utilities/PlatformInfo.java.orig	Sat May 10 02:30:36 2014
++++ hotspot/agent/src/share/classes/sun/jvm/hotspot/utilities/PlatformInfo.java	Sat May 10 04:45:54 2014
+@@ -43,6 +43,8 @@ public class PlatformInfo {
+       return "bsd";
+     } else if (os.equals("OpenBSD")) {
+       return "bsd";
++    } else if (os.equals("Bitrig")) {
++      return "bsd";
+     } else if (os.equals("Darwin") || os.contains("OS X")) {
+       return "bsd";
+     } else if (os.startsWith("Windows")) {

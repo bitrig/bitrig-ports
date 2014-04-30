@@ -1,0 +1,12 @@
+--- hotspot/make/defs.make.orig	Fri Sep  6 14:22:00 2013
++++ hotspot/make/defs.make	Sat May 10 09:16:49 2014
+@@ -155,6 +155,9 @@ ifeq ($(OS),)
+   ifneq ($(findstring BSD,$(OS)),)
+     OS=bsd
+   endif
++  ifeq ($(OS), Bitrig)
++    OS=bsd
++  endif
+   ifeq ($(OS), Darwin)
+     OS=bsd
+   endif

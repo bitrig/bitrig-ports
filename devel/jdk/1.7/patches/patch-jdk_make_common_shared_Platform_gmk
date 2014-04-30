@@ -1,0 +1,16 @@
+--- jdk/make/common/shared/Platform.gmk.orig	Sat May 10 02:16:01 2014
++++ jdk/make/common/shared/Platform.gmk	Sat May 10 02:21:59 2014
+@@ -319,6 +319,13 @@ ifeq ($(SYSTEM_UNAME), OpenBSD)
+   REQUIRED_OS_VERSION = 4.9
+ endif
+ 
++ifeq ($(SYSTEM_UNAME), Bitrig)
++  PLATFORM = bsd
++  OS_NAME = bitrig
++  OS_VENDOR = OpenBSD
++  REQUIRED_OS_VERSION = 0.1
++endif
++
+ # Platform settings specific to BSD
+ ifeq ($(PLATFORM), bsd)
+   OS_VERSION := $(shell uname -r)

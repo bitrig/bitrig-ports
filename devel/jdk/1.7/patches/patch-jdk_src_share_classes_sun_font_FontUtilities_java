@@ -1,0 +1,12 @@
+--- jdk/src/share/classes/sun/font/FontUtilities.java.orig	Sat May 10 02:31:09 2014
++++ jdk/src/share/classes/sun/font/FontUtilities.java	Sat May 10 04:47:38 2014
+@@ -83,7 +83,8 @@ public final class FontUtilities {
+ 
+                 isBSD = (osName.startsWith("FreeBSD") ||
+                          osName.startsWith("NetBSD") ||
+-                         osName.startsWith("OpenBSD"));
++                         osName.startsWith("OpenBSD") ||
++                         osName.startsWith("Bitrig"));
+ 
+                 isMacOSX = osName.contains("OS X"); // TODO: MacOSX
+ 
