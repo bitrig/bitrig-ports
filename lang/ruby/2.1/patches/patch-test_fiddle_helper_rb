@@ -1,9 +1,9 @@
---- test/fiddle/helper.rb.orig	Mon Feb 17 21:27:31 2014
-+++ test/fiddle/helper.rb	Mon Feb 17 21:08:27 2014
-@@ -40,7 +40,7 @@ when /gnu/	#GNU/Hurd
- when /mirbsd/
-   libc_so = "/usr/lib/libc.so.41.10"
-   libm_so = "/usr/lib/libm.so.7.0"
+--- test/fiddle/helper.rb.orig	Tue Jan 14 21:29:58 2014
++++ test/fiddle/helper.rb	Wed Apr 30 17:42:38 2014
+@@ -43,7 +43,7 @@ when /mirbsd/
+ when /freebsd/
+   libc_so = "/lib/libc.so.7"
+   libm_so = "/lib/libm.so.5"
 -when /bsd|dragonfly/
 +when /bsd|bitrig|dragonfly/
    libc_so = "/usr/lib/libc.so"

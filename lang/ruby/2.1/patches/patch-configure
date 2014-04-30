@@ -5,9 +5,9 @@ Fix so name, checking for DOT and DOXYGEN.
 Override the arch setting to remove OpenBSD version from it,
 so ports don't have to be bumped when OpenBSD version changes.
 
---- configure.orig	Wed Dec 25 16:25:39 2013
-+++ configure	Mon Feb 17 20:45:24 2014
-@@ -15789,7 +15789,7 @@ fi
+--- configure.orig	Mon Feb 24 01:06:51 2014
++++ configure	Wed Apr 30 17:39:29 2014
+@@ -15930,7 +15930,7 @@ fi
  # OpenBSD 5.2 fixed the problem. (src/lib/libc/stdlib/malloc.c:1.142)
  # MirOS #10semel has the problem but fixed in the repository.  (src/lib/libc/stdlib/malloc.c:1.9)
  case "$target_os" in #(
@@ -16,7 +16,7 @@ so ports don't have to be bumped when OpenBSD version changes.
  
    { $as_echo "$as_me:${as_lineno-$LINENO}: checking for heap align log on openbsd" >&5
  $as_echo_n "checking for heap align log on openbsd... " >&6; }
-@@ -19438,7 +19438,7 @@ done
+@@ -19579,7 +19579,7 @@ done
      MAINLIBS="-pthread $MAINLIBS" ;; #(
    *) :
      case "$target_os" in #(
@@ -25,7 +25,7 @@ so ports don't have to be bumped when OpenBSD version changes.
      LIBS="-pthread $LIBS" ;; #(
    *) :
      LIBS="-l$pthread_lib $LIBS" ;;
-@@ -19823,7 +19823,7 @@ esac ;; #(
+@@ -19964,7 +19964,7 @@ esac ;; #(
  			  test "$GCC" = yes && test "$rb_cv_prog_gnu_ld" = yes || LDSHARED='$(LD) -Bshareable'
  			fi
  			rb_cv_dlopen=yes ;; #(
@@ -34,7 +34,7 @@ so ports don't have to be bumped when OpenBSD version changes.
      	: ${LDSHARED='$(CC) -shared ${CCDLFLAGS}'}
  			if test "$rb_cv_binary_elf" = yes; then
  			    LDFLAGS="$LDFLAGS -Wl,-E"
-@@ -20814,10 +20814,10 @@ esac
+@@ -20970,10 +20970,10 @@ esac
  	   LIBRUBY_ALIASES=""
  	fi
  	 ;; #(
@@ -47,7 +47,7 @@ so ports don't have to be bumped when OpenBSD version changes.
  	 ;; #(
    solaris*) :
  
-@@ -21924,7 +21924,11 @@ _ACEOF
+@@ -22080,7 +22080,11 @@ _ACEOF
  _ACEOF
  
  else
