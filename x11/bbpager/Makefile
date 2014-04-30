@@ -20,7 +20,7 @@ BUILD_DEPENDS = x11/blackbox
 MODULES =	converters/libiconv
 
 WANTLIB =	ICE SM X11 Xau Xdmcp Xext Xft Xrender c expat fontconfig \
-		freetype m stdc++ z pthread-stubs xcb
+		freetype m z pthread-stubs xcb
 WANTLIB+=	c++ c++abi pthread
 
 
