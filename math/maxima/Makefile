@@ -5,6 +5,7 @@ COMMENT=		GPL computer algebra system based on DOE Macsyma
 VERSION=		5.29.1
 DISTNAME=		maxima-${VERSION}
 CATEGORIES=		math
+REVISION=		0
 
 HOMEPAGE=		http://maxima.sourceforge.net/
 MAINTAINER =		Edd Barrett <edd@openbsd.org>
