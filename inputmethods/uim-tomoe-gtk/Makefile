@@ -3,7 +3,7 @@
 COMMENT=	japanese handwriting
 
 DISTNAME=	uim-tomoe-gtk-0.2.0
-REVISION=	7
+REVISION=	8
 
 HOMEPAGE= 	http://tomoe.sourceforge.jp/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE_JP:=tomoe/17172/}
@@ -29,6 +29,7 @@ WANTLIB=	Xrender Xext X11 m z png freetype fontconfig \
 		tomoe Xau Xcomposite Xcursor Xdamage Xdmcp Xfixes Xi \
 		Xinerama Xrandr expat pcre pixman-1 pthread-stubs xcb \
 		tomoe-gtk gcroots uim uim-scm gthread-2.0 pthread \
-		xcb-render GL Xxf86vm drm ffi stdc++ xcb-shm
+		xcb-render GL Xxf86vm drm ffi xcb-shm
+WANTLIB +=	c++ c++abi
 
 .include <bsd.port.mk>

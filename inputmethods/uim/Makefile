@@ -53,7 +53,7 @@ RUN_DEPENDS-main=${RUN_DEPENDS} \
 LIB_DEPENDS-main =	inputmethods/anthy \
 			${MODGETTEXT_LIB_DEPENDS}
 WANTLIB-main=	${Wcommon} curses \
-		util Xft stdc++ anthy anthydic
+		util Xft anthy anthydic
 WANTLIB-main +=	c++ c++abi pthread
 
 uim_LIB_DEPENDS=inputmethods/uim
