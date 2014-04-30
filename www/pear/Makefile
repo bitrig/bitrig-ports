@@ -9,7 +9,7 @@ PKGNAME-main=	${DISTNAME}
 PKGNAME-utils=	pear-utils-${VERSION}
 CATEGORIES=	www devel
 
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	http://pear.php.net/
 MASTER_SITES=	http://blade2k.humppa.hu/
