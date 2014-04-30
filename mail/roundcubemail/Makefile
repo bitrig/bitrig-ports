@@ -3,7 +3,7 @@
 COMMENT=	imap4 webmail client
 
 DISTNAME=	roundcubemail-0.9.5
-REVISION=	1
+REVISION=	2
 PKGNAME=	${DISTNAME:S/-rc/rc/}
 CATEGORIES=	mail www
 HOMEPAGE=	http://www.roundcube.net/

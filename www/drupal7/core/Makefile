@@ -6,6 +6,7 @@ MAINTAINER =	Marc Espie <espie@openbsd.org>
 DISTNAME =	drupal-7.26
 PKGNAME =	drupal-7.26
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
+REVISION =	0
 
 MODULES =	lang/php
 RUN_DEPENDS =	lang/php/${MODPHP_VERSION},-gd

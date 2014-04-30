@@ -5,6 +5,7 @@ MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 DISTNAME =	drupal-6.30
 DISTFILES =	${DISTNAME}${EXTRACT_SUFX}
+REVISION =	0
 
 MODULES=	lang/php
 RUN_DEPENDS=	php-mysql-${MODPHP_VSPEC}|php-mysqli-${MODPHP_VSPEC}|php-pgsql-${MODPHP_VSPEC}:lang/php/${MODPHP_VERSION},-mysql \

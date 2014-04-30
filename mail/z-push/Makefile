@@ -8,6 +8,8 @@ PKGNAME=	z-push-${V}
 
 CATEGORIES=	mail www
 
+REVISION=	0
+
 HOMEPAGE=	http://z-push.sourceforge.net/
 
 MAINTAINER=	Robert Nagy <robert@openbsd.org>
