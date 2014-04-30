@@ -14,8 +14,8 @@ SHARED_LIBS=		gps	19.0 \
 CATEGORIES=		misc geo
 
 REVISION-main=		6
-REVISION-php=		5
-REVISION-x11=		1
+REVISION-php=		6
+REVISION-x11=		2
 
 HOMEPAGE=		http://gpsd.berlios.de/
 
