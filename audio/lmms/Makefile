@@ -7,7 +7,7 @@ ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 COMMENT =		music studio with tracking, sampling and MIDI
 
 DISTNAME =		lmms-0.4.8
-REVISION =		4
+REVISION =		5
 CATEGORIES =		audio
 
 HOMEPAGE =		http://lmms.sourceforge.net/
@@ -18,7 +18,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		ICE SM QtGui QtXml X11 Xext Xft Xinerama c fltk jack \
 			fftw3f fluidsynth fontconfig freetype m ncurses ogg \
 			pthread readline samplerate sndfile sndio vorbis \
-			vorbisenc vorbisfile z stdc++
+			vorbisenc vorbisfile z
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=lmms/}
 EXTRACT_SUFX =		.tar.bz2

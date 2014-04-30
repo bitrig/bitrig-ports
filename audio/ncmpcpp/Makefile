@@ -3,7 +3,7 @@
 COMMENT =		ncurses mpd client inspired by ncmpc
 
 DISTNAME =		ncmpcpp-0.5.10
-REVISION =		4
+REVISION =		5
 
 EXTRACT_SUFX =		.tar.bz2
 
@@ -21,6 +21,7 @@ MASTER_SITES =		${HOMEPAGE}stable/ \
 
 WANTLIB =		c crypto curl idn m mpdclient \
 			ncursesw pthread ssl stdc++ tag z
+WANTLIB +=		c++ c++abi
 
 LIB_DEPENDS =		audio/libmpdclient>=2.4 \
 			audio/taglib \
