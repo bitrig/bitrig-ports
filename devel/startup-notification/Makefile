@@ -4,7 +4,7 @@ COMMENT=		library for tracking application startup
 
 DISTNAME=		startup-notification-0.12
 CATEGORIES=		devel x11
-REVISION=		3
+REVISION=		4
 
 SHARED_LIBS +=  startup-notification-1 2.0      # .0.0
 
@@ -13,7 +13,7 @@ HOMEPAGE=		http://www.freedesktop.org/wiki/Software/startup-notification
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += X11 X11-xcb Xau Xdmcp pthread-stubs xcb xcb-util
+WANTLIB += X11 X11-xcb Xau Xdmcp pthread-stubs xcb xcb-aux
 
 MASTER_SITES=		http://www.freedesktop.org/software/startup-notification/releases/
 
