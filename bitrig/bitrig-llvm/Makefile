@@ -10,7 +10,7 @@ LLVM_V =	3.4
 DISTREALNAME =	llvm-${LLVM_V}
 DISTNAME =	bitrig-${DISTREALNAME}
 PKGNAME =	bitrig-llvm-${LLVM_V}
-REVISION = 	9
+REVISION = 	10
 
 CATEGORIES =	bitrig
 
@@ -26,7 +26,7 @@ ONLY_FOR_ARCHS = amd64 i386 arm
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =	c m pthread z
-WANTLIB =	c++ c++abi
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
 
