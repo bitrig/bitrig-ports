@@ -5,6 +5,7 @@ COMMENT =	Mozilla web browser
 # Don't forget to bump www/firefox-i18n after updates.
 # Don't forget to update devel/xulrunner/2.0 if patches changes.
 
+REVISION =		0
 MOZILLA_VERSION =	28.0
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	firefox

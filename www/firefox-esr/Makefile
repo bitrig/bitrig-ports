@@ -2,6 +2,7 @@
 
 COMMENT =	Firefox web browser, Extended Support Release
 
+REVISION =		0
 MOZILLA_VERSION =	24.4.0esr
 MOZILLA_BRANCH =	esr24
 MOZILLA_PROJECT =	firefox

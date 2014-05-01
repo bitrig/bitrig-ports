@@ -8,6 +8,7 @@ PKGNAME-devel =		xulrunner-devel-${MOZILLA_VERSION}
 
 MOZILLA_CODENAME =	xulrunner
 CATEGORIES +=		devel
+REVISION =		0
 
 HOMEPAGE =		http://developer.mozilla.org/en/docs/XULRunner
 

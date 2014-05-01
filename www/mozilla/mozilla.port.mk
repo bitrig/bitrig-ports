@@ -56,7 +56,8 @@ MODMOZ_WANTLIB +=	X11 Xcomposite Xcursor Xdamage Xext Xfixes Xi \
 		gobject-2.0 gthread-2.0 gtk-x11-2.0 m \
 		nspr4 nss3 pango-1.0 pangocairo-1.0 pangoft2-1.0 \
 		plc4 plds4 pthread event kvm sqlite3>=27 \
-		smime3 sndio nssutil3 ssl3 stdc++ z
+		smime3 sndio nssutil3 ssl3 z
+MODMOZ_WANTLIB +=	c++ c++abi
 
 # hack to build against systemwide sqlite3 (# 546162)
 CONFIGURE_ENV +=	ac_cv_sqlite_secure_delete=yes
