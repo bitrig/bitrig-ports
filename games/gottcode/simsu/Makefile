@@ -3,5 +3,6 @@
 GAME =		simsu
 COMMENT =	basic sudoku game
 DISTNAME =	${GAME}-1.2.3-src
+REVISION =	0
 
 .include <bsd.port.mk>

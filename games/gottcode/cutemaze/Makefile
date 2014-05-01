@@ -4,5 +4,6 @@ GAME =		cutemaze
 COMMENT =	simple maze game
 DISTNAME =	${GAME}-1.1.0-src
 WANTLIB +=	QtSvg
+REVISION =	0
 
 .include <bsd.port.mk>

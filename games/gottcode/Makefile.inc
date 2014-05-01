@@ -14,7 +14,8 @@ WRKDIST ?=	${WRKDIR}/${DISTNAME:S/-src//}
 MODULES +=	x11/qt4
 RUN_DEPENDS +=	devel/desktop-file-utils x11/gtk+2,-guic
 WANTLIB +=	ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
-WANTLIB +=	QtGui c m pthread stdc++
+WANTLIB +=	QtGui c m pthread
+WANTLIB +=	c++ c++abi
 
 MAKE_FLAGS +=	CXX=${CXX} \
 		QMAKE_CXXFLAGS="${CXXFLAGS}"
