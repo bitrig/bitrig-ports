@@ -13,7 +13,7 @@ HOMEPAGE=		http://www.freedesktop.org/wiki/Software/startup-notification
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += X11 X11-xcb Xau Xdmcp pthread-stubs xcb xcb-util
+WANTLIB += X11 X11-xcb Xau Xdmcp pthread-stubs xcb
 
 MASTER_SITES=		http://www.freedesktop.org/software/startup-notification/releases/
 
