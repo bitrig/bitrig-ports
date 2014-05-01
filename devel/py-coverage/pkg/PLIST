@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.5 2013/05/12 07:16:44 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.6 2014/05/01 13:05:29 benoit Exp $
 bin/coverage
 bin/coverage-${MODPY_VERSION}
 bin/coverage2
