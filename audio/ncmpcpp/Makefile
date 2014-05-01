@@ -20,7 +20,7 @@ MASTER_SITES =		${HOMEPAGE}stable/ \
 			http://distfiles.nl/
 
 WANTLIB =		c crypto curl idn m mpdclient \
-			ncursesw pthread ssl stdc++ tag z
+			ncursesw pthread ssl tag z
 WANTLIB +=		c++ c++abi
 
 LIB_DEPENDS =		audio/libmpdclient>=2.4 \
