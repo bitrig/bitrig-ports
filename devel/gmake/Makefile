@@ -20,7 +20,7 @@ WANTLIB=	c
 
 SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE= gnu
-CONFIGURE_ARGS= --program-prefix="g"
+CONFIGURE_ARGS= --program-prefix="g" --without-guile
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
