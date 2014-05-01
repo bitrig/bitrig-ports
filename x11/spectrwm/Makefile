@@ -15,7 +15,7 @@ MAINTAINER=		Gonzalo L. R. <gonzalo@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += X11 X11-xcb Xcursor Xft c util xcb xcb-util xcb-icccm
+WANTLIB += X11 X11-xcb Xcursor Xft c util xcb xcb-icccm xcb-aux
 WANTLIB += xcb-keysyms xcb-randr xcb-xtest
 
 MASTER_SITES=	http://opensource.conformal.com/snapshots/spectrwm/
