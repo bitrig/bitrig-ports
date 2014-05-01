@@ -5,6 +5,7 @@ COMMENT =	postgresql client for Node.js
 NPM_VERSION =	2.8.2
 NPM_NAME =	pg
 CATEGORIES =	databases
+REVISION =	0
 
 MAINTAINER =	Roman Kravchuk <kravchuk.kp@gmail.com>
 

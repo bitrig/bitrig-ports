@@ -4,7 +4,7 @@ COMMENT =	bridge API connect to Java for Node.js
 
 NPM_VERSION =	0.2.9
 NPM_NAME =	java
-REVISION =	0
+REVISION =	1
 CATEGORIES =	lang
 
 MAINTAINER =	Roman Kravchuk <kravchuk.kp@gmail.com>

@@ -9,7 +9,7 @@ ONLY_FOR_ARCHS= amd64 i386
 COMMENT =	fiber/coroutine support for Node.js
 
 NPM_VERSION =	1.0.1
-REVISION =	0
+REVISION =	1
 NPM_NAME =	fibers
 CATEGORIES =	devel
 

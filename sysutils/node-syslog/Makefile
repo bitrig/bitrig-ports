@@ -6,7 +6,7 @@ NPM_VERSION =	1.1.7
 NPM_NAME =	node-syslog
 CATEGORIES =	sysutils
 
-REVISION = 	3
+REVISION = 	4
 
 HOMEPAGE =	https://github.com/schamane/node-syslog
 

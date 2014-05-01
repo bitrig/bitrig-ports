@@ -5,7 +5,7 @@ COMMENT =	sqlite3 bindings for Node.js
 NPM_VERSION =	2.1.7
 NPM_NAME =	sqlite3
 
-REVISION = 2
+REVISION = 3
 
 CATEGORIES =	databases
 

@@ -5,7 +5,7 @@ COMMENT =	Cairo-backed Canvas implementation for Node.js
 NPM_VERSION =	1.0.0
 NPM_NAME =	canvas
 CATEGORIES =	graphics
-REVISION =	3
+REVISION =	4
 
 HOMEPAGE =	https://github.com/learnboost/node-canvas
 

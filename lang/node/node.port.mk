@@ -17,7 +17,8 @@ ERRORS +=	"Fatal: Should not have PKG_ARCH=* when compiling extensions"
 .    endif
 SHARED_ONLY =	Yes
 # All node extensions appear to link against these libraries
-WANTLIB +=	m stdc++ crypto pthread ssl z
+WANTLIB +=	m crypto pthread ssl z
+WANTLIB +=	c++ c++abi
 .  else
 # Node libraries that don't contain C++ extensions should run on
 # any arch.

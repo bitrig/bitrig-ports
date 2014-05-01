@@ -5,7 +5,7 @@ COMMENT =	bcrypt hashing library for Node.js
 NPM_VERSION =	0.7.5
 NPM_NAME =	bcrypt
 CATEGORIES =	security
-REVISION =	2
+REVISION =	3
 
 HOMEPAGE =	https://github.com/ncb000gt/node.bcrypt.js
 
