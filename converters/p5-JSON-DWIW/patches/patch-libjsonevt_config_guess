@@ -1,0 +1,13 @@
+--- libjsonevt/config.guess.orig	Sat May  3 15:52:32 2014
++++ libjsonevt/config.guess	Sat May  3 15:53:11 2014
+@@ -205,6 +205,10 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
+ 	UNAME_MACHINE_ARCH=`arch | sed 's/OpenBSD.//'`
+ 	echo ${UNAME_MACHINE_ARCH}-unknown-openbsd${UNAME_RELEASE}
+ 	exit ;;
++    *:Bitrig:*:*)
++	UNAME_MACHINE_ARCH=`arch | sed 's/Bitrig.//'`
++	echo ${UNAME_MACHINE_ARCH}-unknown-bitrig${UNAME_RELEASE}
++	exit ;;
+     *:ekkoBSD:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-ekkobsd${UNAME_RELEASE}
+ 	exit ;;
