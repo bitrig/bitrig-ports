@@ -1,0 +1,11 @@
+--- src/google/protobuf/message.cc.orig	Sat May  3 16:03:54 2014
++++ src/google/protobuf/message.cc	Sat May  3 16:04:19 2014
+@@ -49,6 +49,8 @@
+ #include <google/protobuf/stubs/map-util.h>
+ #include <google/protobuf/stubs/stl_util-inl.h>
+ 
++#include <istream>
++
+ namespace google {
+ namespace protobuf {
+ 
