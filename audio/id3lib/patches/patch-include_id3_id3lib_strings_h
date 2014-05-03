@@ -1,0 +1,10 @@
+--- include/id3/id3lib_strings.h.orig	Sat Mar  1 19:23:00 2003
++++ include/id3/id3lib_strings.h	Sat May  3 15:22:30 2014
+@@ -29,6 +29,7 @@
+ #ifndef _ID3LIB_STRINGS_H_
+ #define _ID3LIB_STRINGS_H_
+ 
++#include <cstring>
+ #include <string>
+ 
+ #if (defined(__GNUC__) && (__GNUC__ >= 3) || (defined(_MSC_VER) && _MSC_VER > 1000))

@@ -1,0 +1,10 @@
+--- configure.in.orig	Sat Mar  1 19:23:00 2003
++++ configure.in	Sat May  3 15:22:30 2014
+@@ -227,7 +227,6 @@ AC_CHECK_HEADERS(fstream iostream iomanip vector \
+ )
+ AC_CHECK_HEADERS(               \
+   string                        \
+-  iomanip.h                     \
+   ,,AC_MSG_ERROR([Missing a vital header file for id3lib])
+ )
+ 

@@ -1,16 +1,11 @@
 $OpenBSD: patch-configure,v 1.2 2004/01/05 13:53:35 espie Exp $
---- configure.orig	2003-03-02 01:23:00.000000000 +0100
-+++ configure	2004-01-05 03:38:40.000000000 +0100
-@@ -1452,9 +1452,9 @@ DOX_DIR_RTF=rtf
+--- configure.orig	Sat May  3 15:11:15 2014
++++ configure	Sat May  3 15:22:30 2014
+@@ -10296,7 +10296,6 @@ done
  
- # libtool versioning
- LT_RELEASE=$ID3LIB_MAJOR_VERSION.$ID3LIB_MINOR_VERSION
--LT_CURRENT=`expr $ID3LIB_PATCH_VERSION - $ID3LIB_INTERFACE_AGE`
--LT_REVISION=$ID3LIB_INTERFACE_AGE
--LT_AGE=`expr $ID3LIB_BINARY_AGE - $ID3LIB_INTERFACE_AGE`
-+LT_CURRENT=3
-+LT_REVISION=8
-+LT_AGE=0
+ for ac_header in \
+   string                        \
+-  iomanip.h                     \
  
- 
- 
+ do
+ as_ac_Header=`echo "ac_cv_header_$ac_header" | $as_tr_sh`

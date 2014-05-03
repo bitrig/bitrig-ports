@@ -1,0 +1,13 @@
+--- include/id3/writers.h.orig	Sat Mar  1 19:23:00 2003
++++ include/id3/writers.h	Sat May  3 15:22:30 2014
+@@ -28,9 +28,9 @@
+ #ifndef _ID3LIB_WRITERS_H_
+ #define _ID3LIB_WRITERS_H_
+ 
++#include <cstring>
+ #include "id3/writer.h"
+ #include "id3/id3lib_streams.h"
+-//#include <string.h>
+ 
+ class ID3_CPP_EXPORT ID3_OStreamWriter : public ID3_Writer
+ {
