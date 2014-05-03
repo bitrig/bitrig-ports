@@ -1,0 +1,10 @@
+--- demos/FFConsoleDemo.cpp.orig	Sat May  3 15:37:53 2014
++++ demos/FFConsoleDemo.cpp	Sat May  3 15:38:26 2014
+@@ -19,6 +19,7 @@ using namespace std;
+ ////////////////////////////////////Needed Linux Headers//////////////
+ #elif defined OIS_LINUX_PLATFORM
+ #  include <X11/Xlib.h>
++#  include <unistd.h>
+ #else
+ #  error Sorry, not yet implemented on this platform.
+ #endif
