@@ -17,6 +17,6 @@ NO_TEST=	Yes
 FAKE_FLAGS=	PREFIX=${WRKINST}${PREFIX}
 
 pre-build:
-	@cp ${FILESDIR}/Make.OpenBSD ${WRKSRC}
+	@cp ${FILESDIR}/Make.* ${WRKSRC}
 
 .include <bsd.port.mk>
