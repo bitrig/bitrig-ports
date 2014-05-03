@@ -1,0 +1,11 @@
+--- liboil/amd64/wavelet.c.orig	Sat May  3 16:14:13 2014
++++ liboil/amd64/wavelet.c	Sat May  3 16:14:47 2014
+@@ -1753,7 +1753,7 @@ mas8_across_add_s16_mmx (int16_t *d, int16_t *s1, int1
+         [s3_8] "+r" (s3_8),
+         [d] "+r" (d),
+         [n] "+m" (n),
+-        [s1] "+r" ((long)(s1))
++        [s1] "+r" (s1)
+       : [sstr] "r" ((long)(sstr2))
+       );
+ }
