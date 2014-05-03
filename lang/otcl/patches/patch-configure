@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.7 2012/04/28 18:06:29 stu Exp $
 --- configure.orig	Sun Sep  5 00:33:59 2010
-+++ configure	Mon Apr 23 11:16:49 2012
++++ configure	Sat May  3 15:08:01 2014
 @@ -4814,6 +4814,7 @@ TCL_OLD_ALT_VERS=`echo $TCL_OLD_VERS | sed 's/\.//'`
  
  TCL_TCL_PLACES_D="$d \
@@ -17,6 +17,15 @@ $OpenBSD: patch-configure,v 1.7 2012/04/28 18:06:29 stu Exp $
                  $d/lib64/tk$TK_VERS \
                  $d/lib64/tk$TK_ALT_VERS \
  		$d/lib64/tk$TK_HI_VERS \
+@@ -6734,7 +6736,7 @@ fi
+ 	DL_LD_FLAGS="-Wl,-Bexport"
+ 	DL_LD_SEARCH_FLAGS=""
+ 	;;
+-    NetBSD-*|FreeBSD-*|OpenBSD-*)
++    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*)
+ 	# Not available on all versions:  check for include file.
+ 	if test "${ac_cv_header_dlfcn_h+set}" = set; then
+   { $as_echo "$as_me:$LINENO: checking for dlfcn.h" >&5
 @@ -6866,9 +6868,9 @@ fi
  if test "x$ac_cv_header_dlfcn_h" = x""yes; then
  
@@ -29,6 +38,15 @@ $OpenBSD: patch-configure,v 1.7 2012/04/28 18:06:29 stu Exp $
  	    DL_LIBS=""
  	    DL_LD_FLAGS=""
  	    DL_LD_SEARCH_FLAGS=""
+@@ -7086,7 +7088,7 @@ esac
+ 		;;
+ 	    IRIX*)
+ 		;;
+-	    NetBSD-*|FreeBSD-*|OpenBSD-*)
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*)
+ 		;;
+ 	    RISCos-*)
+ 		;;
 @@ -7122,9 +7124,6 @@ fi
  #
  
