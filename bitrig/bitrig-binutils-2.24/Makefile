@@ -18,7 +18,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 REALDISTNAME = 	binutils-${VER}
 DISTNAME =	${REALDISTNAME}
-REVISION =	1
+REVISION =	2
 DISTFILES =	${REALDISTNAME}.tar.bz2
 EXTRACT_ONLY =	${REALDISTNAME}.tar.bz2
 
@@ -45,8 +45,8 @@ TARGET_ARCH=x86_64
 CONFIGURE_ARGS+=--target=${TARGET_ARCH}-unknown-bitrig${OSREV}
 AMD64=1
 .elif "${FLAVOR}" == "armcross"
-TARGET_ARCH=arm
-CONFIGURE_ARGS+=--target=${TARGET_ARCH}-unknown-bitrig${OSREV}
+TARGET_ARCH=armv7
+CONFIGURE_ARGS+=--target=${TARGET_ARCH}-unknown-bitrig${OSREV}-gnueabihf
 ARM=1
 .elif ${MACHINE_ARCH} == "aarch64"
 AARCH64=1
@@ -55,6 +55,9 @@ COMMON=1
 AMD64=1
 COMMON=1
 .elif ${MACHINE_ARCH} == "arm"
+CONFIGURE_ARGS+=--target=${MACHINE_ARCH}v7-unknown-bitrig${OSREV}-gnueabihf
+CONFIGURE_ARGS+=--host=${MACHINE_ARCH}v7-unknown-bitrig${OSREV}-gnueabihf
+CONFIGURE_ARGS+=--build=${MACHINE_ARCH}v7-unknown-bitrig${OSREV}-gnueabihf
 ARM=1
 COMMON=1
 .endif

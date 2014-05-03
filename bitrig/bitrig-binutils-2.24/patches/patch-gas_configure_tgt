@@ -1,6 +1,6 @@
 $OpenBSD$
 --- gas/configure.tgt.orig	Mon Nov  4 16:33:37 2013
-+++ gas/configure.tgt	Fri Jan 31 22:05:22 2014
++++ gas/configure.tgt	Mon May 12 19:36:17 2014
 @@ -118,6 +118,7 @@ generic_target=${cpu_type}-$vendor-$os
  case ${generic_target} in
    aarch64*-*-elf)			fmt=elf;;
@@ -13,7 +13,7 @@ $OpenBSD$
    arm-*-netbsdelf*)			fmt=elf  em=nbsd ;;
    arm-*-*n*bsd*)			fmt=aout em=nbsd ;;
    arm-*-nto*)				fmt=elf ;;
-+  arm-*-openbsd* | arm-*-bitrig*)		fmt=elf  em=obsd ;;
++  arm*-*-bitrig*)			fmt=elf  em=armbitrigeabi ;;
    arm-epoc-pe)				fmt=coff em=epoc-pe ;;
    arm-wince-pe | arm-*-wince | arm*-*-mingw32ce* | arm*-*-cegcc*)
  					fmt=coff em=wince-pe ;;

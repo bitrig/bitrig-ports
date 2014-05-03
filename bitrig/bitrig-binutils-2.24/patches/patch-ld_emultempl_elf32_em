@@ -1,6 +1,6 @@
 $OpenBSD$
---- ld/emultempl/elf32.em.orig	Tue Nov 26 12:37:33 2013
-+++ ld/emultempl/elf32.em	Mon May 12 14:42:14 2014
+--- ld/emultempl/elf32.em.orig	Tue Nov 26 06:37:33 2013
++++ ld/emultempl/elf32.em	Mon May 19 10:51:53 2014
 @@ -82,6 +82,235 @@ EOF
    esac
  fi
@@ -263,6 +263,15 @@ $OpenBSD$
    needed.name = n->name;
  
    len = strlen (name);
+@@ -664,7 +912,7 @@ gld${EMULATION_NAME}_parse_ld_so_conf_include
+ #ifdef HAVE_GLOB
+   if (glob (pattern, 0, NULL, &gl) == 0)
+     {
+-      size_t i;
++      int i;
+ 
+       for (i = 0; i < gl.gl_pathc; ++i)
+ 	gld${EMULATION_NAME}_parse_ld_so_conf (info, gl.gl_pathv[i]);
 @@ -1276,6 +1524,33 @@ fragment <<EOF
  	    break;
  EOF

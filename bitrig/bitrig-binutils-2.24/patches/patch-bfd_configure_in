@@ -6,7 +6,7 @@ $OpenBSD$
    arm-*-freebsd* | arm-*-kfreebsd*-gnu)
  	COREFILE='' ;;
 -  arm-*-netbsd* | arm-*-openbsd*)
-+  arm-*-netbsd* | arm-*-openbsd* | arm-*-bitrig*)
++  arm-*-netbsd* | arm-*-openbsd* | arm*-*-bitrig*)
  	COREFILE=netbsd-core.lo
  	;;
    arm-*-riscix)		COREFILE=trad-core.lo ;;
