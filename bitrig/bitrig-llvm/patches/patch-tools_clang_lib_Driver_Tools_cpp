@@ -1,5 +1,5 @@
 --- tools/clang/lib/Driver/Tools.cpp.orig	Mon Dec  9 03:59:27 2013
-+++ tools/clang/lib/Driver/Tools.cpp	Fri May  2 08:25:37 2014
++++ tools/clang/lib/Driver/Tools.cpp	Mon May 12 19:41:02 2014
 @@ -2627,8 +2627,9 @@ void Clang::ConstructJob(Compilation &C, const JobActi
        CmdArgs.push_back("-gdwarf-4");
      else if (!A->getOption().matches(options::OPT_g0) &&
@@ -12,7 +12,30 @@
          CmdArgs.push_back("-gdwarf-2");
        else
          CmdArgs.push_back("-g");
-@@ -5698,6 +5699,9 @@ void bitrig::Link::ConstructJob(Compilation &C, const 
+@@ -5595,6 +5596,22 @@ void bitrig::Assemble::ConstructJob(Compilation &C, co
+                                     const char *LinkingOutput) const {
+   ArgStringList CmdArgs;
+ 
++  if (getToolChain().getArch() == llvm::Triple::arm) {
++    StringRef MArch = getToolChain().getArchName();
++    if (MArch == "armv7" || MArch == "armv7a" || MArch == "armv7-a")
++      CmdArgs.push_back("-mfpu=neon");
++    if (MArch == "armv8" || MArch == "armv8a" || MArch == "armv8-a")
++      CmdArgs.push_back("-mfpu=crypto-neon-fp-armv8");
++
++    StringRef ARMFloatABI = getARMFloatABI(getToolChain().getDriver(), Args,
++                                           getToolChain().getTriple());
++    CmdArgs.push_back(Args.MakeArgString("-mfloat-abi=" + ARMFloatABI));
++
++    Args.AddLastArg(CmdArgs, options::OPT_march_EQ);
++    Args.AddLastArg(CmdArgs, options::OPT_mcpu_EQ);
++    Args.AddLastArg(CmdArgs, options::OPT_mfpu_EQ);
++  }
++
+   Args.AddAllArgValues(CmdArgs, options::OPT_Wa_COMMA,
+                        options::OPT_Xassembler);
+ 
+@@ -5698,6 +5715,9 @@ void bitrig::Link::ConstructJob(Compilation &C, const 
  
      StringRef MyArch;
      switch (getToolChain().getTriple().getArch()) {
