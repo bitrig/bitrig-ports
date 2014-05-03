@@ -30,6 +30,10 @@ WANTLIB += c m pthread readline nspr4 ncurses plc4 plds4 z
 WANTLIB += c++ c++abi
 
 MODULES =	lang/python
+MODULES +=	gcc4
+MODGCC4_ARCHS =	*
+MODGCC4_LANGS =	c c++
+
 MODPY_RUNDEP =	No
 TEST_DEPENDS = ${MODPY_RUN_DEPENDS}
 LIB_DEPENDS =	devel/nspr devel/readline
@@ -52,9 +56,6 @@ CONFIGURE_ENV +=	SO_VERSION="${SO_VERSION}" \
 			MOZILLA_VERSION="${MOZILLA_VERSION}" \
 			LIBS=-lncurses \
 			LDFLAGS="${LDFLAGS} -L${LOCALBASE}/lib"
-
-CC =			gcc
-CXX =			g++
 
 post-install:
 	rm ${PREFIX}/lib/libmozjs-${MOZILLA_VERSION}.a
