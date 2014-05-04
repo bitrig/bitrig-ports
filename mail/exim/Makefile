@@ -95,6 +95,8 @@ do-configure:
 	@cp ${FILESDIR}/Makefile ${WRKSRC}/Local
 	@echo -n ${EXIM_MAKECAT} >> ${WRKSRC}/Local/Makefile
 	@cp ${FILESDIR}/eximon.conf ${WRKSRC}/Local
+	@cp ${WRKSRC}/OS/Makefile-OpenBSD ${WRKSRC}/OS/Makefile-Bitrig
+	@cp ${WRKSRC}/OS/os.h-OpenBSD ${WRKSRC}/OS/os.h-Bitrig
 
 pre-fake:
 	${INSTALL_DATA_DIR} ${WRKINST}${SYSCONFDIR}/mail
