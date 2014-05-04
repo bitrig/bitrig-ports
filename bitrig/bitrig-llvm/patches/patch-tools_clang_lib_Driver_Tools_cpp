@@ -1,6 +1,18 @@
---- tools/clang/lib/Driver/Tools.cpp.orig	Sat Feb  1 23:26:47 2014
-+++ tools/clang/lib/Driver/Tools.cpp	Sat Feb  1 23:25:57 2014
-@@ -5698,6 +5698,9 @@ void bitrig::Link::ConstructJob(Compilation &C, const 
+--- tools/clang/lib/Driver/Tools.cpp.orig	Mon Dec  9 03:59:27 2013
++++ tools/clang/lib/Driver/Tools.cpp	Fri May  2 08:25:37 2014
+@@ -2627,8 +2627,9 @@ void Clang::ConstructJob(Compilation &C, const JobActi
+       CmdArgs.push_back("-gdwarf-4");
+     else if (!A->getOption().matches(options::OPT_g0) &&
+              !A->getOption().matches(options::OPT_ggdb0)) {
+-      // Default is dwarf-2 for darwin.
+-      if (getToolChain().getTriple().isOSDarwin())
++      // Default is dwarf-2 for darwin and bitrig.
++      if (getToolChain().getTriple().isOSDarwin() ||
++	  getToolChain().getTriple().getOS() == llvm::Triple::Bitrig)
+         CmdArgs.push_back("-gdwarf-2");
+       else
+         CmdArgs.push_back("-g");
+@@ -5698,6 +5699,9 @@ void bitrig::Link::ConstructJob(Compilation &C, const 
  
      StringRef MyArch;
      switch (getToolChain().getTriple().getArch()) {

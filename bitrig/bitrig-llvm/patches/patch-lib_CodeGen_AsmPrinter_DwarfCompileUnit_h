@@ -1,0 +1,31 @@
+--- lib/CodeGen/AsmPrinter/DwarfCompileUnit.h.orig	Fri May  2 22:35:40 2014
++++ lib/CodeGen/AsmPrinter/DwarfCompileUnit.h	Fri May  2 22:35:09 2014
+@@ -209,6 +209,14 @@ class CompileUnit { (public)
+ 
+   void addLabel(DIEBlock *Die, dwarf::Form Form, const MCSymbol *Label);
+ 
++  /// addSectionLabel - Add a Dwarf section label attribute data and value.
++  ///
++  void addSectionLabel(DIE *Die, dwarf::Attribute Attribute, const MCSymbol *Label);
++
++  /// addSectionOffset - Add an offset into a section attribute data and value.
++  ///
++  void addSectionOffset(DIE *Die, dwarf::Attribute Attribute, uint64_t Integer);
++
+   /// addLabelAddress - Add a dwarf label attribute data and value using
+   /// either DW_FORM_addr or DW_FORM_GNU_addr_index.
+   ///
+@@ -219,10 +227,9 @@ class CompileUnit { (public)
+   ///
+   void addOpAddress(DIEBlock *Die, const MCSymbol *Label);
+ 
+-  /// addDelta - Add a label delta attribute data and value.
+-  ///
+-  void addDelta(DIE *Die, dwarf::Attribute Attribute, dwarf::Form Form, const MCSymbol *Hi,
+-                const MCSymbol *Lo);
++  /// addSectionDelta - Add a label delta attribute data and value.
++  void addSectionDelta(DIE *Die, dwarf::Attribute Attribute, const MCSymbol *Hi,
++                       const MCSymbol *Lo);
+ 
+   /// addDIEEntry - Add a DIE attribute data and value.
+   ///
