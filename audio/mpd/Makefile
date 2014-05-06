@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.56 2013/11/05 07:08:52 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.57 2014/05/06 10:49:23 dcoppa Exp $
 
 COMMENT =		Music Player Daemon
-DISTNAME =		mpd-0.17.6
+DISTNAME =		mpd-0.18.10
 CATEGORIES =		audio
 HOMEPAGE =		http://www.musicpd.org/
 MAINTAINER =		David Coppa <dcoppa@openbsd.org>
-REVISION =		0
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
@@ -13,10 +12,10 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		FLAC ao audiofile c cdio cdio_cdda cdio_paranoia \
 			curl glib-2.0 gthread-2.0 id3tag m mad \
 			mikmod ogg pthread samplerate sndfile sndio \
-			z
+			bz2 mpdclient opus z
 WANTLIB +=		c++ c++abi
 
-MASTER_SITES =		http://www.musicpd.org/download/mpd/0.17/
+MASTER_SITES =		http://www.musicpd.org/download/mpd/stable/
 
 MODULES =		devel/gettext
 
@@ -28,6 +27,8 @@ LIB_DEPENDS =		devel/libaudiofile \
 			audio/libid3tag \
 			audio/libmad \
 			audio/libmikmod \
+			audio/opus \
+			audio/libmpdclient \
 			net/curl \
 			devel/glib2
 
@@ -38,6 +39,7 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	--bindir=${PREFIX}/sbin \
 			--disable-alsa \
 			--disable-ffmpeg \
+			--disable-fluidsynth \
 			--disable-gme \
 			--disable-inotify \
 			--disable-jack \
@@ -46,11 +48,11 @@ CONFIGURE_ARGS +=	--bindir=${PREFIX}/sbin \
 			--disable-modplug \
 			--disable-mpg123 \
 			--disable-oss \
+			--disable-openal \
 			--disable-pulse \
 			--disable-roar \
 			--disable-sidplay \
 			--disable-soundcloud \
-			--disable-soup \
 			--disable-sqlite \
 			--disable-systemd-daemon \
 			--disable-twolame-encoder \
@@ -83,7 +85,7 @@ LIB_DEPENDS +=		audio/tremor
 WANTLIB +=		vorbisidec
 .else
 WANTLIB +=		theora vorbis vorbisfile vorbisenc speex mp3lame \
-			shout faad mp4ff mpcdec
+			shout faad mpcdec
 LIB_DEPENDS +=		audio/libvorbis \
 			audio/speex \
 			audio/lame \
@@ -94,7 +96,6 @@ CONFIGURE_ARGS +=	--enable-aac \
 			--enable-shout \
 			--enable-vorbis-encoder
 .endif
-
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/mpd
