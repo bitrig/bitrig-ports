@@ -1,0 +1,10 @@
+--- ipc/modules/subprocess.jsm.orig	Wed May  7 15:20:57 2014
++++ ipc/modules/subprocess.jsm	Wed May  7 15:21:56 2014
+@@ -341,6 +341,7 @@ function getPlatformValue(valueType) {
+         'freebsd': [ 'libc.so.7',    0x04     , ctypes.int64_t      , 8 ],
+         'gnu/kfreebsd': [ 'libc.so.0.1', 0x04 , ctypes.int64_t      , 8 ],
+         'openbsd': [ 'libc.so.61.0', 0x04     , ctypes.int64_t      , 8 ],
++        'bitrig':  [ 'libc.so.75.0', 0x04     , ctypes.int64_t      , 8 ],
+         'sunos':   [ 'libc.so',      0x80     , ctypes.unsigned_long, 5 ]
+     };
+ 

@@ -1,0 +1,13 @@
+--- Makefile.orig	Wed May  7 15:19:22 2014
++++ Makefile	Wed May  7 15:19:44 2014
+@@ -44,6 +44,10 @@ ifeq ($(OS_TARGET),OpenBSD)
+ PLATFORM_STR = openbsd
+ endif
+ 
++ifeq ($(OS_TARGET),Bitrig)
++PLATFORM_STR = bitrig
++endif
++
+ ifeq ($(OS_TARGET),OS2)
+ PLATFORM_STR = os2
+ endif
