@@ -1,6 +1,7 @@
 COMMENT=		CVS from OpenBSD base
 
 DISTNAME=		cvs-1.11.1p2
+REVISION=		0
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		devel
 
@@ -9,7 +10,7 @@ HOMEPAGE=		https://www.bitrig.org/
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB +=	asn1 c com_err crypto gssapi heimbase krb5 roken wind z
+WANTLIB +=	c crypto z
 
 MASTER_SITES=	https://www.bitrig.org/pub/distfiles/
 
