@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2013/11/25 14:16:23 sthen Exp $
+# $OpenBSD: Makefile,v 1.24 2014/05/07 15:42:16 kurt Exp $
 
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 # do not include i386 here until JDK 1.6 issues there are solved
@@ -16,8 +16,8 @@ PKGNAME-main =		${PKGNAME}
 PKGNAME-docs =		opencv-docs-$V
 PKGNAME-java =		opencv-java-$V
 
-REVISION-main =		0
-REVISION-java =		0
+REVISION-main =		1
+REVISION-java =		1
 
 HOMEPAGE =		http://www.opencv.org/
 MAINTAINER =		Rafael Sadowski <rafael@sizeofvoid.org>
