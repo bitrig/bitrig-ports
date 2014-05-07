@@ -10,9 +10,9 @@ lib/liblink-grammar.la
 @lib lib/liblink-grammar.so.${LIBlink-grammar_VERSION}
 lib/pkgconfig/
 lib/pkgconfig/link-grammar.pc
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/clinkgrammar.pm
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/clinkgrammar.so.5.6
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/clinkgrammar.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/clinkgrammar.so.5.6
 @man man/man1/link-parser.1
 share/link-grammar/
 share/link-grammar/any/

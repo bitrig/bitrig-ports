@@ -61,6 +61,6 @@ CONFIGURE_ARGS +=	--disable-java-bindings
 .endif
 
 post-install:
-	rm ${PREFIX}/libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/clinkgrammar.{a,la}
+	rm ${PREFIX}/libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/clinkgrammar.{a,la}
 
 .include <bsd.port.mk>
