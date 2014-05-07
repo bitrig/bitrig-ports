@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.6 2014/04/24 14:26:21 sthen Exp $
+# $OpenBSD: Makefile.inc,v 1.7 2014/05/07 20:52:06 sthen Exp $
 
 MULTI_PACKAGES=	-main
 # -ntlm may come back with samba 4
@@ -27,11 +27,10 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB += c m nettle pthread
 WANTLIB += c++ c++abi
 
-WANTLIB-main +=	${WANTLIB} crypto db execinfo ssl
+WANTLIB-main +=	${WANTLIB} crypto db ssl
 
 LIB_DEPENDS-main += ${LIB_DEPENDS} \
 		databases/db/v4 \
-		devel/libexecinfo \
 		security/libnettle
 
 SYSCONFDIR=	${BASESYSCONFDIR}/squid
@@ -41,11 +40,6 @@ PSEUDO_FLAVORS=	no_ldap
 FLAVOR?=
 
 SEPARATE_BUILD=	Yes
-AUTOCONF_VERSION?= 2.68
-AUTOMAKE_VERSION?= 1.11
-BUILD_DEPENDS=	${MODGNU_AUTOCONF_DEPENDS} \
-		${MODGNU_AUTOMAKE_DEPENDS} \
-		devel/libtool
 CONFIGURE_STYLE?= gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/cfgaux
 
@@ -55,7 +49,7 @@ USE_GROFF=	Yes
 # optimizer is disabled, see e.g.
 # http://www.squid-cache.org/mail-archive/squid-users/201208/0060.html
 MODULES+=	gcc4
-MODGCC4_ARCHS=	powerpc
+MODGCC4_ARCHS?=	powerpc
 MODGCC4_LANGS=	c c++
 
 CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
@@ -74,7 +68,6 @@ CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
 		--enable-removal-policies="lru heap" \
 		--enable-ssl \
 		--with-openssl \
-		--enable-stacktraces \
 		--enable-storeio="aufs ufs diskd rock" \
 		--with-default-user="_squid" \
 		--with-filedescriptors=8192 \
@@ -111,12 +104,6 @@ WANTLIB-ldap +=	${WANTLIB} crypto lber-2.4 ldap-2.4 sasl2 ssl
 #RUN_DEPENDS-ntlm= net/samba,ads ${BASE_PKGPATH}
 #LIB_DEPENDS-ntlm += security/libnettle
 #WANTLIB-ntlm +=	${WANTLIB}
-
-post-patch:
-	cd ${WRKSRC}; \
-	    AUTOCONF_VERSION=${AUTOCONF_VERSION} \
-	    AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
-	    LOCALBASE=${LOCALBASE} ./bootstrap.sh
 
 pre-build:
 	@cd ${WRKSRC}; \
