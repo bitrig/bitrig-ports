@@ -32,4 +32,6 @@ MODGNOME_TOOLS += 	desktop-file-utils gtk-update-icon-cache yelp
 
 FAKE_FLAGS=		sysconfdir=${PREFIX}/share/examples/seahorse
 
+CFLAGS +=		-Wno-return-type
+
 .include <bsd.port.mk>
