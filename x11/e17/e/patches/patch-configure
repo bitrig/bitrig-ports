@@ -2,8 +2,62 @@ $OpenBSD: patch-configure,v 1.7 2014/03/26 08:55:26 sthen Exp $
 
 Try to avoid linking against libintl.a, fix version number in paths.
 
---- configure.orig	Thu Oct 31 23:07:46 2013
-+++ configure	Wed Mar 26 08:54:44 2014
+--- configure.orig	Thu Oct 31 19:07:46 2013
++++ configure	Thu May  8 05:03:44 2014
+@@ -6555,7 +6555,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -7070,7 +7070,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -7686,7 +7686,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
+@@ -10187,7 +10187,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -11063,7 +11063,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -12110,7 +12110,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -14729,12 +14729,12 @@ else
  #include <libintl.h>
  $gt_revision_test_code
@@ -28,3 +82,12 @@ Try to avoid linking against libintl.a, fix version number in paths.
      INTLLIBS="$LIBINTL"
  
  
+@@ -18827,7 +18827,7 @@ case "$host_os" in
+   darwin*)
+     BATTERY_LDFLAGS="-framework Foundation -framework IOKit"
+   ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     have_openbsd="yes"
+   ;;
+ esac
