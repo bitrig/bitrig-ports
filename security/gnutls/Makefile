@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.99 2014/05/09 09:03:50 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.100 2014/05/09 13:54:06 sthen Exp $
 
 COMMENT=	GNU Transport Layer Security library
 
@@ -25,7 +25,8 @@ WANTLIB += c ffi gmp hogweed m nettle p11-kit pthread tasn1
 WANTLIB += z
 WANTLIB += c++ c++abi
 
-MASTER_SITES=	ftp://ftp.gnutls.org/gcrypt/gnutls/v${V:R}/
+MASTER_SITES=	ftp://ftp.gnutls.org/gcrypt/gnutls/v${V:R}/ \
+		http://mirrors.dotsrc.org/gcrypt/gnutls/v${V:R}/
 
 MODULES=	devel/gettext
 
