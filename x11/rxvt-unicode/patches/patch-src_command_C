@@ -1,0 +1,28 @@
+--- src/command.C.orig	Fri May  9 09:49:50 2014
++++ src/command.C	Fri May  9 09:49:53 2014
+@@ -2211,21 +2211,11 @@ rxvt_term::button_release (XButtonEvent &ev)
+               else
+                 lines = 5;
+ 
+-# ifdef MOUSE_SLIP_WHEELING
+-              if (ev.state & ControlMask)
+-                {
+-                  mouse_slip_wheel_speed += dirn;
+-                  clamp_it (mouse_slip_wheel_speed, -nrow, nrow);
++              mouse_slip_wheel_speed += dirn;
++              clamp_it (mouse_slip_wheel_speed, -nrow, nrow);
+ 
+-                  if (!slip_wheel_ev.is_active ())
+-                    slip_wheel_ev.start (SCROLLBAR_CONTINUOUS_DELAY, SCROLLBAR_CONTINUOUS_DELAY);
+-                }
+-              else
+-# endif
+-                {
+-                  scr_page (dirn, lines);
+-                  scrollBar.show (1);
+-                }
++              if (!slip_wheel_ev.is_active ())
++                slip_wheel_ev.start (SCROLLBAR_CONTINUOUS_DELAY, SCROLLBAR_CONTINUOUS_DELAY);
+             }
+             break;
+ #endif
