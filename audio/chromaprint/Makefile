@@ -1,21 +1,21 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/10 22:55:01 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2014/05/09 09:00:19 sthen Exp $
+
 SHARED_ONLY =		Yes
+
 COMMENT =		audio fingerprint extraction library
+
+DISTNAME =		chromaprint-1.1
 CATEGORIES =		audio devel
-HOMEPAGE =		http://acoustid.org/chromaprint/
-DISTNAME =		chromaprint-0.6
-REVISION =		0
+HOMEPAGE =		https://acoustid.org/chromaprint/
+MASTER_SITES =		https://bitbucket.org/acoustid/chromaprint/downloads/
 
-MASTER_SITES =		http://www.ohvost.ru/dnl/ \
-			http://malcolm.ecentrum.hu/distfiles/
-
-SHARED_LIBS =		chromaprint		0.0  # 0.1
+SHARED_LIBS =		chromaprint               1.0 # 0.1
 
 # LGPL2.1+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		avcodec avutil m
-WANTLIB +=		c++ c++abi pthread
+WANTLIB += avcodec avformat avutil c m pthread swresample
+WANTLIB += c++ c++abi
 
 MODULES =		devel/cmake
 
@@ -26,9 +26,13 @@ LIB_DEPENDS =		graphics/ffmpeg
 
 # gtest presence is checked in configure stage, so this cannot be in TEST_DEPENDS
 BUILD_DEPENDS +=	devel/gtest
-CONFIGURE_ARGS =	-DBUILD_TESTS:Bool=Yes
+CONFIGURE_ARGS =	-DBUILD_TESTS:Bool=Yes -DBUILD_EXAMPLES=ON
+
+post-patch:
+	perl -pi -e 's,/usr/local,${LOCALBASE},' \
+	    ${WRKSRC}/cmake/modules/FindGTest.cmake
 
 do-test:
-	cd ${WRKBUILD}/tests && ${MAKE_PROGRAM} check
+	cd ${WRKBUILD}/tests && ./all_tests
 
 .include <bsd.port.mk>
