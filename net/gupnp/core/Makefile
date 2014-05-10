@@ -27,4 +27,6 @@ CONFIGURE_ARGS=		--with-context-manager=unix
 
 MODGNU_CONFIG_GUESS_DIRS= ${WRKDIST}/build-aux
 
+CFLAGS+=	-Wno-return-type
+
 .include <bsd.port.mk>
