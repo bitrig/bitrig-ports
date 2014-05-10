@@ -13,7 +13,7 @@ MOZILLA_CODENAME =	mail
 MULTI_PACKAGES =	-main -lightning
 PKGNAME-main =		${PKGNAME}
 PKGNAME-lightning =	lightning-2.6.5
-REVISION-lightning =	0
+REVISION-lightning =	3
 EPOCH-lightning =	0
 
 HOMEPAGE =	http://www.mozilla.org/thunderbird/
