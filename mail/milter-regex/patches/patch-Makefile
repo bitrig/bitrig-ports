@@ -1,0 +1,13 @@
+--- Makefile.orig	Sun May 11 02:47:26 2014
++++ Makefile	Sun May 11 02:48:39 2014
+@@ -5,8 +5,8 @@ SRCS=	milter-regex.c eval.c parse.y
+ MAN=	milter-regex.8
+ 
+ CFLAGS+=	-Wall -Wstrict-prototypes -O0 -g
+-CFLAGS+=	-I/usr/src/gnu/usr.sbin/sendmail/include -I..
+-LDADD+=		-lmilter -lpthread -g
++CFLAGS+=	-I/usr/src/gnu/usr.sbin/sendmail/include -I.. -I${LOCALBASE}/include
++LDADD+=		-lmilter -lpthread -g -L${LOCALBASE}/lib
+ 
+ install:
+ 	sudo rm -rf /usr/local/libexec/milter-regex

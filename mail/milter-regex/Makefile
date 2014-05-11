@@ -14,6 +14,9 @@ MAINTAINER=	Daniel Hartmeier <dhartmei@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c pthread milter
 
+BUILD_DEPENDS=		${RUN_DEPENDS}
+RUN_DEPENDS=		mail/sendmail
+
 NO_TEST=	Yes
 
 do-configure:
