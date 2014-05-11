@@ -1,0 +1,94 @@
+--- src/strbuffer.h.orig	Sun Apr  1 12:49:09 2012
++++ src/strbuffer.h	Sun May 11 02:26:54 2014
+@@ -29,6 +29,42 @@
+ 
+ namespace NCurses
+ {
++
++    template <typename C> class basic_buffer;
++
++    template <typename C> Window &operator<<(Window &w, const basic_buffer<C> &buf)
++    {
++        const std::basic_string<C> &s = buf.itsTempString ? *buf.itsTempString : buf.itsString.str();
++        if (buf.itsFormat.empty())
++        {
++            w << s;
++        }
++        else
++        {
++            std::basic_string<C> tmp;
++            typename std::list<typename basic_buffer<C>::FormatPos>::const_iterator b = buf.itsFormat.begin();
++            typename std::list<typename basic_buffer<C>::FormatPos>::const_iterator e = buf.itsFormat.end();
++            for (size_t i = 0; i < s.length() || b != e; ++i)
++            {
++                while (b != e && i == b->Position)
++                {
++                    if (!tmp.empty())
++                    {
++                        w << tmp;
++                        tmp.clear();
++                    }
++                    buf.LoadAttribute(w, b->Value);
++                    b++;
++                }
++                if (i < s.length())
++                    tmp += s[i];
++            }
++            if (!tmp.empty())
++                w << tmp;
++        }
++        return w;
++    }
++
+ 	/// Buffer template class that can store text along with its
+ 	/// format attributes. The content can be easily printed to
+ 	/// window or taken as raw string at any time.
+@@ -43,7 +79,7 @@ namespace NCurses
+ 			size_t Position;
+ 			short Value;
+ 			
+-			bool operator<(const FormatPos &f)
++			bool operator<(const FormatPos &f) const
+ 			{
+ 				return Position < f.Position;
+ 			}
+@@ -362,39 +398,6 @@ template <typename C> NCurses::basic_buffer<C> &NCurse
+ 			it->Position += len;
+ 	itsFormat.merge(tmp);
+ 	return *this;
+-}
+-
+-template <typename C> NCurses::Window &operator<<(NCurses::Window &w, const NCurses::basic_buffer<C> &buf)
+-{
+-	const std::basic_string<C> &s = buf.itsTempString ? *buf.itsTempString : buf.itsString.str();
+-	if (buf.itsFormat.empty())
+-	{
+-		w << s;
+-	}
+-	else
+-	{
+-		std::basic_string<C> tmp;
+-		typename std::list<typename NCurses::basic_buffer<C>::FormatPos>::const_iterator b = buf.itsFormat.begin();
+-		typename std::list<typename NCurses::basic_buffer<C>::FormatPos>::const_iterator e = buf.itsFormat.end();
+-		for (size_t i = 0; i < s.length() || b != e; ++i)
+-		{
+-			while (b != e && i == b->Position)
+-			{
+-				if (!tmp.empty())
+-				{
+-					w << tmp;
+-					tmp.clear();
+-				}
+-				buf.LoadAttribute(w, b->Value);
+-				b++;
+-			}
+-			if (i < s.length())
+-				tmp += s[i];
+-		}
+-		if (!tmp.empty())
+-			w << tmp;
+-	}
+-	return w;
+ }
+ 
+ #endif

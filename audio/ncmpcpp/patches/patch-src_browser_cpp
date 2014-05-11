@@ -1,0 +1,11 @@
+--- src/browser.cpp.orig	Sun Apr  1 12:49:09 2012
++++ src/browser.cpp	Sun May 11 02:22:30 2014
+@@ -532,7 +532,7 @@ void Browser::ChangeBrowseMode()
+ 	
+ 	itsBrowseLocally = !itsBrowseLocally;
+ 	ShowMessage("Browse mode: %s", itsBrowseLocally ? "Local filesystem" : "MPD music dir");
+-	itsBrowsedDir = itsBrowseLocally ? Config.GetHomeDirectory() : "/";
++	itsBrowsedDir = itsBrowseLocally ? (Config.GetHomeDirectory()) : "/";
+ 	if (itsBrowseLocally && *itsBrowsedDir.rbegin() == '/')
+ 		itsBrowsedDir.resize(itsBrowsedDir.length()-1);
+ 	w->Reset();
