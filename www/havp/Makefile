@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/10/22 09:03:30 sthen Exp $
+# $OpenBSD: Makefile,v 1.17 2014/05/12 12:45:53 jasper Exp $
 
 COMMENT=	web proxy with antivirus filter
 
