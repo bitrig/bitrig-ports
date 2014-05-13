@@ -1,0 +1,11 @@
+--- src/include/xm_hashmap.h.orig	Tue May 13 15:46:21 2014
++++ src/include/xm_hashmap.h	Tue May 13 15:46:43 2014
+@@ -14,7 +14,7 @@
+ namespace HashNamespace=std;
+ #endif
+ struct hashcmp_str {
+-  bool operator()(const char* s1, const char* s2) {
++  bool operator()(const char* s1, const char* s2) const {
+     if(s1 == NULL || s2 == NULL) {
+       return false;
+     }
