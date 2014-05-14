@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.38 2013/11/25 14:16:22 sthen Exp $
+# $OpenBSD: Makefile,v 1.39 2014/05/14 23:32:50 bcallah Exp $
 
 # Other archs have not been tested
 ONLY_FOR_ARCHS =	amd64 i386
@@ -8,14 +8,12 @@ MULTI_PACKAGES =	-main -tools
 COMMENT-main =		emulates a massive variety of arcades machines
 COMMENT-tools =		tools to manipulate MAME/MESS roms and disk images
 
-V =			150
+V =			153
 DISTNAME =		mame0${V}s
 PKGNAME-main =		sdlmame-0.${V}
 PKGNAME-tools =		sdlmame-tools-0.${V}
 
 CATEGORIES =		emulators games
-
-REVISION =		0
 
 HOMEPAGE =		http://mamedev.org/
 
@@ -26,12 +24,9 @@ MAINTAINER =		Brian Callahan <bcallah@openbsd.org>
 PERMIT_PACKAGE_CDROM =		may not sell
 PERMIT_PACKAGE_FTP =		Yes
 
-WANTLIB =	SDL SDL_ttf X11 Xcomposite Xcursor Xdamage Xext Xfixes \
-		Xi Xinerama Xrandr Xrender atk-1.0 c cairo expat fontconfig \
-		freetype gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 \
-		glib-2.0 gobject-2.0 gtk-x11-2.0 m pango-1.0 pangocairo-1.0 \
-		pangoft2-1.0 pthread util z
-WANTLIB +=	c++ c++abi
+WANTLIB += SDL SDL_ttf X11 Xinerama c expat fontconfig m pthread
+WANTLIB += util z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		http://mamedev.org/downloader.php?file=releases/ \
 			http://whiper.com/mame/${V}/
@@ -49,9 +44,7 @@ MODULES =		devel/gettext \
 			lang/python
 
 RUN_DEPENDS-main =	fonts/liberation-fonts
-LIB_DEPENDS =		devel/gconf2 \
-			devel/sdl-ttf \
-			x11/gtk+2
+LIB_DEPENDS =		devel/sdl-ttf
 
 MAKE_FLAGS =		OPT_FLAGS='-DINI_PATH="\"${SYSCONFDIR}/mame;\""'
 MAKE_ENV =		ARCH=$(ARCH) CC=$(CC) CFLAGS="$(CFLAGS)" \
