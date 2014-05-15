@@ -32,9 +32,7 @@ MULTI_PACKAGES=		-main -omapi -client
 USE_GROFF=		Yes
 USE_GMAKE=		Yes
 CONFIGURE_STYLE=	gnu
-MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/ \
-				${WRKSRC}/bind/bind-9.8.4-P2/ \
-				${WRKSRC}/bind/bind-9.8.4-P2/unit/atf-src/
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/
 
 CONFIGURE_ARGS+= 	--enable-early-chroot \
 			--enable-paranoia \
