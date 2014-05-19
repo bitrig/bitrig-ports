@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/03/26 12:17:08 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.3 2014/05/19 10:28:39 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 # based on ffx 17 engine
@@ -57,5 +57,12 @@ CONFIGURE_ENV +=	SO_VERSION="${SO_VERSION}" \
 
 CC =			gcc
 CXX =			g++
+
+post-install:
+	rm ${PREFIX}/lib/libmozjs-${MOZILLA_VERSION}.a
+.ifndef DEBUG
+	${STRIP} ${PREFIX}/bin/js17
+	${STRIP} ${PREFIX}/lib/libmozjs-${MOZILLA_VERSION}.so.${LIBmozjs-17.0_VERSION}
+.endif
 
 .include <bsd.port.mk>
