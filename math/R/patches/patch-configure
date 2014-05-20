@@ -1,4 +1,4 @@
-$OpenBSD: patch-configure,v 1.18 2014/03/12 11:04:41 dcoppa Exp $
+$OpenBSD: patch-configure,v 1.19 2014/05/20 11:02:12 dcoppa Exp $
 
 Use GNU readline instead of our base readline
 
@@ -113,9 +113,8 @@ Fix linking with external libintl
    LIBS=
    ## don't use the cached value as we need to rebuild LIBS
    unset ac_cv_lib_readline_rl_callback_read_char
--  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lreadline" >&5
+   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lreadline" >&5
 -$as_echo_n "checking for rl_callback_read_char in -lreadline... " >&6; }
-+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lereadline" >&5
 +$as_echo_n "checking for rl_callback_read_char in -lereadline... " >&6; }
  if ${ac_cv_lib_readline_rl_callback_read_char+:} false; then :
    $as_echo_n "(cached) " >&6
@@ -126,7 +125,7 @@ Fix linking with external libintl
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -20883,7 +20883,7 @@ if test "x$ac_cv_lib_readline_rl_callback_read_char" =
+@@ -20939,7 +20939,7 @@ if test "x$ac_cv_lib_readline_rl_callback_read_char" =
  #define HAVE_LIBREADLINE 1
  _ACEOF
  
@@ -135,7 +134,7 @@ Fix linking with external libintl
  
  fi
  
-@@ -21010,13 +21010,13 @@ fi
+@@ -21066,13 +21066,13 @@ fi
  
  fi
  
@@ -152,7 +151,7 @@ Fix linking with external libintl
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -21051,7 +21051,7 @@ if test "x$ac_cv_lib_readline_rl_callback_read_char" =
+@@ -21107,7 +21107,7 @@ if test "x$ac_cv_lib_readline_rl_callback_read_char" =
  #define HAVE_LIBREADLINE 1
  _ACEOF
  
@@ -179,7 +178,7 @@ Fix linking with external libintl
        cpicflags="-fPIC"
        ;;
      *)
-@@ -26194,7 +26194,7 @@ if test "${GCC}" = yes; then
+@@ -26251,7 +26251,7 @@ if test "${GCC}" = yes; then
  fi
  if test "${G77}" = yes; then
    case "${host_cpu}" in
@@ -188,7 +187,7 @@ Fix linking with external libintl
        fpicflags="-fPIC"
        ;;
      *)
-@@ -26204,7 +26204,7 @@ if test "${G77}" = yes; then
+@@ -26261,7 +26261,7 @@ if test "${G77}" = yes; then
  fi
  if test "${GXX}" = yes; then
    case "${host_cpu}" in
@@ -210,7 +209,7 @@ Fix linking with external libintl
        shlib_ldflags="-shared -fPIC"
      fi
      ;;
-@@ -26663,13 +26663,6 @@ case "${host_os}" in
+@@ -26720,13 +26720,6 @@ case "${host_os}" in
        LAPACK_LDFLAGS="+s"
      fi
      ;;
@@ -260,16 +259,16 @@ Fix linking with external libintl
        fcpicflags="-fPIC"
        ;;
      *)
-@@ -41835,7 +41828,7 @@ else
+@@ -42485,7 +42478,7 @@ else
    gt_save_CPPFLAGS="$CPPFLAGS"
              CPPFLAGS="$CPPFLAGS $INCINTL"
              gt_save_LIBS="$LIBS"
 -            LIBS="$LIBS $LIBINTL"
-+            LIBS="$LIBS $LTLIBINTL"
++	    LIBS="$LIBS $LTLIBINTL"
                          cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  #include <libintl.h>
-@@ -41992,8 +41985,8 @@ $as_echo "$gt_source" >&6; }
+@@ -42642,8 +42635,8 @@ $as_echo "$gt_source" >&6; }
        if { eval "gt_val=\$$gt_func_gnugettext_libintl"; test "$gt_val" = "yes"; }; then
          { $as_echo "$as_me:${as_lineno-$LINENO}: checking how to link with libintl" >&5
  $as_echo_n "checking how to link with libintl... " >&6; }
