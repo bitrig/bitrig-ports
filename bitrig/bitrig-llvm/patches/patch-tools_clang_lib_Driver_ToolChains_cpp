@@ -1,5 +1,5 @@
 --- tools/clang/lib/Driver/ToolChains.cpp.orig	Mon Dec  2 11:00:07 2013
-+++ tools/clang/lib/Driver/ToolChains.cpp	Wed Apr 23 23:07:45 2014
++++ tools/clang/lib/Driver/ToolChains.cpp	Sat May 24 22:28:04 2014
 @@ -1898,16 +1898,31 @@ Tool *Bitrig::buildLinker() const {
    return new tools::bitrig::Link(*this);
  }
@@ -34,7 +34,7 @@
      break;
    case ToolChain::CST_Libstdcxx:
      addSystemInclude(DriverArgs, CC1Args,
-@@ -1930,12 +1945,11 @@ void Bitrig::AddClangCXXStdlibIncludeArgs(const ArgLis
+@@ -1930,17 +1945,22 @@ void Bitrig::AddClangCXXStdlibIncludeArgs(const ArgLis
  
  void Bitrig::AddCXXStdlibLibArgs(const ArgList &Args,
                                   ArgStringList &CmdArgs) const {
@@ -50,3 +50,14 @@
      break;
    case ToolChain::CST_Libstdcxx:
      CmdArgs.push_back("-lstdc++");
+     break;
+   }
++}
++
++// FIXME: Switch to DWARF once implemented in libc++abi.
++bool Bitrig::UseSjLjExceptions() const {
++  return (getTriple().getArch() == llvm::Triple::arm ||
++          getTriple().getArch() == llvm::Triple::thumb);
+ }
+ 
+ /// FreeBSD - FreeBSD tool chain which can call as(1) and ld(1) directly.
