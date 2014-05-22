@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/09/22 23:27:32 sebastia Exp $
+# $OpenBSD: Makefile,v 1.13 2014/05/22 09:48:57 sebastia Exp $
 
 COMMENT =	framework for accessing and rendering PDF content
 
@@ -12,8 +12,7 @@ HOMEPAGE =	http://wiki.gnustep.org/index.php/PDFKit
 MASTER_SITES =	${MASTER_SITE_SAVANNAH:=gap/}
 
 MODULES =		x11/gnustep
-MODGNUSTEP_NEEDS_BASE =	No
-MODGNUSTEP_NEEDS_GUI =	No
+MODGNUSTEP_IS_FRAMEWORK	= Yes
 WANTLIB += 		pthread freetype m
 WANTLIB += 		c++ c++abi
 BUILD_DEPENDS =		x11/gnustep/gui
