@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.75 2013/05/09 19:35:40 bcallah Exp $
+# $OpenBSD: Makefile,v 1.76 2014/05/24 14:55:16 bcallah Exp $
 
 COMMENT=		window manager based on the original Blackbox code
 
