@@ -1,13 +1,12 @@
-# $OpenBSD: Makefile,v 1.173 2014/05/16 06:51:43 robert Exp $
+# $OpenBSD: Makefile,v 1.174 2014/05/24 15:27:34 robert Exp $
 
 ONLY_FOR_ARCHS=		i386 amd64
 DPB_PROPERTIES=		parallel
 
 COMMENT=		Chromium browser
 
-V=			34.0.1847.137
+V=			35.0.1916.114
 DISTNAME=		chromium-${V}
-REVISION=		1
 
 CATEGORIES=		www
 
@@ -44,12 +43,13 @@ WANTLIB += X11 Xext Xfixes Xrender Xss c cairo cups dbus-1 event
 WANTLIB += execinfo expat fontconfig freetype gconf-2 gcrypt gdk-x11-2.0
 WANTLIB += gdk_pixbuf-2.0 glib-2.0 gobject-2.0 gtk-x11-2.0
 WANTLIB += jpeg m nspr4 nss3 nssutil3 pango-1.0 pangocairo-1.0
-WANTLIB += plc4 png pthread smime3 speex opus
+WANTLIB += plc4 png pthread smime3 speex
 WANTLIB += xml2 xslt
 WANTLIB += atk-1.0 usb-1.0 sndio
 WANTLIB += Xcomposite
 WANTLIB += Xi Xtst
 WANTLIB += icui18n icuuc
+WANTLIB += Xdamage
 WANTLIB += c++ c++abi
 
 RUN_DEPENDS=	devel/xdg-utils \
@@ -125,6 +125,7 @@ GYP_DEFS=	-Duse_system_bzip2=1 \
 		-Dclang_use_chrome_plugins=0 \
 		-Dwerror= \
 		-Dno_gc_sections=1 \
+		-Ddisable_fatal_linker_warnings=1 \
 		-DOS=openbsd
 
 .if ${FLAVOR:Mproprietary}
