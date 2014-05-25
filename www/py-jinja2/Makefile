@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/09/28 17:52:14 fgsch Exp $
+# $OpenBSD: Makefile,v 1.18 2014/05/25 18:19:32 rpe Exp $
 
 COMMENT =		fast, optionally sandboxed, Python template engine
 
@@ -6,9 +6,11 @@ MODPY_EGG_VERSION =	2.7.2
 DISTNAME =		Jinja2-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME:L}
 
+REVISION =		0
+
 CATEGORIES =		www devel
 
-HOMEPAGE =		http://jinja.pocoo.org/2/
+HOMEPAGE =		http://jinja.pocoo.org/
 
 MAINTAINER =		frantisek holop <minusf@obiit.org>
 
