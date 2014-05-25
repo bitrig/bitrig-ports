@@ -13,10 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=aria2/}
 
-MODULES =		devel/gettext \
-			gcc4
-MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		c c++
+MODULES =		devel/gettext
 
 LIB_DEPENDS =		net/libcares
 
