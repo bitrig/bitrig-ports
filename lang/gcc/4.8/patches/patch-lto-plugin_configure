@@ -1,6 +1,6 @@
-$OpenBSD: patch-lto-plugin_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
---- lto-plugin/configure.orig	Fri Sep 14 19:42:24 2012
-+++ lto-plugin/configure	Mon Mar  3 17:01:06 2014
+$OpenBSD: patch-lto-plugin_configure,v 1.2 2014/05/25 21:45:39 pascal Exp $
+--- lto-plugin/configure.orig	Fri Apr  4 09:53:39 2014
++++ lto-plugin/configure	Sat May 31 06:40:48 2014
 @@ -4850,7 +4850,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -19,7 +19,7 @@ $OpenBSD: patch-lto-plugin_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -8976,7 +8976,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -8982,7 +8982,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -28,7 +28,7 @@ $OpenBSD: patch-lto-plugin_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -9964,7 +9964,7 @@ newsos6)
+@@ -9970,7 +9970,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -37,7 +37,7 @@ $OpenBSD: patch-lto-plugin_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -9974,7 +9974,7 @@ openbsd*)
+@@ -9980,7 +9980,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext}$versuffix'

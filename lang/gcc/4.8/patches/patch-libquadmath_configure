@@ -1,6 +1,6 @@
-$OpenBSD: patch-libquadmath_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
---- libquadmath/configure.orig	Wed Oct 16 03:27:58 2013
-+++ libquadmath/configure	Mon Mar  3 17:02:14 2014
+$OpenBSD: patch-libquadmath_configure,v 1.2 2014/05/25 21:45:39 pascal Exp $
+--- libquadmath/configure.orig	Thu May 22 05:13:48 2014
++++ libquadmath/configure	Sat May 31 06:40:48 2014
 @@ -5054,7 +5054,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -19,7 +19,7 @@ $OpenBSD: patch-libquadmath_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -8927,7 +8927,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -8933,7 +8933,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -28,7 +28,7 @@ $OpenBSD: patch-libquadmath_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -9918,7 +9918,7 @@ newsos6)
+@@ -9924,7 +9924,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -37,7 +37,7 @@ $OpenBSD: patch-libquadmath_configure,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -9928,7 +9928,7 @@ openbsd*)
+@@ -9934,7 +9934,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext}$versuffix'

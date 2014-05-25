@@ -1,6 +1,6 @@
---- libitm/configure.tgt.orig	Mon Mar  3 16:57:39 2014
-+++ libitm/configure.tgt	Mon Mar  3 16:59:16 2014
-@@ -135,7 +135,7 @@ case "${target}" in
+--- libitm/configure.tgt.orig	Fri Apr  4 09:45:28 2014
++++ libitm/configure.tgt	Sat May 31 06:40:47 2014
+@@ -138,7 +138,7 @@ case "${target}" in
  	;;
  
    *-*-gnu* | *-*-k*bsd*-gnu \

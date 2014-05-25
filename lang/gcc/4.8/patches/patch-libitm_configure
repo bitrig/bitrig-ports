@@ -1,5 +1,5 @@
---- libitm/configure.orig	Mon Mar  3 16:57:44 2014
-+++ libitm/configure	Mon Mar  3 16:58:46 2014
+--- libitm/configure.orig	Thu May 22 05:13:49 2014
++++ libitm/configure	Sat May 31 06:40:47 2014
 @@ -6075,7 +6075,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -18,7 +18,7 @@
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -10203,7 +10203,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -10209,7 +10209,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -27,7 +27,7 @@
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -11191,7 +11191,7 @@ newsos6)
+@@ -11197,7 +11197,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -36,7 +36,7 @@
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -13177,7 +13177,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+@@ -13183,7 +13183,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
  	ld_shlibs_CXX=no
  	;;
  
@@ -45,7 +45,7 @@
  	if test -f /usr/libexec/ld.so; then
  	  hardcode_direct_CXX=yes
  	  hardcode_shlibpath_var_CXX=no
-@@ -14851,7 +14851,7 @@ newsos6)
+@@ -14857,7 +14857,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  

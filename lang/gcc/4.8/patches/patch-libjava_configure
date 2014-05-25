@@ -1,6 +1,6 @@
-$OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
---- libjava/configure.orig	Thu Jun 20 09:12:44 2013
-+++ libjava/configure	Mon Mar  3 16:49:35 2014
+$OpenBSD: patch-libjava_configure,v 1.2 2014/05/25 21:45:39 pascal Exp $
+--- libjava/configure.orig	Fri Apr  4 09:53:39 2014
++++ libjava/configure	Sat May 31 06:40:48 2014
 @@ -6392,12 +6392,12 @@ nto-qnx)
    shlibpath_overrides_runpath=yes
    ;;
@@ -34,7 +34,7 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -11788,7 +11788,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -11794,7 +11794,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -43,7 +43,7 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -12779,7 +12779,7 @@ newsos6)
+@@ -12785,7 +12785,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -52,7 +52,7 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -12789,7 +12789,7 @@ openbsd*)
+@@ -12795,7 +12795,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext}$versuffix'
@@ -61,7 +61,7 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
-@@ -14786,7 +14786,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+@@ -14792,7 +14792,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
  	ld_shlibs_CXX=no
  	;;
  
@@ -70,7 +70,7 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
  	if test -f /usr/libexec/ld.so; then
  	  hardcode_direct_CXX=yes
  	  hardcode_shlibpath_var_CXX=no
-@@ -16463,7 +16463,7 @@ newsos6)
+@@ -16469,7 +16469,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -79,7 +79,7 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -16473,7 +16473,7 @@ openbsd*)
+@@ -16479,7 +16479,7 @@ openbsd*)
      *)				need_version=no  ;;
    esac
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext}$versuffix'
@@ -88,7 +88,7 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      case $host_os in
-@@ -18711,7 +18711,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -18717,7 +18717,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -97,7 +97,7 @@ $OpenBSD: patch-libjava_configure,v 1.1.1.1 2013/04/08 08:20:25 pascal Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct_GCJ=yes
  	hardcode_shlibpath_var_GCJ=no
-@@ -20754,7 +20754,7 @@ case "$THREADS" in
+@@ -20760,7 +20760,7 @@ case "$THREADS" in
  	# support for weak references to pthread_* functions ala gthr.h API.
  	THREADSPEC='%{!pthread: %{!shared: %eUnder this configuration, the user must provide -pthread when linking.}}'
  	;;
