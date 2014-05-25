@@ -5,10 +5,9 @@ SHARED_ONLY=		Yes
 V=			1.10.9
 COMMENT=		simple GTK desktop news aggregator
 DISTNAME=		liferea-${V}
-REVISION=		0
 CATEGORIES=		www x11
 EXTRACT_SUFX=		.tar.bz2
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://lzone.de/liferea/
 MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
