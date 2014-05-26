@@ -25,6 +25,7 @@ LIB_DEPENDS-main =	${LIB_DEPENDS}
 WANTLIB-main =		${WANTLIB}
 
 MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build/autoconf \
+				${WRKSRC}/js/src/build/autoconf \
 				${WRKSRC}/js/src/ctypes/libffi
 
 CONFIGURE_STYLE =	autoconf no-autoheader

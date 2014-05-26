@@ -1,0 +1,51 @@
+--- configure.in.orig	Mon Apr 21 19:43:50 2014
++++ configure.in	Mon May 26 13:07:09 2014
+@@ -1456,8 +1456,11 @@ if test "$GNU_CXX"; then
+ 
+     # Turn off the following warnings that -Wall turns on:
+     # -Wno-invalid-offsetof - we use offsetof on non-POD types frequently
++    # -Wno-inline-new-delete - we inline 'new' and 'delete' in mozalloc
++    #   for performance reasons, and because GCC and clang accept it (though
++    #   clang warns about it).
+     #
+-    MOZ_CXX_SUPPORTS_WARNING(-Wno-, invalid-offsetof, ac_cxx_has_wno_invalid_offsetof)
++    MOZ_CXX_SUPPORTS_WARNING(-Wno-, inline-new-delete, invalid-offsetof, ac_cxx_has_wno_invalid_offsetof)
+ 
+     if test -z "$INTEL_CXX" -a -z "$CLANG_CXX"; then
+        # Don't use -Wcast-align with ICC or clang
+@@ -2283,7 +2286,7 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@)) -o $@'
+     ;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     if test "$SO_VERSION"; then
+         DLL_SUFFIX=".so.$SO_VERSION"
+     else
+@@ -2921,7 +2924,7 @@ dnl Checks for header files.
+ dnl ========================================================
+ AC_HEADER_DIRENT
+ case "$target_os" in
+-freebsd*|openbsd*)
++freebsd*|openbsd*|bitrig*)
+ # for stuff like -lXshm
+     CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
+     ;;
+@@ -3227,7 +3230,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd|*-*-bitrig*|*-*-bsdi*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.
+@@ -3630,7 +3633,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
+     *-android*|*-linuxandroid*)
+       :
+       ;;
+-    *-openbsd*)
++    *-openbsd*|*-bitrig*)
+       :
+       ;;
+     *)

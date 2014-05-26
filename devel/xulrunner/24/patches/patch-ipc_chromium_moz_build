@@ -1,0 +1,11 @@
+--- ipc/chromium/moz.build.orig	Mon May 26 14:33:56 2014
++++ ipc/chromium/moz.build	Mon May 26 14:34:29 2014
+@@ -29,7 +29,7 @@ else:
+     elif CONFIG['OS_ARCH'] == 'NetBSD':
+         os_netbsd = 1
+         os_bsd = 1
+-    elif CONFIG['OS_ARCH'] == 'OpenBSD':
++    elif CONFIG['OS_ARCH'] in ['OpenBSD', 'Bitrig']:
+         os_openbsd = 1
+         os_bsd = 1
+     else:
