@@ -33,6 +33,8 @@ LIB_DEPENDS=	devel/vte3 \
 		x11/gtk-vnc \
 		x11/spice-gtk
 
+CFLAGS+=	-Wno-format-nonliteral -Wno-implicit-function-declaration	
+
 MODGNOME_TOOLS=	desktop-file-utils gtk-update-icon-cache shared-mime-info yelp
 
 .include <bsd.port.mk>
