@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.120 2014/04/09 12:30:41 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.121 2014/05/26 19:24:28 naddy Exp $
 
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 SHARED_ONLY =		Yes
@@ -26,7 +26,7 @@ FULLPKGPATH-html =	${BASE_PKGPATH},-html
 
 REVISION-mysql=		0
 REVISION-postgresql=	0
-REVISION-main=		0
+REVISION-main=		1
 REVISION-examples=	0
 REVISION-sqlite2=	0
 REVISION-tds =		0
