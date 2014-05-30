@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.164 2014/04/21 18:43:10 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.165 2014/05/30 13:20:13 sthen Exp $
 
 COMMENT-main=	MS Exchange groupware suite replacement
 COMMENT-web=	zarafa webaccess frontend and MAPI extensions for PHP
