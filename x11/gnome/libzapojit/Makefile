@@ -24,4 +24,6 @@ MODULES=	devel/gettext \
 LIB_DEPENDS=	x11/gnome/online-accounts
 
 MODGNOME_TOOLS +=	gobject-introspection
+
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/config
 .include <bsd.port.mk>
