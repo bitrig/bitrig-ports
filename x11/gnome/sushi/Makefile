@@ -40,6 +40,8 @@ LIB_DEPENDS=	audio/libmusicbrainz5 \
 		x11/gtksourceview3 \
 		devel/readline
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/config
+
 post-install:
 	rm ${PREFIX}/lib/sushi/*.{a,la}
 
