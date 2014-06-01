@@ -67,8 +67,6 @@ RUN_DEPENDS +=		multimedia/gstreamer1/plugins-good \
 MODGNOME_TOOLS += desktop-file-utils gobject-introspection gtk-update-icon-cache
 MODGNOME_TOOLS += vala yelp
 
-CFLAGS+= -Wno-error=format-nonliteral
-
 pre-configure:
 # XXX cc1: error: unrecognized command line option "-Wno-unused-but-set-variable"
 	find ${WRKSRC} -name Makefile.in | xargs -r \

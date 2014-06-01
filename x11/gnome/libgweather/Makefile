@@ -36,6 +36,5 @@ LIB_DEPENDS=		devel/libsoup>=2.42.0 \
 
 CONFIGURE_ARGS+=	--with-zoneinfo-dir="/usr/share/zoneinfo" \
 			--disable-glade-catalog
-CONFIGURE_ENV=		CFLAGS="-Wno-format-nonliteral ${CFLAGS}"
 
 .include <bsd.port.mk>

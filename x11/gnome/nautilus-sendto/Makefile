@@ -21,7 +21,6 @@ MODULES=	devel/gettext \
 
 MODGNOME_TOOLS +=	gobject-introspection
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
-CFLAGS+= -Wno-error=format-nonliteral
 
 LIB_DEPENDS=	devel/glib2
 

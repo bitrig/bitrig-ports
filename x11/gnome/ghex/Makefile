@@ -29,8 +29,6 @@ MODULES=		devel/dconf \
 
 LIB_DEPENDS=		x11/gtk+3
 
-CFLAGS+=		-Wno-error=format-nonliteral
-
 MODGNOME_TOOLS= 	desktop-file-utils gtk-update-icon-cache yelp
 
 .include <bsd.port.mk>

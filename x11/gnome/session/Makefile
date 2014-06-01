@@ -53,7 +53,6 @@ RUN_DEPENDS+=	devel/gsettings-desktop-schemas \
 
 MODGNOME_TOOLS=	gtk-update-icon-cache
 
-CFLAGS+= -Wno-error=format-nonliteral
 MODGNOME_CPPFLAGS=-I${X11BASE}/include
 MODGNOME_LDFLAGS=-L${X11BASE}/lib
 
