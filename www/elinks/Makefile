@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.32 2013/10/10 20:10:51 edd Exp $
+# $OpenBSD: Makefile,v 1.33 2014/06/02 14:37:15 sthen Exp $
 
 COMMENT=		full-featured text WWW browser
 DISTNAME=		elinks-0.11.7
-REVISION=		7
+REVISION=		8
 CATEGORIES=		www
 MASTER_SITES=		http://elinks.cz/download/
 
@@ -13,8 +13,8 @@ MAINTAINER=		Edd Barrett <edd@openbsd.org>
 # GPL, v2 only
 PERMIT_PACKAGE_CDROM=	Yes
 
-CONFIGURE_STYLE=	gnu
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/config
+CONFIGURE_STYLE=	autoconf
+AUTOCONF_VERSION=	2.61
 CONFIGURE_ENV+=		CFLAGS="${CFLAGS} -I${LOCALBASE}/include \
 			-L${LOCALBASE}/lib"
 
@@ -24,6 +24,9 @@ CONFIGURE_ARGS+=	--with-bzlib \
 			--enable-gopher \
 			--enable-256-colors \
 			--with-libiconv=${LOCALBASE}
+
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC} \
+				${WRKSRC}/config
 
 # don't hide compiler command lines
 MAKE_ENV=		V=true
