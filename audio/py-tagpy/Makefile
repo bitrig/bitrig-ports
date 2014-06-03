@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/12/25 08:51:24 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.17 2014/06/03 11:31:10 rpointel Exp $
 
 COMMENT=		Python bindings to TagLib audio file tag library
 

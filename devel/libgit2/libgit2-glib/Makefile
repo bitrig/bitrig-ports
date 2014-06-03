@@ -6,6 +6,8 @@ V=			0.0.12
 PROJECT=		libgit2-glib
 SHARED_LIBS +=	git2-glib-1.0        1.2      # 0.0
 
+REVISION =		0
+
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/${PROJECT}/${V:C/^([0-9]+\.[0-9]+).*/\1/}/}
 EXTRACT_SUFX=		.tar.xz
 
