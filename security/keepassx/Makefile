@@ -3,7 +3,7 @@
 COMMENT =	management tool for sensitive data
 
 DISTNAME =	keepassx-0.4.3
-REVISION =	3
+REVISION =	4
 CATEGORIES =	security
 
 HOMEPAGE =	http://www.keepassx.org/
@@ -21,6 +21,6 @@ WANTLIB += QtGui QtXml X11 Xtst c m pthread
 WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	devel/desktop-file-utils \
-		misc/shared-mime-info 
+		misc/shared-mime-info
 
 .include <bsd.port.mk>
