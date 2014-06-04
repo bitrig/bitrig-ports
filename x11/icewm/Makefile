@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.55 2014/04/11 15:25:24 giovanni Exp $
+# $OpenBSD: Makefile,v 1.56 2014/06/04 05:07:59 giovanni Exp $
 
 COMMENT=	small and fast window manager
 
 DISTNAME=	icewm-1.3.8
 REVISION=	1
-CATEGORIES=	x11	
+CATEGORIES=	x11
 
 HOMEPAGE=	http://www.icewm.org/
 
@@ -22,7 +22,7 @@ MODULES=	devel/gettext
 
 LIB_DEPENDS=	graphics/gdk-pixbuf2
 
-CONFIGURE_STYLE=gnu		
+CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--with-docdir=${PREFIX}/share/doc \
 		--with-libdir=${PREFIX}/share/icewm \
 		--with-cfgdir=${SYSCONFDIR}/icewm \
@@ -42,7 +42,7 @@ USE_GROFF=	Yes
 
 .include <bsd.port.arch.mk>
 
-# XXX rendering bug on big-endian systems 
+# XXX rendering bug on big-endian systems
 .if ${PROPERTIES:Mle}
 CONFIGURE_ARGS+= --enable-gradients
 .endif
