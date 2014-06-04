@@ -1,9 +1,9 @@
-penBSD: patch-configure,v 1.17 2014/04/11 10:48:17 ajacoutot Exp $
+$OpenBSD: patch-configure,v 1.18 2014/06/04 13:37:20 ajacoutot Exp $
 
 /var/lib -> /var/db
 
---- configure.orig	Fri Feb 28 13:44:15 2014
-+++ configure	Sat Apr 12 08:36:21 2014
+--- configure.orig	Fri May 23 12:46:43 2014
++++ configure	Wed Jun  4 15:17:19 2014
 @@ -5006,7 +5006,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -58,7 +58,7 @@ penBSD: patch-configure,v 1.17 2014/04/11 10:48:17 ajacoutot Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -18237,7 +18237,7 @@ fi
+@@ -18305,7 +18305,7 @@ fi
  
  
  # per-machine directory
