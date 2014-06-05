@@ -1,0 +1,46 @@
+$OpenBSD: patch-libs_rfc2045_reformime_1,v 1.1 2014/06/05 21:04:51 giovanni Exp $
+--- libs/rfc2045/reformime.1.orig	Sun Aug 25 21:15:30 2013
++++ libs/rfc2045/reformime.1	Fri Oct  4 15:38:06 2013
+@@ -42,7 +42,7 @@ is a utility for reformatting MIME messages\&.
+ Generally,
+ \fBreformime\fR
+ expects to see an
+-\m[blue]\fBRFC 2045\fR\m[]\&\s-2\u[1]\d\s+2
++\fBRFC 2045\fR\&\s-2\u[1]\d\s+2
+ compliant message on standard input, except in few cases such as the
+ \fB\-m\fR
+ option\&.
+@@ -110,7 +110,7 @@ Arbitrarily complex MIME constructs are possible\&.
+ .PP
+ \-d
+ .RS 4
+-Parse a delivery status notification MIME message (\m[blue]\fBRFC 1894\fR\m[]\&\s-2\u[2]\d\s+2)\&.
++Parse a delivery status notification MIME message (\fBRFC 1894\fR\&\s-2\u[2]\d\s+2)\&.
+ \fBreformime\fR
+ expects to see on standard input a MIME message that consists of a delivery status notification, as defined by RFC 1894\&.
+ \fBreformime\fR
+@@ -170,7 +170,7 @@ MIME message digest\&.
+ \-r
+ .RS 4
+ Rewrite message, adding or standardizing
+-\m[blue]\fBRFC 2045\fR\m[]\&\s-2\u[1]\d\s+2
++\fBRFC 2045\fR\&\s-2\u[1]\d\s+2
+ MIME headers\&.
+ .RE
+ .PP
+@@ -449,11 +449,11 @@ MIME objects\&.
+ .RE
+ .SH "SEE ALSO"
+ .PP
+-\m[blue]\fB\fBreformail\fR(1)\fR\m[]\&\s-2\u[3]\d\s+2,
++\fB\fBreformail\fR(1)\fR\m[]\&\s-2\u[3]\d\s+2,
+ \fBsendmail\fR(8),
+-\m[blue]\fB\fBmailbot\fR(1)\fR\m[]\&\s-2\u[4]\d\s+2,
+-\m[blue]\fB\fBmaildrop\fR(1)\fR\m[]\&\s-2\u[5]\d\s+2,
+-\m[blue]\fB\fBmaildropfilter\fR(5)\fR\m[]\&\s-2\u[6]\d\s+2,
++\fB\fBmailbot\fR(1)\fR\m[]\&\s-2\u[4]\d\s+2,
++\fB\fBmaildrop\fR(1)\fR\m[]\&\s-2\u[5]\d\s+2,
++\fB\fBmaildropfilter\fR(5)\fR\m[]\&\s-2\u[6]\d\s+2,
+ \fBegrep\fR(1),
+ \fBgrep\fR(1),
+ \fBsendmail\fR(8)\&.
