@@ -1,0 +1,11 @@
+--- Lib/distutils/unixccompiler.py.orig	Sat Jun  7 06:07:09 2014
++++ Lib/distutils/unixccompiler.py	Sat Jun  7 06:09:03 2014
+@@ -225,6 +225,8 @@ class UnixCCompiler(CCompiler):
+         if sys.platform[:6] == "darwin":
+             # MacOSX's linker doesn't understand the -R flag at all
+             return "-L" + dir
++        elif sys.platform[:6] == "bitrig":
++            return "-Wl,-rpath=" + dir
+         elif sys.platform[:5] == "hp-ux":
+             if self._is_gcc(compiler):
+                 return ["-Wl,+s", "-L" + dir]
