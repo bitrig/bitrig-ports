@@ -75,6 +75,9 @@ CONFIGURE_ARGS +=--with-ltdl-include=${LOCALBASE}/include \
 		--without-python \
 		--enable-all-plugins=no
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST} \
+				${WRKDIST}/libltdl/config
+
 ENABLED_PLUGINS =	apache apcups ascent bind cpu csv curl curl_xml \
 			df disk dns email exec filecount interface load \
 			logfile match_empty_counter match_hashed match_regex \
