@@ -15,6 +15,8 @@ WANTLIB=	c pcap
 
 NO_TEST=	Yes
 
+CFLAGS+=	-Wno-return-type
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/trafd/trafd ${PREFIX}/sbin
 	${INSTALL_SCRIPT} ${WRKSRC}/trafd/trafstop ${PREFIX}/sbin
