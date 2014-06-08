@@ -57,6 +57,8 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GREP=/usr/bin/grep \
 		SED=/usr/bin/sed
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/config
+
 USE_GMAKE=	Yes
 WRKDIST=	${WRKDIR}/filezilla-$V
 
