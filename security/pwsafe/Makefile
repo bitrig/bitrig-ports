@@ -20,6 +20,9 @@ CONFIGURE_STYLE=        gnu
 USE_GMAKE=		Yes
 USE_GROFF =		Yes
 
+CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include" \
+			LDFLAGS="-L${LOCALBASE}/lib"
+
 FLAVORS=		no_x11
 FLAVOR?=
 
