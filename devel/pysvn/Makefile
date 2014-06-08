@@ -31,7 +31,8 @@ WRKSRC =  	${WRKDIST}/Source
 CONFIGURE_FLAGS = 	--apr-inc-dir=${LOCALBASE}/include/apr-1 \
 			--apr-lib-dir=${LOCALBASE}/lib \
 			--svn-inc-dir=${LOCALBASE}/include/subversion-1 \
-			--svn-lib-dir=${LOCALBASE}/lib
+			--svn-lib-dir=${LOCALBASE}/lib \
+			--platform=openbsd
 
 do-configure:
 	cd ${WRKSRC} && ${MODPY_BIN} ./${MODPY_SETUP} configure ${CONFIGURE_FLAGS}
