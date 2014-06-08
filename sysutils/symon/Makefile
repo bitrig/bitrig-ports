@@ -50,6 +50,7 @@ MAKE_ENV+=		DEBUG=1
 # XXX disable pf queue support until it can be updated for new PF queues
 post-patch:
 	rm ${WRKSRC}/platform/OpenBSD/sm_pfq.c
+	cp -R ${WRKSRC}/platform/OpenBSD ${WRKSRC}/platform/Bitrig
 
 post-build:
 	cd ${WRKSRC}/client && \

@@ -1,0 +1,11 @@
+--- symon/c_config.sh.orig	Sun Jun  8 09:44:35 2014
++++ symon/c_config.sh	Sun Jun  8 09:45:04 2014
+@@ -14,7 +14,7 @@ if [ $# -ge 3 ]; then
+     exit 1
+ fi
+ case "${OS}" in
+-OpenBSD)
++OpenBSD|Bitrig)
+ 	interfaces=`netstat -ni | sed '1,1d;s/^\([a-z]*[0-9]\).*$/\1/g' | uniq`
+ 	io=`mount | sed -n '/^\/dev/ s@/dev/\([a-z]*[0-9]\).*@io(\1), @p' | sort -u | tr -d \\\n`
+ 	;;
