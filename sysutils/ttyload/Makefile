@@ -18,7 +18,7 @@ WANTLIB =		c
 MASTER_SITES =		http://www.daveltd.com/src/util/ttyload/
 EXTRACT_SUFX =		.tar.bz2
 
-MAKE_FLAGS =		ARCHLINKS_FREEBSD=arch/OpenBSD \
+MAKE_FLAGS =		ARCHLINKS_FREEBSD=arch/Bitrig \
 			CC="${CC}" \
 			OTHER_FLAGS="-pedantic -Wall -Werror ${CFLAGS}"
 
