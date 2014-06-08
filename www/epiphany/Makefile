@@ -64,6 +64,8 @@ CONFIGURE_ARGS=	--disable-nss \
 
 MODGNOME_CPPFLAGS=	-I${X11BASE}/include
 
+CFLAGS+=	-Wno-format-nonliteral
+
 TEST_DEPENDS=		${BASE_PKGPATH}
 TEST_IS_INTERACTIVE=	x11
 PORTHOME=		${WRKDIR}
