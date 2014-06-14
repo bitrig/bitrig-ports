@@ -1,12 +1,12 @@
-# $OpenBSD: Makefile,v 1.13 2013/11/11 21:25:56 sthen Exp $
+# $OpenBSD: Makefile,v 1.14 2014/06/14 23:24:54 sthen Exp $
 
 COMMENT=		perl bindings for the xapian search library
 
 V=			1.2.15
 DISTNAME=		Search-Xapian-${V}.0
 CATEGORIES=		databases
-REVISION=		0
 MODULES=		cpan
+REVISION=		1
 
 HOMEPAGE=		http://xapian.org/
 
