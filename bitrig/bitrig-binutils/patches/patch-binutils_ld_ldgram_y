@@ -1,0 +1,11 @@
+--- binutils/ld/ldgram.y.orig	Sat Jun 14 07:50:29 2014
++++ binutils/ld/ldgram.y	Sat Jun 14 07:51:30 2014
+@@ -1021,6 +1021,8 @@ phdr_type:
+ 			    $$ = exp_intop (0x6474e551);
+ 			  else if (strcmp (s, "PT_OPENBSD_RANDOMIZE") == 0)
+ 			    $$ = exp_intop (0x65a3dbe6);
++			  else if (strcmp (s, "PT_BITRIG_TMPFS_RAMDISK") == 0)
++			    $$ = exp_intop (0x627a93eb);
+ 			  else
+ 			    {
+ 			      einfo (_("\
