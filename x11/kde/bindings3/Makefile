@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.86 2013/10/22 11:33:58 zhuk Exp $
+# $OpenBSD: Makefile,v 1.87 2014/06/14 10:34:45 sthen Exp $
 
 COMMENT = 		K Desktop Environment bindings for scripting languages
 CATEGORIES =		x11 x11/kde devel
