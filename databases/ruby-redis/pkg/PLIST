@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.5 2013/11/12 08:10:32 dcoppa Exp $
+@comment $OpenBSD: PLIST,v 1.7 2014/06/14 22:11:41 sthen Exp $
 ${GEM_LIB}/cache/${DISTNAME}.gem
 ${GEM_LIB}/gems/${DISTNAME}/
 ${GEM_LIB}/gems/${DISTNAME}/.order
