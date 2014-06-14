@@ -1,7 +1,7 @@
 $OpenBSD$
---- toolkit/library/Makefile.in.orig	Tue Apr 22 01:28:16 2014
-+++ toolkit/library/Makefile.in	Sat May 10 01:51:34 2014
-@@ -241,6 +241,10 @@ OS_LIBS += \
+--- toolkit/library/Makefile.in.orig	Thu Jun  5 21:15:45 2014
++++ toolkit/library/Makefile.in	Mon Jun 16 14:13:14 2014
+@@ -175,6 +175,10 @@ OS_LIBS += \
    $(NULL)
  endif
  
@@ -12,12 +12,12 @@ $OpenBSD$
  ifeq (OpenBSD,$(OS_ARCH))
  EXTRA_DSO_LDOPTS += -lsndio
  endif
-@@ -280,7 +284,7 @@ EXTRA_DSO_LDOPTS += -lelf -ldemangle
+@@ -214,7 +218,7 @@ EXTRA_DSO_LDOPTS += -lelf -ldemangle
  endif
  endif
  
 -ifneq (,$(filter DragonFly FreeBSD NetBSD OpenBSD,$(OS_ARCH)))
 +ifneq (,$(filter DragonFly FreeBSD NetBSD OpenBSD Bitrig,$(OS_ARCH)))
  OS_LIBS += $(call EXPAND_LIBNAME,kvm)
- # keep `environ' unresolved, see bug 14426 for binutils
- EXTRA_DSO_LDOPTS += -Wl,--warn-unresolved-symbols
+ endif
+ 
