@@ -1,7 +1,12 @@
---- tools/grit/grit/node/base.py.orig.port	Fri Apr 18 03:09:26 2014
-+++ tools/grit/grit/node/base.py	Fri Apr 18 03:05:04 2014
-@@ -476,7 +476,7 @@ class Node(object):
-         value = 'bsd' in target_platform
+--- tools/grit/grit/node/base.py.orig.port	Wed May 14 21:24:30 2014
++++ tools/grit/grit/node/base.py	Mon Jun 16 14:18:02 2014
+@@ -473,10 +473,11 @@ class Node(object):
+       elif name == 'is_ios':
+         value = target_platform == 'ios'
+       elif name == 'is_bsd':
+-        value = 'bsd' in target_platform
++        value = (target_platform in ('bitrig0')
++                 or 'bsd' in target_platform)
        elif name == 'is_posix':
          value = (target_platform in ('darwin', 'linux2', 'linux3', 'sunos5',
 -                                     'android', 'ios')
