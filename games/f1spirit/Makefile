@@ -4,7 +4,7 @@ COMMENT=	remake of Konami's F1-Spirit
 
 DISTNAME=	f1spirit.src_0.rc9-1615
 PKGNAME=	${DISTNAME:S/.src_0.rc9-/-0./}
-REVISION =	0
+REVISION =	1
 WRKDIST=	${WRKDIR}/${DISTNAME:S/.src_0.rc9-/-0.rc9./}
 
 EXTRACT_SUFX=	.tgz
@@ -26,6 +26,7 @@ LIB_DEPENDS=	devel/sdl-image \
 		net/curl \
 		devel/libidn
 WANTLIB=	GL GLU SDL c m crypto pthread ssl z SDL_image SDL_net \
-		SDL_mixer curl idn stdc++
+		SDL_mixer curl idn
+WANTLIB+=	c++ c++abi
 
 .include <bsd.port.mk>

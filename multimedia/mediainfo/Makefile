@@ -3,6 +3,7 @@
 COMMENT=	display technical and tag data for video and audio files
 
 VERSION=	0.7.69
+REVISION=	0
 PKGNAME=	mediainfo-${VERSION}
 CATEGORIES=	multimedia
 HOMEPAGE=	http://mediainfo.sourceforge.net/
@@ -12,7 +13,8 @@ MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 # BSD-style
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m pthread stdc++ z
+WANTLIB=	c m pthread z
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mediainfo/}
 DISTFILES=	MediaInfo_CLI_${VERSION}_GNU_FromSource.tar.bz2

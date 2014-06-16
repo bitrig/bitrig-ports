@@ -6,14 +6,16 @@ COMMENT =		3D space simulator
 
 DISTNAME =		vegastrike-src-${V}
 PKGNAME =		vegastrike-${V}
+REVISION =		0
 
 WANTLIB += GL GLU OgreMain SDL X11 Xcomposite Xcursor Xdamage
 WANTLIB += Xext Xfixes Xi Xinerama Xmu Xrandr Xrender atk-1.0
 WANTLIB += boost_python boost_thread-mt c cairo expat fontconfig
 WANTLIB += freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0
 WANTLIB += glut gobject-2.0 gtk-x11-2.0 jpeg m ogg openal pango-1.0
-WANTLIB += pangocairo-1.0 pangoft2-1.0 png pthread stdc++ util
+WANTLIB += pangocairo-1.0 pangoft2-1.0 png pthread util
 WANTLIB += vorbis vorbisfile z
+WANTLIB += c++ c++abi
 
 PATCHORIG =		.orig.port
 

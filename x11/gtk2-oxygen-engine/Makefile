@@ -4,6 +4,7 @@ COMMENT =		KDE Oxygen widget theme for GTK
 SHARED_ONLY =		Yes
 
 V =			1.4.5
+REVISION =		0
 DISTNAME =		oxygen-gtk2-${V}
 PKGNAME =		gtk2-oxygen-engine-${V}
 
@@ -19,7 +20,8 @@ WANTLIB += X11 Xcomposite Xcursor Xdamage Xext Xfixes Xi Xinerama
 WANTLIB += Xrandr Xrender atk-1.0 c cairo fontconfig freetype
 WANTLIB += gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0 gobject-2.0
 WANTLIB += gtk-x11-2.0 m pango-1.0 pangocairo-1.0 pangoft2-1.0
-WANTLIB += pthread stdc++ z
+WANTLIB += pthread z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		http://download.kde.org/stable/oxygen-gtk2/${V}/src/
 

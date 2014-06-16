@@ -3,6 +3,7 @@
 COMMENT =		improved opensource version of Dune 2
 
 DISTNAME =		dunelegacy-0.96.3-src
+REVISION =		0
 PKGNAME =		${DISTNAME:S/-src//}
 
 CATEGORIES =		games x11
@@ -14,7 +15,8 @@ MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 # GPLv2/CC-BY-SA
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		SDL SDL_mixer c enet m pthread stdc++
+WANTLIB =		SDL SDL_mixer c enet m pthread
+WANTLIB +=		c++ c++abi
 
 MASTER_SITES = 		${MASTER_SITE_SOURCEFORGE:=dunelegacy/}
 MASTER_SITES0 =		http://www.myway.de/richieland/

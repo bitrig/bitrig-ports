@@ -5,6 +5,7 @@ ONLY_FOR_ARCHS=	amd64 i386 powerpc sparc64
 COMMENT=	multi system emulator
 
 DISTNAME=	qemu-2.0.0
+REVISION=	0
 CATEGORIES=	emulators
 MASTER_SITES=	http://wiki.qemu.org/download/
 EXTRACT_SUFX=	.tar.bz2
@@ -20,8 +21,9 @@ WANTLIB=	GL SDL X11 Xcomposite Xcursor Xdamage Xext Xfixes Xi Xinerama \
 		Xrandr Xrender atk-1.0 c cairo curl fdt fontconfig freetype \
 		gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0 gnutls gobject-2.0 \
 		gthread-2.0 gtk-x11-2.0 jpeg m ncurses pango-1.0 pangocairo-1.0 \
-		pangoft2-1.0 pixman-1 png pthread pthread-stubs ssh2 stdc++ util \
+		pangoft2-1.0 pixman-1 png pthread pthread-stubs ssh2 util \
 		vte z
+WANTLIB +=	c++ c++abi
 
 MODULES=	devel/gettext \
 		lang/python

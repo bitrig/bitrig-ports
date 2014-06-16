@@ -4,6 +4,7 @@ SHARED_ONLY =		Yes
 
 COMMENT =		GTK+2 IRC Client
 DISTNAME =		hexchat-2.10.0
+REVISION =		0
 EXTRACT_SUFX =		.tar.xz
 CATEGORIES =		net x11
 
@@ -19,8 +20,9 @@ WANTLIB += expat ffi fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 graphite2
 WANTLIB += gthread-2.0 gtk-x11-2.0 harfbuzz m ${MODPY_WANTLIB} notify
 WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre perl pixman-1
-WANTLIB += png proxy pthread pthread-stubs ssl stdc++ util xcb
+WANTLIB += png proxy pthread pthread-stubs ssl util xcb
 WANTLIB += xcb-render xcb-shm z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		http://dl.hexchat.net/hexchat/
 

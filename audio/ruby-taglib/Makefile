@@ -3,6 +3,7 @@
 COMMENT =	reads and writes metadata/tags for many audio formats
 
 VERSION =	0.6.0
+REVISION =	0
 DISTNAME =	taglib-ruby-${VERSION}
 PKGNAME =	taglib-${VERSION}
 CATEGORIES =	audio
@@ -12,7 +13,8 @@ HOMEPAGE =	http://robinst.github.io/taglib-ruby/
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB = 		stdc++ tag
+WANTLIB = 		tag
+WANTLIB +=		c++ c++abi
 
 MODULES =		lang/ruby
 
