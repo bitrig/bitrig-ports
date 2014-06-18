@@ -3,7 +3,7 @@
 COMMENT=	universal charset detection library and tool
 
 DISTNAME=	uchardet-0.0.1
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=	uchardet                  0.0 # 0.0
 
