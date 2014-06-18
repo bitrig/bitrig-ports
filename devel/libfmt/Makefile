@@ -20,5 +20,6 @@ TEST_TARGET=	test
 
 pre-build:
 	@cp ${FILESDIR}/Make.OpenBSD ${WRKSRC}
+	@cp ${FILESDIR}/Make.OpenBSD ${WRKSRC}/Make.Bitrig
 
 .include <bsd.port.mk>
