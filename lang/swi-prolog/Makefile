@@ -58,7 +58,7 @@ WANTLIB += ICE SM X11 Xext Xft Xinerama Xpm Xt c crypto execinfo
 WANTLIB += fontconfig gmp jpeg m ncursesw pthread
 WANTLIB += readline ssl z
 
-FULLARCH =		${MACHINE_ARCH:S/amd64/x86_64/}-openbsd${OSREV}
+FULLARCH =		${MACHINE_ARCH:S/amd64/x86_64/}-bitrig${OSREV}
 SUBST_VARS +=		V BOOT FULLARCH
 
 post-install:
