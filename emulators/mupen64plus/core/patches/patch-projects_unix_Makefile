@@ -1,0 +1,14 @@
+--- projects/unix/Makefile.orig	Wed Jun 18 02:53:14 2014
++++ projects/unix/Makefile	Wed Jun 18 02:59:06 2014
+@@ -44,6 +44,11 @@ ifeq ("$(UNAME)","OpenBSD")
+   CFLAGS += -DIOAPI_NO_64
+   $(warning OS type "$(UNAME)" not officially supported.')
+ endif
++ifeq ("$(UNAME)","Bitrig")
++  OS = FREEBSD
++  CFLAGS += -DIOAPI_NO_64
++  $(warning OS type "$(UNAME)" not officially supported.')
++endif
+ ifneq ("$(filter GNU/kFreeBSD kfreebsd,$(UNAME))","")
+   OS = LINUX
+ endif
