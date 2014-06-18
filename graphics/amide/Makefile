@@ -3,9 +3,8 @@
 COMMENT =	Amide a Medical Imaging Data Examiner
 
 DISTNAME =	amide-1.0.5
-REVISION =	0
+REVISION =	1
 CATEGORIES =	graphics
-REVISION =	0
 
 HOMEPAGE =	http://amide.sourceforge.net/
 
