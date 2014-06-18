@@ -72,7 +72,7 @@ CONFIGURE_ENV +=	FFLAGS="${FFLAGS}"
 .endif
 
 # needed to build on amd64
-GCC_ARCH =	${MACHINE_ARCH}-unknown-openbsd${OSREV}
+GCC_ARCH =	${MACHINE_ARCH}-unknown-bitrig${OSREV}
 GNU_ARCH =	${GCC_ARCH:S/amd64/x86_64/}
 SUBST_VARS =	GNU_ARCH VERSION
 
