@@ -3,7 +3,7 @@
 COMMENT=		Foreign Function Interface
 
 DISTNAME=		libffi-3.0.13
-REVISION=		0
+REVISION=		1
 SHARED_LIBS +=  ffi                  1.0      # .6.1
 CATEGORIES=		devel
 
