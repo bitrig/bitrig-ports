@@ -2,10 +2,9 @@
 
 COMMENT=	simple and performant DNS server
 
-VERSION=	1.3.07.15
+VERSION=	1.4.14
 DISTNAME=	maradns-${VERSION}
 CATEGORIES=	net
-REVISION =	0
 
 HOMEPAGE=	http://www.maradns.org/
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	c pthread
 
-MASTER_SITES=	http://maradns.org/download/1.3/
+MASTER_SITES=	http://maradns.samiam.org/download/1.4/
 
 MAKE_FLAGS=	CC="${CC}" FLAGS="${CFLAGS} -D_THREAD_SAFE -pthread"
 

@@ -23,6 +23,7 @@ share/doc/maradns/
 share/doc/maradns/Makefile
 share/doc/maradns/QuickStart
 share/doc/maradns/README
+share/doc/maradns/changelog.txt
 share/doc/maradns/credits.txt
 share/doc/maradns/faq.html
 share/doc/maradns/faq.txt
@@ -252,12 +253,15 @@ share/doc/maradns/webpage/maradns-1.2-l.css
 share/doc/maradns/webpage/maradns-1.2-p.css
 share/doc/maradns/webpage/maradns-1.2-s.css
 share/doc/maradns/webpage/maradns-1.2-top.html
+share/doc/maradns/webpage/maradns-1.3-s.css
 share/doc/maradns/webpage/notes.embed
 share/doc/maradns/webpage/notes.html
-share/doc/maradns/webpage/roadmap.embed
-share/doc/maradns/webpage/roadmap.html
+share/doc/maradns/webpage/products.embed
+share/doc/maradns/webpage/products.html
 share/doc/maradns/webpage/security.embed
 share/doc/maradns/webpage/security.html
+share/doc/maradns/webpage/sponsors.embed
+share/doc/maradns/webpage/sponsors.html
 share/examples/maradns/
 share/examples/maradns/Makefile
 share/examples/maradns/example_authoritative_mararc.txt
