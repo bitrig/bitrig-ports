@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.114 2014/06/16 11:54:44 sthen Exp $
+# $OpenBSD: Makefile,v 1.115 2014/06/20 10:49:11 sthen Exp $
 
 ONLY_FOR_ARCHS= amd64 i386
 
@@ -17,7 +17,7 @@ PKGNAME-java=	libreoffice-java-${VERSION}
 CATEGORIES=	editors productivity
 DPB_PROPERTIES=	parallel tag:kde3
 
-REVISION-main=	1
+REVISION-main=	2
 REVISION-kde=	0
 
 EPOCH=		0
@@ -160,7 +160,10 @@ BUILD_DEPENDS +=	print/cups,-libs \
 MODULES+=	lang/python \
 		devel/gettext
 
-MODPY_VERSION=	${MODPY_DEFAULT_VERSION_3}
+# XXX can't use ${MODPY_DEFAULT_VERSION_3}, it specifically wants 3.3 and
+# will try (and fail) to build its own copy if not available.
+MODPY_VERSION=	3.3
+
 
 LIB_DEPENDS-main=x11/gtk+2 \
 		${MODPY_LIB_DEPENDS} \
