@@ -3,7 +3,7 @@
 COMMENT=		crypto library based on code used in GnuPG
 
 DISTNAME=		libgcrypt-1.6.1
-REVISION=		1
+REVISION=		2
 CATEGORIES=		security
 
 SHARED_LIBS +=  gcrypt               19.1     # 20.1
@@ -19,11 +19,6 @@ MASTER_SITES=	${MASTER_SITES_GNUPG:=libgcrypt/}
 
 MODULES=		devel/gettext
 LIB_DEPENDS=		security/libgpg-error
-
-# missing arm asm and clang enables neon which is also missing src
-.if ${MACHINE_ARCH} == "arm"
-CONFIGURE_ENV +=        CC=gcc CXX=g++
-.endif
 
 # really bad asm that doesn't compile
 .if ${MACHINE_ARCH} == "i386"
