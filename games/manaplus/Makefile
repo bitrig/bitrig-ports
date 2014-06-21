@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.39 2014/05/25 03:19:48 bcallah Exp $
+# $OpenBSD: Makefile,v 1.41 2014/06/21 14:58:44 bcallah Exp $
 
 COMMENT =	client for The Mana World
 
-V =		1.4.5.24
+V =		1.4.6.21
 DISTNAME =	manaplus-${V}
 EXTRACT_SUFX =	.tar.xz
 
@@ -14,7 +14,7 @@ HOMEPAGE =	http://manaplus.org/
 
 MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
-# GPLv2
+# GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL X11 c crypto curl idn m physfs png pthread ssl xml2 z
