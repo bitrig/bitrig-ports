@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2013/06/04 18:41:42 naddy Exp $
+# $OpenBSD: Makefile,v 1.25 2014/06/21 11:54:29 jasper Exp $
 
 COMMENT=	Oxyd/Rock'n'Roll clone
 
@@ -19,7 +19,7 @@ WANTLIB=	SDL c m enet pthread z SDL_image>=1 \
 		xerces-c
 WANTLIB+=	c++ c++abi
 
-MASTER_SITES=	${MASTER_SITE_BERLIOS:=enigma-game/}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=enigma-game/}
 
 WRKDIST=	${WRKDIR}/enigma-${V}
 
