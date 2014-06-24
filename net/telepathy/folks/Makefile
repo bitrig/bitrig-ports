@@ -55,6 +55,8 @@ CONFIGURE_ARGS += --disable-fatal-warnings
 # Package folks was not found in the pkg-config search path
 MAKE_ENV=	PKG_CONFIG_PATH=${WRKBUILD}/folks
 
+CFLAGS +=	-Wno-return-type
+
 post-install:
 	rm ${PREFIX}/lib/folks/${API_V}/backends/*/*.{a,la}
 
