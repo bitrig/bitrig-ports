@@ -1,0 +1,11 @@
+--- binutils/readelf.c.orig	Wed Jun 25 05:28:13 2014
++++ binutils/readelf.c	Wed Jun 25 05:29:50 2014
+@@ -3040,6 +3040,8 @@ get_segment_type (unsigned long p_type)
+ 			return "GNU_EH_FRAME";
+     case PT_GNU_STACK:	return "GNU_STACK";
+     case PT_GNU_RELRO:  return "GNU_RELRO";
++    case PT_OPENBSD_RANDOMIZE: return "OPENBSD_RANDOMIZE";
++    case PT_BITRIG_TMPFS_RAMDISK: return "BITRIG_TMPFS_RAMDISK";
+ 
+     default:
+       if ((p_type >= PT_LOPROC) && (p_type <= PT_HIPROC))

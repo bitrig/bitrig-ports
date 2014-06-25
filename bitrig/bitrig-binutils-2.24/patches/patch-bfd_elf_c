@@ -1,0 +1,69 @@
+--- bfd/elf.c.orig	Wed Jun 25 05:26:19 2014
++++ bfd/elf.c	Wed Jun 25 07:10:00 2014
+@@ -1147,6 +1147,8 @@ get_segment_type (unsigned int p_type)
+     case PT_GNU_EH_FRAME: pt = "EH_FRAME"; break;
+     case PT_GNU_STACK: pt = "STACK"; break;
+     case PT_GNU_RELRO: pt = "RELRO"; break;
++    case PT_OPENBSD_RANDOMIZE: pt = "OPENBSD_RANDOMIZE"; break;
++    case PT_BITRIG_TMPFS_RAMDISK: pt = "BITRIG_TMPFS_RAMDISK"; break;
+     default: pt = NULL; break;
+     }
+   return pt;
+@@ -2494,6 +2496,10 @@ bfd_section_from_phdr (bfd *abfd, Elf_Internal_Phdr *h
+     case PT_GNU_RELRO:
+       return _bfd_elf_make_section_from_phdr (abfd, hdr, hdr_index, "relro");
+ 
++    case PT_OPENBSD_RANDOMIZE:
++      return _bfd_elf_make_section_from_phdr (abfd, hdr, hdr_index,
++					      "openbsd_randomize");
++
+     default:
+       /* Check for any processor-specific program segment types.  */
+       bed = get_elf_backend_data (abfd);
+@@ -3564,6 +3570,12 @@ get_program_header_size (bfd *abfd, struct bfd_link_in
+       ++segs;
+     }
+ 
++  if (bfd_get_section_by_name (abfd, ".openbsd.randomdata") != NULL)
++    {
++      /* We need a PT_OPENBSD_RANDOMIZE segment.  */
++      ++segs;
++    }
++
+   if (info != NULL && info->relro)
+     {
+       /* We need a PT_GNU_RELRO segment.  */
+@@ -3786,7 +3798,7 @@ _bfd_elf_map_sections_to_segments (bfd *abfd, struct b
+       bfd_boolean writable;
+       int tls_count = 0;
+       asection *first_tls = NULL;
+-      asection *dynsec, *eh_frame_hdr;
++      asection *dynsec, *eh_frame_hdr, *randomdata;
+       bfd_size_type amt;
+       bfd_vma addr_mask, wrap_to = 0;
+ 
+@@ -4200,6 +4212,24 @@ _bfd_elf_map_sections_to_segments (bfd *abfd, struct b
+ 	      *pm = m;
+ 	      pm = &m->next;
+ 	    }
++	}
++
++      /* If there is a .openbsd.randomdata section, throw in a
++      	 PT_OPENBSD_RANDOMIZE segment.  */
++      randomdata = bfd_get_section_by_name (abfd, ".openbsd.randomdata");
++      if (randomdata != NULL && (randomdata->flags & SEC_LOAD) != 0)
++	{
++	  amt = sizeof (struct elf_segment_map);
++	  m = (struct elf_segment_map *) bfd_zalloc (abfd, amt);
++	  if (m == NULL)
++	    goto error_return;
++	  m->next = NULL;
++	  m->p_type = PT_OPENBSD_RANDOMIZE;
++	  m->count = 1;
++	  m->sections[0] = randomdata->output_section;
++
++	  *pm = m;
++	  pm = &m->next;
+ 	}
+ 
+       free (sections);

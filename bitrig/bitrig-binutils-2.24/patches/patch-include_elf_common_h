@@ -1,0 +1,12 @@
+--- include/elf/common.h.orig	Wed Jun 25 05:30:08 2014
++++ include/elf/common.h	Wed Jun 25 05:31:39 2014
+@@ -438,6 +438,9 @@
+ #define PT_GNU_STACK	(PT_LOOS + 0x474e551) /* Stack flags */
+ #define PT_GNU_RELRO	(PT_LOOS + 0x474e552) /* Read-only after relocation */
+ 
++#define PT_OPENBSD_RANDOMIZE	0x65a3dbe6
++#define PT_BITRIG_TMPFS_RAMDISK	0x627a93eb
++
+ /* Program segment permissions, in program header p_flags field.  */
+ 
+ #define PF_X		(1 << 0)	/* Segment is executable */
