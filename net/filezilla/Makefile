@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.35 2014/04/21 22:26:21 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.36 2014/06/30 09:48:53 jasper Exp $
 
 COMMENT=	fast FTP and SFTP GUI client with a lot of features
 
@@ -61,6 +61,8 @@ MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/config
 
 USE_GMAKE=	Yes
 WRKDIST=	${WRKDIR}/filezilla-$V
+
+FAKE_FLAGS+=	docsdir="${PREFIX}/share/examples/filezilla/"
 
 do-test:
 	@cd ${WRKBUILD}/tests && ${MAKE_PROGRAM} check-TESTS
