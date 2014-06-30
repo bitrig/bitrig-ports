@@ -2,7 +2,7 @@
 
 COMMENT =		crypto and ssl toolkit for python
 
-MODPY_EGG_VERSION =	0.21.1
+MODPY_EGG_VERSION =	0.22.3
 DISTNAME =		M2Crypto-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 
@@ -23,10 +23,5 @@ MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
 
 BUILD_DEPENDS =		devel/swig
-
-# XXX don't allow the build to "succeed" unless the module is usable;
-# M2Crypto has had problems with api changes in libressl
-post-build:
-	${MODPY_TEST_TARGET} --test-suite=tests.test_ssl_offline
 
 .include <bsd.port.mk>
