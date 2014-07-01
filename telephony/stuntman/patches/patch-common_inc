@@ -1,0 +1,11 @@
+--- common.inc.orig	Tue Jul  1 09:03:09 2014
++++ common.inc	Tue Jul  1 09:03:24 2014
+@@ -4,7 +4,7 @@
+ DEFINES := -DNDEBUG
+ 
+ # CLANG compiler works fine
+-# CXX := /usr/bin/clang++
++CXX := /usr/bin/clang++
+ 
+ STANDARD_FLAGS := -Wall -Wuninitialized 
+ 
