@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure_ac,v 1.6 2013/11/04 21:50:09 brad Exp $
 --- configure.ac.orig	Sat Sep 26 16:34:14 2009
-+++ configure.ac	Sun Aug 21 01:54:37 2011
++++ configure.ac	Tue Jul  1 00:39:56 2014
 @@ -97,9 +97,6 @@ AM_CONDITIONAL(SILC_X86_64, test x$cpu_x86_64 = xtrue)
  AM_CONDITIONAL(SILC_POWERPC, test x$cpu_ppc = xtrue)
  AM_CONDITIONAL(SILC_IA64, test x$cpu_ia64 = xtrue)
@@ -129,9 +129,12 @@ $OpenBSD: patch-configure_ac,v 1.6 2013/11/04 21:50:09 brad Exp $
  # SOCKS4 support checking
  #
  SAVE_LIBS="$LIBS"
-@@ -1291,7 +1189,7 @@ fi
+@@ -1289,9 +1187,9 @@ case "$host_cpu" in
+ esac
+ fi
  
- SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fno-regmove)
+-SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fno-regmove)
++SILC_ADD_CC_FLAGS(SILC_CRYPTO)
  if test x$summary_debug = xno -a x$want_cc_optimizations = xtrue; then
 -  SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fomit-frame-pointer -O3)
 +  SILC_ADD_CC_FLAGS(SILC_CRYPTO, -fomit-frame-pointer)
