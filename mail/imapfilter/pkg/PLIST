@@ -9,7 +9,6 @@ share/imapfilter/
 share/imapfilter/account.lua
 share/imapfilter/auxiliary.lua
 share/imapfilter/common.lua
-share/imapfilter/deprecated.lua
 share/imapfilter/mailbox.lua
 share/imapfilter/message.lua
 share/imapfilter/options.lua

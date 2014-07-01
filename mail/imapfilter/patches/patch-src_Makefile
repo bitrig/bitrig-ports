@@ -1,0 +1,16 @@
+--- src/Makefile.orig	Sun Oct 27 23:46:05 2013
++++ src/Makefile	Tue Jul  1 21:56:39 2014
+@@ -8,10 +8,10 @@ MYCFLAGS =
+ MYLDFLAGS =
+ MYLIBS =
+ 
+-INCDIRS =
+-LIBDIRS =
++INCDIRS = -I${MODLUA_INCL_DIR} -I${LOCALBASE}/include
++LIBDIRS = -L${LOCALBASE}/lib
+ 
+-LIBLUA = -llua
++LIBLUA = ${MODLUA_LIB}
+ LIBPCRE = -lpcre
+ LIBSSL = -lssl
+ LIBCRYPTO = -lcrypto

@@ -2,14 +2,14 @@
 
 COMMENT=	remote IMAP filtering utility
 
-DISTNAME=	imapfilter-2.2.3
-REVISION=	2
+V=		2.5.6
+DISTNAME=	imapfilter-${V}
+DISTFILES=	v${V}.tar.gz
 CATEGORIES=	mail
 
-HOMEPAGE=	http://imapfilter.hellug.gr/
+HOMEPAGE=	https://github.com/lefcha/imapfilter
 
-MASTER_SITES=	http://spacehopper.org/mirrors/ \
-		https://github.com/downloads/lefcha/imapfilter/
+MASTER_SITES=	https://github.com/lefcha/imapfilter/archive/
 
 MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
@@ -24,19 +24,14 @@ MODLUA_SA=	Yes
 LIB_DEPENDS=	devel/pcre \
 		${MODLUA_LIB_DEPENDS}
 
-CONFIGURE_STYLE=simple
-CONFIGURE_ARGS=	-p ${PREFIX} \
-		-b ${PREFIX}/bin \
-		-s ${PREFIX}/share/imapfilter \
-		-m ${PREFIX}/man \
-		-o ssltls=yes -o crammd5=yes
 MAKE_ENV+=	CC="${CC}"
 USE_GROFF =	Yes
 
 NO_TEST=	Yes
 
+SUBST_VARS+=	MODLUA_INCL_DIR MODLUA_LIB
 pre-configure:
-	${SUBST_CMD} ${WRKSRC}/configure
+	${SUBST_CMD} ${WRKSRC}/src/Makefile
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/imapfilter
