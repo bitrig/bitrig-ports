@@ -20,6 +20,8 @@ MAKE_FILE=		Makefile.OPENBSD
 WRKDIST=		${WRKDIR}/wmcube
 WRKSRC=			${WRKDIST}/wmcube
 
+CFLAGS+=		-std=gnu89
+
 3D_OBJECTS=		${PREFIX}/share/wmcube
 
 post-install:
