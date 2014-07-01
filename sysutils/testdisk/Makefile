@@ -24,6 +24,8 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/config
+
 LIB_DEPENDS =		sysutils/e2fsprogs>=1.42.7 \
 			sysutils/ntfs-3g \
 			graphics/jpeg
