@@ -22,9 +22,7 @@ WANTLIB += X11 c m ocsync pthread sqlite3 lib/inotify/inotify
 MASTER_SITES =		http://download.owncloud.com/desktop/stable/
 EXTRACT_SUFX =		.tar.bz2
 
-MODULES =		devel/cmake x11/qt4 gcc4
-MODGCC4_ARCHS = 	*
-MODGCC4_LANGS = 	c++
+MODULES =		devel/cmake x11/qt4
 RUN_DEPENDS =		devel/desktop-file-utils \
 			x11/gtk+2,-guic
 LIB_DEPENDS =		devel/libinotify \
