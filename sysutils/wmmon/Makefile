@@ -14,6 +14,7 @@ MAINTAINER=	Vladimir Popov <pva48@mail.ru>
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		X11 Xext Xpm c kvm pthread-stubs xcb
 
+CFLAGS+=	-std=gnu89
 
 WRKDIST=	${WRKDIR}/wmmon.app
 WRKSRC=		${WRKDIST}/wmmon
