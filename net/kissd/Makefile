@@ -14,6 +14,8 @@ MAINTAINER=	Daniel Hartmeier <dhartmei@openbsd.org>
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c
 
+MAKE_FLAGS=		CFLAGS="${CFLAGS} -Wno-unused-const-variable"
+
 USE_GROFF =	Yes
 NO_TEST=	Yes
 
