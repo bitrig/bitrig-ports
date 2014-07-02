@@ -16,6 +16,9 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c m pthread milter
 
+BUILD_DEPENDS=	mail/sendmail
+RUN_DEPENDS=	mail/sendmail
+
 MASTER_SITES=  	${HOMEPAGE}
 EXTRACT_SUFX=	.tgz
 
@@ -34,6 +37,8 @@ FAKE_FLAGS=	BINDIR=${PREFIX}/sbin \
 		LIBDIR=${PREFIX}/lib/smtp-vilter \
 		MANDIR=${PREFIX}/man/man \
 		SPATH=${PREFIX}/share/examples/smtp-vilter
+
+CFLAGS+=	-I${LOCALBASE}/include
 
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/etc/smtp-vilter/smtp-vilter.conf
