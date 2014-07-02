@@ -17,7 +17,6 @@ HOMEPAGE=	http://www.ntp.org/
 # modified ISC
 PERMIT_PACKAGE_CDROM=	Yes
 
-LIB_DEPENDS=	devel/readline
 WANTLIB += c crypto edit event_core event_extra event_pthreads
 WANTLIB += m pthread ssl readline termcap
 
@@ -42,7 +41,8 @@ CONFIGURE_ENV=	CPPFLAGS='-DCONFIG_FILE="\"${SYSCONFDIR}/ntp.conf\"" \
 BUILD_DEPENDS=	${MODGNU_AUTOCONF_DEPENDS} \
 		${MODGNU_AUTOMAKE_DEPENDS} \
 		devel/libtool
-LIB_DEPENDS=	devel/libevent2
+LIB_DEPENDS=	devel/libevent2 \
+		devel/readline
 
 post-patch:
 	cd ${WRKSRC}; AUTOCONF_VERSION=${AUTOCONF_VERSION} \
