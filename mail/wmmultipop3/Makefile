@@ -18,6 +18,8 @@ NO_TEST=	Yes
 
 WRKSRC=		${WRKDIST}/wmmultipop3
 
+CFLAGS+=	-std=gnu89
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/wmmultipop3 ${PREFIX}/bin
 
