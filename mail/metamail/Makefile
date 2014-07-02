@@ -17,7 +17,7 @@ WANTLIB=	c termcap
 USE_X11 =	Yes
 
 WRKSRC=		${WRKDIST}/src
-MAKE_FLAGS=	CC="${CC}" CFLAGS="-DHAVE_TCGETATTR ${CFLAGS}"
+MAKE_FLAGS=	CC="${CC}" CFLAGS="-DHAVE_TCGETATTR ${CFLAGS} -Wno-return-type"
 NO_TEST=	Yes
 
 post-configure:
