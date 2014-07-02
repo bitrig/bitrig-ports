@@ -20,10 +20,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB += 		lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSql
 WANTLIB +=		lib/qt4/QtWebKit c m pthread z X11
 
-MODULES =		devel/cmake gcc4 x11/qt4
-
-MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		c++
+MODULES =		devel/cmake x11/qt4
 
 RUN_DEPENDS =		devel/desktop-file-utils \
 			x11/gtk+2,-guic
