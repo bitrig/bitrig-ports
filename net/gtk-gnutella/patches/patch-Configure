@@ -1,6 +1,6 @@
 $OpenBSD: patch-Configure,v 1.17 2013/10/22 19:48:49 jca Exp $
---- Configure.orig	Sun Sep 11 16:28:07 2011
-+++ Configure	Tue Oct 22 18:56:16 2013
+--- Configure.orig	Sun Sep 11 10:28:07 2011
++++ Configure	Wed Jul  2 11:13:11 2014
 @@ -307,6 +307,8 @@ nofile=''
  tablesize=''
  d_access=''
@@ -77,6 +77,15 @@ $OpenBSD: patch-Configure,v 1.17 2013/10/22 19:48:49 jca Exp $
  		case "$version" in
  		'') ;;
  		*)
+@@ -8511,7 +8546,7 @@ EOM
+ 	chmod +x $mkdep
+ 	$eunicefix $mkdep
+ 	if $mkdep dep.c >dep.out 2>/dev/null &&
+-		$contains "dep$_o: dep.h" dep.out >/dev/null 2>&1
++		$contains "dep$_o:.*dep\.h" dep.out >/dev/null 2>&1
+ 	then
+ 		echo "Looks like we can use $cc -MM."
+ 	else
 @@ -9921,6 +9956,8 @@ cppstdin='$cppstdin'
  csh='$csh'
  d_access='$d_access'

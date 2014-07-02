@@ -3,8 +3,8 @@
 @man man/man1/gtk-gnutella.1
 share/applications/gtk-gnutella.desktop
 share/gtk-gnutella/
-share/gtk-gnutella/OpenBSD.${MACHINE_ARCH}-openbsd/
-share/gtk-gnutella/OpenBSD.${MACHINE_ARCH}-openbsd/gtk-gnutella.nm
+share/gtk-gnutella/Bitrig.${MACHINE_ARCH}-bitrig/
+share/gtk-gnutella/Bitrig.${MACHINE_ARCH}-bitrig/gtk-gnutella.nm
 share/gtk-gnutella/bogons.txt
 share/gtk-gnutella/el/
 share/gtk-gnutella/el/FAQ
