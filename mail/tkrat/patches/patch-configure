@@ -1,0 +1,20 @@
+--- configure.orig	Wed Jul  2 01:00:13 2014
++++ configure	Wed Jul  2 01:00:56 2014
+@@ -3150,7 +3150,7 @@ fi
+ 	SHLIB_SUFFIX=".so"
+ 	OSTYPE=bsf
+ 	;;
+-    OpenBSD-*)
++    OpenBSD-* | Bitrig-*)
+ 	SHLIB_CFLAGS="-fPIC"
+ 	SHLIB_LD="ld -Bshareable -x"
+ 	SHLIB_LD_LIBS=""
+@@ -3291,7 +3291,7 @@ if test "$CC" = "gcc" -o `$CC -v 2>&1 | grep -c gcc` !
+ 	    ;;
+ 	IRIX*)
+ 	    ;;
+-	NetBSD-*|FreeBSD-*|OpenBSD-*)
++	NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*)
+ 	    ;;
+ 	RISCos-*)
+ 	    ;;
