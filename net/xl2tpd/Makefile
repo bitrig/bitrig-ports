@@ -23,6 +23,8 @@ MASTER_SITES=	http://ftp.openswan.org/xl2tpd/ \
 FAKE_FLAGS=	DESTDIR= MANDIR=${WRKINST}${PREFIX}/man
 NO_TEST=	Yes
 
+CFLAGS+=	-std=gnu89
+
 do-configure:
 	perl -pi -e 's,/etc,${SYSCONFDIR},' ${WRKSRC}/file.h
 
