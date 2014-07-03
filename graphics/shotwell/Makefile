@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2014/07/03 07:12:56 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.43 2014/07/03 07:37:02 ajacoutot Exp $
 
 COMMENT =	digital photo organizer
 
@@ -8,7 +8,7 @@ REVISION =	0
 
 CATEGORIES =	graphics
 
-HOMEPAGE =	http://yorba.org/shotwell/
+HOMEPAGE =	https://wiki.gnome.org/Apps/Shotwell
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes
