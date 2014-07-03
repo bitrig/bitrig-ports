@@ -6,10 +6,6 @@ COMMENT =		n64 emulator video plugin
 PERMIT_PACKAGE_CDROM =	Yes
 REVISION =		1
 
-MODULES =		gcc4
-MODGCC4_LANGS =		c c++
-MODGCC4_ARCHS =		i386 amd64
-
 WANTLIB =		GL SDL boost_filesystem boost_system c m png pthread z
 LIB_DEPENDS =		devel/boost devel/sdl graphics/png
 
