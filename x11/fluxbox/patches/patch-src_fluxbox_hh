@@ -1,0 +1,11 @@
+--- src/fluxbox.hh.orig	Sat Jul  5 14:40:54 2014
++++ src/fluxbox.hh	Sat Jul  5 14:41:14 2014
+@@ -88,7 +88,7 @@ class Fluxbox : public FbTk::App, (public)
+     /// main event loop
+     void eventLoop();
+     bool validateWindow(Window win) const;
+-    bool validateClient(const WinClient *client) const;
++    bool validateClient(WinClient *client) const;
+ 
+     void grab();
+     void ungrab();

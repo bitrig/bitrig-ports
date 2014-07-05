@@ -1,0 +1,11 @@
+--- src/fluxbox.cc.orig	Sat Jul  5 14:39:43 2014
++++ src/fluxbox.cc	Sat Jul  5 14:40:06 2014
+@@ -1355,7 +1355,7 @@ void Fluxbox::revertFocus() {
+         FocusControl::setFocusedWindow(0);
+ }
+ 
+-bool Fluxbox::validateClient(const WinClient *client) const {
++bool Fluxbox::validateClient(WinClient *client) const {
+     WinClientMap::const_iterator it =
+         find_if(m_window_search.begin(),
+                 m_window_search.end(),
