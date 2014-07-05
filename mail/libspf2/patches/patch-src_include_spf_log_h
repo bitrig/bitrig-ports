@@ -1,0 +1,11 @@
+--- src/include/spf_log.h.orig	Sat Jul  5 16:32:14 2014
++++ src/include/spf_log.h	Sat Jul  5 16:34:54 2014
+@@ -63,7 +63,7 @@ void SPF_debugv( const char *file, int line, const cha
+ #define SPF_errorf(format, ... ) SPF_errorx( __FILE__, __LINE__, format, __VA_ARGS__ )
+ #define SPF_warningf(format, ... ) SPF_warningx( __FILE__, __LINE__, format, __VA_ARGS__ )
+ #define SPF_infof(format, ... ) SPF_infox( __FILE__, __LINE__, format, __VA_ARGS__ )
+-#define SPF_debugf(format, ... ) SPF_debugx( __FILE__, __LINE__, format, __VA_ARGS__ )
++#define SPF_debugf(format, ... ) SPF_debugx( __FILE__, __LINE__, format, ##__VA_ARGS__ )
+ 
+ #elif defined( __GNUC__ )
+ 

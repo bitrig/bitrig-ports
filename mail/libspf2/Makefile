@@ -25,6 +25,8 @@ LIB_DEPENDS=		net/libbind
 
 CONFIGURE_STYLE=	gnu
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/config
+
 CONFIGURE_ARGS=		--bindir=${PREFIX}/libexec/libspf2
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include/bind" \
 			LDFLAGS="-L${LOCALBASE}/lib -L${LOCALBASE}/lib/libbind -Wl,-rpath ${LOCALBASE}/lib/libbind -lbind"
