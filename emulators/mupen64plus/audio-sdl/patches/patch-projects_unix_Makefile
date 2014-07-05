@@ -1,0 +1,15 @@
+--- projects/unix/Makefile.orig	Sat Jul  5 14:58:07 2014
++++ projects/unix/Makefile	Sat Jul  5 14:58:58 2014
+@@ -55,6 +55,12 @@ ifeq ("$(UNAME)","OpenBSD")
+   SO_EXTENSION = so
+   $(warning OS type "$(UNAME)" not officially supported.')
+ endif
++ifeq ("$(UNAME)","Bitrig")
++  OS = FREEBSD
++  SHARED = -shared
++  SO_EXTENSION = so
++  $(warning OS type "$(UNAME)" not officially supported.')
++endif
+ ifneq ("$(filter GNU/kFreeBSD kfreebsd,$(UNAME))","")
+   OS = LINUX
+   SHARED = -shared
