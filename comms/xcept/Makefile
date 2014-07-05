@@ -14,7 +14,7 @@ MAKE_FLAGS=	SYSCONFDIR="${SYSCONFDIR}"
 
 USE_GROFF =	Yes
 
-CFLAGS+=-Dlog=logit
+CFLAGS+=-Dlog=logit -Wno-return-type
 WRKDIST=	${WRKDIR}/XCept-2.1.2
 
 NO_TEST=	Yes
