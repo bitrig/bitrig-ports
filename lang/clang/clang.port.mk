@@ -32,7 +32,8 @@ _MODCLANG_LINKS =
 
 BITRIG_LLVM_VERSION=	3.4
 .if ${MODCLANG_VERSION} == ${BITRIG_LLVM_VERSION}
-BUILD_DEPENDS += bitrig/bitrig-llvm
+#3.4 comes with comp, not from ports
+#BUILD_DEPENDS += bitrig/bitrig-llvm
 .else
 BUILD_DEPENDS += bitrig/bitrig-llvm-${MODCLANG_VERSION}
 .endif
