@@ -1,2 +1,0 @@
-@comment $OpenBSD$
-lib/clang/${LLVM_V}/lib/bitrig/libclang_rt.i386.a
