@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2014/02/09 11:45:52 zhuk Exp $
+# $OpenBSD: Makefile,v 1.18 2014/07/12 19:20:17 zhuk Exp $
 
 COMMENT-main =		KDE core run-time components
 COMMENT-locale =	KDE locale data files
@@ -6,7 +6,7 @@ DISTNAME =		kde-runtime-${MODKDE4_VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-locale =	kde4-locale-${MODKDE4_VERSION}
 PKG_ARCH-locale =	*
-REVISION-main =		2
+REVISION-main =		1
 
 DPB_PROPERTIES =	parallel
 
@@ -32,11 +32,12 @@ WANTLIB-main += ${KDE4LIB}/khtml ${KDE4LIB}/kio ${KDE4LIB}/kjs
 WANTLIB-main += ${KDE4LIB}/kmediaplayer ${KDE4LIB}/knewstuff3
 WANTLIB-main += ${KDE4LIB}/knotifyconfig ${KDE4LIB}/kparts ${KDE4LIB}/kpty
 WANTLIB-main += ${KDE4LIB}/kxmlrpcclient ${KDE4LIB}/nepomuk
-WANTLIB-main += ${KDE4LIB}/nepomukcore ${KDE4LIB}/nepomukutils
-WANTLIB-main += ${KDE4LIB}/plasma ${KDE4LIB}/solid
+WANTLIB-main += ${KDE4LIB}/nepomukutils
+WANTLIB-main += ${KDE4LIB}/plasma ${KDE4LIB}/qgpgme ${KDE4LIB}/solid
 WANTLIB-main += attica canberra exiv2 glib-2.0 jpeg pulse
 WANTLIB-main += pulse-mainloop-glib smbclient ssh soprano webp
-WANTLIB-main += c++ c++abi
+WANTLIB-main += assuan gcrypt gpg-error gpgme++-pthread gpgme-pthread
+
 WANTLIB-locale =
 
 MULTI_PACKAGES =	-main -locale
@@ -46,7 +47,8 @@ MODKDE4_USE =	pim libs
 
 BUILD_DEPENDS =		archivers/bzip2 \
 			archivers/xz \
-			devel/doxygen
+			devel/doxygen \
+			${MODKDE4_DEP_DIR}/nepomuk-core>=${MODKDE4_DEP_VERSION}
 
 RUN_DEPENDS-locale =
 RUN_DEPENDS-main =	${RUN_DEPENDS} \
@@ -55,6 +57,7 @@ RUN_DEPENDS-main =	${RUN_DEPENDS} \
 			devel/desktop-file-utils \
 			misc/shared-mime-info \
 			x11/kde-shared-data>=${MODKDE4_DEP_VERSION} \
+			${MODKDE4_DEP_DIR}/nepomuk-core>=${MODKDE4_DEP_VERSION} \
 			${BUILD_PKGPATH},-locale>=${MODKDE4_DEP_VERSION}
 
 # QCA2 is useless without this
@@ -71,11 +74,11 @@ LIB_DEPENDS-main =	${LIB_DEPENDS} \
 			net/samba \
 			productivity/attica \
 			security/libssh \
-			${MODKDE4_DEP_DIR}/kactivities>=${MODKDE4_DEP_VERSION} \
-			${MODKDE4_DEP_DIR}/nepomuk-core>=${MODKDE4_DEP_VERSION}
+			${MODKDE4_DEP_DIR}/kactivities>=${MODKDE4_DEP_VERSION}
 
 # QNtrack depends on libnl, Linux-specific library.
 CONFIGURE_ARGS =	-DWITH_ALSA:Bool=FALSE \
+			-DCMAKE_DISABLE_FIND_PACKAGE_NetworkManager:Bool=TRUE \
 			-DCMAKE_DISABLE_FIND_PACKAGE_SLP:Bool=TRUE \
 			-DCMAKE_DISABLE_FIND_PACKAGE_QNtrack:Bool=TRUE
 

@@ -1,14 +1,13 @@
-# $OpenBSD: Makefile,v 1.3 2013/12/08 19:13:30 zhuk Exp $
+# $OpenBSD: Makefile,v 1.5 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	Pac-Man clone for KDE
 DISTNAME =	kapman-${MODKDE4_VERSION}
-REVISIOn =	0
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB += lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdegamesprivate ${KDE4LIB}/kdeui
-WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 MODKDE4_USE =	games

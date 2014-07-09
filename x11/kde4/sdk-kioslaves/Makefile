@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.3 2014/01/15 19:42:12 zhuk Exp $
+# $OpenBSD: Makefile,v 1.4 2014/07/09 20:03:31 zhuk Exp $
 
 COMMENT =	development-related KIO modules
 DISTNAME =	kdesdk-kioslaves-${MODKDE4_VERSION}
-REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/kdesdk-kioslaves
@@ -12,7 +11,7 @@ WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kio
 WANTLIB += apr-1 svn_client-1 svn_delta-1 svn_fs-1 svn_ra-1 svn_subr-1
-WANTLIB += c++ c++abi
+WANTLIB +=
 
 MODKDE4_USE =	libs
 

@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.8 2014/01/15 19:42:08 zhuk Exp $
+# $OpenBSD: Makefile,v 1.9 2014/07/09 20:03:24 zhuk Exp $
 
 COMMENT =	KDE advanced text editor
 DISTNAME =	kate-${MODKDE4_VERSION}
-REVISION =	0
 
 SHARED_LIBS =	kateinterfaces			50.0 # 4.7
 SHARED_LIBS +=	katepartinterfaces		50.0 # 4.7
@@ -18,7 +17,6 @@ WANTLIB += ${KDE4LIB}/kio ${KDE4LIB}/knewstuff3 ${KDE4LIB}/kparts
 WANTLIB += ${KDE4LIB}/kprintutils ${KDE4LIB}/ktexteditor ${KDE4LIB}/kutils
 WANTLIB += ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils ${KDE4LIB}/plasma
 WANTLIB += qjson soprano
-WANTLIB += c++ c++abi
 
 MODULES =	lang/python
 

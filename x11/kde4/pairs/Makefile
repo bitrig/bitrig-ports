@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/12/08 19:13:33 zhuk Exp $
+# $OpenBSD: Makefile,v 1.6 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	memory and pairs game for KDE
 DISTNAME =	pairs-${MODKDE4_VERSION}
@@ -10,7 +10,6 @@ WANTLIB += lib/qt4/QtOpenGL lib/qt4/QtScript lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB += lib/qt4/QtXmlPatterns
 WANTLIB += ${KDE4LIB}/kdeclarative ${KDE4LIB}/kdeui ${KDE4LIB}/kio
 WANTLIB += ${KDE4LIB}/knewstuff3
-WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 

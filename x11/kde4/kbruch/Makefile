@@ -1,13 +1,11 @@
-# $OpenBSD: Makefile,v 1.4 2013/12/08 19:13:30 zhuk Exp $
+# $OpenBSD: Makefile,v 1.5 2014/07/09 20:03:25 zhuk Exp $
 
 COMMENT =	KDE calculating fractions practicing app
 DISTNAME =	kbruch-${MODKDE4_VERSION}
-REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg
 WANTLIB += ${KDE4LIB}/kdeui
-WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/gtk+2,-guic

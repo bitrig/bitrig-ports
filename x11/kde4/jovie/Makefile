@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.6 2013/12/08 19:13:29 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/09 20:03:24 zhuk Exp $
 
 COMMENT =	KDE text to speech application
 DISTNAME =	jovie-${MODKDE4_VERSION}
-REVISION =	0
 
 SHARED_LIBS =	kttsd	51.0 # 4.7
 
@@ -13,7 +12,6 @@ WANTLIB += ${KDE4LIB}/kcmutils ${KDE4LIB}/kdeui
 WANTLIB += ${KDE4LIB}/kemoticons ${KDE4LIB}/kidletime ${KDE4LIB}/kio
 WANTLIB += ${KDE4LIB}/kprintutils ${KDE4LIB}/kutils
 WANTLIB += speechd
-WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/gtk+2,-guic

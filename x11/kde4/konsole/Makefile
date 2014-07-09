@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.6 2014/01/30 21:28:42 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/09 20:03:26 zhuk Exp $
 
 COMMENT =	KDE terminal emulator
 DISTNAME =	konsole-${MODKDE4_VERSION}
-REVISION =	2
 
 SHARED_LIBS =	kdeinit4_konsole	51.0
 SHARED_LIBS +=	konsoleprivate		51.0
@@ -15,7 +14,6 @@ WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kio ${KDE4LIB}/knotifyconfig
 WANTLIB += ${KDE4LIB}/konq ${KDE4LIB}/kparts ${KDE4LIB}/kpty
 WANTLIB += ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += soprano
-WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	devel/desktop-file-utils
 

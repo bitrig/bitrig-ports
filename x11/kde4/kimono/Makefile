@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.6 2013/12/08 19:13:30 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/09 20:03:25 zhuk Exp $
 
 CATEGORIES =	devel
 COMMENT =	KDE bindings for .NET
 DISTNAME =	kimono-${MODKDE4_VERSION}
-REVISION =	0
 
 SHARED_LIBS =	kimono			51.0 # 2.0
 SHARED_LIBS +=	akonadi-sharp		51.0
@@ -34,7 +33,6 @@ WANTLIB += ${KDE4LIB}/smokeqtopengl ${KDE4LIB}/smokeqtsql
 WANTLIB += ${KDE4LIB}/smokeqtsvg ${KDE4LIB}/smokeqtxml
 WANTLIB += ${KDE4LIB}/smokesoprano
 WANTLIB += gc mono-2.0 soprano sopranoclient sopranoserver sopranoindex
-WANTLIB += c++ c++abi
 
 MODULES =		lang/mono
 MODKDE4_USE =		libs

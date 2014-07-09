@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.7 2014/01/20 10:04:02 zhuk Exp $
+# $OpenBSD: Makefile,v 1.8 2014/07/09 20:03:29 zhuk Exp $
 
 COMMENT =	KDE SANE (scanner) wrapper library
 CATEGORIES =	graphics devel
 DISTNAME =	libksane-${MODKDE4_VERSION}
-REVISION =	1
 
 SHARED_LIBS =	ksane			50.0	# 0.2
 
@@ -11,7 +10,6 @@ WANTLIB =  m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg
 WANTLIB += ${KDE4LIB}/kdeui
 WANTLIB += sane
-WANTLIB += c++ c++abi
 
 MODKDE4_USE =	libs
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/12/08 19:13:32 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/10 19:55:28 zhuk Exp $
 
 COMMENT =	KDE compact discs interface library
 CATEGORIES =	audio net devel
@@ -10,7 +10,6 @@ SHARED_LIBS =	kcompactdisc		50.0
 WANTLIB =  m pthread
 WANTLIB += lib/qt4/QtDBus
 WANTLIB += ${KDE4LIB}/solid
-WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 MODKDE4_USE =	libs

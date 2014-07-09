@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.8 2013/12/08 19:13:31 zhuk Exp $
+# $OpenBSD: Makefile,v 1.9 2014/07/09 20:03:27 zhuk Exp $
 
 COMMENT =	KDE bindings for Ruby
 DISTNAME =	korundum-${MODKDE4_VERSION}
-REVISION =	0
 
 WANTLIB =  c m pthread ${MODRUBY_WANTLIB}
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
@@ -27,7 +26,6 @@ WANTLIB += ${KDE4LIB}/smokeqtopengl ${KDE4LIB}/smokeqtsql
 WANTLIB += ${KDE4LIB}/smokeqtsvg ${KDE4LIB}/smokeqtxml
 WANTLIB += ${KDE4LIB}/smokesolid ${KDE4LIB}/smokesoprano
 WANTLIB += qtruby4shared soprano
-WANTLIB += c++ c++abi
 
 MODULES =	lang/ruby
 MODKDE4_USE =	libs pim

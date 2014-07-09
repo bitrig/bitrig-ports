@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/12/08 18:02:49 zhuk Exp $
+# $OpenBSD: Makefile,v 1.2 2014/07/09 20:03:23 zhuk Exp $
 
 COMMENT =	KDE development helper utilities
 DISTNAME =	kde-dev-utils-${MODKDE4_VERSION}
-REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/kde-dev-utils
@@ -13,7 +12,6 @@ WANTLIB += lib/qt4/QtNetwork lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kio ${KDE4LIB}/kparts
 WANTLIB += ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += soprano
-WANTLIB += c++ c++abi
 
 BUILD_DEPENDS =	devel/libtool,-ltdl
 

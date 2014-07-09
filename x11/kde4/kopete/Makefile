@@ -1,29 +1,29 @@
-# $OpenBSD: Makefile,v 1.6 2014/01/15 19:42:10 zhuk Exp $
+# $OpenBSD: Makefile,v 1.8 2014/07/10 19:55:28 zhuk Exp $
 
 COMMENT-main =		multi-protocol instant messenger for KDE
 COMMENT-sounds =	notification sounds for Kopete
 DISTNAME =		kopete-${MODKDE4_VERSION}
-REVISION-main =		0
 PKGNAME-main =		${DISTNAME}
 PKGNAME-sounds =	kde4-kopete-sounds-${MODKDE4_VERSION}
 PKG_ARCH-sounds =	*
+REVISION-main =		0
 
 CATEGORIES =	network
 HOMEPAGE =	http://kopete.kde.org/
 
-SHARED_LIBS +=	kopete			51.0 # 4.0
-SHARED_LIBS +=	kopete_videodevice	51.0 # 4.0
-SHARED_LIBS +=	kopeteaddaccountwizard	51.0 # 1.0
-SHARED_LIBS +=	kopetechatwindow_shared	51.0 # 1.0
-SHARED_LIBS +=	kopeteidentity		51.0 # 1.0
-SHARED_LIBS +=	kopeteprivacy		51.0 # 1.0
-SHARED_LIBS +=	kyahoo			51.0 # 1.0
-SHARED_LIBS +=	oscar			51.0 # 1.0
-SHARED_LIBS +=	kopete_oscar		51.0 # 4.4
-SHARED_LIBS +=	kopete_otr_shared	51.0 # 1.0
-SHARED_LIBS +=	kopetecontactlist	51.0 # 1.0
-SHARED_LIBS +=	kopetestatusmenu	51.0 # 1.0
-SHARED_LIBS +=	qgroupwise		51.0 # 4.10
+SHARED_LIBS +=	kopete			52.0 # 4.0
+SHARED_LIBS +=	kopete_videodevice	52.0 # 4.0
+SHARED_LIBS +=	kopeteaddaccountwizard	52.0 # 1.0
+SHARED_LIBS +=	kopetechatwindow_shared	52.0 # 1.0
+SHARED_LIBS +=	kopeteidentity		52.0 # 1.0
+SHARED_LIBS +=	kopeteprivacy		52.0 # 1.0
+SHARED_LIBS +=	kyahoo			52.0 # 1.0
+SHARED_LIBS +=	oscar			52.0 # 1.0
+SHARED_LIBS +=	kopete_oscar		52.0 # 4.4
+SHARED_LIBS +=	kopete_otr_shared	52.0 # 1.0
+SHARED_LIBS +=	kopetecontactlist	52.0 # 1.0
+SHARED_LIBS +=	kopetestatusmenu	52.0 # 1.0
+SHARED_LIBS +=	qgroupwise		52.0 # 4.10
 
 MULTI_PACKAGES =	-main -sounds
 
@@ -43,7 +43,8 @@ WANTLIB-main += ${KDE4LIB}/kutils ${KDE4LIB}/nepomuk
 WANTLIB-main += ${KDE4LIB}/nepomukutils ${KDE4LIB}/solid
 WANTLIB-main += gadu glib-2.0 idn jasper jpeg meanwhile otr qca2
 WANTLIB-main += qimageblitz soprano xml2 xmms xslt
-WANTLIB-main += c++ c++abi
+#WANTLIB-main += crypto expat mediastreamer_base mediastreamer_voip
+#WANTLIB-main += ortp ssl
 
 MODULES =	multimedia/phonon
 MODKDE4_USE =	pim
@@ -64,10 +65,19 @@ LIB_DEPENDS-main =	${LIB_DEPENDS} \
 			security/libotr>=4 \
 			security/qca2
 
+# disabled until all GoogleTalk issues are resolved
+# LIB_DEPENDS-main +=	net/ortp \
+# 			telephony/mediastreamer2
+
 CONFIGURE_ARGS =	-DCMAKE_DISABLE_FIND_PACKAGE_LibV4L2:Bool=Yes \
 			-DMOZPLUGIN_INSTALL_DIR=${LOCALBASE}/lib/mozilla/plugins \
-			-DWITH_Libmsn:Bool=No \
-			-DWITH_LiboRTP:Bool=No \
-			-DWITH_Mediastreamer:Bool=No
+			-DWITH_Libmsn:Bool=No
+
+# requires enabling of exceptions, thanks to roots in Boost via PIM
+CONFIGURE_ARGS +=	-DWITH_Kleopatra:Bool=No
+
+# for Kleopatra
+#BUILD_DEPENDS =	devel/boost
+#LIB_DEPENDS-main +=	${MODKDE4_DEP_DIR}/pim>=${MODKDE4_DEP_VERSION}
 
 .include <bsd.port.mk>

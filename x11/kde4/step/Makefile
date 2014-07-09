@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/12/08 19:13:34 zhuk Exp $
+# $OpenBSD: Makefile,v 1.6 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	KDE interactive physics simulator
 DISTNAME =	step-${MODKDE4_VERSION}
@@ -11,7 +11,6 @@ WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/khtml ${KDE4LIB}/kio ${KDE4LIB}/kjs
 WANTLIB += ${KDE4LIB}/knewstuff3 ${KDE4LIB}/kparts ${KDE4LIB}/nepomuk
 WANTLIB += ${KDE4LIB}/nepomukutils
 WANTLIB += cln glib-2.0 gsl gslcblas qalculate soprano xml2
-WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext multimedia/phonon
 

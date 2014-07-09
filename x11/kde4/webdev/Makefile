@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/12/08 19:13:34 zhuk Exp $
+# $OpenBSD: Makefile,v 1.17 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	web development tools for KDE
 DISTNAME =	kdewebdev-${MODKDE4_VERSION}
@@ -19,7 +19,6 @@ WANTLIB += ${KDE4LIB}/kprintutils ${KDE4LIB}/krossui ${KDE4LIB}/kutils
 WANTLIB += ${KDE4LIB}/mailtransport ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += ${KDE4LIB}/threadweaver
 WANTLIB += soprano tidyp
-WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon lang/ruby
 MODRUBY_REV =	1.9

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/12/08 19:13:29 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	KDE file archiver
 DISTNAME =	ark-${MODKDE4_VERSION}
@@ -13,7 +13,6 @@ WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kfile ${KDE4LIB}/khtml ${KDE4LIB}/kio
 WANTLIB += ${KDE4LIB}/kjs ${KDE4LIB}/konq ${KDE4LIB}/kparts ${KDE4LIB}/kpty
 WANTLIB += ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += archive soprano
-WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 

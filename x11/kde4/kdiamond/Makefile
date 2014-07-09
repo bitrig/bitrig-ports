@@ -1,13 +1,11 @@
-# $OpenBSD: Makefile,v 1.4 2013/12/08 19:13:30 zhuk Exp $
+# $OpenBSD: Makefile,v 1.5 2014/07/09 20:03:25 zhuk Exp $
 
 COMMENT =	swap-and-remove puzzle game for KDE
 DISTNAME =	kdiamond-${MODKDE4_VERSION}
-REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/knotifyconfig
-WANTLIB += c++ c++abi
 
 MODKDE4_USE =	games
 

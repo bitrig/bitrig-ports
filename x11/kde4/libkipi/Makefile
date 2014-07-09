@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/01/20 19:08:10 zhuk Exp $
+# $OpenBSD: Makefile,v 1.13 2014/07/09 20:03:29 zhuk Exp $
 
 COMMENT-main =	KDE image plugins infrastructure
 COMMENT-icons =	icons for libkipi
@@ -7,7 +7,6 @@ DISTNAME =	libkipi-${MODKDE4_VERSION}
 PKGNAME-main =	${DISTNAME}
 PKGNAME-icons =	kde4-libkipi-icons-${MODKDE4_VERSION}
 PKGSPEC-main =	libkipi->=4,<5
-REVISION-main =	0
 
 SHARED_LIBS =	kipi		50.1
 
@@ -18,7 +17,6 @@ WANTLIB-main += lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB-main += ${KDE4LIB}/kdeui ${KDE4LIB}/kio ${KDE4LIB}/kfile
 WANTLIB-main += ${KDE4LIB}/kparts ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB-main += soprano
-WANTLIB-main += c++ c++abi
 
 MULTI_PACKAGES =	-main -icons
 

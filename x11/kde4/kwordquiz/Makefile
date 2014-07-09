@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/12/08 19:13:32 zhuk Exp $
+# $OpenBSD: Makefile,v 1.6 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	general purpose flash card program for KDE
 DISTNAME =	kwordquiz-${MODKDE4_VERSION}
@@ -10,7 +10,6 @@ WANTLIB += lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/keduvocdocument ${KDE4LIB}/kdeui ${KDE4LIB}/kio
 WANTLIB += ${KDE4LIB}/knewstuff3 ${KDE4LIB}/knotifyconfig
 WANTLIB += ${KDE4LIB}/kprintutils
-WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 

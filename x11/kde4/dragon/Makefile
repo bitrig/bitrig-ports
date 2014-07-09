@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/12/08 19:13:29 zhuk Exp $
+# $OpenBSD: Makefile,v 1.5 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	simple video player for KDE
 DISTNAME =	dragon-${MODKDE4_VERSION}
@@ -12,7 +12,6 @@ WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kio ${KDE4LIB}/kparts ${KDE4LIB}/nepomuk
 WANTLIB += ${KDE4LIB}/nepomukutils ${KDE4LIB}/plasma ${KDE4LIB}/solid
 WANTLIB += soprano
-WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 

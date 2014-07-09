@@ -1,12 +1,10 @@
-# $OpenBSD: Makefile,v 1.3 2013/10/07 16:57:30 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2014/07/09 20:03:24 zhuk Exp $
 
 COMMENT =	KDE strigi analyzer for graphics files
 DISTNAME =	kdegraphics-strigi-analyzer-${MODKDE4_VERSION}
-REVISION =	0
 
 WANTLIB =  m
 WANTLIB += streamanalyzer streams tiff
-WANTLIB += c++ c++abi pthread
 
 MODKDE4_NO_QT =	Yes
 MODKDE4_USE =

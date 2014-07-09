@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.6 2013/12/08 19:13:34 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/09 20:03:31 zhuk Exp $
 
 COMMENT =	interactive desktop widgets for KDE
 DISTNAME =	superkaramba-${MODKDE4_VERSION}
-REVISION =	0
 
 SHARED_LIBS =	superkaramba	50.0 # 4.7
 
@@ -14,7 +13,6 @@ WANTLIB += ${KDE4LIB}/kde3support ${KDE4LIB}/kdeui ${KDE4LIB}/kio
 WANTLIB += ${KDE4LIB}/knewstuff2 ${KDE4LIB}/kpty ${KDE4LIB}/krosscore
 WANTLIB += ${KDE4LIB}/plasma
 WANTLIB += qimageblitz ${MODPY_WANTLIB}
-WANTLIB += c++ c++abi
 
 MODULES =	lang/python
 

@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.8 2013/12/08 19:13:34 zhuk Exp $
+# $OpenBSD: Makefile,v 1.9 2014/07/09 20:03:31 zhuk Exp $
 
 CATEGORIES =	devel
 COMMENT =	introspective wrappers around KDE
 DISTNAME =	smokekde-${MODKDE4_VERSION}
-REVISION =	0
 
 SHARED_LIBS =	smokeakonadi		51.0 # 3.0
 #SHARED_LIBS +=	smokeattica		50.0 # 3.0
@@ -36,7 +35,7 @@ WANTLIB += ${KDE4LIB}/kde3support ${KDE4LIB}/kdeui ${KDE4LIB}/kemoticons
 WANTLIB += ${KDE4LIB}/kfile ${KDE4LIB}/khtml ${KDE4LIB}/kidletime
 WANTLIB += ${KDE4LIB}/kio ${KDE4LIB}/kjs ${KDE4LIB}/knewstuff2
 WANTLIB += ${KDE4LIB}/knewstuff3 ${KDE4LIB}/kparts ${KDE4LIB}/kprintutils
-WANTLIB += ${KDE4LIB}/ktexteditor ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukcore
+WANTLIB += ${KDE4LIB}/ktexteditor ${KDE4LIB}/nepomuk
 WANTLIB += ${KDE4LIB}/nepomukquery ${KDE4LIB}/nepomukutils
 WANTLIB += ${KDE4LIB}/okularcore ${KDE4LIB}/phonon_s ${KDE4LIB}/plasma
 WANTLIB += ${KDE4LIB}/smokebase ${KDE4LIB}/smokeqtcore ${KDE4LIB}/smokeqtdbus
@@ -47,7 +46,6 @@ WANTLIB += ${KDE4LIB}/akonadi-kde ${KDE4LIB}/akonadi-kmime ${KDE4LIB}/kabc
 WANTLIB += ${KDE4LIB}/kcalcore ${KDE4LIB}/kmime ${KDE4LIB}/kpimutils
 WANTLIB += ${KDE4LIB}/kresources
 WANTLIB += soprano sopranoclient sopranoserver
-WANTLIB += c++ c++abi
 
 MODKDE4_USE =	pim libs
 

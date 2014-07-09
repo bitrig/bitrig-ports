@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.12 2014/01/16 08:30:34 zhuk Exp $
+# $OpenBSD: Makefile,v 1.14 2014/07/11 12:15:53 espie Exp $
 
 BROKEN-hppa =	relocation error
 CATEGORIES =	devel lang/ruby x11/kde4
 COMMENT =	Ruby bindings for Qt4
 DISTNAME =	qtruby-${MODKDE4_VERSION}
 PKGNAME =	qt4-${MODKDE4_VERSION}
-REVISION =	1
+REVISION =	0
 
 HOMEPAGE =	http://techbase.kde.org/Development/Languages/Ruby
 
@@ -24,7 +24,6 @@ WANTLIB += ${KDE4LIB}/smokeqtsvg ${KDE4LIB}/smokeqttest
 WANTLIB += ${KDE4LIB}/smokeqtuitools ${KDE4LIB}/smokeqtwebkit
 WANTLIB += ${KDE4LIB}/smokeqtxml ${KDE4LIB}/smokeqwt
 WANTLIB += qscintilla2
-WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon lang/ruby
 MODKDE4_USE =

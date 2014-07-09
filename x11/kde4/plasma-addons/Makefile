@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.6 2014/01/20 19:08:10 zhuk Exp $
+# $OpenBSD: Makefile,v 1.8 2014/07/10 19:55:28 zhuk Exp $
 
 COMMENT =	extra KDE plasmoids
 DISTNAME =	kdeplasma-addons-${MODKDE4_VERSION}
-REVISION =	1
+REVISION =	0
 
 SHARED_LIBS =	lancelot-datamodels		51.0 # 1.7
 SHARED_LIBS +=	lancelot			51.0 # 1.9
@@ -35,7 +35,6 @@ WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 ibus-1.0
 WANTLIB += scim-1.0
 WANTLIB += attica cln dbusmenu-qt qalculate qca2 qimageblitz qjson qoauth
 WANTLIB += qwt soprano xml2
-WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext multimedia/phonon
 

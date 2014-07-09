@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/12/08 19:13:33 zhuk Exp $
+# $OpenBSD: Makefile,v 1.6 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	vocabulary trainer for KDE
 DISTNAME =	parley-${MODKDE4_VERSION}
@@ -16,7 +16,6 @@ WANTLIB += ${KDE4LIB}/knewstuff3 ${KDE4LIB}/kparts ${KDE4LIB}/krosscore
 WANTLIB += ${KDE4LIB}/krossui ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += ${KDE4LIB}/plasma
 WANTLIB += soprano xml2 xslt
-WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon lang/python
 

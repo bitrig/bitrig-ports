@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/12/08 18:00:31 zhuk Exp $
+# $OpenBSD: Makefile,v 1.2 2014/07/09 20:03:23 zhuk Exp $
 
 COMMENT =	CVS GUI for KDE
 DISTNAME =	cervisia-${MODKDE4_VERSION}
-REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/cervisia
@@ -14,7 +13,6 @@ WANTLIB += ${KDE4LIB}/kde3support ${KDE4LIB}/kdesu ${KDE4LIB}/kdeui
 WANTLIB += ${KDE4LIB}/kio ${KDE4LIB}/kparts ${KDE4LIB}/nepomuk
 WANTLIB += ${KDE4LIB}/nepomukutils
 WANTLIB += soprano
-WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/gtk+2,-guic

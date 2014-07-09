@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/12/08 18:07:43 zhuk Exp $
+# $OpenBSD: Makefile,v 1.3 2014/07/10 19:55:28 zhuk Exp $
 
 COMMENT =	download manager for KDE
 DISTNAME =	kget-${MODKDE4_VERSION}
@@ -20,10 +20,9 @@ WANTLIB += ${KDE4LIB}/nepomukcore ${KDE4LIB}/nepomukutils
 WANTLIB += ${KDE4LIB}/nepomukwidgets ${KDE4LIB}/plasma ${KDE4LIB}/solid
 WANTLIB += assuan gpg-error gpgme++-pthread gpgme-pthread mms
 WANTLIB += qca2 qgpgme soprano
-WANTLIB += c++ c++abi
 
 MODULES =	devel/gettext multimedia/phonon
-MODKDE4_USE =	pim
+MODKDE4_USE =	pim workspace
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/gtk+2,-guic
@@ -33,8 +32,7 @@ LIB_DEPENDS =	multimedia/libmms \
 		security/qca2 \
 		${MODKDE4_DEP_DIR}/baseapps>=${MODKDE4_DEP_VERSION} \
 		${MODKDE4_DEP_DIR}/nepomuk-core>=${MODKDE4_DEP_VERSION} \
-		${MODKDE4_DEP_DIR}/nepomuk-widgets>=${MODKDE4_DEP_VERSION} \
-		${MODKDE4_DEP_DIR}/workspace>=${MODKDE4_DEP_VERSION} \
+		${MODKDE4_DEP_DIR}/nepomuk-widgets>=${MODKDE4_DEP_VERSION}
 
 # Not ported yet
 #CONFIGURE_ARGS =	-DCMAKE_DISABLE_FIND_PACKAGE_Qwerty:Bool=Yes

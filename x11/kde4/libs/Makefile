@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.53 2014/06/20 13:12:36 jasper Exp $
+# $OpenBSD: Makefile,v 1.56 2014/07/12 16:38:10 zhuk Exp $
 
 COMMENT-main =		KDE core libraries
 COMMENT-en_US =		KDE en_US locale data
@@ -11,59 +11,59 @@ PKGNAME-langlist =	kde4-langlist-${MODKDE4_VERSION}
 PKG_ARCH-en_US =	*
 PKG_ARCH-langlist =	*
 PKGSPEC-main =		kdelibs->=4
-REVISION-main =		10
+REVISION-main =		1
 
 DPB_PROPERTIES =	parallel tag:kde4
 
-SHARED_LIBS =	kde3support          50.1      # .4.0
-SHARED_LIBS +=	kdecore              50.1      # .5.0
-SHARED_LIBS +=	kdefakes             50.1      # .5.0
-SHARED_LIBS +=	kdesu                50.1      # .5.0
-SHARED_LIBS +=	kdeui                50.1      # .5.0
-SHARED_LIBS +=	kdnssd               50.1      # .2.0
-SHARED_LIBS +=	khtml                50.1      # .5.0
-SHARED_LIBS +=	kimproxy             50.1      # .4.0
-SHARED_LIBS +=	kio                  50.1      # .5.0
-SHARED_LIBS +=	kjs                  50.1      # .2.0
-SHARED_LIBS +=	kjsembed             50.1      # .4.0
-SHARED_LIBS +=	kmediaplayer         50.1      # .4.0
-SHARED_LIBS +=	knotifyconfig        50.1      # .4.0
-SHARED_LIBS +=	kntlm                50.1      # .1.0
-SHARED_LIBS +=	kparts               50.1      # .4.0
-SHARED_LIBS +=	krosscore            50.1      # .4.0
-SHARED_LIBS +=	ktexteditor          50.1      # .4.0
-SHARED_LIBS +=	kunittest            50.1      # .4.0
-SHARED_LIBS +=	kutils               50.1      # .2.0
-SHARED_LIBS +=	solid                50.1      # .4.0
-SHARED_LIBS +=	threadweaver         50.1      # .4.0
-SHARED_LIBS +=	kfile                50.1      # .4.0
-SHARED_LIBS +=	knewstuff2           50.1      # .4.0
-SHARED_LIBS +=	krossui              50.1      # .4.0
-SHARED_LIBS +=  kpty                 50.1      # .4.0
+SHARED_LIBS =	kde3support          50.2      # .4.0
+SHARED_LIBS +=	kdecore              50.2      # .5.0
+SHARED_LIBS +=	kdefakes             50.2      # .5.0
+SHARED_LIBS +=	kdesu                50.2      # .5.0
+SHARED_LIBS +=	kdeui                50.2      # .5.0
+SHARED_LIBS +=	kdnssd               50.2      # .2.0
+SHARED_LIBS +=	khtml                50.2      # .5.0
+SHARED_LIBS +=	kimproxy             50.2      # .4.0
+SHARED_LIBS +=	kio                  50.2      # .5.0
+SHARED_LIBS +=	kjs                  50.2      # .2.0
+SHARED_LIBS +=	kjsembed             50.2      # .4.0
+SHARED_LIBS +=	kmediaplayer         50.2      # .4.0
+SHARED_LIBS +=	knotifyconfig        50.2      # .4.0
+SHARED_LIBS +=	kntlm                50.2      # .1.0
+SHARED_LIBS +=	kparts               50.2      # .4.0
+SHARED_LIBS +=	krosscore            50.2      # .4.0
+SHARED_LIBS +=	ktexteditor          50.2      # .4.0
+SHARED_LIBS +=	kunittest            50.2      # .4.0
+SHARED_LIBS +=	kutils               50.2      # .2.0
+SHARED_LIBS +=	solid                50.2      # .4.0
+SHARED_LIBS +=	threadweaver         50.2      # .4.0
+SHARED_LIBS +=	kfile                50.2      # .4.0
+SHARED_LIBS +=	knewstuff2           50.2      # .4.0
+SHARED_LIBS +=	krossui              50.2      # .4.0
+SHARED_LIBS +=  kpty                 50.2      # .4.0
 
-SHARED_LIBS +=  kjsapi 			50.1
-SHARED_LIBS +=	kdewebkit		50.1
-SHARED_LIBS +=	knewstuff3		50.1
-SHARED_LIBS +=	kunitconversion		50.1
-SHARED_LIBS +=	plasma			50.1
+SHARED_LIBS +=  kjsapi 			50.2
+SHARED_LIBS +=	kdewebkit		50.2
+SHARED_LIBS +=	knewstuff3		50.2
+SHARED_LIBS +=	kunitconversion		50.2
+SHARED_LIBS +=	plasma			50.2
 
-SHARED_LIBS +=  kcmutils		50.1 # 4.7
-SHARED_LIBS +=  kdeclarative		50.1 # 5.7
-SHARED_LIBS +=  kemoticons		50.1 # 4.7
-SHARED_LIBS +=  kidletime		50.1 # 4.7
-SHARED_LIBS +=  kprintutils		50.1 # 4.7
+SHARED_LIBS +=  kcmutils		50.2 # 4.7
+SHARED_LIBS +=  kdeclarative		50.2 # 5.7
+SHARED_LIBS +=  kemoticons		50.2 # 4.7
+SHARED_LIBS +=  kidletime		50.2 # 4.7
+SHARED_LIBS +=  kprintutils		50.2 # 4.7
 
-SHARED_LIBS +=  nepomuk			50.1 # 4.9
-SHARED_LIBS +=  nepomukquery		50.1 # 4.9
-SHARED_LIBS +=  nepomukutils		50.1 # 4.9
+SHARED_LIBS +=  nepomuk			50.2 # 4.9
+SHARED_LIBS +=  nepomukquery		50.2 # 4.9
+SHARED_LIBS +=  nepomukutils		50.2 # 4.9
 
 # Each lib is used by corresponding binary in libexec/,
 # so technically those are not plugins.
-SHARED_LIBS +=	kdeinit4_kbuildsycoca4		50.1
-SHARED_LIBS +=	kdeinit4_kconf_update		50.1
-SHARED_LIBS +=	kdeinit4_kded4			50.1
-SHARED_LIBS +=	kdeinit4_kio_http_cache_cleaner	50.1
-SHARED_LIBS +=	kdeinit4_klauncher		50.1
+SHARED_LIBS +=	kdeinit4_kbuildsycoca4		50.2
+SHARED_LIBS +=	kdeinit4_kconf_update		50.2
+SHARED_LIBS +=	kdeinit4_kded4			50.2
+SHARED_LIBS +=	kdeinit4_kio_http_cache_cleaner	50.2
+SHARED_LIBS +=	kdeinit4_klauncher		50.2
 
 WANTLIB-en_US =
 WANTLIB-langlist =
@@ -75,17 +75,17 @@ WANTLIB-main += lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtOpenGL
 WANTLIB-main += lib/qt4/QtScript lib/qt4/QtSql lib/qt4/QtSvg
 WANTLIB-main += lib/qt4/QtWebKit lib/qt4/QtXml
 WANTLIB-main += aspell attica bz2 dbusmenu-qt enchant exslt fam
-WANTLIB-main += gif jasper jpeg lzma pcre pcreposix
+WANTLIB-main += gif lib/inotify/inotify jasper jpeg lzma pcre pcreposix
 WANTLIB-main += png polkit-qt-core-1 qca2 soprano sopranoclient
 WANTLIB-main += streamanalyzer streams xml2 xslt
-WANTLIB-main += c++ c++abi
 
 MULTI_PACKAGES =	-main -langlist -en_US
 
 MODULES =		devel/gettext multimedia/phonon
 MODKDE4_USE =
 
-BUILD_DEPENDS =		misc/shared-desktop-ontologies>=0.10 \
+BUILD_DEPENDS =		devel/bison \
+			misc/shared-desktop-ontologies>=0.10 \
 			misc/shared-mime-info \
 			net/avahi \
 			x11/grantlee
@@ -113,6 +113,7 @@ LIB_DEPENDS-main =	${LIB_DEPENDS} \
 			archivers/xz \
 			databases/soprano>=${MIN_SOPRANO_VERSION} \
 			databases/strigi \
+			devel/libinotify \
 			devel/pcre \
 			graphics/giflib \
 			graphics/jasper \
@@ -128,6 +129,7 @@ LIB_DEPENDS-main =	${LIB_DEPENDS} \
 
 # and do not have this stuff at all
 CONFIGURE_ARGS +=	-DWITH_ACL:Bool=FALSE \
+			-DWITH_GSSAPI:Bool=FALSE \
 			-DWITH_HSPELL:Bool=FALSE \
 			-DWITH_HUpnp:Bool=FALSE \
 			-DWITH_UDev:Bool=FALSE \
@@ -138,6 +140,9 @@ CONFIGURE_ARGS +=	-D_KDE_DEFAULT_HOME_POSTFIX:String="4" \
 			-DKDE_DISTRIBUTION_TEXT:String="OpenBSD packages" \
 			-DKDE4_AUTH_BACKEND_NAME:String="PolkitQt-1" \
 			-DKDESU_USE_SUDO_DEFAULT:Bool=TRUE
+
+# New CMake modules, to be pushed upstream (KDE or CMake)
+NEW_CMAKE_MODULES =	FindInotify
 
 # Reimplemented CMake modules, because previous were totally broken
 REWR_CMAKE_MODULES =	FindKexiv2 FindXine FindXKB FindPolkitQt
@@ -154,7 +159,7 @@ TEST_DEPENDS =		${BUILD_PKGPATH} \
 			${MODKDE4_DEP_DIR}/konsole>=${MODKDE4_DEP_VERSION}
 
 post-extract:
-.for M in ${REWR_CMAKE_MODULES}
+.for M in ${NEW_CMAKE_MODULES} ${REWR_CMAKE_MODULES}
 	cp ${FILESDIR}/${M}.cmake ${WRKSRC}/cmake/modules/${M}.cmake
 .endfor
 .for M in ${WRAP_CMAKE_MODULES}

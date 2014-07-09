@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2014/01/20 19:08:10 zhuk Exp $
+# $OpenBSD: Makefile,v 1.14 2014/07/09 20:03:28 zhuk Exp $
 
 COMMENT-main =	KDE RAW picture decoding C++ library
 COMMENT-icons =	icons for libkdcraw
@@ -7,7 +7,6 @@ DISTNAME =	libkdcraw-${MODKDE4_VERSION}
 PKGNAME-main =	${DISTNAME}
 PKGNAME-icons =	kde4-libkdcraw-icons-${MODKDE4_VERSION}
 PKGSPEC-main =	libkdcraw->=4,<5
-REVISION-main =	0
 
 SHARED_LIBS =	kdcraw			50.0	# 20.0
 
@@ -18,7 +17,6 @@ WANTLIB-main += lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB-main += ${KDE4LIB}/kdeui ${KDE4LIB}/kio ${KDE4LIB}/solid
 WANTLIB-main += ${KDE4LIB}/threadweaver
 WANTLIB-main += raw_r
-WANTLIB-main += c++ c++abi
 
 MULTI_PACKAGES =	-main -icons
 
@@ -33,7 +31,7 @@ RUN_DEPENDS-main =	${RUN_DEPENDS} \
 			${BUILD_PKGPATH},-icons
 
 post-extract:
-	cp ${FILESDIR}/*.cmake ${WRKSRC}/cmake/modules/
+#	cp ${FILESDIR}/*.cmake ${WRKSRC}/cmake/modules/
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/apps/cmake/modules

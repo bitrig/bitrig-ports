@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.6 2013/12/08 19:13:29 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/09 20:03:23 zhuk Exp $
 
 COMMENT =	KDE KIOslave for accessing audio CDs
 DISTNAME =	audiocd-kio-${MODKDE4_VERSION}
-REVISION =	0
 
 SHARED_LIBS =	audiocdplugins		50.0
 
@@ -13,7 +12,6 @@ WANTLIB += ${KDE4LIB}/kcddb ${KDE4LIB}/kcompactdisc ${KDE4LIB}/kdeui
 WANTLIB += ${KDE4LIB}/kio
 WANTLIB += FLAC cdda_interface cdda_paranoia ogg vorbis vorbisenc
 WANTLIB += vorbisfile
-WANTLIB += c++ c++abi
 
 LIB_DEPENDS =	audio/cdparanoia \
 		audio/flac \

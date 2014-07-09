@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/12/08 18:17:49 zhuk Exp $
+# $OpenBSD: Makefile,v 1.2 2014/07/09 20:03:29 zhuk Exp $
 
 COMMENT =	hex file editor for KDE
 DISTNAME =	okteta-${MODKDE4_VERSION}
-REVISION =	0
 
 CATEGORIES =	devel sysutils
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/okteta
@@ -24,7 +23,6 @@ WANTLIB += ${KDE4LIB}/kcmutils ${KDE4LIB}/kdeui ${KDE4LIB}/kfile
 WANTLIB += ${KDE4LIB}/kio ${KDE4LIB}/knewstuff3 ${KDE4LIB}/kparts
 WANTLIB += ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils ${KDE4LIB}/solid
 WANTLIB += qca2 soprano
-WANTLIB += c++ c++abi
 
 BUILD_DEPENDS =	misc/shared-mime-info
 

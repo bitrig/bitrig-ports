@@ -1,18 +1,17 @@
-# $OpenBSD: Makefile,v 1.5 2013/12/08 19:13:31 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	strategy game for KDE
 DISTNAME =	ksirk-${MODKDE4_VERSION}
 REVISION =	0
 
-SHARED_LIBS =	iris_ksirk		50.0  # 4.10
+SHARED_LIBS =	iris_ksirk		51.0  # 4.10
 
 WANTLIB =  c m pthread z
-WANTLIB += lib/qt4/Qt3Support lib/qt4/QtDBus lib/qt4/QtGui
-WANTLIB += lib/qt4/QtNetwork lib/qt4/QtSql lib/qt4/QtSvg lib/qt4/QtXml
+WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui
+WANTLIB += lib/qt4/QtNetwork lib/qt4/QtSvg lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdegamesprivate ${KDE4LIB}/kdeui ${KDE4LIB}/kio
 WANTLIB += ${KDE4LIB}/knewstuff3
 WANTLIB += qca2
-WANTLIB += c++ c++abi
 
 MODULES =	multimedia/phonon
 MODKDE4_USE =	games

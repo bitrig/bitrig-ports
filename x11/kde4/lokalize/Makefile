@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/12/08 18:15:22 zhuk Exp $
+# $OpenBSD: Makefile,v 1.2 2014/07/09 20:03:29 zhuk Exp $
 
 COMMENT =	KDE app localization tools
 DISTNAME =	lokalize-${MODKDE4_VERSION}
-REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/lokalize
@@ -15,7 +14,6 @@ WANTLIB += ${KDE4LIB}/kparts ${KDE4LIB}/krosscore ${KDE4LIB}/krossui
 WANTLIB += ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += ${KDE4LIB}/threadweaver
 WANTLIB += hunspell-1.3 soprano
-WANTLIB += c++ c++abi
 
 MODULES =		lang/python
 MODPY_ADJ_FILES =	scripts/xliffmerge.py

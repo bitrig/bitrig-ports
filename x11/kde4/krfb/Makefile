@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/12/08 18:11:23 zhuk Exp $
+# $OpenBSD: Makefile,v 1.2 2014/07/09 20:03:27 zhuk Exp $
 
 COMMENT =	desktop sharing
 DISTNAME =	krfb-${MODKDE4_VERSION}
-REVISION =	0
 
 CATEGORIES =	network
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdenetwork/krfb
@@ -15,7 +14,6 @@ WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork lib/qt4/QtSvg
 WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kdnssd
 WANTLIB += jpeg telepathy-qt4
-WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	devel/desktop-file-utils
 

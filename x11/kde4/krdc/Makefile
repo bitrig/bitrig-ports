@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/12/08 18:10:01 zhuk Exp $
+# $OpenBSD: Makefile,v 1.2 2014/07/09 20:03:27 zhuk Exp $
 
 COMMENT =	KDE remote desktop client
 DISTNAME =	krdc-${MODKDE4_VERSION}
-REVISION =	0
 
 CATEGORIES =	network
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdenetwork/krdc
@@ -15,7 +14,6 @@ WANTLIB += lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kcmutils ${KDE4LIB}/kdeui ${KDE4LIB}/kdnssd
 WANTLIB += ${KDE4LIB}/kfile ${KDE4LIB}/kio ${KDE4LIB}/knotifyconfig
 WANTLIB += telepathy-qt4
-WANTLIB += c++ c++abi
 
 BUILD_DEPENDS =	x11/freerdp
 

@@ -1,21 +1,21 @@
-# $OpenBSD: Makefile,v 1.8 2014/01/20 19:08:10 zhuk Exp $
+# $OpenBSD: Makefile,v 1.11 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	KDE image viewer
 DISTNAME =	gwenview-${MODKDE4_VERSION}
 REVISION =	1
 
-SHARED_LIBS =	gwenviewlib               50.0 # 4.7
+SHARED_LIBS =	gwenviewlib               51.0 # 4.7
 
 WANTLIB =  c m pthread z
 WANTLIB += X11
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork
 WANTLIB += lib/qt4/QtSvg lib/qt4/QtXml lib/qt4/QtOpenGL
-WANTLIB += ${KDE4LIB}/kactivities ${KDE4LIB}/kdeui ${KDE4LIB}/kfile
+WANTLIB += ${KDE4LIB}/baloocore ${KDE4LIB}/baloofiles ${KDE4LIB}/baloopim
+WANTLIB += ${KDE4LIB}/kactivities ${KDE4LIB}/kdcraw
+WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kfile
 WANTLIB += ${KDE4LIB}/kio ${KDE4LIB}/kipi ${KDE4LIB}/konq ${KDE4LIB}/kparts
-WANTLIB += ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukcore
-WANTLIB += ${KDE4LIB}/nepomukutils ${KDE4LIB}/solid exiv2 jpeg lcms2
-WANTLIB += png soprano
-WANTLIB += c++ c++abi
+WANTLIB += ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils ${KDE4LIB}/solid
+WANTLIB += exiv2 jpeg lcms2 png soprano
 
 MODULES =	multimedia/phonon
 
@@ -32,7 +32,16 @@ LIB_DEPENDS = 	databases/soprano>=${MIN_SOPRANO_VERSION} \
 		graphics/png \
 		${MODKDE4_DEP_DIR}/baseapps>=${MODKDE4_DEP_VERSION} \
 		${MODKDE4_DEP_DIR}/kactivities>=${MODKDE4_DEP_VERSION} \
+		${MODKDE4_DEP_DIR}/libkdcraw>=${MODKDE4_DEP_VERSION} \
 		${MODKDE4_DEP_DIR}/libkipi>=${MODKDE4_DEP_VERSION} \
-		${MODKDE4_DEP_DIR}/nepomuk-core>=${MODKDE4_DEP_VERSION}
+		${MODKDE4_DEP_DIR}/baloo>=${MODKDE4_DEP_VERSION}
+
+.include <bsd.port.arch.mk>
+
+.if ${ARCH} == "i386"
+CONFIGURE_ENV =                CXXFLAGS="${CXXFLAGS} -DOPENBSD_LIBKDCRAW_NO_CRASH=0"
+.else
+CONFIGURE_ENV =                CXXFLAGS="${CXXFLAGS} -DOPENBSD_LIBKDCRAW_NO_CRASH=1"
+.endif
 
 .include <bsd.port.mk>

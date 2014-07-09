@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.6 2013/12/08 19:13:34 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/09 20:03:30 zhuk Exp $
 
 COMMENT =	graph theory IDE for KDE
 DISTNAME =	rocs-${MODKDE4_VERSION}
-REVISION =	0
 
 # XXX Crashes sometimes.
 
@@ -19,7 +18,6 @@ WANTLIB += ${KDE4LIB}/kparts ${KDE4LIB}/krosscore ${KDE4LIB}/krossui
 WANTLIB += ${KDE4LIB}/ktexteditor ${KDE4LIB}/nepomuk
 WANTLIB += ${KDE4LIB}/nepomukutils ${KDE4LIB}/plasma
 WANTLIB += grantlee_core soprano
-WANTLIB += c++ c++abi
 
 BUILD_DEPENDS =	devel/boost>=1.49
 

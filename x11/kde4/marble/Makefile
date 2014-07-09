@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.7 2013/12/08 19:13:33 zhuk Exp $
+# $OpenBSD: Makefile,v 1.9 2014/07/10 19:55:27 zhuk Exp $
 
 COMMENT =	world maps
 DISTNAME =	marble-${MODKDE4_VERSION}
 REVISION =	0
 
 SHARED_LIBS =	marblewidget		51.0 # 0.12
+SHARED_LIBS +=	astro			 0.0 # 0.17
 
 WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtDeclarative lib/qt4/QtGui
@@ -14,7 +15,6 @@ WANTLIB += ${KDE4LIB}/kdeui ${KDE4LIB}/kio ${KDE4LIB}/knewstuff3
 WANTLIB += ${KDE4LIB}/kparts ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += ${KDE4LIB}/plasma
 WANTLIB += gps quazip shp soprano
-WANTLIB += c++ c++abi
 
 # TODO split non-KDE4 parts off
 
@@ -35,6 +35,12 @@ CONFIGURE_ARGS =	-DCMAKE_DISABLE_FIND_PACKAGE_QextSerialPort:Bool=TRUE \
 			-DCMAKE_DISABLE_FIND_PACKAGE_liblocation:Bool=TRUE \
 			-DCMAKE_DISABLE_FIND_PACKAGE_libwlocate:Bool=TRUE \
 			-DEXPERIMENTAL_PYTHON_BINDINGS:Bool=FALSE
+
+# TODO:
+#  * Marble tools , Build various Marble tools for e.g. file format
+#    conversion. Toggle with BUILD_MARBLE_TOOLS=YES/NO.
+#  * Marble library C++ examples , Build C++ examples showing how to use
+#    the Marble library. Toggle with BUILD_MARBLE_EXAMPLES=YES/NO.
 
 post-extract:
 	rm ${WRKSRC}/cmake/modules/FindPhonon.cmake

@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.2 2013/05/14 09:16:26 zhuk Exp $
+# $OpenBSD: Makefile,v 1.3 2014/07/09 20:03:24 zhuk Exp $
 
 BROKEN =	requires key dependencies update
 COMMENT =	periodic system of elements for KDE
 DISTNAME =	kalzium-${MODKDE4_VERSION}
-REVISION =	0
 
 # TODO Works, but loops forever on exit. Previously there was double free.
 
@@ -19,7 +18,6 @@ WANTLIB += ${KDE4LIB}/knewstuff3 ${KDE4LIB}/kparts
 WANTLIB += ${KDE4LIB}/kunitconversion ${KDE4LIB}/nepomuk
 WANTLIB += ${KDE4LIB}/nepomukutils ${KDE4LIB}/plasma
 WANTLIB += avogadro openbabel soprano
-WANTLIB += c++ c++abi
 
 MODULES =	x11/kde4 multimedia/phonon lang/ocaml
 

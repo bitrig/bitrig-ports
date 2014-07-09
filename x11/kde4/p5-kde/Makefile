@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.6 2013/12/08 19:13:33 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/09 20:03:29 zhuk Exp $
 
 COMMENT =	KDE bindings for Perl
 DISTNAME =	perlkde-${MODKDE4_VERSION}
 PKGNAME =	p5-kde-${MODKDE4_VERSION}
-REVISION =	0
 
 # for perl module
 SHARED_ONLY =	Yes
@@ -23,7 +22,6 @@ WANTLIB += ${KDE4LIB}/smokeqtgui ${KDE4LIB}/smokeqtnetwork
 WANTLIB += ${KDE4LIB}/smokesolid ${KDE4LIB}/smokesoprano
 WANTLIB += ${KDE4LIB}/smokesopranoclient ${KDE4LIB}/smokesopranoserver
 WANTLIB += ${KDE4LIB}/smokeakonadi
-WANTLIB += c++ c++abi
 
 MODULES =	perl
 MODKDE4_USE =	libs
