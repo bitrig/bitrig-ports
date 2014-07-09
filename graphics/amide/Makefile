@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.38 2014/05/01 07:18:02 benoit Exp $
+# $OpenBSD: Makefile,v 1.39 2014/07/09 13:55:59 ajacoutot Exp $
 
 COMMENT =	Amide a Medical Imaging Data Examiner
 
 DISTNAME =	amide-1.0.5
-REVISION =	1
 CATEGORIES =	graphics
+REVISION =	2
 
 HOMEPAGE =	http://amide.sourceforge.net/
 
@@ -30,6 +30,7 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=amide/}
 EXTRACT_SUFX =	.tgz
 
 MODULES =	devel/gettext \
+		textproc/intltool \
 		x11/gnome
 
 MODGNOME_TOOLS += desktop-file-utils yelp
