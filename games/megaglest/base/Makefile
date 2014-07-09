@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/01/31 09:46:51 jca Exp $
+# $OpenBSD: Makefile,v 1.5 2014/07/09 09:16:05 ajacoutot Exp $
 
 COMMENT =		3D real-time strategy game
 DISTNAME =		megaglest-source-${V}
@@ -11,8 +11,7 @@ WANTLIB += m miniupnpc ogg openal png pthread ssl vlc vlccore vorbis
 WANTLIB += vorbisfile wx_base wx_gtk2_core wx_gtk2_gl xerces-c z
 WANTLIB += c++ c++abi
 
-MODULES =		devel/gettext \
-			lang/lua
+MODULES =		lang/lua
 BUILD_DEPENDS =		devel/help2man
 RUN_DEPENDS =		games/megaglest/data \
 			devel/desktop-file-utils
