@@ -1,12 +1,14 @@
-# $OpenBSD: Makefile,v 1.26 2013/11/25 14:16:22 sthen Exp $
+# $OpenBSD: Makefile,v 1.27 2014/07/09 09:40:49 ajacoutot Exp $
 
 COMMENT=	texas hold'em poker game with online capabilities
 BROKEN-hppa =	needs atomic ops
 BROKEN-mips64 =	needs atomic ops
 
-V=		1.0
+V=		1.1.1
 DISTNAME=	PokerTH-${V}-src
+EXTRACT_SUFX=	.tar.bz2
 PKGNAME=	pokerth-${V}
+
 CATEGORIES=	games x11
 REVISION=	0
 
@@ -25,9 +27,7 @@ WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pokerth/}
 
-EXTRACT_SUFX=	.tar.bz2
-
-MODULES=	devel/gettext \
+MODULES=	converters/libiconv \
 		x11/qt4
 
 RUN_DEPENDS=	devel/desktop-file-utils
