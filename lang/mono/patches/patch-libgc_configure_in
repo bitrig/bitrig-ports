@@ -1,12 +1,11 @@
-$OpenBSD$
---- libgc/configure.in.orig	Fri Jun  8 17:13:08 2012
-+++ libgc/configure.in	Fri Jun  8 17:13:26 2012
-@@ -147,7 +147,7 @@ case "$THREADS" in
+--- libgc/configure.in.orig	Sat Jul 12 16:14:53 2014
++++ libgc/configure.in	Sat Jul 12 16:16:01 2014
+@@ -150,7 +150,7 @@ case "$THREADS" in
  	fi
  	AC_DEFINE(THREAD_LOCAL_ALLOC)
  	;;
 -     *-*-openbsd*)
-+     *-*-openbsd*|*-*-openbsd*)
++     *-*-openbsd* | *-*-bitrig*)
  	AC_DEFINE(GC_OPENBSD_THREADS)
  	if test "${enable_parallel_mark}" = yes; then
  	  AC_DEFINE(PARALLEL_MARK)
