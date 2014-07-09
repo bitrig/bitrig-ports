@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2014/04/01 18:06:30 jasper Exp $
+# $OpenBSD: Makefile,v 1.22 2014/07/09 13:51:33 robert Exp $
 
 SHARED_ONLY=	Yes
 
@@ -93,6 +93,10 @@ DLLMAP_FILES=	src/Hyena/Hyena/Hyena.dll.config \
 .if !target(do-install)
 MAKE_FLAGS +=	INSTALL_DATA='/usr/bin/install -c -m 444'
 .endif
+
+post-patch:
+	find ${WRKSRC} -name Makefile.in -exec perl -pi -e \
+		's|-r:Mono.Cairo|-r:${PREFIX}/lib/mono/gac/Mono.Cairo/4.0.0.0__0738eb9f132ed756/Mono.Cairo.dll|' {} \;
 
 post-install:
 	rm ${PREFIX}/lib/banshee/Backends/*.{a,la}
