@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2014/04/01 14:52:09 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.22 2014/07/09 16:49:35 jasper Exp $
 
 SHARED_ONLY=	Yes
 
@@ -36,7 +36,7 @@ WANTLIB += pcre pixman-1 png pthread pthread-stubs sndio
 WANTLIB += tiff usbhid xcb xcb-render xcb-shm z
 WANTLIB += c++ c++abi pthread
 
-MASTER_SITES=	${MASTER_SITE_BERLIOS:=codeblocks/}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=codeblocks.berlios/}
 
 BUILD_DEPENDS=	archivers/zip
 
