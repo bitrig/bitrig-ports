@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/04/29 08:40:02 zhuk Exp $
+# $OpenBSD: Makefile,v 1.11 2014/07/10 07:37:32 espie Exp $
 
 COMMENT =	multimedia layer for Qt4/KDE4
 CATEGORIES =	multimedia devel

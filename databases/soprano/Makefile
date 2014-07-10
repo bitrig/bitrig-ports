@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/11/05 13:29:38 zhuk Exp $
+# $OpenBSD: Makefile,v 1.13 2014/07/10 07:37:32 espie Exp $
 
 SHARED_ONLY =	Yes
 COMMENT =	RDF framework
@@ -6,6 +6,7 @@ CATEGORIES =	databases devel textproc sysutils
 REVISION=	0
 HOMEPAGE =	http://soprano.sourceforge.net/
 DISTNAME =	soprano-2.9.4
+REVISION =	0
 
 SHARED_LIBS =	soprano                   2.1
 SHARED_LIBS +=	sopranoclient             2.1
