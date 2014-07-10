@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 10:50:01 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2014/07/10 07:14:57 espie Exp $
 
 CATEGORIES =	devel
 COMMENT =	K Desktop Environment, frontend to moc
