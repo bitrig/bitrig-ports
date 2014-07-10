@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/03/22 17:53:09 zhuk Exp $
+# $OpenBSD: Makefile,v 1.2 2014/07/10 13:00:13 espie Exp $
 
 CATEGORIES =	net
 COMMENT =	SSDP cache/proxy daemon for KDE
