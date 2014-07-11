@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/01/15 19:42:12 zhuk Exp $
+# $OpenBSD: Makefile,v 1.5 2014/07/11 09:58:54 espie Exp $
 
 CATEGORIES =	productivity
 COMMENT =	library for accessing Facebook services
