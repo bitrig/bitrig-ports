@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.47 2013/06/04 18:41:57 naddy Exp $
+# $OpenBSD: Makefile,v 1.48 2014/07/11 20:57:31 pascal Exp $
 
 COMMENT=	Fast-Light Tool Kit
 
