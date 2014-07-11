@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/10/22 11:34:13 zhuk Exp $
+# $OpenBSD: Makefile,v 1.16 2014/07/11 15:46:31 zhuk Exp $
 
 CATEGORIES=	databases x11 x11/kde
 COMMENT=	MDB (access) file migration driver for kexi
@@ -19,7 +19,7 @@ CONFIGURE_STYLE=	autoconf
 AUTOCONF_VERSION=	2.60
 CONFIGURE_ARGS+=	${MODKDE_CONFIGURE_ARGS} \
 			--with-kexidb-libraries=${LOCALBASE}/lib
-USE_GMAKE?=		Yes
+USE_GMAKE=		Yes
 CONFIGURE_ENV+=		${MODKDE_CONFIGURE_ENV}
 MAKE_ENV=		${CONFIGURE_ENV}
 MAKE_FLAGS+=		${MODKDE_MAKE_FLAGS}
