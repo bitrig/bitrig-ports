@@ -1,7 +1,7 @@
 $OpenBSD$
---- Modules/selectmodule.c.orig	Tue Nov 26 21:20:24 2013
-+++ Modules/selectmodule.c	Tue Nov 26 21:21:00 2013
-@@ -1219,7 +1219,7 @@ static PyTypeObject kqueue_queue_Type;
+--- Modules/selectmodule.c.orig	Sun Jun 29 22:05:43 2014
++++ Modules/selectmodule.c	Sat Jul 12 21:04:09 2014
+@@ -1235,7 +1235,7 @@ static PyTypeObject kqueue_queue_Type;
  /*
   * kevent is not standard and its members vary across BSDs.
   */

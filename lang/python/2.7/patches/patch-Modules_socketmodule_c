@@ -1,8 +1,8 @@
 $OpenBSD: patch-Modules_socketmodule_c,v 1.3 2014/02/09 09:49:26 rpointel Exp $
 security fix: http://bugs.python.org/issue20246
 
---- Modules/socketmodule.c.orig	Sun Nov 10 08:36:41 2013
-+++ Modules/socketmodule.c	Mon Feb 10 21:46:15 2014
+--- Modules/socketmodule.c.orig	Sun Jun 29 22:05:43 2014
++++ Modules/socketmodule.c	Sat Jul 12 21:04:09 2014
 @@ -182,7 +182,7 @@ shutdown(how) -- shut down traffic in one or both dire
     (this includes the getaddrinfo emulation) protect access with a lock. */
  #if defined(WITH_THREAD) && (defined(__APPLE__) || \
@@ -12,7 +12,7 @@ security fix: http://bugs.python.org/issue20246
      defined(__VMS) || !defined(HAVE_GETADDRINFO))
  #define USE_GETADDRINFO_LOCK
  #endif
-@@ -2742,6 +2742,10 @@ sock_recvfrom_into(PySocketSockObject *s, PyObject *ar
+@@ -2558,6 +2558,10 @@ sock_recv_into(PySocketSockObject *s, PyObject *args, 
      if (recvlen == 0) {
          /* If nbytes was not specified, use the buffer's length */
          recvlen = buflen;
@@ -22,4 +22,4 @@ security fix: http://bugs.python.org/issue20246
 +        goto error;
      }
  
-     readlen = sock_recvfrom_guts(s, buf.buf, recvlen, flags, &addr);
+     /* Check if the buffer is large enough */

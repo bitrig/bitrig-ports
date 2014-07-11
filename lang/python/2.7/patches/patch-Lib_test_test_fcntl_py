@@ -1,7 +1,7 @@
 $OpenBSD$
---- Lib/test/test_fcntl.py.orig	Tue Nov 26 21:11:13 2013
-+++ Lib/test/test_fcntl.py	Tue Nov 26 21:11:26 2013
-@@ -28,7 +28,7 @@ def get_lockdata():
+--- Lib/test/test_fcntl.py.orig	Sun Jun 29 22:05:34 2014
++++ Lib/test/test_fcntl.py	Sat Jul 12 21:04:09 2014
+@@ -27,7 +27,7 @@ def get_lockdata():
          else:
              start_len = "qq"
  

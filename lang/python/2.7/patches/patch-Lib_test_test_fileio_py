@@ -1,11 +1,11 @@
 $OpenBSD$
---- Lib/test/test_fileio.py.orig	Wed Nov 27 18:43:00 2013
-+++ Lib/test/test_fileio.py	Wed Nov 27 18:43:12 2013
-@@ -297,6 +297,7 @@ class OtherFileTests(unittest.TestCase):
-                     self.assertEqual(f.writable(), True)
-                     if sys.platform != "darwin" and \
-                        'bsd' not in sys.platform and \
-+                       'bitrig' not in sys.platform and \
-                        not sys.platform.startswith('sunos'):
-                         # Somehow /dev/tty appears seekable on some BSDs
-                         self.assertEqual(f.seekable(), False)
+--- Lib/test/test_fileio.py.orig	Sun Jun 29 22:05:34 2014
++++ Lib/test/test_fileio.py	Sat Jul 12 21:07:21 2014
+@@ -299,6 +299,7 @@ class OtherFileTests(unittest.TestCase):
+             self.assertEqual(f.writable(), True)
+             if sys.platform != "darwin" and \
+                'bsd' not in sys.platform and \
++               'bitrig' not in sys.platform and \
+                not sys.platform.startswith('sunos'):
+                 # Somehow /dev/tty appears seekable on some BSDs
+                 self.assertEqual(f.seekable(), False)
