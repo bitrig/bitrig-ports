@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.289 2014/05/30 15:26:43 edd Exp $
+# $OpenBSD: Makefile,v 1.293 2014/07/11 15:13:57 bentley Exp $
 
      SUBDIR =
      SUBDIR += abuse
@@ -32,6 +32,7 @@
      SUBDIR += bzflag
      SUBDIR += capitan-sevilla
      SUBDIR += castle-combat
+     SUBDIR += cdogs-sdl
      SUBDIR += cgoban
      SUBDIR += childsplay
      SUBDIR += chocolate-doom
@@ -172,6 +173,7 @@
      SUBDIR += quake2
      SUBDIR += redeclipse
      SUBDIR += renpy
+     SUBDIR += residualvm
      SUBDIR += rftg
      SUBDIR += ri-li
      SUBDIR += roadfighter
