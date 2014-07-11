@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/07/14 00:36:30 pascal Exp $
+# $OpenBSD: Makefile,v 1.2 2014/07/11 21:39:04 pascal Exp $
 
 SHARED_ONLY =		Yes
 
@@ -7,7 +7,7 @@ COMMENT =		equinox desktop library
 DISTNAME =		edelib-${V}
 REVISION =		0
 
-API_VER =		0.0
+API_VER =		1.0
 .for l in edelib edelib_dbus edelib_gui
 SHARED_LIBS +=		$l	${API_VER}
 .endfor
@@ -31,7 +31,8 @@ CONFIGURE_ENV =		API_VER="${API_VER}"
 NO_TEST =		Yes
 
 MODPY_ADJ_FILES =	tools/edelib-convert-icontheme \
-			tools/edelib-mk-indextheme
+			tools/edelib-mk-indextheme \
+			tools/edelib-mime-find
 
 do-build:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} jam -d x
