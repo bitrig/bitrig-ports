@@ -1,5 +1,4 @@
-@comment $OpenBSD: PLIST-main,v 1.32 2013/10/04 13:15:41 dcoppa Exp $
-@conflict qt4-sqlite-*
+@comment $OpenBSD: PLIST-main,v 1.33 2014/07/12 11:10:14 dcoppa Exp $
 @pkgpath x11/qt4
 @pkgpath x11/qt4,-phonon
 @pkgpath x11/qt4,-sqlite

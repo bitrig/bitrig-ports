@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.121 2014/05/26 19:24:28 naddy Exp $
+# $OpenBSD: Makefile,v 1.122 2014/07/12 11:10:14 dcoppa Exp $
 
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 SHARED_ONLY =		Yes
@@ -24,12 +24,12 @@ PKGNAME-debug =		qt4-debug-${PKGVERSION}
 FULLPKGNAME-html =	qt4-html-${PKGVERSION}
 FULLPKGPATH-html =	${BASE_PKGPATH},-html
 
-REVISION-mysql=		0
-REVISION-postgresql=	0
-REVISION-main=		1
-REVISION-examples=	0
-REVISION-sqlite2=	0
-REVISION-tds =		0
+REVISION-mysql =	1
+REVISION-postgresql =	1
+REVISION-main =		2
+REVISION-examples =	1
+REVISION-sqlite2 =	1
+REVISION-tds =		1
 
 # XXX qmake include parser is bogus
 DPB_PROPERTIES =	parallel	nojunk
@@ -69,7 +69,6 @@ HOMEPAGE =	http://qt-project.org/
 MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 FLAVORS =	debug
-PSEUDO_FLAVORS =no_examples
 FLAVOR ?=
 
 # GPLv3, or LGPL.
@@ -148,44 +147,6 @@ CONFIGURE_ARGS +=-release
 .endif
 
 .include <bsd.port.arch.mk>
-
-.if !${BUILD_PACKAGES:M-examples}
-SUBTARGETS =		sub-tools-bootstrap \
-			sub-moc \
-			sub-rcc \
-			sub-uic \
-			sub-corelib \
-			sub-xml \
-			sub-network \
-			sub-sql \
-			sub-testlib \
-			sub-dbus \
-			sub-gui \
-			sub-qt3support \
-			sub-uic3 \
-			sub-opengl \
-			sub-xmlpatterns \
-			sub-phonon \
-			sub-multimedia \
-			sub-svg \
-			sub-script \
-			sub-declarative \
-			sub-javascriptcore \
-			sub-webkit \
-			sub-scripttools \
-			sub-plugins \
-			sub-imports \
-			sub-webkitdeclarative \
-			sub-tools \
-			sub-translations
-
-ALL_TARGET =		${SUBTARGETS}
-INSTALL_TARGET =	${SUBTARGETS:S/$/-install_subtargets/} \
-			install_htmldocs install_qchdocs install_docimages \
-			install_qmake install_mkspecs
-.else
-PROGRAMS +=		qtdemo pixeltool
-.endif
 
 MODULES =		devel/gettext
 
@@ -270,7 +231,7 @@ NO_TEST =	Yes
 
 PROGRAMS4 =	assistant designer findtr linguist lrelease lupdate moc qmake \
 		qtconfig uic uic3
-PROGRAMS +=	rcc qt3to4 syncqt qdbus
+PROGRAMS +=	pixeltool qdbus qt3to4 qtdemo rcc syncqt
 
 
 QMAKE =		${WRKBUILD}/bin/qmake
