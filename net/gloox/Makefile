@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/08/16 10:05:00 sthen Exp $
+# $OpenBSD: Makefile,v 1.10 2014/07/12 17:51:25 pascal Exp $
 
 COMMENT =	extensible C++ library for XMPP clients and components
 
