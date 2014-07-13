@@ -3,7 +3,7 @@
 COMMENT-main=		text shaping library
 COMMENT-icu=		ICU support for libharfbuzz
 
-V=			0.9.29
+V=			0.9.30
 DISTNAME=		harfbuzz-${V}
 EXTRACT_SUFX=		.tar.bz2
 
@@ -14,7 +14,6 @@ SHARED_LIBS +=  harfbuzz             4.4      # 929.0
 SHARED_LIBS +=  harfbuzz-icu         0.1      # 929.0
 
 CATEGORIES=		devel graphics textproc
-REVISION=		1
 
 HOMEPAGE=		http://www.freedesktop.org/wiki/Software/HarfBuzz
 
