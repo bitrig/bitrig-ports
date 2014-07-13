@@ -1,0 +1,14 @@
+--- configure.orig	Sun Jul 13 10:11:23 2014
++++ configure	Sun Jul 13 10:11:38 2014
+@@ -11290,6 +11290,11 @@ $as_echo "#define PLATFORM_BSD 1" >>confdefs.h
+ $as_echo "#define PLATFORM_BSD 1" >>confdefs.h
+ 
+     ;;
++  *-bitrig*)
++
++$as_echo "#define PLATFORM_BSD 1" >>confdefs.h
++
++    ;;
+   *-darwin*)
+ 
+ $as_echo "#define PLATFORM_BSD 1" >>confdefs.h
