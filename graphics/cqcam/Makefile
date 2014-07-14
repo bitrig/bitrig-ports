@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2014/01/07 13:44:48 sthen Exp $
+# $OpenBSD: Makefile,v 1.23 2014/07/14 07:36:53 armani Exp $
 
 ONLY_FOR_ARCHS= i386
 
@@ -14,7 +14,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=	c m jpeg>=62
 WANTLIB +=	c++ c++abi pthread
 
-HOMEPAGE=	http://www.cs.duke.edu/~reynolds/cqcam/
+HOMEPAGE=	http://piki.org/patrick/cqcam/
 MASTER_SITES=	${HOMEPAGE}
 
 USE_GROFF =	Yes
