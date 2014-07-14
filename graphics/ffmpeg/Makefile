@@ -61,12 +61,7 @@ LIBswscale_EXTRALIBS=-lm
 # configure wants a directory it can execute files in 
 WRKTMP=		${WRKDIR}/tmp
 
-.if ${MACHINE_ARCH:Marm}
-# uses ARM EABI
-FFMPEG_ARCH=	generic
-.else
 FFMPEG_ARCH=	${MACHINE_ARCH}
-.endif
 
 .if ${MACHINE_ARCH} == "i386"
 # silly broken inline asm
@@ -94,10 +89,8 @@ CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
 		--disable-mips32r2 \
 		--disable-mipsdspr1 \
 		--disable-mipsdspr2 \
-		--disable-neon \
 		--disable-outdev=oss \
 		--disable-outdev=sdl \
-		--disable-vfp \
 		--enable-avresample \
 		--enable-gpl \
 		--enable-libgsm \
@@ -112,6 +105,7 @@ CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
 		--enable-libxvid \
 		--enable-nonfree \
 		--enable-openssl \
+		--enable-pic \
 		--enable-x11grab \
 		--extra-cflags="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		--extra-libs="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
