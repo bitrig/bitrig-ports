@@ -58,7 +58,7 @@ CONFIGURE_STYLE =	gnu
 MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} ${WRKSRC}/gcc
 
 LANGS = fortran
-CONFIGURE_ENV += CC=gcc
+#CONFIGURE_ENV += CC=gcc
 CONFIGURE_ENV += am_cv_func_iconv=no
 CONFIGURE_ENV += ac_cv_prog_CONFIGURED_M4=/usr/bin/m4
 CONFIGURE_ENV += ac_cv_prog_GFORTRAN_FOR_TARGET=no
