@@ -13,9 +13,9 @@ SHARED_LIBS=		gps	19.0 \
 			gpsd	0.0
 CATEGORIES=		misc geo
 
-REVISION-main=		6
-REVISION-php=		6
-REVISION-x11=		2
+REVISION-main=		7
+REVISION-php=		7
+REVISION-x11=		3
 
 HOMEPAGE=		http://www.catb.org/gpsd/
 
