@@ -1,6 +1,6 @@
 COMMENT=	System Compiler Meta Package
 
-PKGNAME=	bitrig-syscomp-1.3
+PKGNAME=	bitrig-syscomp-1.2
 
 MAINTAINER=	Marco Peereboom <marco@bitrig.org>
 
@@ -12,6 +12,8 @@ BUILD_DEPENDS=	bitrig/bitrig-binutils-2.24 \
 		archivers/libarchive
 .else
 BUILD_DEPENDS=	bitrig/bitrig-binutils \
+		bitrig/bitrig-gcc,-gcclibs \
+		bitrig/bitrig-gcc,-main \
 		bitrig/bitrig-llvm \
 		bitrig/bitrig-gdb \
 		devel/git \
