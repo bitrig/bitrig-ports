@@ -4,6 +4,7 @@ SHARED_ONLY=	Yes
 
 COMMENT=	powerful math/statistics/graphics language
 DISTNAME=	R-3.1.0
+REVISION=	0
 
 SHARED_LIBS=	R	2.1 	# 2.0
 SHARED_LIBS+=	Rlapack	31.2 	# 31.1
@@ -18,7 +19,7 @@ MAINTAINER=	Rafael Sadowski <rafael@sizeofvoid.org>
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	ICE SM X11 Xext Xmu Xss Xt bz2 c cairo \
-		ereadline fontconfig freetype glib-2.0 \
+		readline fontconfig freetype glib-2.0 \
 		gobject-2.0 icui18n icuuc jpeg lzma m \
 		ncurses pango-1.0 pangocairo-1.0 \
 		pangoft2-1.0 pcre png pthread tiff z \
@@ -58,7 +59,6 @@ LIB_DEPENDS=	${MODFORTRAN_LIB_DEPENDS} \
 		archivers/xz \
 		devel/glib2 \
 		devel/pango \
-		devel/readline \
 		graphics/cairo \
 		graphics/jpeg \
 		graphics/png \
@@ -91,7 +91,7 @@ CONFIGURE_ARGS= ${CONFIGURE_SHARED} \
 		--with-tk-config=${MODTK_CONFIG}
 
 CONFIGURE_ENV=	FFLAGS="${FFLAGS}" \
-		LDFLAGS="-L${PREFIX}/lib -Wl,-R${PREFIX}/lib/R/lib" \
+		LDFLAGS="-L${PREFIX}/lib -Wl,-rpath=${PREFIX}/lib/R/lib" \
 		ac_cv_path_TAR="${LOCALBASE}/bin/gtar" \
 		r_cv_mktime_errno=yes
 
