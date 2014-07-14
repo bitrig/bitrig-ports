@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/01/15 19:42:13 zhuk Exp $
+# $OpenBSD: Makefile,v 1.6 2014/07/14 07:46:19 zhuk Exp $
 
 CATEGORIES =	www
 COMMENT =	Webkit-based KPart for KDE
