@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.41 2014/01/12 14:58:30 naddy Exp $
+# $OpenBSD: Makefile,v 1.42 2014/07/16 13:13:49 espie Exp $
 
 COMMENT =		canvas API for X
 
