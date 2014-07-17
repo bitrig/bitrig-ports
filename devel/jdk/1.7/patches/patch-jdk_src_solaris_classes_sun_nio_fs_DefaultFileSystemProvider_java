@@ -1,0 +1,11 @@
+--- jdk/src/solaris/classes/sun/nio/fs/DefaultFileSystemProvider.java.orig	Thu Jul 17 17:45:21 2014
++++ jdk/src/solaris/classes/sun/nio/fs/DefaultFileSystemProvider.java	Thu Jul 17 17:44:03 2014
+@@ -70,7 +70,7 @@ public class DefaultFileSystemProvider {
+             return createProvider("sun.nio.fs.LinuxFileSystemProvider");
+         if (osname.equals("Darwin") || osname.contains("OS X"))
+             return createProvider("sun.nio.fs.MacOSXFileSystemProvider");
+-        if (osname.endsWith("BSD"))
++        if (osname.endsWith("BSD") || osname.equals("Bitrig"))
+             return createProvider("sun.nio.fs.BsdFileSystemProvider");
+         throw new AssertionError("Platform not recognized");
+     }
