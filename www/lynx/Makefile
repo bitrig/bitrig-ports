@@ -1,30 +1,38 @@
-COMMENT=		Lynx web browser from OpenBSD base
+# $OpenBSD: Makefile,v 1.12 2014/07/17 12:15:21 bcallah Exp $
 
-DISTNAME=		lynx-2.8.7rel.2
-EXTRACT_SUFX=		.tgz
-CATEGORIES=		www
+V =		2.8.9
+PL =		1
+COMMENT =	console Internet browser
+DISTNAME =	lynx${V}dev.${PL}
+PKGNAME =	lynx-${V}pl${PL}
+EXTRACT_SUFX =	.tar.bz2
+CATEGORIES =	www net
 
-HOMEPAGE=		https://www.bitrig.org/
+HOMEPAGE =	http://lynx.isc.org/
+MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
-# GPLv2
-PERMIT_PACKAGE_CDROM=	Yes
+# GPLv2 only
+PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=	c crypto ncurses ssl
+WANTLIB += c crypto ncurses ssl z
 
-MASTER_SITES=	https://www.bitrig.org/pub/distfiles/
+MASTER_SITES =	http://lynx.isc.org/current/
 
-NO_TEST=	Yes
+CONFIGURE_STYLE =	gnu
+CONFIGURE_ARGS =	--datarootdir="${PREFIX}/share/doc/lynx" \
+			--disable-idna \
+			--disable-nls \
+			--enable-ipv6 \
+			--enable-widec \
+			--with-ssl=/usr \
+			--with-zlib
 
-MAKE_FILE=	Makefile.bsd-wrapper
-MAKE_FLAGS=	SYSCONFDIR="${SYSCONFDIR}" PREFIX="${LOCALBASE}" \
-		MANDIR="${LOCALBASE}/man/man"
+MAKE_FILE =	makefile
 
-pre-install:
-	mkdir -p ${PREFIX}/share/doc/lynx/lynx_help/ \
-		${PREFIX}/share/doc/lynx/lynx_help/keystrokes/ \
-		${PREFIX}/share/examples/lynx/
+FAKE_FLAGS =	SYSCONFDIR="${DESTDIR}${PREFIX}/share/examples/lynx"
+INSTALL_TARGET =	install install-help install-doc
 
-post-install:
-	${INSTALL_DATA} ${WRKSRC}/lynx.cfg ${PREFIX}/share/examples/lynx/
+NO_TEST =	Yes
+WRKDIST =	${WRKDIR}/lynx${V:C/\./-/g}
 
 .include <bsd.port.mk>
