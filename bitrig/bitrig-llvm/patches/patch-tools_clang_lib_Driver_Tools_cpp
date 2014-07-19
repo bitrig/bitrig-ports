@@ -1,5 +1,5 @@
 --- tools/clang/lib/Driver/Tools.cpp.orig	Mon Dec  9 03:59:27 2013
-+++ tools/clang/lib/Driver/Tools.cpp	Mon May 12 19:41:02 2014
++++ tools/clang/lib/Driver/Tools.cpp	Sat Jul 19 08:49:59 2014
 @@ -2627,8 +2627,9 @@ void Clang::ConstructJob(Compilation &C, const JobActi
        CmdArgs.push_back("-gdwarf-4");
      else if (!A->getOption().matches(options::OPT_g0) &&
@@ -12,6 +12,15 @@
          CmdArgs.push_back("-gdwarf-2");
        else
          CmdArgs.push_back("-g");
+@@ -3549,7 +3550,7 @@ void Clang::ConstructJob(Compilation &C, const JobActi
+   // them.
+   // Support both clang's -f[no-]color-diagnostics and gcc's
+   // -f[no-]diagnostics-colors[=never|always|auto].
+-  enum { Colors_On, Colors_Off, Colors_Auto } ShowColors = Colors_Auto;
++  enum { Colors_On, Colors_Off, Colors_Auto } ShowColors = Colors_Off;
+   for (ArgList::const_iterator it = Args.begin(), ie = Args.end();
+        it != ie; ++it) {
+     const Option &O = (*it)->getOption();
 @@ -5595,6 +5596,22 @@ void bitrig::Assemble::ConstructJob(Compilation &C, co
                                      const char *LinkingOutput) const {
    ArgStringList CmdArgs;
