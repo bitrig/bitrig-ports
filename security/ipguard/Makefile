@@ -13,6 +13,8 @@ MASTER_SITES =	${HOMEPAGE}files/
 # BSD-like
 PERMIT_PACKAGE_CDROM =	Yes
 
+MAKE_FLAGS=    CC="${CC}"
+
 WANTLIB =	c pcap lib/libnet-1.1/net=11
 
 LIB_DEPENDS =	libnet->=1.1.2.1p0,<1.2:net/libnet/1.1
