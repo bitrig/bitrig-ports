@@ -19,6 +19,10 @@ ALL_TARGET=	build
 MAKE_ENV=	PATH=${PATH}:${WRKSRC}/scripts
 USE_GROFF =	Yes
 
+MODULES= 	gcc4
+MODGCC4_ARCHS = *
+MODGCC4_LANGS = c
+
 MAN1=	bargraph.1 graph.1
 MAN8=	lmbench.8 lat_proc.8 lat_mmap.8 lat_ctx.8 lat_syscall.8 lat_pipe.8 \
 	lat_tcp.8 lat_udp.8 lat_rpc.8 lat_connect.8 lat_fs.8 lat_pagefault.8 \
