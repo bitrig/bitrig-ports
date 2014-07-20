@@ -23,6 +23,11 @@ WRKDIST =	${WRKDIR}/web/${DISTNAME}
 USE_GROFF =	Yes
 NO_TEST =	Yes
 
+#force use of clang
+post-patch:
+	echo clang > ${WRKSRC}/src/conf-cc
+	echo clang > ${WRKSRC}/src/conf-ld
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/command/ftpcopy ${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/command/ftpls ${PREFIX}/bin
