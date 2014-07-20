@@ -22,6 +22,11 @@ BUILD_DEPENDS=	devel/bison
 USE_GMAKE=	Yes
 USE_GROFF =	Yes
 
+#directly uses gcc
+MODULES       += gcc4
+MODGCC4_ARCHS += *
+MODGCC4_LANGS =  c 
+
 WRKDIST=	${WRKDIR}/${DISTNAME:S/unix//}
 
 do-install:
