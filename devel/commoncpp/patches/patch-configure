@@ -1,75 +1,166 @@
 $OpenBSD$
---- configure.orig	Thu Dec  5 17:03:17 2013
-+++ configure	Thu Dec  5 17:04:00 2013
-@@ -7570,7 +7570,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
+--- configure.orig	Fri Mar  6 14:41:14 2009
++++ configure	Sat Jul 19 16:05:13 2014
+@@ -17165,51 +17165,6 @@ test -z "$INSTALL_SCRIPT" && INSTALL_SCRIPT='${INSTALL
  
--  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -7888,7 +7888,7 @@ newos6*)
-   lt_cv_deplibs_check_method=pass_all
-   ;;
+ test -z "$INSTALL_DATA" && INSTALL_DATA='${INSTALL} -m 644'
  
--openbsd*)
-+openbsd* | bitrig*)
-   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-   else
-@@ -8284,7 +8284,7 @@ old_postuninstall_cmds=
+-{ echo "$as_me:$LINENO: checking whether build environment is sane" >&5
+-echo $ECHO_N "checking whether build environment is sane... $ECHO_C" >&6; }
+-# Just in case
+-sleep 1
+-echo timestamp > conftest.file
+-# Do `set' in a subshell so we don't clobber the current shell's
+-# arguments.  Must try -L first in case configure is actually a
+-# symlink; some systems play weird games with the mod time of symlinks
+-# (eg FreeBSD returns the mod time of the symlink's containing
+-# directory).
+-if (
+-   set X `ls -Lt $srcdir/configure conftest.file 2> /dev/null`
+-   if test "$*" = "X"; then
+-      # -L didn't work.
+-      set X `ls -t $srcdir/configure conftest.file`
+-   fi
+-   rm -f conftest.file
+-   if test "$*" != "X $srcdir/configure conftest.file" \
+-      && test "$*" != "X conftest.file $srcdir/configure"; then
+-
+-      # If neither matched, then we have a broken ls.  This can happen
+-      # if, for instance, CONFIG_SHELL is bash and it inherits a
+-      # broken ls alias from the environment.  This has actually
+-      # happened.  Such a system could not be considered "sane".
+-      { { echo "$as_me:$LINENO: error: ls -t appears to fail.  Make sure there is not a broken
+-alias in your environment" >&5
+-echo "$as_me: error: ls -t appears to fail.  Make sure there is not a broken
+-alias in your environment" >&2;}
+-   { (exit 1); exit 1; }; }
+-   fi
+-
+-   test "$2" = conftest.file
+-   )
+-then
+-   # Ok.
+-   :
+-else
+-   { { echo "$as_me:$LINENO: error: newly created file is older than distributed files!
+-Check your system clock" >&5
+-echo "$as_me: error: newly created file is older than distributed files!
+-Check your system clock" >&2;}
+-   { (exit 1); exit 1; }; }
+-fi
+-{ echo "$as_me:$LINENO: result: yes" >&5
+-echo "${ECHO_T}yes" >&6; }
+ test "$program_prefix" != NONE &&
+   program_transform_name="s&^&$program_prefix&;$program_transform_name"
+ # Use a double $ so make ignores it.
+@@ -23440,6 +23395,101 @@ done
+ fi
  
- if test -n "$RANLIB"; then
-   case $host_os in
--  openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
-     ;;
-   *)
-@@ -11189,7 +11189,7 @@ echo $ECHO_N "checking whether the $compiler linker ($
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -11966,7 +11966,7 @@ rm -f core conftest.err conftest.$ac_objext conftest_i
-     *nto* | *qnx*)
-       ;;
  
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct=yes
- 	hardcode_shlibpath_var=no
-@@ -12966,7 +12966,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
++
++for ac_func in clock_nanosleep
++do
++as_ac_var=`echo "ac_cv_func_$ac_func" | $as_tr_sh`
++{ echo "$as_me:$LINENO: checking for $ac_func" >&5
++echo $ECHO_N "checking for $ac_func... $ECHO_C" >&6; }
++if { as_var=$as_ac_var; eval "test \"\${$as_var+set}\" = set"; }; then
++  echo $ECHO_N "(cached) $ECHO_C" >&6
++else
++  cat >conftest.$ac_ext <<_ACEOF
++/* confdefs.h.  */
++_ACEOF
++cat confdefs.h >>conftest.$ac_ext
++cat >>conftest.$ac_ext <<_ACEOF
++/* end confdefs.h.  */
++/* Define $ac_func to an innocuous variant, in case <limits.h> declares $ac_func.
++   For example, HP-UX 11i <limits.h> declares gettimeofday.  */
++#define $ac_func innocuous_$ac_func
++
++/* System header to define __stub macros and hopefully few prototypes,
++    which can conflict with char $ac_func (); below.
++    Prefer <limits.h> to <assert.h> if __STDC__ is defined, since
++    <limits.h> exists even on freestanding compilers.  */
++
++#ifdef __STDC__
++# include <limits.h>
++#else
++# include <assert.h>
++#endif
++
++#undef $ac_func
++
++/* Override any GCC internal prototype to avoid an error.
++   Use char because int might match the return type of a GCC
++   builtin and then its argument prototype would still apply.  */
++#ifdef __cplusplus
++extern "C"
++#endif
++char $ac_func ();
++/* The GNU C library defines this for functions which it implements
++    to always fail with ENOSYS.  Some functions are actually named
++    something starting with __ and the normal name is an alias.  */
++#if defined __stub_$ac_func || defined __stub___$ac_func
++choke me
++#endif
++
++int
++main ()
++{
++return $ac_func ();
++  ;
++  return 0;
++}
++_ACEOF
++rm -f conftest.$ac_objext conftest$ac_exeext
++if { (ac_try="$ac_link"
++case "(($ac_try" in
++  *\"* | *\`* | *\\*) ac_try_echo=\$ac_try;;
++  *) ac_try_echo=$ac_try;;
++esac
++eval "echo \"\$as_me:$LINENO: $ac_try_echo\"") >&5
++  (eval "$ac_link") 2>conftest.er1
++  ac_status=$?
++  grep -v '^ *+' conftest.er1 >conftest.err
++  rm -f conftest.er1
++  cat conftest.err >&5
++  echo "$as_me:$LINENO: \$? = $ac_status" >&5
++  (exit $ac_status); } && {
++	 test -z "$ac_cxx_werror_flag" ||
++	 test ! -s conftest.err
++       } && test -s conftest$ac_exeext &&
++       $as_test_x conftest$ac_exeext; then
++  eval "$as_ac_var=yes"
++else
++  echo "$as_me: failed program was:" >&5
++sed 's/^/| /' conftest.$ac_ext >&5
++
++	eval "$as_ac_var=no"
++fi
++
++rm -f core conftest.err conftest.$ac_objext conftest_ipa8_conftest.oo \
++      conftest$ac_exeext conftest.$ac_ext
++fi
++ac_res=`eval echo '${'$as_ac_var'}'`
++	       { echo "$as_me:$LINENO: result: $ac_res" >&5
++echo "${ECHO_T}$ac_res" >&6; }
++if test `eval echo '${'$as_ac_var'}'` = yes; then
++  cat >>confdefs.h <<_ACEOF
++#define `echo "HAVE_$ac_func" | $as_tr_cpp` 1
++_ACEOF
++
++fi
++done
++
++
+ 	{ echo "$as_me:$LINENO: checking for mlockall in -lrt" >&5
+ echo $ECHO_N "checking for mlockall in -lrt... $ECHO_C" >&6; }
+ if test "${ac_cv_lib_rt_mlockall+set}" = set; then
+@@ -29994,7 +30044,7 @@ echo "${ECHO_T}$ac_cv_header_openssl_ssl_h" >&6; }
+ fi
+ if test $ac_cv_header_openssl_ssl_h = yes; then
  
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -15115,7 +15115,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
- 	ld_shlibs_CXX=no
- 	;;
+-			SSL_LIBS="-lssl"
++			SSL_LIBS="-lssl -lcrypto"
+ 			ost_cv_ssl=true
  
--      openbsd*)
-+      openbsd* | bitrig*)
- 	if test -f /usr/libexec/ld.so; then
- 	  hardcode_direct_CXX=yes
- 	  hardcode_shlibpath_var_CXX=no
-@@ -16798,7 +16798,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
+ cat >>confdefs.h <<\_ACEOF

@@ -1,0 +1,21 @@
+--- inc/cc++/string.h.orig	Fri Jan 16 07:27:37 2009
++++ inc/cc++/string.h	Sun Jul 20 03:28:40 2014
+@@ -74,6 +74,9 @@ class MemPager;
+  * @author David Sugar <dyfet@ostel.com>
+  * @short Generic string class.
+  */
++class String;
++std::istream &getline(std::istream &is, String &str, char delim = '\n', size_t size = 0);
++
+ class __EXPORT String
+ {
+ protected:
+@@ -731,7 +734,7 @@ class __EXPORT String (public)
+ 	 * @param delim deliminator to use.
+ 	 * @param size optional size limitor.
+ 	 */
+-	friend __EXPORT std::istream &getline(std::istream &is, String &str, char delim = '\n', size_t size = 0);
++	friend __EXPORT std::istream &getline(std::istream &is, String &str, char delim, size_t size);
+ 
+ 	/**
+ 	 * Stream the content of our string variable directly to a C++
