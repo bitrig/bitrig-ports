@@ -18,4 +18,9 @@ NO_TEST =	Yes
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/aget ${PREFIX}/bin
 
+#directly uses gcc
+MODULES +=      gcc4
+MODGCC4_ARCHS += *
+MODGCC4_LANGS =  c 
+
 .include <bsd.port.mk>
