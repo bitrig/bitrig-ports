@@ -1,8 +1,21 @@
 $OpenBSD: patch-configure,v 1.3 2014/01/23 18:05:22 bcallah Exp $
---- configure.orig	Thu Jan 23 01:32:39 2014
-+++ configure	Thu Jan 23 01:33:54 2014
-@@ -4315,10 +4315,10 @@ $as_echo "yes" >&6; }
- 		*BSD*)
+--- configure.orig	Sat Jan  4 22:21:00 2014
++++ configure	Sun Jul 20 03:52:14 2014
+@@ -3684,7 +3684,7 @@ fi
+ 
+ 
+ case "$uname" in
+-        Darwin* | *BSD*)
++        Darwin* | *BSD* | Bitrig*)
+                 ARFLAGS="-rcv"
+                 ;;
+         *)
+@@ -4312,13 +4312,13 @@ $as_echo "yes" >&6; }
+                         LDFLAGS="$LDFLAGS -Wl,-rpath,\$(libdir)"
+ 			;;
+ 
+-		*BSD*)
++		*BSD* | Bitrig*)
  			{ $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
  $as_echo "yes" >&6; }
 -			LIBMXML="libmxml.so.1.5"
@@ -24,3 +37,12 @@ $OpenBSD: patch-configure,v 1.3 2014/01/23 18:05:22 bcallah Exp $
  	fi
  
  	if test "x$use_ansi" = xyes; then
+@@ -4410,7 +4410,7 @@ fi
+ 
+ if test "$mandir" = "\${prefix}/man" -a "$prefix" = "/usr"; then
+ 	case "$uname" in
+-        	*BSD* | Darwin* | Linux*)
++        	*BSD* | Bitrig* | Darwin* | Linux*)
+         		# BSD, Darwin (MacOS X), and Linux
+         		mandir="/usr/share/man"
+         		;;

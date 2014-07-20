@@ -1,0 +1,11 @@
+--- mxml.list.in.orig	Sun Jul 20 03:48:54 2014
++++ mxml.list.in	Sun Jul 20 03:49:17 2014
+@@ -78,7 +78,7 @@ l 0555 root sys ${libdir}/libmxml.sl libmxml.sl.1
+ f 0555 root sys ${libdir}/libmxml.1.dylib libmxml.1.dylib
+ l 0555 root sys ${libdir}/libmxml.dylib libmxml.1.dylib
+ 
+-%system freebsd irix linux netbsd openbsd solaris tru64
++%system freebsd irix linux netbsd openbsd bitrig solaris tru64
+ f 0555 root sys ${libdir}/libmxml.so.1.5 libmxml.so.1.5
+ l 0555 root sys ${libdir}/libmxml.so.1 libmxml.so.1.5
+ l 0555 root sys ${libdir}/libmxml.so libmxml.so.1.5
