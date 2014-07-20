@@ -1,5 +1,7 @@
 #       $OpenBSD: Makefile,v 1.13 2014/04/10 20:20:16 bcallah Exp $
 
+BROKEN=fake install installs into base
+
 COMMENT=	newLISP is a LISP like, general purpose scripting language
 
 V=		10.6.0
@@ -23,6 +25,7 @@ SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=	simple
 CONFIGURE_SCRIPT=	configure-alt
 CONFIGURE_ARGS +=	--enable-readline
+MAKE_FLAGS=		CC="${CC}"
 
 TEST_TARGET=		check
 
