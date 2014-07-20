@@ -31,6 +31,11 @@ MAKE_FLAGS =	SYSCONFDIR=${SYSCONFDIR} \
 
 FAKE_FLAGS =	PREFIX=${PREFIX}
 
+#directly uses gcc
+MODULES       += gcc4
+MODGCC4_ARCHS += *
+MODGCC4_LANGS =  c 
+
 USE_GMAKE =	Yes
 NO_TEST =	Yes
 ALL_TARGET =	astmanproxy
