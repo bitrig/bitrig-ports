@@ -22,6 +22,7 @@ MASTER_SITES =		ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci/ \
 USE_GMAKE =		Yes
 
 MAKE_ENV =		CC="${CC}"
+MAKE_FLAGS =		CC="${CC}"
 FAKE_FLAGS =		PREFIX=${TRUEPREFIX} MANDIR=${TRUEPREFIX}/man
 
 NO_TEST =		Yes
