@@ -18,7 +18,7 @@ MASTER_SITES0 =	http://www.arcane-labs.net/download/OpenBSD/
 
 DISTFILES =	${DISTNAME}${EXTRACT_SUFX} \
 		figlet-contributed-06092002${EXTRACT_SUFX}:0
-MAKE_FLAGS =	CC="${CC}" CFLAGS="${CFLAGS}" \
+MAKE_FLAGS =	CC="${CC}" LD="${CC}" CFLAGS="${CFLAGS}" \
 		DEFAULTFONTDIR=${PREFIX}/share/figlet
 
 NO_TEST =	Yes
