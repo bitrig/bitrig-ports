@@ -20,6 +20,7 @@ LIB_DEPENDS=	devel/sdl-mixer \
 
 USE_GMAKE=	Yes
 NO_TEST=	Yes
+MAKE_FLAGS=	CC="${CC}"
 MAKE_ENV=	prefix="${PREFIX}" \
 		highscoredir="/var/games/icebreaker"
 
