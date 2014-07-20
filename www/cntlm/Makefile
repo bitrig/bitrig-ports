@@ -21,6 +21,9 @@ USE_GMAKE =		Yes
 
 NO_TEST =		Yes
 
+post-patch:
+	cp ${WRKSRC}/Makefile ${WRKSRC}/Makefile.clang
+
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/cntlm
 	${INSTALL_PROGRAM} ${WRKBUILD}/cntlm ${PREFIX}/sbin/
