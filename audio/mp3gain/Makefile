@@ -19,6 +19,8 @@ ALL_TARGET=		all
 USE_GMAKE=		Yes
 NO_TEST=		Yes
 
+MAKE_FLAGS=	CC="${CC}"
+
 WRKSRC=$(WRKDIR)
 
 do-configure:
