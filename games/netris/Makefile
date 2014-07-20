@@ -15,6 +15,7 @@ WANTLIB=		c ncurses termcap
 
 CONFIGURE_STYLE=	simple
 CONFIGURE_SCRIPT=	Configure
+CONFIGURE_ARGS=		--cc clang
 
 NO_TEST=	Yes
 FAKE_FLAGS=	DESTDIR=${WRKINST}${PREFIX}/bin
