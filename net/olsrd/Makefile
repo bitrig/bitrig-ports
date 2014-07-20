@@ -48,7 +48,7 @@ NO_TEST=	Yes
 MODULES=	devel/gettext
 
 ALL_TARGET=	build_all
-MAKE_FLAGS=	DEBUG=0 OS=obsd
+MAKE_FLAGS=	DEBUG=0 OS=obsd CC="${CC}"
 FAKE_FLAGS=	SBINDIR=${DESTDIR}/${PREFIX}/sbin \
 		ETCDIR=${DESTDIR}/${PREFIX}/share/examples/olsrd \
 		LIBDIR=${DESTDIR}/${PREFIX}/lib/olsrd-plugins \
