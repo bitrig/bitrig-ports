@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2014/03/09 19:47:18 jasper Exp $
+# $OpenBSD: Makefile,v 1.25 2014/07/21 14:12:35 jasper Exp $
 
 COMMENT=		configuration editing tool and API
 
