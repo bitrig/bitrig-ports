@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.60 2014/07/09 16:27:19 jasper Exp $
+# $OpenBSD: Makefile,v 1.61 2014/07/21 15:51:16 jasper Exp $
 
 COMMENT=	Ruby library for retrieving facts from operating systems
 
