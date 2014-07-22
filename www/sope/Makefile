@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.40 2014/05/23 22:25:50 kili Exp $
+# $OpenBSD: Makefile,v 1.41 2014/07/22 18:46:43 sebastia Exp $
 
 COMMENT-main=		Skyrix Object Publishing Environment
 COMMENT-mysql=		SOPE MySQL adaptor
