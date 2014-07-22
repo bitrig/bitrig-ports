@@ -2,12 +2,7 @@
 
 COMMENT =		RAW image processing application
 
-<<<<<<< HEAD
-DISTNAME =		rawtherapee-4.0.9
-REVISION =		2
-=======
 DISTNAME =		rawtherapee-4.1
->>>>>>> 3e86f94... Update to rawtherapee-4.1 with lots of new features and bugfixes.
 
 CATEGORIES =		graphics
 
