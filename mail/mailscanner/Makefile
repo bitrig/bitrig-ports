@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.54 2014/07/12 11:25:00 sthen Exp $
+# $OpenBSD: Makefile,v 1.55 2014/07/22 10:55:40 ajacoutot Exp $
 
 COMMENT=	virus/spam scanning framework
 

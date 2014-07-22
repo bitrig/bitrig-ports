@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.35 2014/05/30 13:14:08 sthen Exp $
+# $OpenBSD: Makefile,v 1.36 2014/07/22 10:55:41 ajacoutot Exp $
 
 COMMENT=	latency logging and graphing system
 

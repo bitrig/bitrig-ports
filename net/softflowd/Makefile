@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/08/07 21:32:26 naddy Exp $
+# $OpenBSD: Makefile,v 1.9 2014/07/22 10:55:41 ajacoutot Exp $
 
 COMMENT=	flow-based network traffic analyser
 

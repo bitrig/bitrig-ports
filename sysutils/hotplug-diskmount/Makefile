@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/22 13:20:36 benoit Exp $
+# $OpenBSD: Makefile,v 1.7 2014/07/22 10:55:41 ajacoutot Exp $
 
 COMMENT =	disk auto-mounter
 

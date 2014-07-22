@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.43 2013/09/30 19:35:52 sthen Exp $
+# $OpenBSD: Makefile,v 1.44 2014/07/22 10:55:41 ajacoutot Exp $
 
 COMMENT=	wiki and bug tracking system for software projects
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/01/24 21:45:16 landry Exp $
+# $OpenBSD: Makefile,v 1.13 2014/07/22 10:55:40 ajacoutot Exp $
 
 COMMENT =			network discovery tool
 

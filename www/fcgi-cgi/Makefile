@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/07/05 09:34:35 jasper Exp $
+# $OpenBSD: Makefile,v 1.13 2014/07/22 10:55:41 ajacoutot Exp $
 
 COMMENT-main=	wrapper to run CGI applications via FastCGI
 COMMENT-static=	static-linked fcgi-cgi wrapper for chroot use
@@ -7,7 +7,9 @@ V=		0.1.8
 DISTNAME=	fcgi-cgi-$V
 PKGNAME-main=	fcgi-cgi-$V
 PKGNAME-static=	fcgi-cgi-static-$V
-REVISION=	5
+REVISION=	6
+REVISION-main=	5
+REVISION-static=6
 CATEGORIES=	www
 
 HOMEPAGE=	http://redmine.lighttpd.net/projects/fcgi-cgi/wiki

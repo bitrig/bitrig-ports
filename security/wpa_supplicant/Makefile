@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2014/07/12 11:25:00 sthen Exp $
+# $OpenBSD: Makefile,v 1.18 2014/07/22 10:55:41 ajacoutot Exp $
 
 COMMENT=	IEEE 802.1X supplicant
 

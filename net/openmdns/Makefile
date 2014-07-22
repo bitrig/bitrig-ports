@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/11/26 08:53:23 jca Exp $
+# $OpenBSD: Makefile,v 1.13 2014/07/22 10:55:41 ajacoutot Exp $
 
 COMMENT =		MDNS/DNS-SD daemon
 
