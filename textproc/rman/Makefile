@@ -13,6 +13,8 @@ WANTLIB=		c
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=polyglotman/}
 
+MAKE_FLAGS =	CC="${CC}"
+
 USE_GROFF =	Yes
 NO_TEST=	Yes
 
