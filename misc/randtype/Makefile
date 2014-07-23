@@ -17,6 +17,8 @@ WANTLIB=	c z
 USE_GROFF =	Yes
 NO_TEST=	Yes
 
+MAKE_FLAGS =	CC="${CC}"
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/randtype ${PREFIX}/bin
 	gunzip ${WRKSRC}/randtype.1.gz
