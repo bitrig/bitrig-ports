@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/11 11:44:44 espie Exp $
+# $OpenBSD: Makefile,v 1.11 2014/07/23 20:06:13 naddy Exp $
 
 COMMENT = 		MVC web framework for perl
 
@@ -7,12 +7,14 @@ DISTNAME =		CGI-Application-4.50
 REVISION =		0
 CATEGORIES =		www
 HOMEPAGE =		http://www.cgi-app.org/
-USE_GROFF =		Yes
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 
 CONFIGURE_STYLE =	modbuild
-RUN_DEPENDS =		www/p5-HTML-Template
+
+RUN_DEPENDS =		devel/p5-Class-ISA \
+			www/p5-CGI-PSGI \
+			www/p5-HTML-Template
 
 .include <bsd.port.mk>
