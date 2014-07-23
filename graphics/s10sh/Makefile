@@ -21,6 +21,8 @@ LIB_DEPENDS=	devel/libusb-compat \
 
 CONFIGURE_STYLE= simple
 
+MAKE_FLAGS =   CC="${CC}"
+
 NO_TEST=	Yes
 
 do-install:
