@@ -1,0 +1,11 @@
+--- Makefile.orig	Tue Jul 22 22:01:18 2014
++++ Makefile	Tue Jul 22 22:01:26 2014
+@@ -1,5 +1,5 @@
+ all:
+-	gcc -o ssh-askpass-fullscreen ssh-askpass-fullscreen.c `pkg-config --libs gtk+-2.0` `pkg-config --cflags gtk+-2.0`
++	${CC} -o ssh-askpass-fullscreen ssh-askpass-fullscreen.c `pkg-config --libs gtk+-2.0` `pkg-config --cflags gtk+-2.0`
+ 
+ clean:
+-	rm ssh-askpass-fullscreen
+\ No newline at end of file
++	rm ssh-askpass-fullscreen
