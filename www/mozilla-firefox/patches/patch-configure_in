@@ -1,9 +1,7 @@
-$OpenBSD: patch-configure_in,v 1.28 2014/06/14 13:03:31 landry Exp $
-https://bugzilla.mozilla.org/show_bug.cgi?id=991686
-fx31
-chunk2: webapprt gtk3 https://bugzilla.mozilla.org/show_bug.cgi?id=1012447
---- configure.in.orig	Thu Jun  5 21:15:19 2014
-+++ configure.in	Mon Jun 16 14:16:55 2014
+$OpenBSD: patch-configure_in,v 1.29 2014/07/24 18:03:00 landry Exp $
+webapprt gtk3 https://bugzilla.mozilla.org/show_bug.cgi?id=1012447
+--- configure.in.orig	Wed Jul 16 21:45:08 2014
++++ configure.in	Sun Jul 27 04:00:20 2014
 @@ -1004,7 +1004,7 @@ if test -n "$CROSS_COMPILE"; then
          dragonfly*)   OS_ARCH=DragonFly OS_TARGET=DragonFly ;;
          freebsd*)     OS_ARCH=FreeBSD OS_TARGET=FreeBSD ;;
@@ -22,7 +20,7 @@ chunk2: webapprt gtk3 https://bugzilla.mozilla.org/show_bug.cgi?id=1012447
      HOST_OS_ARCH=OpenBSD
      ;;
  solaris*)
-@@ -2280,7 +2280,7 @@ ia64*-hpux*)
+@@ -2281,7 +2281,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@)) -o $@'
      ;;
  
@@ -31,7 +29,7 @@ chunk2: webapprt gtk3 https://bugzilla.mozilla.org/show_bug.cgi?id=1012447
      if test "$SO_VERSION"; then
          DLL_SUFFIX=".so.$SO_VERSION"
      else
-@@ -2668,7 +2668,7 @@ dnl Checks for header files.
+@@ -2676,7 +2676,7 @@ dnl Checks for header files.
  dnl ========================================================
  AC_HEADER_DIRENT
  case "$target_os" in
@@ -40,7 +38,7 @@ chunk2: webapprt gtk3 https://bugzilla.mozilla.org/show_bug.cgi?id=1012447
  # for stuff like -lXshm
      CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
      ;;
-@@ -2958,7 +2958,7 @@ then
+@@ -2966,7 +2966,7 @@ then
              fi
              ;;
  
@@ -49,7 +47,7 @@ chunk2: webapprt gtk3 https://bugzilla.mozilla.org/show_bug.cgi?id=1012447
              AC_DEFINE(_REENTRANT)
              AC_DEFINE(_THREAD_SAFE)
              dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -3319,7 +3319,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
+@@ -3327,7 +3327,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
      *-android*|*-linuxandroid*)
        :
        ;;
@@ -58,16 +56,7 @@ chunk2: webapprt gtk3 https://bugzilla.mozilla.org/show_bug.cgi?id=1012447
        :
        ;;
      *)
-@@ -4866,7 +4866,7 @@ dnl ==================================================
- dnl = GNOME component (mozgnome)
- dnl ========================================================
- 
--if test "$MOZ_ENABLE_GTK2"
-+if test "$MOZ_ENABLE_GTK"
- then
-     MOZ_ENABLE_GNOME_COMPONENT=1
- fi
-@@ -5053,7 +5053,7 @@ dnl --enable-webrtc to override.  Can disable for ever
+@@ -5061,7 +5061,7 @@ dnl --enable-webrtc to override.  Can disable for ever
  dnl the master list above.
  if test -n "$MOZ_WEBRTC"; then
      case "$target" in
@@ -76,7 +65,7 @@ chunk2: webapprt gtk3 https://bugzilla.mozilla.org/show_bug.cgi?id=1012447
          dnl Leave enabled
          ;;
      *)
-@@ -6181,7 +6181,7 @@ MOZ_ARG_DISABLE_BOOL(webapp-runtime,
+@@ -6292,7 +6292,7 @@ MOZ_ARG_DISABLE_BOOL(webapp-runtime,
  [  --disable-webapp-runtime  Disable Web App Runtime],
      MOZ_WEBAPP_RUNTIME=,
      MOZ_WEBAPP_RUNTIME=1)
