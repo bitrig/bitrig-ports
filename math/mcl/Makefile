@@ -16,8 +16,11 @@ MASTER_SITES=	${HOMEPAGE}/src/
 
 WANTLIB=	c m pthread
 
+CFLAGS += -std=c89
+
 CONFIGURE_STYLE=gnu
 USE_GROFF =	Yes
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/autofoo
 
 FAKE_FLAGS=	exampledir=${PREFIX}/share/examples/mcl/
 
