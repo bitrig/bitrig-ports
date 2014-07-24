@@ -1,0 +1,10 @@
+--- mozilla/build/gyp.mozbuild.orig	Sat Aug  2 02:45:39 2014
++++ mozilla/build/gyp.mozbuild	Sat Aug  2 02:46:12 2014
+@@ -82,6 +82,7 @@ flavors = {
+     'FreeBSD': 'freebsd',
+     'NetBSD': 'netbsd',
+     'OpenBSD': 'openbsd',
++    'Bitrig': 'openbsd',
+ }
+ gyp_vars['OS'] = flavors[os]
+ 

@@ -1,12 +1,15 @@
-$OpenBSD$
---- mozilla/media/libcubeb/src/moz.build.orig	Fri Sep 27 23:53:33 2013
-+++ mozilla/media/libcubeb/src/moz.build	Fri Sep 27 23:55:57 2013
-@@ -20,7 +20,7 @@ if CONFIG['MOZ_PULSEAUDIO']:
-         'cubeb_pulse.c',
+--- mozilla/media/libcubeb/src/moz.build.orig	Sun Jul 27 07:18:35 2014
++++ mozilla/media/libcubeb/src/moz.build	Sun Jul 27 07:24:10 2014
+@@ -30,6 +30,12 @@ if CONFIG['OS_ARCH'] == 'OpenBSD':
      ]
+     DEFINES['USE_SNDIO'] = True
  
--if CONFIG['OS_ARCH'] == 'OpenBSD':
-+if CONFIG['OS_ARCH'] in ('OpenBSD', 'Bitrig'):
-     CSRCS += [
-         'cubeb_sndio.c',
-     ]
++if CONFIG['OS_ARCH'] == 'Bitrig':
++    SOURCES += [
++        'cubeb_sndio.c',
++    ]
++    DEFINES['USE_SNDIO'] = True
++
+ if CONFIG['OS_TARGET'] == 'Darwin':
+     SOURCES += [
+         'cubeb_audiounit.c',

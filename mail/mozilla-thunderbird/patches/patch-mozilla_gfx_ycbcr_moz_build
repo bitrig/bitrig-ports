@@ -1,12 +1,11 @@
-$OpenBSD$
---- mozilla/gfx/ycbcr/moz.build.orig	Fri Sep 27 23:53:29 2013
-+++ mozilla/gfx/ycbcr/moz.build	Fri Sep 27 23:54:57 2013
+--- mozilla/gfx/ycbcr/moz.build.orig	Sun Jul 27 07:18:35 2014
++++ mozilla/gfx/ycbcr/moz.build	Sun Jul 27 07:21:05 2014
 @@ -52,7 +52,7 @@ if CONFIG['_MSC_VER']:
              'yuv_row_win.cpp',
          ]
  elif CONFIG['OS_ARCH'] in ('Linux', 'SunOS', 'Darwin', 'DragonFly',
 -                           'FreeBSD', 'NetBSD', 'OpenBSD'):
 +                           'FreeBSD', 'NetBSD', 'OpenBSD', 'Bitrig'):
-     CPP_SOURCES += [
+     SOURCES += [
          'yuv_row_posix.cpp',
      ]
