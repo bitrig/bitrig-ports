@@ -1,7 +1,16 @@
 $OpenBSD: patch-configure,v 1.5 2014/03/26 03:27:26 daniel Exp $
 
---- configure.orig	Sat Dec 21 03:03:14 2013
-+++ configure	Mon Dec 30 19:04:42 2013
+--- configure.orig	Sat Dec 21 09:03:14 2013
++++ configure	Thu Jul 24 22:24:32 2014
+@@ -111,7 +111,7 @@ coq_debug_flag_opt=
+ coq_profile_flag=
+ coq_annotate_flag=
+ best_compiler=opt
+-cflags="-fno-defer-pop -Wall -Wno-unused"
++cflags="-Wall -Wno-unused"
+ natdynlink=yes
+ 
+ local=false
 @@ -897,7 +897,7 @@ case $coqrunbyteflags_spec/$local/$custom_spec/$CUSTOM
      */true/*/*) COQRUNBYTEFLAGS="-dllib -lcoqrun -dllpath '$COQTOP'/kernel/byterun";;
      *)
