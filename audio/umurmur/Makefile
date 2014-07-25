@@ -1,9 +1,10 @@
-# $OpenBSD: Makefile,v 1.10 2014/01/17 10:18:42 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.12 2014/07/25 22:03:30 naddy Exp $
 
 COMMENT =		minimalistic Mumble server
 
 DISTNAME =		umurmur-0.2.14
-REVISION =		0
+REVISION =		1
+
 CATEGORIES =		audio
 
 HOMEPAGE =		https://umurmur.googlecode.com/
@@ -22,8 +23,6 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS =	--with-ssl=openssl
-
-NO_TEST =		Yes
 
 post-configure:
 	${SUBST_CMD} ${WRKSRC}/src/conf.c ${WRKSRC}/src/conf.h
