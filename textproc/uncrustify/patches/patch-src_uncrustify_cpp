@@ -1,0 +1,10 @@
+--- src/uncrustify.cpp.orig	Sat Jul 26 17:50:25 2014
++++ src/uncrustify.cpp	Sat Jul 26 17:50:39 2014
+@@ -24,6 +24,7 @@
+ #include <cstdlib>
+ #include <cstring>
+ #include <cerrno>
++#include <unistd.h>
+ #include <fcntl.h>
+ #include "unc_ctype.h"
+ #ifdef HAVE_SYS_STAT_H
