@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.79 2014/07/16 22:16:54 brad Exp $
+# $OpenBSD: Makefile,v 1.80 2014/07/26 09:27:29 pascal Exp $
 
 # XXX: Remember to bump MODCLANG_VERSION in lang/clang/clang.port.mk when
 # updating this port.
