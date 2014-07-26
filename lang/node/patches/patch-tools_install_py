@@ -1,0 +1,11 @@
+--- tools/install.py.orig	Sun Jul 27 08:20:25 2014
++++ tools/install.py	Sun Jul 27 08:20:56 2014
+@@ -132,7 +132,7 @@ def files(action):
+   if 'true' == variables.get('node_use_dtrace'):
+     action(['out/Release/node.d'], 'lib/dtrace/node.d')
+ 
+-  if 'freebsd' in sys.platform or 'openbsd' in sys.platform:
++  if 'freebsd' in sys.platform or 'openbsd' in sys.platform or 'bitrig' in sys.platform:
+     action(['doc/node.1'], 'man/man1/')
+   else:
+     action(['doc/node.1'], 'share/man/man1/')

@@ -1,0 +1,24 @@
+--- deps/uv/uv.gyp.orig	Sat Jul 26 16:59:23 2014
++++ deps/uv/uv.gyp	Sat Jul 26 17:01:21 2014
+@@ -243,18 +243,18 @@
+         [ 'OS=="freebsd" or OS=="dragonflybsd"', {
+           'sources': [ 'src/unix/freebsd.c' ],
+         }],
+-        [ 'OS=="openbsd"', {
++        [ 'OS=="openbsd" or OS=="bitrig"', {
+           'sources': [ 'src/unix/openbsd.c' ],
+         }],
+         [ 'OS=="netbsd"', {
+           'sources': [ 'src/unix/netbsd.c' ],
+         }],
+-        [ 'OS in "freebsd dragonflybsd openbsd netbsd".split()', {
++        [ 'OS in "freebsd dragonflybsd openbsd netbsd bitrig".split()', {
+           'link_settings': {
+             'libraries': [ '-lkvm' ],
+           },
+         }],
+-        [ 'OS in "mac freebsd dragonflybsd openbsd netbsd".split()', {
++        [ 'OS in "mac freebsd dragonflybsd openbsd netbsd bitrig".split()', {
+           'sources': [ 'src/unix/kqueue.c' ],
+         }],
+         ['library=="shared_library"', {

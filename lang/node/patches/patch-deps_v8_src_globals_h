@@ -1,0 +1,11 @@
+--- deps/v8/src/globals.h.orig	Sun Jul 27 07:54:28 2014
++++ deps/v8/src/globals.h	Sun Jul 27 07:54:46 2014
+@@ -197,7 +197,7 @@ typedef byte* Address;
+ #endif
+ 
+ #if (defined(__APPLE__) && defined(__MACH__)) || \
+-    defined(__FreeBSD__) || defined(__OpenBSD__)
++    defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__Bitrig__)
+ #define USING_BSD_ABI
+ #endif
+ 

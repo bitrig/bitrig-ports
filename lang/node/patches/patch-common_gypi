@@ -1,11 +1,13 @@
 $OpenBSD: patch-common_gypi,v 1.5 2014/07/10 19:53:30 landry Exp $
 --- common.gypi.orig	Fri May  2 02:47:47 2014
-+++ common.gypi	Thu Jul 10 16:15:20 2014
-@@ -170,9 +170,12 @@
++++ common.gypi	Sat Jul 26 18:26:30 2014
+@@ -169,10 +169,13 @@
+           'BUILDING_UV_SHARED=1',
          ],
        }],
-       [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris"', {
+-      [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris"', {
 -        'cflags': [ '-Wall', '-Wextra', '-Wno-unused-parameter', '-pthread', ],
++      [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or OS=="solaris"', {
 +        'cflags': [ '-Wall', '-Wextra', '-Wno-unused-parameter', '-pthread', '-I${LOCALBASE}/include'],
          'cflags_cc': [ '-fno-rtti', '-fno-exceptions' ],
          'ldflags': [ '-pthread', '-rdynamic' ],

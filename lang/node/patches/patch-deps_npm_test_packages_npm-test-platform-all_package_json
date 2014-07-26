@@ -1,0 +1,9 @@
+--- deps/npm/test/packages/npm-test-platform-all/package.json.orig	Sat Jul 26 18:21:09 2014
++++ deps/npm/test/packages/npm-test-platform-all/package.json	Sat Jul 26 18:21:23 2014
+@@ -1,5 +1,5 @@
+ {"name":"npm-test-platform-all"
+ ,"version":"9.9.9-9"
+ ,"homepage":"http://www.zombo.com/"
+-,"os":["darwin","linux","win32","solaris","haiku","sunos","freebsd","openbsd","netbsd"]
++,"os":["darwin","linux","win32","solaris","haiku","sunos","freebsd","openbsd","netbsd","bitrig"]
+ ,"cpu":["arm","mips","ia32","x64","sparc"]}

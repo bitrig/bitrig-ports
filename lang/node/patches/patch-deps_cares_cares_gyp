@@ -1,0 +1,11 @@
+--- deps/cares/cares.gyp.orig	Fri May  2 02:47:47 2014
++++ deps/cares/cares.gyp	Sun Jul 27 18:04:33 2014
+@@ -140,7 +140,7 @@
+           'include_dirs': [ 'config/freebsd' ],
+           'sources': [ 'config/freebsd/ares_config.h' ]
+         }],
+-        [ 'OS=="openbsd"', {
++        [ 'OS=="openbsd" or OS=="bitrig"', {
+           'include_dirs': [ 'config/openbsd' ],
+           'sources': [ 'config/openbsd/ares_config.h' ]
+         }],

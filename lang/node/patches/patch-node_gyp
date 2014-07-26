@@ -1,11 +1,11 @@
 $OpenBSD: patch-node_gyp,v 1.2 2014/07/10 19:53:30 landry Exp $
 --- node.gyp.orig	Fri May  2 02:47:47 2014
-+++ node.gyp	Thu Jul 10 15:58:13 2014
++++ node.gyp	Sat Jul 26 18:23:59 2014
 @@ -144,6 +144,9 @@
        ],
  
        'conditions': [
-+        [ 'OS=="openbsd"', {
++        [ 'OS=="openbsd" or OS=="bitrig"', {
 +          'ldflags': [ '-rdynamic' ],
 +        }],
          [ 'node_use_openssl=="true"', {
@@ -16,7 +16,7 @@ $OpenBSD: patch-node_gyp,v 1.2 2014/07/10 19:53:30 landry Exp $
            ],
          }],
 -        [ 'OS=="freebsd"', {
-+        [ 'OS=="freebsd" or OS=="openbsd"', {
++        [ 'OS=="freebsd" or OS=="openbsd" or OS=="bitrig"', {
            'libraries': [
              '-lutil',
              '-lkvm',

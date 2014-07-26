@@ -1,0 +1,11 @@
+--- deps/v8/src/platform-posix.cc.orig	Sun Jul 27 07:53:54 2014
++++ deps/v8/src/platform-posix.cc	Sun Jul 27 07:54:05 2014
+@@ -27,7 +27,7 @@
+ 
+ // Platform specific code for POSIX goes here. This is not a platform on its
+ // own but contains the parts which are the same across POSIX platforms Linux,
+-// Mac OS, FreeBSD and OpenBSD.
++// Mac OS, FreeBSD, OpenBSD and Bitrig.
+ 
+ #include "platform-posix.h"
+ 

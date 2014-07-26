@@ -1,0 +1,12 @@
+--- deps/uv/test/test-fs-event.c.orig	Sat Jul 26 17:03:06 2014
++++ deps/uv/test/test-fs-event.c	Sat Jul 26 17:04:23 2014
+@@ -30,7 +30,8 @@
+      defined(__DragonFly__) ||                                                \
+      defined(__FreeBSD__) ||                                                  \
+      defined(__OpenBSD__) ||                                                  \
+-     defined(__NetBSD__)
++     defined(__NetBSD__) ||                                                   \
++     defined(__Bitrig__)
+ #  define HAVE_KQUEUE 1
+ # endif
+ #endif

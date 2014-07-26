@@ -1,0 +1,11 @@
+--- deps/v8/tools/testrunner/local/utils.py.orig	Sun Jul 27 07:41:29 2014
++++ deps/v8/tools/testrunner/local/utils.py	Sun Jul 27 07:42:04 2014
+@@ -74,6 +74,8 @@ def GuessOS():
+     return 'solaris'
+   elif system == 'NetBSD':
+     return 'netbsd'
++  elif system == 'Bitrig':
++    return 'bitrig'
+   else:
+     return None
+ 

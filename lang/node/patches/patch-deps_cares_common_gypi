@@ -1,0 +1,11 @@
+--- deps/cares/common.gypi.orig	Sun Jul 27 07:37:45 2014
++++ deps/cares/common.gypi	Sun Jul 27 07:37:54 2014
+@@ -137,7 +137,7 @@
+         ],
+       }],
+ 
+-      [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris"', {
++      [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or OS=="solaris"', {
+         'variables': {
+           'gcc_version%': '<!(python build/gcc_version.py)>)'
+         },

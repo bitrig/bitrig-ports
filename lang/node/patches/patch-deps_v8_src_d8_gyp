@@ -1,0 +1,11 @@
+--- deps/v8/src/d8.gyp.orig	Sun Jul 27 07:55:00 2014
++++ deps/v8/src/d8.gyp	Sun Jul 27 07:55:26 2014
+@@ -62,7 +62,7 @@
+               'sources': [ 'd8-readline.cc' ],
+             }],
+             ['(OS=="linux" or OS=="mac" or OS=="freebsd" or OS=="netbsd" \
+-               or OS=="openbsd" or OS=="solaris" or OS=="android")', {
++               or OS=="openbsd" or OS=="bitrig" or OS=="solaris" or OS=="android")', {
+               'sources': [ 'd8-posix.cc', ]
+             }],
+             [ 'OS=="win"', {

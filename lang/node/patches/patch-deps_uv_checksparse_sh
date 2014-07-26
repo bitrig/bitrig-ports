@@ -1,0 +1,16 @@
+--- deps/uv/checksparse.sh.orig	Sat Jul 26 16:58:49 2014
++++ deps/uv/checksparse.sh	Sat Jul 26 16:59:14 2014
+@@ -210,6 +210,13 @@ NetBSD)
+            src/unix/kqueue.c
+            src/unix/netbsd.c"
+   ;;
++Bitrig)
++  SPARSE_FLAGS="$SPARSE_FLAGS -D__Bitrig__=1"
++  SOURCES="$SOURCES
++           include/uv-private/uv-bsd.h
++           src/unix/kqueue.c
++           src/unix/openbsd.c"
++  ;;
+ OpenBSD)
+   SPARSE_FLAGS="$SPARSE_FLAGS -D__OpenBSD__=1"
+   SOURCES="$SOURCES

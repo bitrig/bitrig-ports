@@ -1,0 +1,25 @@
+--- configure.orig	Fri May  2 02:47:47 2014
++++ configure	Sat Jul 26 18:26:42 2014
+@@ -6,11 +6,12 @@ import re
+ import shlex
+ import subprocess
+ import sys
++import gyp
+ 
+ CC = os.environ.get('CC', 'cc')
+ 
+ root_dir = os.path.dirname(__file__)
+-sys.path.insert(0, os.path.join(root_dir, 'tools', 'gyp', 'pylib'))
++#sys.path.insert(0, os.path.join(root_dir, 'tools', 'gyp', 'pylib'))
+ from gyp.common import GetFlavor
+ 
+ # parse our options
+@@ -237,7 +238,7 @@ parser.add_option("--dest-os",
+     action="store",
+     dest="dest_os",
+     help="Operating system to build for. Valid values are: "
+-         "win, mac, solaris, freebsd, openbsd, linux")
++         "win, mac, solaris, freebsd, openbsd, bitrig, linux")
+ 
+ parser.add_option("--no-ifaddrs",
+     action="store_true",

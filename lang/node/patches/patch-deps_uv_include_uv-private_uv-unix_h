@@ -1,0 +1,12 @@
+--- deps/uv/include/uv-private/uv-unix.h.orig	Sat Jul 26 17:04:46 2014
++++ deps/uv/include/uv-private/uv-unix.h	Sat Jul 26 17:05:09 2014
+@@ -50,7 +50,8 @@
+ #elif defined(__DragonFly__)  || \
+       defined(__FreeBSD__)    || \
+       defined(__OpenBSD__)    || \
+-      defined(__NetBSD__)
++      defined(__NetBSD__)     || \
++      defined(__Bitrig__)
+ # include "uv-bsd.h"
+ #endif
+ 

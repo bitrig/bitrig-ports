@@ -1,0 +1,15 @@
+--- deps/uv/config-unix.mk.orig	Sat Jul 26 17:06:21 2014
++++ deps/uv/config-unix.mk	Sat Jul 26 17:08:21 2014
+@@ -133,6 +133,12 @@ OBJS += src/unix/openbsd.o
+ OBJS += src/unix/kqueue.o
+ endif
+ 
++ifeq (bitrig,$(PLATFORM))
++LDFLAGS+=-lkvm
++OBJS += src/unix/openbsd.o
++OBJS += src/unix/kqueue.o
++endif
++
+ ifneq (,$(findstring cygwin,$(PLATFORM)))
+ # We drop the --std=c89, it hides CLOCK_MONOTONIC on cygwin
+ CSTDFLAG = -D_GNU_SOURCE

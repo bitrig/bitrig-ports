@@ -1,0 +1,11 @@
+--- deps/uv/common.gypi.orig	Sat Jul 26 17:08:39 2014
++++ deps/uv/common.gypi	Sat Jul 26 17:09:03 2014
+@@ -130,7 +130,7 @@
+           }]
+         ]
+       }],
+-      [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris"', {
++      [ 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris" or OS=="bitrig"', {
+         'cflags': [ '-Wall' ],
+         'cflags_cc': [ '-fno-rtti', '-fno-exceptions' ],
+         'target_conditions': [
