@@ -11,8 +11,8 @@
 #	make show=MAINTAINER
 # in the specific port's directory.
 #
-# The ports@openbsd.org address is the `default' MAINTAINER (the generic
-# OpenBSD ports mailing-list).
+# The tech@lists.bitrig.org address is the `default' MAINTAINER (the generic
+# Bitrig tech mailing-list).
 
 # Enquiries as to the bsd.port.mk framework should usually be directed
 # to ports@openbsd.org.
@@ -462,7 +462,7 @@ _BAD_LICENSING = Yes
 .endif
 
 .if defined(_BAD_LICENSING)
-ERRORS += "Please notify the OpenBSD port maintainer:"
+ERRORS += "Please notify the Bitrig port maintainer:"
 ERRORS += "    ${MAINTAINER}"
 PERMIT_PACKAGE_CDROM = No
 PERMIT_PACKAGE_FTP = No
@@ -1309,7 +1309,7 @@ PATCH_CASES += *) \
 	${PATCH} ${PATCH_DIST_ARGS} < $$patchfile;;
 
 # Documentation
-MAINTAINER ?= The OpenBSD ports mailing-list <ports@openbsd.org>
+MAINTAINER ?= The Bitrig tech mailing-list <tech@lists.bitrig.org>
 .if empty(MAINTAINER)
 ERRORS += "Fatal: defining MAINTAINER to empty is an error"
 .endif
