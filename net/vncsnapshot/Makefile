@@ -21,6 +21,8 @@ WANTLIB += c++ c++abi pthread
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vncsnapshot/}
 
+MAKE_FLAGS=	CC="${CC}"	CXX="${CXX}"
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/vncsnapshot ${PREFIX}/bin
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/vncsnapshot
