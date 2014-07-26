@@ -3,9 +3,8 @@
 COMMENT=		Visual Tcl development environment
 
 DISTNAME=		vtcl-1.6.1a1
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 HOMEPAGE=		http://vtcl.sourceforge.net/
 

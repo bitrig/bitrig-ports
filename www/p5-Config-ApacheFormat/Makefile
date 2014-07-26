@@ -5,7 +5,7 @@ COMMENT=	parse apache-like config files
 MODULES=	cpan
 
 DISTNAME=	Config-ApacheFormat-1.2
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	www
 

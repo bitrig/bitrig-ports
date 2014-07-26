@@ -3,12 +3,11 @@
 COMMENT=		command-line FLAC player
 
 DISTNAME=		flac123-0.0.12
+REVISION=		0
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=flac-tools/}
 
 HOMEPAGE=		http://flac-tools.sourceforge.net/
-
-MAINTAINER=		Donovan Watteau <tsoomi@gmail.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

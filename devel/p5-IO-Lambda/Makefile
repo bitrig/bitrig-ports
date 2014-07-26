@@ -3,6 +3,7 @@
 COMMENT=	non-blocking I/O as lambda calculus
 
 DISTNAME =	IO-Lambda-1.23
+REVISION =	0
 CATEGORIES=	devel
 
 # perl

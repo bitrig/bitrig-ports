@@ -4,10 +4,8 @@ COMMENT=	modules to implement the irc protocol
 
 MODULES=	cpan
 DISTNAME=	Net-IRC-0.75
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

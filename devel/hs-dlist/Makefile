@@ -3,10 +3,8 @@
 COMMENT =		list-like type supporting O(1) append
 
 DISTNAME =		dlist-0.5
-REVISION =		5
+REVISION =		6
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

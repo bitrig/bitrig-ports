@@ -4,11 +4,9 @@ COMMENT =	make NEXT suck less
 
 MODULES =	cpan
 DISTNAME =	Class-C3-Adopt-NEXT-0.09
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

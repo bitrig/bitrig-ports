@@ -4,7 +4,7 @@ COMMENT=	trivial perl API for reading/writing XML
 
 MODULES=	cpan
 DISTNAME=	XML-Simple-2.18
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 RUN_DEPENDS=	textproc/p5-XML-Parser>=2 \

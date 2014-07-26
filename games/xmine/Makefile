@@ -4,10 +4,8 @@ COMMENT=	Athena port of xminesweeper
 
 DISTNAME=	xmine-1.0.3-Xaw
 PKGNAME=	xmine-1.0.3
-REVISION =	3
+REVISION =	4
 CATEGORIES=	games
-
-MAINTAINER=	Paul Janzen <pjanzen@openbsd.org>
 
 # License: BSD
 PERMIT_PACKAGE_CDROM=	Yes

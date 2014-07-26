@@ -2,12 +2,10 @@
 
 COMMENT =	zuma-like arkade game
 DISTNAME =	zaz-1.0.0
-REVISION =	1
+REVISION =	2
 CATEGORIES =	games
 
 HOMEPAGE =	http://zaz.sourceforge.net/
-
-MAINTAINER =	Matthias Kilian <kili@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =		Yes

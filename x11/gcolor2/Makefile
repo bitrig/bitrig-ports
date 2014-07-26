@@ -3,12 +3,10 @@
 COMMENT =		color selector in GTK2
 
 DISTNAME =		gcolor2-0.4
-REVISION =		3
+REVISION =		4
 CATEGORIES =		x11
 
 HOMEPAGE =		http://gcolor2.sourceforge.net/
-
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 #GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

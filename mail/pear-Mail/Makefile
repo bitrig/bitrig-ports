@@ -3,7 +3,7 @@
 COMMENT=	class that provides multiple interfaces for sending email
 
 DISTNAME=	Mail-1.2.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=	mail
 EPOCH=		0
 

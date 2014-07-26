@@ -3,11 +3,10 @@
 COMMENT =	protects rack apps against typical web attacks
 
 DISTNAME =	rack-protection-1.5.3
+REVISION =	0
 CATEGORIES =	www
 
 HOMEPAGE =	https://github.com/rkh/rack-protection
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =		Yes

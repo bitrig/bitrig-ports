@@ -3,11 +3,10 @@
 COMMENT =		tools to build Gtk2Hs
 
 DISTNAME =		gtk2hs-buildtools-0.12.4
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		http://www.haskell.org/gtk2hs/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # GPL2
 PERMIT_PACKAGE_CDROM =	Yes

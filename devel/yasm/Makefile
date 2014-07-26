@@ -3,10 +3,9 @@
 COMMENT=	complete rewrite of the NASM assembler
 
 DISTNAME=	yasm-1.2.0
+REVISION=	0
 CATEGORIES=	devel lang
 MASTER_SITES=	http://www.tortall.net/projects/yasm/releases/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 HOMEPAGE=	http://yasm.tortall.net/
 

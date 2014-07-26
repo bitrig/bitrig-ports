@@ -6,10 +6,8 @@ COMMENT=	convert Big5 encoded files to PDF
 
 DISTNAME=	bg5pdf-1.0.0
 PKGNAME=	zh-${DISTNAME}
-REVISION=	11
+REVISION=	12
 CATEGORIES=	fonts chinese print
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL + Aladdin license
 PERMIT_PACKAGE_CDROM=	No

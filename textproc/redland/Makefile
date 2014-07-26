@@ -12,8 +12,8 @@ PKGNAME-main=		redland-$V
 PKGNAME-mysql=		redland-mysql-$V
 PKGNAME-pgsql=		redland-pgsql-$V
 CATEGORIES=		textproc
-REVISION=		1
-REVISION-pgsql=		2
+REVISION=		2
+REVISION-pgsql=		3
 
 SHARED_LIBS +=	rdf                  1.0      # 0.0
 

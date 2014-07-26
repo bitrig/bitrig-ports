@@ -2,7 +2,7 @@
 
 COMMENT=	library for packing and unpacking binary data
 DISTNAME=	luapack-20061124
-REVISION =	3
+REVISION =	4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_BACKUP}
 

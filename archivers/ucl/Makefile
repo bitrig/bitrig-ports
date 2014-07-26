@@ -3,13 +3,11 @@
 COMMENT=	portable lossless data compression library
 
 DISTNAME=	ucl-1.03
-REVISION=	1
+REVISION=	2
 CATEGORIES=	archivers devel
 SHARED_LIBS +=	ucl                  1.0      # .1.0
 
 HOMEPAGE=	http://www.oberhumer.com/opensource/ucl
-
-MAINTAINER=	Wilbern Cobb <wcobb@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

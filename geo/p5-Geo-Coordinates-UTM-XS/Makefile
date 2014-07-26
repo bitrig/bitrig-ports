@@ -4,7 +4,7 @@ COMMENT=	C/XS reimplementation of Geo::Coordinates::UTM
 MODULES=	cpan
 SHARED_ONLY=	Yes
 DISTNAME=	Geo-Coordinates-UTM-XS-0.04
-REVISION=	3
+REVISION=	4
 CATEGORIES=	geo
 USE_GROFF =	Yes
 

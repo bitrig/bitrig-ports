@@ -5,10 +5,8 @@ COMMENT=	extension for generating GUIDs/UUIDs
 
 MODULES=	cpan
 DISTNAME=	Data-UUID-1.217
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

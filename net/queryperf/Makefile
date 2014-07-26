@@ -5,6 +5,7 @@ COMMENT =	DNS query performance tester from BIND 9
 V =		9.9.3-P2
 DISTNAME =	bind-$V
 PKGNAME =	queryperf-${V:S/-P/pl/}
+REVISION =	0
 CATEGORIES =	net benchmarks
 
 MASTER_SITES +=	${MASTER_SITE_ISC:=bind9/$V/}

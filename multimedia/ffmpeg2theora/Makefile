@@ -4,7 +4,7 @@ COMMENT=	re-encode many media file formats to Ogg Theora
 
 N=		ffmpeg2theora
 DISTNAME=	${N}-0.29
-REVISION=	2
+REVISION=	3
 CATEGORIES=	multimedia
 EXTRACT_SUFX=	.tar.bz2
 

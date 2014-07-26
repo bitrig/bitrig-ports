@@ -5,11 +5,9 @@ SHARED_ONLY=		Yes
 COMMENT=		SQLite2 drivers for the Perl DBI
 
 DISTNAME=		DBD-SQLite2-0.33
-REVISION=		5
+REVISION=		6
 CATEGORIES=		databases
 MODULES=		cpan
-
-MAINTAINER=		Robert Nagy <robert@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

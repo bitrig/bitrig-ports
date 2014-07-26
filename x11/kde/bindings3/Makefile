@@ -5,7 +5,7 @@ CATEGORIES =		x11 x11/kde devel
 VERSION =		3.5.10
 DISTNAME =		kdebindings-${VERSION}
 MODKDE_VERSION =	3.5.8
-REVISION =		25
+REVISION =		26
 
 SHARED_LIBS +=	kjsembed             2.0      # .1.0
 SHARED_LIBS +=	smokeqt              4.0      # .3.2

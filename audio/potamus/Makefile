@@ -2,11 +2,10 @@
 
 COMMENT =	lightweight audio player with a simple interface
 DISTNAME =	potamus-15
+REVISION =	0
 CATEGORIES =	audio x11
 
 HOMEPAGE =	http://offog.org/code/potamus/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

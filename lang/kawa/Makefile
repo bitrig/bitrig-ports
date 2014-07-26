@@ -5,7 +5,7 @@ BROKEN-i386= java
 COMMENT=		Scheme and language framework for the Java platform
 
 DISTNAME=		kawa-1.13
-REVISION=		2
+REVISION=		3
 CATEGORIES=		lang java
 
 HOMEPAGE=		https://www.gnu.org/software/kawa/

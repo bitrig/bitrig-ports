@@ -12,7 +12,7 @@ CATEGORIES=		textproc
 MASTER_SITES=		http://gd.tuwien.ac.at/pub/libxml/ \
 			ftp://xmlsoft.org/libxml/
 
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://xmlsoft.org/
 

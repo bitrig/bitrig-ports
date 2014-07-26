@@ -3,11 +3,10 @@
 COMMENT=		Advanced Intrusion Detection Environment
 
 DISTNAME=		aide-0.15.1
+REVISION=		0
 CATEGORIES=		security
 
 HOMEPAGE=		http://sourceforge.net/projects/aide
-
-MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

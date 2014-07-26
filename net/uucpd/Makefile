@@ -3,6 +3,7 @@
 COMMENT =		UUCP inetd program
 
 DISTNAME =		uucpd-1.0
+REVISION =		0
 
 CATEGORIES =		net mail news
 

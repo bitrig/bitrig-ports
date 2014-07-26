@@ -5,7 +5,7 @@ COMMENT=	Jonathan's Own Version of Emacs
 V=		4.16.0.73
 DISTNAME=	jove${V}
 PKGNAME=	jove-${V}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	editors
 
 # BSD

@@ -5,6 +5,7 @@ COMMENT=		pluggable command-line frontend
 MODPY_EGG_VERSION=	1.7.5
 DISTNAME=		PasteScript-${MODPY_EGG_VERSION}
 PKGNAME=		py-paste-script-${MODPY_EGG_VERSION}
+REVISION=		0
 
 CATEGORIES=		www
 

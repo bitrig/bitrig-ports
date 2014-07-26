@@ -2,7 +2,7 @@
 
 COMMENT=	steganography detection tool
 DISTNAME=	stegdetect-0.6
-REVISION=	4
+REVISION=	5
 CATEGORIES=	security graphics
 MASTER_SITES=	${HOMEPAGE}
 

@@ -4,7 +4,7 @@ CATEGORIES =	net
 COMMENT =	IRC client for KDE 4
 V =		1.5
 DISTNAME =	konversation-$V
-MAINTAINER =	KDE porting team <openbsd-kde@googlegroups.com>
+REVISION =	0
 HOMEPAGE =	http://konversation.kde.org/
 
 WANTLIB =  c m pthread

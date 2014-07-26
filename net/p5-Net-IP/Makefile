@@ -4,9 +4,8 @@ COMMENT=	perl module for IPv4/IPv6 address parsing
 
 MODULES=	cpan
 DISTNAME=	Net-IP-1.26
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

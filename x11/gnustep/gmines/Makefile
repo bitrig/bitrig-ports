@@ -3,7 +3,7 @@
 COMMENT =	GNUstep minesweeper game
 
 DISTNAME =	GMines-0.2
-REVISION =	4
+REVISION =	5
 CATEGORIES =	games
 
 HOMEPAGE =	http://gap.nongnu.org/gmines/

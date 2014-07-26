@@ -2,6 +2,7 @@
 
 COMMENT=	enhanced clone of Id Software's Doom game; multiplayer
 DISTNAME=	prboom-2.5.0
+REVISION=	0
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=prboom/}
 

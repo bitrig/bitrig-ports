@@ -3,7 +3,7 @@
 COMMENT=	graphical MIB browser
 
 DISTNAME=	mbrowse-0.4.3
-REVISION=		0
+REVISION=		1
 CATEGORIES=	net
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mbrowse/}

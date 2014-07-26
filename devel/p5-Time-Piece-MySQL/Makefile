@@ -4,7 +4,7 @@ COMMENT=	MySQL representations for Time::Piece objects
 
 MODULES=	cpan
 DISTNAME=	Time-Piece-MySQL-0.06
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

@@ -5,14 +5,13 @@ COMMENT =		c unit testing framework
 VER =			2.1-2
 DISTNAME =		CUnit-${VER}
 PKGNAME =		cunit-${VER:S/-/./}
+REVISION =		0
 
 SHARED_LIBS =		cunit	1.0
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://cunit.sourceforge.net/
-
-MAINTAINER =		Markus Bergkvist <markus.bergkvist@telia.com>
 
 # LGPL
 PERMIT_PACKAGE_CDROM =	Yes

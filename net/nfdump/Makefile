@@ -4,15 +4,13 @@ COMMENT-main =		tools to collect and process netflow data
 COMMENT-nfprofile =	filters data from nfdump according to profiles
 
 V =			1.6.12
-REVISION =		0
+REVISION =		1
 DISTNAME =		nfdump-$V
 FULLPKGNAME-main =	nfdump-$V
 FULLPKGNAME-nfprofile =	nfprofile-$V
 
 CATEGORIES =		net
 HOMEPAGE =		http://nfdump.sourceforge.net/
-
-MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

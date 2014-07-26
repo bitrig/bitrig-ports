@@ -3,6 +3,7 @@
 COMMENT=		filter for removing (La)TeX markup
 
 DISTNAME=		l2a-1.2
+REVISION=		0
 CATEGORIES=     	print
 
 PERMIT_PACKAGE_CDROM=	Yes

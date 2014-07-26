@@ -5,6 +5,7 @@ COMMENT = 	parse and examine a perl distribution MANIFEST file
 MODULES =	cpan
 
 DISTNAME =	Module-Manifest-1.08
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

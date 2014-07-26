@@ -3,15 +3,13 @@
 COMMENT=	software to turn RTL2832U into an SDR
 
 DISTNAME=	rtl-sdr-0.20130412
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS=	rtlsdr 0.0
 
 CATEGORIES=	comms
 
 HOMEPAGE=	http://sdr.osmocom.org/trac/wiki/rtl-sdr
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

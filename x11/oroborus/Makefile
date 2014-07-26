@@ -4,12 +4,11 @@ COMMENT=	minimalistic X11 window manager
 
 CATEGORIES=	x11
 DISTNAME=	oroborus-2.0.12
+REVISION=	0
 DISTFILES=	oroborus_2.0.12-1.tar.gz
 MASTER_SITES=	http://www.mguillaud.net/ports/oroborus/ \
 		http://matt.peterson.org/FreeBSD/ports/
 HOMEPAGE=	http://www.oroborus.org/
-
-MAINTAINER=	Maxime Guillaud <bsd-ports@mguillaud.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

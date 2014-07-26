@@ -3,7 +3,7 @@
 COMMENT=		browser for wap/wml
 
 DISTNAME=		wApua-0.06
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www
 
 HOMEPAGE=		http://fsinfo.noone.org/~abe/wApua/

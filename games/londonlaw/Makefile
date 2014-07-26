@@ -4,7 +4,7 @@ COMMENT=		online multiplayer version of the Scotland Yard game
 
 MODPY_EGG_VERSION=	0.2.1
 DISTNAME=		londonlaw-${MODPY_EGG_VERSION}
-REVISION =		6
+REVISION =		7
 CATEGORIES=		games
 
 HOMEPAGE=		http://pessimization.com/software/londonlaw/

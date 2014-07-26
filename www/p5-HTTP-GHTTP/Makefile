@@ -6,7 +6,7 @@ COMMENT=	perl interface to the GNOME GHTTP library
 
 MODULES=	cpan
 DISTNAME=	HTTP-GHTTP-1.07
-REVISION=	5
+REVISION=	6
 CATEGORIES=	www
 
 # GPL

@@ -4,14 +4,13 @@ COMMENT =		library for processing panoramic images
 DISTNAME =		libpano13-2.9.18
 # the following are useful for rc/betas and don't hurt otherwise:
 PKGNAME =		${DISTNAME:S/_//}
+REVISION =		0
 WRKDIST =		${WRKDIR}/${DISTNAME:C/_.*//}
 
 SHARED_LIBS +=		pano13               2.1
 
 CATEGORIES =		graphics
 HOMEPAGE =		http://panotools.sourceforge.net/
-
-MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

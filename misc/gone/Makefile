@@ -3,11 +3,10 @@
 COMMENT=	terminal locking utility
 
 DISTNAME=	gone-1.3.5
+REVISION=	0
 CATEGORIES=	misc 
 
 HOMEPAGE=	http://www.marcuscom.com/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

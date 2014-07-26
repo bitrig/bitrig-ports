@@ -3,10 +3,9 @@
 COMMENT=	Precision Time Protocol daemon
 
 DISTNAME=	ptpd-1.0.0
+REVISION=	0
 CATEGORIES=	net
 HOMEPAGE=	http://ptpd.sourceforge.net/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes

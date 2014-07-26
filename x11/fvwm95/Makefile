@@ -4,7 +4,7 @@ COMMENT=	win95-like window manager based on fvwm 2.x
 
 DISTNAME=	fvwm95-2.0.43a-Autoconf
 PKGNAME=	fvwm95-2.0.43a
-REVISION=	2
+REVISION=	3
 CATEGORIES=     x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fvwm95/} \
 		ftp://ftp.plig.org/pub/fvwm95/ \

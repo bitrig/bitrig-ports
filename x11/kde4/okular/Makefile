@@ -2,6 +2,7 @@
 
 COMMENT =	KDE document viewer
 DISTNAME =	okular-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	okularcore		51.0	# 1.7
 

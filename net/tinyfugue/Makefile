@@ -3,13 +3,11 @@
 COMMENT=	programmable MUD client, with macro support and more
 
 PKGNAME=	tinyfugue-4.0s1
-REVISION=	4
+REVISION=	5
 DISTNAME=	tf-40s1
 CATEGORIES=	net games
 
 HOMEPAGE=	http://tinyfugue.sourceforge.net/
-
-MAINTAINER=	Markus Lude <markus.lude@gmx.de>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

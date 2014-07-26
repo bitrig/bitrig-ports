@@ -5,13 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	jabber client written in pygtk
 DISTNAME=	gajim-0.15.4
 CATEGORIES=	net x11
-REVISION=	0
+REVISION=	1
 
 MASTER_SITES=	${HOMEPAGE}/downloads/0.15/
 
 HOMEPAGE=	http://www.gajim.org/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv3 only
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT=	less + zcat + ISO-2022 - a pager similar to more and pg
 
 DISTNAME=	less-332
 PKGNAME=	ja-less-3.32pl2.48
-REVISION=	0
+REVISION=	1
 CATEGORIES=	japanese
 MASTER_SITES=	${MASTER_SITE_GNU:=less/}
 HOMEPAGE=	http://www.pobox.com/~jam/less/
@@ -18,8 +18,6 @@ PATCHFILES=	less-332-iso242.patch.gz:0 \
 		less-332-iso247-248.patch.gz:0
 
 PATCH_DIST_STRIP=	-p1
-
-MAINTAINER=Marc Espie <espie@openbsd.org>
 
 #		BSD
 PERMIT_PACKAGE_CDROM=	Yes

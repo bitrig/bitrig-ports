@@ -2,6 +2,7 @@
 
 COMMENT =	KDE collection of wallpapers
 DISTNAME =	kde-wallpapers-${MODKDE4_VERSION}
+REVISION =	0
 
 MODKDE4_RESOURCES =	Yes
 

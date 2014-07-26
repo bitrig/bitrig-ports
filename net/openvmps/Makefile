@@ -5,11 +5,10 @@ COMMENT=	free implementation of Cisco VMPS
 V=		1.4.05
 DISTNAME=	vmpsd-${V}
 PKGNAME=	openvmps-${V}
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE=	http://vmps.sourceforge.net/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

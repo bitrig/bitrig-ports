@@ -25,8 +25,6 @@ CATEGORIES=	net
 
 HOMEPAGE=	https://www.monitoring-plugins.org/
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 

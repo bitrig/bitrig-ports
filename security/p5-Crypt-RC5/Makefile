@@ -4,6 +4,7 @@ COMMENT =	implementation of the RC5 encryption algorithm
 
 MODULES =	cpan
 DISTNAME =	Crypt-RC5-2.00
+REVISION =	0
 CATEGORIES =	security
 
 # Perl

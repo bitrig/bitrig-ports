@@ -6,9 +6,9 @@ COMMENT-devel=		GPStk development libraries and headers
 V=			1.5
 DISTNAME=		gpstk${V}
 PKGNAME-main=		gpstk-${V}
-REVISION-main=		5
+REVISION-main=		6
 PKGNAME-devel=		gpstk-devel-${V}
-REVISION-devel=		6
+REVISION-devel=		7
 CATEGORIES=		geo devel
 SHARED_LIBS=		base 15.0 \
 			geomatics 15.0 \

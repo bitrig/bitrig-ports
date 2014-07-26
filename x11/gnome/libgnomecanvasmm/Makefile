@@ -7,7 +7,7 @@ COMMENT=	C++ interface to the graphics library for GNOME
 GNOME_PROJECT=	libgnomecanvasmm
 GNOME_VERSION=	2.26.0
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	11
+REVISION=	12
 
 SHARED_LIBS +=  gnomecanvasmm-2.6         1.0 # 1.6
 

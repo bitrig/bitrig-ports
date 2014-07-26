@@ -3,6 +3,7 @@
 COMMENT =		obtain expiration date of SSL certificate
 
 DISTNAME =		Net-SSL-ExpireDate-1.10
+REVISION =		0
 
 CATEGORIES =		security
 

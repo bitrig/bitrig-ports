@@ -3,6 +3,7 @@
 COMMENT=		execute a command on many hosts in parallel
 
 DISTNAME=		shmux-1.0.2
+REVISION=		0
 CATEGORIES=		sysutils
 HOMEPAGE=		http://web.taranis.org/shmux/
 MASTER_SITES=		${HOMEPAGE}dist/

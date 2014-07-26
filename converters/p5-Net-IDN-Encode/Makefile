@@ -6,7 +6,7 @@ COMMENT=	Internationalizing Domain Names in Applications
 
 DISTNAME=	Net-IDN-Encode-1.102
 CATEGORIES=	net converters
-REVISION=	0
+REVISION=	1
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

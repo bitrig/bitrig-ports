@@ -3,12 +3,11 @@
 COMMENT=	lists of the country, language and currency iso names
 
 DISTNAME=	iso-codes-3.52
+REVISION=	0
 
 CATEGORIES=	devel
 
 HOMEPAGE=	http://alioth.debian.org/projects/pkg-isocodes/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

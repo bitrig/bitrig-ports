@@ -8,8 +8,6 @@ CATEGORIES ?=	lang
 
 HOMEPAGE ?=	http://www.ruby-lang.org/
 
-MAINTAINER ?=	Jeremy Evans <jeremy@openbsd.org>
-
 # GPL/Artistic/BSD/Public Domain/Beer-Ware
 PERMIT_PACKAGE_CDROM ?= Yes
 PERMIT_PACKAGE_FTP ?= Yes

@@ -57,12 +57,12 @@ EXTRACT_ONLY=	${DISTNAME}.tar.gz \
 SUBST_VARS+=	VERSION
 
 PKGNAME-main=	${DISTNAME}
-REVISION-main=	8
+REVISION-main=	9
 MULTI_PACKAGES=	-main -dutch -french -german -swedish -russian -portuguese \
 		-slovak -spanish
 .for i in ${MULTI_PACKAGES}
 PKGNAME$i?=	ispell$i-${VERSION}
-REVISION$i?=	6
+REVISION$i?=	7
 .endfor
 
 # ispell: BSD-like

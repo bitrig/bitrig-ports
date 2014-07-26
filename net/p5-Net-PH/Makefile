@@ -3,11 +3,9 @@
 COMMENT=	Perl interface to the PH protocol
 
 DISTNAME=	Net-PH-2.21
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 MODULES=	cpan
-
-MAINTAINER=	Vijay Ramesh <vramesh2@uiuc.edu>
 
 # Perl License
 PERMIT_PACKAGE_CDROM=	Yes

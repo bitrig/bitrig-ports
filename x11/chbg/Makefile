@@ -3,7 +3,7 @@
 COMMENT=		Desktop wallpaper manager and X11 screensaver
 
 DISTNAME=		chbg-2.0.1
-REVISION=		4
+REVISION=		5
 
 CATEGORIES=		x11
 

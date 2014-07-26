@@ -3,11 +3,10 @@
 COMMENT =		mid-level PostgreSQL client library
 
 DISTNAME =		postgresql-simple-0.4.0.2
+REVISION =		0
 CATEGORIES =		databases
 
 HOMEPAGE =		https://github.com/lpsmith/postgresql-simple
-
-MAINTAINER =		David Schaefer <dawedawe@gmx.de>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

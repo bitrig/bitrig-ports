@@ -3,12 +3,10 @@
 COMMENT=		simple tcp re-engineering tool
 
 DISTNAME=		tcpreen-1.4.4
-REVISION=		2
+REVISION=		3
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.remlab.net/tcpreen/
-
-MAINTAINER=		Nigel Taylor <nigel@openbsd.org>
 
 MASTER_SITES=		http://www.remlab.net/files/tcpreen/stable/
 

@@ -7,7 +7,7 @@ COMMENT=	Python Cryptographic Toolkit
 MODPY_EGG_VERSION= 0.9
 DISTNAME=	cryptkit-${MODPY_EGG_VERSION}
 PKGNAME=	py-${DISTNAME}
-REVISION=	8
+REVISION=	9
 CATEGORIES=    	security devel
 
 HOMEPAGE=	http://sourceforge.net/projects/cryptkit/

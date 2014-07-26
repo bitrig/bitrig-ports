@@ -3,11 +3,10 @@
 COMMENT =		high level firewall language
 
 DISTNAME =		hlfl-0.60.1
+REVISION =		0
 CATEGORIES =   		security lang
 
 HOMEPAGE =		http://www.hlfl.org/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

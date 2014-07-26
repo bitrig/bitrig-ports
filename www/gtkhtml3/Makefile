@@ -14,15 +14,12 @@ EXTRACT_SUFX=		.tar.bz2
 
 PKGNAME=		gtkhtml3-${VERSION}
 
-REVISION=		9
+REVISION=		10
 
 SHARED_LIBS +=  gtkhtml-3.14         4.0      # 20.1
 SHARED_LIBS +=  gtkhtml-editor-3.14  0.0      # unknown
 
 CATEGORIES=    		www
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2/LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,10 +3,8 @@
 COMMENT=	interface to CDDB and freedb servers
 
 DISTNAME=	CDDB-1.220
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

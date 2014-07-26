@@ -4,7 +4,7 @@ COMMENT =	digital photo organizer
 
 GNOME_VERSION =	0.18.1
 GNOME_PROJECT =	shotwell
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	graphics
 

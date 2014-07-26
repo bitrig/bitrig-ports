@@ -4,11 +4,9 @@ COMMENT=	generic playlist manager for UNIX
 
 DISTNAME=	xhippo-3.5
 CATEGORIES=	audio
-REVISION =	2
+REVISION =	3
 
 HOMEPAGE=	https://www.gnu.org/software/xhippo/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=  Yes

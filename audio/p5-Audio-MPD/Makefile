@@ -2,10 +2,8 @@
 
 COMMENT=		module for communicating with MPD servers
 DISTNAME=		Audio-MPD-1.110560
-REVISION=		2
+REVISION=		3
 CATEGORIES=		audio
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

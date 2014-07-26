@@ -6,7 +6,7 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	Email-LocalDelivery-0.217
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 
 # perl

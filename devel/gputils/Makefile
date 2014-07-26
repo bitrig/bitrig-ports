@@ -3,12 +3,11 @@
 COMMENT =		GNU PIC assembler and utilities
 
 VERSION =		1.2.0
+REVISION =		0
 DISTNAME =		gputils-${VERSION}
 CATEGORIES =		devel
 
 HOMEPAGE =		http://gputils.sourceforge.net/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

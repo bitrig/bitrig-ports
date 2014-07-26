@@ -4,6 +4,7 @@ COMMENT=	extension for UPnP
 
 MODULES=	cpan
 DISTNAME=	Net-UPnP-1.4.2
+REVISION=	0
 CATEGORIES=	net
 USE_GROFF =	Yes
 

@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT =	image extension for Tcl/Tk
 
 V =		1.4
-REVISION =	1
+REVISION =	2
 DISTNAME =	tkimg$V
 PKGNAME =	tkimg-$V
 SHLIB_VERSION =	0.0
@@ -20,8 +20,6 @@ SHARED_LIBS +=	${_lib} ${SHLIB_VERSION}
 CATEGORIES =	graphics
 
 HOMEPAGE = 	http://tkimg.sourceforge.net/
-
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =		Yes

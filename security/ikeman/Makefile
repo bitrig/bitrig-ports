@@ -2,13 +2,11 @@
 
 COMMENT =		interactive PKI manager for isakmpd(8) or iked(8)
 DISTNAME =		ikeman-0.2
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		security
 
 HOMEPAGE =		http://storkhole.cz/software/ikeman/
-
-MAINTAINER =		Martin Pelikan <martin.pelikan@gmail.com>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

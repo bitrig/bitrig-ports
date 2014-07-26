@@ -7,9 +7,7 @@ COMMENT=	light-weight system monitor
 DISTNAME=	conky-1.9.0
 CATEGORIES=	sysutils
 HOMEPAGE=	http://conky.sourceforge.net/
-REVISION=	1
-
-MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
+REVISION=	2
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=conky/}
 

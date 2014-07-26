@@ -3,6 +3,7 @@
 COMMENT =		Tkabber plugins
 
 DISTNAME =		tkabber-plugins-${VERSION}
+REVISION =		0
 
 RUN_DEPENDS =		net/tkabber/base
 

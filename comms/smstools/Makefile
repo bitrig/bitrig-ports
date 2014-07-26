@@ -3,13 +3,11 @@
 COMMENT =	gateway to send and receive SMS through GSM mobile phones
 
 DISTNAME =	smstools3-3.1.15
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	comms
 
 HOMEPAGE =	http://smstools3.kekekasvi.com/
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

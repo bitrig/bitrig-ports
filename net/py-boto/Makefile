@@ -5,12 +5,11 @@ COMMENT =	python interface to amazon web services
 MODPY_EGG_VERSION = 2.28.0
 DISTNAME =	boto-${MODPY_EGG_VERSION}
 PKGNAME = 	py-${DISTNAME}
+REVISION = 	0
 CATEGORIES =	net
 
 HOMEPAGE =	https://github.com/boto/boto
 MASTER_SITES =	${MASTER_SITE_PYPI:=b/boto/}
-
-MAINTAINER =	Jim Razmus II <jim@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

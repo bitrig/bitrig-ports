@@ -12,15 +12,13 @@ CFLAGS += -march=i586 -fomit-frame-pointer
 COMMENT=	virtual lighttable and darkroom for photographers
 DISTNAME=	darktable-1.2.3
 EXTRACT_SUFX=	.tar.xz
-REVISION=	2
+REVISION=	3
 
 SHARED_ONLY=	Yes
 
 CATEGORIES=	graphics x11
 
 HOMEPAGE=	http://darktable.sourceforge.net/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

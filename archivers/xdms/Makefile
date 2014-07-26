@@ -2,12 +2,11 @@
 
 COMMENT =		Amiga DMS unpacker
 DISTNAME =		xdms-1.3.2
+REVISION =		0
 EXTRACT_SUFX =		.tar.bz2
 CATEGORIES =		archivers emulators
 
 HOMEPAGE =		http://zakalwe.fi/~shd/foss/xdms/
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # public domain
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,10 +4,8 @@ COMMENT=	load modules and create objects on demand
 
 MODULES=	cpan
 DISTNAME=	Class-Loader-2.03
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

@@ -4,7 +4,7 @@ COMMENT=	OpenBSD improved and secured version of Apache 1.3
 
 DISTNAME=	apache-httpd-openbsd-1.3.20140502
 EPOCH=		0
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	www
 

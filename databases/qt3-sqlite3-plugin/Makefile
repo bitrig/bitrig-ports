@@ -10,7 +10,7 @@ MASTER_SITES=	http://kde-apps.org/CONTENT/content-files/
 V=		0.2
 DISTNAME=	23011-qt-sqlite3-$V
 PKGNAME=	qt3-sqlite3-$V
-REVISION=	6
+REVISION=	7
 
 WRKDIST=	${WRKDIR}/qt-sqlite3-${V}
 

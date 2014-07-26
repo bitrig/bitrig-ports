@@ -5,6 +5,7 @@ COMMENT=		Git object database
 MODPY_EGG_VERSION=	0.5.4
 DISTNAME=		gitdb-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
+REVISION=		0
 CATEGORIES=		devel
 
 # BSD

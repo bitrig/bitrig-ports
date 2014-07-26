@@ -6,6 +6,7 @@ COMMENT=	Apache2 Zeroconf module
 
 DISTNAME=	mod_dnssd-0.6
 PKGNAME=	ap2-${DISTNAME}
+REVISION=	0
 
 CATEGORIES=	www net
 

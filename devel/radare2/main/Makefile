@@ -3,6 +3,7 @@
 COMMENT =		reverse engineers disassembler and debugger
 
 DISTNAME =		radare2-${V}
+REVISION =		0
 
 # In radare, all libs have the same version
 LIBV =			1.0	# 0.8.8

@@ -6,12 +6,10 @@ BROKEN-hppa =	internal compiler error: internal consistency failure
 VERSION =	2.0.4
 DISTNAME =	sphinx-${VERSION}-release
 PKGNAME =	sphinx-${VERSION}
-REVISION =	2
+REVISION =	3
 CATEGORIES =	textproc
 
 HOMEPAGE =	http://www.sphinxsearch.com/
-
-MAINTAINER =	Rama McIntosh <face00@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

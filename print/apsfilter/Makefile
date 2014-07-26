@@ -3,7 +3,7 @@
 COMMENT=		filter to print a wide range of file formats
 
 DISTNAME=		apsfilter-7.2.8
-REVISION=		5
+REVISION=		6
 CATEGORIES=		print
 
 HOMEPAGE=		http://www.apsfilter.org/

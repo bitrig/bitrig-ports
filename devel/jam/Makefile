@@ -3,12 +3,10 @@
 COMMENT=		build utility like make
 
 DISTNAME=		jam-2.5
-REVISION =		2
+REVISION =		3
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.perforce.com/jam/jam.html
-
-MAINTAINER=		Jonathan Auer <jda@auerfamily.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c

@@ -3,6 +3,7 @@
 COMMENT =	browse LDAP server with a shell-like CLI
 
 DISTNAME =	shelldap-0.5
+REVISION =	0
 EPOCH =	0
 CATEGORIES =	sysutils
 

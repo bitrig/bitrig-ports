@@ -3,10 +3,8 @@
 COMMENT =		shell-/perl- like (systems) programming in Haskell
 
 DISTNAME =		shellish-0.1.4
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

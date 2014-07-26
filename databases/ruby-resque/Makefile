@@ -3,7 +3,7 @@
 COMMENT=		Redis-backed library to create jobs and place them on queues
 
 DISTNAME=		resque-1.23.0
-REVISION =		0
+REVISION =		1
 CATEGORIES=		databases www
 
 HOMEPAGE=		https://github.com/defunkt/resque

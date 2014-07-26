@@ -4,10 +4,8 @@ COMMENT=	extensions to Class::DBI for MySQL
 
 MODULES=	cpan
 DISTNAME=	Class-DBI-mysql-1.00
-REVISION=	2
+REVISION=	3
 CATEGORIES=	databases
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

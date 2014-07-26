@@ -4,9 +4,8 @@ COMMENT=	visitor-style traversal of Perl data structures
 
 MODULES=	cpan
 DISTNAME=	Data-Visitor-0.27
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

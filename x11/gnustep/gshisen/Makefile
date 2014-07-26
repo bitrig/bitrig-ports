@@ -3,7 +3,7 @@
 COMMENT=	little board game
 
 DISTNAME=	GShisen-1.3.0
-REVISION =	5
+REVISION =	6
 CATEGORIES=	games
 
 HOMEPAGE=	http://gap.nongnu.org/gshisen/

@@ -8,21 +8,19 @@ COMMENT-sqlite3 =	sqlite3 driver for libdbi
 COMMENT-freetds =	freetds driver for libdbi
 DISTNAME =		libdbi-drivers-$V
 PKGNAME-main =		libdbi-drivers-mysql-${V:S/-/./}
-REVISION-main =		3
+REVISION-main =		4
 PKGNAME-pgsql =		libdbi-drivers-pgsql-${V:S/-/./}
-REVISION-pgsql =	3
+REVISION-pgsql =	4
 PKGNAME-sqlite =	libdbi-drivers-sqlite-${V:S/-/./}
-REVISION-sqlite =	0
+REVISION-sqlite =	1
 PKGNAME-sqlite3 =	libdbi-drivers-sqlite3-${V:S/-/./}
-REVISION-sqlite3 =	2
+REVISION-sqlite3 =	3
 PKGNAME-freetds =	libdbi-drivers-freetds-${V:S/-/./}
-REVISION-freetds =	5
+REVISION-freetds =	6
 CATEGORIES =		databases
 
 HOMEPAGE =		http://libdbi-drivers.sourceforge.net/
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=libdbi-drivers/}
-
-MAINTAINER =		Michael Erdely <merdely@openbsd.org>
 
 MULTI_PACKAGES =	-main -pgsql -sqlite -sqlite3 -freetds
 

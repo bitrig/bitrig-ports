@@ -5,7 +5,7 @@ COMMENT= 	record communication with an HTTP::Server::Simple
 MODULES=	cpan
 
 DISTNAME=	HTTP-Server-Simple-Recorder-0.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
 

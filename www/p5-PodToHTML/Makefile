@@ -4,12 +4,10 @@ COMMENT=	generate HTML from files containing POD documentation
 
 MODULES=	cpan
 DISTNAME=	PodToHTML-0.08
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Pod/}
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

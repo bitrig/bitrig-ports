@@ -4,14 +4,13 @@ COMMENT=        O'Reilly Volume 6a: Motif Programming Manual
 
 # Second Edition
 VERSION=	2.0
+REVISION=	0
 PKGNAME=	vol6a-${VERSION}
 DISTNAME=	Vol6a
 DISTFILES=	${DISTNAME}.pdf
 CATEGORIES=	books
 
 HOMEPAGE=	http://www.oreilly.com/openbook/motif
-
-MAINTAINER=	Ian Darwin <ian@openbsd.org>
 
 # Open Publication License 
 PERMIT_PACKAGE_CDROM=	Yes

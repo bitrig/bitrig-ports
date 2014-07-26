@@ -3,11 +3,9 @@
 COMMENT=	Cannon Smash 3D table tennis
 
 DISTNAME=	csmash-0.6.6
-REVISION=	7
+REVISION=	8
 CATEGORIES=	games
 HOMEPAGE=	http://cannonsmash.sourceforge.net/
-
-MAINTAINER=	Jason Dixon <jdixon@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

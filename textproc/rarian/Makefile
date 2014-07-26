@@ -7,7 +7,7 @@ GNOME_VERSION=		0.8.1
 SHARED_LIBS +=	rarian               0.0      # .0.0
 CATEGORIES=		textproc
 
-REVISION=		12
+REVISION=		13
 
 HOMEPAGE=		http://rarian.freedesktop.org/
 

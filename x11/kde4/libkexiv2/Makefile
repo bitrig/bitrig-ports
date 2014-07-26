@@ -3,6 +3,7 @@
 COMMENT =	KDE exiv2 wrapper
 CATEGORIES =	graphics devel
 DISTNAME =	libkexiv2-${MODKDE4_VERSION}
+REVISION =	0
 PKGSPEC =	libkexiv2->=4,<5
 
 SHARED_LIBS =	kexiv2			50.0	# 10.0

@@ -4,12 +4,10 @@ COMMENT = 	incremental backup
 
 MODPY_EGG_VERSION =	1.2.8
 DISTNAME =	rdiff-backup-${MODPY_EGG_VERSION}
-REVISION =	4
+REVISION =	5
 CATEGORIES =	sysutils
 
 HOMEPAGE = 	http://www.nongnu.org/rdiff-backup/
-
-MAINTAINER = 	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM = 	Yes

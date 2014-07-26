@@ -4,10 +4,8 @@ COMMENT=	Perl interface to gpgme
 SHARED_ONLY=	Yes
 
 DISTNAME=	Crypt-GpgME-0.09
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel security
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

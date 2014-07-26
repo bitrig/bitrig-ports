@@ -4,7 +4,7 @@ COMMENT=		generator for pronounceable random words
 
 MODPY_EGG_VERSION=	0.3.7
 DISTNAME=		yould-${MODPY_EGG_VERSION}
-REVISION=		3
+REVISION=		4
 CATEGORIES=		textproc
 
 HOMEPAGE=		https://pypi.python.org/pypi/yould/

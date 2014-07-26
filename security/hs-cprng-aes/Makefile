@@ -3,7 +3,7 @@
 COMMENT =		crypto PRNG using AES in counter mode.
 
 DISTNAME =		cprng-aes-0.2.3
-REVISION =		3
+REVISION =		4
 CATEGORIES =		security
 
 # BSD3

@@ -4,9 +4,8 @@ COMMENT =	interface to SMBIOS using dmidecode
 
 MODULES =	cpan
 DISTNAME =	Parse-DMIDecode-0.03
+REVISION =	0
 CATEGORIES =	sysutils
-
-MAINTAINER =	Mikolaj Kucharski <mikolaj@kucharski.name>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,9 +4,7 @@ COMMENT=	text document format for writing documents and man pages
 
 DISTNAME =	asciidoc-8.6.9
 CATEGORIES=	textproc
-REVISION=	0
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
+REVISION=	1
 
 HOMEPAGE=	http://www.methods.co.nz/asciidoc/
 

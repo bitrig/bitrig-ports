@@ -3,6 +3,7 @@
 COMMENT =	compiz configuration manager
 
 DISTNAME =	ccsm-0.8.4
+REVISION =	0
 
 MASTER_SITES =	http://releases.compiz.org/components/ccsm/
 

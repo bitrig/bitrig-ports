@@ -2,13 +2,11 @@
 
 COMMENT=	text mode rss newsreader
 DISTNAME=	snownews-1.5.12
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${HOMEPAGE}download/
 
 HOMEPAGE=	http://kiza.kcore.de/software/snownews/
-
-MAINTAINER=	David Cathcart <cathcart@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

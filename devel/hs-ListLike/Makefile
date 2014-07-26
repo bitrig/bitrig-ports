@@ -3,10 +3,9 @@
 COMMENT =		common interface to various Haskell types that are list-like
 
 DISTNAME =		ListLike-3.1.7.1
+REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE = 		http://software.complete.org/listlike
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM =	Yes

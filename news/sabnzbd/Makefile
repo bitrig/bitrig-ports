@@ -2,11 +2,11 @@
 
 COMMENT =			retrieve and process nzb-files via web interface
 VERSION =			0.7.11
+REVISION =			0
 DISTNAME =			SABnzbd-${VERSION}-src
 PKGNAME =			sabnzbd-${VERSION}
 CATEGORIES =			news
 HOMEPAGE =			http://sabnzbd.org/
-MAINTAINER =			Marcus Glocker <marcus@nazgul.ch>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

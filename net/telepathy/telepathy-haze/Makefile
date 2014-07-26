@@ -3,6 +3,7 @@
 COMMENT=		flexible communications framework, libpurple component
 
 DISTNAME=		telepathy-haze-0.8.0
+REVISION=		0
 
 MASTER_SITES=		${MASTER_SITES_TP:=telepathy-haze/}
 

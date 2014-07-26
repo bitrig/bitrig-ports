@@ -4,8 +4,8 @@ COMMENT =	backend for Clover reporting of coverage statistics
 
 MODULES =	cpan
 DISTNAME =	Devel-Cover-Report-Clover-0.35
+REVISION =	0
 CATEGORIES =	devel
-MAINTAINER =	Ingo Schwarze <schwarze@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,15 +3,13 @@
 COMMENT =		ncurses mpd client inspired by ncmpc
 
 DISTNAME =		ncmpcpp-0.5.10
-REVISION =		5
+REVISION =		6
 
 EXTRACT_SUFX =		.tar.bz2
 
 CATEGORIES =		audio
 
 HOMEPAGE =		http://ncmpcpp.rybczak.net/
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

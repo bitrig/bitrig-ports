@@ -3,6 +3,7 @@
 COMMENT=	user interface builder for the gtk+3 toolkit
 
 GNOME_VERSION=	3.18.3
+REVISION=	0
 GNOME_PROJECT= 	glade
 
 CATEGORIES=	devel
@@ -10,9 +11,6 @@ CATEGORIES=	devel
 SHARED_LIBS +=  gladeui-2                 1.0 # 0.0
 
 HOMEPAGE=	http://glade.gnome.org/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2 - LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

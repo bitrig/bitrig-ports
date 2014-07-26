@@ -5,6 +5,7 @@ COMMENT =		case insensitive string comparison
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		case-insensitive-1.0.0.1
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

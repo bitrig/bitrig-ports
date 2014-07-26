@@ -3,7 +3,7 @@
 COMMENT =		backtracking logic-programming monad
 
 DISTNAME =		logict-0.5.0.1
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 
 # BSD3

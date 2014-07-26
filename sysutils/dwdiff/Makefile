@@ -3,11 +3,10 @@
 COMMENT =		word-based diff program
 
 DISTNAME =		dwdiff-2.0.9
+REVISION =		0
 CATEGORIES =		sysutils textproc
 
 HOMEPAGE =		http://os.ghalkes.nl/dwdiff.html
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

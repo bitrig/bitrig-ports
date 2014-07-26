@@ -3,6 +3,7 @@
 COMMENT=	extract files from ARJ archives
 
 DISTNAME=	unarj-2.65
+REVISION=	0
 CATEGORIES=	archivers
 HOMEPAGE=	http://www.arjsoftware.com/
 MASTER_SITES=	http://ak-various-projects.googlecode.com/files/

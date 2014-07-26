@@ -4,10 +4,9 @@ COMMENT = 	ipv4 and ipv6 subnet calculator
 
 VERSION = 	1.1.4
 DISTNAME = 	sipcalc-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES = 	net
 HOMEPAGE = 	http://www.routemeister.net/projects/sipcalc/
-MAINTAINER = 	Stefan Sperling <stsp@openbsd.org>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM = 		Yes

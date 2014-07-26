@@ -4,7 +4,7 @@ COMMENT=	refresh perl %INC files when updated on disk
 
 MODULES=	cpan
 DISTNAME=	Module-Refresh-0.13
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # Artistic

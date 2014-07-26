@@ -4,7 +4,7 @@ COMMENT=	find color values by graphical color mixing
 
 DISTNAME=	xcoloredit
 PKGNAME=	xcoloredit-1.2
-REVISION=	2
+REVISION=	3
 CATEGORIES=	x11
 
 MASTER_SITES=	${MASTER_SITE_R5CONTRIB}

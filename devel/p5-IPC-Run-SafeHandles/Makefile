@@ -4,7 +4,7 @@ COMMENT=	safe guarding for IPC::Run
 
 MODULES=	cpan
 DISTNAME=	IPC-Run-SafeHandles-0.02
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

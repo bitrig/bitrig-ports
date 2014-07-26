@@ -5,10 +5,9 @@ COMMENT =		raw Haskell binding for OpenGL
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		OpenGLRaw-1.3.0.0
+REVISION =		0
 CATEGORIES =		graphics devel
 HOMEPAGE =		http://www.haskell.org/HOpenGL/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

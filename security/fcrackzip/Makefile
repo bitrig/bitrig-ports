@@ -3,12 +3,10 @@
 COMMENT =	ZIP password cracker
 
 DISTNAME =	fcrackzip-1.0
-REVISION =	1
+REVISION =	2
 CATEGORIES =	security archivers
 
 HOMEPAGE =	http://home.schmorp.de/marc/fcrackzip.html
-
-MAINTAINER =	Jung Lee <moorang@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	yes

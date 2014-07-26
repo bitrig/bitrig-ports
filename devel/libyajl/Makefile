@@ -5,7 +5,7 @@ COMMENT =	small JSON library written in ANSI C
 V =		2.0.4
 PKGNAME =	libyajl-${V}
 DISTNAME =	lloyd-yajl-${V}
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	devel
 

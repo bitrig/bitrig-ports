@@ -4,11 +4,9 @@ COMMENT=	US-ASCII transliterations of Unicode text
 
 MODULES=	cpan
 DISTNAME=	Text-Unidecode-0.04
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM=   Yes

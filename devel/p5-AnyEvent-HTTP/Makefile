@@ -3,7 +3,7 @@
 COMMENT=		simple but non-blocking HTTP/HTTPS client
 
 DISTNAME=		AnyEvent-HTTP-2.15
-REVISION=		0
+REVISION=		1
 CATEGORIES=		databases devel
 
 MODULES=		cpan

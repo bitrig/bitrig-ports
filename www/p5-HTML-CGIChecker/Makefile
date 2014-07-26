@@ -4,7 +4,7 @@ COMMENT=	perl module to detect dangerous HTML code
 
 MODULES=	cpan
 DISTNAME=	HTML-CGIChecker-0.90
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www security
 
 # GPL

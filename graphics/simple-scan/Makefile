@@ -4,12 +4,11 @@ COMMENT=		simple scanning utility
 
 GNOME_PROJECT=		simple-scan
 GNOME_VERSION=		3.12.1
+REVISION=		0
 
 CATEGORIES=		graphics
 
 HOMEPAGE=		https://launchpad.net/simple-scan
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

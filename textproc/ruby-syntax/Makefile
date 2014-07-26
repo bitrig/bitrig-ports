@@ -5,7 +5,7 @@ COMMENT =	module for using syntax highlighting in ruby
 DISTNAME =	syntax-1.0.0
 CATEGORIES =	textproc
 
-REVISION =	3
+REVISION =	4
 
 # MIT License
 PERMIT_PACKAGE_CDROM=	Yes

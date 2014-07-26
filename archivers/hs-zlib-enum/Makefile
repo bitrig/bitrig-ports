@@ -3,6 +3,7 @@
 COMMENT =		enumerator interface for zlib compression
 
 DISTNAME =		zlib-enum-0.2.3
+REVISION =		0
 CATEGORIES =		archivers devel
 
 # BSD3

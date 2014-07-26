@@ -4,6 +4,7 @@ COMMENT=	parses long function arguments
 
 MODULES=	cpan
 DISTNAME=	Getargs-Long-1.1003
+REVISION=	0
 CATEGORIES=	devel
 
 # GPL

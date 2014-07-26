@@ -6,7 +6,7 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	String-Koremutake-0.30
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc devel
 
 # perl

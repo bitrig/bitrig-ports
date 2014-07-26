@@ -4,12 +4,10 @@ COMMENT=	easily generate and process stateful forms
 
 MODULES=	cpan
 DISTNAME=	CGI-FormBuilder-3.0501
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 EXTRACT_SUFX=	.tgz
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 HOMEPAGE=	http://www.formbuilder.org/
 

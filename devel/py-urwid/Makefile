@@ -5,6 +5,7 @@ COMMENT =	console user interface library for python
 MODPY_EGG_VERSION = 1.0.0
 DISTNAME =	urwid-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://excess.org/urwid/

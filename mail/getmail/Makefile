@@ -4,11 +4,10 @@ COMMENT=	IMAP/POP3/SDPS mail retriever
 
 MODPY_EGG_VERSION=	4.43.0
 DISTNAME=	getmail-${MODPY_EGG_VERSION}
+REVISION=	0
 CATEGORIES=	mail
 
 HOMEPAGE=	http://pyropus.ca/software/getmail/
-
-MAINTAINER=	Tim van der Molen <tbvdm@xs4all.nl>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

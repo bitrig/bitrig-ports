@@ -3,6 +3,7 @@
 COMMENT=	deductive database system similar to Prolog
 
 DISTNAME=	datalog-2.4
+REVISION=	0
 SHARED_LIBS +=  datalog                   0.0 # 0.0
 CATEGORIES=	lang
 

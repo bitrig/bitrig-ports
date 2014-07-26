@@ -3,7 +3,7 @@
 COMMENT=	XML parsing class based on PHP's bundled expat
 
 DISTNAME=	XML_Parser-1.2.6
-REVISION =	2
+REVISION =	3
 CATEGORIES=	textproc
 
 MODULES=	www/pear

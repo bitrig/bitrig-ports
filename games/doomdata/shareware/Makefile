@@ -4,13 +4,11 @@ COMMENT =		DOOM I Shareware data files
 
 DISTNAME =		doom19s
 PKGNAME =		doomdata-1.9
-REVISION =		0
+REVISION =		1
 EXTRACT_SUFX =		.zip
 CATEGORIES =		games
 
 HOMEPAGE =		http://www.idsoftware.com/games/doom/doom-collectors/
-
-MAINTAINER =		Paul de Weerd <weerd@weirdnet.nl>
 
 PKG_ARCH =		*
 

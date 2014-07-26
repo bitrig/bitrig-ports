@@ -3,7 +3,7 @@
 COMMENT=		gnutella client with an easy to use interface
 
 DISTNAME=		mutella-0.4.5
-REVISION=		2
+REVISION=		3
 CATEGORIES=		net
 
 HOMEPAGE=		http://mutella.sourceforge.net/

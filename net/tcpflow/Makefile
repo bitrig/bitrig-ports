@@ -3,7 +3,7 @@
 COMMENT=	tool for capturing data from TCP connections
 
 DISTNAME=	tcpflow-0.21
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.circlemud.org/pub/jelson/tcpflow/ \
 		http://www.circlemud.org/pub/jelson/tcpflow/

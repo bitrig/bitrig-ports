@@ -3,13 +3,11 @@
 COMMENT =		guitar tab editor
 
 DISTNAME =		kguitar-0.5.1
-REVISION=		7
+REVISION=		8
 
 CATEGORIES =		multimedia kde
 
 HOMEPAGE =		http://kguitar.sourceforge.net/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2+; for MusicXML copyright see licenseMusicXML.html
 PERMIT_PACKAGE_CDROM =	Yes

@@ -2,6 +2,7 @@
 
 COMMENT =	dialer and pppd front-end for KDE
 DISTNAME =	kppp-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	network
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdenetwork/kppp

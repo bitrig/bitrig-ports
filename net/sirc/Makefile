@@ -3,6 +3,7 @@
 COMMENT=	programmable small perl irc client
 
 DISTNAME=	sirc-2.211
+REVISION=	0
 CATEGORIES=	net
 
 MASTER_SITES=	http://www.iagora.com/~espel/sirc/
@@ -11,8 +12,6 @@ MASTER_SITES0=	http://www.iagora.com/~espel/sirc/scripts/
 PATCHFILES=	ssfe.diff:0
 
 HOMEPAGE=	http://www.iagora.com/~espel/sirc/sirc.html
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

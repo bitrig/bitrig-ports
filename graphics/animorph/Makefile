@@ -4,7 +4,7 @@ COMMENT=	morphing engine
 
 DISTNAME=	animorph-0.3
 CATEGORIES=	graphics
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=  animorph             1.0      # unknown
 

@@ -8,8 +8,8 @@ DISTNAME =		libkipi-$V
 PKGNAME-main =		${PKGNAME}
 PKGNAME-icons =		libkipi-icons-$V
 PKGSPEC-main =		libkipi-<1
-REVISION-main =		11
-REVISION-icons =	4
+REVISION-main =		12
+REVISION-icons =	5
 
 SHARED_LIBS +=	kipi                 1.4      # .2.0
 

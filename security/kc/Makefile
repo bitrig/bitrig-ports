@@ -6,14 +6,12 @@ GH_ACCOUNT =	levaidaniel
 GH_PROJECT =	kc
 GH_TAGNAME =	2.3.2
 GH_COMMIT =	49915a19a0eabf279400667cd14d254159dc3a4f
-REVISION =	0
+REVISION =	1
 DISTNAME =	${GH_PROJECT}-${GH_TAGNAME}
 
 CATEGORIES =	security
 
 HOMEPAGE =	http://github.com/levaidaniel/${GH_PROJECT}
-
-MAINTAINER =	LEVAI Daniel <leva@ecentrum.hu>
 
 # BSD
 PERMIT_PACKAGE_CDROM =		Yes

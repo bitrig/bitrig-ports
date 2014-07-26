@@ -4,11 +4,9 @@ COMMENT=		liberal object-oriented parser for RSS feeds
 
 MODULES=		cpan
 DISTNAME=		XML-RSS-Parser-4.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		textproc
 USE_GROFF =		Yes
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

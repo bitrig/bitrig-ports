@@ -3,7 +3,7 @@
 COMMENT =		tool for scanning webpages for Youtube links
 
 DISTNAME =		grake-0.1.0
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		net
 

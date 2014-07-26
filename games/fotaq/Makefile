@@ -4,6 +4,7 @@ PKG_ARCH=	*
 
 COMMENT=	flight of the amazon queen
 PKGNAME=	fotaq-1.1
+REVISION=	0
 EPOCH=		0
 DISTNAME=	FOTAQ_Talkie-1.1
 EXTRACT_SUFX=	.zip

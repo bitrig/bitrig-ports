@@ -5,7 +5,7 @@ COMMENT=	build mega-widgets using the Itcl object system
 VERSION=	3.3
 DISTNAME=	itk${VERSION}
 PKGNAME=	itk-${VERSION}
-REVISION=	3
+REVISION=	4
 SHARED_LIBS=	itk33	0.0
 
 CATEGORIES=	x11 devel

@@ -3,9 +3,8 @@
 COMMENT=	perl extension for writing XML documents
 
 DISTNAME=	XML-Writer-0.625
+REVISION=	0
 CATEGORIES=	textproc
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

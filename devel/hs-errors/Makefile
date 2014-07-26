@@ -3,9 +3,8 @@
 COMMENT =		simplified error-handling
 
 DISTNAME =		errors-1.4.2
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

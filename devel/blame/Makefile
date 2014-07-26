@@ -3,11 +3,10 @@
 COMMENT=	RCS equivalent of CVS's annotate command
 
 DISTNAME=	blame-1.1
+REVISION=	0
 CATEGORIES=	devel
 
 HOMEPAGE=	http://blame.sourceforge.net/
-
-MAINTAINER=	Alan Post <aisa@cybermesa.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

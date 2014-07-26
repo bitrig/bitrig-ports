@@ -5,12 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	H.323 gatekeeper
 
 DISTNAME=	gnugk-3.6
+REVISION=	0
 
 CATEGORIES=	net telephony
 
 HOMEPAGE=	http://www.gnugk.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,6 +4,7 @@ COMMENT =		readmes.html
 
 PKG_ARCH = *
 DISTNAME =		ports-readmes-3
+REVISION =		0
 DISTFILES =
 
 CATEGORIES =		databases

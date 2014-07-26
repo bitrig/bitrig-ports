@@ -5,6 +5,7 @@ COMMENT =		ssl.match_hostname() function from Python 3.4
 MODPY_EGG_VERSION =	3.4.0.2
 DISTNAME =		backports.ssl_match_hostname-${MODPY_EGG_VERSION}
 PKGNAME =		py-backports-ssl-match-hostname-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =	https://pypi.python.org/pypi/backports.ssl_match_hostname
 

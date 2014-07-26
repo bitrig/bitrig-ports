@@ -6,7 +6,7 @@ COMMENT =		weighted finite-state transducers library
 NOT_FOR_ARCHS=		${GCC3_ARCHS}
 
 DISTNAME =		openfst-1.3.1
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=		fst                       0.0 # 0.0
 SHARED_LIBS +=		fstscript                 0.0 # 0.0

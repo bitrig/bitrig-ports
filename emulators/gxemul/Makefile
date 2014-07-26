@@ -3,11 +3,9 @@
 COMMENT=		ARM/M88k/MIPS/PowerPC/SuperH machines emulator
 
 DISTNAME =		gxemul-0.6.0
-REVISION =		0
+REVISION =		1
 CATEGORIES=		emulators
 HOMEPAGE=		http://gxemul.sourceforge.net/
-
-MAINTAINER=		Alexander Yurchenko <grange@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

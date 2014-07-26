@@ -4,9 +4,8 @@ COMMENT=	RFC 2822 address parsing and creation
 
 MODULES=	cpan
 DISTNAME=	Email-Address-1.905
+REVISION=	0
 CATEGORIES=	mail
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

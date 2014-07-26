@@ -4,6 +4,7 @@ COMMENT =	graphical report tool for PostgreSQL
 SHARED_ONLY =	Yes
 
 DISTNAME =	pg_stats_reporter-1.0.1
+REVISION =	0
 CATEGORIES =	databases www
 
 HOMEPAGE =	http://pgstatsinfo.projects.pgfoundry.org/

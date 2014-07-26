@@ -10,7 +10,7 @@ ONLY_FOR_ARCHS =	i386 amd64 hppa mips64el powerpc
 COMMENT =		multi-paradigm programming language
 
 V =			6.0.1
-REVISION =		2
+REVISION =		3
 PKGNAME =		racket-$V
 DISTNAME =		racket-$V-src-builtpkgs
 
@@ -21,7 +21,6 @@ SHARED_LIBS +=		racket3m	2.0 # 6.0.1
 
 CATEGORIES =		lang
 HOMEPAGE =		http://racket-lang.org/
-MAINTAINER =		Juan Francisco Cantero Hurtado <juanfra@openbsd.org>
 
 # LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,14 +5,12 @@ COMMENT=	fully featured mod_perl content management system
 VERSION=	7.3.21
 DISTNAME=	webgui-${VERSION}-stable
 PKGNAME=	WebGUI-${VERSION}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 HOMEPAGE=	http://www.plainblack.com/webgui
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pbwebgui/}
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=  Yes

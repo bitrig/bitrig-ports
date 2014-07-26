@@ -5,12 +5,10 @@ SHARED_ONLY=	Yes
 COMMENT=	ICB protocol plugin for Pidgin
 
 DISTNAME=	pidgin-icb-20070505
-REVISION=	5
+REVISION=	6
 CATEGORIES=	net
 
 HOMEPAGE=	http://nic.com.pl/~alek/pidgin-icb/
-
-MAINTAINER=	Aleksander Piotrowski <alek@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,10 +5,9 @@ SHARED_ONLY=		Yes
 COMMENT=		agent for Razor spam filtering networks
 
 DISTNAME=		razor-agents-2.85
-REVISION=		1
+REVISION=		2
 CATEGORIES=		mail
 HOMEPAGE=		http://razor.sourceforge.net/
-MAINTAINER=		Michael Erdely <merdely@openbsd.org>
 
 # Artistic License
 PERMIT_PACKAGE_CDROM=	Yes

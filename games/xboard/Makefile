@@ -3,6 +3,7 @@
 COMMENT=	X11 frontend for GNU Chess and the Internet Chess Server
 
 DISTNAME=	xboard-4.7.3
+REVISION=	0
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_GNU:=xboard/}
 

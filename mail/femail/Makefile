@@ -9,11 +9,10 @@ PKGNAME-main=	femail-${V}
 PKGNAME-chroot=	femail-chroot-${V}
 CATEGORIES=	mail
 
-REVISION-chroot=2
+REVISION-main=	0
+REVISION-chroot=3
 
 HOMEPAGE=	http://bulabula.org/femail/
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

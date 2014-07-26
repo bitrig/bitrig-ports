@@ -3,7 +3,7 @@
 COMMENT=	xml2swf and swf2xml processor with import functionalities
 
 DISTNAME=	swfmill-0.3.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	${HOMEPAGE}releases/
 

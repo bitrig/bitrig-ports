@@ -3,12 +3,10 @@
 COMMENT=	curses spreadsheet-calculator program
 
 DISTNAME=	sc-7.16
-REVISION=	3
+REVISION=	4
 CATEGORIES=	math
 
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/financial/spreadsheet/}
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 # Public Domain
 PERMIT_PACKAGE_CDROM=	Yes

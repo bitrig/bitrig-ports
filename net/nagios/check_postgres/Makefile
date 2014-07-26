@@ -4,9 +4,8 @@ PKG_ARCH=		*
 
 COMMENT=		Nagios plugin to monitor PostgresQL
 DISTNAME=		check_postgres-2.20.0
+REVISION=		0
 CATEGORIES=		net databases
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE=		http://bucardo.org/wiki/Check_postgres
 MASTER_SITES=		http://bucardo.org/downloads/

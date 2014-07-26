@@ -3,10 +3,9 @@
 COMMENT=	checkbook balancing tool
 
 DISTNAME=	cbb-0.73
-REVISION=	6
+REVISION=	7
 CATEGORIES=	misc
 HOMEPAGE=	http://gna.org/projects/cbb/
-MAINTAINER=	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

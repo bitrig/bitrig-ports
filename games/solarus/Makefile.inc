@@ -4,6 +4,5 @@
 NOT_FOR_ARCHS =	powerpc
 
 CATEGORIES ?=	games x11
-MAINTAINER ?=	Brian Callahan <bcallah@openbsd.org>
 
 NO_TEST =	Yes

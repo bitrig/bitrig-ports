@@ -3,10 +3,8 @@
 COMMENT=	faster and improved version of dd
 
 DISTNAME=	sdd-1.52
-REVISION=	0
+REVISION=	1
 CATEGORIES=	sysutils
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

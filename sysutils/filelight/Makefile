@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	concentric segmented-rings disk usage visualisation
 
 DISTNAME=	filelight-1.0
-REVISION =	13
+REVISION =	14
 CATEGORIES=	sysutils x11/kde
 PKGSPEC =	filelight-<2
 

@@ -4,7 +4,7 @@ COMMENT=		wm-dockapp; audio mixer
 
 DISTNAME=		wmmixer-1.0-beta1
 PKGNAME=		wmmixer-1.0b1
-REVISION=		4
+REVISION=		5
 CATEGORIES=		audio x11 x11/windowmaker
 
 # GPL

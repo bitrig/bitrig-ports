@@ -4,10 +4,8 @@ COMMENT=	module for ICQv7 protocol realisation
 
 MODULES=	cpan
 DISTNAME=	Net-ICQ2000-0.2.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	no license
 PERMIT_PACKAGE_FTP=	no license

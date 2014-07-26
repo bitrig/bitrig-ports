@@ -3,9 +3,8 @@
 COMMENT=	APC Smart UPS Monitoring Daemon
 
 DISTNAME=	upsd-2.0.1.6
+REVISION=	0
 CATEGORIES=	sysutils
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	missing license
 PERMIT_PACKAGE_FTP=	missing license

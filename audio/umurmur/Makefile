@@ -3,13 +3,12 @@
 COMMENT =		minimalistic Mumble server
 
 DISTNAME =		umurmur-0.2.14
+REVISION =		0
 CATEGORIES =		audio
 
 HOMEPAGE =		https://umurmur.googlecode.com/
 
 MASTER_SITES =		${HOMEPAGE}/files/
-
-MAINTAINER =		Jonathon Sisson <sisson.j@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

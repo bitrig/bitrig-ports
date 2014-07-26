@@ -4,7 +4,7 @@ COMMENT=		Python framework for async socket-based servers
 
 DISTNAME=		medusa-0.5.4
 PKGNAME=		py-${DISTNAME}
-REVISION=		4
+REVISION=		5
 CATEGORIES=		net devel
 
 HOMEPAGE=		http://www.amk.ca/python/code/medusa.html

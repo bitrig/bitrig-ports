@@ -5,7 +5,7 @@ CATEGORIES=		misc
 COMMENT=		pseudo random number sequence test program
 
 DISTNAME=		ent-1.0
-REVISION=		0
+REVISION=		1
 EXTRACT_SUFX=		.zip
 
 HOMEPAGE=		http://www.fourmilab.ch/random/

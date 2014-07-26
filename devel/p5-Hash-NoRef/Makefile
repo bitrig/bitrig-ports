@@ -5,13 +5,11 @@ COMMENT=	HASH that stores values without a reference count increase
 SHARED_ONLY=	Yes
 
 DISTNAME=	Hash-NoRef-0.03
-REVISION=	4
+REVISION=	5
 CATEGORIES=	devel
 MODULES=	cpan
 
 CPAN_AUTHOR=	GMPASSOS
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT = 		screen scraping Perl API to some Drupal admin functions
 
 DISTNAME =		Drupal-Admin-0.04
-REVISION =		2
+REVISION =		3
 CATEGORIES =		www devel
 MODULES =		cpan
 USE_GROFF =		Yes

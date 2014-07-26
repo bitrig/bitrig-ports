@@ -3,11 +3,9 @@
 COMMENT=	binary visual display editor, based on vi
 
 DISTNAME=	bvi-1.3.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	editors
 HOMEPAGE=	http://bvi.sourceforge.net/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,6 +4,7 @@ COMMENT=		people aggregation library
 
 GNOME_PROJECT=		folks
 GNOME_VERSION=		0.9.7.1
+REVISION=		0
 # MODULE_VERSION in config.h
 API_V=			42
 

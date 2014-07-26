@@ -3,10 +3,8 @@
 COMMENT=			distributed data store
 DISTNAME=			riak-1.4.7
 CATEGORIES=			databases
-REVISION=			0
+REVISION=			1
 HOMEPAGE=			http://basho.com/
-
-MAINTAINER=			Jonathan Matthew <jmatthew@openbsd.org>
 
 ONLY_FOR_ARCHS=			amd64
 

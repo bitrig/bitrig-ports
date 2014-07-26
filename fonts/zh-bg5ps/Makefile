@@ -4,10 +4,8 @@ COMMENT=	convert Big5/GB encoded files to postscript
 
 DISTNAME=	bg5ps-1.3.0
 PKGNAME=	zh-${DISTNAME}
-REVISION=	9
+REVISION=	10
 CATEGORIES=	fonts chinese x11
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

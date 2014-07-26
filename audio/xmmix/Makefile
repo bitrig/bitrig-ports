@@ -3,7 +3,7 @@
 COMMENT=	Motif-based audio mixer
 VERSION=	1.2.2
 DISTNAME=	xmmix-${VERSION}
-REVISION=	5
+REVISION=	6
 CATEGORIES=	audio
 HOMEPAGE=	http://www.ibiblio.org/tkan/xmmix/
 

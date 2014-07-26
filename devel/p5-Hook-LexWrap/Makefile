@@ -4,6 +4,7 @@ COMMENT=	lexically scoped subroutine wrappers
 
 MODULES=	cpan
 DISTNAME=	Hook-LexWrap-0.24
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

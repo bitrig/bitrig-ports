@@ -3,6 +3,7 @@
 COMMENT=	parse TIGER/Line geographic data
 MODULES=	cpan
 DISTNAME=	Geo-TigerLine-0.03
+REVISION=	0
 CATEGORIES=	geo
 
 # Perl

@@ -6,9 +6,7 @@ COMMENT=	interface to bzip2 compression library
 
 DISTNAME=	Compress-Bzip2-2.16
 CATEGORIES=	archivers
-REVISION=	0
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
+REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

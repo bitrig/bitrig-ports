@@ -3,7 +3,7 @@
 COMMENT=	biff-type program, designed to match AfterStep
 
 DISTNAME=	asmail-0.56
-REVISION =	4
+REVISION =	5
 CATEGORIES=	mail
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=asmail/}

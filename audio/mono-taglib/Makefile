@@ -5,7 +5,7 @@ COMMENT=	tagging library for the Mono framework
 V=		2.0.3.7
 DISTNAME=	taglib-sharp-${V}
 PKGNAME=	mono-taglib-${V}
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	audio
 

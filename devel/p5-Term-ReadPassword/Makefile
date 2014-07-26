@@ -4,7 +4,7 @@ COMMENT=		ask passwords from perl
 
 MODULES=		cpan
 DISTNAME=		Term-ReadPassword-0.11
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 
 # perl

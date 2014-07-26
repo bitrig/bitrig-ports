@@ -3,6 +3,7 @@
 COMMENT =		Youtube closed caption downloader
 
 DISTNAME =		gcap-0.1.1
+REVISION =		0
 
 CATEGORIES =		www
 

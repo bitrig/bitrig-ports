@@ -5,6 +5,7 @@ COMMENT =	Bash tab completion for argparse
 MODPY_EGG_VERSION =	0.5.7
 DISTNAME =	argcomplete-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 CATEGORIES =	devel
 HOMEPAGE =	http://packages.python.org/argcomplete
 

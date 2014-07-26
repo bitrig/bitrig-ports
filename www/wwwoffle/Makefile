@@ -3,7 +3,7 @@
 COMMENT=		WWW OFFLine Explorer
 
 DISTNAME=		wwwoffle-2.5e
-REVISION=		2
+REVISION=		3
 CATEGORIES=		www
 
 HOMEPAGE=		http://www.gedanken.demon.co.uk/wwwoffle/

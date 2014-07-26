@@ -4,7 +4,7 @@ COMMENT=	module for implementing an SCGI interface
 
 MODULES=	cpan
 DISTNAME=	SCGI-0.6
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 # Perl

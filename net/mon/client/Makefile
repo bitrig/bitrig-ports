@@ -5,7 +5,7 @@ COMMENT =	perl module for mon
 DISTNAME = 	mon-client-${V}
 
 PKGNAME = 	p5-Mon-${V}
-REVISION =	3
+REVISION =	4
 
 MODULES = 	cpan
 

@@ -4,7 +4,7 @@ COMMENT= 	run perl program as a daemon process
 
 MODULES=	cpan
 DISTNAME=	Proc-Daemon-0.14
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

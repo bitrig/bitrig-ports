@@ -3,9 +3,8 @@
 COMMENT =		Haskell 98 natural numbers
 
 DISTNAME =		nats-0.1
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

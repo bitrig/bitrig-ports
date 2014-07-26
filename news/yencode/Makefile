@@ -3,7 +3,7 @@
 COMMENT=	encoder/decoder tool for the Usenet yEnc encoding format
 
 DISTNAME=	yencode-0.46
-REVISION=	1
+REVISION=	2
 CATEGORIES=	news
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=yencode/}

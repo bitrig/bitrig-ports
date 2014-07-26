@@ -3,10 +3,8 @@
 COMMENT=		bunch of common helper classes for MPD
 
 DISTNAME=		Audio-MPD-Common-1.110550
-REVISION=		1
+REVISION=		2
 CATEGORIES=		audio
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

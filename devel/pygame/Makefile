@@ -6,7 +6,7 @@ COMMENT=	set of Python modules designed for writing games
 
 DISTNAME=	pygame-1.8.1release
 PKGNAME=	${DISTNAME:S/release//}
-REVISION =	4
+REVISION =	5
 CATEGORIES=	devel games
 
 HOMEPAGE=	http://www.pygame.org/

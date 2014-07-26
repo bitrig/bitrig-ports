@@ -4,6 +4,7 @@ COMMENT=	Twitter script for irssi
 
 V=		2.6.0
 DISTNAME=	twirssi-$V
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.twirssi.com/

@@ -3,7 +3,7 @@
 COMMENT=		data exchange utility for Siemens mobile phones
 
 DISTNAME=		scmxx-0.8.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		comms
 HOMEPAGE=		http://www.hendrik-sattler.de/scmxx/
 

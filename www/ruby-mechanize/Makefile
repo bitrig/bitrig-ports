@@ -3,7 +3,7 @@
 COMMENT=		automate interaction with websites
 
 DISTNAME=		mechanize-0.9.3
-REVISION =		7
+REVISION =		8
 CATEGORIES=		www
 
 HOMEPAGE=		http://mechanize.rubyforge.org/mechanize

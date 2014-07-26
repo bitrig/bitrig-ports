@@ -3,6 +3,7 @@
 COMMENT=	fast lexical analyzer generator
 
 DISTNAME=	flex-2.5.35
+REVISION=	0
 CATEGORIES=	devel textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=flex/}
 

@@ -4,9 +4,8 @@ COMMENT =	pure Perl implementation for an XML-RPC client and server
 
 MODULES =	cpan
 DISTNAME =	XML-RPC-0.9
+REVISION =	0
 CATEGORIES =	net devel
-
-MAINTAINER =	Mikolaj Kucharski <mikolaj@kucharski.name>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

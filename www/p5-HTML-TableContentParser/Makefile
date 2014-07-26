@@ -4,11 +4,9 @@ COMMENT=	module to parse the content of tables in HTML text
 
 MODULES=	cpan
 DISTNAME=	HTML-TableContentParser-0.13
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=   Yes

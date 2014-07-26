@@ -3,6 +3,7 @@
 COMMENT=	simple and performant DNS server
 
 VERSION=	1.4.14
+REVISION=	0
 DISTNAME=	maradns-${VERSION}
 CATEGORIES=	net
 

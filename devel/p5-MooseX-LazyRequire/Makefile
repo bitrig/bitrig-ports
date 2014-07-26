@@ -3,6 +3,7 @@
 COMMENT=		required attributes which fail only when trying to use them
 
 DISTNAME=		MooseX-LazyRequire-0.07
+REVISION=		0
 
 CATEGORIES=		devel
 

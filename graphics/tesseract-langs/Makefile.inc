@@ -7,7 +7,7 @@ DISTNAME=	tesseract-ocr-${V}.${L}
 PKGNAME =	tesseract-${L}-${V}
 WRKDIST=	${WRKDIR}/tesseract-ocr
 EPOCH ?=	0
-REVISION ?=	0
+REVISION ?=	1
 
 CATEGORIES=	graphics textproc
 

@@ -3,9 +3,8 @@
 COMMENT =		easy-to-use date/time formatting
 
 DISTNAME =		Time-Format-1.12
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

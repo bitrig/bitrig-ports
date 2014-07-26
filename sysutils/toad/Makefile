@@ -3,10 +3,9 @@
 COMMENT=		hotplugd(8) automounter (Toad Opens All Devices)
 
 DISTNAME=		toad-1.1
+REVISION=		0
 
 CATEGORIES=		sysutils
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 HOMEPAGE=		http://opensource.mtier.org/
 

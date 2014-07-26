@@ -5,6 +5,7 @@ PKG_ARCH =	*
 COMMENT =	configuration header file shared by the SuiteSparse ports
 
 VERSION =	3.5.0
+REVISION =	0
 DISTNAME =	UFconfig-${VERSION}
 PKGNAME =	${DISTNAME:L}
 

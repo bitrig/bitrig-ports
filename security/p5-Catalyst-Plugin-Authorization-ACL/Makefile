@@ -3,9 +3,8 @@
 COMMENT=	ACL support for Catalyst applications
 
 DISTNAME=	Catalyst-Plugin-Authorization-ACL-0.15
+REVISION=	0
 CATEGORIES=	security
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

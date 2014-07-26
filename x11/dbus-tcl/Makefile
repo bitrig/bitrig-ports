@@ -4,10 +4,10 @@ COMMENT =	dbus bindings for Tcl
 
 DISTNAME =	dbus-tcl1.1
 PKGNAME =	dbus-tcl-1.1
+REVISION =	0
 SHARED_LIBS =	dbus-tcl11 0.0
 CATEGORIES =	x11
 HOMEPAGE =	http://dbus-tcl.sourceforge.net/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

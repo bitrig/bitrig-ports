@@ -7,8 +7,7 @@ COMMENT =	recursively copy Perl datatypes
 MODULES =	cpan
 DISTNAME =	Clone-0.36
 CATEGORIES =	devel
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
-REVISION =	0
+REVISION =	1
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

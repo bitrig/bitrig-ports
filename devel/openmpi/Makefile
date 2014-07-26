@@ -6,7 +6,7 @@ BROKEN-powerpc =	checking if Fortran 77 compiler works... no
 
 V=			1.4.1
 DISTNAME =		openmpi-$V
-REVISION =		3
+REVISION =		4
 
 SHARED_LIBS =		mca_common_sm 1.0 \
 			mpi 0.1 \

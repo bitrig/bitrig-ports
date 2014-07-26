@@ -3,7 +3,7 @@
 COMMENT=	GTK-based LDAP client
 
 DISTNAME=	gq-1.3.4
-REVISION=	9
+REVISION=	10
 
 CATEGORIES=	databases sysutils
 

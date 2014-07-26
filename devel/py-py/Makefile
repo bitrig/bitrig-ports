@@ -3,15 +3,13 @@
 COMMENT=		cross-python path, ini-parsing, io, code, log facilities
 
 MODPY_EGG_VERSION =	1.4.15
-REVISION = 		1
+REVISION = 		2
 DISTNAME=		py-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
 
 CATEGORIES=		devel
 
 HOMEPAGE=		http://doc.pylib.org/en/latest/
-
-MAINTAINER=		Eric Faurot <eric@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

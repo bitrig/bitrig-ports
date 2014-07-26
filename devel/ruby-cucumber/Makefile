@@ -3,7 +3,7 @@
 COMMENT =	execute plain-text documents as automated functional tests
 
 DISTNAME =	cucumber-0.3.96
-REVISION =	8
+REVISION =	9
 CATEGORIES =	devel
 
 HOMEPAGE =	http://cukes.info/

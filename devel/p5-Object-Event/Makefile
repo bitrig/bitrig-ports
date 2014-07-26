@@ -3,11 +3,9 @@
 COMMENT =		event callback interface
 
 DISTNAME =		Object-Event-1.23
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

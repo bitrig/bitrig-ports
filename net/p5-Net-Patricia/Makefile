@@ -6,10 +6,8 @@ COMMENT=	Patricia Trie perl module for fast IP address lookups
 
 MODULES=	cpan
 DISTNAME=	Net-Patricia-1.19
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

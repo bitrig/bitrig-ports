@@ -4,7 +4,7 @@ COMMENT=	multi-radix integer desk calculator
 
 DISTNAME=	hc
 PKGNAME=	hc-1.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	math
 
 HOMEPAGE=	http://www.geocities.com/connorbd/software/hc.html

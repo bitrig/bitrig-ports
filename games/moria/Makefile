@@ -5,7 +5,7 @@ COMMENT=	The Dungeons of Moria
 V=		5.5.2
 DISTNAME=	um$V
 PKGNAME=	moria-$V
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	games
 

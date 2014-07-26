@@ -5,7 +5,7 @@ COMMENT =	cross-platform IRC bot written in Python
 MODPY_EGG_VERSION = 0.83.4.1
 DISTNAME =	Supybot-${MODPY_EGG_VERSION}
 PKGNAME =	${DISTNAME:L}
-REVISION =	2
+REVISION =	3
 CATEGORIES =	net devel
 
 HOMEPAGE =	http://supybot.com/

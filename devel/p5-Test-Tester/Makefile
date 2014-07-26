@@ -4,9 +4,8 @@ COMMENT=        run tests built with Test::Builder
 
 MODULES=	cpan
 DISTNAME=	Test-Tester-0.108
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

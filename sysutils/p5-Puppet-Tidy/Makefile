@@ -3,10 +3,9 @@
 COMMENT=	perl script to Tidy Puppet manifests
 
 DISTNAME=	Puppet-Tidy-0.3.2
+REVISION=	0
 
 CATEGORIES=	sysutils
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE=	http://opensource.mtier.org/ptidy.html
 

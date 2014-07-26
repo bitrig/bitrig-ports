@@ -2,6 +2,7 @@
 
 COMMENT =	Dots-and-Boxes-like game for KDE
 DISTNAME =	ksquares-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg

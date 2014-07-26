@@ -3,7 +3,7 @@
 COMMENT=	jcode interface for catalyst
 
 DISTNAME=	Catalyst-Plugin-Charsets-Japanese-0.06
-REVISION=	1
+REVISION=	2
 CATEGORIES=	converters www
 MODULES=	cpan
 

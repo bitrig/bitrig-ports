@@ -6,7 +6,7 @@ COMMENT=		standard GNOME themes
 
 GNOME_PROJECT=		gnome-themes-standard
 GNOME_VERSION=		3.12.0
-REVISION=		0
+REVISION=		1
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

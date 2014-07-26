@@ -6,11 +6,11 @@ COMMENT-iaxcomm=IAX softphone
 
 DISTNAME=	iaxclient-2.1beta3
 PKGNAME-main=	${DISTNAME}
-REVISION-main=	12
+REVISION-main=	13
 PKGNAME-tcl=	${DISTNAME:S/iaxclient/iaxclient-tcl/}
-REVISION-tcl=	15
+REVISION-tcl=	16
 PKGNAME-iaxcomm= iaxcomm-1.1.0
-REVISION-iaxcomm= 16
+REVISION-iaxcomm= 17
 
 CATEGORIES=	telephony
 SHARED_LIBS=	tcliaxclient02 0.0 \
@@ -18,7 +18,6 @@ SHARED_LIBS=	tcliaxclient02 0.0 \
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=iaxclient/}
 HOMEPAGE=	http://iaxclient.sourceforge.net/
-MAINTAINER=	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

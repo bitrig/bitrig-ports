@@ -4,6 +4,7 @@ COMMENT	= 	configure-time utilities for using C headers, etc.
 
 MODULES =	cpan
 DISTNAME =	ExtUtils-CChecker-0.08
+REVISION =	0
 CATEGORIES =	devel
 
 # perl

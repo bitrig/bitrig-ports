@@ -3,6 +3,7 @@
 CATEGORIES =	devel x11/kde4
 COMMENT =	programming language wrapper generator
 DISTNAME =	smokegen-${MODKDE4_VERSION}
+REVISION =	0
 
 # https://bugs.kde.org/show_bug.cgi?id=283677
 

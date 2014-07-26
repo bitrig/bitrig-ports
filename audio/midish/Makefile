@@ -4,8 +4,7 @@ COMMENT=		command line MIDI sequencer and filter
 DISTNAME=		midish-1.0.6
 CATEGORIES=		audio
 HOMEPAGE=		http://www.midish.org/
-MAINTAINER=		Alexandre Ratchov <alex@caoua.org>
-REVISION=		0
+REVISION=		1
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

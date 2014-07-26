@@ -3,6 +3,7 @@
 COMMENT=		stand-alone tray for EWMH-compliant window managers
 
 DISTNAME=		stalonetray-0.8.1
+REVISION=		0
 CATEGORIES=		x11 sysutils
 
 HOMEPAGE=		http://stalonetray.sourceforge.net/

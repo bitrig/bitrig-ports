@@ -6,9 +6,8 @@ MODULES=	cpan
 V=		0.22
 DISTNAME=	RadiusPerl-$V
 PKGNAME=	p5-Authen-Radius-$V
+REVISION=	0
 CATEGORIES=	security
-
-MAINTAINER=	Abel Abraham Camarillo Ojeda <acamari@the00z.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

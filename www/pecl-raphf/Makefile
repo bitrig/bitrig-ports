@@ -3,6 +3,7 @@
 COMMENT=	persistent handle and resource factory API
 
 DISTNAME=	raphf-1.0.4
+REVISION=	0
 
 # PHP
 PERMIT_PACKAGE_CDROM=	Yes

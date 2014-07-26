@@ -3,6 +3,7 @@
 COMMENT=		creates and XML Stream connection and parses return data
 
 DISTNAME=		XML-Stream-1.23
+REVISION=		0
 CATEGORIES=		textproc
 
 MODULES=		cpan

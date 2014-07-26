@@ -4,13 +4,12 @@ V =		1.0.0
 COMMENT =	primitives drawing/other support functions for SDL2
 DISTNAME =	SDL2_gfx-${V}
 PKGNAME =	sdl2-gfx-${V}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel graphics x11
 
 SHARED_LIBS +=	SDL2_gfx		0.0 # 0.0
 
 HOMEPAGE =	http://www.ferzkopp.net/joomla/content/view/19/14/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # zlib
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT=		JSON implementation for Ruby
 
 DISTNAME=		json_pure-1.7.6
-REVISION =		0
+REVISION =		1
 CATEGORIES=		devel
 
 HOMEPAGE=		http://flori.github.com/json/

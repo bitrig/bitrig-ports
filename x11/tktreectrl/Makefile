@@ -4,12 +4,11 @@ SHARED_ONLY =		Yes
 
 COMMENT =		tree widget extension for Tk
 DISTNAME =		tktreectrl-2.4.1
-REVISION =		0
+REVISION =		1
 EPOCH =			0
 SHARED_LIBS =		treectrl24 0.0
 CATEGORIES =		x11
 HOMEPAGE =		http://tktreectrl.sourceforge.net/
-MAINTAINER =		Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

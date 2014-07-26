@@ -4,10 +4,8 @@ COMMENT=		emulate IO::File interface for in-core strings
 
 MODULES=		cpan
 DISTNAME=		IO-String-1.08
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
-
-MAINTAINER=		Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

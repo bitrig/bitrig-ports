@@ -3,7 +3,7 @@
 COMMENT=	digital camera frontend
 
 DISTNAME=	gtkam-0.2.0
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	graphics
 

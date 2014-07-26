@@ -4,6 +4,7 @@ COMMENT=	validate, correct and pretty-print HTML
 
 V=		1.04
 DISTNAME=	tidyp-$V
+REVISION=	0
 EPOCH=		0
 SHARED_LIBS +=  tidyp-$V                  0.0 # 0.0
 SHARED_LIBS +=  tidyp                     0.0 # 0.0

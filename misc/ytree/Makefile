@@ -3,7 +3,7 @@
 COMMENT=	DOS-XTREE(tm) look-a-like file manager
 
 DISTNAME=	ytree-1.97
-REVISION=	0
+REVISION=	1
 CATEGORIES=	misc
 
 HOMEPAGE=	http://www.han.de/~werner/ytree.html

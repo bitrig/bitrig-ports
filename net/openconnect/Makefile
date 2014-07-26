@@ -3,14 +3,13 @@
 COMMENT=	client for Cisco AnyConnect SSL VPN
 
 DISTNAME=	openconnect-6.00
+REVISION=	0
 
 SHARED_LIBS +=  openconnect               3.0 # 3.3
 
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.infradead.org/openconnect/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # LGPLv2.1 only
 PERMIT_PACKAGE_CDROM=	Yes

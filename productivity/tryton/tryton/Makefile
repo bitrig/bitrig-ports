@@ -5,6 +5,7 @@ MODPY_EGG_VERSION =	3.2.2
 COMMENT =		client of the Tryton application platform
 
 DISTNAME =		tryton-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		x11
 

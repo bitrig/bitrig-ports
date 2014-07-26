@@ -4,7 +4,7 @@ COMMENT=	widget that looks just like a Mac OS 9 progress bar
 
 DISTNAME=	Tk-ProgressBar-Mac-1.2
 PKGNAME=	p5-${DISTNAME}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11 devel perl5
 
 # GPL

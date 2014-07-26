@@ -3,8 +3,8 @@
 COMMENT =		ports-readmes dancer web app
 PKG_ARCH = *
 DISTNAME =		ports-readmes-dancer-3
+REVISION =		0
 
-MAINTAINER =		Marc Espie <espie@openbsd.org>
 MASTER_SITES  =		ftp://quatramaran.ens.fr/pub/espie/
 CATEGORIES =		databases www
 

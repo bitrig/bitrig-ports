@@ -4,7 +4,7 @@ COMMENT=	Perl module implementing assertions
 
 MODULES=	cpan
 DISTNAME=	Carp-Assert-0.20
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # Perl

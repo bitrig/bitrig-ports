@@ -3,12 +3,11 @@
 COMMENT =	Enigma levels to the game chroma
 
 DISTNAME =	chroma-enigma-0.20101210
+REVISION =	0
 
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://level7.org.uk/chroma/
-
-MAINTAINER =	LEVAI Daniel <leva@ecentrum.hu>
 
 # Public Domain
 PERMIT_PACKAGE_CDROM =	Yes

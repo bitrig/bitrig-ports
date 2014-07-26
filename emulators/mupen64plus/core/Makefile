@@ -2,7 +2,7 @@
 
 COMMENT =		n64 emulator core
 SHARED_LIBS =		mupen64plus 2.2 # 2.0
-REVISION =		3
+REVISION =		4
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

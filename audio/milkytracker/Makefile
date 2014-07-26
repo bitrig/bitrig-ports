@@ -4,7 +4,7 @@ COMMENT =		Fasttracker II inspired MOD tracker
 
 DISTNAME =		milkytracker-0.90.86
 CATEGORIES =		audio
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://www.milkytracker.org/
 

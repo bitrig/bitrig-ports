@@ -4,12 +4,10 @@ COMMENT=	simple interface to subversion's editor interface#'
 
 MODULES=	cpan
 DISTNAME=	SVN-Simple-0.27
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 
 CPAN_AUTHOR=	CLKAO
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

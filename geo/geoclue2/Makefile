@@ -6,7 +6,7 @@ VERSION=		2.1.9
 DISTNAME=		geoclue-${VERSION}
 PKGNAME=		geoclue2-${VERSION}
 CATEGORIES=		geo devel
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://geoclue.freedesktop.org/
 

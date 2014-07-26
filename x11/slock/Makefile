@@ -3,12 +3,11 @@
 COMMENT=		simple X screen locker
 
 DISTNAME=		slock-1.1
+REVISION=		0
 
 CATEGORIES=		x11
 
 HOMEPAGE=		http://tools.suckless.org/slock
-
-MAINTAINER=		Gleydson Soares <gsoares@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

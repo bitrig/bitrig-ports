@@ -6,7 +6,7 @@ BROKEN-m88k=		lacks cpu information
 MODPY_EGG_VERSION=	1.6.0
 DISTNAME=		numpy-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION =		4
+REVISION =		5
 CATEGORIES=		math devel
 
 HOMEPAGE=		http://numpy.scipy.org/

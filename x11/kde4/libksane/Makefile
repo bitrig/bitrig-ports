@@ -3,6 +3,7 @@
 COMMENT =	KDE SANE (scanner) wrapper library
 CATEGORIES =	graphics devel
 DISTNAME =	libksane-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	ksane			50.0	# 0.2
 

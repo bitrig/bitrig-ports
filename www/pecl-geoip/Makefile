@@ -3,6 +3,7 @@
 COMMENT=	PHP support for geocoding IPv4 addresses
 
 DISTNAME=	geoip-1.0.8
+REVISION=	0
 
 # PHP
 PERMIT_PACKAGE_CDROM=	Yes

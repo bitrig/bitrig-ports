@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		adding keywords to perl, in perl
 
 DISTNAME=		Devel-Declare-0.006007
-REVISION=		1
+REVISION=		2
 
 CATEGORIES=		devel
 

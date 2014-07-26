@@ -4,7 +4,7 @@ COMMENT=	Xfce4 web search panel plugin
 
 XFCE_VERSION=	0.4.5
 XFCE_PLUGIN=	smartbookmark
-REVISION=	2
+REVISION=	3
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

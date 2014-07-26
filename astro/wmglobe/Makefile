@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; displays the earth on an icon
 
 DISTNAME=		wmglobe-1.3
-REVISION=		5
+REVISION=		6
 CATEGORIES=		astro x11 x11/windowmaker
 
 HOMEPAGE=		http://hamete.org/static/wmg/

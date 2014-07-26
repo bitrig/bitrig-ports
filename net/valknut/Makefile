@@ -3,7 +3,7 @@
 COMMENT=	Graphical Direct-Connect client
 
 DISTNAME=	valknut-0.3.7
-REVISION=	5
+REVISION=	6
 CATEGORIES=	net
 
 HOMEPAGE=	http://wxdcgui.sourceforge.net/

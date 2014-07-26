@@ -6,13 +6,11 @@ COMMENT-wnn=	Japanized Vim, wnn input method
 COMMENT-wnn-canna=Japanized Vim, canna or wnn input method
 DISTNAME=	jvim2.0r+onew2.2.10
 PKGNAME=	ja-jvim-2.0r
-REVISION=	2
+REVISION=	3
 CATEGORIES=	japanese editors
 
 MASTER_SITES=	ftp://ftp.lab.kdd.co.jp/Japan/onew/ \
 		ftp://ftp.leo.chubu.ac.jp/pub/editor/jvim/
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

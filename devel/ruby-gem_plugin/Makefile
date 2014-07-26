@@ -3,7 +3,7 @@
 COMMENT=	install Ruby gems as plugins
 
 DISTNAME=	gem_plugin-0.2.3
-REVISION=	7
+REVISION=	8
 CATEGORIES=	devel
 
 # RubyLicense

@@ -5,13 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	secure, fast, compliant, and very flexible web-server
 
 DISTNAME=	lighttpd-1.4.35
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www net
 MASTER_SITES=	http://download.lighttpd.net/lighttpd/releases-1.4.x/
 
 HOMEPAGE=	http://www.lighttpd.net/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

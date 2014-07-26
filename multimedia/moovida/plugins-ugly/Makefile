@@ -2,7 +2,7 @@
 
 COMMENT =	Moovida media center - ugly plugins
 DISTNAME =	moovida-plugins-ugly-${VERSION}
-REVISION =	11
+REVISION =	12
 
 BUILD_DEPENDS +=	multimedia/moovida/core
 

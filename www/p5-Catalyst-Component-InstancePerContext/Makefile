@@ -4,11 +4,9 @@ COMMENT =	return a new component instance per request
 
 MODULES =	cpan
 DISTNAME =	Catalyst-Component-InstancePerContext-0.001001
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

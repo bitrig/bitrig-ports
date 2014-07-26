@@ -3,7 +3,7 @@
 COMMENT=	OTP and S/Key calculator for X
 
 DISTNAME=	otpCalc-0.97
-REVISION=	7
+REVISION=	8
 CATEGORIES=    	security
 
 HOMEPAGE=	http://www.killa.net/infosec/otpCalc/

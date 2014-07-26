@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		LADSPA plugins from Steve Harris
 
 DISTNAME =		swh-plugins-0.4.15
-REVISION =		2
+REVISION =		3
 CATEGORIES =		audio
 
 HOMEPAGE =		http://plugin.org.uk/

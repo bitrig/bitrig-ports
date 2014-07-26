@@ -3,7 +3,7 @@
 COMMENT= 	PostScript and PDF previewer
 
 DISTNAME=	gv-3.7.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	print
 
 HOMEPAGE=	https://www.gnu.org/software/gv/

@@ -3,7 +3,7 @@
 COMMENT =	ruby DSL around a subset of XPath 1.0
 
 DISTNAME =	xpath-0.1.4
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
 
 HOMEPAGE=	https://github.com/jnicklas/xpath

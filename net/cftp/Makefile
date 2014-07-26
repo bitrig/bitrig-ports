@@ -3,12 +3,10 @@
 COMMENT=	full screen FTP client
 
 DISTNAME=	cftp-0.12
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 HOMEPAGE=	http://ftp.giga.or.at/pub/nih/cftp/
-
-MAINTAINER=	Josh Rivel <dorqus@freek.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

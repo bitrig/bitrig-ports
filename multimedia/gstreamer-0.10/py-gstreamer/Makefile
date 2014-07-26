@@ -5,7 +5,7 @@ COMMENT=		Python bindings for GStreamer
 V=			0.10.22
 DISTNAME=		gst-python-${V}
 PKGNAME=		py-gstreamer-${V}
-REVISION=		4
+REVISION=		5
 
 HOMEPAGE=		http://gstreamer.freedesktop.org/modules/gst-python.html
 

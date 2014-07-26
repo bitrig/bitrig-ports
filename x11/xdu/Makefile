@@ -3,7 +3,7 @@
 COMMENT=		graphic disk usage viewer
 
 DISTNAME=		xdu-3.0
-REVISION=		3
+REVISION=		4
 CATEGORIES=     	x11
 
 # custom

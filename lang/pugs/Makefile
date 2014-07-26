@@ -3,6 +3,7 @@
 COMMENT =		Perl 6 Implementation
 
 DISTNAME =		Pugs-6.2.13.20130611
+REVISION =		0
 CATEGORIES =		lang devel
 HOMEPAGE =		http://pugscode.org/
 

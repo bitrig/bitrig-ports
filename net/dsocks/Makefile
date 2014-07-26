@@ -2,13 +2,11 @@
 
 COMMENT=		SOCKS client wrapper for *BSD
 DISTNAME=		dsocks-1.6
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 SHARED_LIBS=		dsocks 1.0
 
 HOMEPAGE=		http://monkey.org/~dugsong/dsocks/
-
-MAINTAINER=		Todd T. Fries <todd@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT =	simple code editor for GNUstep
 
 DISTNAME =	Gemas-0.3
-REVISION =	4
+REVISION =	5
 PKGNAME =	gnustep-${DISTNAME:L}
 
 HOMEPAGE =	http://wiki.gnustep.org/index.php/Gemas.app

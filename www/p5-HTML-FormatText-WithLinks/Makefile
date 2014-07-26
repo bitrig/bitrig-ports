@@ -4,11 +4,9 @@ COMMENT =	HTML to text conversion with links as footnotes
 
 MODULES =	cpan
 DISTNAME =	HTML-FormatText-WithLinks-0.11
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www textproc
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

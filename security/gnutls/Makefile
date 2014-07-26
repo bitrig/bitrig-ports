@@ -4,7 +4,7 @@ COMMENT=	GNU Transport Layer Security library
 
 V=		3.2.15
 DISTNAME=	gnutls-${V}
-REVISION=	0
+REVISION=	1
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	security
@@ -15,8 +15,6 @@ SHARED_LIBS +=  gnutls-xssl          0.0      # 0.0
 SHARED_LIBS +=  gnutls-openssl       27.2     # 27.2
 
 HOMEPAGE=	http://www.gnutls.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2.1+ - GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

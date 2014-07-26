@@ -4,7 +4,7 @@
 COMMENT=		Joe's Own Editor
 
 DISTNAME=		joe-3.7
-REVISION=		1
+REVISION=		2
 CATEGORIES=		editors
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=joe-editor/}
 

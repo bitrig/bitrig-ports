@@ -2,11 +2,10 @@
 
 COMMENT =	2D RTS space combat game
 DISTNAME =	spacezero-0.86.00
+REVISION =	0
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://spacezero.sourceforge.net/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

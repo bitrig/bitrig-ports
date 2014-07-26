@@ -2,7 +2,7 @@
 
 COMMENT =		YAML parser and emitter in C++
 DISTNAME =		yaml-cpp-0.3.0
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS =		yaml-cpp	1.0 # 0.3
 

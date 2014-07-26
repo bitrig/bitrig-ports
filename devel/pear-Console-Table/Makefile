@@ -5,7 +5,7 @@ COMMENT=	php class for building console-style tables
 DISTNAME=	Console_Table-1.1.4
 CATEGORIES=	devel
 
-REVISION=	0
+REVISION=	1
 
 MODULES=	www/pear
 

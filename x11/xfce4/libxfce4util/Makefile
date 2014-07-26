@@ -3,6 +3,7 @@
 COMMENT=	Xfce4 basic utility library
 
 XFCE_PROJECT=	libxfce4util
+REVISION=	0
 
 SHARED_LIBS +=  xfce4util            3.0 #.5.1
 

@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	perl interface for several perl XML modules
 
 DISTNAME=	XML-LibXML-Common-0.13
-REVISION=	7
+REVISION=	8
 CATEGORIES=	textproc
 
 LIB_DEPENDS=	textproc/libxml

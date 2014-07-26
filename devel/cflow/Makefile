@@ -3,12 +3,10 @@
 COMMENT =	analyze C source files and print a call graph
 
 DISTNAME =	cflow-1.4
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 
 HOMEPAGE =	https://www.gnu.org/software/cflow/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =		Yes

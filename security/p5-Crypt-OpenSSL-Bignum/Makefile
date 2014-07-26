@@ -6,7 +6,7 @@ COMMENT=	OpenSSL's multiprecision integer arithmetic
 
 MODULES=	cpan
 DISTNAME=	Crypt-OpenSSL-Bignum-0.04
-REVISION=	5
+REVISION=	6
 CATEGORIES=	security
 
 # Artistic licence

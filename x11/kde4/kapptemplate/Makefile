@@ -2,6 +2,7 @@
 
 COMMENT =	app template generator for KDE development
 DISTNAME =	kapptemplate-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/kapptemplate

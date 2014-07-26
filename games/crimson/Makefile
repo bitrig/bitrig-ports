@@ -4,6 +4,7 @@ BROKEN-arm=	mktileset buggy, loops at high CPU use
 
 COMMENT=	tactical war game like Battle Isle; multiplayer
 DISTNAME=	crimson-0.5.3
+REVISION=	0
 CATEGORIES=	games x11
 MASTER_SITES=	${HOMEPAGE}files/
 

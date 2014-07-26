@@ -3,12 +3,10 @@
 COMMENT =	language for typesetting graphs
 
 DISTNAME =	grap-1.44
-REVISION =	0
+REVISION =	1
 CATEGORIES =	textproc graphics
 
 HOMEPAGE =	http://lunabase.org/~faber/Vault/software/grap/
-
-MAINTAINER =	Hermann Gottschalk <magnum@pestilenz.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM = Yes

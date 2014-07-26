@@ -7,6 +7,7 @@ COMMENT=	New Jersey Standard ML
 V=		110.76
 
 PKGNAME=	smlnj-$V
+REVISION=	0
 CATEGORIES=	lang
 
 HOMEPAGE=	http://www.smlnj.org/

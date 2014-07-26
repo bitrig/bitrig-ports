@@ -5,12 +5,11 @@ COMMENT=	checks HTML documents for broken links
 MODPY_EGG_VERSION=8.4
 DISTNAME=	LinkChecker-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:L}
+REVISION=	0
 
 CATEGORIES=    	www
 
 HOMEPAGE=	http://wummel.github.com/linkchecker/
-
-MAINTAINER=	Amit Kulkarni <amitkulz@gmail.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

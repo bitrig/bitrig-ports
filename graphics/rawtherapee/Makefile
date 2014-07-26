@@ -3,12 +3,11 @@
 COMMENT =		RAW image processing application
 
 DISTNAME =		rawtherapee-4.1
+REVISION =		0
 
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://www.rawtherapee.com/
-
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

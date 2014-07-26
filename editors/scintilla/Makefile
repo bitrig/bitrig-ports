@@ -6,14 +6,12 @@ VERSION=	3.0.0
 DISTNAME=	scintilla${VERSION:S/.//g}
 PKGNAME=	scintilla-${VERSION}
 CATEGORIES=	editors x11
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS=	scintilla		8.0 \
 		scintilla_lexers	8.0
 
 HOMEPAGE=	http://www.scintilla.org/
-
-MAINTAINER=	Jeremy Evans <jeremy@openbsd.org>
 
 # old Python license
 PERMIT_PACKAGE_CDROM=	may not sell

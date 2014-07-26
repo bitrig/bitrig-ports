@@ -3,7 +3,7 @@
 COMMENT=	Internet CB - mostly-defunct chat client
 
 DISTNAME=	icb-5.0.9
-REVISION=	5
+REVISION=	6
 CATEGORIES=	net
 
 MASTER_SITES=	ftp://ftp.swcp.com/pub/icb/clients/unix/

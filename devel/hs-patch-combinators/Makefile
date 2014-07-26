@@ -3,7 +3,7 @@
 COMMENT =		library for patching functions and data structures
 
 DISTNAME =		patch-combinators-0.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 # BSD3

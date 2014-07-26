@@ -4,6 +4,7 @@ COMMENT=	Catalyst views using Mason components
 
 MODULES=	cpan
 DISTNAME=	Catalyst-View-Mason-0.18
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
 

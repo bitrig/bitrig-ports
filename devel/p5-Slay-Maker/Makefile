@@ -3,11 +3,9 @@
 COMMENT=	perl make engine using perl code for rules
 
 DISTNAME=	Slay-Maker-0.07
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 MODULES=	cpan
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

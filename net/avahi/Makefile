@@ -26,17 +26,15 @@ PKGNAME-qt3=		avahi-qt3-${V}
 PKGNAME-qt4=		avahi-qt4-${V}
 PKGNAME-ui=		avahi-ui-${V}
 
-REVISION-main=		13
-REVISION-gtk=		5
-REVISION-gtk3=		5
-REVISION-gui=		8
-REVISION-mono=		2
-REVISION-qt3=		4
-REVISION-qt4=		4
-REVISION-ui=		3
-REVISION-python=	0
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
+REVISION-main=		14
+REVISION-gtk=		6
+REVISION-gtk3=		6
+REVISION-gui=		9
+REVISION-mono=		3
+REVISION-qt3=		5
+REVISION-qt4=		5
+REVISION-ui=		4
+REVISION-python=	1
 
 SHARED_LIBS +=  avahi-common         0.0      # .8.0
 SHARED_LIBS +=  avahi-core           0.0      # .5.5

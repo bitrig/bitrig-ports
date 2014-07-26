@@ -14,11 +14,9 @@ SHARED_LIBS +=  BulletSoftBody            0.0 # 2.79
 SHARED_LIBS +=  LinearMath                0.0 # 2.79
 
 CATEGORIES =		devel
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://bulletphysics.org
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # zlib
 PERMIT_PACKAGE_CDROM =	Yes

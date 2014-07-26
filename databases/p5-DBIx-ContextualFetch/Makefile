@@ -3,12 +3,10 @@
 COMMENT=	add contextual fetches to DBI
 
 DISTNAME=	DBIx-ContextualFetch-1.03
-REVISION=	1
+REVISION=	2
 CATEGORIES=	databases
 MODULES=	cpan
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

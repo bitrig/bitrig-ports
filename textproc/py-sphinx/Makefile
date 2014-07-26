@@ -5,13 +5,11 @@ COMMENT =		python documentation generator
 MODPY_EGG_VERSION =	1.1.3
 DISTNAME =		Sphinx-${MODPY_EGG_VERSION}
 PKGNAME =		py-sphinx-${MODPY_EGG_VERSION}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		textproc
 
 HOMEPAGE =		http://sphinx.pocoo.org/
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

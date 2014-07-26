@@ -2,15 +2,13 @@
 # Original from: Yannick Cote
 
 DISTNAME=		lam-6.5.9
-REVISION =		2
+REVISION =		3
 SHARED_LIBS +=  lamf77mpi	0.0	# .0.0
 SHARED_LIBS +=  pmpi		0.0	# .0.0
 SHARED_LIBS +=  lam		0.0	# .0.0
 SHARED_LIBS +=  mpi		0.0	# .0.0
 CATEGORIES=     	devel math net comms
 COMMENT=		great implementation of the message passing interface
-
-MAINTAINER=		Todd T. Fries <todd@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c util

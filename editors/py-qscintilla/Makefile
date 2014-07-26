@@ -6,7 +6,7 @@ VERSION =	2.8
 DISTNAME =	QScintilla-gpl-${VERSION}
 PKGNAME =	py-qscintilla-${VERSION}
 CATEGORIES =	editors x11 devel
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://www.riverbankcomputing.com/software/qscintilla/
 

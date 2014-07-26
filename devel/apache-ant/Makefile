@@ -3,6 +3,7 @@
 COMMENT=        build tool for java applications
 
 DISTNAME=	apache-ant-1.9.4
+REVISION=	0
 CATEGORIES=	devel
 
 HOMEPAGE=	http://ant.apache.org/

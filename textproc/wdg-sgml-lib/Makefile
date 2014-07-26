@@ -3,12 +3,10 @@
 COMMENT=	collection of HTML, XHTML, ISO-HTML, WML and MathML DTDs
 
 DISTNAME=	wdg-sgml-lib-1.1.4
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.htmlhelp.com/tools/validator/offline/
-
-MAINTAINER=	Gerardo Santana Gomez Garrido <gerardo.santana@gmail.com>
 
 # custom
 PERMIT_PACKAGE_CDROM=	Yes

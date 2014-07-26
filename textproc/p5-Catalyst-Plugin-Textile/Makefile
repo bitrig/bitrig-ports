@@ -3,10 +3,8 @@
 COMMENT=	Textile for Catalyst
 
 DISTNAME=	Catalyst-Plugin-Textile-0.01
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

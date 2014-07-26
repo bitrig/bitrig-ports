@@ -2,6 +2,7 @@
 
 COMMENT=	oxford advanced learners' dictiction of current english
 DISTNAME=	festlex_OALD
+REVISION=	0
 
 PERMIT_PACKAGE_CDROM=	no fee
 

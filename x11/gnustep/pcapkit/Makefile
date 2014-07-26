@@ -4,7 +4,7 @@ COMMENT =	GNUstep wrapper around libpcap
 
 V =		0.2
 DISTNAME =	PcapKit-${V}
-REVISION =	0
+REVISION =	1
 PKGNAME =	gnustep-pcapkit-${V}
 CATEGORIES =	net
 

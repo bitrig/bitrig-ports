@@ -4,7 +4,7 @@ COMMENT =	event loop and event-driven async socket base class
 
 MODULES =	cpan
 DISTNAME =	Danga-Socket-1.61
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	net
 

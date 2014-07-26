@@ -4,7 +4,7 @@ COMMENT=	garmin gps map management tool
 
 DISTNAME=	QLandkarte_final
 PKGNAME=	qlandkarte-0.7.4
-REVISION=	6
+REVISION=	7
 
 CATEGORIES=	geo x11
 
@@ -12,8 +12,6 @@ HOMEPAGE=	http://qlandkarte.sourceforge.net/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qlandkarte/}
 

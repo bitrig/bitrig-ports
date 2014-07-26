@@ -3,13 +3,11 @@
 COMMENT=		extract files from InstallShield CAB archives
 
 DISTNAME=		unshield-0.6
-REVISION=		0
+REVISION=		1
 SHARED_LIBS+=		unshield	2.0	# .0.0
 CATEGORIES=		archivers
 
 HOMEPAGE=		http://sourceforge.net/projects/synce/
-
-MAINTAINER=		Jonathan Gray <jsg@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=		Yes

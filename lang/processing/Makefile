@@ -7,7 +7,7 @@ COMMENT=		language/IDE for images, animations and interactions
 V=			1.5.1
 DISTNAME=		processing-$V-linux
 PKGNAME=		${DISTNAME:S/-linux//}
-REVISION=		5
+REVISION=		6
 
 CATEGORIES=		lang graphics
 

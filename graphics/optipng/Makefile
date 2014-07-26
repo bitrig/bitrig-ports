@@ -2,11 +2,10 @@
 
 COMMENT =		lossless PNG optimizer
 DISTNAME =		optipng-0.7.5
+REVISION =		0
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://optipng.sourceforge.net/
-
-MAINTAINER =		Kyle Isom <kyle@tyrfingr.is>
 
 # zlib
 PERMIT_PACKAGE_CDROM =	Yes

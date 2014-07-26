@@ -4,9 +4,8 @@ COMMENT =	finds out which version of Perl modules are installed
 
 MODULES =	cpan
 DISTNAME =	Module-Which-0.0207
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Okan Demirmen <okan@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

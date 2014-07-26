@@ -4,10 +4,8 @@ COMMENT=	instantiate plugins as they're found
 
 MODULES=	cpan
 DISTNAME=	Module-Pluggable-Fast-0.18
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

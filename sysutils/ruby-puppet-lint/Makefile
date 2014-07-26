@@ -3,11 +3,9 @@
 COMMENT=	ensure your Puppet manifests conform with the style guide
 
 DISTNAME=	puppet-lint-0.3.2
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	sysutils
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE=	http://puppet-lint.com/
 

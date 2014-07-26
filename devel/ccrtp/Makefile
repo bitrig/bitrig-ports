@@ -3,7 +3,7 @@
 COMMENT=	implementation of the Real-time Transport Protocol
 
 DISTNAME=	ccrtp-1.7.1
-REVISION =	4
+REVISION =	5
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=ccrtp/}
 

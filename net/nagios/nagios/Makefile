@@ -4,8 +4,8 @@ COMMENT-main=	host and service monitor
 COMMENT-web=	cgis and webpages for nagios
 
 V=		4.0.1
-REVISION-main=	4
-REVISION-web=	1
+REVISION-main=	5
+REVISION-web=	2
 DISTNAME=	nagios-$V
 PKGNAME-main=	nagios-$V
 PKGNAME-web=	nagios-web-$V

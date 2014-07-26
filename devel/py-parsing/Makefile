@@ -6,7 +6,7 @@ MODPY_EGG_VERSION =	1.5.7
 DISTNAME =		pyparsing-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/py/py-/}
 CATEGORIES =		devel
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://pyparsing.wikispaces.com/
 

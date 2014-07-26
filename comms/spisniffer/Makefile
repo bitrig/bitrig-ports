@@ -4,6 +4,7 @@ COMMENT=		Bus Pirate binary mode SPI sniffer
 
 # svn rev 598
 DISTNAME=		spisniffer-0.3
+REVISION=		0
 CATEGORIES=		comms devel
 
 HOMEPAGE=		http://dangerousprototypes.com/docs/Bus_Pirate_binary_SPI_sniffer_utility

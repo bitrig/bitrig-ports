@@ -4,6 +4,7 @@ COMMENT=		module to diff based on word, not lines
 
 MODULES=		cpan
 DISTNAME=		Text-WordDiff-0.07
+REVISION=		0
 CATEGORIES=		textproc
 USE_GROFF =		Yes
 

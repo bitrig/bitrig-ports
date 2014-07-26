@@ -7,7 +7,7 @@ COMMENT=	free, standards-compliant jvm with a small footprint
 DISTNAME=	jamvm-1.5.4
 CATEGORIES=	lang java
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=jamvm/}
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS=	jvm	0.0
 

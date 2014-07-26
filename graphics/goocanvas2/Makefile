@@ -5,6 +5,7 @@ COMMENT=		canvas widget for GTK+ based on Cairo
 GNOME_PROJECT=		goocanvas
 GNOME_VERSION=		2.0.2
 PKGNAME=		goocanvas2-${GNOME_VERSION}
+REVISION=		0
 
 SHARED_LIBS +=  goocanvas-2.0             0.0 # 11.0
 CATEGORIES=		graphics

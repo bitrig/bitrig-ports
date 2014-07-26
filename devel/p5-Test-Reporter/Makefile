@@ -4,6 +4,7 @@ COMMENT= 	sends test results to cpan-testers@perl.org
 
 MODULES=	cpan
 DISTNAME =	Test-Reporter-1.59
+REVISION =	0
 CATEGORIES=	devel
 
 EPOCH =		0

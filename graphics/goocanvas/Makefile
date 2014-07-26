@@ -6,7 +6,7 @@ GNOME_PROJECT=		goocanvas
 GNOME_VERSION=		1.0.0
 SHARED_LIBS +=  goocanvas            1.0      # .6.0
 CATEGORIES=		graphics
-REVISION=		3
+REVISION=		4
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -1,6 +1,6 @@
 # $OpenBSD: Makefile,v 1.5 2014/04/11 20:19:57 naddy Exp $
 
-REVISION =	1
+REVISION =	2
 
 MODULES +=	telephony/asterisk-sounds
 MODAS_NAME =	asterisk-moh-opsound

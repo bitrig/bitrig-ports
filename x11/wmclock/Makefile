@@ -3,6 +3,7 @@
 COMMENT=		Window Maker dock.app clock
 
 VERSION=		1.0.13
+REVISION=		0
 DISTNAME=		wmclock-${VERSION}
 CATEGORIES=		x11 x11/windowmaker
 MASTER_SITES=		${HOMEPAGE}

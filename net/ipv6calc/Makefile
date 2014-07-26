@@ -3,6 +3,7 @@
 COMMENT=	tool for manipulating IPv6 addresses
 
 DISTNAME=	ipv6calc-0.90.0
+REVISION=	0
 CATEGORIES=	net
 HOMEPAGE=	http://www.deepspace6.net/projects/ipv6calc.html
 

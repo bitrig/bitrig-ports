@@ -3,7 +3,7 @@
 COMMENT =	another synchronous Ruby amqp client
 
 DISTNAME =	bunny-0.6.0
-REVISION =	6
+REVISION =	7
 CATEGORIES =	net
 
 # MIT

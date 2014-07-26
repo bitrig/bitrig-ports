@@ -3,6 +3,7 @@
 COMMENT=		logging role for Moose
 
 DISTNAME=		MooseX-LogDispatch-1.2002
+REVISION=		0
 
 CATEGORIES=		devel
 

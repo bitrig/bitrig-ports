@@ -3,6 +3,7 @@
 COMMENT =		gem to aid building Web Service Security
 
 DISTNAME =		akami-1.2.0
+REVISION =		0
 
 HOMEPAGE =		https://github.com/savonrb/akami
 

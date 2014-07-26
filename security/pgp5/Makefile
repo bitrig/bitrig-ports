@@ -4,6 +4,7 @@ COMMENT=	Pretty Good Privacy 5.0i (world wide use)
 
 DISTNAME=	pgp50i-unix-src
 PKGNAME=	pgp-5.0i
+REVISION=	0
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.no.pgpi.com/pub/pgp/5.0/unix/ \
 		ftp://ftp.cz.pgpi.com/pub/pgp/5.0/unix/ \

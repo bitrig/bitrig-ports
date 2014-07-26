@@ -4,6 +4,7 @@ COMMENT=		threaded DNS daemon, optimized for caching
 
 DISTNAME=		pdnsd-1.2.9a-par
 PKGNAME=		${DISTNAME:S/-par//}
+REVISION=		0
 CATEGORIES=		net
 MASTER_SITES=		${HOMEPAGE}/releases/
 

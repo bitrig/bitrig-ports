@@ -4,9 +4,8 @@ COMMENT =	share Perl variables between processes
 
 MODULES =	cpan
 DISTNAME =	IPC-Shareable-0.61
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

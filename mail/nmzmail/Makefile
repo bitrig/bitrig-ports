@@ -3,12 +3,10 @@
 COMMENT=	fast maildir search engine
 
 DISTNAME=	nmzmail-1.1
-REVISION =	3
+REVISION =	4
 
 CATEGORIES=	mail textproc
 HOMEPAGE=	http://www.ecademix.com/JohannesHofmann/nmzmail.html
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,13 +3,11 @@
 COMMENT =	suite of portable game libraries
 
 DISTNAME =	plib-1.8.5
-REVISION =	4
+REVISION =	5
 CATEGORIES =	devel games
 
 HOMEPAGE =	http://plib.sourceforge.net/
 MASTER_SITES =	${HOMEPAGE}/dist/
-
-MAINTAINER =	Gallon Sylvestre <ccna.syl@gmail.com>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM =	Yes

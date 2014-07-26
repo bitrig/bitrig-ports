@@ -5,6 +5,7 @@ PKG_ARCH=	*
 COMMENT=	translate XML documents with PO files
 
 DISTNAME=	itstool-2.0.2
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 
 CATEGORIES=	textproc

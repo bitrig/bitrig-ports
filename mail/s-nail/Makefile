@@ -6,7 +6,7 @@ DISTNAME=		s-nail-14.4.5
 DISTFILES=		${DISTNAME:S/./_/g}.tar.gz
 CATEGORIES=		mail
 HOMEPAGE=		http://sdaoden.users.sourceforge.net/code.html#s-nail
-REVISION=		0
+REVISION=		1
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
@@ -14,7 +14,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB += c crypto idn ssl
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=s-nail/}
-MAINTAINER=		William Yodlowsky <william@openbsd.org>
 
 MODULES=		converters/libiconv
 

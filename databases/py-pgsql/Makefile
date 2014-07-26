@@ -5,12 +5,10 @@ COMMENT =	Python DB-API 2.0 compliant interface to PostgreSQL
 MODPY_EGG_VERSION = 2.5.1
 DISTNAME =	pyPgSQL-${MODPY_EGG_VERSION}
 PKGNAME =	py-pgsql-${MODPY_EGG_VERSION}
-REVISION =	5
+REVISION =	6
 CATEGORIES =	databases
 
 HOMEPAGE =	http://pypgsql.sourceforge.net/
-
-MAINTAINER =	Pierre-Emmanuel Andre <pea@raveland.org>
 
 # Python
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,6 +3,7 @@
 COMMENT=		configurable web traversal engine
 
 DISTNAME=		WWW-Robot-0.026
+REVISION=		0
 CATEGORIES=		www
 
 # perl

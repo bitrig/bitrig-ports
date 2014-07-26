@@ -3,7 +3,7 @@
 COMMENT=	fast, safe and extensible Markdown to (X)HTML parser
 
 DISTNAME=	redcarpet-2.2.2
-REVISION =	2
+REVISION =	3
 
 CATEGORIES=	textproc
 

@@ -3,7 +3,7 @@
 COMMENT=	network socket interface support for PHP
 
 DISTNAME=	Net_Socket-1.0.10
-REVISION=		0
+REVISION=		1
 CATEGORIES=	net
 
 MODULES=	www/pear

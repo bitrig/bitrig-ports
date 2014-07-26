@@ -3,7 +3,7 @@
 COMMENT=	implementation of the IMAP protocol for PHP
 
 DISTNAME=	Net_IMAP-1.1.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=	net
 
 MODULES=	www/pear

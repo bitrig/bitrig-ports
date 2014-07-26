@@ -3,6 +3,7 @@
 COMMENT=	blow holes through windows
 
 DISTNAME=	blast-1.0
+REVISION=	0
 CATEGORIES=	x11
 DISTFILES=	${DISTNAME}-src-11.00.tar.gz
 

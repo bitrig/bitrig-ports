@@ -3,7 +3,7 @@
 COMMENT =	Ruby parser written in pure Ruby
 
 DISTNAME =	ruby_parser-2.3.1
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 
 # MIT

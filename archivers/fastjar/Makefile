@@ -3,11 +3,10 @@
 COMMENT =	Sun JDK's jar command written entirely in C
 
 DISTNAME =	fastjar-0.94
+REVISION =	0
 CATEGORIES =	archivers
 
 HOMEPAGE =	http://fastjar.sourceforge.net/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

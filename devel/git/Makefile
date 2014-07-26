@@ -7,13 +7,12 @@ COMMENT-x11 =	GIT - graphical tools
 V =		1.9.3
 DISTNAME =	git-${V}
 PKGNAME-main =	${DISTNAME}
+REVISION =	0
 PKGNAME-svn =	git-svn-${V}
 PKGNAME-x11 =	git-x11-${V}
 CATEGORIES =	devel
 
 HOMEPAGE =	http://git-scm.com/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM = Yes

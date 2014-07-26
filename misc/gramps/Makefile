@@ -4,6 +4,7 @@ COMMENT=		Genealogical Research Analysis Management Programming System
 
 MODPY_EGG_VERSION=	4.1.0
 DISTNAME=		gramps-${MODPY_EGG_VERSION}
+REVISION=		0
 
 CATEGORIES=		misc x11
 

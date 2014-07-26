@@ -4,11 +4,10 @@ COMMENT=		library for interfacing MPD
 
 VER=			2.9
 DISTNAME=		libmpdclient-${VER}
+REVISION=		0
 SHARED_LIBS=		mpdclient 2.0	# 2.9
 CATEGORIES=		audio
 HOMEPAGE=		http://www.musicpd.org/libs/libmpdclient/
-
-MAINTAINER=		David Coppa <dcoppa@openbsd.org>
 
 # 3-BSD
 PERMIT_PACKAGE_CDROM=	Yes

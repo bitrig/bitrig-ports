@@ -5,13 +5,12 @@ COMMENT-extra=	n64 emulator (all plugins)
 
 V=		2.0
 PKGNAME=	mupen64plus-${V}
+REVISION=	0
 
 PKGNAME-main=	mupen64plus-${V}
 PKGNAME-extra=	mupen64plus-extra-${V}
 
 HOMEPAGE=	https://code.google.com/p/mupen64plus/
-
-MAINTAINER=	Anthony J. Bentley <anthony@cathet.us>
 
 MULTI_PACKAGES=	-main -extra
 

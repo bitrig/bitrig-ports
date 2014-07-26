@@ -15,11 +15,11 @@ PKGNAME-rrdtool =	collectd-rrdtool-$V
 PKGNAME-snmp =		collectd-snmp-$V
 CATEGORIES =		sysutils
 
-REVISION-main=		4
-REVISION-mysql =	3
-REVISION-pgsql =	3
-REVISION-rrdtool =	2
-REVISION-snmp =		1
+REVISION-main=		5
+REVISION-mysql =	4
+REVISION-pgsql =	4
+REVISION-rrdtool =	3
+REVISION-snmp =		2
 
 HOMEPAGE =		http://www.collectd.org/
 SHARED_LIBS +=		collectdclient 0.0

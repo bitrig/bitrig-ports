@@ -3,13 +3,11 @@
 COMMENT=		library for managing information about operating systems
 
 DISTNAME=		libosinfo-0.2.10
-REVISION=		3
+REVISION=		4
 
 SHARED_LIBS +=  osinfo-1.0           0.0      # .2.10
 
 CATEGORIES=		misc devel
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 HOMEPAGE=		http://libosinfo.org/
 

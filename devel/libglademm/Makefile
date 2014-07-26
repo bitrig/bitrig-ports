@@ -6,7 +6,7 @@ GNOME_PROJECT=	libglademm
 GNOME_VERSION=	2.6.7
 EXTRACT_SUFX=	.tar.bz2
 
-REVISION=	8
+REVISION=	9
 
 SHARED_LIBS +=	glademm-2.4          1.7      # .1.5
 

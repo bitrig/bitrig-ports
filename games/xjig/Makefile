@@ -3,7 +3,7 @@
 COMMENT=	jigsaw puzzle game for X11
 
 DISTNAME=	xjig-2.4
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games
 
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=games/}

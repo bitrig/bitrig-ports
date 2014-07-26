@@ -3,10 +3,9 @@
 COMMENT =		attoparsec parsers for http-types
 
 DISTNAME =		http-attoparsec-0.1.0
+REVISION =		0
 CATEGORIES =		devel textproc www
 HOMEPAGE =		https://github.com/tlaitinen/http-attoparsec
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

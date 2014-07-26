@@ -5,6 +5,7 @@ COMMENT= 	sets of integers
 MODULES=	cpan
 
 DISTNAME=	Set-IntRange-5.2
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

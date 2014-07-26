@@ -3,11 +3,9 @@
 COMMENT =	OpenMoko serial console tool
 
 DISTNAME =	omconsole-1.1
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	misc
-
-MAINTAINER =	Matthieu Herrb <matthieu@herrb.eu>
 
 # BSD
 PERMIT_PACKAGE_CDROM =		Yes

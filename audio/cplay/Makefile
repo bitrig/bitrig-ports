@@ -3,12 +3,10 @@
 COMMENT=		curses front-end for various audio players
 
 DISTNAME=		cplay-1.49
-REVISION =		7
+REVISION =		8
 CATEGORIES=		audio
 
 HOMEPAGE=		http://mask.tf.hut.fi/~flu/hacks/cplay/
-
-MAINTAINER=		Victor Sahlstedt <salan@legonet.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

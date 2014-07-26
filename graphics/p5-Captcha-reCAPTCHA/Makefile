@@ -4,10 +4,9 @@ COMMENT =	Perl implementation of the reCAPTCHA API
 
 MODULES =	cpan
 DISTNAME =	Captcha-reCAPTCHA-0.94
+REVISION =	0
 CATEGORIES =	graphics security
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

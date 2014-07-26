@@ -3,7 +3,7 @@
 COMMENT=		peek into the internals of a running POE environment
 
 DISTNAME=		POE-API-Peek-1.34
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		devel
 

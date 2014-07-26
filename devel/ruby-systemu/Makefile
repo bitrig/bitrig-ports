@@ -3,7 +3,7 @@
 COMMENT=		portable replacement for popen4
 
 DISTNAME=		systemu-2.5.2
-REVISION =		0
+REVISION =		1
 CATEGORIES=		devel
 
 HOMEPAGE=		https://github.com/ahoward/systemu

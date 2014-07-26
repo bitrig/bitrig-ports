@@ -4,7 +4,7 @@ COMMENT=		wm-dockapp; mail notifier
 
 DISTNAME=		WMMail.app-0.64
 PKGNAME=		wmmail-0.64
-REVISION=		2
+REVISION=		3
 CATEGORIES=		mail x11 x11/windowmaker
 
 # GPL

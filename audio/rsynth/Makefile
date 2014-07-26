@@ -2,7 +2,7 @@
 
 COMMENT=	speech synthesizer
 DISTNAME=	rsynth-2.0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/synthesis/
 

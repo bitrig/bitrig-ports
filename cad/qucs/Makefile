@@ -3,7 +3,7 @@
 COMMENT=	graphical circuit design and simulation tool
 
 DISTNAME=	qucs-0.0.16
-REVISION=	1
+REVISION=	2
 CATEGORIES=	cad
 
 HOMEPAGE=	http://qucs.sourceforge.net/

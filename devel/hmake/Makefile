@@ -3,11 +3,10 @@
 COMMENT =	compilation manager for Haskell programs
  
 DISTNAME =	hmake-3.14
-REVISION =	3
+REVISION =	4
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.haskell.org/hmake/
-MAINTAINER =	Matthias Kilian <kili@openbsd.org>
 
 MASTER_SITES =	${HOMEPAGE} \
 		http://www.cs.york.ac.uk/fp/hmake/ \

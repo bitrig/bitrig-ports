@@ -3,7 +3,7 @@
 COMMENT=	manipulates e-mail alias files of various formats
 
 DISTNAME=	Mail-Alias-1.12
-REVISION=	1
+REVISION=	2
 CATEGORIES=	mail
 
 PERMIT_PACKAGE_CDROM=	Yes

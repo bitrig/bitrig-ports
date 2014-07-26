@@ -3,9 +3,7 @@
 COMMENT=		Erlang inspired babysitting
 
 DISTNAME=		POE-Component-Supervisor-0.07
-REVISION=		1
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
+REVISION=		2
 
 CATEGORIES=		devel
 

@@ -3,7 +3,7 @@
 COMMENT=	DNS proxy that supports IPv6 <==> IPv4 record translation
 
 DISTNAME=	totd-1.5.1
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	http://www.dillema.net/software/totd/
 

@@ -5,13 +5,11 @@ COMMENT=		template plugin that supports Kid templates
 VERSION=		1.0.4
 DISTNAME=		TurboKid-${VERSION}
 PKGNAME=		py-turbokid-${VERSION}
-REVISION =		3
+REVISION =		4
 
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.turbogears.org/
-
-MAINTAINER=		Martynas Venckus <martynas@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

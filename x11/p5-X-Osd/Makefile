@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 
 MODULES =	cpan
 DISTNAME =	X-Osd-0.7
-REVISION =	3
+REVISION =	4
 CATEGORIES =	x11
 
 # Perl

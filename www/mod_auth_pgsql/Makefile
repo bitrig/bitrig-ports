@@ -2,15 +2,13 @@
 
 COMMENT =	Apache PostgreSQL authentication module
 
-REVISION=	6
+REVISION=	7
 DISTNAME =	mod_auth_pgsql-0.9.12
 CATEGORIES =	www
 
 HOMEPAGE =	http://www.giuseppetanzilli.it/mod_auth_pgsql
 MASTER_SITES =	${HOMEPAGE}/dist/
 MODULES =	apache-module
-
-MAINTAINER = 	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

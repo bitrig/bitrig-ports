@@ -6,7 +6,7 @@ COMMENT=	quota manipulation module
 
 MODULES=	cpan
 DISTNAME=	Quota-1.5.1
-REVISION=	5
+REVISION=	6
 CATEGORIES=	sysutils
 
 # perl

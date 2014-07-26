@@ -4,7 +4,7 @@ COMMENT=		verify email addresses and mailing lists
 
 DISTNAME=		vrfy_990522
 PKGNAME=		vrfy-99.05.22
-REVISION =		0
+REVISION =		1
 CATEGORIES=		mail
 
 PERMIT_PACKAGE_CDROM=	Yes

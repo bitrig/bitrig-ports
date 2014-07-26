@@ -3,12 +3,10 @@
 COMMENT=		ASCII art mathematics
 
 DISTNAME=		aamath-0.3
-REVISION=		2
+REVISION=		3
 CATEGORIES=		math
 
 HOMEPAGE=		http://fuse.superglue.se/aamath/
-
-MAINTAINER=		Matthias Kilian <kili@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

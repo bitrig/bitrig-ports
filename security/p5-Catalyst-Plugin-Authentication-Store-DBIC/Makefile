@@ -3,10 +3,8 @@
 COMMENT=	CDBI Authentication for Catalyst
 
 DISTNAME=	Catalyst-Plugin-Authentication-Store-DBIC-0.11
-REVISION=	2
+REVISION=	3
 CATEGORIES=	security
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

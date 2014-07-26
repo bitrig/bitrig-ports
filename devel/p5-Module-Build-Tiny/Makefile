@@ -3,10 +3,8 @@
 COMMENT =	tiny replacement for Module::Build
 
 DISTNAME =	Module-Build-Tiny-0.035
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

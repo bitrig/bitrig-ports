@@ -5,7 +5,7 @@ COMMENT =	calling UNIVERSAL::can as a function
 MODULES =	cpan
 DISTNAME =	UNIVERSAL-can-1.16
 PKGNAME =	p5-Universal-can-1.16
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 
 # perl

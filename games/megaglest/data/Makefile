@@ -2,6 +2,7 @@
 
 COMMENT =		megaglest game data files
 DISTNAME =		megaglest-data-${V}
+REVISION =		0
 WRKDIST =		${WRKDIR}/megaglest-${V}
 NO_BUILD = 		Yes
 PKG_ARCH = 		*

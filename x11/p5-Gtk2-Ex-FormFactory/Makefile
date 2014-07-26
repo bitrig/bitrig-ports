@@ -4,6 +4,7 @@ COMMENT=	framework which makes building complex GUIs easy
 
 MODULES=	cpan
 DISTNAME=	Gtk2-Ex-FormFactory-0.67
+REVISION=	0
 CATEGORIES=	x11
 USE_GROFF =	Yes
 

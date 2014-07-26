@@ -4,6 +4,7 @@ COMMENT=	fetch info from MPEG-4 files
 
 MODULES=	cpan
 DISTNAME=	MP4-Info-1.13
+REVISION=	0
 CATEGORIES=	audio
 
 # perl

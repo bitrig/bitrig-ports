@@ -3,6 +3,7 @@
 COMMENT=		interface to Music Brainz
 
 DISTNAME=		WebService-MusicBrainz-0.93
+REVISION=		0
 CATEGORIES=		www
 
 MODULES=		cpan

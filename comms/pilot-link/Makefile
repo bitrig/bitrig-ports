@@ -6,7 +6,7 @@ DISTNAME=	pilot-link-0.12.5
 SHARED_LIBS +=	pisock               11.0      # .9.2
 SHARED_LIBS +=	pisync               2.0      # .0.3
 
-REVISION=	7
+REVISION=	8
 
 CATEGORIES=	comms
 

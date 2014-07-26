@@ -5,10 +5,9 @@ COMMENT =	free module tracker editor and player
 DISTNAME =	schismtracker-20100101
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	audio x11
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://schismtracker.org/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

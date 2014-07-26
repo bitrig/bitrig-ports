@@ -2,6 +2,7 @@
 
 COMMENT =	patch tools library for KDE
 DISTNAME =	libkomparediff2-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/kompare

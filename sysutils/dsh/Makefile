@@ -3,6 +3,7 @@
 COMMENT=	dancers shell or distributed shell
 
 DISTNAME=	dsh-0.25.9
+REVISION=	0
 CATEGORIES=	sysutils net
 
 HOMEPAGE=	http://www.netfort.gr.jp/~dancer/software/dsh.html.en

@@ -2,8 +2,6 @@
 
 DIST_SUBDIR=	gnustep
 
-MAINTAINER?=	Sebastian Reitenbach <sebastia@openbsd.org>
-
 # GPLv3 - LGPLv3 (GNUStep core apps and libs)
 # GPLv2 - LGPLv2
 PERMIT_PACKAGE_CDROM?=   Yes

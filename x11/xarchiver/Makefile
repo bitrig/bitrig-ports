@@ -3,8 +3,8 @@
 COMMENT =	simple archive manager
 CATEGORIES =	x11 archivers
 DISTNAME =	xarchiver-0.5.3
+REVISION =	0
 
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=xarchiver/}
 EXTRACT_SUFX =	.tar.bz2
 HOMEPAGE =	http://xarchiver.sourceforge.net

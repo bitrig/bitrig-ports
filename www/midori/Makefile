@@ -4,12 +4,11 @@ SHARED_ONLY =	Yes
 COMMENT =	lightweight web browser
 
 XFCE_VERSION =	0.5.8
-REVISION =	0
+REVISION =	1
 XFCE_GOODIE =	midori
 WRKDIST =	${WRKDIR}
 
 HOMEPAGE =	http://www.midori-browser.org
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 CATEGORIES =	www
 SHARED_LIBS +=	midori-core 0.0 # 0.0
 

@@ -4,7 +4,7 @@ COMMENT=	provable prime number generator
 
 MODULES=	cpan
 DISTNAME=	Crypt-Primes-0.50
-REVISION=	1
+REVISION=	2
 CATEGORIES=	security
 USE_GROFF =	Yes
 

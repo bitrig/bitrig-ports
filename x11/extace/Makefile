@@ -3,7 +3,7 @@
 COMMENT=	audio visualization plugin for the X-Window System
 
 DISTNAME=	extace-1.9.9
-REVISION=	8
+REVISION=	9
 CATEGORIES=	x11 audio
 
 HOMEPAGE=	http://extace.sourceforge.net/

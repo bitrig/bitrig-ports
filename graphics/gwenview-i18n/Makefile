@@ -3,7 +3,7 @@
 COMMENT=	image viewer for KDE, translations
 
 DISTNAME=	gwenview-i18n-1.4.2
-REVISION=	3
+REVISION=	4
 CATEGORIES=	graphics x11 x11/kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gwenview/}
 EXTRACT_SUFX=	.tar.bz2

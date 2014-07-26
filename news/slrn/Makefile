@@ -3,12 +3,11 @@
 COMMENT=		SLang-based newsreader
 
 DISTNAME=		slrn-1.0.1
+REVISION=		0
 CATEGORIES=		news
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=slrn/}
 HOMEPAGE=		http://www.slrn.org/
-
-MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

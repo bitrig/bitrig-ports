@@ -3,9 +3,8 @@
 COMMENT =	helper for installing code into packages
 
 DISTNAME =	Sub-Install-0.927
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

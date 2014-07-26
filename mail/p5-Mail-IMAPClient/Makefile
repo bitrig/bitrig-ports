@@ -3,6 +3,7 @@
 COMMENT=	perl module for an IMAP Client API
 
 DISTNAME=	Mail-IMAPClient-3.35
+REVISION=	0
 CATEGORIES=	mail
 
 # Perl

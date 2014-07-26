@@ -14,12 +14,10 @@ COMMENT =	blend seams in panoramic image mosaics
 DISTNAME =	enblend-enfuse-4.0
 PKGNAME =	${DISTNAME:L}
 WRKDIST =	${WRKDIR}/enblend-enfuse-4.0-753b534c819d
-REVISION =	4
+REVISION =	5
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://enblend.sourceforge.net/
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+, MIT
 PERMIT_PACKAGE_CDROM =	Yes

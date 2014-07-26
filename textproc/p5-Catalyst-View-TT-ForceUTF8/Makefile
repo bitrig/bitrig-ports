@@ -4,6 +4,7 @@ COMMENT=	catalyst TT views with explicit UTF8 encoding (deprecated)
 
 MODULES=	cpan
 DISTNAME=	Catalyst-View-TT-ForceUTF8-0.13
+REVISION=	0
 CATEGORIES=	textproc devel
 USE_GROFF =	Yes
 

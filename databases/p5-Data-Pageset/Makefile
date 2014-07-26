@@ -3,7 +3,7 @@
 COMMENT=	pager utility
 
 DISTNAME=	Data-Pageset-1.06
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
 MODULES=	cpan
 

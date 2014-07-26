@@ -9,11 +9,9 @@ V_DLDIR =		${V:C/\.[0-9]$//}
 DISTNAME=		angband-v${V}
 PKGNAME=		angband-${V}
 CATEGORIES=     	games
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://rephial.org
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # Multi license, including GPLv2, angband license, CC, freeware...
 # The angband license contains the line "other copyrights may also apply"

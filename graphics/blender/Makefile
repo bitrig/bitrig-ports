@@ -5,13 +5,11 @@ ONLY_FOR_ARCHS = amd64 i386
 COMMENT =	3D creation software
 
 DISTNAME =	blender-2.71
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://www.blender.org/
-
-MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

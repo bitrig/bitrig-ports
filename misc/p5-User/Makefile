@@ -3,7 +3,7 @@
 COMMENT=		API for locating user information
 
 DISTNAME=		User-1.9
-REVISION=		0
+REVISION=		1
 CATEGORIES=		misc
 
 # Perl

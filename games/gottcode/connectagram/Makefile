@@ -3,6 +3,6 @@
 GAME =		connectagram
 COMMENT =	word unscrambling game
 DISTNAME =	${GAME}-1.1.1-src
-REVISION =	1
+REVISION =	2
 
 .include <bsd.port.mk>

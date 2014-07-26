@@ -3,6 +3,7 @@
 COMMENT =		BSD-licensed PGP implementation
 
 DISTNAME =		netpgp-20140220
+REVISION =		0
 
 SHARED_LIBS +=		mj                        1.0 # 0.0
 SHARED_LIBS +=		netpgp                    1.0 # 0.0
@@ -10,8 +11,6 @@ SHARED_LIBS +=		netpgp                    1.0 # 0.0
 CATEGORIES =		security
 
 HOMEPAGE =		http://www.netpgp.com
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

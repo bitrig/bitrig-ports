@@ -3,7 +3,7 @@
 COMMENT =		3D real-time strategy game
 DISTNAME =		megaglest-source-${V}
 PKGNAME =		megaglest-${V}
-REVISION =		3
+REVISION =		4
 
 WANTLIB += GL GLU GLEW ICE SDL SM X11 Xext c crypto curl fontconfig ftgl
 WANTLIB += freetype idn ircclient jpeg ${MODLUA_WANTLIB}

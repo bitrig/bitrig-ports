@@ -3,6 +3,7 @@
 COMMENT =		enlightenment DBus component
 
 DISTNAME =		e_dbus-1.7.9
+REVISION =		0
 EPOCH =			1
 
 SO_VERSION =		4.0	# 8.6

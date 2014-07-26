@@ -3,10 +3,8 @@
 COMMENT =		type-level programming library
 
 DISTNAME =		type-level-0.2.4
-REVISION=		3
+REVISION=		4
 CATEGORIES =		devel
-
-MAINTAINER =		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

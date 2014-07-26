@@ -5,7 +5,7 @@ COMMENT=	perl module for calculates time differences
 MODULES=	cpan
 VERSION=	1.2
 DISTNAME=	Date-Handler-${VERSION}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # perl

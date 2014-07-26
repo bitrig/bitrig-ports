@@ -2,6 +2,7 @@
 
 COMMENT =	KDE 4 default icon theme
 DISTNAME =	oxygen-icons-${MODKDE4_VERSION}
+REVISION =	0
 
 MODKDE4_VERSION =	4.13.2
 MODKDE4_RESOURCES =	Yes

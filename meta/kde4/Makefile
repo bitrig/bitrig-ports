@@ -20,7 +20,7 @@ PKGNAME-network =	kdenetwork-${MODKDE4_VERSION}
 PKGNAME-sdk =		kdesdk-${MODKDE4_VERSION}
 PKGNAME-toys =		kdetoys-${MODKDE4_VERSION}
 
-MAINTAINER =		KDE porting team <openbsd-kde@googlegroups.com>
+REVISION =		0
 
 MULTI_PACKAGES +=	-main -minimal -games
 

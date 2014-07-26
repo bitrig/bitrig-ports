@@ -4,6 +4,7 @@ COMMENT=	generic configuration parser, inspired by apache
 
 MODULES=	cpan
 DISTNAME=	Config-General-2.52
+REVISION=	0
 CATEGORIES=	devel
 HOMEPAGE=	http://www.daemon.de/ConfigGeneral
 

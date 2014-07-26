@@ -3,7 +3,7 @@
 COMMENT=	GNUstep example applications
 
 DISTNAME=	gnustep-examples-1.4.0
-REVISION =	1
+REVISION =	2
 
 CATEGORIES=	misc
 

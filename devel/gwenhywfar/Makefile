@@ -14,7 +14,7 @@ SHARED_LIBS +=	gwengui-qt4          0.0      # 0.0
 SHARED_LIBS +=	gwengui-cpp          0.0      # unknown
 
 CATEGORIES=	devel
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www2.aquamaniac.de/sites/download/packages.php?package=01&showall=1
 

@@ -4,9 +4,8 @@ COMMENT=	more sensible way to change directories
 
 MODULES=	cpan
 DISTNAME=	File-chdir-0.1008
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

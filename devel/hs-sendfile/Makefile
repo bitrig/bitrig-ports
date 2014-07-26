@@ -3,9 +3,8 @@
 COMMENT =		portable sendfile functionality
 
 DISTNAME =		sendfile-0.7.9
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

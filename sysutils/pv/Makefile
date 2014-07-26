@@ -3,6 +3,7 @@
 COMMENT =		monitor the progress of data through a pipeline
 
 DISTNAME =		pv-1.4.12
+REVISION =		0
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://www.ivarch.com/programs/pv.shtml

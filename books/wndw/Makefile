@@ -16,7 +16,8 @@ PKGNAME-pt =	wndw-pt-1.0
 PKGNAME-id =	wndw-id-2.0
 PKGNAME-my =	wndw-my-3.0
 
-REVISION-ar=	0
+REVISION=	0
+REVISION-ar=	1
 
 DISTNAME =	wndw
 
@@ -26,8 +27,6 @@ CATEGORIES =	books net
 PERMIT_PACKAGE_CDROM =	Yes
 
 MULTI_PACKAGES =-main -es -fr -ar -pt -id -my
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # High resolution print-ready PDFs are also available at the homepage
 # e.g. http://wndw.net/pdf/wndw3-en/wndw3-print.pdf (English edition).

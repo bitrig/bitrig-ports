@@ -5,11 +5,10 @@ COMMENT =		command line interface tools for Python
 MODPY_EGG_VERSION=	0.3.1
 DISTNAME=		clint-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION =		1
+REVISION =		2
 CATEGORIES=		devel
 
 HOMEPAGE =		https://pypi.python.org/pypi/clint
-MAINTAINER =		frantisek holop <minusf@obiit.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes

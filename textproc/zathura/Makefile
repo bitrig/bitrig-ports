@@ -2,13 +2,11 @@
 
 COMMENT =		pdf viewer with vi-like keybindings
 DISTNAME =		zathura-0.0.8.5
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		textproc x11
 
 HOMEPAGE =		http://pwmt.org/projects/zathura/
-
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@the00z.org>
 
 MODULES =		devel/gettext
 

@@ -3,12 +3,10 @@
 COMMENT=	regression testing software using Slay::Makefile
 
 DISTNAME=	Slay-Makefile-Gress-0.06
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 MODULES=	cpan
 USE_GROFF =	Yes
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

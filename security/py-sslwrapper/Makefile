@@ -7,7 +7,7 @@ COMMENT=	OpenSSL Wrappers for Python
 MODPY_EGG_VERSION=0.6.1
 DISTNAME=	POW-${MODPY_EGG_VERSION}
 PKGNAME=	py-sslwrapper-${MODPY_EGG_VERSION}
-REVISION=	7
+REVISION=	8
 CATEGORIES=    	security devel
 
 HOMEPAGE=	http://www.sourceforge.net/projects/pow/

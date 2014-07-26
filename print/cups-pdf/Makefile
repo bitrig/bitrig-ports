@@ -4,7 +4,7 @@ COMMENT=		PDF backend for CUPS
 
 DISTNAME=		cups-pdf-2.6.1
 CATEGORIES=		print
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://www.cups-pdf.de/
 MASTER_SITES=		${HOMEPAGE}src/

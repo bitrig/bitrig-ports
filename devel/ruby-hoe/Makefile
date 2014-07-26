@@ -3,7 +3,7 @@
 COMMENT=	simple rake/rubygems helper for project Rakefiles
 
 DISTNAME=	hoe-2.12.3
-REVISION =	1
+REVISION =	2
 CATEGORIES=	devel
 
 # MIT

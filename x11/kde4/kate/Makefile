@@ -2,6 +2,7 @@
 
 COMMENT =	KDE advanced text editor
 DISTNAME =	kate-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kateinterfaces			50.0 # 4.7
 SHARED_LIBS +=	katepartinterfaces		50.0 # 4.7

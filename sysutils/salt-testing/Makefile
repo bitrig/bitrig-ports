@@ -5,12 +5,11 @@ COMMENT =		common testing tools used in the Salt Stack projects
 MODPY_EGG_VERSION =	2014.4.24
 DISTNAME =		SaltTesting-${MODPY_EGG_VERSION}
 PKGNAME =		salt-testing-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://saltstack.org/
-
-MAINTAINER =		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # Apache 2.0
 PERMIT_PACKAGE_CDROM =	Yes

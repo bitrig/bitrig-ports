@@ -3,7 +3,7 @@
 COMMENT=	ILM base libraries
 
 DISTNAME=	ilmbase-1.0.1
-REVISION =	3
+REVISION =	4
 CATEGORIES=	graphics
 
 SHARED_LIBS +=	Half                 4.0      # .6.0

@@ -5,11 +5,9 @@ SHARED_ONLY =	Yes
 COMMENT =	create and manipulate tables
 
 DISTNAME =	Tk-TableMatrix-1.23
-REVISION =	2
+REVISION =	3
 CATEGORIES =	x11 devel
 CPAN_AUTHOR =   CERNEY
-
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
 
 # custom:
 # http://cpansearch.perl.org/src/CERNEY/Tk-TableMatrix-1.23/COPYING

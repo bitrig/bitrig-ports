@@ -5,7 +5,7 @@ COMMENT=	CAD drawing program for X11
 VERSION=	3.2.5b
 DISTNAME=	xfig.${VERSION}.full
 PKGNAME=	xfig-${VERSION}
-REVISION =	6
+REVISION =	7
 CATEGORIES=	graphics x11
 
 HOMEPAGE=	http://www.xfig.org/

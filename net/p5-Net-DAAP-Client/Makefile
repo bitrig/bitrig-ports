@@ -4,7 +4,7 @@ COMMENT=	perl client for Apple iTunes DAAP service
 
 MODULES=	cpan
 DISTNAME=	Net-DAAP-Client-0.42
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 # same as perl

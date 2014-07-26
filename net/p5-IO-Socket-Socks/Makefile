@@ -3,11 +3,10 @@
 COMMENT =	create SOCKS v4/v5 client or server
 
 DISTNAME =	IO-Socket-Socks-0.61
+REVISION =	0
 
 CATEGORIES =	net
 CPAN_AUTHOR =	OLEG
-
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

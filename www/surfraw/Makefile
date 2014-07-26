@@ -3,11 +3,10 @@
 COMMENT =	command line interface to popular WWW search engines
 
 DISTNAME =	surfraw-2.2.9
+REVISION =	0
 CATEGORIES =	www
 
 HOMEPAGE =	http://surfraw.alioth.debian.org/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Public Domain 
 PERMIT_PACKAGE_CDROM =	Yes

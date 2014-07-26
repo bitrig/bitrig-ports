@@ -3,9 +3,8 @@
 COMMENT =		console-based e-mail client with Lua scripting support
 
 DISTNAME =		lumail-0.25
+REVISION =		0
 CATEGORIES =		mail
-
-MAINTAINER =		James Turner <james@calminferno.net>
 
 HOMEPAGE =		http://lumail.org/
 MASTER_SITES =		http://lumail.org/download/

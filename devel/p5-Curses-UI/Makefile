@@ -4,6 +4,7 @@ COMMENT=	curses based user interface framework for Perl
 
 MODULES=	cpan
 DISTNAME=	Curses-UI-0.9609
+REVISION=	0
 
 CATEGORIES=	devel
 

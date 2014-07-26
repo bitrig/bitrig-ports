@@ -4,7 +4,7 @@ COMMENT=		lightweight exporting of variables
 
 MODULES=		cpan
 DISTNAME=		Exporter-Lite-0.02
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # Perl

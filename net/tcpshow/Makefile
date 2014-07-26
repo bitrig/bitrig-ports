@@ -3,6 +3,7 @@
 COMMENT=	decode tcpdump(1) output
 
 DISTNAME=	tcpshow-1.74
+REVISION=	0
 CATEGORIES=	net security
 
 MASTER_SITES=	${MASTER_SITE_FREEBSD_LOCAL:=obrien/}

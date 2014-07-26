@@ -3,6 +3,7 @@
 COMMENT=	convert English text to Jive
 
 DISTNAME=	jive-1.1
+REVISION=	0
 CATEGORIES=	misc
 
 MASTER_SITES=	ftp://ftp.fr.freebsd.org/pub/FreeBSD/distfiles/ \

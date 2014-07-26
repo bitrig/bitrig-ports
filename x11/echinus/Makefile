@@ -3,12 +3,11 @@
 COMMENT=		simple, lightweight tiling and floating window manager
 
 DISTNAME=		echinus-0.4.9
+REVISION=		0
 
 CATEGORIES=		x11
 
 HOMEPAGE=		http://plhk.ru/
-
-MAINTAINER=		Alexander Polakov <polachok@gmail.com>
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes

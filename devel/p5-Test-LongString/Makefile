@@ -5,6 +5,7 @@ COMMENT= 	tests strings for equality
 MODULES=	cpan
 
 DISTNAME=	Test-LongString-0.15
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

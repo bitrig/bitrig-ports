@@ -3,10 +3,9 @@
 COMMENT =		perl module to generate random data
 
 DISTNAME =		Data-Random-0.11
+REVISION =		0
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

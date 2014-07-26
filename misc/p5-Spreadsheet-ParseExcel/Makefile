@@ -4,7 +4,7 @@ COMMENT=	get information from Excel spreadsheets
 
 MODULES=	cpan
 DISTNAME=	Spreadsheet-ParseExcel-0.58
-REVISION=	1
+REVISION=	2
 EPOCH=		0
 CATEGORIES=	misc
 USE_GROFF =	Yes

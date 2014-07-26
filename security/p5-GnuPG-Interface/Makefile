@@ -4,6 +4,7 @@ COMMENT=	perl5 interface to GnuPG
 
 MODULES=	cpan
 DISTNAME=	GnuPG-Interface-0.44
+REVISION=	0
 CATEGORIES=	security
 
 # Perl

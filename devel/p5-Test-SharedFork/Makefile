@@ -4,8 +4,8 @@ COMMENT =		fork test
 
 MODULES =		cpan
 DISTNAME =		Test-SharedFork-0.21
+REVISION =		0
 CATEGORIES =		devel
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

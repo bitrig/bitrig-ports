@@ -3,11 +3,10 @@
 COMMENT=	utility for generating PostScript calendars
 
 DISTNAME=	pscal-1.16
+REVISION=	0
 CATEGORIES=	print
 
 HOMEPAGE=	http://www.panix.com/~mbh/projects.html
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

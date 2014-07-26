@@ -3,13 +3,11 @@
 COMMENT=	view, decode and encode DjVu files
 
 DISTNAME=	djvulibre-3.5.25.3
-REVISION=	1
+REVISION=	2
 SHARED_LIBS=	djvulibre	25.0	# 25.0
 CATEGORIES=	graphics print
 
 HOMEPAGE=	http://djvu.sourceforge.net/
-
-MAINTAINER=	Alexandr Shadchin <shadchin@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

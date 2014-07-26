@@ -6,13 +6,12 @@ COMMENT=		BitTorrent library written in C++
 NOT_FOR_ARCHS=		${GCC3_ARCHS}
 
 DISTNAME=		libtorrent-0.12.9
-REVISION=		3
+REVISION=		4
 EPOCH=			0
 SHARED_LIBS +=  	torrent 20.0	# .14.1
 CATEGORIES=		net devel
 
 HOMEPAGE=		http://libtorrent.rakshasa.no/
-MAINTAINER=		David Coppa <dcoppa@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

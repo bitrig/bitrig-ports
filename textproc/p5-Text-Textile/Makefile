@@ -3,10 +3,8 @@
 COMMENT=	converts simple text to web constructs
 
 DISTNAME=	Text-Textile-2.03
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 HOMEPAGE=	http://www.textism.com/tools/textile/
 

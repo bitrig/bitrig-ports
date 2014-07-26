@@ -4,7 +4,7 @@ COMMENT =		Mac OS-X style lightweight application launcher
 
 DISTNAME =		wbar-2.3.4
 EXTRACT_SUFX =		.tgz
-REVISION =		3
+REVISION =		4
 
 CATEGORIES=		x11
 

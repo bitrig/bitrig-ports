@@ -7,13 +7,11 @@ SVN =		2788
 SUBST_VARS =	V SVN
 DISTNAME =	org.python.pydev.feature-${V}.${SVN}
 PKGNAME =	py-dev-${V}
-REVISION =	3
+REVISION =	4
 
 CATEGORIES +=	lang/python
 
 HOMEPAGE =	http://pydev.sourceforge.net/
-
-MAINTAINER=	Ian Darwin <ian@openbsd.org>
 
 # Eclipse Public License
 PERMIT_PACKAGE_CDROM =	EPL Indemnify clause

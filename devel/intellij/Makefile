@@ -9,7 +9,7 @@ DISTNAME=		ideaIC-${V}
 PKGNAME=		intellij-${V}
 CATEGORIES=		devel
 
-REVISION=		4
+REVISION=		5
 
 HOMEPAGE=		http://www.jetbrains.com/idea/
 

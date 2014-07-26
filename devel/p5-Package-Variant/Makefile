@@ -2,9 +2,8 @@
 
 COMMENT =	parameterizable packages
 DISTNAME =	Package-Variant-1.002000
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

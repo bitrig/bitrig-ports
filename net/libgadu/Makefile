@@ -3,6 +3,7 @@
 COMMENT=	implementation of Gadu-Gadu IM protocol
 
 DISTNAME=	libgadu-1.11.2
+REVISION=	0
 EPOCH=		0
 CATEGORIES=	net
 MASTER_SITES=	${HOMEPAGE}/files/

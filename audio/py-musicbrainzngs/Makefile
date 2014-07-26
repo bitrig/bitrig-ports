@@ -5,6 +5,7 @@ COMMENT =	python bindings for musicbrainz NGS webservice
 MODPY_EGG_VERSION = 0.5
 DISTNAME =	musicbrainzngs-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 CATEGORIES =	audio
 
 HOMEPAGE =	http://python-musicbrainzngs.readthedocs.org/

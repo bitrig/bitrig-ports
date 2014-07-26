@@ -4,12 +4,10 @@ SHARED_ONLY=	Yes
 COMMENT=	proxy/masquerading daemon for the SIP protocol
 
 DISTNAME=	siproxd-0.8.1
-REVISION=	4
+REVISION=	5
 CATEGORIES=	telephony net
 
 HOMEPAGE=	http://siproxd.sourceforge.net/
-
-MAINTAINER=	Lawrence Teo <lteo@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

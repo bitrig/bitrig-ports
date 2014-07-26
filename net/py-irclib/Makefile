@@ -4,7 +4,7 @@ COMMENT=	Internet Relay Chat (IRC) protocol client library for Python
 
 DISTNAME=	python-irclib-0.4.6
 PKGNAME=	${DISTNAME:S/python/py/g}
-REVISION =	4
+REVISION =	5
 CATEGORIES=	net
 
 HOMEPAGE=	http://python-irclib.sourceforge.net/

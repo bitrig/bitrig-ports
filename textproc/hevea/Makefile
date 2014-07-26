@@ -9,11 +9,11 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c m
 
 DISTNAME =	hevea-2.00
+REVISION =	0
 MASTER_SITES =	http://para.inria.fr/~maranget/hevea/distri/
 
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}-manual${EXTRACT_SUFX}
 
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 HOMEPAGE=	http://para.inria.fr/%7Emaranget/hevea/
 
 NO_TEST =	Yes

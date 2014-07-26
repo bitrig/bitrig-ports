@@ -3,13 +3,12 @@
 COMMENT=	convert memos written in XML to the RFC format
 
 DISTNAME=	xml2rfc-1.36
+REVISION=	0
 CATEGORIES=	textproc
 
 EXTRACT_SUFX=	.tgz
 MASTER_SITES=	http://xml.resource.org/authoring/
 HOMEPAGE=	http://xml.resource.org/
-
-MAINTAINER=	Jakob Schlyter <jakob@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

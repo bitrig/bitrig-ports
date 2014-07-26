@@ -5,7 +5,7 @@ COMMENT=		finds and then operates on files
 # XXX alpha-test version for now; switch back to stable when there's
 # a version which works with 64-bit time_t/ino_t.
 DISTNAME=		findutils-4.5.11
-REVISION=		0
+REVISION=		1
 CATEGORIES=		misc
 
 HOMEPAGE=		https://www.gnu.org/software/findutils/

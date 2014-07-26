@@ -3,7 +3,7 @@
 COMMENT =		safe YAML parsing
 
 DISTNAME =		safe_yaml-0.7.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 HOMEPAGE =		http://dtao.github.com/safe_yaml/

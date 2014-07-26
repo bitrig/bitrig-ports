@@ -3,6 +3,7 @@
 COMMENT =	retrieve files from the web via HTTP, HTTPS and FTP
 
 DISTNAME =	wget-1.15
+REVISION =	0
 CATEGORIES =	net
 
 HOMEPAGE =	https://www.gnu.org/software/wget/

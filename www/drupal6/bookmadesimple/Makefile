@@ -4,5 +4,6 @@ COMMENT =	module to simplify and restrict book node creation
 
 DISTNAME = 	book_made_simple-6.x-3.4
 PKGNAME =	drupal6-bookmadesimple-3.4
+REVISION =	0
 
 .include <bsd.port.mk>

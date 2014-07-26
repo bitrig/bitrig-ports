@@ -4,11 +4,9 @@ COMMENT =	manipulate file metadata
 
 MODULES =	cpan
 DISTNAME =	File-Attributes-0.04
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

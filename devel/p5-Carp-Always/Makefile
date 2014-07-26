@@ -3,6 +3,7 @@
 COMMENT =		turn every die/warn into carp verbose messages
 
 DISTNAME =		Carp-Always-0.12
+REVISION =		0
 CATEGORIES =		devel
 
 MODULES =		cpan

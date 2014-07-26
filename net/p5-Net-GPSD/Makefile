@@ -3,7 +3,7 @@
 COMMENT=	perl module that provides a client interface to gpsd
 MODULES=	cpan
 DISTNAME=	Net-GPSD-0.36
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 USE_GROFF =	Yes
 

@@ -4,7 +4,7 @@ COMMENT=	block action game
 
 DISTNAME=	xdeblock
 PKGNAME=	xdeblock-1.0
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games
 
 MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/ \

@@ -3,7 +3,7 @@
 COMMENT=	5250 telnet protocol and terminal
 
 DISTNAME=	tn5250-0.17.3
-REVISION=	2
+REVISION=	3
 SHARED_LIBS=	5250	0.0
 CATEGORIES=	net
 

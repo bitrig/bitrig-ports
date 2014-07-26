@@ -4,6 +4,7 @@ COMMENT =		GIF decoding library
 
 NETSURF_PROJECT =	libnsgif
 NETSURF_VERSION =	0.1.1
+REVISION =		0
 
 CATEGORIES =		graphics
 SHARED_LIBS =		nsgif 0.0 #0.1.1

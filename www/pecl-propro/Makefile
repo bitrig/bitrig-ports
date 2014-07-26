@@ -3,6 +3,7 @@
 COMMENT=	reusable split of pecl_http's property proxy API
 
 DISTNAME=	propro-1.0.0
+REVISION=	0
 
 # PHP
 PERMIT_PACKAGE_CDROM=	Yes

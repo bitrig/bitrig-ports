@@ -4,10 +4,8 @@ COMMENT=	logfile auditing tool
 
 DISTNAME=	logcheck-1.1.1
 PKGNAME=	logsentry-1.1.1
-REVISION = 	5
+REVISION = 	6
 CATEGORIES=	security
-
-MAINTAINER=	Srebrenko Sehic <haver@insecure.dk>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=  	Yes

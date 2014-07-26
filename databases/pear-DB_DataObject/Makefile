@@ -4,6 +4,7 @@ COMMENT=	SQL builder, object interface to database tables
 
 DISTNAME=	DB_DataObject-1.10.0
 PKGNAME=	pear-${DISTNAME}# does not substitute _ for -
+REVISION=	0
 CATEGORIES=	databases
 
 MODULES=	www/pear

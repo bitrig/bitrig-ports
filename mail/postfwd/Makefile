@@ -3,12 +3,10 @@
 COMMENT =	Postfix policy server
 
 DISTNAME =	postfwd-1.35
-REVISION =	3
+REVISION =	4
 CATEGORIES =	mail
 
 HOMEPAGE =	http://www.postfwd.org/
-
-MAINTAINER =	Giovanni Bechis <giovanni@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =Yes

@@ -5,12 +5,11 @@ SHARED_ONLY =		Yes
 COMMENT =		perl module for using OpenSSL
 
 DISTNAME =		Net-SSLeay-1.65
+REVISION =		0
 
 CATEGORIES =		security
 
 HOMEPAGE =		http://alioth.debian.org/projects/net-ssleay
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # same terms as OpenSSL
 PERMIT_PACKAGE_CDROM =	Yes

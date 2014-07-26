@@ -6,7 +6,7 @@ VERSION=	0.3.2
 DISTNAME=	GnuPGInterface-${VERSION}
 PKGNAME=	py-gnupg-${VERSION}
 
-REVISION=	6
+REVISION=	7
 
 CATEGORIES=    	security devel
 

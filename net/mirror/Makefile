@@ -3,7 +3,7 @@
 COMMENT=	mirror packages on remote sites
 
 DISTNAME=	mirror-2.9
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 MASTER_SITES=	ftp://sunsite.cnlab-switch.ch/mirror/mirror/ \

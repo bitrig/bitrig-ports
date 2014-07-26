@@ -3,6 +3,7 @@
 COMMENT =		file path utility
 
 DISTNAME =		Path-Tiny-0.052
+REVISION =		0
 CATEGORIES =		devel
 
 # Apachev2

@@ -3,6 +3,7 @@
 COMMENT =		deflate-compatible compression format
 
 DISTNAME =		zopfli-1.0.0
+REVISION =		0
 
 CATEGORIES =		archivers
 

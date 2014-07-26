@@ -3,12 +3,10 @@
 COMMENT=		realtime bandwidth monitoring of interfaces
 
 DISTNAME=		bwm-ng-0.6
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=bwmng/}
 HOMEPAGE=		http://www.gropp.org/
-
-MAINTAINER=		Genadijus Paleckis <rwx@openbsd.lt>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes

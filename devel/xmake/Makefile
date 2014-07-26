@@ -3,6 +3,7 @@
 COMMENT=	powerful make utility
 
 DISTNAME=	xmake-1.06
+REVISION=	0
 CATEGORIES=	devel
 HOMEPAGE=	http://apollo.backplane.com/xmake/
 

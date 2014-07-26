@@ -5,6 +5,7 @@ COMMENT=		add support for i18n, documentation and icons to distutils
 MODPY_EGG_VERSION=	2.36
 DISTNAME=		python-distutils-extra-${MODPY_EGG_VERSION}
 PKGNAME=		py-distutils-extra-${MODPY_EGG_VERSION}
+REVISION=		0
 
 CATEGORIES=		devel
 

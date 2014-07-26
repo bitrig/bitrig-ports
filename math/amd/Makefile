@@ -5,7 +5,7 @@ COMMENT=	order a sparse matrix prior to Cholesky factorization
 VERSION=	2.2.1
 DISTNAME=	AMD-${VERSION}
 PKGNAME=	${DISTNAME:L}
-REVISION=	2
+REVISION=	3
 SHARED_LIBS=	amd	0.0 \
 		amdf77	0.0
 

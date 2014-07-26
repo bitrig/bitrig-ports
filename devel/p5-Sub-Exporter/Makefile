@@ -3,9 +3,8 @@
 COMMENT =	exporter on steroids
 
 DISTNAME =	Sub-Exporter-0.987
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER = Andrew Fresh <afresh1@openbsd.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

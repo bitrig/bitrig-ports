@@ -2,6 +2,7 @@
 
 COMMENT =	Strigi analyzers of network-related streams for KDE
 DISTNAME =	kdenetwork-strigi-analyzers-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	network devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdenetwork/kdenetwork-strigi-analyzers

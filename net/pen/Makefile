@@ -3,6 +3,7 @@
 COMMENT=		load balancer for simple TCP-based protocols
 
 DISTNAME=		pen-0.18.0
+REVISION=		0
 CATEGORIES=		net
 HOMEPAGE=		http://siag.nu/pen/
 

@@ -4,6 +4,7 @@ COMMENT=	module for converting structures to strings and back
 
 MODULES=	cpan
 DISTNAME=	FreezeThaw-0.5001
+REVISION=	0
 CATEGORIES=	devel
 
 PERMIT_PACKAGE_CDROM =	Yes

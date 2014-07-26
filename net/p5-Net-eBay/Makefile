@@ -3,6 +3,7 @@
 COMMENT=		interface to XML based eBay API
 
 DISTNAME=		Net-eBay-0.54
+REVISION=		0
 CATEGORIES=		net
 
 # perl

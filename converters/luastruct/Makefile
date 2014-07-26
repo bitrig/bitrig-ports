@@ -6,6 +6,7 @@ COMMENT=	convert data to and from C structs
 
 DISTNAME=	struct-0.2
 PKGNAME=	lua${DISTNAME}
+REVISION=	0
 
 CATEGORIES=	converters
 

@@ -3,6 +3,7 @@
 COMMENT=	reverse compile man pages from formatted form
 
 DISTNAME=	rman-3.2
+REVISION=	0
 CATEGORIES=	textproc
 HOMEPAGE=	http://polyglotman.sourceforge.net/
 

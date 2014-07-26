@@ -4,11 +4,9 @@ COMMENT =	easy-to-use self-cleaning scratch space
 
 MODULES =	cpan
 DISTNAME =	Directory-Scratch-0.14
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

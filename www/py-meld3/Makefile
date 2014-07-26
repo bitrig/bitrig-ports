@@ -5,6 +5,7 @@ COMMENT =	html/xml templating engine
 MODPY_EGG_VERSION = 0.6.10
 DISTNAME =	meld3-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
+REVISION =	0
 
 CATEGORIES =	www
 

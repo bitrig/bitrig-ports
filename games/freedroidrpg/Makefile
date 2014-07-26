@@ -5,13 +5,11 @@ ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 COMMENT=	isometric RPG game
 
 DISTNAME =	freedroidRPG-0.15.1
-REVISION =	2
+REVISION =	3
 PKGNAME =	${DISTNAME:L}
 CATEGORIES=	games x11
 
 HOMEPAGE =	http://www.freedroid.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

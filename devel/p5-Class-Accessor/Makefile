@@ -4,7 +4,7 @@ COMMENT=	automated accessor generation
 
 MODULES=	cpan
 DISTNAME=	Class-Accessor-0.34
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

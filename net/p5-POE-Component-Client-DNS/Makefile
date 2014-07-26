@@ -4,6 +4,7 @@ COMMENT=	DNS module for the Perl Object Environment
 
 MODULES=	cpan
 DISTNAME=	POE-Component-Client-DNS-1.051
+REVISION=	0
 CATEGORIES=	net
 
 # perl

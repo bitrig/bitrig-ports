@@ -7,7 +7,7 @@ CATEGORIES+=	www
 VERSION=	8.1.0
 DISTNAME=	TwistedWeb2-${VERSION}
 PKGNAME=	py-twisted-web2-${VERSION}
-REVISION =	5
+REVISION =	6
 
 HOMEPAGE=	http://twistedmatrix.com/trac/wiki/TwistedWeb2
 

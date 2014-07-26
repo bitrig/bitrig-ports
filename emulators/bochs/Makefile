@@ -6,7 +6,7 @@ DISTNAME=	bochs-2.6.2
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bochs/}
 
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://bochs.sourceforge.net/
 

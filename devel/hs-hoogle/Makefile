@@ -3,10 +3,9 @@
 COMMENT =		Haskell API search engine
 
 DISTNAME =		hoogle-4.2.16
+REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =		http://www.haskell.org/hoogle/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # GPLv2, some files are MIT and/or BSD3
 PERMIT_PACKAGE_CDROM =	Yes

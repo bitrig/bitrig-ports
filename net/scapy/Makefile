@@ -4,13 +4,11 @@ COMMENT=	powerful interactive packet manipulation in python
 
 MODPY_EGG_VERSION=	2.1.0
 DISTNAME=		scapy-${MODPY_EGG_VERSION}
-REVISION=		2
+REVISION=		3
 
 CATEGORIES=		net
 
 HOMEPAGE=	http://secdev.org/projects/scapy/
-
-MAINTAINER=	Jonathan Armani <armani@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

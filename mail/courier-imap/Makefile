@@ -6,6 +6,7 @@ COMMENT-pop3=		pop3 server for maildir format mailboxes
 V=			4.15
 DISTNAME=		courier-imap-${V}
 PKGNAME-main=		${DISTNAME}
+REVISION=		0
 FULLPKGNAME-pop3=	courier-pop3-${V}
 FULLPKGPATH-pop3=	mail/courier-imap,-pop3
 
@@ -15,7 +16,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=		.tar.bz2
 
 HOMEPAGE=		http://www.courier-mta.org/imap/
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

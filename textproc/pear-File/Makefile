@@ -3,7 +3,7 @@
 COMMENT=	common file and directory routines for PHP
 
 DISTNAME=	File-1.2.2
-REVISION =	2
+REVISION =	3
 CATEGORIES=	textproc
 
 MODULES=	www/pear

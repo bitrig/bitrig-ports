@@ -8,15 +8,13 @@ COMMENT=	SWF player with Firefox browser plugin
 
 VER=		0.8.10
 DISTNAME=	gnash-${VER}
-REVISION=	8
+REVISION=	9
 EPOCH=		0
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_GNU:=gnash/${VER}/}
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	http://gnashdev.org
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

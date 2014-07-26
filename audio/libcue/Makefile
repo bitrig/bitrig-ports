@@ -3,13 +3,12 @@
 COMMENT =		cue sheet parser library
 
 DISTNAME =		libcue-1.4.0
+REVISION =		0
 CATEGORIES =		audio
 
 HOMEPAGE =		http://libcue.sourceforge.net/
 
 SHARED_LIBS =		cue		0.0	# 1.4
-
-MAINTAINER=		Alexandr Shadchin <shadchin@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,7 +4,7 @@ COMMENT =		an extensible platform for analysis of C software
 
 DISTNAME =		frama-c-Neon-20140301
 PKGNAME =		frama-c-1.10
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 HOMEPAGE =		http://www.frama-c.com/
 

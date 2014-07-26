@@ -4,13 +4,11 @@ COMMENT=	MVC Web Application Framework
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Runtime-5.90006
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
 
 HOMEPAGE=	http://www.catalystframework.org/
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Artistic + GPL
 PERMIT_PACKAGE_CDROM=	Yes

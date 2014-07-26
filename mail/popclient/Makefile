@@ -4,7 +4,7 @@ COMMENT=	client for POP2, POP3, APOP, RPOP
 
 DISTNAME=	popclient-3.0b6
 PKGNAME=	${DISTNAME}
-REVISION =	1
+REVISION =	2
 CATEGORIES=	mail
 MASTER_SITES=	https://people.freebsd.org/~wosch/src/
 

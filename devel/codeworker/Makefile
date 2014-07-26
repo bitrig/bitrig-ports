@@ -4,13 +4,11 @@ COMMENT =		universal parsing tool & source code generator
 
 V =			4.5.4
 PKGNAME =		codeworker-${V}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://codeworker.free.fr/
-
-MAINTAINER =		Vincent Auclair <auclair.vincent@gmail.com>
 
 # LGPL
 PERMIT_PACKAGE_CDROM =	Yes

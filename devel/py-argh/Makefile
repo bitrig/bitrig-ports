@@ -5,6 +5,7 @@ COMMENT =	simple wrapper for python argparse module
 MODPY_EGG_VERSION =	0.21.2
 DISTNAME =	argh-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 CATEGORIES =	devel
 HOMEPAGE =	http://packages.python.org/argh
 

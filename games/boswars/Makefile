@@ -7,7 +7,7 @@ DISTNAME=	boswars-${V}-src
 PKGNAME=	boswars-${V}
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.boswars.org/dist/releases/
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.boswars.org/
 

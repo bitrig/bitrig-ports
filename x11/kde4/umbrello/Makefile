@@ -2,6 +2,7 @@
 
 COMMENT =	UML editor for KDE
 DISTNAME =	umbrello-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	devel productivity
 #HOMEPAGE =	http://umbrello.kde.org/

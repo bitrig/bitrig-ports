@@ -3,6 +3,7 @@
 COMMENT=		GTK+2 graphical filemanager
 
 DISTNAME=		gentoo-0.19.13
+REVISION=		0
 
 CATEGORIES=		x11	
 

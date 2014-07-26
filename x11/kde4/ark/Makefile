@@ -2,6 +2,7 @@
 
 COMMENT =	KDE file archiver
 DISTNAME =	ark-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kerfuffle	51.0 # 4.7
 

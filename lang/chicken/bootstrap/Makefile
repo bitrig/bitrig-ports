@@ -1,6 +1,7 @@
 # $OpenBSD: Makefile,v 1.1 2014/03/09 20:17:01 jasper Exp $
 
 PKGNAME=	chicken-bootstrap-${V}
+REVISION=	0
 
 NO_TEST=	Yes
 

@@ -4,7 +4,7 @@ COMMENT=		GTK+-based electronic waveform viewer
 
 DISTNAME=		gtkwave-3.3.49
 CATEGORIES=		cad
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://gtkwave.sourceforge.net/
 

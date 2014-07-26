@@ -3,7 +3,7 @@
 COMMENT =		abstract, parameterized interface to mutable deques
 
 DISTNAME =		abstract-deque-0.1.6
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 # BSD3

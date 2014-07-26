@@ -3,7 +3,7 @@
 COMMENT=	store multiple values per key
 
 DISTNAME=	Tie-Hash-MultiValue-1.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

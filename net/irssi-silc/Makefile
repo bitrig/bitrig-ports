@@ -5,13 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	SILC plugin for irssi
 
 DISTNAME=	irssi-silc-1.1.8
-REVISION=	5
+REVISION=	6
 
 CATEGORIES=	net
 
 HOMEPAGE=	http://penguin-breeder.org/silc/
-
-MAINTAINER=	Martynas Venckus <martynas@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

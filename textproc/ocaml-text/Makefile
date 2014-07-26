@@ -5,7 +5,7 @@ CATEGORIES =	devel textproc
 
 NAME =		ocaml-text
 DISTNAME =	${NAME}-0.6
-REVISION =	1
+REVISION =	2
 MASTER_SITES =	https://forge.ocamlcore.org/frs/download.php/937/
 
 HOMEPAGE =	http://ocaml-text.forge.ocamlcore.org/

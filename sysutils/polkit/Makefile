@@ -3,7 +3,7 @@
 COMMENT=	framework for granting privileged operations to users
 
 DISTNAME=	polkit-0.112
-REVISION=	6
+REVISION=	7
 
 SHARED_LIBS +=  polkit-gobject-1	2.0 # .0.0
 SHARED_LIBS +=  polkit-agent-1		2.0 # .0.0
@@ -11,8 +11,6 @@ SHARED_LIBS +=  polkit-agent-1		2.0 # .0.0
 CATEGORIES=	sysutils security
 
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/polkit
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -7,6 +7,7 @@ COMMENT-lib =	haddock library
 # Please do *not* update without thinking.
 DISTNAME =	haddock-2.13.2
 PKGNAME-main =	${DISTNAME}
+REVISION =	0
 PKGNAME-lib =	hs-${DISTNAME}
 CATEGORIES =	devel
 

@@ -5,7 +5,7 @@ COMMENT=	SAX2 driver directly based on expat
 SHARED_ONLY=	Yes
 MODULES=	cpan
 DISTNAME=	XML-SAX-ExpatXS-1.32
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

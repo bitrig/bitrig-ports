@@ -3,7 +3,7 @@
 COMMENT=	lua binding of zlib
 SHARED_ONLY=	Yes
 DISTNAME=	luazlib-20100731
-REVISION=	2
+REVISION=	3
 CATEGORIES=	archivers
 MASTER_SITES=	http://distfiles.nl/
 

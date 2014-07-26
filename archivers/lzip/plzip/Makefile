@@ -3,7 +3,7 @@
 COMMENT =		multi-threaded data compressor based on lzlib
 
 DISTNAME =		plzip-1.1
-REVISION =		3
+REVISION =		4
 
 HOMEPAGE =		http://lzip.nongnu.org/plzip.html
 

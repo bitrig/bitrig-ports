@@ -2,7 +2,7 @@
 
 COMMENT=		dmesg parser
 DISTNAME=		dmassage-0.6
-REVISION=		4
+REVISION=		5
 CATEGORIES=		sysutils
 HOMEPAGE=		http://www.sentia.org/projects/dmassage/
 

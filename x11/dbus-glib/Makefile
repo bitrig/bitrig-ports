@@ -3,6 +3,7 @@
 COMMENT=	glib bindings for dbus message system
 
 DISTNAME=	dbus-glib-0.102
+REVISION=	0
 EPOCH=		0
 
 SHARED_LIBS +=  dbus-glib-1          4.4      # 4.2
@@ -10,8 +11,6 @@ SHARED_LIBS +=  dbus-glib-1          4.4      # 4.2
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/DBusBindings/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

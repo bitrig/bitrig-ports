@@ -3,12 +3,10 @@
 COMMENT=	AVR microcontroller hardware in-system programmer
 
 DISTNAME=	uisp-20050207
-REVISION =	1
+REVISION =	2
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.nongnu.org/uisp/
-
-MAINTAINER=	Martin Reindl <martin@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

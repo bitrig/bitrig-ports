@@ -3,6 +3,7 @@
 COMMENT =	tiny pop3 daemon
 
 DISTNAME =	popa3d-1.0.3
+REVISION =	0
 
 CATEGORIES =	mail
 

@@ -4,7 +4,7 @@ COMMENT=	File::Find::Rule adapted to Filesys::Virtual
 
 MODULES=	cpan
 DISTNAME=	File-Find-Rule-Filesys-Virtual-1.22
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net devel
 USE_GROFF =	Yes
 

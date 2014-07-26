@@ -4,9 +4,8 @@ COMMENT =		flatten/unflatten complex data hashes
 
 MODULES =		cpan
 DISTNAME =		Hash-Flatten-1.19
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Cesare Gargano <gar@plusiagamma.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

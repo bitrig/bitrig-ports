@@ -3,10 +3,8 @@
 COMMENT =		abstraction layer for SQL relational databases
 
 DISTNAME =		HDBC-2.3.1.2
-REVISION =		0
+REVISION =		1
 CATEGORIES =		databases
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

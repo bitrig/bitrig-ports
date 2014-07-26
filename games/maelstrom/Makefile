@@ -4,12 +4,10 @@ COMMENT =		asteroid-like game
 
 DISTNAME =		Maelstrom-3.0.6
 PKGNAME = 		${DISTNAME:L}
-REVISION =		1
+REVISION =		2
 CATEGORIES =		games x11
 HOMEPAGE =		http://www.devolution.com/~slouken/Maelstrom/
 MASTER_SITES =		${HOMEPAGE}/src/
-
-MAINTAINER =		Peter Hessler <phessler@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

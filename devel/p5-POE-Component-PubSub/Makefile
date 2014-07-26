@@ -3,7 +3,7 @@
 COMMENT=		publish/subscribe to publish events from POE::Sessions
 
 DISTNAME=		POE-Component-PubSub-0.05
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # GPLv2

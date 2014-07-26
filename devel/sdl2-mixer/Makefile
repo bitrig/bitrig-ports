@@ -4,13 +4,12 @@ V =		2.0.0
 COMMENT =	SDL2 multi-channel audio mixer library
 DISTNAME =	SDL2_mixer-${V}
 PKGNAME =	sdl2-mixer-${V}
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel audio
 
 SHARED_LIBS =	SDL2_mixer		0.0 # 0.0
 
 HOMEPAGE =	http://www.libsdl.org/projects/SDL_mixer/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # zlib
 PERMIT_PACKAGE_CDROM =   Yes

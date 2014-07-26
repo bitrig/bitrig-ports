@@ -2,7 +2,7 @@
 
 COMMENT=	calculate precision, recall, F1, accuracy, etc
 DISTNAME=	Statistics-Contingency-0.08
-REVISION=	0
+REVISION=	1
 CATEGORIES=	math
 
 # Perl

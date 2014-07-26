@@ -3,11 +3,9 @@
 COMMENT =		Othello/Reversi-like game
 DISTNAME =		grhino-${V}
 V =			0.16.1
-REVISION=		3
+REVISION=		4
 CATEGORIES =		games
 HOMEPAGE =		http://rhino.sourceforge.net/
-
-MAINTAINER = 		Remi Pointel <remi.pointel@xiri.fr>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

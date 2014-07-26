@@ -4,9 +4,8 @@ COMMENT=	base framework for frame crafting
 
 MODULES=	cpan
 DISTNAME=	Net-Frame-1.09
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Gleydson Soares <gsoares@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

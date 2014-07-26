@@ -3,11 +3,9 @@
 COMMENT =	BSD Auth helper program for OpenVPN
 
 DISTNAME =	openvpn_bsdauth-7
-REVISION=	0
+REVISION=	1
 CATEGORIES =	net
 HOMEPAGE =	http://www.wormhole.hu/~ice/openvpn_bsdauth/
-
-MAINTAINER =	Felix Kronlage <fkr@openbsd.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

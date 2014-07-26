@@ -5,7 +5,7 @@ COMMENT=	perl interface to ZIP files
 MODULES=	cpan
 
 DISTNAME=	Archive-Zip-1.30
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	archivers
 

@@ -6,7 +6,7 @@ COMMENT=	terminal screen handling and optimisation
 
 MODULES=	cpan
 DISTNAME=	Curses-1.28
-REVISION=	3
+REVISION=	4
 CPAN_AUTHOR=	GIRAFFED
 EXTRACT_SUFX=	.tgz
 

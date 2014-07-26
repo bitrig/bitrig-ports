@@ -5,11 +5,8 @@ COMMENT =		Int-indexed arrays
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		vector-0.10.0.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>, \
-			Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

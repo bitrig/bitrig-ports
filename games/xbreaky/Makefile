@@ -3,13 +3,11 @@
 COMMENT=	breakout game for the X Window System
 
 DISTNAME=	xbreaky-0.0.5
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games x11
 MASTER_SITES=	${HOMEPAGE}
 
 HOMEPAGE=	http://xbreaky.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes

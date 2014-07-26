@@ -3,13 +3,11 @@
 COMMENT=		list titles of runnnig X windows
 
 DISTNAME=		lsw-0.2
-REVISION =		0
+REVISION =		1
 
 CATEGORIES=		x11
 
 HOMEPAGE=		http://tools.suckless.org/lsw
-
-MAINTAINER =		Joerg Jung <jung@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,12 +3,10 @@
 COMMENT =		generates lists of words given certain information
 
 DISTNAME =		WordGenerator-1.9
-REVISION =		1
+REVISION =		2
 CATEGORIES =		misc education
 
 HOMEPAGE =		http://billposer.org/Software/WordGenerator.html
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

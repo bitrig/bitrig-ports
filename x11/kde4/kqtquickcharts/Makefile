@@ -2,6 +2,7 @@
 
 COMMENT =	QtQuick plugin to render interactive charts
 DISTNAME =	kqtquickcharts-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	graphics
 HOMEPAGE =	https://projects.kde.org/projects/kde/kdeedu/kqtquickcharts

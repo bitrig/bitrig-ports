@@ -4,13 +4,12 @@ COMMENT=	strip cascading style sheets from webpages
 
 DISTNAME=	decss
 PKGNAME=	decss-0.0.6
+REVISION=	0
 CATEGORIES=	www
 
 MASTER_SITES=   ${HOMEPAGE}
 
 HOMEPAGE=       http://www.pigdog.org/decss/
-
-MAINTAINER=     Kevin Lo <kevlo@openbsd.org>
 
 # Artistic License
 PERMIT_PACKAGE_CDROM=   Yes

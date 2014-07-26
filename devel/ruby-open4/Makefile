@@ -3,7 +3,7 @@
 COMMENT=	open processes with handles on pid, stdin, stdout, stderr
 
 DISTNAME=	open4-0.9.6
-REVISION=	7
+REVISION=	8
 CATEGORIES=	devel
 
 # Ruby license

@@ -5,7 +5,7 @@ COMMENT=	volume dial for Gkrellm2
 V=		2.1.13
 DISTNAME=	gkrellm-volume-${V}
 PKGNAME=	gkrellmvolume-${V}
-REVISION=	8
+REVISION=	9
 CATEGORIES=	audio
 
 HOMEPAGE=	http://gkrellm.luon.net/volume.phtml

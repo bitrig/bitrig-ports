@@ -3,10 +3,8 @@
 COMMENT=	GTK+2 secure notes manager
 
 DISTNAME=	gringotts-1.2.10
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@raveland.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

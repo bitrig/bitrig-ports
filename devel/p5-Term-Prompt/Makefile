@@ -5,7 +5,7 @@ COMMENT= 	handles various forms of terminal input
 MODULES=	cpan
 
 DISTNAME=	Term-Prompt-1.04
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

@@ -3,7 +3,7 @@
 COMMENT=	organizer for book/dvd/music collections
 
 DISTNAME=	tellico-1.3.6
-REVISION=	12
+REVISION=	13
 
 CATEGORIES=	x11 databases
 

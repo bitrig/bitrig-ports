@@ -3,7 +3,7 @@
 COMMENT =		2-letter, 3-letter, and numerical codes for countries
 
 DISTNAME =		Geography-Countries-2009041301
-REVISION =		0
+REVISION =		1
 CATEGORIES =		geo devel
 
 # perl

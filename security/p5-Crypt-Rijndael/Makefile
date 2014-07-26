@@ -6,7 +6,7 @@ COMMENT=	interface to the rijndael encryption algorithm aka AES
 
 MODULES=	cpan
 DISTNAME=	Crypt-Rijndael-1.09
-REVISION=	1
+REVISION=	2
 CATEGORIES=	security
 
 # LGPLv2

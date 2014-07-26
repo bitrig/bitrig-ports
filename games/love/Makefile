@@ -5,7 +5,7 @@ COMMENT=		2D games framework for use with Lua
 V=			0.8.0
 DISTNAME=		love-$V-linux-src
 PKGNAME=		love-$V
-REVISION=		5
+REVISION=		6
 
 HOMEPAGE=		http://love2d.org/
 

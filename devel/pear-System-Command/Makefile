@@ -3,7 +3,7 @@
 COMMENT=	commandline execution interface
 
 DISTNAME=	System_Command-1.0.7
-REVISION=		0
+REVISION=		1
 CATEGORIES=	devel
 
 MODULES=	www/pear

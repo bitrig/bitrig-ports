@@ -6,14 +6,11 @@ COMMENT=		integrated music management application for GNOME
 
 GNOME_PROJECT=		rhythmbox
 GNOME_VERSION=		3.0.3
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS +=  rhythmbox-core       0.0      # 7.0
 
 CATEGORIES=		audio
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2 with exception clause
 PERMIT_PACKAGE_CDROM=	Yes

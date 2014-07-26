@@ -3,7 +3,7 @@
 COMMENT=	X11 Go Toolset
 
 DISTNAME=	cgoban-1.9.12
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games x11
 
 HOMEPAGE=	http://www.igoweb.org/~wms/comp/cgoban/

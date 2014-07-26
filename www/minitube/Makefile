@@ -5,13 +5,11 @@ COMMENT =	standalone YouTube.com video browser/player
 # XXX: upstream's tagging mismatch
 DISTNAME =	minitube-1.2.6
 PKGNAME =	minitube-2.1.6
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	www multimedia
 
 HOMEPAGE =	http://flavio.tordini.org/minitube
-
-MAINTAINER =	Paul Irofti <pirofti@openbsd.org>
 
 # GPL v3
 PERMIT_PACKAGE_CDROM =		Yes

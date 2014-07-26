@@ -3,9 +3,8 @@
 COMMENT =	essential utilities for the Iterator class.
 
 DISTNAME =	Iterator-Util-0.02
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

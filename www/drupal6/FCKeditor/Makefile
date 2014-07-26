@@ -4,6 +4,7 @@ COMMENT =	FCKeditor for drupal
 
 DISTNAME =	fckeditor-6.x-2.3
 PKGNAME =	drupal6-fckeditor-2.3
+REVISION =	0
 DISTFILES =	${DISTNAME}.tar.gz \
 		FCKeditor_2.6.6.tar.gz:0
 EXTRACT_ONLY =	${DISTNAME}.tar.gz

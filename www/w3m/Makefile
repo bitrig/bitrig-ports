@@ -3,7 +3,7 @@
 COMMENT=	pager/text-based web browser
 
 DISTNAME=	w3m-0.5.3
-REVISION=	3
+REVISION=	4
 CATEGORIES=	www
 HOMEPAGE=	http://w3m.sourceforge.net/
 

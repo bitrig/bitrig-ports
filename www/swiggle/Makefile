@@ -3,11 +3,11 @@
 COMMENT = 		simple web image gallery generator
 
 DISTNAME =		swiggle-0.4
+REVISION =		0
 
 CATEGORIES =		www graphics
 
 HOMEPAGE =		http://homepage.univie.ac.at/l.ertl/swiggle/
-MAINTAINER =		Sergey Bronnikov <estetus@gmail.com>
 
 PERMIT_PACKAGE_CDROM =	Yes
 

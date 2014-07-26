@@ -3,7 +3,7 @@
 COMMENT=		traceroute implementation using TCP packets
 
 DISTNAME=		tcptraceroute-1.5beta7
-REVISION=		2
+REVISION=		3
 CATEGORIES=    		net
 
 HOMEPAGE=		http://michael.toren.net/code/tcptraceroute/

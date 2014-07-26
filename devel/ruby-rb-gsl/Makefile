@@ -3,7 +3,7 @@
 COMMENT =	Ruby interface to GSL
 
 DISTNAME =	gsl-1.14.7
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 
 HOMEPAGE=	http://rb-gsl.rubyforge.org/

@@ -8,9 +8,9 @@ XFCE_VERSION=	3.0.1
 
 MULTI_PACKAGES = -main -gtk3
 PKGNAME-main =	${PKGNAME}
-REVISION-main =	2
+REVISION-main =	3
 PKGNAME-gtk3 =	gtk3-xfce-engine-${XFCE_VERSION}
-REVISION-gtk3 =	2
+REVISION-gtk3 =	3
 
 HOMEPAGE=	http://www.xfce.org/projects/
 

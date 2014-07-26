@@ -5,13 +5,12 @@ SHARED_ONLY=	Yes
 COMMENT=	fast and stable PHP opcode cacher
 
 VERSION=	3.1.0
+REVISION=	0
 DISTNAME=	xcache-${VERSION}
 CATEGORIES=	www
 MASTER_SITES=	http://xcache.lighttpd.net/pub/Releases/${VERSION}/
 
 HOMEPAGE=	http://xcache.lighttpd.net/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

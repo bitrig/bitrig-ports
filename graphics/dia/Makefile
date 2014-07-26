@@ -6,11 +6,9 @@ COMMENT=		technical diagrams drawing tool
 
 GNOME_PROJECT=		dia
 GNOME_VERSION=		0.97.2
-REVISION=		11
+REVISION=		12
 
 CATEGORIES=		graphics
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes

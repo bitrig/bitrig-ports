@@ -8,7 +8,8 @@ DISTNAME =		kdeartwork-${VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-emoticons =	kde-emoticons-${VERSION}
 PKGSPEC-main =		kdeartwork->=3,<4
-REVISION-main =		17
+REVISION-main =		18
+REVISION-emoticons =	0
 
 MODULES =		x11/kde devel/gettext
 MODKDE_VERSION =	3.5.8

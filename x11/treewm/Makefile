@@ -2,14 +2,12 @@
 
 COMMENT=		tree window manager
 DISTNAME=		treewm-0.4.5
-REVISION=		1
+REVISION=		2
 CATEGORIES=		x11
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=treewm/}
 
 HOMEPAGE=		http://treewm.sourceforge.net/
-
-MAINTAINER=		William Yodlowsky <william@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

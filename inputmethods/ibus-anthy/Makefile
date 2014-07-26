@@ -3,14 +3,13 @@
 COMMENT =	japanese input engine for ibus
 
 DISTNAME =	ibus-anthy-1.5.4
+REVISION =	0
 
 SHARED_LIBS =	anthygobject-1.0	1.0 # 5.504
 
 CATEGORIES =	inputmethods japanese
 
 HOMEPAGE =	https://code.google.com/p/ibus/
-
-MAINTAINER =	Federico G. Schwindt <fgsch@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

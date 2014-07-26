@@ -3,10 +3,9 @@
 COMMENT=		virtual keyboard for X Window System
 
 DISTNAME=		xvkbd-3.3
+REVISION=		0
 CATEGORIES=		x11
 HOMEPAGE=		http://homepage3.nifty.com/tsato/xvkbd/
-
-MAINTAINER=		Yozo TODA <yozo@v007.vaio.ne.jp>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

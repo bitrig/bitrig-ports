@@ -4,14 +4,12 @@ COMMENT =	data recovery software
 
 VERSION =	6.14
 DISTNAME =	testdisk-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	sysutils
 
 HOMEPAGE =	http://www.cgsecurity.org/
 MASTER_SITES =	${HOMEPAGE}
 EXTRACT_SUFX =	.tar.bz2
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

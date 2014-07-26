@@ -4,6 +4,7 @@ COMMENT=		faster Class::Std
 
 DISTNAME=		Class-Std-Fast-v0.0.8
 PKGNAME=		p5-${DISTNAME:S/v//}
+REVISION=		0
 CATEGORIES=		devel
 
 # perl

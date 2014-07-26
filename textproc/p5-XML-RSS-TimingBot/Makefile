@@ -4,11 +4,9 @@ COMMENT=	efficiently fetch RSS feeds
 
 MODULES=	cpan
 DISTNAME=	XML-RSS-TimingBot-2.03
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=		library for making beautiful graphs
 
 DISTNAME=		gruff-0.3.6
-REVISION =		1
+REVISION =		2
 CATEGORIES=		graphics
 
 HOMEPAGE=		http://nubyonrails.com/pages/gruff/

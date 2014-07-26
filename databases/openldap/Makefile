@@ -4,8 +4,8 @@ COMMENT-main =		open-source LDAP software (client)
 COMMENT-server =	open-source LDAP software (server)
 
 DISTNAME =		openldap-2.4.39
-REVISION-main =		1
-REVISION-server =	2
+REVISION-main =		2
+REVISION-server =	3
 PKGNAME-main =		${DISTNAME:S/-/-client-/}
 PKGNAME-server =	${DISTNAME:S/-/-server-/}
 

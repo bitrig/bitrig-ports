@@ -4,7 +4,7 @@ COMMENT =	Xfce4 ppp connection monitor panel plugin
 
 XFCE_VERSION =	0.1.3.99
 XFCE_PLUGIN =	modemlights
-REVISION =	6
+REVISION =	7
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT =		PC-9801 emulator
 
 DISTNAME =		xnp2-20130726
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		emulators
 

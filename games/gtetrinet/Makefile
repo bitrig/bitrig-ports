@@ -6,14 +6,12 @@ COMMENT-main=	tetrinet client
 COMMENT-themes=	collection of gtetrinet themes
 DISTNAME=	gtetrinet-0.7.11
 PKGNAME-main=	${DISTNAME}
-REVISION-main=	17
+REVISION-main=	18
 PKGNAME-themes=	gtetrinet-themes-20070623
-REVISION-themes=2
+REVISION-themes=3
 CATEGORIES=	x11 games
 
 HOMEPAGE=	http://gtetrinet.sourceforge.net/
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtetrinet/0.7/}
 MASTER_SITES0=	${HOMEPAGE:=themes/}

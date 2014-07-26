@@ -4,7 +4,7 @@ COMMENT=		OSS replacement for the Nomachine nxclient
 
 DISTNAME=		opennx-0.16.0.724
 CATEGORIES=		sysutils
-REVISION=		2
+REVISION=		3
 
 HOMEPAGE=		http://opennx.sourceforge.net/
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=opennx/}

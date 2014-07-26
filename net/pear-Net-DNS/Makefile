@@ -5,7 +5,7 @@ COMMENT=	resolver library used to communicate with a DNS server
 DISTNAME=	Net_DNS-1.0.1
 CATEGORIES=	net
 
-REVISION=	4
+REVISION=	5
 
 MODULES=	lang/php www/pear
 

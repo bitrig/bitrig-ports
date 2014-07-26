@@ -6,10 +6,8 @@ COMMENT =	Moose minus the antlers
 
 MODULES =	cpan
 DISTNAME =	Mouse-0.97
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

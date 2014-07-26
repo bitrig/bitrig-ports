@@ -3,6 +3,7 @@
 COMMENT =		Haskell 98 comonads
 
 DISTNAME =		comonad-3.0.3
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

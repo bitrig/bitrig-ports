@@ -2,6 +2,7 @@
 
 COMMENT =	interactive desktop widgets for KDE
 DISTNAME =	superkaramba-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	superkaramba	50.0 # 4.7
 

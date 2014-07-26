@@ -6,6 +6,7 @@ COMMENT=	Linux SDL package based on Fedora Core 4
 
 DISTNAME=	libSDL-fc4
 PKGNAME=	fedora_sdl-4.0
+REVISION=	0
 
 # modified from fc4 originals with execstack -c
 MASTER_SITES=	http://spacehopper.org/mirrors/

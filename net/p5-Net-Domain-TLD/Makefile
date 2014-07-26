@@ -4,10 +4,8 @@ COMMENT=	module to work with TLD names
 
 MODULES=	cpan
 DISTNAME=	Net-Domain-TLD-1.68
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

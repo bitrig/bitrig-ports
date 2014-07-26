@@ -3,6 +3,7 @@
 COMMENT=		XML parser and renderer with HTML 5 quirks mode
 
 DISTNAME=		xmlhtml-0.2.1
+REVISION=		0
 CATEGORIES=		textproc
 
 # BSD3

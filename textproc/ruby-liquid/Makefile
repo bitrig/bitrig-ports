@@ -3,7 +3,7 @@
 COMMENT =	safe, customer facing template language
 
 DISTNAME =	liquid-2.4.1
-REVISION = 	1
+REVISION = 	2
 CATEGORIES =	textproc
 
 HOMEPAGE =	 http://wiki.shopify.com/Liquid

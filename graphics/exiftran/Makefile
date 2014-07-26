@@ -4,7 +4,7 @@ COMMENT=	command line utility to transform jpeg files
 
 V=		2.08
 DISTNAME=	fbida-${V}
-REVISION=	0
+REVISION=	1
 
 PKGNAME=	exiftran-${V}
 

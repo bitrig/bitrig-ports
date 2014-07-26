@@ -3,7 +3,7 @@
 COMMENT=	gtk+2 based xmessage(1) clone
 
 DISTNAME=	gxmessage-2.12.4
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	x11
 

@@ -2,6 +2,7 @@
 
 COMMENT=	Scottish English make speaker (AWB)
 DISTNAME=	festvox_cmu_us_awb_arctic_hts
+REVISION=	0
 
 RUN_DEPENDS=	${ARCTIC_US_DEPS}
 

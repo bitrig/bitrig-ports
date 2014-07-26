@@ -4,6 +4,7 @@ COMMENT=		color profile manager for GNOME
 
 GNOME_PROJECT=		gnome-color-manager
 GNOME_VERSION=		3.12.3
+REVISION=		0
 
 CATEGORIES=		graphics
 

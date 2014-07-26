@@ -4,8 +4,7 @@ COMMENT =		PHP support for LZF de/compression
 
 DISTNAME =		LZF-1.6.2
 CATEGORIES =		archivers
-MAINTAINER =		Johan Huldtgren <jhuldtgren@gmail.com>
-REVISION =		0
+REVISION =		1
 
 # PHP
 PERMIT_PACKAGE_CDROM =	Yes

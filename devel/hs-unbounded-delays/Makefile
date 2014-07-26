@@ -3,7 +3,7 @@
 COMMENT =		unbounded thread delays and timeouts
 
 DISTNAME =		unbounded-delays-0.1.0.5
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 
 # BSD3

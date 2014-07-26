@@ -4,14 +4,12 @@ SHARED_ONLY=	Yes
 
 COMMENT=	lua binding to OpenSSL to provide TLS/SSL communication
 VERSION=	0.5
-REVISION=	1
+REVISION=	2
 DISTNAME=	luasec-${VERSION}
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/brunoos/luasec/archive/
 
 HOMEPAGE=	https://github.com/brunoos/luasec/wiki
-
-MAINTAINER=	Gleydson Soares <gsoares@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

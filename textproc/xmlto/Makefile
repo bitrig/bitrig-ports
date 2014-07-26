@@ -3,6 +3,7 @@
 COMMENT=	front-end for converting XML files to various formats
 
 DISTNAME=	xmlto-0.0.26
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	textproc
 

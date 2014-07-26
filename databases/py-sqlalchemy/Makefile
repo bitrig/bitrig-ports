@@ -5,13 +5,11 @@ COMMENT =		database toolkit for Python
 MODPY_EGG_VERSION =	0.7.1
 DISTNAME =		SQLAlchemy-${MODPY_EGG_VERSION}
 PKGNAME =		py-sqlalchemy-${MODPY_EGG_VERSION:S/p/./}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		databases
 
 HOMEPAGE =		http://www.sqlalchemy.org/
-
-MAINTAINER =		Will Maier <wcmaier@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

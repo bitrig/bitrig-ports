@@ -3,6 +3,7 @@
 COMMENT =	encoding and decoding of base32 (RFC4648) strings
 
 DISTNAME =	Convert-Base32-0.06
+REVISION =	0
 
 CATEGORIES =	converters
 

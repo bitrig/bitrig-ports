@@ -7,15 +7,13 @@ COMMENT=	Pluggable Authentication Module
 V=		20121009
 DISTNAME=	freebsd_pam-${V}
 PKGNAME=	openpam-${V}
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	security
 
 SHARED_LIBS+=	pam	5.0
 
 HOMEPAGE=	http://www.openpam.org/
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

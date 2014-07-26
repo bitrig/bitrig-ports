@@ -4,7 +4,7 @@ COMMENT=	summarize english text
 
 MODULES=	cpan
 DISTNAME=	Lingua-EN-Summarize-0.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 PERMIT_PACKAGE_CDROM=	No licence

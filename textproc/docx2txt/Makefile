@@ -2,9 +2,9 @@
 
 COMMENT =		command line converter from Microsoft docx to ASCII text
 DISTNAME =		docx2txt-1.0
+REVISION =		0
 CATEGORIES =		textproc
 HOMEPAGE =		http://docx2txt.sourceforge.net/
-MAINTAINER =		Ingo Schwarze <schwarze@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

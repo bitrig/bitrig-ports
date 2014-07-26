@@ -4,9 +4,8 @@ COMMENT =		module to access shadow passwords
 
 DISTNAME =		ruby-shadow-2.3.3
 PKGNAME =		${DISTNAME:S/ruby-//}
+REVISION =		0
 CATEGORIES =		sysutils
-
-MAINTAINER =		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # PD
 PERMIT_PACKAGE_CDROM =	Yes

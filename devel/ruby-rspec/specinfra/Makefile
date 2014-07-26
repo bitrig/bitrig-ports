@@ -2,7 +2,6 @@
 
 COMMENT=	common layer for serverspec and configspec
 DISTNAME=	specinfra-1.11.0
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
+REVISION=	0
 
 .include <bsd.port.mk>

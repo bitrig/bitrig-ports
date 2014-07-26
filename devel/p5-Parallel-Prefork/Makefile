@@ -3,7 +3,7 @@
 COMMENT=	simple prefork server framework
 
 DISTNAME=	Parallel-Prefork-0.11
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # Perl

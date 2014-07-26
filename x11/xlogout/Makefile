@@ -3,10 +3,8 @@
 COMMENT=	simple logout button
 
 DISTNAME=	xlogout-1.1
-REVISION=	3
+REVISION=	4
 CATEGORIES=	x11
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # BSD-like, badly worded
 PERMIT_PACKAGE_CDROM=	Yes

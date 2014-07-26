@@ -4,9 +4,8 @@ COMMENT=	Libretto BIOS Setting Program
 
 DISTNAME=	libapm-linux-1.0beta5
 PKGNAME=	libretto-config-1.0b5
+REVISION=	0
 CATEGORIES=	sysutils
-
-MAINTAINER=	Todd Miller <millert@openbsd.org>
 
 ONLY_FOR_ARCHS=	i386
 

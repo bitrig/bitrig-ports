@@ -3,15 +3,13 @@
 COMMENT=	RFC 2222 SASL (Simple Authentication and Security Layer)
 
 DISTNAME=	cyrus-sasl-2.1.26
-REVISION=	11
+REVISION=	12
 
 SHARED_LIBS += sasl2           3.0 # 3.0
 
 CATEGORIES=	security
 
 HOMEPAGE=	http://www.cyrusimap.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # see the COPYRIGHT file in package sources
 PERMIT_PACKAGE_CDROM=	yes

@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	addressbook manager
 
 DISTNAME=	rubrica2-2.0.7
-REVISION=	9
+REVISION=	10
 EPOCH=		0
 
 CATEGORIES=	productivity x11

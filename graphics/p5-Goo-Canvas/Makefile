@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		Perl interface to the GooCanvas
 
 DISTNAME=		Goo-Canvas-0.06
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		graphics
 

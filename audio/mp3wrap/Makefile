@@ -4,12 +4,11 @@ COMMENT=	utility for mp3 wrapping
 
 DISTNAME=	mp3wrap-0.5-src
 PKGNAME=	${DISTNAME:S/-src//}
+REVISION=	0
 
 CATEGORIES=	audio
 
 HOMEPAGE=	http://mp3wrap.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@cvs.openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

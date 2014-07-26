@@ -3,7 +3,7 @@
 COMMENT=	NetBIOS name network scanner
 
 DISTNAME=	nbtscan-1.5.1
-REVISION=	0
+REVISION=	1
 WRKDIST=	${WRKDIR}/${DISTNAME}a
 
 CATEGORIES=	net

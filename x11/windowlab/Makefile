@@ -2,12 +2,11 @@
 
 COMMENT =	small and simple window manager of novel design
 DISTNAME =	windowlab-1.40
+REVISION =	0
 EXTRACT_SUFX =	.tar
 CATEGORIES =	x11
 
 HOMEPAGE =	http://nickgravgaard.com/windowlab/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes

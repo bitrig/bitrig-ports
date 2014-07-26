@@ -4,7 +4,7 @@ COMMENT= 	abstract class for constructing hashes
 
 MODULES=	cpan
 DISTNAME=	Class-Base-0.03
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # Artistic

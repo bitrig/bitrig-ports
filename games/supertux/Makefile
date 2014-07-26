@@ -6,11 +6,9 @@ DISTNAME =		supertux-0.1.3
 
 CATEGORIES =		games
 
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =		http://supertux.lethargik.org/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

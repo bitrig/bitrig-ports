@@ -6,13 +6,11 @@ COMMENT=	Monkey's audio lossless codec
 
 DISTNAME=	mac-3.99-u4-b5
 PKGNAME=	mac-3.99.4.5
-REVISION=	1
+REVISION=	2
 SHARED_LIBS +=  mac                  0.0      # .2.0
 CATEGORIES=	audio
 
 HOMEPAGE=	http://www.monkeysaudio.com/
-
-MAINTAINER=	Vlad Glagolev <stealth@sourcemage.org>
 
 # Monkey's Audio Source Code License Agreement
 # http://www.monkeysaudio.com/license.html

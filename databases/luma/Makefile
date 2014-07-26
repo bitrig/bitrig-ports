@@ -6,6 +6,7 @@ COMMENT=	Qt-based LDAP browser and utility
 
 MODPY_EGG_VERSION=3.0.7
 DISTNAME=	luma-${MODPY_EGG_VERSION}
+REVISION=	0
 
 CATEGORIES=	databases x11
 

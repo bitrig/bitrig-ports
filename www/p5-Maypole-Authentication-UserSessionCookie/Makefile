@@ -4,10 +4,8 @@ COMMENT=	track sessions and, optionally, users
 
 MODULES=	cpan
 DISTNAME=	Maypole-Authentication-UserSessionCookie-1.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Maypole which is same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

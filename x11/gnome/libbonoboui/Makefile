@@ -4,7 +4,7 @@ COMMENT=	user interface components for bonobo
 
 GNOME_PROJECT=	libbonoboui
 GNOME_VERSION=	2.24.5
-REVISION=	5
+REVISION=	6
 
 SHARED_LIBS +=	bonoboui-2	3.0        # .0.0
 

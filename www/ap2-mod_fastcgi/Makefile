@@ -6,15 +6,13 @@ COMMENT=	Apache2 FastCGI module
 
 DISTNAME=	mod_fastcgi-2.4.2
 PKGNAME=	ap2-${DISTNAME}
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	www
 
 HOMEPAGE=	http://www.fastcgi.com/
 
 MASTER_SITES=	${HOMEPAGE}dist/
-
-MAINTAINER=	Michael Erdely <merdely@openbsd.org>
 
 # Proprietary license
 PERMIT_PACKAGE_CDROM=	Yes

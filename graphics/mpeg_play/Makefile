@@ -3,7 +3,7 @@
 COMMENT=	play mpeg movies on X11
 
 DISTNAME=	mpeg_play-2.4
-REVISION=	4
+REVISION=	5
 CATEGORIES=	graphics
 
 MASTER_SITES=	http://bmrc.berkeley.edu/ftp/pub/multimedia/mpeg/play/

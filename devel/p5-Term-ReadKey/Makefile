@@ -8,7 +8,7 @@ MODULES=		cpan
 V=			2.30
 DISTNAME=		TermReadKey-${V}
 PKGNAME=		p5-Term-ReadKey-${V}
-REVISION=		6
+REVISION=		7
 CATEGORIES=		devel
 
 PERMIT_PACKAGE_CDROM=	Yes

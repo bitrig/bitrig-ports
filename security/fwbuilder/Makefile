@@ -3,7 +3,7 @@
 COMMENT =	firewall GUI
 DISTNAME =	fwbuilder-5.1.0.3599
 CATEGORIES =	net security
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	http://www.fwbuilder.org/
 

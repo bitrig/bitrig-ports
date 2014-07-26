@@ -2,5 +2,6 @@
 
 COMMENT =	Austrian holiday classes for PHP
 HOLNAME =	Austria-0.1.5
+REVISION =	0
 
 .include <bsd.port.mk>

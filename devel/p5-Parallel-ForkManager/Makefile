@@ -4,6 +4,7 @@ COMMENT=	simple parallel processing fork manager
 
 MODULES=	cpan
 DISTNAME=	Parallel-ForkManager-1.02
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

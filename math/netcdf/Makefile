@@ -6,7 +6,7 @@ BROKEN-hppa =	fails to configure
 COMMENT=	library for machine-independent, array-oriented data access
 
 DISTNAME=	netcdf-3.6.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	math
 
 SHARED_LIBS=	netcdf		4.0 \
@@ -15,7 +15,6 @@ SHARED_LIBS=	netcdf		4.0 \
 
 HOMEPAGE=	http://www.unidata.ucar.edu/packages/netcdf/
 
-MAINTAINER=	Tom Knienieder <tom@knienieder.com>
 MODULES =	fortran
 MODFORTRAN_COMPILER = g77
 BUILD_DEPENDS =	${MODFORTRAN_BUILD_DEPENDS} 

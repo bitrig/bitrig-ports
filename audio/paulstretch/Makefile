@@ -5,10 +5,9 @@ DISTNAME =	paulstretch-2.2-2
 PKGNAME =	paulstretch-2.2.2
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	audio x11
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://hypermammut.sourceforge.net/paulstretch/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,10 +4,9 @@ COMMENT=		parse and manipulate DNS Zone files
 
 MODULES=		cpan
 DISTNAME=		DNS-ZoneParse-1.10
+REVISION=		0
 CATEGORIES=		net
 USE_GROFF =		Yes
-
-MAINTAINER=		Girish Venkatachalam <girish1729@gmail.com>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

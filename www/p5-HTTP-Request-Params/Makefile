@@ -4,11 +4,9 @@ COMMENT=	retrieve GET/POST parameters from HTTP requests
 
 MODULES=	cpan
 DISTNAME=	HTTP-Request-Params-1.01
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

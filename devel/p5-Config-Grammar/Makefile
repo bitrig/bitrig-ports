@@ -4,7 +4,7 @@ COMMENT=	grammar-based, user-friendly config parser
 
 MODULES=	cpan
 DISTNAME=	Config-Grammar-1.10
-REVISION=	0
+REVISION=	1
 CATEGORIES=     devel
 USE_GROFF =	Yes
 

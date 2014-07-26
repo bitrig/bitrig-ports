@@ -3,7 +3,7 @@
 COMMENT =		AppData tools
 
 DISTNAME =		appdata-tools-0.1.7
-REVISION =		2
+REVISION =		3
 
 CATEGORIES =		misc
 

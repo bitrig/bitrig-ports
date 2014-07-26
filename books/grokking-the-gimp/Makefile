@@ -6,7 +6,7 @@ CATEGORIES=books graphics
 VERSION=1.0
 DISTNAME=Grokking-the-GIMP-v${VERSION}
 PKGNAME=grokking-the-gimp-${VERSION}
-REVISION=1
+REVISION=2
 
 # Open publication license
 PERMIT_PACKAGE_CDROM=Yes

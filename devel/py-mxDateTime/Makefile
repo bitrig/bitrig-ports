@@ -3,7 +3,7 @@
 SHARED_ONLY =	Yes
 
 COMMENT =	date and time types for Python
-REVISION =	0
+REVISION =	1
 
 MODPY_EGG_VERSION = 3.2.6
 DISTNAME =	egenix-mx-base-${MODPY_EGG_VERSION}

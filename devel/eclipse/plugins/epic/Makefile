@@ -5,12 +5,10 @@ COMMENT=		Perl plugin for Eclipse IDE
 V=			0.5.33
 DISTNAME=		org.epic.updatesite_${V}_20070406
 PKGNAME=		eclipse-plugin-epic-${V}
-REVISION=		2
+REVISION=		3
 CATEGORIES+=		perl5
 
 HOMEPAGE=		http://e-p-i-c.sourceforge.net/
-
-MAINTAINER=		Carlos Valiente <yo@virutass.net>
 
 # Common Public License Version 1.0 (http://www.eclipse.org/legal/cpl-v10.html)
 PERMIT_PACKAGE_CDROM=	commercial distribution defend and indemnify clauses

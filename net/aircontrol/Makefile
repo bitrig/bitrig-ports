@@ -4,6 +4,7 @@ COMMENT =	management tool for Ubiquiti wireless devices
 
 DISTNAME =	aircontrol-1.4.2-beta
 PKGNAME =	${DISTNAME:S/-beta/beta/}
+REVISION =	0
 
 CATEGORIES =	net
 

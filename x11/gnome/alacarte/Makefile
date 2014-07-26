@@ -4,6 +4,7 @@ COMMENT=		fd.o menu editor for GNOME
 
 GNOME_PROJECT=		alacarte
 GNOME_VERSION=		3.11.91
+REVISION=		0
 
 CATEGORIES=		sysutils
 

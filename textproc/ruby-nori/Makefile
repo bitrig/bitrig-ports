@@ -3,6 +3,7 @@
 COMMENT =		XML to Hash translator
 
 DISTNAME =		nori-2.3.0
+REVISION =		0
 
 HOMEPAGE =		https://github.com/savonrb/nori
 

@@ -4,11 +4,9 @@ COMMENT =		file editor/viewer/analyzer for executables
 
 DISTNAME =		ht-2.0.22
 CATEGORIES =		editors
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://hte.sourceforge.net/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

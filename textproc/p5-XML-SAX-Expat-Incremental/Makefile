@@ -3,7 +3,7 @@
 COMMENT=		subclass for non-blocking (incremental) parsing
 
 DISTNAME=		XML-SAX-Expat-Incremental-0.05
-REVISION=		0
+REVISION=		1
 CATEGORIES=		textproc
 
 # perl

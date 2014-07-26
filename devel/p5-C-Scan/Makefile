@@ -4,10 +4,8 @@ COMMENT=	module to scan C language files
 
 MODULES=	cpan
 DISTNAME=	C-Scan-0.74
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

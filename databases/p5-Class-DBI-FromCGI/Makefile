@@ -4,11 +4,9 @@ COMMENT=	update Class::DBI objects through CGI::Untaint
 
 MODULES=	cpan
 DISTNAME=	Class-DBI-FromCGI-1.00
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases www
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

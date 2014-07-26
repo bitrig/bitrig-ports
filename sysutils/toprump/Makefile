@@ -3,12 +3,10 @@
 COMMENT=	modified OpenBSD top command
 
 DISTNAME=	toprump-0.14.8
-REVISION=	3
+REVISION=	4
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://cyodesigns.com/toprump/
-
-MAINTAINER=	Mark Lumsden <mark@cyodesigns.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=	syntactic sugar for lambdas in Perl
 
 DISTNAME=	Sub-Lambda-0.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

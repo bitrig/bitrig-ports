@@ -4,15 +4,13 @@ COMMENT=	GTK+ support library for colord
 
 DISTNAME=	colord-gtk-0.1.25
 EXTRACT_SUFX=	.tar.xz
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  colord-gtk           0.0      # 1.0
 
 CATEGORIES=	graphics print
 
 HOMEPAGE=	http://www.freedesktop.org/software/colord/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv3
 PERMIT_PACKAGE_CDROM=	Yes

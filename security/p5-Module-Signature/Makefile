@@ -3,10 +3,9 @@
 COMMENT =		module signature file manipulation
 
 DISTNAME =		Module-Signature-0.73
+REVISION =		0
 
 CATEGORIES =		security
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # CC0 creative commons
 PERMIT_PACKAGE_CDROM =	Yes

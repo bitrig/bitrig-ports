@@ -3,13 +3,12 @@
 COMMENT=	serve 9P from Unix
 
 DISTNAME=	u9fs-20110118
+REVISION=	0
 CATEGORIES=	plan9
 
 MASTER_SITES=	http://plan9.bell-labs.com/sources/contrib/sl/u9fs/ \
 		http://openbsd.stanleylieber.com/u9fs/
 EXTRACT_SUFX=	-src.tgz
-
-MAINTAINER=	Stanley Lieber <stanley.lieber@gmail.com>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

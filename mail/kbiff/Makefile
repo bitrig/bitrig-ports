@@ -3,14 +3,12 @@
 COMMENT=		new mail notification utility for KDE
 
 DISTNAME=		kbiff-3.8
-REVISION =		9
+REVISION =		10
 SHARED_LIBS=		kbiff 2.0
 CATEGORIES=		mail
 EXTRACT_SUFX=		.tar.bz2
 
 HOMEPAGE=		http://www.granroth.org/kbiff/
-
-MAINTAINER=		Stephan Tesch <stephan@tesch.cx>
 
 # GPL
 PERMIT_PACKAGE_CDROM=  	Yes

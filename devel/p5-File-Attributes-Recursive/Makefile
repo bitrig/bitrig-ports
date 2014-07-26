@@ -4,11 +4,9 @@ COMMENT =	inherit file attributes from parent directories
 
 MODULES =	cpan
 DISTNAME =	File-Attributes-Recursive-0.02
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

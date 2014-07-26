@@ -3,8 +3,7 @@
 COMMENT=	PHP interface to memcached
 
 DISTNAME=	memcache-3.0.6
-REVISION=	4
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
+REVISION=	5
 
 # PHP
 PERMIT_PACKAGE_CDROM=	Yes

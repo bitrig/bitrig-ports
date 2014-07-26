@@ -3,14 +3,12 @@
 COMMENT=	audio file volume normalizer
 
 DISTNAME=	normalize-0.7.7
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 
 MASTER_SITES=	${MASTER_SITE_SAVANNAH:=normalize/}
 
 HOMEPAGE=	http://normalize.nongnu.org/
-
-MAINTAINER=	Vlad Glagolev <stealth@sourcemage.org>
 
 # GPL license
 PERMIT_PACKAGE_CDROM=	Yes

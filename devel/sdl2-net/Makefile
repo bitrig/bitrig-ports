@@ -4,12 +4,12 @@ V =		2.0.0
 COMMENT =	SDL2 cross-platform networking library
 DISTNAME =	SDL2_net-${V}
 PKGNAME =	sdl2-net-${V}
+REVISION =	0
 CATEGORIES =	devel net
 
 SHARED_LIBS +=	SDL2_net		0.0 # 0.0
 
 HOMEPAGE =	http://www.libsdl.org/projects/SDL_net/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # zlib
 PERMIT_PACKAGE_CDROM =	Yes

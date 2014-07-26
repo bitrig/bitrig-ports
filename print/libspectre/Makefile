@@ -7,13 +7,11 @@ COMMENT=	library for rendering Postscript documents
 
 DISTNAME=	libspectre-0.2.7
 CATEGORIES=	print
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS=	spectre 0.1	# 2.7
 
 HOMEPAGE=	http://libspectre.freedesktop.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

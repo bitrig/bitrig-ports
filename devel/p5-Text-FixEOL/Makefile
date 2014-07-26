@@ -5,7 +5,7 @@ COMMENT= 	canonical EOL/EOF
 MODULES=	cpan 
 
 DISTNAME=	Text-FixEOL-1.05
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel textproc
 CONFIGURE_STYLE=modbuild
 

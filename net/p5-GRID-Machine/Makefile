@@ -4,12 +4,10 @@ COMMENT =	Remote Procedure Calls over a SSH link
 
 MODULES =	cpan
 DISTNAME =	GRID-Machine-0.127
-REVISION =	0
+REVISION =	1
 CATEGORIES =	net sysutils
 
 CPAN_AUTHOR =	CASIANO
-
-MAINTAINER =	Okan Demirmen <okan@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

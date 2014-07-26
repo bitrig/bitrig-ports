@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT =	powerful KDE batch file renamer
 
 DISTNAME =	krename-3.0.14
-REVISION =	12
+REVISION =	13
 
 SRCFILES =	${DISTNAME}.tar.bz2
 DOCFILES =	krename-3.0.12.pdf \
@@ -18,8 +18,6 @@ EXTRACT_ONLY =	${SRCFILES}
 
 CATEGORIES =	sysutils x11 x11/kde
 HOMEPAGE =	http://www.krename.net/
-
-MAINTAINER =	Vadim Zhukov <persgray@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,6 +4,7 @@ COMMENT=	simplistic perl interface to pkg-config
 
 MODULES=	cpan
 DISTNAME=	ExtUtils-PkgConfig-1.14
+REVISION=	0
 CATEGORIES=	devel
 
 # LGPLv2.1

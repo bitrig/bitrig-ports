@@ -4,7 +4,7 @@ COMMENT=	implementation of the JSP and Java Servlet APIs
 
 V=		3.2.4
 DISTNAME=	jakarta-servletapi-${V}
-REVISION=	14
+REVISION=	15
 CATEGORIES=	www devel
 MASTER_SITES=	http://archive.apache.org/dist/jakarta/tomcat-3/archive/v${V}/bin/
 EXTRACT_SUFX=	.zip

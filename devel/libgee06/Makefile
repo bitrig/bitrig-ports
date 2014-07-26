@@ -5,14 +5,11 @@ COMMENT=	GObject based collection library
 GNOME_PROJECT=	libgee
 GNOME_VERSION=	0.6.8
 PKGNAME=	${GNOME_PROJECT}06-${GNOME_VERSION}
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  gee 1.0 # .2.0
 
 CATEGORIES=	devel
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

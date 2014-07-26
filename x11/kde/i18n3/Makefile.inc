@@ -6,7 +6,7 @@ LANGS = af ar az be bg bn br bs ca cs csb cy da de el en_GB eo es et eu fa \
 	tr uk uz uz@cyrillic vi wa zh_CN zh_TW
 
 
-REVISION = 3
+REVISION = 4
 
 .for i in ${LANGS}
 SUPDISTFILES += kde-i18n-$i-${VERSION}.tar.bz2

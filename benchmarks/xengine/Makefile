@@ -2,13 +2,11 @@
 
 COMMENT=	reciprocating engine for X11
 PKGNAME=	xengine-1.0.1
-REVISION=	4
+REVISION=	5
 CATEGORIES=	benchmarks x11
 MASTER_SITES=	ftp://ftp.lab.kdd.co.jp/Usenet/comp.sources.x/volume09/xengine/ \
 		http://distfiles.nl/xengine/
 DISTFILES=	part01.z patch1.z
-
-MAINTAINER=	Paul Janzen <pjanzen@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	no fee
 PERMIT_PACKAGE_FTP=	Yes

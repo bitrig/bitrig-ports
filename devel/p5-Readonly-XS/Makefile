@@ -5,7 +5,7 @@ COMMENT= 	create readonly variables faster
 MODULES=	cpan
 SHARED_ONLY=	Yes
 DISTNAME=	Readonly-XS-1.05
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel
 
 # perl licence

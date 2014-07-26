@@ -5,6 +5,7 @@ COMMENT=	interpretive macro/programming language
 V=		09-149
 DISTNAME=	zoem-${V}
 PKGNAME=	zoem-${V:S,-,_,}
+REVISION=	0
 CATEGORIES=	textproc lang
 
 HOMEPAGE=	http://micans.org/zoem/

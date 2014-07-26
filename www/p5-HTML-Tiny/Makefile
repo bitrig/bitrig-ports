@@ -4,9 +4,8 @@ COMMENT =	lightweight, dependency free HTML/XML generation
 
 MODULES =	cpan
 DISTNAME =	HTML-Tiny-1.05
+REVISION =	0
 CATEGORIES =	www
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

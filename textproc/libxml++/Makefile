@@ -6,14 +6,11 @@ V=		2.36.0
 DISTNAME=	libxml++-$V
 SHARED_LIBS+=	xml++-2.6	1.1 # .2.7
 CATEGORIES=	textproc
-REVISION=	1
+REVISION=	2
 
 EXTRACT_SUFX=	.tar.xz
 
 HOMEPAGE=	http://libxmlplusplus.sourceforge.net/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPL >= 2
 PERMIT_PACKAGE_CDROM=	Yes

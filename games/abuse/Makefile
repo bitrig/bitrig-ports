@@ -7,11 +7,9 @@ PKGNAME =	abuse-0.8
 EPOCH =		0
 ABUSE_SFX =	abuse-free-sounds-20120309
 CATEGORIES =	games x11
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://abuse.zoy.org/
-
-MAINTAINER =	Antti Harri <iku@openbsd.fi>
 
 # Abuse: GPLv2 and public domain
 # Abuse-free-sounds: various free licenses

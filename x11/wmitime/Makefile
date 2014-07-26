@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; shows the date, time, and Internet time
 
 DISTNAME=		wmitime-0.3
-REVISION=		1
+REVISION=		2
 CATEGORIES=		x11 x11/windowmaker
 
 # GPL

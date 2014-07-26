@@ -3,14 +3,12 @@
 COMMENT=	rrdtool frontend for Bind installation
 
 DISTNAME=	bindgraph-0.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net www
 
 HOMEPAGE=	http://www.linux.it/~md/software/
 
 MASTER_SITES= 	${HOMEPAGE}
-
-MAINTAINER=     Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

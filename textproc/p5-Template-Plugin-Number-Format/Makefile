@@ -4,7 +4,7 @@ COMMENT= 	plugin/filter interface to Number::Format
 
 MODULES=	cpan
 DISTNAME=	Template-Plugin-Number-Format-1.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 # Artistic

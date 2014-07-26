@@ -3,7 +3,7 @@
 COMMENT=	fast, pure Ruby Markdown parser
 
 DISTNAME=	kramdown-1.0.2
-REVISION =	0
+REVISION =	1
 
 CATEGORIES=	textproc
 

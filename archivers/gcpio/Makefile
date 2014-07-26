@@ -4,7 +4,7 @@ COMMENT=	GNU copy-in/out (cpio)
 
 DISTNAME=	cpio-2.11
 PKGNAME=	g${DISTNAME}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	archivers
 
 HOMEPAGE=	https://www.gnu.org/software/cpio/

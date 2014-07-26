@@ -4,6 +4,7 @@ COMMENT=	dispatcher for command line interface programs
 
 MODULES=	cpan
 DISTNAME=	App-CLI-0.313
+REVISION=	0
 EPOCH=		0
 CATEGORIES=	www devel
 

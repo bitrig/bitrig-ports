@@ -3,6 +3,7 @@
 COMMENT =	music files for vegastrike
 
 DISTNAME =	vegastrike-music-${V}
+REVISION =	0
 
 RUN_DEPENDS =	games/vegastrike/data>=${V}
 

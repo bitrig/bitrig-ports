@@ -3,7 +3,7 @@
 COMMENT=	pipe an Ogg stream to an Icecast server
 
 DISTNAME=	oggfwd-0.2
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net multimedia
 
 HOMEPAGE=	http://v2v.cc/~j/ffmpeg2theora/oggfwd/

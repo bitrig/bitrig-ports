@@ -2,13 +2,11 @@
 
 COMMENT=		full-featured text WWW browser
 DISTNAME=		elinks-0.11.7
-REVISION=		8
+REVISION=		9
 CATEGORIES=		www
 MASTER_SITES=		http://elinks.cz/download/
 
 HOMEPAGE=		http://elinks.cz/
-
-MAINTAINER=		Edd Barrett <edd@openbsd.org>
 
 # GPL, v2 only
 PERMIT_PACKAGE_CDROM=	Yes

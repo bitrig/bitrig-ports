@@ -4,6 +4,7 @@ COMMENT=		base elements for GStreamer
 
 DISTNAME=		gst-plugins-base-${V}
 PKGNAME=		${GST_PKGNAME_PREFIX}-plugins-base-${V}
+REVISION=		0
 
 SHARED_LIBS +=  gsttag-1.0           1.0      # 204.0
 SHARED_LIBS +=  gstaudio-1.0         1.0      # 204.0

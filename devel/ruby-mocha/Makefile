@@ -3,7 +3,7 @@
 COMMENT =	Ruby library for mocking and stubbing
 
 DISTNAME =	mocha-0.13.3
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 
 HOMEPAGE =	http://mocha.rubyforge.org/

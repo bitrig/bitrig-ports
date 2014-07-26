@@ -4,10 +4,8 @@ COMMENT=	create symlink from IO handle
 
 MODULES=	cpan
 DISTNAME=	PerlIO-via-symlink-0.05
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

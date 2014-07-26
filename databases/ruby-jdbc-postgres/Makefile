@@ -3,6 +3,7 @@
 COMMENT =	access a PostgreSQL database from JRuby
 
 DISTNAME =	jdbc-postgres-9.2.1002.1
+REVISION =	0
 CATEGORIES =	databases
 
 # MIT

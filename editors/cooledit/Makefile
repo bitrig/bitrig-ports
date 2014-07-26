@@ -3,15 +3,13 @@
 COMMENT =	easy to use, graphical editor
 
 DISTNAME =	cooledit-3.17.17
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	editors
 
 HOMEPAGE =	ftp://ftp.ibiblio.org/pub/Linux/apps/editors/X/cooledit/
 
 SHARED_LIBS =	Cw	1.0
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 FLAVORS =	python
 FLAVOR ?=

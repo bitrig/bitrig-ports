@@ -6,10 +6,8 @@ MODULES =		cpan
 # strip -p5 from PKGNAME (added by the cpan MODULE)
 DISTNAME =		mp3cut-1.13
 PKGNAME =		${DISTNAME}
-REVISION =		0
+REVISION =		1
 CATEGORIES =		audio
-
-MAINTAINER =		Girish Venkatachalam <girish1729@gmail.com>
 
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM =	Yes

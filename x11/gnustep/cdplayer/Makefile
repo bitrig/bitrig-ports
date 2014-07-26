@@ -4,7 +4,7 @@ COMMENT =	GNUstep based CD player
 
 VERSION =	0.5.1
 DISTNAME =	cdplayer-${VERSION}
-REVISION =	5
+REVISION =	6
 
 HOMEPAGE =	http://gsburn.sourceforge.net/
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=gsburn/}

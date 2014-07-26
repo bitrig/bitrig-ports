@@ -3,13 +3,12 @@
 COMMENT=	threaded newsreader
 
 CATEGORIES=	news
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 MASTER_SITES=${MASTER_SITE_SOURCEFORGE:=trn/}
 V=77
 DISTNAME=	trn-4.0-test$V
 PKGNAME=	trn-4.0.$V
-REVISION=	1
+REVISION=	2
 
 PERMIT_PACKAGE_FTP=Yes
 # Technically, we could put trn on CD-Rom, provided we include the distfile

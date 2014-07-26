@@ -3,12 +3,10 @@
 COMMENT =		QuickCheck2 support for hs-test-framework
 
 DISTNAME =		test-framework-quickcheck2-0.2.12.3
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 
 HOMEPAGE =		http://batterseapower.github.com/test-framework/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

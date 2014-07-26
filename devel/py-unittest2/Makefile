@@ -5,10 +5,10 @@ COMMENT =		backport of new features added to unittest
 MODPY_EGG_VERSION =	0.5.1
 DISTNAME =		unittest2-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		http://pypi.python.org/pypi/unittest2
-MAINTAINER =		frantisek holop <minusf@obiit.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

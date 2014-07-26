@@ -4,11 +4,9 @@ COMMENT=	Perl extension for minifying JavaScript code
 
 MODULES=	cpan
 DISTNAME=	JavaScript-Minifier-1.05
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Girish Venkatachalam <girish1729@gmail.com>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

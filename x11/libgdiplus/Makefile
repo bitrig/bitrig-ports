@@ -3,14 +3,13 @@
 COMMENT=	GDI+ comptible API
 
 DISTNAME=	libgdiplus-2.10.9
+REVISION=	0
 
 CATEGORIES=	x11 devel
 
 SHARED_LIBS +=	gdiplus	2.0	# .0.0
 
 HOMEPAGE=	http://www.mono-project.com/Libgdiplus
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 # GPLv2 and Mozilla Public License 1.1
 PERMIT_PACKAGE_CDROM=	Yes

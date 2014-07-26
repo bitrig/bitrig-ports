@@ -3,7 +3,7 @@
 COMMENT=	point-to-point bandwidth measurement tool
 
 DISTNAME=	bing-1.0.5
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ens.fr/pub/unix/syst/
 

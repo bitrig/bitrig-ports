@@ -4,7 +4,7 @@ COMMENT=		curses-based Lines game
 
 DISTNAME=		clines-1.0.4
 CATEGORIES=		games
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://manticore.2y.net/prj/clines-a.html
 

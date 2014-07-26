@@ -4,7 +4,7 @@ COMMENT=	AVR microcontroller hardware in-system programmer
 
 V=		5.11
 DISTNAME=	avrdude-${V}
-REVISION=	1
+REVISION=	2
 DISTFILES+=	avrdude-${V}.tar.gz avrdude-doc-${V}.pdf
 CATEGORIES=	devel
 

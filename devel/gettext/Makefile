@@ -3,7 +3,7 @@
 COMMENT=	GNU gettext
 
 DISTNAME=	gettext-0.19.1
-REVISION=	0
+REVISION=	1
 SHARED_LIBS +=  intl                 6.0      # 9.2
 SHARED_LIBS +=  asprintf             1.1      # unknown
 SHARED_LIBS +=  gettextlib           4.0      # unknown
@@ -17,8 +17,6 @@ MASTER_SITES=	${MASTER_SITE_GNU:=gettext/}
 EXTRACT_SUFX=	.tar.xz
 
 HOMEPAGE=	https://www.gnu.org/software/gettext/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # LGPLv2.1, GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

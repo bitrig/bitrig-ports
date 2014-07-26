@@ -5,6 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		libraries to support development of security-enabled apps
 
 VERSION=		3.16.2
+REVISION=		0
 DISTNAME =		nss-${VERSION}
 
 SO_VERSION=		35.0
@@ -14,8 +15,6 @@ SHARED_LIBS+=		${_lib} ${SO_VERSION}
 CATEGORIES=		security
 
 HOMEPAGE=		https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS
-
-MAINTAINER=		Martynas Venckus <martynas@openbsd.org>
 
 # mozilla public license
 PERMIT_PACKAGE_CDROM=	Yes

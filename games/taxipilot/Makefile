@@ -3,12 +3,10 @@
 COMMENT=	silly little game based on Spacetaxi for the C64
 
 DISTNAME=	taxipilot-0.7.2
-REVISION =	10
+REVISION =	11
 CATEGORIES=	games
 
 HOMEPAGE=	http://taxipilot.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=  Yes

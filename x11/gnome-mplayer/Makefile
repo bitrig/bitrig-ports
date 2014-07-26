@@ -4,10 +4,9 @@ COMMENT =		GTK+/GNOME frontend for MPlayer
 
 V =			1.0.9
 DISTNAME =		gnome-mplayer-${V}
+REVISION =		0
 EPOCH =			0
 CATEGORIES =		x11 multimedia
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 HOMEPAGE =		http://kdekorte.googlepages.com/gnomemplayer/
 

@@ -7,7 +7,7 @@ COMMENT =	pure-Java implementation of the Ruby language
 V =		1.7.13
 DISTNAME =	jruby-bin-${V}
 PKGNAME =	jruby-${V}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	lang lang/ruby
 DISTFILES =	${DISTNAME}.tar.gz \
 		jnr-jffi-1.2.2-0-g4c196bb.tar.gz:0 \
@@ -15,8 +15,6 @@ DISTFILES =	${DISTNAME}.tar.gz \
 		${JRUBY_LAUNCHER_GEM}:2
 
 HOMEPAGE =	http://www.jruby.org/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # EPLv1/GPLv2/LGPLv2.1/Ruby/MIT/BSD/Apache/CPL
 PERMIT_PACKAGE_CDROM =	Yes

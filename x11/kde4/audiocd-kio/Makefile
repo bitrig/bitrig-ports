@@ -2,6 +2,7 @@
 
 COMMENT =	KDE KIOslave for accessing audio CDs
 DISTNAME =	audiocd-kio-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	audiocdplugins		50.0
 

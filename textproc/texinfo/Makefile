@@ -5,7 +5,6 @@ EXTRACT_SUFX=		.tgz
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://www.bitrig.org/
-MAINTAINER=		Marco Peereboom <marco@bitrig.org>
 
 # GPL2
 PERMIT_PACKAGE_CDROM=	Yes

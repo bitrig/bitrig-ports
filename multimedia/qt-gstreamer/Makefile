@@ -4,6 +4,7 @@ SHARED_ONLY =	Yes
 COMMENT =	Qt bindings to GStreamer 0.10
 
 DISTNAME =	qt-gstreamer-0.10.3
+REVISION =	0
 
 SHARED_LIBS =   QtGLib-2.0                0.0 # 0.10
 SHARED_LIBS +=  QtGStreamer-0.10          0.0 # 0.10
@@ -13,8 +14,6 @@ SHARED_LIBS +=  QtGStreamerUtils-0.10     0.0 # 0.10
 CATEGORIES =	multimedia devel
 
 HOMEPAGE =	http://gstreamer.freedesktop.org/modules/qt-gstreamer.html
-
-MAINTAINER =	Vadim Zhukov <zhuk@openbsd.org>
 
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes

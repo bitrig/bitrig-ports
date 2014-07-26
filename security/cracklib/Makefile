@@ -3,12 +3,11 @@
 COMMENT =		sensible unix password cracker
 
 DISTNAME =		cracklib-2.9.0
+REVISION =		0
 SHARED_LIBS =		crack	0.3	# 11.0
 CATEGORIES =		security
 
 HOMEPAGE =		http://sourceforge.net/projects/cracklib/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

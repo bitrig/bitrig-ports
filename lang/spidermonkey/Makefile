@@ -12,13 +12,12 @@ DISTNAME =		firefox-${FFX_VERSION}.source
 PKGNAME =	${MOZILLA_PROJECT}-${MOZILLA_VERSION}
 PKGSPEC =	spidermonkey->=1.9v0,<1.10v0
 EPOCH =		0
-REVISION =	2
+REVISION =	3
 
 SO_VERSION =	0.0
 SHARED_LIBS =	mozjs ${SO_VERSION}
 CATEGORIES =	lang
 
-MAINTAINER =	Martynas Venckus <martynas@openbsd.org>
 # MPL
 PERMIT_PACKAGE_CDROM=	Yes
 

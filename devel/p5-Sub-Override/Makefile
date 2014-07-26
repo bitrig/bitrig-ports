@@ -4,7 +4,7 @@ COMMENT=	extension for easily overriding subroutines
 
 MODULES=	cpan
 DISTNAME=	Sub-Override-0.08
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

@@ -3,7 +3,7 @@
 COMMENT-main=		active monitoring tool
 
 V=			2.86
-REVISION=		5
+REVISION=		6
 DISTNAME=		symon-$V
 WRKDIST=		${WRKDIR}/symon
 PKGNAME-main=		${DISTNAME}
@@ -13,8 +13,6 @@ FULLPKGNAME-mux=	symon-mux-$V
 CATEGORIES=	sysutils net
 
 HOMEPAGE=	http://www.xs4all.nl/~wpd/symon
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

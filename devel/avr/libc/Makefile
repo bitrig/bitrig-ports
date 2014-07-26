@@ -3,7 +3,7 @@
 COMMENT=	libc for Atmel AVR 8-bit RISC microcontrollers
 
 DISTNAME=	avr-libc-1.8.0
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.nongnu.org/avr-libc/
 

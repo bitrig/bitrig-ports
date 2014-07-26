@@ -6,9 +6,7 @@ V=			1.2.1
 DISTNAME=		site-${V}
 PKGNAME=		eclipse-plugin-subclipse-${V}
 CATEGORIES+=		java
-REVISION =		1
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
+REVISION =		2
 
 # SubClipse itself is CPL 1.0, but
 # JavaSVN, which it uses, has a bizarro hybrid: BSD but "no redist w/o source code"

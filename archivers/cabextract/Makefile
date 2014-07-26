@@ -3,11 +3,10 @@
 COMMENT=		extracts files from Microsoft CAB archives
 
 DISTNAME=		cabextract-1.4
+REVISION=		0
 CATEGORIES=		archivers
 
 HOMEPAGE=		http://www.cabextract.org.uk/
-
-MAINTAINER=		Steve Shockley <steve.shockley@shockley.net>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

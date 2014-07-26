@@ -3,7 +3,7 @@
 COMMENT =		parallel programming based on a monad
 
 DISTNAME =		monad-par-0.3
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 # BSD3

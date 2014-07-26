@@ -3,6 +3,7 @@
 COMMENT=	lightweight Scheme implementation with subset of R5RS
 
 DISTNAME=	tinyscheme-1.41
+REVISION=	0
 CATEGORIES=	lang
 
 HOMEPAGE=	http://tinyscheme.sourceforge.net/home.html

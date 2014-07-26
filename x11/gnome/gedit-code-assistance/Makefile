@@ -6,6 +6,7 @@ COMMENT=	code assistance for Gedit
 
 GNOME_PROJECT=	gedit-code-assistance
 GNOME_VERSION=	0.3.1
+REVISION=	0
 
 CATEGORIES=	editors devel
 

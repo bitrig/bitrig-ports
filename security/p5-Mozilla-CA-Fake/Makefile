@@ -6,6 +6,7 @@ MODULES=	perl
 
 DISTNAME=	Mozilla-CA-Fake-20140330
 PKGNAME=	p5-${DISTNAME}
+REVISION=	0
 CATEGORIES=	security
 
 # PD

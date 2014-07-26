@@ -5,7 +5,6 @@ COMMENT =	learn Tcl interactively
 DISTNAME =	tcltutor-30b6
 CATEGORIES =	lang lang/tcl
 HOMEPAGE =	http://www.msen.com/~clif/TclTutor.html
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes
@@ -18,7 +17,7 @@ NO_BUILD =	Yes
 NO_TEST =	Yes
 WRKDIST =	${WRKDIR}/TclTutor
 PKG_ARCH =	*
-REVISION =	0
+REVISION =	1
 SUBST_VARS +=	TT_LIB_DIR TT_LSN_DIR
 
 TT_LIB_DIR =	${PREFIX}/libdata/tcltutor

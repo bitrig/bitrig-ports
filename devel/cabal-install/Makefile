@@ -5,11 +5,10 @@ COMMENT =	command-line interface for Cabal and Hackage
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =	cabal-install-1.16.0.2
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.haskell.org/cabal/
-
-MAINTAINER =	Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =		Yes

@@ -4,7 +4,7 @@ COMMENT =	collection of perl scripts to manage your iPod
 
 DISTNAME =	gnupod-0.99.8
 PKGNAME =	p5-${DISTNAME}
-REVISION =	5
+REVISION =	6
 CATEGORIES =	audio
 
 HOMEPAGE =	https://www.gnu.org/software/gnupod/

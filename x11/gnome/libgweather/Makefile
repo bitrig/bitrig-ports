@@ -6,6 +6,7 @@ COMMENT=		weather information access library
 
 GNOME_PROJECT=		libgweather
 GNOME_VERSION=		3.12.2
+REVISION=		0
 
 SHARED_LIBS +=		gweather-3             2.1      # 7.3
 

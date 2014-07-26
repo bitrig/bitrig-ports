@@ -3,12 +3,10 @@
 COMMENT=		daemon for changing passwords
 
 DISTNAME=		openpoppassd-1.1
-REVISION =		6
+REVISION =		7
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://www.ostc.de/projects.html\#openpoppassd
-
-MAINTAINER=		Hermann Gottschalk <magnum@pestilenz.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

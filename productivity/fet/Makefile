@@ -3,7 +3,7 @@
 COMMENT=		automatically create timetables
 
 DISTNAME=		fet-5.14.1
-REVISION=		3
+REVISION=		4
 CATEGORIES=		productivity x11
 
 HOMEPAGE=		http://www.lalescu.ro/liviu/fet/

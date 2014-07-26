@@ -5,6 +5,7 @@ COMMENT=	DNS protocol implementation
 CATEGORIES+=	net
 
 VERSION=	11.1.0
+REVISION=	0
 DISTNAME=	TwistedNames-${VERSION}
 PKGNAME=	py-twisted-names-${VERSION}
 

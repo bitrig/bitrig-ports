@@ -5,6 +5,7 @@ VO=	jph
 
 COMMENT=	american male voice (JPH)
 DISTNAME=	voice_${VO}_di-2.0
+REVISION=	0
 
 RUN_DEPENDS=	${OGI_US_DEPS}
 

@@ -3,6 +3,7 @@
 COMMENT=	C++ client API for PostgreSQL
 
 DISTNAME=	libpqxx-4.0.1
+REVISION=	0
 CATEGORIES=	databases devel
 
 SHARED_LIBS =	pqxx                 2.0      # .0.0

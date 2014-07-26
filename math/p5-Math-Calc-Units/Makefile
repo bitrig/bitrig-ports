@@ -4,6 +4,7 @@ COMMENT=	human-readable unit-aware calculator
 
 MODULES=	cpan
 DISTNAME=	Math-Calc-Units-1.07
+REVISION=	0
 CATEGORIES=	math
 
 # Perl

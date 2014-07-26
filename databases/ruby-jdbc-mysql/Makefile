@@ -3,6 +3,7 @@
 COMMENT =	access a MySQL database from JRuby
 
 DISTNAME =	jdbc-mysql-5.1.22.1
+REVISION =	0
 CATEGORIES =	databases
 
 # MIT

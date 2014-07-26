@@ -4,11 +4,9 @@ COMMENT = 	IMAP client interface with lots of features
 
 MODULES =	cpan
 DISTNAME =	Mail-IMAPTalk-1.03
-REVISION =	1
+REVISION =	2
 CATEGORIES =	mail
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

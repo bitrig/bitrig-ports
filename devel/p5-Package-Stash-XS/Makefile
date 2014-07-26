@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 
 MODULES =	cpan
 DISTNAME =	Package-Stash-XS-0.25
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 
 # Perl

@@ -4,6 +4,7 @@ COMMENT = 	manage process id files
 
 MODULES =	cpan
 DISTNAME =	Proc-PID-File-1.27
+REVISION =	0
 CATEGORIES =	devel
 
 # GPLv2

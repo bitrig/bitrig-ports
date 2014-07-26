@@ -6,8 +6,6 @@ CATEGORIES+=	www
 
 HOMEPAGE?=	http://c-icap.sourceforge.net/
 
-MAINTAINER?=	Stuart Henderson <sthen@openbsd.org>
-
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM?=	Yes
 PERMIT_PACKAGE_FTP?=	Yes

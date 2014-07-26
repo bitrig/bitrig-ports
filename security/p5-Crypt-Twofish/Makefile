@@ -7,9 +7,7 @@ COMMENT=	module to implement the Twofish cipher
 MODULES=	cpan
 DISTNAME=	Crypt-Twofish-2.17
 CATEGORIES=	security
-REVISION=	0
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
+REVISION=	1
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

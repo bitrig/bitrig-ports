@@ -3,7 +3,7 @@
 COMMENT=	GNU oSIP library
 
 DISTNAME=	libosip2-3.5.0
-REVISION=	3
+REVISION=	4
 
 SHARED_LIBS +=	osipparser2          4.0      # 8.0
 SHARED_LIBS +=	osip2                4.0      # 8.0
@@ -11,8 +11,6 @@ SHARED_LIBS +=	osip2                4.0      # 8.0
 CATEGORIES=	telephony devel
 
 HOMEPAGE=	https://www.gnu.org/software/osip/
-
-MAINTAINER=	Lawrence Teo <lteo@openbsd.org>
 
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes

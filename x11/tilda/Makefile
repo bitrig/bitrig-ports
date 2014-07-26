@@ -3,7 +3,7 @@
 COMMENT=		drop-down terminal emulator
 
 DISTNAME=		tilda-0.9.6
-REVISION=		8
+REVISION=		9
 CATEGORIES=		x11
 
 HOMEPAGE=		http://tilda.sourceforge.net/

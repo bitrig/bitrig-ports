@@ -3,7 +3,7 @@
 COMMENT=	very fast web log analyzer
 
 DISTNAME=	visitors-0.7
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www sysutils
 
 # GPL

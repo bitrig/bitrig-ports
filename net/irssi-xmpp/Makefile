@@ -5,13 +5,11 @@ SHARED_ONLY=		Yes
 COMMENT=		XMPP plugin for irssi
 
 DISTNAME=		irssi-xmpp-0.52
-REVISION =		2
+REVISION =		3
 
 CATEGORIES=		net
 
 HOMEPAGE=		http://cybione.org/~irssi-xmpp/
-
-MAINTAINER =		Joerg Jung <jung@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

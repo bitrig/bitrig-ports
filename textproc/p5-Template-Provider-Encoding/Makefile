@@ -4,7 +4,7 @@ COMMENT= 	explicit encoding for Template Toolkit
 
 MODULES=	cpan
 DISTNAME=	Template-Provider-Encoding-0.10
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

@@ -5,9 +5,8 @@ COMMENT =		library for client-side HTTP
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		HTTP-4000.2.8
+REVISION =		0
 CATEGORIES =		net devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

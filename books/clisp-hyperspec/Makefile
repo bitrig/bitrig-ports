@@ -4,6 +4,7 @@ COMMENT=		Common Lisp reference
 
 DISTNAME=		HyperSpec-7-0
 PKGNAME=		clisp-hyperspec-7.0
+REVISION=		0
 CATEGORIES=		books lang
 
 PERMIT_PACKAGE_CDROM=	Commercial redistribution prohibited

@@ -4,11 +4,10 @@ COMMENT=	Streamlined replacement for make
 
 VERSION=	2.0
 DISTNAME=	mk-${VERSION}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel plan9
 MASTER_SITES=	${HOMEPAGE}
 HOMEPAGE=	http://pdos.lcs.mit.edu/~rsc/software/
-MAINTAINER=	Markus Friedl <markus@openbsd.org>
 EXTRACT_SUFX=	.tgz
 
 BUILD_DEPENDS=	devel/libfmt \

@@ -5,11 +5,9 @@ SHARED_ONLY =	Yes
 COMMENT =	NAT Port Mapping Protocol client library
 
 DISTNAME =	libnatpmp-20140401
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	natpmp 0.0
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 WANTLIB =	c
 

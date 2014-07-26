@@ -4,7 +4,7 @@ COMMENT=	server: allow users to change password from within Eudora
 
 DISTNAME=	poppassd-4.0
 PKGNAME=	${DISTNAME}
-REVISION =	1
+REVISION =	2
 DISTFILES=	pwserve-4
 CATEGORIES=	mail
 

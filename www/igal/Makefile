@@ -5,7 +5,7 @@ COMMENT=	online Image GALlery generator
 V=		1.4.7
 DISTNAME=	igal-$V-wt
 PKGNAME=	igal-${V}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www graphics
 
 HOMEPAGE=	http://trexler.at/igal/

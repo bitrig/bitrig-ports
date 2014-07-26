@@ -5,10 +5,9 @@ SHARED_ONLY =		Yes
 
 COMMENT =		text-based audio player
 DISTNAME =		siren-0.3.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		audio
 HOMEPAGE =		http://www.kariliq.nl/siren/
-MAINTAINER =		Alexandre Ratchov <alex@caoua.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

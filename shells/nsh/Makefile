@@ -3,7 +3,7 @@
 COMMENT =		network switch style shell
 
 DISTNAME =		nsh-1.0
-REVISION =		4
+REVISION =		5
 
 CATEGORIES =		shells net
 HOMEPAGE =		http://www.nmedia.net/nsh/

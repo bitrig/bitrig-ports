@@ -2,10 +2,10 @@
 
 COMMENT =	manual tiling window manager
 DISTNAME =	herbstluftwm-0.6.2
+REVISION =	0
 CATEGORIES =	x11
 
 HOMEPAGE =	http://herbstluftwm.org/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

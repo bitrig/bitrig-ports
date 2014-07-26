@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 
 DISTNAME =	luaevent-prosody-0.1.1
 PKGNAME=	luaevent-0.2.1
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 
 HOMEPAGE =	http://prosody.im/doc/libevent

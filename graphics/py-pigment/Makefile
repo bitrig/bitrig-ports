@@ -7,7 +7,7 @@ CATEGORIES =	graphics
 V=		0.3.12
 DISTNAME =	pigment-python-$V
 PKGNAME =	py-pigment-$V
-REVISION=	6
+REVISION=	7
 MASTER_SITES =	http://elisa.fluendo.com/static/download/pigment/
 
 # LGPLv2.1

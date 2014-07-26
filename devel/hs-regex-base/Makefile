@@ -5,12 +5,10 @@ COMMENT =		interface API for regex-posix,pcre,parsec,tdfa,dfa
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		regex-base-0.93.2
-REVISION =		6
+REVISION =		7
 CATEGORIES =		devel
 
 HOMEPAGE =		http://sourceforge.net/projects/lazy-regex
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

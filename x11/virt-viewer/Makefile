@@ -3,10 +3,8 @@
 COMMENT=	graphics viewer for KVM guest displays
 
 DISTNAME=	virt-viewer-0.6.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE=	http://virt-manager.org/
 

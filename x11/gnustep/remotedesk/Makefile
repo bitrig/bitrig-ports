@@ -2,7 +2,7 @@
 
 COMMENT=	GNUstep rdesktop frontend
 DISTNAME=	RemoteDesk-0.1
-REVISION =	5
+REVISION =	6
 
 CATEGORIES=	x11
 HOMEPAGE=	http://gap.nongnu.org/remotedesk/

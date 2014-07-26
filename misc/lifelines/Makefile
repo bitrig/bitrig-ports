@@ -2,6 +2,7 @@
 
 COMMENT=		genealogical database and programming system
 DISTNAME=		lifelines-3.0.62
+REVISION=		0
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=lifelines/}
 

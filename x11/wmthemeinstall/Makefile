@@ -5,7 +5,7 @@ COMMENT=		neat theme manager for Window Maker
 DISTNAME=		wmthemeinstall-0.62
 CATEGORIES=		x11 x11/windowmaker
 
-REVISION=		2
+REVISION=		3
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

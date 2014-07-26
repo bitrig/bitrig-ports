@@ -17,10 +17,10 @@ PKGNAME-gtk=	uim-gtk-$V
 PKGNAME-qt=	uim-qt-$V
 PKGNAME-kde=	uim-kde-$V
 
-REVISION-main=	12
-REVISION-gtk=	14
-REVISION-qt=	8
-REVISION-kde=	11
+REVISION-main=	13
+REVISION-gtk=	15
+REVISION-qt=	9
+REVISION-kde=	12
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

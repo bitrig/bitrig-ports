@@ -2,7 +2,7 @@
 
 COMMENT =		fast, real time 3D engine
 DISTNAME =		irrlicht-1.8
-REVISION =		0
+REVISION =		1
 
 SO_VERSION =		1.0
 SHARED_LIBS =		Irrlicht ${SO_VERSION}
@@ -10,8 +10,6 @@ SHARED_LIBS =		Irrlicht ${SO_VERSION}
 CATEGORIES =		x11 games
 
 HOMEPAGE =		http://irrlicht.sourceforge.net/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # BSD-style (zlib/libpng)
 PERMIT_PACKAGE_CDROM =	Yes

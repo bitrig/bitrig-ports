@@ -3,9 +3,8 @@
 COMMENT=	log file preprocessor
 
 DISTNAME=	logpp-0.16
+REVISION=	0
 CATEGORIES=	sysutils
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

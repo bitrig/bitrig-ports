@@ -7,7 +7,7 @@ COMMENT=	PolicyKit authentication agent for for Qt4
 V=		0.103.0
 DISTNAME=	polkit-qt-1-${V}
 PKGNAME=	polkit-qt4-${V}
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=  polkit-qt-agent-1         1.0 # 0.99
 SHARED_LIBS +=  polkit-qt-core-1          1.0 # 0.99
@@ -18,8 +18,6 @@ CATEGORIES=	x11 sysutils
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	http://techbase.kde.org/Polkit-Qt-1
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

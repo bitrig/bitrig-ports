@@ -5,12 +5,11 @@ SHARED_ONLY =		Yes
 COMMENT =		module to interface the DNS resolver
 
 DISTNAME =		Net-DNS-0.78
+REVISION =		0
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://www.net-dns.org/
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

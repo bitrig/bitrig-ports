@@ -2,7 +2,7 @@
 
 COMMENT=	library to create disk based hashtables
 DISTNAME=	dbh-1.0.24
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
 SHARED_LIBS +=	dbh                  1.0      # .1.0
 

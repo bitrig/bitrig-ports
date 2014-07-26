@@ -4,13 +4,11 @@ COMMENT=	graphical network traffic map
 
 DISTNAME=	php-weathermap-0.97c
 EXTRACT_SUFX=	.zip
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	net www
 
 HOMEPAGE=	http://www.network-weathermap.com/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

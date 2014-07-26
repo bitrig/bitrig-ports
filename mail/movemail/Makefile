@@ -3,7 +3,7 @@
 COMMENT=	move your mail box to another location
 
 DISTNAME=	movemail-1.0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	https://people.freebsd.org/~wosch/src/
 

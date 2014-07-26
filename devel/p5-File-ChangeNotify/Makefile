@@ -4,7 +4,7 @@ COMMENT=	watch for changes to files, cross-platform style
 
 MODULES=	cpan
 DISTNAME=	File-ChangeNotify-0.20
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # Artistic 2.0

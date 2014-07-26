@@ -3,12 +3,10 @@
 COMMENT=	simple digital clock
 
 DISTNAME=	sclock-0.6
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 HOMEPAGE=	http://spootnik.org/sclock/
-
-MAINTAINER=	Pierre-Yves Ritschard <pyr@spootnik.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

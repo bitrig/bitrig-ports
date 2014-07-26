@@ -3,7 +3,7 @@
 COMMENT=		lightweight GTK2-based systray
 
 DISTNAME=		trayer-1.0
-REVISION=		7
+REVISION=		8
 CATEGORIES=		x11
 
 # BSD-like

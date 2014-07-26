@@ -4,9 +4,8 @@ COMMENT=	create and manipulate PAR distributions
 
 MODULES=	cpan
 DISTNAME=	PAR-Dist-0.47
+REVISION=	0
 CATEGORIES=	devel archivers
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

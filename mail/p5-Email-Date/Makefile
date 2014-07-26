@@ -5,10 +5,8 @@ COMMENT= 	find and format date headers
 MODULES=	cpan
 
 DISTNAME=	Email-Date-1.103
-REVISION=	1
+REVISION=	2
 CATEGORIES=	mail
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

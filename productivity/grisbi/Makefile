@@ -4,15 +4,13 @@ COMMENT=	personal accounting application
 SHARED_ONLY =	Yes
 
 DISTNAME=	grisbi-1.0.0
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	productivity x11
 
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	http://www.grisbi.org/
-
-MAINTAINER=	Landry Breuil <landry@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

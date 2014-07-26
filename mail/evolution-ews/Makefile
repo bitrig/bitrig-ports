@@ -9,14 +9,12 @@ COMMENT=		evolution connector for MS Exchange via EWS
 
 GNOME_PROJECT=		evolution-ews
 GNOME_VERSION=		3.12.4
+REVISION=		0
 
 CATEGORIES=		mail
 
 SHARED_LIBS +=  eews-1.2             1.0      # unknown
 SHARED_LIBS +=  ewsutils             1.0      # unknown
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

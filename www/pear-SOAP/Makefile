@@ -3,7 +3,7 @@
 COMMENT=	SOAP Client/Server for PHP
 
 DISTNAME=	SOAP-0.12.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 
 MODULES=	www/pear

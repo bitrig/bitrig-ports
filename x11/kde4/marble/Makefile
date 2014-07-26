@@ -2,6 +2,7 @@
 
 COMMENT =	world maps
 DISTNAME =	marble-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	marblewidget		51.0 # 0.12
 SHARED_LIBS +=	astro			 0.0 # 0.17

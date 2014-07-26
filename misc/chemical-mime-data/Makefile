@@ -5,7 +5,7 @@ COMMENT =		MIME types and icons for chemical applications
 DISTNAME =		chemical-mime-data-0.1.94
 CATEGORIES =		misc
 HOMEPAGE =		http://chemical-mime.sourceforge.net/
-REVISION =		0
+REVISION =		1
 
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes

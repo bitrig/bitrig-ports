@@ -7,8 +7,8 @@ MOZILLA_PROJECT =	xulrunner
 MOZILLA_DIST =		firefox
 PKGSPEC-devel =		xulrunner-devel->=24.0,<31.0
 PKGSPEC-main =		xulrunner->=24.0,<31.0
-REVISION-main =		0
-REVISION-devel =	0
+REVISION-main =		1
+REVISION-devel =	1
 
 SO_VERSION =		0.0
 MOZILLA_LIBS =		mozgnome mozalloc xul

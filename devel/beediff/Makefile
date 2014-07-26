@@ -5,7 +5,7 @@ COMMENT=	graphical file comparator
 V=		1.9
 DISTNAME=	beediff_${V}_src
 PKGNAME=	beediff-${V}
-REVISION =	6
+REVISION =	7
 CATEGORIES=	textproc x11 devel
 
 HOMEPAGE=	http://www.beesoft.pl/index.php?id=beediff

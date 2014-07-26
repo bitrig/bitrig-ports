@@ -6,7 +6,7 @@ V=		3.0.5
 DISTNAME=	apache-maven-$V
 PKGNAME=	${DISTNAME:S/apache-//}
 CATEGORIES=	devel
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://maven.apache.org/
 

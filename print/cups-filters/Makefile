@@ -6,14 +6,12 @@ COMMENT=	OpenPrinting CUPS filters
 
 DISTNAME=	cups-filters-1.0.54
 CATEGORIES=	print
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS +=  cupsfilters          1.0      # 1.0
 SHARED_LIBS +=  fontembed            0.0      # 1.0
 
 HOMEPAGE=	http://www.linuxfoundation.org/collaborate/workgroups/openprinting
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv3 - LGPLv2 - GPLv2+ - MIT
 PERMIT_PACKAGE_CDROM=	Yes

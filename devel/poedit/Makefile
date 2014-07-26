@@ -3,12 +3,10 @@
 COMMENT=	cross-platform gettext catalogs (PO-files) editor
 
 DISTNAME=	poedit-1.3.7
-REVISION=	7
+REVISION=	8
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.poedit.net/
-
-MAINTAINER=	Vlad Glagolev <stealth@sourcemage.org>
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=poedit/}
 

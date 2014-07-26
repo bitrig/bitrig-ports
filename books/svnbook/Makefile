@@ -3,7 +3,7 @@
 COMMENT =		Version Control with Subversion
 
 V =			1.7
-REVISION =		0
+REVISION =		1
 DISTNAME =		svn-book-html-chunk-$V
 PKGNAME =		svnbook-${V}
 CATEGORIES =		books devel

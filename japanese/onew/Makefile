@@ -8,13 +8,11 @@ COMMENT-wnn4-canna=	library for Japanese Input Method canna or wnn4
 FULLPKGNAME=		ja-onew${FLAVOR_EXT}-2.2.10
 
 DISTNAME=	jvim2.0r+onew2.2.10
-REVISION=	2
+REVISION=	3
 CATEGORIES=	japanese
 
 MASTER_SITES=	ftp://ftp.lab.kdd.co.jp/Japan/onew/ \
 		ftp://ftp.leo.chubu.ac.jp/pub/editor/jvim/
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

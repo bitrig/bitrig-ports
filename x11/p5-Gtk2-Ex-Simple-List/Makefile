@@ -4,11 +4,9 @@ COMMENT =		simple interface to Gtk2 complex MVC list widget
 
 MODULES =		cpan
 DISTNAME =		Gtk2-Ex-Simple-List-0.50
-REVISION =		2
+REVISION =		3
 CATEGORIES =		x11
 USE_GROFF =		Yes
-
-MAINTAINER =		James Wright <jamesw@bsdhosting.co.za>
 
 # LPGLv2
 PERMIT_PACKAGE_CDROM =	Yes

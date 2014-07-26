@@ -5,9 +5,8 @@ COMMENT=	UCB/LBNL Network Animator
 V=		1.15
 DISTNAME=	nam-src-$V
 PKGNAME=	nam-$V
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 MASTER_SITES= 	${MASTER_SITE_SOURCEFORGE:=nsnam/}
 

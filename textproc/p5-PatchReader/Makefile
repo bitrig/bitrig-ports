@@ -4,7 +4,7 @@ COMMENT=	utilities to read and manipulate patches and CVS
 
 MODULES=	cpan
 DISTNAME=	PatchReader-0.9.6
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 # Dual Artistic/MPL (checked with author)

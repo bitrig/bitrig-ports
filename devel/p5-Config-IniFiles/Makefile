@@ -4,9 +4,8 @@ COMMENT =	module for reading .ini-style configuration files
 
 MODULES =	cpan
 DISTNAME =	Config-IniFiles-2.83
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

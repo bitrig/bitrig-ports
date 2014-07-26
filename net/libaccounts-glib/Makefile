@@ -3,14 +3,11 @@
 COMMENT=	accounts management library for GLib applications
 
 DISTNAME=	libaccounts-glib-1.8
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=	accounts-glib        0.0      # 1.3
 
 CATEGORIES=	net
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 HOMEPAGE=	https://accounts-sso.googlecode.com/
 

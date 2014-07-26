@@ -3,6 +3,7 @@
 COMMENT=	set region on dvd drives
 
 DISTNAME=	regionset-0.1
+REVISION=	0
 
 CATEGORIES=	multimedia
 

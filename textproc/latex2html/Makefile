@@ -3,6 +3,7 @@
 COMMENT=	LaTeX to HTML converter
 
 DISTNAME=	latex2html-2008
+REVISION=	0
 CATEGORIES=	textproc www
 
 HOMEPAGE=	http://www.latex2html.org/

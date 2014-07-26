@@ -5,10 +5,9 @@ SHARED_ONLY =	Yes
 COMMENT =	console client for pandora
 
 DISTNAME =	pianobar-2014.06.08
+REVISION =	0
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	audio
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 HOMEPAGE =	http://6xq.net/projects/pianobar/
 

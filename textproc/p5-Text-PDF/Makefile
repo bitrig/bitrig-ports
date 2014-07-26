@@ -4,7 +4,7 @@ COMMENT=	perl modules for creating and manipulating PDF
 
 MODULES=	cpan
 DISTNAME=	Text-PDF-0.25
-REVISION=	3
+REVISION=	4
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

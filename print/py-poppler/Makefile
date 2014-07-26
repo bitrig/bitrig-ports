@@ -6,7 +6,7 @@ DISTNAME=	pypoppler-0.12.1
 PKGNAME=        ${DISTNAME:S/^py/py-/}
 CATEGORIES=	print
 
-REVISION=	6
+REVISION=	7
 
 MASTER_SITES=	${HOMEPAGE}/trunk/development/+download/
 HOMEPAGE=	http://launchpad.net/poppler-python/

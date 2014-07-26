@@ -3,7 +3,7 @@
 COMMENT=	display a dialog box and prompt user for text
 
 DISTNAME=	xprompt-1.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 # BSD

@@ -4,6 +4,7 @@ COMMENT=	superclass for representing nodes in a tree
 
 MODULES=	cpan
 DISTNAME=	Tree-DAG_Node-1.06
+REVISION=	0
 CATEGORIES=	devel
 
 # Artistic

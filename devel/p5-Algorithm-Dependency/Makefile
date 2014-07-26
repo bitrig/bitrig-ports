@@ -5,7 +5,7 @@ COMMENT=	base class for implementing various dependency trees
 MODULES=	cpan
 
 DISTNAME=	Algorithm-Dependency-1.110
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

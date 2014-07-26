@@ -3,12 +3,11 @@
 COMMENT=	simple event correlator
 
 DISTNAME=	sec-2.7.6
+REVISION=	0
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=simple-evcorr/}
 
 HOMEPAGE=	http://www.estpak.ee/~risto/sec/
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

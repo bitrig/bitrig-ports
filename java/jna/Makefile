@@ -7,9 +7,7 @@ DISTNAME=	jna-$V-a31faf3026
 PKGNAME=	jna-$V
 EXTRACT_SUFX=	.zip
 CATEGORIES=	devel
-REVISION=	1
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
+REVISION=	2
 
 HOMEPAGE=	https://github.com/twall/jna
 

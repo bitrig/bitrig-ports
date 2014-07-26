@@ -3,6 +3,7 @@
 COMMENT=	fake keyboard and mouse input
 
 DISTNAME=	xdotool-2.20110530.1
+REVISION=	0
 EPOCH=		0
 
 SHARED_ONLY=	Yes

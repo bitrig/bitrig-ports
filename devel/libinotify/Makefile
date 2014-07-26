@@ -3,12 +3,11 @@
 COMMENT =		kevent based inotify
 
 DISTNAME =		libinotify-20140622
+REVISION =		0
 
 SHARED_LIBS =		inotify 0.0
 
 CATEGORIES =		devel
-
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

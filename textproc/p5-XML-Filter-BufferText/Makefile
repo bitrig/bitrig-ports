@@ -4,7 +4,7 @@ COMMENT=	collate XML character events in one chunk
 
 MODULES=	cpan
 DISTNAME=	XML-Filter-BufferText-1.01
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 # perl

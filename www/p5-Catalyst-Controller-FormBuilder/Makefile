@@ -4,10 +4,9 @@ COMMENT=	Catalyst FormBuilder Base Controller
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Controller-FormBuilder-0.06
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

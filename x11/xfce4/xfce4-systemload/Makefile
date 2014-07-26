@@ -4,7 +4,7 @@ COMMENT=	Xfce4 cpu/memory/swap/uptime monitor panel plugin
 
 XFCE_VERSION=	1.1.1
 XFCE_PLUGIN=	systemload
-REVISION =	3
+REVISION =	4
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

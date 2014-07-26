@@ -5,10 +5,8 @@ COMMENT=	Emulates the sscanf() of the C stdio library
 MODULES=	cpan
 VERSION=	2.1
 DISTNAME=	String-Scanf-${VERSION}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel perl5
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

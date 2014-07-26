@@ -10,8 +10,8 @@ PV=		5.3
 V=		${PV}.28
 SUHOSIN_PHPV=	5.3.24
 SUHOSIN_P_V=	0.9.10unofficial
-REVISION-main=	10
-REVISION=	9
+REVISION-main=	11
+REVISION=	10
 
 INI_TEMPLATES=	development production
 

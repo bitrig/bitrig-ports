@@ -4,6 +4,7 @@ COMMENT=	reusable tests for POE::Loop authors
 
 MODULES=	cpan
 DISTNAME=	POE-Test-Loops-1.050
+REVISION=	0
 CATEGORIES=	devel
 
 HOMEPAGE=	http://poe.perl.org/

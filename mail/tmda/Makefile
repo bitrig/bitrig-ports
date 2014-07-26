@@ -3,11 +3,10 @@
 COMMENT=		reduce the amount of SPAM/UCE (junk-mail)
 
 DISTNAME=		tmda-1.0.3
-REVISION =		7
+REVISION =		8
 CATEGORIES=		mail
 
 HOMEPAGE=		http://tmda.net/
-MAINTAINER=		Dave Steinberg <dave@redterror.net>
 
 # BSD-style
 PERMIT_PACKAGE_CDROM=	Yes

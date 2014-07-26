@@ -4,10 +4,8 @@ COMMENT =	provides Moose-like method modifiers
 
 MODULES =	cpan
 DISTNAME =	Class-Method-Modifiers-2.10
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
-
-MAINTAINER =    Sergey Bronnikov <estetus@gmail.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

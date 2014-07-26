@@ -3,6 +3,7 @@
 COMMENT=	caching mechanism for freedesktop.org compliant menus
 
 DISTNAME=	menu-cache-0.4.1
+REVISION=	0
 
 CATEGORIES=	x11
 

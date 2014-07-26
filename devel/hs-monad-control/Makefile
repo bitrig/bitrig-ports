@@ -3,10 +3,8 @@
 COMMENT =		lift control operations through monad transformers
 
 DISTNAME =		monad-control-0.3.1.4
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

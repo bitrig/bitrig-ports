@@ -4,10 +4,8 @@ COMMENT=	perl port of jQuery.js
 
 MODULES=	cpan
 DISTNAME=	pQuery-0.07
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
-
-MAINTAINER=	Girish Venkatachalam <girish1729@gmail.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

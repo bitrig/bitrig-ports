@@ -4,7 +4,7 @@ COMMENT=	Apache ASP support
 
 MODULES=	cpan
 DISTNAME=	Apache-ASP-2.61
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
 

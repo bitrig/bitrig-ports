@@ -5,6 +5,7 @@ COMMENT=		autodiscover syndication feeds
 MODULES=		cpan
 CPAN_AUTHOR=		BTROTT
 DISTNAME=		Feed-Find-0.07
+REVISION=		0
 CATEGORIES=		www
 
 # perl

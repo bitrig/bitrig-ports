@@ -3,11 +3,9 @@
 COMMENT =		software able to hide data in various kind of files
 
 DISTNAME =		steghide-0.5.1
-REVISION =		1
+REVISION =		2
 CATEGORIES =		security
 HOMEPAGE =		http://steghide.sf.net/
-
-MAINTAINER =		Giovanni Bechis <g.bechis@snb.it>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

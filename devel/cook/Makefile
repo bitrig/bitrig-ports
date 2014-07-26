@@ -3,15 +3,13 @@
 COMMENT=	like make(1), but more powerful and clean
 
 DISTNAME=	cook-2.21
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}
 
 HOMEPAGE=       http://miller.emu.id.au/pmiller/software/cook/
 
 MODULES=	devel/gettext
-
-MAINTAINER=	Gregory Steuck <greg@nest.cx>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,12 +3,10 @@
 COMMENT=	drawing program for children
 
 DISTNAME=	tuxpaint-0.9.21
-REVISION=	4
+REVISION=	5
 CATEGORIES=	games graphics
 
 HOMEPAGE=	http://www.tuxpaint.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,6 +3,7 @@
 COMMENT=	clone of the Plan9 editor 'acme'
 
 VERSION=	0.13.41
+REVISION=	0
 DISTNAME=	wily-9libs
 PKGNAME=	${DISTNAME:S/-/_/}-${VERSION}
 EPOCH=		0
@@ -10,8 +11,6 @@ CATEGORIES=	plan9 editors
 MASTER_SITES=	ftp://ftp.cs.yorku.ca/pub/wily/src/
 
 HOMEPAGE=	http://www.cs.yorku.ca/~oz/wily/
-
-MAINTAINER= 	rich cannings <cannings@cvs.openbsd.org>
 
 # BSD licence
 PERMIT_PACKAGE_CDROM=	Yes

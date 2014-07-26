@@ -5,7 +5,7 @@ COMMENT =	OAuth support library for Qt-based applications
 V =		1.0.1
 DISTNAME =	qoauth-${V}-src
 PKGNAME =	${DISTNAME:C/-src//}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	security devel
 HOMEPAGE =	https://github.com/ayoy/qoauth
 

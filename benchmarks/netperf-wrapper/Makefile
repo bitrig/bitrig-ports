@@ -4,6 +4,7 @@ COMMENT=	test network latency under load via netperf
 
 MODPY_EGG_VERSION= 0.5.6
 DISTNAME=	netperf-wrapper-${MODPY_EGG_VERSION}
+REVISION=	0
 
 CATEGORIES=	benchmarks net
 

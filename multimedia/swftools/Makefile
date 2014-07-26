@@ -3,7 +3,7 @@
 COMMENT=	SWF manipulation and generation utilities
 
 DISTNAME=	swftools-0.9.1
-REVISION=	3
+REVISION=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	${HOMEPAGE}
 

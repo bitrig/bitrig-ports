@@ -4,6 +4,7 @@ COMMENT = 	Perl interface to Git repositories
 
 MODULES =	cpan
 DISTNAME =	Git-Repository-1.311
+REVISION =	0
 CATEGORIES =	devel
 
 # perl

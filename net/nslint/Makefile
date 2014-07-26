@@ -3,10 +3,8 @@
 COMMENT=		performs consistency checks on BIND files
 
 DISTNAME=		nslint-2.0.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
-
-MAINTAINER=		Wangden Kelsang <wngdn@src.uchicago.edu>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

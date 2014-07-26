@@ -7,7 +7,7 @@ COMMENT =	Python wrapper for the Vorbis libraries
 MODPY_EGG_VERSION=1.4
 DISTNAME =	pyvorbis-${MODPY_EGG_VERSION}
 PKGNAME =	${DISTNAME:S/py/py-/}
-REVISION =	3
+REVISION =	4
 CATEGORIES =	audio
 HOMEPAGE =	http://ekyo.nerim.net/software/pyogg/
 

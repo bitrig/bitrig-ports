@@ -6,7 +6,7 @@ COMMENT=	interface to lzo compression library
 
 DISTNAME=	perl-lzo-1.08
 PKGNAME=	p5-Compress-LZO-1.08
-REVISION = 	5
+REVISION = 	6
 CATEGORIES=	archivers perl5
 MASTER_SITES=	http://www.oberhumer.com/opensource/lzo/download/
 

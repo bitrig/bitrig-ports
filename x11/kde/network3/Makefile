@@ -10,7 +10,8 @@ PKGNAME-main =		${DISTNAME}
 PKGNAME-kopsounds =	kde3-kopete-sounds-${VERSION}
 PKGSPEC-main =		kdenetwork->=3,<4
 PKG_ARCH-kopsounds =	*
-REVISION-main = 	14
+REVISION-main = 	15
+REVISION-kopsounds = 	0
 
 SHARED_LIBS +=	kopete               2.0      # .1.0
 SHARED_LIBS +=	kopete_videodevice   1.0      # .0.0

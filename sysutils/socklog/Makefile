@@ -3,11 +3,10 @@
 COMMENT=		small and secure replacement for syslogd
 
 DISTNAME=		socklog-2.1.0
+REVISION=		0
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://www.smarden.org/socklog/
-
-MAINTAINER=		Christian Rueger <cr+openbsd@rueger-net.de>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c

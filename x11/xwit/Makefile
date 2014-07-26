@@ -3,7 +3,7 @@
 COMMENT=	X11 window interface tool
 
 DISTNAME=	xwit-3.4
-REVISION=	2
+REVISION=	3
 CATEGORIES=	x11
 
 # BSD-like, badly worded

@@ -3,7 +3,7 @@
 COMMENT=	help writing simple, concise and fast operations
 
 DISTNAME=	uniplate-1.6.7
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # 3-clause BSD

@@ -5,9 +5,9 @@ COMMENT=	MIT Object Tcl
 V=		1.14
 DISTNAME=	otcl-src-$V
 PKGNAME=	otcl-$V
+REVISION=	0
 SHARED_LIBS=	otcl 2.0
 CATEGORIES=	lang
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 HOMEPAGE=	http://otcl-tclcl.sourceforge.net/otcl/
 

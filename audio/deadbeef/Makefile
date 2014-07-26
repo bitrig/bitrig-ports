@@ -4,6 +4,7 @@ SHARED_ONLY =		Yes
 
 COMMENT =		DeaDBeeF is an audio player
 DISTNAME =		deadbeef-0.6.1
+REVISION =		0
 CATEGORIES =		audio
 
 HOMEPAGE =		http://deadbeef.sourceforge.net/

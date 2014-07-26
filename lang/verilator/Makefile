@@ -3,6 +3,7 @@
 COMMENT=	very fast free Verilog HDL simulator
 
 DISTNAME =	verilator-3.860
+REVISION =	0
 CATEGORIES=	lang devel
 
 HOMEPAGE=	http://www.veripool.org/wiki/verilator/Intro

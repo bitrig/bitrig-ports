@@ -4,10 +4,10 @@ SHARED_ONLY =		Yes
 
 COMMENT =		lua library for the expat XML parser
 DISTNAME =		luaexpat-1.3.0
+REVISION =		0
 
 CATEGORIES =		textproc
 HOMEPAGE =		http://matthewwild.co.uk/projects/luaexpat/
-MAINTAINER =		Scott Vokes <vokes.s@gmail.com>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

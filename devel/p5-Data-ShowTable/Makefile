@@ -4,7 +4,7 @@ COMMENT=		print arrays of data in a nicely formatted listing
 
 MODULES=		cpan
 DISTNAME=		Data-ShowTable-3.3
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 USE_GROFF =		Yes
 

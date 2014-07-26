@@ -4,9 +4,8 @@ COMMENT=	Log4j implementation for Perl
 
 MODULES=	cpan
 DISTNAME=	Log-Log4perl-1.40
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=   Yes

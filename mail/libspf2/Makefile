@@ -3,7 +3,7 @@
 COMMENT=	SPF library
 
 DISTNAME=	libspf2-1.2.9
-REVISION=	3
+REVISION=	4
 
 SHARED_LIBS +=	spf2                 3.0      # 3.0
 
@@ -11,8 +11,6 @@ CATEGORIES=	mail
 HOMEPAGE=	http://www.libspf2.org/
 
 MASTER_SITES=	${HOMEPAGE}/spf/
-
-MAINTAINER=	Jakob Schlyter <jakob@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

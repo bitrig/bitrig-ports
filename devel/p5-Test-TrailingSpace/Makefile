@@ -3,10 +3,9 @@
 COMMENT =		test for trailing space in source files
 
 DISTNAME =		Test-TrailingSpace-0.0204
+REVISION =		0
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

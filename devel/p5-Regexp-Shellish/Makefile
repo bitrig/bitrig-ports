@@ -4,10 +4,8 @@ COMMENT=	module for shell-like regular expressions
 
 MODULES=	cpan
 DISTNAME=	Regexp-Shellish-0.93
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

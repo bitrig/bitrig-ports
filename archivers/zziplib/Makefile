@@ -3,6 +3,7 @@
 COMMENT=	lightweight library for extracting data from zip files
 
 DISTNAME=	zziplib-0.13.62
+REVISION=	0
 CATEGORIES=	archivers
 
 SHARED_LIBS +=	zzip		15.52 \
@@ -11,8 +12,6 @@ SHARED_LIBS +=	zzip		15.52 \
 		zzipwrap	13.52
 
 HOMEPAGE=	http://zziplib.sourceforge.net/
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # LGPL/MPL license
 PERMIT_PACKAGE_CDROM=		Yes

@@ -3,7 +3,7 @@
 COMMENT=		network pipe meter
 
 DISTNAME=		nepim-0.53
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net sysutils
 
 HOMEPAGE=		http://www.nongnu.org/nepim/

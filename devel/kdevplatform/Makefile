@@ -5,6 +5,7 @@ COMMENT =	IDE creation toolkit for KDE 4
 KDEV_V =	4.6.0
 KDEVPLAT_V =	1.6.0
 DISTNAME =	kdevplatform-${KDEVPLAT_V}
+REVISION =	0
 HOMEPAGE =	http://www.kdevelop.org/
 
 SHARED_LIBS =	kdevplatformdebugger		0.0 # 3.0

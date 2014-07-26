@@ -4,7 +4,7 @@ COMMENT=	GNU utility to indent C source files
 
 DISTNAME=	indent-2.2.10
 PKGNAME=	g${DISTNAME}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 HOMEPAGE=	https://www.gnu.org/software/indent/

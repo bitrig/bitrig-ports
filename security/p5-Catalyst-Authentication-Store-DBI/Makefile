@@ -4,10 +4,8 @@ COMMENT = 	storage class for Catalyst Authentication using DBI
 
 MODULES =	cpan
 DISTNAME =	Catalyst-Authentication-Store-DBI-0.01
-REVISION =	0
+REVISION =	1
 CATEGORIES =	security
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

@@ -6,11 +6,9 @@ COMMENT=		Super Nintendo emulator for x86
 VERSION=		1.42
 DISTNAME=		zsnes_${VERSION:S/./_/}
 PKGNAME=		zsnes-${VERSION}
-REVISION=		1
+REVISION=		2
 CATEGORIES=		emulators games
 HOMEPAGE=		http://www.zsnes.com/
-
-MAINTAINER=		Jonathan Schleifer <js@h3c.de>
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=zsnes/}
 DISTFILES=		zsnes${VERSION:S/.//}src${EXTRACT_SUFX}

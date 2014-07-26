@@ -4,10 +4,9 @@ COMMENT=        pretty printing of data structures
 
 MODULES=	cpan
 DISTNAME=	Data-Dump-1.22
+REVISION=	0
 CATEGORIES=     devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

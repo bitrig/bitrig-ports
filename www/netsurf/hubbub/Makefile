@@ -5,6 +5,7 @@ COMMENT =		HTML parser
 NETSURF_PROJECT =	libhubbub
 NETSURF_VERSION =	0.3.0
 PKGNAME =		hubbub-${NETSURF_VERSION}
+REVISION =		0
 HOMEPAGE =		http://www.netsurf-browser.org/projects/hubbub/
 
 SHARED_LIBS =		hubbub 2.0 #0.3.0

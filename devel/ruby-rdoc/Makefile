@@ -3,7 +3,7 @@
 COMMENT =	generate and display ruby documentation
 
 DISTNAME =	rdoc-3.11
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel
 
 HOMEPAGE =	http://docs.seattlerb.org/rdoc/

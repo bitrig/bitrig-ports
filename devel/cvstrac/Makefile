@@ -4,12 +4,10 @@ COMMENT =	patch-set and bug tracking system for CVS
 
 DISTNAME =	cvstrac-2.0.1
 PKGNAME =	${DISTNAME}
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel www
 
 HOMEPAGE =	http://www.cvstrac.org/
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

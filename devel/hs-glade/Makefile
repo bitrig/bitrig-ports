@@ -3,12 +3,10 @@
 COMMENT =		Haskell bindings to libglade2
 
 DISTNAME =		glade-0.12.1
-REVISION =		2
+REVISION =		3
 CATEGORIES =		devel
 
 HOMEPAGE =		http://www.haskell.org/gtk2hs/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

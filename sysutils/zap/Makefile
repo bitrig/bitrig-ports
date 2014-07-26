@@ -3,12 +3,10 @@
 COMMENT=	interactive process killer
 
 DISTNAME=	zap-1.3
-REVISION=	0
+REVISION=	1
 WRKDIST=	${WRKDIR}/zap
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.darwinsys.com/freeware/
-
-MAINTAINER=	Ian Darwin <ian@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c

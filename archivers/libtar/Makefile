@@ -3,7 +3,7 @@
 COMMENT=	C library for manipulating tar files
 
 DISTNAME=	libtar-1.2.11
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS=	tar	0.0	# .1.2
 

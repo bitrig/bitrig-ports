@@ -6,14 +6,11 @@ GNOME_PROJECT=	GConf
 GNOME_VERSION=	3.2.6
 PKGNAME=	gconf2-${GNOME_VERSION}
 
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS +=	gconf-2              6.2      # 5.5
 
 CATEGORIES=	devel
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

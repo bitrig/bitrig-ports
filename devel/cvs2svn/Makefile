@@ -6,6 +6,7 @@ COMMENT=		migrate repositories from CVS to Subversion/GIT/BZR
 # otherwise you probably get the old files, not 404.
 MODPY_EGG_VERSION=	2.4.0
 DISTNAME=		cvs2svn-${MODPY_EGG_VERSION}
+REVISION=		0
 MASTER_SITES=		${HOMEPAGE}files/documents/1462/49237/
 
 CATEGORIES=		devel

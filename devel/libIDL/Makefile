@@ -4,14 +4,11 @@ COMMENT=		IDL parsing library
 
 GNOME_PROJECT=		libIDL
 GNOME_VERSION=		0.8.14
-REVISION=		2
+REVISION=		3
 
 SHARED_LIBS +=	IDL-2                0.1      # .0.0
 
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,6 +3,7 @@
 COMMENT=		utilities for jailing a user or process
 
 DISTNAME=		jailkit-2.17
+REVISION=		0
 CATEGORIES=		security sysutils
 
 HOMEPAGE=		http://olivier.sessink.nl/jailkit/

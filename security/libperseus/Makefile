@@ -3,7 +3,7 @@
 COMMENT = 	library to secure any kind of communication streams
 
 DISTNAME = 	libperseus-1.0.2
-REVISION =	0
+REVISION =	1
 CATEGORIES = 	security
 
 SHARED_LIBS = 	perseus 0.0	
@@ -11,8 +11,6 @@ SHARED_LIBS = 	perseus 0.0
 MASTER_SITES = 	${HOMEPAGE}/files/
 
 HOMEPAGE = 	https://libperseus.googlecode.com/
-
-MAINTAINER = 	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPL/LGPL/MPL
 PERMIT_PACKAGE_CDROM = 	Yes

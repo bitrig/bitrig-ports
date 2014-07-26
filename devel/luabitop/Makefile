@@ -8,7 +8,7 @@ V=		1.0.2
 DISTNAME=	LuaBitOp-$V
 PKGNAME=	luabitop-$V
 CATEGORIES=	devel
-REVISION=	0
+REVISION=	1
 MASTER_SITES=	${HOMEPAGE}/download/
 
 HOMEPAGE=	http://bitop.luajit.org/

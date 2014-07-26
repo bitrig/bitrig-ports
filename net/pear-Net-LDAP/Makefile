@@ -3,7 +3,7 @@
 COMMENT=	pear ldap
 
 DISTNAME=	Net_LDAP-1.1.5
-REVISION=	4
+REVISION=	5
 CATEGORIES=	net
 
 MODULES=	lang/php www/pear

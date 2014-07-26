@@ -5,7 +5,7 @@ COMMENT =		3D fractal renderer
 V =			1.15
 DISTNAME =		mandelbulber${V}
 PKGNAME =		mandelbulber-${V}
-REVISION =		2
+REVISION =		3
 
 CATEGORIES =		graphics
 

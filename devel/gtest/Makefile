@@ -3,7 +3,7 @@
 COMMENT =	C++ unit test framework
 
 DISTNAME =	gtest-1.4.0
-REVISION =	2
+REVISION =	3
 
 SHARED_LIBS +=	gtest		0.0   # .0.0
 SHARED_LIBS +=	gtest_main	0.0   # .0.0
@@ -11,8 +11,6 @@ SHARED_LIBS +=	gtest_main	0.0   # .0.0
 CATEGORIES =	devel
 
 HOMEPAGE =	https://code.google.com/p/googletest/
-
-MAINTAINER =	Vincent Auclair <auclair.vincent@gmail.com>
 
 # New BSD
 PERMIT_PACKAGE_CDROM =	Yes

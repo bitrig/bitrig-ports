@@ -4,6 +4,7 @@ SHARED_ONLY=	Yes
 
 COMMENT=	color terminal emulator with unicode support
 DISTNAME=	mlterm-3.3.6
+REVISION=	0
 
 SHARED_LIBS+=	kik	11.0 # 15.1
 SHARED_LIBS+=	mkf	14.0 # 16.0

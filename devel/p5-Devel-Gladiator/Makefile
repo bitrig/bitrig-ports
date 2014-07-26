@@ -6,8 +6,7 @@ SHARED_ONLY =	Yes
 MODULES =	cpan
 DISTNAME =	Devel-Gladiator-0.04
 CATEGORIES =	devel
-MAINTAINER =	Marc Espie <espie@openbsd.org>
-REVISION =	0
+REVISION =	1
 
 TEST_DEPENDS =	devel/p5-PadWalker
 # perl

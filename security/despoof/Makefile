@@ -3,7 +3,7 @@
 COMMENT=	command-line anti-spoofing detection utility
 
 DISTNAME=	despoof-0.9
-REVISION =	2
+REVISION =	3
 
 CATEGORIES=	security
 MASTER_SITES=	http://www.bindview.com/Resources/RAZOR/Files/ \
@@ -11,8 +11,6 @@ MASTER_SITES=	http://www.bindview.com/Resources/RAZOR/Files/ \
 EXTRACT_SUFX=	.tgz
 
 HOMEPAGE=	http://www.bindview.com/Services/RAZOR/Utilities/Unix_Linux/despoof_readme.cfm
-
-MAINTAINER=	Brian Caswell <bmc@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c pcap lib/libnet-1.0/net=0

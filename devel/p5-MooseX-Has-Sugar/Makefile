@@ -2,6 +2,7 @@
 
 COMMENT=		Sugar syntax for moose 'has' fields
 DISTNAME=		MooseX-Has-Sugar-0.05070419
+REVISION=		0
 CATEGORIES=		devel
 
 # perl

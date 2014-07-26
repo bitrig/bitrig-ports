@@ -4,9 +4,8 @@ COMMENT=	write Perl subroutines in other programming languages
 
 MODULES=	cpan
 DISTNAME =	Inline-0.52
+REVISION =	0
 CATEGORIES=	devel
-
-MAINTAINER=	Gleydson Soares <gsoares@trusted.com.br>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

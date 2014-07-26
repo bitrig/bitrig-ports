@@ -4,12 +4,11 @@ COMMENT =		series of applications for Mercurial
 
 MODPY_EGG_VERSION =    3.0
 DISTNAME =		tortoisehg-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://tortoisehg.bitbucket.org/
-
-MAINTAINER =		Remi Pointel <rpointel@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

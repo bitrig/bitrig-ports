@@ -4,12 +4,10 @@ COMMENT=		netcat-like program with transparent SSL support
 
 DISTNAME=		nssl.005
 PKGNAME=		nssl-005
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 
 HOMEPAGE=		http://nssl.sourceforge.net/
-
-MAINTAINER=		Will Maier <willmaier@ml1.net>
 
 # None
 PERMIT_PACKAGE_CDROM=	No

@@ -5,12 +5,10 @@ COMMENT=		Python library for creating postscript or PDF charts
 MODPY_EGG_VERSION=	1.39
 DISTNAME=		PyChart-${MODPY_EGG_VERSION}
 PKGNAME=		py-Chart-${MODPY_EGG_VERSION}
-REVISION=		2
+REVISION=		3
 CATEGORIES=		textproc devel
 
 HOMEPAGE=		http://home.gna.org/pychart/
-
-MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=		Yes

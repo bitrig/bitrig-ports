@@ -3,13 +3,11 @@
 COMMENT =		curses media indexer and player for vi users
 
 DISTNAME =		vitunes-2.3
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		multimedia
 
 HOMEPAGE =		http://vitunes.org/
-
-MAINTAINER =		Laurent Fanis <laurent.fanis@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,6 +4,7 @@ COMMENT =	string library designed for network communication
 
 V =		1.0.15
 DISTNAME =	vstr-$V
+REVISION =	0
 
 SHARED_LIBS =	vstr-1.0	0.0 \
 		vstr		0.0

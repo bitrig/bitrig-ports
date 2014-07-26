@@ -4,7 +4,7 @@ COMMENT =	GD plugin(s) for the Template Toolkit
 
 MODULES =	cpan
 DISTNAME =	Template-GD-2.66
-REVISION =	2
+REVISION =	3
 CATEGORIES =	textproc graphics
 USE_GROFF =	Yes
 

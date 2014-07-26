@@ -3,13 +3,11 @@
 COMMENT=		Python-based presentation tool
 
 DISTNAME=		bruce-1.2.1
-REVISION =		4
+REVISION =		5
 
 CATEGORIES=		productivity
 
 HOMEPAGE=		https://sites.google.com/site/r1chardj0n3s/bruce
-
-MAINTAINER=		Will Maier <willmaier@ml1.net>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes

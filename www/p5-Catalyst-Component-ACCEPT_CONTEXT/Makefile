@@ -4,10 +4,9 @@ COMMENT =	make Catalyst request contexts available in models and views
 
 MODULES =	cpan
 DISTNAME =	Catalyst-Component-ACCEPT_CONTEXT-0.07
+REVISION =	0
 CATEGORIES =	www
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

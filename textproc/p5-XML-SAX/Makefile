@@ -4,7 +4,7 @@ COMMENT=	perl interface to the SAX2 XML parser
 
 MODULES=	cpan
 DISTNAME=	XML-SAX-0.96
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

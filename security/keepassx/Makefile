@@ -3,12 +3,10 @@
 COMMENT =	management tool for sensitive data
 
 DISTNAME =	keepassx-0.4.3
-REVISION =	4
+REVISION =	5
 CATEGORIES =	security
 
 HOMEPAGE =	http://www.keepassx.org/
-
-MAINTAINER =	Steven Mestdagh <steven@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

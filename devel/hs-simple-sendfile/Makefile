@@ -3,6 +3,7 @@
 COMMENT =		cross platform library for the sendfile system call
 
 DISTNAME =		simple-sendfile-0.2.11
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

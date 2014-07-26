@@ -5,7 +5,7 @@ COMMENT =		template and text document library for Qt
 PKG_VERSION =		0.3.0
 PLIST_VERSION =		${PKG_VERSION:R}
 DISTNAME =		grantlee-${PKG_VERSION}
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel x11
 HOMEPAGE =		http://www.gitorious.org/grantlee/
 

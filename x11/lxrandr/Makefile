@@ -3,7 +3,7 @@
 COMMENT=	simple xrandr config tool
 
 DISTNAME=	lxrandr-0.1.2
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	x11 sysutils
 

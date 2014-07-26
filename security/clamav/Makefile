@@ -2,7 +2,7 @@
 
 COMMENT=		virus scanner
 DISTNAME=		clamav-0.98.4
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		security
 
@@ -11,8 +11,6 @@ SHARED_LIBS +=	clamunrar            3.0      # 7.22
 SHARED_LIBS +=	clamunrar_iface      3.0
 
 HOMEPAGE=		http://www.clamav.net/
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2/LGPL, with OpenSSL exemption
 PERMIT_PACKAGE_CDROM=	Yes

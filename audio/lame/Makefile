@@ -3,14 +3,13 @@
 COMMENT=	lame ain't an MP3 encoder
 
 DISTNAME=	lame-3.99.5
+REVISION=	0
 
 SHARED_LIBS +=  mp3lame              2.1      # 0.1
 
 CATEGORIES=	audio
 
 HOMEPAGE=	http://lame.sourceforge.net/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2 - patent restriction
 PERMIT_PACKAGE_CDROM=	MP3 patent, http://mp3licensing.com/royalty/

@@ -5,12 +5,10 @@ COMMENT=	xml parser for Java
 V=		2.9.1
 DISTNAME=	Xerces-J-bin.${V}
 PKGNAME=	xerces-${V}
-REVISION =	9
+REVISION =	10
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://xml.apache.org/xerces2-j/index.html
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Apache
 PERMIT_PACKAGE_CDROM=   Yes

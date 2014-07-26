@@ -7,6 +7,8 @@ COMMENT=	C headers and binutils linker scripts for ${TARGET}
 TOOL=		msp430mcu
 TOOL_V= 	${LTS_V}
 
+REVISION=	0
+
 # msp430mcu-20120406-sf3522088.patch doesn't apply to us, since ${BINDIR}
 # is already created by mtree.
 

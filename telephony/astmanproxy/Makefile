@@ -4,13 +4,11 @@ SHARED_ONLY =	Yes
 
 COMMENT =	proxy for Asterisk Manager Interface
 DISTNAME =	astmanproxy-1.22pre081119
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	telephony
 
 HOMEPAGE =	http://www.voip-info.org/tiki-index.php?page=AstManProxy
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

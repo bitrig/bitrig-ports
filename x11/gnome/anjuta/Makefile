@@ -6,7 +6,7 @@ COMMENT=		versatile IDE for GNOME
 
 GNOME_PROJECT=		anjuta
 GNOME_VERSION=		3.12.0
-REVISION=		3
+REVISION=		4
 
 SHARED_LIBS +=  anjuta-3             0.0      # 0.0
 

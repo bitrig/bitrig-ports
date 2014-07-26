@@ -4,10 +4,8 @@ COMMENT=	bare-bones HTML parser
 
 MODULES=	cpan
 DISTNAME=	HTML-SimpleParse-0.12
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

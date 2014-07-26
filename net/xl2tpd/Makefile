@@ -3,13 +3,11 @@
 COMMENT=	l2tp client/server
 
 DISTNAME=	xl2tpd-1.3.1
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.xelerance.com/services/software/xl2tpd/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

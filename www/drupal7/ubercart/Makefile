@@ -4,7 +4,7 @@ COMMENT =	e-commerce suite for Drupal
 
 DISTNAME = 	ubercart-7.x-3.1
 PKGNAME =	drupal7-ubercart-3.1
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://www.ubercart.org/
 

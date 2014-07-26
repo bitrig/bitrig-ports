@@ -3,12 +3,11 @@
 COMMENT=	tiny cgi web script handler using shell or Lua
 
 DISTNAME=	haserl-0.9.32
+REVISION=	0
 
 CATEGORIES=	www
 
 HOMEPAGE=	http://haserl.sourceforge.net/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM=	Yes

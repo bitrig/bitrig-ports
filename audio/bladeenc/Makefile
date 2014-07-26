@@ -5,7 +5,7 @@ COMMENT=	high-quality MP3 encoder
 VERSION=	0.94.2
 DISTNAME=	bladeenc-${VERSION}-src-stable
 PKGNAME=	bladeenc-${VERSION}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://bladeenc.mp3.no/source/ \
 		http://spacehopper.org/mirrors/

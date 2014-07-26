@@ -7,10 +7,8 @@ SHARED_ONLY=		Yes
 
 DISTNAME=		ADMfzap
 PKGNAME=        	ADMfzap-0.1
-REVISION =		0
+REVISION =		1
 CATEGORIES=		security
-
-MAINTAINER=     	Jason Peel <jsyn@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	no license
 PERMIT_PACKAGE_FTP=	no license

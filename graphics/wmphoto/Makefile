@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; shows photos and execute commands on that photo
 
 DISTNAME=		wmphoto-0.3a
-REVISION =		3
+REVISION =		4
 CATEGORIES=		graphics x11 x11/windowmaker
 
 HOMEPAGE=		http://www.dcc.uchile.cl/~amartoq/wmphoto/

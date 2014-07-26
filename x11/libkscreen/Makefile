@@ -3,6 +3,7 @@
 COMMENT =	KDE screen management software
 CATEGORIES =	x11
 VERSION =	1.0.4
+REVISION =	0
 DISTNAME =	libkscreen-${VERSION}
 
 SHARED_LIBS =	kscreen		0.0

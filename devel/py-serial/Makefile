@@ -5,13 +5,11 @@ COMMENT =		serial interface class for Python
 MODPY_EGG_VERSION =	2.4
 DISTNAME =		pyserial-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/py/py-/}
-REVISION =		5
+REVISION =		6
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://pyserial.wiki.sourceforge.net/pySerial
-
-MAINTAINER =		Daniel Gruber <daniel@tydirium.org>
 
 # Python license
 PERMIT_PACKAGE_CDROM =	Yes

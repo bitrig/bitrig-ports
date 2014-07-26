@@ -8,7 +8,7 @@ PKGNAME =		blobby-${V}
 
 CATEGORIES =		games
 
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://blobby.sourceforge.net/
 

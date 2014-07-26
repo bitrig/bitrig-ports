@@ -2,7 +2,7 @@
 
 VERSION=	1.10
 DISTNAME=	automake-${VERSION}.3
-REVISION=	8
+REVISION=	9
 PKGSPEC=	automake->=${VERSION},<1.11
 
 # GPLv2

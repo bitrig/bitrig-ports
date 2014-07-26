@@ -9,7 +9,7 @@ PKGNAME=	arduino-${V}
 # If updating the port, check whether this needs to be adjusted.
 DISTNAME=	arduino-${V}-src
 EPOCH=		0
-REVISION =	4
+REVISION =	5
 CATEGORIES=	devel
 HOMEPAGE=	http://www.arduino.cc/
 

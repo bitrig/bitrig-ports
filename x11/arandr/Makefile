@@ -3,10 +3,9 @@
 COMMENT =		xrandr gui
 MODPY_EGG_VERSION =	0.1.7.1
 DISTNAME =		arandr-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		x11 sysutils
 HOMEPAGE =		http://christian.amsuess.com/tools/arandr/
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

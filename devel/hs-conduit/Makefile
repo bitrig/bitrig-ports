@@ -3,9 +3,8 @@
 COMMENT =		streaming data processing library
 
 DISTNAME =		conduit-1.0.7.1
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

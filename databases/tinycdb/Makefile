@@ -3,7 +3,7 @@
 COMMENT =	creating and reading constant databases
 
 V =		0.77
-REVISION =	0
+REVISION =	1
 DISTNAME =	tinycdb_$V
 PKGNAME =	tinycdb-$V
 CATEGORIES =	databases
@@ -11,8 +11,6 @@ SHARED_LIBS =	cdb	0.0
 
 HOMEPAGE =	http://www.corpit.ru/mjt/tinycdb.html
 MASTER_SITES =	http://www.corpit.ru/mjt/tinycdb/
-
-MAINTAINER =	Christian Rueger <cr+openbsd@rueger-net.de>
 
 # Public domain
 PERMIT_PACKAGE_CDROM =		Yes

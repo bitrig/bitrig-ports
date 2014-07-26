@@ -5,7 +5,7 @@ COMMENT=		library to implement a Unix daemon process
 MODPY_EGG_VERSION=	1.6
 DISTNAME=		python-daemon-${MODPY_EGG_VERSION}
 PKGNAME=		py-daemon-${MODPY_EGG_VERSION}
-REVISION=		1
+REVISION=		2
 
 CATEGORIES=		sysutils
 

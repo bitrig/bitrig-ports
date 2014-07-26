@@ -6,7 +6,7 @@ COMMENT=	music management and playback application for GNOME
 
 GNOME_VERSION=	2.6.2
 GNOME_PROJECT=	banshee
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	audio multimedia
 

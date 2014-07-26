@@ -8,7 +8,7 @@ V8_VERSION=	3.12.19
 V8_ARCH= ${PKG_ARCH:S/amd64/x64/:S/i386/ia32/}
 V8_RELEASE= release
 
-REVISION=1
+REVISION=2
 EPOCH=0
 
 DISTNAME=	v8-${V8_VERSION}
@@ -19,8 +19,6 @@ CATEGORIES=	lang
 SHARED_LIBS=    v8            0.0
 
 HOMEPAGE=	https://code.google.com/p/v8/
-
-MAINTAINER=	Aaron Bieber <abieber@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

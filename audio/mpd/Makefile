@@ -2,9 +2,9 @@
 
 COMMENT =		Music Player Daemon
 DISTNAME =		mpd-0.18.11
+REVISION =		0
 CATEGORIES =		audio
 HOMEPAGE =		http://www.musicpd.org/
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

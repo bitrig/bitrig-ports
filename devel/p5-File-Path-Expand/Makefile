@@ -4,7 +4,7 @@ COMMENT= 	expands user directories in paths
 
 MODULES=	cpan 
 DISTNAME=	File-Path-Expand-1.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

@@ -3,7 +3,7 @@ COMMENT=	ordered hashes
 
 MODULES=	cpan
 DISTNAME=	Tie-LLHash-1.003
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

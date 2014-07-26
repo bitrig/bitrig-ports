@@ -3,6 +3,7 @@
 COMMENT=	complain about SPAM
 
 DISTNAME=	adcomplain-3.52
+REVISION=	0
 CATEGORIES=	mail news
 
 MASTER_SITES=	http://www.rdrop.com/users/billmc/

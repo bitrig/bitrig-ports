@@ -3,7 +3,7 @@
 COMMENT=	small utility used to manipulate SGML and XML catalogs
 
 DISTNAME=	xmlcatmgr-2.2
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://xmlcatmgr.sourceforge.net/

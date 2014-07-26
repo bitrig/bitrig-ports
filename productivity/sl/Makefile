@@ -2,12 +2,10 @@
 
 COMMENT =	substantially more useful ls
 DISTNAME =	sl-ls-1.1.2
-REVISION =	0
+REVISION =	1
 CATEGORIES =	productivity sysutils
 
 HOMEPAGE =	http://practicalthought.com/sl/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =		Yes

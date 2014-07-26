@@ -3,6 +3,7 @@
 COMMENT=	suite of tools for managing icons in an application
 
 DISTNAME=	icontool-0.1.0
+REVISION=	0
 CATEGORIES=	x11
 
 HOMEPAGE=	https://launchpad.net/icontool/

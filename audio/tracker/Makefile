@@ -2,13 +2,11 @@
 
 COMMENT =	MOD player
 DISTNAME =	tracker-5.3
-REVISION =	2
+REVISION =	3
 CATEGORIES =	audio
 
 MASTER_SITES =	ftp://ftp.uni-trier.de/pub/unix/audio/tracker/
 EXTRACT_SUFX =	.tgz
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # OpenBSD has a special exemption. Other BSD should contact me (Marc Espie) 
 # for redistribution on the CD.

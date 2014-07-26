@@ -6,7 +6,7 @@ V=		0.13
 MODULES=	cpan
 DISTNAME=	UNIVERSAL-require-${V}
 PKGNAME=	p5-Universal-require-${V}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

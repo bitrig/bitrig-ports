@@ -6,8 +6,6 @@
 
 CATEGORIES =		archivers
 
-MAINTAINER =		Juan Francisco Cantero Hurtado <juanfra@openbsd.org>
-
 MASTER_SITES ?=		${MASTER_SITE_SAVANNAH:=lzip/} \
 			${MASTER_SITE_SAVANNAH:=lzip/old/}
 # Upstream also releases the tarballs compressed with gz but to use the

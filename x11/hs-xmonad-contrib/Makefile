@@ -3,11 +3,9 @@
 COMMENT =		third party xmonad extensions
 
 DISTNAME =		xmonad-contrib-0.11.1
-REVISION =		1
+REVISION =		2
 CATEGORIES =		x11
 HOMEPAGE =		http://www.xmonad.org/
-
-MAINTAINER =		Jona Joachim <jona@joachim.cc>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,11 +3,9 @@
 COMMENT =	library to generate, and check strenght of passwords
 
 DISTNAME =	libpwquality-1.2.3
+REVISION =	0
 SHARED_LIBS +=  pwquality            1.0      # 1.2
 CATEGORIES =	security
-
-MAINTAINER =	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 HOMEPAGE =	https://fedorahosted.org/libpwquality/
 

@@ -3,7 +3,7 @@
 COMMENT=	print information about the content and structure of a DVD
 
 DISTNAME=	lsdvd-0.16
-REVISION=	2
+REVISION=	3
 CATEGORIES=	multimedia
 
 HOMEPAGE=	http://lsdvd.sourceforge.net/

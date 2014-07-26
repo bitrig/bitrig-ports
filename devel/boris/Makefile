@@ -3,7 +3,7 @@
 COMMENT =		read-eval-print loop for PHP
 
 V =			1.0.8
-REVISION =		0
+REVISION =		1
 
 GH_ACCOUNT =		d11wtq
 GH_PROJECT =		boris

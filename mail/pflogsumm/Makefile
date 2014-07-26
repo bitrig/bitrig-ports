@@ -3,13 +3,12 @@
 COMMENT=	Postfix log entry summarizer
 
 DISTNAME=	pflogsumm-1.1.5
+REVISION=	0
 CATEGORIES=	mail
 
 MASTER_SITES=	http://jimsun.linxnet.com/downloads/
 
 HOMEPAGE=	http://jimsun.linxnet.com/postfix_contrib.html
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

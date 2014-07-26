@@ -3,7 +3,7 @@
 COMMENT=		manage opacity property of windows, extended version
 
 DISTNAME=		transset-df-6
-REVISION=		1
+REVISION=		2
 CATEGORIES=		x11
 
 HOMEPAGE=		http://www.forchheimer.se/transset-df/

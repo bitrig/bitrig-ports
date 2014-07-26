@@ -3,10 +3,9 @@
 COMMENT =		interface to Twitter API
 
 DISTNAME =		Net-Twitter-Lite-0.12004
+REVISION =		0
 
 CATEGORIES =		net devel
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

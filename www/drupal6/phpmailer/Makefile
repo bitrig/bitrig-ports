@@ -4,8 +4,7 @@ COMMENT =	send mail by smtp/smtp-auth from drupal
 
 DISTNAME = 	phpmailer-6.x-2.2
 PKGNAME =	drupal6-phpmailer-2.2
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
+REVISION =	0
 
 # drupal module is GPL, third-party phpMailer code is LGPL
 MASTER_SITES0 =	${MASTER_SITE_SOURCEFORGE:=phpmailer/}

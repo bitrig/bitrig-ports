@@ -2,6 +2,7 @@
 
 COMMENT =	KDE Activity rooms management
 DISTNAME =	kactivities-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kactivities		51.0 # 6.0
 SHARED_LIBS +=	kactivities-models	51.0

@@ -7,7 +7,7 @@ COMMENT=		Javascript bindings for GNOME
 GNOME_PROJECT=		gjs
 GNOME_VERSION=		1.40.1
 
-REVISION=		2
+REVISION=		3
 
 SHARED_LIBS +=  gjs                  4.0      # 0.0
 

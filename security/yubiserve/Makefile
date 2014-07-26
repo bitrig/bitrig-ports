@@ -2,7 +2,7 @@
 
 COMMENT=	standalone Yubikey and OATH/HOTP validation server
 DISTNAME=	yubico-yubiserve-3.1
-REVISION=	1
+REVISION=	2
 EXTRACT_SUFX=	.zip
 UNZIP=		unzip -a
 PKGNAME=	${DISTNAME:S/yubico-//}
@@ -10,8 +10,6 @@ PKGNAME=	${DISTNAME:S/yubico-//}
 CATEGORIES=	security www
 
 HOMEPAGE=	https://code.google.com/p/yubico-yubiserve/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

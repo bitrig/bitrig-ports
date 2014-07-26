@@ -4,10 +4,8 @@ COMMENT=	module to create objects that are handles to classes
 
 MODULES=	cpan
 DISTNAME=	Class-Handle-1.07
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

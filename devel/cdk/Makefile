@@ -5,7 +5,7 @@ COMMENT=	curses development kit
 V=		5.0-20060507
 DISTNAME=	cdk-${V}
 PKGNAME=	cdk-${V:S/-/./}
-REVISION =	0
+REVISION =	1
 
 EXTRACT_SUFX=	.tgz
 
@@ -14,8 +14,6 @@ SHARED_LIBS +=	cdk	0.0	# .4.0
 CATEGORIES=	devel
 
 HOMEPAGE=	http://invisible-island.net/cdk/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@raveland.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

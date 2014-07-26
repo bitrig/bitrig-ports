@@ -6,13 +6,11 @@ DISTNAME= 	amoebax-0.2.1
 
 CATEGORIES=	games
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://www.emma-soft.com/games/amoebax/
 
 MASTER_SITES=	${HOMEPAGE}download/
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # GPL/LAL
 PERMIT_PACKAGE_CDROM=	Yes

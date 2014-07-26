@@ -6,11 +6,9 @@ V =		2.8.4
 DISTNAME =	rabbitmq-server-$V
 PKGNAME =	rabbitmq-$V
 CATEGORIES =	net
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	http://www.rabbitmq.com/
-
-MAINTAINER =	Piotr Sikora <piotr.sikora@frickle.com>
 
 # MPL
 PERMIT_PACKAGE_CDROM = Yes

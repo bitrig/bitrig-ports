@@ -7,7 +7,6 @@ CATEGORIES +=	www
 PKGNAME ?=	${NETSURF_PROJECT}-${NETSURF_VERSION}
 DISTNAME ?=	${NETSURF_PROJECT}-${NETSURF_VERSION}-src
 
-MAINTAINER ?=	Anthony J. Bentley <anthony@cathet.us>
 HOMEPAGE ?=	http://www.netsurf-browser.org/projects/${NETSURF_PROJECT}/
 MASTER_SITES ?=	http://download.netsurf-browser.org/libs/releases/
 

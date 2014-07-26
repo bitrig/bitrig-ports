@@ -3,7 +3,7 @@
 COMMENT =		fast, lightweight YAML loader and dumper
 
 DISTNAME =		HsSyck-0.50
-REVISION =		4
+REVISION =		5
 EPOCH =			0
 CATEGORIES =		devel
 

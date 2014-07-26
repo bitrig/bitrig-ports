@@ -5,13 +5,11 @@ COMMENT=		template language for XML based vocabularies
 VERSION=		0.9.6
 DISTNAME=		kid-${VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION =		3
+REVISION =		4
 
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.kid-templating.org/
-
-MAINTAINER=		Martynas Venckus <martynas@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

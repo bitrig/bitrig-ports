@@ -4,7 +4,7 @@ COMMENT=	ICMP router discovery protocol spoofer
 
 DISTNAME=	rdp
 PKGNAME=	rdp-1.0
-REVISION =	0
+REVISION =	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.atstake.com/research/tools/
 

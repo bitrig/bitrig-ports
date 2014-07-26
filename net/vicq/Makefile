@@ -3,12 +3,11 @@
 COMMENT=	text-based ICQ implementation
 
 DISTNAME=	vicq-0.4.1
+REVISION=	0
 CATEGORIES=     net
 MASTER_SITES=	http://gonzo.kiev.ua/projects/vicq.old/
 
 HOMEPAGE=	http://gonzo.kiev.ua/projects/vicq/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

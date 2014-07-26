@@ -3,10 +3,9 @@
 COMMENT =	perl SSH client package implemented on top of OpenSSH
 
 DISTNAME =	Net-OpenSSH-0.57
+REVISION =	0
 CATEGORIES =	net security
 MODULES =	cpan
-
-MAINTAINER =	Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

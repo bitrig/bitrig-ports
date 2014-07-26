@@ -3,12 +3,10 @@
 COMMENT=	extensible emacs interface for TeX
 
 DISTNAME=	auctex-11.14
-REVISION=	6
+REVISION=	7
 CATEGORIES=	print
 
 HOMEPAGE=	https://www.gnu.org/software/auctex/
-
-MAINTAINER=	Rich Cannings <cannings@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

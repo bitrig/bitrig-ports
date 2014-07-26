@@ -4,8 +4,8 @@ COMMENT =	lightweight mail user agent
 
 GNOME_PROJECT =	geary
 GNOME_VERSION =	0.6.1
+REVISION =	0
 
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 CATEGORIES =	mail
 
 # LGPLv2.1

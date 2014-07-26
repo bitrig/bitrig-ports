@@ -3,12 +3,11 @@
 COMMENT = 	lightweight connection pooler for PostgreSQL
 
 DISTNAME = 	pgbouncer-1.5.4
+REVISION = 	0
 
 CATEGORIES = 	databases
 
 HOMEPAGE = 	http://wiki.postgresql.org/wiki/PgBouncer
-
-MAINTAINER = 	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM = 	Yes

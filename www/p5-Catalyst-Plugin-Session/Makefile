@@ -4,10 +4,9 @@ COMMENT=	session framework for catalyst
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-Session-0.32
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

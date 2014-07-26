@@ -3,12 +3,10 @@
 COMMENT=	SSLv3/TLS network protocol analyzer
 
 DISTNAME=	ssldump-0.9b3
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.rtfm.com/ssldump/
-
-MAINTAINER=	Jakob Schlyter <jakob@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

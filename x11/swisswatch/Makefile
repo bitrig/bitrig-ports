@@ -3,7 +3,7 @@
 COMMENT=	Swiss railway clock emulation
 
 DISTNAME=	swisswatch-0.06
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 MASTER_SITES=	${MASTER_SITE_R5CONTRIB}

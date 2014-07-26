@@ -3,7 +3,7 @@
 COMMENT =	GTK2-based MPD client inspired by Rhythmbox
 DISTNAME =	ario-1.5.1
 CATEGORIES =	audio x11
-REVISION =	4
+REVISION =	5
 
 SHARED_LIBS +=	audioscrobbler		0.0 # 0.0
 SHARED_LIBS +=	filesystem		0.0 # 0.0
@@ -14,8 +14,6 @@ SHARED_LIBS +=	radios			0.0 # 0.0
 SHARED_LIBS +=	wikipedia		0.0 # 0.0
 
 HOMEPAGE =	http://ario-player.sourceforge.net/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes

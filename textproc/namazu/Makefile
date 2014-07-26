@@ -2,13 +2,12 @@
 
 COMMENT=	small to medium scale full-text search engine
 DISTNAME=	namazu-2.0.21
+REVISION=	0
 
 SHARED_LIBS+=	nmz 0.1	# .8.3
 
 CATEGORIES=	textproc
 HOMEPAGE=	http://www.namazu.org/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

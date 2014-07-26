@@ -3,7 +3,7 @@
 COMMENT=	X.10 firecracker interface
 
 DISTNAME=	bottlerocket-0.04c
-REVISION =	1
+REVISION =	2
 CATEGORIES=	comms
 
 HOMEPAGE =	http://www.linuxha.com/bottlerocket/

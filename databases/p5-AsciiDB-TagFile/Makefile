@@ -2,11 +2,9 @@
 
 COMMENT =	tie class for a simple ASCII database
 DISTNAME =	AsciiDB-TagFile-1.06
-REVISION =	1
+REVISION =	2
 CATEGORIES =	databases
 MODULES =	cpan
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

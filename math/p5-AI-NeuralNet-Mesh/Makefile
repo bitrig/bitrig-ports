@@ -4,11 +4,9 @@ COMMENT=	module to implement an accurate neural network mesh
 
 MODULES=	cpan
 DISTNAME=	AI-NeuralNet-Mesh-0.44
-REVISION=	1
+REVISION=	2
 CATEGORIES=	math
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

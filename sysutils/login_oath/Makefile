@@ -3,12 +3,10 @@
 COMMENT=	authentication provider for OATH one-time passwords
 
 DISTNAME=	login_oath-0.8
-REVISION=	1
+REVISION=	2
 CATEGORIES=	sysutils
 
 MASTER_SITES=	http://spacehopper.org/mirrors/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

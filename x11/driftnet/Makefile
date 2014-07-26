@@ -5,12 +5,10 @@ COMMENT=	network sniffer that grabs and displays images
 VERSION =	1.0
 DISTNAME=	driftnet_${VERSION}.orig
 PKGNAME=	driftnet-${VERSION}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.ex-parrot.com/~chris/driftnet/
-
-MAINTAINER=	Claudio Jeker <claudio@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

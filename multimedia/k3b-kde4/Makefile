@@ -2,6 +2,7 @@
 
 COMMENT =		CD/DVD creator
 DISTNAME =		k3b-2.0.2
+REVISION =		0
 CATEGORIES =		multimedia
 
 # bump away from KDE3 version

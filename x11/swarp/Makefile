@@ -3,13 +3,11 @@
 COMMENT=		simple pointer warping for X
 
 DISTNAME=		swarp-0.1
-REVISION =		0
+REVISION =		1
 
 CATEGORIES=		x11
 
 HOMEPAGE=		http://tools.suckless.org/swarp
-
-MAINTAINER =		Joerg Jung <jung@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

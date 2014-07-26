@@ -3,9 +3,8 @@
 COMMENT=	port scan detection and active defense
 
 DISTNAME=	portsentry-1.2
+REVISION=	0
 CATEGORIES=	security
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Common Public License
 PERMIT_PACKAGE_CDROM=  	commercial distribution defend and indemnify clauses

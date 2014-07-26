@@ -7,13 +7,11 @@ COMMENT =	Python interface to MySQL
 MODPY_EGG_VERSION =	1.2.3
 DISTNAME =	MySQL-python-${MODPY_EGG_VERSION}
 PKGNAME =	py-mysql-${MODPY_EGG_VERSION}
-REVISION =	4
+REVISION =	5
 
 CATEGORIES =	databases
 
 HOMEPAGE =	http://mysql-python.sourceforge.net/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

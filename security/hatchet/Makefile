@@ -3,10 +3,9 @@
 COMMENT=	PF firewall log analysis
 
 DISTNAME=	hatchet-0.9.2
+REVISION=	0
 CATEGORIES=	security www
 HOMEPAGE=	http://www.dixongroup.net/hatchet/
-
-MAINTAINER=	Jason Dixon <jdixon@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

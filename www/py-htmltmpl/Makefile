@@ -5,7 +5,7 @@ COMMENT=	templating engine for separation of code and HTML
 MODPY_EGG_VERSION= 1.22
 DISTNAME=	htmltmpl-${MODPY_EGG_VERSION}
 PKGNAME=	py-htmltmpl-${MODPY_EGG_VERSION}
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	www devel
 

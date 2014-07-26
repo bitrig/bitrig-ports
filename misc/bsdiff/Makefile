@@ -2,11 +2,10 @@
 
 COMMENT=	binary patch tools
 DISTNAME=	bsdiff-4.3
+REVISION=	0
 CATEGORIES=	misc devel
 
 HOMEPAGE=	http://www.daemonology.net/bsdiff/
-
-MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -2,7 +2,7 @@
 
 FW_DRIVER =	ulpt
 FW_VER =	1.0
-REVISION=	0
+REVISION=	1
 
 # "You may not copy the Software onto any public network."
 PERMIT_PACKAGE_CDROM ?=	  stupid license

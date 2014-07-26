@@ -5,6 +5,7 @@ MODPY_EGG_VERSION =	3.2.1
 COMMENT =		server of the Tryton application platform
 
 DISTNAME =		trytond-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		www
 

@@ -3,10 +3,9 @@
 COMMENT=	module to read TNEF files
 
 DISTNAME =	Convert-TNEF-0.18
+REVISION =	0
 CATEGORIES=	converters
 MODULES=	cpan
-
-MAINTAINER=	Ibrahim Khalifa <ibo@toontown.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

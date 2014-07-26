@@ -3,12 +3,11 @@
 COMMENT=	NetFlow collector
 
 DISTNAME=	flowd-0.9.1
+REVISION=	0
 CATEGORIES=	net
 MASTER_SITES=	http://www2.mindrot.org/files/flowd/
 
 HOMEPAGE=	http://www.mindrot.org/projects/flowd/
-
-MAINTAINER=	Jakob Schlyter <jakob@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

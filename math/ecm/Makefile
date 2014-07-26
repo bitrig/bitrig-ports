@@ -3,12 +3,11 @@
 COMMENT =	elliptic curve method (ECM) factorization library
 
 DISTNAME =	ecm-6.4.4
+REVISION =	0
 SHARED_LIBS =	ecm	0.1
 CATEGORIES =	math
 
 HOMEPAGE =	http://gforge.inria.fr/projects/ecm/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3 / LGLPv3
 PERMIT_PACKAGE_CDROM =	Yes

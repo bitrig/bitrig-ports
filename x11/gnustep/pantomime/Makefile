@@ -3,7 +3,7 @@
 COMMENT=	framework to major mail protocols
 
 DISTNAME=	Pantomime-1.2.0pre3
-REVISION =	10
+REVISION =	11
 
 SHARED_LIBS=	Pantomime 1.2	# .1.2
 CATEGORIES=	mail

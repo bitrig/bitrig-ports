@@ -5,6 +5,7 @@ COMMENT=	audio/video converter and streamer
 V=		20140412
 DISTNAME=	ffmpeg-git-${V}
 PKGNAME=	ffmpeg-${V}
+REVISION=	0
 CATEGORIES=	graphics multimedia
 MASTER_SITES=	http://comstyle.com/source/
 EXTRACT_SUFX=	.tar.xz
@@ -20,8 +21,6 @@ SHARED_LIBS=	avcodec		20.0 \
 		swscale		5.2
 
 HOMEPAGE=	http://ffmpeg.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # LGPLv2.1 and GPLv2
 PERMIT_PACKAGE_CDROM=	patents

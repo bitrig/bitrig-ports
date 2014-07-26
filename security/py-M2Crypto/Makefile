@@ -5,12 +5,11 @@ COMMENT =		crypto and ssl toolkit for python
 MODPY_EGG_VERSION =	0.22.3
 DISTNAME =		M2Crypto-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
+REVISION =		0
 
 CATEGORIES =		security
 
 HOMEPAGE =		http://chandlerproject.org/Projects/MeTooCrypto
-
-MAINTAINER =		Robert Peichaer <rpe@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

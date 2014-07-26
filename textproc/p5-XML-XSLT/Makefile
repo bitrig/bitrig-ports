@@ -4,10 +4,8 @@ COMMENT=	perl module to perform XSLT transformations
 
 MODULES=	cpan
 DISTNAME=	XML-XSLT-0.48
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
-
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 
 RUN_DEPENDS=	textproc/p5-XML-Parser>=2.23 \
 		textproc/p5-XML-DOM>=1.25

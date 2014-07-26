@@ -7,9 +7,7 @@ COMMENT=	module for creating generic methods
 MODULES=	cpan
 DISTNAME=	Class-MethodMaker-2.18
 CATEGORIES=	devel
-REVISION=	0
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
+REVISION=	1
 
 PERMIT_PACKAGE_CDROM=   Yes
 

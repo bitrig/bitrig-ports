@@ -5,10 +5,8 @@ COMMENT =		primitive memory-related operations
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		primitive-0.5.0.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

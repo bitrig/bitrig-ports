@@ -4,9 +4,8 @@ COMMENT=	module to extract text contained within HTML tables
 
 MODULES=	cpan
 DISTNAME =	HTML-TableExtract-2.11
+REVISION =	0
 CATEGORIES=	www
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

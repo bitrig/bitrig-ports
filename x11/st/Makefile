@@ -3,12 +3,11 @@
 COMMENT=		simple X terminal
 
 DISTNAME=		st-0.5
+REVISION=		0
 
 CATEGORIES=		x11
 
 HOMEPAGE=		http://st.suckless.org/
-
-MAINTAINER=		Joerg Jung <jung@openbsd.org>
 
 # MIT/X Consortium License
 PERMIT_PACKAGE_CDROM=	Yes

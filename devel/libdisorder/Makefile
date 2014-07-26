@@ -3,15 +3,13 @@
 COMMENT=	simple C Library for entropy measurement
 
 DISTNAME=	libdisorder-0.0.2
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS=	disorder 0.0
 
 CATEGORIES=	devel 
 
 HOMEPAGE=	http://libdisorder.freshdefense.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

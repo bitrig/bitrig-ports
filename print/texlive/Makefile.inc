@@ -2,7 +2,6 @@
 
 CATEGORIES ?=	print
 HOMEPAGE ?=	http://tug.org/texlive/
-MAINTAINER ?=	Edd Barrett <edd@openbsd.org>
 
 # http://tug.org/texlive/LICENSE.TL
 PERMIT_PACKAGE_CDROM ?=		Yes

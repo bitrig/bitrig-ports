@@ -4,7 +4,7 @@ COMMENT=		catalyst helper for CRUD scaffolding
 
 MODULES=		cpan
 DISTNAME=		Catalyst-Helper-Controller-Scaffold-0.04
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel www
 USE_GROFF =		Yes
 

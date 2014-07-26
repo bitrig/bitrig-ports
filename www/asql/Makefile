@@ -3,11 +3,10 @@
 COMMENT=	query Apache logfiles via SQL
 
 DISTNAME=	asql-1.6
+REVISION=	0
 CATEGORIES=	www
 
 HOMEPAGE=	http://www.steve.org.uk/Software/asql/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

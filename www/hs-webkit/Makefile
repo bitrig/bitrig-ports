@@ -2,10 +2,8 @@
 
 COMMENT =		WebKit bindings for Haskell
 DISTNAME =		webkit-0.12.4
-REVISION =		2
+REVISION =		3
 CATEGORIES =		www
-
-MAINTAINER =		Jona Joachim <jona@joachim.cc>
 
 # LGPL-2.1
 PERMIT_PACKAGE_CDROM =	Yes

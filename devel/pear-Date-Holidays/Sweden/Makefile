@@ -2,5 +2,6 @@
 
 COMMENT =	Swedish holiday classes for PHP
 HOLNAME =	Sweden-0.1.3
+REVISION =	0
 
 .include <bsd.port.mk>

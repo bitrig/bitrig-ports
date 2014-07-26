@@ -7,12 +7,10 @@ COMMENT=	lightweight freedesktop-compliant panel/taskbar/clock
 DISTNAME=	tint2-0.11
 EXTRACT_SUFX=	.tar.bz2
 PKGNAME=	tint-0.11
-REVISION=	6
+REVISION=	7
 CATEGORIES=	x11
 
 HOMEPAGE=	https://code.google.com/p/tint2/
-
-MAINTAINER=	Edd Barrett <edd@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,13 +5,11 @@ RDATE =		20120301
 RTAG =		2394
 DISTNAME =	eduke32_src_${RDATE}-${RTAG}
 PKGNAME =	eduke32-2.0.0.${RTAG}
-REVISION =	1
+REVISION =	2
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://www.eduke32.com/
-
-MAINTAINER =	Ryan Freeman <rfreeman@openbsd.org>
 
 # GPLv2, BUILD license and shareware data
 PERMIT_PACKAGE_CDROM =  "BUILD engine license is not compatible with GPLv2."

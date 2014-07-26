@@ -3,7 +3,7 @@
 COMMENT=		Nebulous rewrite of Tower Toppler
 
 DISTNAME=		toppler-1.1.3
-REVISION =		3
+REVISION =		4
 CATEGORIES=		games
 
 HOMEPAGE=		http://toppler.sourceforge.net/

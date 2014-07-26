@@ -4,7 +4,7 @@ COMMENT=		prover9/mace4 GUI
 
 DISTNAME=		p9m4-v05
 PKGNAME=		${DISTNAME:S/v//}
-REVISION =		2
+REVISION =		3
 
 MASTER_SITES=		${HOMEPAGE}/gui/
 

@@ -2,6 +2,7 @@
 
 COMMENT =	minesweeper game for KDE
 DISTNAME =	kmines-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg

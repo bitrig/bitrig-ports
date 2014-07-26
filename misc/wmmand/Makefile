@@ -4,7 +4,7 @@ COMMENT=		wm-dockapp; mandelbrot explorer
 
 DISTNAME=		wmMand-1.0
 PKGNAME=		${DISTNAME:L}
-REVISION=		1
+REVISION=		2
 CATEGORIES=     	misc x11 x11/windowmaker
 
 HOMEPAGE=		http://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml

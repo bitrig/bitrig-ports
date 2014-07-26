@@ -12,7 +12,7 @@ SHARED_LIBS =	mongoclient	2.0
 
 CATEGORIES =	databases
 
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://www.mongodb.org/
 

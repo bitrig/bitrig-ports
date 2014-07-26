@@ -3,11 +3,10 @@
 COMMENT =		filter, redirector and access controller for Squid
 
 DISTNAME =		squidGuard-1.4
-REVISION =		12
+REVISION =		13
 CATEGORIES =		www
 
 HOMEPAGE =		http://www.squidguard.org/
-MAINTAINER =		Claudio Correa <correa@pucpcaldas.br>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM =	Yes

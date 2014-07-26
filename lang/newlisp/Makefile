@@ -4,7 +4,7 @@ COMMENT=	newLISP is a LISP like, general purpose scripting language
 
 V=		10.6.0
 DISTNAME=	newlisp-$V
-REVISION=	1
+REVISION=	2
 CATEGORIES=	lang
 HOMEPAGE=	http://newlisp.org/
 

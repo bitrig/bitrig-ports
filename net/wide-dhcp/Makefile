@@ -5,7 +5,7 @@ NOT_FOR_ARCHS=	${LP64_ARCHS}
 
 DISTNAME=	dhcp-1.4.0p3
 PKGNAME=	wide-dhcp-1.4.0.3
-REVISION=	5
+REVISION=	6
 CATEGORIES=	net
 MASTER_SITES=	ftp://sh.wide.ad.jp/WIDE/free-ware/dhcp/
 

@@ -4,7 +4,7 @@ COMMENT =	helps validate CGI::Application run modes
 
 MODULES =	cpan
 DISTNAME =	CGI-Application-Plugin-ValidateRM-2.3
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
 USE_GROFF =	Yes
 

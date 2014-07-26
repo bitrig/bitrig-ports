@@ -3,6 +3,7 @@
 COMMENT=	library for parsing dsh-style configuration files
 
 DISTNAME=	libdshconfig-0.20.9
+REVISION=	0
 CATEGORIES=	devel
 
 SHARED_LIBS+=		dshconfig                 0.0 # 1.0

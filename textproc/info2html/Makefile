@@ -3,6 +3,7 @@
 COMMENT=	translate GNU info files into HTML pages
 
 DISTNAME=	info2html-1.1
+REVISION=	0
 CATEGORIES=	textproc
 MASTER_SITES=	https://people.freebsd.org/~wosch/src/
 

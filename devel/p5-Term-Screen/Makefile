@@ -4,10 +4,8 @@ COMMENT=		positioning screen based module
 
 MODULES=		cpan
 DISTNAME=		Term-Screen-1.03
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=   Yes

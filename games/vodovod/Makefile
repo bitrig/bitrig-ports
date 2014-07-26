@@ -4,12 +4,10 @@ COMMENT=	combine pipes to lead water from the house to the tank
 
 DISTNAME=	vodovod-1.10-src
 PKGNAME=	vodovod-1.10
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games
 
 HOMEPAGE=	http://home.gna.org/vodovod/
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

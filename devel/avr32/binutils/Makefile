@@ -3,6 +3,7 @@
 COMMENT = 	Atmel AVR 32-bit binutils
 V = 		2.23.1
 DISTNAME = 	avr32-binutils-${V}
+REVISION = 	0
 
 # GPLv3
 PERMIT_PACKAGE_CDROM = 	Yes

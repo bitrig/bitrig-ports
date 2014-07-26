@@ -3,7 +3,7 @@
 COMMENT =		Haskell 98 lenses
 
 DISTNAME =		data-lens-2.10.2
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 
 # BSD3

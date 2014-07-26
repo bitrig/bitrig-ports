@@ -3,14 +3,12 @@
 COMMENT=	extra chinese fonts
 
 DISTNAME=       zh-fonts-taipei-1.01
-REVISION=	0
+REVISION=	1
 CATEGORIES=     fonts chinese x11
 
 DIST_SUBDIR=    zh-fonts
 
 MASTER_SITES=	http://cle.linux.org.tw/fonts/bitmap/taipeifont/
-
-MAINTAINER=     Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_DISTFILES_FTP=   no license
 PERMIT_PACKAGE_CDROM=   no license

@@ -5,6 +5,7 @@ COMMENT=	graphical network simulator
 MODPY_EGG_VERSION = 0.8.6
 DISTNAME=	GNS3-${MODPY_EGG_VERSION}-src
 PKGNAME=	gns3-${MODPY_EGG_VERSION}
+REVISION=	0
 
 CATEGORIES=	emulators
 

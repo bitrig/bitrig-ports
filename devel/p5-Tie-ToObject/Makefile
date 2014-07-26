@@ -4,10 +4,8 @@ COMMENT =	tie to an existing object
 
 MODULES =	cpan
 DISTNAME =	Tie-ToObject-0.03
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

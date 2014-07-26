@@ -5,11 +5,9 @@ SHARED_ONLY =		Yes
 COMMENT =		perl interface to OpenBSD socket splicing
 
 DISTNAME =		BSD-Socket-Splice-0.05
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		net
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

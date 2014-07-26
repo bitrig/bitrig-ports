@@ -6,7 +6,7 @@ MODPY_EGG_VERSION =	1.2.2
 DISTNAME =	barman-${MODPY_EGG_VERSION}
 CATEGORIES =	databases
 HOMEPAGE =	http://www.pgbarman.org/
-REVISION =	0
+REVISION =	1
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

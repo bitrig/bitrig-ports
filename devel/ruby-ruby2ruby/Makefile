@@ -3,7 +3,7 @@
 COMMENT =	generating pure Ruby code easily from ParseTree\'s Sexps
 
 DISTNAME =	ruby2ruby-1.3.1
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 
 # MIT

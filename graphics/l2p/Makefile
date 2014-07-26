@@ -3,6 +3,7 @@
 COMMENT=		create PNG images from LaTeX expressions
 
 DISTNAME=		l2p-1.1.1
+REVISION=		0
 CATEGORIES=		graphics print
 
 HOMEPAGE=		http://redsymbol.net/software/l2p/

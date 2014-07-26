@@ -5,10 +5,8 @@ SHARED_ONLY=	Yes
 
 MODULES=	cpan
 DISTNAME=	Set-Object-1.26
-REVISION=	4
+REVISION=	5
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Same as perl
 PERMIT_PACKAGE_CDROM=	Yes

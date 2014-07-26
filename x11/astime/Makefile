@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; Time/Date applet
 
 DISTNAME=		astime-2.8
-REVISION=		0
+REVISION=		1
 CATEGORIES=		x11 x11/windowmaker
 
 HOMEPAGE=		http://www.tigr.net/afterstep/view.php?applet=astime/data

@@ -3,9 +3,8 @@
 COMMENT =		command-line interface for user input
 
 DISTNAME =		haskeline-0.7.0.3
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

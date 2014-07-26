@@ -3,13 +3,11 @@
 COMMENT=		print X selection to standard out
 
 DISTNAME=		sselp-0.2
-REVISION =		0
+REVISION =		1
 
 CATEGORIES=		x11
 
 HOMEPAGE=		http://tools.suckless.org/sselp
-
-MAINTAINER =		Joerg Jung <jung@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

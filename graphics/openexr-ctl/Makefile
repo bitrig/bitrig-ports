@@ -2,7 +2,7 @@
 
 COMMENT =		OpenEXR bindings for CTL
 DISTNAME =		openexr_ctl-1.0.1
-REVISION=		1
+REVISION=		2
 
 PKGNAME =		${DISTNAME:S/_/-/}
 

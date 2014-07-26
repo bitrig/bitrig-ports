@@ -2,7 +2,7 @@
 
 COMMENT =	graphical su wrapper
 DISTNAME =	ktsuss-1.4
-REVISION =	4
+REVISION =	5
 CATEGORIES =	sysutils
 
 # BSD

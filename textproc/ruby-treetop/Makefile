@@ -3,7 +3,7 @@
 COMMENT =	Ruby-based DSL for text parsing and interpretation
 
 DISTNAME =	treetop-1.4.14
-REVISION =	0
+REVISION =	1
 CATEGORIES =	textproc
 
 HOMEPAGE =	http://treetop.rubyforge.org/

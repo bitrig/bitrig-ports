@@ -5,7 +5,7 @@ COMMENT= 	test framework for HTTP::Server::Simple
 MODULES=	cpan
 
 DISTNAME=	Test-HTTP-Server-Simple-0.09
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www devel
 USE_GROFF =	Yes
 

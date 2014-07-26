@@ -4,11 +4,10 @@ COMMENT =		PHP client library for the Redis key-value database
 
 DISTNAME =		Predis-0.8.5
 PKGNAME =		${DISTNAME:S/^P/php-p/}
+REVISION =		0
 CATEGORIES =		www databases
 
 HOMEPAGE =		http://wiki.github.com/nrk/predis
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

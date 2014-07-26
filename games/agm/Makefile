@@ -3,7 +3,7 @@
 COMMENT=		anagram search utility
 
 DISTNAME=		agm-1.3.1
-REVISION =		2
+REVISION =		3
 CATEGORIES=		games
 
 PERMIT_PACKAGE_CDROM=	no license available

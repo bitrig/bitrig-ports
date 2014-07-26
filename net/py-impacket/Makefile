@@ -5,7 +5,7 @@ COMMENT =		Python classes providing access to network packets
 MODPY_EGG_VERSION =	0.9.6.0
 DISTNAME =		Impacket-${MODPY_EGG_VERSION}
 PKGNAME =		py-impacket-${MODPY_EGG_VERSION}
-REVISION =		3
+REVISION =		4
 
 CATEGORIES =   		net
 

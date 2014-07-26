@@ -3,10 +3,9 @@
 COMMENT=	convert Markdown syntax to (X)HTML
 
 DISTNAME=	Text-Markdown-1.000031
+REVISION=	0
 CATEGORIES=	textproc www
 MODULES=	cpan
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,13 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	chewing input method for uim
 
 DISTNAME=	uim-chewing-0.0.4.2
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	inputmethods chinese
 
 HOMEPAGE= 	https://code.google.com/p/uim/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

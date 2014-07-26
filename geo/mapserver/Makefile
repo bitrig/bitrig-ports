@@ -16,15 +16,16 @@ PKGNAME-php=	php-mapscript-${V}
 PKGNAME-perl=	p5-mapscript-${V}
 SHARED_LIBS +=	mapserver 1.0
 
-REVISION-main=	0
+REVISION-main=	1
+REVISION-utils=	0
+REVISION-php=	0
+REVISION-perl=	0
 
 CATEGORIES=	geo www
 
 HOMEPAGE=	http://www.mapserver.org/
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
-
-MAINTAINER=	Landry Breuil <landry@openbsd.org>
 
 MASTER_SITES=	http://download.osgeo.org/mapserver/
 

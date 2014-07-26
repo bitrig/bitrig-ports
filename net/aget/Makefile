@@ -2,12 +2,11 @@
 
 COMMENT =	multi threaded HTTP download accelerator
 DISTNAME =	aget-0.4.1
+REVISION =	0
 CATEGORIES =	net
 
 HOMEPAGE=	http://www.enderunix.org/aget/
 MASTER_SITES =	${HOMEPAGE}
-
-MAINTAINER =	Girish Venkatachalam <girish1729@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

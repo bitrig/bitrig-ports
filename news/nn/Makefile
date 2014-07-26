@@ -2,11 +2,9 @@
 
 COMMENT =		No News is Good News (Fast CLI Point & Read Newsreader)
 DISTNAME =		nn-6.7.3
-REVISION =		1
+REVISION =		2
 CATEGORIES =		news
 HOMEPAGE =		http://www.nndev.org
-
-MAINTAINER =		Aaron W. Hsu <arcfide@sacrideo.us>
 
 # 4 point NN License a la BSD but with GPL Source Restriction and Freeware
 # Requirement

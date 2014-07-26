@@ -3,9 +3,8 @@
 COMMENT=	role based authorization for Catalyst
 
 DISTNAME=	Catalyst-Plugin-Authorization-Roles-0.09
+REVISION=	0
 CATEGORIES=	security
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

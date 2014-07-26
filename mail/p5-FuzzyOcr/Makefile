@@ -5,14 +5,12 @@ COMMENT=		detect image spam with SpamAssassin
 V=			3.6.0.146
 DISTNAME=		fuzzyocr-$V
 PKGNAME=		p5-FuzzyOcr-$V
-REVISION=		2
+REVISION=		3
 PKG_ARCH=		*
 CATEGORIES=		mail perl5
 
 HOMEPAGE=		http://fuzzyocr.own-hero.net/
 MASTER_SITES=		http://bigio.snb.it/openbsd/distfiles/
-
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 RUN_DEPENDS=		devel/p5-MLDBM-Sync \
 			graphics/gocr \

@@ -3,7 +3,7 @@
 COMMENT=	utility to test for memory faults
 
 DISTNAME=	memtester-4.1.3
-REVISION=	0
+REVISION=	1
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://pyropus.ca/software/memtester/

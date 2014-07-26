@@ -4,7 +4,7 @@ COMMENT=	java-like zip interface
 
 DISTNAME=	zipios++-0.1.5.9+cvs.2004.02.07
 PKGNAME=	zipios++-0.1.5.9
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel archivers
 MASTER_SITES=	http://distfiles.nl/
 MASTER_SITES0=	${MASTER_SITE_GNU:=automake/}

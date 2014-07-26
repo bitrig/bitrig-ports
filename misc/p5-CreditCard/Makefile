@@ -4,6 +4,7 @@ COMMENT =	verify credit card pins
 
 MODULES =	cpan
 DISTNAME =	Business-CreditCard-0.32
+REVISION =	0
 CATEGORIES =	misc
 
 # Perl

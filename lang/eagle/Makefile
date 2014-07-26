@@ -6,9 +6,9 @@ V =		1.0
 P =		5217.20046
 DISTNAME =	eagle-${V}
 PKGNAME =	${DISTNAME}-beta30
+REVISION =	0
 CATEGORIES =	lang lang/tcl
 HOMEPAGE =	http://eagle.to/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

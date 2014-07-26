@@ -5,10 +5,10 @@ SHARED_ONLY =	Yes
 COMMENT =	confine pointer and keyboard events to a Tk window sub-tree
 
 DISTNAME =	byzi-0.1
+REVISION =	0
 SHARED_LIBS =	byzi01 0.0
 CATEGORIES =	x11
 HOMEPAGE =	http://www3.bell.net/stwo/index.html
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

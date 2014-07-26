@@ -4,12 +4,10 @@ COMMENT =	IP-Transparent Tor Hidden Service Connector
 
 V =		0.2.1
 DISTNAME =	onioncat-$V
-REVISION =	0
+REVISION =	1
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.abenteuerland.at/onioncat/
-
-MAINTAINER=	Paul Irofti <pirofti@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =		Yes

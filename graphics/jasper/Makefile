@@ -3,7 +3,7 @@
 COMMENT =	reference implementation of JPEG-2000
 
 DISTNAME =	jasper-1.900.1
-REVISION =	2
+REVISION =	3
 SHARED_LIBS =	jasper		2.1
 
 CATEGORIES =	graphics

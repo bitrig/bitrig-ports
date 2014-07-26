@@ -3,6 +3,7 @@
 COMMENT =		loads one of several alternate module implementations
 
 DISTNAME =		Module-Implementation-0.07
+REVISION =		0
 CATEGORIES =		devel
 
 # artistic 2.0

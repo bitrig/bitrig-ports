@@ -3,12 +3,10 @@
 COMMENT=		HTML, XML, SAX and Reader parser
 
 DISTNAME=		nokogiri-1.5.6
-REVISION =		2
+REVISION =		3
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://nokogiri.rubyforge.org/nokogiri
-
-MAINTAINER =		Jeremy Evans <jeremy@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

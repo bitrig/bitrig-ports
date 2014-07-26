@@ -3,7 +3,7 @@
 COMMENT=	object-oriented access to real and tied hashes
 
 DISTNAME=	Hash-AutoHash-1.12
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 
 # perl

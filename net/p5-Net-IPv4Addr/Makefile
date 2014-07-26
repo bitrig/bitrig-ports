@@ -4,7 +4,7 @@ COMMENT=	perl module for IPv4 address parsing
 
 MODULES=	cpan
 DISTNAME=	Net-IPv4Addr-0.10
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 
 # Perl

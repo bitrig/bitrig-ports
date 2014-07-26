@@ -8,7 +8,7 @@ SHARED_LIBS +=  config               9.2      # 10.3
 SHARED_LIBS +=  config++             9.2      # 10.3
 
 CATEGORIES=		devel
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://www.hyperrealm.com/libconfig/libconfig.html
 

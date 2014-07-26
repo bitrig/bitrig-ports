@@ -5,7 +5,7 @@ COMMENT =	GTK+2 engine from Fedora
 VERSION =	0.7.5
 DISTNAME =	gtk-nodoka-engine-${VERSION}
 PKGNAME =	gtk2-nodoka-engine-${VERSION}
-REVISION=	3
+REVISION=	4
 
 CATEGORIES =	x11
 

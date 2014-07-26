@@ -5,7 +5,7 @@ COMMENT=		indenter and formatter of C/C++/Java source files
 DISTNAME=		astyle_1.15.3
 PKGNAME=		${DISTNAME:S/_/-/}
 CATEGORIES=		devel
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://astyle.sourceforge.net/
 

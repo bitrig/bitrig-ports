@@ -5,12 +5,10 @@ COMMENT=		pythonic, object-oriented web development framework
 V=			2.3.0
 DISTNAME=		CherryPy-${V}
 PKGNAME=		py-cherrypy2-${V}
-REVISION=		3
+REVISION=		4
 CATEGORIES=		www
 
 HOMEPAGE=		http://www.cherrypy.org/
-
-MAINTAINER=		Martynas Venckus <martynas@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

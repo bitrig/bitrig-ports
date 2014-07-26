@@ -6,6 +6,7 @@ COMMENT=		getting started with GNOM
 
 GNOME_PROJECT=		gnome-getting-started-docs
 GNOME_VERSION=		3.12.1
+REVISION=		0
 
 # CC Attribution-ShareAlike 3.0 Unported
 PERMIT_PACKAGE_CDROM=	Yes

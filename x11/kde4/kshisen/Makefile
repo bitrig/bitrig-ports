@@ -2,6 +2,7 @@
 
 COMMENT =	solitare board KDE game based on Mah Jongg ideas
 DISTNAME =	kshisen-${MODKDE4_VERSION}
+REVISION =	0
 
 MODKDE4_USE =	games
 

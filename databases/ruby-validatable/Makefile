@@ -3,7 +3,7 @@
 COMMENT =		provide ActiveRecord looking validations
 
 DISTNAME =		validatable-1.6.7
-REVISION =		6
+REVISION =		7
 CATEGORIES =		databases
 
 HOMEPAGE =		http://validatable.rubyforge.org/

@@ -4,7 +4,7 @@ COMMENT=	Russian language stemming
 
 MODULES=	cpan
 DISTNAME=	Lingua-Stem-Ru-0.01
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

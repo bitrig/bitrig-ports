@@ -4,7 +4,7 @@ COMMENT =	OpenGL window and compositing manager
 
 V =		0.8.8
 DISTNAME =	compiz-${V}
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS =	decoration	1.0
 

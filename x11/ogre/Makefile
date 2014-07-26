@@ -12,6 +12,7 @@ COMMENT-samples =	3D rendering engine, demos
 V =			1.9.0
 DISTNAME =		ogre-$V
 PKGNAME-main =		ogre-${V}
+REVISION =		0
 PKGNAME-samples =	ogre-samples-${V}
 
 MULTI_PACKAGES =	-main -samples
@@ -27,8 +28,6 @@ SHARED_LIBS +=  OgreVolume                0.0 # 1.9
 CATEGORIES =		x11
 
 HOMEPAGE =		http://www.ogre3d.org
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

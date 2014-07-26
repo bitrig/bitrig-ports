@@ -3,7 +3,7 @@
 COMMENT=	resolver library used to communicate with a DNS server
 
 DISTNAME=	Net_DNS2-1.3.1
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
 
 MODULES=	www/pear

@@ -3,12 +3,10 @@
 COMMENT=	documentation system for C, C++, IDL and Java
 
 DISTNAME=	doc++-3.4.10
-REVISION=	5
+REVISION=	6
 CATEGORIES=	devel
 
 HOMEPAGE=	http://docpp.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c m

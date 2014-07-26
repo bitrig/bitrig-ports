@@ -5,7 +5,7 @@ CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
 DISTNAME =		kdeutils-${VERSION}
 MODKDE_VERSION =	3.5.8
-REVISION =		17
+REVISION =		18
 
 SHARED_LIBS +=	khexeditcommon       1.0      # .0.0
 SHARED_LIBS +=	kcmlaptop            1.0      # .0.0

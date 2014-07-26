@@ -3,7 +3,7 @@
 COMMENT =		c protocol buffers
 
 DISTNAME =		protobuf-c-0.15
-REVISION =		2
+REVISION =		3
 
 SHARED_LIBS =		protobuf-c 0.0	# 0.0
 
@@ -12,8 +12,6 @@ CATEGORIES =		devel
 HOMEPAGE =		https://protobuf-c.googlecode.com/
 
 MASTER_SITES =		${HOMEPAGE}/files/
-
-MAINTAINER =		Jonathon Sisson <sisson.j@gmail.com>
 
 # New BSD
 PERMIT_PACKAGE_CDROM =	Yes

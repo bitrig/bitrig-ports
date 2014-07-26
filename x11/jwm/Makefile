@@ -3,12 +3,11 @@
 COMMENT=		Joe's Window Manager
 
 DISTNAME=		jwm-2.1.0
+REVISION=		0
 
 CATEGORIES=		x11
 
 HOMEPAGE=		http://www.joewing.net/programs/jwm/
-
-MAINTAINER=		Edd Barrett <edd@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

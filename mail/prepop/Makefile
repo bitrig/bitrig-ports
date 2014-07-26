@@ -3,7 +3,7 @@
 COMMENT=	simple interactive POP3 client
 
 DISTNAME=	prepop-0.1b7
-REVISION =	3
+REVISION =	4
 CATEGORIES=	mail
 
 # GPL

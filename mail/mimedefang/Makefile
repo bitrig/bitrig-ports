@@ -3,12 +3,11 @@
 COMMENT=	mailfilter to identify and mark spam
 
 DISTNAME=	mimedefang-2.75
+REVISION=	0
 CATEGORIES=	mail
 
 HOMEPAGE=	http://www.mimedefang.org/
 MASTER_SITES=	${HOMEPAGE}static/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

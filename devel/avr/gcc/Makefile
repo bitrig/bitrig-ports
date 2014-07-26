@@ -10,7 +10,7 @@ WANTLIB=		c gmp mpfr
 
 EXTRACT_SUFX=	.tar.bz2
 PKGNAME=	avr-gcc-${V}
-REVISION=	1
+REVISION=	2
 DISTFILES=	gcc-core-${V}${EXTRACT_SUFX} \
 		gcc-g++-${V}${EXTRACT_SUFX}
 #EXTRACT_ONLY=	${DISTFILES}

@@ -5,14 +5,12 @@ COMMENT=	control a ribbon to avoid hitting walls
 V=		1.0
 DISTNAME= 	glsfcave-$V-mitl
 PKGNAME=	glsfcave-$V
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	http://user.ecc.u-tokyo.ac.jp/~s081016/glsfcave/
 MASTER_SITES=	${HOMEPAGE}
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

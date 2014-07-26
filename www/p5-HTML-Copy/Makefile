@@ -4,9 +4,8 @@ COMMENT=	copy a HTML file without breaking links
 
 MODULES=	cpan
 DISTNAME =	HTML-Copy-1.31
+REVISION =	0
 CATEGORIES=	www
-
-MAINTAINER=	Girish Venkatachalam <girish1729@gmail.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

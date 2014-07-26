@@ -3,9 +3,8 @@
 COMMENT=		framework for Model Driven Software Development
 
 DISTNAME=		rgen-0.6.6
+REVISION=		0
 CATEGORIES=		devel textproc
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

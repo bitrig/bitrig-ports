@@ -5,12 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	simple login manager
 
 DISTNAME=	slim-1.3.6
-REVISION=	5
+REVISION=	6
 
 SHARED_LIBS=	slim	0.0 # 1.3
 
 CATEGORIES=	x11
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 HOMEPAGE=	http://slim.berlios.de/
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=slim.berlios/}

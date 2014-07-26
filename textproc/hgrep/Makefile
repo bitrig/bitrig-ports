@@ -3,12 +3,10 @@
 COMMENT=		grep wrapper with search highlighting
 
 DISTNAME=		hgrep-19991004
-REVISION =		0
+REVISION =		1
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://www.acme.com/software/hgrep/
-
-MAINTAINER=		Nick Nauwelaerts <nick@nauwelaerts.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

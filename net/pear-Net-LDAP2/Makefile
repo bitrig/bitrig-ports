@@ -4,7 +4,7 @@ COMMENT=	PHP classes for LDAP, based on Net::LDAP
 
 DISTNAME=	Net_LDAP2-2.0.12
 CATEGORIES=	net
-REVISION=	0
+REVISION=	1
 
 MODULES=	lang/php www/pear
 

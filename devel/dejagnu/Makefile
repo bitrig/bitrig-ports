@@ -3,7 +3,7 @@
 COMMENT=	framework to test programs
 
 DISTNAME=	dejagnu-1.5
-REVISION =	1
+REVISION =	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=dejagnu/}
 

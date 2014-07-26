@@ -4,7 +4,7 @@
 COMMENT=	dino puzzle game for X11
 
 DISTNAME=	xdino-5.5.2
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games
 
 # License: BSD

@@ -3,11 +3,10 @@
 COMMENT=	mailing list manager
 
 DISTNAME=	mlmmj-1.2.18.1
+REVISION=	0
 CATEGORIES=    	mail
 
 HOMEPAGE=	http://mlmmj.org/
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

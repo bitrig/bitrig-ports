@@ -3,10 +3,9 @@
 COMMENT =		simple creation of pcap files from code
 
 DISTNAME =		Net-PcapWriter-0.712
+REVISION =		0
 
 CATEGORIES =		net
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

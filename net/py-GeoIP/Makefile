@@ -5,11 +5,10 @@ COMMENT =		GeoIP Python API
 MODPY_EGG_VERSION =	1.2.9
 DISTNAME =		GeoIP-${MODPY_EGG_VERSION}
 PKGNAME =		py-GeoIP-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		net
 
 HOMEPAGE =		http://dev.maxmind.com/geoip/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # LGPL v2.1
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,7 +4,7 @@ COMMENT= 	creating and updating Bugzilla bugs
 
 MODULES=	cpan
 DISTNAME=	WWW-Bugzilla-0.8
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 # perl

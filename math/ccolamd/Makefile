@@ -4,13 +4,11 @@ COMMENT =	library for column approximate minimum degree ordering
 
 DISTNAME =	CCOLAMD-2.7.4
 PKGNAME = 	${DISTNAME:L}
-REVISION =	0
+REVISION =	1
 SHARED_LIBS +=  ccolamd	0.0
 CATEGORIES =	math
 
 HOMEPAGE =	http://www.cise.ufl.edu/research/sparse/ccolamd/
-
-MAINTAINER =	Paul Irofti <pirofti@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM =		Yes

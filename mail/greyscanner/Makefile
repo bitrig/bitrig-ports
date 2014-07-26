@@ -3,10 +3,9 @@
 COMMENT =	greytrapping daemon to complement OpenBSD spamd
 
 DISTNAME =	greyscanner-1.02
+REVISION =	0
 CATEGORIES =	mail
 HOMEPAGE =	https://bitbucket.org/bonetruck/greyscanner/
-
-MAINTAINER =	Jim Razmus II <jim@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

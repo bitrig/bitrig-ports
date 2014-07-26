@@ -2,7 +2,7 @@
 
 COMMENT =	C++ toolkit for GUI
 CATEGORIES =	devel
-REVISION=	0
+REVISION=	1
 
 DISTNAME =	fox-1.6.49
 
@@ -10,7 +10,6 @@ SHARED_LIBS +=	FOX-1.6              2.1      # .0.49
 SHARED_LIBS +=	CHART-1.6            1.1      # .0.49
 MASTER_SITES =	http://ftp.fox-toolkit.org/pub/
 HOMEPAGE =	http://www.fox-toolkit.org/
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 CONFIGURE_STYLE =	gnu
 

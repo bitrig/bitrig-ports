@@ -3,6 +3,7 @@
 COMMENT =		Comonad transformers
 
 DISTNAME =		comonad-transformers-3.0.3
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

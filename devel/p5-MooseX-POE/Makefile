@@ -3,6 +3,7 @@
 COMMENT=		the Illicit Love Child of Moose and POE
 
 DISTNAME=		MooseX-POE-0.213
+REVISION=		0
 
 CATEGORIES=		devel
 

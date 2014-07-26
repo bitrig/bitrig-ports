@@ -3,11 +3,9 @@
 COMMENT =		parser and writer for config files
 
 DISTNAME =		ConfigFile-1.1.1
-REVISION =		2
+REVISION =		3
 CATEGORIES =		devel sysutils
 HOMEPAGE =		https://github.com/jgoerzen/configfile/wiki
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

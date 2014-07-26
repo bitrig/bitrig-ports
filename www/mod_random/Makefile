@@ -2,7 +2,7 @@
 
 COMMENT=	Apache module that provides randomized services
 
-REVISION=	8
+REVISION=	9
 DISTNAME=	mod_random-1.4
 CATEGORIES=	www
 

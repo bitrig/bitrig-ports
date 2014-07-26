@@ -3,11 +3,10 @@
 COMMENT=	X Render extension test suite
 
 DISTNAME=	rendercheck-1.4
+REVISION=	0
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.freedesktop.org/
-
-MAINTAINER=	Matthieu Herrb <matthieu@openbsd.org>
 
 # X11/MIT
 PERMIT_PACKAGE_CDROM=	Yes

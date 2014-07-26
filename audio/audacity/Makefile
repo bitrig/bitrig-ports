@@ -5,7 +5,7 @@ COMMENT=	free audio editor
 V=		1.3.9
 DISTNAME=	audacity-minsrc-${V}
 PKGNAME=	audacity-${V}
-REVISION=	6
+REVISION=	7
 CATEGORIES=	audio
 
 EXTRACT_SUFX=	.tar.bz2

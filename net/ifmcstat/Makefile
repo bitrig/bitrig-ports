@@ -5,13 +5,11 @@ BROKEN=		multicast address handling in the kernel has changed
 COMMENT =		show Ethernet Multicast memberships
 
 DISTNAME =		ifmcstat-1.0
-REVISION =		1
+REVISION =		2
 CATEGORIES =		net
 
 HOMEPAGE =		http://opengrok.netbsd.org/source/xref/usr.sbin/ifmcstat/
 MASTER_SITES =		http://www.weirdnet.nl/openbsd/ports/dist/
-
-MAINTAINER =		Paul de Weerd <weerd@weirdnet.nl>
 
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes

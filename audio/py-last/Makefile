@@ -6,11 +6,9 @@ MODPY_EGG_VERSION =	0.5.11
 DISTNAME =		pylast-${MODPY_EGG_VERSION}
 PKGNAME =		py-last-${MODPY_EGG_VERSION}
 CATEGORIES =		audio net
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		https://code.google.com/p/pylast/
-
-MAINTAINER = 		Edd Barrett <edd@openbsd.org>
 
 # Apache 2.0
 PERMIT_PACKAGE_CDROM =	Yes

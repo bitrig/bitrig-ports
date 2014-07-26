@@ -5,11 +5,9 @@ SHARED_ONLY=	Yes
 COMMENT=	XMMS input plugin for playing SID files
 
 DISTNAME=	xmms-sid-0.7.4
-REVISION=	8
+REVISION=	9
 CATEGORIES=	audio
 HOMEPAGE=	http://www.tnsp.org/xmms-sid.php
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT =	astronomic computations as a library
 
 DISTNAME =	libnova-0.13.0
-REVISION=	0
+REVISION=	1
 SHARED_LIBS +=	nova	1.0	# .0.0
 CATEGORIES =	astro devel
 

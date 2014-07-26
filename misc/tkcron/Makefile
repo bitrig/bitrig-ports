@@ -3,9 +3,8 @@
 COMMENT =	Tk frontend to crontab
 
 DISTNAME =	tkcron-2.12
-REVISION =	1
+REVISION =	2
 CATEGORIES =	misc 
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -5,7 +5,7 @@ COMMENT =	Python library for working with CouchDB
 MODPY_EGG_VERSION = 0.9
 DISTNAME =	CouchDB-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	databases devel
 

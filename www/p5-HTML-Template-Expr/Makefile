@@ -4,11 +4,10 @@ COMMENT=	use HTML Templates which allows expressions
 
 MODULES=	cpan
 DISTNAME=	HTML-Template-Expr-0.07
+REVISION=	0
 CATEGORIES=	www
 
 HOMEPAGE=	http://sourceforge.net/projects/html-template/
-
-MAINTAINER=	Jim Dew <jdew@yggdrasil.ca>
 
 # GPL/Artistic license
 PERMIT_PACKAGE_CDROM=	Yes

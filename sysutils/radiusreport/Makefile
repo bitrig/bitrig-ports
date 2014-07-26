@@ -3,7 +3,7 @@
 COMMENT=	RADIUS log file analysis tool
 
 DISTNAME=	radiusreport-0.3b6
-REVISION =	0
+REVISION =	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.pgregg.com/projects/radiusreport/
 EXTRACT_SUFX=	.tar

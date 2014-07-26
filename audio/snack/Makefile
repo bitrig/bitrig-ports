@@ -9,12 +9,11 @@ PKGNAME-main =  snack-${MODPY_EGG_VERSION}
 PKGNAME-python = py-snack-${MODPY_EGG_VERSION}
 CATEGORIES =	audio
 
-REVISION-main = 4
-REVISION-python =1
+REVISION-main = 5
+REVISION-python =2
 
 HOMEPAGE = 	http://www.speech.kth.se/snack
 MASTER_SITES =	${HOMEPAGE}/dist/
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD/GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

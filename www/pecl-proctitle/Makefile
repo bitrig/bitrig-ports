@@ -3,6 +3,7 @@
 COMMENT=	PHP support for setproctitle
 
 DISTNAME=	proctitle-0.1.2
+REVISION=	0
 
 # PHP
 PERMIT_PACKAGE_CDROM=	Yes

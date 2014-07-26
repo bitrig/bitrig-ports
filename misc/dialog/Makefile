@@ -5,6 +5,7 @@ COMMENT =	curses widgets (menus, lists, etc) for shell scripts
 V =		1.2-20130928
 DISTNAME =	dialog-${V}
 PKGNAME =	dialog-${V:S/-/./}
+REVISION =	0
 
 EXTRACT_SUFX =	.tgz
 

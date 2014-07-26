@@ -3,7 +3,7 @@
 COMMENT =	reads and writes metadata/tags for many audio formats
 
 VERSION =	0.6.0
-REVISION =	0
+REVISION =	1
 DISTNAME =	taglib-ruby-${VERSION}
 PKGNAME =	taglib-${VERSION}
 CATEGORIES =	audio

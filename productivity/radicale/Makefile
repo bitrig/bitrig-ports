@@ -3,14 +3,12 @@
 COMMENT =	simple CalDAV calendar server
 
 MODPY_EGG_VERSION = 0.8
-REVISION =	0
+REVISION =	1
 DISTNAME =	Radicale-${MODPY_EGG_VERSION}
 PKGNAME =	${DISTNAME:L}
 CATEGORIES =	productivity net
 
 HOMEPAGE =	http://radicale.org/
-
-MAINTAINER =	Sergey Bronnikov <estetus@gmail.com>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

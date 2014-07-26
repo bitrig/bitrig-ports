@@ -3,7 +3,7 @@
 COMMENT=		GUI for synergy
 
 DISTNAME=		qsynergy-0.9.1
-REVISION=		2
+REVISION=		3
 CATEGORIES=		net x11
 
 HOMEPAGE=		http://sourceforge.net/projects/qsynergy/

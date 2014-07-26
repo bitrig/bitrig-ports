@@ -3,7 +3,7 @@
 COMMENT=		Qt Cryptographic Architecture, TLS plugin
 
 DISTNAME=		qca-tls-1.0
-REVISION=		11
+REVISION=		12
 CATEGORIES=		security
 
 HOMEPAGE=		http://delta.affinix.com/qca/

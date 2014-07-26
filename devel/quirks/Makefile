@@ -6,8 +6,8 @@ DISTFILES =
 
 # API.rev
 PKGNAME =	quirks-2.2
+REVISION =	0
 PKG_ARCH =	*
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

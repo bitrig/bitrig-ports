@@ -4,9 +4,8 @@ COMMENT =		hot-deployable variant of Net::Server::PreFork
 
 MODULES =		cpan
 DISTNAME =		Net-Server-SS-PreFork-0.05
-REVISION =		1
+REVISION =		2
 CATEGORIES =		net
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

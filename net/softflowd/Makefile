@@ -3,7 +3,7 @@
 COMMENT=	flow-based network traffic analyser
 
 DISTNAME=	softflowd-0.9.9
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 HOMEPAGE=	https://code.google.com/p/softflowd/

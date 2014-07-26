@@ -6,9 +6,7 @@ VERSION=		1.2.0
 DISTNAME=		org.jayasoft.ivyde.eclipse_${VERSION}
 PKGNAME=		eclipse-plugin-ivyde-${VERSION}
 CATEGORIES+=		java
-REVISION =		1
-
-MAINTAINER=		Matthias Kilian <kili@openbsd.org>
+REVISION =		2
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

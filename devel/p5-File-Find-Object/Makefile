@@ -3,12 +3,11 @@
 COMMENT =		object oriented File::Find replacement
 
 VERSION =		0.2.7
+REVISION =		0
 DISTNAME =		File-Find-Object-v${VERSION}
 PKGNAME =		p5-File-Find-Object-${VERSION}
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,11 +4,9 @@ COMMENT=	perl module to build DOM Level 1 structures
 
 MODULES=	cpan
 DISTNAME=	XML-DOM-1.44
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 RUN_DEPENDS=	textproc/p5-XML-Parser>=2.30	\
 		textproc/p5-Libxml		\

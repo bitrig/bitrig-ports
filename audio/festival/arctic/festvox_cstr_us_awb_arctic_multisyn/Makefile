@@ -3,7 +3,7 @@
 COMMENT=	Scottish English male speaker (AWB), cstr
 DISTNAME=	festvox_cstr_us_awb_arctic_multisyn-1.0
 PKGNAME=	${DISTNAME}
-REVISION=	1
+REVISION=	2
 DIST_SUBDIR=	festival
 
 RUN_DEPENDS=	${ARCTIC_US_DEPS}

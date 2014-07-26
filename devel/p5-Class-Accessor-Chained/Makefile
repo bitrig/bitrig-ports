@@ -4,11 +4,9 @@ COMMENT=		make chained accessors
 
 MODULES=		cpan
 DISTNAME=		Class-Accessor-Chained-0.01
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 USE_GROFF =		Yes
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,6 +3,7 @@
 COMMENT =		fast rendering of common datatypes
 
 DISTNAME =		blaze-textual-0.2.0.8
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

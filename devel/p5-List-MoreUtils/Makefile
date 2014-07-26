@@ -5,11 +5,9 @@ SHARED_ONLY =		Yes
 COMMENT =		perl5 extra list utilities
 
 DISTNAME =		List-MoreUtils-0.33
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

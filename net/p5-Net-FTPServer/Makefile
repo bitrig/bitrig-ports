@@ -4,11 +4,9 @@ COMMENT=	secure, extensible and configurable Perl FTPd
 
 MODULES=	cpan
 DISTNAME=	Net-FTPServer-1.122
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 USE_GROFF =	Yes
-
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	archivers/p5-Archive-Zip \

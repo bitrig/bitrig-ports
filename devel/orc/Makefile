@@ -3,6 +3,7 @@
 COMMENT=	library and toolset to operate arrays of data
 
 DISTNAME=	orc-0.4.19
+REVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/orc/
 
@@ -10,8 +11,6 @@ SHARED_LIBS=	orc-0.4		5.0 \
 		orc-test-0.4	4.0
 
 HOMEPAGE=	http://code.entropywave.com/projects/orc/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

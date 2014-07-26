@@ -3,7 +3,7 @@
 COMMENT=	AVR simulator
 
 DISTNAME=	simulavr-0.1.2.6
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.nongnu.org/simulavr/

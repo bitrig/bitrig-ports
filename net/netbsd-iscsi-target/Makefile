@@ -4,11 +4,9 @@ COMMENT=	iSCSI (RFC 3720) target from NetBSD
 
 DISTNAME=	netbsd-iscsi-20111006
 PKGNAME=	${DISTNAME:S/-iscsi/-iscsi-target/}
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	net sysutils
-
-MAINTAINER=	Roman Kravchuk <kravchuk.kp@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

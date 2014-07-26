@@ -3,9 +3,8 @@
 COMMENT =	PostgreSQL database interface for ruby
 
 DISTNAME =	pg-0.17.1
+REVISION =	0
 CATEGORIES =	databases
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # Ruby/BSD License
 PERMIT_PACKAGE_CDROM =	Yes

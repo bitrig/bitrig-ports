@@ -4,6 +4,7 @@ COMMENT=		parse regular expressions
 
 MODULES=		cpan
 DISTNAME=		PPIx-Regexp-0.034
+REVISION=		0
 CATEGORIES=		textproc
 
 # perl

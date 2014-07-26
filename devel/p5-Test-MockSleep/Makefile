@@ -4,6 +4,7 @@ COMMENT =	overrides perl's sleep call
 
 MODULES =	cpan
 DISTNAME =	Test-MockSleep-0.02
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

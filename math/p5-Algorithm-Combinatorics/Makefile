@@ -5,12 +5,10 @@ SHARED_ONLY =		yes
 COMMENT =		efficient generation of combinatorial sequences
 
 DISTNAME =		Algorithm-Combinatorics-0.27
-REVISION =		1
+REVISION =		2
 CATEGORIES =		math
 
 CPAN_AUTHOR =		FXN
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

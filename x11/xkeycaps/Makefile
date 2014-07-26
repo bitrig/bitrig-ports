@@ -3,13 +3,12 @@
 COMMENT=	keymap editor for the X window system
 
 DISTNAME=	xkeycaps-2.46
-REVISION=	2
+REVISION=	3
 CATEGORIES=	x11 sysutils
 
 MASTER_SITES=	http://www.jwz.org/xkeycaps/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER= 	Hans Insulander <hin@stacken.kth.se>
 HOMEPAGE=http://www.jwz.org/xkeycaps/
 
 # BSD

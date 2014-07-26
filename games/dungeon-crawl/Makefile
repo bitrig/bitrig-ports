@@ -9,7 +9,7 @@ DISTNAME=	dc400b26-src
 EXTRACT_SUFX=	.tbz2
 V=		4.0.0b26
 PKGNAME=	dungeon-crawl-$V
-REVISION=	0
+REVISION=	1
 
 BUILD_DEPENDS+=	archivers/bzip2
 

@@ -5,13 +5,12 @@ COMMENT =	ASN.1 library for Python
 MODPY_EGG_VERSION =	0.1.7
 DISTNAME =		pyasn1-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/py/py-/}
+REVISION =		0
 CATEGORIES =		devel
 PKG_ARCH =		*
 EPOCH =			0
 
 HOMEPAGE =		http://pyasn1.sourceforge.net/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # BSD 2-Clause
 PERMIT_PACKAGE_CDROM =	Yes

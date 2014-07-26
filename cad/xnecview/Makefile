@@ -3,7 +3,7 @@
 COMMENT=	NEC2 antenna simulator visualizer
 
 DISTNAME=	xnecview-1.36
-REVISION=	0
+REVISION=	1
 EXTRACT_SUFX=	.tgz
 
 MASTER_SITES=	http://wwwhome.cs.utwente.nl/~ptdeboer/ham/xnecview/

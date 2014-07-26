@@ -3,9 +3,8 @@
 COMMENT=	automated domain testing tool
 
 DISTNAME=	doc-2.2.3
+REVISION=	0
 CATEGORIES=    	net
-
-MAINTAINER=	Jakob Schlyter <jakob@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

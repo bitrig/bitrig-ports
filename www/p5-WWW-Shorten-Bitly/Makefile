@@ -3,6 +3,7 @@
 COMMENT=		interface to bit.ly shortening site
 
 DISTNAME=		WWW-Shorten-Bitly-1.14
+REVISION=		0
 CATEGORIES=		www
 
 # Perl

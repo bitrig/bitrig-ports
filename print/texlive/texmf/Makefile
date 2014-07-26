@@ -9,8 +9,11 @@ COMMENT-buildset =	smallest texlive texmf for building ports
 # If you move things out of another texmf into the buildset, don't forget to:
 #   * Update the buildset conflict markers in PLIST-buildset.
 #   * Add a more restrictive RUN_DEPEND upon the buildset.
-REVISION-buildset =	2
-REVISION-main =		1
+REVISION-context =	0
+REVISION-docs =		0
+REVISION-full =		0
+REVISION-buildset =	3
+REVISION-main =		2
 
 DISTNAME =		texlive-${DIST_V}-texmf
 MASTER_SITES0 =		http://spacehopper.org/mirrors/ \

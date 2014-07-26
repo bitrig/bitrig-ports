@@ -3,6 +3,7 @@
 COMMENT=	rather neat animated clock
 
 DISTNAME=	xdaliclock-2.36
+REVISION=	0
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.jwz.org/xdaliclock/

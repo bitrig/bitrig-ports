@@ -4,6 +4,7 @@ COMMENT=	find the country where IP address/hostname originates from
 
 V=		1.6.2
 DISTNAME=	GeoIP-$V
+REVISION=	0
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		geolite-data-20140709.tar.bz2:0
 

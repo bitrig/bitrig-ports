@@ -3,13 +3,11 @@
 COMMENT=	Qt Cryptographic Architecture
 
 DISTNAME=	qca-1.0
-REVISION=	7
+REVISION=	8
 CATEGORIES=	security
 SHARED_LIBS=	qca	2.0
 
 HOMEPAGE=	http://delta.affinix.com/qca/
-
-MAINTAINER=	Gerardo Santana Gomez Garrido <gerardo.santana@gmail.com>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes

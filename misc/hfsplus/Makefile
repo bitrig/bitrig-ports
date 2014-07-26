@@ -5,7 +5,7 @@ COMMENT=	hfsplus filesystem access tool
 VERSION=	1.0.4
 DISTNAME=	hfsplus_${VERSION}
 PKGNAME=	hfsplus-${VERSION}
-REVISION=	4
+REVISION=	5
 SHARED_LIBS=	hfsp	0.0
 
 CATEGORIES=	misc 

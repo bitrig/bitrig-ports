@@ -3,7 +3,7 @@
 COMMENT=	x10 firecracker utility
 
 DISTNAME=	flipit-0.3.5
-REVISION=	0
+REVISION=	1
 CATEGORIES=	comms
 
 MASTER_SITES=	http://www.lickey.com/flipit/dist/

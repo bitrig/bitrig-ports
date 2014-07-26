@@ -5,6 +5,7 @@ COMMENT =	integrated development environment for KDE 4
 KDEV_V =	4.6.0
 KDEVPLAT_V =	1.6.0
 DISTNAME =	kdevelop-${KDEV_V}
+REVISION =	0
 HOMEPAGE =	http://www.kdevelop.org/
 
 SHARED_LIBS =	kdev4cmakecommon	0.0

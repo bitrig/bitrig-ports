@@ -4,11 +4,9 @@ COMMENT =		template based module starter for CGI apps
 
 MODULES =		cpan
 DISTNAME =		Module-Starter-Plugin-CGIApp-0.30
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 CPAN_AUTHOR =		JALDHAR
-
-MAINTAINER =		James Wright <jamesw@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =   Yes

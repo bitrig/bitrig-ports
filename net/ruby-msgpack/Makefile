@@ -3,11 +3,10 @@
 COMMENT =	binary-based efficient object serialization library
 
 DISTNAME =	msgpack-0.5.8
+REVISION =	0
 CATEGORIES =	net devel
 
 HOMEPAGE =	http://msgpack.org/
-
-MAINTAINER =	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Apache2
 PERMIT_PACKAGE_CDROM =	Yes

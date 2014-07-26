@@ -8,15 +8,14 @@ DISTNAME =		keybinder-0.3.0
 PKGNAME-main =		${DISTNAME}
 PKGNAME-python =	py-${DISTNAME}
 
-REVISION-main = 	3
-REVISION-python =	3
+REVISION-main = 	4
+REVISION-python =	4
 
 CATEGORIES =		x11 devel
 
 SHARED_LIBS =		keybinder		0.0	# 0.0
 
 HOMEPAGE =		https://github.com/engla/keybinder
-MAINTAINER =		Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+ 
 PERMIT_PACKAGE_CDROM =	Yes

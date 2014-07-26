@@ -4,6 +4,7 @@ COMMENT=	TFTP client class
 
 MODULES=	cpan
 DISTNAME=	Net-TFTP-0.19
+REVISION=	0
 CATEGORIES=	net
 
 # Perl

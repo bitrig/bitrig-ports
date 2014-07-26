@@ -5,12 +5,10 @@ SHARED_ONLY=	Yes
 COMMENT=	MSN style 'toaster' popups plugin for Pidgin
 
 DISTNAME=	pidgin-guifications-2.16
-REVISION=	9
+REVISION=	10
 CATEGORIES=	x11
 
 HOMEPAGE=	http://plugins.guifications.org/trac/wiki/Guifications
-
-MAINTAINER=	Thomas Wood <grand.edgemaster@gmail.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

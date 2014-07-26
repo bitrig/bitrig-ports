@@ -3,7 +3,7 @@
 COMMENT=		handle .desktop files
 
 DISTNAME=		File-DesktopEntry-0.04
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # perl

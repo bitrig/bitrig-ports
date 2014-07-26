@@ -3,7 +3,7 @@
 COMMENT=	NFS auditing tool
 
 PKGNAME=	nfsshell-1.0
-REVISION =	2
+REVISION =	3
 DISTNAME=	nfsshell
 CATEGORIES=	security
 

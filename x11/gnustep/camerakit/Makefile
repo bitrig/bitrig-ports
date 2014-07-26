@@ -3,7 +3,7 @@
 COMMENT =	GNUstep wrapper around libgphoto2
 
 V =		20041011
-REVISION =	1
+REVISION =	2
 DISTNAME =	CameraKit-${V}
 PKGNAME =	gnustep-camerakit-${V}
 EXTRACT_SUFX =	.tar.bz2

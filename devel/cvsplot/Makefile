@@ -3,7 +3,7 @@
 COMMENT=		CVS-managed project analyzer
 
 DISTNAME=		cvsplot-1.6.5
-REVISION =		0
+REVISION =		1
 CATEGORIES=		devel
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cvsplot/}

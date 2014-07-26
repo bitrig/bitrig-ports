@@ -3,7 +3,7 @@
 COMMENT=		grind nice listings of programs
 
 DISTNAME=		vgrind-1.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		textproc
 
 # 3-clause BSD

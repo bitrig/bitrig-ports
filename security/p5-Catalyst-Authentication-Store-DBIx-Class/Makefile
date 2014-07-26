@@ -4,9 +4,8 @@ COMMENT =	storage class for Catalyst Authentication using DBIx::Class
 
 MODULES =	cpan
 DISTNAME =	Catalyst-Authentication-Store-DBIx-Class-0.1502
+REVISION =	0
 CATEGORIES =	security
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

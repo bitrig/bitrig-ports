@@ -3,10 +3,8 @@
 COMMENT=		fast base64 encodings and decoding for ByteStrings
 
 DISTNAME=		base64-bytestring-1.0.0.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes

@@ -2,6 +2,7 @@
 
 COMMENT=	part of speech lexicons and ngram from English
 DISTNAME=	festlex_POSLEX
+REVISION=	0
 
 do-install:
 	${INSTALL_DATA_DIR} ${LEX_PRE}/dicts

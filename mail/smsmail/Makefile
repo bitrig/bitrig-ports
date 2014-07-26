@@ -3,7 +3,7 @@
 COMMENT=	LDAP enabled MDA to deliver mails as SMS
 
 DISTNAME=	smsmail-1.0.2
-REVISION=	4
+REVISION=	5
 
 CATEGORIES=    	mail
 

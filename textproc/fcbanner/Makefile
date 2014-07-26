@@ -3,6 +3,7 @@
 COMMENT =	fontconfig-based alternative to banner(1)
 
 PKGNAME =	fcbanner-0.0.20040302
+REVISION =	0
 DISTFILES =	fcbanner.c
 
 CATEGORIES =	textproc

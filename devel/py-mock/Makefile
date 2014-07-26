@@ -5,6 +5,7 @@ COMMENT=		python mocking and patching library for testing
 MODPY_EGG_VERSION=	1.0.1
 DISTNAME=		mock-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
+REVISION=		0
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.voidspace.org.uk/python/mock/

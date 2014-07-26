@@ -3,11 +3,10 @@
 COMMENT=	tools for building tcp socket client/servers
 
 DISTNAME=	ucspi-tcp-0.88
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 HOMEPAGE=	http://cr.yp.to/ucspi-tcp.html
-MAINTAINER=	Jan Klemkow <j.klemkow@wemelug.de>
 
 # Public domain: http://cr.yp.to/distributors.html
 PERMIT_PACKAGE_CDROM=	Yes

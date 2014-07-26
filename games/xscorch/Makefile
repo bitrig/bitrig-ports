@@ -3,7 +3,7 @@
 COMMENT=		Scorched Earth-clone
 
 DISTNAME=		xscorch-0.2.1-pre2
-REVISION=		4
+REVISION=		5
 CATEGORIES=		games
 
 HOMEPAGE=		http://www.xscorch.org/

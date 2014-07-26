@@ -4,10 +4,8 @@ COMMENT=	easier relationship specification in CDBI::L
 
 MODULES=	cpan
 DISTNAME=	Class-DBI-Loader-Relationship-1.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

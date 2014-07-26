@@ -4,15 +4,12 @@ COMMENT=		compiler for the GObject type system
 
 GNOME_PROJECT=		vala
 GNOME_VERSION=		0.24.0
-REVISION=		0
+REVISION=		1
 
 API_V=			0.24
 SHARED_LIBS +=  vala-0.24            0.0      # 0.0
 
 CATEGORIES=		lang
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

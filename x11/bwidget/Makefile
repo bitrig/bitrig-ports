@@ -5,7 +5,6 @@ COMMENT =		high-level widget set for Tcl/Tk
 DISTNAME =		bwidget-1.9.5
 CATEGORIES =		x11
 HOMEPAGE =		http://sourceforge.net/projects/tcllib/
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD style
 PERMIT_PACKAGE_CDROM =	Yes
@@ -17,7 +16,7 @@ TEST_FLAGS +=	TCLLIBPATH="${WRKSRC}"
 TEST_IS_INTERACTIVE =X11
 NO_BUILD =		Yes
 PKG_ARCH =		*
-REVISION =		0
+REVISION =		1
 
 BW_LIB_DIR =		${PREFIX}/lib/tcl/bwidget
 BW_DOC_DIR =		${PREFIX}/share/doc/bwidget

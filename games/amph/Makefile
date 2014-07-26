@@ -6,15 +6,13 @@ VERSION=	0.8.10
 DVERSION=	0.8.6
 DISTNAME=	amphetamine-${VERSION}
 PKGNAME=	amph-${VERSION}
-REVISION =	3
+REVISION =	4
 CATEGORIES=	games x11
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	http://n.ethz.ch/student/loehrerl/amph/amph.html
 
 MASTER_SITES=	http://n.ethz.ch/student/loehrerl/amph/files/
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 WANTLIB=		X11 Xext Xpm Xt c m pthread pthread-stubs \

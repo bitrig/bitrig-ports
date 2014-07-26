@@ -6,9 +6,7 @@ SHARED_ONLY =	Yes
 MODULES =	cpan
 DISTNAME =	Data-Alias-1.18
 CATEGORIES =	devel
-REVISION =	0
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
+REVISION =	1
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

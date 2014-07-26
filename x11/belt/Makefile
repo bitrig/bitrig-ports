@@ -2,7 +2,7 @@
 
 COMMENT=		Small menubar for X11 written in Perl/Tk
 DISTNAME=		belt-1.21
-REVISION=		3
+REVISION=		4
 CATEGORIES=     	x11
 
 HOMEPAGE=		http://www.stacken.kth.se/~maxz/programming.html\#belt

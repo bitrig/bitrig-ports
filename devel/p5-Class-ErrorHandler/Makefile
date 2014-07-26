@@ -4,6 +4,7 @@ COMMENT=	base class for error handling
 
 MODULES=	cpan
 DISTNAME=	Class-ErrorHandler-0.03
+REVISION=	0
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

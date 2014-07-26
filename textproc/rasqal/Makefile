@@ -3,7 +3,7 @@
 COMMENT=		RDF Query Library for Redland
 DISTNAME=		rasqal-0.9.29
 CATEGORIES=		textproc
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=	rasqal               2.0      # 3.0
 

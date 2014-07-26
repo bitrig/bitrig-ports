@@ -3,6 +3,7 @@
 COMMENT=		Gtk+ Widget for Displaying OpenStreetMap tiles
 
 DISTNAME=		osm-gps-map-1.0.1
+REVISION=		0
 CATEGORIES=		geo x11
 
 SHARED_LIBS +=  osmgpsmap-1.0             0.0 # 0.0

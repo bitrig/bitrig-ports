@@ -3,7 +3,7 @@
 COMMENT =		library to simplify writing unit tests for C applications
 
 DISTNAME =		cmockery-0.1.2
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS +=		cmockery                  0.0 # 0.0
 

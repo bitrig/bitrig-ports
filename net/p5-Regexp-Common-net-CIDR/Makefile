@@ -3,7 +3,7 @@
 COMMENT=	provide patterns for CIDR blocks
 
 MODULES=	cpan
-REVISION=	0
+REVISION=	1
 
 DISTNAME=	Regexp-Common-net-CIDR-0.02
 CATEGORIES=	net textproc

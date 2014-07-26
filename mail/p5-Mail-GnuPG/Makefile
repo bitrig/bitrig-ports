@@ -3,6 +3,7 @@
 COMMENT=	handle GnuPG-encrypted/signed messages
 
 DISTNAME=	Mail-GnuPG-0.16
+REVISION=	0
 CATEGORIES=	mail security
 
 # perl

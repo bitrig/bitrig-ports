@@ -4,10 +4,9 @@ COMMENT=	interface for providing metadata about installed packages
 
 MODULES=	cpan
 DISTNAME=	App-Info-0.57
+REVISION=	0
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

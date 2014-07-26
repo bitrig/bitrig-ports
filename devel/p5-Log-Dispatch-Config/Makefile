@@ -3,6 +3,7 @@
 COMMENT=		abstract Configurator class
 
 DISTNAME=		Log-Dispatch-Config-1.04
+REVISION=		0
 
 CATEGORIES=		devel
 

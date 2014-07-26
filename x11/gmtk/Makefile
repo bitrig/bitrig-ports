@@ -2,6 +2,7 @@
 
 COMMENT =	gnome-mplayer toolkit
 DISTNAME =	gmtk-1.0.9
+REVISION =	0
 EPOCH =		0
 
 SHARED_LIBS =	gmlib	2.0 \
@@ -10,8 +11,6 @@ SHARED_LIBS =	gmlib	2.0 \
 CATEGORIES =	x11 devel
 
 HOMEPAGE =	http://kdekorte.googlepages.com/gmtk/
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

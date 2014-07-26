@@ -3,13 +3,11 @@
 COMMENT=	simple log monitoring program
 
 DISTNAME=	swatch-3.2.3
-REVISION =	1
+REVISION =	2
 CATEGORIES=	security sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=swatch/}
 
 HOMEPAGE=	http://swatch.sourceforge.net/
-
-MAINTAINER=	Nigel Taylor <nigel@openbsd.org>
 
 RUN_DEPENDS=	devel/p5-Date-Calc \
 		devel/p5-File-Tail \

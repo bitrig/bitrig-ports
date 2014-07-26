@@ -12,8 +12,8 @@ GNOME_VERSION=	0.1.10
 PKGNAME-main=	${DISTNAME}
 PKGNAME-python=	py-gamin-${GNOME_VERSION}
 
-REVISION-main=	20
-REVISION-python=8
+REVISION-main=	21
+REVISION-python=9
 
 SHARED_LIBS +=  gamin-1              0.0      # .1.10
 SHARED_LIBS +=  fam                  1.0      # .0.0
@@ -21,8 +21,6 @@ SHARED_LIBS +=  fam                  1.0      # .0.0
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://www.gnome.org/~veillard/gamin/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes

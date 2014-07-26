@@ -2,12 +2,11 @@
 
 COMMENT =	advanced lint: statically check C programs
 DISTNAME =	splint-3.1.2
+REVISION =	0
 DISTFILES =	splint-3.1.2.src.tgz
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.splint.org/
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM =	Yes

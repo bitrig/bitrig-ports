@@ -5,6 +5,7 @@ COMMENT =	library for mozilla services metrics logging
 MODPY_EGG_VERSION = 0.9.2
 DISTNAME =	metlog-py-${MODPY_EGG_VERSION}
 PKGNAME =	py-metlog-${MODPY_EGG_VERSION}
+REVISION =	0
 
 CATEGORIES =	sysutils
 HOMEPAGE =	http://pypi.python.org/pypi/metlog-py

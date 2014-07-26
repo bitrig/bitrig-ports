@@ -4,7 +4,7 @@ COMMENT=	common automake macros for GNOME
 
 GNOME_PROJECT=	gnome-common
 GNOME_VERSION=	3.12.0
-REVISION=	2
+REVISION=	3
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

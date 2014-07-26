@@ -4,10 +4,8 @@ COMMENT=        algorithm to find good values for chart axis
 
 MODULES=	cpan
 DISTNAME=	Chart-Math-Axis-1.05
-REVISION=	0
+REVISION=	1
 CATEGORIES=     math graphics
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=   Yes

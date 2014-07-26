@@ -6,7 +6,7 @@ COMMENT=		module to fetch the size of the terminal
 
 MODULES=		cpan
 DISTNAME=		Term-Size-0.207
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 
 # Perl

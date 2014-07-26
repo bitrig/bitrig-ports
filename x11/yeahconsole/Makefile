@@ -3,10 +3,10 @@
 COMMENT =	terminal wrapper for creating drop-down consoles
 
 DISTNAME =	yeahconsole-0.3.4
+REVISION =	0
 CATEGORIES =	x11
 
 HOMEPAGE =	http://phrat.de/yeahtools.html
-MAINTAINER =	Kent R. Spillner <kspillner@acm.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

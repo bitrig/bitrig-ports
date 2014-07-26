@@ -6,6 +6,7 @@ BROKEN-sparc=	Requires v9|v9a|v9b; requested architecture is sparclite.
 V=		R15B02
 DISTNAME=	otp_src_${V}
 PKGNAME=	erlang-15b.02
+REVISION=	0
 EPOCH=		0
 CATEGORIES=	lang
 

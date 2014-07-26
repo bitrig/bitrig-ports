@@ -3,7 +3,7 @@
 COMMENT=		command line MPEG audio/video/system file toolbox
 
 DISTNAME=		mpgtx-1.3.1
-REVISION=		0
+REVISION=		1
 CATEGORIES=		multimedia sysutils
 
 HOMEPAGE=		http://mpgtx.sourceforge.net/

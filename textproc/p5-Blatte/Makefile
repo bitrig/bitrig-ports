@@ -4,7 +4,7 @@ COMMENT=	text macro/markup/template language
 
 MODULES=	cpan
 DISTNAME=	Blatte-0.9.4
-REVISION=	0
+REVISION=	1
 HOMEPAGE=	http://www.blatte.org/
 
 CATEGORIES=	textproc

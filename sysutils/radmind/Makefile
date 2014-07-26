@@ -3,12 +3,10 @@
 COMMENT=	remote administration software
 
 DISTNAME =     	radmind-1.14.1
-REVISION =	0
+REVISION =	1
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://rsug.itd.umich.edu/software/radmind/
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 # License: BSD
 PERMIT_PACKAGE_CDROM=	Yes

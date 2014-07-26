@@ -5,11 +5,10 @@ COMMENT =	MySQL backup scripts
 V =		3.0
 DISTNAME =	MySQL-zrm-${V}-release
 PKGNAME =	mysql-zrm-${V}
+REVISION =	0
 CATEGORIES =	databases perl5
 
 HOMEPAGE =	http://www.zmanda.com/
-
-MAINTAINER =	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

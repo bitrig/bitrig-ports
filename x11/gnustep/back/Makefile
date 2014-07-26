@@ -4,7 +4,7 @@ COMMENT=	GNUstep gui backend
 
 V =		0.24.0
 DISTNAME=	gnustep-back-${V}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES=	devel
 

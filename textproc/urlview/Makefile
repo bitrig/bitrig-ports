@@ -3,7 +3,7 @@
 COMMENT=	curses-based URL ripper
 
 DISTNAME=	urlview-0.9
-REVISION=	5
+REVISION=	6
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.fu-berlin.de/pub/unix/mail/mutt/contrib/ \
 		ftp://ftp.mutt.org/mutt/contrib/ \

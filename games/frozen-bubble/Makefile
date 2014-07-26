@@ -8,13 +8,12 @@ COMMENT-server =	server for the frozen-bubble bubble popping game
 VER =			2.2.0
 DISTNAME =		frozen-bubble-${VER}
 PKGNAME-main =		${DISTNAME}
-REVISION-main =		10
+REVISION-main =		11
 PKGNAME-server =	frozen-bubble-server-${VER}
-REVISION-server =	6
+REVISION-server =	7
 CATEGORIES =		games
 
 HOMEPAGE =		http://www.frozen-bubble.org
-MAINTAINER =		James Wright <jamesw@bsdhosting.co.za>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

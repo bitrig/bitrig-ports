@@ -3,11 +3,9 @@
 COMMENT=	lightweight PDF document viewer
 
 DISTNAME=	epdfview-0.1.8
-REVISION=	6
+REVISION=	7
 CATEGORIES=	print
 HOMEPAGE=	http://trac.emma-soft.com/epdfview/
-
-MAINTAINER=	Brynet <brynet@gmail.com>
 
 MASTER_SITES=	${HOMEPAGE}chrome/site/releases/
 

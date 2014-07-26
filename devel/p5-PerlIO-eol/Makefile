@@ -6,11 +6,9 @@ COMMENT=	PerlIO layer for normalizing line endings
 
 MODULES=	cpan
 DISTNAME=	PerlIO-eol-0.14
-REVISION=	4
+REVISION=	5
 CATEGORIES=	devel 
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

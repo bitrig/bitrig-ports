@@ -4,12 +4,10 @@ COMMENT=	one-player puzzle game for x11
 
 VERSION=	0.7
 DISTNAME=	gemdropx-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES=	games x11
 
 HOMEPAGE=	http://www.newbreedsoftware.com/gemdropx/
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 WANTLIB=		X11 Xext c m pthread pthread-stubs usbhid xcb \

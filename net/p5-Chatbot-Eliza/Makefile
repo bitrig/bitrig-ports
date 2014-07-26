@@ -4,10 +4,8 @@ COMMENT=	clone of the classic Eliza program
 
 MODULES=	cpan
 DISTNAME=	Chatbot-Eliza-1.04
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

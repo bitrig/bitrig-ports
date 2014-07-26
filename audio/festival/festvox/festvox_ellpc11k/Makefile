@@ -2,6 +2,7 @@
 
 COMMENT=	Castilian Spanish male speaker (EL)
 DISTNAME=	festvox_ellpc11k
+REVISION=	0
 
 PERMIT_PACKAGE_CDROM=	no fee
 

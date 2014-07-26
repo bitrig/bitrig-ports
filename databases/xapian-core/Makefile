@@ -4,7 +4,7 @@ COMMENT=	search engine library
 
 V=		1.2.15
 DISTNAME=	xapian-core-${V}
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  xapian	3.1	# .28.2
 

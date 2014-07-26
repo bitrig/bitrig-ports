@@ -4,6 +4,7 @@ COMMENT=	Perl module for SMTP with TLS/AUTH support
 
 MODULES=	cpan
 DISTNAME=	Net-SMTP-TLS-ButMaintained-0.21
+REVISION=	0
 CATEGORIES=	net mail
 
 # perl

@@ -9,10 +9,10 @@ VERSION =		3.5.10
 DISTNAME =		kdegraphics-${VERSION}
 MODKDE_VERSION =	3.5.8
 
-REVISION-main =		23
-REVISION-kamera =	13
-REVISION-kpov =		12
-REVISION-sane =		16
+REVISION-main =		24
+REVISION-kamera =	14
+REVISION-kpov =		13
+REVISION-sane =		17
 
 SEPARATE_BUILD =	flavored
 MULTI_PACKAGES =	-main -kpov -kamera -sane

@@ -4,7 +4,7 @@ COMMENT=	perl module for validating XML
 
 MODULES=	cpan
 DISTNAME=	XML-Checker-0.13
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

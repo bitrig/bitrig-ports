@@ -2,6 +2,7 @@
 
 COMMENT =	KDE KPart for viewing SVG
 DISTNAME =	svgpart-${MODKDE4_VERSION}
+REVISION =	0
 CATEGORIES =	graphics
 
 WANTLIB =  m pthread

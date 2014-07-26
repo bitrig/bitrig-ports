@@ -4,6 +4,7 @@ COMMENT=	framework for making media discovery and browsing easy
 
 GNOME_PROJECT=	grilo
 GNOME_VERSION=	0.2.10
+REVISION=	0
 API=		0.2
 SUBST_VARS=	API
 

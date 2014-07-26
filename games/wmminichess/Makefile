@@ -4,7 +4,7 @@ COMMENT=		wm-dockapp; chess game
 
 DISTNAME=		miniCHESS-0.8
 PKGNAME=		wm${DISTNAME:L}
-REVISION =		1
+REVISION =		2
 CATEGORIES=		games x11 x11/windowmaker
 
 HOMEPAGE=		http://www.foobargeek.com/miniCHESS/

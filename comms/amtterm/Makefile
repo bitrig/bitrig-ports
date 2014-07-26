@@ -6,14 +6,13 @@ COMMENT-main=	client and tools for Intel AMT serial-over-lan
 V=		1.3
 DISTNAME=	amtterm-$V
 PKGNAME-main=	amtterm-$V
+REVISION=	0
 PKGNAME-term=	amtterm-cli-$V
 MULTI_PACKAGES=	-main -term
 
 CATEGORIES=	comms sysutils net
 
 HOMEPAGE=	https://www.kraxel.org/blog/linux/amtterm/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

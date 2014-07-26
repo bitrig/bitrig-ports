@@ -3,13 +3,11 @@
 COMMENT =		fancy dd
 
 DISTNAME =		diskrescue-0.3
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://opensource.conformal.com/wiki/Disk_Rescue
-
-MAINTAINER =		Laurent Fanis <laurent.fanis@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		interprets Ruby code embedded in a text file
 
 DISTNAME=		eruby-1.0.5
-REVISION =		14
+REVISION =		15
 CATEGORIES=		textproc	
 
 SHARED_LIBS=		eruby 1.05

@@ -3,10 +3,9 @@
 COMMENT =		make common perl modules IPv6 ready by hotpatching
 
 DISTNAME =		Net-INET6Glue-0.602
+REVISION =		0
 
 CATEGORIES =		net
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

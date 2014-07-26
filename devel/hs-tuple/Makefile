@@ -3,7 +3,7 @@
 COMMENT =		various functions on tuples
 
 DISTNAME =		tuple-0.2.0.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 # BSD3

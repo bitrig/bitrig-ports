@@ -3,7 +3,7 @@
 COMMENT=	tools for handling audio-file cue sheets and toc files
 
 DISTNAME=	cuetools-1.3.1
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	audio textproc
 

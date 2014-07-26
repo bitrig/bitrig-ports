@@ -4,9 +4,8 @@ COMMENT=		pragma to use the C3 method resolution order algorithm
 
 MODULES=		cpan
 DISTNAME=		Class-C3-0.26
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

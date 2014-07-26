@@ -7,9 +7,7 @@ COMMENT=	event loop processing
 MODULES=	cpan
 DISTNAME=	Event-1.21
 CATEGORIES=	devel
-REVISION=	0
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
+REVISION=	1
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

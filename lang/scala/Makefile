@@ -4,7 +4,7 @@ COMMENT=	general purpose multi-paradigm programming language
 
 DISTNAME=	scala-2.10.1
 CATEGORIES=	lang
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.scala-lang.org/
 

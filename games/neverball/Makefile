@@ -9,15 +9,14 @@ DISTNAME =	neverball-$V
 PKGNAME-main =	neverball-$V
 PKGNAME-data =	neverball-data-$V
 EPOCH =		0
-REVISION-main = 1
+REVISION-main = 2
+REVISION-data = 0
 
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://neverball.org/
 
 MULTI_PACKAGES =-main -data
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

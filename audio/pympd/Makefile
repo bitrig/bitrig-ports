@@ -3,7 +3,7 @@
 COMMENT=		frontend to mpd written in Python
 
 DISTNAME=		pympd-0.08
-REVISION =		4
+REVISION =		5
 CATEGORIES=		audio x11
 
 HOMEPAGE=		http://pympd.sourceforge.net/

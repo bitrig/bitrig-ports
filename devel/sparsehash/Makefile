@@ -4,7 +4,7 @@ COMMENT =		memory-efficient hash_map and hash_set C++ classes
 DISTNAME =		sparsehash-2.0.2
 CATEGORIES =		devel
 HOMEPAGE =		https://sparsehash.googlecode.com/
-REVISION =		1
+REVISION =		2
 
 # 3-clause BSDL
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,7 +4,7 @@ COMMENT=	image manipulation functions for Objective Caml
 CATEGORIES=	graphics
 
 V=		4.0.1
-REVISION=	1
+REVISION=	2
 DISTNAME=	camlimages-$V
 PKGNAME=	ocaml-${DISTNAME}
 DISTFILES=	v$V.tar.gz
@@ -12,7 +12,6 @@ DISTFILES=	v$V.tar.gz
 MASTER_SITES=	https://bitbucket.org/camlspotter/camlimages/get/
 WRKDIST=	${WRKDIR}/camlspotter-camlimages-c803efa9d5d3
 
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 HOMEPAGE=	http://cristal.inria.fr/camlimages/
 
 PERMIT_PACKAGE_CDROM=	Yes

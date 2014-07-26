@@ -3,10 +3,8 @@
 COMMENT =	sqlite3 driver for swift
 
 DISTNAME =	swift-db-sqlite3-0.1.3
-REVISION =	2
+REVISION =	3
 CATEGORIES =	databases
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

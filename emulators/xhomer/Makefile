@@ -6,7 +6,7 @@ COMMENT=		DEC Professional 350 emulator based on SIMH
 VERSION=		9-16-06
 DISTNAME=		xhomer-${VERSION}
 PKGNAME=		xhomer-${VERSION:S/-/./g}
-REVISION=		1
+REVISION=		2
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		emulators
 

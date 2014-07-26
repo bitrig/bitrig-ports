@@ -5,13 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	input method data tables for scim
 
 DISTNAME=	scim-tables-0.5.8
-REVISION=	6
+REVISION=	7
 
 CATEGORIES=	inputmethods chinese japanese korean
 
 HOMEPAGE=	http://www.scim-im.org/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

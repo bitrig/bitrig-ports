@@ -3,7 +3,7 @@
 COMMENT =	generate and parse Excel compatible spreadsheets
 
 DISTNAME =	spreadsheet-0.6.5.0
-REVISION=		2
+REVISION=		3
 CATEGORIES =	misc
 
 # GPLv3

@@ -3,11 +3,10 @@
 COMMENT =		low-level binding to libpq
 
 DISTNAME =		postgresql-libpq-0.9.0.1
+REVISION =		0
 CATEGORIES =		databases
 
 HOMEPAGE =		https://github.com/lpsmith/postgresql-libpq
-
-MAINTAINER =		David Schaefer <dawedawe@gmx.de>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

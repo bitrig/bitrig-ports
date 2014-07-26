@@ -4,6 +4,7 @@ COMMENT-main=	XML security library
 COMMENT-docs=	XML security library documentation
 
 VERSION=	1.2.19
+REVISION=	0
 DISTNAME=	xmlsec1-${VERSION}
 PKGNAME-main=	xmlsec-${VERSION}
 PKGNAME-docs=	xmlsec-docs-${VERSION}

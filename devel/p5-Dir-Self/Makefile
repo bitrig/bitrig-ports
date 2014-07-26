@@ -4,6 +4,7 @@ COMMENT =	__DIR__ constant for the directory your source file is in
 
 MODULES =	cpan
 DISTNAME =	Dir-Self-0.11
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

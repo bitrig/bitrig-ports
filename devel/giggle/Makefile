@@ -4,14 +4,12 @@ COMMENT=	gtk-based git repository viewer
 
 GNOME_VERSION=	0.6.2
 GNOME_PROJECT=	giggle
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	devel x11
 
 SHARED_LIBS +=  giggle               0.0      # 0.0
 SHARED_LIBS +=  giggle-git           0.0      # 0.0
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

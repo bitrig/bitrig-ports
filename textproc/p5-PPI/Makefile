@@ -4,6 +4,7 @@ COMMENT=		parse, analyze and manipulate Perl
 
 MODULES=		cpan
 DISTNAME=		PPI-1.215
+REVISION=		0
 CATEGORIES=		textproc
 
 # perl

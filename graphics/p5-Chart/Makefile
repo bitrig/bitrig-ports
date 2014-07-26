@@ -3,7 +3,7 @@
 COMMENT=	Charting library for Perl
 
 DISTNAME=	Chart-2.4.1
-REVISION=	2
+REVISION=	3
 CATEGORIES=	graphics
 
 RUN_DEPENDS=	graphics/p5-GD

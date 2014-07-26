@@ -3,7 +3,7 @@
 COMMENT=		bridge that allows POE to be driven by Tk
 
 DISTNAME=		POE-Loop-Tk-1.302
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 
 MODULES=		cpan

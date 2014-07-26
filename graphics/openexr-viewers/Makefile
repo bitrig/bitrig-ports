@@ -4,7 +4,7 @@ COMMENT =		viewers for OpenEXR
 DISTNAME =		openexr_viewers-1.0.1
 PKGNAME =		${DISTNAME:S/_/-/}
 
-REVISION =		3
+REVISION =		4
 
 CATEGORIES =		graphics
 HOMEPAGE =		http://www.openexr.com/

@@ -5,7 +5,7 @@ HOMEPAGE=	http://www.ladspa.org/
 CATEGORIES=	audio devel
 
 V=		1.13
-REVISION=	1
+REVISION=	2
 
 SHARED_ONLY=	Yes
 DISTNAME=	ladspa_sdk_${V}

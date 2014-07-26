@@ -4,9 +4,8 @@ COMMENT=	compare numbers
 
 MODULES=	cpan
 DISTNAME=	Number-Compare-0.03
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

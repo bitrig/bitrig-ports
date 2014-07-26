@@ -3,12 +3,10 @@
 COMMENT =	very simple RubyGems sandbox
 
 DISTNAME =	isolate-3.2.1
-REVISION =	3
+REVISION =	4
 CATEGORIES =	devel
 
 HOMEPAGE=	https://github.com/jbarnette/isolate
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT License
 PERMIT_PACKAGE_CDROM =	Yes

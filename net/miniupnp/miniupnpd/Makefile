@@ -3,7 +3,7 @@
 COMMENT=	UPnP IGD client lightweight library
 
 DISTNAME=	miniupnpd-1.8
-REVISION=	0
+REVISION=	1
 
 WANTLIB += c kvm
 

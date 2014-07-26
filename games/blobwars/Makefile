@@ -3,13 +3,11 @@
 COMMENT =	2D arcade game
 
 DISTNAME =	blobwars-1.19
-REVISION=	5
+REVISION=	6
 
 CATEGORIES =	games
 
 HOMEPAGE =	http://sourceforge.net/projects/blobwars/
-
-MAINTAINER =	Matthias Kilian <kili@openbsd.org>
 
 # GPLv2+ except for some audios licensed CC-BY-SA 3.0, CC-BY 3.0,
 # LGPLv2.1, BSD, GPLv2, "Public Domain", "Fair use".

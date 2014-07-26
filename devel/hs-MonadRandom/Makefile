@@ -3,9 +3,8 @@
 COMMENT =		random-number generation monad
 
 DISTNAME =		MonadRandom-0.1.9
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

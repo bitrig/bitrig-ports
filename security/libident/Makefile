@@ -5,6 +5,7 @@ COMMENT=	library to interface the ident protocol server (rfc1413)
 SHARED_LIBS +=	ident                     0.0 # 0.0
 
 DISTNAME=	libident-0.32
+REVISION=	0
 CATEGORIES=	devel net security
 MASTER_SITES=	http://www.remlab.net/files/libident/
 

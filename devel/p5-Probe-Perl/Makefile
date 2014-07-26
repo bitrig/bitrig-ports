@@ -3,7 +3,7 @@
 COMMENT =		information about the currently running perl
 MODULES =		cpan
 DISTNAME =		Probe-Perl-0.01
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel lang
 
 CPAN_AUTHOR =		KWILLIAMS

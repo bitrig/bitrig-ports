@@ -3,7 +3,7 @@
 COMMENT=		converts .dvi files to plain text
 
 DISTNAME=		dvi2tty-5.3.1
-REVISION=		0
+REVISION=		1
 CATEGORIES=     	print
 
 # GPL

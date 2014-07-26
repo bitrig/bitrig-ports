@@ -4,11 +4,9 @@ COMMENT=	collection of various tools for scummvm
 DISTNAME=	scummvm-tools-1.6.0
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scummvm/}
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE=	http://scummvm.sourceforge.net/
-
-MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

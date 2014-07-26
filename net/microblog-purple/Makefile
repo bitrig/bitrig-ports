@@ -7,11 +7,10 @@ COMMENT=	Twitter, Identica, and Status.net plugin for libpurple
 VERSION=	0.3.0
 DISTNAME=	mbpurple-${VERSION}
 PKGNAME=	microblog-purple-${VERSION}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	net
 
 HOMEPAGE=	https://microblog-purple.googlecode.com/
-MAINTAINER=	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

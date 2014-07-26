@@ -3,9 +3,8 @@
 COMMENT=	creating & editing GIF images and animations
 
 DISTNAME=	gifsicle-1.70
+REVISION=	0
 CATEGORIES=    	graphics
-
-MAINTAINER=	Eric Faurot <eric@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

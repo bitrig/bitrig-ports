@@ -16,7 +16,7 @@ DIST_SUBDIR=	qt4-eventsview-$V
 V=		0.1
 DISTNAME=	57337-eventsview
 PKGNAME=	qt4-eventsview-$V
-REVISION =	5
+REVISION =	6
 MASTER_SITES=	http://qt-apps.org/CONTENT/content-files/
 
 WRKDIST=	${WRKDIR}/eventsview

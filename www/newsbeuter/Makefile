@@ -2,12 +2,10 @@
 
 COMMENT =		open-source RSS/Atom feed reader for text terminals
 DISTNAME =		newsbeuter-2.7
-REVISION =		0
+REVISION =		1
 CATEGORIES =		www
 
 HOMEPAGE =		http://newsbeuter.org/
-
-MAINTAINER =		Kyle Isom <kyle@tyrfingr.is>
 
 # mit
 PERMIT_PACKAGE_CDROM =	Yes

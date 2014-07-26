@@ -3,7 +3,7 @@
 COMMENT =		Ruby extensions serving DataMapper and DataObjects
 
 DISTNAME =		extlib-0.9.16
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 # MIT

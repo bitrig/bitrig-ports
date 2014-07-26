@@ -4,11 +4,9 @@ COMMENT=	taint checking and input validation from web forms
 
 MODULES=	cpan
 DISTNAME=	CGI-Untaint-1.26
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

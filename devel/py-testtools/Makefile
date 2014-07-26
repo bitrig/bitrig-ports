@@ -5,7 +5,7 @@ COMMENT=	extensions to the Python unit testing framework
 MODPY_EGG_VERSION= 0.9.8
 DISTNAME=	testtools-${MODPY_EGG_VERSION}
 PKGNAME=	py-${DISTNAME}
-REVISION =	1
+REVISION =	2
 CATEGORIES=	devel
 
 HOMEPAGE=	http://pypi.python.org/pypi/testtools

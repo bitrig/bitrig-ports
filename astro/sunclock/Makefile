@@ -36,8 +36,8 @@ PKG_ARCH-maps=	*
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-REVISION-main =	3
-REVISION-maps = 0
+REVISION-main =	4
+REVISION-maps = 1
 WANTLIB-main=		X11 Xext Xpm Xau Xdmcp c m z jpeg png
 DIST_SUBDIR=		sunclock
 

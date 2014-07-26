@@ -3,10 +3,8 @@
 COMMENT=	Ogg Vorbis and MP3 files tagger
 
 DISTNAME=	tagtool-0.12.3
-REVISION=	16
+REVISION=	17
 CATEGORIES=	audio
-
-MAINTAINER=	Vlad Glagolev <stealth@sourcemage.org>
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tagtool/}
 EXTRACT_SUFX=	.tar.bz2

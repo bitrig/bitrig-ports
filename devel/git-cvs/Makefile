@@ -5,11 +5,10 @@ COMMENT =	import changesets from CVS into Git
 MODPY_EGG_VERSION = 0.0.1
 
 DISTNAME =	git-cvs-0.0.2012.01.28
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	https://github.com/ustuehler/git-cvs
-
-MAINTAINER =	Florian Obser <florian@narrans.de>
 
 # BSD
 PERMIT_PACKAGE_CDROM = Yes

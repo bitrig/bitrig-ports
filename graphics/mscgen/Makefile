@@ -3,7 +3,7 @@
 COMMENT=		utility to create Message Sequence Charts
 
 DISTNAME=		mscgen-src-0.20
-REVISION=		1
+REVISION=		2
 PKGNAME=		${DISTNAME:S/-src//}
 
 CATEGORIES=		graphics

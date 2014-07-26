@@ -4,6 +4,7 @@ V =			2.1.20130907
 COMMENT =		port of the DOS shoot-em-up Tyrian
 DISTNAME =		opentyrian-${V}-src
 PKGNAME =		opentyrian-${V}
+REVISION =		0
 CATEGORIES =	games x11
 
 HOMEPAGE =		http://code.google.com/p/opentyrian/

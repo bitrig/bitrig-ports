@@ -3,6 +3,7 @@
 COMMENT =	Relative use lib in absolute way
 MODULES =	cpan
 DISTNAME =	lib-abs-0.93
+REVISION =	0
 CATEGORIES=	devel
 
 # perl

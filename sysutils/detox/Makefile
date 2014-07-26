@@ -3,6 +3,7 @@
 COMMENT =		utility designed to clean up filenames
 
 DISTNAME =		detox-1.2.0
+REVISION =		0
 
 CATEGORIES =		sysutils
 

@@ -2,7 +2,7 @@
 
 COMMENT =		list processes as a tree
 DISTNAME =		pstree-2.36
-REVISION =		0
+REVISION =		1
 CATEGORIES =		sysutils
 
 # GPL

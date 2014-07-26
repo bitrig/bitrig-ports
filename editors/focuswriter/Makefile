@@ -5,7 +5,7 @@ COMMENT =	simple, distraction-free writing environment
 DISTNAME =	focuswriter-1.4.4
 CATEGORIES =	editors
 EXTRACT_SUFX =	-src.tar.bz2
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE =	http://gottcode.org/focuswriter/
 

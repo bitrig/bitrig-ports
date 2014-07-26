@@ -4,7 +4,7 @@ COMMENT=	API documentation browser for GNOME
 
 GNOME_PROJECT=	devhelp
 GNOME_VERSION=	3.12.1
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  devhelp-3                 0.0 # 0.0
 

@@ -3,7 +3,7 @@
 COMMENT=	Ruby bindigs for the Yajl JSON library
 
 DISTNAME=	yajl-ruby-1.1.0
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	devel
 

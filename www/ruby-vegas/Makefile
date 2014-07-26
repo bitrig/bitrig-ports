@@ -3,7 +3,7 @@
 COMMENT=		create executable versions of Sinatra/Rack apps
 
 DISTNAME=		vegas-0.1.11
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www
 
 HOMEPAGE=		http://code.quirkey.com/vegas/

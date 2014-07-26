@@ -3,12 +3,11 @@
 COMMENT=		simple generic tabbed frontend
 
 DISTNAME=		tabbed-0.6
+REVISION=		0
 
 CATEGORIES=		x11
 
 HOMEPAGE=		http://tools.suckless.org/tabbed
-
-MAINTAINER =		Joerg Jung <jung@openbsd.org>
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes

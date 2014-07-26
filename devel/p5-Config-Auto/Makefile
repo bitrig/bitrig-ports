@@ -5,6 +5,7 @@ COMMENT =		magical config file parser
 MODULES =		cpan
 
 DISTNAME =		Config-Auto-0.34
+REVISION =		0
 CATEGORIES =		devel
 USE_GROFF =		Yes
 

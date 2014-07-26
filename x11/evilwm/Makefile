@@ -3,11 +3,10 @@
 COMMENT=		minimalist window manager for the X Window System
 
 DISTNAME=		evilwm-1.0.1
+REVISION=		0
 CATEGORIES=		x11
 
 HOMEPAGE=		http://www.6809.org.uk/evilwm/
-
-MAINTAINER=		Victor Sahlstedt <salan@legonet.org>
 
 # 9wm license
 PERMIT_PACKAGE_CDROM=	Yes

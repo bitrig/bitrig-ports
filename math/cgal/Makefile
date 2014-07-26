@@ -13,7 +13,7 @@ COMMENT =		Computational Geometry Algorithms Library
 DISTNAME =		CGAL-3.8
 MASTER_SITES =		https://gforge.inria.fr/frs/download.php/28500/
 PKGNAME =		${DISTNAME:L}
-REVISION=		0
+REVISION=		1
 EPOCH =			0
 
 SHARED_ONLY =		Yes

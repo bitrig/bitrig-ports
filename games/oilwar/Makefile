@@ -3,7 +3,7 @@
 COMMENT=	sdl shoot 'em up; stop evil army from getting your oil
 DISTNAME=	OilWar-1.2.1
 PKGNAME=	${DISTNAME:L}
-REVISION =	5
+REVISION =	6
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_BACKUP}
 

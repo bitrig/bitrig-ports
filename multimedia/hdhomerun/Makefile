@@ -15,6 +15,7 @@ SRC=		libhdhomerun_$V.tgz
 DISTFILES=	${FW} ${SRC}
 EXTRACT_ONLY=	${SRC}
 PKGNAME=	hdhomerun-$V
+REVISION=	0
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.silicondust.com/hdhomerun/
 

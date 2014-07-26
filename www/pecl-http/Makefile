@@ -5,6 +5,7 @@ COMMENT =	extended HTTP support
 _PECLMOD =	http
 V =		2.0.6
 PKGNAME =	pecl-${_PECLMOD}-${V}
+REVISION =	0
 DISTNAME =	pecl_${_PECLMOD}-${V}
 
 # PHP

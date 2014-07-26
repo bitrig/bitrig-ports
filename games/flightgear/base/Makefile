@@ -3,7 +3,7 @@
 COMMENT =		modern, open-source flight simulator
 
 DISTNAME =		flightgear-${V}
-REVISION =		0
+REVISION =		1
 
 WANTLIB += GL GLU ICE OpenThreads SM SimGearCore SimGearScene
 WANTLIB += X11 Xext Xft Xi Xinerama Xmu c fltk fltk_forms fltk_gl

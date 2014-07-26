@@ -3,12 +3,11 @@
 COMMENT =		generate random numbers
 
 DISTNAME =		ranval-1.3
+REVISION =		0
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://www.weirdnet.nl/openbsd/code/ranval/
 MASTER_SITES =		http://www.weirdnet.nl/openbsd/code/ranval/
-
-MAINTAINER =		Paul de Weerd <weerd@weirdnet.nl>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

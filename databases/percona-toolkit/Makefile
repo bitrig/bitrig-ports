@@ -4,12 +4,11 @@ COMMENT =	MySQL Percona tools
 
 V =		2.2.9
 DISTNAME =	percona-toolkit-${V}
+REVISION =	0
 EPOCH =		0
 CATEGORIES =	databases perl5
 
 HOMEPAGE =	http://www.percona.com/software/percona-toolkit/
-
-MAINTAINER =	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

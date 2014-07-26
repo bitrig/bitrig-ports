@@ -2,7 +2,7 @@
 
 COMMENT=	Apache module for logging to an SQL database
 
-REVISION=	10
+REVISION=	11
 DISTNAME=	mod_log_sql-1.18
 CATEGORIES=	www
 

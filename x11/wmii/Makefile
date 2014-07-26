@@ -3,7 +3,7 @@
 COMMENT=	dynamic window manager
 
 DISTNAME=	wmii-3.6
-REVISION=	5
+REVISION=	6
 CATEGORIES=	x11
 
 HOMEPAGE=	http://wmii.suckless.org/

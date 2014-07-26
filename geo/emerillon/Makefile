@@ -4,12 +4,11 @@ COMMENT =	map viewer using Openstreetmap data
 
 GNOME_VERSION =	0.1.90
 GNOME_PROJECT =	emerillon
-REVISION =	5
+REVISION =	6
 
 CATEGORIES =	geo x11
 
 HOMEPAGE =	http://projects.gnome.org/emerillon/
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

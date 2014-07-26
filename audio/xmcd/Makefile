@@ -3,7 +3,7 @@
 COMMENT=	Motif CD player
 
 DISTNAME=	xmcd-2.6
-REVISION=	13
+REVISION=	14
 CATEGORIES=	audio
 HOMEPAGE=	http://www.amb.org/xmcd/
 

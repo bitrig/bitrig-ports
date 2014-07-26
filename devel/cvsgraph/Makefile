@@ -3,7 +3,7 @@
 COMMENT=		graphical representation of CVS repository
 
 DISTNAME=		cvsgraph-1.6.1
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 HOMEPAGE=		http://www.akhphd.au.dk/~bertho/cvsgraph
 

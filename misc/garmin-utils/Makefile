@@ -3,11 +3,9 @@
 COMMENT=	Garmin GPS upload/download utilities
 
 DISTNAME=	garmin-utils-2.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	misc geo
 MASTER_SITES=	ftp://ftp.snafu.org/pub/
-
-MAINTAINER=	Marco S Hyman <marc@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

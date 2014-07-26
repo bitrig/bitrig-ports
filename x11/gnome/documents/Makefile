@@ -8,6 +8,7 @@ COMMENT=	document manager for GNOME
 
 GNOME_PROJECT=	gnome-documents
 GNOME_VERSION=	3.12.1
+REVISION=	0
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

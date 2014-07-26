@@ -4,15 +4,13 @@
 COMMENT =		tool to flash dell bios
 
 DISTNAME =		dellflash-0.2
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		sysutils
 
 ONLY_FOR_ARCHS=		i386 amd64
 
 HOMEPAGE =		http://opensource.conformal.com/wiki/Dell_Flash
-
-MAINTAINER =		Marco Peereboom <marco@peereboom.us>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

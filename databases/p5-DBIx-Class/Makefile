@@ -4,7 +4,7 @@ COMMENT=	object-oriented database access
 
 MODULES=	cpan
 DISTNAME=	DBIx-Class-0.08196
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases devel
 
 # Artistic

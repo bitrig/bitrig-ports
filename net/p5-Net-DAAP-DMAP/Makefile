@@ -4,7 +4,7 @@ COMMENT=	perl module for reading and writing DAAP structures
 
 MODULES=	cpan
 DISTNAME=	Net-DAAP-DMAP-1.26
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 # same as perl

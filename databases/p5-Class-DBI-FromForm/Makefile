@@ -4,7 +4,7 @@ COMMENT=	update Class:DBI data from html forms
 
 MODULES=	cpan
 DISTNAME=	Class-DBI-FromForm-0.04
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www databases
 
 # Same as Perl

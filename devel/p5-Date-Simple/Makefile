@@ -6,11 +6,9 @@ COMMENT=	Manipulate simple date objects
 
 MODULES=	cpan
 DISTNAME=	Date-Simple-3.02
-REVISION=	5
+REVISION=	6
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

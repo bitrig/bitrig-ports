@@ -7,8 +7,8 @@ VERSION =		0.9.2
 DISTNAME =		mlt-${VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-gpl2 =		mlt-gpl2-${VERSION}
-REVISION-main =		0
-REVISION-gpl2 =		0
+REVISION-main =		1
+REVISION-gpl2 =		1
 
 # XXX versions should be kept in sync together
 SHARED_LIBS =		mlt		0.0
@@ -16,8 +16,6 @@ SHARED_LIBS +=		mlt++		0.0
 
 CATEGORIES =		multimedia devel
 HOMEPAGE =		http://www.mltframework.org/
-
-MAINTAINER =		KDE porting team <openbsd-kde@googlegroups.com>
 
 # GPLv2+, LGPLv2.1+
 # Actually, qimage module could be under GPLv3+ if one more object

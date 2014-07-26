@@ -4,10 +4,8 @@ COMMENT=        module for rounded or exact english expression of durations
 
 MODULES=	cpan
 DISTNAME=	Time-Duration-1.06
-REVISION=	0
+REVISION=	1
 CATEGORIES=     devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=   Yes

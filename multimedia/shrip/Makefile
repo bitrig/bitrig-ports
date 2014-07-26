@@ -3,11 +3,9 @@
 COMMENT =		shell client for ogmrip
 
 DISTNAME =		shrip-0.6.0
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		multimedia
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,10 +5,8 @@ COMMENT =	module for graph plotting
 VERSION =	1.44
 DISTNAME =	GDGraph-${VERSION}
 PKGNAME =	p5-GD-Graph-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	graphics
-
-MAINTAINER =	Kevin Lo <kevlo@openbsd.org>
 
 MASTER_SITES =	${MASTER_SITE_PERL_CPAN:=GD/}
 

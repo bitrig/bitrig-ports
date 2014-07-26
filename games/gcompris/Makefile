@@ -5,13 +5,12 @@ SHARED_ONLY=	Yes
 COMMENT=	educational game for children
 
 DISTNAME=	gcompris-14.05
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 
 CATEGORIES=	games education
 
 HOMEPAGE=	http://gcompris.net/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv3
 # SIL Open Font License (OFL)

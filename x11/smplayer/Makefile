@@ -3,13 +3,11 @@
 COMMENT =		complete front-end for MPlayer
 
 DISTNAME =		smplayer-0.8.6
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		multimedia x11
 
 HOMEPAGE =		http://smplayer.sourceforge.net/
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv2 (docs/en/gpl.html)
 PERMIT_PACKAGE_CDROM =	Yes

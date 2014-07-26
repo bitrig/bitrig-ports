@@ -5,10 +5,8 @@ COMMENT =		fast combinator parsing for bytestrings
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		attoparsec-0.10.4.0
+REVISION =		0
 CATEGORIES =		textproc
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>, \
-			Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

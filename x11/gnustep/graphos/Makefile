@@ -3,7 +3,7 @@
 COMMENT =	vector drawing application
 
 DISTNAME =	Graphos-0.5
-REVISION =	1
+REVISION =	2
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://gap.nongnu.org/graphos/

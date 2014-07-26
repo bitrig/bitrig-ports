@@ -8,6 +8,7 @@ COMMENT-dvdcpy =	copy selected info from DVD
 V =			1.0.1
 DISTNAME =		ogmrip-$V
 PKGNAME-main =		ogmrip-$V
+REVISION =		0
 PKGNAME-dvdcpy =	dvdcpy-$V
 
 SHARED_LIBS +=  ogmdvd-gtk                0.0 # 1.0
@@ -23,8 +24,6 @@ MULTI_PACKAGES =	-main -dvdcpy
 CATEGORIES =		multimedia
 
 HOMEPAGE =		http://ogmrip.sourceforge.net/en/index.html
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes

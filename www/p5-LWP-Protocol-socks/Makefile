@@ -3,10 +3,9 @@
 COMMENT =	adds support for SOCKS to p5-libwww
 
 DISTNAME =	LWP-Protocol-socks-1.5
+REVISION =	0
 CATEGORIES =	www
 CPAN_AUTHOR =	SCR
-
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

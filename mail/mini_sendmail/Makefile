@@ -6,9 +6,9 @@ COMMENT-chroot=	static mini_sendmail for chrooted apache
 V=		1.3.6
 DISTNAME=	mini_sendmail-${V}
 PKGNAME-main=	mini_sendmail-${V}
-REVISION-main=	3
+REVISION-main=	4
 PKGNAME-chroot=	mini_sendmail-chroot-${V}
-REVISION-chroot=1
+REVISION-chroot=2
 CATEGORIES=	mail www
 MASTER_SITES=	${HOMEPAGE}
 

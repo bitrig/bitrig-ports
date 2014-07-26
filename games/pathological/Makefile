@@ -3,7 +3,7 @@
 COMMENT=	enriched clone of the game Logical by Rainbow Arts
 
 DISTNAME=	pathological-1.1.3
-REVISION =	5
+REVISION =	6
 CATEGORIES=	games
 HOMEPAGE=	http://pathological.sourceforge.net/
 

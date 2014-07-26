@@ -3,11 +3,9 @@
 COMMENT=	emacs-based mail client
 
 DISTNAME=	mew-5.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	mail
 HOMEPAGE=	http://www.mew.org/
-
-MAINTAINER=	Scott Vokes <vokes.s@gmail.com>
 
 # BSD license
 PERMIT_PACKAGE_CDROM=	Yes

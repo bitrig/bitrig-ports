@@ -3,7 +3,7 @@ COMMENT=	HTML objects for Rose
 
 MODULES=	cpan
 DISTNAME=	Rose-HTML-Objects-0.6061
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www devel databases
 USE_GROFF =	Yes
 

@@ -5,12 +5,11 @@ COMMENT=		command line integration of git with Bugzilla
 # git checkout Sep 6 10:15:00 2013
 # 5ae7a500636ddc28bcf7a18427f388c8790623b3
 DISTNAME=		git-bz-20130906
+REVISION=		0
 
 CATEGORIES=		devel
 
 HOMEPAGE=		http://blog.fishsoup.net/2008/11/16/git-bz-bugzilla-subcommand-for-git/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

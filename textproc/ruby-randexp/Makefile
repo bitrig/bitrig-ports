@@ -3,7 +3,7 @@
 COMMENT =	generate random strings from most regular expressions
 
 DISTNAME =	randexp-0.1.6
-REVISION =	1
+REVISION =	2
 CATEGORIES =	textproc
 
 # MIT

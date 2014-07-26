@@ -4,7 +4,7 @@ COMMENT=		optimized mpeg 1/2 layer 2 audio encoder
 
 DISTNAME=		toolame-02l
 PKGNAME=		toolame-0.2l
-REVISION=		1
+REVISION=		2
 CATEGORIES=		audio
 
 HOMEPAGE=		http://www.eftel.com/~mikecheng/planckenergy/

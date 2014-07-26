@@ -3,7 +3,7 @@
 COMMENT=	X11 front-end for ghostscript
 
 DISTNAME=	ghostview-1.5
-REVISION=	4
+REVISION=	5
 CATEGORIES=	print
 
 MASTER_SITES=	${MASTER_SITE_GNU:=ghostview/}

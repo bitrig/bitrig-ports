@@ -3,6 +3,7 @@
 COMMENT =	common library for KDE-based games
 CATEGORIES =	devel
 DISTNAME =	libkdegames-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kdegames		51.0
 SHARED_LIBS +=	kdegamesprivate		51.0

@@ -4,7 +4,7 @@ COMMENT=		Executable Uniform Command-Line Interface Descriptions
 
 V=			0.2.0
 DISTNAME=		Getopt-Euclid-v$V
-REVISION=		0
+REVISION=		1
 PKGNAME=		p5-Getopt-Euclid-$V
 CATEGORIES=		devel
 

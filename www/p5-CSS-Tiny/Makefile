@@ -4,7 +4,7 @@ COMMENT=	handle CSS with little overhead
 
 MODULES=	cpan
 DISTNAME=	CSS-Tiny-1.19
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 # Perl

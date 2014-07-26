@@ -7,7 +7,7 @@ COMMENT=	pidgin plugin to display messages through libnotify
 DISTNAME=	pidgin-libnotify-0.14
 CATEGORIES=	x11
 
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	http://gaim-libnotify.sourceforge.net/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gaim-libnotify/}

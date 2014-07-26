@@ -3,6 +3,7 @@
 V =		1.7.1
 COMMENT =	fan made Zelda game for Solarus engine
 DISTNAME =	zsdx-${V}
+REVISION =	0
 
 HOMEPAGE =	http://www.solarus-games.org/games/zelda-mystery-of-solarus-dx/
 

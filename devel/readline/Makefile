@@ -3,7 +3,7 @@
 COMMENT =		library to edit command lines as they are typed in
 
 V =			6.2
-REVISION =		2
+REVISION =		3
 DISTNAME =		readline-${V}
 PKGNAME =		readline-${V}pl4
 PATCHFILES =		readline62-001:0 \
@@ -18,8 +18,6 @@ SHARED_LIBS +=		readline ${LIBV}
 CATEGORIES =		devel
 
 HOMEPAGE =		http://tiswww.case.edu/php/chet/readline/rltop.html
-
-MAINTAINER =		Laurent Fanis <laurent.fanis@gmail.com>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

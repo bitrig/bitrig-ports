@@ -5,7 +5,7 @@ CATEGORIES =	devel
 
 # also adapt MASTER_SITES when changing the version!
 DISTNAME =	lambda-term-1.3
-REVISION =	1
+REVISION =	2
 PKGNAME =	ocaml-${DISTNAME}
 MASTER_SITES =	http://forge.ocamlcore.org/frs/download.php/1034/
 

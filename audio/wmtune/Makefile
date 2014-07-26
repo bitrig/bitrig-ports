@@ -3,12 +3,10 @@
 COMMENT=	premier dockable radio tuner
 
 DISTNAME=	wmtune-1.1c
-REVISION=	4
+REVISION=	5
 CATEGORIES=	audio x11 x11/windowmaker
 
 HOMEPAGE=	http://www.soren.org/linux/wmtune/
-
-MAINTAINER=	Vladimir Popov <pva48@mail.ru>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -2,11 +2,11 @@
 
 COMMENT =	free Colonization clone
 DISTNAME =	freecol-0.10.7
+REVISION =	0
 EXTRACT_SUFX =	.zip
 CATEGORIES =	games java x11
 
 HOMEPAGE =	http://www.freecol.org/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

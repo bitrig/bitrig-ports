@@ -3,12 +3,10 @@
 COMMENT=	relay for bidirectional data transfer
 
 DISTNAME=	socat-1.7.2.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.dest-unreach.org/socat/
-
-MAINTAINER=	Nigel Taylor <nigel@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

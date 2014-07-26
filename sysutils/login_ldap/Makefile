@@ -3,13 +3,11 @@
 COMMENT=	provide ldap authentication type
 
 DISTNAME=	login_ldap-3.51
-REVISION=	4
+REVISION=	5
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://sourceforge.net/projects/login-ldap/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=login-ldap/}
-
-MAINTAINER=	Michael Erdely <merdely@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

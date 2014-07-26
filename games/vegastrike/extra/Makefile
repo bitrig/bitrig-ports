@@ -3,6 +3,7 @@
 COMMENT =	extra data files for vegastrike
 
 DISTNAME =	vegastrike-extra-${V}
+REVISION =	0
 
 RUN_DEPENDS =	games/vegastrike/data>=${V}
 

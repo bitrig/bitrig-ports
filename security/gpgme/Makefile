@@ -4,7 +4,7 @@ COMMENT=		GnuPG Made Easy
 
 DISTNAME=		gpgme-1.3.1
 CATEGORIES=     	security devel
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  gpgme                18.0     # 19.0
 SHARED_LIBS +=  gpgme-pthread        18.0     # 19.0

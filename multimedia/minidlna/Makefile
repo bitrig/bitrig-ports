@@ -3,13 +3,11 @@
 COMMENT=	lightweight DLNA/UPnP-AV media server
 
 V=		1.1.3
-REVISION=	0
+REVISION=	1
 DISTNAME=	minidlna-$V
 PKGNAME=	minidlna-$V
 
 CATEGORIES=	multimedia
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE=	http://sourceforge.net/projects/minidlna/
 

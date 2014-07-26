@@ -4,9 +4,8 @@ COMMENT=		handle multiple file handles
 
 MODULES=		cpan
 DISTNAME=		IO-Multiplex-1.13
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

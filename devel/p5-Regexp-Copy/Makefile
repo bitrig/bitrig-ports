@@ -5,10 +5,8 @@ SHARED_ONLY=		Yes
 COMMENT=		copy perl Regexp objects
 
 DISTNAME=		Regexp-Copy-0.06
-REVISION=		4
+REVISION=		5
 CATEGORIES=		devel
-
-MAINTAINER=		Alexander Bluhm <bluhm@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

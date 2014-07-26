@@ -2,6 +2,7 @@
 
 COMMENT =	Mah Jongg solitare board game for KDE
 DISTNAME =	kmahjongg-${MODKDE4_VERSION}
+REVISION =	0
 
 MODKDE4_USE =	games
 

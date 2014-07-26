@@ -4,12 +4,10 @@ COMMENT=		simple BitTorrent implementation
 
 DISTNAME=		unworkable-0.53
 EPOCH=			0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 
 HOMEPAGE=		https://code.google.com/p/unworkable/
-
-MAINTAINER=		Niall O Higgins <niallo@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

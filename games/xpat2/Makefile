@@ -3,7 +3,7 @@
 COMMENT=	X11 solitaire with 14 variations
 
 DISTNAME=	xpat2-1.07
-REVISION=	3
+REVISION=	4
 CATEGORIES=	games
 
 MASTER_SITES=	http://www.ibiblio.org/pub/linux/games/solitaires/

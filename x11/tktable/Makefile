@@ -6,11 +6,10 @@ DOTVER =		2.10
 VER =			${DOTVER:S/.//}
 DISTNAME =		Tktable${DOTVER}
 PKGNAME =		Tktable-${DOTVER}
-REVISION =		2
+REVISION =		3
 SHARED_LIBS =		Tktable${VER} 0.0
 CATEGORIES =		x11
 HOMEPAGE =		http://tktable.sourceforge.net/
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD style
 PERMIT_PACKAGE_CDROM =	Yes

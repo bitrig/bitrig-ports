@@ -4,7 +4,7 @@ COMMENT=	Provide regular expressions for some XML tokens
 
 MODULES=	cpan
 DISTNAME=	XML-RegExp-0.03
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 # GPL/Artistic

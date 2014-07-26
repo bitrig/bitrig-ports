@@ -3,7 +3,7 @@
 COMMENT=	generate patchsets from CVS repositories
 
 DISTNAME=	cvsps-2.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=     devel
 HOMEPAGE=	http://www.cobite.com/cvsps/
 

@@ -4,7 +4,7 @@ COMMENT =	XS for C++
 
 MODULES =	cpan
 DISTNAME =	ExtUtils-XSpp-0.04
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 USE_GROFF =	Yes
 

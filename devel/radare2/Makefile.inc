@@ -11,7 +11,6 @@ SUBST_VARS +=		V
 
 CATEGORIES ?=		devel
 HOMEPAGE ?=		http://radare.nopcode.org/
-MAINTAINER ?=		Edd Barrett <edd@openbsd.org>
 
 # LGPLv3
 PERMIT_PACKAGE_CDROM ?=		Yes

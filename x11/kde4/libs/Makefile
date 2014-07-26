@@ -11,6 +11,7 @@ PKGNAME-langlist =	kde4-langlist-${MODKDE4_VERSION}
 PKG_ARCH-en_US =	*
 PKG_ARCH-langlist =	*
 PKGSPEC-main =		kdelibs->=4
+REVISION =		0
 
 DPB_PROPERTIES =	parallel tag:kde4
 

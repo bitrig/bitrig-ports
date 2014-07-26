@@ -2,11 +2,11 @@
 
 COMMENT =	event expression library
 DISTNAME =	libee-0.4.1
+REVISION =	0
 SHARED_LIBS +=  ee                   0.1      # 0.1
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.libee.org/
-MAINTAINER =	David Hill <dhill@mindcry.org>
 
 # LGPLv2.1 
 PERMIT_PACKAGE_CDROM =	Yes

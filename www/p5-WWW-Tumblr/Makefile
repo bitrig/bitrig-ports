@@ -3,7 +3,7 @@
 COMMENT=		Perl interface for the Tumblr API
 
 DISTNAME=		WWW-Tumblr-4.1
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www
 
 MODULES=		cpan

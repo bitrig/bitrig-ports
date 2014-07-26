@@ -5,7 +5,7 @@ COMMENT=		high performance embedded database library
 DISTNAME=		qdbm-1.8.78
 CATEGORIES=		databases
 SHARED_LIBS=		qdbm	14.14
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://fallabs.com/qdbm/
 

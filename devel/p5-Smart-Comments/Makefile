@@ -4,6 +4,7 @@ COMMENT=		debugging aid based on comments
 
 MODULES=		cpan
 DISTNAME=		Smart-Comments-1.0.4
+REVISION=		0
 CATEGORIES=		devel
 
 CPAN_AUTHOR=		CHORNY

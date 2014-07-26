@@ -3,6 +3,7 @@
 COMMENT =		serial and network communications package
 
 PKGNAME =		kermit-9.0.302
+REVISION =		0
 DISTNAME =		cku302
 CATEGORIES =		comms
 HOMEPAGE =		http://www.kermitproject.org/

@@ -3,11 +3,11 @@
 COMMENT=	Simple regular expression library from Plan 9
 
 VERSION=	2.0
+REVISION=	0
 DISTNAME=	libregexp9-${VERSION}
 CATEGORIES=	devel plan9
 MASTER_SITES=	${HOMEPAGE}
 HOMEPAGE=	http://pdos.lcs.mit.edu/~rsc/software/
-MAINTAINER=	Markus Friedl <markus@openbsd.org>
 EXTRACT_SUFX=	.tgz
 
 BUILD_DEPENDS=	devel/libutf \

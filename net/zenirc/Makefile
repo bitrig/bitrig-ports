@@ -5,14 +5,12 @@ COMMENT-el=	elisp sources of zenirc
 
 VERSION=	2.112
 DISTNAME=	zenirc-${VERSION}
-REVISION=	1
+REVISION=	2
 PKGNAME-main=	emacs-zenirc-${VERSION}
 PKGNAME-el=	emacs-zenirc-el-${VERSION}
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.zenirc.org/
-
-MAINTAINER=	Alexandre Anriot <aanriot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

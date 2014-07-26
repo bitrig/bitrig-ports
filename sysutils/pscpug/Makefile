@@ -4,7 +4,7 @@ COMMENT=	draws a graph of CPU usage of a certain process
 
 DISTNAME=	pscpug035
 PKGNAME=	pscpug-0.3.5
-REVISION=	2
+REVISION=	3
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://www.diablonet.net/~mercadal/projects/pscpug/

@@ -5,6 +5,7 @@ COMMENT=	perl5 interface to network devices and MIBs through SNMP
 MODULES=	cpan
 
 DISTNAME=	SNMP-Info-2.06
+REVISION=	0
 CATEGORIES=	net
 
 # BSD

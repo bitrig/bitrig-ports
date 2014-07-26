@@ -8,7 +8,7 @@ GNOME_PROJECT=	goffice
 GNOME_VERSION=	0.8.17
 EXTRACT_SUFX=	.tar.bz2
 PKGNAME=	goffice08-${GNOME_VERSION}
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS +=	goffice-0.8          0.0      # .8.0
 

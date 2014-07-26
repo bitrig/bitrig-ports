@@ -5,7 +5,7 @@ COMMENT= 	simple framework for Factories
 MODULES=	cpan
 
 DISTNAME=	Class-Factory-Util-1.6
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

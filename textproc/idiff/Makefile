@@ -4,11 +4,9 @@
 COMMENT=	powerful command-line front end to diff
 
 DISTNAME=	idiff-1.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.darwinsys.com/freeware/
-
-MAINTAINER=	Ian Darwin <ian@openbsd.org>
 
 # BSD-like, badly worded
 PERMIT_PACKAGE_CDROM=	Yes

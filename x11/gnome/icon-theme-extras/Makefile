@@ -4,6 +4,7 @@ COMMENT=	extra icons for GNOME
 
 GNOME_PROJECT=	gnome-icon-theme-extras
 GNOME_VERSION=	3.12.0
+REVISION=	0
 
 CATEGORIES=	x11
 

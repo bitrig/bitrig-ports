@@ -3,7 +3,7 @@
 COMMENT =	provides a registry of file types
 
 DISTNAME =	polyglot-0.3.1
-REVISION =	3
+REVISION =	4
 CATEGORIES =	devel
 
 HOMEPAGE =	http://polyglot.rubyforge.org/

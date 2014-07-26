@@ -3,12 +3,10 @@
 COMMENT =	build and package Ruby extensions using Rake as glue
 
 DISTNAME =	rake-compiler-0.7.9
-REVISION =	4
+REVISION =	5
 CATEGORIES =	devel
 
 HOMEPAGE =	https://github.com/luislavena/rake-compiler
-
-MAINTAINER  =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT License
 PERMIT_PACKAGE_CDROM =   Yes

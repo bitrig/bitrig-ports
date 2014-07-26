@@ -4,7 +4,7 @@ COMMENT=		talk to other applications
 
 MODULES=		cpan
 DISTNAME=		Expect-1.21
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 USE_GROFF =		Yes
 

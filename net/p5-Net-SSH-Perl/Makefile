@@ -4,6 +4,7 @@ COMMENT=	perl implementation of the SSH1 and SSH2 protocols
 
 MODULES=	cpan
 DISTNAME=	Net-SSH-Perl-1.34
+REVISION=	0
 CATEGORIES=	net security
 USE_GROFF =	Yes
 

@@ -10,12 +10,11 @@ V =		1.15.1
 EPOCH =		0
 DISTNAME =	openal-soft-$V
 PKGNAME =	openal-$V
+REVISION =	0
 CATEGORIES =	audio
 SHARED_LIBS =	openal	2.2
 
 HOMEPAGE =	http://kcat.strangesoft.net/openal.html
-
-MAINTAINER =	Antti Harri <iku@openbsd.fi>
 
 # LGPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

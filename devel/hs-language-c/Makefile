@@ -3,12 +3,10 @@
 COMMENT =		analysis and generation of C code in Haskell
 
 DISTNAME =		language-c-0.3.2.1
-REVISION =		4
+REVISION =		5
 CATEGORIES =		devel
 
 HOMEPAGE =		http://www.sivity.net/projects/language.c/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

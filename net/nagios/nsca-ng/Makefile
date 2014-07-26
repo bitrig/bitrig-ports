@@ -6,12 +6,11 @@ COMMENT-client=	client to send passive check results to Nagios/Icinga
 V=		1.3
 DISTNAME=	nsca-ng-$V
 PKGNAME-main=	nsca-ng-$V
+REVISION=	0
 PKGNAME-client=	nsca-ng-client-$V
 CATEGORIES=	net
 
 HOMEPAGE=	https://www.nsca-ng.org/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

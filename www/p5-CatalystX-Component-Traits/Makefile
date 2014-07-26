@@ -4,6 +4,7 @@ COMMENT =	automatic trait loading and resolution
 
 MODULES =	cpan
 DISTNAME =	CatalystX-Component-Traits-0.16
+REVISION =	0
 CATEGORIES =	www
 
 # same as perl

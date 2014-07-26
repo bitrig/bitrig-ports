@@ -3,12 +3,10 @@
 COMMENT=		Tcl/Tk interface to the MH mail system
 
 DISTNAME=		exmh-2.7.2
-REVISION =		1
+REVISION =		2
 CATEGORIES=     	mail
 
 HOMEPAGE=		http://www.beedub.com/exmh/
-
-MAINTAINER=		Michael Paddon <michael@paddon.org>
 
 # custom BSD-like
 PERMIT_PACKAGE_CDROM=	Yes

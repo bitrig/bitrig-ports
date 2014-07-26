@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		access OpenSSL's X509 API from Perl#'
 
 DISTNAME =		Crypt-OpenSSL-X509-1.803
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		security
 

@@ -4,10 +4,8 @@ COMMENT=	handle data in a hierarchical structure
 
 MODULES=	cpan
 DISTNAME=	Data-Hierarchy-0.34
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

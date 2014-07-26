@@ -4,11 +4,10 @@ COMMENT=	Apache Portable Runtime
 
 V=		1.5.0
 DISTNAME=	apr-$V
+REVISION=	0
 SHARED_LIBS +=	apr-1             5.0     # .5.0
 
 CATEGORIES=	devel
-
-MAINTAINER=	Stefan Sperling <stsp@openbsd.org>
 
 HOMEPAGE=	http://apr.apache.org/
 

@@ -4,7 +4,7 @@ COMMENT=		C++ library to create, manipulate and render SVG files
 
 DISTNAME=		wxsvg-1.4.1
 EPOCH=			0
-REVISION=		0
+REVISION=		1
 CATEGORIES=		x11 graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=wxsvg/}
 EXTRACT_SUFX=		.tar.bz2

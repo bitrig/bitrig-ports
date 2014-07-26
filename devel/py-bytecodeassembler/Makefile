@@ -5,12 +5,11 @@ COMMENT =		python bytecode assembler
 MODPY_EGG_VERSION =	0.6
 DISTNAME =		BytecodeAssembler-${MODPY_EGG_VERSION}
 PKGNAME =		py-bytecodeassembler-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://peak.telecommunity.com/DevCenter/BytecodeAssembler
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # PSF
 PERMIT_PACKAGE_CDROM =	Yes

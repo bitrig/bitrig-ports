@@ -3,6 +3,7 @@
 COMMENT=	preparation of internationalized strings
 
 DISTNAME=	Unicode-Stringprep-1.104
+REVISION=	0
 CATEGORIES=	converters
 
 # perl

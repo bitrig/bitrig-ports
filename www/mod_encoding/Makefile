@@ -2,7 +2,7 @@
 
 COMMENT=	Apache module for non-ascii filename interoperability
 
-REVISION=	3
+REVISION=	4
 DISTNAME=	mod_encoding-20021209
 CATEGORIES=	www converters
 

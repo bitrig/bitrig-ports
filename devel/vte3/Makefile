@@ -8,13 +8,11 @@ GNOME_PROJECT=		vte
 GNOME_VERSION=		0.36.3
 
 PKGNAME=		vte3-${GNOME_VERSION}
+REVISION=		0
 
 SHARED_LIBS +=  vte2_90              1.0      # 3609.0
 
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

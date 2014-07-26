@@ -4,11 +4,10 @@ COMMENT=	extends the Net::DNS module with DNSSEC functionality
 
 MODULES=	cpan
 DISTNAME=	Net-DNS-SEC-0.18
+REVISION=	0
 CATEGORIES=	net security
 
 HOMEPAGE=	http://www.net-dns.org/
-
-MAINTAINER=	Gleydson Soares <gsoares@trusted.com.br>
 
 # BSD-license
 PERMIT_PACKAGE_CDROM=	Yes

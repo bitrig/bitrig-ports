@@ -3,12 +3,10 @@
 COMMENT =	Sega Saturn emulator
 
 DISTNAME =	yabause-0.9.10
-REVISION =	2
+REVISION =	3
 
 CATEGORIES =	emulators games
 HOMEPAGE =	http://yabause.org/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

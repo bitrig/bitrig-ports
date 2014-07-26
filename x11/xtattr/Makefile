@@ -3,7 +3,7 @@
 COMMENT=	changing xterm attributes
 
 DISTNAME=	xtattr-1.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11
 
 PERMIT_PACKAGE_CDROM=	no license

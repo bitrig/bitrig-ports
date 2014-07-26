@@ -4,9 +4,8 @@ COMMENT=	organize data in tables
 
 MODULES=	cpan
 DISTNAME=	Text-Table-1.123
+REVISION=	0
 CATEGORIES=	textproc
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

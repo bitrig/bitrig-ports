@@ -6,13 +6,11 @@ COMMENT=	Cyrus IMAP server
 
 V=		2.4.17
 DISTNAME=	cyrus-imapd-${V}
-REVISION=	7
+REVISION=	8
 
 CATEGORIES=	mail
 
 HOMEPAGE=	http://www.cyrusimap.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # CMU - see COPYRIGHT file in package
 PERMIT_PACKAGE_CDROM=	yes

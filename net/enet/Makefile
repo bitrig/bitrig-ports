@@ -2,14 +2,13 @@
 
 COMMENT =		network library for games
 DISTNAME =		enet-1.3.7
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=  	enet 0.1 # 1.3
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://enet.bespin.org/
-MAINTAINER =		Laurent FANIS <laurent.fanis@gmail.com>
 
 # MIT-like
 PERMIT_PACKAGE_CDROM =	Yes

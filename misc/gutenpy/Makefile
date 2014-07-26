@@ -5,12 +5,10 @@ SHARED_ONLY=		Yes
 COMMENT=		text reader and catalog browser for Project Gutenberg
 
 DISTNAME=		gutenpy-0.3.0
-REVISION =		8
+REVISION =		9
 CATEGORIES=		misc x11
 
 HOMEPAGE=		http://gutenpy.sourceforge.net/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

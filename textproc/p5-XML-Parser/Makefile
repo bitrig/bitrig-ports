@@ -6,7 +6,7 @@ COMMENT=	perl module for parsing XML documents
 
 MODULES=	cpan
 DISTNAME=	XML-Parser-2.41
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 # perl

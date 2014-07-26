@@ -4,7 +4,7 @@ COMMENT=		parse and create MySQL date objects
 
 MODULES=		cpan
 DISTNAME=		DateTime-Format-MySQL-0.04
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel converters
 USE_GROFF =		Yes
 

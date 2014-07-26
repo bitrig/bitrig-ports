@@ -3,7 +3,7 @@
 COMMENT =	store rasters coverages within spatialite
 PROJECT =	librasterlite
 DISTNAME =	${PROJECT}-1.1f
-REVISION =	0
+REVISION =	1
 SHARED_LIBS =	rasterlite 0.0 #2.0
 
 # breaks build if static is disabled

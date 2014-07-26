@@ -6,10 +6,8 @@ COMMENT=	module to manipulate raw ip packets
 
 MODULES=	cpan
 DISTNAME=	Net-RawIP-0.25
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

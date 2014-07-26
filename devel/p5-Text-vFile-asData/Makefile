@@ -3,6 +3,7 @@
 COMMENT =	parse vFile formatted files into data structures
 
 DISTNAME =	Text-vFile-asData-0.07
+REVISION =	0
 
 CATEGORIES =	devel textproc
 

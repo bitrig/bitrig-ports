@@ -5,7 +5,7 @@ ONLY_FOR_ARCHS=	i386 macppc amd64
 
 COMMENT=	capture utility for Brooktree-based cards
 DISTNAME=	fxtv-1.03
-REVISION=	6
+REVISION=	7
 
 CATEGORIES=	graphics
 HOMEPAGE=	https://people.freebsd.org/~rhh/fxtv/

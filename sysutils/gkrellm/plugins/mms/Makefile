@@ -3,7 +3,7 @@
 COMMENT=	XMMS plugin for Gkrellm2
 
 DISTNAME=	gkrellmms-2.1.21
-REVISION=	16
+REVISION=	17
 CATEGORIES=	audio
 
 HOMEPAGE=	http://gkrellm.luon.net/gkrellmms.phtml

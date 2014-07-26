@@ -4,6 +4,7 @@ COMMENT= 	test output of other modules
 
 MODULES=	cpan
 DISTNAME =	Test-Output-1.01
+REVISION =	0
 CATEGORIES=	devel
 
 # perl

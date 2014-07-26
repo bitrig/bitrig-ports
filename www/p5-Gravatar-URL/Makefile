@@ -3,11 +3,9 @@
 COMMENT =		make URLs for Gravatars from an email address
 
 DISTNAME =		Gravatar-URL-1.06
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		www mail
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

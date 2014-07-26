@@ -3,7 +3,7 @@
 COMMENT=	Atmel/NWN wireless access point configuration tools
 
 DISTNAME=	ap-utils-1.5
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 EXTRACT_SUFX=	.tar.bz2
 

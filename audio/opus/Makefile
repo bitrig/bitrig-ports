@@ -3,12 +3,11 @@
 COMMENT=	IETF audio codec
 
 DISTNAME=	opus-1.1
+REVISION=	0
 SHARED_LIBS=	opus		1.0	# 5.0
 CATEGORIES=	audio
 
 HOMEPAGE=	http://opus-codec.org/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

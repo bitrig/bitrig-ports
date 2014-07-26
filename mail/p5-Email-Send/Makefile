@@ -6,10 +6,8 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	Email-Send-2.194
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -2,11 +2,10 @@
 
 COMMENT =	lightweight WM with an original look and feel
 DISTNAME =	uwm-0.2.11
+REVISION =	0
 CATEGORIES =	x11
 
 HOMEPAGE =	http://udeproject.sourceforge.net/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes

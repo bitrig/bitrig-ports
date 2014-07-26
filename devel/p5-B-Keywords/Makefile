@@ -5,6 +5,7 @@ COMMENT=	lists of Perl keywords for use in backend modules
 MODULES=	cpan
 
 DISTNAME=	B-Keywords-1.13
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

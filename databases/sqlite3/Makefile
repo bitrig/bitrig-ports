@@ -7,6 +7,7 @@ V=		3.8.0.2
 DISTNAME =	sqlite-src-3080002
 EXTRACT_SUFX =	.zip
 PKGNAME-main=	sqlite3-${V}
+REVISION=	0
 PKGNAME-tcl=	sqlite3-tcl-${V}
 PKGNAME-lemon=	lemon-${V}
 CATEGORIES=	databases

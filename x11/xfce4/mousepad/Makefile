@@ -4,7 +4,7 @@ COMMENT=	Xfce4 simple text editor
 
 XFCE_VERSION=	0.3.0
 XFCE_GOODIE=	mousepad
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://www.xfce.org/projects/mousepad
 # GPLv2

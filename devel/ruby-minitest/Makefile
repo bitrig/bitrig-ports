@@ -3,7 +3,7 @@
 COMMENT =	small and fast replacement for test/unit
 
 DISTNAME =	minitest-2.2.2
-REVISION =	3
+REVISION =	4
 CATEGORIES =	devel
 
 # MIT

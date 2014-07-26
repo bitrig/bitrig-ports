@@ -4,11 +4,9 @@ COMMENT=	add XPath support to HTML::TreeBuilder
 
 MODULES=	cpan
 DISTNAME=	HTML-TreeBuilder-XPath-0.11
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

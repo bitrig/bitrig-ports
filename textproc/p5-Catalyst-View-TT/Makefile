@@ -3,9 +3,8 @@
 COMMENT=	Template Toolkit views for Catalyst
 
 DISTNAME=	Catalyst-View-TT-0.37
+REVISION=	0
 CATEGORIES=	textproc
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

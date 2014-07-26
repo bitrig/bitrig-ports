@@ -4,7 +4,7 @@ COMMENT=		calculate Levenshtein distance between two strings
 
 MODPY_EGG_VERSION=	0.3
 DISTNAME=		py-editdist-${MODPY_EGG_VERSION}
-REVISION =		5
+REVISION =		6
 CATEGORIES=    		devel
 
 HOMEPAGE=		http://www.mindrot.org/projects/py-editdist/

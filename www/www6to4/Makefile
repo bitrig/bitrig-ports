@@ -3,7 +3,7 @@
 COMMENT=		IPv6 to IPv4 web proxy
 
 DISTNAME=		www6to4-1.5
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www
 HOMEPAGE=		http://www.dillema.net/software/www6to4.html
 

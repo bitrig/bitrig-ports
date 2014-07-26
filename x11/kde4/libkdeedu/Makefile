@@ -3,6 +3,7 @@
 COMMENT =	KDE libraries for education apps
 CATEGORIES =	education devel
 DISTNAME =	libkdeedu-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	keduvocdocument		52.0 # 4.7
 

@@ -3,9 +3,8 @@
 COMMENT=		Monad classes, using type families
 
 DISTNAME=		monads-tf-0.1.0.1
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

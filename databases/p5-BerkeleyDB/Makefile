@@ -4,6 +4,7 @@ COMMENT=		Berkeley DB module
 SHARED_ONLY=		Yes
 
 DISTNAME=		BerkeleyDB-0.54
+REVISION=		0
 CATEGORIES=		databases
 MODULES=		cpan
 

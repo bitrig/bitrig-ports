@@ -5,11 +5,9 @@ SHARED_ONLY=	Yes
 COMMENT=	module to implement efficient mapping tables
 
 DISTNAME=	Unicode-Map8-0.12
-REVISION=	4
+REVISION=	5
 CATEGORIES=	converters
 MODULES=	cpan
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

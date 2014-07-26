@@ -5,7 +5,7 @@ CATEGORIES =	devel
 
 DISTNAME =	zed-1.2
 PKGNAME =	ocaml-${DISTNAME}
-REVISION =	1
+REVISION =	2
 MASTER_SITES =	http://forge.ocamlcore.org/frs/download.php/944/
 
 HOMEPAGE =	http://forge.ocamlcore.org/projects/zed/

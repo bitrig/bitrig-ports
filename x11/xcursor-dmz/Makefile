@@ -4,13 +4,11 @@ COMMENT =	style neutral scalable cursor themes
 
 VERSION =	0.4
 DISTNAME =	vanilla-dmz-${VERSION}
-REVISION =	0
+REVISION =	1
 PKGNAME =	xcursor-dmz-${VERSION}
 CATEGORIES =	x11
 
 HOMEPAGE =	http://jimmac.musichall.cz/themes.php?skin=7
-
-MAINTAINER =	Martin Pieuchot <mpi@openbsd.org>
 
 # CC by-sa 3.0
 PERMIT_PACKAGE_CDROM =	Yes

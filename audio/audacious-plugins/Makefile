@@ -8,7 +8,7 @@ V =			3.4.3
 
 DISTNAME =		audacious-plugins-$V
 CATEGORIES =		audio multimedia
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://audacious-media-player.org/
 

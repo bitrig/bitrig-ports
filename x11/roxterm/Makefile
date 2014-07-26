@@ -3,7 +3,7 @@
 COMMENT=		terminal emulator for X
 
 DISTNAME=		roxterm-2.0.1
-REVISION=		10
+REVISION=		11
 CATEGORIES=		x11
 
 HOMEPAGE=		http://roxterm.sourceforge.net/

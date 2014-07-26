@@ -7,7 +7,8 @@ VERSION=	7.4.135
 DISTNAME=	vim-${VERSION}
 PKGNAME-main=	vim-${VERSION}
 PKGNAME-lang=	vim-lang-${VERSION}
-REVISION-main=	2
+REVISION-main=	3
+REVISION-lang=	0
 P=		vim${VERSION:R:S/.//}
 CATEGORIES=	editors
 # Upstream's normal distribution (http://ftp.vim.org/pub/vim/unix/) consists

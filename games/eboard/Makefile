@@ -4,7 +4,7 @@ COMMENT=	gtk+2 chess board interface
 
 DISTNAME=	eboard-1.1.1
 CATEGORIES=	games x11
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.bergo.eng.br/eboard/
 

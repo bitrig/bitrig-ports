@@ -4,12 +4,11 @@ COMMENT =		passive checker of Python programs
 
 MODPY_EGG_VERSION =	0.6.1
 DISTNAME =		pyflakes-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		devel
 
 HOMEPAGE =		https://launchpad.net/pyflakes
-
-MAINTAINER =		frantisek holop <minusf@obiit.org>
 
 # MIT 
 PERMIT_PACKAGE_CDROM =		Yes

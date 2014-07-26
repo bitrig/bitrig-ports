@@ -4,7 +4,7 @@ COMMENT=	extract structure of quoted HTML mail message
 
 MODULES=	cpan
 DISTNAME=	HTML-Quoted-0.03
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	www
 

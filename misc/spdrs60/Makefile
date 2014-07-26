@@ -3,13 +3,11 @@
 COMMENT =	graphical SRCP client to control a digital model railway
 
 DISTNAME =	spdrs60-0.5.6
-REVISION =	2
+REVISION =	3
 CATEGORIES =	misc x11
 
 HOMEPAGE =	http://spdrs60.sourceforge.net/
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=spdrs60/}
-
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

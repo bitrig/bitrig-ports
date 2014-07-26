@@ -5,7 +5,7 @@ COMMENT =		locate directory of original program
 DISTNAME =		FindBin-0.0.5
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/audreyt/findbin
-REVISION =		3
+REVISION =		4
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

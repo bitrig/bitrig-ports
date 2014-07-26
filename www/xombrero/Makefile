@@ -2,12 +2,11 @@
 
 COMMENT=		vi-like minimalists web browser
 DISTNAME=		xombrero-1.6.3
+REVISION=		0
 CATEGORIES=		www
 EPOCH=			1
 
 HOMEPAGE=		http://opensource.conformal.com/wiki/xombrero
-
-MAINTAINER=		Gonzalo L. R. <gonzalo@openbsd.org>
 
 # MPL 1.1/GPL 2.0/LGPL 2.1 for tld-rules file
 # BSD

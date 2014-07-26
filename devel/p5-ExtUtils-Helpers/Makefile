@@ -4,9 +4,8 @@ COMMENT =	various portability utilities for module builders
 
 MODULES =	cpan
 DISTNAME =	ExtUtils-Helpers-0.022
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =    Sergey Bronnikov <estetus@gmail.com>
 
 CPAN_AUTHOR =	LEONT
 

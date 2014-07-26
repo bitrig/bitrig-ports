@@ -7,7 +7,7 @@ COMMENT=	Python-alike language for writing Python extension modules
 MODPY_EGG_VERSION=	0.9.9
 DISTNAME=	Pyrex-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:L}
-REVISION =	1
+REVISION =	2
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/

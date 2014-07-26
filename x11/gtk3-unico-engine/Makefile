@@ -7,7 +7,7 @@ COMMENT=	Unico GTK+3 engine
 V=		1.0.2.1
 DISTNAME=	unico-${V}
 PKGNAME=	gtk3-unico-engine-${V}
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	x11
 

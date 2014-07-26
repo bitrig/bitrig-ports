@@ -5,7 +5,7 @@ COMMENT=	formatter for spellchecking pod
 MODULES=	cpan
 
 DISTNAME=	Pod-Spell-1.01
-REVISION=	4
+REVISION=	5
 CATEGORIES=	textproc
 
 # Perl

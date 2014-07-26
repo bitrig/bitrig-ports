@@ -5,11 +5,9 @@ COMMENT =		Monadic parser combinators
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		parsec-3.1.3
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 HOMEPAGE =		http://www.cs.uu.nl/~daan/parsec.html
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

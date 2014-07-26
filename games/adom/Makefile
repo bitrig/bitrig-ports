@@ -4,7 +4,7 @@
 COMMENT =	Ancient Domains of Mystery - roguelike
 
 DISTNAME =	adom-1.1.1
-REVISION =	4
+REVISION =	5
 CATEGORIES =	games
 MASTER_SITES =  http://www.adom.de/adom/download/linux/
 HOMEPAGE =	http://www.adom.de/
@@ -15,8 +15,6 @@ ONLY_FOR_ARCHS =i386
 # binary port
 NO_BUILD =	Yes
 NO_TEST =	Yes
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 PERMIT_PACKAGE_CDROM =	no modify
 PERMIT_PACKAGE_FTP =	no modify

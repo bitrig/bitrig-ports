@@ -5,6 +5,7 @@ COMMENT =		Emacs mode for editing Haskell code
 VSN =			2.8.0
 DISTNAME =		haskell-mode-${VSN}
 PKGNAME =		emacs-haskell-${VSN}
+REVISION =		0
 
 CATEGORIES =		devel editors lang
 

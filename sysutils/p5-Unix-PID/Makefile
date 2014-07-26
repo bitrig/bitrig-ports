@@ -3,9 +3,8 @@
 COMMENT=	interface for getting PID info
 
 DISTNAME=	Unix-PID-0.23
+REVISION=	0
 CATEGORIES=	sysutils
-
-MAINTAINER=	Michael Erdely <merdely@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

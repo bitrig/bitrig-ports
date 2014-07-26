@@ -3,11 +3,9 @@
 COMMENT=	play, encode, and manage Ogg Vorbis files
 
 DISTNAME=	vorbis-tools-1.4.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=    	audio
 HOMEPAGE=	http://www.vorbis.com/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

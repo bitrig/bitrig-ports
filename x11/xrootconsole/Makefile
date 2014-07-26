@@ -3,7 +3,7 @@
 COMMENT=		writes any log live onto the background
 V=			0.6
 DISTNAME=		xrootconsole-${V}
-REVISION=		2
+REVISION=		3
 CATEGORIES=		x11
 
 # GPL

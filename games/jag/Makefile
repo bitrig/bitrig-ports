@@ -4,7 +4,7 @@ V = 			0.3.2
 DISTNAME =		jag-${V}
 CATEGORIES =		games
 HOMEPAGE =		http://jag.xlabsoft.com
-REVISION =		0
+REVISION =		1
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

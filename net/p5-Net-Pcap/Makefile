@@ -6,7 +6,7 @@ COMMENT=	module for pcap access
 
 MODULES=	cpan
 DISTNAME=	Net-Pcap-0.16
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
 
 PERMIT_PACKAGE_CDROM=	Yes

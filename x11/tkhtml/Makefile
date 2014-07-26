@@ -4,14 +4,13 @@ SHARED_ONLY =	Yes
 
 COMMENT =	Tk widget to display HTML/CSS formatted contents
 
-REVISION =	0
+REVISION =	1
 DISTNAME =	tkhtml3-alpha-16
 PKGNAME =	${DISTNAME:S/3-alpha-/-3a/}
 SHARED_LIBS =	Tkhtml30 0.0
 CATEGORIES =	x11
 HOMEPAGE = 	http://tkhtml.tcl.tk/
 MASTER_SITES =	${HOMEPAGE}
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =		Yes

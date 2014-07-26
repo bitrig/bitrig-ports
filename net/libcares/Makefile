@@ -5,14 +5,13 @@ COMMENT=	asynchronous resolver library
 V=		1.10.0
 DISTNAME=	c-ares-${V}
 PKGNAME=	libcares-${V}
+REVISION=	0
 CATEGORIES=	net devel
 MASTER_SITES=	${HOMEPAGE}download/
 
 SHARED_LIBS=	cares	2.5
 
 HOMEPAGE=	http://c-ares.haxx.se/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

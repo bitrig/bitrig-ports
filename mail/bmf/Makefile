@@ -2,11 +2,9 @@
 
 COMMENT=		easy to use Bayesian spam filter
 DISTNAME=		bmf-0.9.4
-REVISION=		4
+REVISION=		5
 CATEGORIES=		mail
 HOMEPAGE=		http://sourceforge.net/projects/bmf/
-
-MAINTAINER=		Jim Razmus <jim@bonetruck.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -15,7 +15,7 @@ LIB_DEPENDS =	x11/kde/libs3
 
 SEPARATE_BUILD =	flavored
 
-REVISION =	13
+REVISION =	14
 
 WANTLIB =  c expat m pthread pthread-stubs util z
 WANTLIB += ICE SM X11 Xext Xfixes Xrender Xt fontconfig freetype xcb

@@ -5,11 +5,9 @@ COMMENT=	update LDAP entries with a text editor
 DISTNAME=	ldapvi-1.7
 CATEGORIES=	editors
 
-REVISION=	6
+REVISION=	7
 
 HOMEPAGE=	http://www.lichteblau.com/ldapvi.html
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

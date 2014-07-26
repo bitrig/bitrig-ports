@@ -4,8 +4,8 @@ D=		20140626-r13480
 V=		3.5pre${D:C/-.*//}
 DISTNAME=	squid-3.HEAD-$D
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	0
-REVISION-main=	1
+REVISION=	1
+REVISION-main=	2
 
 # future versions will be requiring c++11 support, so let's build
 # the devel version in squid/snapshot with a newer compiler to get

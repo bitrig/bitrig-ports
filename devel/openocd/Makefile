@@ -3,14 +3,12 @@
 COMMENT =	Open On-Chip Debugging
 
 DISTNAME =	openocd-0.6.1
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 
 SHARED_LIBS +=  openocd		1.0 # unknown
 
 HOMEPAGE =	http://openocd.sourceforge.net/
-
-MAINTAINER =	Sylvestre Gallon <ccna.syl@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

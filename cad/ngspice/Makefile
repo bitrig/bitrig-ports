@@ -3,12 +3,11 @@
 COMMENT =		circuit simulator, based on Berkeley SPICE
 
 DISTNAME =		ngspice-26
+REVISION =		0
 
 CATEGORIES =		cad
 
 HOMEPAGE =		http://ngspice.sourceforge.net/
-
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

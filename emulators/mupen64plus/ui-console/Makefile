@@ -1,7 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2014/04/17 07:03:59 bentley Exp $
 
 COMMENT =		n64 emulator command-line ui plugin
-REVISION =		0
+REVISION =		1
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

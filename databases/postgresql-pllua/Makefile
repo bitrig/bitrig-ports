@@ -5,14 +5,13 @@ SHARED_ONLY =		Yes
 COMMENT =		Lua procedural language support for PostgreSQL
 
 VERSION =		1.0
+REVISION =		0
 DISTNAME =		pllua-${VERSION}
 PKGNAME =		postgresql-pllua-${VERSION}
 
 CATEGORIES =		databases
 
 HOMEPAGE =		http://pllua.projects.postgresql.org/
-
-MAINTAINER =		Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

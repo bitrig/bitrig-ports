@@ -3,12 +3,11 @@
 COMMENT =		text adventure game
 
 PKGNAME =		dungeon-2.7s
+REVISION =		0
 DISTNAME =		dungn27s
 EXTRACT_SUFX =		.zip
 
 CATEGORIES =		games
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # Commercial use prohibited.
 PERMIT_PACKAGE_CDROM =	no commercial use

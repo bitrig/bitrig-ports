@@ -4,7 +4,7 @@ COMMENT=		ensure that a platform has weaken support
 
 MODULES=		cpan
 DISTNAME=		Task-Weaken-1.03
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # perl

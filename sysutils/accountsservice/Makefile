@@ -6,15 +6,13 @@ COMMENT=	D-Bus interface for user account query and manipulation
 
 DISTNAME=	accountsservice-0.6.37
 EXTRACT_SUFX=	.tar.xz
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=  accountsservice           0.0 # 0.0
 
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://cgit.freedesktop.org/accountsservice/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,11 +3,10 @@
 COMMENT =		C++ MIME library
 
 DISTNAME =		mimetic-0.9.8
+REVISION =		0
 CATEGORIES =		mail devel
 
 SHARED_LIBS =		mimetic	1.0 #0.0
-
-MAINTAINER =		James Turner <james@calminferno.net>
 
 HOMEPAGE =		http://www.codesink.org/mimetic_mime_library.html
 MASTER_SITES =		http://www.codesink.org/download/

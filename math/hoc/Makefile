@@ -5,14 +5,12 @@ COMMENT=	from Kernighan & Pike: High Order Calculator
 
 DISTNAME=	hoc
 PKGNAME=	hoc-1.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	math
 
 MASTER_SITES=	http://cm.bell-labs.com/cm/cs/who/bwk/
 EXTRACT_SUFX=	.sh
 EXTRACT_CASES=	*.sh) /bin/sh ${FULLDISTDIR}/$$archive;;
-
-MAINTAINER=	Ian Darwin <ian@openbsd.org>
 
 HOMEPAGE=	http://cm.bell-labs.com/cm/cs/who/bwk/
 

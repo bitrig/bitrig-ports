@@ -4,7 +4,7 @@ COMMENT =	library for writing single instance GTK+3 applications
 
 GNOME_PROJECT =	libunique
 GNOME_VERSION =	3.0.2
-REVISION=	1
+REVISION=	2
 
 PKGNAME=	${GNOME_PROJECT}3-${GNOME_VERSION}
 

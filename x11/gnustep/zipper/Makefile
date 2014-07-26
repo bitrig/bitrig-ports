@@ -3,7 +3,7 @@
 COMMENT =	tool for inspecting compressed archvies
 
 DISTNAME =	Zipper-1.5
-REVISION =	2
+REVISION =	3
 
 HOMEPAGE =	http://gap.nongnu.org/zipper/
 MASTER_SITES =	${MASTER_SITE_SAVANNAH:=gap/}

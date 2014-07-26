@@ -5,6 +5,7 @@ COMMENT=		Python PDF toolkit
 MODPY_EGG_VERSION =	1.13
 DISTNAME=		pyPdf-${MODPY_EGG_VERSION}
 PKGNAME=		${DISTNAME:L:S/^py/py-/}
+REVISION=		0
 CATEGORIES=		textproc devel
 
 HOMEPAGE=		http://pybrary.net/pyPdf/

@@ -4,13 +4,11 @@ COMMENT =	STUN server implementing RFCs 5389, 5769, and 5780
 NOT_FOR_ARCHS = hppa mips64 mips64el sparc64 # atomic ops
 
 VERSION =	1.2.5
-REVISION =	0
+REVISION =	1
 DISTNAME =	stunserver-${VERSION}
 PKGNAME =	stuntman-${VERSION}
 CATEGORIES =	telephony net
 EXTRACT_SUFX =	.tgz
-
-MAINTAINER =	Roman Kravchuk <kravchuk.kp@gmail.com>
 
 HOMEPAGE =	http://www.stunprotocol.org/
 

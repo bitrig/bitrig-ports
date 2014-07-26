@@ -5,7 +5,7 @@ COMMENT =	web error handling and exception catching
 MODPY_EGG_VERSION = 0.10.3
 DISTNAME =	WebError-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	www devel
 

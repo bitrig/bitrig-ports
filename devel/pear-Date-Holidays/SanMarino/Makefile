@@ -2,6 +2,6 @@
 
 COMMENT =	San Marinian holiday classes for PHP
 HOLNAME =	SanMarino-0.1.1
-REVISION =	0
+REVISION =	1
 
 .include <bsd.port.mk>

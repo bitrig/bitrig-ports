@@ -6,7 +6,7 @@ COMMENT=	Python interface to XMMS
 
 DISTNAME=	pyxmms-1.06
 PKGNAME=	${DISTNAME:S/py/py-/}
-REVISION =	7
+REVISION =	8
 CATEGORIES=	audio
 
 HOMEPAGE=	http://people.via.ecp.fr/~flo/2002/PyXMMS/doc/xmms.html

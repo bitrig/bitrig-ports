@@ -3,7 +3,7 @@
 COMMENT=		manage and configure devices that supports IPMI
 
 DISTNAME=		ipmitool-1.8.11
-REVISION=		1
+REVISION=		2
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://ipmitool.sourceforge.net/

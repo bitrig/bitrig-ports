@@ -4,10 +4,8 @@ COMMENT=	Perl Objects as Hash, Array and Scalar at the same time
 
 MODULES=	cpan
 DISTNAME=	Object-MultiType-0.05
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM=	Yes

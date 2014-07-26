@@ -3,7 +3,7 @@
 COMMENT =		constraint manipulation
 
 DISTNAME=		constraints-0.3.2
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 # BSD3

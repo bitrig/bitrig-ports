@@ -3,13 +3,12 @@
 COMMENT=	Linuxdoc SGML DTD
 
 DISTNAME=	linuxdoc-1.1
+REVISION=	0
 CATEGORIES=	textproc
 
 MASTER_SITES=	http://dist.bsdlab.org/
 
 RUN_DEPENDS=	textproc/iso8879
-
-MAINTAINER=	Matthieu Herrb <matthieu@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	no license
 PERMIT_PACKAGE_FTP=	no license

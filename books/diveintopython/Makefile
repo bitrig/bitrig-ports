@@ -4,14 +4,12 @@ COMMENT=	book about Python for experienced programmers
 
 VERSION=	5.4
 PKGNAME=	diveintopython-${VERSION}
-REVISION=	0
+REVISION=	1
 DISTNAME=	diveintopython-html-${VERSION}
 DISTNAMEPRINT=	diveintopython-pdf-${VERSION}
 CATEGORIES=	books
 
 HOMEPAGE=	http://diveintopython.org/
-
-MAINTAINER=	Aleksander Piotrowski <alek@openbsd.org>
 
 # FDL
 PERMIT_PACKAGE_CDROM=	Yes

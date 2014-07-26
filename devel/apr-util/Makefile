@@ -3,13 +3,11 @@
 COMMENT=	companion library to APR
 
 V=		1.5.3
-REVISION=	0
+REVISION=	1
 DISTNAME=	apr-util-$V
 SHARED_LIBS +=	aprutil-1          5.0     # .5.3
 
 CATEGORIES=	devel
-
-MAINTAINER=	Stefan Sperling <stsp@openbsd.org>
 
 HOMEPAGE=	http://apr.apache.org/
 

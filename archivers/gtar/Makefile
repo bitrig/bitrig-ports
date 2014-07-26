@@ -4,10 +4,9 @@ COMMENT=	GNU version of the traditional tape archiver
 
 DISTNAME=	tar-1.27.1
 PKGNAME=	g${DISTNAME}
+REVISION=	0
 CATEGORIES=	archivers
 HOMEPAGE=	https://www.gnu.org/software/tar/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

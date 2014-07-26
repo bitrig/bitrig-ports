@@ -4,9 +4,8 @@ COMMENT=		get information about a class and its structure
 
 MODULES=		cpan
 DISTNAME=		Class-Inspector-1.28
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

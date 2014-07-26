@@ -4,7 +4,7 @@ COMMENT=	utilities for handling Byte Order Marks
 
 MODULES=	cpan
 DISTNAME=	File-BOM-0.14
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 RUN_DEPENDS=	devel/p5-Readonly

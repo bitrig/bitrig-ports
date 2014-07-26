@@ -4,7 +4,7 @@ COMMENT=	curses version of the classic game
 
 DISTNAME=	connect4
 PKGNAME=	connect4-3.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	games
 
 # License: NONE

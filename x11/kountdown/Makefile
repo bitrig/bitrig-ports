@@ -3,13 +3,11 @@
 COMMENT=	screen saver that displays a countdown to a selected date
 
 DISTNAME=	kountdown-0.4.1
-REVISION=	10
+REVISION=	11
 
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.lysator.liu.se/~erre/kountdown.html
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=  Yes

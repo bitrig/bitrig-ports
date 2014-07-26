@@ -3,10 +3,10 @@
 COMMENT=		open source web analytics software program
 
 DISTNAME=		piwik-2.4.1
+REVISION=		0
 CATEGORIES=		www
 
 HOMEPAGE=		http://www.piwik.org/
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

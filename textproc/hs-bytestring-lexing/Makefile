@@ -3,6 +3,7 @@
 COMMENT =		parse literals from strict or lazy bytestrings
 
 DISTNAME =		bytestring-lexing-0.4.3
+REVISION =		0
 CATEGORIES =		textproc
 HOMEPAGE =		http://code.haskell.org/~wren/
 

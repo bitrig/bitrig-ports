@@ -6,10 +6,9 @@ COMMENT =	circuit drawing and schematic capture
 
 BASEVER =	3.7
 DISTNAME =	xcircuit-${BASEVER}.55
-REVISION =	0
+REVISION =	1
 CATEGORIES =	cad
 HOMEPAGE =	http://opencircuitdesign.com/xcircuit/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

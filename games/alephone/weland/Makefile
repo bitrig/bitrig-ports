@@ -5,7 +5,7 @@ COMMENT =		marathon / alephone map editor
 V =			211
 DISTNAME =		weland-r${V}-src
 PKGNAME =		weland-${V}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		games
 

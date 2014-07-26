@@ -3,6 +3,7 @@
 COMMENT =	rfc4656 one-way active measurement protocol
 
 DISTNAME =	owamp-3.1
+REVISION =	0
 
 CATEGORIES =	net
 

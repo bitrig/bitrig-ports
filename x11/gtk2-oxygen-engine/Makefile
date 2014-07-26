@@ -4,14 +4,12 @@ COMMENT =		KDE Oxygen widget theme for GTK
 SHARED_ONLY =		Yes
 
 V =			1.4.5
-REVISION =		0
+REVISION =		1
 DISTNAME =		oxygen-gtk2-${V}
 PKGNAME =		gtk2-oxygen-engine-${V}
 
 CATEGORIES =		x11
 HOMEPAGE =		https://projects.kde.org/projects/playground/artwork/oxygen-gtk/
-
-MAINTAINER =		Fabian Raetz <fabian.raetz@gmail.com>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

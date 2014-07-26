@@ -3,6 +3,7 @@
 COMMENT=		Pure Perl MySQL network protocol interface
 
 VERSION=		0.11
+REVISION=		0
 DISTNAME=		Net-MySQL-${VERSION}
 CATEGORIES=		net
 

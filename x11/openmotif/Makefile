@@ -4,7 +4,8 @@ COMMENT-main=		Motif toolkit
 COMMENT-demos=		Motif toolkit demos
 
 VERSION=		2.3.4
-REVISION-main=		1
+REVISION-main=		2
+REVISION-demos=		0
 DISTNAME=		motif-${VERSION}
 EXTRACT_SUFX=		-src.tgz
 PKGNAME-main=		openmotif-${VERSION}

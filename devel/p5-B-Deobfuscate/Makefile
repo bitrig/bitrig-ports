@@ -5,7 +5,7 @@ COMMENT=	Perl module for use in de-obfuscating source code
 MODULES=	cpan
 
 DISTNAME=	B-Deobfuscate-0.20
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

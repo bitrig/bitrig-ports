@@ -2,6 +2,7 @@
 
 COMMENT =	Nepomuk-based KDE Plasma widgets
 DISTNAME =	nepomuk-widgets-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	nepomukwidgets		51.0
 

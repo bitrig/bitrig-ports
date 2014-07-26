@@ -3,10 +3,9 @@
 COMMENT =		minimalistic text based status bar
 
 DISTNAME =		xmobar-0.20.1
+REVISION =		0
 CATEGORIES =		x11
 HOMEPAGE =		http://projects.haskell.org/xmobar
-
-MAINTAINER =		Jona Joachim <jona@joachim.cc>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

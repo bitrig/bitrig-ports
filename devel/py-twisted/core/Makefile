@@ -3,6 +3,7 @@
 COMMENT=	event-based Python framework (core module)
 
 VERSION=	11.1.0
+REVISION=	0
 DISTNAME=	TwistedCore-${VERSION}
 PKGNAME=	py-twisted-core-${VERSION}
 

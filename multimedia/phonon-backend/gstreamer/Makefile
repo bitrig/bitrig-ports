@@ -2,6 +2,7 @@
 
 COMMENT =	GStreamer-based Phonon backend
 VERSION =	4.7.1
+REVISION =	0
 DISTNAME =	phonon-backend-gstreamer-${VERSION}
 
 MASTER_SITES =	${MASTER_SITE_KDE:=stable/phonon/phonon-backend-gstreamer/${VERSION}/}

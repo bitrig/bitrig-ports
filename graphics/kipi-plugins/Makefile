@@ -7,8 +7,8 @@ DISTNAME =		kipi-plugins-0.1.6
 PKGNAME-main =		${DISTNAME}
 PKGNAME-cal =		kipi-kcal-plugin-0.1.6
 PKGSPEC-main =		kipi-plugins-<1
-REVISION-main =		11
-REVISION-cal =		9
+REVISION-main =		12
+REVISION-cal =		10
 
 HOMEPAGE =		http://extragear.kde.org/apps/kipi/
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=kipi/}

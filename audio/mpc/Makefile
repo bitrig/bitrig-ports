@@ -4,11 +4,10 @@ COMMENT=		command line client for mpd
 
 VER=			0.26
 DISTNAME=		mpc-${VER}
+REVISION=		0
 CATEGORIES=		audio
 
 HOMEPAGE=		http://www.musicpd.org/clients/mpc/
-
-MAINTAINER=		David Coppa <dcoppa@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

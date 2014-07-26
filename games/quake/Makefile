@@ -10,6 +10,7 @@ SOMINOR =		0
 V =			0.6.0
 DISTNAME =		quakeforge-$V
 PKGNAME-main =		quake-$V
+REVISION =		0
 PKGNAME-libs =		quake-libs-$V
 FULLPKGNAME-server =	quakeworld-server-$V
 FULLPKGPATH-server =	games/quake,-server
@@ -37,8 +38,6 @@ SHARED_LIBS +=		QFutil		${SOMAJOR}.${SOMINOR}
 CATEGORIES =		games x11
 
 HOMEPAGE =		http://www.quakeforge.net/
-
-MAINTAINER =		Antti Harri <iku@openbsd.fi>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

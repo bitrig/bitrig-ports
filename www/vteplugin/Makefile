@@ -3,7 +3,7 @@
 COMMENT =	npapi vte-based terminal for web browsers
 
 DISTNAME =	vteplugin-0.1
-REVISION =	11
+REVISION =	12
 CATEGORIES =	www x11
 
 # WTFPL

@@ -10,15 +10,13 @@ NOT_FOR_ARCHS=	m88k vax
 
 V=		2008-05-R1
 DISTNAME=	kismet-${V}
-REVISION=	3
+REVISION=	4
 PKGNAME-main=	kismet-${V:S,-,,g}
 PKGNAME-gpsmap=	kismet-gpsmap-${V:S,-,,g}
 CATEGORIES=	net security
 
 HOMEPAGE=	http://www.kismetwireless.net/
 MASTER_SITES=	${HOMEPAGE}code/
-
-MAINTAINER=	Matthias Kilian <kili@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

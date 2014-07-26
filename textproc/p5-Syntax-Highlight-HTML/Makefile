@@ -4,7 +4,7 @@ COMMENT=	syntax highlight for HTML
 
 MODULES=	cpan
 DISTNAME=	Syntax-Highlight-HTML-0.04
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc www
 USE_GROFF =	Yes
 

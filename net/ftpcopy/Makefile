@@ -3,11 +3,10 @@
 COMMENT =	FTP listing and transfer tools
 
 DISTNAME =	ftpcopy-0.6.7
+REVISION =	0
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.ohse.de/uwe/ftpcopy.html
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

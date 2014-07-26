@@ -3,12 +3,11 @@
 COMMENT=	sendmail milter plugin for regular expression filtering
 
 DISTNAME=	milter-regex-1.9
+REVISION=	0
 CATEGORIES=	mail
 MASTER_SITES=	http://www.benzedrine.cx/
 
 HOMEPAGE=	http://www.benzedrine.cx/milter-regex.html
-
-MAINTAINER=	Daniel Hartmeier <dhartmei@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

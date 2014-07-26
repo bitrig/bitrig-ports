@@ -4,10 +4,9 @@ COMMENT=	Secure RTP library
 
 DISTNAME=	srtp-1.4.4
 PKGNAME=	lib${DISTNAME}
+REVISION=	0
 CATEGORIES=	security
 EXTRACT_SUFX=	.tgz
-
-MAINTAINER=	David Hill <dhill@openbsd.org>
 
 HOMEPAGE=	http://srtp.sourceforge.net/srtp.html
 

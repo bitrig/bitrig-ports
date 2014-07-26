@@ -4,7 +4,7 @@ COMMENT=		framework for streaming media
 
 DISTNAME=		gstreamer-${V}
 PKGNAME=		${GST_PKGNAME_PREFIX}-${V}
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  gstreamer-1.0        1.0      # 204.0
 SHARED_LIBS +=  gstbase-1.0          1.0      # 204.0

@@ -3,10 +3,9 @@
 COMMENT =	typing break alarm and timer
 
 DISTNAME =	xwrits-2.26
+REVISION =	0
 CATEGORIES =	x11
 HOMEPAGE =	http://www.lcdf.org/~eddietwo/xwrits/
-
-MAINTAINER =	Scott Vokes <vokes.s@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

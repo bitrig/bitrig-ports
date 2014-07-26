@@ -5,6 +5,7 @@ COMMENT=	fast anagram generator
 V=		0.95
 DISTNAME=	an_${V}.orig
 PKGNAME=	an-${V}
+REVISION=	0
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_DEBIAN:=main/a/an/}
 

@@ -3,10 +3,8 @@
 COMMENT=	curses-based mp3 player
 
 DISTNAME=	ksmp3play-0.5.1
-REVISION=	4
+REVISION=	5
 CATEGORIES=    	audio
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

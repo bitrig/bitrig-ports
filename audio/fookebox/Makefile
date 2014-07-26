@@ -4,7 +4,7 @@ COMMENT=		jukebox frontend to mpd
 
 MODPY_EGG_VERSION=	0.6.1
 DISTNAME=		fookebox-${MODPY_EGG_VERSION}
-REVISION=		3
+REVISION=		4
 CATEGORIES=		audio www
 
 HOMEPAGE=		https://fookebox.googlecode.com/

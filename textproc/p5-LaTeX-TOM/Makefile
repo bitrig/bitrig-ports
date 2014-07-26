@@ -3,6 +3,7 @@
 COMMENT=		parse, analyze and manipulate LaTeX documents
 
 DISTNAME=		LaTeX-TOM-1.01
+REVISION=		0
 CATEGORIES=		textproc
 
 MODULES=		cpan

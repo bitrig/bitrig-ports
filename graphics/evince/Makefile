@@ -8,7 +8,7 @@ COMMENT-nautilus= evince plugin for nautilus
 
 GNOME_PROJECT=	evince
 GNOME_VERSION=	3.12.1
-REVISION=	0
+REVISION=	1
 
 PKGNAME-main=	${DISTNAME}
 PKGNAME-dvi=	evince-dvi-${GNOME_VERSION}
@@ -21,9 +21,6 @@ CATEGORIES=	graphics print
 
 SHARED_LIBS +=  evdocument3               0.2 # 4.0
 SHARED_LIBS +=  evview3                   0.0 # 3.0
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

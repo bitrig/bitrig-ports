@@ -3,7 +3,7 @@
 COMMENT=	convert text strings to printed bars
 
 DISTNAME=	barcode-0.98
-REVISION =	2
+REVISION =	3
 CATEGORIES=	graphics
 
 # GPLv2

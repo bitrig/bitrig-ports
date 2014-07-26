@@ -3,11 +3,9 @@
 COMMENT =	color correction utility for digital images
 DISTNAME =	delaboratory-0.8
 CATEGORIES =	graphics x11
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	https://code.google.com/p/delaboratory/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

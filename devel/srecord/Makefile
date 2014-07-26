@@ -6,7 +6,7 @@ COMMENT=		collection of tools for manipulating EPROM load files
 
 DISTNAME=		srecord-1.64
 CATEGORIES=		devel
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  srecord              0.0      # 0.0
 

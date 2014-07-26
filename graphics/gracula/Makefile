@@ -3,13 +3,12 @@
 COMMENT=	graphic counter language compiler/interpreter
 
 DISTNAME=	gracula-3.0
+REVISION=	0
 CATEGORIES=	graphics
 
 MASTER_SITES=	${HOMEPAGE}
 
 HOMEPAGE=	http://www.whizkidtech.redprince.net/gcl/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c m

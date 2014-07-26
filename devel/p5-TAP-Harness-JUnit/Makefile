@@ -4,8 +4,8 @@ COMMENT =	generate JUnit compatible output from TAP results
 
 MODULES =	cpan
 DISTNAME =	TAP-Harness-JUnit-0.41
+REVISION =	0
 CATEGORIES =	devel
-MAINTAINER =	Ingo Schwarze <schwarze@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

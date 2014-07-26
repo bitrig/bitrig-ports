@@ -4,11 +4,9 @@ COMMENT=	CVS repository synchronization utility
 
 PKGNAME=	cvsync-0.25.0pre0
 DISTNAME=	cvsync-0.24.19
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 HOMEPAGE=	http://www.cvsync.org/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

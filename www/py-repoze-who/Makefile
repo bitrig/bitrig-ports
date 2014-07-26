@@ -5,6 +5,7 @@ COMMENT =	identification and authentication framework for WSGI
 MODPY_EGG_VERSION = 2.0
 DISTNAME =	repoze.who-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:S/./-/}
+REVISION =	0
 
 CATEGORIES =	www devel
 HOMEPAGE =	http://pypi.python.org/pypi/repoze.who

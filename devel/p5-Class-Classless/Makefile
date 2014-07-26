@@ -4,7 +4,7 @@ COMMENT=		perl object without classes
 
 MODULES=		cpan
 DISTNAME=		Class-Classless-1.35
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # perl

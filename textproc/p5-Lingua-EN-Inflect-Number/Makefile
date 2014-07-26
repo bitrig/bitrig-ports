@@ -4,10 +4,8 @@ COMMENT=	force number of words to singular or plural
 
 MODULES=	cpan
 DISTNAME=	Lingua-EN-Inflect-Number-1.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,12 +3,10 @@
 COMMENT =		calculate and print calendars
 
 DISTNAME =		gcal-3.6.3
-REVISION =		0
+REVISION =		1
 CATEGORIES =		astro
 
 HOMEPAGE =		https://www.gnu.org/software/gcal/
-
-MAINTAINER =		Hermann Gottschalk <magnum@pestilenz.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM = Yes

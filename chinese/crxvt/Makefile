@@ -4,12 +4,10 @@ COMMENT=	Chinese(Big5) VT100 terminal emulator for X
 
 DISTNAME=       crxvt-2.10-2
 PKGNAME=        zh-crxvt-2.10.2
-REVISION=	3
+REVISION=	4
 CATEGORIES=     chinese
 
 MASTER_SITES=	ftp://ftp.tw.openbsd.org/pub/OpenBSD/distfiles/
-
-MAINTAINER=     Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   no license
 PERMIT_PACKAGE_FTP=     no license

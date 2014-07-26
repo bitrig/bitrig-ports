@@ -2,13 +2,11 @@
 
 COMMENT =	ncurses Atom/RSS newsreader for the console
 DISTNAME =	canto-0.7.10
-REVISION =	2
+REVISION =	3
 CATEGORIES =	www
 
 MASTER_SITES =	http://codezen.org/static/
 HOMEPAGE =	http://codezen.org/canto/
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

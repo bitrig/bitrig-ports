@@ -5,9 +5,8 @@ COMMENT =		Scrap Your Boilerplate library for generic programming
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		syb-0.4.0
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

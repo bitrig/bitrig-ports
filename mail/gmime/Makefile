@@ -9,6 +9,7 @@ GNOME_PROJECT=	gmime
 GNOME_VERSION=	2.6.20
 
 PKGNAME-main=	${DISTNAME}
+REVISION=	0
 PKGNAME-mono=	gmime-sharp-${GNOME_VERSION}
 
 SHARED_LIBS +=  gmime-2.6            0.1      # 619.0

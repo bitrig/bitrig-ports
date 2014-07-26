@@ -3,7 +3,7 @@
 COMMENT=	test tool for slow HTTP reads/posts
 
 DISTNAME =	slowhttptest-1.6
-REVISION =	0
+REVISION =	1
 
 CATEGORIES=	www security
 

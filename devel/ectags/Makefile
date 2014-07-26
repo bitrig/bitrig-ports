@@ -4,10 +4,9 @@ COMMENT=	multilanguage implementation of ctags
 
 DISTNAME=	ctags-5.8
 PKGNAME=	e${DISTNAME}
+REVISION=	0
 CATEGORIES=	devel
 HOMEPAGE=	http://ctags.sourceforge.net/
-
-MAINTAINER=	Alexandr Shadchin <shadchin@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT=	filtering local mail delivery agent
 
 DISTNAME=	procmail-3.22
 CATEGORIES=	mail
-REVISION=	4
+REVISION=	5
 
 MASTER_SITES=	${HOMEPAGE} \
 		http://mirror.switch.ch/ftp/mirror/procmail/ \

@@ -3,6 +3,7 @@
 COMMENT=		fast base16 (hex) encoding and decoding for ByteStrings
 
 DISTNAME=		base16-bytestring-0.1.1.5
+REVISION=		0
 CATEGORIES=		devel
 
 # BSD3

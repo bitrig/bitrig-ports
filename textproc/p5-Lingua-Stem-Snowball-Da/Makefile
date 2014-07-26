@@ -4,7 +4,7 @@ COMMENT=	Porters stemming algorithm for Denmark
 
 MODULES=	cpan
 DISTNAME=	Lingua-Stem-Snowball-Da-1.01
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 # GPL

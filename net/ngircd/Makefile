@@ -3,12 +3,11 @@
 COMMENT =	lightweight irc server
 
 DISTNAME =	ngircd-21.1
+REVISION =	0
 
 CATEGORIES =	net
 
 HOMEPAGE =	http://ngircd.barton.de/
-
-MAINTAINER =	Federico G. Schwindt <fgsch@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -6,7 +6,8 @@ COMMENT-editor = 	UFO:AI map editor
 DISTNAME =		ufoai-${V}-source
 PKGNAME-main =		${DISTNAME:S/-source//}
 PKGNAME-editor = 	uforadiant-${V}
-REVISION-editor =	0
+REVISION-main =		0
+REVISION-editor =	1
 
 EXTRACT_SUFX =		.tar.bz2
 

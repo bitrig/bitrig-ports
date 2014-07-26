@@ -14,8 +14,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		http://jenkins-ci.org/
 
-MAINTAINER =		Ian Darwin <ian@openbsd.org>
-
 # Code under MIT license, Artwork under Creative Commons
 PERMIT_PACKAGE_CDROM =	Yes
 

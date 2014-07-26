@@ -3,12 +3,11 @@
 COMMENT=		simple irc client
 
 DISTNAME=		sic-1.2
+REVISION=		0
 
 CATEGORIES=		net
 
 HOMEPAGE=		http://tools.suckless.org/sic/
-
-MAINTAINER =		Joerg Jung <jung@openbsd.org>
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes

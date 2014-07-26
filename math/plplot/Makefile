@@ -17,15 +17,13 @@ SHARED_LIBS =	csirocsa	3.0	\
 PKGNAME-main =	${DISTNAME}
 PKGNAME-c++ =	plplot-c++-${VERSION}
 PKGNAME-f77 =	plplot-f77-${VERSION}
-REVISION-main =	9
-REVISION-c++ =	10
-REVISION-f77 =	12
+REVISION-main =	10
+REVISION-c++ =	11
+REVISION-f77 =	13
 
 CATEGORIES =	math graphics
 
 HOMEPAGE =	http://plplot.sourceforge.net/
-
-MAINTAINER =	Steven Mestdagh <steven@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM =		Yes

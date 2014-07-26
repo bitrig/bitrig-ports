@@ -3,13 +3,12 @@
 COMMENT=		count lines of code
 
 DISTNAME=		cloc-1.60
+REVISION=		0
 DIST_SUBDIR=		cloc
 
 CATEGORIES=		textproc devel
 
 HOMEPAGE=		http://cloc.sourceforge.net/
-
-MAINTAINER=		Joerg Jung <jung@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

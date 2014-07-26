@@ -3,12 +3,10 @@
 COMMENT=	mail user agent for X in C with a Tcl/Tk frontend
 
 DISTNAME=	tkrat-2.1.2
-REVISION =	3
+REVISION =	4
 CATEGORIES=	mail x11
 
 HOMEPAGE=	http://www.tkrat.org/
-
-MAINTAINER=	Stuart Cassoff <stwo@users.sourceforge.net>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

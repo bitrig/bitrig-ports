@@ -3,15 +3,13 @@
 COMMENT=	ISO MPEG-4 compliant video codec
 
 DISTNAME=	xvidcore-1.3.2
-REVISION=	2
+REVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	http://downloads.xvid.org/downloads/
 
 SHARED_LIBS=	xvidcore	4.3
 
 HOMEPAGE=	http://www.xvid.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

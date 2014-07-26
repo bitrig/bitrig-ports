@@ -3,11 +3,9 @@
 COMMENT=	convert tree structured items into ascii tree items
 
 DISTNAME=	Text-Thread-0.2
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	textproc
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

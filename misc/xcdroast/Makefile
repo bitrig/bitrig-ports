@@ -3,7 +3,7 @@
 COMMENT=		gtk-based frontend to cdrtools
 DISTNAME=		xcdroast-0.98alpha16
 PKGNAME=		${DISTNAME:L:S/alpha/a/}
-REVISION=		4
+REVISION=		5
 CATEGORIES=		misc x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xcdroast/}
 

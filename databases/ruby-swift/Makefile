@@ -3,9 +3,8 @@
 COMMENT =	fast database API and ORM for ruby 1.9+
 
 DISTNAME =	swift-1.2.0
+REVISION =	0
 CATEGORIES =	databases
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

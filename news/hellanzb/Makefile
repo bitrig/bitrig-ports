@@ -3,7 +3,7 @@
 COMMENT=		retrieve and process nzb-files
 
 DISTNAME=		hellanzb-0.13
-REVISION =		8
+REVISION =		9
 CATEGORIES=		news
 
 HOMEPAGE=		http://www.hellanzb.com/trac/

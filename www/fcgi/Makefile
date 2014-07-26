@@ -3,14 +3,12 @@
 COMMENT=		FastCGI Development Kit
 
 DISTNAME=		fcgi-2.4.0
-REVISION=		10
+REVISION=		11
 CATEGORIES=		www
 SHARED_LIBS +=	fcgi                 0.0      # .0.0
 SHARED_LIBS +=	fcgi++               1.0      # .1.0
 
 HOMEPAGE=		http://www.fastcgi.com/
-
-MAINTAINER=		Adam Montague <amontague@siriushosting.com>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM=   Yes

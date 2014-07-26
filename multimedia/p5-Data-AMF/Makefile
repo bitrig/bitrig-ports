@@ -3,10 +3,9 @@
 COMMENT =	serialize/deserialize Adobe Action Message Format data
 
 DISTNAME =	Data-AMF-0.09
+REVISION =	0
 CPAN_AUTHOR =	TYPESTER
 CATEGORIES =	multimedia
-
-MAINTAINER =	Nigel Taylor <njtaylor@asterisk.demon.co.uk>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

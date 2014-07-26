@@ -3,11 +3,9 @@
 COMMENT=	OO toolkit for SGML parsing and entity management
 
 DISTNAME=	sp-1.3.4
-REVISION =	3
+REVISION =	4
 CATEGORIES=	textproc
 HOMEPAGE=	http://www.jclark.com/sp/
-
-MAINTAINER=	Gerardo Santana Gomez Garrido <gerardo.santana@gmail.com>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes

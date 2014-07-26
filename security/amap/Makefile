@@ -2,7 +2,7 @@
 
 COMMENT=	application protocol detection tool
 
-REVISION=	0
+REVISION=	1
 DISTNAME=	amap-5.4
 CATEGORIES=	security
 

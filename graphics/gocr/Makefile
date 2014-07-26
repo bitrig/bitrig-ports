@@ -8,8 +8,8 @@ DISTNAME=	gocr-$V
 
 PKGNAME-main=	gocr-$V
 PKGNAME-gui=	gocr-gui-$V
-REVISION-main =	0
-REVISION-gui =	1
+REVISION-main =	1
+REVISION-gui =	2
 
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=jocr/}

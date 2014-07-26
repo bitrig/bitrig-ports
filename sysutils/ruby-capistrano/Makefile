@@ -3,7 +3,7 @@
 COMMENT =	execute commands in parallel on multiple remote machines
 
 DISTNAME =	capistrano-2.5.9
-REVISION =	7
+REVISION =	8
 CATEGORIES =	sysutils
 
 HOMEPAGE =	http://www.capify.org/

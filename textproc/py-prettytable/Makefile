@@ -5,9 +5,8 @@ COMMENT =	Python library for pretty-printing tabular data
 MODPY_EGG_VERSION =	0.7.2
 DISTNAME =		prettytable-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
+REVISION =		0
 CATEGORIES =		textproc devel
-
-MAINTAINER =	Edd Barrett <edd@openbsd.org>
 
 MASTER_SITES =	https://prettytable.googlecode.com/files/
 HOMEPAGE =	https://code.google.com/p/prettytable/

@@ -5,13 +5,12 @@ COMMENT =	tool to indent and reformat perl scripts
 V =	 	20121207
 DISTNAME =	Perl-Tidy-$V
 PKGNAME =	perltidy-$V
+REVISION =	0
 CATEGORIES =	devel
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=perltidy/}
 
 HOMEPAGE =	http://perltidy.sourceforge.net/
-
-MAINTAINER =	Jim Razmus II <jim@openbsd.org>
 
 # GPL v2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; displays scrolling text
 
 DISTNAME=		wminfo-1.51
-REVISION=		1
+REVISION=		2
 CATEGORIES=		x11 x11/windowmaker
 
 # GPL

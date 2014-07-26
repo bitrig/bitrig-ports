@@ -6,7 +6,7 @@ BROKEN-$m =	segfaults in longjump return while testing continuations
 .endfor
 
 COMMENT =	scheme r5 interpreter
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	lang
 
@@ -18,8 +18,6 @@ HOMEPAGE =	http://people.csail.mit.edu/jaffer/SCM
 
 MASTER_SITES =	http://groups.csail.mit.edu/mac/ftpdir/scm/ \
 		http://groups.csail.mit.edu/mac/ftpdir/scm/OLD/
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 WRKDIST =	${WRKDIR}/scm
 

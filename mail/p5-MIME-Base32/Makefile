@@ -4,6 +4,7 @@ COMMENT=		Base32 encoder/decoder
 
 DISTNAME=		MIME-Base32-1.02a
 PKGNAME=		p5-${DISTNAME:S/a$//}
+REVISION=		0
 CATEGORIES=		mail
 
 # Perl

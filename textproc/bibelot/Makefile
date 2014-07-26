@@ -6,9 +6,7 @@ VERSION=	0.9.4
 PROG=		bibelot
 DISTNAME=	${PROG}-${VERSION}
 CATEGORIES=	textproc
-REVISION=	0
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
+REVISION=	1
 
 PERMIT_PACKAGE_CDROM=   Yes
 

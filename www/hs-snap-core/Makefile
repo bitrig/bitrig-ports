@@ -3,11 +3,9 @@
 COMMENT =		Snap Haskell Web Framework
 
 DISTNAME =		snap-core-0.9.4.0
+REVISION =		0
 CATEGORIES =		www
 HOMEPAGE =		http://snapframework.com/
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>, \
-			Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

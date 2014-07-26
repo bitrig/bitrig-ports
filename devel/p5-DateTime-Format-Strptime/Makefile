@@ -4,10 +4,9 @@ COMMENT =	parse and format strp and strf time patterns
 
 MODULES =	cpan
 DISTNAME =	DateTime-Format-Strptime-1.54
+REVISION =	0
 EPOCH =		0
 CATEGORIES =	devel
-
-MAINTAINER = Andrew Fresh <andrew@cpan.org>
 
 # artistic_2
 PERMIT_PACKAGE_CDROM =	Yes

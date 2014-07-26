@@ -4,11 +4,9 @@ COMMENT=	inheritable, overridable class data
 
 MODULES=	cpan
 DISTNAME=	Class-Data-Inheritable-0.08
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

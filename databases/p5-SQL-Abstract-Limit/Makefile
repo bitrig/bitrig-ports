@@ -3,6 +3,7 @@
 COMMENT=	portability layer for LIMIT emulation
 
 DISTNAME=	SQL-Abstract-Limit-0.141
+REVISION=	0
 CATEGORIES=	databases
 MODULES=	cpan
 USE_GROFF =	Yes

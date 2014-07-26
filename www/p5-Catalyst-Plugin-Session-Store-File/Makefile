@@ -4,10 +4,9 @@ COMMENT=	catalyst file storage backend for session data
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-Session-Store-File-0.18
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -12,11 +12,10 @@ PKGNAME-main =		rocrail-${VERSION}.${REV}
 PKGNAME-gui =		rocview-${VERSION}.${REV}
 CATEGORIES =		misc x11
 
-REVISION-main =		1
-REVISION-gui =		1
+REVISION-main =		2
+REVISION-gui =		2
 
 HOMEPAGE =		http://www.rocrail.net/
-MAINTAINER =		Sebastian Reitenbach <sebastia@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

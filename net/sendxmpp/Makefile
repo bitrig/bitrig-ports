@@ -3,11 +3,10 @@
 COMMENT=	perl script to send xmpp messages, like mail(1)
 
 DISTNAME=	sendxmpp-1.23
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE=	http://sendxmpp.hostname.sk/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

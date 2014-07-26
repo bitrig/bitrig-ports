@@ -3,6 +3,7 @@
 COMMENT=	IPv6 address handling tools for PHP
 
 DISTNAME=	Net_IPv6-1.2.1
+REVISION=	0
 CATEGORIES=	net
 
 MODULES=	www/pear

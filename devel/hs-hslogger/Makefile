@@ -3,10 +3,9 @@
 COMMENT =		versatile logging framework
 
 DISTNAME =		hslogger-1.2.3
+REVISION =		0
 CATEGORIES =		devel sysutils
 HOMEPAGE =		https://github.com/jgoerzen/hslogger/wiki
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,11 +4,9 @@ COMMENT =		Gtk2 widget for displaying Plain old Documentation (POD)
 
 MODULES =		cpan
 DISTNAME =		Gtk2-Ex-PodViewer-0.18
-REVISION =		2
+REVISION =		3
 CATEGORIES =		x11
 USE_GROFF =		Yes
-
-MAINTAINER =		James Wright <jamesw@bsdhosting.co.za>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

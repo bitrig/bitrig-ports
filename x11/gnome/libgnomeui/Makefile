@@ -4,7 +4,7 @@ COMMENT=		user interface components for GNOME
 
 GNOME_PROJECT=		libgnomeui
 GNOME_VERSION=		2.24.5
-REVISION=		6
+REVISION=		7
 
 SHARED_LIBS +=	gnomeui-2      2400.0         # .2400.2
 

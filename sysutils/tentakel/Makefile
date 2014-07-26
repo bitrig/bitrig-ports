@@ -3,9 +3,8 @@
 COMMENT=	distributed command execution
 
 DISTNAME=	tentakel-357
-REVISION =	4
+REVISION =	5
 CATEGORIES=	sysutils
-MAINTAINER=	Sebastian Stark <seb@todesplanet.de>
 HOMEPAGE=	http://tentakel.biskalar.de/
 
 MODPY_EGG_VERSION = 2.2.1

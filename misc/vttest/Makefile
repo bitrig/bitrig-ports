@@ -3,10 +3,9 @@
 COMMENT=	test VT100-type terminal
 
 DISTNAME=	vttest-20140116
+REVISION=	0
 CATEGORIES=	misc
 HOMEPAGE=	http://invisible-island.net/vttest/vttest.html
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

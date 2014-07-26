@@ -5,7 +5,7 @@ COMMENT=	perl interface to yaz zoom
 CATEGORIES=	net
 
 DISTNAME=	Net-Z3950-ZOOM-1.25
-REVISION=	4
+REVISION=	5
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

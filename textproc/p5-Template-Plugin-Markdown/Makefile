@@ -4,11 +4,9 @@ COMMENT =	TT plugin for Text::Markdown
 
 MODULES =	cpan
 DISTNAME =	Template-Plugin-Markdown-0.02
-REVISION =	0
+REVISION =	1
 CATEGORIES =	textproc
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

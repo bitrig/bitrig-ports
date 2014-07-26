@@ -3,12 +3,11 @@
 COMMENT =		small memory footprint dynamic dns updater
 
 DISTNAME =		inadyn-1.98.0
+REVISION =		0
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://vmlinux.org/jocke/inadyn.shtml
-
-MAINTAINER =		Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

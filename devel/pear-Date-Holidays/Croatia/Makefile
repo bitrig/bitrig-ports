@@ -2,5 +2,6 @@
 
 COMMENT =	Croatian holiday classes for PHP
 HOLNAME =	Croatia-0.1.1
+REVISION =	0
 
 .include <bsd.port.mk>

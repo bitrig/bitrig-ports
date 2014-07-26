@@ -3,15 +3,13 @@
 COMMENT =		owncloud sync client
 
 DISTNAME =		mirall-1.4.2
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		owncloudsync 0.0
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://owncloud.org/sync-clients/
-
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

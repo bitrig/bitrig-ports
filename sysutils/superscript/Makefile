@@ -3,6 +3,7 @@
 COMMENT=	extended script command
 
 DISTNAME=	superscript-0.0
+REVISION=	0
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://quatramaran.ens.fr/pub/espie/
 

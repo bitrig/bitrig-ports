@@ -4,12 +4,10 @@ COMMENT=	Ruby bindings for libvirt
 
 DISTNAME=	ruby-libvirt-0.4.0
 PKGNAME=	${DISTNAME:S/ruby-//}
-REVISION =	3
+REVISION =	4
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://libvirt.org/ruby/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

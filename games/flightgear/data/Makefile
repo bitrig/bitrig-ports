@@ -4,6 +4,7 @@ COMMENT =		data files for flightgear
 
 DISTNAME =		FlightGear-data-${V}
 PKGNAME =		flightgear-data-${V}
+REVISION =		0
 
 MASTER_SITES =	http://ftp.igh.cnrs.fr/pub/flightgear/ftp/Shared/ \
 		http://ftp.linux.kiev.ua/pub/fgfs/Shared/ \

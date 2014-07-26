@@ -3,6 +3,7 @@
 COMMENT=	(E)nhanced (P)rogrammable (I)RC-II (C)lient
 
 VERSION=	2.10.2
+REVISION=	0
 HELP_DATE=	20050315
 DISTNAME=	epic4-${VERSION}
 CATEGORIES=	net
@@ -10,8 +11,6 @@ MASTER_SITES=	ftp://ftp.epicsol.org/pub/epic/EPIC4-PRODUCTION/
 DISTFILES=	epic4-${VERSION}.tar.bz2 epic4-help-${HELP_DATE}.tar.gz
 
 HOMEPAGE=	http://www.epicsol.org/
-
-MAINTAINER=	Adam Jeanguenat <avj@6v6.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

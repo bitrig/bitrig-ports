@@ -4,10 +4,8 @@ COMMENT=	recursive copy of files and directories
 
 MODULES=	cpan
 DISTNAME=	File-Copy-Recursive-0.38
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

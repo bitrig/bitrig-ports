@@ -5,11 +5,9 @@ COMMENT =	compares and merges multiple files or directories
 DISTNAME =	kdiff3-0.9.97
 CATEGORIES =	devel x11/kde
 HOMEPAGE =	http://kdiff3.sourceforge.net/
-REVISION=	0
+REVISION=	1
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=kdiff3/}
-
-MAINTAINER =	Lawrence Teo <lteo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

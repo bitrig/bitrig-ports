@@ -4,10 +4,8 @@ COMMENT=	detect encoding of the current terminal
 
 MODULES=	cpan
 DISTNAME=	Term-Encoding-0.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

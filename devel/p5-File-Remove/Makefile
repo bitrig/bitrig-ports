@@ -5,6 +5,7 @@ COMMENT=	remove files and directories with perl
 MODULES=	cpan
 
 DISTNAME=	File-Remove-1.52
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

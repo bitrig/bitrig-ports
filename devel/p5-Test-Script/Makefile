@@ -5,7 +5,7 @@ COMMENT= 	cross-platform basic tests for scripts
 MODULES=	cpan
 
 DISTNAME=	Test-Script-1.07
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # Perl

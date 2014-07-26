@@ -3,14 +3,13 @@
 COMMENT=	hangul input library
 
 DISTNAME=	libhangul-0.0.10
+REVISION=	0
 
 SHARED_LIBS=	hangul	0.1	# .1.0
 
 CATEGORIES=	korean inputmethods
 
 HOMEPAGE= 	http://kldp.net/projects/hangul/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

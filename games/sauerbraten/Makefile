@@ -8,14 +8,13 @@ CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sauerbraten/}
 
 HOMEPAGE=	http://sauerbraten.org/
-MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 
 MULTI_PACKAGES=	-main -data
 
 N=		sauerbraten
 V=		20130203
-REVISION-main=	1
-REVISION-data=	0
+REVISION-main=	2
+REVISION-data=	1
 PKGNAME=	${N}-${V}
 PKGNAME-main=	${N}-${V}
 PKGNAME-data=	${N}-data-${V}

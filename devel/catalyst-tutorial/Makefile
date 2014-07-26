@@ -1,14 +1,13 @@
 # $OpenBSD: Makefile,v 1.15 2013/03/11 10:50:02 espie Exp $
 
 COMMENT =	catalyst packages for the tutorial
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 MODULES =	cpan
 CATEGORIES =	devel www
 DISTNAME =	Task-Catalyst-Tutorial-0.06
 PKGNAME =	catalyst-tutorial-0.06
 EPOCH =		0
-REVISION =	0
+REVISION =	1
 
 # Public domain
 PERMIT_PACKAGE_CDROM =	Yes

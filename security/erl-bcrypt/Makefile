@@ -7,7 +7,7 @@ COMMENT=	Erlang wrapper for OpenBSD's blowfish #' emacs, relax.
 VERSION=	0.5.0.2
 DISTNAME=	erlang-bcrypt-${VERSION}
 PKGNAME=	erl-${DISTNAME:S/erlang-//}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
 
 HOMEPAGE=	https://github.com/opscode/bcrypt

@@ -3,11 +3,10 @@
 COMMENT=	animated autohiding applications launcher
 
 DISTNAME=	yeahlaunch-0.2
+REVISION=	0
 CATEGORIES=	x11
 
 HOMEPAGE=	http://phrat.de/yeahtools.html
-
-MAINTAINER=	Scott Vokes <vokes.s@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

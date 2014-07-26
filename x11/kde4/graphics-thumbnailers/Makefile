@@ -2,6 +2,7 @@
 
 COMMENT =	KDE thumbnail creation plugins
 DISTNAME =	kdegraphics-thumbnailers-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork

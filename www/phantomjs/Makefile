@@ -7,11 +7,10 @@ DPB_PROPERTIES =	parallel nojunk
 COMMENT =		headless WebKit scriptable with a JavaScript API
 
 DISTNAME =		phantomjs-1.9.7
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		www
 HOMEPAGE =		http://phantomjs.org/
-MAINTAINER =		Francisco de Borja Lopez Rio <borja@codigo23.net>
 
 # phantomjs: BSD, but statically linked to patched qt4 (LGPL) and webkit
 PERMIT_PACKAGE_CDROM =	Yes

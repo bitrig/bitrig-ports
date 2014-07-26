@@ -3,7 +3,7 @@
 COMMENT=		directory synchronization over mail
 
 PKGNAME=		ctm-19960528
-REVISION=		1
+REVISION=		2
 DISTNAME=		ctmkit
 CATEGORIES=     	net devel
 HOMEPAGE=		http://www.openbsd.org/ctm.html

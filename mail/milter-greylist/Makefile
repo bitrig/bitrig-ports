@@ -3,14 +3,12 @@
 COMMENT=	greylist milter
 
 DISTNAME=	milter-greylist-4.2.7
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 HOMEPAGE=	http://hcpnet.free.fr/milter-greylist/
 
 MASTER_SITES=	ftp://ftp.espci.fr/pub/milter-greylist/
 EXTRACT_SUFX=	.tgz
-
-MAINTAINER=	Jakob Schlyter <jakob@openbsd.org>
 
 # BSD license
 PERMIT_PACKAGE_CDROM=		Yes

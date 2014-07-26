@@ -4,7 +4,7 @@ COMMENT =	GNUstep battery monitor
 ONLY_FOR_ARCHS =	${APM_ARCHS}
 
 DISTNAME =	batmon-0.7
-REVISION =	1
+REVISION =	2
 CATEGORIES =	sysutils
 
 HOMEPAGE =	http://gap.nongnu.org/batmon/

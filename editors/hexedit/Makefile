@@ -3,6 +3,7 @@
 COMMENT=	view and edit files in hexadecimal or ASCII
 
 DISTNAME=	hexedit-1.2.12
+REVISION=	0
 CATEGORIES=	editors
 
 MASTER_SITES=	http://www.chez.com/prigaux/	\

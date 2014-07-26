@@ -3,7 +3,7 @@
 COMMENT =		multi-threaded HTTP benchmark and regression tester
 
 DISTNAME =		siege-2.70
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		benchmarks www
 

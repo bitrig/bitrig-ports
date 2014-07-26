@@ -5,6 +5,7 @@ COMMENT =		Sphinx extension to support docstrings in Numpy format
 MODPY_EGG_VERSION =	0.4
 DISTNAME =		numpydoc-${MODPY_EGG_VERSION}
 PKGNAME =		py-numpydoc-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		textproc devel
 HOMEPAGE =		https://github.com/numpy/numpydoc
 

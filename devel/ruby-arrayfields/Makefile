@@ -4,11 +4,9 @@ COMMENT=		allow keyword access to array instances
 
 DISTNAME=		arrayfields-4.7.4
 CATEGORIES=		devel
-REVISION=		2
+REVISION=		3
 
 HOMEPAGE=		http://codeforpeople.com/lib/ruby/arrayfields/
-
-MAINTAINER=		Jeremy Evans <jeremy@openbsd.org>
 
 # Ruby license
 PERMIT_PACKAGE_CDROM=	Yes

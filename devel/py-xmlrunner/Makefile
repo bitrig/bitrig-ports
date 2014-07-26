@@ -5,6 +5,7 @@ COMMENT =		test runner with JUnit like XML reporting
 MODPY_EGG_VERSION =	1.4.3
 DISTNAME =		unittest-xml-reporting-${MODPY_EGG_VERSION}
 PKGNAME =		py-xmlrunner-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		devel
 

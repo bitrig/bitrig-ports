@@ -5,12 +5,11 @@ COMMENT =		HTML form validation, generation, and conversion
 MODPY_EGG_VERSION =	1.2.4
 DISTNAME =		FormEncode-${MODPY_EGG_VERSION}
 PKGNAME =		py-formencode-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		www
 
 HOMEPAGE =		http://www.formencode.org/
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # PSF
 PERMIT_PACKAGE_CDROM =	Yes

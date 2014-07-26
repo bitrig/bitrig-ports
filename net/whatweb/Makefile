@@ -3,6 +3,7 @@
 COMMENT=	web scanner
 
 DISTNAME=	whatweb-0.4.7
+REVISION=	0
 
 CATEGORIES=	net www
 

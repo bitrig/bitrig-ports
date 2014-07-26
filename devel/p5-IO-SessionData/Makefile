@@ -4,6 +4,7 @@ COMMENT=	supporting module for SOAP::Lite
 
 MODULES=	cpan
 DISTNAME=	IO-SessionData-1.03
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

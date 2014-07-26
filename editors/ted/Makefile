@@ -4,7 +4,7 @@
 COMMENT =	X11 based RTF editor
 V =		2.17
 DISTNAME =	ted-$V
-REVISION =	3
+REVISION =	4
 CATEGORIES =	editors textproc print
 HOMEPAGE =	http://www.nllgg.nl/Ted/
 MASTER_SITES =	ftp://ftp.nluug.nl/pub/editors/ted/
@@ -15,8 +15,6 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += ICE SM X11 Xext Xmu Xpm Xt c m pthread-stubs xcb z
 WANTLIB += png jpeg tiff Xm
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 WRKDIST =	${WRKDIR}/Ted-$V
 LIB_DEPENDS =	graphics/png \

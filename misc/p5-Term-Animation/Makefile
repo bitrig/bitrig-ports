@@ -3,10 +3,8 @@
 COMMENT=		produce sprite animations using ASCII art
 
 DISTNAME=		Term-Animation-2.4
-REVISION=		0
+REVISION=		1
 CATEGORIES=		misc
-
-MAINTAINER=		Girish Venkatachalam <girish1729@gmail.com>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

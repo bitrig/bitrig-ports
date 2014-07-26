@@ -3,11 +3,10 @@
 COMMENT=	fine-grained privileges PolicyKit helper for CUPS
 
 DISTNAME=	cups-pk-helper-0.2.5
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	print sysutils
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/cups-pk-helper
 

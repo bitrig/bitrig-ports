@@ -3,12 +3,10 @@
 COMMENT=	bookmarks on your palm
 
 DISTNAME=	palm-bookmarks-0.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.vanhemert.co.uk/palmbookmarks.html
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=   Yes

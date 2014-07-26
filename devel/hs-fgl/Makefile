@@ -5,11 +5,9 @@ COMMENT =		functional graph library
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		fgl-5.4.2.4
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 HOMEPAGE =		http://web.engr.oregonstate.edu/~erwig/fgl/haskell/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

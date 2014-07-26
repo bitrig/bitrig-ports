@@ -1,6 +1,7 @@
 # $OpenBSD: Makefile,v 1.10 2013/03/11 11:46:15 espie Exp $
 
 DISTNAME=	ratmen-2.2.3
+REVISION=	0
 CATEGORIES=	x11
 
 # same license as plan9/9menu

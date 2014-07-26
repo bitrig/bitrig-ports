@@ -4,6 +4,7 @@ COMMENT=	full screen simple editor
 
 DISTNAME=	uemacs
 PKGNAME=	uemacs-4.0
+REVISION=	0
 CATEGORIES=	editors
 
 HOMEPAGE=	http://uemacs.tripod.com/

@@ -4,7 +4,7 @@ COMMENT=	powerful and intuitive editor for programmers
 
 DISTNAME=	fte-20090118
 CATEGORIES=	editors devel
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://fte.sourceforge.net/
 

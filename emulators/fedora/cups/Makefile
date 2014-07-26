@@ -3,7 +3,7 @@
 COMMENT=	Linux CUPS package based on Fedora Core ${FEDORA_V}
 
 PKGNAME=	fedora_cups-${FEDORA_V}.0
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=  des425                    3.0
 SHARED_LIBS +=  gssapi_krb5               2.2

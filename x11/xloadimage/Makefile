@@ -3,6 +3,7 @@
 COMMENT=	graphics file viewer for X11
 
 VERSION=	4.1
+REVISION=	0
 # Debian
 REV=		22
 
@@ -10,8 +11,6 @@ DISTNAME=	xloadimage.${VERSION}
 PKGNAME=	xloadimage-${VERSION}.${REV}
 EPOCH=		0
 CATEGORIES=	x11 graphics
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -7,7 +7,7 @@ COMMENT=	Python wrapper for the Ogg libraries
 MODPY_EGG_VERSION=1.3
 DISTNAME=	pyogg-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:S/py/py-/}
-REVISION =	9
+REVISION =	10
 CATEGORIES=	audio
 HOMEPAGE=	http://ekyo.nerim.net/software/pyogg/
 

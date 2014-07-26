@@ -3,7 +3,7 @@
 COMMENT=	yet another dump utility
 
 DISTNAME=	xd-8087
-REVISION=	1
+REVISION=	2
 CATEGORIES=	misc
 
 # BSD 

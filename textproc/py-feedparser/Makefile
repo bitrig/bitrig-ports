@@ -5,11 +5,10 @@ COMMENT=	RSS and Atom feeds parser written in Python
 MODPY_EGG_VERSION=	5.1.3
 DISTNAME=	feedparser-${MODPY_EGG_VERSION}
 PKGNAME=	py-${DISTNAME}
+REVISION=	0
 CATEGORIES=	textproc
 
 HOMEPAGE=	https://code.google.com/p/feedparser/
-
-MAINTAINER=	Romain Gaillegue <romain@biscotte.net>
 
 # BSD-2
 PERMIT_PACKAGE_CDROM=	Yes

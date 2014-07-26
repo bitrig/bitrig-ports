@@ -3,14 +3,12 @@
 COMMENT =		web/text search engine
 
 DISTNAME =		swish-e-2.4.7
-REVISION=	0
+REVISION=	1
 SHARED_LIBS =		swish-e	2.1
 CATEGORIES =		textproc www
 
 HOMEPAGE =		http://swish-e.org/
 MASTER_SITES =		${HOMEPAGE}distribution/
-
-MAINTAINER =		Michael Erdely <merdely@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -7,13 +7,11 @@ COMMENT=	Python bindings for the SILC toolkit
 V=		0.5
 DISTNAME=	pysilc-${V}
 PKGNAME=	py-silc-${V}
-REVISION=	4
+REVISION=	5
 EPOCH=		0
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.liquidx.net/pysilc/
-
-MAINTAINER=	Martynas Venckus <martynas@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

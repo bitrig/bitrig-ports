@@ -4,6 +4,7 @@ COMMENT =	run a Node.js process, restarting on file changes or crashes
 
 NPM_VERSION =	2.0.0
 NPM_NAME =	always
+REVISION =	0
 CATEGORIES =	sysutils
 
 HOMEPAGE =	https://github.com/edwardhotchkiss/always

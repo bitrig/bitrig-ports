@@ -4,10 +4,9 @@ COMMENT=	catalyst session IDs with cookies
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-Session-State-Cookie-0.17
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,6 +3,7 @@
 COMMENT=	fast file compressor similar to gzip
 
 DISTNAME=	lzop-1.03
+REVISION=	0
 CATEGORIES=	archivers
 HOMEPAGE=	http://www.lzop.org/
 

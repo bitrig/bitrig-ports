@@ -3,13 +3,11 @@
 COMMENT=	spawn FastCGI processes
 
 DISTNAME=	spawn-fcgi-1.6.3
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.lighttpd.net/download/
 
 HOMEPAGE=	http://redmine.lighttpd.net/projects/spawn-fcgi/news
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

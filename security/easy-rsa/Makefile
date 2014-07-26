@@ -3,7 +3,7 @@
 COMMENT =	small RSA key management package
 
 PKGNAME =	easy-rsa-2.2.0
-REVISION =	0
+REVISION =	1
 DISTNAME =	${PKGNAME}_master
 CATEGORIES =	security
 

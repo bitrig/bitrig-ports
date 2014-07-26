@@ -3,12 +3,11 @@
 COMMENT=	live CLI display of interface bandwidth, using SNMP
 
 DISTNAME=	ttg-2.1
+REVISION=	0
 
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.tenox.tc/out/\#ttg
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

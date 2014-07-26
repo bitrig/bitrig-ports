@@ -2,6 +2,7 @@
 
 COMMENT =	simple video player for KDE
 DISTNAME =	dragon-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	multimedia
 

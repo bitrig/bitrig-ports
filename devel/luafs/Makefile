@@ -5,6 +5,7 @@ COMMENT=	file system library for the lua language
 V=		1.6.2
 DISTNAME=	luafilesystem-${V}
 PKGNAME=	luafs-${V}
+REVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/downloads/keplerproject/luafilesystem/
 

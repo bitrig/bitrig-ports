@@ -3,13 +3,11 @@
 COMMENT=	build molecules out of single atoms
 
 DISTNAME=	atomix-2.14.0
-REVISION=	7
+REVISION=	8
 CATEGORIES=	games
 EXTRACT_SUFX=	.tar.bz2
 
 MASTER_SITES=	http://ftp.gnome.org/pub/GNOME/sources/atomix/2.14/
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

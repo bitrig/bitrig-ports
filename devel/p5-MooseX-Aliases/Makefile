@@ -3,6 +3,7 @@
 COMMENT =	easy aliasing of methods and attributes
 
 DISTNAME =	MooseX-Aliases-0.10
+REVISION =	0
 CATEGORIES =	devel
 MODULES =	cpan
 

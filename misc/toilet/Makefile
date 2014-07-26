@@ -2,10 +2,10 @@
 
 COMMENT =	banner art generator with Unicode font and color support
 DISTNAME =	toilet-0.3
+REVISION =	0
 CATEGORIES =	misc
 
 HOMEPAGE =	http://caca.zoy.org/wiki/toilet
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # WTFPLv2
 PERMIT_PACKAGE_CDROM =	Yes

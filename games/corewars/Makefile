@@ -3,7 +3,7 @@
 COMMENT=	computer simulation game
 
 DISTNAME=	corewars-0.9.13
-REVISION=	5
+REVISION=	6
 
 CATEGORIES=	games x11
 

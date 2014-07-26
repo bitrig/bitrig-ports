@@ -3,6 +3,7 @@
 COMMENT=	small application for managing a LDAP address book
 
 DISTNAME=	directoryassistant-2.1
+REVISION=	0
 CATEGORIES=	databases
 
 HOMEPAGE=	http://olivier.sessink.nl/directoryassistant/

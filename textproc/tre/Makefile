@@ -5,13 +5,11 @@ COMMENT=	lightweight regexp matching library with additional features
 DISTNAME=		tre-0.8.0
 EXTRACT_SUFX=		.tar.bz2
 CATEGORIES=		textproc
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://laurikari.net/tre/
 
 MASTER_SITES=		${HOMEPAGE}
-
-MAINTAINER=		Matthias Kilian <kili@openbsd.org>
 
 # 2-clause BSD
 PERMIT_PACKAGE_CDROM=	Yes

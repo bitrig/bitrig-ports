@@ -4,7 +4,7 @@ COMMENT=	general multi-lingual speech synthesis system
 V=		1.95
 DISTNAME=	festival-${V}-beta
 PKGNAME=	${DISTNAME:S/-beta/beta/}
-REVISION=	6
+REVISION=	7
 CATEGORIES=	audio
 MASTER_SITES=	http://www.cstr.ed.ac.uk/downloads/festival/${V}/ \
 		http://festvox.org/packed/festival/${V}/

@@ -3,12 +3,10 @@
 COMMENT=	MIPS R2000/R3000 simulator
 
 DISTNAME=	spim-8.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	emulators
 
 HOMEPAGE=	http://www.cs.wisc.edu/~larus/spim.html
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,10 +4,8 @@ COMMENT=	perl module for getting image information
 
 MODULES=	cpan
 DISTNAME=	Image-Info-1.28
-REVISION=	0
+REVISION=	1
 CATEGORIES=	graphics
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

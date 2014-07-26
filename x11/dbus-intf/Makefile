@@ -4,9 +4,9 @@ COMMENT =	high level interface to dbus-tcl
 
 DISTNAME =	dbus-intf0.4
 PKGNAME =	dbus-intf-0.4
+REVISION =	0
 CATEGORIES =	x11
 HOMEPAGE =	http://dbus-tcl.sourceforge.net/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

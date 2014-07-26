@@ -3,10 +3,8 @@
 COMMENT=		DSL for embedded hard realtime applications
 
 DISTNAME=		atom-1.0.9
-REVISION =		2
+REVISION =		3
 CATEGORIES=		devel lang
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM=	Yes

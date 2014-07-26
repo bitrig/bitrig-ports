@@ -4,9 +4,8 @@ COMMENT =	report TAP output by test file description
 
 MODULES =	cpan
 DISTNAME =	TAP-Harness-Multiple-0.07
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # Perl
 PERMIT_PACKAGE_CDROM=   Yes

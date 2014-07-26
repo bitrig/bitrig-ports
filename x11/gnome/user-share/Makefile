@@ -6,6 +6,7 @@ COMMENT=		personal file-sharing service for GNOME
 
 GNOME_PROJECT=		gnome-user-share
 GNOME_VERSION=		3.10.2
+REVISION=		0
 
 CATEGORIES=		www sysutils
 

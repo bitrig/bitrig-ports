@@ -3,11 +3,10 @@
 COMMENT=	analogue bitmap clock
 
 DISTNAME=	abclock-1.0d
+REVISION=	0
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.let.rug.nl/~kleiweg/abclock/
-
-MAINTAINER=	Scott Vokes <vokes.s@gmail.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

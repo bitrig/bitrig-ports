@@ -4,7 +4,7 @@ COMMENT=	GNU getopt(1) utility
 
 DISTNAME=	getopt-1.1.4
 PKGNAME=	gnu${DISTNAME}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	misc
 
 HOMEPAGE=	http://software.frodo.looijaard.name/getopt/

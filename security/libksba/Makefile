@@ -3,6 +3,7 @@
 COMMENT = 	X.509 library
 
 DISTNAME = 	libksba-1.2.0
+REVISION = 	0
 CATEGORIES = 	security
 
 SHARED_LIBS = 	ksba 0.2	#19
@@ -10,8 +11,6 @@ SHARED_LIBS = 	ksba 0.2	#19
 MASTER_SITES =	${MASTER_SITES_GNUPG:=libksba/}
 
 HOMEPAGE = 	http://www.gnupg.org/related_software/libksba
-
-MAINTAINER = 	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM = 	Yes

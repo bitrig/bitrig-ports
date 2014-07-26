@@ -7,8 +7,7 @@ V =		4.2.5.1
 DISTNAME =	Crypto-$V
 # Historically named with a lower case `c'.
 PKGNAME =	hs-crypto-$V
-
-MAINTAINER =	Matthias Kilian <kili@openbsd.org>
+REVISION =	0
 
 # 3 different licenses from 3 authors: BSD, GPL, BSD-ish
 PERMIT_PACKAGE_CDROM =	Yes

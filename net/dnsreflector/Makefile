@@ -3,6 +3,7 @@
 COMMENT=		DNS queries reflector
 
 DISTNAME=		dnsreflector-1.03
+REVISION=		0
 CATEGORIES=		net sysutils
 
 HOMEPAGE=		http://www.wolfermann.org/dnsreflector.html

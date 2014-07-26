@@ -3,10 +3,8 @@
 COMMENT=	extra chinese fonts
 
 DISTNAME=       zh-fonts-kc-1.05
-REVISION=	0
+REVISION=	1
 CATEGORIES=     fonts chinese x11
-
-MAINTAINER=     Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

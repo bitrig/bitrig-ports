@@ -2,12 +2,12 @@
 
 COMMENT=		minimal XML library
 DISTNAME=		mxml-2.8
+REVISION=		0
 CATEGORIES=		textproc
 
 SHARED_LIBS=		mxml	0.2	# 1.5
 
 HOMEPAGE=		http://www.msweet.org/projects.php?Z3
-MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
 
 # LGPLv2 with exceptions
 PERMIT_PACKAGE_CDROM=	Yes

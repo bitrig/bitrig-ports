@@ -5,7 +5,7 @@ COMMENT =	easy DBI access
 MODULES =	cpan
 
 DISTNAME =	CGI-Application-Plugin-DBH-4.00
-REVISION =	0
+REVISION =	1
 CATEGORIES =	databases www
 
 # perl

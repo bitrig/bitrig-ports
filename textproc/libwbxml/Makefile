@@ -3,6 +3,7 @@
 CATEGORIES =		textproc devel
 COMMENT =		C library for handling WBXML documents
 DISTNAME =		libwbxml-0.11.2
+REVISION =		0
 HOMEPAGE =		https://libwbxml.opensync.org/
 
 SHARED_LIBS =		wbxml2			0.1	# 1.0

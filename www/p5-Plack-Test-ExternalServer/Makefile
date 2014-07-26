@@ -4,6 +4,7 @@ COMMENT =	run HTTP tests on external live servers
 
 MODULES =	cpan
 DISTNAME =	Plack-Test-ExternalServer-0.01
+REVISION =	0
 CATEGORIES =	www
 
 # same as perl

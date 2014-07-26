@@ -3,13 +3,11 @@
 COMMENT=	Qt GUI to configure YubiKeys
 
 DISTNAME=	yubikey-personalization-gui-3.1.14
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	security x11
 
 HOMEPAGE=	http://yubico.github.io/yubikey-personalization-gui/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

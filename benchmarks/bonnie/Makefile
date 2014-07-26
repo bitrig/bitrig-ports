@@ -4,13 +4,12 @@ COMMENT=	performance test of filesystem I/O
 
 DISTNAME=	Bonnie
 PKGNAME=	bonnie-1.0
+REVISION=	0
 CATEGORIES=	benchmarks
 
 MASTER_SITES=	ftp://ftp.sunet.se/pub/benchmark/Bonnie/ \
 		ftp://swedishchef.lerc.nasa.gov/drlabs/io/
 EXTRACT_SUFX=	.tar.Z
-
-MAINTAINER=	Niklas Hallqvist <niklas@openbsd.org>
 
 # License: BSD
 PERMIT_PACKAGE_CDROM=	Yes

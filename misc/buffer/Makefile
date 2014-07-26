@@ -3,10 +3,8 @@
 COMMENT=	buffer sporadic I/O for faster tape and pipe throughput
 
 DISTNAME=	buffer-1.17.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	misc
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -2,10 +2,8 @@
 
 COMMENT=	edit id3v1 tags from an audio mpeg layer 3
 DISTNAME=	MP3-ID3v1Tag-1.11
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

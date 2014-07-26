@@ -4,7 +4,7 @@ COMMENT=	slide rule component of X11R3's xcalc
 
 DISTNAME=	sliderule
 PKGNAME=	sliderule-1.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 PERMIT_PACKAGE_CDROM=	no license

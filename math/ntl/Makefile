@@ -3,13 +3,11 @@
 COMMENT =	Victor Shoup's Number Theory Library
 
 DISTNAME =	ntl-6.1.0
-REVISION =	0
+REVISION =	1
 SHARED_LIBS =	ntl	1.1	# 0.0
 CATEGORIES =	math
 
 HOMEPAGE =	http://www.shoup.net/ntl/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

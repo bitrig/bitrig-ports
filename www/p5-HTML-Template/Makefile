@@ -4,11 +4,10 @@ COMMENT=	use HTML Templates from CGI scripts
 
 MODULES=	cpan
 DISTNAME=	HTML-Template-2.9
+REVISION=	0
 CATEGORIES=	www
 
 HOMEPAGE=	http://sourceforge.net/projects/html-template/
-
-MAINTAINER=	Jim Dew <jdew@yggdrasil.ca>
 
 # GPL/Artistic license
 PERMIT_PACKAGE_CDROM=	Yes

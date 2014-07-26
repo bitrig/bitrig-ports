@@ -4,7 +4,7 @@ COMMENT =		powerful curses interface python file manager
 
 MODPY_EGG_VERSION =	2.3
 DISTNAME =		lfm-${MODPY_EGG_VERSION}
-REVISION=		0
+REVISION=		1
 
 CATEGORIES =		misc
 
@@ -14,8 +14,6 @@ HOMEPAGE =		http://katxi.org/devel/lfm/
 PERMIT_PACKAGE_CDROM =	 Yes
 
 MASTER_SITES =		${MASTER_SITE_PYPI:=l/lfm/}
-
-MAINTAINER =		Patrikas Kugrinas <pkugrinas@gmail.com>
 
 MODULES =		lang/python
 

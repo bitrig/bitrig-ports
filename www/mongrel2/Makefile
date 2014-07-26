@@ -7,7 +7,7 @@ SHARED_ONLY =	Yes
 COMMENT =	language agnostic asynchronous web server
 
 DISTNAME =	mongrel2-1.8.0
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
 
 HOMEPAGE =	http://mongrel2.org/

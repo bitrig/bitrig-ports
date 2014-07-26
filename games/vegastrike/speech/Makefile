@@ -3,6 +3,7 @@
 COMMENT =	speech files for vegastrike
 
 DISTNAME =	vegastrike-speech-${V}
+REVISION =	0
 
 RUN_DEPENDS =	games/vegastrike/data>=${V}
 

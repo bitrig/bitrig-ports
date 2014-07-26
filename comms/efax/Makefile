@@ -3,10 +3,8 @@
 COMMENT=	small & simple FAX send/receive program
 
 DISTNAME=	efax-0.9
-REVISION=	2
+REVISION=	3
 CATEGORIES=	comms
-
-MAINTAINER=	Ian Darwin <ian@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

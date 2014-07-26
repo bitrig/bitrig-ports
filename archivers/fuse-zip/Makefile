@@ -6,7 +6,7 @@ DISTNAME =		fuse-zip-0.4.0
 
 CATEGORIES =		archivers
 
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE =		https://code.google.com/p/fuse-zip/
 

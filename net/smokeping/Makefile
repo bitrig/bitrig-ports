@@ -3,15 +3,13 @@
 COMMENT=	latency logging and graphing system
 
 DISTNAME=	smokeping-2.6.9
-REVISION=	4
+REVISION=	5
 
 CATEGORIES=	net
 
 MASTER_SITES=	${HOMEPAGE}pub/
 
 HOMEPAGE=	http://oss.oetiker.ch/smokeping/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

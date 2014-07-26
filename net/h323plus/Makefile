@@ -11,15 +11,13 @@ V=		1_26_0
 DISTNAME=	h323plus-v${V}
 PKGNAME=	h323plus-${V:S/_/./g}
 WRKDIST=	${WRKDIR}/h323plus
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	net devel
 
 SHARED_LIBS=	h323	5.0
 
 HOMEPAGE=	http://www.h323plus.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # MPL (dlopen(3) GPL modules)
 PERMIT_PACKAGE_CDROM=	Yes

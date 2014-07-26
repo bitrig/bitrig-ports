@@ -3,7 +3,7 @@
 COMMENT=		Path::Class type library for Moose
 
 DISTNAME=		MooseX-Types-Path-Class-0.05
-REVISION=		2
+REVISION=		3
 
 CATEGORIES=		devel
 

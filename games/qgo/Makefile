@@ -3,7 +3,7 @@
 COMMENT=	go client and fully featured sgf editor
 
 DISTNAME=	qgo-1.5.4
-REVISION =	5
+REVISION =	6
 CATEGORIES=	games
 
 # GPL

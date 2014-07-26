@@ -3,12 +3,10 @@ COMMENT=	command-line editor for tags in Ogg Vorbis files
 
 DISTNAME=	oggtag_1.0
 PKGNAME=	${DISTNAME:S/_/-/}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 
 HOMEPAGE=	http://oggtag.sourceforge.net/
-
-MAINTAINER=	Julian Leyh <julian@vgai.de>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

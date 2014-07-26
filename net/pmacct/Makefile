@@ -3,6 +3,7 @@
 COMMENT=	IP accounting software
 
 DISTNAME=	pmacct-1.5.0rc2
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.pmacct.net/

@@ -3,9 +3,8 @@
 COMMENT=	translate common internet acronyms
 
 DISTNAME=	wtf-20140614
+REVISION=	0
 CATEGORIES=	games
-
-MAINTAINER=	Brian Callahan <bcallah@openbsd.org>
 
 # Public Domain
 PERMIT_PACKAGE_CDROM=	Yes

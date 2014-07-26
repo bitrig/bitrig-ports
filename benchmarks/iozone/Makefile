@@ -5,6 +5,7 @@ COMMENT=	performance test of sequential file I/O
 
 DISTNAME=	iozone3_326
 PKGNAME=	iozone-3.326
+REVISION=	0
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.iozone.org/src/current/
 EXTRACT_SUFX=	.tar

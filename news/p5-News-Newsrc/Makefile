@@ -4,10 +4,8 @@ COMMENT=	module for managing newsrc files
 
 MODULES=	cpan
 DISTNAME=	News-Newsrc-1.09
-REVISION=	0
+REVISION=	1
 CATEGORIES=	news
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

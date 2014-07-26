@@ -5,6 +5,7 @@ COMMENT=	encapsulate SQL queries and rows in simple perl objects
 MODULES=	cpan
 
 DISTNAME=	DBIx-SearchBuilder-1.65
+REVISION=	0
 
 CATEGORIES=	databases
 USE_GROFF =	Yes

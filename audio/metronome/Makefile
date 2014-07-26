@@ -3,7 +3,7 @@
 COMMENT = 	simple metronome
 CATEGORIES =	audio
 DISTNAME = 	metronome-2
-MAINTAINER = 	Marc Espie <espie@openbsd.org>
+REVISION = 	0
 MASTER_SITES = 	ftp://quatramaran.ens.fr/pub/espie/
 
 # OpenBSD licence

@@ -4,10 +4,8 @@ COMMENT =	create machine readable date/time with natural parsing logic
 
 MODULES =	cpan
 DISTNAME =	DateTime-Format-Natural-0.76
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

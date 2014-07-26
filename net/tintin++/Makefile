@@ -2,10 +2,10 @@
 
 COMMENT=	client program for playing muds with advanced features
 DISTNAME=       tintin-2.01.0
+REVISION=       0
 CATEGORIES=     net games
 
 HOMEPAGE=       http://tintin.sourceforge.net/
-MAINTAINER=	Ted Roby <troby@freeshell.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

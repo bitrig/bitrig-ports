@@ -3,9 +3,8 @@
 COMMENT=	HTTP Body Parser
 
 DISTNAME=	HTTP-Body-1.17
+REVISION=	0
 CATEGORIES=	www
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

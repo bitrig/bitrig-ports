@@ -7,7 +7,7 @@ COMMENT=	interpreted language for scientific computing
 
 VERSION=	2.1.06
 DISTNAME=	yorick-${VERSION}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES=	math devel
 
@@ -15,8 +15,6 @@ HOMEPAGE=	http://yorick.sourceforge.net/
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=yorick/}
 EXTRACT_SUFX=	.tgz
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

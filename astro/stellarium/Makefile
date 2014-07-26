@@ -6,11 +6,9 @@ DISTNAME=	stellarium-0.12.4
 
 CATEGORIES=	astro x11
 
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.stellarium.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

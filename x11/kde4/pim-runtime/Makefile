@@ -2,6 +2,7 @@
 
 COMMENT =	KDE PIM runtime support
 DISTNAME =	kdepim-runtime-${MODKDE4_VERSION}
+REVISION =	0
 
 DPB_PROPERTIES =	parallel
 

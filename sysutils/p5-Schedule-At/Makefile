@@ -4,9 +4,8 @@ COMMENT =	Perl interface for the system 'at' command
 
 MODULES =	cpan
 DISTNAME =	Schedule-At-1.15
+REVISION =	0
 CATEGORIES =	sysutils
-
-MAINTAINER =	Eric Olsen <herolsen@alumni.upenn.edu>
 
 # Perl
 PERMIT_PACKAGE_CDROM =  Yes

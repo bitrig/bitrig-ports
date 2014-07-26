@@ -4,15 +4,13 @@ COMMENT=	GNU Scientific Library
 BROKEN-vax =	missing ieeefp.h
 
 DISTNAME=	gsl-1.15
-REVISION=	1
+REVISION=	2
 SHARED_LIBS +=	gslcblas             1.0      # .0.0
 SHARED_LIBS +=	gsl                  12.0     # .16.0
 
 CATEGORIES=	devel
 
 HOMEPAGE=	https://www.gnu.org/software/gsl/
-
-MAINTAINER=	Can Erkin Acar <canacar@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

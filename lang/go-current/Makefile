@@ -14,8 +14,6 @@ REVISION =		1
 
 HOMEPAGE =		http://www.golang.org/
 
-MAINTAINER = 		Marco Peereboom <marco@peereboom.us>
-
 # software: BSD, documentation: CC-BY-3.0
 PERMIT_PACKAGE_CDROM =	 Yes
 

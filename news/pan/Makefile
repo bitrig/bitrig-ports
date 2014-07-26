@@ -5,11 +5,9 @@ COMMENT=	powerful Gtk+2 newsreader
 V=		0.139
 DISTNAME=	pan-${V}
 CATEGORIES=	news x11
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	http://pan.rebelbase.com/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,6 +3,7 @@
 COMMENT =	multimedia layer for Qt4/KDE4
 CATEGORIES =	multimedia devel
 VERSION =	4.7.2
+REVISION =	0
 DISTNAME =	phonon-${VERSION}
 HOMEPAGE =	http://phonon.kde.org/
 

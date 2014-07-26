@@ -5,7 +5,7 @@ ONLY_FOR_ARCHS= ${APM_ARCHS}
 COMMENT=	Advanced Power Management monitor utility for X
 
 DISTNAME=	asapm-2.13
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://www.tigr.net/afterstep/
 

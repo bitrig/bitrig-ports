@@ -4,6 +4,7 @@ COMMENT =	create a temporary database from a DBIx::Class::Schema
 
 MODULES =	cpan
 DISTNAME =	DBICx-TestDatabase-0.04
+REVISION =	0
 CATEGORIES =	databases
 CPAN_AUTHOR =	JROCKWAY
 

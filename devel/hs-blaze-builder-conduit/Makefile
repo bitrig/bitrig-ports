@@ -3,9 +3,8 @@
 COMMENT =		convert streams of builders to streams of bytestrings
 
 DISTNAME =		blaze-builder-conduit-1.0.0
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

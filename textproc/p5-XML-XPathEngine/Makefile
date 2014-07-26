@@ -4,11 +4,9 @@ COMMENT=	re-usable XPath engine for DOM-like trees
 
 MODULES=	cpan
 DISTNAME=	XML-XPathEngine-0.12
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

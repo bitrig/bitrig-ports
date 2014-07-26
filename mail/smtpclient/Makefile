@@ -3,7 +3,7 @@
 COMMENT=		simple SMTP client
 
 DISTNAME=		smtpclient-1.0.0
-REVISION =		2
+REVISION =		3
 CATEGORIES=		mail
 
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT=	load mix-ins or components to your C3-based class
 
 MODULES=	cpan
 DISTNAME=	Class-C3-Componentised-1.001000
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # Perl

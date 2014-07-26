@@ -4,12 +4,10 @@ COMMENT=	tty-based e-mail client
 
 DISTNAME=	mutt-1.5.23
 EPOCH=		0
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	mail
 HOMEPAGE=	http://www.mutt.org/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

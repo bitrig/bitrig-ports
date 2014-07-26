@@ -4,11 +4,10 @@ COMMENT =	ISP tool for LPC2000 and ADUC70xx microcontrollers
 
 DISTNAME =	lpc21isp_194
 PKGNAME =	lpc21isp-1.94
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://sourceforge.net/projects/lpc21isp/
-
-MAINTAINER =	Alexander Shiryaev <shiryaev.a.v@gmail.com>
 
 # LGPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

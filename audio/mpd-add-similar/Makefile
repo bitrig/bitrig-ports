@@ -4,12 +4,10 @@ COMMENT =		add similar tracks to your mpd playlist
 
 MODPY_EGG_VERSION =	0.1.6
 DISTNAME =		mpd-add-similar-${MODPY_EGG_VERSION}
-REVISION =		1
+REVISION =		2
 CATEGORIES =		audio net
 
 HOMEPAGE =		http://launchpad.net/mpd-add-similar
-
-MAINTAINER = 		Edd Barrett <edd@openbsd.org>
 
 # GPLv2 or later
 PERMIT_PACKAGE_CDROM =	Yes

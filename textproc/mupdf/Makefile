@@ -8,12 +8,11 @@ COMMENT =	graphic library, pdf parser, viewer and utilities
 V =		1.5
 DISTNAME =	mupdf-$V-source
 PKGNAME =	mupdf-$V
+REVISION =	0
 
 CATEGORIES =	textproc x11
 
 HOMEPAGE =	http://mupdf.com/
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # code: Affero v3 (UGH!)
 # font maps: Adobe (redist ok, see headers).

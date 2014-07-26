@@ -3,7 +3,7 @@
 COMMENT=	soundscope for GkrellM2 using ESD
 
 DISTNAME=	gkrellmss-2.6
-REVISION=	15
+REVISION=	16
 CATEGORIES=	audio
 
 HOMEPAGE=http://members.dslextreme.com/users/billw/gkrellmss/gkrellmss.html

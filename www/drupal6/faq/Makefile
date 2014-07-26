@@ -4,5 +4,6 @@ COMMENT =	module to create question and answer pairs
 
 DISTNAME = 	faq-6.x-1.13
 PKGNAME =	drupal6-faq-1.13
+REVISION =	0
 
 .include <bsd.port.mk>

@@ -3,12 +3,10 @@
 COMMENT=		rar, 7zip and zip password bruteforcer
 
 DISTNAME=		rarcrack-0.2
-REVISION =		3
+REVISION =		4
 CATEGORIES=		security
 
 HOMEPAGE=		http://rarcrack.sourceforge.net/
-
-MAINTAINER=		Laurent Fanis <laurent.fanis@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

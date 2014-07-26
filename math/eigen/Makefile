@@ -6,6 +6,7 @@ CATEGORIES=	math devel
 HOMEPAGE=	http://eigen.tuxfamily.org/
 MASTER_SITES=	http://download.tuxfamily.org/eigen/
 DISTNAME=	eigen-1.0.5
+REVISION=	0
 WRKDIST=	${WRKDIR}/eigen
 
 # relaxed GPL (LGPL for template libs)

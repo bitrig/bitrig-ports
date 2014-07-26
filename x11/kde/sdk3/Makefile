@@ -4,7 +4,7 @@ COMMENT-main =		K Desktop Environment, developer extensions
 COMMENT-svn =		K Desktop Environment, svn extensions
 CATEGORIES =		x11 x11/kde devel
 VERSION =		3.5.10
-REVISION =		21
+REVISION =		22
 DISTNAME =		kdesdk-${VERSION}
 
 PKGNAME-main =		${DISTNAME}

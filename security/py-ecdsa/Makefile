@@ -5,11 +5,10 @@ COMMENT =		Python implementation of ECDSA cryptography
 MODPY_EGG_VERSION = 	0.11
 DISTNAME = 		ecdsa-${MODPY_EGG_VERSION}
 PKGNAME = 		py-${DISTNAME}
+REVISION = 		0
 CATEGORIES = 		security
 
 HOMEPAGE = 		https://github.com/warner/python-ecdsa
-
-MAINTAINER = 		Benoit Lecocq <benoit@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM = 	Yes

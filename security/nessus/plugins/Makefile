@@ -3,7 +3,7 @@
 COMMENT=	plugins for Nessus
 DISTNAME=	nessus-plugins-GPL-${V}
 PKGNAME=	${DISTNAME:S/-GPL//}
-REVISION =	1
+REVISION =	2
 
 WANTLIB=	crypto hosts_gatherer m nessus pcap ssl util
 

@@ -5,7 +5,7 @@ COMMENT=	library for WWW access in Perl
 MODULES=	cpan
 DISTNAME=	libwww-perl-5.837
 PKGNAME=	p5-${DISTNAME:S/-perl-/-/}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
 

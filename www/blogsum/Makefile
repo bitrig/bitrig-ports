@@ -3,11 +3,9 @@
 COMMENT =		simple weblog
 
 DISTNAME =		blogsum-1.1
-REVISION =		3
+REVISION =		4
 CATEGORIES =		www
 HOMEPAGE =		http://blogsum.obfuscurity.com/
-
-MAINTAINER =		Jason Dixon <jdixon@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =		Yes

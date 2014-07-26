@@ -3,7 +3,7 @@
 COMMENT=	interface to various online weather-services for PHP
 
 DISTNAME=	Services_Weather-1.4.0
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
 
 MODULES=	www/pear

@@ -2,11 +2,10 @@
 
 COMMENT =	X11 Cursors themes
 DISTNAME =	xcursor-themes-1.0.4
+REVISION =	0
 CATEGORIES =	x11
 
 HOMEPAGE =	http://wiki.X.Org/
-
-MAINTAINER =	Matthieu Herrb <matthieu@openbsd.org>
 
 BUILD_DEPENDS =	x11/xcursorgen>=7
 

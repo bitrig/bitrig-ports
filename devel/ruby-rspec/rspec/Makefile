@@ -3,7 +3,7 @@
 COMMENT =		ruby framework for Behaviour Driven Development
 V =			2.14.1
 DISTNAME =		rspec-$V
-REVISION =		0
+REVISION =		1
 
 BUILD_DEPENDS = 	${RUN_DEPENDS}
 RUN_DEPENDS = 		devel/ruby-rspec/core,${MODRUBY_FLAVOR}>=$V \

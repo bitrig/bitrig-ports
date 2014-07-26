@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 PKGNAME=	pokerth-${V}
 
 CATEGORIES=	games x11
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.pokerth.net/
 

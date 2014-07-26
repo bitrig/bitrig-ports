@@ -3,11 +3,10 @@
 COMMENT =	Perl DHCP classes
 
 DISTNAME =	Net-DHCP-0.693
+REVISION =	0
 CATEGORIES =	net
 # CPAN_AUTHOR =	SHADINGER
 CPAN_AUTHOR =	DJZORT
-
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	 Yes

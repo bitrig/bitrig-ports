@@ -5,12 +5,11 @@ COMMENT=		generic object relational mapper for Python
 MODPY_EGG_VERSION=	0.19
 DISTNAME=		storm-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
+REVISION=		0
 
 CATEGORIES=		databases
 
 HOMEPAGE=		https://storm.canonical.com/
-
-MAINTAINER=		Eric Faurot <eric@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

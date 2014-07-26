@@ -5,12 +5,10 @@ COMMENT=	command line parsing library for Python
 MODPY_EGG_VERSION = 1.5.3
 DISTNAME =	optik-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
-REVISION =	2
+REVISION =	3
 CATEGORIES =   	devel
 
 HOMEPAGE =	http://optik.sourceforge.net/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD License
 PERMIT_PACKAGE_CDROM =	Yes

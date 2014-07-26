@@ -4,6 +4,7 @@ COMMENT= 	install shared files, to use with File::ShareDir
 
 MODULES=	cpan
 DISTNAME=	File-ShareDir-Install-0.08
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

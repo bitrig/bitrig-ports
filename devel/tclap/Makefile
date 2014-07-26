@@ -3,6 +3,7 @@
 COMMENT=	templatized C++ command line parser
 
 DISTNAME=	tclap-1.2.1
+REVISION=	0
 
 CATEGORIES=	devel
 

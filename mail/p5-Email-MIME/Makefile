@@ -4,11 +4,9 @@ COMMENT=	handle MIME messages
 
 MODULES=	cpan
 DISTNAME=	Email-MIME-1.910
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

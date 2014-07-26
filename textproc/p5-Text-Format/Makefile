@@ -3,6 +3,7 @@
 COMMENT=		various subroutines to format text
 
 DISTNAME =		Text-Format-0.58
+REVISION =		0
 CATEGORIES=		textproc
 
 # perl

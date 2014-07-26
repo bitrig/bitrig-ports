@@ -3,13 +3,11 @@
 COMMENT=	advanced music player
 
 DISTNAME=	aqualung-0.9beta11
-REVISION=	14
+REVISION=	15
 EPOCH=		0
 CATEGORIES=	audio
 
 HOMEPAGE=	http://aqualung.factorial.hu/
-
-MAINTAINER=	Jeremy Evans <jeremy@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

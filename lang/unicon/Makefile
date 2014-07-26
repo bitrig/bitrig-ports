@@ -7,13 +7,12 @@ COMMENT=	programming language with generators, X11 graphics and more
 
 CATEGORIES=	lang
 DISTNAME=	unicon-10.0beta
-REVISION=	1
+REVISION=	2
 DISTFILES=	uni.zip
 
 HOMEPAGE=	http://unicon.sourceforge.net/
 
 MASTER_SITES=	http://icon.cs.unlv.edu/v9/
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM= Yes

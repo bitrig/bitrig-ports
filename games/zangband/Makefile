@@ -4,7 +4,7 @@ COMMENT=	Zangband (Zelazny Angband) with color, X11 support
 
 VERSION=	2.6.2
 DISTNAME=	zangband-${VERSION}
-REVISION =	4
+REVISION =	5
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sunet.se/pub/games/Angband/Variant/ZAngband/ \
 		ftp://ftp.planetmirror.com/pub/angband/Variant/ZAngband/ \

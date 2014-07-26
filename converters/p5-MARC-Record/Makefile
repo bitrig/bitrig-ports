@@ -4,6 +4,7 @@ COMMENT=	MARC (machine readable cataloging format)
 CATEGORIES=	converters
 
 DISTNAME =	MARC-Record-2.0.6
+REVISION =	0
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

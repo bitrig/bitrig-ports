@@ -3,7 +3,7 @@
 COMMENT=	sound library for Enlightenment
 
 DISTNAME=	esound-0.2.41
-REVISION=	1
+REVISION=	2
 EPOCH=		0
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/esound/0.2/}

@@ -2,7 +2,7 @@
 
 COMMENT=		audio CD to audio file encoder
 DISTNAME=		vlorb-1.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=		audio
 
 HOMEPAGE=		http://jk.yazzy.org/projects/vlorb/

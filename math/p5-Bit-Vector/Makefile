@@ -7,9 +7,7 @@ COMMENT=	library of advanced math functions
 MODULES=	cpan
 DISTNAME =	Bit-Vector-7.2
 CATEGORIES=	math
-REVISION =	0
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
+REVISION =	1
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

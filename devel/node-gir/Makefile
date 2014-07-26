@@ -6,11 +6,9 @@ NPM_VERSION =	0.1.0
 NPM_NAME =	gir
 CATEGORIES =	devel
 
-REVISION = 5
+REVISION = 6
 
 HOMEPAGE =	https://github.com/creationix/node-gir
-
-MAINTAINER =	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

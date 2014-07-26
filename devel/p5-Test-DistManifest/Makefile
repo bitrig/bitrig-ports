@@ -5,6 +5,7 @@ COMMENT = 	author test that validates a package MANIFEST
 MODULES =	cpan
 
 DISTNAME =	Test-DistManifest-1.012
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

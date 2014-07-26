@@ -24,12 +24,14 @@ PKGNAME-debug =		qt4-debug-${PKGVERSION}
 FULLPKGNAME-html =	qt4-html-${PKGVERSION}
 FULLPKGPATH-html =	${BASE_PKGPATH},-html
 
-REVISION-mysql =	1
-REVISION-postgresql =	1
-REVISION-main =		2
-REVISION-examples =	1
-REVISION-sqlite2 =	1
-REVISION-tds =		1
+REVISION-debug =	0
+REVISION-html =		0
+REVISION-mysql =	2
+REVISION-postgresql =	2
+REVISION-main =		3
+REVISION-examples =	2
+REVISION-sqlite2 =	2
+REVISION-tds =		2
 
 # XXX qmake include parser is bogus
 DPB_PROPERTIES =	parallel	nojunk
@@ -65,8 +67,6 @@ CATEGORIES =	x11
 MASTER_SITES =  http://download.qt-project.org/official_releases/qt/4.8/${VERSION}/
 
 HOMEPAGE =	http://qt-project.org/
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 FLAVORS =	debug
 FLAVOR ?=

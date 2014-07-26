@@ -5,12 +5,10 @@ COMMENT=	specific Python bindings for OpenBSD
 V=		0.1.2
 DISTNAME=	pyopenbsd-${V}
 PKGNAME=	py-openbsd-${V}
-REVISION=	13
+REVISION=	14
 CATEGORIES=	devel
 
 HOMEPAGE=	http://dev.nullcube.com/
-
-MAINTAINER=	Aldo Cortesi <aldo@nullcube.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

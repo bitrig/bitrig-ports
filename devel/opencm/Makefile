@@ -7,12 +7,10 @@ sV=			-2
 DISTFILES=		opencm-${V}${sV}-src.tgz
 DISTNAME=		opencm-${V}
 PKGNAME=		opencm-${V}
-REVISION =		3
+REVISION =		4
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.opencm.org/
-
-MAINTAINER=		Todd T. Fries <todd@openbsd.org>
 
 # BSD/(GPL for diff3)
 PERMIT_PACKAGE_CDROM=	Yes

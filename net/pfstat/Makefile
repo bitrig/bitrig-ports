@@ -7,13 +7,11 @@ DISTNAME=	pfstat-2.3
 
 PKGNAME-main=	${DISTNAME}
 PKGNAME-daemon=	${DISTNAME:S/-/d-/}
-REVISION=	7
+REVISION=	8
 CATEGORIES=	net
 MASTER_SITES=	http://www.benzedrine.cx/
 
 HOMEPAGE=	http://www.benzedrine.cx/pfstat.html
-
-MAINTAINER=	Daniel Hartmeier <dhartmei@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

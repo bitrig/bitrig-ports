@@ -9,7 +9,7 @@ GNOME_VERSION=		2.24.4
 EXTRACT_SUFX=		.tar.bz2
 PKGNAME=		gnome-vfs2-${VERSION}
 
-REVISION=		11
+REVISION=		12
 
 SHARED_LIBS +=	gnomevfs-2           2400.0   # .2400.0
 

@@ -3,7 +3,7 @@
 COMMENT=	multi-threaded DAAP server
 
 DISTNAME=	mt-daapd-0.2.4.2
-REVISION=	5
+REVISION=	6
 CATEGORIES=	audio net
 
 HOMEPAGE=	http://www.mt-daapd.org/

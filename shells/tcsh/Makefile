@@ -3,11 +3,9 @@
 COMMENT=	extended C-shell with many useful features
 
 DISTNAME=	tcsh-6.18.01
-REVISION=	0
+REVISION=	1
 CATEGORIES=	shells
 HOMEPAGE=	http://www.tcsh.org/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

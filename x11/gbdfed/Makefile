@@ -3,7 +3,7 @@
 COMMENT=	GTK-based BDF font editor
 
 DISTNAME=	gbdfed-1.6
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	x11 fonts
 HOMEPAGE=	http://www.math.nmsu.edu/~mleisher/Software/gbdfed/

@@ -5,7 +5,7 @@ COMMENT =		INI parser for Python
 MODPY_EGG_VERSION =	0.4
 DISTNAME =		iniparse-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
 

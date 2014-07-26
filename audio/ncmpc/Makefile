@@ -4,12 +4,11 @@ COMMENT=		curses based frontend for mpd
 
 VER=			0.21
 DISTNAME=		ncmpc-${VER}
+REVISION=		0
 EPOCH=			0
 CATEGORIES=		audio
 
 HOMEPAGE=		http://www.musicpd.org/clients/ncmpc/
-
-MAINTAINER=		David Coppa <dcoppa@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

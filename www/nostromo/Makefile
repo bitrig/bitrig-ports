@@ -3,12 +3,11 @@
 COMMENT=		Nostromo webserver
 
 DISTNAME=		nostromo-1.9.5
+REVISION=		0
 CATEGORIES=		www
 MASTER_SITES=		http://www.nazgul.ch/dev/
 
 HOMEPAGE=		http://www.nazgul.ch/dev.html
-
-MAINTAINER=		Marcus Glocker <marcus@nazgul.ch>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=	classes to create and decode MIME messages in PHP
 
 DISTNAME=	Mail_Mime-1.8.1
-REVISION=		0
+REVISION=		1
 CATEGORIES=	mail
 
 MODULES=	www/pear

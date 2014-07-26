@@ -3,6 +3,7 @@
 COMMENT=	framework for creating extensible applications
 
 DISTNAME=	mono-addins-1.1
+REVISION=	0
 CATEGORIES=	devel lang
 
 HOMEPAGE=	http://monoaddins.codeplex.com/

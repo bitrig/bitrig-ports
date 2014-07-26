@@ -11,11 +11,9 @@ PKGNAME=		architect-${V}
 CATEGORIES=		databases
 WRKDIST=		${WRKDIR}/architect-${V}/
 
-REVISION=		3
+REVISION=		4
 
 HOMEPAGE=		http://www.sqlpower.ca/page/architect
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

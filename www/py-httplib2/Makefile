@@ -3,7 +3,7 @@
 COMMENT =		Python HTTP client library
 
 MODPY_EGG_VERSION =	0.7.7
-REVISION = 		1
+REVISION = 		2
 DISTNAME =		httplib2-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 

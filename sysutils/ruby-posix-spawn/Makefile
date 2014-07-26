@@ -3,7 +3,7 @@
 COMMENT=	fast process spawning
 
 DISTNAME=	posix-spawn-0.3.6
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	sysutils
 

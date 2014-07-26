@@ -4,7 +4,7 @@ SHARED_ONLY=	Yes
 
 COMMENT=	powerful math/statistics/graphics language
 DISTNAME=	R-3.1.0
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS=	R	2.1 	# 2.0
 SHARED_LIBS+=	Rlapack	31.2 	# 31.1
@@ -12,8 +12,6 @@ SHARED_LIBS+=	Rblas	31.1 	# 31.0
 
 CATEGORIES=	math
 HOMEPAGE=	http://www.r-project.org/
-
-MAINTAINER=	Rafael Sadowski <rafael@sizeofvoid.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

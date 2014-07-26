@@ -5,6 +5,7 @@ COMMENT=	GNU Image Manipulation Program
 SHARED_ONLY=	Yes
 
 DISTNAME=	gimp-2.8.10
+REVISION=	0
 
 SHARED_LIBS+=	gimp-2.0	272.0	# 800.0
 SHARED_LIBS+=	gimpbase-2.0	272.0	# 800.0
@@ -17,7 +18,6 @@ SHARED_LIBS+=	gimpui-2.0	272.0	# 800.0
 SHARED_LIBS+=	gimpwidgets-2.0	272.0	# 800.0
 
 CATEGORIES=	graphics
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 	
 DIR=		gimp/v2.8
 MASTER_SITES=	http://download.gimp.org/pub/${DIR}/ \

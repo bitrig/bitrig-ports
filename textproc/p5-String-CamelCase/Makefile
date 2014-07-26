@@ -4,9 +4,8 @@ COMMENT=	camelcase, de-camelcase
 
 MODULES=	cpan
 DISTNAME=	String-CamelCase-0.02
+REVISION=	0
 CATEGORIES=	textproc
-
-MAINTAINER=	Andrew Fresh <andrew@cpan.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

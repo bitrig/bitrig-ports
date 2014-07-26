@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	Glade 2.x support for Gtk2-Perl
 
 DISTNAME=	Gtk2-GladeXML-1.007
-REVISION=	8
+REVISION=	9
 
 CATEGORIES=	x11
 

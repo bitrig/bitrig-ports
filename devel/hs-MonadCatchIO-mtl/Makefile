@@ -3,11 +3,9 @@
 COMMENT =		monad-transformer version of Control.Exception.catch
 
 DISTNAME =		MonadCatchIO-mtl-0.3.0.5
-REVISION =		2
+REVISION =		3
 CATEGORIES =		devel
 HOMEPAGE =		http://darcsden.com/jcpetruzza/MonadCatchIO-mtl
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

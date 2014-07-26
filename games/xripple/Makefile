@@ -4,12 +4,10 @@ COMMENT=	screen bottom ripples like a pool of water
 
 DISTNAME=	xripple
 PKGNAME=	xripple-1.0
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games
 
 MASTER_SITES=	http://spacehopper.org/mirrors/
-
-MAINTAINER=	Michael Shalayeff <mickey@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	no license available
 PERMIT_PACKAGE_FTP=	no license available

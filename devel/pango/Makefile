@@ -8,6 +8,7 @@ SHARED_ONLY=		Yes
 COMMENT=		library for layout and rendering of text
 
 GNOME_VERSION=		1.36.5
+REVISION=		0
 GNOME_PROJECT=		pango
 
 SHARED_LIBS +=  pango-1.0            3600.0   # 3600.3
@@ -18,8 +19,6 @@ SHARED_LIBS +=  pangocairo-1.0       3600.0   # 3600.3
 CATEGORIES=		devel x11
 
 HOMEPAGE=		http://www.pango.org/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

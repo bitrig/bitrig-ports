@@ -2,7 +2,7 @@
 
 COMMENT =	full and incremental backups on filesystem
 DISTNAME =	faubackup-0.5.9
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	sysutils
 

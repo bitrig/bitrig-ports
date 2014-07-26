@@ -3,6 +3,7 @@
 COMMENT=	get news from RSS feeds in email
 
 DISTNAME=	rss2email-2.70
+REVISION=	0
 
 CATEGORIES=	mail textproc
 

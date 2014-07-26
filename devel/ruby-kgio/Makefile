@@ -3,9 +3,8 @@
 COMMENT =	kinder, gentler I/O for Ruby
 
 DISTNAME =	kgio-2.8.1
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # LGPLv2.1/LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,7 +4,7 @@ COMMENT=	convert a MySQL dump to a PostgreSQL dump
 
 DISTNAME=	mysql2pgsql
 PKGNAME=	mysql2pgsql-20010320
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
 
 MASTER_SITES=	http://www.rot13.org/~dpavlin/projects/sql/
@@ -15,8 +15,6 @@ EXTRACT_ONLY=	#empty
 HOMEPAGE=	http://www.rot13.org/~dpavlin/sql.html
 
 RUN_DEPENDS=	databases/p5-DBI
-
-MAINTAINER=	Pete Fritchman <petef@databits.net>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

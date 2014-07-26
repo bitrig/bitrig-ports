@@ -3,6 +3,7 @@
 COMMENT =		scripting framework to replace rake/sake/rubigen
 
 DISTNAME =		thor-0.18.1
+REVISION =		0
 
 CATEGORIES =		devel
 

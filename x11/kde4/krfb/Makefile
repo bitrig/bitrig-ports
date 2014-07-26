@@ -2,6 +2,7 @@
 
 COMMENT =	desktop sharing
 DISTNAME =	krfb-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	network
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdenetwork/krfb

@@ -3,6 +3,7 @@
 COMMENT =		atomic reference implementation for Ruby
 
 DISTNAME =		atomic-1.1.16
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		http://github.com/headius/ruby-atomic

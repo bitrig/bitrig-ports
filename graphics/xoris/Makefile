@@ -3,6 +3,7 @@
 COMMENT =	X11 pixel color grabber
 
 DISTNAME =	xoris-0.1e
+REVISION =	0
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://xoris.sf.net/

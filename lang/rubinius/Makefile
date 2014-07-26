@@ -13,14 +13,13 @@ COMMENT =	Ruby virtual machine and core library
 V=		2.2.9
 EXTRACT_SUFX=	.tar.bz2
 DISTNAME =	rubinius-${V}
+REVISION =	0
 
 MASTER_SITES =	http://releases.rubini.us/
 
 CATEGORIES =	lang lang/ruby
 
 HOMEPAGE =	http://rubini.us/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

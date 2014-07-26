@@ -4,7 +4,7 @@ COMMENT=	event-based FTP server on a virtual filesystem
 
 MODULES=	cpan
 DISTNAME=	POE-Component-Server-FTP-0.08
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 # Artistic License

@@ -5,11 +5,9 @@ COMMENT =	interface to the Skein digest algorithm
 DISTNAME =	Digest-Skein-0.05
 CATEGORIES =	security
 
-REVISION =	2
+REVISION =	3
 
 HOMEPAGE =	http://www.skein-hash.info/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

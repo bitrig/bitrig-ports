@@ -3,7 +3,7 @@
 COMMENT=	tool for testing network IDS implementations
 
 DISTNAME=	fragrouter-1.6
-REVISION=	2
+REVISION=	3
 CATEGORIES=	security
 
 MASTER_SITES=	http://monkey.org/~dugsong/

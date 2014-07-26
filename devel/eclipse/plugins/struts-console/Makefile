@@ -5,13 +5,11 @@ COMMENT=		configuration tool for Struts web framework
 V=4.8
 DISTNAME=		struts-console-${V}
 PKGNAME=		eclipse-plugin-struts-console-${V}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES?=		java
 
 HOMEPAGE=		http://www.jamesholmes.com/struts/console/
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
 
 # Free for use, but no redistribution. 
 PERMIT_PACKAGE_CDROM=	no redistribution

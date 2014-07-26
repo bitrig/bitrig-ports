@@ -4,9 +4,8 @@ COMMENT =		superdaemon for hot-deploying server programs
 
 MODULES =		cpan
 DISTNAME =		Server-Starter-0.09
-REVISION =		0
+REVISION =		1
 CATEGORIES =		net
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 BUILD_DEPENDS =		${RUN_DEPENDS}
 RUN_DEPENDS =		devel/p5-List-MoreUtils \

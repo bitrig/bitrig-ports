@@ -4,7 +4,7 @@ COMMENT=	X11 version of the popular board game
 
 V=		2.12
 DISTNAME=	xscrabble-${V}
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games
 
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

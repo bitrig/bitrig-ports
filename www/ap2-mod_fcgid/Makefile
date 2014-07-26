@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		binary compatible alternative to Apache mod_fastcgi
 DISTNAME=		mod_fcgid.2.2
 PKGNAME=		ap2-mod_fcgid-2.2
-REVISION=		2
+REVISION=		3
 
 CATEGORIES=		www
 

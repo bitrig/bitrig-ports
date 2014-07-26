@@ -18,8 +18,9 @@ PKGNAME-main =		openarena-${V}
 PKGNAME-server =	openarena-server-${V}
 PKGNAME-data =		openarena-data-${V}
 
-REVISION-main =		1
-REVISION-server =	0
+REVISION-main =		2
+REVISION-server =	1
+REVISION-data =		0
 
 PKG_ARCH-data = 	*
 

@@ -3,15 +3,13 @@
 COMMENT =	GTK+2 widget to display large amounts of numerical data
 
 DISTNAME =	gtkdatabox-0.9.1.1
-REVISION =	4
+REVISION =	5
 
 SHARED_LIBS =	gtkdatabox 0.0
 
 CATEGORIES =	x11
 
 HOMEPAGE =	http://www.eudoxos.de/gtk/gtkdatabox/
-
-MAINTAINER =	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

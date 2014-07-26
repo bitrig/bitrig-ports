@@ -4,6 +4,7 @@ COMMENT=	universal I/O to everything
 
 MODULES=	cpan
 DISTNAME=	IO-All-0.46
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

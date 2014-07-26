@@ -6,7 +6,7 @@ COMMENT=		generate QR Code with Imager using libqrencode
 
 DISTNAME=		Imager-QRCode-0.034
 CATEGORIES=		graphics
-REVISION=		0
+REVISION=		1
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

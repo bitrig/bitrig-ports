@@ -4,6 +4,7 @@ COMMENT= 	DateTime::Format extension to HTTP formats
 
 MODULES=	cpan 
 DISTNAME=	DateTime-Format-HTTP-0.42
+REVISION=	0
 CATEGORIES=	devel www
 
 # perl

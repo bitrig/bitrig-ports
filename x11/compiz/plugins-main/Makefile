@@ -4,7 +4,7 @@ COMMENT =	main plugins for compiz
 
 V =		0.8.8
 DISTNAME =	compiz-plugins-main-${V}
-REVISION =	0
+REVISION =	1
 
 MASTER_SITES =	http://releases.compiz.org/${V}/
 

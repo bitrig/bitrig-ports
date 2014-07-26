@@ -4,9 +4,8 @@ COMMENT=	interface to HMAC Message-Digest Algorithms
 
 MODULES=	cpan
 DISTNAME=	Digest-HMAC-1.03
+REVISION=	0
 CATEGORIES=	security
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=   Yes

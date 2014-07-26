@@ -5,11 +5,10 @@ COMMENT=	modules for handling mail with perl
 MODULES=	cpan
 DISTNAME=	MailTools-2.07
 PKGNAME=	p5-Mail-Tools-2.07
+REVISION=	0
 CATEGORIES=	mail devel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mail/}
 USE_GROFF =	Yes
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

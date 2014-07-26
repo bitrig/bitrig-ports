@@ -3,6 +3,7 @@
 COMMENT=	graphical diff and merge tool
 
 GNOME_VERSION=	1.8.6
+REVISION=	0
 GNOME_PROJECT=	meld
 
 CATEGORIES=	textproc x11

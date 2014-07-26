@@ -4,11 +4,10 @@ COMMENT =	import packages into other packages
 
 MODULES =	cpan
 DISTNAME =	Import-Into-1.002000
+REVISION =	0
 CATEGORIES =	devel
 
 CPAN_AUTHOR =	HAARG
-
-MAINTAINER =    Sergey Bronnikov <estetus@gmail.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

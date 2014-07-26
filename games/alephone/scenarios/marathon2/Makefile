@@ -5,6 +5,7 @@ COMMENT=		marathon two data files
 V =			20140104
 DISTNAME=		marathon2-0.0.${V}
 PKGNAME=		marathon2-0.0.${V}
+REVISION=		0
 HOMEPAGE=		http://source.bungie.org/get/
 
 DISTFILES=		Marathon2-${V}-Data.zip:5

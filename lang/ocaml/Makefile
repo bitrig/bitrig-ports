@@ -8,6 +8,7 @@ COMMENT =	ML language based on complete class-based objective system
 # Do check that the ports that depend on it still work, or repair them. 
 # Don't forget to bump version in ocaml.port.mk, too!
 VERSION=4.01.0
+REVISION=0
 
 DISTNAME =	ocaml-${VERSION}
 
@@ -23,7 +24,6 @@ DOCFILES=	${BASENAME}-refman-html.tar.gz
 DISTFILES=	${DISTNAME}.tar.gz ${DOCFILES}
 
 HOMEPAGE=	http://www.ocaml.org/
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 
 # QPL/LGPL
 PERMIT_PACKAGE_CDROM=	Yes

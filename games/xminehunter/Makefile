@@ -3,7 +3,7 @@
 COMMENT=	Motif minesweeper game
 
 DISTNAME=	xminehunter-0.4
-REVISION =	3
+REVISION =	4
 CATEGORIES=	games
 
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=games/}

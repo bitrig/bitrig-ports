@@ -6,7 +6,7 @@ COMMENT=	probability and statistics utilities for Python
 
 DISTNAME=	probstat_0.912
 PKGNAME=	py-${DISTNAME:S/_/-/}
-REVISION =	7
+REVISION =	8
 CATEGORIES=	math
 
 HOMEPAGE=	http://probstat.sourceforge.net/

@@ -3,6 +3,7 @@
 COMMENT =		safely and cleanly create closures via string eval 
 
 DISTNAME =		Eval-Closure-0.11
+REVISION =		0
 CATEGORIES =		devel
 
 # perl

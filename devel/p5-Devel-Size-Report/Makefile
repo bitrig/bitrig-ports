@@ -3,9 +3,8 @@
 COMMENT=		generate a size report for all elements in a structure
 
 DISTNAME=		Devel-Size-Report-0.13
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

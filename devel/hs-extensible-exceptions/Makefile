@@ -3,9 +3,8 @@
 COMMENT =		extensible exceptions for Haskell
 
 DISTNAME =		extensible-exceptions-0.1.1.4
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

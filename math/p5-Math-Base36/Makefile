@@ -4,9 +4,8 @@ COMMENT =		encoding and decoding of base36 strings
 
 MODULES =		cpan
 DISTNAME =		Math-Base36-0.12
+REVISION =		0
 CATEGORIES =		math
-
-MAINTAINER =		Mikolaj Kucharski <mikolaj@kucharski.name>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

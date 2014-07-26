@@ -5,6 +5,7 @@ COMMENT-main =	useful and interesting programs for Icon
 COMMENT-x11 =	useful and interesting graphics program for Icon
 
 VERSION	=	9.5.1
+REVISION	=	0
 DISTNAME =	icon-v951src
 PKGNAME =	icon-lib-${VERSION}
 PKGNAME-main =	${PKGNAME}
@@ -12,8 +13,6 @@ PKGNAME-x11 =	icon-xlib-${VERSION}
 DISTFILES =	icon-v951src.tgz
 
 CATEGORIES =	lang
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # Public domain
 PERMIT_PACKAGE_CDROM =	Yes

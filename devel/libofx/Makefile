@@ -4,11 +4,9 @@ COMMENT=	opensource implementation of the OFX specification
 
 DISTNAME=	libofx-0.9.9
 CATEGORIES=	devel
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://libofx.sourceforge.net/
-
-MAINTAINER=	Landry Breuil <landry@openbsd.org>
 
 SHARED_LIBS=	ofx 7.0	# .6.0
 

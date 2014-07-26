@@ -4,7 +4,7 @@ COMMENT =	role for daemonizing your Moose based application
 
 MODULES =	cpan
 DISTNAME =	MooseX-Daemonize-0.13
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 
 # same as perl

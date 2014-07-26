@@ -2,9 +2,8 @@
 
 COMMENT =	inflect short English Phrases
 DISTNAME =	Lingua-EN-Inflect-Phrase-0.18
+REVISION =	0
 CATEGORIES =	textproc
-
-MAINTAINER =	Andrew Fresh <andrew@cpan.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

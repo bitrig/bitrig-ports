@@ -3,6 +3,7 @@
 COMMENT=	retrieve DNS zone via DNSSEC NXT/NSEC traversal
 
 DISTNAME=	walker-3.8
+REVISION=	0
 
 CATEGORIES=	net
 

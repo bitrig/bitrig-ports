@@ -4,7 +4,7 @@ COMMENT=	help benchmark random read performance
 
 DISTNAME=	randread-0.2
 CATEGORIES=	benchmarks
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://randread.sourceforge.net/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=randread/}

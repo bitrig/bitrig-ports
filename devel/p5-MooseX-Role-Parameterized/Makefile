@@ -3,7 +3,7 @@
 COMMENT =	roles with composition parameters
 
 DISTNAME =	MooseX-Role-Parameterized-1.02
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 MODULES =	cpan
 USE_GROFF =	Yes

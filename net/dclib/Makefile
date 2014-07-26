@@ -3,13 +3,11 @@
 COMMENT=	Library for direct-connect protocol
 
 DISTNAME=	dclib-0.3.7
-REVISION=	6
+REVISION=	7
 CATEGORIES=	net
 SHARED_LIBS=	dc	1.0
 
 HOMEPAGE=	http://wxdcgui.sourceforge.net/
-
-MAINTAINER=	Andrew Sveikauskas <asveikau@mail.rochester.edu>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

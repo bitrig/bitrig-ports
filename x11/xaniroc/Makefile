@@ -4,7 +4,7 @@ COMMENT=	animate your root-cursor
 
 DISTNAME=	xaniroc
 PKGNAME=	xaniroc-1.02
-REVISION=	2
+REVISION=	3
 CATEGORIES=	x11
 
 MASTER_SITES=	ftp://ftp.42.org/pub/orphan/

@@ -3,11 +3,10 @@
 COMMENT =	ARP level ping utility
 
 DISTNAME =	arping-2.13
+REVISION =	0
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.habets.pp.se/synscan/programs.php?prog=ARPing
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

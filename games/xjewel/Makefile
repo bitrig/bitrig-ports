@@ -3,7 +3,7 @@
 COMMENT=	dropping jewels game for X11
 
 DISTNAME=	xjewel-1.6
-REVISION =	4
+REVISION =	5
 CATEGORIES=	games
 
 MASTER_SITES=	ftp://ftp.warwick.ac.uk/pub/x11/

@@ -3,12 +3,10 @@
 COMMENT=		small tool to make annotations on the screen
 
 DISTNAME=		gromit-20041213
-REVISION=		10
+REVISION=		11
 CATEGORIES=		x11
 
 HOMEPAGE=		http://www.home.unix-ag.org/simon/gromit/
-
-MAINTAINER=		Michael Knudsen <mk@molioner.dk>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -2,7 +2,7 @@
 
 COMMENT=        Apache FastCGI module
 
-REVISION=	4
+REVISION=	5
 DISTNAME=	mod_fastcgi-SNAP-0811090952
 # temporary workaround: as the original distname would prevent a seamless
 # update use the last offical version and append the date of the snapshot

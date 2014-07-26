@@ -4,7 +4,7 @@ COMMENT=	report versions of all perl modules in memory
 
 MODULES=	cpan
 DISTNAME=	Module-Versions-Report-1.06
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

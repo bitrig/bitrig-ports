@@ -3,7 +3,7 @@
 COMMENT =		constraint grammar formalism variant
 
 DISTNAME =		vislcg3-0.9.8.8406
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		cg3                       0.0 # 0.0
 

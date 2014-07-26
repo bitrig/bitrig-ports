@@ -3,10 +3,10 @@
 COMMENT =	standard compliant weblog
 
 DISTNAME =	wordpress-3.9.1
+REVISION =	0
 CATEGORIES =	www
 
 HOMEPAGE =	http://wordpress.org/
-MAINTAINER =	Gonzalo L. R. <gonzalo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

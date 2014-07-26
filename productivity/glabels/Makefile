@@ -4,7 +4,7 @@ COMMENT =	labels and business card designer
 
 GNOME_PROJECT =	glabels
 GNOME_VERSION =	3.2.0
-REVISION =	2
+REVISION =	3
 
 CATEGORIES =	productivity graphics
 

@@ -3,7 +3,7 @@
 COMMENT =		Haskell 98 distributive functors
 
 DISTNAME =		distributive-0.2.2
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 
 # BSD3

@@ -4,10 +4,9 @@ COMMENT =	create DateTime parser classes and objects
 
 MODULES =	cpan 
 DISTNAME =	DateTime-Format-Builder-0.81
+REVISION =	0
 EPOCH =		0
 CATEGORIES =	devel
-
-MAINTAINER = Andrew Fresh <andrew@cpan.org>
 
 # artistic_2
 PERMIT_PACKAGE_CDROM =	Yes

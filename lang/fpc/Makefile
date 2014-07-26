@@ -7,13 +7,12 @@ COMMENT =		open source compiler for Pascal/Object Pascal
 V =			2.6.4
 DISTNAME =		fpcbuild-${V}
 PKGNAME =		fpc-${V}
+REVISION =		0
 BOOT_GEN =		0
 
 CATEGORIES =		lang
 
 HOMEPAGE =		http://www.freepascal.org/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # compiler: GPLv2+, packages/rtl: modified LGPLv2
 PERMIT_PACKAGE_CDROM =	Yes

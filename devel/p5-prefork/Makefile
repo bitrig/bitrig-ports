@@ -4,12 +4,10 @@ COMMENT=	optimized module loading
 
 MODULES=	cpan
 DISTNAME=	prefork-1.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 CPAN_AUTHOR=	ADAMK
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,6 +3,7 @@
 COMMENT=	European VAT number validator
 
 DISTNAME=	Business-Tax-VAT-Validation-1.02
+REVISION=	0
 CATEGORIES=	productivity
 
 # perl

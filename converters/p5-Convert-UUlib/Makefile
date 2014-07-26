@@ -8,9 +8,7 @@ DISTNAME =	Convert-UUlib-1.4
 EPOCH =		1
 CATEGORIES=	converters
 MODULES=	cpan
-REVISION =	0
-
-MAINTAINER=	Ibrahim Khalifa <ibo@toontown.org>
+REVISION =	1
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

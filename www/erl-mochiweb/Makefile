@@ -5,7 +5,7 @@ COMMENT=	Erlang library for building lightweight HTTP servers
 VERSION=	1.5.1
 DISTNAME=	mochiweb-${VERSION}p3
 PKGNAME=	erl-${DISTNAME:S/p3//}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 HOMEPAGE=	https://github.com/basho/mochiweb

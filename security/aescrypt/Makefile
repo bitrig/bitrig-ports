@@ -4,7 +4,7 @@ COMMENT=		encrypt/decrypt using Rijndael encryption algorithm
 
 V=			0.7
 DISTNAME=		aescrypt-${V}
-REVISION=		0
+REVISION=		1
 CATEGORIES=		security
 
 HOMEPAGE=		http://aescrypt.sourceforge.net/

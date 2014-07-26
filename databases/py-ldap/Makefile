@@ -8,9 +8,9 @@ COMMENT-examples=	example programs for the LDAP client API for Python
 V=			2.3.1
 DISTNAME=		python-ldap-${V}
 PKGNAME-main=		py-ldap-${V}
-REVISION-main =		11
+REVISION-main =		12
 FULLPKGNAME-examples=	py-ldap-examples-${V}
-REVISION-examples =	10
+REVISION-examples =	11
 FULLPKGPATH-examples=	databases/py-ldap,-examples
 
 CATEGORIES=		databases

@@ -4,9 +4,8 @@ COMMENT=	base-class for a tcpdump-like implementation
 
 MODULES=	cpan
 DISTNAME=	Net-Frame-Dump-1.09
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Gleydson Soares <gsoares@trusted.com.br>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=		Industrial icon theme from OpenSUSE
 
 DISTNAME=		industrial-icon-theme-11.0.5
-REVISION=		6
+REVISION=		7
 
 CATEGORIES=		x11
 

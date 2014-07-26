@@ -5,10 +5,8 @@ COMMENT= 	send emails with Catalyst
 MODULES=	cpan
 
 DISTNAME=	Catalyst-Plugin-Email-0.08
-REVISION=	2
+REVISION=	3
 CATEGORIES=	mail
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

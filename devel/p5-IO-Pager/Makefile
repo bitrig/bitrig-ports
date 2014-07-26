@@ -4,11 +4,9 @@ COMMENT=	select a pager if destination is a TTY
 
 MODULES=	cpan
 DISTNAME=	IO-Pager-0.06
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

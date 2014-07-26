@@ -4,6 +4,7 @@ COMMENT=	audio player and tagger for GTK+ with regex support
 
 MODPY_EGG_VERSION= 3.1.1
 DISTNAME=	quodlibet-${MODPY_EGG_VERSION}
+REVISION=	0
 
 CATEGORIES=	audio
 

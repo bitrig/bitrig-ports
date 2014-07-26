@@ -6,13 +6,11 @@ COMMENT=	simple encrypted backup tool for GNOME
 
 GNOME_VERSION=	30.0
 GNOME_PROJECT=	deja-dup
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	sysutils x11/gnome
 
 HOMEPAGE=	https://launchpad.net/deja-dup
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

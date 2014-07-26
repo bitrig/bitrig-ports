@@ -4,7 +4,7 @@ COMMENT=		drag and drop library
 
 DISTNAME=		dnd.1.1
 PKGNAME=		libdnd-1.1
-REVISION=		2
+REVISION=		3
 
 SHARED_LIBS=		Dnd++	1.0 \
 			Dnd	0.0

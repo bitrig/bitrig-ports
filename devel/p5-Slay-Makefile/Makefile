@@ -3,11 +3,9 @@
 COMMENT=	wrapper to Slay::Maker that reads the rules from a file
 
 DISTNAME=	Slay-Makefile-0.12
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 MODULES=	cpan
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

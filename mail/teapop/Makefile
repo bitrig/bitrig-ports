@@ -3,6 +3,7 @@
 COMMENT=		POP3-server with virtual domain support
 
 DISTNAME=		teapop-0.3.8
+REVISION=		0
 CATEGORIES=		mail
 
 HOMEPAGE=		http://www.toontown.org/teapop/

@@ -3,9 +3,8 @@
 COMMENT =		comonad transformers using functional dependencies
 
 DISTNAME =		comonads-fd-3.0.2
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

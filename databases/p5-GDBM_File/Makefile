@@ -6,7 +6,7 @@ COMMENT=	perl interface to gdbm
 DISTNAME=	perl-5.8.8
 EXTRACT_SUFX=	.tar.bz2
 PKGNAME=	p5-GDBM_File-1.08
-REVISION=	3
+REVISION=	4
 CATEGORIES=	databases perl5
 
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../src/}

@@ -3,6 +3,7 @@
 COMMENT=		personal file manager
 
 DISTNAME=		pfm-1.92.2
+REVISION=		0
 CATEGORIES=		misc
 
 HOMEPAGE=		http://p-f-m.sourceforge.net/

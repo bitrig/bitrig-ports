@@ -2,10 +2,10 @@
 
 COMMENT =		FreeBSD Documentation Project sanity check script
 VERSION =		1.431
+REVISION =		0
 DISTNAME =		igor-${VERSION}
 CATEGORIES =		textproc
 HOMEPAGE =		http://www.wonkity.com/~wblock/igor/
-MAINTAINER =		Ingo Schwarze <schwarze@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

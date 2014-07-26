@@ -4,7 +4,7 @@ COMMENT=		Perl shell
 
 DISTNAME=		psh-1.8.1
 PKGNAME=		${DISTNAME:S/p/perl/}
-REVISION=		0
+REVISION=		1
 CATEGORIES=		shells
 
 HOMEPAGE=		http://www.focusresearch.com/gregor/sw/psh/

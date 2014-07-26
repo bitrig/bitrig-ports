@@ -5,11 +5,10 @@ COMMENT=		CIM operations over HTTP in Python
 MODPY_EGG_VERSION=	0.7.0
 DISTNAME=		pywbem-${MODPY_EGG_VERSION}
 PKGNAME=		py-wbem-${MODPY_EGG_VERSION}
+REVISION=		0
 CATEGORIES=		devel
 
 HOMEPAGE=		http://sourceforge.net/apps/mediawiki/pywbem/
-
-MAINTAINER=		Mark Peoples <marco@azbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

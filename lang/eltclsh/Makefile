@@ -3,13 +3,12 @@
 COMMENT =	Libedit interface to Tcl/Tk interpreters
 
 DISTNAME =	eltclsh-1.12
+REVISION =	0
 CATEGORIES =	lang x11
 
 MASTER_SITES =	http://www.openrobots.org/distfiles/eltclsh/
 
 HOMEPAGE =	http://www.openrobots.org/wiki/eltclsh
-
-MAINTAINER =	Matthieu Herrb <matthieu@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	 Yes

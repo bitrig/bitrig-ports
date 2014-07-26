@@ -2,7 +2,7 @@
 
 FW_DRIVER=	iwn
 FW_VER=		5.10
-REVISION=	1
+REVISION=	2
 
 DISTFILES=	iwlwifi-4965-ucode-228.61.2.24.tgz \
 		iwlwifi-5000-ucode-8.83.5.1-1.tgz \

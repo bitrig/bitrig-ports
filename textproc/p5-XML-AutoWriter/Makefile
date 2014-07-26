@@ -4,11 +4,9 @@ COMMENT=	module for DOCTYPE based XML output
 
 MODULES=	cpan
 DISTNAME=	XML-AutoWriter-0.39
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

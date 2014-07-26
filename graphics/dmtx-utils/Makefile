@@ -3,11 +3,10 @@
 COMMENT =		tools for handling data matrix barcodes
 
 DISTNAME =		dmtx-utils-0.7.4
-REVISION =		3
+REVISION =		4
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://www.libdmtx.org/
-MAINTAINER =		Sebastian Reitenbach <sebastia@openbsd.org>
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=libdmtx/}
 
 # LGPLv2

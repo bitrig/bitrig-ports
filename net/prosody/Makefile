@@ -4,13 +4,11 @@ SHARED_ONLY=	Yes
 
 COMMENT=	communications server for Jabber/XMPP written in Lua
 DISTNAME=	prosody-0.9.4
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://prosody.im/downloads/source/
 
 HOMEPAGE=	http://prosody.im/
-
-MAINTAINER=	Henrik Friedrichsen <henrik@diff.cc>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

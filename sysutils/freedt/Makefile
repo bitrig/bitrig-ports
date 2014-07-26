@@ -3,7 +3,7 @@
 COMMENT=		reimplementation of Dan Bernstein's daemontools#'
 
 DISTNAME=		freedt-0.22
-REVISION=		1
+REVISION=		2
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://offog.org/code/freedt.html

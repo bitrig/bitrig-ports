@@ -3,7 +3,7 @@
 COMMENT=		advanced HTML-to-text converter
 
 DISTNAME=		html2text-1.3.2a
-REVISION=		1
+REVISION=		2
 CATEGORIES=		converters textproc
 
 

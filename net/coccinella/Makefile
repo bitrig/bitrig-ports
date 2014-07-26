@@ -4,13 +4,12 @@ SHARED_ONLY =		Yes
 
 COMMENT =		XMPP client with whiteboard
 
-REVISION =		4
+REVISION =		5
 DISTNAME =		Coccinella-0.96.20Binfree
 PKGNAME =		${DISTNAME:S/Binfree$//:L}
 CATEGORIES =		net
 
 HOMEPAGE =		http://www.coccinella.im
-MAINTAINER =		Sebastian Reitenbach <sebastia@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =		Yes

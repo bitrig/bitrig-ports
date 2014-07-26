@@ -3,12 +3,10 @@
 COMMENT =	case insensitive, case preserving hash class for ruby
 
 DISTNAME =	cicphash-1.0.0
-REVISION =	4
+REVISION =	5
 CATEGORIES =	devel
 
 HOMEPAGE=	http://cicphash.rubyforge.org/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT License
 PERMIT_PACKAGE_CDROM =	Yes

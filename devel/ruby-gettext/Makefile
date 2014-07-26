@@ -3,7 +3,7 @@
 COMMENT=		Ruby interface to gettext
 
 DISTNAME=		gettext-2.0.4
-REVISION =		7
+REVISION =		8
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.yotabanana.com/hiki/ruby-gettext.html

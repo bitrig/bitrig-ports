@@ -8,11 +8,10 @@ DISTNAME =		mercurial-${MODPY_EGG_VERSION}
 CATEGORIES =     	devel
 
 PKGNAME-main =		${DISTNAME}
+REVISION =		0
 PKGNAME-x11 =		mercurial-x11-${MODPY_EGG_VERSION}
 
 HOMEPAGE =		http://www.selenic.com/mercurial/
-
-MAINTAINER =		Remi Pointel <rpointel@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,12 +3,11 @@
 COMMENT =	Audit Record Generation and Utilization System
 
 DISTNAME =	argus-3.0.6.1
+REVISION =	0
 CATEGORIES =	net
 
 HOMEPAGE =	http://qosient.com/argus/
 MASTER_SITES =	http://qosient.com/argus/src/
-
-MAINTAINER =	Steven Mestdagh <steven@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

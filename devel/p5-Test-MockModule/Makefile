@@ -4,7 +4,7 @@ COMMENT= 	override subroutines in a module for unit testing
 
 MODULES=	cpan
 DISTNAME=	Test-MockModule-0.05
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 
 # Artistic

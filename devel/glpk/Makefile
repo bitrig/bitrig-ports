@@ -3,14 +3,12 @@
 COMMENT=	GNU Linear Programming Kit
 
 DISTNAME=	glpk-4.44
-REVISION=	0
+REVISION=	1
 SHARED_LIBS=	glpk		6.0	# 29.0
 
 CATEGORIES=	devel
 HOMEPAGE=	https://www.gnu.org/software/glpk/index.html
 MASTER_SITES=	${MASTER_SITE_GNU:=glpk/}
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

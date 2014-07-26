@@ -3,6 +3,7 @@
 COMMENT=		simple but effective personal calendar
 
 DISTNAME=		when-1.1.31
+REVISION=		0
 CATEGORIES=		productivity
 
 HOMEPAGE=		http://www.lightandmatter.com/when/when.html

@@ -6,11 +6,9 @@ COMMENT=	fast shared data cache using memory mapped files
 
 MODULES=	cpan
 DISTNAME=	Cache-FastMmap-1.34
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Srebrenko Sehic <haver@insecure.dk>
 
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM=	Yes

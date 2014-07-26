@@ -7,7 +7,7 @@ COMMENT =	generate fast XS accessors without runtime compilation
 MODULES =	cpan
 DISTNAME =	Class-XSAccessor-1.16
 CATEGORIES =	devel
-REVISION =	0
+REVISION =	1
 
 BUILD_DEPENDS =	${RUN_DEPENDS}
 RUN_DEPENDS =	devel/p5-AutoXS-Header

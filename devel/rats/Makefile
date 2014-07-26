@@ -3,7 +3,7 @@
 COMMENT=		source code auditing tool
 
 DISTNAME=		rats-2.3
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel security
 
 HOMEPAGE=		https://www.fortify.com/ssa-elements/threat-intelligence/rats.html

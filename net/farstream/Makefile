@@ -3,7 +3,7 @@
 COMMENT=		audio/video communications framework
 
 DISTNAME=		farstream-0.2.3
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net devel
 
 SHARED_LIBS +=	farstream-0.2        0.1      # 3.0

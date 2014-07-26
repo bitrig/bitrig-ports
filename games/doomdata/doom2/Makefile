@@ -4,14 +4,12 @@ COMMENT =		DOOM II data files
 
 DISTFILES =		doom2.wad
 PKGNAME =		doom2data-1.0
-REVISION =		0
+REVISION =		1
 CATEGORIES =		games
 
 EXTRACT_ONLY =
 
 HOMEPAGE =		http://www.idsoftware.com/games/doom/doom-collectors/
-
-MAINTAINER =		Paul de Weerd <weerd@weirdnet.nl>
 
 PKG_ARCH =		*
 

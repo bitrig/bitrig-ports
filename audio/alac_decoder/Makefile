@@ -3,6 +3,7 @@
 COMMENT =		basic Apple Lossless Audio Codec decoder
 
 DISTNAME =		alac_decoder-0.2.0
+REVISION =		0
 
 CATEGORIES =		audio
 

@@ -3,10 +3,8 @@
 COMMENT=		perl module to query Sender Policy Framework
 
 DISTNAME=		Mail-SPF-Query-1.999.1
-REVISION=		4
+REVISION=		5
 CATEGORIES=		mail
-
-MAINTAINER=		Michael Erdely <merdely@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

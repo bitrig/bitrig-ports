@@ -11,8 +11,6 @@ MASTER_SITES1=	https://github.com/nbs-system/naxsi/archive/
 
 HOMEPAGE=	http://nginx.org/
 
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
-
 # BSD-like
 PERMIT_PACKAGE_CDROM=	yes
 

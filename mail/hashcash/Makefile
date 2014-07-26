@@ -3,11 +3,10 @@
 COMMENT=		hashcash anti-spam / denial of service counter-measure tool
 
 DISTNAME=		hashcash-1.22
+REVISION=		0
 CATEGORIES=     	mail
 
 HOMEPAGE=		http://www.hashcash.org/
-
-MAINTAINER=		Armin Wolfermann <armin@wolfermann.org>
 
 # public domain
 PERMIT_PACKAGE_CDROM=	Yes

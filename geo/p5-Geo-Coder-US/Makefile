@@ -3,7 +3,7 @@
 COMMENT=	geocode any US address
 MODULES=	cpan
 DISTNAME=	Geo-Coder-US-1.00
-REVISION=	1
+REVISION=	2
 CATEGORIES=	geo
 
 # Perl

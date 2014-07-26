@@ -4,7 +4,7 @@
 COMMENT=		Bohlin's IrDA utilities
 
 DISTNAME=		birda-1.1
-REVISION=		1
+REVISION=		2
 CATEGORIES=		comms
 MASTER_SITES=		http://distfiles.nl/
 

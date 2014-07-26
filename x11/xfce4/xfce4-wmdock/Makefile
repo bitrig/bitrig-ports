@@ -4,7 +4,7 @@ COMMENT=	Xfce4 WindowMaker dockapps wrapper panel plugin
 
 XFCE_VERSION=	0.2.0
 XFCE_PLUGIN=	wmdock
-REVISION=	15
+REVISION=	16
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -12,6 +12,7 @@ GH_COMMIT =	3f5494dc78c2ee64fbbbd8c74d495d0bcc895dbc
 
 DISTNAME =	john-$V-jumbo-${JV}
 PKGNAME =	john-jumbo-$Vpre${JV}
+REVISION =	0
 CATEGORIES =	security
 
 HOMEPAGE =	http://www.openwall.com/john/

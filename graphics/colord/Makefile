@@ -4,6 +4,7 @@ COMMENT=	device color profile management daemon
 
 V=		1.2.1
 DISTNAME=	colord-${V}
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 SHARED_LIBS +=  colordprivate        1.0      # 2.1
@@ -12,8 +13,6 @@ SHARED_LIBS +=  colord               1.0      # 2.1
 CATEGORIES=	graphics print
 
 HOMEPAGE=	http://www.freedesktop.org/software/colord/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

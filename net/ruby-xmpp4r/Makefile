@@ -3,10 +3,8 @@
 COMMENT=	Ruby XMPP/Jabber library
 
 DISTNAME=	xmpp4r-0.4
-REVISION=	6
+REVISION=	7
 CATEGORIES=	net
-
-MAINTAINER=	joshua stein <jcs@openbsd.org>
 
 HOMEPAGE=	http://home.gna.org/xmpp4r/
 

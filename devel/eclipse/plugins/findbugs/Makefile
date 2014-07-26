@@ -3,15 +3,13 @@
 COMMENT=		Eclipse plugin for Java program checker (bytecode analyzer)
 
 V=			1.2.0
-REVISION =		1
+REVISION =		2
 DISTNAME=		edu.umd.cs.findbugs.plugin.eclipse_${V}.20070425
 PKGNAME=		eclipse-plugin-findbugs-${V}
 PKG_ARCH=		*
 CATEGORIES+=		java
 
 HOMEPAGE=		http://findbugs.sourceforge.net/
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
 
 # LGPL, see HOMEPAGE
 PERMIT_PACKAGE_CDROM=	Yes

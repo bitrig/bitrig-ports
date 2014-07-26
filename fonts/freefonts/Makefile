@@ -3,7 +3,7 @@
 COMMENT=	collection of ATM fonts from the CICA archives
 
 DISTNAME=	freefonts-0.10
-REVISION=	1
+REVISION=	2
 CATEGORIES=	fonts x11
 
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/fonts/ \

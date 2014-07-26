@@ -3,13 +3,11 @@
 COMMENT=	qt home accounting program
 
 DISTNAME=	qhacc-3.4
-REVISION=	5
+REVISION=	6
 CATEGORIES=	productivity x11
 
 HOMEPAGE=	http://qhacc.sourceforge.net/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qhacc/}
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 SO_VERSION=	0.0
 # NOTE: Must bump minor version if any shlib's are removed from the

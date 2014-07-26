@@ -4,10 +4,8 @@ COMMENT=	record interaction with websites
 
 MODULES=	cpan
 DISTNAME=	HTTP-Recorder-0.05
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

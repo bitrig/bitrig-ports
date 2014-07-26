@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	twin panel file manager for KDE
 
 DISTNAME=	krusader-1.80.0
-REVISION=	14
+REVISION=	15
 
 CATEGORIES=	x11 x11/kde
 

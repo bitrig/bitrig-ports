@@ -3,10 +3,9 @@
 COMMENT=		graphical ports system frontend
 
 DISTNAME=	 	pb-browser-0.4
-REVISION=		10
+REVISION=		11
 CATEGORIES=		x11 sysutils
 
-MAINTAINER=		Igor Boehm <igor@bytelabs.org>
 HOMEPAGE=		http://www.bytelabs.org/pbrowser.html
 
 # BSD licence

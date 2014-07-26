@@ -4,6 +4,7 @@ COMMENT =	common data for the nethack/slash ports
 V =		3.4.3
 DISTNAME =	nethack-$V
 PKGNAME =	hackdata-$V
+REVISION =	0
 CATEGORIES =	games
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=nethack/} \
@@ -11,8 +12,6 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=nethack/} \
 		ftp://ftp.uu.net/pub/games/nethack/sources/ \
 		${MASTER_SITE_GNU:=nethack/}
 DISTFILES =	nethack-${V:S/.//g}-src.tgz
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 #		GPL
 PERMIT_PACKAGE_CDROM =	Yes

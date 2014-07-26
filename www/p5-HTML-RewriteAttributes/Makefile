@@ -4,7 +4,7 @@ COMMENT=	concise attribute rewriting
 
 MODULES=	cpan
 DISTNAME=	HTML-RewriteAttributes-0.05
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www devel
 USE_GROFF =	Yes
 

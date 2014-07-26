@@ -5,7 +5,7 @@ COMMENT=		OpenGL elements for GStreamer
 V=			0.10.2
 DISTNAME=		gst-plugins-gl-${V}
 PKGNAME=		gstreamer-plugins-gl-${V}
-REVISION=		8
+REVISION=		9
 
 SHARED_LIBS +=  gstgl-0.10                0.0 # 1.0
 

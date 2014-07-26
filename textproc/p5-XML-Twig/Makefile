@@ -3,12 +3,10 @@
 COMMENT=	perl module for parsing huge XML documents
 
 DISTNAME=	XML-Twig-3.41
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.xmltwig.com/xmltwig/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

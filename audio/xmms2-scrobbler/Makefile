@@ -3,12 +3,11 @@
 COMMENT =		last.fm client for xmms2
 
 DISTNAME =		xmms2-scrobbler-0.4.0
+REVISION =		0
 
 CATEGORIES =		audio
 
 HOMEPAGE =		http://code-monkey.de/pages/xmms2-scrobbler
-
-MAINTAINER =		Amaury Gauthier <amaury.gauthier@etu.unilim.fr>
 
 # BSD 
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,7 +5,7 @@ COMMENT=	script generating a self-extractible .tgz from a directory
 
 DISTNAME=		makeself
 PKGNAME=		makeself-1.5.5
-REVISION=		0
+REVISION=		1
 CATEGORIES=		archivers misc
 
 HOMEPAGE=		http://www.megastep.org/makeself/

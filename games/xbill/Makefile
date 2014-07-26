@@ -3,7 +3,7 @@
 COMMENT=	save your computers from the evil clutches of Bill
 
 DISTNAME=	xbill-2.1
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games x11
 
 HOMEPAGE=	http://www.xbill.org/

@@ -5,7 +5,7 @@ CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
 DISTNAME =		kdeedu-${VERSION}
 MODKDE_VERSION =	3.5.8
-REVISION =		14
+REVISION =		15
 
 SHARED_LIBS +=	kdeeducore           4.0      # .3.0
 SHARED_LIBS +=	kdeeduui             4.0      # .3.5

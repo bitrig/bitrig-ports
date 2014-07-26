@@ -4,10 +4,10 @@ COMMENT =		windowing and multimedia library for Python
 
 MODPY_EGG_VERSION =	1.1.4
 DISTNAME =		pyglet-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		x11 multimedia
 
 HOMEPAGE =		http://www.pyglet.org
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

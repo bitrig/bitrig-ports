@@ -3,10 +3,9 @@
 COMMENT =		safe wrappers for some base functions
 
 DISTNAME =		safe-0.3.3
+REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =		http://community.haskell.org/~ndm/safe/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

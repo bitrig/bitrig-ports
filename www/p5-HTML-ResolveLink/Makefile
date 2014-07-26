@@ -4,10 +4,8 @@ COMMENT=	resolve relative links in (X)HTML into absolute URI
 
 MODULES=	cpan
 DISTNAME=	HTML-ResolveLink-0.05
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,6 +4,7 @@ COMMENT=	CGI.pm adaption to the PSGI protocol
 
 MODULES=	cpan
 DISTNAME=	CGI-PSGI-0.15
+REVISION=	0
 CATEGORIES=	www
 
 # Perl

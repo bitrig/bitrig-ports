@@ -5,11 +5,9 @@ COMMENT =	third person, 3D physics game
 DISTNAME =	irrlamb-${V}-src
 PKGNAME =	irrlamb-${V}
 CATEGORIES =	games x11
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	https://code.google.com/p/irrlamb/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =		Yes

@@ -5,6 +5,7 @@ COMMENT =		brick-matching puzzle game
 V =			0.9.9
 DISTNAME =		wizznic-${V}-src
 PKGNAME =		wizznic-${V}
+REVISION =		0
 
 CATEGORIES =		games
 

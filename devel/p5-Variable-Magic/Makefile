@@ -6,9 +6,7 @@ SHARED_ONLY =	Yes
 MODULES =	cpan
 DISTNAME =	Variable-Magic-0.53
 CATEGORIES =	devel
-REVISION =	0
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
+REVISION =	1
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

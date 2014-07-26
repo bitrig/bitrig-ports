@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; xeyes clone using South Park characters
 
 DISTNAME=		speyes-1.2.0
-REVISION =		2
+REVISION =		3
 CATEGORIES=		games x11 x11/windowmaker
 
 HOMEPAGE=		http://www.okb-1.org/speyes/speyes.html

@@ -5,12 +5,10 @@ SHARED_ONLY=	Yes
 COMMENT=	Tlen.pl protocol plugin for Pidgin
 
 DISTNAME=	pidgin-tlen-20101112
-REVISION=		0
+REVISION=		1
 CATEGORIES=	net
 
 HOMEPAGE=	http://nic.com.pl/~alek/pidgin-tlen/
-
-MAINTAINER=	Aleksander Piotrowski <alek@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

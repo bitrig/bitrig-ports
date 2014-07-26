@@ -4,6 +4,7 @@ COMMENT =		python style guide checker
 
 MODPY_EGG_VERSION =	1.5.6
 DISTNAME =		pep8-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		devel
 

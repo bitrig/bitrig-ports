@@ -4,7 +4,7 @@ COMMENT=	wrapper for LaTeX and friends
 
 MODPY_EGG_VERSION=	1.1
 DISTNAME=	rubber-${MODPY_EGG_VERSION}
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	textproc print
 

@@ -4,7 +4,7 @@ COMMENT=	simple class for OLE document interface
 
 MODULES=	cpan
 DISTNAME=       OLE-Storage_Lite-0.19
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel perl5
 
 # perl

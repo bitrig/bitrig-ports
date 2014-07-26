@@ -4,11 +4,9 @@ COMMENT=		Perl Interface to Amazon.{co.uk,com} Web Services
 
 MODULES=		cpan
 DISTNAME=		Net-Amazon-0.59
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
 USE_GROFF =		Yes
-
-MAINTAINER=		Sam Smith <s@msmith.net>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

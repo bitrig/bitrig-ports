@@ -3,10 +3,8 @@
 COMMENT= 	read and modify Apache .htpasswd files
 
 DISTNAME=	Authen-Htpasswd-0.161
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

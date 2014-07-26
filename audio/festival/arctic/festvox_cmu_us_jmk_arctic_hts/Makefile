@@ -2,6 +2,7 @@
 
 COMMENT=	Canadian English male speaker (JMK)
 DISTNAME=	festvox_cmu_us_jmk_arctic_hts
+REVISION=	0
 
 RUN_DEPENDS=	${ARCTIC_US_DEPS}
 

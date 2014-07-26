@@ -4,13 +4,11 @@ COMMENT=	accessibility toolkit used by gtk+
 
 GNOME_PROJECT=	atk
 GNOME_VERSION=	2.12.0
+REVISION=	0
 
 SHARED_LIBS +=  atk-1.0              21209.1  # 21209.1
 
 CATEGORIES=	devel
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

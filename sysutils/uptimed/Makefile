@@ -3,13 +3,11 @@
 COMMENT =	keeps a list of uptime records
 DISTNAME =	uptimed-0.3.17
 CATEGORIES =	sysutils
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS +=	uptimed                   0.0 # 0.0
 
 HOMEPAGE =	http://podgorny.cz/moin/Uptimed
-
-MAINTAINER =	Ryan Freeman <rfreeman@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM = Yes

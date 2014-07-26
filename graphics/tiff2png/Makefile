@@ -3,12 +3,10 @@
 COMMENT =	converts TIFF images to PNG format
 
 DISTNAME =	tiff2png-0.91
-REVISION =	1
+REVISION =	2
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://www.libpng.org/pub/png/apps/tiff2png.html
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 LIB_DEPENDS =	graphics/tiff \
 		graphics/png

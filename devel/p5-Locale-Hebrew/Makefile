@@ -3,6 +3,7 @@ COMMENT=	bidirectional Hebrew support
 
 MODULES=	cpan
 DISTNAME=	Locale-Hebrew-1.05
+REVISION=	0
 CATEGORIES=	devel
 SHARED_ONLY=	yes
 

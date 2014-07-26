@@ -4,11 +4,9 @@ COMMENT =	ruby SQLite3 embedded database library
 
 DISTNAME =	amalgalite-1.1.2
 CATEGORIES =	databases
-REVISION =	5
+REVISION =	6
 
 HOMEPAGE =	http://copiousfreetime.rubyforge.org/amalgalite/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

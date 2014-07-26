@@ -7,8 +7,8 @@ VERSION=		0.24.0
 DISTNAME=		pylint-${VERSION}
 PKGNAME-main=		pylint-${VERSION}
 PKGNAME-gui=		pylint-gui-${VERSION}
-REVISION-main =		2
-REVISION-gui =		1
+REVISION-main =		3
+REVISION-gui =		2
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.logilab.org/projects/pylint/

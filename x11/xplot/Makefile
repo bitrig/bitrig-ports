@@ -3,11 +3,10 @@
 COMMENT=	fast tool to graph and visualize lots of data
 
 DISTNAME=	xplot-0.90.7.1
+REVISION=	0
 CATEGORIES=	net x11
 
 HOMEPAGE=	http://www.xplot.org/
-
-MAINTAINER=	Markus Friedl <markus@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

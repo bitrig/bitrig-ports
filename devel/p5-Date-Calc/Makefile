@@ -6,11 +6,9 @@ COMMENT=	date calculations for the Gregorian calendar
 
 MODULES=	cpan
 DISTNAME=	Date-Calc-6.3
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

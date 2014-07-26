@@ -4,7 +4,7 @@
 COMMENT =		c++ commandline flags processing library
 
 DISTNAME =		gflags-1.2
-REVISION =		3
+REVISION =		4
 
 SHARED_LIBS +=		gflags               0.0      # .0.0
 SHARED_LIBS +=		gflags_nothreads     0.0      # .0.0
@@ -12,8 +12,6 @@ SHARED_LIBS +=		gflags_nothreads     0.0      # .0.0
 CATEGORIES =		devel
 
 HOMEPAGE =		https://code.google.com/p/google-gflags/
-
-MAINTAINER =		Vincent Auclair <auclair.vincent@gmail.com>
 
 # New BSD
 PERMIT_PACKAGE_CDROM =	Yes

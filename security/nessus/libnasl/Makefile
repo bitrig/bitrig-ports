@@ -2,7 +2,7 @@
 
 COMMENT=	Nessus Attack Scripting Language
 DISTNAME=	libnasl-${V}
-REVISION =	3
+REVISION =	4
 
 SHARED_LIBS=	nasl	4.7
 

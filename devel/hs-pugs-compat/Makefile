@@ -3,6 +3,7 @@
 COMMENT =		portable Haskell/POSIX layer for Pugs
 
 DISTNAME =		pugs-compat-0.0.6.20130611.0
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

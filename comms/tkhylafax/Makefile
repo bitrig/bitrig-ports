@@ -3,10 +3,8 @@
 COMMENT=	Tcl/Tk interface to Sam Leffler's fax package
 
 DISTNAME=	tkhylafax-3.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	comms
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

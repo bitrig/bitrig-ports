@@ -6,7 +6,7 @@ V =			7.1.2
 SUBST_VARS +=		V
 DISTNAME =		ipe-${V}-src
 PKGNAME =		ipe-${V}
-REVISION =		4
+REVISION =		5
 
 # their libraries would be installed as libxxx.so.${V}, overide this.
 SHLIB_VERSION =	0.0
@@ -19,7 +19,6 @@ SHARED_LIBS +=		ipeui		${SHLIB_VERSION}
 
 CATEGORIES =		graphics math
 HOMEPAGE =		http://ipe7.sourceforge.net/
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

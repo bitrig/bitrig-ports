@@ -5,7 +5,7 @@ COMMENT =	brick shooter reflexion game
 V=		1.5.3
 DISTNAME=	JBrickShooter_v${V}
 PKGNAME=	jbrickshooter-${V}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	games
 
 EXTRACT_SUFX=	.zip

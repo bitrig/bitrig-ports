@@ -3,7 +3,7 @@
 CATEGORIES =	productivity
 COMMENT =	collaboration services library for KDE
 DISTNAME =	attica-0.4.2
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS =	attica		1.0
 EXTRACT_SUFX =	.tar.bz2

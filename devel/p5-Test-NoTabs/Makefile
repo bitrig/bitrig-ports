@@ -4,9 +4,8 @@ COMMENT =	check the presence of tabs in your project
 
 MODULES =	cpan
 DISTNAME =	Test-NoTabs-1.3
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

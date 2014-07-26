@@ -3,7 +3,7 @@
 COMMENT=                prototype compiler for the Feldspar DSL
 
 DISTNAME=               feldspar-compiler-0.6.0.2
-REVISION=		0
+REVISION=		1
 
 WANTLIB +=		c m pthread util
 

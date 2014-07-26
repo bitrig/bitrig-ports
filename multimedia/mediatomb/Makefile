@@ -4,7 +4,7 @@ COMMENT =	UPnP media server
 
 VER =		0.12.1
 DISTNAME =	mediatomb-${VER}
-REVISION =	12
+REVISION =	13
 
 CATEGORIES =	multimedia
 

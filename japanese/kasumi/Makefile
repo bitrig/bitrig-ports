@@ -4,7 +4,7 @@ COMMENT =	personal dictionary manager for anthy
 
 DISTNAME =	kasumi-2.5
 
-REVISION =	5
+REVISION =	6
 
 CATEGORIES =	japanese
 

@@ -5,6 +5,7 @@ COMMENT =		class for hashable data types
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		hashable-1.1.2.5
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

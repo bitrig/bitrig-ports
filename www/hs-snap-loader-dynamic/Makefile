@@ -3,11 +3,9 @@
 COMMENT =		Snap framework dynamic loader
 
 DISTNAME =		snap-loader-dynamic-0.10
+REVISION =		0
 CATEGORIES =		www
 HOMEPAGE =		http://snapframework.com/
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>, \
-			Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -11,7 +11,7 @@ V =			2013.05
 DISTNAME =		$V
 PKGNAME =		nqp-${V}
 DIST_SUBDIR =		nqp
-REVISION =		0
+REVISION =		1
 
 PARROT_VERSION =	5.4.0
 SUBST_VARS +=		PARROT_VERSION
@@ -19,8 +19,6 @@ SUBST_VARS +=		PARROT_VERSION
 CATEGORIES =		lang
 
 HOMEPAGE =		https://github.com/perl6/NQP
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # Artistic 2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,9 +3,8 @@
 COMMENT=		BitTorrent Protocol Daemon
 
 DISTNAME=		btpd-0.16
+REVISION=		0
 CATEGORIES=		net
-
-MAINTAINER=		Nicholas Marriott <nicm@openbsd.org>
 
 HOMEPAGE=		http://wiki.github.com/btpd/btpd/
 

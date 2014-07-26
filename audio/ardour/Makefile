@@ -8,7 +8,7 @@ COMMENT =		digital audio workstation
 DISTNAME =		ardour-2.8.14
 CATEGORIES =		audio
 HOMEPAGE =		http://ardour.org
-REVISION =		6
+REVISION =		7
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

@@ -26,7 +26,8 @@ LIB_DEPENDS-mono =
 
 SEPARATE_BUILD =	flavored
 
-REVISION-main =	18
+REVISION-main =	19
+REVISION-mono =	0
 
 WANTLIB =	GL FLAC ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi
 WANTLIB +=	Xinerama Xmu Xrandr Xrender Xt Xtst Xxf86vm art_lgpl_2

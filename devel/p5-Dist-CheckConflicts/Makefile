@@ -4,6 +4,7 @@ COMMENT =	declare version conflicts for your dist
 
 MODULES =	cpan
 DISTNAME =	Dist-CheckConflicts-0.02
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

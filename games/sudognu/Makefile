@@ -3,7 +3,7 @@
 COMMENT=	sudoku solver and creator
 
 DISTNAME=	sudognu-1.09
-REVISION=	1
+REVISION=	2
 CATEGORIES=	games
 
 HOMEPAGE=	http://baaran.de/sudoku/index-en.shtml

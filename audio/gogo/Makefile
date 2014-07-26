@@ -3,6 +3,7 @@
 COMMENT=	686 class CPU optimized mp3 encoder
 DISTNAME=	gogo226a
 PKGNAME=	gogo-2.26a
+REVISION=	0
 CATEGORIES=	audio
 MASTER_SITES=	http://www.kurims.kyoto-u.ac.jp/~shigeo/soft/gogo2/src/ \
 		http://spacehopper.org/mirrors/
@@ -12,8 +13,6 @@ EXTRACT_SUFX=	.tgz
 ONLY_FOR_ARCHS= i386
 
 BUILD_DEPENDS=	devel/nasm
-
-MAINTAINER=	Bob Beck <beck@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	MP3 patent, mp3licensing.com/details/software.html
 PERMIT_PACKAGE_FTP=	Yes

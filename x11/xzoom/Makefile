@@ -3,7 +3,7 @@
 COMMENT=	magnify, rotate, mirror the image on the X11 screen
 
 DISTNAME=	xzoom-0.3
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11
 
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=libs/X/}

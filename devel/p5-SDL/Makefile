@@ -8,11 +8,9 @@ MODULES =		cpan
 VER =			2.1.3
 DISTNAME =		SDL_Perl-${VER}
 PKGNAME =		p5-SDL-${VER}
-REVISION =		5
+REVISION =		6
 CATEGORIES =		devel graphics
 CPAN_AUTHOR =		DGOEHRIG
-
-MAINTAINER =		James Wright <jamesw@bsdhosting.co.za>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

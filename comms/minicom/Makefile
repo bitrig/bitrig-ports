@@ -3,7 +3,7 @@
 COMMENT=		MS-DOS Telix-like serial communication program
 
 DISTNAME=		minicom-2.6.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=		comms
 MASTER_SITES=		https://www.alioth.debian.org/frs/download.php/latestfile/3/
 

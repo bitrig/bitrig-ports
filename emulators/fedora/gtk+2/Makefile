@@ -3,6 +3,7 @@
 COMMENT=	Linux gtk+2 package based on Fedora Core ${FEDORA_V}
 
 PKGNAME=	fedora_gtk+2-${FEDORA_V}.0
+REVISION=	0
 
 RUN_DEPENDS=	emulators/fedora/base \
 		emulators/fedora/cups

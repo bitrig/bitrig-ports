@@ -4,6 +4,7 @@ COMMENT= 	module for inspecting Perl's symbol table
 
 MODULES=	cpan
 DISTNAME =	Devel-Symdump-2.11
+REVISION =	0
 EPOCH=		0
 CATEGORIES=	devel perl5
 

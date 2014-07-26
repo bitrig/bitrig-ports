@@ -3,14 +3,13 @@
 COMMENT=	library for network communications and cryptography
 
 DISTNAME=	libsodium-0.6.1
+REVISION=	0
 
 SHARED_LIBS +=	sodium         3.0            # .12.0
 
 CATEGORIES=	security net
 
 HOMEPAGE=	https://github.com/jedisct1/libsodium
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT=	perl module to gateway between news and mail
 
 MODULES=	cpan
 DISTNAME=	Gateway-0.42
-REVISION=	4
+REVISION=	5
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=News/}
 

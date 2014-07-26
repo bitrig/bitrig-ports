@@ -3,10 +3,8 @@
 COMMENT =	ctags-like tool for Haskell sources
 
 DISTNAME =	hasktags-0.68.2
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
-
-MAINTAINER =	Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =		Yes

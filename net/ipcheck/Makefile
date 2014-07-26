@@ -5,7 +5,7 @@ COMMENT=		fully compliant DynDNS.org client
 MV=			0
 V=			207
 PKGNAME=		ipcheck-${MV}.${V}
-REVISION=		5
+REVISION=		6
 DISTNAME=		ipcheck.${V}
 CATEGORIES=		net
 

@@ -4,13 +4,11 @@ COMMENT=		yEnc encoding/decoding extension for Python
 
 DISTNAME=		yenc-0.3
 PKGNAME=		py-${DISTNAME}
-REVISION =		4
+REVISION =		5
 CATEGORIES=		news
 
 HOMEPAGE=		http://www.hellanzb.com/
 MASTER_SITES=		${HOMEPAGE}hellanzb-content/
-
-MAINTAINER=		Mikko Tolmunen <oskari@sefirosu.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

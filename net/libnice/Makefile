@@ -5,14 +5,13 @@ SHARED_ONLY =	Yes
 COMMENT =	GLib ICE implementation
 
 DISTNAME =	libnice-0.1.6
+REVISION =	0
 
 SHARED_LIBS +=  nice                 2.2      # 14.0
 
 CATEGORIES =	net
 
 HOMEPAGE =	http://nice.freedesktop.org/
-
-MAINTAINER =	Tom Murphy <openbsd@pertho.net>
 
 # LGPLv2.1/MPLv1.1
 PERMIT_PACKAGE_CDROM =	Yes

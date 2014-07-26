@@ -4,10 +4,9 @@ COMMENT =	no-fuss generation of Atom syndication feeds
 
 MODULES =	cpan
 DISTNAME =	XML-Atom-SimpleFeed-0.86
+REVISION =	0
 CATEGORIES =	www textproc
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

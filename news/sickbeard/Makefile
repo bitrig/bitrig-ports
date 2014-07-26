@@ -6,8 +6,7 @@ DISTNAME =			midgetspy-Sick-Beard-b3a7afe
 PKGNAME =			sickbeard-0.0.1
 CATEGORIES =			news
 HOMEPAGE =			http://sickbeard.com/
-MAINTAINER =			Marcus Glocker <marcus@nazgul.ch>
-REVISION =			0
+REVISION =			1
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =		Yes

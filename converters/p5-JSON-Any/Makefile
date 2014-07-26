@@ -4,6 +4,7 @@ COMMENT =	wrapper class for the various JSON classes
 
 MODULES =	cpan
 DISTNAME =	JSON-Any-1.34
+REVISION =	0
 CATEGORIES =	converters
 
 # Perl

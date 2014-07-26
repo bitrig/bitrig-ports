@@ -3,6 +3,7 @@
 COMMENT =	PSGI handler for HTTP::Server::Simple
 
 DISTNAME =	HTTP-Server-Simple-PSGI-0.14
+REVISION =	0
 CATEGORIES =	www
 
 # Same as Perl

@@ -4,10 +4,9 @@ COMMENT=	abstract Class::DBI's SQL with SQL::Abstract
 
 MODULES=	cpan
 DISTNAME=	Class-DBI-AbstractSearch-0.07
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
 
-MAINTAINER=	Sam Smith <S@msmith.net>
 USE_GROFF =	Yes
 
 # Same as Perl

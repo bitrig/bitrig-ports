@@ -4,7 +4,7 @@ COMMENT=	perl interface to the graphviz graphing tool
 
 MODULES=	cpan
 DISTNAME=	GraphViz-2.02
-REVISION=	2
+REVISION=	3
 CATEGORIES=	math
 USE_GROFF =	Yes
 

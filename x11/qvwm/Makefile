@@ -3,7 +3,7 @@
 COMMENT=	Windows 95/98/NT like window manager
 
 DISTNAME=	qvwm-1.1.8
-REVISION=	5
+REVISION=	6
 CATEGORIES=     x11
 MASTER_SITES=	${HOMEPAGE}/archive/qvwm/
 

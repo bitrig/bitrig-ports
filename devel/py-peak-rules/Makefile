@@ -6,14 +6,12 @@ MODPY_EGG_VERSION =	0.5
 REV = 			2582
 DISTNAME =		PEAK-Rules-${MODPY_EGG_VERSION}a1.dev-r${REV}
 PKGNAME =		py-peak-rules-${MODPY_EGG_VERSION}r${REV}
-REVISION=		0
+REVISION=		1
 EPOCH =			0
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://pypi.python.org/pypi/PEAK-Rules/
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # PSF
 PERMIT_PACKAGE_CDROM =	Yes

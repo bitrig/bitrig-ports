@@ -3,6 +3,7 @@
 COMMENT=		simple, powerful configuration-file parser
 
 DISTNAME=		dotconf-1.3
+REVISION=		0
 
 SHARED_LIBS +=  dotconf              1.0      # 0.1
 

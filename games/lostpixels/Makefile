@@ -7,7 +7,7 @@ COMMENT =		blinkensisters - hunt for the lost pixels
 V =			0.5.3
 DISTNAME =		LostPixels-${V}-source-with-addons
 PKGNAME =		lostpixels-${V}
-REVISION =		5
+REVISION =		6
 HOMEPAGE =		http://www.blinkensisters.org
 
 CATEGORIES =		games

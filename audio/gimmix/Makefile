@@ -3,7 +3,7 @@
 COMMENT=		small and easy to use graphical MPD client
 
 DISTNAME=		gimmix-0.5.7.1
-REVISION=		4
+REVISION=		5
 CATEGORIES=		audio x11
 
 # GPLv2

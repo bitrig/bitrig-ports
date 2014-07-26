@@ -8,7 +8,7 @@ DISTNAME=	sdcc-src-2.8.0
 PKGNAME=	${DISTNAME:S/-src//}
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	devel
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	http://sdcc.sourceforge.net/
 

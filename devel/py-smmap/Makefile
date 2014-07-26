@@ -4,7 +4,7 @@ COMMENT=		pure Python implementation of an SMM manager
 
 MODPY_EGG_VERSION=	0.8.2
 DISTNAME=		smmap-${MODPY_EGG_VERSION}
-REVISION=		1
+REVISION=		2
 PKGNAME=		py-${DISTNAME}
 CATEGORIES=		devel
 

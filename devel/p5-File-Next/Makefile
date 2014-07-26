@@ -4,9 +4,8 @@ COMMENT=		File-finding iterator
 
 MODULES=		cpan
 DISTNAME=		File-Next-1.12
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		Pierre-Yves Ritschard <pyr@spootnik.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=   Yes

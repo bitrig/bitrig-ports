@@ -7,6 +7,7 @@ PKG_ARCH=	*
 COMMENT=	GNUstep makefile package
 
 DISTNAME =	gnustep-make-2.6.6
+REVISION =	0
 CATEGORIES=	devel x11/gnustep
 
 HOMEPAGE=	http://www.gnustep.org/

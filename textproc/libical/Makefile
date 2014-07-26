@@ -3,6 +3,7 @@
 COMMENT=	implementation of basic iCAL protocols
 
 DISTNAME=	libical-1.0
+REVISION=	0
 
 SHARED_LIBS +=  ical                 2.0      # 48.0
 SHARED_LIBS +=  icalss               2.0      # 48.0

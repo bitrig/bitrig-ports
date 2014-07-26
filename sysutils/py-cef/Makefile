@@ -5,6 +5,7 @@ COMMENT =	CEF logs emitter module
 MODPY_EGG_VERSION = 0.3
 DISTNAME =	cef-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 
 CATEGORIES =	sysutils
 HOMEPAGE =	http://pypi.python.org/pypi/cef

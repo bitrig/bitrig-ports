@@ -4,13 +4,11 @@ COMMENT =		quickly ping N hosts w/o flooding the network
 
 DISTNAME =		fping-2.4b2_to4-ipv6
 PKGNAME =		${DISTNAME:S/_to4-ipv6//}
-REVISION =		7
+REVISION =		8
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://fping.sf.net/
-
-MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

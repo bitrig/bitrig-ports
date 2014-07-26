@@ -4,9 +4,8 @@ COMMENT =	a fast, efficient buffer writer for nodejs
 
 NPM_VERSION =	1.0.0
 NPM_NAME =	buffer-writer
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Aaron Bieber <abieber@openbsd.org>
 
 HOMEPAGE =	https://github.com/brianc/node-buffer-writer
 

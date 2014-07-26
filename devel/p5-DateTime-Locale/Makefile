@@ -4,7 +4,7 @@ COMMENT=		localization data for perl DateTime.pm
 
 MODULES=		cpan
 DISTNAME=		DateTime-Locale-0.45
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 USE_GROFF =		Yes
 

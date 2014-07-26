@@ -6,12 +6,10 @@ SHARED_ONLY=	Yes
 
 VERSION=	0.90.8.1
 DISTNAME=	rep-gtk-${VERSION}
-REVISION=	0
+REVISION=	1
 CATEGORIES=     x11
 
 HOMEPAGE=       http://rep-gtk.sourceforge.net/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

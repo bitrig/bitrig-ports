@@ -3,15 +3,13 @@
 COMMENT=	read and set MPEG-4/3GPP metadata tags
 
 DISTNAME=	AtomicParsley-source-0.9.0
-REVISION=	1
+REVISION=	2
 EXTRACT_SUFX=	.zip
 PKGNAME=	${DISTNAME:L:S/-source//}
 
 CATEGORIES=	multimedia
 
 HOMEPAGE=	http://atomicparsley.sourceforge.net/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2 "or its successor"
 PERMIT_PACKAGE_CDROM=	Yes

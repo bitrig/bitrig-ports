@@ -4,7 +4,7 @@ COMMENT =	Xfce4 quicklauncher panel plugin
 
 XFCE_VERSION =	1.9.4
 XFCE_PLUGIN =	quicklauncher
-REVISION =	10
+REVISION =	11
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

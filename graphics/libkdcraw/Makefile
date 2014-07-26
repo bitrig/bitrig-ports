@@ -8,8 +8,8 @@ V =		0.1.9
 DISTNAME =	libkdcraw-${V}
 PKGNAME-main =	${PKGNAME}
 PKGNAME-icons =	libkdcraw-icons-${V}
-REVISION-main =	10
-REVISION-icons =1
+REVISION-main =	11
+REVISION-icons =2
 
 PKGSPEC-main =	libkdcraw-<0.2.0
 

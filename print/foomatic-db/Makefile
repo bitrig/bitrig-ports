@@ -7,12 +7,11 @@ COMMENT=		Foomatic PPD data
 V=			20131218
 DISTNAME=		foomatic-db-4.0-${V}
 PKGNAME=		foomatic-db-4.0.${V}
+REVISION=		0
 
 CATEGORIES=		print
 
 HOMEPAGE=		http://www.linux-foundation.org/en/OpenPrinting/Database/Foomatic
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2 - MIT
 PERMIT_PACKAGE_CDROM=	Yes

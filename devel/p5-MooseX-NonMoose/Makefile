@@ -4,6 +4,7 @@ COMMENT =	easy subclassing of non-Moose classes
 
 MODULES =	cpan
 DISTNAME =	MooseX-NonMoose-0.26
+REVISION =	0
 CATEGORIES =	devel
 
 # same as perl

@@ -3,7 +3,7 @@
 COMMENT=	transparent IRC proxy
 
 DISTNAME=	tircproxy-0.4.5
-REVISION=	0
+REVISION=	1
 CATEGORIES=     net
 
 HOMEPAGE=	http://bre.klaki.net/programs/tircproxy/

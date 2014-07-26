@@ -3,6 +3,7 @@
 COMMENT=		implementation of Munkres' solution to Assignment problem
 
 DISTNAME=		Algorithm-Munkres-0.08
+REVISION=		0
 CATEGORIES=		devel
 
 # perl

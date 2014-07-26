@@ -6,8 +6,8 @@ COMMENT-lib =		libraries for runtime configuration
 DISTNAME =		xmonad-0.11
 PKGNAME-main =		${DISTNAME}
 PKGNAME-lib =		${DISTNAME:S,-,-lib-,}
-REVISION =		1
-REVISION-lib =		1
+REVISION =		2
+REVISION-lib =		2
 CATEGORIES =		x11
 HOMEPAGE =		http://www.xmonad.org/
 

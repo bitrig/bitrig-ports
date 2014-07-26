@@ -3,11 +3,10 @@
 COMMENT =		optimizer for PNG files
 
 DISTNAME =		pngcrush-1.7.76
+REVISION =		0
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://pmt.sourceforge.net/pngcrush/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # custom, see pngcrush.c
 PERMIT_PACKAGE_CDROM =	Yes

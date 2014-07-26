@@ -3,7 +3,7 @@
 COMMENT=	delay program with feedback to the user
 
 DISTNAME=	delay-1.6
-REVISION=	0
+REVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	${HOMEPAGE}dl/
 

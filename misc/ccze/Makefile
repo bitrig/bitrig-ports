@@ -3,10 +3,8 @@
 COMMENT=	log colorizer
 
 DISTNAME=	ccze-0.2.1
-REVISION=	3
+REVISION=	4
 CATEGORIES=	misc
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 MASTER_SITES=	https://distfiles.bsdfrog.org/
 

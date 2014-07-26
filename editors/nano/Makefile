@@ -3,10 +3,9 @@
 COMMENT=	Pico editor clone with enhancements
 
 DISTNAME=	nano-2.2.6
+REVISION=	0
 CATEGORIES=	editors
 HOMEPAGE=	http://www.nano-editor.org/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 MASTER_SITES=	http://www.nano-editor.org/dist/v2.2/ \
 		${MASTER_SITE_GNU:=nano/}

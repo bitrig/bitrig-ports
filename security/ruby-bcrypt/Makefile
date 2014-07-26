@@ -5,10 +5,8 @@ COMMENT =	Ruby binding for the bcrypt() password hashing algorithm
 VERSION =	3.0.1
 DISTNAME =	bcrypt-ruby-${VERSION}
 PKGNAME =	bcrypt-${VERSION}
-REVISION =	3
+REVISION =	4
 CATEGORIES =	security
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 HOMEPAGE =	http://bcrypt-ruby.rubyforge.org/
 

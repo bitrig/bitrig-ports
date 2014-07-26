@@ -4,6 +4,7 @@ COMMENT=		ugly elements for GStreamer
 
 DISTNAME=		gst-plugins-ugly-${V}
 PKGNAME=		${GST_PKGNAME_PREFIX}-plugins-ugly-${V}
+REVISION=		0
 
 PERMIT_PACKAGE_CDROM=	Patent issues
 

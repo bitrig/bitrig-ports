@@ -4,9 +4,8 @@ COMMENT =	module for when strings are too long to be displayed in
 
 MODULES =	cpan
 DISTNAME =	String-Truncate-1.100600
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Okan Demirmen <okan@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

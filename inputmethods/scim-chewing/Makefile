@@ -5,13 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	scim input method module for chewing
 
 DISTNAME=	scim-chewing-0.3.4
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	inputmethods chinese
 
 HOMEPAGE=	http://www.scim-im.org/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

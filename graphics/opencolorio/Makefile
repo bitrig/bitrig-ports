@@ -6,15 +6,13 @@ V =			1.0.9
 REV =			2b12063
 DISTNAME =		imageworks-OpenColorIO-v$V-0-g${REV}
 PKGNAME =		opencolorio-$V
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=  OpenColorIO               0.0 # 1.0
 
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://opencolorio.org/index.html
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # several BSD-like
 PERMIT_PACKAGE_CDROM =	Yes

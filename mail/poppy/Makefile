@@ -3,11 +3,10 @@
 COMMENT=	client to perform simple tasks with a POP3/IMAP server
 
 DISTNAME=	poppy-4.01
+REVISION=	0
 CATEGORIES=	mail
 
 HOMEPAGE=	http://www.cnpbagwell.com/projects.html
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

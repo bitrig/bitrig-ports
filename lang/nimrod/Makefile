@@ -5,14 +5,13 @@ ONLY_FOR_ARCHS =	i386 amd64
 COMMENT =		statically typed, imperative programming language
 
 VERSION =		0.9.4
+REVISION =		0
 DISTNAME =		nimrod-${VERSION}
 
 DISTFILES =		${DISTNAME}{v${VERSION}}.tar.gz \
 			nimrod-c-${VERSION}{v${VERSION}}.tar.gz:0
 
 CATEGORIES =		lang
-
-MAINTAINER =		James Turner <james@calminferno.net>
 
 HOMEPAGE =		http://nimrod-lang.org/
 MASTER_SITES =		https://github.com/Araq/Nimrod/archive/

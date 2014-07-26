@@ -5,13 +5,11 @@ COMMENT =		template plugin for TurboGears that supports json
 MODPY_EGG_VERSION =	1.1.4
 DISTNAME =		TurboJson-${MODPY_EGG_VERSION}
 PKGNAME =		py-turbojson-${MODPY_EGG_VERSION}
-REVISION =		4
+REVISION =		5
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://www.turbogears.org/
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

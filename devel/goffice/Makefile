@@ -6,6 +6,7 @@ COMMENT=	document centric objects and utilities
 
 GNOME_PROJECT=	goffice
 GNOME_VERSION=	0.10.17
+REVISION=	0
 
 # NOTE: when GNOME_VERSION changes, increment GOFFICE_VERSION and
 # GOFFICE_API_VERSION accordingly and bump:
@@ -16,8 +17,6 @@ SUBST_VARS=		GNOME_VERSION GOFFICE_API_VERSION
 SHARED_LIBS +=  goffice-0.10         0.0      # 10.14
 
 CATEGORIES=	devel
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

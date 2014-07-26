@@ -3,10 +3,9 @@
 COMMENT =		provide commonly requested regular expressions
 
 DISTNAME =		Regexp-Common-2013031301
+REVISION =		0
 
 CATEGORIES =		textproc
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

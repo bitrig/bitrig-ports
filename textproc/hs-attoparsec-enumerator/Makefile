@@ -3,9 +3,8 @@
 COMMENT=		convert an Attoparsec parser into an iteratee
 
 DISTNAME=		attoparsec-enumerator-0.3.1
+REVISION=		0
 CATEGORIES=		textproc
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

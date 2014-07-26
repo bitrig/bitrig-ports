@@ -11,9 +11,9 @@ PKGNAME-tk=		gpsbabel-tk-${VERSION}
 PKGNAME-qt=		gpsbabel-qt-${VERSION}
 CATEGORIES=		geo
 
-REVISION-main=		0
-REVISION-tk=		0
-REVISION-qt=		1
+REVISION-main=		1
+REVISION-tk=		1
+REVISION-qt=		2
 
 HOMEPAGE=		http://www.gpsbabel.org/
 

@@ -3,7 +3,7 @@
 COMMENT=		TCP dump file analysis tool
 
 DISTNAME=		tcptrace-6.6.7
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 HOMEPAGE=		http://masaka.cs.ohiou.edu/software/tcptrace/
 MASTER_SITES=		${HOMEPAGE}download/

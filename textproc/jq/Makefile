@@ -3,6 +3,7 @@
 COMMENT =		lightweight and flexible command-line JSON processor
 
 DISTNAME =		jq-1.3
+REVISION =		0
 CATEGORIES =		textproc
 HOMEPAGE =		http://stedolan.github.io/jq/
 

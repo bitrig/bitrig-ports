@@ -9,11 +9,9 @@ PKGNAME =		${BASENAME}
 
 CATEGORIES =		games
 
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =		http://supertuxkart.sourceforge.net
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

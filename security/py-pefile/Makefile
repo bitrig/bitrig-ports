@@ -5,12 +5,11 @@ COMMENT =		Python module to read and work with PE files
 MODPY_EGG_VERSION =	1.2.10-139
 DISTNAME =		pefile-${MODPY_EGG_VERSION}
 PKGNAME =		py-pefile-${MODPY_EGG_VERSION:S/-/./}
+REVISION =		0
 
 CATEGORIES =		security
 
 HOMEPAGE =		https://code.google.com/p/pefile/
-
-MAINTAINER =		Remi Pointel <rpointel@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

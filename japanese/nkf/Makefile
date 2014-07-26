@@ -8,13 +8,11 @@ VERSION =	2.1.1
 DISTNAME =	nkf-${VERSION}
 PKGNAME =	ja-nkf-${VERSION}
 EPOCH =		0
-REVISION =	1
+REVISION =	2
 CATEGORIES =	japanese textproc
 
 HOMEPAGE =	http://sourceforge.jp/projects/nkf/
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE_JP:=nkf/48945/}
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 #		BSD
 PERMIT_PACKAGE_CDROM =	Yes

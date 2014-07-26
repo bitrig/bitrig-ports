@@ -3,7 +3,7 @@
 COMMENT=	return 'I am not here' indication stored in a LDAP tree
 
 DISTNAME=	ldapvacation-1.1.3
-REVISION =	4
+REVISION =	5
 
 CATEGORIES=    	mail
 

@@ -6,7 +6,7 @@ DISTNAME=	fldigi-3.21.81
 
 CATEGORIES=	comms hamradio
 
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.w1hkj.com/Fldigi.html
 

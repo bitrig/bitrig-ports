@@ -3,7 +3,7 @@
 COMMENT=	WMF handling and conversion library
 
 DISTNAME=	libwmf-0.2.8.4
-REVISION=	0
+REVISION=	1
 SHARED_LIBS=	wmf		8.0	\
 		wmf-0.2		8.0	\
 		wmflite		7.1	\
@@ -12,8 +12,6 @@ SHARED_LIBS=	wmf		8.0	\
 CATEGORIES=	graphics devel
 
 HOMEPAGE=	http://wvware.sf.net/
-
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

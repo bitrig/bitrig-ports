@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		TAP LADSPA plugins
 
 DISTNAME =		tap-plugins-0.7.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		audio
 
 HOMEPAGE =		http://tap-plugins.sourceforge.net/

@@ -4,9 +4,8 @@ COMMENT=	extension for portable daemons
 
 MODULES=	cpan
 DISTNAME=	Net-Daemon-0.48
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

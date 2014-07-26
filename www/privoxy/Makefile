@@ -5,11 +5,10 @@ COMMENT=	web proxy with advanced filtering capabilities
 V=		3.0.21
 DISTNAME=	privoxy-${V}-stable
 PKGNAME=	privoxy-${V}
+REVISION=	0
 CATEGORIES=	www
 
 HOMEPAGE=	http://www.privoxy.org/
-
-MAINTAINER=	Michael Erdely <merdely@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

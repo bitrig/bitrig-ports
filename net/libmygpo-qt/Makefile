@@ -2,7 +2,7 @@
 COMMENT =		Qt/C++ library wrapper for the GPodder
 DISTNAME =		libmygpo-qt.1.0.7
 PKGNAME =		${DISTNAME:S/./-/}
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		mygpo-qt	0.0
 

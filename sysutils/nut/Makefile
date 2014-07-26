@@ -12,7 +12,10 @@ PKGNAME-cgi=		${DISTNAME:S/-/-cgi-/}
 PKGNAME-snmp=		${DISTNAME:S/-/-snmp-/}
 PKGNAME-xml=		${DISTNAME:S/-/-xml-/}
 
-REVISION-main=		1
+REVISION-main=		2
+REVISION-cgi=		0
+REVISION-snmp=		0
+REVISION-xml=		0
 
 SHARED_LIBS +=	upsclient            3.0      # .4.0
 SHARED_LIBS +=	nutclient            0.0      # .0.0
@@ -20,8 +23,6 @@ SHARED_LIBS +=	nutscan              1.0      # .1.0
 
 CATEGORIES=		sysutils
 HOMEPAGE=		http://www.networkupstools.org/
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+, some scripts (not packaged) are GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

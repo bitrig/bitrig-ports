@@ -2,12 +2,10 @@
 
 COMMENT=	logs smurf attacks
 DISTNAME=	smurflog-2.1
-REVISION =	0
+REVISION =	1
 CATEGORIES=	net security
 
 MASTER_SITES=	${MASTER_SITE_PACKETSTORM:=UNIX/loggers/}
-
-MAINTAINER=	Todd T. Fries <todd@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c pcap

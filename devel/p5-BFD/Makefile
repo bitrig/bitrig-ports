@@ -4,10 +4,8 @@ COMMENT=	impromptu dumping of data structures for debugging purposes
 
 MODULES=	cpan
 DISTNAME=	BFD-0.31
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

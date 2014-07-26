@@ -3,7 +3,7 @@
 COMMENT=		fast, high quality pseudo random number generation
 
 DISTNAME=		mwc-random-0.12.0.1
-REVISION=		1
+REVISION=		2
 CATEGORIES=		math security
 
 # BSD3

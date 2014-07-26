@@ -7,7 +7,7 @@ VER =		${MAJ_VER}.${MIN_VER}.${MICRO_VER}
 DISTNAME =	apache-tomcat-${VER}
 PKGNAME-main =	tomcat-${VER}
 PKGNAME-examples =tomcat-examples-${VER}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	www
 
@@ -18,8 +18,6 @@ MASTER_SITES =	${MASTER_SITE_APACHE:=tomcat/tomcat-${MAJ_VER}/v${VER}/bin/} \
 		http://archive.apache.org/dist/tomcat/tomcat-${MAJ_VER}/archive/v${VER}/bin/
 
 HOMEPAGE =	http://tomcat.apache.org/
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 MULTI_PACKAGES = -main -examples
 

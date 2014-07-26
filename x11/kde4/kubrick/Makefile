@@ -2,6 +2,7 @@
 
 COMMENT =	Rubik's cube simulator for KDE
 DISTNAME =	kubrick-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread GL GLU
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork

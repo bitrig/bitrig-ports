@@ -8,7 +8,7 @@ PKGNAME =	teaqt-${V}
 CATEGORIES =	editors x11
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=tea-editor/}
 EXTRACT_SUFX =	.tar.bz2
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://tea-editor.sf.net/
 

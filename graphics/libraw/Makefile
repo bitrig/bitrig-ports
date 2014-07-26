@@ -6,7 +6,7 @@ BROKEN-hppa =	undefined reference to __sync_fetch_and_add_4
 V =			0.16.0
 DISTNAME =		LibRaw-${V}
 PKGNAME =		${DISTNAME:L}
-REVISION=		0
+REVISION=		1
 CATEGORIES =		graphics
 
 SHARED_LIBS +=  raw                  0.0      # 10.0

@@ -4,6 +4,7 @@ COMMENT =	simple data types for common serialisation formats
 
 MODULES =	cpan
 DISTNAME =	Types-Serialiser-1.0
+REVISION =	0
 CATEGORIES =	converters
 
 CPAN_AUTHOR =	MLEHMANN

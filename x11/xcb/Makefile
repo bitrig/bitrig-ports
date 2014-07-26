@@ -3,7 +3,7 @@
 COMMENT=	tool for managing X11 cut-buffers
 
 DISTNAME=	xcb-2.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 MASTER_SITES=	http://www.goof.com/pcg/marc/data/

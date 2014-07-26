@@ -4,7 +4,7 @@ COMMENT=		wm-dockapp; shows sunrise/sunset times
 
 DISTNAME=		wmSun-1.03
 PKGNAME=		${DISTNAME:L}
-REVISION=		4
+REVISION=		5
 CATEGORIES=		astro x11 x11/windowmaker
 
 # GPL

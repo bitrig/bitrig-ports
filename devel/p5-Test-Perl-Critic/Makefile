@@ -4,7 +4,7 @@ COMMENT=	test framework to run Perl::Critic
 
 MODULES=	cpan
 DISTNAME=	Test-Perl-Critic-1.02
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # perl

@@ -3,7 +3,7 @@
 COMMENT=	Framework for caching of arbitrary data for PHP
 
 DISTNAME=	Cache-1.5.4
-REVISION =	3
+REVISION =	4
 CATEGORIES=	devel
 
 MODULES=	www/pear

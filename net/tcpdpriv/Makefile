@@ -3,7 +3,7 @@
 COMMENT=	removes sensitive information from a tcpdump -w file
 
 DISTNAME=	tcpdpriv-1.1.10
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net security
 
 HOMEPAGE=	http://ita.ee.lbl.gov/html/contrib/tcpdpriv.html

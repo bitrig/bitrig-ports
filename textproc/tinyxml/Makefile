@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	simple and small C++ XML parser
 
 V=		2.6.2
-REVISION=	1
+REVISION=	2
 DISTNAME=	tinyxml_${V:S/./_/g}
 PKGNAME=	tinyxml-${V}
 EXTRACT_SUFX=	.zip

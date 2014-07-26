@@ -4,7 +4,7 @@ COMMENT =	collection of puzzles games
 
 DISTNAME =	puzzles-r9534
 PKGNAME =	${DISTNAME:S/-r/-/}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	games
 
 HOMEPAGE =	http://www.chiark.greenend.org.uk/~sgtatham/puzzles/

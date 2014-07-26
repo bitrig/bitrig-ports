@@ -4,6 +4,7 @@ COMMENT=	Perl extension for formatting numbers
 
 MODULES=	cpan
 DISTNAME=	Number-Format-1.73
+REVISION=	0
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.bayview.com/software/perl.shtml

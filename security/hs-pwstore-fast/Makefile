@@ -3,7 +3,7 @@
 COMMENT =		secure password storage
 
 DISTNAME =		pwstore-fast-2.3
-REVISION =		1
+REVISION =		2
 CATEGORIES =		security
 
 # BSD3

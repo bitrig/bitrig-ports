@@ -3,6 +3,7 @@
 COMMENT=		front-end to ssh-agent
 
 DISTNAME=		keychain-2.7.1
+REVISION=		0
 CATEGORIES=		security
 
 HOMEPAGE=		http://docs.funtoo.org/wiki/Keychain

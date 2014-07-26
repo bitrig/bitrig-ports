@@ -5,7 +5,7 @@ CATEGORIES =	devel lang/ruby x11/kde4
 COMMENT =	Ruby bindings for Qt4
 DISTNAME =	qtruby-${MODKDE4_VERSION}
 PKGNAME =	qt4-${MODKDE4_VERSION}
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://techbase.kde.org/Development/Languages/Ruby
 

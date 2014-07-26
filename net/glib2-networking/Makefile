@@ -9,13 +9,11 @@ GNOME_PROJECT=	glib-networking
 
 PKGNAME=	glib2-networking-${GNOME_VERSION}
 
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.gtk.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GLPLv2
 PERMIT_PACKAGE_CDROM=	Yes

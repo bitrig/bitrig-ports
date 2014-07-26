@@ -3,10 +3,8 @@
 COMMENT =	postgresql driver for swift
 
 DISTNAME =	swift-db-postgres-0.3.0
-REVISION =	2
+REVISION =	3
 CATEGORIES =	databases
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

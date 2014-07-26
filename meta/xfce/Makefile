@@ -8,10 +8,8 @@ PKGNAME=	xfce-${V}
 
 PKGNAME-main =		xfce-${V}
 PKGNAME-extras =	xfce-extras-${V}
-REVISION-main = 1
-REVISION-extras = 1
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
+REVISION-main = 2
+REVISION-extras = 2
 
 MULTI_PACKAGES =	-main -extras
 

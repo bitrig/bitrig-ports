@@ -7,7 +7,7 @@ COMMENT=	routines for accessing the OpenSSL prng
 MODULES=	cpan
 DISTNAME=	Crypt-OpenSSL-Random-0.06
 CATEGORIES=	security
-REVISION=	0
+REVISION=	1
 
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM=	Yes

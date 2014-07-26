@@ -3,6 +3,7 @@
 COMMENT=	C library for the Yubikey OTP token
 
 DISTNAME=	libyubikey-1.12
+REVISION=	0
 SHARED_LIBS +=  yubikey              0.0      # 1.4
 CATEGORIES=	devel security
 

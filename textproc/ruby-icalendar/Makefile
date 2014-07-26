@@ -3,6 +3,7 @@
 COMMENT=		iCalendar support for Ruby
 
 DISTNAME=		icalendar-2.1.0
+REVISION=		0
 CATEGORIES=		textproc
 
 HOMEPAGE=		https://github.com/icalendar/icalendar

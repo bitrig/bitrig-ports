@@ -3,10 +3,9 @@
 COMMENT =		object interface for AF_INET and AF_INET6 domain sockets
 
 DISTNAME =		IO-Socket-INET6-2.72
+REVISION =		0
 
 CATEGORIES =		net
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

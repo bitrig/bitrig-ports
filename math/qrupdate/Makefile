@@ -3,12 +3,11 @@
 COMMENT =	library for fast updates of QR and Cholesky decompositions
 
 DISTNAME =	qrupdate-1.1.2
+REVISION =	0
 SHARED_LIBS +=  qrupdate	0.0	# .1.1
 CATEGORIES =	math
 
 HOMEPAGE =	http://qrupdate.sourceforge.net/
-
-MAINTAINER =	Paul Irofti <pirofti@openbsd.org>
 
 # GPL v3
 PERMIT_PACKAGE_CDROM =		Yes

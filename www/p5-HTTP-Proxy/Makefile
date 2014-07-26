@@ -4,11 +4,9 @@ COMMENT=	pure Perl HTTP proxy
 
 MODULES=	cpan
 DISTNAME=	HTTP-Proxy-0.17
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

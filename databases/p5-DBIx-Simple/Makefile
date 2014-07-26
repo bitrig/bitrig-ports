@@ -5,6 +5,7 @@ COMMENT =	very complete easy-to-use OO interface to DBI
 MODULES =	cpan
 
 DISTNAME =	DBIx-Simple-1.35
+REVISION =	0
 CATEGORIES =	databases
 
 # Perl

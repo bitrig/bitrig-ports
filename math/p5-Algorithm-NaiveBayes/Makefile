@@ -3,7 +3,7 @@
 COMMENT=	Bayesian prediction of categories
 
 DISTNAME=	Algorithm-NaiveBayes-0.04
-REVISION=	0
+REVISION=	1
 CATEGORIES=	math
 
 # Perl

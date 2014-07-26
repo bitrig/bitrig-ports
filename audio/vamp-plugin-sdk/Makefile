@@ -3,7 +3,7 @@
 COMMENT =		audio plugin API
 
 DISTNAME =		vamp-plugin-sdk-2.0
-REVISION =		2
+REVISION =		3
 CATEGORIES =		audio
 
 SHARED_LIBS +=		vamp-sdk	1.0

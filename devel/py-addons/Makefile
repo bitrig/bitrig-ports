@@ -5,12 +5,11 @@ COMMENT =		extend python objects with addons
 MODPY_EGG_VERSION =	0.7
 DISTNAME =		AddOns-${MODPY_EGG_VERSION}
 PKGNAME =		py-addons-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://pypi.python.org/pypi/AddOns
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # PSF or ZPL
 PERMIT_PACKAGE_CDROM =	Yes

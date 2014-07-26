@@ -66,8 +66,6 @@ MASTER_SITES5=	${MASTER_SITE_APACHE:=ant/binaries/} \
 		http://archive.apache.org/dist/ant/binaries/
 MASTER_SITES6=	http://spacehopper.org/mirrors/
 
-MAINTAINER=	Kurt Miller <kurt@openbsd.org>
-
 # GPLv2 w/CLASSPATH exception
 PERMIT_PACKAGE_CDROM=	Yes
 

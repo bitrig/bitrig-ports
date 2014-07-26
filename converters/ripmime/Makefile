@@ -3,6 +3,7 @@
 COMMENT=	extract attachments from MIME encoded emails
 
 DISTNAME=	ripmime-1.4.0.10
+REVISION=	0
 
 CATEGORIES=	converters mail
 

@@ -3,7 +3,7 @@
 COMMENT=		base class for creating plugin enabled POE Components
 
 DISTNAME=		POE-Component-Pluggable-1.24
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # perl

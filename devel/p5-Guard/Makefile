@@ -5,7 +5,7 @@ COMMENT =	scope guards, lighter alternative
 
 MODULES =	cpan
 DISTNAME =	Guard-1.021
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 CPAN_AUTHOR = 	MLEHMANN
 

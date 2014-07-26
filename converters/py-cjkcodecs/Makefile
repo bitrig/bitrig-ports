@@ -6,10 +6,8 @@ COMMENT=	Python unicode codecs for Chinese, Japanese and Korean
 
 DISTNAME=	cjkcodecs-1.1.1
 PKGNAME=	py-${DISTNAME}
-REVISION =	8
+REVISION =	9
 CATEGORIES=	converters
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

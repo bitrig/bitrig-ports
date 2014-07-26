@@ -2,11 +2,10 @@
 
 COMMENT =	X Window Protocol Viewer
 DISTNAME =	xscope-1.4.1
+REVISION =	0
 CATEGORIES =	x11
 
 HOMEPAGE =	http://wiki.X.Org/
-
-MAINTAINER =	Matthieu Herrb <matthieu@openbsd.org>
 
 # X11
 PERMIT_PACKAGE_CDROM =		Yes

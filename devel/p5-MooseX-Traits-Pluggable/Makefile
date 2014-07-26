@@ -4,6 +4,7 @@ COMMENT =	trait loading and resolution for Moose
 
 MODULES =	cpan
 DISTNAME =	MooseX-Traits-Pluggable-0.10
+REVISION =	0
 CATEGORIES =	devel
 
 # same as perl

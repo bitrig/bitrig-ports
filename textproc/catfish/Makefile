@@ -6,11 +6,9 @@ DISTNAME =	catfish-search-0.4.0.1
 PKGNAME =	${DISTNAME:S/-search//}
 CATEGORIES =	textproc
 EXTRACT_SUFX =	.tar.bz2
-REVISION =	4
+REVISION =	5
 
 HOMEPAGE =	http://www.twotoasts.de/index.php?/pages/catfish_summary.html
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

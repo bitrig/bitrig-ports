@@ -5,6 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		Gtk+3 media player
 
 DISTNAME =		audacious-3.4.3
+REVISION =		0
 
 SHARED_LIBS =		audclient	3.0 	# 2.0
 SHARED_LIBS +=		audcore		2.1 	# 1.0

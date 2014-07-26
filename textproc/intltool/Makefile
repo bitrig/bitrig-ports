@@ -4,6 +4,7 @@ COMMENT=		internationalization tools
 
 V=			0.50.2
 DISTNAME=		intltool-${V}
+REVISION=		0
 CATEGORIES=		textproc
 
 HOMEPAGE=		https://edge.launchpad.net/intltool

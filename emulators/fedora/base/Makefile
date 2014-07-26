@@ -3,7 +3,7 @@
 COMMENT=	Linux compatibility package based on Fedora Core ${FEDORA_V}
 
 PKGNAME=	fedora_base-${FEDORA_V}.0
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS +=  cap                       2.10
 SHARED_LIBS +=  blkid                     1.0

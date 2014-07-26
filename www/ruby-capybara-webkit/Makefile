@@ -3,7 +3,7 @@
 COMMENT =	capybara driver that uses WebKit
 
 DISTNAME =	capybara-webkit-0.13.0
-REVISION =	6
+REVISION =	7
 CATEGORIES =	www
 
 HOMEPAGE=	https://github.com/thoughtbot/capybara-webkit

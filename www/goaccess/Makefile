@@ -3,12 +3,10 @@
 COMMENT =		realtime console web log analyzer
 
 DISTNAME =		goaccess-0.6
-REVISION = 		0
+REVISION = 		1
 
 CATEGORIES =		www
 HOMEPAGE =		http://goaccess.prosoftcorp.com/
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>, \
-			William Yodlowsky <william@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

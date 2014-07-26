@@ -3,6 +3,7 @@
 COMMENT =		memoize strings as atoms
 
 DISTNAME =		stringtable-atom-0.0.6.2
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

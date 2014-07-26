@@ -5,13 +5,11 @@ COMMENT=	graphics and text browser
 VER=		2.8
 DISTNAME=	links-${VER}
 PKGNAME=	links+-${VER}
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	www
 
 HOMEPAGE=	http://links.twibright.com/
-
-MAINTAINER=	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -2,10 +2,10 @@
 
 COMMENT=		create multichannel WAV audio files
 DISTNAME=		multimux-0.2.5.2
+REVISION=		0
 CATEGORIES=		audio
 
 HOMEPAGE=		http://panteltje.com/panteltje/dvd/
-MAINTAINER=		Girish Venkatachalam <girish1729@gmail.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

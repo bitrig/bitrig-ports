@@ -17,11 +17,10 @@ PKGNAME-data =		speeddreams-data-$V
 
 CATEGORIES =		games
 
-REVISION-main =		0
+REVISION-main =		1
+REVISION-data =		0
 
 HOMEPAGE =		http://www.speed-dreams.org/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,9 +4,7 @@ COMMENT=		open source alternative to Microsoft Project
 
 DISTNAME=		projectlibre-1.5.7
 CATEGORIES=		productivity
-REVISION=		0
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
+REVISION=		1
 
 HOMEPAGE=		http://www.projectlibre.org/
 

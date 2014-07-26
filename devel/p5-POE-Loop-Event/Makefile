@@ -3,7 +3,7 @@
 COMMENT=		bridge that allows POE to be driven by Event.pm
 
 DISTNAME=		POE-Loop-Event-1.302
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 MODULES=		cpan

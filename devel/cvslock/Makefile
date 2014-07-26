@@ -3,9 +3,8 @@
 COMMENT=	safely manipulate and inspect CVS respositories
 
 DISTNAME=	cvslock-0.2
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Manuel Rodrigo Rabade Garcia <mig@mig-29.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

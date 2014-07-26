@@ -5,15 +5,13 @@ COMMENT =		event logging framework
 V =			0.9.14
 DISTNAME =		zeitgeist-${V}
 EPOCH =			0
-REVISION =		5
+REVISION =		6
 
 SHARED_LIBS +=	zeitgeist-2.0             0.0 # 0.0
 
 CATEGORIES =		productivity
 
 HOMEPAGE =		https://launchpad.net/zeitgeist
-
-MAINTAINER =		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2 - LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,12 +5,10 @@ COMMENT =	command line todo list manager
 VERSION =	2.3.0
 DISTNAME =	task-${VERSION}
 PKGNAME =	taskwarrior-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	productivity
 
 HOMEPAGE =	http://www.taskwarrior.org/
-
-MAINTAINER=	Aaron Bieber <abieber@openbsd.org>
 
 MASTER_SITES =	${HOMEPAGE}/download/
 

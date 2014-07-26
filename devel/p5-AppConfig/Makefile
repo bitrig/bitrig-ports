@@ -4,7 +4,7 @@ COMMENT=	Module bundle for reading and parsing config files
 
 MODULES=	cpan
 DISTNAME=	AppConfig-1.66
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

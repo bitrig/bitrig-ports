@@ -3,7 +3,7 @@
 COMMENT=	SSLv3/TLS and SSLv2 sniffer
 
 DISTNAME=	sslsniffer-1.21
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net security
 HOMEPAGE=	http://crypto.stanford.edu/~eujin/sslsniffer/
 MASTER_SITES=	${HOMEPAGE}

@@ -4,7 +4,7 @@ COMMENT=	modules for parsing and evaluating XPath statements
 
 MODULES=	cpan
 DISTNAME=	XML-XPath-1.13
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

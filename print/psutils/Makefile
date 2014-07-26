@@ -3,13 +3,12 @@
 COMMENT=	utilities for manipulating PostScript documents
 
 DISTNAME=	psutils-1.23
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	print
 
 HOMEPAGE=	https://github.com/rrthomas/psutils
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # BSD-like (${WRKSRC}/LICENSE)
 PERMIT_PACKAGE_CDROM=	Yes

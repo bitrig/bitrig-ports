@@ -4,7 +4,7 @@ COMMENT=	use familiar style on method naming
 
 MODULES=	cpan
 DISTNAME=	capitalization-0.03
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # Artistic

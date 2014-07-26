@@ -2,6 +2,7 @@
 
 COMMENT=	British English RP male speaker (DON)
 DISTNAME=	festvox_don
+REVISION=	0
 
 RUN_DEPENDS=	${VOX_UK_DEPS}
 

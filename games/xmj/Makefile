@@ -4,7 +4,7 @@ COMMENT=	Mahjongg game for X11
 
 DISTNAME=       xmj
 PKGNAME=	xmj-1.0
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games
 
 MASTER_SITES=	${MASTER_SITE_BACKUP}

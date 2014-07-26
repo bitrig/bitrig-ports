@@ -2,6 +2,7 @@
 
 COMMENT =	KDE network file sharing components
 DISTNAME =	kdenetwork-filesharing-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	network
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdenetwork/kdenetwork-filesharing

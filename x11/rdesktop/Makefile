@@ -2,6 +2,7 @@
 
 COMMENT=	open source client for Windows Terminal Server
 DISTNAME=	rdesktop-1.8.1
+REVISION=	0
 CATEGORIES=	x11 net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rdesktop/}
 

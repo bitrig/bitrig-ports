@@ -4,7 +4,7 @@ COMMENT=	C++ interface for gtk3+
 
 GNOME_PROJECT=	gtkmm
 GNOME_VERSION=	3.12.0
-REVISION=	0
+REVISION=	1
 
 PKGNAME=	gtk3mm-${GNOME_VERSION}
 

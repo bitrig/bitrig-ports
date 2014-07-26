@@ -3,11 +3,10 @@
 COMMENT=	read and write meta information in image/audio/video files
 
 DISTNAME=	Image-ExifTool-9.60
+REVISION=	0
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://owl.phy.queensu.ca/~phil/exiftool/
-
-MAINTAINER=	Patrick Keshishian <pkeshish@gmail.com>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

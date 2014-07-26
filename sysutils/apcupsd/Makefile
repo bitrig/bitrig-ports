@@ -5,9 +5,9 @@ COMMENT-cgi =		CGI scripts for web monitoring
 COMMENT-x11 =		gapcmon - GUI for apcupsd
 
 DISTNAME =		apcupsd-3.14.11
-REVISION-main =		1
-REVISION-cgi =		1
-REVISION-x11 =		2
+REVISION-main =		2
+REVISION-cgi =		2
+REVISION-x11 =		3
 PKGNAME-main =		${DISTNAME}
 PKGNAME-cgi =		${DISTNAME:S/-/-cgi-/}
 PKGNAME-x11 =		${DISTNAME:S/-/-x11-/}
@@ -15,8 +15,6 @@ PKGNAME-x11 =		${DISTNAME:S/-/-x11-/}
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://www.apcupsd.com
-
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

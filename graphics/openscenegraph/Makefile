@@ -7,7 +7,7 @@ COMMENT =		3D graphics toolkit
 V =			3.2.0
 DISTNAME =		OpenSceneGraph-${V}
 PKGNAME =		openscenegraph-${V}
-REVISION =		0
+REVISION =		1
 
 SUBST_VARS +=		V
 
@@ -33,8 +33,6 @@ SHARED_LIBS +=  osgWidget                 0.0 # 3.0
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://www.openscenegraph.org
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # OSGPL (see LICENSE.txt)
 PERMIT_PACKAGE_CDROM =	Yes

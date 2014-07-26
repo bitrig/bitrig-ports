@@ -11,14 +11,13 @@ GH_PROJECT =	libscrypt
 GH_TAGNAME =	v$V
 GH_COMMIT =	457ff867eee5fe8535503d5af0b39b78875f2d7f
 DISTNAME =	${GH_PROJECT}-$V
+REVISION =	0
 
 SHARED_LIBS =	scrypt		1.0	# 0
 
 CATEGORIES =	security
 
 HOMEPAGE =	https://lolware.net/libscrypt.html
-
-MAINTAINER =	LEVAI Daniel <leva@ecentrum.hu>
 
 # BSD
 PERMIT_PACKAGE_CDROM =		Yes

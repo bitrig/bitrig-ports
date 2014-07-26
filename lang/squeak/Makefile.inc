@@ -1,7 +1,6 @@
 # $OpenBSD: Makefile.inc,v 1.6 2013/03/11 13:42:59 sthen Exp $
 
 CATEGORIES =	lang
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # Apple license, similar to GPL, with a clause to protect Apple
 # against litigation

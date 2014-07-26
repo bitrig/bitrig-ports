@@ -3,6 +3,7 @@
 COMMENT=	FUSE FTP driver
 
 DISTNAME=	curlftpfs-0.9.2
+REVISION=	0
 CATEGORIES=	sysutils
 
 # GPLv2

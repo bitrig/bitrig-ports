@@ -3,12 +3,10 @@
 COMMENT=	collection of utilities for C programmers
 
 DISTNAME=	cutils-1.6
-REVISION =	1
+REVISION =	2
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.sigala.it/sandro/software.php
-
-MAINTAINER=	Paul Irofti <pirofti@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

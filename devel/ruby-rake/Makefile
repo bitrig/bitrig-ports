@@ -3,7 +3,7 @@
 COMMENT=	ruby make
 
 DISTNAME=	rake-0.9.2.2
-REVISION =	0
+REVISION =	1
 CATEGORIES=	devel
 
 # MIT License

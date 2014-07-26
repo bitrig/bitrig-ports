@@ -3,10 +3,9 @@
 COMMENT =		create and verify cryptographic signatures
 
 VERSION =		1.0.0
+REVISION =		0
 DISTNAME =		reop-${VERSION}
 CATEGORIES =		security sysutils
-
-MAINTAINER =		James Turner <james@calminferno.net>
 
 HOMEPAGE =		https://github.com/tedu/reop/
 MASTER_SITES =		https://github.com/tedu/reop/releases/download/${VERSION}/

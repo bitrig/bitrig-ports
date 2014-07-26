@@ -3,7 +3,7 @@
 COMMENT=		Website META Language: off-line HTML generation toolkit
 
 DISTNAME=		wml-2.0.11
-REVISION=		7
+REVISION=		8
 CATEGORIES=		www
 
 HOMEPAGE=		http://www.thewml.org/

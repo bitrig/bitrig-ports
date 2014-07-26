@@ -5,12 +5,11 @@ COMMENT =		JSON encoder/decoder
 MODPY_EGG_VERSION =	2.5.0
 DISTNAME =		simplejson-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
+REVISION =		0
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://undefined.org/python/\#simplejson
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,11 +3,10 @@
 COMMENT=		code browsing program
 
 DISTNAME=		cscope-15.8a
+REVISION=		0
 CATEGORIES=     	devel
 
 HOMEPAGE=		http://cscope.sourceforge.net/
-
-MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,7 +5,7 @@ COMMENT=	Perl module for aliasing class names
 MODULES=	cpan
 DISTNAME=	UNIVERSAL-moniker-0.08
 PKGNAME=	p5-Universal-moniker-0.08
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # Artistic

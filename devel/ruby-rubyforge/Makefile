@@ -3,7 +3,7 @@
 COMMENT =	script which automates a limited set of rubyforge operations
 
 DISTNAME =	rubyforge-2.0.0
-REVISION =	4
+REVISION =	5
 CATEGORIES =	devel net
 
 # MIT

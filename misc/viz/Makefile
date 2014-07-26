@@ -3,7 +3,7 @@
 COMMENT=	Convert invisible (binary) characters to a visible form
 
 DISTNAME=	viz-1.1.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	misc
 
 EXTRACT_SUFX=	.tgz

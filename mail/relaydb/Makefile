@@ -3,13 +3,11 @@
 COMMENT=	spam relay database
 
 DISTNAME=	relaydb-1.7
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.benzedrine.cx/
 
 HOMEPAGE=	http://www.benzedrine.cx/relaydb.html
-
-MAINTAINER=	Daniel Hartmeier <dhartmei@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

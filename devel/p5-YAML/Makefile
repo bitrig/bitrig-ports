@@ -5,6 +5,7 @@ COMMENT=	YAML ain't a markup language
 MODULES=	cpan
 
 DISTNAME=	YAML-0.84
+REVISION=	0
 CATEGORIES=	devel
 
 # Perl

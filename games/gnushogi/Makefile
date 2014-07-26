@@ -3,6 +3,7 @@
 COMMENT=	GNU version of Shogi
 
 DISTNAME=	gnushogi-1.3
+REVISION=	0
 CATEGORIES=	games
 
 # GPL

@@ -12,7 +12,8 @@ PKGNAME-main =		${DISTNAME}
 PKGSPEC-main =		kdelibs->=3,<4
 PKGNAME-langlist =	kde3-langlist-${VERSION}
 PKG_ARCH-langlist =	*
-REVISION-main =		35
+REVISION-main =		36
+REVISION-langlist =	0
 
 MODKDE_VERSION =	3.5.8
 

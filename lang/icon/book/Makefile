@@ -2,7 +2,6 @@
 
 CATEGORIES=	books lang
 COMMENT=	Icon programming language reference book
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 MASTER_SITES=	http://www.cs.arizona.edu/icon/ftp/doc/
 
@@ -10,13 +9,13 @@ MASTER_SITES=	http://www.cs.arizona.edu/icon/ftp/doc/
 # This documents version 9.3 of the language.
 V=9.3
 DISTNAME=	icon-book-$V
+REVISION =	1
 
 FLAVORS=two_sided
 FLAVOR?=
 .if ${FLAVOR} == "two_sided"
 DISTFILES=	lb2up.pdf
 FULLPKGNAME=	icon-book-two_sided-$V
-REVISION =	0
 .else
 DISTFILES=	lb1up.pdf
 FULLPKGNAME=	icon-book-$V

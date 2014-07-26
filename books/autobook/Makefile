@@ -4,10 +4,9 @@ COMMENT=	documentation for autoconf, automake, libtool
 
 V=		1.5
 DISTNAME=	autobook-${V}
+REVISION=	0
 EPOCH=		0
 CATEGORIES=	books devel
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 # Open Publication License
 PERMIT_PACKAGE_CDROM=	Yes

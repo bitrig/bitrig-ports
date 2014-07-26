@@ -7,6 +7,7 @@ COMMENT =	Apache-Tomcat AJP Connector for Apache2
 V =		1.2.40
 DISTNAME =	tomcat-connectors-${V}-src
 PKGNAME =	ap2-mod_jk-${V}
+REVISION =	0
 CATEGORIES =	www
 
 HOMEPAGE =	http://tomcat.apache.org/connectors-doc/index.html

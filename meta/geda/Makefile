@@ -3,6 +3,7 @@
 COMMENT=	stack of free/open source CAD/EDA tools (gEDA suite)
 
 PKGNAME=	geda-0.1
+REVISION=	0
 
 HOMEPAGE=	http://www.gpleda.org/
 

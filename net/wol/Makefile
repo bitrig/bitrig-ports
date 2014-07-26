@@ -3,12 +3,10 @@
 COMMENT=		Wake On Lan client
 
 DISTNAME=		wol-0.7.1
-REVISION=		2
+REVISION=		3
 CATEGORIES=		net
 
 HOMEPAGE=		http://ahh.sourceforge.net/wol/
-
-MAINTAINER=		Johan Fredin <johan@spelaroll.se>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

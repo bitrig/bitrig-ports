@@ -5,10 +5,8 @@ COMMENT =		concrete monad transformers
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		transformers-0.3.0.0
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

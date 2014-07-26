@@ -4,11 +4,10 @@ COMMENT =	distributed cache for Catalyst (deprecated)
 
 MODULES =	cpan
 DISTNAME =	Catalyst-Plugin-Cache-Memcached-0.8
+REVISION =	0
 EPOCH =		0
 CATEGORIES =	www
 USE_GROFF =	Yes
-
-MAINTAINER =	Jim Razmus <jim@bonetruck.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM =	Yes

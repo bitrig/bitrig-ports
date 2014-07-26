@@ -3,6 +3,7 @@
 COMMENT=	use Math::Pari for Math::BigInt routines
 
 DISTNAME=	Math-BigInt-Pari-1.17
+REVISION=	0
 CATEGORIES=	math
 
 # perl

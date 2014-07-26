@@ -5,7 +5,7 @@ COMMENT=	object-oriented DBMS
 MODULES=	cpan
 
 DISTNAME=	Tangram-2.10
-REVISION=	1
+REVISION=	2
 CATEGORIES=	databases
 USE_GROFF =	Yes
 

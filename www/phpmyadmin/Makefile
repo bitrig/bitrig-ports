@@ -3,14 +3,12 @@
 COMMENT=	tool to handle the administration of MySQL over the web
 
 V=		4.2.2
-REVISION=	1
+REVISION=	2
 
 PKGNAME=	phpMyAdmin-$V
 DISTNAME=	phpMyAdmin-$V-all-languages
 CATEGORIES=	www
 HOMEPAGE=	http://www.phpmyadmin.net/
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

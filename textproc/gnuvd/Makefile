@@ -2,12 +2,10 @@
 
 COMMENT =		query the online Dutch Van Dale dictionary
 DISTNAME =		gnuvd-1.0.11
-REVISION =		0
+REVISION =		1
 CATEGORIES =		textproc education
 
 HOMEPAGE =		http://www.djcbsoftware.nl/code/gnuvd/
-
-MAINTAINER =		Steven Mestdagh <steven@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM =	Yes

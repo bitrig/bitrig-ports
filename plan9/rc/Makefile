@@ -3,14 +3,12 @@
 COMMENT=	shell (clone of plan9 shell)
 
 DISTNAME=	rc-1.6
-REVISION=	1
+REVISION=	2
 CATEGORIES=	plan9 shells
 MASTER_SITES=	http://www.star.le.ac.uk/~tjg/rc/release/ \
 		ftp://ftp.sys.toronto.edu/pub/rc/
 MASTER_SITES0=	http://www.star.le.ac.uk/~tjg/rc/misc/
 SUPDISTFILES=	editline-1.5.tar.gz:0
-
-MAINTAINER=	Markus Friedl <markus@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

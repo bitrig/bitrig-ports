@@ -4,6 +4,7 @@ COMMENT=	module to declare real exception classes in perl
 
 MODULES=	cpan
 DISTNAME =	Exception-Class-1.37
+REVISION =	0
 CATEGORIES=	devel
 
 # perl

@@ -3,7 +3,7 @@
 COMMENT=		configuration file parser library
 DISTNAME=		confuse-2.7
 PKGNAME=		lib${DISTNAME}
-REVISION=		1
+REVISION=		2
 SHARED_LIBS=		confuse 1.0	# .0.0
 CATEGORIES=		devel
 

@@ -3,11 +3,9 @@
 COMMENT=	perl multi-level hash/array DBM that supports transactions
 
 DISTNAME=	DBM-Deep-1.0025
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	databases
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

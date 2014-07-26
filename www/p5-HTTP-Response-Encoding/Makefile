@@ -3,11 +3,9 @@
 COMMENT =		add encoding to HTTP::Response
 
 DISTNAME =		HTTP-Response-Encoding-0.06
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		www
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

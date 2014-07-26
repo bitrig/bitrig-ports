@@ -3,7 +3,7 @@
 COMMENT=		C library to produce PDF files
 
 DISTNAME=		pdflib-4.0.3
-REVISION = 		4
+REVISION = 		5
 CATEGORIES=     	print
 SHARED_LIBS=		pdf	2.3
 

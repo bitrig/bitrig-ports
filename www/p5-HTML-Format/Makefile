@@ -4,6 +4,7 @@ COMMENT=	HTML text formating class
 
 MODULES=	cpan
 DISTNAME=	HTML-Format-2.10
+REVISION=	0
 CATEGORIES=	www devel
 
 # GPL

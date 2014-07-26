@@ -7,7 +7,7 @@ COMMENT=	online banking interface and financial data framework
 # update the "release=XX" in DISTFILES, not just DISTNAME
 DISTNAME=	aqbanking-5.4.1beta
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}{download.php?package=03\&release=113\&file=01}
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=	aqbanking            1.1      # 38.1
 SHARED_LIBS +=	aqbankingpp          0.0      # unknown

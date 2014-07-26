@@ -4,6 +4,7 @@ COMMENT=	XSLT Views for catalyst
 
 MODULES=	cpan
 DISTNAME=	Catalyst-View-XSLT-0.08
+REVISION=	0
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

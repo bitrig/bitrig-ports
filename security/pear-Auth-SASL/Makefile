@@ -5,7 +5,7 @@ COMMENT=	abstraction of various SASL mechanism responses
 V=		1.0.4
 DISTNAME=	Auth_SASL-${V}
 PKGNAME=	pear-Auth-SASL-${V}
-REVISION=		0
+REVISION=		1
 CATEGORIES=	security
 
 MODULES=	www/pear

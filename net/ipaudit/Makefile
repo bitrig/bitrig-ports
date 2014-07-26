@@ -3,7 +3,7 @@
 COMMENT=		IP traffic summarizer
 
 DISTNAME=		ipaudit-0.95
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net sysutils
 
 HOMEPAGE=		http://ipaudit.sourceforge.net/

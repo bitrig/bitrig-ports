@@ -3,7 +3,7 @@
 COMMENT=		transparent application input fuzzer
 
 DISTNAME=		zzuf-0.13
-REVISION=		2
+REVISION=		3
 CATEGORIES=		misc
 MASTER_SITES=		http://libcaca.zoy.org/files/zzuf/
 

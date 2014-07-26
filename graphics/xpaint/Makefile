@@ -3,7 +3,7 @@
 COMMENT=		simple paint program
 
 DISTNAME=		xpaint-2.7.8.1
-REVISION=		5
+REVISION=		6
 CATEGORIES=		graphics x11
 
 HOMEPAGE=		http://sf-xpaint.sourceforge.net/

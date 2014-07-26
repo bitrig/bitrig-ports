@@ -3,12 +3,10 @@
 COMMENT=		mysql driver for HDBC
 
 DISTNAME=		HDBC-mysql-0.6.6.1
-REVISION=		2
+REVISION=		3
 CATEGORIES=		databases
 
 HOMEPAGE=		https://github.com/bos/hdbc-mysql
-
-MAINTAINER=		David Coppa <dcoppa@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM =	Yes

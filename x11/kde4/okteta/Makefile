@@ -2,6 +2,7 @@
 
 COMMENT =	hex file editor for KDE
 DISTNAME =	okteta-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	devel sysutils
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/okteta

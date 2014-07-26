@@ -6,7 +6,7 @@ MODAS_TAG =	asterisk-core
 MODAS_DESC =	core ${MODAS_LANGNAME} sound files for Asterisk (${MODAS_CODEC})
 MODAS_LANGS =	en en_AU en_GB es fr it ru
 MODAS_VER =	1.4.25
-REVISION =	0
+REVISION =	1
 
 # CC-BY-SA
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT=	japanese handwriting recognition library
 
 DISTNAME=	tomoe-0.2.1
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE= 	http://tomoe.sourceforge.jp/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE_JP:=tomoe/16048/}

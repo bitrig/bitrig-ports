@@ -4,12 +4,10 @@ COMMENT=	gnu curses-based napster client
 
 VERSION=	1.5.3
 DISTNAME=	nap-${VERSION}
-REVISION=	0
+REVISION=	1
 CATEGORIES=    	audio
 
 HOMEPAGE=	http://nap.sourceforge.net/
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

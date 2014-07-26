@@ -3,6 +3,7 @@
 COMMENT=	Garmin Image Tools
 
 DISTNAME=	gimgtools-0.02
+REVISION=	0
 CATEGORIES=	geo
 
 HOMEPAGE=	https://github.com/wuyongzheng/gimgtools

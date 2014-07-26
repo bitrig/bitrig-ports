@@ -3,7 +3,7 @@
 COMMENT=		strip TeX/LaTeX codes from a file
 
 DISTNAME=		detex-2.8
-REVISION=		1
+REVISION=		2
 CATEGORIES=		print
 
 MASTER_SITES=		ftp://ftp.cs.purdue.edu/pub/trinkle/

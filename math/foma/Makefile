@@ -4,7 +4,7 @@ COMMENT =		finite-state compiler and C library
 
 DISTNAME =		foma-0.9.16alpha
 PKGNAME =		${DISTNAME:S/alpha//}
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS +=		foma                      0.0 # 0.9.16
 

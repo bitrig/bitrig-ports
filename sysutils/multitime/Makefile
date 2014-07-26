@@ -3,11 +3,10 @@
 COMMENT =		time multiple executions of a command
 
 DISTNAME =		multitime-1.3
+REVISION =		0
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://tratt.net/laurie/src/multitime/
-
-MAINTAINER =		Laurence Tratt <laurie@tratt.net>
 
 # BSD / MIT
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,11 +4,10 @@ COMMENT =	Perl extension to access the x11 clipboard
 
 MODULES =	cpan
 DISTNAME =	Clipboard-0.13
+REVISION =	0
 CATEGORIES =	x11
 
 MASTER_SITES =	http://search.cpan.org/CPAN/authors/id/K/KI/KING/
-
-MAINTAINER =	Aaron Bieber <abieber@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

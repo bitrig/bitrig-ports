@@ -3,6 +3,7 @@
 COMMENT =  	makefile generator
 CATEGORIES =	devel x11
 DISTNAME = 	imake-1.0.5
+REVISION = 	0
 MASTER_SITES = 	http://ftp.x.org/pub/individual/util/
 
 PERMIT_PACKAGE_CDROM = 		Yes

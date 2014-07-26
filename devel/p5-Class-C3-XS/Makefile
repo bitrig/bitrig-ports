@@ -5,7 +5,7 @@ COMMENT=		XS speed-up for Class-C3
 
 MODULES=		cpan
 DISTNAME=		Class-C3-XS-0.08
-REVISION=		5
+REVISION=		6
 CATEGORIES=		devel
 CPAN_AUTHOR=		BLBLACK
 

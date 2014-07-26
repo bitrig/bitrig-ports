@@ -5,6 +5,7 @@ COMMENT =	Python DNS library
 MODPY_EGG_VERSION =	2.3.6
 DISTNAME =	pydns-${MODPY_EGG_VERSION}
 PKGNAME =	py-dns-${MODPY_EGG_VERSION}
+REVISION =	0
 CATEGORIES =   	net
 
 HOMEPAGE =	http://pydns.sourceforge.net/

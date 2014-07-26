@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; A popup menu of icons that launch programs
 
 DISTNAME=		wmmenu-1.2
-REVISION=		4
+REVISION=		5
 CATEGORIES=     	x11 x11/windowmaker
 
 HOMEPAGE=		http://www.fcoutant.freesurf.fr/wmmenu.html

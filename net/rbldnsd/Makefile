@@ -3,11 +3,10 @@
 COMMENT=	small daemon for DNSBLs
 
 DISTNAME=	rbldnsd-0.997a
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.corpit.ru/mjt/rbldnsd.html
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

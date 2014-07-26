@@ -4,6 +4,7 @@ COMMENT=	parse and validate simple name/value option pairs
 
 MODULES=	cpan
 DISTNAME=	Data-OptList-0.107
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

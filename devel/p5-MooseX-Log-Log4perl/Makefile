@@ -3,7 +3,7 @@
 COMMENT = 	logging Role with easy interface for Moose
 
 DISTNAME =	MooseX-Log-Log4perl-0.42
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 MODULES =	cpan
 USE_GROFF =	Yes

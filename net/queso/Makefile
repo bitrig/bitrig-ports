@@ -3,6 +3,7 @@
 COMMENT=	determine remote OS using simple tcp packets
 
 DISTNAME=	queso-980922
+REVISION=	0
 CATEGORIES=	net
 
 MASTER_SITES=	${MASTER_SITE_BACKUP}

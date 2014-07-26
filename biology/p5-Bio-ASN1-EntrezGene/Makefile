@@ -5,7 +5,7 @@ COMMENT =		regular expression-based parser for NCBI Entrez Gene
 M =			1.10-withoutworldwriteables
 DISTNAME =		Bio-ASN1-EntrezGene-${M}
 PKGNAME =		p5-Bio-ASN1-EntrezGene-${M:S/-withoutworldwriteables//}
-REVISION =		2
+REVISION =		3
 EPOCH =			0
 CATEGORIES =		biology
 

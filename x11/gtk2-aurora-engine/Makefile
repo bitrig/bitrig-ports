@@ -7,7 +7,7 @@ COMMENT=	Aurora GTK+2 engine
 V=		1.5.1
 DISTNAME=	56438-aurora-${V}
 PKGNAME=	gtk2-aurora-engine-${V}
-REVISION=	5
+REVISION=	6
 
 EXTRACT_SUFX=	.tar.bz2
 

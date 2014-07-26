@@ -7,9 +7,8 @@ COMMENT =		Nagios plugin to the status of ESX/i hardware
 V =			20130424
 DISTNAME =		check_esxi_hardware.py.$V
 PKGNAME =		check_esxi_hardware-$V
+REVISION =		0
 CATEGORIES =		net
-
-MAINTAINER =		Michael Erdely <merdely@openbsd.org>
 
 HOMEPAGE =		http://www.claudiokuenzler.com/nagios-plugins/check_esxi_hardware.php
 MASTER_SITES =		http://www.claudiokuenzler.com/nagios-plugins/

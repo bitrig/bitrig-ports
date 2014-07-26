@@ -4,12 +4,10 @@ COMMENT=	Commodore 64 emulator
 
 DISTNAME=	FrodoV4_1b.Src
 PKGNAME=	frodo-4.1b
-REVISION=	8
+REVISION=	9
 DISTFILES=	FrodoV4_1b.Src${EXTRACT_SUFX}
 
 CATEGORIES=	emulators games
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 HOMEPAGE=	http://frodo.cebix.net/
 

@@ -3,12 +3,10 @@
 COMMENT =	extendable encryption program that supports many ciphers
 
 DISTNAME =		mcrypt-2.6.8
-REVISION =		3
+REVISION =		4
 CATEGORIES =		security
 
 HOMEPAGE =		http://mcrypt.sf.net/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

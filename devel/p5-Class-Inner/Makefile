@@ -3,7 +3,7 @@
 COMMENT=	perlish implementation of Java like inner classes
 
 DISTNAME=	Class-Inner-0.1
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 
 # perl

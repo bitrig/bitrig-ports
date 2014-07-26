@@ -4,11 +4,9 @@ COMMENT=	perl module to get FQDN
 
 MODULES=	cpan
 DISTNAME=	Sys-Hostname-Long-1.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 USE_GROFF =	Yes
-
-MAINTAINER=	Michael Erdely <merdely@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

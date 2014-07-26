@@ -3,6 +3,7 @@
 COMMENT=	PGP packet visualizer
 
 DISTNAME=	pgpdump-0.26
+REVISION=	0
 CATEGORIES=	security
 
 HOMEPAGE=	http://www.mew.org/~kazu/proj/pgpdump/

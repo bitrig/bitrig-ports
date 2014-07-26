@@ -3,11 +3,10 @@
 COMMENT=	download and decode binaries posted to Usenet
 
 DISTNAME=	ubh-2.5
+REVISION=	0
 CATEGORIES=	news
 
 HOMEPAGE=	http://ubh.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

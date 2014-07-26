@@ -3,10 +3,9 @@
 COMMENT=	OCaml package manager
 CATEGORIES=	sysutils
 DISTNAME=	findlib-1.3.3
-REVISION=	1
+REVISION=	2
 MASTER_SITES=	http://download.camlcity.org/download/
 
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 HOMEPAGE=	http://projects.camlcity.org/projects/findlib.html
 
 # MIT/X11

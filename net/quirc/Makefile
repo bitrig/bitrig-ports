@@ -3,12 +3,10 @@
 COMMENT=	irc client that uses Tcl/Tk
 
 DISTNAME=	quirc-0.9.84
-REVISION =	7
+REVISION =	8
 CATEGORIES=	net
 
 HOMEPAGE=	http://quirc.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes

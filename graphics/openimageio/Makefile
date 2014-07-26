@@ -7,15 +7,13 @@ COMMENT =		library for reading and writing images
 V =			1.3.12
 DISTNAME =		Release-$V
 PKGNAME =		openimageio-${V}
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=		OpenImageIO	2.0 # 1.0
 
 CATEGORIES =		graphics devel
 
 HOMEPAGE =		https://sites.google.com/site/openimageio/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

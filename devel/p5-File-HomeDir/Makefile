@@ -4,6 +4,7 @@ COMMENT=		retrieve home directory location
 
 MODULES=		cpan
 DISTNAME=		File-HomeDir-1.00
+REVISION=		0
 CATEGORIES=		devel
 USE_GROFF =		Yes
 

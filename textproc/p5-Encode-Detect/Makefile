@@ -6,7 +6,7 @@ COMMENT =	Encode::Encoding subclass that detects the encoding of data
 
 MODULES =	cpan
 DISTNAME =	Encode-Detect-1.01
-REVISION =	4
+REVISION =	5
 CATEGORIES =	textproc
 USE_GROFF =	Yes
 

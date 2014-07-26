@@ -3,7 +3,7 @@
 COMMENT=	network performance benchmark
 
 DISTNAME=	netperf-2.6.0
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	benchmarks net
 

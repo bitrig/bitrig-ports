@@ -4,12 +4,10 @@ COMMENT=	z-code interpreter for X11 (Infocom game format)
 
 DISTNAME=	xzip182
 PKGNAME=	xzip-1.8.2
-REVISION =	0
+REVISION =	1
 CATEGORIES=     games x11
 
 HOMEPAGE=	http://www.eblong.com/zarf/xzip.html
-
-MAINTAINER=	Carsten Ilchmann <ci2@gmx.net>
 
 # usage restriction and licensing of files by Mark Howell unclear
 # read xzip(6)

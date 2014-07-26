@@ -4,11 +4,9 @@ COMMENT =		library for decoding mod-like music formats
 
 DISTNAME =		libmodplug-0.8.8.4
 CATEGORIES =		audio
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://modplug-xmms.sourceforge.net/
-
-MAINTAINER =		Brian Callahan <bcallah@openbsd.org>
 
 SHARED_LIBS +=          modplug         0.1     # .1.0
 

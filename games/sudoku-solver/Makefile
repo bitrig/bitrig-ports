@@ -3,7 +3,7 @@
 COMMENT=	sudoku puzzle solver with cli, gui, and web ui
 
 DISTNAME=	sudoku-solver-1.0.1
-REVISION=	6
+REVISION=	7
 
 CATEGORIES=    	games www x11
 

@@ -3,7 +3,7 @@
 COMMENT=	3D image rendering package
 
 DISTNAME=	povray-3.6.1
-REVISION=	6
+REVISION=	7
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://www.povray.org/

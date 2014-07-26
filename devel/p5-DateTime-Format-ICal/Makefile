@@ -3,7 +3,7 @@
 COMMENT =	parse and format iCal datetime and duration strings
 
 DISTNAME =	DateTime-Format-ICal-0.09
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	devel
 

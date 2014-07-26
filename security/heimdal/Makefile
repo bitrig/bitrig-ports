@@ -32,8 +32,6 @@ SHARED_LIBS +=  kdc                  2.0      # 2.0
 
 HOMEPAGE=		http://www.h5l.org/
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 

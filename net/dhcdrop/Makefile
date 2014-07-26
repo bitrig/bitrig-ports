@@ -3,12 +3,11 @@
 COMMENT =		testing and/or dropping DHCP server
 
 DISTNAME =		dhcdrop-0.5
+REVISION =		0
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://www.netpatch.ru/dhcdrop.html
-
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,9 +4,8 @@ COMMENT =	programming language designed for orang-utans
 
 MODULES =	cpan
 DISTNAME =	Language-Ook-1.0.2
+REVISION =	0
 CATEGORIES =	lang
-
-MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 HOMEPAGE =	http://www.dangermouse.net/esoteric/ook.html
 

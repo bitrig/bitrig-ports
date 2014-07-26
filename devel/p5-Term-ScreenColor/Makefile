@@ -4,7 +4,7 @@ COMMENT=		screen positioning and coloring module
 
 MODULES=		cpan
 DISTNAME=		Term-ScreenColor-1.09
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 
 HOMEPAGE=		http://p-f-m.sourceforge.net/

@@ -7,15 +7,13 @@ GH_PROJECT =		clojure
 GH_TAGNAME =		${GH_PROJECT}-1.6.0
 GH_COMMIT =		d6baf6e1fb6e2b9ab3e3a459de5ab1d4381938aa
 DISTNAME =		${GH_TAGNAME}
-REVISION =		1
+REVISION =		2
 
 PKG_ARCH =		*
 
 CATEGORIES =		lang
 
 HOMEPAGE =		http://www.clojure.org/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Eclipse Public License EPL 1.0
 PERMIT_PACKAGE_CDROM =	Yes

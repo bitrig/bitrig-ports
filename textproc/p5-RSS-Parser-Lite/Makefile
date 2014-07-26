@@ -3,7 +3,7 @@
 COMMENT =		simple and pure Perl RSS parser
 
 DISTNAME =		RSS-Parser-Lite-0.10
-REVISION =		0
+REVISION =		1
 CATEGORIES =		textproc
 
 # perl

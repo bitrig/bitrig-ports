@@ -4,6 +4,7 @@ COMMENT=	alternative interface to File::Find
 
 MODULES=	cpan
 DISTNAME=	File-Find-Rule-0.33
+REVISION=	0
 CATEGORIES=	devel
 
 # Perl

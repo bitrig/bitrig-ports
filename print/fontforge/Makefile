@@ -6,6 +6,7 @@ COMMENT=		vector font editor/converter
 
 DISTNAME=		fontforge_full-20120731-b
 PKGNAME=		${DISTNAME:S,_full,,:S,-b,,}
+REVISION=		0
 EXTRACT_SUFX=		.tar.bz2
 SHARED_LIBS=		fontforge	4.0 \
 			gdraw		5.1 \
@@ -16,8 +17,6 @@ SHARED_LIBS=		fontforge	4.0 \
 CATEGORIES=		print
 
 HOMEPAGE=		http://fontforge.org/
-
-MAINTAINER=		Matthias Kilian <kili@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT =		n64 emulator video plugin
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
-REVISION =		1
+REVISION =		2
 
 WANTLIB =		GL SDL boost_filesystem boost_system c m png pthread z
 LIB_DEPENDS =		devel/boost devel/sdl graphics/png

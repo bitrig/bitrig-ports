@@ -3,7 +3,7 @@
 COMMENT=	cross-platform makefile tool from TrollTech
 
 DISTNAME=	tmake-1.10
-REVISION =	3
+REVISION =	4
 CATEGORIES=	devel
 
 HOMEPAGE=	http://sourceforge.net/projects/tmake/

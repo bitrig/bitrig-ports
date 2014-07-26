@@ -5,11 +5,10 @@ NOT_FOR_ARCHS =		sparc m88k vax
 COMMENT =		PCI bus configuration register access tools
 
 DISTNAME =		pciutils-3.1.9
+REVISION =		0
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml
-
-MAINTAINER =		Matthieu Herrb <matthieu@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM =	Yes

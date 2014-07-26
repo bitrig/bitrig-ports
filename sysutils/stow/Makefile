@@ -3,12 +3,10 @@
 COMMENT=	manages software package installations with symlinks
 
 DISTNAME=	stow-1.3.3
-REVISION =	1
+REVISION =	2
 CATEGORIES=	sysutils
 
 HOMEPAGE=	https://www.gnu.org/software/stow/stow.html
-
-MAINTAINER=	Andreas Kahari <andreas.kahari@gmail.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

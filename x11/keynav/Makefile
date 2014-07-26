@@ -4,7 +4,7 @@ COMMENT=	turns your keyboard into an fast pointer mover
 
 DISTNAME=	keynav-20080614.01
 PKGNAME=	${DISTNAME:S/.//}
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	x11
 

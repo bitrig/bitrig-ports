@@ -4,6 +4,7 @@ COMMENT =	automatically set and update columns
 
 MODULES =	cpan
 DISTNAME =	DBIx-Class-DynamicDefault-0.03
+REVISION =	0
 CATEGORIES =	databases
 
 # same as perl

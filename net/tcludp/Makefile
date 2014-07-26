@@ -5,11 +5,10 @@ SHARED_ONLY =	Yes
 COMMENT =	Tcl UDP extension
 
 DISTNAME =	tcludp-1.0.8
-REVISION =	0
+REVISION =	1
 SHARED_LIBS =	udp108 0.0
 CATEGORIES =	net
 HOMEPAGE =	http://tcludp.sourceforge.net/
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

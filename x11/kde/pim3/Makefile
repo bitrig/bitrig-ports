@@ -5,7 +5,7 @@ CATEGORIES =		x11 x11/kde productivity
 VERSION =		3.5.10
 DISTNAME =		kdepim-${VERSION}
 PKGSPEC =		kdepim->=3,<4
-REVISION =		20
+REVISION =		21
 
 MODKDE_VERSION =	3.5.8
 

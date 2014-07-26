@@ -5,7 +5,7 @@ EXTRACT_ONLY =
 
 DISTNAME =	de-6.x-1.0
 PKGNAME =	drupal6-de-1.0
-REVISION =	2
+REVISION =	3
 
 post-extract:
 	mkdir -p ${WRKDIST}

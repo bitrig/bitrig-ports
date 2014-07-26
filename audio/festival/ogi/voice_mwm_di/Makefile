@@ -5,6 +5,7 @@ VO=	mwm
 
 COMMENT=	american male voice (MWM)
 DISTNAME=	voice_${VO}_di-2.0
+REVISION=	0
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} voice_convert_di-2.0${EXTRACT_SUFX}
 
 RUN_DEPENDS=	${OGI_US_DEPS}

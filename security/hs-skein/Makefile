@@ -3,7 +3,7 @@
 COMMENT =		a family of cryptographic hash functions
 
 DISTNAME =		skein-0.1.0.9
-REVISION =		1
+REVISION =		2
 CATEGORIES =		security
 
 # BSD3

@@ -6,12 +6,10 @@ COMMENT=		Ruby interface to hyperestraier
 
 DISTNAME=		hyperestraier-1.4.13
 PKGNAME=		ruby-hyperestraier-1.0.0
-REVISION =		22
+REVISION =		23
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://hyperestraier.sourceforge.net/
-
-MAINTAINER=		Jeremy Evans <jeremy@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes

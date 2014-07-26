@@ -7,7 +7,8 @@ VERSION=	1.3.1
 DISTNAME=	freetype-${VERSION}
 PKGNAME-main=	${DISTNAME}
 PKGNAME-doc=	freetype-doc-${VERSION}
-REVISION-main=	3
+REVISION-main=	4
+REVISION-doc=	0
 
 CATEGORIES=	print
 SHARED_LIBS=	ttf	1.3

@@ -5,11 +5,9 @@ COMMENT=		info viewer with lynx-style navigation
 DISTNAME=		pinfo-0.6.9
 CATEGORIES=		textproc devel
 
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		https://alioth.debian.org/frs/?group_id=30592
-
-MAINTAINER=		Marc Espie <espie@openbsd.org>
 
 MASTER_SITES=		https://alioth.debian.org/frs/download.php/latestfile/434/ \
 			ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/

@@ -3,6 +3,7 @@
 COMMENT =		library for bounded channels
 
 DISTNAME =		BoundedChan-1.0.1.0
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

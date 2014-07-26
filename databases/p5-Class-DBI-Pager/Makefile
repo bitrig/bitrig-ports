@@ -4,10 +4,8 @@ COMMENT=	pager utility for Class::DBI
 
 MODULES=	cpan
 DISTNAME=	Class-DBI-Pager-0.08
-REVISION=	1
+REVISION=	2
 CATEGORIES=	databases
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

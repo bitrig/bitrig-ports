@@ -4,10 +4,9 @@ COMMENT=	ex/vi text editor with wide character support
 
 V =		2.1.2
 DISTNAME =	nvi-${V}
+REVISION =	0
 CATEGORIES=	editors
 HOMEPAGE=	https://github.com/lichray/nvi2
-
-MAINTAINER =	Anthony J. Bentley <anthony@cathet.us>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

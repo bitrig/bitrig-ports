@@ -2,7 +2,7 @@
 
 COMMENT=	clone of the commodore 64 game paradroids
 DISTNAME=	freedroid-1.0.2
-REVISION =	0
+REVISION =	1
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=freedroid/}
 

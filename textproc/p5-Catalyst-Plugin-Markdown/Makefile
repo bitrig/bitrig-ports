@@ -4,11 +4,9 @@ COMMENT =	persistent Markdown processor for Catalyst
 
 MODULES =	cpan
 DISTNAME =	Catalyst-Plugin-Markdown-0.01
-REVISION =	0
+REVISION =	1
 CATEGORIES =	textproc
 USE_GROFF =	Yes
-
-MAINTAINER =	Jim Razmus <jim@bonetruck.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM =	Yes

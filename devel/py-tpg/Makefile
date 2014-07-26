@@ -4,7 +4,7 @@ COMMENT=	parser generator in Python
 
 DISTNAME=	TPG-3.1.0
 PKGNAME=	py-${DISTNAME:L}
-REVISION =	5
+REVISION =	6
 CATEGORIES=	devel
 
 HOMEPAGE=	http://christophe.delord.free.fr/en/tpg/

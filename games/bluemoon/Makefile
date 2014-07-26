@@ -2,11 +2,10 @@
 
 COMMENT =	console-based 52-card solitare game
 DISTNAME =	bluemoon-2.12
+REVISION =	0
 CATEGORIES =	games
 
 HOMEPAGE =	http://www.catb.org/~esr/bluemoon/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

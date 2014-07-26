@@ -5,7 +5,7 @@ COMMENT= 	perl extension for emulating troublesome interfaces
 MODULES=	cpan
 
 DISTNAME=	Test-Memory-Cycle-1.04
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # Artistic

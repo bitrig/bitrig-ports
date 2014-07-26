@@ -3,12 +3,10 @@
 COMMENT=		C/C++ source code auditing tool
 
 DISTNAME=		flawfinder-1.27
-REVISION=		4
+REVISION=		5
 CATEGORIES=		devel security
 
 HOMEPAGE=		http://www.dwheeler.com/flawfinder/
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

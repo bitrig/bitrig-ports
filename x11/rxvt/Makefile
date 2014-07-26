@@ -6,9 +6,9 @@ COMMENT-clock=	analog clock for X11 w/appoint. reminder and mail notif
 VER=		2.7.10
 DISTNAME=	rxvt-${VER}
 PKGNAME-main=	rxvt-${VER}
-REVISION-main=	9
+REVISION-main=	10
 PKGNAME-clock=	rclock-${VER}
-REVISION-clock=	2
+REVISION-clock=	3
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rxvt/} \
 		ftp://ftp.fu-berlin.de/unix/X11/terms/rxvt/ \

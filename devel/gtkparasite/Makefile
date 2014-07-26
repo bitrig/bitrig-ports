@@ -3,7 +3,7 @@
 COMMENT =	Gtk debugging tool
 
 DISTNAME =	gtkparasite-0.0.1
-REVISION=	8
+REVISION=	9
 CATEGORIES =	devel
 
 HOMEPAGE =	http://chipx86.github.com/gtkparasite/

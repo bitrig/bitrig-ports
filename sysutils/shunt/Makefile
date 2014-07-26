@@ -3,11 +3,10 @@
 COMMENT=	tools to extend pipe capabilities
 
 DISTNAME=	shunt-1.7.3
+REVISION=	0
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://www.serice.net/shunt/
-
-MAINTAINER=	Josh Grosse <josh@jggimi.homeip.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

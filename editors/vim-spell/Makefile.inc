@@ -6,6 +6,7 @@ LANGS = 	af am bg ca cs cy da de el eo es fo fr ga gd gl he hr hu \
 
 HOMEPAGE = 	http://www.vim.org/
 VERSION = 	7.4
+REVISION =	0
 P = 		${VERSION:C/[\.]//g}
 CATEGORIES = 	editors
 MASTER_SITES = 	http://ftp.vim.org/pub/vim/runtime/spell/ \

@@ -3,11 +3,10 @@
 COMMENT=	programs to aid the PostgreSQL administrator
 
 DISTNAME=	pg-toolbox-3
+REVISION=	0
 CATEGORIES=	databases sysutils
 
 HOMEPAGE=	http://pg-toolbox.projects.postgresql.org/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@raveland.org>
 
 # BSD / Zlib
 PERMIT_PACKAGE_CDROM=	Yes

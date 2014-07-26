@@ -3,7 +3,7 @@
 COMMENT=		Tango icon theme
 
 DISTNAME=		tango-icon-theme-0.8.90
-REVISION=		8
+REVISION=		9
 CATEGORIES=		x11
 
 HOMEPAGE=		http://tango.freedesktop.org/

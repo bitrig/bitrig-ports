@@ -5,7 +5,7 @@ COMMENT= 	automates the Factory design pattern
 MODULES=	cpan
 
 DISTNAME=	Class-Factory-1.02
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # perl

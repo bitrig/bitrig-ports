@@ -3,12 +3,11 @@
 COMMENT =	protect LAN IP address space by ARP spoofing
 
 DISTNAME =	ipguard-1.04
+REVISION =	0
 CATEGORIES =	security
 
 HOMEPAGE =	http://ipguard.deep.perm.ru/
 MASTER_SITES =	${HOMEPAGE}files/
-
-MAINTAINER =	Girish Venkatachalam <girish1729@gmail.com>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM =	Yes

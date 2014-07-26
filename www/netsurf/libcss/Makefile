@@ -4,6 +4,7 @@ COMMENT =		CSS parser and selection engine
 
 NETSURF_PROJECT =	libcss
 NETSURF_VERSION =	0.3.0
+REVISION =		0
 
 SHARED_LIBS =		css 3.0 #0.3.0
 

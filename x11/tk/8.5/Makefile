@@ -4,11 +4,10 @@ COMMENT =		graphical toolkit for Tcl
 
 DISTNAME =		tk8.5.15
 PKGNAME =		tk-8.5.15
-REVISION =		1
+REVISION =		2
 SHARED_LIBS =		tk85 0.12
 CATEGORIES =		x11 x11/tk
 HOMEPAGE =		http://www.tcl.tk/
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,12 +4,11 @@ COMMENT=	Catalyst development tools
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Devel-1.36
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
 
 HOMEPAGE=	http://www.catalystframework.org/
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

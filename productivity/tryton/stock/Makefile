@@ -3,6 +3,7 @@
 MODPY_EGG_VERSION =	3.2.1
 
 TRYTOND_MODULE =	stock
+REVISION =		0
 
 RUN_DEPENDS =		productivity/tryton/company \
 			productivity/tryton/currency \

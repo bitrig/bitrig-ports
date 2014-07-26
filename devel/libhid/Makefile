@@ -3,15 +3,13 @@
 COMMENT =	user-space USB HID access library written in C
 
 DISTNAME =	libhid-0.2.16
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	hid	0.0
 
 CATEGORIES =	devel
 
 HOMEPAGE =	http://libhid.alioth.debian.org/
-
-MAINTAINER =	Jonathan Armani <armani@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes

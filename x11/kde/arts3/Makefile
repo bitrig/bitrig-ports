@@ -38,7 +38,7 @@ CONFIGURE_ARGS +=	${ENABLE_SHARED} \
 			--without-jack \
 			--without-esd
 
-REVISION =	8
+REVISION =	9
 WANTLIB = ICE SM X11 Xext audiofile c glib-2.0 gmodule-2.0 \
 	gthread-2.0 jpeg m mad ogg pcre png pthread sndio \
 	vorbis vorbisenc vorbisfile xcb z mng Xrender Xt Xxf86vm \

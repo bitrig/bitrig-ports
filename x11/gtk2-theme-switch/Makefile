@@ -4,7 +4,7 @@ COMMENT=		switch GTK+2 themes quickly
 
 DISTNAME=		gtk-theme-switch-2.0.0rc2
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
-REVISION=		9
+REVISION=		10
 CATEGORIES=		x11 graphics
 
 HOMEPAGE=		http://www.muhri.net/nav.php3?node=gts

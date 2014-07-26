@@ -4,7 +4,7 @@ COMMENT = 		web development tool
 CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
 DISTNAME =		kdewebdev-${VERSION}
-REVISION =		13
+REVISION =		14
 MODKDE_VERSION =	3.5.8
 PKGSPEC =		kdewebdev->=3,<4
 

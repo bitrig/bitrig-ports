@@ -2,7 +2,7 @@
 
 COMMENT =		fuse-based cryptographic filesystem
 DISTNAME =		encfs-1.7.4
-REVISION =		1
+REVISION =		2
 SHARED_LIBS = 		encfs	0.0	# 6.1
 CATEGORIES =		security
 HOMEPAGE =		http://www.arg0.net/encfs

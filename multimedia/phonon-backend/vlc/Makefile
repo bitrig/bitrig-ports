@@ -2,6 +2,7 @@
 
 COMMENT =	VLC-based Phonon backend
 VERSION =	0.7.1
+REVISION =	0
 DISTNAME =	phonon-backend-vlc-${VERSION}
 
 MASTER_SITES =	${MASTER_SITE_KDE:=stable/phonon/phonon-backend-vlc/${VERSION}/}

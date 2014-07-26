@@ -2,6 +2,7 @@
 
 COMMENT =	KDE text to speech application
 DISTNAME =	jovie-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kttsd	51.0 # 4.7
 

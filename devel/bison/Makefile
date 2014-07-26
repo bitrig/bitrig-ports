@@ -3,7 +3,7 @@
 COMMENT=	GNU parser generator
 
 DISTNAME=	bison-2.3
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=bison/}
 

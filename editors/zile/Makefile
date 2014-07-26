@@ -2,10 +2,9 @@
 
 COMMENT=		lightweight Emacs clone
 DISTNAME=		zile-2.4.11
+REVISION=		0
 CATEGORIES=		editors
 HOMEPAGE=		https://www.gnu.org/software/zile/
-
-MAINTAINER=		Gonzalo L. R. <gonzalo@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

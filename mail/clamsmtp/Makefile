@@ -3,6 +3,7 @@
 COMMENT=	SMTP virus filter
 
 DISTNAME=	clamsmtp-1.10
+REVISION=	0
 CATEGORIES=    	mail
 
 HOMEPAGE=	http://memberwebs.com/stef/software/clamsmtp/

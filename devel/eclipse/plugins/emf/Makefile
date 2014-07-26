@@ -6,11 +6,9 @@ V=			2.2.3
 DISTNAME=		emf-sdo-xsd-SDK-${V}
 PKGNAME=		eclipse-plugin-emf-sdk-${V}
 CATEGORIES+=		java
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE=		http://www.eclipse.org/emf/
-
-MAINTAINER=		Kurt Miller <kurt@openbsd.org>
 
 # Eclipse Public License Version 1.0 (http://www.eclipse.org/legal/epl-v10.html)
 PERMIT_PACKAGE_CDROM=	commercial distribution defend and indemnify clauses

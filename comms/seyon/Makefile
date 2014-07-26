@@ -4,7 +4,7 @@ COMMENT=	communication package for X11
 
 DISTNAME=	Seyon-2.14b
 PKGNAME=	${DISTNAME:L}
-REVISION=	5
+REVISION=	6
 CATEGORIES=	comms x11
 
 MASTER_SITES=	ftp://sipb.mit.edu/pub/seyon/

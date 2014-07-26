@@ -3,10 +3,9 @@
 COMMENT=	.bin/.cue to .iso CD image converter
 
 DISTNAME=	bchunk-1.2.0
+REVISION=	0
 CATEGORIES=	sysutils
 HOMEPAGE=	http://hes.iki.fi/bchunk/
-
-MAINTAINER=	Dave Watson <dave@elephantride.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

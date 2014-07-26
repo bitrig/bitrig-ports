@@ -3,11 +3,10 @@
 COMMENT =		retrieves syskey and extract hashes
 
 DISTNAME =		samdump2-3.0.0
+REVISION =		0
 CATEGORIES =		security
 
 HOMEPAGE =		http://ophcrack.sourceforge.net/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

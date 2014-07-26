@@ -3,13 +3,12 @@
 COMMENT =	easy-to-use minimalistic disassembler library
 
 DISTNAME =	udis86-1.7
+REVISION =	0
 CATEGORIES =	devel
 
 SHARED_LIBS=	udis86		0.0
 
 HOMEPAGE =	http://udis86.sourceforge.net/
-
-MAINTAINER =	Paul Irofti <pirofti@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =		Yes

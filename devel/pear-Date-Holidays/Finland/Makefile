@@ -2,5 +2,6 @@
 
 COMMENT =	Finnish holiday classes for PHP
 HOLNAME =	Finland-0.1.2
+REVISION =	0
 
 .include <bsd.port.mk>

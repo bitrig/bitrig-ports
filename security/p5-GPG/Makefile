@@ -4,7 +4,7 @@ COMMENT=	perl5 interface to GnuPG using scalars
 
 MODULES=	cpan
 DISTNAME=	GPG-0.06
-REVISION=	2
+REVISION=	3
 CATEGORIES=	security
 CPAN_AUTHOR=	MILES
 

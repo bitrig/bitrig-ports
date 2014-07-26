@@ -6,11 +6,9 @@ COMMENT=	modular IRC client with many features (ipv6,socks,proxy)
 
 DISTNAME=	irssi-0.8.16
 CATEGORIES=	net
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.irssi.org/
-
-MAINTAINER=	Wiktor Izdebski <vicviq@gmail.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

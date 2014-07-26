@@ -3,6 +3,7 @@
 COMMENT=	Internet Relay Chat client
 
 VERSION=	20131230
+REVISION=	0
 DISTNAME=	ircii-${VERSION}
 PKGNAME=	ircII-${VERSION}
 CATEGORIES=	net
@@ -13,8 +14,6 @@ MASTER_SITES=	http://ircii.warped.com/ \
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	http://www.eterna.com.au/ircii/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

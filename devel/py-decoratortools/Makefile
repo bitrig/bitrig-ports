@@ -3,6 +3,7 @@
 COMMENT=		class and function decorators
 
 VERSION=		1.8
+REVISION=		0
 DISTNAME=		DecoratorTools-${VERSION}
 PKGNAME=		py-decoratortools-${VERSION}
 

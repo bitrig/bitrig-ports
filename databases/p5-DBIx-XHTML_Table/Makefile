@@ -3,7 +3,7 @@
 COMMENT=	create HTML table from sql queries
 
 DISTNAME=	DBIx-XHTML_Table-1.36
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases www
 MODULES=	cpan
 

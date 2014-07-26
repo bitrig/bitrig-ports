@@ -3,10 +3,9 @@
 COMMENT =		utilities for manipulating XML documents
 
 DISTNAME =		HaXml-1.24
+REVISION =		0
 CATEGORIES =		textproc
 HOMEPAGE =		http://projects.haskell.org/HaXml/
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 WANTLIB =		c m pthread util
 

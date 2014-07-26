@@ -3,6 +3,7 @@
 COMMENT =		only use Sub::Exporter if you need it  
 
 DISTNAME =		Sub-Exporter-Progressive-0.001011
+REVISION =		0
 CATEGORIES =		devel
 
 # perl

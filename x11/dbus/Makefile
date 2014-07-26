@@ -5,6 +5,7 @@
 COMMENT=	message bus system
 
 DISTNAME=	dbus-1.8.6
+REVISION=	0
 EPOCH=		0
 
 SHARED_LIBS +=  dbus-1               11.0     # 11.3
@@ -13,8 +14,6 @@ CATEGORIES=	x11
 DPB_PROPERTIES=	parallel
 
 HOMEPAGE=	http://dbus.freedesktop.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

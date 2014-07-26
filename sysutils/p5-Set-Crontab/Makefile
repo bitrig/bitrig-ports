@@ -4,6 +4,7 @@ COMMENT=	expand crontab(5)-style integer lists
 
 MODULES=	cpan
 DISTNAME=	Set-Crontab-1.03
+REVISION=	0
 CATEGORIES=	sysutils
 
 # perl

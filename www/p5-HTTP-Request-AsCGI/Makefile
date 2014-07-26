@@ -3,10 +3,8 @@
 COMMENT=	setup CGI environment from HTTP::Request
 
 DISTNAME=	HTTP-Request-AsCGI-1.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT=	open-source LDAP software (server, legacy version)
 
 DISTNAME=	openldap-2.3.43
 PKGNAME=	${DISTNAME:S/-/-server-/}
-REVISION=	15
+REVISION=	16
 
 CATEGORIES=	databases net
 

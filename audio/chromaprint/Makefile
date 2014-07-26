@@ -5,6 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		audio fingerprint extraction library
 
 DISTNAME =		chromaprint-1.1
+REVISION =		0
 CATEGORIES =		audio devel
 HOMEPAGE =		https://acoustid.org/chromaprint/
 MASTER_SITES =		https://bitbucket.org/acoustid/chromaprint/downloads/

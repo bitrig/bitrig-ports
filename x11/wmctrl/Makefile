@@ -2,7 +2,7 @@
 
 COMMENT=	interact with an EWMH/NetWM window manager
 DISTNAME=	wmctrl-1.07
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	x11
 MASTER_SITES=	${HOMEPAGE}/dist/

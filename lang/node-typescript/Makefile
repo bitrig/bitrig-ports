@@ -4,9 +4,8 @@ COMMENT =		typed superset of JavaScript
 
 NPM_VERSION =		1.0.1
 NPM_NAME =		typescript
+REVISION =		0
 CATEGORIES =		lang
-
-MAINTAINER =		James Turner <james@calminferno.net>
 
 HOMEPAGE =		http://www.typescriptlang.org/
 

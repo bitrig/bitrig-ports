@@ -5,7 +5,7 @@ COMMENT=	Python Unicode codecs for Chinese charsets
 VERSION=	1.2.0
 DISTNAME=	ChineseCodecs${VERSION}
 PKGNAME=	py-zhCodecs-${VERSION}
-REVISION=	5
+REVISION=	6
 CATEGORIES=    	chinese devel
 
 HOMEPAGE=	http://sourceforge.net/projects/python-codecs/

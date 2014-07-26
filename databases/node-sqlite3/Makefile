@@ -4,10 +4,9 @@ COMMENT =	sqlite3 bindings for Node.js
 
 NPM_VERSION =	2.2.3
 NPM_NAME =	sqlite3
+REVISION =	0
 
 CATEGORIES =	databases
-
-MAINTAINER =	Aaron Bieber <abieber@openbsd.org>
 
 HOMEPAGE =	https://github.com/developmentseed/node-sqlite3
 

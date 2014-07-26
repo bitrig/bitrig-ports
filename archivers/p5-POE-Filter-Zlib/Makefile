@@ -3,7 +3,7 @@
 COMMENT=		POE filter wrapped around Compress::Zlib
 
 DISTNAME=		POE-Filter-Zlib-2.02
-REVISION=		0
+REVISION=		1
 CATEGORIES=		archivers
 
 # perl

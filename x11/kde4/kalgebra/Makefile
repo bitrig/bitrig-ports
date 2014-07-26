@@ -2,6 +2,7 @@
 
 COMMENT =	scientific calculator for KDE
 DISTNAME =	kalgebra-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += GL GLU

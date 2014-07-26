@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		Perl bindings to the GtkImageView image viewer widget
 
 DISTNAME=		Gtk2-ImageView-0.05
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		x11
 

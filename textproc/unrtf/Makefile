@@ -4,7 +4,7 @@ COMMENT=	RTF document converter
 
 VERSION=	0.19.3
 DISTNAME=	unrtf-${VERSION}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 HOMEPAGE=	https://www.gnu.org/software/unrtf/unrtf.html

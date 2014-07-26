@@ -4,8 +4,8 @@ COMMENT =	perl interface to the NTLM authentication mechanism
 
 DISTNAME =	NTLM-1.08
 PKGNAME =	p5-Authen-${DISTNAME}
+REVISION =	0
 CATEGORIES =	security
-MAINTAINER =	Ingo Schwarze <schwarze@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

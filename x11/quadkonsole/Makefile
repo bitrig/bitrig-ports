@@ -3,10 +3,8 @@
 COMMENT=	terminal application that embeds Konsole for KDE
 
 DISTNAME=	quadkonsole-2.0
-REVISION=	12
+REVISION=	13
 CATEGORIES=	x11 x11/kde
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=  Yes

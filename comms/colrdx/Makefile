@@ -3,7 +3,7 @@
 COMMENT=	curses DX cluster watcher
 
 DISTNAME=	colrdx-1.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=    	comms hamradio
 
 HOMEPAGE=	http://www.qsl.net/pg4i/linux/colrdx.html

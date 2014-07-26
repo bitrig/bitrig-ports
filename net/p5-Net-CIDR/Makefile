@@ -4,9 +4,8 @@ COMMENT=	manipulate IPv4/IPv6 netblocks in CIDR notation
 
 MODULES=	cpan
 DISTNAME=	Net-CIDR-0.17
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Matteo Cantoni <matteo.cantoni@gmail.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

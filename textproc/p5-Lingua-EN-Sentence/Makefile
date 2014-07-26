@@ -4,6 +4,7 @@ COMMENT=		module to split text into sentences
 
 MODULES=		cpan
 DISTNAME=		Lingua-EN-Sentence-0.25
+REVISION=		0
 CATEGORIES=		textproc
 
 # Perl

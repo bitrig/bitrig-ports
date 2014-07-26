@@ -5,6 +5,7 @@ COMMENT=		python library to easily handle data structure
 MODPY_EGG_VERSION=	2.1.0
 DISTNAME=		liblarch-${MODPY_EGG_VERSION}
 PKGNAME=		py-liblarch-${MODPY_EGG_VERSION}
+REVISION=		0
 
 CATEGORIES=		devel
 

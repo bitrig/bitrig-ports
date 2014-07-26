@@ -5,7 +5,7 @@ COMMENT =		WSGI utility collection
 MODPY_EGG_VERSION =	0.9.4
 DISTNAME =		Werkzeug-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME:L}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		www devel
 

@@ -5,7 +5,7 @@ COMMENT =		libpcap module for Python
 MODPY_EGG_VERSION =	0.10.5
 DISTNAME =		pcapy-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		7
+REVISION =		8
 
 CATEGORIES =		net devel
 

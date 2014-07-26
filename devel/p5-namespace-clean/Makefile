@@ -4,9 +4,8 @@ COMMENT =	keep imports and functions out of your namespace
 
 MODULES =	cpan
 DISTNAME =	namespace-clean-0.25
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

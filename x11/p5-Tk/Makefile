@@ -9,8 +9,9 @@ MODULES=	cpan
 VERSION=	804.032
 DISTNAME=	Tk-${VERSION}
 PKGNAME-main=	p5-Tk-${VERSION}
-REVISION-main=	0
+REVISION-main=	1
 PKGNAME-demo=	p5-Tk-demo-${VERSION}
+REVISION-demo=	0
 CATEGORIES=	x11 devel
 
 # GPL + custom

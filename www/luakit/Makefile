@@ -6,13 +6,11 @@ COMMENT=	fast, small, webkit based browser written in lua
 
 VERSION=	2012.09.13.rc1
 
-REVISION=	6
+REVISION=	7
 
 DISTNAME=	luakit-${VERSION}
 
 CATEGORIES=	www 
-
-MAINTAINER=	Aaron Bieber <abieber@openbsd.org>
 
 HOMEPAGE=	http://luakit.org
 

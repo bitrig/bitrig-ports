@@ -4,7 +4,7 @@ COMMENT=		object oriented interface to File::Temp::tempdir()
 
 MODULES=		cpan
 DISTNAME=		File-Tempdir-0.02
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # perl

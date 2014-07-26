@@ -5,6 +5,7 @@ NOT_FOR_ARCHS=		${LP64_ARCHS}
 COMMENT=		Unix shell embedded in Scheme
 
 DISTNAME=		scsh-0.6.7
+REVISION=		0
 CATEGORIES=		lang shells
 
 HOMEPAGE=		http://www.scsh.net/

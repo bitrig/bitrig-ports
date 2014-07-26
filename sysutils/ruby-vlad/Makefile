@@ -3,7 +3,7 @@
 COMMENT=		pragmatic application deployment automation
 
 DISTNAME=		vlad-2.0.0
-REVISION =		7
+REVISION =		8
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://rubyhitsquad.com/Vlad_the_Deployer.html

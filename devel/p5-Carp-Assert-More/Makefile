@@ -5,7 +5,7 @@ COMMENT=	convenience wrappers around Carp::Assert
 MODULES=	cpan
 
 DISTNAME=	Carp-Assert-More-1.12
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # perl

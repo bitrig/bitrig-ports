@@ -3,11 +3,10 @@
 COMMENT =	generates ASCII banner art
 
 DISTNAME =	figlet-2.2.5
+REVISION =	0
 CATEGORIES =	misc graphics
 
 HOMEPAGE =	http://www.figlet.org/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

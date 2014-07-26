@@ -3,12 +3,10 @@
 COMMENT=		daemontools alike replacement for init
 
 DISTNAME=		runit-1.7.2
-REVISION=		1
+REVISION=		2
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://www.smarden.org/runit/
-
-MAINTAINER=		Jeremie Courreges-Anglas <jca@wxcvbn.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c 

@@ -3,6 +3,7 @@
 COMMENT=		interface to URL shortening sites
 
 DISTNAME=		WWW-Shorten-3.03
+REVISION=		0
 CATEGORIES=		www
 
 # Artistic 2.0

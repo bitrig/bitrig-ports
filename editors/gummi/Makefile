@@ -3,13 +3,11 @@
 COMMENT =		simple LaTeX editor
 
 DISTNAME =		gummi-0.6.5
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		editors
 
 HOMEPAGE =		http://gummi.midnightcoding.org/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,6 +4,7 @@ COMMENT=	perl interface to the SASL auth framework
 
 MODULES=	cpan
 DISTNAME=	Authen-SASL-2.16
+REVISION=	0
 CATEGORIES=	security
 
 # Perl

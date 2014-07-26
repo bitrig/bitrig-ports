@@ -3,6 +3,7 @@
 COMMENT =		troff to DocBook converter
 
 DISTNAME =		doclifter-2.14
+REVISION =		0
 
 CATEGORIES =		textproc
 

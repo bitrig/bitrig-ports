@@ -4,6 +4,7 @@ COMMENT =	session management for Mojo
 
 MODULES =	cpan
 DISTNAME =	MojoX-Session-0.31
+REVISION =	0
 CATEGORIES =	www
 
 # Perl

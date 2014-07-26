@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; application launching program
 
 DISTNAME=		wmbutton-0.6.1
-REVISION=		0
+REVISION=		1
 CATEGORIES=		x11 x11/windowmaker
 
 HOMEPAGE=		http://greek0.net/~greek0/wmbutton/

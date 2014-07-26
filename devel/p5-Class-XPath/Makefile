@@ -4,10 +4,8 @@ COMMENT=	xpath matching for object trees
 
 MODULES=	cpan
 DISTNAME=	Class-XPath-1.4
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel textproc
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

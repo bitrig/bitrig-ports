@@ -4,10 +4,8 @@ COMMENT=	module for writing rpc servers and clients
 
 MODULES=	cpan
 DISTNAME=	PlRPC-0.2018
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

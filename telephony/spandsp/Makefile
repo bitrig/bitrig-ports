@@ -3,6 +3,7 @@
 COMMENT=	DSP library for telephony
 
 DISTNAME=	spandsp-0.0.6pre21
+REVISION=	0
 CATEGORIES=	telephony
 MASTER_SITES=	${HOMEPAGE}downloads/spandsp/
 EXTRACT_SUFX=	.tgz
@@ -10,8 +11,6 @@ EXTRACT_SUFX=	.tgz
 SHARED_LIBS=	spandsp	6.0
 
 HOMEPAGE=	http://www.soft-switch.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # LGPLv2/GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

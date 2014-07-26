@@ -3,11 +3,10 @@
 COMMENT =		Haskell bindings to gtk+2
 
 DISTNAME =		gtk-0.12.4
+REVISION =		0
 CATEGORIES =		devel x11
 
 HOMEPAGE =		http://www.haskell.org/gtk2hs/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

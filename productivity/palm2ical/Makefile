@@ -3,7 +3,7 @@
 COMMENT =	Palm Databook/Calendar export to iCalendar
 
 DISTNAME =	palm2ical-1.8
-REVISION =	1
+REVISION =	2
 CATEGORIES =	productivity textproc
 
 HOMEPAGE =	http://hepunx.rl.ac.uk/~adye/software/palm/palm2ical/

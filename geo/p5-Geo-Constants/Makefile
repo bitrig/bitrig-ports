@@ -3,7 +3,7 @@
 COMMENT=	perl module that provides geographic constants
 MODULES=	cpan	
 DISTNAME=	Geo-Constants-0.06
-REVISION=	0
+REVISION=	1
 CATEGORIES=	geo
 
 # Perl

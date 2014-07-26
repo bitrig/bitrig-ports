@@ -3,7 +3,7 @@
 COMMENT =		combinators and extra features for Par monads
 
 DISTNAME =		monad-par-extras-0.3.2
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 # BSD3

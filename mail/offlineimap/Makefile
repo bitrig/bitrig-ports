@@ -4,11 +4,10 @@ COMMENT=	powerful IMAP/Maildir synchronization and reader support
 
 MODPY_EGG_VERSION= 6.5.5
 DISTNAME=	offlineimap-${MODPY_EGG_VERSION}
+REVISION=	0
 CATEGORIES=	mail
 
 HOMEPAGE=	http://offlineimap.org/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

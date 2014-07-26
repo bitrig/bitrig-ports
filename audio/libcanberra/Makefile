@@ -14,9 +14,9 @@ PKGNAME-main=	${DISTNAME}
 PKGNAME-gtk=	libcanberra-gtk-${V}
 PKGNAME-gtk3=	libcanberra-gtk3-${V}
 
-REVISION-main=	1
-REVISION-gtk=	2
-REVISION-gtk3=	2
+REVISION-main=	2
+REVISION-gtk=	3
+REVISION-gtk3=	3
 
 SHARED_LIBS +=  canberra             2.0      # 2.5
 SHARED_LIBS +=  canberra-gtk3        1.8      # 1.8
@@ -25,8 +25,6 @@ SHARED_LIBS +=  canberra-gtk         1.0      # 1.8
 CATEGORIES=	audio devel
 
 HOMEPAGE=	http://0pointer.de/lennart/projects/libcanberra/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=   Yes

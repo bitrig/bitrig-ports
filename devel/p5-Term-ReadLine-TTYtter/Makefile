@@ -2,10 +2,8 @@
 
 COMMENT =		Readline Library Wrapper Module for Twitter
 DISTNAME =		Term-ReadLine-TTYtter-1.4
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel perl5
-
-MAINTAINER =		Brian Callahan <bcallah@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,12 +5,10 @@ COMMENT=	3D filesystem visualizer
 V=		1.0.1
 DISTNAME=	fsv2-$V
 PKGNAME=	fsv-$V
-REVISION=	1
+REVISION=	2
 CATEGORIES=     x11
 
 HOMEPAGE=	http://fedorchenko.net/fsv2.php
-
-MAINTAINER=     Kevin Lo <kevlo@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=   Yes

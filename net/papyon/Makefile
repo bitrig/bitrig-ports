@@ -4,7 +4,7 @@ COMMENT=		MSN client library for python
 
 MODPY_EGG_VERSION=	0.5.6
 DISTNAME=		papyon-${MODPY_EGG_VERSION}
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.freedesktop.org/wiki/Software/papyon

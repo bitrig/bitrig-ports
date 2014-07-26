@@ -4,11 +4,9 @@ COMMENT=	module for containing a set of scalars
 
 MODULES=	cpan
 DISTNAME=	Set-Scalar-1.25
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

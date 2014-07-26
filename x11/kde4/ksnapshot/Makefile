@@ -2,6 +2,7 @@
 
 COMMENT =	screen capture program for KDE
 DISTNAME =	ksnapshot-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += ICE SM X11 Xext Xfixes

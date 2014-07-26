@@ -5,7 +5,7 @@ COMMENT =	Xfce4 developer tools and macros
 XFCE_VERSION =	4.10.0
 XFCE_PROJECT =	xfce4-dev-tools
 HOMEPAGE =	http://foo-projects.org/~benny/projects/xfce4-dev-tools/
-REVISION=	2
+REVISION=	3
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

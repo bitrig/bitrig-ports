@@ -8,8 +8,6 @@ CATEGORIES =		games
 
 HOMEPAGE =		http://vegastrike.sourceforge.net/
 
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 

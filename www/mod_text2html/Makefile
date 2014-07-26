@@ -2,7 +2,7 @@
 
 COMMENT=	Apache module designed to replace text/plain handler
 
-REVISION=	8
+REVISION=	9
 DISTNAME=	mod_text2html-1.0
 CATEGORIES=	www
 

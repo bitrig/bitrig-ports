@@ -6,7 +6,7 @@ CATEGORIES=	devel lang
 MASTER_SITES=	http://download.mono-project.com/sources/monodevelop/
 EXTRACT_SUFX=	.tar.bz2
 
-REVISION=	3
+REVISION=	4
 
 HOMEPAGE=	http://monodevelop.com/
 

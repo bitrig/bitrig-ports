@@ -5,10 +5,9 @@ COMMENT =		Haskell binding for the OpenGL Utility Toolkit
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		GLUT-2.4.0.0
+REVISION =		0
 CATEGORIES =		graphics devel
 HOMEPAGE =		http://www.haskell.org/HOpenGL/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

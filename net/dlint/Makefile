@@ -5,7 +5,7 @@ COMMENT=		DNS zone verification tool
 V=			1.4.1
 DISTNAME=		dlint${V}
 PKGNAME=		dlint-${V}
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.domtools.com/

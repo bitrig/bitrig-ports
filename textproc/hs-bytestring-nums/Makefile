@@ -3,11 +3,9 @@
 COMMENT =		parse numeric literals from bytestrings
 
 DISTNAME =		bytestring-nums-0.3.5
-REVISION =		2
+REVISION =		3
 CATEGORIES =		textproc
 HOMEPAGE =		https://github.com/solidsnack/bytestring-nums
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,8 +4,8 @@ COMMENT =		simple and dumb file system watcher
 
 MODULES =		cpan
 DISTNAME =		Filesys-Notify-Simple-0.06
+REVISION =		0
 CATEGORIES =		sysutils
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 BUILD_DEPENDS =		devel/p5-Test-SharedFork
 

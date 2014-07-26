@@ -5,12 +5,11 @@ COMMENT =		downhill racing game
 V =			0.6.0
 DISTNAME =		etr-$V
 PKGNAME =		extremetuxracer-$V
+REVISION =		0
 
 CATEGORIES =		games
 
 HOMEPAGE =		http://sourceforge.net/projects/extremetuxracer/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

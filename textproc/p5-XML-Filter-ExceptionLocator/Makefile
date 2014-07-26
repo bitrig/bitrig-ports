@@ -4,7 +4,7 @@ COMMENT=	add line information to XML parse errors
 
 MODULES=	cpan
 DISTNAME=	XML-Filter-ExceptionLocator-1.00
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc devel
 
 # perl

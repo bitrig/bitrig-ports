@@ -3,6 +3,7 @@
 COMMENT=		library modules for Kicad EDA
 
 DISTNAME=		kicad-library-20110429
+REVISION=		0
 CATEGORIES=		cad
 
 HOMEPAGE=		http://www.kicadlib.org/

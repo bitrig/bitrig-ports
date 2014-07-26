@@ -5,12 +5,10 @@ COMMENT=		netcat enhanced with twofish encryption
 V=			1.2.1
 DISTNAME=		cryptcat-unix-$V
 PKGNAME=		cryptcat-$V
-REVISION =		0
+REVISION =		1
 CATEGORIES=		security
 
 HOMEPAGE=		http://cryptcat.sourceforge.net
-
-MAINTAINER=		Laurent Fanis <laurent@humppa.nl>
 
 # From the README "freely given away
 # with no restrictions except giving credit where it is due"

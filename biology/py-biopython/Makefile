@@ -5,12 +5,10 @@ COMMENT=		Python tools for computational molecular biology
 
 MODPY_EGG_VERSION=	1.50
 DISTNAME=		biopython-${MODPY_EGG_VERSION}
-REVISION =		3
+REVISION =		4
 CATEGORIES=		biology
 
 HOMEPAGE=		http://www.biopython.org/
-
-MAINTAINER=		Will Maier <wcmaier@openbsd.org>
 
 # BSD-like 
 PERMIT_PACKAGE_CDROM=	Yes

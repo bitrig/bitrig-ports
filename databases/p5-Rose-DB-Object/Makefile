@@ -6,7 +6,7 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	Rose-DB-Object-0.784
-REVISION=	1
+REVISION=	2
 CATEGORIES=	databases
 
 # perl

@@ -4,11 +4,10 @@ COMMENT=		proof assistant based on a typed lambda calculus
 
 V=			8.4pl3
 DISTNAME=		coq-$V
+REVISION=		0
 
 CATEGORIES=		math
 HOMEPAGE=		http://coq.inria.fr/
-
-MAINTAINER=		Yozo Toda <yozo@v007.vaio.ne.jp>
 
 # LGPL 2.1
 PERMIT_PACKAGE_CDROM=	Yes

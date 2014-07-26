@@ -3,6 +3,7 @@ COMMENT=	LRU cache in memory with expiry
 
 MODULES=	cpan
 DISTNAME =	Tie-Cache-LRU-Expires-0.55
+REVISION =	0
 CATEGORIES=	devel
 
 BUILD_DEPENDS=	${RUN_DEPENDS}

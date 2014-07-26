@@ -12,15 +12,14 @@ PKGNAME-main =		texworks-${V}
 PKGNAME-lua =		texworks-lua-${V}
 PKGNAME-python =	texworks-python-${V}
 
-REVISION-main =		2
-REVISION-lua =		2
-REVISION-python =	0
+REVISION-main =		3
+REVISION-lua =		3
+REVISION-python =	1
 
 WRKDIST =		${WRKDIR}/texworks-${V}
 
 CATEGORIES =		editors print
 HOMEPAGE =		http://www.tug.org/texworks/
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

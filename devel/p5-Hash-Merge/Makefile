@@ -4,7 +4,7 @@ COMMENT=        merge associative arrays
 
 MODULES=	cpan
 DISTNAME=	Hash-Merge-0.12
-REVISION=	0
+REVISION=	1
 CATEGORIES=     devel
 
 # Perl

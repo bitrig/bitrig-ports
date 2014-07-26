@@ -4,15 +4,13 @@ COMMENT=	publishing and presentation tool
 
 VERSION=	1.1b9
 DISTNAME=	impress-${VERSION}
-REVISION=	1
+REVISION=	2
 DISTFILES=	imp${VERSION}.tar.gz
 CATEGORIES=	misc
 
 MASTER_SITES=	${HOMEPAGE}
 
 HOMEPAGE=	http://www.ntlug.org/~ccox/impress/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

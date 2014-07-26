@@ -4,9 +4,8 @@ COMMENT= 	fast lookup of country codes by IP address
 
 MODULES=	cpan
 DISTNAME=	IP-Country-2.28
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Michael Erdely <merdely@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,10 +3,9 @@
 COMMENT =		interface between perl web frameworks and web servers
 
 MODULES =		cpan
-REVISION =		0
+REVISION =		1
 DISTNAME =		Plack-0.9980
 CATEGORIES =		www
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

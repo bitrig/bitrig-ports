@@ -5,7 +5,7 @@ COMMENT =	OAuth support library for Qt-based applications
 V =		0.97
 DISTNAME =	${V}
 PKGNAME =	kqoauth-${V}
-REVISION=	0
+REVISION=	1
 CATEGORIES =	security devel
 HOMEPAGE =	https://github.com/kypeli/kQOAuth
 

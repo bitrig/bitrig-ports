@@ -3,12 +3,10 @@
 COMMENT=		front-end for dynamips cisco emulator
 
 DISTNAME=		dynagen-0.11.0
-REVISION =		3
+REVISION =		4
 CATEGORIES=		emulators
 
 HOMEPAGE=		http://dynagen.org/
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

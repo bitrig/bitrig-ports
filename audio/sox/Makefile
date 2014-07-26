@@ -3,11 +3,11 @@
 COMMENT=	Sound eXchange, the Swiss Army knife of audio manipulation
 
 DISTNAME=	sox-14.4.1
+REVISION=	0
 SHARED_LIBS +=	sox 3.0 # .2.1
 
 CATEGORIES=	audio
 HOMEPAGE=	http://sox.sourceforge.net/
-MAINTAINER=	Jan Stary <hans@stare.cz>
 
 # code is GPLv2+, however as opencore is under Apache License we must use
 # sox under the terms of GPLv3 to avoid license conflict.

@@ -5,8 +5,7 @@ COMMENT =	Tcl Standard Library
 DISTNAME =	tcllib-1.15pl0
 CATEGORIES =	devel lang/tcl
 HOMEPAGE =	http://sourceforge.net/projects/tcllib/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
-REVISION =	1
+REVISION =	2
 
 # BSD style
 PERMIT_PACKAGE_CDROM =	Yes

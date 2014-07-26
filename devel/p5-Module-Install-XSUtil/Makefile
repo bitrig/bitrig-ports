@@ -3,7 +3,7 @@
 COMMENT =		utility functions for XS modules
 
 DISTNAME =		Module-Install-XSUtil-0.45
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 # perl

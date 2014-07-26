@@ -2,12 +2,10 @@
 
 COMMENT=		send/receive faxes and share modems
 DISTNAME=		hylafax-6.0.6
-REVISION=		3
+REVISION=		4
 CATEGORIES=		comms
 
 HOMEPAGE=		http://www.HylaFAX.org/
-
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 MASTER_SITES=		ftp://ftp.hylafax.org/source/ \
 			ftp://ftp.ntua.gr/pub/net/hylafax/source/ \

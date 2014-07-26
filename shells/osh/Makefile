@@ -3,12 +3,11 @@
 COMMENT =		Sixth Edition UNIX Shell
 
 DISTNAME =		osh-20140410
+REVISION =		0
 
 CATEGORIES =		shells
 
 HOMEPAGE =		http://v6shell.org
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

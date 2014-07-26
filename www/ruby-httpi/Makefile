@@ -3,7 +3,7 @@
 COMMENT =		common interface for Ruby's HTTP libraries
 
 DISTNAME =		httpi-2.1.0
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://httpirb.com/
 

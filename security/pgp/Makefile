@@ -4,7 +4,7 @@ COMMENT=	Pretty Good Privacy 2.6.3ia
 
 DISTNAME=	pgp263is
 PKGNAME=	pgp-2.6.3
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
 
 MASTER_SITES=	http://www.netsw.org/crypto/systems/pgp/ \

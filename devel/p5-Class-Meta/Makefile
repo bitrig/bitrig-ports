@@ -4,6 +4,7 @@ COMMENT=		class automation, introspection and validation
 
 MODULES=		cpan
 DISTNAME=		Class-Meta-0.63
+REVISION=		0
 CATEGORIES=		devel
 USE_GROFF=		Yes
 

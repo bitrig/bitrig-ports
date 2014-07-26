@@ -4,8 +4,8 @@ COMMENT=		interface generator for Haskell to C bindings
 
 V=			0.16.4
 DISTNAME=		c2hs-${V}
+REVISION=		0
 CATEGORIES=		devel
-MAINTAINER=		Matthias Kilian <kili@openbsd.org>
 HOMEPAGE=		http://www.cse.unsw.edu.au/~chak/haskell/c2hs/
 
 MODULES=		lang/ghc converters/libiconv

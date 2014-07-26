@@ -4,14 +4,13 @@ COMMENT=	GM and GS compatible SoundFont bank for MIDI
 
 V=		1.44
 PKGNAME=	generaluser-gs-soundfont-$V
+REVISION=	0
 DISTNAME=	GeneralUser_GS_$V-FluidSynth
 EXTRACT_SUFX=	.zip
 
 CATEGORIES=	audio
 
 HOMEPAGE=	http://www.schristiancollins.com/generaluser.php
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # see LICENSE.TXT
 PERMIT_PACKAGE_CDROM=	probably OK, but disabled on CDs for safety

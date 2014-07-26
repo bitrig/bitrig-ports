@@ -5,7 +5,7 @@ COMMENT=	record and analyze your meals for nutrient composition
 V=		16.12
 DISTNAME=	nut-${V}
 PKGNAME=	nutdb-${V}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	biology
 HOMEPAGE=	http://nut.sourceforge.net/
 

@@ -7,7 +7,7 @@ COMMENT=	tools to test taintedness
 MODULES=	cpan
 DISTNAME=	Test-Taint-1.06
 CATEGORIES=	devel
-REVISION=	0
+REVISION=	1
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

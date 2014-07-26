@@ -4,6 +4,7 @@ SHARED_ONLY =		Yes
 
 COMMENT =		load programs inside browser to view movies, pdfs, etc
 DISTNAME =		mozplugger-1.14.2
+REVISION =		0
 CATEGORIES =		www
 
 HOMEPAGE =		http://mozplugger.mozdev.org/

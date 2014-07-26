@@ -3,7 +3,7 @@
 COMMENT=		stylish window manager
 
 DISTNAME=		wm2-4
-REVISION=		1
+REVISION=		2
 CATEGORIES=		x11
 
 HOMEPAGE=		http://www.all-day-breakfast.com/wm2/

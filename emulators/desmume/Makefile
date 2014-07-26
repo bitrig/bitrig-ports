@@ -6,11 +6,9 @@ DISTNAME =	desmume-0.9.10
 
 CATEGORIES =	emulators
 
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://desmume.org/
-
-MAINTAINER =	Anthony J. Bentley <anthony@cathet.us>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes

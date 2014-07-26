@@ -8,8 +8,8 @@ DISTNAME=		mdbtools-${DATE}
 PKGNAME-main=		mdbtools-${DATE}
 PKGNAME-gmdb=		gmdb-${DATE}
 
-REVISION-main=		9
-REVISION-gmdb=		15
+REVISION-main=		10
+REVISION-gmdb=		16
 
 CATEGORIES=		databases converters
 HOMEPAGE=		http://mdbtools.sourceforge.net/

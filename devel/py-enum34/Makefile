@@ -5,6 +5,7 @@ COMMENT =	Python 3.4 Enum backported to previous versions
 MODPY_EGG_VERSION = 1.0
 DISTNAME =	enum34-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 
 CATEGORIES =	devel
 

@@ -3,7 +3,7 @@
 COMMENT =	Ruby interface to nmap scan data
 
 DISTNAME =	nmap-parser-0.3.2
-REVISION =	6
+REVISION =	7
 CATEGORIES =	net
 
 HOMEPAGE =	http://rubynmap.sourceforge.net/

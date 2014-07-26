@@ -5,7 +5,7 @@ COMMENT=		Markdown implementation for PHP
 DISTNAME=		php-markdown-1.0.1n
 CATEGORIES=		www
 
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://michelf.com/projects/php-markdown/
 

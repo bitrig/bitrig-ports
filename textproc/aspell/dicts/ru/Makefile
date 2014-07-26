@@ -3,6 +3,7 @@
 COMMENT=	aspell dictionary for Russian
 CATEGORIES=	textproc
 DISTNAME=	aspell6-ru-0.99f7-1
+REVISION=	0
 MASTER_SITES=	${MASTER_SITE_GNU:=aspell/dict/ru/}
 
 # dubious: wordlist has no copyright nor license

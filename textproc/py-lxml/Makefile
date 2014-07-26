@@ -5,6 +5,7 @@ COMMENT=	Python binding for the libxml2 and libxslt libraries
 MODPY_EGG_VERSION=	3.3.5
 DISTNAME=	lxml-${MODPY_EGG_VERSION}
 PKGNAME=	py-lxml-${MODPY_EGG_VERSION}
+REVISION=	0
 CATEGORIES=	textproc devel
 
 HOMEPAGE=	http://lxml.de/

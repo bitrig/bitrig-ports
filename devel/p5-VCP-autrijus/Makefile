@@ -5,12 +5,10 @@ COMMENT=	tool for copying resources between repositories
 MODULES=	cpan
 DISTNAME=	VCP-autrijus-snapshot-0.9-20050110
 PKGNAME=	p5-VCP-autrijus-0.9
-REVISION =	1
+REVISION =	2
 CATEGORIES=	devel
 CPAN_AUTHOR=	AUTRIJUS
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

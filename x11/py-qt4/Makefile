@@ -10,8 +10,8 @@ DISTNAME=	PyQt-x11-gpl-${V}
 PKGNAME=	py-qt4-${V}
 PKGNAME-main=	py-qt4-${V}
 PKGNAME-docs=	py-qt4-docs-${V}
-REVISION-main=	0
-REVISION-docs=	0
+REVISION-main=	1
+REVISION-docs=	1
 EPOCH=		0
 
 CATEGORIES=	x11 devel

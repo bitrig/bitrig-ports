@@ -21,9 +21,12 @@ PKGNAME-mysql=		bacula-mysql-$V
 PKGNAME-pgsql=		bacula-pgsql-$V
 PKGNAME-sqlite3=	bacula-sqlite3-$V
 
-REVISION-server=	3
-REVISION-main=		1
-REVISION-bat=		1
+REVISION-server=	4
+REVISION-main=		2
+REVISION-bat=		2
+REVISION-mysql=		0
+REVISION-pgsql=		0
+REVISION-sqlite3=	0
 
 CATEGORIES=		sysutils
 
@@ -40,9 +43,6 @@ SHARED_LIBS +=  baccats-sqlite3      ${BACCATS_LIBV}
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=bacula/}
 HOMEPAGE=		http://www.bacula.org/
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org> \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 WANTLIB += c pthread crypto ssl z m
 WANTLIB += c++ c++abi

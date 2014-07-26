@@ -4,7 +4,7 @@ COMMENT=	intepreter for Lindenmayer-systems
 
 # CVS checkout on 04-30-2010
 DISTNAME=	lsys-0.8
-REVISION=	0
+REVISION=	1
 CATEGORIES=	graphics math
 
 HOMEPAGE=	http://software.schmorp.de/pkg/lsys

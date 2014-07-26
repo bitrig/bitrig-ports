@@ -22,8 +22,6 @@ SHARED_LIBS=	mysqlclient_r	${LIB_VERSION}.0 \
 
 HOMEPAGE=	http://mariadb.org/
 
-MAINTAINER=	Brad Smith <brad@comstyle.com>
-
 # GPLv2 and LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 

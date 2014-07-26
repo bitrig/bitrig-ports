@@ -3,12 +3,11 @@
 COMMENT	=	spaced learning system
 
 DISTNAME =	anki-2.0.20
+REVISION =	0
 
 CATEGORIES =	education
 
 HOMEPAGE =	http://ankisrs.net/
-
-MAINTAINER =	Federico G. Schwindt <fgsch@openbsd.org>
 
 # AGPL3
 PERMIT_PACKAGE_CDROM =	Yes

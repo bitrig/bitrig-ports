@@ -2,10 +2,10 @@
 
 COMMENT =		Commodore tape image cleaning utility
 DISTNAME =		tapclean-20130522
+REVISION =		0
 CATEGORIES =		misc
 
 HOMEPAGE =		http://sourceforge.net/projects/tapclean/
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

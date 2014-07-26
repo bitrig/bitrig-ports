@@ -4,7 +4,7 @@ COMMENT=	convert text to HTML with controlling options
 
 MODULES=	cpan
 DISTNAME=	HTML-FromText-2.05
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 
 RUN_DEPENDS=	textproc/p5-Email-Find devel/p5-Exporter-Lite

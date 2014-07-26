@@ -3,9 +3,8 @@
 COMMENT=	processes logfiles and perform certain actions
 
 DISTNAME=	logsurfer-1.8
+REVISION=	0
 CATEGORIES=	security
-
-MAINTAINER=     Jakob Schlyter <jakob@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c

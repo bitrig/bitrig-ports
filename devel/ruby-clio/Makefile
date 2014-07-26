@@ -3,7 +3,7 @@
 COMMENT=		Ruby library for creating command line tools
 
 DISTNAME=		clio-0.3.0
-REVISION=		7
+REVISION=		8
 CATEGORIES=		devel
 
 # LGPLv3

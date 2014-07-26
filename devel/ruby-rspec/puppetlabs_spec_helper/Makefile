@@ -2,9 +2,7 @@
 
 COMMENT=		rake tasks and spec_helper for Puppet modules spec tests
 DISTNAME=		puppetlabs_spec_helper-0.4.1
-REVISION=		2
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
+REVISION=		3
 
 BUILD_DEPENDS=		${RUN_DEPENDS}
 RUN_DEPENDS=		devel/ruby-mocha,${MODRUBY_FLAVOR}>=0.10.5 \

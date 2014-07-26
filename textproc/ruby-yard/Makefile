@@ -3,6 +3,7 @@
 COMMENT=	Ruby documentation tool
 
 DISTNAME=	yard-0.8.7.3
+REVISION=	0
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://yardoc.org/

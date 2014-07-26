@@ -7,6 +7,7 @@ DISTFILES =	SqueakV39.sources.gz
 EXTRACT_ONLY =
 NO_BUILD =	Yes
 DISTNAME =	squeak-sources-${SOURCEV}
+REVISION =	0
 PKG_ARCH = *
 MASTER_SITES =	${SQUEAK_SITE}
 

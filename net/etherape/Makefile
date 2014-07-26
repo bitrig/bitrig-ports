@@ -4,11 +4,9 @@ COMMENT =		graphical network monitor
 
 DISTNAME =		etherape-0.9.13
 CATEGORIES =		net
-REVISION =		1
+REVISION =		2
 
 HOMEPAGE =		http://etherape.sourceforge.net/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

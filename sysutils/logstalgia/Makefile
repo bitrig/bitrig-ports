@@ -3,11 +3,9 @@
 COMMENT =	website access log visualization
 
 DISTNAME =	logstalgia-1.0.3
-REVISION =	1
+REVISION =	2
 CATEGORIES =	sysutils graphics
 HOMEPAGE =	https://code.google.com/p/logstalgia/
-
-MAINTAINER =	Gonzalo L. R. <gonzalo@x61.com.ar>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

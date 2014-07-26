@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	QNX Photon inspired theme for KDE
 
 DISTNAME=	qinx-1.4
-REVISION=	7
+REVISION=	8
 
 CATEGORIES=	x11 x11/kde
 MASTER_SITES=	http://www.usermode.org/code/

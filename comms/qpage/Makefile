@@ -3,7 +3,7 @@
 COMMENT=	SNPP client/server (alphanum pager software)
 
 DISTNAME=	qpage-3.3
-REVISION=	1
+REVISION=	2
 CATEGORIES=	comms
 
 # custom; see LICENSE

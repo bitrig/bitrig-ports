@@ -5,12 +5,10 @@ COMMENT=	LZMA compression and decompression tools
 DISTNAME=	xz-5.0.5
 SHARED_LIBS=	lzma                 1.0      # .5.5
 CATEGORIES=	archivers
-REVISION =	0
+REVISION =	1
 DPB_PROPERTIES=	parallel
 
 HOMEPAGE=	http://tukaani.org/xz/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

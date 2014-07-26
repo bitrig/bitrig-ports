@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	image processing tools with stable ABI
 
 DISTNAME=	GraphicsMagick-1.3.19
-REVISION=	1
+REVISION=	2
 CATEGORIES=	graphics devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=graphicsmagick/}
 EXTRACT_SUFX=	.tar.xz
@@ -15,8 +15,6 @@ SHARED_LIBS=	GraphicsMagick		4.1 \
 		GraphicsMagickWand	3.1 \
 
 HOMEPAGE=	http://www.graphicsmagick.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # http://www.graphicsmagick.org/www/Copyright.html
 PERMIT_PACKAGE_CDROM=	Yes

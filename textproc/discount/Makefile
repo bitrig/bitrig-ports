@@ -3,11 +3,10 @@
 COMMENT =		fast C implementation of Markdown
 
 DISTNAME =		discount-1.6.6
+REVISION =		0
 CATEGORIES =		textproc
 
 HOMEPAGE =		http://www.pell.portland.or.us/~orc/Code/markdown/
-
-MAINTAINER =		Scott Vokes <vokes.s@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

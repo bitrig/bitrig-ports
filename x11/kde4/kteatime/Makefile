@@ -2,6 +2,7 @@
 
 COMMENT =	simple timer tray app for KDE
 DISTNAME =	kteatime-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	productivity
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdetoys/kteatime

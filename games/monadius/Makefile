@@ -4,6 +4,7 @@ COMMENT =		Gradius clone
 
 DISTNAME =		Monadius-0.99
 PKGNAME =		${DISTNAME:L}
+REVISION =		0
 CATEGORIES =		games
 HOMEPAGE =		http://www.geocities.jp/takascience/haskell/monadius_en.html
 

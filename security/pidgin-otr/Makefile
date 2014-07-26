@@ -3,6 +3,7 @@
 COMMENT =	allows deniable private conversations using Pidgin
 
 DISTNAME =	pidgin-otr-4.0.0
+REVISION =	0
 CATEGORIES =	security net
 EPOCH =		0
 

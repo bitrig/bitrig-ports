@@ -4,6 +4,7 @@ COMMENT =	add-on for creating *nix daemons
 
 NPM_VERSION =	1.1.0
 NPM_NAME =	daemon
+REVISION =	0
 CATEGORIES =	sysutils devel
 
 HOMEPAGE =	https://github.com/indexzero/daemon.node/

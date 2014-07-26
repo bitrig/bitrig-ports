@@ -2,7 +2,7 @@
 
 COMMENT=		minimal interface to Readline
 DISTNAME=		Term-ReadLine-Perl-1.0302
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel perl5
 
 # perl

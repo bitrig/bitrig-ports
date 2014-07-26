@@ -3,12 +3,10 @@
 COMMENT=		Squid Analysis Report Generator
 
 DISTNAME=		sarg-2.3.8
-REVISION=		0
+REVISION=		1
 CATEGORIES=		www
 
 HOMEPAGE=		http://sarg.sourceforge.net/
-
-MAINTAINER=		Robert Peichaer <rpe@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

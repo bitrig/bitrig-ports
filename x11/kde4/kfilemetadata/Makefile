@@ -2,6 +2,7 @@
 
 COMMENT =	file metadata extraction library for KDE
 DISTNAME =	kfilemetadata-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	sysutils
 HOMEPAGE =	https://projects.kde.org/projects/kde/kdelibs/kfilemetadata

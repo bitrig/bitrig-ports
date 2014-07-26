@@ -3,7 +3,7 @@
 COMMENT=	hides idle X11 cursor
 
 DISTNAME=	unclutter-8
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=utilities/}

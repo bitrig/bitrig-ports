@@ -3,7 +3,7 @@
 COMMENT=		abstract syntax, lexer, parser and pretty printer
 
 DISTNAME=		haskell-src-exts-1.13.3
-REVISION=		1
+REVISION=		2
 CATEGORIES=		lang devel
 
 # 3-clause BSD

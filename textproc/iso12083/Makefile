@@ -3,6 +3,7 @@
 COMMENT=	SGML DTDs from The Electronic Publishing SIG
 
 DISTNAME=	iso12083-1993
+REVISION=	0
 CATEGORIES=	textproc
 
 MASTER_SITES=	ftp://info.ex.ac.uk/pub/SGML/ISO-12083/ \

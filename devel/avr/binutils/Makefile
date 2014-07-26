@@ -5,7 +5,7 @@ COMMENT=	Atmel AVR 8-bit RISC microcontrollers' GNU binutils
 VER=		2.20
 DISTNAME=	binutils-${VER}
 PKGNAME=	avr-binutils-${VER}
-REVISION=	2
+REVISION=	3
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	https://www.gnu.org/software/binutils/

@@ -3,7 +3,7 @@
 COMMENT=	remote identd fingerprinting tool
 
 DISTNAME=	ldistfp-0.1.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net security
 
 MASTER_SITES=	${MASTER_SITE_PACKETSTORM:=UNIX/misc/}

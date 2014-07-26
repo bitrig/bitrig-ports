@@ -3,7 +3,7 @@
 COMMENT =	bind keys or mouse buttons to shell commands under X11
 DISTNAME =	xbindkeys-1.8.5
 CATEGORIES =	x11
-REVISION =	3
+REVISION =	4
 
 HOMEPAGE =	http://www.nongnu.org/xbindkeys/xbindkeys.html
 

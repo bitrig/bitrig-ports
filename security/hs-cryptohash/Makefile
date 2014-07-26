@@ -3,10 +3,8 @@
 COMMENT=		fast, pure, practical collection of crypto hashes
 
 DISTNAME=		cryptohash-0.7.0
-REVISION=		4
+REVISION=		5
 CATEGORIES=		security
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

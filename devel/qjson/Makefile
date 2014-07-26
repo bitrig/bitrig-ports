@@ -5,7 +5,7 @@ CATEGORIES =	devel
 COMMENT=	Qt-based library that maps JSON data to QVariant objects
 DISTNAME =	qjson-0.8.1
 HOMEPAGE =	http://qjson.sourceforge.net/
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	qjson	0.0
 

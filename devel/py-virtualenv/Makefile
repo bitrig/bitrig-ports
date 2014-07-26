@@ -3,7 +3,7 @@
 COMMENT =		virtual Python environment builder
 
 MODPY_EGG_VERSION =	1.11.4
-REVISION =		2
+REVISION =		3
 DISTNAME =		virtualenv-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		devel

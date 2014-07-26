@@ -3,11 +3,9 @@
 COMMENT=	analyze terminal control sequences
 
 DISTNAME=	teseq-1.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	misc
 HOMEPAGE=	https://www.gnu.org/software/teseq/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,10 +3,9 @@
 COMMENT=	GTK-based scientific calculator
 
 DISTNAME=	galculator-2.1.3
+REVISION=	0
 CATEGORIES=	math
 HOMEPAGE=	http://galculator.sourceforge.net/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

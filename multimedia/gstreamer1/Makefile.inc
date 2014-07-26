@@ -25,8 +25,6 @@ CATEGORIES ?=		multimedia devel
 
 HOMEPAGE ?=		http://gstreamer.freedesktop.org/
 
-MAINTAINER ?=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 GST_PKGNAME_PREFIX=	gstreamer1
 
 # GPLv2 - GPLv2+ - LGPLv2

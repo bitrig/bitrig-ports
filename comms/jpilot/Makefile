@@ -3,7 +3,7 @@
 COMMENT=	desktop organizer software for the palm pilot
 
 DISTNAME=	jpilot-1.8.0
-REVISION=	5
+REVISION=	6
 CATEGORIES=	comms
 
 MASTER_SITES=	${HOMEPAGE}

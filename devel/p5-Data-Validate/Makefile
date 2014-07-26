@@ -3,11 +3,9 @@
 COMMENT =		common perl data validation methods
 
 DISTNAME =		Data-Validate-0.08
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

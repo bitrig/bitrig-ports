@@ -4,7 +4,7 @@ COMMENT =	datetime sets and set math
 
 MODULES =	cpan
 DISTNAME =	DateTime-Set-0.28
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 USE_GROFF =	Yes
 

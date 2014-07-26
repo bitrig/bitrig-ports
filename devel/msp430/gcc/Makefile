@@ -3,7 +3,7 @@
 TOOL=			gcc
 TOOL_V= 		4.6.3
 
-REVISION=		1
+REVISION=		2
 
 GNU_TOOL=		Yes
 

@@ -3,12 +3,11 @@
 COMMENT= 	connection pool server for PostgreSQL
 
 DISTNAME= 	pgpool-II-3.2.3
+REVISION= 	0
 
 CATEGORIES= 	databases
 
 HOMEPAGE= 	http://www.pgpool.net/
-
-MAINTAINER= 	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 SHARED_LIBS=  pcp	0.0
 

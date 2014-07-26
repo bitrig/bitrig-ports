@@ -3,7 +3,7 @@
 COMMENT =		Haskell 98 contravariant functors
 
 DISTNAME =		contravariant-0.2.0.2
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 
 # BSD3

@@ -3,7 +3,7 @@
 COMMENT=	C routines for computing the Discrete Fourier Transform
 
 DISTNAME=	fftw-2.1.5
-REVISION=	2
+REVISION=	3
 SHARED_LIBS=	fftw	2.7 \
 		rfftw	2.7
 CATEGORIES=	math

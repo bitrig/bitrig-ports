@@ -6,7 +6,7 @@ V=		4.3-1
 DISTNAME=	phpvirtualbox-${V}
 PKGNAME=	phpvirtualbox-${V:S/-/./}
 EXTRACT_SUFX=	.zip
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	www sysutils
 

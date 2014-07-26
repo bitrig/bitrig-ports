@@ -5,15 +5,13 @@ BROKEN-alpha =	ICE hp5590.c:1141: error: unrecognizable insn
 COMMENT=	API for accessing scanners, backends
 
 DISTNAME=	sane-backends-1.0.24
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS +=  sane                 2.0      # unknown
 
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://www.sane-project.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

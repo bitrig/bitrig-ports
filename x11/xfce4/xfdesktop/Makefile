@@ -4,7 +4,7 @@ COMMENT=	Xfce4 desktop manager
 
 XFCE_PROJECT=	xfdesktop
 XFCE_VERSION =	4.10.2
-REVISION =	1
+REVISION =	2
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,6 +4,7 @@ COMMENT=		clutter GStreamer integration library
 
 GNOME_PROJECT=		clutter-gst
 GNOME_VERSION=		2.0.12
+REVISION=		0
 
 API_VERSION=		2.0
 

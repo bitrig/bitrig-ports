@@ -4,10 +4,9 @@ COMMENT=	perl implementation of XML-RPC
 
 MODULES=	cpan
 DISTNAME=	RPC-XML-0.76
+REVISION=	0
 CATEGORIES=	net devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Sean Comeau <scomeau@obscurity.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

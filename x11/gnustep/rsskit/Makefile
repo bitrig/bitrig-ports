@@ -3,7 +3,7 @@
 COMMENT =	framework for reading different types of RSS formats
 
 DISTNAME =	RSSKit-0.4
-REVISION =	3
+REVISION =	4
 
 SHARED_LIBS +=	RSSKit	0.0
 

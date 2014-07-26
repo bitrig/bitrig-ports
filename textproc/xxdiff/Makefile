@@ -3,7 +3,7 @@
 COMMENT=	graphical file comparator and merge tool
 
 DISTNAME=	xxdiff-3.1
-REVISION=	5
+REVISION=	6
 CATEGORIES=	textproc x11
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=xxdiff/}
 

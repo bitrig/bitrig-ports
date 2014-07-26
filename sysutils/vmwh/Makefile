@@ -7,11 +7,11 @@ COMMENT=	vmware userland helper for X
 V=		1.1
 DISTNAME=	v${V}
 PKGNAME=	vmwh-${V}
+REVISION=	0
 EPOCH=		0
 CATEGORIES=	sysutils x11
 
 HOMEPAGE=	https://github.com/jcs/vmwh/
-MAINTAINER=	joshua stein <jcs@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

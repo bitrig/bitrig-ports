@@ -3,6 +3,7 @@
 COMMENT =		implementations of freedesktop.org specifications
 
 DISTNAME =		efreet-1.7.9
+REVISION =		0
 EPOCH =			2
 
 SO_VERSION =		3.0	# 8.6

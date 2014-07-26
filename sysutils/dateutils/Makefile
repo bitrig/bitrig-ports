@@ -3,6 +3,7 @@
 COMMENT =		tools to fiddle with dates and times
 
 DISTNAME =		dateutils-0.2.7
+REVISION =		0
 
 CATEGORIES =		sysutils
 

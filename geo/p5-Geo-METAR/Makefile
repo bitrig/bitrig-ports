@@ -3,7 +3,7 @@
 COMMENT=	process aviation weather reports in the METAR format
 MODULES=	cpan
 DISTNAME=	Geo-METAR-1.15
-REVISION=	0
+REVISION=	1
 CATEGORIES=	geo
 
 # Perl

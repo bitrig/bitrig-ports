@@ -3,7 +3,7 @@
 COMMENT=	Canadian English male speaker (JMK), cstr
 DISTNAME=	festvox_cstr_us_jmk_arctic_multisyn-1.0
 PKGNAME=	${DISTNAME}
-REVISION=	1
+REVISION=	2
 DIST_SUBDIR=	festival
 
 RUN_DEPENDS=	${ARCTIC_US_DEPS}

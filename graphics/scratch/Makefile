@@ -4,10 +4,9 @@ COMMENT =	visual programming environment and toolkit
 
 DISTNAME =	${PKGNAME}.src
 PKGNAME =	scratch-1.4.0.7
-REVISION =	0
+REVISION =	1
 CATEGORIES =	graphics
 HOMEPAGE =	http://scratch.mit.edu/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # GPLv2 / MIT / Creative Commons (CC BY-SA 3.0)
 PERMIT_PACKAGE_CDROM =	Yes

@@ -7,9 +7,7 @@ COMMENT=	calculate the similarity of two strings
 MODULES=	cpan
 DISTNAME =	String-Similarity-1.04
 CATEGORIES=	textproc
-REVISION =	0
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
+REVISION =	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes

@@ -3,7 +3,7 @@
 COMMENT=	GUI for manipulating BibTeX bibliography databases
 
 DISTNAME=	bibview-2.2
-REVISION=	3
+REVISION=	4
 CATEGORIES=	databases print
 
 PERMIT_PACKAGE_CDROM=	Yes

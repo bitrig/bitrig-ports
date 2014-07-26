@@ -10,15 +10,13 @@ PKGNAME-main=	fvwm2+fvicons-${VERSION}
 FULLPKGNAME-fvicons=fvicons-${VERSION}
 PKGNAME-fvwm2=	fvwm2-${VERSION}
 
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=     x11
 
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} fvwm_icons-20070101.tar.gz
 
 HOMEPAGE=	http://www.fvwm.org/
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 # GPL/BSD-like (badly worded)
 PERMIT_PACKAGE_CDROM=	Yes

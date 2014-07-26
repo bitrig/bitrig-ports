@@ -3,11 +3,11 @@
 COMMENT=		free Norton Commander clone with many useful features
 
 DISTNAME=		mc-4.8.12
+REVISION=		0
 CATEGORIES=		misc
 
 HOMEPAGE=		http://www.midnight-commander.org/
 MASTER_SITES=		${HOMEPAGE}downloads/
-MAINTAINER=		Robert Nagy <robert@openbsd.org>
 
 EXTRACT_SUFX=		.tar.xz
 

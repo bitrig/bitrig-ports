@@ -5,7 +5,7 @@ COMMENT=	distributed document delivery client
 V=		3.0.11
 DISTNAME=	gopher_${V}
 PKGNAME=	gopher-${V}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 
 HOMEPAGE=	http://quux.org/devel/gopher/Downloads/

@@ -4,7 +4,7 @@ COMMENT=	display all (ok, most of) the colors in the universe
 
 DISTNAME=	xcolors
 PKGNAME=	xcolors-1.3
-REVISION=	3
+REVISION=	4
 CATEGORIES=	x11
 
 MASTER_SITES=	ftp://ftp.tut.ac.jp/X11/X11R6/contrib/programs/ \

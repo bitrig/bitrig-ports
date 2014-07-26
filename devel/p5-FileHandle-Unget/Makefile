@@ -4,10 +4,8 @@ COMMENT=	filehandle which supports ungetting of multiple bytes
 
 MODULES=	cpan
 DISTNAME=	FileHandle-Unget-0.1623
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

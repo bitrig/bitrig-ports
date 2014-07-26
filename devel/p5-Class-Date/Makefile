@@ -6,10 +6,8 @@ COMMENT=	module for easy date and time manipulation
 
 MODULES=	cpan
 DISTNAME=	Class-Date-1.1.9
-REVISION=	4
+REVISION=	5
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

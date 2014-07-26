@@ -4,6 +4,7 @@ COMMENT=	obfuscate passwords for VMware RemoteDisplay.vnc.key
 
 DISTNAME=	vncpassword
 PKGNAME=	vmware-vncpasswd-0.0
+REVISION=	0
 
 CATEGORIES=	misc
 

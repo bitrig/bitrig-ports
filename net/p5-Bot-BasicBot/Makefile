@@ -4,7 +4,7 @@ COMMENT =	simple irc bot baseclass
 
 MODULES =	cpan
 DISTNAME =	Bot-BasicBot-0.84
-REVISION =	0
+REVISION =	1
 CATEGORIES =	net
 USE_GROFF =	Yes
 

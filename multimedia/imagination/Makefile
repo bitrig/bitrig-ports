@@ -4,13 +4,11 @@ SHARED_ONLY =		Yes
 
 COMMENT =		lightweight and simple DVD slide show maker
 DISTNAME =		imagination-3.0
-REVISION =		2
+REVISION =		3
 
 CATEGORIES =		multimedia
 
 HOMEPAGE =		http://imagination.sf.net
-
-MAINTAINER =		Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

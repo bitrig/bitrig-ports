@@ -3,6 +3,7 @@
 COMMENT =	DataObjects driver for SQLite3
 
 VERSION =	0.10.14
+REVISION =	0
 DISTNAME =	do_sqlite3-${VERSION}
 CATEGORIES =	databases
 

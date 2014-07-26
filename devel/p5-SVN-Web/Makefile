@@ -4,7 +4,7 @@ COMMENT=	subversion repository web frontend
 
 MODULES=	cpan
 DISTNAME=	SVN-Web-0.48
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel perl5
 
 # Artistic

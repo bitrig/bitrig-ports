@@ -3,7 +3,7 @@
 COMMENT=		UUID generator
 
 DISTNAME=		uuid-2.3.7
-REVISION =		0
+REVISION =		1
 CATEGORIES=		devel
 
 HOMEPAGE=		https://github.com/assaf/uuid

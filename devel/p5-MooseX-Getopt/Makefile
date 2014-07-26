@@ -4,10 +4,9 @@ COMMENT=		Moose role for processing command line options
 
 MODULES=		cpan
 DISTNAME=		MooseX-Getopt-0.62
+REVISION=		0
 CATEGORIES=		devel
 USE_GROFF =		Yes
-
-MAINTAINER=		Jim Razmus II <jim@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

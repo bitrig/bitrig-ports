@@ -6,7 +6,7 @@ V=		2.4
 DISTNAME=	commons-io-$V-src
 PKGNAME=	${DISTNAME:S/-src//}
 CATEGORIES=	devel
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://commons.apache.org/io/
 

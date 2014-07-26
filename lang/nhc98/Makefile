@@ -9,9 +9,9 @@ BROKEN=		http://marc.info/?l=openbsd-ports&m=138867760408976&w=2
 
 V=		1.22
 DISTNAME=	nhc98-$V
+REVISION=	0
 CATEGORIES=	lang
 HOMEPAGE=	http://www.haskell.org/nhc98/
-MAINTAINER=	Matthias Kilian <kili@openbsd.org>
 
 MASTER_SITES=	${HOMEPAGE}
 

@@ -3,13 +3,11 @@
 COMMENT=	open source standalone flash(tm) player
 
 DISTNAME=	flash-0.4.10
-REVISION =	1
+REVISION =	2
 CATEGORIES=	graphics	
 EXTRACT_SUFX=	.tgz
 
 HOMEPAGE=	http://www.swift-tools.net/Flash/
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,7 +6,7 @@ MODAS_TAG =	asterisk-extra
 MODAS_DESC =	additional ${MODAS_LANGNAME} sound files for Asterisk (${MODAS_CODEC})
 MODAS_LANGS =	en en_GB fr
 MODAS_VER =	1.4.14
-REVISION =	0
+REVISION =	1
 
 # CC-BY-SA
 PERMIT_PACKAGE_CDROM =	Yes

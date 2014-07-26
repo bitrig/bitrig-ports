@@ -4,7 +4,7 @@ COMMENT=	squid redirector
 
 DISTNAME=	jesred-1.2pl1
 PKGNAME=	jesred-1.2.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=     www
 
 HOMEPAGE=	http://www.linofee.org/~jel/webtools/jesred/

@@ -5,13 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	scim plugin for qt
 
 DISTNAME=	scim-qtimm-0.9.4
-REVISION=	5
+REVISION=	6
 
 CATEGORIES=	inputmethods
 
 HOMEPAGE=	http://www.scim-im.org/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

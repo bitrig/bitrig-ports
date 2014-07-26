@@ -3,10 +3,8 @@
 COMMENT =		XML parser/formatter based on expat
 
 DISTNAME =		hexpat-0.19.10
-REVISION =		2
+REVISION =		3
 CATEGORIES =		textproc
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

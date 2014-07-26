@@ -3,6 +3,7 @@
 COMMENT=	abstraction for general data transport
 
 DISTNAME=	libio-0.1
+REVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	http://monkey.org/~provos/
 

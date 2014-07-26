@@ -7,13 +7,11 @@ COMMENT=	offline maps viewer
 MODPY_EGG_VERSION=	0.7.6.1
 DISTNAME=	GMapCatcher-${MODPY_EGG_VERSION}
 PKGNAME=	gmapcatcher-${MODPY_EGG_VERSION}
-REVISION=	7
+REVISION=	8
 
 CATEGORIES=	geo x11
 
 HOMEPAGE=	https://code.google.com/p/gmapcatcher/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes

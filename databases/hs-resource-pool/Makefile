@@ -3,6 +3,7 @@
 COMMENT =		high-performance striped resource pooling implementation
 
 DISTNAME =		resource-pool-0.2.1.1
+REVISION =		0
 CATEGORIES =		databases devel
 HOMEPAGE =		https://github.com/bos/pool
 

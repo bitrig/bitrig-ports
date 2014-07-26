@@ -4,6 +4,7 @@ COMMENT =	building, finding and using wxWidgets binaries
 
 MODULES =	cpan
 DISTNAME =	Alien-wxWidgets-0.62
+REVISION =	0
 CATEGORIES =	devel
 
 # perl

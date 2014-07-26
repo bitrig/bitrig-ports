@@ -7,7 +7,7 @@ DISTNAME = 	xorg-cf-files-1.0.4
 PKGNAME = 	imake-cf-1.0.4
 MASTER_SITES = 	http://ftp.x.org/pub/individual/util/
 
-REVISION =	3
+REVISION =	4
 
 PERMIT_PACKAGE_CDROM = 		Yes
 

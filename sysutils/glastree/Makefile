@@ -3,7 +3,7 @@
 COMMENT=	poor man's daily snapshot
 
 DISTNAME=	glastree-1.04
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.igmus.org/code/
 

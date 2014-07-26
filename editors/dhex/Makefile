@@ -4,9 +4,8 @@ COMMENT =		ncurses-based hex-editor with diff mode
 V =			0.66
 DISTNAME =		dhex_${V}
 PKGNAME =		dhex-${V}
+REVISION =		0
 CATEGORIES =		editors
-
-MAINTAINER =		Thanasoulas Spiros <dsp@2f30.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,12 +3,11 @@
 COMMENT=	GIS TIFF interchange library
 
 DISTNAME=	libgeotiff-1.4.0
+REVISION=	0
 CATEGORIES=	devel geo
 SHARED_LIBS=	geotiff 1.3
 
 HOMEPAGE=	http://trac.osgeo.org/geotiff/
-
-MAINTAINER=	Landry Breuil <landry@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

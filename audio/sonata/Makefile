@@ -8,11 +8,9 @@ MODPY_EGG_VERSION=1.7a2
 DISTNAME=	sonata-1.7.1.20140328
 CATEGORIES=	audio
 
-REVISION = 0
+REVISION = 1
 
 HOMEPAGE=	http://sonata.berlios.de/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,7 +5,7 @@ ONLY_FOR_ARCHS=	i386
 COMMENT=	GRand Unified Bootloader
 
 DISTNAME=	grub-0.97
-REVISION=	6
+REVISION=	7
 CATEGORIES=	sysutils
 
 HOMEPAGE=	https://www.gnu.org/software/grub/

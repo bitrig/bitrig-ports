@@ -3,7 +3,7 @@
 COMMENT =		c++ protocol buffers
 
 DISTNAME =		protobuf-2.4.1
-REVISION =		2
+REVISION =		3
 
 SHARED_LIBS +=		protobuf	1.0   # 7.0
 SHARED_LIBS +=		protoc		1.0   # 7.0
@@ -12,8 +12,6 @@ SHARED_LIBS +=		protobuf-lite	1.0   # 7.0
 CATEGORIES =		devel
 
 HOMEPAGE =		https://code.google.com/p/protobuf/
-
-MAINTAINER =		Vincent Auclair <auclair.vincent@gmail.com>
 
 # New BSD
 PERMIT_PACKAGE_CDROM =	Yes

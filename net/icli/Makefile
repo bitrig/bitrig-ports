@@ -5,12 +5,11 @@ COMMENT=	command-line interface to Icinga
 V=		0.48
 DISTNAME=	App-Icli-$V
 PKGNAME=	icli-$V
+REVISION=	0
 
 CATEGORIES=	net
 
 HOMEPAGE=	http://finalrewind.org/projects/App-Icli/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # custom, see COPYING.
 PERMIT_PACKAGE_CDROM=	Yes

@@ -7,7 +7,7 @@ COMMENT =	library for writing single instance GTK+2 applications
 
 GNOME_PROJECT =	libunique
 GNOME_VERSION =	1.1.6
-REVISION=	7
+REVISION=	8
 
 SHARED_LIBS +=  unique-1.0           2.0      # .100.6
 CATEGORIES =	devel

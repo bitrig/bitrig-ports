@@ -4,6 +4,7 @@ COMMENT= 	perform diffs on files and record sets
 
 MODULES=	cpan
 DISTNAME=	Text-Diff-1.41
+REVISION=	0
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

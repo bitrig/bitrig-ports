@@ -4,7 +4,7 @@ COMMENT=	secure passphrase generator
 
 DISTNAME=	ppgen-1.0
 CATEGORIES=	security
-REVISION=	0
+REVISION=	1
 
 # Public domain
 PERMIT_PACKAGE_CDROM=   Yes

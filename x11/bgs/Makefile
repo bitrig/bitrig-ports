@@ -4,10 +4,9 @@ COMMENT =		simple background setter
 
 VERSION =		0.5
 DISTNAME =		bgs-${VERSION}
-REVISION=		3
+REVISION=		4
 CATEGORIES =		x11 graphics
 
-MAINTAINER =		Michael Erdely <merdely@openbsd.org>
 HOMEPAGE =		https://github.com/Gottox/bgs
 MASTER_SITES =		https://github.com/downloads/Gottox/bgs/
 

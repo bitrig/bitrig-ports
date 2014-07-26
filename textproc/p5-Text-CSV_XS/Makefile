@@ -7,7 +7,7 @@ COMMENT=	comma-separated values manipulation routines
 DISTNAME=	Text-CSV_XS-1.02
 CATEGORIES=	textproc
 EXTRACT_SUFX=	.tgz
-REVISION=	0
+REVISION=	1
 
 MODULES=	cpan
 CPAN_AUTHOR=	HMBRAND

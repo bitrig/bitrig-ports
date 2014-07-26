@@ -5,7 +5,7 @@ COMMENT =	Python driver for mongodb
 MODPY_EGG_VERSION = 2.5
 DISTNAME =	pymongo-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:S/py//}
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	databases devel
 

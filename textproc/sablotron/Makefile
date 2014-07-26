@@ -5,7 +5,7 @@ COMMENT =	fast, compact and portable XSL/XSLT processor
 V =		1.0.3
 DISTNAME =	Sablot-${V}
 PKGNAME =	sablotron-${V}
-REVISION =	2
+REVISION =	3
 SHARED_LIBS =	sablot	103.0	# .100.3
 CATEGORIES =	textproc
 

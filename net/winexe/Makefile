@@ -5,13 +5,11 @@ COMMENT =	remotely execute programs on a Windows host
 DISTNAME =	winexe-source-081123
 PKGNAME =	winexe-0.90
 
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	net
 
 HOMEPAGE =	http://eol.ovh.org/winexe/
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2, source includes most of the Samba 4 tree and Heimdal,
 # though only a small part of it is built.

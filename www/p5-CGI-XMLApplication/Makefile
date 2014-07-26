@@ -4,10 +4,8 @@ COMMENT=	object oriented interface for CGI script applications
 
 MODULES=	cpan
 DISTNAME=	CGI-XMLApplication-1.1.3
-REVISION=	1
+REVISION=	2
 CATEGORIES=    	www
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

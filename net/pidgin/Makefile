@@ -15,7 +15,9 @@ PKGNAME-libpurple= libpurple-${VERSION}
 FULLPKGNAME$i= ${PKGNAME$i}${FLAVOR_EXT:S/-gtkspell//}
 FULLPKGPATH$i= ${PKGPATH},$i${FLAVOR_EXT:S/-gtkspell//:S/-/,/g}
 .endfor
-REVISION-main=	0
+REVISION-main=	1
+REVISION-finch=	0
+REVISION-libpurple=0
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pidgin/}
 EXTRACT_SUFX=	.tar.bz2
@@ -28,8 +30,6 @@ SHARED_LIBS=	jabber		0.0 \
 		ymsg		0.0
 
 HOMEPAGE=	http://pidgin.im/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

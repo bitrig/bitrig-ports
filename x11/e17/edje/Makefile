@@ -3,6 +3,7 @@
 COMMENT =		complex graphical design & layout library
 
 DISTNAME =		edje-1.7.9
+REVISION =		0
 EPOCH =			2
 SHARED_LIBS +=	edje                 3.0      # 8.6
 

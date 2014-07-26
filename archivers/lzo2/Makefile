@@ -4,6 +4,7 @@ COMMENT=	portable speedy lossless data compression library
 
 DISTNAME=	lzo-2.08
 PKGNAME=	${DISTNAME:S/lzo/lzo2/}
+REVISION=	0
 CATEGORIES=	archivers devel
 MASTER_SITES=	${HOMEPAGE}download/
 SHARED_LIBS +=	lzo2	0.0 # .2.0

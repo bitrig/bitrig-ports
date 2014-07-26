@@ -4,6 +4,7 @@ COMMENT=	module for computing digests while reading or writing
 
 MODULES=	cpan
 DISTNAME=	IO-Digest-0.11
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

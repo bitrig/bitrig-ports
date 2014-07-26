@@ -5,7 +5,7 @@ COMMENT=	determine the malware activity on a network
 
 DISTNAME=	nepenthes-0.2.2
 EPOCH=		1
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	net
 

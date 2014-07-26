@@ -14,7 +14,7 @@ SHARED_LIBS +=  glibmm-2.4           12.0     # 4.0
 SHARED_LIBS +=  giomm-2.4            12.0     # 4.0
 
 CATEGORIES=	devel
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.gtkmm.org/
 

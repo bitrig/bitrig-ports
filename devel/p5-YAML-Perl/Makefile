@@ -3,6 +3,7 @@
 COMMENT=		pure Perl implementation of YAML
 
 DISTNAME=		YAML-Perl-0.02
+REVISION=		0
 CATEGORIES=		devel
 
 MODULES=		cpan

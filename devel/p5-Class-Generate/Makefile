@@ -4,9 +4,8 @@ COMMENT=        generate Perl class hierarchies
 
 MODULES=	cpan
 DISTNAME=	Class-Generate-1.14
+REVISION=	0
 CATEGORIES=     devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

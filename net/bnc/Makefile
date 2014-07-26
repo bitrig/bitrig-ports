@@ -4,12 +4,11 @@ COMMENT=	simple IRC relay proxy with support for virtual hosting
 
 DISTNAME=	${PKGNAME:S,-,,}
 PKGNAME=	bnc-2.9.4
+REVISION=	0
 CATEGORIES=	net
 MASTER_SITES=	${HOMEPAGE}files/
 
 HOMEPAGE=	http://gotbnc.com/
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c

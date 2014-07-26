@@ -4,9 +4,8 @@ COMMENT =	turn on strict and make all warnings fatal
 
 MODULES =	cpan
 DISTNAME =	strictures-1.005004
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =    Sergey Bronnikov <estetus@gmail.com>
 
 CPAN_AUTHOR =	HAARG
 

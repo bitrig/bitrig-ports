@@ -6,10 +6,8 @@ COMMENT=	module for access to network card configuration information
 
 MODULES=	cpan
 DISTNAME=	IO-Interface-1.06
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Artistic/GPL
 PERMIT_PACKAGE_CDROM=   Yes

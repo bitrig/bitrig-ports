@@ -10,13 +10,11 @@ DISTNAME=	p7zip_${V}_src_all
 PKGNAME=	p7zip-${V}
 PKGNAME-main=	p7zip-${V}
 PKGNAME-rar=	p7zip-rar-${V}
-REVISION-main=	1
-REVISION-rar=	2
+REVISION-main=	2
+REVISION-rar=	3
 CATEGORIES=	archivers
 
 HOMEPAGE=	http://sourceforge.net/projects/p7zip/
-
-MAINTAINER=	Josh Grosse <josh@jggimi.homeip.net>
 
 # LGPL, except unRar plugin which is licensed as Freeware
 PERMIT_PACKAGE_CDROM-rar=	no fee

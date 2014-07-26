@@ -3,11 +3,10 @@
 COMMENT=		SMTP/LMTP proxy for Spamassassin
 
 DISTNAME=		spampd-2.30
-REVISION=		0
+REVISION=		1
 CATEGORIES=		mail
 
 HOMEPAGE=		http://www.worlddesign.com/index.cfm/page/rd/mta/spampd.htm
-MAINTAINER=		Henrik Friedrichsen <openbsd@diff.cc>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes

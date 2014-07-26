@@ -3,12 +3,11 @@
 COMMENT=	a software fax modem that uses an IAX channel
 
 DISTNAME=	iaxmodem-1.1.0
+REVISION=	0
 CATEGORIES=	telephony
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=iaxmodem/}
 
 HOMEPAGE=	http://iaxmodem.sourceforge.net/
-
-MAINTAINER=	Todd T. Fries <todd@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

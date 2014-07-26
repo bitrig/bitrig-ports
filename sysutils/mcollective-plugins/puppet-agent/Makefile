@@ -7,5 +7,6 @@ GH_PROJECT=		mcollective-puppet-agent
 GH_TAGNAME=		1.7.2
 GH_COMMIT=		5de4de69c8927f63c35bc3ee64b0d8f967792fc8
 DISTNAME=		${GH_PROJECT}-${GH_TAGNAME}
+REVISION=		0
 
 .include <bsd.port.mk>

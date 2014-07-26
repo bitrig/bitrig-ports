@@ -3,7 +3,7 @@
 COMMENT=	database-independent schema objects
 
 DISTNAME=	DBIx-DBSchema-0.32
-REVISION=	1
+REVISION=	2
 CATEGORIES=	databases
 MODULES=	cpan
 USE_GROFF =	Yes

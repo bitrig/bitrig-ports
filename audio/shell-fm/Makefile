@@ -3,6 +3,7 @@
 COMMENT=		console based player for last.fm radio streams
 
 DISTNAME=		shell-fm-0.20121206
+REVISION=		0
 
 CATEGORIES=		audio
 

@@ -2,6 +2,7 @@
 
 COMMENT =	sudoku game for KDE
 DISTNAME =	ksudoku-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += GL GLU ICE SM X11 Xext

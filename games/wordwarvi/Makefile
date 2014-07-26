@@ -3,13 +3,11 @@
 COMMENT =		editor war arcade game
 
 DISTNAME =		wordwarvi-1.00
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		games
 
 HOMEPAGE =		http://wordwarvi.sourceforge.net/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2 / CC licenses for soundfiles
 PERMIT_PACKAGE_CDROM =	Yes

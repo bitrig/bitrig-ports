@@ -7,12 +7,11 @@ COMMENT-qt=	BitTorrent client with Qt interface
 VER=		2.83
 DISTNAME=	transmission-${VER}
 PKGNAME-main=	transmission-${VER}
+REVISION=	0
 PKGNAME-gtk=	transmission-gtk-${VER}
 PKGNAME-qt=	transmission-qt-${VER}
 CATEGORIES=	net
 HOMEPAGE=	http://www.transmissionbt.com/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

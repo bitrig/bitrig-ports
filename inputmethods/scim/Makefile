@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT =	smart common input method platform
 
 DISTNAME =	scim-1.4.9
-REVISION =	13
+REVISION =	14
 
 SHARED_LIBS +=  scim-1.0           0.0           # .10.4
 SHARED_LIBS +=  scim-x11utils-1.0  0.0           # .10.4
@@ -14,8 +14,6 @@ SHARED_LIBS +=  scim-gtkutils-1.0  0.0           # .10.4
 CATEGORIES =	inputmethods chinese japanese korean
 
 HOMEPAGE =	http://www.scim-im.org/
-
-MAINTAINER =	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

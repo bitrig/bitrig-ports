@@ -11,8 +11,6 @@ DISTNAME =		lilypond-test-baseline-2.14.1
 
 CATEGORIES =		print
 
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
-
 # GPLv2 (snippets from and data created with lilypond)
 PERMIT_PACKAGE_CDROM =	Yes
 

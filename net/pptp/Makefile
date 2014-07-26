@@ -3,13 +3,11 @@
 COMMENT=	PPTP client package for Microsoft VPN servers
 
 DISTNAME=	pptp-1.7.2
-REVISION=	4
+REVISION=	5
 CATEGORIES=	net
 MASTER_SITES= 	${MASTER_SITE_SOURCEFORGE:=pptpclient/}
 
 HOMEPAGE=	http://pptpclient.sf.net
-
-MAINTAINER=	Stefan Sperling <stsp@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=   Yes

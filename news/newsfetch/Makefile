@@ -9,6 +9,7 @@
 COMMENT=	download news articles from NNTP server
 
 DISTNAME=	newsfetch-1.21
+REVISION=	0
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=system/news/readers/}
 

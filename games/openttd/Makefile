@@ -16,11 +16,9 @@ DIST_SUBDIR=	openttd
 
 CATEGORIES=	games
 
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	https://www.openttd.org/en/
-
-MAINTAINER =	Anthony J. Bentley <anthony@cathet.us>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

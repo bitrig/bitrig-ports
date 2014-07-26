@@ -5,12 +5,11 @@ COMMENT=	filter files for IP address matches
 # note there's also a "grepcidr-2" fork; this port is for the original
 # version which is still developed by the original author.
 DISTNAME=	grepcidr-2.0
+REVISION=	0
 
 CATEGORIES=	textproc net
 
 HOMEPAGE=	http://www.pc-tools.net/unix/grepcidr/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

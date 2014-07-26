@@ -9,6 +9,7 @@ COMMENT =	experimental ultra-low delay audio codec (0.7 API)
 V =		0.7.1
 DISTNAME =	celt-$V
 PKGNAME =	celt07-$V
+REVISION =	0
 CATEGORIES =   	audio
 
 HOMEPAGE =	http://www.celt-codec.org/

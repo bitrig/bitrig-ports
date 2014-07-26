@@ -7,7 +7,7 @@ COMMENT=	pixmap rendering for reportlab
 VERSION=	0.9
 DISTNAME=	renderPM-${VERSION:S/./-/}
 PKGNAME=	py-reportlab-renderPM-${VERSION}
-REVISION =	7
+REVISION =	8
 
 MASTER_SITES=	http://www.reportlab.org/ftp/
 WANTLIB =	art_lgpl_2>=5

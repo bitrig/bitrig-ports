@@ -9,6 +9,7 @@ V=		0.26.1
 DISTNAME=	poppler-$V
 CATEGORIES=	print
 PKGNAME-main=	poppler-$V
+REVISION=	0
 PKGNAME-utils=	poppler-utils-$V
 PKGNAME-qt=	poppler-qt-$V
 PKGNAME-qt4=	poppler-qt4-$V
@@ -23,8 +24,6 @@ SHARED_LIBS +=	poppler-cpp          6.0      # 2.0
 DISTFILES = ${DISTNAME}.tar.xz ${OLDSHIT}.tar.gz
 
 HOMEPAGE=	http://poppler.freedesktop.org/
-
-MAINTAINER=	Matthias Kilian <kili@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

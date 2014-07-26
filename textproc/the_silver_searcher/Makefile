@@ -3,10 +3,10 @@
 COMMENT =	code searching tool, with a focus on speed (ag)
 
 DISTNAME =	the_silver_searcher-0.23.0
+REVISION =	0
 CATEGORIES =	textproc
 
 HOMEPAGE =	https://github.com/ggreer/the_silver_searcher
-MAINTAINER =	Florian Stinglmayr <florian@n0la.org>
 
 # Apache 2.0
 PERMIT_PACKAGE_CDROM =	Yes

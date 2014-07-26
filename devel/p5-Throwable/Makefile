@@ -4,7 +4,7 @@ COMMENT =	a role for classes that can be thrown
 
 MODULES =	cpan
 DISTNAME =	Throwable-0.102080
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 CPAN_AUTHOR =	RJBS
 

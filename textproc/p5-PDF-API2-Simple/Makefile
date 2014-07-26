@@ -5,9 +5,8 @@ COMMENT =		simple wrapper for PDF::API2 module
 MODULES =		cpan
 DISTNAME =		PDF-API2-Simple-1.1.4u
 PKGNAME =		p5-${DISTNAME:S/u$//}
+REVISION =		0
 CATEGORIES =		textproc
-
-MAINTAINER =		Anibal Ezau Limon Belmares <limon.anibal@gmail.com>
 
 # public domain
 PERMIT_PACKAGE_CDROM =	Yes

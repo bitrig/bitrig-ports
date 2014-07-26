@@ -5,9 +5,8 @@ COMMENT =		parse an email Received: header
 MODULES =		cpan
 
 DISTNAME =		Email-Received-1.00
+REVISION =		0
 CATEGORIES =		mail
-
-MAINTAINER =		Marcus Glocker <marcus@nazgul.ch>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

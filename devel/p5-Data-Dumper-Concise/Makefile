@@ -3,8 +3,8 @@
 COMMENT =		less indentation and newlines plus sub deparsing
 
 DISTNAME =		Data-Dumper-Concise-2.021
+REVISION =		0
 CATEGORIES =		devel
-MAINTAINER =		Andrew Fresh <andrew@cpan.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

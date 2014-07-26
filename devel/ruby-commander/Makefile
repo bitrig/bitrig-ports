@@ -3,7 +3,7 @@
 COMMENT =		complete solution for Ruby command-line executables
 
 DISTNAME =		commander-4.1.3
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 HOMEPAGE =		http://visionmedia.github.com/commander

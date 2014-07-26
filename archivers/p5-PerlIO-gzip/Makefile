@@ -7,7 +7,7 @@ MODULES=	cpan
 SHARED_ONLY=	Yes
 
 DISTNAME=	PerlIO-gzip-0.18
-REVISION=	5
+REVISION=	6
 CATEGORIES=	archivers
 
 # perl

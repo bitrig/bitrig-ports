@@ -4,12 +4,10 @@ COMMENT=	mpeg-1 video player
 
 VERSION=	0.4.1
 DISTNAME=	enjoympeg-${VERSION}
-REVISION =	1
+REVISION =	2
 CATEGORIES=	graphics x11
 
 HOMEPAGE=	http://people.freenet.de/for_Ki/
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

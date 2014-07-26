@@ -3,6 +3,7 @@
 COMMENT=		TCP proxy with load balancing and failover mechanisms
 
 DISTNAME=		balance-3.56
+REVISION=		0
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.inlab.de/balance.html

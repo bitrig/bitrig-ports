@@ -4,12 +4,10 @@ COMMENT=	html editor designed for the experienced web designer
 
 DISTNAME=	august0.63b.src
 PKGNAME=	august-0.63b
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
 
 HOMEPAGE=	http://www.erjobe.info/index.php?n=Main.August
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

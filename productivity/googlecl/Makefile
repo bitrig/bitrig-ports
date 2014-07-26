@@ -4,7 +4,7 @@ COMMENT=	command-line interface to Google services
 
 MODPY_EGG_VERSION= 0.9.13
 DISTNAME=	googlecl-${MODPY_EGG_VERSION}
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	productivity devel www
 

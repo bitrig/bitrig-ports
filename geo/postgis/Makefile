@@ -5,12 +5,10 @@ SHARED_ONLY=	Yes
 V =	2.1.0
 COMMENT=	geographic objects support for PostgreSQL
 DISTNAME=	postgis-${V}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	geo databases
 
 HOMEPAGE=	http://www.postgis.org/
-
-MAINTAINER=	Landry Breuil <landry@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

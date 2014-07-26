@@ -10,6 +10,7 @@ V=		0.4.3
 DISTNAME=	weechat-${V}
 
 PKGNAME-main=	weechat-${V}
+REVISION=	0
 PKGNAME-lua=	weechat-lua-${V}
 PKGNAME-python=	weechat-python-${V}
 PKGNAME-ruby=	weechat-ruby-${V}

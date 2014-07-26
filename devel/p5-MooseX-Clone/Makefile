@@ -4,6 +4,7 @@ COMMENT =	fine grained cloning support for Moose objects
 
 MODULES =	cpan
 DISTNAME =	MooseX-Clone-0.05
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

@@ -4,10 +4,8 @@ COMMENT =	simple configuration file class
 
 MODULES =	cpan
 DISTNAME =	Config-Simple-4.59
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
-
-MAINTAINER =	Mikolaj Kucharski <mikolaj@kucharski.name>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

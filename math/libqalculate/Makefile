@@ -5,7 +5,7 @@ CATEGORIES =	math devel
 DISTNAME =	libqalculate-0.9.7
 HOMEPAGE =	http://qalculate.sourceforge.net/
 
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS =	qalculate		0.0	# 5.0
 

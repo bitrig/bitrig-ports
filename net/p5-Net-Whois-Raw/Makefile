@@ -3,9 +3,8 @@
 COMMENT=	extension for unparsed raw whois information
 
 DISTNAME=	Net-Whois-Raw-2.76
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

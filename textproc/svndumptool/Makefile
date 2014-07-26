@@ -3,6 +3,7 @@
 COMMENT =		processing subversion dump files
 MODPY_EGG_VERSION =	0.6.1
 DISTNAME =		svndumptool-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		textproc
 HOMEPAGE =		http://svn.borg.ch/svndumptool/
 

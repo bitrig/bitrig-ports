@@ -4,6 +4,7 @@ COMMENT=	switch statement for Perl
 
 MODULES=	cpan
 DISTNAME=	Switch-2.16
+REVISION=	0
 CATEGORIES=	devel
 
 # Artistic

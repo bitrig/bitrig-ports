@@ -4,6 +4,7 @@ COMMENT=	generate pronounceable passwords
 
 MODULES=	cpan
 DISTNAME=	Text-Password-Pronounceable-0.30
+REVISION=	0
 
 CATEGORIES=	security
 

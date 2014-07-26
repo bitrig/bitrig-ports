@@ -3,7 +3,7 @@
 COMMENT=		partial dumping of data structures
 
 DISTNAME=		Devel-PartialDump-0.13
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		devel
 

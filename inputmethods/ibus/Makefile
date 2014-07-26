@@ -5,14 +5,13 @@ SHARED_ONLY =	Yes
 COMMENT =	intelligent input bus framework
 
 DISTNAME =	ibus-1.5.5
+REVISION =	0
 
 SHARED_LIBS =	ibus-1.0	4.0 # 5.504
 
 CATEGORIES =	inputmethods chinese japanese korean
 
 HOMEPAGE =	https://code.google.com/p/ibus/
-
-MAINTAINER =	Federico G. Schwindt <fgsch@openbsd.org>
 
 # LGPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

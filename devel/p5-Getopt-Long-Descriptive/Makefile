@@ -4,9 +4,8 @@ COMMENT =	Getopt::Long, but simpler and more powerful
 
 MODULES =	cpan
 DISTNAME =	Getopt-Long-Descriptive-0.097
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

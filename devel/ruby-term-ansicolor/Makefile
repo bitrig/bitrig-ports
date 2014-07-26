@@ -3,7 +3,7 @@
 COMMENT =	color strings using ANSI escape sequences
 
 DISTNAME =	term-ansicolor-1.0.4
-REVISION =	6
+REVISION =	7
 CATEGORIES =	devel
 
 HOMEPAGE =	http://term-ansicolor.rubyforge.org/

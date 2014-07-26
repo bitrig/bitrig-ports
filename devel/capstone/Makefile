@@ -3,10 +3,9 @@
 COMMENT =	multi-platform, multi-architecture disassembly framework
 
 DISTNAME =	capstone-2.1.2
+REVISION =	0
 CATEGORIES =	devel
 HOMEPAGE =	http://www.capstone-engine.org/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 SHARED_LIBS =	capstone	1.0
 

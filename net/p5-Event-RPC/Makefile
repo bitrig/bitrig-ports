@@ -4,6 +4,7 @@ COMMENT=	Event based transparent Client/Server RPC framework
 
 MODULES=	cpan
 DISTNAME=	Event-RPC-1.05
+REVISION=	0
 CATEGORIES=	net devel
 
 # perl

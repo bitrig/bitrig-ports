@@ -6,6 +6,7 @@ V =			6.16.5
 MODPY_EGG_VERSION =	${V}.525
 DISTNAME =		renpy-${V}-source
 PKGNAME =		${DISTNAME:S/-source//}
+REVISION =		0
 
 CATEGORIES =		games
 

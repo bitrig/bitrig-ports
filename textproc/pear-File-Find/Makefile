@@ -3,7 +3,7 @@
 COMMENT=	php class to facilitate the search of filesystems
 
 DISTNAME=	File_Find-1.3.0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc
 
 MASTER_SITES=	http://pear.php.net/get/

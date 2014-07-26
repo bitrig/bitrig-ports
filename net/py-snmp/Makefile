@@ -5,6 +5,7 @@ COMMENT=	SNMP framework for Python
 MODPY_EGG_VERSION = 4.2.5
 DISTNAME=	pysnmp-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:S/py/py-/}
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE=	http://pysnmp.sourceforge.net/

@@ -5,7 +5,7 @@ COMMENT=	access counter, clock and date for WWW pages
 V=		2.5
 DISTNAME=	wwwcount$V
 PKGNAME=	wwwcount-$V
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://muquit.com/muquit/software/Count/src/wwwcount$V/ \
 		http://wwwcount.yeehaw.net/src/wwwcount$V/ \

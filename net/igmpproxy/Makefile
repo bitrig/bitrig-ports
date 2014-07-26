@@ -5,13 +5,11 @@ COMMENT =	Multicast router utilizing IGMP forwarding
 VERSION =	0.1-beta2
 DISTNAME =	igmpproxy-src-${VERSION}
 PKGNAME =	igmpproxy-${VERSION:S/-beta/b/}
-REVISION =	4
+REVISION =	5
 CATEGORIES =	net
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=igmpproxy/}
 
 HOMEPAGE =	http://igmpproxy.sourceforge.net/
-
-MAINTAINER =	Markus Friedl <markus@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

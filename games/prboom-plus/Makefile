@@ -2,11 +2,10 @@
 
 COMMENT = 	enhanced version the PrBoom Doom engine
 DISTNAME =	prboom-plus-2.5.1.3
+REVISION =	0
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://prboom-plus.sourceforge.net/
-
-MAINTAINER =	Ryan Freeman <rfreeman@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM = Yes

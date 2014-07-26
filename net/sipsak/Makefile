@@ -6,11 +6,10 @@ DISTNAME =	sipsak-0.9.6-1
 CATEGORIES =	net
 
 PKGNAME =	${DISTNAME:S/-1//}
+REVISION =	0
 WRKDIST =	${WRKDIR}/${DISTNAME:S/-1//}/
 
 HOMEPAGE =	http://sipsak.org/
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 LIB_DEPENDS =	net/libcares
 

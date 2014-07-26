@@ -2,7 +2,7 @@
 
 COMMENT=		virtual desktop manager
 DISTNAME=		vdesk-1.2
-REVISION=		2
+REVISION=		3
 
 CATEGORIES=		x11
 MASTER_SITES=		http://offog.org/files/

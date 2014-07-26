@@ -6,7 +6,7 @@ COMMENT=	CDDB audio CD track info access in Python
 
 DISTNAME=	CDDB-1.4
 PKGNAME=	py-${DISTNAME:L}
-REVISION =	7
+REVISION =	8
 CATEGORIES=	audio
 
 HOMEPAGE=	http://cddb-py.sourceforge.net/

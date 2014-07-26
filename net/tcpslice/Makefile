@@ -4,12 +4,10 @@ COMMENT=	tool for extracting and gluing pcap (tcpdump) files
 
 DISTNAME=	tcpslice-2008.05.19
 PKGNAME=        ${DISTNAME:S/.//g}
-REVISION =	0
+REVISION =	1
 CATEGORIES=	net
 
 MASTER_SITES=	http://www.tcpdump.org/weekly/
-
-MAINTAINER=	Nigel Taylor <nigel@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

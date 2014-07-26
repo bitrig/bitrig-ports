@@ -4,7 +4,7 @@ COMMENT=	in-system programmer for Teensy boards
 
 DISTNAME=	teensy_loader_cli.2.0
 PKGNAME=	teensyloader-2.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.pjrc.com/teensy/

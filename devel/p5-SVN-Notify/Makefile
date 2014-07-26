@@ -5,7 +5,7 @@ COMMENT=	subversion activity notification
 MODULES=	cpan
 
 DISTNAME=	SVN-Notify-2.78
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # perl

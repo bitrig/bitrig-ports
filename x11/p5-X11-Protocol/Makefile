@@ -3,11 +3,9 @@
 COMMENT=	provides an interface roughly equivalent to Xlib
 
 DISTNAME=	X11-Protocol-0.56
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	x11
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

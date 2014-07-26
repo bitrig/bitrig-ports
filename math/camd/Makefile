@@ -5,7 +5,7 @@ COMMENT=	constrained approximate minimum degree
 VERSION=	2.2.1
 DISTNAME=	CAMD-${VERSION}
 PKGNAME=	${DISTNAME:L}
-REVISION=	1
+REVISION=	2
 SHARED_LIBS=	camd	0.0
 
 CATEGORIES=	math

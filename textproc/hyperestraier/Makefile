@@ -3,13 +3,11 @@
 COMMENT=		high performance full-text search system
 
 DISTNAME=		hyperestraier-1.4.13
-REVISION=		5
+REVISION=		6
 CATEGORIES=		textproc
 SHARED_LIBS=		estraier	8.38
 
 HOMEPAGE=		http://fallabs.com/hyperestraier/index.html
-
-MAINTAINER=		Jeremy Evans <jeremy@openbsd.org>
 
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes

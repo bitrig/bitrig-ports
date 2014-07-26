@@ -3,6 +3,7 @@
 COMMENT=	MPEG/audio Layer 1 and Layer 2 encoder/decoder
 DISTNAME=	mpegaudio
 PKGNAME=	mpegaudio-3.9
+REVISION=	0
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_BACKUP}
 EXTRACT_SUFX=	.tar.Z

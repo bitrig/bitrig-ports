@@ -3,11 +3,9 @@
 COMMENT=		Rich city simulation game for X
 
 DISTNAME=		lincity-1.11
-REVISION =		3
+REVISION =		4
 CATEGORIES=		games
 HOMEPAGE=		http://lincity.sourceforge.net/
-
-MAINTAINER=		Wilbern Cobb <wcobb@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

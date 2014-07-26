@@ -4,7 +4,7 @@ COMMENT=	common low-level libraries for logilab projects
 
 DISTNAME=	logilab-common-0.56.0
 PKGNAME=	py-${DISTNAME}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.logilab.org/projects/common/

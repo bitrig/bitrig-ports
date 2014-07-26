@@ -3,12 +3,10 @@
 COMMENT=		module that embeds Ruby into Apache
 
 DISTNAME=		mod_ruby-1.2.6
-REVISION =		8
+REVISION =		9
 CATEGORIES=		www
 
 HOMEPAGE=		http://modruby.net/
-
-MAINTAINER=		Adam Montague <amontague@siriushosting.com>
 
 MODULES=		apache-module lang/ruby
 

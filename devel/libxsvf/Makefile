@@ -4,7 +4,7 @@ COMMENT=	library and tools for creating SVF and XSVF JTAG players
 
 # svn rev 62
 DISTNAME=	libxsvf-0.0.62
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.clifford.at/libxsvf/

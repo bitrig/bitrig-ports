@@ -4,7 +4,7 @@ COMMENT=	Sendmail Log Analysis Report
 
 VERSION=	1.4
 DISTNAME=	sma-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES=	mail
 
 HOMEPAGE=	http://www.klake.org/sma/

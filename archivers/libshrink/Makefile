@@ -4,14 +4,12 @@ COMMENT=	compression wrapper library
 
 DISTNAME=	shrink-0.5.2
 PKGNAME=	lib${DISTNAME}
-REVISION=	0
+REVISION=	1
 CATEGORIES=    	archivers devel
 SHARED_LIBS=	shrink	2.0
 
 HOMEPAGE=	http://opensource.conformal.com/wiki/Shrink
 MASTER_SITES=	http://opensource.conformal.com/snapshots/shrink/
-
-MAINTAINER=	David Hill <dhill@mindcry.org>
 
 WANTLIB=	c crypto lzma lzo2 ssl util z
 LIB_DEPENDS=	archivers/lzo2 \

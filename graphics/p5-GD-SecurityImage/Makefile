@@ -4,10 +4,8 @@ COMMENT=	security image (captcha) generator
 
 MODULES=	cpan
 DISTNAME=	GD-SecurityImage-1.66
-REVISION=	1
+REVISION=	2
 CATEGORIES=	graphics security
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

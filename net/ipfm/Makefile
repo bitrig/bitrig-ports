@@ -3,6 +3,7 @@
 COMMENT =	IP bandwidth analysis tool
 
 DISTNAME =	ipfm-0.11.5
+REVISION =	0
 CATEGORIES =	net
 
 HOMEPAGE =	http://robert.cheramy.net/ipfm/

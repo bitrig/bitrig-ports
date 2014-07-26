@@ -4,9 +4,8 @@ COMMENT =	FTP over SSL/TLS client class
 
 MODULES =	cpan
 DISTNAME =	Net-FTPSSL-0.17
+REVISION =	0
 CATEGORIES =	net 
-
-MAINTAINER =	Pierre-Emmanuel Andre <pea@raveland.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

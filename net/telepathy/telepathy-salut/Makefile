@@ -3,7 +3,7 @@
 COMMENT=		flexible communications framework, local-link component
 
 DISTNAME=		telepathy-salut-0.8.1
-REVISION=		3
+REVISION=		4
 
 MASTER_SITES=		${MASTER_SITES_TP:=telepathy-salut/}
 

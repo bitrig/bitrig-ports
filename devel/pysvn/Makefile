@@ -6,11 +6,9 @@ MODPY_EGG_VERSION =	1.7.8
 DISTNAME = 		pysvn-${MODPY_EGG_VERSION}
 PKGNAME = 		py-pysvn-${MODPY_EGG_VERSION}
 CATEGORIES =		devel
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://pysvn.tigris.org
-
-MAINTAINER = 		Stefan Sperling <stsp@openbsd.org>
 
 # Apache v1.1, BSD-like
 PERMIT_PACKAGE_CDROM = 		Yes

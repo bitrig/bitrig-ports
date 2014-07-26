@@ -3,12 +3,10 @@
 COMMENT=	little X dock.app network monitor
 
 DISTNAME=	wmnet-1.06
-REVISION=	8
+REVISION=	9
 CATEGORIES=	net x11 x11/windowmaker
 HOMEPAGE=	http://www.katharineosborne.com/wmnet/
 MASTER_SITES=	http://dockapps.org/files/77/115/
-
-MAINTAINER=	Vladimir Popov <pva48@mail.ru>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

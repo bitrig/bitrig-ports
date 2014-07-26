@@ -3,7 +3,7 @@
 COMMENT=	configuration file library for PHP
 
 DISTNAME=	Config-1.10.7
-REVISION =	2
+REVISION =	3
 CATEGORIES=	devel
 
 MODULES=	www/pear

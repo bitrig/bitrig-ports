@@ -3,10 +3,9 @@
 COMMENT =		large library of utility functions
 
 DISTNAME =		MissingH-1.2.0.2
+REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/jgoerzen/missingh/wiki
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,6 +3,7 @@
 COMMENT=	toolkit for the development of SILC applications
 
 DISTNAME=	silc-toolkit-1.1.12
+REVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=silc/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +12,6 @@ SHARED_LIBS=	silc		10.0	\
 		silcclient	8.0	\
 
 HOMEPAGE=	http://silcnet.org/dev.html
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=   Yes

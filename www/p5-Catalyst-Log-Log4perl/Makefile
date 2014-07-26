@@ -4,10 +4,9 @@ COMMENT=		Log::Log4perl logging for Catalyst (deprecated)
 
 MODULES=		cpan
 DISTNAME=		Catalyst-Log-Log4perl-1.05
+REVISION=		0
 CATEGORIES=		www devel
 USE_GROFF =		Yes
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # same as perl
 PERMIT_PACKAGE_CDROM=	Yes

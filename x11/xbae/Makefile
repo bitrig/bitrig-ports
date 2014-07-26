@@ -3,15 +3,13 @@
 COMMENT=	Motif-based table widget
 
 DISTNAME=	xbae-4.60.4
-REVISION=	10
+REVISION=	11
 
 SHARED_LIBS=	Xbae 4.60
 
 CATEGORIES=	x11 math
 
 HOMEPAGE=	http://xbae.sourceforge.net/
-
-MAINTAINER=	Martynas Venckus <martynas@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

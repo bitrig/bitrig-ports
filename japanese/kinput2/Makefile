@@ -6,7 +6,7 @@ COMMENT-wnn=		X input method for Japanese, wnn support
 
 DISTNAME=	kinput2-v3
 PKGNAME=	ja-kinput2-3.0
-REVISION=	7
+REVISION=	8
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/x11/kinput2/
 CATEGORIES=	japanese x11
 
@@ -14,8 +14,6 @@ CATEGORIES=	japanese x11
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	ICE SM X11 Xau Xaw Xdmcp Xext Xmu Xpm Xt c
-
-MAINTAINER=	SUZUKI Hitoshi <sigh@kuzirabekon.econ.nagasaki-u.ac.jp>
 
 CONFIGURE_STYLE=imake
 FLAVORS=	canna wnn

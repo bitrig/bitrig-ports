@@ -2,9 +2,8 @@
 
 COMMENT =	locate (written) numbers in English text
 DISTNAME =	Lingua-EN-FindNumber-1.2
+REVISION =	0
 CATEGORIES =	textproc
-
-MAINTAINER =	Andrew Fresh <andrew@cpan.org>
 
 # same terms as Perl itself
 PERMIT_PACKAGE_CDROM =	Yes

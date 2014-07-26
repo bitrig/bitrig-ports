@@ -5,7 +5,7 @@ COMMENT=	helper class for PHP WebDAV server implementations
 V=		1.0.0RC4
 DISTNAME=	HTTP_WebDAV_Server-$V
 PKGNAME=	pear-HTTP-WebDAV-Server-${V:L}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
 
 MODULES=	www/pear

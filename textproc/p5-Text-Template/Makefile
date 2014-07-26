@@ -4,7 +4,7 @@ COMMENT=	expand template text with embedded perl
 
 MODULES=	cpan
 DISTNAME=	Text-Template-1.45
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

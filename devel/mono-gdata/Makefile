@@ -5,7 +5,7 @@ COMMENT=	.NET library for the Google Data API
 V=		1.9.0.0
 DISTNAME=	libgoogle-data-mono-${V}
 PKGNAME=	mono-gdata-${V}
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	devel
 

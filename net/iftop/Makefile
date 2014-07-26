@@ -3,12 +3,10 @@
 COMMENT =		display bandwidth usage on an interface
 
 DISTNAME =		iftop-1.0pre2
-REVISION =		0
+REVISION =		1
 CATEGORIES =		net
 
 HOMEPAGE =		http://www.ex-parrot.com/~pdw/iftop/
-
-MAINTAINER =		Girish Venkatachalam <girish1729@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

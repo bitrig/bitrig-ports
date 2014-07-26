@@ -4,11 +4,10 @@ COMMENT = 		MVC web framework for perl
 
 MODULES =		cpan
 DISTNAME =		CGI-Application-4.50
+REVISION =		0
 CATEGORIES =		www
 HOMEPAGE =		http://www.cgi-app.org/
 USE_GROFF =		Yes
-
-MAINTAINER =		Ian McWilliam <kaosagnt@tpg.com.au>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

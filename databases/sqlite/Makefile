@@ -2,7 +2,7 @@
 
 COMMENT=	Embedded SQL implementation
 DISTNAME=	sqlite-2.8.17
-REVISION =	4
+REVISION =	5
 CATEGORIES=	databases
 SHARED_LIBS +=	sqlite               8.6      # .0.0
 

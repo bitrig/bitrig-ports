@@ -7,10 +7,8 @@ COMMENT=	shoot them nasty little bugs
 DISTNAME=       xinvaders
 DIST_SUBDIR=	xinvaders
 PKGNAME=	xinvaders-2.0
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games
-
-MAINTAINER=	Paul Janzen <pjanzen@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	no fee
 PERMIT_PACKAGE_FTP=	Yes

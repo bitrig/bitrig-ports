@@ -2,11 +2,9 @@
 
 COMMENT=	curses GDB interface
 DISTNAME=	cgdb-0.6.7
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 HOMEPAGE=	http://cgdb.me/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

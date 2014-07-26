@@ -5,7 +5,7 @@ SHARED_LIBS =		rtmp 1.0
 COMMENT =		dump RTMP media streams
 
 DISTNAME =		rtmpdump-2.4pl7
-REVISION =		0
+REVISION =		1
 WRKDIST =		${WRKDIR}/rtmpdump
 
 CATEGORIES =		net

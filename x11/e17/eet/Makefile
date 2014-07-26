@@ -3,6 +3,7 @@
 COMMENT =		library to write an arbitary set of chunks of data to a file
 
 DISTNAME =		eet-1.7.9
+REVISION =		0
 EPOCH =			2
 
 SHARED_LIBS +=	eet                  3.0      # 8.6

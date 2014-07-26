@@ -4,7 +4,7 @@ COMMENT=		collection of GTK+ widgets on top of GUPnp
 
 GNOME_PROJECT=		gupnp-ui
 GNOME_VERSION=		0.1.1
-REVISION=		4
+REVISION=		5
 
 SHARED_LIBS +=  gupnp-ui-1.0         0.0      # 0.0
 

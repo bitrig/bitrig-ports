@@ -3,9 +3,8 @@
 COMMENT=	convert between GB and BIG-5 codes
 
 DISTNAME=	zh-hc-3.0
+REVISION=	0
 CATEGORIES=	chinese
-
-MAINTAINER=     Kevin Lo <kevlo@openbsd.org>
 
 # Fairly restrictive licence
 PERMIT_PACKAGE_CDROM=	No

@@ -4,7 +4,7 @@ COMMENT =		the enlightened window manager
 
 VERSION =		0.17.5
 DISTNAME =		enlightenment-${VERSION}
-REVISION =		2
+REVISION =		3
 EPOCH =			1
 
 # BSD

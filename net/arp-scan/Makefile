@@ -2,11 +2,10 @@
 
 COMMENT =	ARP scanning and fingerprinting tool
 DISTNAME =	arp-scan-1.9
-REVISION =	3
+REVISION =	4
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.nta-monitor.com/tools-resources/security-tools/arp-scan
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 MASTER_SITES =	http://www.nta-monitor.com/files/arp-scan/
 MASTER_SITES0 =	http://spacehopper.org/mirrors/

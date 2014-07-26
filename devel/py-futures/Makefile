@@ -5,6 +5,7 @@ COMMENT=	futures implementation for Python
 MODPY_EGG_VERSION= 2.1.4
 DISTNAME=	futures-${MODPY_EGG_VERSION}
 PKGNAME=	py-${DISTNAME}
+REVISION=	0
 CATEGORIES=	devel
 
 # BSD

@@ -3,7 +3,7 @@
 COMMENT=		DVD ripper
 
 DISTNAME=		dvdbackup-0.1.1
-REVISION=		3
+REVISION=		4
 CATEGORIES=		multimedia
 
 HOMEPAGE=		http://dvd-create.sourceforge.net/

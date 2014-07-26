@@ -28,14 +28,14 @@ PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 PKGNAME-go =	gccgo-${FULL_PKGVERSION}
 PKGSPEC-main = gcc->=4.6,<4.7
 
-REVISION-main =	11
-REVISION-c++ =	7
-REVISION-estdc =2
-REVISION-f95 =	5
-REVISION-java =	5
-REVISION-objc =	4
-REVISION-ada =	9
-REVISION-go =	5
+REVISION-main =	12
+REVISION-c++ =	8
+REVISION-estdc =3
+REVISION-f95 =	6
+REVISION-java =	6
+REVISION-objc =	5
+REVISION-ada =	10
+REVISION-go =	6
 
 SHARED_LIBS =	estdc++		14.0 \
 		gfortran	3.0 \

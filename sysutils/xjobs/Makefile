@@ -4,12 +4,11 @@
 COMMENT =		execute jobs in parallel
 
 DISTNAME =		xjobs-20100915
+REVISION =		0
 
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://www.maier-komor.de/xjobs.html
-
-MAINTAINER =		Rene Maroufi <info@maroufi.net>
 
 # License GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

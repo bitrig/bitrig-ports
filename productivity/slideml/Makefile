@@ -3,13 +3,11 @@
 COMMENT =		HTML slide generator based on SlideML
 
 DISTNAME =		slideml-1.1.0
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		productivity
 
 HOMEPAGE =		http://opensource.conformal.com/wiki/Slide_ML
-
-MAINTAINER =		Laurent Fanis <laurent.fanis@gmail.com>
 
 #W3C Software Notice and License & BSD
 PERMIT_PACKAGE_CDROM =	Yes

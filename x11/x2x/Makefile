@@ -3,10 +3,8 @@
 COMMENT=	one keyboard/mouse to multiple X displays
 
 DISTNAME=	x2x-1.27
-REVISION=	5
+REVISION=	6
 CATEGORIES=    	x11
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

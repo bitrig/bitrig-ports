@@ -3,12 +3,11 @@
 COMMENT =		library implementing the SSH2 protocol
 
 DISTNAME =		libssh2-1.4.3
+REVISION =		0
 CATEGORIES =		security
 SHARED_LIBS +=		ssh2	6.0	# .1.1
 
 HOMEPAGE =              http://www.libssh2.org/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # libssh2: BSD License
 # libssh2 Documentation: Open Publication License 

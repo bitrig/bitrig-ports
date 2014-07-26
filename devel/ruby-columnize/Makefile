@@ -3,7 +3,7 @@
 COMMENT =	sorts an array in column order
 
 DISTNAME =	columnize-0.3.1
-REVISION =	7
+REVISION =	8
 CATEGORIES =	devel
 
 # GPLv2

@@ -4,6 +4,7 @@ COMMENT=		media art extraction and cache management library
 
 GNOME_PROJECT=		libmediaart
 GNOME_VERSION=		0.4.0
+REVISION=		0
 
 SHARED_LIBS +=  mediaart-1.0         0.0      # 396.4
 

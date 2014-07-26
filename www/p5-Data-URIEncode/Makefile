@@ -4,7 +4,7 @@ COMMENT =	allow complex data structures to be encoded using flat URIs
 
 MODULES =	cpan
 DISTNAME =	Data-URIEncode-0.11
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
 
 # Perl

@@ -3,6 +3,7 @@
 COMMENT=		very small and pretty fast gdk/Imlib image viewer
 
 DISTNAME=		qiv-2.2.4
+REVISION=		0
 CATEGORIES=		graphics
 
 EXTRACT_SUFX=		.tgz

@@ -5,13 +5,11 @@ NOT_FOR_ARCHS =	arm mips64 mips64el sparc64 hppa
 COMMENT =	library for efficient computations
 
 DISTNAME =	cln-1.3.3
-REVISION =	1
+REVISION =	2
 SHARED_LIBS +=  cln                  2.0      # .6.3
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.ginac.de/CLN/
-
-MAINTAINER =	Paul Irofti <pirofti@openbsd.org>
 
 # GPL v2
 PERMIT_PACKAGE_CDROM =		Yes

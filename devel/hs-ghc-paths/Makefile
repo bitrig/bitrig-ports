@@ -3,10 +3,8 @@
 COMMENT =		knowledge of GHC's installation directories
 
 DISTNAME =		ghc-paths-0.1.0.8
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

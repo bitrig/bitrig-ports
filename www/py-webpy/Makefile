@@ -3,6 +3,7 @@
 COMMENT=	web framework for python
 
 VERSION=	0.37
+REVISION=	0
 DISTNAME=	web.py-${VERSION}
 PKGNAME=	py-webpy-${VERSION}
 CATEGORIES=	www

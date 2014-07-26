@@ -5,7 +5,7 @@ COMMENT= 	polymorphic return values
 MODULES=	cpan 
 
 DISTNAME=	Return-Value-1.302
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 CPAN_AUTHOR=	RJBS

@@ -3,10 +3,8 @@
 COMMENT =	MIME library for Ruby
 
 DISTNAME =	mime-0.1
-REVISION =	6
+REVISION =	7
 CATEGORIES =	mail
-
-MAINTAINER =	Clint Pachl <pachl@ecentryx.com>
 
 # Ruby license
 PERMIT_PACKAGE_CDROM =   Yes

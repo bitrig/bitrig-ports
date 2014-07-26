@@ -3,6 +3,7 @@
 COMMENT=	DNS library modelled after Net::DNS
 
 PKGNAME=	libldns-${VERSION}
+REVISION=	0
 
 SHARED_LIBS +=	ldns 6.1
 

@@ -6,7 +6,7 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	Rose-Object-0.856
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases devel
 
 # perl

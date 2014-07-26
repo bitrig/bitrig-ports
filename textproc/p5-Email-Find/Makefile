@@ -4,7 +4,7 @@ COMMENT=		Find RFC 822 email addresses in plain text
 
 MODULES=		cpan
 DISTNAME=		Email-Find-0.10
-REVISION=		0
+REVISION=		1
 CATEGORIES=		textproc
 USE_GROFF =		Yes
 

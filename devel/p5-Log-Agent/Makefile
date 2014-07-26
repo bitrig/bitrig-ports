@@ -4,6 +4,7 @@ COMMENT=	abstraction layer for logging and tracing
 
 MODULES=	cpan
 DISTNAME=	Log-Agent-1.000
+REVISION=	0
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

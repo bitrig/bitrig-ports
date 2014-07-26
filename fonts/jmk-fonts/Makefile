@@ -5,13 +5,11 @@ COMMENT=		nice fixed width fonts, easy on the eye
 V=			3.0
 DISTNAME=		jmk-x11-fonts-${V}
 PKGNAME=		jmk-fonts-${V}
-REVISION=		2
+REVISION=		3
 
 CATEGORIES=		fonts x11
 
 HOMEPAGE=		http://www.jmknoble.net/fonts/
-
-MAINTAINER=		Jon Olsson <jon@abc.se>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

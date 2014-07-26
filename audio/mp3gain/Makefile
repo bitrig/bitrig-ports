@@ -4,7 +4,7 @@ COMMENT=	audio file volume normalizer
 
 DISTNAME=	mp3gain-1_4_6-src
 PKGNAME=	mp3gain-1.4.6
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mp3gain/}
 

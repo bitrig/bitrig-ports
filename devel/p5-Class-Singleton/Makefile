@@ -4,7 +4,7 @@ COMMENT=		perl singleton pattern
 
 MODULES=		cpan
 DISTNAME=		Class-Singleton-1.4
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # Artistic

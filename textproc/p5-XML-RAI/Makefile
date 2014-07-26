@@ -4,11 +4,9 @@ COMMENT=	RSS Abstraction Interface
 
 MODULES=	cpan
 DISTNAME=	XML-RAI-1.301
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

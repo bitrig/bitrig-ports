@@ -3,7 +3,7 @@
 COMMENT=	Curses-based interpreter for Infocom-compatible games
 
 DISTNAME=		frotz-2.43
-REVISION =		2
+REVISION =		3
 CATEGORIES=     	games
 
 HOMEPAGE=		http://frotz.sourceforge.net/

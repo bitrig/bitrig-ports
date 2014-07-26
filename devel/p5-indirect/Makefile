@@ -6,10 +6,9 @@ COMMENT=	lexically warn about using the indirect method call syntax
 
 MODULES=	cpan
 DISTNAME=	indirect-0.31
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
-MAINTAINER =    Sergey Bronnikov <estetus@gmail.com>
 CPAN_AUTHOR=	VPIT
 
 # Perl

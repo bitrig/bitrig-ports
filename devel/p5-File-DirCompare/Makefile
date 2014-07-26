@@ -4,11 +4,10 @@ COMMENT =		compare two directories using callbacks
 
 MODULES =		cpan
 DISTNAME =		File-DirCompare-0.7
+REVISION =		0
 CATEGORIES =		devel
 
 CPAN_AUTHOR =		GAVINC
-
-MAINTAINER =		James Wright <jamesw@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

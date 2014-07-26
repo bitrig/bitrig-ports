@@ -3,6 +3,7 @@
 COMMENT =	common library for Mah Jongg-based KDE games
 CATEGORIES =	devel
 DISTNAME =	libkmahjongg-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kmahjongglib		50.1 # 4.10
 

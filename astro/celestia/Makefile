@@ -3,13 +3,11 @@
 COMMENT=	free space simulator and planetarium
 
 DISTNAME=	celestia-1.6.1
-REVISION=	9
+REVISION=	10
 
 CATEGORIES=	astro x11
 
 HOMEPAGE=	http://www.shatters.net/celestia/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

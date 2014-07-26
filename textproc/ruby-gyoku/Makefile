@@ -3,6 +3,7 @@
 COMMENT =		Gyoku translates Ruby Hashes to XML
 
 DISTNAME =		gyoku-1.1.1
+REVISION =		0
 
 CATEGORIES =		textproc
 

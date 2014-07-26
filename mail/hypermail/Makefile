@@ -4,7 +4,7 @@ COMMENT=		generate a cross-referenced HTML mail archive
 
 VERSION=		2.1.8
 DISTNAME=		hypermail-${VERSION}
-REVISION =		1
+REVISION =		2
 CATEGORIES=		mail www
 
 HOMEPAGE=		http://www.hypermail-project.org/

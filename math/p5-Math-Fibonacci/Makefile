@@ -3,10 +3,8 @@
 COMMENT=	Fibonacci numbers
 
 DISTNAME=	Math-Fibonacci-1.5
-REVISION=	0
+REVISION=	1
 CATEGORIES=	math
-
-MAINTAINER=	Michael Erdely <merdely@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

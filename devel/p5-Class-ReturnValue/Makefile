@@ -4,7 +4,7 @@ COMMENT=	smart return-value object
 
 MODULES=	cpan
 DISTNAME=	Class-ReturnValue-0.55
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

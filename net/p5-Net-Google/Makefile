@@ -4,11 +4,9 @@ COMMENT=	simple OOP-ish interface to the Google SOAP API
 
 MODULES=	cpan
 DISTNAME=	Net-Google-1.0.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 USE_GROFF =	Yes
-
-MAINTAINER=	Gleydson Soares <gsoares@trusted.com.br>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

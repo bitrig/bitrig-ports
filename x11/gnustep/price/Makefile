@@ -3,7 +3,7 @@
 COMMENT =	precision raster image convolution engine
 
 DISTNAME =	PRICE-1.2.0
-REVISION =	1
+REVISION =	2
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://price.sourceforge.net/

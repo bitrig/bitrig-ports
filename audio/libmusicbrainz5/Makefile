@@ -5,7 +5,7 @@ COMMENT=		library for audio metadata lookup (v5)
 V=			5.0.1
 DISTNAME=		libmusicbrainz-${V}
 PKGNAME=		libmusicbrainz5-${V}
-REVISION=		1
+REVISION=		2
 
 SHARED_LIBS +=  musicbrainz5              0.0 # 0.0
 

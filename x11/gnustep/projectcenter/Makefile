@@ -3,7 +3,7 @@
 COMMENT=	GNUstep integrated development environment
 
 DISTNAME=	ProjectCenter-0.6.1
-REVISION =	4
+REVISION =	5
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.gnustep.org/experience/ProjectCenter.html

@@ -4,7 +4,7 @@ COMMENT=	Python ID3 tag reader/writer module
 
 DISTNAME=	pytagger-0.5
 PKGNAME=	${DISTNAME:S/^py/py-/}
-REVISION =	4
+REVISION =	5
 CATEGORIES=	audio
 
 HOMEPAGE=	http://www.liquidx.net/pytagger/

@@ -3,13 +3,11 @@
 COMMENT =		device firmware update (DFU) USB programmer
 
 DISTNAME =		dfu-util-0.3
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		comms
 
 HOMEPAGE =		http://dfu-util.gnumonks.org/
-
-MAINTAINER =		Ian Darwin <ian@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

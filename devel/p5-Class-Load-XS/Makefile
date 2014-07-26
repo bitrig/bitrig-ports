@@ -6,7 +6,7 @@ COMMENT =		XS implementation of parts of Class::Load
 
 DISTNAME =		Class-Load-XS-0.08
 CATEGORIES =		devel
-REVISION =		0
+REVISION =		1
 
 # artistic 2.0
 PERMIT_PACKAGE_CDROM =	Yes

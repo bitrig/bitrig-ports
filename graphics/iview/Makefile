@@ -4,12 +4,10 @@ COMMENT=	image viewer for X
 
 VERSION=	1.4
 DISTNAME=	iview-${VERSION}
-REVISION =	1
+REVISION =	2
 CATEGORIES=	graphics x11
 
 HOMEPAGE=	http://math.smsu.edu/~erik/software.php?id=63
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

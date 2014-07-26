@@ -3,7 +3,7 @@
 COMMENT=		convert OpenDocument Text to plain text
 
 DISTNAME=		odt2txt-0.4
-REVISION =		0
+REVISION =		1
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://stosberg.net/odt2txt/

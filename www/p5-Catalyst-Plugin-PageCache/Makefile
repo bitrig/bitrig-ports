@@ -4,10 +4,9 @@ COMMENT =	cache the output of entire pages
 
 MODULES =	cpan
 DISTNAME =	Catalyst-Plugin-PageCache-0.31
+REVISION =	0
 CATEGORIES =	www
 USE_GROFF =	Yes
-
-MAINTAINER =	Jim Razmus <jim@bonetruck.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

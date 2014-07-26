@@ -5,13 +5,11 @@ SHARED_LIBS +=  translate                 0.0 # 0.0
 COMMENT=	library/CLI tool interfacing to online translation services
 
 DISTNAME=	libtranslate-0.99
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.nongnu.org/libtranslate/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

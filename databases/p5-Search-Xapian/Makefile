@@ -6,7 +6,7 @@ V=			1.2.15
 DISTNAME=		Search-Xapian-${V}.0
 CATEGORIES=		databases
 MODULES=		cpan
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://xapian.org/
 

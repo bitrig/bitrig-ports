@@ -3,7 +3,7 @@
 COMMENT =		check Uniform Resource Identifiers
 
 DISTNAME =		Test-URI-1.08
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 MODULES =		cpan

@@ -3,13 +3,11 @@
 COMMENT=		free real-time logfile analyzer
 
 DISTNAME=		awstats-7.3
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		www
 
 HOMEPAGE=		http://awstats.sourceforge.net/
-
-MAINTAINER=		Robert Peichaer <rpe@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

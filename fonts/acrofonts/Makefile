@@ -3,12 +3,10 @@
 COMMENT=		asian font pack for acroread
 
 PKGNAME=		acrofonts-7.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		fonts print
 
 HOMEPAGE=		http://www.adobe.com/products/acrobat/readstep.html
-
-MAINTAINER=		Yozo TODA <yozo@v007.vaio.ne.jp>
 
 PERMIT_PACKAGE_CDROM=	commercial software
 PERMIT_PACKAGE_FTP=	commercial software

@@ -4,11 +4,9 @@ COMMENT=	figure out when to fetch RSS Feeds
 
 MODULES=	cpan
 DISTNAME=	XML-RSS-Timing-1.07
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

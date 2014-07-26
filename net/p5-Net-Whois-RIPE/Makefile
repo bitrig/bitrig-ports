@@ -3,11 +3,10 @@
 COMMENT =	perl implementation of RIPE whois
 
 DISTNAME =	Net-Whois-RIPE-2.005001
+REVISION =	0
 CATEGORIES =	net
 
 EPOCH =		0
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

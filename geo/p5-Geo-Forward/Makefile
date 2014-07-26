@@ -3,7 +3,7 @@
 COMMENT=	module to calculate geographic location
 MODULES=	cpan
 DISTNAME=	Geo-Forward-0.11
-REVISION=	0
+REVISION=	1
 CATEGORIES=	geo
 
 # Perl

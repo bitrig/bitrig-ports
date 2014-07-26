@@ -3,7 +3,7 @@
 COMMENT=	class for viewing Tree::Simple hierarchies
 
 DISTNAME=	Tree-Simple-View-0.17
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 MODULES=	cpan

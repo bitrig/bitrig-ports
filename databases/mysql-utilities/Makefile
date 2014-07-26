@@ -4,13 +4,12 @@ COMMENT =	MySQL management utilities
 
 MODPY_EGG_VERSION = 1.4.3
 DISTNAME =	mysql-utilities-${MODPY_EGG_VERSION}
+REVISION =	0
 CATEGORIES =	databases
 MASTER_SITES =	${MASTER_SITE_MYSQL:=Downloads/MySQLGUITools/}
 EXTRACT_SUFX =	.zip
 
 HOMEPAGE =	http://www.mysql.com/
-
-MAINTAINER =	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

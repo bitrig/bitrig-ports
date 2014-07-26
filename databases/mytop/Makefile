@@ -3,12 +3,11 @@
 COMMENT=	top clone for MySQL
 
 DISTNAME=	mytop-1.7
+REVISION=	0
 CATEGORIES=	databases perl5
 
 HOMEPAGE=	http://jeremy.zawodny.com/mysql/mytop/
 MASTER_SITES=	http://bigio.snb.it/openbsd/distfiles/
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPL / Artistic License
 PERMIT_PACKAGE_CDROM=	Yes

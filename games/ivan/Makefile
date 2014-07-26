@@ -5,7 +5,7 @@ BROKEN-sparc64=	SIGBUS on sparc64 when starting
 COMMENT=	graphical roguelike game
 
 DISTNAME=	ivan-0.50
-REVISION =	3
+REVISION =	4
 CATEGORIES=	games
 
 HOMEPAGE=	http://ivan.sourceforge.net/

@@ -6,12 +6,10 @@ COMMENT=	image viewer and organizer
 
 DISTNAME=	mapivi097
 PKGNAME=	mapivi-0.97
-REVISION=	3
+REVISION=	4
 CATEGORIES=	graphics x11
 
 HOMEPAGE=	http://mapivi.de.vu/
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=	tails a given file anywhere on your X11 root window
 
 DISTNAME=	root-tail-1.2
-REVISION=	2
+REVISION=	3
 CATEGORIES=	x11
 
 HOMESITE=	http://www.goof.com/pcg/marc

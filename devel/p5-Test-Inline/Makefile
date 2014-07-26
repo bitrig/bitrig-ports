@@ -4,7 +4,7 @@ COMMENT=	inlining your tests next to the code being tested
 
 MODULES=	cpan
 DISTNAME=	Test-Inline-2.105
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel
 
 # Artistic

@@ -3,7 +3,7 @@
 COMMENT=	full featured DVD copy program
 
 VERSION=	0.98.11
-REVISION=	0
+REVISION=	1
 DISTNAME=	dvdrip-${VERSION}
 CATEGORIES=	graphics audio multimedia perl5
 

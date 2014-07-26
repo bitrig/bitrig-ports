@@ -3,10 +3,8 @@
 COMMENT =	real-time stats toolkit for Rack HTTP servers
 
 DISTNAME =	raindrops-0.10.0
-REVISION =	4
+REVISION =	5
 CATEGORIES =	www
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # LGPLv2.1/LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes

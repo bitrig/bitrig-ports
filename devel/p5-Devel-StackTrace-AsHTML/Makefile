@@ -4,8 +4,8 @@ COMMENT =		displays stack trace in HTML
 
 MODULES =		cpan
 DISTNAME =		Devel-StackTrace-AsHTML-0.11
+REVISION =		0
 CATEGORIES =		devel
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

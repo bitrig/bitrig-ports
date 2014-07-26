@@ -2,12 +2,10 @@
 
 COMMENT =			Steam Locomotive
 DISTNAME =			sl-3.03
-REVISION =			0
+REVISION =			1
 CATEGORIES =			games
 
 HOMEPAGE =			http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/index_e.html
-
-MAINTAINER =			Gallon Sylvestre <ccna.syl@gmail.com>
 
 # BSD-like.
 PERMIT_PACKAGE_CDROM=		Yes

@@ -5,11 +5,10 @@ PKG_ARCH=	*
 COMMENT=	commandline interface to online dictionaries
 
 DISTNAME=	edict-2.2
+REVISION=	0
 CATEGORIES=	education
 
 HOMEPAGE=	http://edictionary.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

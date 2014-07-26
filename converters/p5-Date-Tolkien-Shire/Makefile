@@ -3,7 +3,7 @@
 COMMENT=	convert dates into the Shire Calendar
 
 DISTNAME=	Date-Tolkien-Shire-1.13
-REVISION=	2
+REVISION=	3
 CATEGORIES=	converters
 MODULES=	cpan
 

@@ -4,15 +4,13 @@ COMMENT =	powerful webserver security scanner for network
 
 DISTNAME =	arirang-2.02
 PKGNAME =	ruby-${DISTNAME}
-REVISION =	3
+REVISION =	4
 CATEGORIES =	security
 
 MASTER_SITES =	http://monkey.org/~pilot/arirang/ \
 		${MASTER_SITE_PACKETSTORM:=UNIX/cgi-scanners/}
 
 HOMEPAGE =	http://www.monkey.org/~pilot
-
-MAINTAINER =	Jung Lee <moorang@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

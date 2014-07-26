@@ -5,11 +5,9 @@ SHARED_ONLY =		Yes
 COMMENT =		perl wrapper for libmagic
 
 DISTNAME =		File-LibMagic-1.01
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		misc
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

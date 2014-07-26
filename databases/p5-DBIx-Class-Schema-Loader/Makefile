@@ -4,9 +4,8 @@ COMMENT=	dynamic definition of a DBIx::Class::Schema
 
 MODULES=	cpan
 DISTNAME=	DBIx-Class-Schema-Loader-0.07015
+REVISION=	0
 CATEGORIES=	databases
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Artistic + GPL
 PERMIT_PACKAGE_CDROM=	Yes

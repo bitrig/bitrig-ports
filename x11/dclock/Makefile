@@ -3,7 +3,7 @@
 COMMENT=	digital clock with optional military time and alarm
 
 PKGNAME=	dclock-0
-REVISION=	4
+REVISION=	5
 CATEGORIES=	x11
 DISTNAME=	dclock
 EXTRACT_SUFX=	.shar.Z

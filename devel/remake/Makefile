@@ -4,7 +4,7 @@ COMMENT=		GNU make debugger
 
 PKGNAME=		remake-0.61p0
 DISTNAME=		remake-3.80+dbg-0.61
-REVISION=		1
+REVISION=		2
 
 CATEGORIES=		devel
 

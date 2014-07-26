@@ -3,12 +3,10 @@
 COMMENT=	WindowMaker dock app similar to xload
 
 DISTNAME=	wmmon-1.0b2
-REVISION =	1
+REVISION =	2
 CATEGORIES=	sysutils x11 x11/windowmaker
 
 MASTER_SITES=	http://distfiles.nl/
-
-MAINTAINER=	Vladimir Popov <pva48@mail.ru>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

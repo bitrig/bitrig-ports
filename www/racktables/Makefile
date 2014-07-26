@@ -4,10 +4,10 @@ COMMENT=	web-based rack/IP management
 
 DISTNAME=	RackTables-0.20.8
 PKGNAME=	${DISTNAME:L}
+REVISION=	0
 CATEGORIES=	www
 
 HOMEPAGE=	http://www.racktables.org/
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

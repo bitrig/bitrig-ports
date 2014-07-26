@@ -7,7 +7,7 @@ COMMENT=	perl interface to the libxml2 library
 DISTNAME=	XML-LibXML-1.69
 EPOCH=		0
 
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	textproc
 

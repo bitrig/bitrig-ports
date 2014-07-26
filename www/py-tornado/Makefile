@@ -5,6 +5,7 @@ COMMENT =		scalable, non-blocking web server
 MODPY_EGG_VERSION =	3.2
 DISTNAME =		tornado-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
+REVISION =		0
 
 CATEGORIES =		www
 

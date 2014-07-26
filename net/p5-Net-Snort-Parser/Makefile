@@ -4,7 +4,7 @@ COMMENT= 	Perl modules for parsing Snort configuration files
 
 MODULES=	cpan
 DISTNAME=	Net-Snort-Parser-1.21
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 USE_GROFF =	Yes
 

@@ -4,6 +4,7 @@ COMMENT=	simple standalone HTTP server
 
 MODULES=	cpan
 DISTNAME=	HTTP-Server-Simple-0.44
+REVISION=	0
 CATEGORIES=	www
 
 # perl

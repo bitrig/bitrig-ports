@@ -4,7 +4,7 @@ COMMENT=	case preserving but case insensitive hash table
 
 MODULES=	cpan
 DISTNAME=	Tie-CPHash-1.04
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

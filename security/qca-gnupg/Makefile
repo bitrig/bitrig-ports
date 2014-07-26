@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		GnuPG plugin for QCA2
 DISTNAME =		qca-gnupg-2.0.0-beta3
 PKGNAME =		${DISTNAME:S/-beta/beta/}
-REVISION= 		0
+REVISION= 		1
 CATEGORIES =		security
 HOMEPAGE =		http://delta.affinix.com/qca/
 

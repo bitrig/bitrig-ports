@@ -3,7 +3,7 @@
 COMMENT =	scheme r5 library
 
 CATEGORIES =	devel
-REVISION =	0
+REVISION =	1
 
 DISTNAME =	slib-3b4
 
@@ -11,8 +11,6 @@ HOMEPAGE =	http://people.csail.mit.edu/jaffer/SLIB
 
 MASTER_SITES =	http://groups.csail.mit.edu/mac/ftpdir/scm/ \
 		http://groups.csail.mit.edu/mac/ftpdir/scm/OLD/
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # BSD-like without modify
 PERMIT_PACKAGE_CDROM =	Yes

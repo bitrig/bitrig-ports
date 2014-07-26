@@ -7,7 +7,7 @@ COMMENT=	perl interface to the Pango libraries
 DISTNAME=	Pango-1.226
 CATEGORIES=	x11 devel
 CPAN_AUTHOR=	XAOC
-REVISION=	0
+REVISION=	1
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

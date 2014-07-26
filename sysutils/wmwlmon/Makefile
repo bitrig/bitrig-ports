@@ -3,13 +3,11 @@
 COMMENT=		wm-dockapp; wireless interface monitor
 
 DISTNAME=		wmwlmon-1.0
-REVISION =		0
+REVISION =		1
 CATEGORIES=		sysutils x11 x11/windowmaker
 MASTER_SITES=		http://www.nazgul.ch/dev/
 
 HOMEPAGE=		http://www.nazgul.ch/dev.html
-
-MAINTAINER=		Marcus Glocker <marcus@nazgul.ch>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

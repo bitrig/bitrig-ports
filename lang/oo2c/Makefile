@@ -7,14 +7,12 @@ COMMENT =	optimizing Oberon-2 to C compiler
 SHARED_ONLY =	Yes
 
 DISTNAME =	oo2c_32-2.1.11
-REVISION =	1
+REVISION =	2
 SHARED_LIBS =	oo2c 3.0
 
 CATEGORIES =	lang
 
 HOMEPAGE =	http://sourceforge.net/projects/ooc/
-
-MAINTAINER =	Alexander Shiryaev <shiryaev.a.v@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

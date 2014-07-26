@@ -3,13 +3,11 @@
 COMMENT =		keep X clipboard and cutbuffer in sync
 
 DISTNAME =		autocutsel-0.9.0
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		x11
 
 HOMEPAGE =		http://www.nongnu.org/autocutsel/
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

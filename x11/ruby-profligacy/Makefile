@@ -4,6 +4,7 @@ COMMENT =	friendly JRuby interface to Swing
 
 DISTNAME =	${PKGNAME}-jruby
 PKGNAME =	profligacy-1.0
+REVISION =	0
 CATEGORIES =	x11
 
 # Ruby

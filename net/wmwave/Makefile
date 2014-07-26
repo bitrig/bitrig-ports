@@ -2,7 +2,7 @@
 
 DISTNAME=	wmwave-0-4
 PKGNAME=	wmwave-0.4
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net x11 x11/windowmaker
 
 PERMIT_PACKAGE_CDROM=	Yes

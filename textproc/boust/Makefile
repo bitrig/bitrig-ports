@@ -2,7 +2,7 @@
 
 COMMENT=		boustrophedon text reader
 DISTNAME=		boust-0.161
-REVISION =		2
+REVISION =		3
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://traevoli.com/boust/

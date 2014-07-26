@@ -5,6 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	parsing expression grammars library for lua
 DISTNAME=	lpeg-0.12
 PKGNAME=	lua-${DISTNAME}
+REVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.inf.puc-rio.br/~roberto/lpeg/
 

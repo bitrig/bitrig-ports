@@ -3,6 +3,7 @@
 COMMENT=	allow GD perl scripts to output SVG
 
 DISTNAME=	GD-SVG-0.33
+REVISION=	0
 CATEGORIES=	graphics
 
 # perl licence

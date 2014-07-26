@@ -2,9 +2,9 @@
 
 COMMENT =		ncurses GIT repository browser
 DISTNAME =		tig-1.2.1
+REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =		http://jonas.nitro.dk/tig/
-MAINTAINER =		Tobias Ulmer <tobiasu@tmux.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

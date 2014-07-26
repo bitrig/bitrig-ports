@@ -3,7 +3,7 @@
 COMMENT=		generate all subsets of a list of elements
 
 DISTNAME=		Data-PowerSet-0.05
-REVISION=		0
+REVISION=		1
 CATEGORIES=		math
 
 MODULES=		cpan

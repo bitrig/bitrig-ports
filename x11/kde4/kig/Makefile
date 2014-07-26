@@ -2,6 +2,7 @@
 
 COMMENT =	KDE geometric constructions explorer
 DISTNAME =	kig-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread ${MODPY_WANTLIB}
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtNetwork

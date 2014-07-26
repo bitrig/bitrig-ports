@@ -6,14 +6,12 @@ COMMENT=	image viewer and browser for GNOME
 
 GNOME_PROJECT=	gthumb
 GNOME_VERSION=	3.2.8
+REVISION=	0
 
 API_V=		${GNOME_VERSION:R}
 SUBST_VARS=	API_V
 
 CATEGORIES=	graphics
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

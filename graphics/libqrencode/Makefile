@@ -6,6 +6,7 @@ COMMENT=		library for encoding data in a QR Code symbol
 
 DISTNAME=		qrencode-3.1.1
 PKGNAME=		lib${DISTNAME}
+REVISION=		0
 SHARED_LIBS +=  qrencode             0.0      # 3.1
 
 CATEGORIES=		graphics

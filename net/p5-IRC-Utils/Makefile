@@ -5,7 +5,7 @@ COMMENT =		common utilities for IRC-related tasks
 MODULES =		cpan
 DISTNAME =		IRC-Utils-0.12
 CATEGORIES =		net
-REVISION =		0
+REVISION =		1
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

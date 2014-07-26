@@ -3,10 +3,8 @@
 COMMENT=	simple password generator
 
 DISTNAME=	pwgen-2.06
-REVISION =	0
+REVISION =	1
 CATEGORIES=	security
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 HOMEPAGE=	http://sourceforge.net/projects/pwgen/
 

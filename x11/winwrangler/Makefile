@@ -4,7 +4,7 @@ COMMENT =	desktop daemon to perform advanced window manipulations
 
 V =		0.2.4
 DISTNAME =	winwrangler-$V
-REVISION=	6
+REVISION=	7
 
 CATEGORIES =	x11
 

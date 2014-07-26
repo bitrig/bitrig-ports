@@ -5,14 +5,12 @@ SHARED_ONLY=	Yes
 COMMENT=	Python bindings for wxWidgets C++ class library
 
 V=		2.8.12.0
-REVISION=	2
+REVISION=	3
 DISTNAME=	wxPython-src-$V
 PKGNAME=	py-wxPython-$V
 CATEGORIES=	x11 devel
 
 HOMEPAGE=	http://www.wxpython.org/
-
-MAINTAINER=	Aleksander Piotrowski <alek@openbsd.org>
 
 # modified LGPL
 PERMIT_PACKAGE_CDROM=	Yes

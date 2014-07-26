@@ -3,7 +3,7 @@
 COMMENT =		GTK+2 file manager
 
 DISTNAME =		emelfm2-0.7.3
-REVISION=		4
+REVISION=		5
 
 CATEGORIES =		x11
 HOMEPAGE =		http://emelfm2.net/

@@ -3,9 +3,8 @@
 COMMENT =	simple curses mixer
 
 DISTNAME =	cmixer-0.2
+REVISION =	0
 CATEGORIES =	audio
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,10 +3,9 @@
 COMMENT =	fetch and update unofficial signatures for ClamAV
 
 DISTNAME =	clamav-unofficial-sigs-3.7.2
+REVISION =	0
 
 CATEGORIES =	security mail
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # no real homepage for the script, but this explains the available databases:
 HOMEPAGE =	http://sanesecurity.com/usage/signatures/

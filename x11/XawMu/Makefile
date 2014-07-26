@@ -5,7 +5,7 @@ COMMENT=		modern look Athena widgets
 VERSION=		1.5
 DISTNAME=		XawM-${VERSION}u
 PKGNAME=		XawMu-${VERSION}
-REVISION=		2
+REVISION=		3
 
 SHARED_LIBS=		XawM 1.0
 CATEGORIES=		x11 devel

@@ -10,11 +10,10 @@ GH_PROJECT=		gitolite
 GH_TAGNAME=		v$V
 GH_COMMIT=		522cc1fc1af530ef9c82e01d89f11022adf4b355
 DISTNAME=		${GH_PROJECT}-$V
+REVISION=		0
 CATEGORIES=		sysutils devel
 
 HOMEPAGE=		https://github.com/sitaramc/gitolite/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

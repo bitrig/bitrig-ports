@@ -2,6 +2,7 @@
 
 COMMENT =	KDE image viewer
 DISTNAME =	gwenview-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	gwenviewlib               51.0 # 4.7
 

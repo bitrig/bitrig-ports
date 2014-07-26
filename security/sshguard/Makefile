@@ -3,7 +3,7 @@
 COMMENT=	protect against brute force attacks on sshd and others
 
 DISTNAME=	sshguard-1.5
-REVISION=	1
+REVISION=	2
 CATEGORIES=	security
 
 # BSD

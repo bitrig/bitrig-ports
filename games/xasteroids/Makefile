@@ -4,7 +4,7 @@ COMMENT=	X11-based asteroids-style arcade
 
 DISTNAME=	xasteroids
 PKGNAME=	xasteroids-5.0
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games
 
 MASTER_SITES=	${MASTER_SITE_R5CONTRIB}

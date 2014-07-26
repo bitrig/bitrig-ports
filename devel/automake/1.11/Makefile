@@ -2,7 +2,7 @@
 
 VERSION=	1.11
 DISTNAME=	automake-${VERSION}.6
-REVISION=	2
+REVISION=	3
 PKGSPEC=	automake->=${VERSION},<1.12
 
 MODULES=		lang/python

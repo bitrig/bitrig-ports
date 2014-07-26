@@ -3,7 +3,7 @@
 COMMENT =	Midnight Commander like file manager for X
 DISTNAME =	worker-3.4.1
 CATEGORIES =	x11
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://www.boomerangsworld.de/
 

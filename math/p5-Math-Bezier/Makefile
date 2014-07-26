@@ -4,7 +4,7 @@ COMMENT=	perl module for solving bezier curves
 
 MODULES=	cpan
 DISTNAME=	Math-Bezier-0.01
-REVISION=	1
+REVISION=	2
 CATEGORIES=	math
 
 # perl

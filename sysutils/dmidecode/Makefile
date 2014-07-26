@@ -3,6 +3,7 @@ ONLY_FOR_ARCHS=	amd64 i386
 
 COMMENT=	dump DMI/SMBIOS contents in human-readable format
 DISTNAME=	dmidecode-2.12
+REVISION=	0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://savannah.nongnu.org/download/dmidecode/
 

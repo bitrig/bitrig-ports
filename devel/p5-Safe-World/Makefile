@@ -3,14 +3,12 @@
 COMMENT=	create multiple virtual instances of a Perl interpreter
 
 DISTNAME=	Safe-World-0.14
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 MODULES=	cpan
 USE_GROFF =	Yes
 
 CPAN_AUTHOR=	GMPASSOS
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

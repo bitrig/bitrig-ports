@@ -4,9 +4,8 @@ COMMENT=	Perl Extensions for ICal objects
 
 MODULES=	cpan
 DISTNAME =	Date-ICal-2.678
+REVISION =	0
 CATEGORIES=	devel
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

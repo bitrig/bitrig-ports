@@ -4,7 +4,7 @@ COMMENT=	SQL shell for FreeTDS
 
 DISTNAME=	sqsh-2.1.8
 
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	databases shells
 

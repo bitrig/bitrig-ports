@@ -10,7 +10,8 @@ V=		2.7
 DISTNAME=	faad2-${V}
 PKGNAME-main=	faad-${V}
 PKGNAME-xmms=	xmms-faad-${V}
-REVISION-xmms=	1
+REVISION-main=	0
+REVISION-xmms=	2
 CATEGORIES=    	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=faac/}
 EXTRACT_SUFX=	.tar.bz2

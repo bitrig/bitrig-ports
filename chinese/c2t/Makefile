@@ -3,10 +3,8 @@
 COMMENT=	translate GB/Big5 encoding to tone pinyin
 
 DISTNAME=	zh-c2t-1.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	chinese
-
-MAINTAINER=     Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -2,7 +2,7 @@
 
 COMMENT=		noninteractive ftp client
 DISTNAME=		weex-2.6.1.5
-REVISION=		2
+REVISION=		3
 CATEGORIES=		net
 
 HOMEPAGE=		http://weex.sourceforge.net

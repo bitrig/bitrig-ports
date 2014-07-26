@@ -4,15 +4,13 @@ COMMENT=		libvirt wrapper suited for GObject-based applications
 
 DISTNAME=		libvirt-glib-0.1.7
 CATEGORIES=		devel sysutils
-REVISION=		1
+REVISION=		2
 
 SHARED_LIBS +=  virt-gconfig-1.0          0.2 # 1.7
 SHARED_LIBS +=  virt-glib-1.0             0.2 # 1.7
 SHARED_LIBS +=  virt-gobject-1.0          0.2 # 1.7
 
 HOMEPAGE=		http://libvirt.org/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 MASTER_SITES=		ftp://libvirt.org/libvirt/glib/
 

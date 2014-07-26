@@ -13,10 +13,10 @@ PKGNAME-en_US =		kde3-locale-en_US-${VERSION}
 PKGNAME-locale =	kde3-locale-${VERSION}
 PKG_ARCH-en_US =	*
 PKG_ARCH-locale =	*
-REVISION-main =		37
-REVISION-samba =	15
-REVISION-en_US =	0
-REVISION-locale =	0
+REVISION-main =		38
+REVISION-samba =	16
+REVISION-en_US =	1
+REVISION-locale =	1
 
 MODKDE_VERSION =	3.5.8
 

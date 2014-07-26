@@ -3,7 +3,7 @@
 COMMENT =		media download tool
 
 DISTNAME =		cclive-0.9.2
-REVISION =		1
+REVISION =		2
 EXTRACT_SUFX =		.tar.xz
 
 CATEGORIES =		www

@@ -3,7 +3,7 @@
 COMMENT=	D-Bus profiler
 
 DISTNAME=	bustle-0.2.3
-REVISION=	5
+REVISION=	6
 CATEGORIES=	devel
 
 HOMEPAGE=	http://willthompson.co.uk/bustle/

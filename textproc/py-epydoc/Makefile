@@ -5,13 +5,11 @@ COMMENT=		python module API documentation generation tool
 MODPY_EGG_VERSION=	3.0.1
 DISTNAME=		epydoc-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION=		3
+REVISION=		4
 
 CATEGORIES=		textproc devel
 
 HOMEPAGE=		http://epydoc.sourceforge.net
-
-MAINTAINER=		Jason Meltzer <meltzer@strangeresearch.com>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,10 +5,8 @@ COMMENT =		manipulating Haskell source code
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		haskell-src-1.0.1.5
-REVISION =		1
+REVISION =		2
 CATEGORIES =		lang devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

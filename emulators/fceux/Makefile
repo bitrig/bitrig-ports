@@ -6,11 +6,9 @@ V =			2.2.2
 DISTNAME =		fceux-${V}.src
 PKGNAME =		fceux-${V}
 CATEGORIES =		emulators games
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://fceux.com/
-
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

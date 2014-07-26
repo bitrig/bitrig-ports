@@ -5,12 +5,10 @@ COMMENT=	open source MSN Messenger clone
 V=		0.98.9
 DISTNAME=	amsn-$V-src
 PKGNAME=	${DISTNAME:S/-src//}
-REVISION=	5
+REVISION=	6
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.amsn-project.net/
-
-MAINTAINER=	Azwaw OUSADOU <bsdmaniak@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes

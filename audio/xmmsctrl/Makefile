@@ -3,13 +3,11 @@
 COMMENT=	small utility to control XMMS from the command line
 
 DISTNAME=	xmmsctrl-1.9
-REVISION=	3
+REVISION=	4
 CATEGORIES=	audio
 
 HOMEPAGE=	http://www.cs.aau.dk/~adavid/utils/
 MASTER_SITES=	${HOMEPAGE}
-
-MAINTAINER=	Gleydson Soares <gsoares@trusted.com.br>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

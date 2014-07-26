@@ -4,11 +4,9 @@ COMMENT=	classes and UML-style associations on top of DBI
 
 MODULES=	cpan
 DISTNAME=	DBIx-DataModel-1.09
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

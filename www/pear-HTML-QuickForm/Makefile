@@ -3,9 +3,8 @@
 COMMENT=	package provides methods for HTML forms
 
 DISTNAME=	HTML_QuickForm-3.2.13
+REVISION=	0
 CATEGORIES=	devel www
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 MODULES=	www/pear
 

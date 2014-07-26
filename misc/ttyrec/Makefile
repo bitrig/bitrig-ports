@@ -3,7 +3,7 @@
 COMMENT=	tty recorder
 
 DISTNAME=	ttyrec-1.0.8
-REVISION=	2
+REVISION=	3
 CATEGORIES=	misc
 
 HOMEPAGE=	http://0xcc.net/ttyrec/index.html.en

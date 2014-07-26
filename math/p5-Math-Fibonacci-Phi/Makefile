@@ -3,10 +3,8 @@
 COMMENT=	calculates Phi and phi for Fibonacci numbers
 
 DISTNAME=	Math-Fibonacci-Phi-0.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	math
-
-MAINTAINER=	Michael Erdely <merdely@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,9 +3,8 @@
 COMMENT=		class for types with a default value
 
 DISTNAME=		data-default-0.5.1
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

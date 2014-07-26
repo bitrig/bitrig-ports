@@ -3,15 +3,13 @@
 COMMENT=	speed mail delivery by sorting & batching addresses
 
 DISTNAME=	bulk_mailer-1.13
-REVISION =	0
+REVISION =	1
 
 CATEGORIES=	mail
 
 MASTER_SITES=	ftp://cs.utk.edu/pub/moore/bulk_mailer/
 
 HOMEPAGE=	http://www.cs.utk.edu/~moore/software.html
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

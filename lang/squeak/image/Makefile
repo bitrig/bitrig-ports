@@ -9,7 +9,7 @@ DOTV =		2
 IMAGE_V =	7179
 DISTFILES =	Squeak$V.${DOTV}-${IMAGE_V}-basic.zip
 DISTNAME =	squeak-image-$V.${DOTV}.${IMAGE_V}
-REVISION =	0
+REVISION =	1
 RUN_DEPENDS =	lang/squeak/vm>=3.10
 MASTER_SITES =	${SQUEAK_SITE}
 EXTRACT_ONLY =

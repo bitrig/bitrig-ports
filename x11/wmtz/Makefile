@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; displays the time in different time zones
 
 DISTNAME=		wmtz-0.7
-REVISION=		1
+REVISION=		2
 CATEGORIES=     	x11 x11/windowmaker
 
 HOMEPAGE=		http://www.geocities.com/jl1n/wmtz/wmtz.html

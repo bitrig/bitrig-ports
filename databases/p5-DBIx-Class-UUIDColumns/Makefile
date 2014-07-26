@@ -4,6 +4,7 @@ COMMENT=	unique identifiers as columns in DBIx::Class
 
 MODULES=	cpan
 DISTNAME=	DBIx-Class-UUIDColumns-0.02005
+REVISION=	0
 CATEGORIES=	databases devel
 
 # perl

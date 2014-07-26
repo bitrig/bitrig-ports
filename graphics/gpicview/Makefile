@@ -3,6 +3,7 @@
 COMMENT =	simple and fast image viewer for X11
 
 DISTNAME =	gpicview-0.2.4
+REVISION =	0
 
 CATEGORIES =	graphics x11
 

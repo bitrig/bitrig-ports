@@ -3,9 +3,8 @@
 COMMENT =		deterministic allocation and freeing of scarce resources
 
 DISTNAME =		resourcet-0.4.6
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

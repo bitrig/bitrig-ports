@@ -4,13 +4,12 @@ COMMENT = 		web-based SSH client
 
 DISTNAME =		Ajaxterm-0.10
 PKGNAME =		ajaxterm-0.10
-REVISION =		8
+REVISION =		9
 
 CATEGORIES =		net security www
 PKG_ARCH =		*
 
 HOMEPAGE =		http://antony.lesuisse.org/software/ajaxterm/
-MAINTAINER =		Laurent Moccellin <moccel_l@epitech.eu>
 
 # Public Domain / LGPL
 PERMIT_PACKAGE_CDROM =	Yes

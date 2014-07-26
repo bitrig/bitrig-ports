@@ -4,6 +4,7 @@ COMMENT=	store multi-level hash structure in single-level tied hash
 
 MODULES=	cpan
 DISTNAME =	MLDBM-2.05
+REVISION =	0
 CATEGORIES=	devel
 
 RUN_DEPENDS =	devel/p5-FreezeThaw

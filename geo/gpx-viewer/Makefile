@@ -4,12 +4,11 @@ COMMENT =	gpx file viewer
 
 VERSION =	0.3.0
 DISTNAME =	gpx-viewer-${VERSION}
-REVISION =	4
+REVISION =	5
 
 CATEGORIES =	geo x11
 
 HOMEPAGE =	http://blog.sarine.nl/gpx-viewer/
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

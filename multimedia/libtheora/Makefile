@@ -3,7 +3,7 @@
 COMMENT=	open video codec
 
 DISTNAME=	libtheora-1.1.1
-REVISION=	3
+REVISION=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	http://downloads.xiph.org/releases/theora/
 EXTRACT_SUFX=	.tar.bz2
@@ -13,8 +13,6 @@ SHARED_LIBS=	theora		3.2 \
 		theoraenc	1.2
 
 HOMEPAGE=	http://www.theora.org/
-
-MAINTAINER=     Vladimir Tamara Patino <vtamara@pasosdejesus.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

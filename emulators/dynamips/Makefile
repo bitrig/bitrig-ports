@@ -4,13 +4,11 @@ COMMENT=		cisco 3600/7200 platform emulator
 
 DISTNAME=		dynamips-0.2.8-RC2
 PKGNAME=		${DISTNAME:S/-RC/rc/}
-REVISION=		4
+REVISION=		5
 CATEGORIES=		emulators
 
 HOMEPAGE=		http://www.gns3.net/dynamips/
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gns-3/}
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

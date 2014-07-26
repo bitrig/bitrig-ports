@@ -3,12 +3,11 @@
 COMMENT =		grid-entry natural handwriting input panel
 
 DISTNAME =		cellwriter-1.3.5
+REVISION =		0
 
 CATEGORIES =		inputmethods x11
 
 HOMEPAGE =		http://risujin.org/cellwriter/
-
-MAINTAINER =		Vasily Mikhaylichenko <vaskas@lxmx.com.au>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

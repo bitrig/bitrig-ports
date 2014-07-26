@@ -3,7 +3,7 @@
 COMMENT =	library for spatial indexing and querying
 DISTNAME=	spatialindex-src-1.8.0
 PKGNAME =	${DISTNAME:S/-src//}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	geo
 SHARED_LIBS =	spatialindex 0.0 \
 		spatialindex_c 0.0 #3.0

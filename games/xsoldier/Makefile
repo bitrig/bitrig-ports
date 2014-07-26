@@ -3,11 +3,10 @@
 COMMENT =	space-based shoot'em up game for X11
 
 DISTNAME =	xsoldier-1.8
+REVISION =	0
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://www.interq.or.jp/libra/oohara/xsoldier/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

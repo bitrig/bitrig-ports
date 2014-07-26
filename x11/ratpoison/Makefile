@@ -3,11 +3,10 @@
 COMMENT=	minimal wm based on GNU screen
 
 DISTNAME=	ratpoison-1.4.7
+REVISION=	0
 
 CATEGORIES=	x11
 HOMEPAGE=	http://www.nongnu.org/ratpoison/
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

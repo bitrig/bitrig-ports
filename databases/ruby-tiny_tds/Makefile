@@ -3,12 +3,10 @@
 COMMENT =	simple and fast ruby binding to FreeTDS
 
 DISTNAME =	tiny_tds-0.5.1
-REVISION =	2
+REVISION =	3
 CATEGORIES =	databases
 
 HOMEPAGE =	https://github.com/rails-sqlserver/tiny_tds
-
-MAINTAINER  =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT License
 PERMIT_PACKAGE_CDROM =	Yes

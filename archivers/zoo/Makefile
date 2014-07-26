@@ -10,7 +10,7 @@ MASTER_SITES=	http://spacehopper.org/mirrors/
 # Conditional
 PERMIT_PACKAGE_CDROM=	Yes
 
-REVISION =	1
+REVISION =	2
 WANTLIB=		c
 
 MAKE_FLAGS=	CC="${CC}" OPTIM="${CFLAGS}"

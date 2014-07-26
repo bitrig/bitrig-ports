@@ -4,12 +4,10 @@ COMMENT=		DateTime related constraints and coercions for Moose
 
 MODULES=		cpan
 DISTNAME=		MooseX-Types-DateTime-0.10
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 USE_GROFF=		Yes
-
-MAINTAINER=		Gleydson Soares <gsoares@trusted.com.br>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -7,7 +7,7 @@ COMMENT=	perl binding for curl
 MODULES=	cpan devel/gettext
 DISTNAME=	WWW-Curl-4.15
 EPOCH=		0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www net
 
 HOMEPAGE=	http://curl.haxx.se/libcurl/perl/

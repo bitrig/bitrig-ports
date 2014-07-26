@@ -5,11 +5,9 @@ SHARED_ONLY=	Yes
 COMMENT=	interface to iconv() codeset conversion function
 
 DISTNAME=	Text-Iconv-1.7
-REVISION=	3
+REVISION=	4
 CATEGORIES=	converters
 MODULES=	converters/libiconv cpan
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

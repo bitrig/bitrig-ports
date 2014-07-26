@@ -5,7 +5,7 @@ COMMENT-main=	eXtensible Open Router Platform
 VERSION=	1.6
 DISTNAME=	xorp-${VERSION}
 PKGNAME-main=	${DISTNAME}
-REVISION-main=	5
+REVISION-main=	6
 CATEGORIES=	net
 HOMEPAGE=	http://www.xorp.org/
 

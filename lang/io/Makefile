@@ -7,7 +7,7 @@ COMMENT =	embeddable prototype-based language
 
 DISTNAME =	stevedekorte-io-2011.09.12-106-g02f9800
 PKGNAME =	io-20110905
-REVISION =	10
+REVISION =	11
 
 CATEGORIES =	lang
 
@@ -19,8 +19,6 @@ SHARED_LIBS =	iovmall			0.0 \
 MASTER_SITES =  http://spacehopper.org/mirrors/
 
 HOMEPAGE =	http://iolanguage.org/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

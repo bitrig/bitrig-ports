@@ -3,13 +3,11 @@
 COMMENT=		statistical anti-spam filter
 
 DISTNAME=		spambayes-1.1a4
-REVISION =		4
+REVISION =		5
 
 CATEGORIES=		mail
 
 HOMEPAGE=		http://www.spambayes.org/
-
-MAINTAINER=		Will Maier <willmaier@ml1.net>
 
 # PSF
 PERMIT_PACKAGE_CDROM=	Yes

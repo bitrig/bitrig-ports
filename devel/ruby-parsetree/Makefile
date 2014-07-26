@@ -4,6 +4,7 @@ COMMENT =	extracts the parse tree for an entire class or a method
 
 DISTNAME =	ParseTree-3.0.9
 PKGNAME =	${DISTNAME:L}
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.zenspider.com/ZSS/Products/ParseTree/

@@ -2,6 +2,7 @@
 
 COMMENT =	KDE math features
 DISTNAME =	analitza-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	analitza		51.1	# 4.7
 SHARED_LIBS +=	analitzagui		51.1	# 4.7

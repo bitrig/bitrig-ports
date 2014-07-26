@@ -4,10 +4,9 @@ COMMENT =	GVfs mountpoint manager
 
 XFCE_VERSION =	0.4.2
 XFCE_GOODIE =	gigolo
+REVISION =	0
 
 CATEGORIES =	x11
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 HOMEPAGE =	http://www.uvena.de/gigolo/
 

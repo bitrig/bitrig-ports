@@ -3,7 +3,7 @@
 COMMENT=		library for audio metadata lookup
 
 DISTNAME=		libmusicbrainz-3.0.2
-REVISION=		4
+REVISION=		5
 
 SHARED_LIBS=		musicbrainz3	0.0	# .6.1
 CATEGORIES=		audio

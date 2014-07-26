@@ -3,7 +3,7 @@
 COMMENT=	simple library for generating UUIDs
 
 DISTNAME=	uuidtools-2.1.1
-REVISION =	3
+REVISION =	4
 CATEGORIES=	devel
 
 # MIT

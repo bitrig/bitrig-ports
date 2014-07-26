@@ -4,7 +4,7 @@ COMMENT=	build IPv4 and IPv6 address space hierarchies
 
 MODULES=	cpan
 DISTNAME=       Net-IPTrie-0.7
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 # perl

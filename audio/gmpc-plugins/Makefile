@@ -9,12 +9,10 @@ VERSION =	11.8.16
 DISTNAME =	gmpc-plugins-${VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-wikipedia =	gmpc-wikipedia-${VERSION}
-REVISION-main =		4
-REVISION-wikipedia =	6
+REVISION-main =		5
+REVISION-wikipedia =	7
 
 CATEGORIES =	audio
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 HOMEPAGE =	http://gmpclient.org/plugins
 MASTER_SITES =	http://www.musicpd.org/download/gmpc-plugins/${VERSION}/

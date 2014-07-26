@@ -3,10 +3,8 @@
 COMMENT =		simple XML library
 
 DISTNAME =		xml-1.3.7
-REVISION =		5
+REVISION =		6
 CATEGORIES =		textproc
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,6 +4,7 @@ COMMENT =	update dyndns.org with correct ip address
 
 MODULES =	cpan
 DISTNAME =	Net-DNS-DynDNS-0.96
+REVISION =	0
 CATEGORIES =	net
 
 # Perl

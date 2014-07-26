@@ -5,13 +5,11 @@ COMMENT =		Pyrex generated python interface to PROJ.4 library
 MODPY_EGG_VERSION =	1.9.3
 DISTNAME =		pyproj-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/py/py-/}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		geo
 
 HOMEPAGE =		https://code.google.com/p/pyproj/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

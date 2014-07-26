@@ -2,7 +2,7 @@
 
 COMMENT =		convert DocBook to LaTeX, DVI, PostScript, and PDF
 DISTNAME =		dblatex-0.3
-REVISION =		8
+REVISION =		9
 CATEGORIES =		textproc
 
 # GPLv2+

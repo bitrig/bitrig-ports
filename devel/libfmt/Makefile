@@ -3,11 +3,11 @@
 COMMENT=	Extensible formatted print C library
 
 VERSION=	2.0
+REVISION=	0
 DISTNAME=	libfmt-${VERSION}
 CATEGORIES=	devel plan9
 MASTER_SITES=	${HOMEPAGE}
 HOMEPAGE=	http://pdos.lcs.mit.edu/~rsc/software/
-MAINTAINER=	Markus Friedl <markus@openbsd.org>
 EXTRACT_SUFX=	.tgz
 
 BUILD_DEPENDS=	devel/libutf

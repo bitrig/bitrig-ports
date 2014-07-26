@@ -3,11 +3,10 @@
 COMMENT =		basic types for representing XML
 
 DISTNAME =		xml-types-0.3.4
+REVISION =		0
 CATEGORIES =		textproc
 
 HOMEPAGE =		https://john-millikin.com/software/haskell-xml/
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

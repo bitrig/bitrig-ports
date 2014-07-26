@@ -3,7 +3,7 @@
 COMMENT=	little and fast Web crawler
 
 DISTNAME=	larbin-2.6.3
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
 
 HOMEPAGE=	http://larbin.sourceforge.net/index-eng.html

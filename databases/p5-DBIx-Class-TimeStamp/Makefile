@@ -4,6 +4,7 @@ COMMENT =	automatically set and update time based columns
 
 MODULES =	cpan
 DISTNAME =	DBIx-Class-TimeStamp-0.14
+REVISION =	0
 CATEGORIES =	databases
 
 # same as perl

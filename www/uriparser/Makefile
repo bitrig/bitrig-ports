@@ -3,6 +3,7 @@
 COMMENT =		URI parsing library
 
 DISTNAME =		uriparser-0.8.0
+REVISION =		0
 
 SHARED_LIBS +=  uriparser                 0.0 # 1.15
 

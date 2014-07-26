@@ -2,12 +2,10 @@
 
 COMMENT=		dynamic menu for X11
 DISTNAME=		dmenu-4.5
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		x11
 HOMEPAGE=		http://tools.suckless.org/dmenu
-
-MAINTAINER=		Jim Razmus II <jim@openbsd.org>
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes

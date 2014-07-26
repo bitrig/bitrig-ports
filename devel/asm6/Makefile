@@ -3,6 +3,7 @@
 COMMENT =	simple 6502 assembler
 
 DISTNAME =	asm6-1.6
+REVISION =	0
 EXTRACT_SUFX =	.zip
 
 CATEGORIES =	devel

@@ -3,7 +3,7 @@
 COMMENT=	common interface to speech synthesis
 
 DISTNAME=	speech-dispatcher-0.8
-REVISION=	3
+REVISION=	4
 
 SHARED_LIBS +=  speechd              1.0      # .6.0
 

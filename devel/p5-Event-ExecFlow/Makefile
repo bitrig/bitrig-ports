@@ -4,6 +4,7 @@ COMMENT=	high level API for event-based execution flow control
 
 MODULES=	cpan
 DISTNAME=	Event-ExecFlow-0.64
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

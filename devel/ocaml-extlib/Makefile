@@ -3,7 +3,7 @@
 COMMENT=		extended standard library for OCaml
 
 DISTNAME=		extlib-1.5.3
-REVISION=		2
+REVISION=		3
 PKGNAME=		ocaml-${DISTNAME}
 CATEGORIES=		devel
 

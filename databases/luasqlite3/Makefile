@@ -4,7 +4,7 @@ SHARED_ONLY=	Yes
 
 COMMENT=	binding of sqlite3 for lua
 PKGNAME=	luasqlite3-0.4.1
-REVISION=	6
+REVISION=	7
 DISTNAME=	lua-sqlite3-0.4.1
 CATEGORIES=	databases
 MASTER_SITES=	${HOMEPAGE}

@@ -3,10 +3,8 @@
 COMMENT =	mysql driver for swift
 
 DISTNAME =	swift-db-mysql-0.3.0
-REVISION =	3
+REVISION =	4
 CATEGORIES =	databases
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

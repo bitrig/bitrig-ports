@@ -4,10 +4,9 @@ COMMENT=	map subrequests to actions in Catalyst
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-SubRequest-0.17
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

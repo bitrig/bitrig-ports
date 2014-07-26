@@ -2,5 +2,6 @@
 
 COMMENT =	Japanese holiday classes for PHP
 HOLNAME =	Japan-0.1.2
+REVISION =	0
 
 .include <bsd.port.mk>

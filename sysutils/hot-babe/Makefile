@@ -3,12 +3,10 @@
 COMMENT=	small utility which displays system activity
 
 DISTNAME=	hot-babe-0.2.2
-REVISION=	10
+REVISION=	11
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://dindinx.net/hotbabe/
-
-MAINTAINER=	Jan Lindblom <cl0wn@ludd.ltu.se>
 
 # Artistic License
 PERMIT_PACKAGE_CDROM=	Yes

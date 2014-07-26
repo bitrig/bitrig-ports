@@ -3,12 +3,11 @@
 COMMENT=	object oriented type setting language
 
 DISTNAME=	lout-3.40
+REVISION=	0
 CATEGORIES=	print textproc
 
 HOMEPAGE=	http://savannah.nongnu.org/projects/lout/
 MASTER_SITES=	${MASTER_SITE_SAVANNAH:=lout/}
-
-MAINTAINER=	Joerg Jung <jung@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

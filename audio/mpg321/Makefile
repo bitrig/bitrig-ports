@@ -6,11 +6,10 @@ SHARED_ONLY=	Yes
 COMMENT=	free clone of mpg123, a command-line mp3 player
 
 VERSION=	0.3.2
+REVISION=	0
 PKGNAME=	mpg321-${VERSION}
 CATEGORIES=	audio
 HOMEPAGE=	http://mpg321.sourceforge.net/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

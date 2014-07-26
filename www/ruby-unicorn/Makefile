@@ -3,11 +3,10 @@
 COMMENT =	ruby-rack HTTP server for Unix and fast clients
 
 DISTNAME =	unicorn-4.8.0
+REVISION =	0
 CATEGORIES =	www
 
 HOMEPAGE =	http://unicorn.bogomips.org/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # Ruby/GPLv2
 PERMIT_PACKAGE_CDROM = Yes

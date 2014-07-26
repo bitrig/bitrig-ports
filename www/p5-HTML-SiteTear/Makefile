@@ -4,11 +4,9 @@ COMMENT=	make a separate copy of a web site in local file system
 
 MODULES=	cpan
 DISTNAME=	HTML-SiteTear-1.42
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Girish Venkatachalam <girish1729@gmail.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

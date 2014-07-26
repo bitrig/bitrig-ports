@@ -3,12 +3,10 @@
 COMMENT =		Haskell Object Observation Debugger
 
 DISTNAME =		hood-0.2
-REVISION =		6
+REVISION =		7
 CATEGORIES =		devel
 
 HOMEPAGE =		http://www.ittc.ku.edu/csdl/fpg/Hood
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

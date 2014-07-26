@@ -4,6 +4,7 @@ COMMENT =	runtime module handling
 
 MODULES =	cpan
 DISTNAME =	Module-Runtime-0.014
+REVISION =	0
 CATEGORIES =	devel
 
 # same as perl

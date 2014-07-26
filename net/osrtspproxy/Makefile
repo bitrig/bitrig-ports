@@ -4,11 +4,9 @@ COMMENT=		RTSP proxy reference implementation
 
 DISTNAME=		osrtspproxy_2_0
 PKGNAME=		osrtspproxy-2.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
 HOMEPAGE=		http://www.rtsp.org/
-
-MAINTAINER=		Alexander von Gernler <grunk@pestilenz.org>
 
 # Real Networks license, permits modification and distribution
 PERMIT_PACKAGE_CDROM=	Yes

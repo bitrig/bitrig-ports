@@ -4,12 +4,11 @@ COMMENT=	gui for ogle
 CATEGORIES=	x11
 
 DISTNAME=	goggles-0.9.1
-REVISION=	3
+REVISION=	4
 
 EXTRACT_SUFX=	.tar.bz2
 MASTER_SITES=	https://gogglesmm.googlecode.com/files/
 HOMEPAGE=	http://www.fifthplanet.net/goggles.html
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 CONFIGURE_STYLE=simple
 CONFIGURE_SCRIPT=/bin/sh ${WRKDIST}/gb

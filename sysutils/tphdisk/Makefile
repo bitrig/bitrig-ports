@@ -6,7 +6,7 @@ ONLY_FOR_ARCHS=	i386
 COMMENT=	hibernation file creator for Phoenix BIOS laptops
 
 PKGNAME=	tphdisk-1.0
-REVISION=	1
+REVISION=	2
 DISTFILES=	tphdisk.c
 CATEGORIES=	sysutils
 

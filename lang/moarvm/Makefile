@@ -11,14 +11,13 @@ COMMENT =		virtual machine for nqp/rakudo
 V =			2014.05
 DISTNAME =		MoarVM-$V
 PKGNAME =		moarvm-$V
+REVISION =		0
 
 SHARED_LIBS =		moar	0.0
 
 CATEGORIES =		lang
 
 HOMEPAGE =		http://moarvm.org/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # Artistic2
 PERMIT_PACKAGE_CDROM =	Yes

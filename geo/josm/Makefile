@@ -7,7 +7,7 @@ DISTNAME=		josm-snapshot-${SVN_REV}
 EXTRACT_SUFX =		.jar
 EXTRACT_CASES+=		*.jar) unzip -qa ${FULLDISTDIR}/$$archive -d ${WRKDIST};;
 PKGNAME=		josm-${SVN_REV}
-REVISION=		0
+REVISION=		1
 
 PKG_ARCH=		*
 
@@ -15,8 +15,6 @@ CATEGORIES=		geo
 
 HOMEPAGE=		http://josm.openstreetmap.de/
 MASTER_SITES=		${HOMEPAGE}/download/
-
-MAINTAINER=		Holger Mikolon <holger@mikolon.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

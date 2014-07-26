@@ -5,11 +5,9 @@ COMMENT=	shell-like command line ftp and sftp client
 DISTNAME =	lftp-4.4.15
 CATEGORIES=	net
 
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://lftp.yar.ru/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=   Yes

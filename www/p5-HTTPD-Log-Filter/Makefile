@@ -4,7 +4,7 @@ COMMENT=	httpd log filter library
 
 MODULES=	cpan
 DISTNAME=	HTTPD-Log-Filter-1.08
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
 USE_GROFF =	Yes
 

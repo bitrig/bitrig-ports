@@ -3,15 +3,13 @@
 COMMENT=	postfix greylist daemon
 
 DISTNAME=	postgrey-1.34
-REVISION=	1
+REVISION=	2
 CATEGORIES=	mail
 
 HOMEPAGE=	http://postgrey.schweikert.ch/
 
 MASTER_SITES=	${HOMEPAGE}/pub/ \
 		${HOMEPAGE}/pub/old/
-
-MAINTAINER=     Jakob Schlyter <jakob@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -2,10 +2,8 @@
 
 COMMENT=		web frontend to symon
 DISTNAME=		syweb-0.65
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www sysutils
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE=		http://www.xs4all.nl/~wpd/symon
 

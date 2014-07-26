@@ -6,7 +6,7 @@ DISTNAME =	xmedcon-0.13.0
 SHARED_LIBS =	mdc	2.3	# .2.1
 CATEGORIES =	graphics
 
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://xmedcon.sourceforge.net
 

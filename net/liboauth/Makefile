@@ -3,6 +3,7 @@
 COMMENT=		library implementing the OAuth Core RFC 5849 standard
 
 DISTNAME=		liboauth-1.0.2
+REVISION=		0
 SHARED_LIBS +=  oauth                8.4      # 8.6
 CATEGORIES=		net
 

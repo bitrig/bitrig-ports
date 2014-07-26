@@ -11,7 +11,7 @@ PERMIT_PACKAGE_CDROM=   no modifications, no fee
 PERMIT_PACKAGE_FTP=     no modifications
 PERMIT_DISTFILES_FTP=   Yes
 
-REVISION =	7
+REVISION =	8
 WANTLIB=	ICE SM X11 Xau Xdmcp Xext Xt c m Xm
 
 LIB_DEPENDS += x11/openmotif

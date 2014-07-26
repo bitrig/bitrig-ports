@@ -4,7 +4,7 @@ COMMENT=	error codes for GnuPG related software
 
 DISTNAME=	libgpg-error-1.13
 CATEGORIES=	security devel
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  gpg-error            3.3      # 11.0
 

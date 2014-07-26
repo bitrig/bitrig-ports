@@ -5,7 +5,7 @@ COMMENT=	console napster client
 VERSION=	1.3g
 DISTNAME=	TekNap-${VERSION}
 PKGNAME=	teknap-${VERSION}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://bwap.clawz.com/downloads/
 

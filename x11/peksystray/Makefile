@@ -3,7 +3,7 @@
 COMMENT=		freedesktop.org compliant system tray
 
 DISTNAME=		peksystray-0.4.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		x11
 EXTRACT_SUFX=		.tar.bz2
 

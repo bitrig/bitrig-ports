@@ -3,6 +3,7 @@
 COMMENT=	fast and lightweight file manager
 
 DISTNAME=	pcmanfm-1.2.0
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	x11

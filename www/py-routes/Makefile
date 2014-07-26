@@ -5,6 +5,7 @@ COMMENT =	re-implementation of the rails routes system
 MODPY_EGG_VERSION = 1.13
 DISTNAME =	Routes-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
+REVISION =	0
 
 CATEGORIES =	www devel
 

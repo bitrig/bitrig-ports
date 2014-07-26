@@ -4,6 +4,7 @@ COMMENT=	use shorter names in catalyst tt views (deprecated)
 
 MODULES=	cpan
 DISTNAME=	Catalyst-View-TT-FunctionGenerator-0.02
+REVISION=	0
 CATEGORIES=	textproc devel
 USE_GROFF =	Yes
 

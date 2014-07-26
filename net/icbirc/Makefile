@@ -3,13 +3,11 @@
 COMMENT=	proxy IRC client with ICB server
 
 DISTNAME=	icbirc-1.8
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.benzedrine.cx/
 
 HOMEPAGE=	http://www.benzedrine.cx/icbirc.html
-
-MAINTAINER=	Daniel Hartmeier <dhartmei@openbsd.org>
 
 WRKDIST=	${WRKDIR}/icbirc
 

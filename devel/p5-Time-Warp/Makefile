@@ -6,7 +6,7 @@ COMMENT =	control over the flow of time
 
 MODULES =	cpan
 DISTNAME =	Time-Warp-0.5
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 
 # same as perl

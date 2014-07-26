@@ -7,7 +7,7 @@ COMMENT=	interface to gettext() internationalization function
 MODULES=	cpan
 DISTNAME=	gettext-1.05
 PKGNAME=	p5-Locale-${DISTNAME}
-REVISION=	5
+REVISION=	6
 CPAN_AUTHOR=	PVANDRY
 CATEGORIES=	converters devel
 

@@ -3,6 +3,7 @@
 COMMENT=	provides abstract data types (ADTs)
 
 VERSION=	0.0.9
+REVISION=	0
 DISTNAME=	vanessa_adt-${VERSION}
 
 SHARED_LIBS=	vanessa_adt			1.0	# 1.0

@@ -18,7 +18,12 @@ PKGNAME-gdbm =		ruby-gdbm-${VERSION}.${PATCHLEVEL}
 PKGNAME-dbm =		ruby-dbm-${VERSION}.${PATCHLEVEL}
 PKGNAME-tk =		ruby-tk-${VERSION}.${PATCHLEVEL}
 PKGNAME-ri_docs =	ruby-ri_docs-${VERSION}.${PATCHLEVEL}
-REVISION-main =		0
+
+REVISION-main =		1
+REVISION-gdbm =		0
+REVISION-dbm =		0
+REVISION-tk =		0
+REVISION-ri_docs =	0
 
 PKG_ARCH-ri_docs =	*
 WANTLIB-ri_docs =	# empty

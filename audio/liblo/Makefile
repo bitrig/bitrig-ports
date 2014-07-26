@@ -5,7 +5,7 @@ DISTNAME =		liblo-0.26
 SHARED_LIBS +=  lo                   0.0      # 7.0
 CATEGORIES =		audio
 HOMEPAGE =		http://liblo.sourceforge.net/
-REVISION =		1
+REVISION =		2
 
 # LGPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

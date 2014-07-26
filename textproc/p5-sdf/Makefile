@@ -4,7 +4,7 @@ COMMENT=	simple document format
 
 MODULES=	cpan
 DISTNAME=	sdf-2.001
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Pod/}

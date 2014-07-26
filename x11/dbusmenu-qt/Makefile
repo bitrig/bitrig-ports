@@ -5,7 +5,7 @@ COMMENT =	D-Bus menu implementation for Qt
 V =		0.9.2
 DISTNAME =	libdbusmenu-qt-${V}
 PKGNAME =	dbusmenu-qt-${V}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	x11 devel
 HOMEPAGE =	https://launchpad.net/libdbusmenu-qt/
 

@@ -3,12 +3,10 @@
 COMMENT =	DBI driver abstraction for rendering charts and graphs
 
 DISTNAME =	DBD-Chart-0.82
-REVISION =	0
+REVISION =	1
 CATEGORIES =	databases graphics
 MODULES =	cpan
 USE_GROFF =	Yes
-
-MAINTAINER =	Okan Demirmen <okan@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

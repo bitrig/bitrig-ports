@@ -4,6 +4,7 @@ COMMENT=	error/exception handling in an OO-ish way
 
 MODULES=	cpan
 DISTNAME=	Error-0.17019
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

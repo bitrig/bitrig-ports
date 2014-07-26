@@ -2,12 +2,10 @@
 
 COMMENT =	network traffic monitor and statistics
 DISTNAME =	slurm-0.3.3
-REVISION =	1
+REVISION =	2
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.wormulon.net/slurm/
-
-MAINTAINER =	Ryan Freeman <ryan@slipgate.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

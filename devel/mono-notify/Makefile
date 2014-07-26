@@ -6,7 +6,7 @@ COMMENT=	C\# client implementation for Desktop Notifications
 V=		0.4.0
 DISTNAME=	notify-sharp-$V
 PKGNAME=	mono-notify-$V
-REVISION =	2
+REVISION =	3
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.ndesk.org/NotifySharp

@@ -5,6 +5,7 @@ COMMENT= 	pure perl client interface to memcached
 MODULES=	cpan
 
 DISTNAME=	Cache-Memcached-1.30
+REVISION=	0
 CATEGORIES=	devel
 HOMEPAGE=	http://www.danga.com/memcached/
 

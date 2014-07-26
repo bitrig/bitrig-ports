@@ -5,6 +5,7 @@ COMMENT =		efficient hashing-based container types
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		unordered-containers-0.2.3.0
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

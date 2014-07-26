@@ -4,8 +4,6 @@ CATEGORIES ?=		net devel
 
 HOMEPAGE ?=		http://gupnp.org/
 
-MAINTAINER?=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # GPLv2/LGPLv2.1
 PERMIT_PACKAGE_CDROM?= 	Yes
 

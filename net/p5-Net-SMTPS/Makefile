@@ -4,6 +4,7 @@ COMMENT=	SSL/STARTTLS support for Net::SMTP
 
 MODULES=	cpan
 DISTNAME=	Net-SMTPS-0.03
+REVISION=	0
 CATEGORIES=	net mail
 
 # perl

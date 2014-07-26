@@ -4,9 +4,8 @@ COMMENT=	ICMP v6 layer object
 
 MODULES=	cpan
 DISTNAME=	Net-Frame-Layer-ICMPv6-1.06
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Gleydson Soares <gsoares@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,6 +4,7 @@ COMMENT=	efficient reading/writing of complete files
 
 MODULES=	cpan
 DISTNAME=	File-Slurp-9999.19
+REVISION=	0
 CATEGORIES=	devel
 
 # Perl

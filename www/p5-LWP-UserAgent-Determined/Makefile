@@ -4,11 +4,9 @@ COMMENT=	virtual browser that retries on errors
 
 MODULES=	cpan
 DISTNAME=	LWP-UserAgent-Determined-1.03
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

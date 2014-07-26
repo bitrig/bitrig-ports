@@ -2,6 +2,7 @@
 
 COMMENT =	Japanese reference tool for KDE
 DISTNAME =	kiten-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kiten			50.0 # 4.7
 

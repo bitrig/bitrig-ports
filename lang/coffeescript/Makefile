@@ -7,10 +7,8 @@ COMMENT =	little language that compiles to javascript
 NPM_VERSION =	1.7.1
 NPM_NAME =	coffee-script
 PKGNAME =	coffeescript-${NPM_VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	lang
-
-MAINTAINER =	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE =	http://coffeescript.org/
 

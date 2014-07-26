@@ -2,11 +2,10 @@
 
 COMMENT=		speaking ascii cow
 DISTNAME=		cowsay-3.03
+REVISION=		0
 CATEGORIES=		games
 
 HOMEPAGE=		http://www.nog.net/~tony/warez/cowsay.shtml
-
-MAINTAINER=		Sebastian Stark <seb@todesplanet.de>
 
 # "Same as Perl"
 PERMIT_PACKAGE_CDROM=	Yes

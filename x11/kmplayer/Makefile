@@ -5,7 +5,7 @@ CATEGORIES=	x11 x11/kde
 DISTNAME=	kmplayer-0.6.4
 EXTRACT_SUFX=	.tar.bz2
 
-REVISION=	10
+REVISION=	11
 
 SHARED_LIBS=	kparts_kmplayer  0.0 \
 		kdeinit_kmplayer 0.0
@@ -13,7 +13,6 @@ SHARED_LIBS=	kparts_kmplayer  0.0 \
 MASTER_SITES=	http://www.xs4all.nl/~jjvrieze/
 WRKDIST=${WRKDIR}/kmplayer
 VERSION=3
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 MODKDE_VERSION=	3.1
 MODULES=	x11/kde devel/gettext

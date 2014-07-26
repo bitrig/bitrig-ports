@@ -3,7 +3,7 @@
 COMMENT=	GNUstep image viewer
 
 DISTNAME=	ImageViewer-0.6.3
-REVISION =	6
+REVISION =	7
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://freshmeat.net/projects/imageviewer

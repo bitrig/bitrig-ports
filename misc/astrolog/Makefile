@@ -5,7 +5,7 @@ COMMENT=	astrology program for X11 and alpha-numeric terminals
 V=		5.40
 DISTNAME=	ast54unx
 PKGNAME=	astrolog-${V}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	misc
 
 HOMEPAGE=	http://www.astrolog.org/astrolog.htm

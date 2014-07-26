@@ -4,6 +4,7 @@ COMMENT=	patched fonts with symbols for powerline/airline
 
 V=		0.20140429
 DISTNAME=	powerline-fonts-$V
+REVISION=	0
 
 CATEGORIES=	fonts
 

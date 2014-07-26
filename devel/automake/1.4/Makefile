@@ -3,7 +3,7 @@
 VERSION=	1.4
 DISTNAME=	automake-${VERSION}-p6
 PKGNAME=	automake-1.4.6
-REVISION=	3
+REVISION=	4
 PKGSPEC=	automake->=${VERSION},<1.5
 
 CONFIGURE_STYLE=gnu

@@ -4,12 +4,11 @@ COMMENT=		color ascii art library
 
 DISTNAME=		libcaca-0.99.beta18
 PKGNAME=		libcaca-0.99.18
-REVISION=		0
+REVISION=		1
 SHARED_LIBS +=  caca           1.1               # .0.99
 CATEGORIES=		graphics
 
 HOMEPAGE=		http://caca.zoy.org/wiki/libcaca
-MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
 
 # LGPLv2.1/Do What The Fuck You Want To Public License
 PERMIT_PACKAGE_CDROM=   Yes

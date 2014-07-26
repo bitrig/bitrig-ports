@@ -4,12 +4,11 @@ SHARED_ONLY =		Yes
 
 COMMENT =		GTK+2 IRC Client
 DISTNAME =		hexchat-2.10.0
-REVISION =		0
+REVISION =		1
 EXTRACT_SUFX =		.tar.xz
 CATEGORIES =		net x11
 
 HOMEPAGE =		http://hexchat.github.io/
-MAINTAINER =		Florian Stinglmayr <florian@n0la.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

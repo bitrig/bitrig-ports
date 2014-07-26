@@ -3,7 +3,7 @@
 COMMENT=	X11 viewer for text files
 
 DISTNAME=	xless-1.7
-REVISION=	4
+REVISION=	5
 CATEGORIES=	misc	
 
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,6 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	multimedia player
 
 DISTNAME=	xine-ui-0.99.8
+REVISION=	0
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xine/}
 EXTRACT_SUFX=	.tar.xz

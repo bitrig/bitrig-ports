@@ -5,6 +5,7 @@ COMMENT=	test suite using WWW::Mechanize
 MODULES=	cpan
 
 DISTNAME=	Test-WWW-Mechanize-1.44
+REVISION=	0
 CATEGORIES=	www devel
 
 # Artitistic License

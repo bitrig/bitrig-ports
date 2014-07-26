@@ -6,10 +6,8 @@ MODPY_EGG_VERSION =	2.6.0
 
 DISTNAME =	pysqlite-${MODPY_EGG_VERSION}
 PKGNAME =	py-sqlite2-${MODPY_EGG_VERSION}
-REVISION =	4
+REVISION =	5
 CATEGORIES =	databases devel
-
-MAINTAINER =	Eric Faurot <eric@openbsd.org>
 
 HOMEPAGE =	https://code.google.com/p/pysqlite/
 

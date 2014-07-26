@@ -4,9 +4,8 @@ COMMENT =	generate HTML tables for cgi scripts
 
 MODULES =	cpan
 DISTNAME =	HTML-Table-2.08a
+REVISION =	0
 CATEGORIES =	www devel
-
-MAINTAINER =	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =   Yes

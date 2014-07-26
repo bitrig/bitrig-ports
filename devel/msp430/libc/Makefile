@@ -5,6 +5,8 @@ COMMENT=		libc for ${TARGET}
 TOOL=			${TARGET}-libc
 TOOL_V= 		20120224
 
+REVISION=		0
+
 LTS_PATCHES=		msp430-libc-20120224-sf3522752.patch
 
 CONFIGURE_STYLE=	# This space intentionally left blank.

@@ -4,6 +4,7 @@ COMMENT=	HTML tag cloud generator
 
 MODULES=	cpan
 DISTNAME=	HTML-TagCloud-0.37
+REVISION=	0
 CATEGORIES=	www
 
 # Perl

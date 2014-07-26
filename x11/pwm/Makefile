@@ -3,13 +3,11 @@
 COMMENT=		lightweight window manager with emphasis on usability
 
 DISTNAME=		pwm-20060517
-REVISION=		1
+REVISION=		2
 CATEGORIES=		x11
 
 HOMEPAGE=		http://iki.fi/tuomov/
 MASTER_SITES=		${HOMEPAGE}dl/
-
-MAINTAINER=		Gregory Steuck <greg-openbsd-pwm@nest.cx>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

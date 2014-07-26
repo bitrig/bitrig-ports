@@ -3,14 +3,12 @@
 COMMENT=	IBM 3270 terminal emulator for the X Window System
 
 DISTNAME=	x3270-3.3.6
-REVISION=	3
+REVISION=	4
 CATEGORIES=    	comms
 
 HOMEPAGE=	http://x3270.bgp.nu/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=x3270/}
 EXTRACT_SUFX=	.tgz
-
-MAINTAINER=	Claudio Correa <correa@pucpcaldas.br>
 
 # BSD, MIT
 PERMIT_PACKAGE_CDROM=	Yes

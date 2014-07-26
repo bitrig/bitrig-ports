@@ -4,11 +4,9 @@ COMMENT=		Samba security scanner
 
 DISTNAME=       	ADMsmb-v0.2
 PKGNAME=		ADMsmb-0.2
-REVISION =		2
+REVISION =		3
 CATEGORIES=		security
 EXTRACT_SUFX=		.tgz
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	no license
 PERMIT_PACKAGE_FTP=	no license

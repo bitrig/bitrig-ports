@@ -3,9 +3,8 @@
 COMMENT =		a Haskell 98 logically uninhabited data type
 
 DISTNAME =		void-0.6.1
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

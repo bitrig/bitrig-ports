@@ -4,7 +4,7 @@ COMMENT=		simple to use text editor for X11
 
 DISTNAME=		aXe-6.1.2
 PKGNAME=		${DISTNAME:L}
-REVISION=		3
+REVISION=		4
 CATEGORIES=		editors
 
 PERMIT_PACKAGE_CDROM=	No

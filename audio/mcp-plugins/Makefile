@@ -6,7 +6,7 @@ COMMENT =		MCP LADSPA plugins
 
 DISTNAME =		MCP-plugins-0.4.0
 PKGNAME =		${DISTNAME:L}
-REVISION =		1
+REVISION =		2
 CATEGORIES =		audio
 
 HOMEPAGE =		http://kokkinizita.net/linuxaudio/ladspa/index.html

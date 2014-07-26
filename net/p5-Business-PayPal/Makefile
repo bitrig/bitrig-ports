@@ -3,7 +3,7 @@
 COMMENT=	extension for automating PayPal transactions
 
 DISTNAME=	Business-PayPal-0.04
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 # perl

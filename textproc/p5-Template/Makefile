@@ -8,7 +8,7 @@ MODULES=		cpan
 VERSION=		2.22
 DISTNAME=		Template-Toolkit-${VERSION}
 PKGNAME=		p5-Template-${VERSION}
-REVISION=		2
+REVISION=		3
 CATEGORIES=		textproc
 USE_GROFF =		Yes
 

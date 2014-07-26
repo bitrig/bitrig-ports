@@ -5,7 +5,7 @@ COMMENT=		NX X proxy support tool
 DASHVERSION=		1
 DISTNAME=		nxproxy-${MAJOR_VERSION}-${DASHVERSION}
 PKGNAME=		nxproxy-${MAJOR_VERSION}.${DASHVERSION}
-REVISION=		1
+REVISION=		2
 
 WANTLIB += c m Xcomp
 WANTLIB += c++ c++abi pthread

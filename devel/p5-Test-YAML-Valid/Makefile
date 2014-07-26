@@ -4,9 +4,8 @@ COMMENT =	test for valid YAML
 
 MODULES =	cpan
 DISTNAME =	Test-YAML-Valid-0.04
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

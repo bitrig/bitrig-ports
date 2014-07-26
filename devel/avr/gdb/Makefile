@@ -5,7 +5,7 @@ COMMENT=	Atmel AVR 8-bit RISC microcontrollers' GNU gdb
 VER=		6.8
 DISTNAME=	gdb-${VER}
 PKGNAME=	avr-gdb-${VER}
-REVISION=	8
+REVISION=	9
 
 HOMEPAGE=	https://www.gnu.org/software/gdb/gdb.html
 

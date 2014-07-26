@@ -4,10 +4,10 @@ COMMENT =	Tcl Database Connectivity
 
 DISTNAME =	tdbc1.0.0
 PKGNAME =	tdbc-1.0.0
+REVISION =	0
 SHARED_LIBS =	tdbc100 0.0
 CATEGORIES =	databases
 HOMEPAGE =	http://tdbc.tcl.tk/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

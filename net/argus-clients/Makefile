@@ -5,12 +5,10 @@ COMMENT =	utilities to read and parse Argus data
 DISTNAME =	argus-clients-3.0.6.2
 CATEGORIES =	net
 
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE =	http://qosient.com/argus/
 MASTER_SITES =	${HOMEPAGE}/src/
-
-MAINTAINER =	Steven Mestdagh <steven@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

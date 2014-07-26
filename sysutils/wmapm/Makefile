@@ -5,7 +5,7 @@ ONLY_FOR_ARCHS=		${APM_ARCHS}
 COMMENT=		wm-dockapp; APM/battery monitor
 
 DISTNAME=		wmapm-3.1
-REVISION =		2
+REVISION =		3
 CATEGORIES=		sysutils x11 x11/windowmaker
 
 HOMEPAGE=		http://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml

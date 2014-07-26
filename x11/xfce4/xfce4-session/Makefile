@@ -3,7 +3,7 @@
 COMMENT=	Xfce4 session manager
 
 XFCE_PROJECT=	xfce4-session
-REVISION =	2
+REVISION =	3
 
 SHARED_LIBS +=	xfsm-4.6	1.0 # .0.0
 

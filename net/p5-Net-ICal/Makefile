@@ -4,11 +4,9 @@ COMMENT=	Perl interface to RFC2445 (iCalendar) objects
 
 MODULES=	cpan
 DISTNAME=	Net-ICal-0.15
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -9,8 +9,8 @@ V=		2.0.10
 DISTNAME=	vlc-${V}
 PKGNAME-main=	${DISTNAME}
 PKGNAME-jack=	vlc-jack-${V}
-REVISION-main=	2
-REVISION-jack=	0
+REVISION-main=	3
+REVISION-jack=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://download.videolan.org/pub/videolan/vlc/${V}/
 EXTRACT_SUFX=	.tar.xz
@@ -19,8 +19,6 @@ SHARED_LIBS=	vlc	2.0 \
 		vlccore	2.1
 
 HOMEPAGE=	http://www.videolan.org/vlc/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # LGPLv2.1+ and GPLv2+
 PERMIT_PACKAGE_CDROM=	patents

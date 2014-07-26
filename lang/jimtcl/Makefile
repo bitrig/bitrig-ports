@@ -5,11 +5,11 @@ SHARED_ONLY=		Yes
 COMMENT=		small footprint implementation of Tcl
 
 DISTNAME=		jimtcl-0.75pl0
+REVISION=		0
 SHARED_LIBS=		jim 1.1
 CATEGORIES=		lang devel
 
 HOMEPAGE=		http://jim.tcl.tk/
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

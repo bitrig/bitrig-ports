@@ -5,9 +5,7 @@ COMMENT=	clone of the Mastermind game
 DISTNAME=	braincurses-0.5b
 CATEGORIES=	games
 HOMEPAGE=	http://sourceforge.net/projects/braincurses/
-REVISION=	0
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
+REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

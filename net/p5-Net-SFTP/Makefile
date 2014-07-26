@@ -4,7 +4,7 @@ COMMENT=	client for the Secure File Transfer Protocol
 
 MODULES=	cpan
 DISTNAME=	Net-SFTP-0.10
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net security
 USE_GROFF =	Yes
 

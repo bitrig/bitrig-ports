@@ -13,8 +13,8 @@ MASTER_SITES = http://warpcore.org/rftg/
 MULTI_PACKAGES = -client #-server
 SUBPACKAGE ?= -client
 
-REVISION-client =	1
-REVISION-server =	1
+REVISION-client =	2
+REVISION-server =	2
 
 # Licence: GPL
 # official authorization from the game publisher (Rio Grande)

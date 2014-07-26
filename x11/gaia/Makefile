@@ -3,7 +3,7 @@
 COMMENT=	3D earth viewer with GPS support
 
 DISTNAME=	gaia-0.1.2
-REVISION=	9
+REVISION=	10
 CATEGORIES=	x11 geo
 
 EXTRACT_SUFX=	.tar.bz2

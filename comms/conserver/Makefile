@@ -3,10 +3,8 @@
 COMMENT=	manage remote serial consoles via TCP/IP
 
 DISTNAME=	conserver-8.1.16
-REVISION=	8
+REVISION=	9
 CATEGORIES=	comms
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE=	http://www.conserver.com/
 

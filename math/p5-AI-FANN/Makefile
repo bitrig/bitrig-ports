@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		interface to the Fast Artificial Neural Network library
 
 DISTNAME=		AI-FANN-0.10
-REVISION=		4
+REVISION=		5
 CATEGORIES=		math
 
 MODULES=		cpan

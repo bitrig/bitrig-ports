@@ -46,8 +46,6 @@ SHARED_LIBS =	estdc++		13.0 \
 		ssp		0.0 \
 		gomp		1.0
 
-MAINTAINER =	Marc Espie <espie@openbsd.org>
-
 USE_GROFF =	Yes
 PSEUDO_FLAVORS = no_c++ no_f95 no_objc no_java no_ada full
 FLAVOR ?= 

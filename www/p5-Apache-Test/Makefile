@@ -4,10 +4,8 @@ COMMENT=	test wrapper with helpers for testing Apache
 
 MODULES=	cpan
 DISTNAME=	Apache-Test-1.30
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Apache License 2.0
 PERMIT_PACKAGE_CDROM=	Yes

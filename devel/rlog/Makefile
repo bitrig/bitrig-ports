@@ -5,7 +5,7 @@ DISTNAME =		rlog-1.4
 SHARED_LIBS =		rlog	0.0	# 5.0
 CATEGORIES =		devel
 HOMEPAGE =		http://www.arg0.net/rlog
-REVISION =		0
+REVISION =		1
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

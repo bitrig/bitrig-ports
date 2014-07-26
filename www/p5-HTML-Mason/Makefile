@@ -4,11 +4,11 @@ COMMENT=	high-performance dynamic web authoring system
 
 MODULES=	cpan
 DISTNAME=	HTML-Mason-1.45
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
 
 HOMEPAGE=	http://www.masonhq.com/
-MAINTAINER=	David Hill <dhill@openbsd.org>
 
 # Artistic License
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,13 +4,12 @@ COMMENT =		Firefox OS typeface
 
 # Version 3.1.8
 DISTNAME =		fira-fonts-20140605
+REVISION =		0
 
 CATEGORIES =		fonts x11
 
 # Alternative homepage http://www.carrois.com/fira-3-1/
 HOMEPAGE =		https://mozilla.github.io/Fira/
-
-MAINTAINER =		Juan Francisco Cantero Hurtado <juanfra@openbsd.org>
 
 # SIL OPEN FONT LICENSE Version 1.1
 PERMIT_PACKAGE_CDROM =	Yes

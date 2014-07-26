@@ -5,6 +5,8 @@ COMMENT=		the Git library, take 2
 GH_VER=			v0.21.0
 V=			${GH_VER:S/v//}
 PROJECT=		libgit2
+REVISION=		0
+
 SHARED_LIBS +=  git2                      5.0 # 0.21
 
 MASTER_SITES=		https://github.com/libgit2/${PROJECT}/archive/

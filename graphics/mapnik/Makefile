@@ -5,13 +5,12 @@ COMMENT =	toolkit for developing mapping applications
 DISTNAME =	mapnik-v2.2.0
 PKGNAME =	${DISTNAME:S/v//}
 EXTRACT_SUFX =	.tar.bz2
-REVISION =	2
+REVISION =	3
 
 SHARED_LIBS =	mapnik 2.0 #2.0
 CATEGORIES =	graphics geo
 
 HOMEPAGE =	http://mapnik.org/
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 DPB_PROPERTIES = nojunk
 
 # LGPLv2.1

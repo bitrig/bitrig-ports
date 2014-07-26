@@ -4,6 +4,7 @@ COMMENT =		UFO:AI data
 
 DISTNAME =		ufoai-${V}-data
 PKGNAME = 		ufoai-data-${V}
+REVISION = 		0
 
 EXTRACT_SUFX =		.tar
 

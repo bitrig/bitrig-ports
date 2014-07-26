@@ -7,11 +7,9 @@ COMMENT=	cockroaches hide under your windows
 
 DISTNAME=	xroach
 PKGNAME=	xroach-4.4
-REVISION =	1
+REVISION =	2
 CATEGORIES=	x11 games
 EXTRACT_SUFX=	.tar
-
-MAINTAINER=	Michael Shalayeff <mickey@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		X11 c m pthread-stubs xcb

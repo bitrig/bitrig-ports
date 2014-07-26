@@ -3,13 +3,11 @@
 COMMENT=		simple scripting language for web browsing
 
 DISTNAME=		twill-0.9
-REVISION=		4
+REVISION=		5
 CATEGORIES=		www
 
 HOMEPAGE=		http://twill.idyll.org/
 MASTER_SITES=		http://darcs.idyll.org/~t/projects/
-
-MAINTAINER=		Will Maier <willmaier@ml1.net>
 
 # MIT
 # Includes patched versions of:

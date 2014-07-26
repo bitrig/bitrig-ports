@@ -17,7 +17,7 @@ PKGNAME-ldap=		powerdns-ldap-${V}
 CATEGORIES=		net
 HOMEPAGE=		http://www.powerdns.com/
 
-REVISION=		5
+REVISION=		6
 
 MULTI_PACKAGES=		-main -mysql -pgsql -ldap
 

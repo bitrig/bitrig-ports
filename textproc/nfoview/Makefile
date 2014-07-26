@@ -3,11 +3,11 @@
 COMMENT =	simple viewer for NFO files
 MODPY_EGG_VERSION =	1.14
 DISTNAME =	nfoview-${MODPY_EGG_VERSION}
+REVISION =	0
 EXTRACT_SUFX =	.tar.xz
 CATEGORIES =	textproc x11
 
 HOMEPAGE =	http://home.gna.org/nfoview/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

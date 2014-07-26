@@ -4,11 +4,9 @@ COMMENT=	object oriented time interface
 
 MODULES=	cpan
 DISTNAME=	Time-modules-2006.0814
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Mathieu Sauve-Frankel <msf@kisoku.net>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

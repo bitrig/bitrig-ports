@@ -4,7 +4,7 @@ COMMENT=	simple tree object
 
 MODULES=	cpan
 DISTNAME=	Tree-Simple-1.18
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

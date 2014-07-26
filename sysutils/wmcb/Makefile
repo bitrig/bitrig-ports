@@ -4,7 +4,7 @@ COMMENT=		dockapp; gives access to X11's cut buffers
 
 DISTNAME=		wmcb-0.2
 PKGNAME=		${DISTNAME}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES=		sysutils x11 x11/windowmaker
 

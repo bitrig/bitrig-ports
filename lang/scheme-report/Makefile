@@ -6,6 +6,7 @@ CATEGORIES=	lang books
 
 DISTNAME=	r5rs
 PKGNAME=	${DISTNAME}-19980421
+REVISION=	0
 EXTRACT_SUFX=	.txi
 
 EXTRACT_CASES=	*.txi) cp ${FULLDISTDIR}/$$archive ${WRKDIR};;
@@ -21,8 +22,6 @@ do-install:
 	${INSTALL_DATA} ${WRKBUILD}/r5rs.info ${PREFIX}/info
 
 NO_TEST=	Yes
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

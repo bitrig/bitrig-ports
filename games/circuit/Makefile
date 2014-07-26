@@ -3,10 +3,8 @@
 COMMENT =	finish-the-cycle logic puzzle
 CATEGORIES =	games
 
-MAINTAINER =	Marc Espie <espie@openbsd.org>
-
 DISTNAME =	circuit-0.1.4
-REVISION =	7
+REVISION =	8
 MASTER_SITES =	ftp://quatramaran.ens.fr/pub/cigaes/circuit/
 
 # BSD

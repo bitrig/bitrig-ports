@@ -4,7 +4,7 @@ COMMENT =		digital image kde application
 CATEGORIES =		graphics x11 x11/kde
 V =			0.9.6
 DISTNAME =		digikam-$V
-REVISION =		14
+REVISION =		15
 PKGSPEC =		digikam-<1
 
 SHARED_LIBS +=		digikam              3.0      # .0.0

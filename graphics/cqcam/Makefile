@@ -5,7 +5,7 @@ ONLY_FOR_ARCHS= i386
 COMMENT=	color QuickCam control program
 
 DISTNAME=	cqcam-0.91
-REVISION=	5
+REVISION=	6
 CATEGORIES=	graphics
 
 # GPLv2

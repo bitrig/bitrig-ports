@@ -7,7 +7,7 @@ COMMENT=		Clearlooks based GTK+ 2.x engine
 V=			0.6
 DISTNAME=		39179-rezlooks-$V
 PKGNAME=		gtk2-rezlooks-engine-$V
-REVISION=		2
+REVISION=		3
 CATEGORIES=		x11
 
 # GPLv2

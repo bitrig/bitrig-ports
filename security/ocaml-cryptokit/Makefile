@@ -4,11 +4,10 @@ COMMENT=	cryptographic framework for the Objective-ML language
 CATEGORIES=	security
 
 DISTNAME=	cryptokit-1.6
-REVISION=	3
+REVISION=	4
 PKGNAME=	ocaml-${DISTNAME}
 MASTER_SITES=	http://forge.ocamlcore.org/frs/download.php/891/
 
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 HOMEPAGE=	http://forge.ocamlcore.org/projects/cryptokit/
 
 # GPL 

@@ -6,9 +6,8 @@ COMMENT=	generalisation of wantarray
 
 MODULES=	cpan
 DISTNAME=	Want-0.23
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,10 +6,8 @@ COMMENT=		roles which support overloading
 
 MODULES=		cpan
 DISTNAME=		MooseX-Role-WithOverloading-0.09
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
-
-MAINTAINER=		Jim Razmus II <jim@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

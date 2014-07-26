@@ -7,7 +7,7 @@ COMMENT=	implements DSA using OpenSSL
 DISTNAME=	Crypt-OpenSSL-DSA-0.14
 CATEGORIES=	security
 USE_GROFF =	Yes
-REVISION=	0
+REVISION=	1
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

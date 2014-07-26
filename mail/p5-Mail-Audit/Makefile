@@ -3,6 +3,7 @@
 COMMENT=	library for creating easy mail filters
 
 DISTNAME=	Mail-Audit-2.227
+REVISION=	0
 CATEGORIES=	mail
 
 # perl

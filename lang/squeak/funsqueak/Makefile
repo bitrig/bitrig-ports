@@ -7,6 +7,7 @@ PKG_ARCH =	*
 
 DISTFILES =	FunSqueak3.10alpha.7.zip
 DISTNAME =	squeak-funsqueak-3.10alpha7
+REVISION =	0
 MASTER_SITES =	${SQUEAK_SITE}../various_images/FunSqueak/
 RUN_DEPENDS =	lang/squeak/vm>=3.10
 BUILD_DEPENDS = archivers/unzip

@@ -4,11 +4,9 @@ COMMENT=	parser for plain-text configuration files
 
 MODULES=	cpan
 DISTNAME=	Parse-PlainConfig-2.06
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

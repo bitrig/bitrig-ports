@@ -5,13 +5,11 @@ COMMENT=	library for handling paper characteristics
 V=		1.1.24
 DISTNAME=	libpaper_${V}
 PKGNAME=	libpaper-${V}
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  paper                0.0      # 2.2
 
 CATEGORIES=	print
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 HOMEPAGE=	http://packages.debian.org/unstable/source/libpaper
 

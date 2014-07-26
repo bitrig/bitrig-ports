@@ -12,16 +12,14 @@ FULLPKGNAME-client=	samhain-${VERSION}
 FULLPKGPATH-client=	security/samhain,-client
 PKGNAME-server=		samhain-server-${VERSION}
 
-REVISION-main=		3
-REVISION-client=	9
-REVISION-server=	11
+REVISION-main=		4
+REVISION-client=	10
+REVISION-server=	12
 
 CATEGORIES=		security
 
 HOMEPAGE=		http://la-samhna.de/samhain/
 MASTER_SITES=		http://blade2k.humppa.hu/
-
-MAINTAINER=		Robert Nagy <robert@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

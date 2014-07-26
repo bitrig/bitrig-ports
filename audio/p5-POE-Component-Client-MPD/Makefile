@@ -3,10 +3,8 @@
 COMMENT=		complete MPD client library
 
 DISTNAME=		POE-Component-Client-MPD-0.9.2
-REVISION=		1
+REVISION=		2
 CATEGORIES=		audio
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

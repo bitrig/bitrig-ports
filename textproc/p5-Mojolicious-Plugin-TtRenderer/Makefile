@@ -4,6 +4,7 @@ COMMENT =	Template Renderer Plugin for Mojolicious
 
 MODULES =	cpan
 DISTNAME =	Mojolicious-Plugin-TtRenderer-1.50
+REVISION =	0
 CATEGORIES =	textproc
 
 # Perl

@@ -4,7 +4,7 @@ COMMENT =	GNUstep layer to write portable GUIs
 
 VERSION =	0.9.0
 DISTNAME =	Renaissance-${VERSION}
-REVISION =	4
+REVISION =	5
 PKGNAME =	gnustep-renaissance-${VERSION}
 
 SHARED_LIBS +=  Renaissance	0.0

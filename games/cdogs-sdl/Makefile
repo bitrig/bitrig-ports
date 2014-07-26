@@ -2,10 +2,10 @@
 
 COMMENT =	open source, classic overhead run-and-gun game
 DISTNAME =	cdogs-sdl-0.5.5.1
+REVISION =	0
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://cxong.github.io/cdogs-sdl/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,9 +3,8 @@
 COMMENT =	Test for warnings and the lack of them
 
 DISTNAME =	Test-Warnings-0.014
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,6 +5,7 @@ COMMENT=		Python graph (network) package
 MODPY_EGG_VERSION=	0.10.1
 DISTNAME=		altgraph-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
+REVISION=		0
 
 CATEGORIES=		devel
 

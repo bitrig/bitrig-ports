@@ -7,12 +7,10 @@ GH_PROJECT =	livestreamer-curses
 GH_TAGNAME =	v${MODPY_EGG_VERSION}
 GH_COMMIT =	ebf20c2b5ccaba17a1fdd6f7e5e869268e5b230D
 DISTNAME =	${GH_PROJECT}-${MODPY_EGG_VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	multimedia net
 
 HOMEPAGE =	https://github.com/gapato/livestreamer-curses
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

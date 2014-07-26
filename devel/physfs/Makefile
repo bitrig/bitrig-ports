@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}downloads/
 EXTRACT_SUFX=	.tar.bz2
 
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS=	physfs		2.0
 

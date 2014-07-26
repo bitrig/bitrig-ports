@@ -7,11 +7,11 @@ GH_COMMIT =	1f5975e569869407ba8c56a57f2e54cc22fb49b5
 
 COMMENT =	Pandora client for GNOME
 DISTNAME =	${GH_PROJECT}-${GH_TAGNAME}
+REVISION =	0
 CATEGORIES =	audio x11
 SUBST_VARS +=	GH_TAGNAME
 
 HOMEPAGE =	http://pithos.github.io/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # Github page says GPLv3+
 # But the code says GPLv3 only

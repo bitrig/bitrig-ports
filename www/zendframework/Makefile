@@ -3,15 +3,13 @@
 COMMENT=		framework for developing PHP web applications
 
 V=			1.12.1
-REVISION=		0
+REVISION=		1
 DISTNAME=		zendframework-${V}
 DISTFILES=		ZendFramework-${V}.tar.gz
 
 CATEGORIES=		www devel
 
 HOMEPAGE=		http://framework.zend.com/
-
-MAINTAINER=		Robert Nagy <robert@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

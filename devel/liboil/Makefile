@@ -3,7 +3,7 @@
 COMMENT=	library of optimized inner loops
 
 DISTNAME=	liboil-0.3.17
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}/download/
 

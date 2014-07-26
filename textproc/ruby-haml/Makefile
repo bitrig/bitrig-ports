@@ -3,7 +3,7 @@
 COMMENT=		HTML Abstraction Markup Language for Ruby
 
 DISTNAME=		haml-3.1.7
-REVISION =		0
+REVISION =		1
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://haml.hamptoncatlin.com/

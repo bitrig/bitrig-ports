@@ -4,13 +4,11 @@ COMMENT=		jabber server written in Erlang
 
 V=			2.1.12
 DISTNAME=		ejabberd-$V
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.ejabberd.im/
-
-MAINTAINER=		Wiktor Izdebski <vicviq@gmail.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

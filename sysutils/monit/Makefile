@@ -3,12 +3,11 @@
 COMMENT=	monitoring and managing daemons utility
 
 DISTNAME=	monit-5.8.1
+REVISION=	0
 
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://www.mmonit.com/monit/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,10 +3,9 @@
 COMMENT=	ncurses-based MUD client with triggers, aliases, colors
 
 DISTNAME=	mudix-4.3
+REVISION=	0
 CATEGORIES=	net games
 HOMEPAGE=	http://dw.nl.eu.org/mudix.html
-
-MAINTAINER=	Mathieu Braem <majeu@bsdaemon.be>
 
 # BSD-style
 PERMIT_PACKAGE_CDROM=	Yes

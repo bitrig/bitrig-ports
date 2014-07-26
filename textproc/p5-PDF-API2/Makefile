@@ -5,7 +5,7 @@ COMMENT=	create PDF documents with perl
 MODULES=	cpan
 
 DISTNAME=	PDF-API2-0.57
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc
 
 # GPL

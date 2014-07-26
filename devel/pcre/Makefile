@@ -4,7 +4,7 @@ COMMENT=	perl-compatible regular expression library
 
 DISTNAME=	pcre-8.35
 
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=  pcre                 3.0      # 0.1
 SHARED_LIBS +=  pcre16               0.0      # 0.0
@@ -18,8 +18,6 @@ MASTER_SITES=	ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/ \
 		${MASTER_SITE_SOURCEFORGE:=pcre/}
 
 HOMEPAGE=	http://www.pcre.org/
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

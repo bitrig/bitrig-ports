@@ -7,12 +7,11 @@ COMMENT =	parallel internet measurement utility
 V =		20140530
 DISTNAME =	scamper-cvs-$V
 PKGNAME =	scamper-0.0.$V
+REVISION =	0
 
 CATEGORIES =	net benchmarks
 
 HOMEPAGE =	http://www.caida.org/tools/measurement/scamper/
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM =	 Yes

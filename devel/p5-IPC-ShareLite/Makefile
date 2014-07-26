@@ -6,7 +6,7 @@ COMMENT=	simple interface to access shared memory
 
 MODULES=	cpan
 DISTNAME=	IPC-ShareLite-0.17
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel
 
 # perl

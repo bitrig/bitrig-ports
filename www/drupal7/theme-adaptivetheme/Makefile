@@ -4,7 +4,7 @@ COMMENT =	theme framework with support for responsive web design
 
 DISTNAME = 	adaptivetheme-7.x-2.3
 PKGNAME =	drupal7-theme-adaptivetheme-2.3
-REVISION =	0
+REVISION =	1
 
 MODDRUPAL_THEME = Yes
 

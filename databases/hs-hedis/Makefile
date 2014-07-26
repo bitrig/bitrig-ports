@@ -3,10 +3,9 @@
 COMMENT =		client library for the Redis datastore
 
 DISTNAME =		hedis-0.6.5
+REVISION =		0
 CATEGORIES =		databases
 HOMEPAGE =		https://github.com/informatikr/hedis
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

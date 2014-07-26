@@ -4,10 +4,8 @@ COMMENT=	represent a series of changes in annotate form
 
 MODULES=	cpan
 DISTNAME=	Algorithm-Annotate-0.10
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

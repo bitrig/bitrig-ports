@@ -6,7 +6,7 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	Email-FolderType-0.813
-REVISION=	1
+REVISION=	2
 CATEGORIES=	mail
 
 # perl

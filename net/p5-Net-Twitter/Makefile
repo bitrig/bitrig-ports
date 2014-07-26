@@ -3,10 +3,9 @@
 COMMENT=	perl interface to the Twitter API
 
 DISTNAME=	Net-Twitter-4.00006
+REVISION=	0
 
 CATEGORIES=	net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

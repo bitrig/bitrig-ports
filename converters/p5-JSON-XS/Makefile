@@ -6,6 +6,7 @@ COMMENT =	JSON serialising/deserialising, done correctly and fast
 
 MODULES =	cpan
 DISTNAME =	JSON-XS-3.01
+REVISION =	0
 EPOCH =		1
 CATEGORIES =	converters
 

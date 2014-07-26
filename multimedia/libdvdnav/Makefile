@@ -3,7 +3,7 @@
 COMMENT=	DVD navigation library
 
 DISTNAME=	libdvdnav-4.2.0
-REVISION=	2
+REVISION=	3
 EPOCH=		0
 CATEGORIES=	multimedia
 MASTER_SITES=	${HOMEPAGE}releases/

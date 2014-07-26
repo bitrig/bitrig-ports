@@ -4,10 +4,8 @@ COMMENT=	signal or reprioritize specified processes
 
 VERSION=		4.1
 DISTNAME=		skill-${VERSION}
-REVISION=		5
+REVISION=		6
 CATEGORIES=		sysutils
-
-MAINTAINER=		Jakob Schlyter <jakob@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	yes
 WANTLIB=		c

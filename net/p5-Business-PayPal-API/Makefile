@@ -3,6 +3,7 @@
 COMMENT=	PayPal API
 
 DISTNAME=	Business-PayPal-API-0.70
+REVISION=	0
 CATEGORIES=	net
 
 # perl

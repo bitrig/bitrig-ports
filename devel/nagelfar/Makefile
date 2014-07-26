@@ -4,9 +4,8 @@ COMMENT =	syntax analysis tool for Tcl
 
 DISTNAME =	nagelfar1112
 PKGNAME =	nagelfar-1.1.12
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # GPLv2 (Nagelfar)
 # BSD (textSearch)

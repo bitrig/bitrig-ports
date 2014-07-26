@@ -4,10 +4,8 @@ COMMENT=	recursively scan Perl code for dependencies
 
 MODULES=	cpan
 DISTNAME=	Module-ScanDeps-1.13
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

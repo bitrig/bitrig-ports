@@ -6,7 +6,7 @@ EXTRACT_ONLY =
 
 DISTNAME =	${DRUPAL_LANG}-6.x-1.2
 PKGNAME =	drupal6-${DRUPAL_LANG}-1.2
-REVISION =	3
+REVISION =	4
 
 post-extract:
 	mkdir -p ${WRKDIST}

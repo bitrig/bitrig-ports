@@ -2,6 +2,7 @@
 
 COMMENT=	programmable ncurses-based AIM client
 DISTNAME=	pork-0.99.8.1
+REVISION=	0
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ojnk/}
 

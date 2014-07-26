@@ -4,6 +4,7 @@ COMMENT=		gpodder.net client library
 
 MODPY_EGG_VERSION=	1.6
 DISTNAME=		mygpoclient-${MODPY_EGG_VERSION}
+REVISION=		0
 CATEGORIES=		net devel
 
 HOMEPAGE=		http://thp.io/2010/mygpoclient/

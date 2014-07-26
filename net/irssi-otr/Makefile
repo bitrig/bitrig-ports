@@ -9,14 +9,12 @@ GH_ACCOUNT =	cryptodotis
 GH_PROJECT =	irssi-otr
 GH_TAGNAME =	v$V
 GH_COMMIT =	d7a88b6697951727a2fa34b7d3d3543b0e5a2ecc
-REVISION =	0
+REVISION =	1
 DISTNAME =	${GH_PROJECT}-$V
 
 CATEGORIES =	net security
 
 HOMEPAGE =	https://github.com/cryptodotis/irssi-otr
-
-MAINTAINER =	Florian Stinglmayr <florian@n0la.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

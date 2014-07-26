@@ -4,7 +4,7 @@ COMMENT=	module to bubble-babble fingerprints
 
 MODULES=	cpan
 DISTNAME=	Digest-BubbleBabble-0.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
 
 # Perl

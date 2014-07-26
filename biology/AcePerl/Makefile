@@ -4,7 +4,7 @@ COMMENT=	perl interface to the ACEDB database
 
 DISTNAME=	AcePerl-1.92
 PKGNAME=	${DISTNAME}# No p5-prefix
-REVISION=	1
+REVISION=	2
 CATEGORIES=	biology databases
 
 FLAVORS=	opt

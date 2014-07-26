@@ -4,7 +4,7 @@ COMMENT=	SSL support for Net::SMTP
 
 MODULES=	cpan
 DISTNAME=	Net-SMTP-SSL-1.01
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net mail
 
 # perl

@@ -4,10 +4,8 @@ SHARED_ONLY=	Yes
 
 COMMENT=	interface to libcdaudio
 DISTNAME=	Audio-CD-0.04
-REVISION=	5
+REVISION=	6
 CATEGORIES=	audio
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

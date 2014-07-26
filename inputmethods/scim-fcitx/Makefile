@@ -7,13 +7,11 @@ COMMENT=	scim input method module for fcitx
 V=		3.1.1
 DISTNAME=	scim-fcitx.$V
 PKGNAME=	scim-fcitx-$V
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	inputmethods chinese
 
 HOMEPAGE=	http://www.scim-im.org/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

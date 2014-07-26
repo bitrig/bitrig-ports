@@ -4,11 +4,9 @@ COMMENT=	dynamic definition of Class::DBI sub classes
 
 MODULES=	cpan
 DISTNAME=	Class-DBI-Loader-0.32
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

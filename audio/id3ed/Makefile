@@ -3,12 +3,10 @@
 COMMENT=		interactive console id3 tag editor
 
 DISTNAME=		id3ed-1.10.4
-REVISION=		3
+REVISION=		4
 CATEGORIES=     	audio
 
 HOMEPAGE=		http://users.dakotacom.net/~donut/programs/id3ed.html
-
-MAINTAINER=		Nick Nauwelaerts <nick@nauwelaerts.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

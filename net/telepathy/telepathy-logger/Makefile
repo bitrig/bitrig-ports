@@ -3,6 +3,7 @@
 COMMENT=	flexible communications framework, logger component
 
 DISTNAME=	telepathy-logger-0.8.0
+REVISION=	0
 
 SHARED_LIBS +=  telepathy-logger     4.1      # 6.0
 

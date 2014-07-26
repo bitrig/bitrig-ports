@@ -3,6 +3,7 @@
 COMMENT=	tcp connection logger daemon
 
 DISTNAME=	clog-1.6
+REVISION=	0
 CATEGORIES=	net security
 
 MASTER_SITES=	ftp://ftp.rediris.es/mirror/coast/tools/unix/logutils/clog/

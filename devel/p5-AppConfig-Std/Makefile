@@ -4,10 +4,8 @@ COMMENT=	subclass of AppConfig that provides standard options
 
 MODULES=	cpan
 DISTNAME=	AppConfig-Std-1.07
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # Artistic/GPL
 PERMIT_PACKAGE_CDROM=   Yes

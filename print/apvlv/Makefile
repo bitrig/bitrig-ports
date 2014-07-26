@@ -3,7 +3,7 @@
 COMMENT=	lightweight PDF document viewer with vi bindings
 
 DISTNAME=	apvlv-0.0.9.6
-REVISION=	7
+REVISION=	8
 CATEGORIES=	print
 HOMEPAGE=	https://code.google.com/p/apvlv/
 

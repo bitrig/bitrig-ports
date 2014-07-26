@@ -18,9 +18,9 @@ PKGNAME-mysql =		rsyslog-mysql-$V
 PKGNAME-pgsql =		rsyslog-pgsql-$V
 CATEGORIES =		sysutils
 
-REVISION-main =		5
-REVISION-mysql =	4
-REVISION-pgsql =	3
+REVISION-main =		6
+REVISION-mysql =	5
+REVISION-pgsql =	4
 
 HOMEPAGE =		http://www.rsyslog.com/
 

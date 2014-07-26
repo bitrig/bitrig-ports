@@ -12,7 +12,8 @@ PKGNAME-nuvola =	nuvola-icon-theme-${MODKDE4_VERSION}
 PKG_ARCH-emoticons =	*
 PKG_ARCH-mono =		*
 PKG_ARCH-nuvola =	*
-REVISION-main =		0
+REVISION =		0
+REVISION-main =		1
 
 MODKDE4_USE =		workspace
 

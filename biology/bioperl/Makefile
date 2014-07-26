@@ -6,7 +6,7 @@ COMMENT=	perl tools for bioinformatics
 
 DISTNAME=	BioPerl-1.6.1
 PKGNAME=	${DISTNAME:L}# No p5-prefix here.
-REVISION=	2
+REVISION=	3
 CATEGORIES=	biology
 
 HOMEPAGE=	http://bioperl.org/

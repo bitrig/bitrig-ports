@@ -3,13 +3,11 @@
 COMMENT=	interactive game for young children
 
 DISTNAME=	gamine-1.1
-REVISION=	7
+REVISION=	8
 
 CATEGORIES=	games
 
 HOMEPAGE=	http://gnunux.info/projets/gamine/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # DWTFYWTPL
 # (DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE)

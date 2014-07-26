@@ -3,11 +3,9 @@
 COMMENT =	parallel implementation of gzip utilizing multiple cores
 
 DISTNAME = 	pigz-2.3.1
-REVISION =	0
+REVISION =	1
 CATEGORIES =	archivers
 HOMEPAGE =	http://zlib.net/pigz/
-
-MAINTAINER =	Thomas Pfaff <tpfaff@tp76.info>
 
 # zlib + Apache
 PERMIT_PACKAGE_CDROM =		Yes

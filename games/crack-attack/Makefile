@@ -3,10 +3,8 @@
 COMMENT=	OpenGL game based on SNES classic Tetris Attack
 
 DISTNAME=	crack-attack-1.1.14
-REVISION=	10
+REVISION=	11
 CATEGORIES=	games
-
-MAINTAINER=	Mattieu Baptiste <mattieu.b@free.fr>
 
 HOMEPAGE=	http://www.nongnu.org/crack-attack/
 

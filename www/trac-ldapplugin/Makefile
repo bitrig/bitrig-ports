@@ -4,10 +4,8 @@ COMMENT=		ldap authentication plugin for trac
 
 MODPY_EGG_VERSION=	0.6.0
 DISTNAME=		trac-ldapplugin-${MODPY_EGG_VERSION}
-REVISION=		3
+REVISION=		4
 CATEGORIES=		www devel
-
-MAINTAINER=		Michael Erdely <merdely@openbsd.org>
 
 HOMEPAGE=		http://trac-hacks.org/wiki/LdapPlugin
 

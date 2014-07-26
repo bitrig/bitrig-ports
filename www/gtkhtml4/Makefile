@@ -12,15 +12,12 @@ SUBST_VARS=		API_VERSION
 
 PKGNAME=		gtkhtml4-${VERSION}
 
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  gtkhtml-4.0               0.0 # 0.0
 SHARED_LIBS +=  gtkhtml-editor-4.0        0.0 # 0.0
 
 CATEGORIES=    		www
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2/LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=	c++ compliant CGI applications libraries
 
 DISTNAME=	cgicc-3.2.1
-REVISION=	5
+REVISION=	6
 CATEGORIES=	www devel
 SHARED_LIBS=	cgicc	5.0
 MODGNU_SHARED_LIBS=cgicc ''

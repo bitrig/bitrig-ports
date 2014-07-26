@@ -4,7 +4,7 @@ COMMENT=	splits big cookies into small pieces
 
 MODULES=	cpan
 DISTNAME=	CGI-Cookie-Splitter-0.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
 

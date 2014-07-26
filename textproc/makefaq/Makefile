@@ -3,7 +3,7 @@
 COMMENT=	Python program to create FAQ's list from formatted data file
 
 DISTNAME=	makefaq-2.5
-REVISION=	6
+REVISION=	7
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.makefaq.org/

@@ -12,11 +12,11 @@ PKGSPEC-tcl =   db-tcl->=4,<5|db-tcl->=4v0,<5v0
 PKGNAME-java=	db-java-${VERSION}
 PKGNAME-tcl=	db-tcl-${VERSION}
 EPOCH-main=	0
-REVISION-main = 1
+REVISION-main = 2
 EPOCH-java=	0
 EPOCH-tcl=	0
-REVISION-java =	2
-REVISION-tcl =	2
+REVISION-java =	3
+REVISION-tcl =	3
 DBLIBDIR=	lib/db4
 
 # XXX sync LIBdb_VERSION in x11/gnome/libgda

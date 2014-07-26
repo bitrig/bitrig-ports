@@ -3,6 +3,7 @@
 COMMENT=	multi-threaded routing daemon
 
 DISTNAME=	quagga-0.99.23
+REVISION=	0
 CATEGORIES=	net
 MASTER_SITES=	http://download.savannah.gnu.org/releases/quagga/
 EXTRACT_SUFX=	.tar.xz

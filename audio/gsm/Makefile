@@ -3,7 +3,7 @@
 COMMENT=	u-law to gsm encoding audio converter and library
 
 DISTNAME=	gsm-1.0.13
-REVISION=	2
+REVISION=	3
 CATEGORIES=	audio
 HOMEPAGE=	http://www.quut.com/gsm/
 MASTER_SITES=	${HOMEPAGE}

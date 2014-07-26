@@ -3,7 +3,7 @@
 COMMENT=	gateway acl scanner (via static-source port traceroute)
 
 DISTNAME=	firewalk-0.8
-REVISION=	2
+REVISION=	3
 CATEGORIES=     net
 
 #MASTER_SITES=	http://www.packetfactory.net/firewalk/dist/

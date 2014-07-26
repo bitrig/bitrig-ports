@@ -3,6 +3,7 @@
 COMMENT =	VHDL tags generator
 
 DISTNAME =	vtags-0.10
+REVISION =	0
 
 CATEGORIES =	devel
 

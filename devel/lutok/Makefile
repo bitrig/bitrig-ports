@@ -6,9 +6,7 @@ DISTNAME =		lutok-0.4
 SHARED_LIBS +=		lutok                     0.0 # 2.0
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/jmmv/lutok/
-REVISION =		0
-
-MAINTAINER =		Sergey Bronnikov <estetus@gmail.com>
+REVISION =		1
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

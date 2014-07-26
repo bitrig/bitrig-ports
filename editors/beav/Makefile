@@ -3,14 +3,13 @@
 COMMENT=	binary editor and viewer
 
 VERSION=	1.40
+REVISION=	0
 # Debian
 REV=		18
 
 DISTNAME=	beav-140
 PKGNAME=	beav-${VERSION}.${REV}
 CATEGORIES=	editors
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

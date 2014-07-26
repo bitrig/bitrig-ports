@@ -3,11 +3,10 @@
 COMMENT =		obtain getifaddrs(3) information from Haskell
 
 DISTNAME =		network-info-0.2.0.3
+REVISION =		0
 CATEGORIES =		net
 
 HOMEPAGE =		https://github.com/jystic/network-info
-
-MAINTAINER =		David Schaefer <dawedawe@gmx.de>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

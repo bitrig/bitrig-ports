@@ -4,12 +4,10 @@ COMMENT =	fast Date/DateTime classes for ruby
 
 BROKEN-sparc64 = Assembler messages: Error: Illegal operands on date_ext.c
 DISTNAME =	home_run-1.0.9
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel
 
 HOMEPAGE=	https://github.com/jeremyevans/home_run
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT License
 PERMIT_PACKAGE_CDROM =	Yes

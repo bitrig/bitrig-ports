@@ -6,11 +6,10 @@ COMMENT =	PNG photo image extension for Tcl/Tk
 
 DISTNAME =	tkpng0.9
 PKGNAME =	tkpng-0.9
-REVISION =	1
+REVISION =	2
 SHARED_LIBS =	tkpng09 0.0
 CATEGORIES =	graphics
 HOMEPAGE =	http://www.muonics.com/FreeStuff/TkPNG/
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

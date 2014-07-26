@@ -3,11 +3,9 @@
 COMMENT=	anonymity service using onion routing
 
 DISTNAME=	tor-0.2.4.22
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 HOMEPAGE=	https://www.torproject.org/
-
-MAINTAINER=	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

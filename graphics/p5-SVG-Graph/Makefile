@@ -4,7 +4,7 @@ COMMENT =		visualize your data in SVG format
 
 DISTNAME =		SVG-Graph-0.02
 CATEGORIES =		graphics
-REVISION =		1
+REVISION =		2
 
 # Artistic License 2.0
 PERMIT_PACKAGE_CDROM =	Yes

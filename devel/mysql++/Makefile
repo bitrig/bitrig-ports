@@ -6,7 +6,7 @@ SHARED_ONLY =		Yes
 COMMENT =		C++ API for MySQL
 
 DISTNAME =		mysql++-3.1.0
-REVISION =		5
+REVISION =		6
 
 SHARED_LIBS += mysqlpp	4.0	# 3
 

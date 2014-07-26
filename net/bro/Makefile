@@ -6,15 +6,13 @@ V=		1.4
 DISTNAME=	bro-${V}-release
 PKGNAME=	bro-${V}
 
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS= 	broccoli	0.0	# .2.0
 
 CATEGORIES=	net security
 
 HOMEPAGE=	http://www.bro-ids.org/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM= 	Yes

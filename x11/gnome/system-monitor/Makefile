@@ -5,7 +5,7 @@ COMMENT=	sytem monitor for GNOME
 GNOME_PROJECT=	gnome-system-monitor
 GNOME_VERSION=	3.12.2
 
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	sysutils
 

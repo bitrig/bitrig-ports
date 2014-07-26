@@ -3,12 +3,10 @@
 COMMENT=	command line double-entry accounting ledger
 
 DISTNAME=	ledger-2.6.3
-REVISION=	3
+REVISION=	4
 CATEGORIES=	productivity
 
 HOMEPAGE=	http://www.ledger-cli.org/
-
-MAINTAINER=	Sergey Bronnikov <estetus@gmail.com>
 
 SHARED_LIBS=	amounts	0.0
 

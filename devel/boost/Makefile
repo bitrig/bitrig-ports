@@ -7,7 +7,7 @@ COMMENT=	free peer-reviewed portable C++ source libraries
 VERSION=	1.53.0
 DISTNAME=	boost_${VERSION:S/./_/g}
 PKGNAME=	boost-${VERSION}
-REVISION=	7
+REVISION=	8
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=boost/}
 EXTRACT_SUFX=	.tar.bz2
@@ -46,8 +46,6 @@ SHARED_LIBS+=	${_lib} ${SO_VERSION}
 .endfor
 
 HOMEPAGE=	http://www.boost.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # MIT-like
 PERMIT_PACKAGE_CDROM=	Yes

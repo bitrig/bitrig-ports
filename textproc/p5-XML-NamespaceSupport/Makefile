@@ -4,11 +4,9 @@ COMMENT=	perl module to the SAX2 NamespaceSupport class
 
 MODULES=	cpan
 DISTNAME=	XML-NamespaceSupport-1.11
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

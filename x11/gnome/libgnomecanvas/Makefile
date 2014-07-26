@@ -6,7 +6,7 @@ COMMENT=	graphics library for GNOME
 
 GNOME_PROJECT=	libgnomecanvas
 GNOME_VERSION=	2.30.3
-REVISION=	4
+REVISION=	5
 
 EXTRACT_SUFX=	.tar.bz2
 

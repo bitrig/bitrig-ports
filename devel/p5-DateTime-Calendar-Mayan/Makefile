@@ -3,11 +3,9 @@
 COMMENT=	Mayan Long Count calendar
 
 DISTNAME=	DateTime-Calendar-Mayan-0.0601
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

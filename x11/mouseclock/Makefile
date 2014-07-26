@@ -3,7 +3,7 @@
 COMMENT=	display the current time using the X11 root cursor
 
 DISTNAME=	mouseclock-1.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11
 
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=X11/clocks/}

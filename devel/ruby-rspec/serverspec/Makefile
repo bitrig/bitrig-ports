@@ -2,10 +2,9 @@
 
 COMMENT=	RSpec tests for testing machine configuration/state
 DISTNAME=	serverspec-1.6.0
+REVISION=	0
 
 HOMEPAGE=	http://serverspec.org/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	devel/ruby-highline,${MODRUBY_FLAVOR} \

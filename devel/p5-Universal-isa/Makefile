@@ -5,10 +5,8 @@ COMMENT=	calling UNIVERSAL::isa as a function
 MODULES=	cpan
 DISTNAME=	UNIVERSAL-isa-1.03
 PKGNAME=	p5-Universal-isa-1.03
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

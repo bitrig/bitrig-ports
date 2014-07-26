@@ -6,7 +6,7 @@ COMMENT=		framework for creating UPnP devices and control points
 
 GNOME_PROJECT=		gupnp
 GNOME_VERSION=		0.20.12
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  gupnp-1.0            3.2     # 4.0
 

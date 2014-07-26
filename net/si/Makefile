@@ -3,7 +3,7 @@
 COMMENT =	minimalistic SILC client
 
 DISTNAME =	si-0.3
-REVISION =	1
+REVISION =	2
 CATEGORIES =	net
 
 # GPLv2/MIT

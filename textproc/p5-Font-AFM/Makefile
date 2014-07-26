@@ -4,7 +4,7 @@ COMMENT=	perl interface to Adobe Font Metrics files
 
 MODULES=	cpan
 DISTNAME=	Font-AFM-1.20
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
  
 # perl

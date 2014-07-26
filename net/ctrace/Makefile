@@ -3,7 +3,7 @@
 COMMENT=	multiprotocol traceroute tool
 
 DISTNAME=	ctrace-0.9
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 HOMEPAGE=	http://www.pratyeka.org/ctrace/
 

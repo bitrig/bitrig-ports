@@ -4,6 +4,7 @@ COMMENT=	descramble scrambled DVDs
 
 VER=		1.2.13
 DISTNAME=	libdvdcss-${VER}
+REVISION=	0
 CATEGORIES=	converters
 MASTER_SITES=	http://download.videolan.org/pub/libdvdcss/${VER}/
 EXTRACT_SUFX=	.tar.bz2

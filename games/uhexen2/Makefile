@@ -6,14 +6,12 @@ V =			1.5.6
 DISTNAME =		hexen2source-${V}
 PKGNAME =		uhexen2-${V}
 EXTRACT_SUFX =		.tgz
-REVISION =		1
+REVISION =		2
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} \
 			hexen2-${V}-linux-i586.tgz
 
 CATEGORIES =		games
 HOMEPAGE =		http://uhexen2.sourceforge.net/
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=uhexen2/}
 

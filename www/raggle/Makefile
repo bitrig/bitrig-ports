@@ -3,7 +3,7 @@
 COMMENT=	console RSS aggregator
 
 DISTNAME=	raggle-0.4.4
-REVISION =	6
+REVISION =	7
 
 CATEGORIES=	www news
 

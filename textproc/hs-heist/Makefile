@@ -3,10 +3,8 @@
 COMMENT =		xhtml templating system
 
 DISTNAME =		heist-0.12.0
+REVISION =		0
 CATEGORIES =		textproc
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>, \
-			Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

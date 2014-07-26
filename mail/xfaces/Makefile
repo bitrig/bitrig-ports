@@ -3,7 +3,7 @@
 COMMENT=	mail image display for X11
 
 DISTNAME=	xfaces-3.3
-REVISION =	4
+REVISION =	5
 CATEGORIES=	mail
 
 MASTER_SITES=	ftp://ftp.cs.indiana.edu/pub/faces/xfaces/ \

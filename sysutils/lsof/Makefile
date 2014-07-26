@@ -5,7 +5,7 @@ COMMENT=	list information about open files
 VERSION=	4.87
 DISTNAME=	lsof_${VERSION}
 PKGNAME=	${DISTNAME:S/_/-/}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.mirrorservice.org/sites/lsof.itap.purdue.edu/pub/tools/unix/lsof/ \
 		ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/ \
@@ -17,8 +17,6 @@ MASTER_SITES=	http://www.mirrorservice.org/sites/lsof.itap.purdue.edu/pub/tools/
 		http://www.mirrorservice.org/sites/lsof.itap.purdue.edu/pub/tools/unix/lsof/OLD/
 
 HOMEPAGE=	https://people.freebsd.org/~abe/
-
-MAINTAINER=     Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c kvm>=13

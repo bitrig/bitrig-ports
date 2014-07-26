@@ -4,9 +4,8 @@ COMMENT=	HTML cleaning module
 
 MODULES=	cpan
 DISTNAME=	HTML-Scrubber-0.09
+REVISION=	0
 CATEGORIES=	www
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

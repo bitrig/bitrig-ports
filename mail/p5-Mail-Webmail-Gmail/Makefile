@@ -3,10 +3,8 @@
 COMMENT=		interface to Google webmail service
 
 DISTNAME=		Mail-Webmail-Gmail-1.09
-REVISION=		1
+REVISION=		2
 CATEGORIES=		mail
-
-MAINTAINER=		Gleydson Soares <gsoares@trusted.com.br>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

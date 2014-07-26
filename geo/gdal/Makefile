@@ -11,14 +11,14 @@ SHARED_ONLY =	Yes
 PKGNAME-main =	${DISTNAME}
 PKGNAME-python =py-${DISTNAME}
 PKGNAME-perl =	p5-Geo-GDAL-${V}
-REVISION-perl =	0
+REVISION-main =	0
+REVISION-python =0
+REVISION-perl =	1
 
 SHARED_LIBS =	gdal 21.0 #19.0
 CATEGORIES =	geo devel
 
 HOMEPAGE =	http://www.gdal.org/
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes

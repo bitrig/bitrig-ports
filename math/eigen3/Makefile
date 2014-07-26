@@ -6,11 +6,10 @@ CATEGORIES =	math devel
 HOMEPAGE =	http://eigen.tuxfamily.org/
 DIST_SUBDIR =	eigen
 VERSION =	3.2.1
+REVISION =	0
 DISTNAME =	${VERSION}
 PKGNAME =	eigen3-${VERSION}
 WRKDIST =	${WRKDIR}/eigen-eigen-6b38706d90a9
-
-MAINTAINER =	Vadim Zhukov <persgray@gmail.com>
 
 # Mostly MPLv2, also LGPLv2.1, LGPLv2.1+ and BSDL
 PERMIT_PACKAGE_CDROM =	Yes

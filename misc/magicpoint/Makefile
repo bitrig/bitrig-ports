@@ -3,6 +3,7 @@
 COMMENT=	X11-based presentation tool
 
 DISTNAME=	magicpoint-1.09a
+REVISION=	0
 EPOCH=		0
 CATEGORIES=	misc productivity
 MASTER_SITES=	ftp://sh.wide.ad.jp/WIDE/free-ware/mgp/

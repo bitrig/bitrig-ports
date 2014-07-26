@@ -3,6 +3,7 @@
 COMMENT=		tool/library for managing platform virtualization
 
 DISTNAME=		libvirt-1.2.5
+REVISION=		0
 CATEGORIES=		sysutils devel
 
 SHARED_LIBS +=  virt-qemu                 0.3 # 1002.5
@@ -10,8 +11,6 @@ SHARED_LIBS +=  virt                      0.3 # 1002.5
 SHARED_LIBS +=	virt-lxc		  0.0 # 1002.5
 
 HOMEPAGE=		http://libvirt.org/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 MASTER_SITES=		${HOMEPAGE}/sources/ \
 			${HOMEPAGE}/sources/stable_updates/

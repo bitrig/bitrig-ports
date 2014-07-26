@@ -5,6 +5,7 @@ COMMENT =	very small text templating language
 MODPY_EGG_VERSION = 0.5.1
 DISTNAME =	Tempita-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
+REVISION =	0
 
 CATEGORIES =	www
 

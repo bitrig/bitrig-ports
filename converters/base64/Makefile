@@ -3,6 +3,7 @@
 COMMENT=	converter to/from base64 encoding
 
 DISTNAME=	base64-1.5
+REVISION=	0
 CATEGORIES=	converters
 
 HOMEPAGE=	http://www.fourmilab.ch/webtools/base64/

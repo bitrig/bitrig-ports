@@ -4,9 +4,8 @@ COMMENT=	interface to the ISAAC PRNG algorithm
 
 MODULES=	cpan
 DISTNAME=	Math-Random-ISAAC-1.004
+REVISION=	0
 CATEGORIES=	math
-
-MAINTAINER=	David Hill <dhill@mindcry.org>
 
 # CC0 License
 PERMIT_PACKAGE_CDROM=	Yes

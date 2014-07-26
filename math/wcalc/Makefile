@@ -6,9 +6,8 @@ COMMENT =		natural-expression command-line calculator
 DISTNAME =		wcalc-2.4
 CATEGORIES =		math
 HOMEPAGE =		http://w-calc.sourceforge.net/
-MAINTAINER =		Amarendra Godbole <amarendra.godbole@gmail.com>
 
-REVISION=		0
+REVISION=		1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

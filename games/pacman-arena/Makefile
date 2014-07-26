@@ -3,6 +3,7 @@
 COMMENT=	pacman clone gone mad
 
 DISTNAME=	pacman-arena-0.15
+REVISION=	0
 
 EXTRACT_SUFX=	.tar.bz2
 DISTDATA=	pacman-data-0.0.zip

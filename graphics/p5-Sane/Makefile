@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		Perl extension for the SANE Project
 
 DISTNAME=		Sane-0.05
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		graphics
 

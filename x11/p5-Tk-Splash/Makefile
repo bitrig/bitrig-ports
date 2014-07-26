@@ -3,7 +3,7 @@
 COMMENT=	splash screen widget
 
 DISTNAME=	Tk-Splash-0.14
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11 devel
 
 # GPL

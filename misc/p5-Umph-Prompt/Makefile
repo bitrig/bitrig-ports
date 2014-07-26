@@ -4,6 +4,7 @@ COMMENT =		interactive prompt module
 
 DISTNAME =		Umph-Prompt-0.1.0
 PKGNAME =		${DISTNAME:S//p5-/}
+REVISION =		0
 
 CATEGORIES =		misc
 

@@ -3,6 +3,7 @@
 COMMENT=	measure the throughput of a TCP connection
 
 PKGNAME=	tcpblast-1.1
+REVISION=	0
 CATEGORIES=	net benchmarks
 DISTFILES=
 

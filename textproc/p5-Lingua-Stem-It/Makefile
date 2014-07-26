@@ -4,6 +4,7 @@ COMMENT=	Italian language stemming
 
 MODULES=	cpan
 DISTNAME=	Lingua-Stem-It-0.02
+REVISION=	0
 CATEGORIES=	textproc
 
 # perl

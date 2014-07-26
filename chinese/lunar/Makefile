@@ -4,11 +4,10 @@ COMMENT=	convert solar calendar to lunar calendar
 
 DISTNAME=	lunar-2.1
 PKGNAME=	zh-lunar-2.1
+REVISION=	0
 CATEGORIES=	chinese
 
 MASTER_SITES=   ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/unix/c-utils/
-
-MAINTAINER=     Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	non-commercial use only
 PERMIT_PACKAGE_FTP=	Yes

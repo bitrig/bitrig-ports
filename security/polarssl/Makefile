@@ -5,7 +5,7 @@ BROKEN-sparc64=	problems with mpi_mul_hlp() (also tested with gcc4.8)
 COMMENT=	SSL library with an intuitive API and readable source code
 
 DISTNAME=	polarssl-1.3.6
-REVISION=	0
+REVISION=	1
 EXTRACT_SUFX=	-gpl.tgz
 
 SHARED_LIBS +=	polarssl                  0.0 # 1.3

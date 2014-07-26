@@ -4,9 +4,7 @@ COMMENT=	DKIM and DomainKeys message-signing implementation
 
 DISTNAME=	Mail-DKIM-0.40
 CATEGORIES=	mail
-REVISION=	0
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
+REVISION=	1
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

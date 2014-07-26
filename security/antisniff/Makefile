@@ -3,6 +3,7 @@
 COMMENT=	promiscuous mode interface detector
 
 PKGNAME=	antisniff-1.1.2
+REVISION=	0
 CATEGORIES=	security
 
 DISTNAME=	anti_sniff_researchv1-1-2

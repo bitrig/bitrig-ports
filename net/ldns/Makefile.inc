@@ -9,8 +9,6 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.nlnetlabs.nl/downloads/ldns/
 HOMEPAGE=	http://www.nlnetlabs.nl/projects/ldns/
 
-MAINTAINER=     Jakob Schlyter <jakob@openbsd.org>
-
 PERMIT_PACKAGE_CDROM=	Yes
 
 SEPARATE_BUILD=		Yes

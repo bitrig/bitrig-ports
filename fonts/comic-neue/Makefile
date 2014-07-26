@@ -3,13 +3,11 @@
 COMMENT =		replacement for Comic Sans font
 
 DISTNAME =		comic-neue-1.1
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		fonts
 
 HOMEPAGE =		http://comicneue.com/
-
-MAINTAINER =		Tristan Le Guern <tleguern@bouledef.eu>
 
 # CC0 (public domain)
 # http://creativecommons.org/publicdomain/zero/1.0/

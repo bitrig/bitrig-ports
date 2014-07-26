@@ -13,8 +13,6 @@ CATEGORIES=	net
 
 HOMEPAGE=	http://www.isc.org/software/libbind
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes
 

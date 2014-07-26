@@ -4,13 +4,11 @@ COMMENT =		statistical analyzer for binary streams
 
 DISTNAME =		stan-0.4.1
 
-REVISION = 		0
+REVISION = 		1
 
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://www.roqe.org/stan/
-
-MAINTAINER =		Igor Zinovik <zinovik.igor@gmail.com>
 
 # 4-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes

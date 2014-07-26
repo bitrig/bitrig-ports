@@ -4,11 +4,9 @@ COMMENT=	print multiple pages per sheet on PostScript printer
 
 DISTNAME=	mpage-2.5.6
 EXTRACT_SUFX=	.tgz
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	print
-
-MAINTAINER=	Ian McWilliam <kaosagnt@tpg.com.au>
 
 PERMIT_PACKAGE_CDROM=	incomplete license
 PERMIT_PACKAGE_FTP=	incomplete license

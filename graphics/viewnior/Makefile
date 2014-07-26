@@ -3,7 +3,7 @@
 COMMENT=	fast and simple image viewer
 
 DISTNAME=	viewnior-1.4
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	graphics x11
 

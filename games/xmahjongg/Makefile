@@ -3,7 +3,7 @@
 COMMENT=	colorful solitaire Mah Jongg game for X11
 
 DISTNAME=	xmahjongg-3.7
-REVISION =	3
+REVISION =	4
 CATEGORIES=	games x11
 
 HOMEPAGE=	http://www.lcdf.org/~eddietwo/xmahjongg/

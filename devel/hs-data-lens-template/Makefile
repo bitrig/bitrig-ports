@@ -3,6 +3,7 @@
 COMMENT =		utilities for Data.Lens
 
 DISTNAME =		data-lens-template-2.1.7
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

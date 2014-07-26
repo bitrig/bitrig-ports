@@ -3,13 +3,11 @@
 COMMENT=	multi-tabbed terminal emulator
 
 DISTNAME=	mrxvt-0.5.4
-REVISION=	6
+REVISION=	7
 
 CATEGORIES=	x11
 
 HOMEPAGE=	http://materm.sourceforge.net
-
-MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

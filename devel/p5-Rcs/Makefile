@@ -3,11 +3,9 @@
 COMMENT=	Perl Object Class for Revision Control System (RCS)
 
 DISTNAME=	Rcs-1.05
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 MODULES=	cpan
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

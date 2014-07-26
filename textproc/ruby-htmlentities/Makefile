@@ -4,7 +4,7 @@ COMMENT =	HTML entity encoding and decoding for Ruby
 
 DISTNAME =	htmlentities-4.0.0
 EPOCH =		0
-REVISION =	6
+REVISION =	7
 CATEGORIES =	textproc www
 
 HOMEPAGE =	http://htmlentities.rubyforge.org/

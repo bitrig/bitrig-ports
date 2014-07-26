@@ -4,7 +4,7 @@ COMMENT=	Xfce4 mpd client panel plugin
 
 XFCE_VERSION=	0.4.4
 XFCE_PLUGIN=	mpc
-REVISION =	3
+REVISION =	4
 
 # BSD-ISC
 PERMIT_PACKAGE_CDROM=	Yes

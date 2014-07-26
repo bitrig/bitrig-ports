@@ -5,13 +5,11 @@ COMMENT =	NetHack derivative
 VERSION =	1.9.3
 DISTNAME =	nethack_source_331_jtp_${VERSION:S/.//g}
 PKGNAME =	falconseye-${VERSION}
-REVISION =	4
+REVISION =	5
 CATEGORIES =	games x11
 EXTRACT_SUFX =	.zip
 
 HOMEPAGE =	http://falconseye.sourceforge.net/
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

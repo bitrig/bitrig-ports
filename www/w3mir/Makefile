@@ -3,10 +3,10 @@
 COMMENT=		utility to mirror web pages
 
 DISTNAME=		w3mir-1.0.10
+REVISION=		0
 CATEGORIES=     	www
 
 HOMEPAGE=		http://langfeldt.net/w3mir/
-MAINTAINER=		Jeff Bachtel <jeff@cepheid.org>
 
 # Artistic license
 PERMIT_PACKAGE_CDROM=	Yes

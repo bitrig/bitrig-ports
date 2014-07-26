@@ -3,11 +3,10 @@
 COMMENT=	utilities to manage well known user directories
 
 DISTNAME=	xdg-user-dirs-0.15
+REVISION=	0
 CATEGORIES=	devel
 
 HOMEPAGE=	http://freedesktop.org/wiki/Software/xdg-user-dirs/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

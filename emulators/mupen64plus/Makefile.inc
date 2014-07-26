@@ -8,7 +8,6 @@ PKGNAME ?= 		mupen64plus-${MUPEN64PLUS_MOD}-${VERSION}
 HOMEPAGE ?=		https://code.google.com/p/mupen64plus/
 CATEGORIES ?=		emulators games
 MASTER_SITES ?=		https://github.com/mupen64plus/mupen64plus-${MUPEN64PLUS_MOD}/releases/download/${VERSION}/
-MAINTAINER ?=		Anthony J. Bentley <anthony@cathet.us>
 
 CONFIGURE_STYLE ?=	none
 USE_GMAKE ?=		Yes

@@ -10,7 +10,7 @@ MODULES=	cpan
 # beware may need EPOCH if updating
 DISTNAME=	Math-Pari-2.01080605
 CATEGORIES=	math
-REVISION=	0
+REVISION=	1
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

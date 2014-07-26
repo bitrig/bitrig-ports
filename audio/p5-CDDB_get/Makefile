@@ -3,6 +3,7 @@
 COMMENT=		perl interface to query for cddb-information
 
 DISTNAME=		CDDB_get-2.28
+REVISION=		0
 CATEGORIES=		audio
 
 HOMEPAGE=		http://armin.emx.at/cddb/

@@ -4,7 +4,7 @@ COMMENT =	compiz configuration system library
 
 V =		0.8.8
 DISTNAME =	libcompizconfig-${V}
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	compizconfig	0.0 # 0.0
 

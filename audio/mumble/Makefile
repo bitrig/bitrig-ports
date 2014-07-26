@@ -5,6 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		low-latency voice chat client
 
 DISTNAME =		mumble-1.2.7
+REVISION =		0
 
 CATEGORIES =		audio
 

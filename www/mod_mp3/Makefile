@@ -2,7 +2,7 @@
 
 COMMENT=	turns Apache into an MP3 or Ogg streaming server
 
-REVISION=	7
+REVISION=	8
 DISTNAME=	mod_mp3-0.40
 CATEGORIES=	www audio
 

@@ -5,12 +5,10 @@ COMMENT=	limited problem scanner for C source files
 V=		1.6
 DISTNAME=	pscan
 PKGNAME=	${DISTNAME}-${V}
-REVISION =	0
+REVISION =	1
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.striker.ottawa.on.ca/~aland/pscan/
-
-MAINTAINER=	Steffen Wendzel <cdp@doomed-reality.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

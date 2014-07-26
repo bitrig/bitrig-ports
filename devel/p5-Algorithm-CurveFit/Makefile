@@ -3,6 +3,7 @@
 COMMENT =	nonlinear least squares curve fitting
 
 DISTNAME =	Algorithm-CurveFit-1.05
+REVISION =	0
 CATEGORIES =	devel
 USE_GROFF =	Yes
 

@@ -3,7 +3,7 @@
 COMMENT =	timezones module for Data::ICal
 
 DISTNAME =	Data-ICal-TimeZone-1.23
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	devel
 

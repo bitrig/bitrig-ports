@@ -5,6 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT =	USB Chip/Smart Card Interface Devices driver
 
 DISTNAME =	ccid-1.4.17
+REVISION =	0
 
 CATEGORIES =	security
 
@@ -13,8 +14,6 @@ HOMEPAGE =	http://pcsclite.alioth.debian.org/ccid.html
 MASTER_SITES =	https://alioth.debian.org/frs/download.php/latestfile/112/
 
 EXTRACT_SUFX =	.tar.bz2
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # LGPLv2.1+ and GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes

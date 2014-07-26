@@ -9,10 +9,10 @@ COMMENT-ruby=	ruby interface to librrd
 
 MODPY_EGG_VERSION= 0.2.2
 VERSION=	1.4.8
-REVISION-main=	6
-REVISION-ruby=	3
-REVISION-python=0
-REVISION-update=0
+REVISION-main=	7
+REVISION-ruby=	4
+REVISION-python=1
+REVISION-update=1
 DISTNAME=	rrdtool-${VERSION}
 PKGNAME-main=	${DISTNAME}
 PKGNAME-update=	rrdupdate-${VERSION}
@@ -23,8 +23,6 @@ SHARED_LIBS +=	rrd                  4.0      # 6.1
 SHARED_LIBS +=	rrd_th               4.0      # 6.1
 
 CATEGORIES=	net databases
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE=	http://oss.oetiker.ch/rrdtool/
 MASTER_SITES=	http://oss.oetiker.ch/rrdtool/pub/

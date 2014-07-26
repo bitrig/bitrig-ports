@@ -6,7 +6,7 @@ COMMENT=	Sybase database driver for the DBI module
 
 DISTNAME=	DBD-Sybase-1.14
 CATEGORIES=	databases
-REVISION=	0
+REVISION=	1
 
 # GPL/Artistic License
 PERMIT_PACKAGE_CDROM=	Yes

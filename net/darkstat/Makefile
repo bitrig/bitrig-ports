@@ -3,6 +3,7 @@
 COMMENT=		network statistics gatherer with graphs
 
 DISTNAME=		darkstat-3.0.718
+REVISION=		0
 CATEGORIES=		net www
 MASTER_SITES=		${HOMEPAGE}
 EXTRACT_SUFX=		.tar.bz2

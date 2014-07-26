@@ -2,7 +2,7 @@
 
 COMMENT=		ogg mux/demuxer
 DISTNAME=		ogmtools-1.5
-REVISION=		0
+REVISION=		1
 EXTRACT_SUFX=		.tar.bz2
 CATEGORIES=		multimedia
 MASTER_SITES=		${HOMEPAGE}

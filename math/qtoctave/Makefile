@@ -3,7 +3,7 @@
 COMMENT=	graphical front-end for octave
 
 DISTNAME=	qtoctave-0.8.1
-REVISION=	6
+REVISION=	7
 CATEGORIES=	math
 
 HOMEPAGE=	http://qtoctave.wordpress.com/

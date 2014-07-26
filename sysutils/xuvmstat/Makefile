@@ -4,10 +4,8 @@ COMMENT=	graphical display for the current uvm status
 
 DISTNAME=	xuvmstat20050909
 PKGNAME=	xuvmstat-20050909
-REVISION=	1
+REVISION=	2
 CATEGORIES=     sysutils x11
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

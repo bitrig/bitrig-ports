@@ -4,6 +4,7 @@ COMMENT=	regular expressions library
 DISTNAME=	onig-5.9.2
 SHARED_LIBS=	onig 2.0
 PKGNAME=	oniguruma-5.9.2
+REVISION=	0
 MASTER_SITES=	${HOMEPAGE}/archive/
 CATEGORIES=	textproc
 

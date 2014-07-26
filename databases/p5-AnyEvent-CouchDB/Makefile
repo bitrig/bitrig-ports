@@ -3,6 +3,7 @@
 COMMENT=		non-blocking CouchDB client based on jquery.couch.js
 
 DISTNAME=		AnyEvent-CouchDB-1.24
+REVISION=		0
 CATEGORIES=		databases devel
 
 MODULES=		cpan

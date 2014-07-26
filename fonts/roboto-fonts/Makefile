@@ -5,15 +5,13 @@ COMMENT =	sans-serif typeface family of Android OS
 # 2013-10-31 Version 1.2 (the date in the specimen filename in the website)
 V =		1.2
 EPOCH =		0
-REVISION =	0
+REVISION =	1
 DISTNAME =	roboto-${V}
 PKGNAME =	roboto-fonts-${V}
 
 CATEGORIES =	fonts x11
 
 HOMEPAGE =	https://developer.android.com/design/style/typography.html
-
-MAINTAINER =	Juan Francisco Cantero Hurtado <juanfra@openbsd.org>
 
 # Apache 2 License
 PERMIT_PACKAGE_CDROM =		Yes

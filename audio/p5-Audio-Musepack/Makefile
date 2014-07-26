@@ -4,7 +4,7 @@ COMMENT=	object-oriented interface to Musepack/APE file information
 
 MODULES=	cpan
 DISTNAME=	Audio-Musepack-0.7
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 
 # perl

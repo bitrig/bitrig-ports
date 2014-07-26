@@ -3,9 +3,7 @@
 FW_DRIVER=	radeondrm
 FW_VER=		20131002
 DISTNAME=	radeon-firmware-${FW_VER}
-REVISION=	0
-
-MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
+REVISION=	1
 
 HOMEPAGE=	https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/tree/radeon
 

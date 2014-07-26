@@ -4,7 +4,7 @@ COMMENT =	asynchronous networking framework for GNUstep
 
 VERSION =	1.06
 DISTNAME =	netclasses-${VERSION}
-REVISION =	4
+REVISION =	5
 PKGNAME =	gnustep-netclasses-${VERSION}
 CATEGORIES =	net
 SHARED_LIBS +=  netclasses	0.0

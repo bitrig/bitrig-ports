@@ -3,6 +3,7 @@
 COMMENT=	toolkit for converting images between different formats
 
 DISTNAME=	netpbm-10.35.92
+REVISION=	0
 SHARED_LIBS=	netpbm	2.0
 CATEGORIES=	graphics
 HOMEPAGE=	http://netpbm.sourceforge.net/

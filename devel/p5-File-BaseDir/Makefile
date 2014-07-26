@@ -3,7 +3,7 @@
 COMMENT=		use the freedesktop Base Directory Specification
 
 DISTNAME=		File-BaseDir-0.03
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # perl

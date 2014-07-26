@@ -4,6 +4,7 @@ COMMENT=	bzr plugin that adds support for foreign svn repositories
 
 MODPY_EGG_VERSION= 1.1.2
 DISTNAME=	bzr-svn-${MODPY_EGG_VERSION}
+REVISION=	0
 CATEGORIES=	devel
 
 HOMEPAGE=	http://launchpad.net/bzr-svn

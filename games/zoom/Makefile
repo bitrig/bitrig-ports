@@ -3,6 +3,7 @@
 COMMENT=		Z-code interpreter for X11
 
 DISTNAME=		zoom-1.1.4
+REVISION=		0
 CATEGORIES=     	games
 
 HOMEPAGE=		http://www.logicalshift.co.uk/unix/zoom/

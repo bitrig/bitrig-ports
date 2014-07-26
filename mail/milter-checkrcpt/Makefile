@@ -3,12 +3,11 @@
 COMMENT=	sendmail milter plugin for recipient checking
 
 DISTNAME=	milter-checkrcpt-0.3
+REVISION=	0
 CATEGORIES=	mail
 MASTER_SITES=	http://www.benzedrine.cx/
 
 HOMEPAGE=	http://www.benzedrine.cx/milter-checkrcpt.html
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

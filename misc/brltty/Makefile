@@ -4,10 +4,10 @@ COMMENT=	access software for a blind person using a braille terminal
 
 SHARED_ONLY=	Yes
 DISTNAME=	brltty-3.6
+REVISION=	0
 CATEGORIES=	misc
 HOMEPAGE=	http://mielke.cc/brltty
 MASTER_SITES=	${HOMEPAGE}/releases/
-MAINTAINER=	Mario Lang <mlang@delysid.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,7 +6,7 @@ DISTNAME=		portaudio-svn-1851
 CATEGORIES=		audio
 MASTER_SITES=		http://comstyle.com/source/
 EXTRACT_SUFX=		.tar.xz
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS=		portaudio	1.0
 

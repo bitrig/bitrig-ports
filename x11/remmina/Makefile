@@ -22,13 +22,11 @@ DISTNAME=		Remmina-${V}
 PKGNAME=		${DISTNAME:L}
 WRKDIST=		${WRKDIR}/FreeRDP-Remmina-356c033
 
-REVISION=		6
+REVISION=		7
 
 CATEGORIES=		x11 net
 
 HOMEPAGE=		http://remmina.sourceforge.net/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

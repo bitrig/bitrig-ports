@@ -3,7 +3,7 @@
 COMMENT=	powerful programming editor
 
 DISTNAME=	xwpe-1.5.30a
-REVISION=	0
+REVISION=	1
 CATEGORIES=	editors
 
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/editors/X/} \

@@ -4,7 +4,7 @@ COMMENT=	cryptographically secure random number generator
 
 MODULES=	cpan
 DISTNAME=	Crypt-Random-1.25
-REVISION=	2
+REVISION=	3
 CATEGORIES=	security
 
 # perl

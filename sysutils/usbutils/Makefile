@@ -3,13 +3,12 @@
 COMMENT =		utility used to display information about USB devices
 
 VERSION =		007
+REVISION =		0
 DISTNAME =		usbutils_${VERSION}.orig
 PKGNAME =		usbutils-${VERSION}
 
 CATEGORIES =		sysutils
 HOMEPAGE =		http://www.linux-usb.org
-
-MAINTAINER =		Martin Pieuchot <mpi@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

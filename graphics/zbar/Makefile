@@ -2,7 +2,7 @@
 
 COMMENT=	ZBar barcode reader
 DISTNAME=	zbar-0.10
-REVISION=	11
+REVISION=	12
 
 SHARED_LIBS=	zbar	0.0 \
 		zbargtk	0.0
@@ -12,8 +12,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=zbar/}
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	http://zbar.sourceforge.net/
-
-MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 
 # LGPL 2.1
 PERMIT_PACKAGE_CDROM=	Yes

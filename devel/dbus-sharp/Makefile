@@ -3,6 +3,7 @@
 COMMENT=	C\# implementation of D-Bus
 
 DISTNAME=	dbus-sharp-0.7.0
+REVISION=	0
 
 CATEGORIES=	devel
 

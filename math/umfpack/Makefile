@@ -5,14 +5,12 @@ COMMENT=	unsymmetric multifrontal sparse LU factorization package
 VERSION=	5.1.0
 DISTNAME=	UMFPACK-${VERSION}
 PKGNAME=	umfpack-${VERSION}
-REVISION=	4
+REVISION=	5
 SHARED_LIBS=	umfpack	0.0
 
 CATEGORIES=	math
 
 HOMEPAGE=	http://www.cise.ufl.edu/research/sparse/umfpack/
-
-MAINTAINER=	Steven Mestdagh <steven@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes

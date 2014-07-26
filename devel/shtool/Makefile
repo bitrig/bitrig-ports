@@ -3,7 +3,7 @@
 COMMENT=	GNU Portable Shell Tool
 
 DISTNAME=	shtool-1.6.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=shtool/}
 

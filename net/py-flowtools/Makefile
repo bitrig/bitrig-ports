@@ -7,7 +7,7 @@ COMMENT=	python interface to flow-tools file format
 MODPY_EGG_VERSION=0.3.4
 DISTNAME=	pyflowtools-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:S/pyflow/py-flow/g}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	net
 
 # GPL

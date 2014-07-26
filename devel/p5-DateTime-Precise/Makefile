@@ -3,6 +3,7 @@
 COMMENT=		common time and date operations with GPS operations
 
 DISTNAME=		DateTime-Precise-1.05
+REVISION=		0
 CATEGORIES=		devel
 
 # perl

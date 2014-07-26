@@ -4,12 +4,11 @@ COMMENT=	utility for audio-video information extraction
 
 DISTNAME=	avinfo-1.0.a15unix
 PKGNAME=	${DISTNAME:S/unix//}
+REVISION=	0
 
 CATEGORIES=	multimedia
 
 HOMEPAGE=	http://shounen.ru/soft/avinfo/desc_en.shtml
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

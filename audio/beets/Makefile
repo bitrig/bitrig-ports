@@ -4,6 +4,7 @@ COMMENT =	CLI tools to manage music collections
 
 MODPY_EGG_VERSION = 1.3.6
 DISTNAME =	beets-${MODPY_EGG_VERSION}
+REVISION =	0
 CATEGORIES =	audio
 
 HOMEPAGE =	http://beets.radbox.org/

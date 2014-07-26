@@ -6,7 +6,7 @@ MODULES=	cpan
 V=		3.0.16
 DISTNAME=	Class-DBI-v${V}
 PKGNAME=	p5-Class-DBI-${V}
-REVISION =	2
+REVISION =	3
 CATEGORIES=	databases
 USE_GROFF =	Yes
 

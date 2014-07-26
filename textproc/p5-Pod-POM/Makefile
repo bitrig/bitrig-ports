@@ -4,10 +4,9 @@ COMMENT=	convert Pod documents into a simple object model form
 
 MODULES=	cpan
 DISTNAME=	Pod-POM-0.29
+REVISION=	0
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

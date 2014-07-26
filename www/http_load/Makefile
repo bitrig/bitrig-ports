@@ -4,7 +4,7 @@ COMMENT=	multiprocessing HTTP performance testing client
 
 DISTNAME=	http_load-12mar2006
 PKGNAME=	http_load-20060312
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www benchmarks
 MASTER_SITES=	${HOMEPAGE}
 

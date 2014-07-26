@@ -2,6 +2,7 @@
 
 COMMENT =	KDE mobipocket plugins for Strigi, Okular and thumbnails
 DISTNAME =	kdegraphics-mobipocket-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	qmobipocket	0.0
 

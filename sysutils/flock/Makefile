@@ -10,11 +10,9 @@ CATEGORIES=	sysutils
 DISTFILES=	flock-${V}.c
 DIST_SUBDIR=	flock
 
-REVISION=	1
+REVISION=	2
 
 MASTER_SITES=	http://blade2k.humppa.hu/distfiles/
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

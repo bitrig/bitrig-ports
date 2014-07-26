@@ -4,7 +4,7 @@ COMMENT=	X11 fonts (.bdf files) editor
 
 DISTNAME=	xfed
 PKGNAME=	xfed-1.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11 fonts
 
 # original site no longer available.

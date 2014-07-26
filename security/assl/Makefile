@@ -3,15 +3,13 @@
 COMMENT=		hide awful SSL API in a sane interface
 
 DISTNAME=		assl-1.5.0
-REVISION=		0
+REVISION=		1
 EPOCH=			0
 CATEGORIES=		security devel
 SHARED_LIBS=		assl	6.2
 
 HOMEPAGE=		https://opensource.conformal.com/wiki/assl
 MASTER_SITES=		https://opensource.conformal.com/snapshots/assl/
-
-MAINTAINER=		David Hill <dhill@mindcry.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes

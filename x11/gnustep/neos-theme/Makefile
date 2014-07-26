@@ -5,7 +5,7 @@ COMMENT =	GNUstep theme following NeXT look and feel
 V =		0.1
 DISTNAME =	Neos-${V}.theme
 PKGNAME =	gnustep-neos-theme-${V}
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	http://gap.nongnu.org/themes/index.html
 MASTER_SITES =	http://savannah.nongnu.org/download/gap/

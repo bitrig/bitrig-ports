@@ -3,6 +3,7 @@
 COMMENT =		designated tests only run by module authors
 
 DISTNAME =		Module-Install-AuthorTests-0.002
+REVISION =		0
 CATEGORIES =		devel
 
 # perl

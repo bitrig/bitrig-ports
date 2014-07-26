@@ -3,12 +3,10 @@
 COMMENT =		display a tree of processes
 
 DISTNAME =		dtpstree-1.0.3
-REVISION =		1
+REVISION =		2
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://code.douglasthrift.net/trac/dtpstree
-
-MAINTAINER =		Douglas William Thrift <douglas@douglasthrift.net>
 
 # Apache 2.0
 PERMIT_PACKAGE_CDROM =	Yes

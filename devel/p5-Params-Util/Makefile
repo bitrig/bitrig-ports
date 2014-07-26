@@ -7,7 +7,7 @@ SHARED_ONLY=		Yes
 MODULES=		cpan
 DISTNAME=		Params-Util-1.07
 CATEGORIES=		devel
-REVISION=		0
+REVISION=		1
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

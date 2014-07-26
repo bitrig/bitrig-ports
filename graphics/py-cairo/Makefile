@@ -7,13 +7,11 @@ DISTNAME=	py2cairo-${MODPY_EGG_VERSION}
 PKGNAME=	py-cairo-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=	.tar.bz2
 
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://cairographics.org/pycairo/
-
-MAINTAINER=	Eric Faurot <eric@openbsd.org>
 
 # LGPLv2.1 / MPL 1.1
 PERMIT_PACKAGE_CDROM=	Yes

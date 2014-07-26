@@ -3,7 +3,7 @@
 COMMENT=	Cubic Circle's POP3 daemon
 
 DISTNAME=	cucipop-1.31
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 
 MASTER_SITES=	ftp://ftp.informatik.rwth-aachen.de/pub/packages/cucipop/

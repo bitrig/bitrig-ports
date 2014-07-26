@@ -5,6 +5,7 @@ COMMENT =	Python module to handle audio metadata
 MODPY_EGG_VERSION = 1.23
 DISTNAME =	mutagen-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 CATEGORIES =	audio
 
 HOMEPAGE =	https://mutagen.googlecode.com/

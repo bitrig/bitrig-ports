@@ -3,7 +3,7 @@
 COMMENT=	network head-to-head version of T*tris
 
 DISTNAME=	netris-0.52
-REVISION=	0
+REVISION=	1
 CATEGORIES=	games
 
 HOMEPAGE=	http://www.netris.org/

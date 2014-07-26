@@ -3,6 +3,7 @@
 COMMENT=	threaded NNTP- and spool-based UseNet newsreader
 
 DISTNAME=	tin-${MAJORVERSION}.${PATCHLEVEL}
+REVISION=	0
 MAJORVERSION=	2.2
 PATCHLEVEL=	1
 CATEGORIES=	news
@@ -13,8 +14,6 @@ MASTER_SITES=	http://ftp.funet.fi/pub/unix/news/tin-unoff/ \
 		ftp://ftp.tin.org/pub/news/clients/tin/v${MAJORVERSION}/
 
 HOMEPAGE=	http://www.tin.org/
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 MODULES=	devel/gettext
 

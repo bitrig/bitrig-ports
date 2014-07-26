@@ -4,7 +4,7 @@ COMMENT=	library that handles the decoding of sound file formats
 
 DISTNAME=	SDL_sound-1.0.3
 PKGNAME=	${DISTNAME:L:S/_/-/}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel audio
 MASTER_SITES=	http://offload1.icculus.org/SDL_sound/downloads/
 

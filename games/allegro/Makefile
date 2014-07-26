@@ -8,7 +8,7 @@ SHARED_ONLY =	Yes
 
 V =		4.2.3
 DISTNAME =	allegro-$V
-REVISION =	2
+REVISION =	3
 CATEGORIES =	games devel multimedia
 SHARED_LIBS =	alleg	1.0	# 4.2
 

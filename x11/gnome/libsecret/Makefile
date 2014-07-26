@@ -4,6 +4,7 @@ COMMENT=		library for storing and retrieving passwords and secrets
 
 GNOME_PROJECT=		libsecret
 GNOME_VERSION=		0.18
+REVISION=		0
 
 SHARED_LIBS +=  secret-1             1.0      # 0.0
 

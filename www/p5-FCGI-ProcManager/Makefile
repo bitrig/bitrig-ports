@@ -4,9 +4,8 @@ COMMENT=	functions for managing FastCGI applications
 
 MODULES=	cpan
 DISTNAME=	FCGI-ProcManager-0.19
+REVISION=	0
 CATEGORIES=	www
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

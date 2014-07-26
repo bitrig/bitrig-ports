@@ -5,14 +5,12 @@ COMMENT =	html5-powered web music server
 MODPY_EGG_VERSION = 0.6
 DISTNAME =	zeya_${MODPY_EGG_VERSION}.orig
 PKGNAME =	zeya-${MODPY_EGG_VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	audio www
 
 HOMEPAGE =	http://web.psung.name/zeya/
 
 MASTER_SITES =	${MASTER_SITE_DEBIAN:=main/z/zeya/}
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # AGPLv3 (GNU Affero Public License)
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,6 +4,7 @@ COMMENT= 	perl extension for emulating troublesome interfaces
 
 MODULES=	cpan
 DISTNAME =	Test-MockObject-1.20120301
+REVISION =	0
 CATEGORIES=	devel
 
 # Artistic

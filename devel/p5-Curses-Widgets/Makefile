@@ -5,7 +5,7 @@ COMMENT=	curses(3) based terminal widgets
 MODULES=	cpan
 VERSION=	1.997
 DISTNAME=	CursesWidgets-${VERSION}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

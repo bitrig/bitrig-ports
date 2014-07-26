@@ -5,6 +5,7 @@ COMMENT=		modern approach to programming for the Erlang VM
 V=			0.5.0
 DISTNAME=		v${V}
 PKGNAME=		elixir-${V}
+REVISION=		0
 CATEGORIES=		lang
 
 HOMEPAGE=		http://elixir-lang.org/

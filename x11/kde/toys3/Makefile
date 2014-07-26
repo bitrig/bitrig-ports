@@ -4,7 +4,7 @@ COMMENT = 		some useless KDE applications
 CATEGORIES =		x11 x11/kde games
 VERSION =		3.5.10
 DISTNAME =		kdetoys-${VERSION}
-REVISION =		13
+REVISION =		14
 PKGSPEC =		kdetoys->=3,<4
 
 MODULES =		x11/kde devel/gettext

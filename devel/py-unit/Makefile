@@ -5,7 +5,7 @@ COMMENT=		unit testing framework for Python
 VERSION=		1.4.1
 DISTNAME=		pyunit-${VERSION}
 PKGNAME=		py-unit-${VERSION}
-REVISION =		5
+REVISION =		6
 CATEGORIES=     	devel
 
 HOMEPAGE=		http://pyunit.sourceforge.net/

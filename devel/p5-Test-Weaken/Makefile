@@ -4,6 +4,7 @@ COMMENT =	test that freed memory objects were, indeed, freed
 
 MODULES =	cpan
 DISTNAME =	Test-Weaken-3.022000
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

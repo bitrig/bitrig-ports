@@ -3,7 +3,7 @@
 COMMENT=	IT/MOD/XM player and library
 
 DISTNAME=	dumb-0.9.3
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	audio
 

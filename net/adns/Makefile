@@ -2,7 +2,7 @@
 
 COMMENT=		asynchronous dns resolver client library and utilities
 DISTNAME=		adns-1.4
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net devel
 SHARED_LIBS=		adns	1.1
 

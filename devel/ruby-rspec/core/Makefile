@@ -2,5 +2,6 @@
 
 COMMENT =		rspec runner and formatters
 DISTNAME =		rspec-core-2.14.8
+REVISION =		0
 
 .include <bsd.port.mk>

@@ -5,7 +5,7 @@ COMMENT =		test operating environment software robustness
 # miod's modified version from cvs
 DISTNAME =		crashme-2.4
 
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		sysutils
 

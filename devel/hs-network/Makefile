@@ -5,9 +5,8 @@ COMMENT =		Haskell networking library
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		network-2.4.1.2
+REVISION =		0
 CATEGORIES =		devel net
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

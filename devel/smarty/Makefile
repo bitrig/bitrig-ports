@@ -10,7 +10,7 @@ DISTNAME-docs =	Smarty-2.6.14-docs
 PKGNAME-docs =	smarty-docs-${VERSION}
 CATEGORIES =	devel www
 
-REVISION =	4
+REVISION =	5
 
 HOMEPAGE =	http://www.smarty.net
 

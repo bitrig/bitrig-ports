@@ -4,9 +4,8 @@ COMMENT =	Perl extension for SCP secure copy protocol
 
 MODULES =	cpan
 DISTNAME =	Net-SCP-0.08
+REVISION =	0
 CATEGORIES =	net
-
-MAINTAINER =    Sergey Bronnikov <estetus@gmail.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

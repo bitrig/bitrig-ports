@@ -6,7 +6,7 @@ COMMENT=		helper functions for op tree manipulation
 
 DISTNAME=		B-Utils-0.25
 CATEGORIES=		devel
-REVISION=		0
+REVISION=		1
 
 MODULES=		cpan
 

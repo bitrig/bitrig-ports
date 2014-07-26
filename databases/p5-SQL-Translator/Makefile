@@ -3,10 +3,9 @@
 COMMENT =	database schema manipulation
 
 DISTNAME =	SQL-Translator-0.11018
+REVISION =	0
 CATEGORIES =	databases devel
 MODULES =	cpan
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 HOMEPAGE =	http://sqlfairy.sourceforge.net/
 

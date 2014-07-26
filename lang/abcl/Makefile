@@ -5,14 +5,12 @@ COMMENT =		Common Lisp dialect for the Java Virtual Machine
 V =			1.1.1
 DISTNAME =		abcl-src-${V}
 PKGNAME =		abcl-${V}
-REVISION =		1
+REVISION =		2
 PKG_ARCH =		*
 
 CATEGORIES =		lang
 
 HOMEPAGE =		http://common-lisp.net/project/armedbear/
-
-MAINTAINER =		Timo Myyra <timo.myyra@wickedbsd.net>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

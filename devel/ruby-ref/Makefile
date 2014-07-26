@@ -3,7 +3,7 @@
 COMMENT =	object reference utilities for ruby
 
 DISTNAME =	ref-1.0.2
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 
 HOMEPAGE=	https://github.com/bdurand/ref

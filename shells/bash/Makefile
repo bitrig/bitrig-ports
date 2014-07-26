@@ -4,10 +4,9 @@ COMMENT=	GNU Bourne Again Shell
 
 DISTNAME=	bash-4.3
 PKGNAME=	${DISTNAME}.18
+REVISION=	0
 CATEGORIES=	shells
 HOMEPAGE=	http://cnswww.cns.cwru.edu/~chet/bash/bashtop.html
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

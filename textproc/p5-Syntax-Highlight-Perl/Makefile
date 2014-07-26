@@ -5,7 +5,7 @@ COMMENT=	syntax highlight for perl
 MODULES=	cpan
 DISTNAME=	Syntax-Highlight-Perl-Improved-1.01
 PKGNAME=	p5-Syntax-Highlight-Perl-1.01
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc www
 USE_GROFF =	Yes
 

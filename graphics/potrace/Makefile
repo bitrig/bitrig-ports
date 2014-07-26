@@ -3,11 +3,10 @@
 COMMENT=		transforming bitmaps into vector graphics
 
 DISTNAME=		potrace-1.7
+REVISION=		0
 CATEGORIES=		graphics
 
 HOMEPAGE=		http://potrace.sourceforge.net
-
-MAINTAINER=		Matt Jibson <dolmant@gmail.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

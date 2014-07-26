@@ -5,13 +5,11 @@ COMMENT=		powerful stack-based, multi-threaded language
 V=			5.1.2
 DISTNAME=		onyx-$V
 CATEGORIES=		lang
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=		onyx 0.0
 
 HOMEPAGE=		http://www.canonware.com/onyx/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # 2-clause BSD
 PERMIT_PACKAGE_CDROM=	Yes

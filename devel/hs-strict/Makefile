@@ -3,10 +3,8 @@
 COMMENT =		strict data types and String IO
 
 DISTNAME =		strict-0.3.2
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 HOMEPAGE =		http://www.cse.unsw.edu.au/~rl/code/strict.html
 

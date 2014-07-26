@@ -18,11 +18,11 @@ PKGNAME-mysql =	cherokee-mysql-${VERSION}
 PKGNAME-geoip =	cherokee-geoip-${VERSION}
 PKGNAME-streaming = cherokee-streaming-${VERSION}
 
-REVISION-main =		3
-REVISION-geoip =	2
-REVISION-ldap =		5
-REVISION-mysql =	4
-REVISION-streaming =	3
+REVISION-main =		4
+REVISION-geoip =	3
+REVISION-ldap =		6
+REVISION-mysql =	5
+REVISION-streaming =	4
 
 SHARED_LIBS =	cherokee-base		0.0 \
 		cherokee-client		0.0 \
@@ -31,8 +31,6 @@ SHARED_LIBS =	cherokee-base		0.0 \
 CATEGORIES =	www
 
 HOMEPAGE =	http://www.cherokee-project.com/
-
-MAINTAINER =	Fernando Quintero <fernando.a.quintero@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,9 +4,8 @@ COMMENT =	lets you build groups of accessors
 
 MODULES =	cpan
 DISTNAME =	Class-Accessor-Grouped-0.10010
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

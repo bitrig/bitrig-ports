@@ -3,7 +3,7 @@
 COMMENT=	faster Ruby CSV library
 
 DISTNAME=	fastercsv-1.5.4
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc
 
 # GPLv2

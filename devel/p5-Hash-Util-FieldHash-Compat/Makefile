@@ -4,7 +4,7 @@ COMMENT =	use Hash::Util::FieldHash or ties, depending on availability
 
 MODULES =	cpan
 DISTNAME =	Hash-Util-FieldHash-Compat-0.03
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 USE_GROFF =	Yes
 

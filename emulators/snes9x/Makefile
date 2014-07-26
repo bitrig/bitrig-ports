@@ -6,7 +6,7 @@ DISTNAME =	snes9x-1.52-src
 PKGNAME =	${DISTNAME:S/-src//}
 CATEGORIES =	emulators games
 
-REVISION =	6
+REVISION =	7
 
 HOMEPAGE =	http://www.snes9x.com/
 

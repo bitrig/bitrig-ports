@@ -5,14 +5,12 @@ SHARED_ONLY =		Yes
 COMMENT =		PostgreSQL database adapter for Python
 
 MODPY_EGG_VERSION =	2.5.2
-REVISION = 0
+REVISION = 1
 DISTNAME =		psycopg2-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		databases
 
 HOMEPAGE =		http://initd.org/projects/psycopg2
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

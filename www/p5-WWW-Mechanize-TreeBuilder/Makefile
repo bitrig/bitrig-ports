@@ -5,7 +5,7 @@ COMMENT= 	combines WWW::Mechanize and HTML::TreeBuilder
 MODULES=	cpan
 
 DISTNAME=	WWW-Mechanize-TreeBuilder-1.10003
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 USE_GROFF =	Yes
 

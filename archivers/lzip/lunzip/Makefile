@@ -3,6 +3,7 @@
 COMMENT =		decompressor written in C for lzip files
 
 DISTNAME =		lunzip-1.5
+REVISION =		0
 
 HOMEPAGE =		http://lzip.nongnu.org/lunzip.html
 

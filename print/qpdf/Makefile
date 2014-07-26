@@ -3,14 +3,13 @@
 COMMENT=	PDF transformation and inspection utility
 
 DISTNAME=	qpdf-5.1.2
+REVISION=	0
 
 SHARED_LIBS +=  qpdf                 2.1      # 13.0
 
 CATEGORIES=	print graphics
 
 HOMEPAGE=	http://qpdf.sourceforge.net/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # Artistic License 2.0
 PERMIT_PACKAGE_CDROM=	Yes

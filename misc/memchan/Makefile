@@ -6,11 +6,10 @@ COMMENT =		in-memory channels for Tcl
 
 DISTNAME =		Memchan2.3
 PKGNAME =		memchan-2.3
-REVISION =		0
+REVISION =		1
 SHARED_LIBS =		Memchan23 0.0
 CATEGORIES =		misc
 HOMEPAGE =		http://memchan.sourceforge.net/
-MAINTAINER =		Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

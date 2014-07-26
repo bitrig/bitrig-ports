@@ -3,11 +3,10 @@
 COMMENT =	mro::* interface compatibility for Perl < 5.9.5
 
 DISTNAME =	MRO-Compat-0.12
+REVISION =	0
 CATEGORIES =	devel
 
 CPAN_AUTHOR =	BOBTFISH
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

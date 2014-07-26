@@ -3,7 +3,7 @@
 COMMENT =	kde wrapper around exiv2
 CATEGORIES =	graphics
 DISTNAME =	libkexiv2-0.1.9
-REVISION =	9
+REVISION =	10
 HOMEPAGE =	http://sourceforge.net/projects/kipi/
 EXTRACT_SUFX =	.tar.bz2
 PKGSPEC =	libkexiv2-<0.2.0

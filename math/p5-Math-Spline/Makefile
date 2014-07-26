@@ -3,7 +3,7 @@
 COMMENT =		cubic spline interpolation of data
 
 DISTNAME =		Math-Spline-0.01
-REVISION =		0
+REVISION =		1
 CATEGORIES =		math
 
 # perl

@@ -3,7 +3,7 @@
 COMMENT=	number theory-oriented computer algebra system
 
 DISTNAME=	pari-2.1.6
-REVISION=	3
+REVISION=	4
 EXTRACT_SUFX=	.tgz
 CATEGORIES=	math
 

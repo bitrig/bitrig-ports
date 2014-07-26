@@ -3,7 +3,7 @@
 COMMENT=	cp866<>koi8-r & cp1251<>koi8-r decoders and font converter
 
 DISTNAME=	d1489-1.5.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	converters
 
 MASTER_SITES=	http://koi8.pp.ru/dist/

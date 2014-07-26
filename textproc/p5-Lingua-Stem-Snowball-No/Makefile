@@ -6,7 +6,7 @@ MODULES=	cpan
 VERSION=	1.0
 DISTNAME=	Snowball-Norwegian-${VERSION}
 PKGNAME=	p5-Lingua-Stem-Snowball-No-${VERSION}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 # GPL

@@ -3,6 +3,7 @@
 MODPY_EGG_VERSION =	3.2.1
 
 TRYTOND_MODULE =	account_payment_sepa
+REVISION =		0
 
 RUN_DEPENDS =		productivity/tryton/account_payment \
 			productivity/tryton/bank \

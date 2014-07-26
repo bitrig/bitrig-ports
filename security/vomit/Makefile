@@ -3,13 +3,11 @@
 COMMENT=		voice over misconfigured internet telephones
 
 DISTNAME=		vomit-0.2
-REVISION =		5
+REVISION =		6
 
 CATEGORIES=		security
 
 HOMEPAGE=		http://vomit.xtdnet.nl/
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 # BSD-style
 PERMIT_PACKAGE_CDROM=	Yes

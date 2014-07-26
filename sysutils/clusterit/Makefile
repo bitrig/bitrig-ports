@@ -4,12 +4,10 @@ COMMENT=		suite of clustering tools based on IBM's PSSP
 
 DISTNAME=		clusterit-2.5
 PKGNAME=		${DISTNAME}
-REVISION =		2
+REVISION =		3
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://www.garbled.net/clusterit.html
-
-MAINTAINER=		Will Maier <willmaier@ml1.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

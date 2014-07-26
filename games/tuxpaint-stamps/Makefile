@@ -6,11 +6,10 @@ COMMENT=	rubber stamps collection for Tux Paint
 
 DISTNAME=	tuxpaint-stamps-2009.06.28
 PKGNAME=	tuxpaint-stamps-20090628
+REVISION=	0
 CATEGORIES=	games graphics
 
 HOMEPAGE=	http://www.tuxpaint.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

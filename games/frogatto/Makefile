@@ -6,7 +6,7 @@ COMMENT=	2D adventure platformer game
 
 # repackaged source from github minus the MacOS* dirs
 DISTNAME=	frogatto-1.3.20130317
-REVISION=	2
+REVISION=	3
 MASTER_SITES=	https://distfiles.bsdfrog.org/
 EXTRACT_SUFX=	.tar.bz2
 

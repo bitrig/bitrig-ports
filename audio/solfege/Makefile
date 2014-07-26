@@ -2,11 +2,10 @@
 
 COMMENT =	solfege and ear training program
 DISTNAME =	solfege-3.22.2
+REVISION =	0
 CATEGORIES =	audio x11
 
 HOMEPAGE =	http://www.solfege.org/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

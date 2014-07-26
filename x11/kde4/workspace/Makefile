@@ -3,6 +3,7 @@
 COMMENT =	KDE workspace
 MODKDE4_VERSION =	4.11.11
 DISTNAME =	kde-workspace-${MODKDE4_VERSION}
+REVISION =	0
 
 MASTER_SITES =	${MASTER_SITE_KDE:=stable/4.13.3/src/}
 

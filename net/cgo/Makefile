@@ -2,11 +2,10 @@
 
 COMMENT =	simple terminal based gopher client
 DISTNAME =	cgo-20140220
+REVISION =	0
 CATEGORIES =	net
 
 HOMEPAGE =	https://github.com/kieselsteini/cgo/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

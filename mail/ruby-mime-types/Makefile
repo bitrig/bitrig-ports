@@ -3,7 +3,7 @@
 COMMENT=		MIME type library for Ruby
 
 DISTNAME=		mime-types-1.16
-REVISION=		6
+REVISION=		7
 CATEGORIES=		mail
 
 HOMEPAGE=		http://mime-types.rubyforge.org/

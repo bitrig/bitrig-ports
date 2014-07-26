@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		time profiler for Lua
 
 DISTNAME=		luaprofiler-2.0.2
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 
 HOMEPAGE=		http://luaprofiler.luaforge.net/

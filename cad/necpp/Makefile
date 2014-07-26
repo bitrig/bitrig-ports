@@ -3,7 +3,7 @@
 COMMENT=	NEC2++ antenna simulator
 
 DISTNAME=	necpp-1.2.3
-REVISION=	3
+REVISION=	4
 CATEGORIES=    	cad hamradio
 
 HOMEPAGE=	http://elec.otago.ac.nz/w/index.php/Necpp

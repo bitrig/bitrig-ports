@@ -5,12 +5,10 @@ COMMENT =	Python MPD client library
 MODPY_EGG_VERSION =	0.3.0
 DISTNAME =		python-mpd-${MODPY_EGG_VERSION}
 PKGNAME =		py-mpd-${MODPY_EGG_VERSION}
-REVISION =		2
+REVISION =		3
 CATEGORIES =		audio
 
 HOMEPAGE =		http://jatreuman.indefero.net/p/python-mpd/
-
-MAINTAINER =		Martin Pieuchot <mpi@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

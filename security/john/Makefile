@@ -3,12 +3,10 @@
 COMMENT =		extremely fast password cracker
 
 DISTNAME =		john-1.8.0
-REVISION =		0
+REVISION =		1
 CATEGORIES =		security
 
 HOMEPAGE =		http://www.openwall.com/john/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2 & Public Domain
 PERMIT_PACKAGE_CDROM =	Yes

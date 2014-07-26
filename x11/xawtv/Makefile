@@ -6,10 +6,8 @@ ONLY_FOR_ARCHS=	i386 macppc amd64 alpha
 COMMENT=	TV viewing application for bktr(4) cards
 
 DISTNAME=	xawtv-3.94
-REVISION=	6
+REVISION=	7
 CATEGORIES=	x11
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 HOMEPAGE=	http://bytesex.org/xawtv/
 

@@ -3,11 +3,10 @@
 COMMENT=	text-based calendar and scheduling application
 
 DISTNAME=	calcurse-3.1.4
+REVISION=	0
 EPOCH=		0
 
 CATEGORIES=	productivity
-
-MAINTAINER=	Frederic Culot <frederic@culot.org>
 
 HOMEPAGE=	http://calcurse.org/
 

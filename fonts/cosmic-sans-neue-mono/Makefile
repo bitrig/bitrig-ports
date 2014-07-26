@@ -2,10 +2,10 @@
 
 COMMENT =	programming font designed with functionality in mind
 DISTNAME =	cosmic-sans-neue-mono-1.3.1
+REVISION =	0
 CATEGORIES =	fonts x11
 
 HOMEPAGE =	http://openfontlibrary.org/en/font/cosmic-sans-neue-mono
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # SIL Open Font License 1.1
 PERMIT_PACKAGE_CDROM =	Yes

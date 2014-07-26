@@ -4,6 +4,7 @@ COMMENT=		parse and create PostGresql date objects
 
 MODULES=		cpan
 DISTNAME=		DateTime-Format-Pg-0.16005
+REVISION=		0
 CATEGORIES=		devel converters
 USE_GROFF =		Yes
 

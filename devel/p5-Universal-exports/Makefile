@@ -6,11 +6,9 @@ MODULES=	cpan
 V=		0.05
 DISTNAME=	UNIVERSAL-exports-${V}
 PKGNAME=	p5-Universal-exports-${V}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

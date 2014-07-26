@@ -3,6 +3,7 @@
 COMMENT=		set up Log::Dispatch::Config for a test run
 
 DISTNAME=		Log-Dispatch-Config-TestLog-0.02
+REVISION=		0
 
 CATEGORIES=		devel
 

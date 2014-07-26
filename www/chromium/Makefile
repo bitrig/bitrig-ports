@@ -7,12 +7,11 @@ COMMENT=		Chromium browser
 
 V=			36.0.1985.125
 DISTNAME=		chromium-${V}
+REVISION=		0
 
 CATEGORIES=		www
 
 HOMEPAGE=		https://code.google.com/chromium/
-
-MAINTAINER=		Robert Nagy <robert@openbsd.org>
 
 EXTRACT_SUFX=		.tar.xz
 

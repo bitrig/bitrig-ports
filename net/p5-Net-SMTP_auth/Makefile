@@ -4,7 +4,7 @@ COMMENT=	Perl module to use authenticated SMTP
 
 MODULES=	cpan
 DISTNAME=	Net-SMTP_auth-0.08
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net mail
 
 # perl

@@ -3,7 +3,7 @@
 COMMENT=	image manipulation library
 
 DISTNAME=	imlib2-1.4.2
-REVISION=	3
+REVISION=	4
 SHARED_LIBS=	Imlib2	6.0	# .5.0
 CATEGORIES=	graphics
 

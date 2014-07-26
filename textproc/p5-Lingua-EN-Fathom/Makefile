@@ -3,6 +3,7 @@
 COMMENT=		measure readability of English text
 
 DISTNAME=		Lingua-EN-Fathom-1.14
+REVISION=		0
 CATEGORIES=		textproc
 
 MODULES=		cpan

@@ -5,11 +5,9 @@ COMMENT =	PostgreSQL log analyzer
 DISTNAME =	pgfouine-1.2
 CATEGORIES =	databases
 
-REVISION =	4
+REVISION =	5
 
 HOMEPAGE =	http://pgfouine.projects.postgresql.org/
-
-MAINTAINER =	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

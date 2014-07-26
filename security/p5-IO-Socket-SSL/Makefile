@@ -3,10 +3,9 @@
 COMMENT =		perl interface to SSL sockets
 
 DISTNAME =		IO-Socket-SSL-1.997
+REVISION =		0
 
 CATEGORIES =		security
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

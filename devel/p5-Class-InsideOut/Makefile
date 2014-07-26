@@ -5,6 +5,7 @@ COMMENT= 	alternative object layout in perl
 MODULES=	cpan
 
 DISTNAME=	Class-InsideOut-1.13
+REVISION=	0
 
 CATEGORIES=	devel
 USE_GROFF=	Yes

@@ -4,6 +4,7 @@ COMMENT=	resource manager for PC/SC
 
 V=		1.8.11
 DISTNAME=	pcsc-lite-${V}
+REVISION=	0
 CATEGORIES=	security
 
 SHARED_LIBS+=	pcsclite	1.0 # 1.0.0
@@ -14,8 +15,6 @@ HOMEPAGE=	http://pcsclite.alioth.debian.org/pcsclite.html
 MASTER_SITES=	https://alioth.debian.org/frs/download.php/latestfile/39/
 
 EXTRACT_SUFX=	.tar.bz2
-
-MAINTAINER=	David Coppa <dcoppa@openbsd.org>
 
 # BSD and GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

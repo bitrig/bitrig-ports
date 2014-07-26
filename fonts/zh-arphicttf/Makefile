@@ -4,10 +4,8 @@ COMMENT=	chinese big5/gb truetype fonts
 
 DISTNAME=       zh-arphicttf-2.11
 PKGNAME=	zh-fonts-arphicttf-2.11
-REVISION=	2
+REVISION=	3
 CATEGORIES=     fonts chinese x11
-
-MAINTAINER=     Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

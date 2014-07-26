@@ -3,10 +3,8 @@
 COMMENT= 		WWW quote retrieval tool
 
 DISTNAME=		xquote-2.6.10
-REVISION=		7
+REVISION=		8
 CATEGORIES=		productivity x11
-
-MAINTAINER=		Martynas Venckus <martynas@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

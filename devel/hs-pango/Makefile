@@ -3,12 +3,10 @@
 COMMENT =		Haskell bindings to pango
 
 DISTNAME =		pango-0.12.3
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel x11
 
 HOMEPAGE =		http://www.haskell.org/gtk2hs/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # LGPL2.1
 PERMIT_PACKAGE_CDROM =	Yes

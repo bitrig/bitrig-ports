@@ -8,8 +8,7 @@ PKGNAME =	golly-2.6
 DISTNAME =	${PKGNAME}-src
 WRKSRC =	${WRKDIST}/gui-wx/configure
 CATEGORIES =	games math
-MAINTAINER =	Donovan Watteau <tsoomi@gmail.com>
-REVISION =	0
+REVISION =	1
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=golly/}
 

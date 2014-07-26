@@ -6,7 +6,7 @@ DISTNAME =		capitan-sevilla-${VERSION}
 CATEGORIES =		games
 HOMEPAGE =		http://computeremuzone.com/ficha.php?id=754&l=en
 
-REVISION =		1
+REVISION =		2
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

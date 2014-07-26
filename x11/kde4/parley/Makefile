@@ -2,6 +2,7 @@
 
 COMMENT =	vocabulary trainer for KDE
 DISTNAME =	parley-${MODKDE4_VERSION}
+REVISION =	0
 
 # XXX Sometimes crashes, possibly due KHotNewStuff bugs.
 

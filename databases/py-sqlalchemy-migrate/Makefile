@@ -4,7 +4,7 @@ COMMENT =		schema migration tools for SQLAlchemy
 
 MODPY_EGG_VERSION =	0.7.1
 DISTNAME =		sqlalchemy-migrate-${MODPY_EGG_VERSION}
-REVISION =		0
+REVISION =		1
 PKGNAME =		py-${DISTNAME}
 
 CATEGORIES =		databases

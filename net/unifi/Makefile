@@ -6,12 +6,11 @@ DISTFILES=	unifi-$V{UniFi.unix}.zip
 V=		3.2.1
 FW_VER=		3.2.1.2601
 PKGNAME=	unifi-$V
+REVISION=	0
 
 CATEGORIES=	net
 
 HOMEPAGE=	http://wiki.ubnt.com/UniFi_FAQ
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # at least the firmware files are restricted, if not more
 PERMIT_PACKAGE_CDROM=	http://www.ubnt.com/eula/

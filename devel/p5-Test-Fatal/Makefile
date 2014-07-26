@@ -4,6 +4,7 @@ COMMENT =	incredibly simple helpers for testing code with exceptions
 
 MODULES =	cpan
 DISTNAME =	Test-Fatal-0.013
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

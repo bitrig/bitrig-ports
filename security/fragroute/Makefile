@@ -3,12 +3,10 @@
 COMMENT=		intercept, modify, and rewrite egress traffic
 
 DISTNAME=		fragroute-1.2
-REVISION =		7
+REVISION =		8
 CATEGORIES=    		security net
 
 HOMEPAGE=		http://www.monkey.org/~dugsong/fragroute/
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

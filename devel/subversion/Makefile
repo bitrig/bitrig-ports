@@ -20,7 +20,12 @@ FULLPKGNAME-ap2=	ap2-subversion-${VERSION}
 FULLPKGPATH-ap2=	devel/subversion,-ap2
 FULLPKGNAME-gnome-keyring= gnome-keyring-subversion-${VERSION}
 FULLPKGPATH-gnome-keyring= devel/subversion,-gnome-keyring
-REVISION-perl=		0
+REVISION-main=		0
+REVISION-perl=		1
+REVISION-python=	0
+REVISION-ruby=		0
+REVISION-ap2=		0
+REVISION-gnome-keyring=	0
 
 SO_VERSION=	1.4
 SVN_LIBS=	svn_client-1 svn_delta-1 svn_diff-1 svn_fs-1 \
@@ -36,8 +41,6 @@ SHARED_LIBS+=	${_lib} ${SO_VERSION}
 CATEGORIES=	devel
 
 HOMEPAGE=	http://subversion.apache.org
-
-MAINTAINER=	Stefan Sperling <stsp@openbsd.org>
 
 # BSD alike + Apache License 2.0
 PERMIT_PACKAGE_CDROM=	Yes

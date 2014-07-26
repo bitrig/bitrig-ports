@@ -4,10 +4,8 @@ COMMENT=		Perl module for dumping Perl objects from/to XML
 
 MODULES=		cpan
 DISTNAME=		XML-Dumper-0.81
-REVISION=		1
+REVISION=		2
 CATEGORIES=		textproc devel
-
-MAINTAINER=		Srebrenko Sehic <haver@insecure.dk>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,6 +3,7 @@
 COMMENT=	brute force binary tester
 
 DISTNAME=	bfbtester-2.0.1
+REVISION=	0
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bfbtester/}
 

@@ -6,6 +6,7 @@ DISTNAME =		kopete-${MODKDE4_VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-sounds =	kde4-kopete-sounds-${MODKDE4_VERSION}
 PKG_ARCH-sounds =	*
+REVISION =		0
 
 CATEGORIES =	network
 HOMEPAGE =	http://kopete.kde.org/

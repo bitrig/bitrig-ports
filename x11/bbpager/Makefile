@@ -3,14 +3,12 @@
 COMMENT =	pager for the Blackbox window manager
 
 DISTNAME =	bbpager-0.4.7
-REVISION=	1
+REVISION=	2
 
 CATEGORIES =	x11
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=bbtools/}
 
 HOMEPAGE =	http://bbtools.sourceforge.net/
-
-MAINTAINER =	Josh Rivel <dorqus@freek.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes

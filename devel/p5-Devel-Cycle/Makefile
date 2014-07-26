@@ -5,6 +5,7 @@ COMMENT= 	find memory cycles in objects
 MODULES=	cpan
 
 DISTNAME=	Devel-Cycle-1.11
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

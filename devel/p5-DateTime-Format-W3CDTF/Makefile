@@ -4,7 +4,7 @@ COMMENT=		parse and format W3CDTF datetime strings
 
 MODULES=		cpan
 DISTNAME=		DateTime-Format-W3CDTF-0.05
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel converters
 USE_GROFF =		Yes
 

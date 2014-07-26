@@ -3,7 +3,7 @@
 COMMENT=		color vt102 terminal emulator with transparency support
 
 DISTNAME=		wterm-6.2.9
-REVISION=		2
+REVISION=		3
 CATEGORIES=		x11
 
 HOMEPAGE=		http://www.wterm.org/

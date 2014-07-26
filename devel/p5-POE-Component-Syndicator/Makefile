@@ -4,8 +4,6 @@ COMMENT =		POE component base class implementing Observer pattern
 
 DISTNAME =		POE-Component-Syndicator-0.01
 
-MAINTAINER =		Wen Heping <wenheping@gmail.com>
-
 CATEGORIES =		devel
 
 # perl

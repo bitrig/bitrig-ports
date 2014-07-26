@@ -3,10 +3,8 @@
 COMMENT=		provides newtype wrappers for phantom types
 
 DISTNAME=		tagged-0.4.4
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

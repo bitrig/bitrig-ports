@@ -3,7 +3,7 @@
 COMMENT=	provide an easy way to perform HTTP requests
 
 DISTNAME=	HTTP_Request-1.4.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 
 MODULES=	www/pear

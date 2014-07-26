@@ -4,7 +4,7 @@ COMMENT =	distributed, document-oriented database
 
 COUCH_VER =	1.0.4
 DISTNAME =	apache-couchdb-${COUCH_VER}
-REVISION =	1
+REVISION =	2
 CATEGORIES =	databases
 
 HOMEPAGE =	http://couchdb.apache.org/

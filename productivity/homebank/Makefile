@@ -3,12 +3,11 @@
 COMMENT =	personal accounting application
 
 DISTNAME =	homebank-4.5.6
+REVISION =	0
 
 CATEGORIES =	productivity x11
 
 HOMEPAGE =	http://homebank.free.fr
-
-MAINTAINER =	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,11 +3,10 @@
 COMMENT=	Unicode utilities
 
 DISTNAME=	uniutils-2.27
-REVISION=	0
+REVISION=	1
 CATEGORIES=	misc
 
 HOMEPAGE=	http://billposer.org/Software/unidesc.html
-MAINTAINER=	Nicholas Marriott <nicm@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,6 +3,7 @@
 COMMENT =	KDE 4 bindings for Python
 DISTNAME =	pykde4-${MODKDE4_VERSION}
 PKGNAME =	py-kde-${MODKDE4_VERSION}
+REVISION =	0
 
 MODULES =	lang/python
 

@@ -3,11 +3,10 @@
 COMMENT=	encrypt and decrypt AES files and streams
 
 DISTNAME=	ccrypt-1.10
+REVISION=	0
 CATEGORIES=	security
 
 HOMEPAGE=	http://ccrypt.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,7 +6,7 @@ COMMENT=	applications integration into Nautilus
 
 GNOME_PROJECT=	nautilus-sendto
 GNOME_VERSION=	3.8.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 
 

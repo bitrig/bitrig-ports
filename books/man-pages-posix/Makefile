@@ -4,6 +4,7 @@ CATEGORIES =	books devel
 COMMENT =	POSIX manual pages
 DISTNAME =	man-pages-posix-2013-a
 PKGNAME =	${DISTNAME:C/(-[0-9]+)-/\1/}
+REVISION =	0
 PKG_ARCH =	*
 
 MASTER_SITES =	https://www.kernel.org/pub/linux/docs/man-pages/man-pages-posix/

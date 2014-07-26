@@ -3,14 +3,12 @@
 COMMENT=	UDP tunnel utility
 
 DISTNAME=	udptunnel-1.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 MASTER_SITES=	${HOMEPAGE}
 
 HOMEPAGE=	http://www.cs.columbia.edu/~lennox/udptunnel/
-
-MAINTAINER=     Jakob Schlyter <jakob@openbsd.org>
 
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM=	Yes

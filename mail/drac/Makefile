@@ -4,7 +4,7 @@ COMMENT=	dynamic relay authorization control daemon
 
 DISTNAME=	drac
 PKGNAME=	${DISTNAME}-1.12
-REVISION =	4
+REVISION =	5
 CATEGORIES=	mail
 
 HOMEPAGE=	http://mail.cc.umanitoba.ca/drac/

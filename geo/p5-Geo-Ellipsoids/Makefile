@@ -3,7 +3,7 @@
 COMMENT=	perl module that provides ellipsoid values
 MODULES=	cpan
 DISTNAME=	Geo-Ellipsoids-0.16
-REVISION=	0
+REVISION=	1
 CATEGORIES=	geo
 
 # Perl

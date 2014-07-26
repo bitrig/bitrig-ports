@@ -5,7 +5,7 @@ COMMENT =	http proxying tools for wsgi apps
 MODPY_EGG_VERSION = 0.2.2
 DISTNAME =	WSGIProxy-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	www devel
 

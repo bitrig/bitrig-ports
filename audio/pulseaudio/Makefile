@@ -19,7 +19,7 @@ COMMENT=		cross-platform networked sound server
 VERSION=		5.0
 DISTNAME=		pulseaudio-${VERSION}
 EXTRACT_SUFX=		.tar.xz
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  pulse                3.0      # .17.3
 SHARED_LIBS +=  pulse-simple         0.0      # .1.0
@@ -29,7 +29,6 @@ CATEGORIES=		audio
 
 SUBST_VARS+=		VERSION
 
-MAINTAINER=		Robert Nagy <robert@openbsd.org>
 HOMEPAGE=		http://www.pulseaudio.org/
 
 # LGPLv2.1

@@ -15,7 +15,7 @@ SUBST_VARS += 		PREFIX CONFDIR
 # Distfiles must be hand-rolled, see README
 N =			mplayer
 DISTNAME =		mplayer-${V}
-REVISION =		0
+REVISION =		1
 EXTRACT_SUFX =		.tar.xz
 
 CATEGORIES =		x11 multimedia
@@ -35,8 +35,6 @@ WANTLIB +=	c++ c++abi
 
 # we use a snapshot
 MASTER_SITES =	http://comstyle.com/source/
-
-MAINTAINER =	Brad Smith <brad@comstyle.com>
 
 MODULES +=	converters/libiconv \
 		lang/clang

@@ -5,7 +5,6 @@ COMMENT ?=	centralised configuration management for networks
 DISTNAME ?=	puppet-${VERSION}
 HOMEPAGE ?=	https://puppetlabs.com
 MASTER_SITES ?=	https://downloads.puppetlabs.com/puppet/
-MAINTAINER ?=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 NO_TEST ?=	Yes
 NO_BUILD ?=	Yes
 FILESDIR ?=	${.CURDIR}/../files

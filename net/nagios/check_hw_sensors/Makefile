@@ -4,10 +4,8 @@ PKG_ARCH=		*
 
 COMMENT=		Nagios plugin to monitor sysctl hw.sensors
 DISTNAME=		check_hw_sensors-1.42
-REVISION=		2
+REVISION=		3
 CATEGORIES=		sysutils net
-
-MAINTAINER=		Andrew Fresh <andrew@afresh1.com>
 
 HOMEPAGE=		http://openbsd.somedomain.net/nagios/check_hw_sensors.html
 MASTER_SITES=		http://monitoringexchange.org/attachment/download/Check-Plugins/Operating-Systems/BSD/OpenBSD/check_hw_sensors/

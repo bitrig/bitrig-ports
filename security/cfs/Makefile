@@ -5,7 +5,7 @@ NOT_FOR_ARCHS=	${LP64_ARCHS}
 COMMENT=	cryptographic file system (user-space NFS server)
 
 DISTNAME=	cfs-1.4.1
-REVISION =	4
+REVISION =	5
 CATEGORIES=	security
 
 HOMEPAGE=	http://www.crypto.com/software/

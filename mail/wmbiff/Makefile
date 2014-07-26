@@ -2,7 +2,7 @@
 
 COMMENT=	multiple mailbox checker dockapp
 DISTNAME=	wmbiff-0.4.27
-REVISION =	3
+REVISION =	4
 CATEGORIES=	mail x11 x11/windowmaker
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wmbiff/}
 

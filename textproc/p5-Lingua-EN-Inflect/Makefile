@@ -4,9 +4,8 @@ COMMENT =	convert singular to plural, select a or an
 
 MODULES =	cpan
 DISTNAME =	Lingua-EN-Inflect-1.895
+REVISION =	0
 CATEGORIES =	textproc
-
-MAINTAINER =	Sam Smith <S@msmith.net>
 
 # Same as Perl
 # unknown

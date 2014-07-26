@@ -6,12 +6,12 @@ COMMENT-utils=		quota tools for the Courier mail suite
 V=			2.7.1
 DISTNAME=		maildrop-$V
 PKGNAME-main=		maildrop-${V}
+REVISION=		0
 FULLPKGNAME-utils=	courier-utils-$V
 FULLPKGPATH-utils=	mail/maildrop,-utils
 CATEGORIES=		mail
 
 HOMEPAGE=		http://www.courier-mta.org/maildrop/
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=		.tar.bz2

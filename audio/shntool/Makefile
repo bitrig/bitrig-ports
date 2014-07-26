@@ -3,6 +3,7 @@
 COMMENT =		multi-purpose wave data processing utility
 
 DISTNAME =		shntool-3.0.10
+REVISION =		0
 
 CATEGORIES =		audio
 

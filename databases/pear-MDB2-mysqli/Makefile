@@ -7,10 +7,9 @@ DISTNAME =	MDB2_Driver_mysqli-${V}
 PKGNAME =	pear-MDB2-mysqli-${V}
 CATEGORIES =	net databases
 
-MAINTAINER =	Giovanni Bechis <giovanni@openbsd.org>
 MODULES =	lang/php www/pear
 
-REVISION =	4
+REVISION =	5
 
 # PHP License
 PERMIT_PACKAGE_CDROM =	Yes

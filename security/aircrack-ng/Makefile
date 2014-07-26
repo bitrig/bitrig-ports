@@ -2,12 +2,10 @@
 
 COMMENT=		802.11 WEP and WPA-PSK keys cracking program
 DISTNAME=		aircrack-ng-1.1
-REVISION=		8
+REVISION=		9
 CATEGORIES=		security
 
 HOMEPAGE=		http://www.aircrack-ng.org/
-
-MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes

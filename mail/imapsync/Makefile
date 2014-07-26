@@ -3,9 +3,8 @@
 COMMENT=	IMAP synchronization tool
 
 DISTNAME=	imapsync-1.350
+REVISION=	0
 CATEGORIES=	mail
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # WTFPL
 PERMIT_PACKAGE_CDROM=	Yes

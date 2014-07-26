@@ -5,7 +5,7 @@ COMMENT=	tools and library routines for working with TIFF images
 DISTNAME=	tiff-4.0.3
 SHARED_LIBS=	tiff	39.2	# 7.0
 SHARED_LIBS+=	tiffxx	40.1	# 7.0
-REVISION=	3
+REVISION=	4
 CATEGORIES=	graphics
 
 MASTER_SITES=	http://download.osgeo.org/libtiff/

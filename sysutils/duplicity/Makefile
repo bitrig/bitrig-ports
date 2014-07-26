@@ -4,14 +4,12 @@ COMMENT =	encrypted backup using rsync algorithm
 
 MODPY_EGG_VERSION = 0.6.23
 DISTNAME =	duplicity-${MODPY_EGG_VERSION}
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	sysutils
 
 HOMEPAGE =	http://www.nongnu.org/duplicity/
 MASTER_SITES =	${MASTER_SITE_SAVANNAH:=duplicity/}
-
-MAINTAINER =	Jim Razmus II <jim@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

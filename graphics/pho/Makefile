@@ -3,6 +3,7 @@
 COMMENT=	lightweight image viewer
 
 DISTNAME=	pho-0.9.8
+REVISION=	0
 WRKDIST=	${WRKDIR}/pho
 
 CATEGORIES=	graphics x11

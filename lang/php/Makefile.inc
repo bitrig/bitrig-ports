@@ -15,7 +15,6 @@ DISTFILES?=		php-${V}.tar.bz2
 DISTNAME?=		php-${V}
 CATEGORIES=		lang www
 
-MAINTAINER=		Robert Nagy <robert@openbsd.org>
 HOMEPAGE=		http://www.php.net/
 
 SUHOSIN_V=		0.9.33

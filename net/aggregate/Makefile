@@ -3,7 +3,7 @@
 COMMENT=	optimise a list of route prefixes
 
 DISTNAME=	aggregate-1.6
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 MASTER_SITES=	${MASTER_SITE_ISC:=aggregate/}

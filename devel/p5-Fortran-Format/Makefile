@@ -4,7 +4,7 @@ COMMENT=	read/write data according to a standard Fortran 77 FORMAT
 
 MODULES=	cpan
 DISTNAME=	Fortran-Format-0.90
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

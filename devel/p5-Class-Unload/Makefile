@@ -3,9 +3,8 @@
 COMMENT=	unload a class
 
 DISTNAME=	Class-Unload-0.08
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Andrew Fresh <andrew@cpan.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

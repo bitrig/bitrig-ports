@@ -3,9 +3,8 @@
 COMMENT=		temporary file auditing tool
 
 PKGNAME=		tempwatch-1.0
+REVISION=		0
 CATEGORIES=		security
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 # public domain
 PERMIT_PACKAGE_CDROM=	Yes

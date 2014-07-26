@@ -3,10 +3,9 @@
 COMMENT =		module for network data inspection and modification
 
 DISTNAME =		Net-IMP-0.629
+REVISION =		0
 
 CATEGORIES =		net
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

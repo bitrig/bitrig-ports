@@ -7,14 +7,12 @@ COMMENT =		PostgreSQL V8 javascript procedual language
 
 VERSION =		1.3.0
 DISTNAME =		plv8-${VERSION}
-REVISION =		2
+REVISION =		3
 PKGNAME =		postgresql-${DISTNAME}
 
 CATEGORIES =		databases
 
 HOMEPAGE =		https://code.google.com/p/plv8js
-
-MAINTAINER =		Jeremy Evans <jeremy@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

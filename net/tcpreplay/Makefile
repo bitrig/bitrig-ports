@@ -3,12 +3,10 @@
 COMMENT=	resend network traffic saved by tcpdump
 
 DISTNAME=	tcpreplay-3.4.4
-REVISION =	1
+REVISION =	2
 CATEGORIES=	net
 
 HOMEPAGE=	http://tcpreplay.synfin.net
-
-MAINTAINER=	Nigel Taylor <nigel@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

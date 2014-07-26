@@ -3,7 +3,7 @@
 COMMENT=	viewer for IETF RFCs
 
 DISTNAME=	qrfcview-0.62
-REVISION=	8
+REVISION=	9
 CATEGORIES=	x11
 
 # GPL

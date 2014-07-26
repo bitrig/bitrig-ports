@@ -11,7 +11,7 @@ HOMEPAGE=	http://parchive.sourceforge.net/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-REVISION =	1
+REVISION =	2
 WANTLIB=		c
 
 NO_TEST=	Yes

@@ -3,7 +3,7 @@
 COMMENT =	cryptographic CipherSaber encryption
 
 DISTNAME =	Crypt-CipherSaber-1.00
-REVISION =	0
+REVISION =	1
 CATEGORIES =	security
 
 # Perl

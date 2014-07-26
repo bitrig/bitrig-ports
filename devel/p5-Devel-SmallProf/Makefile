@@ -4,10 +4,8 @@ COMMENT=		per-line Perl profiler
 
 MODULES=		cpan
 DISTNAME=		Devel-SmallProf-2.02
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
-
-MAINTAINER=		Srebrenko Sehic <haver@insecure.dk>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

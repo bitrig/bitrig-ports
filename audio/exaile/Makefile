@@ -5,7 +5,7 @@ COMMENT =	music manager and player for GTK+ written in Python
 V =		3.3
 P =		1
 DISTNAME =	exaile-${V}.${P}
-REVISION =	3
+REVISION =	4
 
 CATEGORIES =	audio x11
 

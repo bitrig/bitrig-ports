@@ -3,12 +3,11 @@
 COMMENT=	multiplayer 2d space battles game
 
 DISTNAME=	xpilot-4.5.5
+REVISION=	0
 CATEGORIES=	games x11
 
 HOMEPAGE=	http://www.xpilot.org/
 EXTRACT_SUFX=	.tar.bz2
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

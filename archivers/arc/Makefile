@@ -3,6 +3,7 @@
 COMMENT=	create & extract files from DOS .ARC files
 
 DISTNAME=	arc-5.21p
+REVISION=	0
 CATEGORIES=	archivers
 
 HOMEPAGE=	http://arc.sourceforge.net/

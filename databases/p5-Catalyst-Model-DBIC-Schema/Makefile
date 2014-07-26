@@ -3,10 +3,9 @@
 COMMENT=	model class for catalyst
 
 DISTNAME=	Catalyst-Model-DBIC-Schema-0.59
+REVISION=	0
 CATEGORIES=	databases
 MODULES=	cpan
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

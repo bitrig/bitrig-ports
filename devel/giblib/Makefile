@@ -3,14 +3,12 @@
 COMMENT=		utility library including a imlib2 wrapper
 
 DISTNAME=		giblib-1.2.4
-REVISION =		5
+REVISION =		6
 SHARED_LIBS=		giblib	1.6	# .1.6
 
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.linuxbrit.co.uk/giblib/
-
-MAINTAINER=		Victor Sahlstedt <salan@legonet.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

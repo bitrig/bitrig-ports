@@ -5,6 +5,7 @@ COMMENT=	free H.264/MPEG-4 AVC encoder
 V=		20140525
 DISTNAME=	x264-snapshot-${V}-2245
 PKGNAME=	x264-${V}
+REVISION=	0
 CATEGORIES=	multimedia
 MASTER_SITES=	http://downloads.videolan.org/pub/videolan/x264/snapshots/
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +13,6 @@ EXTRACT_SUFX=	.tar.bz2
 SHARED_LIBS=	x264	13.0
 
 HOMEPAGE=	http://www.videolan.org/developers/x264.html
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	patents

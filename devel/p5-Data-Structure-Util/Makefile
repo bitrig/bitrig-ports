@@ -5,11 +5,9 @@ SHARED_ONLY=	Yes
 
 MODULES=	cpan
 DISTNAME=	Data-Structure-Util-0.15
-REVISION=	4
+REVISION=	5
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

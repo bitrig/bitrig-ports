@@ -8,9 +8,7 @@ MODULES =		cpan
 DISTNAME =		DateTime-1.07
 EPOCH =			0
 CATEGORIES =		devel
-REVISION =		0
-
-MAINTAINER = Andrew Fresh <andrew@cpan.org>
+REVISION =		1
 
 # artistic_2
 PERMIT_PACKAGE_CDROM =	Yes

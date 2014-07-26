@@ -3,6 +3,7 @@
 COMMENT=		flexible communications framework, farstream component
 
 DISTNAME=		telepathy-farstream-0.6.1
+REVISION=		0
 
 HOMEPAGE=		http://www.freedesktop.org/wiki/Software/Farstream
 

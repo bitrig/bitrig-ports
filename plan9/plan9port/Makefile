@@ -6,12 +6,11 @@ BROKEN-powerpc =	threading issues
 COMMENT =		Plan 9 from user space
 
 DISTNAME =		plan9port-20140306
+REVISION =		0
 
 CATEGORIES =		plan9
 
 HOMEPAGE =		http://swtch.com/plan9port/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # mostly LPL (see LICENSE)
 # certain fonts may NOT be redistributed separately

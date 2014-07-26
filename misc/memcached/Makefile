@@ -3,11 +3,10 @@
 COMMENT=	distributed memory object caching system
 
 DISTNAME=	memcached-1.4.20
+REVISION=	0
 CATEGORIES=	misc
 
 HOMEPAGE=	http://www.memcached.org/
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

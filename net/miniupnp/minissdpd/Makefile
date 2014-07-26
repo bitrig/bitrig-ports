@@ -3,7 +3,7 @@
 COMMENT=	daemon keeping track of UPnP devices up
 
 DISTNAME=	minissdpd-1.2
-REVISION=	2
+REVISION=	3
 
 WANTLIB += c
 

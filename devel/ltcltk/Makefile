@@ -6,9 +6,9 @@ V =		0.9-2
 PV =		-${V:S/-/_/}
 DISTNAME =	ltcltk-${V}
 PKGNAME =	ltcltk${PV}
+REVISION =	0
 CATEGORIES =	devel
 HOMEPAGE =	http://www.tset.de/ltcltk/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # MIT/X11
 PERMIT_PACKAGE_CDROM =	Yes

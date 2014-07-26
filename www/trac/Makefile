@@ -3,12 +3,10 @@
 COMMENT=	wiki and bug tracking system for software projects
 
 MODPY_EGG_VERSION=1.0.1
-REVISION=	0
+REVISION=	1
 DISTNAME=	Trac-${MODPY_EGG_VERSION}
 PKGNAME=	trac-${MODPY_EGG_VERSION}
 CATEGORIES=	www devel
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE=	http://trac.edgewall.org/
 

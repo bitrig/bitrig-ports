@@ -4,6 +4,7 @@ COMMENT =	extension of Params::Validate for using Moose types
 
 MODULES =	cpan
 DISTNAME =	MooseX-Params-Validate-0.18
+REVISION =	0
 CATEGORIES =	devel
 USE_GROFF =	Yes
 

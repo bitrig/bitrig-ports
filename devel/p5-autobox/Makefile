@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		pragma to call methods on native types
 
 DISTNAME =		autobox-2.77
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
 

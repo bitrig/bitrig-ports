@@ -4,7 +4,7 @@ COMMENT=	debugging and tracing ultimate module
 
 MODULES=	cpan
 DISTNAME=	Carp-Datum-0.1.3
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel perl5
 
 # Artistic License

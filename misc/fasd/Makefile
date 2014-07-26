@@ -4,6 +4,7 @@ COMMENT =	quick access to files in a POSIX shell
 
 PKG_ARCH =	*
 DISTNAME =	fasd-0.5.4
+REVISION =	0
 
 CATEGORIES =	misc
 HOMEPAGE =	https://github.com/clvv/fasd

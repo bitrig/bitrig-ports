@@ -4,11 +4,9 @@ COMMENT=	perl module for manipulating PDF files
 
 MODULES=	cpan
 DISTNAME=	PDF-Reuse-0.33
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@mSmith.net>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

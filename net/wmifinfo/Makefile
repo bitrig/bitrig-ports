@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; shows basic network info
 
 DISTNAME=		wmifinfo-0.09
-REVISION=		2
+REVISION=		3
 CATEGORIES=		net x11 x11/windowmaker
 
 HOMEPAGE=		http://www.zevv.nl/wmifinfo/

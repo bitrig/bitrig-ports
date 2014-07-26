@@ -2,11 +2,10 @@
 
 COMMENT =		scriptable interfaces to interact with test programs
 DISTNAME =		kyua-testers-0.2
+REVISION =		0
 
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/jmmv/kyua
-
-MAINTAINER =		Sergey Bronnikov <estetus@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

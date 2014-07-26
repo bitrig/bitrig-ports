@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		set up array elements as aliases
 
 DISTNAME=		Array-RefElem-1.00
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 
 # perl

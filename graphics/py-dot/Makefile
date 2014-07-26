@@ -5,7 +5,7 @@ COMMENT=	Python interface to Graphviz's Dot#'
 MODPY_EGG_VERSION= 1.0.28
 DISTNAME=	pydot-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:S/py/py-/}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	graphics
 
 HOMEPAGE=	https://code.google.com/p/pydot/

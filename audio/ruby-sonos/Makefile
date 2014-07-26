@@ -3,11 +3,9 @@
 COMMENT =		control Sonos speakers with Ruby
 
 DISTNAME =		sonos-0.3.5
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		audio net
-
-MAINTAINER =		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

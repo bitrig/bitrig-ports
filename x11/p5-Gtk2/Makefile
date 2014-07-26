@@ -5,6 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	set of modules to use Gtk+2 libraries from Perl
 
 DISTNAME=	Gtk2-1.2492
+REVISION=	0
 
 CATEGORIES=	x11
 

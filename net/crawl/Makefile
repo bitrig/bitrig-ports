@@ -3,7 +3,7 @@
 COMMENT=		small and efficient HTTP crawler
 
 DISTNAME=		crawl-0.4
-REVISION=		5
+REVISION=		6
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.monkey.org/~provos/crawl/

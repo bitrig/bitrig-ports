@@ -6,7 +6,7 @@ COMMENT =	scim input method module for anthy
 
 DISTNAME =	scim-anthy-1.2.7
 
-REVISION =	5
+REVISION =	6
 
 CATEGORIES =	inputmethods japanese
 

@@ -4,12 +4,10 @@ COMMENT =		simple starter kit for any module
 
 MODULES =		cpan
 DISTNAME =		Module-Starter-1.54
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 CPAN_AUTHOR =		PETDANCE
 USE_GROFF =		Yes
-
-MAINTAINER =		James Wright <jamesw@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

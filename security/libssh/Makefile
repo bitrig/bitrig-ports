@@ -3,6 +3,7 @@
 COMMENT =		C library implementing server and client side
 # XXX if updating, check the number in the MASTER_SITES path
 DISTNAME =		libssh-0.6.3
+REVISION =		0
 
 EXTRACT_SUFX =		.tar.xz
 
@@ -13,8 +14,6 @@ CATEGORIES =		security devel
 
 HOMEPAGE =		http://www.libssh.org/
 MASTER_SITES =		https://red.libssh.org/attachments/download/87/
-
-MAINTAINER =		Remi Pointel <rpointel@openbsd.org>
 
 # LGPL v2.1
 PERMIT_PACKAGE_CDROM =	Yes

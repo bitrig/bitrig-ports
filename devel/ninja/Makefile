@@ -11,8 +11,7 @@ DISTNAME =		${GH_PROJECT}-$V
 
 CATEGORIES =		devel
 HOMEPAGE =		http://martine.github.io/ninja/
-MAINTAINER =		Matthew Dempsky <matthew@dempsky.org>
-REVISION =		0
+REVISION =		1
 
 # Apache License v2.0
 PERMIT_PACKAGE_CDROM =	Yes

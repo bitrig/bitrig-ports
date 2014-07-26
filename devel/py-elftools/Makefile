@@ -5,10 +5,10 @@ COMMENT =		ELF and DWARF parser library for Python
 MODPY_EGG_VERSION =	0.20
 DISTNAME =		pyelftools-${MODPY_EGG_VERSION}
 PKGNAME =		py-elftools-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		https://bitbucket.org/eliben/pyelftools
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # Public domain
 PERMIT_PACKAGE_CDROM =	Yes

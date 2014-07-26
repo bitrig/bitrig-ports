@@ -8,13 +8,11 @@ DISTNAME=	bird-$V
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${DISTNAME:S/-/-doc-/}${EXTRACT_SUFX}
 
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	net
 
 HOMEPAGE=	http://bird.network.cz/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

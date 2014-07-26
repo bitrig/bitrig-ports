@@ -3,7 +3,7 @@
 COMMENT=	streaming source client that uses external en-/decoders
 
 DISTNAME=	ezstream-0.5.6
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net multimedia
 
 HOMEPAGE=	http://www.icecast.org/ezstream.php

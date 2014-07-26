@@ -4,10 +4,9 @@ COMMENT =		fast, safe DBI connection and transaction management
 
 MODULES =		cpan
 DISTNAME =		DBIx-Connector-0.53
+REVISION =		0
 CATEGORIES =		databases
 CPAN_AUTHOR =		DWHEELER
-
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM =	Yes

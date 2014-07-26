@@ -3,10 +3,8 @@
 COMMENT=	elapsed and estimated finish time reporting
 
 DISTNAME=	Time-Progress-1.3
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

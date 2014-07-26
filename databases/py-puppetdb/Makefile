@@ -5,9 +5,8 @@ COMMENT=		library for working with the PuppetDB API
 MODPY_EGG_VERSION=	0.1.1
 DISTNAME=		pypuppetdb-${MODPY_EGG_VERSION}
 PKGNAME=		py-puppetdb-${MODPY_EGG_VERSION}
+REVISION=		0
 CATEGORIES=		databases www
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Apache2
 PERMIT_PACKAGE_CDROM=	Yes

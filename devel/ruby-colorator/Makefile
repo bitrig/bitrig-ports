@@ -3,7 +3,7 @@
 COMMENT =		colorize your text in the terminal
 
 DISTNAME =		colorator-0.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 HOMEPAGE =		http://octopress.org/colorator/

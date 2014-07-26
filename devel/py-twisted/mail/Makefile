@@ -5,6 +5,7 @@ COMMENT=	MTP, IMAP and POP protocol implementation
 CATEGORIES=	mail
 
 VERSION=	11.1.0
+REVISION=	0
 DISTNAME=	TwistedMail-${VERSION}
 PKGNAME=	py-twisted-mail-${VERSION}
 

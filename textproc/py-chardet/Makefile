@@ -5,7 +5,7 @@ COMMENT=	character encoding auto-detection in Python
 MODPY_EGG_VERSION= 2.0.1
 DISTNAME=	python2-chardet-${MODPY_EGG_VERSION}
 PKGNAME=	py-chardet-${MODPY_EGG_VERSION}
-REVISION=	2
+REVISION=	3
 
 EXTRACT_SUFX=	.tgz
 

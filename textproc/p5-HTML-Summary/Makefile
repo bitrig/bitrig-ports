@@ -4,7 +4,7 @@ COMMENT=	summarize HTML pages
 
 MODULES=	cpan
 DISTNAME=	HTML-Summary-0.017
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

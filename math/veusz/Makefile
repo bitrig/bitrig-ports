@@ -3,12 +3,10 @@
 COMMENT =	scientific plotting and graphing package
 MODPY_EGG_VERSION =	1.21
 DISTNAME =	veusz-${MODPY_EGG_VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	math graphics
 
 HOMEPAGE =	http://home.gna.org/veusz/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes

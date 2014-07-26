@@ -5,7 +5,7 @@ COMMENT=	Perl modules to access SNMP
 MODULES=	cpan
 DISTNAME=	Net-SNMP-v6.0.1
 PKGNAME=	p5-Net-SNMP-6.0.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net devel
 USE_GROFF =	Yes
 

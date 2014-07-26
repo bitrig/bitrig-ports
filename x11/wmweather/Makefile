@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; weather monitor
 
 DISTNAME=		wmweather-2.4.3
-REVISION=		3
+REVISION=		4
 CATEGORIES=		x11 x11/windowmaker
 
 HOMEPAGE=		http://people.debian.org/~godisch/wmweather/

@@ -3,7 +3,7 @@
 COMMENT =		lift computations from the bottom of a transformer stack
 
 DISTNAME =		transformers-base-0.4.1
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 
 # BSD3

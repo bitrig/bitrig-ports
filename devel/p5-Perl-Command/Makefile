@@ -3,6 +3,7 @@
 COMMENT =		return an ARGV for running this perl
 
 DISTNAME =		Perl-Command-0.01
+REVISION =		0
 CATEGORIES =		devel
 
 # perl

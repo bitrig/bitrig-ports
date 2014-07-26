@@ -3,7 +3,7 @@
 COMMENT=	XML utility class for PHP
 
 DISTNAME=	XML_Util-1.1.1
-REVISION =	3
+REVISION =	4
 CATEGORIES=	textproc
 
 MODULES=	www/pear

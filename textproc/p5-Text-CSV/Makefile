@@ -4,6 +4,7 @@ COMMENT=	comma-separated values manipulation routines
 
 MODULES=	cpan
 DISTNAME=	Text-CSV-1.32
+REVISION=	0
 CATEGORIES=	textproc
 
 # Perl

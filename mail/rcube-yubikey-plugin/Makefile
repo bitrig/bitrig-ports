@@ -7,9 +7,7 @@ DISTNAME=	rcube-yubikey-plugin-0.20130430
 DISTFILES=	${DISTNAME}{${CID}}.tar.gz
 CATEGORIES=	mail www
 HOMEPAGE=	https://github.com/northox/roundcube-yubikey-plugin\#readme
-REVISION=	0
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
+REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

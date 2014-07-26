@@ -4,9 +4,8 @@ COMMENT =	fallbackable module loader
 
 MODULES =	cpan
 DISTNAME =	Best-0.12
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =		Yes

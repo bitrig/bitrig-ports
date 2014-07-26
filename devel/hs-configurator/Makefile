@@ -3,7 +3,7 @@
 COMMENT =		configuration management library
 
 DISTNAME =		configurator-0.2.0.0
-REVISION =		2
+REVISION =		3
 CATEGORIES =		devel
 
 # BSD3

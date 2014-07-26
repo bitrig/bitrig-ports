@@ -3,6 +3,7 @@
 COMMENT=	BPF traffic collector
 
 DISTNAME=	trafd-3.0.1
+REVISION=	0
 CATEGORIES=	net
 
 MASTER_SITES=	http://spacehopper.org/mirrors/ \

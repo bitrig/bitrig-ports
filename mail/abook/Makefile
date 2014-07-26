@@ -3,7 +3,7 @@
 COMMENT=	addressbook program with mutt support
 
 DISTNAME=	abook-0.5.6
-REVISION=	2
+REVISION=	3
 CATEGORIES=	mail
 
 HOMEPAGE=	http://abook.sourceforge.net/

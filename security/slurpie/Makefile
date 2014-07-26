@@ -3,6 +3,7 @@
 COMMENT=	distributed passwd file cracker
 
 VERSION=	2.0b
+REVISION=	0
 DISTNAME=	slurpie
 PKGNAME=	${DISTNAME}-${VERSION}
 CATEGORIES=	security
@@ -11,8 +12,6 @@ MASTER_SITES=	http://www.jps.net/coati/archives/
 EXTRACT_SUFX=	.tgz
 
 HOMEPAGE=	http://www.jps.net/coati/archives/slurpie.html
-
-MAINTAINER=	Brian Caswell <bmc@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 WANTLIB=		c

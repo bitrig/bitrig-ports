@@ -3,6 +3,7 @@
 COMMENT=	LaTeX2e class for overhead transparencies
 
 DISTNAME=	foiltex-2.1.4b
+REVISION=	0
 CATEGORIES=	print
 
 PERMIT_PACKAGE_CDROM=	not-for-profit redistribution only

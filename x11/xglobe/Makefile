@@ -9,9 +9,7 @@ HOMEPAGE=	http://www.shaderwrangler.com/xglobe/
 MASTER_SITES=	ftp://quatramaran.ens.fr/pub/espie/
 DISTNAME=	xglobe-0.5p2
 PKGNAME=	xglobe-0.5
-REVISION=	39
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
+REVISION=	40
 
 # GPL, included map is free
 PERMIT_PACKAGE_CDROM=	Yes

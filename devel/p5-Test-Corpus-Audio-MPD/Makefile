@@ -3,6 +3,7 @@
 COMMENT=	automate launching of fake mpd for testing purposes
 
 DISTNAME=	Test-Corpus-Audio-MPD-1.110710
+REVISION=	0
 CATEGORIES=	devel audio
 
 # perl

@@ -3,12 +3,11 @@
 COMMENT=		stand-alone shell with built-in commands
 
 DISTNAME =		sash-3.8
+REVISION =		0
 CATEGORIES=		shells
 HOMEPAGE=		http://www.canb.auug.org.au/~dbell/
 
 PERMIT_PACKAGE_CDROM=	Yes
-
-MAINTAINER=		Wilbern Cobb <wcobb@openbsd.org>
 
 MASTER_SITES=		http://www.canb.auug.org.au/~dbell/programs/
 

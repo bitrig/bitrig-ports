@@ -3,9 +3,8 @@
 COMMENT=	Catalyst authentication framework
 
 DISTNAME=	Catalyst-Plugin-Authentication-0.10018
+REVISION=	0
 CATEGORIES=	security
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

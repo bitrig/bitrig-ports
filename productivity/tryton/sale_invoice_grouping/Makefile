@@ -3,6 +3,7 @@
 MODPY_EGG_VERSION =	3.2.1
 
 TRYTOND_MODULE =	sale_invoice_grouping
+REVISION =		0
 
 RUN_DEPENDS =		productivity/tryton/account_invoice \
 			productivity/tryton/party \

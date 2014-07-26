@@ -5,7 +5,7 @@ COMMENT=	popup tree widget
 MODULES=	cpan
 
 DISTNAME=	HTML-PopupTreeSelect-1.6
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	www
 

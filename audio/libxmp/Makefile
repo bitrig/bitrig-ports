@@ -5,6 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT =	module player library
 
 DISTNAME =	libxmp-4.2.0
+REVISION =	0
 CATEGORIES =	audio
 
 SHARED_LIBS +=	xmp		0.1	# 4.2

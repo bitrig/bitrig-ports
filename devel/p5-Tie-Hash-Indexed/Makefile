@@ -5,12 +5,10 @@ SHARED_ONLY=	Yes
 COMMENT=	ordered hashes for Perl
 
 DISTNAME=	Tie-Hash-Indexed-0.05
-REVISION=	4
+REVISION=	5
 CATEGORIES=	devel
 MODULES=	cpan
 USE_GROFF =	Yes
-
-MAINTAINER=	Okan Demirmen <okan@demirmen.com>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

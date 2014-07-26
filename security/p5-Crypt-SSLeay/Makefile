@@ -5,11 +5,9 @@ SHARED_ONLY =		Yes
 COMMENT =		library to provide LWP https support via OpenSSL
 
 DISTNAME =		Crypt-SSLeay-0.64
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		security
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Artistic 2.0
 PERMIT_PACKAGE_CDROM =	Yes

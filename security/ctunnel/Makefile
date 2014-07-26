@@ -4,11 +4,9 @@ COMMENT=	provide cryptographic tunnel
 
 DISTNAME=	ctunnel-0.4
 CATEGORIES=	security
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://nardcore.org/ctunnel/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

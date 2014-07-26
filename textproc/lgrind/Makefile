@@ -6,13 +6,11 @@ CATEGORIES=	textproc devel print
 
 VERSION=	3.67
 DISTNAME=	lgrind-${VERSION}
-REVISION =	3
+REVISION =	4
 DISTFILES=source/lgrind.c source/lgutil.c source/lgrindef.c source/lgrindef.h \
 	source/regexp.c source/regexp.h source/v2lg.c \
 	source/retest.c source/lgrind.1 source/lgrindef.5 source/Makefile \
 	lgrindef lgrind.dtx lgrind.ins lgrind.gls
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 # Gripe to Van Jacobson for pissing off lgrind's current caretaker
 # into not maintaining it anymore.

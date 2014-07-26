@@ -3,14 +3,12 @@
 COMMENT =	run arbitrary commands when files change
 
 DISTNAME =	entr-2.8
-REVISION =	0
+REVISION =	1
 REV =		9192ece7198c
 
 CATEGORIES =	sysutils
 
 HOMEPAGE =	http://entrproject.org/
-
-MAINTAINER =	Eric Radman <ericshane@eradman.com>
 
 # ISC
 PERMIT_PACKAGE_CDROM = Yes

@@ -4,12 +4,10 @@ COMMENT =	small, plain-text, DBMS written in Ruby
 
 DISTNAME =	KirbyBase-2.6
 PKGNAME =	${DISTNAME:L}
-REVISION =      6
+REVISION =      7
 CATEGORIES =	databases
 
 HOMEPAGE =	http://www.netpromi.com/kirbybase_ruby.html
-
-MAINTAINER =	Clint Pachl <pachl@ecentryx.com>
 
 # Ruby
 PERMIT_PACKAGE_CDROM =		Yes

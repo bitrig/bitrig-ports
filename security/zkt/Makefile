@@ -3,11 +3,10 @@
 COMMENT=	DNSsec Zone Key Tool
 
 DISTNAME=	zkt-1.1.0
+REVISION=	0
 CATEGORIES=	security
 
 HOMEPAGE=	http://www.hznet.de/dns/zkt/
-
-MAINTAINER=	Jakob Schlyter <jakob@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

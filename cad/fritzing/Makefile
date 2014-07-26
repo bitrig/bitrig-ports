@@ -6,7 +6,7 @@ V=		0.8.7
 DISTNAME=	fritzing-$Vb.source
 PKGNAME=	fritzing-$V
 CATEGORIES=	cad
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://fritzing.org/
 

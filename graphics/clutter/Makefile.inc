@@ -8,9 +8,6 @@ CATEGORIES+=		graphics x11
 
 HOMEPAGE?=		http://www.clutter-project.org/
 
-MAINTAINER?=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # LGPLv2.1 - MIT
 PERMIT_PACKAGE_CDROM?=  Yes
 

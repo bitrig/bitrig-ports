@@ -3,6 +3,7 @@
 COMMENT=		ncurses based pseudo-3D driving game
 
 DISTNAME=		ztrack-1.0
+REVISION=		0
 CATEGORIES=		games
 
 # Public Domain

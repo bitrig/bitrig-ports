@@ -3,7 +3,7 @@
 COMMENT=	SMTP support for PHP
 
 DISTNAME=	Net_SMTP-1.5.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=	net
 
 MODULES=	www/pear

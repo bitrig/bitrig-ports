@@ -2,11 +2,10 @@
 
 COMMENT =		open source alternative to glut
 DISTNAME =		freeglut-2.8.0
-REVISION =		1
+REVISION =		2
 SHARED_LIBS =		glut 5.0
 CATEGORIES =		graphics
 HOMEPAGE =		http://freeglut.sourceforge.net/
-MAINTAINER =		Tobias Ulmer <tobiasu@tmux.org>
 
 # X11
 PERMIT_PACKAGE_CDROM =	Yes

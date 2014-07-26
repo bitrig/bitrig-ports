@@ -3,7 +3,7 @@
 COMMENT=	Rampart arcade game clone for X11
 
 DISTNAME=	castle-combat-0.8.1
-REVISION =	5
+REVISION =	6
 CATEGORIES=	games x11
 
 HOMEPAGE=	http://www.linux-games.com/castle-combat/

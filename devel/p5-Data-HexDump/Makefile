@@ -4,10 +4,8 @@ COMMENT=        hexadecimal dumper
 
 MODULES=	cpan
 DISTNAME=	Data-HexDump-0.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=     devel
-
-MAINTAINER=	Abel Abraham Camarillo Ojeda <acamari@the00z.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

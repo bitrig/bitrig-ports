@@ -6,11 +6,10 @@ SHARED_ONLY=		Yes
 COMMENT=		first person shooter
 
 DISTNAME=		quake2-0.3
-REVISION =		12
+REVISION =		13
 CATEGORIES=		games
 
 HOMEPAGE=		http://www.quakeforge.net/
-MAINTAINER=		Claudio Jeker <claudio@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

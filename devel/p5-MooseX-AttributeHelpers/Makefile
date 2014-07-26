@@ -3,11 +3,9 @@
 COMMENT=	extend your attribute interfaces
 
 DISTNAME=	MooseX-AttributeHelpers-0.23
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

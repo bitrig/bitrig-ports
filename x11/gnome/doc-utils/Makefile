@@ -8,7 +8,7 @@ COMMENT=	collection of documentation utilities for the GNOME project
 
 GNOME_PROJECT=	gnome-doc-utils
 GNOME_VERSION=	0.20.10
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	textproc
 

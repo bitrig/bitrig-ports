@@ -6,7 +6,7 @@ COMMENT=	python bindings to the XOSD library
 
 DISTNAME=	pyosd-0.2.14
 PKGNAME=	${DISTNAME:S/^py/py-/}
-REVISION=	6
+REVISION=	7
 CATEGORIES=	x11
 
 HOMEPAGE=	http://ichi2.net/pyosd/

@@ -3,7 +3,7 @@ COMMENT=	LRU cache in memory
 
 MODULES=	cpan
 DISTNAME=	Tie-Cache-0.17
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

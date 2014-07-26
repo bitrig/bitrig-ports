@@ -3,7 +3,7 @@
 COMMENT=		Pure Perl MySQL driver for the Perl DBI
 
 DISTNAME=		DBD-mysqlPP-0.06
-REVISION=		0
+REVISION=		1
 CATEGORIES=		databases
 MODULES=		cpan
 

@@ -2,7 +2,7 @@
 
 COMMENT= 	RDBO and RHTMLO base classes for Catalyst
 DISTNAME=	Catalyst-Controller-Rose-0.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases www
 MODULES=	cpan
 USE_GROFF =	Yes

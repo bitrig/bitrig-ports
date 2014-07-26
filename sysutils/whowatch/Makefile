@@ -3,7 +3,7 @@
 COMMENT=	interactive utility that displays info about online users
 
 DISTNAME=	whowatch-1.4
-REVISION =	2
+REVISION =	3
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://wizard.ae.krakow.pl/~mike/

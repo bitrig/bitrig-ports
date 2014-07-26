@@ -1,11 +1,10 @@
 # $OpenBSD: Makefile,v 1.2 2013/03/11 11:35:43 espie Exp $
 
-MAINTAINER = 	Marc Espie <espie@openbsd.org>
 CATEGORIES =	multimedia
 COMMENT =	closed caption subtitles extractor
 HOMEPAGE = 	http://ccextractor.sourceforge.net/
 V =		0.56
-REVISION =	0
+REVISION =	1
 DISTFILES =	ccextractor.${V:S/.//}-src.zip
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=ccextractor/}
 DISTNAME =	ccextractor-$V

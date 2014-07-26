@@ -4,7 +4,7 @@ COMMENT=	POE interface to Net::Pcap
 
 MODULES=	cpan
 DISTNAME=	POE-Component-Pcap-0.04
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 
 # Artitistic License

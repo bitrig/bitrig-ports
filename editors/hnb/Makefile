@@ -3,12 +3,10 @@
 COMMENT=	hierarchical notebook
 
 DISTNAME=	hnb-1.9.17
-REVISION=	0
+REVISION=	1
 CATEGORIES=	editors
 
 HOMEPAGE=	http://hnb.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes

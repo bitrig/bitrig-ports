@@ -5,11 +5,9 @@ SHARED_ONLY =		Yes
 COMMENT =		stat() with BSD 4.4 extentions
 
 DISTNAME =		BSD-stat-1.35
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

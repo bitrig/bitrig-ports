@@ -3,11 +3,10 @@
 COMMENT =		Haskell implementation of the D-Bus protocol
 
 DISTNAME =		dbus-0.10.5
+REVISION =		0
 CATEGORIES =		devel x11
 
 HOMEPAGE =		https://john-millikin.com/software/haskell-dbus/
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

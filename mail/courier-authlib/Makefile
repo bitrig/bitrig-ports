@@ -7,7 +7,7 @@ COMMENT-pgsql=		pgsql authentication module for courier-authLib
 COMMENT-userdb=		userdb authentication module for courier-authLib
 
 DISTNAME=		courier-authlib-0.66.1
-REVISION=		0
+REVISION=		1
 PKGNAME-main=		${DISTNAME}
 PKGNAME-ldap=		${DISTNAME:S/lib-/lib-ldap-/}
 PKGNAME-mysql=		${DISTNAME:S/lib-/lib-mysql-/}
@@ -28,8 +28,6 @@ SHARED_LIBS +=  authsqlite           0.0      # .0.0
 
 CATEGORIES=		mail security
 HOMEPAGE=		http://www.courier-mta.org/authlib/
-
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

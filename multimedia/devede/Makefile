@@ -3,7 +3,7 @@
 COMMENT=	video DVDs and CDs creation tool
 
 DISTNAME=	devede-3.23.0
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	multimedia x11
 

@@ -3,10 +3,8 @@
 COMMENT=		Nagios plugin to check SIP
 
 DISTNAME=		check_sip-20060929
-REVISION=		3
+REVISION=		4
 CATEGORIES=		net
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE=		http://isle.wumpus.org/src/nagios/
 MASTER_SITES=		http://spacehopper.org/mirrors/

@@ -2,6 +2,7 @@
 
 COMMENT=		scrolling 'Matrix'-like screen
 DISTNAME=		cmatrix-1.2a
+REVISION=		0
 CATEGORIES=		games misc
 
 HOMEPAGE=		http://www.asty.org/cmatrix/

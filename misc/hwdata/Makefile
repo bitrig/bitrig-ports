@@ -3,11 +3,10 @@
 COMMENT=		hardware identification and configuration data
 
 DISTNAME=		hwdata-0.267
+REVISION=		0
 EXTRACT_SUFX=		.tar.bz2
 
 CATEGORIES=		misc
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 HOMEPAGE=		http://git.fedorahosted.org/git/hwdata.git
 

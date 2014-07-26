@@ -4,6 +4,7 @@ COMMENT=	PSGI handler for HTML::Mason
 
 MODULES=	cpan
 DISTNAME=	HTML-Mason-PSGIHandler-0.52
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF=	Yes
 

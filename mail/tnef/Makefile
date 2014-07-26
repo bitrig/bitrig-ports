@@ -3,13 +3,12 @@
 COMMENT=	decode MS-TNEF MIME attachments
 
 DISTNAME=	tnef-1.4.10
+REVISION=	0
 CATEGORIES=	mail
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tnef/}
 
 HOMEPAGE=	http://tnef.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

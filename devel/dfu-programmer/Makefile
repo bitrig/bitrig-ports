@@ -3,6 +3,7 @@
 COMMENT =		Device Firmware Update-based programmer for Atmel chips
 V =			0.6.2
 DISTNAME =		dfu-programmer-${V}
+REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =		http://dfu-programmer.sourceforge.net/
 

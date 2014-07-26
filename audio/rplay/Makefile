@@ -2,13 +2,11 @@
 
 COMMENT=	network audio player
 DISTNAME=	rplay-3.3.2
-REVISION=	2
+REVISION=	3
 CATEGORIES=	audio
 SHARED_LIBS=	rplay	0.0
 
 HOMEPAGE=	http://rplay.doit.org/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 V =			1.0.2
 COMMENT =		open source client for Windows Terminal Server
 DISTNAME =		freerdp-$V
-REVISION =		1
+REVISION =		2
 DISTFILES =		${DISTNAME}{$V}.tar.gz
 WRKDIST =		${WRKDIR}/FreeRDP-$V
 CATEGORIES =		x11 net
@@ -20,8 +20,6 @@ SHARED_LIBS +=  freerdp-rail              0.0 # 1.0
 SHARED_LIBS +=  freerdp-utils             0.0 # 1.0
 
 HOMEPAGE =		http://www.freerdp.com/
-
-MAINTAINER =		Michael Erdely <merdely@openbsd.org>
 
 # Apache 2.0
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT=	interface to oEmbed
 
 DISTNAME=	Services_oEmbed-0.1.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=	net
 
 MODULES=	www/pear

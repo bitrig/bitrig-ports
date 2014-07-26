@@ -4,7 +4,7 @@ COMMENT=	interactive command shell for the DBI
 
 MODULES=	cpan
 DISTNAME=	DBI-Shell-11.95
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
 USE_GROFF =	Yes
 

@@ -7,11 +7,9 @@ COMMENT=	generate and manipulate images
 DISTNAME=	Imager-0.97
 CATEGORIES=	graphics
 MODULES=	cpan
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://imager.perl.org/
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

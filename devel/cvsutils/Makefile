@@ -5,10 +5,10 @@ PKG_ARCH=	*
 COMMENT=	collection of useful CVS scripts
 
 DISTNAME=	cvsutils-0.2.6
+REVISION=	0
 CATEGORIES=     devel
 
 HOMEPAGE=	http://www.red-bean.com/cvsutils/
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 MASTER_SITES=	${HOMEPAGE}releases/
 

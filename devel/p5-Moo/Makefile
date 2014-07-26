@@ -4,11 +4,10 @@ COMMENT =	minimalist object orientation (with Moose compatibility)
 
 MODULES =	cpan
 DISTNAME =	Moo-1.004002
+REVISION =	0
 CATEGORIES =	devel
 
 CPAN_AUTHOR =	HAARG
-
-MAINTAINER =    Sergey Bronnikov <estetus@gmail.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

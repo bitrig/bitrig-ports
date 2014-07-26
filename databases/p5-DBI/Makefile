@@ -7,10 +7,9 @@ COMMENT =	unified perl interface for database access
 MODULES =	cpan
 DISTNAME =	DBI-1.631
 CATEGORIES =	databases
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://dbi.perl.org/
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,7 +5,7 @@ COMMENT=	spellchecking library for Python
 MODPY_EGG_VERSION=	1.6.5
 DISTNAME=	pyenchant-${MODPY_EGG_VERSION}
 PKGNAME=	py-enchant-${MODPY_EGG_VERSION}
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	textproc
 

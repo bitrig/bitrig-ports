@@ -4,6 +4,7 @@ COMMENT=		GNOME encryption interface
 
 GNOME_PROJECT=		seahorse
 GNOME_VERSION=		3.12.2
+REVISION=		0
 
 CATEGORIES=		security
 

@@ -2,7 +2,7 @@
 
 COMMENT=		source filter for inline code templates (macros)
 DISTNAME=		Filter-Template-1.02
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 USE_GROFF =		Yes
 

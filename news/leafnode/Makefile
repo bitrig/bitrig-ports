@@ -4,7 +4,7 @@ COMMENT=		USENET software package designed for small sites
 
 DISTNAME=		leafnode-1.11.8
 CATEGORIES=		news
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://leafnode.sourceforge.net/
 

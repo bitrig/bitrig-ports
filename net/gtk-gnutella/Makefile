@@ -5,7 +5,7 @@ COMMENT=		Gtk-based GUI client for the Gnutella Network
 DISTNAME=		gtk-gnutella-0.97.1
 EPOCH=			0
 CATEGORIES=     	net
-REVISION=		2
+REVISION=		3
 
 HOMEPAGE=		http://gtk-gnutella.sourceforge.net/
 

@@ -2,6 +2,7 @@
 
 COMMENT=		Type1 font installation helper
 DISTNAME=		type1inst-0.6.1
+REVISION=		0
 CATEGORIES=		x11 print
 
 # GPL

@@ -3,7 +3,7 @@
 COMMENT=	interface to Ogg Vorbis information, fully written in Perl
 
 DISTNAME=	Ogg-Vorbis-Header-PurePerl-1.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 
 MODULES=	cpan

@@ -3,13 +3,12 @@
 COMMENT =	two-dimensional drawing tool and hyper-object browser
 
 VERSION =	4.2.5
+REVISION =	0
 DISTNAME =	tgif-QPL-${VERSION}
 PKGNAME =	tgif-${VERSION}
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://bourbon.usc.edu/tgif/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Trolltech Q License
 PERMIT_PACKAGE_CDROM =	yes

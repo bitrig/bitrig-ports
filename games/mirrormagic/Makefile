@@ -2,7 +2,7 @@
 
 COMMENT=	game like Deflektor (C64) / Mindbender (Amiga)
 DISTNAME=	mirrormagic-2.0.2
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.artsoft.org/RELEASES/unix/mirrormagic/
 

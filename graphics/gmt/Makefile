@@ -7,11 +7,11 @@ COMMENT-full=		full resolution coastline data for GMT
 V=			4.1.3
 DISTNAME=		GMT$V
 PKGNAME-main=		gmt-$V
-REVISION-main =		3
+REVISION-main =		4
 PKGNAME-high=		gmt-high-$V
-REVISION-high =		1
+REVISION-high =		2
 PKGNAME-full=		gmt-full-$V
-REVISION-full =		1
+REVISION-full =		2
 CATEGORIES=		graphics geo
 
 HOMEPAGE=		http://gmt.soest.hawaii.edu/

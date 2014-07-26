@@ -6,7 +6,7 @@ COMMENT=		plugins for EOG
 
 GNOME_PROJECT=		eog-plugins
 GNOME_VERSION=		3.12.1
-REVISION =		1
+REVISION =		2
 
 CATEGORIES=		graphics
 

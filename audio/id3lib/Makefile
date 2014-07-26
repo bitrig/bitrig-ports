@@ -4,7 +4,7 @@ COMMENT=		library for manipulating ID3v1 and ID3v2 tags
 
 VERSION=		3.8
 DISTNAME=		id3lib-${VERSION}.3
-REVISION=		4
+REVISION=		5
 CATEGORIES=     	audio
 SHARED_LIBS +=	id3                  4.0      # .3.8
 

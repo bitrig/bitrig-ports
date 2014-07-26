@@ -3,6 +3,7 @@
 COMMENT=	multi-window tail(1) utility
 
 DISTNAME=	multitail-5.2.9
+REVISION=	0
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://www.vanheusden.com/multitail/

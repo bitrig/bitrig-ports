@@ -8,6 +8,7 @@ COMMENT=		Foreign Function Interface for Python calling C code
 MODPY_EGG_VERSION=	0.8.6
 DISTNAME=		cffi-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
+REVISION=		0
 CATEGORIES=		devel
 
 # MIT

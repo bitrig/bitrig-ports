@@ -3,7 +3,7 @@
 COMMENT=	fish swim in the background of your screen
 
 DISTNAME=	xfishtank-2.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/ \

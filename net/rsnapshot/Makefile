@@ -3,12 +3,10 @@
 COMMENT=		remote filesystem snapshot utility
 
 DISTNAME=		rsnapshot-1.3.1
-REVISION=		2
+REVISION=		3
 CATEGORIES=		net sysutils
 
 HOMEPAGE=		http://www.rsnapshot.org/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

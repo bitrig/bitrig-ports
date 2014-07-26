@@ -5,9 +5,8 @@ COMMENT =	assemble multiple Regular Expressions into a single RE
 MODULES =	cpan
 USE_GROFF =	Yes
 DISTNAME =	Regexp-Assemble-0.35
+REVISION =	0
 CATEGORIES =	textproc
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

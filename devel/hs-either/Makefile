@@ -3,9 +3,8 @@
 COMMENT =		an either monad transformer
 
 DISTNAME =		either-3.4.1
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

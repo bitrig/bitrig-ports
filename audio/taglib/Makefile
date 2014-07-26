@@ -2,7 +2,7 @@
 
 COMMENT=	managing meta-data of audio formats
 DISTNAME=	taglib-1.9.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio devel
 
 MASTER_SITES=	http://taglib.github.io/releases/

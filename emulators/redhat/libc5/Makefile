@@ -3,7 +3,7 @@
 COMMENT=	Linux libc5
 
 PKGNAME=	redhat_libc5-6.2
-REVISION=	2
+REVISION=	3
 
 MASTER_SITES=	${MASTER_SITE_REDHAT:=redhat/linux/6.2/en/os/i386/RedHat/RPMS/}
 MASTER_SITES0=	${MASTER_SITE_REDHAT:=redhat/linux/updates/6.2/en/os/i386/}

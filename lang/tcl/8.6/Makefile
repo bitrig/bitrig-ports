@@ -4,11 +4,10 @@ COMMENT =		Tool Command Language
 
 DISTNAME =		tcl8.6.1
 PKGNAME =		tcl-8.6.1
-REVISION =		2
+REVISION =		3
 SHARED_LIBS =		tcl86 0.1
 CATEGORIES =		lang lang/tcl
 HOMEPAGE =		http://www.tcl.tk/
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

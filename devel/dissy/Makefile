@@ -6,9 +6,7 @@ MODPY_EGG_VERSION = 	9
 DISTNAME =		dissy-${MODPY_EGG_VERSION}
 CATEGORIES =		devel
 HOMEPAGE =		https://code.google.com/p/dissy/
-REVISION =		2
-
-MAINTAINER =		Jonathan Armani <armani@openbsd.org>
+REVISION =		3
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

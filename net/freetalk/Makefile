@@ -3,13 +3,11 @@
 COMMENT=	console based Jabber client
 
 DISTNAME=	freetalk-3.2
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	net
 
 HOMEPAGE=	https://www.gnu.org/software/freetalk/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

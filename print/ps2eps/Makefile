@@ -4,11 +4,9 @@ COMMENT=	convert Postscript to Encapsulated Postscript
 
 DISTNAME=	ps2eps-1.68
 CATEGORIES=	print
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE=	http://www.tm.uka.de/~bless/ps2eps.html
-
-MAINTAINER=	Laurence Tratt <laurie@tratt.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

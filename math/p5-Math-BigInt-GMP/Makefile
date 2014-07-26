@@ -6,7 +6,7 @@ COMMENT=	use the GMP library for Math::BigInt routines
 
 MODULES=	cpan
 DISTNAME=	Math-BigInt-GMP-1.24
-REVISION=	3
+REVISION=	4
 CATEGORIES=	math
 
 # perl

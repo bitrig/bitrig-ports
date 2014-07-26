@@ -4,7 +4,7 @@ COMMENT=		Readline Library Wrapper for zoid
 
 MODULES=		cpan
 DISTNAME=		Term-ReadLine-Zoid-0.07
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # perl

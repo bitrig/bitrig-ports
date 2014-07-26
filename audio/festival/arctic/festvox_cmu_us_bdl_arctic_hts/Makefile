@@ -2,6 +2,7 @@
 
 COMMENT=	American English male speaker (BDL)
 DISTNAME=	festvox_cmu_us_bdl_arctic_hts
+REVISION=	0
 
 RUN_DEPENDS=	${ARCTIC_US_DEPS}
 

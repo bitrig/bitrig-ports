@@ -5,11 +5,9 @@ PKG_ARCH =      *
 COMMENT=	fetch YouTube and Google videos
 
 PKGNAME=	yt-20
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net www
 DISTFILES=
-
-MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 
 # Public domain
 PERMIT_PACKAGE_CDROM=	Yes

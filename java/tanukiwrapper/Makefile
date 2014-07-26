@@ -7,7 +7,7 @@ COMMENT=	Tanuki Java Service Wrapper
 SVN_REV=	1780
 DISTNAME=	wrapper-code-${SVN_REV}-trunk
 PKGNAME=	java-tanukiwrapper-3.5.19.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	java
 
 HOMEPAGE=	http://wrapper.tanukisoftware.com/

@@ -4,9 +4,8 @@ COMMENT =	next generation web framework
 
 MODULES =	cpan
 DISTNAME =	Mojolicious-4.99
+REVISION =	0
 CATEGORIES =	www
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

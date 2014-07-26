@@ -2,8 +2,8 @@
 COMMENT =		accounting for KDE 4
 CATEGORIES =		productivity x11
 HOMEPAGE =		http://kmymoney2.sourceforge.net
-MAINTAINER =		Vadim Zhukov <persgray@gmail.com>
 VERSION =		4.6.4
+REVISION =		0
 DISTNAME =		kmymoney-${VERSION}
 
 SHARED_LIBS =		kmm_kdchart		0.0

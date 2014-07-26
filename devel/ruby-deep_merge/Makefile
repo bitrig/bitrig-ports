@@ -3,9 +3,8 @@
 COMMENT=		recursively merge hashes
 
 DISTNAME=		deep_merge-1.0.1
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

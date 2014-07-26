@@ -5,11 +5,9 @@ COMMENT=		music tracking tool for X11
 V=			0.6.8
 DISTNAME=		soundtracker_$V.gtk2_17092006_1613
 PKGNAME=		soundtracker-$V
-REVISION=		5
+REVISION=		6
 CATEGORIES=		audio
 HOMEPAGE=		http://www.shaltev.org/programming.html
-
-MAINTAINER=		Wilbern Cobb <wcobb@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

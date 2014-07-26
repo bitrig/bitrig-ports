@@ -4,11 +4,10 @@ COMMENT=		enhanced interactive Python shell
 
 MODPY_EGG_VERSION =	2.1.0
 DISTNAME=		ipython-${MODPY_EGG_VERSION}
+REVISION=		0
 CATEGORIES=		devel
 
 HOMEPAGE=		http://ipython.org/
-
-MAINTAINER=		Edd Barrett <edd@openbsd.org>
 
 MODULES=		lang/python
 

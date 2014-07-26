@@ -4,6 +4,7 @@ COMMENT=	catalyst documentation
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Manual-5.9002
+REVISION=	0
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

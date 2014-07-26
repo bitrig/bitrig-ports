@@ -3,12 +3,10 @@
 COMMENT=	full-screen ncurses or GTK-based audio mixer
 
 DISTNAME=	aumix-2.8
-REVISION=	14
+REVISION=	15
 CATEGORIES=	audio
 
 HOMEPAGE=	http://jpj.net/~trevor/aumix.html
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

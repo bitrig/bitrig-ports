@@ -3,13 +3,12 @@
 COMMENT =	mailing list manager with web interface
 
 VERSION =	6.1.17
-REVISION =	1
+REVISION =	2
 DISTNAME =	sympa-${VERSION}
 
 CATEGORIES =	mail www
 
 HOMEPAGE =	http://www.sympa.org
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

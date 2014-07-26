@@ -21,8 +21,6 @@ LTS_V?=			20120406
 
 CATEGORIES+=		devel
 
-MAINTAINER?=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # mspgcc4 was forked from mspgcc several years ago due to dormancy of the
 # original project. Currently mspgcc is being developed again and unifying
 # the different msp430 architectures (uniarch).

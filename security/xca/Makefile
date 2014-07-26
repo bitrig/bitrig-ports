@@ -3,7 +3,7 @@
 COMMENT=	create and manage certificates, CSRs, keys, etc
 
 DISTNAME=	xca-0.9.3
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security x11
 
 HOMEPAGE=	http://xca.sourceforge.net/

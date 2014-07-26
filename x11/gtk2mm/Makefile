@@ -4,7 +4,7 @@ COMMENT=	C++ interface for gtk2+
 
 GNOME_PROJECT=	gtkmm
 GNOME_VERSION=	2.24.4
-REVISION=	0
+REVISION=	1
 
 PKGNAME=	gtk2mm-${GNOME_VERSION}
 

@@ -3,13 +3,11 @@
 COMMENT=		APC SmartUPS daemon
 
 DISTNAME=		apcd-0.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.nazgul.ch/dev/
 
 HOMEPAGE=		http://www.nazgul.ch/dev.html
-
-MAINTAINER=		Marcus Glocker <marcus@nazgul.ch>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

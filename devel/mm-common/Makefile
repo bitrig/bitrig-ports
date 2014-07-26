@@ -6,13 +6,11 @@ COMMENT=		common build utilities for GNOME C++ binding libraries
 
 GNOME_PROJECT=		mm-common
 GNOME_VERSION=		0.9.6
+REVISION=		0
 
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.gtkmm.org/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

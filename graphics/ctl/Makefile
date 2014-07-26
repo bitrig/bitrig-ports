@@ -3,7 +3,7 @@
 COMMENT =		Color Transformation Language interpreter
 
 DISTNAME =		ctl-1.4.1
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS +=  IlmCtl               0.0      # .2.0
 SHARED_LIBS +=  IlmCtlMath           0.0      # .2.0

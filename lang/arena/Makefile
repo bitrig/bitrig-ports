@@ -3,10 +3,8 @@
 COMMENT=	lightweight scripting language with C-like syntax
 
 DISTNAME=	arena-0.9.13
-REVISION=	1
+REVISION=	2
 CATEGORIES=	lang
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE=	http://www.minimalinux.org/arena/doc.html
 

@@ -3,7 +3,7 @@
 COMMENT=	extremely fast program for analysing WWW logfiles
 
 DISTNAME=	analog-6.0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
 
 MASTER_SITES=	http://www.analog.cx/ \

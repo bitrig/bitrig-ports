@@ -4,12 +4,11 @@ COMMENT =			network discovery tool
 
 DISTNAME =			nedi-bsd-1.0.8
 PKGNAME =			nedi-1.0.8
-REVISION =			5
+REVISION =			6
 EXTRACT_SUFX =			.tgz
 CATEGORIES =			net
 
 HOMEPAGE =			http://www.nedi.ch/
-MAINTAINER =			Marcus Glocker <marcus@nazgul.ch>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =		Yes

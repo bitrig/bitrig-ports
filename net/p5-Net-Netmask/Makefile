@@ -4,6 +4,7 @@ COMMENT =	parse, manipulate and lookup IPv4 CIDR blocks
 
 MODULES =	cpan
 DISTNAME =	Net-Netmask-1.9016
+REVISION =	0
 CATEGORIES =	net
 
 # custom

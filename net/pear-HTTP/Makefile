@@ -3,7 +3,7 @@
 COMMENT=	miscellaneous HTTP utilities for PHP
 
 DISTNAME=	HTTP-1.3.6
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 
 MODULES=	www/pear

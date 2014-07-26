@@ -6,7 +6,7 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	XML-Feed-0.12
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www textproc
 CONFIGURE_STYLE=modbuild
 

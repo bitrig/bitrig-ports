@@ -3,11 +3,10 @@
 COMMENT=	dynamic .signature generator
 
 DISTNAME=	signify-1.11
+REVISION=	0
 CATEGORIES=	mail
 
 HOMEPAGE=	http://signify.sourceforge.net/
-
-MAINTAINER=	Andreas Kahari <andreas.kahari@gmail.com>
 
 # Public domain
 PERMIT_PACKAGE_CDROM=	Yes

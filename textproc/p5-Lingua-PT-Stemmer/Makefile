@@ -4,7 +4,7 @@ COMMENT=	Portuguese language stemming
 
 MODULES=	cpan
 DISTNAME=	Lingua-PT-Stemmer-0.01
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

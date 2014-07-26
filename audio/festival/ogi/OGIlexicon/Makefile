@@ -2,6 +2,7 @@
 
 COMMENT=	American English lexicon compiled from Moby and CMU lexicons
 DISTNAME=	OGIlexicon-2.1
+REVISION=	0
 
 RUN_DEPENDS=	audio/festival/core,ogi
 

@@ -3,6 +3,7 @@
 COMMENT =		Haskell 98 semigroupoids
 
 DISTNAME =		semigroupoids-3.0.3
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3

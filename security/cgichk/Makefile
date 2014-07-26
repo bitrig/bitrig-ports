@@ -3,6 +3,7 @@
 COMMENT=	scans webservers for vulnerable CGI programs
 
 PKGNAME=	cgichk-3.6
+REVISION=	0
 
 DISTNAME=	cgichk3.6
 EXTRACT_SUFX=	.tgz

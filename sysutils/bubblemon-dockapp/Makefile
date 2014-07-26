@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; display CPU and memory load
 
 DISTNAME=		bubblemon-dockapp-1.46
-REVISION=		4
+REVISION=		5
 
 CATEGORIES=		sysutils x11 x11/windowmaker
 

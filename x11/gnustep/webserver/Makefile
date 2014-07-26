@@ -3,6 +3,7 @@
 COMMENT =	GNUstep webserver framework
 
 VERSION =	1.5.1
+REVISION =	0
 DISTNAME =	WebServer-${VERSION}
 PKGNAME =	gnustep-webserver-${VERSION}
 

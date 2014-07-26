@@ -4,6 +4,7 @@ COMMENT=		higher-order list utility functions
 
 MODULES=		cpan
 DISTNAME=		List-UtilsBy-0.07
+REVISION=		0
 CATEGORIES=		textproc
 
 # Perl

@@ -3,7 +3,7 @@
 COMMENT=	framework to benchmark PHP scripts or function calls
 
 DISTNAME=	Benchmark-1.2.6
-REVISION=	2
+REVISION=	3
 CATEGORIES=	benchmarks
 
 MODULES=	www/pear

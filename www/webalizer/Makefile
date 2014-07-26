@@ -6,12 +6,10 @@ RB_V=		30
 V=		2.23-08-RB${RB_V}
 DISTNAME=	webalizer-${V}-src
 PKGNAME=	webalizer-${V:S/-/./g:S/RB//}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 HOMEPAGE=	http://www.patrickfrei.ch/webalizer/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,7 +5,7 @@ COMMENT =	Python implementation of the Rijndael encryption algorithm
 MODPY_EGG_VERSION =	1.4
 DISTNAME =		pyrijndael-v${MODPY_EGG_VERSION:S/./_/}
 PKGNAME =		py-Rijndael-${MODPY_EGG_VERSION}
-REVISION=		2
+REVISION=		3
 CATEGORIES =		security devel
 
 HOMEPAGE =		http://jclement.ca/software/pyrijndael/

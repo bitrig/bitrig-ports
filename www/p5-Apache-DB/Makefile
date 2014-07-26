@@ -4,7 +4,7 @@ COMMENT=		interactive debugger for modperl
 
 MODULES=		cpan
 DISTNAME=		Apache-DB-0.14
-REVISION=		4
+REVISION=		5
 SHARED_ONLY=		Yes
 CATEGORIES=		www devel
 USE_GROFF =		Yes

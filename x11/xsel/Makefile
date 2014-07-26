@@ -3,11 +3,9 @@
 COMMENT=	command-line program for managing X selection contents
 
 DISTNAME=	xsel-1.2.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 HOMEPAGE=	http://www.vergenet.net/~conrad/software/xsel/
-
-MAINTAINER=	Scott Vokes <vokes.s@gmail.com>
 
 # BSD-style
 PERMIT_PACKAGE_CDROM=	Yes

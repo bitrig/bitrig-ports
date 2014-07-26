@@ -3,7 +3,7 @@
 COMMENT=	generate and manipulate maps of your thoughts
 
 DISTNAME=	vym-2.2.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	productivity x11
 
 HOMEPAGE=	http://www.insilmaril.de/vym/

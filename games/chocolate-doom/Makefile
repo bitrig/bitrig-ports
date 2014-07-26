@@ -3,11 +3,10 @@
 COMMENT =	portable release of Doom, Heretic, Hexen, and Strife
 V =		2.0.0
 DISTNAME =	chocolate-doom-${V}
+REVISION =	0
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://www.chocolate-doom.org/
-
-MAINTAINER =	Ryan Freeman <rfreeman@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

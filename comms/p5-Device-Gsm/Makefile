@@ -3,10 +3,10 @@
 COMMENT=	Perl extension to interface GSM cellulars / modems
 
 DISTNAME=	Device-Gsm-1.58
+REVISION=	0
 CATEGORIES=	comms
 
 MODULES=	cpan
-MAINTAINER=	Matteo Cantoni <matteo.cantoni@gmail.com>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,12 +3,10 @@
 COMMENT =		builds man pages
 
 DISTNAME =		ronn-0.7.3
-REVISION =		2
+REVISION =		3
 CATEGORIES =		textproc
 
 HOMEPAGE =		http://rtomayko.github.com/ronn/
-
-MAINTAINER =		Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

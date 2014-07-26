@@ -7,6 +7,7 @@ COMMENT=		library used to interact with Git repositories
 MODPY_EGG_VERSION=	0.3.2
 DISTNAME=		GitPython-${MODPY_EGG_VERSION}.RC1
 PKGNAME=		py-${DISTNAME:S/.RC1//}
+REVISION=		0
 CATEGORIES=		devel
 
 # BSD

@@ -4,8 +4,8 @@ COMMENT =	finding memory leaks in perl objects
 
 MODULES =	cpan
 DISTNAME =	Devel-Leak-Object-1.01
+REVISION =	0
 CATEGORIES =	devel
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =   Yes

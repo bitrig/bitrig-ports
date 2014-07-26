@@ -4,13 +4,11 @@ COMMENT=	character entity sets from ISO 8879:1986 (SGML)
 
 DISTNAME=	isoENTS
 PKGNAME=	iso8879-1986
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 EXTRACT_SUFX=	.zip
-
-MAINTAINER=	Matthieu Herrb <matthieu@openbsd.org>
 
 # custom
 PERMIT_PACKAGE_CDROM=	Yes

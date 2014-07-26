@@ -5,7 +5,7 @@ COMMENT =	puzzle/platform game
 DISTNAME =	meandmyshadow-0.4-src
 CATEGORIES =	games
 PKGNAME =	${DISTNAME:S/-src//}
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://meandmyshadow.sourceforge.net/
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=meandmyshadow/}

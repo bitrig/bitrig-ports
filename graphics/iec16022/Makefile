@@ -3,6 +3,7 @@
 COMMENT=	2D barcodes / DataMatrix creation tool
 
 DISTNAME=	iec16022-0.2.4
+REVISION=	0
 
 SHARED_LIBS +=  iec16022                  0.0 # 0.0
 

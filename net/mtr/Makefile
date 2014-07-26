@@ -3,9 +3,8 @@
 COMMENT=	Matt's traceroute - network diagnostic tool#'
 
 DISTNAME=	mtr-0.85
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE=	http://www.bitwizard.nl/mtr/
 

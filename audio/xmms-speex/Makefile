@@ -7,10 +7,8 @@ COMMENT=	XMMS input plugin to play Speex files
 V=		0.9.2b
 DISTNAME=	speex-xmms-$V
 PKGNAME=	xmms-speex-$V
-REVISION=	4
+REVISION=	5
 CATEGORIES=	audio
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

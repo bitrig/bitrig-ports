@@ -3,6 +3,7 @@
 COMMENT=	library providing file related widgets for pcmanfm
 
 DISTNAME=	libfm-1.2.0
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	x11 devel

@@ -3,12 +3,10 @@
 COMMENT=	graphical front-end to the diff program
 
 DISTNAME=	tkdiff-4.2
-REVISION =	0
+REVISION =	1
 CATEGORIES=	devel sysutils
 
 HOMEPAGE=	http://tkdiff.sourceforge.net/
-
-MAINTAINER=	Vlad Glagolev <stealth@sourcemage.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

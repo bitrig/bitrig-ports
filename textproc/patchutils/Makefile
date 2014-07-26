@@ -3,13 +3,12 @@
 COMMENT=	small tools to operate on patch files
 
 DISTNAME=	patchutils-0.3.3
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	textproc devel
 
 HOMEPAGE=	http://cyberelk.net/tim/software/patchutils/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

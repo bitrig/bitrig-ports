@@ -5,7 +5,7 @@ COMMENT =	OCaml interface to GTK+2
 V =		2.18.0
 DISTNAME =	lablgtk-$V
 PKGNAME =	lablgtk2-$V
-REVISION =	2
+REVISION =	3
 CATEGORIES =	x11 devel
 
 HOMEPAGE =	http://lablgtk.forge.ocamlcore.org/

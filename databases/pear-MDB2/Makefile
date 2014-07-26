@@ -3,7 +3,7 @@
 COMMENT=	database abstraction layer for PHP
 
 DISTNAME=	MDB2-2.4.1
-REVISION =	1
+REVISION =	2
 CATEGORIES=	net databases
 
 MODULES=	www/pear

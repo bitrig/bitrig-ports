@@ -4,7 +4,7 @@ COMMENT=	module to generate replies to e-mail messages.
 
 MODULES=	cpan
 DISTNAME=	Email-Reply-1.202
-REVISION=	3
+REVISION=	4
 CATEGORIES=	mail
 
 # Same as Perl

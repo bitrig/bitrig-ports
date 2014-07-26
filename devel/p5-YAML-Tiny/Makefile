@@ -4,6 +4,7 @@ COMMENT =	read/write YAML files with as little code as possible
 
 MODULES =	cpan
 DISTNAME =	YAML-Tiny-1.51
+REVISION =	0
 CATEGORIES =	devel
 CPAN_AUTHOR =	ADAMK
 

@@ -3,11 +3,9 @@
 COMMENT =	terminal-based tetris clone in vein of nintendo tetris
 DISTNAME =	vitetris-0.57
 CATEGORIES =	games
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://victornils.net/tetris/
-
-MAINTAINER =	Ryan Freeman <ryan@slipgate.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

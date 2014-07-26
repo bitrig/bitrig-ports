@@ -4,6 +4,7 @@ COMMENT =		perl SPF test-suite class
 
 DISTNAME =		Mail-SPF-Test-v1.001
 PKGNAME =		p5-${DISTNAME:S/-v/-/}
+REVISION =		0
 CATEGORIES =		mail
 
 # perl

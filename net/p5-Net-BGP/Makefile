@@ -4,6 +4,7 @@ COMMENT= 	Border Gateway Protocol version 4 speaker/listener library
 
 MODULES=	cpan
 DISTNAME=	Net-BGP-0.14
+REVISION=	0
 CATEGORIES=	net
 USE_GROFF =	Yes
 

@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 
 MODULES =	cpan
 DISTNAME =	File-RsyncP-0.70
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 
 # perl

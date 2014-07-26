@@ -4,11 +4,9 @@ COMMENT=        validate user input from a constraint object
 
 MODULES=	cpan
 DISTNAME=	Data-FormValidator-4.63
-REVISION=	0
+REVISION=	1
 CATEGORIES=     devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

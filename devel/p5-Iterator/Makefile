@@ -3,10 +3,8 @@
 COMMENT =	general-purpose iterator class.
 
 DISTNAME =	Iterator-0.03
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

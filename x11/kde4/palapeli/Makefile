@@ -2,6 +2,7 @@
 
 COMMENT =	jigsaw puzzle game for KDE
 DISTNAME =	palapeli-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	pala		51.0
 

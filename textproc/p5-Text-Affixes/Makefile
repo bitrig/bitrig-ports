@@ -3,7 +3,7 @@
 COMMENT=		prefixes and suffixes analisys of text
 
 DISTNAME=		Text-Affixes-0.07
-REVISION=		1
+REVISION=		2
 CATEGORIES=		textproc
 
 MODULES=		cpan

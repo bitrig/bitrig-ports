@@ -5,6 +5,7 @@ COMMENT=	tries to fetch webpages with gzip-compression
 MODULES=	cpan
 
 DISTNAME=	WWW-Mechanize-GZip-0.12
+REVISION=	0
 CATEGORIES=	www perl5
 
 # Perl

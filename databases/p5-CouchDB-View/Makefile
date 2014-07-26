@@ -3,7 +3,7 @@
 COMMENT=		handle and create CouchDB views in Perl
 
 DISTNAME=		CouchDB-View-0.003
-REVISION=		0
+REVISION=		1
 CATEGORIES=		databases
 
 MODULES=		cpan

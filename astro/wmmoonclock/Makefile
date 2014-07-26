@@ -4,7 +4,7 @@ COMMENT=		wm-dockapp; shows the moon phase
 
 DISTNAME=		wmMoonClock-1.27
 PKGNAME=		${DISTNAME:L}
-REVISION=		4
+REVISION=		5
 CATEGORIES=		astro x11 x11/windowmaker
 
 # GPL

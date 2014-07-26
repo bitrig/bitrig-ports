@@ -6,11 +6,9 @@ COMMENT=		represent and manage a libvirt hypervisor connection
 
 DISTNAME=		Sys-Virt-1.2.5
 CATEGORIES=		sysutils
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://libvirt.org/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,6 +3,7 @@
 COMMENT=		framework for more readable interactive test scripts
 
 DISTNAME =		Test-Inter-1.05
+REVISION =		0
 CATEGORIES=		devel
 
 # perl

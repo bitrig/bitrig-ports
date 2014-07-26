@@ -4,9 +4,8 @@ COMMENT=	run-time class loading on first method call
 
 MODULES=	cpan
 DISTNAME=	Class-Autouse-2.01
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

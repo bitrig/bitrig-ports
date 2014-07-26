@@ -4,7 +4,7 @@ COMMENT=	sorting of revision-like numbers
 
 MODULES=	cpan
 DISTNAME=	Sort-Versions-1.5
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 # GPL/Artistic

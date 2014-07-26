@@ -7,9 +7,7 @@ COMMENT=	Perl API to the dbus inter-application messaging system
 MODULES=	cpan
 DISTNAME=	Net-DBus-1.0.0
 CATEGORIES=	net x11
-REVISION=	0
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
+REVISION=	1
 
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM=	Yes

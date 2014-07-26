@@ -3,7 +3,7 @@
 COMMENT=		add tags to Ogg Vorbis files to adjust the volume
 
 DISTNAME=		vorbisgain-0.36
-REVISION=		2
+REVISION=		3
 CATEGORIES=		audio
 HOMEPAGE=		http://sjeng.org/vorbisgain.html
 

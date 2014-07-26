@@ -3,7 +3,7 @@
 COMMENT =	integration testing tool for rack based web applications
 
 DISTNAME =	capybara-1.1.2
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
 
 HOMEPAGE=	https://github.com/jnicklas/capybara

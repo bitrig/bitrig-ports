@@ -3,7 +3,7 @@
 COMMENT=	MS Word, Excel, Powerpoint ==> ASCII or TeX
 
 DISTNAME=	catdoc-0.94.2
-REVISION=	3
+REVISION=	4
 CATEGORIES=	textproc
 MASTER_SITES=	http://ftp.wagner.pp.ru/pub/catdoc/
 

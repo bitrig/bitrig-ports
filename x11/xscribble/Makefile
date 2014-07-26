@@ -4,7 +4,7 @@ COMMENT=	stylus character recognition tool for X11
 
 DISTNAME=	xscribble
 PKGNAME=	xscribble-20000616
-REVISION=	3
+REVISION=	4
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.handhelds.org/projects/xscribble.html

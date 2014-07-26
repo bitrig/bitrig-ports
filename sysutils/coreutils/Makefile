@@ -3,7 +3,7 @@
 COMMENT =		file, shell and text manipulation utilities
 
 DISTNAME =		coreutils-8.21
-REVISION =		1
+REVISION =		2
 CATEGORIES =		sysutils
 
 HOMEPAGE =		https://www.gnu.org/software/coreutils/coreutils.html

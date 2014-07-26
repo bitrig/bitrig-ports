@@ -3,6 +3,7 @@
 COMMENT=	easy-to-use, robust, and highly configurable VPN
 
 DISTNAME=	openvpn-2.3.2
+REVISION=	0
 CATEGORIES=	net security
 
 HOMEPAGE=	http://openvpn.net/

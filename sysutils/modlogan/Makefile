@@ -3,7 +3,7 @@
 COMMENT=	modular log analyzer
 
 DISTNAME=	modlogan-0.8.13
-REVISION=	6
+REVISION=	7
 CATEGORIES=	sysutils www
 
 HOMEPAGE=	http://jan.kneschke.de/projects/modlogan/

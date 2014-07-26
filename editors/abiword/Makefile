@@ -8,7 +8,7 @@ COMMENT=	free cross-platform WYSIWYG word processor
 
 VERSION=	3.0.0
 DISTNAME=	abiword-${VERSION}
-REVISION=	2
+REVISION=	3
 
 MAJORVER=	${VERSION:C/..$//}
 SUBST_VARS=	MAJORVER

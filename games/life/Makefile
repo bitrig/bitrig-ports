@@ -3,7 +3,7 @@
 COMMENT=	SDL clone of the popular Game of Life
 
 DISTNAME=	life-1.0
-REVISION =	2
+REVISION =	3
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	games
 

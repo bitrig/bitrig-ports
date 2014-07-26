@@ -4,6 +4,7 @@ COMMENT=	stemming of words
 
 MODULES=	cpan
 DISTNAME=	Lingua-Stem-0.84
+REVISION=	0
 CATEGORIES=	textproc
 
 # perl

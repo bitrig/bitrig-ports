@@ -3,12 +3,10 @@
 COMMENT =	simple subset sum problem solver for ruby
 
 DISTNAME =	subset_sum-1.0.1
-REVISION =	6
+REVISION =	7
 CATEGORIES =	devel
 
 HOMEPAGE=	http://subset-sum.rubyforge.org/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT License
 PERMIT_PACKAGE_CDROM =	Yes

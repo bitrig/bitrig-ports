@@ -4,11 +4,9 @@ COMMENT=		FTP client class with automatic reconnect on failure
 
 MODULES=		cpan
 DISTNAME=		Net-FTP-AutoReconnect-0.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
 USE_GROFF =		Yes
-
-MAINTAINER=		Girish Venkatachalam <girish1729@gmail.com>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

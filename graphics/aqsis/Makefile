@@ -8,7 +8,7 @@ COMMENT=	photorealistic 3D rendering solution
 
 V=		1.8.2
 DISTNAME=	aqsis-${V}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	graphics
 
 SO_VERSION=	1.0 # 1.6

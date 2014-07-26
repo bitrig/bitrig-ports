@@ -4,11 +4,9 @@ COMMENT=	run a subprocess in batch mode
 
 MODULES=	cpan
 DISTNAME=	IPC-Run3-0.042
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

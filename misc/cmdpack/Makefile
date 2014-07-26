@@ -4,7 +4,7 @@ COMMENT =		various ROM (and other) development tools
 
 DISTNAME =		cmdpack-1.03-src
 PKGNAME =		${DISTNAME:S/-src//}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		misc
 

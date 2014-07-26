@@ -4,6 +4,7 @@ COMMENT =	fetch ssh AuthorizedKeys from LDAP
 
 DISTNAME =	openssh-5.3p1-81.el6.src.rpm
 PKGNAME =	ssh-ldap-helper-5.3
+REVISION =	0
 CATEGORIES =	security net
 EXTRACT_SUFX=
 

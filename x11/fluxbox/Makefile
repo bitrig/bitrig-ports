@@ -3,15 +3,13 @@
 COMMENT=		window manager based on the original Blackbox code
 
 DISTNAME=		fluxbox-1.3.5
-REVISION=		1
+REVISION=		2
 
 CATEGORIES=		x11
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fluxbox/}
 
 HOMEPAGE=		http://fluxbox.org/
-
-MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
 
 # X11
 PERMIT_PACKAGE_CDROM=	Yes

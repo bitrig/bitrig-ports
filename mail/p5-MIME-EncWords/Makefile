@@ -3,6 +3,7 @@
 COMMENT =	perl module to deal with RFC 2047 encoded words
 
 DISTNAME =	MIME-EncWords-1.012.3
+REVISION =	0
 CATEGORIES =	mail
 
 # Perl

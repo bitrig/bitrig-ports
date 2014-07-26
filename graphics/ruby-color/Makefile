@@ -3,7 +3,7 @@
 COMMENT =	color value conversion and modification
 
 DISTNAME =	color-1.4.0
-REVISION =	6
+REVISION =	7
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://color.rubyforge.org/

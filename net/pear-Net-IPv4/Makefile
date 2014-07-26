@@ -3,6 +3,7 @@
 COMMENT=	IPv4 address handling tools for PHP
 
 DISTNAME=	Net_IPv4-1.3.4
+REVISION=	0
 CATEGORIES=	net
 
 MODULES=	www/pear

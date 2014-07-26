@@ -9,7 +9,7 @@ EPOCH = 		0
 CATEGORIES=		devel
 PKG_ARCH=		*
 
-REVISION = 0
+REVISION = 1
 
 MASTER_SITES=	${MASTER_SITE_PYPI:=s/setuptools/}
 HOMEPAGE=	http://peak.telecommunity.com/DevCenter/setuptools

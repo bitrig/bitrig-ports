@@ -5,6 +5,7 @@ COMMENT =		Python WSGI HTTP server
 MODPY_EGG_VERSION =	19.0.0
 DISTNAME =		gunicorn-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
+REVISION =		0
 CATEGORIES =		www
 
 HOMEPAGE =		http://gunicorn.org/

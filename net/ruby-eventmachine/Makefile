@@ -3,7 +3,7 @@
 COMMENT=	event-driven I/O for Ruby using the Reactor pattern
 
 DISTNAME=	eventmachine-0.12.8
-REVISION =	10
+REVISION =	11
 CATEGORIES=	net devel
 
 HOMEPAGE=	http://rubyeventmachine.com/

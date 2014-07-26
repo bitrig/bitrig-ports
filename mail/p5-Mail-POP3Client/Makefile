@@ -3,9 +3,8 @@
 COMMENT=	perl module to talk to a POP3 (RFC1081) server
 
 DISTNAME=	Mail-POP3Client-2.19
+REVISION=	0
 CATEGORIES=	mail
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

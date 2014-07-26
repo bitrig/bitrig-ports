@@ -3,9 +3,7 @@
 COMMENT=	MSP430 meta-package
 
 PKGNAME=	msp430-20120406# version equals the mspgcc LTS release
-REVISION=	1
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
+REVISION=	2
 
 RUN_DEPENDS=	devel/msp430/gdb \
 		devel/msp430/msp430mcu \

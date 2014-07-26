@@ -4,7 +4,7 @@ COMMENT=	module to obtain historical financial quotes from exchanges
 
 MODULES=	cpan
 DISTNAME=	Finance-QuoteHist-0.32
-REVISION=	2
+REVISION=	3
 CATEGORIES=	misc
 USE_GROFF =	Yes
 

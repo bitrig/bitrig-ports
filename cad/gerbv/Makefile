@@ -3,7 +3,7 @@
 COMMENT=		viewer for Gerber (RS-274X) files
 DISTNAME=		gerbv-2.5.0
 CATEGORIES=		cad graphics
-REVISION=		5
+REVISION=		6
 
 HOMEPAGE=		http://gerbv.gpleda.org/
 

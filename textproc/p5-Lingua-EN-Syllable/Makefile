@@ -3,7 +3,7 @@
 COMMENT=		outine for estimating syllable count in words
 
 DISTNAME=		Lingua-EN-Syllable-0.251
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		textproc
 

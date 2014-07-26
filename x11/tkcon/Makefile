@@ -3,10 +3,9 @@
 COMMENT =		enhanced Tk console
 
 DISTNAME =		tkcon-2.5
-REVISION =		3
+REVISION =		4
 CATEGORIES =		x11 x11/tk
 HOMEPAGE =		http://sourceforge.net/projects/tkcon/
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT=	weather plugin for GkrellM2
 
 DISTNAME=	gkrellweather-2.0.8
-REVISION=	4
+REVISION=	5
 CATEGORIES=	x11
 EXTRACT_SUFX=	.tgz
 

@@ -3,7 +3,7 @@
 COMMENT=		minimalist IRC client
 
 DISTNAME=		ii-1.7
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 
 # adds ssl encryption support
@@ -14,8 +14,6 @@ PATCH_DIST_STRIP=	-p1
 HOMEPAGE=		http://tools.suckless.org/ii
 MASTER_SITES=		http://dl.suckless.org/tools/
 MASTER_SITES0=		${HOMEPAGE}/patches/
-
-MAINTAINER=		Gleydson Soares <gsoares@openbsd.org>
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,11 +6,9 @@ DISTNAME=	gmp-5.1.3
 SHARED_LIBS +=	gmp                  10.0     # 11.3
 SHARED_LIBS +=	gmpxx                2.0      # 7.3
 CATEGORIES=	devel math
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://gmplib.org/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # LGPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

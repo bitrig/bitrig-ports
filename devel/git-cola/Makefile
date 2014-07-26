@@ -4,6 +4,7 @@ COMMENT =	python powered git gui
 
 MODPY_EGG_VERSION=	1.9.1
 DISTNAME =	${GH_PROJECT}-${MODPY_EGG_VERSION}
+REVISION =	0
 
 GH_ACCOUNT =	git-cola
 GH_PROJECT =	git-cola

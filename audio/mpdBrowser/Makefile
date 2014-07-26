@@ -3,7 +3,7 @@
 COMMENT=		click & play MPD client
 
 DISTNAME=		mpdBrowser-0.9.15
-REVISION =		6
+REVISION =		7
 CATEGORIES=		audio
 
 # GPLv3

@@ -3,10 +3,8 @@
 COMMENT =		library to convert between different types
 
 DISTNAME =		convertible-1.0.11.1
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT=		reminder/task program aimed at developers
 
 DISTNAME=		devtodo-0.1.20
-REVISION=		3
+REVISION=		4
 CATEGORIES=		productivity devel
 
 HOMEPAGE=		http://swapoff.org/devtodo1.html

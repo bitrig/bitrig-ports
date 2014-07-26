@@ -4,6 +4,7 @@ PKG_ARCH =	*
 COMMENT =	marathon one data files
 V =		20140104
 DISTNAME =	marathon-0.0.${V}
+REVISION =	0
 HOMEPAGE =	http://source.bungie.org/get/
 
 DISTFILES =	Marathon-${V}-Data.zip:5

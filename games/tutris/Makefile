@@ -3,7 +3,7 @@
 COMMENT=	graphical tetris clone
 DISTNAME=	Tutris-1.0.1
 PKGNAME =	${DISTNAME:L}
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games x11
 
 # GPL

@@ -3,9 +3,8 @@
 COMMENT=		provides Word128, Word192 and various others large words
 
 DISTNAME=		largeword-1.0.5
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

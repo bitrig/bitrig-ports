@@ -6,7 +6,7 @@ COMMENT=	interface to FLAC header metadata
 
 MODULES=	cpan
 DISTNAME=	Audio-FLAC-Header-2.3
-REVISION=	4
+REVISION=	5
 CATEGORIES=	audio
 
 # perl

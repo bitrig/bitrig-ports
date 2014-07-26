@@ -3,14 +3,12 @@
 COMMENT=	space combat and trading game in the style of Elite
 
 VERSION=	1.73.4
-REVISION =	7
+REVISION =	8
 DISTNAME=	oolite-dev-source-${VERSION}
 PKGNAME=	oolite-${VERSION}
 CATEGORIES=	games
 
 HOMEPAGE=	http://www.oolite.org/
-
-MAINTAINER=	Nicholas Marriott <nicm@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

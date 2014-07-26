@@ -5,6 +5,7 @@ COMMENT=	implements a flat filesystem
 MODULES=	cpan
 
 DISTNAME=	File-Flat-1.04
+REVISION=	0
 CATEGORIES=	devel
 
 # Artistic

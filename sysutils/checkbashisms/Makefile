@@ -5,6 +5,7 @@ COMMENT=		check shell scripts for bash-specific constructs
 V=			2.0.0.2
 DISTNAME=		checkbashisms
 PKGNAME=		checkbashisms-2.0.0.2
+REVISION=		0
 EXTRACT_SUFX=
 DIST_SUBDIR=		${PKGNAME}
 WRKDIST=		${WRKDIR}

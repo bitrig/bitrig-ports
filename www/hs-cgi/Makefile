@@ -5,10 +5,9 @@ COMMENT =		CGI library for Haskell
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		cgi-3001.1.7.5
+REVISION =		0
 CATEGORIES =		www devel
 HOMEPAGE =		http://andersk.mit.edu/haskell/cgi/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

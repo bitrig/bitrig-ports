@@ -11,13 +11,12 @@ COMMENT-tools =		tools to manipulate MAME/MESS roms and disk images
 V =			153
 DISTNAME =		mame0${V}s
 PKGNAME-main =		sdlmame-0.${V}
+REVISION =		0
 PKGNAME-tools =		sdlmame-tools-0.${V}
 
 CATEGORIES =		emulators games
 
 HOMEPAGE =		http://mamedev.org/
-
-MAINTAINER =		Brian Callahan <bcallah@openbsd.org>
 
 # MAME Distribution License, see http://mamedev.org/license.html
 # history.dat : Creative Commons Attribution 3.0

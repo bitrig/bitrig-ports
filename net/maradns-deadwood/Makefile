@@ -4,6 +4,7 @@ COMMENT=	recursive DNS resolver
 
 DISTNAME=	deadwood-3.2.05
 PKGNAME=	${DISTNAME:S/^/maradns-/}
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	net
 

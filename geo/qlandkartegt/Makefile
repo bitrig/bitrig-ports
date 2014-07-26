@@ -3,12 +3,11 @@
 COMMENT =	garmin gps map management tool
 
 DISTNAME =	qlandkartegt-1.7.5
-REVISION =	0
+REVISION =	1
 CATEGORIES =	geo x11
 
 HOMEPAGE =	http://www.qlandkarte.org/
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=qlandkartegt/}
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =		Yes

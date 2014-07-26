@@ -4,12 +4,10 @@ COMMENT = 		Python charting module
 
 MODPY_EGG_VERSION =	0.3.0
 DISTNAME = 		pycha-${MODPY_EGG_VERSION}
-REVISION=		3
+REVISION=		4
 CATEGORIES = 		graphics
 
 HOMEPAGE = 		http://www.lorenzogil.com/projects/pycha/
-
-MAINTAINER = 		Niall O Higgins <niallo@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM = 	Yes

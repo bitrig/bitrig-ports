@@ -6,15 +6,13 @@ COMMENT=		pangox compatibility library
 
 GNOME_VERSION=		0.0.2
 GNOME_PROJECT=		pangox-compat
-REVISION=		1
+REVISION=		2
 
 SHARED_LIBS +=  pangox-1.0         2906.0   # 0.0
 
 CATEGORIES=		devel x11
 
 HOMEPAGE=		http://www.pango.org/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

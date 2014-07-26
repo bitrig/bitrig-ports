@@ -2,12 +2,10 @@
 
 COMMENT=		extract attachments from OLE2 data files
 DISTNAME=		ripole-0.2.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		archivers
 
 HOMEPAGE=		http://www.pldaniels.com/ripole/
-
-MAINTAINER=		William Yodlowsky <william@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

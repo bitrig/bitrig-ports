@@ -3,7 +3,7 @@
 COMMENT= 	catalyst model for Class::DBI
 
 DISTNAME=	Catalyst-Model-CDBI-0.11
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases www
 MODULES=	cpan
 

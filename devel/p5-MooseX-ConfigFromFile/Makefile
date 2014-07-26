@@ -4,11 +4,9 @@ COMMENT=		Moose role for setting attributes from a config file
 
 MODULES=		cpan
 DISTNAME=		MooseX-ConfigFromFile-0.02
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 USE_GROFF =		Yes
-
-MAINTAINER=		Jim Razmus II <jim@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

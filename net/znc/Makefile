@@ -5,13 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	advanced IRC bouncer
 
 DISTNAME=	znc-1.4
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${HOMEPAGE}releases/
 
 HOMEPAGE=	http://znc.in/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # Apache 2.0
 PERMIT_PACKAGE_CDROM=	Yes

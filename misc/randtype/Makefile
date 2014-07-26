@@ -3,12 +3,11 @@
 COMMENT=	output characters or lines at random intervals
 
 DISTNAME=	randtype-1.13
+REVISION=	0
 CATEGORIES=	misc
 
 HOMEPAGE=	http://bjk.sourceforge.net/randtype/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bjk/}
-
-MAINTAINER=	Girish Venkatachalam <girish1729@gmail.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

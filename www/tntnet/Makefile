@@ -3,12 +3,10 @@
 COMMENT=		modular webapplication server for C++
 
 DISTNAME=		tntnet-1.6.2
-REVISION=		3
+REVISION=		4
 CATEGORIES=		www devel
 
 HOMEPAGE=		http://www.tntnet.org/
-
-MAINTAINER=		Vijay Ramesh <vramesh2@uiuc.edu>
 
 SO_VERSION=	1.0
 .for _lib in alldemos calc calcajax calci18n calcmvc chat comp config controls \

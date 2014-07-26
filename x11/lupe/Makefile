@@ -4,7 +4,7 @@ COMMENT=	real-time magnifying glass for X11
 
 DISTNAME=	lupe008c
 PKGNAME=	lupe-0.08
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	x11
 

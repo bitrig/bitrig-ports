@@ -3,12 +3,11 @@
 COMMENT =	web and CGI vulnerability scanner with SSL support
 
 DISTNAME =	nikto-2.1.5
+REVISION =	0
 EPOCH = 	0
 CATEGORIES =	security www
 
 HOMEPAGE =	http://www.cirt.net/nikto2
-
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

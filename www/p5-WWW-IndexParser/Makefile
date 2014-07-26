@@ -3,7 +3,7 @@
 COMMENT =		fetch and parse the directory index from a web server
 
 DISTNAME =		WWW-IndexParser-0.91
-REVISION =		0
+REVISION =		1
 CATEGORIES =		www
 
 # perl

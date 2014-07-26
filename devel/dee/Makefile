@@ -8,7 +8,7 @@ SHARED_LIBS +=  dee-1.0                   0.0 # 5.1
 
 CATEGORIES=		devel
 
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		https://launchpad.net/dee
 

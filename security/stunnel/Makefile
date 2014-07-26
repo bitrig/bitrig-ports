@@ -3,10 +3,8 @@
 COMMENT=	SSL encryption wrapper for standard network daemons
 
 DISTNAME=	stunnel-5.00
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
-
-MAINTAINER=	Gleydson Soares <gsoares@openbsd.org>
 
 # GPLv2+ with OpenSSL exemption
 PERMIT_PACKAGE_CDROM=	Yes

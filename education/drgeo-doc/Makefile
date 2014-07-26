@@ -3,7 +3,7 @@
 COMMENT=	interactive geometry program, documentation
 
 DISTNAME=	drgeo-doc-1.6
-REVISION=	0
+REVISION=	1
 CATEGORIES=	education math
 
 HOMEPAGE=	http://www.ofset.org/drgeo/

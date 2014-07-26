@@ -6,11 +6,11 @@ COMMENT-gadgets=gadgets and scripts for dzen2
 V=			0.9.5
 DISTNAME=		dzen2-$V
 PKGNAME-main=		${DISTNAME}
+REVISION=		0
 PKGNAME-gadgets=	dzen2-gadgets-$V
 CATEGORIES=		x11
 
 HOMEPAGE=		https://github.com/robm/dzen
-MAINTAINER=		Dmitri Alenitchev <dma@dma.org.ru>
 
 MULTI_PACKAGES=		-main -gadgets
 

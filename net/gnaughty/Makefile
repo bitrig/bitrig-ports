@@ -6,7 +6,7 @@ DISTNAME=		gnaughty-1.2.5
 CATEGORIES +=		net graphics biology productivity education
 CATEGORIES +=		inputmethods benchmarks japanese geo
 
-REVISION=		18
+REVISION=		19
 
 HOMEPAGE=		http://gnaughty.sourceforge.net/
 

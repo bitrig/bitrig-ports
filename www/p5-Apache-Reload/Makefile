@@ -3,7 +3,7 @@
 COMMENT =	Reload changed modules for mod_perl
 
 DISTNAME =	Apache-Reload-0.11
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www perl5
 
 MODULES =	cpan

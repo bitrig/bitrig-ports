@@ -3,13 +3,12 @@
 COMMENT=		SSH monitoring
 
 DISTNAME=		autossh-1.4c
+REVISION=		0
 CATEGORIES=		sysutils
 
 MASTER_SITES=		${HOMEPAGE}
 
 HOMEPAGE=		http://www.harding.motd.ca/autossh/
-
-MAINTAINER=		Gonzalo L. R. <gonzalo@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

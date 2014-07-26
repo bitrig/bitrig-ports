@@ -3,13 +3,11 @@
 COMMENT=	update your Snort rules
 
 DISTNAME=	oinkmaster-2.0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=oinkmaster/}
 
 HOMEPAGE=       http://oinkmaster.sourceforge.net/
-
-MAINTAINER=	Markus Lude <markus.lude@gmx.de>
 
 # License: BSD
 PERMIT_PACKAGE_CDROM= 	Yes

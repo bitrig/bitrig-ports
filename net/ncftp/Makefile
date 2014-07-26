@@ -3,10 +3,9 @@
 COMMENT=	ftp replacement with advanced user interface
 
 DISTNAME=	ncftp-3.2.5
+REVISION=	0
 CATEGORIES=	net
 HOMEPAGE=	http://www.ncftp.com/ncftp/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

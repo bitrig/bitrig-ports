@@ -3,7 +3,7 @@
 COMMENT =	replacement for Ruby's URI implementation
 
 DISTNAME = 	addressable-2.2.2
-REVISION = 	3
+REVISION = 	4
 CATEGORIES =	www
 
 HOMEPAGE =	http://addressable.rubyforge.org/

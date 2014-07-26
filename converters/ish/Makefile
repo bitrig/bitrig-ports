@@ -4,6 +4,7 @@ COMMENT=	binary-to-text file converter
 
 DISTNAME=	ish201a5
 PKGNAME=	ish-2.01a5
+REVISION=	0
 CATEGORIES=	converters
 
 PERMIT_PACKAGE_CDROM=	no license

@@ -6,7 +6,7 @@ XFCE_VERSION=	1.6.3
 XFCE_PROJECT=	Thunar
 # :L is here for a reason
 PKGNAME=	${DISTNAME:L}
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS=	thunarx-2	0.0
 

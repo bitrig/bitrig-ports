@@ -6,13 +6,11 @@ COMMENT=		OpenAFS distributed filesystem
 
 VERSION=		1.4.7
 DISTNAME=		openafs-${VERSION}
-REVISION=		26
+REVISION=		27
 
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.openafs.org
-
-MAINTAINER=		Todd T. Fries <todd@openbsd.org>
 
 # IBM Public License 1.0
 PERMIT_PACKAGE_CDROM=	Yes

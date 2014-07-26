@@ -4,7 +4,7 @@ COMMENT=		highly customizable e-mail to HTML converter
 
 DISTNAME=		MHonArc-2.6.18
 PKGNAME=		${DISTNAME:L}
-REVISION=		0
+REVISION=		1
 CATEGORIES=		www mail
 
 HOMEPAGE=		http://www.mhonarc.org/
@@ -12,8 +12,6 @@ HOMEPAGE=		http://www.mhonarc.org/
 MASTER_SITES=		http://www.mhonarc.org/release/MHonArc/tar/ \
 			http://www.nacs.uci.edu/indiv/ehood/tar/ \
 			ftp://ftp.plig.org/pub/CPAN/authors/id/EHOOD/
-
-MAINTAINER=		Christian Rueger <cr+openbsd@rueger-net.de>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

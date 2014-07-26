@@ -6,12 +6,11 @@ COMMENT-nagios =	nagios plugin for resmon
 V =			20090802
 DISTNAME =		resmon-$V
 PKGNAME-main =		${DISTNAME}
+REVISION-main =		0
 PKGNAME-nagios =	nagios-plugins-resmon-$V
-REVISION-nagios =	1
+REVISION-nagios =	2
 CATEGORIES =		sysutils
 HOMEPAGE =		http://labs.omniti.com/trac/resmon
-
-MAINTAINER =		Jason Dixon <jdixon@openbsd.org>
 
 MULTI_PACKAGES =	-main -nagios
 

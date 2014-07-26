@@ -4,9 +4,8 @@ COMMENT =		perl oop implementation of Sender Policy Framework
 
 DISTNAME =		Mail-SPF-v2.8.0
 PKGNAME =		p5-${DISTNAME:S/-v/-/}
+REVISION =		0
 CATEGORIES =		mail
-
-MAINTAINER =		Giovanni Bechis <giovanni@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,9 +5,9 @@ COMMENT=		mouse and keyboard sharing utility
 V=			1.5.0
 DISTNAME=		synergy-${V}-r2278-Source
 PKGNAME=		synergy-${V}
+REVISION=		0
 CATEGORIES=		net x11
 
-MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
 HOMEPAGE=		http://synergy-foss.org/
 
 # GPLv2

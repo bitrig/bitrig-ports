@@ -4,7 +4,7 @@ COMMENT=	cleans up HTML code for web browsers, not humans
 
 MODULES=	cpan
 DISTNAME=	HTML-Clean-0.8
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 
 # Artistic

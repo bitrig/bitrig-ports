@@ -5,6 +5,7 @@ COMMENT=	TLS/SSL library and tools
 V=		1.0.1h
 DISTNAME=	openssl-$V
 PKGNAME=	openssl-$V
+REVISION=	0
 
 SHLIBVER=	0.0
 SHARED_LIBS=	crypto ${SHLIBVER} \
@@ -13,8 +14,6 @@ SHARED_LIBS=	crypto ${SHLIBVER} \
 CATEGORIES=	security net
 
 HOMEPAGE=	http://www.openssl.org/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # OpenSSL
 PERMIT_PACKAGE_CDROM=	Yes

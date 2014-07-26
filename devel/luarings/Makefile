@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 
 DISTNAME =	rings-1.2.3
 PKGNAME =	lua${DISTNAME}
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.keplerproject.org/rings/

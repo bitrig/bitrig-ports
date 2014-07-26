@@ -3,10 +3,8 @@
 COMMENT= 		personal finance tracking and performance tool
 
 DISTNAME=		xinvest-2.6.9
-REVISION=		6
+REVISION=		7
 CATEGORIES=		productivity x11
-
-MAINTAINER=		Martynas Venckus <martynas@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

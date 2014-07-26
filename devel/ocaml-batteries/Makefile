@@ -10,10 +10,9 @@ GH_TAGNAME =	v$V
 GH_COMMIT =	7613438a4e8425fc51b16f21faaccdebc7ea76ce
 DISTNAME =	${GH_PROJECT}-$V
 PKGNAME =	ocaml-batteries-$V
+REVISION =	0
 
 HOMEPAGE =	http://batteries.forge.ocamlcore.org/
-
-MAINTAINER =	Christopher Zimmermann <madroach@gmerlin.de>
 
 # LGPL >=2.1
 PERMIT_PACKAGE_CDROM =		Yes

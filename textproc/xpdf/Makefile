@@ -3,6 +3,7 @@
 COMMENT=	PDF viewer for X11
 
 DISTNAME=	xpdf-3.04
+REVISION=	0
 CATEGORIES=	textproc x11
 
 MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/ \

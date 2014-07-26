@@ -5,12 +5,10 @@ ONLY_FOR_ARCHS= ${APM_ARCHS}
 COMMENT=	laptop battery status display for X11
 
 DISTNAME=	xbatt-1.2.1
-REVISION =	3
+REVISION =	4
 CATEGORIES=	sysutils x11
 
 MASTER_SITES=	http://www.clave.gr.jp/~eto/xbatt/
-
-MAINTAINER=	Niklas Hallqvist <niklas@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		ICE SM X11 Xau Xaw Xdmcp Xext Xmu Xpm Xt c \

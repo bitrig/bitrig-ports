@@ -4,7 +4,7 @@ COMMENT=	module for getting and parsing whois entries
 
 MODULES=	cpan
 DISTNAME=	Net-ParseWhois-0.7
-REVISION=	0
+REVISION=	1
 EPOCH=		0
 CATEGORIES=	net
 USE_GROFF =	Yes

@@ -6,6 +6,7 @@ COMMENT-main=		text based music notation system
 COMMENT-docs=		lilypond documentation
 
 VERSION=		2.18.2
+REVISION=		0
 DISTNAME=		lilypond-${VERSION}
 DISTNAME-docs=		${DISTNAME}-1.documentation
 PKGNAME-main=		lilypond-${VERSION}
@@ -18,8 +19,6 @@ EXTRACT_ONLY=		${DISTNAME}.tar.gz
 MULTI_PACKAGES=		-main -docs
 
 HOMEPAGE=		http://lilypond.org/web/
-
-MAINTAINER=		Matthias Kilian <kili@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

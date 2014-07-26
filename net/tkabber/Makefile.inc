@@ -4,8 +4,6 @@ CATEGORIES =		net/tkabber x11
 
 HOMEPAGE =		http://tkabber.jabber.ru/
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 

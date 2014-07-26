@@ -4,8 +4,8 @@ COMMENT =		testing TCP program
 
 MODULES =		cpan
 DISTNAME =		Test-TCP-1.13
+REVISION =		0
 CATEGORIES =		net
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 RUN_DEPENDS =		devel/p5-Test-SharedFork>=0.14
 BUILD_DEPENDS = 	${RUN_DEPENDS}

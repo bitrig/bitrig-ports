@@ -2,6 +2,7 @@
 
 COMMENT=	British English RP male speaker (RAB) at 16KHz sampling
 DISTNAME=	festvox_rablpc16k
+REVISION=	0
 
 # Depends on festlex_OALD which is free for non-commercial use only
 PERMIT_PACKAGE_CDROM=	no fee

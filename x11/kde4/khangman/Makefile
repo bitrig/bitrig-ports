@@ -2,6 +2,7 @@
 
 COMMENT =	KDE hangman game
 DISTNAME =	khangman-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	khangmanengine		50.0
 

@@ -8,7 +8,7 @@ MODULES =	cpan
 
 DISTNAME =	Crypt-OpenSSL-RSA-0.28
 CATEGORIES =	security
-REVISION =	0
+REVISION =	1
 
 # Perl
 PERMIT_PACKAGE_CDROM = Yes

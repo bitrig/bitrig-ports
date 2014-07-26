@@ -4,7 +4,7 @@ COMMENT=	seamless DB up- and downgrades
 
 MODULES=	cpan
 DISTNAME=	DBIx-Migration-0.05
-REVISION=	1
+REVISION=	2
 CATEGORIES=	databases
 
 CONFIGURE_STYLE=modbuild

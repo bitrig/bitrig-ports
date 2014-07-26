@@ -2,7 +2,7 @@
 
 COMMENT=		anti-spam SMTP server
 DISTNAME=		avenger-0.8.3
-REVISION=		0
+REVISION=		1
 CATEGORIES=		mail
 
 HOMEPAGE=		http://www.mailavenger.org/

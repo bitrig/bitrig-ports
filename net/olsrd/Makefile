@@ -9,16 +9,14 @@ DISTNAME=		olsrd-${VERSION}
 PKGNAME-main=		olsrd-${VERSION}
 PKGNAME-gui=		olsrd-gui-${VERSION}
 PKGNAME-plugins=	olsrd-plugins-${VERSION}
-REVISION-main=		4
-REVISION-gui=		5
-REVISION-plugins=	5
+REVISION-main=		5
+REVISION-gui=		6
+REVISION-plugins=	6
 
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.olsr.org/
 MASTER_SITES=	${HOMEPAGE}releases/0.6/
-
-MAINTAINER=	Martin Reindl <martin@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

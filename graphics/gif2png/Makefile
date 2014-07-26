@@ -3,7 +3,7 @@
 COMMENT=	converts GIF images to the PNG format
 
 DISTNAME=	gif2png-2.5.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	graphics
 HOMEPAGE=	http://www.catb.org/~esr/gif2png/
 

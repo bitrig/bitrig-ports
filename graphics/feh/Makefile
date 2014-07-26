@@ -3,12 +3,11 @@
 COMMENT=	lightweight image viewer
 
 DISTNAME=	feh-2.12
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://feh.finalrewind.org/
-
-MAINTAINER=	David Coppa <dcoppa@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT =	GNUstep based trace visualization tool
 
 DISTNAME =	Paje-1.98
-REVISION =	4
+REVISION =	5
 SHARED_LIBS +=	General	0.0
 
 HOMEPAGE =	http://paje.sourceforge.net/

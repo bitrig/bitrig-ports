@@ -8,6 +8,7 @@ COMMENT =	experimental ultra-low delay audio codec
 
 # XXX audio/mumble (at least as of 1.2.4) requires *exactly* 0.11.1
 DISTNAME =	celt-0.11.1
+REVISION =	0
 
 EPOCH =		1
 

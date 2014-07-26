@@ -4,10 +4,8 @@ COMMENT=	big5/gb enhanced truetype font manager
 
 DISTNAME=	ttfm-0.9.5
 PKGNAME=	zh-${DISTNAME}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	chinese
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

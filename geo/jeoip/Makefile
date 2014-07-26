@@ -2,13 +2,11 @@
 
 COMMENT=		Java interface to GeoIP database
 DISTNAME=		jeoip-0.5
-REVISION=		12
+REVISION=		13
 CATEGORIES=		geo net
 PKG_ARCH=		*
 
 HOMEPAGE=		http://www.darwinsys.com/freeware/jeoip.jsp
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

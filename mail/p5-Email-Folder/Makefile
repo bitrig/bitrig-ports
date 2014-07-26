@@ -8,6 +8,7 @@ USE_GROFF =	Yes
 HOMEPAGE=	http://emailproject.perl.org/wiki/Email::Folder
 
 DISTNAME=	Email-Folder-0.855
+REVISION=	0
 CATEGORIES=	mail
 
 # perl

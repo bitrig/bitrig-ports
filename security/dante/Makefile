@@ -3,7 +3,7 @@
 COMMENT=	SOCKS client and server
 
 DISTNAME=	dante-1.4.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
 
 SHARED_LIBS=	dsocks	1.2 \
@@ -15,8 +15,6 @@ MASTER_SITES=	ftp://ftp.inet.no/pub/socks/ \
 		ftp://ftp.inet.no/pub/socks/old/
 
 HOMEPAGE=	http://www.inet.no/dante/
-
-MAINTAINER=     Jakob Schlyter <jakob@openbsd.org>
 
 # BSD/CMU
 PERMIT_PACKAGE_CDROM=Yes

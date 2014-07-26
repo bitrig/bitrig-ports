@@ -2,12 +2,10 @@
 
 COMMENT=	picture viewer for X, with thumbnail-based file selector
 DISTNAME=	xzgv-0.9
-REVISION=	4
+REVISION=	5
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://xzgv.sourceforge.net/
-
-MAINTAINER=	Julian Leyh <julian@vgai.de>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

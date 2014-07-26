@@ -4,7 +4,7 @@ COMMENT=		perl i18n routines
 
 MODULES=		cpan
 DISTNAME=		Locale-PGetText-0.16
-REVISION=		1
+REVISION=		2
 CATEGORIES=     	devel
 
 PERMIT_PACKAGE_CDROM=	Yes

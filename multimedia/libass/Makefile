@@ -4,6 +4,7 @@ COMMENT=	portable ASS/SSA subtitle renderer
 
 VER=		0.11.2
 DISTNAME=	libass-${VER}
+REVISION=	0
 CATEGORIES=	multimedia devel
 MASTER_SITES=	https://github.com/libass/libass/releases/download/${VER}/
 EXTRACT_SUFX=	.tar.xz
@@ -11,8 +12,6 @@ EXTRACT_SUFX=	.tar.xz
 SHARED_LIBS=	ass	1.1
 
 HOMEPAGE=	https://code.google.com/p/libass/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes

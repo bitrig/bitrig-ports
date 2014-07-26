@@ -2,11 +2,10 @@
 
 COMMENT=	lightweight SOCKS 4 and SOCKS 5 proxy
 DISTNAME=	nylon-1.21
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE=	http://monkey.org/~marius/nylon/
-
-MAINTAINER=	Marius Eriksen <marius@monkey.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

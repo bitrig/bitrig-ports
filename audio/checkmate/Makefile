@@ -3,6 +3,7 @@
 COMMENT=	check mp3 files for errors
 
 DISTNAME=	checkmate-0.19
+REVISION=	0
 
 CATEGORIES=	audio
 

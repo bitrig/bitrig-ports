@@ -3,11 +3,10 @@
 COMMENT=	cal that can use color to display calendar
 
 DISTNAME=	mencal-2.4
+REVISION=	0
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://www.kyberdigi.cz/projects/mencal/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

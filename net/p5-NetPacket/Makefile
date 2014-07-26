@@ -4,7 +4,7 @@ COMMENT=	Perl module for encoding/decoding network traffic
 
 MODULES=	cpan
 DISTNAME=	NetPacket-0.04
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
 USE_GROFF =	Yes
 

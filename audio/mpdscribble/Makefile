@@ -4,12 +4,11 @@ COMMENT =		mpd client to scrobble track info to last.fm
 
 V =			0.22
 DISTNAME =		mpdscribble-$V
+REVISION =		0
 
 CATEGORIES =		audio
 
 HOMEPAGE =		http://mpd.wikia.com/wiki/Client:Mpdscribble
-
-MAINTAINER =		Steven Mestdagh <steven@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

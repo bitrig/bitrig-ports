@@ -3,6 +3,7 @@
 COMMENT=	LaTeX documents output generation automation tool
 
 DISTNAME=	latexmk-439
+REVISION=	0
 EXTRACT_SUFX=	.zip
 
 CATEGORIES=	textproc print

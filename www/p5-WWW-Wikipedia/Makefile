@@ -3,9 +3,8 @@
 COMMENT=		automated interface to the Wikipedia encyclopedia
 
 DISTNAME=		WWW-Wikipedia-2.01
+REVISION=		0
 CATEGORIES=		www
-
-MAINTAINER=		Gleydson Soares <gsoares@openbsd.org>
 
 MODULES=		cpan
 

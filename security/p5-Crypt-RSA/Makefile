@@ -4,7 +4,7 @@ COMMENT=	RSA public-key cryptosystem
 
 MODULES=	cpan
 DISTNAME=	Crypt-RSA-1.99
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
 USE_GROFF =	Yes
 

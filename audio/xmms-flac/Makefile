@@ -5,12 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	XMMS input plugin for playing FLAC files
 
 VERSION=	1.3.0
+REVISION=	0
 PKGNAME=	xmms-flac-${VERSION}
 DISTNAME=	flac-${VERSION}
 CATEGORIES=	audio
 HOMEPAGE=	https://www.xiph.org/flac/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

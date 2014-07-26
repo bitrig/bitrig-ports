@@ -3,6 +3,7 @@
 COMMENT=	GTK client and libraries for SPICE remote desktop servers
 
 DISTNAME=	spice-gtk-0.25
+REVISION=	0
 CATEGORIES=	x11 net
 
 SHARED_LIBS +=  spice-client-glib-2.0     1.1 # 13.0
@@ -10,8 +11,6 @@ SHARED_LIBS +=  spice-client-gtk-3.0      1.0 # 4.0
 SHARED_LIBS +=  spice-controller          0.0 # 0.0
 
 HOMEPAGE=	http://www.spice-space.org/page/Spice-Gtk
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,10 +3,9 @@
 COMMENT =		download snapshots of OpenBSD-current
 
 DISTNAME =		snapdl-1.2.2
+REVISION =		0
 CATEGORIES =		sysutils
 PKG_ARCH =		*
-
-MAINTAINER =		Nicolas P. M. Legrand <nlegrand@ethelred.fr>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

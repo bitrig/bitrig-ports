@@ -3,13 +3,11 @@
 COMMENT=	capture network traffic, display streams sorted by bandwidth
 
 DISTNAME=	jnettop-0.13.0
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	net
 
 HOMEPAGE=	http://jnettop.kubs.info/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

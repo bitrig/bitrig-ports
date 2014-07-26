@@ -4,6 +4,7 @@ COMMENT =	working 'require Class::Name' and more
 
 MODULES =	cpan
 DISTNAME =	Class-Load-0.21
+REVISION =	0
 CATEGORIES =	devel
 
 # same as perl

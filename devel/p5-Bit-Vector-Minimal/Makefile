@@ -4,7 +4,7 @@ COMMENT=	object-oriented wrapper around vec()
 
 MODULES=	cpan
 DISTNAME=	Bit-Vector-Minimal-1.3
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

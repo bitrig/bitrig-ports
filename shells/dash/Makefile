@@ -4,11 +4,9 @@ COMMENT =		Debian Almquist shell, POSIX-compliant
 
 DISTNAME =		dash-0.5.7
 CATEGORIES =		shells
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://gondor.apana.org.au/~herbert/dash/
-
-MAINTAINER =		Jeremie Courreges-Anglas <jca@wxcvbn.org>
 
 # 3-clause BSD
 # (source contains GPLv2 tool used during build only, see COPYING)

@@ -11,8 +11,8 @@ B=		b13
 PKGNAME=	jdk-${V}
 PKGNAME-main=	jdk-${V}
 PKGNAME-jre=	jre-${V}
-REVISION-main=	1
-REVISION-jre=	1
+REVISION-main=	2
+REVISION-jre=	2
 EPOCH=		0
 
 JDK_SRC=	openjdk-7u40-fcs-src-b43-26_aug_2013.zip
@@ -42,8 +42,6 @@ MASTER_SITES2=	http://spacehopper.org/mirrors/ \
 		http://www.intricatesoftware.com/distfiles/
 MASTER_SITES3=	${MASTER_SITE_APACHE:=ant/binaries/} \
 		http://archive.apache.org/dist/ant/binaries/
-
-MAINTAINER=	Kurt Miller <kurt@openbsd.org>
 
 # GPLv2 w/CLASSPATH exception
 PERMIT_PACKAGE_CDROM=	Yes

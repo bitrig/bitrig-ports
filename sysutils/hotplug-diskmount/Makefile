@@ -3,10 +3,9 @@
 COMMENT =	disk auto-mounter
 
 DISTNAME =	hotplug-diskmount-0.8
+REVISION =	0
 
 CATEGORIES =	sysutils
-
-MAINTAINER =	Alexey Vatchenko <av@bsdua.org>
 
 HOMEPAGE =	http://www.bsdua.org/hotplug-diskmount.html
 

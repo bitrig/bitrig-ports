@@ -4,11 +4,9 @@ COMMENT=		catalyst development bundle
 
 MODULES=		cpan
 DISTNAME=		Task-Catalyst-1.90
-REVISION=		0
+REVISION=		1
 PKGNAME=		catalyst-1.90
 CATEGORIES=		devel www
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

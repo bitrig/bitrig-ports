@@ -3,7 +3,7 @@
 COMMENT =	transform a HTML page in a MIME-Lite mail
 
 DISTNAME =	MIME-Lite-HTML-1.23
-REVISION =	0
+REVISION =	1
 CATEGORIES =	mail
 
 # Perl

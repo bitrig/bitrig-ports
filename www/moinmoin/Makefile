@@ -5,7 +5,7 @@ COMMENT =	wiki engine written in python
 MODPY_EGG_VERSION = 1.9.7
 DISTNAME =	moin-${MODPY_EGG_VERSION}
 PKGNAME =	moin${DISTNAME}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	www
 

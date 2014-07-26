@@ -2,7 +2,7 @@
 
 COMMENT=	Berkeley's implementation of the logo programming language
 DISTNAME=	ucblogo-5.5
-REVISION=	3
+REVISION=	4
 CATEGORIES=	lang
 
 MASTER_SITES=	${MASTER_SITE_BACKUP}

@@ -4,7 +4,7 @@ COMMENT=	allows non RFC822 addresses common in japan
 
 MODULES=	cpan
 DISTNAME=	Email-Valid-Loose-0.05
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 USE_GROFF =	Yes
 

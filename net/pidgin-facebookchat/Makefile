@@ -7,7 +7,7 @@ COMMENT =	Facebook plugin for Pidgin
 V =		1.68
 DISTNAME =	pidgin-facebookchat-source-${V}
 PKGNAME =	pidgin-facebookchat-${V}
-REVISION =	3
+REVISION =	4
 CATEGORIES =	net
 
 HOMEPAGE =	https://code.google.com/p/pidgin-facebookchat/

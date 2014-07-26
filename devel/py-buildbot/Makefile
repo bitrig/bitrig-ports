@@ -5,12 +5,11 @@ COMMENT =	continuous integration framework
 MODPY_EGG_VERSION =	0.8.8
 DISTNAME =	buildbot-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:S/p/pl/}
+REVISION =	0
 
 CATEGORIES =	devel
 
 HOMEPAGE =	http://buildbot.net/
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

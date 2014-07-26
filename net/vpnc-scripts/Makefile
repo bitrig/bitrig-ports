@@ -3,6 +3,7 @@
 COMMENT=	connect scripts for use with vpnc and openconnect
 
 PKGNAME=	vpnc-scripts-20140401
+REVISION=	0
 DISTNAME=	a78b3ddfc56ab457104c88e94dca72d8738f4fad
 
 DISTFILES=	${PKGNAME}{${DISTNAME}}${EXTRACT_SUFX}
@@ -10,8 +11,6 @@ DISTFILES=	${PKGNAME}{${DISTNAME}}${EXTRACT_SUFX}
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.infradead.org/openconnect/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

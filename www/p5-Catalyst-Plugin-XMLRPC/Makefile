@@ -4,10 +4,9 @@ COMMENT=		dispatch XML-RPC methods with Catalyst (deprecated)
 
 MODULES=		cpan
 DISTNAME=		Catalyst-Plugin-XMLRPC-2.01
+REVISION=		0
 CATEGORIES=		www
 USE_GROFF =		Yes
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # same as perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,6 +4,7 @@ COMMENT=	locate install data per-module
 
 MODULES=	cpan
 DISTNAME=	File-ShareDir-1.102
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

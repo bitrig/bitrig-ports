@@ -3,6 +3,7 @@
 COMMENT=	texinfo to HTML converter
 
 DISTNAME=	texi2html-1.82
+REVISION=	0
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.nongnu.org/texi2html/

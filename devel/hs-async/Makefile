@@ -5,9 +5,8 @@ COMMENT =		asynchronous IO operations
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		async-2.0.1.4
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

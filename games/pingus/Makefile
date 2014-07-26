@@ -3,7 +3,7 @@
 COMMENT=	free Lemmings-like game
 
 DISTNAME=	pingus-0.7.6
-REVISION=0
+REVISION=1
 CATEGORIES=	games x11
 
 EXTRACT_SUFX=	.tar.bz2

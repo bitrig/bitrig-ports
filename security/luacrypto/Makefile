@@ -4,7 +4,7 @@ COMMENT=	Lua binding for the OpenSSL crypto libraries
 SHARED_ONLY=	Yes
 
 DISTNAME=	luacrypto-0.2.0
-REVISION=	3
+REVISION=	4
 CATEGORIES=	security
 
 MASTER_SITES=	http://luaforge.net/frs/download.php/1722/

@@ -3,6 +3,7 @@
 COMMENT=	IPC library used by GnuPG and gpgme
 
 DISTNAME=	libassuan-2.1.1
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 
 SHARED_LIBS +=  assuan            1.1      # 2.0

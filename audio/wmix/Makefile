@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; audio mixer
 
 DISTNAME=		wmix-3.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		audio x11 x11/windowmaker
 
 HOMEPAGE=		http://www.ne.jp/asahi/linux/timecop/

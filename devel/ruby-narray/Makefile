@@ -3,7 +3,7 @@
 COMMENT =	numerical N-dimensional Array class
 
 DISTNAME =	narray-0.6.0.4
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel
 
 HOMEPAGE=	http://narray.rubyforge.org/

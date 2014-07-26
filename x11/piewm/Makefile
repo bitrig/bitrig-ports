@@ -3,7 +3,7 @@
 COMMENT=	tvtwm with pie (circular) menus
 
 DISTNAME=	piewm-1.04
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 # BSD-like/badly worded

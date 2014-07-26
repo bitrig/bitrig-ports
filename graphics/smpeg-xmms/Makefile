@@ -6,10 +6,8 @@ SHARED_ONLY=	Yes
 VERSION=	0.3.5
 DISTNAME=	smpeg-xmms-${VERSION}
 PKGNAME=	xmms-smpeg-${VERSION}
-REVISION =	6
+REVISION =	7
 CATEGORIES=	graphics
-
-MAINTAINER=	Wilbern Cobb <wcobb@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

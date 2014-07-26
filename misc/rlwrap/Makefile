@@ -4,7 +4,7 @@ COMMENT=		generic readline wrapper for various programs
 
 DISTNAME=		rlwrap-0.37
 CATEGORIES=		misc
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://utopia.knoware.nl/~hlub/uck/rlwrap/
 

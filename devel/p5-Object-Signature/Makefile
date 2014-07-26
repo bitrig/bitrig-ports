@@ -4,10 +4,8 @@ COMMENT=        cryptographic signatures for objects
 
 MODULES=	cpan
 DISTNAME=	Object-Signature-1.05
-REVISION=	2
+REVISION=	3
 CATEGORIES=     devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

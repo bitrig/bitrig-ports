@@ -4,6 +4,7 @@ COMMENT=	verifies XML documents
 V=		2.0.1
 
 PKGNAME=	xmlwf-$V
+REVISION=	0
 DISTNAME=	expat-$V
 
 CATEGORIES=	textproc

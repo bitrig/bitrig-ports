@@ -5,6 +5,7 @@ COMMENT =	helper to test wsgi applications
 MODPY_EGG_VERSION = 1.3.3
 DISTNAME =	WebTest-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
+REVISION =	0
 
 CATEGORIES =	www devel
 

@@ -6,7 +6,7 @@ COMMENT=		Perl API to flowd binary logfiles
 
 DISTNAME=		flowd-0.9.1
 PKGNAME=		p5-${DISTNAME}
-REVISION=		3
+REVISION=		4
 CATEGORIES=		net devel
 
 HOMEPAGE=		http://www.mindrot.org/flowd.html

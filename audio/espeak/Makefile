@@ -5,7 +5,7 @@ COMMENT=		compact speech synthesizer
 DISTNAME=		espeak-1.48.04-source
 EXTRACT_SUFX=		.zip
 PKGNAME=		${DISTNAME:S/-source//}
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS=		espeak 1.2
 

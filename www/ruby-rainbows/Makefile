@@ -3,11 +3,10 @@
 COMMENT =	ruby-unicorn for sleepy apps and slow clients
 
 DISTNAME =	rainbows-4.6.0
+REVISION =	0
 CATEGORIES =	www
 
 HOMEPAGE =	http://rainbows.rubyforge.org/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # Ruby/GPLv2
 PERMIT_PACKAGE_CDROM = Yes

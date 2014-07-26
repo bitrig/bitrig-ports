@@ -6,11 +6,10 @@ V=		1.1
 DISTNAME=	v${V}
 DIST_SUBDIR=	xbanish
 PKGNAME=	xbanish-${V}
+REVISION=	0
 
 CATEGORIES=	x11
 HOMEPAGE=	https://github.com/jcs/xbanish
-
-MAINTAINER=	joshua stein <jcs@openbsd.org>
 
 MASTER_SITES=	${HOMEPAGE}/archive/
 

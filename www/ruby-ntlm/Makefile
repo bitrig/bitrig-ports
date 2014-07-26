@@ -4,6 +4,7 @@ COMMENT =		creator/parser for the NTLM authentication
 
 DISTNAME =		rubyntlm-0.3.2
 PKGNAME =		${DISTNAME:S/ruby//}
+REVISION =		0
 
 CATEGORIES =		www security
 

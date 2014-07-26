@@ -5,14 +5,12 @@ COMMENT=		handle HTML forms on the client side
 MODPY_EGG_VERSION=	0.2.10
 DISTNAME=		ClientForm-${MODPY_EGG_VERSION}
 PKGNAME=		py-clientform-${MODPY_EGG_VERSION}
-REVISION=		2
+REVISION=		3
 
 CATEGORIES=		www
 
 HOMEPAGE=		http://wwwsearch.sourceforge.net/ClientForm/
 MASTER_SITES=		${HOMEPAGE}src/
-
-MAINTAINER=		Will Maier <wcmaier@openbsd.org>
 
 # BSD-like or ZPL
 PERMIT_PACKAGE_CDROM=	Yes

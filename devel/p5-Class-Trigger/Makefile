@@ -4,7 +4,7 @@ COMMENT=	add / call inheritable triggers
 
 MODULES=	cpan
 DISTNAME=	Class-Trigger-0.11
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # perl

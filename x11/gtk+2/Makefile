@@ -7,6 +7,7 @@ GNOME_VERSION=		2.24.24
 GNOME_PROJECT=		gtk+
 
 PKGNAME-main=		gtk+2-${GNOME_VERSION}
+REVISION=		0
 PKGNAME-guic=		gtk-update-icon-cache-${GNOME_VERSION}
 
 CATEGORIES=		x11 devel
@@ -16,8 +17,6 @@ SHARED_LIBS +=  gtk-x11-2.0          2400.0   # 2400.23
 SHARED_LIBS +=  gailutil             26.0     # 18.1
 
 HOMEPAGE=		http://www.gtk.org/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

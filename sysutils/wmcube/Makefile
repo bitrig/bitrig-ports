@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; shows rotating 3d-object and CPU load
 
 DISTNAME=		wmcube-0.98
-REVISION=		1
+REVISION=		2
 CATEGORIES=		sysutils x11 x11/windowmaker
 
 HOMEPAGE=		http://kling.mine.nu/wmcube.htm

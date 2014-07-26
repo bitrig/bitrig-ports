@@ -3,12 +3,10 @@
 COMMENT=	aewm++ based pretty themable window manager
 
 DISTNAME=	pekwm-0.1.15
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11
 
 HOMEPAGE=	http://pekwm.org/
-
-MAINTAINER=	Nicholas Marriott <nicm@users.sourceforge.net>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

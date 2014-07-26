@@ -3,6 +3,7 @@
 COMMENT =	rewrite strings based on a set of known prefixes
 
 DISTNAME =	String-RewritePrefix-0.007
+REVISION =	0
 CATEGORIES =	textproc
 MODULES =	cpan
 

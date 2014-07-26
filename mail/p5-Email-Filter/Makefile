@@ -3,11 +3,10 @@
 COMMENT = 	library for creating easy email filters
 
 DISTNAME =	Email-Filter-1.032
+REVISION =	0
 CATEGORIES =	mail
 
 HOMEPAGE =	http://emailproject.perl.org/
-
-MAINTAINER =	Armin Wolfermann <armin@wolfermann.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

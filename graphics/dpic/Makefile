@@ -3,6 +3,7 @@
 COMMENT =		pic-like interpreter for producing line graphics
 
 DISTNAME =		dpic-2011.12.09
+REVISION =		0
 
 CATEGORIES =		graphics
 

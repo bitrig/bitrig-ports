@@ -4,7 +4,7 @@ COMMENT=	Python functions and constants for IEEE754 floating point
 
 DISTNAME=	fpconst-0.7.2
 PKGNAME=	${DISTNAME:S/^/py-/}
-REVISION =	7
+REVISION =	8
 CATEGORIES=    	devel
 
 HOMEPAGE=	http://research.warnes.net/projects/RStatServer/fpconst/

@@ -2,5 +2,6 @@
 
 COMMENT =		rspec stubbing and mocking
 DISTNAME =		rspec-mocks-2.14.6
+REVISION =		0
 
 .include <bsd.port.mk>

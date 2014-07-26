@@ -3,10 +3,8 @@
 COMMENT=		symmetrical block and stream ciphers
 
 DISTNAME=		cryptocipher-0.2.8
-REVISION=		3
+REVISION=		4
 CATEGORIES=		security
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes

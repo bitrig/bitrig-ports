@@ -5,6 +5,7 @@ COMMENT =		65xx-series cross-assembler
 MODPY_EGG_VERSION =	1.0
 DISTNAME =		Ophis-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:L}
+REVISION =		0
 
 CATEGORIES =		devel
 

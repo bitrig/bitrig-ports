@@ -4,12 +4,10 @@ COMMENT=	dump frames from mpeg-1 movies
 
 VERSION=	0.6
 DISTNAME=	dumpmpeg-${VERSION}
-REVISION =	1
+REVISION =	2
 CATEGORIES=	graphics x11
 
 HOMEPAGE=	http://sourceforge.net/projects/dumpmpeg/
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

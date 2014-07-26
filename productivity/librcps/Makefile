@@ -2,6 +2,7 @@
 COMMENT =	library for resource constrained project scheduling
 CATEGORIES =	productivity
 DISTNAME =	librcps-0.3
+REVISION =	0
 HOMEPAGE =	http://www.librcps.org/
 
 SHARED_LIBS =	rcps		0.0

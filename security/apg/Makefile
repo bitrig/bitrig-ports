@@ -3,7 +3,7 @@
 COMMENT=		automated password generator
 
 DISTNAME=		apg-2.2.3
-REVISION =		0
+REVISION =		1
 CATEGORIES=     	security
 
 HOMEPAGE=		http://www.adel.nursat.kz/apg/

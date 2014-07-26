@@ -5,7 +5,7 @@ COMMENT=	Fast-Light Tool Kit
 VER=		1.3.2
 DISTNAME=	fltk-${VER}-source
 PKGNAME=	fltk-${VER}
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	x11
 SHARED_LIBS=	fltk		7.1 \
@@ -14,8 +14,6 @@ SHARED_LIBS=	fltk		7.1 \
 		fltk_images	7.1
 
 HOMEPAGE=	http://www.fltk.org/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # LGPLv2 with exceptions (see COPYING)
 PERMIT_PACKAGE_CDROM=	Yes

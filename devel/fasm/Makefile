@@ -4,10 +4,9 @@ ONLY_FOR_ARCHS =	i386
 
 COMMENT =		flat assembler
 DISTNAME =		fasm-1.67.29
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel lang
 HOMEPAGE =		http://flatassembler.net/
-MAINTAINER =		Dmitri Alenichev <mitya@rootshell.be>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

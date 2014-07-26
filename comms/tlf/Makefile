@@ -3,7 +3,7 @@
 COMMENT=	radio contest logger
 
 DISTNAME=	tlf-0.9.30
-REVISION=	1
+REVISION=	2
 CATEGORIES=	comms hamradio
 
 HOMEPAGE=	http://home.iae.nl/users/reinc/TLF-0.2.html

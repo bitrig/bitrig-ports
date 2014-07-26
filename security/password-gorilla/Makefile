@@ -3,7 +3,7 @@
 COMMENT =	cross-platform password manager
 
 V =		1.5.3.6.3
-REVISION =	1
+REVISION =	2
 DISTNAME =	zdia-gorilla-v${V}-0-gfc80d95
 PKGNAME =	password-gorilla-${V}
 CATEGORIES =	security

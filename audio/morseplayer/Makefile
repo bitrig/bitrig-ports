@@ -3,7 +3,7 @@
 COMMENT=		morse player
 
 DISTNAME=		morseplayer-1.4
-REVISION=		0
+REVISION=		1
 CATEGORIES=		audio
 
 # BSD

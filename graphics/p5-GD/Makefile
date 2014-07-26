@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT =	module to interface with the GD graphics library
 
 DISTNAME =	GD-2.52
-REVISION =	1
+REVISION =	2
 CATEGORIES =	graphics
 
 # perl

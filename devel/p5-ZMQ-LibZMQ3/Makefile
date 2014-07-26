@@ -6,6 +6,7 @@ COMMENT =	libzmq 3.x wrapper for Perl
 
 MODULES =	cpan
 DISTNAME =	ZMQ-LibZMQ3-1.18
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

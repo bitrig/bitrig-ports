@@ -3,6 +3,7 @@
 COMMENT =	PDF creation library
 
 VERSION =	2_3_0
+REVISION =	0
 GH_ACCOUNT =	libharu
 GH_PROJECT =	libharu
 GH_TAGNAME =	RELEASE_${VERSION}

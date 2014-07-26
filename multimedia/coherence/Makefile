@@ -5,7 +5,7 @@ COMMENT =	UPnP/DLNA media server
 MODPY_EGG_VERSION =	0.6.6.2
 DISTNAME =	Coherence-${MODPY_EGG_VERSION}
 PKGNAME =	${DISTNAME:L}
-REVISION =	4
+REVISION =	5
 CATEGORIES =	multimedia
 
 HOMEPAGE =	http://coherence.beebits.net

@@ -3,12 +3,10 @@
 COMMENT=	showcase for GTK+ 2 widgets
 
 DISTNAME=	thewidgetfactory-0.2.1
-REVISION=	4
+REVISION=	5
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.stellingwerff.com/?page_id=10
-
-MAINTAINER=	Andres Delfino <adelfino@gmail.com>
 
 # GPL v2
 PERMIT_PACKAGE_CDROM=	Yes

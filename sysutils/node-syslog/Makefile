@@ -6,11 +6,9 @@ NPM_VERSION =	1.1.7
 NPM_NAME =	node-syslog
 CATEGORIES =	sysutils
 
-REVISION = 	4
+REVISION = 	5
 
 HOMEPAGE =	https://github.com/schamane/node-syslog
-
-MAINTAINER =	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

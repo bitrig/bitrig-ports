@@ -5,10 +5,8 @@ PKG_ARCH =		*
 COMMENT =		Nagios plugin to check RAID status with bioctl
 
 DISTNAME =		check_bioctl-1.20
-REVISION =		0
+REVISION =		1
 CATEGORIES =		net
-
-MAINTAINER =		Andrew Fresh <afresh1@openbsd.org>
 
 HOMEPAGE =		https://www.monitoringexchange.org/inventory/Check-Plugins/Hardware/Devices/RAID-Controller/check_bioctl
 MASTER_SITES =		http://cvs.afresh1.com/nagios/

@@ -4,7 +4,7 @@ COMMENT=	perl module to create WML cards
 
 MODULES=	cpan
 DISTNAME=	WML-Card-0.02
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc www
 
 # GPL/Artistic

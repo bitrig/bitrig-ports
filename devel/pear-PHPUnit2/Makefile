@@ -3,10 +3,9 @@
 COMMENT=	regression testing framework for PHP 5
 
 DISTNAME=	PHPUnit2-2.1.6
-REVISION =	2
+REVISION =	3
 CATEGORIES=	devel
 
-MAINTAINER=	Aleksander Piotrowski <alek@openbsd.org>
 MODULES=	www/pear
 
 RUN_DEPENDS=	benchmarks/pear-Benchmark

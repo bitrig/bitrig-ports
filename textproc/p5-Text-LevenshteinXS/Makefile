@@ -4,7 +4,7 @@ COMMENT=		perl implementation of Levenshtein edit distance
 
 MODULES=		cpan
 DISTNAME=		Text-LevenshteinXS-0.03
-REVISION=		5
+REVISION=		6
 CATEGORIES=		textproc devel
 SHARED_ONLY=		Yes
 

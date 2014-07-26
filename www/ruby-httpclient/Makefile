@@ -3,6 +3,7 @@
 COMMENT =	library to access web resources via HTTP
 
 DISTNAME =	httpclient-2.3.4.1
+REVISION =	0
 CATEGORIES =	www
 
 HOMEPAGE =	https://github.com/nahi/httpclient

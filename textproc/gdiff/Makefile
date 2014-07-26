@@ -6,7 +6,7 @@ VERSION=	3.3
 EXTRACT_SUFX=	.tar.xz
 DISTNAME=	diffutils-${VERSION}
 PKGNAME=	gdiff-${VERSION}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 HOMEPAGE=	https://www.gnu.org/software/diffutils/
 

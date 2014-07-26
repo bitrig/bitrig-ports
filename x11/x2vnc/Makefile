@@ -3,7 +3,7 @@
 COMMENT=	one keyboard and/or mouse, multiple X and VNC displays
 
 DISTNAME=	x2vnc-1.6.1
-REVISION=	2
+REVISION=	3
 CATEGORIES=	x11
 
 # GPL

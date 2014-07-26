@@ -12,7 +12,7 @@ PORTNAME =		rakudo
 V =			2013.05
 DISTNAME =		rakudo-star-$V
 PKGNAME =		rakudo-$V
-REVISION =		0
+REVISION =		1
 
 PARROT_VERSION =	5.4.0
 NQP_VERSION =		2013.05
@@ -21,8 +21,6 @@ SUBST_VARS +=		PARROT_VERSION
 CATEGORIES =		lang perl6
 
 HOMEPAGE =		http://rakudo.org
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # Artistic 2
 PERMIT_PACKAGE_CDROM =	Yes

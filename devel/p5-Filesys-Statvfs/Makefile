@@ -6,7 +6,7 @@ COMMENT=	Perl extension for statvfs() and fstatvfs()
 MODULES=	cpan
 DISTNAME=	Filesys-Statvfs-0.82
 CATEGORIES=	devel
-REVISION=	0
+REVISION=	1
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

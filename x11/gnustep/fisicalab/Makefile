@@ -3,7 +3,7 @@
 COMMENT=	educational application to solve physics problems
 
 DISTNAME =	fisicalab-0.3.4
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE=	http://www.nongnu.org/fisicalab/
 MASTER_SITES=	${MASTER_SITE_GNU:=fisicalab/}

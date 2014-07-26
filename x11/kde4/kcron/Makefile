@@ -2,6 +2,7 @@
 
 COMMENT =	KDE-based GUI for cron task scheduler
 DISTNAME =	kcron-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	sysutils productivity
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdeadmin/kcron

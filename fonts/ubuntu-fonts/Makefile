@@ -3,14 +3,12 @@
 COMMENT =		unicode sans-serif/monospace TrueType fonts from Ubuntu
 
 DISTNAME =		ubuntu-font-family-0.80
-REVISION =		0
+REVISION =		1
 PKGNAME =		${DISTNAME:S,-family,s,}
 
 CATEGORIES =		fonts
 
 HOMEPAGE =		http://font.ubuntu.com/
-
-MAINTAINER =		Tim van der Molen <tbvdm@xs4all.nl>
 
 # Ubuntu Font Licence 1.0
 # http://font.ubuntu.com/ufl/ubuntu-font-licence-1.0.txt

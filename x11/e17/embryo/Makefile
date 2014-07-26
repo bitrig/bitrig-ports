@@ -3,6 +3,7 @@
 COMMENT =		C like scripting language used in E17
 
 DISTNAME =		embryo-1.7.9
+REVISION =		0
 EPOCH =			2
 
 SHARED_LIBS +=	embryo               3.0      # 8.6

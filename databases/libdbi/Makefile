@@ -2,13 +2,12 @@
 
 COMMENT =		database-independent abstraction layer
 DISTNAME =		libdbi-0.8.4
+REVISION =		0
 CATEGORIES =		databases
 SHARED_LIBS +=		dbi 0.0 # .0.5
 
 HOMEPAGE =		http://libdbi.sourceforge.net/
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=libdbi/}
-
-MAINTAINER =		Michael Erdely <merdely@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

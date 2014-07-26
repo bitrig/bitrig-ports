@@ -11,11 +11,10 @@ GH_COMMIT =		91a0b8b13b46bd8ea99b61823860ce9c8c3b67f6
 
 DISTNAME =		${GH_PROJECT}-${MODPY_EGG_VERSION}
 PKGNAME =		py-redis-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		databases
 
 HOMEPAGE =		https://github.com/andymccurdy/redis-py/
-
-MAINTAINER = 		Remi Pointel <rpointel@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

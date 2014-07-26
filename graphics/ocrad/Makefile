@@ -3,10 +3,8 @@
 COMMENT=	OCR program for pnm files
 
 DISTNAME=	ocrad-0.18
-REVISION=	0
+REVISION=	1
 CATEGORIES=	graphics
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,11 +6,9 @@ V=			1.8.27
 DISTNAME=		htmldoc-${V}
 CATEGORIES=     	print www
 
-REVISION =		7
+REVISION =		8
 
 HOMEPAGE =		http://www.msweet.org/projects.php?Z1
-
-MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2 with OpenSSL exception.
 PERMIT_PACKAGE_CDROM=	Yes

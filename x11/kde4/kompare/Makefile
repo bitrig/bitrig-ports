@@ -2,6 +2,7 @@
 
 COMMENT =	file compare utility for KDE
 DISTNAME =	kompare-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	textproc devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/kompare

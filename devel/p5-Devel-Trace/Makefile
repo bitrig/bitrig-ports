@@ -4,6 +4,7 @@ COMMENT=	print out each line before it is executed
 
 MODULES=	cpan
 DISTNAME=	Devel-Trace-0.11
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

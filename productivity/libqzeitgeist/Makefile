@@ -4,7 +4,7 @@ COMMENT =		Qt wrapper for Zeitgeist, event logging framework
 
 V =			0.8.0
 DISTNAME =		libqzeitgeist-${V}
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		qzeitgeist	0.0
 

@@ -6,10 +6,8 @@ COMMENT=	cisco NetFlow utilities
 
 DISTNAME=	flow-tools-0.68.5.1
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	4
+REVISION=	5
 CATEGORIES=	net
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # forked from:  http://www.splintered.net/sw/flow-tools/
 HOMEPAGE=	https://code.google.com/p/flow-tools/

@@ -10,7 +10,7 @@ V_DOVECOT_FULL=	2.2.10
 
 DISTNAME=	dovecot-${V_DOVECOT}-pigeonhole-${V_SIEVE}
 PKGNAME=	dovecot-pigeonhole-${V_SIEVE}
-REVISION=	2
+REVISION=	3
 EPOCH=		0
 CATEGORIES=	mail
 MASTER_SITES=	http://www.rename-it.nl/dovecot/${V_DOVECOT}/
@@ -18,8 +18,6 @@ MASTER_SITES=	http://www.rename-it.nl/dovecot/${V_DOVECOT}/
 SHARED_LIBS=	dovecot-sieve	2.0
 
 HOMEPAGE=	http://pigeonhole.dovecot.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,11 +3,10 @@
 COMMENT =		SUPress command stdout / stderr UNless ERror
 
 DISTNAME =		supuner-0.1
+REVISION =		0
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://tratt.net/laurie/src/supuner/
-
-MAINTAINER =		Laurence Tratt <laurie@tratt.net>
 
 # BSD / MIT
 PERMIT_PACKAGE_CDROM =	Yes

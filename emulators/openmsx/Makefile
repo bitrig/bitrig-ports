@@ -10,11 +10,9 @@ DISTNAME =	openmsx-0.9.1
 
 CATEGORIES =	emulators
 
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://openmsx.sourceforge.net/
-
-MAINTAINER =	Anthony J. Bentley <anthony@cathet.us>
 
 PERMIT_PACKAGE_CDROM =	claims GPLv2, but no copyright notices in source files
 PERMIT_PACKAGE_FTP =	claims GPLv2, but no copyright notices in source files

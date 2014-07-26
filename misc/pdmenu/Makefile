@@ -3,6 +3,7 @@
 COMMENT=		simple slang-based menu program
 
 VERSION=		1.3.2
+REVISION=		0
 DISTNAME=		pdmenu_${VERSION}
 PKGNAME=		pdmenu-${VERSION}
 CATEGORIES=     	misc

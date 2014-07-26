@@ -4,6 +4,7 @@ COMMENT=		extensions to PPI
 
 MODULES=		cpan
 DISTNAME=		PPIx-Utilities-1.001000
+REVISION=		0
 CATEGORIES=		textproc
 USE_GROFF =		Yes
 

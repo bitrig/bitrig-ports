@@ -3,7 +3,7 @@
 COMMENT=	UPnP A/V media server
 
 DISTNAME=	ushare-1.1a
-REVISION=	8
+REVISION=	9
 EXTRACT_SUFX=	.tar.bz2
 
 CATEGORIES=	net multimedia

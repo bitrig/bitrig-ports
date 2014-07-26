@@ -3,7 +3,7 @@
 COMMENT =	tasks for documentation, extension compiling, testing
 
 DISTNAME =	echoe-3.2
-REVISION =	8
+REVISION =	9
 CATEGORIES =	devel
 
 HOMEPAGE =	https://github.com/fauna

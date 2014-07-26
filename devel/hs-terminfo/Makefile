@@ -3,10 +3,8 @@
 COMMENT = 		Haskell bindings to the terminfo library
 
 DISTNAME =		terminfo-0.3.1.3
-REVISION=		3
+REVISION=		4
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

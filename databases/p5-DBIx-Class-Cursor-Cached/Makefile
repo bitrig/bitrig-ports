@@ -4,6 +4,7 @@ COMMENT =	cursor class with built-in caching support
 
 MODULES =	cpan
 DISTNAME =	DBIx-Class-Cursor-Cached-1.001002
+REVISION =	0
 CATEGORIES =	databases
 
 # same as perl

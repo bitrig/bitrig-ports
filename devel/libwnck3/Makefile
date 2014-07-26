@@ -5,14 +5,11 @@ COMMENT=		window navigator construction kit
 GNOME_PROJECT=		libwnck
 GNOME_VERSION=		3.4.7
 PKGNAME=		${GNOME_PROJECT}3-${GNOME_VERSION}
-REVISION=		2
+REVISION=		3
 
 SHARED_LIBS +=  wnck-3               2.0      # 2.0
 
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

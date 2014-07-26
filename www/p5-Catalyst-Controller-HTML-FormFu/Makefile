@@ -4,10 +4,9 @@ COMMENT =	formular fu for catalyst
 
 MODULES =	cpan
 DISTNAME =	Catalyst-Controller-HTML-FormFu-0.06001
+REVISION =	0
 CATEGORIES =	www textproc
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

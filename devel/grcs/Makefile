@@ -3,7 +3,7 @@
 COMMENT=	GNU versions of the rcs utilities
 DISTNAME=	rcs-5.7
 PKGNAME=	g${DISTNAME}
-REVISION =	0
+REVISION =	1
 EXTRACT_SUFX=	.tar.Z
 CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}

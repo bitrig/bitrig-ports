@@ -4,6 +4,7 @@ COMMENT =	manage deprecation warnings for your distribution
 
 MODULES =	cpan
 DISTNAME =	Package-DeprecationManager-0.13
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

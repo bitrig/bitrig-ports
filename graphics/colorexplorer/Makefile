@@ -3,10 +3,9 @@
 COMMENT =	tool for exploring the color space and relations
 
 DISTNAME =	ColorExplorer-1.8
-REVISION =	2
+REVISION =	3
 CATEGORIES =	graphics
 HOMEPAGE =	http://billposer.org/Software/ColorExplorer.html
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

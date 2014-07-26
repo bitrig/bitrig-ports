@@ -3,7 +3,7 @@
 COMMENT=	decoder for the CEPT (Btx) protocol
 
 DISTNAME=	xcept-2.1.2
-REVISION=	6
+REVISION=	7
 CATEGORIES=	comms
 
 PERMIT_PACKAGE_CDROM=	Yes

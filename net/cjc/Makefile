@@ -4,11 +4,10 @@ COMMENT=		Jabber client for text terminals
 
 MODPY_EGG_VERSION=	1.2.1
 DISTNAME=		cjc-${MODPY_EGG_VERSION}
+REVISION=		0
 CATEGORIES=		net
 
 HOMEPAGE=		http://cjc.jajcus.net/
-
-MAINTAINER=		Will Maier <wcmaier@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

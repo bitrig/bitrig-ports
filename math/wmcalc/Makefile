@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; simple four-function calculator
 
 DISTNAME=		wmcalc-0.3
-REVISION=		2
+REVISION=		3
 CATEGORIES=		math x11 x11/windowmaker
 
 HOMEPAGE=		http://members.cox.net/ehf_dockapps/

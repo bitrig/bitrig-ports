@@ -4,7 +4,7 @@ COMMENT=        alternative to Test::More
 
 MODULES=	cpan
 DISTNAME=	Test-use-ok-0.02
-REVISION=	1
+REVISION=	2
 CATEGORIES=     devel perl5
 
 # MIT

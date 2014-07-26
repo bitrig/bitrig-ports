@@ -3,11 +3,10 @@
 COMMENT =		ncurses front-end for taskwarrior
 
 DISTNAME =		vit-1.2
-REVISION =		0
+REVISION =		1
 CATEGORIES =		productivity
 
 HOMEPAGE =		http://tasktools.org/projects/vit.html
-MAINTAINER =		Kent R. Spillner <kspillner@acm.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

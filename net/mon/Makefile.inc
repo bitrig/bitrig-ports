@@ -6,8 +6,6 @@ CATEGORIES = net
 
 HOMEPAGE =      http://mon.wiki.kernel.org
 
-MAINTAINER =    Pierre-Emmanuel Andre <pea@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =  Yes
 

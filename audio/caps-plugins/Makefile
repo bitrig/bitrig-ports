@@ -7,7 +7,7 @@ COMMENT =		CAPS LADSPA plugins
 V =			0.4.4
 DISTNAME =		caps_${V}
 PKGNAME =		caps-plugins-${V}
-REVISION =		1
+REVISION =		2
 CATEGORIES =		audio
 
 HOMEPAGE =		http://quite.de/dsp/caps.html

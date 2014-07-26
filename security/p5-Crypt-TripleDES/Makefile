@@ -4,7 +4,7 @@ COMMENT=		implementation of 3DES encryption on ECB mode
 
 MODULES=		cpan
 DISTNAME=		Crypt-TripleDES-0.24
-REVISION=		1
+REVISION=		2
 CATEGORIES=		security
 
 # Perl

@@ -3,7 +3,7 @@
 COMMENT=	Japanese handwriting recognition
 
 DISTNAME=	kanjipad-2.0.0
-REVISION=	4
+REVISION=	5
 CATEGORIES=	japanese
 
 HOMEPAGE=	http://fishsoup.net/software/kanjipad/

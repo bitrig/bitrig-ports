@@ -4,7 +4,7 @@ COMMENT=	provides rudimentary access to remote SNMP agents
 
 MODULES=	cpan
 DISTNAME=	SNMP_Session-1.13
-REVISION=	5
+REVISION=	6
 CATEGORIES=	net
 
 HOMEPAGE=	https://code.google.com/p/snmp-session/

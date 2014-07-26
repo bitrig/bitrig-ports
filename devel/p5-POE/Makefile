@@ -4,12 +4,11 @@ COMMENT=	portable multitasking and networking framework for perl
 
 MODULES=	cpan
 DISTNAME=	POE-1.294
+REVISION=	0
 CATEGORIES=	devel
 USE_GROFF =	Yes
 
 HOMEPAGE=	http://poe.perl.org/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

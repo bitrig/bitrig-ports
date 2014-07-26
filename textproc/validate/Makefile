@@ -3,11 +3,10 @@
 COMMENT=		HTML, XHTML validator
 
 DISTNAME=		validate-1.2.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://www.htmlhelp.com/tools/validator/offline/
-MAINTAINER=		Gerardo Santana Gomez Garrido <gerardo.santana@gmail.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

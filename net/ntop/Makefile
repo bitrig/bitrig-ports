@@ -3,7 +3,7 @@
 COMMENT=	network usage, interface similar to top(1)
 
 DISTNAME=	ntop-1.1
-REVISION=	2
+REVISION=	3
 DISTFILES=	${DISTNAME}-src.tar.gz
 CATEGORIES=	net
 MASTER_SITES=	ftp://totem.fix.no/pub/mirrors/misc/

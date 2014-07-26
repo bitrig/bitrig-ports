@@ -4,11 +4,10 @@ COMMENT =		geometry viewer for OOGL file formats
 
 V =			1.9.4
 DISTNAME =		geomview-$V
-REVISION =		4
+REVISION =		5
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://www.geomview.org
-MAINTAINER =		Patsy <openbsd@ethernull.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

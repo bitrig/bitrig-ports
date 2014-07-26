@@ -4,13 +4,12 @@ COMMENT =	PGF image format handling library
 V =		6.12.24
 DISTNAME =	libpgf-$V-src
 PKGNAME =	${DISTNAME:C/-src//}
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS =	pgf		0.0
 
 CATEGORIES =	graphics devel
 HOMEPAGE =	http://sourceforge.net/projects/libpgf/
-MAINTAINER =	KDE porting team <openbsd-kde@googlegroups.com>
 
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes

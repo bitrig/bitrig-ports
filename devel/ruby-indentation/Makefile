@@ -3,7 +3,7 @@
 COMMENT=	indentation and manipulation of (Arrays of) Strings
 
 DISTNAME=	indentation-0.0.7
-REVISION =	0
+REVISION =	1
 
 CATEGORIES=	devel
 

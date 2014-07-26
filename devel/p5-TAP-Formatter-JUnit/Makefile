@@ -4,8 +4,8 @@ COMMENT =	format TAP::Harness output as JUnit XML
 
 MODULES =	cpan
 DISTNAME =	TAP-Formatter-JUnit-0.09
+REVISION =	0
 CATEGORIES =	devel
-MAINTAINER =	Ingo Schwarze <schwarze@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

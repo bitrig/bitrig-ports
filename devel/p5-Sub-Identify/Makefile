@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		retrieve names of code references
 
 DISTNAME =		Sub-Identify-0.04
-REVISION =		4
+REVISION =		5
 CATEGORIES =		devel
 
 # perl

@@ -3,13 +3,11 @@
 COMMENT =	Really Awesome New Cisco confIg Differ
 
 DISTNAME =	rancid-2.3.8
-REVISION =	0
+REVISION =	1
 EPOCH = 	0
 CATEGORIES =	sysutils
 
 HOMEPAGE =	http://www.shrubbery.net/rancid/
-
-MAINTAINER =	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # Custom
 PERMIT_PACKAGE_CDROM =	not for commercial use

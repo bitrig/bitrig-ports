@@ -6,11 +6,10 @@ COMMENT =	system tray icon support for Tk
 
 DISTNAME =	tktray1.3.9
 PKGNAME =	tktray-1.3.9
-REVISION =	1
+REVISION =	2
 SHARED_LIBS =	tktray139 0.0
 CATEGORIES =	x11
 HOMEPAGE =	https://code.google.com/p/tktray/
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

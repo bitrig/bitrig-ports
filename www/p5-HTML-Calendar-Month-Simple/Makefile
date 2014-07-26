@@ -4,11 +4,9 @@ COMMENT=	Simple HTML Calendars
 
 MODULES=	cpan
 DISTNAME=	HTML-CalendarMonthSimple-1.25
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

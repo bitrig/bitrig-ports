@@ -5,6 +5,7 @@ PKG_ARCH=		*
 COMMENT=		Asterisk: The Future of Telephony
 
 PKGNAME=		AsteriskTFOT-2.0
+REVISION=		0
 DISTNAME=		9780596510480# ISBN-13 filename
 EXTRACT_SUFX=	.pdf
 
@@ -13,8 +14,6 @@ EXTRACT_CASES=  *) cp ${FULLDISTDIR}/$$archive ${WRKDIST};;
 CATEGORIES=		books telephony
 
 HOMEPAGE=		http://www.oreilly.com/catalog/asterisk
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
 
 # Creative Commons Copyright, see page xi of the PDF
 PERMIT_PACKAGE_CDROM=	Yes

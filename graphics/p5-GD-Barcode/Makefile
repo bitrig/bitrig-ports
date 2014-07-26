@@ -3,10 +3,8 @@
 COMMENT=	create barcode image with GD
 
 DISTNAME=	GD-Barcode-1.15
-REVISION=	1
+REVISION=	2
 CATEGORIES=	graphics
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Artistic/GPL
 PERMIT_PACKAGE_CDROM=	Yes

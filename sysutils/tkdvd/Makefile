@@ -3,12 +3,10 @@
 COMMENT=		GUI to dvd+rw-tools and cdrecord
 
 DISTNAME=		tkdvd-4.0.9
-REVISION =		1
+REVISION =		2
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://regis.damongeot.free.fr/tkdvd/
-
-MAINTAINER=		Vlad Glagolev <stealth@sourcemage.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,6 +6,7 @@ COMMENT=		weather application for GNOME
 
 GNOME_PROJECT=		gnome-weather
 GNOME_VERSION=		3.12.1
+REVISION=		0
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

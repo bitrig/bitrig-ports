@@ -4,7 +4,7 @@ COMMENT=	lightweight XSETTINGS daemon
 
 DISTNAME=	derat-xsettingsd-486be8b
 PKGNAME=	xsettingsd-0.20120312
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	x11
 

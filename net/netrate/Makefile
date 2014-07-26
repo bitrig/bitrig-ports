@@ -3,6 +3,7 @@
 COMMENT=		FreeBSD's tcp/udp traffic generator
 
 DISTNAME=		netrate-20070208
+REVISION=		0
 CATEGORIES=		benchmarks net
 
 # BSD

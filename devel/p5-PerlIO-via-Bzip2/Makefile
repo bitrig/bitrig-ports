@@ -3,10 +3,8 @@
 COMMENT=	implement PerlIO layers which let you handle bzip2 files
 
 DISTNAME=	PerlIO-via-Bzip2-0.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

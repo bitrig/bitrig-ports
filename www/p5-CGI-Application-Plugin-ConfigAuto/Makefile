@@ -4,7 +4,7 @@ COMMENT =	easy config file management
 
 MODULES =	cpan
 DISTNAME =	CGI-Application-Plugin-ConfigAuto-1.30
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
 USE_GROFF =	Yes
 

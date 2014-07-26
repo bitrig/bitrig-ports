@@ -3,6 +3,7 @@
 COMMENT=		Redis::Namespace class for namespacing calls to Redis
 
 DISTNAME=		redis-namespace-1.5.0
+REVISION=		0
 CATEGORIES=		databases
 
 HOMEPAGE=		https://github.com/defunkt/redis-namespace

@@ -5,7 +5,7 @@ COMMENT=	PF to NetFlow converter
 BROKEN=		needs updating for pfsync changes, try pflow(4) instead
 
 DISTNAME=	pfflowd-0.7
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://www.mindrot.org/files/pfflowd/
 

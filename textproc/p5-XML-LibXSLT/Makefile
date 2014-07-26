@@ -7,7 +7,7 @@ COMMENT=	fast XSLT module for perl
 MODULES=	cpan devel/gettext
 
 DISTNAME=	XML-LibXSLT-1.68
-REVISION=	5
+REVISION=	6
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.axkit.org/

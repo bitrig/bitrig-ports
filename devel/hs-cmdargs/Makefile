@@ -3,11 +3,9 @@
 COMMENT =		command line parser library
 
 DISTNAME =		cmdargs-0.9.5
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 HOMEPAGE =		http://community.haskell.org/~ndm/cmdargs/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

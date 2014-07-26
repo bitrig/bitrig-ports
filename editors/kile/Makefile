@@ -2,12 +2,10 @@
 
 COMMENT=	integrated LaTeX environment for KDE
 DISTNAME=	kile-2.0
-REVISION=	8
+REVISION=	9
 CATEGORIES=	editors x11/kde
 
 HOMEPAGE=	http://kile.sourceforge.net/
-
-MAINTAINER=	David Love <david@homeunix.org.uk>
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kile/}
 EXTRACT_SUFX=	.tar.bz2

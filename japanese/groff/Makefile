@@ -5,7 +5,7 @@ COMMENT=	japanese groff
 CATEGORIES=	japanese textproc print
 
 PKGNAME=	ja-groff-1.10_0.99
-REVISION=	1
+REVISION=	2
 DISTNAME=	groff-1.10
 
 PATCHFILES=	jgroff-0.99.diff.gz:0
@@ -35,7 +35,5 @@ USE_GROFF =	Yes
 #post-install:
 #	@cd ${WRKBUILD}/xditview && ${SETENV} ${MAKE_ENV} \
 #	    make ${ALL_FAKE_FLAGS} -f ${MAKE_FILE} install install.man
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 .include <bsd.port.mk>

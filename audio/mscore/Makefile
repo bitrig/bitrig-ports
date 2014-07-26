@@ -4,14 +4,12 @@ BROKEN-hppa =	ICE on moc_qtsingleapplication.cxx
 
 COMMENT =	WYSIWYG music notation software (MuseScore)
 DISTNAME =	mscore-1.3
-REVISION =	4
+REVISION =	5
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	audio x11
 SUBST_VARS +=	DISTNAME
 
 SHARED_ONLY =	Yes
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 HOMEPAGE =	http://musescore.org/
 

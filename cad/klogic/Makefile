@@ -4,7 +4,7 @@ SHARED_ONLY=	Yes
 COMMENT= 	logic circuit simulator for KDE
 
 DISTNAME=	klogic-1.6
-REVISION=	11
+REVISION=	12
 CATEGORIES=	cad education x11 x11/kde
 
 MASTER_SITES=	http://distfiles.nl/

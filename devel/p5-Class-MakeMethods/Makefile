@@ -4,7 +4,7 @@ COMMENT= 	framework for generating methods
 
 MODULES=	cpan
 DISTNAME=	Class-MakeMethods-1.01
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

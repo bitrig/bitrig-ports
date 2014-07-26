@@ -4,6 +4,7 @@ COMMENT=		GTD organizer for GNOME
 
 MODPY_EGG_VERSION=	0.3.1
 DISTNAME=		gtg-${MODPY_EGG_VERSION}
+REVISION=		0
 
 CATEGORIES=		productivity
 

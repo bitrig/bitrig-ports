@@ -7,7 +7,7 @@ SHARED_ONLY =	Yes
 V =		1.3
 DISTNAME =	alpng13
 PKGNAME =	alpng-$V
-REVISION =	0
+REVISION =	1
 CATEGORIES =	graphics
 SHARED_LIBS =	alleg	0.0	# 4.2
 

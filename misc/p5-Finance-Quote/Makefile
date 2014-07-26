@@ -4,12 +4,11 @@ COMMENT=	module to obtain financial quotes from exchanges
 
 MODULES=	cpan
 DISTNAME=	Finance-Quote-1.13
+REVISION=	0
 CATEGORIES=	misc
 USE_GROFF =	Yes
 
 HOMEPAGE=	http://finance-quote.sourceforge.net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 RUN_DEPENDS=	www/p5-HTML-TableExtract \
 		www/p5-libwww

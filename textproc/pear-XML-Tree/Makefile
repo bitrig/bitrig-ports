@@ -3,7 +3,7 @@
 COMMENT=	classes to represent XML data in PHP
 
 DISTNAME=	XML_Tree-1.1
-REVISION =	3
+REVISION =	4
 CATEGORIES=	textproc
 
 MODULES=	www/pear

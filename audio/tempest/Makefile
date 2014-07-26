@@ -5,7 +5,7 @@ COMMENT=	sends AM radio signals using a monitor
 VERSION=	1.0.5
 DISTNAME=	tempest_for_eliza-${VERSION}
 PKGNAME=	tempest-${VERSION}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	audio
 
 HOMEPAGE=	http://www.erikyyy.de/tempest/

@@ -2,6 +2,7 @@
 
 COMMENT=		DHCPv4/IPv4LL/IPv6RS/DHCPv6 quad stack client
 DISTNAME=		dhcpcd-6.4.2
+REVISION=		0
 CATEGORIES=		net
 EXTRACT_SUFX=		.tar.bz2
 

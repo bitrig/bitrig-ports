@@ -4,7 +4,7 @@ COMMENT=		wm-dockapp; space weather monitor
 
 DISTNAME=		wmSpaceWeather-1.04
 PKGNAME=		${DISTNAME:L}
-REVISION=		5
+REVISION=		6
 CATEGORIES=		astro x11 x11/windowmaker
 
 # GPL

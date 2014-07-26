@@ -4,6 +4,7 @@ COMMENT=	cryptographic cipher block chaining mode
 
 MODULES=	cpan
 DISTNAME =	Crypt-CBC-2.32
+REVISION =	0
 CATEGORIES=	security
 
 RUN_DEPENDS=	security/p5-Crypt-DES \

@@ -10,9 +10,9 @@ PKGNAME-main=	cannalib-3.5b2
 PKGNAME-dict=	cannadict-3.5b2
 PKGNAME-server=	cannaserver-3.5b2
 
-REVISION-main =	4
-REVISION-dict =	0
-REVISION-server = 6
+REVISION-main =	5
+REVISION-dict =	1
+REVISION-server = 7
 
 SHARED_LIBS=	RKC	1.0 \
 		RKC16	1.0 \
@@ -27,8 +27,6 @@ MASTER_SITES0=	http://www.jaist.ac.jp/~fujieda/canna/
 PATCHFILES=	Canna35b2-unoff1.patch.gz:0 Canna35b2-unoff2.patch.gz:0 \
 		Canna35b2-hack1.patch.gz:0
 PATCH_DIST_STRIP=	-p1
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 BUILD_DEPENDS=	japanese/groff
 

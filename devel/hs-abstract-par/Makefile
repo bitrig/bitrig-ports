@@ -3,7 +3,7 @@
 COMMENT =		type classes generalizing monad-par
 
 DISTNAME =		abstract-par-0.3.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 # BSD3

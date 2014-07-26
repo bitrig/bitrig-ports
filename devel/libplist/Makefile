@@ -15,7 +15,7 @@ SHARED_LIBS +=		plist		1.0 # 1.1
 SHARED_LIBS +=		plist++		1.0 # 1.1
 
 CATEGORIES =		devel audio
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://www.libimobiledevice.org
 

@@ -3,14 +3,12 @@
 COMMENT=	9wm with automatic window tiling and virtual desktops
 
 DISTNAME=	larswm-7.5.3
-REVISION =	4
+REVISION =	5
 CATEGORIES=	plan9
 
 HOMEPAGE =	http://larswm.sourceforge.net/
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=larswm/} \
 		http://spacehopper.org/mirrors/
-
-MAINTAINER =	William Yodlowsky <william@openbsd.org>
 
 # nonstandard license
 PERMIT_PACKAGE_CDROM =	No

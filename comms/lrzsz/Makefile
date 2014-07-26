@@ -3,7 +3,7 @@
 COMMENT=	receive/send files via X/Y/ZMODEM protocol
 
 DISTNAME=	lrzsz-0.12.20
-REVISION=	0
+REVISION=	1
 CATEGORIES=	comms
 
 HOMEPAGE=	http://www.ohse.de/uwe/software/lrzsz.html

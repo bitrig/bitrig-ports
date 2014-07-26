@@ -5,7 +5,7 @@ COMMENT=	package management framework for the Ruby language
 V=		1.8.23
 DISTNAME=	rubygems-$V
 PKGNAME= 	ruby-gems-$V
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 
 HOMEPAGE=	http://docs.rubygems.org/

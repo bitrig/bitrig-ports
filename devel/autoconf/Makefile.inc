@@ -7,7 +7,6 @@ CATEGORIES +=	devel
 MASTER_SITES ?=	${MASTER_SITE_GNU:=autoconf/}
 
 HOMEPAGE ?=	https://www.gnu.org/software/autoconf/
-MAINTAINER ?=	Marc Espie <espie@openbsd.org>
 
 # GPL
 PERMIT_DISTFILES_FTP ?=	Yes

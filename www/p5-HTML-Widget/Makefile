@@ -3,7 +3,7 @@
 COMMENT=	HTML widget and validation framework
 
 DISTNAME=	HTML-Widget-1.11
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 # Same as Perl

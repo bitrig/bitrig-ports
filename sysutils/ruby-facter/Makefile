@@ -3,11 +3,9 @@
 COMMENT=	Ruby library for retrieving facts from operating systems
 
 VERSION=	2.1.0
-REVISION=	0
+REVISION=	1
 DISTNAME=	facter-${VERSION}
 CATEGORIES=	sysutils
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE=	http://puppetlabs.com/puppet/related-projects/facter/
 MASTER_SITES=	https://downloads.puppetlabs.com/facter/

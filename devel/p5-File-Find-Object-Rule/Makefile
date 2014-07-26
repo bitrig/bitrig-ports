@@ -3,10 +3,9 @@
 COMMENT =		alternative interface to File::Find::Object
 
 DISTNAME =		File-Find-Object-Rule-0.0305
+REVISION =		0
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

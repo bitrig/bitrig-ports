@@ -4,10 +4,8 @@ COMMENT=	generate world unique message-ids
 
 MODULES=	cpan
 DISTNAME=	Email-MessageID-1.401
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

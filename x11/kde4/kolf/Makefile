@@ -2,6 +2,7 @@
 
 COMMENT =	mini-golf simulator game for KDE
 DISTNAME =	kolf-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kolfprivate		50.0  # 4.10
 

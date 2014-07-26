@@ -3,7 +3,7 @@
 COMMENT=	OO processing of keyword-based argument lists
 
 DISTNAME=	Hash-AutoHash-Args-1.12
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

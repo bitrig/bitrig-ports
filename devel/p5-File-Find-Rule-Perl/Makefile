@@ -4,6 +4,7 @@ COMMENT=	common rules for searching for Perl things
 
 MODULES=	cpan
 DISTNAME=	File-Find-Rule-Perl-1.13
+REVISION=	0
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

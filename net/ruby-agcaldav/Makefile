@@ -3,7 +3,7 @@
 COMMENT=		Ruby client for CalDAV calendars
 
 DISTNAME=		agcaldav-0.2.5.3
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 
 HOMEPAGE=		https://github.com/agilastic/agcaldav

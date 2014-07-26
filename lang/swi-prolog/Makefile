@@ -7,7 +7,7 @@ BROKEN-sparc64 =	infinite loop or aborts during build
 COMMENT =		Prolog for the real world
 
 V =			6.6.4
-REVISION =		1
+REVISION =		2
 DISTNAME =		pl-$V
 PKGNAME =		swi-prolog-$V
 CATEGORIES =		lang
@@ -15,8 +15,6 @@ CATEGORIES =		lang
 SHARED_LIBS =		pl	5.0
 
 HOMEPAGE =		http://www.swi-prolog.org/
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT =		timeout handling
 
 DISTNAME =		control-timeout-0.1.2
-REVISION =		6
+REVISION =		7
 CATEGORIES =		devel
 
 # BSD3

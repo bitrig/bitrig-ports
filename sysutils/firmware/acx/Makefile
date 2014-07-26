@@ -3,9 +3,7 @@
 FW_DRIVER=	acx
 FW_VER=		1.4
 DISTNAME=	acx-firmware-${FW_VER}
-REVISION=	4
-
-MAINTAINER=	Marcus Glocker <mglocker@openbsd.org>
+REVISION=	5
 
 HOMEPAGE=	http://www.nazgul.ch/acx/
 

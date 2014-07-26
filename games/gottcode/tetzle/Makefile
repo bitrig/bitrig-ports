@@ -4,6 +4,6 @@ GAME =		tetzle
 COMMENT =	tetromino puzzle game
 DISTNAME =	${GAME}-2.0.3-src
 WANTLIB +=	GL QtOpenGL
-REVISION =	0
+REVISION =	1
 
 .include <bsd.port.mk>

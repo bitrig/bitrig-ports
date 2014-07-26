@@ -4,7 +4,7 @@ COMMENT=		module to interact with a Cisco router
 
 MODULES=		cpan
 DISTNAME=		Net-Telnet-Cisco-1.10
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
 
 HOMEPAGE=		http://nettelnetcisco.sourceforge.net/

@@ -3,10 +3,9 @@
 COMMENT=		program for indexing & searching email
 
 DISTNAME=		mairix-0.22
+REVISION=		0
 CATEGORIES=		mail
 HOMEPAGE=		http://www.rpcurnow.force9.co.uk/mairix/
-
-MAINTAINER=		David Cathcart <cathcart@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

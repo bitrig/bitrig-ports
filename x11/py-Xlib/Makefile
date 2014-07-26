@@ -5,7 +5,7 @@ COMMENT=		fully functional X client library for Python programs
 VERSION=		0.14
 DISTNAME=		python-xlib-${VERSION}
 PKGNAME=		py-Xlib-${VERSION}
-REVISION=		1
+REVISION=		2
 
 CATEGORIES=		x11
 

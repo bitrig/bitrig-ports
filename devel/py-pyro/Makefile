@@ -5,7 +5,7 @@ COMMENT =	distributed object middleware for Python
 MODPY_EGG_VERSION = 3.14
 DISTNAME =	Pyro-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
-REVISION=		0
+REVISION=		1
 
 CATEGORIES =	devel
 

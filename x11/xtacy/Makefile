@@ -4,7 +4,7 @@ COMMENT=	X11 trippy color-cycling toy
 
 DISTNAME=	xtacy114
 PKGNAME=	xtacy-1.14
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 MASTER_SITES=	http://www.gweep.net/~jer/

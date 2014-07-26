@@ -2,7 +2,7 @@
 
 COMMENT=	Apache module for implementing a framework for doing design
 
-REVISION=	4
+REVISION=	5
 DISTNAME=	mod_layout-3.4
 PKGNAME=	${DISTNAME}
 CATEGORIES=	www

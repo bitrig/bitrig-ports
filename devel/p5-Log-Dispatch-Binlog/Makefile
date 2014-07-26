@@ -3,7 +3,7 @@
 COMMENT=		Storable based binary logs
 
 DISTNAME=		Log-Dispatch-Binlog-0.02
-REVISION=		1
+REVISION=		2
 
 CATEGORIES=		devel
 

@@ -5,12 +5,11 @@ COMMENT=	buildslave for the buildbot CI system
 MODPY_EGG_VERSION=	0.8.8
 DISTNAME=	buildbot-slave-${MODPY_EGG_VERSION}
 PKGNAME=	py-buildslave-${MODPY_EGG_VERSION:S/p/pl/}
+REVISION=	0
 
 CATEGORIES=	devel
 
 HOMEPAGE=	http://buildbot.net/
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

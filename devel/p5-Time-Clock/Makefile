@@ -4,7 +4,7 @@ COMMENT=		simple 24 hours clock object
 
 MODULES=		cpan
 DISTNAME=		Time-Clock-0.12
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # perl

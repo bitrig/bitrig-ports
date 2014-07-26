@@ -2,12 +2,12 @@
 
 COMMENT =	free font editor for TTF, EOT, and SVG fonts
 DISTNAME =	birdfont-0.41
+REVISION =	0
 CATEGORIES =	graphics print
 
 SHARED_LIBS +=	birdfont			2.0 # 2.0
 
 HOMEPAGE =	http://birdfont.org/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

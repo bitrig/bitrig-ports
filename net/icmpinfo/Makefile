@@ -3,6 +3,7 @@
 COMMENT=	look at the icmp messages received by the host
 
 DISTNAME=	icmpinfo-1.11
+REVISION=	0
 CATEGORIES=	net sysutils
 
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=system/network/admin/}

@@ -3,14 +3,13 @@
 COMMENT=	get files from FTP, Gopher, HTTP or HTTPS servers
 
 DISTNAME=	curl-7.37.0
+REVISION=	0
 SHARED_LIBS=	curl                 24.3     # 7.0
 CATEGORIES=	net
 MASTER_SITES=	http://curl.haxx.se/download/ \
 		ftp://ftp.sunet.se/pub/www/utilities/curl/
 
 HOMEPAGE=	http://curl.haxx.se/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

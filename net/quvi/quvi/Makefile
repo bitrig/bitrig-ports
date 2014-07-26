@@ -3,7 +3,7 @@
 COMMENT=	silly suite to access the flash media stream properties
 
 DISTNAME =	quvi-0.9.5
-REVISION =	0
+REVISION =	1
 
 WANTLIB += c crypto curl ffi gcrypt gio-2.0 glib-2.0 gmodule-2.0
 WANTLIB += gobject-2.0 gpg-error idn json-glib-1.0

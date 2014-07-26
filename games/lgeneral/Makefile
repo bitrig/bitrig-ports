@@ -3,12 +3,10 @@
 COMMENT=	turn-based strategy engine
 
 DISTNAME=	lgeneral-0.5.0
-REVISION =	0
+REVISION =	1
 CATEGORIES=	games x11
 
 HOMEPAGE=	http://lgeneral.sourceforge.net/
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 WANTLIB=		X11 Xext c m pthread pthread-stubs usbhid xcb \

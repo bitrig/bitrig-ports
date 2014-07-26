@@ -5,12 +5,11 @@ COMMENT=		config file reader and writer
 MODPY_EGG_VERSION =	4.7.2
 DISTNAME=		configobj-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
+REVISION=		0
 
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.voidspace.org.uk/python/configobj.html
-
-MAINTAINER=		Martynas Venckus <martynas@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

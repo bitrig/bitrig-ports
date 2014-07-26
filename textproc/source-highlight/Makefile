@@ -3,7 +3,7 @@
 COMMENT=	create a document with syntax highlighting
 
 DISTNAME=	source-highlight-3.1.7
-REVISION=	1
+REVISION=	2
 SHARED_LIBS +=	source-highlight     1.0      # 4.0
 CATEGORIES=	textproc
 

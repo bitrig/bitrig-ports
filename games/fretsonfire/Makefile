@@ -6,7 +6,7 @@ V =			1.3.110
 COMMENT =		guitar hero clone
 DISTNAME =		FretsOnFire-${V}
 PKGNAME =		${DISTNAME:L}
-REVISION =		8
+REVISION =		9
 
 CATEGORIES =		games x11
 

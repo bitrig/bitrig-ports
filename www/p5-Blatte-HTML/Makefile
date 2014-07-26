@@ -4,7 +4,7 @@ COMMENT=	Blatte functions to generate (X)HTML
 
 MODULES=	cpan
 DISTNAME=	Blatte-HTML-0.9
-REVISION=	0
+REVISION=	1
 HOMEPAGE=	http://www.blatte.org/
 
 CATEGORIES=	www

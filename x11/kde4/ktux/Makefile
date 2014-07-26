@@ -2,6 +2,7 @@
 
 COMMENT =	KDE screensaver of outer space with Tux
 DISTNAME =	ktux-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	games
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdetoys/ktux

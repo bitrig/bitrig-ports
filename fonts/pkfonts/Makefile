@@ -5,9 +5,9 @@ COMMENT-main=	English PK fonts (300dpi) for ghostscript, xdvi, etc.
 DISTNAME=	pkfonts
 VERSION=	1.0
 PKGNAME=	pkfonts-dpi300-${VERSION}
-REVISION =	1
+REVISION =	2
 PKGNAME-main=	pkfonts-dpi300-${VERSION}
-REVISION-main =	1
+REVISION-main =	2
 CATEGORIES=	fonts print
 
 PERMIT_PACKAGE_CDROM=	no license

@@ -3,7 +3,7 @@
 COMMENT=		software drum machine
 
 DISTNAME=		hydrogen-0.9.4
-REVISION=		4
+REVISION=		5
 CATEGORIES=		audio
 
 HOMEPAGE=		http://www.hydrogen-music.org/

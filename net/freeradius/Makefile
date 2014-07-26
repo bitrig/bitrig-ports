@@ -15,6 +15,7 @@ DISTNAME=	freeradius-server-$V
 EXTRACT_SUFX=	.tar.bz2
 
 PKGNAME-main=	freeradius-$V
+REVISION=	0
 PKGNAME-iodbc=	freeradius-iodbc-$V
 PKGNAME-mysql=	freeradius-mysql-$V
 PKGNAME-pgsql=	freeradius-pgsql-$V
@@ -26,8 +27,6 @@ MASTER_SITES=	ftp://ftp.freeradius.org/pub/radius/ \
 		ftp://ftp.freeradius.org/pub/radius/old/
 
 HOMEPAGE=	http://www.freeradius.org/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2 - LGPLv2 - OpenSSL exemption
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,12 +3,10 @@
 COMMENT=	import CSV data and Large Object to PostgreSQL
 
 DISTNAME=	pgloader-2.3.2
-REVISION =	2
+REVISION =	3
 CATEGORIES=	databases
 
 HOMEPAGE=	http://pgfoundry.org/projects/pgloader/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

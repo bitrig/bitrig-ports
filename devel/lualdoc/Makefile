@@ -8,11 +8,10 @@ GH_TAGNAME =	1.4.2
 GH_COMMIT =	511dfe7df01f92da03c639c5f56495c0c31b6e2b
 DISTNAME =	LDoc-${GH_TAGNAME}
 PKGNAME =	lualdoc-${GH_TAGNAME}
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://stevedonovan.github.io/ldoc/
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =Yes

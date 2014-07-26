@@ -2,7 +2,7 @@
 
 COMMENT=	configurable analog clock for X11
 DISTNAME=	xtu-1.3
-REVISION=	4
+REVISION=	5
 CATEGORIES=	x11 sysutils
 
 # BSD license

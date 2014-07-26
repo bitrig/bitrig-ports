@@ -3,6 +3,7 @@
 COMMENT=	client and server-side SOAP implementation
 
 DISTNAME=	SOAP-Lite-1.11
+REVISION=	0
 CATEGORIES=	www
 
 # perl

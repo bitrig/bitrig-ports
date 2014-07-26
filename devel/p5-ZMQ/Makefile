@@ -4,6 +4,7 @@ COMMENT =	Perl-ish Interface to libzmq
 
 MODULES =	cpan
 DISTNAME =	ZMQ-1.05
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

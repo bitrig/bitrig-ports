@@ -4,7 +4,7 @@ COMMENT =		common interface to HMAC functionality
 
 DISTNAME =		ruby-hmac-0.4.0
 PKGNAME =		${DISTNAME:S/ruby-//}
-REVISION =		0
+REVISION =		1
 CATEGORIES =		security
 
 # MIT

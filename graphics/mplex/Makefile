@@ -3,9 +3,8 @@
 COMMENT=	Multiplexes MPEG component streams into system layers
 
 DISTNAME=	mplex-1.1
+REVISION=	0
 CATEGORIES=	graphics
-
-MAINTAINER=	Wilbern Cobb <wcobb@openbsd.org>
 
 # GNU
 PERMIT_PACKAGE_CDROM=	Yes

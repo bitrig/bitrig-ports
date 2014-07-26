@@ -5,9 +5,8 @@ COMMENT =		efficient packed Unicode text type
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		text-0.11.3.1
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT =		platform independent entropy source
 
 DISTNAME =		entropy-0.2.1
-REVISION =		1
+REVISION =		2
 CATEGORIES =		security
 
 # BSD3

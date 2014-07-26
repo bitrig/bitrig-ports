@@ -3,7 +3,7 @@
 COMMENT=	library for fingerprint reader devices
 
 DISTNAME=	libfprint-0.4.0
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=    	security
 
@@ -12,8 +12,6 @@ SHARED_LIBS +=  fprint               1.0      # 0.0
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/fprint/libfprint
 MASTER_SITES=	http://people.freedesktop.org/~hadess/
 EXTRACT_SUFX=	.tar.bz2
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes

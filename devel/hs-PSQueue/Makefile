@@ -3,10 +3,8 @@
 COMMENT =		priority search queue
 
 DISTNAME =		PSQueue-1.1
-REVISION =		5
+REVISION =		6
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

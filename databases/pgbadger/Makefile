@@ -3,6 +3,7 @@
 COMMENT =	advanced PostgreSQL log analyzer
 
 DISTNAME =	pgbadger-3.5
+REVISION =	0
 CATEGORIES =	databases
 
 HOMEPAGE =	http://dalibo.github.io/pgbadger/

@@ -3,11 +3,9 @@
 COMMENT =	tool for working with RAW images
 
 DISTNAME =	rawstudio-1.2
-REVISION =	10
+REVISION =	11
 
 CATEGORIES =	graphics
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE =	http://rawstudio.org
 MASTER_SITES =	${HOMEPAGE}/files/release/

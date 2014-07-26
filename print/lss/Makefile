@@ -3,7 +3,7 @@
 COMMENT=		LaTeX symbols selector
 
 DISTNAME=		lss-0.1.6
-REVISION=		6
+REVISION=		7
 CATEGORIES=		print x11
 
 HOMEPAGE=		http://clayo.org/lss/

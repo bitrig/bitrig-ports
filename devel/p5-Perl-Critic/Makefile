@@ -4,6 +4,7 @@ COMMENT=	critique perl source code for best practices
 
 MODULES=	cpan
 DISTNAME=	Perl-Critic-1.118
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

@@ -3,7 +3,7 @@
 COMMENT =	DateTime extension for computing rfc2445 recurrences
 
 DISTNAME =	DateTime-Event-ICal-0.10
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	devel
 

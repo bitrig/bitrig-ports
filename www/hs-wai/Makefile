@@ -3,11 +3,9 @@
 COMMENT =		web application interface
 
 DISTNAME =		wai-1.4.0.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel www
 HOMEPAGE =		https://github.com/snoyberg/wai
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

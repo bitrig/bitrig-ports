@@ -3,6 +3,7 @@
 COMMENT=	unicode-aware catalyst (old style)
 
 DISTNAME=	Catalyst-Plugin-Unicode-0.93
+REVISION=	0
 CATEGORIES=	textproc
 
 # Perl

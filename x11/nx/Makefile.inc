@@ -8,8 +8,6 @@ HOMEPAGE?=	http://www.nomachine.com/
 
 MAJOR_VERSION?=	3.5.0
 
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # GPLv2/LGPLv2
 PERMIT_PACKAGE_CDROM?=	Yes
 PERMIT_PACKAGE_FTP?=	Yes

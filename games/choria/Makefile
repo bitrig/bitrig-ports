@@ -7,11 +7,9 @@ COMMENT =	2D MMORPG focused on grinding
 DISTNAME =	choria-${V}-src
 PKGNAME =	choria-${V}
 CATEGORIES =	games x11
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE =	https://code.google.com/p/choria/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =		Yes

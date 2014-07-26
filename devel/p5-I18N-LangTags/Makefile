@@ -4,11 +4,9 @@ COMMENT=	perl support to RFC 3066 language tags
 
 MODULES=	cpan
 DISTNAME=	I18N-LangTags-0.35
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

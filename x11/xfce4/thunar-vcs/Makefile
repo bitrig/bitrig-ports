@@ -4,7 +4,7 @@ COMMENT =	Thunar vcs integration plugin
 
 XFCE_VERSION =	0.1.4
 THUNAR_PLUGIN =	thunar-vcs-plugin
-REVISION=	6
+REVISION=	7
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

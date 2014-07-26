@@ -4,7 +4,7 @@ COMMENT=	perl module to create/verify PGP signatures
 
 MODULES=	cpan
 DISTNAME=	PGP-Sign-0.20
-REVISION=	2
+REVISION=	3
 CATEGORIES=	security
 
 # perl

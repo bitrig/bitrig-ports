@@ -3,6 +3,7 @@
 COMMENT=	Universal Plug and Play SDK
 
 DISTNAME=	libupnp-1.6.18
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 
 CATEGORIES=	net devel

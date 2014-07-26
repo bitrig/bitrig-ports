@@ -5,7 +5,7 @@ COMMENT=		GNU patch
 VERSION=		2.7
 DISTNAME=		patch-${VERSION}
 PKGNAME=		gpatch-${VERSION}
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 HOMEPAGE=		https://www.gnu.org/software/patch/

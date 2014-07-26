@@ -4,7 +4,7 @@ COMMENT=	read tags of MP3 audio files
 
 MODULES=	cpan
 DISTNAME=	MP3-Tag-1.13
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 
 # perl

@@ -4,7 +4,7 @@ COMMENT=	MIME implementation
 
 DISTNAME=	mm2.7
 PKGNAME=	metamail-2.7
-REVISION=	4
+REVISION=	5
 CATEGORIES=	mail
 
 MASTER_SITES=	http://www.guppylake.com/~nsb/metamail/

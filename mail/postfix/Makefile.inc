@@ -19,8 +19,6 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 HOMEPAGE=	http://www.postfix.org/
 
-MAINTAINER=	Brad Smith <brad@comstyle.com>
-
 PERMIT_PACKAGE_CDROM=	cannot be sold, see section 4 of license
 PERMIT_PACKAGE_FTP=	yes
 PERMIT_DISTFILES_FTP=	yes

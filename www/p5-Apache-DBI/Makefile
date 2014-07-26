@@ -4,7 +4,7 @@ COMMENT=	DBI persistent connection, authentication and authorization
 
 MODULES=	cpan
 DISTNAME=	Apache-DBI-0.94
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www databases
 
 RUN_DEPENDS=	www/mod_perl \

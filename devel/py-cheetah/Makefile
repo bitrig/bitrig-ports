@@ -3,7 +3,7 @@
 COMMENT=		Python-powered template engine and code generator
 
 VERSION=		2.4.4
-REVISION=		2
+REVISION=		3
 DISTNAME=		Cheetah-${VERSION}
 PKGNAME=		py-cheetah-${VERSION}
 CATEGORIES=		devel textproc

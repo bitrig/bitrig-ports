@@ -5,10 +5,9 @@ COMMENT =	challenging 2D motocross platform game
 V =	 	0.5.10
 DISTNAME =	xmoto-${V}-src
 PKGNAME =	xmoto-${V}
-REVISION = 	0
+REVISION = 	1
 CATEGORIES =	games
 
-MAINTAINER =	Antti Harri <iku@openbsd.fi>
 HOMEPAGE =	http://xmoto.tuxfamily.org/
 
 MASTER_SITES =	http://download.tuxfamily.org/xmoto/xmoto/${V}/

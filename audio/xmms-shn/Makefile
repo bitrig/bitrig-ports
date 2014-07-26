@@ -5,11 +5,9 @@ SHARED_ONLY=	Yes
 COMMENT=	XMMS input plugin for playing shorten files
 
 DISTNAME=	xmms-shn-2.4.1
-REVISION=	5
+REVISION=	6
 CATEGORIES=	audio
 HOMEPAGE=	http://www.etree.org/shnutils/xmms-shn/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

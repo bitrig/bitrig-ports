@@ -3,10 +3,8 @@
 COMMENT=	class for generating HTML form select elements for PHP
 
 DISTNAME=	HTML_Select-1.2.1
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 MODULES=	www/pear
 

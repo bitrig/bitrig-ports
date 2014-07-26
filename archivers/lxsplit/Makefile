@@ -4,6 +4,7 @@ COMMENT=	file joiner/splitter
 DISTNAME=	lxsplit-0.2.4
 # cranked due to old version being 1.0pre
 PKGNAME=	lxsplit-1.0.2.4
+REVISION=	0
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lxsplit/}
 

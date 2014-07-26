@@ -9,7 +9,7 @@ DISTFILES+=	slim-${j}-20090407${EXTRACT_SUFX}
 
 DIST_SUBDIR=	slim
 PKGNAME=	slim-themes-1.2.3
-REVISION=	5
+REVISION=	6
 
 PKG_ARCH=	*
 

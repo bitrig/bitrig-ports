@@ -3,12 +3,10 @@
 COMMENT=		minimalistic Boolean satisfiability solver
 
 DISTNAME=		minisat-2.2.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		math
 
 HOMEPAGE=		http://minisat.se/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

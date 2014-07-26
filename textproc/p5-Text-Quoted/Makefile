@@ -4,6 +4,7 @@ COMMENT=		extract the structure of a quoted mail message
 
 MODULES=		cpan
 DISTNAME=		Text-Quoted-2.08
+REVISION=		0
 CATEGORIES=		textproc
 
 # perl

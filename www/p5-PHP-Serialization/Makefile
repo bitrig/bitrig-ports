@@ -4,7 +4,7 @@ COMMENT=	simple means to move data between Perl and PHP
 
 MODULES=	cpan
 DISTNAME=	PHP-Serialization-0.33
-REVISION=	0
+REVISION=	1
 CATEGORIES=     www
 USE_GROFF =	Yes
 

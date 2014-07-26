@@ -5,12 +5,10 @@ COMMENT=		Ruby Development Tools for Eclipse IDE
 V=			0.8.0
 DISTNAME=		org.rubypeople.rdt-0.8.0.604272100PRD
 PKGNAME=		eclipse-plugin-rdt-${V}
-REVISION=		4
+REVISION=		5
 CATEGORIES+=		lang/ruby
 
 HOMEPAGE=		http://rubyeclipse.sourceforge.net/
-
-MAINTAINER=		Carlos Valiente <yo@virutass.net>
 
 # Common Public License Version 1.0 (http://www.eclipse.org/legal/cpl-v10.html)
 PERMIT_PACKAGE_CDROM=	commercial distribution defend and indemnify clauses

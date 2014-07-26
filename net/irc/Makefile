@@ -4,14 +4,12 @@ COMMENT=	internet relay chat (irc) server
 
 DISTNAME=       irc2.10.3p1
 PKGNAME=        ${DISTNAME:S/irc/irc-/:S/p/./}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 
 MASTER_SITES=   ftp://ftp.irc.org/irc/server/Old/ \
                 ftp://ftp.ntua.gr/pub/net/irc/server/
 EXTRACT_SUFX=	.tgz
-
-MAINTAINER=	Brian Caswell <bmc@openbsd.org>
 
 # GPLv1+
 PERMIT_PACKAGE_CDROM=	Yes

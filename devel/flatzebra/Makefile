@@ -9,7 +9,7 @@ SHARED_LIBS +=	flatzebra-0.1 2.0	# .2.0
 
 CATEGORIES=	devel games
 
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://sarrazip.com/dev/afternoonstalker.html
 

@@ -2,11 +2,10 @@
 
 COMMENT=		command line interface to X selections
 DISTNAME=		xclip-0.11
-REVISION=		0
+REVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xclip/}
 HOMEPAGE=		http://xclip.sourceforge.net/
-MAINTAINER=		Ilya Voronin <ivoronin@ivoronin.pp.ru>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes

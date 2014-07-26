@@ -6,7 +6,7 @@ COMMENT=	lightweight panel written in Python and C for X11
 
 DISTNAME=	PyPanel-2.4
 PKGNAME=	${DISTNAME:L}
-REVISION=	9
+REVISION=	10
 CATEGORIES=	x11
 
 HOMEPAGE=	http://pypanel.sourceforge.net/

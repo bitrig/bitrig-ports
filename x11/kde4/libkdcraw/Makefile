@@ -5,6 +5,7 @@ COMMENT-icons =	icons for libkdcraw
 CATEGORIES =	graphics devel
 DISTNAME =	libkdcraw-${MODKDE4_VERSION}
 PKGNAME-main =	${DISTNAME}
+REVISION =	0
 PKGNAME-icons =	kde4-libkdcraw-icons-${MODKDE4_VERSION}
 PKGSPEC-main =	libkdcraw->=4,<5
 

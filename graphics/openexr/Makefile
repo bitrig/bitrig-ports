@@ -7,10 +7,11 @@ COMMENT-doc=	developer documentation for OpenEXR
 V=		1.6.1
 DISTNAME=	openexr-$V
 PKGNAME-main=	OpenEXR-$V
-REVISION-main = 3
+REVISION-main = 4
 PKGNAME-tools=  OpenEXR-tools-$V
-REVISION-tools =	2
+REVISION-tools =3
 PKGNAME-doc=	OpenEXR-doc-$V
+REVISION-doc =	0
 SHARED_LIBS=	IlmImf               4.0      # .6.0	
 CATEGORIES=	graphics
 

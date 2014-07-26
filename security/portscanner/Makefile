@@ -4,6 +4,7 @@ COMMENT=	simple and easy to use TCP port scanner
 
 DISTNAME=	PortScanner-1.2
 PKGNAME=	${DISTNAME:L}
+REVISION=	0
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_PACKETSTORM:=UNIX/scanners/}
 

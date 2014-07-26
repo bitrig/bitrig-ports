@@ -3,9 +3,8 @@
 COMMENT =		hashed file storage support code for Haskell
 
 DISTNAME =		hashed-storage-0.5.10
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

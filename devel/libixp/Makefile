@@ -3,7 +3,7 @@
 COMMENT=	stand-alone client/server 9P library
 
 DISTNAME=	libixp-0.4
-REVISION =	1
+REVISION =	2
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.suckless.org

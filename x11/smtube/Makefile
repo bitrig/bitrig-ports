@@ -3,7 +3,7 @@
 COMMENT =		browse and download YouTube videos
 
 DISTNAME =		smtube-2.1
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		multimedia x11
 

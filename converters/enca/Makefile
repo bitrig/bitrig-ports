@@ -3,6 +3,7 @@
 COMMENT=	detect character set and encoding of text files
 
 DISTNAME=	enca-1.15
+REVISION=	0
 SHARED_LIBS +=  enca                 0.0      # 5.1
 CATEGORIES=	converters textproc
 

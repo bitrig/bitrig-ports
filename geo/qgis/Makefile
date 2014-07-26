@@ -8,7 +8,7 @@ ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 SHARED_ONLY =	Yes
 
 DISTNAME =	qgis-1.7.4
-REVISION =	1
+REVISION =	2
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	geo x11
 
@@ -22,8 +22,6 @@ HOMEPAGE =	http://www.qgis.org/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 MASTER_SITES =	${HOMEPAGE}/downloads/
 

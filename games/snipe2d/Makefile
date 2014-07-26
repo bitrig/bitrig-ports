@@ -5,13 +5,11 @@ COMMENT =		overhead shooting game
 V = 			1.30
 DISTNAME =		orbital_eunuchs_sniper-${V}
 PKGNAME = 		snipe2d-${V}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		games
 
 HOMEPAGE =		http://icculus.org/oes/
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # zlib-a-like - see COPYING in sources
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,12 +3,11 @@
 V =		3.1.4
 COMMENT =	GTK and VTE based terminal emulator
 DISTNAME =	sakura-${V}
+REVISION =	0
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	x11
 
 HOMEPAGE =	http://www.pleyades.net/david/projects/sakura/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM =		Yes

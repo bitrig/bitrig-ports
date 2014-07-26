@@ -4,6 +4,7 @@ COMMENT=	simple methods to Read/Write .ini style files
 
 MODULES=	cpan
 DISTNAME=	Config-Tiny-2.14
+REVISION=	0
 CATEGORIES=     devel
 
 # perl

@@ -4,11 +4,9 @@ COMMENT=	process multiple HTTP requests in parallel without blocking
 
 MODULES=	cpan
 DISTNAME=	HTTP-Async-0.09
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=  Yes

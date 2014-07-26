@@ -3,15 +3,13 @@
 COMMENT =		commander keen clone
 DISTNAME =		clonekeen-src-84
 PKGNAME =		clonekeen-8.4
-REVISION =		2
+REVISION =		3
 CATEGORIES =		games
 
 WRKDIST = 		${WRKDIR}/keen
 WRKBUILD =		${WRKDIST}/src
 
 HOMEPAGE =		http://clonekeen.sourceforge.net/
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

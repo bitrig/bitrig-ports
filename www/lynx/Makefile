@@ -7,6 +7,7 @@ DISTNAME =	lynx${V}dev.${PL}
 PKGNAME =	lynx-${V}pl${PL}
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	www net
+REVISION =	0
 
 HOMEPAGE =	http://lynx.isc.org/
 MAINTAINER =	Brian Callahan <bcallah@openbsd.org>

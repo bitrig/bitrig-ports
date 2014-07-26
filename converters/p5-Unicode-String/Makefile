@@ -5,11 +5,9 @@ SHARED_ONLY=	Yes
 COMMENT=	modules to handle various Unicode issues
 
 DISTNAME=	Unicode-String-2.09
-REVISION=	4
+REVISION=	5
 CATEGORIES=	converters
 MODULES=	cpan
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

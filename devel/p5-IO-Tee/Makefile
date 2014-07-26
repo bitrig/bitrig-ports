@@ -4,7 +4,7 @@ COMMENT= 	multiplex output to multiple handles
 
 MODULES=	cpan 
 DISTNAME=	IO-Tee-0.64
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

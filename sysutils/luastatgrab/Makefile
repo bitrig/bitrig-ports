@@ -6,7 +6,7 @@ COMMENT=		libstatgrab bindings for Lua
 
 DISTNAME=		lua-statgrab-0.3.0
 PKGNAME=		${DISTNAME:S/-//}
-REVISION=		4
+REVISION=		5
 CATEGORIES=		sysutils devel
 
 HOMEPAGE=		http://luaforge.net/projects/lua-statgrab

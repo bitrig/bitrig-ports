@@ -5,15 +5,13 @@ COMMENT =		object-oriented input system
 V =			1.3
 DISTNAME =		ois-v${V:S/./-/g}
 PKGNAME =		ois-${V}
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS =		OIS	0.0
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://www.wreckedgames.com
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # zlib/libpng
 PERMIT_PACKAGE_CDROM =	Yes

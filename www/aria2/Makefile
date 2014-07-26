@@ -2,11 +2,9 @@
 
 COMMENT =		lightweight multi-protocol & multi-source download utility
 DISTNAME =		aria2-1.18.5
-REVISION =		2
+REVISION =		3
 CATEGORIES =		www
 HOMEPAGE =		http://aria2.sourceforge.net/
-
-MAINTAINER =		Gonzalo L. R. <gonzalo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

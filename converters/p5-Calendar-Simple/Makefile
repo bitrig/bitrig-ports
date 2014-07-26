@@ -3,7 +3,7 @@
 COMMENT= 	simple calendar month
 
 DISTNAME=	Calendar-Simple-1.21
-REVISION=	0
+REVISION=	1
 CATEGORIES=	converters
 MODULES=	cpan
 

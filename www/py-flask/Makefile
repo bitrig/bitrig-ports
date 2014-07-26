@@ -5,6 +5,7 @@ COMMENT = 	microframework based on Werkzeug and Jinja 2
 MODPY_EGG_VERSION =	0.10.1
 DISTNAME =	Flask-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
+REVISION =	0
 
 CATEGORIES =	www devel
 

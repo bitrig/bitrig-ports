@@ -9,12 +9,10 @@ PKGNAME-main=	${DISTNAME}
 PKGNAME-utils=	pear-utils-${VERSION}
 CATEGORIES=	www devel
 
-REVISION=	3
+REVISION=	4
 
 HOMEPAGE=	http://pear.php.net/
 MASTER_SITES=	http://blade2k.humppa.hu/
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -4,7 +4,7 @@ COMMENT =	Xfce4 alternative applications menu panel plugin
 
 XFCE_VERSION =	1.4.0
 XFCE_PLUGIN =	whiskermenu
-REVISION =	0
+REVISION =	1
 
 MASTER_SITES =	http://gottcode.org/xfce4-whiskermenu-plugin/
 DISTNAME =	xfce4-${XFCE_PLUGIN}-plugin-${XFCE_VERSION}-src

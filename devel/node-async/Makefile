@@ -4,9 +4,8 @@ COMMENT =	higher-order functions and common patterns for async code
 
 NPM_VERSION =	0.2.8
 NPM_NAME =	async
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Aaron Bieber <abieber@openbsd.org>
 
 HOMEPAGE =	https://github.com/caolan/async
 

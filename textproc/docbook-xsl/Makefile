@@ -3,7 +3,7 @@
 COMMENT=	docbook XSL modular stylesheet
 
 DISTNAME=	docbook-xsl-1.68.1
-REVISION =	5
+REVISION =	6
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://docbook.sourceforge.net/projects/xsl/

@@ -6,6 +6,7 @@ CATEGORIES=japanese print fonts
 
 DISTNAME=kanjips
 PKGNAME=${DISTNAME}-19900310
+REVISION=0
 
 MASTER_SITES=ftp://ftp.funet.fi/pub/culture/japan/unix/
 MASTER_SITES0=ftp://ftp.funet.fi/pub/culture/japan/fonts/
@@ -17,8 +18,6 @@ EXTRACT_ONLY=kanjips.tar.Z
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c m
-
-MAINTAINER=		Marc Espie <espie@openbsd.org>
 
 MAKE_FLAGS=	CFLAGS='${CFLAGS} -I..'
 ALL_TARGET=	kanjips

@@ -2,6 +2,7 @@
 
 COMMENT =	KDE frontend for remote controls
 DISTNAME =	kremotecontrol-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	libkremotecontrol	50.0 # 1.0
 

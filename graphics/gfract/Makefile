@@ -2,14 +2,12 @@
 
 COMMENT=		fractal program with GTK interface
 DISTNAME=		gfract-0.33
-REVISION=		12
+REVISION=		13
 DISTFILES=		${DISTNAME}.tar.gz \
 			gfract-palettes-0.1.tar.gz
 CATEGORIES=		graphics math
 
 HOMEPAGE=		https://gfract.googlecode.com/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

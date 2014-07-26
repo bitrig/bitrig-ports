@@ -4,7 +4,7 @@ COMMENT =		fractal image generator
 
 DISTNAME =		gnofract4d-${MODPY_EGG_VERSION}
 MODPY_EGG_VERSION =	3.14
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		graphics
 

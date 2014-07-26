@@ -3,12 +3,10 @@
 COMMENT=		tool to monitor interface bandwidth usage
 
 DISTNAME=		ifstat-1.1
-REVISION=		2
+REVISION=		3
 CATEGORIES=		net
 
 HOMEPAGE=		http://gael.roualland.free.fr/ifstat/
-
-MAINTAINER=		Johan Fredin <johan@spelaroll.se>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

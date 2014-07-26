@@ -7,7 +7,7 @@ SHARED_ONLY =		Yes
 COMMENT =		panorama image stitcher
 
 DISTNAME =		hugin-2013.0.0
-REVISION =		0
+REVISION =		1
 EXTRACT_SUFX =		.tar.bz2
 
 # not needed for releases, but makes RCs/betas easier to work with
@@ -28,8 +28,6 @@ SHARED_LIBS +=  hugin_python_interface    0.0
 CATEGORIES =		graphics x11
 
 HOMEPAGE =		http://hugin.sourceforge.net/
-
-MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

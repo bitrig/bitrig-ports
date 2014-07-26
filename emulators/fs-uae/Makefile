@@ -9,10 +9,9 @@ V =			2.4.0
 MODPY_EGG_VERSION =	${V}
 DISTNAME =		fs-uae-$V
 CATEGORIES =		emulators
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://fengestad.no/fs-uae/
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv2, LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

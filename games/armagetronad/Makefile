@@ -4,7 +4,7 @@ COMMENT =		3D light cycle game
 
 DISTNAME =		armagetronad-0.2.8.3.2.src
 PKGNAME =		${DISTNAME:S/.src//}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		games
 

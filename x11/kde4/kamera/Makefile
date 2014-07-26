@@ -2,6 +2,7 @@
 
 COMMENT =	KDE digital camera support
 DISTNAME =	kamera-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  m pthread
 WANTLIB += lib/qt4/Qt3Support lib/qt4/QtDBus lib/qt4/QtGui

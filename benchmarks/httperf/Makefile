@@ -3,11 +3,10 @@
 COMMENT =		web server performance testing tool
 
 DISTNAME =		httperf-0.9.0
+REVISION =		0
 CATEGORIES =		benchmarks www
 
 HOMEPAGE =		http://www.hpl.hp.com/research/linux/httperf/
-
-MAINTAINER =		Scott Vokes <vokes.s@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

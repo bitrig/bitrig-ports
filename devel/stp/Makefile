@@ -5,13 +5,11 @@ COMMENT=	decision procedure for bit-vectors and arrays
 V=		0.1
 DISTNAME=	stp-ver-${V}-11-18-2008
 PKGNAME=	stp-${V}
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	devel
 
 HOMEPAGE=	https://sites.google.com/site/stpfastprover/STP-Fast-Prover
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # MIT license
 PERMIT_PACKAGE_CDROM=	Yes

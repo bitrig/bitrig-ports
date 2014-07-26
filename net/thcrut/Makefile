@@ -3,7 +3,7 @@
 COMMENT=	local network discovery tool
 
 DISTNAME=	thcrut-0.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.thehackerschoice.com/

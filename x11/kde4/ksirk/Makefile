@@ -2,6 +2,7 @@
 
 COMMENT =	strategy game for KDE
 DISTNAME =	ksirk-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	iris_ksirk		51.0  # 4.10
 

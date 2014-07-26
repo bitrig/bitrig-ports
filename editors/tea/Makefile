@@ -3,7 +3,7 @@
 COMMENT=	powerful and simple GTK editor
 
 DISTNAME=	teagtk-17.6.6
-REVISION=	5
+REVISION=	6
 CATEGORIES=	editors x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tea-editor/}
 EXTRACT_SUFX=	.tar.bz2

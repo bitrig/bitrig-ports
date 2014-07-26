@@ -3,13 +3,11 @@
 COMMENT=	Rogue like adventure game
 
 DISTNAME=	wanderer-3.2
-REVISION =	1
+REVISION =	2
 
 CATEGORIES=	games
 
 HOMEPAGE=	http://www.e271.net/~marina/wanderer.html
-
-MAINTAINER=	Marina Brown <marina@surferz.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=   Yes

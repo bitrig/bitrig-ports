@@ -3,7 +3,7 @@
 COMMENT =	generates iCalendar (RFC 2445) calendar files
 
 DISTNAME =	Data-ICal-0.16
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	devel
 

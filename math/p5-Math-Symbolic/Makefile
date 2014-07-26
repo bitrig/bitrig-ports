@@ -2,8 +2,8 @@
 
 COMMENT =	symbolic calculations for Perl
 DISTNAME =	Math-Symbolic-0.606
+REVISION =	0
 CATEGORIES =	math
-MAINTAINER =	Markus Bergkvist <markus.bergkvist@telia.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

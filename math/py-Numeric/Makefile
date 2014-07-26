@@ -7,7 +7,7 @@ COMMENT=	fast array facility to the Python language
 VERSION=	23.1
 DISTNAME=	Numeric-${VERSION}
 PKGNAME=	py-${DISTNAME}
-REVISION =	8
+REVISION =	9
 CATEGORIES=	math
 
 HOMEPAGE=	http://people.csail.mit.edu/jrennie/python/numeric/

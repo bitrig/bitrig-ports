@@ -6,10 +6,8 @@ SHARED_ONLY =	Yes
 
 V =		3.4.7
 DISTNAME =	syslog-ng-$V
-REVISION =	3
+REVISION =	4
 CATEGORIES =	sysutils
-
-MAINTAINER =	Steven Mestdagh <steven@openbsd.org>
 
 HOMEPAGE =	http://www.balabit.com/network-security/syslog-ng/
 

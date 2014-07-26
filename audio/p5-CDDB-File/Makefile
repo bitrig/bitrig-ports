@@ -4,10 +4,8 @@ COMMENT =		parse a CDDB/freedb data file
 
 MODULES =		cpan
 DISTNAME =		CDDB-File-1.05
-REVISION =		0
+REVISION =		1
 CATEGORIES =		audio
-
-MAINTAINER =		Girish Venkatachalam <girish1729@gmail.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

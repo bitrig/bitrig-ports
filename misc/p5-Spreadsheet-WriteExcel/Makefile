@@ -4,7 +4,7 @@ COMMENT=	write a cross-platform Excel binary file
 
 MODULES=	cpan
 DISTNAME=	Spreadsheet-WriteExcel-2.37
-REVISION=	1
+REVISION=	2
 CATEGORIES=	misc
 USE_GROFF =	Yes
 

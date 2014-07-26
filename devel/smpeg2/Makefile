@@ -6,7 +6,7 @@ COMMENT=	MPEG video player library with sound support
 DISTNAME=	smpeg2-2.0.0
 CATEGORIES=	devel graphics
 MASTER_SITES=	http://www.libsdl.org/projects/smpeg/release/
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS=	smpeg2	2.0
 

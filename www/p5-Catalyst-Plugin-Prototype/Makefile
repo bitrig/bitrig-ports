@@ -4,11 +4,9 @@ COMMENT=		catalyst plugin for prototype
 
 MODULES=		cpan
 DISTNAME=		Catalyst-Plugin-Prototype-1.33
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel www
 USE_GROFF =		Yes
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

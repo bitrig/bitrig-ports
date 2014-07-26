@@ -5,13 +5,12 @@ COMMENT=		open-source CFML engine
 V=			4.2.1.000
 EPOCH=			0
 DISTNAME=		railo-$V
+REVISION=		0
 EXTRACT_SUFX=		.war
 
 CATEGORIES=		lang www
 
 HOMEPAGE=		http://www.getrailo.org/
-
-MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

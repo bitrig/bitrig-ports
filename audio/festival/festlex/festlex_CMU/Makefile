@@ -2,6 +2,7 @@
 
 COMMENT=	CMU dictionary in festival form
 DISTNAME=	festlex_CMU
+REVISION=	0
 
 do-install:
 	${INSTALL_DATA_DIR} ${LEX_PRE}/dicts/cmu

@@ -5,11 +5,9 @@ COMMENT=	SixXS automatic IPv6 connectivity client utility
 VERSION=	20070115
 DISTNAME=	aiccu_${VERSION}
 PKGNAME=	aiccu-${VERSION}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 HOMEPAGE=	http://www.sixxs.net/tools/aiccu/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # custom
 PERMIT_PACKAGE_CDROM=	Yes

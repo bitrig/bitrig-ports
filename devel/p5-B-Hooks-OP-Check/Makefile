@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		wrap OP check callbacks
 
 DISTNAME=		B-Hooks-OP-Check-0.19
-REVISION=		1
+REVISION=		2
 
 CATEGORIES=		devel
 

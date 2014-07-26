@@ -4,9 +4,9 @@ COMMENT =	sqlite3 module for TDBC
 
 DISTNAME =	tdbcsqlite3-1.0.0
 PKGNAME =	tdbc-sqlite3-1.0.0
+REVISION =	0
 CATEGORIES =	databases
 HOMEPAGE =	http://tdbc.tcl.tk/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

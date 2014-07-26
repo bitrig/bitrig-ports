@@ -5,11 +5,10 @@ COMMENT=		DNS toolkit for Python
 MODPY_EGG_VERSION=	1.11.1
 DISTNAME=		dnspython-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
+REVISION=		0
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.dnspython.org/
-
-MAINTAINER=		Will Maier <wcmaier@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

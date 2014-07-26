@@ -4,7 +4,7 @@ SHARED_ONLY=	Yes
 COMMENT=	sort perl arrays
 CATEGORIES=	devel
 DISTNAME=	Sort-Key-1.28
-REVISION=	5
+REVISION=	6
 MODULES=	cpan
 USE_GROFF =	Yes
 

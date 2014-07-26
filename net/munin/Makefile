@@ -6,6 +6,7 @@ COMMENT-server =flexible network host monitoring, server
 V =		2.0.21
 DISTNAME =	munin-$V
 PKGNAME-main =	munin-node-$V
+REVISION =	0
 PKGNAME-server =munin-server-$V
 CATEGORIES =	net
 
@@ -15,8 +16,6 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=munin/}
 # Mostly GPLv2.
 # DejaVuSans.ttf and DejaVuSansMono.ttf has a non-restrictive license.
 PERMIT_PACKAGE_CDROM =	Yes
-
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
 MULTI_PACKAGES =	-main -server
 

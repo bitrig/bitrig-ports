@@ -4,6 +4,7 @@ COMMENT=	persistent session data in CGI applications
 
 MODULES=	cpan
 DISTNAME=	CGI-Session-4.48
+REVISION=	0
 CATEGORIES=	www
 
 # Perl

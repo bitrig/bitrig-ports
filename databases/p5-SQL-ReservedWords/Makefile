@@ -4,7 +4,7 @@ COMMENT=	reserved words in SQL and specific databases
 
 MODULES=	cpan
 DISTNAME=	SQL-ReservedWords-0.7
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
 USE_GROFF =	Yes
 

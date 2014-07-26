@@ -6,7 +6,7 @@ COMMENT=	Python interface to the Sybase relational database system
 
 DISTNAME=	sybase-0.36
 PKGNAME=	py-${DISTNAME}
-REVISION =	8
+REVISION =	9
 CATEGORIES=	databases
 
 HOMEPAGE=	http://www.object-craft.com.au/projects/sybase/

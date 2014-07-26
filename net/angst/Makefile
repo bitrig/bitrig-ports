@@ -3,7 +3,7 @@
 COMMENT=	active packet sniffer
 
 DISTNAME=	angst-0.4b
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 
 HOMEPAGE=	http://angst.sourceforge.net/

@@ -2,13 +2,11 @@
 
 COMMENT=	top-like X server resources usage display tool
 DISTNAME=	xrestop-0.4
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/xrestop
-
-MAINTAINER=	Matthieu Herrb <matthieu@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

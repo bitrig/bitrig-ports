@@ -3,7 +3,7 @@ COMMENT=	URI objects for Rose
 
 MODULES=	cpan
 DISTNAME=	Rose-URI-0.50
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 RUN_DEPENDS=	www/p5-URI \

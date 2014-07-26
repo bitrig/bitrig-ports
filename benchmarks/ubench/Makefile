@@ -4,7 +4,7 @@ COMMENT=	Unix benchmark utility
 
 DISTNAME=	ubench-0.32
 CATEGORIES=	benchmarks
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.phystech.com/download/ubench.html
 MASTER_SITES=	http://www.phystech.com/ftp/

@@ -4,7 +4,7 @@ COMMENT=	convert Intel assembly language (nasm) to AT&T syntax (gas)
 
 VERSION=	1.3.3
 DISTNAME=	intel2gas-${VERSION}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	lang
 
 HOMEPAGE=	http://www.niksula.cs.hut.fi/~mtiihone/intel2gas/

@@ -4,7 +4,7 @@ COMMENT=	image viewer for KDE
 
 DISTNAME=	gwenview-1.4.2
 PKGSPEC=	gwenview-<4
-REVISION =	18
+REVISION =	19
 
 SHARED_LIBS +=	gwenviewcore         5.0      # .1.0
 CATEGORIES=	graphics x11 x11/kde

@@ -3,15 +3,13 @@
 COMMENT =	spelling, stemming, morphological analysis and generation
 
 DISTNAME =	hunspell-1.3.2
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS =	hunspell-1.3 	0.0 #	.0.0
 
 CATEGORIES =	textproc
 
 HOMEPAGE =	http://hunspell.sourceforge.net/
-
-MAINTAINER =	Edd Barrett <edd@openbsd.org>
 
 # GPL/LGPL/MPL
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,12 +3,10 @@
 COMMENT=	display technical and tag data for video and audio files
 
 VERSION=	0.7.69
-REVISION=	0
+REVISION=	1
 PKGNAME=	mediainfo-${VERSION}
 CATEGORIES=	multimedia
 HOMEPAGE=	http://mediainfo.sourceforge.net/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # BSD-style
 PERMIT_PACKAGE_CDROM=	Yes

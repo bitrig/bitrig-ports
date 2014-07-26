@@ -3,7 +3,7 @@
 COMMENT=	command line arbitrary packet builder
 
 DISTNAME=	nemesis-1.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nemesis/}
 

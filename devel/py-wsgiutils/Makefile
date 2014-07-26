@@ -5,13 +5,11 @@ COMMENT =		libraries for WSGI development
 MODPY_EGG_VERSION =	0.7
 DISTNAME =		WSGIUtils-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME:L}
-REVISION =		4
+REVISION =		5
 
 CATEGORIES =		devel textproc www
 
 HOMEPAGE =		http://www.owlfish.com/software/wsgiutils/
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

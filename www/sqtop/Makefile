@@ -4,10 +4,8 @@ COMMENT=		top-like monitor for Squid
 
 DISTNAME=		sqtop-2011-11-01
 PKGNAME=		sqtop-2011.11.01
-REVISION=		2
+REVISION=		3
 CATEGORIES=		www
-
-MAINTAINER=		Gonzalo L. R. <gonzalo@openbsd.org>
 
 HOMEPAGE=		https://code.google.com/p/sqtop/
 EXTRACT_SUFX=		.tar.bz2

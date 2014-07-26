@@ -6,6 +6,7 @@ COMMENT-gui=	PuTTY GUI clients
 V=		0.63
 DISTNAME=	putty-$V
 PKGNAME-main=	${DISTNAME}
+REVISION=	0
 PKGNAME-gui=	${DISTNAME:S/putty/putty-gui/}
 CATEGORIES=	net security
 

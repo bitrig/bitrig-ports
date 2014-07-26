@@ -4,7 +4,7 @@ COMMENT =	library for verifying and serving OpenID identities
 
 DISTNAME = ruby-${PKGNAME}
 PKGNAME = yadis-0.3.4
-REVISION = 7
+REVISION = 8
 CATEGORIES = security
 
 # Apache License

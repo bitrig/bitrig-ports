@@ -4,9 +4,7 @@ SHARED_ONLY =	Yes
 COMMENT =	Java web browser plugin
 DISTNAME =	icedtea-web-1.4.2
 CATEGORIES =	www
-REVISION =	0
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
+REVISION =	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

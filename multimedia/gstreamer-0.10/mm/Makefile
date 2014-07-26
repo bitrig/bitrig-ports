@@ -6,7 +6,7 @@ V=		0.10.11
 NAME=		gstreamermm
 DISTNAME=	${NAME}-${V}
 EXTRACT_SUFX=	.tar.xz
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS +=  gstreamermm_get_plugin_defs-0.10 1.0 # .2.1
 SHARED_LIBS +=  gstreamermm-0.10                 1.0 # .2.1

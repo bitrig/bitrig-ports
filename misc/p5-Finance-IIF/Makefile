@@ -4,10 +4,8 @@ COMMENT=	parse and create IIF files for QuickBooks
 
 MODULES=	cpan
 DISTNAME=	Finance-IIF-0.20.01
-REVISION=	0
+REVISION=	1
 CATEGORIES=	misc
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,7 +5,7 @@ COMMENT=		Ruby interface to ncurses
 VERSION=		1.2.1
 DISTNAME=		ncurses-ruby-${VERSION}
 PKGNAME=		ncurses-${VERSION}
-REVISION =		3
+REVISION =		4
 CATEGORIES=		devel
 
 HOMEPAGE=		https://github.com/eclubb/ncurses-ruby

@@ -2,11 +2,10 @@
 
 COMMENT=	tiny download accelerator
 DISTNAME=	axel-2.4
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE=	http://axel.alioth.debian.org/
-
-MAINTAINER=	Girish Venkatachalam <girish1729@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

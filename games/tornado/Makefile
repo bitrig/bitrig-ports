@@ -2,6 +2,7 @@
 
 COMMENT=	Ouranos (Weather War) clone; multiplayer
 DISTNAME=	tornado-1.4
+REVISION=	0
 CATEGORIES=	games
 MASTER_SITES=	${HOMEPAGE}download/
 

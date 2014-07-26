@@ -3,13 +3,11 @@
 COMMENT=	colorize specific patterns in input
 
 DISTNAME=	supercat-0.5.5
-REVISION =	0
+REVISION =	1
 CATEGORIES=	misc
 
 HOMEPAGE=	http://supercat.nosredna.net/
 MASTER_SITES=	${HOMEPAGE}
-
-MAINTAINER=	Girish Venkatachalam <girish1729@gmail.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

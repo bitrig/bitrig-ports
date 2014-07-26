@@ -4,7 +4,7 @@ COMMENT =	encode/decode Adobe's binary-to-text
 
 DISTNAME =	Ascii85-0.9.0
 PKGNAME =	${DISTNAME:L}
-REVISION =	6
+REVISION =	7
 CATEGORIES =	textproc
 
 # mit

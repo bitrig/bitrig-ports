@@ -7,11 +7,9 @@ COMMENT=	XMMS visualization plugin, to display Kjofol skins
 VERSION=	0.95
 DISTNAME=	kint_xmms-${VERSION}
 PKGNAME=	xmms-kj-${VERSION}
-REVISION =	3
+REVISION =	4
 CATEGORIES=	graphics
 HOMEPAGE=	http://www.csse.monash.edu.au/~timf/
-
-MAINTAINER=	Wilbern Cobb <wcobb@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

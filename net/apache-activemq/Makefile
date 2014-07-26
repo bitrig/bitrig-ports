@@ -6,12 +6,11 @@ COMMENT=	open source message broker implementing JMS 1.1
 
 V=		5.9.1
 DISTNAME=	apache-activemq-$V
+REVISION=	0
 
 CATEGORIES=	net
 
 HOMEPAGE=	https://activemq.apache.org/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Apache2
 PERMIT_PACKAGE_CDROM=	Yes

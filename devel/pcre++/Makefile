@@ -4,15 +4,13 @@ COMMENT=		wrapper class around the pcre library
 
 DISTNAME=		pcre++-0.9.5
 PKGNAME=		${DISTNAME}
-REVISION =		1
+REVISION =		2
 SHARED_LIBS=		pcre++ 1.0
 
 CATEGORIES=		devel
 HOMEPAGE=		http://www.daemon.de/PCRE
 
 MASTER_SITES=		ftp://ftp.daemon.de/scip/Apps/pcre++/
-
-MAINTAINER=		Tomasz Bak <openbsdpl@wp.pl>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes

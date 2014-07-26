@@ -2,7 +2,7 @@
 
 COMMENT =	Moovida media center - good plugins
 DISTNAME =	moovida-plugins-good-${VERSION}
-REVISION =	11
+REVISION =	12
 
 BUILD_DEPENDS +=	multimedia/moovida/core
 

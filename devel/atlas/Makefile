@@ -5,7 +5,7 @@ COMMENT=	C++ reference implementation of the Atlas protocol
 VERSION=	0.4.3.1
 DISTNAME=	Atlas-C++-${VERSION}
 PKGNAME=	${DISTNAME:S/C++-//:L}
-REVISION=	4
+REVISION=	5
 SHARED_LIBS +=	Atlas                2.0      # .1.1
 SHARED_LIBS +=	AtlasObjects         2.0      # .1.1
 SHARED_LIBS +=	AtlasObjectsEntity   2.0      # .1.1
@@ -15,8 +15,6 @@ SHARED_LIBS +=	AtlasCodecs          2.0      # .1.1
 SHARED_LIBS +=	AtlasNet             2.0      # .1.1
 SHARED_LIBS +=	AtlasFunky           2.0      # .1.1
 CATEGORIES=	devel
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

@@ -4,11 +4,10 @@ COMMENT =	emulates numerous game consoles
 
 V =		0.9.35.1
 DISTNAME =	mednafen-${V}
+REVISION =	0
 
 CATEGORIES =	emulators games
 HOMEPAGE =	http://mednafen.sourceforge.net/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

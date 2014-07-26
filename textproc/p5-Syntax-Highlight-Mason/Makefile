@@ -4,7 +4,7 @@ COMMENT=	syntax highlight for Mason
 
 MODULES=	cpan
 DISTNAME=	Syntax-Highlight-Mason-1.21
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc www
 EXTRACT_SUFX=	.tgz
 USE_GROFF =	Yes

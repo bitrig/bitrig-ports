@@ -5,14 +5,12 @@ COMMENT =		complete, colourful suite of squared icons
 V =			1.3
 DISTNAME =		faenza-icon-theme_${V}
 PKGNAME =		faenza-icon-theme-${V}
-REVISION =		1
+REVISION =		2
 CATEGORIES =		x11
 
 HOMEPAGE =		http://tiheum.deviantart.com/art/Faenza-Icons-173323228
 MASTER_SITES =		https://faenza-icon-theme.googlecode.com/files/
 EXTRACT_SUFX =		.zip
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

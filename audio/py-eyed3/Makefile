@@ -3,7 +3,7 @@
 COMMENT=		module and program for processing ID3 tags
 
 DISTNAME=		eyeD3-0.6.14
-REVISION =		4
+REVISION =		5
 CATEGORIES=		audio
 
 HOMEPAGE=		http://eyed3.nicfit.net/

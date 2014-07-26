@@ -3,7 +3,7 @@
 COMMENT=	USB developer utilities
 
 DISTNAME=	usbutil-0.5
-REVISION=	0
+REVISION=	1
 CATEGORIES=	sysutils
 
 MASTER_SITES=	ftp://ftp.augustsson.net/pub/netbsd/

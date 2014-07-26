@@ -3,15 +3,13 @@
 SHARED_ONLY=	Yes
 
 COMMENT=	clamd-based virus scanner for c-icap
-REVISION=	1
+REVISION=	2
 
 DISTNAME=	squidclamav-6.11
 
 CATEGORIES=	www
 
 HOMEPAGE=	http://squidclamav.darold.net/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

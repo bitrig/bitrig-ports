@@ -3,7 +3,7 @@
 COMMENT=		manifulate the Penn Treebank format
 
 DISTNAME=		Lingua-Treebank-0.16
-REVISION=		0
+REVISION=		1
 CATEGORIES=		textproc
 
 # perl

@@ -3,6 +3,7 @@
 COMMENT=		dhcp daemon ping program
 
 VERSION=		1.2
+REVISION=		0
 DISTNAME=		dhcping-${VERSION}
 CATEGORIES=		net
 

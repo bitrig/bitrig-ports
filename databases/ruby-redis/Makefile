@@ -3,13 +3,12 @@
 COMMENT =	client library for the Redis key-value store
 
 VERSION =	3.1.0
+REVISION =	0
 EPOCH =		0
 DISTNAME =	redis-${VERSION}
 CATEGORIES =	databases
 
 HOMEPAGE =	http://redis-rb.keyvalue.org/
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

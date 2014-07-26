@@ -4,12 +4,11 @@ COMMENT=	secure concurrent multi-server terminal control
 
 DISTNAME=	App-ClusterSSH-4.02_03
 PKGNAME=	clusterssh-4.02.03
+REVISION=	0
 
 CATEGORIES=	security
 
 HOMEPAGE=	http://clusterssh.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

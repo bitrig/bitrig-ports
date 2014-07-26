@@ -5,7 +5,7 @@ COMMENT=	text console audio player with an interactive interface
 DISTNAME=	mp3blaster-3.2.5
 CATEGORIES=	audio
 HOMEPAGE=	http://mp3blaster.sourceforge.net/
-REVISION=	0
+REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	multi-purpose sniffer/interceptor/logger
 
 DISTNAME=	ettercap-0.7.5.3
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ettercap/}
 

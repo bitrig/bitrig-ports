@@ -2,6 +2,7 @@
 
 COMMENT =	system log files viewer for KDE
 DISTNAME =	ksystemlog-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	sysutils
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdeadmin/ksystemlog

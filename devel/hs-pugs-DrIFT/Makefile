@@ -3,6 +3,7 @@
 COMMENT =		DrIFT with pugs-specific rules
 
 DISTNAME =		pugs-DrIFT-2.2.3.20130611
+REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =		http://pugscode.org/
 

@@ -5,7 +5,7 @@ COMMENT=	SDL cross-platform networking library
 V=		1.2.8
 DISTNAME=	SDL_net-${V}
 PKGNAME=	sdl-net-${V}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel net
 MASTER_SITES=	ftp://ftp.fr.freebsd.org/pub/FreeBSD/distfiles/ \
 		http://www.libsdl.org/projects/SDL_net/release/

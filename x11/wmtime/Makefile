@@ -3,10 +3,8 @@
 COMMENT=	time/date applet for WindowMaker
 
 DISTNAME=	wmtime-1.0b2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11 x11/windowmaker
-
-MAINTAINER=	Arthur H. Johnson II <arthur@linuxbox.nu>
 
 # GPL
 PERMIT_PACKAGE_CDROM=   Yes

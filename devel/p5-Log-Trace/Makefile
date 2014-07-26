@@ -4,11 +4,9 @@ COMMENT =	provides a unified approach to tracing
 
 MODULES =	cpan
 DISTNAME =	Log-Trace-1.070
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

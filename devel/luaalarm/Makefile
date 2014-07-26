@@ -6,7 +6,7 @@ SHARED_ONLY=	Yes
 DISTNAME=	lalarm
 DATE=		20061011
 PKGNAME=	luaalarm-${DATE}
-REVISION =	3
+REVISION =	4
 # don't use PKGNAME
 DIST_SUBDIR=	luaalarm-${DATE}
 WRKDIST=	${WRKDIR}/alarm

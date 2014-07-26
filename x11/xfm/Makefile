@@ -3,7 +3,7 @@
 COMMENT=	X11 File Manager
 
 DISTNAME=	xfm-1.4.3
-REVISION=	5
+REVISION=	6
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.musikwissenschaft.uni-mainz.de/~ag/xfm/

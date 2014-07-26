@@ -4,7 +4,7 @@ COMMENT =	font to view stroke order diagrams for Kanji, Kana and etc
 
 DISTNAME =	KanjiStrokeOrders_v3.000
 PKGNAME =	ja-${DISTNAME:L:S/_v/-ttf-/}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	fonts japanese x11
 
 HOMEPAGE =	https://sites.google.com/site/nihilistorguk/

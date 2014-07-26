@@ -8,7 +8,7 @@ COMMENT =	high-level language for numerical computations
 
 VERSION =	3.0.5
 DISTNAME =	octave-${VERSION}
-REVISION =	14
+REVISION =	15
 CATEGORIES =	math
 
 SHARED_LIBS =	cruft		5.0 \
@@ -16,8 +16,6 @@ SHARED_LIBS =	cruft		5.0 \
 		octinterp	4.0
 
 HOMEPAGE =	https://www.gnu.org/software/octave/
-
-MAINTAINER =	Steven Mestdagh <steven@openbsd.org>
 
 # GPL v3
 PERMIT_PACKAGE_CDROM =	Yes

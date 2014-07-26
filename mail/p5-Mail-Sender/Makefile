@@ -5,6 +5,7 @@ COMMENT=	send mail with attachments through SMTP
 MODULES=	cpan
 
 DISTNAME=	Mail-Sender-0.8.22
+REVISION=	0
 CATEGORIES=	mail
 
 # perl

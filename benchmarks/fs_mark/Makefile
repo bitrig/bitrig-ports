@@ -2,10 +2,9 @@
 
 COMMENT =		test synchronous write workloads
 DISTNAME =		fs_mark-3.3
-REVISION =		0
+REVISION =		1
 CATEGORIES =		benchmarks
 HOMEPAGE =		http://sourceforge.net/projects/fsmark/
-MAINTAINER  =		Tobias Ulmer <tobiasu@tmux.org>
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		c

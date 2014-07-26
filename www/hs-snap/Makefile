@@ -3,11 +3,9 @@
 COMMENT =		Snap project starter and glue code library
 
 DISTNAME =		snap-0.12.0
+REVISION =		0
 CATEGORIES =		www
 HOMEPAGE =		http://snapframework.com/
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>, \
-			Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

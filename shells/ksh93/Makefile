@@ -7,13 +7,11 @@ COMMENT =		AT&T Korn Shell
 V =			2012-08-01
 DISTNAME =		ast-ksh.${V}
 PKGNAME =		ksh93-${V:S/-//g}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		shells
 
 HOMEPAGE =		http://www.kornshell.com/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # EPL
 PERMIT_PACKAGE_CDROM =	commercial distribution defend and indemnify clauses

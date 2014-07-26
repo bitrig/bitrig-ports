@@ -4,11 +4,10 @@ COMMENT=		displays the phase of the moon in ascii
 
 DISTNAME=		phoon_29jun2005
 PKGNAME=		phoon-20050629
+REVISION=		0
 CATEGORIES=		astro
 
 HOMEPAGE=		http://www.acme.com/software/phoon/
-
-MAINTAINER=		Nick Nauwelaerts <nick@nauwelaerts.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

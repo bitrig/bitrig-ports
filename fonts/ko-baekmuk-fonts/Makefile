@@ -5,14 +5,12 @@ COMMENT=	extra Korean fonts
 V=		2.0
 DISTNAME=	baekmuk-${V}
 PKGNAME=	ko-baekmuk-fonts-${V}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	fonts korean x11
 
 MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/FreeBSD/distfiles/ \
 		ftp://ftp.mizi.com/pub/baekmuk/
 HOMEPAGE=	http://www.mizi.co.kr
-
-MAINTAINER=	Jung Lee <moorang@gmail.com>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

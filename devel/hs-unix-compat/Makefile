@@ -3,9 +3,8 @@
 COMMENT =		portable POSIX-compatibility layer
 
 DISTNAME =		unix-compat-0.4.1.1
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD4
 PERMIT_PACKAGE_CDROM =	Yes

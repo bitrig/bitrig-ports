@@ -4,7 +4,7 @@ COMMENT=	banner-ad blocking proxy server
 
 DISTNAME=	ijb20
 PKGNAME=	junkbuster-2.0.2
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
 
 HOMEPAGE=	http://internet.junkbuster.com/

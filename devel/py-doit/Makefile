@@ -4,11 +4,10 @@ COMMENT =	automation tool
 MODPY_EGG_VERSION =	0.25.0
 DISTNAME =	doit-${MODPY_EGG_VERSION}
 PKGNAME =	py-doit-${MODPY_EGG_VERSION}
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://pydoit.org/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

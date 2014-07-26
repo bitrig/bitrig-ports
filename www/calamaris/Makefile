@@ -4,6 +4,7 @@
 COMMENT=		proxy-cache-servers logfiles analizer
 
 DISTNAME=		calamaris-2.59
+REVISION=		0
 CATEGORIES=		www sysutils
 
 HOMEPAGE=		http://cord.de/tools/squid/calamaris/

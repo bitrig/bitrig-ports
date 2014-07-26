@@ -5,7 +5,7 @@ COMMENT=	Triple-DES EDE encryption/decryption
 MODULES=	cpan
 DISTNAME=	Crypt-DES_EDE3-0.01
 PKGNAME=	p5-${DISTNAME:S/_/-/}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	security
 
 # Artistic

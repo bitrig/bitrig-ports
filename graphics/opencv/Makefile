@@ -12,11 +12,11 @@ COMMENT-java =		Java bindings for OpenCV
 V =			2.4.9
 DISTNAME =		opencv-$V
 PKGNAME-main =		${PKGNAME}
+REVISION =		0
 PKGNAME-docs =		opencv-docs-$V
 PKGNAME-java =		opencv-java-$V
 
 HOMEPAGE =		http://www.opencv.org/
-MAINTAINER =		Rafael Sadowski <rafael@sizeofvoid.org>
 
 SHARED_LIBS =		opencv_calib3d			1.0 #1.1
 SHARED_LIBS +=		opencv_contrib			1.0 #1.1

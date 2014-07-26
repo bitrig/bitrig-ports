@@ -5,6 +5,7 @@ COMMENT=	clustering algorithm for graphs
 V=		09-308
 DISTNAME=	mcl-${V}
 PKGNAME=	mcl-${V:S,-,_,}
+REVISION=	0
 CATEGORIES=	math
 
 HOMEPAGE=	http://micans.org/mcl/

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.15 2014/02/08 19:37:29 espie Exp $
 
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 DRUPAL_LANG =		fr
 EXTRACT_ONLY =
 

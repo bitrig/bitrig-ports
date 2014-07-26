@@ -4,7 +4,7 @@ SHARED_ONLY =	Yes
 COMMENT =	Unicode line breaking algorithm
 
 DISTNAME =	Unicode-LineBreak-2011.05
-REVISION =	1
+REVISION =	2
 CATEGORIES =	converters
 MODULES =	cpan
 

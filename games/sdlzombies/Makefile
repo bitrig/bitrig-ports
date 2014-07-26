@@ -4,12 +4,10 @@ COMMENT=	zombies clone
 
 VERSION=	1.0.0
 DISTNAME=	sdlzombies-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES=	games x11
 
 HOMEPAGE=	http://hocwp.free.fr/sdlzombies.html
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 WANTLIB=		SDL X11 Xext c m pthread pthread-stubs usbhid xcb \

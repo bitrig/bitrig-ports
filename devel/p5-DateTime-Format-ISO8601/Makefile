@@ -4,6 +4,7 @@ COMMENT= 	DateTime parser for ISO8601 date formats
 
 MODULES=	cpan 
 DISTNAME=	DateTime-Format-ISO8601-0.07
+REVISION=	0
 CATEGORIES=	devel
 EPOCH =		0
 

@@ -2,6 +2,7 @@
 
 COMMENT =	letter order game for KDE
 DISTNAME =	kanagram-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kanagramengine		51.0
 

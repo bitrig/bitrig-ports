@@ -4,13 +4,12 @@ COMMENT=	easy and universal access to shared and/or personal files
 
 V=		6.0.4
 DISTNAME=	owncloud-${V}
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 
 CATEGORIES=	www
 
 HOMEPAGE=	http://owncloud.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # AGPLv3 (GNU Affero Public License)
 # jQuery: MIT / GPLv3

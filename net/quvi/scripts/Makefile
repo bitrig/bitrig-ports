@@ -6,6 +6,7 @@ COMMENT =	scripts libquvi uses for parsing the media details
 
 V =		0.9.20131130
 DISTNAME =	libquvi-scripts-${V}
+REVISION =	0
 SUBST_VARS +=	V
 
 MODULES =	lang/lua

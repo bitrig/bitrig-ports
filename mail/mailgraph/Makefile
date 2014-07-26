@@ -3,15 +3,13 @@
 COMMENT=	RRDtool frontend for Postfix statistics
 
 DISTNAME=	mailgraph-1.14
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net mail
 
 MASTER_SITES=	${HOMEPAGE}/pub/ \
 		${HOMEPAGE}/pub/old/
 
 HOMEPAGE=	http://mailgraph.schweikert.ch
-
-MAINTAINER=     Stuart Henderson <sthen@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

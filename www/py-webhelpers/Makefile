@@ -5,6 +5,7 @@ COMMENT =	helper functions focused on web applications
 MODPY_EGG_VERSION = 1.3
 DISTNAME =	WebHelpers-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
+REVISION =	0
 
 CATEGORIES =	www devel
 

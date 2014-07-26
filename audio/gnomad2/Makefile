@@ -3,7 +3,7 @@
 COMMENT=		GTK+ tool for managing Creative and Dell audio players
 
 DISTNAME=		gnomad2-2.9.0
-REVISION=		9
+REVISION=		10
 CATEGORIES=		audio
 
 HOMEPAGE=		http://gnomad2.sourceforge.net/

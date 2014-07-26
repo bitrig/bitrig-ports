@@ -3,9 +3,7 @@
 FW_DRIVER=	upgt
 FW_VER=		1.1
 DISTNAME=	upgt-firmware-${FW_VER}
-REVISION=	3
-
-MAINTAINER=	Marcus Glocker <mglocker@openbsd.org>
+REVISION=	4
 
 HOMEPAGE=	http://www.nazgul.ch/upgt/
 

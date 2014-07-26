@@ -7,7 +7,7 @@ COMMENT=		Python API for flowd binary log files
 MODPY_EGG_VERSION=	0.9.1
 DISTNAME=		flowd-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION =		4
+REVISION =		5
 CATEGORIES=		net devel
 
 HOMEPAGE=		http://www.mindrot.org/flowd.html

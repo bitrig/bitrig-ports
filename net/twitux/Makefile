@@ -4,7 +4,7 @@ COMMENT=		Gtk-based GUI client for Twitter
 
 GNOME_PROJECT=		twitux
 GNOME_VERSION=		0.69
-REVISION=		10
+REVISION=		11
 EPOCH=			0
 
 CATEGORIES=     	net

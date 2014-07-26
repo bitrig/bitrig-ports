@@ -9,10 +9,8 @@ COMMENT=		maths, science and engineering modules for Python
 MODPY_EGG_VERSION=	0.10.0
 DISTNAME=		scipy-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION=		0
+REVISION=		1
 CATEGORIES=		math devel
-
-MAINTAINER=		Eric Faurot <eric@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

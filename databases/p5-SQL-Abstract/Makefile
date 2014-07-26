@@ -4,9 +4,8 @@ COMMENT =	generate SQL from Perl data structures
 
 MODULES =	cpan
 DISTNAME =	SQL-Abstract-1.78
+REVISION =	0
 CATEGORIES =	databases
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

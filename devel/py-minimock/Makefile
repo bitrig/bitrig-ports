@@ -5,6 +5,7 @@ COMMENT=		the simplest possible mock library, for Python
 MODPY_EGG_VERSION =	1.2.8
 DISTNAME=		MiniMock-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME:L}
+REVISION=		0
 
 CATEGORIES=		devel
 

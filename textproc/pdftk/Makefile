@@ -3,12 +3,10 @@
 BROKEN-sparc64=	gcj blows during build
 COMMENT=	pdf swiss army knife
 VERSION=	2.02
-REVISION=	0
+REVISION=	1
 DISTNAME=	pdftk-$(VERSION)
 EXTRACT_SUFX=	-src.zip
 CATEGORIES=	textproc
-
-MAINTAINER=	Christopher Zimmermann <madroach@zakweb.de>
 
 # GPLv2+ (main program), see ${WRKDIST}/license_gpl_pdftk/ for libraries
 PERMIT_PACKAGE_CDROM=	Yes

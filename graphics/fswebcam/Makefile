@@ -3,13 +3,11 @@
 COMMENT=		fswebcam is a small and simple webcam app
 
 DISTNAME=		fswebcam-20110717
-REVISION=		0
+REVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		http://www.firestorm.cx/fswebcam/files/
 
 HOMEPAGE=		http://www.firestorm.cx/fswebcam/
-
-MAINTAINER=		Marcus Glocker <marcus@nazgul.ch>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

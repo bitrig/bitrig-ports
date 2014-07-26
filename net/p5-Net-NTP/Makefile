@@ -3,9 +3,8 @@
 COMMENT =	Perl extension for decoding NTP server responses
 
 DISTNAME =	Net-NTP-1.3
+REVISION =	0
 CATEGORIES =	net
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

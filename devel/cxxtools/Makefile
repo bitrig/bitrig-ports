@@ -3,7 +3,7 @@
 COMMENT=		various reusable C++-components
 
 DISTNAME=		cxxtools-1.4.7
-REVISION=		3
+REVISION=		4
 SHARED_LIBS +=	cxxtools             2.0      # .5.0
 CATEGORIES=		devel
 

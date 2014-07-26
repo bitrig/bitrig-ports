@@ -3,7 +3,7 @@
 COMMENT =	accessing DVD files
 
 DISTNAME =	libdvdread-4.2.0
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel
 MASTER_SITES =	${HOMEPAGE}releases/
 EXTRACT_SUFX =	.tar.bz2
@@ -11,8 +11,6 @@ EXTRACT_SUFX =	.tar.bz2
 SHARED_LIBS +=	dvdread		5.1
 
 HOMEPAGE =	http://dvdnav.mplayerhq.hu/
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

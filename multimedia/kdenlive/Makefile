@@ -2,11 +2,11 @@
 
 COMMENT =		non-linear video editor for KDE
 VERSION =		0.9.8
+REVISION =		0
 DISTNAME =		kdenlive-${VERSION}
 CATEGORIES =		multimedia
 
 HOMEPAGE =		http://www.kdenlive.org/
-MAINTAINER =		KDE porting team <openbsd-kde@googlegroups.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

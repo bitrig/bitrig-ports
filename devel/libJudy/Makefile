@@ -5,6 +5,7 @@ COMMENT=		general purpose dynamic array
 DISTNAME=		Judy-1.0.5
 WRKDIST=		${WRKDIR}/${DISTNAME:L}
 PKGNAME=		lib${DISTNAME}
+REVISION=		0
 CATEGORIES=		devel
 
 SHARED_LIBS +=	Judy                 1.4      # .1.4

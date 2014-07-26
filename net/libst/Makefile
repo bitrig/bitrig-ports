@@ -7,12 +7,11 @@ COMMENT =		threaded library for writing Internet applications
 
 DISTNAME =		st-1.9
 PKGNAME =		lib${DISTNAME}
+REVISION =		0
 SHARED_LIBS =		st	2.0
 CATEGORIES =		net devel
 
 HOMEPAGE =		http://state-threads.sourceforge.net/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # MPLv1.1 or GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

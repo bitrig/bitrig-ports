@@ -4,6 +4,6 @@ COMMENT =	light-weight, customizable lightbox plugin
 
 DISTNAME = 	colorbox-7.x-1.3
 PKGNAME =	drupal7-colorbox-1.3
-REVISION =	0
+REVISION =	1
 
 .include <bsd.port.mk>

@@ -4,13 +4,11 @@ COMMENT=		C C++ API for memcached
 
 VERSION=		0.48
 DISTNAME=		libmemcached-${VERSION}
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel misc
 
 HOMEPAGE=		http://libmemcached.org/
 MASTER_SITES=		http://launchpad.net/libmemcached/1.0/${VERSION}/+download/
-
-MAINTAINER=		Sebastian Reitenbach <sebastia@openbsd.org>
 
 SHARED_LIBS +=  memcached                 0.0 # 0.0
 SHARED_LIBS +=  hashkit                   0.0 # 0.0

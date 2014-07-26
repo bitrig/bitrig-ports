@@ -3,6 +3,7 @@
 COMMENT =		integrate blaze-builder and enumerator
 
 DISTNAME =		blaze-builder-enumerator-0.2.0.5
+REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/meiersi/blaze-builder-enumerator
 

@@ -4,10 +4,8 @@ COMMENT=	is a particular year a leap year
 
 MODULES=	cpan
 DISTNAME=	Date-Leapyear-1.72
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

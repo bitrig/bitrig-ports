@@ -5,11 +5,10 @@ COMMENT=	YAML parser and emitter in Python
 MODPY_EGG_VERSION=3.10
 DISTNAME=	PyYAML-${MODPY_EGG_VERSION}
 PKGNAME=	py-yaml-${MODPY_EGG_VERSION}
+REVISION=	0
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://pyyaml.org/wiki/PyYAML
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

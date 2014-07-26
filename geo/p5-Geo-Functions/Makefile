@@ -3,7 +3,7 @@
 COMMENT=	perl module for geographic functions
 MODULES=	cpan
 DISTNAME=	Geo-Functions-0.07
-REVISION=	0
+REVISION=	1
 CATEGORIES=	geo
 
 # Perl

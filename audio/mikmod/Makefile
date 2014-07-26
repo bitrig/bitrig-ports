@@ -3,11 +3,9 @@
 COMMENT =	module audio player
 DISTNAME =	mikmod-3.2.2
 CATEGORIES =	audio
-REVISION =	2
+REVISION =	3
 
 HOMEPAGE=	http://mikmod.sourceforge.net/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

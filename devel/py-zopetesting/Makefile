@@ -6,12 +6,10 @@ MODPY_EGG_VERSION=	3.7.4
 
 DISTNAME=	zope.testing-${MODPY_EGG_VERSION}
 PKGNAME=	py-zopetesting-${MODPY_EGG_VERSION}
-REVISION =	2
+REVISION =	3
 CATEGORIES=	devel
 
 HOMEPAGE=	http://pypi.python.org/pypi/zope.testing
-
-MAINTAINER=	Eric Faurot <eric@openbsd.org>
 
 # Zope Public License
 PERMIT_PACKAGE_CDROM=	Yes

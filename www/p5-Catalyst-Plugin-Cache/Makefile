@@ -4,10 +4,9 @@ COMMENT =	flexible caching support for Catalyst
 
 MODULES =	cpan
 DISTNAME =	Catalyst-Plugin-Cache-0.10
+REVISION =	0
 CATEGORIES =	www
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl/MIT
 PERMIT_PACKAGE_CDROM =		Yes

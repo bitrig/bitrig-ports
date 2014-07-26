@@ -10,7 +10,6 @@ REVISION =	0
 LIB_DEPENDS=	archivers/libarchive
 
 HOMEPAGE=	http://sourceforge.net/apps/trac/elftoolchain/
-MAINTAINER =	Marco Peereboom <marco@bitrig.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -6,7 +6,7 @@ DISTNAME=	liblouis-2.5.4
 
 SHARED_LIBS +=  louis                3.0      # 6.0
 
-REVISION = 0
+REVISION = 1
 
 CATEGORIES=	devel
 

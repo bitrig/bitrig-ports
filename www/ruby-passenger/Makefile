@@ -6,6 +6,7 @@ COMMENT-standalone =	ruby web application server
 PASS_VERSION =		4.0.44
 NGINX_VERSION =		1.4.7
 DISTNAME =		passenger-${PASS_VERSION}
+REVISION =		0
 FULLPKGNAME-main =	${MODRUBY_PKG_PREFIX}-${DISTNAME}
 FULLPKGNAME-standalone = ${MODRUBY_PKG_PREFIX}-passenger-standalone-${PASS_VERSION}.${NGINX_VERSION}
 FULLPKGPATH-main =	${BASE_PKGPATH},-main

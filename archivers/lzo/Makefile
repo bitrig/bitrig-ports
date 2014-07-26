@@ -3,7 +3,7 @@
 COMMENT=	portable speedy lossless data compression library
 
 DISTNAME=	lzo-1.08
-REVISION=	4
+REVISION=	5
 CATEGORIES=	archivers devel
 MASTER_SITES=	${HOMEPAGE}download/LZO-v1/
 SHARED_LIBS +=	lzo                  1.0      # .1.0

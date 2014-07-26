@@ -3,11 +3,10 @@
 COMMENT=	system statistics gathering library
 
 DISTNAME=	libstatgrab-0.17
+REVISION=	0
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://www.i-scream.org/libstatgrab/
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 SHARED_LIBS +=  statgrab             0.0      # 8.3
 

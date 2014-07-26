@@ -2,7 +2,7 @@
 
 DISTNAME=	sybperl-2.19
 PKGNAME=	p5-${DISTNAME}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	databases perl5
 
 # perl

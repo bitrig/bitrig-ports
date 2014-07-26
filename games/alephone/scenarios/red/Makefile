@@ -4,6 +4,7 @@ PKG_ARCH =		*
 COMMENT =		dark alternate version of the Marathon universe
 V =			0.0.20090509
 DISTNAME =		marathon-red-${V}
+REVISION =		0
 HOMEPAGE =		http://bighouse.bungie.org/red/
 
 DISTFILES =		MarathonRED.zip:5

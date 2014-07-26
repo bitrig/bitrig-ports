@@ -6,6 +6,7 @@ COMMENT=		tweak hidden GTK/GNOME settings
 
 GNOME_PROJECT=		gnome-tweak-tool
 GNOME_VERSION=		3.12.0
+REVISION=		0
 
 CATEGORIES=		sysutils
 

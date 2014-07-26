@@ -5,6 +5,7 @@ COMMENT =	lexical analyser generator for Haskell
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =	alex-3.0.5
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.haskell.org/alex/

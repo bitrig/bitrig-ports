@@ -3,10 +3,9 @@
 COMMENT=	interactive typing tutor
 
 DISTNAME=	gtypist-2.9.4
+REVISION=	0
 CATEGORIES=	education
 HOMEPAGE=	https://www.gnu.org/software/gtypist/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

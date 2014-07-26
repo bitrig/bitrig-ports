@@ -3,6 +3,7 @@
 COMMENT=	publish DBIx::Class on the web
 
 DISTNAME=	DBIx-Class-HTMLWidget-0.16
+REVISION=	0
 CATEGORIES=	databases www
 MODULES=	cpan
 

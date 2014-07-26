@@ -8,7 +8,7 @@ COMMENT=	fast and lightweight key/value database library
 DISTNAME=	leveldb-1.5.0
 SHARED_LIBS=	leveldb 1.0
 CATEGORIES=	databases
-REVISION=	3
+REVISION=	4
 
 HOMEPAGE=	https://leveldb.googlecode.com/
 

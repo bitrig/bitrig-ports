@@ -4,7 +4,7 @@ COMMENT=	super simple digital timer for X11
 
 DISTNAME=	xtimer-8089
 PKGNAME=	xtimer-0.8089
-REVISION=	4
+REVISION=	5
 CATEGORIES=	misc
 
 MASTER_SITES=	http://www.bsddiary.net/xtimer/

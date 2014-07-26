@@ -3,12 +3,12 @@
 COMMENT =		flickr API library and utility
 
 DISTNAME =		flickcurl-1.25
+REVISION =		0
 
 SHARED_LIBS +=  	flickcurl   1.1      # 0.0
 CATEGORIES =		net
 
 HOMEPAGE =		http://librdf.org/flickcurl/
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # LGPLv2.1/GPLv2/Apachev2.0
 PERMIT_PACKAGE_CDROM =	Yes

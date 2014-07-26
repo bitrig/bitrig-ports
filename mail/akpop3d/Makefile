@@ -3,7 +3,7 @@
 COMMENT=	small and secure POP3 daemon
 
 DISTNAME=	akpop3d-0.7.7
-REVISION =	1
+REVISION =	2
 CATEGORIES=	mail
 HOMEPAGE=	http://www.synflood.at/akpop3d.html
 

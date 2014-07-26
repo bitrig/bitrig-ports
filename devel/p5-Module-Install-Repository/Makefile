@@ -3,6 +3,7 @@
 COMMENT =		set the repository URL from svn/svk/Git checkouts
 
 DISTNAME =		Module-Install-Repository-0.06
+REVISION =		0
 CATEGORIES =		devel
 
 # perl

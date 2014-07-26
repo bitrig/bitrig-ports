@@ -3,9 +3,8 @@
 COMMENT =		access to the Hackage database via Data.Map
 
 DISTNAME =		hackage-db-1.4
+REVISION =		0
 CATEGORIES =		databases
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

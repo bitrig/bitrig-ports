@@ -12,9 +12,9 @@ PKGNAME-main=		gstreamer-plugins-ugly-${V}
 PKGNAME-sidplay=	gstreamer-sidplay-${V}
 PKGNAME-lame=		gstreamer-lame-${V}
 
-REVISION-main=		4
-REVISION-sidplay=	3
-REVISION-lame=		2
+REVISION-main=		5
+REVISION-sidplay=	4
+REVISION-lame=		3
 
 PERMIT_PACKAGE_CDROM=	Patent issues
 

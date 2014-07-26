@@ -3,7 +3,7 @@
 COMMENT=	PDF, PS and EPS viewer for GNUstep
 
 DISTNAME=	GSPdf-0.5
-REVISION =	3
+REVISION =	4
 
 HOMEPAGE=	http://gap.nongnu.org/gspdf/
 MASTER_SITES=	${MASTER_SITE_SAVANNAH:=gap/}

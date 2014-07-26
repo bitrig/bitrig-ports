@@ -3,6 +3,7 @@
 COMMENT=		radius sniffer
 
 DISTNAME=		radiusniff-0.2
+REVISION=		0
 CATEGORIES=     	security
 
 PERMIT_PACKAGE_CDROM=	not specified, vague license

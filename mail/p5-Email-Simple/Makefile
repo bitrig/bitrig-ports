@@ -4,7 +4,7 @@ COMMENT =	simple module for handling email messages
 
 MODULES =	cpan
 DISTNAME =	Email-Simple-2.100
-REVISION =	1
+REVISION =	2
 CATEGORIES =	mail
 USE_GROFF =	Yes
 

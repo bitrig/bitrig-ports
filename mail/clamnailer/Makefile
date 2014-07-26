@@ -4,7 +4,7 @@ COMMENT=	generate ScamNailer spear phishing database in ClamAV format
 
 DISTNAME=	ClamNailer-1.01
 PKGNAME=	${DISTNAME:L}
-REVISION=	1
+REVISION=	2
 EXTRACT_SUFX=	.gz
 
 CATEGORIES=	mail security

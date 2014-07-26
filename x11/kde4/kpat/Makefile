@@ -2,6 +2,7 @@
 
 COMMENT =	solitare games collection for KDE
 DISTNAME =	kpat-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kcardgame	50.0
 

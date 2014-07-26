@@ -3,12 +3,10 @@
 COMMENT=	Gadu-Gadu IM protocol client
 
 DISTNAME=	ekg-1.7
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 HOMEPAGE=	http://ekg.chmurka.net/
-
-MAINTAINER=	Aleksander Piotrowski <alek@openbsd.org>
 
 # GPLv2 - LGPL
 PERMIT_PACKAGE_CDROM=	Yes

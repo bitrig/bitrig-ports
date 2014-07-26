@@ -4,7 +4,7 @@ COMMENT=	use regular expressions as hash keys
 
 MODULES=	cpan
 DISTNAME=	Tie-RegexpHash-0.15
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

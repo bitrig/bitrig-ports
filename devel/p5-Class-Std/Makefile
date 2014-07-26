@@ -4,7 +4,7 @@ COMMENT=		inside-out object scaffolding
 
 MODULES=		cpan
 DISTNAME=		Class-Std-0.0.9
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 USE_GROFF =		Yes
 

@@ -3,10 +3,10 @@
 COMMENT=		manage large numbers of patches
 
 DISTNAME=		quilt-0.61
+REVISION=		0
 CATEGORIES=		devel
 
 HOMEPAGE=		http://savannah.nongnu.org/projects/quilt/
-MAINTAINER=		Kent R. Spillner <kspillner@acm.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

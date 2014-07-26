@@ -8,7 +8,7 @@ DISTNAME=	bzflag-2.4.2
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bzflag/}
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://www.bzflag.org/
 

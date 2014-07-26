@@ -5,6 +5,7 @@ MODPY_EGG_VERSION =	3.2.1
 COMMENT =		library to access Tryton's models like a client
 
 DISTNAME =		proteus-${MODPY_EGG_VERSION}
+REVISION =			0
 
 CATEGORIES =		devel
 

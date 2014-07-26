@@ -5,6 +5,7 @@ COMMENT=	library for parsing and formatting dates and times
 MODULES=	cpan
 DISTNAME=	TimeDate-2.30
 PKGNAME=	p5-Time-${DISTNAME}
+REVISION=	0
 CATEGORIES=	devel
 
 # Artistic

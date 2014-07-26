@@ -5,7 +5,7 @@ COMMENT=	blockout style game for X11
 V=		2.4
 DISTNAME=	xboing${V}
 PKGNAME=	xboing-${V}
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	games
 

@@ -5,13 +5,11 @@ COMMENT =		fork of setuptools Python packages
 MODPY_EGG_VERSION =	0.6.49
 DISTNAME =		distribute-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://packages.python.org/distribute/
-
-MAINTAINER =		Remi Pointel <rpointel@openbsd.org>
 
 # PSFL
 PERMIT_PACKAGE_CDROM =	Yes

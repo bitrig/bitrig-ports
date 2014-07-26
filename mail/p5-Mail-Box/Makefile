@@ -3,6 +3,7 @@
 COMMENT=		perl module to manage mail folders
 
 DISTNAME=		Mail-Box-2.106
+REVISION=		0
 CATEGORIES=		mail
 
 # cpan

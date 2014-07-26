@@ -5,7 +5,7 @@ COMMENT =		decoder, encoder and replaygain for musepack files
 V =			475
 DISTNAME =		musepack_src_r${V}
 PKGNAME =		musepack-${V}
-REVISION =		1
+REVISION =		2
 CATEGORIES =		audio
 
 HOMEPAGE =		http://www.musepack.net/

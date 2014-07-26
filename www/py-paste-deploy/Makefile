@@ -5,6 +5,7 @@ COMMENT =		load, configure, compose WSGI applications and servers
 MODPY_EGG_VERSION =	1.5.0
 DISTNAME =		PasteDeploy-${MODPY_EGG_VERSION}
 PKGNAME =		py-paste-deploy-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		www
 

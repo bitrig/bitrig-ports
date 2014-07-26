@@ -3,7 +3,7 @@
 COMMENT=	color space conversions and named lookups
 
 DISTNAME=	Convert-Color-0.08
-REVISION=	1
+REVISION=	2
 CATEGORIES=	converters
 MODULES=	cpan
 

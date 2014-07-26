@@ -3,7 +3,7 @@
 COMMENT=	perl module to map GPS PRN to Satellite OID and vice versa
 MODULES=	cpan
 DISTNAME=	GPS-PRN-0.05
-REVISION=	0
+REVISION=	1
 CATEGORIES=	geo
 USE_GROFF =	Yes
 

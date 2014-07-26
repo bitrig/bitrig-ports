@@ -4,13 +4,11 @@ COMMENT=	encryption backend
 
 DISTNAME=	libgringotts-1.2.1
 EXTRACT_SUFX= 	.tar.bz2
-REVISION=	3
+REVISION=	4
 
 SHARED_LIBS +=  gringotts            0.0      # 2.7
 
 CATEGORIES=	security
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@raveland.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

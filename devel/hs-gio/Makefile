@@ -3,11 +3,10 @@
 COMMENT =		Haskell bindings to gio
 
 DISTNAME =		gio-0.12.4
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		http://www.haskell.org/gtk2hs/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

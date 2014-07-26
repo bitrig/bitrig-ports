@@ -3,7 +3,7 @@ COMMENT=	handle v-strings (often used as version strings)
 
 MODULES=	cpan
 DISTNAME=	Data-VString-0.000004
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

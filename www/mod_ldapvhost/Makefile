@@ -2,7 +2,7 @@
 
 COMMENT=		Apache LDAP based virtual hosts module
 
-REVISION=		10
+REVISION=		11
 DISTNAME=		mod_ldapvhost-1.0.2
 CATEGORIES=		www
 

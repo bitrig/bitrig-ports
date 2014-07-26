@@ -4,7 +4,7 @@ COMMENT=	Perl-based reverse proxy load balancer and web server
 
 MODULES=	cpan
 DISTNAME=	Perlbal-1.73
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
 

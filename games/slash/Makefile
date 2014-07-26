@@ -4,7 +4,7 @@ COMMENT =	dungeon explorin', hackin' game, but harder than nethack
 
 DISTNAME =	slash-e8
 PKGNAME =	slash-3.2.2.e8
-REVISION =	2
+REVISION =	3
 CATEGORIES =	games
 
 MASTER_SITES =	ftp://ftp.nethack.org/pub/nethack/oldver/3.2.2/src/ \
@@ -17,8 +17,6 @@ MASTER_SITES1 =	http://www.rz.tu-ilmenau.de/~wi019/Slash/
 DISTFILES =	nethack-3.2.2.tar.gz Slash-Unix.tar.gz:1 
 PATCHFILES =	nh-3.2.2-3.2.3.diff:0
 
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 #	GPL
 PERMIT_PACKAGE_CDROM =	Yes

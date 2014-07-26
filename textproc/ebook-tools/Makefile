@@ -3,7 +3,7 @@
 COMMENT =		accessing and converting various ebook file formats
 V =			0.2.1
 DISTNAME =		ebook-tools-${V}
-REVISION =		2
+REVISION =		3
 
 SHARED_LIBS +=		epub		0.0	# 0.2
 

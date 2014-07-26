@@ -6,7 +6,7 @@ COMMENT=	GUI and non-GUI C-sharp code library
 # as it copies the dll from this package and bundle them in its own.
 GNOME_PROJECT=	hyena
 GNOME_VERSION=	0.5
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	devel
 

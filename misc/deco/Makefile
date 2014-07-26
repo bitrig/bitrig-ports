@@ -4,7 +4,7 @@ COMMENT=	Demos Commander, a free Norton Commander clone
 
 DISTNAME=	deco383
 PKGNAME=	deco-3.8.3
-REVISION=	1
+REVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://distfiles.nl/
 EXTRACT_SUFX=	.tgz

@@ -5,10 +5,8 @@ SHARED_ONLY=	Yes
 
 MODULES=	cpan
 DISTNAME=	Unix-Statgrab-0.04
-REVISION=	6
+REVISION=	7
 CATEGORIES=	sysutils
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

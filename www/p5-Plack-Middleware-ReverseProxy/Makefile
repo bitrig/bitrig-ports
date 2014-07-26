@@ -4,6 +4,7 @@ COMMENT =	supports app to run as a reverse proxy backend
 
 MODULES =	cpan
 DISTNAME =	Plack-Middleware-ReverseProxy-0.11
+REVISION =	0
 CATEGORIES =	www
 
 # same as perl

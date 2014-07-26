@@ -4,9 +4,8 @@ COMMENT =	object oriented interface to create salted hashes
 
 MODULES =	cpan
 DISTNAME =	Crypt-SaltedHash-0.06
+REVISION =	0
 CATEGORIES =	security
-
-MAINTAINER =	Jim Razmus II <jim@bonetruck.org>
 
 CPAN_AUTHOR =	ESSKAR
 

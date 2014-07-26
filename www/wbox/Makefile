@@ -4,11 +4,9 @@ COMMENT=		HTTP testing tool
 
 DISTNAME=		wbox-5
 CATEGORIES=		net www
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE=		http://www.hping.org/wbox/
-
-MAINTAINER=		Laurent Fanis <laurent.fanis@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

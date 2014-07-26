@@ -3,15 +3,13 @@
 COMMENT=	object interface infrastructure from Zope 3
 
 MODPY_EGG_VERSION=	3.6.1
-REVISION=	2
+REVISION=	3
 
 DISTNAME=	zope.interface-${MODPY_EGG_VERSION}
 PKGNAME=	py-zopeinterface-${MODPY_EGG_VERSION}
 CATEGORIES=	devel
 
 HOMEPAGE=	http://pypi.python.org/pypi/zope.interface
-
-MAINTAINER=	Eric Faurot <eric@openbsd.org>
 
 # Zope Public License
 PERMIT_PACKAGE_CDROM=	Yes

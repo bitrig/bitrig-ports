@@ -8,7 +8,7 @@ DISTNAME=	mgetty${VERSION}-${RELEASE}
 PKGNAME=	mgetty+sendfax-${VERSION}
 CATEGORIES=	comms
 
-REVISION=	3
+REVISION=	4
 
 HOMEPAGE=	http://mgetty.greenie.net/
 

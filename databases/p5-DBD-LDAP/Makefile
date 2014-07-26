@@ -5,6 +5,7 @@ COMMENT=	DBI driver for LDAP databases
 MODULES=	cpan
 
 DISTNAME=	DBD-LDAP-0.20
+REVISION=	0
 
 CATEGORIES=	databases perl5
 

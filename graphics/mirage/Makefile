@@ -4,7 +4,7 @@ COMMENT =	fast and simple GTK+ image viewer
 
 MODPY_EGG_VERSION = 0.9.5.2
 DISTNAME =	mirage-${MODPY_EGG_VERSION}
-REVISION =	4
+REVISION =	5
 
 CATEGORIES =	graphics
 

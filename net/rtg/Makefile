@@ -5,13 +5,11 @@ SHARED_ONLY =		Yes
 COMMENT =		SNMP statistics monitoring system
 
 DISTNAME =		rtg-0.7.4
-REVISION =		9
+REVISION =		10
 CATEGORIES =		net
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=rtg/}
 
 HOMEPAGE =		http://rtg.sourceforge.net/
-
-MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

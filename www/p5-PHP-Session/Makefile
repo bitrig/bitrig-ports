@@ -4,7 +4,7 @@ COMMENT=	read / write PHP session files
 
 MODULES=	cpan
 DISTNAME=	PHP-Session-0.26
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
 USE_GROFF =	Yes
 

@@ -3,10 +3,9 @@
 COMMENT =		handy web browsing in a Perl object
 
 DISTNAME =		WWW-Mechanize-1.73
+REVISION =		0
 
 CATEGORIES =		www
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

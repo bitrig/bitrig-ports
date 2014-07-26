@@ -3,11 +3,9 @@
 COMMENT=	allow your classes to do coercion of parameters
 
 DISTNAME=	Params-Coerce-0.14
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

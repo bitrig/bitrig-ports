@@ -3,7 +3,7 @@
 COMMENT=	interface to the Audioscrobbler WebService API
 
 DISTNAME=	WebService-Audioscrobbler-0.07
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www audio
 
 MODULES=	cpan

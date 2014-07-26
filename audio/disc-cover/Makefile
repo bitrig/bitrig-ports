@@ -3,6 +3,7 @@
 COMMENT=	creates cover for audio cds using cddb and latex
 
 DISTNAME=	disc-cover-1.5.6
+REVISION=	0
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} webserver-1.0${EXTRACT_SUFX}
 DIST_SUBDIR=	disc-cover
 CATEGORIES=	audio

@@ -3,7 +3,7 @@
 COMMENT=	PostIt (R) messages onto your X11 screen
 
 DISTNAME=	XPostitPlus-2.3
-REVISION=	4
+REVISION=	5
 CATEGORIES=	x11
 
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=office/}

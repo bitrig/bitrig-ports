@@ -6,7 +6,7 @@ COMMENT-daemon =stand-alone daemon/cmdline for amule
 
 V =		2.3.1
 DISTNAME =	aMule-$V
-REVISION =	18
+REVISION =	19
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.amule.org/
@@ -20,7 +20,6 @@ PKGNAME-web =	amuleweb-$V
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=amule/}
 EXTRACT_SUFX =	.tar.xz
 

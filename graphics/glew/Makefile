@@ -3,6 +3,7 @@
 COMMENT=	GL Extension Wrangler library
 
 DISTNAME=	glew-1.10.0
+REVISION=	0
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=glew/}
 EXTRACT_SUFX=	.tgz
@@ -11,8 +12,6 @@ SHARED_LIBS=	GLEW	6.0 \
 		GLEWmx	2.0
 
 HOMEPAGE=	http://glew.sourceforge.net/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

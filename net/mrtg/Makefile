@@ -3,12 +3,10 @@
 COMMENT=	multi-router traffic grapher
 
 DISTNAME=	mrtg-2.17.4
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
 
 HOMEPAGE=	http://oss.oetiker.ch/mrtg/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -2,6 +2,7 @@
 
 COMMENT =	libraries for KDE PIM services
 DISTNAME =	kdepimlibs-${MODKDE4_VERSION}
+REVISION =	0
 
 DPB_PROPERTIES =	parallel
 

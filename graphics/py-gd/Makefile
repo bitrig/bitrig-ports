@@ -11,6 +11,7 @@ GH_TAGNAME=	v${MODPY_EGG_VERSION}
 GH_COMMIT=	b8939e7864501dcf1bb9262d9559d298886b5950
 DISTNAME=	${GH_PROJECT}-${MODPY_EGG_VERSION}
 PKGNAME=	py-${DISTNAME:L:S/module//}
+REVISION=	0
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://newcenturycomputers.net/projects/gdmodule.html

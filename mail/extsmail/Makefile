@@ -3,11 +3,10 @@
 COMMENT =		robust sending of e-mail via external commands
 
 DISTNAME =		extsmail-1.9
+REVISION =		0
 CATEGORIES =		mail
 
 HOMEPAGE =		http://tratt.net/laurie/src/extsmail/
-
-MAINTAINER =		Laurence Tratt <laurie@tratt.net>
 
 # BSD / MIT
 PERMIT_PACKAGE_CDROM =	Yes

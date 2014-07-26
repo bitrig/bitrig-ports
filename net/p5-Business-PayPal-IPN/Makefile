@@ -3,7 +3,7 @@
 COMMENT=	extension that implements PayPal IPN v1.5
 
 DISTNAME=	Business-PayPal-IPN-1.94
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 # perl

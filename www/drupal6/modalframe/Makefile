@@ -4,6 +4,7 @@ COMMENT =	API to render an iframe within a modal dialog
 
 DISTNAME = 	modalframe-6.x-1.9
 PKGNAME =	drupal6-modalframe-1.9
+REVISION =	0
 
 RUN_DEPENDS =   www/drupal6/jquery_ui
 

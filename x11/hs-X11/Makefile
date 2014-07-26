@@ -3,12 +3,11 @@
 COMMENT =		bindings to the X11 graphics library for GHC
 
 DISTNAME =		X11-1.6.1.1
+REVISION =		0
 
 CATEGORIES =		x11 devel
 
 HOMEPAGE =		http://code.haskell.org/X11/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =		Yes

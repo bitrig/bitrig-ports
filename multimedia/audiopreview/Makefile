@@ -3,13 +3,11 @@
 COMMENT =	tool to play previews of audio and video files
 
 DISTNAME =	audiopreview-0.6
-REVISION=	2
+REVISION=	3
 
 CATEGORIES =	multimedia
 
 HOMEPAGE =	http://audiopreview.codealpha.net/audiopreview/
-
-MAINTAINER =	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

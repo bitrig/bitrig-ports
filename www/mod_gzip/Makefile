@@ -2,7 +2,7 @@
 
 COMMENT=	transparently compress Apache output
 
-REVISION=	7
+REVISION=	8
 DISTNAME=	mod_gzip-1.3.26.1a
 CATEGORIES=	www
 

@@ -4,11 +4,9 @@ COMMENT=        automatic Perl XS glue code generation
 
 MODULES=	cpan
 DISTNAME=	ExtUtils-XSBuilder-0.28
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

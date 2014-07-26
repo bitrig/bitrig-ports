@@ -4,11 +4,9 @@ COMMENT=		GUI for managing virtual machines through libvirt
 
 DISTNAME=		virt-manager-1.0.1
 CATEGORIES=		sysutils x11
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://virt-manager.org/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

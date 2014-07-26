@@ -4,6 +4,7 @@ COMMENT =	organise your Moose types in libraries
 
 MODULES =	cpan
 DISTNAME =	MooseX-Types-0.44
+REVISION =	0
 CATEGORIES =	devel
 USE_GROFF =	Yes
 

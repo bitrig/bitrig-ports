@@ -7,7 +7,7 @@ ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 COMMENT =		music studio with tracking, sampling and MIDI
 
 DISTNAME =		lmms-0.4.8
-REVISION =		5
+REVISION =		6
 CATEGORIES =		audio
 
 HOMEPAGE =		http://lmms.sourceforge.net/

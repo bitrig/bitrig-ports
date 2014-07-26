@@ -5,11 +5,11 @@ COMMENT =	HTML/XML parser that supports invalid markup
 MODPY_EGG_VERSION =	4.1.3
 DISTNAME =	beautifulsoup4-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 
 CATEGORIES =   	www
 
 HOMEPAGE =	http://www.crummy.com/software/BeautifulSoup/
-MAINTAINER =	frantisek holop <minusf@obiit.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

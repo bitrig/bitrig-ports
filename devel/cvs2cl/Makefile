@@ -5,6 +5,7 @@ COMMENT=	generate GNU-style ChangeLogs from CVS repositories
 V=		2.62
 DISTNAME=	cvs2cl.pl-${V}
 PKGNAME=	cvs2cl-${V}
+REVISION=	0
 CATEGORIES=     devel
 HOMEPAGE=	http://www.red-bean.com/cvs2cl/
 EXTRACT_SUFX=	.gz

@@ -4,11 +4,9 @@ COMMENT=	module to create Markov chains and output based on them
 
 MODULES=	cpan
 DISTNAME=	Algorithm-MarkovChain-0.06
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

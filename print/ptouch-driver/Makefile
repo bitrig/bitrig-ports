@@ -4,11 +4,9 @@ COMMENT=	Brother P-touch CUPS driver
 
 DISTNAME=	ptouch-driver-1.3
 CATEGORIES=	print
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	http://www.diku.dk/hjemmesider/ansatte/panic/P-touch/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,10 +4,8 @@ COMMENT =		perl module implementing simple file locking
 
 MODULES =		cpan
 DISTNAME =		LockFile-Simple-0.207
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
-
-MAINTAINER =		Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # Perl / GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT-main=	graph drawing software
 
 DISTNAME=	graphviz-2.36.0
-REVISION=	1
+REVISION=	2
 PKGNAME-main=	${DISTNAME}
 CATEGORIES=	math devel graphics
 
@@ -40,8 +40,6 @@ SHARED_LIBS += tclplan			3.0 # unknown
 SHARED_LIBS += tkspline			3.0 # unknown
 
 HOMEPAGE=	http://www.graphviz.org/
-
-MAINTAINER =	Edd Barrett <edd@openbsd.org>
 
 # Eclipse Public License v1.0
 PERMIT_PACKAGE_CDROM=	Yes

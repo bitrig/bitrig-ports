@@ -3,9 +3,8 @@
 COMMENT =		smooth xcursor theme with shadows
 DISTNAME =		28310-neutral-1.13a
 PKGNAME =		xcursor-neutral-1.13
+REVISION =		0
 CATEGORIES =		x11
-
-MAINTAINER =		Lazaros Koromilas <lostd@2f30.org>
 
 # Artistic 2.0
 PERMIT_PACKAGE_CDROM =	Yes

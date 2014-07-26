@@ -3,7 +3,7 @@
 COMMENT=		icons mainly for use in Window Maker
 
 DISTNAME=		wmicons-1.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		graphics x11 x11/windowmaker
 
 # GPL

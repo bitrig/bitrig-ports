@@ -3,7 +3,7 @@
 COMMENT=		visual sound representation
 
 DISTNAME=		synaesthesia-2.1
-REVISION =		2
+REVISION =		3
 CATEGORIES=     	graphics x11
 
 HOMEPAGE=		http://yoyo.cc.monash.edu.au/~pfh/synaesthesia.html

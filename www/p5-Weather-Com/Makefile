@@ -4,11 +4,10 @@ COMMENT=	module to get weather information from weather.com
 
 MODULES=	cpan
 DISTNAME=	Weather-Com-0.5.5
+REVISION=	0
 CATEGORIES=	www
 
 CPAN_AUTHOR=	SCHNUECK
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

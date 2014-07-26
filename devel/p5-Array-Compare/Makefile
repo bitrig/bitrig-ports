@@ -4,6 +4,7 @@ COMMENT=	Perl module for comparing arrays
 
 MODULES=	cpan
 DISTNAME=	Array-Compare-2.02
+REVISION=	0
 CATEGORIES=	devel
 
 # Artistic

@@ -2,7 +2,7 @@
 
 COMMENT =		ruby framework for Behaviour Driven Development
 DISTNAME =		rspec-1.3.2
-REVISION =		3
+REVISION =		4
 SUBST_VARS =            MODRUBY_FLAVOR MODRUBY_PREFIX
 
 HOMEPAGE =		http://old.rspec.info/

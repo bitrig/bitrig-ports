@@ -3,7 +3,7 @@
 COMMENT=	base package for HTML handling in PHP5
 
 DISTNAME=	HTML_Common2-0.1.0
-REVISION=	4
+REVISION=	5
 CATEGORIES=	www devel
 
 MODULES=	www/pear

@@ -3,12 +3,10 @@
 COMMENT=	hacked 9wm, with support for virtual screens
 
 DISTNAME=	w9wm-0.4.2
-REVISION =	3
+REVISION =	4
 CATEGORIES=	plan9
 
 HOMEPAGE=	http://www.grassouille.org/code/w9wm.en.html
-
-MAINTAINER =	William Yodlowsky <william@openbsd.org>
 
 # nonstandard license
 PERMIT_PACKAGE_CDROM =	No

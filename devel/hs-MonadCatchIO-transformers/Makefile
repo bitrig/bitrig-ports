@@ -3,10 +3,8 @@
 COMMENT =		functions to throw and catch exceptions
 
 DISTNAME =		MonadCatchIO-transformers-0.3.0.0
-REVISION =		2
+REVISION =		3
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # Public Domain
 PERMIT_PACKAGE_CDROM =	Yes

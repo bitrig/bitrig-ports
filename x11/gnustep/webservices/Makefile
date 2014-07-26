@@ -3,6 +3,7 @@
 COMMENT =	GNUstep webservices framework
 
 VERSION =	0.6.3
+REVISION =	0
 DISTNAME =	WebServices-${VERSION}
 PKGNAME =	gnustep-webservices-${VERSION}
 CATEGORIES =	www

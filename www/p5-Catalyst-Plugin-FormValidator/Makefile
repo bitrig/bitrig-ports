@@ -4,10 +4,9 @@ COMMENT=	plugin to Data::FormValidator for catalyst (deprecated)
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-FormValidator-0.094
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

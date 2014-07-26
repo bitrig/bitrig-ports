@@ -3,14 +3,12 @@
 COMMENT=	convenience library for the geocoding
 
 GNOME_VERSION=	3.12.2
+REVISION=	0
 GNOME_PROJECT=	geocode-glib
 
 SHARED_LIBS +=	geocode-glib         0.0      # 0.0
 
 CATEGORIES=	geo
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

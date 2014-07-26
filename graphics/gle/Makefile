@@ -3,6 +3,7 @@
 COMMENT=		OpenGL Extrusion library
 
 DISTNAME=		gle-3.1.0
+REVISION=		0
 CATEGORIES=     	graphics devel
 
 SHARED_LIBS +=  gle                  4.0      # 4.0

@@ -11,7 +11,7 @@ DISTNAME =	ecl-$V
 SHARED_LIBS +=	ecl	3.0
 SHARED_ONLY =	Yes
 
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	http://ecls.sourceforge.net/
 SUBST_VARS =	V

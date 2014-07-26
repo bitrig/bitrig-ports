@@ -4,7 +4,7 @@ COMMENT =	dungeon explorin', hackin', game.  Piece of cake
 V =		3.4.3
 DISTNAME =	nethack-$V
 PKGNAME =	${DISTNAME}
-REVISION =	6
+REVISION =	7
 CATEGORIES =	games
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=nethack/} \
@@ -13,8 +13,6 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=nethack/} \
 DISTFILES =	nethack-${V:S/.//g}-src.tgz
 
 HOMEPAGE =	http://nethack.org/
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM =	Yes

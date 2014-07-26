@@ -3,10 +3,9 @@
 COMMENT=	drive some car across the moon
 
 DISTNAME=	moon-buggy-1.0
+REVISION=	0
 CATEGORIES=    	games	
 HOMEPAGE=	http://seehuhn.de/pages/moon-buggy
-
-MAINTAINER=	Felix Kronlage <fkr@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

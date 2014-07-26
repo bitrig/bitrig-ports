@@ -3,6 +3,7 @@
 CATEGORIES =	devel
 COMMENT =	KDE bindings for .NET
 DISTNAME =	kimono-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kimono			51.0 # 2.0
 SHARED_LIBS +=	akonadi-sharp		51.0

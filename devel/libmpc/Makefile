@@ -5,7 +5,7 @@ COMMENT=	complex numbers math library
 V=		0.9
 DISTNAME=	mpc-${V}
 PKGNAME=	libmpc-${V}
-REVISION=	1
+REVISION=	2
 SHARED_LIBS=	mpc	0.1	# 2.0
 
 CATEGORIES=	devel math

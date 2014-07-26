@@ -3,11 +3,10 @@
 COMMENT=		stub DNS resolver library
 
 DISTNAME=		udns-0.2
+REVISION=		0
 CATEGORIES=		net
 
 SHARED_LIBS+=	udns 1.0
-
-MAINTAINER=		Sebastian Reitenbach <sebastia@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes

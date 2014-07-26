@@ -4,7 +4,7 @@
 COMMENT=	cube puzzle for X11
 
 DISTNAME=	xcubes-5.5.2
-REVISION =	2
+REVISION =	3
 CATEGORIES=	games
 
 # License: BSD

@@ -3,6 +3,7 @@
 COMMENT =	large dictionary for the SKK system
 
 DISTNAME =	skk-jisyo-20131026
+REVISION =	0
 
 CATEGORIES =	japanese
 

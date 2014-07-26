@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	JSON support for Lua
 
 DISTNAME=	lua-cjson-2.1.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.kyne.com.au/~mark/software/lua-cjson.php

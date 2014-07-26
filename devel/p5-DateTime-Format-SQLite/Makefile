@@ -4,6 +4,7 @@ COMMENT =	parse and format SQLite dates and times
 
 MODULES =	cpan
 DISTNAME =	DateTime-Format-SQLite-0.11
+REVISION =	0
 CATEGORIES =	devel
 
 # same as perl

@@ -4,13 +4,12 @@ COMMENT =	miscellaneous unix tools
 
 DISTNAME =	moreutils_0.51
 PKGNAME =	${DISTNAME:S/_/-/}
+REVISION =	0
 WRKDIST =	${WRKDIR}/moreutils
 
 CATEGORIES =	sysutils
 
 HOMEPAGE =	http://joey.kitenet.net/code/moreutils/
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	 Yes

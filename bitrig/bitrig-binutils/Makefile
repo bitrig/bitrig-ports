@@ -10,7 +10,6 @@ CATEGORIES =		bitrig devel
 SHARED_LIBS =		iberty 11.0
 
 HOMEPAGE =		https://www.bitrig.org/
-MAINTAINER =		Marco Peereboom <marco@bitrig.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

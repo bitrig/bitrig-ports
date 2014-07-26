@@ -3,7 +3,7 @@
 COMMENT=	displays the status of multi-player Internet Game servers
 
 DISTNAME=	qstat-2.11
-REVISION=	0
+REVISION=	1
 CATEGORIES=	games
 
 # Artistic

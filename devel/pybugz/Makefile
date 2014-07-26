@@ -4,7 +4,7 @@ COMMENT =		Commandline client for Bugzilla bug tracking systems
 
 MODPY_EGG_VERSION =	0.8.0
 DISTNAME =		pybugz-${MODPY_EGG_VERSION}
-REVISION =		4
+REVISION =		5
 CATEGORIES =		devel
 
 HOMEPAGE =		http://www.liquidx.net/pybugz/

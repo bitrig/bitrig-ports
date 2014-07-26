@@ -4,13 +4,11 @@ COMMENT=	brain teaser game
 
 DISTNAME=	gbrainy-2.2.3
 EPOCH=		0
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	games
 
 HOMEPAGE=	https://live.gnome.org/gbrainy
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

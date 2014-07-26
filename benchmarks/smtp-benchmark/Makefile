@@ -3,7 +3,7 @@
 COMMENT=	SMTP benchmark to measure throughput of an MTA
 
 DISTNAME=	smtp-benchmark-1.0.4
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=    	benchmarks mail
 

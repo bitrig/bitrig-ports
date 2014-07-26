@@ -3,11 +3,10 @@
 COMMENT =	perl DBI driver for CSV files
 
 DISTNAME =	DBD-CSV-0.41
+REVISION =	0
 EXTRACT_SUFX =	.tgz
 CATEGORIES =	databases
 MODULES =	cpan
-
-MAINTAINER = Andrew Fresh <afresh1@openbsd.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,7 +5,7 @@ COMMENT=	simple command-line shell framework
 
 MODULES=	cpan
 DISTNAME=	Term-Shell-0.02
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # Perl

@@ -5,9 +5,7 @@ COMMENT =	command-line .torrent file creator
 DISTNAME =	mktorrent-1.0
 CATEGORIES =	net
 HOMEPAGE =	http://mktorrent.sourceforge.net/
-REVISION =	0
-
-MAINTAINER =	Gonzalo L. R. <gonzalo@openbsd.org>
+REVISION =	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

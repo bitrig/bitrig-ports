@@ -31,13 +31,13 @@ PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 #PKGNAME-go =	gccgo-${FULL_PKGVERSION}
 PKGSPEC-main = gcc->=4.8,<4.9
 
-REVISION-main	= 1
-REVISION-c++	= 1
-#REVISION-estdc	=
-REVISION-f95	= 1
-REVISION-java	= 1
-REVISION-objc	= 1
-REVISION-ada	= 1
+REVISION-main	= 2
+REVISION-c++	= 2
+REVISION-estdc	= 0
+REVISION-f95	= 2
+REVISION-java	= 2
+REVISION-objc	= 2
+REVISION-ada	= 2
 #REVISION-go	=
 
 SHARED_LIBS =	estdc++		16.0 \
@@ -62,8 +62,6 @@ ONLY_FOR_ARCHS-java = amd64 i386 powerpc sparc64
 
 #MULTI_PACKAGES = -main -f95 -objc -c++ -estdc -java -ada
 MULTI_PACKAGES = -main -f95 -objc -c++ -estdc -java
-
-MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 .include <bsd.port.arch.mk>
 

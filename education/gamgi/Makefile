@@ -5,6 +5,7 @@ COMMENT=		General Atomistic Modelling Graphic Interface
 V=			0.15.5
 DISTNAME=		gamgi-all-${V}
 PKGNAME=		${DISTNAME:S/-all//}
+REVISION=		0
 CATEGORIES=		education x11
 
 HOMEPAGE=		http://www.gamgi.org/

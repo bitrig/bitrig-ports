@@ -3,11 +3,9 @@
 COMMENT =	modification of UTF-7 encoding for IMAP
 
 DISTNAME =	Encode-IMAPUTF7-1.03
-REVISION =	0
+REVISION =	1
 CATEGORIES =	converters
 MODULES =	cpan
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

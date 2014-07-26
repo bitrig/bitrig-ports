@@ -4,7 +4,7 @@ COMMENT=		make use of SSL with POE
 
 MODULES=		cpan
 DISTNAME=		POE-Component-SSLify-0.15
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net security
 USE_GROFF =		Yes
 

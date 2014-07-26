@@ -5,12 +5,10 @@ COMMENT =		Python implementation of the LZO library
 MODPY_EGG_VERSION =	1.08
 DISTNAME =		python-lzo-${MODPY_EGG_VERSION}
 PKGNAME =		py-lzo-${MODPY_EGG_VERSION}
-REVISION =		4
+REVISION =		5
 CATEGORIES =		archivers
 
 HOMEPAGE =		http://www.oberhumer.com/opensource/lzo/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

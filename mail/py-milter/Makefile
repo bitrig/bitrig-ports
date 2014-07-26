@@ -5,6 +5,7 @@ COMMENT =	Python interface to sendmail milter API
 MODPY_EGG_VERSION = 0.9.8
 DISTNAME =	pymilter-${MODPY_EGG_VERSION}
 PKGNAME =	${DISTNAME:S/py/py-/}
+REVISION =	0
 CATEGORIES =	mail
 
 HOMEPAGE =	http://www.bmsi.com/python/milter.html

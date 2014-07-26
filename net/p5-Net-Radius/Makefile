@@ -3,11 +3,9 @@
 COMMENT=	Perl interface to Radius
 
 DISTNAME=	Net-Radius-2.103
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	net devel
-
-MAINTAINER=	Alexander Bluhm <bluhm@openbsd.org>
 
 # perl artistic license
 PERMIT_PACKAGE_CDROM=	Yes

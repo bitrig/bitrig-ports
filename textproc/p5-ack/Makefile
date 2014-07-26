@@ -4,10 +4,10 @@ COMMENT=		grep like tool, aimed at programmers
 
 MODULES=		cpan
 DISTNAME=		ack-2.12
+REVISION=		0
 CPAN_AUTHOR=		PETDANCE
 CATEGORIES=		textproc
 
-MAINTAINER=		Pierre-Yves Ritschard <pyr@openbsd.org>
 HOMEPAGE =		http://beyondgrep.com/
 
 # perl

@@ -3,10 +3,8 @@
 COMMENT =	perfect hash functions, to help write parsers
 
 DISTNAME =	gperf-3.0.4
-REVISION =	1
+REVISION =	2
 CATEGORIES =   	devel
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 HOMEPAGE =	https://www.gnu.org/software/gperf/
 

@@ -2,7 +2,7 @@
 
 COMMENT=	usb missile launcher control script
 DISTNAME=	pymissile-20061111
-REVISION =	6
+REVISION =	7
 DISTFILES=	${DISTNAME}.py
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_BACKUP}

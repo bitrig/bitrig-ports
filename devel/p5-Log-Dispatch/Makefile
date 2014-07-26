@@ -4,7 +4,7 @@ COMMENT=	dispatches messages to one or more outputs
 
 MODULES=	cpan
 DISTNAME=	Log-Dispatch-2.41
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

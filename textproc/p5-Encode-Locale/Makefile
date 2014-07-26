@@ -3,10 +3,9 @@
 COMMENT =	determine the locale encoding
 
 DISTNAME =	Encode-Locale-1.03
+REVISION =	0
 CATEGORIES =	textproc
 CPAN_AUTHOR =	GAAS
-
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

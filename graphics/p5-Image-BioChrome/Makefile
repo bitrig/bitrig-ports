@@ -6,7 +6,7 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	Image-BioChrome-1.16
-REVISION=	0
+REVISION=	1
 CATEGORIES=	graphics
 
 # perl

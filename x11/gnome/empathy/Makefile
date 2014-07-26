@@ -4,7 +4,7 @@ COMMENT= 		Telepathy based messenger for GNOME
 
 GNOME_PROJECT=		empathy
 GNOME_VERSION=		3.12.4
-REVISION=		0
+REVISION=		1
 SUBST_VARS=		GNOME_VERSION
 
 CATEGORIES=		net

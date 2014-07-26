@@ -6,6 +6,7 @@ COMMENT=	SAX-based render library for SVG files
 
 GNOME_PROJECT=	librsvg
 GNOME_VERSION=	2.40.2
+REVISION=	0
 
 SHARED_LIBS +=  rsvg-2               38.1     # 42.0
 

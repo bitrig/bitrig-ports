@@ -4,7 +4,7 @@ COMMENT=	object-oriented DSSSL engine
 
 DISTNAME=	openjade-1.3.3-pre1
 PKGNAME=	openjade-1.3.3pre1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openjade/}
 
@@ -12,8 +12,6 @@ SHARED_LIBS=	ospgrove 0.0 \
 		ogrove 0.0 \
 		ostyle 0.0 # 0.1
 HOMEPAGE=	http://openjade.sourceforge.net/
-
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

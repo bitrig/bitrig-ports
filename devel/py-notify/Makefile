@@ -5,7 +5,7 @@ COMMENT=		python bindings for libnotify
 V=			0.1.1
 DISTNAME=		notify-python-${V}
 PKGNAME=		py-notify-${V}
-REVISION =		11
+REVISION =		12
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.galago-project.org/

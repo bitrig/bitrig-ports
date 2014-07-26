@@ -3,7 +3,7 @@
 COMMENT=	online Image GALlery generator
 
 DISTNAME=	igal2-2.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www graphics
 
 HOMEPAGE=	http://igal.trexler.at/

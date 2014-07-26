@@ -3,7 +3,7 @@
 COMMENT=	image viewer widget for gtk
 
 DISTNAME=	gtkimageview-1.6.4
-REVISION=	6
+REVISION=	7
 
 SHARED_LIBS=	gtkimageview	0.0
 

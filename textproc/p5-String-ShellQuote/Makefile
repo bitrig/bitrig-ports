@@ -4,10 +4,8 @@ COMMENT=		Quote strings for passing through the shell
 
 MODULES=		cpan
 DISTNAME=		String-ShellQuote-1.04
-REVISION=		0
+REVISION=		1
 CATEGORIES=		textproc
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

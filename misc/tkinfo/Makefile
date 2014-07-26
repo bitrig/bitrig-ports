@@ -3,10 +3,9 @@
 COMMENT =	read and display GNU info files in Tk
 
 DISTNAME =	tkinfo-2.8
-REVISION =	2
+REVISION =	3
 CATEGORIES =	misc 
 HOMEPAGE =	http://math-www.uni-paderborn.de/~axel/tkinfo/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

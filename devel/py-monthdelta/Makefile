@@ -5,6 +5,7 @@ COMMENT =		date computations with months
 MODPY_EGG_VERSION =	1.0b
 DISTNAME =		MonthDelta-${MODPY_EGG_VERSION}
 PKGNAME =		py-monthdelta-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		devel
 

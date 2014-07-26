@@ -3,7 +3,7 @@
 COMMENT =	minimalistic GIS on top of spatialite and rasterlite
 PROJECT =	spatialite_gis
 DISTNAME =	${PROJECT}-1.0.0c
-REVISION=	1
+REVISION=	2
 
 LIB_DEPENDS +=	print/libharu \
 		x11/wxWidgets \

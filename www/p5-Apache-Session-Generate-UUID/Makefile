@@ -4,7 +4,7 @@ COMMENT=	UUID for session ID generation
 
 MODULES=	cpan
 DISTNAME=	Apache-Session-Generate-UUID-0.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
 

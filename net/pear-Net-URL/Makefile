@@ -3,7 +3,7 @@
 COMMENT=	easy parsing of URLs for PHP
 
 DISTNAME=	Net_URL-1.0.14
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
 
 MODULES=	www/pear

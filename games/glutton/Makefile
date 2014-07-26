@@ -3,11 +3,9 @@
 COMMENT= 	Pac-Man clone
 
 DISTNAME=	glutton-0.0.5
-REVISION =	0
+REVISION =	1
 CATEGORIES= 	games	
 HOMEPAGE=	http://kokido.sourceforge.net/glutton.html
-
-MAINTAINER=	Olivier Racine <darkroot@darkroot.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=  	Yes

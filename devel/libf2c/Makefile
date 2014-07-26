@@ -4,7 +4,7 @@ V =		3.3.6
 CONFIG = 	${MACHINE_ARCH}-unknown-bitrig${OSREV}
 SUBST_VARS += 	CONFIG V
 PKGNAME =	libf2c-$V
-REVISION =	4
+REVISION =	5
 DISTFILES = 	libf2c-openbsd.tgz
 MASTER_SITES =	http://spacehopper.org/mirrors/
 

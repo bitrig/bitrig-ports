@@ -3,12 +3,10 @@
 COMMENT =	ruby library for reading/writing vorbis comments
 
 DISTNAME =	vorbis_comment-1.0.2
-REVISION =	2
+REVISION =	3
 CATEGORIES =	audio
 
 HOMEPAGE=	http://vorbiscomment.rubyforge.org/
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # LGPLv2/MIT License
 PERMIT_PACKAGE_CDROM =	Yes

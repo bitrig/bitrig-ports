@@ -2,6 +2,7 @@
 
 COMMENT =	KDE mouse clicker for accessibility users
 DISTNAME =	kmousetool-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += ICE SM X11 Xext Xtst

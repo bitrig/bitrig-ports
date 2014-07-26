@@ -1,7 +1,7 @@
 # $OpenBSD: Makefile.inc,v 1.1 2013/06/22 09:31:48 espie Exp $
 
 PKG_ARCH =	*
-REVISION =	0
+REVISION =	1
 
 V =		1.3
 NAME =		mozilla-dicts
@@ -9,8 +9,6 @@ NAME =		mozilla-dicts
 CATEGORIES =	textproc
 
 HOMEPAGE =	https://addons.mozilla.org/language-tools/
-
-MAINTAINER =	Martynas Venckus <martynas@openbsd.org>
 
 # Mozilla public license
 PERMIT_PACKAGE_CDROM =	Yes

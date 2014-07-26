@@ -8,11 +8,10 @@ GH_TAGNAME =	1.3.1
 GH_COMMIT =	62fc78dd0d4834619106797f8978ffdb302cb484
 DISTNAME =	${GH_PROJECT}-${GH_TAGNAME}
 PKGNAME =	lua-penlight-${GH_TAGNAME}
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://stevedonovan.github.io/Penlight/
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =Yes

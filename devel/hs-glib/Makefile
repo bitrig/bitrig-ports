@@ -3,11 +3,10 @@
 COMMENT =		Haskell bindings to glib
 
 DISTNAME =		glib-0.12.4
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		http://www.haskell.org/gtk2hs/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # LGPL-2.1
 PERMIT_PACKAGE_CDROM =	Yes

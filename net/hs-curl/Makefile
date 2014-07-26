@@ -3,12 +3,10 @@
 COMMENT =		Haskell binding to libcurl
 
 DISTNAME =		curl-1.3.8
-REVISION =		1
+REVISION =		2
 CATEGORIES =		net
 
 HOMEPAGE =		https://github.com/GaloisInc/curl
-
-MAINTAINER =		David Schaefer <dawedawe@gmx.de>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

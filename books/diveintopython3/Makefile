@@ -3,6 +3,7 @@
 COMMENT=	book about Python 3 for experienced programmers
 
 VERSION=	20130531
+REVISION=	0
 DISTNAME=	diveintopython3-${VERSION}
 CATEGORIES=	books
 

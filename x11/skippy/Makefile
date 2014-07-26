@@ -3,7 +3,7 @@
 COMMENT=		full-screen X11 task-switcher like Apple's Expose
 
 DISTNAME=		skippy-0.5.0
-REVISION=		6
+REVISION=		7
 CATEGORIES=		x11
 
 MASTER_SITES=		http://thegraveyard.org/files/

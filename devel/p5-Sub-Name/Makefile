@@ -5,10 +5,9 @@ SHARED_ONLY =		Yes
 COMMENT =		(re)name a sub
 
 DISTNAME =		Sub-Name-0.07
+REVISION =		0
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

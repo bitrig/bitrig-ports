@@ -3,13 +3,11 @@
 COMMENT=	X keygrabber for blackbox
 
 DISTNAME=	bbkeys-0.9.0
-REVISION=	4
+REVISION=	5
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bbkeys/}
 
 HOMEPAGE=	http://bbkeys.sourceforge.net/
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT=	easily create test classes in an xUnit style
 
 MODULES=	cpan
 DISTNAME=	Test-Class-0.31
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF=	Yes
 

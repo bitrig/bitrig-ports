@@ -4,10 +4,9 @@ SHARED_ONLY =		Yes
 
 COMMENT =		interface to various LCD displays
 DISTNAME =		lcdproc-0.5.5
-REVISION =		4
+REVISION =		5
 CATEGORIES =		comms devel
 HOMEPAGE =		http://www.lcdproc.org
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

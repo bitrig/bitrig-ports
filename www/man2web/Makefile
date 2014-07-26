@@ -3,7 +3,7 @@
 COMMENT=	convert man pages to HTML
 
 DISTNAME=	man2web-0.88
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 HOMEPAGE=	http://man2web.sourceforge.net/
 

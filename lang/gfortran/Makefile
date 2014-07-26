@@ -13,7 +13,7 @@ PKGNAME-main =	gfortran-$V
 PKGNAME-lib =	libgfortran-$V
 SHARED_LIBS =	gfortran	2.0
 
-REVISION = 14
+REVISION = 15
 
 CATEGORIES =	lang math
 

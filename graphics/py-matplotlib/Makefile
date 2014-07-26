@@ -3,7 +3,7 @@
 COMMENT=	Python charting and plotting API
 
 MODPY_EGG_VERSION =	1.2.1
-REVISION =		1
+REVISION =		2
 DISTNAME =		matplotlib-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		graphics devel math

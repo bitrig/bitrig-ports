@@ -3,9 +3,9 @@
 COMMENT =	Tk Standard Library
 
 DISTNAME =	tklib-0.6pl0
+REVISION =	0
 CATEGORIES =	devel x11/tk
 HOMEPAGE =	http://core.tcl.tk/tklib/home
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD style
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,10 +4,8 @@ COMMENT=	perl module for accessing NNTP articles
 
 MODULES=	cpan
 DISTNAME=	News-Article-1.27
-REVISION=	1
+REVISION=	2
 CATEGORIES=	news
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Artistic/GPL
 PERMIT_PACKAGE_CDROM=	Yes

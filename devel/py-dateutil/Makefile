@@ -6,10 +6,9 @@ MODPY_EGG_VERSION =	1.5
 DISTNAME =		python-dateutil-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/^python-/py-/}
 CATEGORIES =    	devel
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://labix.org/python-dateutil
-MAINTAINER =		frantisek holop <minusf@obiit.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

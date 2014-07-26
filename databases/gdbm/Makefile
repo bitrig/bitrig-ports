@@ -3,6 +3,7 @@
 COMMENT=		GNU dbm
 
 VERSION=		1.11
+REVISION=		0
 DISTNAME=		gdbm-${VERSION}
 CATEGORIES=		databases
 

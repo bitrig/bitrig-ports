@@ -4,7 +4,7 @@ COMMENT =	emulate Class::Accessor::Fast behavior using Moose
 
 MODULES =	cpan
 DISTNAME =	MooseX-Emulate-Class-Accessor-Fast-0.00903
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 USE_GROFF =	Yes
 

@@ -3,12 +3,11 @@
 COMMENT=		dynamic window manager
 
 DISTNAME=		dwm-6.0
+REVISION=		0
 
 CATEGORIES=		x11
 
 HOMEPAGE=		http://dwm.suckless.org/
-
-MAINTAINER=		Jim Razmus <jim@openbsd.org>
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes

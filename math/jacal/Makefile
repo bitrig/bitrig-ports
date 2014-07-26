@@ -5,6 +5,7 @@ COMMENT=	symbolics math system
 CATEGORIES=	math
 
 DISTNAME=	jacal-1b9
+REVISION=	0
 EXTRACT_SUFX=	.zip
 
 HOMEPAGE=	http://people.csail.mit.edu/jaffer/JACAL

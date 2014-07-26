@@ -3,6 +3,7 @@
 COMMENT=	mount SMB shares from userland via FUSE
 
 DISTNAME=	usmb-20130204
+REVISION=	0
 
 CATEGORIES=	sysutils
 

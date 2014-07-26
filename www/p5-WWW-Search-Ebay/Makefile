@@ -3,7 +3,7 @@
 COMMENT=		backend for searching www.ebay.com
 
 DISTNAME=		WWW-Search-Ebay-3.021
-REVISION=		0
+REVISION=		1
 CATEGORIES=		www
 
 # perl

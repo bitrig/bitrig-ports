@@ -3,6 +3,7 @@
 COMMENT =	KDE CDDB library
 CATEGORIES =	audio net devel
 DISTNAME =	libkcddb-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kcddb		50.0
 

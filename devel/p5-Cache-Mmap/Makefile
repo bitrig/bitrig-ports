@@ -7,7 +7,7 @@ COMMENT=	shared data cache using memory mapped files
 MODULES=	cpan
 DISTNAME=	Cache-Mmap-0.11
 EPOCH=		0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # perl

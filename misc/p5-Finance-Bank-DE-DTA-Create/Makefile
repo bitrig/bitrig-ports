@@ -3,6 +3,7 @@
 COMMENT=	create DTA/DTAUS files for german banking
 
 DISTNAME =	Finance-Bank-DE-DTA-Create-1.03
+REVISION =	0
 WRKDIST=	${WRKDIR}/Finance-Bank-DE-DTA-Create/
 CATEGORIES=	misc
 

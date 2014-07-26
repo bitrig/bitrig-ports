@@ -4,10 +4,8 @@ COMMENT =	test JSON data
 
 MODULES =	cpan
 DISTNAME =	Test-JSON-0.06
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

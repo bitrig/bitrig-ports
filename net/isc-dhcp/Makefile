@@ -5,6 +5,7 @@ COMMENT-client=	ISC DHCP Client
 COMMENT-omapi=	ISC DHCP OMAPI
 
 VERSION=	4.3.0
+REVISION=	0
 DISTNAME=	isc-dhcp-${VERSION}
 PKGNAME=	isc-dhcp-${VERSION:S/-P/./}
 PKGNAME-main=	isc-dhcp-server-${VERSION:S/-P/./}
@@ -19,8 +20,6 @@ MASTER_SITES=	${MASTER_SITE_ISC:=dhcp/${VERSION}/} \
 		${MASTER_SITE_ISC:=dhcp/}
 
 HOMEPAGE=	http://www.isc.org/software/dhcp/
-
-MAINTAINER=	Jakob Schlyter <jakob@openbsd.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes

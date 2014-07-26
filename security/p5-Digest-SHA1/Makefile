@@ -6,10 +6,8 @@ COMMENT=	module to calculate SHA1 digests
 
 MODULES=	cpan
 DISTNAME=	Digest-SHA1-2.13
-REVISION=	3
+REVISION=	4
 CATEGORIES=	security
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Artistic licence
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,10 +4,8 @@ COMMENT=	extension for simple-minded recipe-controlled build of data
 
 MODULES=	cpan
 DISTNAME=	Data-Flow-0.09
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

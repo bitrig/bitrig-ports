@@ -10,11 +10,10 @@ CATEGORIES=		net
 MASTER_SITES=		http://download.dnscrypt.org/dnscrypt-proxy/ \
 			http://download.dnscrypt.org/dnscrypt-proxy/old/
 
-REVISION-main=		0
+REVISION-main=		1
+REVISION-plugins=	0
 
 HOMEPAGE=		http://dnscrypt.org/
-
-MAINTAINER=		Frank Denis <dnscrypt@pureftpd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

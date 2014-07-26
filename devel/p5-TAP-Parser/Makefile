@@ -4,7 +4,7 @@ COMMENT=	parse TAP output
 
 MODULES=	cpan
 DISTNAME=	TAP-Parser-0.54
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

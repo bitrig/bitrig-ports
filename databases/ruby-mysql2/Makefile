@@ -3,11 +3,10 @@
 COMMENT=	modern, simple and very fast MySQL library for Ruby
 
 DISTNAME=	mysql2-0.3.16
+REVISION=	0
 CATEGORIES=	databases
 
 HOMEPAGE=	https://github.com/brianmario/mysql2
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT License
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=	RFC 2217 compliant serial port redirector
 
 DISTNAME=	sredird-2.2.2
-REVISION=	2
+REVISION=	3
 CATEGORIES=	comms
 
 # GPLv2+

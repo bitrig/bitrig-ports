@@ -2,11 +2,10 @@
 
 COMMENT =	free multi-dimensional Tetris-like game
 DISTNAME =	galois-0.3
-REVISION =	1
+REVISION =	2
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://www.nongnu.org/galois/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

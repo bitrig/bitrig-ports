@@ -4,6 +4,7 @@ COMMENT=	easily build XS extensions that depend on XS extensions
 
 MODULES=	cpan
 DISTNAME=	ExtUtils-Depends-0.306
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

@@ -3,12 +3,11 @@
 COMMENT =	documentation generator for postgresql databases
 
 DISTNAME =	postgresql_autodoc-1.40
+REVISION =	0
 CATEGORIES =	databases
 
 HOMEPAGE =	http://www.rbt.ca/autodoc/
 MASTER_SITES =	${HOMEPAGE}binaries/
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =		Yes

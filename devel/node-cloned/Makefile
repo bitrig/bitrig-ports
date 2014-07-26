@@ -4,9 +4,8 @@ COMMENT =	clone a local or remote git repository at a revision.
 
 NPM_VERSION =	0.0.1
 NPM_NAME =	cloned
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Aaron Bieber <abieber@openbsd.org>
 
 HOMEPAGE =	https://github.com/brianc/node-cloned
 

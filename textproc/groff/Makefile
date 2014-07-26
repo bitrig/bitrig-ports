@@ -4,13 +4,12 @@ COMMENT =		GNU troff typesetter
 VERSION =		1.22.2
 SUBST_VARS =		VERSION
 DISTNAME =		groff-${VERSION}
-REVISION =		5
+REVISION =		6
 
 CATEGORIES =		textproc
 DPB_PROPERTIES =	parallel
 
 HOMEPAGE =		https://www.gnu.org/software/groff/
-MAINTAINER =		Ingo Schwarze <schwarze@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

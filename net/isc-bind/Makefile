@@ -5,6 +5,7 @@ COMMENT=	Berkeley Internet Name Daemon: DNS server and tools
 V=		9.10.0-P2
 DISTNAME=	bind-$V
 PKGNAME=	isc-bind-${V:S/-P/pl/}
+REVISION=	0
 
 SHARED_LIBS +=	isc                  1.0      # 143.1
 SHARED_LIBS +=	isccc                0.0      # 140.1

@@ -4,7 +4,7 @@ COMMENT=		VNC viewer widget for GTK
 
 GNOME_PROJECT=		gtk-vnc
 GNOME_VERSION=		0.5.3
-REVISION=		2
+REVISION=		3
 
 PKGNAME=		${DISTNAME}
 

@@ -4,7 +4,7 @@ COMMENT=	system monitoring framework written in Ruby
 
 DISTNAME=	god-0.7.3
 FULLPKGNAME=	${DISTNAME}
-REVISION=	11
+REVISION=	12
 CATEGORIES=	sysutils
 
 # MIT

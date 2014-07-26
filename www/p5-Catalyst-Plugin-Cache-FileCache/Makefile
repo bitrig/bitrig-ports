@@ -4,11 +4,9 @@ COMMENT =	file cache extension for Catalyst (deprecated)
 
 MODULES =	cpan
 DISTNAME =	Catalyst-Plugin-Cache-FileCache-0.7
-REVISION =	1
+REVISION =	2
 CATEGORIES =	www
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,8 +5,7 @@ COMMENT =		Sega Megadrive/Genesis emulator
 DISTNAME =		dgen-sdl-1.32
 CATEGORIES =		emulators games
 HOMEPAGE =		http://dgen.sourceforge.net/
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
-REVISION =		0
+REVISION =		1
 
 FLAVORS =		debugger
 FLAVOR ?=

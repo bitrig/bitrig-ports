@@ -4,12 +4,10 @@ COMMENT =	SSL/SSH multiplexer
 
 VERSION =	1.15
 DISTNAME =	sslh-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	security net
 
 HOMEPAGE =	http://www.rutschle.net/tech/sslh.shtml
-
-MAINTAINER =	Bjorn Ketelaars <bjorn.ketelaars@hydroxide.nl>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes

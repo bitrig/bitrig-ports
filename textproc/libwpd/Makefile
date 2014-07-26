@@ -5,14 +5,12 @@ COMMENT=	import and export WordPerfect(tm) documents
 DISTNAME=	libwpd-0.8.9
 CATEGORIES=	textproc
 
-REVISION=	8
+REVISION=	9
 
 SHARED_LIBS=	wpd-0.8		8.9 \
 		wpd-stream-0.8	8.9
 
 HOMEPAGE=	http://libwpd.sourceforge.net/
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=   Yes

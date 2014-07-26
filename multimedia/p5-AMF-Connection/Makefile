@@ -3,10 +3,9 @@
 COMMENT =	AMF client to connect to remote FLEX AIR service
 
 DISTNAME =	AMF-Connection-0.30
+REVISION =	0
 CATEGORIES =	multimedia net
 CPAN_AUTHOR =	AREGGIORI
-
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	 Yes

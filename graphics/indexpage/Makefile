@@ -3,11 +3,10 @@
 COMMENT=	generate index pages for displaying images
 
 DISTNAME=	indexpage-1.0.3
+REVISION=	0
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://www.lysator.liu.se/~unicorn/hacks/indexpage/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

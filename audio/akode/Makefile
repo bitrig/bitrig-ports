@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	decoding library for KDE Multimedia
 
 DISTNAME=	akode-2.0.2
-REVISION=	21
+REVISION=	22
 
 SHARED_LIBS +=	akode                2.1      # .2.0
 

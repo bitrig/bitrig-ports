@@ -5,15 +5,13 @@ COMMENT =	libevent extra features
 VERSION =	1.4.13
 DISTNAME =	libevent-${VERSION}-stable
 PKGNAME =	libeventextra-${VERSION}
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS =    eventextra 1.0
 
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.monkey.org/~provos/
-
-MAINTAINER =	Nicholas Marriott <nicm@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

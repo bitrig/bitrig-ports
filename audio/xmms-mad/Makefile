@@ -6,9 +6,7 @@ COMMENT=	XMMS input plugin for MP3 files
 DISTNAME=	xmms-mad-0.10
 CATEGORIES=	audio
 HOMEPAGE=	http://xmms-mad.sourceforge.net/
-REVISION =	1
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
+REVISION =	2
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

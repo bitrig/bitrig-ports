@@ -7,7 +7,7 @@ COMMENT=		simple filename and pathname matching
 MODULES=		cpan
 DISTNAME=		File-FnMatch-0.02
 CATEGORIES=		devel
-REVISION=		0
+REVISION=		1
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

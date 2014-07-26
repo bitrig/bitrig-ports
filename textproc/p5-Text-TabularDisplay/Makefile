@@ -4,6 +4,7 @@ COMMENT= 	render tabular data as plain text
 
 MODULES=	cpan
 DISTNAME =	Text-TabularDisplay-1.35
+REVISION =	0
 CATEGORIES=	textproc devel
 
 # GPL

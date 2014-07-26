@@ -3,12 +3,11 @@
 COMMENT=	report network interface statistics
 
 DISTNAME=	tcpstat-1.5
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.frenchfries.net/paul/tcpstat/
 
 HOMEPAGE=	http://www.frenchfries.net/paul/tcpstat/
-MAINTAINER=	Mark Lumsden <mark@cyodesigns.com>
 
 # BSD license
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,11 +4,9 @@ COMMENT=		rss reader, live stream, mashup, aggregation webapp
 
 DISTNAME=		selfoss-2.10
 CATEGORIES=		www
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://selfoss.aditu.de/
-
-MAINTAINER=		Robert Peichaer <rpe@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

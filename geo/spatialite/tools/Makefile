@@ -4,7 +4,7 @@ COMMENT =	CLI tools for spatialite
 PROJECT =	spatialite-tools
 DISTNAME =	${PROJECT}-4.0.0
 
-REVISION=	1
+REVISION=	2
 
 LIB_DEPENDS +=	geo/spatialite/libspatialite \
 		geo/spatialite/readosm \

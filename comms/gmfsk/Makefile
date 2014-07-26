@@ -4,7 +4,7 @@ COMMENT=	GNOME multimode HF terminal
 
 GNOME_PROJECT=	gmfsk
 GNOME_VERSION=	0.6
-REVISION=	23
+REVISION=	24
 CATEGORIES=	comms hamradio
 
 HOMEPAGE=	http://gmfsk.connect.fi/

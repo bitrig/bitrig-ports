@@ -2,6 +2,7 @@
 
 COMMENT=	American English male speaker (KAL) at 16KHz sampling
 DISTNAME=	festvox_kallpc16k
+REVISION=	0
 
 RUN_DEPENDS=	${VOX_US_DEPS}
 

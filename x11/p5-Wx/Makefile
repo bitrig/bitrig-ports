@@ -4,7 +4,7 @@ COMMENT =	interface to the wxWidgets cross-platform GUI toolkit
 
 MODULES =	cpan
 DISTNAME =	Wx-0.92
-REVISION =	4
+REVISION =	5
 CATEGORIES =	x11 devel
 CPAN_AUTHOR =	MBARBON
 USE_GROFF =	Yes

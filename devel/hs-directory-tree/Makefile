@@ -3,9 +3,8 @@
 COMMENT =		directory-like tree datatype
 
 DISTNAME =		directory-tree-0.11.0
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

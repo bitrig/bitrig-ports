@@ -3,7 +3,7 @@
 COMMENT=		cross platform mac address determiniation
 
 DISTNAME=		macaddr-1.6.1
-REVISION =		0
+REVISION =		1
 CATEGORIES=		net
 
 HOMEPAGE=		https://github.com/ahoward/macaddr

@@ -3,7 +3,7 @@
 COMMENT =		annotation framework
 
 DISTNAME =		QuickAnnotate-0.6
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
 
 # BSD3

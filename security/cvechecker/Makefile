@@ -3,12 +3,11 @@
 COMMENT=	local CVE checker tool
 
 DISTNAME=	cvechecker-3.5
+REVISION=	0
 
 CATEGORIES=	security sysutils
 
 HOMEPAGE=	http://cvechecker.sourceforge.net/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

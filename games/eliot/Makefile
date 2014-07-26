@@ -4,10 +4,9 @@ V =		2.1
 COMMENT =	scrabble game
 DISTNAME =	eliot-${V}
 CATEGORIES =	games
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE =	http://nongnu.org/eliot/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 MASTER_SITES =	${MASTER_SITE_SAVANNAH:=eliot/releases/${V}/}
 

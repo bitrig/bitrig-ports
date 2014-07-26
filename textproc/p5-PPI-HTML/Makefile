@@ -4,7 +4,7 @@ COMMENT=		parse, analyze and manipulate Perl
 
 MODULES=		cpan
 DISTNAME=		PPI-HTML-1.08
-REVISION=		1
+REVISION=		2
 CATEGORIES=		textproc www
 CPAN_AUTHOR=		ADAMK
 

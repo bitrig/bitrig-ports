@@ -5,12 +5,11 @@ SHARED_ONLY =	Yes
 COMMENT =	Qt4-based featureful music player
 
 DISTNAME =	clementine-1.2.1
-REVISION =	2
+REVISION =	3
 CATEGORIES =	audio x11
 
 HOMEPAGE =	http://clementine-player.org/
 
-MAINTAINER =	Vadim Zhukov <persgray@gmail.com>
 MASTER_SITES =	https://clementine-player.googlecode.com/files/
 
 # GPLv2/LGPLv2/GFDL

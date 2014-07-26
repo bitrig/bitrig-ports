@@ -3,10 +3,8 @@
 COMMENT=		ARP reply daemon
 
 DISTNAME=		arpd-0.2
-REVISION=		3
+REVISION=		4
 CATEGORIES=    		net
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

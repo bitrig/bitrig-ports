@@ -4,6 +4,7 @@ COMMENT=	extensible shell, derived from plan9's rc
 
 DISTNAME=	es-0.9-beta1
 PKGNAME=	es-0.9beta1
+REVISION=	0
 EPOCH=		0
 CATEGORIES=	shells
 

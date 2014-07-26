@@ -3,13 +3,11 @@
 COMMENT=	administration and development platform for PostgreSQL
 
 V=		1.18.1
-REVISION=	0
+REVISION=	1
 DISTNAME=	pgadmin3-$V
 CATEGORIES=	databases devel
 
 HOMEPAGE=	http://www.pgadmin.org/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # Artistic license
 PERMIT_PACKAGE_CDROM=	Yes

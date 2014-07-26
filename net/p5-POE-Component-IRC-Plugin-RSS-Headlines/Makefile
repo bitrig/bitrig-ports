@@ -3,10 +3,8 @@
 COMMENT =		PoCo::IRC Plugin that provides RSS Headline retrieval
 
 DISTNAME =		POE-Component-IRC-Plugin-RSS-Headlines-1.08
-REVISION =		0
+REVISION =		1
 CATEGORIES =		net www
-
-MAINTAINER =		James Wright <jamesw@bsdhosting.co.za>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

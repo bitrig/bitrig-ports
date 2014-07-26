@@ -6,7 +6,7 @@ COMMENT =	Mozilla web browser
 # Don't forget to update devel/xulrunner/2.0 if patches changes.
 
 MOZILLA_VERSION =	30.0
-REVISION =		0
+REVISION =		1
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	firefox
 MOZILLA_CODENAME =	browser

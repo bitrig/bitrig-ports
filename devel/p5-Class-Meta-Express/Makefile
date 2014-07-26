@@ -4,6 +4,7 @@ COMMENT=		concise expressive creations of Class::Meta classes
 
 MODULES=		cpan
 DISTNAME=		Class-Meta-Express-0.11
+REVISION=		0
 CATEGORIES=		devel
 USE_GROFF =		Yes
 

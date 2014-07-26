@@ -6,6 +6,7 @@ COMMENT=	Python WSGI compliant interface module for Apache2
 
 DISTNAME=	mod_wsgi-3.4
 PKGNAME=	ap2-${DISTNAME}
+REVISION=	0
 
 CATEGORIES=	www
 

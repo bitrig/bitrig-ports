@@ -5,6 +5,7 @@ COMMENT=	library for dynamic creation of images
 V=		2.1.0
 DISTNAME=	libgd-$V
 PKGNAME=	gd-$V
+REVISION=	0
 
 SHARED_LIBS=	gd	21.0
 

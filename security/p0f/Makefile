@@ -3,13 +3,11 @@
 COMMENT=		passive OS fingerprinting tool
 
 DISTNAME=		p0f-2.0.8
-REVISION =		2
+REVISION =		3
 EXTRACT_SUFX=		.tgz
 CATEGORIES=     	security net
 
 HOMEPAGE=		http://lcamtuf.coredump.cx/p0f.shtml
-
-MAINTAINER=		Nigel Taylor <nigel@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

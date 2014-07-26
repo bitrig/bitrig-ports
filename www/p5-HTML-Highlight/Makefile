@@ -4,10 +4,8 @@ COMMENT=	module to highlight words or patterns in HTML documents
 
 MODULES=	cpan
 DISTNAME=	HTML-Highlight-0.20
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Artistic + GPL
 PERMIT_PACKAGE_CDROM=  Yes

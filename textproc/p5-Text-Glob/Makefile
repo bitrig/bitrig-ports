@@ -4,6 +4,7 @@ COMMENT=	match globbing patterns against text
 
 MODULES=	cpan
 DISTNAME=	Text-Glob-0.09
+REVISION=	0
 CATEGORIES=	textproc
 
 # perl

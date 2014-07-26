@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=calc/} \
 		ftp://ftp.uu.net/pub/calc/ \
 		ftp://reality.sgi.com/chongo/src/calc/
 
-REVISION=	0
+REVISION=	1
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes
@@ -16,7 +16,6 @@ WANTLIB=		c curses readline
 LIB_DEPENDS=		devel/readline
 
 HOMEPAGE=	http://www.isthe.com/chongo/tech/comp/calc
-MAINTAINER=	Wilbern Cobb <wcobb@openbsd.org>
 
 MAKE_FLAGS=\
 	BINDIR='$${DESTDIR}${PREFIX}/bin' \

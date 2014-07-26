@@ -4,6 +4,7 @@ COMMENT=		high quality print drivers for foomatic and CUPS
 
 V=			5.2.10
 DISTNAME=		gutenprint-${V}
+REVISION=		0
 
 MAJOR_V=		${V:C/^([0-9]+\.[0-9]+).*/\1/}
 SUBST_VARS=		MAJOR_V
@@ -15,8 +16,6 @@ EXTRACT_SUFX=		.tar.bz2
 SHARED_LIBS +=  gutenprint           2.0      # 5.0
 
 HOMEPAGE=		http://gimp-print.sourceforge.net/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,13 +5,11 @@ COMMENT =		Python web development megaframework
 MODPY_EGG_VERSION =	1.1.1
 DISTNAME =		TurboGears-${MODPY_EGG_VERSION}
 PKGNAME =		py-turbogears-${MODPY_EGG_VERSION}
-REVISION =		2
+REVISION =		3
 
 CATEGORIES =		www
 
 HOMEPAGE =		http://www.turbogears.org/
-
-MAINTAINER=		Martynas Venckus <martynas@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

@@ -11,9 +11,9 @@ COMMENT-doc =		documentation for GHC
 
 DISTNAME =		ghc-${MODGHC_VER}
 PKGNAME-main =		ghc-${MODGHC_VER}
-REVISION-main =		1
+REVISION-main =		2
 PKGNAME-doc =		ghc-doc-${MODGHC_VER}
-REVISION-doc =		0
+REVISION-doc =		1
 CATEGORIES =		lang devel
 HOMEPAGE =		http://www.haskell.org/ghc/
 

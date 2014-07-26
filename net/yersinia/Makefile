@@ -4,11 +4,9 @@ COMMENT =	framework for analysis of layer 2 network protocols
 
 DISTNAME =	yersinia-0.7.1
 CATEGORIES =	net security
-REVISION =	3
+REVISION =	4
 
 HOMEPAGE =	http://www.yersinia.net/
-
-MAINTAINER =	Steven Mestdagh <steven@openbsd.org>
 
 # GPL v2
 PERMIT_PACKAGE_CDROM =		Yes

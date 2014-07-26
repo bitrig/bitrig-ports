@@ -5,12 +5,10 @@ COMMENT=	external SPF policy checker for postfix
 MODPY_EGG_VERSION=1.2
 DISTNAME=	pypolicyd-spf-${MODPY_EGG_VERSION}
 PKGNAME=	py-policyd-spf-${MODPY_EGG_VERSION}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 
 HOMEPAGE=	http://www.openspf.org
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

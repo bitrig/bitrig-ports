@@ -6,6 +6,7 @@ GH_VER=			v0.21.0
 V=			${GH_VER:S/v//}
 PROJECT=		pygit2
 PKGNAME=		py-git2-$V
+REVISION=		0
 
 MASTER_SITES=		https://github.com/libgit2/${PROJECT}/archive/
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}{${GH_VER}${EXTRACT_SUFX}}

@@ -4,7 +4,7 @@ COMMENT=		simple word wrapping routine
 
 MODULES=		cpan
 DISTNAME=		Text-Wrapper-1.02
-REVISION=		0
+REVISION=		1
 CATEGORIES=		textproc
 
 # perl

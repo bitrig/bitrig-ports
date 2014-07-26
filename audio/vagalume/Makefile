@@ -5,7 +5,7 @@ COMMENT=		last.fm client for GNOME
 V=			0.8.2
 DISTNAME=		vagalume_$V.orig
 PKGNAME=		vagalume-$V
-REVISION=		12
+REVISION=		13
 CATEGORIES=		audio x11
 
 HOMEPAGE=		http://vagalume.igalia.com/

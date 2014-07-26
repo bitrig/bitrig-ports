@@ -6,13 +6,11 @@ COMMENT=	graphical subversion client
 VERSION=	0.12.1
 DISTNAME=	rapidsvn-${VERSION}
 CATEGORIES=	devel
-REVISION=	5
+REVISION=	6
 
 HOMEPAGE=	http://www.rapidsvn.org/
 
 SHARED_LIBS=	svncpp	1.0
-
-MAINTAINER=	Vlad Glagolev <stealth@sourcemage.org>
 
 MASTER_SITES=	${HOMEPAGE}download/release/${VERSION}/
 

@@ -3,6 +3,7 @@
 COMMENT=	cuddlesome teddy for the X11 desktop
 
 DISTNAME=	xteddy-2.2
+REVISION=	0
 CATEGORIES=	games
 
 HOMEPAGE=	http://staffwww.itn.liu.se/~stegu/xteddy/

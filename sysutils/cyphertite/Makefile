@@ -3,10 +3,10 @@
 COMMENT =		tar-like secure remote deduplicating archiver
 
 DISTNAME =		cyphertite-2.0.0
+REVISION =		0
 CATEGORIES =		sysutils archivers security
 
 HOMEPAGE =		https://www.cyphertite.com/
-MAINTAINER =		David Hill <dhill@mindcry.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

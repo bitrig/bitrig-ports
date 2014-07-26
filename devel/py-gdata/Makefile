@@ -5,10 +5,10 @@ COMMENT =	Python client library for Google data APIs
 MODPY_EGG_VERSION = 2.0.18
 DISTNAME =	gdata-${MODPY_EGG_VERSION}
 PKGNAME =	py-gdata-${MODPY_EGG_VERSION}
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	https://code.google.com/p/gdata-python-client/
-MAINTAINER =	frantisek holop <minusf@obiit.org>
 
 # Apache License 2.0
 PERMIT_PACKAGE_CDROM =	Yes

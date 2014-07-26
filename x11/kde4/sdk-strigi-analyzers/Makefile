@@ -2,6 +2,7 @@
 
 COMMENT =	Strigi analyzers for development files
 DISTNAME =	kdesdk-strigi-analyzers-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	devel textproc
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/kdesdk-strigi-analyzers

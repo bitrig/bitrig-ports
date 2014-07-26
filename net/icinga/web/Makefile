@@ -3,7 +3,7 @@
 COMMENT =	web UI for icinga
 
 V =		1.11.0
-REVISION =	0
+REVISION =	1
 DISTNAME =	icinga-web-$V
 
 MASTER_SITES =	https://github.com/Icinga/icinga-web/releases/download/v$V/

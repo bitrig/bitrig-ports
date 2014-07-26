@@ -5,11 +5,9 @@ COMMENT =		C/C++ static checker
 DISTNAME =		cppcheck-1.65
 
 CATEGORIES =		devel
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE =		http://cppcheck.sourceforge.net/
-
-MAINTAINER =		Gleydson Soares <gsoares@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

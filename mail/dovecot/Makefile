@@ -20,10 +20,10 @@ PKGNAME-postgresql= dovecot-postgresql-${V_DOVECOT}
 CATEGORIES=	mail
 MASTER_SITES=	${HOMEPAGE}releases/${V_MAJOR}/
 
-REVISION-server=	2
-REVISION-ldap=		1
-REVISION-mysql=		1
-REVISION-postgresql=	1
+REVISION-server=	3
+REVISION-ldap=		2
+REVISION-mysql=		2
+REVISION-postgresql=	2
 
 SHARED_LIBS=	dovecot-compression 0.0 \
 		dovecot-lda	2.0 \
@@ -33,8 +33,6 @@ SHARED_LIBS=	dovecot-compression 0.0 \
 		dovecot		2.0
 
 HOMEPAGE=	http://www.dovecot.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # LGPLv2.1 and MIT
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,12 +3,10 @@
 COMMENT=	window manager improved - key driven window manager
 
 DISTNAME=	wmi-10
-REVISION=	5
+REVISION=	6
 CATEGORIES=	x11
 
 HOMEPAGE=	http://wmi.suckless.org/
-
-MAINTAINER=	Julian Frede <julian.frede@gmail.com>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

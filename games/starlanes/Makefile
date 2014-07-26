@@ -3,6 +3,7 @@
 COMMENT=	classic space-age stock trading game
 
 DISTNAME=	starlanes-1.2.2
+REVISION=	0
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=games/strategy/}
 

@@ -4,10 +4,8 @@ COMMENT=	library for enabling X-WSSE authentication in LWP
 
 MODULES=	cpan
 DISTNAME=	LWP-Authen-Wsse-0.05
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

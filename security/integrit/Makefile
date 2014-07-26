@@ -3,11 +3,10 @@
 COMMENT=		file integrity checker
 
 DISTNAME=		integrit-4.1
+REVISION=		0
 CATEGORIES=		security
 
 HOMEPAGE=		http://sourceforge.net/projects/integrit/
-
-MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

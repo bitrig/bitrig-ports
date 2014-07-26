@@ -3,10 +3,8 @@
 COMMENT= 	rudimentary profiling module for Template Toolkit
 
 DISTNAME=	Template-Timer-0.04
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

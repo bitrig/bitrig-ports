@@ -4,13 +4,11 @@ COMMENT=	GTK+2 frontend to CUPS
 
 DISTNAME=	gtklp-1.3.1
 EXTRACT_SUFX=	.src.tar.gz
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	print sysutils x11
 
 HOMEPAGE=	http://gtklp.sirtobi.com/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 
 MODULES =	cpan
 DISTNAME =	Internals-1.1
-REVISION =	3
+REVISION =	4
 CATEGORIES =	devel
 
 # Perl

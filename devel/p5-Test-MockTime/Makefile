@@ -4,9 +4,8 @@ COMMENT =	replaces actual time with simulated time
 
 MODULES =	cpan
 DISTNAME =	Test-MockTime-0.12
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

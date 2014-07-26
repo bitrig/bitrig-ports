@@ -3,15 +3,13 @@
 COMMENT =		SI6 networks IPv6 toolkit
 
 VERSION =		1.4b
-REVISION =		1
+REVISION =		2
 DISTNAME =		ipv6-toolkit-v${VERSION}
 PKGNAME =		ipv6-toolkit-${VERSION}
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://www.si6networks.com/tools/ipv6toolkit/
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # GPL v3
 PERMIT_PACKAGE_CDROM =	Yes

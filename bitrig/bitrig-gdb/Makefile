@@ -12,8 +12,6 @@ WRKDIST=	${WRKDIR}/${REALDISTNAME}
 
 HOMEPAGE=	http://www.gnu.org/software/gdb/
 
-MAINTAINER=	Pascal Stumpf <Pascal.Stumpf@cubes.de>
-
 # GPLv2 and GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 

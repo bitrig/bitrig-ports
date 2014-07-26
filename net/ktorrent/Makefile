@@ -6,15 +6,13 @@ COMMENT=	BitTorrent client for KDE
 
 VERSION=	2.2.8
 DISTNAME=	ktorrent-${VERSION}
-REVISION=	12
+REVISION=	13
 CATEGORIES=	net x11 x11/kde
 EXTRACT_SUFX=	.tar.bz2
 
 MASTER_SITES=	${HOMEPAGE}downloads/${VERSION}/
 
 HOMEPAGE=	http://ktorrent.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,7 +5,7 @@ COMMENT =		audit network device configuration
 V =			0.12.0
 DISTNAME =		nipper-cli-$V
 PKGNAME =		nipper-$V
-REVISION =		2
+REVISION =		3
 CATEGORIES =		security net
 
 HOMEPAGE =		http://nipper.sf.net/

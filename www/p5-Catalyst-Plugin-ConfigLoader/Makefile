@@ -4,10 +4,9 @@ COMMENT=	catalyst plugin to Config::Any
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-ConfigLoader-0.30
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,7 +6,7 @@ COMMENT=	GnuPG extension for nautilus(1)
 
 GNOME_PROJECT=	seahorse-nautilus
 GNOME_VERSION=	3.10.1
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	security
 

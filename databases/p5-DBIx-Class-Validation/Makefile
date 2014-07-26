@@ -4,6 +4,7 @@ COMMENT=	data validation for DBIx::Class
 
 MODULES=	cpan
 DISTNAME=	DBIx-Class-Validation-0.02005
+REVISION=	0
 CATEGORIES=	databases devel
 
 # perl

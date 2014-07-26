@@ -3,13 +3,11 @@
 COMMENT=		configuration editing tool and API
 
 DISTNAME=		augeas-1.2.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=		sysutils devel
 
 SHARED_LIBS +=  augeas                    0.0 # 16.0
 SHARED_LIBS +=  fa                        0.0 # 5.0
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE=		http://augeas.net/
 

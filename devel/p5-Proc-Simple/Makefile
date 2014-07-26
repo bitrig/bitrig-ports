@@ -4,6 +4,7 @@ COMMENT =	module to launch and control background processes
 
 MODULES =	cpan
 DISTNAME =	Proc-Simple-1.31
+REVISION =	0
 CATEGORIES =	devel
 
 # perl

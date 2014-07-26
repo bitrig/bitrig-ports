@@ -2,6 +2,7 @@
 
 COMMENT =	Breakout-like game for KDE
 DISTNAME =	kbreakout-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtDeclarative lib/qt4/QtGui

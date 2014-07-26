@@ -3,11 +3,9 @@
 COMMENT=	tools to talk to GSM cellular phones
 
 DISTNAME=	gnokii-0.6.14
-REVISION=	18
+REVISION=	19
 CATEGORIES=	comms x11
 SHARED_LIBS +=	gnokii               2.7      # .3.0
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 HOMEPAGE=	http://www.gnokii.org/
 MASTER_SITES=	ftp://ftp.slackware.pl/pub/gnokii/gnokii/0.6.x/

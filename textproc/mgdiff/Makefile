@@ -4,7 +4,7 @@ COMMENT=	graphical front end to Unix diff
 
 DISTNAME=	mgdiff
 PKGNAME=	${DISTNAME}-1.0
-REVISION=	6
+REVISION=	7
 CATEGORIES=	textproc
 
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}

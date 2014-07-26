@@ -3,7 +3,7 @@
 COMMENT=	convert jpeg to compressed PostScript
 
 DISTNAME=	jpeg2ps-1.9
-REVISION =	0
+REVISION =	1
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://www.pdflib.com/products/more/jpeg2ps.html

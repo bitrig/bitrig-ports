@@ -3,10 +3,9 @@
 COMMENT=	trivial database library
 
 DISTNAME=	tdb-1.2.7
+REVISION=	0
 CATEGORIES=	databases
 SHARED_LIBS+=	tdb	3.0
-
-MAINTAINER=	Nicholas Marriott <nicm@users.sourceforge.net>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

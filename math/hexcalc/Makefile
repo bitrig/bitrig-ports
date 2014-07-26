@@ -5,7 +5,7 @@ COMMENT=	multi-radix calculator for x11
 DATE=		19951219
 DISTNAME=	hexcalc
 PKGNAME=	${DISTNAME}-${DATE}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	math
 EXTRACT_SUFX=	..tar.Z
 

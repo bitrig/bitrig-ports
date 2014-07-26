@@ -2,11 +2,11 @@
 
 COMMENT =	library for string essentials
 DISTNAME =	libestr-0.1.5
+REVISION =	0
 SHARED_LIBS +=  estr                 0.0      # 0.0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://libestr.adiscon.com/
-MAINTAINER =	David Hill <dhill@mindcry.org>
 
 # LGPLv2.1 
 PERMIT_PACKAGE_CDROM =	Yes

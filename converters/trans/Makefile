@@ -4,7 +4,7 @@ COMMENT=	character encoding converter generator package
 
 DISTNAME=	trans120
 PKGNAME=	trans-1.20
-REVISION=	1
+REVISION=	2
 CATEGORIES=	converters
 
 PERMIT_PACKAGE_CDROM=	no fee

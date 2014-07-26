@@ -2,7 +2,7 @@
 
 COMMENT=		packet generation tool
 DISTNAME=		packit-1.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 HOMEPAGE=		http://packit.sf.net/
 EXTRACT_SUFX=		.tgz

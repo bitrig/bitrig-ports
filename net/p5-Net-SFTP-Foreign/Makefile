@@ -4,6 +4,7 @@ COMMENT=	SSH File Transfer Protocol client
 
 MODULES=	cpan
 DISTNAME=	Net-SFTP-Foreign-1.71
+REVISION=	0
 CATEGORIES=	net security
 
 # perl

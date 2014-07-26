@@ -3,12 +3,10 @@
 COMMENT=	perl lint program for html
 
 DISTNAME=	weblint-1.020
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 MASTER_SITES=	http://www.perl.com/CPAN/authors/id/NEILB/
-
-MAINTAINER=	Sean Cavanaugh <seanc@cginfo.sk.ca>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

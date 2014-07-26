@@ -7,7 +7,7 @@ COMMENT =		low latency sound server
 V =			0.121.3
 DISTNAME =		jack-audio-connection-kit-${V}
 PKGNAME =		jack-${V}
-REVISION =		4
+REVISION =		5
 CATEGORIES =		audio
 
 SHARED_LIBS +=		jack		0.0	# 0.28

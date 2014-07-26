@@ -4,7 +4,7 @@ COMMENT=		utilities functions to build inside-out objects
 
 MODULES=		cpan
 DISTNAME=		Class-Std-Utils-0.0.2
-REVISION=		2
+REVISION=		3
 CATEGORIES=		devel
 
 # perl

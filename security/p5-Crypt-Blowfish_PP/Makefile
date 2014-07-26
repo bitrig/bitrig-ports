@@ -2,7 +2,7 @@
 
 COMMENT=		Blowfish encryption implemented pure Perl
 DISTNAME=		Crypt-Blowfish_PP-1.12
-REVISION=		0
+REVISION=		1
 CATEGORIES=		security
 
 # perl

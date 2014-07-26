@@ -6,10 +6,8 @@ COMMENT= 	interface to the Serpent encryption algorithm
 
 MODULES=	cpan
 DISTNAME=	Crypt-Serpent-1.01
-REVISION=	4
+REVISION=	5
 CATEGORIES=	security
-
-MAINTAINER=	Stephan A. Rickauer <stephan@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

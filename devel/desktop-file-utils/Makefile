@@ -3,13 +3,12 @@
 COMMENT=	utilities for dot.desktop entries
 
 DISTNAME=	desktop-file-utils-0.22
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	devel
 
 HOMEPAGE=	http://freedesktop.org/wiki/Software/desktop-file-utils
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

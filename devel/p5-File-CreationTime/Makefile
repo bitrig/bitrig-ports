@@ -4,11 +4,9 @@ COMMENT =	keeps track of file creation times
 
 MODULES =	cpan
 DISTNAME =	File-CreationTime-2.04
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

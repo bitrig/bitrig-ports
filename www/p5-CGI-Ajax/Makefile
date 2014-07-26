@@ -4,6 +4,7 @@ COMMENT=	AJAX framework for perl
 
 MODULES=	cpan
 DISTNAME=	CGI-Ajax-0.706
+REVISION=	0
 CATEGORIES=	www
 
 HOMEPAGE=	http://pjax.sourceforge.net/

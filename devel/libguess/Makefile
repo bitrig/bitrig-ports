@@ -6,7 +6,7 @@ COMMENT =		high-speed character set detection library
 
 DISTNAME =		libguess-1.1
 
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		guess		0.0	# 1.0
 

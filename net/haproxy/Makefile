@@ -3,6 +3,7 @@
 COMMENT =	reliable, high performance TCP/HTTP load balancer
 
 DISTNAME =	haproxy-1.4.25
+REVISION =	0
 CATEGORIES =	net www
 HOMEPAGE =	http://haproxy.1wt.eu/
 

@@ -7,10 +7,10 @@ COMMENT=	flash-card tool which optimises your learning process
 MODPY_EGG_VERSION=2.3.1
 DISTNAME=	Mnemosyne-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:L}
+REVISION=	0
 CATEGORIES=	games education
 
 HOMEPAGE=	http://www.mnemosyne-proj.org/
-MAINTAINER=	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

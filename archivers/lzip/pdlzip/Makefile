@@ -3,7 +3,7 @@
 COMMENT =		public domain implementation of the lzip data compressor
 
 DISTNAME =		pdlzip-1.5
-REVISION =		1
+REVISION =		2
 
 HOMEPAGE =		http://lzip.nongnu.org/pdlzip.html
 

@@ -4,10 +4,8 @@ COMMENT=	checks intelligently if files have changed
 
 MODULES=	cpan
 DISTNAME=	File-Modified-0.07
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

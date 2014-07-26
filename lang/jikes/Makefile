@@ -5,13 +5,11 @@ COMMENT=compile Java source into .class files (quickly!)
 # Jikes, a fast Java compiler. 
 
 DISTNAME=	jikes-1.22
-REVISION=	5
+REVISION=	6
 CATEGORIES=	lang
 HOMEPAGE=	http://jikes.sourceforge.net/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=jikes/}
 EXTRACT_SUFX=	.tar.bz2
-
-MAINTAINER=	Ian Darwin <ian@openbsd.org>
 
 # IBM Public License
 PERMIT_PACKAGE_CDROM=	commercial contributor must indemnify all others

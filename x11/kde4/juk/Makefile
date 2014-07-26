@@ -2,6 +2,7 @@
 
 COMMENT =	music collection manager and player for KDE
 DISTNAME =	juk-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	audio
 

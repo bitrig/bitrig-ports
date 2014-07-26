@@ -8,12 +8,10 @@ SHARED_ONLY =	Yes
 COMMENT =	Oxford Oberon-2 compiler
 
 DISTNAME =	obc-2.9.2
-REVISION =	0
+REVISION =	1
 CATEGORIES =	lang
 
 HOMEPAGE =	http://spivey.oriel.ox.ac.uk/corner/Oxford_Oberon-2_compiler
-
-MAINTAINER =	Alexander Shiryaev <shiryaev.a.v@gmail.com>
 
 # BSD-3
 PERMIT_PACKAGE_CDROM =	Yes

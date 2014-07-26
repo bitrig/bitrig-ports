@@ -4,12 +4,10 @@ COMMENT=        lexically scoped resource management
 
 MODULES=	cpan
 DISTNAME=	Scope-Guard-0.20
-REVISION=	0
+REVISION=	1
 CATEGORIES=     devel
 
 CPAN_AUTHOR=	CHOCOLATE
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

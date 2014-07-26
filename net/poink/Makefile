@@ -4,11 +4,10 @@ COMMENT=	nosuid, secure TCP/IP ping
 
 DISTNAME=	poink
 PKGNAME=	${DISTNAME}-1.6
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE=	http://lcamtuf.coredump.cx/
-
-MAINTAINER=	Artur Skura <arturs@iidea.pl>
 
 MASTER_SITES=	${HOMEPAGE}/soft/
 EXTRACT_SUFX=	.zip

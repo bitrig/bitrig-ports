@@ -7,7 +7,7 @@ VERSION =	2.8
 DISTNAME =	QScintilla-gpl-${VERSION}
 PKGNAME =	qscintilla-${VERSION}
 CATEGORIES =	editors x11
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	qscintilla2 4.0
 

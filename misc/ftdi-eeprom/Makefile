@@ -3,7 +3,7 @@
 COMMENT=	tool to program the eeprom on FTDI usb devices
 
 DISTNAME=	ftdi-eeprom-1.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	misc
 
 # BSD

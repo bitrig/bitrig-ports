@@ -3,7 +3,7 @@
 COMMENT=		ICMP active OS fingerprint scanner
 
 DISTNAME=		xprobe2-0.3
-REVISION=		1
+REVISION=		2
 CATEGORIES=    		net security
 
 HOMEPAGE=		http://xprobe.sourceforge.net/

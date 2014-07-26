@@ -4,12 +4,10 @@ COMMENT =		tests lexical similarity in texts
 
 DISTNAME =		sim_2_26
 PKGNAME =		sim-2.26
-REVISION =		1
+REVISION =		2
 CATEGORIES =		textproc
 
 HOMEPAGE =		http://www.cs.vu.nl/~dick/sim.html
-
-MAINTAINER =     	Laurent Fanis <laurent.fanis@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

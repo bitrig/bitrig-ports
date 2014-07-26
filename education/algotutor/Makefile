@@ -3,12 +3,10 @@
 COMMENT=	interactive tutorial for algorithms and data structures
 
 DISTNAME=	algotutor-0.8.6
-REVISION=		0
+REVISION=		1
 CATEGORIES=	education math
 
 HOMEPAGE=	http://people.ofset.org/~ckhung/p/algotutor/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

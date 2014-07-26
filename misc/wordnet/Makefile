@@ -4,13 +4,11 @@ COMMENT=		browser for a large lexical database of English
 V=			3.0
 DISTNAME=		WordNet-$V
 PKGNAME=		wordnet-$V
-REVISION=		4
+REVISION=		5
 
 CATEGORIES=		misc
 
 HOMEPAGE=		http://wordnet.princeton.edu/
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

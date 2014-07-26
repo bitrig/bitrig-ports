@@ -4,7 +4,7 @@ BROKEN-macppc =	make: don't know how to make all
 
 COMMENT =	object-relational SQL database
 DISTNAME =	virtuoso-opensource-6.1.6
-REVISION =	2
+REVISION =	3
 PKGNAME =	${DISTNAME:C/-opensource//}
 
 CATEGORIES =	databases

@@ -5,7 +5,7 @@ COMMENT=	rpm2cpio converter in Perl
 DISTNAME=	rpm2cpio-1.3
 CATEGORIES=	converters archivers
 
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	http://www.freebsd.org/cgi/cvsweb.cgi/ports/archivers/rpm2cpio/
 

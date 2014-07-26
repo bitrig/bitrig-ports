@@ -7,13 +7,13 @@ COMMENT-wavpack=	Wavpack input plugin for cmus
 V=			2.5.0
 DISTNAME=		cmus-v$(V)
 PKGNAME-main=		cmus-$(V)
+REVISION=		0
 PKGNAME-flac=		cmus-flac-$(V)
 PKGNAME-wavpack=	cmus-wavpack-$(V)
 
 CATEGORIES=		audio
 
 HOMEPAGE=		http://cmus.sourceforge.net/
-MAINTAINER=		Donovan Watteau <tsoomi@gmail.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

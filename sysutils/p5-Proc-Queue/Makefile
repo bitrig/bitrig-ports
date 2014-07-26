@@ -3,11 +3,9 @@
 COMMENT=	limits the number of forked concurrent processes
 
 DISTNAME=	Proc-Queue-1.23
-REVISION=	0
+REVISION=	1
 CATEGORIES=	sysutils
 MODULES=	cpan
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

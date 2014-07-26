@@ -4,15 +4,13 @@ COMMENT =		terminal status monitor for Tor
 
 V =			1.4.5.0
 DISTNAME =		arm-${V}
-REVISION =		1
+REVISION =		2
 
 SUBST_VARS +=		V
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://www.atagar.com/arm/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

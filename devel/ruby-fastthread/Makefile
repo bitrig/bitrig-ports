@@ -3,7 +3,7 @@
 COMMENT=	optimized replacement for Ruby thread.rb primitives
 
 DISTNAME=	fastthread-1.0.7
-REVISION=	9
+REVISION=	10
 CATEGORIES=	devel
 
 # Ruby's license

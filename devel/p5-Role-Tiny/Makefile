@@ -4,9 +4,9 @@ COMMENT =	minimalist role composition tool
 
 MODULES =	cpan
 DISTNAME =	Role-Tiny-1.003003
+REVISION =	0
 CATEGORIES =	devel
 
-MAINTAINER =    Sergey Bronnikov <estetus@gmail.com>
 CPAN_AUTHOR =	HAARG
 
 # Perl

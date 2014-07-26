@@ -4,7 +4,7 @@ COMMENT=		FLTK Virtual styles, list, table, and complex table Widgets
 
 DISTNAME=		flvw-20000224
 PKGNAME=		flvw-1.0
-REVISION=		2
+REVISION=		3
 
 CATEGORIES=		x11 devel
 

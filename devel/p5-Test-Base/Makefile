@@ -5,6 +5,7 @@ COMMENT= 	data driven test framework
 MODULES=	cpan 
 
 DISTNAME=	Test-Base-0.60
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

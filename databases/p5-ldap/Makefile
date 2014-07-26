@@ -3,6 +3,7 @@
 COMMENT=	client interface to LDAP servers
 
 VERSION=	0.57
+REVISION=	0
 EPOCH=		0
 DISTNAME=	perl-ldap-${VERSION}
 PKGNAME=	p5-ldap-${VERSION}

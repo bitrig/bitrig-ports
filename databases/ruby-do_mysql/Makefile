@@ -4,6 +4,7 @@ COMMENT=		ruby-data_objects driver for MySQL
 
 V=			0.10.14
 DISTNAME=		do_mysql-${V}
+REVISION=		0
 CATEGORIES=		databases
 
 # MIT

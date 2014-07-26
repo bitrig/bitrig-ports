@@ -4,11 +4,9 @@ COMMENT=		find URIs in arbitrary text
 
 MODULES=		cpan
 DISTNAME=		URI-Find-0.16
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www
 USE_GROFF =		Yes
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Artistic/GPL
 PERMIT_PACKAGE_CDROM=	Yes

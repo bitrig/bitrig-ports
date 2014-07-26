@@ -5,6 +5,7 @@ COMMENT=	SSH and SFTP protocol implementation
 CATEGORIES=	net
 
 VERSION=	11.1.0
+REVISION=	0
 DISTNAME=	TwistedConch-${VERSION}
 PKGNAME=	py-twisted-conch-${VERSION}
 

@@ -5,13 +5,12 @@ COMMENT=	caching IMAP proxy to be used with webmail clients
 VER=		1.2.7
 DISTNAME=	squirrelmail-imap_proxy-${VER}
 PKGNAME=	imapproxy-${VER}
+REVISION=	0
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=squirrelmail/}
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	http://www.imapproxy.org/
-
-MAINTAINER=	Holger Mauermann <holger@mauermann.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,13 +6,11 @@ VER=		1.2.5-1
 DISTNAME=	rackmonkey-${VER}
 PKGNAME=	rackmonkey-${VER:S/-/./}
 
-REVISION=	6
+REVISION=	7
 
 CATEGORIES=	www net databases
 
 HOMEPAGE=	http://flux.org.uk/projects/rackmonkey/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+, icons CC:Attribution 2.5
 PERMIT_PACKAGE_CDROM=	Yes

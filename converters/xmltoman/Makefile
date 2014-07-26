@@ -3,11 +3,10 @@
 COMMENT=		xml to manpage converter
 
 DISTNAME=		xmltoman-0.4
+REVISION=		0
 CATEGORIES=		converters textproc
 
 HOMEPAGE=		http://sourceforge.net/projects/xmltoman/
-
-MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

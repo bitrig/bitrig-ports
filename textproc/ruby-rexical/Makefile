@@ -3,7 +3,7 @@
 COMMENT=		lexical scanner generator for use with Racc
 
 DISTNAME=		rexical-1.0.5
-REVISION =		0
+REVISION =		1
 CATEGORIES=		textproc
 
 HOMEPAGE=		https://github.com/tenderlove/rexical

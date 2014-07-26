@@ -3,11 +3,10 @@
 COMMENT=		text based IM client
 
 DISTNAME=		centerim-4.22.10
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.centerim.org/
-MAINTAINER=		Gonzalo L. R. <gonzalo@x61.com.ar>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

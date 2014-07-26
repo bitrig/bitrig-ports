@@ -5,15 +5,13 @@ ONLY_FOR_ARCHS =	i386 amd64
 COMMENT =		reset NT/W2K/XP/Vista/W7 password
 
 V =			100627
-REVISION =		2
+REVISION =		3
 DISTNAME =		chntpw-source-${V}
 PKGNAME =		chntpw-${V}
 EXTRACT_SUFX =		.zip
 CATEGORIES =		security
 
 HOMEPAGE =		http://pogostick.net/~pnh/ntpasswd/
-
-MAINTAINER =		Ian Darwin <ian@openbsd.org>
 
 # Mix of GPL and LGPL
 PERMIT_PACKAGE_CDROM =	Yes

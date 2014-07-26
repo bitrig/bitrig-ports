@@ -5,7 +5,7 @@ COMMENT=	ab initio MOLecular DENsity display program
 V=		4.6
 DISTNAME=	molden${V}
 PKGNAME=	molden-${V}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	biology graphics
 
 HOMEPAGE=	http://www.cmbi.ru.nl/molden/molden.html

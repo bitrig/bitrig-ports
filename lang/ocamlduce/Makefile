@@ -7,9 +7,9 @@ BROKEN=		"needs update to match OCaml 4.00"
 
 V=		3.12.1.0
 DISTNAME=	ocamlduce-${V}
+REVISION=	0
 MASTER_SITES=	https://forge.ocamlcore.org/frs/download.php/644/
 
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 HOMEPAGE=	http://www.cduce.org/ocaml.html
 
 PERMIT_PACKAGE_CDROM=	Yes

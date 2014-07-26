@@ -5,7 +5,7 @@ COMMENT=	SPE -- Stani's Python Editor
 V=		0.8.4
 DISTNAME=	spe-$V.h-wx2.6.1.0
 PKGNAME=	spe-$Vh
-REVISION=	6
+REVISION=	7
 CATEGORIES=	devel
 
 HOMEPAGE=	http://pythonide.stani.be/

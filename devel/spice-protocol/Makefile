@@ -3,11 +3,10 @@
 COMMENT=	SPICE protocol headers
 
 DISTNAME=	spice-protocol-0.12.6
+REVISION=	0
 CATEGORIES=	devel net
 
 HOMEPAGE=	http://www.spice-space.org/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

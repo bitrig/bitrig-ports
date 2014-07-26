@@ -4,6 +4,7 @@ COMMENT=		find and use installed modules in a (sub)category
 
 MODULES=		cpan
 DISTNAME=		Module-Find-0.12
+REVISION=		0
 CATEGORIES=		devel
 
 # Artistic

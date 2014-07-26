@@ -4,6 +4,7 @@ COMMENT =	simple perl web app framework
 
 MODULES =	cpan
 DISTNAME =	Dancer-1.3111
+REVISION =	0
 CATEGORIES =	www
 
 # perl

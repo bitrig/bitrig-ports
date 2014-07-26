@@ -4,7 +4,7 @@ COMMENT=		GNOME help browser
 
 GNOME_PROJECT=		yelp
 GNOME_VERSION=		3.12.0
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  yelp                 0.0      # unknown
 

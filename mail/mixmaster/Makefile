@@ -3,7 +3,7 @@
 COMMENT=	client for anonymous remailing
 
 DISTNAME=	mixmaster-2.9.1
-REVISION =	1
+REVISION =	2
 CATEGORIES=	mail security
 
 # custom

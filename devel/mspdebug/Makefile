@@ -5,11 +5,9 @@ COMMENT=		debugger for use with MSP 430 MCUs
 DISTNAME=		mspdebug-0.22
 CATEGORIES=		devel
 
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://mspdebug.sourceforge.net/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

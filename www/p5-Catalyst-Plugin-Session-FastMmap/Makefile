@@ -4,9 +4,8 @@ COMMENT=	FastMmap sessions for Catalyst (deprecated)
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-Session-FastMmap-0.13
+REVISION=	0
 CATEGORIES=	www
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

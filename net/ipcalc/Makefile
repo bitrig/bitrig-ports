@@ -3,11 +3,10 @@
 COMMENT=	small network calculator
 
 DISTNAME=	ipcalc-1.4
+REVISION=	0
 CATEGORIES=	net
 
 HOMEPAGE=	https://github.com/pyr/ipcalc
-
-MAINTAINER=	Pierre-Yves Ritschard <pyr@spootnik.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

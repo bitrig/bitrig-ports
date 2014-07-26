@@ -4,6 +4,7 @@ COMMENT =	name your accessors foo() and set_foo()
 
 MODULES =	cpan
 DISTNAME =	MooseX-SemiAffordanceAccessor-0.09
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

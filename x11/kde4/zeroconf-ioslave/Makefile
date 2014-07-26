@@ -2,6 +2,7 @@
 
 COMMENT =	KDE monitoring of Zeroconf services
 DISTNAME =	zeroconf-ioslave-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	network
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdenetwork/zeroconf-ioslave

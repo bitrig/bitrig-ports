@@ -3,7 +3,7 @@
 COMMENT=	identify or delete duplicates
 
 DISTNAME=	fdupes-1.40
-REVISION =	2
+REVISION =	3
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://netdial.caribe.net/~adrian2/fdupes.html

@@ -4,8 +4,6 @@ DIST_SUBDIR ?=	alephone
 
 CATEGORIES =	games
 
-MAINTAINER =	Peter Hessler <phessler@openbsd.org>
-
 MASTER_SITES =	http://trilogyrelease.bungie.org/files/
 MASTER_SITES0 =	ftp://ftp2.fileball.net/fileball/marathon/aleph1/alterations/
 MASTER_SITES1 =	http://www.lhowon.org/

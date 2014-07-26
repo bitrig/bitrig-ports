@@ -4,10 +4,8 @@ COMMENT=	check validity of Internet email addresses
 
 MODULES=	cpan
 DISTNAME=	Email-Valid-0.184
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

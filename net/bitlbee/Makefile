@@ -4,11 +4,9 @@ COMMENT=		IRC proxy to connect to AIM, ICQ, Jabber, MSN and Yahoo
 
 DISTNAME=		bitlbee-3.2.1
 CATEGORIES=		net
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://bitlbee.org/
-
-MAINTAINER=		Tom Doherty <tom@singlesecond.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

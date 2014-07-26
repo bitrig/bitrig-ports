@@ -4,12 +4,11 @@ COMMENT-main=		high performance webserver written in Erlang, libraries
 COMMENT-web=		high performance webserver written in Erlang, docroot
 
 VERSION=		1.96
+REVISION=		0
 DISTNAME=		yaws-${VERSION}
 PKGNAME-main=		yaws-${VERSION}
 PKGNAME-web=		yaws-web-${VERSION}
 CATEGORIES=		www
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE=		http://yaws.hyber.org/
 

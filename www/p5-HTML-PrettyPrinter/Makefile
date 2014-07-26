@@ -3,6 +3,7 @@
 COMMENT=		generate nice HTML files from HTML syntax trees
 
 DISTNAME=		HTML-PrettyPrinter-0.03
+REVISION=		0
 CATEGORIES=		www textproc
 
 # perl

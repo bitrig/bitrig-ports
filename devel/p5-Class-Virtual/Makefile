@@ -3,7 +3,7 @@ COMMENT=	base class for virtual base classes
 
 MODULES=	cpan
 DISTNAME=	Class-Virtual-0.06
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

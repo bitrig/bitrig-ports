@@ -3,14 +3,12 @@
 COMMENT=	create, alter and inspect Matroska files
 
 DISTNAME=	mkvtoolnix-4.0.0
-REVISION=	4
+REVISION=	5
 CATEGORIES=	multimedia x11
 MASTER_SITES=	${HOMEPAGE}/sources/
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE =	http://www.bunkus.org/videotools/mkvtoolnix/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

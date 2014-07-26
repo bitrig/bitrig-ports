@@ -5,13 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	scim input method module for pinyin
 
 DISTNAME=	scim-pinyin-0.5.91
-REVISION=	6
+REVISION=	7
 
 CATEGORIES=	inputmethods chinese
 
 HOMEPAGE=	http://www.scim-im.org/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

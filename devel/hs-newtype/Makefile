@@ -3,7 +3,7 @@
 COMMENT =		typeclass and functions for working with newtypes
 
 DISTNAME=		newtype-0.2
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 # BSD3

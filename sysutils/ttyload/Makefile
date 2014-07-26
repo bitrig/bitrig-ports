@@ -3,12 +3,11 @@
 COMMENT =		load average history on a tty
 
 DISTNAME =		ttyload-0.5.3
+REVISION =		0
 
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://www.daveltd.com/src/util/ttyload/
-
-MAINTAINER =		Brian Callahan <bcallah@devio.us>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

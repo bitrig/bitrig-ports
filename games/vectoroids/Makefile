@@ -4,7 +4,7 @@ COMMENT=	vector-based, pretty, Asteroids clone
 
 VERSION=	1.1.0
 DISTNAME=	vectoroids-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES=	games x11
 
 HOMEPAGE=	http://www.newbreedsoftware.com/vectoroids/

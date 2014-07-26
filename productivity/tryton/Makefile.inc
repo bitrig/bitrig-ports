@@ -8,8 +8,6 @@ CATEGORIES +=		productivity productivity/tryton
 
 HOMEPAGE=		http://www.tryton.org/
 
-MAINTAINER ?=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 

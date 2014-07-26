@@ -6,9 +6,7 @@ COMMENT =	perl module to validate function/method parameters
 
 DISTNAME =	Params-Validate-1.09
 CATEGORIES =	devel
-REVISION =	0
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
+REVISION =	1
 
 # artistic_2
 PERMIT_PACKAGE_CDROM =	Yes

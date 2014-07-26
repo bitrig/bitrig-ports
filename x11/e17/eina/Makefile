@@ -3,6 +3,7 @@
 COMMENT =		EFL API for data types
 
 VERSION = 		1.7.9
+REVISION = 		0
 DISTNAME =		eina-${VERSION}
 EPOCH =			1
 

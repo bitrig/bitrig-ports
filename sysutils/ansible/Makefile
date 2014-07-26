@@ -4,12 +4,11 @@ COMMENT =		ssh based config management framework
 
 MODPY_EGG_VERSION =	1.6.6
 DISTNAME =		ansible-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://www.ansible.com/
-
-MAINTAINER =		Robert Peichaer <rpe@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

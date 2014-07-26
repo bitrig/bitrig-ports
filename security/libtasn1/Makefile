@@ -3,13 +3,12 @@
 COMMENT=		Abstract Syntax Notation One structure parser library
 
 DISTNAME=		libtasn1-4.0
+REVISION=		0
 CATEGORIES=		security
 
 SHARED_LIBS +=  tasn1                3.2      # 9.0
 
 HOMEPAGE=		https://www.gnu.org/software/gnutls/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

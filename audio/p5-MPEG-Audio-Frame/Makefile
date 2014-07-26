@@ -4,7 +4,7 @@ COMMENT=	class for weeding out MPEG audio frames from a file handle
 
 MODULES=	cpan
 DISTNAME=	MPEG-Audio-Frame-0.09
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 
 # perl

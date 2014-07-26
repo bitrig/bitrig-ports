@@ -3,7 +3,7 @@
 COMMENT=	visual mail, user and print face server
 
 DISTNAME=	faces-1.6.1
-REVISION =	1
+REVISION =	2
 SHARED_LIBS=	compface	1.0
 CATEGORIES=	mail
 

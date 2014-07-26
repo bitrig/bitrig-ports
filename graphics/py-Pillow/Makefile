@@ -5,6 +5,7 @@ COMMENT=		Python Imaging Library (fork)
 MODPY_EGG_VERSION=	2.4.0
 DISTNAME=		Pillow-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
+REVISION=		0
 CATEGORIES=		graphics
 
 HOMEPAGE=		https://github.com/python-imaging/Pillow

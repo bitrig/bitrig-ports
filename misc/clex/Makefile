@@ -3,11 +3,10 @@
 COMMENT=		commandline shell and file manager
 
 DISTNAME=		clex-3.15
+REVISION=		0
 CATEGORIES=		misc
 
 HOMEPAGE=		http://www.clex.sk/
-
-MAINTAINER=		Victor Sahlstedt <salan@legonet.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

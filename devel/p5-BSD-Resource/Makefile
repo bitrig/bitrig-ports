@@ -5,11 +5,9 @@ SHARED_ONLY =		Yes
 COMMENT =		BSD process resource limit and priority functions
 
 DISTNAME =		BSD-Resource-1.2907
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Artistic 2.0 or LGPL 2.0
 PERMIT_PACKAGE_CDROM =	Yes

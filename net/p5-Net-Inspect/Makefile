@@ -3,10 +3,9 @@
 COMMENT =		library for inspection of data on various network layers
 
 DISTNAME =		Net-Inspect-0.304
+REVISION =		0
 
 CATEGORIES =		net
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

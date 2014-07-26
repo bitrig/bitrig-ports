@@ -3,15 +3,13 @@
 COMMENT=	format files for printing on PostScript printers
 
 DISTNAME=	a2ps-4.14
-REVISION=	9
+REVISION=	10
 
 SHARED_LIBS +=  a2ps                 2.0      # 2.0
 
 CATEGORIES=	print
 
 HOMEPAGE=	https://www.gnu.org/software/a2ps/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv3 or later, includes AFM files from Adobe with still unclear
 # terms (see ${WRKSRC}/afm/MustRead.html).

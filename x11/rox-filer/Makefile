@@ -3,11 +3,10 @@
 COMMENT=		GTK+-2 file manager with desktop features
 
 DISTNAME=		rox-filer-2.11
+REVISION=		0
 CATEGORIES=		x11
 
 HOMEPAGE=		http://roscidus.com/desktop/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

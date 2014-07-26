@@ -4,6 +4,7 @@ ONLY_FOR_ARCHS-java =	i386 amd64
 COMMENT-main =		syntactic parser of different languages
 COMMENT-java =		Java bindings for link-grammar
 VERSION =		5.0.8
+REVISION =		0
 DISTNAME =		link-grammar-${VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-java =		link-grammar-java-${VERSION}

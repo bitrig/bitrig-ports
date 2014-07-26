@@ -3,12 +3,10 @@
 COMMENT=	print ascii formatted tree of a directory structure
 
 DISTNAME=	tree-0.61
-REVISION =	3
+REVISION =	4
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://spootnik.org/tree/
-
-MAINTAINER=	Pierre-Yves Ritschard <pyr@spootnik.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

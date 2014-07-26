@@ -3,9 +3,8 @@
 COMMENT=		industrial-grade ticketing system
 
 DISTNAME=		rt-4.0.20
+REVISION=		0
 CATEGORIES=		www
-
-MAINTAINER=		Robert Nagy <robert@openbsd.org>
 
 HOMEPAGE=		http://www.bestpractical.com/rt/
 

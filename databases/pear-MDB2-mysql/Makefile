@@ -5,7 +5,7 @@ COMMENT=	database abstraction layer for PHP
 V=		1.4.1
 DISTNAME=	MDB2_Driver_mysql-${V}
 PKGNAME=	pear-MDB2-mysql-${V}
-REVISION=	7
+REVISION=	8
 CATEGORIES=	net databases
 
 MODULES=	lang/php www/pear

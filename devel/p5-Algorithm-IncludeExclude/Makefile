@@ -4,11 +4,9 @@ COMMENT =	build and evaluate include/exclude lists
 
 MODULES =	cpan
 DISTNAME =	Algorithm-IncludeExclude-0.01
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

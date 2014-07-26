@@ -6,7 +6,7 @@ DISTNAME=		ysmv7_2_9_9_1
 PKGNAME=		${DISTNAME:S/_/-/:S/_/./g}
 CATEGORIES=		net
 
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://ysmv7.sourceforge.net/
 

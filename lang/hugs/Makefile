@@ -4,9 +4,8 @@ COMMENT =	Haskell 98 interpreter
 
 DISTNAME =	hugs98-plus-Sep2006
 PKGNAME =	hugs98-2006.09
-REVISION =	3
+REVISION =	4
 CATEGORIES =	lang
-MAINTAINER =	Matthias Kilian <kili@openbsd.org>
 HOMEPAGE =	http://www.haskell.org/hugs/
 
 MASTER_SITES =	http://cvs.haskell.org/Hugs/downloads/2006-09/

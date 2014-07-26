@@ -3,6 +3,7 @@
 COMMENT =		fast JSON parsing and encoding
 
 DISTNAME =		aeson-0.6.2.1
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		https://github.com/bos/aeson

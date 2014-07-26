@@ -16,20 +16,21 @@ CATEGORIES =	japanese
 MULTI_PACKAGES =	-main -dict -zh -zhdict -ko -kodict -xwnmo -data
 
 PKGNAME-main =		ja-Wnn-4.2
-REVISION-main =		8
+REVISION-main =		9
 PKGNAME-dict =		ja-Wnndict-4.2
-REVISION-dict =		0
+REVISION-dict =		1
 PKGNAME-zh =		zh-Wnn-4.2
-REVISION-zh =		2
+REVISION-zh =		3
 PKGNAME-zhdict =	zh-Wnndict-4.2
-REVISION-zhdict =	0
+REVISION-zhdict =	1
 PKGNAME-ko =		ko-Wnn-4.2
-REVISION-ko =		2
+REVISION-ko =		3
 PKGNAME-kodict =	ko-Wnndict-4.2
-REVISION-kodict =	0
+REVISION-kodict =	1
 PKGNAME-xwnmo =		Wnn-xwnmo-4.2
-REVISION-xwnmo =	4
+REVISION-xwnmo =	5
 PKGNAME-data =		Wnn-data-4.2
+REVISION-data =		0
 
 WNNDICBASE =	/var
 WNNDICDIR =	${WNNDICBASE}/dict/Wnn
@@ -58,8 +59,6 @@ RUN_DEPENDS-data =
 MASTER_SITES =	ftp://ftp.u-tokyo.ac.jp/pub/Japanese/Wnn/ \
 		ftp://ports.jp.FreeBSD.org/pub/incoming/distfiles/
 DISTFILES =	Wnn4.2.tar.gz Wnn4.2.patch.tar.gz
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 #		BSD
 PERMIT_PACKAGE_CDROM =		Yes

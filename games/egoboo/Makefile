@@ -3,9 +3,9 @@
 COMMENT =		dungeon-crawling action-RPG adventure
 
 DISTNAME =		egoboo-2.7.4
+REVISION =		0
 CATEGORIES =		games
 
-MAINTAINER =		Peter Hessler <phessler@openbsd.org>
 HOMEPAGE =		http://egoboo.sourceforge.net
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=egoboo/}
 

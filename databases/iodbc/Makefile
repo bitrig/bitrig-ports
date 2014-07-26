@@ -7,6 +7,7 @@ V=			3.52.8
 
 DISTNAME=		libiodbc-$V
 PKGNAME=		iodbc-$V
+REVISION=		0
 PKGNAME-main=		iodbc-$V
 PKGNAME-admin=		iodbc-admin-$V
 
@@ -18,8 +19,6 @@ SHARED_LIBS +=		iodbcadm	3.15
 SHARED_LIBS +=		drvproxy	3.15
 
 HOMEPAGE=		http://www.iodbc.org/
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # Dual licensed: BSD or LGPLv2
 PERMIT_PACKAGE_CDROM=	yes

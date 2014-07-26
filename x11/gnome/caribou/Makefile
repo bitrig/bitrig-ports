@@ -4,7 +4,7 @@ COMMENT=	input assistive technology
 
 GNOME_PROJECT=	caribou
 GNOME_VERSION=	0.4.13
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS +=  caribou                   0.0 # 0.0
 

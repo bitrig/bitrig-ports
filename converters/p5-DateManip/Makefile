@@ -4,10 +4,9 @@ COMMENT =	manipulate dates in perl
 V =		6.39
 DISTNAME =	Date-Manip-$V
 PKGNAME =	p5-DateManip-$V
+REVISION =	0
 CATEGORIES =	converters
 MODULES =	cpan
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,6 +4,7 @@ COMMENT=	stack trace and stack trace frame objects
 
 MODULES=	cpan
 DISTNAME=	Devel-StackTrace-1.30
+REVISION=	0
 CATEGORIES=	devel
 
 # Perl

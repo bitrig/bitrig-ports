@@ -4,11 +4,9 @@ COMMENT=     		class and instance data accessor creation
 
 MODULES=		cpan
 DISTNAME=		Class-Data-Accessor-0.03
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 USE_GROFF =		Yes
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

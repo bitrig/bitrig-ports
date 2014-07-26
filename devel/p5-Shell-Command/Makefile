@@ -6,7 +6,7 @@ MODULES=	cpan
 
 DISTNAME=	ExtUtils-Command-1.12
 PKGNAME=	p5-Shell-Command-1.12
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

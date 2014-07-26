@@ -3,7 +3,7 @@
 COMMENT=	gtk PSK31 send and receive
 
 DISTNAME=	gpsk31-0.3
-REVISION=	13
+REVISION=	14
 CATEGORIES=    	comms hamradio
 
 HOMEPAGE=	http://www.qsl.net/pg4i/linux/gpsk31.html

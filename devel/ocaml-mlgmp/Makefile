@@ -3,13 +3,12 @@
 COMMENT =		GMP bindings for OCaml
 
 V =			0.13
-REVISION =		4
+REVISION =		5
 DISTNAME =		mlgmp-${V}
 PKGNAME =		ocaml-mlgmp-${V}
 
 CATEGORIES =		devel math
 HOMEPAGE =		http://caml.inria.fr/cgi-bin/hump.en.cgi?contrib=278
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,6 +3,7 @@
 COMMENT=	LLDP (802.1ab)/CDP/EDP/SONMP/FDP daemon and SNMP subagent
 
 DISTNAME=	lldpd-0.7.8
+REVISION=	0
 
 SHARED_LIBS +=	lldpctl                   0.0 # 1.0
 

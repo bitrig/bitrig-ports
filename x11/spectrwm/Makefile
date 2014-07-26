@@ -5,11 +5,11 @@ COMMENT=		small tiling window manager
 SHARED_LIBS=		swmhack 1.0
 
 DISTNAME=		spectrwm-2.5.1
+REVISION=		0
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		x11
 
 HOMEPAGE=		https://opensource.conformal.com/wiki/spectrwm
-MAINTAINER=		Gonzalo L. R. <gonzalo@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

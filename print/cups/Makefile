@@ -10,7 +10,8 @@ EXTRACT_SUFX=		.tar.bz2
 PKGNAME-main=		cups-${VERSION}
 PKGNAME-libs=		cups-libs-${VERSION}
 
-REVISION-main=		0
+REVISION-main=		1
+REVISION-libs=		0
 
 CATEGORIES=		print sysutils
 
@@ -22,8 +23,6 @@ SHARED_LIBS+=	cupsmime	1.0 # so.1
 SHARED_LIBS+=	cupsppdc	1.0 # so.1
 
 HOMEPAGE=		http://www.cups.org/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2 - LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

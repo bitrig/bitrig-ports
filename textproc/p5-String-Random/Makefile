@@ -4,7 +4,7 @@ COMMENT=	perl module for generating randoms strings
 
 MODULES=	cpan
 DISTNAME=	String-Random-0.22
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 # perl

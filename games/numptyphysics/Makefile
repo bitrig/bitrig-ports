@@ -11,9 +11,8 @@ MULTI_PACKAGES =	-main -npcomplete
 
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	games
-REVISION-main =	0
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
+REVISION-main =	1
+REVISION-npcomplete = 0
 
 HOMEPAGE =	http://numptyphysics.garage.maemo.org/
 

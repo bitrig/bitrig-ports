@@ -3,7 +3,7 @@
 COMMENT=	simple menu patterned after plan9
 
 DISTNAME=	9menu-1.7
-REVISION =	1
+REVISION =	2
 CATEGORIES=	plan9
 
 MASTER_SITES=	ftp://ftp.freefriends.org/arnold/Source/

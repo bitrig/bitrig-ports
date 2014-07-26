@@ -4,13 +4,11 @@ COMMENT=		simple pluggable hierarchical database
 
 V=			1.3.4
 DISTNAME=		hiera-${V}
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		databases
 
 HOMEPAGE=		http://projects.puppetlabs.com/projects/hiera
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Apachev2
 PERMIT_PACKAGE_CDROM=	Yes

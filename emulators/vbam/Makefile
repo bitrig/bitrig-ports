@@ -5,13 +5,11 @@ BROKEN-alpha =		ICE or OOM on hq_implementation.cpp
 
 DISTNAME =		vbam-1.8.0.1054-src
 PKGNAME =		${DISTNAME:S/-src//}
-REVISION =		7
+REVISION =		8
 
 CATEGORIES =		emulators
 
 HOMEPAGE =		http://www.vba-m.com
-
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
 
 # GPLv2+ (see doc/License.txt)
 PERMIT_PACKAGE_CDROM =		Yes

@@ -4,10 +4,8 @@ COMMENT =	JSON view for your data
 
 MODULES =	cpan
 DISTNAME =	Catalyst-View-JSON-0.33
-REVISION =	0
+REVISION =	1
 CATEGORIES =	converters www
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

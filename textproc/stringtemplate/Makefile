@@ -4,7 +4,7 @@ COMMENT=	Java template engine for generating source code, etc
 
 V=		4.0.4
 DISTNAME=	ST-$V
-REVISION=	1
+REVISION=	2
 PKGNAME=	stringtemplate-$V
 CATEGORIES=	textproc java
 

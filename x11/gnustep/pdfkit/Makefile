@@ -5,7 +5,7 @@ COMMENT =	framework for accessing and rendering PDF content
 BROKEN =	shows PDFs only white, and breaks GWorkspace on macppc
 
 DISTNAME =	PDFKit-0.9.3
-REVISION =	0
+REVISION =	1
 SHARED_LIBS +=	PDFKit	0.0
 
 HOMEPAGE =	http://wiki.gnustep.org/index.php/PDFKit

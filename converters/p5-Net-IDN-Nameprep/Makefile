@@ -3,6 +3,7 @@
 COMMENT=	stringprep profile for Internationalized Domain Names
 
 DISTNAME=	Net-IDN-Nameprep-1.101
+REVISION=	0
 CATEGORIES=	converters net
 
 # perl

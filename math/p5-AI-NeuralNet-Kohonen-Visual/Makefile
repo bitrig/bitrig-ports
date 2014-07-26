@@ -3,7 +3,7 @@
 COMMENT=		visualisation of Kohonen's Self-Organizing Maps#'
 
 DISTNAME=		AI-NeuralNet-Kohonen-Visual-0.3
-REVISION=		1
+REVISION=		2
 CATEGORIES=		math x11
 
 # perl

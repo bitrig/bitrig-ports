@@ -3,7 +3,7 @@
 COMMENT=	graphical version of traceroute
 
 DISTNAME=	xtraceroute-0.9.2
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	net x11
 

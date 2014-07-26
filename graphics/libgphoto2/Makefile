@@ -3,9 +3,8 @@
 COMMENT =	digital camera library
 CATEGORIES =	graphics devel
 
-MAINTAINER =	Antoine Jacoutot <ajacoutot@openbsd.org>
-
 VERSION =	2.5.4
+REVISION =	0
 DISTNAME =	libgphoto2-${VERSION}
 PKGNAME =	libgphoto-${VERSION}
 

@@ -4,11 +4,10 @@ COMMENT=	RSS Aggregator Without Delusions Of Grandeur
 
 MODPY_EGG_VERSION=	2.19
 DISTNAME=	rawdog-${MODPY_EGG_VERSION}
+REVISION=	0
 CATEGORIES=	www news
 
 HOMEPAGE=	http://offog.org/code/rawdog.html
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2, LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=	afterstep clock with some language extensions
 
 DISTNAME=	asclock-2.0.12
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 MASTER_SITES=	${MASTER_SITE_AFTERSTEP:=apps/asclock/} \

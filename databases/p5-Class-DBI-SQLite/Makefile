@@ -4,11 +4,9 @@ COMMENT=	extensions to Class::DBI for SQLite
 
 MODULES=	cpan
 DISTNAME=	Class-DBI-SQLite-0.11
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

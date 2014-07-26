@@ -2,6 +2,7 @@
 
 COMMENT =	planetarium simulator for KDE
 DISTNAME =	kstars-${MODKDE4_VERSION}
+REVISION =	0
 
 # Crashed after following actions:
 #   1. Enable OpenGL;

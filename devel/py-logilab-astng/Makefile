@@ -4,7 +4,7 @@ COMMENT=		Python Abstract Syntax Tree New Generation
 
 DISTNAME=		logilab-astng-0.22.0
 PKGNAME=		py-${DISTNAME}
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.logilab.org/projects/astng/

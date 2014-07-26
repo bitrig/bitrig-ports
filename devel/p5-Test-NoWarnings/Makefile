@@ -4,9 +4,8 @@ COMMENT=        forbids warnings while testing
 
 MODULES=	cpan
 DISTNAME=	Test-NoWarnings-1.04
+REVISION=	0
 CATEGORIES=     devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,10 +6,8 @@ COMMENT=	module for sending and receiving multicast messages
 
 MODULES=	cpan
 DISTNAME=	IO-Socket-Multicast-1.12
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

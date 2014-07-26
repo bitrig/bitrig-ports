@@ -11,7 +11,7 @@ COMMENT=		GNOME control center
 
 GNOME_PROJECT=		gnome-control-center
 GNOME_VERSION=		3.12.1
-REVISION=		2
+REVISION=		3
 
 CATEGORIES=		x11
 

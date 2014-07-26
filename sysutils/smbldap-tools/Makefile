@@ -3,7 +3,7 @@
 COMMENT=	tools for managing samba ldap
 
 DISTNAME=	smbldap-tools-0.9.2a
-REVISION =	3
+REVISION =	4
 CATEGORIES=	sysutils
 EXTRACT_SUFX=	.tgz
 

@@ -5,12 +5,10 @@ COMMENT =		LDAP authentication plugin for OpenVPN 2.x
 VERSION =		2.0.3
 DISTNAME =		auth-ldap-${VERSION}
 PKGNAME =		openvpn-${DISTNAME}
-REVISION =		0
+REVISION =		1
 CATEGORIES =		net security
 
 HOMEPAGE =		https://code.google.com/p/openvpn-auth-ldap/
-
-MAINTAINER =		Joel Sing <jsing@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	 Yes

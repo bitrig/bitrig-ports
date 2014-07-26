@@ -7,7 +7,7 @@ COMMENT=		thorough, stand alone memory test
 VERSION=		4.20
 DISTNAME=		memtest86+-${VERSION}
 CATEGORIES=		sysutils
-REVISION=		2
+REVISION=		3
 
 HOMEPAGE=		http://www.memtest.org/
 

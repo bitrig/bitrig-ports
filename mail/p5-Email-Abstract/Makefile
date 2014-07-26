@@ -4,11 +4,9 @@ COMMENT= 	unified interface to mail representations
 
 MODULES=	cpan
 DISTNAME=	Email-Abstract-3.001
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

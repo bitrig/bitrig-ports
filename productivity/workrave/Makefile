@@ -3,7 +3,7 @@
 COMMENT=		reminder program for prevention of RSI
 
 DISTNAME=		workrave-1.9.4
-REVISION=		8
+REVISION=		9
 CATEGORIES=		productivity x11
 
 HOMEPAGE=		http://www.workrave.org/

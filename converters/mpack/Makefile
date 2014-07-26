@@ -3,7 +3,7 @@
 COMMENT=	external MIME packer/unpacker
 
 DISTNAME=	mpack-1.6
-REVISION=	1
+REVISION=	2
 CATEGORIES=	converters mail news
 
 # BSD

@@ -7,6 +7,7 @@ COMMENT =		Netscape Portable Runtime
 
 VER=			4.10.6
 DISTNAME=		nspr-${VER}
+REVISION=		0
 
 SO_VERSION=		23.1
 .for _lib in nspr4 plc4 plds4
@@ -16,8 +17,6 @@ SHARED_LIBS+=		${_lib} ${SO_VERSION}
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.mozilla.org/projects/nspr/index.html
-
-MAINTAINER=		Landry Breuil <landry@openbsd.org>
 
 WANTLIB=		c pthread
 

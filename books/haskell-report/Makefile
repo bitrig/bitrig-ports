@@ -5,12 +5,11 @@ COMMENT =		language and library specification for Haskell
 V =			2010
 DISTNAME =		haskell$V-html
 PKGNAME =		haskell-report-$V
+REVISION =		0
 
 CATEGORIES =		books lang
 
 HOMEPAGE =		http://haskell.org/haskellwiki/Language_and_library_specification
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # Copy and distribute for any purpose, but only completely.
 # When modified, mark as such and don't call the thing Haskell.

@@ -6,7 +6,7 @@ V=		3.02.02
 DISTNAME=	tesseract-ocr-${V}
 PKGNAME=	tesseract-${V}
 WRKDIST=	${WRKDIR}/tesseract-ocr
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=  tesseract            3.1      # 3.2
 

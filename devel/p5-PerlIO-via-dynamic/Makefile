@@ -4,10 +4,8 @@ COMMENT=	create dynamic PerlIO layers
 
 MODULES=	cpan
 DISTNAME=	PerlIO-via-dynamic-0.13
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

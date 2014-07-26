@@ -11,9 +11,9 @@ DISTNAME=	luadbi.$V
 PKGNAME-main=	luadbi-$V
 PKGNAME-mysql=	luadbi-mysql-$V
 PKGNAME-pgsql=	luadbi-pgsql-$V
-REVISION-main=	0
-REVISION-mysql=	2
-REVISION-pgsql=	0
+REVISION-main=	1
+REVISION-mysql=	3
+REVISION-pgsql=	1
 
 CATEGORIES=	databases
 

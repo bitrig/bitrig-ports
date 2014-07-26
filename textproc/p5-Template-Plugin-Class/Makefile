@@ -4,6 +4,7 @@ COMMENT=		template extension for calling class methods
 
 MODULES=		cpan
 DISTNAME=		Template-Plugin-Class-0.14
+REVISION=		0
 CATEGORIES=		textproc
 USE_GROFF =		Yes
 

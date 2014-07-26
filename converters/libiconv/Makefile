@@ -3,7 +3,7 @@
 COMMENT=	character set conversion library
 
 DISTNAME=	libiconv-1.14
-REVISION=	1
+REVISION=	2
 CATEGORIES=	converters devel
 MASTER_SITES=	${MASTER_SITE_GNU:=libiconv/}
 
@@ -11,8 +11,6 @@ SHARED_LIBS=	charset		1.1 \
 		iconv		6.0
 
 HOMEPAGE=	https://www.gnu.org/software/libiconv/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # LGPLv2 and GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT =		barcode image processing library
 
 DISTNAME =		ZXing-2.0
 PKGNAME =		${DISTNAME:L}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		graphics
 

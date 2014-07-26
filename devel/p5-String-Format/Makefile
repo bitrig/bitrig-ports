@@ -5,7 +5,7 @@ COMMENT=	perl printf extensions
 MODULES=	cpan
 
 DISTNAME=	String-Format-1.14
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 
 # GPL

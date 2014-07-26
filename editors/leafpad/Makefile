@@ -3,7 +3,7 @@
 COMMENT=	simple GTK+ text editor
 
 DISTNAME=	leafpad-0.8.18.1
-REVISION=	2
+REVISION=	3
 CATEGORIES=	editors x11
 
 HOMEPAGE=	http://tarot.freeshell.org/leafpad/

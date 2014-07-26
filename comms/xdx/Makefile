@@ -4,7 +4,7 @@ COMMENT=	X DX cluster watcher
 
 VERSION=	2.4
 DISTNAME=	xdx-${VERSION}
-REVISION=	8
+REVISION=	9
 
 CATEGORIES=    	comms hamradio
 

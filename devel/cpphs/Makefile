@@ -8,10 +8,9 @@ ONLY_FOR_ARCHS-lib =	i386 amd64
 DISTNAME =	cpphs-1.13.3
 PKGNAME-main =	${DISTNAME}
 PKGNAME-lib =	hs-${DISTNAME}
-REVISION-main =	0
-REVISION-lib =	1
+REVISION-main =	1
+REVISION-lib =	2
 CATEGORIES =	devel
-MAINTAINER =	Matthias Kilian <kili@openbsd.org>
 
 # LGPL2.1
 PERMIT_PACKAGE_CDROM =	Yes

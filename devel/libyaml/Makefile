@@ -4,14 +4,13 @@ COMMENT=	YAML 1.1 parser and emitter written in C
 
 DISTNAME=	yaml-0.1.6
 PKGNAME=	lib${DISTNAME}
+REVISION=	0
 CATEGORIES=	devel
 
 SHARED_LIBS=	yaml-0	0.0	# 1.0
 SHARED_LIBS+=	yaml	0.0	# 1.0
 
 HOMEPAGE=	http://pyyaml.org/wiki/LibYAML
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

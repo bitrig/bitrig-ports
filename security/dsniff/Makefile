@@ -3,7 +3,7 @@
 COMMENT=	sniffing tools for penetration testing
 
 DISTNAME=	dsniff-2.3
-REVISION=	15
+REVISION=	16
 CATEGORIES=	security
 
 MASTER_SITES=	http://monkey.org/~dugsong/dsniff/

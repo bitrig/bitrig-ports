@@ -3,12 +3,10 @@
 COMMENT =	cross-platform dynamic library loading for ruby
 
 DISTNAME =	ffi-1.2.0
-REVISION =	3
+REVISION =	4
 CATEGORIES =	devel
 
 HOMEPAGE=	https://github.com/ffi/ffi
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # LPGLv3
 PERMIT_PACKAGE_CDROM =	Yes

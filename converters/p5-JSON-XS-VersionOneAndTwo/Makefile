@@ -4,7 +4,7 @@ COMMENT =	shim to support either v1 or v2 APIs of JSON::XS
 
 MODULES =	cpan
 DISTNAME =	JSON-XS-VersionOneAndTwo-0.31
-REVISION =	1
+REVISION =	2
 CATEGORIES =	converters
 
 # Perl

@@ -4,13 +4,11 @@ COMMENT=	generic spell checking library/wrapper
 
 V=		1.6.0
 DISTNAME=	enchant-${V}
-REVISION=	2
+REVISION=	3
 SHARED_LIBS=	enchant	6.1 # .7.0
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.abisource.com/projects/enchant/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

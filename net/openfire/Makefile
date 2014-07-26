@@ -5,7 +5,7 @@ V=		3.9.3
 DISTNAME=	openfire_src_${V:S/./_/g}
 PKGNAME=	openfire-$V
 CATEGORIES=	net
-REVISION=	0
+REVISION=	1
 
 MASTER_SITES=	http://www.igniterealtime.org/downloadServlet?filename=openfire/
 

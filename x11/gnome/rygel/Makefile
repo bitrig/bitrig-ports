@@ -8,6 +8,7 @@ COMMENT=		home media solution that allows easy media sharing
 
 GNOME_PROJECT=		rygel
 GNOME_VERSION=		0.22.2
+REVISION=		0
 API_V=			2.2
 
 SHARED_LIBS +=  rygel-core-${API_V}         0.0      # .2.2

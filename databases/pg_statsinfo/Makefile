@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 
 DISTNAME =	pg_statsinfo-2.4.1
 CATEGORIES =	databases
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://pgstatsinfo.projects.pgfoundry.org/
 

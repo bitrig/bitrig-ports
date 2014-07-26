@@ -3,14 +3,12 @@
 COMMENT =		improved opensource version of Dune 2
 
 DISTNAME =		dunelegacy-0.96.3-src
-REVISION =		0
+REVISION =		1
 PKGNAME =		${DISTNAME:S/-src//}
 
 CATEGORIES =		games x11
 
 HOMEPAGE =		http://dunelegacy.sourceforge.net/
-
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
 # GPLv2/CC-BY-SA
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,7 +4,7 @@ COMMENT=	capture standard error output, display in separate window
 
 DISTNAME=	Tk-Stderr-1.2
 PKGNAME=	p5-${DISTNAME}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11 devel perl5
 
 # GPL

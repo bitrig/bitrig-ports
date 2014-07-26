@@ -3,7 +3,7 @@
 COMMENT=	disc cover designer
 
 DISTNAME=	discwrapper-1.2.2
-REVISION =	1
+REVISION =	2
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://discwrapper.sourceforge.net/

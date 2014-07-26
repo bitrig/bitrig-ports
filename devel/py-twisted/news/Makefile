@@ -5,6 +5,7 @@ COMMENT=	NNTP protocol implementation
 CATEGORIES+=	news
 
 VERSION=	11.1.0
+REVISION=	0
 DISTNAME=	TwistedNews-${VERSION}
 PKGNAME=	py-twisted-news-${VERSION}
 

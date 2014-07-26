@@ -3,7 +3,7 @@
 COMMENT=	perl extension for parsing FIPS-55 gazetteer data
 MODULES=	cpan
 DISTNAME=	Geo-Fips55-0.01
-REVISION=	0
+REVISION=	1
 CATEGORIES=	geo
 
 # Perl

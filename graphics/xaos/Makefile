@@ -3,13 +3,12 @@
 COMMENT =		interactive fractal zoomer and morpher
 
 VERSION =		3.6
+REVISION =		0
 DISTNAME =		xaos-${VERSION}
 
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://matek.hu/xaos/doku.php
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,7 +4,7 @@ COMMENT=		smart URI fetching/caching
 
 MODULES=		cpan
 DISTNAME=		URI-Fetch-0.08
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www
 USE_GROFF =		Yes
 

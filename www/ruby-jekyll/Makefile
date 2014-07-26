@@ -3,12 +3,10 @@
 COMMENT=		simple, blog aware, static site generator
 
 DISTNAME=		jekyll-1.1.0
-REVISION =		0
+REVISION =		1
 CATEGORIES=		www
 
 HOMEPAGE=		http://jekyllrb.com/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

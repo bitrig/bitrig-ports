@@ -6,13 +6,11 @@ COMMENT =	configuration management tool
 
 DISTNAME =	ns436
 PKGNAME =	ns4-4.3.6
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	sysutils net
 
 HOMEPAGE =	http://netnix.org/index.php?post_id=1
-
-MAINTAINER =	Steven Mestdagh <steven@openbsd.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

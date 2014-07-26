@@ -3,7 +3,7 @@
 COMMENT =		abstract syntax and utilities for embedded languages
 
 DISTNAME =		syntactic-1.4
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel lang
 
 # BSD3

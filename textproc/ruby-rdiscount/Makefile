@@ -3,7 +3,7 @@
 COMMENT =	discount implementation of John Gruber's Markdown
 
 DISTNAME =	rdiscount-1.6.5
-REVISION=	5
+REVISION=	6
 CATEGORIES =	textproc
 
 # BSD

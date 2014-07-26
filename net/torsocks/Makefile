@@ -3,15 +3,13 @@
 COMMENT =		socks proxy for use with tor
 
 DISTNAME =		torsocks-1.2
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		torsocks	0.0 # 1.0
 
 CATEGORIES =		net
 
 HOMEPAGE =		https://code.google.com/p/torsocks
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

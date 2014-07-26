@@ -9,6 +9,7 @@ COMMENT=		GNOME display manager
 
 GNOME_PROJECT=		gdm
 GNOME_VERSION=		3.12.2
+REVISION=		0
 
 SHARED_LIBS +=  gdm                  0.0      # 1.0
 

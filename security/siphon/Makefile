@@ -4,9 +4,8 @@ COMMENT=		passive network mapping tool
 
 DISTNAME=		siphon-v.666
 PKGNAME=		siphon-0.666
+REVISION=		0
 CATEGORIES=    		security net
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 # BSD-style
 PERMIT_PACKAGE_CDROM=	Yes

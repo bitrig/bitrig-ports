@@ -2,7 +2,7 @@
 
 COMMENT=	Apache LDAP authentication module
 
-REVISION=	12
+REVISION=	13
 VERSION=	1.6.0
 DISTNAME=	auth_ldap-${VERSION}
 PKGNAME=	mod_auth_ldap-${VERSION}

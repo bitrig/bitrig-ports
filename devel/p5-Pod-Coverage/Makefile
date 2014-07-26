@@ -6,9 +6,8 @@ COMMENT= 	check if the documentation of a module is comprehensive
 
 MODULES=	cpan
 DISTNAME=	Pod-Coverage-0.22
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

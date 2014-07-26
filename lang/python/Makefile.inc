@@ -39,8 +39,6 @@ EXTRACT_SUFX =	.tgz
 
 HOMEPAGE =	http://www.python.org/
 
-MAINTAINER =	Remi Pointel <rpointel@openbsd.org>
-
 # PSF license <http://www.python.org/${VERSION}/license.html>
 # A summary of changes to Python is required to be distributed
 PERMIT_PACKAGE_CDROM =	Yes

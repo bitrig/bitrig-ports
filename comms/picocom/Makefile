@@ -3,10 +3,10 @@
 COMMENT =		minimal dumb-terminal emulation program
 
 DISTNAME =		picocom-1.7
+REVISION =		0
 CATEGORIES =		comms
 
 HOMEPAGE =		https://code.google.com/p/picocom/
-MAINTAINER =		Kyle Isom <kyle@tyrfingr.is>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

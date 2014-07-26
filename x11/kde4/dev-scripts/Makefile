@@ -2,6 +2,7 @@
 
 COMMENT =	KDE development helper scripts
 DISTNAME =	kde-dev-scripts-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/kde-dev-scripts

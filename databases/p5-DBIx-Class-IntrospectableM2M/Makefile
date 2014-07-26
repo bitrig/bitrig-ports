@@ -3,6 +3,7 @@
 COMMENT=	introspect many-to-many shortcuts
 
 DISTNAME=	DBIx-Class-IntrospectableM2M-0.001001
+REVISION=	0
 CATEGORIES=	databases devel
 
 # Same as Perl

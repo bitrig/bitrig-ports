@@ -3,10 +3,9 @@
 COMMENT =	pure Perl implementation for parsing/writing XML documents
 
 DISTNAME =	XML-TreePP-0.41
+REVISION =	0
 CATEGORIES =	textproc
 CPAN_AUTHOR =	KAWASAKI
-
-MAINTAINER =	Mikolaj Kucharski <mikolaj@kucharski.name>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

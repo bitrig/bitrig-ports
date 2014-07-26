@@ -4,7 +4,7 @@ COMMENT=	Python-based build system
 
 DISTNAME=	waf-1.5.18
 CATEGORIES=	devel
-REVISION =	2
+REVISION =	3
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	https://waf.googlecode.com/

@@ -3,11 +3,10 @@
 COMMENT=		flashes gpio led whenever pf logs to pflog0
 
 DISTNAME=		gpioflicker-0.3
+REVISION=		0
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://www.pro-bono-publico.de/openbsd/gpio/
-
-MAINTAINER=		Johan Fredin <johan@spelaroll.se>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

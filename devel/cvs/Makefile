@@ -1,7 +1,7 @@
 COMMENT=		CVS from OpenBSD base
 
 DISTNAME=		cvs-1.11.1p2
-REVISION=		1
+REVISION=		2
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		devel
 

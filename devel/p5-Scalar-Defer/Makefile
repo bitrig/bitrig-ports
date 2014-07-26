@@ -5,7 +5,7 @@ COMMENT= 	deferred and lazy evaluation
 MODULES=	cpan
 
 DISTNAME=	Scalar-Defer-0.18
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # MIT

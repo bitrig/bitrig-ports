@@ -5,13 +5,11 @@ COMMENT=		plugin to support use of Cheetah templates
 VERSION=		1.0
 DISTNAME=		TurboCheetah-${VERSION}
 PKGNAME=		py-turbocheetah-${VERSION}
-REVISION =		3
+REVISION =		4
 
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.turbogears.org/
-
-MAINTAINER=		Martynas Venckus <martynas@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

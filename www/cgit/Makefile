@@ -3,7 +3,7 @@
 COMMENT =	web frontend for git repositories
 
 DISTNAME =	cgit-0.9.2
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www devel
 
 DISTFILES =	${DISTNAME}.tar.gz:0 \

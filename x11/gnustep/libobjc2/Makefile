@@ -7,7 +7,7 @@ NOT_FOR_ARCHS = ${GCC3_ARCHS}
 
 # note: this port does not use the gnustep module
 DISTNAME =	libobjc2-1.7
-REVISION =	1
+REVISION =	2
 PKGNAME =	gnustep-${DISTNAME}
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	x11/gnustep devel

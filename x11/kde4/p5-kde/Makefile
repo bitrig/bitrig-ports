@@ -3,6 +3,7 @@
 COMMENT =	KDE bindings for Perl
 DISTNAME =	perlkde-${MODKDE4_VERSION}
 PKGNAME =	p5-kde-${MODKDE4_VERSION}
+REVISION =	0
 
 # for perl module
 SHARED_ONLY =	Yes

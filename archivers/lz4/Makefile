@@ -5,12 +5,11 @@ SHARED_LIBS +=	lz4                       0.0 # 0.0
 COMMENT=	fast BSD-licensed data compression
 
 DISTNAME=	lz4-0.0.20131102
+REVISION=	0
 
 CATEGORIES=	archivers
 
 HOMEPAGE=	http://fastcompression.blogspot.com/p/lz4.html
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # library: BSD, tools: GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

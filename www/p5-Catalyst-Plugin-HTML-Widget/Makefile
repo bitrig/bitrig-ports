@@ -4,11 +4,9 @@ COMMENT= 	HTML widget and validation framework for Catalyst
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-HTML-Widget-1.1
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

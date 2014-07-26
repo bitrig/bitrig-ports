@@ -3,6 +3,7 @@
 COMMENT=	tiny/turbo/throttling HTTP server
 
 DISTNAME=	sthttpd-2.26.4
+REVISION=	0
 CATEGORIES=	www
 MASTER_SITES=	http://opensource.dyc.edu/pub/sthttpd/
 

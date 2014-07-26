@@ -5,6 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT=	OpenSSL Tcl extension
 
 VERSION=	1.6
+REVISION=	0
 DISTNAME=	tls${VERSION}-src
 PKGNAME=	tcltls-${VERSION}
 SHARED_LIBS=	tls16	0.0
@@ -12,8 +13,6 @@ SHARED_LIBS=	tls16	0.0
 CATEGORIES=	security
 
 HOMEPAGE=	http://tls.sourceforge.net/
-
-MAINTAINER=	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,11 +3,10 @@
 COMMENT=	talk to modem devices connected via serial port
 
 DISTNAME=	Device-Modem-1.56
+REVISION=	0
 CATEGORIES=	comms
 
 MODULES=	cpan
-
-MAINTAINER=	Todd T. Fries <todd@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

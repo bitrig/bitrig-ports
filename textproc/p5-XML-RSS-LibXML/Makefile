@@ -4,11 +4,9 @@ COMMENT= 	XML::RSS with XML::LibXML
 
 MODULES=	cpan
 DISTNAME=	XML-RSS-LibXML-0.3002
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

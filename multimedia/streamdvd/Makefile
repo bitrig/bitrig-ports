@@ -3,13 +3,11 @@
 COMMENT=	fast tool to backup video DVDs 'on the fly'
 
 DISTNAME=	streamdvd-0.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.badabum.de/down/
 
 HOMEPAGE=	http://www.badabum.de/streamdvd.html
-
-MAINTAINER=	Marc Smith <merkurie@comcast.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,11 +3,10 @@
 COMMENT=	user-friendly package browser and manager
 
 DISTNAME=	pkg_mgr-0.2.1
-REVISION=	2
+REVISION=	3
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://rhaalovely.net/pkg_mgr.html
-MAINTAINER=	Landry Breuil <landry@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

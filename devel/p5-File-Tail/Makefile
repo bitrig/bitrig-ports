@@ -4,10 +4,8 @@ COMMENT=	library for reading from continuously updated files
 
 MODULES=	cpan
 DISTNAME=	File-Tail-0.99.3
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=   Yes

@@ -3,6 +3,7 @@
 COMMENT=		Dynamic DNS service update client
 
 DISTNAME=		ddclient-3.8.2
+REVISION=		0
 CATEGORIES=		net
 
 HOMEPAGE=		http://ddclient.sourceforge.net/

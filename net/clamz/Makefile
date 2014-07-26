@@ -3,9 +3,8 @@
 COMMENT =		downloader for the Amazon.com MP3 music store
 
 DISTNAME =		clamz-0.5
+REVISION =		0
 CATEGORIES =		net
-
-MAINTAINER =		James Turner <james@calminferno.net>
 
 HOMEPAGE =		http://code.google.com/p/clamz/
 MASTER_SITES =		https://clamz.googlecode.com/files/

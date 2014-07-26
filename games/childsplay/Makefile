@@ -3,13 +3,12 @@
 COMMENT=	collection of educational activities for young children
 
 DISTNAME=	childsplay-2.6.3
+REVISION=	0
 EXTRACT_SUFX=	.tgz
 
 CATEGORIES=	games education
 
 HOMEPAGE=	http://www.childsplay.mobi/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

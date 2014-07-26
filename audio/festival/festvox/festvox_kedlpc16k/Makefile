@@ -2,6 +2,7 @@
 
 COMMENT=	American English male speaker (KED) at 16KHz sampling
 DISTNAME=	festvox_kedlpc16k
+REVISION=	0
 
 RUN_DEPENDS=	${VOX_US_DEPS}
 

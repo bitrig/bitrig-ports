@@ -4,10 +4,8 @@ COMMENT =	Perl6 style Junction operators in Perl5
 
 MODULES =	cpan
 DISTNAME =	Perl6-Junction-1.40000
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

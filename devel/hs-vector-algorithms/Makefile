@@ -3,10 +3,8 @@
 COMMENT =		Efficient algorithms for vector arrays
 
 DISTNAME =		vector-algorithms-0.5.4.2
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

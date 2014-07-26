@@ -4,6 +4,7 @@ COMMENT=	Python cgi/fastcgi/mod_python framework
 
 DISTNAME =	jonpy-0.11
 PKGNAME=	py-${DISTNAME}
+REVISION=	0
 CATEGORIES=    	www
 
 MASTER_SITES =	${MASTER_SITE_PYPI:=j/jonpy/}

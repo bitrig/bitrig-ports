@@ -3,10 +3,9 @@
 COMMENT =	Haskell platform meta-package
 
 PKGNAME =	haskell-platform-2013.2.0.0
+REVISION =	0
 
 HOMEPAGE =	http://hackage.haskell.org/platform/
-
-MAINTAINER =	Matthias Kilian <kili@openbsd.org>
 
 # Upstream resources: git://github.com/haskell/haskell-platform
 # The version numbers are taken from the .cabal file.

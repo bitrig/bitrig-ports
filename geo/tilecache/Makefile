@@ -4,12 +4,11 @@ COMMENT =	tile caching frontend for WMS/TMS services
 
 MODPY_EGG_VERSION =	2.11
 DISTNAME =	tilecache-${MODPY_EGG_VERSION}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	geo graphics
 
 HOMEPAGE =	http://tilecache.org/
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

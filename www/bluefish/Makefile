@@ -3,7 +3,7 @@
 COMMENT=	HTML editor for experienced web designers
 
 DISTNAME =	bluefish-2.2.5
-REVISION =	0
+REVISION =	1
 CATEGORIES=	www editors
 HOMEPAGE=	http://bluefish.openoffice.nl/
 

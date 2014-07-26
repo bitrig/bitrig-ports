@@ -3,13 +3,12 @@
 COMMENT =		compressing non-caching HTTP proxy
 
 DISTNAME =		ziproxy-3.3.0
+REVISION =		0
 EXTRACT_SUFX =		.tar.bz2
 
 CATEGORIES =		net www
 
 HOMEPAGE =		http://ziproxy.sourceforge.net/
-
-MAINTAINER =		Gonzalo L. R. <gonzalo@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

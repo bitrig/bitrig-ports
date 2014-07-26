@@ -4,9 +4,8 @@ COMMENT=	load various configuration file formats
 
 MODULES=	cpan
 DISTNAME=	Config-Any-0.23
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

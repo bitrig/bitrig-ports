@@ -3,7 +3,7 @@
 COMMENT=	SSL port scanner
 
 DISTNAME=	sslscan-1.8.2
-REVISION=	1
+REVISION=	2
 EXTRACT_SUFX=	.tgz
 
 CATEGORIES=	security net

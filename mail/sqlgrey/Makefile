@@ -3,6 +3,7 @@
 COMMENT =	postfix greylist daemon
 
 DISTNAME =	sqlgrey-1.8.0
+REVISION =	0
 CATEGORIES =	mail
 
 HOMEPAGE =	http://sqlgrey.sf.net/

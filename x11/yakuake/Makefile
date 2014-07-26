@@ -3,7 +3,7 @@
 COMMENT=	yet another kuake KDE terminal emulator
 
 DISTNAME=	yakuake-2.8.1
-REVISION=	12
+REVISION=	13
 CATEGORIES=	x11 x11/kde
 
 EXTRACT_SUFX=	.tar.bz2

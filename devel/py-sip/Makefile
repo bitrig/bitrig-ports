@@ -9,7 +9,7 @@ COMMENT=	automatically generate Python bindings for C and C++ libs
 DISTNAME=	sip-4.15.3
 PKGNAME=	py-${DISTNAME}
 CATEGORIES=	devel
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.riverbankcomputing.co.uk/software/sip/intro
 

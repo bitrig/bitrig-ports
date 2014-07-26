@@ -2,8 +2,6 @@
 
 CATEGORIES+=	devel
 
-MAINTAINER=	Eric Faurot <eric@openbsd.org>
-
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes
 

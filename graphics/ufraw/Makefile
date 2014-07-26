@@ -5,13 +5,11 @@ COMMENT=	read and manipulate raw images from digital cameras
 DISTNAME=	ufraw-0.19.2
 # rerolled tarball, we can zap DIST_SUBDIR when it's time for 0.19.3
 DIST_SUBDIR=	ufraw-0.19.2a
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ufraw/}
 HOMEPAGE=	http://ufraw.sourceforge.net/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes

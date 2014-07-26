@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2014/07/04 18:26:49 juanfra Exp $
 
+REVISION=	0
+
 SHARED_ONLY=	Yes
 
 SHARED_LIBS=	chicken	3.0

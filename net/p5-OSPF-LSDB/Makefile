@@ -3,10 +3,9 @@
 COMMENT =		ospf link-state database viewer
 
 DISTNAME =		OSPF-LSDB-1.07
+REVISION =		0
 
 CATEGORIES =		net
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # bsd
 PERMIT_PACKAGE_CDROM =	Yes

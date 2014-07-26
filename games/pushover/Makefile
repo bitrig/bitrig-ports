@@ -6,7 +6,7 @@ DISTNAME =		pushover-0.0.5
 
 CATEGORIES =		games
 
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://pushover.sourceforge.net/
 

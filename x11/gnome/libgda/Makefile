@@ -20,11 +20,11 @@ PKGNAME-mysql=		libgda-mysql-${GNOME_VERSION}
 PKGNAME-pgsql=		libgda-pgsql-${GNOME_VERSION}
 PKGNAME-ui=		libgda-ui-${GNOME_VERSION}
 
-REVISION-main=		2
-REVISION-ldap=		1
-REVISION-mysql=		0
-REVISION-pgsql=		1
-REVISION-ui=		1
+REVISION-main=		3
+REVISION-ldap=		2
+REVISION-mysql=		1
+REVISION-pgsql=		2
+REVISION-ui=		2
 
 EPOCH-main=		2
 EPOCH-ldap=		0

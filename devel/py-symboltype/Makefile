@@ -5,13 +5,11 @@ COMMENT =		symbol type for python
 MODPY_EGG_VERSION =	1.0
 DISTNAME =		SymbolType-${MODPY_EGG_VERSION}
 PKGNAME =		py-symboltype-${MODPY_EGG_VERSION}
-REVISION =		2
+REVISION =		3
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://peak.telecommunity.com/DevCenter/SymbolType
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # PSF
 PERMIT_PACKAGE_CDROM =	Yes

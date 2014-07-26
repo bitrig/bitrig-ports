@@ -4,7 +4,7 @@ COMMENT=	Rich Text Format document generation in Python
 
 DISTNAME=	PyRTF-0.45
 PKGNAME=	${DISTNAME:L:S/^py/py-/}
-REVISION=	6
+REVISION=	7
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://pyrtf.sourceforge.net/

@@ -4,10 +4,8 @@ COMMENT=	object methods for locking files
 
 MODULES=	cpan
 DISTNAME=	IO-LockedFile-0.23
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

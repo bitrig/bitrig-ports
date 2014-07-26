@@ -4,10 +4,9 @@ COMMENT=	GNU versions of grep pattern matching utilities
 
 DISTNAME=	grep-2.18
 PKGNAME=	g${DISTNAME}
+REVISION=	0
 CATEGORIES=	sysutils
 HOMEPAGE=	https://www.gnu.org/software/grep/grep.html
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

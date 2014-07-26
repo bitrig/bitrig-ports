@@ -4,6 +4,7 @@ COMMENT=	perl module for TrueType font hacking
 
 MODULES=	cpan
 DISTNAME=	Font-TTF-1.04
+REVISION=	0
 CATEGORIES=	textproc
 
 # Artistic

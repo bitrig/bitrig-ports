@@ -4,13 +4,11 @@ COMMENT =		automatic audio files tagger using the MusicBrainz database
 
 MODPY_EGG_VERSION =	0.16
 DISTNAME =		picard-${MODPY_EGG_VERSION}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		audio
 
 HOMEPAGE =		http://musicbrainz.org/doc/Picard_Tagger
-
-MAINTAINER =		Amaury Gauthier <amaury.gauthier@etu.unilim.fr>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

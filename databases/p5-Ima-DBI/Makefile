@@ -3,7 +3,7 @@
 COMMENT=	database connection caching and organization
 
 DISTNAME=	Ima-DBI-0.35
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases
 MODULES=	cpan
 

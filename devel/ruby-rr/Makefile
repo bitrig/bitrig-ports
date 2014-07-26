@@ -3,7 +3,7 @@
 COMMENT=		test double framework with a succint syntax
 
 DISTNAME=		rr-1.1.1
-REVISION =		0
+REVISION =		1
 CATEGORIES=		devel
 
 HOMEPAGE=		http://rr.github.io/rr/

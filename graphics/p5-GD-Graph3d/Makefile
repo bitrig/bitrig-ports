@@ -4,7 +4,7 @@ COMMENT =	module for 3D graph plotting
 
 VERSION =	0.63
 DISTNAME =	GD-Graph3d-${VERSION}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	graphics
 
 # Perl

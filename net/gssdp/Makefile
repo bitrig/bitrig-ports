@@ -4,11 +4,10 @@ COMMENT=		API for handling SSDP resource discovery and announcement
 
 GNOME_PROJECT=		gssdp
 GNOME_VERSION=		0.14.8
+REVISION=		0
 
 SHARED_LIBS +=  gssdp-1.0            2.1      # 3.0
 CATEGORIES=		net devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

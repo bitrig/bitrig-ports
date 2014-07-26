@@ -2,6 +2,7 @@
 
 COMMENT =	user management application for KDE
 DISTNAME =	kuser-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	sysutils security
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdeadmin/kuser

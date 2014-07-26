@@ -4,10 +4,8 @@ COMMENT =		DateTime submodule for TZ
 
 MODULES =		cpan
 DISTNAME =		DateTime-TimeZone-1.64
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
-
-MAINTAINER = Andrew Fresh <andrew@cpan.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

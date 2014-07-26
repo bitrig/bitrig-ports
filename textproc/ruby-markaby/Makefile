@@ -3,7 +3,7 @@
 COMMENT=	HTML templating language for Ruby
 
 DISTNAME=	markaby-0.5
-REVISION =	10
+REVISION =	11
 CATEGORIES=	textproc devel
 
 HOMEPAGE=	http://markaby.github.io/

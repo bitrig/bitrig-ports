@@ -3,12 +3,10 @@
 COMMENT=	Java program analyzer and checker
 
 DISTNAME=	jlint-3.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	java
 
 HOMEPAGE=	http://artho.com/jlint/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=  Yes

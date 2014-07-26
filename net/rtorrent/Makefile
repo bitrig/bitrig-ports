@@ -7,13 +7,11 @@ BROKEN-sh =		undefined references to __sync atomic ops
 COMMENT=		ncurses BitTorrent client based on libTorrent
 
 DISTNAME=		rtorrent-0.8.9
-REVISION=		2
+REVISION=		3
 EPOCH=			0
 CATEGORIES=		net
 
 HOMEPAGE=		http://libtorrent.rakshasa.no/
-
-MAINTAINER=		David Coppa <dcoppa@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

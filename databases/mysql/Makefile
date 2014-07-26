@@ -15,9 +15,9 @@ CATEGORIES=	databases
 V=		MySQL-5.1
 MASTER_SITES=	${MASTER_SITE_MYSQL:=Downloads/$V/}
 
-REVISION-main= 0
-REVISION-server= 1
-REVISION-tests= 0
+REVISION-main= 1
+REVISION-server= 2
+REVISION-tests= 1
 EPOCH-main=	0
 EPOCH-server=	0
 EPOCH-tests=	0
@@ -26,8 +26,6 @@ SHARED_LIBS=	mysqlclient_r	23.0 \
 		mysqlclient	23.0
 
 HOMEPAGE=	http://www.mysql.com/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

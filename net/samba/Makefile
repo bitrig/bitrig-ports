@@ -9,9 +9,8 @@ DISTNAME=		samba-3.6.15
 PKGNAME-main=		${DISTNAME}
 FULLPKGNAME-docs=	${DISTNAME:S/-/-docs-/}
 FULLPKGPATH-docs=	net/samba,-docs
-REVISION-main=		9
-
-REVISION=		0
+REVISION-main=		10
+REVISION-docs=		1
 
 SHARED_LIBS=		smbclient	3.0 \
 			smbsharemodes	1.0 \
@@ -21,8 +20,6 @@ SHARED_LIBS=		smbclient	3.0 \
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.samba.org/
-
-MAINTAINER=		Ian McWilliam <kaosagnt@tpg.com.au>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=		Yes

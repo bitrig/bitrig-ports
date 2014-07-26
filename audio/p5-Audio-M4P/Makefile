@@ -3,7 +3,7 @@
 COMMENT=	M4P/MP4/M4a audio/video tools
 
 DISTNAME=	Audio-M4P-0.51
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 
 MODULES=	cpan

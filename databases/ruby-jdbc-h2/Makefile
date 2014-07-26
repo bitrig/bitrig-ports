@@ -3,6 +3,7 @@
 COMMENT =	access an H2 database from JRuby
 
 DISTNAME =	jdbc-h2-1.3.170.1
+REVISION =	0
 CATEGORIES =	databases
 
 # MIT

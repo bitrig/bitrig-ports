@@ -3,11 +3,9 @@
 COMMENT=		file system/VFS layer stress tester
 
 DISTNAME=		fsstress-1.0
-REVISION =		1
+REVISION =		2
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		sysutils
-
-MAINTAINER=		Bob Beck <beck@openbsd.org>
 
 # GPLv2 (only)
 PERMIT_PACKAGE_CDROM=   Yes

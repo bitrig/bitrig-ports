@@ -3,9 +3,8 @@
 COMMENT=	expiry plug-in for Memoize that adds LRU cache expiration
 
 DISTNAME=	Memoize-ExpireLRU-0.55
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Andrew Fresh <andrew@cpan.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

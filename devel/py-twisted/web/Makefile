@@ -5,6 +5,7 @@ COMMENT=	HTTP protocol implementation
 CATEGORIES+=	www
 
 VERSION=	11.1.0
+REVISION=	0
 DISTNAME=	TwistedWeb-${VERSION}
 PKGNAME=	py-twisted-web-${VERSION}
 

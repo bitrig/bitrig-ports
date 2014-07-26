@@ -3,7 +3,7 @@
 COMMENT=	Swiss-army knife for reading and writing XML files
 
 DISTNAME=	XML_Serializer-0.18.0
-REVISION =	2
+REVISION =	3
 CATEGORIES=	textproc
 
 MODULES=	www/pear

@@ -4,10 +4,9 @@ COMMENT=	GNU debugger
 CATEGORIES=	devel
 
 DISTNAME=	gdb-7.7.1
+REVISION=	0
 
 HOMEPAGE=	https://www.gnu.org/software/gdb/
-
-MAINTAINER=	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2 and GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

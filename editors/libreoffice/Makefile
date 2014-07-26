@@ -17,12 +17,11 @@ PKGNAME-java=	libreoffice-java-${VERSION}
 CATEGORIES=	editors productivity
 DPB_PROPERTIES=	parallel tag:kde3
 
-REVISION-main=	2
-REVISION-kde=	0
+REVISION-main=	3
+REVISION-kde=	1
+REVISION-java=	0
 
 EPOCH=		0
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 HOMEPAGE=	http://www.libreoffice.org/
 
@@ -127,6 +126,7 @@ CONFIGURE_ARGS+=	--with-lang="en-US ${LANGS}"
 .for l in ${LANGS:L}
 MULTI_PACKAGES+=	-i18n-$l
 PKGNAME-i18n-$l=	libreoffice-i18n-$l-${VERSION}
+REVISION-i18n-$l=	0
 COMMENT-i18n-$l=	$l language pack for LibreOffice
 RUN_DEPENDS-i18n-$l=	editors/libreoffice
 WANTLIB-i18n-$l=

@@ -6,11 +6,9 @@ DISTNAME=	ginac-1.6.2
 SHARED_LIBS +=	ginac	3.0	# 0.3
 CATEGORIES=	math
 
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://www.ginac.de/
-
-MAINTAINER=	Paul Irofti <pirofti@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

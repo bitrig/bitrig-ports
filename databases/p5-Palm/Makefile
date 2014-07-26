@@ -8,7 +8,7 @@ PKGNAME=	${DISTNAME}
 
 MODULES=	cpan
 DISTNAME=	p5-Palm-1.3.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	databases productivity
 HOMEPAGE=	http://www.coldsync.org/
 CPAN_AUTHOR=	ARENSB

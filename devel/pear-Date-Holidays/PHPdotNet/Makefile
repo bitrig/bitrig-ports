@@ -2,6 +2,6 @@
 
 COMMENT =	birthdays of php.net members
 HOLNAME =	PHPdotNet-0.1.2
-REVISION =	1
+REVISION =	2
 
 .include <bsd.port.mk>

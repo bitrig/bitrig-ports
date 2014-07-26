@@ -4,6 +4,7 @@ COMMENT =	organize your Mouse types in libraries
 
 MODULES =	cpan
 DISTNAME =	MouseX-Types-0.06
+REVISION =	0
 CATEGORIES =	devel
 
 # same as perl

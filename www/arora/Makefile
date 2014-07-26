@@ -7,13 +7,11 @@ COMMENT=	simple Qt4-based browser using WebKit
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
 DISTNAME=	arora-0.11.0
-REVISION=	6
+REVISION=	7
 CATEGORIES=	www
 MASTER_SITES=	https://arora.googlecode.com/files/
 
 HOMEPAGE=	https://code.google.com/p/arora/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

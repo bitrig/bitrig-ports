@@ -3,7 +3,7 @@
 COMMENT=	mail purpose library
 
 DISTNAME=	libetpan-1.0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	mail devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libetpan/}
 

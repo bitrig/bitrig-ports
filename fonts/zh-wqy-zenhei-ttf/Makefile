@@ -5,13 +5,11 @@ COMMENT=	Wen Quan Yi Zen Hei outline font
 V=		0.6.26-0
 DISTNAME=	wqy-zenhei-$V
 PKGNAME=	zh-wqy-zenhei-ttf-${V:S/-/./}
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	fonts x11 chinese
 
 HOMEPAGE=	http://wqy.sourceforge.net/en/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

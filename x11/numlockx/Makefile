@@ -3,12 +3,10 @@
 COMMENT=		start X11 with NumLock turned on
 
 DISTNAME=		numlockx-1.1
-REVISION=		0
+REVISION=		1
 CATEGORIES=		x11
 
 HOMEPAGE=		http://home.kde.org/~seli/numlockx/
-
-MAINTAINER=		Thomas Delaet <thomas@delaet.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

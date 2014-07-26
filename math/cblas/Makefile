@@ -5,7 +5,7 @@ COMMENT=	C interface to the BLAS library
 VERSION=	1.0
 DISTNAME=	cblas
 PKGNAME=	${DISTNAME}-${VERSION}
-REVISION=	2
+REVISION=	3
 SHARED_LIBS=	cblas	1.0
 
 CATEGORIES=	math

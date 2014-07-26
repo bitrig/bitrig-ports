@@ -4,6 +4,7 @@ COMMENT=		use other catalog formats in Locale::Maketext
 
 MODULES=		cpan
 DISTNAME=		Locale-Maketext-Lexicon-0.93
+REVISION=		0
 CATEGORIES=		devel
 
 # MIT

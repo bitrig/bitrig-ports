@@ -4,7 +4,7 @@ SHARED_ONLY=	Yes
 COMMENT=	graphical debugger for KDE
 
 DISTNAME=	kdbg-1.2.5
-REVISION =	10
+REVISION =	11
 CATEGORIES=	devel
 HOMEPAGE=	http://www.kdbg.org/
 

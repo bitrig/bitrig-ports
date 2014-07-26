@@ -3,13 +3,11 @@
 COMMENT=		X11 program launcher
 
 DISTNAME=		gmrun-0.9.2
-REVISION=		3
+REVISION=		4
 
 CATEGORIES=		x11
 
 HOMEPAGE=		http://gmrun.sourceforge.net/
-
-MAINTAINER=		Matthias Kilian <kili@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

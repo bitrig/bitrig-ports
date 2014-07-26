@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; alarm clock
 
 DISTNAME=		wmtimer-2.92
-REVISION=		4
+REVISION=		5
 CATEGORIES=		misc x11 x11/windowmaker
 
 HOMEPAGE=		http://www.darkops.net/wmtimer/

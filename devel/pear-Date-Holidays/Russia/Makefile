@@ -2,6 +2,6 @@
 
 COMMENT =	Russian holiday classes for PHP
 HOLNAME =	Russia-0.1.0
-REVISION =	0
+REVISION =	1
 
 .include <bsd.port.mk>

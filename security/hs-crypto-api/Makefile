@@ -3,12 +3,10 @@
 COMMENT=		generic interface for cryptographic operations
 
 DISTNAME=		crypto-api-0.10.2
-REVISION=		1
+REVISION=		2
 CATEGORIES=		security net
 
 HOMEPAGE=		http://trac.haskell.org/crypto-api/wiki
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

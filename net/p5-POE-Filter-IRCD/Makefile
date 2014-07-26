@@ -4,10 +4,8 @@ COMMENT=		POE-based parser for the IRC protocol
 
 MODULES=		cpan
 DISTNAME=		POE-Filter-IRCD-2.42
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

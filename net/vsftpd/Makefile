@@ -3,12 +3,10 @@
 COMMENT=		FTP daemon which aims to be secure
 
 DISTNAME=		vsftpd-3.0.2
-REVISION=		2
+REVISION=		3
 CATEGORIES=		net
 
 HOMEPAGE=		http://vsftpd.beasts.org/
-
-MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2+OpenSSL exemption
 PERMIT_PACKAGE_CDROM=	Yes

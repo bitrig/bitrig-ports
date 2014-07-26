@@ -4,6 +4,7 @@ COMMENT=	DSA Signatures and Key Generation
 
 MODULES=	cpan
 DISTNAME=	Crypt-DSA-1.17
+REVISION=	0
 CATEGORIES=	security
 USE_GROFF =	Yes
 

@@ -6,13 +6,11 @@ MODPY_EGG_VERSION =	2.7.2
 DISTNAME =		Jinja2-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME:L}
 
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		www devel
 
 HOMEPAGE =		http://jinja.pocoo.org/
-
-MAINTAINER =		frantisek holop <minusf@obiit.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

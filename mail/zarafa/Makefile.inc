@@ -10,8 +10,6 @@ CATEGORIES+=	mail
 
 HOMEPAGE?=	http://community.zarafa.com/
 
-MAINTAINER?=	Robert Nagy <robert@openbsd.org>
-
 # AGPLv3 (GNU Affero Public License) with exceptions
 PERMIT_PACKAGE_CDROM?=	Yes
 PERMIT_PACKAGE_FTP?=	Yes

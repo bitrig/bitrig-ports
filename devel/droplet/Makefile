@@ -6,13 +6,11 @@ CATEGORIES=		devel
 COMMENT=		high performance Cloud Storage client library
 
 VERSION=		1.1
-REVISION=		2
+REVISION=		3
 DISTNAME=		droplet-${VERSION}
 HOMEPAGE=		https://github.com/scality/Droplet
 
 SHARED_LIBS=		droplet		0.0 #0.0
-
-MAINTAINER=		Rafael Sadowski <rafael@sizeofvoid.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

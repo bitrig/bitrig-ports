@@ -3,13 +3,11 @@
 COMMENT=	patent-free speech codec
 
 DISTNAME=	speex-1.2rc1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 HOMEPAGE=	http://www.speex.org/
 SHARED_LIBS +=	speex                8.0      # .6.0
 SHARED_LIBS +=	speexdsp             1.0      # .6.0
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=	full-screen image to adjust your monitor
 
 DISTNAME=	xtestpicture-1.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 # BSD

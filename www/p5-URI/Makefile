@@ -4,6 +4,7 @@ COMMENT=	library to parse Uniform Resource Identifiers
 
 MODULES=	cpan
 DISTNAME=	URI-1.60
+REVISION=	0
 CATEGORIES=	www
 
 # Perl

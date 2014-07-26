@@ -5,6 +5,7 @@ COMMENT=	low-level networking for Twisted
 CATEGORIES+=	net
 
 VERSION=	11.1.0
+REVISION=	0
 DISTNAME=	TwistedPair-${VERSION}
 PKGNAME=	py-twisted-pair-${VERSION}
 

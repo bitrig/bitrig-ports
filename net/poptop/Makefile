@@ -5,7 +5,7 @@ COMMENT=		PPTP Server
 V=			1.3.4
 DISTNAME=		pptpd-$V
 PKGNAME=		poptop-$V
-REVISION=		5
+REVISION=		6
 CATEGORIES=		net
 
 HOMEPAGE=		http://poptop.sourceforge.net/

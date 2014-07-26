@@ -4,12 +4,10 @@ SHARED_ONLY=		Yes
 
 COMMENT=		console jabber client
 DISTNAME=		mcabber-0.10.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.lilotux.net/~mikael/mcabber/
-
-MAINTAINER=		Markus Hennecke <markus-hennecke@markus-hennecke.de>
 
 # GPLv2+ with SSL exemption
 PERMIT_PACKAGE_CDROM=	Yes

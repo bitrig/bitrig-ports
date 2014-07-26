@@ -8,7 +8,7 @@ EPOCH=		0
 
 DISTNAME=	zarafa-webapp-${WAPP_VERSION}-${WAPP_BUILD}.noarch.rpm
 PKGNAME=	zarafa-webapp-${WAPP_VERSION}
-REVISION=	0
+REVISION=	1
 
 EXTRACT_SUFX=	# empty
 

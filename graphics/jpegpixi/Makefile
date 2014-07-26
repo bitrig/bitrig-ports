@@ -3,12 +3,11 @@
 COMMENT=	jpeg pixel interpolator
 
 DISTNAME=	jpegpixi-1.1.1
+REVISION=	0
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://www.zero-based.org/software/jpegpixi/
 MASTER_SITES=	${HOMEPAGE}
-
-MAINTAINER=	Giovanni Bechis <g.bechis@snb.it>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

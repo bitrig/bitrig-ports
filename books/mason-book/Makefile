@@ -7,11 +7,10 @@ CATEGORIES=	books
 V=		1.0
 DISTNAME=	mason-book
 PKGNAME=	${DISTNAME}-${V}
-REVISION=	0
+REVISION=	1
 DIST_SUBDIR=	mason-book-${V}
 
 HOMEPAGE=	http://www.masonbook.com/
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 
 MASTER_SITES=	${HOMEPAGE}book/
 

@@ -2,6 +2,7 @@
 
 COMMENT =	fun desktop animation
 DISTNAME =	amor-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	games
 #HOMEPAGE =	http://amor.kde.org/

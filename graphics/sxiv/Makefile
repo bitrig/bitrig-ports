@@ -6,12 +6,11 @@ V=		1.1.1
 DISTNAME=	v${V}
 DIST_SUBDIR=	sxiv
 PKGNAME=	sxiv-${V}
+REVISION=	0
 
 CATEGORIES =	graphics
 
 HOMEPAGE =	https://github.com/muennich/sxiv
-
-MAINTAINER =	Matthew Via <via@matthewvia.info>
 
 MASTER_SITES=	${HOMEPAGE}/archive/
 

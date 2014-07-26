@@ -6,6 +6,7 @@ MODPY_EGG_VERSION = 0.2
 V=		5.19
 DISTNAME=	file-${V}
 PKGNAME=	py-libmagic-${V}
+REVISION=	0
 
 CATEGORIES=	sysutils devel
 

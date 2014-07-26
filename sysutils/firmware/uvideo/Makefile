@@ -3,9 +3,7 @@
 FW_DRIVER=	uvideo
 FW_VER=		1.2
 DISTNAME=	uvideo-firmware-${FW_VER}
-REVISION=	1
-
-MAINTAINER=	Marcus Glocker <mglocker@openbsd.org>
+REVISION=	2
 
 HOMEPAGE=	http://www.nazgul.ch/uvideo/
 

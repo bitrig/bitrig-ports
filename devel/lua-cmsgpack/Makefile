@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	MessagePack implementation and bindings for Lua
 
 DISTNAME=	lua-cmsgpack-0.3.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 HOMEPAGE=	https://github.com/antirez/lua-cmsgpack

@@ -4,7 +4,7 @@ V =		1.1.1
 COMMENT =	open-source Zelda-like 2D game engine
 DISTNAME =	solarus-${V}-src
 PKGNAME =	solarus-${V}
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://www.solarus-games.org/
 

@@ -3,9 +3,8 @@
 COMMENT =		set of kernel torture tools
 
 DISTNAME =		torture-1.1
+REVISION =		0
 CATEGORIES =		sysutils
-
-MAINTAINER =		Bob Beck <beck@obtuse.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =   Yes

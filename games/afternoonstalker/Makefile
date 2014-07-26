@@ -6,7 +6,7 @@ DISTNAME=	afternoonstalker-1.1.5
 
 CATEGORIES=	games
 
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://sarrazip.com/dev/afternoonstalker.html
 

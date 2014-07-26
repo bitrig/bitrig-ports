@@ -4,7 +4,7 @@ COMMENT=	drive a toy wood engine
 
 DISTNAME=	Ri-li-2.0.1
 CATEGORIES=	games
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE=	http://ri-li.sourceforge.net
 

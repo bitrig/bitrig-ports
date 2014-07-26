@@ -3,7 +3,7 @@
 COMMENT =		port of Algorithm::Diff that uses the LCS algorithm
 
 DISTNAME =		diff-lcs-1.2.4
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel lang/ruby
 
 # Perl Artistic

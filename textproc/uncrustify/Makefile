@@ -3,13 +3,11 @@
 COMMENT =		source code beautifier
 
 DISTNAME =		uncrustify-0.59
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		textproc devel
 
 HOMEPAGE =		http://uncrustify.sourceforge.net/
-
-MAINTAINER =		Remi Pointel <rpointel@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

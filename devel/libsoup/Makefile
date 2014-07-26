@@ -4,7 +4,7 @@ COMMENT =		HTTP client/server library for GNOME
 
 GNOME_PROJECT =		libsoup
 GNOME_VERSION =		2.46.0
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=  soup-2.4             8.0      # 8.0
 SHARED_LIBS +=  soup-gnome-2.4       8.0      # 8.0
@@ -13,9 +13,6 @@ API_VERSION =		2.4
 SUBST_VARS =		API_VERSION
 
 CATEGORIES =		devel www
-
-MAINTAINER =		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=   Yes

@@ -10,8 +10,6 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.unbound.net/downloads/
 HOMEPAGE=	http://www.unbound.net/
 
-MAINTAINER=     Jakob Schlyter <jakob@openbsd.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 

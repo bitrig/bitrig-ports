@@ -4,7 +4,7 @@ COMMENT=	automated driving and testing of terminal-based programs
 
 MODULES=	cpan
 DISTNAME=	Test-Expect-0.31
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

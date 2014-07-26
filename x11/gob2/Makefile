@@ -4,6 +4,7 @@ COMMENT=		GTK+ Object Builder
 
 GNOME_PROJECT=		gob2
 GNOME_VERSION=		2.0.20
+REVISION=		0
 
 CATEGORIES=		x11 devel
 

@@ -4,7 +4,7 @@ COMMENT=	persistence framework for Apache session data
 
 MODULES=	cpan
 DISTNAME=	Apache-Session-1.83
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www databases
 USE_GROFF =	Yes
 

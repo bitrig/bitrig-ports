@@ -3,9 +3,8 @@
 COMMENT =	high-performance event loop library
 
 DISTNAME =	libev-4.15
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 SHARED_LIBS=	ev 3.1 # 4.0
 

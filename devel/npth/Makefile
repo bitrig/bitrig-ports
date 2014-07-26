@@ -3,14 +3,13 @@
 COMMENT=	new GNU Portable Threads Library
 
 DISTNAME=	npth-0.91
+REVISION=	0
 
 SHARED_LIBS=	npth 0.0	# 0.2
 
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.gnupg.org
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

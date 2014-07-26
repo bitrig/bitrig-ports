@@ -4,6 +4,7 @@ COMMENT=	Tie hashes to DBI relational databases
 
 MODULES=	cpan
 DISTNAME=	Tie-DBI-1.05
+REVISION=	0
 CATEGORIES=	databases
 USE_GROFF =	Yes
 

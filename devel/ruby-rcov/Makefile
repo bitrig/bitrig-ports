@@ -3,10 +3,8 @@
 COMMENT=	code coverage tool for Ruby
 
 DISTNAME=	rcov-0.9.9
-REVISION=		2
+REVISION=		3
 CATEGORIES=	devel
-
-MAINTAINER=	Jeremy Evans <jeremy@openbsd.org>
 
 # MIT License
 PERMIT_PACKAGE_CDROM=	Yes

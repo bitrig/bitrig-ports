@@ -9,7 +9,7 @@ COMMENT=		RSS reader plugin for evolution
 
 GNOME_PROJECT=		evolution-rss
 GNOME_VERSION=		0.3.94
-REVISION=		6
+REVISION=		7
 
 MASTER_SITES0=		https://distfiles.bsdfrog.org/evolution-rss/
 PATCH_DIST_STRIP=	-p1
@@ -26,9 +26,6 @@ PATCHFILES=\
 CATEGORIES=		mail
 
 HOMEPAGE=		http://gnome.eu.org/evo/index.php/Evolution_RSS_Reader_Plugin
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT =	ensures test coverage and accelerates TDD
 
 DISTNAME =	ZenTest-4.9.2
 PKGNAME =	${DISTNAME:L}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 
 # MIT

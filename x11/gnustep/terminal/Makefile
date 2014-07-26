@@ -3,7 +3,7 @@
 COMMENT=	terminal emulator for GNUstep
 
 DISTNAME=	Terminal-0.9.8
-REVISION =	3
+REVISION =	4
 PKGNAME=	gnustep-${DISTNAME:L}
 CATEGORIES=	sysutils
 

@@ -4,6 +4,7 @@ COMMENT-main =	KDE bindings for running interpreters
 COMMENT-java =	KDE Java bindings
 DISTNAME =	kross-interpreters-${MODKDE4_VERSION}
 PKGNAME-main =	${PKGNAME}
+REVISION =	0
 PKGNAME-java =	${PKGNAME:C/interpreters/java/}
 
 MULTI_PACKAGES =	-main -java

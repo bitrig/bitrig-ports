@@ -3,9 +3,8 @@
 COMMENT=	compare perl data structures
 
 DISTNAME=	Data-Compare-1.22
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	Andrew Fresh <andrew@cpan.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

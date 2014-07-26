@@ -3,11 +3,9 @@
 COMMENT =		web server for WAI applications
 
 DISTNAME =		warp-1.3.9
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel www
 HOMEPAGE =		https://github.com/snoyberg/warp
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

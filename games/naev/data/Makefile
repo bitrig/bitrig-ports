@@ -8,6 +8,7 @@ COMMENT = 	naev game data
 
 DISTNAME =	ndata-${VERSION}
 PKGNAME = 	naev-data-${VERSION}
+REVISION = 	0
 
 EXTRACT_SUFX = 	#
 EXTRACT_ONLY = 	#

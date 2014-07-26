@@ -5,7 +5,7 @@ COMMENT =	unicode library for objective caml
 CATEGORIES =	devel
 
 V =		0.8.3
-REVISION =	1
+REVISION =	2
 DISTNAME =	camomile-${V}
 PKGNAME =	ocaml-camomile-${V}
 EXTRACT_SUFX =	.tar.bz2
@@ -13,8 +13,6 @@ EXTRACT_SUFX =	.tar.bz2
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=camomile/}
 
 HOMEPAGE =	http://camomile.sourceforge.net/
-
-MAINTAINER =	Christopher Zimmermann <madroach@gmerlin.de>
 
 # LGPL >= 2
 PERMIT_PACKAGE_CDROM =		Yes

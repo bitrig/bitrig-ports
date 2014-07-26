@@ -3,7 +3,7 @@
 COMMENT=	John Horton Conway's Game of Life
 
 DISTNAME=	xlife-5.3
-REVISION =	4
+REVISION =	5
 CATEGORIES=	games
 
 HOMEPAGE=	http://www.catb.org/~esr/software.html

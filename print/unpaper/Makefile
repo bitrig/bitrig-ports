@@ -3,12 +3,11 @@
 COMMENT=	post-processing tool for scanned paper sheets
 
 DISTNAME=	unpaper-0.3
+REVISION=	0
 
 CATEGORIES=	print graphics
 
 HOMEPAGE=	http://unpaper.berlios.de/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

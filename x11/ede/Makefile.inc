@@ -4,7 +4,6 @@ V =		2.1
 FULL_V =	2.1.0
 CATEGORIES =	x11
 HOMEPAGE =	http://equinox-project.org
-MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 SUBST_VARS +=	FULL_V
 
 # (L)GPLv2+

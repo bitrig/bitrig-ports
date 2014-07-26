@@ -3,7 +3,7 @@
 COMMENT=	parser for RDF Site Summary files in PHP
 
 DISTNAME=	XML_RSS-0.9.2
-REVISION =	3
+REVISION =	4
 CATEGORIES=	textproc
 
 MODULES=	www/pear

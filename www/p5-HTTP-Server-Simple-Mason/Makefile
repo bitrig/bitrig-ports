@@ -4,6 +4,7 @@ COMMENT=	abstract baseclass for a standalone mason server
 
 MODULES=	cpan
 DISTNAME=	HTTP-Server-Simple-Mason-0.14
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
 

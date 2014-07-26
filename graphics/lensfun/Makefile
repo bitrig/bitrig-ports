@@ -2,7 +2,7 @@
 
 COMMENT=	library to adjust for photographic lens characteristics
 DISTNAME=	lensfun-0.2.7
-REVISION=	0
+REVISION=	1
 SHARED_LIBS=	lensfun 1.0
 
 CATEGORIES=	graphics

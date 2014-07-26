@@ -3,9 +3,8 @@
 COMMENT=	bomberman clone with multiplayer mode
 
 DISTNAME=	bomberclone-0.11.9
+REVISION=	0
 CATEGORIES=	games x11
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 HOMEPAGE=	http://www.bomberclone.de/
 

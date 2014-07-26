@@ -4,7 +4,7 @@ COMMENT=	wrapper around the Expect module
 
 MODULES=	cpan
 DISTNAME=	Expect-Simple-0.04
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

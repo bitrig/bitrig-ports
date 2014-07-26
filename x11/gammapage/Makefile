@@ -3,7 +3,7 @@
 COMMENT=	gamma-adjusting utility
 
 DISTNAME=	GAMMApage-0.5
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	x11
 EXTRACT_SUFX=	.tar.bz2

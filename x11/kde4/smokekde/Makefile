@@ -3,6 +3,7 @@
 CATEGORIES =	devel
 COMMENT =	introspective wrappers around KDE
 DISTNAME =	smokekde-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	smokeakonadi		51.0 # 3.0
 #SHARED_LIBS +=	smokeattica		50.0 # 3.0

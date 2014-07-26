@@ -3,10 +3,9 @@
 COMMENT =	convert MultiMarkdown syntax to (X)HTML
 
 DISTNAME =	Text-MultiMarkdown-1.000034
+REVISION =	0
 CATEGORIES =	textproc www
 MODULES =	cpan
-
-MAINTAINER =	Okan Demirmen <okan@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

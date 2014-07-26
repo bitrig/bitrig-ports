@@ -4,6 +4,7 @@ COMMENT =	code attribute introspection
 
 MODULES =	cpan
 DISTNAME =	MooseX-MethodAttributes-0.25
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

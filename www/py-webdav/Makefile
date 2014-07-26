@@ -5,7 +5,7 @@ COMMENT=		standards compliant Python WebDAV server and library
 MODPY_EGG_VERSION=	0.9.8
 DISTNAME=		PyWebDAV-${MODPY_EGG_VERSION}
 PKGNAME=		py-webdav-${MODPY_EGG_VERSION}
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		www
 

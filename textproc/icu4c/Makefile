@@ -10,7 +10,7 @@ COMMENT=		International Components for Unicode
 VERSION=		53.1
 DISTNAME=		icu4c-${VERSION:S/./_/g}-src
 PKGNAME=		icu4c-${VERSION}
-REVISION=		0
+REVISION=		1
 SO_VERSION=		7.0
 .for _lib in icudata icui18n icuio icule iculx icutest icutu icuuc
 SHARED_LIBS+=		${_lib} ${SO_VERSION}
@@ -20,8 +20,6 @@ CATEGORIES=		textproc devel
 DPB_PROPERTIES=		parallel
 
 HOMEPAGE=		http://www.icu-project.org
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # ICU
 # http://source.icu-project.org/repos/icu/icu/trunk/license.html

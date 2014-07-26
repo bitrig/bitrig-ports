@@ -5,6 +5,7 @@ COMMENT =	module for RFC 5451 Authentication-Results Headers
 MODPY_EGG_VERSION = 0.602
 DISTNAME =	authres-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 CATEGORIES =	mail
 
 HOMEPAGE =	https://launchpad.net/authentication-results-python

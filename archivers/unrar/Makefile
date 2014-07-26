@@ -13,11 +13,9 @@ PKGNAME=	unrar-5.00
 EPOCH=		1
 DISTNAME=	unrarsrc-5.0.11
 CATEGORIES=	archivers
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.rarlab.com/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # nonstandard
 PERMIT_PACKAGE_CDROM=	Yes

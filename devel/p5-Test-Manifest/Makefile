@@ -4,10 +4,8 @@ COMMENT=		interact with a t/test_manifest file
 
 MODULES=		cpan
 DISTNAME=		Test-Manifest-1.23
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

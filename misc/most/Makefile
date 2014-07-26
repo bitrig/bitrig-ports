@@ -3,7 +3,7 @@
 COMMENT=	browse or page through a text file
 
 DISTNAME=	most-5.0.0a
-REVISION=	0
+REVISION=	1
 CATEGORIES=	misc
 
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/most/

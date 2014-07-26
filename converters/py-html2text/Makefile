@@ -5,6 +5,7 @@ COMMENT=	convert HTML into clean plain ASCII text
 MODPY_EGG_VERSION= 3.200.3
 DISTNAME=	html2text-${MODPY_EGG_VERSION}
 PKGNAME=	py-${DISTNAME}
+REVISION=	0
 
 CATEGORIES=	converters www
 

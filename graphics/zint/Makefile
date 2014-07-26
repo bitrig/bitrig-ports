@@ -8,8 +8,8 @@ DISTNAME =		zint-${V}
 PKGNAME-main = 		${DISTNAME}
 PKGNAME-x11 = 		zint-gui-${V}
 
-REVISION-main =		1
-REVISION-x11 =		2
+REVISION-main =		2
+REVISION-x11 =		3
 
 SHARED_ONLY = 		Yes
 
@@ -17,8 +17,6 @@ SHARED_LIBS += 		QZint	0.0 # 2.4
 SHARED_LIBS += 		zint	0.0 # 2.4
 
 CATEGORIES =		graphics
-
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

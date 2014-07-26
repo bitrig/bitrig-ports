@@ -3,7 +3,7 @@
 COMMENT =	XML and HTML processing toolkit
 DISTNAME =	arabica-2010-November
 PKGNAME =	arabica-2010.11
-REVISION =	0
+REVISION =	1
 CATEGORIES =	textproc
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=arabica/}
 

@@ -5,7 +5,7 @@ COMMENT=	REST-based system for building web applications
 VERSION=	1.9.3
 DISTNAME=	webmachine-${VERSION}
 PKGNAME=	erl-${DISTNAME}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 HOMEPAGE=	https://github.com/basho/webmachine

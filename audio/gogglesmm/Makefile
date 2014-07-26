@@ -3,12 +3,10 @@
 COMMENT =	music collection manager and player
 DISTNAME =	gogglesmm-0.12.7
 EXTRACT_SUFX =	.tar.xz
-REVISION =	1
+REVISION =	2
 CATEGORIES =	audio x11
 
 HOMEPAGE =	https://code.google.com/p/gogglesmm/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =		Yes

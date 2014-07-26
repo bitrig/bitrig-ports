@@ -4,13 +4,12 @@ V =		2.0.0
 COMMENT =	SDL2 image library
 DISTNAME =	SDL2_image-${V}
 PKGNAME =	sdl2-image-${V}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel graphics
 
 SHARED_LIBS +=	SDL2_image		0.0 # 0.0
 
 HOMEPAGE =	http://www.libsdl.org/projects/SDL_image/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # zlib
 PERMIT_PACKAGE_CDROM =	Yes

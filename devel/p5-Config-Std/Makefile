@@ -4,6 +4,7 @@ COMMENT=		use standard configuration files
 
 MODULES=		cpan
 DISTNAME=		Config-Std-0.901
+REVISION=		0
 CATEGORIES=		devel
 
 # Perl

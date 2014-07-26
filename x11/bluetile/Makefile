@@ -3,7 +3,7 @@
 COMMENT =		modern tiling window manager
 
 DISTNAME =		bluetile-0.6
-REVISION =		3
+REVISION =		4
 CATEGORIES =		x11
 HOMEPAGE =		http://www.bluetile.org/
 

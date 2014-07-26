@@ -3,7 +3,7 @@
 COMMENT=	cross platform, open source .NET developement framework
 
 DISTNAME=	mono-3.4.0
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	lang devel
 
@@ -15,8 +15,6 @@ SHARED_LIBS +=  mono-profiler-log	0.0	# .0.0
 SHARED_LIBS +=  mono-profiler-cov	1.0	# .0.0
 
 HOMEPAGE=	http://www.mono-project.com/
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 # GPLv2, LGPL, MIT X11, MPL
 PERMIT_PACKAGE_CDROM=	Yes

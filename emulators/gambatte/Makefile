@@ -5,13 +5,11 @@ COMMENT =		highly accurate Game Boy Color emulator
 REV =			550
 DISTNAME =		gambatte_src-r${REV}
 PKGNAME =		gambatte-0.5.0.${REV}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		emulators
 
 HOMEPAGE =		http://gambatte.sourceforge.net/
-
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

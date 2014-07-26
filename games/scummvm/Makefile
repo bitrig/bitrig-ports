@@ -4,11 +4,9 @@ COMMENT=	graphical adventure game interpreter
 DISTNAME=	scummvm-1.6.0
 CATEGORIES=	games x11 emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scummvm/}
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://scummvm.sourceforge.net/
-
-MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

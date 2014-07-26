@@ -4,7 +4,7 @@ COMMENT=	Xfce4 disk performance panel plugin
 
 XFCE_VERSION=	2.5.4
 XFCE_PLUGIN=	diskperf
-REVISION =	3
+REVISION =	4
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

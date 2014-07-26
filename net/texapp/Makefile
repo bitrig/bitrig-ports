@@ -2,11 +2,10 @@
 
 COMMENT =	command line app.net client
 DISTNAME =	texapp-0.6.8
+REVISION =	0
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.floodgap.com/software/texapp/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # Floodgap Free Software License
 PERMIT_PACKAGE_CDROM =	Yes

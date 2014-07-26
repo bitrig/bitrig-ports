@@ -4,6 +4,7 @@ COMMENT =	use Moose or Mouse modules
 
 MODULES =	cpan
 DISTNAME =	Any-Moose-0.18
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

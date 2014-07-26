@@ -11,8 +11,8 @@ DISTNAME=		libproxy-${VERSION}
 PKGNAME-main=		libproxy-${VERSION}
 PKGNAME-webkit=		libproxy-webkit-${VERSION}
 
-REVISION-main=		4
-REVISION-webkit=	4
+REVISION-main=		5
+REVISION-webkit=	5
 
 CATEGORIES=		net
 

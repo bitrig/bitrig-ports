@@ -2,7 +2,7 @@
 
 COMMENT=	lightweight userspace bandwidth shaper
 DISTNAME=	trickle-1.06
-REVISION=	5
+REVISION=	6
 CATEGORIES=	net
 
 HOMEPAGE=	http://monkey.org/~marius/trickle/

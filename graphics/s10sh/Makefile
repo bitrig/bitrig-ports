@@ -3,13 +3,11 @@
 COMMENT=	S10sh - a Canon PowerShot digital camera driver
 
 DISTNAME=	s10sh-0.2.0
-REVISION =	3
+REVISION =	4
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.kyuzz.org/antirez/s10sh-src/
 
 HOMEPAGE=	http://www.kyuzz.org/antirez/s10sh.html
-
-MAINTAINER=	Markus Friedl <markus@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

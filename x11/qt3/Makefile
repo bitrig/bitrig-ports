@@ -16,12 +16,12 @@ FULLPKGNAME-html=	qt3-html-${VERSION}
 FULLPKGPATH-html=	x11/qt3,-html
 PKGNAME-sqlite2=	qt3-sqlite2-${VERSION}
 
-REVISION-mysql= 	8
-REVISION-postgresql= 	6
-REVISION-main= 		9
-REVISION-html= 		2
-REVISION-examples=	3
-REVISION-sqlite2= 	6
+REVISION-mysql= 	9
+REVISION-postgresql= 	7
+REVISION-main= 		10
+REVISION-html= 		3
+REVISION-examples=	4
+REVISION-sqlite2= 	7
 
 # the qt-mt library version number is used in a directory name.
 # when bumping, be sure to also bump MODQT3_PLUGINS in qt3.port.mk
@@ -54,8 +54,6 @@ pre-configure:
 	cd ${WRKDIST} && /bin/sh ./make-symlinks.sh
 
 HOMEPAGE=	http://www.trolltech.com/qt/
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 FLAVORS=debug
 

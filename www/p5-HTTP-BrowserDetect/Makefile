@@ -4,6 +4,7 @@ COMMENT=	determine web browser from an HTTP user agent string
 
 MODULES=	cpan
 DISTNAME=	HTTP-BrowserDetect-1.22
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
 

@@ -4,13 +4,11 @@ COMMENT=	monitoring and reporting tool for bacula(8)
 
 DISTNAME=	bacula-web-6.0.0
 EXTRACT_SUFX=	.tgz
-REVISION=	4
+REVISION=	5
 
 CATEGORIES=	www sysutils
 
 HOMEPAGE=	http://www.bacula-web.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

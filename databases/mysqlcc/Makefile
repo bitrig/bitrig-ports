@@ -5,7 +5,7 @@ COMMENT=		GUI client for MySQL
 VERSION=		0.9.8
 DISTNAME=		mysqlcc-${VERSION}-src
 PKGNAME=		mysqlcc-${VERSION}
-REVISION=		6
+REVISION=		7
 CATEGORIES=		databases
 
 HOMEPAGE=		http://mysqlcc.sourceforge.net/

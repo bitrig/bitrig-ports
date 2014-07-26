@@ -3,11 +3,9 @@
 COMMENT=	module for controlling superclass method dispatch
 
 DISTNAME=	SUPER-1.17
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

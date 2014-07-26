@@ -4,10 +4,8 @@ COMMENT=	computing subnets in large scale networks
 
 MODULES=	cpan
 DISTNAME=	Net-Subnets-0.21
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -2,10 +2,10 @@
 
 COMMENT =	organizer for book/music/video collections for KDE4
 DISTNAME =	tellico-2.3.9
+REVISION =	0
 
 CATEGORIES =	productivity x11
 HOMEPAGE =	http://tellico-project.org/
-MAINTAINER =	KDE porting team <openbsd-kde@googlegroups.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

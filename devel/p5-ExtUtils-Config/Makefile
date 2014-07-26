@@ -4,9 +4,8 @@ COMMENT =	wrapper for perl's configuration
 
 MODULES =	cpan
 DISTNAME =	ExtUtils-Config-0.007
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =    Sergey Bronnikov <estetus@gmail.com>
 
 CPAN_AUTHOR =	LEONT
 

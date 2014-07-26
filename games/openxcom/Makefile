@@ -3,11 +3,10 @@
 BROKEN-alpha =	OOM on XcomRuleset.cpp
 COMMENT =		open source reimplementation of the original X-Com
 DISTNAME =		openxcom-20120217
-REVISION =		1
+REVISION =		2
 CATEGORIES =		games x11
 
 HOMEPAGE =		http://openxcom.ninex.info/
-MAINTAINER =		Antti Harri <iku@openbsd.fi>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

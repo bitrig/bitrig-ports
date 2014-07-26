@@ -4,10 +4,8 @@ COMMENT=	Perl extension for rounding numbers
 
 MODULES=	cpan
 DISTNAME=	Math-Round-0.06
-REVISION=	0
+REVISION=	1
 CATEGORIES=	math
-
-MAINTAINER=	Steven Mestdagh <steven@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

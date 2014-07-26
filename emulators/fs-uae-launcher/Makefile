@@ -4,9 +4,9 @@ COMMENT =		launcher for the FS-UAE Amiga emulator
 
 MODPY_EGG_VERSION =	2.4.0
 DISTNAME =		fs-uae-launcher-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		emulators x11
 HOMEPAGE =		http://fs-uae.net
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

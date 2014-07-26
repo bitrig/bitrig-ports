@@ -4,11 +4,10 @@ COMMENT =	extensible framework for Perl server engines
 
 MODULES =	cpan
 DISTNAME =	Net-Server-2.007
+REVISION =	0
 CATEGORIES =	devel net
 
 HOMEPAGE =	http://seamons.com/projects/
-
-MAINTAINER =	Michael Erdely <merdely@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -6,7 +6,7 @@ COMMENT=		GNU Readline Library Wrapper Module
 
 MODULES=		cpan
 DISTNAME=		Term-ReadLine-Gnu-1.16
-REVISION=		5
+REVISION=		6
 CATEGORIES=		devel
 
 PERMIT_PACKAGE_CDROM=	Yes

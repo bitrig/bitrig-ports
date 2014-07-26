@@ -5,11 +5,10 @@ COMMENT =	Python interface to memcached
 MODPY_EGG_VERSION = 1.48
 DISTNAME =	python-memcached-${MODPY_EGG_VERSION}
 PKGNAME =	${DISTNAME:S/python-/py-/}
+REVISION =	0
 CATEGORIES =	misc
 
 HOMEPAGE =	http://www.tummy.com/Community/software/python-memcached/
-
-MAINTAINER =	Ben Lovett <ben@tilderoot.com>
 
 # Python
 PERMIT_PACKAGE_CDROM =	Yes

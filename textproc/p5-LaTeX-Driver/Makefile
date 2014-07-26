@@ -3,6 +3,7 @@
 COMMENT=		driver to format LaTeX documents
 
 DISTNAME=		LaTeX-Driver-0.12
+REVISION=		0
 CATEGORIES=		textproc
 
 MODULES=		cpan

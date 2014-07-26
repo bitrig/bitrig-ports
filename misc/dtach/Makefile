@@ -2,7 +2,7 @@
 
 COMMENT=		tiny program emulating the detach feature of screen
 DISTNAME=		dtach-0.8
-REVISION=		1
+REVISION=		2
 CATEGORIES=		misc
 
 HOMEPAGE=		http://dtach.sourceforge.net/

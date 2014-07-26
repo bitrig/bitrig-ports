@@ -3,7 +3,7 @@
 COMMENT=	multi-way scrolling shoot'em up for X11, addictive
 
 DISTNAME=	xkobo-1.11
-REVISION =	4
+REVISION =	5
 CATEGORIES=	games
 
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=games/}  \
@@ -15,8 +15,6 @@ FLAVOR?=
 .if ${FLAVOR} == "harder"
 PATCH_LIST=patch-* extra-hard
 .endif
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

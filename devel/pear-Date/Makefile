@@ -3,6 +3,7 @@
 COMMENT=	date and timezone classes for PHP
 
 DISTNAME=	Date-1.4.7
+REVISION=	0
 CATEGORIES=	devel
 
 MODULES=	www/pear

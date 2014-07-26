@@ -6,7 +6,7 @@ COMMENT=	perl interface to the MD2 Algorithm
 
 MODULES=	cpan
 DISTNAME=	Digest-MD2-2.03
-REVISION=	5
+REVISION=	6
 CATEGORIES=	security
 
 # GPL/Artistic

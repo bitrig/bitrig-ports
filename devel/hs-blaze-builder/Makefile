@@ -3,9 +3,8 @@
 COMMENT=		efficient construction of bytestrings
 
 DISTNAME=		blaze-builder-0.3.1.1
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes

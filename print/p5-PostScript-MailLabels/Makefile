@@ -4,6 +4,7 @@ COMMENT=	create PostScript files of mailing address labels
 
 MODULES=	cpan
 DISTNAME=	PostScript-MailLabels-2.32
+REVISION=	0
 CATEGORIES=	print
 
 # perl

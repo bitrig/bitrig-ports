@@ -6,7 +6,7 @@ COMMENT=		Python Packet Construction Set
 
 DISTNAME=		pcs-0.5
 PKGNAME=		py-${DISTNAME}
-REVISION=		3
+REVISION=		4
 
 CATEGORIES=		net
 

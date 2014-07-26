@@ -2,10 +2,9 @@
 
 COMMENT =		persistent key-value database
 DISTNAME =		redis-2.8.12
+REVISION =		0
 CATEGORIES =		databases
 HOMEPAGE =		http://redis.io/
-
-MAINTAINER = 		David Coppa <dcoppa@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

@@ -10,14 +10,12 @@ PKGNAME-main =		py-dbus-${V}
 FULLPKGNAME-common =	py-dbus-common-${V}
 FULLPKGPATH-common =	x11/dbus-python,-common
 
-REVISION-main =		2
-REVISION-common =	0
+REVISION-main =		3
+REVISION-common =	1
 
 CATEGORIES =		x11
 
 HOMEPAGE =		http://dbus.freedesktop.org/
-
-MAINTAINER =		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # ISC-like
 PERMIT_PACKAGE_CDROM =	Yes

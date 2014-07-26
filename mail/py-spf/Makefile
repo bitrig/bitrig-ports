@@ -5,11 +5,10 @@ COMMENT=	Sender-Policy-Framework queries in Python
 MODPY_EGG_VERSION=2.0.8
 DISTNAME=	pyspf-${MODPY_EGG_VERSION}
 PKGNAME=	py-spf-${MODPY_EGG_VERSION}
+REVISION=	0
 CATEGORIES=	mail
 
 HOMEPAGE=	http://bmsi.com/python/milter.html
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # Python
 PERMIT_PACKAGE_CDROM=	Yes

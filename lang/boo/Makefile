@@ -11,13 +11,11 @@ BUILD_NUM =	9
 DISTNAME = 	${PKGNAME}.${BUILD_NUM}
 PKGNAME = 	${PNAME}-${V}
 CATEGORIES = 	lang
-REVISION =	2
+REVISION =	3
 
 EXTRACT_SUFX = 	-src.zip
 
 HOMEPAGE = 	http://boo.codehaus.org/
-
-MAINTAINER = 	Ryan Boggs <rmboggs@gmail.com>
 
 # MIT/BSD
 PERMIT_PACKAGE_CDROM =	Yes

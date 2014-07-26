@@ -3,7 +3,7 @@
 COMMENT =	super simple job queue over AMQP
 
 DISTNAME =	minion-0.1.10
-REVISION =	6
+REVISION =	7
 CATEGORIES =	net
 
 # MIT

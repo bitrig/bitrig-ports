@@ -4,7 +4,7 @@ COMMENT=	read WMA/ASF metadata
 
 MODULES=	cpan
 DISTNAME=	Audio-WMA-1.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 
 # perl

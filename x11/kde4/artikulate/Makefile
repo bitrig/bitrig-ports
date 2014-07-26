@@ -2,7 +2,7 @@
 
 COMMENT =	language pronunciation improver
 DISTNAME =	artikulate-${MODKDE4_VERSION}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	education
 

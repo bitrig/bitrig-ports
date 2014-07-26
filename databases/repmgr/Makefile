@@ -5,7 +5,7 @@ COMMENT =	HA and replication cluster management for PostgreSQL
 DISTNAME =	repmgr-1.2.0
 CATEGORIES =	databases
 HOMEPAGE =	http://www.repmgr.org/
-REVISION=	0
+REVISION=	1
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

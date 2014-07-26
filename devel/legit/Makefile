@@ -4,6 +4,7 @@ COMMENT=		complementary command-line interface for Git
 
 MODPY_EGG_VERSION=	0.1.1
 DISTNAME=		legit-${MODPY_EGG_VERSION}
+REVISION=		0
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.git-legit.org/

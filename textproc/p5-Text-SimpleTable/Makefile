@@ -3,10 +3,8 @@
 COMMENT=	simple eyecandy ASCII Tables
 
 DISTNAME=	Text-SimpleTable-2.03
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

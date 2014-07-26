@@ -3,10 +3,8 @@
 COMMENT =		lifted IO operations from the base library
 
 DISTNAME =		lifted-base-0.1.1.1
-REVISION =		1
+REVISION =		2
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT =	data files for vegastrike
 
 DISTNAME =	vegastrike-data-${V}
-REVISION = 	0
+REVISION = 	1
 
 NO_BUILD =	Yes
 NO_TEST =	Yes

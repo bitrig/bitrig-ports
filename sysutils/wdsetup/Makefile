@@ -4,9 +4,8 @@ COMMENT=	Western Digital and SMC ethernet card configuration program
 
 DISTNAME=	wdsetup-0.6b
 PKGNAME=	wdsetup-0.6b
+REVISION=	0
 CATEGORIES=	sysutils
-
-MAINTAINER=	Todd Miller <millert@openbsd.org>
 
 ONLY_FOR_ARCHS= i386
 

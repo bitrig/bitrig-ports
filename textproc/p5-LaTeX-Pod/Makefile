@@ -3,6 +3,7 @@
 COMMENT=		transform LaTeX source files to POD
 
 DISTNAME=		LaTeX-Pod-0.21
+REVISION=		0
 CATEGORIES=		textproc
 
 MODULES=		cpan

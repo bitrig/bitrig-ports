@@ -4,10 +4,9 @@ COMMENT =	execute code after a scope finished compilation
 
 MODULES =	cpan
 DISTNAME =	B-Hooks-EndOfScope-0.13
+REVISION =	0
 CATEGORIES =	devel
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

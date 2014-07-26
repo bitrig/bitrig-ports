@@ -3,12 +3,11 @@
 COMMENT=		ssh through https proxy tunnel
 
 DISTNAME=		gotthard-1.3
+REVISION=		0
 CATEGORIES=		net
 MASTER_SITES=		http://www.nazgul.ch/dev/
 
 HOMEPAGE=		http://www.nazgul.ch/dev.html
-
-MAINTAINER=		Marcus Glocker <marcus@nazgul.ch>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

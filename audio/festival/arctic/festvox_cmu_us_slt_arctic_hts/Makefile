@@ -2,6 +2,7 @@
 
 COMMENT=	American English female speaker (SLT)
 DISTNAME=	festvox_cmu_us_slt_arctic_hts
+REVISION=	0
 
 RUN_DEPENDS=	${ARCTIC_US_DEPS}
 

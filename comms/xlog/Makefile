@@ -4,7 +4,7 @@ COMMENT=		logbook program for amateur radio operators
 
 DISTNAME=		xlog-2.0.5
 CATEGORIES=    		comms hamradio
-REVISION =		1
+REVISION =		2
 
 HOMEPAGE=		http://www.nongnu.org/xlog/
 

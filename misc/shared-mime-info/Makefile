@@ -3,11 +3,10 @@
 COMMENT=		shared mime database for desktops
 
 DISTNAME=		shared-mime-info-1.3
+REVISION=		0
 CATEGORIES=		misc
 
 HOMEPAGE=		http://www.freedesktop.org/wiki/Software/shared-mime-info
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

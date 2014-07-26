@@ -3,6 +3,7 @@
 COMMENT=		SOAP with WSDL support
 
 DISTNAME=		SOAP-WSDL-2.00.10
+REVISION=		0
 CATEGORIES=		www
 
 # perl

@@ -2,10 +2,8 @@
 
 COMMENT=		network traffic viewer
 DISTNAME=		pktstat-1.8.4
-REVISION=		3
+REVISION=		4
 CATEGORIES=		net
-
-MAINTAINER=		Antti Harri <iku@openbsd.fi>
 
 # Public Domain
 PERMIT_PACKAGE_CDROM=	Yes

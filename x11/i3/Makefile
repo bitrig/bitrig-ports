@@ -3,12 +3,12 @@
 COMMENT =	improved dynamic tiling window manager
 
 DISTNAME =	i3-4.8
+REVISION =	0
 CATEGORIES =	x11
 
 EXTRACT_SUFX =	.tar.bz2
 HOMEPAGE =	http://i3wm.org/
 MASTER_SITES =	${HOMEPAGE}/downloads/
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =   Yes

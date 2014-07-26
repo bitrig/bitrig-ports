@@ -6,9 +6,7 @@ COMMENT=	interface to the system's process table
 
 DISTNAME=	Proc-ProcessTable-0.48
 CATEGORIES=	sysutils
-REVISION=	0
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
+REVISION=	1
 
 # Artistic License
 PERMIT_PACKAGE_CDROM=	Yes

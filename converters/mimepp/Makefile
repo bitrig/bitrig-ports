@@ -3,7 +3,7 @@
 COMMENT=	C++ class library for MIME messages
 
 DISTNAME=		mimepp-1.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=		converters
 
 PERMIT_PACKAGE_CDROM=	restrictive non-commercial license

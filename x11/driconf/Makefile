@@ -4,7 +4,7 @@ COMMENT =		configuration utility for DRI drivers
 
 MODPY_EGG_VERSION =	0.9.1
 DISTNAME =		driconf-${MODPY_EGG_VERSION}
-REVISION=		5
+REVISION=		6
 CATEGORIES =		x11
 
 HOMEPAGE =		http://dri.freedesktop.org/wiki/DriConf

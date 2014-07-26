@@ -2,7 +2,7 @@
 
 COMMENT=		cd player for Afterstep or Window Maker
 DISTNAME=		ascd-0.13.2
-REVISION=		5
+REVISION=		6
 CATEGORIES=		audio x11 x11/windowmaker
 
 # BSD

@@ -3,6 +3,7 @@
 COMMENT=		download/stream programmes from BBC iPlayer
 
 DISTNAME=		get_iplayer-2.86
+REVISION=		0
 CATEGORIES=		multimedia
 
 # http://git.infradead.org/get_iplayer.git
@@ -10,8 +11,6 @@ HOMEPAGE=		http://www.infradead.org/get_iplayer/
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 MASTER_SITES=		ftp://ftp.infradead.org/pub/get_iplayer/
 

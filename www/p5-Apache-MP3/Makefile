@@ -4,7 +4,7 @@ COMMENT=	mod_perl class for generating browsable MP3 directory lists
 
 MODULES=	cpan
 DISTNAME=	Apache-MP3-3.05
-REVISION=	3
+REVISION=	4
 CATEGORIES=	www audio
 USE_GROFF =	Yes
 

@@ -3,10 +3,9 @@
 COMMENT =		add/extend SSL support for common perl modules
 
 DISTNAME =		Net-SSLGlue-1.052
+REVISION =		0
 
 CATEGORIES =		security net
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

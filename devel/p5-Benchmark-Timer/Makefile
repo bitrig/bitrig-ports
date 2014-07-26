@@ -4,9 +4,8 @@ COMMENT=	benchmarking with statistical confidence
 
 MODULES=	cpan
 DISTNAME=	Benchmark-Timer-0.7102
+REVISION=	0
 CATEGORIES=	devel benchmarks
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT= 	create readonly variables
 
 MODULES=	cpan
 DISTNAME=	Readonly-1.03
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # perl licence

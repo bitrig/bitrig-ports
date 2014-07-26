@@ -3,11 +3,9 @@
 COMMENT =		Snap Haskell Web Framework Server
 
 DISTNAME =		snap-server-0.9.3.3
+REVISION =		0
 CATEGORIES =		www
 HOMEPAGE =		http://snapframework.com/
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>, \
-			Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

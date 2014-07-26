@@ -3,12 +3,10 @@
 COMMENT=		snowy and Santa-y desktop
 
 DISTNAME=		xsnow-1.42
-REVISION=		2
+REVISION=		3
 CATEGORIES=		x11
 
 HOMEPAGE=		http://dropmix.xs4all.nl/rick/Xsnow/
-
-MAINTAINER=		Victor Sahlstedt <salan@legonet.org>
 
 PERMIT_PACKAGE_CDROM=	vague license
 PERMIT_PACKAGE_FTP=	vague license

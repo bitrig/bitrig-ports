@@ -4,10 +4,8 @@ COMMENT=	minifies CSS files
 
 MODULES=	cpan
 DISTNAME=	CSS-Minifier-0.01
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
-
-MAINTAINER=	Girish Venkatachalam <girish1729@gmail.com>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

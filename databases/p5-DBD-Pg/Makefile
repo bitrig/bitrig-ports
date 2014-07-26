@@ -7,7 +7,7 @@ COMMENT=	access to PostgreSQL databases through the DBI
 MODULES=	cpan
 DISTNAME=	DBD-Pg-2.19.3
 CATEGORIES=	databases
-REVISION=	0
+REVISION=	1
 
 LIB_DEPENDS=	databases/postgresql
 RUN_DEPENDS=	databases/p5-DBI>=1.52
@@ -17,8 +17,6 @@ TEST_DEPENDS=databases/postgresql,-server \
 
 TEST_FLAGS=	DBI_DSN="dbi:Pg:dbname=template1" DBI_USER="_postgresql" \
 		DBI_PASS=""
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

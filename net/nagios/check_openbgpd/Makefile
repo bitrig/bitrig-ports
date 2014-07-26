@@ -4,10 +4,8 @@ PKG_ARCH=		*
 
 COMMENT=		Nagios plugin to monitor OpenBGPd peers
 DISTNAME=		check_openbgpd-1.5
-REVISION=		2
+REVISION=		3
 CATEGORIES=		sysutils net
-
-MAINTAINER=		Andrew Fresh <andrew@afresh1.com>
 
 HOMEPAGE=		http://openbsd.somedomain.net/nagios/
 MASTER_SITES=		http://monitoringexchange.org/attachment/download/Check-Plugins/Software/Misc/check_openbgpd/

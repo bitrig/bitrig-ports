@@ -3,7 +3,7 @@
 COMMENT =		C++ bindings for gtkglext
 
 DISTNAME =		gtkglextmm-1.2.0
-REVISION =		7
+REVISION =		8
 
 SHARED_LIBS +=		gdkglextmm-x11-1.2        0.0 # 0.0
 SHARED_LIBS +=		gtkglextmm-x11-1.2        0.0 # 0.0

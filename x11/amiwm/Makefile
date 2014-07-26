@@ -3,6 +3,7 @@
 COMMENT=	Amiga Workbench lookalike window manager
 
 VERSION=	0.20pl48
+REVISION=	0
 DISTNAME=	amiwm${VERSION}
 PKGNAME=	amiwm-0.20.48
 CATEGORIES=	x11

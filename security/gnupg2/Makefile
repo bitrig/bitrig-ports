@@ -3,13 +3,12 @@
 COMMENT =	GNU privacy guard - a free PGP replacement
 
 DISTNAME =	gnupg-2.0.25
+REVISION =	0
 CATEGORIES = 	security
 
 MASTER_SITES =	${MASTER_SITES_GNUPG:=gnupg/}
 
 HOMEPAGE = 	http://www.gnupg.org/
-
-MAINTAINER = 	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM = 	Yes

@@ -3,10 +3,9 @@
 COMMENT=	pager utility
 
 DISTNAME=	Data-Page-2.02
+REVISION=	0
 CATEGORIES=	databases
 MODULES=	cpan
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=	GNOME http client library
 
 DISTNAME=	libghttp-1.0.9
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
 SHARED_LIBS=	ghttp	1.0
 MODGNU_SHARED_LIBS=ghttp ''

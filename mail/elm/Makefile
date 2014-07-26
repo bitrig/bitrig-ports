@@ -3,12 +3,10 @@
 COMMENT=	once-popular mail user agent
 
 DISTNAME=	elm-2.4ME+66
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 
 MASTER_SITES=	ftp://ftp.ozone.fmi.fi/KEH/
-
-MAINTAINER=	Paul Janzen <pjanzen@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c termlib

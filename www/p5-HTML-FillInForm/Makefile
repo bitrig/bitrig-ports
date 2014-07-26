@@ -4,7 +4,7 @@ COMMENT=	inserts data into HTML input and select tags
 
 MODULES=	cpan
 DISTNAME=	HTML-FillInForm-2.00
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 # perl

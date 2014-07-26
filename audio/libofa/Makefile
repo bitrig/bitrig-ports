@@ -3,7 +3,7 @@
 COMMENT =	Open Fingerprint Architecture library
 
 DISTNAME =	libofa-0.9.3
-REVISION =	5
+REVISION =	6
 CATEGORIES =	audio devel
 HOMEPAGE =	https://code.google.com/p/musicip-libofa/
 SHARED_LIBS +=	ofa	0.0

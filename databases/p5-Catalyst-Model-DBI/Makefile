@@ -4,10 +4,8 @@ COMMENT= 	DBI model class for Catalyst
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Model-DBI-0.20
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www databases
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT =	open source remake of old DOS game Sherlock
 
 DISTNAME =	einstein-2.0
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	games
 

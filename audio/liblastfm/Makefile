@@ -6,11 +6,10 @@ COMMENT =	Qt-based C++ library for the Last.fm webservices
 V =		1.0.6
 DISTNAME =	$V
 PKGNAME =	liblastfm-$V
-REVISION =	1
+REVISION =	2
 CATEGORIES =	audio devel net
 
 HOMEPAGE =	https://github.com/lastfm/liblastfm
-MAINTAINER =	Vadim Zhukov <persgray@gmail.com>
 
 SHARED_LIBS =	lastfm			0.0
 SHARED_LIBS +=	lastfm_fingerprint	0.0

@@ -4,7 +4,7 @@ COMMENT=	multilingual clone of vi/ex
 
 DISTNAME=	nvi-1.79
 PKGNAME=	nvi-m17n-1.79.19991117
-REVISION=	6
+REVISION=	7
 CATEGORIES=	editors
 
 MASTER_SITES=	ftp://ftp.foretune.co.jp/pub/tools/nvi/

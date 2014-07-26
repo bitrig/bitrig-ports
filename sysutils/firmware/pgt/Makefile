@@ -3,9 +3,7 @@
 FW_DRIVER=	pgt
 FW_VER=		1.2
 DISTNAME=	pgt-firmware-${FW_VER}
-REVISION=	3
-
-MAINTAINER=	Marcus Glocker <mglocker@openbsd.org>
+REVISION=	4
 
 HOMEPAGE=	http://www.nazgul.ch/pgt/
 

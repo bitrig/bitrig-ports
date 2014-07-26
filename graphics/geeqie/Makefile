@@ -4,7 +4,7 @@ COMMENT=	lightweight Gtk+2 based image viewer
 
 DISTNAME=	geeqie-1.1
 CATEGORIES=	graphics
-REVISION=	0
+REVISION=	1
 EPOCH=		0
 
 HOMEPAGE=	http://geeqie.sourceforge.net/

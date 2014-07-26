@@ -4,6 +4,7 @@ COMMENT=	per-user session for catalyst
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-Session-PerUser-0.05
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
 

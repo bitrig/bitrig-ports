@@ -3,9 +3,8 @@
 COMMENT =		Runtime Haskell interpreter (GHC API wrapper)
 
 DISTNAME =		hint-0.3.3.6
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

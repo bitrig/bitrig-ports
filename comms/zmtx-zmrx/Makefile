@@ -3,6 +3,7 @@
 COMMENT=	receive/send files via ZMODEM protocol (unrestricted)
 
 DISTNAME=	zmtx-zmrx-1.02
+REVISION=	0
 CATEGORIES=	comms
 
 PERMIT_PACKAGE_CDROM=	no license

@@ -2,7 +2,7 @@
 
 COMMENT=	xosd based clock
 DISTNAME=	osd_clock-0.5
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	x11
 MASTER_SITES=	http://distfiles.nl/

@@ -5,7 +5,7 @@ COMMENT=		ffmpeg element for GStreamer
 V=			0.10.13
 DISTNAME=		gst-ffmpeg-${V}
 PKGNAME=		gstreamer-ffmpeg-${V}
-REVISION=		8
+REVISION=		9
 
 # sync with graphics/ffmpeg
 PERMIT_PACKAGE_CDROM=	patents

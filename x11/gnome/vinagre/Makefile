@@ -6,6 +6,7 @@ COMMENT=	remote desktop viewer for GNOME
 
 GNOME_PROJECT=	vinagre
 GNOME_VERSION=	3.12.2
+REVISION=	0
 
 CATEGORIES=	net
 

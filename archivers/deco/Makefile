@@ -11,12 +11,10 @@ CATEGORIES=	archivers
 
 HOMEPAGE= 	http://hartlich.com/deco/
 
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-REVISION =	1
+REVISION =	2
 WANTLIB=	c
 
 MASTER_SITES=	${HOMEPAGE}/download/

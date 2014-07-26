@@ -5,12 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	small and lightweight IDE
 
 DISTNAME =	geany-1.24.1
+REVISION =	0
 
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.geany.org/
-
-MAINTAINER=	Jonathan Armani <armani@openbsd.org>
 
 # GPL + Scintilla License
 PERMIT_PACKAGE_CDROM=	Yes

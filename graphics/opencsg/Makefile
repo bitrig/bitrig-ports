@@ -5,7 +5,7 @@ COMMENT =		constructive solid geometry rendering library
 V =			1.3.2
 DISTNAME =		OpenCSG-${V}
 PKGNAME =		opencsg-${V}
-REVISION =		0
+REVISION =		1
 
 SHARED_ONLY =		Yes
 SHARED_LIBS =		opencsg		0.0

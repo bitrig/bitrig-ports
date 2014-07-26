@@ -3,7 +3,7 @@
 COMMENT=		ZX Spectrum 48k emulator
 
 DISTNAME=		spectemu-0.94
-REVISION=		2
+REVISION=		3
 CATEGORIES=		emulators
 
 HOMEPAGE=		http://www.inf.bme.hu/~mszeredi/spectemu/

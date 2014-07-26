@@ -6,15 +6,13 @@ COMMENT =	show battery status as a simple bar in X11
 
 DISTNAME =	xbattbar_1.4.2
 PKGNAME =	${DISTNAME:S/_/-/}
-REVISION = 	1
+REVISION = 	2
 WRKDIST =	${WRKDIR}/${DISTNAME:S/_/-/}
 CATEGORIES =	sysutils x11
 
 HOMEPAGE =	http://iplab.naist.jp/member/suguru/xbattbar.html
 
 MASTER_SITES =	http://iplab.naist.jp/member/suguru/
-
-MAINTAINER =	Brynet <brynet@gmail.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

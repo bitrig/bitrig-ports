@@ -3,11 +3,10 @@
 COMMENT =	perl binding for Redis database
 
 DISTNAME =	Redis-1.962
+REVISION =	0
 CATEGORIES =	databases
 
 EPOCH =		0
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

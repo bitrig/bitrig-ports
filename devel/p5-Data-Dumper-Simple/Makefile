@@ -3,7 +3,7 @@
 COMMENT=		easily dump variables with names
 
 DISTNAME=		Data-Dumper-Simple-0.11
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		devel
 

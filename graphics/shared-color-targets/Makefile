@@ -3,6 +3,7 @@
 COMMENT=	color targets from vendors for color calibration
 
 DISTNAME=	shared-color-targets-0.1.3
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	graphics

@@ -3,7 +3,7 @@
 COMMENT=	GkrellM2 plugin to monitor wi(4) signal strength
 
 DISTNAME=	gkrellmwireless-2.0.3
-REVISION=	7
+REVISION=	8
 CATEGORIES=	net
 
 HOMEPAGE=	http://gkrellm.luon.net/gkrellmwireless.php

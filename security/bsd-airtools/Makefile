@@ -4,11 +4,9 @@ COMMENT=		wireless auditing suite
 
 DISTNAME=		bsd-airtools-v0.2
 PKGNAME=		bsd-airtools-0.2
-REVISION =		5
+REVISION =		6
 CATEGORIES=    		security net
 EXTRACT_SUFX=           .tgz
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

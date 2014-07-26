@@ -2,6 +2,7 @@
 
 COMMENT =	KDE development helper utilities
 DISTNAME =	kde-dev-utils-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	http://projects.kde.org/projects/kde/kdesdk/kde-dev-utils

@@ -6,13 +6,11 @@ COMMENT=		JSON parser for GLib-based libraries and applications
 
 GNOME_PROJECT=		json-glib
 GNOME_VERSION=		1.0.2
+REVISION=		0
 
 SHARED_LIBS +=  json-glib-1.0        5.2      # 0.0
 
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

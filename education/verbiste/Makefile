@@ -6,9 +6,7 @@ DISTNAME=	verbiste-0.1.41
 SHARED_LIBS=	verbiste-0.1	5.0	# .0.0
 CATEGORIES=	education
 HOMEPAGE=	http://sarrazip.com/dev/verbiste.html
-REVISION=	0
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
+REVISION=	1
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

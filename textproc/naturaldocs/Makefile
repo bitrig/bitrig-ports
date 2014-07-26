@@ -4,6 +4,7 @@ COMMENT=	multi-language source code documentation generator
 
 DISTNAME=	NaturalDocs-1.52
 PKGNAME=	${DISTNAME:L}
+REVISION=	0
 CATEGORIES=	textproc devel
 
 HOMEPAGE=	http://www.naturaldocs.org/

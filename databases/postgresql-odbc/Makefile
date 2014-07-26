@@ -5,11 +5,9 @@ VERSION=	08.03.0400
 PKGNAME=	postgresql-odbc-${VERSION}
 DISTNAME=	psqlodbc-${VERSION}
 CATEGORIES=	databases
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	http://pgfoundry.org/projects/psqlodbc/
-
-MAINTAINER=	Paul Irofti <pirofti@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes

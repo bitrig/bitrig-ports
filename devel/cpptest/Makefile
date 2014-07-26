@@ -7,7 +7,7 @@ DISTNAME =		cpptest-1.1.2
 SHARED_LIBS +=  cpptest                   0.0 # 0.7
 
 CATEGORIES =		devel
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE =		http://cpptest.sourceforge.net/
 

@@ -3,15 +3,13 @@
 COMMENT =		lightweight mapping application for use with or without GPS
 
 DISTNAME =		foxtrotgps-1.1.1
-REVISION =		5
+REVISION =		6
 
 CATEGORIES =		geo x11
 
 HOMEPAGE =		http://www.foxtrotgps.org/
 
 MASTER_SITES =		${HOMEPAGE}/releases/
-
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,12 +4,10 @@ COMMENT=	application for managing passwords
 
 MODPY_EGG_VERSION=	0.4.0
 DISTNAME=	kedpm-${MODPY_EGG_VERSION}
-REVISION =	8
+REVISION =	9
 CATEGORIES=	security
 
 HOMEPAGE=	http://kedpm.sourceforge.net/
-
-MAINTAINER =	Joerg Jung <jung@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

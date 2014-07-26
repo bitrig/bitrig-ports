@@ -4,10 +4,9 @@ COMMENT=		sensible default end action (deprecated)
 
 MODULES=		cpan
 DISTNAME=		Catalyst-Plugin-DefaultEnd-0.08
+REVISION=		0
 CATEGORIES=		www devel
 USE_GROFF =		Yes
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # same as perl
 PERMIT_PACKAGE_CDROM=	Yes

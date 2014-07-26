@@ -2,12 +2,11 @@
 
 COMMENT =		system downtime monitoring
 DISTNAME =		downtimed-0.6
+REVISION =		0
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://dist.epipe.com/downtimed/
 MASTER_SITES =		${HOMEPAGE}
-
-MAINTAINER =		Remi Pointel <rpointel@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

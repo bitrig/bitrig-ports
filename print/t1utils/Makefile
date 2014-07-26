@@ -2,6 +2,7 @@
 
 COMMENT=	utilities for PostScript Type 1 fonts
 DISTNAME=	t1utils-1.37
+REVISION=	0
 CATEGORIES=	print fonts
 
 HOMEPAGE=	http://www.lcdf.org/~eddietwo/type/

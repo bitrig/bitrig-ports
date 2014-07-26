@@ -2,13 +2,13 @@
 
 COMMENT =		high-level decoding and seeking API for Opus files
 DISTNAME =		opusfile-0.6
+REVISION =		0
 CATEGORIES =		audio
 
 SHARED_LIBS +=		opusfile                  0.0 # 3.1
 SHARED_LIBS +=		opusurl                   0.0 # 3.1
 
 HOMEPAGE =		http://opus-codec.org/
-MAINTAINER =		Sergey Bronnikov <estetus@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

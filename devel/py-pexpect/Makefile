@@ -5,6 +5,7 @@ COMMENT=	pure Python Expect-like module
 MODPY_EGG_VERSION= 2.4
 DISTNAME=	pexpect-${MODPY_EGG_VERSION}
 PKGNAME=	py-${DISTNAME}
+REVISION=	0
 CATEGORIES=	devel
 
 HOMEPAGE=	http://pexpect.sourceforge.net/

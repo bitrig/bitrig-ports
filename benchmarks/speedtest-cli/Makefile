@@ -4,6 +4,7 @@ COMMENT =		command-line client for speedtest.net bandwidth tester
 
 MODPY_EGG_VERSION =	0.2.2
 DISTNAME =		speedtest-cli-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		benchmarks net
 
 HOMEPAGE =		https://github.com/sivel/speedtest-cli

@@ -3,6 +3,7 @@
 COMMENT=		lightweight sip client
 
 VERSION=		2.2.1
+REVISION=		0
 DISTNAME=		pjproject-${VERSION}
 PKGNAME=		pjsua-${VERSION}
 WRKDIST=		${WRKDIR}/${DISTNAME}
@@ -11,7 +12,6 @@ CATEGORIES=		telephony
 
 HOMEPAGE=		http://www.pjsip.org/
 MASTER_SITES=		${HOMEPAGE}release/${VERSION}/
-MAINTAINER=		Christopher Zimmermann <madroach@zakweb.de>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes

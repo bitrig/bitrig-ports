@@ -4,11 +4,9 @@ COMMENT=	fast and simple mbox folder reader
 
 MODULES=	cpan
 DISTNAME=	Mail-Mbox-MessageParser-1.5002
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 USE_GROFF =	Yes
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -8,10 +8,8 @@ GH_PROJECT =		pop3d
 GH_TAGNAME =		v${VERSION}
 GH_COMMIT =		d338a534640e854928c6b5e78e7b41aa4c08b0d7
 DISTNAME =		${GH_PROJECT}-${VERSION}
-REVISION =		0
+REVISION =		1
 CATEGORIES =		mail
-
-MAINTAINER =		James Turner <james@calminferno.net>
 
 HOMEPAGE =		https://github.com/snimmagadda/pop3d/
 

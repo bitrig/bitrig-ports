@@ -3,10 +3,9 @@
 COMMENT =	family-neutral IP socket supporting both IPv4 and IPv6
 
 DISTNAME =	IO-Socket-IP-0.31
+REVISION =	0
 
 CATEGORIES =	net
-
-MAINTAINER =	Giovanni Bechis <giovanni@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

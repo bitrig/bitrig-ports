@@ -14,8 +14,10 @@ PKGNAME-main=		p5-librdf-$V
 PKGNAME-php=		php-librdf-$V
 PKGNAME-python=		py-librdf-$V
 PKGNAME-ruby=		ruby-librdf-$V
-REVISION-php=		0
-REVISION-main=		0
+REVISION-php=		1
+REVISION-main=		1
+REVISION-python=	0
+REVISION-ruby=		0
 
 HOMEPAGE=		http://librdf.org/bindings/
 

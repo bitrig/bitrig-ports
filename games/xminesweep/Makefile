@@ -4,7 +4,7 @@ COMMENT=	Windows minesweeper
 
 DISTNAME=	xminesweep3.0
 PKGNAME=	xminesweep-3.0
-REVISION =	3
+REVISION =	4
 CATEGORIES=	games
 
 MASTER_SITES=	ftp://ftp.warwick.ac.uk/pub/x11/

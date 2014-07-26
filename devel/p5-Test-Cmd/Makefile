@@ -3,7 +3,7 @@
 COMMENT=	perl module for portable testing of commands and scripts
 
 DISTNAME=	Test-Cmd-1.05
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # perl

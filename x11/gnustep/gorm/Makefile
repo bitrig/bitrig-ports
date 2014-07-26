@@ -3,7 +3,7 @@
 COMMENT=	GNUstep graphical object relationship modeller
 
 DISTNAME=	gorm-1.2.20
-REVISION =	1
+REVISION =	2
 HOMEPAGE=	http://www.gnustep.org/experience/Gorm.html
 MASTER_SITES=	${MASTER_SITE_GNUSTEP}dev-apps/
 

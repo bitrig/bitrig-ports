@@ -16,13 +16,12 @@ V =			2.3.1
 BOOTSTRAP_V =		${V}
 DISTNAME =		pypy-${V}-src
 PKGNAME =		pypy-${V}
+REVISION =		0
 BOOTSTRAP-amd64 =	pypy-bootstrap-amd64-${BOOTSTRAP_V}.tar.xz
 
 CATEGORIES =		lang
 
 HOMEPAGE =		http://pypy.org/
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # PyPy is MIT; the Python libs it comes with have the same license as Python
 PERMIT_PACKAGE_CDROM =	Yes

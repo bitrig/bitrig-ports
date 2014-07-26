@@ -4,7 +4,7 @@ COMMENT=	array which is kept ordered
 
 MODULES=	cpan
 DISTNAME=	Tie-Array-Sorted-1.41
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

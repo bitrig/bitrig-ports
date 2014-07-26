@@ -3,6 +3,7 @@
 COMMENT=	mirror files and directories from a remote FTP server
 
 DISTNAME=       fmirror-0.8.4
+REVISION=       0
 CATEGORIES=	net
 
 MASTER_SITES=	ftp://ftp.oav.net/pkg_freebsd/distfiles/
@@ -12,8 +13,6 @@ PERMIT_PACKAGE_CDROM=   Yes
 
 NO_TEST=     Yes
 WANTLIB=	c
-
-MAINTAINER=	Vladimir Kotal <vlada@devnull.cz>
 
 CONFIGURE_STYLE= gnu
 USE_GROFF =	Yes

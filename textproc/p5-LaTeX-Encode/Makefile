@@ -3,6 +3,7 @@
 COMMENT=	encode characters for LaTeX formatting
 
 DISTNAME=	LaTeX-Encode-0.08
+REVISION=	0
 CATEGORIES=	textproc
 
 MODULES=	cpan

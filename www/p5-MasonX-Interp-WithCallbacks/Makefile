@@ -4,7 +4,7 @@ COMMENT=	Mason callback support via Params::CallbackRequest
 
 MODULES=	cpan
 DISTNAME=	MasonX-Interp-WithCallbacks-1.13
-REVISION=	2
+REVISION=	3
 CATEGORIES=	www
 
 # GPL/Artistic

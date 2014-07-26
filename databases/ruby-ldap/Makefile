@@ -3,13 +3,11 @@
 COMMENT=	Ruby interface to some common LDAP libraries
 
 PKGNAME=	ldap-0.9.12
-REVISION =	4
+REVISION =	5
 DISTNAME=	ruby-${PKGNAME}
 CATEGORIES=	databases
 
 HOMEPAGE=	https://github.com/alexey-chebotar/ruby-ldap
-
-MAINTAINER=	Jeremy Evans <jeremy@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

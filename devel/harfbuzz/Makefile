@@ -14,11 +14,9 @@ SHARED_LIBS +=  harfbuzz             4.4      # 929.0
 SHARED_LIBS +=  harfbuzz-icu         0.1      # 929.0
 
 CATEGORIES=		devel graphics textproc
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://www.freedesktop.org/wiki/Software/HarfBuzz
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

@@ -7,13 +7,11 @@ COMMENT =	cross-platform interactive fiction player
 DISTNAME =	gargoyle-2011.1-sources
 PKGNAME =	gargoyle-2011.1
 EPOCH =		0
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://ccxvii.net/gargoyle/
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # Various. Gargoyle is a frontend for various other included
 # programs under differing licenses; many GPL but some others.

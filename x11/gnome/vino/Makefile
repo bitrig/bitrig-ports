@@ -4,6 +4,7 @@ COMMENT=		GNOME desktop sharing server
 
 GNOME_PROJECT=		vino
 GNOME_VERSION=		3.12.0
+REVISION=		0
 
 CATEGORIES=		net
 

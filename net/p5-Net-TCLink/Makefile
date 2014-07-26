@@ -7,7 +7,7 @@ COMMENT=		interface to TrustCommerce gateway
 MODULES=		cpan
 DISTNAME=		Net_TCLink.pm-3.4
 PKGNAME=		p5-Net-TCLink-3.4
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 CPAN_AUTHOR=		WITTEN
 

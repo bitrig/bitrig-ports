@@ -3,15 +3,13 @@
 COMMENT=	jezzball-style, penguin puzzle game
 
 DISTNAME=	icebreaker-1.2.1
-REVISION =	0
+REVISION =	1
 CATEGORIES=	games
 EXTRACT_SUFX=	.tgz
 
 HOMEPAGE=	http://www.mattdm.org/icebreaker/
 
 MASTER_SITES=	${HOMEPAGE}1.2.x/
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 WANTLIB=		SDL X11 Xext c m pthread pthread-stubs usbhid xcb \

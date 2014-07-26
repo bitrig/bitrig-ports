@@ -5,6 +5,7 @@ COMMENT =	plugin for reCAPTCHA and reCAPTCHA Mailhide
 MODPY_EGG_VERSION = 1.0.6
 DISTNAME =	recaptcha-client-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 
 CATEGORIES =	www devel
 HOMEPAGE =	http://pypi.python.org/pypi/recaptcha-client

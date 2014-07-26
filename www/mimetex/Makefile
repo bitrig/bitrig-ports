@@ -3,11 +3,10 @@
 COMMENT=		parse LaTeX math expressions into gif images
 
 DISTNAME=		mimetex-1.65
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www
 
 HOMEPAGE=		http://www.forkosh.com/mimetex.html
-MAINTAINER=		Mischa Diehm <md@msys.ch>
 
 # GPLv2 or later
 PERMIT_PACKAGE_CDROM=   Yes

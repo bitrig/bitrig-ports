@@ -9,7 +9,7 @@ ONLY_FOR_ARCHS=	amd64 i386
 COMMENT=	V8 JavaScript for clients and servers
 
 NODE_VERSION=	v0.10.28
-REVISION=	1
+REVISION=	2
 
 DISTNAME=	node-${NODE_VERSION}
 PKGNAME=	${DISTNAME:S/v//g}
@@ -17,8 +17,6 @@ PKGNAME=	${DISTNAME:S/v//g}
 CATEGORIES=	lang devel
 
 HOMEPAGE=	http://nodejs.org/
-
-MAINTAINER=	Aaron Bieber <abieber@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

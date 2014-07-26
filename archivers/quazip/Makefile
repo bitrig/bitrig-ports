@@ -3,11 +3,9 @@
 COMMENT =	Qt/C++ wrapper for ZIP/UNZIP package
 DISTNAME =	quazip-0.6.2
 CATEGORIES =	archivers
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	quazip 1.0		# 1.0
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 HOMEPAGE =	http://quazip.sourceforge.net/
 

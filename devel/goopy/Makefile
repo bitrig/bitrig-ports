@@ -3,7 +3,7 @@
 COMMENT=	Google utilities written in Python
 
 DISTNAME=	goopy-0.1
-REVISION=	6
+REVISION=	7
 CATEGORIES=	devel
 HOMEPAGE=	http://goog-goopy.sourceforge.net/
 

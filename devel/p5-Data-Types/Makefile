@@ -4,6 +4,7 @@ COMMENT=		validate and convert data types
 
 MODULES=		cpan
 DISTNAME=		Data-Types-0.08
+REVISION=		0
 CATEGORIES=		devel
 
 # perl

@@ -4,7 +4,7 @@ COMMENT=	SDL image library
 
 DISTNAME=	SDL_image-1.2.12
 PKGNAME=	${DISTNAME:L:S/_/-/}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel graphics
 MASTER_SITES=	${HOMEPAGE}release/
 

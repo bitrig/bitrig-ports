@@ -4,7 +4,7 @@ COMMENT=		X11 file manager. Dockable in Window Maker
 
 DISTNAME=		ASFiles-1.0
 PKGNAME=		${DISTNAME:L}
-REVISION=		2
+REVISION=		3
 CATEGORIES=		x11 x11/windowmaker
 
 # GPL

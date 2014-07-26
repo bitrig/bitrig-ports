@@ -6,6 +6,7 @@ CATEGORIES=	shells
 V=		0.981
 DISTNAME=	Zoidberg-$V
 PKGNAME=	zoidberg-$V
+REVISION=	0
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

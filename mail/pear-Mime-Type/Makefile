@@ -3,7 +3,7 @@
 COMMENT=	utility class for dealing with MIME types
 
 DISTNAME=	MIME_Type-1.2.1
-REVISION=		0
+REVISION=		1
 CATEGORIES=	mail
 
 MODULES=	www/pear

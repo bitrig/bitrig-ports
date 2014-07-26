@@ -9,11 +9,10 @@ V=		12.16
 OPERA_BUILD=	1860
 DISTNAME=	opera-${V}-${OPERA_BUILD}.i386.linux
 PKGNAME=	opera-${V}
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 CATEGORIES=	www
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 HOMEPAGE=	http://www.opera.com/
 

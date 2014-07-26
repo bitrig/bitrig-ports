@@ -3,7 +3,7 @@
 COMMENT=	graphical interface for GnuPG
 
 DISTNAME=	gpa-0.7.6
-REVISION=	7
+REVISION=	8
 CATEGORIES=    	security x11
 
 HOMEPAGE=	http://www.gnupg.org/gpa.html

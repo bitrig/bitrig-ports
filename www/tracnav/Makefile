@@ -4,12 +4,10 @@ COMMENT=	customizable navigation bar for trac's wiki
 
 MODPY_EGG_VERSION= 4.1
 DISTNAME=	TracNav-${MODPY_EGG_VERSION}
-REVISION=	2
+REVISION=	3
 EXTRACT_SUFX=	.zip
 PKGNAME=	${DISTNAME:L}
 CATEGORIES=	www devel
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE=	http://svn.ipd.uka.de/trac/javaparty/wiki/TracNav
 

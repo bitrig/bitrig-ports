@@ -6,14 +6,12 @@ DISTNAME=		nmh-1.6
 CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_SAVANNAH:=nmh/}
 HOMEPAGE=		http://www.nongnu.org/nmh/
-REVISION=		0
+REVISION=		1
 
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c crypto edit ssl termcap
-
-MAINTAINER=		William Yodlowsky <william@openbsd.org>
 
 SYSCONFDIR=		${PREFIX}/lib/nmh
 CONFIGURE_STYLE=	gnu

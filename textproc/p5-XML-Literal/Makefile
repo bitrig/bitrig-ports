@@ -4,7 +4,7 @@ COMMENT=	embed XML directly into perl
 
 MODULES=	cpan
 DISTNAME=	XML-Literal-0.02
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 # GPL/Artistic

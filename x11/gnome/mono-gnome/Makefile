@@ -5,7 +5,7 @@ COMMENT=	.NET language bindings for assorted GNOME libraries
 GNOME_PROJECT=	gnome-sharp
 GNOME_VERSION=	2.24.2
 PKGNAME=	mono-gnome-${VERSION}
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	x11
 

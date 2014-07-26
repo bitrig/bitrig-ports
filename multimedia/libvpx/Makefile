@@ -5,6 +5,7 @@ COMMENT=	Google VP8/VP9 video codec
 V=		1.3.0
 DISTNAME=	libvpx-v${V}
 PKGNAME=	libvpx-${V}
+REVISION=	0
 CATEGORIES=	multimedia
 MASTER_SITES=	https://webm.googlecode.com/files/
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +13,6 @@ EXTRACT_SUFX=	.tar.bz2
 SHARED_LIBS=	vpx	5.0
 
 HOMEPAGE=	http://www.webmproject.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

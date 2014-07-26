@@ -5,6 +5,7 @@ COMMENT =		marathon infinity data files
 V =			20140104
 DISTNAME =		marathoninfinity-0.0.${V}
 PKGNAME =		marathoninfinity-0.0.${V}
+REVISION =		0
 HOMEPAGE =		http://source.bungie.org/get/
 
 DISTFILES =		MarathonInfinity-${V}-Data.zip:5

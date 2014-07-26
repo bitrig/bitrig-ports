@@ -4,6 +4,7 @@ COMMENT=		generate new packages
 
 MODULES=		cpan
 DISTNAME=		Package-Generator-0.103
+REVISION=		0
 CATEGORIES=		devel
 USE_GROFF =		Yes
 

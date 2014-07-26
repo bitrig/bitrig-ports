@@ -5,7 +5,7 @@ COMMENT=		electronic periodic table of the elements
 DISTNAME=		epte-2.0.7
 CATEGORIES=		education
 
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://www.toddmiller.com/epte/
 

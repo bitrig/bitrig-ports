@@ -2,7 +2,7 @@
 
 COMMENT=	sniffer for LanManager environment (ms/samba workstations)
 DISTNAME=	smbsniff-0.0.1b
-REVISION=	1
+REVISION=	2
 CATEGORIES=	security net
 
 MASTER_SITES=	${HOMEPAGE}/download/

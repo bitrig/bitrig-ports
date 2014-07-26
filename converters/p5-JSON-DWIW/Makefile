@@ -5,10 +5,8 @@ SHARED_ONLY =	Yes
 
 MODULES =	cpan
 DISTNAME =	JSON-DWIW-0.40
-REVISION =	4
+REVISION =	5
 CATEGORIES =	converters
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

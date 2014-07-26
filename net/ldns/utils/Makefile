@@ -3,6 +3,7 @@
 COMMENT=	LDNS utilities
 
 PKGNAME=	ldns-utils-${VERSION}
+REVISION=	0
 
 WANTLIB=	c crypto ldns>=6.1 pcap ssl
 LIB_DEPENDS+=	net/ldns/libldns>=1.6.17

@@ -5,7 +5,7 @@ COMMENT=	PDF-generating toolkit for Python
 VERSION=	2.1
 DISTNAME=	ReportLab_${VERSION:S/./_/}
 PKGNAME=	py-reportlab-${VERSION}
-REVISION =	9
+REVISION =	10
 EPOCH=		0
 CATEGORIES=	print graphics
 
@@ -13,8 +13,6 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		rl_accel-0.61-daily-unix${EXTRACT_SUFX}:0
 
 HOMEPAGE=	http://www.reportlab.org/rl_toolkit.html
-
-MAINTAINER=	Aleksander Piotrowski <alek@openbsd.org>
 
 # BSD, LGPLv2, MPL1.0, MIT
 PERMIT_PACKAGE_CDROM=	Yes

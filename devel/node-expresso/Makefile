@@ -4,7 +4,7 @@ COMMENT =	TDD framework for Node.js
 
 NPM_VERSION =	0.9.2
 NPM_NAME =	expresso
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel
 
 HOMEPAGE =	http://visionmedia.github.com/expresso/

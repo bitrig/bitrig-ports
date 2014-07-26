@@ -2,8 +2,7 @@
 
 COMMENT =		flexible communications framework, Qt bindings
 DISTNAME =		telepathy-qt-0.9.3
-REVISION =		0
-MAINTAINER =		KDE porting team <openbsd-kde@googlegroups.com>
+REVISION =		1
 
 SHARED_LIBS =		telepathy-qt4		0.0
 SHARED_LIBS +=		telepathy-qt4-farstream	0.0

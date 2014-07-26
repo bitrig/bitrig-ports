@@ -5,11 +5,9 @@ COMMENT=	distributed version control system
 VERSION=	0.39
 DISTNAME=	monotone-${VERSION}
 CATEGORIES=	devel
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE=	http://monotone.ca/
-
-MAINTAINER=	Aleksander Piotrowski <alek@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

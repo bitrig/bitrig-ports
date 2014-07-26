@@ -4,7 +4,7 @@ COMMENT=        validate user input through a chain of constraints
 
 MODULES=	cpan
 DISTNAME=	FormValidator-Simple-0.23
-REVISION=	0
+REVISION=	1
 CATEGORIES=     devel
 USE_GROFF =	Yes
 

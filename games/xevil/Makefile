@@ -6,7 +6,7 @@ COMMENT=	side-view, fast-action, kill everything type of game
 V=		2.02r2
 DISTNAME=	xevilsrc${V}
 PKGNAME=	xevil-${V}
-REVISION =	2
+REVISION =	3
 
 CATEGORIES=	games
 

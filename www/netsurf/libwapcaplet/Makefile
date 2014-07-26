@@ -4,6 +4,7 @@ COMMENT =		string internment library
 
 NETSURF_PROJECT =	libwapcaplet
 NETSURF_VERSION =	0.2.1
+REVISION =		0
 
 CATEGORIES=		devel
 SHARED_LIBS =		wapcaplet 2.0 #0.2.1

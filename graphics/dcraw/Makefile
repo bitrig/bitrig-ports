@@ -3,7 +3,7 @@
 COMMENT =	digital camera RAW format conversion tool
 
 DISTNAME =	dcraw-9.20
-REVISION =	0
+REVISION =	1
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://www.cybercom.net/~dcoffin/dcraw/

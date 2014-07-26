@@ -4,10 +4,8 @@ COMMENT=	base class to treat unhandled method calls as errors
 
 MODULES=	cpan
 DISTNAME=	Class-WhiteHole-0.04
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

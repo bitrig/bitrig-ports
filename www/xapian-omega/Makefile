@@ -4,7 +4,7 @@ COMMENT=	web search application
 
 V=		1.2.15
 DISTNAME=	xapian-omega-${V}
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	www textproc
 

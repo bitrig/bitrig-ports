@@ -3,6 +3,7 @@
 COMMENT=		low-level bindings to the zlib package
 
 DISTNAME=		zlib-bindings-0.1.1.3
+REVISION=		0
 CATEGORIES=		archivers
 
 # BSD3

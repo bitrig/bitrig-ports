@@ -3,6 +3,7 @@
 COMMENT=	GNU PostScript interpreter
 
 VERSION=	9.07
+REVISION=	0
 DISTNAME=	ghostscript-${VERSION}
 CATEGORIES=	print lang
 SHARED_LIBS=	gs	15.0
@@ -10,8 +11,6 @@ SHARED_LIBS=	gs	15.0
 MASTER_SITES=	http://downloads.ghostscript.com/public/
 
 HOMEPAGE=	http://www.cs.wisc.edu/~ghost/
-
-MAINTAINER=	Matthias Kilian <kili@openbsd.org>
 
 FLAVORS=	a4 gtk no_x11
 FLAVOR?=

@@ -6,7 +6,7 @@ COMMENT=	libpcap bindings for Python
 
 DISTNAME=	pylibpcap-0.6.2
 PKGNAME=	${DISTNAME:S/py/py-/}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	net
 
 HOMEPAGE=	http://pylibpcap.sourceforge.net/

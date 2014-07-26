@@ -5,7 +5,7 @@ COMMENT=	Perl extension for mknod, major, minor and makedev
 
 MODULES=	cpan
 DISTNAME=	Unix-Mknod-0.04
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # Perl

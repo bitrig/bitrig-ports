@@ -3,10 +3,8 @@
 COMMENT =		Iteratee monad provides strict, safe, and functional I/O
 
 DISTNAME =		iteratee-0.8.9.4
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>, \
-			Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

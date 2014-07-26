@@ -6,7 +6,7 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	Regexp-DefaultFlags-0.01
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 # Perl

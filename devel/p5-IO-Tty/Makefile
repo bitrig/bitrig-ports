@@ -6,7 +6,7 @@ COMMENT=		provide an interface to create pseudo ttys
 
 MODULES=		cpan
 DISTNAME=		IO-Tty-1.10
-REVISION=		2
+REVISION=		3
 CATEGORIES=		devel
 
 # Perl

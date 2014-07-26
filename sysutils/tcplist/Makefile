@@ -8,7 +8,7 @@ BROKEN=		not lp64 compatible
 .endif
 
 DISTNAME=	tcplist-2.2
-REVISION=	2
+REVISION=	3
 CATEGORIES=	sysutils net
 
 MASTER_SITES=	ftp://ftp.cdf.toronto.edu/pub/jdd/tcplist/

@@ -5,6 +5,7 @@ COMMENT=	desktop publishing clip-art
 V=		2.0
 DISTNAME=	openclipart-$V-full
 PKGNAME=	${DISTNAME:S/-full//}
+REVISION=	0
 CATEGORIES=	print graphics
 
 HOMEPAGE=	http://openclipart.org/

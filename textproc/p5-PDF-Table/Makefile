@@ -3,7 +3,7 @@
 COMMENT=		create PDF tables with perl
 
 DISTNAME=		PDF-Table-0.9.5
-REVISION=		1
+REVISION=		2
 
 CATEGORIES=		textproc
 

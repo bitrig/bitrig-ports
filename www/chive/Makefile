@@ -5,13 +5,11 @@ COMMENT=	web-based MySQL management
 V=		1.2
 DISTNAME=	chive_$V
 PKGNAME=	${DISTNAME:S/_/-/}
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	www databases
 
 HOMEPAGE=	http://www.chive-project.com/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # Chive: GPLv3+
 # Yii framework: BSD

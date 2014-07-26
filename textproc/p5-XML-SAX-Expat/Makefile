@@ -4,7 +4,7 @@ COMMENT=	SAX2 driver based on expat
 
 MODULES=	cpan
 DISTNAME=	XML-SAX-Expat-0.40
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 # perl

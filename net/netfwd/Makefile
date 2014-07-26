@@ -3,10 +3,8 @@
 COMMENT=	netword traffic redirector
 
 DISTNAME=	netfwd-0.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
-
-MAINTAINER=	Alexey Vatchenko <av@bsdua.org>
 
 HOMEPAGE=	http://www.bsdua.org/netfwd.html
 

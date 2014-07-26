@@ -4,7 +4,7 @@ COMMENT-main=	nagios service check acceptor
 COMMENT-client=	nagios service check acceptor - client
 
 VERSION=	2.9.1
-REVISION=	0
+REVISION=	1
 DISTNAME=	nsca-${VERSION}
 PKGNAME-main=	nsca-${VERSION}
 PKGNAME-client=	nsca-client-${VERSION}

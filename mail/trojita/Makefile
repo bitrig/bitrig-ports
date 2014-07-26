@@ -3,12 +3,11 @@
 COMMENT =		fast Qt IMAP e-mail client
 
 DISTNAME =		trojita-0.4.1
+REVISION =		0
 
 CATEGORIES =		mail x11
 
 SHARED_LIBS =		trojita_plugins	0.0 # 0.0
-
-MAINTAINER =		James Turner <james@calminferno.net>
 
 HOMEPAGE =		http://trojita.flaska.net/
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=trojita/}

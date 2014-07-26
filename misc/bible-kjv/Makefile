@@ -6,9 +6,7 @@ DISTNAME=	bible-kjv_4.26
 PKGNAME=	${DISTNAME:S/_/-/}
 CATEGORIES=	misc
 
-REVISION=	0
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
+REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

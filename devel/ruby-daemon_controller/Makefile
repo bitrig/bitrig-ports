@@ -3,11 +3,10 @@
 COMMENT =		robust daemon management
 
 DISTNAME =		daemon_controller-1.2.0
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		https://github.com/FooBarWidget/daemon_controller
-
-MAINTAINER =		Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

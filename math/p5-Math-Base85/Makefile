@@ -3,9 +3,8 @@
 COMMENT =	module handles numbers in base 85
 
 DISTNAME =	Math-Base85-0.2
+REVISION =	0
 CATEGORIES =	math
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

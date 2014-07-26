@@ -5,11 +5,9 @@ SHARED_ONLY=	Yes
 COMMENT=	module for tracing memory leaks
 
 DISTNAME =	Test-LeakTrace-0.14
-REVISION =	0
+REVISION =	1
 
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

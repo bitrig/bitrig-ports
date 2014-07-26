@@ -3,12 +3,10 @@
 COMMENT=		modular Ruby webserver interface
 
 DISTNAME=		rack-1.4.5
-REVISION =		0
+REVISION =		1
 CATEGORIES=		www
 
 HOMEPAGE=		http://rack.rubyforge.org/
-
-MAINTAINER =		Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

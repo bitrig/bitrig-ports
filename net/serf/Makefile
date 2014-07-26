@@ -2,11 +2,10 @@
 
 COMMENT =		high performance HTTP client library
 DISTNAME =		serf-1.3.4
-REVISION =		1
+REVISION =		2
 SHARED_LIBS = 		serf-1                    1.0 # 1.3.0
 CATEGORIES =		net
 HOMEPAGE =		https://code.google.com/p/serf/
-MAINTAINER =		Stefan Sperling <stsp@openbsd.org>
 
 # APLv2
 PERMIT_PACKAGE_CDROM =	Yes

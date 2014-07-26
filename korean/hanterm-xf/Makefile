@@ -6,15 +6,13 @@ V=		2.0.6-177
 DISTNAME=	hanterm-xf-$V
 CATEGORIES=	korean
 PKGNAME=	hanterm-xf-${V:S/-/./}
-REVISION=	3
+REVISION=	4
 EPOCH=		0
 
 MASTER_SITES=	http://kldp.net/frs/download.php/3281/
 HOMEPAGE=	http://hanterm-xf.kldp.net
 
 PERMIT_PACKAGE_CDROM=	yes
-
-MAINTAINER=	Jung Lee <moorang@gmail.com>
 
 WANTLIB=	ICE SM X11 Xaw Xext Xmu Xt c termcap util
 

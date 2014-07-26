@@ -3,11 +3,10 @@
 COMMENT =		lightweight HTTP/SSL proxy
 
 DISTNAME =		tinyproxy-1.8.3
-REVISION =		2
+REVISION =		3
 CATEGORIES =		www net
 
 HOMEPAGE =		https://www.banu.com/tinyproxy/
-MAINTAINER =		frantisek holop <minusf@obiit.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes

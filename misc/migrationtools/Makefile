@@ -4,6 +4,7 @@ COMMENT=	perl scripts for migrating system information to LDAP
 
 DISTNAME=	MigrationTools-47
 PKGNAME=	${DISTNAME:L}
+REVISION=	0
 CATEGORIES=	misc
 
 MASTER_SITES=	http://www.padl.com/download/

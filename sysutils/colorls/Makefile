@@ -4,10 +4,8 @@ COMMENT=	ls that can use color to display file attributes
 
 DISTNAME=	ls-5.4
 PKGNAME=	color${DISTNAME}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	sysutils
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

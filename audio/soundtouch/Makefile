@@ -3,7 +3,7 @@
 COMMENT=	tempo/pitch audio processing library
 
 DISTNAME=	soundtouch-1.3.1
-REVISION=	2
+REVISION=	3
 SHARED_LIBS +=	BPM		0.0      # .0.0
 SHARED_LIBS +=	SoundTouch	0.0      # .0.0
 CATEGORIES=	audio devel

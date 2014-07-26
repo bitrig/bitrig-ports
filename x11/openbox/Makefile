@@ -3,7 +3,7 @@
 COMMENT =	small, fast & usable window manager
 
 V =		3.5.2
-REVISION =	0
+REVISION =	1
 DISTNAME =	openbox-${V}
 SHARED_LIBS +=	obrender	11.0	# 29.1
 SHARED_LIBS +=	obt		1.0	# 2.1
@@ -11,8 +11,6 @@ SHARED_LIBS +=	obt		1.0	# 2.1
 CATEGORIES =	x11
 
 HOMEPAGE =	http://openbox.org/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

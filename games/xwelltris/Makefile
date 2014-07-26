@@ -4,7 +4,7 @@ COMMENT=	2.5 dimensional tetris-like game
 
 DISTNAME=	xwelltris-1.0.1
 DISTFILES=	${DISTNAME}.src.tar.gz
-REVISION =	3
+REVISION =	4
 CATEGORIES=	games x11
 MASTER_SITES=	${HOMEPAGE}src/
 

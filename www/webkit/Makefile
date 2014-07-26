@@ -5,6 +5,7 @@ COMMENT =	open source web browser engine for Gtk+
 V =		2.4.4
 DISTNAME =	webkitgtk-${V}
 PKGNAME =	webkit-${V}
+REVISION =	0
 EPOCH =		1
 CATEGORIES =	www
 DPB_PROPERTIES =parallel
@@ -12,9 +13,6 @@ EXTRACT_SUFX =	.tar.xz
 
 HOMEPAGE =	http://webkitgtk.org/
 MASTER_SITES =	${HOMEPAGE}/releases/
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org> \
-		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2 and BSD
 PERMIT_PACKAGE_CDROM =	Yes

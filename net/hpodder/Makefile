@@ -3,11 +3,9 @@
 COMMENT =		command line podcast aggregator
 
 DISTNAME =		hpodder-1.1.6
-REVISION =		6
+REVISION =		7
 CATEGORIES =		net
 HOMEPAGE =		http://wiki.github.com/jgoerzen/hpodder/
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

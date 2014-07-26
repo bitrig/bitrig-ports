@@ -3,9 +3,8 @@
 COMMENT=	efficient SNMP scanner
 
 DISTNAME=	onesixtyone-0.3.2
+REVISION=	0
 CATEGORIES=	security
-
-MAINTAINER=	Srebrenko Sehic <haver@insecure.dk>
 
 # GPL
 PERMIT_PACKAGE_CDROM=  	Yes

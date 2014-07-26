@@ -3,14 +3,13 @@
 COMMENT=	library and tools to program YubiKeys
 
 DISTNAME=	ykpers-1.15.1
+REVISION=	0
 
 SHARED_LIBS +=	ykpers-1                  0.3 # 16.1
 
 CATEGORIES=	sysutils security
 
 HOMEPAGE=	http://yubico.github.io/yubikey-personalization/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

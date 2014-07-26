@@ -4,7 +4,7 @@ COMMENT=	strip the attachments from an e-mail
 
 MODULES=	cpan
 DISTNAME=	Email-MIME-Attachment-Stripper-1.316
-REVISION=	3
+REVISION=	4
 CATEGORIES=	mail
 USE_GROFF =	Yes
 

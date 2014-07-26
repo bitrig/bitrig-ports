@@ -3,6 +3,7 @@
 COMMENT =	library to deal with Japanese kana-to-kanji conversion
 
 DISTNAME =	libskk-1.0.1
+REVISION =	0
 
 SHARED_LIBS =	skk	0.0 # 0.0
 

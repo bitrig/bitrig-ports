@@ -6,10 +6,8 @@ COMMENT=	very fast Perl templating library
 
 MODULES=	cpan
 DISTNAME=	Text-Tmpl-0.33
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
-
-MAINTAINER=	Alex Feinberg <alex@strlen.net>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,6 +3,7 @@
 COMMENT=		refactoring library
 
 DISTNAME=		rope-0.9.4
+REVISION=		0
 CATEGORIES=     	devel
 
 # GPL

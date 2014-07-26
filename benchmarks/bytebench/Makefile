@@ -2,6 +2,7 @@
 
 COMMENT=	BYTE magazine benchmark suite
 DISTNAME=       bytebench-3.1
+REVISION=       0
 CATEGORIES=	benchmarks
 
 # License: NONE

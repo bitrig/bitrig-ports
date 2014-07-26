@@ -4,7 +4,7 @@ COMMENT=	3d tetris
 
 DISTNAME=	threedee
 PKGNAME=	spatial-1.0.1
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games
 
 EXTRACT_SUFX=	.tar.Z

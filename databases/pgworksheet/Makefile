@@ -4,13 +4,11 @@ COMMENT =	simple PostgreSQL GUI front end
 
 MODPY_EGG_VERSION = 1.9
 DISTNAME =	pgworksheet-${MODPY_EGG_VERSION}
-REVISION =	5
+REVISION =	6
 
 CATEGORIES =	databases
 
 HOMEPAGE =	http://pgworksheet.projects.postgresql.org/
-
-MAINTAINER =	Pierre-Emmanuel Andre <pea@raveland.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

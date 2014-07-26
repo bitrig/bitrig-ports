@@ -5,6 +5,7 @@ COMMENT= 	skeleton for application based on CGI::Application
 MODULES=	cpan
 
 DISTNAME=	CGI-Application-Generator-1.0
+REVISION=	0
 CATEGORIES=	www
 
 HOMEPAGE=	http://www.cgi-app.org/

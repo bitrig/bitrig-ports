@@ -6,11 +6,9 @@ MODPY_EGG_VERSION =	0.19
 DISTNAME =		pymetar-${MODPY_EGG_VERSION}
 PKGNAME =		py-metar-${MODPY_EGG_VERSION}
 CATEGORIES =		astro
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://www.schwarzvogel.de/software-pymetar.shtml
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

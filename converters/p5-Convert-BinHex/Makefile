@@ -4,7 +4,7 @@ COMMENT=	module to extract data from Macintosh BinHex files
 
 MODULES=	cpan
 DISTNAME=	Convert-BinHex-1.119
-REVISION=	3
+REVISION=	4
 CATEGORIES=	converters
 
 # perl

@@ -5,6 +5,7 @@
 COMMENT =		replaces/enhances Text.Regex
 
 DISTNAME =		regex-pcre-builtin-0.94.4.7.8.31
+REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =		http://sourceforge.net/projects/lazy-regex
 

@@ -5,7 +5,7 @@ COMMENT=	chess program
 DISTNAME=	gnuchess-6.1.1
 DISTFILES=	${DISTNAME}.tar.gz book_1.02.pgn.gz
 
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_GNU:=chess/}

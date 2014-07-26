@@ -9,14 +9,12 @@ PKGNAME-main=		postgresql-jdbc-${V:S/-/./}
 PKGNAME-docs=		postgresql-jdbc-docs-${V:S/-/./}
 PKG_ARCH-docs=		*
 CATEGORIES=		databases
-REVISION-docs=		0
-REVISION-main=		3
+REVISION-docs=		1
+REVISION-main=		4
 
 MULTI_PACKAGES=		-main -docs
 
 HOMEPAGE=		http://jdbc.postgresql.org/
-
-MAINTAINER=		Matthias Kilian <kili@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

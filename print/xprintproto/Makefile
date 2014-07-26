@@ -5,10 +5,9 @@ COMMENT =		X11 printing headers
 V =			1.0.5
 DISTNAME =		printproto-${V}
 PKGNAME =		xprintproto-${V}
+REVISION =		0
 
 CATEGORIES =		print devel x11
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

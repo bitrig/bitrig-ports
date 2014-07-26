@@ -3,7 +3,7 @@
 COMMENT=	embedding CDDB information in MP3s
 
 DISTNAME=	mp3cddb-0.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 
 HOMEPAGE=	http://drewie.host.sk/mp3cddb/

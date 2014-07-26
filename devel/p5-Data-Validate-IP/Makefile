@@ -3,10 +3,9 @@
 COMMENT =		ipv4 and ipv6 validation methods
 
 DISTNAME =		Data-Validate-IP-0.23
+REVISION =		0
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,11 +3,9 @@
 COMMENT=		Foreign Function Interface
 
 DISTNAME=		libffi-3.0.13
-REVISION=		1
+REVISION=		2
 SHARED_LIBS +=  ffi                  1.0      # .6.1
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE=		http://sourceware.org/libffi/
 

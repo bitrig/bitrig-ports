@@ -19,7 +19,11 @@ PKGNAME-ri_docs=	ruby-ri_docs-${VERSION}.${PATCHLEVEL}
 PKG_ARCH-ri_docs=	*
 PKGSPEC-main=		ruby->=1.8,<1.9
 
-REVISION-main=		0
+REVISION-main=		1
+REVISION-iconv=		0
+REVISION-gdbm=		0
+REVISION-tk=		0
+REVISION-ri_docs=	0
 
 MODULES=		converters/libiconv
 MODULES+=		gcc4

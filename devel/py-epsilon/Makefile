@@ -5,12 +5,10 @@ COMMENT=	small utility package for Divmod projects
 VERSION=	0.6.0
 DISTNAME=	Epsilon-${VERSION}
 PKGNAME=	py-epsilon-${VERSION}
-REVISION =	2
+REVISION =	3
 CATEGORIES=	devel
 
 HOMEPAGE=	http://divmod.org/trac/wiki/DivmodEpsilon
-
-MAINTAINER=	Eric Faurot <eric@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

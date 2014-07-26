@@ -2,10 +2,8 @@
 
 COMMENT=	graphical frontend to CVS
 DISTNAME=	tkcvs-6.0
-REVISION =	5
+REVISION =	6
 CATEGORIES=	devel
-
-MAINTAINER=	Todd T. Fries <todd@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

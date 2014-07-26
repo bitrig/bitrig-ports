@@ -2,7 +2,7 @@
 
 COMMENT=	apache interface for SCGI servers
 
-REVISION=	5
+REVISION=	6
 DISTNAME=	scgi-1.12
 PKGNAME=	mod_${DISTNAME}
 CATEGORIES=	www

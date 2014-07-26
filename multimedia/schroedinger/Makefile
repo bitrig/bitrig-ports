@@ -3,15 +3,13 @@
 COMMENT=	high-speed Dirac codec
 
 DISTNAME=	schroedinger-1.0.11
-REVISION=	1
+REVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	${HOMEPAGE}/download/schroedinger/
 
 SHARED_LIBS=	schroedinger-1.0	3.0
 
 HOMEPAGE=	http://diracvideo.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

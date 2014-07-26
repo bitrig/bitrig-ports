@@ -7,7 +7,7 @@ DISTNAME=		verilog-$V
 PKGNAME=		iverilog-$V
 CATEGORIES=		lang devel
 
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://www.icarus.com/eda/verilog/
 

@@ -3,6 +3,7 @@
 COMMENT=        Sun's official Java Language Specification
 
 VERSION=	3.0
+REVISION=	0
 PKGNAME=	JLS-${VERSION}
 DISTNAME=	langspec-${VERSION}
 DISTFILES=	${DISTNAME}.pdf
@@ -10,8 +11,6 @@ CATEGORIES=	books
 SUBST_VARS+=	VERSION
 
 HOMEPAGE=	http://java.sun.com/docs/books/jls/
-
-MAINTAINER=	Ian Darwin <ian@openbsd.org>
 
 # http://java.sun.com/docs/books/jls/third_edition/html/jcopyright.html
 PERMIT_PACKAGE_CDROM=	Copyright

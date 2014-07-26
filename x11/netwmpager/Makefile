@@ -3,7 +3,7 @@
 COMMENT=	small EWMH compliant pager
 
 DISTNAME=	netwmpager-1.11
-REVISION=	2
+REVISION=	3
 CATEGORIES=	x11
 
 HOMEPAGE=	http://onion.dynserv.net/~timo/netwmpager.html

@@ -2,12 +2,10 @@
 COMMENT=	enhanced talk that allows for multiple parties
 
 DISTNAME=	ytalk-3.1.1
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 
 MASTER_SITES=	ftp://quatramaran.ens.fr/pub/orabidoo/ytalk/
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c ncurses 

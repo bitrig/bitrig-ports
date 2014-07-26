@@ -3,13 +3,11 @@
 COMMENT=		simple tar implementation
 
 DISTNAME=		sltar-0.5
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		archivers
 
 HOMEPAGE=		https://github.com/Gottox/sltar	
-
-MAINTAINER =		Joerg Jung <jung@openbsd.org>
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes

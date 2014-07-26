@@ -4,9 +4,8 @@ COMMENT =		suite of tools for electronic design automation
 DISTNAME =		geda-gaf-1.6.0
 CATEGORIES =		cad
 HOMEPAGE =		http://geda.seul.org
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
-REVISION =		7
+REVISION =		8
 
 SHARED_LIBS = 		geda	0.0	# 38.0
 USE_GROFF =	Yes

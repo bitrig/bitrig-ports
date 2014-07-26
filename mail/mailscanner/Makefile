@@ -7,15 +7,13 @@ Vs=		6
 Vss=		${Vs}-1
 DISTNAME=	mailscanner-${V}.${Vss}
 PKGNAME=	mailscanner-${V}.${Vss:S/-/./}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	http://comstyle.com/source/
 
 DISTFILES=	MailScanner-install-${V}.${Vss}${EXTRACT_SUFX}
 
 HOMEPAGE=	http://www.mailscanner.info/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,10 +4,9 @@ COMMENT =	HTML form creation, rendering and validation framework
 
 MODULES =	cpan
 DISTNAME =	HTML-FormFu-0.07003
+REVISION =	0
 CATEGORIES =	www textproc
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

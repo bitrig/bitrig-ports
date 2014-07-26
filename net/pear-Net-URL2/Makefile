@@ -3,7 +3,7 @@
 COMMENT=	class for parsing and handling URL
 
 DISTNAME=	Net_URL2-0.3.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=	net
 
 MODULES=	www/pear

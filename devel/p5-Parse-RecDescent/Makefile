@@ -4,9 +4,8 @@ COMMENT =	perl module to generate recursive descent parsers
 
 MODULES =	cpan
 DISTNAME =	Parse-RecDescent-1.967009
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM =	Yes

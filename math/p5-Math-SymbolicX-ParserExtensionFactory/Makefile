@@ -3,9 +3,9 @@
 COMMENT =	generate Math::Symbolic parser extensions
 
 DISTNAME =	Math-SymbolicX-ParserExtensionFactory-3.02
+REVISION =	0
 CATEGORIES =	math
 HOMEPAGE =	http://search.cpan.org/~smueller/Math-SymbolicX-ParserExtensionFactory/
-MAINTAINER =	Markus Bergkvist <markus.bergkvist@telia.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

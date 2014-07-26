@@ -2,11 +2,10 @@
 
 COMMENT =	simple, fast GTK-based text editor
 DISTNAME =	tpad-5.5.0.5
+REVISION =	0
 CATEGORIES =	editors x11
 
 HOMEPAGE =	https://launchpad.net/tpad-project/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =		Yes

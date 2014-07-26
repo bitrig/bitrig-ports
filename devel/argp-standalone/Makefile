@@ -3,7 +3,7 @@
 COMMENT=		Standalone version of arguments parsing functions from GLIBC
 
 DISTNAME=		argp-standalone-1.3
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		devel
 

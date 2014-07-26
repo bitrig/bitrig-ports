@@ -6,7 +6,7 @@ COMMENT-mysql =	MySQL driver for dspam
 
 VERSION =	3.10.2
 DISTNAME =	dspam-3.10.2
-REVISION =	1
+REVISION =	2
 PKGNAME-main =	${PKGNAME}
 .for p in pgsql mysql
 PKGNAME-$p =	dspam-$p-${VERSION}
@@ -22,8 +22,6 @@ SHARED_ONLY =	Yes
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=dspam/}
 
 HOMEPAGE =	http://dspam.nuclearelephant.com/
-
-MAINTAINER =	Todd T. Fries <todd@OpenBSD.org>
 
 # AGPLv3/BSD/GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

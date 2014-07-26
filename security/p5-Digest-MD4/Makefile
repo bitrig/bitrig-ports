@@ -4,9 +4,7 @@ COMMENT =	interface to md4 message-digest algorithm
 
 DISTNAME =	Digest-MD4-1.9
 CATEGORIES =	security
-REVISION =	0
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
+REVISION =	1
 
 # Digest::MD4: perl
 #

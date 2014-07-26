@@ -3,6 +3,7 @@
 COMMENT=	documentation generator
 
 VERSION=	11.1.0
+REVISION=	0
 DISTNAME=	TwistedLore-${VERSION}
 PKGNAME=	py-twisted-lore-${VERSION}
 

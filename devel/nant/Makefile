@@ -7,12 +7,11 @@ COMMENT=	.NET build tool inspired by Ant
 V=		0.92
 DISTNAME=	nant-${V}-src
 PKGNAME=	${DISTNAME:S/-src//}
+REVISION=	0
 CATEGORIES=	devel lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nant/}
 
 HOMEPAGE=	http://nant.sourceforge.net/
-
-MAINTAINER=	Ryan Boggs <rmboggs@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,6 +5,7 @@ COMMENT =	libftdi, interface to ftdi debug device
 CATEGORIES =	devel
 
 DISTNAME =	libftdi-0.20
+REVISION =	0
 
 SHARED_LIBS =	ftdi		15.1	# 21.0
 

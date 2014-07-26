@@ -11,8 +11,6 @@ CATEGORIES=	textproc
 
 HOMEPAGE=	http://podofo.sourceforge.net/
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 # GPLv2+ (tools) LGPLv2+ (lib)
 PERMIT_PACKAGE_CDROM=	Yes
 

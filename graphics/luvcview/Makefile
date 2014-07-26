@@ -3,7 +3,7 @@
 COMMENT=		V4L compatible video application
 
 DISTNAME=		luvcview-20070512
-REVISION=		5
+REVISION=		6
 CATEGORIES=		graphics x11
 
 # GPLv2+

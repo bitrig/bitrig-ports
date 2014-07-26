@@ -4,7 +4,7 @@ COMMENT=	validate XML schema using SAX
 
 MODULES=	cpan
 DISTNAME=	XML-Validator-Schema-1.10
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 USE_GROFF =	Yes
 

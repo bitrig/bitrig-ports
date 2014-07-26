@@ -6,7 +6,7 @@ COMMENT=	portable, easy to use, and efficient C++ crypto library
 
 DISTNAME=	Botan-1.10.8
 PKGNAME=	${DISTNAME:L}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	${HOMEPAGE}files/
 EXTRACT_SUFX=	.tbz

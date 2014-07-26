@@ -3,7 +3,7 @@
 COMMENT =	Ruby interface to ImageMagick
 
 DISTNAME =	rmagick-2.13.1
-REVISION =	7
+REVISION =	8
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://rmagick.rubyforge.org/

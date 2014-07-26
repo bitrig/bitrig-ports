@@ -3,7 +3,7 @@
 COMMENT=		command-line WebDAV client
 
 DISTNAME=		cadaver-0.23.3
-REVISION=		4
+REVISION=		5
 CATEGORIES=		net www
 
 HOMEPAGE=		http://www.webdav.org/cadaver/

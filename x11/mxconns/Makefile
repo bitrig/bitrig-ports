@@ -3,7 +3,7 @@
 COMMENT=	interactive X11 proxy with selective X request replacement
 
 DISTNAME=	mxconns-3.1.8
-REVISION=	3
+REVISION=	4
 CATEGORIES=	x11 security
 
 HOMEPAGE=	http://cern.ch/mxconns/

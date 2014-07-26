@@ -6,7 +6,7 @@ COMMENT =		tool for setting pointing devices
 
 DISTNAME =		gpointing-device-settings-1.5.1
 CATEGORIES =		x11 sysutils
-REVISION =		9
+REVISION =		10
 
 SHARED_LIBS +=  gpds                      0.0 # 1.0
 

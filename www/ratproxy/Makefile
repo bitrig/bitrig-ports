@@ -3,12 +3,10 @@
 COMMENT=		passive web application security assessment tool
 
 DISTNAME=		ratproxy-1.58
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www security
 
 HOMEPAGE=		https://ratproxy.googlecode.com/
-
-MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
 
 # Apache License 2.0
 PERMIT_PACKAGE_CDROM=	Yes

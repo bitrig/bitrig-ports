@@ -3,12 +3,10 @@
 COMMENT=		helper script for launching java applications
 
 DISTNAME=		javaPathHelper-0.3
-REVISION=		1
+REVISION=		2
 CATEGORIES=		java
 
 HOMEPAGE=		http://www.intricatesoftware.com/OpenBSD/java
-
-MAINTAINER=		Kurt Miller <kurt@openbsd.org>
 
 MASTER_SITES=		http://www.intricatesoftware.com/OpenBSD/java/
 

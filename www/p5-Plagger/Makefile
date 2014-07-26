@@ -4,15 +4,13 @@ COMMENT=	pluggable RSS/Atom aggregator
 
 MODULES=	cpan
 DISTNAME=	Plagger-0.7.17
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www textproc
 USE_GROFF =	Yes
 
 CPAN_AUTHOR=	MIYAGAWA
 
 HOMEPAGE=	http://plagger.org/
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

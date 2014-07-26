@@ -5,7 +5,7 @@ COMMENT=	complex rogue-style game of dungeon exploration
 VERSION=	0.90.4
 DISTFILES=	omega-${VERSION}-src.tar.gz
 DISTNAME=	omega-${VERSION}
-REVISION =	2
+REVISION =	3
 CATEGORIES=     games
 MASTER_SITES=   http://www.alcyone.com/binaries/omega/
 

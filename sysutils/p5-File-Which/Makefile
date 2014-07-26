@@ -3,7 +3,7 @@
 COMMENT=		portable implementation of 'which' in Perl
 MODULES=		cpan
 DISTNAME=		File-Which-1.09
-REVISION=		0
+REVISION=		1
 CATEGORIES=		sysutils
 
 # Artistic/GPL

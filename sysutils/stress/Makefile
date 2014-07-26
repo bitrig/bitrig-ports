@@ -2,6 +2,7 @@
 
 COMMENT=	tool to impose configurable amount of load
 DISTNAME=	stress-1.0.4
+REVISION=	0
 CATEGORIES=	sysutils
 MASTER_SITES=	${HOMEPAGE}
 

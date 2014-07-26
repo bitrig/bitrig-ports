@@ -10,7 +10,7 @@ PERMIT_PACKAGE_CDROM=	May not be bundled, according to copyright
 PERMIT_PACKAGE_FTP=	May not distribute modified version
 PERMIT_DISTFILES_FTP=	Yes
 
-REVISION =	4
+REVISION =	5
 WANTLIB=	ICE SM X11 Xt c m
 
 FAKE_FLAGS=	PREFIX=${WRKINST}${PREFIX}

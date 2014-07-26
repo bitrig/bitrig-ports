@@ -6,6 +6,7 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	Jifty-DBI-0.68
+REVISION=	0
 CATEGORIES=	databases www
 
 # perl

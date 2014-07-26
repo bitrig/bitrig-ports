@@ -6,6 +6,7 @@ COMMENT=	GObject-based parsing library
 
 GNOME_PROJECT=	totem-pl-parser
 GNOME_VERSION=	3.10.2
+REVISION=	0
 
 SHARED_LIBS +=  totem-plparser       18.1     # 19.0
 SHARED_LIBS +=  totem-plparser-mini  18.0     # 19.0

@@ -4,6 +4,7 @@ COMMENT=		helper routines for writing monitoring plugins
 
 # formerly Nagios-Plugin
 DISTNAME=		Monitoring-Plugin-0.37
+REVISION=		0
 CATEGORIES=		net
 MODULES=		cpan
 

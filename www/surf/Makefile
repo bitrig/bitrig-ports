@@ -5,9 +5,7 @@ COMMENT =	simple webbrowser based on webkit/gtk+
 DISTNAME =	surf-0.6
 CATEGORIES =	www
 HOMEPAGE =	http://surf.suckless.org/
-REVISION =	1
-
-MAINTAINER=	Joerg Jung <jung@openbsd.org>
+REVISION =	2
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

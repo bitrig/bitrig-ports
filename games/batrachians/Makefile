@@ -4,7 +4,7 @@ COMMENT=	clone of the classic Frog Bog game
 
 DISTNAME =	batrachians-0.1.6
 CATEGORIES=	games
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://sarrazip.com/dev/batrachians.html
 

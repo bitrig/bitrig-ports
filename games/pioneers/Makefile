@@ -4,7 +4,7 @@ COMMENT=	Settlers of Catan for GNOME/Gtk
 
 GNOME_PROJECT=	pioneers
 GNOME_VERSION=	14.1
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	games
 

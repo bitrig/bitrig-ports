@@ -4,11 +4,9 @@ COMMENT=	manage connections, with keep-alive
 
 MODULES=	cpan
 DISTNAME=	POE-Component-Client-Keepalive-0.25
-REVISION=	0
+REVISION=	1
 EPOCH=		0
 CATEGORIES=	net
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

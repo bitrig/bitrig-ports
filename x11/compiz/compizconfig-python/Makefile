@@ -3,7 +3,7 @@
 COMMENT =	compiz configuration system bindings
 
 DISTNAME =	compizconfig-python-0.8.4
-REVISION =	0
+REVISION =	1
 
 MASTER_SITES =	http://releases.compiz.org/components/compizconfig-python/
 

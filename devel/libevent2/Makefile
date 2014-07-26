@@ -5,7 +5,7 @@ COMMENT=	event notification library
 V=		2.0.21
 DISTNAME=	libevent-$V-stable
 PKGNAME=	libevent-$V
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 HOMEPAGE=	http://monkey.org/~provos/libevent/
 

@@ -3,7 +3,7 @@
 COMMENT=		YAML Test Shell
 
 DISTNAME=		YAML-Shell-0.60
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 
 # perl

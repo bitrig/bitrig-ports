@@ -4,9 +4,8 @@ COMMENT=	Internet Protocol v6 layer object
 
 MODULES=	cpan
 DISTNAME=	Net-Frame-Layer-IPv6-1.04
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Gleydson Soares <gsoares@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT =	development environment for native Windows applications
 
 V = 		1.0.1
-REVISION =	3
+REVISION =	4
 BASENAME =	x86-mingw32-build
 DISTNAME =	${BASENAME}-${V}-sh
 PKGNAME =	mingw-${V}
@@ -11,8 +11,6 @@ WRKDIST =	${WRKDIR}/${BASENAME}-${V}
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.mingw.org/
-
-MAINTAINER =	Paul Irofti <pirofti@openbsd.org>
 
 # Headers: public domain
 # Compiler/toolchain: GPL

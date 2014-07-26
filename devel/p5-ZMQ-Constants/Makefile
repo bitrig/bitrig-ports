@@ -4,6 +4,7 @@ COMMENT =	constants for libzmq
 
 MODULES =	cpan
 DISTNAME =	ZMQ-Constants-1.04
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

@@ -3,10 +3,9 @@
 COMMENT =		alternative parser combinator libraries
 
 DISTNAME =		polyparse-1.9
+REVISION =		0
 CATEGORIES =		textproc
 HOMEPAGE =		http://code.haskell.org/~malcolm/polyparse/
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM =	Yes

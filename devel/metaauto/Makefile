@@ -4,12 +4,10 @@ COMMENT =	wrapper for gnu auto*
 
 PKG_ARCH =	*
 VERSION =	1.0
-REVISION =	1
+REVISION =	2
 DISTNAME =	metaauto-${VERSION}
 CATEGORIES =	devel
 DISTFILES =	pkg-config-0.27.1.tar.gz
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 MASTER_SITES =	http://pkg-config.freedesktop.org/releases/
 

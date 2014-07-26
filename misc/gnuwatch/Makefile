@@ -4,9 +4,8 @@ COMMENT=		GNU watch command
 
 DISTNAME=		procps-3.2.8
 PKGNAME=		${DISTNAME:S/procps/gnuwatch/}
+REVISION=		0
 CATEGORIES=		misc
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE=		http://procps.sourceforge.net/
 

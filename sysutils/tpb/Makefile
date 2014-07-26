@@ -6,13 +6,11 @@ ONLY_FOR_ARCHS=	amd64 i386
 COMMENT=	utility to use ibm thinkpad(tm) special keys
 
 DISTNAME=	tpb-0.6.4
-REVISION =	3
+REVISION =	4
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://www.nongnu.org/tpb/
 MASTER_SITES=	${MASTER_SITE_SAVANNAH:=tpb/}
-
-MAINTAINER=	joshua stein <jcs@openbsd.org>
 
 # gpl
 PERMIT_PACKAGE_CDROM=	yes

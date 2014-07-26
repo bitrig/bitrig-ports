@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	lightweight NETWM compliant desktop panel
 
 DISTNAME=	fbpanel-6.1
-REVISION=	5
+REVISION=	6
 CATEGORIES=	x11
 EXTRACT_SUFX=	.tbz2
 

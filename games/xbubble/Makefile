@@ -3,7 +3,7 @@
 COMMENT=	x bust a move clone
 
 DISTNAME=	xbubble-0.5.8
-REVISION =	0
+REVISION =	1
 CATEGORIES=	games x11
 
 HOMEPAGE=	http://www.nongnu.org/xbubble/

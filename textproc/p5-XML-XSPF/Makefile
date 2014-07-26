@@ -4,6 +4,7 @@ COMMENT=	parser and generator for XSPF playlists
 
 MODULES=	cpan
 DISTNAME=	XML-XSPF-0.7.1
+REVISION=	0
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.xspf.org/

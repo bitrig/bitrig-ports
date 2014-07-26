@@ -5,13 +5,12 @@ SHARED_ONLY =		Yes
 COMMENT =		high-performance HTTP accelerator
 
 DISTNAME =		varnish-3.0.5
+REVISION =		0
 CATEGORIES =		www
 
 SHARED_LIBS =		varnishapi	1.0
 
 HOMEPAGE =		http://www.varnish-cache.org/
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,13 +3,11 @@
 COMMENT =	japanese skk input engine for ibus
 
 DISTNAME =	ibus-skk-1.4.1
-REVISION =	3
+REVISION =	4
 
 CATEGORIES =	inputmethods japanese
 
 HOMEPAGE =	https://github.com/ueno/ibus-skk/
-
-MAINTAINER =	Federico G. Schwindt <fgsch@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

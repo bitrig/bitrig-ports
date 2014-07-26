@@ -3,7 +3,7 @@
 COMMENT=	perl module to manage MIME types
 
 DISTNAME=	MIME-Types-1.28
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail
 
 # Perl

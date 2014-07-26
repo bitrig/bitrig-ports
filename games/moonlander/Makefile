@@ -3,7 +3,7 @@
 COMMENT=	clone of atari game
 DISTNAME=	moon-lander-1.0
 PKGNAME=	moonlander-1.0
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games x11
 MASTER_SITES=	http://downloads.daveblood.com/lunar_lander/
 

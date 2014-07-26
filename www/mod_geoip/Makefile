@@ -2,7 +2,7 @@
 
 COMMENT=	Apache module for finding the country of web requests
 
-REVISION=	4
+REVISION=	5
 DISTNAME=	mod_geoip_1.3.4
 PKGNAME=	mod_geoip-1.3.4
 CATEGORIES=	www geo

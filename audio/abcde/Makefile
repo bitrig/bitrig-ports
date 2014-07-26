@@ -3,7 +3,7 @@
 COMMENT=	command-line utility to rip and encode audio cds
 
 DISTNAME=	abcde-2.5.4
-REVISION=	0
+REVISION=	1
 CATEGORIES=	audio
 
 HOMEPAGE=	https://code.google.com/p/abcde/

@@ -3,7 +3,7 @@
 COMMENT=	Perl unit testing framework
 
 DISTNAME=	Test-Unit-0.25
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # perl

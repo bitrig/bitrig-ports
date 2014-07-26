@@ -4,9 +4,8 @@ COMMENT=		bringing loggers and listeners together
 
 MODULES=		cpan
 DISTNAME=		Log-Any-0.15
+REVISION=		0
 CATEGORIES=		devel
-
-MAINTAINER=		David Hill <dhill@mindcry.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,6 +5,7 @@ COMMENT=	Xfwm4 window decoration themes
 
 XFCE_VERSION =	4.10.0
 XFCE_ARTWORK=	xfwm4-themes
+REVISION=	0
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

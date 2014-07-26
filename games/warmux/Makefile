@@ -3,7 +3,7 @@
 COMMENT=		free software clone of Worms(R) game concept
 
 DISTNAME=		warmux-11.04.1
-REVISION=		3
+REVISION=		4
 WRKDIST=		${WRKDIR}/warmux-11.04
 CATEGORIES=		games
 

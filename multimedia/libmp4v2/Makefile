@@ -4,7 +4,7 @@ COMMENT =		read and manipulate the MP4 container format
 
 DISTNAME =		mp4v2-1.9.1
 PKGNAME =		lib${DISTNAME}
-REVISION =		1
+REVISION =		2
 CATEGORIES =		multimedia audio
 
 SHARED_LIBS =		mp4v2	4.0 #1.9

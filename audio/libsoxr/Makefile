@@ -4,6 +4,7 @@ COMMENT=	fast and high quality sample-rate conversion (SoX Resampler)
 
 DISTNAME=	soxr-0.1.1-Source
 PKGNAME=	lib${DISTNAME:S/-Source//}
+REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 
 SHARED_LIBS=	soxr 1.2 soxr-lsr 3.4

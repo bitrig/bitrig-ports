@@ -5,7 +5,7 @@ COMMENT=	parametrical modeling of 3D humanoid characters
 DISTNAME=	makehuman-0.9.1-rc1a
 PKGNAME=	makehuman-0.9.1rc1
 CATEGORIES=	graphics
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://www.dedalo-3d.com/
 

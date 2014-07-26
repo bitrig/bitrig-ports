@@ -3,7 +3,7 @@
 COMMENT=	Web intrusion detection and prevention engine
 
 VER=		1.9.3
-REVISION=	6
+REVISION=	7
 DISTNAME=	modsecurity-apache_${VER}
 PKGNAME=	modsecurity-apache-${VER}
 

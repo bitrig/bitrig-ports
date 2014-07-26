@@ -4,10 +4,8 @@ COMMENT =	pure Perl HTTP client
 
 MODULES =	cpan
 DISTNAME =	HTTP-Lite-2.1.6
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
-
-MAINTAINER =	Jason Dixon <jdixon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

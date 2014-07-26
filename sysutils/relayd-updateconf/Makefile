@@ -3,11 +3,10 @@
 COMMENT=	update /etc/relayd.conf to new syntax
 
 DISTNAME=	relayd-updateconf-5.6
+REVISION=	0
 CATEGORIES=	sysutils
 
 MASTER_SITES=	http://bsd.plumbing/download/
-
-MAINTAINER=	Sebastian Benoit <benno@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

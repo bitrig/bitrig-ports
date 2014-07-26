@@ -3,7 +3,7 @@
 COMMENT=		filesystem information display
 
 DISTNAME=		Filesys-DiskSpace-0.05
-REVISION=		2
+REVISION=		3
 CATEGORIES=		sysutils
 
 # Artistic

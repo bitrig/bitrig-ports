@@ -4,6 +4,7 @@ COMMENT= 	run a subprocess
 
 MODULES=	cpan
 DISTNAME=	IPC-Run-0.92
+REVISION=	0
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

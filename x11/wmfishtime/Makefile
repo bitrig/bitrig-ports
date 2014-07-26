@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; clock application with clock, date and fish
 
 DISTNAME=		wmfishtime-1.23
-REVISION=		4
+REVISION=		5
 CATEGORIES=     	x11 x11/windowmaker
 
 HOMEPAGE=		http://www.ne.jp/asahi/linux/timecop/

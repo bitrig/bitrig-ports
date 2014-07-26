@@ -3,11 +3,10 @@
 COMMENT=	tools for building unix domain socket client/servers
 
 DISTNAME=		ucspi-unix-0.34
-REVISION=		0
+REVISION=		1
 CATEGORIES=     	net
 
 HOMEPAGE=		http://em.ca/~bruceg/ucspi-unix/
-MAINTAINER=		Anil Madhavapeddy <avsm@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

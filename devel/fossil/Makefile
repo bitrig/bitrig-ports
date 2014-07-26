@@ -4,10 +4,9 @@ COMMENT =		simple distributed software configuration management
 
 DISTNAME =		fossil-src-20140612172556
 PKGNAME =		fossil-1.29
+REVISION =		0
 EPOCH =			0
 CATEGORIES =		devel www
-
-MAINTAINER =		James Turner <james@calminferno.net>
 
 HOMEPAGE =		http://fossil-scm.org/
 MASTER_SITES =		http://fossil-scm.org/download/

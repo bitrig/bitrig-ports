@@ -3,7 +3,7 @@
 COMMENT =		replace strings with new strings in multiple text files
 
 DISTNAME =		rpl-1.4.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://www.laffeycomputer.com/rpl.html

@@ -3,7 +3,7 @@
 COMMENT=	text search engine
 
 DISTNAME=	glimpse-4.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc databases
 
 PERMIT_PACKAGE_CDROM=	no fee

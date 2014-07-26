@@ -4,11 +4,9 @@ COMMENT=		singleton for the catalyst context (deprecated)
 
 MODULES=		cpan
 DISTNAME=		Catalyst-Plugin-Singleton-0.02
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www
 USE_GROFF =		Yes
-
-MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
 # same as perl
 PERMIT_PACKAGE_CDROM=	Yes

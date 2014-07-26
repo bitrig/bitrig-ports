@@ -4,6 +4,7 @@ COMMENT=	tiny pure-perl UUID generation
 
 MODULES=	cpan
 DISTNAME=	UUID-Tiny-1.03
+REVISION=	0
 CATEGORIES=	devel
 
 # perl

@@ -4,10 +4,8 @@ COMMENT=	manage sets of integers
 
 MODULES=	cpan
 DISTNAME=	Set-IntSpan-1.13
-REVISION=	0
+REVISION=	1
 CATEGORIES=	math
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

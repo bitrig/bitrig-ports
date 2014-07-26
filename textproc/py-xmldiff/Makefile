@@ -5,7 +5,7 @@ COMMENT=		show differences between XML files/DOM trees
 MODPY_EGG_VERSION=	0.6.10
 DISTNAME=		xmldiff-${MODPY_EGG_VERSION}
 PKGNAME=		py-xmldiff-${MODPY_EGG_VERSION}
-REVISION=		2
+REVISION=		3
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://www.logilab.org/859/

@@ -4,12 +4,10 @@ COMMENT =	Exif jpeg camera setting parser and thumbnail remover
 
 DISTNAME =	jhead-2.97
 CATEGORIES =	graphics
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://www.sentex.net/~mwandel/jhead/
 MASTER_SITES =	${HOMEPAGE}
-
-MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
 
 # public domain
 PERMIT_PACKAGE_CDROM =	Yes

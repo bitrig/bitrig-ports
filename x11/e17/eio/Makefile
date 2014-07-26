@@ -3,6 +3,7 @@
 COMMENT =		async i/o library
 
 DISTNAME =		eio-1.7.9
+REVISION =		0
 
 SHARED_LIBS +=	eio                  1.0      # 8.6
 

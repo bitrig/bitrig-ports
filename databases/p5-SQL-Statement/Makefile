@@ -4,9 +4,8 @@ COMMENT =	sql parsing and processing
 
 MODULES =	cpan
 DISTNAME =	SQL-Statement-1.405
+REVISION =	0
 CATEGORIES =	databases
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,10 +4,9 @@ COMMENT=	stack trace for catalyst
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-StackTrace-0.11
+REVISION=	0
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=	read MPEG1-Layer3 tags
 
 DISTNAME=	MP3-Info-1.24
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 
 MODULES=	cpan

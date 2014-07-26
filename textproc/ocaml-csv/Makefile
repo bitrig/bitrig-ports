@@ -3,7 +3,7 @@
 COMMENT=		pure OCaml library to read/write CSV files
 
 DISTNAME=		csv-1.2.3
-REVISION=		0
+REVISION=		1
 PKGNAME=		ocaml-${DISTNAME}
 
 CATEGORIES=		textproc

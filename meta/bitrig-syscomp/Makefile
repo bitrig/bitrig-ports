@@ -1,8 +1,7 @@
 COMMENT=	System Compiler Meta Package
 
 PKGNAME=	bitrig-syscomp-1.2
-
-MAINTAINER=	Marco Peereboom <marco@bitrig.org>
+REVISION=	0
 
 .if ${MACHINE_ARCH} == "arm"
 BUILD_DEPENDS=	bitrig/bitrig-binutils-2.24 \

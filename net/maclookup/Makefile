@@ -3,10 +3,9 @@
 COMMENT=	simple filter to look up MAC address vendors
 
 DISTNAME=	maclookup-1.3
+REVISION=	0
 
 CATEGORIES=	net textproc
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # Public Domain
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=	wrap existing Ruby scripts to be run as a daemon
 
 DISTNAME=	daemons-1.1.9
-REVISION =	0
+REVISION =	1
 CATEGORIES=	devel
 
 HOMEPAGE=	http://daemons.rubyforge.org/

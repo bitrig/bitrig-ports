@@ -3,7 +3,7 @@
 COMMENT =	ssh wrapper to execute remote interactive commands
 
 DISTNAME =	Net-SSH-Expect-1.09
-REVISION =	1
+REVISION =	2
 CATEGORIES =	net
 MODULES =	cpan
 

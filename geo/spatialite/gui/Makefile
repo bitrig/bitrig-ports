@@ -2,7 +2,7 @@
 
 COMMENT =	GUI for spatialite
 DISTNAME =	spatialite_gui-1.6.0
-REVISION =	1
+REVISION =	2
 
 LIB_DEPENDS +=	x11/wxWidgets \
 		geo/spatialite/libspatialite \

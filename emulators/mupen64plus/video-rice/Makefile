@@ -4,7 +4,7 @@ COMMENT =		n64 emulator opengl video plugin
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
-REVISION =		2
+REVISION =		3
 
 WANTLIB =		GL SDL m png pthread
 WANTLIB +=		c++ c++abi

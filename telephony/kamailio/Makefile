@@ -16,10 +16,17 @@ PKGNAME-snmpstats =	kamailio-snmpstats-${VERSION}
 PKGNAME-perl =		kamailio-perl-${VERSION}
 #PKGNAME-radius =	kamailio-radius-${VERSION}	TODO
 
-REVISION-mysql =	1
+REVISION-main =		0
+REVISION-mysql =	2
+REVISION-postgresql =	0
+REVISION-ldap =		0
+REVISION-xmlrpc =	0
+REVISION-carrierroute =	0
+REVISION-snmpstats =	0
+REVISION-perl =		0
+#REVISION-radius =
 
 CATEGORIES =		telephony
-MAINTAINER =		Roman Kravchuk <kravchuk.kp@gmail.com>
 
 HOMEPAGE =		http://www.kamailio.org/
 

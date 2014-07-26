@@ -4,7 +4,7 @@ COMMENT =	provides basic statistics on numerical vectors
 
 MODULES =	cpan
 DISTNAME =	Math-VecStat-0.08
-REVISION =	0
+REVISION =	1
 CATEGORIES =	math
 
 # Perl

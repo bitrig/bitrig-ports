@@ -2,7 +2,7 @@
 
 COMMENT=	X11-based audio mixer
 DISTNAME=	xmix-2.1
-REVISION=	4
+REVISION=	5
 CATEGORIES=	audio
 
 PERMIT_PACKAGE_CDROM=	Yes

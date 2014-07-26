@@ -6,15 +6,13 @@ V =		0.7.5
 # 0.7.5-cvs
 DISTNAME =	a52dec-snapshot
 PKGNAME =	liba52-${V}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	audio
 MASTER_SITES =	http://comstyle.com/source/
 
 SHARED_LIBS =	a52	1.0
 
 HOMEPAGE =	http://liba52.sourceforge.net/
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

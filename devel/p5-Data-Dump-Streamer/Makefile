@@ -6,7 +6,7 @@ COMMENT=		accurately serialize a data structure as Perl code
 
 DISTNAME=		Data-Dump-Streamer-2.37
 CATEGORIES=		devel
-REVISION=		0
+REVISION=		1
 
 MODULES=		cpan
 USE_GROFF =		Yes

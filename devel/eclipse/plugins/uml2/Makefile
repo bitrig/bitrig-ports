@@ -5,11 +5,10 @@ COMMENT=		UML diagram framework for Eclipse
 V=			2.0.3
 DISTNAME=		uml2-SDK-${V}
 PKGNAME=		eclipse-plugin-uml2-sdk-${V}
+REVISION=		0
 CATEGORIES+=		java
 
 HOMEPAGE=		http://www.eclipse.org/uml2/
-
-MAINTAINER=		Kurt Miller <kurt@openbsd.org>
 
 # Common Public License Version 1.0 (http://www.eclipse.org/legal/cpl-v10.html)
 PERMIT_PACKAGE_CDROM=	commercial distribution defend and indemnify clauses

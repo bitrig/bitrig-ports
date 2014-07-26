@@ -5,7 +5,7 @@ COMMENT=	Arabeyes TrueType Arabic fonts
 V=		2.0
 DISTNAME=	ttf-arabeyes_$V.orig
 PKGNAME=	arabeyes-ttf-$V
-REVISION=	0
+REVISION=	1
 CATEGORIES=	fonts x11
 
 HOMEPAGE=	http://www.arabeyes.org/project.php?proj=Khotot

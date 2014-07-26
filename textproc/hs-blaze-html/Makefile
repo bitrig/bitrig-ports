@@ -3,6 +3,7 @@
 COMMENT=		fast HTML combinator library
 
 DISTNAME=		blaze-html-0.6.1.1
+REVISION=		0
 CATEGORIES=		textproc
 
 # BSD3

@@ -4,7 +4,7 @@ COMMENT=        wrapper around File::Find
 
 MODULES=	cpan
 DISTNAME=	File-Finder-0.53
-REVISION=	1
+REVISION=	2
 CATEGORIES=     devel
 USE_GROFF =	Yes
 

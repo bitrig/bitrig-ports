@@ -5,7 +5,6 @@ MODULES +=		x11/kde4
 
 MASTER_SITES ?=		${MASTER_SITE_KDE:=stable/${MODKDE4_VERSION}/src/}
 DIST_SUBDIR =		kde
-MAINTAINER ?=		KDE porting team <openbsd-kde@googlegroups.com>
 
 .if defined(MODKDE4_USE) && ${MODKDE4_USE:Mgames}
 HOMEPAGE ?=		http://games.kde.org/game.php?game=${DISTNAME:C/-[0-9].*//}

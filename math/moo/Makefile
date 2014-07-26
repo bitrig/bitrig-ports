@@ -3,10 +3,8 @@
 COMMENT=		Marco's Object Oriented calculator#'
 
 DISTNAME=		moo-1.3
-REVISION=		1
+REVISION=		2
 CATEGORIES=		math
-
-MAINTAINER=		Raymond Lai <ray@cyth.net>
 
 HOMEPAGE=		http://cyth.net/moo/
 MASTER_SITES=		${HOMEPAGE}

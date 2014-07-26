@@ -4,10 +4,8 @@ COMMENT=	monte carlo simulation software
 
 DISTNAME=	mcsim-4.2.0
 CATEGORIES=	math
-REVISION=	0
+REVISION=	1
 MASTER_SITES=	${MASTER_SITE_GNU:=mcsim/}
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 FAKE_FLAGS=	PREFIX="${WRKINST}${PREFIX}"
 WRKDIST=	${WRKDIR}/mcsim

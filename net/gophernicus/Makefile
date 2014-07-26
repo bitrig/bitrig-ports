@@ -3,11 +3,9 @@
 COMMENT=	modern gopher server
 DISTNAME=	gophernicus-1.5
 CATEGORIES=	net
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://gophernicus.org
-
-MAINTAINER=	Brian Callahan <bcallah@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

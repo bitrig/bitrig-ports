@@ -3,6 +3,7 @@
 COMMENT =	command-line encryption using scrypt key derivation function
 
 DISTNAME =	scrypt-1.1.6
+REVISION =	0
 
 CATEGORIES =	security
 

@@ -3,11 +3,10 @@
 COMMENT =		password recovery tool for PDF-files
 
 DISTNAME =		pdfcrack-0.13
+REVISION =		0
 CATEGORIES =		security
 
 HOMEPAGE =		http://pdfcrack.sourceforge.net/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,13 +3,11 @@
 COMMENT=		web-based front end for the nfdump netflow tools
 
 V=			1.3.6p1
-REVISION=		3
+REVISION=		4
 DISTNAME=		nfsen-$V
 PKGNAME=		${DISTNAME:S/p/pl/}
 CATEGORIES=		net www
 HOMEPAGE=		http://nfsen.sourceforge.net/
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

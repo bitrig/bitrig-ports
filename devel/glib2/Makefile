@@ -5,13 +5,11 @@ COMMENT=		general-purpose utility library
 GNOME_PROJECT=		glib
 GNOME_VERSION=		2.40.0
 PKGNAME=		${DISTNAME:S/glib/glib2/}
-REVISION=		7
+REVISION=		8
 
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.gtk.org/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 SHARED_LIBS +=  glib-2.0             4000.0   # 4000.0
 SHARED_LIBS +=  gmodule-2.0          4000.0   # 4000.0

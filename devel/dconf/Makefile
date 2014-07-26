@@ -11,15 +11,13 @@ GNOME_VERSION=		0.20.0
 PKGNAME-main=		${DISTNAME}
 PKGNAME-editor=		dconf-editor-${GNOME_VERSION}
 
-REVISION-main=		0
+REVISION-main=		1
+REVISION-editor=	0
 
 SHARED_LIBS +=		dconf        1.0 # 1.0.0
 SHARED_LIBS +=		dconf-dbus-1 1.0 # 1.0.0
 
 CATEGORIES=		devel
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

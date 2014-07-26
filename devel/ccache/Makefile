@@ -3,6 +3,7 @@
 COMMENT =	compiler cache
 
 DISTNAME =	ccache-3.1.9
+REVISION =	0
 CATEGORIES =	devel
 
 # The ccache(1) manual page causes ERRORs with mandoc(1),
@@ -14,8 +15,6 @@ CATEGORIES =	devel
 # does not drop any content from the ccache(1) manual.
 
 HOMEPAGE =	http://ccache.samba.org/
-
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	 Yes

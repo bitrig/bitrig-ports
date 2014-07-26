@@ -4,11 +4,10 @@ COMMENT=	display the currently lighted face of Earth in ASCII
 
 DISTNAME=	globe_26mar1994
 PKGNAME=	globe-19940326
+REVISION=	0
 CATEGORIES=	geo
 
 HOMEPAGE=	http://www.acme.com/software/globe/
-
-MAINTAINER=	Matthias Kilian <kili@openbsd.org>
 
 
 # ACME (2-clause BSD)

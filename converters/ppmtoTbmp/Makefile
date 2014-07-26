@@ -3,11 +3,9 @@
 COMMENT=	PPM to Pilot bitmap converter
 
 DISTNAME=	ppmtoTbmp-1.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	converters graphics
 HOMEPAGE=	http://www.isaac.cs.berkeley.edu/pilot/
-
-MAINTAINER=	Josh Rivel <dorqus@bsdfreek.com>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

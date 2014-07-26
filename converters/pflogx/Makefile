@@ -4,7 +4,7 @@ COMMENT=		convert pf(4) logs to XML
 
 DISTNAME=		pflogx_086
 PKGNAME=		pflogx-0.86
-REVISION=		4
+REVISION=		5
 CATEGORIES=		converters
 
 HOMEPAGE=		http://akldev.free.fr/pflogx/

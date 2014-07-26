@@ -6,9 +6,7 @@ COMPOSER_V=	1.0.0-alpha8
 DISTNAME=	roundcubemail-1.0.1
 CATEGORIES=	mail www
 HOMEPAGE=	http://www.roundcube.net/
-REVISION=	3
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
+REVISION=	4
 
 # GPLv3+ with exceptions for skins & plugins
 PERMIT_PACKAGE_CDROM=	Yes

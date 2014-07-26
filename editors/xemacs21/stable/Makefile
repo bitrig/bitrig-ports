@@ -2,7 +2,7 @@
 
 BRANCH=		21.4
 VERSION=	22
-REVISION=	10
+REVISION=	11
 
 WANTLIB=	c m ncurses util
 

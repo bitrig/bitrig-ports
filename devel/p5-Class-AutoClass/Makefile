@@ -3,10 +3,8 @@
 COMMENT=	get and set methods and simplify object initialization
 
 DISTNAME=	Class-AutoClass-1.54
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

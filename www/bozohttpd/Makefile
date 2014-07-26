@@ -3,12 +3,10 @@
 COMMENT =	bozotic HTTP server
 
 DISTNAME =	bozohttpd-20140201
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
 
 HOMEPAGE =	http://www.eterna.com.au/bozohttpd/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

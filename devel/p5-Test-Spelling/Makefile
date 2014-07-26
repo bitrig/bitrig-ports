@@ -5,6 +5,7 @@ COMMENT=	check for spelling errors in POD files
 MODULES=	cpan
 
 DISTNAME =	Test-Spelling-0.17
+REVISION =	0
 CATEGORIES=	devel textproc
 
 # Perl

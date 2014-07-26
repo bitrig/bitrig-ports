@@ -4,6 +4,7 @@ COMMENT= 	Test differences in data structures
 
 MODULES=	cpan
 DISTNAME=	Test-Differences-0.61
+REVISION=	0
 CATEGORIES=	devel
 
 # Artistic

@@ -2,13 +2,11 @@
 
 COMMENT =	e-donkey client
 DISTNAME =	mldonkey-3.1.4
-REVISION=	1
+REVISION=	2
 CATEGORIES =	net
 
 HOMEPAGE =	http://mldonkey.sourceforge.net/Main_Page
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=mldonkey/}
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

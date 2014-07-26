@@ -4,6 +4,7 @@ COMMENT =	mark overload code symbols as methods
 
 MODULES =	cpan
 DISTNAME =	MooseX-MarkAsMethods-0.14
+REVISION =	0
 CATEGORIES =	devel
 
 # LGPLv2.1

@@ -3,11 +3,9 @@
 COMMENT=	RPN and algebraic scientific calculator
 
 DISTNAME=	calcoo-1.3.18
-REVISION=	7
+REVISION=	8
 CATEGORIES=	math
 HOMEPAGE=	http://calcoo.sourceforge.net/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

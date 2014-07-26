@@ -5,12 +5,10 @@ COMMENT =		Python bindings for cracklib
 MODPY_EGG_VERSION =	0.5.1
 DISTNAME =		python-crack-${MODPY_EGG_VERSION}
 PKGNAME =		py-crack-${MODPY_EGG_VERSION}
-REVISION=		3
+REVISION=		4
 CATEGORIES =   		security devel
 
 HOMEPAGE =		http://www.nongnu.org/python-crack/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # MIT/X Consortium License
 PERMIT_PACKAGE_CDROM =	Yes

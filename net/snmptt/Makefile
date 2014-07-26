@@ -4,6 +4,7 @@ COMMENT=	SNMP trap handler (translates traps to friendlier format)
 
 DISTNAME=	snmptt_1.4
 PKGNAME=	${DISTNAME:S/_/-/}
+REVISION=	0
 
 CATEGORIES=	net
 

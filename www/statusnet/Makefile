@@ -3,6 +3,7 @@
 COMMENT=		open source micro messaging platform
 
 DISTNAME=		statusnet-1.1.1
+REVISION=		0
 
 CATEGORIES=		www net
 

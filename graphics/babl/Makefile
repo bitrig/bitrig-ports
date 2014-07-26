@@ -8,7 +8,7 @@ API_VERSION=	0.1
 V=		${API_VERSION}.10
 DISTNAME=	babl-${V}
 CATEGORIES=	graphics devel
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  babl-${API_VERSION}		1.0      # 105.1
 

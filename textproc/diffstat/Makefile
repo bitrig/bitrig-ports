@@ -3,11 +3,11 @@
 COMMENT=		accumulates and displays statistics from a diff file
 
 DISTNAME=		diffstat-1.55
+REVISION=		0
 CATEGORIES=		textproc
 MASTER_SITES=		ftp://invisible-island.net/diffstat/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		Simon Bertrang <simon@openbsd.org>
 HOMEPAGE=		http://dickey.his.com/diffstat/diffstat.html
 
 # ISC-like

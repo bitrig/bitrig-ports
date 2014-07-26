@@ -4,7 +4,7 @@ COMMENT=	puzzle game for KDE
 
 DISTNAME=	kslide-1.0.1
 CATEGORIES=	games
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE=	http://kde-apps.org/content/show.php/KSlide?content=10317
 

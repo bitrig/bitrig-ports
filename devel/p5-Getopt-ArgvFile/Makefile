@@ -4,6 +4,7 @@ COMMENT =		program arguments processing module
 
 DISTNAME =		Getopt-ArgvFile-1.11
 PKGNAME =		${DISTNAME:S//p5-/}
+REVISION =		0
 
 CATEGORIES =		devel
 

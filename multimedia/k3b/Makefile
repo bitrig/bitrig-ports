@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		CD/DVD creator
 
 DISTNAME =		k3b-1.0.4
-REVISION=		22
+REVISION=		23
 CATEGORIES =		multimedia
 
 SHARED_LIBS =		k3b	0.0	# 3.0

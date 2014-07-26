@@ -3,7 +3,7 @@
 COMMENT=	Java port of GNU getopt family functions
 
 DISTNAME=	java-getopt-1.0.13
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.urbanophile.com/arenn/hacking/download.html

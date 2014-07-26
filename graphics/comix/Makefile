@@ -3,7 +3,7 @@
 COMMENT=	gtk2 comic book viewer
 
 DISTNAME=	comix-4.0.4
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	graphics
 

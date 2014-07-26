@@ -5,9 +5,8 @@ SHARED_ONLY =		Yes
 COMMENT =		Lua binding to libsoldout
 
 DISTNAME =		luasoldout-0.2
+REVISION =		0
 CATEGORIES =		textproc
-
-MAINTAINER =		James Turner <james@calminferno.net>
 
 HOMEPAGE =		https://github.com/jturner/luasoldout/
 MASTER_SITES =		http://calminferno.net/lua/

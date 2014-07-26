@@ -3,6 +3,7 @@
 COMMENT =		efficient hex editor
 
 DISTNAME =		tweak-3.01
+REVISION =		0
 
 CATEGORIES =		editors
 

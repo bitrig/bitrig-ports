@@ -5,11 +5,9 @@ COMMENT=	graphical tool to change Tux Paint's settings
 DISTNAME=	tuxpaint-config-0.0.12
 CATEGORIES=	games graphics
 
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	http://www.tuxpaint.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT=                create accessor methods in caller's package
 
 DISTNAME=               accessors-1.01
-REVISION=		1
+REVISION=		2
 CATEGORIES=             devel
 
 # Artistic/GPL

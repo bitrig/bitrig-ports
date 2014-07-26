@@ -3,11 +3,10 @@
 COMMENT=	encode, inspect, and decode Opus files
 
 DISTNAME=	opus-tools-0.1.9
+REVISION=	0
 CATEGORIES=	audio
 
 HOMEPAGE=	http://opus-codec.org/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

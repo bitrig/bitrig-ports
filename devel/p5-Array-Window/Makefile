@@ -4,10 +4,8 @@ COMMENT=	calculate windows/subsets/pages of arrays
 
 MODULES=	cpan
 DISTNAME=	Array-Window-1.02
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

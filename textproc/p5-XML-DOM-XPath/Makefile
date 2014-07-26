@@ -3,6 +3,7 @@
 COMMENT=		extension to add XPath support to XML::DOM
 
 DISTNAME=		XML-DOM-XPath-0.14
+REVISION=		0
 CATEGORIES=		textproc
 
 # perl

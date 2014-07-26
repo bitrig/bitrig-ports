@@ -3,12 +3,10 @@
 COMMENT=		small RSpec clone
 
 DISTNAME=		bacon-1.1.0
-REVISION =		6
+REVISION =		7
 CATEGORIES=		devel
 
 HOMEPAGE=		http://chneukirchen.org/repos/bacon/README
-
-MAINTAINER=		Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

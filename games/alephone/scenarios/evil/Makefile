@@ -4,6 +4,7 @@ PKG_ARCH =		*
 COMMENT =		everyone was wrong. monsters do exist.
 V =			0.0.20090509
 DISTNAME =		marathon-evil-${V}
+REVISION =		0
 HOMEPAGE =		http://bighouse.bungie.org/evil/
 
 DISTFILES =		MarathonEvil.zip:5

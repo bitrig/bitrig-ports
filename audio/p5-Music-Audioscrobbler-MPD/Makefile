@@ -2,7 +2,7 @@
 
 COMMENT=		module to submit songs to last.fm from MPD
 DISTNAME=		Music-Audioscrobbler-MPD-0.13
-REVISION=		2
+REVISION=		3
 CATEGORIES=		audio
 
 # perl

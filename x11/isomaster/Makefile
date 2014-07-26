@@ -3,11 +3,10 @@
 COMMENT=		gui cd image editor
 
 DISTNAME=		isomaster-1.3.9
+REVISION=		0
 
 CATEGORIES=		x11
 HOMEPAGE=		http://littlesvr.ca/isomaster/
-
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,14 +3,12 @@
 COMMENT =		library set for simulations, games and visualizations
 
 DISTNAME =		simgear-3.0.0
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=  SimGearCore               1.0 # 2.10
 SHARED_LIBS +=  SimGearScene              1.0 # 2.10
 
 CATEGORIES =		graphics
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 HOMEPAGE =		http://simgear.sourceforge.net/
 

@@ -3,10 +3,10 @@
 COMMENT=		interface between mailer MTA and content checkers
 
 DISTNAME=		amavisd-new-2.9.1
+REVISION=		0
 CATEGORIES=		mail security
 
 HOMEPAGE=		http://www.amavis.org/
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 # BSD / GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

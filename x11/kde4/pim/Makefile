@@ -2,6 +2,7 @@
 
 COMMENT =	KDE personal information management
 DISTNAME =	kdepim-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	akonadi_next			52.1
 SHARED_LIBS +=	akregatorinterfaces		52.1

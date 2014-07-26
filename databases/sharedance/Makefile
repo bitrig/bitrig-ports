@@ -3,12 +3,10 @@
 COMMENT=	high-performance server that centralizes key/data pairs
 
 DISTNAME=	sharedance-0.6
-REVISION =	1
+REVISION =	2
 CATEGORIES=	databases
 
 HOMEPAGE=	http://sharedance.pureftpd.org/project/sharedance
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

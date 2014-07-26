@@ -3,6 +3,7 @@
 COMMENT=	graphical interface to sqlite databases
 DISTNAME =	sqlb-3.2.0
 PKGNAME =	sqlitebrowser-3.2.0
+REVISION =	0
 MASTER_SITES =	https://github.com/sqlitebrowser/sqlitebrowser/archive/
 
 CATEGORIES=	databases x11

@@ -3,6 +3,7 @@
 COMMENT=		screen saver and locker for the X Window System
 
 DISTNAME=		xscreensaver-5.29
+REVISION=		0
 
 CATEGORIES=		x11
 

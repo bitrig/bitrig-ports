@@ -3,6 +3,7 @@
 COMMENT=	parallel job forking and management
 
 DISTNAME=	Parallel-Forker-1.232
+REVISION=	0
 CATEGORIES=	devel
 
 # Artistic

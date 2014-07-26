@@ -3,7 +3,7 @@
 COMMENT=	SVG vector drawing application
 
 DISTNAME=	inkscape-0.48.4
-REVISION =	1
+REVISION =	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=inkscape/}
 

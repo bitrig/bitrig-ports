@@ -4,7 +4,7 @@ COMMENT=	Python extension module for accessing cdb databases
 
 DISTNAME=	python-cdb-0.32
 PKGNAME=	${DISTNAME:S/python/py/}
-REVISION =	8
+REVISION =	9
 CATEGORIES=	databases
 
 HOMEPAGE=	http://pilcrow.madison.wi.us/

@@ -3,6 +3,7 @@
 COMMENT=	perl extension for parsing US street addresses
 MODULES=	cpan
 DISTNAME=	Geo-StreetAddress-US-1.03
+REVISION=	0
 CATEGORIES=	geo
 
 # Perl

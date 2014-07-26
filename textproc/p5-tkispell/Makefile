@@ -3,7 +3,7 @@
 COMMENT=	Perl/Tk graphical user interface to GNU ispell
 
 DISTNAME=	tkispell-0.18
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc
 
 CPAN_AUTHOR=	RKIES

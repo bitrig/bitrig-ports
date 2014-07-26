@@ -7,8 +7,8 @@ VERSION=	2.4.2
 DISTNAME=	libtool-${VERSION}
 PKGNAME-main=	${DISTNAME}
 PKGNAME-ltdl=	libltdl-${VERSION}
-REVISION-main=	0
-REVISION-ltdl=	0
+REVISION-main=	1
+REVISION-ltdl=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=libtool/}
 MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/libltdl/config/
@@ -16,8 +16,6 @@ MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/libltdl/config/
 SHARED_LIBS=	ltdl	5.0
 
 HOMEPAGE=	https://www.gnu.org/software/libtool/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,6 +6,7 @@ MODULES=	cpan
 USE_GROFF =	Yes
 
 DISTNAME=	XML-Atom-0.37
+REVISION=	0
 CATEGORIES=	www textproc
 
 # perl

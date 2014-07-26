@@ -11,10 +11,8 @@ HOMEPAGE =	http://www.cmake.org/
 CATEGORIES =	devel
 COMMENT =	portable build system
 DISTNAME =	cmake-2.8.12.2
-REVISION =	4
+REVISION =	5
 MASTER_SITES =	${HOMEPAGE}files/v2.8/
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

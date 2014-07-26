@@ -3,7 +3,7 @@
 COMMENT=		Media Transfer Protocol (MTP) implementation
 
 DISTNAME=		libmtp-1.1.6
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 SHARED_LIBS +=		mtp	6.0	# 10.0

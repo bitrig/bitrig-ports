@@ -3,6 +3,7 @@
 COMMENT =		simple WSDL parser
 
 DISTNAME =		wasabi-3.2.3
+REVISION =		0
 
 HOMEPAGE =		https://github.com/savonrb/wasabi
 

@@ -3,7 +3,7 @@
 COMMENT=	GUI toolkit for X11
 
 DISTNAME=	xforms-1.0
-REVISION=	3
+REVISION=	4
 SHARED_LIBS=	flimage	1.0 \
 		forms	1.0 \
 		formsGL	1.0

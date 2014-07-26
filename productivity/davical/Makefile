@@ -3,12 +3,10 @@
 COMMENT =	CalDAV/CardDav calendar/contacts server
 
 DISTNAME =	davical-1.1.1
-REVISION =	4
+REVISION =	5
 CATEGORIES =	productivity net
 
 HOMEPAGE =	http://www.davical.org/
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

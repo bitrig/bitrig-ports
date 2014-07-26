@@ -6,11 +6,10 @@ COMMENT =		libvirt virtualization API python bindings
 
 MODPY_EGG_VERSION =	1.2.5
 DISTNAME =		libvirt-python-${MODPY_EGG_VERSION}
+REVISION =		0
 CATEGORIES =		sysutils
 
 HOMEPAGE =		http://libvirt.org/python.html
-
-MAINTAINER =		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # LGPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

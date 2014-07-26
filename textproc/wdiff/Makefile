@@ -3,7 +3,7 @@
 COMMENT=	word differences between text files
 
 DISTNAME=	wdiff-1.1.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 HOMEPAGE=	https://www.gnu.org/software/wdiff
 MASTER_SITES=	${MASTER_SITE_GNU:=wdiff/}

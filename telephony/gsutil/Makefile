@@ -3,12 +3,11 @@
 COMMENT =		dump/restore Grandstream device configurations
 
 DISTNAME =		gsutil-3.0
+REVISION =		0
 
 CATEGORIES =		telephony
 
 HOMEPAGE =		http://www.pkts.ca/gsutil.shtml
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

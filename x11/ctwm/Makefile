@@ -3,7 +3,7 @@
 COMMENT=	twm, plus support for multiple virtual screens, etc
 
 DISTNAME=	ctwm-3.6
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	x11
 

@@ -5,12 +5,10 @@ COMMENT =		posix regex backend for regex-base
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		regex-posix-0.95.2
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 HOMEPAGE =		http://sourceforge.net/projects/lazy-regex
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,7 @@
 COMMENT=	tool startup utility for X11
 
 DISTNAME=	xtoolwait-1.3
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=utilities/} \

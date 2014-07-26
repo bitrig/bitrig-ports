@@ -3,7 +3,7 @@
 COMMENT = 	web based groupware server
 
 VERSION =	5.5rc2
-REVISION=	1
+REVISION=	2
 DISTNAME =	opengroupware-${VERSION}
 
 SHARED_LIBS +=  LSAddress                 0.0 # 5.5
@@ -34,7 +34,6 @@ SHARED_LIBS +=  ZSTasks                   0.0 # 5.5
 CATEGORIES =	www
 HOMEPAGE =	http://sourceforge.net/projects/opengroupware/
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=opengroupware/}
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # LGPLv2/GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

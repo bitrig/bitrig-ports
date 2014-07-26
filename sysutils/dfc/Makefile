@@ -3,6 +3,7 @@
 COMMENT =	display file system space usage using graph and colors
 
 DISTNAME =	dfc-3.0.4
+REVISION =	0
 CATEGORIES =	sysutils
 
 MASTER_SITES =	http://projects.gw-computing.net/attachments/download/79/

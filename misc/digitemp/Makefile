@@ -4,7 +4,7 @@ COMMENT=	program for reading values from 1-wire devices
 
 DISTNAME=	digitemp-3.5.0
 CATEGORIES=	misc
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.digitemp.com/
 

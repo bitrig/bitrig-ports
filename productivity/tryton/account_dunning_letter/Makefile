@@ -3,6 +3,7 @@
 MODPY_EGG_VERSION =	3.2.1
 
 TRYTOND_MODULE =	account_dunning_letter
+REVISION =		0
 
 RUN_DEPENDS =		productivity/tryton/account_dunning \
 			productivity/tryton/company \

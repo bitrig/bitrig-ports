@@ -3,9 +3,8 @@
 COMMENT =	expose the flag which marks global destruction
 
 DISTNAME =	Devel-GlobalDestruction-0.12
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER = Andrew Fresh <afresh1@openbsd.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

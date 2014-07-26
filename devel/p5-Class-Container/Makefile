@@ -4,10 +4,8 @@ COMMENT=	validate method/function parameters
 
 MODULES=	cpan
 DISTNAME=	Class-Container-0.12
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Artistic License
 PERMIT_PACKAGE_CDROM=	Yes

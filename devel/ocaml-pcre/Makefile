@@ -4,7 +4,7 @@ COMMENT =	OCaml Perl-compatible regexp library
 CATEGORIES =	devel textproc
 
 V =		7.0.2
-REVISION=	0
+REVISION=	1
 NAME =		ocaml-pcre
 DISTNAME =	pcre-ocaml-$V
 PKGNAME =	${NAME}-$V

@@ -3,6 +3,7 @@
 COMMENT=	chat and instant messaging module for Twisted
 
 VERSION=	11.1.0
+REVISION=	0
 DISTNAME=	TwistedWords-${VERSION}
 PKGNAME=	py-twisted-words-${VERSION}
 

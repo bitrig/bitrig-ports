@@ -3,7 +3,7 @@
 COMMENT=	good-looking ssh-agent pass-phrase dialog
 
 DISTNAME =	ssh-askpass-fullscreen-0.4
-REVISION=	5
+REVISION=	6
 CATEGORIES=	security
 
 MASTER_SITES =	http://www.cgabriel.org/download/ssh-askpass-fullscreen/

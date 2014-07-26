@@ -7,6 +7,7 @@ COMMENT=	Network Time Protocol reference implementation
 # convert it to 'pl' for local use.
 
 VERSION=	4.2.7p418
+REVISION=	0
 DISTNAME=	ntp-dev-${VERSION}
 PKGNAME=	ntp-${VERSION:S/p/pl/}
 CATEGORIES=	net

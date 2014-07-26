@@ -4,6 +4,7 @@ COMMENT=	IJG's JPEG compression utilities#'
 
 V=		9a
 DISTNAME=	jpeg-$V
+REVISION=	0
 SHARED_LIBS=	jpeg	67.0	# 10.0
 CATEGORIES=	graphics
 DPB_PROPERTIES=	parallel

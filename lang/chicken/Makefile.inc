@@ -5,8 +5,6 @@ COMMENT=	practical and portable Scheme system
 V=		4.9.0.1
 DISTNAME=	chicken-${V}
 
-MAINTAINER=	Timo Myyra <timo.myyra@wickedbsd.net>
-
 CATEGORIES=	lang
 
 HOMEPAGE=	http://www.call-cc.org/

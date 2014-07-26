@@ -3,10 +3,8 @@
 COMMENT=		perl module for reading procmail logs
 
 DISTNAME=		Log-Procmail-0.11
-REVISION=		1
+REVISION=		2
 CATEGORIES=		mail textproc
-
-MAINTAINER=		Anil Madhavapeddy <avsm@openbsd.org>
 
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM=	Yes

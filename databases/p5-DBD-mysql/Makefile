@@ -5,9 +5,8 @@ SHARED_ONLY=		Yes
 COMMENT=		MySQL drivers for the Perl DBI
 
 DISTNAME=		DBD-mysql-4.027
+REVISION=		0
 CATEGORIES=		databases
-
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 MODULES=		cpan
 CPAN_AUTHOR=		CAPTTOFU

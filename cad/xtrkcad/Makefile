@@ -3,13 +3,12 @@
 COMMENT=	CAD program for designing model railroad layouts
 
 VERSION=	4.2.0-beta1
+REVISION=	0
 DISTNAME=	xtrkcad-source-${VERSION}
 PKGNAME=	xtrkcad-${VERSION:S/-beta1/b1/}
 CATEGORIES=	cad
 
 HOMEPAGE=	http://www.xtrkcad.org/
-
-MAINTAINER=	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

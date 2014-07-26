@@ -3,7 +3,7 @@
 COMMENT=		write Perl in Latin
 
 DISTNAME=		Lingua-Romana-Perligata-0.50
-REVISION=		1
+REVISION=		2
 CATEGORIES=		misc
 
 MODULES=		cpan

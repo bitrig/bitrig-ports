@@ -3,10 +3,8 @@
 COMMENT=	dynamically change some settings of an xterm
 
 DISTNAME=	xtermset-0.5.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=   Yes

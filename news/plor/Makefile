@@ -3,6 +3,7 @@
 COMMENT=	alpha-release readers for reading SOUP and QWK packets
 
 DISTNAME=	plor-0.3.2
+REVISION=	0
 CATEGORIES=	news
 
 # License: GPL

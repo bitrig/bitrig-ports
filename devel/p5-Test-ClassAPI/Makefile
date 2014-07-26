@@ -5,7 +5,7 @@ COMMENT=	basic first-pass API testing for large class trees
 MODULES=	cpan
 
 DISTNAME=	Test-ClassAPI-1.06
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

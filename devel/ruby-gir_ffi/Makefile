@@ -3,7 +3,7 @@
 COMMENT=	Ruby-FFI-based binding to the GObjectIntrospection API
 
 DISTNAME=	gir_ffi-0.5.2
-REVISION =	2
+REVISION =	3
 
 CATEGORIES=	devel
 

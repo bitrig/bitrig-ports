@@ -3,10 +3,8 @@
 COMMENT =		MDNS/DNS-SD daemon
 
 DISTNAME =		openmdns-0.5
-REVISION =		4
+REVISION =		5
 CATEGORIES =		net
-
-MAINTAINER =		Gonzalo L. R. <gonzalo@openbsd.org>
 
 HOMEPAGE =		http://www.haesbaert.org/openmdns/
 

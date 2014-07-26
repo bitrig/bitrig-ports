@@ -3,10 +3,8 @@
 COMMENT=	simple mail counter
 
 DISTNAME=	cmail-3.1
-REVISION =	0
+REVISION =	1
 CATEGORIES=	mail
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

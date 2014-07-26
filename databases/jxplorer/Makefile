@@ -5,7 +5,7 @@ COMMENT=	standards compliant LDAP browser
 V=		3.2
 DISTNAME=	JXv${V}deploy
 PKGNAME=	jxplorer-${V}
-REVISION=	9
+REVISION=	10
 EXTRACT_SUFX=	.zip
 CATEGORIES=	databases net
 

@@ -8,11 +8,9 @@ PKGNAME =		alephone-1.1
 
 EXTRACT_SUFX =		.tar.bz2
 CATEGORIES =		games x11
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =		http://source.bungie.org
-
-MAINTAINER =		Peter Hessler <phessler@openbsd.org>
 
 # GPLv2 or later
 PERMIT_PACKAGE_CDROM =	Yes

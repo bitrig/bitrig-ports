@@ -4,7 +4,7 @@ COMMENT=		virtual base class for WWW searches
 
 DISTNAME=		WWW-Search-2.508
 CATEGORIES=		www
-REVISION=		0
+REVISION=		1
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

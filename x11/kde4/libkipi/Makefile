@@ -5,6 +5,7 @@ COMMENT-icons =	icons for libkipi
 CATEGORIES =	graphics devel
 DISTNAME =	libkipi-${MODKDE4_VERSION}
 PKGNAME-main =	${DISTNAME}
+REVISION =	0
 PKGNAME-icons =	kde4-libkipi-icons-${MODKDE4_VERSION}
 PKGSPEC-main =	libkipi->=4,<5
 

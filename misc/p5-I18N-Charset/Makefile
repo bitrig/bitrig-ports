@@ -4,10 +4,8 @@ COMMENT=	module to map charset names registered with IANA
 
 MODULES=	cpan
 DISTNAME=	I18N-Charset-1.394
-REVISION=	0
+REVISION=	1
 CATEGORIES=	misc
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

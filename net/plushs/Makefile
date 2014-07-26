@@ -3,12 +3,11 @@
 COMMENT=		simple hostname scanner
 
 DISTNAME=		plushs-1.2
+REVISION=		0
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=plushs/}
 
 HOMEPAGE=		http://plushs.sourceforge.net
-
-MAINTAINER=		Jose Jimenez Garcia <pluf@wanadoo.es>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c

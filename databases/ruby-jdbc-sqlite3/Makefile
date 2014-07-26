@@ -3,6 +3,7 @@
 COMMENT =	access an SQLite3 database from JRuby
 
 DISTNAME =	jdbc-sqlite3-3.7.2.1
+REVISION =	0
 CATEGORIES =	databases
 
 # MIT

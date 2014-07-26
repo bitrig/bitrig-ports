@@ -5,13 +5,11 @@ DISTNAME=	gtkspell-2.0.16
 
 SHARED_LIBS=	gtkspell 1.0 # .0.0
 
-REVISION=	7
+REVISION=	8
 
 CATEGORIES=	textproc x11
 
 HOMEPAGE=	http://gtkspell.sourceforge.net/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

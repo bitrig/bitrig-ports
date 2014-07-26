@@ -8,12 +8,12 @@ COMMENT=		compiler and runtime system for ANSI Common Lisp
 V =			1.1.14
 DISTNAME=		sbcl-${V}-source
 PKGNAME=		sbcl-${V}
+REVISION=		0
 WRKDIST=		${WRKDIR}/sbcl-${V}
 EXTRACT_SUFX=		.tar.bz2
 
 CATEGORIES=		lang
 HOMEPAGE=		http://www.sbcl.org/
-MAINTAINER =		Joshua Elsasser <joshe@openbsd.org>
 
 # Public domain and BSD
 PERMIT_PACKAGE_CDROM=	Yes

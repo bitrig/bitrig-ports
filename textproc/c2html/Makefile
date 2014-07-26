@@ -3,6 +3,7 @@
 COMMENT=		C-language sources to HTML converter
 
 DISTNAME=		c2html-0.9.5
+REVISION=		0
 CATEGORIES=		textproc www
 
 # Old versions seem to stay there...

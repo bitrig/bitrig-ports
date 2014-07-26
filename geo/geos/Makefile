@@ -3,7 +3,7 @@
 BROKEN-hppa =	undefined reference to `std::auto_ptr<geos::geom::Envelope>::~auto_ptr()'
 COMMENT=	2d geometry and topology engine
 DISTNAME=	geos-3.3.8
-REVISION=	0
+REVISION=	1
 CATEGORIES=	geo
 SHARED_LIBS=	geos	7.1 \
 		geos_c	4.0

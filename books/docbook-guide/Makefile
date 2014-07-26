@@ -5,13 +5,13 @@ COMMENT=	the definite guide to DocBook
 V=		2.0.8
 DISTNAME=	tdg-en-html-${V}
 PKGNAME=	docbook-guide-${V}
+REVISION=	0
 EXTRACT_SUFX=	.zip
 CATEGORIES=	books
 
 MASTER_SITES=	http://docbook.org/tdg/en/ \
 		http://spacehopper.org/mirrors/
 HOMEPAGE=	http://docbook.org/tdg/en/
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 
 # GNU Free Documentation License
 PERMIT_PACKAGE_CDROM=	Yes

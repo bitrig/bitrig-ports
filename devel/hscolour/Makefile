@@ -5,6 +5,7 @@ COMMENT =	Haskell code colourizer
 DISTNAME =	hscolour-1.20.3
 # Rip off the hs- prefix, even if it contains a Haskell library.
 PKGNAME =	${DISTNAME}
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://code.haskell.org/~malcolm/hscolour/

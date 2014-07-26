@@ -8,11 +8,9 @@ EXTRACT_SUFX =	.tar.xz
 
 CATEGORIES =	games x11
 
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://manaplus.org/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

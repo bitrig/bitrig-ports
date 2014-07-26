@@ -3,10 +3,9 @@
 COMMENT=	use shorter versions of class names
 
 DISTNAME =	aliased-0.31
+REVISION =	0
 
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

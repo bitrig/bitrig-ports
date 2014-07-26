@@ -4,6 +4,7 @@ COMMENT=	compress CSS info for transmission
 
 MODULES=	cpan
 DISTNAME=	CSS-Squish-0.10
+REVISION=	0
 CATEGORIES=	www
 
 # Perl

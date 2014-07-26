@@ -3,9 +3,8 @@
 COMMENT =		general purpose, non-cryptographic hashing function
 
 DISTNAME =		murmur-hash-0.1.0.6
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -2,12 +2,11 @@
 
 COMMENT =	duke nukem 3d shareware game data
 PKGNAME =	duke3ddata-1.0
+REVISION =	0
 CATEGORIES =	games
 EXTRACT_SUFX =	.zip
 
 HOMEPAGE =	http://www.3drealms.com/
-
-MAINTAINER =	Ryan Freeman <rfreeman@openbsd.org>
 
 # shareware
 PERMIT_PACKAGE_CDROM =  "Data cannot be put on CDROM"

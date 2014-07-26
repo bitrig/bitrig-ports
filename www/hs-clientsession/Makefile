@@ -3,11 +3,8 @@
 COMMENT =		securely store session data in a client-side cookie
 
 DISTNAME =		clientsession-0.8.0.1
-REVISION =		2
+REVISION =		3
 CATEGORIES =		security www
-
-MAINTAINER =		Jim Razmus II <jim@openbsd.org>, \
-			Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

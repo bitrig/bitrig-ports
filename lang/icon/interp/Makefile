@@ -4,6 +4,7 @@ COMMENT-main =		programming language with generators, X11 and more
 COMMENT-main-no_x11 =	programming language with generators
 
 VERSION =	9.5.1
+REVISION =	0
 DISTNAME =	icon-v951src
 CATEGORIES =	lang
 MASTER_SITES = 	http://www.cs.arizona.edu/icon/ftp/packages/unix/
@@ -17,8 +18,6 @@ PKGNAME-main =		icon-interp-${VERSION}
 PERMIT_PACKAGE_CDROM =	Yes
 
 HOMEPAGE =	http://www.cs.arizona.edu/icon/
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 FLAVORS =	no_x11
 FLAVOR ?=	

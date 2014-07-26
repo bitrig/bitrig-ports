@@ -1,7 +1,7 @@
 # $OpenBSD: Makefile,v 1.13 2013/03/11 11:10:51 espie Exp $
 
 DISTNAME=	cadubi-1.3
-REVISION =	0
+REVISION =	1
 CATEGORIES=	graphics editors
 
 # perl artistic

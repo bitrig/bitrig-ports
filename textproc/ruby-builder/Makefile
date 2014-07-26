@@ -3,7 +3,7 @@
 COMMENT=	Ruby library to create XML markup and data structures
 
 DISTNAME=	builder-3.0.0
-REVISION =	1
+REVISION =	2
 CATEGORIES=	textproc
 
 # MIT

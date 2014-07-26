@@ -5,7 +5,7 @@ COMMENT=		curses based frontend for mpd
 DISTNAME=		pms-0.42
 EXTRACT_SUFX = 		.tar.bz2
 CATEGORIES=		audio
-REVISION =		3
+REVISION =		4
 
 HOMEPAGE=		http://pms.sourceforge.net/
 

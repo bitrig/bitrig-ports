@@ -6,7 +6,7 @@ COMMENT=	module to calculate Nilsimsa digests
 
 MODULES=	cpan
 DISTNAME=	Digest-Nilsimsa-0.06
-REVISION=	4
+REVISION=	5
 CATEGORIES=	security
 
 # Artistic licence

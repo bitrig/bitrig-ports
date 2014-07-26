@@ -3,9 +3,8 @@
 COMMENT =		mmap API for Haskell
 
 DISTNAME =		mmap-0.5.8
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

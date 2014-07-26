@@ -3,9 +3,8 @@
 COMMENT =		persistent store for values of arbitrary types
 
 DISTNAME =		vault-0.2.0.4
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

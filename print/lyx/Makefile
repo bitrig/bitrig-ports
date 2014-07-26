@@ -3,7 +3,7 @@
 COMMENT=	graphical frontend for LaTeX (nearly WYSIWYG)
 
 DISTNAME=	lyx-2.0.4
-REVISION=	2
+REVISION=	3
 CATEGORIES=	print editors
 
 HOMEPAGE=	http://www.lyx.org/

@@ -2,7 +2,7 @@
 
 COMMENT=	Apache MySQL authentication module
 
-REVISION=	11
+REVISION=	12
 VERSION=	3.2
 DISTNAME=	mod_auth_mysql-${VERSION}
 CATEGORIES=	www

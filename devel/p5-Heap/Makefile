@@ -4,7 +4,7 @@ COMMENT=	heap data structure in perl
 
 MODULES=	cpan
 DISTNAME=	Heap-0.80
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

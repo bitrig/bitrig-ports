@@ -4,14 +4,12 @@ COMMENT =	portable C compiler
 
 PCCVER =	1.0.0
 DISTNAME =	pcc-${PCCVER}
-REVISION =	4
+REVISION =	5
 EXTRACT_SUFX =	.tgz
 
 CATEGORIES =	lang
 
 HOMEPAGE =	http://pcc.ludd.ltu.se/
-
-MAINTAINER =	Eric Radman <ericshane@eradman.com>
 
 # Other architectures not fully supported yet
 ONLY_FOR_ARCHS = i386 amd64

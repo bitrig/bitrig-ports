@@ -4,8 +4,8 @@ COMMENT-main =		little brother's database, email address query tools
 COMMENT-ldap =		LDAP support for lbdb
 
 VERSION =		0.36
-REVISION-main =		4
-REVISION-ldap =		7
+REVISION-main =		5
+REVISION-ldap =		8
 
 DISTNAME =		lbdb_${VERSION}
 PKGNAME-main =		lbdb-${VERSION}

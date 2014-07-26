@@ -4,7 +4,7 @@ COMMENT=	archive and compress your old email
 
 VERSION=	0.7.2
 DISTNAME=	archivemail-${VERSION}
-REVISION =	4
+REVISION =	5
 CATEGORIES=	mail
 
 # GPL

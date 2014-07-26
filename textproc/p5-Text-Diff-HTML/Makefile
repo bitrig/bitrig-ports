@@ -4,6 +4,7 @@ COMMENT=		XHTML format for Text::Diff::Unified
 
 MODULES=		cpan
 DISTNAME=		Text-Diff-HTML-0.07
+REVISION=		0
 CATEGORIES=		textproc www
 
 # perl

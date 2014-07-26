@@ -4,6 +4,7 @@ COMMENT =	build tool for making native Node.js modules
 
 NPM_VERSION =	0.0.4
 NPM_NAME =	mnm
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	https://github.com/nearinfinity/node-mnm

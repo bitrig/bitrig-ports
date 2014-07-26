@@ -4,14 +4,13 @@ COMMENT=	remote IMAP filtering utility
 
 V=		2.5.6
 DISTNAME=	imapfilter-${V}
+REVISION=	0
 DISTFILES=	v${V}.tar.gz
 CATEGORIES=	mail
 
 HOMEPAGE=	https://github.com/lefcha/imapfilter
 
 MASTER_SITES=	https://github.com/lefcha/imapfilter/archive/
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes

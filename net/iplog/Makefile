@@ -3,12 +3,11 @@
 COMMENT=	TCP/IP traffic logging tool
 
 DISTNAME=	iplog-2.2.3
+REVISION=	0
 CATEGORIES=	net security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ojnk/}
 
 HOMEPAGE=	http://ojnk.sourceforge.net
-
-MAINTAINER=	Brian Caswell <bmc@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c pcap pthread

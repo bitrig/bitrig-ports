@@ -3,7 +3,7 @@
 COMMENT=		internationalized string handling
 
 DISTNAME=		libidn-1.28
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  idn                  17.0     # 17.10
 

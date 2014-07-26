@@ -4,10 +4,8 @@ COMMENT=		spider to recover and store images from web pages
 
 MODULES=		cpan
 DISTNAME=		HTTP-GetImages-0.343
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # Artistic + GPL
 PERMIT_PACKAGE_CDROM=	Yes

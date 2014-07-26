@@ -8,13 +8,11 @@ COMMENT=	utilities to assist desktop integration tasks
 
 DISTNAME=	xdg-utils-1.1.0-rc1
 PKGNAME=	xdg-utils-1.1.0rc1
-REVISION=	4
+REVISION=	5
 
 CATEGORIES=	devel
 
 HOMEPAGE=	http://portland.freedesktop.org/wiki/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

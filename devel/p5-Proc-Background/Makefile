@@ -4,7 +4,7 @@ COMMENT=	peek at lexical variables
 
 MODULES=	cpan
 DISTNAME=	Proc-Background-1.10
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

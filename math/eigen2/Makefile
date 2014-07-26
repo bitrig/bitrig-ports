@@ -11,7 +11,7 @@ VERSION =	2.0.14
 DISTNAME =	${VERSION}
 PKGNAME =	eigen2-${VERSION}
 WRKDIST =	${WRKDIR}/eigen-eigen-f30db88dec8b
-REVISION =	1
+REVISION =	2
 
 # relaxed GPL (LGPL for template libs)
 PERMIT_PACKAGE_CDROM =	 Yes

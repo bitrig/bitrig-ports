@@ -3,7 +3,7 @@
 COMMENT =		numeric 1st and 2nd order differentiation
 
 DISTNAME =		Math-Derivative-0.01
-REVISION =		0
+REVISION =		1
 CATEGORIES =		math
 
 # perl

@@ -10,6 +10,7 @@
 COMMENT=	portable OTR messaging library and toolkit
 
 DISTNAME=	libotr-4.0.0
+REVISION=	0
 CATEGORIES=	security
 
 SHARED_LIBS +=  otr                  4.0      # 5.0
@@ -17,8 +18,6 @@ SHARED_LIBS +=  otr                  4.0      # 5.0
 HOMEPAGE=	http://www.cypherpunks.ca/otr/
 
 MASTER_SITES=	${HOMEPAGE}
-
-MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

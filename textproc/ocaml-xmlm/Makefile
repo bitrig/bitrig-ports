@@ -6,10 +6,10 @@ CATEGORIES =	textproc
 V =		1.1.1
 DISTNAME =	xmlm-${V}
 PKGNAME =	ocaml-${DISTNAME}
+REVISION =	0
 EXTRACT_SUFX =	.tbz
 MASTER_SITES =	http://erratique.ch/software/xmlm/releases/
 
-MAINTAINER =	Anil Madhavapeddy <avsm@openbsd.org>
 HOMEPAGE =	http://erratique.ch/software/xmlm
 
 # 3-clause BSD

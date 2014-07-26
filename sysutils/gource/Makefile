@@ -3,11 +3,9 @@
 COMMENT =	software version control visualization tool
 
 DISTNAME =	gource-0.39
-REVISION =	1
+REVISION =	2
 CATEGORIES =	sysutils graphics
 HOMEPAGE =	https://gource.googlecode.com/
-
-MAINTAINER =	Gonzalo L. R. <gonzalo@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

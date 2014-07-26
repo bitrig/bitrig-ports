@@ -4,11 +4,9 @@ COMMENT=	Apache::Session storage using memcached
 
 MODULES=	cpan
 DISTNAME=	Apache-Session-Memcached-0.03
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Jim Razmus II <jim@bonetruck.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

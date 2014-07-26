@@ -5,10 +5,9 @@ SHARED_ONLY =	Yes
 COMMENT =	Tcl package that provides SNMP tools
 
 DISTNAME =	tcl-snmptools-1.0
-REVISION =	0
+REVISION =	1
 SHARED_LIBS =	snmptools10 1.0
 CATEGORIES =	net
-MAINTAINER =	Matthieu Herrb <matthieu@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM = 	Yes

@@ -4,7 +4,7 @@ COMMENT=	log to files that archive/rotate themselves
 
 MODULES=	cpan
 DISTNAME=	Log-Dispatch-FileRotate-1.19
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # Perl

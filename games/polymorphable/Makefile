@@ -2,12 +2,10 @@
 
 COMMENT =	action RPG mod based upon the FLARE engine
 DISTNAME =	polymorphable-20130410
-REVISION =	0
+REVISION =	1
 CATEGORIES =	games x11
 
 HOMEPAGE =	https://github.com/makrohn/polymorphable
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3 & CC-BY-SA-3.0
 PERMIT_PACKAGE_CDROM =	Yes

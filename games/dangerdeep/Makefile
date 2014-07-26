@@ -6,7 +6,7 @@ PKGNAME =		dangerdeep-0.3.99.3327
 
 CATEGORIES =		games
 
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://dangerdeep.sourceforge.net/
 

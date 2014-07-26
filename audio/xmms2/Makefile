@@ -6,7 +6,7 @@ BROKEN-sparc64 =	waf build goes into an infinite loop
 V =			0.8
 DISTNAME =		xmms2-${V}DrO_o
 PKGNAME =		xmms2-${V}
-REVISION =		3
+REVISION =		4
 
 SHARED_LIBS +=		xmmsclient++		2.0 # 4.0.0
 SHARED_LIBS +=		xmmsclient++-glib	1.0 # 1.0.0
@@ -16,8 +16,6 @@ SHARED_LIBS +=		xmmsclient		2.0 # 6.0.0
 CATEGORIES =		audio
 
 HOMEPAGE =		http://wiki.xmms2.xmms.se/
-
-MAINTAINER=		Amaury Gauthier <amaury.gauthier@etu.unilim.fr>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes

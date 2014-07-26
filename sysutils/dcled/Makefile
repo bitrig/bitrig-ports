@@ -3,14 +3,12 @@
 COMMENT =	userland driver for Dream Link USB LED Message Board
 
 DISTNAME =	dcled-1.9
-REVISION =	0
+REVISION =	1
 EXTRACT_SUFX =	.tgz
 
 CATEGORIES =	sysutils
 
 HOMEPAGE =	http://www.last-outpost.com/~malakai/dcled/
-
-MAINTAINER =	Jonathan Armani <armani@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

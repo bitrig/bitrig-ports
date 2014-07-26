@@ -3,7 +3,7 @@
 COMMENT=	ruby FastCGI library
 
 DISTNAME=	fcgi-0.9.1
-REVISION =	2
+REVISION =	3
 CATEGORIES=	www
 
 # ruby license

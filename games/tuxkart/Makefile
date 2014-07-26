@@ -3,13 +3,11 @@
 COMMENT =	tuxkart is a simple Go-Kart racing game.
 
 DISTNAME =	tuxkart-0.4.0
-REVISION =	3
+REVISION =	4
 CATEGORIES =	games
 
 HOMEPAGE =	http://tuxkart.sourceforge.net/
 MASTER_SITES =	${HOMEPAGE}/dist/
-
-MAINTAINER =	Gallon Sylvestre <ccna.syl@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

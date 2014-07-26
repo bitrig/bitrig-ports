@@ -4,7 +4,7 @@ COMMENT=		library for tracking application startup
 
 DISTNAME=		startup-notification-0.12
 CATEGORIES=		devel x11
-REVISION=		5
+REVISION=		6
 
 SHARED_LIBS +=  startup-notification-1 2.0      # .0.0
 

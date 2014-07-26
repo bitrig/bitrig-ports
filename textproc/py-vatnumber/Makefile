@@ -5,12 +5,11 @@ COMMENT =		Python module to validate VAT numbers
 MODPY_EGG_VERSION =	1.1
 DISTNAME =		vatnumber-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
+REVISION =		0
 
 CATEGORIES =		textproc
 
 HOMEPAGE =		https://vatnumber.googlecode.com/
-
-MAINTAINER =		Christian Rueger <cr+openbsd@rueger-net.de>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =		Yes

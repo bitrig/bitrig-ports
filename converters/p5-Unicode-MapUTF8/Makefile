@@ -3,7 +3,7 @@
 COMMENT=	conversions to and from arbitrary character sets and UTF8
 
 DISTNAME=	Unicode-MapUTF8-1.11
-REVISION=	2
+REVISION=	3
 CATEGORIES=	converters
 MODULES=	cpan
 

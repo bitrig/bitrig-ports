@@ -3,6 +3,7 @@
 COMMENT=	translate Wiki formatted text into other formats
 
 DISTNAME=	Text-WikiFormat-0.79
+REVISION=	0
 CATEGORIES=	textproc
 MODULES=	cpan
 

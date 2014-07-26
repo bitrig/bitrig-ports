@@ -4,7 +4,7 @@ COMMENT=	perl parser that builds an HTML tree
 
 MODULES=	cpan
 DISTNAME=	HTML-Tree-3.23
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 USE_GROFF =	Yes
 

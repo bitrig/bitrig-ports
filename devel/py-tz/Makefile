@@ -8,10 +8,9 @@ PKGNAME =		${DISTNAME:S/^py/py-/}
 CATEGORIES =		devel
 EPOCH =			0
 
-REVISION = 0
+REVISION = 1
 
 HOMEPAGE =		http://pytz.sourceforge.net/
-MAINTAINER =		frantisek holop <minusf@obiit.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

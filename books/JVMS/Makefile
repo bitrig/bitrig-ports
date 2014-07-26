@@ -3,6 +3,7 @@
 COMMENT =	Sun's official Java VM Specification, 2nd Ed.
 
 VERSION =	2.0
+REVISION =	0
 PKGNAME =	JVMS-${VERSION}
 DISTNAME =	vmspec
 DISTFILES =	vmspec.2nded.html.tar.gz

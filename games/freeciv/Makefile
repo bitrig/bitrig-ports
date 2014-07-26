@@ -12,8 +12,9 @@ PKGNAME-share=	freeciv-share-${VERSION}
 CATEGORIES=	games
 HOMEPAGE=	http://www.freeciv.org/
 
-REVISION-main=	1
-REVISION-client=0
+REVISION-main=	2
+REVISION-client=1
+REVISION-share=	0
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

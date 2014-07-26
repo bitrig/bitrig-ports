@@ -5,12 +5,11 @@ COMMENT=		easy to use text editor
 VERSION=		1.5.2
 DISTNAME=		ee-${VERSION}.src
 PKGNAME=		ee-${VERSION}
-REVISION=		0
+REVISION=		1
 EPOCH=			0
 CATEGORIES=		editors
 
 HOMEPAGE=		http://www.users.uswest.net/~hmahon/
-MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes

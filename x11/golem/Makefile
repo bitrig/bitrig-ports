@@ -3,7 +3,7 @@
 COMMENT=		fast and light window manager with plug-ins
 
 DISTNAME=		golem-0.0.5
-REVISION=		1
+REVISION=		2
 CATEGORIES=     	x11
 
 HOMEPAGE=		http://golem.sourceforge.net/

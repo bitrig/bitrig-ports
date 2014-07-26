@@ -3,7 +3,7 @@
 COMMENT=	provides Latitude Longitude conversions
 MODULES=	cpan
 DISTNAME=	Geo-Coordinates-UTM-0.09
-REVISION=	0
+REVISION=	1
 CATEGORIES=	geo
 
 # Perl

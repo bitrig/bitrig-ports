@@ -3,10 +3,8 @@
 COMMENT=		Haskell interface to MPD
 
 DISTNAME=		libmpd-0.8.0.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=		audio
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 HOMEPAGE=		https://github.com/joachifm/libmpd-haskell
 

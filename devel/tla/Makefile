@@ -3,12 +3,10 @@
 COMMENT=	original Arch source control management CLI written in C
 
 DISTNAME=	tla-1.2
-REVISION =	0
+REVISION =	1
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.gnuarch.org/
-
-MAINTAINER=	Laurent Cheylus <foxy@free.fr>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

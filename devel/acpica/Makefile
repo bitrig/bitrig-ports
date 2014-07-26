@@ -5,6 +5,7 @@ ONLY_FOR_ARCHS =	amd64 i386
 COMMENT =		reference implementation of ACPI tools
 DISTNAME =		acpica-unix2-20140424
 PKGNAME =		${DISTNAME:S/-unix2//}
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		https://acpica.org/

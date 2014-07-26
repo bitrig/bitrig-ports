@@ -3,7 +3,7 @@
 COMMENT=	ac3 audio (as used on DVDs) decoding tools
 
 DISTNAME=	ac3dec-0.6.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 
 HOMEPAGE=	http://liba52.sourceforge.net/

@@ -4,11 +4,9 @@ COMMENT=		create random people
 
 MODULES=		cpan
 DISTNAME=		Data-RandomPerson-0.4
-REVISION=		0
+REVISION=		1
 CATEGORIES=		databases
 USE_GROFF =		Yes
-
-MAINTAINER=		Jim Razmus <jim@bonetruck.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

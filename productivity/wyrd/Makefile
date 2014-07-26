@@ -3,12 +3,10 @@
 COMMENT=		curses calendar front-end to remind
 
 DISTNAME=		wyrd-1.4.5
-REVISION=		0
+REVISION=		1
 CATEGORIES=		productivity
 
 HOMEPAGE=		http://pessimization.com/software/wyrd/
-
-MAINTAINER=		Okan Demirmen <okan@openbsd.org>
 
 MASTER_SITES=		${HOMEPAGE}
 

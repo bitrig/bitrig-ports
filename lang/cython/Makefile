@@ -5,6 +5,7 @@ COMMENT =		C-Extensions for Python
 MODPY_EGG_VERSION = 	0.19.2
 DISTNAME =		Cython-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:L}
+REVISION =		0
 
 CATEGORIES =		lang
 

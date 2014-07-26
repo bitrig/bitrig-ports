@@ -3,14 +3,12 @@
 COMMENT=	transparent and scalable SSL/TLS interception
 
 DISTNAME=	sslsplit-0.4.7
-REVISION=	2
+REVISION=	3
 EXTRACT_SUFX=	.tar.bz2
 
 CATEGORIES=	security
 
 HOMEPAGE=	https://www.roe.ch/SSLsplit
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # SSLsplit: BSD, khash.h (header-based library): MIT
 PERMIT_PACKAGE_CDROM=	Yes

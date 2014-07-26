@@ -4,7 +4,7 @@ COMMENT=	geek code generator
 
 DISTNAME=	geekcode-1.7.3
 CATEGORIES=	misc
-REVISION=	1
+REVISION=	2
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=geekcode/}
 

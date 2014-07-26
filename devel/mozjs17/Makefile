@@ -14,7 +14,7 @@ COMMENT =	Mozilla C implementation of JavaScript
 MOZILLA_VERSION =	17.0
 DISTNAME =		mozjs17.0.0
 PKGNAME =		mozjs17-${MOZILLA_VERSION}
-REVISION =		2
+REVISION =		3
 
 SO_VERSION =	0.0
 SHARED_LIBS =	mozjs-17.0 ${SO_VERSION}
@@ -22,8 +22,6 @@ CATEGORIES =	devel
 
 HOMEPAGE =	http://www.mozilla.org/js/spidermonkey/
 MASTER_SITES =	http://ftp.mozilla.org/pub/mozilla.org/js/
-
-MAINTAINER =	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # MPL
 PERMIT_PACKAGE_CDROM=	Yes

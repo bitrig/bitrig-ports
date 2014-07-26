@@ -4,11 +4,9 @@ COMMENT=		text mode progress bar
 
 MODULES=		cpan
 DISTNAME=		Term-ProgressBar-2.09
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 USE_GROFF =		Yes
-
-MAINTAINER=		Girish Venkatachalam <girish1729@gmail.com>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

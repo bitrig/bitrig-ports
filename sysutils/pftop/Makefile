@@ -6,11 +6,10 @@
 COMMENT=	curses-based real time state and rule display for pf
 
 DISTNAME=	pftop-0.7
-REVISION=	13
+REVISION=	14
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://www.eee.metu.edu.tr/~canacar/pftop/
-MAINTAINER=	Can Erkin Acar <canacar@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

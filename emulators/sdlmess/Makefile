@@ -8,12 +8,11 @@ COMMENT =		emulates game consoles and old home computers
 V =			153
 DISTNAME =		mame0${V}s
 PKGNAME =		sdlmess-0.${V}
+REVISION =		0
 
 CATEGORIES =		emulators games
 
 HOMEPAGE =		http://messdev.org/
-
-MAINTAINER =		Brian Callahan <bcallah@openbsd.org>
 
 # MAME Distribution License, see http://mamedev.org/license.html
 # history.dat : Creative Commons Attribution 3.0

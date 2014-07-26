@@ -8,9 +8,9 @@ COMMENT =		sqlite database of ports
 COMMENT-main =		${COMMENT}, user version
 COMMENT-compact =	${COMMENT}, program version
 COMMENT-list =		full list of pkgpaths in ports
-MAINTAINER =		Marc Espie <espie@openbsd.org>
 PKGNAME-compact =	sqlports-compact-$V
 PKGNAME-main =		sqlports-$V
+REVISION =		0
 PKGNAME-list =		portslist-$V
 
 

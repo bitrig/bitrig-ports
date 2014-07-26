@@ -4,6 +4,7 @@ COMMENT =	simple, extensible Perl debugger
 
 MODULES =	cpan
 DISTNAME =	Devel-ebug-0.55
+REVISION =	0
 CATEGORIES =	devel
 
 # perl

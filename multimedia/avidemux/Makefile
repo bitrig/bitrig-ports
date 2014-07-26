@@ -6,7 +6,7 @@ V=		2.4.4
 DISTNAME=	avidemux_${V}
 PKGNAME=	avidemux-${V}
 
-REVISION=	16
+REVISION=	17
 
 CATEGORIES=	multimedia
 

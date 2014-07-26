@@ -5,7 +5,7 @@ COMMENT=	perform tests on all modules of a distribution
 MODULES=	cpan
 
 DISTNAME=	Test-Distribution-2.00
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # Perl

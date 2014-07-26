@@ -3,6 +3,7 @@
 COMMENT=		forensic tool that collects MAC times from files
 
 VERSION=		1.00
+REVISION=		0
 DISTNAME=		mac-robber-${VERSION}
 CATEGORIES=		sysutils security
 

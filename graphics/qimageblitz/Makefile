@@ -3,7 +3,7 @@
 CATEGORIES =	graphics
 COMMENT =	KDE image effects
 DISTNAME =	qimageblitz-0.0.6
-REVISION =	0
+REVISION =	1
 
 EXTRACT_SUFX =	.tar.bz2
 

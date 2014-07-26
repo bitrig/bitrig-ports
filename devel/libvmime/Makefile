@@ -7,7 +7,7 @@ DISTNAME=	libvmime-${VMIME_V}+svn603
 EXTRACT_SUFX=	.tar.bz2
 
 PKGNAME=	libvmime-${VMIME_V}
-REVISION=	6
+REVISION=	7
 
 SHARED_LIBS+=  vmime    2.0     # 0.0
 
@@ -27,8 +27,6 @@ PATCHFILES= \
 CATEGORIES=	devel mail
 
 HOMEPAGE=	http://www.vmime.org/
-
-MAINTAINER=	Robert Nagy <robert@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

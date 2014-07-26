@@ -4,7 +4,7 @@ COMMENT=	improved ruby RSS and Atom parser
 
 DISTNAME=	rss-0.2.4
 PKGNAME=	ruby19-${DISTNAME}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	textproc devel
 
 # ruby

@@ -3,6 +3,7 @@
 COMMENT =		EFL thumbnail generation library
 
 DISTNAME =		ethumb-1.7.9
+REVISION =		0
 
 SHARED_LIBS +=	ethumb                    0.0 # 8.6
 SHARED_LIBS +=	ethumb_client             0.0 # 8.6

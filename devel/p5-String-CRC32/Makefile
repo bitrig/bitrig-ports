@@ -6,10 +6,8 @@ COMMENT=	interface for cyclic redundancy check generation
 
 MODULES=	cpan
 DISTNAME=	String-CRC32-1.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

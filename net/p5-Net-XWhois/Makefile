@@ -4,11 +4,10 @@ COMMENT =	whois client interface for perl5
 
 MODULES =	cpan
 DISTNAME =	Net-XWhois-0.90
-REVISION =	0
+REVISION =	1
 CATEGORIES =	net
 
 HOMEPAGE =	http://sourceforge.net/projects/xwhois/
-MAINTAINER =	Johan Huldtgren <jhuldtgren@gmail.com>
 
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM =	Yes

@@ -6,7 +6,7 @@ DISTNAME=	beaver0_3_0_1
 PKGNAME=	beaver-0.3.0.1
 CATEGORIES=	editors
 
-REVISION=	7
+REVISION=	8
 
 HOMEPAGE=	http://www.nongnu.org/beaver/
 # XXX should use ${MASTER_SITE_SAVANNAH:=beaver/} but % in the

@@ -3,13 +3,11 @@
 COMMENT=	DKIM milter
 
 DISTNAME=	dkim-milter-2.8.3
-REVISION=	3
+REVISION=	4
 CATEGORIES=	mail
 HOMEPAGE=	http://sourceforge.net/projects/dkim-milter/
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dkim-milter/}
-
-MAINTAINER=	Jakob Schlyter <jakob@openbsd.org>
 
 # sendmail open source license
 PERMIT_PACKAGE_CDROM=		Patent

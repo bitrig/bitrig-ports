@@ -4,6 +4,8 @@ COMMENT=		GLib library wrapping libgit2
 
 V=			0.0.18
 PROJECT=		libgit2-glib
+REVISION=		0
+
 SHARED_LIBS +=	git2-glib-1.0        1.4      # 0.0
 
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/${PROJECT}/${V:C/^([0-9]+\.[0-9]+).*/\1/}/}

@@ -2,7 +2,7 @@
 
 COMMENT =		SoundFont2 software synthesizer
 DISTNAME =		fluidsynth-1.1.6
-REVISION =		3
+REVISION =		4
 
 SHARED_LIBS +=	fluidsynth           1.0      # 6.2
 

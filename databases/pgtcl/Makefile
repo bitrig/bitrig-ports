@@ -5,12 +5,11 @@ SHARED_ONLY=	Yes
 COMMENT=	Tcl interface to PostgreSQL
 
 DISTNAME=	pgtcl-1.7
+REVISION=	0
 SHARED_LIBS= 	pgtcl17	0.0
 CATEGORIES=	databases
 
 HOMEPAGE=	http://pgfoundry.org/projects/pgtcl/
-
-MAINTAINER=	Valery Masiutsin <val.masutin@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

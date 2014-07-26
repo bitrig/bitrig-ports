@@ -3,10 +3,10 @@
 COMMENT=		dns rate limiter for divert(4)
 
 DISTNAME=		dnsfilter-0.4
+REVISION=		0
 CATEGORIES=		net
 
 HOMEPAGE=		http://sha256.net/dnsfilter/
-MAINTAINER=		Florian Obser <florian+dnsfilter@narrans.de>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

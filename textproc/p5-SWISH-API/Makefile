@@ -5,14 +5,12 @@ SHARED_ONLY =	Yes
 
 DISTNAME =	swish-e-2.4.7
 PKGNAME =	p5-SWISH-API-0.04
-REVISION =	5
+REVISION =	6
 CATEGORIES =	textproc
 MODULES =	cpan
 
 HOMEPAGE =	http://swish-e.org/
 MASTER_SITES =	${HOMEPAGE}distribution/
-
-MAINTAINER =	Michael Erdely <merdely@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

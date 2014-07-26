@@ -3,6 +3,7 @@
 COMMENT=		vector graphics library
 
 DISTNAME=		cairo-1.12.16
+REVISION=		0
 SHARED_LIBS+=		cairo 12.2
 SHARED_LIBS+=		cairo-gobject 1.1
 SHARED_LIBS+=		cairo-script-interpreter 1.1
@@ -11,8 +12,6 @@ DPB_PROPERTIES=		parallel
 EXTRACT_SUFX=		.tar.xz
 
 HOMEPAGE=		http://cairographics.org/
-
-MAINTAINER=		Eric Faurot <eric@openbsd.org>
 
 WANTLIB += X11 Xau Xdmcp Xext Xrender c expat ffi fontconfig freetype
 WANTLIB += glib-2.0 gobject-2.0 lzo2 m pcre pixman-1 png pthread

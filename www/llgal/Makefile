@@ -3,11 +3,10 @@
 COMMENT=	command-line online gallery generator
 
 DISTNAME=	llgal-0.13.17
+REVISION=	0
 CATEGORIES=	www graphics
 
 HOMEPAGE=	http://home.gna.org/llgal/
-
-MAINTAINER=	Steven Mestdagh <steven@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

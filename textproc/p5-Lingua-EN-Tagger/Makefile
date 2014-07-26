@@ -3,9 +3,8 @@
 COMMENT =	part-of-speech tagger for EN natural language processing
 
 DISTNAME =	Lingua-EN-Tagger-0.24
+REVISION =	0
 CATEGORIES =	textproc
-
-MAINTAINER =	Andrew Fresh <andrew@cpan.org>
 
 # GPLv3 Only
 PERMIT_PACKAGE_CDROM =	Yes

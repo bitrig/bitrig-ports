@@ -17,6 +17,7 @@ COMMENT =		database of packages for use with locate(1)
 # locate data is NOT MI, unfortunately
 # PKG_ARCH = ${ARCH}....
 DISTNAME =		pkglocatedb-1.1
+REVISION =		0
 DISTFILES =
 
 CATEGORIES =		databases

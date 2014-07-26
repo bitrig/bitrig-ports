@@ -3,11 +3,9 @@
 COMMENT =		HTML/XML parsing library
 
 DISTNAME =		tagsoup-0.12.8
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel textproc
 HOMEPAGE =		http://community.haskell.org/~ndm/tagsoup/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

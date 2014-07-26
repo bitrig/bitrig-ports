@@ -3,7 +3,7 @@
 COMMENT =	XSS filter using HTML::Parser
 
 DISTNAME =	HTML-StripScripts-Parser-1.03
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
 
 # Perl

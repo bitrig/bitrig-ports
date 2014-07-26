@@ -4,11 +4,9 @@ COMMENT=	HTTP caching proxy
 
 DISTNAME=	polipo-1.0.4.1
 CATEGORIES=	www
-REVISION=	6
+REVISION=	7
 
 HOMEPAGE=	http://www.pps.jussieu.fr/~jch/software/polipo/
-
-MAINTAINER=	Matthias Kilian <kili@openbsd.org>
 
 MASTER_SITES=	http://freehaven.net/~chrisd/polipo/
 

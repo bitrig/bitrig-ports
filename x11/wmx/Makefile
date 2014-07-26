@@ -3,7 +3,7 @@
 COMMENT=	minimal window manager
 
 DISTNAME=	wmx-7
-REVISION=	0
+REVISION=	1
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.all-day-breakfast.com/wmx/

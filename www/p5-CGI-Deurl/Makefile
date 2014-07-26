@@ -4,7 +4,7 @@ COMMENT=	Lightweight URL parser
 
 MODULES=	cpan
 DISTNAME=	CGI-Deurl-1.08
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 
 # GPL

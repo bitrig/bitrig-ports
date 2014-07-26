@@ -3,7 +3,7 @@
 COMMENT=	integrated Templates for PHP
 
 DISTNAME=	HTML_Template_IT-1.1.3
-REVISION=	3
+REVISION=	4
 CATEGORIES=	www
 
 MODULES=	www/pear

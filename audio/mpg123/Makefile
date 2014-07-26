@@ -3,11 +3,10 @@
 COMMENT=	fast console MPEG audio player and decoder library
 
 DISTNAME=	mpg123-1.20.0
+REVISION=	0
 SHARED_LIBS=	mpg123		4.0	# 40.3
 CATEGORIES=	audio
 HOMEPAGE=	http://www.mpg123.de/
-
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # LGPL 2.1
 PERMIT_PACKAGE_CDROM=	Yes

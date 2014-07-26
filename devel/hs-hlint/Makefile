@@ -3,12 +3,10 @@
 COMMENT=		source code suggestions for Haskell
 
 DISTNAME=		hlint-1.8.29
-REVISION=		2
+REVISION=		3
 CATEGORIES=		devel
 
 HOMEPAGE=		http://community.haskell.org/~ndm/hlint/
-
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

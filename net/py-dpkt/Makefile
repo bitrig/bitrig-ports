@@ -5,13 +5,11 @@ COMMENT =		python network packet manipulation library
 MODPY_EGG_VERSION =	1.7
 DISTNAME =		dpkt-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		4
+REVISION =		5
 
 CATEGORIES =		net
 
 HOMEPAGE =		https://code.google.com/p/dpkt/
-
-MAINTAINER =		Thanasoulas Spiros <dsp@physics.uoc.gr>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

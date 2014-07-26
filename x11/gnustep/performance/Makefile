@@ -3,6 +3,7 @@
 COMMENT =	GNUstep performance library
 
 VERSION =	0.5.0
+REVISION =	0
 DISTNAME =	Performance-${VERSION}
 PKGNAME =	gnustep-performance-${VERSION}
 CATEGORIES =	devel

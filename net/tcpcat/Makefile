@@ -3,7 +3,7 @@
 COMMENT=		utility for sending/receiving data over TCP stream
 
 DISTNAME=		tcpcat-1.2.0
-REVISION= 		0
+REVISION= 		1
 CATEGORIES=		net
 
 HOMEPAGE=		http://sourceforge.net/projects/tcpcat/

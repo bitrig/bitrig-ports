@@ -5,11 +5,9 @@ SHARED_ONLY =	Yes
 COMMENT =	deserializer for Adobe Action Message Format
 
 DISTNAME =	Storable-AMF-1.00
-REVISION =	1
+REVISION =	2
 CATEGORIES =	multimedia
 CPAN_AUTHOR =	GRIAN
-
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	 Yes

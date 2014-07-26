@@ -4,7 +4,7 @@ COMMENT=	PGP public keys sharing via DNS-SD and HKP
 
 GNOME_PROJECT=	seahorse-sharing
 GNOME_VERSION=	3.8.0
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	net security
 

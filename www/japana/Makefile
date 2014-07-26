@@ -3,11 +3,9 @@
 COMMENT =	proxy that can transliterate japanese
 
 DISTNAME =	japana-2.0.5
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www japanese converters
 HOMEPAGE =	http://www.h.shuttle.de/mitch/japana.en.html
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,7 +5,7 @@ COMMENT=	perl module for parsing nmap XML reports
 MODULES=	cpan
 DISTNAME=	Nmap-Parser-1.2
 EPOCH=		0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 
 HOMEPAGE=       https://nmap-parser.googlecode.com/

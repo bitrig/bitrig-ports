@@ -4,6 +4,7 @@ COMMENT =	generic resource pool for Node.js
 
 NPM_VERSION =	2.0.3
 NPM_NAME =	generic-pool
+REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	https://github.com/coopernurse/node-pool

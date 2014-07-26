@@ -4,11 +4,9 @@ COMMENT=	perform and manipulate nmap scans using Perl
 
 MODULES=	cpan
 DISTNAME=	Nmap-Scanner-1.0
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
 USE_GROFF =	Yes
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

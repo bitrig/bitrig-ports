@@ -10,6 +10,7 @@ COMMENT-tk =		tk interface for ruby
 COMMENT-ri_docs =	ri documentation files for ruby
 
 VERSION =		2.1.2
+REVISION =		0
 RUBYLIBREV =		2.1
 DISTNAME =		ruby-${VERSION}
 

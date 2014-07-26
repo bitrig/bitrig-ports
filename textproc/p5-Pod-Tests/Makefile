@@ -5,6 +5,7 @@ COMMENT=	extracts embedded tests and code examples from pod
 MODULES=	cpan
 
 DISTNAME=	Pod-Tests-1.19
+REVISION=	0
 CATEGORIES=	textproc
 
 # perl

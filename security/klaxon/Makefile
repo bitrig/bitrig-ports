@@ -4,6 +4,7 @@ COMMENT=	small service wedge to do ident lookup on connecting party
 
 DISTNAME=		klaxon
 PKGNAME=		klaxon-1.5
+REVISION=		0
 CATEGORIES=     	security
 
 HOMEPAGE=		http://www.eng.auburn.edu/users/doug/second.html

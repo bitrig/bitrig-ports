@@ -3,7 +3,7 @@
 COMMENT=	extensions to ruby's String class
 
 DISTNAME=	stringex-1.1.0
-REVISION =	3
+REVISION =	4
 CATEGORIES=	devel
 
 # MIT

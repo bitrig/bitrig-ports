@@ -6,6 +6,7 @@ CPAN_AUTHOR=		DAGOLDEN
 MODULES=		cpan
 
 DISTNAME=		Capture-Tiny-0.24
+REVISION=		0
 CATEGORIES=		sysutils
 
 # Apache 2.0

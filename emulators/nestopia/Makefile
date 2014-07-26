@@ -6,11 +6,9 @@ DISTNAME =		nestopia-1.45
 
 CATEGORIES =		emulators
 
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://0ldsk00l.ca/nestopia.html
-
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes

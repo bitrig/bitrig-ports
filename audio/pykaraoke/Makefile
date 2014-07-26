@@ -5,7 +5,7 @@ COMMENT =		free karaoke player
 V =			0.7.1
 MODPY_EGG_VERSION =	${V}
 DISTNAME =		pykaraoke-${V}
-REVISION =		5
+REVISION =		6
 CATEGORIES =		audio
 
 HOMEPAGE =		http://kibosh.org/pykaraoke/

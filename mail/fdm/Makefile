@@ -3,10 +3,10 @@
 COMMENT=	fetch, filter and deliver mail
 
 DISTNAME=	fdm-1.7
+REVISION=	0
 CATEGORIES=	mail
 
 HOMEPAGE=	http://fdm.sourceforge.net/
-MAINTAINER=	Nicholas Marriott <nicm@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

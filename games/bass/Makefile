@@ -4,13 +4,11 @@ PKG_ARCH=	*
 
 COMMENT=	Beneath A Steel Sky
 DISTNAME=	bass-cd-1.2
-REVISION=	0
+REVISION=	1
 PKGNAME=	${DISTNAME:S/cd-//}
 EXTRACT_SUFX=	.zip
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scummvm/}
-
-MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 
 # Conditional
 PERMIT_PACKAGE_CDROM=	Yes

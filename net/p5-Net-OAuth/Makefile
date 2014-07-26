@@ -3,11 +3,9 @@
 COMMENT=	implementation of the OAuth protocol
 
 DISTNAME=	Net-OAuth-0.25
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	net
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

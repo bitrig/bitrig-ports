@@ -5,13 +5,11 @@ COMMENT=		Web Tools Platform for Eclipse
 V=			1.5.4
 DISTNAME=		wtp-sdk-R-${V}-200705021353
 PKGNAME=		eclipse-plugin-wtp-sdk-${V}
-REVISION =		0
+REVISION =		1
 CATEGORIES+=		java
 PKG_ARCH=		*
 
 HOMEPAGE=		http://www.eclipse.org/webtools/
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
 
 # Eclipse Public License Version 1.0 (http://www.eclipse.org/legal/epl-v10.html)
 PERMIT_PACKAGE_CDROM=	commercial distribution defend and indemnify clauses

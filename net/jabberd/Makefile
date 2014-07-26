@@ -2,7 +2,7 @@
 
 COMMENT=		jabber server
 DISTNAME=		jabberd-2.0s11
-REVISION=		6
+REVISION=		7
 EPOCH=			1
 CATEGORIES=		net
 HOMEPAGE=		http://jabberd2.org/

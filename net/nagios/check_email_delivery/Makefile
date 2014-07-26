@@ -3,10 +3,8 @@
 COMMENT=	Nagios plugin to check full email delivery loop (SMTP/IMAP)
 
 DISTNAME=	check_email_delivery-0.7.1b
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net mail
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 HOMEPAGE=	http://buhacoff.net/software/check_email_delivery/
 

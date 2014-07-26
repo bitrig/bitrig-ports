@@ -9,9 +9,7 @@ DISTNAME=	wesnoth-1.10.7
 
 CATEGORIES=	games x11
 
-REVISION =	0
-
-MAINTAINER=	Kirill Bychkov <kirby@openbsd.org>
+REVISION =	1
 
 HOMEPAGE=	http://www.wesnoth.org/
 

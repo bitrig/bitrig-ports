@@ -3,7 +3,7 @@
 COMMENT=	skat card game
 
 DISTNAME=	xskat-4.0
-REVISION =	1
+REVISION =	2
 CATEGORIES=	games
 HOMEPAGE=	http://www.xskat.de/xskat.html
 

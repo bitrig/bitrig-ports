@@ -5,7 +5,7 @@ COMMENT=	Xfce4 settings daemon
 XFCE_VERSION =	4.10.0
 XFCE_PROJECT=	xfconf
 SHARED_LIBS =	xfconf-0 0.0
-REVISION =	0
+REVISION =	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

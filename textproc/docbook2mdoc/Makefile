@@ -3,12 +3,11 @@
 COMMENT =		convert DocBook refentry to mdoc
 
 DISTNAME =		docbook2mdoc-0.0.9
+REVISION =		0
 
 CATEGORIES =		textproc
 
 HOMEPAGE =		http://mdocml.bsd.lv/docbook2mdoc/
-
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

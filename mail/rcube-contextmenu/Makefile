@@ -8,10 +8,9 @@ GH_TAGNAME=	1.13
 GH_COMMIT=	53e7f7c2e1a81bd97db3a4832c026cd999497e79
 DISTNAME=	contextmenu-${GH_TAGNAME}
 PKGNAME=	rcube-${DISTNAME}
+REVISION=	0
 CATEGORIES=	mail www
 HOMEPAGE=	http://www.tehinterweb.co.uk/roundcube/\#picontextmenu
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

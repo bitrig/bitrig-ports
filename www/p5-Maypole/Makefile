@@ -4,11 +4,9 @@ COMMENT=	Perl MVC for web applications
 
 MODULES=	cpan
 DISTNAME=	Maypole-1.4
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Sam Smith <S@msmith.net>
 
 # Same as Perl
 PERMIT_PACKAGE_CDROM=	Yes

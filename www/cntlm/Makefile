@@ -2,10 +2,9 @@
 
 COMMENT =		fast NTLM/NTLMv2 authenticating HTTP proxy
 DISTNAME =		cntlm-0.93beta5
+REVISION =		0
 CATEGORIES =		www
 HOMEPAGE =		http://awk.cz/cntlm/
-
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =  Yes

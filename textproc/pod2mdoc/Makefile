@@ -3,12 +3,11 @@
 COMMENT =		convert POD data to mdoc input
 
 DISTNAME =		pod2mdoc-0.0.13
+REVISION =		0
 
 CATEGORIES =		textproc
 
 HOMEPAGE =		http://mdocml.bsd.lv/pod2mdoc/
-
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

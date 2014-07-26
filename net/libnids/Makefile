@@ -3,6 +3,7 @@
 COMMENT=	network monitoring library with TCP/IP reassembly
 
 DISTNAME=	libnids-1.24
+REVISION=	0
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libnids/}
 

@@ -4,7 +4,7 @@ COMMENT =	html help viewer
 BROKEN =	doesnt work with newer xulrunner
 
 DISTNAME =	chmsee-2.0.2
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	textproc x11
 

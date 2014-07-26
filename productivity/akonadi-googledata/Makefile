@@ -3,6 +3,7 @@
 CATEGORIES =	productivity
 COMMENT =	Google contacts/calendar connector for Akonadi
 DISTNAME =	akonadi-googledata-1.2.0
+REVISION =	0
 
 HOMEPAGE =	https://code.google.com/p/libgcal/
 

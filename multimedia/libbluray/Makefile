@@ -6,11 +6,10 @@ COMMENT =		library supporting Blu-ray playback
 
 V =			0.2.3
 DISTNAME =		libbluray-${V}
+REVISION =		0
 CATEGORIES =		multimedia
 
 HOMEPAGE =		http://www.videolan.org/developers/libbluray.html
-
-MAINTAINER =		Peter Hessler <phessler@openbsd.org>
 
 MASTER_SITES =		http://download.videolan.org/pub/videolan/libbluray/${V}/ \
 			ftp://ftp.videolan.org/pub/videolan/libbluray/${V}/

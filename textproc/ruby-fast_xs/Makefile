@@ -3,11 +3,10 @@
 COMMENT =		provides fast methods for escaping text
 
 DISTNAME =		fast_xs-0.8.0
+REVISION =		0
 CATEGORIES =		textproc
 
 HOMEPAGE =		https://github.com/brianmario/fast_xs
-
-MAINTAINER =		Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

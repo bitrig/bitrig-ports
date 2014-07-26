@@ -3,14 +3,12 @@
 COMMENT=	Python interface to the OpenSSL library
 
 MODPY_EGG_VERSION=	0.13
-REVISION=	0
+REVISION=	1
 DISTNAME=	pyOpenSSL-${MODPY_EGG_VERSION}
 PKGNAME=	py-openssl-${MODPY_EGG_VERSION}
 CATEGORIES=	security devel
 
 HOMEPAGE=	https://launchpad.net/pyopenssl/
-
-MAINTAINER=	Eric Faurot <eric@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

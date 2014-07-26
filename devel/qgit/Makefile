@@ -5,7 +5,7 @@ CATEGORIES =	devel x11
 HOMEPAGE =	http://digilander.libero.it/mcostalba/
 
 DISTNAME =	qgit-1.5.7
-REVISION =	3
+REVISION =	4
 EXTRACT_SUFX =	.tar.bz2
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=qgit/}

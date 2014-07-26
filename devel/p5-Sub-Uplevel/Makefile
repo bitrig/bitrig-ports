@@ -4,6 +4,7 @@ COMMENT = 	Perl library for manipulating frame stack
 
 MODULES =	cpan
 DISTNAME =	Sub-Uplevel-0.24
+REVISION =	0
 EPOCH =		0
 CATEGORIES =	devel
 

@@ -4,7 +4,7 @@ COMMENT=	Remote SMTP Server Detection
 
 VERSION=	0.5
 DISTNAME=	smtpscan-${VERSION}
-REVISION =	1
+REVISION =	2
 CATEGORIES=	security net mail
 
 # GPL2

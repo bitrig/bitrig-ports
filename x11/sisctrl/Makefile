@@ -3,7 +3,7 @@
 COMMENT=		display control panel for X.org SiS driver
 
 DISTNAME=		sisctrl-0.0.20051202
-REVISION=		8
+REVISION=		9
 CATEGORIES=		x11
 
 HOMEPAGE=		http://www.winischhofer.eu/linuxsispart1.shtml\#sisctrl

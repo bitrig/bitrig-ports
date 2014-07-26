@@ -3,9 +3,8 @@
 COMMENT =	test functions for exception based code
 
 DISTNAME =	Test-Exception-0.32
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

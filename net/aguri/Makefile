@@ -2,7 +2,7 @@
 COMMENT=		aggregation-based network traffic profiler
 
 DISTNAME=		aguri-0.7
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.csl.sony.co.jp/person/kjc/software.html

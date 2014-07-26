@@ -3,11 +3,10 @@
 COMMENT=	monitors the status of mirrors
 
 DISTNAME=	mirmon-2.9
+REVISION=	0
 
 CATEGORIES=	net
 HOMEPAGE=	http://people.cs.uu.nl/henkp/mirmon/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # free license, see LICENSE
 PERMIT_PACKAGE_CDROM=	Yes

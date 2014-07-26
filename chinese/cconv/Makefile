@@ -3,15 +3,13 @@
 COMMENT=	simplified-traditional chinese translate tool
 
 DISTNAME=	cconv-0.6.2
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	chinese converters
 
 SHARED_LIBS=	cconv		0.0
 
 HOMEPAGE=	https://code.google.com/p/cconv/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

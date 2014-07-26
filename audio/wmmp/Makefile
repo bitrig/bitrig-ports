@@ -2,7 +2,7 @@
 
 COMMENT=		wm-dockapp to control MPD
 DISTNAME=		WMmp-0.10.0
-REVISION=		4
+REVISION=		5
 CATEGORIES=		audio x11 x11/windowmaker
 
 # GPL

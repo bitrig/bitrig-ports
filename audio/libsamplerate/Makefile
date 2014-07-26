@@ -3,11 +3,11 @@
 COMMENT=	audio sample rate conversion library
 
 DISTNAME=	libsamplerate-0.1.8
+REVISION=	0
 SHARED_LIBS=	samplerate	2.0	# .1.3
 CATEGORIES=	audio
 
 HOMEPAGE=	http://mega-nerd.com/SRC/
-MAINTAINER=	Jan Stary <hans@stare.cz>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

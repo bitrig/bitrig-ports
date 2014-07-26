@@ -7,7 +7,7 @@ GNOME_VERSION=	2.28.6
 EXTRACT_SUFX=	.tar.bz2
 
 PKGNAME=	py-gobject-${GNOME_VERSION}
-REVISION=	5
+REVISION=	6
 
 EPOCH=		0
 
@@ -16,8 +16,6 @@ CATEGORIES=	devel
 SHARED_LIBS +=  pyglib-2.0-python${MODPY_VERSION} 2.0      # .0.0
 
 HOMEPAGE=	http://www.pygtk.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

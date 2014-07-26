@@ -6,11 +6,9 @@ COMMENT =	encapsulate protected Lua calls with a coroutine based loop
 
 DISTNAME =	coxpcall-1.13.0
 PKGNAME =	lua-${DISTNAME}
-REVISION=	3
+REVISION=	4
 CATEGORIES =	devel
 HOMEPAGE =	http://coxpcall.luaforge.net/
-
-MAINTAINER =	Scott Vokes <vokes.s@gmail.com>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

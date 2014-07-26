@@ -3,7 +3,7 @@
 COMMENT=	validating namespace-aware XML parser
 
 DISTNAME=	rxp-1.4.8
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.cogsci.ed.ac.uk/~richard/rxp.html

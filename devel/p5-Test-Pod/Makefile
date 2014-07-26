@@ -4,6 +4,7 @@ COMMENT=	check for POD errors in files
 
 MODULES=	cpan
 DISTNAME=	Test-Pod-1.46
+REVISION=	0
 CATEGORIES=	devel
 
 # Perl

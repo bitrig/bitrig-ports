@@ -3,13 +3,11 @@
 COMMENT=	BCrypt library for Java
 
 DISTNAME=	jBCrypt-0.3
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	security
 
 HOMEPAGE=	http://www.mindrot.org/projects/jBCrypt/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes

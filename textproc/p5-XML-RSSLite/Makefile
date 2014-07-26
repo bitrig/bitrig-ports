@@ -4,11 +4,9 @@ COMMENT=	lightweight, 'relaxed' RSS (and XML-ish) parser
 
 MODULES=	cpan
 DISTNAME=	XML-RSSLite-0.11
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 EXTRACT_SUFX=	.tgz
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

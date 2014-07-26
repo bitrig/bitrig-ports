@@ -5,7 +5,7 @@ COMMENT=	Java bytecode manipulation framework
 V=		3.3.1
 DISTNAME=	asm-$V
 CATEGORIES=	java devel
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://asm.ow2.org/
 

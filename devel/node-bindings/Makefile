@@ -4,9 +4,8 @@ COMMENT =	helper module for loading native modules in .node
 
 NPM_VERSION =	1.0.0
 NPM_NAME =	bindings
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Aaron Bieber <abieber@openbsd.org>
 
 HOMEPAGE =	https://github.com/TooTallNate/node-bindings
 

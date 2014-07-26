@@ -4,6 +4,7 @@ COMMENT =		high-quality libre fonts (serif, 19th century book type)
 
 DISTNAME =		LinLibertineTTF_${V}_${D}
 PKGNAME =		linuxlibertine-fonts-ttf-${V}
+REVISION =		0
 V =			5.3.0
 D =			2012_07_02
 

@@ -4,9 +4,8 @@ COMMENT =	Perl extension for SSH secure shell
 
 MODULES =	cpan
 DISTNAME =	Net-SSH-0.09
+REVISION =	0
 CATEGORIES =	net
-
-MAINTAINER =    Sergey Bronnikov <estetus@gmail.com>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

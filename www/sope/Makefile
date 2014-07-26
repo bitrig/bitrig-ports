@@ -7,11 +7,11 @@ COMMENT-postgres=	SOPE PostgreSQL adaptor
 VERSION =		2.1.1
 DISTNAME =		SOPE-${VERSION}b
 PKGNAME-main =		sope-${VERSION}.1
-REVISION-main =		1
+REVISION-main =		2
 PKGNAME-mysql =		sope-mysql-${VERSION}.1
-REVISION-mysql =	0
+REVISION-mysql =	1
 PKGNAME-postgres =	sope-postgres-${VERSION}.1
-REVISION-postgres =	0
+REVISION-postgres =	1
 
 SO_MAJOR=	2
 SO_MINOR=	1
@@ -24,7 +24,6 @@ SHARED_LIBS+=   ${_lib} ${SO_MAJOR}.${SO_MINOR}
 CATEGORIES=	www
 HOMEPAGE=	http://www.sogo.nu
 MASTER_SITES=	${HOMEPAGE}/files/downloads/SOGo/Sources/
-MAINTAINER=	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # LGPLv2 or later
 PERMIT_PACKAGE_CDROM=   Yes

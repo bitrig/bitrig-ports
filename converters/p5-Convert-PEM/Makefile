@@ -3,6 +3,7 @@
 COMMENT=	read/write access to ASN.1-encoded PEM files
 
 DISTNAME=	Convert-PEM-0.08
+REVISION=	0
 CATEGORIES=	converters security
 MODULES=	cpan
 

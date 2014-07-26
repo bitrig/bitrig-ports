@@ -5,7 +5,7 @@ COMMENT=		module for dealing with time periods
 MODULES=		cpan
 DISTNAME=		Period-1.20
 PKGNAME=		p5-Time-${DISTNAME}
-REVISION =		1
+REVISION =		2
 CATEGORIES=		devel
 
 # Artistic

@@ -7,7 +7,7 @@ SHARED_ONLY =		Yes
 V = 			1.3.1
 DISTNAME =		qt-creator-${V}-src
 PKGNAME =		qt-creator-${V}
-REVISION =		7
+REVISION =		8
 EXTRACT_SUFX = 		.zip
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 

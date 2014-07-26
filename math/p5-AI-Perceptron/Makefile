@@ -4,10 +4,8 @@ COMMENT=	module to internal operations of neural networks
 
 MODULES=	cpan
 DISTNAME=	AI-Perceptron-1.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	math
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

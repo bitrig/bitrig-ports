@@ -3,7 +3,7 @@
 COMMENT =		K Desktop Environment, multimedia applications
 CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
-REVISION =		17
+REVISION =		18
 DISTNAME =		kdemultimedia-${VERSION}
 MODKDE_VERSION =	3.5.8
 SHARED_LIBS +=	artsbuilder          1.0      # .0.0

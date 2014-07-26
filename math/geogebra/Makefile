@@ -5,6 +5,7 @@ COMMENT=	educational mathematical software
 V=		4.2.60.0
 DISTNAME=	GeoGebra-Unixlike-Installer-${V}
 PKGNAME=	geogebra-${V}
+REVISION=	0
 
 CATEGORIES=	math java
 

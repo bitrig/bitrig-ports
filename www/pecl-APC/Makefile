@@ -4,8 +4,7 @@ COMMENT=	Alternative PHP Cache
 
 DISTNAME=	APC-3.1.13
 PKGNAME=	pecl-${DISTNAME}
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
+REVISION=	0
 
 # PHP
 PERMIT_PACKAGE_CDROM=	Yes

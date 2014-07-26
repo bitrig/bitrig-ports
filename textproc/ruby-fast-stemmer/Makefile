@@ -3,7 +3,7 @@
 COMMENT=		fast Porter stemmer for ruby
 
 DISTNAME=		fast-stemmer-1.0.0
-REVISION=		6
+REVISION=		7
 CATEGORIES=		textproc
 
 HOMEPAGE=		https://github.com/romanbsd/fast-stemmer

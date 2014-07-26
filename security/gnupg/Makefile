@@ -5,7 +5,7 @@ COMMENT=	GNU privacy guard - a free PGP replacement
 DISTNAME=	gnupg-1.4.17
 CATEGORIES=	security
 
-REVISION=	0
+REVISION=	1
 
 # restrict, not compatible with gnupg-2.
 PKGSPEC =	gnupg-<2

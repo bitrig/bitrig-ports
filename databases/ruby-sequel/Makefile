@@ -4,11 +4,9 @@ COMMENT =		lightweight database library and ORM for Ruby
 
 DISTNAME =		sequel-4.12.0
 CATEGORIES =		databases
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://sequel.jeremyevans.net/
-
-MAINTAINER =		Jeremy Evans <jeremy@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM = Yes

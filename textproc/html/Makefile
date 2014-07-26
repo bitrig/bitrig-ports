@@ -3,6 +3,7 @@
 COMMENT=	all W3C-published SGML DTDs for HTML
 
 DISTNAME=	html-4.01
+REVISION=	0
 CATEGORIES=	textproc
 
 # License: NONE

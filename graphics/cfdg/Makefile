@@ -5,13 +5,11 @@ COMMENT =	Context Free Design Grammar
 VERSION =	2.2.2
 DISTNAME =	ContextFreeSource${VERSION}
 PKGNAME =	cfdg-${VERSION}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://www.contextfreeart.org/
-
-MAINTAINER =	jared r r spiegel <jrrs@ice-nine.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

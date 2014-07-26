@@ -6,8 +6,6 @@ CATEGORIES = 		games x11
 
 HOMEPAGE = 		http://www.naev.org/
 
-MAINTAINER = 		Kirill Bychkov <kirby@openbsd.org>
-
 # GPLv3, GPLv2+, CC-by, CC-by-sa 3.0
 PERMIT_PACKAGE_CDROM =	Yes
 

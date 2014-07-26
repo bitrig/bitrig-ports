@@ -3,7 +3,7 @@
 COMMENT=	simple and flexible way to build nice URLs
 
 DISTNAME=	Net_URL_Mapper-0.9.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=	net
 
 MODULES=	www/pear

@@ -6,6 +6,7 @@ COMMENT =		personal and small-business financial-accounting software
 
 GNOME_PROJECT =		gnucash
 GNOME_VERSION =		2.6.3
+REVISION =		0
 DOC_VERSION = 		2.6.3
 EXTRACT_SUFX =		.tar.bz2
 

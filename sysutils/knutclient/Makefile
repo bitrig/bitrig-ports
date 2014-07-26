@@ -4,12 +4,10 @@ COMMENT=		KDE UPS monitoring tool
 
 RELEASE=		0.6.0
 DISTNAME=		knutclient-${RELEASE}
-REVISION =		9
+REVISION =		10
 CATEGORIES=		sysutils x11 x11/kde
 
 HOMEPAGE=		http://www.alo.cz/knutclient-pop-en.html
-
-MAINTAINER=		Craig Barraclough <craigba@creative.com.au>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,13 +3,11 @@
 COMMENT=	translate PostScript/PDF graphics to other vector formats
 
 DISTNAME=	pstoedit-3.61
-REVISION=	0
+REVISION=	1
 SHARED_LIBS=	pstoedit 3.0
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://www.pstoedit.net/
-
-MAINTAINER=	Steven Mestdagh <steven@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

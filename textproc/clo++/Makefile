@@ -3,7 +3,7 @@
 COMMENT=	command line parser generator
 
 DISTNAME=	clo++-0.3.0
-REVISION=	3
+REVISION=	4
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://pmade.org/~pjones/software/clo++/

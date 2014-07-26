@@ -4,6 +4,7 @@ COMMENT=	retrieve CDDB ID from a disc
 
 DISTNAME=	cd-discid-upstream-1.3.1
 PKGNAME=	${DISTNAME:S/-upstream//}
+REVISION=	0
 
 CATEGORIES=	audio
 

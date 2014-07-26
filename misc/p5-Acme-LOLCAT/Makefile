@@ -3,7 +3,7 @@
 COMMENT=		translator to LOLCAT
 
 DISTNAME=		Acme-LOLCAT-0.0.5
-REVISION=		1
+REVISION=		2
 CATEGORIES=		misc
 
 MODULES=		cpan

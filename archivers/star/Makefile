@@ -3,6 +3,7 @@
 COMMENT=	unique standard tape archiver
 
 DISTNAME=	star-1.5.2
+REVISION=	0
 CATEGORIES=	archivers sysutils
 HOMEPAGE=	http://cdrecord.berlios.de/private/star.html
 

@@ -3,10 +3,8 @@
 COMMENT=	lightweight GTK+ clipboard manager
 
 DISTNAME=	parcellite-1.0.2rc5
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
-
-MAINTAINER=	Lawrence Teo <lteo@openbsd.org>
 
 HOMEPAGE=	http://parcellite.sourceforge.net/
 

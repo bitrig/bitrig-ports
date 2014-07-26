@@ -2,7 +2,7 @@
 
 COMMENT= 	base class for Rose::DB::Object for catalyst
 DISTNAME=	Catalyst-Model-RDBO-0.03
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases www
 MODULES=	cpan
 USE_GROFF =	Yes

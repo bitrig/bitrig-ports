@@ -3,7 +3,7 @@
 COMMENT= 		POE Filter for parsing XML
 
 DISTNAME=		POE-Filter-XML-0.38
-REVISION=		0
+REVISION=		1
 CATEGORIES=		textproc
 
 # GPLv2

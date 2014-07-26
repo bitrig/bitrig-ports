@@ -4,7 +4,7 @@ COMMENT =	unit test framework for C programs
 
 DISTNAME =	check-0.9.12
 SHARED_LIBS +=  check                3.0      # unknown
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	devel
 

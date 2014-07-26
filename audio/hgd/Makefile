@@ -2,12 +2,10 @@
 
 COMMENT =		music system for hackathons
 DISTNAME =		hgd-0.5.3
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		audio net
 HOMEPAGE =		https://github.com/vext01/hgd/
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # python flavor is not linked yet
 FLAVORS =		python

@@ -4,9 +4,8 @@ COMMENT =	utility for quick MySQL dumping
 
 V =		0.6.1
 DISTNAME =	mydumper-${V}
+REVISION =	0
 CATEGORIES =	databases
-
-MAINTAINER =	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

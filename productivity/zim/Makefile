@@ -4,12 +4,11 @@ COMMENT =		desktop wiki
 
 MODPY_EGG_VERSION =	0.60
 DISTNAME =		zim-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		productivity
 
 HOMEPAGE =		http://zim-wiki.org/
-
-MAINTAINER =		Sebastian Benoit <benno@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

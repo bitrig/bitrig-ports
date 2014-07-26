@@ -17,7 +17,7 @@ PKGNAME-docs=	postgresql-docs-${VERSION}
 PKGNAME-contrib=postgresql-contrib-${VERSION}
 PKGNAME-plpython=postgresql-plpython-${VERSION}
 
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=	databases
 SHARED_LIBS=	ecpg		7.5 \
@@ -26,8 +26,6 @@ SHARED_LIBS=	ecpg		7.5 \
 		pq		5.6
 
 HOMEPAGE=	http://www.postgresql.org/
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

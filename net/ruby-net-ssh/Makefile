@@ -3,7 +3,7 @@
 COMMENT =	pure-ruby implementation of the SSH2 client protocol
 
 DISTNAME =	net-ssh-2.1.4
-REVISION =	0
+REVISION =	1
 CATEGORIES =	net
 
 # MIT

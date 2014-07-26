@@ -5,7 +5,7 @@ COMMENT=	MIDI to WAV renderer and player
 V=		2.13.2
 DISTNAME=	TiMidity++-${V}
 PKGNAME=	timidity-${V}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	audio
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=timidity/}

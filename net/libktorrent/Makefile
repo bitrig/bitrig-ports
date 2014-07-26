@@ -5,7 +5,7 @@ COMMENT =	KTorrent engine
 V =		1.3.1
 DISTNAME =	libktorrent-$V
 HOMEPAGE =	http://ktorrent.pwsp.net/
-REVISION =	6
+REVISION =	7
 
 EXTRACT_SUFX =	.tar.bz2
 

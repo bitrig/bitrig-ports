@@ -4,10 +4,8 @@ COMMENT =	simple blog code for valid (X)HTML
 
 MODULES =	cpan
 DISTNAME =	HTML-SBC-0.15
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

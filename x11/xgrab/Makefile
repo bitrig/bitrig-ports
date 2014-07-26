@@ -4,7 +4,7 @@ COMMENT=	X11 image grabber
 
 DISTNAME=	xgrabsc.2_41
 PKGNAME=	xgrab-2.41
-REVISION=	2
+REVISION=	3
 CATEGORIES=	x11
 
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}

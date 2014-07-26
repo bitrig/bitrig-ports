@@ -3,11 +3,10 @@
 COMMENT =		creating, comparing, parsing and printing UUIDs
 
 DISTNAME =		uuid-1.3.3
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		http://projects.haskell.org/uuid/
-
-MAINTAINER =		David Schaefer <dawedawe@gmx.de>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

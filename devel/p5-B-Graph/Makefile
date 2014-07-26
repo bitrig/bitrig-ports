@@ -4,10 +4,8 @@ COMMENT=	backend to diagram op trees
 
 MODULES=	cpan
 DISTNAME=	B-Graph-0.51
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

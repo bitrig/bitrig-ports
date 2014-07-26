@@ -4,7 +4,7 @@ COMMENT= 	perform diffs on arrays
 
 MODULES=	cpan
 DISTNAME=	Array-Diff-0.05002
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # Artistic

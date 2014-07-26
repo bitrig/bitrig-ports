@@ -3,6 +3,7 @@
 COMMENT =		heavy meatl SOAP client
 
 DISTNAME =		savon-2.3.3
+REVISION =		0
 
 HOMEPAGE =		http://savonrb.com/
 

@@ -3,7 +3,7 @@
 COMMENT=	simple shell based filters to use GnuPG within (Al)Pine
 
 DISTNAME=	pine-pgp-filters-1.8
-REVISION=	3
+REVISION=	4
 CATEGORIES=	mail security
 
 HOMEPAGE=	http://dougbarton.us/PGP/ppf/index.html

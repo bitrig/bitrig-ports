@@ -3,7 +3,7 @@
 COMMENT=	GNUstep file transfer protcol tool
 
 DISTNAME=	FTP-0.4
-REVISION =	1
+REVISION =	2
 CATEGORIES=	net
 
 HOMEPAGE=	http://gap.nongnu.org/ftp/

@@ -5,6 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	Radix tree implementation for Python
 
 DISTNAME =	py-radix-0.5
+REVISION =	0
 CATEGORIES=	devel net
 
 MASTER_SITES=	http://www2.mindrot.org/files/py-radix/

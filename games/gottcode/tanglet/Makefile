@@ -4,6 +4,6 @@ GAME =		tanglet
 COMMENT =	word finding game
 DISTNAME =	${GAME}-1.2.1-src
 WANTLIB +=	z
-REVISION =	0
+REVISION =	1
 
 .include <bsd.port.mk>

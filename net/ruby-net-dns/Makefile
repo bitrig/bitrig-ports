@@ -3,7 +3,7 @@
 COMMENT =	Ruby implementation of Net::DNS
 
 DISTNAME =	net-dns-0.6.0
-REVISION =	6
+REVISION =	7
 CATEGORIES =	net
 
 # Ruby's license

@@ -3,7 +3,7 @@
 COMMENT =	GNUstep desktop meta-package
 
 VERSION =	0.9.2
-REVISION =	2
+REVISION =	3
 PKGNAME =	gnustep-desktop-${VERSION}
 
 RUN_DEPENDS += \

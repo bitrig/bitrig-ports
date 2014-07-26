@@ -3,7 +3,7 @@
 COMMENT=		utility for Rio mp3 players
 
 DISTNAME=		rioutil-1.4.4
-REVISION=		2
+REVISION=		3
 SHARED_LIBS +=	rioutil              5.1      # .5.1
 CATEGORIES=		audio
 

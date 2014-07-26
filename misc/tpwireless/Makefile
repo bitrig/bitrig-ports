@@ -3,6 +3,7 @@
 COMMENT=	Set IBM Thinkpad BIOS bit to disable Wireless NIC ID check
 
 PKGNAME=	tpwireless-0.2
+REVISION=	0
 CATEGORIES=	misc
 DISTFILES=
 

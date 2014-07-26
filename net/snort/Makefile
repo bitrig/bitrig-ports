@@ -6,13 +6,11 @@ COMMENT =		highly flexible sniffer/NIDS
 
 VERSION =		2.9.6.1
 DISTNAME =		snort-${VERSION}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		net security
 
 HOMEPAGE =		http://www.snort.org/
-
-MAINTAINER =		Markus Lude <markus.lude@gmx.de>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

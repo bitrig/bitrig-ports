@@ -3,9 +3,8 @@
 COMMENT =		lenses, folds and traversals
 
 DISTNAME =		lens-3.7.6
+REVISION =		0
 CATEGORIES =		devel
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

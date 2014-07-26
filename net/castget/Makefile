@@ -3,15 +3,13 @@
 COMMENT=		command-line podcast downloader
 
 DISTNAME=		castget-1.0.1
-REVISION=		3
+REVISION=		4
 SHARED_LIBS +=	castget              0.0      # .0.0
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.nongnu.org/castget
 
 MASTER_SITES=          	${MASTER_SITE_SAVANNAH:=castget/}
-
-MAINTAINER=		Gleydson Soares <gsoares@trusted.com.br>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

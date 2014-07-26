@@ -2,6 +2,7 @@
 
 COMMENT =	KDE MPlayer-based thumbnail generator for video files
 DISTNAME =	mplayerthumbs-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	multimedia
 

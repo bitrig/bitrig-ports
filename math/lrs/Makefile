@@ -4,13 +4,11 @@ COMMENT =		solve vertex enumeration and convex hull problems
 
 DISTNAME =		lrslib-042c
 PKGNAME =		lrs-042
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		math
 
 HOMEPAGE =		http://cgm.cs.mcgill.ca/~avis/C/lrs.html
-
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

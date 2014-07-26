@@ -4,7 +4,7 @@ COMMENT=		PDP, IBM 1401, Nova and other CPUs simulator
 
 DISTNAME=		simhv39-0
 PKGNAME=		simh-3.9.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		emulators
 MASTER_SITES=		${HOMEPAGE}/sources/
 EXTRACT_SUFX=		.zip

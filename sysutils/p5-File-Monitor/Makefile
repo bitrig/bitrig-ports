@@ -5,6 +5,7 @@ COMMENT=	monitor files and directories for changes
 MODULES=	cpan
 
 DISTNAME=	File-Monitor-1.00
+REVISION=	0
 
 CATEGORIES=	sysutils
 

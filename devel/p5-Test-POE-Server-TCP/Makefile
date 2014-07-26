@@ -4,6 +4,7 @@ COMMENT =	POE component providing TCP server services for test cases
 
 MODULES =	cpan
 DISTNAME =	Test-POE-Server-TCP-1.16
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

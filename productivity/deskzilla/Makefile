@@ -4,7 +4,7 @@ COMMENT =	desktop bugzilla browser
 
 DISTNAME =	deskzilla-lite-2_1
 PKGNAME =	${DISTNAME:S/_/./}
-REVISION =	2
+REVISION =	3
 EXTRACT_SUFX=	.zip
 
 PKG_ARCH =	*

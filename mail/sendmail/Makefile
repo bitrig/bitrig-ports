@@ -4,6 +4,7 @@ COMMENT =		mother of Mail Transfer Agents
 
 DISTNAME =		sendmail.8.14.7
 PKGNAME =		sendmail-8.14.7
+REVISION =		0
 
 CATEGORIES =		mail
 

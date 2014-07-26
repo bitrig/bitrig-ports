@@ -9,7 +9,8 @@ PKGNAME-main=		libxslt-${VERSION}
 PKGNAME-python= 	py-libxslt-${VERSION}
 SHARED_LIBS=		exslt	9.8 \
 			xslt	3.8
-REVISION-main =		0
+REVISION-main =		1
+REVISION-python =	0
 
 CATEGORIES=		textproc
 

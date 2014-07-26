@@ -3,7 +3,7 @@
 COMMENT =	simple REST client for Ruby
 
 DISTNAME =	rest-client-1.6.7
-REVISION =	1
+REVISION =	2
 CATEGORIES =	www
 
 HOMEPAGE =	https://github.com/rest-client/rest-client

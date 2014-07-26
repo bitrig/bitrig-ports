@@ -25,12 +25,12 @@ PKGNAME-mailutil=	mailutil-uw-${V}
 PKGNAME-pico=		pico-${PICO_V}
 PKGNAME-pilot=		pilot-${PILOT_V}
 
-REVISION-main=		5
-REVISION-mailutil=	5
-REVISION-imap=		6
-REVISION-pico=		5
-REVISION-pilot=		13
-REVISION-c-client=	2
+REVISION-main=		6
+REVISION-mailutil=	6
+REVISION-imap=		7
+REVISION-pico=		6
+REVISION-pilot=		14
+REVISION-c-client=	3
 
 FLAVORS=		passfile
 FLAVOR?=

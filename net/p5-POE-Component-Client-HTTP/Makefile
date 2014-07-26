@@ -4,11 +4,9 @@ COMMENT=	POE HTTP user-agent component
 
 MODULES=	cpan
 DISTNAME=	POE-Component-Client-HTTP-0.88
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

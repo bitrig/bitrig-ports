@@ -4,10 +4,9 @@ COMMENT=	Catalyst Apache engine
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Engine-Apache-1.16
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

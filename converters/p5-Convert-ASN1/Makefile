@@ -3,6 +3,7 @@
 COMMENT=	module to encode and decode ASN.1 data structures
 
 DISTNAME=	Convert-ASN1-0.27
+REVISION=	0
 CATEGORIES=	converters
 MODULES=	cpan
 

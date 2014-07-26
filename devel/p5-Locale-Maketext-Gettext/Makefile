@@ -5,7 +5,7 @@ COMMENT=	joins the gettext and maketext frameworks
 MODULES=	cpan
 
 DISTNAME=	Locale-Maketext-Gettext-1.17
-REVISION=	2
+REVISION=	3
 CATEGORIES=	converters devel
 USE_GROFF =	Yes
 

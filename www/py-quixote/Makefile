@@ -5,14 +5,12 @@ COMMENT=		simple Python framework for web-based applications
 MODPY_EGG_VERSION=	2.6
 DISTNAME=		Quixote-${MODPY_EGG_VERSION}
 PKGNAME=		py-quixote-${MODPY_EGG_VERSION}
-REVISION=		4
+REVISION=		5
 
 CATEGORIES=		www
 
 HOMEPAGE=		http://quixote.ca/
 MASTER_SITES=		${HOMEPAGE}releases/
-
-MAINTAINER=		Will Maier <wcmaier@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,13 +3,11 @@
 COMMENT=	graphical disk usage utility for KDE
 
 DISTNAME=	kdirstat-2.4.0
-REVISION=	10
+REVISION=	11
 
 CATEGORIES=	x11
 
 HOMEPAGE=	http://kdirstat.sourceforge.net/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=  Yes

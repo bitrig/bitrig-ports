@@ -4,9 +4,8 @@ COMMENT =	capture STDOUT and STDERR from Perl code, subprocesses or XS
 
 MODULES =	cpan
 DISTNAME =	IO-CaptureOutput-1.1102
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # Perl
 PERMIT_PACKAGE_CDROM=   Yes

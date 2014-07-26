@@ -8,6 +8,7 @@ BUILD_DEPENDS =	telephony/asterisk
 COMMENT =		add OpenBSD songs to Asterisk music-on-hold
 
 PKGNAME =		asterisk-openbsd-moh-5.5
+REVISION =		0
 REL_LIST =		30 31 32 33 34 35 36 37 38 39 \
 			40 41 42 43 44 45 46 47 48 49 \
 			50 51 52 53 54 55
@@ -21,8 +22,6 @@ EXTRACT_ONLY=
 CATEGORIES =		telephony
 
 HOMEPAGE =		http://www.openbsd.org/lyrics.html
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
 
 # Copyright held by Theo; ok for non-commercial-redistribution
 PERMIT_PACKAGE_CDROM =	Yes

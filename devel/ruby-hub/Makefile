@@ -3,6 +3,7 @@
 COMMENT =		git commandline wrapper for GitHub
 
 DISTNAME =		hub-1.11.1
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		https://hub.github.com/

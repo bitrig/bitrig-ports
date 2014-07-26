@@ -3,11 +3,10 @@
 COMMENT=		HTTP tunneling utility for SSH
 
 DISTNAME=		corkscrew-2.0
+REVISION=		0
 CATEGORIES=    		security net
 
 HOMEPAGE=		http://www.agroman.net/corkscrew/
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

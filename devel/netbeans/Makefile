@@ -7,7 +7,7 @@ COMMENT=		NetBeans Java IDE
 V=			6.9.1
 DISTNAME=		netbeans-${V}
 CATEGORIES=		devel
-REVISION=		5
+REVISION=		6
 
 HOMEPAGE=		http://www.netbeans.org/
 

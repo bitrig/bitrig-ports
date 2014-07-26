@@ -3,7 +3,7 @@
 COMMENT=		convert ASCII files to PostScript
 
 DISTNAME=		enscript-1.6.3
-REVISION=		3
+REVISION=		4
 CATEGORIES=     	print
 
 HOMEPAGE=		http://www.codento.com/people/mtr/genscript/

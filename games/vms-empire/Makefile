@@ -3,6 +3,7 @@
 COMMENT =		turn-based empire game
 
 DISTNAME =		vms-empire-1.12
+REVISION =		0
 
 CATEGORIES =		games
 

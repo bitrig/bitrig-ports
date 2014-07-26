@@ -4,14 +4,12 @@ COMMENT=	Wen Quan Yi bitmap song CJK fonts
 
 V=		0.9.9-0
 DISTNAME=	wqy-bitmapfont-pcf-$V
-REVISION=	0
+REVISION=	1
 PKGNAME=	zh-wqy-bitmapfont-${V:S/-/./}
 
 CATEGORIES=	fonts x11 chinese
 
 HOMEPAGE=	http://wqy.sourceforge.net/en/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,13 +3,11 @@
 COMMENT=		highly configurable framework window manager
 
 DISTNAME=		awesome-3.5.5
-REVISION=		3
+REVISION=		4
 EXTRACT_SUFX=		.tar.xz
 CATEGORIES=		x11
 
 HOMEPAGE=		http://awesome.naquadah.org/
-
-MAINTAINER=		David Coppa <dcoppa@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

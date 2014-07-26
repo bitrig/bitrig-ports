@@ -4,6 +4,7 @@ COMMENT=	minimalistic variant of Class::Accessor
 
 MODULES=	cpan
 DISTNAME=	Class-Accessor-Lite-0.06
+REVISION=	0
 CATEGORIES=	devel
 USE_GROFF=	Yes
 

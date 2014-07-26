@@ -3,12 +3,10 @@
 COMMENT =	parse strings that represent time durations
 
 DISTNAME =	Time-Duration-Parse-0.06
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 MODULES =	cpan
 USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

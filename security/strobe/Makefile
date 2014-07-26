@@ -3,6 +3,7 @@
 COMMENT=	fast scatter/gather TCP port scanner
 
 DISTNAME=	strobe-1.06
+REVISION=	0
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.u-aizu.ac.jp/pub/net/misc/win.or.jp/ \
 		ftp://ftp.win.ne.jp/pub/network/misc/

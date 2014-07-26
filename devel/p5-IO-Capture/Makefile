@@ -4,11 +4,9 @@ COMMENT=		module for capturing output
 
 MODULES=		cpan
 DISTNAME=		IO-Capture-0.05
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
 USE_GROFF =		Yes
-
-MAINTAINER=		Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

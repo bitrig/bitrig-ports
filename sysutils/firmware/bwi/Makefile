@@ -3,9 +3,7 @@
 FW_DRIVER=	bwi
 FW_VER=		1.4
 DISTNAME=	bwi-firmware-${FW_VER}
-REVISION=	3
-
-MAINTAINER=	Marcus Glocker <mglocker@openbsd.org>
+REVISION=	4
 
 HOMEPAGE=	http://www.nazgul.ch/bwi/
 

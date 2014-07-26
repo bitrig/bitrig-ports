@@ -4,7 +4,7 @@ COMMENT=	self-scaling network benchmark
 
 DISTNAME=	netpipe-2.4
 DISTFILES=	NetPIPE_2.4.tar.gz
-REVISION=	0
+REVISION=	1
 CATEGORIES=	benchmarks net
 
 HOMEPAGE=	http://www.scl.ameslab.gov/netpipe/

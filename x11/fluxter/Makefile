@@ -3,10 +3,8 @@
 COMMENT=		slit pager for fluxbox window manager
 
 DISTNAME=		fluxter-0.1.0
-REVISION=		0
+REVISION=		1
 CATEGORIES=		x11
-
-MAINTAINER=		D. Adam Karim <adam@akarsoft.com>
 
 HOMEPAGE=		http://benedict.isomedia.com/homes/stevencooper/projects/fluxter.html
 

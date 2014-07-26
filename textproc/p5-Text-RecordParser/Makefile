@@ -5,6 +5,7 @@ COMMENT= 	parse records in CSV-like formats
 MODULES=	cpan
 DISTNAME=	Text-RecordParser-v1.5.0
 PKGNAME=	p5-Text-RecordParser-1.5.0
+REVISION=	0
 CATEGORIES=	textproc devel
 USE_GROFF =	Yes
 

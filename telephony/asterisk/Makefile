@@ -7,12 +7,11 @@ COMMENT-main=		open source multi-protocol PBX and telephony toolkit
 VER=			11.11.0
 DISTNAME=		asterisk-${VER:S/beta/-beta/:S/rc/-rc/}
 PKGNAME-main=		asterisk-${VER}
+REVISION=		0
 
 CATEGORIES=		telephony
 
 HOMEPAGE=		http://www.asterisk.org/
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # Mostly GPL v2 (only). "Specific permission is also granted to link
 # Asterisk with OpenSSL and OpenH323 and distribute the resulting binary

@@ -4,7 +4,7 @@ COMMENT=	Perl extension for retrieving bridge tables
 
 MODULES=	cpan
 DISTNAME=	SNMP-BridgeQuery-0.61
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel net
 
 # GPL/Artistic

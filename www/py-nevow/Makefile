@@ -5,12 +5,10 @@ COMMENT=	web application construction kit
 VERSION=	0.10.0
 DISTNAME=	Nevow-${VERSION}
 PKGNAME=	py-nevow-${VERSION}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	www
 
 HOMEPAGE=	http://divmod.org/trac/wiki/DivmodNevow
-
-MAINTAINER=	Eric Faurot <eric@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

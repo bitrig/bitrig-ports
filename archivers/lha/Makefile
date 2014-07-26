@@ -4,11 +4,10 @@ COMMENT=	archive files using LZW compression (.lzh files)
 
 DISTNAME=	lha-1.14i-ac20050924p1
 PKGNAME=	lha-1.14i.ac20050924.1
+REVISION=	0
 CATEGORIES=	archivers
 
 HOMEPAGE=       http://lha.sourceforge.jp/
-
-MAINTAINER=	Yozo Toda <yozo@v007.vaio.ne.jp>
 
 # Restrictive
 PERMIT_PACKAGE_CDROM=	requires advance notification

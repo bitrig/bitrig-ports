@@ -3,7 +3,7 @@
 COMMENT=		language front-end and interpreter for the Feldspar DSL
 
 DISTNAME=		feldspar-language-0.6.0.2
-REVISION=		0
+REVISION=		1
 
 BUILD_DEPENDS=		${RUN_DEPENDS}
 RUN_DEPENDS=		devel/hs-QuickAnnotate>=0.6,<0.7 \

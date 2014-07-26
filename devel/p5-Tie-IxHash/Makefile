@@ -4,6 +4,7 @@ COMMENT=	ordered associative arrays for Perl
 
 MODULES=	cpan
 DISTNAME =	Tie-IxHash-1.23
+REVISION =	0
 CATEGORIES=	devel
 
 # Artistic

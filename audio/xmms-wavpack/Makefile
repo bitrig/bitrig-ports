@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	XMMS input plugin for playing WavPack files
 
 DISTNAME=	xmms-wavpack-1.0.3
-REVISION=	3
+REVISION=	4
 CATEGORIES=	audio
 HOMEPAGE=	http://www.wavpack.com/
 

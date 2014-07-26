@@ -3,6 +3,7 @@
 COMMENT=	OO interface to the eBay API
 
 DISTNAME=	Object-eBay-0.5.0
+REVISION=	0
 CATEGORIES=	www
 
 # perl

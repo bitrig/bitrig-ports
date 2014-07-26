@@ -5,7 +5,7 @@ BROKEN-hppa =	undefined reference to lapack funcs
 
 V=		4.0
 DISTNAME=	FreeMat-${V}-Source
-REVISION=	2
+REVISION=	3
 PKGNAME=	freemat-${V}
 
 CATEGORIES=	graphics math

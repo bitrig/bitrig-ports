@@ -4,13 +4,11 @@ COMMENT=		GNU editor: extensible, customizable, self-documenting
 
 VERSION=		24.3
 DISTNAME=		emacs-${VERSION}
-REVISION=		4
+REVISION=		5
 
 CATEGORIES=		editors
 
 HOMEPAGE=		https://www.gnu.org/software/emacs/
-
-MAINTAINER=		Jeremie Courreges-Anglas <jca@wxcvbn.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

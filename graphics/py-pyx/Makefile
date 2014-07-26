@@ -6,11 +6,9 @@ MODPY_EGG_VERSION = 0.12.1
 DISTNAME =	PyX-${MODPY_EGG_VERSION}
 PKGNAME =	py-pyx-${MODPY_EGG_VERSION}
 CATEGORIES =	graphics devel
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	http://pyx.sourceforge.net/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

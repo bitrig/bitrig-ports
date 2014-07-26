@@ -3,9 +3,8 @@
 COMMENT =		generic HTTP types for Haskell
 
 DISTNAME =		http-types-0.8.0
+REVISION =		0
 CATEGORIES =		devel www
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

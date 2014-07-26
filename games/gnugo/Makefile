@@ -3,7 +3,7 @@
 COMMENT =	GNU version of Go
 
 DISTNAME =	gnugo-3.8
-REVISION =	0
+REVISION =	1
 CATEGORIES =	games
 
 HOMEPAGE =	https://www.gnu.org/software/gnugo/

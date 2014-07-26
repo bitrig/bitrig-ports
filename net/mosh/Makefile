@@ -6,13 +6,11 @@ COMMENT =		mobile shell
 
 DISTNAME =		mosh-1.2.4
 
-REVISION =		2
+REVISION =		3
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://mosh.mit.edu/
-
-MAINTAINER =		Jeremie Courreges-Anglas <jca@wxcvbn.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

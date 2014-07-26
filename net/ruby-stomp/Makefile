@@ -3,6 +3,7 @@
 COMMENT = 	Streaming Text Orientated Messaging Protocol (STOMP) client
 
 DISTNAME = 	stomp-1.3.2
+REVISION = 	0
 CATEGORIES = 	net
 
 HOMEPAGE =	https://github.com/stompgem/stomp

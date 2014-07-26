@@ -8,8 +8,8 @@ DISTNAME=		bouml_$V
 PKGNAME=		bouml-$V
 PKGNAME-main=		bouml-$V
 PKGNAME-docs=		bouml-docs-$V
-REVISION-main =		4
-REVISION-docs=		1
+REVISION-main =		5
+REVISION-docs=		2
 
 CATEGORIES=		devel x11
 

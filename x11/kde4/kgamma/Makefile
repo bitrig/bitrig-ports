@@ -2,6 +2,7 @@
 
 COMMENT =	KDE screen gamma management
 DISTNAME =	kgamma-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += ICE SM X11 Xext Xxf86vm

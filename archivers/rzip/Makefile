@@ -3,11 +3,9 @@
 COMMENT=	file compressor with a high compression ratio
 
 DISTNAME=	rzip-2.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	archivers
 HOMEPAGE=	http://rzip.samba.org/
-
-MAINTAINER=	Lawrence Teo <lteo@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

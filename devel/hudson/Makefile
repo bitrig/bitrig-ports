@@ -5,15 +5,13 @@ COMMENT =		continuous integration server
 VERSION =		1.365
 # nonsensical versioning, alas.
 DISTNAME =		hudson
-REVISION =		4
+REVISION =		5
 PKGNAME =		hudson-${VERSION}
 DIST_SUBDIR =		hudson-${VERSION}
 
 CATEGORIES =		devel
 
 HOMEPAGE =		http://hudson-ci.org/
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
 
 # Code under MIT license, Artwork under Creative Commons, 
 # See http://hudson.gotdns.com/wiki/display/HUDSON/Use+Hudson#UseHudson-License

@@ -3,6 +3,7 @@
 COMMENT=	perl module to manage XML RSS files
 
 DISTNAME=	XML-RSS-1.55
+REVISION=	0
 CATEGORIES=	textproc
 
 # perl

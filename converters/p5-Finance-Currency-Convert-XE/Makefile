@@ -3,6 +3,7 @@
 COMMENT= 		currency conversion
 
 DISTNAME=		Finance-Currency-Convert-XE-0.22
+REVISION=		0
 CATEGORIES=		converters
 MODULES=		cpan
 

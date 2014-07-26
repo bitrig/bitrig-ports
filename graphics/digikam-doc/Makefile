@@ -4,7 +4,7 @@ COMMENT=		documentation for digikam
 CATEGORIES=		graphics x11 x11/kde
 V=			0.9.3
 DISTNAME=		digikam-doc-$V
-REVISION=		2
+REVISION=		3
 PKGNAME=		digikam-doc-0.9.3
 HOMEPAGE=		http://www.digikam.org/
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=digikam/}

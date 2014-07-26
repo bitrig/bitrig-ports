@@ -4,10 +4,9 @@ COMMENT=	catalyst session IDs as URI extensions
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-Session-State-URI-0.15
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

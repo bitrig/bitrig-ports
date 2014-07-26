@@ -3,11 +3,10 @@
 COMMENT=		ncurses-based du(1)
 
 DISTNAME=		ncdu-1.10
+REVISION=		0
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://dev.yorhel.nl/ncdu/
-
-MAINTAINER =		Brian Callahan <bcallah@openbsd.org>
 
 MASTER_SITES=		http://dev.yorhel.nl/download/ \
 			${MASTER_SITE_SOURCEFORGE:=ncdu/}

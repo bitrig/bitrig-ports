@@ -3,7 +3,7 @@
 COMMENT=	3D block-dropping game
 
 DISTNAME=	xbl-1.1.5
-REVISION =	0
+REVISION =	1
 CATEGORIES=	games
 HOMEPAGE=	http://www710.univ-lyon1.fr/ftp/xbl/xbl.html
 

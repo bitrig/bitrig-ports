@@ -4,6 +4,7 @@ COMMENT =	access to more system calls than Perl normally provides
 
 MODULES =	cpan
 DISTNAME =	Sys-Syscall-0.23
+REVISION =	0
 
 CATEGORIES =	sysutils
 

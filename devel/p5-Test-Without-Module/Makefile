@@ -3,6 +3,7 @@
 COMMENT =	test fallback behaviour in absence of modules
 
 DISTNAME =	Test-Without-Module-0.17
+REVISION =	0
 CATEGORIES =	devel
 
 # Perl

@@ -4,9 +4,8 @@ COMMENT=		perl module to formating plaintext
 
 MODULES=		cpan
 DISTNAME=		Text-Reform-1.20
+REVISION=		0
 CATEGORIES=		textproc
-
-MAINTAINER=		Sam Smith <s@msmith.net>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

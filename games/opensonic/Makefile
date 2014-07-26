@@ -5,7 +5,7 @@ COMMENT =		game based on the Sonic the Hedgehog universe
 V =			0.1.2
 DISTNAME =		opensnc-src${V}
 PKGNAME =		opensonic-${V}
-REVISION =		2
+REVISION =		3
 
 CATEGORIES=		games
 

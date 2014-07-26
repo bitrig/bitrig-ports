@@ -5,6 +5,7 @@ COMMENT-server =	network and application monitoring - server
 COMMENT-web =		network and application monitoring - web frontend
 
 VERSION =		2.2.4
+REVISION =		0
 DISTNAME =		zabbix-${VERSION}
 FULLPKGNAME-main =	zabbix-agent-${VERSION}
 FULLPKGPATH-main =	net/zabbix,-main
@@ -16,8 +17,6 @@ CATEGORIES =		net
 MAJV =			${VERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 
 HOMEPAGE =		http://www.zabbix.com/
-
-MAINTAINER =		Robert Nagy <robert@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

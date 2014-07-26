@@ -3,11 +3,9 @@
 COMMENT=	attributes with aliases for constructor arguments for MooseX
 
 DISTNAME=	MooseX-MultiInitArg-0.01
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	devel
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

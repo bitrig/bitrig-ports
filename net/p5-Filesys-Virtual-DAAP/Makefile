@@ -4,7 +4,7 @@ COMMENT=	presents a DAAP share as a VFS
 
 MODULES=	cpan
 DISTNAME=	Filesys-Virtual-DAAP-0.04
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 USE_GROFF =	Yes
 

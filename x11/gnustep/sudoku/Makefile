@@ -3,7 +3,7 @@
 COMMENT =	GNUstep sudoku generator
 
 DISTNAME =	Sudoku-0.7
-REVISION =	4
+REVISION =	5
 CATEGORIES =	games
 
 HOMEPAGE =	http://gap.nongnu.org/sudoku/

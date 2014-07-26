@@ -3,9 +3,8 @@
 COMMENT =	check validity of IPv6 addresses
 
 DISTNAME =	Net-IPv6Addr-0.2
+REVISION =	0
 CATEGORIES =	net
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,11 +3,10 @@
 COMMENT =	clone of arcade game 'Defender' with a Linux theme
 
 DISTNAME =	defendguin-0.0.12
+REVISION =	0
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://www.newbreedsoftware.com/defendguin/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

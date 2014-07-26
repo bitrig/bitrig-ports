@@ -6,12 +6,10 @@ COMMENT=	FM radio input plug-in for XMMS
 
 DISTNAME=	xmms-FMRadio-1.5
 PKGNAME=	${DISTNAME:L}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	audio x11
 
 HOMEPAGE=	http://silicone.free.fr/xmms-FMRadio/
-
-MAINTAINER=	Vladimir Popov <pva48@mail.ru>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

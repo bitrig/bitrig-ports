@@ -3,7 +3,7 @@
 COMMENT=	multiuser tip/cu replacement with logging
 
 DISTNAME=       rtty-4.0
-REVISION =	0
+REVISION =	1
 CATEGORIES=	sysutils
 
 # BSD

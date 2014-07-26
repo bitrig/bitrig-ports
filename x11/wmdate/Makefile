@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; shows the current date
 
 DISTNAME=		wmdate-0.7
-REVISION=		2
+REVISION=		3
 CATEGORIES=		x11 x11/windowmaker
 
 # BSD

@@ -2,6 +2,7 @@
 
 COMMENT =	Baloo-based KDE Plasma widgets
 DISTNAME =	baloo-widgets-${MODKDE4_VERSION}
+REVISION =	0
 
 CATEGORIES =	devel
 HOMEPAGE =	https://projects.kde.org/projects/kde/kdelibs/baloo-widgets

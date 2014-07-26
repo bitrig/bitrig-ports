@@ -6,6 +6,7 @@ COMMENT =		AACS support library for Blu-ray playback
 
 V =			0.5.0
 DISTNAME =		libaacs-${V}
+REVISION =		0
 
 CATEGORIES =		multimedia
 

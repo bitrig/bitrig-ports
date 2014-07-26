@@ -3,11 +3,9 @@
 COMMENT=	event-driven IRC-client module
 
 DISTNAME=	POE-Component-IRC-6.52
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 USE_GROFF =	Yes
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

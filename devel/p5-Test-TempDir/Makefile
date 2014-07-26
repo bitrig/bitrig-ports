@@ -3,7 +3,7 @@
 COMMENT=		temporary files support for testing
 
 DISTNAME=		Test-TempDir-0.05
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		devel
 

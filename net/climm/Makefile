@@ -3,13 +3,11 @@
 COMMENT =		simple, command-line multi messenger
 
 DISTNAME =		climm-0.7.1
-REVISION = 		0
+REVISION = 		1
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://www.climm.org/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

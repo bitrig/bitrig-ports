@@ -3,7 +3,7 @@
 COMMENT=	module to talk to a UPS via NUT (Network UPS Tools) upsd
 
 DISTNAME=	UPS-Nut-0.04
-REVISION=	1
+REVISION=	2
 CATEGORIES=	sysutils
 MODULES=	cpan
 

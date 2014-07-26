@@ -14,4 +14,3 @@ MODULES+=		lang/ghc
 
 MODGHC_BUILD?=		cabal hackage haddock register
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>

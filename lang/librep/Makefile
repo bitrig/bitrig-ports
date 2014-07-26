@@ -7,15 +7,13 @@ SHARED_ONLY=	Yes
 VERSION=	0.92.2.1
 DISTNAME=	librep-${VERSION}
 
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  rep                  14.0     # .16.0
 
 CATEGORIES=	lang
 
 HOMEPAGE=	http://librep.sourceforge.net/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

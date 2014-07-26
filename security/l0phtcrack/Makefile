@@ -5,7 +5,7 @@ ONLY_FOR_ARCHS=	i386
 COMMENT=	Microsoft LANMAN & NT password sniffer/cracker
 
 PKGNAME=	l0phtcrack-2.52
-REVISION=	1
+REVISION=	2
 CATEGORIES=	security
 
 MASTER_SITES=	${MASTER_SITE_BACKUP}

@@ -5,10 +5,9 @@ COMMENT =	platform game featuring buggers equipped with weapons
 V =		0.5.2
 DISTNAME =	teeworlds-${V}-src
 PKGNAME =	teeworlds-${V}
-REVISION =	5
+REVISION =	6
 CATEGORIES =	games
 
-MAINTAINER =	Jonathan Armani <armani@openbsd.org>
 HOMEPAGE =	http://www.teeworlds.com/
 
 BAM_VERSION =	0.2.0

@@ -3,10 +3,8 @@
 COMMENT=		simulation of water waves on the X Window desktop
 
 DISTNAME=		xdesktopwaves-1.3
-REVISION=		2
+REVISION=		3
 CATEGORIES=		x11
-
-MAINTAINER=		Giovanni Bechis <g.bechis@snb.it>
 
 HOMEPAGE=		http://xdesktopwaves.sourceforge.net/
 

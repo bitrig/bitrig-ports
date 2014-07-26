@@ -2,15 +2,13 @@
 
 COMMENT=		XML parser designed for Jabber applications
 DISTNAME=		iksemel-1.4
-REVISION=		3
+REVISION=		4
 
 SHARED_LIBS=		iksemel		0.1	# .4.0
 
 CATEGORIES=		textproc net
 
 HOMEPAGE=		https://code.google.com/p/iksemel/
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

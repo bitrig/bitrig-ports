@@ -4,9 +4,8 @@ COMMENT =	webdav client library for Perl
 
 MODULES =	cpan
 DISTNAME =	HTTP-DAV-0.47
+REVISION =	0
 CATEGORIES =	www
-
-MAINTAINER =	Giovanni Bechis <giovanni@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

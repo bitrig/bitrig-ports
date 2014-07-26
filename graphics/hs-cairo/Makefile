@@ -3,12 +3,10 @@
 COMMENT =		Haskell bindings to cairo
 
 DISTNAME =		cairo-0.12.3.1
-REVISION =		2
+REVISION =		3
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://www.haskell.org/gtk2hs/
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

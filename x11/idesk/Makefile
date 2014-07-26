@@ -2,10 +2,8 @@
 
 COMMENT=		put clickable icons on the desktop
 
-MAINTAINER=		D. Adam Karim <adam@akarsoft.com>
-
 DISTNAME=		idesk-0.7.5
-REVISION=		3
+REVISION=		4
 CATEGORIES=		x11
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=idesk/}

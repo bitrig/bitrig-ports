@@ -5,10 +5,8 @@ COMMENT=	fast FTP and SFTP GUI client with a lot of features
 V=		3.8.1
 PKGNAME=	filezilla-$V
 DISTNAME=	FileZilla_$V_src
-REVISION=	0
+REVISION=	1
 EXTRACT_SUFX=	.tar.bz2
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 CATEGORIES=	net
 

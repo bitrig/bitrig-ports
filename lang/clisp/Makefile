@@ -5,10 +5,9 @@ ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64
 COMMENT =		ANSI Common Lisp implementation
 
 DISTNAME=		clisp-2.48
-REVISION =		4
+REVISION =		5
 CATEGORIES=		lang
 HOMEPAGE=		http://clisp.cons.org/
-MAINTAINER =		Joshua Elsasser <joshe@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

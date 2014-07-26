@@ -4,7 +4,7 @@ COMMENT =		dump unencrypted RTMP media streams
 
 DISTNAME =		flvstreamer-2.1c1
 WRKDIST =		${WRKDIR}/flvstreamer
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		net
 

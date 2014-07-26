@@ -3,7 +3,7 @@
 COMMENT=	generates simple manual pages from program output
 
 DISTNAME=	help2man-1.41.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=help2man/}
 

@@ -3,7 +3,7 @@
 COMMENT =		low-calorie MIME generator
 
 DISTNAME =		MIME-Lite-3.027
-REVISION =		1
+REVISION =		2
 CATEGORIES =		mail
 
 PERMIT_PACKAGE_CDROM =	Yes

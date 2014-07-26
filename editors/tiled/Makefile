@@ -5,7 +5,7 @@ COMMENT =		tile map editor
 V =			0.9.1
 DISTNAME =		tiled-qt-${V}
 PKGNAME =		tiled-${V}
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=		tiled                     0.0 # 1.0
 

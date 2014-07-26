@@ -5,9 +5,7 @@ COMMENT =		top-like monitor for Apache
 DISTNAME =		apachetop-0.12.6
 CATEGORIES =		sysutils
 
-REVISION=		1
-
-MAINTAINER =		Gonzalo L. R. <gonzalo@x61.com.ar>
+REVISION=		2
 
 HOMEPAGE =		http://freshmeat.net/projects/apachetop/
 

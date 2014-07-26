@@ -3,6 +3,7 @@
 COMMENT =		console interface for nagios
 
 DISTNAME =		cnagios-0.30
+REVISION =		0
 CATEGORIES =		net
 
 HOMEPAGE =		http://noc.hep.wisc.edu/cnagios.txt

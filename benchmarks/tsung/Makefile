@@ -4,6 +4,7 @@ COMMENT=	multi-protocol distributed load testing tool
 
 V=		1.4.2
 DISTNAME=	tsung-$V
+REVISION=	0
 
 CATEGORIES=	benchmarks net
 

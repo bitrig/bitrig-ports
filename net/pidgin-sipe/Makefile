@@ -7,12 +7,11 @@ SHARED_ONLY =		Yes
 COMMENT =		SIPE plugin for Pidgin
 
 DISTNAME =		pidgin-sipe-1.18.1
+REVISION =		0
 
 CATEGORIES =		net
 
 HOMEPAGE =		http://sipe.sourceforge.net/
-
-MAINTAINER =		Tom Doherty <tom@singlesecond.com>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

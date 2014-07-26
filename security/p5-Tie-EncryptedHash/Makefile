@@ -4,7 +4,7 @@ COMMENT=	hashes with encrypting fields
 
 MODULES=	cpan
 DISTNAME=	Tie-EncryptedHash-1.24
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
 USE_GROFF =	Yes
 

@@ -6,7 +6,7 @@ SHARED_ONLY =	Yes
 MODULES =	cpan
 DISTNAME =	Coro-6.23
 CATEGORIES =	devel
-REVISION =	0
+REVISION =	1
 
 
 # perl

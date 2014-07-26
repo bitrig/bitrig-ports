@@ -3,6 +3,7 @@
 COMMENT=	search mailboxes for a particular email
 
 DISTNAME=	grepmail-5.3033
+REVISION=	0
 CATEGORIES=	mail perl5
 
 # GPL

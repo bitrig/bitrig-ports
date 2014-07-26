@@ -5,12 +5,10 @@ COMMENT=	library/tools (incl smilint) to access SMI MIB information
 SHARED_LIBS +=  smi                  0.0      # 2.27
 
 DISTNAME=	libsmi-0.4.8
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.ibr.cs.tu-bs.de/projects/libsmi/
-
-MAINTAINER=	Nigel Taylor <nigel@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

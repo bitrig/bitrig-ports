@@ -3,7 +3,7 @@
 COMMENT=		wm-dockapp; front end for an mp3 player
 
 DISTNAME=		wmmp3-0.12
-REVISION=		3
+REVISION=		4
 CATEGORIES=		audio x11 x11/windowmaker
 
 HOMEPAGE=		http://www.dotfiles.com/software/wmmp3/

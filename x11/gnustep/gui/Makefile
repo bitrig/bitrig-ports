@@ -3,7 +3,7 @@
 COMMENT=	GNUstep gui library
 
 DISTNAME =	gnustep-gui-0.24.0
-REVISION =	0
+REVISION =	1
 
 CATEGORIES=	devel
 

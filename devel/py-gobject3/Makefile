@@ -7,7 +7,8 @@ GNOME_PROJECT=		pygobject
 GNOME_VERSION=		3.12.2
 MODPY_EGG_VERSION=	${GNOME_VERSION}
 
-REVISION-main = 1
+REVISION-main = 2
+REVISION-common = 0
 
 PKGNAME-main=		py-gobject3-${GNOME_VERSION}
 FULLPKGNAME-common=	py-gobject3-common-${GNOME_VERSION}
@@ -18,8 +19,6 @@ SUBST_VARS=		OSREV
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.pygtk.org/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes

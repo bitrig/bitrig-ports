@@ -4,7 +4,7 @@ COMMENT =		computing the convex hull
 
 VERSION =		2011.1
 DISTNAME =		qhull-${VERSION}
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		qhull6		0.0 # 6.2
 

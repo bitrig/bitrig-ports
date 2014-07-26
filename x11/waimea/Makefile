@@ -4,7 +4,7 @@ COMMENT=		virtual desktop manager for X11
 
 VERSION=		0.4.0
 DISTNAME=		waimea-${VERSION}
-REVISION=		6
+REVISION=		7
 CATEGORIES=		x11
 
 HOMEPAGE=		http://www.freedesktop.org/wiki/Software/waimea

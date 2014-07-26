@@ -4,6 +4,7 @@ COMMENT=	interact with Asterisk Manager Interface from perl
 
 DISTNAME=	Asterisk-AMI-v0.2.8
 PKGNAME=	p5-${DISTNAME:S/-v/-/}
+REVISION=	0
 CATEGORIES=	telephony perl5
 
 HOMEPAGE=	https://github.com/rrb3942/perl-Asterisk-AMI/

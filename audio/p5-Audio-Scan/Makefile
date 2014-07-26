@@ -5,9 +5,7 @@ COMMENT=	fast audio metadata and tag reader for Perl
 SHARED_ONLY=	Yes
 DISTNAME=	Audio-Scan-0.93
 CATEGORIES=	audio
-REVISION=	0
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
+REVISION=	1
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,12 +5,11 @@ COMMENT =		toolkit for safe and simple cryptography
 MODPY_EGG_VERSION =	0.71c
 DISTNAME =		python-keyczar-${MODPY_EGG_VERSION}
 PKGNAME =		py-keyczar-${MODPY_EGG_VERSION}
+REVISION =		0
 
 CATEGORIES =		security
 
 HOMEPAGE =		http://www.keyczar.org/
-
-MAINTAINER =		Robert Peichaer <rpe@openbsd.org>
 
 # Apache2
 PERMIT_PACKAGE_CDROM =	Yes

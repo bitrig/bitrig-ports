@@ -3,7 +3,7 @@
 COMMENT=	icecast source for streaming MP3
 
 DISTNAME=	ices-0.4
-REVISION=	9
+REVISION=	10
 CATEGORIES=	net audio
 
 HOMEPAGE=	http://www.icecast.org/ices.php

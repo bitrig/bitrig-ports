@@ -11,11 +11,11 @@ ECLIPSE_VER=		3.2.2
 DISTNAME=		eclipse-sourceBuild-srcIncluded-${ECLIPSE_VER}
 PKGNAME=		eclipse-sdk-${ECLIPSE_VER}
 PKGNAME-main=		eclipse-sdk-${ECLIPSE_VER}
-REVISION-main=		22
+REVISION-main=		23
 PKGNAME-swt=		swt-${ECLIPSE_VER}
-REVISION-swt=		6
+REVISION-swt=		7
 PKGNAME-gnome=		swt-gnome-${ECLIPSE_VER}
-REVISION-gnome=		5
+REVISION-gnome=		6
 SHARED_LIBS=		swt-atk-gtk-3236	4.0 \
 			swt-awt-gtk-3236	4.0 \
 			swt-gtk-3236		4.0 \
@@ -27,8 +27,6 @@ SHARED_LIBS=		swt-atk-gtk-3236	4.0 \
 CATEGORIES=		devel
 
 HOMEPAGE=		http://www.eclipse.org/
-
-MAINTAINER=		Kurt Miller <kurt@openbsd.org>
 
 # Eclipse Public License Version 1.0 (http://www.eclipse.org/legal/epl-v10.html)
 # Apache Software License 2.0 (http://www.apache.org/licenses/LICENSE-2.0)

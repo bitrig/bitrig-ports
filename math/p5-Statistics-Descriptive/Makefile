@@ -3,6 +3,7 @@
 COMMENT =		basic descriptive statistical functions
 
 DISTNAME =		Statistics-Descriptive-3.0604
+REVISION =		0
 CATEGORIES =		math
 
 # perl

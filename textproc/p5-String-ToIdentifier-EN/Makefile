@@ -2,9 +2,8 @@
 
 COMMENT =	convert strings to english program identifiers
 DISTNAME =	String-ToIdentifier-EN-0.11
+REVISION =	0
 CATEGORIES =	textproc
-
-MAINTAINER =	Andrew Fresh <andrew@cpan.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

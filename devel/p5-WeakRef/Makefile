@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT =	API to the Perl weak references
 
 DISTNAME =	WeakRef-0.01
-REVISION =	4
+REVISION =	5
 
 CATEGORIES =	devel
 

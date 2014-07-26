@@ -7,10 +7,9 @@ COMMENT=		simple GTK desktop news aggregator
 DISTNAME=		liferea-${V}
 CATEGORIES=		www x11
 EXTRACT_SUFX=		.tar.bz2
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://lzone.de/liferea/
-MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

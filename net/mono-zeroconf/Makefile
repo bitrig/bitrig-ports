@@ -4,7 +4,7 @@ COMMENT=	Zero Configuration Networking library for Mono
 
 V=		0.9.0
 DISTNAME=	mono-zeroconf-${V}
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	net
 

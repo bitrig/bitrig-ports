@@ -7,7 +7,7 @@ COMMENT=	gd binding for the lua language
 V=		2.0.33r2
 PKGNAME=	luagd-$(V)
 DISTNAME=	lua-gd-$(V)
-REVISION=	9
+REVISION=	10
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://lua-gd.luaforge.net/

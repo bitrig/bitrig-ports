@@ -3,6 +3,7 @@
 COMMENT=		fast markup combinator library
 
 DISTNAME=		blaze-markup-0.5.1.5
+REVISION=		0
 CATEGORIES=		textproc
 
 # BSD3

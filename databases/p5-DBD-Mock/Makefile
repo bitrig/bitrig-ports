@@ -4,9 +4,8 @@ COMMENT=	mock database driver for testing
 
 MODULES=	cpan
 DISTNAME=	DBD-Mock-1.39
+REVISION=	0
 CATEGORIES=	databases devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

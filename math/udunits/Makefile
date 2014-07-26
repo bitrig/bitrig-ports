@@ -2,10 +2,9 @@
 
 COMMENT =		library to manipulate units of physical quantities
 DISTNAME =		udunits-2.1.24
+REVISION =		0
 CATEGORIES =		math
 HOMEPAGE =		http://www.unidata.ucar.edu/software/udunits/
-
-MAINTAINER = 		Remi Pointel <rpointel@openbsd.org>
 
 # original BSD-like, with advertisement clause
 PERMIT_PACKAGE_CDROM =	Yes

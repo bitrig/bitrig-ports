@@ -3,12 +3,10 @@
 COMMENT =		convert source code to markup formats
 
 DISTNAME =		highlight-3.18
-REVISION =		0
+REVISION =		1
 CATEGORIES =		textproc converters
 
 HOMEPAGE =		http://www.andre-simon.de/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,12 +5,10 @@ COMMENT=	C compiler for GMC-4
 DISTNAME=	gmc4cc-0.6.2
 CATEGORIES=	devel lang
 
-REVISION=	2
+REVISION=	3
 
 # Japanese, use this for the English version: http://goo.gl/LPtgg
 HOMEPAGE=	http://terus.jp/engineering/gmc4cc/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

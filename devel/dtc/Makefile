@@ -3,6 +3,7 @@
 COMMENT=		Device Tree Compiler
 
 DISTNAME=		dtc-1.3.0
+REVISION=		0
 CATEGORIES=		sysutils devel
 MASTER_SITES=		http://comstyle.com/source/
 EXTRACT_SUFX=		.tar.xz

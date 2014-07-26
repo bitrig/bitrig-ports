@@ -6,14 +6,12 @@ VERSION=		0.5
 REV=			2306
 DISTNAME=		RuleDispatch
 PKGNAME=		py-ruledispatch-${VERSION}r${REV}
-REVISION=		0
+REVISION=		1
 EPOCH=			0
 
 CATEGORIES=		devel
 
 HOMEPAGE=		http://peak.telecommunity.com/
-
-MAINTAINER=		Martynas Venckus <martynas@openbsd.org>
 
 # PSF/ZPL
 PERMIT_PACKAGE_CDROM=	Yes

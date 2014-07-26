@@ -3,13 +3,12 @@
 COMMENT=	extract digital camera info tags from JPEG images
 
 DISTNAME=	libexif-0.6.21
+REVISION=	0
 SHARED_LIBS=	exif	13.1
 
 CATEGORIES=	graphics
 
 HOMEPAGE=	http://libexif.sourceforge.net/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=   Yes

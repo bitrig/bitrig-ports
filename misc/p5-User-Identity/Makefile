@@ -3,7 +3,7 @@
 COMMENT =		maintains info about a physical person
 
 DISTNAME =		User-Identity-0.93
-REVISION =		0
+REVISION =		1
 CATEGORIES =		misc
 
 # perl

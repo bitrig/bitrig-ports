@@ -5,11 +5,10 @@ DIST_VERS =	1.0.5
 XORG_VERS =	7.7
 DISTNAME =	xcursorgen-${DIST_VERS}
 PKGNAME =	xcursorgen-${XORG_VERS}
+REVISION =	0
 CATEGORIES =	x11
 
 HOMEPAGE =	http://wiki.X.Org/
-
-MAINTAINER =	Matthieu Herrb <matthieu@openbsd.org>
 
 LIB_DEPENDS =	graphics/png
 

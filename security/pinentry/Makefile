@@ -10,16 +10,14 @@ VERSION = 	0.8.1
 DISTNAME = 	pinentry-${VERSION}
 CATEGORIES = 	security
 
-REVISION-main = 1
-REVISION-gtk2 = 1
+REVISION-main = 2
+REVISION-gtk2 = 2
 PKGNAME-main = 	${DISTNAME}
 PKGNAME-gtk2 = 	pinentry-gtk2-${VERSION}
 
 MASTER_SITES = 	${MASTER_SITES_GNUPG:=pinentry/}
 
 HOMEPAGE = 	http://www.gnupg.org/related_software/pinentry/index.en.html
-
-MAINTAINER = 	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM = 	Yes

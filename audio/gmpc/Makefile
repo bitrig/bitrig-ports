@@ -4,11 +4,9 @@ COMMENT=		GNOME music player client
 
 VERSION=		11.8.16
 DISTNAME=		gmpc-${VERSION}
-REVISION =		8
+REVISION =		9
 
 CATEGORIES=		audio
-
-MAINTAINER=		Landry Breuil <landry@openbsd.org>
 
 HOMEPAGE =		http://gmpclient.org/
 

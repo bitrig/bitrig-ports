@@ -2,7 +2,7 @@
 
 COMMENT =	modular, cross-platform and multi-threaded benchmark tool
 DISTNAME =	sysbench-0.4.8
-REVISION =	7
+REVISION =	8
 CATEGORIES =	benchmarks
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=sysbench/}
 
@@ -12,8 +12,6 @@ HOMEPAGE =	http://sysbench.sourceforge.net/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		m c pthread
-
-MAINTAINER =		Jung Lee <moorang@gmail.com>
 
 BUILD_DEPENDS =		textproc/docbook-xsl
 NO_TEST =		Yes

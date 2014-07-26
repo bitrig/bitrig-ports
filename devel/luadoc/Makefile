@@ -5,7 +5,7 @@ PKG_ARCH =      *
 COMMENT=	documentation generation tool for Lua
 
 DISTNAME=	luadoc-3.0.1
-REVISION=	4
+REVISION=	5
 CATEGORIES=	devel
 
 HOMEPAGE=	http://luadoc.luaforge.net/

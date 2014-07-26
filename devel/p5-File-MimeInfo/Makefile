@@ -3,6 +3,7 @@
 COMMENT=		determine file types
 
 DISTNAME=		File-MimeInfo-0.26
+REVISION=		0
 CATEGORIES=		devel
 USE_GROFF =		Yes
 

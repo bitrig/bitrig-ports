@@ -7,9 +7,7 @@ COMMENT=	interface to the Blowfish encryption algorithm
 MODULES=	cpan
 DISTNAME=	Crypt-Blowfish-2.14
 CATEGORIES=	security
-REVISION=	0
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
+REVISION=	1
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes

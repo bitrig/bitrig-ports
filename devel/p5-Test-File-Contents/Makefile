@@ -4,7 +4,7 @@ COMMENT=		perl test framework for file contents
 
 MODULES=		cpan
 DISTNAME=		Test-File-Contents-0.05
-REVISION=		0
+REVISION=		1
 CATEGORIES=		devel
 
 # perl

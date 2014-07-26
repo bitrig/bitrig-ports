@@ -6,11 +6,9 @@ VERSION=		3.0.0
 DISTNAME=		scite${VERSION:S/.//g}
 PKGNAME=		scite-${VERSION}
 CATEGORIES=		editors x11
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://www.scintilla.org/SciTE.html
-
-MAINTAINER=		Jeremy Evans <jeremy@openbsd.org>
 
 # old Python license
 PERMIT_PACKAGE_CDROM=	may not sell

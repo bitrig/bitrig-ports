@@ -3,11 +3,9 @@
 COMMENT=		LaTeX development environment
 DISTNAME=		texmaker-4.1.1
 CATEGORIES=		editors
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://www.xm1math.net/texmaker/
-
-MAINTAINER=		Alexandr Shadchin <shadchin@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

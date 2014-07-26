@@ -3,10 +3,8 @@
 COMMENT =	X11 over a low bandwidth link
 VERSION =	3.8.2
 DISTNAME =	dxpc-${VERSION}
-REVISION =	1
+REVISION =	2
 CATEGORIES =	net x11
-
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 #		BSD
 PERMIT_PACKAGE_CDROM =	Yes

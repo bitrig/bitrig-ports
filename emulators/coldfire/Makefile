@@ -6,9 +6,7 @@ DISTNAME=	coldfire-0.3.1
 CATEGORIES=	emulators
 HOMEPAGE=	http://www.slicer.ca/coldfire/
 
-REVISION=	0
-
-MAINTAINER=	Martin Reindl <martin@openbsd.org>
+REVISION=	1
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

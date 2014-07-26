@@ -3,14 +3,13 @@
 COMMENT=	test performance of a remote TCP service
 
 VERSION=	5.2.0
+REVISION=	0
 DISTNAME=	echoping-${VERSION}
 CATEGORIES=	net
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=echoping/}
 
 HOMEPAGE=	http://echoping.sourceforge.net/
-
-MAINTAINER=     Jakob Schlyter <jakob@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

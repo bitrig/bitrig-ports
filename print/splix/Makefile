@@ -7,13 +7,11 @@ DISTNAME=	splix-${V}svn
 PKGNAME=	splix-${V}
 EXTRACT_SUFX=	.tar.bz2
 WRKDIST=	${WRKDIR}/splix
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	print
 
 HOMEPAGE=	http://splix.ap2c.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

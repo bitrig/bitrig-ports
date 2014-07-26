@@ -3,7 +3,7 @@
 COMMENT =		vertical shoot-em-up with nontraditional elements
 
 DISTNAME =		garden-1.0.8
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		games
 

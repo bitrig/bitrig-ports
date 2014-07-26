@@ -3,6 +3,7 @@
 COMMENT=	Python-based build system
 
 VERSION =	2.3.2
+REVISION =	0
 DISTNAME=	scons-${VERSION}
 CATEGORIES=	devel
 

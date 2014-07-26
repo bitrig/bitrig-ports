@@ -4,7 +4,7 @@ COMMENT=	clone of the ex/vi text editor
 
 DISTNAME=	elvis-2.2_0
 PKGNAME=	${DISTNAME:S/_/./}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	editors
 HOMEPAGE=	http://elvis.the-little-red-haired-girl.org/
 

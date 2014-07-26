@@ -5,11 +5,10 @@ COMMENT =	CLI program to download videos from YouTube and other sites
 MODPY_EGG_VERSION = 2014.07.15
 
 DISTNAME =	youtube-dl-${MODPY_EGG_VERSION}
+REVISION =	0
 CATEGORIES =	www
 
 HOMEPAGE =	http://rg3.github.io/youtube-dl/
-
-MAINTAINER =	Paul Irofti <pirofti@openbsd.org>
 
 # Public Domain
 PERMIT_PACKAGE_CDROM =		Yes

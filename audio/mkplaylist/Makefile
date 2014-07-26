@@ -4,11 +4,9 @@ COMMENT=		creates playlists from directory trees
 
 MODPY_EGG_VERSION=	0.4.5
 DISTNAME=		mkplaylist-${MODPY_EGG_VERSION}
-REVISION =		3
+REVISION =		4
 CATEGORIES=		audio
 HOMEPAGE=		http://bj.spline.de/software.html
-
-MAINTAINER=		Girish Venkatachalam <girish1729@gmail.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

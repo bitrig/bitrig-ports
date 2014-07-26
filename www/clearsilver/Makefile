@@ -9,7 +9,7 @@ COMMENT-python=	python bindings for clearsilver
 V=		0.10.4
 DISTNAME=	clearsilver-${V}
 EPOCH=		0
-REVISION=	10
+REVISION=	11
 
 PKGNAME-main=	${DISTNAME}
 PKGNAME-perl=	clearsilver-perl-${V}
@@ -19,8 +19,6 @@ CATEGORIES=	www net
 
 HOMEPAGE=       http://www.clearsilver.net/
 MASTER_SITES=   ${HOMEPAGE}/downloads/
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # Apache 1
 PERMIT_PACKAGE_CDROM=	Yes

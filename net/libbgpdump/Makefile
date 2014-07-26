@@ -3,6 +3,7 @@
 COMMENT=	library to analyze MRT-format BGP dump files
 
 DISTNAME=	libbgpdump-1.4.99.13
+REVISION=	0
 EXTRACT_SUFX=	.tgz
 
 SHARED_LIBS=	bgpdump 0.0

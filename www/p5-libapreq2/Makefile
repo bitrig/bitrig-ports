@@ -12,8 +12,6 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/J/JO/JOESUF/}
 MODULES=	converters/libiconv
 SHARED_LIBS=	apreq2	9.0
 
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
-
 # Artistic + GPL
 PERMIT_PACKAGE_CDROM=  Yes
 WANTLIB=	apr-1 aprutil-1 db expat

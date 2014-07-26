@@ -4,7 +4,7 @@ COMMENT=	manipulate SQL sort strings
 
 MODULES=	cpan
 DISTNAME=	Sort-SQL-0.08
-REVISION=	0
+REVISION=	1
 CATEGORIES=	databases devel
 
 # perl

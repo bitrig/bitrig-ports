@@ -3,7 +3,7 @@
 COMMENT=	city-building simulation
 
 DISTNAME=	micropolis-20080211
-REVISION=	4
+REVISION=	5
 WRKDIST=	${WRKDIR}/micropolis
 
 CATEGORIES=	games

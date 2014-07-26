@@ -3,7 +3,7 @@
 COMMENT=	MPEG layer I, II and III audio file encoder
 DISTNAME=	dist10
 PKGNAME=	mp3encode-1.10
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.sunet.se/pub/multimedia/Berkeley/mpeg2/conformance-bitstreams/audio/mpeg2/software/technical_report/
 

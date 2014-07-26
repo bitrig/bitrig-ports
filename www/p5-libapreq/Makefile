@@ -6,7 +6,7 @@ COMMENT=	generic Apache Request library
 
 MODULES=	cpan
 DISTNAME=	libapreq-1.34
-REVISION=	4
+REVISION=	5
 CATEGORIES=	www
 
 HOMEPAGE=	http://httpd.apache.org/apreq/

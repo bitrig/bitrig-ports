@@ -2,7 +2,7 @@
 
 COMMENT = 	C++ library of cryptographic algorithms
 CATEGORIES = 	devel security
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE = 	http://www.cryptopp.com/
 MASTER_SITES = 	${HOMEPAGE}
@@ -11,8 +11,6 @@ PKGNAME = 	cryptopp-5.6.2
 
 EXTRACT_SUFX = 	.zip
 WRKDIST = 	${WRKDIR}
-
-MAINTAINER =	David Coppa <dcoppa@openbsd.org>
 
 # individual files are public domain
 # compilation just has supplementary disclaimers (patents dreck)

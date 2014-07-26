@@ -2,7 +2,7 @@
 
 COMMENT=	perl module to provide a framework for a virtual filesystem
 DISTNAME=	Filesys-Virtual-0.06
-REVISION=	0
+REVISION=	1
 CATEGORIES=	sysutils
 
 # Perl

@@ -3,6 +3,7 @@
 COMMENT=	NetBus client
 
 DISTNAME=       lxnb-0.4
+REVISION=       0
 DISTFILES=	linux-netbus-client-v0.4.tgz
 CATEGORIES=	security
 

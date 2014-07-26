@@ -3,7 +3,7 @@
 COMMENT=	GUI to manage a certification authority
 
 DISTNAME=	tinyca2-0.7.5
-REVISION=	2
+REVISION=	3
 CATEGORIES=	security
 
 HOMEPAGE=	http://tinyca.sm-zone.net/

@@ -6,7 +6,7 @@ V=		20090110
 DISTNAME=	ion-3-${V}
 PKGNAME=	ion-${V}
 CATEGORIES=	x11
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://modeemi.cs.tut.fi/~tuomov/ion/
 MASTER_SITES=	http://tuomov.iki.fi/software/dl/

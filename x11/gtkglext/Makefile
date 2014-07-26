@@ -3,14 +3,12 @@
 COMMENT=	OpenGL extension to GTK+ 2.0 and later
 
 DISTNAME=	gtkglext-1.2.0
-REVISION=	11
+REVISION=	12
 SHARED_LIBS=	gdkglext-x11-1.0	0.0 \
 		gtkglext-x11-1.0	0.0
 CATEGORIES=	x11 graphics devel
 
 HOMEPAGE=	http://projects.gnome.org/gtkglext/
-
-MAINTAINER=	Steven Mestdagh <steven@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes

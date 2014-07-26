@@ -2,7 +2,7 @@
 
 COMMENT=	Library for delta compression of streams
 DISTNAME=	librsync-0.9.7
-REVISION=	2
+REVISION=	3
 SHARED_LIBS=	rsync 1.0
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=librsync/}

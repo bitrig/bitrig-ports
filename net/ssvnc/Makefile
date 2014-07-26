@@ -10,14 +10,12 @@ PKGNAME =		ssvnc-$V
 EPOCH =			0
 FULLPKGNAME-gui =	ssvnc-$V
 FULLPKGNAME-main =	ssvnc-viewer-$V
-REVISION-gui =		1
-REVISION-main =		0
+REVISION-gui =		2
+REVISION-main =		1
 
 CATEGORIES =		net x11
 
 HOMEPAGE =		http://www.karlrunge.com/x11vnc/ssvnc.html
-
-MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

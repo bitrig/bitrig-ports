@@ -4,9 +4,8 @@ COMMENT=	extension for generating XML
 
 MODULES=	cpan
 DISTNAME =	XML-Generator-1.04
+REVISION =	0
 CATEGORIES=	textproc
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

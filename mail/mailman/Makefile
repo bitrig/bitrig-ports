@@ -3,6 +3,7 @@
 COMMENT=	mailing list manager with web interface
 
 DISTNAME=	mailman-2.1.17
+REVISION=	0
 CATEGORIES=	mail www
 
 HOMEPAGE=	https://www.gnu.org/software/mailman/

@@ -2,7 +2,7 @@
 
 REV=		1.0
 VERSION=	${REV}.2a
-REVISION=	2
+REVISION=	3
 SHARED_LIBS=	net	0.0
 PKGSPEC =	libnet->=1.0,<1.1
 

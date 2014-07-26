@@ -6,7 +6,7 @@ DISTNAME =	burgerspace-1.9.2
 
 CATEGORIES=	games
 
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://sarrazip.com/dev/burgerspace.html
 

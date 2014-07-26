@@ -4,9 +4,8 @@ COMMENT=	access/create XML files/datas easily
 
 MODULES=	cpan
 DISTNAME=	XML-Smart-1.76
+REVISION=	0
 CATEGORIES=	textproc
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM=	Yes

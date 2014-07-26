@@ -4,6 +4,7 @@ COMMENT=	SAX2 writer
 
 MODULES=	cpan
 DISTNAME=	XML-SAX-Writer-0.53
+REVISION=	0
 CATEGORIES=	textproc
 
 # perl

@@ -3,7 +3,7 @@
 COMMENT =	Guenthers RSS reader
 
 DISTNAME =	Grr-1.0
-REVISION =	3
+REVISION =	4
 
 HOMEPAGE =	http://gap.nongnu.org/grr/
 MASTER_SITES =	${MASTER_SITE_SAVANNAH:=gap/}

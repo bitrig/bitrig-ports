@@ -3,6 +3,7 @@
 COMMENT=		declarative syntax for Moose
 
 DISTNAME=		MooseX-Declare-0.38
+REVISION=		0
 
 CATEGORIES=		devel
 

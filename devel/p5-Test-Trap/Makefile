@@ -4,10 +4,9 @@ COMMENT=		trap exit codes
 
 DISTNAME =		Test-Trap-v0.2.4
 PKGNAME=		p5-${DISTNAME:S/v//}
+REVISION=		0
 
 CATEGORIES=		devel
-
-MAINTAINER=		Kevin Lo <kevlo@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT=	PHP support for rar archives
 
 DISTNAME=	rar-3.0.1
 CATEGORIES=	archivers
-REVISION=	0
+REVISION=	1
 
 # PHP
 PERMIT_PACKAGE_CDROM=	Yes

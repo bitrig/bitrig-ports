@@ -3,6 +3,7 @@
 COMMENT =	sets the window manager name property of the root window
 
 DISTNAME =	wmname-0.1
+REVISION =	0
 
 CATEGORIES =	x11
 

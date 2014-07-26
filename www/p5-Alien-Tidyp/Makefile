@@ -4,6 +4,7 @@ COMMENT=	building, finding and using tidyp librar
 
 DISTNAME=	Alien-Tidyp-v1.4.6
 PKGNAME=	p5-${DISTNAME:S/v//}
+REVISION=	0
 CATEGORIES=	www
 MODULES=	cpan
 USE_GROFF =	Yes

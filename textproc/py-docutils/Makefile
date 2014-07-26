@@ -5,6 +5,7 @@ COMMENT =	process plaintext documentation into other formats
 MODPY_EGG_VERSION = 0.11
 DISTNAME =	docutils-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 CATEGORIES =	textproc
 
 HOMEPAGE =	http://docutils.sourceforge.net/

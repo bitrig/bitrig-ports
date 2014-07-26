@@ -6,10 +6,8 @@ COMMENT=		perl interface to the BSD kqueue system call
 
 MODULES=		cpan
 DISTNAME=		IO-KQueue-0.34
-REVISION=		1
+REVISION=		2
 CATEGORIES=		devel
-
-MAINTAINER=		Srebrenko Sehic <haver@insecure.dk>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

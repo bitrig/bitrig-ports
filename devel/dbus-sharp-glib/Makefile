@@ -3,6 +3,7 @@
 COMMENT=	GLib main loop integration for dbus-sharp
 
 DISTNAME=	dbus-sharp-glib-0.5.0
+REVISION=	0
 
 CATEGORIES=	devel
 

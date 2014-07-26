@@ -4,14 +4,12 @@
 COMMENT=		SNPP, TAP, email notification application
 
 V=			1.000003
-REVISION=		0
+REVISION=		1
 DISTNAME=		sendpage-${V}
 PKGNAME=		p5-SendPage-${V}
 CATEGORIES=		comms
 
 HOMEPAGE=		http://sendpage.org/
-
-MAINTAINER=		Todd T. Fries <todd@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -5,7 +5,7 @@ COMMENT-perl=	SNMP modules for Perl
 COMMENT-tkmib=	graphical SNMP MIB browser
 
 V=		5.7.2.1
-REVISION=	2
+REVISION=	3
 
 DISTNAME=	net-snmp-${V:S/pre/.pre/:S/rc/.rc/}
 MULTI_PACKAGES=	-main -perl -tkmib
@@ -24,8 +24,6 @@ CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=net-snmp/}
 
 HOMEPAGE=	http://www.net-snmp.org/
-
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

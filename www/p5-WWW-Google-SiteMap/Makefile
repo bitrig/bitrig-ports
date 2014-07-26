@@ -5,7 +5,7 @@ COMMENT= 	perl interface to google sitemap protocol
 MODULES=	cpan
 
 DISTNAME=	WWW-Google-SiteMap-1.09
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 CONFIGURE_STYLE=modbuild
 USE_GROFF =	Yes

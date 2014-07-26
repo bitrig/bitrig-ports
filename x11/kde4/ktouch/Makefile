@@ -2,6 +2,7 @@
 
 COMMENT =	touch typing learning tool for KDE
 DISTNAME =	ktouch-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += ICE SM X11 Xext xkbfile

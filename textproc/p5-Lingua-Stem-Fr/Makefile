@@ -4,7 +4,7 @@ COMMENT=	French language stemming
 
 MODULES=	cpan
 DISTNAME=	Lingua-Stem-Fr-0.02
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 # Artistic

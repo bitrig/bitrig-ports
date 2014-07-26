@@ -7,7 +7,7 @@ COMMENT=		Perl extension for Ogg Vorbis streams
 V=			0.05
 DISTNAME=		libvorbis-perl-${V}
 PKGNAME=		p5-libvorbis-${V}
-REVISION=		4
+REVISION=		5
 CATEGORIES=		audio
 
 # GPL or Artistic

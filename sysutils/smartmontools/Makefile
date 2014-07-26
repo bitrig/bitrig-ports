@@ -5,12 +5,11 @@ ONLY_FOR_ARCHS=		amd64 i386 powerpc
 COMMENT=		control and monitor storage systems using SMART
 
 DISTNAME=		smartmontools-6.2
+REVISION=		0
 CATEGORIES=		sysutils
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=smartmontools/}
 HOMEPAGE=		http://smartmontools.sourceforge.net/
-
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 USE_GMAKE=      	Yes
 USE_GROFF =		Yes

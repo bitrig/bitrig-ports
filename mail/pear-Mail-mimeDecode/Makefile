@@ -3,7 +3,7 @@
 COMMENT=	class to decode mime messages
 
 DISTNAME=	Mail_mimeDecode-1.5.1
-REVISION=		0
+REVISION=		1
 CATEGORIES=	mail
 
 MODULES=	www/pear

@@ -4,8 +4,8 @@ COMMENT =		perl Web Server Gateway Interface Specification
 
 MODULES =		cpan
 DISTNAME =		PSGI-1.03
+REVISION =		0
 CATEGORIES =		www
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 CPAN_AUTHOR	=	MIYAGAWA
 
 # Perl

@@ -5,13 +5,11 @@ COMMENT=		connect to VNC server and save screen images
 V=			1.2a
 DISTNAME=		vncsnapshot-$V-src
 PKGNAME=		vncsnapshot-$V
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		net
 
 HOMEPAGE=		http://vncsnapshot.sourceforge.net/
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

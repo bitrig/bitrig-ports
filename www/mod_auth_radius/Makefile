@@ -1,6 +1,6 @@
 # $OpenBSD: Makefile,v 1.24 2014/03/13 17:33:27 sthen Exp $
 
-REVISION=	9
+REVISION=	10
 DISTNAME=	mod_auth_radius-1.5.7
 CATEGORIES=	www
 MODULES+=	apache-module

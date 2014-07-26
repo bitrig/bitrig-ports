@@ -3,11 +3,10 @@
 COMMENT=		dockable program launcher
 
 DISTNAME=		mterm-0.4.2b
+REVISION=		0
 CATEGORIES=		x11
 
 HOMEPAGE=		http://mterm.sourceforge.net/
-
-MAINTAINER=		Nick Nauwelaerts <nick@nauwelaerts.net>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

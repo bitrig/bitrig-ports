@@ -5,13 +5,11 @@ COMMENT =		Object Relational Manager
 MODPY_EGG_VERSION =	0.10.4
 DISTNAME =		SQLObject-${MODPY_EGG_VERSION}
 PKGNAME =		py-sqlobject-${MODPY_EGG_VERSION}
-REVISION =		2
+REVISION =		3
 
 CATEGORIES =		databases
 
 HOMEPAGE =		http://www.sqlobject.org/
-
-MAINTAINER =		Martynas Venckus <martynas@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM =	Yes

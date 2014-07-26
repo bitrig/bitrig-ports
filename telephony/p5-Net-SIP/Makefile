@@ -3,10 +3,9 @@
 COMMENT =		perl framework for SIP
 
 DISTNAME =		Net-SIP-0.687
+REVISION =		0
 
 CATEGORIES =		net telephony
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

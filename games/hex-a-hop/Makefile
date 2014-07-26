@@ -4,7 +4,7 @@ COMMENT =		hexagonal tile-based puzzle game
 DISTNAME =		hex-a-hop-1.1.0
 CATEGORIES =		games
 HOMEPAGE =		http://hexahop.sourceforge.net
-REVISION =		0
+REVISION =		1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

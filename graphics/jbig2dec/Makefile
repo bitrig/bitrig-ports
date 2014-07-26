@@ -5,6 +5,7 @@ SHARED_LIBS +=	jbig2dec             0.0      # 0.0
 COMMENT =	decoder for JBIG2 monochrome hi-res image compression format
 
 DISTNAME =	jbig2dec-0.11
+REVISION =	0
 DISTFILES =	${DISTNAME}${EXTRACT_SUFX} \
 		jb2streams.zip:0
 

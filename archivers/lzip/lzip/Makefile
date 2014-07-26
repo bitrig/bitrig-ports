@@ -3,7 +3,7 @@
 COMMENT =		lossless data compressor
 
 DISTNAME =		lzip-1.15
-REVISION =		2
+REVISION =		3
 
 HOMEPAGE =		http://lzip.nongnu.org/lzip.html
 

@@ -3,10 +3,9 @@
 COMMENT =		event based IRC client API
 
 DISTNAME =		AnyEvent-IRC-0.97
+REVISION =		0
 
 CATEGORIES =		net devel
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

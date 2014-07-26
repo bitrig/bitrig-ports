@@ -3,7 +3,7 @@
 COMMENT=	LiveJournal client for Python
 
 DISTNAME=	charm-1.7.0
-REVISION=	7
+REVISION=	8
 CATEGORIES=	net news
 
 HOMEPAGE=	http://ljcharm.sourceforge.net/

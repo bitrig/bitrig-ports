@@ -3,7 +3,7 @@
 COMMENT=	server for the DAA protocol
 
 DISTNAME=	daapd-0.2.4b
-REVISION=	6
+REVISION=	7
 EXTRACT_SUFX=	.tgz
 CATEGORIES=	audio net
 MASTER_SITES=	${HOMEPAGE}

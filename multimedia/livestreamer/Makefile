@@ -3,11 +3,10 @@
 MODPY_EGG_VERSION =	1.8.1
 COMMENT =	pipe video streams into a video player
 DISTNAME =	livestreamer-${MODPY_EGG_VERSION}
+REVISION =	0
 CATEGORIES =	multimedia net
 
 HOMEPAGE =	http://livestreamer.tanuki.se/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # BSD
 # src/livestreamer/packages/pbs.py: MIT

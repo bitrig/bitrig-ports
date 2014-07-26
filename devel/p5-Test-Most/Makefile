@@ -2,9 +2,8 @@
 
 COMMENT =	most commonly needed test functions and features
 DISTNAME =	Test-Most-0.33
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Andrew Fresh <andrew@cpan.org>
 
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes

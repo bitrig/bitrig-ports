@@ -4,7 +4,7 @@ COMMENT =		control aucat and/or sndiod volume
 DISTNAME =		aucatctl-0.1
 CATEGORIES =		audio
 HOMEPAGE =		http://www.sndio.org/
-REVISION =		0
+REVISION =		1
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

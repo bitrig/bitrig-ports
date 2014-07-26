@@ -4,7 +4,7 @@ COMMENT =	infinite-world block sandbox game
 V =		0.4.9
 DISTNAME =	minetest-${V}
 CATEGORIES =	games x11
-REVISION =	2
+REVISION =	3
 
 HOMEPAGE =	http://www.minetest.net/
 

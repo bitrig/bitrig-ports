@@ -6,7 +6,7 @@ COMMENT=		unbless perl objects
 
 DISTNAME =		Acme-Damn-0.05
 CATEGORIES=		devel
-REVISION =		0
+REVISION =		1
 
 MODULES=		cpan
 

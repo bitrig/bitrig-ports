@@ -3,12 +3,11 @@
 COMMENT=		skiing simulation game
 
 DISTNAME=		ski-6.8
+REVISION=		0
 CATEGORIES=		games
 
 HOMEPAGE=		http://catb.org/~esr/ski/
 MASTER_SITES=		http://catb.org/~esr/ski/
-
-MAINTAINER=		Gleydson Soares <gsoares@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

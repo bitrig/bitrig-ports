@@ -4,12 +4,10 @@ COMMENT=	ircII internet relay chat client
 
 DISTNAME=	tkirc2.46
 PKGNAME=	tkirc-2.46
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 
 HOMEPAGE=	http://netsplit.de/tkirc2/
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=   Yes

@@ -3,7 +3,7 @@
 COMMENT=		module providing routines to submit songs to last.fm
 
 DISTNAME=		Music-Audioscrobbler-Submit-0.05
-REVISION=		1
+REVISION=		2
 CATEGORIES=		audio
 
 # perl

@@ -10,10 +10,9 @@ COMMENT=	pager utility that speaks Chinese
 
 DISTNAME=       cless-290
 PKGNAME=        zh-${DISTNAME}
+REVISION=        0
 CATEGORIES=     chinese misc
 MASTER_SITES=   ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/unix/c-utils/
-
-MAINTAINER=     Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

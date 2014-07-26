@@ -5,11 +5,9 @@ ONLY_FOR_ARCHS=	i386 amd64
 COMMENT=	general-purpose protocol-blind fuzzer for C programs
 
 DISTNAME=	bunny-0.93
-REVISION=	0
+REVISION=	1
 CATEGORIES=    	security net
 EXTRACT_SUFX=	.tgz
-
-MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 HOMEPAGE=	https://code.google.com/p/bunny-the-fuzzer/
 

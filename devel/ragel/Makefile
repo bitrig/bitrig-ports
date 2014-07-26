@@ -4,7 +4,7 @@ COMMENT =	state machine compiler
 
 DISTNAME =	ragel-6.7
 CATEGORIES =	devel
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	http://www.complang.org/ragel/
 

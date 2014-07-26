@@ -10,8 +10,8 @@ V=		7.0.9
 DISTNAME=	AdobeReader_enu-${V}-1.i386
 PKGNAME-main=	acroread-${V}
 PKGNAME-plugins=acroread-plugins-${V}
-REVISION-main=		2
-REVISION-plugins=	2
+REVISION-main=		3
+REVISION-plugins=	3
 CATEGORIES=	print
 SHARED_LIBS=	ACE	2.07 \
 		AGM	4.14 \

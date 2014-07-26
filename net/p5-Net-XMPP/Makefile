@@ -3,7 +3,7 @@
 COMMENT=		XMPP perl library
 
 DISTNAME=		Net-XMPP-1.02
-REVISION=		1
+REVISION=		2
 CATEGORIES=		net
 
 MODULES=		cpan

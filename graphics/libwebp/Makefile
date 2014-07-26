@@ -3,6 +3,7 @@
 COMMENT=	Google WebP image format conversion tool
 
 DISTNAME=	libwebp-0.4.0
+REVISION=	0
 CATEGORIES=	graphics
 MASTER_SITES=	https://webp.googlecode.com/files/
 

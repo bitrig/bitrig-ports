@@ -4,11 +4,9 @@ COMMENT=        module to format validation for Net:: related strings
 
 MODULES=	cpan
 DISTNAME=	Validate-Net-0.6
-REVISION=	0
+REVISION=	1
 CATEGORIES=     net devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 CPAN_AUTHOR=	ADAMK
 

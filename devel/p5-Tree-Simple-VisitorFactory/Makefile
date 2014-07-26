@@ -4,11 +4,9 @@ COMMENT=	factory for Tree::Simple visitor objects
 
 MODULES=	cpan
 DISTNAME=	Tree-Simple-VisitorFactory-0.10
-REVISION=	2
+REVISION=	3
 CATEGORIES=	devel
 USE_GROFF =	Yes
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes

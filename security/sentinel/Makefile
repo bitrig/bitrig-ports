@@ -3,12 +3,10 @@
 COMMENT=		remote promiscuous mode detection tool
 
 DISTNAME=		sentinel-1.0
-REVISION =		1
+REVISION =		2
 CATEGORIES=    		security net
 
 HOMEPAGE=		http://www.packetfactory.net/projects/sentinel/
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	no license
 PERMIT_PACKAGE_FTP=	no license

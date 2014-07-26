@@ -3,7 +3,7 @@
 COMMENT=	approximate grep (fast approximate pattern-matching tool)
 
 DISTNAME=	agrep-2.04
-REVISION =	0
+REVISION =	1
 CATEGORIES=	textproc
 
 MASTER_SITES=	ftp://ftp.cs.arizona.edu/agrep/

@@ -4,6 +4,7 @@ COMMENT=		free replacements of Intel UPnP tools
 
 GNOME_PROJECT=		gupnp-tools
 GNOME_VERSION=		0.8.9
+REVISION=		0
 
 MODULES=		devel/gettext \
 			x11/gnome

@@ -4,12 +4,11 @@ COMMENT=	lightweight CalDAV and CardDAV server
 
 DISTNAME=	baikal-regular-0.2.7
 PKGNAME=	${DISTNAME:S/-regular//}
+REVISION=	0
 EXTRACT_SUFX=	.tgz
 CATEGORIES=	productivity www
 
 HOMEPAGE=	http://baikal-server.com/
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

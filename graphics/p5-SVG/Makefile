@@ -3,9 +3,8 @@
 COMMENT=	Scalable Vector Graphics (SVG) in perl
 
 DISTNAME=	SVG-2.59
+REVISION=	0
 CATEGORIES=	graphics devel
-
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

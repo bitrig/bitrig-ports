@@ -7,6 +7,7 @@ EPOCH=		0
 DISTNAME=	${V}
 DIST_SUBDIR=	nyancat
 PKGNAME=	nyancat-${V}
+REVISION=	0
 
 CATEGORIES=	misc
 

@@ -4,10 +4,9 @@ COMMENT=		color-able replacement for tail(1)
 
 DISTNAME=		colortail-0.3.0
 CATEGORIES=		sysutils
-REVISION=		1
+REVISION=		2
 
 MASTER_SITES=           http://keyserver.kjsl.com/~jharris/distfiles/
-MAINTAINER=		Robert Nagy <robert@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

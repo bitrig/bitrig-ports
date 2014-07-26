@@ -6,7 +6,8 @@ COMMENT-main=	scan ports and fingerprint stack of network hosts
 COMMENT-zenmap=	graphical frontend for nmap
 
 MODPY_EGG_VERSION=	6.46
-REVISION-main=		0
+REVISION-main=		1
+REVISION-zenmap=	0
 DISTNAME=		nmap-${MODPY_EGG_VERSION}
 PKGNAME-main=		${DISTNAME}
 PKGNAME-zenmap=		nmap-zenmap-${MODPY_EGG_VERSION}
@@ -16,8 +17,6 @@ MASTER_SITES=	http://nmap.org/dist/
 EXTRACT_SUFX=	.tgz
 
 HOMEPAGE=	http://www.nmap.org/
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPL (v2 only), with additional clarifications and exceptions, see COPYING
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 COMMENT =		library for rasterizing 2-D vector graphics
 
 DISTNAME =		libxmi-1.2
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=		xmi	0.0
 

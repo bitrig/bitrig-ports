@@ -3,9 +3,8 @@
 COMMENT =	faster SELECTs when using ruby-sequel with ruby-pg
 
 DISTNAME =	sequel_pg-1.6.10
+REVISION =	0
 CATEGORIES =	databases
-
-MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 HOMEPAGE =	https://github.com/jeremyevans/sequel_pg
 

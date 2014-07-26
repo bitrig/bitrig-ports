@@ -4,10 +4,8 @@ COMMENT=	Z shell, Bourne shell-compatible
 
 V=		5.0.5
 DISTNAME=	zsh-$V
-REVISION=	0
+REVISION=	1
 CATEGORIES=	shells
-
-MAINTAINER=	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 HOMEPAGE=	http://www.zsh.org/
 

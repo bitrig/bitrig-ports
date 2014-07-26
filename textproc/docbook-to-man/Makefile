@@ -9,7 +9,7 @@ MASTER_SITES= 	http://www.oasis-open.org/docbook/tools/dtm/
 DIST_SUBDIR=	${DISTNAME}-${VERSION}
 DISTNAME=	docbook-to-man
 PKGNAME=	docbook-to-man-${VERSION}
-REVISION =	2
+REVISION =	3
 WANTLIB=	c
 
 # basic in debian

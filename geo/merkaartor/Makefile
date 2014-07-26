@@ -3,14 +3,13 @@
 COMMENT =	OpenStreetMap editor
 
 DISTNAME =	merkaartor-0.18.1
-REVISION =	0
+REVISION =	1
 EXTRACT_SUFX =	.tar.bz2
 SHARED_ONLY =	Yes
 
 CATEGORIES =	geo x11
 
 HOMEPAGE =	http://www.merkaartor.be/
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,6 +4,7 @@ COMMENT=		check for HTML errors in a string or file
 
 MODULES=		cpan
 DISTNAME=		HTML-Lint-2.20
+REVISION=		0
 CATEGORIES=		www
 
 # perl

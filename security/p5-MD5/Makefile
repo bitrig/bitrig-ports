@@ -6,10 +6,8 @@ COMMENT=	interface to md5 message-digest algorithm
 
 MODULES=	cpan
 DISTNAME=	MD5-1.7
-REVISION=	4
+REVISION=	5
 CATEGORIES=	security
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=   Yes

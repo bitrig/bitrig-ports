@@ -3,6 +3,7 @@
 COMMENT=		method declarations with type constraints
 
 DISTNAME=		MooseX-Method-Signatures-0.47
+REVISION=		0
 
 CATEGORIES=		devel
 

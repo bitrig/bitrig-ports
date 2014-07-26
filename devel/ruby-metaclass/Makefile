@@ -3,7 +3,7 @@
 COMMENT=		adds a metaclass method to all Ruby objects
 
 DISTNAME=		metaclass-0.0.1
-REVISION =		0
+REVISION =		1
 CATEGORIES=		devel
 
 # MIT

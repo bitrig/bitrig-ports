@@ -4,14 +4,13 @@ COMMENT=	library for loading and enumurating of PKCS\#11 modules
 SHARED_ONLY =	Yes
 
 DISTNAME=	p11-kit-0.20.3
+REVISION=	0
 
 CATEGORIES=	security
 
 SHARED_LIBS +=  p11-kit              1.0      # 0.0
 
 HOMEPAGE=	http://p11-glue.freedesktop.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes

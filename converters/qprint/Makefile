@@ -3,6 +3,7 @@
 COMMENT=	converter to/from quoted-printable encoding
 
 DISTNAME=	qprint-1.0
+REVISION=	0
 CATEGORIES=	converters
 HOMEPAGE=	http://www.fourmilab.ch/webtools/qprint/
 

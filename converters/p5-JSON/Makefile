@@ -3,10 +3,9 @@
 COMMENT= 	parse and convert to JSON (JavaScript Object Notation)
 
 DISTNAME=	JSON-2.90
+REVISION=	0
 CATEGORIES=	converters
 MODULES=	cpan
-
-MAINTAINER=	Genadijus Paleckis <rwx@openbsd.lt>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

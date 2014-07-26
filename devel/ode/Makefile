@@ -4,11 +4,9 @@ COMMENT =	high performance library for simulating rigid body dynamics
 SHARED_LIBS += 	ode	1.0	# 3.0
 DISTNAME = 	ode-0.12
 CATEGORIES =	devel
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE =	http://www.ode.org/
-
-MAINTAINER = 	Kirill Bychkov <kirby@openbsd.org>
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=opende/}
 

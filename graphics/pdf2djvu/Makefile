@@ -5,13 +5,11 @@ COMMENT =		creates DjVu files from PDF files
 V =			0.7.17
 DISTNAME =		pdf2djvu_${V}
 PKGNAME =		pdf2djvu-${V}
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://jwilk.net/software/pdf2djvu
-
-MAINTAINER =		Juan Francisco Cantero Hurtado <juanfra@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

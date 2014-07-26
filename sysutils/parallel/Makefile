@@ -3,12 +3,11 @@
 COMMENT =		execute jobs in parallel
 
 DISTNAME =		parallel-20140522
+REVISION =		0
 
 CATEGORIES =		sysutils
 
 HOMEPAGE =		https://www.gnu.org/software/parallel/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes

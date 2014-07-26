@@ -3,7 +3,7 @@
 COMMENT=	enhanced performance test of filesystem I/O
 
 DISTNAME=	bonnie++-1.97
-REVISION=	1
+REVISION=	2
 WRKDIST=	${WRKDIR}/${DISTNAME}.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.coker.com.au/bonnie++/experimental/

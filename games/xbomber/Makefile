@@ -5,7 +5,7 @@ COMMENT=		colorful game where you blow other people/robots up
 VERSION=		0.8
 DISTNAME=		xbomber.${VERSION}
 PKGNAME=		xbomber-${VERSION}
-REVISION=		1
+REVISION=		2
 CATEGORIES=		games x11
 
 HOMEPAGE=		http://www.newbreedsoftware.com/xbomber/

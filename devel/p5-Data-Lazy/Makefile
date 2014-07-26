@@ -4,7 +4,7 @@ COMMENT= 	lazy variables
 
 MODULES=	cpan
 DISTNAME=	Data-Lazy-0.6
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # perl

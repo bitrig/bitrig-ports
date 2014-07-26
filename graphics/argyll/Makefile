@@ -5,6 +5,7 @@ COMMENT=	ICC compatible color management system
 V=		1.6.3
 DISTNAME=	Argyll_V${V}_src
 PKGNAME=	argyllcms-${V}
+REVISION=	0
 EXTRACT_SUFX=	.zip
 WRKDIST=	${WRKDIR}/${DISTNAME:S/_src//}
 

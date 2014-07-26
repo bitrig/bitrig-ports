@@ -3,11 +3,9 @@
 COMMENT=	set of programs to enhance firewall security
 
 DISTNAME=	proxy-suite-1.9
-REVISION=	0
+REVISION=	1
 HOMEPAGE=	http://www.suse.com/en/whitepapers/proxy_suite/
 CATEGORIES=    	net security
-
-MAINTAINER=	Camiel Dobbelaar <cd@sentia.nl>
 
 MASTER_SITES= 	ftp://ftp.suse.com/pub/projects/proxy-suite/src/
 

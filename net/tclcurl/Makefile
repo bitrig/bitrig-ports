@@ -7,8 +7,7 @@ COMMENT =	Tcl bindings for Curl
 DISTNAME =	TclCurl-7.19.6
 SHARED_LIBS =	TclCurl7196 0.0
 CATEGORIES =	net
-REVISION =	1
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
+REVISION =	2
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

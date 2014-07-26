@@ -3,6 +3,7 @@
 COMMENT =		3D scene description translator for TeX
 
 DISTNAME =		sketch-0.3.2
+REVISION =		0
 EXTRACT_SUFX =		.tgz
 
 CATEGORIES =		graphics

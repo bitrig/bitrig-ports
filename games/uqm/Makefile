@@ -30,19 +30,17 @@ PKGNAME-remix2=		uqm-remix2-${VER}
 PKGNAME-remix3=		uqm-remix3-${VER}
 PKGNAME-threedomusic=	uqm-threedomusic-${VER}
 PKGNAME-voice=		uqm-voice-${VER}
-REVISION-main=		1
-REVISION-content=	1
-REVISION-remix1=	1
-REVISION-remix2=	1
-REVISION-remix3=	1
-REVISION-threedomusic=	1
-REVISION-voice=		1
+REVISION-main=		2
+REVISION-content=	2
+REVISION-remix1=	2
+REVISION-remix2=	2
+REVISION-remix3=	2
+REVISION-threedomusic=	2
+REVISION-voice=		2
 EXTRACT_ONLY=		${PDIST}
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sc2/}
 
 HOMEPAGE=		http://sc2.sourceforge.net/
-
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
 
 # code GPLv2+, data Creative Commons Attribution-NonCommercial-ShareAlike 2.5
 # NC does not apply to unmodified uqm distributions, but mark it to be safe

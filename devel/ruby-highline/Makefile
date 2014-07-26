@@ -3,6 +3,7 @@
 COMMENT =		high-level IO library for Ruby
 
 DISTNAME =		highline-1.6.21
+REVISION =		0
 CATEGORIES =		devel
 
 HOMEPAGE =		http://highline.rubyforge.org/

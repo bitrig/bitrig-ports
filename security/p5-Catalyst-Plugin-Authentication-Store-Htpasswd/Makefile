@@ -3,10 +3,8 @@
 COMMENT= 	catalyst authentication via .htpasswd
 
 DISTNAME=	Catalyst-Plugin-Authentication-Store-Htpasswd-0.02
-REVISION=	2
+REVISION=	3
 CATEGORIES=	security
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

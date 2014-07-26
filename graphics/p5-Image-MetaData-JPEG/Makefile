@@ -4,11 +4,9 @@ COMMENT=	access and modify JPEG metadata
 
 MODULES=	cpan
 DISTNAME=	Image-MetaData-JPEG-0.156
-REVISION=	0
+REVISION=	1
 CATEGORIES=	graphics
 USE_GROFF =	Yes
-
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

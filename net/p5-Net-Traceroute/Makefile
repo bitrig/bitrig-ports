@@ -4,6 +4,7 @@ COMMENT=		traceroute(1) functionality in perl
 
 MODULES=		cpan
 DISTNAME=		Net-Traceroute-1.13
+REVISION=		0
 CATEGORIES=		net
 
 HOMEPAGE=		http://www.linnaean.org/~hag/perl/traceroute/traceroute.html

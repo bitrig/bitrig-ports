@@ -4,6 +4,7 @@ COMMENT=		window and compositing manager
 
 GNOME_PROJECT=		mutter
 GNOME_VERSION=		3.12.2
+REVISION=		0
 
 SHARED_LIBS +=  mutter                    0.1 # 0.0
 

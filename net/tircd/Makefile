@@ -4,7 +4,7 @@ COMMENT=	ircd proxy to the twitter API
 
 DISTNAME=	tircd_v0.7
 PKGNAME=	${DISTNAME:S/_v/-/}
-REVISION=	0
+REVISION=	1
 
 CATEGORIES=	net
 

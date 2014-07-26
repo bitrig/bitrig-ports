@@ -2,11 +2,10 @@
 
 COMMENT =		enhanced OCaml toplevel
 DISTNAME =		utop-1.5
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
 
 HOMEPAGE =		https://forge.ocamlcore.org/projects/utop/
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes

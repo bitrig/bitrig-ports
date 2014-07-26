@@ -3,6 +3,7 @@
 COMMENT=	extract valid data from within an Excel spreadsheet
 PROJECT =	freexl
 DISTNAME=	${PROJECT}-1.0.0e
+REVISION=	0
 CATEGORIES=	converters geo
 SHARED_LIBS=	freexl 0.0 #1.0
 

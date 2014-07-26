@@ -4,9 +4,8 @@ COMMENT=	module to read a file starting at the end
 
 MODULES=	cpan
 DISTNAME=	File-ReadBackwards-1.05
+REVISION=	0
 CATEGORIES=	devel
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -8,14 +8,13 @@ SHARED_ONLY =	Yes
 
 DISTNAME = 	stepmania-5.0b2a
 PKGNAME =	stepmania-5.0beta2a
-REVISION =	4
+REVISION =	5
 EXTRACT_SUFX = 	-src.tar.bz2
 HOMEPAGE =	http://www.stepmania.com
 MASTER_SITES = 	${MASTER_SITE_SOURCEFORGE:=stepmania/}
 
 # Code base is mostly BSD, with a few tidbits GPL
 PERMIT_PACKAGE_CDROM = Yes
-MAINTAINER =	Marc Espie <espie@openbsd.org>
 
 WRKDIST = 	${WRKDIR}/stepmania-tip
 CONFIGURE_STYLE = gnu

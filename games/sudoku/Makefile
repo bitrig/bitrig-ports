@@ -3,7 +3,7 @@
 COMMENT=		console based sudoku
 
 DISTNAME=		sudoku-1.0.1
-REVISION =		1
+REVISION =		2
 CATEGORIES=		games
 
 HOMEPAGE=		http://www.laurasia.com.au/sudoku/

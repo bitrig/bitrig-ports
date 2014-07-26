@@ -3,13 +3,12 @@
 COMMENT=		control chroot and su access rights by application
 
 VERSION=		1.3
+REVISION=		0
 DISTNAME=		chrootuid${VERSION}
 PKGNAME=		chrootuid-${VERSION}
 CATEGORIES=		security
 
 HOMEPAGE=		http://www.porcupine.org/
-
-MAINTAINER=		Jason Peel <jsyn@openbsd.org>
 
 # BSD-style
 PERMIT_PACKAGE_CDROM=	Yes

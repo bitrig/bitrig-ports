@@ -3,7 +3,7 @@
 COMMENT=	IP stack integrity checker
 
 DISTNAME=	isic-0.07
-REVISION =	0
+REVISION =	1
 CATEGORIES=	security
 
 HOMEPAGE=	http://isic.sourceforge.net/

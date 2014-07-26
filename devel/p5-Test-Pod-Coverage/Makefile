@@ -4,7 +4,7 @@ COMMENT= 	check for pod coverage in your distribution
 
 MODULES=	cpan
 DISTNAME=	Test-Pod-Coverage-1.08
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # Artistic

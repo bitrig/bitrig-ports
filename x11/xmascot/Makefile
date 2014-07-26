@@ -4,7 +4,7 @@ COMMENT=	moving mascot on your X11 screen
 
 DISTNAME=	xmascot2.6a
 PKGNAME=	xmascot-2.6a
-REVISION=	2
+REVISION=	3
 CATEGORIES=	x11
 
 HOMEPAGE=	http://cclub-flying.dsl.gr.jp/products/xmascot/

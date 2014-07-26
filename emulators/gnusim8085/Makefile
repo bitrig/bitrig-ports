@@ -4,6 +4,7 @@ COMMENT =		graphical 8085 simulator, assembler, and debugger
 
 V =			1.3.7
 DISTNAME =		gnusim8085-${V}
+REVISION =		0
 
 CATEGORIES =		emulators devel
 

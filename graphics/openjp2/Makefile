@@ -6,14 +6,13 @@ V =			2.0.1
 # 2.1.0 changes opj_stream_set_user_data API; gdal/mupdf need to catch up
 DISTNAME =		openjpeg-$V
 PKGNAME =		openjp2-$V
+REVISION =		0
 
 SHARED_LIBS +=	openjp2                   0.0 # 2.0
 
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://www.openjpeg.org/
-
-MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

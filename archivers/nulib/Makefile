@@ -4,7 +4,7 @@ COMMENT=	NuFX archiver
 
 DISTNAME=	nulib325
 PKGNAME=	nulib-3.25
-REVISION=	0
+REVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	https://people.freebsd.org/~jseger/
 EXTRACT_SUFX=	.tar.Z

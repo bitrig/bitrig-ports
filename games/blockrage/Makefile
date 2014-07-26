@@ -2,11 +2,10 @@
 
 COMMENT =	falling block puzzle game similar to Xixit
 DISTNAME =	blockrage-0.2.3
+REVISION =	0
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://blockrage.sourceforge.net/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

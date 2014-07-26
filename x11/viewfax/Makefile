@@ -3,7 +3,7 @@
 COMMENT=	display files containing g3 and/or g4 coded fax pages
 
 DISTNAME=	viewfax-2.6
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 MASTER_SITES=	ftp://ftp.ping.de/pub/unix/

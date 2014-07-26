@@ -4,6 +4,7 @@ CATEGORIES =	productivity
 COMMENT =	link Akonadi to Google services
 V =		2.1.0
 DISTNAME =	libkgapi-$V
+REVISION =	0
 
 HOMEPAGE =	http://www.progdan.cz/category/akonadi-google/
 

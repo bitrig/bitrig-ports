@@ -3,6 +3,7 @@
 COMMENT=	C++ mathematics header-only library for OpenGL software
 
 DISTNAME=	glm-0.9.4.2
+REVISION=	0
 EXTRACT_SUFX=	.zip
 # broken zip; DOS line-endings everywhere but not marked as ascii in .zip
 # -aa breaks the png files in the docs, but we don't install them anyway

@@ -5,7 +5,7 @@ COMMENT=	Qt-based 2D CAD system
 V=		2.0.5.0
 DISTNAME=	qcad-${V}-1-community.src
 PKGNAME=	qcad-${V}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	cad graphics
 
 HOMEPAGE=	http://www.ribbonsoft.com/qcad.html

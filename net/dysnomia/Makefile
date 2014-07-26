@@ -6,7 +6,7 @@ HOMEPAGE = 	http://dysnomia-project.org/
 MASTER_SITES = 	${HOMEPAGE}
 
 DISTNAME = 	dysnomia-en-0.3.4
-REVISION=	2
+REVISION=	3
 EXTRACT_SUFX = 	.tgz
 
 # GPLv2 or later

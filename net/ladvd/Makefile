@@ -3,12 +3,10 @@
 COMMENT =		link advertisement (LLDP/CDP etc) daemon
 
 DISTNAME =		ladvd-1.0.4
-REVISION =		0
+REVISION =		1
 CATEGORIES =		net
 
 HOMEPAGE =		http://blinkenlights.nl/software/ladvd/
-
-MAINTAINER =		Paul de Weerd <weerd@weirdnet.nl>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

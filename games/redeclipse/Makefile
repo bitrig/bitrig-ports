@@ -8,14 +8,13 @@ CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=redeclipse/}
 
 HOMEPAGE=	http://www.redeclipse.net/
-MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 
 MULTI_PACKAGES=	-main -data
 
 N=		redeclipse
 V=		1.4
-REVISION-main=	3
-REVISION-data=	2
+REVISION-main=	4
+REVISION-data=	3
 PKGNAME=	${N}-${V}
 PKGNAME-main=	${N}-${V}
 PKGNAME-data=	${N}-data-${V}

@@ -6,7 +6,7 @@ BROKEN-hppa=	self-checks fail with 64-bit time_t
 BROKEN-powerpc=	self-checks fail with 64-bit time_t
 
 DISTNAME=	taskjuggler-2.4.1
-REVISION=	11
+REVISION=	12
 
 CATEGORIES=	productivity
 

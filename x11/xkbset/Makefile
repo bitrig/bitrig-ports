@@ -5,11 +5,10 @@ COMMENT-gui=	GUI for xkbset
 
 DISTNAME=	xkbset-0.5
 PKGNAME-main=	xkbset-0.5
-REVISION-main=	1
+REVISION-main=	2
 PKGNAME-gui=	xkbset-gui-0.5
-REVISION-gui=	1
+REVISION-gui=	2
 CATEGORIES=	x11
-MAINTAINER=	Sebastian Stark <seb@todesplanet.de>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

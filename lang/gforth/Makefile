@@ -5,7 +5,7 @@ ONLY_FOR_ARCHS =	amd64 i386 mips64 mips64el powerpc sparc sparc64
 COMMENT =		ANS Standard Forth interpreter and compiler
 
 DISTNAME =		gforth-0.6.2
-REVISION =		4
+REVISION =		5
 CATEGORIES =		lang
 
 HOMEPAGE =		http://bernd-paysan.de/gforth.html

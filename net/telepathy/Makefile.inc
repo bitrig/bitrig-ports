@@ -18,8 +18,6 @@ DIST_SUBDIR=		telepathy
 # BSD/GPL/LGPL
 PERMIT_PACKAGE_CDROM?=	Yes
 
-MAINTAINER?=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 USE_GMAKE?=	Yes
 
 CONFIGURE_STYLE?=gnu

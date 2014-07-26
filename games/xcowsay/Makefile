@@ -2,7 +2,7 @@
 
 COMMENT =		displays a cute cow and message on your desktop
 DISTNAME =		xcowsay-1.1
-REVISION=		3
+REVISION=		4
 CATEGORIES =		games
 
 HOMEPAGE =		http://www.doof.me.uk/xcowsay/

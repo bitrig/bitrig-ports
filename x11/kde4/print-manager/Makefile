@@ -2,6 +2,7 @@
 
 COMMENT =	printing management for KDE
 DISTNAME =	print-manager-${MODKDE4_VERSION}
+REVISION =	0
 
 SHARED_LIBS =	kcupslib		50.0
 

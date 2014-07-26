@@ -2,6 +2,7 @@
 
 COMMENT=	Visual Basic .NET support for Mono
 DISTNAME=	mono-basic-2.10
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	lang
 MASTER_SITES=	http://origin-download.mono-project.com/sources/mono-basic/

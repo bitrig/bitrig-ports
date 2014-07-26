@@ -5,9 +5,7 @@ COMMENT=		C-based regular expression scanner generator
 DISTNAME=		re2c-0.13.6
 CATEGORIES=		devel
 HOMEPAGE=		http://re2c.org/
-REVISION=		0
-
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
+REVISION=		1
 
 # public domain
 PERMIT_PACKAGE_CDROM=	Yes

@@ -7,10 +7,10 @@ V=		2.0.4
 NAME =		ocaml-sqlite3
 DISTNAME=	sqlite3-ocaml-${V}
 PKGNAME=	${NAME}-${V}
+REVISION=	0
 EXTRACT_SUFX=	.tar.gz
 MASTER_SITES=	https://bitbucket.org/mmottl/sqlite3-ocaml/downloads/
 
-MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 HOMEPAGE=	https://bitbucket.org/mmottl/sqlite3-ocaml/
 
 # BSD

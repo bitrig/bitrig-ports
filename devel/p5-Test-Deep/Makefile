@@ -4,9 +4,8 @@ COMMENT=        flexible deep comparison
 
 MODULES=	cpan
 DISTNAME=	Test-Deep-0.110
+REVISION=	0
 CATEGORIES=     devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

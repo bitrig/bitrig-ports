@@ -4,6 +4,7 @@ COMMENT=	encode/decode binary to printable ASCII
 
 DISTNAME=	btoa-5.2
 PKGNAME=	btoa-5.2.1
+REVISION=	0
 CATEGORIES=	converters
 
 PERMIT_PACKAGE_CDROM=	no fee

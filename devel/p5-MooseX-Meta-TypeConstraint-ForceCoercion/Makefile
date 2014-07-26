@@ -3,7 +3,7 @@
 COMMENT=		force coercion when validating type constraints
 
 DISTNAME=		MooseX-Meta-TypeConstraint-ForceCoercion-0.01
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		devel
 

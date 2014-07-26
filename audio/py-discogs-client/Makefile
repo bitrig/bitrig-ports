@@ -5,8 +5,8 @@ COMMENT =	Python interface to Discogs website
 MODPY_EGG_VERSION = 1.1.1
 DISTNAME =	discogs-client-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 CATEGORIES =	audio
-MAINTAINER =	Johan Huldtgren <jhuldtgren@gmail.com>
 
 HOMEPAGE =	https://github.com/discogs/discogs_client
 

@@ -4,7 +4,7 @@ COMMENT= 	declarative object constructor
 
 MODULES=	cpan
 DISTNAME=	Object-Declare-0.22
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www devel
 
 # MIT

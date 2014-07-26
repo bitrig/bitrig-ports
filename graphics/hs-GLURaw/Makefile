@@ -5,10 +5,9 @@ COMMENT =		raw Haskell binding for the OpenGL utility library
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		GLURaw-1.3.0.0
+REVISION =		0
 CATEGORIES =		graphics devel
 HOMEPAGE =		http://www.haskell.org/haskellwiki/Opengl
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

@@ -6,11 +6,9 @@ DISTFILES =	easyrpg-player-{}${V}.tar.gz:0 \
 		easyrpg-readers-${V}.tar.gz:1
 PKGNAME =	easyrpg-${V}
 CATEGORIES =	games x11
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	https://easy-rpg.org/
-
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =		Yes

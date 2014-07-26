@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		equinox desktop library
 
 DISTNAME =		edelib-${V}
-REVISION =		0
+REVISION =		1
 
 API_VER =		1.0
 .for l in edelib edelib_dbus edelib_gui

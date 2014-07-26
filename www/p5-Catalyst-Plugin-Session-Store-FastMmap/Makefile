@@ -4,6 +4,7 @@ COMMENT=	FastMmap storage backend for session data
 
 MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-Session-Store-FastMmap-0.14
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF =	Yes
 

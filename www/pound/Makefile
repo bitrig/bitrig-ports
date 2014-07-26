@@ -4,6 +4,7 @@ COMMENT =		HTTP reverse proxy/load balancer/SSL offload
 
 DISTNAME =		Pound-2.6
 PKGNAME =		${DISTNAME:L}
+REVISION =		0
 
 CATEGORIES =		www
 

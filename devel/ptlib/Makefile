@@ -8,15 +8,13 @@ V=		2.12.9
 DISTNAME=	ptlib-${V}
 EXTRACT_SUFX=	.tar.bz2
 SUBST_VARS=	V
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS=	pt	7.0
 
 CATEGORIES=	devel telephony
 
 HOMEPAGE=	http://www.opalvoip.org/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # MPL 1.0
 PERMIT_PACKAGE_CDROM=	Yes

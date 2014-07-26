@@ -3,13 +3,11 @@
 COMMENT=	implementation of reStructuredText parser
 
 DISTNAME=	Text-Restructured-0.003040
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 MODULES=	cpan
 
 CPAN_AUTHOR=	NODINE
-
-MAINTAINER=	Okan Demirmen <okan@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,10 +3,9 @@
 COMMENT =		iterative SPF lookup
 
 DISTNAME =		Mail-SPF-Iterator-1.11
+REVISION =		0
 
 CATEGORIES =		mail
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

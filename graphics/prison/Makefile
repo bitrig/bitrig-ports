@@ -5,7 +5,7 @@ COMMENT =	Qt-based barcode abstraction library
 VERSION =	1.0
 DISTNAME =	prison-${VERSION}
 HOMEPAGE =	http://projects.kde.org/prison
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS =	prison			0.0
 

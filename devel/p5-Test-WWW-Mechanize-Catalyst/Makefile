@@ -4,6 +4,7 @@ COMMENT=        Test-WWW-Mechanize extension for catalyst
 
 MODULES=	cpan
 DISTNAME=	Test-WWW-Mechanize-Catalyst-0.56
+REVISION=	0
 CATEGORIES=     devel www
 USE_GROFF =	Yes
 

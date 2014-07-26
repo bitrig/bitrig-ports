@@ -4,6 +4,7 @@ COMMENT =	Thumbnail plugin for p5-Dancer
 
 MODULES =	cpan
 DISTNAME =	Dancer-Plugin-Thumbnail-0.10
+REVISION =	0
 CATEGORIES =	www
 
 # perl

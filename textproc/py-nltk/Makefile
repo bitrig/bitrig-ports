@@ -5,6 +5,7 @@ COMMENT=		Natural Language ToolKit
 MODPY_EGG_VERSION=	2.0.4
 DISTNAME=		nltk-${MODPY_EGG_VERSION}
 PKGNAME=		py-nltk-${MODPY_EGG_VERSION}
+REVISION=		0
 CATEGORIES=		textproc
 
 EPOCH =			0

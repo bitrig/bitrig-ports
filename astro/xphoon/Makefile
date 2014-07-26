@@ -2,7 +2,7 @@
 
 COMMENT=	set the root window to the moon in its current phase
 DISTNAME=	xphoon-20000613
-REVISION=	0
+REVISION=	1
 CATEGORIES=	astro x11
 
 HOMEPAGE=	http://xphoon.sourceforge.net/

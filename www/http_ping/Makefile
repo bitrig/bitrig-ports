@@ -4,7 +4,7 @@ COMMENT=	HTTP latency performance testing client
 
 DISTNAME=	http_ping_29jun2005
 PKGNAME=	http_ping-20050629
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www benchmarks
 
 HOMEPAGE=	http://www.acme.com/software/http_ping/

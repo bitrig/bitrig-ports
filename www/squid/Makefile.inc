@@ -17,8 +17,6 @@ CATEGORIES=	www
 # bzr repository at https://code.launchpad.net/squid
 MASTER_SITES=	${HOMEPAGE}Versions/v${V:C/^([0-9]).*/\1/}/${V:C/([0-9.]{3}).*/\1/}/
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 HOMEPAGE=	http://www.squid-cache.org/
 
 # GPLv2+

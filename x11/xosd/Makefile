@@ -3,6 +3,7 @@
 COMMENT=	displays text on your screen
 
 DISTNAME=	xosd-2.2.14
+REVISION=	0
 SHARED_LIBS+=	xosd		4.12	# 4.14
 CATEGORIES=	x11 graphics
 HOMEPAGE=	http://libxosd.sourceforge.net/

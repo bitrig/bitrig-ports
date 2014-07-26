@@ -3,7 +3,7 @@
 COMMENT =		open source message queue optimised for performance
 
 DISTNAME =		zeromq-3.2.3
-REVISION =		0
+REVISION =		1
 
 SHARED_ONLY =		Yes
 SHARED_LIBS +=	zmq                  2.0      # 3.0

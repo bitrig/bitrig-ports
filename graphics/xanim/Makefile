@@ -3,11 +3,9 @@
 COMMENT=	X11 animation player with support for lots of formats
 
 DISTNAME=xanim-2.80.1
-REVISION =	4
+REVISION =	5
 WRKDIST=${WRKDIR}/xanim2801
 CATEGORIES= graphics x11
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 DIST_SUBDIR=xanim
 MASTER_SITES=http://xanim.polter.net/files/

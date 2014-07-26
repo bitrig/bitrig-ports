@@ -4,7 +4,7 @@ COMMENT=	functional and object-oriented callback architecture
 
 MODULES=	cpan
 DISTNAME=	Params-CallbackRequest-1.19
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 USE_GROFF=	Yes
 

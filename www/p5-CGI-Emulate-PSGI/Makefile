@@ -4,6 +4,7 @@ COMMENT=	PSGI adapter for CGI
 
 MODULES=	cpan
 DISTNAME=	CGI-Emulate-PSGI-0.11
+REVISION=	0
 CATEGORIES=	www
 USE_GROFF=	Yes
 

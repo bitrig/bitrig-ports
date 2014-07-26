@@ -3,10 +3,9 @@
 COMMENT =		fast and light graphical web browser
 
 DISTNAME =		dillo-3.0.4
-REVISION =		0
+REVISION =		1
 CATEGORIES =		www
 
-MAINTAINER =		Brian Callahan <bcallah@openbsd.org>
 HOMEPAGE =		http://www.dillo.org/
 
 # GPLv3+

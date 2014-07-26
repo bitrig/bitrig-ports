@@ -3,7 +3,7 @@
 COMMENT=		Gnu Circuit Analysis Package
 
 DISTNAME=		gnucap-0.35
-REVISION=		2
+REVISION=		3
 CATEGORIES=		cad
 
 HOMEPAGE=		http://www.gnucap.org/

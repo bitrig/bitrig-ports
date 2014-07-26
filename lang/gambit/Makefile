@@ -6,7 +6,7 @@ COMMENT=	complete, efficient and reliable implementation of Scheme
 BROKEN-hppa =	cc: Internal error: Illegal instruction
 
 V=		4.7.2
-REVISION=	1
+REVISION=	2
 DISTNAME=	gambc-v${V:S/./_/g}
 PKGNAME=	gambit-$V
 

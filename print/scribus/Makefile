@@ -4,7 +4,7 @@ SHARED_ONLY=	Yes
 
 COMMENT=	DTP program
 DISTNAME=	scribus-1.4.2
-REVISION=	1
+REVISION=	2
 CATEGORIES=	print
 
 HOMEPAGE=	http://www.scribus.net/

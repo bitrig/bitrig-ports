@@ -3,10 +3,8 @@
 COMMENT =		tar bindings for Haskell
 
 DISTNAME =		tar-0.4.0.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel archivers
-
-MAINTAINER =		Matthias Kilian <kili@openbsd.org>
 
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes

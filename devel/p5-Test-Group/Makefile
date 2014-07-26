@@ -4,9 +4,8 @@ COMMENT=	group together related tests in a test suite
 
 MODULES=	cpan
 DISTNAME =	Test-Group-0.19
+REVISION =	0
 CATEGORIES=	devel
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=   Yes

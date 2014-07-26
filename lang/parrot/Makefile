@@ -5,14 +5,12 @@ SHARED_ONLY =	Yes
 COMMENT=	virtual machine designed for interpreted languages
 
 V=		5.4.0
-REVISION=	3
+REVISION=	4
 DISTNAME=	parrot-$V
 CATEGORIES=	lang perl6
 SHARED_LIBS=	parrot	8.0
 
 HOMEPAGE=	http://www.parrot.org/
-
-MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 MASTER_SITES=	ftp://ftp.parrot.org/pub/parrot/releases/all/$V/
 

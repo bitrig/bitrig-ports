@@ -3,13 +3,12 @@
 COMMENT=	driver for ZjStream wire protocol compatible printers
 
 VERSION=	20140627
+REVISION=	0
 DISTNAME=	foo2zjs-${VERSION}
 
 CATEGORIES=	print
 
 HOMEPAGE=	http://foo2zjs.rkkda.com/
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

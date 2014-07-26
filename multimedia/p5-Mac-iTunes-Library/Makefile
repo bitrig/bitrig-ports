@@ -4,11 +4,10 @@ COMMENT =	representation of an iTunes Library
 
 MODULES =	cpan
 DISTNAME =	Mac-iTunes-Library-1.0
+REVISION =	0
 CATEGORIES =	multimedia
 
 HOMEPAGE =	https://github.com/dinomite/Mac-iTunes-Library
-
-MAINTAINER =	Michael Erdely <merdely@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

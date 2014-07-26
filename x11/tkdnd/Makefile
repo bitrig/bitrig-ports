@@ -4,14 +4,12 @@ SHARED_ONLY =	Yes
 
 COMMENT =	drag n drop extension for Tk
 
-REVISION =	2
+REVISION =	3
 DISTNAME =	tkdnd-1.0a2
 SHARED_LIBS =	tkdnd 0.0
 CATEGORIES =	x11
 
 HOMEPAGE = 	http://tkdnd.sourceforge.net/
-
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =		Yes

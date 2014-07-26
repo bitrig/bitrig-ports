@@ -3,14 +3,12 @@
 COMMENT =	network traffic monitor
 
 DISTNAME =	vnstat-1.11
-REVISION =	7
+REVISION =	8
 CATEGORIES =	net sysutils
 
 HOMEPAGE =	http://humdi.net/vnstat/
 
 MASTER_SITES = ${HOMEPAGE}
-
-MAINTAINER =	Pierre-Emmanuel Andre <pea@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

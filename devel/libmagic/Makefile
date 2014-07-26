@@ -6,6 +6,7 @@ COMMENT=	library to determine file type
 V=		5.19
 DISTNAME=	file-${V}
 PKGNAME=	libmagic-${V}
+REVISION=	0
 
 SHARED_LIBS +=  magic                4.0      # 1.0
 

@@ -6,7 +6,7 @@ BROKEN-hppa=		ghostscript segfaults during build
 DISTNAME=		asymptote-2.24.src
 PKGNAME=		asymptote-2.24
 CATEGORIES=		graphics
-REVISION =		2
+REVISION =		3
 
 HOMEPAGE=		http://asymptote.sourceforge.net/
 

@@ -3,6 +3,7 @@
 COMMENT=	handles various Japanese charsets
 
 DISTNAME=	Jcode-2.07
+REVISION=	0
 CATEGORIES=	converters japanese
 MODULES=	cpan
 

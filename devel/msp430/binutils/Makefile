@@ -3,7 +3,7 @@
 TOOL=			binutils
 TOOL_V=			2.21.1a
 
-REVISION=		0
+REVISION=		1
 
 GNU_TOOL=		Yes
 

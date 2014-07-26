@@ -2,6 +2,7 @@
 
 COMMENT =	implement the data type "matrix of reals"
 DISTNAME =	Math-MatrixReal-2.08
+REVISION =	0
 CATEGORIES =	math
 USE_GROFF =	Yes
 

@@ -5,7 +5,7 @@ COMMENT=		python bindings for the WebKit GTK+ port
 V=			1.1.8
 DISTNAME=		pywebkitgtk-$V
 PKGNAME=		py-webkitgtk-$V
-REVISION=		13
+REVISION=		14
 CATEGORIES=		www
 
 HOMEPAGE=		https://pywebkitgtk.googlecode.com/

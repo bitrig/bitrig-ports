@@ -3,15 +3,13 @@
 COMMENT =		manipulate Unicode strings
 
 DISTNAME =		libunistring-0.9.3
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS +=		unistring                 0.0 # 1.2
 
 CATEGORIES =		converters
 
 HOMEPAGE =		https://www.gnu.org/software/libunistring/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # (L)GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

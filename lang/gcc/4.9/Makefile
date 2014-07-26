@@ -27,13 +27,15 @@ PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 # needs [gs]etcontext
 #PKGNAME-go =	gccgo-${FULL_PKGVERSION}
 PKGSPEC-main = gcc->=4.9,<4.10
-REVISION-main = 0
-REVISION-libs = 0
-REVISION-c++ = 0
-REVISION-f95 = 0
-REVISION-java = 0
-REVISION-objc = 0
-REVISION-ada = 0
+
+REVISION-main = 1
+REVISION-libs = 1
+REVISION-c++ = 1
+REVISION-f95 = 1
+REVISION-java = 1
+REVISION-objc = 1
+REVISION-ada = 1
+#REVISION-go =
 
 SHARED_LIBS =	estdc++		17.0 \
 		gfortran	6.0 \
@@ -57,8 +59,6 @@ ONLY_FOR_ARCHS-ada = amd64 i386 sparc64
 ONLY_FOR_ARCHS-java = amd64 i386 sparc64
 
 MULTI_PACKAGES = -main -libs -f95 -objc -c++ -java -ada
-
-MAINTAINER =	Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 .include <bsd.port.arch.mk>
 

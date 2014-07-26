@@ -5,6 +5,7 @@ COMMENT =		interpreter for some LucasArts 3D games
 V =			0.1.1
 DISTNAME =		residualvm-${V}-sources
 PKGNAME =		residualvm-${V}
+REVISION =		0
 
 CATEGORIES =		games
 

@@ -14,6 +14,7 @@ DISTNAME=		hplip-${V}
 SUBST_VARS=		V
 
 PKGNAME-main=		${DISTNAME}
+REVISION=		0
 PKGNAME-common=		hplip-common-${V}
 PKGNAME-hpaio=		hpaio-${V}
 PKGNAME-hpcups=		hpcups-${V}
@@ -26,8 +27,6 @@ SHARED_LIBS +=  hpip		2.0 # 0.1
 CATEGORIES=		print
 
 HOMEPAGE=		http://hplipopensource.com/
-
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # GPLv2 - MIT (backend) - BSD (hpijs)
 PERMIT_PACKAGE_CDROM=	Yes

@@ -2,7 +2,7 @@
 
 COMMENT=	i/o generator
 PKGNAME=	iogen-3.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	sysutils
 DISTFILES=
 

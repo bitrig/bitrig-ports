@@ -5,12 +5,10 @@ ONLY_FOR_ARCHS=		amd64 i386
 COMMENT=		Prolog compiler
 
 DISTNAME=		gprolog-1.3.1
-REVISION=		0
+REVISION=		1
 CATEGORIES=		lang
 
 HOMEPAGE=		http://www.gprolog.org/
-
-MAINTAINER=		Nuno Morgadinho <nuno.morgadinho@gmail.com>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT=	simple, high-performance PSGI/Plack HTTP server
 
 MODULES=	cpan
 DISTNAME=	Starlet-0.13
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
 
 CPAN_AUTHOR=	KAZUHO

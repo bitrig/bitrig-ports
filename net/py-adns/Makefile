@@ -7,7 +7,7 @@ COMMENT=		python interface to adns
 V=			1.2.1
 DISTNAME=		adns-python-$V
 PKGNAME=		py-adns-$V
-REVISION=		4
+REVISION=		5
 
 HOMEPAGE=		https://adns-python.googlecode.com/
 

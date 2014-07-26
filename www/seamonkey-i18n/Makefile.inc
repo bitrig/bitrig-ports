@@ -8,12 +8,11 @@ PKG_ARCH =	*
 FV =		2.26.1
 V =		${FV:C/b.$//}
 NAME =		seamonkey-i18n
+REVISION =	0
 
 CATEGORIES =	www
 
 HOMEPAGE =	https://wiki.mozilla.org/L10n:Home_Page
-
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
 
 # Mozilla public license
 PERMIT_PACKAGE_CDROM =	Yes

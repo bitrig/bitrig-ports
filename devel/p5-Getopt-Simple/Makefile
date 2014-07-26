@@ -3,10 +3,10 @@
 COMMENT=	simple wrapper around Getopt::Long
 
 DISTNAME =	Getopt-Simple-1.52
+REVISION =	0
 CATEGORIES=     devel
 
 EXTRACT_SUFX=	.tgz
-MAINTAINER=	Claudio Jeker <claudio@openbsd.org>
 
 # Artistic
 PERMIT_PACKAGE_CDROM=   Yes

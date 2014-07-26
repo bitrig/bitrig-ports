@@ -3,7 +3,7 @@
 COMMENT=	fast HTTP library and server for Ruby
 
 DISTNAME=	mongrel-1.1.5
-REVISION =	6
+REVISION =	7
 CATEGORIES=	www
 
 HOMEPAGE=	http://rubyforge.org/projects/mongrel/

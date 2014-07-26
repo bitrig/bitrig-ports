@@ -4,9 +4,8 @@ COMMENT=	Perl interface to the DICT protocol
 
 MODULES=	cpan
 DISTNAME=	Net-Dict-2.09
+REVISION=	0
 CATEGORIES=	net
-
-MAINTAINER=	Sam Smith <s@msmith.net>
 
 # GPL/Artistic License
 PERMIT_PACKAGE_CDROM=	Yes

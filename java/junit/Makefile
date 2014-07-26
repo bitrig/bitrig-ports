@@ -4,14 +4,12 @@ COMMENT=	regression testing utility for use with the Java language
 
 VERSION=	4.9
 DISTNAME=	junit${VERSION}
-REVISION=	1
+REVISION=	2
 PKGNAME=	junit-${VERSION}
 
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.junit.org/
-
-MAINTAINER=	Ian Darwin <ian@openbsd.org>
 
 # Common Public License - v1.0
 # Commercial distribution defend and indemnify clauses

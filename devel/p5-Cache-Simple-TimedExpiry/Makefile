@@ -4,7 +4,7 @@ COMMENT=	lightweight cache with timed expiration
 
 MODULES=	cpan
 DISTNAME=	Cache-Simple-TimedExpiry-0.27
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel
 USE_GROFF =	Yes
 

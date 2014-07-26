@@ -5,14 +5,13 @@ ONLY_FOR_ARCHS =	amd64 i386
 COMMENT =		Go programming language
 
 VERSION =		1.2.1
+REVISION =		0
 EXTRACT_SUFX =		.src.tar.gz
 DISTNAME = 		go${VERSION}
 PKGNAME = 		go-${VERSION}
 CATEGORIES =		lang
 
 HOMEPAGE =		http://www.golang.org/
-
-MAINTAINER = 		Joel Sing <jsing@openbsd.org>
 
 # software: BSD, documentation: CC-BY-3.0
 PERMIT_PACKAGE_CDROM =	Yes

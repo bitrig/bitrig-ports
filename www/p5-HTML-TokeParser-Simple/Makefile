@@ -3,10 +3,8 @@
 COMMENT= 	simple interface to HTML::TokeParser
 
 DISTNAME=	HTML-TokeParser-Simple-3.15
-REVISION=	4
+REVISION=	5
 CATEGORIES=	www
-
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

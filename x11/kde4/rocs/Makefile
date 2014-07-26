@@ -2,6 +2,7 @@
 
 COMMENT =	graph theory IDE for KDE
 DISTNAME =	rocs-${MODKDE4_VERSION}
+REVISION =	0
 
 # XXX Crashes sometimes.
 

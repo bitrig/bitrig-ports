@@ -5,12 +5,11 @@ COMMENT =		GNU version of standard text editor
 V =			1.10
 DISTNAME =		ed-${V}
 PKGNAME =		ged-${V}
+REVISION =		0
 
 CATEGORIES =		editors
 
 HOMEPAGE =		https://www.gnu.org/software/ed/
-
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

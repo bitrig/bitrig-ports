@@ -13,6 +13,7 @@ GNOME_VERSION=		1.0.2
 # there is already audio/tracker, so this port has to live
 # as meta-tracker.
 PKGNAME=		meta-tracker-${VERSION}
+REVISION=		0
 
 # NOTE: when TRACKER_VERSION changes, increment accordingly and bump:
 # x11/gnome/documents

@@ -3,6 +3,7 @@
 COMMENT=		perl6-like method signature parser
 
 DISTNAME=		Parse-Method-Signatures-1.003014
+REVISION=		0
 
 CATEGORIES=		devel
 

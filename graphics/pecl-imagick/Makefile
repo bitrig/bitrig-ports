@@ -3,6 +3,7 @@
 COMMENT=	PHP support for the ImageMagick library
 
 DISTNAME=	imagick-3.1.0rc2
+REVISION=	0
 WRKDIST=	${WRKDIR}/imagick-3.1.0RC2
 CATEGORIES=	graphics
 

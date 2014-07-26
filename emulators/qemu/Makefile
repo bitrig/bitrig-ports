@@ -5,14 +5,12 @@ ONLY_FOR_ARCHS=	amd64 i386 powerpc sparc64
 COMMENT=	multi system emulator
 
 DISTNAME=	qemu-2.0.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://wiki.qemu.org/download/
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	http://www.qemu.org/
-
-MAINTAINER=	Brad Smith <brad@comstyle.com>
 
 # GPLv2, LGPLv2 and BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -2,6 +2,7 @@
 
 COMMENT =	holiday classes for PHP
 DISTNAME =	Date_Holidays-0.21.8
+REVISION =	0
 
 # BSD
 

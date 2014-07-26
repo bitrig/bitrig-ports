@@ -3,6 +3,6 @@
 GAME =		hexalate
 COMMENT =	color matching game
 DISTNAME =	${GAME}-1.0.2-src
-REVISION =	0
+REVISION =	1
 
 .include <bsd.port.mk>

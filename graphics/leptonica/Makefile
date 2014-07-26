@@ -3,6 +3,7 @@
 COMMENT=	image processing and analysis library
 
 DISTNAME=	leptonica-1.70
+REVISION=	0
 
 SHARED_LIBS +=  lept                 2.0      # 4.1
 

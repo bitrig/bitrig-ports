@@ -3,7 +3,7 @@
 COMMENT =	DateTime::Set extension to create basic recurrence sets
 
 DISTNAME =	DateTime-Event-Recurrence-0.16
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	devel
 

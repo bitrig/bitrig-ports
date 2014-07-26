@@ -4,13 +4,12 @@ COMMENT=		configurable logging library
 
 DISTNAME=		clog-0.6.3
 PKGNAME=		lib${DISTNAME}
+REVISION=		0
 CATEGORIES=		devel
 SHARED_LIBS=		clog 1.6
 
 HOMEPAGE=		http://opensource.conformal.com/wiki/Copious_Logger
 MASTER_SITES=		http://opensource.conformal.com/snapshots/clog/
-
-MAINTAINER =		David Hill <dhill@mindcry.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes

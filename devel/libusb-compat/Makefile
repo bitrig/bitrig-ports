@@ -3,6 +3,7 @@
 COMMENT=	libusb-0.1 compatibility layer for libusb1
 
 DISTNAME=	libusb-compat-0.1.5
+REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 
 SHARED_LIBS +=  usb                  10.0      # 8.4
@@ -12,8 +13,6 @@ MODGNU_SHARED_LIBS= usb '-export-dynamic'
 CATEGORIES=	devel
 
 HOMEPAGE=	http://libusb.sourceforge.net/
-
-MAINTAINER=	Martin Pieuchot <mpi@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM=   Yes

@@ -4,10 +4,8 @@ COMMENT=	Perl module implementing lanman and nt md4 hash functions
 
 MODULES=	cpan
 DISTNAME=	Crypt-SmbHash-0.12
-REVISION=	2
+REVISION=	3
 CATEGORIES=	security
-
-MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # same license as perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,8 +4,8 @@ COMMENT =		high-performance preforking PSGI/Plack web server
 
 MODULES =		cpan
 DISTNAME =		Starman-0.2007
+REVISION =		0
 CATEGORIES =		www
-MAINTAINER =		Abel Abraham Camarillo Ojeda <acamari@verlet.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

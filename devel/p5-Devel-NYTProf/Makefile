@@ -5,11 +5,9 @@ SHARED_ONLY =		Yes
 COMMENT =		powerful feature-rich perl source code profiler
 
 DISTNAME =		Devel-NYTProf-5.06
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
-
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes

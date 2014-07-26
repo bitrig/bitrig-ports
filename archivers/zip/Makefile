@@ -3,6 +3,7 @@
 COMMENT=	create/update ZIP files compatible with PKZip(tm)
 
 VERSION=	3.0
+REVISION=	0
 DISTNAME=	zip${VERSION:S/.//}
 PKGNAME=	zip-${VERSION}
 CATEGORIES=	archivers

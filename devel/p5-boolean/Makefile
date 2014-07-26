@@ -4,9 +4,8 @@ COMMENT =	boolean support for Perl
 
 MODULES =	cpan
 DISTNAME =	boolean-0.27
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

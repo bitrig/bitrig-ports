@@ -7,14 +7,12 @@ PKGNAME =		flare-${V}
 
 CATEGORIES =		games
 
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://flarerpg.org
 
 # code GPLv3+, data CC BY-SA 3.0+
 PERMIT_PACKAGE_CDROM =	Yes
-
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
 
 WANTLIB +=		SDL SDL_image SDL_mixer SDL_ttf c m pthread
 WANTLIB +=		c++ c++abi

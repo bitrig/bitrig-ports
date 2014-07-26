@@ -4,6 +4,7 @@ COMMENT=		philosophy of problem solving, applied to Forth
 
 DISTNAME=		thinking-forth-color
 PKGNAME=		thinking-forth-1.0
+REVISION=		0
 CATEGORIES=		books
 
 HOMEPAGE=		http://thinking-forth.sourceforge.net/

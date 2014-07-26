@@ -3,12 +3,10 @@
 COMMENT=		intelligent n-up printing
 
 DISTNAME=		psdim-1.4
-REVISION =		0
+REVISION =		1
 CATEGORIES=		print
 
 HOMEPAGE=		http://www.mathstat.dal.ca/~selinger/psdim
-
-MAINTAINER=		Steven Mestdagh <steven@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

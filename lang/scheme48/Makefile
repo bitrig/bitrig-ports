@@ -4,12 +4,10 @@ COMMENT=	Scheme Underground's implementation of R5RS
 
 V=		1.9
 DISTNAME=	scheme48-$V
-REVISION=	0
+REVISION=	1
 CATEGORIES=	lang
 
 HOMEPAGE=	http://www.s48.org/
-
-MAINTAINER=	Aaron Hsu <arcfide@sacrideo.us>
 
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM=	Yes

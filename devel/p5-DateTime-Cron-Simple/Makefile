@@ -4,7 +4,7 @@ COMMENT=	parse a cron entry and check against current time
 
 MODULES=	cpan
 DISTNAME=	DateTime-Cron-Simple-0.2
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel
 
 # Artistic

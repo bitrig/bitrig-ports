@@ -4,11 +4,9 @@ COMMENT=	mail anomalies in the system logfiles to the administrator
 
 V=		1.3.14
 DISTNAME=	logcheck_${V}
-REVISION=	1
+REVISION=	2
 PKGNAME=	logtail-${V}
 CATEGORIES=	sysutils
-
-MAINTAINER=	William Yodlowsky <william@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

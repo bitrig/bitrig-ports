@@ -4,14 +4,12 @@ COMMENT=	scripting language for reminders, with a Tk front end
 
 DISTNAME=	remind-03.01.12
 PKGNAME=	remind-3.1.12
-REVISION =	0
+REVISION =	1
 CATEGORIES=	misc
 
 MASTER_SITES=	http://www.roaringpenguin.com/files/download/
 
 HOMEPAGE=	http://www.roaringpenguin.com/penguin/open_source_remind.php
-
-MAINTAINER = 	Kevin Lo <kevlo@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=   Yes
 

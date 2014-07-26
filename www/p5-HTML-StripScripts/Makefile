@@ -3,7 +3,7 @@
 COMMENT =	strip scripting constructs out of HTML
 
 DISTNAME =	HTML-StripScripts-1.05
-REVISION =	0
+REVISION =	1
 CATEGORIES =	www
 
 # Perl

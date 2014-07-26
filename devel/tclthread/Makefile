@@ -4,10 +4,10 @@ COMMENT =	thread extension for Tcl
 
 DISTNAME =	thread2.7.0
 PKGNAME =	tclthread-2.7.0
+REVISION =	0
 SHARED_LIBS =	thread270 0.0
 CATEGORIES =	devel
 HOMEPAGE =	http://tcl.sourceforge.net/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

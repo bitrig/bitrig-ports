@@ -4,7 +4,7 @@ COMMENT =	sets of intervals
 
 MODULES =	cpan
 DISTNAME =	Set-Infinite-0.65
-REVISION =	0
+REVISION =	1
 CATEGORIES =	devel
 USE_GROFF =	Yes
 

@@ -4,11 +4,10 @@ V =			2.2.1
 COMMENT =		download videos from YLE Areena
 DISTNAME =		aajanki-yle-$V
 PKGNAME =		yle-dl-$V
+REVISION =		0
 CATEGORIES =		multimedia
 
 HOMEPAGE =		http://aajanki.github.io/yle-dl/
-
-MAINTAINER =		Antti Harri <iku@openbsd.fi>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

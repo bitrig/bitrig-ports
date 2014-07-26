@@ -3,11 +3,10 @@
 COMMENT=	converts MSWord Documents to ASCII Text and PostScript
 
 DISTNAME=	antiword-0.37
+REVISION=	0
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.winfield.demon.nl/
-
-MAINTAINER=	David Cathcart <cathcart@openbsd.org>
 
 MASTER_SITES=	${HOMEPAGE}/linux/
 

@@ -3,7 +3,7 @@
 COMMENT=		Desktop Manager: a graphical shell for X11
 
 DISTNAME=		xdtm-2.5.8
-REVISION=		2
+REVISION=		3
 CATEGORIES=		x11
 
 MASTER_SITES=		${MASTER_SITE_XCONTRIB:=applications/}

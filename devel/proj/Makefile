@@ -5,7 +5,7 @@ COMMENT=	cartographic projection utilities
 DISTNAME=	proj-4.8.0
 CATEGORIES=	devel geo
 SHARED_LIBS=	proj 6.0
-REVISION=	0
+REVISION=	1
 
 DATUMGRID=	proj-datumgrid-1.5.zip
 
@@ -14,8 +14,6 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 DISTFILES=${DISTNAME}${EXTRACT_SUFX} ${DATUMGRID}
 
 HOMEPAGE=	http://trac.osgeo.org/proj/
-
-MAINTAINER=	Landry Breuil <landry@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,9 +4,8 @@ COMMENT =	keep imports out of your namespace
 
 MODULES =	cpan
 DISTNAME =	namespace-autoclean-0.15
+REVISION =	0
 CATEGORIES =	devel
-
-MAINTAINER =	Cesare Gargano <gar@plusiagamma.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

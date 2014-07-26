@@ -21,8 +21,6 @@ CATEGORIES ?=		multimedia devel
 
 HOMEPAGE ?=		http://gstreamer.freedesktop.org/
 
-MAINTAINER ?=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv2 - GPLv2+ - LGPLv2
 PERMIT_PACKAGE_CDROM ?=	Yes
 PERMIT_PACKAGE_FTP ?=	Yes

@@ -2,6 +2,7 @@
 
 COMMENT =	2D space arcade game for KDE
 DISTNAME =	kspaceduel-${MODKDE4_VERSION}
+REVISION =	0
 
 WANTLIB =  c m pthread
 WANTLIB += lib/qt4/QtDBus lib/qt4/QtGui lib/qt4/QtSvg

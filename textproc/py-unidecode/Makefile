@@ -5,6 +5,7 @@ COMMENT =	US-ASCII transliterations of Unicode text
 MODPY_EGG_VERSION = 0.04.14
 DISTNAME =	Unidecode-${MODPY_EGG_VERSION}
 PKGNAME = 	py-unidecode-${MODPY_EGG_VERSION}
+REVISION = 	0
 
 CATEGORIES =	textproc
 

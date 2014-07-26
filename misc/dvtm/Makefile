@@ -3,11 +3,10 @@
 COMMENT=		tiling window management for the console
 
 DISTNAME=		dvtm-0.6
-REVISION=		1
+REVISION=		2
 CATEGORIES=		misc
 
 HOMEPAGE=		http://www.brain-dump.org/projects/dvtm/
-MAINTAINER=		Emilien Gaspar <gapz@dud-t.org>
 
 # MIT/X
 # LGPL: madtty.c

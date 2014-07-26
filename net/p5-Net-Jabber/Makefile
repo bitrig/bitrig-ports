@@ -4,11 +4,9 @@ COMMENT=	perl interface to jabber
 
 MODULES=	cpan
 DISTNAME=	Net-Jabber-2.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 USE_GROFF =	Yes
-
-MAINTAINER=	Gleydson Soares <gsoares@trusted.com.br>
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

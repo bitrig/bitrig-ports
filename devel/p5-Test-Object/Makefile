@@ -5,7 +5,7 @@ COMMENT=	thoroughly testing objects via registered handlers
 MODULES=	cpan
 
 DISTNAME=	Test-Object-0.07
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel
 
 # Artistic

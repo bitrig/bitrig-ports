@@ -3,14 +3,13 @@
 COMMENT= 		fire up programs in case of user inactivity under X
 
 DISTNAME=		xautolock-2.2
+REVISION=		0
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		x11
 
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=X11/screensavers/}
 
 HOMEPAGE=		http://freshmeat.net/projects/xautolock/
-
-MAINTAINER=		Matthieu Herrb <matthieu@openbsd.org>
 
 # License: GPL
 PERMIT_PACKAGE_CDROM=	Yes

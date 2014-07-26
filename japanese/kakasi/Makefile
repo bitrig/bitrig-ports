@@ -4,13 +4,12 @@
 COMMENT=	Kanji -> kana converter
 
 DISTNAME=	kakasi-2.3.4
+REVISION=	0
 SHARED_LIBS=	kakasi	3.0
 CATEGORIES=	japanese
 MASTER_SITES=	http://kakasi.namazu.org/stable/
 
 HOMEPAGE=	http://kakasi.namazu.org/
-
-MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

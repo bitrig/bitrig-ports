@@ -3,7 +3,7 @@
 COMMENT=	multi-platform file synchronization tool
 
 V=		2.40.102
-REVISION =	2
+REVISION =	3
 
 MASTER_SITES=	${HOMEPAGE}download/releases/stable/
 

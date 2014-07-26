@@ -3,12 +3,10 @@
 COMMENT =		password cracker based on rainbow tables
 
 DISTNAME =		ophcrack-3.6.0
-REVISION =		0
+REVISION =		1
 CATEGORIES =		security
 
 HOMEPAGE =		http://ophcrack.sourceforge.net/
-
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

@@ -6,8 +6,7 @@ V =		1.4.1
 DISTNAME =	MDB2_Driver_pgsql-${V}
 PKGNAME =	pear-MDB2-pgsql-${V}
 CATEGORIES =	net databases
-MAINTAINER =	Johan Huldtgren <jhuldtgren@gmail.com>
-REVISION =	0
+REVISION =	1
 
 MODULES =	lang/php www/pear
 

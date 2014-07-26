@@ -4,7 +4,7 @@ COMMENT =		encoding files for poppler
 DISTNAME =		poppler-data-0.4.6
 CATEGORIES =		print
 HOMEPAGE =		http://poppler.freedesktop.org/
-REVISION =		0
+REVISION =		1
 
 # Mixture of GPL2 and MIT and something similar to BSD4
 PERMIT_PACKAGE_CDROM =	Yes

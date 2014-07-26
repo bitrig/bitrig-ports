@@ -3,12 +3,10 @@
 COMMENT=	utility to turn simply formatted text into markup
 
 DISTNAME=	txt2tags-2.6
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://txt2tags.org/
-
-MAINTAINER=	Matthias Kilian <kili@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

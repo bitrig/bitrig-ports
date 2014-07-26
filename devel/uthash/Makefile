@@ -3,6 +3,7 @@
 COMMENT=		C macros to add, find and delete items from a hash
 
 DISTNAME=		uthash-1.9.7
+REVISION=		0
 CATEGORIES=		devel
 
 HOMEPAGE=		http://uthash.sf.net/

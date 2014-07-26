@@ -5,6 +5,7 @@ COMMENT =	Python IP address manipulation library
 MODPY_EGG_VERSION = 2.1.10
 DISTNAME =	ipaddr-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
+REVISION =	0
 CATEGORIES =	net
 
 HOMEPAGE =	http://code.google.com/p/ipaddr-py/

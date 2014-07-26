@@ -3,7 +3,7 @@
 COMMENT=	edit enlightenment's keybindings
 
 DISTNAME=	e16keyedit-0.7
-REVISION=	1
+REVISION=	2
 CATEGORIES=    	x11
 
 # X11
