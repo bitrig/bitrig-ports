@@ -1,0 +1,11 @@
+--- pylib/gyp/common.py.orig	Sat Jul 26 14:18:42 2014
++++ pylib/gyp/common.py	Sat Jul 26 14:19:05 2014
+@@ -407,6 +407,8 @@ def GetFlavor(params):
+     return 'solaris'
+   if sys.platform.startswith('freebsd'):
+     return 'freebsd'
++  if sys.platform.startswith('bitrig'):
++    return 'bitrig'
+   if sys.platform.startswith('openbsd'):
+     return 'openbsd'
+   if sys.platform.startswith('aix'):

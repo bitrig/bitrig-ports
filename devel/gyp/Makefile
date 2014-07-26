@@ -4,12 +4,13 @@ COMMENT= generate SCons/Makefiles from platform-independent input
 
 DISTNAME=	gyp-r1812
 PKGNAME= ${DISTNAME:S/r/0./g}
+REVISION=	1
 
 CATEGORIES=	devel
 
 HOMEPAGE=	https://code.google.com/p/gyp/
 
-MAINTAINER=	Aaron Bieber <abieber@openbsd.org>
+MAINTAINER=	Pedro Martelletto <pedro@bitrig.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

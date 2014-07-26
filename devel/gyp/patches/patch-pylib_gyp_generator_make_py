@@ -1,0 +1,11 @@
+--- pylib/gyp/generator/make.py.orig	Sat Jul 26 14:20:20 2014
++++ pylib/gyp/generator/make.py	Sat Jul 26 14:20:30 2014
+@@ -1552,7 +1552,7 @@ $(obj).$(TOOLSET)/$(TARGET)/%%.o: $(obj)/%%%s FORCE_DO
+       for link_dep in link_deps:
+         assert ' ' not in link_dep, (
+             "Spaces in alink input filenames not supported (%s)"  % link_dep)
+-      if (self.flavor not in ('mac', 'openbsd', 'win') and not
++      if (self.flavor not in ('mac', 'bitrig', 'openbsd', 'win') and not
+           self.is_standalone_static_library):
+         self.WriteDoCmd([self.output_binary], link_deps, 'alink_thin',
+                         part_of_all, postbuilds=postbuilds)

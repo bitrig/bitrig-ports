@@ -1,0 +1,10 @@
+--- gyptest.py.orig	Sat Jul 26 14:55:28 2014
++++ gyptest.py	Sat Jul 26 14:55:42 2014
+@@ -219,6 +219,7 @@ def main(argv=None):
+       'aix5':     ['make'],
+       'freebsd7': ['make'],
+       'freebsd8': ['make'],
++      'bitrig0':  ['make'],
+       'openbsd5': ['make'],
+       'cygwin':   ['msvs'],
+       'win32':    ['msvs', 'ninja'],
