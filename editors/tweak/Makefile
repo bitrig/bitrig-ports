@@ -16,7 +16,7 @@ WANTLIB += c ncurses
 
 MASTER_SITES =		http://www.chiark.greenend.org.uk/~sgtatham/tweak/
 
-MAKE_FLAGS =		CC="${CC}" \
+MAKE_FLAGS =		CC="${CC}" LINK=${CC} \
 			CFLAGS="${CFLAGS} -c -Dunix"
 FAKE_FLAGS =		PREFIX=${WRKINST}/${TRUEPREFIX}
 
