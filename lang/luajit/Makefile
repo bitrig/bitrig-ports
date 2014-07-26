@@ -1,9 +1,5 @@
 # $OpenBSD: Makefile,v 1.14 2014/06/02 19:43:50 juanfra Exp $
 
-ONLY_FOR_ARCHS = powerpc i386 amd64
-# arm needs EABI/aapcs
-# for mips64* gcc 4.6 is needed, but that doesn't build on this arch (yet)
-
 SHARED_ONLY =	Yes
 SHARED_LIBS +=	luajit-${MODLUA_VERSION} 0.0 # 2.0.0
 
@@ -17,12 +13,12 @@ CATEGORIES =	lang
 
 HOMEPAGE =	http://luajit.org/
 
-MAINTAINER =	Aaron Bieber <abieber@openbsd.org>
+MAINTAINER =	Pedro Martelletto <pedro@bitrig.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c m
+WANTLIB =	c c++abi m pthread
 
 MASTER_SITES =	${HOMEPAGE}download/
 
