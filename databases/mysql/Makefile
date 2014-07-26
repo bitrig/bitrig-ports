@@ -48,10 +48,8 @@ CONFIGURE_STYLE= autoconf
 AUTOCONF_VERSION= 2.63
 CONFIGURE_ARGS+= ${CONFIGURE_SHARED}
 CONFIGURE_ARGS+= --with-big-tables \
-		 --with-client-ldflags=-lsupc++ \
 		 --with-comment='OpenBSD port: ${FULLPKGNAME-server}' \
 		 --with-low-memory \
-		 --with-mysqld-ldflags=-lsupc++ \
 		 --with-mysqld-user="_mysql" \
 		 --with-plugins=max-no-ndb \
 		 --with-ssl=/usr \
