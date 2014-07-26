@@ -28,6 +28,7 @@ LIB_DEPENDS =		audio/libvorbis \
 			audio/portaudio-svn \
 			x11/gtk+2
 
+MAKE_FLAGS=		CC="${CC}" BUILD_CC=${CC}
 USE_GMAKE =		Yes
 USE_GROFF =		Yes
 
