@@ -11,6 +11,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c
 
+MAKE_FLAGS=	CC="${CC}" 
 FAKE_FLAGS=	CC="${CC}" BINDIR=${PREFIX}/bin MANDIR=${PREFIX}/man/man
 
 .include <bsd.port.mk>
