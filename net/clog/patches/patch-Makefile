@@ -1,0 +1,10 @@
+--- Makefile.orig	Sun Jul 20 14:32:30 2014
++++ Makefile	Sun Jul 20 14:32:45 2014
+@@ -1,6 +1,6 @@
+ INSTALL = /usr/bin/install
+ generic: clog.c
+-	gcc -g -o clog clog.c -lpcap
++	${CC} -g -o clog clog.c -lpcap
+ 
+ linux: clog.c
+ 	gcc -DLINUX -o clog clog.c -lpcap
