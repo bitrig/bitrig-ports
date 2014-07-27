@@ -22,6 +22,7 @@ NO_TEST=	Yes
 LIB_DEPENDS=	x11/fltk
 
 MAKE_FLAGS+=	CC="${CC}" \
+		CXX="${CXX}" \
 		prefix=${PREFIX} \
 		libdir=${PREFIX}/lib/nutdb
 
