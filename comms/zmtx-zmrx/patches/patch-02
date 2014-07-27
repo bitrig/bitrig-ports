@@ -1,6 +1,6 @@
---- zmtx.c.orig	Sat Oct 19 08:53:36 1996
-+++ zmtx.c	Sat Oct 19 08:53:14 1996
-@@ -65,7 +65,7 @@
+--- zmtx.c.orig	Thu Dec 12 02:24:08 1996
++++ zmtx.c	Sun Jul 27 14:09:47 2014
+@@ -65,7 +65,7 @@ show_progress(char * name,FILE * fp)
  
  	cps = ftell(fp) / duration;
  
@@ -9,3 +9,21 @@
  		name,ftell(fp),percentage,cps);
  }
  
+@@ -201,7 +201,7 @@ send_file(char * name)
+ 		if (opt_v) {
+ 			fprintf(stderr,"zmtx: can't open file %s\n",name);
+ 		}
+-		return;
++		return TRUE;
+ 	}
+ 
+ 	fstat(fileno(fp),&s);
+@@ -357,7 +357,7 @@ send_file(char * name)
+ 			if (opt_v) {
+ 				fprintf(stderr,"zmtx: skipped file \"%s\"                       \n",name);
+ 			}
+-			return;
++			return FALSE; /* XXX should continue on ZSKIP? */
+ 		}
+ 
+ 	} while (type != ZRPOS);

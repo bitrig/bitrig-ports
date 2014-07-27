@@ -1,0 +1,10 @@
+--- zmdm.c.orig	Sun Jul 27 14:11:35 2014
++++ zmdm.c	Sun Jul 27 14:11:40 2014
+@@ -561,7 +561,6 @@ int inputbuffer_index;
+  * for an exit. (but that was wat session abort was all about.)
+  */
+ 
+-inline
+ int
+ rx_raw(int to)
+ 

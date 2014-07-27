@@ -17,6 +17,7 @@ MASTER_SITES=	ftp://ftp.netsw.org/net/modem/protocols/zmodem/zmtx-zmrx/
 
 WRKDIST=	${WRKDIR}/zmtx-zmrx
 MAKE_FILE=	makefile
+MAKE_FLAGS=	CC=${CC}
 
 NO_TEST=	Yes
 
