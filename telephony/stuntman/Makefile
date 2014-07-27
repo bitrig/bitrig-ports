@@ -7,7 +7,6 @@ VERSION =	1.2.5
 REVISION =	0
 DISTNAME =	stunserver-${VERSION}
 PKGNAME =	stuntman-${VERSION}
-REVISION =	0
 CATEGORIES =	telephony net
 EXTRACT_SUFX =	.tgz
 

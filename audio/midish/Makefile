@@ -7,8 +7,6 @@ HOMEPAGE=		http://www.midish.org/
 MAINTAINER=		Alexandre Ratchov <alex@caoua.org>
 REVISION=		0
 
-REVISION=		0
-
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 

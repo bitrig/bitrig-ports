@@ -7,7 +7,6 @@ COMMENT=	XML editor for KDE
 DISTNAME=	kxmleditor-1.1.3
 REVISION=	11
 CATEGORIES=	editors x11 x11/kde
-REVISION=	0
 
 SHARED_LIBS=	kxmleditorpart	2.0
 

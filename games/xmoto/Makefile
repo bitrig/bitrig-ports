@@ -7,7 +7,6 @@ DISTNAME =	xmoto-${V}-src
 PKGNAME =	xmoto-${V}
 REVISION = 	0
 CATEGORIES =	games
-REVISION =	0
 
 MAINTAINER =	Antti Harri <iku@openbsd.fi>
 HOMEPAGE =	http://xmoto.tuxfamily.org/

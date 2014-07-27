@@ -7,7 +7,6 @@ COMMENT=		collection of theme engines for GTK+2
 GNOME_PROJECT=		gtk-engines
 GNOME_VERSION=		2.20.2
 EXTRACT_SUFX=		.tar.bz2
-REVISION=		1
 
 # warning: PKGNAME does not default to ${DISTNAME}
 PKGNAME=		gtk-engines2-${GNOME_VERSION}

@@ -7,7 +7,6 @@ DISTNAME =		picard-${MODPY_EGG_VERSION}
 REVISION =		0
 
 CATEGORIES =		audio
-REVISION =		0
 
 HOMEPAGE =		http://musicbrainz.org/doc/Picard_Tagger
 

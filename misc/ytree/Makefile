@@ -6,8 +6,6 @@ DISTNAME=	ytree-1.97
 REVISION=	0
 CATEGORIES=	misc
 
-REVISION=	0
-
 HOMEPAGE=	http://www.han.de/~werner/ytree.html
 
 MASTER_SITES=	http://www.han.de/~werner/

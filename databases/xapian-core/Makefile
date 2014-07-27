@@ -10,8 +10,6 @@ SHARED_LIBS +=  xapian	3.1	# .28.2
 
 CATEGORIES=	databases textproc
 
-REVISION=	0
-
 HOMEPAGE=	http://xapian.org/
 
 # GPLv2

@@ -3,7 +3,6 @@
 SHARED_ONLY =	Yes
 COMMENT =	RDF framework
 CATEGORIES =	databases devel textproc sysutils
-REVISION=	0
 HOMEPAGE =	http://soprano.sourceforge.net/
 DISTNAME =	soprano-2.9.4
 REVISION =	0

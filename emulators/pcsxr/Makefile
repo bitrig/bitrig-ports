@@ -10,8 +10,6 @@ REVISION =	0
 CATEGORIES =	emulators games
 HOMEPAGE =	http://pcsxr.codeplex.com/
 
-REVISION =		0
-
 MAINTAINER =	Jeremy Evans <jeremy@openbsd.org>
 
 # GPLv2

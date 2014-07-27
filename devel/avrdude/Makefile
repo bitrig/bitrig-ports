@@ -8,8 +8,6 @@ REVISION=	1
 DISTFILES+=	avrdude-${V}.tar.gz avrdude-doc-${V}.pdf
 CATEGORIES=	devel
 
-REVISION=	0
-
 HOMEPAGE=	http://www.nongnu.org/avrdude/
 
 # GPLv2+

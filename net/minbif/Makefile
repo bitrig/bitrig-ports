@@ -3,7 +3,6 @@
 COMMENT =	IRC-friendly instant messaging client
 
 DISTNAME=	minbif-1.0.5
-REVISION=	0
 CATEGORIES=	net
 REVISION=	0
 

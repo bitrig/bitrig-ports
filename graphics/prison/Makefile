@@ -4,7 +4,6 @@ CATEGORIES =	graphics print
 COMMENT =	Qt-based barcode abstraction library
 VERSION =	1.0
 DISTNAME =	prison-${VERSION}
-REVISION =	0
 HOMEPAGE =	http://projects.kde.org/prison
 REVISION =	0
 

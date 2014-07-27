@@ -15,7 +15,6 @@ PKGNAME-lightning =	lightning-seamonkey-3.1
 REVISION-lightning =	2
 EPOCH-lightning =	0
 REVISION-main =		0
-REVISION-lightning =	1
 
 HOMEPAGE =	http://www.seamonkey-project.org/
 #MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla.org/${MOZILLA_PROJECT}/nightly/${MOZILLA_VERSION}-candidates/build1/source/

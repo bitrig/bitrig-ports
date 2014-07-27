@@ -6,8 +6,6 @@ DISTNAME=	socat-1.7.2.4
 REVISION=	1
 CATEGORIES=	net
 
-REVISION=	0
-
 HOMEPAGE=	http://www.dest-unreach.org/socat/
 
 MAINTAINER=	Nigel Taylor <nigel@openbsd.org>
