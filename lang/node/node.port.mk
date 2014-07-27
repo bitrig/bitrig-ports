@@ -56,6 +56,9 @@ TEST_TARGET ?=	test
 # if the current port depends on other node ports.
 MODNODE_DEPENDS ?=
 
+# Some ports need gtar instead of tar.
+TAR ?= /bin/tar
+
 # Link all dependencies first so that npm will install without complaining.
 # Then rebuild the distfile, since it may contain local patches.
 # Then use npm install to install the package to a local node_modules dir.
@@ -65,7 +68,7 @@ MODNODE_BUILD_TARGET = \
 	for dep in ${MODNODE_DEPENDS}; do \
 		cd ${WRKDIR} && ${MODNODE_BIN_NPM} link $$dep; \
 	done; \
-	cd ${WRKDIR} && tar -zcf ${NPM_INSTALL_FILE} ${NPM_TAR_DIR}; \
+	cd ${WRKDIR} && ${TAR} -zcf ${NPM_INSTALL_FILE} ${NPM_TAR_DIR}; \
 	cd ${WRKDIR} && HOME=${WRKDIR} ${MODNODE_BIN_NPM} install \
 		${NPM_INSTALL_FILE}
 
