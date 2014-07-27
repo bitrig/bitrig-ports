@@ -13,6 +13,7 @@ PERMIT_DISTFILES_FTP=	Yes
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=devel/lang/c++/}
 
 MAKE_FILE=		makefile.unx
+MAKE_FLAGS=		CXX=${CXX}
 ALL_TARGET=		lib
 
 INCLUDE=	address.h addrlist.h binhex.h body.h bodypart.h boyermor.h \
