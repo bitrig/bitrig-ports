@@ -24,5 +24,6 @@ LIB_DEPENDS =	devel/sdl	\
 		devel/sdl-ttf
 
 USE_GMAKE =	Yes
+MAKE_FLAGS=	CXX=${CXX}
 
 .include <bsd.port.mk>

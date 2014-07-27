@@ -1,6 +1,6 @@
 $OpenBSD: patch-Makefile,v 1.1.1.1 2009/04/03 17:56:41 landry Exp $
---- Makefile.orig	Sun Sep 25 23:20:30 2005
-+++ Makefile	Fri Apr  3 19:41:41 2009
+--- Makefile.orig	Sun Sep 25 17:20:30 2005
++++ Makefile	Sun Jul 27 16:47:59 2014
 @@ -5,7 +5,6 @@
  ########################################
  
@@ -9,15 +9,17 @@ $OpenBSD: patch-Makefile,v 1.1.1.1 2009/04/03 17:56:41 landry Exp $
  
  ########################################
  #
-@@ -16,7 +15,7 @@ PREFIX=/usr/local
+@@ -16,8 +15,8 @@ PREFIX=/usr/local
  OPTIMIZE=#-O6 -march=pentium4 -mfpmath=sse -fomit-frame-pointer -funroll-loops
  PROFILER=#-pg
  DEBUG=#-ggdb
 -CXXFLAGS=-pipe -Wall $(OPTIMIZE) $(DEBUG) `sdl-config --cflags` -DPREFIX=L\"$(PREFIX)\" $(PROFILER)
+-LNFLAGS=-pipe -lSDL_ttf -lfreetype `sdl-config --libs` -lz -lSDL_mixer $(PROFILER)
 +CXXFLAGS= $(CFLAGS) $(OPTIMIZE) $(DEBUG) `sdl-config --cflags` -DPREFIX=L\"$(PREFIX)\" $(PROFILER)
- LNFLAGS=-pipe -lSDL_ttf -lfreetype `sdl-config --libs` -lz -lSDL_mixer $(PROFILER)
++LNFLAGS=-pipe -lSDL_ttf -L/usr/X11R6/lib -lfreetype `sdl-config --libs` -lz -lSDL_mixer $(PROFILER)
  INSTALL=install
  
+ TARGET=einstein
 @@ -61,8 +60,9 @@ run: $(TARGET)
  	./$(TARGET)
  
