@@ -1,0 +1,31 @@
+--- unexelf.c.orig	Sun Jul 27 19:58:44 2014
++++ unexelf.c	Sun Jul 27 19:59:29 2014
+@@ -417,7 +417,7 @@ extern void fatal (const char *msgid, ...);
+ #include <errno.h>
+ #include <unistd.h>
+ #include <fcntl.h>
+-#if !defined (__NetBSD__) && !defined (__OpenBSD__)
++#if !defined (__NetBSD__) && !defined (__OpenBSD__) && !defined (__Bitrig__)
+ #include <elf.h>
+ #endif
+ #include <sys/mman.h>
+@@ -441,7 +441,7 @@ extern void fatal (const char *msgid, ...);
+ #define MAP_FAILED ((void *) -1)
+ #endif
+ 
+-#if defined (__alpha__) && !defined (__NetBSD__) && !defined (__OpenBSD__)
++#if defined (__alpha__) && !defined (__NetBSD__) && !defined (__OpenBSD__) && !defined(__Bitrig__)
+ /* Declare COFF debugging symbol table.  This used to be in
+    /usr/include/sym.h, but this file is no longer included in Red Hat
+    5.0 and presumably in any other glibc 2.x based distribution.  */
+@@ -517,6 +517,10 @@ typedef struct {
+ #endif /* __NetBSD__ */
+ 
+ #ifdef __OpenBSD__
++# include <sys/exec_elf.h>
++#endif
++
++#ifdef __Bitrig__
+ # include <sys/exec_elf.h>
+ #endif
+ 

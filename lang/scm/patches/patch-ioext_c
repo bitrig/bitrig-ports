@@ -1,0 +1,12 @@
+--- ioext.c.orig	Sun Jul 27 20:03:01 2014
++++ ioext.c	Sun Jul 27 20:03:11 2014
+@@ -52,6 +52,9 @@ SCM	stat2scm P((struct stat *stat_temp));
+ #ifdef __OpenBSD__
+ # include <unistd.h>
+ #endif
++#ifdef __Bitrig__
++# include <unistd.h>
++#endif
+ /* added by Denys Duchier */
+ #ifdef __SVR4
+ # include <sys/types.h>

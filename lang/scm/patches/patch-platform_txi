@@ -1,0 +1,10 @@
+--- platform.txi.orig	Sun Jul 27 19:55:19 2014
++++ platform.txi	Sun Jul 27 19:56:25 2014
+@@ -33,6 +33,7 @@ microsoft-quick-c i8086             ms-dos            
+ ms-dos            i8086             ms-dos            cc                
+ netbsd            *unknown*         unix              gcc               
+ openbsd           *unknown*         unix              gcc               
++bitrig            *unknown*         unix              clang             
+ os/2-cset         i386              os/2              icc               
+ os/2-emx          i386              os/2              gcc               
+ osf1              alpha             unix              cc                

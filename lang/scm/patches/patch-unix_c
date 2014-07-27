@@ -1,0 +1,12 @@
+--- unix.c.orig	Sun Jul 27 19:56:31 2014
++++ unix.c	Sun Jul 27 19:56:51 2014
+@@ -51,6 +51,9 @@ SCM scm_lstat P((SCM str));
+ # ifdef __OpenBSD__
+ #  include <unistd.h>
+ # endif
++# ifdef __Bitrig__
++#  include <unistd.h>
++# endif
+ #endif /* STDC_HEADERS */
+ 
+    /* Only the superuser can successfully execute mknod and acct */

@@ -1,0 +1,17 @@
+--- findexec.c.orig	Sun Jul 27 19:43:28 2014
++++ findexec.c	Sun Jul 27 19:44:41 2014
+@@ -117,6 +117,14 @@ Wed Feb 21 23:06:35 1996  Aubrey Jaffer
+ /* #  include <sys/types.h> */
+ #  include <sys/stat.h>
+ # endif
++# ifdef __Bitrig__
++/* This might be same for 44bsd derived system. */
++#  include <stdlib.h>
++#  include <unistd.h>
++#  include <string.h>
++/* #  include <sys/types.h> */
++#  include <sys/stat.h>
++# endif
+ # ifdef __alpha
+ #  include <string.h>
+ #  include <stdlib.h>

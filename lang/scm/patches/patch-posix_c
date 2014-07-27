@@ -1,0 +1,12 @@
+--- posix.c.orig	Sun Jul 27 20:02:42 2014
++++ posix.c	Sun Jul 27 20:02:56 2014
+@@ -40,6 +40,9 @@
+ # ifdef __OpenBSD__
+ #  include <unistd.h>
+ # endif
++# ifdef __Bitrig__
++#  include <unistd.h>
++# endif
+ # ifdef __NetBSD__
+ #  include <unistd.h>
+ # endif

@@ -1,0 +1,77 @@
+--- build.scm.orig	Sun Jul 27 19:45:04 2014
++++ build.scm	Sun Jul 27 19:49:33 2014
+@@ -520,6 +520,7 @@
+      (ms-dos		 i8086	   ms-dos    cc	       ) ;link
+      (netbsd		 *unknown* unix	     gcc       ) ;gcc
+      (openbsd		 *unknown* unix	     gcc       ) ;gcc
++     (bitrig		 *unknown* unix	     clang     ) ;clang
+      (os/2-cset		 i386	   os/2	     icc       ) ;link386
+      (os/2-emx		 i386	   os/2	     gcc       ) ;gcc
+      (plan9-8		 i386	   plan9     8c        ) ;8l
+@@ -681,6 +682,10 @@
+      (dlll openbsd "-DSUN_DL" "" "" () ())
+      (curses openbsd "" "-lcurses" "/usr/lib/libcurses.a" () ())
+      (regex openbsd "" "" #f () ())
++     (m bitrig "" "-lm" #f () ())
++     (dlll bitrig "-DSUN_DL" "" "" () ())
++     (curses bitrig "" "-lcurses" "/usr/lib/libcurses.a" () ())
++     (regex bitrig "" "" #f () ())
+      ))
+ 
+   '(compile-commands
+@@ -1826,6 +1831,55 @@
+ 		(list (car objs)))))))
+ 
+ (defcommand make-dll-archive openbsd
++  (lambda (oname objects libs parms)
++    (and (batch:try-command
++	  parms
++	  "gcc" "-shared" "-fPIC" "-o"
++	  (string-append
++	   (car (parameter-list-ref parms 'implvic))
++	   oname ".so")
++	  objects)
++	 (batch:rebuild-catalog parms)
++	 (string-append
++	  (car (parameter-list-ref parms 'implvic))
++	  oname ".so"))))
++
++(defcommand compile-c-files bitrig
++  (lambda (files parms)
++    (and (batch:try-chopped-command
++	  parms
++	  "cc" "-c"
++	  (include-spec "-I" parms)
++	  (c-includes parms)
++	  (c-flags parms)
++	  files)
++	 (map c->o files))))
++(defcommand link-c-program bitrig
++  (lambda (oname objects libs parms)
++    (batch:rename-file parms
++		       oname (string-append oname "~"))
++    (and (batch:try-command parms
++			    "cc" "-o" oname
++			    (must-be-first
++			     '("-nostartfiles"
++			       "pre-crt0.o" "crt0.o"
++			       "/usr/lib/crt0.o")
++			     (append objects libs)))
++	 oname)))
++(defcommand compile-dll-c-files bitrig
++  (lambda (files parms)
++    (and (batch:try-chopped-command
++	  parms "cc" "-fPIC" "-c"
++	  (include-spec "-I" parms)
++	  (c-includes parms)
++	  (c-flags parms)
++	  files)
++	 (let ((objs (map c->o files)))
++	   (and (batch:try-command parms "gcc" "-shared" "-fPIC" objs)
++		(batch:try-command parms "mv" "a.out" (car objs))
++		(list (car objs)))))))
++
++(defcommand make-dll-archive bitrig
+   (lambda (oname objects libs parms)
+     (and (batch:try-command
+ 	  parms

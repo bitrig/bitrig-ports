@@ -1,0 +1,12 @@
+--- sys.c.orig	Sun Jul 27 19:54:11 2014
++++ sys.c	Sun Jul 27 19:54:59 2014
+@@ -59,6 +59,9 @@ SCM	*loc_try_create_file;
+ # ifdef __OpenBSD__
+ #  include <unistd.h>
+ # endif
++# ifdef __Bitrig__
++#  include <unistd.h>
++# endif
+ #endif
+ 
+ static void gc_sweep P((int contin_bad));

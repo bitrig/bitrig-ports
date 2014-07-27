@@ -1,9 +1,5 @@
 # $OpenBSD: Makefile,v 1.36 2013/12/06 14:47:56 espie Exp $
-# losely based on the FreeBSD port
-
-.for m in alpha powerpc vax sparc sparc64
-BROKEN-$m =	segfaults in longjump return while testing continuations
-.endfor
+# loosely based on the FreeBSD port
 
 COMMENT =	scheme r5 interpreter
 REVISION =	1
@@ -48,6 +44,8 @@ SCM_INFO +=	Xlibscm.info
 
 FEATURES =	arrays bignums cautious edit-line curses posix socket unix \
 		dynamic-linking i/o-extensions inexact regex
+
+OPTIONS +=	--linker-options=-L${LOCALBASE}/lib
 
 .if !${FLAVOR:Mno_x11}
 FEATURES +=	x

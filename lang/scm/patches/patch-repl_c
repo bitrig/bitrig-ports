@@ -1,0 +1,14 @@
+--- repl.c.orig	Sun Jul 27 20:02:24 2014
++++ repl.c	Sun Jul 27 20:02:37 2014
+@@ -39,6 +39,11 @@ void	scm_fill_freelist P((void));
+ # include <unistd.h>
+ #endif
+ 
++#ifdef __Bitrig__
++# include <ctype.h>
++# include <unistd.h>
++#endif
++
+ #ifdef PLAN9
+ # include <ctype.h>
+ #endif
