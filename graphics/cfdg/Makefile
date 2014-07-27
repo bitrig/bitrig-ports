@@ -22,6 +22,10 @@ MASTER_SITES =	http://www.contextfreeart.org/download/
 EXTRACT_SUFX =	.tgz
 
 USE_GMAKE =	Yes
+MAKE_FLAGS=	LINK.o=${CXX}
+MODULES=       gcc4
+MODGCC4_ARCHS = *
+MODGCC4_LANGS = c c++
 
 # ????
 WRKDIST =	${WRKDIR}/${DISTNAME}.tgz/
