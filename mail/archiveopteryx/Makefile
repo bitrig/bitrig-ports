@@ -21,6 +21,10 @@ EXTRACT_SUFX =		.tar.bz2
 BUILD_DEPENDS =		devel/jam
 NO_TEST =		yes
 
+MODULES=       gcc4
+MODGCC4_ARCHS = *
+MODGCC4_LANGS = c c++
+
 JAMDEBUG =	-d x	# display command-lines
 JAMDEBUG +=	-q	# die quickly on build failure
 MAKE_ENV +=	CC=${CC} CXX=${CXX}
