@@ -1,0 +1,11 @@
+--- configure.orig	Mon Jul 28 21:58:15 2014
++++ configure	Mon Jul 28 21:58:25 2014
+@@ -3286,7 +3286,7 @@ $as_echo "Solaris" >&6; }
+ 			UNINSTALL_LIB='rm -f ${DESTDIR}${libdir}/$$i ${DESTDIR}${libdir}/$$i.${LIB_MAJOR}.${LIB_MINOR}'
+ 			CLEAN_LIB=''
+ 			;;
+-		openbsd* | mirbsd*)
++		openbsd* | mirbsd* | bitrig*)
+ 			{ $as_echo "$as_me:${as_lineno-$LINENO}: result: OpenBSD" >&5
+ $as_echo "OpenBSD" >&6; }
+ 			LIB_CPPFLAGS='-DPIC'
