@@ -1,0 +1,13 @@
+--- configure.in.orig	Mon Jul 28 21:33:15 2014
++++ configure.in	Mon Jul 28 21:32:54 2014
+@@ -39,8 +39,8 @@ AC_C_BIGENDIAN
+ AC_CHECK_SIZEOF(long)
+ 
+ if test "$GCC" = yes; then
+-  dnlCFLAGS="$CFLAGS -Wall -O2"
+-  CFLAGS="$CFLAGS -Wall -g"
++  CFLAGS="$CFLAGS -Wall -O2"
++  dnlCFLAGS="$CFLAGS -Wall -g"
+ fi
+ if test "$GXX" = yes; then
+   CXXFLAGS="$CXXFLAGS -Wall -g"

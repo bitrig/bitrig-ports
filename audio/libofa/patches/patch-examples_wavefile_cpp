@@ -1,0 +1,10 @@
+--- examples/wavefile.cpp.orig	Mon Jul 28 21:24:17 2014
++++ examples/wavefile.cpp	Mon Jul 28 21:24:23 2014
+@@ -11,6 +11,7 @@
+ #include "io.h"
+ #endif
+ #include <fcntl.h>
++#include <unistd.h>
+ 
+ static bool readBytes(int fd, unsigned char *buf, int size) {
+     int ct = 0;

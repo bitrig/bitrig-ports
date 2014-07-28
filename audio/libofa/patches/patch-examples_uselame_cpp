@@ -1,0 +1,10 @@
+--- examples/uselame.cpp.orig	Mon Jul 28 21:24:04 2014
++++ examples/uselame.cpp	Mon Jul 28 21:24:10 2014
+@@ -11,6 +11,7 @@
+ #include "windows.h"
+ #else
+ #include <sys/wait.h>
++#include <unistd.h>
+ #endif
+ 
+ AudioData *loadWaveFile(char *file);
