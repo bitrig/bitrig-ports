@@ -1,7 +1,7 @@
 $OpenBSD: patch-build_common_gypi,v 1.1.1.1 2012/10/13 15:09:58 abieber Exp $
---- build/common.gypi.orig	Tue Oct  9 07:14:31 2012
-+++ build/common.gypi	Tue Oct  9 15:51:53 2012
-@@ -90,7 +90,7 @@
+--- build/common.gypi.orig	Sun Oct 21 19:05:28 2012
++++ build/common.gypi	Sun Jul 27 20:46:20 2014
+@@ -87,7 +87,7 @@
      'v8_use_snapshot%': 'true',
      'host_os%': '<(OS)',
      'v8_use_liveobjectlist%': 'false',
@@ -10,9 +10,30 @@ $OpenBSD: patch-build_common_gypi,v 1.1.1.1 2012/10/13 15:09:58 abieber Exp $
  
      # With post mortem support enabled, metadata is embedded into libv8 that
      # describes various parameters of the VM for use by debuggers. See
-@@ -313,6 +313,9 @@
+@@ -265,7 +265,7 @@
+           },
+         },
        }],
-       ['OS=="freebsd" or OS=="openbsd"', {
+-      ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris" \
++      ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or OS=="solaris" \
+          or OS=="netbsd"', {
+         'conditions': [
+           [ 'v8_no_strict_aliasing==1', {
+@@ -276,7 +276,7 @@
+       ['OS=="solaris"', {
+         'defines': [ '__C99FEATURES__=1' ],  # isinf() etc.
+       }],
+-      ['(OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris" \
++      ['(OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or OS=="solaris" \
+          or OS=="netbsd" or OS=="mac" or OS=="android") and \
+         (v8_target_arch=="arm" or v8_target_arch=="ia32" or \
+          v8_target_arch=="mipsel")', {
+@@ -305,8 +305,11 @@
+           }],
+         ],
+       }],
+-      ['OS=="freebsd" or OS=="openbsd"', {
++      ['OS=="freebsd" or OS=="openbsd" or OS=="bitrig"', {
          'cflags': [ '-I/usr/local/include' ],
 +         'libraries': [                                            
 +            '-L/usr/local/lib -lexecinfo',
@@ -20,3 +41,21 @@ $OpenBSD: patch-build_common_gypi,v 1.1.1.1 2012/10/13 15:09:58 abieber Exp $
        }],
        ['OS=="netbsd"', {
          'cflags': [ '-I/usr/pkg/include' ],
+@@ -337,7 +340,7 @@
+           },
+         },
+         'conditions': [
+-          ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="netbsd"', {
++          ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or OS=="netbsd"', {
+             'cflags': [ '-Wall', '<(werror)', '-W', '-Wno-unused-parameter',
+                         '-Wnon-virtual-dtor', '-Woverloaded-virtual' ],
+           }],
+@@ -345,7 +348,7 @@
+       },  # Debug
+       'Release': {
+         'conditions': [
+-          ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="netbsd" \
++          ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="bitrig" or OS=="netbsd" \
+             or OS=="android"', {
+             'cflags!': [
+               '-O2',

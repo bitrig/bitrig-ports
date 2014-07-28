@@ -1,0 +1,38 @@
+--- build/standalone.gypi.orig	Sun Jul 27 20:55:02 2014
++++ build/standalone.gypi	Sun Jul 27 20:56:13 2014
+@@ -39,7 +39,7 @@
+         'variables': {
+           'conditions': [
+             ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or \
+-               OS=="netbsd" or OS=="mac"', {
++               OS=="bitrig" or OS=="netbsd" or OS=="mac"', {
+               # This handles the Unix platforms we generally deal with.
+               # Anything else gets passed through, which probably won't work
+               # very well; such hosts should pass an explicit target_arch
+@@ -49,7 +49,7 @@
+                   s/x86_64/x64/;s/amd64/x64/;s/arm.*/arm/;s/mips.*/mipsel/")',
+             }, {
+               # OS!="linux" and OS!="freebsd" and OS!="openbsd" and
+-              # OS!="netbsd" and OS!="mac"
++              # OS!="bitrig" and OS!="netbsd" and OS!="mac"
+               'host_arch%': 'ia32',
+             }],
+           ],
+@@ -90,7 +90,7 @@
+   },
+   'conditions': [
+     ['OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris" \
+-       or OS=="netbsd"', {
++       or OS=="bitrig" or OS=="netbsd"', {
+       'target_defaults': {
+         'cflags': [ '-Wall', '<(werror)', '-W', '-Wno-unused-parameter',
+                     '-Wnon-virtual-dtor', '-pthread', '-fno-rtti',
+@@ -110,7 +110,7 @@
+       },
+     }],
+     # 'OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris"
+-    #  or OS=="netbsd"'
++    #  or OS=="bitrig" or OS=="netbsd"'
+     ['OS=="win"', {
+       'target_defaults': {
+         'defines': [

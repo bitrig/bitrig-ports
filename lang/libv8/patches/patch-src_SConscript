@@ -1,0 +1,20 @@
+--- src/SConscript.orig	Sun Jul 27 20:59:36 2014
++++ src/SConscript	Sun Jul 27 20:59:56 2014
+@@ -227,6 +227,7 @@ SOURCES = {
+   'simulator:mips': ['mips/simulator-mips.cc'],
+   'os:freebsd': ['platform-freebsd.cc', 'platform-posix.cc'],
+   'os:openbsd': ['platform-openbsd.cc', 'platform-posix.cc'],
++  'os:bitrig': ['platform-openbsd.cc', 'platform-posix.cc'],
+   'os:linux':   ['platform-linux.cc', 'platform-posix.cc'],
+   'os:android': ['platform-linux.cc', 'platform-posix.cc'],
+   'os:macos':   ['platform-macos.cc', 'platform-posix.cc'],
+@@ -289,6 +290,9 @@ D8_FULL_FILES = {
+     'd8-posix.cc'
+   ],
+   'os:openbsd': [
++    'd8-posix.cc'
++  ],
++  'os:bitrig': [
+     'd8-posix.cc'
+   ],
+   'os:solaris': [

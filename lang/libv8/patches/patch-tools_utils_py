@@ -1,0 +1,11 @@
+--- tools/utils.py.orig	Sun Jul 27 20:39:59 2014
++++ tools/utils.py	Sun Jul 27 20:41:36 2014
+@@ -59,6 +59,8 @@ def GuessOS():
+     return 'freebsd'
+   elif id == 'OpenBSD':
+     return 'openbsd'
++  elif id == 'Bitrig':
++    return 'bitrig'
+   elif id == 'SunOS':
+     return 'solaris'
+   elif id == 'NetBSD':

@@ -43,7 +43,7 @@ SUBST_VARS+= 	V8_ARCH
 MAKE_FLAGS+= library=shared ARCHES=${V8_ARCH} MODES=${V8_RELEASE} \
 						 DEFAULT_ARCHES=${V8_ARCH}
 
-MAKE_ENV+=	V=1 CXX=c++ CCFLAGS+="${CFLAGS}" \
+MAKE_ENV+=	V=1 CXX=clang++ LINK=clang++ CCFLAGS+="${CFLAGS}" \
 						CXXFLAGS="${CXXFLAGS} -I${WRKSRC}/src -I${LOCALBASE}/include" \
 						PATH=${WRKSRC}/bin:${PATH}
 
