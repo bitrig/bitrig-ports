@@ -59,16 +59,16 @@ lib/libhamlib++.la
 lib/libhamlib.la
 @lib lib/libhamlib.so.${LIBhamlib_VERSION}
 lib/pkgconfig/hamlib.pc
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/5.16.3/
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/5.16.3/perllocal.pod
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/Hamlib.pm
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Hamlib/
-@comment libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Hamlib/Hamlib.bs
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Hamlib/Hamlib.so
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/perltest.pl
+@comment libdata/perl5/${MACHINE_ARCH}-bitrig/
+@comment libdata/perl5/${MACHINE_ARCH}-bitrig/5.16.3/
+@comment libdata/perl5/${MACHINE_ARCH}-bitrig/5.16.3/perllocal.pod
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/Hamlib.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Hamlib/
+@comment libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Hamlib/Hamlib.bs
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Hamlib/Hamlib.so
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/perltest.pl
 @man man/man1/rigctl.1
 @man man/man1/rigmem.1
 @man man/man1/rigsmtr.1

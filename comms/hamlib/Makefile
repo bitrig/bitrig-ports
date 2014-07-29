@@ -34,7 +34,7 @@ LIBTOOL_FLAGS=		--tag=disable-static
 
 cWANTLIB=		ltdl m pthread usb usb-1.0
 WANTLIB-main=		${cWANTLIB} c z xml2 ${MODLIBICONV_WANTLIB}
-WANTLIB=main+=		c++ c++abi pthread
+WANTLIB-main+=		c++ c++abi pthread
 WANTLIB-python=		${cWANTLIB} hamlib ${MODPY_WANTLIB}
 WANTLIB-tcl=		${cWANTLIB} hamlib ${MODTCL_WANTLIB}
 
