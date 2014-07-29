@@ -6,7 +6,7 @@ REVISION=	11
 
 WANTLIB=	c m ncurses util
 
-CFLAGS +=	-fno-pie
+CFLAGS +=	-fno-pie -std=gnu89
 CONFIGURE_ENV =	LDFLAGS="-nopie"
 CONFIGURE_ARGS+=--infodir='$${DESTDIR}${PREFIX}/info/${DISTNAME}' \
 		--infopath='${LOCALBASE}/info/${DISTNAME}:${LOCALBASE}/info:/usr/share/info' \
