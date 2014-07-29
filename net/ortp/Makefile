@@ -29,6 +29,8 @@ CONFIGURE_ARGS =	${CONFIGURE_SHARED} \
 			--enable-tests \
 			--with-srtp=${LOCALBASE}
 
+CFLAGS +=	-Wno-gnu-designator
+
 post-install:
 	rm -Rf ${PREFIX}/share/doc/ortp
 	mv ${PREFIX}/share/doc/${DISTNAME} ${PREFIX}/share/doc/ortp
