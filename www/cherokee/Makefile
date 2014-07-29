@@ -84,7 +84,7 @@ FAKE_FLAGS =	cherokeeconfdir="${PREFIX}/share/examples/cherokee/etc" \
 
 CONFIGURE_STYLE =	autoconf
 AUTOCONF_VERSION =	2.68
-CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include -Wno-return-type" \
 			LDFLAGS="-L${LOCALBASE}/lib" \
 			ac_cv_header_execinfo_h=no
 CONFIGURE_ARGS =	${CONFIGURE_SHARED} \

@@ -1,6 +1,15 @@
 $OpenBSD: patch-configure_in,v 1.1 2013/04/25 15:57:18 sthen Exp $
---- configure.in.orig	Thu Apr 25 16:49:19 2013
-+++ configure.in	Thu Apr 25 16:49:31 2013
+--- configure.in.orig	Tue Oct 18 14:49:42 2011
++++ configure.in	Mon Jul 28 22:22:16 2014
+@@ -120,7 +120,7 @@ AC_MSG_CHECKING([host platform characteristics])
+           setenv_is_threadsafe="yes"
+           libdl="-ldl"
+           ;;
+-	*-*-*freebsd*|*-*-*openbsd*|*-*-*netbsd*|*-*-*dragonfly*)
++	*-*-*freebsd*|*-*-*openbsd*|*-*-*bitrig*|*-*-*netbsd*|*-*-*dragonfly*)
+           libdl=
+           ;;
+ 	*-*-darwin*)
 @@ -274,6 +274,7 @@ AC_CHECK_TYPE(wchar_t, unsigned short)
  
  AC_CHECK_SIZEOF(int)
