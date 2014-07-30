@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.223 2014/05/12 09:20:52 brad Exp $
+# $OpenBSD: Makefile,v 1.224 2014/07/30 14:28:24 naddy Exp $
 
 SHARED_ONLY=	Yes
 
@@ -21,9 +21,9 @@ CATEGORIES=	mail
 MASTER_SITES=	${HOMEPAGE}releases/${V_MAJOR}/
 
 REVISION-server=	3
-REVISION-ldap=		2
-REVISION-mysql=		2
-REVISION-postgresql=	2
+REVISION-ldap=		3
+REVISION-mysql=		3
+REVISION-postgresql=	3
 
 SHARED_LIBS=	dovecot-compression 0.0 \
 		dovecot-lda	2.0 \
