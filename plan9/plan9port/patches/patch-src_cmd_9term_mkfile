@@ -1,0 +1,11 @@
+--- src/cmd/9term/mkfile.orig	Wed Jul 30 22:24:30 2014
++++ src/cmd/9term/mkfile	Wed Jul 30 22:24:43 2014
+@@ -10,7 +10,7 @@ HFILES=dat.h fns.h term.h
+ 
+ <$PLAN9/src/mkmany
+ 
+-Darwin.$O Linux.$O FreeBSD.$O DragonFly.$O: bsdpty.c
++Bitrig.$O Darwin.$O Linux.$O FreeBSD.$O DragonFly.$O: bsdpty.c
+ 
+ $O.9term: data.$O scrl.$O time.$O util.$O wind.$O
+ 

@@ -1,0 +1,20 @@
+--- include/u.h.orig	Wed Jul 30 21:54:03 2014
++++ include/u.h	Wed Jul 30 21:54:55 2014
+@@ -19,7 +19,7 @@ extern "C" {
+ #define _BSD_SOURCE 1
+ #define _NETBSD_SOURCE 1	/* NetBSD */
+ #define _SVID_SOURCE 1
+-#if !defined(__APPLE__) && !defined(__OpenBSD__)
++#if !defined(__APPLE__) && !defined(__OpenBSD__) && !defined(__Bitrig__)
+ #	define _XOPEN_SOURCE 1000
+ #	define _XOPEN_SOURCE_EXTENDED 1
+ #endif
+@@ -114,7 +114,7 @@ typedef long p9jmp_buf[sizeof(sigjmp_buf)/sizeof(long)
+ #	undef _NEEDUSHORT
+ #	undef _NEEDUINT
+ #	undef _NEEDULONG
+-#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
+ #	include <sys/types.h>
+ #	include <pthread.h>
+ #	define PLAN9PORT_USING_PTHREADS 1

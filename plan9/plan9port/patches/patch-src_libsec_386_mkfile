@@ -1,0 +1,11 @@
+--- src/libsec/386/mkfile.orig	Wed Jul 30 21:59:18 2014
++++ src/libsec/386/mkfile	Wed Jul 30 22:00:53 2014
+@@ -16,7 +16,7 @@ UPDATE=mkfile\
+ <$PLAN9/src/mksyslib
+ 
+ %.s: %.spp
+-	if [ `uname` = OpenBSD ] || [ `uname` = Darwin ]
++	if [ `uname` = OpenBSD ] || [ `uname` = Darwin ] || [ `uname` = Bitrig ]
+ 	then
+ 		gcc -xc -D__`uname`__ -E $stem.spp >$stem.s
+ 	else

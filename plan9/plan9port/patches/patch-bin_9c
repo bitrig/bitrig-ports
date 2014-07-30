@@ -1,0 +1,11 @@
+--- bin/9c.orig	Wed Jul 30 21:49:13 2014
++++ bin/9c	Wed Jul 30 21:50:39 2014
+@@ -75,6 +75,8 @@ useclang()
+ 
+ tag="${SYSNAME:-`uname`}-${OBJTYPE:-`uname -m`}-${CC9:-cc}"
+ case "$tag" in
++*Bitrig*gcc*)	usegcc ;;
++*Bitrig*clang*)	useclang ;;
+ *FreeBSD*gcc*)	usegcc ;;
+ *FreeBSD*clang*)	useclang ;;
+ *DragonFly*|*BSD*)	usegcc ;;

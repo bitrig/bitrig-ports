@@ -1,0 +1,12 @@
+--- src/libthread/mkfile.orig	Wed Jul 30 22:34:38 2014
++++ src/libthread/mkfile	Wed Jul 30 22:35:09 2014
+@@ -36,6 +36,9 @@ tspawnloop: test/tspawnloop.$O
+ OpenBSD-%-asm.$O:	OpenBSD-%-asm.S
+ 	$CC $CFLAGS OpenBSD-$stem-asm.S
+ 
++Bitrig-%-asm.$O:	Bitrig-%-asm.S
++	$CC $CFLAGS Bitrig-$stem-asm.S
++
+ Linux-sparc64-context.$O: Linux-sparc64-context.S
+ 	$CC -m64 -mcpu=v9 $CFLAGS Linux-sparc64-context.S
+ 

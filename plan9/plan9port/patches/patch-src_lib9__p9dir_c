@@ -1,0 +1,11 @@
+--- src/lib9/_p9dir.c.orig	Wed Jul 30 21:56:05 2014
++++ src/lib9/_p9dir.c	Wed Jul 30 21:56:17 2014
+@@ -40,7 +40,7 @@ disksize(int fd, struct stat *st)
+ 	return 0;
+ }
+ 
+-#elif defined(__OpenBSD__)
++#elif defined(__OpenBSD__) || defined(__Bitrig__)
+ #define _HAVESTGEN
+ #include <sys/disklabel.h>
+ #include <sys/ioctl.h>

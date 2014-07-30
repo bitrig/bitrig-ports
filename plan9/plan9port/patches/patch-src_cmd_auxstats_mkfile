@@ -1,0 +1,10 @@
+--- src/cmd/auxstats/mkfile.orig	Wed Jul 30 22:42:58 2014
++++ src/cmd/auxstats/mkfile	Wed Jul 30 22:43:10 2014
+@@ -12,6 +12,6 @@ HFILES=\
+ 
+ <$PLAN9/src/mkone
+ 
+-KVM=`{if uname |egrep 'BSD' >/dev/null; then echo -lkvm; fi}
++KVM=`{if uname |egrep 'BSD|Bitrig' >/dev/null; then echo -lkvm; fi}
+ LDFLAGS=$LDFLAGS $KVM
+ 

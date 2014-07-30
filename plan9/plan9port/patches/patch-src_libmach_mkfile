@@ -1,0 +1,8 @@
+--- src/libmach/mkfile.orig	Wed Jul 30 22:15:02 2014
++++ src/libmach/mkfile	Wed Jul 30 22:15:09 2014
+@@ -81,4 +81,5 @@ SunOS.$O: nosys.c
+ Darwin.$O: nosys.c
+ OpenBSD.$O: nosys.c
+ NetBSD.$O: nosys.c
++Bitrig.$O: nosys.c
+ 

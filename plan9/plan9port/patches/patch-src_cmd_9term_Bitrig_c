@@ -1,0 +1,4 @@
+--- src/cmd/9term/Bitrig.c.orig	Wed Jul 30 22:24:59 2014
++++ src/cmd/9term/Bitrig.c	Wed Jul 30 22:25:06 2014
+@@ -0,0 +1 @@
++#include "OpenBSD.c"

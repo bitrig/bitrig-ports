@@ -1,0 +1,12 @@
+--- src/libthread/sysofiles.sh.orig	Wed Jul 30 22:01:14 2014
++++ src/libthread/sysofiles.sh	Wed Jul 30 22:01:49 2014
+@@ -20,6 +20,9 @@ case "$tag" in
+ *-OpenBSD-*)
+ 	echo ${SYSNAME}-${OBJTYPE}-asm.o ${SYSNAME}-${OBJTYPE}.o pthread.o
+ 	;;
++*-Bitrig-*)
++	echo ${SYSNAME}-${OBJTYPE}-asm.o ${SYSNAME}-${OBJTYPE}.o pthread.o
++	;;
+ *)
+ 	echo pthread.o
+ esac

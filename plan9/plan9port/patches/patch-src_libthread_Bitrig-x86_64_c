@@ -1,0 +1,4 @@
+--- src/libthread/Bitrig-x86_64.c.orig	Wed Jul 30 22:40:04 2014
++++ src/libthread/Bitrig-x86_64.c	Wed Jul 30 22:40:17 2014
+@@ -0,0 +1 @@
++#include "OpenBSD-x86_64.c"

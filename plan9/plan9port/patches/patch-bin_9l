@@ -1,0 +1,11 @@
+--- bin/9l.orig	Wed Jul 30 22:03:43 2014
++++ bin/9l	Wed Jul 30 22:04:40 2014
+@@ -24,7 +24,7 @@ case "$tag" in
+ 		;;
+ 	esac
+ 	;;
+-*DragonFly*|*BSD*)
++*DragonFly*|*BSD*|*Bitrig*)
+ 	ld=${CC9:-gcc}
+ 	userpath=true
+ 	extralibs="$extralibs -lutil"
