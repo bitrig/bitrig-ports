@@ -1,15 +1,6 @@
 $OpenBSD: patch-makefile,v 1.8 2014/05/14 23:32:50 bcallah Exp $
---- makefile.orig	Wed Apr 16 23:16:03 2014
-+++ makefile	Wed Apr 16 23:16:03 2014
-@@ -24,7 +24,7 @@
- #-------------------------------------------------
- 
- ifndef TARGET
--TARGET = mame
-+TARGET = mess
- endif
- 
- ifndef SUBTARGET
+--- makefile.orig      Wed Jul 30 17:12:01 2014
++++ makefile   Wed Jul 30 17:12:01 2014
 @@ -92,6 +92,9 @@ endif
  ifeq ($(firstword $(filter OpenBSD,$(UNAME))),OpenBSD)
  TARGETOS = openbsd
