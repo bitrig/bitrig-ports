@@ -9,7 +9,7 @@ gcc3 throws a spurious warning that a variable might be used uninitialized.
  ifneq ($(TARGET),beos)
    ifneq ($(TARGET),amiga)
 -    WARNFLAGS := $(WARNFLAGS) -Werror
-+    ifneq ($(TARGET),OpenBSD)
++    ifneq ($(TARGET),Bitrig)
 +      WARNFLAGS := $(WARNFLAGS) -Werror
 +    endif
    endif
