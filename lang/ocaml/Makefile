@@ -8,7 +8,7 @@ COMMENT =	ML language based on complete class-based objective system
 # Do check that the ports that depend on it still work, or repair them. 
 # Don't forget to bump version in ocaml.port.mk, too!
 VERSION=4.01.0
-REVISION=0
+REVISION=1
 
 DISTNAME =	ocaml-${VERSION}
 
@@ -35,6 +35,7 @@ CONFIGURE_ARGS+=-tkdefs '-I${MODTCL_INCDIR} -I${MODTK_INCDIR}'
 CONFIGURE_ARGS+=-tklibs -L${LOCALBASE}/lib
 CONFIGURE_ARGS+=-prefix ${PREFIX} 
 CONFIGURE_ARGS+=-cc '${CC} ${CFLAGS}'
+CONFIGURE_ARGS+=-aspp '${CC} -c'
 CONFIGURE_ARGS+=-x11include ${X11BASE}/include -x11lib ${X11BASE}/lib
 CONFIGURE_ENV+=OPENBSD_LOCALBASE="${LOCALBASE}"
 
