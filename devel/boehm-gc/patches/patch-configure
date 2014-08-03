@@ -1,0 +1,11 @@
+--- configure.orig	Sun Aug  3 12:26:43 2014
++++ configure	Sun Aug  3 12:30:00 2014
+@@ -15886,7 +15886,7 @@ $as_echo "#define _REENTRANT 1" >>confdefs.h
+         { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: \"Only HP-UX 11 POSIX threads are supported.\"" >&5
+ $as_echo "$as_me: WARNING: \"Only HP-UX 11 POSIX threads are supported.\"" >&2;}
+         ;;
+-     *-*-openbsd*)
++     *-*-openbsd* | *-*-bitrig*)
+         $as_echo "#define GC_OPENBSD_THREADS 1" >>confdefs.h
+ 
+         THREADDLLIBS=-pthread
