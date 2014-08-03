@@ -34,6 +34,7 @@ SUBDIR += archivers
 SUBDIR += astro
 SUBDIR += audio
 SUBDIR += benchmarks
+SUBDIR += bitrig
 SUBDIR += biology
 SUBDIR += books
 SUBDIR += cad
