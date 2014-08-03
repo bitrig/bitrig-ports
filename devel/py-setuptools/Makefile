@@ -2,14 +2,12 @@
 
 COMMENT=	simplified packaging system for Python modules
 
-MODPY_EGG_VERSION=	3.4.4
+MODPY_EGG_VERSION=	5.4.2
 DISTNAME=		setuptools-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME:S/c/./}
 EPOCH = 		0
 CATEGORIES=		devel
 PKG_ARCH=		*
-
-REVISION = 1
 
 MASTER_SITES=	${MASTER_SITE_PYPI:=s/setuptools/}
 HOMEPAGE=	http://peak.telecommunity.com/DevCenter/setuptools
