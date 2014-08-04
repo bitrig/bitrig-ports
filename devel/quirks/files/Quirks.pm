@@ -353,6 +353,9 @@ my $stem_extensions = {
 	'kdnssd' => 'zeroconf-ioslave',
 	'kwallet' => 'kwalletmanager',
 	'p5-TAP-Parser' => 'p5-Test-Harness',
+
+# Bitrig 0.1
+	'py3-distribute' => 'py3-setuptools',
 };
 
 # reasons for obsolete packages
