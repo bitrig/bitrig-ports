@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.83 2014/05/27 20:06:26 naddy Exp $
+# $OpenBSD: Makefile,v 1.84 2014/08/09 19:44:40 naddy Exp $
 
 COMMENT=	GNU Bourne Again Shell
 
