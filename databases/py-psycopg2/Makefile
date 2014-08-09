@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		PostgreSQL database adapter for Python
 
 MODPY_EGG_VERSION =	2.5.2
-REVISION = 1
+REVISION =		2
 DISTNAME =		psycopg2-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		databases

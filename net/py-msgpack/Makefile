@@ -5,7 +5,7 @@ COMMENT =	messagepack (de)serializer
 MODPY_EGG_VERSION =	0.4.0
 DISTNAME =	msgpack-python-${MODPY_EGG_VERSION}
 PKGNAME =	py-msgpack-${MODPY_EGG_VERSION}
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	net textproc
 

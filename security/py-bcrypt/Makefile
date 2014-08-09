@@ -5,7 +5,7 @@ COMMENT=	bcrypt blowfish password hashing for Python
 MODPY_EGG_VERSION= 0.4
 DISTNAME=	py-bcrypt-${MODPY_EGG_VERSION}
 
-REVISION = 1
+REVISION =	2
 
 CATEGORIES=	security
 

@@ -4,7 +4,7 @@ SHARED_ONLY =	Yes
 
 COMMENT =	thin SQLite wrapper for Python
 
-REVISION = 1
+REVISION = 2
 MODPY_EGG_VERSION = 3.8.0.2
 DISTNAME =	apsw-${MODPY_EGG_VERSION}-r1
 EXTRACT_SUFX =	.zip

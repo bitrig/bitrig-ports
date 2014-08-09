@@ -10,8 +10,8 @@ PKGNAME-main =		py-dbus-${V}
 FULLPKGNAME-common =	py-dbus-common-${V}
 FULLPKGPATH-common =	x11/dbus-python,-common
 
-REVISION-main =		3
-REVISION-common =	1
+REVISION-main =		4
+REVISION-common =	2
 
 CATEGORIES =		x11
 

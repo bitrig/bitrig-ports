@@ -5,7 +5,7 @@ COMMENT =	simplify usage of decorators
 MODPY_EGG_VERSION = 3.4.0
 DISTNAME =	decorator-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	devel
 

@@ -3,7 +3,7 @@
 COMMENT =		Python module providing a password hashing framework
 
 MODPY_EGG_VERSION =	1.6.2
-REVISION =		2
+REVISION =		3
 DISTNAME =		passlib-${MODPY_EGG_VERSION}
 PKGNAME =		py-passlib-${MODPY_EGG_VERSION}
 

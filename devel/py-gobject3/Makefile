@@ -7,8 +7,8 @@ GNOME_PROJECT=		pygobject
 GNOME_VERSION=		3.12.2
 MODPY_EGG_VERSION=	${GNOME_VERSION}
 
-REVISION-main = 2
-REVISION-common = 0
+REVISION-main = 3
+REVISION-common = 1
 
 PKGNAME-main=		py-gobject3-${GNOME_VERSION}
 FULLPKGNAME-common=	py-gobject3-common-${GNOME_VERSION}

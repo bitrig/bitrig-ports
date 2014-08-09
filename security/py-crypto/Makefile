@@ -9,7 +9,7 @@ DISTNAME =		pycrypto-${MODPY_EGG_VERSION}
 PKGNAME =		py-crypto-${MODPY_EGG_VERSION}
 CATEGORIES =		security devel
 
-REVISION = 1
+REVISION =		2
 
 HOMEPAGE =		https://www.dlitz.net/software/pycrypto/
 

@@ -6,7 +6,7 @@ MODPY_EGG_VERSION =	1.4.1
 DISTNAME =		pip-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		devel
-REVISION =		2
+REVISION =		3
 
 HOMEPAGE =		http://www.pip-installer.org/
 
