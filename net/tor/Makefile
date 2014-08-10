@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.71 2014/07/12 13:57:23 pascal Exp $
+# $OpenBSD: Makefile,v 1.72 2014/08/10 16:51:53 pascal Exp $
 
 COMMENT=	anonymity service using onion routing
 
