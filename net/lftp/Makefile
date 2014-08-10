@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.97 2014/04/24 16:29:03 benoit Exp $
+# $OpenBSD: Makefile,v 1.98 2014/08/10 21:50:41 jca Exp $
 
 COMMENT=	shell-like command line ftp and sftp client
 
-DISTNAME =	lftp-4.4.15
+DISTNAME=	lftp-4.5.3
 CATEGORIES=	net
 
 REVISION=	2
@@ -25,8 +25,10 @@ CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS=	--with-openssl \
 		--without-gnutls \
 		--disable-shared
-CONFIGURE_ENV=  CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
+
+# XXX hack to get rid of RAND_egd
+CONFIGURE_ENV=  CPPFLAGS="-I${LOCALBASE}/include/ereadline -I${LOCALBASE}/include \
+		-DRAND_egd\(f\)=-1" LDFLAGS="-L${LOCALBASE}/lib"
 
 MODULES=	devel/gettext
 

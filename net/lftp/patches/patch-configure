@@ -1,96 +1,34 @@
-$OpenBSD: patch-configure,v 1.3 2014/04/24 16:29:03 benoit Exp $
+$OpenBSD: patch-configure,v 1.4 2014/08/10 21:50:41 jca Exp $
 
 Use GNU readline as our base readline lacks add_history_time().
+Fix failing test for libssl, LibreSSL doesn't provide RAND_egd.
 
---- configure.orig	Fri Jan 24 02:59:53 2014
-+++ configure	Fri Apr 25 07:21:08 2014
-@@ -12564,7 +12564,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
- 
--  bitrig* | darwin* | dragonfly* | freebsd* | netbsd* | openbsd*)
-+  darwin* | dragonfly* | freebsd* | netbsd* | openbsd* | bitrig*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -13667,7 +13667,7 @@ old_postuninstall_cmds=
- 
- if test -n "$RANLIB"; then
-   case $host_os in
--  bitrig* | openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
-     ;;
-   *)
-@@ -25713,7 +25713,7 @@ if ${gl_cv_func_getopt_long_gnu+:} false; then :
+--- configure.orig	Sun Jul  6 14:15:50 2014
++++ configure	Fri Aug  8 21:57:44 2014
+@@ -47994,7 +47994,7 @@ if ${lftp_cv_precompiled_readline+:} false; then :
  else
-   if test "$cross_compiling" = yes; then :
-               case "$host_os" in
--              openbsd*) gl_cv_func_getopt_long_gnu="guessing no";;
-+              openbsd* | bitrig*) gl_cv_func_getopt_long_gnu="guessing no";;
-               *)        gl_cv_func_getopt_long_gnu="guessing yes";;
-             esac
  
-@@ -29312,7 +29312,7 @@ else
-   if test "$cross_compiling" = yes; then :
-   case "$host_os" in
-           # Guess yes on platforms where we know the result.
--          *-gnu* | freebsd* | netbsd* | openbsd* \
-+          *-gnu* | freebsd* | netbsd* | openbsd* | bitrig* \
-           | hpux* | solaris* | cygwin* | mingw*)
-             ac_cv_func_malloc_0_nonnull=yes ;;
-           # If we don't know, assume the worst.
-@@ -31945,7 +31945,7 @@ else
-                                  # Guess yes on OpenBSD >= 3.9.
-            openbsd[1-2].* | openbsd3.[0-8] | openbsd3.[0-8].*)
-                                  gl_cv_func_snprintf_retval_c99="guessing no";;
--           openbsd*)             gl_cv_func_snprintf_retval_c99="guessing yes";;
-+           openbsd* | bitrig*)   gl_cv_func_snprintf_retval_c99="guessing yes";;
-                                  # Guess yes on Solaris >= 2.10.
-            solaris2.[1-9][0-9]*) gl_cv_func_printf_sizes_c99="guessing yes";;
-            solaris*)             gl_cv_func_printf_sizes_c99="guessing no";;
-@@ -32083,7 +32083,7 @@ else
-                                  # Guess yes on OpenBSD >= 3.9.
-            openbsd[1-2].* | openbsd3.[0-8] | openbsd3.[0-8].*)
-                                  gl_cv_func_printf_sizes_c99="guessing no";;
--           openbsd*)             gl_cv_func_printf_sizes_c99="guessing yes";;
-+           openbsd* | bitrig*)   gl_cv_func_printf_sizes_c99="guessing yes";;
-                                  # Guess yes on Solaris >= 2.10.
-            solaris2.[1-9][0-9]*) gl_cv_func_printf_sizes_c99="guessing yes";;
-            solaris*)             gl_cv_func_printf_sizes_c99="guessing no";;
-@@ -32903,7 +32903,7 @@ else
-       if test "$cross_compiling" = yes; then :
- 
-          case "$host_os" in
--           openbsd*)        gl_cv_func_printf_directive_ls="guessing no";;
-+           openbsd* | bitrig*) gl_cv_func_printf_directive_ls="guessing no";;
-            irix*)           gl_cv_func_printf_directive_ls="guessing no";;
-            solaris*)        gl_cv_func_printf_directive_ls="guessing no";;
-            cygwin*)         gl_cv_func_printf_directive_ls="guessing no";;
-@@ -34961,7 +34961,7 @@ $as_echo "$gl_cv_next_fcntl_h" >&6; }
-   FLOAT_H=
-   REPLACE_FLOAT_LDBL=0
-   case "$host_os" in
--    aix* | beos* | openbsd* | mirbsd* | irix*)
-+    aix* | beos* | openbsd* | bitrig* | mirbsd* | irix*)
-       FLOAT_H=float.h
-       ;;
-     freebsd*)
-@@ -38139,7 +38139,7 @@ else
-   if test "$cross_compiling" = yes; then :
-   case "$host_os" in
-           # Guess yes on platforms where we know the result.
--          *-gnu* | freebsd* | netbsd* | openbsd* \
-+          *-gnu* | freebsd* | netbsd* | openbsd* | bitrig* \
-           | hpux* | solaris* | cygwin* | mingw*)
-             ac_cv_func_malloc_0_nonnull=yes ;;
-           # If we don't know, assume the worst.
-@@ -46385,7 +46385,7 @@ else
-                                  # Guess yes on OpenBSD >= 3.9.
-            openbsd[1-2].* | openbsd3.[0-8] | openbsd3.[0-8].*)
-                                  gl_cv_func_snprintf_truncation_c99="guessing no";;
--           openbsd*)             gl_cv_func_snprintf_truncation_c99="guessing yes";;
-+           openbsd* | bitrig*)   gl_cv_func_snprintf_truncation_c99="guessing yes";;
-                                  # Guess yes on Solaris >= 2.6.
-            solaris2.[0-5] | solaris2.[0-5].*)
-                                  gl_cv_func_snprintf_truncation_c99="guessing no";;
+    old_LIBS="$LIBS"
+-   LIBS="-lreadline $READLINE_SUPPLIB $LIBS"
++   LIBS="-lereadline $READLINE_SUPPLIB $LIBS"
+    cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ extern int (*rl_getc_function)();
+@@ -48034,7 +48034,7 @@ if test $lftp_cv_precompiled_readline = yes; then
+    READLINE_DIR=''
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
+ $as_echo "yes" >&6; }
+-   READLINE='-lreadline'
++   READLINE='-lereadline'
+    READLINE_DEPEND=''
+    COMPILE_READLINE=no
+ else
+@@ -48327,7 +48327,7 @@ else
+ int
+ main ()
+ {
+-static SSL_CTX *ctx; SSL_new(ctx); RAND_status(); RAND_egd("file")
++static SSL_CTX *ctx; SSL_new(ctx); RAND_status();
+   ;
+   return 0;
+ }
