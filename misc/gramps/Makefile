@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2014/07/03 11:20:06 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.34 2014/08/10 07:51:21 ajacoutot Exp $
 
 COMMENT=		Genealogical Research Analysis Management Programming System
 
@@ -37,12 +37,16 @@ MODPY_DISTUTILS_BUILD=	build
 NO_TEST=		Yes
 
 pre-configure:
-	perl -pi -e 's,/usr/share,${PREFIX}/share,g' ${WRKSRC}/data/gramps.keys.in
+	perl -pi -e 's,/usr/share,${PREFIX}/share,g' \
+		${WRKSRC}/data/gramps.keys.in
 	perl -pi -e 's,share/man,man,g' ${WRKSRC}/setup.py
 
 post-install:
 	echo -n '${TRUEPREFIX}/share' \
-		>${PREFIX}/lib/python${MODPY_VERSION}/site-packages/gramps/gen/utils/resource-path
+		>${WRKINST}/${MODPY_SITEPKG}/gramps/gen/utils/resource-path
 	gunzip ${PREFIX}/man/*/{,*}/*.gz
+	${INSTALL_DATA_DIR} ${PREFIX}/share/pixmaps
+	mv ${PREFIX}/share/icons/gramps.png \
+		${PREFIX}/share/pixmaps/
 
 .include <bsd.port.mk>
