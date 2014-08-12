@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/07/10 07:37:32 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2014/08/12 00:15:43 zhuk Exp $
 
 CATEGORIES =	graphics
 COMMENT =	KDE image effects
