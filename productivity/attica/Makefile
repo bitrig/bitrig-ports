@@ -1,9 +1,12 @@
-# $OpenBSD: Makefile,v 1.3 2014/07/10 07:39:40 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2014/08/12 00:05:47 zhuk Exp $
 
 CATEGORIES =	productivity
 COMMENT =	collaboration services library for KDE
 DISTNAME =	attica-0.4.2
-REVISION =	2
+REVISION =	3
+
+HOMEPAGE =	https://projects.kde.org/projects/frameworks/attica
+>>>>>>> 2421981... Fix WANTLIB and add HOMEPAGE for libattica.
 
 SHARED_LIBS =	attica		1.0
 EXTRACT_SUFX =	.tar.bz2
