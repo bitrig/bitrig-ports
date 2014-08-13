@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/06/17 11:55:11 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2014/08/13 08:44:47 sebastia Exp $
 
 COMMENT=		web interface to PuppetDB
 
