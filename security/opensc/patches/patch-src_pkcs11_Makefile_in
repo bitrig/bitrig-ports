@@ -1,4 +1,4 @@
-$OpenBSD: patch-src_pkcs11_Makefile_in,v 1.1 2013/06/07 13:27:58 dcoppa Exp $
+$OpenBSD: patch-src_pkcs11_Makefile_in,v 1.2 2014/08/13 06:18:47 dcoppa Exp $
 
 Do not install shared modules under ${PREFIX}/lib/ and avoid the
 nasty symlink dance
@@ -7,7 +7,7 @@ Use --tag=disable-static to disable libtool static archives for
 modules
 
 --- src/pkcs11/Makefile.in.orig	Mon Jun 30 20:38:01 2014
-+++ src/pkcs11/Makefile.in	Sun Sep 28 17:11:40 2014
++++ src/pkcs11/Makefile.in	Wed Aug 13 07:42:08 2014
 @@ -77,7 +77,7 @@ am__nobase_list = $(am__nobase_strip_setup); \
  am__base_list = \
    sed '$$!N;$$!N;$$!N;$$!N;$$!N;$$!N;$$!N;s/\n/ /g' | \

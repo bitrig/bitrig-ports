@@ -1,3 +1,5 @@
+# $OpenBSD: Makefile,v 1.24 2014/08/13 06:18:47 dcoppa Exp $
+
 SHARED_ONLY=	Yes
 
 COMMENT=	set of libraries and utilities to access smart cards
@@ -10,7 +12,9 @@ SHARED_LIBS +=	smm-local 0.0	# 3.0
 
 HOMEPAGE=	https://github.com/OpenSC/OpenSC/wiki
 
-# LGPLv2.1
+MAINTAINER=	David Coppa <dcoppa@openbsd.org>
+
+# LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=opensc/}
