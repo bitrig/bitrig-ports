@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2014/04/20 07:09:09 landry Exp $
+# $OpenBSD: Makefile,v 1.19 2014/08/14 07:06:00 ajacoutot Exp $
 
 COMMENT=		powerful descriptive vector graphics language
 BROKEN-hppa=		ghostscript segfaults during build

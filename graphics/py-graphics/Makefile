@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/04/06 21:10:30 sthen Exp $
+# $OpenBSD: Makefile,v 1.13 2014/08/14 07:06:00 ajacoutot Exp $
 
 COMMENT=	multimedia framework for Python
 
