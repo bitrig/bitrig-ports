@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.81 2014/07/19 22:36:13 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.82 2014/08/14 06:54:24 ajacoutot Exp $
 
 COMMENT-main=		UPS monitoring program supporting many brands
 COMMENT-cgi=		CGIs for monitoring Nut-based UPSs
