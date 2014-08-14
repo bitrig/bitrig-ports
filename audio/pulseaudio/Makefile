@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.59 2014/04/01 14:52:09 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.60 2014/08/14 06:56:55 ajacoutot Exp $
 
 # XXX
 # util.c: implement pa_get_binary_name()
