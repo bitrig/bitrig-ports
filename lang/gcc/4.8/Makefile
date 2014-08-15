@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.37 2014/07/16 12:35:23 espie Exp $
+# $OpenBSD: Makefile,v 1.38 2014/08/15 08:19:29 pascal Exp $
 
 BROKEN-mips64 = ld: not enough GOT space for local GOT entries
 BROKEN-mips64el = ld: not enough GOT space for local GOT entries
