@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.135 2014/04/25 09:58:30 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.136 2014/08/15 09:27:28 ajacoutot Exp $
 
 # XXX remove hostnames-test.txt hack in pre-configure when updating to 3.12.0
 # https://git.gnome.org/browse/gnome-control-center/commit/?id=4736b03ed9e2ae9214117454f70811dbacd78739
@@ -37,10 +37,11 @@ WANTLIB += pthread-stubs pulse pulse-mainloop-glib pwquality rest-0.7
 WANTLIB += secret-1 smbclient sndfile soup-2.4 soup-gnome-2.4
 WANTLIB += sqlite3 telepathy-glib upower-glib vorbis vorbisenc
 WANTLIB += vorbisfile webkitgtk-3.0 webp xcb xcb-render xcb-shm
-WANTLIB += xml2 xslt z
+WANTLIB += xml2 xslt z gbm
 WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
+			security/heimdal \
 			x11/gnome
 
 LIB_DEPENDS=		audio/pulseaudio \
@@ -92,24 +93,5 @@ MODGNOME_CPPFLAGS=	-I${X11BASE}/include
 MODGNOME_LDFLAGS=	-L${X11BASE}/lib
 
 FAKE_FLAGS=		sysconfdir=${PREFIX}/share/examples/gnome-control-center
-
-CONFIGURE_ARGS=		--without-kerberos
-
-### XXX
-# patches/patch-configure_ac
-# patches/patch-panels_user-accounts_Makefile_am
-# patches/patch-panels_user-accounts_um-account-dialog_c
-AUTOCONF_VERSION=	2.69
-AUTOMAKE_VERSION=	1.14
-BUILD_DEPENDS +=	${MODGNU_AUTOCONF_DEPENDS} \
-			${MODGNU_AUTOMAKE_DEPENDS} \
-			devel/libtool \
-			x11/gnome/common
-pre-configure:
-	cd ${WRKSRC} && \
-		AUTOCONF_VERSION=${AUTOCONF_VERSION} \
-		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
-		autoreconf -i
-### END XXX
 
 .include <bsd.port.mk>
