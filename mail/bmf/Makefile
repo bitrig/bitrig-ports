@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2013/10/11 23:49:55 naddy Exp $
+# $OpenBSD: Makefile,v 1.21 2014/08/15 00:50:22 jturner Exp $
 
 COMMENT=		easy to use Bayesian spam filter
 DISTNAME=		bmf-0.9.4
