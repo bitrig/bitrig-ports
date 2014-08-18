@@ -1,6 +1,6 @@
-# $OpenBSD: Makefile,v 1.12 2014/05/22 13:17:29 bcallah Exp $
+# $OpenBSD: Makefile,v 1.14 2014/08/18 23:07:11 bcallah Exp $
 
-MODPY_EGG_VERSION =	1.8.1
+MODPY_EGG_VERSION =	1.10.0
 COMMENT =	pipe video streams into a video player
 DISTNAME =	livestreamer-${MODPY_EGG_VERSION}
 REVISION =	0
@@ -10,7 +10,6 @@ HOMEPAGE =	http://livestreamer.tanuki.se/
 
 # BSD
 # src/livestreamer/packages/pbs.py: MIT
-# src/livestreamer/plugins/gomtv.py: Apache 2.0
 PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =	${MASTER_SITE_PYPI:=l/livestreamer/}
@@ -18,7 +17,10 @@ MASTER_SITES =	${MASTER_SITE_PYPI:=l/livestreamer/}
 MODULES =	lang/python
 MODPY_SETUPTOOLS =	Yes
 
-RUN_DEPENDS =	net/rtmpdump \
+RUN_DEPENDS =	devel/py-futures \
+		devel/py-singledispatch \
+		devel/py-six \
+		net/rtmpdump \
 		security/py-crypto \
 		www/py-requests
 
