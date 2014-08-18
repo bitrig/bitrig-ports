@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.15 2014/07/12 23:46:25 bluhm Exp $
+# $OpenBSD: Makefile,v 1.16 2014/08/18 21:29:10 bluhm Exp $
 
 SHARED_ONLY =		Yes
 
 COMMENT =		(re)name a sub
 
-DISTNAME =		Sub-Name-0.07
-REVISION =		0
+DISTNAME =		Sub-Name-0.09
 
 CATEGORIES =		devel
 
@@ -15,6 +14,6 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB += c
 
 MODULES =		cpan
-
+TEST_DEPENDS =		devel/p5-Devel-CheckBin
 
 .include <bsd.port.mk>
