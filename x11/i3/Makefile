@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.87 2014/08/10 09:58:07 espie Exp $
+# $OpenBSD: Makefile,v 1.88 2014/08/18 08:46:27 dcoppa Exp $
 
 COMMENT =	improved dynamic tiling window manager
 
