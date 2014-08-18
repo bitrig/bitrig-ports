@@ -1,19 +1,19 @@
-# $OpenBSD: Makefile,v 1.3 2014/07/16 12:35:23 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2014/08/18 07:42:11 pascal Exp $
 
 ONLY_FOR_ARCHS = amd64 i386 powerpc sparc64
 DPB_PROPERTIES = parallel
 
-V = 4.9.0
+V = 4.9.1
 FULL_VERSION = $V
 FULL_PKGVERSION = $V
 
-ADASTRAP_LIBC-i386 = 75.0
+ADASTRAP_LIBC-i386 = 77.0
 ADASTRAP_LIBM-i386 = 9.0
 ADASTRAP-i386 = adastrap-i386-$V-0.tar.xz
-ADASTRAP_LIBC-amd64 = 75.0
+ADASTRAP_LIBC-amd64 = 77.0
 ADASTRAP_LIBM-amd64 = 9.0
 ADASTRAP-amd64 = adastrap-amd64-$V-0.tar.xz
-ADASTRAP_LIBC-sparc64 = 76.0
+ADASTRAP_LIBC-sparc64 = 77.0
 ADASTRAP_LIBM-sparc64 = 9.0
 ADASTRAP-sparc64 = adastrap-sparc64-$V-0.tar.xz
 
@@ -27,15 +27,6 @@ PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 # needs [gs]etcontext
 #PKGNAME-go =	gccgo-${FULL_PKGVERSION}
 PKGSPEC-main = gcc->=4.9,<4.10
-
-REVISION-main = 1
-REVISION-libs = 1
-REVISION-c++ = 1
-REVISION-f95 = 1
-REVISION-java = 1
-REVISION-objc = 1
-REVISION-ada = 1
-#REVISION-go =
 
 SHARED_LIBS =	estdc++		17.0 \
 		gfortran	6.0 \
@@ -67,7 +58,7 @@ MULTI_PACKAGES = -main -libs -f95 -objc -c++ -java -ada
 BUILD_PACKAGES := ${BUILD_PACKAGES:N-estdc}
 .endif
 
-DISTNAME =	gcc-${FULL_VERSION}
+DISTNAME =   	gcc-${FULL_VERSION}
 DISTFILES =	${DISTNAME}.tar.bz2
 # there's no ecj-4.9.jar
 ECJ =		ecj-4.5.jar
@@ -78,7 +69,7 @@ EXTRACT_ONLY =	${DISTNAME}.tar.bz2
 BUILD_DEPENDS +=	devel/bison \
 			devel/libexecinfo
 
-TEST_DEPENDS =	devel/dejagnu \
+TEST_DEPENDS = 	devel/dejagnu \
 		devel/autogen
 
 MASTER_SITES =	${MASTER_SITE_GCC:=releases/gcc-$(FULL_VERSION)/}
