@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/08/19 22:38:33 jca Exp $
+# $OpenBSD: Makefile,v 1.13 2014/08/19 22:54:29 jca Exp $
 
 COMMENT =		display bandwidth usage on an interface
 
