@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/11/02 20:32:49 sthen Exp $
+# $OpenBSD: Makefile,v 1.3 2014/08/20 00:29:15 sthen Exp $
 
 COMMENT=	tool for reverse-engineering and analysing firmware blobs
 
@@ -24,6 +24,9 @@ RUN_DEPENDS=	devel/py-libmagic \
 NO_TEST=	Yes
 
 WRKSRC=		${WRKDIST}/src
+
+pre-configure:
+	rm ${WRKSRC}/magic/*.orig # don't include pre-patched files in the generated amalgamation
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/binwalk
