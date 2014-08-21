@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/11/09 09:51:50 jung Exp $
+# $OpenBSD: Makefile,v 1.3 2014/08/21 08:04:16 armani Exp $
 
 COMMENT=		simple tar implementation
 
@@ -7,7 +7,7 @@ REVISION=		1
 
 CATEGORIES=		archivers
 
-HOMEPAGE=		https://github.com/Gottox/sltar	
+HOMEPAGE=		https://github.com/Gottox/sltar
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes
