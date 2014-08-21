@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.44 2014/07/15 13:47:26 benno Exp $
+# $OpenBSD: Makefile,v 1.45 2014/08/21 19:58:07 sthen Exp $
 
 COMMENT=	manage remote serial consoles via TCP/IP
 
