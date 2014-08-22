@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/07/10 11:06:15 rpe Exp $
+# $OpenBSD: Makefile,v 1.12 2014/08/22 22:49:07 kili Exp $
 
 COMMENT =	cooperative lightweight thread library
 CATEGORIES =	devel

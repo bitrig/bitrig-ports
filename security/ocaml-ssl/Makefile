@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:41:26 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2014/08/22 22:49:07 kili Exp $
 
 COMMENT =	OCaml bindings for libssl
 CATEGORIES =	devel security

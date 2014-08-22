@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2014/04/21 21:45:35 jca Exp $
+# $OpenBSD: Makefile,v 1.30 2014/08/22 22:49:07 kili Exp $
 
 COMMENT =	OCaml interface to GTK+2
 

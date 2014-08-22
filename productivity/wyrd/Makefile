@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2013/03/11 11:37:55 espie Exp $
+# $OpenBSD: Makefile,v 1.20 2014/08/22 22:49:07 kili Exp $
 
 COMMENT=		curses calendar front-end to remind
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 10:50:12 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2014/08/22 22:49:07 kili Exp $
 
 COMMENT =	abstract engine for text edition
 CATEGORIES =	devel

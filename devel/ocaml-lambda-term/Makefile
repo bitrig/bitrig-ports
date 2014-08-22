@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/03/09 19:50:44 jasper Exp $
+# $OpenBSD: Makefile,v 1.10 2014/08/22 22:49:07 kili Exp $
 
 COMMENT =	library for manipulating the terminal
 CATEGORIES =	devel
