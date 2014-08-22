@@ -1,17 +1,16 @@
-# $OpenBSD: Makefile,v 1.53 2014/07/14 11:27:36 bluhm Exp $
+# $OpenBSD: Makefile,v 1.54 2014/08/22 20:42:57 bluhm Exp $
 
 SHARED_ONLY =		Yes
 
 COMMENT =		perl module for using OpenSSL
 
-DISTNAME =		Net-SSLeay-1.65
-REVISION =		0
+DISTNAME =		Net-SSLeay-1.66
 
 CATEGORIES =		security
 
 HOMEPAGE =		http://alioth.debian.org/projects/net-ssleay
 
-# same terms as OpenSSL
+# Perl
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c crypto ssl z
