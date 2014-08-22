@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 10:50:12 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2014/08/22 22:21:53 kili Exp $
 
 COMMENT =	unicode library for objective caml
 

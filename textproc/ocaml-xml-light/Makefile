@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/01/24 12:07:58 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2014/08/22 22:21:53 kili Exp $
 
 COMMENT=	simple XML parser/printer for OCaml
 CATEGORIES=	textproc

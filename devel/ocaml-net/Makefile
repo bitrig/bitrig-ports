@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/11/25 14:35:26 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.6 2014/08/22 22:21:53 kili Exp $
 
 COMMENT =	the Ocamlnet internet protocol foundation library
 CATEGORIES =	devel www mail

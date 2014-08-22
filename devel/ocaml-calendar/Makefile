@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 10:50:12 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2014/08/22 22:21:54 kili Exp $
 
 COMMENT=	Objective Caml bindings for calendar functions
 CATEGORIES=	devel

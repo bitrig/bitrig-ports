@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/03/11 11:42:42 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2014/08/22 22:21:53 kili Exp $
 
 COMMENT=	Objective Caml library to parse RSS 2.0
 CATEGORIES=	textproc

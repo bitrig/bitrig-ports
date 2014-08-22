@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/03/11 02:52:05 espie Exp $
+# $OpenBSD: Makefile,v 1.23 2014/08/22 22:21:53 kili Exp $
 
 COMMENT=	Objective Caml bindings for PostgreSQL
 CATEGORIES=	databases

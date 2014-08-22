@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/08/10 09:58:05 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2014/08/22 22:21:54 kili Exp $
 
 COMMENT =		GMP bindings for OCaml
 
