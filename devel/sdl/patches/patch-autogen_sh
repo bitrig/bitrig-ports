@@ -1,0 +1,11 @@
+--- autogen.sh.orig	Sat Aug 23 15:07:40 2014
++++ autogen.sh	Sat Aug 23 15:07:54 2014
+@@ -4,7 +4,7 @@ echo "Generating build information using autoconf"
+ echo "This may take a while ..."
+ 
+ # Regenerate configuration files
+-cat acinclude/* >aclocal.m4
++cat acinclude/*.m4 >aclocal.m4
+ found=false
+ for autoconf in autoconf autoconf259 autoconf-2.59
+ do if which $autoconf >/dev/null 2>&1; then $autoconf && found=true; break; fi

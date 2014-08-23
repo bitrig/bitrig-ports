@@ -5,7 +5,7 @@ COMMENT=	cross-platform multimedia library
 VERSION=	1.2.15
 DISTNAME=	SDL-${VERSION}
 PKGNAME=	${DISTNAME:L}
-REVISION=	7
+REVISION=	8
 CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}release/
 
