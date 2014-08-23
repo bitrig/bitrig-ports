@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:20:28 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2014/08/23 07:09:18 chrisz Exp $
 
 # Fatal error: assertion sizeof(page_index) == GC_PAGESIZE failed on line 1110 of file gc.c
 ONLY_FOR_ARCHS= i386

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2014/04/23 14:12:28 jca Exp $
+# $OpenBSD: Makefile,v 1.4 2014/08/23 07:09:18 chrisz Exp $
 
 COMMENT =		an extensible platform for analysis of C software
 
