@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/03/11 11:41:33 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2014/08/24 18:05:17 zhuk Exp $
 
 COMMENT=		wm-dockapp; wireless interface monitor
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2014/03/19 13:28:57 jasper Exp $
+# $OpenBSD: Makefile,v 1.33 2014/08/24 18:05:17 zhuk Exp $
 # Much help came from Alexandre Anriot, Robert Nagy, Bernd Ahlers,
 # and, last but not least, Pedro la Peu.
 
