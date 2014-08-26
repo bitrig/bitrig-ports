@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2013/03/11 11:41:24 espie Exp $
+# $OpenBSD: Makefile,v 1.21 2014/08/26 19:16:53 naddy Exp $
 
 COMMENT=		Advanced Intrusion Detection Environment
 
@@ -17,7 +17,6 @@ BUILD_DEPENDS=		devel/bison \
 			security/mhash
 
 USE_GMAKE=		Yes
-USE_GROFF =		Yes
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	--with-mhash
