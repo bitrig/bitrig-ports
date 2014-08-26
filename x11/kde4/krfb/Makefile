@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/07/09 20:03:27 zhuk Exp $
+# $OpenBSD: Makefile,v 1.3 2014/08/26 23:22:02 zhuk Exp $
 
 COMMENT =	desktop sharing
 DISTNAME =	krfb-${MODKDE4_VERSION}
