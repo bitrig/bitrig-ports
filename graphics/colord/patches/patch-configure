@@ -1,64 +1,10 @@
-$OpenBSD: patch-configure,v 1.18 2014/06/04 13:37:20 ajacoutot Exp $
+$OpenBSD: patch-configure,v 1.19 2014/08/26 07:18:13 ajacoutot Exp $
 
 /var/lib -> /var/db
 
---- configure.orig	Fri May 23 12:46:43 2014
-+++ configure	Wed Jun  4 15:17:19 2014
-@@ -5006,7 +5006,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
- 
--  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5521,7 +5521,7 @@ newos6*)
-   lt_cv_deplibs_check_method=pass_all
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-   else
-@@ -6138,7 +6138,7 @@ old_postuninstall_cmds=
- 
- if test -n "$RANLIB"; then
-   case $host_os in
--  openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
-     ;;
-   *)
-@@ -8907,7 +8907,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -9783,7 +9783,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
-     *nto* | *qnx*)
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct=yes
- 	hardcode_shlibpath_var=no
-@@ -10830,7 +10830,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -18305,7 +18305,7 @@ fi
+--- configure.orig	Wed Jul 30 13:35:11 2014
++++ configure	Tue Aug 26 09:04:42 2014
+@@ -18204,7 +18204,7 @@ fi
  
  
  # per-machine directory
