@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.2 2013/06/01 12:58:33 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.3 2014/08/26 19:02:54 landry Exp $
 
 COMMENT =	GUI for spatialite
-DISTNAME =	spatialite_gui-1.6.0
-REVISION =	2
+DISTNAME =	spatialite_gui-1.7.1
 
 LIB_DEPENDS +=	x11/wxWidgets \
 		geo/spatialite/libspatialite \
@@ -23,6 +22,9 @@ WANTLIB += wx_gtk2_core wx_gtk2_dbgrid wx_gtk2_html wx_gtk2_qa
 WANTLIB += wx_gtk2_richtext wx_gtk2_xrc xcb xcb-render xcb-shm
 WANTLIB += xml2 z
 WANTLIB += c++ c++abi
+
+# so that it finds all libs without rpath..
+CONFIGURE_ENV +=	LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib"
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/{pixmaps,applications}
