@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2013/10/23 10:10:56 sthen Exp $
+# $OpenBSD: Makefile,v 1.33 2014/08/26 15:51:14 kirby Exp $
 
 COMMENT=	TCP port scan detection tool
 
