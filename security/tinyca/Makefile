@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/27 11:44:24 sthen Exp $
+# $OpenBSD: Makefile,v 1.11 2014/08/27 06:58:00 ajacoutot Exp $
 
 COMMENT=	GUI to manage a certification authority
 

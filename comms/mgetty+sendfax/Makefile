@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.49 2014/01/19 09:48:29 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.50 2014/08/27 06:58:00 ajacoutot Exp $
 
 COMMENT=	handle external logins, send and receive faxes
 
