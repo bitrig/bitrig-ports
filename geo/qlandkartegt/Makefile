@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/08/27 09:02:26 kirby Exp $
+# $OpenBSD: Makefile,v 1.17 2014/08/27 09:35:14 kirby Exp $
 
 COMMENT =	garmin gps map management tool
 
