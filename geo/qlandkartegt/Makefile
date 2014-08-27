@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/11/25 14:16:22 sthen Exp $
+# $OpenBSD: Makefile,v 1.16 2014/08/27 09:02:26 kirby Exp $
 
 COMMENT =	garmin gps map management tool
 
@@ -19,7 +19,6 @@ WANTLIB +=	QtWebKit QtXmlPatterns phonon jpeg dmtx QtScript
 WANTLIB +=	c++ c++abi
 BUILD_DEPENDS +=	geo/gpsbabel
 LIB_DEPENDS +=	devel/proj \
-		x11/qt4 \
 		graphics/libdmtx \
 		graphics/libexif \
 		geo/gdal \
