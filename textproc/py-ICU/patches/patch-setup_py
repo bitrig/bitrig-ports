@@ -1,11 +1,11 @@
 $OpenBSD: patch-setup_py,v 1.1.1.1 2014/07/03 11:17:06 ajacoutot Exp $
---- setup.py.orig	Thu Jul  3 10:09:32 2014
-+++ setup.py	Thu Jul  3 10:11:14 2014
+--- setup.py.orig	Thu Jun  5 23:43:04 2014
++++ setup.py	Fri Aug 29 17:35:27 2014
 @@ -13,6 +13,7 @@ INCLUDES = {
      'darwin': ['/usr/local/include'],
      'linux': [],
      'freebsd': ['/usr/local/include'],
-+    'openbsd': ['${LOCALBASE}/include'],
++    'bitrig': ['${LOCALBASE}/include'],
      'win32': ['c:/icu/include'],
      'sunos5': [],
  }
@@ -13,7 +13,7 @@ $OpenBSD: patch-setup_py,v 1.1.1.1 2014/07/03 11:17:06 ajacoutot Exp $
      'darwin': ['-Wno-write-strings', '-DPYICU_VER="%s"' %(VERSION)],
      'linux': ['-DPYICU_VER="%s"' %(VERSION)],
      'freebsd': ['-DPYICU_VER="%s"' %(VERSION)],
-+    'openbsd': ['-DPYICU_VER="%s"' %(VERSION)],
++    'bitrig': ['-DPYICU_VER="%s"' %(VERSION)],
      'win32': ['/Zc:wchar_t', '/EHsc', '/DPYICU_VER=\\"%s\\"' %(VERSION)],
      'sunos5': ['-DPYICU_VER="%s"' %(VERSION)],
  }
@@ -21,7 +21,7 @@ $OpenBSD: patch-setup_py,v 1.1.1.1 2014/07/03 11:17:06 ajacoutot Exp $
      'darwin': ['-O0', '-g', '-DDEBUG'],
      'linux': ['-O0', '-g', '-DDEBUG'],
      'freebsd': ['-O0', '-g', '-DDEBUG'],
-+    'openbsd': ['-O0', '-g', '-DDEBUG'],
++    'bitrig': ['-O0', '-g', '-DDEBUG'],
      'win32': ['/Od', '/DDEBUG'],
      'sunos5': ['-DDEBUG'],
  }
@@ -29,7 +29,7 @@ $OpenBSD: patch-setup_py,v 1.1.1.1 2014/07/03 11:17:06 ajacoutot Exp $
      'darwin': ['-L/usr/local/lib'],
      'linux': [],
      'freebsd': ['-L/usr/local/lib'],
-+    'openbsd': ['-L${LOCALBASE}/lib'],
++    'bitrig': ['-L${LOCALBASE}/lib'],
      'win32': ['/LIBPATH:c:/icu/lib'],
      'sunos5': [],
  }
@@ -37,7 +37,7 @@ $OpenBSD: patch-setup_py,v 1.1.1.1 2014/07/03 11:17:06 ajacoutot Exp $
      'darwin': ['icui18n', 'icuuc', 'icudata', 'icule'],
      'linux': ['icui18n', 'icuuc', 'icudata', 'icule'],
      'freebsd': ['icui18n', 'icuuc', 'icudata', 'icule'],
-+    'openbsd': ['icui18n', 'icuuc', 'icudata', 'icule'],
++    'bitrig': ['icui18n', 'icuuc', 'icudata', 'icule'],
      'win32': ['icuin', 'icuuc', 'icudt', 'icule'],
      'sunos5': ['icui18n', 'icuuc', 'icudata', 'icule'],
  }
@@ -45,8 +45,8 @@ $OpenBSD: patch-setup_py,v 1.1.1.1 2014/07/03 11:17:06 ajacoutot Exp $
      platform = 'linux'
  elif platform.startswith('freebsd'):
      platform = 'freebsd'
-+elif platform.startswith('openbsd'):
-+    platform = 'openbsd'
++elif platform.startswith('bitrig'):
++    platform = 'bitrig'
  
  if 'PYICU_INCLUDES' in os.environ:
      _includes = os.environ['PYICU_INCLUDES'].split(os.pathsep)
