@@ -17,4 +17,6 @@ MODPY_SETUPTOOLS=	Yes
 
 MODULES=		lang/python
 
+SUBST_VARS=		DISTNAME
+
 .include <bsd.port.mk>
