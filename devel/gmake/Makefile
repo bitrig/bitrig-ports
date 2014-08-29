@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.51 2013/11/09 23:19:02 naddy Exp $
+# $OpenBSD: Makefile,v 1.52 2014/08/29 13:24:29 chrisz Exp $
 
 COMMENT=	GNU make
 
