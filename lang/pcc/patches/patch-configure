@@ -1,0 +1,11 @@
+--- configure.orig	Sat Aug 30 15:01:10 2014
++++ configure	Sat Aug 30 15:01:20 2014
+@@ -2047,7 +2047,7 @@ case "$target_os" in
+ 	esac
+ 	;;
+ 
+-    openbsd*)
++    openbsd*|bitrig*)
+ 	targos=openbsd
+ 	abi=elf
+ 	case "$target_cpu" in
