@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/12/22 13:39:06 jasper Exp $
+# $OpenBSD: Makefile,v 1.3 2014/08/30 22:11:33 jasper Exp $
 
 COMMENT =	data backend for Hiera to return whole files
 
