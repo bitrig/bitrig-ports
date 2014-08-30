@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2014/07/16 07:50:50 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.30 2014/08/30 08:56:04 miod Exp $
 
 COMMENT-main=		UW e-mail client
 COMMENT-c-client=	UW c-client mail access routines
