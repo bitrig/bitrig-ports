@@ -8,8 +8,8 @@ USE_LIBTOOL=	No
 
 PV=		5.4
 V=		${PV}.30
-REVISION-main=	1
-REVISION=	0
+REVISION-main=	2
+REVISION=	1
 
 INI_TEMPLATES=	development production
 
