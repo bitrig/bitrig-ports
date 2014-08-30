@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/12/06 16:06:50 jca Exp $
+# $OpenBSD: Makefile,v 1.15 2014/08/30 21:54:08 jasper Exp $
 
 COMMENT=	Berkeley's implementation of the logo programming language
 DISTNAME=	ucblogo-6.0
