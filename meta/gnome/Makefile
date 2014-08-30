@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.102 2014/07/12 13:41:47 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.103 2014/08/30 13:29:36 ajacoutot Exp $
 
 COMMENT-main=		GNOME desktop meta-package (base installation)
 COMMENT-extras=		GNOME desktop meta-package (full installation)
