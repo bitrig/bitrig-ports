@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2014/06/03 11:34:24 rpointel Exp $
+# $OpenBSD: Makefile,v 1.22 2014/08/30 16:34:33 edd Exp $
 
 COMMENT=		cross-python path, ini-parsing, io, code, log facilities
 
