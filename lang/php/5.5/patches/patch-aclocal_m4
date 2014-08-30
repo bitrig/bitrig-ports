@@ -1,7 +1,17 @@
 $OpenBSD$
---- aclocal.m4.orig.port	Wed Sep  4 15:45:25 2013
-+++ aclocal.m4	Wed Sep  4 15:45:46 2013
-@@ -3141,7 +3141,7 @@ old_postuninstall_cmds=
+--- aclocal.m4.orig.port	Wed Jun 25 11:45:31 2014
++++ aclocal.m4	Fri Aug 29 21:31:10 2014
+@@ -762,7 +762,8 @@ AC_DEFUN([PHP_REQUIRE_CXX],[
+   if test -z "$php_cxx_done"; then
+     AC_PROG_CXX
+     AC_PROG_CXXCPP
+-    PHP_ADD_LIBRARY(stdc++)
++    PHP_ADD_LIBRARY(c++)
++    PHP_ADD_LIBRARY(c++abi)
+     php_cxx_done=yes
+   fi
+ ])
+@@ -3179,7 +3180,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -10,7 +20,7 @@ $OpenBSD$
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
-@@ -3813,7 +3813,7 @@ AC_CACHE_VAL([lt_cv_sys_max_cmd_len], [dnl
+@@ -3851,7 +3852,7 @@ AC_CACHE_VAL([lt_cv_sys_max_cmd_len], [dnl
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -19,7 +29,7 @@ $OpenBSD$
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -4731,7 +4731,7 @@ nto-qnx*)
+@@ -4769,7 +4770,7 @@ nto-qnx*)
    shlibpath_overrides_runpath=yes
    ;;
  
@@ -28,7 +38,7 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -5475,7 +5475,7 @@ nto-qnx*)
+@@ -5514,7 +5515,7 @@ nto-qnx*)
    lt_cv_deplibs_check_method=unknown
    ;;
  
@@ -37,7 +47,7 @@ $OpenBSD$
    if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[[^/]]+(\.so\.[[0-9]]+\.[[0-9]]+|\.so|_pic\.a)$'
    else
-@@ -6439,7 +6439,7 @@ case $host_os in
+@@ -6478,7 +6479,7 @@ case $host_os in
      # C++ shared libraries are fairly broken
      _LT_AC_TAGVAR(ld_shlibs, $1)=no
      ;;
@@ -46,7 +56,7 @@ $OpenBSD$
      if test -f /usr/libexec/ld.so; then
        _LT_AC_TAGVAR(hardcode_direct, $1)=yes
        _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
-@@ -8359,7 +8359,7 @@ dnl Note also adjust exclude_expsyms for C++ above.
+@@ -8398,7 +8399,7 @@ dnl Note also adjust exclude_expsyms for C++ above.
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -55,7 +65,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    esac
-@@ -8963,7 +8963,7 @@ _LT_EOF
+@@ -9002,7 +9003,7 @@ _LT_EOF
        _LT_AC_TAGVAR(hardcode_shlibpath_var, $1)=no
        ;;
  
