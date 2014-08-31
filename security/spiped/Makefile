@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.4 2013/04/13 19:25:31 jturner Exp $
+# $OpenBSD: Makefile,v 1.5 2014/08/31 14:15:56 jturner Exp $
 
 COMMENT =		utility for creating secure pipes between socket addresses
 
-DISTNAME =		spiped-1.3.1
-REVISION =		0
+DISTNAME =		spiped-1.4.0
 CATEGORIES =		security sysutils
 
 HOMEPAGE =		http://www.tarsnap.com/spiped.html
