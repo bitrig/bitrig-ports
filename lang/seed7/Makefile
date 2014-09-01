@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2014/06/16 01:01:42 bcallah Exp $
+# $OpenBSD: Makefile,v 1.23 2014/09/01 20:19:12 landry Exp $
 
 V =		20140615
 COMMENT =	high-level, extensible programming language
@@ -7,6 +7,7 @@ PKGNAME =	seed7-${V}
 REVISION =	0
 EXTRACT_SUFX =	.tgz
 CATEGORIES =	lang
+BROKEN-hppa =	SIGILL during build
 
 HOMEPAGE =	http://seed7.sourceforge.net/
 
