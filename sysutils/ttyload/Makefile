@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/12/24 13:06:22 jca Exp $
+# $OpenBSD: Makefile,v 1.2 2014/09/02 18:31:32 bcallah Exp $
 
 COMMENT =		load average history on a tty
 
