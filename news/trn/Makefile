@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/06/18 21:27:42 sthen Exp $
+# $OpenBSD: Makefile,v 1.23 2014/09/02 19:17:01 naddy Exp $
 
 COMMENT=	threaded newsreader
 
