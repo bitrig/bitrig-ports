@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/08/27 07:47:47 chrisz Exp $
+# $OpenBSD: Makefile,v 1.7 2014/09/02 09:24:44 chrisz Exp $
 
 BROKEN =	loops forever and dpb makes no progress
 COMMENT =	unicode library for objective caml
@@ -21,7 +21,7 @@ PERMIT_PACKAGE_CDROM =		Yes
 
 MODULES =	lang/ocaml
 
-BUILD_DEPENDS =	sysutils/findlib lang/ocaml,-camlp4
+BUILD_DEPENDS =	sysutils/findlib lang/ocaml-camlp4
 
 CONFIGURE_STYLE =	gnu dest autoconf no-autoheader
 AUTOCONF_VERSION =	2.69
