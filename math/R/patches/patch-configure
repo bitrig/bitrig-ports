@@ -1,4 +1,4 @@
-$OpenBSD: patch-configure,v 1.19 2014/05/20 11:02:12 dcoppa Exp $
+$OpenBSD: patch-configure,v 1.20 2014/09/02 14:55:37 dcoppa Exp $
 
 Use GNU readline instead of our base readline
 
@@ -8,117 +8,59 @@ Fix "--export-dynamic" linker flag
 
 Fix linking with external libintl
 
---- configure.orig	Wed Apr  2 17:16:29 2014
-+++ configure	Mon Jul 14 12:16:49 2014
-@@ -9143,7 +9143,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
+--- configure.orig	Sat Jun 14 00:16:52 2014
++++ configure	Sat Jun 14 16:14:57 2014
+@@ -20900,12 +20900,12 @@ done
+   ## don't use the cached value as we need to rebuild LIBS
+   unset ac_cv_lib_readline_rl_callback_read_char
+   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lreadline" >&5
+-$as_echo_n "checking for rl_callback_read_char in -lreadline... " >&6; }
++$as_echo_n "checking for rl_callback_read_char in -lereadline... " >&6; }
+ if ${ac_cv_lib_readline_rl_callback_read_char+:} false; then :
+   $as_echo_n "(cached) " >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lreadline  $LIBS"
++LIBS="-lereadline  $LIBS"
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
  
--  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -9568,7 +9568,7 @@ newos6*)
-   lt_cv_deplibs_check_method=pass_all
-   ;;
+@@ -20940,7 +20940,7 @@ if test "x$ac_cv_lib_readline_rl_callback_read_char" =
+ #define HAVE_LIBREADLINE 1
+ _ACEOF
  
--openbsd*)
-+openbsd* | bitrig*)
-   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-   else
-@@ -9952,7 +9952,7 @@ old_postuninstall_cmds=
+-  LIBS="-lreadline $LIBS"
++  LIBS="-lereadline $LIBS"
  
- if test -n "$RANLIB"; then
-   case $host_os in
--  openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
-     ;;
-   *)
-@@ -12558,7 +12558,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -13266,7 +13266,7 @@ rm -f core conftest.err conftest.$ac_objext \
-     *nto* | *qnx*)
-       ;;
+ fi
  
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct=yes
- 	hardcode_shlibpath_var=no
-@@ -14226,7 +14226,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
+@@ -21067,13 +21067,13 @@ fi
  
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -16024,7 +16024,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
- 	ld_shlibs_CXX=no
- 	;;
+ fi
  
--      openbsd*)
-+      openbsd* | bitrig*)
- 	if test -f /usr/libexec/ld.so; then
- 	  hardcode_direct_CXX=yes
- 	  hardcode_shlibpath_var_CXX=no
-@@ -17672,7 +17672,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
+-    { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lreadline" >&5
+-$as_echo_n "checking for rl_callback_read_char in -lreadline... " >&6; }
++    { $as_echo "$as_me:${as_lineno-$LINENO}: checking for rl_callback_read_char in -lereadline" >&5
++$as_echo_n "checking for rl_callback_read_char in -lereadline... " >&6; }
+ if ${ac_cv_lib_readline_rl_callback_read_char+:} false; then :
+   $as_echo_n "(cached) " >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lreadline  $LIBS"
++LIBS="-lereadline  $LIBS"
+ cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
  
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -18649,7 +18649,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -19344,7 +19344,7 @@ rm -f core conftest.err conftest.$ac_objext \
-     *nto* | *qnx*)
-       ;;
+@@ -21108,7 +21108,7 @@ if test "x$ac_cv_lib_readline_rl_callback_read_char" =
+ #define HAVE_LIBREADLINE 1
+ _ACEOF
  
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct_F77=yes
- 	hardcode_shlibpath_var_F77=no
-@@ -20144,7 +20144,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
+-  LIBS="-lreadline $LIBS"
++  LIBS="-lereadline $LIBS"
  
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -25989,7 +25989,7 @@ fi
-         ;;
-     esac
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`"; then
-       $as_echo "#define HAVE_NO_SYMBOL_UNDERSCORE 1" >>confdefs.h
+ fi
  
-@@ -26240,7 +26240,7 @@ if test "${GCC}" = yes; then
+@@ -26241,7 +26241,7 @@ if test "${GCC}" = yes; then
  ## has 32k and so can use -fpic.
  ## However, although the gcc docs do not mention it, it seems s390/s390x
  ## also supports and needs -fPIC
@@ -127,7 +69,7 @@ Fix linking with external libintl
        cpicflags="-fPIC"
        ;;
      *)
-@@ -26251,7 +26251,7 @@ if test "${GCC}" = yes; then
+@@ -26252,7 +26252,7 @@ if test "${GCC}" = yes; then
  fi
  if test "${G77}" = yes; then
    case "${host_cpu}" in
@@ -136,7 +78,7 @@ Fix linking with external libintl
        fpicflags="-fPIC"
        ;;
      *)
-@@ -26261,7 +26261,7 @@ if test "${G77}" = yes; then
+@@ -26262,7 +26262,7 @@ if test "${G77}" = yes; then
  fi
  if test "${GXX}" = yes; then
    case "${host_cpu}" in
@@ -145,12 +87,8 @@ Fix linking with external libintl
        cxxpicflags="-fPIC"
        ;;
      *)
-@@ -26514,10 +26514,10 @@ $as_echo "$as_me: WARNING: Use of flat namespace is re
-       shlib_ldflags="-Bshareable"
-     fi
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
+@@ -26518,7 +26518,7 @@ $as_echo "$as_me: WARNING: Use of flat namespace is re
+   openbsd*)
      ## looks like ${wl} is not defined here.  Perhaps in libtool code?
      if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`"; then
 -      main_ldflags="${wl}-export-dynamic"
@@ -158,7 +96,7 @@ Fix linking with external libintl
        shlib_ldflags="-shared -fPIC"
      fi
      ;;
-@@ -26720,13 +26720,6 @@ case "${host_os}" in
+@@ -26721,13 +26721,6 @@ case "${host_os}" in
        LAPACK_LDFLAGS="+s"
      fi
      ;;
@@ -172,34 +110,7 @@ Fix linking with external libintl
  esac
  
  if test -z "${DYLIB_LD}"; then
-@@ -36744,7 +36737,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -37439,7 +37432,7 @@ rm -f core conftest.err conftest.$ac_objext \
-     *nto* | *qnx*)
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct_FC=yes
- 	hardcode_shlibpath_var_FC=no
-@@ -38239,7 +38232,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -38731,7 +38724,7 @@ fi
+@@ -38736,7 +38729,7 @@ fi
  ## use this to pick out gfortran (even though it is unreliable).
  if test "${ac_cv_fc_compiler_gnu}" = yes; then
    case "${host_cpu}" in
@@ -208,7 +119,7 @@ Fix linking with external libintl
        fcpicflags="-fPIC"
        ;;
      *)
-@@ -42485,7 +42478,7 @@ else
+@@ -42490,7 +42483,7 @@ else
    gt_save_CPPFLAGS="$CPPFLAGS"
              CPPFLAGS="$CPPFLAGS $INCINTL"
              gt_save_LIBS="$LIBS"
@@ -217,7 +128,7 @@ Fix linking with external libintl
                          cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  #include <libintl.h>
-@@ -42642,8 +42635,8 @@ $as_echo "$gt_source" >&6; }
+@@ -42647,8 +42640,8 @@ $as_echo "$gt_source" >&6; }
        if { eval "gt_val=\$$gt_func_gnugettext_libintl"; test "$gt_val" = "yes"; }; then
          { $as_echo "$as_me:${as_lineno-$LINENO}: checking how to link with libintl" >&5
  $as_echo_n "checking how to link with libintl... " >&6; }
