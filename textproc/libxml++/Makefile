@@ -1,36 +1,32 @@
-# $OpenBSD: Makefile,v 1.26 2013/03/21 08:48:54 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.27 2014/09/03 15:03:33 ajacoutot Exp $
 
 COMMENT=	C++ wrapper for the libxml XML parser library
 
-V=		2.36.0
-DISTNAME=	libxml++-$V
+GNOME_VERSION=	2.36.0
+GNOME_PROJECT=	libxml++
 SHARED_LIBS+=	xml++-2.6	1.1 # .2.7
 CATEGORIES=	textproc
-REVISION=	2
-
-EXTRACT_SUFX=	.tar.xz
+REVISION=	1
 
 HOMEPAGE=	http://libxmlplusplus.sourceforge.net/
 
-# LGPL >= 2
+MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
+		Antoine Jacoutot <ajacoutot@openbsd.org>
+
+# LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxml++/${V:C/^([0-9]+\.[0-9]+).*/\1/}/}
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/macros
-
-WANTLIB += ffi glib-2.0 glibmm-2.4 gmodule-2.0 gobject-2.0 gthread-2.0
-WANTLIB += m pcre pthread sigc-2.0 xml2 z
+WANTLIB += ffi glib-2.0 glibmm-2.4 gmodule-2.0 gobject-2.0 m pcre
+WANTLIB += pthread sigc-2.0 xml2 z
 WANTLIB += c++ c++abi
 
-MODULES=	devel/gettext
+MODULES=	devel/gettext \
+		x11/gnome
 
 LIB_DEPENDS=	devel/glib2mm \
 		textproc/libxml
 
-USE_GMAKE=	Yes
-
 CONFIGURE_STYLE=gnu
-CONFIGURE_ARGS=	${CONFIGURE_SHARED}
 
 FAKE_FLAGS=	docdir="${PREFIX}/share/doc/libxml++-2.6"
 
