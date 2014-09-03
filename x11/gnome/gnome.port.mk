@@ -1,4 +1,4 @@
-# $OpenBSD: gnome.port.mk,v 1.90 2014/09/02 15:16:26 ajacoutot Exp $
+# $OpenBSD: gnome.port.mk,v 1.91 2014/09/03 09:53:55 ajacoutot Exp $
 #
 # Module for GNOME related ports
 
@@ -7,7 +7,7 @@ MODCLANG_ARCHS =        amd64 i386
 MODCLANG_LANGS =        c c++
 
 .if (defined(GNOME_PROJECT) && defined(GNOME_VERSION))
-PORTSCOUT =		limitw:1,even
+PORTSCOUT=		limitw:1,even
 DISTNAME=		${GNOME_PROJECT}-${GNOME_VERSION}
 VERSION=		${GNOME_VERSION}
 HOMEPAGE?=		https://wiki.gnome.org/
