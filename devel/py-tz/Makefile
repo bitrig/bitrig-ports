@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2014/06/03 11:34:24 rpointel Exp $
+# $OpenBSD: Makefile,v 1.30 2014/09/03 11:47:30 sthen Exp $
 
 COMMENT =		Python API for dealing with timezones
 

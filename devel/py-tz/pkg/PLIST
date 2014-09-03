@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.15 2014/04/12 09:00:56 shadchin Exp $
+@comment $OpenBSD: PLIST,v 1.16 2014/09/03 11:47:30 sthen Exp $
 lib/python${MODPY_VERSION}/site-packages/pytz/
 lib/python${MODPY_VERSION}/site-packages/pytz-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/pytz-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
