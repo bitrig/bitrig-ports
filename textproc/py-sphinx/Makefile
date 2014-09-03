@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/06/04 07:57:13 fgsch Exp $
+# $OpenBSD: Makefile,v 1.13 2014/09/03 13:43:16 dcoppa Exp $
 
 COMMENT =		python documentation generator
 
