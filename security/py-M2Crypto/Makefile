@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2014/05/15 22:00:13 sthen Exp $
+# $OpenBSD: Makefile,v 1.4 2014/09/04 21:41:43 rpe Exp $
 
 COMMENT =		crypto and ssl toolkit for python
 
@@ -9,7 +9,7 @@ REVISION =		0
 
 CATEGORIES =		security
 
-HOMEPAGE =		http://chandlerproject.org/Projects/MeTooCrypto
+HOMEPAGE =		https://github.com/M2Crypto/M2Crypto
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
