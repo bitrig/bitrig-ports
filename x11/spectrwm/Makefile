@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2014/05/09 12:55:41 gonzalo Exp $
+# $OpenBSD: Makefile,v 1.15 2014/09/05 12:57:53 gonzalo Exp $
 
 COMMENT=		small tiling window manager
 
