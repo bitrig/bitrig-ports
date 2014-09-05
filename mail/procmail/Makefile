@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2013/03/11 11:23:53 espie Exp $
+# $OpenBSD: Makefile,v 1.40 2014/09/05 13:52:19 sthen Exp $
 
 COMMENT=	filtering local mail delivery agent
 
@@ -18,6 +18,7 @@ HOMEPAGE=	http://www.procmail.org/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
+
 WANTLIB=		c m
 
 FLAVORS=	lmtp
