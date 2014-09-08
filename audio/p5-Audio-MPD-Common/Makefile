@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/04/17 20:51:25 landry Exp $
+# $OpenBSD: Makefile,v 1.13 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=		bunch of common helper classes for MPD
 

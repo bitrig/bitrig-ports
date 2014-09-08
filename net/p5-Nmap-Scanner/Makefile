@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 11:35:53 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=	perform and manipulate nmap scans using Perl
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/05/04 21:17:17 kili Exp $
+# $OpenBSD: Makefile,v 1.14 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=		ASN1 data reader and writer for various forms
 

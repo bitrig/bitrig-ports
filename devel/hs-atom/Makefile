@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 10:50:06 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2014/09/08 17:04:50 jasper Exp $
 
 COMMENT=		DSL for embedded hard realtime applications
 

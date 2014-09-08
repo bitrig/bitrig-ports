@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/03/11 10:50:07 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=		implementation of Oleg Kiselyov's left-fold enumerators
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.34 2014/04/20 14:19:01 jasper Exp $
+# $OpenBSD: Makefile,v 1.35 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=	event-driven IRC-client module
 

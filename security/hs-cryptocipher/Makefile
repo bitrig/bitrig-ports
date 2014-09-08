@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 11:41:25 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=		symmetrical block and stream ciphers
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/11/25 14:16:22 sthen Exp $
+# $OpenBSD: Makefile,v 1.8 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT =		type-level programming library
 

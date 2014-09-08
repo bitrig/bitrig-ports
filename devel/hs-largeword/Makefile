@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/07/18 22:16:26 kili Exp $
+# $OpenBSD: Makefile,v 1.7 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=		provides Word128, Word192 and various others large words
 

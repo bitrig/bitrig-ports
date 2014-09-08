@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 10:50:31 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=	STM32 bootloader to upload and download firmware
 

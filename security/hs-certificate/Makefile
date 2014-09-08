@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/05/04 21:17:17 kili Exp $
+# $OpenBSD: Makefile,v 1.17 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=		certificates and Key Reader/Writer
 

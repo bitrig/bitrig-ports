@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/03/11 10:50:20 espie Exp $
+# $OpenBSD: Makefile,v 1.23 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=	portable multitasking and networking framework for perl
 

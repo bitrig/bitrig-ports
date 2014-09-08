@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/08/07 21:31:57 naddy Exp $
+# $OpenBSD: Makefile,v 1.23 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=		fractal program with GTK interface
 DISTNAME=		gfract-0.33

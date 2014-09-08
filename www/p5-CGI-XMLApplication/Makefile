@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2013/10/11 23:51:31 naddy Exp $
+# $OpenBSD: Makefile,v 1.25 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=	object oriented interface for CGI script applications
 

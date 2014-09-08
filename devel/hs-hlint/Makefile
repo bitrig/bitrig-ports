@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/03/11 10:50:07 espie Exp $
+# $OpenBSD: Makefile,v 1.17 2014/09/08 17:04:51 jasper Exp $
 
 COMMENT=		source code suggestions for Haskell
 
