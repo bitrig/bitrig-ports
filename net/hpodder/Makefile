@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2013/08/12 08:03:18 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.29 2014/09/08 11:24:42 dcoppa Exp $
 
 COMMENT =		command line podcast aggregator
 

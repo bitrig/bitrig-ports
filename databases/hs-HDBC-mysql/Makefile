@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/06/12 20:36:33 brad Exp $
+# $OpenBSD: Makefile,v 1.15 2014/09/08 11:24:42 dcoppa Exp $
 
 COMMENT=		mysql driver for HDBC
 
