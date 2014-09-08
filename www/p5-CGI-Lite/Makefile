@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.7 2013/10/11 23:51:30 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2014/09/08 20:08:12 rpe Exp $
 
 COMMENT=	process and decode WWW forms and cookies
 
-DISTNAME=	CGI-Lite-2.02
-REVISION=	1
+DISTNAME=	CGI-Lite-2.04
 CATEGORIES=	www
 
 # Perl
