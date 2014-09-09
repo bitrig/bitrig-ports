@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/07/12 07:19:56 zhuk Exp $
+# $OpenBSD: Makefile,v 1.17 2014/09/09 20:15:25 naddy Exp $
 
 COMMENT=	C++ client API for PostgreSQL
 
@@ -33,6 +33,7 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED}
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
 
 # Regression tests start up and use a real database
+TEST_DEPENDS =		databases/postgresql,-server
 PGDATA =		${WRKDIR}/testdb
 PGDATABASE =		pqxx-test
 TEST_ENV =		PGDATABASE=${PGDATABASE} \
