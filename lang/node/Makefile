@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.30 2014/07/10 19:54:57 landry Exp $
+# $OpenBSD: Makefile,v 1.31 2014/09/09 14:01:26 jasper Exp $
 
 # XXX:
 # - Needs __ARM_NR_cacheflush (or the like) to work on arm-based ports.
