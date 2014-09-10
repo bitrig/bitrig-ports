@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/06/11 22:45:36 sthen Exp $
+# $OpenBSD: Makefile,v 1.4 2014/09/10 19:15:50 landry Exp $
 
 SHARED_ONLY =		Yes
 
 COMMENT =		GTK+2 IRC Client
-DISTNAME =		hexchat-2.10.0
+DISTNAME =		hexchat-2.10.1
 EXTRACT_SUFX =		.tar.xz
 CATEGORIES =		net x11
 
@@ -25,7 +25,7 @@ WANTLIB += xcb-render xcb-shm z
 MASTER_SITES =		http://dl.hexchat.net/hexchat/
 
 MODULES =		devel/gettext \
-			devel/gconf2 \
+			textproc/intltool \
 			lang/python
 
 BUILD_DEPENDS =		devel/iso-codes
@@ -49,15 +49,11 @@ CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
 			--disable-sysinfo \
 			--disable-libcanberra
 CONFIGURE_ENV =		CPPFLAGS=-I${LOCALBASE}/include \
-			LDFLAGS=-L${LOCALBASE}/lib \
-			GCONF_SCHEMA_FILE_DIR=${LOCALBASE}/${SCHEMAS_INSTDIR}
+			LDFLAGS=-L${LOCALBASE}/lib
 
 LIBTOOL_FLAGS =		--tag=disable-static
 
 USE_GMAKE =		Yes
-
-MODGCONF2_SCHEMAS_DIR =	hexchat
-MODGCONF2_LIBDEP =	No
 
 NO_TEST =		Yes
 
