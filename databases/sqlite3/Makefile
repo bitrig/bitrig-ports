@@ -44,7 +44,6 @@ MULTI_PACKAGES=-main -lemon -tcl
 
 .include <bsd.port.arch.mk>
 
-CC=			gcc
 LIB_DEPENDS-main=	bitrig/bitrig-binutils devel/readline
 
 .if !${PROPERTIES:Mno_shared}
