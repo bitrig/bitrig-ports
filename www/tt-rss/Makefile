@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2014/09/01 20:07:26 landry Exp $
+# $OpenBSD: Makefile,v 1.28 2014/09/12 20:38:07 landry Exp $
 
 COMMENT=		webbased rss reader with standalone look and feel
 
@@ -10,6 +10,7 @@ DISTNAME=		${GH_PROJECT}-${GH_TAGNAME}
 PKGNAME=		tt-rss-${GH_TAGNAME}
 REVISION=		0
 CATEGORIES=		www
+REVISION =		0
 
 HOMEPAGE=		http://tt-rss.org/
 
