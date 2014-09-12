@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2013/07/12 00:49:23 jca Exp $
+# $OpenBSD: Makefile,v 1.30 2014/09/12 13:24:30 jasper Exp $
 
 COMMENT=		GnuPG Made Easy
 
