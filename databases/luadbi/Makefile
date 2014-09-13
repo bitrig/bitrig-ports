@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/08/09 11:10:15 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2014/09/13 18:09:20 brad Exp $
 
 SHARED_ONLY=	Yes
 
@@ -11,9 +11,9 @@ DISTNAME=	luadbi.$V
 PKGNAME-main=	luadbi-$V
 PKGNAME-mysql=	luadbi-mysql-$V
 PKGNAME-pgsql=	luadbi-pgsql-$V
-REVISION-main=	1
-REVISION-mysql=	3
-REVISION-pgsql=	1
+REVISION-main=	2
+REVISION-mysql=	4
+REVISION-pgsql=	2
 
 CATEGORIES=	databases
 
@@ -30,7 +30,7 @@ WANTLIB-main=		sqlite3
 RUN_DEPENDS-main=	#empty
 
 WANTLIB-mysql=		mysqlclient
-LIB_DEPENDS-mysql=	databases/mysql
+LIB_DEPENDS-mysql=	databases/mariadb
 RUN_DEPENDS-mysql=	${BASE_PKGPATH},-main
 
 WANTLIB-pgsql=		pq

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/10/11 23:48:19 naddy Exp $
+# $OpenBSD: Makefile,v 1.15 2014/09/13 18:09:20 brad Exp $
 
 COMMENT=	extensions to Class::DBI for MySQL
 
@@ -12,7 +12,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 RUN_DEPENDS=	databases/p5-Class-DBI \
 		databases/p5-DBD-mysql
-TEST_DEPENDS=	databases/mysql,-server
+TEST_DEPENDS=	databases/mariadb,-server
 
 TEST_IS_INTERACTIVE=Yes
 

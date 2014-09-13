@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.95 2014/04/21 13:24:30 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.96 2014/09/13 18:09:22 brad Exp $
 
 SHARED_ONLY=		Yes
 
@@ -20,11 +20,11 @@ PKGNAME-mysql=		libgda-mysql-${GNOME_VERSION}
 PKGNAME-pgsql=		libgda-pgsql-${GNOME_VERSION}
 PKGNAME-ui=		libgda-ui-${GNOME_VERSION}
 
-REVISION-main=		3
-REVISION-ldap=		2
-REVISION-mysql=		1
-REVISION-pgsql=		2
-REVISION-ui=		2
+REVISION-main=		4
+REVISION-ldap=		3
+REVISION-mysql=		2
+REVISION-pgsql=		3
+REVISION-ui=		3
 
 EPOCH-main=		2
 EPOCH-ldap=		0
@@ -136,7 +136,7 @@ WANTLIB-mysql=		${WANTLIB} crypto ssl gda-${GDA_MAJOR} \
 			mysqlclient
 LIB_DEPENDS-mysql=	${LIB_DEPENDS} \
 			x11/gnome/libgda \
-			databases/mysql
+			databases/mariadb
 CONFIGURE_ARGS+=	--with-mysql="${LOCALBASE}"
 .endif
 

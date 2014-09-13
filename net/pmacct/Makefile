@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2014/03/22 23:05:43 sthen Exp $
+# $OpenBSD: Makefile,v 1.20 2014/09/13 18:09:21 brad Exp $
 
 COMMENT=	IP accounting software
 
@@ -39,8 +39,8 @@ CONFIGURE_ARGS+= --disable-pgsql
 .endif
 
 .if ${FLAVOR:Mmysql}
-LIB_DEPENDS+=	databases/mysql
-WANTLIB +=	lib/mysql/mysqlclient>=10
+LIB_DEPENDS+=	databases/mariadb
+WANTLIB +=	lib/mysql/mysqlclient
 CONFIGURE_ARGS+= --enable-mysql
 .else
 CONFIGURE_ARGS+= --disable-mysql

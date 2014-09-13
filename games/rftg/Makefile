@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/06/12 20:36:33 brad Exp $
+# $OpenBSD: Makefile,v 1.16 2014/09/13 18:09:20 brad Exp $
 
 V = 0.8.1
 COMMENT-client = race for the galaxy card game
@@ -13,7 +13,7 @@ MASTER_SITES = http://warpcore.org/rftg/
 MULTI_PACKAGES = -client #-server
 SUBPACKAGE ?= -client
 
-REVISION-client =	2
+REVISION-client =	3
 REVISION-server =	2
 
 # Licence: GPL
@@ -24,7 +24,7 @@ CONFIGURE_STYLE = gnu
 
 LIB_DEPENDS-client = x11/gtk+2
 
-LIB_DEPENDS-server = databases/mysql
+LIB_DEPENDS-server = databases/mariadb
 
 .if ${MULTI_PACKAGES:M-server}
 

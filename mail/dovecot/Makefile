@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.224 2014/07/30 14:28:24 naddy Exp $
+# $OpenBSD: Makefile,v 1.225 2014/09/13 18:09:21 brad Exp $
 
 SHARED_ONLY=	Yes
 
@@ -21,9 +21,9 @@ CATEGORIES=	mail
 MASTER_SITES=	${HOMEPAGE}releases/${V_MAJOR}/
 
 REVISION-server=	3
-REVISION-ldap=		3
-REVISION-mysql=		3
-REVISION-postgresql=	3
+REVISION-ldap=		4
+REVISION-mysql=		4
+REVISION-postgresql=	4
 
 SHARED_LIBS=	dovecot-compression 0.0 \
 		dovecot-lda	2.0 \
@@ -39,7 +39,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB-server=	bz2 c crypto lzma sqlite3 ssl z ${MODLIBICONV_WANTLIB}
 WANTLIB-ldap=	crypto lber-2.4 ldap-2.4 sasl2 ssl
-WANTLIB-mysql=	crypto m lib/mysql/mysqlclient>=10 ssl z
+WANTLIB-mysql=	crypto m lib/mysql/mysqlclient ssl z
 WANTLIB-postgresql= crypto pq>=4 ssl
 
 MODULES=	converters/libiconv
@@ -47,7 +47,7 @@ LIB_DEPENDS+=	archivers/bzip2 \
 		archivers/xz
 LIB_DEPENDS-ldap= databases/openldap
 RUN_DEPENDS-ldap= ${BASE_PKGPATH}=${V_DOVECOT}
-LIB_DEPENDS-mysql= databases/mysql
+LIB_DEPENDS-mysql= databases/mariadb
 RUN_DEPENDS-mysql= ${BASE_PKGPATH}=${V_DOVECOT}
 LIB_DEPENDS-postgresql= databases/postgresql
 RUN_DEPENDS-postgresql= ${BASE_PKGPATH}=${V_DOVECOT}

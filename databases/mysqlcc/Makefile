@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.19 2013/06/12 20:36:33 brad Exp $
+# $OpenBSD: Makefile,v 1.20 2014/09/13 18:09:20 brad Exp $
 
 COMMENT=		GUI client for MySQL
 
 VERSION=		0.9.8
 DISTNAME=		mysqlcc-${VERSION}-src
 PKGNAME=		mysqlcc-${VERSION}
-REVISION=		7
+REVISION=		8
 CATEGORIES=		databases
 
 HOMEPAGE=		http://mysqlcc.sourceforge.net/
@@ -14,13 +14,13 @@ HOMEPAGE=		http://mysqlcc.sourceforge.net/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += X11 Xext c m pthread z
-WANTLIB += lib/mysql/mysqlclient>=10
+WANTLIB += lib/mysql/mysqlclient
 WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mysqlcc/}
 
 MODULES=		x11/qt3
-LIB_DEPENDS=		databases/mysql
+LIB_DEPENDS=		databases/mariadb
 
 MAKE_ENV=		LOCALBASE=${LOCALBASE} HACK_CFLAGS="${CFLAGS}"
 MAKE_FLAGS=   		CC=${CC} CXX=${CXX} LINK=${CXX}

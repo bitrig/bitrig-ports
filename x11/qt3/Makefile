@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.111 2014/07/13 09:03:15 armani Exp $
+# $OpenBSD: Makefile,v 1.112 2014/09/13 18:09:22 brad Exp $
 
 COMMENT-main=		C++ X11 GUI toolkit
 COMMENT-examples=	examples and tutorial for qt3
@@ -16,12 +16,12 @@ FULLPKGNAME-html=	qt3-html-${VERSION}
 FULLPKGPATH-html=	x11/qt3,-html
 PKGNAME-sqlite2=	qt3-sqlite2-${VERSION}
 
-REVISION-mysql= 	9
-REVISION-postgresql= 	7
-REVISION-main= 		10
-REVISION-html= 		3
-REVISION-examples=	4
-REVISION-sqlite2= 	7
+REVISION-mysql= 	10
+REVISION-postgresql= 	8
+REVISION-main= 		11
+REVISION-html= 		4
+REVISION-examples=	5
+REVISION-sqlite2= 	8
 
 # the qt-mt library version number is used in a directory name.
 # when bumping, be sure to also bump MODQT3_PLUGINS in qt3.port.mk
@@ -155,7 +155,7 @@ WANTLIB-main=		${WANTLIB} c
 
 LIB_DEPENDS-mysql=	${LIB_DEPENDS} \
 			${BUILD_PKGPATH} \
-			databases/mysql
+			databases/mariadb
 WANTLIB-mysql=		${WANTLIB} qt-mt mysqlclient
 
 LIB_DEPENDS-postgresql=	${LIB_DEPENDS} \

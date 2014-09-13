@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.41 2014/07/22 18:46:43 sebastia Exp $
+# $OpenBSD: Makefile,v 1.42 2014/09/13 18:09:22 brad Exp $
 
 COMMENT-main=		Skyrix Object Publishing Environment
 COMMENT-mysql=		SOPE MySQL adaptor
@@ -44,7 +44,7 @@ LIB_DEPENDS-main=	x11/gnustep/base \
 			x11/gnustep/libobjc2 \
 			${MODLIBICONV_LIB_DEPENDS}
 LIB_DEPENDS-mysql =	${BASE_PKGPATH}=${VERSION}.1 \
-			databases/mysql,-main
+			databases/mariadb,-main
 LIB_DEPENDS-postgres =	${BASE_PKGPATH}=${VERSION}.1 \
 			databases/postgresql,-main
 

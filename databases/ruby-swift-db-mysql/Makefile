@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/01/15 02:13:57 jeremy Exp $
+# $OpenBSD: Makefile,v 1.6 2014/09/13 18:09:20 brad Exp $
 
 COMMENT =	mysql driver for swift
 
@@ -14,7 +14,7 @@ FLAVORS =	ruby19 ruby20 ruby21
 
 WANTLIB =	uuid mysqlclient
 LIB_DEPENDS =	sysutils/e2fsprogs>=1.42.7 \
-		databases/mysql
+		databases/mariadb
 
 CONFIGURE_STYLE = ruby gem ext
 

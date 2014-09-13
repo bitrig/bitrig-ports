@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.46 2014/07/12 11:25:00 sthen Exp $
+# $OpenBSD: Makefile,v 1.47 2014/09/13 18:09:22 brad Exp $
 
 COMMENT =	GNU system administration tool for networks
 
@@ -49,7 +49,7 @@ CONFIGURE_ARGS +=	--without-postgresql
 .if ${FLAVOR:Mmysql}
 WANTLIB +=		mysqlclient_r
 CONFIGURE_ARGS +=	--with-mysql
-LIB_DEPENDS +=		databases/mysql
+LIB_DEPENDS +=		databases/mariadb
 .else
 CONFIGURE_ARGS +=	--without-mysql
 .endif

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2014/04/18 21:57:32 sthen Exp $
+# $OpenBSD: Makefile,v 1.30 2014/09/13 18:09:22 brad Exp $
 
 COMMENT-main =		mature and flexible open source SIP server
 
@@ -17,7 +17,7 @@ PKGNAME-perl =		kamailio-perl-${VERSION}
 #PKGNAME-radius =	kamailio-radius-${VERSION}	TODO
 
 REVISION-main =		0
-REVISION-mysql =	2
+REVISION-mysql =	3
 REVISION-postgresql =	0
 REVISION-ldap =		0
 REVISION-xmlrpc =	0
@@ -105,7 +105,7 @@ COMMENT-mysql =		kamailio mysql module
 KAMAILIO_MODULES +=	db_mysql
 WANTLIB-mysql =		c crypto m pthread ssl z mysqlclient \
 			lib/kamailio/srdb1 lib/kamailio/srdb2
-LIB_DEPENDS-mysql =	databases/mysql,-main telephony/kamailio,-main
+LIB_DEPENDS-mysql =	databases/mariadb,-main telephony/kamailio,-main
 .endif
 
 PSEUDO_FLAVORS +=	no_ldap

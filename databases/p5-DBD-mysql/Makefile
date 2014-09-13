@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2014/07/11 14:11:12 giovanni Exp $
+# $OpenBSD: Makefile,v 1.40 2014/09/13 18:09:20 brad Exp $
 
 SHARED_ONLY=		Yes
 
@@ -18,10 +18,10 @@ WANTLIB=		c crypto m pthread ssl z
 
 BUILD_DEPENDS=		databases/p5-DBI>=1.08
 RUN_DEPENDS=		databases/p5-DBI>=1.08
-LIB_DEPENDS=		databases/mysql
-TEST_DEPENDS=		databases/mysql,-server \
+LIB_DEPENDS=		databases/mariadb
+TEST_DEPENDS=		databases/mariadb,-server \
 			devel/p5-Test-Deep
-WANTLIB +=		lib/mysql/mysqlclient>=10
+WANTLIB +=		lib/mysql/mysqlclient
 
 TEST_IS_INTERACTIVE=	Yes
 
