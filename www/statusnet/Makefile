@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2013/09/20 06:33:48 jasper Exp $
+# $OpenBSD: Makefile,v 1.30 2014/09/14 05:58:07 ajacoutot Exp $
 
 COMMENT=		open source micro messaging platform
 
