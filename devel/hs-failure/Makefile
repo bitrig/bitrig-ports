@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 10:50:07 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2014/09/15 19:54:05 jasper Exp $
 
 COMMENT=		simple type class for success/failure computations
 

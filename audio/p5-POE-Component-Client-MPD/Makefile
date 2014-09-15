@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2014/04/06 12:05:20 sthen Exp $
+# $OpenBSD: Makefile,v 1.14 2014/09/15 19:54:05 jasper Exp $
 
 COMMENT=		complete MPD client library
 

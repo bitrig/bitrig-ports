@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/03/11 11:41:25 espie Exp $
+# $OpenBSD: Makefile,v 1.10 2014/09/15 19:54:05 jasper Exp $
 
 COMMENT=		fast, pure, practical collection of crypto hashes
 
