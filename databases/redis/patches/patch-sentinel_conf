@@ -1,7 +1,7 @@
-$OpenBSD: patch-sentinel_conf,v 1.2 2013/11/29 08:32:24 dcoppa Exp $
---- sentinel.conf.orig	Wed Nov 27 15:24:01 2013
-+++ sentinel.conf	Wed Nov 27 15:28:48 2013
-@@ -116,7 +116,7 @@ sentinel failover-timeout mymaster 180000
+$OpenBSD: patch-sentinel_conf,v 1.4 2014/09/15 08:29:33 dcoppa Exp $
+--- sentinel.conf.orig	Fri Sep 12 16:16:58 2014
++++ sentinel.conf	Mon Sep 15 10:14:05 2014
+@@ -151,7 +151,7 @@ sentinel failover-timeout mymaster 180000
  #
  # Example:
  #
@@ -10,7 +10,7 @@ $OpenBSD: patch-sentinel_conf,v 1.2 2013/11/29 08:32:24 dcoppa Exp $
  
  # CLIENTS RECONFIGURATION SCRIPT
  #
-@@ -141,6 +141,6 @@ sentinel failover-timeout mymaster 180000
+@@ -176,6 +176,6 @@ sentinel failover-timeout mymaster 180000
  #
  # Example:
  #
