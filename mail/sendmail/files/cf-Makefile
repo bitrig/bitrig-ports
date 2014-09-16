@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: cf-Makefile,v 1.1.1.1 2014/09/16 17:09:31 jca Exp $
 #
 #  Makefile for configuration files.
 #

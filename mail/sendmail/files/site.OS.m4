@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: site.OS.m4,v 1.1.1.1 2014/09/16 17:09:31 jca Exp $
 # OpenBSD Sendmail port configuration, generated from __file__
 dnl
 dnl Target directories
@@ -10,6 +10,9 @@ define(`confUBINDIR',		`${TRUEPREFIX}/bin')dnl
 define(`confSBINDIR',		`${TRUEPREFIX}/sbin')dnl
 define(`confEBINDIR',		`${TRUEPREFIX}/libexec')dnl
 define(`confMBINDIR',		`${TRUEPREFIX}/libexec/sendmail/')dnl
+dnl Overriden in PLIST
+define(`confMSPQOWN',		`root')
+define(`confGBINGRP',		`wheel')
 dnl Manpages handling
 dnl =================
 define(`confMANROOT',		`${TRUEPREFIX}/man/man')dnl
@@ -25,9 +28,6 @@ APPENDDEF(`confENVDEF', `-DNEEDSGETIPNODE')dnl
 APPENDDEF(`confENVDEF', `-DNETINET6')dnl
 APPENDDEF(`confENVDEF', `-DSM_CONF_SHM')dnl
 APPENDDEF(`confMAPDEF', `-DSOCKETMAP')dnl
-dnl TCP wrappers
-APPENDDEF(`conf_sendmail_ENVDEF', `-DTCPWRAPPERS')dnl
-APPENDDEF(`conf_sendmail_LIBS', `-lwrap')dnl
 dnl (START)TLS
 APPENDDEF(`confENVDEF', `-DSTARTTLS')dnl
 APPENDDEF(`confLIBS', `-lssl -lcrypto')dnl

@@ -8,7 +8,7 @@ divert(-1)
 #
 
 divert(0)dnl
-VERSIONID(`$OpenBSD: openbsd-lists.mc,v 1.18 2008/06/09 14:47:01 millert Exp $')
+VERSIONID(`$OpenBSD: openbsd-lists.mc,v 1.1.1.1 2014/09/16 17:09:32 jca Exp $')
 OSTYPE(openbsd)dnl
 dnl
 dnl Advertise ourselves as ``openbsd.org''

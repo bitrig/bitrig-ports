@@ -1,4 +1,6 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v 1.1.1.1 2014/09/16 17:09:32 jca Exp $
+@newgroup _smmsp:742
+@newuser _smmsp:742:_smmsp::Sendmail Message Submission Program:/nonexistent:/sbin/nologin
 include/libmilter/
 include/libmilter/mfapi.h
 include/libmilter/mfdef.h
@@ -7,8 +9,8 @@ lib/libmilter.a
 libexec/sendmail/
 @bin libexec/sendmail/makemap
 @mode 2555
-@owner smmsp
-@group smmsp
+@owner root
+@group _smmsp
 @bin libexec/sendmail/sendmail
 @mode
 @owner
@@ -29,6 +31,7 @@ libexec/sendmail/
 @bin sbin/praliases
 sbin/sendmail-disable
 sbin/sendmail-enable
+share/doc/pkg-readmes/${FULLPKGNAME}
 share/doc/sendmail/
 share/doc/sendmail/CACerts
 share/doc/sendmail/FAQ
@@ -111,9 +114,9 @@ share/examples/sendmail/mailertable
 share/examples/sendmail/relay-domains
 @sample ${SYSCONFDIR}/mail/relay-domains
 share/examples/sendmail/sendmail.cf
-@sample ${SYSCONFDIR}/sendmail.cf
+@sample ${SYSCONFDIR}/mail/sendmail.cf
 share/examples/sendmail/submit.cf
-@sample ${SYSCONFDIR}/submit.cf
+@sample ${SYSCONFDIR}/mail/submit.cf
 share/examples/sendmail/trusted-users
 @sample ${SYSCONFDIR}/mail/trusted-users
 share/examples/sendmail/virtusertable
@@ -360,10 +363,12 @@ share/sendmail/siteconfig/uucp.ucbarpa.m4
 share/sendmail/siteconfig/uucp.ucbvax.m4
 @mode 700
 @sample /var/spool/mqueue/
+@mode
 @mode 770
-@owner smmsp
-@group smmsp
+@owner _smmsp
+@group _smmsp
 @sample /var/spool/clientmqueue/
 @group
 @owner
-@rcscript ${SYSCONFDIR}/rc.d/esendmail
+@mode
+@rcscript ${SYSCONFDIR}/rc.d/sendmail

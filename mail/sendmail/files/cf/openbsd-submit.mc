@@ -15,7 +15,7 @@ divert(-1)
 #
 
 divert(0)dnl
-VERSIONID(`$OpenBSD: openbsd-submit.mc,v 1.1 2008/10/03 16:29:05 millert Exp $')
+VERSIONID(`$OpenBSD: openbsd-submit.mc,v 1.1.1.1 2014/09/16 17:09:32 jca Exp $')
 define(`confCF_VERSION', `Submit')dnl
 OSTYPE(openbsd)dnl
 define(`_USE_DECNET_SYNTAX_', `1')dnl support DECnet
@@ -23,6 +23,8 @@ define(`confTIME_ZONE', `USE_TZ')dnl
 define(`confBIND_OPTS', `WorkAroundBrokenAAAA')dnl
 define(`confDONT_INIT_GROUPS', `True')dnl
 define(`confCT_FILE', `-o MAIL_SETTINGS_DIR`'trusted-users')dnl
+define(`confTO_IDENT', `0')dnl
+define(`confRUN_AS_USER', `_smmsp')dnl
 FEATURE(`use_ct_file')dnl
 FEATURE(`accept_unresolvable_domains')dnl
 dnl

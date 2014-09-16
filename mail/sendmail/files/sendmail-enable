@@ -1,24 +1,23 @@
 #!/bin/sh
 #
-# $OpenBSD$
+# $OpenBSD: sendmail-enable,v 1.1.1.1 2014/09/16 17:09:31 jca Exp $
 
 if [ -f /etc/mailer.conf.sendmail ]; then
     if [ -f /etc/mailer.conf ]; then
-        mv -f /etc/mailer.conf /etc/mailer.conf.pre-sendmail
-        echo "old /etc/mailer.conf saved as /etc/mailer.conf.pre-sendmail" >&2
+	if mv -f /etc/mailer.conf /etc/mailer.conf.pre-sendmail; then
+            echo "old /etc/mailer.conf saved as" \
+		"/etc/mailer.conf.pre-sendmail" >&2
+	else
+	    echo "failed to save current mailer.conf" >&2
+	    exit 1
+	fi
     fi
-    mv -f /etc/mailer.conf.sendmail /etc/mailer.conf
-    printf '%s\n'                                                         \
-	"sendmail /etc/mailer.conf enabled"                               \
-        ""                                                                \
-        "NOTE: do not forget to add smtpd_flags=NO to"                    \
-        "      /etc/rc.conf.local to disable smtpd."                      \
-        ""                                                                \
-        "NOTE: do not forget to add esendmail to pkg_scripts in"          \
-        "      /etc/rc.conf.local to start sendmail automatically."       \
-        ""                                                                \
-        "NOTE: do not forget to add the \"sendmail clientmqueue runner\"" \
-        "      in root's crontab." >&2
+    if mv -f /etc/mailer.conf.sendmail /etc/mailer.conf; then
+        echo "sendmail /etc/mailer.conf enabled" >&2
+    else
+	echo "failed to enable sendmail in /etc/mailer.conf" >&2
+	exit 1
+    fi
 else
     echo "can't find /etc/mailer.conf.sendmail, sendmail not enabled" >&2
     exit 1

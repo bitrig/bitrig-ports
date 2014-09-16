@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: local-host-names,v 1.1.1.1 2014/09/16 17:09:31 jca Exp $
 #
 # List additional hostnames that should be considered local (one per line).
 # I.e., any hostname for which you wish mail to be accepted (and delivered).

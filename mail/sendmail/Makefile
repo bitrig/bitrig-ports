@@ -1,20 +1,18 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.1.1.1 2014/09/16 17:09:31 jca Exp $
 
 COMMENT =		mother of Mail Transfer Agents
 
-DISTNAME =		sendmail.8.14.7
-PKGNAME =		sendmail-8.14.7
-REVISION =		0
+DISTNAME =		sendmail.8.14.9
+PKGNAME =		sendmail-8.14.9
 
 CATEGORIES =		mail
 
 HOMEPAGE =		http://www.sendmail.org/
 
-# Sendmail License (sendmail)
 # Sendmail License / BSD3 / BSD4 / Public Domain / CDDL (contrib/ directory)
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c crypto ssl wrap
+WANTLIB =		c crypto ssl
 
 MASTER_SITES =		ftp://ftp.sendmail.org/pub/sendmail/ \
 			ftp://ftp.bit.nl/mirror/sendmail/ \
@@ -53,36 +51,29 @@ LIB_DEPENDS +=		security/cyrus-sasl2
 WRKDIST =		${WRKDIR}/${PKGNAME}
 
 post-extract:
-	@cp ${FILESDIR}/cf/*.mc ${WRKSRC}/cf/cf
-	@cp ${WRKDIST}/devtools/OS/OpenBSD ${WRKDIST}/devtools/OS/Bitrig
-	@${SUBST_CMD} -c ${FILESDIR}/site.OS.m4 \
+	cp ${FILESDIR}/cf/*.mc ${WRKSRC}/cf/cf
+	${SUBST_CMD} -c ${FILESDIR}/site.OS.m4 \
 	    ${WRKSRC}/devtools/Site/site.config.m4
-
 
 opfiles =		op.ps op.txt
 post-build:
 .for file in ${opfiles}
-	@echo Building ${WRKSRC}/doc/op/${file}
-	@cd ${WRKSRC}/doc/op/ && \
+	cd ${WRKSRC}/doc/op/ && \
 	    ${SETENV} ${MAKE_ENV} GROFF_NO_SGR=1 make ${file}
 .endfor
 
-
 pre-fake:
-	@${INSTALL_PROGRAM_DIR} ${PREFIX}/libexec/sendmail/
-
+	${INSTALL_PROGRAM_DIR} ${PREFIX}/libexec/sendmail/
 
 docdir =		${PREFIX}/share/doc/sendmail
 post-install:
-	@echo "Removing dangling symlinks from ${PREFIX}/bin..."
-	@find ${PREFIX}/bin/ -type l -print -execdir rm -f {} ';' | \
+	find ${PREFIX}/bin/ -type l -print -execdir rm -f {} ';' | \
 	    sed 's/^/rm -f /'
-	@mv ${PREFIX}/sbin/makemap ${PREFIX}/libexec/sendmail
+	mv ${PREFIX}/sbin/makemap ${PREFIX}/libexec/sendmail
 .for file in sendmail-enable sendmail-disable
 	@echo "Installing ${PREFIX}/sbin/${file}"
-	@${SUBST_CMD} -c -o ${BINOWN} -g ${BINGRP} \
+	@${SUBST_CMD} -c -o ${BINOWN} -g ${BINGRP} -m ${BINMODE} \
 	    ${FILESDIR}/${file} ${PREFIX}/sbin/${file}
-	@chmod ${BINMODE} ${PREFIX}/sbin/${file}
 .endfor
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/sendmail/
 .for file in access genericstable local-host-names mailertable relay-domains \
