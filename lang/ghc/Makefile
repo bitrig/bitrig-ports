@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.107 2013/12/12 22:13:37 kili Exp $
+# $OpenBSD: Makefile,v 1.108 2014/09/16 10:07:00 dcoppa Exp $
 
 COMMENT-main =		compiler for the functional language Haskell
 COMMENT-doc =		documentation for GHC
@@ -64,6 +64,10 @@ SUPDISTFILES +=		${BINDISTFILE-$m}
 
 USE_GMAKE =		Yes
 USE_GROFF =		Yes
+
+.if ${MACHINE_ARCH} == "i386"
+CFLAGS +=		-fno-pie
+.endif
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	--with-iconv-includes=${LOCALBASE}/include \
