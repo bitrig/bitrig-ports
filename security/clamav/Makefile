@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.93 2014/09/17 07:52:42 jca Exp $
+# $OpenBSD: Makefile,v 1.94 2014/09/17 09:13:13 ajacoutot Exp $
 
 COMMENT=		virus scanner
 DISTNAME=		clamav-0.98.4
-REVISION=		1
+REVISION=		2
 
 CATEGORIES=		security
 
@@ -15,7 +15,7 @@ HOMEPAGE=		http://www.clamav.net/
 # GPLv2/LGPL, with OpenSSL exemption
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += bz2 c crypto curl idn intl ltdl m milter ncurses pthread
+WANTLIB += bz2 c crypto curl idn ltdl m milter ncurses pthread
 WANTLIB += ssl xml2 z
 
 BUILD_DEPENDS=		devel/check \
@@ -23,7 +23,7 @@ BUILD_DEPENDS=		devel/check \
 
 LIB_DEPENDS=		archivers/bzip2 \
 			devel/libtool,-ltdl \
-			mail/sendmail \
+			mail/sendmail,-libmilter \
 			net/curl \
 			textproc/libxml
 
@@ -55,7 +55,7 @@ CONFIGURE_ARGS+=        --disable-clamav \
 MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/config
 
 TEST_TARGET=	check
-MODULES=	lang/python converters/libiconv
+MODULES=	lang/python devel/gettext
 MODPY_RUNDEP=	no
 
 CPPFLAGS+=	-I/usr/include -I${LOCALBASE}/include
