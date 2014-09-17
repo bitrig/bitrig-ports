@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2014/01/21 13:07:26 jung Exp $
+# $OpenBSD: Makefile,v 1.20 2014/09/17 07:52:42 jca Exp $
 
 COMMENT=	sendmail milter plugin for SpamAssassin spamd
 
@@ -11,7 +11,13 @@ HOMEPAGE=	http://www.benzedrine.cx/milter-spamd.html
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c pthread milter
+WANTLIB=		c milter pthread
+
+LIB_DEPENDS=	mail/sendmail
+
+MAKE_FLAGS=	CPPFLAGS="-I${LOCALBASE}/include" \
+		CFLAGS="-Wall -Wstrict-prototypes ${CFLAGS}" \
+		LDFLAGS="-L${LOCALBASE}/lib ${LDFLAGS}"
 
 NO_TEST=	Yes
 

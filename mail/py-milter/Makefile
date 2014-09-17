@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2013/04/15 07:44:01 benoit Exp $
+# $OpenBSD: Makefile,v 1.21 2014/09/17 07:52:42 jca Exp $
 
 COMMENT =	Python interface to sendmail milter API
 
@@ -19,6 +19,7 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=pymilter/}
 
 MODULES =	lang/python
 
+LIB_DEPENDS =	mail/sendmail
 TEST_DEPENDS = ${RUN_DEPENDS} \
 		  net/py-dns
 

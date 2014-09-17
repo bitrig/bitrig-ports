@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/03/11 11:23:51 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2014/09/17 07:52:42 jca Exp $
 
 COMMENT=	sendmail milter plugin for recipient checking
 
@@ -12,9 +12,15 @@ HOMEPAGE=	http://www.benzedrine.cx/milter-checkrcpt.html
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c pthread milter
+WANTLIB=	c milter pthread
+
+LIB_DEPENDS=	mail/sendmail
 
 NO_TEST=	Yes
+
+MAKE_FLAGS=	CPPFLAGS="-I${LOCALBASE}/include" \
+		CFLAGS="-Wall -Wstrict-prototypes ${CFLAGS}" \
+		LDFLAGS="-L${LOCALBASE}/lib"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/milter-checkrcpt ${PREFIX}/libexec

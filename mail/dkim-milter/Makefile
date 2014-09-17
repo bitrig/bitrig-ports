@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.38 2014/01/15 00:20:42 sthen Exp $
+# $OpenBSD: Makefile,v 1.39 2014/09/17 07:52:42 jca Exp $
 
 COMMENT=	DKIM milter
 
@@ -15,8 +15,7 @@ PERMIT_PACKAGE_FTP=		Yes
 
 WANTLIB=	c crypto milter pthread ssl
 
-RUN_DEPENDS=	mail/sendmail
-BUILD_DEPENDS=	${RUN_DEPENDS}
+LIB_DEPENDS=	mail/sendmail
 
 EXAMPLESDIR=	share/examples/dkim-milter
 
@@ -24,9 +23,11 @@ post-extract:
 	@cp ${WRKDIST}/devtools/OS/OpenBSD ${WRKDIST}/devtools/OS/Bitrig
 
 post-configure:
-	@(echo "define(\`confCC', \`${CC} ${LDFLAGS} -L${LOCALBASE}/lib')"; \
-	  echo "define(\`confOPTIMIZE', \`${CFLAGS} -I${LOCALBASE}/include')"; \
-	  echo "define(\`confNO_MAN_BUILD')") \
+	@(echo "define(\`confCC', \`${CC}')"; \
+	  echo "define(\`confOPTIMIZE', \`${CFLAGS}')"; \
+	  echo "define(\`confNO_MAN_BUILD')"; \
+	  echo "APPENDDEF(\`confINCDIRS', \`-I${LOCALBASE}/include')"; \
+	  echo "APPENDDEF(\`confLIBDIRS', \`-L${LOCALBASE}/lib ')") \
 		>${WRKSRC}/devtools/Site/site.config.m4
 
 do-install:

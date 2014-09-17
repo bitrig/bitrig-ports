@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/07/15 21:51:57 jca Exp $
+# $OpenBSD: Makefile,v 1.15 2014/09/17 07:52:42 jca Exp $
 
 COMMENT=	greylist milter
 
@@ -15,7 +15,8 @@ PERMIT_PACKAGE_CDROM=		Yes
 
 WANTLIB=	c pthread milter spf2
 
-LIB_DEPENDS=	mail/libspf2
+LIB_DEPENDS=	mail/libspf2 \
+		mail/sendmail
 
 BUILD_DEPENDS=	devel/bison
 
