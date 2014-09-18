@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/11/09 01:43:12 bcallah Exp $
+# $OpenBSD: Makefile,v 1.2 2014/09/18 15:15:23 kspillner Exp $
 
 COMMENT =	terminal wrapper for creating drop-down consoles
 
