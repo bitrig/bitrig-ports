@@ -1,117 +1,45 @@
-$OpenBSD: patch-tools_clang_lib_Driver_Tools_cpp,v 1.22 2014/07/16 22:16:54 brad Exp $
-
-r212838
-Handle SPARC float command line parameters for SPARCv9.
-
-r211624
-Use appropriate default PIE settings for OpenBSD.
-
-r210883
-Use dwarf-2 by default on OpenBSD and FreeBSD.
-
-r209479
-Don't reduce the stack protector level given -fstack-protector.
-
---- tools/clang/lib/Driver/Tools.cpp.orig	Sun Mar  2 22:03:41 2014
-+++ tools/clang/lib/Driver/Tools.cpp	Wed Jul 16 16:00:01 2014
-@@ -1165,7 +1165,7 @@ void Clang::AddSparcTargetArgs(const ArgList &Args,
-                              ArgStringList &CmdArgs) const {
-   const Driver &D = getToolChain().getDriver();
- 
--  // Select the float ABI as determined by -msoft-float, -mhard-float, and
-+  // Select the float ABI as determined by -msoft-float and -mhard-float.
-   StringRef FloatABI;
-   if (Arg *A = Args.getLastArg(options::OPT_msoft_float,
-                                options::OPT_mhard_float)) {
-@@ -1486,6 +1486,7 @@ static void getTargetFeatures(const Driver &D, const l
-     getPPCTargetFeatures(Args, Features);
-     break;
-   case llvm::Triple::sparc:
-+  case llvm::Triple::sparcv9:
-     getSparcTargetFeatures(Args, Features);
-     break;
-   case llvm::Triple::aarch64:
-@@ -2261,6 +2262,27 @@ void Clang::ConstructJob(Compilation &C, const JobActi
-     }
-   }
- 
-+  // OpenBSD-specific defaults for PIE
-+  if (getToolChain().getTriple().getOS() == llvm::Triple::OpenBSD) {
-+    switch (getToolChain().getTriple().getArch()) {
-+    case llvm::Triple::mips64:
-+    case llvm::Triple::mips64el:
-+    case llvm::Triple::sparc:
-+    case llvm::Triple::x86:
-+    case llvm::Triple::x86_64:
-+      IsPICLevelTwo = false; // "-fpie"
-+      break;
-+
-+    case llvm::Triple::ppc:
-+    case llvm::Triple::sparcv9:
-+      IsPICLevelTwo = true; // "-fPIE"
-+      break;
-+
-+    default:
-+      break;
-+    }
-+  }
-+
-   // For the PIC and PIE flag options, this logic is different from the
-   // legacy logic in very old versions of GCC, as that logic was just
-   // a bug no one had ever fixed. This logic is both more rational and
-@@ -2631,6 +2653,7 @@ void Clang::ConstructJob(Compilation &C, const JobActi
-     break;
- 
-   case llvm::Triple::sparc:
-+  case llvm::Triple::sparcv9:
-     AddSparcTargetArgs(Args, CmdArgs);
-     break;
- 
-@@ -2696,8 +2719,10 @@ void Clang::ConstructJob(Compilation &C, const JobActi
-       // FIXME: we should support specifying dwarf version with
-       // -gline-tables-only.
-       CmdArgs.push_back("-gline-tables-only");
--      // Default is dwarf-2 for darwin.
--      if (getToolChain().getTriple().isOSDarwin())
-+      // Default is dwarf-2 for Darwin, OpenBSD and FreeBSD.
-+      const llvm::Triple &Triple = getToolChain().getTriple();
-+      if (Triple.isOSDarwin() || Triple.getOS() == llvm::Triple::OpenBSD ||
-+          Triple.getOS() == llvm::Triple::FreeBSD)
+--- tools/clang/lib/Driver/Tools.cpp.orig	Thu Aug  7 06:51:51 2014
++++ tools/clang/lib/Driver/Tools.cpp	Sun Sep 21 23:18:35 2014
+@@ -3099,7 +3099,8 @@ void Clang::ConstructJob(Compilation &C, const JobActi
+       // Default is dwarf-2 for Darwin, OpenBSD and FreeBSD.
+       const llvm::Triple &Triple = getToolChain().getTriple();
+       if (Triple.isOSDarwin() || Triple.getOS() == llvm::Triple::OpenBSD ||
+-          Triple.getOS() == llvm::Triple::FreeBSD)
++          Triple.getOS() == llvm::Triple::FreeBSD ||
++          Triple.getOS() == llvm::Triple::Bitrig)
          CmdArgs.push_back("-gdwarf-2");
      } else if (A->getOption().matches(options::OPT_gdwarf_2))
        CmdArgs.push_back("-gdwarf-2");
-@@ -2707,8 +2732,10 @@ void Clang::ConstructJob(Compilation &C, const JobActi
-       CmdArgs.push_back("-gdwarf-4");
-     else if (!A->getOption().matches(options::OPT_g0) &&
-              !A->getOption().matches(options::OPT_ggdb0)) {
--      // Default is dwarf-2 for darwin.
--      if (getToolChain().getTriple().isOSDarwin())
-+      // Default is dwarf-2 for Darwin, OpenBSD and FreeBSD.
-+      const llvm::Triple &Triple = getToolChain().getTriple();
-+      if (Triple.isOSDarwin() || Triple.getOS() == llvm::Triple::OpenBSD ||
-+          Triple.getOS() == llvm::Triple::FreeBSD)
-         CmdArgs.push_back("-gdwarf-2");
-       else
-         CmdArgs.push_back("-g");
-@@ -3197,9 +3224,10 @@ void Clang::ConstructJob(Compilation &C, const JobActi
-                                options::OPT_fstack_protector_all,
-                                options::OPT_fstack_protector_strong,
-                                options::OPT_fstack_protector)) {
--    if (A->getOption().matches(options::OPT_fstack_protector))
--      StackProtectorLevel = LangOptions::SSPOn;
--    else if (A->getOption().matches(options::OPT_fstack_protector_strong))
-+    if (A->getOption().matches(options::OPT_fstack_protector)) {
-+      StackProtectorLevel = std::max<unsigned>(LangOptions::SSPOn,
-+        getToolChain().GetDefaultStackProtectorLevel(KernelOrKext));
-+    } else if (A->getOption().matches(options::OPT_fstack_protector_strong))
-       StackProtectorLevel = LangOptions::SSPStrong;
-     else if (A->getOption().matches(options::OPT_fstack_protector_all))
-       StackProtectorLevel = LangOptions::SSPReq;
-@@ -5743,6 +5771,7 @@ void openbsd::Link::ConstructJob(Compilation &C, const
-                                        "/4.2.1"));
+@@ -6315,6 +6316,22 @@ void bitrig::Assemble::ConstructJob(Compilation &C, co
+                                     const char *LinkingOutput) const {
+   ArgStringList CmdArgs;
  
-   Args.AddAllArgs(CmdArgs, options::OPT_L);
-+  Args.AddAllArgs(CmdArgs, options::OPT_R);
-   Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
-   Args.AddAllArgs(CmdArgs, options::OPT_e);
-   Args.AddAllArgs(CmdArgs, options::OPT_s);
++  if (getToolChain().getArch() == llvm::Triple::arm) {
++    StringRef MArch = getToolChain().getArchName();
++    if (MArch == "armv7" || MArch == "armv7a" || MArch == "armv7-a")
++      CmdArgs.push_back("-mfpu=neon");
++    if (MArch == "armv8" || MArch == "armv8a" || MArch == "armv8-a")
++      CmdArgs.push_back("-mfpu=crypto-neon-fp-armv8");
++
++    StringRef ARMFloatABI = arm::getARMFloatABI(getToolChain().getDriver(), Args,
++                                           getToolChain().getTriple());
++    CmdArgs.push_back(Args.MakeArgString("-mfloat-abi=" + ARMFloatABI));
++
++    Args.AddLastArg(CmdArgs, options::OPT_march_EQ);
++    Args.AddLastArg(CmdArgs, options::OPT_mcpu_EQ);
++    Args.AddLastArg(CmdArgs, options::OPT_mfpu_EQ);
++  }
++
+   Args.AddAllArgValues(CmdArgs, options::OPT_Wa_COMMA,
+                        options::OPT_Xassembler);
+ 
+@@ -6414,6 +6431,9 @@ void bitrig::Link::ConstructJob(Compilation &C, const 
+ 
+     StringRef MyArch;
+     switch (getToolChain().getTriple().getArch()) {
++    case llvm::Triple::aarch64:
++      MyArch = "aarch64";
++      break;
+     case llvm::Triple::arm:
+       MyArch = "arm";
+       break;
