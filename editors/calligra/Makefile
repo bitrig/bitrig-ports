@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/09/13 18:09:20 brad Exp $
+# $OpenBSD: Makefile,v 1.3 2014/09/21 09:02:47 espie Exp $
 
 COMMENT =	K Desktop Environment, office suite
 HOMEPAGE =	http://www.calligra-suite.org/
@@ -11,6 +11,7 @@ MASTER_SITES =	${MASTER_SITE_KDE:=stable/${DISTNAME}/}
 
 # GPLv2+, LGPLv2+ and GNU FDLv1.2
 PERMIT_PACKAGE_CDROM =	Yes
+DPB_PROPERTIES =	parallel
 
 MODULES =	x11/kde4 \
 		converters/libiconv \
