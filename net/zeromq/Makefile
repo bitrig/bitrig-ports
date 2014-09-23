@@ -1,12 +1,14 @@
-# $OpenBSD: Makefile,v 1.11 2013/06/22 07:45:14 jasper Exp $
+# $OpenBSD: Makefile,v 1.12 2014/09/23 12:08:03 ajacoutot Exp $
+
+# Note: use 'ulimit -n 1024' for regress tests
+
+SHARED_ONLY =		Yes
 
 COMMENT =		open source message queue optimised for performance
 
-DISTNAME =		zeromq-3.2.3
-REVISION =		1
+DISTNAME =		zeromq-4.0.4
 
-SHARED_ONLY =		Yes
-SHARED_LIBS +=	zmq                  2.0      # 3.0
+SHARED_LIBS +=  zmq                  3.0      # 4.0
 
 CATEGORIES =		net
 HOMEPAGE =		http://zeromq.org/
@@ -14,23 +16,25 @@ HOMEPAGE =		http://zeromq.org/
 # LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB=		pthread ssl crypto m
-WANTLIB +=		c++ c++abi
+WANTLIB += c m pthread sodium
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		http://download.zeromq.org/
 
-USE_GMAKE =		Yes
-USE_GROFF =		Yes
+LIB_DEPENDS =		security/libsodium
 
-CONFIGURE_STYLE =	gnu
-CONFIGURE_ARGS =	${CONFIGURE_SHARED}
+USE_GMAKE =		Yes
 
 MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/config
 
 # test_connect_delay.cpp:260:2: error: no newline at end of file
 post-extract:
 	echo "" >> ${WRKSRC}/tests/test_connect_delay.cpp
+# XXX libsodium: https://github.com/jedisct1/libsodium/pull/104
+CFLAGS +=		-Wno-long-long
 
-# Note: use ulimit -n 1024 for regress tests
+CONFIGURE_STYLE =	gnu
+CONFIGURE_ARGS =	${CONFIGURE_SHARED} \
+			--with-libsodium=${LOCALBASE}
 
 .include <bsd.port.mk>
