@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/11/18 09:50:06 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2014/09/24 09:24:22 espie Exp $
 
 COMMENT=	Ruby implementation of the D-Bus protocol
 
