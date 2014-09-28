@@ -2,6 +2,7 @@
 %%SHARED%%
 @bin bin/cardos-tool
 @bin bin/cryptoflex-tool
+@bin bin/dnie-tool
 @bin bin/eidenv
 @bin bin/iasecc-tool
 @bin bin/netkey-tool
@@ -22,6 +23,8 @@ lib/libsmm-local.a
 lib/libsmm-local.la
 @lib lib/libsmm-local.so.${LIBsmm-local_VERSION}
 lib/pkcs11/
+lib/pkcs11/onepin-opensc-pkcs11.la
+lib/pkcs11/onepin-opensc-pkcs11.so
 lib/pkcs11/opensc-pkcs11.la
 lib/pkcs11/pkcs11-spy.la
 lib/pkgconfig/libopensc.pc
