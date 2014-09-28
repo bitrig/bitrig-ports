@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.57 2014/04/28 22:03:11 sthen Exp $
+# $OpenBSD: Makefile,v 1.58 2014/09/28 13:44:48 ajacoutot Exp $
 
 COMMENT-main=	graph drawing software
 
@@ -68,10 +68,9 @@ LIB_DEPENDS =	graphics/jpeg \
 		graphics/graphite2 \
 		devel/harfbuzz \
 		print/poppler \
+		lang/guile \
 		${MODTK_LIB_DEPENDS}
-RUN_DEPENDS=	lang/guile
-BUILD_DEPENDS=	devel/swig \
-		lang/guile
+BUILD_DEPENDS=	devel/swig
 TEST_DEPENDS =	${FULLPKGNAME}:math/graphviz
 
 USE_GMAKE =	Yes
