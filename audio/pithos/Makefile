@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/09/24 02:38:36 bcallah Exp $
+# $OpenBSD: Makefile,v 1.7 2014/09/29 07:02:02 jasper Exp $
 
 GH_ACCOUNT =	pithos
 GH_PROJECT =	pithos
