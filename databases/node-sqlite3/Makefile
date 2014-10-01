@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/06/04 17:42:43 abieber Exp $
+# $OpenBSD: Makefile,v 1.13 2014/10/01 06:29:04 jasper Exp $
 
 COMMENT =	sqlite3 bindings for Node.js
 
