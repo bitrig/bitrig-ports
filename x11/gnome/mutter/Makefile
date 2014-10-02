@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.40 2014/05/14 09:26:00 jasper Exp $
+# $OpenBSD: Makefile,v 1.41 2014/10/02 13:54:44 ajacoutot Exp $
 
 COMMENT=		window and compositing manager
 
@@ -40,7 +40,6 @@ BUILD_DEPENDS=		devel/gsettings-desktop-schemas \
 			x11/gnome/zenity
 
 RUN_DEPENDS=		devel/gsettings-desktop-schemas \
-			x11/gnome/themes-standard \
 			x11/gnome/zenity
 
 # disable -Werror which breaks at least hppa/mips64/sparc64
