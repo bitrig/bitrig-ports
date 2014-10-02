@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.37 2014/09/27 21:46:32 naddy Exp $
+# $OpenBSD: Makefile,v 1.38 2014/10/02 21:12:48 naddy Exp $
 
 COMMENT=	convert files between character sets and usages
 
