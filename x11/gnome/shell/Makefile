@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.95 2014/05/30 09:29:38 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.96 2014/10/02 14:39:50 ajacoutot Exp $
 
 COMMENT=		next generation GNOME shell
 
@@ -88,9 +88,6 @@ RUN_DEPENDS +=		net/telepathy/telepathy-logger
 # yelp.desktop menu entry (from yelp: OnlyShowIn=GNOME;Unity;)
 # prevents => The URI "help:gnome-help/index" does not point to a valid page.
 RUN_DEPENDS +=		x11/gnome/user-docs
-
-# panel icons (power, sound...)
-RUN_DEPENDS +=		x11/gnome/icon-theme-symbolic
 
 # add required introspection libs that are not in the dependency chain
 RUN_DEPENDS +=		inputmethods/ibus \
