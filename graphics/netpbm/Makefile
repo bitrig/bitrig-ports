@@ -13,7 +13,10 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netpbm/}
 EXTRACT_SUFX=	.tgz
 
-MODULES=	converters/libiconv
+MODULES=	converters/libiconv gcc4
+MODGCC4_ARCHS=  *
+MODGCC4_LANGS=  c
+
 WANTLIB=	X11 Xau Xdmcp c jasper jbig jpeg m png pthread-stubs \
 		tiff xcb xml2 z
 LIB_DEPENDS=	graphics/tiff \
