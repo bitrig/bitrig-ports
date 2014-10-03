@@ -50,7 +50,11 @@ WANTLIB-finch=	X11 ncursesw panelw purple xcb ${WANTLIB} ${MODPY_WANTLIB}
 MODULES=	devel/gettext \
 		textproc/intltool \
 		lang/python \
-		devel/gconf2
+		devel/gconf2 \
+		gcc4
+
+MODGCC4_ARCHS=  *
+MODGCC4_LANGS=  c++
 
 BUILD_DEPENDS=		x11/dbus-python
 LIB_DEPENDS=		devel/glib2
