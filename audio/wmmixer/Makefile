@@ -13,6 +13,10 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		X11 Xau Xdmcp Xext Xpm c m ossaudio
 WANTLIB+=		c++ c++abi pthread
 
+MODULES=        	gcc4
+MODGCC4_ARCHS=  	*
+MODGCC4_LANGS=  	c++
+
 EXTRACT_SUFX=		.tgz
 
 NO_TEST=		Yes
