@@ -10,6 +10,10 @@ CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mcj/}
 HOMEPAGE=	http://xfig.org/
 
+MODULES=        gcc4
+MODGCC4_ARCHS=  *
+MODGCC4_LANGS=  c
+
 LIB_DEPENDS=	graphics/png
 RUN_DEPENDS=	print/ghostscript/gnu \
 		graphics/netpbm>=9.19
