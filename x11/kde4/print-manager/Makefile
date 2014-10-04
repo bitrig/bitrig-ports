@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/07/09 20:03:30 zhuk Exp $
+# $OpenBSD: Makefile,v 1.6 2014/10/04 21:07:29 zhuk Exp $
 
 COMMENT =	printing management for KDE
 DISTNAME =	print-manager-${MODKDE4_VERSION}
