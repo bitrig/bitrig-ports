@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/03/11 11:35:44 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2014/10/04 10:52:05 nigel Exp $
 
 COMMENT =	serialize/deserialize Adobe Action Message Format data
 
@@ -6,6 +6,7 @@ DISTNAME =	Data-AMF-0.09
 REVISION =	0
 CPAN_AUTHOR =	TYPESTER
 CATEGORIES =	multimedia
+REVISION = 	0
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
