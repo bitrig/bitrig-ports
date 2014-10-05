@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/10/04 05:34:46 jasper Exp $
+# $OpenBSD: Makefile,v 1.7 2014/10/05 17:32:33 jasper Exp $
 
 SHARED_ONLY =		Yes
 
@@ -20,7 +20,7 @@ MODULES =		lang/python
 
 WANTLIB =		pthread virt virt-lxc virt-qemu ${MODPY_WANTLIB}
 
-LIB_DEPENDS =		sysutils/libvirt>=1.2.5
+LIB_DEPENDS =		sysutils/libvirt>=${MODPY_EGG_VERSION}
 
 TEST_DEPENDS =		devel/py-nose \
 			textproc/py-lxml
