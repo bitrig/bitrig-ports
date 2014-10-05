@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.73 2014/09/27 17:16:00 pascal Exp $
+# $OpenBSD: Makefile,v 1.74 2014/10/05 19:29:20 pascal Exp $
 
 COMMENT=	anonymity service using onion routing
 
@@ -14,6 +14,7 @@ WANTLIB += c crypto event m pthread ssl z
 MASTER_SITES=	https://www.torproject.org/dist/
 
 CONFIGURE_STYLE=gnu
+AUTOCONF_VERSION = 2.69
 # PIE is already taken care of on a per-arch basis, and we have stack protection
 # anyway on FRAME_GROWS_DOWN archs.
 CONFIGURE_ARGS=	--with-ssl-dir=/usr \
