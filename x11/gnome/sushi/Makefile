@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2014/04/23 10:41:26 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.24 2014/10/06 11:16:09 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -29,7 +29,8 @@ WANTLIB += secret-1 soup-2.4 sqlite3 ssl webkitgtk-3.0
 WANTLIB += webp xcb xcb-render xcb-shm xml2 xslt z
 WANTLIB += c++ c++abi
 
-MODULES=	devel/gettext \
+MODULES=	devel/dconf \
+		devel/gettext \
 		x11/gnome
 
 LIB_DEPENDS=	audio/libmusicbrainz5 \
