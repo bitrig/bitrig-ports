@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2013/05/16 09:16:43 sthen Exp $
+# $OpenBSD: Makefile,v 1.24 2014/10/06 17:26:37 sebastia Exp $
 
 COMMENT =	XML parser for Tcl
 
