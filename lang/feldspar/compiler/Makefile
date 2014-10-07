@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/01/20 18:05:02 kili Exp $
+# $OpenBSD: Makefile,v 1.7 2014/10/07 12:59:51 dcoppa Exp $
 
 COMMENT=                prototype compiler for the Feldspar DSL
 

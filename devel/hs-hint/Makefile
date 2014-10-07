@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/07/19 06:50:17 kili Exp $
+# $OpenBSD: Makefile,v 1.9 2014/10/07 12:59:51 dcoppa Exp $
 
 COMMENT =		Runtime Haskell interpreter (GHC API wrapper)
 
