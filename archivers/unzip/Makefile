@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.49 2014/04/20 10:00:21 jasper Exp $
+# $OpenBSD: Makefile,v 1.50 2014/10/07 10:13:57 ajacoutot Exp $
 
 COMMENT=	extract, list & test files in a ZIP archive
 
