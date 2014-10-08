@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/07/09 20:03:27 zhuk Exp $
+# $OpenBSD: Makefile,v 1.9 2014/10/08 02:16:34 jeremy Exp $
 
 COMMENT-main =	KDE bindings for running interpreters
 COMMENT-java =	KDE Java bindings
@@ -6,6 +6,7 @@ DISTNAME =	kross-interpreters-${MODKDE4_VERSION}
 PKGNAME-main =	${PKGNAME}
 REVISION =	0
 PKGNAME-java =	${PKGNAME:C/interpreters/java/}
+REVISION-main =	0
 
 MULTI_PACKAGES =	-main -java
 
@@ -27,9 +28,7 @@ MODKDE4_USE =		libs
 # Unported
 CONFIGURE_ARGS =	-DCMAKE_DISABLE_FIND_PACKAGE_FALCON:Bool=Yes
 
-# TODO: Ruby 2.0 should be acceptable choice probably, too
 MODULES =		lang/python lang/ruby
-MODRUBY_REV =		2.0
 CONFIGURE_ARGS +=	-DRUBY_EXECUTABLE=${RUBY}
 
 .if ${FLAVOR:Mno_java}

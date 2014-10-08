@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2014/10/04 16:08:07 zhuk Exp $
+# $OpenBSD: Makefile,v 1.27 2014/10/08 02:16:34 jeremy Exp $
 
 COMMENT =	KDE workspace
 MODKDE4_VERSION =	4.11.12
@@ -88,7 +88,6 @@ WANTLIB += usb xml2 xmms
 MODULES =	devel/gettext multimedia/phonon lang/python lang/ruby
 MODKDE4_USE =	pim
 
-MODRUBY_REV =		1.9
 MODRUBY_BUILDDEP =	No
 
 BUILD_DEPENDS =	misc/shared-desktop-ontologies \
