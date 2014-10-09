@@ -143,7 +143,6 @@
      SUBDIR += nginx
      SUBDIR += nostromo
      SUBDIR += opengroupware
-     SUBDIR += opera
      SUBDIR += owncloud
      SUBDIR += p5-Alien-Tidyp
      SUBDIR += p5-Apache-ASP

@@ -12,7 +12,6 @@
     SUBDIR += dynagen
     SUBDIR += dynamips
     SUBDIR += fceux
-    SUBDIR += fedora
     SUBDIR += frodo
     SUBDIR += fuse
     SUBDIR += fuse-utils
@@ -28,7 +27,6 @@
     SUBDIR += openmsx
     SUBDIR += qemu
     SUBDIR += pcsxr
-    SUBDIR += redhat
     SUBDIR += sdlmame
     SUBDIR += sdlmess
     SUBDIR += simh

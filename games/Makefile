@@ -3,7 +3,6 @@
      SUBDIR =
      SUBDIR += 0ad
      SUBDIR += abuse
-     SUBDIR += adom
      SUBDIR += afternoonstalker
      SUBDIR += agm
      SUBDIR += alephone
