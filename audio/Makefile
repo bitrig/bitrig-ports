@@ -272,7 +272,6 @@
      SUBDIR += wmmp
      SUBDIR += wmmp3
      SUBDIR += wmtune
-     SUBDIR += wmtune,zoltrix
      SUBDIR += xcd
      SUBDIR += xcdplayer
      SUBDIR += xhippo

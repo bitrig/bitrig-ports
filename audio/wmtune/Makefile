@@ -17,15 +17,6 @@ MASTER_SITES=		${HOMEPAGE}dl/
 MAKE_ENV=		CC="${CC}"
 USE_GROFF =		Yes
 
-FLAVORS=		zoltrix
-FLAVOR?=
-
-.if ${FLAVOR:Mzoltrix}
-CFLAGS+=		-DZOLTRIX
-BINMODE=		4555
-ONLY_FOR_ARCHS=		i386
-.endif
-
 WRKDIST=		${WRKDIR}/wmtune-1.0.1-combined/
 
 post-extract:
