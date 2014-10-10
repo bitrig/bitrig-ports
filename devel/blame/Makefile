@@ -2,8 +2,7 @@
 
 COMMENT=	RCS equivalent of CVS's annotate command
 
-DISTNAME=	blame-1.1
-REVISION=	0
+DISTNAME=	blame-1.3.1
 CATEGORIES=	devel
 
 HOMEPAGE=	http://blame.sourceforge.net/
@@ -13,6 +12,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=blame/}
+
+CFLAGS+= -fgnu89-inline
 
 CONFIGURE_STYLE=gnu
 CONFIGURE_ENV=	CPPFLAGS="${CFLAGS} -I${LOCALBASE}/include"
