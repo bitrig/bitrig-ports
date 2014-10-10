@@ -1,6 +1,6 @@
 $OpenBSD: patch-ifaddrlist_c,v 1.1 2005/05/24 00:00:11 mjc Exp $
---- ifaddrlist.c.orig	Fri Oct 16 10:50:49 1998
-+++ ifaddrlist.c	Mon May 23 09:50:51 2005
+--- ifaddrlist.c.orig	Fri Oct 16 19:50:49 1998
++++ ifaddrlist.c	Fri Oct 10 18:06:48 2014
 @@ -46,7 +46,6 @@ struct mbuf;
  struct rtentry;
  #endif
@@ -9,7 +9,7 @@ $OpenBSD: patch-ifaddrlist_c,v 1.1 2005/05/24 00:00:11 mjc Exp $
  #include <netinet/in.h>
  
  #include <ctype.h>
-@@ -223,7 +222,7 @@ set_up_interface(char *device, struct so
+@@ -223,7 +222,7 @@ set_up_interface(char *device, struct sockaddr_in *sin
  	{
              fprintf(stdout,
                  "Multiple interfaces found, using %s @ %s.\n",

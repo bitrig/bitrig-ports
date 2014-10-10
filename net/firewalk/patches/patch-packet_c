@@ -1,7 +1,7 @@
 $OpenBSD: patch-packet_c,v 1.1 2005/05/24 00:00:11 mjc Exp $
---- packet.c.orig	Tue Dec 15 15:58:01 1998
-+++ packet.c	Mon May 23 09:50:51 2005
-@@ -237,7 +237,8 @@ print_ip(u_char *packet, struct firepack
+--- packet.c.orig	Wed Dec 16 00:58:01 1998
++++ packet.c	Fri Oct 10 18:06:48 2014
+@@ -237,7 +237,8 @@ print_ip(u_char *packet, struct firepack *fp)
      struct ip *ip_hdr;
  
      ip_hdr = (struct ip *)(packet + fp->packet_offset);
