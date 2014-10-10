@@ -3,8 +3,7 @@
 COMMENT=	strip cascading style sheets from webpages
 
 DISTNAME=	decss
-PKGNAME=	decss-0.0.6
-REVISION=	0
+PKGNAME=	decss-0.07
 CATEGORIES=	www
 
 MASTER_SITES=   ${HOMEPAGE}
