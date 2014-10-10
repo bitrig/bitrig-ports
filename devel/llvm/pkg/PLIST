@@ -1,8 +1,4 @@
 @comment $OpenBSD$
-%%amd64%%
-%%i386%%
-%%arm%%
-%%aarch64%%
 @bin bin/bugpoint
 bin/c++-analyzer
 bin/ccc-analyzer
@@ -1194,7 +1190,7 @@ ${CLANG_INCLUDE_PATH}/xmmintrin.h
 ${CLANG_INCLUDE_PATH}/xopintrin.h
 lib/clang/${LLVM_V}/lib/
 lib/clang/${LLVM_V}/lib/bitrig/
-lib/clang/${LLVM_V}/lib/bitrig/libclang_rt.builtins-x86_64.a
+lib/clang/${LLVM_V}/lib/bitrig/libclang_rt.builtins-${INSTALL_ARCH}.a
 lib/libLLVMAArch64AsmParser.a
 lib/libLLVMAArch64AsmPrinter.a
 lib/libLLVMAArch64CodeGen.a
