@@ -2,7 +2,7 @@ MozPlugger by itself isn't very useful. You might want to install some
 of the following packages:
 
 For pdf:
-* kdegraphics (kpdf), epdfview, evince, xpdf, gv, acroread
+* kdegraphics (kpdf), epdfview, evince, xpdf, gv
 
 For ps:
  * kdegraphics (kpdf), evince, gv
