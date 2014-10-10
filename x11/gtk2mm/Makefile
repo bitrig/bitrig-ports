@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.59 2013/06/28 09:51:01 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.60 2014/10/10 12:52:53 ajacoutot Exp $
 
 COMMENT=	C++ interface for gtk2+
 
 GNOME_PROJECT=	gtkmm
 GNOME_VERSION=	2.24.4
-REVISION=	1
+REVISION=	2
 
 PKGNAME=	gtk2mm-${GNOME_VERSION}
 
