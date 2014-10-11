@@ -25,6 +25,7 @@ CONFIGURE_ARGS =	--enable-touchscreen=no \
 
 CONFIGURE_ENV +=	LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib" \
 			CPPFLAGS="-I${X11BASE}/include -I${LOCALBASE}/include"
+MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build-aux
 
 MODULES =	devel/gettext
 USE_GMAKE =	Yes
