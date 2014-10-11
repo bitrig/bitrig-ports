@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2014/01/15 02:13:58 jeremy Exp $
+# $OpenBSD: Makefile,v 1.23 2014/10/11 19:54:47 jeremy Exp $
 
 COMMENT =	module for using Textile in Ruby
 

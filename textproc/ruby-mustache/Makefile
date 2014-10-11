@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/10/26 23:55:37 jeremy Exp $
+# $OpenBSD: Makefile,v 1.5 2014/10/11 19:54:47 jeremy Exp $
 
 COMMENT =		logic-free template language
 

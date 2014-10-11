@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2014/06/20 19:39:01 jasper Exp $
+# $OpenBSD: Makefile,v 1.21 2014/10/11 19:54:46 jeremy Exp $
 
 COMMENT=		simple pluggable hierarchical database
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/10/26 23:55:35 jeremy Exp $
+# $OpenBSD: Makefile,v 1.10 2014/10/11 19:54:46 jeremy Exp $
 
 COMMENT=		small RSpec clone
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/10/26 23:55:38 jeremy Exp $
+# $OpenBSD: Makefile,v 1.14 2014/10/11 19:54:47 jeremy Exp $
 
 COMMENT =	simple REST client for Ruby
 

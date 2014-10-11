@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/01/15 13:01:51 jasper Exp $
+# $OpenBSD: Makefile,v 1.13 2014/10/11 19:54:47 jeremy Exp $
 
 COMMENT =	library to access web resources via HTTP
 

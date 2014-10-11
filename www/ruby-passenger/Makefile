@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.35 2014/10/08 02:32:43 jeremy Exp $
+# $OpenBSD: Makefile,v 1.36 2014/10/11 19:54:47 jeremy Exp $
 
 COMMENT-main =		Nginx module for deploying ruby applications
 COMMENT-standalone =	ruby web application server

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/10/26 23:55:35 jeremy Exp $
+# $OpenBSD: Makefile,v 1.3 2014/10/11 19:54:47 jeremy Exp $
 
 COMMENT =		complete solution for Ruby command-line executables
 

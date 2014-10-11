@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2014/01/15 02:13:58 jeremy Exp $
+# $OpenBSD: Makefile,v 1.20 2014/10/11 19:54:48 jeremy Exp $
 
 COMMENT =	fast and very simple Ruby web server
 
