@@ -54,6 +54,8 @@ CONFIGURE_ARGS+= --with-dig-command=/usr/sbin/dig \
 		--with-nslookup-command=/usr/sbin/nslookup
 # missing: radius
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
+
 CFLAGS+=	-DLDAP_DEPRECATED
 
 PSEUDO_FLAVORS=	no_db
