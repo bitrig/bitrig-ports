@@ -35,5 +35,6 @@ LIB_DEPENDS=	x11/gtk2mm>=2.24.4 \
 
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--enable-static
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/scripts
 
 .include <bsd.port.mk>
