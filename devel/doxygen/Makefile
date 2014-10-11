@@ -14,8 +14,8 @@ PKGNAME-main=	doxygen-${VERSION}
 FULLPKGNAME-gui=doxygen-gui-${VERSION}
 CATEGORIES=	devel textproc
 
-REVISION-main=	2
-REVISION-gui=	2
+REVISION-main=	3
+REVISION-gui=	3
 
 HOMEPAGE=	http://www.doxygen.org/
 
