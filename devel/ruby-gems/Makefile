@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.31 2014/06/25 15:38:18 jeremy Exp $
+# $OpenBSD: Makefile,v 1.32 2014/10/11 19:52:10 jeremy Exp $
 
 COMMENT=	package management framework for the Ruby language
 
