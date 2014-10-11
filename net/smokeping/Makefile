@@ -33,6 +33,7 @@ PKG_ARCH=	*
 CONFIGURE_STYLE= gnu
 CONFIGURE_ENV=	PERL5LIB=${LOCALBASE}/libdata/perl5/site_perl
 CONFIGURE_ARGS=	--with-htdocs-dir=/var/www/htdocs/smokeping
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/conftools
 FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/smokeping
 
 PMDIR=		libdata/perl5/site_perl
