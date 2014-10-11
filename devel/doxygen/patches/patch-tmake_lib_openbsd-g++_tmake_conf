@@ -1,7 +1,12 @@
 $OpenBSD: patch-tmake_lib_openbsd-g++_tmake_conf,v 1.1 2012/04/13 16:08:20 sthen Exp $
---- tmake/lib/openbsd-g++/tmake.conf.orig	Fri Apr 13 17:02:30 2012
-+++ tmake/lib/openbsd-g++/tmake.conf	Fri Apr 13 17:02:44 2012
-@@ -11,7 +11,7 @@ TMAKE_CC		= gcc
+--- tmake/lib/openbsd-g++/tmake.conf.orig	Sat Dec  6 14:16:20 2008
++++ tmake/lib/openbsd-g++/tmake.conf	Sun Jul 13 14:40:19 2014
+@@ -7,16 +7,16 @@
+ TEMPLATE		= app
+ CONFIG			= qt warn_on release
+ 
+-TMAKE_CC		= gcc
++TMAKE_CC		= cc
  TMAKE_CFLAGS		=
  TMAKE_CFLAGS_WARN_ON	= -Wall -W
  TMAKE_CFLAGS_WARN_OFF	=
@@ -10,3 +15,18 @@ $OpenBSD: patch-tmake_lib_openbsd-g++_tmake_conf,v 1.1 2012/04/13 16:08:20 sthen
  TMAKE_CFLAGS_DEBUG	= -g
  TMAKE_CFLAGS_SHLIB	= -fPIC
  TMAKE_CFLAGS_YACC	= -Wno-unused -Wno-parentheses
+ 
+-TMAKE_CXX		= g++
++TMAKE_CXX		= c++
+ TMAKE_CXXFLAGS		= $$TMAKE_CFLAGS
+ TMAKE_CXXFLAGS_WARN_ON	= $$TMAKE_CFLAGS_WARN_ON
+ TMAKE_CXXFLAGS_WARN_OFF	= $$TMAKE_CFLAGS_WARN_OFF
+@@ -34,7 +34,7 @@ TMAKE_LIBDIR_QT		= $(QTDIR)/lib
+ TMAKE_INCDIR_OPENGL	= /usr/X11R6/include
+ TMAKE_LIBDIR_OPENGL	= /usr/X11R6/lib
+ 
+-TMAKE_LINK		= g++
++TMAKE_LINK		= c++
+ TMAKE_LINK_SHLIB	= ld
+ TMAKE_LINK_SHLIB_CMD	= $(SYSCONF_LINK_SHLIB) -Bshareable $(LFLAGS) -o $(DESTDIR)$(SYSCONF_LINK_TARGET_SHARED) \
+ 			  `lorder /usr/lib/c++rt0.o $(OBJECTS) $(OBJMOC) | \
