@@ -19,6 +19,5 @@ WANTLIB += c++ c++abi
 # 1 test fails
 #ERROR: jpeg50 reference image mismatch at offset 717
 #FAIL: check_rastergen
->>>>>>> 9cce728... update to librasterlite 1.1g
 
 .include <bsd.port.mk>

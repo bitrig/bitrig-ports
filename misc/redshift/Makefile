@@ -4,7 +4,6 @@ COMMENT=		automatic color temperature adjustment
 
 V=			1.9.1
 DISTNAME=		redshift-${V}
-EXTRACT_SUFX=		.tar.bz2
 
 GH_PROJECT=		redshift
 GH_ACCOUNT=		jonls
