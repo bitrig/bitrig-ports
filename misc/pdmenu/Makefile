@@ -31,6 +31,7 @@ CFLAGS+=		-I${LOCALBASE}/include -L${LOCALBASE}/lib
 CONFIGURE_ENV=		LIBS="-lm -lcurses -lintl -liconv" \
 			SLANG_LIB_LOC=${DEPBASE}/lib \
 			SLANG_H_LOC=${DEPBASE}/include/slang.h
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/autoconf
 WRKDIST=		${WRKDIR}/pdmenu
 
 NO_TEST=		Yes
