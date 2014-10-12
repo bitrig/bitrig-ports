@@ -70,4 +70,18 @@ CONFIGURE_ARGS+=--disable-mserver \
 CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -liconv"
 
+MODGNU_CONFIG_GUESS_DIRS = \
+	${WRKSRC}/gmpc-shout \
+	${WRKSRC}/gmpc-mmkeys \
+	${WRKSRC}/gmpc-awn \
+	${WRKSRC}/gmpc-avahi \
+	${WRKSRC}/gmpc-magnatune \
+	${WRKSRC}/gmpc-alarm \
+	${WRKSRC}/gmpc-albumview \
+	${WRKSRC}/gmpc-lyrics \
+	${WRKSRC}/gmpc-wikipedia \
+	${WRKSRC}/gmpc-tagedit \
+	${WRKSRC}/gmpc-jamendo \
+	${WRKSRC}/gmpc-lyricwiki
+
 .include <bsd.port.mk>
