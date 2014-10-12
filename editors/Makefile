@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.109 2014/09/19 22:23:49 bcallah Exp $
+# $OpenBSD: Makefile,v 1.110 2014/10/12 22:33:08 bcallah Exp $
 
      SUBDIR =
      SUBDIR += abiword
@@ -38,6 +38,7 @@
      SUBDIR += libreoffice
      SUBDIR += moe
      SUBDIR += nano
+     SUBDIR += ne
      SUBDIR += nedit
      SUBDIR += nvi
      SUBDIR += nvi,iconv
