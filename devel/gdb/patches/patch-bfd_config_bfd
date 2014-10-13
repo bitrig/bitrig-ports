@@ -1,30 +1,30 @@
 $OpenBSD$
---- bfd/config.bfd.orig	Tue Mar  5 06:47:01 2013
-+++ bfd/config.bfd	Tue Jun  4 10:31:29 2013
-@@ -276,7 +276,7 @@ case "${targ}" in
-     targ_defvec=bfd_elf32_littlearm_vec
-     targ_selvecs="bfd_elf32_bigarm_vec armnetbsd_vec"
+--- bfd/config.bfd.orig	Tue Jul 29 07:37:42 2014
++++ bfd/config.bfd	Mon Oct 13 13:52:24 2014
+@@ -282,7 +282,7 @@ case "${targ}" in
+     targ_defvec=arm_elf32_le_vec
+     targ_selvecs="arm_elf32_be_vec arm_aout_nbsd_vec"
      ;;
 -  arm-*-netbsd* | arm-*-openbsd*)
 +  arm-*-netbsd* | arm-*-openbsd* | arm-*-bitrig*)
-     targ_defvec=armnetbsd_vec
-     targ_selvecs="bfd_elf32_littlearm_vec bfd_elf32_bigarm_vec"
+     targ_defvec=arm_aout_nbsd_vec
+     targ_selvecs="arm_elf32_le_vec arm_elf32_be_vec"
      targ_underscore=yes
-@@ -606,7 +606,7 @@ case "${targ}" in
-     targ_selvecs="bfd_elf32_i386_vec i386bsd_vec"
+@@ -612,7 +612,7 @@ case "${targ}" in
+     targ_selvecs="i386_elf32_vec i386_aout_bsd_vec"
      targ_underscore=yes
      ;;
 -  i[3-7]86-*-openbsd*)
 +  i[3-7]86-*-openbsd* | i[3-7]86-*-bitrig*)
-     targ_defvec=bfd_elf32_i386_vec
-     targ_selvecs=i386netbsd_vec
+     targ_defvec=i386_elf32_vec
+     targ_selvecs=i386_aout_nbsd_vec
      ;;
-@@ -657,7 +657,7 @@ case "${targ}" in
-     targ_selvecs="bfd_elf32_i386_freebsd_vec i386coff_vec i386pei_vec x86_64pei_vec bfd_elf32_i386_vec bfd_elf64_x86_64_vec bfd_elf64_l1om_vec bfd_elf64_l1om_freebsd_vec bfd_elf64_k1om_vec bfd_elf64_k1om_freebsd_vec"
+@@ -663,7 +663,7 @@ case "${targ}" in
+     targ_selvecs="i386_elf32_fbsd_vec i386_coff_vec i386_pei_vec x86_64_pei_vec i386_elf32_vec x86_64_elf64_vec l1om_elf64_vec l1om_elf64_fbsd_vec k1om_elf64_vec k1om_elf64_fbsd_vec"
      want64=true
      ;;
 -  x86_64-*-netbsd* | x86_64-*-openbsd*)
 +  x86_64-*-netbsd* | x86_64-*-openbsd* | x86_64-*-bitrig*)
-     targ_defvec=bfd_elf64_x86_64_vec
-     targ_selvecs="bfd_elf32_i386_vec i386netbsd_vec i386coff_vec i386pei_vec x86_64pei_vec bfd_elf64_l1om_vec bfd_elf64_k1om_vec"
+     targ_defvec=x86_64_elf64_vec
+     targ_selvecs="i386_elf32_vec i386_aout_nbsd_vec i386_coff_vec i386_pei_vec x86_64_pei_vec l1om_elf64_vec k1om_elf64_vec"
      want64=true
