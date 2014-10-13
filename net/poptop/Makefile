@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2013/05/17 12:55:57 kirby Exp $
+# $OpenBSD: Makefile,v 1.20 2014/10/13 19:14:55 sthen Exp $
 
 COMMENT=		PPTP Server
 
