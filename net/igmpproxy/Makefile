@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/06/07 20:06:03 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.10 2014/10/13 19:17:23 sthen Exp $
 
 COMMENT =	Multicast router utilizing IGMP forwarding
 
