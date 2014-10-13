@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.66 2014/05/07 15:08:52 juanfra Exp $
+# $OpenBSD: Makefile,v 1.67 2014/10/13 09:41:22 ajacoutot Exp $
 
 SHARED_ONLY =	Yes
 COMMENT =	lightweight web browser
@@ -31,7 +31,7 @@ CONFIGURE_ARGS = -DUSE_ZEITGEIST:Bool=No
 CONFIGURE_ARGS += -DUSE_GTK3:Bool=Yes -DHALF_BRO_INCOM_WEBKIT2:Bool=Yes
 LIB_DEPENDS =	www/webkit,gtk3 \
 		x11/gnome/gcr
-WANTLIB += cairo-gobject gck-1 gcr-3 gcr-base-3 gdk-3 gtk-3 javascriptcoregtk-3.0
+WANTLIB += cairo-gobject gck-1 gcr-ui-3 gcr-base-3 gdk-3 gtk-3 javascriptcoregtk-3.0
 WANTLIB += p11-kit webkit2gtk-3.0
 
 .else
