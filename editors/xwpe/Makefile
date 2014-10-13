@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2013/03/11 11:02:50 espie Exp $
+# $OpenBSD: Makefile,v 1.33 2014/10/13 19:04:46 sthen Exp $
 
 COMMENT=	powerful programming editor
 
