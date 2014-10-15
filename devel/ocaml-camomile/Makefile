@@ -1,5 +1,6 @@
 # $OpenBSD: Makefile,v 1.6 2014/08/27 07:47:47 chrisz Exp $
 
+BROKEN =	loops forever and dpb makes no progress
 COMMENT =	unicode library for objective caml
 
 CATEGORIES =	devel
