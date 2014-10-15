@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.6 2013/10/18 15:44:52 miod Exp $
+# $OpenBSD: Makefile,v 1.7 2014/10/15 16:11:57 sebastia Exp $
 
 COMMENT=		stub DNS resolver library
 
-DISTNAME=		udns-0.2
-REVISION=		0
+
+DISTNAME=		udns-0.4
 CATEGORIES=		net
 
 SHARED_LIBS+=	udns 1.0
