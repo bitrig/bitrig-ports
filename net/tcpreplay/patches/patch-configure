@@ -1,84 +1,21 @@
-$OpenBSD$
---- configure.orig	Wed Dec  4 13:54:01 2013
-+++ configure	Wed Dec  4 13:53:09 2013
-@@ -5186,7 +5186,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
+$OpenBSD: patch-configure,v 1.4 2014/10/16 13:43:48 nigel Exp $
+--- configure.orig	Fri Sep  5 17:16:38 2014
++++ configure	Fri Oct 10 15:21:36 2014
+@@ -18765,7 +18765,7 @@ else
+ else
+   cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+-[
++
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <sys/types.h>
+@@ -18793,7 +18793,7 @@ main(int argc, char *argv[]) {
  
--  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5611,7 +5611,7 @@ newos6*)
-   lt_cv_deplibs_check_method=pass_all
-   ;;
+     /* else suck, no good */
+     exit(-1);
+-}]
++}
+ _ACEOF
+ if ac_fn_c_try_run "$LINENO"; then :
  
--openbsd*)
-+openbsd* | bitrig*)
-   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-   else
-@@ -5995,7 +5995,7 @@ old_postuninstall_cmds=
- 
- if test -n "$RANLIB"; then
-   case $host_os in
--  openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
-     ;;
-   *)
-@@ -8470,7 +8470,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -9178,7 +9178,7 @@ rm -f core conftest.err conftest.$ac_objext \
-     *nto* | *qnx*)
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct=yes
- 	hardcode_shlibpath_var=no
-@@ -10138,7 +10138,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -13292,7 +13292,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
- 	ld_shlibs_CXX=no
- 	;;
- 
--      openbsd*)
-+      openbsd* | bitrig*)
- 	if test -f /usr/libexec/ld.so; then
- 	  hardcode_direct_CXX=yes
- 	  hardcode_shlibpath_var_CXX=no
-@@ -14940,7 +14940,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -18727,7 +18727,7 @@ $as_echo "#define HAVE_DARWIN 1" >>confdefs.h
- $as_echo "Apple OS X" >&6; }
-     ;;
- 
--    *-*-openbsd*)
-+    *-*-openbsd* | *-*-bitrig*)
-     nic1=xl0
-     nic2=xl0
-     { $as_echo "$as_me:${as_lineno-$LINENO}: result: OpenBSD" >&5
