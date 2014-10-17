@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/11/25 14:16:23 sthen Exp $
+# $OpenBSD: Makefile,v 1.7 2014/10/17 11:15:03 jasper Exp $
 
 COMMENT=		language front-end and interpreter for the Feldspar DSL
 
