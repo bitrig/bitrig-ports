@@ -59,7 +59,6 @@ MODMOZ_WANTLIB +=	X11 Xext Xrender Xt atk-1.0 c cairo \
 		plc4 plds4 pthread event kvm sqlite3>=28 \
 		smime3 sndio nssutil3 ssl3 z hunspell-1.3
 MODMOZ_WANTLIB +=	c++ c++abi
->>>>>>> e96f569... Assorted updates for gecko 33.
 
 # hack to build against systemwide sqlite3 (# 546162)
 CONFIGURE_ENV +=	ac_cv_sqlite_secure_delete=yes
