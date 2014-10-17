@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.7 2013/10/26 23:55:37 jeremy Exp $
+# $OpenBSD: Makefile,v 1.9 2014/10/17 20:46:42 sthen Exp $
 
 COMMENT=	syntax highlighter based on pygments
 
-DISTNAME=	pygments.rb-0.5.0
-REVISION=	2
+DISTNAME=	pygments.rb-0.5.4
 EPOCH=		0
 
 CATEGORIES=	textproc
@@ -18,7 +17,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES=	lang/ruby \
 		lang/python
 
-MODPY_BUILD_DEP=No
+MODPY_BUILDDEP=	No
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	devel/ruby-yajl,${MODRUBY_FLAVOR} \
