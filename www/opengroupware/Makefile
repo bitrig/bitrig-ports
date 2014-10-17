@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/08/10 09:58:07 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2014/10/17 09:21:09 sebastia Exp $
 
 COMMENT = 	web based groupware server
 
