@@ -1,17 +1,15 @@
-# $OpenBSD: Makefile,v 1.258 2014/09/02 16:43:04 landry Exp $
+# $OpenBSD: Makefile,v 1.259 2014/10/17 07:26:21 landry Exp $
 
 COMMENT =	Mozilla web browser
 
 # Don't forget to bump www/firefox-i18n after updates.
-# Don't forget to update devel/xulrunner/2.0 if patches changes.
 
-MOZILLA_VERSION =	32.0
+MOZILLA_VERSION =	33.0
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	firefox
 MOZILLA_CODENAME =	browser
 
-#MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla.org/${MOZILLA_PROJECT}/nightly/${MOZILLA_VERSION}-candidates/build1/source/
-SO_VERSION =	50.0
+SO_VERSION =	51.0
 # NOTE: Must bump minor version if any shlib's are removed from the
 # components dir to avoid pkg_add -r issues.
 MOZILLA_LIBS =	browsercomps mozalloc mozgnome xul
@@ -55,6 +53,11 @@ CONFIGURE_ARGS +=	--without-intl-api
 
 # relies on pulseaudio for sound and broken at runtime
 CONFIGURE_ARGS +=	--disable-webrtc
+
+# bug #1064665
+LIB_DEPENDS +=	textproc/icu4c
+CONFIGURE_ARGS += --with-system-icu
+WANTLIB += icudata icui18n icuuc
 
 CONFIGURE_ARGS +=	--enable-gstreamer=1.0 \
 			--disable-pulseaudio
