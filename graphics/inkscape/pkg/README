@@ -1,7 +1,7 @@
 $OpenBSD: README,v 1.1 2013/10/24 23:28:21 edd Exp $
 
 +-----------------------------------------------------------------------
-| Running ${FULLPKGNAME} on OpenBSD
+| Running ${FULLPKGNAME} on Bitrig
 +-----------------------------------------------------------------------
 
 Ruby Extensions

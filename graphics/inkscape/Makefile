@@ -2,8 +2,7 @@
 
 COMMENT=	SVG vector drawing application
 
-DISTNAME=	inkscape-0.48.4
-REVISION =	2
+DISTNAME=	inkscape-0.48.5
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=inkscape/}
 
@@ -58,7 +57,8 @@ AUTOCONF_VERSION= 2.69
 CONFIGURE_ARGS=	--without-gnome-vfs
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/ImageMagick \
 			  -I${LOCALBASE}/include -I${X11BASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
+		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
+		CXXFLAGS="${CXXFLAGS} -std=c++11"
 
 NO_TEST=	Yes
 
