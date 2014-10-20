@@ -1,21 +1,8 @@
-$OpenBSD: patch-configure,v 1.3 2014/01/23 18:05:22 bcallah Exp $
---- configure.orig	Sat Jan  4 22:21:00 2014
-+++ configure	Sun Jul 20 03:52:14 2014
-@@ -3684,7 +3684,7 @@ fi
- 
- 
- case "$uname" in
--        Darwin* | *BSD*)
-+        Darwin* | *BSD* | Bitrig*)
-                 ARFLAGS="-rcv"
-                 ;;
-         *)
-@@ -4312,13 +4312,13 @@ $as_echo "yes" >&6; }
-                         LDFLAGS="$LDFLAGS -Wl,-rpath,\$(libdir)"
- 			;;
- 
--		*BSD*)
-+		*BSD* | Bitrig*)
+$OpenBSD: patch-configure,v 1.4 2014/10/20 03:41:25 bcallah Exp $
+--- configure.orig	Sun Oct 19 13:21:48 2014
++++ configure	Sun Oct 19 23:28:59 2014
+@@ -4332,10 +4332,10 @@ $as_echo "yes" >&6; }
+ 		*BSD*)
  			{ $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
  $as_echo "yes" >&6; }
 -			LIBMXML="libmxml.so.1.5"
@@ -28,7 +15,7 @@ $OpenBSD: patch-configure,v 1.3 2014/01/23 18:05:22 bcallah Exp $
                          ;;
  
  		Darwin*)
-@@ -4352,7 +4352,7 @@ if test -n "$GCC"; then
+@@ -4369,7 +4369,7 @@ if test -n "$GCC"; then
  	CFLAGS="-Wall $CFLAGS"
  
  	if test "x$OPTIM" = x; then
