@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/02/09 12:26:00 stu Exp $
+# $OpenBSD: Makefile,v 1.11 2014/10/21 05:09:43 stu Exp $
 
 COMMENT =		enhanced Tk console
 
@@ -20,7 +20,7 @@ NO_TEST =		Yes
 PKG_ARCH =		*
 
 DOCDIR =		${PREFIX}/share/doc/tkcon
-MODDIR =		${DESTDIR}${MODTCL_MODDIR}/${MODTCL_VERSION}
+MODDIR =		${DESTDIR}${MODTCL_MODDIR}/85
 
 # Conflicts with observe.n in Tcllib
 BADMAN =		${WRKSRC}/docs/observe.n.man
