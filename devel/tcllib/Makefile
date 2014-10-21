@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.21 2014/02/09 12:27:05 stu Exp $
+# $OpenBSD: Makefile,v 1.23 2014/10/21 05:10:19 stu Exp $
 
 COMMENT =	Tcl Standard Library
 
-DISTNAME =	tcllib-1.15pl0
+DISTNAME =	tcllib-1.16pl0
+REVISION =	0
 CATEGORIES =	devel lang/tcl
 HOMEPAGE =	http://sourceforge.net/projects/tcllib/
 REVISION =	2
@@ -27,6 +28,7 @@ do-install:
 	-nroff-path ${PREFIX}/man/mann \
 	-example-path ${PREFIX}/share/examples/tcllib \
 	-app-path ${PREFIX}/share/examples/tcllib/apps \
+	-mp ${DESTDIR}${MODTCL_MODDIR}/85 \
 	-csb ${PREFIX}/share/doc \
 	-tclsh ${MODTCL_BIN} \
 	-descr "`cat ${PKGDIR}/DESCR`"
