@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/21 08:46:33 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.13 2014/10/22 13:44:45 jasper Exp $
 
 COMMENT=		command-line podcast downloader
 

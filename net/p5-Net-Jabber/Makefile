@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 11:35:53 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2014/10/22 13:44:44 jasper Exp $
 
 COMMENT=	perl interface to jabber
 

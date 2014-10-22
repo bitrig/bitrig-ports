@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/27 15:45:08 benoit Exp $
+# $OpenBSD: Makefile,v 1.9 2014/10/22 13:44:44 jasper Exp $
 
 COMMENT=	write Perl subroutines in other programming languages
 

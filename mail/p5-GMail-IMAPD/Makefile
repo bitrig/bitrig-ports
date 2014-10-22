@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 11:23:52 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2014/10/22 13:44:44 jasper Exp $
 
 COMMENT=		imap4 gateway to Google webmail service
 

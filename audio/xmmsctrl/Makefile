@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/03/10 22:55:06 espie Exp $
+# $OpenBSD: Makefile,v 1.10 2014/10/22 13:44:44 jasper Exp $
 
 COMMENT=	small utility to control XMMS from the command line
 

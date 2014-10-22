@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/03/11 11:35:53 espie Exp $
+# $OpenBSD: Makefile,v 1.17 2014/10/22 13:44:44 jasper Exp $
 
 COMMENT=		alternative Perl interface to ping(1)
 
