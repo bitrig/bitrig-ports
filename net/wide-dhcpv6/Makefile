@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 11:35:58 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2014/10/22 14:34:52 stsp Exp $
 
 COMMENT=	client and servers for the WIDE DHCPv6 protocol
 
