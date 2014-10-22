@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2013/04/04 17:05:16 sthen Exp $
+# $OpenBSD: Makefile,v 1.19 2014/10/22 13:08:35 jasper Exp $
 
 COMMENT=	Perl module to authenticate against a RADIUS server
 

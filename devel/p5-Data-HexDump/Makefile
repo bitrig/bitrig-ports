@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/10/11 23:48:40 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2014/10/22 13:08:35 jasper Exp $
 
 COMMENT=        hexadecimal dumper
 
