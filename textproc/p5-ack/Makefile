@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/12/12 17:26:11 sthen Exp $
+# $OpenBSD: Makefile,v 1.17 2014/10/22 14:24:13 jasper Exp $
 
 COMMENT=		grep like tool, aimed at programmers
 
