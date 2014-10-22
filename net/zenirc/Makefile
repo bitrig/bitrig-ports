@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:35:58 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2014/10/22 14:02:14 jasper Exp $
 
 COMMENT-main=	IRC client for Emacs
 COMMENT-el=	elisp sources of zenirc
