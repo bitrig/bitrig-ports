@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/10/11 23:50:54 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2014/10/22 13:39:38 jasper Exp $
 
 COMMENT =		software able to hide data in various kind of files
 

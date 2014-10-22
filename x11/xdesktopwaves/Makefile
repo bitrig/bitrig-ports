@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/01/07 13:55:53 sthen Exp $
+# $OpenBSD: Makefile,v 1.9 2014/10/22 13:39:38 jasper Exp $
 
 COMMENT=		simulation of water waves on the X Window desktop
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 11:10:53 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2014/10/22 13:39:38 jasper Exp $
 
 COMMENT=	jpeg pixel interpolator
 
