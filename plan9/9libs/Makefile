@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2013/03/21 08:46:35 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.20 2014/10/22 13:51:09 jasper Exp $
 
 # varargs misuse, and unportable software
 ONLY_FOR_ARCHS= 	i386 sparc sparc64

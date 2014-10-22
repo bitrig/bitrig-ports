@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2013/03/11 11:37:53 espie Exp $
+# $OpenBSD: Makefile,v 1.29 2014/10/22 13:51:09 jasper Exp $
 
 COMMENT=	clone of the Plan9 editor 'acme'
 
@@ -6,7 +6,7 @@ VERSION=	0.13.41
 REVISION=	0
 DISTNAME=	wily-9libs
 PKGNAME=	${DISTNAME:S/-/_/}-${VERSION}
-EPOCH=		0
+EPOCH=		1
 CATEGORIES=	plan9 editors
 MASTER_SITES=	ftp://ftp.cs.yorku.ca/pub/wily/src/
 

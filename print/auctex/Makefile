@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/11/09 23:19:03 naddy Exp $
+# $OpenBSD: Makefile,v 1.14 2014/10/22 13:51:09 jasper Exp $
 
 COMMENT=	extensible emacs interface for TeX
 
