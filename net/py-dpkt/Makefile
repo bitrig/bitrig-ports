@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/08/07 21:32:23 naddy Exp $
+# $OpenBSD: Makefile,v 1.11 2014/10/22 18:06:47 jasper Exp $
 
 COMMENT =		python network packet manipulation library
 
