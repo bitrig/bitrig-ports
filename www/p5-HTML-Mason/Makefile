@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2013/03/11 11:44:45 espie Exp $
+# $OpenBSD: Makefile,v 1.26 2014/10/22 09:44:07 jasper Exp $
 
 COMMENT=	high-performance dynamic web authoring system
 
