@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/04/28 11:40:05 landry Exp $
+# $OpenBSD: Makefile,v 1.11 2014/10/22 13:00:54 jasper Exp $
 
 BROKEN-sparc64=	gcj blows during build
 COMMENT=	pdf swiss army knife
