@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/06/18 06:00:19 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.3 2014/10/22 13:55:07 jasper Exp $
 
 COMMENT =	keeps a list of uptime records
 DISTNAME =	uptimed-0.3.17

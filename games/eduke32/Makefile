@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/01/08 14:01:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.7 2014/10/22 13:55:07 jasper Exp $
 
 COMMENT =	Enhanced Duke Nukem 3D engine
 RDATE =		20120301
