@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 11:35:45 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2014/10/22 13:14:54 gonzalo Exp $
 
 COMMENT=		text based IM client
 
