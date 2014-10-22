@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/07/09 16:49:35 jasper Exp $
+# $OpenBSD: Makefile,v 1.17 2014/10/22 14:10:46 pea Exp $
 
 COMMENT=	GTK+2 secure notes manager
 

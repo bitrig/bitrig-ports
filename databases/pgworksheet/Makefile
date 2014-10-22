@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/01/23 17:21:01 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2014/10/22 14:10:46 pea Exp $
 
 COMMENT =	simple PostgreSQL GUI front end
 

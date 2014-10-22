@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/07/09 16:49:35 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2014/10/22 14:10:46 pea Exp $
 
 COMMENT=	encryption backend
 

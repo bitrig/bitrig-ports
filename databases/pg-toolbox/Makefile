@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/04/13 01:01:38 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2014/10/22 14:10:46 pea Exp $
 
 COMMENT=	programs to aid the PostgreSQL administrator
 
@@ -7,6 +7,7 @@ REVISION=	0
 CATEGORIES=	databases sysutils
 
 HOMEPAGE=	http://pg-toolbox.projects.postgresql.org/
+REVISION=	0
 
 # BSD / Zlib
 PERMIT_PACKAGE_CDROM=	Yes

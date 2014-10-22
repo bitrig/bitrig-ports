@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/21 08:45:14 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.9 2014/10/22 14:10:46 pea Exp $
 
 COMMENT=	curses development kit
 
