@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 11:23:53 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2014/10/23 07:19:52 jasper Exp $
 
 COMMENT=		interface to Google webmail service
 
