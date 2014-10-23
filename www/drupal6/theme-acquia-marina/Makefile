@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2012/01/28 11:24:10 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2014/10/23 16:45:16 sthen Exp $
 
 COMMENT =	advanced 1/2/3-column theme for drupal
 DISTNAME=	acquia_marina-6.x-1.9
