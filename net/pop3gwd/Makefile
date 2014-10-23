@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2013/03/11 11:35:55 espie Exp $
+# $OpenBSD: Makefile,v 1.19 2014/10/23 07:23:27 jasper Exp $
 
 COMMENT=	app-level proxy for mail retrieval behind firewalls
 
