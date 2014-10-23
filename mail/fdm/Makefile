@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/03/11 11:23:51 espie Exp $
+# $OpenBSD: Makefile,v 1.18 2014/10/23 07:21:06 jasper Exp $
 
 COMMENT=	fetch, filter and deliver mail
 

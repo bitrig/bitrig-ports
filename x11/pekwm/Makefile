@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2013/06/04 18:41:59 naddy Exp $
+# $OpenBSD: Makefile,v 1.25 2014/10/23 07:21:06 jasper Exp $
 
 COMMENT=	aewm++ based pretty themable window manager
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/21 08:45:14 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.8 2014/10/23 07:21:06 jasper Exp $
 
 COMMENT=	trivial database library
 
