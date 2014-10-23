@@ -1,20 +1,17 @@
---- Makefile.orig	Thu Jun 19 02:48:42 2014
-+++ Makefile	Thu Jun 19 02:51:15 2014
-@@ -223,6 +223,17 @@ endif
+$OpenBSD: patch-Makefile,v 1.5 2014/10/23 17:23:09 sthen Exp $
+--- Makefile.orig	Mon Sep 22 21:10:06 2014
++++ Makefile	Thu Oct 23 18:21:43 2014
+@@ -244,6 +244,13 @@ ifdef ENABLE_NLS
  endif
  endif
  
-+ifndef D2U_OS
-+ifeq (Bitrig, $(shell uname -s))
-+	D2U_OS =bitrig
++ifeq (openbsd,$(D2U_OS))
 +ifdef ENABLE_NLS
 +	CFLAGS_OS     = -I/usr/local/include
-+	LDFLAGS_EXTRA = -L/usr/local/lib
-+	LIBS_EXTRA    = -lintl
-+endif
++	LDFLAGS_EXTRA = -lintl -L/usr/local/lib
 +endif
 +endif
 +
- ifeq (Darwin, $(shell uname -s))
- 	D2U_OS = Darwin
+ ifeq (darwin,$(D2U_OS))
  ifdef ENABLE_NLS
+ 	CFLAGS_OS     = -I/usr/local/include
