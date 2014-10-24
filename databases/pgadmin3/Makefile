@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2014/04/30 14:20:08 pea Exp $
+# $OpenBSD: Makefile,v 1.30 2014/10/24 15:01:17 dcoppa Exp $
 
 COMMENT=	administration and development platform for PostgreSQL
 
@@ -29,7 +29,8 @@ WANTLIB +=      wx_base_xml wx_gtk2_html \
 		wx_base_net wx_base wx_gtk2_core \
 		pq>=4 xml2>=6 xslt>=3
 
-BUILD_DEPENDS +=	databases/postgresql,-server
+BUILD_DEPENDS +=	databases/postgresql,-server \
+			textproc/py-sphinx
 
 CONFIGURE_STYLE=gnu
 CONFIGURE_ENV=	CPPFLAGS="${CXXFLAGS}"
