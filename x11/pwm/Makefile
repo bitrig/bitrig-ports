@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2013/10/11 23:51:52 naddy Exp $
+# $OpenBSD: Makefile,v 1.25 2014/10/24 06:41:29 jasper Exp $
 
 COMMENT=		lightweight window manager with emphasis on usability
 
