@@ -5,7 +5,7 @@ CATEGORIES =	devel databases
 DISTFILES =
 
 # API.rev
-PKGNAME =	quirks-2.10
+PKGNAME =	quirks-2.11
 PKG_ARCH =	*
 
 # BSD
