@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.74 2014/10/05 19:29:20 pascal Exp $
+# $OpenBSD: Makefile,v 1.75 2014/10/24 20:14:48 pascal Exp $
 
 COMMENT=	anonymity service using onion routing
 
@@ -19,6 +19,7 @@ AUTOCONF_VERSION = 2.69
 # anyway on FRAME_GROWS_DOWN archs.
 CONFIGURE_ARGS=	--with-ssl-dir=/usr \
 		--disable-gcc-hardening
+CONFIGURE_ENV+=ac_cv_member_struct_ssl_method_st_get_cipher_by_char=no
 
 DB_DIR=		/var/tor
 SUBST_VARS+=	DB_DIR
