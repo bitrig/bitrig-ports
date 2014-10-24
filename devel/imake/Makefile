@@ -3,7 +3,7 @@
 COMMENT =  	makefile generator
 CATEGORIES =	devel x11
 DISTNAME = 	imake-1.0.5
-REVISION = 	0
+REVISION = 	1
 MASTER_SITES = 	http://ftp.x.org/pub/individual/util/
 
 PERMIT_PACKAGE_CDROM = 		Yes
@@ -13,7 +13,7 @@ do-configure:
 	echo "#define HAVE_MKSTEMP" >${WRKSRC}/config.h
 
 MAKE_FLAGS = 	XCONFDIR=${LOCALBASE}/lib/X11/config \
-		CPP_PROGRAM=/usr/bin/cpp
+		CPP_PROGRAM=/usr/libexec/tradcpp
 
 FAKE_FLAGS = 	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		INSTALL_SCRIPT="${INSTALL_SCRIPT}" \

@@ -1,0 +1,13 @@
+--- imakemdep.h.orig	Fri Oct 24 21:01:07 2014
++++ imakemdep.h	Fri Oct 24 21:06:09 2014
+@@ -346,6 +346,10 @@ in this Software without prior written authorization f
+ #    endif
+ #   endif
+ 
++#   ifdef __Bitrig__
++#     undef USE_CC_E
++#   endif
++
+ #  endif /* !defined (CROSSCOMPILE) || defined (CROSSCOMPILE_CPP) */
+ /*
+  * Step 5:  cpp_argv
