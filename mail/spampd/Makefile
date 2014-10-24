@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/03/21 11:01:33 jasper Exp $
+# $OpenBSD: Makefile,v 1.3 2014/10/24 06:48:08 jasper Exp $
 
 COMMENT=		SMTP/LMTP proxy for Spamassassin
 
