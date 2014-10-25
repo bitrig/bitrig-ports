@@ -1,0 +1,11 @@
+--- tests/code.t.orig	Sat Oct 25 09:33:16 2014
++++ tests/code.t	Sat Oct 25 09:33:25 2014
+@@ -31,7 +31,7 @@ try 'backslashes in code(1)' '    printf "%s: \n", $1;
+ try 'backslashes in code(2)' '`printf "%s: \n", $1;`' \
+ '<p><code>printf "%s: \n", $1;</code></p>'
+ 
+-if ./markdown -V | grep FENCED-CODE >/dev/null; then
++if ./discount -V | grep FENCED-CODE >/dev/null; then
+ 
+ try 'fenced code block' \
+ '~~~

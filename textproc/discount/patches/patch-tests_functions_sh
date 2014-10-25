@@ -1,0 +1,22 @@
+--- tests/functions.sh.orig	Sat Oct 25 09:31:44 2014
++++ tests/functions.sh	Sat Oct 25 09:31:57 2014
+@@ -44,8 +44,8 @@ try() {
+     test "$VERBOSE" && ./echo -n "$testcase"
+ 
+     case "$2" in
+-    -t*) Q=`./markdown $FLAGS "$2"` ;;
+-    *)   Q=`./echo "$2" | ./markdown $FLAGS` ;;
++    -t*) Q=`./discount $FLAGS "$2"` ;;
++    *)   Q=`./echo "$2" | ./discount $FLAGS` ;;
+     esac
+ 
+     if [ "$3" = "$Q" ]; then
+@@ -73,7 +73,7 @@ match() {
+ 
+     test $VERBOSE && ./echo -n "$testcase"
+ 
+-    if ./echo "$2" | ./markdown | grep "$3" >/dev/null; then
++    if ./echo "$2" | ./discount | grep "$3" >/dev/null; then
+ 	test $VERBOSE && ./echo " ok"
+     else
+ 	if [ -z "$VERBOSE" ]; then

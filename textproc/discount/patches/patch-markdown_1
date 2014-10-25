@@ -1,6 +1,5 @@
-$OpenBSD: patch-markdown_1_in,v 1.1.1.1 2009/04/13 20:45:05 sthen Exp $
---- markdown.1.in.orig	Sun Apr 12 18:49:05 2009
-+++ markdown.1.in	Sun Apr 12 18:49:41 2009
+--- markdown.1.orig	Sat Oct 25 09:28:37 2014
++++ markdown.1	Sat Oct 25 09:28:52 2014
 @@ -1,10 +1,10 @@
  .\"     %A%
  .\"

@@ -1,0 +1,11 @@
+--- tests/dl.t.orig	Sat Oct 25 09:33:27 2014
++++ tests/dl.t	Sat Oct 25 09:33:37 2014
+@@ -2,7 +2,7 @@
+ 
+ title "definition lists"
+ 
+-eval `./markdown -V | tr ' ' '\n' | grep '^DL='`
++eval `./discount -V | tr ' ' '\n' | grep '^DL='`
+ 
+ DL=${DL:-BOTH}
+ 

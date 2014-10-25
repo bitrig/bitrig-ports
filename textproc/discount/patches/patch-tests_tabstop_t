@@ -1,0 +1,11 @@
+--- tests/tabstop.t.orig	Sat Oct 25 09:33:45 2014
++++ tests/tabstop.t	Sat Oct 25 09:33:54 2014
+@@ -4,7 +4,7 @@ rc=0
+ unset MARKDOWN_FLAGS
+ unset MKD_TABSTOP
+ 
+-eval `./markdown -V | tr ' ' '\n' | grep TAB`
++eval `./discount -V | tr ' ' '\n' | grep TAB`
+ 
+ if [ "${TAB:-4}" -eq 8 ]; then
+     title "dealing with tabstop derangement"
