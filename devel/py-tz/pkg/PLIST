@@ -276,6 +276,7 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Beirut
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Bishkek
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Brunei
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Calcutta
+lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Chita
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Choibalsan
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Chongqing
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Chungking
@@ -333,6 +334,7 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Samarkand
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Seoul
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Shanghai
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Singapore
+lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Srednekolymsk
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Taipei
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Tashkent
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Tbilisi
@@ -624,3 +626,4 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/iso3166.tab
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/localtime
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/posixrules
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/zone.tab
+lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/zone1970.tab
