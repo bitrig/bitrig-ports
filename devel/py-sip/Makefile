@@ -31,7 +31,7 @@ CONFIGURE_ARGS=	-b ${PREFIX}/bin \
 		-v ${PREFIX}/share/sip \
 		INCDIR=${LOCALBASE}/include \
 		LIBDIR=${LOCALBASE}/lib \
-		CC=${CC} CXX=${CXX} \
+		CC=${CC} CXX=${CXX} LINK=${CXX} \
 		CFLAGS="${CFLAGS}" \
 		CXXFLAGS="${CXXFLAGS}"
 
