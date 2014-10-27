@@ -1,7 +1,7 @@
 # $OpenBSD: Makefile,v 1.35 2014/07/11 06:59:42 rpointel Exp $
 
 VERSION =		2.7
-REVISION =		0
+REVISION =		1
 PATCHLEVEL =		.8
 SHARED_LIBS =		python2.7 0.0
 VERSION_SPEC =		>=2.7,<2.8

@@ -2017,11 +2017,11 @@ lib/python2.7/pipes.pyo
 lib/python2.7/pkgutil.py
 lib/python2.7/pkgutil.pyc
 lib/python2.7/pkgutil.pyo
-lib/python2.7/plat-bitrig0/
-lib/python2.7/plat-bitrig0/IN.py
-lib/python2.7/plat-bitrig0/IN.pyc
-lib/python2.7/plat-bitrig0/IN.pyo
-lib/python2.7/plat-bitrig0/regen
+lib/python2.7/plat-bitrig1/
+lib/python2.7/plat-bitrig1/IN.py
+lib/python2.7/plat-bitrig1/IN.pyc
+lib/python2.7/plat-bitrig1/IN.pyo
+lib/python2.7/plat-bitrig1/regen
 lib/python2.7/platform.py
 lib/python2.7/platform.pyc
 lib/python2.7/platform.pyo
