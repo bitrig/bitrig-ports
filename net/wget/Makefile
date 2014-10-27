@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.62 2014/01/29 06:08:42 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.63 2014/10/27 15:28:39 jasper Exp $
 
 COMMENT =	retrieve files from the web via HTTP, HTTPS and FTP
 
