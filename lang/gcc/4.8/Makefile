@@ -31,13 +31,13 @@ PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 #PKGNAME-go =	gccgo-${FULL_PKGVERSION}
 PKGSPEC-main = gcc->=4.8,<4.9
 
-REVISION-main	= 3
-REVISION-c++	= 3
-REVISION-estdc	= 1
-REVISION-f95	= 3
-REVISION-java	= 3
-REVISION-objc	= 3
-REVISION-ada	= 3
+REVISION-main	= 4
+REVISION-c++	= 4
+REVISION-estdc	= 2
+REVISION-f95	= 4
+REVISION-java	= 4
+REVISION-objc	= 4
+REVISION-ada	= 4
 #REVISION-go	=
 
 SHARED_LIBS =	estdc++		16.0 \
