@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 11:42:43 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2014/10/28 08:23:06 jasper Exp $
 
 COMMENT =	persistent Markdown processor for Catalyst
 

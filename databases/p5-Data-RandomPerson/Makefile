@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 02:52:06 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2014/10/28 08:23:06 jasper Exp $
 
 COMMENT=		create random people
 

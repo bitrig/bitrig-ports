@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/10/11 23:50:48 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2014/10/28 08:23:06 jasper Exp $
 
 COMMENT =	object oriented interface to create salted hashes
 

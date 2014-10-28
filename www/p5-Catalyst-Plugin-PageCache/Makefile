@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 11:44:44 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2014/10/28 08:23:06 jasper Exp $
 
 COMMENT =	cache the output of entire pages
 
