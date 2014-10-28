@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/05/30 10:51:23 sthen Exp $
+# $OpenBSD: Makefile,v 1.8 2014/10/28 08:18:30 jasper Exp $
 
 COMMENT=	full screen FTP client
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 01:30:28 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2014/10/28 08:18:30 jasper Exp $
 
 COMMENT=	PPM to Pilot bitmap converter
 
