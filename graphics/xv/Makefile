@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.50 2014/01/01 20:46:28 naddy Exp $
+# $OpenBSD: Makefile,v 1.51 2014/10/29 16:45:09 espie Exp $
 
 COMMENT=	X11 image display and modification tool
 
