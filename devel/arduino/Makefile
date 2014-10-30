@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2014/07/19 11:34:11 edd Exp $
+# $OpenBSD: Makefile,v 1.14 2014/10/30 21:44:30 edd Exp $
 
 COMMENT=	open-source electronics prototyping platform
 
