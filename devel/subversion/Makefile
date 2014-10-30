@@ -20,10 +20,10 @@ FULLPKGNAME-ap2=	ap2-subversion-${VERSION}
 FULLPKGPATH-ap2=	devel/subversion,-ap2
 FULLPKGNAME-gnome-keyring= gnome-keyring-subversion-${VERSION}
 FULLPKGPATH-gnome-keyring= devel/subversion,-gnome-keyring
-REVISION-main=		0
+REVISION-main=		1
 REVISION-perl=		1
 REVISION-python=	0
-REVISION-ruby=		0
+REVISION-ruby=		1
 REVISION-ap2=		0
 REVISION-gnome-keyring=	0
 
@@ -116,7 +116,7 @@ LIB_DEPENDS-python=	${MODPY_LIB_DEPENDS} ${MODGETTEXT_LIB_DEPENDS} \
 WANTLIB-python +=	${_lib}>=${SO_VERSION}
 .endfor
 
-MODRUBY_REV=		1.8
+MODRUBY_REV=		2.0
 WANTLIB-ruby=		${WANTLIB} apr-1 aprutil-1 \
 			db m sasl2 serf-1>=1.0 sqlite3 \
 			${MODRUBY_WANTLIB}
