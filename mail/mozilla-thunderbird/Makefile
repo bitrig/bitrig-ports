@@ -39,13 +39,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES =	www/mozilla devel/gettext lang/python
 MODPY_RUNDEP =	No
 
-# necessary glue to build with the correct compiler after fx 17
-MODULES +=		gcc4 lang/clang
-MODGCC4_ARCHS =		powerpc sparc64 alpha i386
-MODGCC4_LANGS =		c c++
-MODCLANG_ARCHS =	amd64
-MODCLANG_LANGS =	c c++
-
 # Regression tests are too hard to adapt to run here
 NO_TEST =	Yes
 
@@ -75,7 +68,7 @@ CONFIGURE_ARGS +=	--enable-calendar
 CONFIGURE_ARGS +=	--disable-webrtc
 
 CONFIGURE_ARGS +=	--enable-gstreamer=1.0
-BUILD_DEPENDS +=	multimedia/gstreamer1/plugins-base
+BUILD_DEPENDS +=	multimedia/gstreamer1/plugins-base audio/pulseaudio
 
 # to be able to link when building with clang on i386
 .if ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "powerpc"
