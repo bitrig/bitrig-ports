@@ -1,24 +1,24 @@
-armv7-unknown-bitrig0.1-gnueabihf/
-armv7-unknown-bitrig0.1-gnueabihf/bin/
-@bin armv7-unknown-bitrig0.1-gnueabihf/bin/ar
-@bin armv7-unknown-bitrig0.1-gnueabihf/bin/as
-@bin armv7-unknown-bitrig0.1-gnueabihf/bin/ld
-@bin armv7-unknown-bitrig0.1-gnueabihf/bin/ld.bfd
-@bin armv7-unknown-bitrig0.1-gnueabihf/bin/nm
-@bin armv7-unknown-bitrig0.1-gnueabihf/bin/objcopy
-@bin armv7-unknown-bitrig0.1-gnueabihf/bin/objdump
-@bin armv7-unknown-bitrig0.1-gnueabihf/bin/ranlib
-@bin armv7-unknown-bitrig0.1-gnueabihf/bin/strip
-armv7-unknown-bitrig0.1-gnueabihf/lib/
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.x
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.xbn
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.xc
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.xn
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.xr
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.xs
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.xsc
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.xsw
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.xu
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.xw
-armv7-unknown-bitrig0.1-gnueabihf/lib/ldscripts/armelf_obsd.xz
+armv7-unknown-bitrig${OSREV}-gnueabihf/
+armv7-unknown-bitrig${OSREV}-gnueabihf/bin/
+@bin armv7-unknown-bitrig${OSREV}-gnueabihf/bin/ar
+@bin armv7-unknown-bitrig${OSREV}-gnueabihf/bin/as
+@bin armv7-unknown-bitrig${OSREV}-gnueabihf/bin/ld
+@bin armv7-unknown-bitrig${OSREV}-gnueabihf/bin/ld.bfd
+@bin armv7-unknown-bitrig${OSREV}-gnueabihf/bin/nm
+@bin armv7-unknown-bitrig${OSREV}-gnueabihf/bin/objcopy
+@bin armv7-unknown-bitrig${OSREV}-gnueabihf/bin/objdump
+@bin armv7-unknown-bitrig${OSREV}-gnueabihf/bin/ranlib
+@bin armv7-unknown-bitrig${OSREV}-gnueabihf/bin/strip
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.x
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.xbn
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.xc
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.xn
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.xr
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.xs
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.xsc
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.xsw
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.xu
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.xw
+armv7-unknown-bitrig${OSREV}-gnueabihf/lib/ldscripts/armelf_obsd.xz

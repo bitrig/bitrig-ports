@@ -18,7 +18,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 REALDISTNAME = 	binutils-${VER}
 DISTNAME =	${REALDISTNAME}
-REVISION =	2
+REVISION =	3
 DISTFILES =	${REALDISTNAME}.tar.bz2
 EXTRACT_ONLY =	${REALDISTNAME}.tar.bz2
 
@@ -97,6 +97,8 @@ USE_GROFF=	Yes
 LIBTOOL_FLAGS=  --tag=disable-shared
 
 CONFIGURE_STYLE=	GNU
+
+SUBST_VARS +=           OSREV
 
 post-extract:
 	@cp ${FILESDIR}/te-obsd.h ${WRKSRC}/gas/config/te-obsd.h
