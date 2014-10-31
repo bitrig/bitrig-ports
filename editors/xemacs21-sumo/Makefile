@@ -2,7 +2,7 @@
 
 VERSION=		2010-07-27
 PKGNAME=		xemacs-sumo-21.${VERSION:S/-//g}
-REVISION=		1
+REVISION=		2
 DISTFILES=		xemacs-sumo-${VERSION}.tar.gz
 SUP_mule=		xemacs-mule-sumo-${VERSION}.tar.gz
 SUPDISTFILES=		${SUP_mule}
