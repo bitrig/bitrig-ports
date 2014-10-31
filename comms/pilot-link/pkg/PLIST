@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.18 2014/06/14 10:34:44 sthen Exp $
+@comment $OpenBSD: PLIST,v 1.19 2014/10/31 18:28:54 ajacoutot Exp $
 @bin bin/pilot-addresses
 @bin bin/pilot-clip
 @bin bin/pilot-csd
@@ -159,6 +159,3 @@ share/pilot-link/pix/casemask.xbm
 share/pilot-link/prc/
 share/pilot-link/prc/getrom.prc
 share/pilot-link/prc/getrom2.prc
-%%SHARED%%
-@comment share/pilot-link/udev/
-@comment share/pilot-link/udev/60-libpisock.rules

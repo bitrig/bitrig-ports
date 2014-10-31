@@ -1,12 +1,14 @@
-# $OpenBSD: Makefile,v 1.73 2014/06/14 10:34:44 sthen Exp $
+# $OpenBSD: Makefile,v 1.74 2014/10/31 18:28:54 ajacoutot Exp $
+
+SHARED_ONLY=	Yes
 
 COMMENT=	tools to connect your PalmOS(R) compatible handheld
 
 DISTNAME=	pilot-link-0.12.5
-SHARED_LIBS +=	pisock               11.0      # .9.2
-SHARED_LIBS +=	pisync               2.0      # .0.3
-
 REVISION=	8
+
+SHARED_LIBS +=  pisock               11.0     # 9.2
+SHARED_LIBS +=  pisync               2.0      # 1.3
 
 CATEGORIES=	comms
 
@@ -21,15 +23,15 @@ EXTRACT_SUFX=	.tar.bz2
 # GPLv2 - LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m png>=4 popt readline termcap z pthread
+WANTLIB += c m png popt pthread readline termcap z
 
 MODULES=		devel/gettext
+
 LIB_DEPENDS=		graphics/png \
 			devel/popt \
 			devel/readline
 
 USE_GMAKE=		Yes
-USE_GROFF =		Yes
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include" \
@@ -51,11 +53,11 @@ CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--without-tcl
 
 post-extract:
-	@rm ${WRKSRC}/bindings/Perl/Pilot.xs.orig
+	rm ${WRKSRC}/bindings/Perl/Pilot.xs.orig
 
 pre-configure:
-	@perl -pi -e "s,!!CFLAGS!!,${CFLAGS},g" ${WRKSRC}/bindings/Perl/Makefile.PL.in
-	@perl -pi -e "s,Libs: ,Libs: -pthread ,g" \
+	perl -pi -e "s,!!CFLAGS!!,${CFLAGS},g" ${WRKSRC}/bindings/Perl/Makefile.PL.in
+	perl -pi -e "s,Libs: ,Libs: -pthread ,g" \
 		${WRKSRC}/pilot-link.pc.in ${WRKSRC}/pilot-link-pp.pc.in
 
 post-install:
@@ -64,5 +66,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/README.usb ${PREFIX}/share/doc/pilot-link
 	${INSTALL_MAN} ${WRKSRC}/doc/man/*.1 ${PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/doc/man/*.7 ${PREFIX}/man/man7
+	rm -rf ${PREFIX}/share/pilot-link/udev/
 
 .include <bsd.port.mk>
