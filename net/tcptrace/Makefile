@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2014/10/29 13:05:14 jca Exp $
+# $OpenBSD: Makefile,v 1.30 2014/10/31 07:52:01 landry Exp $
 
 COMMENT=		TCP dump file analysis tool
 
