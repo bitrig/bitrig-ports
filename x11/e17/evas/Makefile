@@ -4,7 +4,7 @@ COMMENT =		canvas API for X
 
 VERSION = 		1.7.9
 DISTNAME =		evas-${VERSION}
-REVISION =		2
+REVISION =		3
 EPOCH =			2
 
 SHARED_LIBS +=	evas                 3.0      # 8.6

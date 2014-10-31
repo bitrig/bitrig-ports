@@ -3,7 +3,7 @@
 COMMENT =		video (and audio) codec playback library
 
 DISTNAME =		emotion-1.7.9
-REVISION =		2
+REVISION =		3
 
 SHARED_LIBS +=	emotion                   1.0 # 8.6
 

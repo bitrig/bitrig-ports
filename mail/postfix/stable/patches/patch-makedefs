@@ -5,7 +5,7 @@ $OpenBSD$
  		;;
    OpenBSD.5*)	SYSTYPE=OPENBSD5
  		;;
-+  Bitrig.0*)	SYSTYPE=OPENBSD5
++  Bitrig.1*)	SYSTYPE=OPENBSD5
 +		;;
    ekkoBSD.1*)	SYSTYPE=EKKOBSD1
  		;;

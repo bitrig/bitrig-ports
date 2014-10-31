@@ -2,7 +2,7 @@
 
 V =			3.3.6
 PKGNAME =		g77-$V
-REVISION =		8
+REVISION =		9
 EPOCH =			1
 DISTFILES = 		g77-openbsd-3.3.6.tgz
 
