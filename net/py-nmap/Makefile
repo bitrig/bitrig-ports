@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 11:35:55 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2014/10/31 12:21:26 jasper Exp $
 
 COMMENT =		python interface to the nmap scan data
 

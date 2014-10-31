@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/04/02 09:36:10 jasper Exp $
+# $OpenBSD: Makefile,v 1.13 2014/10/31 12:21:26 jasper Exp $
 
 COMMENT =		Othello/Reversi-like game
 DISTNAME =		grhino-${V}
