@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.31 2014/10/15 02:06:35 jeremy Exp $
+# $OpenBSD: Makefile,v 1.32 2014/11/01 04:56:40 jeremy Exp $
 
 COMMENT-main=		object oriented script language with threads
 COMMENT-iconv=		libiconv interface for ruby
