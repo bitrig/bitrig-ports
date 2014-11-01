@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.2 2010/08/30 21:40:29 jasper Exp $
+@comment $OpenBSD: PLIST,v 1.3 2014/11/01 11:06:55 jca Exp $
 @bin bin/discount
 @bin bin/makepage
 @bin bin/mkd2html
