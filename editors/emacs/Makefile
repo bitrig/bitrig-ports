@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.45 2014/09/10 19:47:17 jca Exp $
+# $OpenBSD: Makefile,v 1.46 2014/11/01 09:30:59 ratchov Exp $
 
 COMMENT=		GNU editor: extensible, customizable, self-documenting
 
@@ -13,7 +13,7 @@ HOMEPAGE=		https://www.gnu.org/software/emacs/
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m ncurses ossaudio pthread execinfo gnutls xml2
+WANTLIB=		c m ncurses pthread execinfo gnutls xml2
 
 MASTER_SITES=		${MASTER_SITE_GNU:=emacs/}
 
@@ -28,9 +28,10 @@ CONFIGURE_STYLE=	autoconf
 AUTOCONF_VERSION=	2.69
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/build-aux
 CONFIGURE_ARGS=		--build="${GCCARCH}" \
-			--without-compress-info
+			--without-compress-info \
+			--without-sound
 
-CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include -DHAVE_SOUND" \
+CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib -nopie"
 CFLAGS+=		-fno-pie
 
