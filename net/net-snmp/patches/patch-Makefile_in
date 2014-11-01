@@ -6,7 +6,7 @@ $OpenBSD$
  	generic.h \
  	hpux.h irix.h linux.h mingw32.h mips.h netbsd.h osf5.h \
 -	openbsd.h openbsd5.h openbsd4.h \
-+	openbsd.h openbsd5.h openbsd4.h bitrig.h bitrig0.h\
++	openbsd.h openbsd5.h openbsd4.h bitrig.h bitrig1.h\
  	solaris2.3.h solaris2.4.h solaris2.5.h solaris2.6.h \
  	solaris.h sunos.h svr5.h sysv.h ultrix4.h
  INCLUDESUBDIR2=machine
