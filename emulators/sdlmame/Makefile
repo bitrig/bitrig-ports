@@ -46,8 +46,8 @@ RUN_DEPENDS-main =	fonts/liberation-fonts
 LIB_DEPENDS =		devel/sdl-ttf
 
 MAKE_FLAGS =		OPT_FLAGS='-DINI_PATH="\"${SYSCONFDIR}/mame;\""'
-MAKE_ENV =		ARCH=$(ARCH) CC=$(CC) CFLAGS="$(CFLAGS)" \
-			TARGETOS=openbsd \
+MAKE_ENV =		ARCH=$(ARCH) LD=$(CC) CC=$(CC) CFLAGS="$(CFLAGS)" \
+			TARGETOS=bitrig \
 			NO_USE_QTDEBUG=1 \
 			NOWERROR=1
 .if ${MACHINE_ARCH} == "amd64"
@@ -56,8 +56,6 @@ MAKE_ENV +=		PTR64=1
 USE_GMAKE =		Yes
 
 CONFIGURE_STYLE =	none
-
-CC=	gcc
 
 MAKE_FILE =		makefile
 
