@@ -1,13 +1,12 @@
-# $OpenBSD: Makefile,v 1.30 2014/09/12 13:24:30 jasper Exp $
+# $OpenBSD: Makefile,v 1.31 2014/11/01 09:34:40 sthen Exp $
 
 COMMENT=		GnuPG Made Easy
 
-DISTNAME=		gpgme-1.3.1
-CATEGORIES=     	security devel
-REVISION=		2
+DISTNAME=		gpgme-1.5.1
+CATEGORIES=		security devel
 
-SHARED_LIBS +=  gpgme                18.0     # 19.0
-SHARED_LIBS +=  gpgme-pthread        18.0     # 19.0
+SHARED_LIBS +=  gpgme                19.0     # 24.0
+SHARED_LIBS +=  gpgme-pthread        19.0     # 24.0
 
 HOMEPAGE=		http://www.gnupg.org/gpgme.html
 
@@ -29,7 +28,7 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--without-pth-test
 
 MODULES=		devel/gettext
-RUN_DEPENDS=		security/gnupg
+RUN_DEPENDS=		security/gnupg2
 BUILD_DEPENDS=		${RUN_DEPENDS}
 LIB_DEPENDS=		security/libgpg-error>=1.4 \
 			security/libassuan
