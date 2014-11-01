@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/06/02 14:30:42 beck Exp $
+# $OpenBSD: Makefile,v 1.8 2014/11/01 20:15:12 jasper Exp $
 
 COMMENT =		set of kernel torture tools
 
