@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 10:50:01 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2014/11/01 19:34:46 benoit Exp $
 
 COMMENT=	RCS equivalent of CVS's annotate command
 
@@ -17,6 +17,5 @@ CFLAGS+= -fgnu89-inline
 
 CONFIGURE_STYLE=gnu
 CONFIGURE_ENV=	CPPFLAGS="${CFLAGS} -I${LOCALBASE}/include"
-USE_GROFF =	Yes
 
 .include <bsd.port.mk>
