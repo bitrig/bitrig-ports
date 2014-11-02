@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2014/03/16 02:57:14 afresh1 Exp $
+# $OpenBSD: Makefile,v 1.16 2014/11/02 09:35:05 jasper Exp $
 
 COMMENT =		DateTime submodule for TZ
 
