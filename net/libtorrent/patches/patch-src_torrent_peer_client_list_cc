@@ -1,0 +1,20 @@
+--- src/torrent/peer/client_list.cc.orig	Wed May 14 16:18:48 2014
++++ src/torrent/peer/client_list.cc	Sun Nov  2 01:45:17 2014
+@@ -38,7 +38,7 @@
+ 
+ #include <algorithm>
+ #include <rak/string_manip.h>
+-#include <tr1/functional>
++#include lt_tr1_functional
+ 
+ #include "client_list.h"
+ #include "exceptions.h"
+@@ -227,7 +227,7 @@ ClientList::retrieve_id(ClientInfo* dest, const HashSt
+     return false;
+   }
+ 
+-  const_iterator itr = std::find_if(begin() + 1, end(), std::tr1::bind(&ClientInfo::intersects, *dest, std::tr1::placeholders::_1));
++  const_iterator itr = std::find_if(begin() + 1, end(), std::bind(&ClientInfo::intersects, *dest, std::placeholders::_1));
+ 
+   if (itr == end())
+     dest->set_info(begin()->info());

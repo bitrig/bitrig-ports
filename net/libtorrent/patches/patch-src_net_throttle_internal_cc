@@ -1,0 +1,11 @@
+--- src/net/throttle_internal.cc.orig	Wed May 14 16:18:48 2014
++++ src/net/throttle_internal.cc	Sun Nov  2 01:45:17 2014
+@@ -62,7 +62,7 @@ ThrottleInternal::ThrottleInternal(int flags) :
+   m_timeLastTick(cachedTime) {
+ 
+   if (is_root())
+-    m_taskTick.slot() = std::tr1::bind(&ThrottleInternal::receive_tick, this);
++    m_taskTick.slot() = std::bind(&ThrottleInternal::receive_tick, this);
+ }
+ 
+ ThrottleInternal::~ThrottleInternal() {

@@ -1,0 +1,12 @@
+--- src/torrent/utils/resume.h.orig	Thu Jan 19 11:19:27 2012
++++ src/torrent/utils/resume.h	Sun Nov  2 01:45:17 2014
+@@ -57,6 +57,9 @@ void resume_load_progress(Download download, const Obj
+ void resume_save_progress(Download download, Object& object) LIBTORRENT_EXPORT;
+ void resume_clear_progress(Download download, Object& object) LIBTORRENT_EXPORT;
+ 
++bool resume_load_bitfield(Download download, const Object& object) LIBTORRENT_EXPORT;
++void resume_save_bitfield(Download download, Object& object) LIBTORRENT_EXPORT;
++
+ // Do not call 'resume_load_uncertain_pieces' directly.
+ void resume_load_uncertain_pieces(Download download, const Object& object) LIBTORRENT_EXPORT;
+ void resume_save_uncertain_pieces(Download download, Object& object) LIBTORRENT_EXPORT;

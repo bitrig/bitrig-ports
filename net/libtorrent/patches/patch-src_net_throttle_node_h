@@ -1,0 +1,20 @@
+--- src/net/throttle_node.h.orig	Wed May 14 16:18:48 2014
++++ src/net/throttle_node.h	Sun Nov  2 01:45:17 2014
+@@ -37,7 +37,7 @@
+ #ifndef LIBTORRENT_NET_THROTTLE_NODE_H
+ #define LIBTORRENT_NET_THROTTLE_NODE_H
+ 
+-#include <tr1/functional>
++#include lt_tr1_functional
+ 
+ #include "torrent/rate.h"
+ 
+@@ -52,7 +52,7 @@ class ThrottleNode { (public)
+   typedef ThrottleList::iterator                  iterator;
+   typedef ThrottleList::const_iterator            const_iterator;
+ 
+-  typedef std::tr1::function<void ()> slot_void;
++  typedef std::function<void ()> slot_void;
+ 
+   ThrottleNode(uint32_t rateSpan) : m_rate(rateSpan)  { clear_quota(); }
+ 

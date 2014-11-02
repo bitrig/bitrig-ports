@@ -9,8 +9,8 @@ this will cause a segfault.
 Limit the number of events to the number of fds with an upper limit of
 maxEvents.
 
---- src/torrent/poll_kqueue.cc.orig	Tue Apr  5 12:25:53 2011
-+++ src/torrent/poll_kqueue.cc	Fri Jul 13 10:59:11 2012
+--- src/torrent/poll_kqueue.cc.orig	Tue May  6 10:22:57 2014
++++ src/torrent/poll_kqueue.cc	Sun Nov  2 01:29:05 2014
 @@ -37,6 +37,7 @@
  #include "config.h"
  
@@ -19,7 +19,7 @@ maxEvents.
  
  #include <algorithm>
  #include <unistd.h>
-@@ -111,12 +112,12 @@ PollKQueue::create(int maxOpenSockets) {
+@@ -121,12 +122,12 @@ PollKQueue::create(int maxOpenSockets) {
    if (fd == -1)
      return NULL;
  

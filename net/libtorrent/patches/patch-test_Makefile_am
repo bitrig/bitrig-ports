@@ -1,0 +1,22 @@
+--- test/Makefile.am.orig	Tue May  6 10:22:57 2014
++++ test/Makefile.am	Sun Nov  2 01:45:17 2014
+@@ -10,9 +10,9 @@ LibTorrentTest_LDADD = \
+ 	../src/torrent/peer/libsub_torrentpeer.la \
+ 	../src/data/libsub_data.la \
+ 	../src/dht/libsub_dht.la \
+-	../src/download/libsub_download.la \
+ 	../src/net/libsub_net.la \
+ 	../src/protocol/libsub_protocol.la \
++	../src/download/libsub_download.la \
+ 	../src/tracker/libsub_tracker.la \
+ 	../src/utils/libsub_utils.la \
+ 	../src/torrent/utils/libsub_torrentutils.la
+@@ -67,6 +67,8 @@ LibTorrentTest_SOURCES = \
+ 	torrent/utils/test_extents.h \
+ 	torrent/utils/test_queue_buckets.cc \
+ 	torrent/utils/test_queue_buckets.h \
++	torrent/utils/test_uri_parser.cc \
++	torrent/utils/test_uri_parser.h \
+ 	torrent/utils/signal_bitfield_test.cc \
+ 	torrent/utils/signal_bitfield_test.h \
+ 	torrent/utils/thread_base_test.cc \

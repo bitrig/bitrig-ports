@@ -1,0 +1,18 @@
+--- test/torrent/utils/directory_events_test.h.orig	Sun Nov  2 01:45:17 2014
++++ test/torrent/utils/directory_events_test.h	Sun Nov  2 01:45:17 2014
+@@ -0,0 +1,15 @@
++#include <cppunit/extensions/HelperMacros.h>
++
++#include "torrent/utils/directory_events.h"
++
++class utils_directory_events_test : public CppUnit::TestFixture {
++  CPPUNIT_TEST_SUITE(utils_directory_events_test);
++  CPPUNIT_TEST(test_basic);
++  CPPUNIT_TEST_SUITE_END();
++
++public:
++  void setUp();
++  void tearDown();
++
++  void test_basic();
++};

@@ -1,0 +1,11 @@
+--- src/thread_disk.h.orig	Tue May  6 10:22:57 2014
++++ src/thread_disk.h	Sun Nov  2 01:45:17 2014
+@@ -44,7 +44,7 @@ namespace torrent {
+ 
+ class thread_disk : public thread_base {
+ public:
+-  const char*         name() const { return "worker_disk"; }
++  const char*         name() const { return "rtorrent disk"; }
+ 
+   virtual void        init_thread();
+ 

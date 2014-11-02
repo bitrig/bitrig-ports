@@ -1,0 +1,11 @@
+--- test/data/chunk_list_test.cc.orig	Wed May 14 16:18:48 2014
++++ test/data/chunk_list_test.cc	Sun Nov  2 01:45:17 2014
+@@ -7,8 +7,6 @@
+ 
+ CPPUNIT_TEST_SUITE_REGISTRATION(ChunkListTest);
+ 
+-namespace tr1 { using namespace std::tr1; }
+-
+ torrent::Chunk*
+ func_create_chunk(uint32_t index, int prot_flags) {
+   // Do proper handling of prot_flags...

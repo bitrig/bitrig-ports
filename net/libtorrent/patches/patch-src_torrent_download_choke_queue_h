@@ -1,0 +1,46 @@
+--- src/torrent/download/choke_queue.h.orig	Wed May 14 16:18:48 2014
++++ src/torrent/download/choke_queue.h	Sun Nov  2 01:45:17 2014
+@@ -42,7 +42,7 @@
+ #include <list>
+ #include <vector>
+ #include <inttypes.h>
+-#include <tr1/functional>
++#include lt_tr1_functional
+ #include <torrent/download/group_entry.h>
+ 
+ namespace torrent {
+@@ -66,9 +66,9 @@ struct group_stats {
+ 
+ class LIBTORRENT_EXPORT choke_queue {
+ public:
+-  typedef std::tr1::function<void (int)>                         slot_unchoke;
+-  typedef std::tr1::function<int ()>                             slot_can_unchoke;
+-  typedef std::tr1::function<bool (PeerConnectionBase*, bool)>   slot_connection;
++  typedef std::function<void (int)>                         slot_unchoke;
++  typedef std::function<int ()>                             slot_can_unchoke;
++  typedef std::function<bool (PeerConnectionBase*, bool)>   slot_connection;
+ 
+   typedef std::vector<weighted_connection>                       container_type;
+   typedef container_type::value_type                             value_type;
+@@ -98,9 +98,9 @@ class LIBTORRENT_EXPORT choke_queue { (public)
+ 
+    enum heuristics_enum {
+     HEURISTICS_UPLOAD_LEECH,
+-    HEURISTICS_UPLOAD_LEECH_DUMMY,
++    HEURISTICS_UPLOAD_SEED,
++    HEURISTICS_UPLOAD_LEECH_EXPERIMENTAL,
+     HEURISTICS_DOWNLOAD_LEECH,
+-    HEURISTICS_DOWNLOAD_LEECH_DUMMY,
+     HEURISTICS_MAX_SIZE
+   };
+ 
+@@ -109,8 +109,7 @@ class LIBTORRENT_EXPORT choke_queue { (public)
+     m_heuristics(HEURISTICS_MAX_SIZE),
+     m_maxUnchoked(unlimited),
+     m_currently_queued(0),
+-    m_currently_unchoked(0),
+-    m_slotConnection(NULL) {}
++    m_currently_unchoked(0) {}
+   ~choke_queue();
+   
+   bool                is_full() const                         { return !is_unlimited() && size_unchoked() >= m_maxUnchoked; }

@@ -1,15 +1,15 @@
-$OpenBSD: patch-src_protocol_peer_connection_base_cc,v 1.3 2012/07/15 10:20:07 dcoppa Exp $
-
-Spelling fixes
-
---- src/protocol/peer_connection_base.cc.orig	Sun Apr 24 12:47:30 2011
-+++ src/protocol/peer_connection_base.cc	Thu Oct 20 10:19:35 2011
-@@ -562,7 +562,7 @@ PeerConnectionBase::down_chunk_skip_process(const void
-   }
+--- src/protocol/peer_connection_base.cc.orig	Wed May 14 16:18:48 2014
++++ src/protocol/peer_connection_base.cc	Sun Nov  2 01:45:17 2014
+@@ -162,10 +162,10 @@ PeerConnectionBase::initialize(DownloadMain* download,
+   m_down->set_throttle(throttles.second);
  
-   if (!transfer->block()->is_transfering())
--    throw internal_error("PeerConnectionBase::down_chunk_skip_process(...) block is not transfering, yet we have non-leaders.");
-+    throw internal_error("PeerConnectionBase::down_chunk_skip_process(...) block is not transferring, yet we have non-leaders.");
+   m_peerChunks.upload_throttle()->set_list_iterator(m_up->throttle()->end());
+-  m_peerChunks.upload_throttle()->slot_activate() = std::tr1::bind(&SocketBase::receive_throttle_up_activate, static_cast<SocketBase*>(this));
++  m_peerChunks.upload_throttle()->slot_activate() = std::bind(&SocketBase::receive_throttle_up_activate, static_cast<SocketBase*>(this));
  
-   // Temporary test.
-   if (transfer->position() > transfer->block()->leader()->position())
+   m_peerChunks.download_throttle()->set_list_iterator(m_down->throttle()->end());
+-  m_peerChunks.download_throttle()->slot_activate() = std::tr1::bind(&SocketBase::receive_throttle_down_activate, static_cast<SocketBase*>(this));
++  m_peerChunks.download_throttle()->slot_activate() = std::bind(&SocketBase::receive_throttle_down_activate, static_cast<SocketBase*>(this));
+ 
+   request_list()->set_delegator(m_download->delegator());
+   request_list()->set_peer_chunks(&m_peerChunks);

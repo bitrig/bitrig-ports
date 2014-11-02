@@ -1,0 +1,11 @@
+--- test/torrent/utils/test_queue_buckets.cc.orig	Wed May 14 16:18:48 2014
++++ test/torrent/utils/test_queue_buckets.cc	Sun Nov  2 01:45:17 2014
+@@ -19,6 +19,8 @@ struct test_constants {
+   static void destroy(Type& obj);
+ };
+ 
++const int test_constants::bucket_count;
++
+ const torrent::instrumentation_enum test_constants::instrumentation_added[bucket_count] = {
+   torrent::INSTRUMENTATION_TRANSFER_REQUESTS_QUEUED_ADDED,
+   torrent::INSTRUMENTATION_TRANSFER_REQUESTS_UNORDERED_ADDED

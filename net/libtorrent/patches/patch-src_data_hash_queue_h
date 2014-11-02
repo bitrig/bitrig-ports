@@ -1,0 +1,20 @@
+--- src/data/hash_queue.h.orig	Wed May 14 16:18:48 2014
++++ src/data/hash_queue.h	Sun Nov  2 01:45:17 2014
+@@ -40,7 +40,7 @@
+ #include <deque>
+ #include <map>
+ #include <pthread.h>
+-#include <tr1/functional>
++#include lt_tr1_functional
+ 
+ #include "torrent/hash_string.h"
+ #include "hash_queue_node.h"
+@@ -63,7 +63,7 @@ class lt_cacheline_aligned HashQueue : private std::de
+   typedef std::map<HashChunk*, torrent::HashString> done_chunks_type;
+ 
+   typedef HashQueueNode::slot_done_type   slot_done_type;
+-  typedef std::tr1::function<void (bool)> slot_bool;
++  typedef std::function<void (bool)> slot_bool;
+ 
+   using base_type::iterator;
+ 

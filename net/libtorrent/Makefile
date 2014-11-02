@@ -2,11 +2,7 @@
 
 COMMENT=		BitTorrent library written in C++
 
-# requires C++ tr1 headers
-NOT_FOR_ARCHS=		${GCC3_ARCHS}
-
-DISTNAME=		libtorrent-0.12.9
-REVISION=		4
+DISTNAME=		libtorrent-0.13.4
 EPOCH=			0
 SHARED_LIBS +=  	torrent 20.0	# .14.1
 CATEGORIES=		net devel
@@ -23,11 +19,8 @@ WANTLIB +=		c++ c++abi pthread
 BUILD_DEPENDS=		devel/cppunit
 LIB_DEPENDS=		devel/libsigc++-2
 
-
-# work around some bad c++
-CC=gcc
-CXX=g++
-
+AUTOCONF_VERSION=	2.69
+AUTOMAKE_VERSION=	1.14
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--enable-static \
@@ -36,5 +29,11 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--disable-debug
 CONFIGURE_ENV=		OPENSSL_CFLAGS=-I/usr/include \
 			OPENSSL_LIBS=-lcrypto
+
+pre-configure:
+	cd ${WRKSRC} && \
+		AUTOCONF_VERSION=${AUTOCONF_VERSION} \
+		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
+		autoreconf
 
 .include <bsd.port.mk>

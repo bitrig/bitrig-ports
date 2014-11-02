@@ -1,0 +1,12 @@
+--- src/torrent/download/choke_group.h.orig	Tue May 13 13:42:07 2014
++++ src/torrent/download/choke_group.h	Sun Nov  2 01:45:17 2014
+@@ -81,6 +81,9 @@ class LIBTORRENT_EXPORT choke_group { (public)
+   uint64_t            up_rate() const;
+   uint64_t            down_rate() const;
+ 
++  unsigned int        up_unchoked() const   { return m_up_queue.size_unchoked(); }
++  unsigned int        down_unchoked() const { return m_down_queue.size_unchoked(); }
++
+   // Internal:
+ 
+   resource_manager_entry* first() { return m_first; }

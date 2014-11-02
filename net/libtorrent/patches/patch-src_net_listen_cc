@@ -1,0 +1,14 @@
+--- src/net/listen.cc.orig	Tue May  6 10:22:57 2014
++++ src/net/listen.cc	Sun Nov  2 01:45:17 2014
+@@ -134,7 +134,10 @@ Listen::event_write() {
+ 
+ void
+ Listen::event_error() {
+-  throw internal_error("Listener port received an error event.");
++  int error = get_fd().get_error();
++
++  if (error != 0)
++    throw internal_error("Listener port received an error event: " + std::string(std::strerror(error)));
+ }
+ 
+ }

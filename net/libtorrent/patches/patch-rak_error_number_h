@@ -1,0 +1,10 @@
+--- rak/error_number.h.orig	Tue May 13 13:42:07 2014
++++ rak/error_number.h	Sun Nov  2 01:45:17 2014
+@@ -51,6 +51,7 @@ class error_number { (public)
+   static const int e_deadlk      = EDEADLK;
+ 
+   static const int e_noent       = ENOENT;
++  static const int e_nodev       = ENODEV;
+   static const int e_nomem       = ENOMEM;
+   static const int e_notdir      = ENOTDIR;
+   static const int e_isdir       = EISDIR;

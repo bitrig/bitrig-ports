@@ -1,0 +1,20 @@
+--- src/data/hash_check_queue.h.orig	Wed May 14 16:18:48 2014
++++ src/data/hash_check_queue.h	Sun Nov  2 01:45:17 2014
+@@ -39,7 +39,7 @@
+ 
+ #include <deque>
+ #include <pthread.h>
+-#include <tr1/functional>
++#include lt_tr1_functional
+ 
+ #include "rak/allocators.h"
+ 
+@@ -51,7 +51,7 @@ class HashChunk;
+ class lt_cacheline_aligned HashCheckQueue : private std::deque<HashChunk*, rak::cacheline_allocator<HashChunk*> > {
+ public:
+   typedef std::deque<HashChunk*, rak::cacheline_allocator<HashChunk*> > base_type;
+-  typedef std::tr1::function<void (HashChunk*, const HashString&)>      slot_chunk_handle;
++  typedef std::function<void (HashChunk*, const HashString&)>      slot_chunk_handle;
+ 
+   using base_type::iterator;
+ 

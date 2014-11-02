@@ -1,0 +1,35 @@
+--- src/torrent/utils/Makefile.am.orig	Tue May 13 13:42:07 2014
++++ src/torrent/utils/Makefile.am	Sun Nov  2 01:45:17 2014
+@@ -1,6 +1,8 @@
+ noinst_LTLIBRARIES = libsub_torrentutils.la
+ 
+ libsub_torrentutils_la_SOURCES = \
++	directory_events.cc \
++	directory_events.h \
+ 	extents.h \
+ 	log.cc \
+ 	log.h \
+@@ -18,12 +20,15 @@ libsub_torrentutils_la_SOURCES = \
+ 	thread_base.cc \
+ 	thread_base.h \
+ 	thread_interrupt.cc \
+-	thread_interrupt.h
++	thread_interrupt.h \
++	uri_parser.cc \
++	uri_parser.h
+ 
+ AM_CPPFLAGS = -I$(srcdir) -I$(srcdir)/.. -I$(srcdir)/../.. -I$(top_srcdir)
+ 
+ libtorrentincludedir = $(includedir)/torrent/utils
+ libtorrentinclude_HEADERS = \
++	directory_events.h \
+ 	extents.h \
+ 	log.h \
+ 	log_buffer.h \
+@@ -33,4 +38,5 @@ libtorrentinclude_HEADERS = \
+ 	resume.h \
+ 	signal_bitfield.h \
+ 	thread_base.h \
+-	thread_interrupt.h
++	thread_interrupt.h \
++	uri_parser.h

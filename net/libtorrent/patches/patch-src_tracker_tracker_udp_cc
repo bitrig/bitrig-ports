@@ -1,0 +1,73 @@
+--- src/tracker/tracker_udp.cc.orig	Wed May 14 16:18:48 2014
++++ src/tracker/tracker_udp.cc	Sun Nov  2 01:45:17 2014
+@@ -51,12 +51,11 @@
+ #include "torrent/tracker_list.h"
+ #include "torrent/utils/log.h"
+ #include "torrent/utils/option_strings.h"
++#include "torrent/utils/uri_parser.h"
+ 
+ #include "tracker_udp.h"
+ #include "manager.h"
+ 
+-namespace tr1 { using namespace std::tr1; }
+-
+ #define LT_LOG_TRACKER(log_level, log_fmt, ...)                         \
+   lt_log_print_info(LOG_TRACKER_##log_level, m_parent->info(), "tracker", "[%u] " log_fmt, group(), __VA_ARGS__);
+ 
+@@ -68,11 +67,13 @@ namespace torrent {
+ TrackerUdp::TrackerUdp(TrackerList* parent, const std::string& url, int flags) :
+   Tracker(parent, url, flags),
+ 
++  m_port(0),
++
+   m_slot_resolver(NULL),
+   m_readBuffer(NULL),
+   m_writeBuffer(NULL) {
+ 
+-  m_taskTimeout.slot() = std::tr1::bind(&TrackerUdp::receive_timeout, this);
++  m_taskTimeout.slot() = std::bind(&TrackerUdp::receive_timeout, this);
+ }
+ 
+ TrackerUdp::~TrackerUdp() {
+@@ -94,6 +95,14 @@ TrackerUdp::send_state(int state) {
+   close_directly();
+   m_latest_event = state;
+ 
++  // try {
++  //   utils::uri_state uri_state;
++  //   uri_parse_str(m_url, uri_state);
++
++  // } catch (utils::uri_error& e) {
++  //   return receive_failed("Could not parse UDP hostname or port: " + std::string(e.what()));
++  // }
++
+   char hostname[1024];
+       
+   if (std::sscanf(m_url.c_str(), "udp://%1023[^:]:%i", hostname, &m_port) != 2 ||
+@@ -108,12 +117,14 @@ TrackerUdp::send_state(int state) {
+     m_slot_resolver = NULL;
+   }
+ 
++  LT_LOG_TRACKER(DEBUG, "Tracker UDP hostname lookup for '%s'", hostname);
++
+   m_sendState = state;
+   m_slot_resolver = manager->connection_manager()->resolver()(hostname, PF_INET, SOCK_DGRAM,
+-                                                              tr1::bind(&TrackerUdp::start_announce,
++                                                              std::bind(&TrackerUdp::start_announce,
+                                                                         this,
+-                                                                        tr1::placeholders::_1,
+-                                                                        tr1::placeholders::_2));
++                                                                        std::placeholders::_1,
++                                                                        std::placeholders::_2));
+ }
+ 
+ void
+@@ -128,6 +139,8 @@ TrackerUdp::start_announce(const sockaddr* sa, int err
+ 
+   m_connectAddress = *rak::socket_address::cast_from(sa);
+   m_connectAddress.set_port(m_port);
++
++  LT_LOG_TRACKER(DEBUG, "Tracker UDP address found '%s'", m_connectAddress.address_str().c_str());
+ 
+   if (!m_connectAddress.is_valid())
+     return receive_failed("Invalid tracker address.");

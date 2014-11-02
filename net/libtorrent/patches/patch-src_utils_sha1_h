@@ -1,0 +1,10 @@
+--- src/utils/sha1.h.orig	Wed May 14 16:18:48 2014
++++ src/utils/sha1.h	Sun Nov  2 01:45:17 2014
+@@ -85,6 +85,7 @@ Sha1::final_c(char* buffer) { (private)
+   SHA_CTX m_ctx;
+ };
+ 
++#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+ inline void
+ Sha1::init() {
+   SHA1_Init(&m_ctx);

@@ -1,0 +1,10 @@
+--- src/utils/diffie_hellman.cc.orig	Wed May 14 16:18:48 2014
++++ src/utils/diffie_hellman.cc	Sun Nov  2 01:45:17 2014
+@@ -48,6 +48,7 @@
+ 
+ namespace torrent {
+ 
++#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+ DiffieHellman::DiffieHellman(const unsigned char *prime, int primeLength,
+                              const unsigned char *generator, int generatorLength) :
+   m_secret(NULL), m_size(0) {

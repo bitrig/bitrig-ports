@@ -1,0 +1,20 @@
+--- src/torrent/peer/connection_list.h.orig	Wed May 14 16:18:48 2014
++++ src/torrent/peer/connection_list.h	Sun Nov  2 01:45:17 2014
+@@ -39,7 +39,7 @@
+ 
+ #include <list>
+ #include <vector>
+-#include <tr1/functional>
++#include lt_tr1_functional
+ #include <torrent/common.h>
+ #include <torrent/hash_string.h>
+ 
+@@ -66,7 +66,7 @@ class LIBTORRENT_EXPORT ConnectionList : private std::
+   typedef std::vector<Peer*>         base_type;
+   typedef std::vector<HashString>    queue_type;
+   typedef uint32_t                   size_type;
+-  typedef std::tr1::function<void (Peer*)> slot_peer_type;
++  typedef std::function<void (Peer*)> slot_peer_type;
+   typedef std::list<slot_peer_type>        signal_peer_type;
+ 
+   typedef PeerConnectionBase* (*slot_new_conn_type)(bool encrypted);
