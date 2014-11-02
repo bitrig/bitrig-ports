@@ -1,0 +1,13 @@
+--- src/core/http_queue.cc.orig	Wed May 14 16:30:51 2014
++++ src/core/http_queue.cc	Sun Nov  2 12:40:56 2014
+@@ -56,8 +56,8 @@ HttpQueue::insert(const std::string& url, std::iostrea
+ 
+   iterator signal_itr = base_type::insert(end(), h.get());
+ 
+-  h->signal_done().push_back(std::tr1::bind(&HttpQueue::erase, this, signal_itr));
+-  h->signal_failed().push_back(std::tr1::bind(&HttpQueue::erase, this, signal_itr));
++  h->signal_done().push_back(std::bind(&HttpQueue::erase, this, signal_itr));
++  h->signal_failed().push_back(std::bind(&HttpQueue::erase, this, signal_itr));
+ 
+   (*signal_itr)->start();
+ 

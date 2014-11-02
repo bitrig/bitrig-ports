@@ -6,8 +6,7 @@ BROKEN-sh =		undefined references to __sync atomic ops
 
 COMMENT=		ncurses BitTorrent client based on libTorrent
 
-DISTNAME=		rtorrent-0.8.9
-REVISION=		3
+DISTNAME=		rtorrent-0.9.4
 EPOCH=			0
 CATEGORIES=		net
 
@@ -23,28 +22,29 @@ WANTLIB +=		c++ c++abi
 
 MASTER_SITES=		${HOMEPAGE}downloads/
 
-MODULES=		gcc4 devel/gettext
-
-# SIGBUS during startup on sparc64 when built using gcc 4.2.1
-# https://github.com/rakshasa/rtorrent/issues/28
-MODGCC4_ARCHS=		*
-MODGCC4_LANGS=		c++
+MODULES=		devel/gettext
 
 BUILD_DEPENDS=		devel/cppunit
 LIB_DEPENDS=		net/libtorrent>=0.12.9 \
 			net/curl
 
+AUTOCONF_VERSION=	2.69
+AUTOMAKE_VERSION=	1.14
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV +=	LDFLAGS=-pthread
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--disable-debug
+
+pre-configure:
+	cd ${WRKSRC} && \
+		AUTOCONF_VERSION=${AUTOCONF_VERSION} \
+		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
+		autoreconf
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/rtorrent
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/rtorrent
 	${INSTALL_DATA} ${WRKSRC}/doc/rtorrent.rc \
 		${PREFIX}/share/examples/rtorrent/rtorrent.rc
-	${INSTALL_MAN} ${WRKSRC}/doc/rtorrent.1 \
-		${PREFIX}/man/man1/rtorrent.1
 
 .include <bsd.port.mk>

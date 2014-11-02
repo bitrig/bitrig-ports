@@ -1,0 +1,11 @@
+--- src/display/manager.cc.orig	Wed May 14 16:30:51 2014
++++ src/display/manager.cc	Sun Nov  2 12:40:56 2014
+@@ -50,7 +50,7 @@ namespace display {
+ Manager::Manager() :
+   m_forceRedraw(false) {
+ 
+-  m_taskUpdate.slot() = std::tr1::bind(&Manager::receive_update, this);
++  m_taskUpdate.slot() = std::bind(&Manager::receive_update, this);
+ }
+ 
+ Manager::~Manager() {

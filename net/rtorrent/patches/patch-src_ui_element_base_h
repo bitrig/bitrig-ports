@@ -1,0 +1,11 @@
+--- src/ui/element_base.h.orig	Wed May 14 16:30:51 2014
++++ src/ui/element_base.h	Sun Nov  2 12:41:06 2014
+@@ -48,7 +48,7 @@ namespace ui {
+ 
+ class ElementBase {
+ public:
+-  typedef std::tr1::function<void ()> slot_type;
++  typedef std::function<void ()> slot_type;
+ 
+   ElementBase() : m_frame(NULL), m_focus(false) {}
+   virtual ~ElementBase() {}

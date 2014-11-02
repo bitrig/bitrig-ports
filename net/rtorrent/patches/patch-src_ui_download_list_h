@@ -1,0 +1,11 @@
+--- src/ui/download_list.h.orig	Wed May 14 16:30:51 2014
++++ src/ui/download_list.h	Sun Nov  2 12:41:06 2014
+@@ -71,7 +71,7 @@ class DownloadList : public ElementBase { (public)
+   typedef display::WindowLog                       WLog;
+   typedef display::WindowLogComplete               WLogComplete;
+ 
+-  typedef std::tr1::function<void (const std::string&)> slot_string;
++  typedef std::function<void (const std::string&)> slot_string;
+ 
+   typedef enum {
+     DISPLAY_DOWNLOAD,

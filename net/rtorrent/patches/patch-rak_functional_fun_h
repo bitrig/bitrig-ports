@@ -1,0 +1,95 @@
+--- rak/functional_fun.h.orig	Wed May 14 16:30:51 2014
++++ rak/functional_fun.h	Sun Nov  2 12:40:56 2014
+@@ -53,8 +53,8 @@
+ 
+ #include <memory>
+ #include <functional>
+-#include <tr1/functional>
+-#include <tr1/memory>
++#include lt_tr1_functional
++#include lt_tr1_memory
+ 
+ namespace rak {
+ 
+@@ -98,13 +98,13 @@ class function0 { (public)
+ 
+   bool                is_valid() const     { return m_base.get() != NULL; }
+ 
+-  void                set(base_type* base) { m_base = std::tr1::shared_ptr<base_type>(base); }
++  void                set(base_type* base) { m_base = std::shared_ptr<base_type>(base); }
+   base_type*          release()            { return m_base.release(); }
+ 
+   Result operator () ()                    { return (*m_base)(); }
+ 
+ private:
+-  std::tr1::shared_ptr<base_type> m_base;
++  std::shared_ptr<base_type> m_base;
+ };
+ 
+ template <typename Result, typename Arg1>
+@@ -115,13 +115,13 @@ class function1 { (public)
+ 
+   bool                is_valid() const     { return m_base.get() != NULL; }
+ 
+-  void                set(base_type* base) { m_base = std::tr1::shared_ptr<base_type>(base); }
++  void                set(base_type* base) { m_base = std::shared_ptr<base_type>(base); }
+   base_type*          release()            { return m_base.release(); }
+ 
+   Result operator () (Arg1 arg1)           { return (*m_base)(arg1); }
+ 
+ private:
+-  std::tr1::shared_ptr<base_type> m_base;
++  std::shared_ptr<base_type> m_base;
+ };
+ 
+ template <typename Result, typename Arg1, typename Arg2>
+@@ -132,13 +132,13 @@ class function2 { (public)
+ 
+   bool                is_valid() const     { return m_base.get() != NULL; }
+ 
+-  void                set(base_type* base) { m_base = std::tr1::shared_ptr<base_type>(base); }
++  void                set(base_type* base) { m_base = std::shared_ptr<base_type>(base); }
+   base_type*          release()            { return m_base.release(); }
+ 
+   Result operator () (Arg1 arg1, Arg2 arg2) { return (*m_base)(arg1, arg2); }
+ 
+ private:
+-  std::tr1::shared_ptr<base_type> m_base;
++  std::shared_ptr<base_type> m_base;
+ };
+ 
+ template <typename Result, typename Arg2>
+@@ -149,7 +149,7 @@ class function2<Result, void, Arg2> { (public)
+ 
+   bool                is_valid() const     { return m_base.get() != NULL; }
+ 
+-  void                set(base_type* base) { m_base = std::tr1::shared_ptr<base_type>(base); }
++  void                set(base_type* base) { m_base = std::shared_ptr<base_type>(base); }
+   base_type*          release()            { return m_base.release(); }
+ 
+   Result operator () (Arg2 arg2)           { return (*m_base)(arg2); }
+@@ -158,7 +158,7 @@ class function2<Result, void, Arg2> { (public)
+   Result operator () (Discard discard, Arg2 arg2) { return (*m_base)(arg2); }
+ 
+ private:
+-  std::tr1::shared_ptr<base_type> m_base;
++  std::shared_ptr<base_type> m_base;
+ };
+ 
+ template <typename Result, typename Arg1, typename Arg2, typename Arg3>
+@@ -169,13 +169,13 @@ class function3 { (public)
+ 
+   bool                is_valid() const     { return m_base.get() != NULL; }
+ 
+-  void                set(base_type* base) { m_base = std::tr1::shared_ptr<base_type>(base); }
++  void                set(base_type* base) { m_base = std::shared_ptr<base_type>(base); }
+   base_type*          release()            { return m_base.release(); }
+ 
+   Result operator () (Arg1 arg1, Arg2 arg2, Arg3 arg3) { return (*m_base)(arg1, arg2, arg3); }
+ 
+ private:
+-  std::tr1::shared_ptr<base_type> m_base;
++  std::shared_ptr<base_type> m_base;
+ };
+ 
+ template <typename Result>

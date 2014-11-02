@@ -1,0 +1,11 @@
+--- test/rpc/command_map_test.cc.orig	Wed May 14 16:30:51 2014
++++ test/rpc/command_map_test.cc	Sun Nov  2 12:41:06 2014
+@@ -21,7 +21,7 @@ torrent::Object cmd_test_any_string(__UNUSED rpc::targ
+ void
+ CommandMapTest::test_basics() {
+   CMD2_ANY("test_a", &cmd_test_map_a);
+-  CMD2_ANY("test_b", tr1::bind(&cmd_test_map_b, tr1::placeholders::_1, tr1::placeholders::_2, (uint64_t)2));
++  CMD2_ANY("test_b", std::bind(&cmd_test_map_b, std::placeholders::_1, std::placeholders::_2, (uint64_t)2));
+   CMD2_ANY_STRING("any_string", &cmd_test_any_string);
+ 
+   CPPUNIT_ASSERT(m_map.call_command("test_a", (int64_t)1).as_value() == 1);

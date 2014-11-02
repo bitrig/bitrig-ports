@@ -1,0 +1,10 @@
+--- rak/priority_queue.h.orig	Wed May 14 16:30:51 2014
++++ rak/priority_queue.h	Sun Nov  2 12:40:56 2014
+@@ -60,6 +60,7 @@ class priority_queue : public std::vector<Value, Alloc
+   using base_type::end;
+   using base_type::size;
+   using base_type::empty;
++  using base_type::clear;
+ 
+   priority_queue(Compare l = Compare(), Equal e = Equal())
+     : m_compare(l), m_equal(e) {}

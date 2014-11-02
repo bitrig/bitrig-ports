@@ -1,0 +1,13 @@
+--- src/core/manager.h.orig	Wed May 14 16:30:51 2014
++++ src/core/manager.h	Sun Nov  2 12:40:56 2014
+@@ -69,8 +69,8 @@ class Manager { (public)
+   typedef DownloadList::iterator                    DListItr;
+   typedef utils::FileStatusCache                    FileStatusCache;
+ 
+-  // typedef std::tr1::function<void (DownloadList::iterator)> slot_ready;
+-  // typedef std::tr1::function<void ()>                       slot_void;
++  // typedef std::function<void (DownloadList::iterator)> slot_ready;
++  // typedef std::function<void ()>                       slot_void;
+ 
+   Manager();
+   ~Manager();

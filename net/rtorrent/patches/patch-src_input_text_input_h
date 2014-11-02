@@ -1,0 +1,11 @@
+--- src/input/text_input.h.orig	Wed May 14 16:30:51 2014
++++ src/input/text_input.h	Sun Nov  2 12:40:56 2014
+@@ -46,7 +46,7 @@ namespace input {
+ class TextInput : private std::string {
+ public:
+   typedef std::string                 Base;
+-  typedef std::tr1::function<void ()> slot_void;
++  typedef std::function<void ()> slot_void;
+ 
+   using Base::c_str;
+   using Base::empty;

@@ -1,0 +1,13 @@
+--- src/ui/element_menu.h.orig	Wed May 14 16:30:51 2014
++++ src/ui/element_menu.h	Sun Nov  2 12:41:06 2014
+@@ -51,8 +51,8 @@ namespace ui {
+ struct ElementMenuEntry {
+   display::TextElementStringBase* m_element;
+ 
+-  std::tr1::function<void ()>     m_slotFocus;
+-  std::tr1::function<void ()>     m_slotSelect;
++  std::function<void ()>     m_slotFocus;
++  std::function<void ()>     m_slotSelect;
+ };
+ 
+ class ElementMenu : public ElementBase, public std::vector<ElementMenuEntry> {

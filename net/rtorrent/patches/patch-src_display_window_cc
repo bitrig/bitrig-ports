@@ -1,0 +1,11 @@
+--- src/display/window.cc.orig	Wed May 14 16:30:51 2014
++++ src/display/window.cc	Sun Nov  2 12:40:56 2014
+@@ -59,7 +59,7 @@ Window::Window(Canvas* canvas, int flags, extent_type 
+   m_maxWidth(maxWidth),
+   m_maxHeight(maxHeight) {
+ 
+-  m_taskUpdate.slot() = std::tr1::bind(&Window::redraw, this);
++  m_taskUpdate.slot() = std::bind(&Window::redraw, this);
+ }
+ 
+ Window::~Window() {

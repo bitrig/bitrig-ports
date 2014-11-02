@@ -1,0 +1,22 @@
+--- src/core/http_queue.h.orig	Wed May 14 16:30:51 2014
++++ src/core/http_queue.h	Sun Nov  2 12:40:56 2014
+@@ -39,7 +39,7 @@
+ 
+ #include <list>
+ #include <iosfwd>
+-#include <tr1/functional>
++#include lt_tr1_functional
+ 
+ namespace core {
+ 
+@@ -48,8 +48,8 @@ class CurlGet;
+ class HttpQueue : private std::list<CurlGet*> {
+ public:
+   typedef std::list<CurlGet*>                 base_type;
+-  typedef std::tr1::function<CurlGet* ()>     slot_factory;
+-  typedef std::tr1::function<void (CurlGet*)> slot_curl_get;
++  typedef std::function<CurlGet* ()>     slot_factory;
++  typedef std::function<void (CurlGet*)> slot_curl_get;
+   typedef std::list<slot_curl_get>            signal_curl_get;
+ 
+   using base_type::iterator;

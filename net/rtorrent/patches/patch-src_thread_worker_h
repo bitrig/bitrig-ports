@@ -1,0 +1,11 @@
+--- src/thread_worker.h.orig	Fri Feb 17 06:05:28 2012
++++ src/thread_worker.h	Sun Nov  2 12:41:06 2014
+@@ -53,7 +53,7 @@ class lt_cacheline_aligned ThreadWorker : public Threa
+   ThreadWorker();
+   ~ThreadWorker();
+ 
+-  const char*         name() const { return "worker_rtorrent"; }
++  const char*         name() const { return "rtorrent scgi"; }
+ 
+   virtual void        init_thread();
+ 
