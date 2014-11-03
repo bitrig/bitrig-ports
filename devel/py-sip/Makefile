@@ -30,10 +30,7 @@ CONFIGURE_ARGS=	-b ${PREFIX}/bin \
 		-e ${MODPY_INCDIR} \
 		-v ${PREFIX}/share/sip \
 		INCDIR=${LOCALBASE}/include \
-		LIBDIR=${LOCALBASE}/lib \
-		CC=${CC} CXX=${CXX} \
-		CFLAGS="${CFLAGS}" \
-		CXXFLAGS="${CXXFLAGS}"
+		LIBDIR=${LOCALBASE}/lib
 
 NO_TEST=	Yes
 

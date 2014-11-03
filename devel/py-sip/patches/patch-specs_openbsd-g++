@@ -1,7 +1,42 @@
 $OpenBSD: patch-specs_openbsd-g++,v 1.1 2008/01/15 21:16:24 ajacoutot Exp $
---- specs/openbsd-g++.orig	Thu Dec  6 15:15:09 2007
-+++ specs/openbsd-g++	Tue Jan 15 21:48:09 2008
-@@ -50,7 +50,7 @@ QMAKE_LINK_SHLIB_CMD	= $$QMAKE_LINK_SHLIB $(LFLAGS) \
+--- specs/openbsd-g++.orig	Wed May 11 13:39:21 2011
++++ specs/openbsd-g++	Mon Nov  3 09:30:38 2014
+@@ -1,5 +1,5 @@
+ #
+-# qmake configuration for openbsd-g++
++# qmake configuration for openbsd-clang++
+ #
+ 
+ MAKEFILE_GENERATOR	= UNIX
+@@ -7,7 +7,7 @@ TEMPLATE		= app
+ CONFIG			+= qt warn_on release link_prl
+ QT			+= core gui
+ 
+-QMAKE_CC		= gcc
++QMAKE_CC		= clang
+ QMAKE_LEX		= flex
+ QMAKE_LEXFLAGS		=
+ QMAKE_YACC		= yacc
+@@ -22,7 +22,7 @@ QMAKE_CFLAGS_SHLIB	= -fPIC
+ QMAKE_CFLAGS_YACC	= -Wno-unused -Wno-parentheses
+ QMAKE_CFLAGS_THREAD	= -pthread
+ 
+-QMAKE_CXX		= g++
++QMAKE_CXX		= clang++
+ QMAKE_CXXFLAGS		= $$QMAKE_CFLAGS
+ QMAKE_CXXFLAGS_DEPS	= $$QMAKE_CFLAGS_DEPS
+ QMAKE_CXXFLAGS_WARN_ON	= $$QMAKE_CFLAGS_WARN_ON
+@@ -42,15 +42,15 @@ QMAKE_LIBDIR_QT		= $$[QT_INSTALL_LIBS]
+ QMAKE_INCDIR_OPENGL	= /usr/X11R6/include
+ QMAKE_LIBDIR_OPENGL	= /usr/X11R6/lib
+ 
+-QMAKE_LINK		= g++
+-QMAKE_LINK_SHLIB	= g++
++QMAKE_LINK		= clang++
++QMAKE_LINK_SHLIB	= clang++
+ QMAKE_LINK_SHLIB_CMD	= $$QMAKE_LINK_SHLIB $(LFLAGS) \
+ 	$$QMAKE_CFLAGS_SHLIB $$QMAKE_LFLAGS \
+ 	-o $(TARGETD) $(OBJECTS) $(OBJMOC) $(LIBS)
  QMAKE_LFLAGS		=
  QMAKE_LFLAGS_RELEASE	=
  QMAKE_LFLAGS_DEBUG	=
