@@ -1,13 +1,13 @@
-# $OpenBSD: Makefile,v 1.5 2014/10/10 12:12:29 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.6 2014/11/03 04:23:10 bcallah Exp $
 
 SHARED_ONLY =		Yes
 
 COMMENT =		high-speed character set detection library
 
-DISTNAME =		libguess-1.1
-REVISION =		3
+DISTNAME =		libguess-1.2
+EXTRACT_SUFX =		.tar.bz2
 
-SHARED_LIBS =		guess		0.0	# 1.0
+SHARED_LIBS =		guess		1.0	# 1.2
 
 CATEGORIES =		devel
 
@@ -16,11 +16,7 @@ HOMEPAGE =		http://atheme.org/projects/libguess.html
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		mowgli
-
-MASTER_SITES =		http://distfiles.atheme.org/
-
-LIB_DEPENDS =		devel/mowgli
+MASTER_SITES =		http://rabbit.dereferenced.org/~nenolod/distfiles/
 
 MAKE_ENV =		LIB_MAJOR=${LIBguess_VERSION:R} \
 			LIB_MINOR=${LIBguess_VERSION:E}
