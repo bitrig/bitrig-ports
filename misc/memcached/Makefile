@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.25 2014/07/15 18:17:06 giovanni Exp $
+# $OpenBSD: Makefile,v 1.26 2014/11/04 15:11:05 giovanni Exp $
 
 COMMENT=	distributed memory object caching system
 
-DISTNAME=	memcached-1.4.20
-REVISION=	0
+DISTNAME=	memcached-1.4.21
 CATEGORIES=	misc
 
 HOMEPAGE=	http://www.memcached.org/
@@ -11,14 +10,18 @@ HOMEPAGE=	http://www.memcached.org/
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c event pthread
+LIB_DEPENDS=		security/cyrus-sasl2
+WANTLIB=		c event pthread sasl2
 
 MASTER_SITES=		http://memcached.org/files/
 
 CONFIGURE_STYLE=	gnu
+CONFIGURE_ENV=		CFLAGS="-I${LOCALBASE}/include" \
+			LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=		--with-libevent=/usr \
 			--disable-coverage \
-			--disable-docs
+			--disable-docs \
+			--enable-sasl
 TEST_TARGET=		test
 TEST_DEPENDS=		devel/p5-Test-MockSleep
 
