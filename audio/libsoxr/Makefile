@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/10 22:55:03 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2014/11/04 14:55:03 dcoppa Exp $
 
 COMMENT=	fast and high quality sample-rate conversion (SoX Resampler)
 
