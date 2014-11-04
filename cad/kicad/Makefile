@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2014/07/15 09:02:36 espie Exp $
+# $OpenBSD: Makefile,v 1.23 2014/11/04 14:58:39 dcoppa Exp $
 
 COMMENT-main=	schematic and PCB editing software
 COMMENT-docs=	documentation for the kicad library of components
@@ -11,7 +11,7 @@ PKGNAME-main=	kicad-${V:S/-//g}
 PKGNAME-docs=	kicad-docs-${V:S/-//g}
 
 REVISION-main=	4
-REVISION-docs=	1
+REVISION-docs=	2
 
 CATEGORIES=	cad
 
