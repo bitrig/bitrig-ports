@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.36 2014/07/22 10:55:41 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.37 2014/11/05 15:42:09 sthen Exp $
 
 COMMENT=	latency logging and graphing system
 
-DISTNAME=	smokeping-2.6.9
-REVISION=	5
+DISTNAME=	smokeping-2.6.11
 
 CATEGORIES=	net
 
@@ -14,14 +13,16 @@ HOMEPAGE=	http://oss.oetiker.ch/smokeping/
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	devel/p5-Config-Grammar \
+COMMON_DEPENDS=	devel/p5-Config-Grammar \
+		net/rrdtool
+BUILD_DEPENDS=	${COMMON_DEPENDS}
+RUN_DEPENDS=	${COMMON_DEPENDS} \
 		net/fping \
 		net/p5-SNMP_Session \
 		net/p5-Socket6 \
-		net/rrdtool \
 		security/p5-Digest-HMAC \
 		www/fcgi \
+		www/spawn-fcgi \
 		www/p5-CGI-Session \
 		www/p5-libwww
 SYSCONFDIR=	${BASESYSCONFDIR}/smokeping
@@ -32,8 +33,10 @@ PKG_ARCH=	*
 
 CONFIGURE_STYLE= gnu
 CONFIGURE_ENV=	PERL5LIB=${LOCALBASE}/libdata/perl5/site_perl
-CONFIGURE_ARGS=	--with-htdocs-dir=/var/www/htdocs/smokeping
+CONFIGURE_ARGS=	--enable-pkgonly \
+		--with-htdocs-dir=/var/www/htdocs/smokeping
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/conftools
+
 FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/smokeping
 
 PMDIR=		libdata/perl5/site_perl
