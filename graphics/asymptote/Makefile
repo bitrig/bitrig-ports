@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2014/08/14 07:06:00 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.20 2014/11/05 11:43:59 sthen Exp $
 
 COMMENT=		powerful descriptive vector graphics language
 BROKEN-hppa=		ghostscript segfaults during build
@@ -19,7 +19,7 @@ EXTRACT_SUFX=		.tgz
 MODULES=		lang/python
 
 WANTLIB += GL GLU c fftw3 gc glut gsl gslcblas m ncurses pthread
-WANTLIB += pthread-stubs readline sigsegv z
+WANTLIB += readline sigsegv x11 z
 WANTLIB += c++ c++abi
 
 BUILD_DEPENDS=		print/texlive/base
