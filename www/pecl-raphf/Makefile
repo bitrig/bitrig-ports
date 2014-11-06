@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/01/15 00:16:40 dlg Exp $
+# $OpenBSD: Makefile,v 1.3 2014/11/06 17:13:40 sthen Exp $
 
 COMMENT=	persistent handle and resource factory API
 

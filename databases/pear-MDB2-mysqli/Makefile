@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/08/12 04:11:20 robert Exp $
+# $OpenBSD: Makefile,v 1.12 2014/11/06 17:13:39 sthen Exp $
 
 COMMENT =	MySQLi database abstraction layer for PHP
 

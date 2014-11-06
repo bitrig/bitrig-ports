@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/05/11 20:32:28 benoit Exp $
+# $OpenBSD: Makefile,v 1.3 2014/11/06 17:13:40 sthen Exp $
 
 COMMENT =	extended HTTP support
 
@@ -7,6 +7,7 @@ V =		2.0.6
 PKGNAME =	pecl-${_PECLMOD}-${V}
 REVISION =	0
 DISTNAME =	pecl_${_PECLMOD}-${V}
+REVISION =	0
 
 # PHP
 PERMIT_PACKAGE_CDROM =	Yes

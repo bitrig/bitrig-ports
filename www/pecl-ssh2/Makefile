@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/08/12 04:11:21 robert Exp $
+# $OpenBSD: Makefile,v 1.15 2014/11/06 17:13:40 sthen Exp $
 
 COMMENT=	PHP bindings for the libssh2 library
 

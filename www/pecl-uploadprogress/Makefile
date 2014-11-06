@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/08/14 11:46:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.14 2014/11/06 17:13:40 sthen Exp $
 
 COMMENT=	PHP upload progress meter
 
