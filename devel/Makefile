@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1270 2014/11/01 22:59:47 bluhm Exp $
+# $OpenBSD: Makefile,v 1.1271 2014/11/06 02:58:04 stu Exp $
 
      SUBDIR =
      SUBDIR += ElectricFence
@@ -315,6 +315,7 @@
      SUBDIR += jansson
      SUBDIR += jdk
      SUBDIR += jenkins
+     SUBDIR += jimarc4random
      SUBDIR += json-c
      SUBDIR += json-glib
      SUBDIR += kdbg
@@ -1425,6 +1426,7 @@
      SUBDIR += swig
      SUBDIR += t1lib
      SUBDIR += tclap
+     SUBDIR += tclarc4random
      SUBDIR += tclcl
      SUBDIR += tcllib
      SUBDIR += tclthread
