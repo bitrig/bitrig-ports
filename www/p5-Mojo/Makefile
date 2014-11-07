@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.13 2014/05/15 22:30:08 bluhm Exp $
+# $OpenBSD: Makefile,v 1.14 2014/11/07 11:13:09 sthen Exp $
 
-COMMENT =	next generation web framework
+COMMENT =	next generation web framework for Perl
 
 MODULES =	cpan
-DISTNAME =	Mojolicious-4.99
-REVISION =	0
+DISTNAME =	Mojolicious-5.58
 CATEGORIES =	www
 
 # Perl
@@ -21,9 +20,7 @@ RUN_DEPENDS =	devel/p5-EV \
 MAKE_ENV += TEST_CACHING=Yes
 MAKE_ENV += TEST_EV=Yes
 MAKE_ENV += TEST_HYPNOTOAD=Yes
-MAKE_ENV += TEST_IPV6=Yes
 MAKE_ENV += TEST_MORBO=Yes
-MAKE_ENV += TEST_ONLINE=Yes
 MAKE_ENV += TEST_POD=Yes
 MAKE_ENV += TEST_PREFORK=Yes
 MAKE_ENV += TEST_TLS=Yes
