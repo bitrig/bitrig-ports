@@ -1,19 +1,17 @@
-# $OpenBSD: Makefile,v 1.33 2013/10/11 23:50:39 naddy Exp $
+# $OpenBSD: Makefile,v 1.34 2014/11/07 13:33:40 benoit Exp $
 
 COMMENT=	convert HTML pages to PDF/PS format
 
-V=			1.8.27
+V =			1.8.28
 DISTNAME=		htmldoc-${V}
 CATEGORIES=     	print www
-
-REVISION =		8
 
 HOMEPAGE =		http://www.msweet.org/projects.php?Z1
 
 # GPLv2 with OpenSSL exception.
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c crypto m ssl z jpeg png
+WANTLIB += c crypto m ssl z jpeg png stdc++
 
 DISTFILES=		${DISTNAME}-source${EXTRACT_SUFX}
 MASTER_SITES =		http://www.msweet.org/files/project1/ \
@@ -24,7 +22,7 @@ LIB_DEPENDS=		graphics/jpeg \
 			graphics/png
 
 CONFIGURE_STYLE=	gnu dest
-CONFIGURE_ARGS+=	--without-gui
+CONFIGURE_ARGS+=	--without-gui --disable-gnutls
 CONFIGURE_ENV= 		LDFLAGS="-L${LOCALBASE}/lib" \
 			CXXFLAGS="${CXXFLAGS} -I${LOCALBASE}/include" \
 			CPPFLAGS="-I${LOCALBASE}/include"
