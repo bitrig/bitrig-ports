@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/10/25 17:10:14 chrisz Exp $
+# $OpenBSD: Makefile,v 1.3 2014/11/09 09:22:11 avsm Exp $
 
 MULTI_PACKAGES =	-main -lib
 
@@ -12,11 +12,12 @@ GH_ACCOUNT =		ocaml
 GH_PROJECT =		opam
 GH_TAGNAME =		${V}
 DISTNAME =		${GH_PROJECT}-${V}
+REVISION =		1
 
 PKGNAME-main =		opam-${V}
 PKGNAME-lib =		opam-lib-${V}
 
-HOMEPAGE =		http://opam.ocamlpro.com/
+HOMEPAGE =		https://opam.ocamlpro.com/
 
 # LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
@@ -33,8 +34,10 @@ BUILD_DEPENDS =		devel/git \
 			devel/ocaml-re \
 			devel/ocaml-jsonm
 
-# we don't use ocp-build (yet)
-#MAKE_ENV =		OCP_HOME="${WRKDIR}"
+RUN_DEPENDS =		lang/ocaml-camlp4 \
+			net/rsync \
+			archivers/unzip \
+			devel/gmake
 
 USE_GMAKE =		Yes
 
