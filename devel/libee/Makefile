@@ -1,19 +1,20 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/21 08:45:15 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.7 2014/11/09 09:25:57 benoit Exp $
 
 COMMENT =	event expression library
 DISTNAME =	libee-0.4.1
-REVISION =	0
 SHARED_LIBS +=  ee                   0.1      # 0.1
 CATEGORIES =	devel
 
+REVISION =	1
+
 HOMEPAGE =	http://www.libee.org/
 
-# LGPLv2.1 
+# LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c estr
+WANTLIB += 		c estr
 
-MASTER_SITES =	${HOMEPAGE}/files/download/
+MASTER_SITES =		${HOMEPAGE}/files/download/
 
 TEST_FLAGS =		CFLAGS+=-I${LOCALBASE}/include
 
