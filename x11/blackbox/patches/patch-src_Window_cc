@@ -1,11 +1,22 @@
---- src/Window.cc.orig	Sat Apr 26 22:35:00 2014
-+++ src/Window.cc	Sat Apr 26 22:35:13 2014
-@@ -44,6 +44,8 @@
+$OpenBSD: patch-src_Window_cc,v 1.3 2014/11/11 09:28:29 dcoppa Exp $
+
+Calling XSetInputFocus() with non-"stale" time.
+I believe a change in Xorg facilitated this bug where, occasionally,
+a FocusOut event would immediately follow a FocusIn event, leaving
+focus reverted to Root window.
+References:
+	https://bugs.freedesktop.org/show_bug.cgi?id=83900
+	http://marc.info/?l=openbsd-misc&m=141067888307365&w=2
+
+--- src/Window.cc.orig	Tue Nov 11 10:09:45 2014
++++ src/Window.cc	Tue Nov 11 10:11:02 2014
+@@ -2194,7 +2194,7 @@ bool BlackboxWindow::setInputFocus(void) {
+   }
  
- #include <assert.h>
+   XSetInputFocus(blackbox->XDisplay(), client.window,
+-                 RevertToPointerRoot, blackbox->XTime());
++                 RevertToPointerRoot, CurrentTime);
  
-+#include <cstdlib>
-+
- /*
-   sometimes C++ is a pain in the ass... it gives us stuff like the
-   default copy constructor and assignment operator (which does member
+   if (client.wmprotocols.wm_take_focus) {
+     XEvent ce;
+
