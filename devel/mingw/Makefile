@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/11/09 16:25:17 naddy Exp $
+# $OpenBSD: Makefile,v 1.9 2014/11/12 08:20:09 dcoppa Exp $
 
 COMMENT =	development environment for native Windows applications
 
