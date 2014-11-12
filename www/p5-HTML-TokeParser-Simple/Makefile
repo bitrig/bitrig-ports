@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 11:44:46 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2014/11/12 10:53:53 benoit Exp $
 
 COMMENT= 	simple interface to HTML::TokeParser
 
-DISTNAME=	HTML-TokeParser-Simple-3.15
-REVISION=	5
+DISTNAME =	HTML-TokeParser-Simple-3.16
 CATEGORIES=	www
 
 # Perl
