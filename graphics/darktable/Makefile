@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.41 2014/11/07 10:40:05 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.42 2014/11/12 12:34:07 sthen Exp $
 
 # requires SSE
 ONLY_FOR_ARCHS=	i386 amd64
@@ -14,7 +14,7 @@ COMMENT=	virtual lighttable and darkroom for photographers
 # N.B. newer versions require TLS
 DISTNAME=	darktable-1.2.3
 EXTRACT_SUFX=	.tar.xz
-REVISION=	4
+REVISION=	5
 
 SHARED_ONLY=	Yes
 
@@ -66,8 +66,7 @@ SEPARATE_BUILD=	Yes
 USE_GROFF=	Yes
 
 CONFIGURE_ARGS=	-DOPENJPEG_INCLUDE_DIR=${PREFIX}/include/openjpeg-1.5 \
-		-DBINARY_PACKAGE_BUILD=1 \
-		-DCUSTOM_CFLAGS=1
+		-DBINARY_PACKAGE_BUILD=1
 
 # enable workaround for mutex problems
 CFLAGS+=	-D_DEBUG
