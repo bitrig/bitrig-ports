@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 10:50:13 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2014/11/13 09:08:10 benoit Exp $
 
 COMMENT =	fallbackable module loader
 
 MODULES =	cpan
-DISTNAME =	Best-0.12
-REVISION =	0
+DISTNAME =	Best-0.15
 CATEGORIES =	devel
 
 # MIT
