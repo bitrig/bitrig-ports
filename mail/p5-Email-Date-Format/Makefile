@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:23:52 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2014/11/13 10:54:11 benoit Exp $
 
 COMMENT=	produce RFC 2822 date strings
 
 MODULES=	cpan
-DISTNAME=	Email-Date-Format-1.002
-REVISION=	1
+DISTNAME =	Email-Date-Format-1.005
 CATEGORIES=	mail
 USE_GROFF =	Yes
 
