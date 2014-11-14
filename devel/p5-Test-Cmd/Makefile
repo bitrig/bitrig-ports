@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 10:50:22 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2014/11/14 09:01:20 benoit Exp $
 
 COMMENT=	perl module for portable testing of commands and scripts
 
-DISTNAME=	Test-Cmd-1.05
-REVISION=	2
+DISTNAME =	Test-Cmd-1.06
 CATEGORIES=	devel
 
 # perl
