@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2014/11/14 17:41:50 jeremy Exp $
+# $OpenBSD: Makefile,v 1.34 2014/11/14 17:51:42 jeremy Exp $
 
 COMMENT-main=		object oriented script language with threads
 COMMENT-iconv=		libiconv interface for ruby
@@ -24,6 +24,8 @@ MODULES=		converters/libiconv
 MODULES+=		gcc4
 MODGCC4_ARCHS=		*
 MODGCC4_LANGS=		c
+REVISION-main=		3
+REVISION-ri_docs=	0
 
 CONFIGURE_ARGS=		--program-suffix=18 \
 			--enable-ipv6 \
