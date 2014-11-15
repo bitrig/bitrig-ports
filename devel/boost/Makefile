@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.52 2013/12/25 08:49:47 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.53 2014/11/15 08:17:56 kirby Exp $
 
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
@@ -7,12 +7,12 @@ COMMENT=	free peer-reviewed portable C++ source libraries
 VERSION=	1.53.0
 DISTNAME=	boost_${VERSION:S/./_/g}
 PKGNAME=	boost-${VERSION}
-REVISION=	8
+REVISION=	9
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=boost/}
 EXTRACT_SUFX=	.tar.bz2
 
-SO_VERSION=	5.0
+SO_VERSION=	5.1
 BOOST_LIBS=	boost_atomic-mt \
 		boost_chrono boost_chrono-mt \
 		boost_date_time boost_date_time-mt \
@@ -50,7 +50,7 @@ HOMEPAGE=	http://www.boost.org/
 # MIT-like
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m pthread util z
+WANTLIB=	c bz2 m pthread util z
 WANTLIB+=	c++ c++abi
 
 MODULES=	converters/libiconv \
@@ -61,11 +61,13 @@ MODULES+=		lang/clang
 MODCLANG_ARCHS =        amd64 i386
 MODCLANG_LANGS =        c c++
 BUILD_DEPENDS+=	lang/python/${MODPY_DEFAULT_VERSION_3}
+LIB_DEPENDS=	archivers/bzip2
 
 MAKE_ENV=	GCC="${CC}" GXX="${CXX}"
 
 BJAM_CONFIG=	-sICONV_PATH=${LOCALBASE} \
-		-sNO_BZIP2=1 \
+		-sBZIP2_INCLUDE=${LOCALBASE}/include \
+		-sBZIP2_LIBPATH=${LOCALBASE}/lib \
 		-d+2 -q \
 		-j ${MAKE_JOBS} \
 		cflags='${CFLAGS}' cxxflags='${CXXFLAGS}' \
