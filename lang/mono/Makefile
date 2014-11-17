@@ -3,7 +3,7 @@
 COMMENT=	cross platform, open source .NET developement framework
 
 DISTNAME=	mono-3.4.0
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	lang devel
 
