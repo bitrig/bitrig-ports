@@ -1,7 +1,22 @@
 $OpenBSD: patch-libssp_Makefile_in,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
---- libssp/Makefile.in.orig	Sat Nov 12 14:11:29 2011
-+++ libssp/Makefile.in	Sat Nov 12 14:12:20 2011
-@@ -267,9 +267,10 @@ libssp_la_SOURCES = \
+--- libssp/Makefile.in.orig	Sun Feb 13 06:45:53 2011
++++ libssp/Makefile.in	Tue Nov 18 12:38:43 2014
+@@ -85,7 +85,7 @@ am__base_list = \
+ am__installdirs = "$(DESTDIR)$(toolexeclibdir)" \
+ 	"$(DESTDIR)$(libsubincludedir)"
+ LTLIBRARIES = $(toolexeclib_LTLIBRARIES)
+-am_libssp_la_OBJECTS = ssp.lo gets-chk.lo memcpy-chk.lo memmove-chk.lo \
++am_libssp_la_OBJECTS = ssp.lo memcpy-chk.lo memmove-chk.lo \
+ 	mempcpy-chk.lo memset-chk.lo snprintf-chk.lo sprintf-chk.lo \
+ 	stpcpy-chk.lo strcat-chk.lo strcpy-chk.lo strncat-chk.lo \
+ 	strncpy-chk.lo vsnprintf-chk.lo vsprintf-chk.lo
+@@ -262,14 +262,15 @@ toolexeclib_LTLIBRARIES = libssp.la libssp_nonshared.l
+ libsubincludedir = $(libdir)/gcc/$(target_noncanonical)/$(gcc_version)/include
+ nobase_libsubinclude_HEADERS = ssp/ssp.h ssp/string.h ssp/stdio.h ssp/unistd.h
+ libssp_la_SOURCES = \
+-	ssp.c gets-chk.c memcpy-chk.c memmove-chk.c mempcpy-chk.c \
++	ssp.c memcpy-chk.c memmove-chk.c mempcpy-chk.c \
+ 	memset-chk.c snprintf-chk.c sprintf-chk.c stpcpy-chk.c \
  	strcat-chk.c strcpy-chk.c strncat-chk.c strncpy-chk.c \
  	vsnprintf-chk.c vsprintf-chk.c
  
@@ -13,3 +28,11 @@ $OpenBSD: patch-libssp_Makefile_in,v 1.1.1.1 2013/04/08 08:20:26 pascal Exp $
  		    $(version_arg) $(lt_host_flags)
  
  libssp_nonshared_la_SOURCES = \
+@@ -424,7 +425,6 @@ mostlyclean-compile:
+ distclean-compile:
+ 	-rm -f *.tab.c
+ 
+-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gets-chk.Plo@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libssp_nonshared_la-ssp-local.Plo@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/memcpy-chk.Plo@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/memmove-chk.Plo@am__quote@

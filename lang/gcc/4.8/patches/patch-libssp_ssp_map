@@ -1,0 +1,10 @@
+--- libssp/ssp.map.orig	Fri Jul  2 06:15:09 2010
++++ libssp/ssp.map	Thu Nov 20 10:47:01 2014
+@@ -3,7 +3,6 @@ LIBSSP_1.0 {
+     __stack_chk_fail;
+     __stack_chk_guard;
+     __chk_fail;
+-    __gets_chk;
+     __memcpy_chk;
+     __memmove_chk;
+     __mempcpy_chk;

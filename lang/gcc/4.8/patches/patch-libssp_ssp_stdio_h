@@ -1,0 +1,28 @@
+--- libssp/ssp/stdio.h.orig	Wed Feb  6 17:03:54 2013
++++ libssp/ssp/stdio.h	Tue Nov 18 12:36:13 2014
+@@ -46,7 +46,6 @@ see the files COPYING3 and COPYING.RUNTIME respectivel
+ #undef vsprintf
+ #undef snprintf
+ #undef vsnprintf
+-#undef gets
+ #undef fgets
+ 
+ extern int __sprintf_chk (char *__restrict__ __s, int __flag, size_t __slen,
+@@ -72,17 +71,6 @@ extern int __vsnprintf_chk (char *__restrict__ __s, si
+   __builtin___snprintf_chk (str, len, 0, __ssp_bos (str), __VA_ARGS__)
+ #define vsnprintf(str, len, fmt, ap) \
+   __builtin___vsnprintf_chk (str, len, 0, __ssp_bos (str), fmt, ap)
+-
+-extern char *__gets_chk (char *__str, size_t);
+-extern char *__SSP_REDIRECT (__gets_alias, (char *__str), gets);
+-
+-extern inline __attribute__((__always_inline__)) char *
+-gets (char *__str)
+-{
+-  if (__ssp_bos (__str) != (size_t) -1)
+-    return __gets_chk (__str, __ssp_bos (__str));
+-  return __gets_alias (__str);
+-}
+ 
+ extern char *__SSP_REDIRECT (__fgets_alias,
+ 			     (char *__restrict__ __s, int __n,
