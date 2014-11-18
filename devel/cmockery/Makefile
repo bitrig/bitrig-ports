@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/08/07 21:31:30 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2014/11/18 10:17:17 brad Exp $
 
 COMMENT =		library to simplify writing unit tests for C applications
 
