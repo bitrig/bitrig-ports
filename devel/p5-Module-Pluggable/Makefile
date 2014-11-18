@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/11/18 22:32:24 sthen Exp $
+# $OpenBSD: Makefile,v 1.1.1.2 2014/11/18 22:31:05 sthen Exp $
 
 COMMENT=        automatically give your module the ability to have plugins
 
