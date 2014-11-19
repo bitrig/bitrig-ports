@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.50 2014/06/26 20:06:50 naddy Exp $
+# $OpenBSD: Makefile,v 1.52 2014/11/19 23:49:41 sthen Exp $
 
 COMMENT=	CVS repository synchronization utility
 
