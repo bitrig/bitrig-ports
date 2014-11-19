@@ -119,6 +119,11 @@ CONFIGURE_ARGS+=	--with-jack=no \
 			--with-radius=no \
 			--with-resample=no
 
+#directly uses gcc
+MODULES       += gcc4
+MODGCC4_ARCHS += *
+MODGCC4_LANGS =  c 
+
 # Some build options (including a useful malloc debug) are available
 # via menuselect. They may be enabled by running 'make configure', cd
 # to WRKSRC, 'gmake menuselect', then 'cd -' back to the port directory
