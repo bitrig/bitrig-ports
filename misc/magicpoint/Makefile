@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.61 2014/08/10 07:25:45 espie Exp $
+# $OpenBSD: Makefile,v 1.62 2014/11/20 09:11:21 brad Exp $
 
 COMMENT=	X11-based presentation tool
 
@@ -12,9 +12,7 @@ HOMEPAGE=	http://member.wide.ad.jp/wg/mgp/
 
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c ICE jpeg lcms m SM util \
-		Xt Xau Xdmcp Xmu Xext X11 Xtst z \
-		pthread-stubs xcb ttf png mng gif
+WANTLIB=	ICE SM X11 Xau Xdmcp Xext Xmu Xt Xtst c gif m mng png ttf util
 
 # plus sign is for localized (i.e. Japanese) version
 LIB_DEPENDS+=	print/freetype \
@@ -26,7 +24,6 @@ RUN_DEPENDS+=	graphics/netpbm \
 
 MODULES=	devel/gettext
 
-USE_GROFF =	Yes
 AUTOCONF_VERSION=2.13
 # XXX while autoconf will append gnu in CONFIGURE_STYLE, we explicitely
 # set it anyway because order matters
