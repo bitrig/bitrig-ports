@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.72 2014/03/23 17:22:45 espie Exp $
+# $OpenBSD: Makefile,v 1.73 2014/11/21 21:25:16 nigel Exp $
 
 COMMENT-main = 		Japanese input method
 COMMENT-dict =		dictionaries for Japanese Wnn
