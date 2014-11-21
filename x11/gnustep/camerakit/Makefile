@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/05/23 22:26:45 kili Exp $
+# $OpenBSD: Makefile,v 1.5 2014/11/21 18:21:21 sebastia Exp $
 
 COMMENT =	GNUstep wrapper around libgphoto2
 

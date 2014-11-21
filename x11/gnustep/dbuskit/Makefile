@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/07/17 17:35:50 sebastia Exp $
+# $OpenBSD: Makefile,v 1.8 2014/11/21 18:21:21 sebastia Exp $
 
 BROKEN-alpha =	DKEndpointManager.m:282: error: unrecognizable insn
 

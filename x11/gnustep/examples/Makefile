@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2014/05/22 09:48:56 sebastia Exp $
+# $OpenBSD: Makefile,v 1.24 2014/11/21 18:21:21 sebastia Exp $
 
 COMMENT=	GNUstep example applications
 
