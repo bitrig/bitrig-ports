@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2014/06/19 18:58:01 kili Exp $
+# $OpenBSD: Makefile,v 1.18 2014/11/22 20:59:41 kili Exp $
 
 COMMENT =		unit testing framework for Haskell
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/06/19 18:58:02 kili Exp $
+# $OpenBSD: Makefile,v 1.17 2014/11/22 20:59:42 kili Exp $
 
 COMMENT =		fast combinator parsing for bytestrings
 

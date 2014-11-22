@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 10:50:07 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2014/11/22 20:59:41 kili Exp $
 
 COMMENT =		knowledge of GHC's installation directories
 
