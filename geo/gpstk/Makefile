@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/11/25 14:16:22 sthen Exp $
+# $OpenBSD: Makefile,v 1.16 2014/11/23 20:28:01 sthen Exp $
 
 COMMENT-main=		GPS processing toolkit
 COMMENT-devel=		GPStk development libraries and headers
@@ -53,8 +53,6 @@ WANTLIB-main=		m c curses
 WANTLIB-main +=		c++ c++abi pthread
 WANTLIB-devel=
 RUN_DEPENDS-devel=	${PKGNAME-main}:geo/gpstk
-
-WRKDIST=		${WRKDIR}/${DISTNAME}
 
 pre-configure:
 	cd ${WRKDIST} && sh autogen.sh
