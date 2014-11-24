@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 10:50:06 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2014/11/24 16:07:58 kili Exp $
 
 COMMENT =		ANSI Wadler/Leijen pretty printer
 

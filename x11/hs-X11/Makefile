@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/06/17 10:07:40 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.18 2014/11/24 16:07:59 kili Exp $
 
 COMMENT =		bindings to the X11 graphics library for GHC
 

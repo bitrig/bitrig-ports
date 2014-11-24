@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/07/18 22:21:24 kili Exp $
+# $OpenBSD: Makefile,v 1.18 2014/11/24 16:07:59 kili Exp $
 
 COMMENT =		mmap API for Haskell
 

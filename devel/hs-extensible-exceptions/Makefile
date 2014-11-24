@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/07/18 20:48:52 kili Exp $
+# $OpenBSD: Makefile,v 1.2 2014/11/24 16:07:59 kili Exp $
 
 COMMENT =		extensible exceptions for Haskell
 

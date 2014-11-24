@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 11:42:41 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2014/11/24 16:07:59 kili Exp $
 
 COMMENT =		simple XML library
 
