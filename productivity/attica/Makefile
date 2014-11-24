@@ -6,7 +6,6 @@ DISTNAME =	attica-0.4.2
 REVISION =	3
 
 HOMEPAGE =	https://projects.kde.org/projects/frameworks/attica
->>>>>>> 2421981... Fix WANTLIB and add HOMEPAGE for libattica.
 
 SHARED_LIBS =	attica		1.0
 EXTRACT_SUFX =	.tar.bz2
