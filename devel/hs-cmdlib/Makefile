@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 10:50:07 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2014/11/24 16:09:18 kili Exp $
 
 COMMENT =		command line parsing and online help
 
@@ -16,7 +16,6 @@ MODGHC_BUILD =		cabal hackage haddock register
 BUILD_DEPENDS +=	${RUN_DEPENDS}
 RUN_DEPENDS +=		devel/hs-mtl>=2 \
 			devel/hs-split \
-			devel/hs-syb \
-			devel/hs-transformers>=0.2.2
+			devel/hs-syb
 
 .include <bsd.port.mk>
