@@ -9,8 +9,6 @@ CATEGORIES =		devel editors
 
 HOMEPAGE =		https://wincent.com/products/command-t
 
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
-
 # BSD2
 PERMIT_PACKAGE_CDROM =	Yes
 

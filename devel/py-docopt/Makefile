@@ -6,7 +6,6 @@ MODPY_EGG_VERSION = 0.6.2
 DISTNAME =	docopt-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
 CATEGORIES =	devel
-MAINTAINER =	Johan Huldtgren <jhuldtgren@gmail.com>
 
 HOMEPAGE =	http://docopt.org
 

@@ -13,7 +13,6 @@ EXTRACT_ONLY =	${SRCFILES}
 
 CATEGORIES =	sysutils x11
 HOMEPAGE =	http://www.krename.net/
-MAINTAINER =	Vadim Zhukov <persgray@gmail.com>
 PORTROACH =	limit:^4
 
 PKGSPEC =	krename->=3.9

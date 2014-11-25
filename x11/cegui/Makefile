@@ -19,8 +19,6 @@ CATEGORIES =		x11
 
 HOMEPAGE =		http://cegui.org.uk/
 
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

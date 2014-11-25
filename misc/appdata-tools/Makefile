@@ -7,8 +7,6 @@ REVISION =		0
 
 CATEGORIES =		misc
 
-MAINTAINER =		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 

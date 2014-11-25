@@ -5,7 +5,6 @@ DISTNAME =	cups-bjnp-2.0
 CATEGORIES =	print
 
 HOMEPAGE =	http://cups-bjnp.sourceforge.net
-MAINTAINER =	Julian Andrej <atomic@wolfman.devio.us>
 
 # GPLv2 - LGPLv2
 PERMIT_PACKAGE_CDROM =	Yes

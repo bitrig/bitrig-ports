@@ -13,8 +13,6 @@ SHARED_LIBS +=	appstream-glib            0.0 # 6.6
 
 CATEGORIES=		devel
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 HOMEPAGE=		http://people.freedesktop.org/~hughsient/appstream-glib/
 
 # LGPLv2.1

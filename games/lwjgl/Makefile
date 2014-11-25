@@ -24,8 +24,6 @@ CATEGORIES=	games devel
 
 HOMEPAGE=	http://lwjgl.org
 
-MAINTAINER=	Aaron Bieber <abieber@openbsd.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM=   Yes
 

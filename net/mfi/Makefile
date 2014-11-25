@@ -10,8 +10,6 @@ REVISION=	1
 
 CATEGORIES=	net
 
-MAINTAINER=	Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # at least the firmware files are restricted, if not more
 PERMIT_PACKAGE_CDROM=	http://www.ubnt.com/eula/
 PERMIT_PACKAGE_FTP=	http://www.ubnt.com/eula/

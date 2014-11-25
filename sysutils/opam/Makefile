@@ -18,8 +18,6 @@ PKGNAME-lib =		opam-lib-${V}
 
 HOMEPAGE =		http://opam.ocamlpro.com/
 
-MAINTAINER =		chrisz@openbsd.org
-
 # LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -5,8 +5,6 @@ COMMENT=		syntax checks for Puppet manifests and templates
 DISTNAME=		puppet-syntax-1.3.0
 CATEGORIES=		sysutils
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
 

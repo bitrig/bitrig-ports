@@ -13,8 +13,6 @@ HOMEPAGE =	http://www.mapproxy.org/
 # apache v2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
-
 MODULES =	lang/python
 MODPY_SETUPTOOLS =	Yes
 SUBST_VARS +=	GH_TAGNAME

@@ -7,7 +7,6 @@ PKGNAME =	mars-${V}
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://mars-game.sourceforge.net/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

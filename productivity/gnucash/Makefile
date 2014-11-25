@@ -22,8 +22,6 @@ CATEGORIES =		productivity
 
 HOMEPAGE =		http://www.gnucash.org/
 
-MAINTAINER =		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 

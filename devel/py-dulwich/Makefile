@@ -11,8 +11,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		http://samba.org/~jelmer/dulwich/
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 

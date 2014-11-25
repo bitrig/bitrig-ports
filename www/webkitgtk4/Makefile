@@ -21,9 +21,6 @@ CATEGORIES =		www
 
 HOMEPAGE =		http://webkitgtk.org/
 
-MAINTAINER =		Landry Breuil <landry@openbsd.org> \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # LGPLv2 and BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

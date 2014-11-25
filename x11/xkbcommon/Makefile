@@ -9,8 +9,6 @@ CATEGORIES=		x11 inputmethods
 
 HOMEPAGE=		http://xkbcommon.org/
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # All licenses are derivative of the MIT/X11 license, mostly identical other
 # than no-endorsement clauses (e.g. paragraph 4 of The Open Group's license).
 PERMIT_PACKAGE_CDROM=	Yes

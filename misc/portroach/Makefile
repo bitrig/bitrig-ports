@@ -11,8 +11,6 @@ REVISION=		0
 DISTNAME=		${GH_PROJECT}-${GH_TAGNAME}
 CATEGORIES=		misc
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 HOMEPAGE=		http://jasperla.github.io/portroach/
 
 # BSD

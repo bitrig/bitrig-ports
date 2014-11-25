@@ -6,8 +6,6 @@ DISTNAME =	File-Listing-6.04
 CPAN_AUTHOR =	GAAS
 CATEGORIES =	devel
 
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	 Yes
 

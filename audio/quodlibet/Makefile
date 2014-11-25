@@ -8,8 +8,6 @@ REVISION=	0
 
 CATEGORIES=	audio
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 HOMEPAGE=	http://quodlibet.googlecode.com/
 
 # GPLv2 only

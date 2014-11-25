@@ -6,7 +6,6 @@ MODPY_EGG_VERSION = 1.09
 DISTNAME =	sh-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
 CATEGORIES =	devel
-MAINTAINER =	Johan Huldtgren <jhuldtgren@gmail.com>
 
 HOMEPAGE =	https://github.com/amoffat/sh
 

@@ -5,7 +5,6 @@ DISTNAME =	le-1.15.0
 CATEGORIES =	editors
 
 HOMEPAGE =	http://lav.yar.ru/programs.html
-MAINTAINER =	Ivan Ivanov <rambiusparkisanius@gmail.com>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

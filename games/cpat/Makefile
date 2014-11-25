@@ -5,7 +5,6 @@ DISTNAME =	cpat-1.2.1
 CATEGORIES =	games
 
 HOMEPAGE =	http://cpat.sourceforge.net/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM =	Yes

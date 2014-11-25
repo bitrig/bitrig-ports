@@ -19,8 +19,6 @@ HOMEPAGE=	http://www.mapserver.org/
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
 
-MAINTAINER=	Landry Breuil <landry@openbsd.org>
-
 MODULES=	devel/cmake
 RUN_DEPENDS =	www/spawn-fcgi
 

@@ -14,8 +14,6 @@ CATEGORIES =		games
 
 HOMEPAGE =		http://sumwars.org/wiki/Main_Page
 
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
-
 # GPLv3+ / CC-by-sa 3.0 for data
 PERMIT_PACKAGE_CDROM =	Yes
 

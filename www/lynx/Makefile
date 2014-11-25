@@ -11,7 +11,6 @@ CATEGORIES =	www net
 REVISION =	0
 
 HOMEPAGE =	http://lynx.isc.org/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM =	Yes

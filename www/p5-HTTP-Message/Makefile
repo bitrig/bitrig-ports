@@ -6,8 +6,6 @@ DISTNAME =	HTTP-Message-6.06
 CATEGORIES =	www
 CPAN_AUTHOR =	GAAS
 
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

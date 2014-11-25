@@ -13,8 +13,6 @@ CATEGORIES=		misc devel
 
 HOMEPAGE=		http://www.gtkmm.org/
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GFDLv1.2
 PERMIT_PACKAGE_CDROM=	Yes
 

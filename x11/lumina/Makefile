@@ -14,8 +14,6 @@ CATEGORIES=	x11
 
 HOMEPAGE=	https://github.com/pcbsd/lumina
 
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM =   Yes
 

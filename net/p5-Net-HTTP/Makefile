@@ -5,8 +5,6 @@ COMMENT =	Perl HTTP connection client
 DISTNAME =	Net-HTTP-6.07
 CATEGORIES =	net
 
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	 Yes
 

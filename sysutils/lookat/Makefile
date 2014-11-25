@@ -7,7 +7,6 @@ PKGNAME =	lookat-${V}
 CATEGORIES =	sysutils textproc
 
 HOMEPAGE =	http://www.wagemakers.be/english/programs/lookat
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

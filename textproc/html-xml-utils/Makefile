@@ -8,8 +8,6 @@ CATEGORIES =		textproc
 
 HOMEPAGE =		http://www.w3.org/Tools/HTML-XML-utils/
 
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
-
 # W3C license
 PERMIT_PACKAGE_CDROM =	Yes
 

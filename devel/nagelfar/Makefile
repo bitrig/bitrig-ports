@@ -6,7 +6,6 @@ DISTNAME =	nagelfar12
 PKGNAME =	nagelfar-1.2
 CATEGORIES =	devel
 HOMEPAGE =	http://nagelfar.sourceforge.net/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # GPLv2 (Nagelfar)
 # BSD (textSearch)

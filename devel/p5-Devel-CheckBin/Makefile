@@ -6,8 +6,6 @@ DISTNAME =		Devel-CheckBin-0.02
 
 CATEGORIES =		devel
 
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -6,8 +6,6 @@ DISTNAME =		smtube-14.8.0
 
 CATEGORIES =		multimedia x11
 
-MAINTAINER =		Gonzalo L. R. <gonzalo@openbsd.org>
-
 HOMEPAGE =		http://smplayer.sourceforge.net/
 
 # GPLv2

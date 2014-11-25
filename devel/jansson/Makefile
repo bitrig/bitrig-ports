@@ -12,8 +12,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		http://www.digip.org/jansson/
 
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -4,7 +4,6 @@ COMMENT =		make presentations with groff and PDF
 DISTNAME =		gpresent-2.3
 CATEGORIES =		textproc
 HOMEPAGE =		http://www.science.uva.nl/~bobd/useful/gpresent/
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

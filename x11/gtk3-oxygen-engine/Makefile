@@ -10,8 +10,6 @@ PKGNAME =		gtk3-oxygen-engine-${V}
 CATEGORIES =		x11
 HOMEPAGE =		https://projects.kde.org/projects/playground/artwork/oxygen-gtk/
 
-MAINTAINER =		Fabian Raetz <fabian.raetz@gmail.com>
-
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -7,8 +7,6 @@ DISTNAME =	beets-${MODPY_EGG_VERSION}
 REVISION =	0
 CATEGORIES =	audio
 
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
-
 HOMEPAGE =	http://beets.radbox.org/
 
 # MIT

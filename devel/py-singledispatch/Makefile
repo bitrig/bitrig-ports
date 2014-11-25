@@ -7,7 +7,6 @@ PKGNAME =	py-singledispatch-${MODPY_EGG_VERSION}
 CATEGORIES =	devel
 
 HOMEPAGE =	https://pypi.python.org/pypi/singledispatch
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

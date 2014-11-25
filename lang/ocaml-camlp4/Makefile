@@ -15,8 +15,6 @@ PKGSPEC =	ocaml-camlp4-=${V}
 
 HOMEPAGE =	https://github.com/ocaml/camlp4/
 
-MAINTAINER =	Christopher Zimmermann <chrisz@openbsd.org>
-
 # LGPL >=2.1
 PERMIT_PACKAGE_CDROM =	Yes
 

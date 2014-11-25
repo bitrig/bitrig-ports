@@ -9,8 +9,6 @@ CATEGORIES=	security
 
 HOMEPAGE=	http://cisofy.com
 
-MAINTAINER=	Gonzalo L. R. <gonzalo@openbsd.org>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 

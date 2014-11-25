@@ -6,7 +6,6 @@ EXTRACT_SUFX =	.tar.lz
 CATEGORIES =	editors
 
 HOMEPAGE =	http://www.gnu.org/software/moe/moe.html
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

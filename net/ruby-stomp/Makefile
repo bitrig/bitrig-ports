@@ -7,8 +7,6 @@ CATEGORIES = 	net
 
 HOMEPAGE =	https://github.com/stompgem/stomp
 
-MAINTAINER =	Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # Apache 2.0
 PERMIT_PACKAGE_CDROM = Yes
 

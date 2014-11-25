@@ -15,9 +15,6 @@ SUBST_VARS+=		API_VERSION
 
 HOMEPAGE=		http://www.freedesktop.org/wiki/Software/Farstream
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 

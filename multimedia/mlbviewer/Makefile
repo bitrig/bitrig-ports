@@ -8,7 +8,6 @@ DISTNAME =		mlbviewer${Y}-sf-${V}
 PKGNAME =		mlbviewer-${Y}.${V}
 CATEGORIES =		multimedia
 HOMEPAGE =		http://sourceforge.net/p/mlbviewer/wiki/Home/
-MAINTAINER =		Peter Hessler <phessler@openbsd.org>
 REVISION =		0
 
 # GPLv2 only

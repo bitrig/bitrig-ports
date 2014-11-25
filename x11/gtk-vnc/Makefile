@@ -13,9 +13,6 @@ SHARED_LIBS +=  gtk-vnc-2.0          0.1      # 0.2
 
 CATEGORIES=		x11 net
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 

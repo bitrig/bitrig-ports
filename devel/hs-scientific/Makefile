@@ -7,8 +7,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		https://github.com/basvandijk/scientific
 
-MAINTAINER =		David Schaefer <dawedawe@gmx.de>
-
 # BSD3
 PERMIT_PACKAGE_CDROM =	Yes
 

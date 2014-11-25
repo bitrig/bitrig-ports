@@ -12,8 +12,6 @@ CATEGORIES=	multimedia
 
 HOMEPAGE=	http://www.lavrsen.dk/foswiki/bin/view/Motion/
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 # GPL (according to source files, v2 only. website says v2+).
 PERMIT_PACKAGE_CDROM=	Yes
 

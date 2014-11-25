@@ -6,8 +6,6 @@ DISTNAME =	HTML-Form-6.03
 CATEGORIES =	www
 CPAN_AUTHOR =	GAAS
 
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

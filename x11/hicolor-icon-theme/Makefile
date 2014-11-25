@@ -14,8 +14,6 @@ HOMEPAGE=		http://www.freedesktop.org/Standards/icon-theme-spec
 
 MASTER_SITES=		http://icon-theme.freedesktop.org/releases/
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -9,8 +9,6 @@ CATEGORIES =	www
 
 HOMEPAGE =	http://portix.bitbucket.org/dwb/
 
-MAINTAINER =	Henrik Friedrichsen <henrik@diff.cc>
-
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 

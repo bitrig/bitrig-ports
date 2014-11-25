@@ -10,8 +10,6 @@ DISTNAME =		icbd-$V
 
 CATEGORIES =		net
 
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
-
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes
 

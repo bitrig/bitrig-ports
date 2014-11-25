@@ -10,9 +10,6 @@ SHARED_LIBS +=  idn                  17.0     # 17.10
 CATEGORIES=		devel
 HOMEPAGE=		https://www.gnu.org/software/libidn/
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 

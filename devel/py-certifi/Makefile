@@ -10,8 +10,6 @@ REVISION =		0
 
 HOMEPAGE =		http://python-requests.org
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes
 

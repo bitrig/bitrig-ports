@@ -5,7 +5,6 @@ DISTNAME =	ne-2.5
 CATEGORIES =	editors
 
 HOMEPAGE =	http://ne.di.unimi.it/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

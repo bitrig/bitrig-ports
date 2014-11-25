@@ -10,8 +10,6 @@ DISTNAME =	compton-${VERSION:S/_//}
 CATEGORIES =	x11
 HOMEPAGE =	https://github.com/chjj/compton
 
-MAINTAINER =	Sunil Nimmagadda <sunil@nimmagadda.net>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

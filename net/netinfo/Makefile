@@ -5,7 +5,6 @@ COMMENT =		protocol, service, network, host and ether info for Tcl
 DISTNAME =		netinfo-0.6
 CATEGORIES =		net
 HOMEPAGE =		http://www3.bell.net/stwo/
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

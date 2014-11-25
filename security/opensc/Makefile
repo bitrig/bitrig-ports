@@ -13,8 +13,6 @@ SHARED_LIBS +=	smm-local 0.0	# 3.0
 
 HOMEPAGE=	https://github.com/OpenSC/OpenSC/wiki
 
-MAINTAINER=	David Coppa <dcoppa@openbsd.org>
-
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -19,7 +19,6 @@ EXTRACT_ONLY =	${SRCFILES}
 CATEGORIES =	sysutils x11 x11/kde
 HOMEPAGE =	http://www.krename.net/
 
-MAINTAINER =	Vadim Zhukov <persgray@gmail.com>
 PORTROACH =	limit:^3\.0
 
 # GPLv2

@@ -10,8 +10,6 @@ CATEGORIES=	fonts x11
 
 HOMEPAGE=	http://abattis.org/cantarell/
 
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # SIL Open Font License v1.1
 PERMIT_PACKAGE_CDROM=	Yes
 

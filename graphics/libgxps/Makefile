@@ -9,10 +9,6 @@ SHARED_LIBS +=	gxps                      0.0 # 3.1
 
 CATEGORIES=		graphics
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>, \
-			Antoine Jacoutot <ajacoutot@openbsd.org>
-
-
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -5,8 +5,6 @@ COMMENT =	adds support for https to p5-libwww
 DISTNAME =	LWP-Protocol-https-6.06
 CATEGORIES =	www net security
 
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

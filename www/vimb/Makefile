@@ -6,7 +6,6 @@ DISTNAME =	vimb-${V}
 CATEGORIES =	www x11
 
 HOMEPAGE =	http://fanglingsu.github.io/vimb/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

@@ -8,8 +8,6 @@ CATEGORIES =		telephony security
 
 HOMEPAGE =		https://github.com/traviscross/libzrtp
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # AGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 

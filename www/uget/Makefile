@@ -5,7 +5,6 @@ DISTNAME =	uget-1.10.4
 CATEGORIES =	www net x11
 
 HOMEPAGE =	http://ugetdm.com/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes

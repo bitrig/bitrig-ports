@@ -9,8 +9,6 @@ PKGNAME =		ocaml-dose-${VERSION}
 
 HOMEPAGE =		http://dose.gforge.inria.fr/public_html/
 
-MAINTAINER =		chrisz@openbsd.org
-
 # LGPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 

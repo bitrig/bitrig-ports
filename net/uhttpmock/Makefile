@@ -7,8 +7,6 @@ SHARED_LIBS +=	uhttpmock-0.0        0.0      # 1.1
 
 CATEGORIES =		net devel
 
-MAINTAINER =		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
 

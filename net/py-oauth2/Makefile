@@ -6,7 +6,6 @@ MODPY_EGG_VERSION = 1.5.211
 DISTNAME =	oauth2-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
 CATEGORIES =	net
-MAINTAINER =	Johan Huldtgren <jhuldtgren@gmail.com>
 
 HOMEPAGE =	http://github.com/simplegeo/python-oauth2
 

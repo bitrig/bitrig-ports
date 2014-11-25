@@ -7,7 +7,6 @@ DISTNAME =	coveralls-${MODPY_EGG_VERSION}
 EXTRACT_SUFX=	.zip
 PKGNAME =	py-${DISTNAME}
 CATEGORIES =	devel
-MAINTAINER =	Johan Huldtgren <jhuldtgren@gmail.com>
 
 HOMEPAGE =	http://github.com/coagulant/coveralls-python
 

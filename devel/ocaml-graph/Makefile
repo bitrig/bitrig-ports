@@ -9,7 +9,6 @@ PKGNAME =	ocaml-graph-${V}
 MASTER_SITES =	http://ocamlgraph.lri.fr/download/
 
 HOMEPAGE =	http://ocamlgraph.lri.fr/
-MAINTAINER =	Christopher Zimmermann <chrisz@openbsd.org>
 
 # LGPL 2.1
 PERMIT_PACKAGE_CDROM =	Yes

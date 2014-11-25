@@ -11,8 +11,6 @@ REVISION =		2
 
 HOMEPAGE =		http://calibre-ebook.com/
 
-MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 

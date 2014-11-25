@@ -13,9 +13,6 @@ MASTER_SITES2=	http://nerd.hu/distfiles/
 
 HOMEPAGE=	http://nginx.org/
 
-MAINTAINER=	Robert Nagy <robert@openbsd.org>, \
-		William Yodlowsky <william@openbsd.org>
-
 # BSD-like
 PERMIT_PACKAGE_CDROM=	yes
 

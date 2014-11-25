@@ -7,8 +7,6 @@ DISTNAME =		bibtex2html-1.98
 CATEGORIES =		textproc
 HOMEPAGE =		https://www.lri.fr/~filliatr/bibtex2html/
 
-MAINTAINER =		Ingo Feinerer <feinerer@logic.at>
-
 # GPLv2 only
 PERMIT_PACKAGE_CDROM =	Yes
 

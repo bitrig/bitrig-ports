@@ -18,8 +18,6 @@ SHARED_LIBS +=  ck-connector         1.0      # 0.0
 
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/ConsoleKit
 
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 

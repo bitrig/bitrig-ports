@@ -8,8 +8,6 @@ CATEGORIES=		sysutils
 
 HOMEPAGE=		http://ipmitool.sourceforge.net/
 
-MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -5,8 +5,6 @@ COMMENT=		integration with Ubiquiti mFi sensors and devices
 DISTNAME=		mfi-0.9.1
 CATEGORIES=		net
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
 

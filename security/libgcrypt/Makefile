@@ -10,8 +10,6 @@ SHARED_LIBS +=  gcrypt               19.2     # 20.2
 
 HOMEPAGE=		http://www.gnupg.org/
 
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv2/LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 

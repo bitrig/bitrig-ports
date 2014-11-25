@@ -19,8 +19,6 @@ CATEGORIES =		multimedia
 
 HOMEPAGE =		http://www.sfml-dev.org/
 
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
-
 # zlib/libpng
 PERMIT_PACKAGE_CDROM =	Yes
 

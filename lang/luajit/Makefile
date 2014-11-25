@@ -13,8 +13,6 @@ CATEGORIES =	lang
 
 HOMEPAGE =	http://luajit.org/
 
-MAINTAINER =	Pedro Martelletto <pedro@bitrig.org>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

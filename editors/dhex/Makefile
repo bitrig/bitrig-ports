@@ -8,7 +8,6 @@ REVISION =		0
 CATEGORIES =		editors
 
 HOMEPAGE =		http://www.dettus.net/dhex/
-MAINTAINER =		Thanasoulas Spiros <dsp@2f30.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

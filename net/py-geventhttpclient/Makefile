@@ -8,8 +8,6 @@ CATEGORIES =		net devel
 
 HOMEPAGE =		https://github.com/gwik/geventhttpclient
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

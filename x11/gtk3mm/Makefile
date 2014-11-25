@@ -15,8 +15,6 @@ SHARED_LIBS +=  gtkmm-3.0            4.0      # 2.0
 
 HOMEPAGE=	http://www.gtkmm.org/
 
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 

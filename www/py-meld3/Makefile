@@ -10,8 +10,6 @@ CATEGORIES =		www textproc
 
 HOMEPAGE =		https://github.com/supervisor/meld3
 
-MAINTAINER =		frantisek holop <minusf@obiit.org>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

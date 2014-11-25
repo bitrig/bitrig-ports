@@ -6,8 +6,6 @@ DISTNAME =	HTTP-Daemon-6.01
 CATEGORIES =	www
 CPAN_AUTHOR =	GAAS
 
-MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

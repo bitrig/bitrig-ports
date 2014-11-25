@@ -9,7 +9,6 @@ DISTNAME=	unison-${V}
 MASTER_SITES=	${HOMEPAGE}download/releases/stable/
 
 HOMEPAGE=	http://www.cis.upenn.edu/~bcpierce/unison/
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes

@@ -10,8 +10,6 @@ CATEGORIES=	devel
 
 HOMEPAGE=	https://code.google.com/p/gyp/
 
-MAINTAINER=	Pedro Martelletto <pedro@bitrig.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -10,8 +10,6 @@ REVISION =		0
 
 SHARED_LIBS =		duo 0.0 # 3.0
 
-MAINTAINER =		James Turner <james@calminferno.net>
-
 HOMEPAGE =		https://www.duosecurity.com/docs/duounix
 MASTER_SITES =		https://dl.duosecurity.com/
 

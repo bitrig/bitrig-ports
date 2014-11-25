@@ -12,8 +12,6 @@ CATEGORIES=	www sysutils
 
 HOMEPAGE=	http://sourceforge.net/projects/phpvirtualbox/
 
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 

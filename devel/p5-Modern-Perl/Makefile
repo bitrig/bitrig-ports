@@ -7,8 +7,6 @@ CPAN_AUTHOR =		CHROMATIC
 DISTNAME =		Modern-Perl-1.20140107
 CATEGORIES =		devel
 
-MAINTAINER =		Edward <edward@rdtan.net>
-
 # The Artistic License 1.0
 PERMIT_PACKAGE_CDROM =	Yes
 

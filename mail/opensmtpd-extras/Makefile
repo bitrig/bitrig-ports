@@ -17,8 +17,6 @@ REVISION-pgsql=	0
 
 HOMEPAGE=	http://www.opensmtpd.org/
 
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
-
 GH_PROJECT=	OpenSMTPD-extras
 GH_ACCOUNT=	OpenSMTPD
 GH_COMMIT=	a3494a52ace265cd8c7b8e831ed3e1d929d143f8

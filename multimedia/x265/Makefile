@@ -16,8 +16,6 @@ SHARED_LIBS=	x265	0.0
 
 HOMEPAGE=	http://x265.org/
 
-MAINTAINER=	Brad Smith <brad@comstyle.com>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	patents
 PERMIT_PACKAGE_FTP=	Yes

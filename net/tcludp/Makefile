@@ -7,7 +7,6 @@ COMMENT =	Tcl UDP extension
 DISTNAME =	tcludp-1.0.11
 CATEGORIES =	net
 HOMEPAGE =	http://sourceforge.net/projects/tcludp/
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
