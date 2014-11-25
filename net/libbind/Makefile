@@ -5,7 +5,7 @@ COMMENT=	BIND stub resolver library
 V=		6.0
 DISTNAME=	libbind-6.0
 EPOCH=		0
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=	bind                      4.0 # 6.1
 
