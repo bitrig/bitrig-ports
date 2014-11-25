@@ -4,7 +4,7 @@ COMMENT=	mold spreading over your X11 screen
 
 DISTNAME=	xmold
 PKGNAME=	xmold-1.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	x11
 
 HOMEPAGE=	http://cclub.cc.tut.ac.jp/lib/xwin/xmold.html
@@ -13,12 +13,13 @@ PERMIT_PACKAGE_CDROM=	no license
 PERMIT_PACKAGE_FTP=	no license
 PERMIT_DISTFILES_FTP=	no license
 
-WANTLIB=	X11 Xau Xdmcp Xext c m 
+WANTLIB=	X11 Xau Xdmcp Xext c m
 
 MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/ \
 		ftp://cclub.cc.tut.ac.jp/pub/xwin/
 
 CONFIGURE_STYLE=	imake
+MAKE_FLAGS=		CC="${CC}"
 
 NO_TEST=	Yes
 
