@@ -3,7 +3,7 @@
 COMMENT=		ASCII art mathematics
 
 DISTNAME=		aamath-0.3
-REVISION=		3
+REVISION=		4
 CATEGORIES=		math
 
 HOMEPAGE=		http://fuse.superglue.se/aamath/
@@ -20,7 +20,7 @@ LIB_DEPENDS=		devel/readline
 NO_TEST=		Yes
 WRKDIST=		${WRKDIR}/aamath
 ALL_TARGET=
-MAKE_FLAGS=		CXX="${CXX}"
+MAKE_FLAGS=		CXX="${CXX}" LD="${CXX}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIST}/aamath ${PREFIX}/bin

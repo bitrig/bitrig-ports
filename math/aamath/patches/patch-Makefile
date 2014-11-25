@@ -1,5 +1,5 @@
 --- Makefile.orig	Wed Jun 22 22:12:18 2005
-+++ Makefile	Sat Jul 26 16:31:03 2014
++++ Makefile	Tue Nov 25 21:41:11 2014
 @@ -3,8 +3,8 @@ LD		= g++
  CXXFILES	= parser.cc lexer.cc expr.cc canvas.cc aamath.cc
  OBJS		= $(CXXFILES:.cc=.o) 
@@ -7,7 +7,7 @@
 -CFLAGS		= -Wall -O2 -g -DUSE_READLINE
 -LFLAGS		= -g
 +CFLAGS		= -Wall -O2 -g -DUSE_READLINE -I${LOCALBASE}/include
-+LFLAGS		= -g -L${LOCALBASE}/lib
++LFLAGS		= -L${LOCALBASE}/lib
  LIBS		= -lreadline -ltermcap
  
  $(TARGET): $(OBJS)
