@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/11 10:50:07 espie Exp $
+# $OpenBSD: Makefile,v 1.11 2014/11/25 22:11:03 kili Exp $
 
 COMMENT =		timeout handling
 

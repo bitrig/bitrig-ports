@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 11:41:25 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2014/11/25 22:11:05 kili Exp $
 
 COMMENT=		fast, high quality pseudo random number generation
 

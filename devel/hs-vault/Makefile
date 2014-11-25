@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/07/18 22:23:18 kili Exp $
+# $OpenBSD: Makefile,v 1.6 2014/11/25 22:11:04 kili Exp $
 
 COMMENT =		persistent store for values of arbitrary types
 

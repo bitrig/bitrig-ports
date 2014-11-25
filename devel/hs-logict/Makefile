@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 10:50:07 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2014/11/25 22:11:04 kili Exp $
 
 COMMENT =		backtracking logic-programming monad
 
