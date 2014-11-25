@@ -1,0 +1,28 @@
+--- xprompt.c.orig	Tue Nov 25 21:56:37 2014
++++ xprompt.c	Tue Nov 25 21:57:46 2014
+@@ -41,6 +41,7 @@ static char *SCCS_Id = "@(#)xprompt.c\tver 1.4 (91/09/
+ #include <sys/stat.h>
+ #include <ctype.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ 
+ #include <X11/IntrinsicP.h>
+ #include <X11/StringDefs.h>
+@@ -167,8 +168,6 @@ static void unparsegeometry(), unwarp();
+ static void Syntax();
+ static int get_user_text_translations();
+ 
+-char *malloc();
+-
+ /*ARGSUSED*/
+ static void
+ EraseLine(ctx, event, args, nargs)
+@@ -387,7 +386,7 @@ fprintf(stderr, "-nowarp     (Don't warp cursor)\n");
+ void unparsegeometry();
+ 
+ main(argc, argv)
+-unsigned int argc;
++int argc;
+ char **argv;
+ {
+     register int i, j;
