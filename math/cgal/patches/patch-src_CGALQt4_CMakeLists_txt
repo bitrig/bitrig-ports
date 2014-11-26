@@ -1,0 +1,11 @@
+--- src/CGALQt4/CMakeLists.txt.orig	Wed Nov 26 21:09:27 2014
++++ src/CGALQt4/CMakeLists.txt	Wed Nov 26 21:10:19 2014
+@@ -50,6 +50,8 @@ if( QT4_FOUND )
+     cache_set(CGAL_Qt4_3RD_PARTY_LIBRARIES    ${QT_LIBRARIES}   ${OPENGL_LIBRARIES}   )
+     cache_set(CGAL_Qt4_3RD_PARTY_DEFINITIONS  ${QT_DEFINITIONS} ${OPENGL_DEFINITIONS} )
+ 
++    include_directories( ${CGAL_Qt4_3RD_PARTY_INCLUDE_DIRS} )
++
+       # moc files that are compiled directly as cpp files
+     qt4_wrap_cpp(mocfiles ../../include/CGAL/Qt/GraphicsViewNavigation.h 
+                           ../../include/CGAL/Qt/DemosMainWindow.h

@@ -20,7 +20,7 @@ SHARED_ONLY =		Yes
 SHARED_LIBS =		CGAL		0.0 \
 			CGAL_Core	0.0 \
 			CGAL_ImageIO	0.0 \
-			CGAL_Qt4	0.0 
+			CGAL_Qt4	0.0
 
 CATEGORIES =		math
 
