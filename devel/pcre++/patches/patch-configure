@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.1.1.1 2004/12/05 14:16:40 alek Exp $
 --- configure.orig	Wed Aug 25 01:38:03 2004
-+++ configure	Thu Dec  2 01:10:03 2004
++++ configure	Wed Nov 26 21:21:24 2014
 @@ -8594,7 +8594,7 @@ fi;
  if test "${with_pcre_lib+set}" = set; then
    withval="$with_pcre_lib"
@@ -19,7 +19,7 @@ $OpenBSD: patch-configure,v 1.1.1.1 2004/12/05 14:16:40 alek Exp $
  			;;
     esac
  fi
-@@ -8718,7 +8718,6 @@ if test $ac_cv_lib_pcre_pcre_exec = yes;
+@@ -8718,7 +8718,6 @@ if test $ac_cv_lib_pcre_pcre_exec = yes; then
  #define HAVE_LIBPCRE 1
  _ACEOF
  

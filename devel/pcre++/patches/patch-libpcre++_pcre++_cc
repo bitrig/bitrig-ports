@@ -1,0 +1,11 @@
+--- libpcre++/pcre++.cc.orig	Wed Nov 26 21:22:54 2014
++++ libpcre++/pcre++.cc	Wed Nov 26 21:23:00 2014
+@@ -218,7 +218,7 @@ void Pcre::study() {
+  * setting current locale
+  */
+ bool Pcre::setlocale(const char* locale) {
+-  if (std::setlocale(LC_CTYPE, locale) == NULL) return false;
++  if (::setlocale(LC_CTYPE, locale) == NULL) return false;
+   tables = pcre_maketables();
+   return true;
+ }
