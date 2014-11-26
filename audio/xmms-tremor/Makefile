@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/03/21 08:45:13 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.18 2014/11/26 20:06:39 naddy Exp $
 SHARED_ONLY=	Yes
 
 COMMENT=	Ogg Vorbis input plugin for XMMS using tremor
