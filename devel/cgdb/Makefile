@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/11/24 10:29:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.5 2014/11/26 11:44:00 sthen Exp $
 
 COMMENT=	curses GDB interface
 DISTNAME=	cgdb-0.6.8
@@ -12,6 +12,7 @@ WANTLIB += c readline m ncurses
 
 MASTER_SITES=	http://cgdb.me/files/
 
+BUILD_DEPENDS=	devel/help2man
 LIB_DEPENDS=	devel/readline>=6.1p2
 
 CONFIGURE_STYLE=  autoconf
