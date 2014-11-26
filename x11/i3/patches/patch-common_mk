@@ -1,6 +1,6 @@
 $OpenBSD: patch-common_mk,v 1.21 2014/07/11 15:49:58 dcoppa Exp $
---- common.mk.orig	Sun Jun 15 19:12:43 2014 
-+++ common.mk		Wed Jul  2 20:14:26 2014 
+--- common.mk.orig	Sun Jun 15 19:12:43 2014
++++ common.mk	Wed Nov 26 21:49:59 2014
 @@ -1,5 +1,5 @@
  UNAME=$(shell uname)
 -DEBUG=1
@@ -8,11 +8,13 @@ $OpenBSD: patch-common_mk,v 1.21 2014/07/11 15:49:58 dcoppa Exp $
  COVERAGE=0
  INSTALL=install
  LN=ln
-@@ -157,9 +157,9 @@ I3_LDFLAGS += -Wl,-rpath,/usr/local/lib -Wl,-rpath,/us
+@@ -156,10 +156,10 @@ I3_CFLAGS += -idirafter /usr/pkg/include
+ I3_LDFLAGS += -Wl,-rpath,/usr/local/lib -Wl,-rpath,/usr/pkg/lib
  endif
  
- ifeq ($(UNAME),OpenBSD)
+-ifeq ($(UNAME),OpenBSD)
 -I3_CFLAGS += -I${X11BASE}/include
++ifneq (,$(filter Bitrig OpenBSD, $(UNAME)))
 +I3_CFLAGS += -I${X11BASE}/include -I${LOCALBASE}/include
  LIBS += -liconv
 -I3_LDFLAGS += -L${X11BASE}/lib
@@ -20,3 +22,12 @@ $OpenBSD: patch-common_mk,v 1.21 2014/07/11 15:49:58 dcoppa Exp $
  endif
  
  ifeq ($(UNAME),FreeBSD)
+@@ -168,7 +168,7 @@ endif
+ 
+ ifeq ($(UNAME),Darwin)
+ LIBS += -liconv
+-else ifneq ($(UNAME),OpenBSD)
++else ifeq (,$(filter Bitrig OpenBSD, $(UNAME)))
+ # Darwin (Mac OS X) and OpenBSD do not have librt
+ LIBS += -lrt
+ endif

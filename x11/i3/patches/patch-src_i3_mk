@@ -3,13 +3,13 @@ $OpenBSD: patch-src_i3_mk,v 1.8 2014/07/11 15:49:58 dcoppa Exp $
 OpenBSD lacks pthread_condattr_setpshared(), so no need to link
 with libpthread here.
 
---- src/i3.mk.orig	Sun Jun 15 19:12:43 2014 
-+++ src/i3.mk		Wed Jul  2 19:18:24 2014 
+--- src/i3.mk.orig	Sun Jun 15 19:12:43 2014
++++ src/i3.mk	Wed Nov 26 21:51:02 2014
 @@ -6,7 +6,11 @@ i3_SOURCES           := $(filter-out $(i3_SOURCES_GENE
  i3_HEADERS_CMDPARSER := $(wildcard include/GENERATED_*.h)
  i3_HEADERS           := $(filter-out $(i3_HEADERS_CMDPARSER),$(wildcard include/*.h))
  i3_CFLAGS             = $(XCB_CFLAGS) $(XCB_KBD_CFLAGS) $(XCB_WM_CFLAGS) $(X11_CFLAGS) $(XCURSOR_CFLAGS) $(PANGO_CFLAGS) $(YAJL_CFLAGS) $(LIBEV_CFLAGS) $(PCRE_CFLAGS) $(LIBSN_CFLAGS)
-+ifneq ($(UNAME),OpenBSD)
++ifeq (,$(filter Bitrig OpenBSD, $(UNAME)))
  i3_LIBS               = $(XCB_LIBS) $(XCB_KBD_LIBS) $(XCB_WM_LIBS) $(X11_LIBS) $(XCURSOR_LIBS) $(PANGO_LIBS) $(YAJL_LIBS) $(LIBEV_LIBS) $(PCRE_LIBS) $(LIBSN_LIBS) -lm -lpthread
 +else
 +i3_LIBS               = $(XCB_LIBS) $(XCB_KBD_LIBS) $(XCB_WM_LIBS) $(X11_LIBS) $(XCURSOR_LIBS) $(PANGO_LIBS) $(YAJL_LIBS) $(LIBEV_LIBS) $(PCRE_LIBS) $(LIBSN_LIBS) -lm
