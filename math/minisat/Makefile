@@ -22,7 +22,7 @@ WANTLIB +=		c++ c++abi pthread
 USE_GMAKE=		Yes
 ALL_TARGET=		minisat
 NO_TEST=		Yes
-MAKE_ENV+=		MROOT=${WRKBUILD}
+MAKE_ENV+=		MROOT=${WRKBUILD} CXX=${CXX}
 WRKDIST=		${WRKDIR}/minisat
 
 do-build:
