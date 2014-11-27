@@ -1,0 +1,11 @@
+--- scribus/plugins/scriptplugin/runscriptdialog.cpp.orig	Sat Mar 15 01:36:48 2008
++++ scribus/plugins/scriptplugin/runscriptdialog.cpp	Sat Nov 29 17:34:44 2014
+@@ -10,7 +10,7 @@ for which a new license (GPL+exception) is in place.
+ 
+ QString RunScriptDialog::m_lastScriptDir;
+ 
+-RunScriptDialog::RunScriptDialog(QWidget* parent = 0, bool extEnable = false) :
++RunScriptDialog::RunScriptDialog(QWidget* parent, bool extEnable) :
+ 	QDialog(parent)
+ {
+ 	setupUi(this);
