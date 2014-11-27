@@ -3,14 +3,15 @@ https://symlink.me/projects/minbif/repository/revisions/cdc5ed2372b5df08337aa60c
 
 error: #error "Only <glib.h> can be included directly."
 
---- src/server_poll/inetd.cpp.orig	Tue Mar 20 10:52:16 2012
-+++ src/server_poll/inetd.cpp	Tue Mar 20 10:52:27 2012
-@@ -17,7 +17,7 @@
+--- src/server_poll/inetd.cpp.orig	Sun Dec  4 15:24:51 2011
++++ src/server_poll/inetd.cpp	Thu Nov 27 21:15:44 2014
+@@ -17,7 +17,8 @@
   */
  
  #include <cassert>
 -#include <glib/gmain.h>
 +#include <glib.h>
++#include <unistd.h>
  
  #include "inetd.h"
  #include "irc/irc.h"
