@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2014/01/01 20:46:28 naddy Exp $
+# $OpenBSD: Makefile,v 1.23 2014/11/27 03:19:18 brad Exp $
 
 COMMENT=	hacked 9wm, with support for virtual screens
 
