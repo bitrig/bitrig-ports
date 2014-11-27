@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/03/11 10:50:06 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2014/11/27 21:45:36 kili Exp $
 
 COMMENT =		List monad transformer and a List class
 
@@ -10,9 +10,6 @@ CATEGORIES =		devel
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		lang/ghc
-
-RUN_DEPENDS +=		devel/hs-transformers
-BUILD_DEPENDS +=	${RUN_DEPENDS}
 
 MODGHC_BUILD =		cabal hackage haddock register
 

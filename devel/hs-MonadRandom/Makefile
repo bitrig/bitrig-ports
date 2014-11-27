@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/07/18 20:41:45 kili Exp $
+# $OpenBSD: Makefile,v 1.2 2014/11/27 21:45:36 kili Exp $
 
 COMMENT =		random-number generation monad
 
@@ -14,8 +14,7 @@ MODULES =		lang/ghc
 MODGHC_BUILD =		cabal hackage haddock register
 
 RUN_DEPENDS +=		devel/hs-mtl \
-			devel/hs-random \
-			devel/hs-transformers
+			devel/hs-random
 
 BUILD_DEPENDS +=	${RUN_DEPENDS}
 

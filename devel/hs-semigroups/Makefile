@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/07/19 06:59:38 kili Exp $
+# $OpenBSD: Makefile,v 1.7 2014/11/27 21:45:37 kili Exp $
 
 COMMENT =		Haskell 98 semigroups
 

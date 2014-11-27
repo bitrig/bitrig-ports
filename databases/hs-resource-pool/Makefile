@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/10/04 05:54:38 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.2 2014/11/27 21:45:37 kili Exp $
 
 COMMENT =		high-performance striped resource pooling implementation
 
@@ -16,7 +16,6 @@ MODGHC_BUILD =		cabal hackage haddock register
 
 RUN_DEPENDS +=		devel/hs-hashable \
 			devel/hs-monad-control>=0.2.0.1 \
-			devel/hs-transformers \
 			devel/hs-transformers-base>=0.4 \
 			devel/hs-stm \
 			devel/hs-vector>=0.7

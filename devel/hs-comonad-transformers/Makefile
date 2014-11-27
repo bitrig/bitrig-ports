@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/07/19 06:58:22 kili Exp $
+# $OpenBSD: Makefile,v 1.9 2014/11/27 21:45:36 kili Exp $
 
 COMMENT =		Comonad transformers
 
@@ -17,8 +17,7 @@ RUN_DEPENDS =		devel/hs-comonad>=3.0 \
 			devel/hs-contravariant>=0.2.0.1 \
 			devel/hs-distributive>=0.2.2 \
 			devel/hs-semigroupoids>=3.0 \
-			devel/hs-semigroups>=0.8.3.1 \
-			devel/hs-transformers>=0.2,<0.4 \
+			devel/hs-semigroups>=0.8.3.1
 
 BUILD_DEPENDS =		${RUN_DEPENDS}
 
