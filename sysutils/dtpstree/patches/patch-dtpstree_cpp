@@ -1,6 +1,6 @@
 $OpenBSD: patch-dtpstree_cpp,v 1.1 2012/01/08 22:49:56 naddy Exp $
---- dtpstree.cpp.orig	Sun Jan  8 23:02:45 2012
-+++ dtpstree.cpp	Sun Jan  8 23:09:20 2012
+--- dtpstree.cpp.orig	Thu Aug  5 10:01:47 2010
++++ dtpstree.cpp	Fri Nov 28 18:26:40 2014
 @@ -92,8 +92,25 @@ template <typename Type>
  inline char *comm(Type *proc);
  
@@ -35,3 +35,12 @@ $OpenBSD: patch-dtpstree_cpp,v 1.1 2012/01/08 22:49:56 naddy Exp $
  #else
  typedef kinfo_proc2 Proc;
  
+@@ -241,7 +259,7 @@ class Tree (public)
+ 		else if (flags & Unicode)
+ 		{
+ 		unicode:
+-			if (!std::setlocale(LC_CTYPE, ""))
++			if (!setlocale(LC_CTYPE, ""))
+ 				goto vt100;
+ 
+ 			horizontal_ = L'\x2500';
