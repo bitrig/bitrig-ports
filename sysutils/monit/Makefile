@@ -17,6 +17,7 @@ WANTLIB += c crypto kvm pthread ssl
 MASTER_SITES=	${HOMEPAGE}/dist/
 
 CONFIGURE_STYLE=gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config ${WRKSRC}/libmonit/config
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/{doc,examples}/monit

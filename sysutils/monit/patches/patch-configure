@@ -1,0 +1,20 @@
+--- configure.orig	Fri Nov 28 18:05:36 2014
++++ configure	Fri Nov 28 18:06:21 2014
+@@ -13637,7 +13637,7 @@ then
+ 
+ $as_echo "#define HAVE_CPU_WAIT 1" >>confdefs.h
+ 
+-elif test "$architecture" = "OpenBSD"
++elif test "$architecture" = "Bitrig" -o "$architecture" = "OpenBSD"
+ then
+    ARCH="OPENBSD"
+    CFLAGS="$CFLAGS -D _REENTRANT"
+@@ -16152,7 +16152,7 @@ $as_echo "$as_me: executing $ac_file commands" >&6;}
+ 
+ 
+   case $ac_file$ac_mode in
+-    "libtool_patch":C) test `uname` = "OpenBSD" && perl -p -i -e "s/deplibs_check_method=.*/deplibs_check_method=pass_all/g" libtool ;;
++    "libtool_patch":C) test `uname` = "Bitrig" -o `uname` = "OpenBSD" && perl -p -i -e "s/deplibs_check_method=.*/deplibs_check_method=pass_all/g" libtool ;;
+     "monitrc":C) chmod 600 monitrc ;;
+     "depfiles":C) test x"$AMDEP_TRUE" != x"" || {
+   # Autoconf 2.62 quotes --file arguments for eval, but not when files

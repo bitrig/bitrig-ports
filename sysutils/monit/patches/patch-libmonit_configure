@@ -1,0 +1,11 @@
+--- libmonit/configure.orig	Fri Nov 28 18:13:29 2014
++++ libmonit/configure	Fri Nov 28 18:13:48 2014
+@@ -11725,7 +11725,7 @@ then
+ 
+ $as_echo "#define FREEBSD 1" >>confdefs.h
+ 
+-elif test "$architecture" = "OpenBSD"
++elif test "$architecture" = "Bitrig" -o "$architecture" = "OpenBSD"
+ then
+    CFLAGS="$CFLAGS -D _REENTRANT"
+ 
