@@ -1,0 +1,12 @@
+--- Config.orig	Fri Nov 28 18:20:49 2014
++++ Config	Fri Nov 28 18:22:14 2014
+@@ -92,6 +92,9 @@ if [ -n "${UNAME_OS}" -a -n "${UNAME_REV}" ]; then
+ 		# nbsd44 is believed to work back to NetBSD 0.8.
+ 		OS=nbsd44
+ 		;;
++	    Bitrig)
++		OS=nbsd44
++		;;
+ 	    OpenBSD)
+ 		# tested nbsd44 on OpenBSD 2.6-3.0 (may work on prev revs)
+ 		case "${UNAME_REV}" in
