@@ -91,7 +91,8 @@ LIB_DEPENDS=		devel/libidn
 
 WANTLIB =		c idn
 
-WANTLIB-main=		${WANTLIB} gdbm m stdc++ gdbm>=3 pcre>=1 courierauth
+WANTLIB-main=		${WANTLIB} gdbm m c++ c++abi gdbm>=3 pcre>=1 courierauth
+WANTLIB-main+=		pthread
 LIB_DEPENDS-main=	${LIB_DEPENDS} \
 			databases/gdbm \
 			devel/pcre \
