@@ -1,5 +1,5 @@
 @comment $OpenBSD: PLIST,v 1.4 2005/04/24 19:02:05 sturm Exp $
-bin/xxdiff
+@bin bin/xxdiff
 bin/xxdiff-cvs-diff
 bin/xxdiff-encrypted
 bin/xxdiff-find-grep-sed
