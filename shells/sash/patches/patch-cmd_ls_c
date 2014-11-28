@@ -1,7 +1,7 @@
 $OpenBSD: patch-cmd_ls_c,v 1.1 2002/07/21 08:44:35 wcobb Exp $
---- cmd_ls.c.orig	Sun Jul 21 05:33:34 2002
-+++ cmd_ls.c	Sun Jul 21 05:34:27 2002
-@@ -380,7 +380,7 @@ listFile(
+--- cmd_ls.c.orig	Fri Mar  7 14:22:12 2014
++++ cmd_ls.c	Fri Nov 28 15:46:52 2014
+@@ -393,7 +393,7 @@ listFile(
  	 */
  	if (flags & LSF_INODE)
  	{
@@ -10,7 +10,7 @@ $OpenBSD: patch-cmd_ls_c,v 1.1 2002/07/21 08:44:35 wcobb Exp $
  		cp += strlen(cp);
  	}
  
-@@ -434,7 +434,7 @@ listFile(
+@@ -453,7 +453,7 @@ listFile(
  				((unsigned long) statBuf->st_rdev) & 0xff);
  		}
  		else

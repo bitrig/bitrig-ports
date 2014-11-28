@@ -3,7 +3,7 @@
 COMMENT=		stand-alone shell with built-in commands
 
 DISTNAME =		sash-3.8
-REVISION =		0
+REVISION =		1
 CATEGORIES=		shells
 HOMEPAGE=		http://www.canb.auug.org.au/~dbell/
 
