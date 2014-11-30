@@ -5,6 +5,7 @@
      SUBDIR += adcomplain
      SUBDIR += akpop3d
      SUBDIR += alpine
+     SUBDIR += alpine,passfile
      SUBDIR += altermime
      SUBDIR += amavisd-new
      SUBDIR += archivemail
