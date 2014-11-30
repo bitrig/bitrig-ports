@@ -10,7 +10,6 @@ CATEGORIES=	devel
 
 HOMEPAGE=	http://lcamtuf.coredump.cx/afl/
 MASTER_SITES=	${HOMEPAGE}/releases/
-MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 
 # Apache 2.0
 PERMIT_PACKAGE_CDROM=	Yes

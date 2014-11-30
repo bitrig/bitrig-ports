@@ -14,8 +14,6 @@ CATEGORIES=	net geo
 
 HOMEPAGE=	http://dev.maxmind.com/geoip/legacy/downloadable/
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -10,8 +10,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		https://github.com/flintwork/mccabe
 
-MAINTAINER =		Bertrand Janin <b@janin.com>
-
 # MIT 
 PERMIT_PACKAGE_CDROM =	Yes
 

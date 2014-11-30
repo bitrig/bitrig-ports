@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=innoextract/}
 
 HOMEPAGE=	http://constexpr.org/innoextract/
 
-MAINTAINER=	Donovan Watteau <tsoomi@gmail.com>
-
 # zlib/libpng
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -11,7 +11,6 @@ GH_TAGNAME =	v${V}
 GH_COMMIT =	14f993643491b0e4d7e89df407c37712bbfbfdfa
 
 HOMEPAGE =	https://github.com/naelstrof/maim
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

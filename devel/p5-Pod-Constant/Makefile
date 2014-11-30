@@ -6,8 +6,6 @@ DISTNAME =		Pod-Constant-0.1
 
 CATEGORIES =		devel
 
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
-
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 

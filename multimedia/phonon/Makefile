@@ -13,8 +13,6 @@ HOMEPAGE =	http://phonon.kde.org/
 SHARED_LIBS =	phonon_s		2.0 \
 		phonon_sexperimental	1.0
 
-MAINTAINER =	KDE porting team <openbsd-kde@googlegroups.com>
-
 # LGPL v2.1
 PERMIT_PACKAGE_CDROM =	Yes
 

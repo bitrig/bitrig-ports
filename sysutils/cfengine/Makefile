@@ -9,8 +9,6 @@ SHARED_LIBS +=  promises	0.0 # 1.0
 CATEGORIES =	sysutils
 HOMEPAGE =	http://cfengine.com/
 
-MAINTAINER =	Rodrigo Mosconi <openbsd@mosconi.mat.br>
-
 # GPLv3 only
 PERMIT_PACKAGE_CDROM =	Yes
 

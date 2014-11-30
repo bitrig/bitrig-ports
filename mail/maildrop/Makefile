@@ -12,7 +12,6 @@ FULLPKGPATH-utils=	mail/maildrop,-utils
 CATEGORIES=		mail
 
 HOMEPAGE=		http://www.courier-mta.org/maildrop/
-MAINTAINER=		Giovanni Bechis <giovanni@openbsd.org>
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=		.tar.bz2

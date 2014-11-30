@@ -7,8 +7,6 @@ DISTNAME =	Mojolicious-5.58
 REVISION =	0
 CATEGORIES =	www
 
-MAINTAINER =	Mark Patruck <mark@wrapped.cx>
-
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes
 

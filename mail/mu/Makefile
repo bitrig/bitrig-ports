@@ -8,8 +8,6 @@ DISTNAME=	mu-${GH_VER:S/v//}
 CATEGORIES=	mail
 HOMEPAGE=	http://www.djcbsoftware.nl/code/mu/
 
-MAINTAINER=	Aaron Bieber <abieber@openbsd.org>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 

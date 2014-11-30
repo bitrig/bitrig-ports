@@ -5,7 +5,6 @@ COMMENT =	command line parser for c programs
 DISTNAME =	gengetopt-${V}
 CATEGORIES =	devel
 
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 HOMEPAGE =	http://www.gnu.org/software/gengetopt/
 
 # GPLv3+

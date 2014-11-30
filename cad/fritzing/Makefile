@@ -10,8 +10,6 @@ REVISION=	1
 
 HOMEPAGE=	http://fritzing.org/
 
-MAINTAINER=	Aaron Bieber <abieber@openbsd.org>
-
 # Code: GPLv3+
 # Rest: CreativeCommons:BY-SA
 PERMIT_PACKAGE_CDROM =	Yes

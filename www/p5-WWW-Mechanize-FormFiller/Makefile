@@ -6,8 +6,6 @@ DISTNAME =		WWW-Mechanize-FormFiller-0.11
 
 CATEGORIES =		www
 
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
-
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 

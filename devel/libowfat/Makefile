@@ -6,8 +6,6 @@ DISTNAME =	libowfat-0.29
 REVISION =	0
 CATEGORIES =	devel
 
-MAINTAINER =	Jan Klemkow <j.klemkow@wemelug.de>
-
 HOMEPAGE =	http://www.fefe.de/libowfat/
 MASTER_SITES =	http://dl.fefe.de/
 EXTRACT_SUFX =	.tar.bz2

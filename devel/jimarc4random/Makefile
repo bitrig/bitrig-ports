@@ -7,7 +7,6 @@ COMMENT =		arc4random for Jim
 DISTNAME =		jimarc4random-0.3
 CATEGORIES =		devel
 HOMEPAGE =		http://www3.bell.net/stwo/
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

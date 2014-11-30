@@ -9,8 +9,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		https://bitbucket.org/tarek/flake8/
 
-MAINTAINER =		Bertrand Janin <b@janin.com>
-
 # MIT 
 PERMIT_PACKAGE_CDROM =	Yes
 

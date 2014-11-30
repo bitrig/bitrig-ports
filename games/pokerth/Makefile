@@ -15,8 +15,6 @@ REVISION=	1
 
 HOMEPAGE=	http://www.pokerth.net/
 
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 

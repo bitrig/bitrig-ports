@@ -8,8 +8,6 @@ CATEGORIES =		sysutils
 
 HOMEPAGE =		https://thoughtbot.github.io/rcm/
 
-MAINTAINER =		Mike Burns <mike+openbsd@mike-burns.com>
-
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

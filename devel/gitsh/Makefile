@@ -10,8 +10,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		https://github.com/thoughtbot/gitsh
 
-MAINTAINER =		Mike Burns <mike+openbsd@mike-burns.com>
-
 # License: BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -6,8 +6,6 @@ MODULES=	cpan
 DISTNAME =	HTML-FromText-2.07
 CATEGORIES=	www
 
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
-
 RUN_DEPENDS=	textproc/p5-Email-Find devel/p5-Exporter-Lite
 
 # Perl

@@ -10,8 +10,6 @@ CATEGORIES =		www
 
 HOMEPAGE =		http://packages.python.org/Flask-Principal/
 
-MAINTAINER =		Aaron Bieber <abieber@openbsd.org>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -8,8 +8,6 @@ CATEGORIES =	converters
 
 HOMEPAGE =	http://www.fpx.de/fp/Software/UUDeview/
 
-MAINTAINER =	Mikolaj Kucharski <mikolaj@kucharski.name>
-
 # GPLv2+, with BSD parts
 PERMIT_PACKAGE_CDROM =	Yes
 

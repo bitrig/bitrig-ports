@@ -10,7 +10,6 @@ GH_PROJECT =	slop
 GH_TAGNAME =	v${V}
 GH_COMMIT =	ce9a0ca84a1dfac38614f42fdec3cc982db89afc
 
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 HOMEPAGE =	https://github.com/naelstrof/slop
 
 # GPLv3+

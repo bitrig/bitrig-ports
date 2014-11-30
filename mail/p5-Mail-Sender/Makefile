@@ -7,8 +7,6 @@ MODULES=	cpan
 DISTNAME =	Mail-Sender-0.8.23
 CATEGORIES=	mail
 
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
-
 # perl
 PERMIT_PACKAGE_CDROM=	Yes
 

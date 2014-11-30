@@ -13,8 +13,6 @@ CATEGORIES =	math
 
 HOMEPAGE =	http://www.cise.ufl.edu/research/sparse/SuiteSparse_config/
 
-MAINTAINER =	Paul Irofti <pirofti@openbsd.org>
-
 # LGPL
 PERMIT_PACKAGE_CDROM =	Yes
 
