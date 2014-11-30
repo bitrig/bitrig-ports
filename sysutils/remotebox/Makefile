@@ -10,8 +10,6 @@ CATEGORIES=		sysutils
 
 HOMEPAGE=		http://remotebox.knobgoblin.org.uk/
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
