@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2014/07/08 11:11:15 kirby Exp $
+# $OpenBSD: Makefile,v 1.18 2014/11/30 05:41:35 brad Exp $
 
 COMMENT =	challenging 2D motocross platform game
 

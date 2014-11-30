@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2013/03/11 11:42:42 espie Exp $
+# $OpenBSD: Makefile,v 1.24 2014/11/30 05:41:34 brad Exp $
 
 COMMENT=	LaTeX vgrind(1) look-alike
 

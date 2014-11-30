@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2013/03/11 11:46:09 espie Exp $
+# $OpenBSD: Makefile,v 1.21 2014/11/30 05:41:34 brad Exp $
 
 COMMENT=	win95-like window manager based on fvwm 2.x
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2013/05/18 20:00:38 benoit Exp $
+# $OpenBSD: Makefile,v 1.29 2014/11/30 05:41:34 brad Exp $
 
 COMMENT =	extendable encryption program that supports many ciphers
 

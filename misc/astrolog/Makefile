@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2013/03/11 11:23:56 espie Exp $
+# $OpenBSD: Makefile,v 1.29 2014/11/30 05:41:34 brad Exp $
 
 COMMENT=	astrology program for X11 and alpha-numeric terminals
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/03/11 11:23:58 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2014/11/30 05:41:35 brad Exp $
 COMMENT=		browser for a large lexical database of English
 
 V=			3.0

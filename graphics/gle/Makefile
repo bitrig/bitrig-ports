@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/21 08:45:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.22 2014/11/30 05:41:34 brad Exp $
 
 COMMENT=		OpenGL Extrusion library
 
