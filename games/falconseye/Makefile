@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2013/03/11 11:07:38 espie Exp $
+# $OpenBSD: Makefile,v 1.26 2014/11/30 07:08:48 brad Exp $
 
 COMMENT =	NetHack derivative
 
