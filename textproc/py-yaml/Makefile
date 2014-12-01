@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/08/19 14:25:11 rpointel Exp $
+# $OpenBSD: Makefile,v 1.13 2014/12/01 09:24:46 jasper Exp $
 
 COMMENT=	YAML parser and emitter in Python
 
