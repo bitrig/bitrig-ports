@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.22 2013/03/11 11:10:54 espie Exp $
+# $OpenBSD: Makefile,v 1.23 2014/12/01 13:58:08 benoit Exp $
 
 COMMENT =	module for graph plotting
 
-VERSION =	1.44
+VERSION =	1.48
 DISTNAME =	GDGraph-${VERSION}
 PKGNAME =	p5-GD-Graph-${VERSION}
-REVISION =	1
 CATEGORIES =	graphics
 
 MASTER_SITES =	${MASTER_SITE_PERL_CPAN:=GD/}
@@ -18,6 +17,5 @@ BUILD_DEPENDS =	${RUN_DEPENDS}
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =	cpan
-USE_GROFF =	Yes
 
 .include <bsd.port.mk>
