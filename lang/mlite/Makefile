@@ -5,8 +5,6 @@ COMMENT =		lightweight inhabitant of the ML family of languages
 DISTNAME =		mlite-20141127
 CATEGORIES =		lang
 
-MAINTAINER =		James Turner <james@calminferno.net>
-
 HOMEPAGE =		http://t3x.org/mlite/index.html
 MASTER_SITES =		http://t3x.org/mlite/ \
 			http://calminferno.net/dl/

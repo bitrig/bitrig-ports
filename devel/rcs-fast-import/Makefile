@@ -8,8 +8,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		http://www.catb.org/~esr/rcs-fast-import/
 
-MAINTAINER =		Robert Peichaer <rpe@openbsd.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
