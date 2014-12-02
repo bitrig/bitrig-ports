@@ -5,7 +5,7 @@ COMMENT=	extract, list & test files in a ZIP archive
 VERSION=	6.0
 DISTNAME=	unzip${VERSION:S/.//}
 PKGNAME=	unzip-${VERSION}
-REVISION =	5
+REVISION =	6
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=infozip/} \
 		http://mirror.switch.ch/ftp/mirror/infozip/src/ \
