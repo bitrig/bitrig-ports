@@ -233,7 +233,6 @@
      SUBDIR += vifm
      SUBDIR += virt-manager
      SUBDIR += vmwh
-     SUBDIR += wdsetup
      SUBDIR += whowatch
      SUBDIR += wmapm
      SUBDIR += wmcb
