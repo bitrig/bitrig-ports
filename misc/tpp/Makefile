@@ -3,7 +3,7 @@
 COMMENT =		text-based presentation program
 
 DISTNAME =		tpp-1.3.1
-REVISION =		7
+REVISION =		8
 
 CATEGORIES =		misc productivity
 

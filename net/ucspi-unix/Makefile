@@ -3,7 +3,7 @@
 COMMENT=	tools for building unix domain socket client/servers
 
 DISTNAME=		ucspi-unix-0.34
-REVISION=		1
+REVISION=		2
 CATEGORIES=     	net
 
 HOMEPAGE=		http://untroubled.org/ucspi-unix/

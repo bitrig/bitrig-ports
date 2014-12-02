@@ -2,7 +2,7 @@
 
 COMMENT =		list processes as a tree
 DISTNAME =		pstree-2.36
-REVISION =		1
+REVISION =		2
 CATEGORIES =		sysutils
 HOMEPAGE =		http://www.thp.uni-duisburg.de/pstree/
 

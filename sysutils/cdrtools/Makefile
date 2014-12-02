@@ -3,7 +3,7 @@
 COMMENT=		ISO 9660 filesystem and CD/DVD/BD creation tools
 
 DISTNAME=		cdrtools-3.00
-REVISION=		1
+REVISION=		2
 CATEGORIES=		sysutils
 HOMEPAGE=		http://cdrtools.sourceforge.net/private/cdrtools.html
 

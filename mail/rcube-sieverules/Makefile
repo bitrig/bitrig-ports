@@ -8,10 +8,9 @@ GH_TAGNAME=	2.1.2
 GH_COMMIT=	f606c1a57f3bc4a0b1786860857605413cfc6f0c
 DISTNAME=	sieverules-${GH_TAGNAME}
 PKGNAME=	rcube-${DISTNAME}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	mail www
 HOMEPAGE=	http://www.tehinterweb.co.uk/roundcube/\#pisieverules
-REVISION=	0
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

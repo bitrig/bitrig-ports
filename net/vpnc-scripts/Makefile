@@ -3,9 +3,8 @@
 COMMENT=	connect scripts for use with vpnc and openconnect
 
 PKGNAME=	vpnc-scripts-20140401
-REVISION=	0
 DISTNAME=	a78b3ddfc56ab457104c88e94dca72d8738f4fad
-REVISION=	0
+REVISION=	1
 
 DISTFILES=	${PKGNAME}{${DISTNAME}}${EXTRACT_SUFX}
 

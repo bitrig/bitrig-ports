@@ -3,7 +3,7 @@
 COMMENT=		TCP dump file analysis tool
 
 DISTNAME=		tcptrace-6.6.7
-REVISION=		2
+REVISION=		3
 CATEGORIES=		net
 HOMEPAGE=		http://www.tcptrace.org/
 MASTER_SITES=		http://www.tcptrace.org/download/
