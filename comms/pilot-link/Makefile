@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	tools to connect your PalmOS(R) compatible handheld
 
 DISTNAME=	pilot-link-0.12.5
-REVISION=	8
+REVISION=	9
 
 SHARED_LIBS +=  pisock               11.0     # 9.2
 SHARED_LIBS +=  pisync               2.0      # 1.3
