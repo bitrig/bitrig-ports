@@ -3,7 +3,7 @@
 COMMENT=		simple tar implementation
 
 DISTNAME=		sltar-0.5
-REVISION=		1
+REVISION=		2
 
 CATEGORIES=		archivers
 
