@@ -6,7 +6,7 @@ V =		0.7.5
 # 0.7.5-cvs
 DISTNAME =	a52dec-snapshot
 PKGNAME =	liba52-${V}
-REVISION =	1
+REVISION =	2
 CATEGORIES =	audio
 MASTER_SITES =	http://comstyle.com/source/
 

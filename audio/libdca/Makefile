@@ -4,7 +4,7 @@ COMMENT=	free DTS Coherent Acoustics decoder
 
 V=		0.0.5
 DISTNAME=	libdca-${V}
-REVISION=	3
+REVISION=	4
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	audio
 MASTER_SITES=	http://download.videolan.org/pub/videolan/libdca/${V}/
