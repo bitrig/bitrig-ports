@@ -26,7 +26,7 @@ WANTLIB += xcb xml2 z
 # want to track changes to the ABI to ensure transcode is updated if needed.
 WANTLIB += xvidcore
 
-FLAVORS=	lzo mjpegtools altivec
+FLAVORS=	lzo mjpegtools
 FLAVOR?=
 
 .if ${MACHINE_ARCH} == "i386"
@@ -92,7 +92,8 @@ CONFIGURE_ARGS+=--enable-a52 \
 		--enable-theora \
 		--enable-vorbis \
 		--enable-xvid \
-		--enable-x264
+		--enable-x264 \
+		--disable-altivec
 CONFIGURE_ENV+=	CPPFLAGS="-I${X11BASE}/include -I${LOCALBASE}/include" \
 		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib"
 
@@ -113,13 +114,6 @@ RUN_DEPENDS+=	multimedia/mjpegtools
 PKG_ARGS+=	-Dmjpegtools=1
 .else
 PKG_ARGS+=	-Dmjpegtools=0
-.endif
-
-.if ${FLAVOR:Maltivec}
-ONLY_FOR_ARCHS=	powerpc
-CONFIGURE_ARGS+=--enable-altivec
-.else
-CONFIGURE_ARGS+=--disable-altivec
 .endif
 
 post-extract:
