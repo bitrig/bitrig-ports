@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/03/11 10:50:07 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2014/12/02 20:45:23 kili Exp $
 
 COMMENT =		constraint manipulation
 
