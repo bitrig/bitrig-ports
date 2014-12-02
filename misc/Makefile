@@ -100,7 +100,6 @@
      SUBDIR += tkman
      SUBDIR += toilet
      SUBDIR += tpp
-     SUBDIR += tpwireless
      SUBDIR += ttyrec
      SUBDIR += uniutils
      SUBDIR += viz
