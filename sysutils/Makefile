@@ -80,7 +80,6 @@
      SUBDIR += knutclient
      SUBDIR += krename
      SUBDIR += ktsuss
-     SUBDIR += libretto-config
      SUBDIR += librelp
      SUBDIR += libstatgrab
      SUBDIR += libvirt
