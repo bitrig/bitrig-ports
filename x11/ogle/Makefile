@@ -32,18 +32,11 @@ LIB_DEPENDS =	audio/liba52 \
 
 USE_GROFF =	Yes
 
-FLAVORS =	altivec
-FLAVOR ?=
-
-CONFIGURE_ARGS =	--disable-oss --disable-sunaudio --enable-obsdaudio
-
-.if ${FLAVOR} == "altivec"
-ONLY_FOR_ARCHS =	powerpc
-CONFIGURE_ARGS +=	--enable-altivec
-.else
-CONFIGURE_ARGS +=	--disable-altivec
-.endif
-CONFIGURE_ARGS +=	--with-libjpeg=${DEPBASE} \
+CONFIGURE_ARGS =	--disable-oss \
+			--disable-sunaudio \
+			--enable-obsdaudio \
+			--disable-altivec \
+			--with-libjpeg=${DEPBASE} \
 			--with-dvdread=${DEPBASE} \
 			--with-liba52=${DEPBASE} \
 			--with-libmad=${DEPBASE} \

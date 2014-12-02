@@ -170,7 +170,6 @@
      SUBDIR += obconf
      SUBDIR += obmenu
      SUBDIR += ogle
-     SUBDIR += ogle,altivec
      SUBDIR += ogle_gui
      SUBDIR += ogre
      SUBDIR += openbox
