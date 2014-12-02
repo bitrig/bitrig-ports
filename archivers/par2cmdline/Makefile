@@ -10,7 +10,7 @@ HOMEPAGE=	http://parchive.sourceforge.net/\#client_par2cmdline
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-REVISION =	3
+REVISION =	4
 WANTLIB=	c m
 WANTLIB+=	c++ c++abi pthread
 
