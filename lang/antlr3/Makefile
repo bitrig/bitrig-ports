@@ -8,7 +8,7 @@ COMMENT=        ANother Tool for Language Recognition
 V=		3.4
 DISTNAME=	antlr-${V}-complete
 PKGNAME=	antlr3-${V}
-REVISION=	2
+REVISION=	4
 
 CATEGORIES=	lang java
 

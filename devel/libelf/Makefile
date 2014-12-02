@@ -3,7 +3,7 @@
 COMMENT=	read, modify, create ELF files on any arch
 
 DISTNAME=	libelf-0.8.13
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS=	elf 1.1
 

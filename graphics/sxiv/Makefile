@@ -6,6 +6,7 @@ GH_PROJECT=	sxiv
 GH_ACCOUNT=	muennich
 GH_TAGNAME=	v1.1.1
 DISTNAME=	${GH_PROJECT}-${GH_TAGNAME:S/v//}
+REVISION=	0
 
 CATEGORIES =	graphics
 

@@ -3,7 +3,7 @@
 COMMENT=	lightweight scripting language with C-like syntax
 
 DISTNAME=	arena-0.9.13
-REVISION=	2
+REVISION=	3
 CATEGORIES=	lang
 
 # BSD

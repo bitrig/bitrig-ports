@@ -7,7 +7,7 @@ COMMENT =	just-in-time compiler for Lua
 V =		2.0.3
 DISTNAME =	LuaJIT-${V}
 PKGNAME =	${DISTNAME:L}
-REVISION =	2
+REVISION =	3
 
 CATEGORIES =	lang
 

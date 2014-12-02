@@ -5,7 +5,7 @@ COMMENT =	PostgreSQL log analyzer
 DISTNAME =	pgfouine-1.2
 CATEGORIES =	databases
 
-REVISION =	5
+REVISION =	6
 
 HOMEPAGE =	http://pgfouine.projects.postgresql.org/
 
