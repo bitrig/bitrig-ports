@@ -84,7 +84,6 @@
      SUBDIR += keychain
      SUBDIR += klaxon
      SUBDIR += kqoauth
-     SUBDIR += l0phtcrack
      SUBDIR += libassuan
      SUBDIR += libfprint
      SUBDIR += libgcrypt
