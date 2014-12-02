@@ -222,7 +222,6 @@
      SUBDIR += toprump
      SUBDIR += torture
      SUBDIR += tpb
-     SUBDIR += tphdisk
      SUBDIR += tray-app
      SUBDIR += tree
      SUBDIR += ttyload
