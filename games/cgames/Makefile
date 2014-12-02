@@ -5,7 +5,6 @@ DISTNAME =	cgames-2.2a
 CATEGORIES =	games
 
 HOMEPAGE =	http://www.muppetlabs.com/~breadbox/software/cgames.html
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

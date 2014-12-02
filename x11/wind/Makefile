@@ -5,7 +5,6 @@ DISTNAME =	wind-1.5
 CATEGORIES =	x11
 
 HOMEPAGE =	http://windwm.sourceforge.net
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
