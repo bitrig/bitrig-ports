@@ -2,13 +2,12 @@
 
 V =		2.8.9
 PL =		1
-REVISION =	0
+REVISION =	1
 COMMENT =	console Internet browser
 DISTNAME =	lynx${V}dev.${PL}
 PKGNAME =	lynx-${V}pl${PL}
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	www net
-REVISION =	0
 
 HOMEPAGE =	http://lynx.isc.org/
 

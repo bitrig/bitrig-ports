@@ -3,7 +3,7 @@
 COMMENT =		handy web browsing in a Perl object
 
 DISTNAME =		WWW-Mechanize-1.73
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		www
 

@@ -3,7 +3,7 @@
 COMMENT=		OpenID authentication for PHP
 
 DISTNAME=		php-openid-2.1.2
-REVISION=		5
+REVISION=		6
 CATEGORIES=		www security
 
 # Apache 2.0 license

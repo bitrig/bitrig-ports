@@ -3,7 +3,7 @@
 COMMENT=	converts MSWord Documents to ASCII Text and PostScript
 
 DISTNAME=	antiword-0.37
-REVISION=	0
+REVISION=	1
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.winfield.demon.nl/

@@ -9,11 +9,10 @@ PKG_ARCH =	*
 DISTNAME =	drush-7.x-5.9
 WRKDIST =	${WRKDIR}/drush
 PKGNAME =	drush-5.9
-REVISION =	0
+REVISION =	1
 DISTFILES =	${DISTNAME}.tar.gz Console_Table-1.1.3.tgz:0
 MODULES =	lang/php
 MODPHP_BUILDDEP ?=	No
-REVISION =	0
 
 PERMIT_PACKAGE_CDROM = Yes
 

@@ -4,9 +4,8 @@ COMMENT=	web-based rack/IP management
 
 DISTNAME=	RackTables-0.20.8
 PKGNAME=	${DISTNAME:L}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	www
-REVISION=	0
 
 HOMEPAGE=	http://www.racktables.org/
 
