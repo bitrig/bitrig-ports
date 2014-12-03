@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/11/25 14:16:23 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2014/12/03 21:56:44 kili Exp $
 
 COMMENT =		Perl 6 Implementation
 
@@ -21,7 +21,6 @@ BUILD_DEPENDS =		devel/hs-FindBin \
 			devel/hs-HsSyck>=0.44 \
 			devel/hs-MetaObject>=0.0.4 \
 			devel/hs-control-timeout>=0.1.2 \
-			devel/hs-haskeline>=0.6.4.7 \
 			devel/hs-mtl>=2.0.0.0 \
 			devel/hs-network \
 			devel/hs-parsec>=3.0.0.0 \

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/08/07 21:58:09 naddy Exp $
+# $OpenBSD: Makefile,v 1.9 2014/12/03 21:56:45 kili Exp $
 
 COMMENT =		web server for WAI applications
 
@@ -23,7 +23,6 @@ RUN_DEPENDS =		devel/hs-blaze-builder-conduit>=0.5,<1.1 \
 			devel/hs-network-conduit>=0.5,<1.1 \
 			devel/hs-network>=2.3 \
 			devel/hs-simple-sendfile>=0.2.7,<0.3 \
-			devel/hs-transformers>=0.2.2,<0.4 \
 			devel/hs-unix-compat>=0.2 \
 			devel/hs-void \
 			www/hs-http-attoparsec \

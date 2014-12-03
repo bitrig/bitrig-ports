@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2013/07/19 06:57:56 kili Exp $
+# $OpenBSD: Makefile,v 1.19 2014/12/03 21:56:44 kili Exp $
 
 COMMENT =		xhtml templating system
 
@@ -23,7 +23,6 @@ RUN_DEPENDS +=		devel/hs-MonadCatchIO-transformers>=0.2.1,<0.4 \
 			devel/hs-mtl>=2.0,<2.2 \
 			devel/hs-random>=1.0.1.0,<1.1 \
 			devel/hs-text>=0.10,<0.12 \
-			devel/hs-transformers>=0.3,<0.4 \
 			devel/hs-unordered-containers>=0.1.4,<0.3 \
 			devel/hs-vector>=0.9,<0.11 \
 			textproc/hs-attoparsec>=0.10,<0.11 \

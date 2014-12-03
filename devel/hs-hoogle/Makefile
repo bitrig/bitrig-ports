@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/07/19 07:05:01 kili Exp $
+# $OpenBSD: Makefile,v 1.12 2014/12/03 21:56:44 kili Exp $
 
 COMMENT =		Haskell API search engine
 
@@ -24,7 +24,6 @@ RUN_DEPENDS =		devel/hs-blaze-builder>=0.2 \
 			devel/hs-parsec>=2.1 \
 			devel/hs-random \
 			devel/hs-safe \
-			devel/hs-transformers>=0.2 \
 			devel/hs-uniplate>=1.6 \
 			lang/hs-haskell-src-exts>=1.12,<1.14 \
 			textproc/hs-tagsoup>=0.11 \

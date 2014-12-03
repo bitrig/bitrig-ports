@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/07/18 20:50:19 kili Exp $
+# $OpenBSD: Makefile,v 1.2 2014/12/03 21:56:44 kili Exp $
 
 COMMENT =		lenses, folds and traversals
 
@@ -23,7 +23,6 @@ RUN_DEPENDS +=		devel/hs-comonad-transformers>=3 \
 			devel/hs-semigroups>=0.9 \
 			devel/hs-split>=0.2,<0.3 \
 			devel/hs-text>=0.11,<0.12 \
-			devel/hs-transformers>=0.2,<0.4 \
 			devel/hs-unordered-containers>=0.2,<0.3 \
 			devel/hs-vector>=0.9,<0.11
 

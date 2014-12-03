@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/07/19 07:01:01 kili Exp $
+# $OpenBSD: Makefile,v 1.6 2014/12/03 21:56:43 kili Exp $
 
 COMMENT =		convert streams of builders to streams of bytestrings
 
@@ -17,7 +17,6 @@ BUILD_DEPENDS =		${RUN_DEPENDS}
 
 RUN_DEPENDS =		devel/hs-blaze-builder>=0.2.1.4,<0.4 \
 			devel/hs-conduit>=1.0,<1.1 \
-			devel/hs-text>=0.11 \
-			devel/hs-transformers>=0.2.2,<0.4 \
+			devel/hs-text>=0.11
 
 .include <bsd.port.mk>
