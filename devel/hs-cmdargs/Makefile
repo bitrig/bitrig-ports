@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 10:50:07 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2014/12/04 13:13:56 nigel Exp $
 
 COMMENT =		command line parser library
 
@@ -14,8 +14,5 @@ MODULES =		lang/ghc
 
 MODGHC_BUILD =		cabal hackage haddock register
 MODGHC_SETUP_CONF_ARGS =	-f -testprog
-
-BUILD_DEPENDS =		${RUN_DEPENDS}
-RUN_DEPENDS =		hs-transformers->=0.2,<0.4:devel/hs-transformers
 
 .include <bsd.port.mk>
