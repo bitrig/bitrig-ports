@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.37 2013/10/02 19:04:12 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.38 2014/12/04 21:05:42 ajacoutot Exp $
 
 COMMENT=	scanner frontend for SANE
 
