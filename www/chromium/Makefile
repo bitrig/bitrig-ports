@@ -1,13 +1,13 @@
 # $OpenBSD: Makefile,v 1.179 2014/07/28 12:33:47 espie Exp $
 
-ONLY_FOR_ARCHS=		i386 amd64
+ONLY_FOR_ARCHS=		amd64
 DPB_PROPERTIES=		parallel
 
 COMMENT=		Chromium browser
 
 V=			36.0.1985.125
 DISTNAME=		chromium-${V}
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		www
 
@@ -37,7 +37,7 @@ WANTLIB += X11 Xext Xfixes Xrender Xss c cairo cups dbus-1 event
 WANTLIB += execinfo expat fontconfig freetype gconf-2 gcrypt gdk-x11-2.0
 WANTLIB += gdk_pixbuf-2.0 glib-2.0 gobject-2.0 gtk-x11-2.0
 WANTLIB += m pango-1.0 pangocairo-1.0
-WANTLIB += png pthread speex
+WANTLIB += png pthread speex opus
 WANTLIB += xml2 xslt
 WANTLIB += usb-1.0 sndio
 WANTLIB += Xcomposite
