@@ -1,13 +1,12 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/11 10:50:18 espie Exp $
+# $OpenBSD: Makefile,v 1.11 2014/12/08 15:09:46 benoit Exp $
 
 COMMENT=	select a pager if destination is a TTY
 
 MODULES=	cpan
-DISTNAME=	IO-Pager-0.06
-REVISION=	2
+DISTNAME =	IO-Pager-0.31
 CATEGORIES=	devel
-USE_GROFF =	Yes
 
+# Perl
 PERMIT_PACKAGE_CDROM=	Yes
 
 EXTRACT_SUFX=	.tgz
