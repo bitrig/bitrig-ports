@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2013/06/04 18:41:42 naddy Exp $
+# $OpenBSD: Makefile,v 1.26 2014/12/08 21:35:32 naddy Exp $
 
 ONLY_FOR_ARCHS=		i386
 
@@ -22,8 +22,6 @@ WANTLIB+=		c++ c++abi
 BUILD_DEPENDS=		devel/nasm
 LIB_DEPENDS=		sdl-*-!no_x11:devel/sdl \
 			graphics/png
-
-USE_GROFF=		Yes
 
 AUTOCONF_VERSION=	2.59
 CONFIGURE_STYLE=	autoconf automake
