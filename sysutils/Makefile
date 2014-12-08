@@ -80,7 +80,6 @@
      SUBDIR += krename-kde4
      SUBDIR += ktsuss
      SUBDIR += librelp
-     SUBDIR += libretto-config
      SUBDIR += libstatgrab
      SUBDIR += libvirt
      SUBDIR += libvirt-python
