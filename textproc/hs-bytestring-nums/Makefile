@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/08/07 21:58:02 naddy Exp $
+# $OpenBSD: Makefile,v 1.11 2014/12/08 09:15:02 kili Exp $
 
 COMMENT =		parse numeric literals from bytestrings
 

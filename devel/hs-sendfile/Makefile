@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/07/19 06:48:23 kili Exp $
+# $OpenBSD: Makefile,v 1.13 2014/12/08 09:15:02 kili Exp $
 
 COMMENT =		portable sendfile functionality
 

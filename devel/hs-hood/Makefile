@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/03/11 10:50:07 espie Exp $
+# $OpenBSD: Makefile,v 1.10 2014/12/08 09:15:02 kili Exp $
 
 COMMENT =		Haskell Object Observation Debugger
 
