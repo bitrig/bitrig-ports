@@ -2,8 +2,7 @@
 
 COMMENT=		IPv4/IPv6 traffic collector
 
-DISTNAME=		cnupm-3.11
-REVISION=		4
+DISTNAME=		cnupm-3.12
 CATEGORIES=		net
 
 HOMEPAGE=		http://pdp-11.org.ru/~form/cnupm
