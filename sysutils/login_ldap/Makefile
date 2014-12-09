@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2013/03/11 11:41:30 espie Exp $
+# $OpenBSD: Makefile,v 1.20 2014/12/09 15:54:25 ajacoutot Exp $
 
 COMMENT=	provide ldap authentication type
 
