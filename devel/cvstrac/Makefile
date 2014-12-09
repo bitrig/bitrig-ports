@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 10:50:02 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2014/12/09 20:46:00 sthen Exp $
 
 COMMENT =	patch-set and bug tracking system for CVS
 
