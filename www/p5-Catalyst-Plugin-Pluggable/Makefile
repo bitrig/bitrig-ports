@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.10 2013/10/11 23:51:32 naddy Exp $
+# $OpenBSD: Makefile,v 1.11 2014/12/10 14:51:20 benoit Exp $
 
 COMMENT=		universal forwarder for catalyst applications
 
 MODULES=		cpan
 DISTNAME=		Catalyst-Plugin-Pluggable-0.04
-REVISION=		2
+REVISION =		2
 CATEGORIES=		www devel
 
 # same as perl
