@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/08/10 09:58:05 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2014/12/10 00:44:53 sthen Exp $
 
 VERSION=	5.2.3
 REVISION=	0
