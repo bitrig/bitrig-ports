@@ -6,8 +6,6 @@ DISTNAME =		Net-IMP-HTTP-0.523
 
 CATEGORIES =		net
 
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
-
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 

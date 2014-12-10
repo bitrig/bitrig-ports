@@ -71,7 +71,6 @@ SHARED_LIBS +=		${SHARED_LIBS-examples}
 
 CATEGORIES =		x11 devel
 HOMEPAGE =		http://www.qt-project.org/
-MAINTAINER =		KDE porting team <openbsd-kde@googlegroups.com>
 
 
 WANTLIB-main =  ${WANTLIB}

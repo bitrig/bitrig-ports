@@ -5,7 +5,6 @@ DISTNAME =	liberalcrimesquad-4.07.0
 CATEGORIES =	games
 
 HOMEPAGE =	http://lcs.wikidot.com/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

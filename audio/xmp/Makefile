@@ -6,7 +6,6 @@ DISTNAME=		xmp-4.0.10
 CATEGORIES=		audio
 
 HOMEPAGE=		http://xmp.sourceforge.net/
-MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

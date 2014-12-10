@@ -8,8 +8,6 @@ DISTNAME=		login_krb5-5.7
 
 CATEGORIES=		sysutils
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes
 

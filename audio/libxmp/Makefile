@@ -10,7 +10,6 @@ CATEGORIES =	audio
 SHARED_LIBS +=	xmp		1.0	# 4.3
 
 HOMEPAGE =	http://xmp.sourceforge.net/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
