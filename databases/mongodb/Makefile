@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/10/22 20:11:27 kirby Exp $
+# $OpenBSD: Makefile,v 1.17 2014/12/10 19:59:29 dcoppa Exp $
 
 PORTROACH =	limitw:1,even
 
@@ -9,7 +9,7 @@ COMMENT =	scalable, high-performance document-oriented database
 
 DISTNAME =	mongodb-src-r2.6.4
 PKGNAME =	${DISTNAME:S/src-r//}
-
+REVISION =	0
 CATEGORIES =	databases
 
 REVISION =	1
@@ -21,7 +21,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =	boost_filesystem-mt boost_program_options-mt boost_system-mt \
 		boost_thread-mt c execinfo m pcap pcre pcrecpp pthread \
-		v8
+		v8  yaml-cpp
 WANTLIB +=	c++ c++abi
 
 MASTER_SITES =	http://downloads.mongodb.org/src/
@@ -35,7 +35,8 @@ MODSCONS_FLAGS = --prefix="${PREFIX}" \
 		 --full \
 		 --use-system-pcre \
 		 --use-system-boost \
-		 --use-system-v8
+		 --use-system-v8 \
+		 --use-system-yaml
 
 MAKE_ENV +=	HOME="${HOME}" \
 		TERM="${TERM}" \
@@ -44,6 +45,7 @@ MAKE_ENV +=	HOME="${HOME}" \
 LIB_DEPENDS =	devel/boost \
 		devel/libexecinfo \
 		devel/pcre \
+		devel/yaml-cpp \
 		lang/libv8
 
 pre-configure:
