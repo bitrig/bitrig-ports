@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.56 2014/03/17 23:22:21 sthen Exp $
+# $OpenBSD: Makefile,v 1.57 2014/12/11 12:43:50 otto Exp $
 
 COMMENT=	extremely fast program for analysing WWW logfiles
 
