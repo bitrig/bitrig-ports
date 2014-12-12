@@ -1,7 +1,7 @@
 $OpenBSD$
---- binutils/bfd/elflink.c.orig	Sun Apr 28 13:17:07 2013
-+++ binutils/bfd/elflink.c	Thu Nov  7 16:24:08 2013
-@@ -6253,6 +6253,14 @@ elf_section_ignore_discarded_relocs (asection *sec)
+--- binutils/bfd/elflink.c.orig	Fri Dec 12 04:37:01 2014
++++ binutils/bfd/elflink.c	Fri Dec 12 08:04:38 2014
+@@ -6262,6 +6262,14 @@ elf_section_ignore_discarded_relocs (asection *sec)
        break;
      }
  
