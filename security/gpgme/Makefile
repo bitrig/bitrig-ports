@@ -4,7 +4,7 @@ COMMENT=		GnuPG Made Easy
 
 DISTNAME=		gpgme-1.3.1
 CATEGORIES=     	security devel
-REVISION=		1
+REVISION=		2
 
 SHARED_LIBS +=  gpgme                18.0     # 19.0
 SHARED_LIBS +=  gpgme-pthread        18.0     # 19.0
@@ -14,13 +14,12 @@ HOMEPAGE=		http://www.gnupg.org/gpgme.html
 # GPLv2 - LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += assuan gpg-error
+WANTLIB += assuan gpg-error pthread
 
 MASTER_SITES=		${MASTER_SITES_GNUPG:=gpgme/}
 EXTRACT_SUFX=		.tar.bz2
 
 CONFIGURE_STYLE=	gnu
-CONFIGURE_ENV=		CC=gcc CXX=g++
 CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--with-gpg=${LOCALBASE}/bin/gpg \
 			--with-gpgsm=no \
