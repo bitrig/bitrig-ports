@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2014/07/10 10:19:45 robert Exp $
+# $OpenBSD: Makefile,v 1.40 2014/12/13 18:58:37 kili Exp $
 
 COMMENT=	SVG vector drawing application
 
