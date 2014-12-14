@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/07/19 07:00:06 kili Exp $
+# $OpenBSD: Makefile,v 1.6 2014/12/14 23:22:39 kili Exp $
 
 COMMENT =		a Haskell 98 logically uninhabited data type
 
