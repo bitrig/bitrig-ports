@@ -1,13 +1,11 @@
-$OpenBSD: patch-Lib_test_regrtest_py,v 1.5 2013/05/22 12:39:30 fgsch Exp $
+$OpenBSD: patch-Lib_test_regrtest_py,v 1.7 2014/12/14 08:32:55 rpointel Exp $
 
 - test_bsddb and test_bsddb3 are in the list below as they are only available
   on i386 and amd64.
 
---- Lib/test/regrtest.py.orig	Sun Jun 29 21:05:32 2014
-+++ Lib/test/regrtest.py	Mon Oct 27 10:35:02 2014
-@@ -1433,6 +1433,18 @@ _expectations = {
-         test_ttk_textonly
-         test_multiprocessing
+--- Lib/test/regrtest.py.orig	Wed Dec 10 16:59:41 2014
++++ Lib/test/regrtest.py	Sat Dec 13 12:13:40 2014
+@@ -1427,22 +1427,16 @@ _expectations = {
          """,
 +    'bitrig1':
 +        """
@@ -23,4 +21,12 @@ $OpenBSD: patch-Lib_test_regrtest_py,v 1.5 2013/05/22 12:39:30 fgsch Exp $
 +        """,
      'netbsd3':
          """
-         test_ascii_formatd
+@@ -1469,6 +1463,8 @@ _expectations['freebsd5'] = _expectations['freebsd4']
+ _expectations['freebsd6'] = _expectations['freebsd4']
+ _expectations['freebsd7'] = _expectations['freebsd4']
+ _expectations['freebsd8'] = _expectations['freebsd4']
++_expectations['openbsd4'] = _expectations['openbsd3']
++_expectations['openbsd5'] = _expectations['openbsd3']
+ 
+ class _ExpectedSkips:
+     def __init__(self):

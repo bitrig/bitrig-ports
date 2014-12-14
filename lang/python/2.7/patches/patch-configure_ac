@@ -1,11 +1,11 @@
-$OpenBSD: patch-configure_ac,v 1.4 2014/07/11 06:59:43 rpointel Exp $
+$OpenBSD: patch-configure_ac,v 1.5 2014/12/14 08:32:55 rpointel Exp $
 
 SOVERSION defaults to 1.0. SHARED_LIBS, however, could be changed
 at any point.  Ensure they are on sync in case INSTSONAME is used
 by a third party.
 
---- configure.ac.orig	Sun Jun 29 22:05:48 2014
-+++ configure.ac	Sat Jul 12 21:04:09 2014
+--- configure.ac.orig	Wed Dec 10 17:00:00 2014
++++ configure.ac	Sat Dec 13 12:13:40 2014
 @@ -396,7 +396,7 @@ case $ac_sys_system/$ac_sys_release in
      # As this has a different meaning on Linux, only define it on OpenBSD
      AC_DEFINE(_BSD_SOURCE, 1, [Define on OpenBSD to activate all library features])
@@ -25,6 +25,7 @@ by a third party.
  	  BLDLIBRARY='-L. -lpython$(VERSION)'
  	  RUNSHARED=LD_LIBRARY_PATH=`pwd`${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 @@ -891,6 +891,9 @@ if test $enable_shared = "yes"; then
+
  	      FreeBSD*)
  		SOVERSION=`echo $SOVERSION|cut -d "." -f 1`
  		;;
