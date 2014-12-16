@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.92 2014/12/12 21:51:39 brad Exp $
+# $OpenBSD: Makefile,v 1.93 2014/12/16 21:10:31 brad Exp $
 
 # XXX: Remember to bump MODCLANG_VERSION in lang/clang/clang.port.mk when
 # updating this port.
@@ -8,7 +8,7 @@ DPB_PROPERTIES= parallel
 
 LLVM_V =	3.5
 DISTNAME =	llvm-${LLVM_V}.20140228
-REVISION =	19
+REVISION =	20
 CATEGORIES =	devel
 MASTER_SITES =	http://comstyle.com/source/
 EXTRACT_SUFX =	.tar.xz
