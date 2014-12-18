@@ -1,12 +1,11 @@
-# $OpenBSD: Makefile,v 1.89 2014/11/06 17:13:39 sthen Exp $
+# $OpenBSD: Makefile,v 1.90 2014/12/18 22:07:39 sthen Exp $
 
 COMMENT=	imap4 webmail client
 
 COMPOSER_V=	1.0.0-alpha8
-DISTNAME=	roundcubemail-1.0.3
+DISTNAME=	roundcubemail-1.0.4
 CATEGORIES=	mail www
 HOMEPAGE=	http://www.roundcube.net/
-REVISION=	0
 
 # GPLv3+ with exceptions for skins & plugins
 PERMIT_PACKAGE_CDROM=	Yes
@@ -54,8 +53,10 @@ do-install:
 	chown -R ${SHAREOWN}:${SHAREGRP} ${INSTDIR}; \
 	chgrp -R wheel ${INSTDIR}/bin; \
 	chmod -R o-rwx ${INSTDIR}/bin; \
-	find ${INSTDIR} \( -name \*.orig -or -name \*.src \) -exec rm -f {} +
-	find ${INSTDIR} \( -name \*.png -or -name \*.js -or -name \*.css \) -exec chmod -x {} +
+	find ${INSTDIR} \( -name \*.orig -or -name \*.beforesubst -or \
+	    -name \*.src \) -exec rm -f {} +
+	find ${INSTDIR} \( -name \*.png -or -name \*.js -or \
+	    -name \*.css \) -exec chmod -x {} +
 	chmod 700 ${INSTDIR}/composer.phar
 
 .include <bsd.port.mk>
