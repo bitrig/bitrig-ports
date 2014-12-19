@@ -7,8 +7,6 @@ CATEGORIES=		textproc
 
 HOMEPAGE=		http://www.elasticsearch.org/
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # Apache2
 PERMIT_PACKAGE_CDROM=	Yes
 

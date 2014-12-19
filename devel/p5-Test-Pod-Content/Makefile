@@ -6,8 +6,6 @@ DISTNAME =	Test-Pod-Content-v0.0.6
 PKGNAME =	p5-${DISTNAME:S/v//}
 CATEGORIES =	devel
 
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -14,8 +14,6 @@ CATEGORIES =	geo databases
 
 HOMEPAGE =	http://pgrouting.org/
 
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 

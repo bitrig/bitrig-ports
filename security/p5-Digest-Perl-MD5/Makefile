@@ -6,8 +6,6 @@ MODULES=	cpan
 DISTNAME =	Digest-Perl-MD5-1.9
 CATEGORIES=	security
 
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
-
 # perl
 PERMIT_PACKAGE_CDROM =   Yes
 

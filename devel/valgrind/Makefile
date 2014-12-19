@@ -16,8 +16,6 @@ PATCHFILES =		valgrind-${V}-openbsd-20141211.patch:0
 
 HOMEPAGE =		http://www.valgrind.org/
 
-MAINTAINER =		Masao Uebayashi <uebayasi@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 

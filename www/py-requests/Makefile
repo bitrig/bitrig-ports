@@ -11,8 +11,6 @@ CATEGORIES=	www
 
 HOMEPAGE=	http://python-requests.org/
 
-MAINTAINER=	Alexandr Shadchin <shadchin@openbsd.org>
-
 # APLv2
 PERMIT_PACKAGE_CDROM=	Yes
 

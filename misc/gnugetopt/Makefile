@@ -8,8 +8,6 @@ CATEGORIES=	misc
 
 HOMEPAGE=	http://software.frodo.looijaard.name/getopt/
 
-MAINTAINER=	Robert Peichaer <rpe@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
