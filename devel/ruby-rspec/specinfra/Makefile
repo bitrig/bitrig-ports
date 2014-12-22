@@ -1,7 +1,7 @@
-# $OpenBSD: Makefile,v 1.19 2014/12/15 12:41:43 jasper Exp $
+# $OpenBSD: Makefile,v 1.20 2014/12/22 12:30:32 jasper Exp $
 
 COMMENT=	common layer for serverspec and configspec
-DISTNAME=	specinfra-2.10.3
+DISTNAME=	specinfra-2.10.4
 
 BUILD_DEPENDS =	${RUN_DEPENDS}
 RUN_DEPENDS =	net/ruby-net-scp,${MODRUBY_FLAVOR} \
