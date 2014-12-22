@@ -1,34 +1,25 @@
-# $OpenBSD: Makefile,v 1.30 2014/10/08 12:06:21 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.31 2014/12/22 14:26:23 ajacoutot Exp $
 
-COMMENT =	digital camera command-line interface
-CATEGORIES =	graphics
+COMMENT=		digital camera command-line interface
 
-VERSION =	2.5.5
-DISTNAME =	gphoto2-${VERSION}
-PKGNAME =	gphoto-${VERSION}
-REVISION =	0
+VERSION=		2.5.6
+DISTNAME=		gphoto2-${VERSION}
+PKGNAME=		gphoto-${VERSION}
 
-REVISION=	1
+CATEGORIES=		graphics
 
-HOMEPAGE =	http://gphoto.sourceforge.net/
-
-MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=gphoto/}
+HOMEPAGE=		http://gphoto.sourceforge.net/
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =		Yes
+PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c exif gphoto2 gphoto2_port jpeg ltdl m ncurses popt
-WANTLIB += pthread readline
+WANTLIB += c cdk exif gphoto2 gphoto2_port jpeg ltdl m ncurses
+WANTLIB += popt pthread readline
 
-USE_GROFF =		Yes
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gphoto/}
 
-MAKE_FLAGS =		INTLLIBS='$$(LTLIBINTL)'
-
-CONFIGURE_STYLE =	gnu
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/auto-aux
-CONFIGURE_ARGS =	${CONFIGURE_SHARED} \
-			--without-cdk
-CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_STYLE=	gnu
+CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib" \
 			POPT_CFLAGS="-I${LOCALBASE}/include" \
 			POPT_LIBS="-I${LOCALBASE}/lib -lpopt"
@@ -37,5 +28,11 @@ MODULES =	devel/gettext
 LIB_DEPENDS =	graphics/libgphoto2 \
 		devel/popt \
 		devel/readline
+
+CONFIGURE_ARGS=		${CONFIGURE_SHARED}
+
+# checking how to link with libintl... /usr/local/lib/libintl.a ...
+# (we want -lintl)
+MAKE_FLAGS=		INTLLIBS='$$(LTLIBINTL)'
 
 .include <bsd.port.mk>
