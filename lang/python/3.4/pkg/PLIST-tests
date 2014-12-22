@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST-tests,v 1.1.1.1 2014/04/13 07:10:12 rpointel Exp $
+@comment $OpenBSD: PLIST-tests,v 1.4 2014/12/22 06:29:59 rpointel Exp $
 @option no-default-conflict
 @conflict python-tests->=3.4,<3.5
 @pkgpath lang/python3/3.4,-tests
