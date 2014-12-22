@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.8 2014/04/13 01:01:38 naddy Exp $
+# $OpenBSD: Makefile,v 1.9 2014/12/22 14:07:36 benoit Exp $
 
 COMMENT=	mock database driver for testing
 
 MODULES=	cpan
-DISTNAME=	DBD-Mock-1.39
-REVISION=	0
+DISTNAME=	DBD-Mock-1.45
 CATEGORIES=	databases devel
 
 # Perl
