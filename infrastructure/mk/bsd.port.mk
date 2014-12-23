@@ -86,12 +86,12 @@ WRKDIR_LINKNAME ?=
 _FETCH_MAKEFILE ?= /dev/stdout
 
 .if ${USE_SYSTRACE:L} == "yes"
-WRKOBJDIR_MFS ?!= readlink -fn /tmp/pobj
+WRKOBJDIR_TMPFS ?!= readlink -fn /tmp/pobj
 .else
-WRKOBJDIR_MFS ?= /tmp/pobj
+WRKOBJDIR_TMPFS ?= /tmp/pobj
 .endif
 
-USE_MFS ?= No
+USE_TMPFS ?= No
 .if ${USE_SYSTRACE:L} == "yes"
 WRKOBJDIR ?!= readlink -fn ${PORTSDIR}/pobj
 .else
@@ -179,8 +179,8 @@ ERRORS += "Fatal: building ports requires correctly installed X11"
 # local path locations
 .include "${PORTSDIR}/infrastructure/mk/pkgpath.mk"
 
-.if ${USE_MFS:L} == "yes"
-WRKOBJDIR_${PKGPATH} ?= ${WRKOBJDIR_MFS}
+.if ${USE_TMPFS:L} == "yes"
+WRKOBJDIR_${PKGPATH} ?= ${WRKOBJDIR_TMPFS}
 .else
 WRKOBJDIR_${PKGPATH} ?= ${WRKOBJDIR}
 .endif
@@ -775,7 +775,7 @@ _WRKDIRS = ${.CURDIR}/${OLD_WRKDIR_NAME}
 WRKDIR ?= ${WRKOBJDIR_${PKGPATH}}/${_WRKDIR_STEM}
 _WRKDIRS += ${WRKOBJDIR_${PKGPATH}}/${_WRKDIR_STEM}
 _WRKDIRS += ${WRKOBJDIR}/${_WRKDIR_STEM}
-_WRKDIRS += ${WRKOBJDIR_MFS}/${_WRKDIR_STEM}
+_WRKDIRS += ${WRKOBJDIR_TMPFS}/${_WRKDIR_STEM}
 .else
 WRKDIR ?= ${.CURDIR}/${OLD_WRKDIR_NAME}
 .endif

@@ -352,9 +352,9 @@ See
 option.
 .It memory=thr
 Build everything below that wrkdir threshold with
-.Ev USE_MFS Ns = Ns Sq Yes ,
+.Ev USE_TMPFS Ns = Ns Sq Yes ,
 assuming the ports tree has been configured so that
-.Ev WRKOBJDIR_MFS
+.Ev WRKOBJDIR_TMPFS
 points to a memory filesystem.
 .Ar thr
 is the sum, in KBytes, of ports that will be allowed to build in memory.
@@ -511,7 +511,7 @@ Override to keep local, as locks don't really like NFS.
 .It Fl M Ar threshold
 Build ports below the memory threshold under a memory
 filesystem, as configured through
-.Ev WRKOBJDIR_MFS
+.Ev WRKOBJDIR_TMPFS
 .Po
 see
 .Xr bsd.port.mk 5
@@ -967,7 +967,7 @@ is used, size information for successful builds will be recorded under
 by default, location adjustable with
 .Fl S Ar sizelog
 .Pc .
-This is then reused for the mfs threshold option.
+This is then reused for the tmpfs threshold option.
 .Pp
 .Nm
 will also create a large number of log files under

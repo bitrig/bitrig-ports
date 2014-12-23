@@ -96,7 +96,7 @@ sub tweak_args
 		push(@$args, "MAKE_JOBS=$job->{parallel}");
 	}
 	if ($job->{special}) {
-		push(@$args, "USE_MFS=Yes");
+		push(@$args, "USE_TMPFS=Yes");
 	}
 	if ($builder->{fetch}) {
 		push(@$args, "NO_CHECKSUM=Yes");
