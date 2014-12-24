@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.59 2014/02/09 21:36:46 sthen Exp $
+# $OpenBSD: Makefile,v 1.60 2014/12/24 13:10:20 jca Exp $
 
 COMMENT=	Network Time Protocol reference implementation
 
@@ -6,28 +6,24 @@ COMMENT=	Network Time Protocol reference implementation
 # to confuse with the ports system's 'pN' convention, so we
 # convert it to 'pl' for local use.
 
-VERSION=	4.2.7p418
-REVISION=	0
-DISTNAME=	ntp-dev-${VERSION}
+VERSION=	4.2.8
+DISTNAME=	ntp-${VERSION}
 PKGNAME=	ntp-${VERSION:S/p/pl/}
 CATEGORIES=	net
-MASTER_SITES=	http://archive.ntp.org/ntp4/ntp-dev/
+MASTER_SITES=	http://archive.ntp.org/ntp4/ntp-4.2/
 
 HOMEPAGE=	http://www.ntp.org/
 
 # modified ISC
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c crypto edit event_core event_extra event_pthreads
-WANTLIB += m pthread ssl readline termcap
+WANTLIB += c crypto edit event_core event_pthreads
+WANTLIB += m pthread ssl termcap
 
 # enabling SEPARATE_BUILD causes the parser to be rebuilt .y -> .c,
 # which requires bison
 
 CONFIGURE_STYLE=  gnu
-MODGNU_CONFIG_GUESS_DIRS=${WRKSRC} ${WRKSRC}/sntp/libevent/build-aux/
-AUTOCONF_VERSION= 2.68
-AUTOMAKE_VERSION= 1.11
 
 CONFIGURE_ARGS=	--docdir=${TRUEPREFIX}/share/doc/ntp \
 		--enable-parse-clocks \
@@ -39,15 +35,9 @@ CONFIGURE_ENV=	CPPFLAGS='-DCONFIG_FILE="\"${SYSCONFDIR}/ntp.conf\"" \
 			  -I${LOCALBASE}/include' \
 		LDFLAGS='-L${LOCALBASE}/lib'
 
-BUILD_DEPENDS=	${MODGNU_AUTOCONF_DEPENDS} \
-		${MODGNU_AUTOMAKE_DEPENDS} \
-		devel/libtool
-LIB_DEPENDS=	devel/libevent2 \
-		devel/readline
+LIB_DEPENDS=	devel/libevent2
 
 post-patch:
-	cd ${WRKSRC}; AUTOCONF_VERSION=${AUTOCONF_VERSION} \
-	    AUTOMAKE_VERSION=${AUTOMAKE_VERSION} ./bootstrap
 	cp ${WRKSRC}/sntp/loc/freebsd ${WRKSRC}/sntp/loc/openbsd
 
 post-install:
