@@ -1,12 +1,11 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/07/14 08:39:21 giovanni Exp $
+# $OpenBSD: Makefile,v 1.2 2014/12/26 17:26:11 benoit Exp $
 
 SHARED_ONLY =	Yes
 
 COMMENT =	libzmq 3.x wrapper for Perl
 
 MODULES =	cpan
-DISTNAME =	ZMQ-LibZMQ3-1.18
-REVISION =	0
+DISTNAME =	ZMQ-LibZMQ3-1.19
 CATEGORIES =	devel
 
 # Perl
