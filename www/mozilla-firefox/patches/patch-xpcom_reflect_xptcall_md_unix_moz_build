@@ -1,7 +1,7 @@
 $OpenBSD: patch-xpcom_reflect_xptcall_md_unix_moz_build,v 1.1 2014/12/04 17:50:12 landry Exp $
 https://bugzilla.mozilla.org/show_bug.cgi?id=971897
---- xpcom/reflect/xptcall/md/unix/moz.build.orig	Wed Oct 22 15:36:55 2014
-+++ xpcom/reflect/xptcall/md/unix/moz.build	Wed Oct 22 15:43:01 2014
+--- xpcom/reflect/xptcall/md/unix/moz.build.orig	Wed Nov 26 03:17:41 2014
++++ xpcom/reflect/xptcall/md/unix/moz.build	Tue Dec 30 23:10:45 2014
 @@ -19,14 +19,14 @@ if CONFIG['OS_ARCH'] == 'Darwin':
      if '86' in CONFIG['OS_TEST'] and CONFIG['OS_TEST'] != 'x86_64':
          DEFINES['MOZ_NEED_LEADING_UNDERSCORE'] = True
@@ -15,20 +15,29 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=971897
          ]
  
 -if CONFIG['OS_ARCH'] in ('Linux', 'FreeBSD') or \
-+if CONFIG['OS_ARCH'] in ('Linux', 'OpenBSD', 'FreeBSD') or \
++if CONFIG['OS_ARCH'] in ('Linux', 'OpenBSD', 'FreeBSD', 'Bitrig') or \
     CONFIG['OS_ARCH'].startswith('GNU_'):
      if CONFIG['OS_TEST'] == 'x86_64':
          SOURCES += [
-@@ -47,12 +47,6 @@ if CONFIG['OS_ARCH'] in ('Linux', 'FreeBSD'):
-             'xptcstubs_asm_ipf64.s',
+@@ -48,12 +48,6 @@ if CONFIG['OS_ARCH'] in ('Linux', 'FreeBSD'):
              'xptcstubs_ipf64.cpp'
          ]
--
+ 
 -if CONFIG['OS_ARCH'] == 'OpenBSD' and CONFIG['OS_TEST'] == 'x86_64':
 -    SOURCES += [
 -        'xptcinvoke_amd64_openbsd.cpp',
 -        'xptcstubs_amd64_openbsd.cpp'
 -    ]
- 
+-
  if CONFIG['OS_ARCH'] == 'SunOS':
      if CONFIG['OS_TEST'] == 'x86_64':
+         if CONFIG['GNU_CC']:
+@@ -106,7 +100,7 @@ if CONFIG['CPU_ARCH'] == 'arm' or CONFIG['OS_TEST'] ==
+             'xptcstubs_arm_netbsd.cpp',
+         ]
+ 
+-if CONFIG['CPU_ARCH'] == 'arm' and CONFIG['OS_ARCH'] == 'OpenBSD':
++if CONFIG['CPU_ARCH'] == 'arm' and CONFIG['OS_ARCH'] in ('OpenBSD', 'Bitrig'):
+     SOURCES += [
+         'xptcinvoke_arm_openbsd.cpp',
+         'xptcstubs_arm_openbsd.cpp',

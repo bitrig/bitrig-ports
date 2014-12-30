@@ -1,0 +1,14 @@
+--- toolkit/library/libxul.mk.orig	Wed Dec 31 08:21:41 2014
++++ toolkit/library/libxul.mk	Wed Dec 31 08:22:28 2014
+@@ -45,9 +45,11 @@ endif
+ # the default section rules with those from the script instead of
+ # supplementing them. Which leads to a lib with a huge load of sections.
+ ifneq (OpenBSD,$(OS_TARGET))
++ifneq (Bitrig,$(OS_TARGET))
+ ifneq (WINNT,$(OS_TARGET))
+ ifdef LD_IS_BFD
+ OS_LDFLAGS += $(topsrcdir)/toolkit/library/StaticXULComponents.ld
++endif
+ endif
+ endif
+ endif

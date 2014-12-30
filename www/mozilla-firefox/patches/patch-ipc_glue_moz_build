@@ -1,0 +1,11 @@
+--- ipc/glue/moz.build.orig	Tue Dec 30 23:14:20 2014
++++ ipc/glue/moz.build	Tue Dec 30 23:14:32 2014
+@@ -81,7 +81,7 @@ if CONFIG['OS_ARCH'] == 'Linux':
+     UNIFIED_SOURCES += [
+         'ProcessUtils_linux.cpp',
+     ]
+-elif CONFIG['OS_ARCH'] in ('DragonFly', 'FreeBSD', 'NetBSD', 'OpenBSD'):
++elif CONFIG['OS_ARCH'] in ('DragonFly', 'FreeBSD', 'NetBSD', 'OpenBSD', 'Bitrig'):
+     UNIFIED_SOURCES += [
+         'ProcessUtils_bsd.cpp'
+     ]

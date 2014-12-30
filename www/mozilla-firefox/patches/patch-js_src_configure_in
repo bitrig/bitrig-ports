@@ -1,18 +1,27 @@
 $OpenBSD: patch-js_src_configure_in,v 1.24 2013/09/19 13:19:17 landry Exp $
 https://bugzilla.mozilla.org/show_bug.cgi?id=648721
---- js/src/configure.in.orig	Thu Jun  5 21:15:27 2014
-+++ js/src/configure.in	Mon Jun 16 14:13:13 2014
-@@ -782,7 +782,7 @@ if test -n "$CROSS_COMPILE"; then
-         dragonfly*)   OS_ARCH=DragonFly OS_TARGET=DragonFly ;;
+--- js/src/configure.in.orig	Wed Nov 26 03:17:19 2014
++++ js/src/configure.in	Tue Dec 30 23:11:59 2014
+@@ -790,6 +790,7 @@ if test -n "$CROSS_COMPILE"; then
          freebsd*)     OS_ARCH=FreeBSD OS_TARGET=FreeBSD ;;
          netbsd*)      OS_ARCH=NetBSD OS_TARGET=NetBSD ;;
--        openbsd*)     OS_ARCH=OpenBSD OS_TARGET=OpenBSD ;;
-+        openbsd* | bitrig*)     OS_ARCH=OpenBSD OS_TARGET=OpenBSD ;;
+         openbsd*)     OS_ARCH=OpenBSD OS_TARGET=OpenBSD ;;
++        bitrig*)      OS_ARCH=Bitrig OS_TARGET=Bitrig ;;
      esac
      case "${target}" in
          *-android*|*-linuxandroid*) OS_ARCH=Linux OS_TARGET=Android ;;
-@@ -1790,7 +1790,7 @@ ia64*-hpux*)
-     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@) -o $@'
+@@ -853,6 +854,9 @@ netbsd*)
+ openbsd*)
+     HOST_OS_ARCH=OpenBSD
+     ;;
++bitrig*)
++    HOST_OS_ARCH=Bitrig
++    ;;
+ solaris*)
+     HOST_OS_ARCH=SunOS
+     SOLARIS_SUNPRO_CC=
+@@ -1821,7 +1825,7 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(DSO_SONAME) -o $@'
      ;;
  
 -*-openbsd*)
@@ -20,7 +29,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648721
      DLL_SUFFIX=".so.1.0"
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
-@@ -2386,7 +2386,7 @@ then
+@@ -2314,7 +2318,7 @@ then
  			fi
  			;;
  
@@ -29,12 +38,12 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648721
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -2865,7 +2865,7 @@ if test "$_USE_SYSTEM_NSPR" || (test "$NSPR_CFLAGS" -o
- fi
- 
- case "$target" in
--  *linux*|*darwin*|*dragonfly*|*freebsd*|*netbsd*|*openbsd*)
-+  *linux*|*darwin*|*dragonfly*|*freebsd*|*netbsd*|*openbsd*|*bitrig*)
-     if test -z "$_HAS_NSPR" && test "$JS_THREADSAFE"; then
-       JS_POSIX_NSPR_DEFAULT=1
-     fi
+@@ -2389,7 +2393,7 @@ fi
+ AC_CACHE_CHECK(
+     [for res_ninit()],
+     ac_cv_func_res_ninit,
+-    [if test "$OS_TARGET" = NetBSD -o "$OS_TARGET" = OpenBSD; then
++    [if test "$OS_TARGET" = NetBSD -o "$OS_TARGET" = OpenBSD -o "$OS_TARGET" = Bitrig; then
+         dnl no need for res_ninit() on NetBSD and OpenBSD
+         ac_cv_func_res_ninit=no
+      else

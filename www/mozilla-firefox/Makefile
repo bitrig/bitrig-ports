@@ -8,7 +8,7 @@ MOZILLA_VERSION =	34.0
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	firefox
 MOZILLA_CODENAME =	browser
-REVISION = 0
+REVISION = 1
 
 SO_VERSION =	52.0
 # NOTE: Must bump minor version if any shlib's are removed from the
@@ -26,9 +26,7 @@ MODULES =	www/mozilla devel/gettext lang/python
 MODPY_RUNDEP =	No
 
 # necessary glue to build with the correct compiler after fx 17
-MODULES +=		gcc4 lang/clang
-MODGCC4_ARCHS =		powerpc sparc64 alpha i386
-MODGCC4_LANGS =		c c++
+MODULES +=		lang/clang
 MODCLANG_ARCHS =	amd64
 MODCLANG_LANGS =	c c++
 
@@ -44,10 +42,6 @@ MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build/autoconf \
 				${WRKDIST}/modules/freetype2/builds/unix \
 				${WRKDIST}/nsprpub/build/autoconf \
 				${WRKDIST}/toolkit/crashreporter/google-breakpad/autotools
-# to be able to link when building with clang on i386
-.if ${MACHINE_ARCH} == "i386"
-CONFIGURE_ARGS +=	--disable-debug-symbols
-.endif
 
 # XXX
 CONFIGURE_ARGS +=	--without-intl-api

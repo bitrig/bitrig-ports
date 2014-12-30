@@ -1,6 +1,6 @@
---- ipc/chromium/chromium-config.mozbuild.orig	Wed Mar 19 15:56:26 2014
-+++ ipc/chromium/chromium-config.mozbuild	Wed Mar 19 15:56:44 2014
-@@ -71,5 +71,12 @@ else:
+--- ipc/chromium/chromium-config.mozbuild.orig	Wed Nov 26 03:17:19 2014
++++ ipc/chromium/chromium-config.mozbuild	Tue Dec 30 22:35:42 2014
+@@ -69,5 +69,12 @@ else:
              'OS_BSD': 1,
          })
  

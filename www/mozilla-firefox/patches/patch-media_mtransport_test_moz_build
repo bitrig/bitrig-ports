@@ -1,0 +1,11 @@
+--- media/mtransport/test/moz.build.orig	Tue Dec 30 23:13:35 2014
++++ media/mtransport/test/moz.build	Tue Dec 30 23:13:51 2014
+@@ -52,7 +52,7 @@ if CONFIG['OS_TARGET'] == 'Darwin':
+         '/media/mtransport/third_party/nrappkit/src/port/darwin/include',
+     ]
+ 
+-if CONFIG['OS_TARGET'] in ('DragonFly', 'FreeBSD', 'NetBSD', 'OpenBSD'):
++if CONFIG['OS_TARGET'] in ('DragonFly', 'FreeBSD', 'NetBSD', 'OpenBSD', 'Bitrig'):
+     LOCAL_INCLUDES += [
+         '/media/mtransport/third_party/nrappkit/src/port/darwin/include',
+         '/media/mtransport/third_party/nrappkit/src/port/generic/include',

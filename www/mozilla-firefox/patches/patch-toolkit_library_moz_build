@@ -1,0 +1,11 @@
+--- toolkit/library/moz.build.orig	Tue Dec 30 23:15:25 2014
++++ toolkit/library/moz.build	Tue Dec 30 23:15:41 2014
+@@ -227,7 +227,7 @@ OS_LIBS += CONFIG['ICONV_LIBS']
+ if CONFIG['MOZ_WIDGET_TOOLKIT'] == 'cocoa':
+     OS_LIBS += CONFIG['TK_LIBS']
+ 
+-if CONFIG['OS_ARCH'] == 'OpenBSD':
++if CONFIG['OS_ARCH'] in ('OpenBSD', 'Bitrig'):
+     OS_LIBS += [
+         'sndio',
+     ]

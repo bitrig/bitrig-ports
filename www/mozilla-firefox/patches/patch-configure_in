@@ -1,0 +1,112 @@
+$OpenBSD: patch-configure_in,v 1.29 2014/07/24 18:03:00 landry Exp $
+webapprt gtk3 https://bugzilla.mozilla.org/show_bug.cgi?id=1012447
+--- configure.in.orig	Wed Nov 26 03:17:09 2014
++++ configure.in	Tue Dec 30 23:09:05 2014
+@@ -983,6 +983,7 @@ if test -n "$CROSS_COMPILE"; then
+         freebsd*)     OS_ARCH=FreeBSD OS_TARGET=FreeBSD ;;
+         netbsd*)      OS_ARCH=NetBSD OS_TARGET=NetBSD ;;
+         openbsd*)     OS_ARCH=OpenBSD OS_TARGET=OpenBSD ;;
++        bitrig*)      OS_ARCH=Bitrig OS_TARGET=Bitrig ;;
+     esac
+     case "${target}" in
+         *-android*|*-linuxandroid*) OS_ARCH=Linux OS_TARGET=Android ;;
+@@ -1046,6 +1047,9 @@ netbsd*)
+ openbsd*)
+     HOST_OS_ARCH=OpenBSD
+     ;;
++bitrig*)
++    HOST_OS_ARCH=Bitrig
++    ;;
+ solaris*)
+     HOST_OS_ARCH=SunOS
+     SOLARIS_SUNPRO_CC=
+@@ -1385,7 +1389,7 @@ if test "$GNU_CC"; then
+ 
+             # BSDs need `environ' exposed for posix_spawn (bug 753046)
+             case "$OS_TARGET" in
+-            DragonFly|FreeBSD|NetBSD|OpenBSD)
++            DragonFly|FreeBSD|NetBSD|OpenBSD|Bitrig)
+                 if test -n "$HAVE_LINKER_SUPPORT_IGNORE_UNRESOLVED"; then
+                     DSO_LDOPTS="$DSO_LDOPTS -Wl,--ignore-unresolved-symbol,environ"
+                 else
+@@ -1599,7 +1603,7 @@ fi
+ # For profiling builds keep the symbol information
+ if test "$MOZ_PROFILING" -a -z "$STRIP_FLAGS"; then
+     case "$OS_TARGET" in
+-    Linux|DragonFly|FreeBSD|NetBSD|OpenBSD)
++    Linux|DragonFly|FreeBSD|NetBSD|OpenBSD|Bitrig)
+         STRIP_FLAGS="--strip-debug"
+         ;;
+     esac
+@@ -2290,7 +2294,7 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(DSO_SONAME) -o $@'
+     ;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     if test "$SO_VERSION"; then
+         DLL_SUFFIX=".so.$SO_VERSION"
+     else
+@@ -2577,7 +2581,7 @@ dnl Checks for header files.
+ dnl ========================================================
+ AC_HEADER_DIRENT
+ case "$target_os" in
+-freebsd*|openbsd*)
++freebsd*|openbsd*|bitrig*)
+ # for stuff like -lXshm
+     CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
+     ;;
+@@ -2867,7 +2871,7 @@ then
+             fi
+             ;;
+ 
+-        *-*-openbsd*|*-*-bsdi*)
++        *-*-openbsd*|*-*-bitrig*|*-*-bsdi*)
+             AC_DEFINE(_REENTRANT)
+             AC_DEFINE(_THREAD_SAFE)
+             dnl -pthread links in -lc_r, so don't specify it explicitly.
+@@ -2959,7 +2963,7 @@ fi
+ AC_CACHE_CHECK(
+     [for res_ninit()],
+     ac_cv_func_res_ninit,
+-    [if test "$OS_TARGET" = NetBSD -o "$OS_TARGET" = OpenBSD; then
++    [if test "$OS_TARGET" = NetBSD -o "$OS_TARGET" = OpenBSD -o "$OS_TARGET" = Bitrig; then
+         dnl no need for res_ninit() on NetBSD and OpenBSD
+         ac_cv_func_res_ninit=no
+      else
+@@ -3230,7 +3234,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
+     *-android*|*-linuxandroid*)
+       :
+       ;;
+-    *-openbsd*)
++    *-openbsd*|*-bitrig*)
+       :
+       ;;
+     *)
+@@ -4935,7 +4939,7 @@ dnl --enable-webrtc to override.  Can disable for ever
+ dnl the master list above.
+ if test -n "$MOZ_WEBRTC"; then
+     case "$target" in
+-    *-linux*|*-mingw*|*-darwin*|*-android*|*-linuxandroid*|*-dragonfly*|*-freebsd*|*-netbsd*|*-openbsd*)
++    *-linux*|*-mingw*|*-darwin*|*-android*|*-linuxandroid*|*-dragonfly*|*-freebsd*|*-netbsd*|*-openbsd*|*-bitrig*)
+         dnl Leave enabled
+         ;;
+     *)
+@@ -5476,7 +5480,7 @@ dnl ==================================================
+ 
+ dnl If using Linux, ensure that the PA library is available
+ case "$OS_TARGET" in
+-WINNT|Darwin|Android|OpenBSD)
++WINNT|Darwin|Android|OpenBSD|Bitrig)
+     ;;
+ *)
+     if test -z "$MOZ_B2G"; then
+@@ -9023,7 +9027,7 @@ if test -z "$MOZ_NATIVE_JEMALLOC" -a "$MOZ_MEMORY" && 
+   JEMALLOC_WRAPPER=
+   if test -z "$MOZ_REPLACE_MALLOC"; then
+     case "$OS_ARCH" in
+-      Linux|DragonFly|FreeBSD|NetBSD|OpenBSD)
++      Linux|DragonFly|FreeBSD|NetBSD|OpenBSD|Bitrig)
+         MANGLE=$_MANGLE
+         ;;
+     esac
