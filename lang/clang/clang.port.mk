@@ -1,6 +1,6 @@
 # $OpenBSD: clang.port.mk,v 1.13 2014/12/12 21:52:26 brad Exp $
 
-MODCLANG_VERSION=	3.5.20140228p19
+MODCLANG_VERSION=	3.5.0
 
 MODCLANG_ARCHS ?=
 MODCLANG_LANGS ?=
@@ -33,9 +33,9 @@ _MODCLANG_LINKS =
 BITRIG_LLVM_VERSION=	3.4
 .if ${MODCLANG_VERSION} == ${BITRIG_LLVM_VERSION}
 #3.4 comes with comp, not from ports
-#BUILD_DEPENDS += bitrig/bitrig-llvm
+#BUILD_DEPENDS += devel/llvm
 .else
-BUILD_DEPENDS += bitrig/bitrig-llvm-${MODCLANG_VERSION}
+BUILD_DEPENDS += devel/llvm>=${MODCLANG_VERSION}
 .endif
 _MODCLANG_LINKS = clang gcc clang cc
 
