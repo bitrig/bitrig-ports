@@ -13,7 +13,7 @@
 @@ -6315,6 +6316,22 @@ void bitrig::Assemble::ConstructJob(Compilation &C, co
                                      const char *LinkingOutput) const {
    ArgStringList CmdArgs;
-
+ 
 +  if (getToolChain().getArch() == llvm::Triple::arm) {
 +    StringRef MArch = getToolChain().getArchName();
 +    if (MArch == "armv7" || MArch == "armv7a" || MArch == "armv7-a")

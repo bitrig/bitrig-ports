@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.93 2014/12/16 21:10:31 brad Exp $
+# $OpenBSD: Makefile,v 1.43 2012/05/26 09:14:34 jasper Exp $
 
 # XXX: Remember to bump MODCLANG_VERSION in lang/clang/clang.port.mk when
 # updating this port.
@@ -6,12 +6,7 @@
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
 DPB_PROPERTIES= parallel
 
-LLVM_V =	3.5
-DISTNAME =	llvm-${LLVM_V}.20140228
-REVISION =	20
-CATEGORIES =	devel
-MASTER_SITES =	http://comstyle.com/source/
-EXTRACT_SUFX =	.tar.xz
+EXTRACT_SUFX=.tar.xz
 
 LLVM_V =	3.5.0
 DISTREALNAME =	llvm-${LLVM_V}
@@ -48,6 +43,7 @@ SEPARATE_BUILD =	Yes
 CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 			-DLLVM_REQUIRES_RTTI:Bool=True \
 			-DLLVM_TARGETS_TO_BUILD:String="AArch64;ARM;X86" \
+			-DCMAKE_BUILD_TYPE:String=Release \
 			-DCMAKE_DISABLE_FIND_PACKAGE_LibXml2:Bool=True
 
 CLANG_INCLUDE_PATH =	lib/clang/${LLVM_V}/include
