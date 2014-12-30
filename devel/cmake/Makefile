@@ -63,6 +63,7 @@ MAKE_FLAGS +=		VERBOSE=1
 pre-configure:
 	rm -f ${WRKSRC}/Help/manual/cmake-gui.1.rst
 	cp ${FILESDIR}/*.cmake ${WRKSRC}/Modules/
+	cp ${FILESDIR}/Platform/*.cmake ${WRKSRC}/Modules/Platform
 	${SUBST_CMD} ${WRKSRC}/Modules/CMakeDetermineJavaCompiler.cmake \
 		${WRKSRC}/Modules/FindJNI.cmake \
 		${WRKSRC}/Modules/FindJava.cmake \
