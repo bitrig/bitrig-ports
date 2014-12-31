@@ -1,7 +1,7 @@
 $OpenBSD$
---- Lib/test/test_posix.py.orig	Sun Jun 29 22:05:36 2014
-+++ Lib/test/test_posix.py	Sat Jul 12 21:06:05 2014
-@@ -492,7 +492,8 @@ class PosixTester(unittest.TestCase):
+--- Lib/test/test_posix.py.orig	Wed Dec 10 16:59:46 2014
++++ Lib/test/test_posix.py	Wed Dec 31 09:35:41 2014
+@@ -504,7 +504,8 @@ class PosixTester(unittest.TestCase):
                      quirky_platform = (
                          'sunos' in sys.platform or
                          'netbsd' in sys.platform or

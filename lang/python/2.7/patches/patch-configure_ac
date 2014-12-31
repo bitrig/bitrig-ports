@@ -5,8 +5,8 @@ at any point.  Ensure they are on sync in case INSTSONAME is used
 by a third party.
 
 --- configure.ac.orig	Wed Dec 10 17:00:00 2014
-+++ configure.ac	Sat Dec 13 12:13:40 2014
-@@ -396,7 +396,7 @@ case $ac_sys_system/$ac_sys_release in
++++ configure.ac	Wed Dec 31 09:38:35 2014
+@@ -399,7 +399,7 @@ case $ac_sys_system/$ac_sys_release in
      # As this has a different meaning on Linux, only define it on OpenBSD
      AC_DEFINE(_BSD_SOURCE, 1, [Define on OpenBSD to activate all library features])
      ;;
@@ -15,7 +15,7 @@ by a third party.
      # OpenBSD undoes our definition of __BSD_VISIBLE if _XOPEN_SOURCE is
      # also defined. This can be overridden by defining _BSD_SOURCE
      # As this has a different meaning on Linux, only define it on OpenBSD
-@@ -883,7 +883,7 @@ if test $enable_shared = "yes"; then
+@@ -886,7 +886,7 @@ if test $enable_shared = "yes"; then
  	  RUNSHARED=LD_LIBRARY_PATH=`pwd`${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
  	  INSTSONAME="$LDLIBRARY".$SOVERSION
            ;;
@@ -24,8 +24,7 @@ by a third party.
  	  LDLIBRARY='libpython$(VERSION).so'
  	  BLDLIBRARY='-L. -lpython$(VERSION)'
  	  RUNSHARED=LD_LIBRARY_PATH=`pwd`${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-@@ -891,6 +891,9 @@ if test $enable_shared = "yes"; then
-
+@@ -894,6 +894,9 @@ if test $enable_shared = "yes"; then
  	      FreeBSD*)
  		SOVERSION=`echo $SOVERSION|cut -d "." -f 1`
  		;;
@@ -35,7 +34,7 @@ by a third party.
  	  esac
  	  INSTSONAME="$LDLIBRARY".$SOVERSION
  	  ;;
-@@ -2044,7 +2047,7 @@ then
+@@ -2047,7 +2050,7 @@ then
  		else
  			LDSHARED="ld -Bshareable"
  		fi;;
@@ -44,7 +43,7 @@ by a third party.
  		if [[ "`$CC -dM -E - </dev/null | grep __ELF__`" != "" ]]
  		then
  				LDSHARED='$(CC) -shared $(CCSHARED)'
-@@ -2104,7 +2107,7 @@ then
+@@ -2107,7 +2110,7 @@ then
  		 fi;;
  	Linux*|GNU*) CCSHARED="-fPIC";;
  	BSD/OS*/4*) CCSHARED="-fpic";;
@@ -53,7 +52,7 @@ by a third party.
  	OpenUNIX*|UnixWare*)
  		if test "$GCC" = "yes"
  		then CCSHARED="-fPIC"
-@@ -2154,7 +2157,7 @@ then
+@@ -2157,7 +2160,7 @@ then
  	OpenUNIX*|UnixWare*) LINKFORSHARED="-Wl,-Bexport";;
  	SCO_SV*) LINKFORSHARED="-Wl,-Bexport";;
  	ReliantUNIX*) LINKFORSHARED="-W1 -Blargedynsym";;

@@ -1,8 +1,8 @@
 $OpenBSD$
---- Lib/uuid.py.orig	Sun Jun 29 22:05:38 2014
-+++ Lib/uuid.py	Sat Jul 12 21:04:09 2014
-@@ -331,7 +331,7 @@ def _ifconfig_getnode():
- 
+--- Lib/uuid.py.orig	Wed Dec 10 16:59:49 2014
++++ Lib/uuid.py	Wed Dec 31 09:35:41 2014
+@@ -338,7 +338,7 @@ def _ifconfig_getnode():
+     """Get the hardware address on Unix by running ifconfig."""
      # This works on Linux ('' or '-a'), Tru64 ('-av'), but not all Unixes.
      for args in ('', '-a', '-av'):
 -        mac = _find_mac('ifconfig', args, ['hwaddr', 'ether'], lambda i: i+1)

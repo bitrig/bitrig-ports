@@ -1,6 +1,6 @@
 $OpenBSD: patch-setup_py,v 1.10 2014/12/14 08:32:55 rpointel Exp $
 --- setup.py.orig	Wed Dec 10 17:00:01 2014
-+++ setup.py	Sat Dec 13 12:13:40 2014
++++ setup.py	Wed Dec 31 09:35:47 2014
 @@ -35,6 +35,11 @@ COMPILED_WITH_PYDEBUG = ('--with-pydebug' in sysconfig
  # This global variable is used to hold the list of modules to be disabled.
  disabled_module_list = []
@@ -104,7 +104,7 @@ $OpenBSD: patch-setup_py,v 1.10 2014/12/14 08:32:55 rpointel Exp $
              tklib = self.compiler.find_library_file(lib_dirs,
                                                          'tk' + version)
              tcllib = self.compiler.find_library_file(lib_dirs,
-@@ -1888,7 +1900,7 @@ class PyBuildExt(build_ext):
+@@ -1890,7 +1902,7 @@ class PyBuildExt(build_ext):
              # Check for the include files on Debian and {Free,Open}BSD, where
              # they're put in /usr/include/{tcl,tk}X.Y
              dotversion = version
