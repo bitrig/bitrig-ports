@@ -1,16 +1,17 @@
 $OpenBSD: patch-config-scripts_cups-sharedlibs_m4,v 1.9 2014/11/15 10:22:23 ajacoutot Exp $
 --- config-scripts/cups-sharedlibs.m4.orig	Fri Oct 18 22:36:01 2013
-+++ config-scripts/cups-sharedlibs.m4	Fri Oct  3 15:39:38 2014
-@@ -35,14 +35,14 @@ if test x$enable_shared != xno; then
++++ config-scripts/cups-sharedlibs.m4	Wed Dec 31 17:08:00 2014
+@@ -34,15 +34,15 @@ if test x$enable_shared != xno; then
+ 			DSOXX="\$(CXX)"
  			DSOFLAGS="$DSOFLAGS -Wl,-h\`basename \$@\` -G \$(OPTIM)"
  			;;
- 		Linux | GNU | *BSD*)
+-		Linux | GNU | *BSD*)
 -			LIBCUPS="lib$cupsbase.so.2"
 -			LIBCUPSCGI="libcupscgi.so.1"
 -			LIBCUPSIMAGE="libcupsimage.so.2"
 -			LIBCUPSMIME="libcupsmime.so.1"
 -			LIBCUPSPPDC="libcupsppdc.so.1"
-+		OSF1* | Linux | GNU | *BSD* | *Bitrig*)
++		Linux | GNU | *BSD* | Bitrig)
 +			LIBCUPS="lib$cupsbase.so.${LIBcups_VERSION}"
 +			LIBCUPSCGI="libcupscgi.so.${LIBcupscgi_VERSION}"
 +			LIBCUPSIMAGE="libcupsimage.so.${LIBcupsimage_VERSION}"
@@ -23,12 +24,12 @@ $OpenBSD: patch-config-scripts_cups-sharedlibs_m4,v 1.9 2014/11/15 10:22:23 ajac
  			;;
  		Darwin*)
  			LIBCUPS="lib$cupsbase.2.dylib"
-@@ -207,7 +207,7 @@ if test "$DSO" != ":"; then
+@@ -131,7 +131,7 @@ if test "$DSO" != ":"; then
  				EXPORT_LDFLAGS="-R$libdir"
  			fi
  			;;
 -                *BSD*)
-+                *BSD* | *Bitrig*)
++                *BSD* | Bitrig)
                          # *BSD...
  			if test $exec_prefix != /usr; then
  				DSOFLAGS="-Wl,-R$libdir $DSOFLAGS"

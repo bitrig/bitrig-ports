@@ -1,30 +1,21 @@
 $OpenBSD$
---- config-scripts/cups-directories.m4.orig	Sun May 20 20:18:58 2012
-+++ config-scripts/cups-directories.m4	Sun May 20 20:20:31 2012
-@@ -158,7 +158,7 @@ if test x$rcdir = x; then
- 			fi
- 			;;
- 
--		FreeBSD* | OpenBSD* | MirBSD* | ekkoBSD*)
-+		FreeBSD* | OpenBSD* | MirBSD* | ekkoBSD* | Bitrig*)
- 			# FreeBSD and OpenBSD
- 			;;
- 
-@@ -361,7 +361,7 @@ AC_DEFINE_UNQUOTED(CUPS_FONTPATH, "$CUPS_FONTPATH")
+--- config-scripts/cups-directories.m4.orig	Fri Mar 21 17:42:53 2014
++++ config-scripts/cups-directories.m4	Wed Dec 31 17:03:42 2014
+@@ -233,7 +233,7 @@ AC_DEFINE_UNQUOTED(CUPS_FONTPATH, "$CUPS_FONTPATH")
  # Locale data
  if test "$localedir" = "\${datarootdir}/locale"; then
  	case "$uname" in
 -		Linux | GNU | *BSD* | Darwin*)
-+		Linux | GNU | *BSD* | Darwin* | Bitrig*)
++		Linux | GNU | *BSD* | Darwin* | Bitrig)
  			CUPS_LOCALEDIR="$datarootdir/locale"
  			;;
  
-@@ -400,7 +400,7 @@ AC_SUBST(CUPS_REQUESTS)
+@@ -268,7 +268,7 @@ AC_SUBST(CUPS_REQUESTS)
  
  # Server executables...
  case "$uname" in
 -	*BSD* | Darwin*)
-+	*BSD* | Darwin* | Bitrig*)
++	*BSD* | Darwin* | Bitrig)
  		# *BSD and Darwin (MacOS X)
  		INSTALL_SYSV=""
  		CUPS_SERVERBIN="$exec_prefix/libexec/cups"

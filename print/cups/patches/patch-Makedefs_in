@@ -3,7 +3,7 @@ $OpenBSD: patch-Makedefs_in,v 1.13 2014/11/15 10:22:23 ajacoutot Exp $
 BSD_INSTALL_PROGRAM is used to respect INSTALL_STRIP.
 
 --- Makedefs.in.orig	Fri Mar 21 15:50:24 2014
-+++ Makedefs.in	Fri Oct  3 15:35:39 2014
++++ Makedefs.in	Wed Dec 31 17:04:15 2014
 @@ -40,12 +40,12 @@ SHELL		=	/bin/sh
  # Installation programs...
  #
