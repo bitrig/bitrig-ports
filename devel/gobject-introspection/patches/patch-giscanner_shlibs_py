@@ -1,7 +1,7 @@
 $OpenBSD$
---- giscanner/shlibs.py.orig	Fri Sep 27 20:03:55 2013
-+++ giscanner/shlibs.py	Fri Sep 27 20:06:03 2013
-@@ -71,7 +71,7 @@ def _resolve_non_libtool(options, binary, libraries):
+--- giscanner/shlibs.py.orig	Sun Aug 31 16:31:38 2014
++++ giscanner/shlibs.py	Wed Dec 31 09:50:27 2014
+@@ -76,7 +76,7 @@ def _resolve_non_libtool(options, binary, libraries):
      if not libraries:
          return []
  

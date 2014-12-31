@@ -1,0 +1,11 @@
+--- configure.orig	Wed Dec 31 09:56:17 2014
++++ configure	Wed Dec 31 09:56:32 2014
+@@ -13179,7 +13179,7 @@ case "$host" in
+   *-*-mingw*)
+     CAIRO_SHARED_LIBRARY="libcairo-gobject-2.dll"
+     ;;
+-  *-*-openbsd*)
++  *-*-openbsd*|*-*-bitrig*)
+     CAIRO_SHARED_LIBRARY="libcairo-gobject.so"
+     ;;
+   *)
