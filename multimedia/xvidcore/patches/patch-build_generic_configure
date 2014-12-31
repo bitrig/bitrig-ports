@@ -1,6 +1,6 @@
 $OpenBSD: patch-build_generic_configure,v 1.9 2014/09/19 01:44:46 brad Exp $
---- build/generic/configure.orig	Tue Apr  8 16:41:05 2014
-+++ build/generic/configure	Tue Sep  2 16:41:41 2014
+--- build/generic/configure.orig	Tue Apr  8 22:41:05 2014
++++ build/generic/configure	Wed Dec 31 19:32:39 2014
 @@ -2269,8 +2269,6 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
  
  
@@ -10,7 +10,24 @@ $OpenBSD: patch-build_generic_configure,v 1.9 2014/09/19 01:44:46 brad Exp $
  
  minimum_yasm_major_version=1
  minimum_nasm_minor_version=0
-@@ -4379,7 +4377,7 @@ $as_echo "ok" >&6; }
+@@ -4316,7 +4314,7 @@ SHARED_EXTENSION=""
+ STATIC_EXTENSION=""
+ OBJECT_EXTENSION=""
+ case "$target_os" in
+-     *bsd*|linux*|beos|irix*|solaris*|gnu*|*qnx*)
++     *bsd*|bitrig*|linux*|beos|irix*|solaris*|gnu*|*qnx*)
+ 	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: .so .a .o" >&5
+ $as_echo ".so .a .o" >&6; }
+ 	STATIC_EXTENSION="a"
+@@ -4372,14 +4370,14 @@ $as_echo "ok" >&6; }
+ 	SPECIFIC_LDFLAGS="-Wl,-soname,libxvidcore.\$(SHARED_EXTENSION).\$(API_MAJOR) -shared -Wl,--version-script=libxvidcore.ld -lc -lm"
+ 	SPECIFIC_CFLAGS="-fPIC"
+ 	;;
+-     *bsd*|irix*)
++     *bsd*|bitrig*|irix*)
+ 	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: ok" >&5
+ $as_echo "ok" >&6; }
+ 	STATIC_LIB="libxvidcore.\$(STATIC_EXTENSION)"
  	SHARED_LIB="libxvidcore.\$(SHARED_EXTENSION).\$(API_MAJOR).\$(API_MINOR)"
  	SO_API_MAJOR_LINK="libxvidcore.\$(SHARED_EXTENSION).\$(API_MAJOR)"
  	SO_LINK="libxvidcore.\$(SHARED_EXTENSION)"
@@ -19,6 +36,15 @@ $OpenBSD: patch-build_generic_configure,v 1.9 2014/09/19 01:44:46 brad Exp $
  	SPECIFIC_CFLAGS="-fPIC"
  	;;
       [cC][yY][gG][wW][iI][nN]*|mingw32*|mks*)
+@@ -4600,7 +4598,7 @@ $as_echo "$as_me: WARNING: nasm version is too old" >&
+        { $as_echo "$as_me:${as_lineno-$LINENO}: checking for asm object format" >&5
+ $as_echo_n "checking for asm object format... " >&6; }
+        case "$target_os" in
+-           *bsd*|linux*|beos|irix*|solaris*|gnu*|*qnx*)
++           *bsd*|bitrig*|linux*|beos|irix*|solaris*|gnu*|*qnx*)
+                if test "$ARCHITECTURE" = "X86_64" ; then
+                    { $as_echo "$as_me:${as_lineno-$LINENO}: result: elf64" >&5
+ $as_echo "elf64" >&6; }
 @@ -4651,7 +4649,7 @@ $as_echo "macho32" >&6; }
  
         AS="$chosen_asm_prog"
