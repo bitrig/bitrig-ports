@@ -37,6 +37,8 @@ CONFIGURE_ENV=		LDFLAGS=-L${LOCALBASE}/lib CFLAGS=-I${LOCALBASE}/include
 # needed for firefox
 CONFIGURE_ARGS +=	--enable-tee
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
+
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/src/cairo.pc.in
 
