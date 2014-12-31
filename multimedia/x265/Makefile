@@ -22,7 +22,7 @@ HOMEPAGE=	http://x265.org/
 PERMIT_PACKAGE_CDROM=	patents
 PERMIT_PACKAGE_FTP=	Yes
 
-WANTLIB=	c m pthread stdc++
+WANTLIB=	c m pthread c++ c++abi
 
 WRKDIST=	${WRKDIR}/multicoreware-x265-5e604833c5aa
 WRKSRC=		${WRKDIST}/source
