@@ -1,30 +1,30 @@
 $OpenBSD$
---- config/config.rpath.orig	Mon Jun  4 23:56:20 2012
-+++ config/config.rpath	Mon Jun  4 23:56:37 2012
-@@ -101,7 +101,7 @@ case "$host_os" in
-       with_gnu_ld=no
-     fi
+--- config/config.rpath.orig	Sat Aug  2 22:26:22 2014
++++ config/config.rpath	Thu Jan  1 19:19:47 2015
+@@ -161,7 +161,7 @@ case "$host_os" in
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
      ;;
 -  openbsd*)
 +  openbsd* | bitrig*)
      with_gnu_ld=no
      ;;
  esac
-@@ -271,7 +271,7 @@ else
-       hardcode_libdir_flag_spec='${wl}-rpath ${wl}$libdir'
-       hardcode_libdir_separator=:
+@@ -429,7 +429,7 @@ else
+       ;;
+     *nto* | *qnx*)
        ;;
 -    openbsd*)
 +    openbsd* | bitrig*)
-       hardcode_direct=yes
-       if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-         hardcode_libdir_flag_spec='${wl}-rpath,$libdir'
-@@ -430,7 +430,7 @@ case "$host_os" in
-   newsos6)
-     shlibext=so
+       if test -f /usr/libexec/ld.so; then
+         hardcode_direct=yes
+         if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -612,7 +612,7 @@ case "$host_os" in
+   *nto* | *qnx*)
+     library_names_spec='$libname$shrext'
      ;;
 -  openbsd*)
 +  openbsd* | bitrig*)
-     shlibext=so
+     library_names_spec='$libname$shrext$versuffix'
      ;;
    os2*)
