@@ -1,0 +1,11 @@
+--- storage/connect/array.cpp.orig	Thu Jan  1 18:05:03 2015
++++ storage/connect/array.cpp	Thu Jan  1 18:05:34 2015
+@@ -129,7 +129,7 @@ PARRAY MakeValueArray(PGLOBAL g, PPARM pp)
+         break;
+       case TYPE_VOID:
+         // Integer stored inside pp->Value
+-        par->AddValue(g, (int)parmp->Value);
++	par->AddValue(g, (int)(uintptr_t)parmp->Value);
+         break;
+       } // endswitch valtyp
+ 
