@@ -13,17 +13,7 @@ lib/libossp-uuid++.la
 lib/libossp-uuid.a
 lib/libossp-uuid.la
 @lib lib/libossp-uuid.so.${LIBossp-uuid_VERSION}
-lib/pkgconfig/
 lib/pkgconfig/ossp-uuid.pc
-libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/
-libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/OSSP/
-libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/OSSP/uuid.pm
-libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/OSSP/uuid.pod
-libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/
-libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/OSSP/
-libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/OSSP/uuid/
-libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/OSSP/uuid/uuid.bs
-libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/OSSP/uuid/uuid.so
 @man man/man1/uuid-config.1
 @man man/man1/uuid.1
 @man man/man3/ossp-uuid++.3
