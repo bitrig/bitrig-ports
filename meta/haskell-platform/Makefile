@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/11/22 20:18:21 kili Exp $
+# $OpenBSD: Makefile,v 1.9 2015/01/01 19:27:11 kili Exp $
 
 BROKEN =	useless until the other hs-ports are done
 
@@ -25,8 +25,8 @@ HOMEPAGE =	http://hackage.haskell.org/platform/
 # terminfo-0.4.0.0 (!), transformers-0.3.0.0 (!), unix-2.7.0.1
 # xhtml=3000.2.1.
 
-RUN_DEPENDS +=	lang/ghc=7.8.3 \
-		lang/ghc,-doc=7.8.3
+RUN_DEPENDS +=	lang/ghc=7.8.4 \
+		lang/ghc,-doc=7.8.4
 
 # Additional libraries:
 RUN_DEPENDS +=	devel/hs-async=2.0.1.5 \
@@ -72,7 +72,7 @@ RUN_DEPENDS +=	devel/hs-primitive=0.5.2.1
 # Note that the upstream source mentions (in a comment) haddock-2.14.2,
 # so does https://www.haskell.org/platform/changelog.html, but that's
 # not true. The haddock shipped with ghc is 2.14.3, and in fact, 2.14.2
-# doesn't compile with ghc-7.8.3, so we just use 2.14.3 here and in the
+# doesn't compile with ghc-7.8.4, so we just use 2.14.3 here and in the
 # haddock port.
 RUN_DEPENDS +=	devel/cabal-install=1.18.0.5 \
 		devel/alex=3.1.3 \
