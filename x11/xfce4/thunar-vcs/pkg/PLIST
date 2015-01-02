@@ -2,7 +2,6 @@
 @conflict thunar-vcs-plugin-*
 lib/thunarx-2/thunar-vcs-plugin.so
 @bin libexec/tvp-git-helper
-@bin libexec/tvp-svn-helper
 share/icons/hicolor/24x24/apps/git.png
 share/icons/hicolor/24x24/apps/subversion.png
 share/icons/hicolor/48x48/apps/git.png
