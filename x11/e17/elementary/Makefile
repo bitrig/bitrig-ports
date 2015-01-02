@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/07/16 14:35:38 naddy Exp $
+# $OpenBSD: Makefile,v 1.17 2015/01/02 14:58:35 sthen Exp $
 
 COMMENT =		basic widget set, based on EFL
 

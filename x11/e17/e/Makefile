@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.56 2014/07/16 14:35:38 naddy Exp $
+# $OpenBSD: Makefile,v 1.57 2015/01/02 14:58:34 sthen Exp $
 
 COMMENT =		the enlightened window manager
 
