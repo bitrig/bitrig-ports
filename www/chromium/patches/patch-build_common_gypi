@@ -1,6 +1,6 @@
 $OpenBSD: patch-build_common_gypi,v 1.29 2014/11/19 21:27:32 robert Exp $
---- build/common.gypi.orig.port	Wed Nov 19 06:13:07 2014
-+++ build/common.gypi	Wed Nov 19 08:38:24 2014
+--- build/common.gypi.orig.port	Wed Dec 10 05:54:32 2014
++++ build/common.gypi	Thu Jan  1 10:23:33 2015
 @@ -91,7 +91,7 @@
  
            'conditions': [
@@ -37,7 +37,7 @@ $OpenBSD: patch-build_common_gypi,v 1.29 2014/11/19 21:27:32 robert Exp $
              'enable_mdns%' : 1,
          }],
  
-@@ -3517,6 +3517,14 @@
+@@ -3523,6 +3523,14 @@
          ],
        },
      }],
@@ -52,7 +52,7 @@ $OpenBSD: patch-build_common_gypi,v 1.29 2014/11/19 21:27:32 robert Exp $
      ['os_posix==1 and OS!="mac" and OS!="ios"', {
        'target_defaults': {
          # Enable -Werror by default, but put it in a variable so it can
-@@ -5683,8 +5691,8 @@
+@@ -5689,8 +5697,8 @@
      ['clang==1 and ((OS!="mac" and OS!="ios") or clang_xcode==0) '
          'and OS!="win"', {
        'make_global_settings': [
