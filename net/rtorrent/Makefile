@@ -24,7 +24,9 @@ MASTER_SITES=		${HOMEPAGE}downloads/
 
 MODULES=		devel/gettext
 
-BUILD_DEPENDS=		devel/cppunit
+BUILD_DEPENDS=		devel/cppunit \
+			devel/autoconf/${AUTOCONF_VERSION} \
+			devel/automake/${AUTOMAKE_VERSION}
 LIB_DEPENDS=		net/libtorrent>=0.12.9 \
 			net/curl
 

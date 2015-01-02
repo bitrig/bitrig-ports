@@ -16,7 +16,9 @@ MASTER_SITES=		${HOMEPAGE}downloads/
 
 WANTLIB=		crypto m sigc-2.0
 WANTLIB +=		c++ c++abi pthread
-BUILD_DEPENDS=		devel/cppunit
+BUILD_DEPENDS=		devel/cppunit \
+			devel/autoconf/${AUTOCONF_VERSION} \
+			devel/automake/${AUTOMAKE_VERSION}
 LIB_DEPENDS=		devel/libsigc++-2
 
 AUTOCONF_VERSION=	2.69
