@@ -1,7 +1,7 @@
 $OpenBSD: patch-setup_py,v 1.1.1.1 2014/04/13 07:10:12 rpointel Exp $
---- setup.py.orig	Sun Mar 16 22:31:31 2014
-+++ setup.py	Sat Jun  7 05:10:11 2014
-@@ -726,6 +726,8 @@ class PyBuildExt(build_ext):
+--- setup.py.orig	Wed Oct  8 10:18:16 2014
++++ setup.py	Fri Jan  2 14:07:28 2015
+@@ -734,6 +734,8 @@ class PyBuildExt(build_ext):
                                                       'termcap'):
                  readline_libs.append('termcap')
              exts.append( Extension('readline', ['readline.c'],
@@ -10,7 +10,7 @@ $OpenBSD: patch-setup_py,v 1.1.1.1 2014/04/13 07:10:12 rpointel Exp $
                                     library_dirs=['/usr/lib/termcap'],
                                     extra_link_args=readline_extra_link_args,
                                     libraries=readline_libs) )
-@@ -1479,7 +1481,7 @@ class PyBuildExt(build_ext):
+@@ -1497,7 +1499,7 @@ class PyBuildExt(build_ext):
              macros = dict()
              libraries = []
  
@@ -19,7 +19,7 @@ $OpenBSD: patch-setup_py,v 1.1.1.1 2014/04/13 07:10:12 rpointel Exp $
              macros = dict()
              libraries = []
  
-@@ -1689,8 +1691,7 @@ class PyBuildExt(build_ext):
+@@ -1707,8 +1709,7 @@ class PyBuildExt(build_ext):
          # The versions with dots are used on Unix, and the versions without
          # dots on Windows, for detection by cygwin.
          tcllib = tklib = tcl_includes = tk_includes = None
@@ -29,7 +29,7 @@ $OpenBSD: patch-setup_py,v 1.1.1.1 2014/04/13 07:10:12 rpointel Exp $
              tklib = self.compiler.find_library_file(lib_dirs,
                                                          'tk' + version)
              tcllib = self.compiler.find_library_file(lib_dirs,
-@@ -1704,7 +1705,7 @@ class PyBuildExt(build_ext):
+@@ -1722,7 +1723,7 @@ class PyBuildExt(build_ext):
              # Check for the include files on Debian and {Free,Open}BSD, where
              # they're put in /usr/include/{tcl,tk}X.Y
              dotversion = version

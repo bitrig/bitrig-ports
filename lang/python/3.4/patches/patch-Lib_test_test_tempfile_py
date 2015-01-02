@@ -1,6 +1,6 @@
---- Lib/test/test_tempfile.py.orig	Sat Jun  7 04:39:17 2014
-+++ Lib/test/test_tempfile.py	Sat Jun  7 05:09:13 2014
-@@ -25,7 +25,7 @@ has_spawnl = hasattr(os, 'spawnl')
+--- Lib/test/test_tempfile.py.orig	Wed Oct  8 10:18:14 2014
++++ Lib/test/test_tempfile.py	Fri Jan  2 14:07:28 2015
+@@ -26,7 +26,7 @@ has_spawnl = hasattr(os, 'spawnl')
  
  # TEST_FILES may need to be tweaked for systems depending on the maximum
  # number of files that can be opened at one time (see ulimit -n)

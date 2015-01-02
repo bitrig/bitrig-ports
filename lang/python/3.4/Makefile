@@ -6,11 +6,9 @@
 # Python itself.
 
 VERSION =		3.4
-REVISION-main =		0
-PATCHLEVEL =		.1
+PATCHLEVEL =		.2
 SHARED_LIBS =		python3.4m 1.0
 VERSION_SPEC =		>=3.4,<3.5
-REVISION =		2
 
 CONFIGURE_ARGS +=	--with-ensurepip=no
 

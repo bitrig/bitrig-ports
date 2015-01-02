@@ -4,9 +4,9 @@ SOVERSION defaults to 1.0. SHARED_LIBS, however, could be changed
 at any point.  Ensure they are on sync in case INSTSONAME is used
 by a third party.
 
---- configure.ac.orig	Sun Mar 16 22:31:31 2014
-+++ configure.ac	Sat Jun  7 05:11:39 2014
-@@ -446,7 +446,7 @@ case $ac_sys_system/$ac_sys_release in
+--- configure.ac.orig	Wed Oct  8 10:18:16 2014
++++ configure.ac	Fri Jan  2 14:07:30 2015
+@@ -449,7 +449,7 @@ case $ac_sys_system/$ac_sys_release in
      # As this has a different meaning on Linux, only define it on OpenBSD
      AC_DEFINE(_BSD_SOURCE, 1, [Define on OpenBSD to activate all library features])
      ;;
@@ -15,7 +15,7 @@ by a third party.
      # OpenBSD undoes our definition of __BSD_VISIBLE if _XOPEN_SOURCE is
      # also defined. This can be overridden by defining _BSD_SOURCE
      # As this has a different meaning on Linux, only define it on OpenBSD
-@@ -953,7 +953,7 @@ if test $enable_shared = "yes"; then
+@@ -956,7 +956,7 @@ if test $enable_shared = "yes"; then
  	      PY3LIBRARY=libpython3.so
  	  fi
            ;;
@@ -23,18 +23,18 @@ by a third party.
 +    Linux*|GNU*|NetBSD*|FreeBSD*|DragonFly*|OpenBSD*|Bitrig*)
  	  LDLIBRARY='libpython$(LDVERSION).so'
  	  BLDLIBRARY='-L. -lpython$(LDVERSION)'
- 	  RUNSHARED=LD_LIBRARY_PATH=`pwd`:${LD_LIBRARY_PATH}
-@@ -961,6 +961,9 @@ if test $enable_shared = "yes"; then
+ 	  RUNSHARED=LD_LIBRARY_PATH=`pwd`${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+@@ -964,6 +964,9 @@ if test $enable_shared = "yes"; then
  	      FreeBSD*)
  		SOVERSION=`echo $SOVERSION|cut -d "." -f 1`
  		;;
 +	      OpenBSD*|Bitrig*)
-+		SOVERSION=0.0
++		SOVERSION=${LIBpython3.4m_VERSION}
 +		;;
  	  esac
  	  INSTSONAME="$LDLIBRARY".$SOVERSION
  	  if test "$with_pydebug" != yes
-@@ -2063,7 +2066,7 @@ then
+@@ -2069,7 +2072,7 @@ then
  		else
  			LDSHARED="ld -Bshareable"
  		fi;;
@@ -43,7 +43,7 @@ by a third party.
  		if [[ "`$CC -dM -E - </dev/null | grep __ELF__`" != "" ]]
  		then
  				LDSHARED='$(CC) -shared $(CCSHARED)'
-@@ -2120,7 +2123,7 @@ then
+@@ -2126,7 +2129,7 @@ then
  		 fi;;
  	Linux*|GNU*) CCSHARED="-fPIC";;
  	BSD/OS*/4*) CCSHARED="-fpic";;
@@ -52,7 +52,7 @@ by a third party.
  	OpenUNIX*|UnixWare*)
  		if test "$GCC" = "yes"
  		then CCSHARED="-fPIC"
-@@ -2167,7 +2170,7 @@ then
+@@ -2173,7 +2176,7 @@ then
  	OpenUNIX*|UnixWare*) LINKFORSHARED="-Wl,-Bexport";;
  	SCO_SV*) LINKFORSHARED="-Wl,-Bexport";;
  	ReliantUNIX*) LINKFORSHARED="-W1 -Blargedynsym";;
