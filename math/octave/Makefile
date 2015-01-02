@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.67 2014/07/16 14:35:38 naddy Exp $
+# $OpenBSD: Makefile,v 1.68 2015/01/02 14:26:12 sthen Exp $
 
 # vax:   no IEEE arithmetic
 # sparc: fPIC version of libgcc.a needed but not available
