@@ -1,0 +1,11 @@
+--- common/m4/gst-glib2.m4.orig	Fri Dec 30 02:14:47 2011
++++ common/m4/gst-glib2.m4	Fri Jan  2 16:20:24 2015
+@@ -69,7 +69,7 @@ AC_DEFUN([AG_GST_GLIB_CHECK],
+   fi
+ 
+   dnl for the poor souls who for example have glib in /usr/local
+-  AS_SCRUB_INCLUDE(GLIB_CFLAGS)
++  dnl AS_SCRUB_INCLUDE(GLIB_CFLAGS)
+ 
+   AC_SUBST(GLIB_EXTRA_CFLAGS)
+ ])

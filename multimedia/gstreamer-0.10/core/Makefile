@@ -4,7 +4,7 @@ COMMENT=		framework for streaming media
 
 V=			0.10.36
 DISTNAME=		gstreamer-${V}
-REVISION=		7
+REVISION=		8
 
 SHARED_LIBS +=  gstreamer-0.10       3.0      # 30.0
 SHARED_LIBS +=  gstbase-0.10         3.0      # 30.0
