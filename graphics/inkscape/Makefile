@@ -5,6 +5,7 @@ COMMENT=	SVG vector drawing application
 DISTNAME=	inkscape-0.48.5
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=inkscape/}
+REVISION=	0
 
 HOMEPAGE=	http://www.inkscape.org/
 
