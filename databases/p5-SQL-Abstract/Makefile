@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.11 2014/07/11 12:42:48 afresh1 Exp $
+# $OpenBSD: Makefile,v 1.12 2015/01/03 06:36:12 afresh1 Exp $
 
 COMMENT =	generate SQL from Perl data structures
 
 MODULES =	cpan
-DISTNAME =	SQL-Abstract-1.78
-REVISION =	0
+DISTNAME =	SQL-Abstract-1.81
 CATEGORIES =	databases
 
 # perl
@@ -13,6 +12,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 CONFIGURE_ARGS +=	--skipdeps
 
 RUN_DEPENDS =	devel/p5-Hash-Merge>=0.12 \
+		devel/p5-MRO-Compat>=0.12 \
 		devel/p5-Moo>=1.004002
 
 TEST_DEPENDS =	devel/p5-Test-Deep>=0.101 \
