@@ -1,0 +1,11 @@
+--- cnupm/Makefile.orig	Sun Jan  4 14:49:32 2015
++++ cnupm/Makefile	Sun Jan  4 14:49:34 2015
+@@ -5,7 +5,7 @@ SRCS=	aggr_port.c cnupm.c collect.c datalinks.c
+ MAN=	cnupm.8
+ MAN8=	${MAN}
+ 
+-CFLAGS+=-finline-limit-1000
++#CFLAGS+=-finline-limit-1000
+ 
+ .if exists(${.CURDIR}/../libcnupm/obj)
+ LDADD=	-L${.CURDIR}/../libcnupm/obj -lcnupm -lpcap
