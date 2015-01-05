@@ -7,8 +7,6 @@ CATEGORIES =	net
 
 REVISION =	0
 
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

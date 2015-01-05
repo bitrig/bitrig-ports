@@ -5,8 +5,6 @@ COMMENT =	easily timeout long running operations
 DISTNAME =	Time-Out-0.11
 CATEGORIES =	devel
 
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

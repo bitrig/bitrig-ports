@@ -8,8 +8,6 @@ MODULES =	cpan
 DISTNAME =	Text-Reflow-1.09
 CATEGORIES =	textproc
 
-MAINTAINER =	Florian Obser <florian+ports@narrans.de>
-
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -11,8 +11,6 @@ DISTNAME =	Zonemaster-v$V
 PKGNAME =	p5-Zonemaster-engine-$V
 CATEGORIES =	net
 
-MAINTAINER =	Florian Obser <florian+ports@narrans.de>
-
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

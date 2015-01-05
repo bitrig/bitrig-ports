@@ -7,8 +7,6 @@ DISTNAME =	Tie-Simple-1.03
 CPAN_AUTHOR =	HANENKAMP
 CATEGORIES =	devel
 
-MAINTAINER =	Florian Obser <florian+ports@narrans.de>
-
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 

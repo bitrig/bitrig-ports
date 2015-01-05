@@ -8,8 +8,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		https://shunit2.googlecode.com
 
-MAINTAINER =		Robert Peichaer <rpe@openbsd.org>
-
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
 

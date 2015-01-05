@@ -5,8 +5,6 @@ COMMENT =	process runner with RAII pattern
 DISTNAME =	Proc-Guard-0.06
 CATEGORIES =	devel
 
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

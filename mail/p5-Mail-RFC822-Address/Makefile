@@ -6,8 +6,6 @@ MODULES =	cpan
 DISTNAME =	Mail-RFC822-Address-0.3
 CATEGORIES =	mail
 
-MAINTAINER =	Florian Obser <florian+ports@narrans.de>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -18,8 +18,6 @@ SHARED_LIBS +=  gphoto2              4.2      # 6.0
 
 HOMEPAGE=		http://www.gphoto.org/
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 

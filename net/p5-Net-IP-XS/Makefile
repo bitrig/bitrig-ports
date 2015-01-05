@@ -8,8 +8,6 @@ MODULES =	cpan
 DISTNAME =	Net-IP-XS-0.13
 CATEGORIES =	net
 
-MAINTAINER =	Florian Obser <florian+ports@narrans.de>
-
 # GPL
 PERMIT_PACKAGE_CDROM =	Yes
 

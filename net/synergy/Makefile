@@ -11,7 +11,6 @@ GH_TAGNAME=		1.6.2
 GH_COMMIT=		ebba77fd33f4c9ab347fe72ff6f530eff08297b7
 
 HOMEPAGE=		http://synergy-foss.org/
-MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM=	Yes

@@ -10,8 +10,6 @@ CATEGORIES =	sysutils
 
 HOMEPAGE =	http://www.lbreda.com/grive
 
-MAINTAINER =	Rafael Sadowski <rafael@sizeofvoid.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 

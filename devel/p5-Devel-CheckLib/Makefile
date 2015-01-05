@@ -8,8 +8,6 @@ MODULES =	cpan
 DISTNAME =	Devel-CheckLib-1.02
 CATEGORIES =	devel
 
-MAINTAINER =	Florian Obser <florian+ports@narrans.de>
-
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 

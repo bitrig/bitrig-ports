@@ -8,8 +8,6 @@ MODULES =	cpan
 DISTNAME =	Net-LDNS-0.70
 CATEGORIES =	net
 
-MAINTAINER =	Florian Obser <florian+ports@narrans.de>
-
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

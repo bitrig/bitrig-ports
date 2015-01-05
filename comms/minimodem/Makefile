@@ -5,7 +5,6 @@ DISTNAME =	minimodem-0.21
 CATEGORIES =	comms
 
 HOMEPAGE =	http://www.whence.com/minimodem/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
