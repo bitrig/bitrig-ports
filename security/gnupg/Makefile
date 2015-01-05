@@ -14,8 +14,6 @@ MASTER_SITES=	${MASTER_SITES_GNUPG:=gnupg/}
 
 HOMEPAGE=	http://www.gnupg.org/
 
-MAINTAINER=	Jeremie Courreges-Anglas <jca@wxcvbn.org>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
