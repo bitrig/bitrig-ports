@@ -118,6 +118,8 @@ LIB_DEPENDS +=	x11/gtk+3,-main
 WANTLIB +=	cairo-gobject gdk-3 gtk-3
 WANTLIB +=	atk-bridge-2.0 atspi
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/Source/autotools/
+
 WEBKIT_API_VERSION =	3.0
 GTK_API_VERSION =	3.0
 SHARED_LIBS += webkit2gtk-${WEBKIT_API_VERSION}		1.0 # 35.8
