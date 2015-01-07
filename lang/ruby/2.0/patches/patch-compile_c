@@ -2,9 +2,9 @@ $OpenBSD: patch-compile_c,v 1.2 2014/11/01 04:54:43 jeremy Exp $
 
 Disable peephole optimizer on sparc64, since it occasionally segfaults.
 
---- compile.c.orig	Sun Aug 31 00:55:32 2014
-+++ compile.c	Mon Oct 27 20:08:11 2014
-@@ -1770,6 +1770,9 @@ static int
+--- compile.c.orig	Thu Nov  6 03:36:10 2014
++++ compile.c	Wed Jan  7 09:55:46 2015
+@@ -1831,6 +1831,9 @@ static int
  iseq_peephole_optimize(rb_iseq_t *iseq, LINK_ELEMENT *list, const int do_tailcallopt)
  {
      INSN *iobj = (INSN *)list;

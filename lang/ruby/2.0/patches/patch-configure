@@ -5,8 +5,17 @@ Fix so name, checking for DOT and DOXYGEN.
 Override the arch setting to remove OpenBSD version from it,
 so ports don't have to be bumped when OpenBSD version changes.
 
---- configure.orig	Mon Oct 27 04:31:14 2014
-+++ configure	Mon Oct 27 20:08:11 2014
+--- configure.orig	Thu Nov 13 08:45:54 2014
++++ configure	Wed Jan  7 10:55:58 2015
+@@ -14972,7 +14972,7 @@ _ACEOF
+ fi
+ 
+ case "$target_os" in #(
+-  openbsd*) :
++  openbsd*|bitrig*) :
+ 
+   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for heap align log on openbsd" >&5
+ $as_echo_n "checking for heap align log on openbsd... " >&6; }
 @@ -17178,13 +17178,13 @@ fi
  if test x"$enable_pthread" = xyes; then
      for pthread_lib in thr pthread pthreads c c_r root; do
@@ -24,8 +33,30 @@ so ports don't have to be bumped when OpenBSD version changes.
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -18468,7 +18468,7 @@ esac
-   openbsd*) :
+@@ -17252,7 +17252,7 @@ done
+     MAINLIBS="-pthread $MAINLIBS" ;; #(
+   *) :
+     case "$target_os" in #(
+-  openbsd*) :
++  openbsd*|bitrig*) :
+     LIBS="-pthread $LIBS" ;; #(
+   *) :
+     LIBS="-l$pthread_lib $LIBS" ;;
+@@ -17637,7 +17637,7 @@ esac ;; #(
+ 			  test "$GCC" = yes && test "$rb_cv_prog_gnu_ld" = yes || LDSHARED='$(LD) -Bshareable'
+ 			fi
+ 			rb_cv_dlopen=yes ;; #(
+-  openbsd*|mirbsd*) :
++  openbsd*|bitrig*|mirbsd*) :
+     	: ${LDSHARED='$(CC) -shared ${CCDLFLAGS}'}
+ 			if test "$rb_cv_binary_elf" = yes; then
+ 			    LDFLAGS="$LDFLAGS -Wl,-E"
+@@ -18465,10 +18465,10 @@ esac
+ 	   LIBRUBY_ALIASES=""
+ 	fi
+ 	 ;; #(
+-  openbsd*) :
++  openbsd*|bitrig*) :
  
  	SOLIBS='$(LIBS)'
 -	LIBRUBY_SO='lib$(RUBY_SO_NAME).so.$(MAJOR).'`expr ${MINOR} \* 10 + ${TEENY}`
@@ -33,7 +64,7 @@ so ports don't have to be bumped when OpenBSD version changes.
  	 ;; #(
    solaris*) :
  
-@@ -19699,7 +19699,10 @@ _ACEOF
+@@ -19699,7 +19699,11 @@ _ACEOF
  _ACEOF
  
  else
