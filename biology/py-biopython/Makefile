@@ -5,7 +5,7 @@ COMMENT=		Python tools for computational molecular biology
 
 MODPY_EGG_VERSION=	1.50
 DISTNAME=		biopython-${MODPY_EGG_VERSION}
-REVISION =		4
+REVISION =		5
 CATEGORIES=		biology
 
 HOMEPAGE=		http://www.biopython.org/

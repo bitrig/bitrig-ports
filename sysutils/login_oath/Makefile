@@ -3,7 +3,7 @@
 COMMENT=	authentication provider for OATH one-time passwords
 
 DISTNAME=	login_oath-0.8
-REVISION=	2
+REVISION=	3
 CATEGORIES=	sysutils
 
 MASTER_SITES=	http://spacehopper.org/mirrors/

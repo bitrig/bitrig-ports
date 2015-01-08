@@ -4,7 +4,7 @@ COMMENT=		DNS relay for ad blocking
 
 DISTNAME=		adsuck-2.5.0
 CATEGORIES=		net
-REVISION=		2
+REVISION=		3
 
 HOMEPAGE=		http://opensource.conformal.com/wiki/Adsuck
 EXTRACT_SUFX=		.tgz

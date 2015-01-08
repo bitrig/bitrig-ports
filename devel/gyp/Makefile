@@ -4,7 +4,7 @@ COMMENT= generate SCons/Makefiles from platform-independent input
 
 DISTNAME=	gyp-r1812
 PKGNAME= ${DISTNAME:S/r/0./g}
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	devel
 

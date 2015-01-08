@@ -3,7 +3,7 @@
 COMMENT=	minimalistic window manager for X11
 
 DISTNAME=	aewm-1.3.12
-REVISION=	4
+REVISION=	5
 CATEGORIES=	x11
 
 HOMEPAGE=	http://www.red-bean.com/decklin/aewm/

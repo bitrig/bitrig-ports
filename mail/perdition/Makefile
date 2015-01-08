@@ -7,7 +7,7 @@ COMMENT-pgsql=	PostgreSQL backend for perdition mail proxy
 
 DISTVER=	1.19-rc5
 REVISION=	8
-REVISION-mysql=	7
+REVISION-mysql=	8
 DISTNAME=	perdition-${DISTVER}
 PKGNAME-main=	perdition-${DISTVER:S/-//}
 PKGNAME-ldap=	perdition-ldap-${DISTVER:S/-//}

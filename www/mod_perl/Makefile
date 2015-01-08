@@ -3,7 +3,7 @@
 COMMENT=	module that embeds a Perl interpreter into Apache
 
 DISTNAME=	mod_perl-1.32pre20130312
-REVISION=	3
+REVISION=	4
 CATEGORIES=	www perl5
 
 # svn checkout; upstream is at http://perl.apache.org/dist/

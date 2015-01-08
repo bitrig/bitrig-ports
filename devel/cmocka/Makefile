@@ -3,7 +3,7 @@
 COMMENT =		elegant unit testing framework for C
 
 DISTNAME =		cmocka-0.3.2
-REVISION =		1
+REVISION =		2
 
 EXTRACT_SUFX =		.tar.xz
 

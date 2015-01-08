@@ -6,7 +6,6 @@ COMMENT-mysql =	MySQL driver for dspam
 
 VERSION =	3.10.2
 DISTNAME =	dspam-3.10.2
-REVISION =	2
 PKGNAME-main =	${PKGNAME}
 .for p in pgsql mysql
 PKGNAME-$p =	dspam-$p-${VERSION}
@@ -14,8 +13,8 @@ PKGNAME-$p =	dspam-$p-${VERSION}
 FULLPKGNAME-$p = dspam-$p-${VERSION}
 FULLPKGPATH-$p = ${PKGPATH},-$p
 .endfor
-REVISION =		1
-REVISION-mysql =	2
+REVISION =		3
+REVISION-mysql =	3
 
 SHARED_LIBS =	dspam	9.0
 CATEGORIES =	mail

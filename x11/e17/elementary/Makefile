@@ -4,7 +4,7 @@ COMMENT =		basic widget set, based on EFL
 
 VERSION =		1.7.9
 DISTNAME =		elementary-${VERSION}
-REVISION = 		3
+REVISION = 		4
 
 SHARED_LIBS +=	elementary                0.0 # 8.6
 

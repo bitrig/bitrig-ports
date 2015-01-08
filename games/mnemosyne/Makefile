@@ -7,9 +7,8 @@ COMMENT=	flash-card tool which optimises your learning process
 MODPY_EGG_VERSION=2.3.1
 DISTNAME=	Mnemosyne-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:L}
-REVISION=	0
 CATEGORIES=	games education
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://www.mnemosyne-proj.org/
 

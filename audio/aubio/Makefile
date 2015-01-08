@@ -6,7 +6,7 @@ SHARED_LIBS += 		aubio		0.0 # 3.1
 SHARED_LIBS += 		aubioext	0.0 # 3.1
 CATEGORIES =		audio
 HOMEPAGE =		http://aubio.org
-REVISION =		1
+REVISION =		2
 
 # GPLv2+ 
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,9 +4,8 @@ COMMENT =	distributed version control system by Canonical
 
 MODPY_EGG_VERSION = 2.4.2
 DISTNAME =	bzr-${MODPY_EGG_VERSION}
-REVISION =	0
 CATEGORIES =	devel
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://bazaar-vcs.org/
 

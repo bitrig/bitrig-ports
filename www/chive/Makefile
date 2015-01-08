@@ -5,7 +5,7 @@ COMMENT=	web-based MySQL management
 V=		1.2
 DISTNAME=	chive_$V
 PKGNAME=	${DISTNAME:S/_/-/}
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	www databases
 

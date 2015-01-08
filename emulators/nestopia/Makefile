@@ -4,11 +4,9 @@ COMMENT =		accurate Nintendo Entertainment System emulator
 
 DISTNAME =		nestopia-1.45
 
-REVISION =		0
-
 CATEGORIES =		emulators
 
-REVISION =		1
+REVISION =		2
 HOMEPAGE =		http://0ldsk00l.ca/nestopia/
 
 # GPLv2+

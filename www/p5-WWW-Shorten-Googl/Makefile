@@ -3,7 +3,7 @@
 COMMENT=		interface to goo.gl shortening site
 
 DISTNAME=		WWW-Shorten-Googl-1.02
-REVISION=		0
+REVISION=		1
 CATEGORIES=		www
 
 # Perl

@@ -3,7 +3,7 @@
 COMMENT=	provide fingerprint authentication
 
 DISTNAME=	login_fingerprint-1.2
-REVISION =	3
+REVISION =	4
 CATEGORIES=    	sysutils
 
 MASTER_SITES=	http://blade2k.humppa.hu/

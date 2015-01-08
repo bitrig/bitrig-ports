@@ -3,10 +3,9 @@
 COMMENT=	tool to handle the administration of PostgreSQL over the web
 
 DISTNAME=	phpPgAdmin-5.1
-REVISION=	0
 CATEGORIES=	www databases
 HOMEPAGE=	http://phppgadmin.sourceforge.net/
-REVISION=	0
+REVISION=	1
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

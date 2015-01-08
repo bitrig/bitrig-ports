@@ -4,10 +4,9 @@ COMMENT=	lightweight CalDAV and CardDAV server
 
 DISTNAME=	baikal-regular-0.2.7
 PKGNAME=	${DISTNAME:S/-regular//}
-REVISION=	0
 EXTRACT_SUFX=	.tgz
 CATEGORIES=	productivity www
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://baikal-server.com/
 

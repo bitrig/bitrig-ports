@@ -3,7 +3,7 @@
 COMMENT=	provide ldap authentication type
 
 DISTNAME=	login_ldap-3.51
-REVISION=	5
+REVISION=	6
 CATEGORIES=	sysutils
 
 HOMEPAGE=	http://sourceforge.net/projects/login-ldap/

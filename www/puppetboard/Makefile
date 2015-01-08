@@ -4,7 +4,7 @@ COMMENT=		web interface to PuppetDB
 
 MODPY_EGG_VERSION=	0.0.4
 DISTNAME=		puppetboard-${MODPY_EGG_VERSION}
-REVISION=		1
+REVISION=		2
 CATEGORIES=		www
 
 # Apache2

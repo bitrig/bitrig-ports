@@ -4,7 +4,7 @@ COMMENT=		modern 3D graphics API
 
 GNOME_PROJECT=		cogl
 GNOME_VERSION=		1.18.2
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  cogl                 3.0      # 21.0
 SHARED_LIBS +=	cogl-path            0.0      # 21.0

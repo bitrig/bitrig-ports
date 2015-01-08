@@ -3,7 +3,7 @@
 COMMENT=	32-card trick-taking game
 
 DISTNAME=	belooted-0.1.4.1
-REVISION=	9
+REVISION=	10
 
 CATEGORIES=	games
 

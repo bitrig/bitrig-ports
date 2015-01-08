@@ -3,7 +3,7 @@
 COMMENT=	Diffie-Hellman key exchange system
 
 DISTNAME=	Crypt-DH-0.07
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
 
 # perl

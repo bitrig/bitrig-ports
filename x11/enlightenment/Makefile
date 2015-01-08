@@ -7,7 +7,7 @@ DISTNAME=	e16-$V
 PKGNAME=	enlightenment-$V
 DOCS=		e16-docs-0.16.8.0.2
 THEMES=		e16-themes-1.0.1
-REVISION=	4
+REVISION=	5
 
 CATEGORIES=	x11
 
