@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/10/15 02:21:13 jeremy Exp $
+# $OpenBSD: Makefile,v 1.5 2015/01/08 15:04:15 landry Exp $
 
 SHARED_ONLY =		Yes
 
@@ -8,6 +8,7 @@ VERSION =		1.0
 REVISION =		0
 DISTNAME =		pllua-${VERSION}
 PKGNAME =		postgresql-pllua-${VERSION}
+REVISION =	0
 
 CATEGORIES =		databases
 
@@ -22,7 +23,7 @@ MASTER_SITES =		http://pgfoundry.org/frs/download.php/3481/
 
 MODULES =		lang/lua
 BUILD_DEPENDS =		${RUN_DEPENDS}
-RUN_DEPENDS =		postgresql-server->=9.3,<9.4:databases/postgresql,-server
+RUN_DEPENDS =		postgresql-server->=9.4,<9.5:databases/postgresql,-server
 
 USE_GMAKE =		Yes
 
