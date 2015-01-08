@@ -5,11 +5,9 @@ COMMENT=	ActiveSync protocol implementation
 V=		2.1.3
 DISTNAME=	z-push-${V}-1892
 PKGNAME=	z-push-${V}
-REVISION=	0
+REVISION=	2
 
 CATEGORIES=	mail www
-
-REVISION=	1
 
 HOMEPAGE=	http://z-push.sourceforge.net/
 

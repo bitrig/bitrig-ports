@@ -4,7 +4,7 @@ COMMENT =	tile caching frontend for WMS/TMS services
 
 MODPY_EGG_VERSION =	2.11
 DISTNAME =	tilecache-${MODPY_EGG_VERSION}
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	geo graphics
 

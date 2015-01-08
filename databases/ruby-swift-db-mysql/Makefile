@@ -3,7 +3,7 @@
 COMMENT =	mysql driver for swift
 
 DISTNAME =	swift-db-mysql-0.3.0
-REVISION =	4
+REVISION =	5
 CATEGORIES =	databases
 
 # MIT

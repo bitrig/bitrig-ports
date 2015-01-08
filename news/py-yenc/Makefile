@@ -4,7 +4,7 @@ COMMENT=		yEnc encoding/decoding extension for Python
 
 DISTNAME=		yenc-0.3
 PKGNAME=		py-${DISTNAME}
-REVISION =		5
+REVISION =		6
 CATEGORIES=		news
 
 HOMEPAGE=		http://www.hellanzb.com/

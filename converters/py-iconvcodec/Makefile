@@ -6,7 +6,7 @@ COMMENT=	universal unicode codec using iconv for Python
 
 DISTNAME=	iconvcodec-1.1.2
 PKGNAME=	py-${DISTNAME}
-REVISION =	8
+REVISION =	9
 CATEGORIES=	converters
 
 # BSD

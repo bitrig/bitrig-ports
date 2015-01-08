@@ -2,7 +2,7 @@
 # losely based on the FreeBSD port
 
 COMMENT =	scheme r5 interpreter
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	lang
 

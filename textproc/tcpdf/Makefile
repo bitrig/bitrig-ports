@@ -7,7 +7,7 @@ EXTRACT_SUFX=	.zip
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tcpdf/}
 
-REVISION=	4
+REVISION=	5
 
 HOMEPAGE=	http://www.tcpdf.org/
 

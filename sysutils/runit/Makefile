@@ -3,7 +3,7 @@
 COMMENT=		daemontools alike replacement for init
 
 DISTNAME=		runit-1.7.2
-REVISION=		2
+REVISION=		3
 CATEGORIES=		sysutils
 
 HOMEPAGE=		http://www.smarden.org/runit/

@@ -3,11 +3,10 @@
 COMMENT =	php5 WebDAV server
 DISTNAME =	SabreDAV-1.8.7
 PKGNAME =	${DISTNAME:L}
-REVISION =	0
+REVISION =	1
 PKG_ARCH =	*
 EXTRACT_SUFX =	.zip
 CATEGORIES =	www
-REVISION =	0
 
 HOMEPAGE =	https://code.google.com/p/sabredav/
 

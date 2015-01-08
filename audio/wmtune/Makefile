@@ -3,7 +3,7 @@
 COMMENT=	premier dockable radio tuner
 
 DISTNAME=	wmtune-1.1c
-REVISION=	5
+REVISION=	6
 CATEGORIES=	audio x11 x11/windowmaker
 
 HOMEPAGE=	http://www.soren.org/linux/wmtune/

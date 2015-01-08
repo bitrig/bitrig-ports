@@ -3,7 +3,7 @@
 COMMENT =	convert various Microsoft formats into HTML/PNG
 
 DISTNAME =	wv-1.2.4
-REVISION =	4
+REVISION =	5
 
 SHARED_LIBS =	wv-1.2		1.0 \
 		wv		1.0
