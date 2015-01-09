@@ -2,7 +2,7 @@
 
 COMMENT =	Moovida media center software
 DISTNAME =	moovida-${VERSION}
-REVISION =	13
+REVISION =	14
 EPOCH = 	0
 
 BUILD_DEPENDS =	devel/py-twisted/web

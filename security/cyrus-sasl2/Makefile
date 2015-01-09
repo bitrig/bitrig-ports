@@ -3,7 +3,7 @@
 COMMENT=	RFC 2222 SASL (Simple Authentication and Security Layer)
 
 DISTNAME=	cyrus-sasl-2.1.26
-REVISION=	12
+REVISION=	13
 
 SHARED_LIBS += sasl2           3.0 # 3.0
 

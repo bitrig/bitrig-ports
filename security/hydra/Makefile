@@ -8,8 +8,8 @@ DISTNAME=	hydra-${VERSION}-src
 PKGNAME-main=	hydra-${VERSION}
 PKGNAME-gui=	hydra-gui-${VERSION}
 CATEGORIES=    	security
-REVISION-main=	3
-REVISION-gui=	0
+REVISION-main=	4
+REVISION-gui=	1
 
 HOMEPAGE=	http://thc.org/thc-hydra/
 

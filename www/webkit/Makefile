@@ -50,6 +50,8 @@ MODGNOME_TOOLS +=	gobject-introspection
 
 CONFIGURE_STYLE =	gnu
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC} ${WRKSRC}/Source/autotools/
+
 # AR_FLAGS: cf http://trac.webkit.org/changeset/163954
 CONFIGURE_ENV =	ac_cv_path_FLEX=${LOCALBASE}/bin/gflex \
 		AR_FLAGS="cru" \
@@ -118,8 +120,6 @@ LIB_DEPENDS +=	x11/gtk+3,-main
 WANTLIB +=	cairo-gobject gdk-3 gtk-3
 WANTLIB +=	atk-bridge-2.0 atspi
 
-MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/Source/autotools/
-
 WEBKIT_API_VERSION =	3.0
 GTK_API_VERSION =	3.0
 SHARED_LIBS += webkit2gtk-${WEBKIT_API_VERSION}		1.0 # 35.8
@@ -131,6 +131,7 @@ GTK_API_VERSION =	2.0
 .endif
 
 pre-configure:
+	echo ============= ${WRKSRC}
 	${SUBST_CMD} ${WRKSRC}/Source/WebCore/plugins/PluginDatabase.cpp ${WRKSRC}/configure
 	# this ensures gtk-doc files are installed in a versionned directory so that we can
 	# install both versions alongside, see DOC_MODULE_VERSION in GNUMakefile.in

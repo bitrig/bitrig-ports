@@ -5,7 +5,7 @@ COMMENT=	multimedia framework for Python
 MODPY_EGG_VERSION= 1.5
 DISTNAME=	PyGraphics-${MODPY_EGG_VERSION}
 PKGNAME=	py-graphics-${MODPY_EGG_VERSION}
-REVISION=	8
+REVISION=	9
 EPOCH=		0
 
 CATEGORIES=	graphics

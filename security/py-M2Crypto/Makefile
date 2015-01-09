@@ -5,7 +5,7 @@ COMMENT =		crypto and ssl toolkit for python
 MODPY_EGG_VERSION =	0.22.3
 DISTNAME =		M2Crypto-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		security
 

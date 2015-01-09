@@ -42,9 +42,9 @@ MODULES =		devel/cmake \
 			lang/ruby \
 			x11/gnome
 
-MODULES +=		gcc4
-MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		c++
+#MODULES +=		gcc4
+#MODGCC4_ARCHS =		*
+#MODGCC4_LANGS =		c++
 
 MODRUBY_RUNDEP =	No
 MODPY_RUNDEP =		No

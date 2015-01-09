@@ -5,7 +5,7 @@ COMMENT=	PDF-generating toolkit for Python
 VERSION=	2.1
 DISTNAME=	ReportLab_${VERSION:S/./_/}
 PKGNAME=	py-reportlab-${VERSION}
-REVISION =	10
+REVISION =	11
 EPOCH=		0
 CATEGORIES=	print graphics
 

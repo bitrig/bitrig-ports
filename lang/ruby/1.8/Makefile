@@ -26,6 +26,10 @@ MODGCC4_ARCHS=		*
 MODGCC4_LANGS=		c
 REVISION-main=		3
 REVISION-ri_docs=	0
+REVISION-iconv=		0
+REVISION-gdbm=		0
+REVISION-tk=		0
+REVISION-ri_docs=	1
 
 CONFIGURE_ARGS=		--program-suffix=18 \
 			--enable-ipv6 \

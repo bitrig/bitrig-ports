@@ -4,7 +4,7 @@ COMMENT=	library and tools to modify and parse PDF documents
 
 # note, this is not the latest; 0.9.3 does not build on OpenBSD as-is
 DISTNAME=	podofo-0.9.2
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=	podofo                    0.0 # 0.9
 
