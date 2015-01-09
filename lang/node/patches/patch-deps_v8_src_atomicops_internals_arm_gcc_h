@@ -1,0 +1,111 @@
+--- deps/v8/src/atomicops_internals_arm_gcc.h.orig	Wed Sep 17 00:47:52 2014
++++ deps/v8/src/atomicops_internals_arm_gcc.h	Sun Jan 11 00:47:50 2015
+@@ -54,6 +54,10 @@ LinuxKernelMemoryBarrierFunc pLinuxKernelMemoryBarrier
+ inline Atomic32 NoBarrier_CompareAndSwap(volatile Atomic32* ptr,
+                                          Atomic32 old_value,
+                                          Atomic32 new_value) {
++#if defined(__Bitrig__)
++  *ptr = new_value;
++  return old_value;
++#else
+   Atomic32 prev_value = *ptr;
+   do {
+     if (!pLinuxKernelCmpxchg(old_value, new_value,
+@@ -63,16 +67,24 @@ inline Atomic32 NoBarrier_CompareAndSwap(volatile Atom
+     prev_value = *ptr;
+   } while (prev_value == old_value);
+   return prev_value;
++#endif
+ }
+ 
+ inline Atomic32 NoBarrier_AtomicExchange(volatile Atomic32* ptr,
+                                          Atomic32 new_value) {
++#if defined(__Bitrig__)
+   Atomic32 old_value;
++  old_value = *ptr;
++  *ptr = new_value;
++  return old_value;
++#else
++  Atomic32 old_value;
+   do {
+     old_value = *ptr;
+   } while (pLinuxKernelCmpxchg(old_value, new_value,
+                                const_cast<Atomic32*>(ptr)));
+   return old_value;
++#endif
+ }
+ 
+ inline Atomic32 NoBarrier_AtomicIncrement(volatile Atomic32* ptr,
+@@ -82,6 +94,10 @@ inline Atomic32 NoBarrier_AtomicIncrement(volatile Ato
+ 
+ inline Atomic32 Barrier_AtomicIncrement(volatile Atomic32* ptr,
+                                         Atomic32 increment) {
++#if defined(__Bitrig__)
++  *ptr += increment;
++  return *ptr;
++#else
+   for (;;) {
+     // Atomic exchange the old value with an incremented one.
+     Atomic32 old_value = *ptr;
+@@ -93,8 +109,15 @@ inline Atomic32 Barrier_AtomicIncrement(volatile Atomi
+     }
+     // Otherwise, *ptr changed mid-loop and we need to retry.
+   }
++#endif
+ }
+ 
++inline AtomicWord Acquire_CompareAndSwap(volatile AtomicWord* ptr,
++                                       AtomicWord old_value,
++                                       AtomicWord new_value) {
++  return NoBarrier_CompareAndSwap((volatile Atomic32 *)ptr, (Atomic32)old_value, (Atomic32)new_value);
++}
++
+ inline Atomic32 Acquire_CompareAndSwap(volatile Atomic32* ptr,
+                                        Atomic32 old_value,
+                                        Atomic32 new_value) {
+@@ -107,12 +130,20 @@ inline Atomic32 Release_CompareAndSwap(volatile Atomic
+   return NoBarrier_CompareAndSwap(ptr, old_value, new_value);
+ }
+ 
++inline void NoBarrier_Store(volatile AtomicWord* ptr, AtomicWord value) {
++  *ptr = value;
++}
++
+ inline void NoBarrier_Store(volatile Atomic32* ptr, Atomic32 value) {
+   *ptr = value;
+ }
+ 
+ inline void MemoryBarrier() {
++#if defined(__Bitrig__)
++  asm("dmb");
++#else
+   pLinuxKernelMemoryBarrier();
++#endif
+ }
+ 
+ inline void Acquire_Store(volatile Atomic32* ptr, Atomic32 value) {
+@@ -120,6 +151,11 @@ inline void Acquire_Store(volatile Atomic32* ptr, Atom
+   MemoryBarrier();
+ }
+ 
++inline void Release_Store(volatile AtomicWord* ptr, AtomicWord value) {
++  MemoryBarrier();
++  *ptr = value;
++}
++
+ inline void Release_Store(volatile Atomic32* ptr, Atomic32 value) {
+   MemoryBarrier();
+   *ptr = value;
+@@ -127,6 +163,12 @@ inline void Release_Store(volatile Atomic32* ptr, Atom
+ 
+ inline Atomic32 NoBarrier_Load(volatile const Atomic32* ptr) {
+   return *ptr;
++}
++
++inline AtomicWord Acquire_Load(volatile const AtomicWord* ptr) {
++  AtomicWord value = *ptr;
++  MemoryBarrier();
++  return value;
+ }
+ 
+ inline Atomic32 Acquire_Load(volatile const Atomic32* ptr) {

@@ -1,5 +1,5 @@
---- deps/v8/src/platform-openbsd.cc.orig	Sun Jul 27 07:55:37 2014
-+++ deps/v8/src/platform-openbsd.cc	Sun Jul 27 07:56:15 2014
+--- deps/v8/src/platform-openbsd.cc.orig	Wed Sep 17 00:47:52 2014
++++ deps/v8/src/platform-openbsd.cc	Sat Jan 10 02:38:18 2015
 @@ -25,8 +25,8 @@
  // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
@@ -11,3 +11,43 @@
  
  #include <pthread.h>
  #include <semaphore.h>
+@@ -211,7 +211,13 @@ void OS::Abort() {
+ 
+ 
+ void OS::DebugBreak() {
++#if (defined(__arm__) || defined(__thumb__))
++# if defined(CAN_USE_ARMV5_INSTRUCTIONS)
++  asm("bkpt 0");
++# endif
++#else
+   asm("int $3");
++#endif
+ }
+ 
+ 
+@@ -977,5 +983,25 @@ void Sampler::Stop() {
+   SetActive(false);
+ }
+ 
++bool OS::ArmCpuHasFeature(CpuFeature feature) {
++  switch (feature) {
++    case VFP2:
++    case VFP3:
++    case ARMv7:
++      return true;
++    case SUDIV:
++      /* XXX: unsure about this. */
++      return false;
++    default:
++      UNREACHABLE();
++  }
++
++  return false;
++}
++
++CpuImplementer OS::GetCpuImplementer() {
++  /* FIXME: As of now we believe we're ARM only. */
++  return ARM_IMPLEMENTER;
++}
+ 
+ } }  // namespace v8::internal

@@ -1,6 +1,6 @@
 $OpenBSD: patch-deps_v8_build_common_gypi,v 1.1 2013/10/22 15:29:14 abieber Exp $
---- deps/v8/build/common.gypi.orig	Fri May  2 02:47:47 2014
-+++ deps/v8/build/common.gypi	Sun Jul 27 08:05:59 2014
+--- deps/v8/build/common.gypi.orig	Wed Sep 17 00:47:52 2014
++++ deps/v8/build/common.gypi	Sat Jan 10 00:24:30 2015
 @@ -92,7 +92,7 @@
      'v8_use_snapshot%': 'true',
      'host_os%': '<(OS)',
@@ -28,6 +28,24 @@ $OpenBSD: patch-deps_v8_build_common_gypi,v 1.1 2013/10/22 15:29:14 abieber Exp 
          (v8_target_arch=="arm" or v8_target_arch=="ia32" or \
           v8_target_arch=="mipsel")', {
          # Check whether the host compiler and target compiler support the
+@@ -297,7 +297,7 @@
+         'target_conditions': [
+           ['_toolset=="host"', {
+             'variables': {
+-              'm32flag': '<!((echo | $(echo ${CXX_host:-$(which g++)}) -m32 -E - > /dev/null 2>&1) && echo "-m32" || true)',
++              'm32flag': '<!((echo | $(echo ${CXX_host:-$(which c++)}) -m32 -E - > /dev/null 2>&1) && echo "-m32" || true)',
+             },
+             'cflags': [ '<(m32flag)' ],
+             'ldflags': [ '<(m32flag)' ],
+@@ -307,7 +307,7 @@
+           }],
+           ['_toolset=="target"', {
+             'variables': {
+-              'm32flag': '<!((echo | $(echo ${CXX_target:-${CXX:-$(which g++)}}) -m32 -E - > /dev/null 2>&1) && echo "-m32" || true)',
++              'm32flag': '<!((echo | $(echo ${CXX_target:-${CXX:-$(which c++)}}) -m32 -E - > /dev/null 2>&1) && echo "-m32" || true)',
+               'clang%': 0,
+             },
+             'conditions': [
 @@ -322,8 +322,11 @@
            }],
          ],

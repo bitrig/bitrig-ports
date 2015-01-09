@@ -1,10 +1,7 @@
 # $OpenBSD: Makefile,v 1.32 2014/09/24 18:17:27 abieber Exp $
 
 # XXX:
-# - Needs __ARM_NR_cacheflush (or the like) to work on arm-based ports.
 # - Needs bundled libcares as arpa/nameser.h does not include ns_t_a.
-
-ONLY_FOR_ARCHS=	amd64 i386
 
 COMMENT=	V8 JavaScript for clients and servers
 
