@@ -1,0 +1,18 @@
+--- include/ansidecl.h.orig	Fri Jan  9 14:15:37 2015
++++ include/ansidecl.h	Fri Jan  9 14:15:52 2015
+@@ -112,9 +112,6 @@ Foundation, Inc., 51 Franklin Street - Fifth Floor, Bo
+    CONST, VOLATILE, SIGNED, PROTO, EXFUN, DEFUN, DEFUN_VOID,
+    AND, DOTS, NOARGS.  Don't use them.  */
+ 
+-#ifndef	_ANSIDECL_H
+-#define _ANSIDECL_H	1
+-
+ #ifdef __cplusplus
+ extern "C" {
+ #endif
+@@ -437,5 +434,3 @@ So instead we use the macro below and test it against 
+ #ifdef __cplusplus
+ }
+ #endif
+-
+-#endif	/* ansidecl.h	*/
