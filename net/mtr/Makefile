@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.56 2013/11/19 16:39:26 sthen Exp $
+# $OpenBSD: Makefile,v 1.57 2015/01/10 20:08:58 sthen Exp $
 
 COMMENT=	Matt's traceroute - network diagnostic tool#'
 
-DISTNAME=	mtr-0.85
-REVISION=	0
+DISTNAME=	mtr-0.86
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.bitwizard.nl/mtr/
@@ -35,5 +34,8 @@ WANTLIB += png pthread pthread-stubs xcb xcb-render xcb-shm z
 CONFIGURE_ARGS+=	--without-glib \
 			--without-gtk
 .endif
+
+post-patch:
+	touch ${WRKSRC}/config.h.in
 
 .include <bsd.port.mk>
