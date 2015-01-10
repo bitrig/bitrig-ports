@@ -1,15 +1,6 @@
 $OpenBSD$
 --- ld/Makefile.in.orig	Tue Nov 26 12:37:33 2013
 +++ ld/Makefile.in	Mon May 12 16:12:26 2014
-@@ -112,7 +112,7 @@ am_ld_new_OBJECTS = ldgram.$(OBJEXT) ldlex-wrapper.$(O
- 	$(am__objects_1)
- ld_new_OBJECTS = $(am_ld_new_OBJECTS)
- am__DEPENDENCIES_1 =
--DEFAULT_INCLUDES = -I.@am__isrc@
-+DEFAULT_INCLUDES = -I.@am__isrc@ -I/usr/local/include
- depcomp = $(SHELL) $(top_srcdir)/../depcomp
- am__depfiles_maybe = depfiles
- am__mv = mv -f
 @@ -471,6 +471,7 @@ ALL_EMULATION_SOURCES = \
  	earmelf_linux_eabi.c \
  	earmelf_nacl.c \

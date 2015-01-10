@@ -18,7 +18,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 REALDISTNAME = 	binutils-${VER}
 DISTNAME =	${REALDISTNAME}
-REVISION =	4
+REVISION =	5
 DISTFILES =	${REALDISTNAME}.tar.bz2
 EXTRACT_ONLY =	${REALDISTNAME}.tar.bz2
 
@@ -87,6 +87,7 @@ PKG_ARGS+=-Darm=0
 .endif
 
 CONFIGURE_ARGS+=--enable-commonbfdlib=no
+CONFIGURE_ARGS+=--enable-nls=no
 
 MASTER_SITES =	${MASTER_SITE_GNU:=binutils/}
 
