@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2015/01/09 13:21:03 schwarze Exp $
+# $OpenBSD: Makefile,v 1.24 2015/01/10 18:02:04 schwarze Exp $
 
 COMMENT=	curses-based URL ripper
 
@@ -12,7 +12,8 @@ MASTER_SITES=	ftp://ftp.fu-berlin.de/pub/unix/mail/mutt/contrib/ \
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c
+
+WANTLIB += c
 
 CONFIGURE_STYLE= gnu
 
