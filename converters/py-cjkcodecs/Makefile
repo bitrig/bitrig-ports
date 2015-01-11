@@ -6,7 +6,7 @@ COMMENT=	Python unicode codecs for Chinese, Japanese and Korean
 
 DISTNAME=	cjkcodecs-1.1.1
 PKGNAME=	py-${DISTNAME}
-REVISION =	9
+REVISION =	10
 CATEGORIES=	converters
 
 # BSD

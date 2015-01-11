@@ -4,7 +4,7 @@ SHARED_ONLY =	Yes
 COMMENT =	lightweight web browser
 
 XFCE_VERSION =	0.5.8
-REVISION =	1
+REVISION =	2
 XFCE_GOODIE =	midori
 WRKDIST =	${WRKDIR}
 
