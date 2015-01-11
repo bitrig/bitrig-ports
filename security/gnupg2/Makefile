@@ -32,7 +32,7 @@ LIB_DEPENDS =		archivers/bzip2 \
 			security/libksba \
 			net/curl \
 			devel/pth \
-			security/libksba
+			security/libksba \
 			devel/readline
 
 .if ${FLAVOR:Mldap}
