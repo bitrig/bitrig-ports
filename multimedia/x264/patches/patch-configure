@@ -1,12 +1,21 @@
 $OpenBSD: patch-configure,v 1.17 2015/01/07 08:53:07 brad Exp $
 --- configure.orig	Thu Dec 18 16:45:04 2014
-+++ configure	Wed Jan  7 02:11:58 2015
++++ configure	Sun Jan 11 15:13:49 2015
 @@ -1,4 +1,4 @@
 -#!/bin/bash
 +#!/bin/sh
  
  if test x"$1" = x"-h" -o x"$1" = x"--help" ; then
  cat <<EOF
+@@ -525,7 +525,7 @@ case $host_os in
+         SYS="NETBSD"
+         libm="-lm"
+         ;;
+-    openbsd*)
++    openbsd*|bitrig*)
+         SYS="OPENBSD"
+         libm="-lm"
+         ;;
 @@ -1043,26 +1043,18 @@ fi
  
  cc_check "stdint.h" "" "uint32_t test_vec __attribute__ ((vector_size (16))) = {0,1,2,3};" && define HAVE_VECTOREXT
