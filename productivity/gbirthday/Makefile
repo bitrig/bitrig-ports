@@ -8,8 +8,6 @@ CATEGORIES =		productivity x11
 
 HOMEPAGE =		http://gbirthday.sourceforge.net/
 
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 

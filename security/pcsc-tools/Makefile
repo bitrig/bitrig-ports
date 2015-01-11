@@ -8,8 +8,6 @@ CATEGORIES=	security sysutils
 
 HOMEPAGE=	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 

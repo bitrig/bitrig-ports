@@ -6,8 +6,6 @@ MODULES =		cpan
 DISTNAME =		Plack-Middleware-RemoveRedundantBody-0.05
 CATEGORIES =		www
 
-MAINTAINER =		Cesare Gargano <gar@plusiagamma.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

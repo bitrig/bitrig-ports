@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tar.bz2
 
 CATEGORIES=	security
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 

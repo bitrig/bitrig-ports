@@ -6,8 +6,6 @@ MODULES =	cpan
 DISTNAME =	Plack-Middleware-FixMissingBodyInRedirect-0.12
 CATEGORIES =	www
 
-MAINTAINER =	Cesare Gargano <gar@plusiagamma.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 
