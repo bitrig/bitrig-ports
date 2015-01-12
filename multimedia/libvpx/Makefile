@@ -5,7 +5,7 @@ COMMENT=	Google VP8/VP9 video codec
 V=		1.3.0
 DISTNAME=	libvpx-v${V}
 PKGNAME=	libvpx-${V}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	https://webm.googlecode.com/files/
 EXTRACT_SUFX=	.tar.bz2
@@ -20,12 +20,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=	c m pthread
 
 BUILD_DEPENDS+=	shells/bash
-
-MODULES=	lang/clang
-
-MODCLANG_ARCHS=	amd64 i386
-
-.if ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386"
+.if ${MACHINE_ARCH} == "amd64"
 BUILD_DEPENDS+=	devel/yasm
 .endif
 
@@ -45,10 +40,7 @@ CONFIGURE_STYLE= simple
 CONFIGURE_ARGS+=--prefix=${PREFIX} \
 		--disable-optimizations \
 		--disable-unit-tests
-CONFIGURE_ENV=	LD="${CC}"
-.if ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386"
-CONFIGURE_ENV+=	CC="clang"
-.endif
+CONFIGURE_ENV=	LD="${CC}" CC="${CC}"
 
 NO_TEST=	Yes
 
