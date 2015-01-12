@@ -5,6 +5,7 @@ COMMENT=	audio/video converter and streamer
 V=		20150107
 DISTNAME=	ffmpeg-git-${V}
 PKGNAME=	ffmpeg-${V}
+REVISION=	0
 CATEGORIES=	graphics multimedia
 MASTER_SITES=	http://comstyle.com/source/
 EXTRACT_SUFX=	.tar.xz
@@ -29,15 +30,11 @@ WANTLIB=	SDL X11 Xext Xfixes Xv bz2 c crypto gsm m mp3lame opus pthread \
 		schroedinger-1.0 sndio speex ssl theoradec theoraenc vorbis \
 		vorbisenc vpx>=5 x264 xvidcore z
 
-MODULES=	lang/clang
-
-MODCLANG_ARCHS=	amd64
-MODCLANG_LANGS=	c
-
 BUILD_DEPENDS=	textproc/texi2html
-.if ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386"
+.if ${MACHINE_ARCH} == "amd64"
 BUILD_DEPENDS+=	devel/yasm
 .endif
+
 LIB_DEPENDS=	archivers/bzip2 \
 		audio/lame \
 		audio/libvorbis \
@@ -66,13 +63,8 @@ WRKTMP=		${WRKDIR}/tmp
 
 FFMPEG_ARCH=	${MACHINE_ARCH}
 
-.if ${MACHINE_ARCH} == "i386"
-# silly broken inline asm
-CC=		gcc
-CXX=		g++
-.endif
 # x265 only builds on archs with working builtin atomics
-.if ${MACHINE_ARCH} == "alpha" || ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "sparc64"
+.if ${MACHINE_ARCH} == "amd64"
 LIB_DEPENDS+=	multimedia/x265
 WANTLIB+=	x265
 CONFIGURE_ARGS+=	--enable-libx265
