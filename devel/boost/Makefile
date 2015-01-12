@@ -1,13 +1,11 @@
 # $OpenBSD: Makefile,v 1.54 2015/01/05 21:14:46 brad Exp $
 
-ONLY_FOR_ARCHS=	${GCC4_ARCHS}
-
 COMMENT=	free peer-reviewed portable C++ source libraries
 
 VERSION=	1.53.0
 DISTNAME=	boost_${VERSION:S/./_/g}
 PKGNAME=	boost-${VERSION}
-REVISION=	10
+REVISION=	11
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=boost/}
 EXTRACT_SUFX=	.tar.bz2
@@ -57,9 +55,6 @@ MODULES=	converters/libiconv \
 		lang/python
 MODPY_RUNDEP=	No
 
-MODULES+=		lang/clang
-MODCLANG_ARCHS =        amd64 i386
-MODCLANG_LANGS =        c c++
 BUILD_DEPENDS+=	lang/python/${MODPY_DEFAULT_VERSION_3}
 LIB_DEPENDS=	archivers/bzip2
 
