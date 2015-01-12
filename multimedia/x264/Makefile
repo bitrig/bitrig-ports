@@ -5,7 +5,7 @@ COMMENT=	free H.264/MPEG-4 AVC encoder
 V=		20141218
 DISTNAME=	x264-snapshot-${V}-2245
 PKGNAME=	x264-${V}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://downloads.videolan.org/pub/videolan/x264/snapshots/
 EXTRACT_SUFX=	.tar.bz2
@@ -19,10 +19,6 @@ PERMIT_PACKAGE_CDROM=	patents
 PERMIT_PACKAGE_FTP=	Yes
 
 WANTLIB=	c m pthread
-
-MODULES=	lang/clang
-
-MODCLANG_ARCHS=	amd64 i386
 
 .if ${MACHINE_ARCH} == "amd64"
 BUILD_DEPENDS+=	devel/yasm
