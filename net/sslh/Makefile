@@ -1,29 +1,32 @@
-# $OpenBSD: Makefile,v 1.8 2014/03/24 21:46:16 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.9 2015/01/13 11:15:04 sthen Exp $
 
 COMMENT =	SSL/SSH multiplexer
-
-VERSION =	1.15
-DISTNAME =	sslh-${VERSION}
-REVISION =	1
-CATEGORIES =	security net
+=======
+GH_ACCOUNT =	yrutschle
+GH_PROJECT =	sslh
+GH_COMMIT =	9d2deff6ad51622e2de1788af1d1465c5b37075e
+V =		1.16
+GH_TAGNAME =	v$V
+>>>>>>> 86124e5... update to sslh 1.16, from Björn Ketelaars (maintainer), tweak from me ok björn
 
 HOMEPAGE =	http://www.rutschle.net/tech/sslh.shtml
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes
 
-MASTER_SITES =	http://www.rutschle.net/tech/
-
 WANTLIB =	c config
 LIB_DEPENDS =	devel/libconfig
 
 MAKE_FLAGS =	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -DLIBCONFIG" \
-		LIBS="-L${LOCALBASE}/lib -lconfig"
+		LIBS="-L${LOCALBASE}/lib -lconfig" VERSION=$V
 NO_TEST =	Yes
+
+do-configure:
+	printf '#ifndef _VERSION_H_\n#define _VERSION_H_\n#define VERSION "$V"\n#endif\n' > ${WRKSRC}/version.h
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/sslh
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/sslh
+	${INSTALL_DATA} ${WRKSRC}/README.md ${PREFIX}/share/doc/sslh
 	${INSTALL_DATA} ${WRKSRC}/sslh.8 ${PREFIX}/man/man8
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/sslh
 .for p in basic.cfg example.cfg
