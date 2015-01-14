@@ -6,8 +6,6 @@ MODULES =		cpan
 DISTNAME =		Signal-Mask-0.008
 CATEGORIES =		devel
 
-MAINTAINER =		Cesare Gargano <gar@plusiagamma.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

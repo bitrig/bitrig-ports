@@ -11,7 +11,6 @@ GH_TAGNAME =	v${V}
 GH_COMMIT =	e6b8bc461c0d948e97187d5ff6ea579d9addb7dc
 
 HOMEPAGE =	https://github.com/fasterthanlime/greg
-MAINTAINER =	Sean Levy <attila@stalphonsos.com>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

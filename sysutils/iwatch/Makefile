@@ -12,8 +12,6 @@ CATEGORIES =		sysutils
 
 HOMEPAGE =		https://github.com/${GH_ACCOUNT}/${GH_PROJECT}
 
-MAINTAINER =		YASUOKA Masahiko <yasuoka@iij.ad.jp>
-
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

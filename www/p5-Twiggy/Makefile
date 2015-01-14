@@ -6,8 +6,6 @@ MODULES =		cpan
 DISTNAME =		Twiggy-0.1025
 CATEGORIES =		www
 
-MAINTAINER =		Cesare Gargano <gar@plusiagamma.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

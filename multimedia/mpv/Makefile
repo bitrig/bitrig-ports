@@ -17,8 +17,6 @@ CATEGORIES =		multimedia x11
 
 HOMEPAGE =		http://mpv.io/
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	patents
 PERMIT_PACKAGE_FTP =	Yes
