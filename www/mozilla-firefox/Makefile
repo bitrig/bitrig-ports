@@ -8,7 +8,7 @@ MOZILLA_VERSION =	34.0
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	firefox
 MOZILLA_CODENAME =	browser
-REVISION = 1
+REVISION = 2
 
 SO_VERSION =	52.0
 # NOTE: Must bump minor version if any shlib's are removed from the
@@ -24,11 +24,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES =	www/mozilla devel/gettext lang/python
 
 MODPY_RUNDEP =	No
-
-# necessary glue to build with the correct compiler after fx 17
-MODULES +=		lang/clang
-MODCLANG_ARCHS =	amd64
-MODCLANG_LANGS =	c c++
 
 # Regression tests are too hard to adapt to run here
 NO_TEST =	Yes
