@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2014/06/16 09:35:16 jasper Exp $
+# $OpenBSD: Makefile,v 1.19 2015/01/15 22:11:15 halex Exp $
 
 COMMENT=		command line client for mpd
 
