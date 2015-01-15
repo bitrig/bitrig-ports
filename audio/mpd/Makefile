@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.69 2014/11/27 19:57:16 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.70 2015/01/15 08:15:14 dcoppa Exp $
 
 COMMENT =		Music Player Daemon
-DISTNAME =		mpd-0.19.5
-REVISION =		1
+DISTNAME =		mpd-0.19.8
 CATEGORIES =		audio
 HOMEPAGE =		http://www.musicpd.org/
 
@@ -15,8 +14,8 @@ WANTLIB =		FLAC ao audiofile avcodec avformat \
 			gthread-2.0 icudata icui18n icuuc id3tag \
 			m mikmod mp3lame mpcdec mpdclient ogg \
 			opus pthread samplerate shout sndfile \
-			sndio speex theora vorbis vorbisenc \
-			vorbisfile z
+			sndio speex sqlite3 theora vorbis \
+			vorbisenc vorbisfile z
 WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://www.musicpd.org/download/mpd/stable/
@@ -69,7 +68,6 @@ CONFIGURE_ARGS +=	--bindir=${PREFIX}/sbin \
 			--disable-smbclient \
 			--disable-soundcloud \
 			--disable-soxr \
-			--disable-sqlite \
 			--disable-systemd-daemon \
 			--disable-twolame-encoder \
 			--disable-upnp \
@@ -90,6 +88,7 @@ CONFIGURE_ARGS +=	--bindir=${PREFIX}/sbin \
 			--enable-pipe-output \
 			--enable-shout \
 			--enable-sndfile \
+			--enable-sqlite \
 			--enable-vorbis \
 			--enable-vorbis-encoder \
 			--enable-wave-encoder \
