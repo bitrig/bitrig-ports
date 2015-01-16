@@ -8,16 +8,16 @@ lib/liboping.a
 lib/liboping.la
 @lib lib/liboping.so.${LIBoping_VERSION}
 lib/pkgconfig/liboping.pc
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/5.20.1/
-@comment libdata/perl5/${MACHINE_ARCH}-openbsd/5.20.1/perllocal.pod
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/Net/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/Net/Oping.pm
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Net/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Net/Oping/
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/auto/Net/Oping/Oping.so
+@comment libdata/perl5/${MACHINE_ARCH}-bitrig/
+@comment libdata/perl5/${MACHINE_ARCH}-bitrig/5.20.1/
+@comment libdata/perl5/${MACHINE_ARCH}-bitrig/5.20.1/perllocal.pod
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/Net/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/Net/Oping.pm
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Net/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Net/Oping/
+libdata/perl5/site_perl/${MACHINE_ARCH}-bitrig/auto/Net/Oping/Oping.so
 @man man/man3/liboping.3
 @man man/man3/ping_construct.3
 @man man/man3/ping_get_error.3
