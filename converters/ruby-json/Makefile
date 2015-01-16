@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.26 2014/08/14 07:24:29 jasper Exp $
 
+BROKEN=			needs work on bitrig
+
 COMMENT=		JSON implementation for Ruby
 
 DISTNAME=		json-1.8.1

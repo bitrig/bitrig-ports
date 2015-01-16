@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2013/10/11 23:49:57 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	fast maildir search engine
 
 DISTNAME=	nmzmail-1.1

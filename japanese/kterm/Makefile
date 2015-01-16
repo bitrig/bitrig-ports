@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.37 2013/10/11 21:20:58 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	Japanese-capable xterm
 
 VERSION=	6.2.0

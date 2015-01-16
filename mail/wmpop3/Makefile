@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2013/03/11 11:23:54 espie Exp $
 
+BROKEN=			needs work on bitrig
+
 COMMENT=		wm-dockapp; POP3 mail check
 
 DISTNAME=		WMPop3-0.5.6a

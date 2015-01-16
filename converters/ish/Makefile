@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2013/03/11 01:30:27 espie Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	binary-to-text file converter
 
 DISTNAME=	ish201a5

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2014/06/14 23:23:12 sthen Exp $
 
+BROKEN =	needs work on bitrig
+
 SHARED_ONLY =	Yes
 COMMENT =	Unicode line breaking algorithm
 

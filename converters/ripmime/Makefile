@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2013/03/11 01:30:28 espie Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	extract attachments from MIME encoded emails
 
 DISTNAME=	ripmime-1.4.0.10

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.24 2013/03/11 11:23:50 espie Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	once-popular mail user agent
 
 DISTNAME=	elm-2.4ME+66

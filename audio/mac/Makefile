@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.6 2013/03/21 08:45:12 ajacoutot Exp $
 
+BROKEN=		needs work on bitrig
+
 ONLY_FOR_ARCHS= amd64 arm i386
 
 COMMENT=	Monkey's audio lossless codec

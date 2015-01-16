@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2014/10/23 17:23:09 sthen Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	convert DOS/MAC files to UNIX (line-endings/charset)
 
 DISTNAME =	dos2unix-7.1

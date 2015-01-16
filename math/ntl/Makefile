@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.27 2015/01/10 13:55:32 benoit Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT =	Victor Shoup's Number Theory Library
 
 DISTNAME =	ntl-8.1.0

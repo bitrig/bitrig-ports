@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.10 2013/03/11 11:12:34 espie Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	Java program analyzer and checker
 
 DISTNAME=	jlint-3.0

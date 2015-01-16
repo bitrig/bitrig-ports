@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2014/10/26 15:24:09 ratchov Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	Commodore 64 music player and SID chip emulator
 
 DISTNAME=	sidplay-base-1.0.9

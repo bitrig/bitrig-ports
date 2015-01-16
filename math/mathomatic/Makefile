@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.27 2013/03/11 11:23:55 espie Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT =	small, portable, general purpose computer algebra system
 
 DISTNAME =	mathomatic-16.0.0

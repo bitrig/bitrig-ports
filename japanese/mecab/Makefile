@@ -2,6 +2,7 @@
 
 # .libs/libmecab.so.0.0: undefined reference to `__sync_val_compare_and_swap_4'
 # .libs/libmecab.so.0.0: undefined reference to `__sync_add_and_fetch_4'
+BROKEN =	needs work on bitrig
 BROKEN-arm =	undefined refs to __sync operations
 BROKEN-hppa =	undefined refs to __sync operations
 BROKEN-mips64 =	undefined refs to __sync operations

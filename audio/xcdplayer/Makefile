@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.30 2014/12/29 20:11:12 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	CD player for X11
 DISTNAME=	xcdplayer-2.2
 REVISION=	6

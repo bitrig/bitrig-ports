@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.34 2013/03/21 08:45:11 ajacoutot Exp $
 
+BROKEN=		needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	decoding library for KDE Multimedia

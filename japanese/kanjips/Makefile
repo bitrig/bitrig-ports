@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2013/10/11 23:49:53 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	converts Japanese fonts in PostScript documents
 
 CATEGORIES=japanese print fonts
