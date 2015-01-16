@@ -4,7 +4,7 @@ COMMENT =	html help viewer
 BROKEN =	doesnt work with newer xulrunner
 
 DISTNAME =	chmsee-2.0.2
-REVISION =	1
+REVISION =	2
 
 CATEGORIES =	textproc x11
 
@@ -16,12 +16,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 MASTER_SITES =	https://chmsee.googlecode.com/files/
 
 WRKSRC=${WRKDIST}/src
-MODULES =	lang/python gcc4 lang/clang
-
-MODGCC4_ARCHS =		powerpc sparc64
-MODGCC4_LANGS =		c c++
-MODCLANG_ARCHS =	amd64 i386
-MODCLANG_LANGS =	c c++
+MODULES =	lang/python
 
 MAKE_FILE =	Makefile.netbsd
 USE_GMAKE = yes
