@@ -15,7 +15,7 @@ MOZILLA_VERSION =	24
 DISTNAME =		mozjs-${MOZILLA_VERSION}.2.0
 PKGNAME =		spidermonkey-${MOZILLA_VERSION}.2.0
 PKGSPEC =		spidermonkey->=24.0,<25.0
-REVISION =		2
+REVISION =		3
 
 SO_VERSION =	0.0
 SHARED_LIBS =	mozjs-24 ${SO_VERSION}
@@ -29,13 +29,6 @@ EXTRACT_SUFX=	.tar.bz2
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES =	lang/python
-# necessary glue to build with the correct compiler after fx 17
-# sync with x11/gnome/gjs and x11/gnome/shell
-MODULES +=		gcc4 lang/clang
-MODGCC4_ARCHS =		powerpc sparc64 alpha i386
-MODGCC4_LANGS =		c c++
-MODCLANG_ARCHS =	amd64
-MODCLANG_LANGS =	c c++
 
 WANTLIB += c m pthread readline nspr4 ncurses plc4 plds4 z
 WANTLIB += c++ c++abi
