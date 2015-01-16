@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.14 2014/03/13 22:25:45 sthen Exp $
 
+BROKEN=		needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	speed up perl scripts by running them persistently

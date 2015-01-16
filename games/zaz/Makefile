@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.5 2013/03/11 11:07:42 espie Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT =	zuma-like arkade game
 DISTNAME =	zaz-1.0.0
 REVISION =	2

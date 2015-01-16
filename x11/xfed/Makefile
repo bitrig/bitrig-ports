@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.29 2013/10/11 21:21:05 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	X11 fonts (.bdf files) editor
 
 DISTNAME=	xfed

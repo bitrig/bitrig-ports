@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2014/09/14 23:05:05 bcallah Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	powerful and user-friendly console text editor
 DISTNAME =	moe-1.6
 EXTRACT_SUFX =	.tar.lz

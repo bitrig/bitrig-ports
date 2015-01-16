@@ -1,6 +1,8 @@
 # $OpenBSD: Makefile,v 1.28 2013/03/11 11:07:41 espie Exp $
 #
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	side-view, fast-action, kill everything type of game
 
 V=		2.02r2

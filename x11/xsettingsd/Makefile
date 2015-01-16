@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2013/08/07 21:33:09 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	lightweight XSETTINGS daemon
 
 DISTNAME=	derat-xsettingsd-486be8b

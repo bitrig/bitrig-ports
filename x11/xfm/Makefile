@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.31 2013/10/11 21:21:05 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	X11 File Manager
 
 DISTNAME=	xfm-1.4.3

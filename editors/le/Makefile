@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2014/12/23 18:34:47 bcallah Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT =	text editor inspired by Norton Commander
 DISTNAME =	le-1.15.1
 CATEGORIES =	editors

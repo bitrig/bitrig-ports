@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.30 2014/09/02 09:23:13 espie Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT =	multi-way scrolling shoot'em up for X11, addictive
 #'
 

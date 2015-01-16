@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2014/11/17 14:54:57 sthen Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT =	coroutines for perl
 
 SHARED_ONLY =	Yes

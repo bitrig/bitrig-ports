@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.27 2013/03/11 11:07:41 espie Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	jigsaw puzzle game for X11
 
 DISTNAME=	xjig-2.4

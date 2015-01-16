@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.103 2015/01/08 17:07:45 sthen Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	shell-like command line ftp and sftp client
 
 DISTNAME=	lftp-4.6.1

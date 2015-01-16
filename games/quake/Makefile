@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.41 2013/03/21 08:45:17 ajacoutot Exp $
 
+BROKEN =		needs work on bitrig
+
 COMMENT-main =		Quake/QuakeWorld client
 COMMENT-libs =		Quake common libs
 COMMENT-server =	QuakeWorld server

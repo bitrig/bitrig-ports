@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.25 2013/03/21 08:45:17 ajacoutot Exp $
 
+BROKEN=			needs work on bitrig
+
 ONLY_FOR_ARCHS= 	amd64 i386
 SHARED_ONLY=		Yes
 

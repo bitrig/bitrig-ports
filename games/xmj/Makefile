@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.23 2014/08/30 21:54:08 jasper Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	Mahjongg game for X11
 
 DISTNAME=       xmj

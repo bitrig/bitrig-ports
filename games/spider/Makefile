@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.26 2014/12/05 12:50:09 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	challenging double decked solitaire game
 
 DISTNAME=	spider

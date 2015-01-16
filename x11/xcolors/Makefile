@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.27 2013/10/11 21:21:04 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	display all (ok, most of) the colors in the universe
 
 DISTNAME=	xcolors

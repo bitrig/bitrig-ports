@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.24 2013/10/15 20:49:57 schwarze Exp $
 
+BROKEN=			needs work on bitrig
+
 COMMENT=		anagram search utility
 
 DISTNAME=		agm-1.3.1

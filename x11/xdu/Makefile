@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.28 2013/10/11 21:21:04 naddy Exp $
 
+BROKEN=			needs work on bitrig
+
 COMMENT=		graphic disk usage viewer
 
 DISTNAME=		xdu-3.0
