@@ -30,11 +30,6 @@ MODULES =	devel/gettext \
 		lang/ruby \
 		x11/gnome
 
-# cant use clang = needs <chrono> header in StdLib ?
-#MODULES +=		lang/clang
-#MODCLANG_ARCHS =        amd64
-#MODCLANG_LANGS =        c c++
-
 MAKE_FILE =		GNUmakefile
 PORTHOME =		${WRKDIST}
 SUBST_VARS =		WEBKIT_API_VERSION GTK_API_VERSION
