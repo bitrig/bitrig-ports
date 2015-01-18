@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.17 2013/04/01 16:04:33 sthen Exp $
+# $OpenBSD: Makefile,v 1.18 2015/01/18 20:45:21 benoit Exp $
 
 COMMENT=	HTTP Body Parser
 
-DISTNAME=	HTTP-Body-1.17
-REVISION=	0
+DISTNAME =	HTTP-Body-1.19
 CATEGORIES=	www
 
 # Same as Perl
