@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/10/13 19:17:23 sthen Exp $
+# $OpenBSD: Makefile,v 1.11 2015/01/19 20:26:04 naddy Exp $
 
 COMMENT =	Multicast router utilizing IGMP forwarding
 
@@ -17,7 +17,6 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		c
 
 USE_GMAKE =		Yes
-USE_GROFF =		Yes
 
 WRKDIST =		${WRKDIR}/igmpproxy/src
 
