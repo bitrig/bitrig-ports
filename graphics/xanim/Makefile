@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.32 2014/03/19 13:53:29 jasper Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	X11 animation player with support for lots of formats
 
 DISTNAME=xanim-2.80.1

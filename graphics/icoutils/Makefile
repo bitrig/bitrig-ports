@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1 2014/08/23 10:02:42 sthen Exp $
 
+BROKEN =		needs work on bitrig
+
 COMMENT =		extractor and converter for .ico and .cur files
 
 DISTNAME =		icoutils-0.31.0

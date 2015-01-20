@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2014/02/11 07:49:58 stu Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT =	smalltalk system, vm
 
 SRCV =		1

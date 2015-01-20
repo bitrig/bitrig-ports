@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2013/03/11 11:10:54 espie Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	intepreter for Lindenmayer-systems
 
 # CVS checkout on 04-30-2010

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.60 2013/03/21 08:46:32 ajacoutot Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	Emacs Lisp-like runtime library
 
 SHARED_ONLY=	Yes

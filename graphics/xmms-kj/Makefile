@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2013/06/04 18:41:51 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	XMMS visualization plugin, to display Kjofol skins

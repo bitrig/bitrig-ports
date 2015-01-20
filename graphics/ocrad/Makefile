@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2013/10/11 23:49:49 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	OCR program for pnm files
 
 DISTNAME=	ocrad-0.18

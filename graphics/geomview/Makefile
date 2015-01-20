@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2013/08/12 10:03:00 sthen Exp $
 
+BROKEN =		needs work on bitrig
+
 COMMENT =		geometry viewer for OOGL file formats
 
 V =			1.9.4

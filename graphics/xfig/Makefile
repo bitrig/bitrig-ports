@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.51 2013/03/11 11:10:56 espie Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	CAD drawing program for X11
 
 VERSION=	3.2.5b

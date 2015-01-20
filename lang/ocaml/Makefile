@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.67 2014/10/25 11:55:54 chrisz Exp $
 
+BROKEN=		needs work on bitrig
+
 NOT_FOR_ARCHS=	hppa
 
 MULTI_PACKAGES = -graphics -main
