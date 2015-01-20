@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2014/06/02 19:43:50 juanfra Exp $
+# $OpenBSD: Makefile,v 1.15 2015/01/20 15:26:26 abieber Exp $
 
 SHARED_ONLY =	Yes
 SHARED_LIBS +=	luajit-${MODLUA_VERSION} 0.0 # 2.0.0
@@ -7,7 +7,7 @@ COMMENT =	just-in-time compiler for Lua
 V =		2.0.3
 DISTNAME =	LuaJIT-${V}
 PKGNAME =	${DISTNAME:L}
-REVISION =	3
+REVISION =	4
 
 CATEGORIES =	lang
 
