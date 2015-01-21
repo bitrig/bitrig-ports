@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/03/11 11:44:44 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2015/01/21 14:42:33 sthen Exp $
 
 COMMENT=	plugin to Data::FormValidator for catalyst (deprecated)
 
@@ -6,7 +6,6 @@ MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-FormValidator-0.094
 REVISION=	0
 CATEGORIES=	www
-USE_GROFF =	Yes
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

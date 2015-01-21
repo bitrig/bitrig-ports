@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/03/11 11:44:44 espie Exp $
+# $OpenBSD: Makefile,v 1.16 2015/01/21 14:42:32 sthen Exp $
 
 COMMENT=	Catalyst development tools
 
@@ -6,7 +6,6 @@ MODULES=	cpan
 DISTNAME=	Catalyst-Devel-1.36
 REVISION=	0
 CATEGORIES=	www
-USE_GROFF =	Yes
 
 HOMEPAGE=	http://www.catalystframework.org/
 

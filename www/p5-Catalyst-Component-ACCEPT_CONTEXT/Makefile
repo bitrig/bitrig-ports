@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 11:44:44 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2015/01/21 14:42:32 sthen Exp $
 
 COMMENT =	make Catalyst request contexts available in models and views
 
@@ -6,7 +6,6 @@ MODULES =	cpan
 DISTNAME =	Catalyst-Component-ACCEPT_CONTEXT-0.07
 REVISION =	0
 CATEGORIES =	www
-USE_GROFF =	Yes
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

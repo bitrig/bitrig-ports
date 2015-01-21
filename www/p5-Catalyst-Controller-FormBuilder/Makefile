@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/11 11:44:44 espie Exp $
+# $OpenBSD: Makefile,v 1.11 2015/01/21 14:42:32 sthen Exp $
 
 COMMENT=	Catalyst FormBuilder Base Controller
 
@@ -6,7 +6,6 @@ MODULES=	cpan
 DISTNAME=	Catalyst-Controller-FormBuilder-0.06
 REVISION=	0
 CATEGORIES=	www
-USE_GROFF =	Yes
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes
