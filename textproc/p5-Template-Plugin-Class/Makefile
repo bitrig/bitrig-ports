@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/11 11:42:44 espie Exp $
+# $OpenBSD: Makefile,v 1.11 2015/01/21 14:41:38 sthen Exp $
 
 COMMENT=		template extension for calling class methods
 
@@ -6,7 +6,6 @@ MODULES=		cpan
 DISTNAME=		Template-Plugin-Class-0.14
 REVISION=		0
 CATEGORIES=		textproc
-USE_GROFF =		Yes
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes
