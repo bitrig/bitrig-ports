@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/03/24 08:33:14 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2015/01/21 14:27:57 sthen Exp $
 
 COMMENT=	common rules for searching for Perl things
 
@@ -6,7 +6,6 @@ MODULES=	cpan
 DISTNAME=	File-Find-Rule-Perl-1.13
 REVISION=	0
 CATEGORIES=	devel
-USE_GROFF =	Yes
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

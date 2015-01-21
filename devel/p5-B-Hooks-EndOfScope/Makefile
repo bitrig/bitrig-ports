@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/03/22 14:02:25 jasper Exp $
+# $OpenBSD: Makefile,v 1.10 2015/01/21 14:27:55 sthen Exp $
 
 COMMENT =	execute code after a scope finished compilation
 
@@ -6,7 +6,6 @@ MODULES =	cpan
 DISTNAME =	B-Hooks-EndOfScope-0.13
 REVISION =	0
 CATEGORIES =	devel
-USE_GROFF =	Yes
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

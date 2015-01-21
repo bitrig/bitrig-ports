@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 10:50:20 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2015/01/21 14:27:59 sthen Exp $
 
 COMMENT=	parser for plain-text configuration files
 
@@ -6,7 +6,6 @@ MODULES=	cpan
 DISTNAME=	Parse-PlainConfig-2.06
 REVISION=	1
 CATEGORIES=	devel
-USE_GROFF =	Yes
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

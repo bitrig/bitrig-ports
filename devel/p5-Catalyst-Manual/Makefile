@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/03/11 10:50:13 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2015/01/21 14:27:56 sthen Exp $
 
 COMMENT=	catalyst documentation
 
@@ -6,7 +6,6 @@ MODULES=	cpan
 DISTNAME=	Catalyst-Manual-5.9002
 REVISION=	0
 CATEGORIES=	devel
-USE_GROFF =	Yes
 
 # there was a version with six digits behind the dot
 EPOCH=		0
