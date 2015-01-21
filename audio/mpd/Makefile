@@ -1,9 +1,11 @@
-# $OpenBSD: Makefile,v 1.70 2015/01/15 08:15:14 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.71 2015/01/21 10:17:40 landry Exp $
 
 COMMENT =		Music Player Daemon
 DISTNAME =		mpd-0.19.8
 CATEGORIES =		audio
 HOMEPAGE =		http://www.musicpd.org/
+
+REVISION =		0
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
@@ -20,7 +22,9 @@ WANTLIB +=		c++ c++abi
 
 MASTER_SITES =		http://www.musicpd.org/download/mpd/stable/
 
-MODULES =		devel/gettext
+MODULES =		devel/gettext gcc4
+MODGCC4_ARCHS =		i386 amd64 powerpc sparc64 alpha hppa
+MODGCC4_LANGS =		c++
 
 BUILD_DEPENDS =		devel/boost
 
