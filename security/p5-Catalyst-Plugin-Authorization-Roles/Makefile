@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 11:41:26 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2015/01/21 14:40:11 sthen Exp $
 
 COMMENT=	role based authorization for Catalyst
 
@@ -10,7 +10,6 @@ CATEGORIES=	security
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=	cpan
-USE_GROFF =	Yes
 
 RUN_DEPENDS=	devel/p5-Set-Object \
 		devel/p5-Universal-isa \

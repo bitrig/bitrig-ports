@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/03/22 10:22:36 jasper Exp $
+# $OpenBSD: Makefile,v 1.13 2015/01/21 14:40:11 sthen Exp $
 
 COMMENT=	DSA Signatures and Key Generation
 
@@ -6,7 +6,6 @@ MODULES=	cpan
 DISTNAME=	Crypt-DSA-1.17
 REVISION=	0
 CATEGORIES=	security
-USE_GROFF =	Yes
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

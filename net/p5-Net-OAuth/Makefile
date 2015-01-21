@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 11:35:53 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2015/01/21 14:40:10 sthen Exp $
 
 COMMENT=	implementation of the OAuth protocol
 
@@ -19,6 +19,5 @@ RUN_DEPENDS=	devel/p5-Class-Accessor \
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
 CONFIGURE_STYLE=	modbuild
-USE_GROFF =	Yes
 
 .include <bsd.port.mk>
