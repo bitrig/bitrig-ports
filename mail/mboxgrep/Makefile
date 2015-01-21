@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/03/11 11:23:51 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2015/01/21 06:13:49 bentley Exp $
 
 COMMENT=	scan mailboxes for messages matching a regular expression
 

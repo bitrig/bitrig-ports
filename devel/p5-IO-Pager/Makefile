@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/12/08 15:09:46 benoit Exp $
+# $OpenBSD: Makefile,v 1.12 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	select a pager if destination is a TTY
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/04/24 11:11:34 sthen Exp $
+# $OpenBSD: Makefile,v 1.17 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	run-time class loading on first method call
 

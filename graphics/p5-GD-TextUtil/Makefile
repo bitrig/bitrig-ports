@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2013/10/11 23:49:50 naddy Exp $
+# $OpenBSD: Makefile,v 1.24 2015/01/21 06:13:48 bentley Exp $
 
 COMMENT=	text utilities for use with GD drawing package
 

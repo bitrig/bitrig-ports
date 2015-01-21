@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/12/17 07:15:04 benoit Exp $
+# $OpenBSD: Makefile,v 1.13 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	more sensible way to change directories
 

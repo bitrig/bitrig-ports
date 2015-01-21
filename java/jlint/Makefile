@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/11 11:12:34 espie Exp $
+# $OpenBSD: Makefile,v 1.11 2015/01/21 06:13:49 bentley Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -7,6 +7,7 @@ COMMENT=	Java program analyzer and checker
 DISTNAME=	jlint-3.0
 REVISION=	1
 CATEGORIES=	java
+REVISION =	0
 
 HOMEPAGE=	http://artho.com/jlint/
 

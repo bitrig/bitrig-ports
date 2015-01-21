@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/10/11 23:48:40 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	handle data in a hierarchical structure
 

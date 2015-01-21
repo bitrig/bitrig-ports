@@ -1,12 +1,13 @@
-# $OpenBSD: Makefile,v 1.27 2014/08/30 21:54:07 jasper Exp $
+# $OpenBSD: Makefile,v 1.28 2015/01/21 06:13:46 bentley Exp $
 
 COMMENT=	big5/gb enhanced truetype font manager
 
 DISTNAME=	ttfm-0.9.5
 PKGNAME=	zh-${DISTNAME}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	chinese
 
+# BSD/X11
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	c freetype z

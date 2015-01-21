@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/03/19 08:40:57 jasper Exp $
+# $OpenBSD: Makefile,v 1.13 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	create symlink from IO handle
 

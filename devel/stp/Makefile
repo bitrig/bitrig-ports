@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/11/23 20:28:01 sthen Exp $
+# $OpenBSD: Makefile,v 1.6 2015/01/21 06:13:48 bentley Exp $
 
 COMMENT=	decision procedure for bit-vectors and arrays
 

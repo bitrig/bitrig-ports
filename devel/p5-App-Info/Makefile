@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/03/23 13:57:46 jasper Exp $
+# $OpenBSD: Makefile,v 1.12 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	interface for providing metadata about installed packages
 

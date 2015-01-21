@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 10:50:19 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	attributes with aliases for constructor arguments for MooseX
 

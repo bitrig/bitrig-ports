@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/03/11 11:10:53 espie Exp $
+# $OpenBSD: Makefile,v 1.17 2015/01/21 06:13:48 bentley Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -7,6 +7,7 @@ COMMENT=	graphic counter language compiler/interpreter
 DISTNAME=	gracula-3.0
 REVISION=	0
 CATEGORIES=	graphics
+REVISION =	0
 
 MASTER_SITES=	${HOMEPAGE}
 

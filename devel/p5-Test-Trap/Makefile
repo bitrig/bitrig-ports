@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2014/04/14 14:29:22 benoit Exp $
+# $OpenBSD: Makefile,v 1.4 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=		trap exit codes
 

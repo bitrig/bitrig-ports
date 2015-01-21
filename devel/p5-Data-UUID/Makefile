@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2014/06/14 23:24:55 sthen Exp $
+# $OpenBSD: Makefile,v 1.22 2015/01/21 06:13:47 bentley Exp $
 
 SHARED_ONLY=	Yes
 COMMENT=	extension for generating GUIDs/UUIDs

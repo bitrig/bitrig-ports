@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 10:50:16 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	declarative validation of data structures
 

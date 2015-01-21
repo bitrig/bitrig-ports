@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/10/11 23:48:25 naddy Exp $
+# $OpenBSD: Makefile,v 1.13 2015/01/21 06:13:46 bentley Exp $
 
 COMMENT=	represent a series of changes in annotate form
 

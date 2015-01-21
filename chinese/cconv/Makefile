@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.5 2013/08/07 21:31:20 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2015/01/21 06:13:46 bentley Exp $
 
 COMMENT=	simplified-traditional chinese translate tool
 
 DISTNAME=	cconv-0.6.2
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	chinese converters
 
@@ -11,7 +11,7 @@ SHARED_LIBS=	cconv		0.0
 
 HOMEPAGE=	https://code.google.com/p/cconv/
 
-# GPLv2
+# GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB= 	c
@@ -26,5 +26,5 @@ FAKE_FLAGS=	includedir=${PREFIX}/include/cconv/
 
 post-patch:
 	@perl -i -pe 's:UTF-TW:UTF8-TW:g' ${WRKSRC}/main.c
-	
+
 .include <bsd.port.mk>

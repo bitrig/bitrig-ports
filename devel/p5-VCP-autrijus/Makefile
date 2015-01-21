@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/11 10:50:24 espie Exp $
+# $OpenBSD: Makefile,v 1.11 2015/01/21 06:13:48 bentley Exp $
 
 COMMENT=	tool for copying resources between repositories
 

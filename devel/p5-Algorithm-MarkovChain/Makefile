@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/03/11 10:50:12 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	module to create Markov chains and output based on them
 

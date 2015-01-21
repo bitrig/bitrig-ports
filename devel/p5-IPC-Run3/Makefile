@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/03/11 10:50:18 espie Exp $
+# $OpenBSD: Makefile,v 1.15 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	run a subprocess in batch mode
 

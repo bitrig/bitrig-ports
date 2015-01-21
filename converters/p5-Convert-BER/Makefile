@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/10/11 23:48:13 naddy Exp $
+# $OpenBSD: Makefile,v 1.16 2015/01/21 06:13:46 bentley Exp $
 
 COMMENT=	module to encode and decode objects
 

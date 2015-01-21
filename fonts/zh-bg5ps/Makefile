@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/08/30 21:54:08 jasper Exp $
+# $OpenBSD: Makefile,v 1.6 2015/01/21 06:13:48 bentley Exp $
 
 COMMENT=	convert Big5/GB encoded files to postscript
 

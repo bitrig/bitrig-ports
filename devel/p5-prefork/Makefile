@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.11 2014/12/17 07:12:51 benoit Exp $
+# $OpenBSD: Makefile,v 1.12 2015/01/21 06:13:48 bentley Exp $
 
 COMMENT=	optimized module loading
 
 MODULES=	cpan
 DISTNAME =	prefork-1.04
 CATEGORIES=	devel
+REVISION =	0
 
 CPAN_AUTHOR=	ADAMK
 

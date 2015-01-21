@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/10/11 23:49:09 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	module for controlling superclass method dispatch
 

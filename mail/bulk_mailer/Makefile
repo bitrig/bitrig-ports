@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2013/03/11 11:23:50 espie Exp $
+# $OpenBSD: Makefile,v 1.19 2015/01/21 06:13:49 bentley Exp $
 
 COMMENT=	speed mail delivery by sorting & batching addresses
 

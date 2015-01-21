@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/12/08 15:05:15 benoit Exp $
+# $OpenBSD: Makefile,v 1.7 2015/01/21 06:13:48 bentley Exp $
 
 COMMENT=	elapsed and estimated finish time reporting
 

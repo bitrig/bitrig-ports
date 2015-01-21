@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 10:50:17 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2015/01/21 06:13:47 bentley Exp $
 
 COMMENT=	determine file type using magic
 
