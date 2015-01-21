@@ -1,4 +1,4 @@
-#   $OpenBSD: Makefile,v 1.23 2013/03/11 11:23:53 espie Exp $
+#   $OpenBSD: Makefile,v 1.24 2015/01/21 14:19:13 sthen Exp $
 
 COMMENT=	modules for handling mail with perl
 
@@ -8,7 +8,6 @@ PKGNAME=	p5-Mail-Tools-2.07
 REVISION=	0
 CATEGORIES=	mail devel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mail/}
-USE_GROFF =	Yes
 
 PERMIT_PACKAGE_CDROM=	Yes
 
