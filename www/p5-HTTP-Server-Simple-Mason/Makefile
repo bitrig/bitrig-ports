@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/03/11 11:44:46 espie Exp $
+# $OpenBSD: Makefile,v 1.10 2015/01/21 14:43:33 sthen Exp $
 
 COMMENT=	abstract baseclass for a standalone mason server
 
@@ -6,7 +6,6 @@ MODULES=	cpan
 DISTNAME=	HTTP-Server-Simple-Mason-0.14
 REVISION=	0
 CATEGORIES=	www
-USE_GROFF =	Yes
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes
