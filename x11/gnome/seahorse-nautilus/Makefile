@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2014/10/13 09:41:22 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.18 2015/01/21 09:09:44 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -6,7 +6,7 @@ COMMENT=	GnuPG extension for nautilus(1)
 
 GNOME_PROJECT=	seahorse-nautilus
 GNOME_VERSION=	3.10.1
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	security
 
@@ -25,15 +25,19 @@ WANTLIB += pixman-1 png pthread pthread-stubs xcb xcb-render xcb-shm
 WANTLIB += z
 WANTLIB += c++ c++abi
 
-LIB_DEPENDS=	x11/gnome/gcr \
-		x11/gnome/nautilus \
-		x11/gnome/libcryptui
-
 MODULES=	devel/gettext \
 		x11/gnome \
 		devel/dconf
 
 MODGNOME_TOOLS=	desktop-file-utils
+
+LIB_DEPENDS=	x11/gnome/gcr \
+		x11/gnome/nautilus \
+		x11/gnome/libcryptui
+
+# security/gpgme depends on either gnupg-1 or gnupg-2; we want 1.X
+BUILD_DEPENDS+=	security/gnupg
+RUN_DEPENDS+=	security/gnupg
 
 post-install:
 	rm ${PREFIX}/lib/nautilus/extensions-3.0/*.{a,la}
