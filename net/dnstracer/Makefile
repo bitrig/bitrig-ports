@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/03/11 11:35:46 espie Exp $
+# $OpenBSD: Makefile,v 1.15 2015/01/22 12:52:46 naddy Exp $
 
 DISTNAME=	dnstracer-1.9
 REVISION=	0
@@ -14,6 +14,5 @@ HOMEPAGE=	http://www.mavetju.org/unix/dnstracer.php
 MASTER_SITES=	http://www.mavetju.org/download/
 
 CONFIGURE_STYLE= gnu
-USE_GROFF =	Yes
 
 .include <bsd.port.mk>
