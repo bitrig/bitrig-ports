@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 11:35:47 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2015/01/22 21:17:47 naddy Exp $
 
 COMMENT=		ssh through https proxy tunnel
 
@@ -13,7 +13,6 @@ HOMEPAGE=		http://www.nazgul.ch/dev.html
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c
 
-USE_GROFF =		Yes
 NO_TEST=		Yes
 
 post-extract:
