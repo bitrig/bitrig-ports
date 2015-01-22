@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.11 2013/10/05 12:30:45 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2015/01/22 20:22:17 rpe Exp $
 
 COMMENT=	simple password generator
 
-DISTNAME=	pwgen-2.06
-REVISION =	1
+DISTNAME=	pwgen-2.07
 CATEGORIES=	security
 
 HOMEPAGE=	http://sourceforge.net/projects/pwgen/
@@ -14,7 +13,7 @@ MASTER_SITES= 	${MASTER_SITE_SOURCEFORGE:=pwgen/}
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c
 
-AUTOCONF_VERSION=2.13
+AUTOCONF_VERSION=2.69
 CONFIGURE_STYLE=autoconf
 MAKE_FLAGS=	WALL_OPTS=""
 
