@@ -1,12 +1,25 @@
-$OpenBSD: patch-third_party_WebKit_Source_wtf_MathExtras_h,v 1.1 2014/10/13 06:49:19 robert Exp $
---- third_party/WebKit/Source/wtf/MathExtras.h.orig.port	Thu Jan  1 18:41:07 2015
-+++ third_party/WebKit/Source/wtf/MathExtras.h	Thu Jan  1 18:40:55 2015
-@@ -61,7 +61,7 @@ inline double wtf_ceil(double x) { return copysign(cei
- 
- #endif
+$OpenBSD: patch-third_party_WebKit_Source_wtf_MathExtras_h,v 1.2 2015/01/22 11:16:41 robert Exp $
+--- third_party/WebKit/Source/wtf/MathExtras.h.orig.port	Sat Dec  6 11:51:36 2014
++++ third_party/WebKit/Source/wtf/MathExtras.h	Sat Dec  6 11:51:43 2014
+@@ -53,21 +53,6 @@ const float piOverFourFloat = static_cast<float>(M_PI_
+ const double twoPiDouble = piDouble * 2.0;
+ const float twoPiFloat = piFloat * 2.0f;
  
 -#if OS(OPENBSD)
-+#if OS(OPENBSD) && !defined(__Bitrig__)
+-
+-namespace std {
+-
+-#ifndef isfinite
+-inline bool isfinite(double x) { return finite(x); }
+-#endif
+-#ifndef signbit
+-inline bool signbit(double x) { struct ieee_double *p = (struct ieee_double *)&x; return p->dbl_sign; }
+-#endif
+-
+-} // namespace std
+-
+-#endif
+-
+ #if COMPILER(MSVC) && (_MSC_VER < 1800)
  
- namespace std {
- 
+ // We must not do 'num + 0.5' or 'num - 0.5' because they can cause precision loss.
