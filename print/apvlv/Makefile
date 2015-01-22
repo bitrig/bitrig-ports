@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.11 2013/08/07 21:32:31 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2015/01/22 13:11:44 naddy Exp $
 
 COMMENT=	lightweight PDF document viewer with vi bindings
 
 DISTNAME=	apvlv-0.0.9.6
-REVISION=	8
+REVISION=	9
 CATEGORIES=	print
 HOMEPAGE=	https://code.google.com/p/apvlv/
 
@@ -29,7 +29,5 @@ LIB_DEPENDS=	x11/gtk+2 \
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS+=	--without-djvu
 FAKE_FLAGS =		sysconfdir=${PREFIX}/share/examples/apvlv
-USE_GROFF =		Yes
-MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/scripts
 
 .include <bsd.port.mk>
