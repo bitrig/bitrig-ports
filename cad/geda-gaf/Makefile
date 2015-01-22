@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/04/20 02:50:16 bentley Exp $
+# $OpenBSD: Makefile,v 1.16 2015/01/22 17:47:50 naddy Exp $
 
 COMMENT =		suite of tools for electronic design automation
 DISTNAME =		geda-gaf-1.6.0
@@ -8,7 +8,6 @@ HOMEPAGE =		http://geda.seul.org
 REVISION =		8
 
 SHARED_LIBS = 		geda	0.0	# 38.0
-USE_GROFF =	Yes
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

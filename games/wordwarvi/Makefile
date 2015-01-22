@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:07:41 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2015/01/22 17:47:51 naddy Exp $
 
 COMMENT =		editor war arcade game
 
@@ -30,7 +30,6 @@ LIB_DEPENDS =		audio/libvorbis \
 
 MAKE_FLAGS=		CC="${CC}" BUILD_CC=${CC}
 USE_GMAKE =		Yes
-USE_GROFF =		Yes
 
 NO_TEST =		Yes
 

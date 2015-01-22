@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2014/04/20 10:00:21 jasper Exp $
+# $OpenBSD: Makefile,v 1.21 2015/01/22 17:47:50 naddy Exp $
 
 COMMENT=	premier dockable radio tuner
 
@@ -15,7 +15,6 @@ WANTLIB=		X11 Xext Xpm c
 MASTER_SITES=		${HOMEPAGE}dl/
 
 MAKE_ENV=		CC="${CC}"
-USE_GROFF =		Yes
 
 WRKDIST=		${WRKDIR}/wmtune-1.0.1-combined/
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2015/01/21 06:13:48 bentley Exp $
+# $OpenBSD: Makefile,v 1.19 2015/01/22 17:47:51 naddy Exp $
 
 COMMENT=	breakout game for the X Window System
 
@@ -13,8 +13,6 @@ HOMEPAGE=	http://xbreaky.sourceforge.net/
 PERMIT_PACKAGE_CDROM=   Yes
 WANTLIB=		X11 Xpm c m pthread-stubs sndio xcb
 WANTLIB+=		c++ c++abi
-
-USE_GROFF =	Yes
 
 NO_TEST=	Yes
 

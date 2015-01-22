@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2013/10/11 20:39:22 naddy Exp $
+# $OpenBSD: Makefile,v 1.30 2015/01/22 17:47:51 naddy Exp $
 
 BROKEN=			needs work on bitrig
 
@@ -19,7 +19,6 @@ MASTER_SITES=		${MASTER_SITE_XCONTRIB:=editors/}
 EXTRACT_SUFX=		.tar.Z
 
 CONFIGURE_STYLE=	imake
-USE_GROFF =		Yes
 NO_TEST=		Yes
 
 .include <bsd.port.mk>

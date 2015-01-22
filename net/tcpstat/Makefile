@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/03/11 11:35:57 espie Exp $
+# $OpenBSD: Makefile,v 1.10 2015/01/22 17:47:51 naddy Exp $
 
 COMMENT=	report network interface statistics
 
@@ -13,7 +13,6 @@ HOMEPAGE=	http://www.frenchfries.net/paul/tcpstat/
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c m pcap 
 
-USE_GROFF =	Yes
 CONFIGURE_STYLE= gnu
 
 post-install:
