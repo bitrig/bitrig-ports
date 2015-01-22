@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2014/11/06 19:10:07 sthen Exp $
+# $OpenBSD: Makefile,v 1.22 2015/01/22 18:41:16 naddy Exp $
 
 COMMENT=		powerful descriptive vector graphics language
 BROKEN-hppa=		ghostscript segfaults during build
@@ -35,7 +35,6 @@ LIB_DEPENDS=		devel/boehm-gc \
 			devel/readline
 
 USE_GMAKE=		Yes
-USE_GROFF =		Yes
 
 # XXX eats all memory
 .if ${MACHINE_ARCH:Msparc64}

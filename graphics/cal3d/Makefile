@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/03/25 21:20:39 espie Exp $
+# $OpenBSD: Makefile,v 1.10 2015/01/22 18:41:16 naddy Exp $
 
 COMMENT =	skeletal based character animation library
 DISTNAME =	cal3d-0.11.0
@@ -17,8 +17,6 @@ WANTLIB =	c m
 WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES =	http://download.gna.org/cal3d/sources/
-
-USE_GROFF =	Yes
 
 CONFIGURE_STYLE=gnu
 
