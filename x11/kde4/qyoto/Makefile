@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/01/20 21:58:44 zhuk Exp $
+# $OpenBSD: Makefile,v 1.11 2015/01/22 22:06:39 zhuk Exp $
 
 CATEGORIES =	devel
 COMMENT =	Qt4 bindings for .NET/Mono
