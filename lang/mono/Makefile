@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.87 2014/12/30 18:47:31 robert Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	cross platform, open source .NET developement framework
 
 DISTNAME=	mono-3.10.0
