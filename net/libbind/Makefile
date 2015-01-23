@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/12/01 08:45:33 sthen Exp $
+# $OpenBSD: Makefile,v 1.17 2015/01/23 11:54:55 sthen Exp $
 
 COMMENT=	BIND stub resolver library
 
