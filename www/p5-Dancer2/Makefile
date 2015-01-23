@@ -6,8 +6,6 @@ MODULES =		cpan
 DISTNAME =		Dancer2-0.158000
 CATEGORIES =		www
 
-MAINTAINER =		Cesare Gargano <gar@plusiagamma.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

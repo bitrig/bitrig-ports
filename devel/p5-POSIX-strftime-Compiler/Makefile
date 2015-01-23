@@ -6,8 +6,6 @@ MODULES =	cpan
 DISTNAME =	POSIX-strftime-Compiler-0.41
 CATEGORIES =	devel
 
-MAINTAINER =	Cesare Gargano <gar@plusiagamma.org>
-
 CONFIGURE_STYLE =	modbuild
 
 # Perl

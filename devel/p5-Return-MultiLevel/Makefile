@@ -6,8 +6,6 @@ MODULES =		cpan
 DISTNAME =		Return-MultiLevel-0.04
 CATEGORIES =		devel
 
-MAINTAINER =		Cesare Gargano <gar@plusiagamma.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

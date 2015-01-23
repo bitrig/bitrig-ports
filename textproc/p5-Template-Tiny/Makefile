@@ -8,8 +8,6 @@ CATEGORIES =	textproc
 
 REVISION =	0
 
-MAINTAINER =	Cesare Gargano <gar@plusiagamma.org>
-
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 

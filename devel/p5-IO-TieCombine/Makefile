@@ -6,8 +6,6 @@ MODULES =	cpan
 DISTNAME =	IO-TieCombine-1.004
 CATEGORIES =	devel
 
-MAINTAINER =	Sergey Bronnikov <estetus@gmail.com>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

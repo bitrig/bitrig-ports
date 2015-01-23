@@ -9,8 +9,6 @@ CATEGORIES =		games
 
 HOMEPAGE =		http://garden.sourceforge.net
 
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
-
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 

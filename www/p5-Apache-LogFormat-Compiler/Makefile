@@ -6,8 +6,6 @@ MODULES =		cpan
 DISTNAME =		Apache-LogFormat-Compiler-0.32
 CATEGORIES =		www
 
-MAINTAINER =		Cesare Gargano <gar@plusiagamma.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

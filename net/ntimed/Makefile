@@ -6,8 +6,6 @@ DISTNAME=	ntimed-0.0.2015.01.17
 CATEGORIES=	net
 HOMEPAGE=	https://github.com/bsdphk/Ntimed
 
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 

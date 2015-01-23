@@ -6,8 +6,6 @@ MODULES =	cpan
 DISTNAME =	MooX-Types-MooseLike-0.27
 CATEGORIES =	devel
 
-MAINTAINER =	Sergey Bronnikov <estetus@gmail.com>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

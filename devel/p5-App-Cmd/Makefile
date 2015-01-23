@@ -6,8 +6,6 @@ MODULES =		cpan
 DISTNAME =		App-Cmd-0.326
 CATEGORIES =		devel
 
-MAINTAINER =		Sergey Bronnikov <estetus@gmail.com>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 
