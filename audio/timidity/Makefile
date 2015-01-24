@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.45 2014/12/09 20:45:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.46 2015/01/24 11:07:57 schwarze Exp $
 
 COMMENT=	MIDI to WAV renderer and player
 
@@ -34,7 +34,6 @@ CONFIGURE_ARGS= --enable-audio=sndio \
 
 MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/autoconf
 
-USE_GROFF =	Yes
 FLAVORS=	gtk2 xaw
 FLAVOR?=
 
