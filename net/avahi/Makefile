@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.101 2014/12/31 11:53:54 jasper Exp $
+# $OpenBSD: Makefile,v 1.102 2015/01/24 16:56:39 ajacoutot Exp $
 
 ONLY_FOR_ARCHS-mono=	${MONO_ARCHS}
 
@@ -26,15 +26,15 @@ PKGNAME-qt3=		avahi-qt3-${V}
 PKGNAME-qt4=		avahi-qt4-${V}
 PKGNAME-ui=		avahi-ui-${V}
 
-REVISION-main=		15
-REVISION-gtk=		6
-REVISION-gtk3=		6
-REVISION-gui=		9
-REVISION-mono=		3
-REVISION-qt3=		5
-REVISION-qt4=		5
-REVISION-ui=		4
-REVISION-python=	1
+REVISION-main=		16
+REVISION-gtk=		7
+REVISION-gtk3=		7
+REVISION-gui=		10
+REVISION-mono=		4
+REVISION-qt3=		6
+REVISION-qt4=		6
+REVISION-ui=		5
+REVISION-python=	2
 
 SHARED_LIBS +=  avahi-common         0.0      # .8.0
 SHARED_LIBS +=  avahi-core           0.0      # .5.5
@@ -183,7 +183,7 @@ MODULES+=		x11/qt3
 LIB_DEPENDS-qt3=	${MODGETTEXT_LIB_DEPENDS} \
 			${MODQT3_LIB_DEPENDS} \
 			${BUILD_PKGPATH}
-		
+
 WANTLIB-qt3 += GL ICE SM X11 Xcursor Xext Xfixes Xft Xi
 WANTLIB-qt3 += Xinerama Xmu Xrandr Xrender Xt expat fontconfig
 WANTLIB-qt3 += freetype jpeg lcms m mng png pthread xcb z
