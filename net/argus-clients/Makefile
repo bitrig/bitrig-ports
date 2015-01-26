@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.11 2013/03/11 11:35:45 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2015/01/26 13:13:58 steven Exp $
 
 COMMENT =	utilities to read and parse Argus data
 
-DISTNAME =	argus-clients-3.0.6.2
+DISTNAME =	argus-clients-3.0.8
 CATEGORIES =	net
 
 REVISION=	1
@@ -13,7 +13,7 @@ MASTER_SITES =	${HOMEPAGE}/src/
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB =	c m ncurses readline z
+WANTLIB =	c m ncurses readline z pthread ft
 
 NO_TEST =	Yes
 
@@ -24,7 +24,8 @@ CC =	cc
 CXX =	${CC}
 
 CONFIGURE_STYLE = 	gnu
-CONFIGURE_ARGS +=	--with-libft=${LOCALBASE} \
+CONFIGURE_ENV =		LOCALBASE=${LOCALBASE}
+CONFIGURE_ARGS +=	--with-libft=yes \
 			--without-mysql \
 			--without-GeoIP \
 			--without-sasl
@@ -32,7 +33,7 @@ MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/config
 BUILD_DEPENDS =	devel/bison
 USE_GROFF =	Yes
 
-MAKE_FLAGS =	CCOPT="${CFLAGS}"
+MAKE_FLAGS =	CCOPT="${CFLAGS}" COMPATLIB="-lm -lz -L${LOCALBASE}/lib -lft"
 FAKE_FLAGS =	docdir=${PREFIX}/share/doc/argus-clients/
 
 post-extract:
@@ -41,6 +42,7 @@ post-extract:
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/argus/
 		mv ${PREFIX}/argus/* ${PREFIX}/share/argus/
+	rmdir ${PREFIX}/argus
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/argus-clients/
 	cd ${WRKSRC}/support && tar cf - . | \
 		tar -C ${PREFIX}/share/examples/argus-clients/ -xf -
