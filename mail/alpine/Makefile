@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.30 2014/08/30 08:56:04 miod Exp $
+# $OpenBSD: Makefile,v 1.31 2015/01/27 13:38:05 ajacoutot Exp $
 
 COMMENT-main=		UW e-mail client
 COMMENT-c-client=	UW c-client mail access routines
@@ -7,11 +7,11 @@ COMMENT-mailutil=	UW IMAP4rev1/POP2/POP3 mail utility
 COMMENT-pico=		UW text editor
 COMMENT-pilot=		UW file system navigator
 
-V=			2.11
+V=			2.20
 DISTNAME=		alpine-${V}
 EXTRACT_SUFX=		.tar.xz
 
-SHARED_LIBS=		c-client 6.0
+SHARED_LIBS=		c-client 7.0
 
 # grep "PICO version" ${WRKSRC}/pico/pico.h
 PICO_V=			5.07
@@ -25,12 +25,8 @@ PKGNAME-mailutil=	mailutil-uw-${V}
 PKGNAME-pico=		pico-${PICO_V}
 PKGNAME-pilot=		pilot-${PILOT_V}
 
-REVISION-main=		7
-REVISION-mailutil=	7
-REVISION-imap=		8
-REVISION-pico=		7
-REVISION-pilot=		15
-REVISION-c-client=	4
+REVISION-pico=		8
+REVISION-pilot=		16
 
 FLAVORS=		passfile
 FLAVOR?=
@@ -95,6 +91,7 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--with-debug-level=0 \
 			--without-ldap \
 			--without-tcl \
+			--without-npa \
 			--enable-quotas \
 			--disable-debug
 
@@ -112,7 +109,7 @@ HEADERS=		c-client.h dummy.h env.h env_unix.h fdstring.h \
 post-install:
 	# alpine, pico, pilot
 	${INSTALL_DATA_DIR} ${PREFIX}/share/{doc,examples}/alpine
-	${INSTALL_DATA} ${WRKSRC}/doc/tech-notes.txt \
+	${INSTALL_DATA} ${WRKSRC}/doc/tech-notes/tech-notes.txt \
 		${WRKSRC}/doc/mailcap.unx \
 		${WRKSRC}/doc/mime.types \
 		${PREFIX}/share/doc/alpine
