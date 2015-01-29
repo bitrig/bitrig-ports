@@ -7,6 +7,7 @@ SHARED_ONLY =	Yes
 V =		3.5.6
 DISTNAME =	syslog-ng-$V
 CATEGORIES =	sysutils
+REVISION =	0
 
 HOMEPAGE =	http://www.balabit.com/network-security/syslog-ng/
 
