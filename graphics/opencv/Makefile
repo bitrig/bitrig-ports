@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2015/01/26 21:59:55 zhuk Exp $
+# $OpenBSD: Makefile,v 1.34 2015/01/30 21:38:37 zhuk Exp $
 
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 ONLY_FOR_ARCHS-java =	amd64 i386
@@ -15,7 +15,8 @@ PKGNAME-main =		${PKGNAME}
 REVISION =		0
 PKGNAME-docs =		opencv-docs-$V
 PKGNAME-java =		opencv-java-$V
-REVISION-main =		0
+REVISION-main =		1
+REVISION-java =		0
 
 HOMEPAGE =		http://www.opencv.org/
 
@@ -46,8 +47,8 @@ WANTLIB-main =  Half Iex IlmImf IlmThread Imath X11 Xcomposite Xcursor
 WANTLIB-main += Xdamage Xext Xfixes Xi Xinerama Xrandr Xrender atk-1.0
 WANTLIB-main += avcodec avformat avutil bz2 c cairo fontconfig
 WANTLIB-main += freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0
-WANTLIB-main += gmodule-2.0 gobject-2.0 gstapp-0.10 gstbase-0.10
-WANTLIB-main += gstreamer-0.10 gstvideo-0.10 gthread-2.0 gtk-x11-2.0
+WANTLIB-main += gobject-2.0 gstapp-1.0 gstbase-1.0 gstpbutils-1.0
+WANTLIB-main += gstreamer-1.0 gstriff-1.0 gstvideo-1.0 gthread-2.0 gtk-x11-2.0
 WANTLIB-main += jasper jpeg m pango-1.0 pangocairo-1.0
 WANTLIB-main += pangoft2-1.0 png pthread swscale tiff xml2 z
 WANTLIB-main += ${MODGETTEXT_WANTLIB} ${MODPY_WANTLIB}
@@ -60,6 +61,7 @@ WANTLIB-java += opencv_calib3d opencv_contrib opencv_core
 WANTLIB-java += opencv_features2d opencv_flann opencv_highgui
 WANTLIB-java += opencv_imgproc opencv_ml opencv_objdetect
 WANTLIB-java += opencv_photo opencv_video
+WANTLIB-java += opencv_gpu opencv_legacy opencv_nonfree opencv_ocl
 WANTLIB-java += c++ c++abi
 
 MULTI_PACKAGES =	-main -docs -java
@@ -90,7 +92,7 @@ RUN_DEPENDS-java =	${MODJAVA_RUN_DEPENDS}
 
 LIB_DEPENDS-main =	${LIB_DEPENDS} \
 			${MODPY_LIB_DEPENDS} \
-			multimedia/gstreamer-0.10/plugins-base \
+			multimedia/gstreamer1/plugins-base \
 			x11/gtk+2 \
 			graphics/ffmpeg \
 			graphics/ilmbase \
