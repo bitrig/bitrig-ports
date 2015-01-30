@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/05/13 12:57:41 sthen Exp $
+# $OpenBSD: Makefile,v 1.13 2015/01/30 13:34:40 jasper Exp $
 
 COMMENT=		extracts files from Microsoft CAB archives
 
