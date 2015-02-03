@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.13 2014/10/01 06:29:04 jasper Exp $
+# $OpenBSD: Makefile,v 1.14 2015/02/03 15:49:42 abieber Exp $
 
 COMMENT =	sqlite3 bindings for Node.js
 
 NPM_VERSION =	2.2.3
 NPM_NAME =	sqlite3
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	databases
 
@@ -33,6 +33,6 @@ SUBST_VARS=	M
 NO_TEST =	Yes
 
 pre-configure:
-	${SUBST_CMD} ${WRKDIST}/binding.gyp  
+	${SUBST_CMD} ${WRKDIST}/binding.gyp
 
 .include <bsd.port.mk>
