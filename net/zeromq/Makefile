@@ -14,8 +14,6 @@ SHARED_LIBS +=  zmq                  4.0      # 4.0
 CATEGORIES =		net
 HOMEPAGE =		http://zeromq.org/
 
-MAINTAINER =		Rodrigo Mosconi <openbsd@mosconi.mat.br>
-
 # LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 

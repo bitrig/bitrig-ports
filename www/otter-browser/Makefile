@@ -19,8 +19,6 @@ CATEGORIES =		www
 
 HOMEPAGE =		http://otter-browser.org/
 
-MAINTAINER =		Adam Wolk <adam.wolk@koparo.com>
-
 # License GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -6,8 +6,6 @@ MODULES =		cpan
 DISTNAME =		Dancer2-Plugin-Database-2.12
 CATEGORIES =		www
 
-MAINTAINER =		Cesare Gargano <gar@plusiagamma.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

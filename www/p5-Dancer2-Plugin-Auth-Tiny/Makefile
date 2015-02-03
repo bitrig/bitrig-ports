@@ -6,8 +6,6 @@ MODULES =		cpan
 DISTNAME =		Dancer2-Plugin-Auth-Tiny-0.005
 CATEGORIES =		www
 
-MAINTAINER =		Cesare Gargano <gar@plusiagamma.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -15,8 +15,6 @@ CATEGORIES=		net
 
 HOMEPAGE=		http://netatalk.sourceforge.net/
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
