@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.51 2014/12/09 22:51:35 rpe Exp $
+# $OpenBSD: Makefile,v 1.52 2015/02/06 21:37:04 naddy Exp $
 
 COMMENT=	extract, list & test files in a ZIP archive
 
