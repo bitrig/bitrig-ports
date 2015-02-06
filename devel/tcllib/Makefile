@@ -3,7 +3,6 @@
 COMMENT =	Tcl Standard Library
 
 DISTNAME =	tcllib-1.16pl0
-REVISION =	0
 CATEGORIES =	devel lang/tcl
 HOMEPAGE =	http://sourceforge.net/projects/tcllib/
 REVISION =	2

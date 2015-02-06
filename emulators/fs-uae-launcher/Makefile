@@ -5,7 +5,6 @@ COMMENT =		launcher for the FS-UAE Amiga emulator
 MODPY_EGG_VERSION =	2.4.0
 REVISION =		0
 DISTNAME =		fs-uae-launcher-${MODPY_EGG_VERSION}
-REVISION =		0
 CATEGORIES =		emulators x11
 HOMEPAGE =		http://fs-uae.net
 

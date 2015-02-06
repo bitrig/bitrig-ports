@@ -9,8 +9,6 @@ PKGNAME=		pjsua-${VERSION}
 EXTRACT_SUFX=		.tar.bz2
 CATEGORIES=		telephony
 
-REVISION=		0
-
 HOMEPAGE=		http://www.pjsip.org/
 MASTER_SITES=		${HOMEPAGE}release/${VERSION}/
 

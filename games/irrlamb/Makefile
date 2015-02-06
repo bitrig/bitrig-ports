@@ -4,7 +4,6 @@ V =		0.1.1
 COMMENT =	third person, 3D physics game
 DISTNAME =	irrlamb-${V}-src
 PKGNAME =	irrlamb-${V}
-REVISION =	0
 CATEGORIES =	games x11
 REVISION =	1
 

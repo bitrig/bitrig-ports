@@ -5,7 +5,6 @@ COMMENT=	stack-based interpreter for terminal applications
 DISTNAME=	slang-2.2.4
 REVISION=	0
 PKGNAME=	lib${DISTNAME}
-REVISION=	0
 SHARED_LIBS=	slang 16.0
 
 CATEGORIES=	devel

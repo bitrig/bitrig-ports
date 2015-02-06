@@ -5,7 +5,6 @@ COMMENT=	system monitoring daemon
 DISTNAME=	monitord-1.93
 REVISION=	0
 CATEGORIES=	sysutils
-REVISION=	0
 
 HOMEPAGE=	http://www.estpak.ee/~risto/monitord/
 

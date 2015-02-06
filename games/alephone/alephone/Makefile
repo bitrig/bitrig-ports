@@ -5,11 +5,10 @@ COMMENT =		open source game engine based on Marathon 2: Durandal
 
 DISTNAME =		AlephOne-20140104
 PKGNAME =		alephone-1.1
-REVISION =		0
 
 EXTRACT_SUFX =		.tar.bz2
 CATEGORIES =		games x11
-REVISION =	1
+REVISION =		1
 
 HOMEPAGE =		http://source.bungie.org
 

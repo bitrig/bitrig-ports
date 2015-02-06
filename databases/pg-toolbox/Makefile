@@ -7,7 +7,6 @@ REVISION=	0
 CATEGORIES=	databases sysutils
 
 HOMEPAGE=	http://pg-toolbox.projects.postgresql.org/
-REVISION=	0
 
 # BSD / Zlib
 PERMIT_PACKAGE_CDROM=	Yes

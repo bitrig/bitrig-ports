@@ -5,7 +5,6 @@ COMMENT=	library for handling microsoft compression formats
 DISTNAME=	libmspack-0.4alpha
 REVISION=	0
 EPOCH=		0
-REVISION=	0
 SHARED_LIBS +=  mspack               3.0      # 1.0
 CATEGORIES=	archivers
 

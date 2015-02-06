@@ -5,7 +5,6 @@
 PKG_ARCH=	*
 
 COMMENT=	GNUstep makefile package
-REVISION =	0
 
 DISTNAME =	gnustep-make-2.6.6
 REVISION =	0

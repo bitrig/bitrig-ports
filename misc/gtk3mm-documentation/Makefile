@@ -7,7 +7,6 @@ GNOME_VERSION=		3.12.0
 REVISION=		0
 
 PKGNAME=		gtk3mm-documentation-${GNOME_VERSION}
-REVISION=		0
 
 CATEGORIES=		misc devel
 

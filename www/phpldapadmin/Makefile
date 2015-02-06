@@ -3,7 +3,6 @@
 COMMENT=	web-based LDAP browser to manage LDAP servers
 
 VERSION=	1.2.3
-REVISION=	0
 DISTNAME=	phpldapadmin-${VERSION}
 CATEGORIES=	www
 HOMEPAGE=	http://phpldapadmin.sourceforge.net/

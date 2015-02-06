@@ -4,7 +4,6 @@ COMMENT =	manual tiling window manager
 DISTNAME =	herbstluftwm-0.6.2
 REVISION =	0
 CATEGORIES =	x11
-REVISION =	0
 
 HOMEPAGE =	http://herbstluftwm.org/
 

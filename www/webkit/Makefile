@@ -14,7 +14,6 @@ EPOCH =		1
 CATEGORIES =	www
 DPB_PROPERTIES =parallel
 EXTRACT_SUFX =	.tar.xz
-REVISION =	0
 
 HOMEPAGE =	http://webkitgtk.org/
 MASTER_SITES =	${HOMEPAGE}/releases/

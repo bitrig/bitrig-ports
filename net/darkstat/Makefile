@@ -7,7 +7,6 @@ REVISION=		0
 CATEGORIES=		net www
 MASTER_SITES=		${HOMEPAGE}
 EXTRACT_SUFX=		.tar.bz2
-REVISION=		0
 
 HOMEPAGE=		http://unix4lyfe.org/darkstat/
 

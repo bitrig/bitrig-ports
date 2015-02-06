@@ -8,7 +8,6 @@ REVISION=		0
 
 DISTNAME=		libiodbc-$V
 PKGNAME=		iodbc-$V
-REVISION=		0
 PKGNAME-main=		iodbc-$V
 PKGNAME-admin=		iodbc-admin-$V
 

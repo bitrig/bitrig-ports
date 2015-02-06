@@ -6,7 +6,6 @@ DISTNAME=	kissd-0.3
 REVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.benzedrine.ch/
-REVISION=	0
 
 HOMEPAGE=	http://www.benzedrine.ch/kissd.html
 

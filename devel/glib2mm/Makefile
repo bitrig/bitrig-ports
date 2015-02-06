@@ -8,7 +8,6 @@ COMMENT=	C++ interface for glib2
 GNOME_PROJECT=	glibmm
 GNOME_VERSION=	2.42.0
 PKGNAME=	glib2mm-${GNOME_VERSION}
-REVISION=	0
 
 V=		2.4
 SUBST_VARS=	V

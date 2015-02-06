@@ -5,7 +5,6 @@ COMMENT=		Foomatic PPD generator
 DISTNAME=		foomatic-db-engine-4.0.11
 REVISION=		0
 CATEGORIES=		print
-REVISION=		0
 
 HOMEPAGE=		http://www.linux-foundation.org/en/OpenPrinting/Database/Foomatic
 

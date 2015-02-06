@@ -5,7 +5,6 @@ COMMENT =	PHP extension for parsing and working with rfc822/MIME mail
 DISTNAME =	mailparse-2.1.6
 REVISION =	0
 CATEGORIES =	mail
-REVISION =	0
 
 # PHP
 PERMIT_PACKAGE_CDROM =	Yes

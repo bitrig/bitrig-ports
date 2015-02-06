@@ -4,7 +4,6 @@ COMMENT =		CD/DVD creator
 DISTNAME =		k3b-2.0.2
 REVISION =		0
 CATEGORIES =		multimedia
-REVISION =		0
 
 # bump away from KDE3 version
 SHARED_LIBS =		k3blib		50.0

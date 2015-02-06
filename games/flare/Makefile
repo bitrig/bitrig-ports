@@ -4,7 +4,6 @@ COMMENT =		free/libre action roleplaying engine
 
 V =			0.19
 PKGNAME =		flare-${V}
-REVISION =		0
 
 CATEGORIES =		games
 

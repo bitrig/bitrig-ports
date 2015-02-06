@@ -12,7 +12,6 @@ REVISION=	0
 
 DISTNAME=	${GH_PROJECT}-${GH_TAGNAME}
 PKGNAME=	lua-${DISTNAME}
-REVISION=	0
 CATEGORIES=	devel
 
 HOMEPAGE=	https://github.com/pavouk/lgi

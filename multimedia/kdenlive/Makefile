@@ -5,7 +5,6 @@ VERSION =		0.9.8
 REVISION =		0
 DISTNAME =		kdenlive-${VERSION}
 CATEGORIES =		multimedia
-REVISION =		0
 
 HOMEPAGE =		http://www.kdenlive.org/
 

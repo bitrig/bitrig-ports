@@ -5,7 +5,6 @@ COMMENT =		fast, optionally sandboxed, Python template engine
 MODPY_EGG_VERSION =	2.7.3
 DISTNAME =		Jinja2-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME:L}
-REVISION =		0
 
 REVISION =		1
 

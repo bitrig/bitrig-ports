@@ -3,7 +3,6 @@
 COMMENT =		locate directory of original program
 
 DISTNAME =		FindBin-0.0.5
-REVISION =		4
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/audreyt/findbin
 REVISION =		5

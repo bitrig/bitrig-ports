@@ -5,7 +5,6 @@ COMMENT=	small daemon for DNSBLs
 DISTNAME=	rbldnsd-0.997a
 REVISION=	0
 CATEGORIES=	net
-REVISION=	0
 
 HOMEPAGE=	http://www.corpit.ru/mjt/rbldnsd.html
 

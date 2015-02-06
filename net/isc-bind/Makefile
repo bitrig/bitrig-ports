@@ -6,7 +6,6 @@ V=		9.10.1-P1
 REVISION=	2
 DISTNAME=	bind-$V
 PKGNAME=	isc-bind-${V:S/-P/pl/}
-REVISION=	0
 
 SHARED_LIBS +=	isc                  2.0      # 146.0
 SHARED_LIBS +=	isccc                0.0      # 140.1

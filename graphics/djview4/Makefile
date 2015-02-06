@@ -3,7 +3,6 @@
 COMMENT=	portable DjVu viewer and browser plugin
 
 DISTNAME=	djview-4.9
-REVISION=	0
 PKGNAME=	${DISTNAME:S/djview/djview4/}
 REVISION=	1
 CATEGORIES=	graphics print

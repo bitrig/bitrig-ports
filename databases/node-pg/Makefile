@@ -6,7 +6,6 @@ NPM_VERSION =	2.8.2
 NPM_NAME =	pg
 REVISION =	1
 CATEGORIES =	databases
-REVISION =	1
 
 HOMEPAGE =	https://github.com/brianc/node-postgres
 

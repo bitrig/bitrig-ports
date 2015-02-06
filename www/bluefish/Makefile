@@ -6,7 +6,6 @@ DISTNAME =	bluefish-2.2.5
 REVISION =	1
 CATEGORIES=	www editors
 HOMEPAGE=	http://bluefish.openoffice.nl/
-REVISION =	0
 
 MASTER_SITES=	http://www.bennewitz.com/bluefish/stable/source/
 

@@ -7,7 +7,6 @@ KDEVPLAT_V =	1.6.0
 DISTNAME =	kdevelop-${KDEV_V}
 REVISION =	0
 HOMEPAGE =	http://www.kdevelop.org/
-REVISION =	0
 
 SHARED_LIBS =	kdev4cmakecommon	0.0
 SHARED_LIBS +=	kdev4cppduchain		0.0

@@ -7,7 +7,6 @@ COMMENT =		improved opensource version of Dune 2
 DISTNAME =		dunelegacy-0.96.3-src
 REVISION =		1
 PKGNAME =		${DISTNAME:S/-src//}
-REVISION =		0
 
 CATEGORIES =		games x11
 

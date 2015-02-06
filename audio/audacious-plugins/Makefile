@@ -5,7 +5,6 @@ SHARED_ONLY =		Yes
 COMMENT =		input and output plugins for Audacious
 
 V =			3.5.2
-REVISION =		0
 
 DISTNAME =		audacious-plugins-$V
 CATEGORIES =		audio multimedia

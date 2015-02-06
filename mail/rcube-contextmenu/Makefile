@@ -11,7 +11,6 @@ PKGNAME=	rcube-${DISTNAME}
 REVISION=	0
 CATEGORIES=	mail www
 HOMEPAGE=	http://www.tehinterweb.co.uk/roundcube/\#picontextmenu
-REVISION=	0
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

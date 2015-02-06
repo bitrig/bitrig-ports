@@ -6,7 +6,6 @@ V =			0.1.1
 REVISION =		0
 DISTNAME =		residualvm-${V}-sources
 PKGNAME =		residualvm-${V}
-REVISION =		0
 
 CATEGORIES =		games
 

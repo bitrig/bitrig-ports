@@ -10,7 +10,6 @@ PKGNAME-main=	transmission-${VER}
 REVISION=	0
 PKGNAME-gtk=	transmission-gtk-${VER}
 PKGNAME-qt=	transmission-qt-${VER}
-REVISION=	0
 CATEGORIES=	net
 HOMEPAGE=	http://www.transmissionbt.com/
 

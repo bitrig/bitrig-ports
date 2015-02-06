@@ -9,7 +9,6 @@ COMMENT =	scalable, high-performance document-oriented database
 
 DISTNAME =	mongodb-src-r2.6.4
 PKGNAME =	${DISTNAME:S/src-r//}
-REVISION =	0
 CATEGORIES =	databases
 
 REVISION =	1

@@ -6,7 +6,6 @@ DISTNAME=	xmlto-0.0.26
 REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	textproc
-REVISION=	0
 
 HOMEPAGE=	https://fedorahosted.org/xmlto/
 

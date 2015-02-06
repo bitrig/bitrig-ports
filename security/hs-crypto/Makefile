@@ -8,7 +8,6 @@ DISTNAME =	Crypto-$V
 REVISION =	0
 # Historically named with a lower case `c'.
 PKGNAME =	hs-crypto-$V
-REVISION =	0
 
 # 3 different licenses from 3 authors: BSD, GPL, BSD-ish
 PERMIT_PACKAGE_CDROM =	Yes

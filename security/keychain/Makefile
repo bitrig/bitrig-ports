@@ -6,8 +6,6 @@ DISTNAME=		keychain-2.7.1
 REVISION=		0
 CATEGORIES=		security
 
-REVISION=		0
-
 HOMEPAGE=		http://docs.funtoo.org/wiki/Keychain
 
 # GPLv2

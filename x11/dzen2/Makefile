@@ -8,7 +8,6 @@ DISTNAME=		dzen2-$V
 PKGNAME-main=		${DISTNAME}
 REVISION=		0
 PKGNAME-gadgets=	dzen2-gadgets-$V
-REVISION=		0
 CATEGORIES=		x11
 
 HOMEPAGE=		https://github.com/robm/dzen

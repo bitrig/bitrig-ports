@@ -7,7 +7,6 @@ V =		2.0.6
 PKGNAME =	pecl-${_PECLMOD}-${V}
 REVISION =	0
 DISTNAME =	pecl_${_PECLMOD}-${V}
-REVISION =	0
 
 # PHP
 PERMIT_PACKAGE_CDROM =	Yes

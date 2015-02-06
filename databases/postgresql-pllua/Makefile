@@ -8,7 +8,6 @@ VERSION =		1.0
 REVISION =		0
 DISTNAME =		pllua-${VERSION}
 PKGNAME =		postgresql-pllua-${VERSION}
-REVISION =	0
 
 CATEGORIES =		databases
 
