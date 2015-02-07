@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.4 2014/10/17 15:10:23 sthen Exp $
+# $OpenBSD: Makefile,v 1.5 2015/02/07 21:52:57 sthen Exp $
 
 COMMENT=	create and manage certificates, CSRs, keys, etc
 
-DISTNAME=	xca-0.9.3
-REVISION=	3
+DISTNAME=	xca-1.1.0
 CATEGORIES=	security x11
 
 HOMEPAGE=	http://xca.sourceforge.net/
@@ -17,9 +16,15 @@ MODULES=	x11/qt4
 
 USE_GMAKE=	Yes
 
-CONFIGURE_STYLE=simple
+CONFIGURE_STYLE= gnu
+# yuk, but it does the trick.
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="${LDFLAGS} -L${LOCALBASE}/lib -L${X11BASE}/lib"
+MAKE_FLAGS=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include" \
+		LDFLAGS="${LDFLAGS} -L${LOCALBASE}/lib -L${X11BASE}/lib"
+MAKE_ENV=	destdir=${WRKINST}
 
-WANTLIB += QtGui X11 c crypto ltdl pthread ssl
+WANTLIB += QtGui c crypto ltdl m pthread
 WANTLIB += c++ c++abi
 
 LIB_DEPENDS=	devel/libtool,-ltdl
@@ -27,10 +32,5 @@ RUN_DEPENDS=	devel/desktop-file-utils \
 		misc/shared-mime-info
 
 NO_TEST=	Yes
-
-SUBST_VARS+=	WRKINST
-
-pre-configure:
-	${SUBST_CMD} ${WRKSRC}/configure
 
 .include <bsd.port.mk>
