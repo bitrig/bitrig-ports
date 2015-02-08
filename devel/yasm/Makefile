@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/09/06 07:37:27 brad Exp $
+# $OpenBSD: Makefile,v 1.13 2015/02/08 12:06:43 naddy Exp $
 
 COMMENT=	complete rewrite of the NASM assembler
 
@@ -15,7 +15,6 @@ WANTLIB=	c
 
 MODULES=	devel/gettext
 
-USE_GROFF=	Yes
 CONFIGURE_STYLE= gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/config
 CONFIGURE_ARGS=	--disable-python
