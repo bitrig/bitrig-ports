@@ -11,6 +11,8 @@ V = 4.8.4
 FULL_VERSION = $V
 FULL_PKGVERSION = $V
 
+REVISION = 0
+
 ADASTRAP_LIBC-i386 = 78.0
 ADASTRAP_LIBM-i386 = 9.0
 ADASTRAP-i386 = adastrap-i386-$V-0.tar.xz
@@ -47,7 +49,7 @@ SHARED_LIBS =	estdc++		16.0 \
 
 
 PSEUDO_FLAVORS = no_c++ no_f95 no_objc no_java no_ada no_go full
-FLAVOR ?= no_f95
+FLAVOR ?=
 
 ONLY_FOR_ARCHS-ada = amd64 i386 sparc64
 ONLY_FOR_ARCHS-java = amd64 i386 powerpc sparc64
