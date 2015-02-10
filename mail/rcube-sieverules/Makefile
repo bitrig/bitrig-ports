@@ -1,14 +1,12 @@
-# $OpenBSD: Makefile,v 1.11 2014/11/06 17:13:39 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2015/02/10 11:05:37 sthen Exp $
 
 COMMENT=	roundcube plugin: sieve rules (managesieve)
 
 GH_ACCOUNT=	JohnDoh
 GH_PROJECT=	Roundcube-Plugin-SieveRules-Managesieve
-GH_TAGNAME=	2.1.2
-GH_COMMIT=	f606c1a57f3bc4a0b1786860857605413cfc6f0c
+GH_TAGNAME=	2.2
 DISTNAME=	sieverules-${GH_TAGNAME}
 PKGNAME=	rcube-${DISTNAME}
-REVISION=	1
 CATEGORIES=	mail www
 HOMEPAGE=	http://www.tehinterweb.co.uk/roundcube/\#pisieverules
 
@@ -25,7 +23,7 @@ TINSTDIR=	${TRUEPREFIX}/roundcubemail/plugins
 SUBST_VARS=	INSTDIR TINSTDIR
 
 MODULES=	lang/php
-RUN_DEPENDS=	mail/roundcubemail>=0.9
+RUN_DEPENDS=	mail/roundcubemail>=1.1
 
 do-install:
 	${INSTALL_DATA_DIR} ${INSTDIR}/sieverules
