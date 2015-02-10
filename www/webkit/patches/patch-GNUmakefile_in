@@ -6,8 +6,8 @@ $OpenBSD: patch-GNUmakefile_in,v 1.38 2015/01/10 00:38:39 ajacoutot Exp $
 (on Source/JavaScriptCore/runtime/NumberPrototype.cpp)
 - chunk 6->9 : fix variable quoting to properly install doc in a versionned dir
 
---- GNUmakefile.in.orig	Wed Jan  7 10:48:04 2015
-+++ GNUmakefile.in	Fri Jan  9 18:30:52 2015
+--- GNUmakefile.in.orig	Wed Jan  7 03:48:04 2015
++++ GNUmakefile.in	Tue Feb 10 11:08:12 2015
 @@ -12429,11 +12429,11 @@ am__v_P_0 = false
  am__v_P_1 = :
  AM_V_GEN = $(am__v_GEN_@AM_V@)
@@ -56,6 +56,24 @@ $OpenBSD: patch-GNUmakefile_in,v 1.38 2015/01/10 00:38:39 ajacoutot Exp $
  am__v_CXXLD_1 = 
  SOURCES = $(Libraries_WebExtensions_libWebExtensionTest_la_SOURCES) \
  	$(Libraries_WebExtensions_libWebProcessTest_la_SOURCES) \
+@@ -23183,7 +23183,7 @@ Programs_minidom_LDADD = \
+ 	$(WINMM_LIBS) \
+ 	-lm \
+ 	-lpthread \
+-	-lstdc++
++	-lc++
+ 
+ Programs_minidom_LDFLAGS = \
+ 	-no-install
+@@ -23206,7 +23206,7 @@ Programs_LLIntOffsetsExtractor_LDADD = \
+ 	$(WINMM_LIBS) \
+ 	-lm \
+ 	-lpthread \
+-	-lstdc++
++	-lc++
+ 
+ Programs_LLIntOffsetsExtractor_LDFLAGS = \
+ 	-no-install
 @@ -72779,7 +72779,7 @@ Source/JavaScriptCore/runtime/libjavascriptcoregtk_@WE
  @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libjavascriptcoregtk_@WEBKITGTK_API_MAJOR_VERSION@_@WEBKITGTK_API_MINOR_VERSION@_la_CPPFLAGS) $(CPPFLAGS) $(libjavascriptcoregtk_@WEBKITGTK_API_MAJOR_VERSION@_@WEBKITGTK_API_MINOR_VERSION@_la_CXXFLAGS) $(CXXFLAGS) -c -o Source/JavaScriptCore/runtime/libjavascriptcoregtk_@WEBKITGTK_API_MAJOR_VERSION@_@WEBKITGTK_API_MINOR_VERSION@_la-NumberObject.lo `test -f 'Source/JavaScriptCore/runtime/NumberObject.cpp' || echo '$(srcdir)/'`Source/JavaScriptCore/runtime/NumberObject.cpp
  
