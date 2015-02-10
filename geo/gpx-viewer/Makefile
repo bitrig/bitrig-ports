@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.30 2015/02/10 10:05:58 landry Exp $
+# $OpenBSD: Makefile,v 1.31 2015/02/10 10:17:45 landry Exp $
 
 COMMENT =	gpx file viewer
 
@@ -12,7 +12,7 @@ HOMEPAGE =	http://blog.sarine.nl/gpx-viewer/
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =	http://edge.launchpad.net/gpx-viewer/trunk/0.4.0/+download/
+MASTER_SITES =	http://edge.launchpad.net/gpx-viewer/trunk/${VERSION}/+download/
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
