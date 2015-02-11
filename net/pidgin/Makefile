@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.124 2015/01/09 01:34:44 brad Exp $
+# $OpenBSD: Makefile,v 1.125 2015/02/11 08:11:45 brad Exp $
 
 SHARED_ONLY=	Yes
 
@@ -15,9 +15,9 @@ PKGNAME-libpurple= libpurple-${VERSION}
 FULLPKGNAME$i= ${PKGNAME$i}${FLAVOR_EXT:S/-gtkspell//}
 FULLPKGPATH$i= ${PKGPATH},$i${FLAVOR_EXT:S/-gtkspell//:S/-/,/g}
 .endfor
-REVISION-main=	1
-REVISION-finch=	0
-REVISION-libpurple=0
+REVISION-main=	2
+REVISION-finch=	1
+REVISION-libpurple=1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pidgin/}
 EXTRACT_SUFX=	.tar.bz2
