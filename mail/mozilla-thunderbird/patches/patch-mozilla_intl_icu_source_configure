@@ -1,0 +1,11 @@
+--- mozilla/intl/icu/source/configure.orig	Sun Feb 15 07:57:25 2015
++++ mozilla/intl/icu/source/configure	Sun Feb 15 07:57:38 2015
+@@ -4924,7 +4924,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
+ 		*-*-mingw32|*-*-mingw64) icu_cv_host_frag=mh-msys-msvc ;;
+ 		esac
+ 	fi ;;
+-*-*-*bsd*|*-*-dragonfly*) 	icu_cv_host_frag=mh-bsd-gcc ;;
++*-*-*bsd*|*-*-dragonfly*|*-*-bitrig*) 	icu_cv_host_frag=mh-bsd-gcc ;;
+ *-*-aix*)
+ 	if test "$GCC" = yes; then
+ 		icu_cv_host_frag=mh-aix-gcc
