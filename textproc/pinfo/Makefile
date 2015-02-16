@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/01/14 00:38:39 sthen Exp $
+# $OpenBSD: Makefile,v 1.11 2015/02/16 22:57:13 naddy Exp $
 
 COMMENT=		info viewer with lynx-style navigation
 
@@ -16,8 +16,6 @@ MASTER_SITES=		https://alioth.debian.org/frs/download.php/latestfile/434/ \
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c ncurses readline 
 LIB_DEPENDS=		devel/readline
-
-USE_GROFF =		Yes
 
 MODULES+=		devel/gettext
 

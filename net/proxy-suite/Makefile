@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/03/11 11:35:55 espie Exp $
+# $OpenBSD: Makefile,v 1.18 2015/02/16 22:57:11 naddy Exp $
 
 COMMENT=	set of programs to enhance firewall security
 
@@ -15,7 +15,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c
 
 USE_GMAKE=	Yes
-USE_GROFF =	Yes
 CONFIGURE_STYLE=gnu dest
 
 NO_TEST=	Yes

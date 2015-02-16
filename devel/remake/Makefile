@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 10:50:27 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2015/02/16 22:57:08 naddy Exp $
 
 COMMENT=		GNU make debugger
 
@@ -19,7 +19,6 @@ CONFIGURE_ENV=		CPPFLAGS='-I${LOCALBASE}/include' \
 			LDFLAGS='-L${LOCALBASE}/lib'
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
 
-USE_GROFF =		Yes
 WANTLIB=		c readline termcap
 LIB_DEPENDS=		devel/readline
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2014/07/12 09:48:57 giovanni Exp $
+# $OpenBSD: Makefile,v 1.25 2015/02/16 22:57:13 naddy Exp $
 
 ONLY_FOR_ARCHS=		amd64 i386 powerpc
 
@@ -12,7 +12,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=smartmontools/}
 HOMEPAGE=		http://smartmontools.sourceforge.net/
 
 USE_GMAKE=      	Yes
-USE_GROFF =		Yes
 SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=       	gnu
 CONFIGURE_ARGS=	--with-docdir=${PREFIX}/share/doc/smartmontools \

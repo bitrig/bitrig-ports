@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/03/11 11:35:58 espie Exp $
+# $OpenBSD: Makefile,v 1.17 2015/02/16 22:57:11 naddy Exp $
 
 COMMENT=		ICMP active OS fingerprint scanner
 
@@ -20,7 +20,6 @@ MODGNU_CONFIG_GUESS_DIRS=				\
 	${WRKSRC}/cfg-scripts				\
 	${WRKSRC}/libs-external/USI++/src/cfgaux
 
-USE_GROFF=		Yes
 NO_TEST=		Yes
 
 .include <bsd.port.mk>

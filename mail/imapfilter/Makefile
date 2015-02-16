@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/03/11 11:23:51 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2015/02/16 22:57:09 naddy Exp $
 
 COMMENT=	remote IMAP filtering utility
 
@@ -24,7 +24,6 @@ LIB_DEPENDS=	devel/pcre \
 		${MODLUA_LIB_DEPENDS}
 
 MAKE_ENV+=	CC="${CC}"
-USE_GROFF =	Yes
 
 NO_TEST=	Yes
 

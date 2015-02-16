@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/01/06 13:19:05 pirofti Exp $
+# $OpenBSD: Makefile,v 1.21 2015/02/16 22:57:09 naddy Exp $
 
 COMMENT=	GiNaC is Not a Computer Algebra System (CAS)
 
@@ -26,7 +26,6 @@ LIB_DEPENDS=	devel/cln \
 		devel/readline
 
 USE_GMAKE=	Yes
-USE_GROFF =	Yes
 CONFIGURE_STYLE=gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
 

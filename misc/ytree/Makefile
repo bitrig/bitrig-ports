@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/11/29 15:56:44 naddy Exp $
+# $OpenBSD: Makefile,v 1.17 2015/02/16 22:57:10 naddy Exp $
 
 COMMENT=	DOS-XTREE(tm) look-a-like file manager
 
@@ -18,7 +18,6 @@ LIB_DEPENDS=	devel/readline
 
 ALL_TARGET=	ytree
 
-USE_GROFF =	Yes
 NO_TEST=	Yes
 
 CFLAGS+=	-DCOLOR_SUPPORT -DREADLINE_SUPPORT

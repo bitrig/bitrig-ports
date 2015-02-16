@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/03/11 11:42:46 espie Exp $
+# $OpenBSD: Makefile,v 1.23 2015/02/16 22:57:13 naddy Exp $
 
 COMMENT=	reverse compile man pages from formatted form
 
@@ -9,13 +9,12 @@ HOMEPAGE=	http://polyglotman.sourceforge.net/
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c 
+WANTLIB=		c
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=polyglotman/}
 
 MAKE_FLAGS =	CC="${CC}"
 
-USE_GROFF =	Yes
 NO_TEST=	Yes
 
 do-install:

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2014/03/21 00:41:18 sthen Exp $
+# $OpenBSD: Makefile,v 1.14 2015/02/16 22:57:08 naddy Exp $
 
 COMMENT=		C C++ API for memcached
 
@@ -18,7 +18,6 @@ SHARED_LIBS +=  memcachedutil             0.0 # 1.0
 # BSD
 PERMIT_PACKAGE_CDROM=   Yes
 
-USE_GROFF =	Yes
 WANTLIB += c event m pthread sasl2
 BUILD_DEPENDS=	misc/memcached
 LIB_DEPENDS= 	security/cyrus-sasl2

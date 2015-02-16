@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:35:43 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2015/02/16 22:57:10 naddy Exp $
 
 COMMENT=	utility for audio-video information extraction
 
@@ -20,7 +20,6 @@ MASTER_SITES=	http://shounen.ru/soft/avinfo/
 BUILD_DEPENDS=	devel/bison
 
 USE_GMAKE=	Yes
-USE_GROFF =	Yes
 
 #directly uses gcc
 MODULES       += gcc4

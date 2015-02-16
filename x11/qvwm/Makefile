@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/11 11:46:15 espie Exp $
+# $OpenBSD: Makefile,v 1.22 2015/02/16 22:57:14 naddy Exp $
 
 COMMENT=	Windows 95/98/NT like window manager
 
@@ -13,8 +13,6 @@ HOMEPAGE=	http://www.csg.is.titech.ac.jp/~kourai/qvwm/
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		ICE SM X11 Xext Xpm Xss c m sndio
 WANTLIB +=		c++ c++abi pthread
-
-USE_GROFF =	Yes
 
 CONFIGURE_STYLE= gnu
 
