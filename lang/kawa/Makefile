@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/05/07 15:42:16 kurt Exp $
+# $OpenBSD: Makefile,v 1.8 2015/02/17 20:19:05 naddy Exp $
 
 BROKEN-i386= java
 
@@ -19,7 +19,6 @@ MODULES=		java
 MODJAVA_VER=		1.6+
 
 USE_GMAKE=		Yes
-USE_GROFF=		Yes
 
 WANTLIB += c ncurses readline
 LIB_DEPENDS+=		devel/readline
