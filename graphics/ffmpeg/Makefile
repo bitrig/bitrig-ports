@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.110 2015/01/10 10:46:37 brad Exp $
+# $OpenBSD: Makefile,v 1.111 2015/02/17 01:28:52 brad Exp $
 
 COMMENT=	audio/video converter and streamer
 
@@ -63,10 +63,10 @@ WRKTMP=		${WRKDIR}/tmp
 
 FFMPEG_ARCH=	${MACHINE_ARCH}
 
-# x265 only builds on archs with working builtin atomics
-.if ${MACHINE_ARCH} == "amd64"
-LIB_DEPENDS+=	multimedia/x265
-WANTLIB+=	x265
+# x265 only builds on archs with working builtin 32-bit atomics
+.if ${MACHINE_ARCH} == "alpha" || ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "powerpc" || ${MACHINE_ARCH} == "sparc64"
+LIB_DEPENDS+=	multimedia/x265>=1.5
+WANTLIB+=	x265>=2
 CONFIGURE_ARGS+=	--enable-libx265
 CONFIGURE_ENV+=		LIBavcodec_REQUIRES="libavutil libswresample opus schroedinger-1.0 speex theoraenc vpx x264 x265"
 LIBavcodec_EXTRALIBS=-L${LOCALBASE}/lib -lgsm -lmp3lame -lopus -lschroedinger-1.0 -lspeex -ltheoradec -ltheoraenc -lvorbis -lvorbisenc -lvpx -lx264 -lx265 -lxvidcore -lz -pthread
