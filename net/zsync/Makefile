@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:35:58 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2015/02/17 19:47:01 naddy Exp $
 
 COMMENT=	gzip-aware file mirroring over http
 
@@ -18,7 +18,6 @@ WANTLIB += c m
 MASTER_SITES=	${HOMEPAGE}download/
 
 CONFIGURE_STYLE=	gnu
-USE_GROFF=		Yes
 
 MODGNU_CONFIG_GUESS_DIRS=	${WRKDIST}/autotools
 

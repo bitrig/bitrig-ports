@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2014/07/01 12:15:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2015/02/17 19:47:01 naddy Exp $
 
 COMMENT=		802.11 WEP and WPA-PSK keys cracking program
 DISTNAME=		aircrack-ng-1.1
@@ -17,7 +17,6 @@ MASTER_SITES=		http://download.aircrack-ng.org/
 WANTLIB +=		sqlite3
 
 USE_GMAKE=		Yes
-USE_GROFF =		Yes
 MAKE_ENV+=		SQLITE=true UNSTABLE=true
 MAKE_FLAGS+=		CC=${CC}
 
