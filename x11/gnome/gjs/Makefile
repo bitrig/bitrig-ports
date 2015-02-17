@@ -27,15 +27,12 @@ WANTLIB += graphite2 gtk-3 harfbuzz pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
-			lang/clang \
 			x11/gnome
 
 # sync with devel/spidermonkey
-MODULES +=		gcc4 lang/clang
+MODULES +=		gcc4
 MODGCC4_ARCHS =		powerpc sparc64 alpha i386
 MODGCC4_LANGS =		c c++
-MODCLANG_ARCHS =	amd64
-MODCLANG_LANGS =	c c++
 
 MODPY_RUNDEP=		No
 MODPY_BUILDDEP= 	No

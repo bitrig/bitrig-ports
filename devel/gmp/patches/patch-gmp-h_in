@@ -1,0 +1,12 @@
+--- gmp-h.in.orig	Sat Feb 28 09:27:26 2015
++++ gmp-h.in	Sat Feb 28 09:28:07 2015
+@@ -46,7 +46,8 @@ along with the GNU MP Library.  If not, see http://www
+ #ifndef __GNU_MP__
+ #define __GNU_MP__ 5
+ 
+-#define __need_size_t  /* tell gcc stddef.h we only want size_t */
++#define __need_size_t     /* tell gcc stddef.h we want size_t */
++#define __need_ptrdiff_t  /* tell gcc stddef.h we want ptrdiff_t */
+ #if defined (__cplusplus)
+ #include <cstddef>     /* for size_t */
+ #else

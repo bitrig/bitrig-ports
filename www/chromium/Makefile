@@ -24,10 +24,7 @@ PERMIT_PACKAGE_FTP =	Yes
 
 MASTER_SITES=	https://commondatastorage.googleapis.com/chromium-browser-official/
 
-MODULES=	lang/clang lang/python
-
-MODCLANG_ARCHS=	*
-MODCLANG_LANGS=	c++
+MODULES=	lang/python
 
 MODPY_RUNDEP=	No
 

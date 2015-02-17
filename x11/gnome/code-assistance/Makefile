@@ -16,7 +16,6 @@ WANTLIB += pcre pthread vala-0.26 z
 
 MODULES=		devel/dconf \
 			devel/gettext \
-			lang/clang \
 			lang/python \
 			lang/ruby \
 			x11/gnome
@@ -25,8 +24,7 @@ MODGNOME_TOOLS +=	vala
 MODPY_VERSION=		${MODPY_DEFAULT_VERSION_3}
 
 BUILD_DEPENDS=		${RUN_DEPENDS}
-RUN_DEPENDS=		devel/llvm>=${MODCLANG_VERSION} \
-			devel/py-gobject3${MODPY_FLAVOR} \
+RUN_DEPENDS=		devel/py-gobject3${MODPY_FLAVOR} \
 			x11/ruby-dbus,${MODRUBY_FLAVOR}>=0.11.0 \
 			x11/dbus-python${MODPY_FLAVOR} \
 			x11/gnome/gjs

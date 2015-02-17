@@ -10,21 +10,10 @@ CATEGORIES +=	x11/gnustep
 USE_GMAKE ?=	Yes
 MAKE_FILE ?=	GNUmakefile
 
-MODULES +=			lang/clang
 BUILD_DEPENDS +=		x11/gnustep/make
 MODGNUSTEP_RUN_DEPENDS +=	x11/gnustep/make
 
-MODCLANG_ARCHS =		amd64 i386
-MODCLANG_LANGS =		c++
-
-.if ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386"
-CONFIGURE_ENV +=	CC="clang" CXX="clang++" CPP="clang -E"
-CONFIGURE_ENV +=	OPTFLAG="${CFLAGS}"
-MAKE_FLAGS +=		CC="clang" CXX="clang++" CPP="clang -E"
-MAKE_FLAGS +=		OPTFLAG="${CFLAGS}"
-.else
 MAKE_FLAGS +=  		CC="${CC}" CPP="${CC} -E" OPTFLAG="${CFLAGS}"
-.endif
 
 MAKE_ENV +=	GNUSTEP_MAKEFILES=`gnustep-config --variable=GNUSTEP_MAKEFILES`
 MAKE_ENV +=	INSTALL_AS_USER=${BINOWN}

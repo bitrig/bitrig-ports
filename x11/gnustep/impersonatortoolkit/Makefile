@@ -2,8 +2,6 @@
 
 COMMENT =	web cookies sniffer and providing proxy
 
-ONLY_FOR_ARCHS =	${MODCLANG_ARCHS}
-
 DISTNAME =	ImpersonatorToolKit-0.3
 REVISION =	1
 CATEGORIES =	net security

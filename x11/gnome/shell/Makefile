@@ -36,11 +36,9 @@ MODULES=		devel/dconf \
 			x11/gnome
 
 # sync with devel/spidermonkey
-MODULES +=		gcc4 lang/clang
+MODULES +=		gcc4
 MODGCC4_ARCHS =		powerpc sparc64 alpha i386
 MODGCC4_LANGS =		c c++
-MODCLANG_ARCHS =	amd64
-MODCLANG_LANGS =	c c++
 
 MODGNOME_TOOLS +=	desktop-file-utils docbook gobject-introspection
 

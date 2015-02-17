@@ -14,12 +14,8 @@ HOMEPAGE=	http://www.gnustep.org/
 
 MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/core/
 
-MODULES =	lang/clang
 BUILD_DEPENDS =	x11/gnustep/libobjc2
 RUN_DEPENDS=	archivers/gtar
-
-MODCLANG_ARCHS =	amd64 i386
-MODCLANG_LANGS =	c++
 
 USE_GMAKE=	Yes
 USE_GROFF =	Yes
@@ -41,7 +37,7 @@ CONFIGURE_ARGS=	--with-layout=openbsd \
 		--enable-strict-v2-mode
 
 .if ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386"
-CONFIGURE_ENV +=	CXX=clang++ CC=clang AS=llvm-as CPP="clang -E"
+CONFIGURE_ENV +=	CXX=${CXX} CC=${CC} AS=llvm-as CPP="${CC} -E"
 CONFIGURE_ARGS +=	--enable-objc-nonfragile-abi
 .endif
 

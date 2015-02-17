@@ -27,10 +27,8 @@ WANTLIB=	EGL GL SDL X11 Xext Xinerama Xss Xv Xxf86dga Xxf86vm ass \
 		freetype fribidi gif jpeg m mng mp3lame ncurses png postproc \
 		pthread sndio swscale util x264 xvidcore z
 WANTLIB +=	c++ c++abi
-MODULES+=	converters/libiconv \
-		lang/clang
+MODULES+=	converters/libiconv
 
-MODCLANG_ARCHS=	amd64 i386
 
 LIB_DEPENDS=	archivers/bzip2 \
 		audio/cdparanoia \
@@ -59,11 +57,6 @@ BUILD_DEPENDS+=	graphics/ffmpeg:patch
 
 .if ${MACHINE_ARCH:Mamd64} || ${MACHINE_ARCH:Mi386}
 BUILD_DEPENDS+=	devel/yasm
-.endif
-.if ${MACHINE_ARCH:Mi386}
-# silly busted asm
-CC=		gcc
-CXX=		g++
 .endif
 
 CONFDIR=	${SYSCONFDIR}/mplayer

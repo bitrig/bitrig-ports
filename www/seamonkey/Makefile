@@ -31,11 +31,9 @@ MODULES =	www/mozilla devel/gettext lang/python
 MODPY_RUNDEP =	No
 
 # necessary glue to build with the correct compiler after fx 17
-MODULES +=		gcc4 lang/clang
+MODULES +=		gcc4
 MODGCC4_ARCHS =		powerpc sparc64 alpha i386
 MODGCC4_LANGS =		c c++
-MODCLANG_ARCHS =	amd64
-MODCLANG_LANGS =	c c++
 
 # fix for 982693, apply only on clang archs
 .if ${MACHINE_ARCH:Mamd64}

@@ -28,11 +28,7 @@ WANTLIB=	c m pthread c++ c++abi
 WRKDIST=	${WRKDIR}/multicoreware-x265-5e604833c5aa
 WRKSRC=		${WRKDIST}/source
 
-MODULES=	devel/cmake \
-		lang/clang
-
-MODCLANG_ARCHS=	amd64 i386
-MODCLANG_LANGS=	c c++
+MODULES=	devel/cmake
 
 .if ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386"
 BUILD_DEPENDS+=	devel/yasm

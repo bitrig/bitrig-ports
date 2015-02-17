@@ -18,12 +18,9 @@ SHARED_LIBS +=  objcxx	0.0
 HOMEPAGE =	http://www.gnustep.org/
 MASTER_SITES =	http://download.gna.org/gnustep/
 
-MODULES =	devel/cmake lang/clang
+MODULES =	devel/cmake
 WANTLIB += 	m pthread
 WANTLIB += 	c++ c++abi
-
-MODCLANG_ARCHS =	amd64 i386
-MODCLANG_LANGS =	c++
 
 MAKE_ENV +=	CPPFLAGS+=${CPPFLAGS}
 MAKE_FLAGS +=	LIBOBJCLIBNAME=objc2 \

@@ -2,10 +2,6 @@
 #
 # Module for GNOME related ports
 
-MODULES+=		lang/clang
-MODCLANG_ARCHS =        amd64 i386
-MODCLANG_LANGS =        c c++
-
 .if (defined(GNOME_PROJECT) && defined(GNOME_VERSION))
 PORTROACH+=		limitw:1,even
 DISTNAME=		${GNOME_PROJECT}-${GNOME_VERSION}
