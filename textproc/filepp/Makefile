@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:42:41 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2015/02/17 21:19:34 naddy Exp $
 
 COMMENT =	cpp-like generic file pre-processor
 
@@ -16,7 +16,6 @@ CONFIGURE_STYLE =	gnu dest
 NO_BUILD =		Yes
 PKG_ARCH =		*
 TEST_TARGET =	fulltest
-USE_GROFF =		Yes
 
 post-configure:
 	@perl -pi -e 's,\$${DESTDIR},,g;' ${WRKSRC}/filepp
