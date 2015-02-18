@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.15 2014/02/08 17:58:00 espie Exp $
+# $OpenBSD: Makefile,v 1.16 2015/02/18 10:09:02 espie Exp $
 
 COMMENT =	drupal views, smart content lists
 
-DISTNAME = 	views-6.x-2.16
-PKGNAME =	drupal6-views-2.16
-REVISION =	2
+DISTNAME = 	views-6.x-2.18
+PKGNAME =	drupal6-views-2.18
 
 .include <bsd.port.mk>
