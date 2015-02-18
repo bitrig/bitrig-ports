@@ -13,8 +13,10 @@ WANTLIB=		c sndio
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cdrtools/}
 
-MODULES=		converters/libiconv
-LIB_DEPENDS=		converters/libiconv
+MODULES=		converters/libiconv \
+			devel/gettext
+LIB_DEPENDS=		converters/libiconv \
+			devel/gettext
 BUILD_DEPENDS=		devel/m4
 USE_GMAKE=		Yes
 
