@@ -711,7 +711,6 @@ lib/tcl/zip/pkgIndex.tcl
 @man man/mann/comm_wire.n
 @man man/mann/connect.n
 @man man/mann/constants.n
-@man man/mann/container.n
 @man man/mann/control.n
 @man man/mann/copyops.n
 @man man/mann/core.n
@@ -761,14 +760,8 @@ lib/tcl/zip/pkgIndex.tcl
 @man man/mann/ean13.n
 @man man/mann/events.n
 @man man/mann/expander.n
-@man man/mann/export.n
 @man man/mann/export_docidx.n
 @man man/mann/export_doctoc.n
-@man man/mann/export_html.n
-@man man/mann/export_json.n
-@man man/mann/export_nroff.n
-@man man/mann/export_text.n
-@man man/mann/export_wiki.n
 @man man/mann/fa.n
 @man man/mann/facade.n
 @man man/mann/faop.n
@@ -798,13 +791,10 @@ lib/tcl/zip/pkgIndex.tcl
 @man man/mann/imap4.n
 @man man/mann/imei.n
 @man man/mann/imenu.n
-@man man/mann/import.n
 @man man/mann/import_docidx.n
 @man man/mann/import_doctoc.n
-@man man/mann/import_json.n
 @man man/mann/ini.n
 @man man/mann/interpolate.n
-@man man/mann/introduction.n
 @man man/mann/ipager.n
 @man man/mann/irc.n
 @man man/mann/isbn.n
@@ -848,10 +838,6 @@ lib/tcl/zip/pkgIndex.tcl
 @man man/mann/mimetypes.n
 @man man/mann/montecarlo.n
 @man man/mann/mpexpand.n
-@man man/mann/msgcat_c.n
-@man man/mann/msgcat_de.n
-@man man/mann/msgcat_en.n
-@man man/mann/msgcat_fr.n
 @man man/mann/multi.n
 @man man/mann/multiop.n
 @man man/mann/multiplexer.n
@@ -884,7 +870,6 @@ lib/tcl/zip/pkgIndex.tcl
 @man man/mann/page_util_norm_peg.n
 @man man/mann/page_util_peg.n
 @man man/mann/page_util_quote.n
-@man man/mann/parse.n
 @man man/mann/peg.n
 @man man/mann/peg_interp.n
 @man man/mann/picoirc.n
@@ -977,7 +962,6 @@ lib/tcl/zip/pkgIndex.tcl
 @man man/mann/struct_set.n
 @man man/mann/struct_tree.n
 @man man/mann/struct_tree1.n
-@man man/mann/structure.n
 @man man/mann/sum.n
 @man man/mann/symdiff.n
 @man man/mann/tabify.n
@@ -992,7 +976,6 @@ lib/tcl/zip/pkgIndex.tcl
 @man man/mann/tcllib_interp.n
 @man man/mann/tcllib_ip.n
 @man man/mann/tcllib_memchan.n
-@man man/mann/tcllib_msgcat.n
 @man man/mann/tcllib_null.n
 @man man/mann/tcllib_random.n
 @man man/mann/tcllib_string.n
