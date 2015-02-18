@@ -2,10 +2,10 @@
 
 COMMENT=	simple and performant DNS server
 
-VERSION=	1.4.14
-REVISION=	0
+VERSION=	1.4.16
 DISTNAME=	maradns-${VERSION}
 CATEGORIES=	net
+EXTRACT_SUFX=	.tar.xz
 
 HOMEPAGE=	http://www.maradns.org/
 
