@@ -18,9 +18,6 @@ HOMEPAGE=		https://github.com/sitaramc/gitolite/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=		https://github.com/sitaramc/gitolite/archive/
-DISTFILES=		${DISTNAME}{${GH_VER}}${EXTRACT_SUFX}
-
 RUN_DEPENDS=		devel/git
 
 NO_BUILD=		Yes
