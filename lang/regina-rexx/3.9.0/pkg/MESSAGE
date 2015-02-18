@@ -1,0 +1,9 @@
+To have the regina stack start whenever the machine boots, add the
+following lines to the ${SYSCONFDIR}/rc.local script:
+
+
+if [ -x ${LOCALBASE}/bin/rxstack ]; then
+        echo -n " rxstack"; ${LOCALBASE}/bin/rxstack -d
+fi
+
+Please read the documentation for more information about rxstack.

@@ -1,0 +1,41 @@
+--- Makefile.in.orig	Thu Feb 19 22:36:30 2015
++++ Makefile.in	Thu Feb 19 22:35:38 2015
+@@ -1041,10 +1041,6 @@ installbase: all
+ 	$(INSTALL) -m 644 -c $(srcdir)/regina-config.1 $(DESTDIR)$(mandir)/man1/regina-config.1
+ 	$(INSTALL) -m 644 -c $(srcdir)/rxstack.1 $(DESTDIR)$(mandir)/man1/rxstack.1
+ 	$(INSTALL) -m 644 -c $(srcdir)/rxqueue.1 $(DESTDIR)$(mandir)/man1/rxqueue.1
+-	gzip -f $(DESTDIR)$(mandir)/man1/regina.1
+-	gzip -f $(DESTDIR)$(mandir)/man1/regina-config.1
+-	gzip -f $(DESTDIR)$(mandir)/man1/rxstack.1
+-	gzip -f $(DESTDIR)$(mandir)/man1/rxqueue.1
+ 	$(INSTALL) -m 644 -c $(srcdir)/rexxsaa.h $(DESTDIR)$(includedir)/rexxsaa.h
+ 	$(INSTALL) -m 644 -c ./en.mtb $(DESTDIR)$(sharedir)/en.mtb
+ 	$(INSTALL) -m 644 -c ./pt.mtb $(DESTDIR)$(sharedir)/pt.mtb
+@@ -1106,9 +1102,9 @@ installmaclib: installregina
+ 	$(INSTALL) -m 755 -c ./$(SHLPRE)rxtest2$(MODPST) $(DESTDIR)$(addonsdir)/$(SHLPRE)rxtest2$(MODPST)
+ 
+ installrxstack:
+-	-$(INSTALL) -m 755 -c ./rxstack.init.d $(DESTDIR)$(sysconfdir)/rxstack
+-	@echo "The system startup/shutdown script; rxstack, may have been installed into $(sysconfdir)"
+-	@echo "You need to create the appropriate links to this script to start and stop rxstack automatically."
++#	-$(INSTALL) -m 755 -c ./rxstack.init.d $(DESTDIR)$(sysconfdir)/rxstack
++#	@echo "The system startup/shutdown script; rxstack, may have been installed into $(sysconfdir)"
++#	@echo "You need to create the appropriate links to this script to start and stop rxstack automatically."
+ 
+ uninstall:
+ 	-rm -f $(DESTDIR)$(bindir)/rexx$(binarybitprefix)$(EXE)
+@@ -1116,10 +1112,10 @@ uninstall:
+ 	-rm -f $(DESTDIR)$(bindir)/rxstack$(binarybitprefix)$(EXE)
+ 	-rm -f $(DESTDIR)$(bindir)/regina-config
+ 	-rm -f $(DESTDIR)$(libdir)/$(LIBPRE)$(LIBFILE)$(LIBPST)
+-	-rm -f $(DESTDIR)$(mandir)/man1/regina.1.gz
+-	-rm -f $(DESTDIR)$(mandir)/man1/regina-config.1.gz
+-	-rm -f $(DESTDIR)$(mandir)/man1/rxstack.1.gz
+-	-rm -f $(DESTDIR)$(mandir)/man1/rxqueue.1.gz
++	-rm -f $(DESTDIR)$(mandir)/man1/regina.1
++	-rm -f $(DESTDIR)$(mandir)/man1/regina-config.1
++	-rm -f $(DESTDIR)$(mandir)/man1/rxstack.1
++	-rm -f $(DESTDIR)$(mandir)/man1/rxqueue.1
+ 	-rm -f $(DESTDIR)$(includedir)/rexxsaa.h
+ 	-rm -f $(DESTDIR)$(bindir)/regina$(binarybitprefix)$(EXE)
+ 	-rm -f $(DESTDIR)$(libdir)/$(SHLPRE)regina$(SHLPST)
