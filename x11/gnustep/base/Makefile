@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.55 2014/11/21 18:19:53 sebastia Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	GNUstep base library
 
 DISTNAME=	gnustep-base-1.24.7

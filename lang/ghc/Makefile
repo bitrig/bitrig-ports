@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.112 2015/01/07 20:45:28 kili Exp $
 
+BROKEN =		needs work on bitrig
+
 COMMENT-main =		compiler for the functional language Haskell
 COMMENT-doc =		documentation for GHC
 

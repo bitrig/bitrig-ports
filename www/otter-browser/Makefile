@@ -1,6 +1,8 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2015/01/24 23:10:36 zhuk Exp $
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 
+BROKEN =		needs work on bitrig
+
 COMMENT =		browser aiming to recreate classic Opera (12.x) UI using Qt5
 
 GH_ACCOUNT =		Emdek

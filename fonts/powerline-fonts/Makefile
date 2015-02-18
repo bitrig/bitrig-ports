@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2014/07/15 02:03:48 sthen Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	patched fonts with symbols for powerline/airline
 
 V=		0.20140429

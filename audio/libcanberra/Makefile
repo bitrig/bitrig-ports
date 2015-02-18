@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.42 2014/09/13 16:36:53 ajacoutot Exp $
 
+BROKEN=		needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT-main=	implementation of the Freedesktop sound theme spec.

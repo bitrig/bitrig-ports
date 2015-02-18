@@ -2,13 +2,15 @@
 
 ONLY_FOR_ARCHS =	i386 amd64
 
+BROKEN =		needs work on bitrig
+
 COMMENT =		statically typed, imperative programming language
 
 VERSION =		0.9.4
 REVISION =		0
 DISTNAME =		nimrod-${VERSION}
 
-DISTFILES =		${DISTNAME}{v${VERSION}}.tar.gz \
+DISTFILES =		${DISTNAME}.tar.gz \
 			nimrod-c-${VERSION}{v${VERSION}}.tar.gz:0
 
 CATEGORIES =		lang
