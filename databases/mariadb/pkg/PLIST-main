@@ -158,7 +158,6 @@ lib/mysql/
 lib/mysql/libmysqlclient.a
 @lib lib/mysql/libmysqlclient.so.${LIBmysqlclient_VERSION}
 lib/mysql/libmysqlclient_r.a
-@lib lib/mysql/libmysqlclient_r.so.${LIBmysqlclient_r_VERSION}
 lib/mysql/libmysqlservices.a
 @man man/man1/msql2mysql.1
 @man man/man1/mysql.1
