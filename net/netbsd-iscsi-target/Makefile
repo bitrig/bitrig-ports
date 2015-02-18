@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/04/27 09:28:50 jasper Exp $
+# $OpenBSD: Makefile,v 1.9 2015/02/18 12:51:31 sthen Exp $
 
 COMMENT=	iSCSI (RFC 3720) target from NetBSD
 
