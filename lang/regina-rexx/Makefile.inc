@@ -4,8 +4,6 @@ DISTNAME=      	Regina-REXX-${VERSION}
 
 PKGNAME =       regina-rexx-${VERSION}
 
-#SHARED_ONLY=    Yes
-
 CATEGORIES=     lang
 
 MASTER_SITES= ${MASTER_SITE_SOURCEFORGE:=regina-rexx/}
