@@ -17,4 +17,6 @@ PERMIT_DISTFILES_FTP=  Yes
 
 MAKE_FLAGS+=    CC="${CC}"
 
+WANTLIB += c m ncurses pthread
+
 NO_TEST=        Yes
