@@ -84,6 +84,7 @@
      SUBDIR += racket
      SUBDIR += railo
      SUBDIR += rakudo
+     SUBDIR += regina-rexx
      SUBDIR += rubinius
      SUBDIR += ruby
      SUBDIR += sbcl
