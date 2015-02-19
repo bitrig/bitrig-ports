@@ -1,0 +1,11 @@
+--- lib/Support/Unix/Memory.inc.orig	Thu Dec  4 17:59:36 2014
++++ lib/Support/Unix/Memory.inc	Fri Feb 27 21:18:58 2015
+@@ -333,7 +333,7 @@ void Memory::InvalidateInstructionCache(const void *Ad
+   for (intptr_t Line = StartLine; Line < EndLine; Line += LineSize)
+     asm volatile("icbi 0, %0" : : "r"(Line));
+   asm volatile("isync");
+-#  elif (defined(__arm__) || defined(__aarch64__)) && defined(__GNUC__)
++#  elif (defined(__arm__) || defined(__aarch64__)) && defined(__GNUC__) && !defined(__Bitrig__)
+   // FIXME: Can we safely always call this for __GNUC__ everywhere?
+   const char *Start = static_cast<const char *>(Addr);
+   const char *End = Start + Len;

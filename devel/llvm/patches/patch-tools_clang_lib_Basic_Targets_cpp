@@ -1,7 +1,6 @@
-$OpenBSD$
---- tools/clang/lib/Basic/Targets.cpp.orig	Sat Aug  9 00:59:37 2014
-+++ tools/clang/lib/Basic/Targets.cpp	Sun Sep 21 22:11:58 2014
-@@ -459,6 +459,7 @@ class BitrigTargetInfo : public OSTargetInfo<Target> {
+--- tools/clang/lib/Basic/Targets.cpp.orig	Fri Jan 23 03:24:17 2015
++++ tools/clang/lib/Basic/Targets.cpp	Fri Feb 27 21:18:58 2015
+@@ -468,10 +468,22 @@ class BitrigTargetInfo : public OSTargetInfo<Target> {
      // Bitrig defines; list based off of gcc output
  
      Builder.defineMacro("__Bitrig__");
@@ -9,25 +8,32 @@ $OpenBSD$
      DefineStd(Builder, "unix", Opts);
      Builder.defineMacro("__ELF__");
      if (Opts.POSIXThreads)
-@@ -3532,7 +3533,8 @@ class ARMTargetInfo : public TargetInfo {
+       Builder.defineMacro("_REENTRANT");
++
++    switch (Triple.getArch()) {
++    default:
++      break;
++    case llvm::Triple::arm:
++    case llvm::Triple::armeb:
++    case llvm::Triple::thumb:
++    case llvm::Triple::thumbeb:
++      Builder.defineMacro("__ARM_DWARF_EH__");
++      break;
++    }
+   }
+ public:
+   BitrigTargetInfo(const llvm::Triple &Triple) : OSTargetInfo<Target>(Triple) {
+@@ -3789,7 +3801,8 @@ class ARMTargetInfo : public TargetInfo {
      const llvm::Triple &T = getTriple();
  
-     // size_t is unsigned long on Darwin and NetBSD.
--    if (T.isOSDarwin() || T.getOS() == llvm::Triple::NetBSD)
-+    if (T.isOSDarwin() || T.getOS() == llvm::Triple::NetBSD ||
+     // size_t is unsigned long on MachO-derived environments and NetBSD.
+-    if (T.isOSBinFormatMachO() || T.getOS() == llvm::Triple::NetBSD)
++    if (T.isOSBinFormatMachO() || T.getOS() == llvm::Triple::NetBSD ||
 +        T.getOS() == llvm::Triple::Bitrig)
        SizeType = UnsignedLong;
      else
        SizeType = UnsignedInt;
-@@ -4306,7 +4308,6 @@ class DarwinARMTargetInfo : (public)
- };
- } // end anonymous namespace.
- 
--
- namespace {
- class AArch64TargetInfo : public TargetInfo {
-   virtual void setDescriptionString() = 0;
-@@ -6040,6 +6041,8 @@ static TargetInfo *AllocateTarget(const llvm::Triple &
+@@ -6475,6 +6488,8 @@ static TargetInfo *AllocateTarget(const llvm::Triple &
        return new LinuxTargetInfo<AArch64leTargetInfo>(Triple);
      case llvm::Triple::NetBSD:
        return new NetBSDTargetInfo<AArch64leTargetInfo>(Triple);
@@ -36,7 +42,7 @@ $OpenBSD$
      default:
        return new AArch64leTargetInfo(Triple);
      }
-@@ -6051,6 +6054,8 @@ static TargetInfo *AllocateTarget(const llvm::Triple &
+@@ -6487,6 +6502,8 @@ static TargetInfo *AllocateTarget(const llvm::Triple &
        return new LinuxTargetInfo<AArch64beTargetInfo>(Triple);
      case llvm::Triple::NetBSD:
        return new NetBSDTargetInfo<AArch64beTargetInfo>(Triple);

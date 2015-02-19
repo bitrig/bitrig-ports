@@ -1,17 +1,7 @@
---- tools/clang/lib/Driver/Tools.cpp.orig	Thu Aug  7 06:51:51 2014
-+++ tools/clang/lib/Driver/Tools.cpp	Sun Sep 21 23:18:35 2014
-@@ -3099,7 +3099,8 @@ void Clang::ConstructJob(Compilation &C, const JobActi
-       // Default is dwarf-2 for Darwin, OpenBSD and FreeBSD.
-       const llvm::Triple &Triple = getToolChain().getTriple();
-       if (Triple.isOSDarwin() || Triple.getOS() == llvm::Triple::OpenBSD ||
--          Triple.getOS() == llvm::Triple::FreeBSD)
-+          Triple.getOS() == llvm::Triple::FreeBSD ||
-+          Triple.getOS() == llvm::Triple::Bitrig)
-         CmdArgs.push_back("-gdwarf-2");
-     } else if (A->getOption().matches(options::OPT_gdwarf_2))
-       CmdArgs.push_back("-gdwarf-2");
-@@ -6315,6 +6316,22 @@ void bitrig::Assemble::ConstructJob(Compilation &C, co
-                                     const char *LinkingOutput) const {
+--- tools/clang/lib/Driver/Tools.cpp.orig	Tue Feb  3 23:57:34 2015
++++ tools/clang/lib/Driver/Tools.cpp	Fri Feb 27 21:18:58 2015
+@@ -6380,6 +6380,22 @@ void bitrig::Assemble::ConstructJob(Compilation &C, co
+   claimNoWarnArgs(Args);
    ArgStringList CmdArgs;
  
 +  if (getToolChain().getArch() == llvm::Triple::arm) {
@@ -21,8 +11,8 @@
 +    if (MArch == "armv8" || MArch == "armv8a" || MArch == "armv8-a")
 +      CmdArgs.push_back("-mfpu=crypto-neon-fp-armv8");
 +
-+    StringRef ARMFloatABI = arm::getARMFloatABI(getToolChain().getDriver(), Args,
-+                                           getToolChain().getTriple());
++    StringRef ARMFloatABI = arm::getARMFloatABI(getToolChain().getDriver(),
++                                          Args, getToolChain().getTriple());
 +    CmdArgs.push_back(Args.MakeArgString("-mfloat-abi=" + ARMFloatABI));
 +
 +    Args.AddLastArg(CmdArgs, options::OPT_march_EQ);
@@ -33,7 +23,7 @@
    Args.AddAllArgValues(CmdArgs, options::OPT_Wa_COMMA,
                         options::OPT_Xassembler);
  
-@@ -6414,6 +6431,9 @@ void bitrig::Link::ConstructJob(Compilation &C, const 
+@@ -6479,6 +6495,9 @@ void bitrig::Link::ConstructJob(Compilation &C, const 
  
      StringRef MyArch;
      switch (getToolChain().getTriple().getArch()) {
