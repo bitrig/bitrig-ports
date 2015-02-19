@@ -4,7 +4,9 @@ MAINTAINER =		Christophe Prevotaux <c.prevotaux@rural-networks.com>
 
 PKGSPEC =		regina-rexx->=3.9
 
-MAN1 = 			regina-config.1
+WANTLIB += c m ncurses pthread
+
+MAN1 +=			regina-config.1
 MAN1 += 		regina.1
 MAN1 += 		rxqueue.1
 MAN1 += 		rxstack.1
