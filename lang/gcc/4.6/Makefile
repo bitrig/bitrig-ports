@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.77 2015/01/02 14:26:12 sthen Exp $
 
+BROKEN = 	needs work on bitrig
+
 ONLY_FOR_ARCHS = alpha amd64 hppa i386 powerpc sparc64
 DPB_PROPERTIES = parallel
 

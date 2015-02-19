@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.22 2015/01/22 17:47:52 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	win95-like window manager based on fvwm 2.x
 
 DISTNAME=	fvwm95-2.0.43a-Autoconf

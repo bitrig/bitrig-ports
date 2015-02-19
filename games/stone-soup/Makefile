@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2013/06/04 18:41:44 naddy Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT = 	dungeon crawl stone soup
 CATEGORIES = 	games
 REVISION =	1
@@ -31,7 +33,7 @@ MAKE_FLAGS = 	CC="${CC}" CXX="${CXX}" \
 MAKE_ENV +=	MODLUA_DEP_VERSION=${MODLUA_DEP_VERSION}
 MODULES = 	lang/lua
 WANTLIB = 	c m ${MODLUA_WANTLIB} sqlite3
-WANTLIB +=		c++ c++abi
+WANTLIB +=	c++ c++abi
 
 BUILD_DEPENDS = devel/bison \
 		graphics/pngcrush

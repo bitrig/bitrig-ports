@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2013/08/09 19:04:49 ajacoutot Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT =	platform game featuring buggers equipped with weapons
 
 V =		0.5.2

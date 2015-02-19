@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2013/03/11 11:07:39 espie Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	turn-based strategy engine
 
 DISTNAME=	lgeneral-0.5.0

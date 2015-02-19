@@ -1,6 +1,9 @@
 # $OpenBSD: Makefile,v 1.12 2014/10/27 21:06:25 kirby Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	Scheme Underground's implementation of R5RS
+#'
 
 V=		1.9
 DISTNAME=	scheme48-$V

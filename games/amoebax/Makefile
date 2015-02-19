@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2013/10/11 23:49:31 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	cute and addictive action-puzzle game
 
 DISTNAME= 	amoebax-0.2.1

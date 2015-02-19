@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.40 2014/12/23 11:32:30 dcoppa Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	open source clone of the game Transport Tycoon Deluxe
 
 V =		1.4.4

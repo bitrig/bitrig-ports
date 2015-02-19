@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.33 2014/11/05 11:43:59 sthen Exp $
 
+BROKEN=		needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	graphical multiplayer 3D tank war game

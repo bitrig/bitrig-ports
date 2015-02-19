@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2013/03/11 11:07:38 espie Exp $
 
+BROKEN =		needs work on bitrig
+
 COMMENT =		volleyball game with online play
 
 V =			1.0rc3

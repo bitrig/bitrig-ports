@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2013/05/26 09:30:55 kirby Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	essentially an Asteroids clone
 
 DISTNAME=	sdlroids-1.3.4
