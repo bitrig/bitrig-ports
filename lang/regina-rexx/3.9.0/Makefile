@@ -4,12 +4,7 @@ PKGSPEC =		regina-rexx->=3.9
 
 WANTLIB += c m ncurses pthread
 
-MAN1 +=			regina-config.1
-MAN1 += 		regina.1
-MAN1 += 		rxqueue.1
-MAN1 += 		rxstack.1
-
-AUTOCONF_VERSION = 	2.69
+AUTOCONF_VERSION = 	2.68
 AUTOMAKE_VERSION = 	1.15
 
 CONFIGURE_STYLE =	autoconf no-autoheader gnu
