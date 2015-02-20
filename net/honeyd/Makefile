@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.36 2013/03/21 08:46:34 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.37 2015/02/20 16:55:36 naddy Exp $
 
 SHARED_ONLY=	Yes
 
@@ -20,8 +20,6 @@ WANTLIB += 	${MODPY_WANTLIB} dnet>=1 pcre>=1 eventextra>=1
 .if ${MACHINE_ARCH} == "sparc64"
 PATCH_LIST=	patch-* align-*
 .endif
-
-USE_GROFF =	Yes
 
 MODULES=	lang/python
 LIB_DEPENDS=	net/libdnet \
