@@ -131,6 +131,9 @@ MASTER_SITE_GNOME+=	\
 	http://mirrors.ustc.edu.cn/gnome \
 	http://mirror.nbtelecom.com.br/gnome/
 
+MASTER_SITE_MATE+= \
+        http://pub.mate-desktop.org/releases/
+
 # mirror survey: http://www.cs.uu.nl/stats/mirmon/cpan.html
 MASTER_SITE_PERL_CPAN+=	\
 	http://mirror.sov.uk.goscomb.net/CPAN/modules/by-module/ \
