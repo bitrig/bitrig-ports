@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.15 2013/03/11 11:07:39 espie Exp $
 
-BROKEN=		needs work on bitrig
-
 COMMENT=	turn-based strategy engine
 
 DISTNAME=	lgeneral-0.5.0
@@ -22,6 +20,7 @@ LIB_DEPENDS=	devel/sdl \
 
 AUTOCONF_VERSION=2.13
 CONFIGURE_STYLE= autoconf
+CONFIGURE_ENV+= CFLAGS="${CFLAGS} -fgnu89-inline"
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/lgeneral
