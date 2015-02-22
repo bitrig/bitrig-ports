@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.53 2014/07/24 16:02:43 zhuk Exp $
+# $OpenBSD: Makefile,v 1.54 2015/02/22 15:27:43 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -6,10 +6,9 @@ COMMENT-main=	Tk 8.4 bindings for Perl
 COMMENT-demo=	demonstrate the features of ptk
 
 MODULES=	cpan
-VERSION=	804.032
+VERSION=	804.033
 DISTNAME=	Tk-${VERSION}
 PKGNAME-main=	p5-Tk-${VERSION}
-REVISION-main=	1
 PKGNAME-demo=	p5-Tk-demo-${VERSION}
 REVISION-demo=	0
 CATEGORIES=	x11 devel
@@ -18,6 +17,8 @@ CATEGORIES=	x11 devel
 PERMIT_PACKAGE_CDROM=	Yes
 
 MULTI_PACKAGES=	-main -demo
+
+MAKE_FLAGS=	OPTIMIZE="${CFLAGS}"
 
 WANTLIB-main=	${WANTLIB} X11 m z png
 LIB_DEPENDS-main= graphics/png
@@ -33,6 +34,6 @@ PKG_ARCH-demo=		*
 TEST_IS_INTERACTIVE=	x11
 
 pre-configure:
-	@${SUBST_CMD} ${WRKSRC}/PNG/Makefile.PL
+	perl -pi -e "s,/usr/local,${LOCALBASE}," ${WRKSRC}/JPEG/Makefile.PL
 
 .include <bsd.port.mk>
