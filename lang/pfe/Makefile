@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.22 2014/07/05 14:08:04 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 BROKEN-powerpc=	does not build, error: lvalue required as increment operand
 
 COMMENT=	Portable Forth Environment

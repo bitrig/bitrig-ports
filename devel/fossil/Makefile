@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.45 2015/01/19 16:07:12 jturner Exp $
 
+BROKEN =		needs work on bitrig
+
 COMMENT =		simple distributed software configuration management
 
 DISTNAME =		fossil-src-20150119112900

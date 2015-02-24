@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.66 2013/11/25 14:16:22 sthen Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	Data Display Debugger, graphical front-end for GDB, etc
 
 DISTNAME=	ddd-3.3.12

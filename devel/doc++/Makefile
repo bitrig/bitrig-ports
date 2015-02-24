@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.24 2015/01/21 06:13:46 bentley Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	documentation system for C, C++, IDL and Java
 
 DISTNAME=	doc++-3.4.10

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.27 2013/03/21 08:46:32 ajacoutot Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT =	Libedit interface to Tcl/Tk interpreters
 
 DISTNAME =	eltclsh-1.12

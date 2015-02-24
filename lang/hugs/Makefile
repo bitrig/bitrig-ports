@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.23 2013/10/18 15:44:52 miod Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT =	Haskell 98 interpreter
 
 DISTNAME =	hugs98-plus-Sep2006

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2014/09/07 18:49:32 stu Exp $
 
+BROKEN=			needs work on bitrig
+
 COMMENT =		graphical toolkit for Tcl
 
 DISTNAME =		tk8.6.2

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.30 2014/01/26 11:38:46 pascal Exp $
 
+BROKEN =	needs work on bitrig
+
 SHARED_ONLY =	Yes
 
 COMMENT=	virtual machine designed for interpreted languages

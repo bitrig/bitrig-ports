@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2014/08/22 04:16:31 bentley Exp $
 
+BROKEN =		needs work on bitrig
+
 COMMENT =		C++ class and template library
 
 V =			0.04.17

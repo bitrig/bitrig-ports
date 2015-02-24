@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2013/10/11 23:51:53 naddy Exp $
 
+BROKEN=			needs work on bitrig
+
 COMMENT=		display control panel for X.org SiS driver
 
 DISTNAME=		sisctrl-0.0.20051202

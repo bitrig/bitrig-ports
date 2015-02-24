@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2013/03/21 08:46:32 ajacoutot Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	open-source (C++ generating) VHDL simulator
 
 DISTNAME=	freehdl-0.0.7

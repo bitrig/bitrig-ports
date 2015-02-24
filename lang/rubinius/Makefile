@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.33 2014/12/30 21:50:24 landry Exp $
 
+BROKEN =	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 BROKEN-sparc64 = vm segfaults when building openssl extension

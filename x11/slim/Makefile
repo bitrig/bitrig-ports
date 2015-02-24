@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.31 2014/07/09 16:49:35 jasper Exp $
 
+BROKEN=		needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	simple login manager

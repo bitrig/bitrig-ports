@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2014/01/08 11:54:12 sthen Exp $
 
+BROKEN=			needs work on bitrig
+
 ONLY_FOR_ARCHS=		amd64 i386
 
 COMMENT=		Prolog compiler

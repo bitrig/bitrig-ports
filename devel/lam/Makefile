@@ -1,6 +1,8 @@
 # $OpenBSD: Makefile,v 1.24 2013/03/21 08:45:15 ajacoutot Exp $
 # Original from: Yannick Cote
 
+BROKEN=			needs work on bitrig
+
 DISTNAME=		lam-6.5.9
 REVISION =		3
 SHARED_LIBS +=  lamf77mpi	0.0	# .0.0

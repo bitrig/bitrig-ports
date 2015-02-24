@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2014/11/12 02:35:29 juanfra Exp $
 
+BROKEN =		needs work on bitrig
+
 BROKEN-hppa =		segfault while racket compiles XFORMS (at xsrc)
 BROKEN-mips64el =	sigbus while racket compiles XFORMS (at xsrc)
 BROKEN-powerpc =	racket builds but does not pass the tests (with or without JIT)

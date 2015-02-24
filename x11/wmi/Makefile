@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2013/10/11 23:51:54 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	window manager improved - key driven window manager
 
 DISTNAME=	wmi-10

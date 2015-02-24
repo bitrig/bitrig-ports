@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.5 2015/02/03 13:24:19 pascal Exp $
 
+BROKEN =		needs work on bitrig
+
 ONLY_FOR_ARCHS =	amd64 arm i386 mips64el
 
 SHARED_ONLY =		Yes

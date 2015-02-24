@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2014/06/18 01:17:22 william Exp $
 
+BROKEN=			needs work on bitrig
+
 COMMENT=		tree window manager
 DISTNAME=		treewm-0.4.5
 REVISION=		2
