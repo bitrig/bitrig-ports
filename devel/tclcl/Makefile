@@ -14,7 +14,7 @@ HOMEPAGE=	http://otcl-tclcl.sourceforge.net/tclcl/
 PERMIT_PACKAGE_CDROM=   Yes
 
 MODULES +=	x11/tk
-WANTLIB=		c m ++ otcl>=1
+WANTLIB=		c m otcl>=1
 WANTLIB+=		c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=otcl-tclcl/}
