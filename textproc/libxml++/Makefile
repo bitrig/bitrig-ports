@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.27 2014/09/03 15:03:33 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	C++ wrapper for the libxml XML parser library
 
 GNOME_VERSION=	2.36.0

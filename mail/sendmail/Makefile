@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2015/01/29 16:32:04 okan Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT-main =		mother of Mail Transfer Agents
 COMMENT-libmilter =	mail filter support library for sendmail
 

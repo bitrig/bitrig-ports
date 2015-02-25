@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2015/01/24 11:11:15 landry Exp $
 
+BROKEN =		needs work on bitrig
+
 BROKEN-mips64 =		missing atomic ops
 BROKEN-mips64el =	missing atomic ops
 BROKEN-hppa =		missing atomic ops

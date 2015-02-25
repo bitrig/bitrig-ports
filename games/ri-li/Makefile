@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.10 2013/03/11 11:07:40 espie Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	drive a toy wood engine
 
 DISTNAME=	Ri-li-2.0.1

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.28 2014/10/22 19:24:53 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	perl interface to the Glib libraries

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2014/11/04 15:08:18 dcoppa Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		YAML parser and emitter in C++
 DISTNAME =		yaml-cpp-0.5.1
 REVISION =		1

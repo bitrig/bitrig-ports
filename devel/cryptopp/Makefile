@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2014/04/28 12:43:10 bcallah Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT = 	C++ library of cryptographic algorithms
 CATEGORIES = 	devel security
 REVISION=		1
