@@ -67,8 +67,8 @@ $OpenBSD: patch-build_common_gypi,v 1.31 2015/01/24 18:07:46 sthen Exp $
        'make_global_settings': [
 -        ['CC', '<(make_clang_dir)/bin/clang'],
 -        ['CXX', '<(make_clang_dir)/bin/clang++'],
-+        ['CC', '/usr/local/bin/clang'],
-+        ['CXX', '/usr/local/bin/clang++'],
++        ['CC', '/usr/bin/clang'],
++        ['CXX', '/usr/bin/clang++'],
          ['CC.host', '$(CC)'],
          ['CXX.host', '$(CXX)'],
        ],
