@@ -3,7 +3,7 @@
 COMMENT=	lightweight image viewer
 
 DISTNAME=	feh-2.12
-REVISION=	0
+REVISION=	1
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	graphics
 
@@ -25,10 +25,11 @@ RUN_DEPENDS=	graphics/jpeg
 
 RUN_DEPENDS+=	devel/desktop-file-utils
 
-CFLAGS+=	-I${LOCALBASE}/include \
+CPPFLAGS+=	-I${LOCALBASE}/include \
 		-I${X11BASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib -L${X11BASE}/lib
-MAKE_FLAGS=	LDFLAGS="${LDFLAGS}" man_dir="${DESTDIR}${PREFIX}/man" \
+MAKE_FLAGS=	LDFLAGS="${LDFLAGS}" CPPFLAGS="${CPPFLAGS}" \
+		man_dir="${DESTDIR}${PREFIX}/man" \
 		example_dir="${DESTDIR}${PREFIX}/share/examples/feh"
 FAKE_FLAGS=	PREFIX="${PREFIX}"
 
