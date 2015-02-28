@@ -30,9 +30,9 @@ _MODCLANG_ARCH_USES = Yes
 _MODCLANG_LINKS =
 .if ${_MODCLANG_ARCH_USES:L} == "yes"
 
-BITRIG_LLVM_VERSION=	3.4
+BITRIG_LLVM_VERSION=	3.6.0
 .if ${MODCLANG_VERSION} == ${BITRIG_LLVM_VERSION}
-#3.4 comes with comp, not from ports
+#3.6.0 comes with comp, not from ports
 #BUILD_DEPENDS += devel/llvm
 .else
 BUILD_DEPENDS += devel/llvm>=${MODCLANG_VERSION}
