@@ -3,7 +3,7 @@
 COMMENT=		ISO 9660 filesystem and CD/DVD/BD creation tools
 
 DISTNAME=		cdrtools-3.00
-REVISION=		2
+REVISION=		3
 CATEGORIES=		sysutils
 HOMEPAGE=		http://cdrtools.sourceforge.net/private/cdrtools.html
 
@@ -17,6 +17,7 @@ MODULES=		converters/libiconv \
 			devel/gettext
 LIB_DEPENDS=		converters/libiconv \
 			devel/gettext
+RUN_DEPENDS=		${LIB_DEPENDS}
 BUILD_DEPENDS=		devel/m4
 USE_GMAKE=		Yes
 
