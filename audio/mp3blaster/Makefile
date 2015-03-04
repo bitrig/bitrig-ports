@@ -3,7 +3,6 @@
 COMMENT=	text console audio player with an interactive interface
 
 DISTNAME=	mp3blaster-3.2.5
-REVISION=	0
 CATEGORIES=	audio
 HOMEPAGE=	http://mp3blaster.sourceforge.net/
 REVISION=	1

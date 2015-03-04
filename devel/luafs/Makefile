@@ -12,8 +12,6 @@ CATEGORIES =	devel
 
 HOMEPAGE =	http://www.keplerproject.org/luafilesystem/
 
-MAINTAINER =	Florian Stinglmayr <florian@n0la.org>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -13,7 +13,6 @@ GH_PROJECT =		ninja
 GH_TAGNAME =		v$V
 GH_COMMIT =		3309498174411e02e7680ea8b470bb7d1d70bdb8
 DISTNAME =		${GH_PROJECT}-$V
-REVISION =		0
 
 CATEGORIES =		devel
 HOMEPAGE =		http://martine.github.io/ninja/

@@ -3,7 +3,6 @@
 COMMENT=	GNU version of the traditional tape archiver
 
 DISTNAME=	tar-1.28
-REVISION=	0
 PKGNAME=	g${DISTNAME}
 REVISION=	0
 CATEGORIES=	archivers

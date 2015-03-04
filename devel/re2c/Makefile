@@ -3,7 +3,6 @@
 COMMENT=		C-based regular expression scanner generator
 
 DISTNAME=		re2c-0.13.6
-REVISION=		0
 CATEGORIES=		devel
 HOMEPAGE=		http://re2c.org/
 REVISION=		1

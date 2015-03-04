@@ -5,7 +5,6 @@ COMMENT=		ICQ console client with encryption support
 DISTNAME=		ysmv7_2_9_9_1
 PKGNAME=		${DISTNAME:S/_/-/:S/_/./g}
 CATEGORIES=		net
-REVISION=		0
 
 REVISION=		1
 

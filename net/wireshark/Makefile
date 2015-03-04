@@ -29,8 +29,6 @@ USE_GMAKE =	Yes
 # tools/pidl is GPLv3 or later. See COPYING.
 PERMIT_PACKAGE_CDROM =	Yes
 
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
-
 MODLUA_VERSION = 5.2
 MODULES =	lang/lua lang/python
 MODLUA_SA =	Yes
