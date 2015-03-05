@@ -1,6 +1,6 @@
 $OpenBSD$
 --- gas/config/tc-arm.c.orig	Tue Nov 26 12:37:33 2013
-+++ gas/config/tc-arm.c	Mon May 12 16:24:04 2014
++++ gas/config/tc-arm.c	Thu Mar  5 21:01:51 2015
 @@ -106,7 +106,7 @@ enum arm_float_abi
  #ifndef FPU_DEFAULT
  # ifdef TE_LINUX
@@ -47,6 +47,42 @@ $OpenBSD$
  
  static int in_it_block (void);
  
+@@ -22564,7 +22566,7 @@ md_apply_fix (fixS *	fixP,
+        {
+ 	 bfd_vma insn;
+ 	 bfd_vma encoded_addend;
+-	 bfd_vma addend_abs = abs (value);
++	 bfd_vma addend_abs = labs (value);
+ 
+ 	 /* Check that the absolute value of the addend can be
+ 	    expressed as an 8-bit constant plus a rotation.  */
+@@ -22605,7 +22607,7 @@ md_apply_fix (fixS *	fixP,
+       if (!seg->use_rela_p)
+ 	{
+ 	  bfd_vma insn;
+-	  bfd_vma addend_abs = abs (value);
++	  bfd_vma addend_abs = labs (value);
+ 
+ 	  /* Check that the absolute value of the addend can be
+ 	     encoded in 12 bits.  */
+@@ -22644,7 +22646,7 @@ md_apply_fix (fixS *	fixP,
+       if (!seg->use_rela_p)
+ 	{
+ 	  bfd_vma insn;
+-	  bfd_vma addend_abs = abs (value);
++	  bfd_vma addend_abs = labs (value);
+ 
+ 	  /* Check that the absolute value of the addend can be
+ 	     encoded in 8 bits.  */
+@@ -22684,7 +22686,7 @@ md_apply_fix (fixS *	fixP,
+       if (!seg->use_rela_p)
+ 	{
+ 	  bfd_vma insn;
+-	  bfd_vma addend_abs = abs (value);
++	  bfd_vma addend_abs = labs (value);
+ 
+ 	  /* Check that the absolute value of the addend is a multiple of
+ 	     four and, when divided by four, fits in 8 bits.  */
 @@ -23489,8 +23491,8 @@ md_begin (void)
      }
    else if (!mfpu_opt)
