@@ -1,6 +1,6 @@
 $OpenBSD$
 --- gas/config/tc-arm.c.orig	Tue Nov 26 12:37:33 2013
-+++ gas/config/tc-arm.c	Thu Mar  5 21:01:51 2015
++++ gas/config/tc-arm.c	Thu Mar  5 21:43:41 2015
 @@ -106,7 +106,7 @@ enum arm_float_abi
  #ifndef FPU_DEFAULT
  # ifdef TE_LINUX
@@ -52,7 +52,7 @@ $OpenBSD$
  	 bfd_vma insn;
  	 bfd_vma encoded_addend;
 -	 bfd_vma addend_abs = abs (value);
-+	 bfd_vma addend_abs = labs (value);
++	 bfd_vma addend_abs = abs ((int)value);
  
  	 /* Check that the absolute value of the addend can be
  	    expressed as an 8-bit constant plus a rotation.  */
@@ -61,7 +61,7 @@ $OpenBSD$
  	{
  	  bfd_vma insn;
 -	  bfd_vma addend_abs = abs (value);
-+	  bfd_vma addend_abs = labs (value);
++	  bfd_vma addend_abs = abs ((int)value);
  
  	  /* Check that the absolute value of the addend can be
  	     encoded in 12 bits.  */
@@ -70,7 +70,7 @@ $OpenBSD$
  	{
  	  bfd_vma insn;
 -	  bfd_vma addend_abs = abs (value);
-+	  bfd_vma addend_abs = labs (value);
++	  bfd_vma addend_abs = abs ((int)value);
  
  	  /* Check that the absolute value of the addend can be
  	     encoded in 8 bits.  */
@@ -79,7 +79,7 @@ $OpenBSD$
  	{
  	  bfd_vma insn;
 -	  bfd_vma addend_abs = abs (value);
-+	  bfd_vma addend_abs = labs (value);
++	  bfd_vma addend_abs = abs ((int)value);
  
  	  /* Check that the absolute value of the addend is a multiple of
  	     four and, when divided by four, fits in 8 bits.  */
