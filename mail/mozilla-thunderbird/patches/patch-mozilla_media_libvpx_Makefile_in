@@ -1,0 +1,20 @@
+--- mozilla/media/libvpx/Makefile.in.orig	Wed Mar  4 19:22:18 2015
++++ mozilla/media/libvpx/Makefile.in	Wed Mar  4 19:23:07 2015
+@@ -54,7 +54,7 @@ else
+ # asm. This is the preferred method. However we need to strip out CFLAGS that
+ # cause LTO because then the resulting .S file is useless.
+ 
+-vpx_scale_asm_offsets.s: CFLAGS := -DINLINE_ASM
++vpx_scale_asm_offsets.s: CFLAGS := -DINLINE_ASM -fno-integrated-as
+ 
+ OFFSET_PATTERN := '^[a-zA-Z0-9_]* EQU'
+ 
+@@ -71,7 +71,7 @@ vpx_scale_asm_offsets.asm: vpx_scale_asm_offsets.s
+ 
+ GARBAGE += vpx_scale_asm_offsets.s vpx_scale_asm_offsets.asm
+ 
+-vp8_asm_enc_offsets.s: CFLAGS := -DINLINE_ASM
++vp8_asm_enc_offsets.s: CFLAGS := -DINLINE_ASM -fno-integrated-as
+ 
+ vp8_asm_enc_offsets.s: $(srcdir)/vp8/encoder/vp8_asm_enc_offsets.c
+ 	$(REPORT_BUILD)

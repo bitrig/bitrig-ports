@@ -1,0 +1,11 @@
+--- mozilla/js/src/frontend/BytecodeCompiler.cpp.orig	Fri Jan  9 20:28:44 2015
++++ mozilla/js/src/frontend/BytecodeCompiler.cpp	Wed Mar  4 19:59:03 2015
+@@ -544,7 +544,7 @@ CompileFunctionBody(JSContext *cx, MutableHandleFuncti
+ 
+     RootedScriptSource sourceObject(cx, CreateScriptSourceObject(cx, options));
+     if (!sourceObject)
+-        return nullptr;
++        return false;
+     ScriptSource *ss = sourceObject->source();
+ 
+     SourceCompressionTask sct(cx);

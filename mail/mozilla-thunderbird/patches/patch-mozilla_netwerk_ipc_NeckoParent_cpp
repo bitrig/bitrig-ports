@@ -1,0 +1,11 @@
+--- mozilla/netwerk/ipc/NeckoParent.cpp.orig	Fri Jan  9 20:28:59 2015
++++ mozilla/netwerk/ipc/NeckoParent.cpp	Wed Mar  4 19:59:03 2015
+@@ -359,7 +359,7 @@ NeckoParent::RecvPRtspChannelConstructor(
+   RtspChannelParent* p = static_cast<RtspChannelParent*>(aActor);
+   return p->Init(aConnectArgs);
+ #else
+-  return nullptr;
++  return false;
+ #endif
+ }
+ 

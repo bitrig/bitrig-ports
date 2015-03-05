@@ -5,6 +5,7 @@ COMMENT-lightning =	Mozilla Thunderbird calendar extension
 
 # Don't forget to bump mail/thunderbird-i18n after updates.
 
+REVISION =		0
 MOZILLA_VERSION =	31.4.0
 MOZILLA_BRANCH =	esr31
 MOZILLA_PROJECT =	thunderbird
