@@ -3,6 +3,7 @@ SUBDIR =
 SUBDIR += bitrig-binutils-2.24
 .else
 SUBDIR += bitrig-binutils
+SUBDIR += bitrig-binutils-2.24
 SUBDIR += bitrig-binutils-2.24,armcross
 .endif
 
