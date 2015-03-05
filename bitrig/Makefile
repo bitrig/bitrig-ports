@@ -3,7 +3,8 @@ SUBDIR =
 SUBDIR += bitrig-binutils-2.24
 .else
 SUBDIR += bitrig-binutils
-SUBDIR += bitrig-binutils-2.24
+# Don't build 2.24 now, it has no W^X and might be installed instead
+#SUBDIR += bitrig-binutils-2.24
 SUBDIR += bitrig-binutils-2.24,armcross
 .endif
 
