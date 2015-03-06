@@ -32,6 +32,10 @@ CONFIGURE_ARGS =	--program-suffix=19 \
 			--enable-ipv6 \
 			--disable-option-checking
 
+.if ${MACHINE_ARCH} == "arm"
+CONFIGURE_ARGS+=	--with-setjmp-type=_setjmp
+.endif
+
 CONFIGURE_ENV =		LIBruby19_VERSION=${LIBruby19_VERSION} \
 			ac_cv_prog_DOXYGEN="" \
 			ac_cv_prog_DOT=""

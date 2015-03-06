@@ -31,6 +31,10 @@ CONFIGURE_ARGS =	--program-suffix=22 \
 			--without-bundled-libffi \
 			--disable-option-checking
 
+.if ${MACHINE_ARCH} == "arm"
+CONFIGURE_ARGS+=	--with-setjmp-type=_setjmp
+.endif
+
 CONFIGURE_ENV =		LIBruby22_VERSION=${LIBruby22_VERSION} \
 			ac_cv_prog_DOXYGEN="" \
 			ac_cv_prog_DOT="" \
