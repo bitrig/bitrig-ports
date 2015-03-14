@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2014/05/30 13:14:09 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2015/03/14 20:52:46 naddy Exp $
 
 COMMENT =	web frontend for git repositories
 
@@ -21,7 +21,7 @@ USE_GMAKE =	yes
 MODULES =	converters/libiconv
 
 PREFIX =	${VARBASE}/www
-MAKE_FLAGS +=	V=1 NEEDS_LIBICONV=1 LDFLAGS+='-static -L${LOCALBASE}/lib'
+MAKE_FLAGS +=	V=1 NEEDS_LIBICONV=1 LDFLAGS+='${STATIC} -L${LOCALBASE}/lib'
 
 post-extract:
 	rmdir ${WRKSRC}/git
