@@ -95,4 +95,17 @@ do-install:
 	${INSTALL_PROGRAM} -p ${WRKDIST}/pkg/tool/${GOOS}_${GOARCH}/* \
 		${GOROOT}/pkg/tool/${GOOS}_${GOARCH}
 
+build-bootgo:
+	@rm -rf ${WRKDIR}/tmp
+	@mkdir -p ${WRKDIR}/tmp/bootgo
+	@mkdir -p ${WRKDIR}/tmp/bootgo-libs
+	@cd ${WRKDIST} && tar -cf - * | tar -C ${WRKDIR}/tmp/bootgo -xf -
+	@cd ${WRKDIR}/tmp/bootgo && rm -rf api blog doc misc test
+	@cd ${WRKDIR}/tmp/bootgo && find . -type d -name testdata | xargs rm -rf
+	@find ${WRKDIR}/tmp/bootgo -type f -perm -500 -exec ldd {} \; 2>/dev/null | \
+		grep rlib | cut -d"/" -f 2-20 | sort -u | grep -v "\.so$$" | \
+		xargs -I % cp /% ${WRKDIR}/tmp/bootgo-libs
+	@cd ${WRKDIR}/tmp && tar czf go-bootgo-${ARCH}-$$(date +%Y%m%d).tar.gz bootgo*
+	@echo "New bootgo is located at ${WRKDIR}/tmp/go-bootgo-${ARCH}-$$(date +%Y%m%d).tar.gz"
+
 .include <bsd.port.mk>
