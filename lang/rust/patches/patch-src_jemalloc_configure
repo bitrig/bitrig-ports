@@ -1,0 +1,10 @@
+--- src/jemalloc/configure.orig	Sat Mar 14 13:54:34 2015
++++ src/jemalloc/configure	Sat Mar 14 13:54:44 2015
+@@ -4885,6 +4885,7 @@ case "${host}" in
+ 	CFLAGS="$CFLAGS"
+ 	abi="elf"
+ 	$as_echo "#define JEMALLOC_PURGE_MADVISE_FREE  " >>confdefs.h
++	sbrk_deprecated="1"
+ 
+ 	;;
+   *-*-linux*)
