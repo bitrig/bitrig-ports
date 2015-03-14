@@ -1,2 +1,4 @@
-SHA256 (go-20130411.src.tar.gz) = UM2jHzexKdO4TH3yXVuHXJxL+HrRVqpL14BhesjVFt8=
-SIZE (go-20130411.src.tar.gz) = 79007306
+SHA256 (go-20150403.src.tar.gz) = XOVlWOJmXyYYV4hWZAVwU/cbpx4ypDiIPl8mRKjNpLk=
+SHA256 (go-bootgo-amd64-20150403.tar.gz) = VOyJJGqZdjUXZtS2x69rEo6eaaSzqKcbe1DxgPMv6fs=
+SIZE (go-20150403.src.tar.gz) = 81368697
+SIZE (go-bootgo-amd64-20150403.tar.gz) = 30870488

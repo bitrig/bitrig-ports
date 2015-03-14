@@ -4,26 +4,27 @@ ONLY_FOR_ARCHS =	amd64 i386
 
 COMMENT =		Go programming language
 
-VERSION =		20130411
+VERSION =		20150403
 EXTRACT_SUFX =		.src.tar.gz
 DISTNAME = 		go-${VERSION}
 PKGNAME = 		go-${VERSION}
 CATEGORIES =		lang
-REVISION =		1
 
+HOMEPAGE =		http://golang.org/
 
-HOMEPAGE =		http://www.golang.org/
+DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
 
 # software: BSD, documentation: CC-BY-3.0
-PERMIT_PACKAGE_CDROM =	 Yes
+PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m
+WANTLIB =		c m pthread
 
-MASTER_SITES =		http://go.googlecode.com/files/
+MASTER_SITES =		http://mirror2.us.bitrig.org/pub/bitrig/distfiles/ \
+			http://bitrig.antarctica.no/pub/bitrig/distfiles/
 
 BUILD_DEPENDS =		shells/bash
-# needs to be installed for hg target
-#			devel/mercurial
+# needs to be installed for git target
+#			devel/git
 
 SEPARATE_BUILD =	simple
 CONFIGURE_STYLE =	None
@@ -39,21 +40,16 @@ GOROOT = 		${PREFIX}/go
 .if ${MACHINE_ARCH} == "amd64"
 GOARCH =		amd64
 EXEPREFIX =		6
-PKG_ARGS +=		-Damd64=1
-PKG_ARGS +=		-Di386=0
+DISTFILES +=		go-bootgo-amd64-20150403.tar.gz
 .elif ${MACHINE_ARCH} == "i386"
 GOARCH =		386
 EXEPREFIX =		8
-PKG_ARGS +=		-Damd64=0
-PKG_ARGS +=		-Di386=1
-.else
-PKG_ARGS += 		-Damd64=0 -Di386=0
 .endif
 
 GOCFG =			/${GOOS}_${GOARCH}
 GOEXE =			${GOCFG}/${EXEPREFIX}
 
-TMPHG = ${DISTDIR}/tmphg
+TMPGIT = ${DISTDIR}/tmpgit
 
 do-configure:
 .	if ${GOARCH} == "unknown"
@@ -64,50 +60,54 @@ do-configure:
 
 do-build:
 	@cd ${WRKSRC} && \
+		CC="${CC}" \
+		CXX="${CXX}" \
 		GOROOT=${WRKDIST} \
 		GOBIN=${WRKDIST}/bin \
+		GOROOT_BOOTSTRAP=${WRKDIR}/bootgo \
+		LD_LIBRARY_PATH=${WRKDIR}/bootgo-libs \
 		GOROOT_FINAL=${GOROOT} ./make.bash --no-banner
 
-do-regress:
+do-test:
 	@cd ${WRKSRC} && \
 		ulimit -n 256 -d 2097152 && \
-		PATH=${PATH}:${WRKDIST}/bin GOROOT=${WRKDIST} ./run.bash
+		PATH=${WRKDIST}/bin:${PATH} GOROOT=${WRKDIST} ./run.bash
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKDIST}/bin/go{,doc,fmt} ${PREFIX}/bin
+	${INSTALL_PROGRAM} -p ${WRKDIST}/bin/go{,fmt} ${PREFIX}/bin
 
 	${INSTALL_PROGRAM_DIR} ${GOROOT}
 
 	@cd ${WRKDIST} && \
 		find . ! -name .hg\* -type f -maxdepth 1 \
-			-exec ${INSTALL_DATA} {} \
+			-exec ${INSTALL_DATA} -p {} \
 			${GOROOT} \;
 
-.	for dir in doc include lib src pkg misc
+.	for dir in doc lib misc src pkg
 		@cd ${WRKDIST} && \
 			find ${dir} -type d \
 				-exec ${INSTALL_DATA_DIR} \
 				${GOROOT}/{} \;
 		@cd ${WRKDIST} && \
 			find ${dir} ! -name \*.orig -type f \
-				-exec ${INSTALL_DATA} {} \
+				-exec ${INSTALL_DATA} -p {} \
 				${GOROOT}/{} \;
 .	endfor
 
 	# These get installed via `find' however we need them to be executable
 	${INSTALL_PROGRAM_DIR} ${GOROOT}/pkg/tool/${GOOS}_${GOARCH}
-	${INSTALL_PROGRAM} ${WRKDIST}/pkg/tool/${GOOS}_${GOARCH}/* \
+	${INSTALL_PROGRAM} -p ${WRKDIST}/pkg/tool/${GOOS}_${GOARCH}/* \
 		${GOROOT}/pkg/tool/${GOOS}_${GOARCH}
 
-hg:
-	@mkdir -p ${TMPHG}
-	if test -d ${TMPHG}/go; then \
-		(cd ${TMPHG}/go && hg pull && hg update) \
+git:
+	@mkdir -p ${TMPGIT}
+	if test -d ${TMPGIT}/go; then \
+		(cd ${TMPGIT}/go && git pull) \
 	else \
-		(cd ${TMPHG} && hg clone https://code.google.com/p/go/) \
+		(cd ${TMPGIT} && git clone https://go.googlesource.com/go) \
 	fi
-	(cd ${TMPHG} && tar -zcf ${DISTDIR}/go-`date "+%Y%m%d"`.src.tar.gz go)
+	(cd ${TMPGIT} && tar -zcf ${DISTDIR}/go-`date "+%Y%m%d"`.src.tar.gz go)
 	make makesum
-	rm -rf ${TMPHG}
+	rm -rf ${TMPGIT}
 
 .include <bsd.port.mk>
