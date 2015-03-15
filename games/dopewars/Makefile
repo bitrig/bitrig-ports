@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.60 2013/10/11 23:49:36 naddy Exp $
+# $OpenBSD: Makefile,v 1.61 2015/03/15 10:05:04 jasper Exp $
 
 COMMENT=	game where you deal drugs on the streets of NY
 
