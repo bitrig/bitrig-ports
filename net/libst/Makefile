@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/03/11 11:35:48 espie Exp $
+# $OpenBSD: Makefile,v 1.18 2015/03/16 18:07:52 naddy Exp $
 
 # see md.h, add others
 ONLY_FOR_ARCHS =	amd64 alpha i386 sparc
@@ -10,6 +10,7 @@ PKGNAME =		lib${DISTNAME}
 REVISION =		0
 SHARED_LIBS =		st	2.0
 CATEGORIES =		net devel
+REVISION =		0
 
 HOMEPAGE =		http://state-threads.sourceforge.net/
 

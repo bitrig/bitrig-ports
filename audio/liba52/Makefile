@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2014/10/26 15:27:03 ratchov Exp $
+# $OpenBSD: Makefile,v 1.24 2015/03/16 18:07:35 naddy Exp $
 
 COMMENT =	free library for decoding ATSC A/52 streams, aka AC-3
 

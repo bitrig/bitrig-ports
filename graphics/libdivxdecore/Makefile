@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/03/21 08:45:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.16 2015/03/16 18:07:47 naddy Exp $
 
 COMMENT=	opendivx decoding API
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/08/07 15:37:09 naddy Exp $
+# $OpenBSD: Makefile,v 1.23 2015/03/16 18:07:43 naddy Exp $
 
 COMMENT =		library for USB device access from userspace
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2015/01/24 13:46:44 schwarze Exp $
+# $OpenBSD: Makefile,v 1.27 2015/03/16 18:07:38 naddy Exp $
 
 COMMENT =	convert various Microsoft formats into HTML/PNG
 

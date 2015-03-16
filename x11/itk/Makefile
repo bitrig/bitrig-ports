@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 11:46:13 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2015/03/16 18:07:59 naddy Exp $
 
 COMMENT=	build mega-widgets using the Itcl object system
 

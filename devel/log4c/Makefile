@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/11/03 07:52:01 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2015/03/16 18:07:43 naddy Exp $
 
 COMMENT=	logging for c library
 DISTNAME=	log4c-1.2.1

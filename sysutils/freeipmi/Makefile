@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/11/09 23:19:03 naddy Exp $
+# $OpenBSD: Makefile,v 1.18 2015/03/16 18:07:55 naddy Exp $
 
 # needs machine/sysarch.h & machine/pio.h
 ONLY_FOR_ARCHS=	amd64 arm i386

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2013/03/21 08:45:15 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.30 2015/03/16 18:07:42 naddy Exp $
 
 COMMENT=	GNUstep/OPENSTEP property lists compatibility library
 

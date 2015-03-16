@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/11/25 14:16:23 sthen Exp $
+# $OpenBSD: Makefile,v 1.7 2015/03/16 18:07:55 naddy Exp $
 
 COMMENT =	XML and HTML processing toolkit
 DISTNAME =	arabica-2010-November
@@ -6,6 +6,7 @@ PKGNAME =	arabica-2010.11
 REVISION =	1
 CATEGORIES =	textproc
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=arabica/}
+REVISION =	0
 
 HOMEPAGE =	http://www.jezuk.co.uk/cgi-bin/view/arabica
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/21 08:46:34 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2015/03/16 18:07:52 naddy Exp $
 
 COMMENT=	library/tools (incl smilint) to access SMI MIB information
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2014/04/03 13:46:47 pirofti Exp $
+# $OpenBSD: Makefile,v 1.19 2015/03/16 18:07:42 naddy Exp $
 
 COMMENT =	clone of backtrace facility found in the GNU libc
 

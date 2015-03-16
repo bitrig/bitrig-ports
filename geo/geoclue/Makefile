@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2014/09/13 16:36:53 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.24 2015/03/16 18:07:45 naddy Exp $
 
 COMMENT=		modular geoinformation service on top of D-Bus
 

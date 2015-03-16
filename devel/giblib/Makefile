@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2013/03/21 08:45:15 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.20 2015/03/16 18:07:40 naddy Exp $
 
 COMMENT=		utility library including a imlib2 wrapper
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2013/03/21 08:45:15 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.20 2015/03/16 18:07:41 naddy Exp $
 
 COMMENT=		library of assorted spiffy things
 

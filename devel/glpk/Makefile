@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/11/09 23:19:02 naddy Exp $
+# $OpenBSD: Makefile,v 1.9 2015/03/16 18:07:40 naddy Exp $
 
 COMMENT=	GNU Linear Programming Kit
 

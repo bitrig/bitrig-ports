@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2013/03/11 11:10:53 espie Exp $
+# $OpenBSD: Makefile,v 1.29 2015/03/16 18:07:47 naddy Exp $
 
 COMMENT=		high-performance 2D graphics library
 

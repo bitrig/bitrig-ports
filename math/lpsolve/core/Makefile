@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 11:23:55 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2015/03/16 18:07:50 naddy Exp $
 
 COMMENT =		mixed integer linear programming solver
 

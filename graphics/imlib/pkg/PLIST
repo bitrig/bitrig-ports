@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.13 2011/05/11 06:56:43 ajacoutot Exp $
+@comment $OpenBSD: PLIST,v 1.14 2015/03/16 18:07:47 naddy Exp $
 bin/imlib-config
 @bin bin/imlib_config
 include/Imlib.h
@@ -13,7 +13,6 @@ lib/libImlib.la
 lib/libgdk_imlib.a
 lib/libgdk_imlib.la
 @lib lib/libgdk_imlib.so.${LIBgdk_imlib_VERSION}
-lib/pkgconfig/
 lib/pkgconfig/imlib.pc
 lib/pkgconfig/imlibgdk.pc
 @man man/man1/imlib-config.1

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/08/09 11:23:25 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2015/03/16 18:07:54 naddy Exp $
 
 COMMENT = 	library to secure any kind of communication streams
 

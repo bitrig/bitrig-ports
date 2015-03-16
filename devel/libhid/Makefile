@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/02/09 12:58:56 naddy Exp $
+# $OpenBSD: Makefile,v 1.11 2015/03/16 18:07:42 naddy Exp $
 
 COMMENT =	user-space USB HID access library written in C
 

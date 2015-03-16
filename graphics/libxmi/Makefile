@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/11/09 23:19:03 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2015/03/16 18:07:48 naddy Exp $
 
 COMMENT =		library for rasterizing 2-D vector graphics
 

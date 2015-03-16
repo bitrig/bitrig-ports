@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2013/03/21 08:46:33 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.29 2015/03/16 18:07:50 naddy Exp $
 
 COMMENT =	Red Hat package manager
 

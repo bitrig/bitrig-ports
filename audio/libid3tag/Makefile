@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/03/21 08:45:12 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.18 2015/03/16 18:07:36 naddy Exp $
 
 COMMENT=	library for reading ID3 tags
 

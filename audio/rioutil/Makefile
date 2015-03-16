@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2014/07/19 22:20:28 naddy Exp $
+# $OpenBSD: Makefile,v 1.18 2015/03/16 18:07:36 naddy Exp $
 
 COMMENT=		utility for Rio mp3 players
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/03/21 08:45:12 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.12 2015/03/16 18:07:34 naddy Exp $
 
 COMMENT=	acoustic decoder for CMU Sphinx3 speech recognition system
 

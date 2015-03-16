@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/10/24 15:18:00 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.12 2015/03/16 18:07:41 naddy Exp $
 
 COMMENT=		configuration file parser library
 DISTNAME=		confuse-2.7

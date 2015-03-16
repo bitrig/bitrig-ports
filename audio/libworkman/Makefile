@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/03/10 22:55:03 espie Exp $
+# $OpenBSD: Makefile,v 1.16 2015/03/16 18:07:36 naddy Exp $
 
 COMMENT=		multi-platform CD-Player library
 

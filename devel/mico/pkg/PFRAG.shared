@@ -1,6 +1,0 @@
-@comment $OpenBSD: PFRAG.shared,v 1.6 2010/09/22 08:42:53 landry Exp $
-lib/libmico${V}.so
-lib/libmicoaux${V}.so
-lib/libmicocoss${V}.so
-lib/libmicoir${V}.so
-lib/libmicox${V}.so

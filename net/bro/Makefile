@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/11/05 11:43:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.11 2015/03/16 18:07:51 naddy Exp $
 
 COMMENT=	highly flexible sniffer/NIDS
 
@@ -6,7 +6,7 @@ V=		1.4
 DISTNAME=	bro-${V}-release
 PKGNAME=	bro-${V}
 
-REVISION=	3
+REVISION=	4
 
 SHARED_LIBS= 	broccoli	0.0	# .2.0
 

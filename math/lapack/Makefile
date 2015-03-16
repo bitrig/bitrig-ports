@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/03/11 11:23:55 espie Exp $
+# $OpenBSD: Makefile,v 1.23 2015/03/16 18:07:50 naddy Exp $
 
 COMMENT=	library of Fortran 77 linear algebra subroutines
 

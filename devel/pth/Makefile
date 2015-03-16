@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/01/22 13:11:43 naddy Exp $
+# $OpenBSD: Makefile,v 1.21 2015/03/16 18:07:44 naddy Exp $
 
 COMMENT=	GNU portable threads
 

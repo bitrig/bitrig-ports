@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/03/21 08:48:54 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.4 2015/03/16 18:07:56 naddy Exp $
 
 COMMENT=	language guessing library
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2015/01/21 06:13:46 bentley Exp $
+# $OpenBSD: Makefile,v 1.6 2015/03/16 18:07:41 naddy Exp $
 
 COMMENT=	simple C Library for entropy measurement
 

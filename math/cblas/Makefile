@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/10/10 02:08:23 brad Exp $
+# $OpenBSD: Makefile,v 1.16 2015/03/16 18:07:49 naddy Exp $
 
 COMMENT=	C interface to the BLAS library
 

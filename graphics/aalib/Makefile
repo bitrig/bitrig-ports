@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2013/04/15 02:06:15 brad Exp $
+# $OpenBSD: Makefile,v 1.43 2015/03/16 18:07:45 naddy Exp $
 
 COMMENT=	ascii art library
 

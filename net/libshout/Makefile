@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/07/05 12:10:24 espie Exp $
+# $OpenBSD: Makefile,v 1.23 2015/03/16 18:07:52 naddy Exp $
 
 COMMENT=	library for communicating with an icecast server
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2014/11/05 11:43:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.19 2015/03/16 18:07:39 naddy Exp $
 
 COMMENT=	automatic text creation from templates
 CATEGORIES=	devel

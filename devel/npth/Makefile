@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/07/12 00:49:23 jca Exp $
+# $OpenBSD: Makefile,v 1.4 2015/03/16 18:07:44 naddy Exp $
 
 COMMENT=	new GNU Portable Threads Library
 

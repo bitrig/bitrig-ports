@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/21 08:48:56 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.11 2015/03/16 18:07:58 naddy Exp $
 
 COMMENT =	GTK+2 widget to display large amounts of numerical data
 

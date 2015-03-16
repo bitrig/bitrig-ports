@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/03/11 11:23:54 espie Exp $
+# $OpenBSD: Makefile,v 1.23 2015/03/16 18:07:49 naddy Exp $
 
 COMMENT=	Basic Linear Algebra Subprograms
 

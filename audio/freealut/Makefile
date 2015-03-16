@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/21 08:45:12 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.9 2015/03/16 18:07:35 naddy Exp $
 
 COMMENT=	OpenAL Utility Toolkit
 

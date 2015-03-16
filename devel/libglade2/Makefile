@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.51 2013/09/28 08:50:46 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.52 2015/03/16 18:07:42 naddy Exp $
 
 COMMENT=		library for loading GLADE interface files at runtime
 

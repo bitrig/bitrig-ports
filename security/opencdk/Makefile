@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/07/15 20:47:01 espie Exp $
+# $OpenBSD: Makefile,v 1.17 2015/03/16 18:07:54 naddy Exp $
 
 COMMENT=		Open Crypto Development Kit
 

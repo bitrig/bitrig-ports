@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/03/21 08:45:16 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.10 2015/03/16 18:07:43 naddy Exp $
 
 COMMENT=	library for manipulating Unicode characters and strings
 

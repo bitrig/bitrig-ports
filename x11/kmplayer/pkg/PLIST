@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.8 2013/12/22 19:24:35 zhuk Exp $
+@comment $OpenBSD: PLIST,v 1.9 2015/03/16 18:07:59 naddy Exp $
 @bin bin/kmplayer
 ${KDE}/kparts_kmplayer.la
 ${KDE}/libkparts_kmplayer.a

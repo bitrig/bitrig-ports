@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.4 2011/05/04 16:16:24 gsoares Exp $
+@comment $OpenBSD: PLIST,v 1.5 2015/03/16 18:07:54 naddy Exp $
 include/ident.h
 lib/libident.a
 lib/libident.la

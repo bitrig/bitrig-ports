@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/02/04 02:51:15 william Exp $
+# $OpenBSD: Makefile,v 1.12 2015/03/16 18:07:41 naddy Exp $
 
 COMMENT=		lightweight C library that eases the writing of daemons
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2013/03/11 11:10:54 espie Exp $
+# $OpenBSD: Makefile,v 1.33 2015/03/16 18:07:48 naddy Exp $
 
 COMMENT=	collection of C routines to decode MPEG movies
 

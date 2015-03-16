@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.1.1.1 2010/10/03 21:10:24 armani Exp $
+@comment $OpenBSD: PLIST,v 1.2 2015/03/16 18:07:42 naddy Exp $
 @bin bin/libhid-detach-device
 include/hid.h
 include/hidparser.h
@@ -6,6 +6,5 @@ include/hidtypes.h
 lib/libhid.a
 lib/libhid.la
 @lib lib/libhid.so.${LIBhid_VERSION}
-lib/pkgconfig/
 lib/pkgconfig/libhid.pc
 @man man/man1/libhid-detach-device.1

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.49 2014/04/02 09:36:13 jasper Exp $
+# $OpenBSD: Makefile,v 1.50 2015/03/16 18:07:58 naddy Exp $
 
 COMMENT=		utility library for XKB
 

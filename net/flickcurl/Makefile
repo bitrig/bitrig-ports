@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/02/16 22:57:10 naddy Exp $
+# $OpenBSD: Makefile,v 1.16 2015/03/16 18:07:52 naddy Exp $
 
 COMMENT =		flickr API library and utility
 

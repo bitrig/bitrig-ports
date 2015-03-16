@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/04/14 00:43:44 brad Exp $
+# $OpenBSD: Makefile,v 1.22 2015/03/16 18:07:37 naddy Exp $
 
 COMMENT=	integer-only, fully Ogg Vorbis compliant decoder library
 

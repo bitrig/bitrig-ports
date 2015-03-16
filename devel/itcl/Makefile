@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 10:50:09 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2015/03/16 18:07:41 naddy Exp $
 
 COMMENT=	object-oriented extensions to Tcl
 

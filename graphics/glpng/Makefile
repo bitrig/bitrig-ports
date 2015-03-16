@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/06/04 20:38:24 bcallah Exp $
+# $OpenBSD: Makefile,v 1.14 2015/03/16 18:07:46 naddy Exp $
 
 COMMENT=	load PNG graphics files and bind them to an OpenGL texture
 

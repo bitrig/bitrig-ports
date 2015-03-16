@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2015/01/24 11:07:57 schwarze Exp $
+# $OpenBSD: Makefile,v 1.25 2015/03/16 18:07:34 naddy Exp $
 
 COMMENT=	CDDA reading utility with extra data verification features
 

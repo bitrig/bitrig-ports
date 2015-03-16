@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.72 2013/10/11 23:49:47 naddy Exp $
+# $OpenBSD: Makefile,v 1.73 2015/03/16 18:07:47 naddy Exp $
 
 # only used for kde/graphics3
 COMMENT=	image manipulation library for X11

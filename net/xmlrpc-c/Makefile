@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/09/16 19:56:10 miod Exp $
+# $OpenBSD: Makefile,v 1.13 2015/03/16 18:07:53 naddy Exp $
 
 # as error: ``operation combines symbols in different segments''
 # (known toolchain problem)

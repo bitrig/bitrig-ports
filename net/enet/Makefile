@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/03/25 21:20:39 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2015/03/16 18:07:52 naddy Exp $
 
 COMMENT =		network library for games
 DISTNAME =		enet-1.3.7

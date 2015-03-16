@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/10/11 23:49:52 naddy Exp $
+# $OpenBSD: Makefile,v 1.17 2015/03/16 18:07:48 naddy Exp $
 
 COMMENT=	(S)VCD authoring software
 

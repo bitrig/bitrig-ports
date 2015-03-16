@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2013/09/28 08:50:45 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.40 2015/03/16 18:07:41 naddy Exp $
 
 COMMENT=		IDL parsing library
 

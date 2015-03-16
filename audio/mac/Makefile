@@ -1,14 +1,15 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/21 08:45:12 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.7 2015/03/16 18:07:36 naddy Exp $
 
 BROKEN=		needs work on bitrig
 
 ONLY_FOR_ARCHS= amd64 arm i386
 
 COMMENT=	Monkey's audio lossless codec
+#'
 
 DISTNAME=	mac-3.99-u4-b5
 PKGNAME=	mac-3.99.4.5
-REVISION=	2
+REVISION=	3
 SHARED_LIBS +=  mac                  0.0      # .2.0
 CATEGORIES=	audio
 

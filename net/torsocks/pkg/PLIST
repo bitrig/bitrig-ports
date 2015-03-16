@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.1.1.1 2011/12/01 11:49:27 pascal Exp $
+@comment $OpenBSD: PLIST,v 1.2 2015/03/16 18:07:53 naddy Exp $
 bin/torsocks
 bin/usewithtor
 lib/torsocks/

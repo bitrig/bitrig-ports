@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/08/07 21:58:03 naddy Exp $
+# $OpenBSD: Makefile,v 1.9 2015/03/16 18:07:56 naddy Exp $
 
 COMMENT =		light RDF manipulation with LADSPA plugin support
 

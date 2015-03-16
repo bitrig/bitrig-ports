@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/05/22 11:53:36 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2015/03/16 18:07:51 naddy Exp $
 
 COMMENT =	library for parsing mms:// and mmsh:// type network streams
 

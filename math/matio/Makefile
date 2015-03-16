@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/11/08 13:56:21 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2015/03/16 18:07:50 naddy Exp $
 
 COMMENT=	library for reading and writing Matlab MAT files
 
