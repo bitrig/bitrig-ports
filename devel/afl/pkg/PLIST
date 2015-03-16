@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.5 2015/01/12 11:54:47 jsg Exp $
+@comment $OpenBSD: PLIST,v 1.6 2015/03/16 01:59:27 jsg Exp $
 bin/afl-clang
 bin/afl-clang++
 bin/afl-cmin
@@ -558,7 +558,7 @@ share/afl/testcases/archives/common/cpio/small_archive.cpio
 share/afl/testcases/archives/common/gzip/
 share/afl/testcases/archives/common/gzip/small_archive.gz
 share/afl/testcases/archives/common/lzo/
-share/afl/testcases/archives/common/lzo/small_achive.lzo
+share/afl/testcases/archives/common/lzo/small_archive.lzo
 share/afl/testcases/archives/common/rar/
 share/afl/testcases/archives/common/rar/small_archive.rar
 share/afl/testcases/archives/common/tar/
@@ -584,27 +584,26 @@ share/afl/testcases/archives/exotic/zoo/
 share/afl/testcases/archives/exotic/zoo/small_archive.zoo
 share/afl/testcases/images/
 share/afl/testcases/images/bmp/
-share/afl/testcases/images/bmp/hello_kitty.bmp
+share/afl/testcases/images/bmp/not_kitty.bmp
 share/afl/testcases/images/gif/
-share/afl/testcases/images/gif/hello_kitty.gif
+share/afl/testcases/images/gif/not_kitty.gif
 share/afl/testcases/images/ico/
-share/afl/testcases/images/ico/hello_kitty.ico
+share/afl/testcases/images/ico/not_kitty.ico
 share/afl/testcases/images/jp2/
-share/afl/testcases/images/jp2/hello_kitty.jp2
+share/afl/testcases/images/jp2/not_kitty.jp2
 share/afl/testcases/images/jpeg/
-share/afl/testcases/images/jpeg/hello_kitty.jpg
+share/afl/testcases/images/jpeg/not_kitty.jpg
 share/afl/testcases/images/jxr/
-share/afl/testcases/images/jxr/hello_kitty.jxr
+share/afl/testcases/images/jxr/not_kitty.jxr
 share/afl/testcases/images/png/
-share/afl/testcases/images/png/hello_kitty.png
-share/afl/testcases/images/png/hello_kitty_alpha.png
-share/afl/testcases/images/png/hello_kitty_gamma.png
-share/afl/testcases/images/png/hello_kitty_icc.png
-share/afl/testcases/images/png/hello_kitty_rle.png
+share/afl/testcases/images/png/not_kitty.png
+share/afl/testcases/images/png/not_kitty_alpha.png
+share/afl/testcases/images/png/not_kitty_gamma.png
+share/afl/testcases/images/png/not_kitty_icc.png
 share/afl/testcases/images/tiff/
-share/afl/testcases/images/tiff/hello_kitty.tif
+share/afl/testcases/images/tiff/not_kitty.tiff
 share/afl/testcases/images/webp/
-share/afl/testcases/images/webp/hello_kitty_lossless.webp
+share/afl/testcases/images/webp/not_kitty.webp
 share/afl/testcases/multimedia/
 share/afl/testcases/multimedia/h264/
 share/afl/testcases/multimedia/h264/small_movie.mp4
@@ -630,9 +629,10 @@ share/doc/afl/
 share/doc/afl/ChangeLog
 share/doc/afl/README
 share/doc/afl/env_variables.txt
+share/doc/afl/historical_notes.txt
 share/doc/afl/notes_for_asan.txt
 share/doc/afl/parallel_fuzzing.txt
 share/doc/afl/perf_tips.txt
-share/doc/afl/related_work.txt
+share/doc/afl/sister_projects.txt
 share/doc/afl/status_screen.txt
 share/doc/afl/technical_details.txt
