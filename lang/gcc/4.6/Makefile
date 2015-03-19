@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.77 2015/01/02 14:26:12 sthen Exp $
+# $OpenBSD: Makefile,v 1.79 2015/03/19 20:23:57 naddy Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -30,14 +30,14 @@ PKGNAME-ada =   gnat-${FULL_PKGVERSION}
 PKGNAME-go =	gccgo-${FULL_PKGVERSION}
 PKGSPEC-main = gcc->=4.6,<4.7
 
-REVISION-main =	13
-REVISION-c++ =	8
-REVISION-estdc =3
-REVISION-f95 =	6
-REVISION-java =	6
-REVISION-objc =	5
-REVISION-ada =	10
-REVISION-go =	6
+REVISION-main =	14
+REVISION-c++ = 9
+REVISION-estdc = 4
+REVISION-f95 =	7
+REVISION-java =	7
+REVISION-objc =	6
+REVISION-ada = 11
+REVISION-go = 7
 
 SHARED_LIBS =	estdc++		14.0 \
 		gfortran	3.0 \
