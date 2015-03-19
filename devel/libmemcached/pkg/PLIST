@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.1.1.1 2010/10/01 09:32:36 sebastia Exp $
+@comment $OpenBSD: PLIST,v 1.2 2015/03/19 12:12:20 naddy Exp $
 %%atomic%%
 @bin bin/memcapable
 @bin bin/memcat
@@ -76,7 +76,6 @@ lib/libmemcachedprotocol.la
 lib/libmemcachedutil.a
 lib/libmemcachedutil.la
 @lib lib/libmemcachedutil.so.${LIBmemcachedutil_VERSION}
-lib/pkgconfig/
 lib/pkgconfig/libmemcached.pc
 @man man/man1/memcapable.1
 @man man/man1/memcat.1
