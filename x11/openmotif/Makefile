@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.59 2013/06/04 18:41:59 naddy Exp $
+# $OpenBSD: Makefile,v 1.60 2015/03/19 20:25:27 naddy Exp $
 
 COMMENT-main=		Motif toolkit
 COMMENT-demos=		Motif toolkit demos
 
 VERSION=		2.3.4
-REVISION-main=		2
-REVISION-demos=		0
+REVISION-main=		3
+REVISION-demos=		1
 DISTNAME=		motif-${VERSION}
 EXTRACT_SUFX=		-src.tgz
 PKGNAME-main=		openmotif-${VERSION}

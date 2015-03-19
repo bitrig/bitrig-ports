@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2014/04/27 20:52:50 brad Exp $
+# $OpenBSD: Makefile,v 1.28 2015/03/19 20:25:27 naddy Exp $
 
 COMMENT-main=	IAX client library
 COMMENT-tcl=	IAX client library, tcl bindings
