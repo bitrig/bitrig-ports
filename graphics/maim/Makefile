@@ -15,8 +15,9 @@ HOMEPAGE =	https://github.com/naelstrof/maim
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += ICE Imlib2 SM X11 Xext Xfixes Xrandr c freetype m stdc++
+WANTLIB += ICE Imlib2 SM X11 Xext Xfixes Xrandr c freetype m
 WANTLIB += z
+WANTLIB += c++ c++abi
 
 MODULES =	devel/cmake
 
