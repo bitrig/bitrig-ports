@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2014/12/24 11:17:34 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.40 2015/03/20 10:50:39 kirby Exp $
 
 SHARED_LIBS=	polarssl 1.0
 
@@ -25,7 +25,8 @@ CONFIGURE_ARGS=	-DWEBROOT_DIR="/var/hiawatha" \
 		-DCONFIG_DIR="${SYSCONFDIR}/hiawatha" \
 		-DLOG_DIR="/var/log/hiawatha" \
 		-DCMAKE_INSTALL_MANDIR="${PREFIX}/man" \
-		-DENABLE_XSLT=ON
+		-DENABLE_XSLT=ON \
+		-DPID_DIR="/var/run"
 
 NO_TEST=	Yes
 
