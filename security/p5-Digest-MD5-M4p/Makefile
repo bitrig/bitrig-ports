@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2014/06/14 23:26:00 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2015/03/20 22:47:42 naddy Exp $
 SHARED_ONLY=	Yes
 
 COMMENT=	perl interface to a variant of the MD5 algorithm

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2015/01/21 14:10:34 sthen Exp $
+# $OpenBSD: Makefile,v 1.13 2015/03/20 22:47:41 naddy Exp $
 
 COMMENT=	Kanji -> kana converter, perl interface
 

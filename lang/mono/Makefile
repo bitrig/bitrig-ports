@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.88 2015/01/17 12:24:25 robert Exp $
+# $OpenBSD: Makefile,v 1.89 2015/03/20 22:47:41 naddy Exp $
 
 BROKEN=		needs work on bitrig
 
 COMMENT=	cross platform, open source .NET developement framework
 
 DISTNAME=	mono-3.12.0
+REVISION=	0
 
 CATEGORIES=	lang devel
 

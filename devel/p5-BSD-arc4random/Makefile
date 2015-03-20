@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/06/14 23:24:54 sthen Exp $
+# $OpenBSD: Makefile,v 1.7 2015/03/20 22:47:40 naddy Exp $
 
 COMMENT =		perl interface to the arc4 random number generator
 
