@@ -15,7 +15,8 @@ HOMEPAGE =	https://github.com/naelstrof/slop
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += ICE SM X11 Xext c m stdc++
+WANTLIB += ICE SM X11 Xext c m
+WANTLIB += c++ c++abi
 
 MODULES =	devel/cmake
 
