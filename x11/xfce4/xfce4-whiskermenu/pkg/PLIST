@@ -1,7 +1,6 @@
 @comment $OpenBSD: PLIST,v 1.3 2014/12/06 11:06:45 landry Exp $
 bin/xfce4-popup-whiskermenu
 lib/xfce4/panel/plugins/libwhiskermenu.so
-@man man/man1/xfce4-popup-whiskermenu.1
 share/icons/hicolor/128x128/apps/xfce4-whiskermenu.png
 share/icons/hicolor/16x16/apps/xfce4-whiskermenu.png
 share/icons/hicolor/22x22/apps/xfce4-whiskermenu.png
@@ -55,6 +54,9 @@ share/locale/uz/LC_MESSAGES/xfce4-whiskermenu-plugin.mo
 share/locale/vi/LC_MESSAGES/xfce4-whiskermenu-plugin.mo
 share/locale/zh_CN/LC_MESSAGES/xfce4-whiskermenu-plugin.mo
 share/locale/zh_TW/LC_MESSAGES/xfce4-whiskermenu-plugin.mo
+share/man/
+share/man/man1/
+@man share/man/man1/xfce4-popup-whiskermenu.1
 share/xfce4/panel/plugins/whiskermenu.desktop
 @exec %D/bin/gtk-update-icon-cache -q -t %D/share/icons/hicolor
 @unexec-delete %D/bin/gtk-update-icon-cache -q -t %D/share/icons/hicolor
