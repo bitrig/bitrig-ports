@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.106 2014/12/22 09:23:44 jasper Exp $
+# $OpenBSD: Makefile,v 1.107 2015/03/20 18:06:14 ajacoutot Exp $
 
 COMMENT=		next generation GNOME shell
 
