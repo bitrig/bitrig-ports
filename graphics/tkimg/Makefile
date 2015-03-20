@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.10 2014/11/10 17:39:00 sebastia Exp $
 
+BROKEN = 	needs work on bitrig
+
 SHARED_ONLY =	Yes
 
 COMMENT =	image extension for Tcl/Tk

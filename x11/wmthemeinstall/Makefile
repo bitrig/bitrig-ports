@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.24 2013/03/11 11:46:16 espie Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		neat theme manager for Window Maker
 
 DISTNAME=		wmthemeinstall-0.62

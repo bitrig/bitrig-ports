@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2015/01/26 12:54:01 jca Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	turns your keyboard into a fast pointer mover
 
 DISTNAME=	keynav-0.20101014.3067

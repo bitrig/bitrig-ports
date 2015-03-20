@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2015/01/24 19:03:47 landry Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Xfce4 gnome-shell like dashboard
 
 XFCE_PROJECT=	xfdashboard

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.12 2012/10/29 15:19:03 espie Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		library to compress the standard X protocol
 
 DASHVERSION=		2

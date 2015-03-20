@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.37 2014/10/05 21:33:30 jasper Exp $
 
+BROKEN=			needs work on bitrig
+
 COMMENT=		terminal emulator for X
 
 DISTNAME=		roxterm-2.9.4

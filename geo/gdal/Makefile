@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.35 2015/02/17 21:47:43 landry Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT-main =	translator library for geospatial data formats
 COMMENT-python =python bindings and utilities for GDAL
 COMMENT-perl =	perl bindings for GDAL

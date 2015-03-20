@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.27 2015/02/16 22:57:14 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	tvtwm with pie (circular) menus
 
 DISTNAME=	piewm-1.04

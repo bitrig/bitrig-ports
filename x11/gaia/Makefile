@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2013/03/11 11:46:09 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	3D earth viewer with GPS support
 
 DISTNAME=	gaia-0.1.2

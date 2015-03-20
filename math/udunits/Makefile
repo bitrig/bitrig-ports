@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2014/12/13 17:15:01 benoit Exp $
 
+BROKEN =		needs work on bitrig
+
 COMMENT =		library to manipulate units of physical quantities
 DISTNAME =		udunits-2.2.17
 CATEGORIES =		math

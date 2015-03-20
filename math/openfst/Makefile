@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.5 2013/11/25 14:16:23 sthen Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		weighted finite-state transducers library
 
 # requires C++ tr1 headers

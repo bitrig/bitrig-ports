@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.26 2013/03/11 11:46:14 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	interactive X11 proxy with selective X request replacement
 
 DISTNAME=	mxconns-3.1.8

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.34 2014/09/11 21:57:00 jasper Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		OSS replacement for the Nomachine nxclient
 
 DISTNAME=		opennx-0.16.0.729

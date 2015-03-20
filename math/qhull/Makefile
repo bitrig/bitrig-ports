@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2013/03/11 11:23:56 espie Exp $
 
+BROKEN=			needs work on bitrig
+
 COMMENT =		computing the convex hull
 
 VERSION =		2011.1

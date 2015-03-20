@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.29 2014/01/01 20:46:29 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	fast-light window manager
 
 DISTNAME=	flwm-1.00

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.28 2013/11/09 18:22:03 zhuk Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		table/matrix widget extension to Tcl/Tk
 
 DOTVER =		2.10

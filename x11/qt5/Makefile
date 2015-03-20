@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.22 2015/01/24 22:09:40 zhuk Exp $
 
+BROKEN = 		needs work on bitrig
+
 SHARED_ONLY =		Yes
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 IGNORE-html =		qdoc segfaults

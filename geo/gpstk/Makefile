@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2014/11/23 20:28:01 sthen Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT-main=		GPS processing toolkit
 COMMENT-devel=		GPStk development libraries and headers
 

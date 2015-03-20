@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2013/03/22 18:10:59 naddy Exp $
 
+BROKEN =		needs work on bitrig
+
 COMMENT =		finite-state compiler and C library
 
 DISTNAME =		foma-0.9.16alpha

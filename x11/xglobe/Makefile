@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.71 2014/09/07 18:11:07 jasper Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	display the Earth on X11
 
 CATEGORIES=	x11 geo

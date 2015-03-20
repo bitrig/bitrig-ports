@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2013/05/18 16:11:39 kirby Exp $
 
+BROKEN=			needs work on bitrig
+
 SHARED_ONLY=		Yes
 
 COMMENT=		three layer backpropagation neural network library

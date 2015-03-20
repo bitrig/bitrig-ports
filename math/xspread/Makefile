@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2015/01/22 18:41:16 naddy Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	spreadsheet program under X11
 
 DISTNAME=	xspread3.1.1c
