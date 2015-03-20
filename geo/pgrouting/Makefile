@@ -25,7 +25,8 @@ RUN_DEPENDS =	geo/postgis
 BUILD_DEPENDS =	databases/postgresql,-server
 TEST_DEPENDS =	${BUILD_PKGPATH}
 TEST_ENV =	LD_PRELOAD=libpthread.so
-WANTLIB +=	CGAL boost_system-mt boost_thread-mt gmp m stdc++
+WANTLIB +=	CGAL boost_system-mt boost_thread-mt gmp m
+WANTLIB += 	c++ c++abi
 
 MODPOSTGRESQL_TEST_CMD = \
 	cd ${WRKSRC}; \
