@@ -17,8 +17,9 @@ LIB_DEPENDS +=	geo/spatialite/libspatialite>=4.1.0 \
 WANTLIB += X11 Xext Xrender c cairo crypto curl expat fontconfig
 WANTLIB += freetype freexl geos geos_c geotiff gif idn jpeg
 WANTLIB += lzma m pixman-1 png proj pthread pthread-stubs spatialite
-WANTLIB += sqlite3 ssl stdc++ tiff webp xcb xcb-render xcb-shm
+WANTLIB += sqlite3 ssl tiff webp xcb xcb-render xcb-shm
 WANTLIB += xml2 z
+WANTLIB += c++ c++abi
 
 # needed for check_sql_stmt test to succeed - it loads mod_rasterlite2
 TEST_DEPENDS =	${BUILD_PKGPATH}
