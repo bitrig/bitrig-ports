@@ -9,8 +9,8 @@ PKGNAME-main=		libxslt-${VERSION}
 PKGNAME-python= 	py-libxslt-${VERSION}
 SHARED_LIBS=		exslt	9.8 \
 			xslt	3.8
-REVISION-main =		1
-REVISION-python =	0
+REVISION-main =		2
+REVISION-python =	1
 
 CATEGORIES=		textproc
 
@@ -22,7 +22,7 @@ MASTER_SITES=		http://distfiles.nl/ \
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		gpg-error m z
+WANTLIB=		gpg-error lzma m z
 
 MODULES=		devel/gettext
 
