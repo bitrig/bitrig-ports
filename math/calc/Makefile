@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.20 2013/03/11 11:23:54 espie Exp $
+# $OpenBSD: Makefile,v 1.21 2015/03/21 21:28:27 naddy Exp $
 
 COMMENT=	C-style arbitrary precision calculator
 
 DISTNAME=	calc-2.11.7
+REVISION=	0
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=calc/} \
 		ftp://ftp.uu.net/pub/calc/ \
@@ -26,9 +27,7 @@ MAKE_FLAGS=\
 	USE_READLINE='-DUSE_READLINE' \
 	READLINE_LIB='-lreadline -lcurses' \
 	LCC=${CC} \
-	LDFLAGS='${LDFLAGS} -L${LOCALBASE}/lib' \
-	CFLAGS='${CFLAGS} -I${LOCALBASE}/include -DCALC_SRC $${CCWARN}'
-USE_GROFF =	Yes
+	CFLAGS='${CFLAGS} -DCALC_SRC $${CCWARN}'
 
 TEST_TARGET=	check
 
