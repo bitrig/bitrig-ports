@@ -6,6 +6,8 @@ V =			1.2-20140911
 DISTNAME =		dialog-${V}
 PKGNAME =		dialog-${V:S/-/./}
 
+REVISION =		1
+
 CATEGORIES =		misc
 
 HOMEPAGE =		http://invisible-island.net/dialog/dialog.html
