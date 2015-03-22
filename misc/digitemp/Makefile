@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2015/01/22 22:58:17 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	program for reading values from 1-wire devices
 
 DISTNAME=	digitemp-3.5.0

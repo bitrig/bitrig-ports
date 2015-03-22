@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.12 2013/03/21 08:45:19 ajacoutot Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	python bindings for pigment
 
 CATEGORIES =	graphics

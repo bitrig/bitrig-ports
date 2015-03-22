@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.28 2013/03/11 11:23:53 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	server: allow users to change password from within Eudora
 
 DISTNAME=	poppassd-4.0

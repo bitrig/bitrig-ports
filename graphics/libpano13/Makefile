@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.14 2015/01/22 13:11:44 naddy Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		library for processing panoramic images
 DISTNAME =		libpano13-2.9.18
 # the following are useful for rc/betas and don't hurt otherwise:

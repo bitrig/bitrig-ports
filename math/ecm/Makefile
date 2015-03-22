@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.14 2013/03/21 08:46:32 ajacoutot Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	elliptic curve method (ECM) factorization library
 
 DISTNAME =	ecm-6.4.4

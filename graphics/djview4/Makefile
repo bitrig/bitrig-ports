@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.21 2014/11/25 13:37:19 schwarze Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	portable DjVu viewer and browser plugin
 
 DISTNAME=	djview-4.9

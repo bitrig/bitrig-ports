@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.30 2013/10/22 11:34:18 zhuk Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		kde interface to exif
 CATEGORIES =		graphics devel x11 x11/kde
 DISTNAME =		libkexif-0.2.5

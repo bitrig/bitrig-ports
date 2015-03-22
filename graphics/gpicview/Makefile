@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.21 2013/10/24 20:48:07 naddy Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	simple and fast image viewer for X11
 
 DISTNAME =	gpicview-0.2.4

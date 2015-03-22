@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.6 2013/03/11 11:10:53 espie Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		extensible drawing editor
 
 V =			7.1.2

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.32 2013/12/22 19:24:34 zhuk Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		kde image database
 CATEGORIES=		graphics x11 x11/kde
 DISTNAME=		kphotoalbum-3.0

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.27 2013/03/11 11:23:56 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	buffer sporadic I/O for faster tape and pipe throughput
 
 DISTNAME=	buffer-1.17.1

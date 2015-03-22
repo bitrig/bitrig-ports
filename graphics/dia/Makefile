@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.105 2014/09/05 17:39:03 ajacoutot Exp $
 
+BROKEN= 		needs work on bitrig
+
 SHARED_ONLY=		Yes
 
 COMMENT=		technical diagrams drawing tool

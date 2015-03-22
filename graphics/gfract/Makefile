@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.23 2014/09/08 17:04:51 jasper Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		fractal program with GTK interface
 DISTNAME=		gfract-0.33
 REVISION=		13

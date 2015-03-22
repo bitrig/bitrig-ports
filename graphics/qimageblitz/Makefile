@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2014/08/12 00:15:43 zhuk Exp $
 
+BROKEN = 	needs work on bitrig
+
 CATEGORIES =	graphics
 COMMENT =	KDE image effects
 DISTNAME =	qimageblitz-0.0.6

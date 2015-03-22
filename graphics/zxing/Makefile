@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2013/03/11 11:10:56 espie Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		barcode image processing library
 
 DISTNAME =		ZXing-2.0
