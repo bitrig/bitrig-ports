@@ -3,10 +3,9 @@
 COMMENT=	open source COBOL compiler
 
 DISTNAME=	open-cobol-1.1
-REVISION=	0
+REVISION=	1
 SHARED_LIBS +=	cob                  3.0      # .2.0
 CATEGORIES=	lang
-REVISION=	0
 
 HOMEPAGE=	http://www.opencobol.org/
 

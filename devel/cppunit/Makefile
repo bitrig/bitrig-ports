@@ -4,9 +4,8 @@ COMMENT=	c++ unit testing framework
 DISTNAME=	cppunit-1.12.1
 SHARED_LIBS +=	cppunit              3.0      # .1.0
 CATEGORIES=	devel
-REVISION=	2
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cppunit/}
-REVISION=	0
+REVISION=	3
 
 HOMEPAGE=	http://cppunit.sourceforge.net/
 

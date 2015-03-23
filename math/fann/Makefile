@@ -3,13 +3,12 @@
 COMMENT=		Fast Artificial Neural Network Library
 
 DISTNAME=		fann-2.1.0beta
-REVISION=		0
+REVISION=		1
 SHARED_LIBS +=  floatfann            0.0      # .2.1
 SHARED_LIBS +=  doublefann           0.0      # .2.1
 SHARED_LIBS +=  fixedfann            0.0      # .2.1
 SHARED_LIBS +=  fann                 0.0      # .2.1
 CATEGORIES=		math devel
-REVISION=		0
 
 HOMEPAGE=		http://leenissen.dk/fann/
 

@@ -3,13 +3,12 @@
 COMMENT=	C-style arbitrary precision calculator
 
 DISTNAME=	calc-2.11.7
-REVISION=	0
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=calc/} \
 		ftp://ftp.uu.net/pub/calc/ \
 		ftp://reality.sgi.com/chongo/src/calc/
 
-REVISION=	1
+REVISION=	2
 
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes

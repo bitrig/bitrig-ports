@@ -4,11 +4,10 @@ COMMENT =	inspect, edit and validate Ogg files
 
 V =		1.1.1
 PKGNAME =	oggz-${V}
-REVISION =	0
+REVISION =	1
 DISTNAME =	liboggz-${V}
 CATEGORIES =	multimedia
 HOMEPAGE =	http://www.xiph.org/oggz/
-REVISION =	0
 
 SHARED_LIBS =	oggz	0.0
 

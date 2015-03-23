@@ -5,8 +5,6 @@ COMMENT =	Hiera backend for decrypting encrypted yaml properties
 DISTNAME =	hiera-eyaml-2.0.7
 CATEGORIES =	databases
 
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

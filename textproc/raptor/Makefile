@@ -5,9 +5,8 @@ SHARED_LIBS +=	raptor2              0.0      # 0.0
 COMMENT=		RDF Parser Toolkit for Redland
 DISTNAME=		raptor2-2.0.8
 PKGNAME=		${DISTNAME:C/raptor2/raptor/}
-REVISION=		0
+REVISION=		1
 CATEGORIES=		textproc
-REVISION=		0
 
 HOMEPAGE=		http://librdf.org/
 

@@ -8,8 +8,6 @@ CATEGORIES =		textproc devel
 HOMEPAGE =		http://golang.org/
 REVISION =		0
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

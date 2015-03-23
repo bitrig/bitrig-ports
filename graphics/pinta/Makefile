@@ -6,7 +6,6 @@ DISTNAME =	pinta-${V}
 CATEGORIES =	graphics x11
 
 HOMEPAGE =	http://pinta-project.com/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

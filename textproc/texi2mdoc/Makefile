@@ -8,8 +8,6 @@ CATEGORIES =		textproc
 
 HOMEPAGE =		http://mdocml.bsd.lv/texi2mdoc/
 
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
-
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes
 

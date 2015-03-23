@@ -3,12 +3,11 @@
 COMMENT=	strong hash library
 
 DISTNAME=	mhash-0.9.9.9
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
 SHARED_LIBS=	mhash	2.1	# .2.1
 MODGNU_SHARED_LIBS=mhash ''
 LIBmhash_ALIAS=	realmhash
-REVISION=	0
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mhash/}
 

@@ -5,9 +5,8 @@ COMMENT=	free and complete CORBA-compliant implementation
 V=		2.3.13
 DISTNAME=	mico-${V}
 CATEGORIES=	devel
-REVISION=	0
 
-REVISION=	2
+REVISION=	3
 
 # The build framework accommodates only a single shared lib extension.
 SHARED_LIBS=	mico${V}	${LIB_VERSION} \

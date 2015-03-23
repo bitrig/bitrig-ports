@@ -4,12 +4,11 @@ COMMENT=	validate, correct and pretty-print HTML
 
 V=		1.04
 DISTNAME=	tidyp-$V
-REVISION=	0
+REVISION=	1
 EPOCH=		0
 SHARED_LIBS +=  tidyp-$V                  0.0 # 0.0
 SHARED_LIBS +=  tidyp                     0.0 # 0.0
 CATEGORIES=	www
-REVISION=	0
 
 HOMEPAGE=	http://www.tidyp.com/
 

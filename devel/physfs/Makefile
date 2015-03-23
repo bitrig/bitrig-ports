@@ -6,9 +6,8 @@ DISTNAME=	physfs-2.0.3
 CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}downloads/
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	0
 
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS=	physfs		2.0
 

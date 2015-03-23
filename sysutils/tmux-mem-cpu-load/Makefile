@@ -8,8 +8,6 @@ GH_PROJECT =		tmux-mem-cpu-load
 GH_TAGNAME =		v$V
 DISTNAME =		${GH_PROJECT}-$V
 
-MAINTAINER =		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 CATEGORIES =		sysutils
 
 # Apachev2

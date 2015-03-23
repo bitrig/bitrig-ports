@@ -3,10 +3,9 @@
 COMMENT =	implementation of the XDG Base Directory specification
 
 DISTNAME =	libxdg-basedir-1.2.0
-REVISION =	0
+REVISION =	1
 SHARED_LIBS +=  xdg-basedir	2.0	# .3.0
 CATEGORIES =	x11 devel
-REVISION =	0
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

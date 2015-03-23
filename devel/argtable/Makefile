@@ -4,10 +4,9 @@ COMMENT=		ANSI C command line parser
 
 DISTNAME=		argtable2-13
 PKGNAME=		argtable-2.13
-REVISION=		0
+REVISION=		1
 SHARED_LIBS +=	argtable2            1.2      # .1.8
 CATEGORIES=		devel
-REVISION=		0
 
 HOMEPAGE=		http://argtable.sourceforge.net/
 

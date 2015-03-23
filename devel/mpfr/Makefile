@@ -4,11 +4,10 @@ COMMENT=	library for multiple-precision floating-point computations
 
 DISTNAME=	mpfr-3.1.2
 PKGNAME=	${DISTNAME}.5# patch level
-REVISION=	0
+REVISION=	1
 SHARED_LIBS=	mpfr		1.1	# 5.0
 CATEGORIES=	devel math
 HOMEPAGE=	http://www.mpfr.org/
-REVISION=	0
 
 # LGPLv3+
 PERMIT_PACKAGE_CDROM=	Yes

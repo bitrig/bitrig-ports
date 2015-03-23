@@ -6,9 +6,8 @@ COMMENT =		library for processing panoramic images
 DISTNAME =		libpano13-2.9.18
 # the following are useful for rc/betas and don't hurt otherwise:
 PKGNAME =		${DISTNAME:S/_//}
-REVISION =		0
+REVISION =		1
 WRKDIST =		${WRKDIR}/${DISTNAME:C/_.*//}
-REVISION =		0
 
 SHARED_LIBS +=		pano13               2.1
 

@@ -10,9 +10,8 @@
 COMMENT=	portable OTR messaging library and toolkit
 
 DISTNAME=	libotr-4.0.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	security
-REVISION=	0
 
 SHARED_LIBS +=  otr                  4.0      # 5.0
 

@@ -3,11 +3,10 @@
 COMMENT =	reliable event logging protocol library
 
 DISTNAME =	librelp-1.0.1
-REVISION =	0
+REVISION =	1
 CATEGORIES =	sysutils
 MASTER_SITES =	http://download.rsyslog.com/librelp/
 HOMEPAGE =	http://www.librelp.com/
-REVISION =	0
 
 SHARED_LIBS +=  relp                      0.1 # 0.1
 

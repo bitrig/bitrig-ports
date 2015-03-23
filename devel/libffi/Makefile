@@ -3,10 +3,9 @@
 COMMENT=		Foreign Function Interface
 
 DISTNAME=		libffi-3.0.13
-REVISION=		3
+REVISION=		4
 SHARED_LIBS +=  ffi                  1.0      # .6.1
 CATEGORIES=		devel
-REVISION=		0
 
 HOMEPAGE=		http://sourceware.org/libffi/
 

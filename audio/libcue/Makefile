@@ -3,9 +3,8 @@
 COMMENT =		cue sheet parser library
 
 DISTNAME =		libcue-1.4.0
-REVISION =		0
+REVISION =		1
 CATEGORIES =		audio
-REVISION =		0
 
 HOMEPAGE =		http://libcue.sourceforge.net/
 

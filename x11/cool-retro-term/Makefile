@@ -6,7 +6,6 @@ CATEGORIES =	x11
 REVISION =	0
 
 HOMEPAGE =	https://github.com/Swordfish90/cool-retro-term
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3 only
 PERMIT_PACKAGE_CDROM =	Yes

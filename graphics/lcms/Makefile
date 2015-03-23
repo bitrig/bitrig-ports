@@ -3,11 +3,10 @@
 COMMENT =	color management library
 
 DISTNAME =	lcms-1.18a
-REVISION =	0
+REVISION =	1
 SHARED_LIBS =	lcms	2.0
 CATEGORIES =	graphics
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=lcms/}
-REVISION =	0
 
 HOMEPAGE =	http://www.littlecms.com/
 

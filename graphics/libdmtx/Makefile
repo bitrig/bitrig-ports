@@ -3,10 +3,9 @@
 COMMENT =		library for handling data matrix barcodes
 
 DISTNAME =		libdmtx-0.7.4
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel graphics
 SHARED_LIBS +=		dmtx	0.0 # 0.0
-REVISION =		0
 
 HOMEPAGE =		http://www.libdmtx.org/
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=libdmtx/}

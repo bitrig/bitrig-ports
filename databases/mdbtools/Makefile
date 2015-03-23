@@ -17,8 +17,6 @@ EPOCH =			0
 CATEGORIES =		databases converters
 HOMEPAGE =		http://mdbtools.sourceforge.net/
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 MULTI_PACKAGES = 	-main -gmdb
 PSEUDO_FLAVORS =	no_x11
 FLAVOR ?=

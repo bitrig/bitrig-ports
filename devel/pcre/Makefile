@@ -3,9 +3,8 @@
 COMMENT=	perl-compatible regular expression library
 
 DISTNAME=	pcre-8.35
-REVISION=	0
 
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS +=  pcre                 3.0      # 0.1
 SHARED_LIBS +=  pcre16               0.0      # 0.0

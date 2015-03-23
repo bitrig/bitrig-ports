@@ -3,10 +3,9 @@
 COMMENT=	shell-like command line ftp and sftp client
 
 DISTNAME=	lftp-4.6.1
-REVISION=	0
 CATEGORIES=	net
 
-REVISION=	2
+REVISION=	3
 
 HOMEPAGE=	http://lftp.yar.ru/
 

@@ -5,9 +5,8 @@ COMMENT =		classes and setuptools plugin for Mercurial repositories
 MODPY_EGG_VERSION = 	6.2.1
 DISTNAME =		hgtools-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		0
+REVISION =		1
 CATEGORIES =		devel
-REVISION =		0
 
 HOMEPAGE =		https://bitbucket.org/jaraco/hgtools/
 

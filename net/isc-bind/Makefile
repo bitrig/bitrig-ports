@@ -23,8 +23,6 @@ CATEGORIES=	net
 
 HOMEPAGE=	http://www.isc.org/software/bind
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes
 

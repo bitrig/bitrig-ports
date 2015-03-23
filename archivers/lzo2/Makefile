@@ -9,8 +9,6 @@ CATEGORIES=	archivers devel
 MASTER_SITES=	${HOMEPAGE}download/
 SHARED_LIBS +=	lzo2	1.0 # .2.0
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 HOMEPAGE=	http://www.oberhumer.com/opensource/lzo/
 
 # GPLv2+

@@ -3,9 +3,8 @@
 COMMENT=		logging API for C++
 
 DISTNAME=		log4cplus-1.0.4
-REVISION=		0
+REVISION=		1
 EXTRACT_SUFX=		.tar.bz2
-REVISION=		0
 
 SHARED_LIBS +=  log4cplus             0.0 # 0.0
 

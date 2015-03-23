@@ -7,7 +7,6 @@ DISTNAME=	freehdl-${V}
 PKGNAME=	freehdl-${V}
 REVISION=	2
 CATEGORIES=	lang cad
-REVISION=	0
 
 SHARED_LIBS +=  ieee                      0.0 # 0.0
 SHARED_LIBS +=  freehdl-cdfggen           0.0 # 0.0

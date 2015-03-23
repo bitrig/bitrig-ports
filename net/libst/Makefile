@@ -7,10 +7,9 @@ COMMENT =		threaded library for writing Internet applications
 
 DISTNAME =		st-1.9
 PKGNAME =		lib${DISTNAME}
-REVISION =		0
+REVISION =		1
 SHARED_LIBS =		st	2.0
 CATEGORIES =		net devel
-REVISION =		0
 
 HOMEPAGE =		http://state-threads.sourceforge.net/
 

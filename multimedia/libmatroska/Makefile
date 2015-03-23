@@ -3,11 +3,10 @@
 COMMENT=	extensible open standard audio/video container library
 
 DISTNAME=	libmatroska-1.3.0
-REVISION=	1
+REVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://dl.matroska.org/downloads/libmatroska/
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	0
 
 SHARED_LIBS=	matroska	3.0
 

@@ -8,10 +8,9 @@ CATEGORIES =			graphics devel
 HOMEPAGE = 			http://liblqr.wikidot.com/
 DISTNAME = 			liblqr-1-0.4.1
 PKGNAME = 			liblqr-0.4.1
-REVISION =			2
+REVISION =			3
 MASTER_SITES =			${HOMEPAGE}local--files/en:download-page/
 EXTRACT_SUFX =			.tar.bz2
-REVISION =                      0
 
 # Library is LGPLv3, examples are GPLv3
 PERMIT_PACKAGE_CDROM =		Yes
