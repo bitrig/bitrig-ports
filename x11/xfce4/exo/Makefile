@@ -33,11 +33,7 @@ WANTLIB=	ICE SM X11 Xcomposite Xcursor Xdamage Xext \
 		gmodule-2.0 gobject-2.0 gthread-2.0 gtk-x11-2.0 xcb-util xfce4ui-1\
 		m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1 \
 		png pthread z pthread-stubs xcb X11-xcb startup-notification-1 \
-<<<<<<< HEAD
-		xcb-render xfce4util GL Xxf86vm drm xcb-shm ffi harfbuzz
-WANTLIB +=	c++ c++abi
-=======
 		xcb-render xfce4util xcb-shm ffi harfbuzz graphite2
->>>>>>> be1e4e0... Update to exo 0.10.4pre, using git commit b4200c9 to fix bug #10731.
+WANTLIB +=	c++ c++abi
 
 .include <bsd.port.mk>
