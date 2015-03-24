@@ -16,4 +16,4 @@ lib/libnet-1.0/libnet.a
 @lib lib/libnet-1.0/libnet.so.${LIBnet_VERSION}
 lib/libnet-1.0/libpwrite.a
 @lib lib/libnet.so.${LIBnet_VERSION}
-@man man/man3/libnet.3
+man/libnet.3
