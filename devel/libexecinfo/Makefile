@@ -5,7 +5,7 @@ COMMENT =	clone of backtrace facility found in the GNU libc
 V =		0.2
 DISTNAME =	backtrace-$V
 PKGNAME =	libexecinfo-$V
-REVISION =	5
+REVISION =	6
 EPOCH =		0
 CATEGORIES =	devel
 

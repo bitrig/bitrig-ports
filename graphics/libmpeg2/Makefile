@@ -3,7 +3,7 @@
 COMMENT=	free MPEG-2 video stream decoder
 
 DISTNAME=	libmpeg2-0.5.1
-REVISION =	2
+REVISION =	3
 SHARED_LIBS=	mpeg2		0.1 \
 		mpeg2convert	0.0
 CATEGORIES=	graphics x11

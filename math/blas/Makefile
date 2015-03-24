@@ -5,7 +5,7 @@ COMMENT=	Basic Linear Algebra Subprograms
 VERSION=	1.0
 DISTNAME=	blas
 PKGNAME=	${DISTNAME}-${VERSION}
-REVISION=	7
+REVISION=	8
 SHARED_LIBS=	blas	2.0
 
 CATEGORIES=	math

@@ -7,7 +7,7 @@ HOMEPAGE=	http://www.jedrea.com/chmlib/
 MASTER_SITES=	${HOMEPAGE}
 
 DISTNAME=	chmlib-0.40
-REVISION =	2
+REVISION =	3
 SHARED_LIBS +=	chm                  0.2      # .0.0
 
 CONFIGURE_STYLE=gnu

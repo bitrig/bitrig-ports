@@ -3,7 +3,7 @@
 COMMENT=	object-oriented extensions to Tcl
 
 VERSION =	3.4.1
-REVISION =	1
+REVISION =	2
 EPOCH =		0
 DISTNAME =	itcl${VERSION}
 PKGNAME =	itcl-${VERSION}

@@ -5,7 +5,7 @@ COMMENT =		c unit testing framework
 VER =			2.1-2
 DISTNAME =		CUnit-${VER}
 PKGNAME =		cunit-${VER:S/-/./}
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		cunit	1.0
 

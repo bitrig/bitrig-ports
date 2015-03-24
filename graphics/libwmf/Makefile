@@ -3,7 +3,7 @@
 COMMENT=	WMF handling and conversion library
 
 DISTNAME=	libwmf-0.2.8.4
-REVISION=	1
+REVISION=	2
 SHARED_LIBS=	wmf		8.0	\
 		wmf-0.2		8.0	\
 		wmflite		7.1	\

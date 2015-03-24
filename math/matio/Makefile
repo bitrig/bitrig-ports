@@ -3,7 +3,7 @@
 COMMENT=	library for reading and writing Matlab MAT files
 
 DISTNAME=	matio-1.3.2
-REVISION=	1
+REVISION=	2
 SHARED_LIBS=	matio	1.0
 CATEGORIES=	math
 

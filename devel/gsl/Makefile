@@ -4,7 +4,7 @@ COMMENT=	GNU Scientific Library
 BROKEN-vax =	missing ieeefp.h
 
 DISTNAME=	gsl-1.15
-REVISION=	2
+REVISION=	3
 SHARED_LIBS +=	gslcblas             1.0      # .0.0
 SHARED_LIBS +=	gsl                  12.0     # .16.0
 

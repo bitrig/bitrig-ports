@@ -6,7 +6,7 @@ COMMENT=		roles which support overloading
 
 MODULES=		cpan
 DISTNAME=		MooseX-Role-WithOverloading-0.09
-REVISION=		2
+REVISION=		3
 CATEGORIES=		devel
 
 # perl

@@ -3,7 +3,7 @@
 COMMENT=		dockapp-making standard library for Window Maker
 
 DISTNAME=		libdockapp-0.4.0
-REVISION=		4
+REVISION=		5
 SHARED_LIBS=		dockapp              1.0      # .1.0
 CATEGORIES=		devel
 

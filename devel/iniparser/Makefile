@@ -3,7 +3,7 @@
 COMMENT=	ini file parsing library
 
 DISTNAME=	iniparser-3.1
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=	iniparser 0.0 # 0
 

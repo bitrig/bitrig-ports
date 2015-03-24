@@ -5,7 +5,7 @@ COMMENT =		perl interface to the arc4 random number generator
 SHARED_ONLY =		Yes
 MODULES =		cpan
 DISTNAME =		BSD-arc4random-1.50
-REVISION =		3
+REVISION =		4
 CATEGORIES =		devel
 
 # MirOS Licence

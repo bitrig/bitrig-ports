@@ -9,7 +9,7 @@ DISTNAME=	cfitsio3006
 WRKDIST=	${WRKDIR}/cfitsio
 
 PKGNAME=	cfitsio-3.006
-REVISION=	1
+REVISION=	2
 MASTER_SITES=	ftp://heasarc.gsfc.nasa.gov/software/fitsio/c/ \
 		http://spacehopper.org/mirrors/
 

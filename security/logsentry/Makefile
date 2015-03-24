@@ -4,7 +4,7 @@ COMMENT=	logfile auditing tool
 
 DISTNAME=	logcheck-1.1.1
 PKGNAME=	logsentry-1.1.1
-REVISION = 	6
+REVISION = 	7
 CATEGORIES=	security
 
 # GPLv2

@@ -3,7 +3,7 @@
 COMMENT=	library for reading ID3 tags
 
 DISTNAME=	libid3tag-0.15.1b
-REVISION=	4
+REVISION=	5
 SHARED_LIBS +=	id3tag               4.0      # .3.0
 
 CATEGORIES=	audio

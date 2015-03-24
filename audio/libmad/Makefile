@@ -3,7 +3,7 @@
 COMMENT=	high-quality MPEG audio decoder
 
 DISTNAME=	libmad-0.15.1b
-REVISION=	4
+REVISION=	5
 CATEGORIES=	audio
 HOMEPAGE=	http://www.underbit.com/products/mad/
 SHARED_LIBS +=	mad                  2.1      # .2.1

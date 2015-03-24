@@ -3,7 +3,7 @@
 COMMENT=		lightweight C library that eases the writing of daemons
 
 DISTNAME=		libdaemon-0.14
-REVISION=		1
+REVISION=		2
 SHARED_LIBS+=		daemon	4.0	# .5.0
 CATEGORIES=		devel
 

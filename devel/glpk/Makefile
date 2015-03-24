@@ -3,7 +3,7 @@
 COMMENT=	GNU Linear Programming Kit
 
 DISTNAME=	glpk-4.44
-REVISION=	1
+REVISION=	2
 SHARED_LIBS=	glpk		6.0	# 29.0
 
 CATEGORIES=	devel

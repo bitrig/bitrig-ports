@@ -3,7 +3,7 @@
 COMMENT=	patent-free speech codec
 
 DISTNAME=	speex-1.2rc1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 HOMEPAGE=	http://www.speex.org/
 SHARED_LIBS +=	speex                8.0      # .6.0

@@ -4,7 +4,7 @@ COMMENT=	collection of C routines to decode MPEG movies
 
 DISTNAME=	mpeg_lib-1.3.1
 PKGNAME=	${DISTNAME:S/_/-/}
-REVISION =	1
+REVISION =	2
 SHARED_LIBS=	mpeg	13.1
 CATEGORIES=	graphics
 

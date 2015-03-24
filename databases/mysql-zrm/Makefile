@@ -5,7 +5,7 @@ COMMENT =	MySQL backup scripts
 V =		3.0
 DISTNAME =	MySQL-zrm-${V}-release
 PKGNAME =	mysql-zrm-${V}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	databases perl5
 
 HOMEPAGE =	http://www.zmanda.com/

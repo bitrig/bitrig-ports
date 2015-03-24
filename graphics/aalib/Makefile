@@ -4,7 +4,7 @@ COMMENT=	ascii art library
 
 DISTNAME=	aalib-1.4rc5
 PKGNAME=	aalib-1.4
-REVISION=	6
+REVISION=	7
 SHARED_LIBS=	aa	2.0
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=aa-project/}

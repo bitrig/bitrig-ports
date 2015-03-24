@@ -9,7 +9,7 @@ SHARED_LIBS +=	glib                 1.2      # .1.2
 SHARED_LIBS +=	gmodule              1.2      # .1.2
 SHARED_LIBS +=	gthread              1.2      # .1.2
 
-REVISION =	6
+REVISION =	7
 
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/glib/1.2/}

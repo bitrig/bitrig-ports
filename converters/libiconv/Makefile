@@ -3,7 +3,7 @@
 COMMENT=	character set conversion library
 
 DISTNAME=	libiconv-1.14
-REVISION=	2
+REVISION=	3
 CATEGORIES=	converters devel
 MASTER_SITES=	${MASTER_SITE_GNU:=libiconv/}
 

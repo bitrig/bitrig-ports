@@ -9,7 +9,7 @@ share/doc/logsentry/INSTALL
 share/doc/logsentry/README
 share/doc/logsentry/README.how.to.interpret
 share/doc/logsentry/README.keywords
-share/doc/pkg-readmes/${FULLPKGNAME}
+share/doc/pkg-readmes/logsentry-1.1.1p6
 share/examples/logsentry/
 @mode 600
 @sample ${SYSCONFDIR}/logsentry/

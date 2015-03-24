@@ -3,7 +3,7 @@
 COMMENT=	opendivx decoding API
 
 DISTNAME=	libdivxdecore-0.4.7
-REVISION =	2
+REVISION =	3
 SHARED_LIBS=		divxdecore	0.0
 CATEGORIES=	graphics devel
 

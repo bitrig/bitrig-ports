@@ -3,7 +3,7 @@
 COMMENT=	3D Athena Widget set that looks like Motif
 
 DISTNAME=	Xaw3d-1.5
-REVISION=	3
+REVISION=	4
 SHARED_LIBS=	Xaw3d 11.0
 CATEGORIES=	x11
 

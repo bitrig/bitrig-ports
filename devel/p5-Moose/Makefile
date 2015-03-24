@@ -7,7 +7,7 @@ COMMENT=	complete modern object system for perl 5
 MODULES=	cpan
 DISTNAME=	Moose-2.1204
 CATEGORIES=	devel
-REVISION=	1
+REVISION=	2
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes
