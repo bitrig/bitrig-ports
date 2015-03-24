@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.45 2014/07/23 00:44:55 jca Exp $
+# $OpenBSD: Makefile,v 1.46 2015/03/24 13:36:20 dcoppa Exp $
 
 BROKEN-hppa =		undefined references to __sync atomic ops
 BROKEN-mips64 =		undefined references to __sync atomic ops
@@ -16,18 +16,15 @@ HOMEPAGE=		http://libtorrent.rakshasa.no/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c crypto curl>=14 idn m ncursesw \
-			pthread sigc-2.0 ssl \
-			torrent>=20 z
+			pthread ssl torrent>=21 z
 WANTLIB +=		c++ c++abi
 
 MASTER_SITES=		${HOMEPAGE}downloads/
 
 MODULES=		devel/gettext
 
-BUILD_DEPENDS=		devel/cppunit \
-			devel/autoconf/${AUTOCONF_VERSION} \
-			devel/automake/${AUTOMAKE_VERSION}
-LIB_DEPENDS=		net/libtorrent>=0.12.9 \
+BUILD_DEPENDS=		devel/cppunit
+LIB_DEPENDS=		net/libtorrent>=0.13.4 \
 			net/curl
 
 AUTOCONF_VERSION=	2.69
