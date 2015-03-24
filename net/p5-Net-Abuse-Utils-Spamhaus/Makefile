@@ -5,8 +5,6 @@ COMMENT =	perl5 extension for checking data against Spamhaus
 DISTNAME =	Net-Abuse-Utils-Spamhaus-0.07
 CATEGORIES =	net
 
-MAINTAINER =	James Turner <james@calminferno.net>
-
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM =	Yes
 
