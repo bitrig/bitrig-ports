@@ -3,7 +3,7 @@
 COMMENT=	lame ain't an MP3 encoder
 
 DISTNAME=	lame-3.99.5
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  mp3lame              2.1      # 0.1
 

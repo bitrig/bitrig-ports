@@ -4,7 +4,7 @@ COMMENT =		XML manipulation library
 
 VERSION =		0.18.3
 DISTNAME =		libnxml-${VERSION}
-REVISION =		3
+REVISION =		4
 CATEGORIES =		textproc
 MASTER_SITES =		http://www.autistici.org/bakunin/libnxml/
 SHARED_LIBS =		nxml 0.0 # 18.3

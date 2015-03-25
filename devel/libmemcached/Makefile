@@ -4,7 +4,7 @@ COMMENT=		C C++ API for memcached
 
 VERSION=		0.48
 DISTNAME=		libmemcached-${VERSION}
-REVISION=		3
+REVISION=		4
 CATEGORIES=		devel misc
 
 HOMEPAGE=		http://libmemcached.org/

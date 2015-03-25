@@ -3,7 +3,7 @@
 COMMENT=		Quasar DV codec
 
 DISTNAME=		libdv-1.0.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		multimedia
 
 HOMEPAGE=		http://libdv.sourceforge.net/

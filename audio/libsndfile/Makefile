@@ -3,7 +3,7 @@
 COMMENT=	library to handle various audio file formats
 
 DISTNAME=	libsndfile-1.0.25
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 HOMEPAGE=	http://www.mega-nerd.com/libsndfile/
 SHARED_LIBS +=	sndfile              3.3      # .1.25

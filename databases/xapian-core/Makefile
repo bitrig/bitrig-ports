@@ -5,7 +5,7 @@ COMMENT=	search engine library
 V=		1.2.15
 PORTROACH=	limitw:1,even
 DISTNAME=	xapian-core-${V}
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=  xapian	3.1	# .28.2
 

@@ -120,7 +120,6 @@ lib/pkgconfig/libmemcached.pc
 @man man/man3/memcached_decrement_with_initial.3
 @man man/man3/memcached_delete.3
 @man man/man3/memcached_delete_by_key.3
-@man man/man3/memcached_destroy_sasl_auth_data.3
 @man man/man3/memcached_dump.3
 @man man/man3/memcached_fetch.3
 @man man/man3/memcached_fetch_execute.3
@@ -131,7 +130,6 @@ lib/pkgconfig/libmemcached.pc
 @man man/man3/memcached_get.3
 @man man/man3/memcached_get_by_key.3
 @man man/man3/memcached_get_memory_allocators.3
-@man man/man3/memcached_get_sasl_callbacks.3
 @man man/man3/memcached_get_user_data.3
 @man man/man3/memcached_increment.3
 @man man/man3/memcached_increment_with_initial.3
@@ -151,7 +149,6 @@ lib/pkgconfig/libmemcached.pc
 @man man/man3/memcached_quit.3
 @man man/man3/memcached_replace.3
 @man man/man3/memcached_replace_by_key.3
-@man man/man3/memcached_sasl_set_auth_data.3
 @man man/man3/memcached_server_add.3
 @man man/man3/memcached_server_count.3
 @man man/man3/memcached_server_cursor.3
@@ -164,7 +161,6 @@ lib/pkgconfig/libmemcached.pc
 @man man/man3/memcached_set.3
 @man man/man3/memcached_set_by_key.3
 @man man/man3/memcached_set_memory_allocators.3
-@man man/man3/memcached_set_sasl_callbacks.3
 @man man/man3/memcached_set_user_data.3
 @man man/man3/memcached_stat.3
 @man man/man3/memcached_stat_execute.3

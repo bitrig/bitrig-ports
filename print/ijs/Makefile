@@ -3,7 +3,7 @@
 COMMENT=		raster image transmission library
 
 DISTNAME=		ijs-0.35
-REVISION=		2
+REVISION=		3
 CATEGORIES=		print
 
 SHARED_LIBS=		ijs 0.0

@@ -11,7 +11,8 @@ HOMEPAGE =		http://www.msweet.org/projects.php?Z1
 # GPLv2 with OpenSSL exception.
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c crypto m ssl z jpeg png stdc++
+WANTLIB += c crypto m ssl z jpeg png
+WANTLIB += c++ c++abi
 
 DISTFILES=		${DISTNAME}-source${EXTRACT_SUFX}
 MASTER_SITES =		http://www.msweet.org/files/project1/ \

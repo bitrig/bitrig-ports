@@ -3,7 +3,7 @@
 COMMENT=	library of Fortran 77 linear algebra subroutines
 
 DISTNAME=	lapack-3.1.1
-REVISION=	5
+REVISION=	6
 
 SHARED_LIBS=	lapack 5.0
 

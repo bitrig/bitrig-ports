@@ -2,7 +2,7 @@
 
 COMMENT =		network library for games
 DISTNAME =		enet-1.3.7
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS +=  	enet 0.1 # 1.3
 

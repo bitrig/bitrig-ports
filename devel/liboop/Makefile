@@ -3,7 +3,7 @@
 COMMENT=		low-level event loop management library
 
 DISTNAME=		liboop-1.0
-REVISION =		3
+REVISION =		4
 SHARED_LIBS=		oop		4.1
 CATEGORIES=		devel
 

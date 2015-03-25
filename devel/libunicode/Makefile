@@ -3,7 +3,7 @@
 COMMENT=	library for manipulating Unicode characters and strings
 
 DISTNAME=	libunicode-0.4
-REVISION =	2
+REVISION =	3
 SHARED_LIBS=	unicode 0.0
 
 CATEGORIES=	devel

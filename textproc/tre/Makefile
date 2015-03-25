@@ -5,7 +5,7 @@ COMMENT=	lightweight regexp matching library with additional features
 DISTNAME=		tre-0.8.0
 EXTRACT_SUFX=		.tar.bz2
 CATEGORIES=		textproc
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://laurikari.net/tre/
 

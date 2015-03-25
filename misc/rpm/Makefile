@@ -3,7 +3,7 @@
 COMMENT =	Red Hat package manager
 
 DISTNAME =	rpm-3.0.6
-REVISION =	7
+REVISION =	8
 SHARED_LIBS =	rpm		0.1 \
 		rpmbuild	0.0
 CATEGORIES =	misc archivers emulators

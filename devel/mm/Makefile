@@ -6,7 +6,7 @@ NOT_FOR_ARCHS=	vax
 COMMENT=	shared memory lib for apps with pre-forked process model
 
 DISTNAME=	mm-1.3.1
-REVISION =	1
+REVISION =	2
 SHARED_LIBS=	mm 13.21
 
 CATEGORIES=	devel
