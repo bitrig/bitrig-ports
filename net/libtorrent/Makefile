@@ -15,7 +15,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=		${HOMEPAGE}downloads/
 
-WANTLIB=		crypto m sigc-2.0
+WANTLIB=		crypto m sigc-2.0 z
 WANTLIB +=		c++ c++abi pthread
 BUILD_DEPENDS=		devel/cppunit \
 			devel/autoconf/${AUTOCONF_VERSION} \

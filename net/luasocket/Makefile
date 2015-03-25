@@ -10,7 +10,7 @@ GH_TAGNAME=	v$V
 GH_COMMIT=	22cd5833fcc0e272f26004a79c8545e959ba406b
 DISTNAME=	${GH_PROJECT}-$V
 PKGNAME=	${DISTNAME:S/-rc/rc/}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	net
 
 HOMEPAGE=	http://w3.impa.br/~diego/software/luasocket/

@@ -4,7 +4,7 @@ COMMENT=	XML-RPC C/C++ client-server implementation
 CATEGORIES=	net devel textproc
 
 DISTNAME=	xmlrpc-epi-0.51
-REVISION=	3
+REVISION=	4
 SHARED_LIBS +=	xmlrpc-epi	0.3
 
 HOMEPAGE=	http://xmlrpc-epi.sourceforge.net/

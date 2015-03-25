@@ -5,7 +5,7 @@ COMMENT=	library/tools (incl smilint) to access SMI MIB information
 SHARED_LIBS +=  smi                  0.0      # 2.27
 
 DISTNAME=	libsmi-0.4.8
-REVISION=	1
+REVISION=	2
 CATEGORIES=	net
 
 HOMEPAGE=	http://www.ibr.cs.tu-bs.de/projects/libsmi/

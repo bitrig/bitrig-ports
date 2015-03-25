@@ -14,7 +14,8 @@ HOMEPAGE =		http://residualvm.org/
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += GL GLU SDL c freetype m pthread stdc++ z
+WANTLIB += GL GLU SDL c freetype m pthread z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=residualvm/}
 

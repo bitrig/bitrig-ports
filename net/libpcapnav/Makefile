@@ -3,7 +3,7 @@
 COMMENT=	library for navigating to arbitrary packets in a trace file
 
 DISTNAME=	libpcapnav-0.8
-REVISION=	2
+REVISION=	3
 SHARED_LIBS=	pcapnav	1.0
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netdude/}

@@ -3,7 +3,7 @@
 COMMENT=	library for communicating with an icecast server
 
 DISTNAME=	libshout-2.2.2
-REVISION=	3
+REVISION=	4
 SHARED_LIBS=	shout	5.0
 CATEGORIES=	net audio
 
