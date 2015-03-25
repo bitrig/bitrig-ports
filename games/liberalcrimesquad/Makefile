@@ -9,7 +9,8 @@ HOMEPAGE =	http://lcs.wikidot.com/
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m ncurses stdc++
+WANTLIB += c m ncurses
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	http://mirrors.nycbug.org/pub/distfiles/
 
