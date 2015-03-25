@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.25 2014/06/14 23:25:42 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	module to manipulate raw ip packets

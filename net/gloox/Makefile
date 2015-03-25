@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.10 2014/07/12 17:51:25 pascal Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	extensible C++ library for XMPP clients and components
 
 DISTNAME =	gloox-1.0.3

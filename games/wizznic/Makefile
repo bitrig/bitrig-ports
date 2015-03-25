@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2013/10/08 06:02:08 bentley Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		brick-matching puzzle game
 
 V =			0.9.9

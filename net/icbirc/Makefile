@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2015/01/22 21:17:47 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	proxy IRC client with ICB server
 
 DISTNAME=	icbirc-1.8

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2013/03/11 11:07:41 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	combine pipes to lead water from the house to the tank
 
 DISTNAME=	vodovod-1.10-src

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.36 2014/10/12 20:10:16 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT-main=	ISC DHCP Server
 COMMENT-client=	ISC DHCP Client
 COMMENT-omapi=	ISC DHCP OMAPI

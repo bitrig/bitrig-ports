@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2013/03/11 11:35:49 espie Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		gnutella client with an easy to use interface
 
 DISTNAME=		mutella-0.4.5

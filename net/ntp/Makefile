@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.61 2014/12/24 16:35:12 jca Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Network Time Protocol reference implementation
 
 # NTP has a 'pN' in its version number, which we don't want

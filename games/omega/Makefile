@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.13 2014/01/24 22:03:45 landry Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	complex rogue-style game of dungeon exploration
 
 VERSION=	0.90.4

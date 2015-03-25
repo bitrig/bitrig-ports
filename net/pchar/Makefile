@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.25 2015/02/16 22:57:11 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Sandia Internet path characterization tool
 
 DISTNAME=	pchar-1.5

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.12 2013/03/11 11:35:50 espie Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	BSD Auth helper program for OpenVPN
 
 DISTNAME =	openvpn_bsdauth-7

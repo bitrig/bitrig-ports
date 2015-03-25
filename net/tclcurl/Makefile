@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.24 2015/02/17 19:47:01 naddy Exp $
 
+BROKEN =	needs work on bitrig
+
 SHARED_ONLY =	Yes
 
 COMMENT =	Tcl bindings for Curl

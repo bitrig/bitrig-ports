@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2013/10/11 21:20:56 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 DISTNAME=	xscavenger-1.4.4
 REVISION =	3
 EXTRACT_SUFX=	.tgz

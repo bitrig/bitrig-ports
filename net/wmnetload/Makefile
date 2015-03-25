@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.12 2013/03/11 11:35:58 espie Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		wm-dockapp; simple network interface monitoring tool
 
 DISTNAME=		wmnetload-1.3

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.42 2013/03/11 11:35:50 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	UCB/LBNL Network Simulator Version 2
 
 V=		2.35

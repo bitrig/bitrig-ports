@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2014/10/15 10:31:21 sebastia Exp $
 
+BROKEN = 	needs work on bitrig
+
 SHARED_ONLY =	Yes
 
 COMMENT =	Tcl UDP extension

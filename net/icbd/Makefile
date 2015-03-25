@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2015/01/19 12:25:08 pascal Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		Internet Citizens Band Server
 
 GH_ACCOUNT =		mbelop

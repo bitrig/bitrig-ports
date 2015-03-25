@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2013/06/01 14:18:40 ajacoutot Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	framework for analysis of layer 2 network protocols
 
 DISTNAME =	yersinia-0.7.1

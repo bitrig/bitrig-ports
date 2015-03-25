@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2013/03/11 11:35:55 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	programmable ncurses-based AIM client
 DISTNAME=	pork-0.99.8.1
 REVISION=	0

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2013/08/15 09:21:10 sthen Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		link advertisement (LLDP/CDP etc) daemon
 
 DISTNAME =		ladvd-1.0.4

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.13 2014/07/11 16:57:10 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Cisco AAA protocol daemon
 
 DISTNAME=	tac_plus.F4.0.4.alpha

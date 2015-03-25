@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.24 2014/07/14 10:03:33 kirby Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	classic space-age stock trading game
 
 DISTNAME=	starlanes-1.2.2

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.33 2015/02/17 20:56:34 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	X11-based asteroids-style arcade
 
 DISTNAME=	xasteroids

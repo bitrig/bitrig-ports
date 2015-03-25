@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.47 2014/11/28 08:39:41 kirby Exp $
 
+BROKEN = 	needs work on bitrig
+
 PORTROACH = 	limitw:1,even
 
 COMMENT-main =	flexible network host monitoring, client

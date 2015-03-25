@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.52 2014/11/19 23:49:41 sthen Exp $
 
+BROKEN=		needs work on bitrig
+
 COMMENT=	CVS repository synchronization utility
 
 PKGNAME=	cvsync-0.25.0pre0

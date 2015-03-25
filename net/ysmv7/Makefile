@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.21 2015/02/21 00:01:20 schwarze Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		ICQ console client with encryption support
 
 DISTNAME=		ysmv7_2_9_9_1
