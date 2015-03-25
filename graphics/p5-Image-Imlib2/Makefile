@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	Perl interface to the Imlib2 image library
 
 DISTNAME=	Image-Imlib2-2.03
-REVISION=	2
+REVISION=	3
 CATEGORIES=	graphics
 
 # Perl

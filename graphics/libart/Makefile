@@ -5,7 +5,7 @@ COMMENT=		high-performance 2D graphics library
 GNOME_PROJECT=		libart_lgpl
 GNOME_VERSION=		2.3.21
 PKGNAME=		libart-${VERSION}
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=	art_lgpl_2           5.20     # .5.20
 

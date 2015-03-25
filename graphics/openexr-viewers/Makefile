@@ -17,7 +17,7 @@ WANTLIB += IlmThread Imath X11 Xau Xdmcp Xext c m pthread
 WANTLIB += xcb z IlmImfCtl fltk fltk_gl
 WANTLIB += Xdamage Xfixes Xxf86vm drm
 WANTLIB += Xft Xinerama Xrender expat freetype fontconfig pthread-stubs
-WANTLIB += c++ c+abi
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SAVANNAH:=openexr/}
 

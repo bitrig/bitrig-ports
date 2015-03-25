@@ -5,7 +5,7 @@ COMMENT=	Kanji -> kana converter, perl interface
 SHARED_ONLY=	Yes
 DISTNAME=	Text-Kakasi-2.04
 PKGNAME=	p5-${DISTNAME}
-REVISION=	5
+REVISION=	6
 CATEGORIES=	japanese converters textproc devel perl5
 
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Text/}

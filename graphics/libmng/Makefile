@@ -4,7 +4,7 @@ COMMENT=	Multiple-image Network Graphics (MNG) reference library
 
 DISTNAME=	lm010010
 PKGNAME=	libmng-1.0.10
-REVISION=	3
+REVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libmng/}
 EXTRACT_SUFX=	.zip

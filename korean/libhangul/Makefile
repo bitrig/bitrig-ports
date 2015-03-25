@@ -3,7 +3,7 @@
 COMMENT=	hangul input library
 
 DISTNAME=	libhangul-0.0.10
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS=	hangul	0.1	# .1.0
 

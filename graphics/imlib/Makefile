@@ -5,7 +5,7 @@ COMMENT=	image manipulation library for X11
 
 V=		1.9.14
 DISTNAME=	imlib-${V}
-REVISION=	12
+REVISION=	13
 
 SHARED_LIBS +=  gdk_imlib            19.14    # 19.14
 SHARED_LIBS +=  Imlib                19.14    # 19.14
