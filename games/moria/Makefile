@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2013/12/12 21:39:08 jca Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	The Dungeons of Moria
 
 V=		5.5.2

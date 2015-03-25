@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.26 2014/11/30 07:08:48 brad Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	NetHack derivative
 
 VERSION =	1.9.3

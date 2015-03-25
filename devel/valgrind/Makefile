@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2014/12/12 05:18:30 uebayasi Exp $
 
+BROKEN = 		needs work on bitrig
+
 ONLY_FOR_ARCHS =	amd64
 
 COMMENT =		instrumentation framework for dynamic analysis tools

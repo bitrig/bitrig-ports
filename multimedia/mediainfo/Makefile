@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2014/11/05 16:15:06 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	display technical and tag data for video and audio files
 
 VERSION=	0.7.70

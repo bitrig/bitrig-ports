@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2014/01/24 09:56:05 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	game like Deflektor (C64) / Mindbender (Amiga)
 DISTNAME=	mirrormagic-2.0.2
 REVISION =	3

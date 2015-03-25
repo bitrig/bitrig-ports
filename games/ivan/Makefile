@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.12 2013/11/25 14:16:22 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 BROKEN-sparc64=	SIGBUS on sparc64 when starting
 
 COMMENT=	graphical roguelike game
