@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2014/09/07 18:50:07 stu Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	thread extension for Tcl
 
 DISTNAME =	thread2.7.1

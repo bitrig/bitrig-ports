@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.62 2014/11/20 09:11:21 brad Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	X11-based presentation tool
 
 DISTNAME=	magicpoint-1.09a

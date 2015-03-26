@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.6 2013/08/07 21:31:31 naddy Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		universal parsing tool & source code generator
 
 V =			4.5.4

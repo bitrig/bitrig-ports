@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.31 2013/06/04 18:41:41 naddy Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		Free Unix Spectrum Emulator
 DISTNAME=		fuse-0.10.0.2
 REVISION=		8

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.29 2015/01/22 18:41:16 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	X11/Motif schedule planner with calendar
 
 DISTNAME=	plan-1.10.1

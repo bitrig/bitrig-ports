@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2013/03/11 11:07:38 espie Exp $
 
+BROKEN= needs work on bitrig.  dpb should ignore this port but doesn't.
+
 COMMENT =		DOOM I data files
 
 DISTFILES =		doom.wad

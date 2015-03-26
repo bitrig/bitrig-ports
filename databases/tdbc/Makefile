@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2014/09/07 18:50:32 stu Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	Tcl Database Connectivity
 
 DISTNAME =	tdbc1.0.1

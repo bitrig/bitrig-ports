@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2014/03/25 21:20:39 espie Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		rar, 7zip and zip password bruteforcer
 
 DISTNAME=		rarcrack-0.2

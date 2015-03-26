@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.14 2014/04/24 20:33:43 jca Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		DICOM toolkit
 
 DISTNAME=		dcmtk-3.5.4

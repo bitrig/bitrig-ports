@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.28 2015/03/16 18:07:50 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	hfsplus filesystem access tool
 
 VERSION=	1.0.4

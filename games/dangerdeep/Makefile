@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2013/06/07 03:41:44 bentley Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		WWII German submarine simulator
 
 PKGNAME =		dangerdeep-0.3.99.3327

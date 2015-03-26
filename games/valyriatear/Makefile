@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2014/09/22 17:23:47 bcallah Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	free J-RPG game
 DISTNAME =	valyriatear-${GH_TAGNAME}
 CATEGORIES =	games x11

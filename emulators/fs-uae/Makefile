@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2014/03/15 13:04:15 edd Exp $
 
+BROKEN = 		needs work on bitrig
+
 BROKEN-powerpc =	error: invalid 'asm': invalid %k value
 BROKEN-alpha =		error: invalid 'asm': invalid %xn code
 BROKEN-sparc64 =	error: invalid 'asm': invalid operand output code
