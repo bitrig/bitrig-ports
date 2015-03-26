@@ -4,6 +4,7 @@ V =		4.1.15
 COMMENT =	query for a selection and print to stdout (select operation)
 DISTNAME =	slop-${V}
 CATEGORIES =	graphics x11
+REVISION =	0
 
 GH_ACCOUNT =	naelstrof
 GH_PROJECT =	slop

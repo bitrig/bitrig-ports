@@ -5,7 +5,7 @@ CATEGORIES=	devel
 
 V=		5.8.7
 DISTNAME=	autogen-${V}
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS +=	opts                 27.5     # .27.5
 SHARED_LIBS +=	guileopts            1.0      # .0.1

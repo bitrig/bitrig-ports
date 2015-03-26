@@ -4,7 +4,7 @@ COMMENT=		IDL parsing library
 
 GNOME_PROJECT=		libIDL
 GNOME_VERSION=		0.8.14
-REVISION=		3
+REVISION=		4
 
 SHARED_LIBS +=	IDL-2                0.1      # .0.0
 

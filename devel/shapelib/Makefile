@@ -3,7 +3,7 @@
 COMMENT=	shapefile manipulation library
 
 DISTNAME=	shapelib-1.2.10
-REVISION =	3
+REVISION =	4
 SHARED_LIBS=	shp 1.2
 CATEGORIES=    	devel
 

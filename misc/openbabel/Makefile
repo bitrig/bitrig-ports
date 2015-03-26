@@ -4,7 +4,7 @@ COMMENT=	chemistry file translation program
 
 V=		2.2.3
 DISTNAME=	openbabel-${V}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	misc
 
 SUBST_VARS=	V

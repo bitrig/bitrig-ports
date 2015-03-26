@@ -3,7 +3,7 @@
 COMMENT =		library for handling page faults in user mode
 
 DISTNAME =		libsigsegv-2.10
-REVISION =		1
+REVISION =		2
 SHARED_LIBS =		sigsegv 1.0
 CATEGORIES =		devel
 

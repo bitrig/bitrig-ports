@@ -4,7 +4,7 @@ COMMENT=	solve large scale eigenvalue problems
 
 DISTNAME=	arpack96
 PKGNAME=	arpack-96
-REVISION=	4
+REVISION=	5
 SHARED_LIBS=	arpack 1.0
 CATEGORIES=	math
 
