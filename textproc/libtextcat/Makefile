@@ -3,7 +3,7 @@
 COMMENT=	language guessing library
 
 DISTNAME=	libtextcat-2.2
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  textcat              0.0      # .0.0
 

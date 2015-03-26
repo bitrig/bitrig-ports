@@ -5,7 +5,7 @@ COMMENT =		fast, primitive HTTP request parser
 SHARED_ONLY =		Yes
 MODULES =		cpan
 DISTNAME =		HTTP-Parser-XS-0.13
-REVISION =		2
+REVISION =		3
 CATEGORIES =		www
 
 # Perl

@@ -7,7 +7,7 @@ DISTNAME=		opencdk-${VERSION}
 CATEGORIES=		security
 SHARED_LIBS=		opencdk	9.0	# .10.5
 
-REVISION=		2
+REVISION=		3
 
 HOMEPAGE=		http://www.gnutls.org/
 

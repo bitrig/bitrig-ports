@@ -3,7 +3,7 @@
 COMMENT=		utility library including a imlib2 wrapper
 
 DISTNAME=		giblib-1.2.4
-REVISION =		6
+REVISION =		7
 SHARED_LIBS=		giblib	1.6	# .1.6
 
 CATEGORIES=		devel

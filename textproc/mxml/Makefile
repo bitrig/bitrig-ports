@@ -4,6 +4,8 @@ COMMENT=		minimal XML library
 DISTNAME=		mxml-2.9
 CATEGORIES=		textproc
 
+REVISION=		0
+
 SHARED_LIBS=		mxml	0.2	# 1.5
 
 HOMEPAGE=		http://www.msweet.org/projects.php?Z3

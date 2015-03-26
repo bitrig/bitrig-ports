@@ -2,7 +2,7 @@
 
 COMMENT=	small to medium scale full-text search engine
 DISTNAME=	namazu-2.0.21
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS+=	nmz 0.1	# .8.3
 

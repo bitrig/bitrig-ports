@@ -5,7 +5,7 @@ COMMENT=	perl interface to a variant of the MD5 algorithm
 
 MODULES=	cpan
 DISTNAME=	Digest-MD5-M4p-0.01
-REVISION=	5
+REVISION=	6
 CATEGORIES=	security
 
 # same as perl

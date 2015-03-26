@@ -5,7 +5,7 @@ COMMENT=	HASH that stores values without a reference count increase
 SHARED_ONLY=	Yes
 
 DISTNAME=	Hash-NoRef-0.03
-REVISION=	5
+REVISION=	6
 CATEGORIES=	devel
 MODULES=	cpan
 

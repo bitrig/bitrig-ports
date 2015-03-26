@@ -3,7 +3,7 @@
 COMMENT=	GNU oSIP library
 
 DISTNAME=	libosip2-3.5.0
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS +=	osipparser2          4.0      # 8.0
 SHARED_LIBS +=	osip2                4.0      # 8.0

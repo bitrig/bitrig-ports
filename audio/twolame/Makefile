@@ -3,7 +3,7 @@
 COMMENT=	optimised MPEG Audio Layer 2 (MP2) encoder
 
 DISTNAME=	twolame-0.3.13
-REVISION=	1
+REVISION=	2
 SHARED_LIBS +=  twolame              0.0      # 0.0
 
 CATEGORIES=	audio

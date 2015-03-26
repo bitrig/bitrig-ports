@@ -5,7 +5,7 @@ COMMENT =	library for parsing mms:// and mmsh:// type network streams
 DISTNAME =	libmms-0.6.2
 CATEGORIES =	multimedia net
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=libmms/}
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS =	mms 1.0 #0.2
 

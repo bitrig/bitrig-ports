@@ -4,7 +4,7 @@ COMMENT =		light RDF manipulation with LADSPA plugin support
 
 DISTNAME =		LRDF-0.5.0
 PKGNAME =		lib${DISTNAME:L}
-REVISION =		2
+REVISION =		3
 CATEGORIES =		textproc
 
 SHARED_LIBS =		lrdf	1.0	# 0.0

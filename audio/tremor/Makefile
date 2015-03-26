@@ -3,7 +3,7 @@
 COMMENT=	integer-only, fully Ogg Vorbis compliant decoder library
 
 DISTNAME=	tremor-20120410
-REVISION=	1
+REVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://comstyle.com/source/
 EXTRACT_SUFX=	.tar.bz2

@@ -3,7 +3,7 @@
 COMMENT=		communicate with some Creative and Dell audio players
 
 DISTNAME=		libnjb-2.2.6
-REVISION=		2
+REVISION=		3
 SHARED_LIBS=		njb	0.0	# .6.0
 CATEGORIES=		audio devel
 

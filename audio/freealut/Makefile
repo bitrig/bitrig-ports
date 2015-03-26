@@ -3,7 +3,7 @@
 COMMENT=	OpenAL Utility Toolkit
 
 DISTNAME=	freealut-1.1.0
-REVISION=	1
+REVISION=	2
 SHARED_LIBS +=  alut                 1.0      # .1.0
 CATEGORIES=	audio
 

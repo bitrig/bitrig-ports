@@ -3,7 +3,7 @@
 COMMENT=		perl wrapper around libusb
 
 DISTNAME=		Device-USB-0.31
-REVISION=		6
+REVISION=		7
 CATEGORIES=		devel
 SHARED_ONLY=		Yes
 

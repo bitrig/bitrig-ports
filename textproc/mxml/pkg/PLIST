@@ -2,7 +2,6 @@
 @bin bin/mxmldoc
 include/mxml.h
 lib/libmxml.a
-@lib lib/libmxml.so.${LIBmxml_VERSION}
 lib/pkgconfig/mxml.pc
 @man man/man1/mxmldoc.1
 @man man/man3/mxml.3

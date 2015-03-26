@@ -5,7 +5,7 @@ BROKEN-alpha=	Alpha architecture not yet supported
 COMMENT=	C library to parse CGI Forms
 
 DISTNAME=	cgiparse-0.9b
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 SHARED_LIBS=	cgiparse	1.0
 

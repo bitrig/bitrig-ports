@@ -3,7 +3,7 @@
 COMMENT =		interface to access block/stream encryption algorithms
 
 DISTNAME =		libmcrypt-2.5.8
-REVISION =		2
+REVISION =		3
 CATEGORIES =		security
 SHARED_LIBS =		mcrypt	8.7	# .8.7
 MODGNU_SHARED_LIBS =	mcrypt	''

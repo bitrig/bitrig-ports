@@ -5,7 +5,7 @@ SHARED_ONLY =	Yes
 COMMENT =	create and manipulate tables
 
 DISTNAME =	Tk-TableMatrix-1.23
-REVISION =	3
+REVISION =	4
 CATEGORIES =	x11 devel
 CPAN_AUTHOR =   CERNEY
 

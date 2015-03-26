@@ -3,7 +3,7 @@
 COMMENT =	user-space USB HID access library written in C
 
 DISTNAME =	libhid-0.2.16
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS =	hid	0.0
 

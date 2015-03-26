@@ -3,7 +3,7 @@
 COMMENT = 	library to secure any kind of communication streams
 
 DISTNAME = 	libperseus-1.0.2
-REVISION =	1
+REVISION =	2
 CATEGORIES = 	security
 
 SHARED_LIBS = 	perseus 0.0	

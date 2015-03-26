@@ -7,8 +7,8 @@ VERSION=	2.4.2
 DISTNAME=	libtool-${VERSION}
 PKGNAME-main=	${DISTNAME}
 PKGNAME-ltdl=	libltdl-${VERSION}
-REVISION-main=	2
-REVISION-ltdl=	1
+REVISION-main=	3
+REVISION-ltdl=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=libtool/}
 MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/libltdl/config/

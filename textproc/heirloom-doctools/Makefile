@@ -5,6 +5,8 @@ COMMENT =		modernized troff implementation
 V =			141029
 DISTNAME =		heirloom-doctools-$V
 
+REVISION = 		0
+
 CATEGORIES =		textproc print
 
 HOMEPAGE =		https://n-t-roff.github.io/heirloom/doctools.html
@@ -12,7 +14,8 @@ HOMEPAGE =		https://n-t-roff.github.io/heirloom/doctools.html
 # see LICENSE and LICENSE.d/
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m stdc++
+WANTLIB += c m
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		https://github.com/n-t-roff/heirloom-doctools/releases/download/$V/
 EXTRACT_SUFX =		.tar.bz2

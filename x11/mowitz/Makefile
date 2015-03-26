@@ -4,7 +4,7 @@ COMMENT=		widgets library
 
 DISTNAME=		Mowitz-0.3.0
 PKGNAME=		${DISTNAME:L}
-REVISION=		5
+REVISION=		6
 
 SHARED_LIBS +=	Mowitz               3.0      # .3.0
 CATEGORIES=		x11 devel

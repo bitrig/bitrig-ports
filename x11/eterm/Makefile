@@ -10,7 +10,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 PKGNAME=	eterm-$V
 SHARED_LIBS +=	Eterm                1.0      # .0.0
 CATEGORIES=	x11
-REVISION=	3
+REVISION=	4
 
 HOMEPAGE=	http://www.eterm.org/
 
