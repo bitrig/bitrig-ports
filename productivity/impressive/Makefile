@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/02/16 22:57:12 naddy Exp $
+# $OpenBSD: Makefile,v 1.16 2015/03/26 12:14:15 sthen Exp $
 
 COMMENT =		stylish PDF presentation generator
 
