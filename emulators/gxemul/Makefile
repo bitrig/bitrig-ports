@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.33 2014/10/12 13:26:16 bcallah Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		ARM/M88k/MIPS/PowerPC/SuperH machines emulator
 
 DISTNAME =		gxemul-0.6.0.1

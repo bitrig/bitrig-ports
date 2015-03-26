@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.61 2013/10/31 21:12:12 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	sniffing tools for penetration testing
 
 DISTNAME=	dsniff-2.3

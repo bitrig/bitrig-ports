@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2013/03/11 10:50:10 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	data synchronization framework

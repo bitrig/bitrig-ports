@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2015/03/14 20:52:46 naddy Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	web frontend for git repositories
 
 DISTNAME =	cgit-0.9.2

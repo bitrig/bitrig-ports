@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2015/01/16 15:40:01 sthen Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =		extremely fast password cracker, with community patches
 BROKEN-alpha =	DES_bs.c:173: internal compiler error: in get_callee_fndecl, at tree.c:5940
 

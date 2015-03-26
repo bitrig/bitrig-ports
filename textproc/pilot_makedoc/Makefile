@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.22 2013/03/11 11:42:46 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	convert text into the Doc format used by PalmPilots
 
 PKGNAME=	pilot_makedoc-0.7

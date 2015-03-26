@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.72 2015/02/12 17:55:55 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	robust and small HTTP server and mail proxy server
 
 VERSION=	1.7.10

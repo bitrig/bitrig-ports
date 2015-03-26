@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.5 2014/04/17 07:03:59 bentley Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		n64 emulator video plugin
 
 # XXX upstream was inconsistent with numbering this release (2.0 vs 2.0.0)

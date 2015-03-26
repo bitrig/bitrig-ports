@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.40 2013/03/11 11:44:43 espie Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		Nostromo webserver
 
 DISTNAME=		nostromo-1.9.5

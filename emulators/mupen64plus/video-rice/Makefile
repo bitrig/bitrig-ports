@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2014/04/17 07:03:59 bentley Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		n64 emulator opengl video plugin
 
 # GPLv2+

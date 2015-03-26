@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.10 2014/10/22 13:44:44 jasper Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	small utility to control XMMS from the command line
 
 DISTNAME=	xmmsctrl-1.9

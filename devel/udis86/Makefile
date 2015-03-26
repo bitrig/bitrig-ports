@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.5 2015/03/16 18:07:45 naddy Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	easy-to-use minimalistic disassembler library
 
 DISTNAME =	udis86-1.7.2

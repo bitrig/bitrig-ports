@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2013/03/10 22:55:06 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	XMMS input plugin to play Speex files

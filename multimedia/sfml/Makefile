@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2014/09/14 21:01:52 pascal Exp $
 
+BROKEN = 		needs work on bitrig
+
 SHARED_ONLY =		Yes
 
 COMMENT =		simple and fast multimedia library
@@ -23,7 +25,8 @@ HOMEPAGE =		http://www.sfml-dev.org/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL GLEW ICE SM X11 Xext Xrandr freetype jpeg m openal
-WANTLIB += pthread sndfile stdc++
+WANTLIB += pthread sndfile
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		http://www.sfml-dev.org/download/sfml/${V}/
 

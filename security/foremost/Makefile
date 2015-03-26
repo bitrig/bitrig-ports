@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2014/10/05 07:55:11 rpointel Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		forensic data recovery program
 
 DISTNAME =		foremost-1.5.7

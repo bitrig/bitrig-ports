@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2015/03/16 18:07:43 naddy Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		logging API for C++
 
 DISTNAME=		log4cplus-1.0.4

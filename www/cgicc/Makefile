@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2015/03/16 18:07:57 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	c++ compliant CGI applications libraries
 
 DISTNAME=	cgicc-3.2.1

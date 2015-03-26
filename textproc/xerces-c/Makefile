@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2015/03/23 14:36:38 jasper Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	c++ validating XML parser
 
 DISTNAME=	xerces-c-src_2_8_0

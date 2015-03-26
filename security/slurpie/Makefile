@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2013/03/11 11:41:28 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	distributed passwd file cracker
 
 VERSION=	2.0b

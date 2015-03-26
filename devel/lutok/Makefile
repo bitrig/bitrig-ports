@@ -1,5 +1,7 @@
 # $OpenBSD $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		lightweight C++ API for Lua
 DISTNAME =		lutok-0.4
 

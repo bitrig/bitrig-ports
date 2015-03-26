@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2015/03/16 18:07:55 naddy Exp $
 
+BROKEN	= 	needs work on bitrig
+
 COMMENT =	XML and HTML processing toolkit
 DISTNAME =	arabica-2010-November
 PKGNAME =	arabica-2010.11

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.6 2014/04/28 09:02:15 bentley Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		BMP/ICO decoding library
 
 NETSURF_PROJECT =	libnsbmp

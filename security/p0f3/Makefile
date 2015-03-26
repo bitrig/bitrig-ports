@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2015/01/08 22:03:20 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	passive OS fingerprinting tool
 
 V=		3.08b

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.33 2013/03/21 08:45:13 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	XMMS input plugin for playing shorten files

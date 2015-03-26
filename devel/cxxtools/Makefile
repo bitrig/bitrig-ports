@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2015/03/16 18:07:40 naddy Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		various reusable C++-components
 
 DISTNAME=		cxxtools-1.4.7

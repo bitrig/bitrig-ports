@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2013/05/21 19:38:08 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	graphical display for the current uvm status
 
 DISTNAME=	xuvmstat20050909

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.23 2013/03/11 11:42:42 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	text search engine by CNIDR
 
 DISTNAME=	Isearch-1.14

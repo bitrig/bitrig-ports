@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.24 2015/02/17 22:56:48 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	text search engine
 
 DISTNAME=	glimpse-4.1

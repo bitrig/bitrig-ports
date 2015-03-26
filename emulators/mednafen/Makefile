@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2014/06/28 04:08:48 jeremy Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	emulates numerous game consoles
 
 V =		0.9.35.1

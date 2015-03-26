@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2013/03/15 16:13:53 landry Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	distributed version control system
 
 VERSION=	0.39

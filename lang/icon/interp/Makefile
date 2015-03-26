@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.30 2014/08/10 09:58:05 espie Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT-main =		programming language with generators, X11 and more
 COMMENT-main-no_x11 =	programming language with generators
 

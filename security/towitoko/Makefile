@@ -3,7 +3,7 @@
 COMMENT=		library and utilities for towitoko card readers
 
 DISTNAME=		towitoko-2.0.7
-REVISION =		2
+REVISION =		3
 CATEGORIES=		security
 SHARED_LIBS=		towitoko	2.0
 MODGNU_SHARED_LIBS=	towitoko	'-module'

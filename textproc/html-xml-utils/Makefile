@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2014/09/04 07:04:57 bentley Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		simple utilities for manipulating HTML and XML files
 
 DISTNAME =		html-xml-utils-6.7

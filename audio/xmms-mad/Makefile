@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.19 2014/11/26 19:55:19 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	XMMS input plugin for MP3 files

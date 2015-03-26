@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.24 2013/03/11 11:41:32 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	faster and improved version of dd
 
 DISTNAME=	sdd-1.52

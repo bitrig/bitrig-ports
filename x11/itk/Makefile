@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.13 2015/03/16 18:07:59 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	build mega-widgets using the Itcl object system
 
 VERSION=	3.3

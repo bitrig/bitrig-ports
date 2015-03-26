@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.10 2013/10/11 23:49:30 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	AVR microcontroller hardware in-system programmer
 
 DISTNAME=	uisp-20050207

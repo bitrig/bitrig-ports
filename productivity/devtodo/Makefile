@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.22 2013/10/11 23:50:41 naddy Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		reminder/task program aimed at developers
 
 DISTNAME=		devtodo-0.1.20

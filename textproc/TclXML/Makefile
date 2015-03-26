@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.25 2015/03/16 18:07:55 naddy Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	XML parser for Tcl
 
 DISTNAME =	tclxml-3.2

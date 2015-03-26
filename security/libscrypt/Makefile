@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2014/07/10 11:06:37 rpe Exp $
 
+BROKEN = 	needs work on bitrig
+
 # should build a static library without using -fPIC
 SHARED_ONLY =	Yes
 

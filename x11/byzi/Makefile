@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2013/03/11 11:46:08 espie Exp $
 
+BROKEN = 	needs work on bitrig
+
 SHARED_ONLY =	Yes
 
 COMMENT =	confine pointer and keyboard events to a Tk window sub-tree

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.30 2013/03/11 10:50:27 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	set of Python modules designed for writing games

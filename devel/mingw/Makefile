@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2014/11/12 08:20:09 dcoppa Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	development environment for native Windows applications
 
 V = 		1.0.1

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2013/03/11 11:41:28 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	logs smurf attacks
 DISTNAME=	smurflog-2.1
 REVISION =	1
