@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/07/14 07:46:19 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2015/03/27 08:15:03 ajacoutot Exp $
 
 CATEGORIES =	www
 COMMENT =	Webkit-based KPart for KDE
@@ -22,7 +22,7 @@ WANTLIB += ${KDE4LIB}/kdewebkit ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += soprano
 WANTLIB += c++ c++abi
 
-RUN_DEPENDS =	x11/gtk+2,-guic
+RUN_DEPENDS =	x11/gtk+3,-guic
 
 MODULES =	x11/kde4
 

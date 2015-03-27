@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.37 2014/12/17 10:02:08 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.38 2015/03/27 08:15:03 ajacoutot Exp $
 
 COMMENT =	standalone YouTube.com video browser/player
 
 DISTNAME =	minitube-2.3
 
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	www multimedia
 
@@ -26,7 +26,7 @@ WANTLIB +=	c++ c++abi
 RUN_DEPENDS =	multimedia/gstreamer-0.10/plugins-good \
 		multimedia/gstreamer-0.10/plugins-ffmpeg \
 		devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 WRKDIST =	${WRKDIR}/minitube
 
