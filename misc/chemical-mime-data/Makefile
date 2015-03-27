@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/06/01 19:19:16 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.5 2015/03/27 08:41:06 ajacoutot Exp $
 
 PKG_ARCH =		*
 COMMENT =		MIME types and icons for chemical applications
@@ -20,7 +20,7 @@ BUILD_DEPENDS =		graphics/ImageMagick \
 
 RUN_DEPENDS =		misc/shared-mime-info \
 			x11/gnome/mime-data \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 SEPARATE_BUILD =	Yes
 USE_GMAKE =		Yes

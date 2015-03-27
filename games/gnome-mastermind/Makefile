@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2014/04/02 14:44:55 jasper Exp $
+# $OpenBSD: Makefile,v 1.25 2015/03/27 08:41:05 ajacoutot Exp $
 
 COMMENT =	Mastermind clone reflexion game
 

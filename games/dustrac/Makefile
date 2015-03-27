@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.2 2014/12/09 21:47:03 zhuk Exp $
+# $OpenBSD: Makefile,v 1.3 2015/03/27 08:41:05 ajacoutot Exp $
 
 BROKEN = 		needs work on bitrig
 
 COMMENT =		traditional top-down car racing game
 
 DISTNAME =		dustrac-1.7.3
+REVISION =		0
 
 CATEGORIES =		games
 
@@ -24,7 +25,7 @@ MODULES =		devel/cmake \
 MODGCC4_ARCHS =		*
 MODGCC4_LANGS =		c c++
 RUN_DEPENDS =		devel/desktop-file-utils \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 LIB_DEPENDS =		audio/openal
 

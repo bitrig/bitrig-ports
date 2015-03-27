@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2013/10/22 11:34:20 zhuk Exp $
+# $OpenBSD: Makefile,v 1.25 2015/03/27 08:41:06 ajacoutot Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -22,7 +22,7 @@ WANTLIB += c++ c++abi
 
 MASTER_SITES=	${HOMEPAGE}/downloads/v${VERSION}/tarball/
 
-RUN_DEPENDS=	x11/gtk+2,-guic
+RUN_DEPENDS=	x11/gtk+3,-guic
 LIB_DEPENDS=	x11/kde/libs3
 
 MODULES=	x11/kde devel/gettext
