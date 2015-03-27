@@ -166,11 +166,14 @@ lib/python${MODPY_VERSION}/site-packages/bpython/translations/nl_NL/LC_MESSAGES/
 lib/python${MODPY_VERSION}/site-packages/bpython/translations/nl_NL/LC_MESSAGES/bpython.mo
 lib/python${MODPY_VERSION}/site-packages/bpython/urwid.py
 lib/python${MODPY_VERSION}/site-packages/bpython/urwid.pyc
-@man man/man1/bpython.1
-@man man/man5/bpython-config.5
 share/appdata/
 share/appdata/bpython.appdata.xml
 share/applications/bpython.desktop
+share/man/
+share/man/man1/
+@man share/man/man1/bpython.1
+share/man/man5/
+@man share/man/man5/bpython-config.5
 share/pixmaps/
 share/pixmaps/bpython.png
 @exec %D/bin/update-desktop-database

@@ -6,6 +6,8 @@ MODPY_EGG_VERSION=0.14.1
 DISTNAME=	bpython-${MODPY_EGG_VERSION}
 CATEGORIES=	devel
 
+REVISION=	0
+
 HOMEPAGE=	http://bpython-interpreter.org/
 
 # MIT

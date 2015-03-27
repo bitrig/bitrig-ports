@@ -37,7 +37,6 @@ share/examples/ode/
 @bin share/examples/ode/demo_boxstack
 @bin share/examples/ode/demo_buggy
 @bin share/examples/ode/demo_cards
-@bin share/examples/ode/demo_chain1
 @bin share/examples/ode/demo_chain2
 @bin share/examples/ode/demo_collision
 @bin share/examples/ode/demo_crash

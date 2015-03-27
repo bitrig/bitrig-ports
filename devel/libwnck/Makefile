@@ -6,7 +6,7 @@ COMMENT=		window navigator construction kit
 
 GNOME_PROJECT=		libwnck
 GNOME_VERSION=		2.30.7
-REVISION=		5
+REVISION=		6
 
 SHARED_LIBS +=	wnck-1               24.0     # .25.26
 
