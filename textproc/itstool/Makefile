@@ -5,7 +5,7 @@ PKG_ARCH=	*
 COMMENT=	translate XML documents with PO files
 
 DISTNAME=	itstool-2.0.2
-REVISION=	0
+REVISION=	1
 EXTRACT_SUFX=	.tar.bz2
 
 CATEGORIES=	textproc
@@ -20,6 +20,7 @@ MASTER_SITES=	http://files.itstool.org/itstool/
 MODULES=	lang/python
 
 RUN_DEPENDS=	textproc/libxml,-python
+BUILD_DEPENDS=	${RUN_DEPENDS}
 
 CONFIGURE_STYLE=gnu
 
