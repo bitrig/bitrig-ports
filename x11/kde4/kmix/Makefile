@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/07/18 08:17:10 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2015/03/27 08:16:20 ajacoutot Exp $
 COMMENT =	KDE audio mixer
 CATEGORIES =	audio
 DISTNAME =	kmix-${MODKDE4_VERSION}
@@ -13,7 +13,7 @@ MODULES =	multimedia/phonon
 MODKDE4_USE =	libs
 
 RUN_DEPENDS =	devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 LIB_DEPENDS =	audio/pulseaudio \
 		audio/libcanberra

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2014/04/22 21:23:52 naddy Exp $
+# $OpenBSD: Makefile,v 1.43 2015/03/27 08:16:25 ajacoutot Exp $
 
 COMMENT=	Xfce4 printing helper
 

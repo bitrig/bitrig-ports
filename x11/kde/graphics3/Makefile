@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.114 2013/12/22 19:24:34 zhuk Exp $
+# $OpenBSD: Makefile,v 1.115 2015/03/27 08:16:18 ajacoutot Exp $
 
 COMMENT-main =		K Desktop Environment, graphic applications
 COMMENT-kamera =	KDE interface to digital cameras
@@ -9,10 +9,10 @@ VERSION =		3.5.10
 DISTNAME =		kdegraphics-${VERSION}
 MODKDE_VERSION =	3.5.8
 
-REVISION-main =		24
-REVISION-kamera =	14
-REVISION-kpov =		13
-REVISION-sane =		17
+REVISION-main =		25
+REVISION-kamera =	15
+REVISION-kpov =		14
+REVISION-sane =		18
 
 SEPARATE_BUILD =	flavored
 MULTI_PACKAGES =	-main -kpov -kamera -sane
@@ -43,7 +43,7 @@ LIB_DEPENDS =		${MODGETTEXT_LIB_DEPENDS} \
 RUN_DEPENDS-main =	${RUN_DEPENDS} \
 			print/ghostscript/gnu \
 			devel/desktop-file-utils \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 LIB_DEPENDS-main = 	${LIB_DEPENDS} \
 			graphics/imlib \
 			graphics/giflib \
@@ -55,7 +55,7 @@ LIB_DEPENDS-kpov =	${LIB_DEPENDS}
 RUN_DEPENDS-kpov =	${RUN_DEPENDS} \
 			graphics/povray \
 			devel/desktop-file-utils \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 LIB_DEPENDS-kamera = 	${LIB_DEPENDS} \
 			graphics/libgphoto2>=2.5
@@ -64,7 +64,7 @@ RUN_DEPENDS-kamera =	${RUN_DEPENDS} \
 
 RUN_DEPENDS-sane =	${RUN_DEPENDS} \
 			devel/desktop-file-utils \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 LIB_DEPENDS-sane =	${LIB_DEPENDS} \
 			graphics/sane-backends
 

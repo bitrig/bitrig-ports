@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.181 2014/12/10 12:36:13 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.182 2015/03/27 08:16:17 ajacoutot Exp $
 
 EVO_VERSION=		3.12
 SUBST_VARS +=		EVO_VERSION

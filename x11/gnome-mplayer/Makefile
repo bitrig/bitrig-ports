@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.85 2014/04/29 13:39:22 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.86 2015/03/27 08:16:17 ajacoutot Exp $
 
 COMMENT =		GTK+/GNOME frontend for MPlayer
 
@@ -7,6 +7,7 @@ DISTNAME =		gnome-mplayer-${V}
 REVISION =		0
 EPOCH =			0
 CATEGORIES =		x11 multimedia
+REVISION =		0
 
 HOMEPAGE =		http://kdekorte.googlepages.com/gnomemplayer/
 
@@ -30,7 +31,7 @@ LIB_DEPENDS =		devel/libnotify>=0.7.2 \
 			x11/dbus-glib \
 			x11/gmtk>=${V}
 RUN_DEPENDS =		devel/desktop-file-utils \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 
 USE_GMAKE =		Yes

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.52 2014/04/02 09:36:12 jasper Exp $
+# $OpenBSD: Makefile,v 1.53 2015/03/27 08:16:16 ajacoutot Exp $
 
 COMMENT=		fd.o menu editor for GNOME
 

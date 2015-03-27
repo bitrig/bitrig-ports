@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/07/09 20:03:26 zhuk Exp $
+# $OpenBSD: Makefile,v 1.6 2015/03/27 08:16:20 ajacoutot Exp $
 
 COMMENT =	speech tool for mute persons for KDE
 DISTNAME =	kmouth-${MODKDE4_VERSION}
@@ -10,7 +10,7 @@ WANTLIB += lib/qt4/QtSvg lib/qt4/Qt3Support lib/qt4/QtXml
 WANTLIB += ${KDE4LIB}/kde3support ${KDE4LIB}/kdeui ${KDE4LIB}/kio
 
 RUN_DEPENDS =	devel/desktop-file-utils \
-		x11/gtk+2,-guic \
+		x11/gtk+3,-guic \
 		${MODKDE4_DEP_DIR}/jovie>=${MODKDE4_DEP_VERSION}
 
 .include <bsd.port.mk>

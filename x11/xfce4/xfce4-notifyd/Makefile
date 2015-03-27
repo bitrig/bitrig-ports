@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2014/04/20 21:19:44 jasper Exp $
+# $OpenBSD: Makefile,v 1.23 2015/03/27 08:16:24 ajacoutot Exp $
 
 COMMENT=	Xfce4 alternative notification daemon
 

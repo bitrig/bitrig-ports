@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.72 2014/12/31 08:42:27 landry Exp $
+# $OpenBSD: Makefile,v 1.73 2015/03/27 08:16:18 ajacoutot Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -8,7 +8,7 @@ CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
 DISTNAME =		kdeedu-${VERSION}
 MODKDE_VERSION =	3.5.8
-REVISION =		15
+REVISION =		16
 
 SHARED_LIBS +=	kdeeducore           4.0      # .3.0
 SHARED_LIBS +=	kdeeduui             4.0      # .3.5
@@ -35,7 +35,7 @@ WANTLIB += c++ c++abi
 MODULES =	x11/kde devel/gettext
 
 RUN_DEPENDS +=	devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 LIB_DEPENDS = 	x11/kde/libs3
 SEPARATE_BUILD =	flavored
 

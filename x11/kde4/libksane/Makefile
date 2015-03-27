@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/07/09 20:03:29 zhuk Exp $
+# $OpenBSD: Makefile,v 1.9 2015/03/27 08:16:22 ajacoutot Exp $
 
 COMMENT =	KDE SANE (scanner) wrapper library
 CATEGORIES =	graphics devel
@@ -14,7 +14,7 @@ WANTLIB += sane
 
 MODKDE4_USE =	libs
 
-RUN_DEPENDS =	x11/gtk+2,-guic
+RUN_DEPENDS =	x11/gtk+3,-guic
 
 LIB_DEPENDS = 	graphics/sane-backends
 

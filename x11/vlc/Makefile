@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.181 2014/10/15 17:33:51 jasper Exp $
+# $OpenBSD: Makefile,v 1.182 2015/03/27 08:16:24 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -9,7 +9,7 @@ V=		2.0.10
 DISTNAME=	vlc-${V}
 PKGNAME-main=	${DISTNAME}
 PKGNAME-jack=	vlc-jack-${V}
-REVISION-main=	3
+REVISION-main=	4
 REVISION-jack=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://download.videolan.org/pub/videolan/vlc/${V}/
@@ -85,7 +85,7 @@ BUILD_DEPENDS=	net/livemedia>=20120204p0 \
 		devel/bison \
 		devel/libtool
 RUN_DEPENDS-main= devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 RUN_DEPENDS-jack= ${BUILD_PKGPATH}
 
 MAKE_ENV=	AUTOCONF_VERSION=${AUTOCONF_VERSION} AUTOMAKE_VERSION=${AUTOMAKE_VERSION}

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/07/09 20:03:24 zhuk Exp $
+# $OpenBSD: Makefile,v 1.8 2015/03/27 08:16:19 ajacoutot Exp $
 
 COMMENT =	KDE text to speech application
 DISTNAME =	jovie-${MODKDE4_VERSION}
@@ -15,7 +15,7 @@ WANTLIB += ${KDE4LIB}/kprintutils ${KDE4LIB}/kutils
 WANTLIB += speechd
 
 RUN_DEPENDS =	devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 LIB_DEPENDS =	audio/speech-dispatcher
 

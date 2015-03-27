@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2014/11/01 21:09:46 zhuk Exp $
+# $OpenBSD: Makefile,v 1.16 2015/03/27 08:16:22 ajacoutot Exp $
 
 COMMENT =	KDE document viewer
 DISTNAME =	okular-${MODKDE4_VERSION}
@@ -21,7 +21,7 @@ WANTLIB += qjson soprano solid spectre threadweaver tiff
 MODULES =	multimedia/phonon
 
 RUN_DEPENDS =	devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 LIB_DEPENDS = 	devel/chmlib \
 		devel/qjson \

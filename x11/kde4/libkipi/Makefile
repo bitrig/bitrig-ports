@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2015/01/20 21:58:42 zhuk Exp $
+# $OpenBSD: Makefile,v 1.15 2015/03/27 08:16:22 ajacoutot Exp $
 
 COMMENT-main =	KDE image plugins infrastructure
 COMMENT-icons =	icons for libkipi
@@ -8,6 +8,8 @@ PKGNAME-main =	${DISTNAME}
 REVISION =	0
 PKGNAME-icons =	kde4-libkipi-icons-${MODKDE4_VERSION}
 PKGSPEC-main =	libkipi-${MODKDE4_SPEC}
+REVISION-icons =0
+REVISION-main =	0
 
 SHARED_LIBS =	kipi		50.1
 
@@ -23,7 +25,7 @@ MULTI_PACKAGES =	-main -icons
 
 MODKDE4_USE =		libs
 
-RUN_DEPENDS-icons =	x11/gtk+2,-guic
+RUN_DEPENDS-icons =	x11/gtk+3,-guic
 RUN_DEPENDS-main =	${RUN_DEPENDS} \
 			${BUILD_PKGPATH},-icons
 

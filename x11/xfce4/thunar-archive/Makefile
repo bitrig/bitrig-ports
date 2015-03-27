@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2013/10/05 07:34:43 espie Exp $
+# $OpenBSD: Makefile,v 1.21 2015/03/27 08:16:24 ajacoutot Exp $
 
 COMMENT =	Thunar archive plugin
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2013/10/22 11:34:24 zhuk Exp $
+# $OpenBSD: Makefile,v 1.31 2015/03/27 08:16:23 ajacoutot Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -25,7 +25,7 @@ WANTLIB += c++ c++abi
 MASTER_SITES=	${HOMEPAGE}/download/
 EXTRACT_SUFX=	.tar.bz2
 
-RUN_DEPENDS=	x11/gtk+2,-guic
+RUN_DEPENDS=	x11/gtk+3,-guic
 LIB_DEPENDS=	x11/kde/libs3
 
 MODULES=	devel/gettext \

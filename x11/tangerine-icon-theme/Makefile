@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/04/03 08:08:21 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.14 2015/03/27 08:16:23 ajacoutot Exp $
 
 COMMENT=		Tangerine icon theme from Ubuntu
 
@@ -16,7 +16,7 @@ MODULES=	textproc/intltool
 
 WRKDIST=	${WRKDIR}/tangerine-icon-theme-0.26
 
-RUN_DEPENDS=	x11/gtk+2,-guic
+RUN_DEPENDS=	x11/gtk+3,-guic
 
 BUILD_DEPENDS=	x11/icon-naming-utils \
 		graphics/ImageMagick \

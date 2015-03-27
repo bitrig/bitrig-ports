@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.73 2013/10/28 12:16:22 zhuk Exp $
+# $OpenBSD: Makefile,v 1.74 2015/03/27 08:16:18 ajacoutot Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -10,7 +10,7 @@ DISTNAME =		kdeartwork-${VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-emoticons =	kde-emoticons-${VERSION}
 PKGSPEC-main =		kdeartwork->=3,<4
-REVISION-main =		18
+REVISION-main =		19
 REVISION-emoticons =	0
 
 MODULES =		x11/kde devel/gettext
@@ -22,7 +22,7 @@ BUILD_DEPENDS =		x11/xscreensaver
 
 RUN_DEPENDS-emoticons =
 RUN_DEPENDS =		x11/xscreensaver \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 LIB_DEPENDS-emoticons =
 LIB_DEPENDS =		x11/kde/libs3 \

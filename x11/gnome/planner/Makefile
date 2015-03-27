@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.66 2014/04/02 09:36:14 jasper Exp $
+# $OpenBSD: Makefile,v 1.67 2015/03/27 08:16:17 ajacoutot Exp $
 
 COMMENT=		project management application
 

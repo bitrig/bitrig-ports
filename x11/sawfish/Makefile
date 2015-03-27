@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.69 2015/02/16 22:57:14 naddy Exp $
+# $OpenBSD: Makefile,v 1.70 2015/03/27 08:16:23 ajacoutot Exp $
 
 COMMENT=	extensible window manager
 
@@ -23,7 +23,7 @@ BUILD_DEPENDS=	archivers/gtar \
 		x11/rep-gtk>=0.90.8.1
 RUN_DEPENDS=	devel/desktop-file-utils \
 		x11/rep-gtk>=0.90.8.1 \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 LIB_DEPENDS=	devel/pangox-compat>=0.0.2 \
 		lang/librep \

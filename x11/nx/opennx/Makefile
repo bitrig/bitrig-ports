@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.34 2014/09/11 21:57:00 jasper Exp $
+# $OpenBSD: Makefile,v 1.35 2015/03/27 08:16:23 ajacoutot Exp $
 
 BROKEN= 		needs work on bitrig
 
@@ -6,6 +6,7 @@ COMMENT=		OSS replacement for the Nomachine nxclient
 
 DISTNAME=		opennx-0.16.0.729
 CATEGORIES=		sysutils
+REVISION=		0
 
 HOMEPAGE=		http://opennx.sourceforge.net/
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=opennx/}
@@ -35,7 +36,7 @@ BUILD_DEPENDS=		archivers/zip \
 BUILD_DEPENDS +=	print/cups
 
 RUN_DEPENDS=		devel/desktop-file-utils \
-			x11/gtk+2,-guic \
+			x11/gtk+3,-guic \
 			x11/nx/nxproxy \
 			x11/nx/nxssh
 

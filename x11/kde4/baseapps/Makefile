@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/11/01 21:09:40 zhuk Exp $
+# $OpenBSD: Makefile,v 1.11 2015/03/27 08:16:19 ajacoutot Exp $
 
 COMMENT =	KDE base applications
 DISTNAME =	kde-baseapps-${MODKDE4_VERSION}
@@ -31,7 +31,7 @@ MODULES =	multimedia/phonon
 # using QtWebKit.
 RUN_DEPENDS =	devel/desktop-file-utils \
 		www/kwebkitpart,${MODKDE4_FLAVOR} \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 LIB_DEPENDS =	devel/glib2 \
 		www/tidyp \
