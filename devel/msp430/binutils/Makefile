@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2013/03/11 10:50:12 espie Exp $
 
+BROKEN= 		needs work on bitrig
+
 TOOL=			binutils
 TOOL_V=			2.21.1a
 

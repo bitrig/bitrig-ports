@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2014/04/18 09:55:22 ajacoutot Exp $
 
+BROKEN	= 	needs work on bitrig
+
 COMMENT =	state machine compiler
 
 DISTNAME =	ragel-6.7

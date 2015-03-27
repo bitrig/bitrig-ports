@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.35 2014/09/10 00:07:39 brad Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	image processing tools with stable ABI

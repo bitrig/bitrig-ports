@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2015/02/03 15:50:50 abieber Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	Cairo-backed Canvas implementation for Node.js
 
 NPM_VERSION =	1.0.0

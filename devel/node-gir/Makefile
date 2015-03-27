@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.10 2015/02/03 15:50:28 abieber Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	GObject Introspection bindings for Node.js
 
 NPM_VERSION =	0.1.0

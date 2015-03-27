@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2015/02/03 15:50:07 abieber Exp $
 
+BROKEN = 	needs work on bitrig
+
 # Currently node itself is only for amd64 and i386, but
 # the coroutine library this uses only works on amd64
 # and i386, so even if other arches are supported by node

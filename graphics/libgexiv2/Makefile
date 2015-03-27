@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2014/09/17 05:42:46 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	GObject wrapper around exiv2
 
 GNOME_VERSION=	0.10.2

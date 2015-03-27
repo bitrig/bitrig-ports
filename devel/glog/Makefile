@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2015/03/16 18:07:40 naddy Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		C++ application-level logging library
 
 DISTNAME =		glog-0.3.1

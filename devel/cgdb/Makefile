@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.5 2014/11/26 11:44:00 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	curses GDB interface
 DISTNAME=	cgdb-0.6.8
 CATEGORIES=	devel
