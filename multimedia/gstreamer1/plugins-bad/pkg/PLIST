@@ -12,43 +12,6 @@ include/gstreamer-${API}/gst/codecparsers/gstmpegvideoparser.h
 include/gstreamer-${API}/gst/codecparsers/gstvc1parser.h
 include/gstreamer-${API}/gst/codecparsers/gstvp8parser.h
 include/gstreamer-${API}/gst/codecparsers/gstvp8rangedecoder.h
-include/gstreamer-${API}/gst/gl/
-include/gstreamer-${API}/gst/gl/egl/
-include/gstreamer-${API}/gst/gl/egl/gsteglimagememory.h
-include/gstreamer-${API}/gst/gl/egl/gstgldisplay_egl.h
-include/gstreamer-${API}/gst/gl/gl.h
-include/gstreamer-${API}/gst/gl/glprototypes/
-include/gstreamer-${API}/gst/gl/glprototypes/all_functions.h
-include/gstreamer-${API}/gst/gl/glprototypes/base.h
-include/gstreamer-${API}/gst/gl/glprototypes/blending.h
-include/gstreamer-${API}/gst/gl/glprototypes/eglimage.h
-include/gstreamer-${API}/gst/gl/glprototypes/fbo.h
-include/gstreamer-${API}/gst/gl/glprototypes/fixedfunction.h
-include/gstreamer-${API}/gst/gl/glprototypes/gles.h
-include/gstreamer-${API}/gst/gl/glprototypes/gstgl_compat.h
-include/gstreamer-${API}/gst/gl/glprototypes/gstgl_gles2compat.h
-include/gstreamer-${API}/gst/gl/glprototypes/opengl.h
-include/gstreamer-${API}/gst/gl/glprototypes/shaders.h
-include/gstreamer-${API}/gst/gl/gstgl_fwd.h
-include/gstreamer-${API}/gst/gl/gstglapi.h
-include/gstreamer-${API}/gst/gl/gstglbufferpool.h
-include/gstreamer-${API}/gst/gl/gstglcolorconvert.h
-include/gstreamer-${API}/gst/gl/gstglconfig.h
-include/gstreamer-${API}/gst/gl/gstglcontext.h
-include/gstreamer-${API}/gst/gl/gstgldisplay.h
-include/gstreamer-${API}/gst/gl/gstgldownload.h
-include/gstreamer-${API}/gst/gl/gstglfeature.h
-include/gstreamer-${API}/gst/gl/gstglfilter.h
-include/gstreamer-${API}/gst/gl/gstglframebuffer.h
-include/gstreamer-${API}/gst/gl/gstglmemory.h
-include/gstreamer-${API}/gst/gl/gstglshader.h
-include/gstreamer-${API}/gst/gl/gstglshadervariables.h
-include/gstreamer-${API}/gst/gl/gstglupload.h
-include/gstreamer-${API}/gst/gl/gstgluploadmeta.h
-include/gstreamer-${API}/gst/gl/gstglutils.h
-include/gstreamer-${API}/gst/gl/gstglwindow.h
-include/gstreamer-${API}/gst/gl/x11/
-include/gstreamer-${API}/gst/gl/x11/gstgldisplay_x11.h
 include/gstreamer-${API}/gst/insertbin/
 include/gstreamer-${API}/gst/insertbin/gstinsertbin.h
 include/gstreamer-${API}/gst/interfaces/
@@ -112,7 +75,6 @@ lib/gstreamer-${API}/libgstmpegpsmux.so
 lib/gstreamer-${API}/libgstmpegtsdemux.so
 lib/gstreamer-${API}/libgstmpegtsmux.so
 lib/gstreamer-${API}/libgstmxf.so
-lib/gstreamer-${API}/libgstopengl.so
 lib/gstreamer-${API}/libgstopus.so
 lib/gstreamer-${API}/libgstpcapparse.so
 lib/gstreamer-${API}/libgstpnm.so
@@ -149,9 +111,6 @@ lib/libgstbasecamerabinsrc-${API}.la
 lib/libgstcodecparsers-${API}.a
 lib/libgstcodecparsers-${API}.la
 @lib lib/libgstcodecparsers-${API}.so.${LIBgstcodecparsers-1.0_VERSION}
-lib/libgstgl-${API}.a
-lib/libgstgl-${API}.la
-@lib lib/libgstgl-${API}.so.${LIBgstgl-1.0_VERSION}
 lib/libgstinsertbin-${API}.a
 lib/libgstinsertbin-${API}.la
 @lib lib/libgstinsertbin-${API}.so.${LIBgstinsertbin-1.0_VERSION}
@@ -165,7 +124,6 @@ lib/libgsturidownloader-${API}.a
 lib/libgsturidownloader-${API}.la
 @lib lib/libgsturidownloader-${API}.so.${LIBgsturidownloader-1.0_VERSION}
 lib/pkgconfig/gstreamer-codecparsers-${API}.pc
-lib/pkgconfig/gstreamer-gl-${API}.pc
 lib/pkgconfig/gstreamer-insertbin-${API}.pc
 lib/pkgconfig/gstreamer-mpegts-${API}.pc
 lib/pkgconfig/gstreamer-plugins-bad-${API}.pc

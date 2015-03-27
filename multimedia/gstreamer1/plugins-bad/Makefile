@@ -4,7 +4,7 @@ COMMENT=		bad elements for GStreamer
 
 DISTNAME=		gst-plugins-bad-${V}
 PKGNAME=		${GST_PKGNAME_PREFIX}-plugins-bad-${V}
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  gstphotography-1.0   1.0      # 405.0
 SHARED_LIBS +=  gstbasecamerabinsrc-1.0 1.0      # 405.0
