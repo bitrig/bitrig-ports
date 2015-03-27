@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2014/11/07 10:40:05 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.43 2015/03/27 08:11:28 ajacoutot Exp $
 
 BROKEN-hppa =	run dep on enblend-enfuse which will not build on hppa
 
@@ -51,7 +51,7 @@ RUN_DEPENDS =		devel/desktop-file-utils \
 			graphics/enblend-enfuse \
 			graphics/p5-Image-ExifTool \
 			misc/shared-mime-info \
-			x11/gtk+2,-guic \
+			x11/gtk+3,-guic \
 			devel/gmake # yes, really a RUN_DEPENDS
 RUN_DEPENDS +=		x11/py-wxPython # required for launching python scripts
 

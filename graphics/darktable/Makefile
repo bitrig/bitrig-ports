@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.45 2015/02/16 22:57:08 naddy Exp $
+# $OpenBSD: Makefile,v 1.46 2015/03/27 08:11:28 ajacoutot Exp $
 
 # requires SSE
 ONLY_FOR_ARCHS=	i386 amd64
@@ -15,7 +15,7 @@ COMMENT=	virtual lighttable and darkroom for photographers
 DISTNAME=	darktable-1.2.3
 PORTROACH=	limitw:1,even
 EXTRACT_SUFX=	.tar.xz
-REVISION=	6
+REVISION=	7
 
 SHARED_ONLY=	Yes
 
@@ -46,7 +46,7 @@ MODULES=	devel/cmake \
 BUILD_DEPENDS=	sysutils/coreutils
 RUN_DEPENDS=	devel/desktop-file-utils \
 		x11/gtk-engines2 \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 LIB_DEPENDS=	devel/json-glib \
 		devel/libsoup \
 		devel/sdl \

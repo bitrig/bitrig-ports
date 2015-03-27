@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.36 2014/09/04 07:46:07 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.37 2015/03/27 08:11:27 ajacoutot Exp $
 
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
@@ -47,7 +47,7 @@ RUN_DEPENDS=	multimedia/gstreamer-0.10/plugins-good \
 		multimedia/gstreamer-0.10/plugins-ffmpeg \
 		devel/iso-codes \
 		devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 MODULES=	devel/gettext \
 		textproc/intltool

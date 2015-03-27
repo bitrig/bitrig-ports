@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2013/06/23 11:30:33 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.25 2015/03/27 08:11:28 ajacoutot Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -10,7 +10,7 @@ COMMENT=	photorealistic 3D rendering solution
 
 V=		1.8.2
 DISTNAME=	aqsis-${V}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	graphics
 
 SO_VERSION=	1.0 # 1.6
@@ -37,7 +37,7 @@ MODULES=	devel/cmake
 
 RUN_DEPENDS=	devel/desktop-file-utils \
 		misc/shared-mime-info \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 BUILD_DEPENDS=	textproc/libxslt \
 		devel/bison
 LIB_DEPENDS=	devel/boost \

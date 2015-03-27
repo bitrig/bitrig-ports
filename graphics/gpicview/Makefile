@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/10/24 20:48:07 naddy Exp $
+# $OpenBSD: Makefile,v 1.22 2015/03/27 08:11:28 ajacoutot Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -28,7 +28,7 @@ MODULES =	devel/gettext \
 
 LIB_DEPENDS =	x11/gtk+2
 RUN_DEPENDS =	devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 USE_GMAKE =	yes
 

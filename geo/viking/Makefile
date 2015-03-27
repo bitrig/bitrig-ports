@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2014/07/09 17:43:52 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.25 2015/03/27 08:11:28 ajacoutot Exp $
 
 COMMENT =	GPS track manager
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2013/10/26 08:02:57 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.19 2015/03/27 08:11:27 ajacoutot Exp $
 
 COMMENT =	Openstreetmap editor for handheld devices
 
@@ -28,7 +28,7 @@ LIB_DEPENDS =	x11/gnome/libgnome \
 		graphics/goocanvas
 
 RUN_DEPENDS =	devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 NO_TEST =	Yes
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.56 2014/07/09 17:43:52 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.57 2015/03/27 08:11:25 ajacoutot Exp $
 
 COMMENT=	GTK-based LDAP client
 

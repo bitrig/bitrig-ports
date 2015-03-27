@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2014/07/09 12:42:30 zhuk Exp $
+# $OpenBSD: Makefile,v 1.29 2015/03/27 08:11:26 ajacoutot Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -28,7 +28,7 @@ WANTLIB +=	c++ c++abi
 RUN_DEPENDS=	x11/kde/graphics3 \
 		print/texlive/base \
 		devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 LIB_DEPENDS=	x11/kde/libs3
 
