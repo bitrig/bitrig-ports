@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/07/20 09:17:46 zhuk Exp $
+# $OpenBSD: Makefile,v 1.5 2015/03/27 08:13:02 ajacoutot Exp $
 
 SHARED_ONLY =		Yes
 COMMENT-main =		multimedia transformations framework
@@ -44,7 +44,7 @@ BUILD_DEPENDS =		audio/ladspa \
 			${MODKDE4_DEP_DIR}/libs>=${MODKDE4_DEP_VERSION}
 
 RUN_DEPENDS-main =	audio/ladspa \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 LIB_DEPENDS-main =	${MODGCC4_CPPLIBDEP} \
 			audio/jack \

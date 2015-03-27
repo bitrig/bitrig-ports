@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/07/10 10:24:59 zhuk Exp $
+# $OpenBSD: Makefile,v 1.3 2015/03/27 08:13:03 ajacoutot Exp $
 
 CATEGORIES =	net
 COMMENT =	torrent client for KDE 4
@@ -32,7 +32,7 @@ MODULES =	x11/kde4 multimedia/phonon
 MODKDE4_USE =	pim workspace
 
 RUN_DEPENDS =	devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 LIB_DEPENDS =	audio/taglib \
 		STEM->=${V:C/^./1/}:net/libktorrent

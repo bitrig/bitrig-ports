@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/12/20 07:58:09 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.5 2015/03/27 08:13:02 ajacoutot Exp $
 
 COMMENT=	educational mathematical software
 
@@ -29,7 +29,7 @@ MODJAVA_JRERUN=		Yes
 RUN_DEPENDS=		java/javaPathHelper \
 			devel/desktop-file-utils \
 			misc/shared-mime-info \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 NO_BUILD=		Yes
 NO_TEST=		Yes

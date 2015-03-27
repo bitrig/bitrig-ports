@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.36 2014/07/14 09:17:57 zhuk Exp $
+# $OpenBSD: Makefile,v 1.37 2015/03/27 08:13:02 ajacoutot Exp $
 
 COMMENT=	video player for KDE
 
@@ -28,7 +28,7 @@ WANTLIB += ${KDE}/kparts ${KDE}/kutils ${KDE}/kwalletclient
 WANTLIB += c++ c++abi
 
 RUN_DEPENDS=	devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 LIB_DEPENDS=	x11/kde/libs3 \
 		audio/libvorbis \
 		audio/libcdio \
