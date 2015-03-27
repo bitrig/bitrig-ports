@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.13 2013/08/09 19:04:49 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	total conversion of the Space Hulk board game
 
 DISTNAME=	spacehulk-1.5-beta1

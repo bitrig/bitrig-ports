@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.24 2014/11/29 10:22:37 jsg Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	collection of various tools for scummvm
 DISTNAME=	scummvm-tools-1.7.0
 REVISION=	0

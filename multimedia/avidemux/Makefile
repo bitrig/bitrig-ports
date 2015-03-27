@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.45 2014/11/05 11:43:59 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	free video editor
 
 V=		2.4.4

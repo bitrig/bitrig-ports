@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.6 2014/08/10 09:58:06 espie Exp $
 
+BROKEN = 		needs work on bitrig
+
 SHARED_ONLY =		Yes
 
 COMMENT-main =		model railroad control daemon

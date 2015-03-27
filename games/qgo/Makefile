@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2013/10/15 14:55:16 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	go client and fully featured sgf editor
 
 DISTNAME=	qgo-1.5.4

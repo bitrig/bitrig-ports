@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.30 2013/10/15 13:36:35 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	filemanager for X Window
 
 DISTNAME=	xnc-4.4.7

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.12 2013/10/22 11:34:22 zhuk Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		guitar tab editor
 
 DISTNAME =		kguitar-0.5.1

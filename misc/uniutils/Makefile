@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.5 2013/10/19 20:57:20 schwarze Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Unicode utilities
 
 DISTNAME=	uniutils-2.27

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.30 2013/10/22 11:34:14 zhuk Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT= 		billiard game
 CATEGORIES=		x11 x11/kde games
 DISTNAME=		kbilliards-0.8.7b

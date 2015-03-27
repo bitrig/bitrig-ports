@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.35 2015/03/21 21:28:27 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	graphical networked AD&D style game
 
 VERSION=	1.11.0

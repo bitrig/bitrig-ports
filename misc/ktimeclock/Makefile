@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.23 2013/10/22 11:34:20 zhuk Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	task-based timeclock for KDE
 
 VERSION=	2.0.2

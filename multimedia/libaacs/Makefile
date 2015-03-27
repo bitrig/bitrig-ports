@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2014/09/16 18:11:35 landry Exp $
 
+BROKEN = 		needs work on bitrig
+
 SHARED_ONLY =		Yes
 
 BROKEN-powerpc =	fails to link, undefined refs to free/malloc

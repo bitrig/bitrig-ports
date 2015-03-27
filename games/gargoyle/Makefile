@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2014/01/25 13:17:35 sthen Exp $
 
+BROKEN = 	needs work on bitrig
+
 SHARED_ONLY =	Yes
 
 COMMENT =	cross-platform interactive fiction player

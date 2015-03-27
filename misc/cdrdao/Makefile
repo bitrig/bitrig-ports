@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.37 2015/02/16 22:57:10 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	write audio/data CD-Rs in disk-at-once mode
 
 DISTNAME= 	cdrdao-1.2.0

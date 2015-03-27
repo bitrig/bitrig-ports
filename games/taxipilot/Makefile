@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.30 2015/01/21 06:13:48 bentley Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	silly little game based on Spacetaxi for the C64
 
 DISTNAME=	taxipilot-0.7.2

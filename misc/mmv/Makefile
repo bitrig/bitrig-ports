@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.23 2015/02/16 22:57:10 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	move/copy/append/link multiple files with wildcards
 
 DISTNAME=	mmv

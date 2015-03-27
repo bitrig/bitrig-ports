@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2014/11/22 22:20:09 sthen Exp $
 
+BROKEN = 		needs work on bitrig
+
 SHARED_ONLY =		Yes
 
 COMMENT =		lightweight and simple DVD slide show maker

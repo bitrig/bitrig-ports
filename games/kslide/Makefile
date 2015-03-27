@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.28 2013/12/19 19:49:33 zhuk Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	puzzle game for KDE
 
 DISTNAME=	kslide-1.0.1
