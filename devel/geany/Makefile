@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.43 2014/07/11 12:59:55 landry Exp $
+# $OpenBSD: Makefile,v 1.44 2015/03/27 08:46:21 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -34,7 +34,7 @@ WANTLIB +=	c++ c++abi
 LIB_DEPENDS=	x11/gtk+2
 RUN_DEPENDS=	devel/desktop-file-utils \
 		devel/vte \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 LIBTOOL_FLAGS =	--tag=disable-static
 

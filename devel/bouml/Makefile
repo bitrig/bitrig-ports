@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2014/08/09 19:39:34 jca Exp $
+# $OpenBSD: Makefile,v 1.21 2015/03/27 08:46:20 ajacoutot Exp $
 
 BROKEN= 		needs work on bitrig
 
@@ -10,7 +10,7 @@ DISTNAME=		bouml_$V
 PKGNAME=		bouml-$V
 PKGNAME-main=		bouml-$V
 PKGNAME-docs=		bouml-docs-$V
-REVISION-main =		5
+REVISION-main =		6
 REVISION-docs=		2
 
 CATEGORIES=		devel x11
@@ -32,7 +32,7 @@ WANTLIB =		X11 Xext c m pthread
 WANTLIB +=		c++ c++abi
 
 RUN_DEPENDS-main=	devel/desktop-file-utils \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 MODULES=		x11/qt3
 USE_GMAKE=		Yes

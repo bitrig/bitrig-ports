@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2014/07/23 10:30:44 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.19 2015/03/27 08:46:21 ajacoutot Exp $
 
 BROKEN=		needs an update
 
@@ -36,7 +36,7 @@ RUN_DEPENDS=	devel/mono-addins \
 		devel/ectags \
 		devel/desktop-file-utils \
 		misc/shared-mime-info \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 # see patches/patch-src_addins_MonoDevelop_Autotools_SolutionDeployer_cs
 RUN_DEPENDS+=	devel/gmake
