@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.132 2015/01/12 13:22:46 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.133 2015/03/27 16:02:49 ajacoutot Exp $
 
 PORTROACH =	limit:^2\.4
 
@@ -9,7 +9,7 @@ BROKEN-hppa =	error: Compiler GCC >= 4.7 or Clang >= 3.3 is required for C compi
 V =		2.4.8
 DISTNAME =	webkitgtk-${V}
 PKGNAME =	webkit-${V}
-REVISION =	1
+REVISION =	2
 EPOCH =		1
 CATEGORIES =	www
 DPB_PROPERTIES =parallel
