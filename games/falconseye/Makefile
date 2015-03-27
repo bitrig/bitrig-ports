@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2014/11/30 07:08:48 brad Exp $
+# $OpenBSD: Makefile,v 1.27 2015/03/27 10:56:15 tobiasu Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -7,7 +7,7 @@ COMMENT =	NetHack derivative
 VERSION =	1.9.3
 DISTNAME =	nethack_source_331_jtp_${VERSION:S/.//g}
 PKGNAME =	falconseye-${VERSION}
-REVISION =	5
+REVISION =	6
 CATEGORIES =	games x11
 EXTRACT_SUFX =	.zip
 
