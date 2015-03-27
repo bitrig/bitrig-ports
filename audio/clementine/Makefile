@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2014/10/05 00:07:33 zhuk Exp $
+# $OpenBSD: Makefile,v 1.17 2015/03/27 08:43:01 ajacoutot Exp $
 
 SHARED_ONLY =	Yes
 
@@ -7,7 +7,7 @@ COMMENT =	Qt4-based featureful music player
 V =		1.2.3
 PKGNAME =	clementine-${V}
 CATEGORIES =	audio x11
-REVISION =	1
+REVISION =	3
 
 HOMEPAGE =	http://clementine-player.org/
 
@@ -42,7 +42,7 @@ BUILD_DEPENDS =		devel/boost \
 RUN_DEPENDS =		devel/desktop-file-utils \
 			multimedia/gstreamer-0.10/plugins-good \
 			multimedia/gstreamer-0.10/plugins-ugly \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 LIB_DEPENDS =		audio/chromaprint \
 			audio/libcdio \

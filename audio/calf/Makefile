@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/11/18 10:17:17 brad Exp $
+# $OpenBSD: Makefile,v 1.17 2015/03/27 08:43:01 ajacoutot Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -8,7 +8,7 @@ ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 
 COMMENT =		CALF LADSPA plugins
 DISTNAME =		calf-0.0.18.5
-REVISION =		11
+REVISION =		12
 CATEGORIES =		audio
 
 HOMEPAGE =		http://tap-plugins.sourceforge.net/
@@ -29,7 +29,7 @@ WANTLIB +=	c++ c++abi
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=calf/}
 
 RUN_DEPENDS =		devel/desktop-file-utils \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 LIB_DEPENDS =		audio/jack \
 			devel/libglade2
 BUILD_DEPENDS +=	audio/ladspa

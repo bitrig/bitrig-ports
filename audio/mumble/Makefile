@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/09/05 08:22:04 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.12 2015/03/27 08:43:01 ajacoutot Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -7,7 +7,7 @@ SHARED_ONLY =		Yes
 COMMENT =		low-latency voice chat client
 
 DISTNAME =		mumble-1.2.8
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		audio
 
@@ -39,7 +39,7 @@ LIB_DEPENDS =		audio/libsndfile>=1.0.25p0 \
 RUN_DEPENDS =		audio/celt07 \
 			audio/celt=0.11.1v1 \
 			devel/desktop-file-utils \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 QMAKE_ARGS =		MUMBLE_PREFIX=${PREFIX} \
 			QMAKE_CC=${CC} \

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.48 2013/10/13 14:44:07 naddy Exp $
+# $OpenBSD: Makefile,v 1.49 2015/03/27 08:43:01 ajacoutot Exp $
 
 COMMENT=	GTK+2 program to synchronize an Apple iPod
 DISTNAME=	gtkpod-1.0.0
@@ -24,7 +24,7 @@ USE_GMAKE=	Yes
 BUILD_DEPENDS=	multimedia/libmp4v2
 RUN_DEPENDS=	devel/desktop-file-utils \
 		multimedia/libmp4v2 \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 LIB_DEPENDS=	audio/libid3tag \
 		audio/libgpod \
