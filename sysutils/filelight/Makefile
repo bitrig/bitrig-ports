@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2013/12/22 19:24:34 zhuk Exp $
+# $OpenBSD: Makefile,v 1.21 2015/03/27 08:14:15 ajacoutot Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -7,7 +7,7 @@ SHARED_ONLY=	Yes
 COMMENT=	concentric segmented-rings disk usage visualisation
 
 DISTNAME=	filelight-1.0
-REVISION =	14
+REVISION =	15
 CATEGORIES=	sysutils x11/kde
 PKGSPEC =	filelight-<2
 
@@ -32,7 +32,7 @@ MODULES=	x11/kde \
 		devel/gettext
 
 RUN_DEPENDS=	devel/desktop-file-utils \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 LIB_DEPENDS=	x11/kde/libs3
 

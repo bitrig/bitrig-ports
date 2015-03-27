@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/01/03 22:15:24 benno Exp $
+# $OpenBSD: Makefile,v 1.13 2015/03/27 08:14:14 ajacoutot Exp $
 
 COMMENT =		desktop wiki
 
@@ -29,6 +29,6 @@ BUILD_DEPENDS = 	${COMMON_DEPENDS}
 RUN_DEPENDS =		${COMMON_DEPENDS} \
 			devel/desktop-file-utils \
 			misc/shared-mime-info \
-			x11/gtk+2,-guic
+			x11/gtk+3,-guic
 
 .include <bsd.port.mk>

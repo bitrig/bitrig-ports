@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/07/09 16:09:35 zhuk Exp $
+# $OpenBSD: Makefile,v 1.3 2015/03/27 08:14:14 ajacoutot Exp $
 COMMENT =		accounting for KDE 4
 CATEGORIES =		productivity x11
 HOMEPAGE =		http://kmymoney2.sourceforge.net
 VERSION =		4.6.4
-REVISION =		0
 DISTNAME =		kmymoney-${VERSION}
+REVISION =		1
 
 SHARED_LIBS =		kmm_kdchart		0.0
 SHARED_LIBS +=		kmm_mymoney		0.0
@@ -40,7 +40,7 @@ RUN_DEPENDS =	devel/desktop-file-utils \
 		misc/p5-Finance-Quote \
 		misc/shared-mime-info \
 		security/p5-Crypt-SSLeay \
-		x11/gtk+2,-guic \
+		x11/gtk+3,-guic \
 		${MODKDE4_DEP_DIR}/kcalc \
 		${MODKDE4_DEP_DIR}/kgpg
 

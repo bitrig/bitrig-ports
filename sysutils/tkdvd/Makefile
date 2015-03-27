@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/08/20 07:22:32 zhuk Exp $
+# $OpenBSD: Makefile,v 1.13 2015/03/27 08:14:15 ajacoutot Exp $
 
 COMMENT=		GUI to dvd+rw-tools and cdrecord
 
@@ -20,7 +20,7 @@ MODULES=		x11/tk
 BUILD_DEPENDS=		${MODTCL_RUN_DEPENDS}
 RUN_DEPENDS=		sysutils/cdrtools \
 			sysutils/dvd+rw-tools \
-			x11/gtk+2,-guic \
+			x11/gtk+3,-guic \
 			${MODTK_RUN_DEPENDS}
 
 NO_TEST=		Yes

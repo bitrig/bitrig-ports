@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2014/05/27 08:18:04 pea Exp $
+# $OpenBSD: Makefile,v 1.24 2015/03/27 08:14:14 ajacoutot Exp $
 
 COMMENT =	personal accounting application
 
@@ -29,7 +29,7 @@ LIB_DEPENDS =	x11/gtk+2 \
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		misc/shared-mime-info \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 
 USE_GMAKE =	Yes
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2014/10/04 14:25:40 zhuk Exp $
+# $OpenBSD: Makefile,v 1.23 2015/03/27 08:14:15 ajacoutot Exp $
 
 BROKEN =	needs work on bitrig
 
@@ -40,7 +40,7 @@ MODULES =	x11/kde devel/gettext
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/kde/base3 \
-		x11/gtk+2,-guic
+		x11/gtk+3,-guic
 LIB_DEPENDS =	graphics/libart \
 		devel/libidn>=1.1 \
 		x11/kde/libs3
