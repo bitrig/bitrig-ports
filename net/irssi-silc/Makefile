@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.32 2015/01/22 15:18:43 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	SILC plugin for irssi

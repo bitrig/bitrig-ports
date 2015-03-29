@@ -1,4 +1,7 @@
 # $OpenBSD: Makefile,v 1.39 2015/03/20 22:47:41 naddy Exp $
+
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	determine the malware activity on a network

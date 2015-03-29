@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.6 2013/03/11 11:35:46 espie Exp $
 
+BROKEN = 	needs work on bitrig
+
 CATEGORIES = 	net audio www
 COMMENT = 	interface to the deezer on-demand music system
 HOMEPAGE = 	http://dysnomia-project.org/

@@ -4,7 +4,7 @@ COMMENT=		lightweight Jabber client library
 
 V=			1.4.3
 DISTNAME=       	loudmouth-$V
-REVISION=		5
+REVISION=		6
 SHARED_LIBS +=	loudmouth-1          3.0      # .1.0
 CATEGORIES=		net devel
 

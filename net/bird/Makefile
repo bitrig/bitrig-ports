@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.37 2014/10/16 15:24:07 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT-main=	BIRD internet routing daemon
 COMMENT-doc=	BIRD internet routing daemon (documentation)
 

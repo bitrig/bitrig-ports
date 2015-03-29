@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.39 2015/03/14 22:26:21 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Berkeley Internet Name Daemon: DNS server and tools
 
 V=		9.10.2

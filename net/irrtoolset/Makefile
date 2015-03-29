@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2014/10/31 16:43:44 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	toolset for internet routing registries
 
 V=		5.0.1
@@ -12,7 +14,8 @@ HOMEPAGE=	http://irrtoolset.isc.org/
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c m readline stdc++ termcap
+WANTLIB += c m readline termcap
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://ftp.isc.org/isc/IRRToolSet/IRRToolSet-$V/ \
 		ftp://ftp.isc.org/isc/IRRToolSet/IRRToolSet-$V/

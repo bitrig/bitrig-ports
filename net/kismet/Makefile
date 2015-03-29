@@ -2,6 +2,8 @@
 # Much help came from Alexandre Anriot, Robert Nagy, Bernd Ahlers,
 # and, last but not least, Pedro la Peu.
 
+BROKEN=		needs work on bitrig
+
 COMMENT-main=	802.11 layer2 wireless network detector, sniffer, and IDS
 COMMENT-gpsmap=	reads GPS and Network XML datafiles and plots networks
 

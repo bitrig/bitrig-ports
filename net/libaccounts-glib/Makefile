@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.5 2014/08/30 07:22:56 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	accounts management library for GLib applications
 
 DISTNAME=	libaccounts-glib-1.16

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2013/03/21 08:46:34 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	icecast source for streaming Ogg Vorbis
 
 DISTNAME=	ices-2.0.1

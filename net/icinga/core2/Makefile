@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.25 2015/02/06 22:53:27 sthen Exp $
 
+BROKEN = 	needs work on bitrig
+
 # XXX note that rc_bg is used in the rc script; it shouldn't be necessary,
 # -d should work, but when that's used we run into hangs on OpenBSD, more at
 # http://marc.info/?l=openbsd-ports&m=142317662106234&w=2
@@ -26,7 +28,8 @@ HOMEPAGE =	https://www.icinga.org/icinga2/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += boost_program_options-mt boost_regex-mt boost_system-mt
-WANTLIB += boost_thread-mt crypto execinfo m pthread ssl stdc++ yajl
+WANTLIB += boost_thread-mt crypto execinfo m pthread ssl yajl
+WANTLIB += c++ c++abi
 
 MODULES =		devel/cmake
 

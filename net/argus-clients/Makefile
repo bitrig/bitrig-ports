@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.12 2015/01/26 13:13:58 steven Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	utilities to read and parse Argus data
 
 DISTNAME =	argus-clients-3.0.8
