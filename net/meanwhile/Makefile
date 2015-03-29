@@ -3,7 +3,7 @@
 COMMENT=	implementation of Lotus Sametime Community Client protocol
 
 DISTNAME=	meanwhile-1.0.2
-REVISION=	4
+REVISION=	5
 SHARED_LIBS=	meanwhile 1.2
 CATEGORIES=	devel net
 

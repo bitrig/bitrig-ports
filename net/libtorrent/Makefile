@@ -3,7 +3,7 @@
 COMMENT=		BitTorrent library written in C++
 
 DISTNAME=		libtorrent-0.13.4
-REVISION=		1
+REVISION=		2
 EPOCH=			0
 SHARED_LIBS +=  	torrent 20.0	# .14.1
 CATEGORIES=		net devel

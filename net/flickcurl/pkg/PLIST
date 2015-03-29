@@ -10,7 +10,7 @@ lib/pkgconfig/flickcurl.pc
 @man man/man1/flickcurl-config.1
 @man man/man1/flickcurl.1
 @man man/man1/flickrdf.1
-share/doc/pkg-readmes/${FULLPKGNAME}
+share/doc/pkg-readmes/flickcurl-1.25p0
 share/gtk-doc/
 share/gtk-doc/html/
 share/gtk-doc/html/flickcurl/

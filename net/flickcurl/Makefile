@@ -3,7 +3,7 @@
 COMMENT =		flickr API library and utility
 
 DISTNAME =		flickcurl-1.25
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=  	flickcurl   1.1      # 0.0
 CATEGORIES =		net
