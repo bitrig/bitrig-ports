@@ -26,7 +26,7 @@ WANTLIB=	X11 Xcomposite Xcursor Xdamage Xext Xfixes Xi Xinerama \
 		gmodule-2.0 gobject-2.0 graphite2 gthread-2.0 gtk-x11-2.0 \
 		harfbuzz m pango-1.0 pangocairo-1.0 \
 		pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs \
-		xcb xcb-render xcb-shm xml2 z
+		xcb xcb-render xcb-shm xml2 z lzma
 WANTLIB+=	c++ c++abi
 
 SEPARATE_BUILD=	Yes
