@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.50 2014/12/30 21:50:24 landry Exp $
 
+BROKEN = 		needs work on bitrig
+
 SHARED_ONLY =		Yes
 BROKEN-hppa =	no atomic ops / __sync_fetch_and_add_4
 BROKEN-hppa =	tinylock.c:58: internal compiler error: in extract_insn, at recog.c:2077

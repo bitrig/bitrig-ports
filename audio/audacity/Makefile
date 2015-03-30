@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.39 2014/12/09 20:29:03 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	free audio editor
 
 V=		1.3.9

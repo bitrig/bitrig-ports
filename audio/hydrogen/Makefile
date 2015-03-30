@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2013/03/10 22:55:02 espie Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		software drum machine
 
 DISTNAME=		hydrogen-0.9.4

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2014/11/18 10:17:17 brad Exp $
 
+BROKEN = 		needs work on bitrig
+
 SHARED_ONLY =		Yes
 
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
@@ -21,7 +23,7 @@ WANTLIB = 	GL X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext \
 		gtk-x11-2.0 gthread-2.0 m pango-1.0 \
 		pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread \
 		pthread-stubs xcb xcb-render xcb-shm xml2 z \
-		jack glade-2.0 ffi ++ harfbuzz
+		jack glade-2.0 ffi harfbuzz
 WANTLIB +=	c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=calf/}

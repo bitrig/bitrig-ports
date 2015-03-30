@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2013/03/11 01:30:26 espie Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	tool for programming Wouxun transcievers
 
 DISTNAME =	owx-20110917

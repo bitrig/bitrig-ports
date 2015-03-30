@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2014/12/30 01:54:26 bcallah Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	soundcard-based software modem for Amateur Radio use
 
 DISTNAME=	fldigi-3.22.04

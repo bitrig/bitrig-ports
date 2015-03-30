@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2014/04/17 19:00:57 jasper Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	graphical mp3/ogg file splitter
 
 DISTNAME =	mp3splt-gtk-0.5.4

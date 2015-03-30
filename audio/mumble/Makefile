@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2014/09/05 08:22:04 dcoppa Exp $
 
+BROKEN = 		needs work on bitrig
+
 SHARED_ONLY =		Yes
 
 COMMENT =		low-latency voice chat client

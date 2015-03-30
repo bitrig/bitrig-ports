@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2013/03/10 22:55:02 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	server for the DAA protocol
 
 DISTNAME=	daapd-0.2.4b

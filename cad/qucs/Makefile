@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.6 2014/09/16 19:22:38 landry Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	graphical circuit design and simulation tool
 BROKEN-hppa =	OOM on hicumL2V2p23.core.o
 

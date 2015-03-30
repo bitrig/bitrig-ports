@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.31 2015/03/17 16:16:50 dcoppa Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		ncurses mpd client inspired by ncmpc
 BROKEN-alpha =		error: looser throw specifier for 'virtual OutOfBounds::~OutOfBounds()
 BROKEN-hppa =		bindings.h:85:4: error: type 'Binding' is not a direct base of 'Binding'

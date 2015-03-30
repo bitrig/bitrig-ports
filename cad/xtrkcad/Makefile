@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2013/07/01 17:00:40 dcoppa Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	CAD program for designing model railroad layouts
 
 VERSION=	4.2.0-beta1

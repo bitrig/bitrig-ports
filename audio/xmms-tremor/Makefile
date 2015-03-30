@@ -1,4 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2014/11/26 20:06:39 naddy Exp $
+
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	Ogg Vorbis input plugin for XMMS using tremor

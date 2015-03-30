@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.70 2014/01/25 13:15:27 espie Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		send/receive faxes and share modems
 DISTNAME=		hylafax-6.0.6
 REVISION=		4
