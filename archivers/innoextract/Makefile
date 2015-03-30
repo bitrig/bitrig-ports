@@ -13,7 +13,8 @@ HOMEPAGE=	http://constexpr.org/innoextract/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	boost_filesystem-mt boost_iostreams-mt boost_program_options-mt
-WANTLIB+=	boost_system-mt c lzma m pthread stdc++
+WANTLIB+=	boost_system-mt c lzma m pthread
+WANTLIB+=	c++ c++abi
 
 LIB_DEPENDS=	archivers/xz \
 		devel/boost>=1.53.0p6
