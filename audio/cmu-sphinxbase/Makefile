@@ -5,7 +5,7 @@ COMMENT=	common libraries for the CMU speech recognition engines
 VERSION=	0.6
 DISTNAME=	sphinxbase-${VERSION}
 PKGNAME=	cmu-sphinxbase-${VERSION}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	audio
 SHARED_LIBS= 	sphinxbase	1.0 \
 		sphinxad	1.0
