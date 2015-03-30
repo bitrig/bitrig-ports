@@ -2,7 +2,7 @@
 
 COMMENT=		OBEX protocol implementation
 DISTNAME=		openobex-1.0.1
-REVISION=		5
+REVISION=		6
 
 SHARED_LIBS +=	openobex             1.1      # .1.0
 
