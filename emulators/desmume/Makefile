@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2014/01/24 12:11:33 bentley Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	Nintendo DS emulator
 
 DISTNAME =	desmume-0.9.10

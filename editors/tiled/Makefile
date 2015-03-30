@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2014/04/28 09:48:54 bentley Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		tile map editor
 
 V =			0.9.1

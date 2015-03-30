@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.24 2013/06/23 11:30:33 dcoppa Exp $
 
+BROKEN= 	needs work on bitrig
+
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
 SHARED_ONLY=	Yes

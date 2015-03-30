@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2014/12/09 21:47:03 zhuk Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		traditional top-down car racing game
 
 DISTNAME =		dustrac-1.7.3

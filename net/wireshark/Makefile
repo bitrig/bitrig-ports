@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2015/03/14 21:46:46 sthen Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT-main =	graphical network protocol analyzer
 COMMENT-text =	network protocol analyzer
 BROKEN-alpha =	.got subsegment exceeds 64K (size 101480)

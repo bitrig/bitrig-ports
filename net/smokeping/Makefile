@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.43 2014/11/14 17:07:23 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	latency logging and graphing system
 
 DISTNAME=	smokeping-2.6.11

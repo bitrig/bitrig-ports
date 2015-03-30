@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.35 2013/05/31 15:34:44 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	interactive geometry program
 
 DISTNAME=	drgeo-1.1.0

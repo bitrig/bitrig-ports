@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2014/05/11 01:19:07 brad Exp $
 
+BROKEN = 	needs work on bitrig
+
 SHARED_ONLY =	Yes
 
 COMMENT =	Playstation 1 emulator

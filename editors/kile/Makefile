@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.28 2014/07/09 12:42:30 zhuk Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	integrated LaTeX environment for KDE
 DISTNAME=	kile-2.0
 REVISION=	9

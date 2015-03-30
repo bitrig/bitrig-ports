@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2015/03/22 15:25:35 bcallah Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	free font editor for TTF, EOT, and SVG fonts
 DISTNAME =	birdfont-2.3.2
 CATEGORIES =	graphics print

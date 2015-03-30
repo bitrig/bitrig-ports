@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.32 2013/04/03 00:03:25 rfreeman Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		open source 68k Macintosh emulator
 
 DISTNAME=		BasiliskII_src_01052006

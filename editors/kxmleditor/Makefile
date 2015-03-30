@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.43 2015/01/21 06:13:48 bentley Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	XML editor for KDE

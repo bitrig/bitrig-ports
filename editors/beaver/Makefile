@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.30 2014/11/05 11:43:59 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	lightweight Gtk text editor with syntax highlighting
 
 DISTNAME=	beaver0_3_0_1

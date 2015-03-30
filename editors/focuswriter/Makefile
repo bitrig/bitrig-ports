@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2013/06/26 18:52:03 landry Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	simple, distraction-free writing environment
 
 DISTNAME =	focuswriter-1.4.4
