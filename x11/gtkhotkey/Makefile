@@ -4,7 +4,7 @@ COMMENT =	platform independent hotkey handling for Gtk+ applications
 
 
 DISTNAME =	gtkhotkey-0.2.1
-REVISION=	5
+REVISION=	6
 SHARED_LIBS =	gtkhotkey 0.0 #1.0
 CATEGORIES =	x11
 
