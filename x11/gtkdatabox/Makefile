@@ -3,7 +3,7 @@
 COMMENT =	GTK+2 widget to display large amounts of numerical data
 
 DISTNAME =	gtkdatabox-0.9.1.1
-REVISION =	5
+REVISION =	6
 
 SHARED_LIBS =	gtkdatabox 0.0
 
