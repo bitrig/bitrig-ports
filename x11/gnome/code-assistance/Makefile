@@ -4,7 +4,7 @@ COMMENT=		code assistance services for GNOME
 
 GNOME_PROJECT=		gnome-code-assistance
 GNOME_VERSION=		3.14.0
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		devel
 
