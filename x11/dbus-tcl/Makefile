@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2015/03/16 18:07:58 naddy Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	dbus bindings for Tcl
 
 DISTNAME =	dbus-tcl1.1

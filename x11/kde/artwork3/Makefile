@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.73 2013/10/28 12:16:22 zhuk Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT-main = 		K Desktop Environment, additional artwork
 COMMENT-emoticons =	KDE emoticons
 CATEGORIES =		x11 x11/kde

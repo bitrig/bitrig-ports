@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.14 2013/09/25 07:58:47 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	network sniffer that grabs and displays images
 
 VERSION =	1.0

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.19 2014/01/02 14:01:53 landry Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	npapi vte-based terminal for web browsers
 
 DISTNAME =	vteplugin-0.1

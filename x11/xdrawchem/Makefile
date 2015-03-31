@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.19 2014/11/30 05:41:35 brad Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	two-dimensional molecule drawing program
 
 DISTNAME=	xdrawchem-1.9.9

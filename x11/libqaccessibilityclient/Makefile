@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2014/12/10 20:20:47 zhuk Exp $
 
+BROKEN = 		needs work on bitrig
+
 SHARED_ONLY =		Yes
 COMMENT =		Qt-based library for writing accessibility apps
 DISTNAME =		libqaccessibilityclient-0.1.1

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2013/10/09 13:36:15 sthen Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		media download tool
 
 DISTNAME =		cclive-0.9.2

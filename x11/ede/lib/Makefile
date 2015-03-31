@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2014/07/11 21:39:04 pascal Exp $
 
+BROKEN = 		needs work on bitrig
+
 SHARED_ONLY =		Yes
 
 COMMENT =		equinox desktop library

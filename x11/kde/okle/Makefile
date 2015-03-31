@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.27 2013/10/22 11:34:09 zhuk Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT= 		kde front end for ogle
 CATEGORIES=		x11 x11/kde 
 DISTNAME=		okle-0.3

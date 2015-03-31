@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.32 2013/10/09 13:52:18 nigel Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	configuration utility for openbox
 
 # git clone of b7f1c6ac679bbda61bc4ca13267f03022cbfde74

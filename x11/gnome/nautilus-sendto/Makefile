@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.58 2014/09/23 08:39:52 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	applications integration into Nautilus

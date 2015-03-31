@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2015/03/16 18:07:59 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	C++ wrapper for gtksourceview3
 
 GNOME_PROJECT=	gtksourceviewmm

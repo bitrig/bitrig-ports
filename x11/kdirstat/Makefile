@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.29 2013/10/22 11:34:24 zhuk Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	graphical disk usage utility for KDE
 
 DISTNAME=	kdirstat-2.4.0

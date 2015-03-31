@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.32 2014/12/05 12:50:09 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Chinese(Big5) VT100 terminal emulator for X
 
 DISTNAME=       crxvt-2.10-2

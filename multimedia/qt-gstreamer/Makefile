@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2014/11/07 10:05:29 landry Exp $
 
+BROKEN = 	needs work on bitrig
+
 SHARED_ONLY =	Yes
 COMMENT =	Qt bindings to GStreamer 1.x
 

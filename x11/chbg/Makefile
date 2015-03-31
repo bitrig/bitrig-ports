@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.26 2013/10/11 23:51:48 naddy Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		Desktop wallpaper manager and X11 screensaver
 
 DISTNAME=		chbg-2.0.1

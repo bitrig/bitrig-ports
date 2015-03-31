@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.78 2013/12/22 19:24:34 zhuk Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT-main = 		K Desktop Environment, network applications
 COMMENT-kopsounds =	notification sounds for Kopete
 CATEGORIES =		x11 x11/kde

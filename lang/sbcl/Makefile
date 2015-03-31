@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.22 2013/12/10 17:37:54 joshe Exp $
 
+BROKEN = 		needs work on bitrig
+
 # not yet ported to other arches
 ONLY_FOR_ARCHS =	amd64 i386 powerpc
 

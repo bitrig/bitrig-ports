@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2013/08/07 21:33:08 naddy Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		Mac OS-X style lightweight application launcher
 
 DISTNAME =		wbar-2.3.4

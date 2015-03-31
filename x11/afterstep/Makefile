@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.46 2013/06/04 18:41:57 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	window manager, continuation of the Bowman NeXTSTEP clone
 
 DISTNAME=	AfterStep-2.2.9

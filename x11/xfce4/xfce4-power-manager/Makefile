@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2015/03/22 21:00:53 landry Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	Xfce4 power manager
 
 XFCE_VERSION =	1.4.4
