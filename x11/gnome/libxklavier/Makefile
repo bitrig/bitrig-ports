@@ -4,7 +4,7 @@ COMMENT=		utility library for XKB
 
 GNOME_PROJECT=		libxklavier
 GNOME_VERSION=		5.3
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  xklavier             17.0     # .19.0
 
