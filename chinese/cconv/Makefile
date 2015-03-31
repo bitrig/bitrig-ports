@@ -3,7 +3,7 @@
 COMMENT=	simplified-traditional chinese translate tool
 
 DISTNAME=	cconv-0.6.2
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	chinese converters
 
