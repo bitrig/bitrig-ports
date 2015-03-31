@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/10/11 20:36:17 naddy Exp $
+# $OpenBSD: Makefile,v 1.7 2015/03/31 09:44:48 ajacoutot Exp $
 
 PKG_ARCH = 	*
 COMMENT =  	config files for imake
