@@ -3,7 +3,7 @@
 COMMENT=	collection of additional GTK widgets
 
 DISTNAME=	libsexy-0.1.11
-REVISION=	8
+REVISION=	9
 
 SHARED_LIBS +=  sexy                 0.0      # .2.4
 CATEGORIES=	x11 devel
