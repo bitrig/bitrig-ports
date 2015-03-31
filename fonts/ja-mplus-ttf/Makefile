@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/03/11 11:06:05 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2015/03/31 09:45:10 ajacoutot Exp $
 
 COMMENT=	high quality japanese truetype fonts
 
@@ -17,7 +17,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE_JP:=mix-mplus-ipa/20216/}
 NO_BUILD=	Yes
 NO_TEST=	Yes
 
-INST_DIR=		${PREFIX}/lib/X11/fonts/mplus/
+INST_DIR=		${PREFIX}/share/fonts/mplus/
 FONTSDIR=		${WRKSRC}/opfc-ModuleHP-1.1.1_withIPAFonts_and_Mplus/fonts/
 
 do-install:

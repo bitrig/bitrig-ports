@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/04/26 09:21:31 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.3 2015/03/31 09:45:09 ajacoutot Exp $
 
 COMMENT =		replacement for Comic Sans font
 
@@ -18,7 +18,7 @@ EXTRACT_SUFX =		.zip
 
 NO_BUILD =		Yes
 
-FONTDIR =		${PREFIX}/lib/X11/fonts/comic-neue
+FONTDIR =		${PREFIX}/share/fonts/comic-neue
 FCDIR =			${PREFIX}/share/comic-neue
 
 do-install:

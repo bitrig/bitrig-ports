@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/10/01 09:07:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.4 2015/03/31 09:45:09 ajacoutot Exp $
 
 COMMENT=	farsi bornaray fonts
 
@@ -31,7 +31,7 @@ NO_BUILD=	Yes
 NO_TEST=	Yes
 PKG_ARCH=	*
 
-FONTSDIR=	${PREFIX}/lib/X11/fonts/farsi-bfonts
+FONTSDIR=	${PREFIX}/share/fonts/farsi-bfonts
 
 do-install:
 	${INSTALL_DATA_DIR} ${FONTSDIR}

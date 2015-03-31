@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 11:06:05 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2015/03/31 09:45:11 ajacoutot Exp $
 
 COMMENT=		Microsoft TrueType core fonts
 
@@ -35,7 +35,7 @@ DISTFILES=		andale32.exe \
 			wd97vwr32.exe \
 			webdin32.exe
 
-INST_DIR=		${PREFIX}/lib/X11/fonts/mscorefonts
+INST_DIR=		${PREFIX}/share/fonts/mscorefonts
 
 EXTRACT_CASES=		*.exe) cabextract --lowercase --quiet \
 			--directory=${WRKDIST} ${FULLDISTDIR}/$$archive ;;

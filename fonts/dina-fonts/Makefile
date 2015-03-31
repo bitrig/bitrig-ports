@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.4 2014/01/06 21:35:03 tobiasu Exp $
+# $OpenBSD: Makefile,v 1.5 2015/03/31 09:45:09 ajacoutot Exp $
 
 COMMENT =	monospace bitmap font, primarily aimed at programmers
 
 DISTNAME =	dina-fonts-2.92
 REVISION =	0
 CATEGORIES =	fonts
+REVISION =	0
 
 HOMEPAGE =	http://www.donationcoder.com/Software/Jibz/Dina/
 
@@ -18,7 +19,7 @@ NO_BUILD =	Yes
 NO_TEST =	Yes
 USE_X11 =	Yes
 
-FONTDIR=	${PREFIX}/lib/X11/fonts/dina
+FONTDIR=	${PREFIX}/share/fonts/dina
 
 WRKSRC =	${WRKDIR}/BDF
 

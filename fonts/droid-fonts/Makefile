@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/03/11 11:06:05 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2015/03/31 09:45:09 ajacoutot Exp $
 
 PKG_ARCH=	*
 
@@ -20,7 +20,7 @@ MASTER_SITES=	http://distfiles.nl/
 NO_BUILD=	Yes
 NO_TEST=	Yes
 
-INST_DIR=	${PREFIX}/lib/X11/fonts/Droid
+INST_DIR=	${PREFIX}/share/fonts/Droid
 EXTRACT_DIR=	DroidFonts
 
 do-install:

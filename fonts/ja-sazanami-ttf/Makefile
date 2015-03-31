@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/03/11 11:06:05 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2015/03/31 09:45:10 ajacoutot Exp $
 
 COMMENT=	japanese true type fonts
 
@@ -19,7 +19,7 @@ NO_TEST=		Yes
 
 PKG_ARCH=		*
 
-INST_DIR=		${PREFIX}/lib/X11/fonts/sazanami/
+INST_DIR=		${PREFIX}/share/fonts/sazanami/
 
 do-install:
 	${INSTALL_DATA_DIR} ${INST_DIR}

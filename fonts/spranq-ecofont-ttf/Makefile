@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/03/11 11:06:05 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2015/03/31 09:45:11 ajacoutot Exp $
 
 COMMENT=		ink-saving font based on Vera Sans
 
@@ -23,7 +23,7 @@ NO_BUILD=		Yes
 NO_TEST=		Yes
 
 WRKDIST=		${WRKDIR}/
-FONTSDIR=		${PREFIX}/lib/X11/fonts/ecofont
+FONTSDIR=		${PREFIX}/share/fonts/ecofont
 
 do-install:
 	${INSTALL_DATA_DIR} ${FONTSDIR}

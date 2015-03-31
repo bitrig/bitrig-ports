@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:06:05 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2015/03/31 09:45:11 ajacoutot Exp $
 
 COMMENT =		unicode sans-serif/monospace TrueType fonts from Ubuntu
 
@@ -22,7 +22,7 @@ NO_TEST =		Yes
 
 PKG_ARCH =		*
 
-FONTDIR =		${PREFIX}/lib/X11/fonts/ubuntu
+FONTDIR =		${PREFIX}/share/fonts/ubuntu
 DOCDIR =		${PREFIX}/share/doc/ubuntu-fonts
 
 do-install:
