@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2015/03/15 11:47:03 jasper Exp $
+# $OpenBSD: Makefile,v 1.2 2015/03/31 08:50:01 jasper Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -9,8 +9,11 @@ GH_ACCOUNT =		thewtex
 GH_PROJECT =		tmux-mem-cpu-load
 GH_TAGNAME =		v$V
 DISTNAME =		${GH_PROJECT}-$V
+REVISION =		0
 
 CATEGORIES =		sysutils
+
+HOMEPAGE =		https://github.com/thewtex/tmux-mem-cpu-load
 
 # Apachev2
 PERMIT_PACKAGE_CDROM =	Yes
