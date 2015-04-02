@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 10:50:25 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2015/04/02 14:21:13 jasper Exp $
 
 COMMENT =		extend python objects with addons
 
@@ -14,7 +14,7 @@ HOMEPAGE =		http://pypi.python.org/pypi/AddOns
 # PSF or ZPL
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=A/AddOns/}
+MODPY_PI =		Yes
 EXTRACT_SUFX =		.zip
 UNZIP =			unzip -a
 

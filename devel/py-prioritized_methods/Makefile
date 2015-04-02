@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 10:50:26 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2015/04/02 14:21:15 jasper Exp $
 
 COMMENT =		extension to PEAK-Rules to prioritize methods
 
@@ -14,7 +14,7 @@ HOMEPAGE =		http://pypi.python.org/pypi/prioritized_methods
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=p/prioritized_methods/}
+MODPY_PI =		Yes
 
 MODULES =		lang/python
 RUN_DEPENDS =		devel/py-peak-rules

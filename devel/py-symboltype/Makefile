@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 10:50:26 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2015/04/02 14:21:15 jasper Exp $
 
 COMMENT =		symbol type for python
 
@@ -14,7 +14,7 @@ HOMEPAGE =		http://peak.telecommunity.com/DevCenter/SymbolType
 # PSF
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=S/SymbolType/}
+MODPY_PI =		Yes
 EXTRACT_SUFX =		.zip
 UNZIP =			unzip -a
 

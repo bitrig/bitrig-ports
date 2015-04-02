@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/08/13 08:44:47 sebastia Exp $
+# $OpenBSD: Makefile,v 1.9 2015/04/02 14:21:17 jasper Exp $
 
 COMMENT=		web interface to PuppetDB
 
@@ -10,7 +10,7 @@ CATEGORIES=		www
 # Apache2
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=		${MASTER_SITE_PYPI:=p/puppetboard/}
+MODPY_PI =		Yes
 
 MODULES=		lang/python
 

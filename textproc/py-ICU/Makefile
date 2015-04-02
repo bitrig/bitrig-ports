@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/07/03 11:17:06 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.2 2015/04/02 14:21:17 jasper Exp $
 
 COMMENT=		Python extension wrapping the ICU C++ API
 
@@ -18,7 +18,7 @@ WANTLIB += icudata icui18n icule icuuc m pthread
 WANTLIB += c++ c++abi
 WANTLIB += ${MODPY_WANTLIB}
 
-MASTER_SITES=		${MASTER_SITE_PYPI:=P/PyICU/}
+MODPY_PI =		Yes
 
 MODULES=		lang/python
 

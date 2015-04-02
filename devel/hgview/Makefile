@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/09/16 13:15:52 edd Exp $
+# $OpenBSD: Makefile,v 1.3 2015/04/02 14:21:13 jasper Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -14,7 +14,7 @@ HOMEPAGE =		http://www.hgview.org/
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=h/hgview/}
+MODPY_PI =		Yes
 MODULES =		lang/python
 BUILD_DEPENDS =		textproc/asciidoc \
 			textproc/xmlto \

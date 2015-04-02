@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/06/17 01:53:06 juanfra Exp $
+# $OpenBSD: Makefile,v 1.13 2015/04/02 14:21:16 jasper Exp $
 
 COMMENT =		FTP server library for Python
 
@@ -14,7 +14,7 @@ HOMEPAGE =		https://pyftpdlib.googlecode.com/
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=p/pyftpdlib/}
+MODPY_PI =		Yes
 
 MODULES =		lang/python
 
