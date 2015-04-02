@@ -14,7 +14,6 @@ HOMEPAGE=	https://bitbucket.org/vinay.sajip/python-gnupg
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODPY_PI =	Yes
-MODPY_PI_DIR =	p/python-gnupg
 
 MODULES=	lang/python
 

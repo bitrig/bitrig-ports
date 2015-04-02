@@ -1,9 +1,10 @@
-# $OpenBSD: Makefile,v 1.15 2015/04/02 14:21:16 jasper Exp $
+# $OpenBSD: Makefile,v 1.16 2015/04/02 19:38:21 jasper Exp $
 
 COMMENT=		Python-based presentation tool
 
-DISTNAME=		bruce-1.2.1
-REVISION =		5
+MODPY_EGG_VERSION=	1.2.1
+DISTNAME=		bruce-${MODPY_EGG_VERSION}
+REVISION =		6
 
 CATEGORIES=		productivity
 
@@ -13,7 +14,6 @@ HOMEPAGE=		https://sites.google.com/site/r1chardj0n3s/bruce
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODPY_PI =		Yes
-MODPY_PI_DIR =		b/bruce
 
 MODULES=		lang/python
 RUN_DEPENDS=		devel/pygame
