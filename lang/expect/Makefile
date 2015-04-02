@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.65 2013/11/20 15:58:31 sthen Exp $
+# $OpenBSD: Makefile,v 1.66 2015/04/02 17:46:57 sebastia Exp $
 
 COMMENT =	sophisticated scripter based on Tcl/Tk
 
