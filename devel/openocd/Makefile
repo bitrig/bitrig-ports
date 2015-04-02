@@ -3,7 +3,7 @@
 COMMENT =	Open On-Chip Debugging
 
 DISTNAME =	openocd-0.8.0
-REVISION =	1
+REVISION =	0
 CATEGORIES =	devel
 
 SHARED_LIBS +=  openocd		1.0 # unknown
