@@ -1,6 +1,6 @@
 $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
---- Makefile.in.orig	Thu Aug  7 21:59:27 2014
-+++ Makefile.in	Thu Sep  4 00:51:06 2014
+--- Makefile.in.orig	Fri Oct 10 08:34:34 2014
++++ Makefile.in	Fri Apr  3 11:23:50 2015
 @@ -59,6 +59,7 @@ JIMSH := jimsh@EXEEXT@
  INSTALL_DATA_DIR ?= mkdir -p
  INSTALL_DATA ?= cp
@@ -21,7 +21,7 @@ $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
  @else
  install-docs:
  @endif
-@@ -83,17 +85,22 @@ $(JIMSH): $(LIBJIM) jimsh.o initjimsh.o
+@@ -83,18 +85,23 @@ $(JIMSH): $(LIBJIM) jimsh.o initjimsh.o
  	$(JIMSH_CC) @SH_LINKFLAGS@ $(LDFLAGS) -o $@ jimsh.o initjimsh.o $(LIBJIM) $(LDLIBS) $(LIBS)
  
  @if JIM_INSTALL
@@ -38,13 +38,88 @@ $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
  	$(INSTALL_DATA) jim-config.h $(DESTDIR)@includedir@
 -	$(INSTALL_DATA_DIR) $(DESTDIR)@bindir@
 -	$(INSTALL_DATA) build-jim-ext $(DESTDIR)@bindir@
-+
+ 
 +install-exas:
 +	$(INSTALL_DATA_DIR) $(DESTDIR)@datadir@/examples/jim{,/api,/ext}
 +	$(INSTALL_SCRIPT) build-jim-ext         $(DESTDIR)@datadir@/examples/jim
 +	$(INSTALL_DATA) @srcdir@/examples/*     $(DESTDIR)@datadir@/examples/jim
 +	$(INSTALL_DATA) @srcdir@/examples.api/{README,Makefile,*.c,*.tcl} $(DESTDIR)@datadir@/examples/jim/api
 +	$(INSTALL_DATA) @srcdir@/examples.ext/{README,Makefile,*.c} $(DESTDIR)@datadir@/examples/jim/ext
- 
++
  install-exec: all
  	$(INSTALL_DATA_DIR) $(DESTDIR)@bindir@
+ 	$(INSTALL_PROGRAM) $(JIMSH) $(DESTDIR)@bindir@
+@@ -137,59 +144,59 @@ $(LIBJIM): $(OBJS)
+ @endif
+ 
+ # Note that $> $^ is for compatibility with both GNU make and BSD make
+-readdir.so: jim-readdir.c
++readdir.so: $(SH_LIBJIM) jim-readdir.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-readdir.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-readdir.o $(SH_LIBJIM)
+ 
+-array.so: jim-array.c
++array.so: $(SH_LIBJIM) jim-array.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-array.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-array.o $(SH_LIBJIM)
+ 
+-clock.so: jim-clock.c
++clock.so: $(SH_LIBJIM) jim-clock.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-clock.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-clock.o $(SH_LIBJIM)
+ 
+-file.so: jim-file.c
++file.so: $(SH_LIBJIM) jim-file.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-file.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-file.o $(SH_LIBJIM)
+ 
+-posix.so: jim-posix.c
++posix.so: $(SH_LIBJIM) jim-posix.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-posix.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-posix.o $(SH_LIBJIM)
+ 
+-regexp.so: jim-regexp.c
++regexp.so: $(SH_LIBJIM) jim-regexp.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-regexp.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-regexp.o $(SH_LIBJIM)
+ 
+-syslog.so: jim-syslog.c
++syslog.so: $(SH_LIBJIM) jim-syslog.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-syslog.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-syslog.o $(SH_LIBJIM)
+ 
+-readline.so: jim-readline.c
++readline.so: $(SH_LIBJIM) jim-readline.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-readline.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-readline.o $(SH_LIBJIM) @LDLIBS_readline@
+ 
+-pack.so: jim-pack.c
++pack.so: $(SH_LIBJIM) jim-pack.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-pack.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-pack.o $(SH_LIBJIM) @LDLIBS_pack@
+ 
+-tclprefix.so: jim-tclprefix.c
++tclprefix.so: $(SH_LIBJIM) jim-tclprefix.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-tclprefix.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-tclprefix.o $(SH_LIBJIM) @LDLIBS_tclprefix@
+ 
+-sqlite3.so: jim-sqlite3.c
++sqlite3.so: $(SH_LIBJIM) jim-sqlite3.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-sqlite3.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-sqlite3.o $(SH_LIBJIM) @LDLIBS_sqlite3@
+ 
+-win32.so: jim-win32.c
++win32.so: $(SH_LIBJIM) jim-win32.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-win32.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-win32.o $(SH_LIBJIM) @LDLIBS_win32@
+ 
+-mk.so: jim-mk.cpp
++mk.so: $(SH_LIBJIM) jim-mk.cpp
+ 	$(CXX) $(CXXFLAGS) $(SHOBJ_CFLAGS) -c -o jim-mk.o $> $^
+ 	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-mk.o $(SH_LIBJIM) @LDLIBS_mk@
+ 
+-sdl.so: jim-sdl.c
++sdl.so: $(SH_LIBJIM) jim-sdl.c
+ 	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-sdl.o $> $^
+ 	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-sdl.o $(SH_LIBJIM) @LDLIBS_sdl@
+ 
