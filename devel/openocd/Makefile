@@ -2,7 +2,7 @@
 
 COMMENT =	Open On-Chip Debugging
 
-DISTNAME =	openocd-0.6.1
+DISTNAME =	openocd-0.8.0
 REVISION =	1
 CATEGORIES =	devel
 
@@ -18,13 +18,14 @@ WANTLIB += c ftdi jim m pthread usb usb-1.0
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=openocd/}
 EXTRACT_SUFX =	.tar.bz2
 
+
 CONFIGURE_STYLE = gnu
 CONFIGURE_ARGS = --disable-werror \
 		--disable-wextra \
 		--enable-arm-jtag-ew \
 		--enable-at91rm9200 \
 		--enable-ep93xx \
-		--enable-ft2232_libftdi \
+		--enable-ftdi\
 		--enable-jlink \
 		--enable-presto_libftdi \
 		--enable-rlink \
