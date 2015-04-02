@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.10 2014/10/10 19:58:21 stu Exp $
 
-#BROKEN =		needs work on bitrig
-
 SHARED_ONLY =		Yes
 
 COMMENT =		small footprint implementation of Tcl
