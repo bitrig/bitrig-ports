@@ -3,6 +3,7 @@
 COMMENT =	Open On-Chip Debugging
 
 DISTNAME =	openocd-0.8.0
+REVISION = 	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://openocd.sourceforge.net/
@@ -36,7 +37,7 @@ CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/jim" \
 		LDFLAGS="-L${LOCALBASE}/lib -pthread"
 
 LIB_DEPENDS =	devel/libftdi>=0.20 \
-		lang/jimtcl>=0.75
+		lang/jimtcl>=0.76
 
 USE_GMAKE =	Yes
 NO_TEST =	Yes
