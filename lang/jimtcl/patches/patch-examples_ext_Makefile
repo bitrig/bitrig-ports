@@ -1,6 +1,5 @@
-$OpenBSD: patch-examples_ext_Makefile,v 1.2 2014/10/10 19:58:21 stu Exp $
---- examples.ext/Makefile.orig	Fri Oct 10 02:34:34 2014
-+++ examples.ext/Makefile	Fri Oct 10 15:43:42 2014
+--- examples.ext/Makefile.orig	Sat Apr  4 00:24:33 2015
++++ examples.ext/Makefile	Sat Apr  4 00:26:20 2015
 @@ -9,21 +9,20 @@
  # Prefer jimsh in the PATH because it is more likely to be built
  # for the build-host rather than the target.

@@ -1,5 +1,8 @@
 @comment $OpenBSD: PLIST,v 1.4 2014/09/16 15:41:16 stu Exp $
 @bin bin/jimsh
+doc/
+doc/jim/
+doc/jim/Tcl.html
 include/jim/
 include/jim/jim-config.h
 include/jim/jim-eventloop.h
@@ -8,7 +11,9 @@ include/jim/jim-subcmd.h
 include/jim/jim-win32compat.h
 include/jim/jim.h
 lib/jim/
+lib/jim/README.extensions
 lib/jim/sqlite3.so
+lib/jim/tcltest.tcl
 @lib lib/libjim.so.${LIBjim_VERSION}
 share/doc/jim/
 share/doc/jim/LICENSE

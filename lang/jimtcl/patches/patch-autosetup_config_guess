@@ -1,5 +1,5 @@
---- autosetup/config.guess.orig	Fri Oct 10 08:34:34 2014
-+++ autosetup/config.guess	Thu Apr  2 23:58:20 2015
+--- autosetup/config.guess.orig	Sat Apr  4 00:02:21 2015
++++ autosetup/config.guess	Sat Apr  4 00:03:28 2015
 @@ -206,6 +206,10 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
  	UNAME_MACHINE_ARCH=`arch | sed 's/OpenBSD.//'`
  	echo ${UNAME_MACHINE_ARCH}-unknown-openbsd${UNAME_RELEASE}
