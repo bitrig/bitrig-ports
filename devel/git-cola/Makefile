@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.14 2014/07/10 11:06:15 rpe Exp $
+# $OpenBSD: Makefile,v 1.16 2015/04/03 18:52:14 jca Exp $
 
 COMMENT =	python powered git gui
 
-MODPY_EGG_VERSION=	1.9.1
+MODPY_EGG_VERSION=	2.1.1
 DISTNAME =	${GH_PROJECT}-${MODPY_EGG_VERSION}
 REVISION =	0
 
