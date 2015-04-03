@@ -1,5 +1,3 @@
-# $OpenBSD: Makefile,v 1.11 2014/09/16 15:42:36 stu Exp $
-
 COMMENT =	Open On-Chip Debugging
 
 DISTNAME =	openocd-0.8.0
@@ -36,7 +34,7 @@ CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/jim" \
 		LDFLAGS="-L${LOCALBASE}/lib -pthread"
 
 LIB_DEPENDS =	devel/libftdi>=0.20 \
-		lang/jimtcl>=0.75
+		lang/jimtcl>=0.76
 
 USE_GMAKE =	Yes
 NO_TEST =	Yes
