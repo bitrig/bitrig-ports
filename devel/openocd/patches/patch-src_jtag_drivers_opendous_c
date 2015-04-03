@@ -1,0 +1,10 @@
+--- src/jtag/drivers/opendous.c.orig	Fri Apr  3 00:47:03 2015
++++ src/jtag/drivers/opendous.c	Fri Apr  3 00:50:36 2015
+@@ -36,7 +36,6 @@
+ #include <jtag/commands.h>
+ #include "libusb_common.h"
+ #include <string.h>
+-#include <sys/timeb.h>
+ #include <time.h>
+ 
+ #define OPENDOUS_MAX_VIDS_PIDS 4
