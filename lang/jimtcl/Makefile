@@ -4,20 +4,30 @@ SHARED_ONLY =		Yes
 
 COMMENT =		small footprint implementation of Tcl
 
-DISTNAME =		jimtcl-0.75pl2
+#GH_ACCOUNT =		msteveb
+#GH_PROJECT =		jimtcl
+#GH_TAGNAME =		0.76 # Tag lag
+GH_COMMIT =		c73f5c591b206c92f8021d01088738c908970d64
+
+V =             	0.76pl2
+
+DISTNAME =       	jimtcl-${V}
+PKGNAME =       	jimtcl-${V}
+DISTFILES = 		jimtcl-${V}${EXTRACT_SUFX}{${GH_COMMIT}${EXTRACT_SUFX}}
+
 SHARED_LIBS =		jim 2.0
 CATEGORIES =		lang devel
 HOMEPAGE =		http://jim.tcl.tk/
+
+MASTER_SITES = 		http://repo.or.cz/w/jimtcl.git/snapshot/
+
+WRKDIST =		${WRKOBJDIR}/${DISTNAME}/jimtcl
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c m sqlite3
 
-GH_ACCOUNT =		msteveb
-GH_PROJECT =		jimtcl
-#GH_TAGNAME =		0.75 # Tag lag
-GH_COMMIT =		20e9c4c1decdadcec69e43bd7c14f51996baf94c
 
 MODULES =		lang/tcl
 

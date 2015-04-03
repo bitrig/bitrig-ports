@@ -1,6 +1,6 @@
 $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
---- Makefile.in.orig	Fri Oct 10 08:34:34 2014
-+++ Makefile.in	Fri Apr  3 11:23:50 2015
+--- Makefile.in.orig	Sat Apr  4 00:12:43 2015
++++ Makefile.in	Sat Apr  4 00:21:17 2015
 @@ -59,6 +59,7 @@ JIMSH := jimsh@EXEEXT@
  INSTALL_DATA_DIR ?= mkdir -p
  INSTALL_DATA ?= cp
@@ -9,19 +9,18 @@ $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
  @endif
  
  all: $(JIMSH) @C_EXT_SHOBJS@
-@@ -73,8 +74,9 @@ docs: Tcl.html
- 
- @if JIM_DOCS
+@@ -75,6 +76,10 @@ docs: Tcl.html
  install-docs: docs
--	$(INSTALL_DATA_DIR) $(DESTDIR)$(prefix)/doc/jim
--	$(INSTALL_DATA) Tcl.html $(DESTDIR)$(prefix)/doc/jim
+ 	$(INSTALL_DATA_DIR) $(DESTDIR)$(prefix)/doc/jim
+ 	$(INSTALL_DATA) Tcl.html $(DESTDIR)$(prefix)/doc/jim
 +	$(INSTALL_DATA_DIR) $(DESTDIR)@datadir@/doc/jim
 +	$(INSTALL_DATA) @srcdir@/LICENSE @srcdir@/README Tcl.html $(DESTDIR)@datadir@/doc/jim
 +	$(INSTALL_DATA) @srcdir@/README.{extensions,namespaces,oo,sqlite,utf-8} $(DESTDIR)@datadir@/doc/jim
++
  @else
  install-docs:
  @endif
-@@ -83,18 +85,23 @@ $(JIMSH): $(LIBJIM) jimsh.o initjimsh.o
+@@ -83,17 +88,23 @@ $(JIMSH): $(LIBJIM) jimsh.o initjimsh.o
  	$(JIMSH_CC) @SH_LINKFLAGS@ $(LDFLAGS) -o $@ jimsh.o initjimsh.o $(LIBJIM) $(LDLIBS) $(LIBS)
  
  @if JIM_INSTALL
@@ -29,9 +28,9 @@ $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
 +install: all @TCL_EXTS@ install-exec install-docs install-exas
  	$(INSTALL_DATA_DIR) $(DESTDIR)@libdir@/jim
  	$(INSTALL_DATA) $(LIBJIM) $(DESTDIR)@libdir@
--	$(INSTALL_DATA) @srcdir@/README.extensions @C_EXT_SHOBJS@ $(DESTDIR)@libdir@/jim
+ 	$(INSTALL_DATA) @srcdir@/README.extensions @C_EXT_SHOBJS@ $(DESTDIR)@libdir@/jim
 +	$(INSTALL_DATA) @C_EXT_SHOBJS@ $(DESTDIR)@libdir@/jim
- 	for i in @TCL_EXTS@; do $(INSTALL_DATA) @srcdir@/$$i $(DESTDIR)@libdir@/jim; done
+ 	for i in tcltest.tcl @TCL_EXTS@; do $(INSTALL_DATA) @srcdir@/$$i $(DESTDIR)@libdir@/jim; done
  	$(INSTALL_DATA_DIR) $(DESTDIR)@includedir@
  	$(INSTALL_DATA) @srcdir@/jim.h @srcdir@/jim-eventloop.h @srcdir@/jim-signal.h \
  		@srcdir@/jim-subcmd.h @srcdir@/jim-win32compat.h $(DESTDIR)@includedir@
@@ -122,4 +121,3 @@ $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
 +sdl.so: $(SH_LIBJIM) jim-sdl.c
  	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-sdl.o $> $^
  	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-sdl.o $(SH_LIBJIM) @LDLIBS_sdl@
- 
