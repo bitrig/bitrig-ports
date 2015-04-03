@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/01/21 22:27:34 jca Exp $
+# $OpenBSD: Makefile,v 1.10 2015/04/03 18:20:49 sthen Exp $
 
 COMMENT=		library for reading, creating and modifying zip archives
 
