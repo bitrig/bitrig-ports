@@ -54,7 +54,6 @@ MODULES=		devel/dconf \
 			devel/gettext \
 			lang/python \
 			x11/gnome
->>>>>>> 155c483... Update to meta-tracker-1.4.0.
 
 LIB_DEPENDS=		audio/libcue \
 			audio/taglib \
