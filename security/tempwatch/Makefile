@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2013/10/01 09:07:19 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.20 2015/04/03 15:12:28 pascal Exp $
 
 COMMENT=		temporary file auditing tool
 

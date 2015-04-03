@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2015/02/04 21:16:11 sthen Exp $
+# $OpenBSD: Makefile,v 1.18 2015/04/03 15:12:28 pascal Exp $
 
 COMMENT-main=	accept email on behalf of real sendmail
 COMMENT-chroot=	static mini_sendmail for chrooted apache
