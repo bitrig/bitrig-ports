@@ -1,6 +1,5 @@
-$OpenBSD: patch-build-jim-ext_in,v 1.1 2014/10/10 19:58:21 stu Exp $
---- build-jim-ext.in.orig	Fri Oct 10 15:22:33 2014
-+++ build-jim-ext.in	Fri Oct 10 15:23:01 2014
+--- build-jim-ext.in.orig	Sat Apr  4 00:27:21 2015
++++ build-jim-ext.in	Sat Apr  4 00:28:16 2015
 @@ -106,8 +106,8 @@ if {$static} {
  }
  puts "Building $target from $sources\n"
