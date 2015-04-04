@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2015/01/20 21:58:44 zhuk Exp $
+# $OpenBSD: Makefile,v 1.17 2015/04/04 09:36:37 ajacoutot Exp $
 
 PKGNAME =		kde4-${MODKDE4_VERSION}
 
@@ -26,7 +26,7 @@ PKGSPEC-network =	kdenetwork-${MODKDE4_SPEC}
 PKGSPEC-sdk =		kdesdk-${MODKDE4_SPEC}
 PKGSPEC-toys =		kdetoys-${MODKDE4_SPEC}
 
-REVISION =		0
+REVISION-minimal =	0
 
 MULTI_PACKAGES +=	-main -minimal -games
 
