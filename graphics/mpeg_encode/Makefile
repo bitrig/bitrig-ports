@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2015/04/03 23:23:18 schwarze Exp $
+# $OpenBSD: Makefile,v 1.18 2015/04/04 09:14:00 naddy Exp $
 
 COMMENT=	UCB's MPEG-I video stream encoder
 
