@@ -1,6 +1,5 @@
-$OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
---- Makefile.in.orig	Sat Apr  4 00:12:43 2015
-+++ Makefile.in	Sat Apr  4 00:21:17 2015
+--- Makefile.in.orig	Thu Mar 19 10:45:24 2015
++++ Makefile.in	Sat Apr  4 16:37:53 2015
 @@ -59,6 +59,7 @@ JIMSH := jimsh@EXEEXT@
  INSTALL_DATA_DIR ?= mkdir -p
  INSTALL_DATA ?= cp
@@ -20,7 +19,7 @@ $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
  @else
  install-docs:
  @endif
-@@ -83,17 +88,23 @@ $(JIMSH): $(LIBJIM) jimsh.o initjimsh.o
+@@ -83,18 +88,24 @@ $(JIMSH): $(LIBJIM) jimsh.o initjimsh.o
  	$(JIMSH_CC) @SH_LINKFLAGS@ $(LDFLAGS) -o $@ jimsh.o initjimsh.o $(LIBJIM) $(LDLIBS) $(LIBS)
  
  @if JIM_INSTALL
@@ -48,7 +47,7 @@ $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
  install-exec: all
  	$(INSTALL_DATA_DIR) $(DESTDIR)@bindir@
  	$(INSTALL_PROGRAM) $(JIMSH) $(DESTDIR)@bindir@
-@@ -137,59 +144,59 @@ $(LIBJIM): $(OBJS)
+@@ -137,19 +148,19 @@ $(LIBJIM): $(OBJS)
  @endif
  
  # Note that $> $^ is for compatibility with both GNU make and BSD make
@@ -72,8 +71,7 @@ $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
  	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-file.o $> $^
  	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-file.o $(SH_LIBJIM)
  
--posix.so: jim-posix.c
-+posix.so: $(SH_LIBJIM) jim-posix.c
+@@ -157,39 +168,39 @@ posix.so: jim-posix.c
  	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-posix.o $> $^
  	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-posix.o $(SH_LIBJIM)
  
@@ -121,3 +119,4 @@ $OpenBSD: patch-Makefile_in,v 1.5 2014/09/16 15:41:15 stu Exp $
 +sdl.so: $(SH_LIBJIM) jim-sdl.c
  	$(CC) $(CFLAGS) $(SHOBJ_CFLAGS) -c -o jim-sdl.o $> $^
  	$(CC) $(CFLAGS) $(LDFLAGS) $(SHOBJ_LDFLAGS) -o $@ jim-sdl.o $(SH_LIBJIM) @LDLIBS_sdl@
+ 
