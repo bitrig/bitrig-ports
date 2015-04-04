@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.5 2015/01/12 15:23:09 sthen Exp $
 
-BROKEN= 	needs work on bitrig
-
 SHARED_LIBS +=	lz4                       0.1 # 0.0
 
 COMMENT=	fast BSD-licensed data compression

@@ -6,7 +6,7 @@ $OpenBSD: patch-Makefile,v 1.4 2015/01/12 15:23:09 sthen Exp $
  #------------------------------------------------------------------------
  #make install is validated only for Linux, OSX, kFreeBSD and Hurd targets
 -ifneq (,$(filter $(shell uname),Linux Darwin GNU/kFreeBSD GNU))
-+ifneq (,$(filter $(shell uname),Linux Darwin GNU/kFreeBSD GNU OpenBSD))
++ifneq (,$(filter $(shell uname),Linux Darwin GNU/kFreeBSD GNU OpenBSD Bitrig))
  
  install:
  	@cd $(LZ4DIR); $(MAKE) -e install

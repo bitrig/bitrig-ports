@@ -19,7 +19,7 @@ Don't build fuzzer/frametest (requires patches for ftime).
  #------------------------------------------------------------------------
  #make install is validated only for Linux, OSX, kFreeBSD and Hurd targets
 -ifneq (,$(filter $(shell uname),Linux Darwin GNU/kFreeBSD GNU))
-+ifneq (,$(filter $(shell uname),Linux Darwin GNU/kFreeBSD GNU OpenBSD))
++ifneq (,$(filter $(shell uname),Linux Darwin GNU/kFreeBSD GNU OpenBSD Bitrig))
  
  install: lz4 lz4c
  	@echo Installing binaries
