@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/01/24 08:54:09 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.21 2015/04/04 09:21:03 ajacoutot Exp $
 
 # libgs from ghostscript is only provided on shared libs archs
 SHARED_ONLY=	Yes

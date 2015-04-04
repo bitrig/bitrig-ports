@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.43 2014/09/07 18:25:01 jasper Exp $
+# $OpenBSD: Makefile,v 1.44 2015/04/04 09:21:03 ajacoutot Exp $
 
 COMMENT=		flexible communications framework, local-link component
 

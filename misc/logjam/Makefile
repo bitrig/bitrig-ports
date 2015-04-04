@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2013/10/26 08:02:57 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.40 2015/04/04 09:21:02 ajacoutot Exp $
 
 COMMENT =	GTK client for LiveJournal
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2015/04/01 20:04:54 bcallah Exp $
+# $OpenBSD: Makefile,v 1.26 2015/04/04 09:21:01 ajacoutot Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -6,6 +6,7 @@ COMMENT =	free font editor for TTF, EOT, and SVG fonts
 DISTNAME =	birdfont-2.4.4
 EXTRACT_SUFX =	.tar.xz
 CATEGORIES =	graphics print
+REVISION =	0
 
 # Both libs must have the same SO number!
 # See scripts/bavala.py (or patches/patch-scripts_bavala_py)

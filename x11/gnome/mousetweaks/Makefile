@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.55 2014/04/02 09:36:13 jasper Exp $
+# $OpenBSD: Makefile,v 1.56 2015/04/04 09:21:07 ajacoutot Exp $
 
 COMMENT=	mouse accessibility enhancements for GNOME
 

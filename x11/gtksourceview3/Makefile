@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.46 2015/04/03 11:53:43 jasper Exp $
+# $OpenBSD: Makefile,v 1.47 2015/04/04 09:21:08 ajacoutot Exp $
 
 COMMENT=		text widget that extends the GTK3 GtkTextView widget
 

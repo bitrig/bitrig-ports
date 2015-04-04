@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/12/15 21:04:05 kili Exp $
+# $OpenBSD: Makefile,v 1.10 2015/04/04 09:21:00 ajacoutot Exp $
 
 COMMENT=	D-Bus profiler
 

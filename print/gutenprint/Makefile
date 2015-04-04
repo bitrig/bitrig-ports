@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.40 2014/05/21 06:57:42 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.41 2015/04/04 09:21:03 ajacoutot Exp $
 
 COMMENT=		high quality print drivers for foomatic and CUPS
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2014/09/13 16:36:53 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.43 2015/04/04 09:21:00 ajacoutot Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -17,8 +17,8 @@ PKGNAME-gtk=	libcanberra-gtk-${V}
 PKGNAME-gtk3=	libcanberra-gtk3-${V}
 
 REVISION-main=	2
-REVISION-gtk=	3
-REVISION-gtk3=	3
+REVISION-gtk=	4
+REVISION-gtk3=	4
 
 SHARED_LIBS +=  canberra             2.0      # 2.5
 SHARED_LIBS +=  canberra-gtk3        1.8      # 1.8

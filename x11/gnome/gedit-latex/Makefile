@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2014/06/03 11:37:56 rpointel Exp $
+# $OpenBSD: Makefile,v 1.15 2015/04/04 09:21:06 ajacoutot Exp $
 
 COMMENT=	LaTeX plugin for Gedit
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.56 2015/04/03 11:26:01 jasper Exp $
+# $OpenBSD: Makefile,v 1.57 2015/04/04 09:21:00 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 

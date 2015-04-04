@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.89 2014/04/01 18:06:28 jasper Exp $
+# $OpenBSD: Makefile,v 1.90 2015/04/04 09:21:00 ajacoutot Exp $
 
 COMMENT=	configuration database system for GNOME
 

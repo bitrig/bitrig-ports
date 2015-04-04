@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2014/04/02 09:36:11 jasper Exp $
+# $OpenBSD: Makefile,v 1.19 2015/04/04 09:21:01 ajacoutot Exp $
 
 COMMENT=		canvas widget for GTK+ based on Cairo
 

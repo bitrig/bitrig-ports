@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.87 2013/09/27 17:49:08 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.88 2015/04/04 09:21:03 ajacoutot Exp $
 
 COMMENT=	GTK+2 IRC client
 

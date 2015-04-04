@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.41 2013/11/08 22:37:43 sthen Exp $
+# $OpenBSD: Makefile,v 1.42 2015/04/04 09:21:08 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -13,6 +13,8 @@ PKGNAME-docs=	py-qt4-docs-${V}
 REVISION-main=	1
 REVISION-docs=	1
 EPOCH=		0
+REVISION-docs=	0
+REVISION-main=	0
 
 CATEGORIES=	x11 devel
 

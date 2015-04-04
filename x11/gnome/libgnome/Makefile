@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.57 2013/09/28 08:51:22 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.58 2015/04/04 09:21:06 ajacoutot Exp $
 
 COMMENT=	libraries for the GNOME project
 

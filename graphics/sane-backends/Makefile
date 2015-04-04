@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.65 2014/07/11 16:59:35 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.66 2015/04/04 09:21:01 ajacoutot Exp $
 
 BROKEN-alpha =	ICE hp5590.c:1141: error: unrecognizable insn
 

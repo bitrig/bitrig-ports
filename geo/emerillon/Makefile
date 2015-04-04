@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2014/05/08 17:19:58 zhuk Exp $
+# $OpenBSD: Makefile,v 1.33 2015/04/04 09:21:01 ajacoutot Exp $
 
 COMMENT =	map viewer using Openstreetmap data
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.71 2015/03/27 08:15:03 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.72 2015/04/04 09:21:04 ajacoutot Exp $
 
 COMMENT=	HTML editor for experienced web designers
 

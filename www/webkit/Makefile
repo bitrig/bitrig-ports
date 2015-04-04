@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.133 2015/03/27 16:02:49 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.134 2015/04/04 09:21:04 ajacoutot Exp $
 
 PORTROACH =	limit:^2\.4
 
@@ -9,11 +9,12 @@ BROKEN-hppa =	error: Compiler GCC >= 4.7 or Clang >= 3.3 is required for C compi
 V =		2.4.8
 DISTNAME =	webkitgtk-${V}
 PKGNAME =	webkit-${V}
-REVISION =	2
 EPOCH =		1
 CATEGORIES =	www
 DPB_PROPERTIES =parallel
 EXTRACT_SUFX =	.tar.xz
+
+REVISION =	3
 
 HOMEPAGE =	http://webkitgtk.org/
 MASTER_SITES =	${HOMEPAGE}/releases/

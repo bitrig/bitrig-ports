@@ -1,12 +1,12 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 11:46:08 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2015/04/04 09:21:05 ajacoutot Exp $
 
 COMMENT =	high level interface to dbus-tcl
 
 DISTNAME =	dbus-intf0.4
 PKGNAME =	dbus-intf-0.4
-REVISION =	0
 CATEGORIES =	x11
 HOMEPAGE =	http://dbus-tcl.sourceforge.net/
+REVISION =	1
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2014/11/23 20:11:12 jasper Exp $
+# $OpenBSD: Makefile,v 1.19 2015/04/04 09:21:02 ajacoutot Exp $
 
 COMMENT=		free replacements of Intel UPnP tools
 

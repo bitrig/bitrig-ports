@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2014/05/14 06:30:03 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.25 2015/04/04 09:21:06 ajacoutot Exp $
 
 COMMENT=	interface components for OpenPGP
 

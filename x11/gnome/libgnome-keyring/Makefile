@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.35 2014/04/02 09:36:13 jasper Exp $
+# $OpenBSD: Makefile,v 1.36 2015/04/04 09:21:06 ajacoutot Exp $
 
 COMMENT=	library for gnome keyring integration
 

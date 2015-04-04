@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.130 2015/03/27 08:16:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.131 2015/04/04 09:21:08 ajacoutot Exp $
 
 COMMENT-main =		K Desktop Environment, basic applications
 COMMENT-samba =		K Desktop Environment, samba support
