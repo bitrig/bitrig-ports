@@ -2,8 +2,10 @@
 
 COMMENT=	open-source (C++ generating) VHDL simulator
 
-DISTNAME=	freehdl-0.0.7
-REVISION=	2	
+V=		0.0.7
+DISTNAME=	freehdl-${V}
+PKGNAME=	freehdl-${V}
+REVISION=	2
 CATEGORIES=	lang cad
 
 SHARED_LIBS +=  ieee                      0.0 # 0.0
