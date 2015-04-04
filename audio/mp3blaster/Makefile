@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.17 2015/02/18 16:15:37 naddy Exp $
+# $OpenBSD: Makefile,v 1.18 2015/04/04 14:45:36 schwarze Exp $
 
 COMMENT=	text console audio player with an interactive interface
 
 DISTNAME=	mp3blaster-3.2.5
+REVISION=	2
 CATEGORIES=	audio
 HOMEPAGE=	http://mp3blaster.sourceforge.net/
-REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
@@ -26,7 +26,6 @@ CONFIGURE_ARGS=	--without-esd \
 		--without-sdl \
 		--with-sndio
 CONFIGURE_ENV+=	ac_cv_lib_ossaudio_main=no
-USE_GROFF =	Yes
 
 post-extract:
 	@cp ${FILESDIR}/sndioplayer.cc ${WRKSRC}/mpegsound
