@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2014/11/07 10:40:05 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.21 2015/04/04 15:33:07 ajacoutot Exp $
 
 # XXX updating requires Thread Local Storage support
 
