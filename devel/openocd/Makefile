@@ -1,6 +1,9 @@
+# $OpenBSD: Makefile,v 1.11 2014/09/16 15:42:36 stu Exp $
+
 COMMENT =	Open On-Chip Debugging
 
 DISTNAME =	openocd-0.8.0
+REVISION = 	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://openocd.sourceforge.net/
