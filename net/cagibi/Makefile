@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/07/10 13:00:13 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2015/04/04 09:30:30 ajacoutot Exp $
 
 CATEGORIES =	net
 COMMENT =	SSDP cache/proxy daemon for KDE
@@ -20,6 +20,9 @@ MODULES =	x11/kde4
 MODKDE4_USE =
 
 RUN_DEPENDS =	net/avahi
+
+# /usr/local/share/dbus-1/system-services/
+RUN_DEPENDS +=	x11/dbus,-suid
 
 MODKDE4_SYSCONF_FILES =	dbus-1		share/examples \
 			cagibid.conf	share/examples/cagibi
