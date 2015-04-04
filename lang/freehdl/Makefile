@@ -25,7 +25,6 @@ WANTLIB += c++ c++abi pthread
 
 USE_GMAKE=	Yes
 USE_LIBTOOL= 	gnu
-BUILD_DEPENDS=  devel/libtool
 
 CONFIGURE_STYLE=gnu
 
