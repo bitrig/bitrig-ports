@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2015/04/04 09:21:06 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.33 2015/04/05 23:28:32 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -6,7 +6,7 @@ COMMENT=		Javascript bindings for GNOME
 
 GNOME_PROJECT=		gjs
 GNOME_VERSION=		1.43.3
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  gjs                  4.2      # 0.0
 
@@ -30,9 +30,8 @@ WANTLIB += c++ c++abi
 MODULES=		devel/gettext \
 			x11/gnome
 
-# sync with devel/spidermonkey
 MODULES +=		gcc4
-MODGCC4_ARCHS =		powerpc sparc64 alpha i386
+MODGCC4_ARCHS =		*
 MODGCC4_LANGS =		c c++
 
 MODPY_RUNDEP=		No
