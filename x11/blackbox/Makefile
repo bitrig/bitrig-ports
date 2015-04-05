@@ -1,11 +1,9 @@
 # $OpenBSD: Makefile,v 1.53 2014/11/11 09:28:29 dcoppa Exp $
 
-BROKEN= 	needs work on bitrig
-
 COMMENT=	small & pretty window manager for 8 and more bits displays
 
 DISTNAME=		blackbox-0.70.1
-REVISION=		8
+REVISION=		9
 CATEGORIES=		x11
 
 HOMEPAGE=		http://blackboxwm.sourceforge.net/

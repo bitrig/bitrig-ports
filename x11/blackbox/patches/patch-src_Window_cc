@@ -8,9 +8,17 @@ References:
 	https://bugs.freedesktop.org/show_bug.cgi?id=83900
 	http://marc.info/?l=openbsd-misc&m=141067888307365&w=2
 
---- src/Window.cc.orig	Tue Nov 11 10:09:45 2014
-+++ src/Window.cc	Tue Nov 11 10:11:02 2014
-@@ -2194,7 +2194,7 @@ bool BlackboxWindow::setInputFocus(void) {
+--- src/Window.cc.orig	Tue Oct 18 10:01:41 2005
++++ src/Window.cc	Sun Apr  5 10:32:21 2015
+@@ -43,6 +43,7 @@
+ #endif
+ 
+ #include <assert.h>
++#include <cstdlib>
+ 
+ /*
+   sometimes C++ is a pain in the ass... it gives us stuff like the
+@@ -2194,7 +2195,7 @@ bool BlackboxWindow::setInputFocus(void) {
    }
  
    XSetInputFocus(blackbox->XDisplay(), client.window,
@@ -19,4 +27,3 @@ References:
  
    if (client.wmprotocols.wm_take_focus) {
      XEvent ce;
-
