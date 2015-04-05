@@ -1,11 +1,12 @@
-# $OpenBSD: Makefile,v 1.40 2013/10/02 19:30:38 jasper Exp $
+# $OpenBSD: Makefile,v 1.42 2015/04/05 13:31:15 sthen Exp $
 
 COMMENT=	checks HTML documents for broken links
 
-MODPY_EGG_VERSION=8.4
-DISTNAME=	LinkChecker-${MODPY_EGG_VERSION}
-PKGNAME=	${DISTNAME:L}
-REVISION=	0
+V=		9.3
+MODPY_EGG_VERSION=${V}
+GH_ACCOUNT=	wummel
+GH_PROJECT=	linkchecker
+GH_TAGNAME=	upstream/$V
 
 CATEGORIES=    	www
 

@@ -1,15 +1,14 @@
-# $OpenBSD: Makefile,v 1.16 2015/04/03 18:52:14 jca Exp $
+# $OpenBSD: Makefile,v 1.17 2015/04/05 13:31:13 sthen Exp $
 
 COMMENT =	python powered git gui
 
 MODPY_EGG_VERSION=	2.1.1
 DISTNAME =	${GH_PROJECT}-${MODPY_EGG_VERSION}
-REVISION =	0
+REVISION =	1
 
 GH_ACCOUNT =	git-cola
 GH_PROJECT =	git-cola
 GH_TAGNAME =	v${MODPY_EGG_VERSION}
-GH_COMMIT =	68e9509a6c863f51bc7216be87b3f7bd6596421a
 
 CATEGORIES =	devel x11
 

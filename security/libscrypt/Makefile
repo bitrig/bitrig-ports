@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2014/07/10 11:06:37 rpe Exp $
+# $OpenBSD: Makefile,v 1.4 2015/04/05 13:31:14 sthen Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -11,7 +11,6 @@ V =		1.19
 GH_ACCOUNT =	technion
 GH_PROJECT =	libscrypt
 GH_TAGNAME =	v$V
-GH_COMMIT =	457ff867eee5fe8535503d5af0b39b78875f2d7f
 DISTNAME =	${GH_PROJECT}-$V
 REVISION =	0
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/11/29 15:29:40 bcallah Exp $
+# $OpenBSD: Makefile,v 1.6 2015/04/05 13:31:14 sthen Exp $
 
 V =		4.1.15
 COMMENT =	query for a selection and print to stdout (select operation)
@@ -9,7 +9,6 @@ REVISION =	0
 GH_ACCOUNT =	naelstrof
 GH_PROJECT =	slop
 GH_TAGNAME =	v${V}
-GH_COMMIT =	cbc18562ff5129e3b3c2a2031acc3284164d5939
 
 HOMEPAGE =	https://github.com/naelstrof/slop
 
