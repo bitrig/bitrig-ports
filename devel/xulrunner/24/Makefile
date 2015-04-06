@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2015/03/18 19:10:35 landry Exp $
+# $OpenBSD: Makefile,v 1.19 2015/04/06 16:45:20 naddy Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -10,7 +10,7 @@ MOZILLA_DIST =		firefox
 PKGSPEC-devel =		xulrunner-devel->=24.0,<31.0
 PKGSPEC-main =		xulrunner->=24.0,<31.0
 REVISION-main =		1
-REVISION-devel =	1
+REVISION-devel =	2
 
 SO_VERSION =		0.0
 MOZILLA_LIBS =		mozgnome mozalloc xul
@@ -20,8 +20,8 @@ RUN_DEPENDS-devel =	${PKGNAME-main}:${BASE_PKGPATH},-main
 CONFIGURE_ENV +=	MOZ_OFFICIAL_BRANDING_DIRECTORY=browser/branding
 
 post-install:
-	#otherwise libxul.so ends up being 1Go in sdk/lib
-	${STRIP} ${PREFIX}/lib/${MOZILLA_PROJECT}-devel-${MOZILLA_VER}/sdk/lib/lib*.{so*,a}
+	#otherwise libxul.so ends up being 1GB in sdk/lib
+	${STRIP} ${PREFIX}/lib/${MOZILLA_PROJECT}-devel-${MOZILLA_VER}/sdk/lib/libxul.so.${SO_VERSION}
 	#avoid conflict with lang/spidermonkey
 	mv ${PREFIX}/lib/pkgconfig/{mozilla,libxul}-js.pc
 	# MOZ_ENABLE_SKIA_GPU is false on ppc (see configure.in:8041 / bug 849253)
