@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2013/03/11 11:07:39 espie Exp $
+# $OpenBSD: Makefile,v 1.27 2015/04/06 22:10:57 schwarze Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -19,7 +19,6 @@ CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	--without-x \
 		--without-xshogi
 
-USE_GROFF =	Yes
 NO_TEST=	Yes
 
 do-install:
