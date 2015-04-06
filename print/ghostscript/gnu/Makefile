@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.103 2015/02/16 22:57:12 naddy Exp $
+# $OpenBSD: Makefile,v 1.104 2015/04/06 21:04:30 ajacoutot Exp $
 
 COMMENT=	GNU PostScript interpreter
 
@@ -7,6 +7,7 @@ REVISION=	0
 DISTNAME=	ghostscript-${VERSION}
 CATEGORIES=	print lang
 SHARED_LIBS=	gs	15.0
+REVISION=	0
 
 MASTER_SITES=	http://downloads.ghostscript.com/public/
 
@@ -27,7 +28,7 @@ WANTLIB=	c ijs m jbig2dec jpeg>=62 lcms2 png>=6 pthread tiff z
 
 MODULES=	converters/libiconv
 
-RUN_DEPENDS=	print/ghostscript/gnu-fonts
+RUN_DEPENDS=	print/ghostscript/gnu-fonts>=8.11p3
 LIB_DEPENDS=	graphics/jbig2dec	\
 		graphics/jpeg		\
 		graphics/lcms2		\
