@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.103 2015/01/08 17:07:45 sthen Exp $
 
-BROKEN=		needs work on bitrig
-
 COMMENT=	shell-like command line ftp and sftp client
 
 DISTNAME=	lftp-4.6.1
@@ -31,7 +29,7 @@ CONFIGURE_ARGS=	--with-openssl \
 		--without-gnutls \
 		--disable-shared
 
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/ereadline -I${LOCALBASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 MODULES=	devel/gettext
