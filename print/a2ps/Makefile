@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.58 2014/10/31 15:38:22 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.59 2015/04/06 21:05:07 ajacoutot Exp $
 
 COMMENT=	format files for printing on PostScript printers
 
