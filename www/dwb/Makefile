@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.3 2014/10/01 06:42:36 ajacoutot Exp $
 
-BROKEN = 	needs work on bitrig
-
 COMMENT =	lightweight webkit-based browser with vi-like controls
 
 DISTNAME =	dwb-2014.03.07
