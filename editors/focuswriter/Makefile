@@ -1,13 +1,14 @@
-# $OpenBSD: Makefile,v 1.5 2015/03/27 08:11:26 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2015/04/06 13:40:50 landry Exp $
 
 BROKEN = 	needs work on bitrig
 
 COMMENT =	simple, distraction-free writing environment
 
-DISTNAME =	focuswriter-1.4.4
+DISTNAME =	focuswriter-1.5.3-src
+PKGNAME =	${DISTNAME:S/-src//}
 CATEGORIES =	editors
-EXTRACT_SUFX =	-src.tar.bz2
-REVISION=	2
+EXTRACT_SUFX =	.tar.bz2
+WRKDIST =	${WRKDIR}/${DISTNAME:S/-src//}
 
 HOMEPAGE =	http://gottcode.org/focuswriter/
 
@@ -19,10 +20,9 @@ PERMIT_PACKAGE_CDROM =	Yes
 MODULES +=	devel/gettext
 MODULES +=	x11/qt4
 RUN_DEPENDS +=	devel/desktop-file-utils x11/gtk+3,-guic
-LIB_DEPENDS +=	archivers/libzip textproc/enchant
+LIB_DEPENDS +=	textproc/hunspell
 WANTLIB +=	ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
-WANTLIB +=	QtNetwork enchant glib-2.0 gmodule-2.0 z
-WANTLIB +=	QtGui c m pthread zip
+WANTLIB +=	QtNetwork z QtGui c m pthread hunspell-1.3
 WANTLIB +=	c++ c++abi pthread
 
 MAKE_FLAGS +=	CXX=${CXX} \
@@ -30,6 +30,11 @@ MAKE_FLAGS +=	CXX=${CXX} \
 FAKE_FLAGS +=	INSTALL_ROOT=${DESTDIR}
 
 do-configure:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${CONFIGURE_ENV} ${LOCALBASE}/bin/qmake4
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${CONFIGURE_ENV} \
+		${LOCALBASE}/bin/qmake4
+
+post-install:
+	mv ${PREFIX}/share/man/man1/focuswriter.1 ${PREFIX}/man/man1
+	rm -Rf ${PREFIX}/share/man/
 
 .include <bsd.port.mk>
