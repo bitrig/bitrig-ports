@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.167 2015/01/01 19:01:57 kili Exp $
+# $OpenBSD: Makefile,v 1.168 2015/04/06 16:01:55 landry Exp $
 
      SUBDIR =
      SUBDIR += STk
