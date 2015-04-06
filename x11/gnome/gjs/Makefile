@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2015/04/05 23:28:32 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.34 2015/04/06 08:48:54 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -30,9 +30,10 @@ WANTLIB += c++ c++abi
 MODULES=		devel/gettext \
 			x11/gnome
 
+# sync with devel/spidermonkey
 MODULES +=		gcc4
-MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		c c++
+MODGCC4_ARCHS=		*
+MODGCC4_LANGS=		c c++
 
 MODPY_RUNDEP=		No
 MODPY_BUILDDEP= 	No
