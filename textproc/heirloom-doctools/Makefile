@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/12/16 22:27:06 bentley Exp $
+# $OpenBSD: Makefile,v 1.3 2015/04/07 09:49:28 bentley Exp $
 
 COMMENT =		modernized troff implementation
 
-V =			141029
+V =			150406
 DISTNAME =		heirloom-doctools-$V
 
 REVISION = 		0
