@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.112 2015/01/07 20:45:28 kili Exp $
+# $OpenBSD: Makefile,v 1.113 2015/04/08 21:05:22 kili Exp $
 
 BROKEN =		needs work on bitrig
 
@@ -162,7 +162,7 @@ do-test:
 # It doesn't matter wether this is the actual date of the bootstrapper
 # build. It's just used to get different distfiles whenever new
 # bootstrappers have to be built.
-BOOTSTRAP_DATE =	20141229
+BOOTSTRAP_DATE =	20150408
 
 # Create a bootstrapper. This compiles a stripped-down version of
 # ghc and creates a `bindist', i.e. a tarball with binaries that
