@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.22 2014/04/21 16:13:07 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 # XXX doesn't build if already installed
 COMMENT=	graphical subversion client
 

@@ -150,7 +150,6 @@
      SUBDIR += naev
      SUBDIR += nethack
      SUBDIR += nethack,no_x11
-     SUBDIR += nethack,qt
      SUBDIR += netris
      SUBDIR += neverball
      SUBDIR += newvox

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2013/03/11 11:02:50 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	powerful and simple GTK editor
 
 DISTNAME=	teagtk-17.6.6

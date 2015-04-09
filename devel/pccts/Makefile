@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.23 2013/03/11 10:50:24 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Purdue Compiler Construction Tool Set
 
 DISTNAME=	pccts133mr33

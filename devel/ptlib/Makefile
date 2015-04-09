@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.31 2014/10/18 04:19:31 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	portable tools library

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2014/09/16 13:15:52 edd Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		fast Mercurial log navigator
 
 MODPY_EGG_VERSION =	1.8.2

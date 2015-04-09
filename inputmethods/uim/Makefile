@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.48 2015/01/09 16:45:37 ajacoutot Exp $
 
+BROKEN= 		needs work on bitrig
+
 SHARED_ONLY=		Yes
 DPB_PROPERTIES=		tag:kde3
 
@@ -85,9 +87,9 @@ WANTLIB-kde += ${cWANTLIB} ${KDE}/kdecore ${KDE}/kdeui
 WANTLIB-kde += DCOP GL ICE SM X11-xcb Xau Xcursor Xdamage Xdmcp Xfixes
 WANTLIB-kde += Xft Xi Xinerama Xmu Xrandr Xt Xxf86vm art_lgpl_2 drm
 WANTLIB-kde += expat gcroots glapi idn jpeg kdefx lcms mng png pthread
-WANTLIB-kde += pthread-stubs qt-mt stdc++ uim uim-scm util xcb xcb-dri2
+WANTLIB-kde += pthread-stubs qt-mt uim uim-scm util xcb xcb-dri2
 WANTLIB-kde += xcb-glx z
-WANTLIB-kde +=	c++ c++abi
+WANTLIB-kde += c++ c++abi
 
 LIB_DEPENDS-kde=	inputmethods/uim \
 			x11/kde/libs3
@@ -95,16 +97,18 @@ LIB_DEPENDS-kde=	inputmethods/uim \
 WANTLIB-qt += ${cWANTLIB} ${MODQT3_WANTLIB}
 WANTLIB-qt += GL ICE SM X11-xcb Xau Xcursor Xdamage Xdmcp Xfixes
 WANTLIB-qt += Xft Xi Xinerama Xmu Xrandr Xt Xxf86vm c drm expat gcroots
-WANTLIB-qt += glapi jpeg lcms mng png pthread pthread-stubs stdc++
+WANTLIB-qt += glapi jpeg lcms mng png pthread pthread-stubs
 WANTLIB-qt += uim uim-custom uim-scm xcb xcb-dri2 xcb-glx z
+WANTLIB-qt += c++ c++abi
 
 LIB_DEPENDS-qt=		${MODQT3_LIB_DEPENDS} \
 			${MODGETTEXT_LIB_DEPENDS} \
 			inputmethods/uim
 
 WANTLIB-qt4 += ${cWANTLIB} ${MODQT4_WANTLIB}
-WANTLIB-qt4 += ICE QtGui SM Xi Xinerama c pthread stdc++ uim
+WANTLIB-qt4 += ICE QtGui SM Xi Xinerama c pthread uim
 WANTLIB-qt4 += uim-custom uim-scm
+WANTLIB-qt4 += c++ c++abi
 
 LIB_DEPENDS-qt4=	${MODQT4_LIB_DEPENDS} \
 			${MODGETTEXT_LIB_DEPENDS} \

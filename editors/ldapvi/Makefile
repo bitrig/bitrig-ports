@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2013/10/11 23:49:31 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	update LDAP entries with a text editor
 
 DISTNAME=	ldapvi-1.7
