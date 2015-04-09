@@ -2,7 +2,7 @@
 
 COMMENT=		XML parser designed for Jabber applications
 DISTNAME=		iksemel-1.4
-REVISION=		4
+REVISION=		5
 
 SHARED_LIBS=		iksemel		0.1	# .4.0
 
