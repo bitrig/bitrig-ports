@@ -13,3 +13,39 @@
  /// FreeBSD - FreeBSD tool chain which can call as(1) and ld(1) directly.
  
  FreeBSD::FreeBSD(const Driver &D, const llvm::Triple& Triple, const ArgList &Args)
+$OpenBSD: patch-tools_clang_lib_Driver_ToolChains_cpp,v 1.4 2015/04/09 22:25:02 sthen Exp $
+
+r225958
+Use the integrated assembler by default on 32-bit PowerPC and SPARC.
+
+r211785
+Implement the -fuse-ld= option.
+
+This commit implements the -fuse-ld= option, so that the user
+can specify -fuse-ld=bfd to use ld.bfd.
+
+--- tools/clang/lib/Driver/ToolChains.cpp.orig	Sun Mar  2 22:03:41 2014
++++ tools/clang/lib/Driver/ToolChains.cpp	Thu Feb 26 07:06:45 2015
+@@ -2035,7 +2035,12 @@ bool Generic_GCC::IsIntegratedAssemblerDefault() const
+          getTriple().getArch() == llvm::Triple::aarch64 ||
+          getTriple().getArch() == llvm::Triple::aarch64_be ||
+          getTriple().getArch() == llvm::Triple::arm ||
+-         getTriple().getArch() == llvm::Triple::thumb;
++         getTriple().getArch() == llvm::Triple::thumb ||
++         getTriple().getArch() == llvm::Triple::ppc ||
++         getTriple().getArch() == llvm::Triple::ppc64 ||
++         getTriple().getArch() == llvm::Triple::ppc64le ||
++         getTriple().getArch() == llvm::Triple::sparc ||
++         getTriple().getArch() == llvm::Triple::sparcv9;
+ }
+ 
+ void Generic_ELF::addClangTargetOptions(const ArgList &DriverArgs,
+@@ -2850,7 +2855,7 @@ Linux::Linux(const Driver &D, const llvm::Triple &Trip
+   PPaths.push_back(Twine(GCCInstallation.getParentLibPath() + "/../" +
+                          GCCInstallation.getTriple().str() + "/bin").str());
+ 
+-  Linker = GetProgramPath("ld");
++  Linker = GetLinkerPath();
+ 
+   Distro Distro = DetectDistro(Arch);
+ 
