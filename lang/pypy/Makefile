@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2015/04/05 11:15:07 edd Exp $
+# $OpenBSD: Makefile,v 1.14 2015/04/09 10:34:28 sthen Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -15,7 +15,7 @@ COMMENT =		fast implementation of the Python language
 #   * make bootstrap && make makesum (note, FLAVOR no longer set)
 #   * Try the build using the bootstrap
 V =			2.5.1
-BOOTSTRAP_V =		${V}
+BOOTSTRAP_V =		${V}-1
 DISTNAME =		pypy-${V}-src
 PKGNAME =		pypy-${V}
 REVISION =		0
