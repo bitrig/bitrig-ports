@@ -5,7 +5,7 @@ COMMENT=	SDL wrapper around the Pango library
 V=		0.1.2
 DISTNAME=	SDL_Pango-${V}
 PKGNAME=	sdl-pango-${V}
-REVISION=	9
+REVISION=	10
 CATEGORIES=	devel x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sdlpango/}
 MASTER_SITES0=	http://zarb.org/~gc/t/
