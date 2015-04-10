@@ -1,21 +1,11 @@
-# $OpenBSD: Makefile,v 1.10 2014/10/10 19:58:21 stu Exp $
+# $OpenBSD: Makefile,v 1.11 2015/04/10 14:35:36 stu Exp $
 
 SHARED_ONLY =		Yes
 
 COMMENT =		small footprint implementation of Tcl
 
-#GH_ACCOUNT =		msteveb
-#GH_PROJECT =		jimtcl
-#GH_TAGNAME =		0.76 # Tag lag
-GH_COMMIT =		c73f5c591b206c92f8021d01088738c908970d64
-
-V =             	0.76pl2
-
-DISTNAME =       	jimtcl-${V}
-PKGNAME =       	jimtcl-${V}
-DISTFILES = 		jimtcl-${V}${EXTRACT_SUFX}{${GH_COMMIT}${EXTRACT_SUFX}}
-
-SHARED_LIBS =		jim 2.0
+DISTNAME =		jimtcl-0.76pl0
+SHARED_LIBS =		jim 2.1
 CATEGORIES =		lang devel
 HOMEPAGE =		http://jim.tcl.tk/
 
@@ -28,6 +18,9 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c m sqlite3
 
+GH_ACCOUNT =		msteveb
+GH_PROJECT =		jimtcl
+GH_COMMIT =		af59339f008ae4eff13b0fea0eeff21a9d1e8b6c
 
 MODULES =		lang/tcl
 
@@ -36,8 +29,7 @@ BUILD_DEPENDS =		${MODTCL_BUILD_DEPENDS} \
 
 MAKE_FLAGS =		LIBJIM=libjim.so.${LIBjim_VERSION} \
 			SH_CFLAGS=${PICFLAG} \
-			SHOBJ_CFLAGS=${PICFLAG} \
-			SH_LDFLAGS=-shared
+			SHOBJ_CFLAGS=${PICFLAG}
 
 FAKE_FLAGS =		INSTALL_DATA_DIR='${INSTALL_DATA_DIR}' \
 			INSTALL_DATA='${INSTALL_DATA}' \
@@ -46,6 +38,7 @@ FAKE_FLAGS =		INSTALL_DATA_DIR='${INSTALL_DATA_DIR}' \
 
 SEPARATE_BUILD =	Yes
 CONFIGURE_STYLE =	simple
+CONFIGURE_SCRIPT =	${MODTCL_BIN} ${WRKSRC}/autosetup/autosetup
 
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
 			--includedir=${PREFIX}/include/jim \
@@ -53,7 +46,9 @@ CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
 			--with-mod=sqlite3 \
 			CCACHE=none
 
+CONFIGURE_ENV +=	WRAPPER=${WRKSRC}/configure
+
 pre-configure:
-	@${SUBST_CMD} ${WRKSRC}/examples.{api,ext}/Makefile
+	@${SUBST_CMD} ${WRKSRC}/{initjimsh.tcl,examples.{api,ext}/Makefile}
 
 .include <bsd.port.mk>

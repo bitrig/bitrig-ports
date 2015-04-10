@@ -1,6 +1,18 @@
---- Makefile.in.orig	Thu Mar 19 10:45:24 2015
-+++ Makefile.in	Sat Apr  4 16:37:53 2015
-@@ -59,6 +59,7 @@ JIMSH := jimsh@EXEEXT@
+$OpenBSD: patch-Makefile_in,v 1.6 2015/04/10 14:35:36 stu Exp $
+
+Don't use soname when linking.
+
+--- Makefile.in.orig	Sun Apr  5 20:13:49 2015
++++ Makefile.in	Mon Apr  6 01:20:58 2015
+@@ -10,7 +10,6 @@ STRIP = @STRIP@
+ SH_CFLAGS ?= @SH_CFLAGS@
+ SH_LDFLAGS ?= @SH_LDFLAGS@
+ @if SH_SOPREFIX
+-SH_LDFLAGS += @SH_SOPREFIX@libjim@LIBSOEXT@
+ @endif
+ SHOBJ_CFLAGS ?= @SHOBJ_CFLAGS@
+ @if JIM_STATICLIB
+@@ -59,6 +58,7 @@ JIMSH := jimsh@EXEEXT@
  INSTALL_DATA_DIR ?= mkdir -p
  INSTALL_DATA ?= cp
  INSTALL_PROGRAM ?= cp
@@ -8,7 +20,9 @@
  @endif
  
  all: $(JIMSH) @C_EXT_SHOBJS@
-@@ -75,6 +76,10 @@ docs: Tcl.html
+@@ -73,8 +73,9 @@ docs: Tcl.html
+ 
+ @if JIM_DOCS
  install-docs: docs
  	$(INSTALL_DATA_DIR) $(DESTDIR)$(prefix)/doc/jim
  	$(INSTALL_DATA) Tcl.html $(DESTDIR)$(prefix)/doc/jim
@@ -19,7 +33,7 @@
  @else
  install-docs:
  @endif
-@@ -83,18 +88,24 @@ $(JIMSH): $(LIBJIM) jimsh.o initjimsh.o
+@@ -83,17 +84,22 @@ $(JIMSH): $(LIBJIM) jimsh.o initjimsh.o
  	$(JIMSH_CC) @SH_LINKFLAGS@ $(LDFLAGS) -o $@ jimsh.o initjimsh.o $(LIBJIM) $(LDLIBS) $(LIBS)
  
  @if JIM_INSTALL
