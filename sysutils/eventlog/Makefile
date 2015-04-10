@@ -4,7 +4,7 @@ COMMENT =	replacement for the syslog() API
 
 V =		0.2.12
 DISTNAME =	eventlog-${V}
-REVISION =	2
+REVISION =	3
 CATEGORIES =	sysutils
 
 SHARED_LIBS =	evtlog	1.0
