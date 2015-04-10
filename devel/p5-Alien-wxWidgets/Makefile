@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2013/03/21 01:34:46 sthen Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	building, finding and using wxWidgets binaries
 
 MODULES =	cpan

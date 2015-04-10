@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.6 2015/01/21 06:13:48 bentley Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	decision procedure for bit-vectors and arrays
 
 V=		0.1

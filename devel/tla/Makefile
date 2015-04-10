@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2013/03/11 10:50:31 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	original Arch source control management CLI written in C
 
 DISTNAME=	tla-1.2

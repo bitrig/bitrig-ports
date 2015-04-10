@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2013/03/11 02:52:07 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	Tcl interface to PostgreSQL

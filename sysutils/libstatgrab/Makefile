@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.10 2014/09/25 20:01:39 landry Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	system statistics gathering library
 
 DISTNAME=	libstatgrab-0.91

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.13 2014/09/27 17:02:29 jeremy Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	fast code profiler for Ruby
 
 DISTNAME =	ruby-${PKGNAME}

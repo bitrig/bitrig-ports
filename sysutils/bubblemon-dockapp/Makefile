@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.26 2014/10/07 09:10:54 dcoppa Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		wm-dockapp; display CPU and memory load
 
 DISTNAME=		bubblemon-dockapp-1.46

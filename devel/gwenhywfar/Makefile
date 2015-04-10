@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.6 2015/01/30 16:20:43 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	helper library for networking and security applications

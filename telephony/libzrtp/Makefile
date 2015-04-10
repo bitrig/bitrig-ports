@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2014/09/27 11:25:01 miod Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		ZRTP library
 
 DISTNAME =		libzrtp-0.20130317

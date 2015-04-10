@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.6 2014/04/23 05:23:24 ajacoutot Exp $
 
+BROKEN = 	needs work on bitrig
+
 BROKEN-macppc =	make: don't know how to make all
 
 COMMENT =	object-relational SQL database

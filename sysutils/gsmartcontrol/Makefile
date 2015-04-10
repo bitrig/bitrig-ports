@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2014/07/09 16:49:35 jasper Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	graphical hard drive inspection tool (smartctl front-end)
 
 DISTNAME=	gsmartcontrol-0.8.6

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.12 2014/12/13 13:53:18 edd Exp $
 
+BROKEN = 		needs work on bitrig
+
 ONLY_FOR_ARCHS =	amd64
 
 COMMENT =		fast implementation of the Python language

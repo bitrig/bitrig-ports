@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.75 2015/03/15 08:37:03 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	document centric objects and utilities

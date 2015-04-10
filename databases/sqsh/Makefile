@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.25 2013/03/11 02:52:09 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	SQL shell for FreeTDS
 
 DISTNAME=	sqsh-2.1.8

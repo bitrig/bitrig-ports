@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2013/09/05 06:21:53 landry Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Small Device C Compiler
 BROKEN-sparc64=	illegal operands building SDCCval.c
 BROKEN-alpha=	sdcc segfaults when building the device library
