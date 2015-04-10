@@ -4,7 +4,7 @@ COMMENT=	GTK+2 frontend to CUPS
 
 DISTNAME=	gtklp-1.3.1
 EXTRACT_SUFX=	.src.tar.gz
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	print sysutils x11
 
