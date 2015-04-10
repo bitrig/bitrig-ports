@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.94 2014/07/03 15:19:17 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	list information about open files
 
 VERSION=	4.87

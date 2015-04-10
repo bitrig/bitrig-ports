@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2013/12/22 19:24:34 zhuk Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	concentric segmented-rings disk usage visualisation

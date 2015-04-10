@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2015/03/15 10:10:29 jasper Exp $
 
+BROKEN= 		needs work on bitrig
+
 SHARED_ONLY=		Yes
 
 COMMENT=		represent and manage a libvirt hypervisor connection

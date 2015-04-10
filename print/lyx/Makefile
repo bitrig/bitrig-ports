@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.70 2015/02/16 22:57:12 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	graphical frontend for LaTeX (nearly WYSIWYG)
 
 DISTNAME=	lyx-2.0.4

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.14 2013/03/11 11:37:54 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	pixmap rendering for reportlab

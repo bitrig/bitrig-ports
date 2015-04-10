@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.21 2013/03/21 10:43:34 jasper Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	qt home accounting program
 
 DISTNAME=	qhacc-3.4

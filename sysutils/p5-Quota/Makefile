@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.21 2014/06/14 23:26:01 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT=	quota manipulation module

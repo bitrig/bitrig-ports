@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.21 2014/10/04 14:25:40 zhuk Exp $
 
+BROKEN =	needs work on bitrig
+
 SHARED_ONLY =	Yes
 
 COMMENT =	powerful KDE batch file renamer

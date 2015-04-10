@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2015/02/16 22:57:13 naddy Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		forensic toolkit based on TCT
 
 DISTNAME=		sleuthkit-3.0.1

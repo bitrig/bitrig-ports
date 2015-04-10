@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.13 2014/11/28 23:48:16 sthen Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		manage and configure devices that supports IPMI
 
 DISTNAME=		ipmitool-1.8.15

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.23 2015/02/16 22:57:12 naddy Exp $
 
+BROKEN = 		needs work on bitrig
+
 BROKEN-hppa =		lack of atomic ops
 BROKEN-mips64 =		lack of atomic ops
 
@@ -34,8 +36,9 @@ MODULES =		devel/gettext
 
 WANTLIB-main +=		c gmp hogweed nettle ffi gnutls pthread p11-kit
 WANTLIB-main +=		relp tasn1 z ${MODGETTEXT_WANTLIB}
-WANTLIB-mysql +=	crypto m mysqlclient ssl z pthread stdc++
+WANTLIB-mysql +=	crypto m mysqlclient ssl z pthread
 WANTLIB-pgsql +=	crypto pq ssl
+WANTLIB-pqsql +=	c++ c++abi
 
 LIB_DEPENDS-main =	security/gnutls \
 			sysutils/librelp

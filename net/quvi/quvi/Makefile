@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2014/03/26 18:07:57 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	silly suite to access the flash media stream properties
 
 DISTNAME =	quvi-0.9.5

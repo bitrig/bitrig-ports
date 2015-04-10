@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2015/03/16 21:40:57 landry Exp $
 
+BROKEN = 	needs work on bitrig
+
 BROKEN-hppa =	no atomic ops
 COMMENT =	third-party client for Google Drive
 

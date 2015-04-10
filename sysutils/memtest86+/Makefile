@@ -1,6 +1,8 @@
 # $OpenBSD: Makefile,v 1.10 2014/02/04 10:14:52 sthen Exp $
 # $RuOBSD: Makefile,v 1.4 2009/02/07 10:28:55 form Exp $
 
+BROKEN= 		needs work on bitrig
+
 ONLY_FOR_ARCHS=		amd64 i386
 
 COMMENT=		thorough, stand alone memory test

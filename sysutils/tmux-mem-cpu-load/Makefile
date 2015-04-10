@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2015/03/15 11:47:03 jasper Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		CPU, RAM memory, and load monitor for use with tmux(1)
 
 V =			3.2.1
@@ -21,7 +23,8 @@ MODGCC4_LANGS =		c++
 MODCLANG_ARCHS =	amd64 i386
 MODCLANG_LANGS =	c++
 
-WANTLIB +=		c m stdc++
+WANTLIB +=		c m
+WANTLIB +=		c++ c++abi
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/tmux-mem-cpu-load/

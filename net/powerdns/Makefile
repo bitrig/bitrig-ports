@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.35 2014/09/13 18:09:21 brad Exp $
 
+BROKEN= 		needs work on bitrig
+
 SHARED_ONLY=		Yes
 
 COMMENT-main=		modern authoritative nameserver

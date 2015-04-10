@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2014/06/05 15:40:09 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	mount SMB shares from userland via FUSE
 
 DISTNAME=	usmb-20130204

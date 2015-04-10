@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2013/08/07 21:32:20 naddy Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		LDAP authentication plugin for OpenVPN 2.x
 
 VERSION =		2.0.3

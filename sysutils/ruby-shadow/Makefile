@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2014/12/02 19:54:15 jasper Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		module to access shadow passwords
 
 DISTNAME =		ruby-shadow-2.4.1

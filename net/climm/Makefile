@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2013/08/15 16:34:24 stsp Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		simple, command-line multi messenger
 
 DISTNAME =		climm-0.7.1

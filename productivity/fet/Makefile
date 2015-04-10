@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.17 2015/02/16 22:57:12 naddy Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		automatically create timetables
 
 DISTNAME=		fet-5.14.1
