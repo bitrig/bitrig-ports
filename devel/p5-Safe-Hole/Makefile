@@ -5,7 +5,7 @@ COMMENT=	make a hole to the main compartment in the Safe compartment
 SHARED_ONLY=	Yes
 
 DISTNAME=	Safe-Hole-0.10
-REVISION=	5
+REVISION=	6
 CATEGORIES=	devel
 MODULES=	cpan
 
