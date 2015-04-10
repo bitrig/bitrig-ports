@@ -15,7 +15,8 @@ PERMIT_PACKAGE_CDROM =		Yes
 
 MODULES =		devel/cmake
 
-WANTLIB += c gnutls m pthread stdc++ uuid
+WANTLIB += c gnutls m pthread uuid
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS =	security/gnutls \
 		sysutils/e2fsprogs>=1.42.7
