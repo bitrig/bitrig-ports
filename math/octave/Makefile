@@ -8,7 +8,7 @@ COMMENT =	high-level language for numerical computations
 
 VERSION =	3.0.5
 DISTNAME =	octave-${VERSION}
-REVISION =	16
+REVISION =	17
 CATEGORIES =	math
 
 SHARED_LIBS =	cruft		5.0 \
