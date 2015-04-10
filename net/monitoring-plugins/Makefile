@@ -88,7 +88,8 @@ CONFIGURE_ARGS += --without-mysql
 CONFIGURE_ARGS += --with-mysql=${LOCALBASE}
 .endif
 LIB_DEPENDS-mysql = ${LIB_DEPENDS} databases/mariadb
-WANTLIB-mysql = ${WANTLIB} crypto m mysqlclient ssl stdc++ z
+WANTLIB-mysql = ${WANTLIB} crypto m mysqlclient ssl z
+WANTLIB-mysql = c++ c++abi
 
 # PGSQL
 .if !${BUILD_PACKAGES:M-pgsql}
