@@ -19,7 +19,7 @@ PKGNAME-dbm =		ruby-dbm-${VERSION}.${PATCHLEVEL}
 PKGNAME-tk =		ruby-tk-${VERSION}.${PATCHLEVEL}
 PKGNAME-ri_docs =	ruby-ri_docs-${VERSION}.${PATCHLEVEL}
 
-REVISION-main =		1
+REVISION-main =		2
 
 PKG_ARCH-ri_docs =	*
 WANTLIB-ri_docs =	# empty

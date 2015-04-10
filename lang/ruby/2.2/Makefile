@@ -11,6 +11,8 @@ VERSION =		2.2.1
 RUBYLIBREV =		2.2
 DISTNAME =		ruby-${VERSION}
 
+REVISION =		0
+
 SHARED_LIBS =		ruby22	1.0
 PKGNAME-main =		ruby-${VERSION}
 PKGNAME-gdbm =		ruby22-gdbm-${VERSION}

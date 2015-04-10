@@ -17,7 +17,7 @@ PKGNAME-gdbm =		ruby21-gdbm-${VERSION}
 PKGNAME-tk =		ruby21-tk-${VERSION}
 PKGNAME-ri_docs =	ruby21-ri_docs-${VERSION}
 
-REVISION-main =		0
+REVISION-main =		1
 
 PKG_ARCH-ri_docs =	*
 WANTLIB-ri_docs =	# empty
