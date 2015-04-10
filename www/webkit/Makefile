@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.135 2015/04/08 21:42:14 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.136 2015/04/10 06:30:40 ajacoutot Exp $
 
 PORTROACH =	limit:^2\.4
 
@@ -13,7 +13,6 @@ EPOCH =		1
 CATEGORIES =	www
 DPB_PROPERTIES =parallel
 EXTRACT_SUFX =	.tar.xz
-
 REVISION =	3
 
 HOMEPAGE =	http://webkitgtk.org/
@@ -121,7 +120,7 @@ GTK_API_VERSION =	3.0
 WEBKIT_API_VERSION =	1.0
 GTK_API_VERSION =	2.0
 LIB_DEPENDS +=	x11/gtk+2,-main
-WANLIB +=	gdk-x11-2.0 gtk-x11-2.0
+WANTLIB +=	gdk-x11-2.0 gtk-x11-2.0
 .endif
 
 pre-configure:
