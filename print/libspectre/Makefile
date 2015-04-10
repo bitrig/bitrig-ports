@@ -7,7 +7,7 @@ COMMENT=	library for rendering Postscript documents
 
 DISTNAME=	libspectre-0.2.7
 CATEGORIES=	print
-REVISION=	5
+REVISION=	6
 
 SHARED_LIBS=	spectre 0.1	# 2.7
 
