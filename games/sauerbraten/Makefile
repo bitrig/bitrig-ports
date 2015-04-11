@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/04/29 01:56:38 jsg Exp $
+# $OpenBSD: Makefile,v 1.2 2015/04/11 13:49:14 jsg Exp $
 
 ONLY_FOR_ARCHS=	i386 amd64
 
@@ -13,8 +13,8 @@ MULTI_PACKAGES=	-main -data
 
 N=		sauerbraten
 V=		20130203
-REVISION-main=	2
-REVISION-data=	1
+REVISION-main=	3
+REVISION-data=	2
 PKGNAME=	${N}-${V}
 PKGNAME-main=	${N}-${V}
 PKGNAME-data=	${N}-data-${V}
