@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2015/01/28 13:25:23 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.26 2015/04/12 04:44:42 ajacoutot Exp $
 
 COMMENT=	error codes for GnuPG related software
 
