@@ -14,7 +14,8 @@ HOMEPAGE=		https://pypi.python.org/pypi/PyICU
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += icudata icui18n icule icuuc m pthread stdc++
+WANTLIB += icudata icui18n icule icuuc m pthread
+WANTLIB += c++ c++abi
 WANTLIB += ${MODPY_WANTLIB}
 
 MASTER_SITES=		${MASTER_SITE_PYPI:=P/PyICU/}
