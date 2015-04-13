@@ -7,7 +7,7 @@ COMMENT=	FreeIPMI provides in-band and out-of-band IPMI software
 
 V=		0.4.6
 DISTNAME=	freeipmi-${V}
-REVISION=	5
+REVISION=	6
 
 SHARED_LIBS +=  freeipmi 4.0                  # .4.0
 SHARED_LIBS +=  ipmidetect 0.0                # .0.0
