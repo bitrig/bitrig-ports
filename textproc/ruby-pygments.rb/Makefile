@@ -3,6 +3,7 @@
 COMMENT=	syntax highlighter based on pygments
 
 DISTNAME=	pygments.rb-0.5.4
+REVISION=	0
 EPOCH=		0
 
 CATEGORIES=	textproc
