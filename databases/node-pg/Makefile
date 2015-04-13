@@ -4,7 +4,7 @@ COMMENT =	postgresql client for Node.js
 
 NPM_VERSION =	2.8.2
 NPM_NAME =	pg
-REVISION =	1
+REVISION =	2
 CATEGORIES =	databases
 
 HOMEPAGE =	https://github.com/brianc/node-postgres

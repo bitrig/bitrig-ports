@@ -17,22 +17,6 @@ lib/node_modules/pg/binding.gyp
 @comment lib/node_modules/pg/binding.gyp.beforesubst
 lib/node_modules/pg/build/
 lib/node_modules/pg/build/Makefile
-lib/node_modules/pg/build/Release/
-lib/node_modules/pg/build/Release/.deps/
-lib/node_modules/pg/build/Release/.deps/Release/
-lib/node_modules/pg/build/Release/.deps/Release/binding.node.d
-lib/node_modules/pg/build/Release/.deps/Release/obj.target/
-lib/node_modules/pg/build/Release/.deps/Release/obj.target/binding/
-lib/node_modules/pg/build/Release/.deps/Release/obj.target/binding.node.d
-lib/node_modules/pg/build/Release/.deps/Release/obj.target/binding/src/
-lib/node_modules/pg/build/Release/.deps/Release/obj.target/binding/src/binding.o.d
-@bin lib/node_modules/pg/build/Release/binding.node
-lib/node_modules/pg/build/Release/linker.lock
-lib/node_modules/pg/build/Release/obj.target/
-lib/node_modules/pg/build/Release/obj.target/binding/
-@bin lib/node_modules/pg/build/Release/obj.target/binding.node
-lib/node_modules/pg/build/Release/obj.target/binding/src/
-lib/node_modules/pg/build/Release/obj.target/binding/src/binding.o
 lib/node_modules/pg/build/binding.Makefile
 lib/node_modules/pg/build/binding.target.mk
 lib/node_modules/pg/build/config.gypi
