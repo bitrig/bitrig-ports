@@ -3,7 +3,7 @@
 COMMENT=	library for fingerprint reader devices
 
 DISTNAME=	libfprint-0.4.0
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=    	security
 
