@@ -15,7 +15,7 @@ PKGNAME-lib =	libgfortran-$V
 SHARED_LIBS =	gfortran	2.0
 
 REVISION = 18
-REVISION-lib = 14
+REVISION-lib = 18
 
 CATEGORIES =	lang math
 
