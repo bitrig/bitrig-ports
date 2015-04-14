@@ -5,7 +5,7 @@ COMMENT=	module that embeds a Perl interpreter into Apache2
 DISTNAME=	mod_perl-2.0.8
 PKGNAME=	ap2-${DISTNAME}
 CATEGORIES=	www net
-REVISION=	1
+REVISION=	2
 
 MODULES=	cpan converters/libiconv
 MASTER_SITES=	${MASTER_SITE_APACHE:=perl/}
