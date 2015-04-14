@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.12 2014/04/21 23:31:09 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	ODBC driver for PostgreSQL
 VERSION=	08.03.0400
 PKGNAME=	postgresql-odbc-${VERSION}

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.14 2014/04/14 22:37:07 brad Exp $
 
+BROKEN= 	needs work on bitrig
+
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
 COMMENT=	portable, easy to use, and efficient C++ crypto library

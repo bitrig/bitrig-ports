@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.44 2014/11/27 19:59:21 ajacoutot Exp $
 
+BROKEN= 	needs work on bitrig.
+
 ONLY_FOR_ARCHS= ${APM_ARCHS}
 
 COMMENT=	light-weight system monitor

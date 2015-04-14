@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2015/01/03 18:36:53 jca Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	logfile auditing tool
 
 DISTNAME=	logcheck-1.1.1

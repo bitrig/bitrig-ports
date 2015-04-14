@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.8 2014/08/14 06:40:00 ajacoutot Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	library to generate, and check strenght of passwords
 
 DISTNAME =	libpwquality-1.2.4

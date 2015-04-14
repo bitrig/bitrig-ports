@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2014/01/21 15:41:27 syl Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		fuse-based cryptographic filesystem
 DISTNAME =		encfs-1.7.4
 REVISION =		2

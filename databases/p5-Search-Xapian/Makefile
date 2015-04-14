@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2014/09/16 12:45:21 sthen Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		perl bindings for the xapian search library
 
 V=			1.2.15

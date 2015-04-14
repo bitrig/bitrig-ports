@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.11 2014/10/22 13:00:54 jasper Exp $
 
+BROKEN= 	needs work on bitrig.
+
 BROKEN-sparc64=	gcj blows during build
 COMMENT=	pdf swiss army knife
 VERSION=	2.02

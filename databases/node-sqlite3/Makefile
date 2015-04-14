@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.14 2015/02/03 15:49:42 abieber Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	sqlite3 bindings for Node.js
 
 NPM_VERSION =	2.2.3

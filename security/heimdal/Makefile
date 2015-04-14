@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2014/11/28 22:34:18 sthen Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT-main=		Kerberos 5 implementation
 COMMENT-devel-docs=	Heimdal C functions documentation
 COMMENT-libs=		Heimdal libraries and headers

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.13 2015/02/03 15:51:52 abieber Exp $
 
+BROKEN = 	needs work on bitrig.
+
 COMMENT =	module to support sending messages to syslog
 
 NPM_VERSION =	1.1.7

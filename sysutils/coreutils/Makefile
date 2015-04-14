@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2014/10/20 11:56:37 dcoppa Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		file, shell and text manipulation utilities
 
 DISTNAME =		coreutils-8.23

@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.67 2015/03/16 20:31:34 landry Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Xfce4 session manager
 
 XFCE_PROJECT=	xfce4-session

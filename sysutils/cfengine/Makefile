@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.51 2015/02/17 22:08:36 sthen Exp $
 
+BROKEN = 	needs work on bitrig.
+
 COMMENT =	GNU system administration tool for networks
 
 DISTNAME =	cfengine-3.4.5

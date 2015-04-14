@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.29 2015/02/16 22:57:12 naddy Exp $
 
+BROKEN= 	needs work on bitrig.  dpb should ignore this port but doesn't.
+
 COMMENT=	scan C/C++ source code for security problems
 
 DISTNAME=	its4-1.1.1

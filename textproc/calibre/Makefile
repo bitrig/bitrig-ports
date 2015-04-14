@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.39 2014/10/06 19:52:36 sthen Exp $
 
+BROKEN = 		needs work on bitrig.
+
 COMMENT =		ebook management application
 
 # 2.x versions use qt5

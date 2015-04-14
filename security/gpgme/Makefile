@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.32 2015/01/20 20:43:37 sthen Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT=		GnuPG Made Easy
 
 DISTNAME=		gpgme-1.5.1

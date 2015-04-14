@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.9 2015/03/16 18:07:38 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 BROKEN-hppa=	undefined reference to `__sync_fetch_and_add_8'
 BROKEN-mips64=	undefined reference to `__sync_fetch_and_add_8'
 BROKEN-powerpc=	undefined reference to `__sync_fetch_and_add_8'

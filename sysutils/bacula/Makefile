@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.87 2015/02/18 20:55:11 sthen Exp $
 
+BROKEN= 		needs work on bitrig.
+
 # XXX building this port while a version is already installed on the
 # system will lead to unexpected hidden dependencies!!!
 

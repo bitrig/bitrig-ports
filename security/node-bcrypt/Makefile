@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.16 2015/02/03 15:51:31 abieber Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	bcrypt hashing library for Node.js
 
 NPM_VERSION =	0.7.5

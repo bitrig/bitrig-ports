@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.19 2014/09/27 17:06:25 jeremy Exp $
 
+BROKEN= 	needs work on bitrig.
+
 COMMENT=	system monitoring framework written in Ruby
 
 DISTNAME=	god-0.7.22
