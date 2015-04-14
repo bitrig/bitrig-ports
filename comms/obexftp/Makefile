@@ -2,7 +2,7 @@
 
 COMMENT=		file copying over the OBEX protocol
 DISTNAME=		obexftp-0.10.4
-REVISION=		2
+REVISION=		3
 
 SHARED_LIBS +=	bfb                  0.4      # .0.4
 SHARED_LIBS +=	cobexbfb             0.8      # .0.8
