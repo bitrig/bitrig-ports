@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.3 2014/12/31 08:42:27 landry Exp $
 
+BROKEN = 		needs work on bitrig
+
 COMMENT =		open-source RSS/Atom feed reader for text terminals
 DISTNAME =		newsbeuter-2.7
 REVISION =		1

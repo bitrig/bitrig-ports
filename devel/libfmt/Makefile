@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2013/03/11 10:50:10 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	Extensible formatted print C library
 
 VERSION=	2.0

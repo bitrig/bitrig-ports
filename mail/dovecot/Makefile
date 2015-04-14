@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.228 2014/10/28 09:19:54 sthen Exp $
 
+BROKEN= 	needs work on bitrig
+
 SHARED_ONLY=	Yes
 
 COMMENT-server=	compact IMAP/POP3 server
@@ -36,7 +38,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB-server=	bz2 c crypto lz4 lzma pthread sqlite3 ssl z ${MODLIBICONV_WANTLIB}
 WANTLIB-ldap=	crypto lber-2.4 ldap-2.4 sasl2 ssl
-WANTLIB-mysql=	crypto m lib/mysql/mysqlclient pthread ssl stdc++ z
+WANTLIB-mysql=	crypto m lib/mysql/mysqlclient pthread ssl z
+WANTLIB-mysql=  c++ c++abi
 WANTLIB-postgresql= crypto pq>=4 ssl
 
 MODULES=	converters/libiconv

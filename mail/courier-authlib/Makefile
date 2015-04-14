@@ -94,7 +94,9 @@ LIB_DEPENDS-ldap=	${BUILD_PKGPATH} \
 			security/cyrus-sasl2
 
 WANTLIB-mysql=		crypto m ssl z courierauthcommon courierauth \
-			mysqlclient pthread stdc++
+			mysqlclient pthread
+WANTLIB-mysql=		c++ c++abi
+
 RUN_DEPENDS-mysql=
 LIB_DEPENDS-mysql=	${BUILD_PKGPATH} \
 			databases/mariadb

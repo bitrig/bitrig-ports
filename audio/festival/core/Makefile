@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.23 2013/03/10 22:55:02 espie Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	general multi-lingual speech synthesis system
 V=		1.95
 DISTNAME=	festival-${V}-beta

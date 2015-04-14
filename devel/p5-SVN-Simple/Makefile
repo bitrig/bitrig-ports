@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.14 2014/11/10 13:12:59 benoit Exp $
 
+BROKEN =	needs work on bitrig
+
 COMMENT =	simple interface to subversion's editor interface#'
 
 DISTNAME =	SVN-Simple-0.28

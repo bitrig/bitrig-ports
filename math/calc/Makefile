@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.21 2015/03/21 21:28:27 naddy Exp $
 
+BROKEN= 	needs work on bitrig
+
 COMMENT=	C-style arbitrary precision calculator
 
 DISTNAME=	calc-2.11.7

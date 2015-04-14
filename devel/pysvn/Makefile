@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.7 2013/10/10 09:56:32 stsp Exp $
 
+BROKEN =		needs work on bitrig
+
 COMMENT =		python interface to subversion
 
 MODPY_EGG_VERSION =	1.7.8
