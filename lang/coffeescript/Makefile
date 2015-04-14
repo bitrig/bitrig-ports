@@ -16,6 +16,10 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		lang/node
 
+# XXX: These two lines can be removed when we update tar(1).
+BUILD_DEPENDS =                archivers/gtar
+TAR =                  ${LOCALBASE}/bin/gtar
+
 CONFIGURE_STYLE =	npm
 
 NO_TEST =		Yes
