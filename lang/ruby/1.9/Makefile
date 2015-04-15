@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.50 2015/02/17 17:18:21 jeremy Exp $
+# $OpenBSD: Makefile,v 1.51 2015/04/15 21:58:16 jeremy Exp $
 
 BROKEN-alpha =		miniruby abort trap when generating rdoc
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.35 2015/02/16 22:57:09 naddy Exp $
+# $OpenBSD: Makefile,v 1.36 2015/04/15 21:58:16 jeremy Exp $
 
 BROKEN= 		needs work on bitrig
 
@@ -26,7 +26,7 @@ MODULES=		converters/libiconv
 MODULES+=		gcc4
 MODGCC4_ARCHS=		*
 MODGCC4_LANGS=		c
-REVISION-main=		3
+REVISION-main=		4
 REVISION-ri_docs=	0
 REVISION-iconv=		0
 REVISION-gdbm=		0
