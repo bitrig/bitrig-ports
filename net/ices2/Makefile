@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/04/15 10:13:21 jasper Exp $
+# $OpenBSD: Makefile,v 1.22 2015/04/16 11:50:48 jasper Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -20,7 +20,8 @@ WANTLIB += xml2 z
 MODULES=		converters/libiconv
 
 # Needs AC_PROG_LIBTOOL
-BUILD_DEPENDS += 	devel/libtool
+BUILD_DEPENDS += 	devel/libtool \
+			${MODGNU_AUTOMAKE_DEPENDS}
 
 LIB_DEPENDS=		audio/speex \
 			net/libshout \
