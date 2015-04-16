@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.35 2015/02/16 22:57:09 naddy Exp $
 
+BROKEN= 		needs work on bitrig
+
 COMMENT-main=		object oriented script language with threads
 COMMENT-iconv=		libiconv interface for ruby
 COMMENT-gdbm=		gdbm interface for ruby

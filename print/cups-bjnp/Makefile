@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.2 2014/10/12 06:36:20 ajacoutot Exp $
 
+BROKEN = 	needs work on bitrig
+
 COMMENT =	BJNP protocol backend for CUPS
 DISTNAME =	cups-bjnp-2.0
 CATEGORIES =	print

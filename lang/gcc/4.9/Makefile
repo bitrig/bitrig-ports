@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.12 2015/02/17 12:04:44 tobiasu Exp $
 
+BROKEN = 	needs work on bitrig
+
 BROKEN-arm = needs binutils-2.17
 
 ONLY_FOR_ARCHS = amd64 arm hppa i386 powerpc sparc sparc64

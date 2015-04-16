@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2015/03/18 19:10:35 landry Exp $
 
+BROKEN = 		needs work on bitrig
+
 # XXX remember to bump www/conkeror because it has a symlink pointing to lib/xulrunner-${MOZILLA_VER}
 MOZILLA_VERSION =	24.8.0esr
 MOZILLA_BRANCH =	esr24
