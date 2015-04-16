@@ -18,12 +18,12 @@ HOMEPAGE=	http://www.quagga.net/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c curses execinfo m readline termcap
-LIB_DEPENDS=	devel/readline
 
 LOCALSTATEDIR=	${BASELOCALSTATEDIR}/quagga
 
 BUILD_DEPENDS=	lang/gawk
-LIB_DEPENDS=	devel/libexecinfo
+LIB_DEPENDS=	devel/libexecinfo \
+		devel/readline
 
 USE_GMAKE=	Yes
 SYSCONFDIR=	${BASESYSCONFDIR}/quagga

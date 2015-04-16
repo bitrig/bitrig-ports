@@ -45,7 +45,7 @@ post-install:
 	gunzip ${PREFIX}/info/opencm.info.gz
 
 
-LIB_DEPENDS=		devel/boehm-gc
+LIB_DEPENDS+=		devel/boehm-gc
 
 WRKSRC=			${WRKDIST}/base
 

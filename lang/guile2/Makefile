@@ -31,7 +31,8 @@ LIB_DEPENDS=		converters/libunistring \
 			devel/boehm-gc \
 			devel/gmp \
 			devel/libffi \
-			devel/libtool,-ltdl
+			devel/libtool,-ltdl \
+			devel/readline
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
