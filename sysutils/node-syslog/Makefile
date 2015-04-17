@@ -1,14 +1,12 @@
-# $OpenBSD: Makefile,v 1.13 2015/02/03 15:51:52 abieber Exp $
+# $OpenBSD: Makefile,v 1.14 2015/04/17 10:36:26 jasper Exp $
 
 BROKEN = 	needs work on bitrig.
 
 COMMENT =	module to support sending messages to syslog
 
-NPM_VERSION =	1.1.7
+NPM_VERSION =	1.2.0
 NPM_NAME =	node-syslog
 CATEGORIES =	sysutils
-
-REVISION = 	7
 
 HOMEPAGE =	https://github.com/schamane/node-syslog
 
