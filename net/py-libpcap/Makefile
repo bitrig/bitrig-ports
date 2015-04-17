@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2013/03/11 11:35:55 espie Exp $
+# $OpenBSD: Makefile,v 1.29 2015/04/17 16:15:59 bluhm Exp $
 
 SHARED_ONLY=	Yes
 
@@ -13,7 +13,7 @@ HOMEPAGE=	http://pylibpcap.sourceforge.net/
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		pcap
+WANTLIB=		${MODPY_WANTLIB} m pcap pthread util
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pylibpcap/}
 
