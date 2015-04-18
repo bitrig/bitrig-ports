@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2013/03/11 11:37:53 espie Exp $
+# $OpenBSD: Makefile,v 1.28 2015/04/18 20:35:25 schwarze Exp $
 
 COMMENT=	X11 version of Rob Pike's editor, sam
 
@@ -14,8 +14,6 @@ EXTRACT_CASES=	*.shar.gz) ${GZIP_CMD} -dc ${FULLDISTDIR}/$$archive | /bin/sh;;
 
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		X11 Xt c pthread-stubs xcb
-
-USE_GROFF =	Yes
 
 WRKDIST=	${WRKDIR}
 
