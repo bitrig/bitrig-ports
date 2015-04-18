@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.41 2015/04/04 09:21:02 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.42 2015/04/18 13:35:27 schwarze Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -30,7 +30,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES=	devel/gettext gcc4
 MODGCC4_ARCHS=	*
 MODGCC4_LANGS=	java
-USE_GROFF =	Yes
 
 BUILD_DEPENDS=	archivers/zip \
 		lang/antlr3>=3.4p0

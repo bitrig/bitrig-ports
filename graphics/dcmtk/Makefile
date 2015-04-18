@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2014/04/24 20:33:43 jca Exp $
+# $OpenBSD: Makefile,v 1.16 2015/04/18 13:35:27 schwarze Exp $
 
 BROKEN= 		needs work on bitrig
 
@@ -40,9 +40,6 @@ FAKE_FLAGS=		DESTDIR=${WRKINST} \
 			etcdir=${WRKINST}${PREFIX}/share/examples/dcmtk \
 			datadir=${WRKINST}${PREFIX}/share/dcmtk \
 			docdir=${WRKINST}${PREFIX}/share/doc/dcmtk
-USE_GROFF =		Yes
-
-
 NO_TEST=		Yes
 
 .include <bsd.port.mk>

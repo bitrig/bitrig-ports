@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.117 2015/04/09 20:59:31 sthen Exp $
+# $OpenBSD: Makefile,v 1.118 2015/04/18 13:35:27 schwarze Exp $
 
 SHARED_ONLY=	Yes
 
@@ -66,7 +66,6 @@ USE_GMAKE=	Yes
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/
 # Uses GNU libtool -weak feature
 USE_LIBTOOL=	gnu
-USE_GROFF=	Yes
 CONFIGURE_STYLE= autoconf
 AUTOCONF_VERSION= 2.69
 CONFIGURE_ARGS+=--disable-aalib \
