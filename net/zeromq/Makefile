@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.14 2015/01/25 09:36:55 ajacoutot Exp $
 
-BROKEN = 		needs work on bitrig
-
 # Note: use 'ulimit -n 1024' for regress tests
 
 SHARED_ONLY =		Yes

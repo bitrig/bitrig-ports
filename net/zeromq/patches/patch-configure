@@ -1,0 +1,13 @@
+Submitted upstream: https://github.com/zeromq/libzmq/pull/1375
+
+--- configure.orig	Sat Apr 18 18:48:38 2015
++++ configure	Sat Apr 18 18:49:24 2015
+@@ -17199,7 +17199,7 @@ $as_echo "#define ZMQ_FORCE_MUTEXES 1" >>confdefs.h
+ 
+         fi
+         ;;
+-    *openbsd*)
++    *openbsd*|*bitrig*)
+         # Define on OpenBSD to enable all library features
+         CPPFLAGS="-D_BSD_SOURCE $CPPFLAGS"
+ 
