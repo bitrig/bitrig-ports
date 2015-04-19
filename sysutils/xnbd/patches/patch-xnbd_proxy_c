@@ -1,0 +1,91 @@
+--- xnbd_proxy.c.orig	Sun Apr 19 14:18:01 2015
++++ xnbd_proxy.c	Sun Apr 19 14:18:48 2015
+@@ -365,7 +365,7 @@ void proxy_initialize(struct xnbd_info *xnbd, struct x
+ 	/* set up a bitmap and a cache disk */
+ 	proxy->cbitmap = bitmap_open_file(xnbd->proxy_bmpath, xnbd->nblocks, &proxy->cbitmaplen, 0, xnbd->proxy_clear_bitmap ? 1 : 0);
+ 
+-	int cachefd = open(xnbd->proxy_diskpath, O_RDWR | O_CREAT | O_NOATIME, S_IRUSR | S_IWUSR);
++	int cachefd = open(xnbd->proxy_diskpath, O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
+ 	if (cachefd < 0)
+ 		err("open");
+ 
+@@ -538,17 +538,17 @@ int main_loop(struct xnbd_proxy *proxy, int unix_liste
+ 	nfds_t neventfds = 0;
+ 
+ 	eventfds[neventfds].fd = unix_listen_fd;
+-	eventfds[neventfds].events = POLLRDNORM | POLLRDHUP;
++	eventfds[neventfds].events = POLLRDNORM;
+ 	neventfds += 1;
+ 
+ 	eventfds[neventfds].fd = master_fd;
+-	eventfds[neventfds].events = POLLRDNORM | POLLRDHUP;
++	eventfds[neventfds].events = POLLRDNORM;
+ 	neventfds += 1;
+ 
+ 	for (GList *list = g_list_first(conn_list); list != NULL; list = g_list_next(list)) {
+ 		struct proxy_session *ps = (struct proxy_session *) list->data;
+ 		eventfds[neventfds].fd = ps->pipe_read_fd;
+-		eventfds[neventfds].events = POLLRDNORM | POLLRDHUP;
++		eventfds[neventfds].events = POLLRDNORM;
+ 		neventfds += 1;
+ 	}
+ 
+@@ -563,7 +563,7 @@ int main_loop(struct xnbd_proxy *proxy, int unix_liste
+ 	}
+ 
+ 
+-	if (eventfds[0].revents & (POLLRDNORM | POLLRDHUP)) {
++	if (eventfds[0].revents & (POLLRDNORM)) {
+ 		/* register_fd arrived */
+ 		struct sockaddr_un cliaddr;
+ 		socklen_t cliaddr_len = sizeof(cliaddr);
+@@ -680,7 +680,7 @@ int main_loop(struct xnbd_proxy *proxy, int unix_liste
+ 			close(wrk_fd);
+ 	}
+ 
+-	if (eventfds[1].revents & (POLLRDNORM | POLLRDHUP)) {
++	if (eventfds[1].revents & (POLLRDNORM)) {
+ 		info("mainloop exit is requested");
+ 
+ 		/* The master server requested the exit of the proxy server.
+@@ -709,7 +709,7 @@ int main_loop(struct xnbd_proxy *proxy, int unix_liste
+ 	}
+ 
+ 	for (nfds_t i = 2; i < neventfds; i++) {
+-		if (eventfds[i].revents & (POLLRDNORM | POLLRDHUP)) {
++		if (eventfds[i].revents & (POLLRDNORM)) {
+ 			int pipe_read_fd  = eventfds[i].fd;
+ 			struct proxy_session *ps = get_session_from_read_fd(conn_list, pipe_read_fd);
+ 			g_assert(ps);
+@@ -903,11 +903,11 @@ int xnbd_proxy_session_server(struct xnbd_session *ses
+ 	nfds_t neventfds = 0;
+ 
+ 	eventfds[neventfds].fd = unix_fd;
+-	eventfds[neventfds].events = POLLRDNORM | POLLRDHUP;
++	eventfds[neventfds].events = POLLRDNORM;
+ 	neventfds += 1;
+ 
+ 	eventfds[neventfds].fd = ses->pipe_worker_fd;
+-	eventfds[neventfds].events = POLLRDNORM | POLLRDHUP;
++	eventfds[neventfds].events = POLLRDNORM;
+ 	neventfds += 1;
+ 
+ 	block_all_signals();
+@@ -921,7 +921,7 @@ int xnbd_proxy_session_server(struct xnbd_session *ses
+ 				err("polling, %s, (%d)", strerror(errno), errno);
+ 		}
+ 
+-		if (eventfds[0].revents & (POLLRDNORM | POLLRDHUP)) {
++		if (eventfds[0].revents & (POLLRDNORM)) {
+ 			char buf[1];
+ 			ret = net_recv_all_or_error(eventfds[0].fd, buf, 1);
+ 			if (ret < 0)
+@@ -931,7 +931,7 @@ int xnbd_proxy_session_server(struct xnbd_session *ses
+ 
+ 			break;
+ 
+-		} else if (eventfds[1].revents & (POLLRDNORM | POLLRDHUP)) {
++		} else if (eventfds[1].revents & (POLLRDNORM)) {
+ 			char buf[1];
+ 			ret = net_recv_all_or_error(eventfds[1].fd, buf, 1);
+ 			if (ret < 0) {

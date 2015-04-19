@@ -1,0 +1,33 @@
+--- Makefile.in.orig	Sun Apr 19 23:03:17 2015
++++ Makefile.in	Sun Apr 19 23:04:49 2015
+@@ -55,8 +55,7 @@ POST_UNINSTALL = :
+ build_triplet = @build@
+ host_triplet = @host@
+ sbin_PROGRAMS = xnbd-server$(EXEEXT) xnbd-bgctl$(EXEEXT) \
+-	xnbd-client$(EXEEXT) xnbd-watchdog$(EXEEXT) \
+-	xnbd-wrapper$(EXEEXT)
++	xnbd-client$(EXEEXT) xnbd-watchdog$(EXEEXT)
+ noinst_PROGRAMS = xnbd-cachestatdump$(EXEEXT) xnbd-tester$(EXEEXT)
+ subdir = .
+ DIST_COMMON = README $(am__configure_deps) $(dist_doc_DATA) \
+@@ -359,8 +358,7 @@ lib_LTLIBRARIES = \
+ 	libxnbd_internal.la
+ 
+ dist_sbin_SCRIPTS = \
+-	xnbd-register.py \
+-	xnbd-wrapper-ctl.py
++	xnbd-register.py
+ 
+ libxnbd_internal_la_SOURCES = \
+ 	xnbd.h \
+@@ -1160,10 +1158,8 @@ uninstall-am: uninstall-dist_docDATA uninstall-dist_sb
+ 
+ install-exec-hook:
+ 	mv $(DESTDIR)$(sbindir)/xnbd-register{.py,}
+-	mv $(DESTDIR)$(sbindir)/xnbd-wrapper-ctl{.py,}
+ 
+ uninstall-hook:
+-	rm $(DESTDIR)$(sbindir)/xnbd-wrapper-ctl
+ 	rm $(DESTDIR)$(sbindir)/xnbd-register
+ 
+ # Target added for backwards-compatibility with previous Makefile

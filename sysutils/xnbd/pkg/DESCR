@@ -1,0 +1,2 @@
+xNBD is yet another NBD (Network Block Device) server program,
+which works with the NBD client driver of Linux Kernel.

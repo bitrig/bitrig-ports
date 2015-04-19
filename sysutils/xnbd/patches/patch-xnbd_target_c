@@ -1,0 +1,14 @@
+--- xnbd_target.c.orig	Sun Apr 19 14:19:09 2015
++++ xnbd_target.c	Sun Apr 19 14:19:18 2015
+@@ -117,9 +117,9 @@ void xnbd_target_open_disk(char *diskpath, struct xnbd
+ 
+ 
+ 	if (xnbd->readonly)
+-		diskfd = open(diskpath, O_RDONLY | O_NOATIME);
++		diskfd = open(diskpath, O_RDONLY);
+ 	else
+-		diskfd = open(diskpath, O_RDWR | O_NOATIME);
++		diskfd = open(diskpath, O_RDWR);
+ 	if (diskfd < 0) {
+ 		if (errno == EOVERFLOW)
+ 			warn("enable large file support!");

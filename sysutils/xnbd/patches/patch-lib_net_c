@@ -1,0 +1,23 @@
+--- lib/net.c.orig	Wed Jan 29 10:40:44 2014
++++ lib/net.c	Sun Apr 19 23:06:15 2015
+@@ -43,10 +43,6 @@ static char *get_nameinfo_string(struct addrinfo *ai)
+ 		type = "TCP";
+ 	else if (ai->ai_protocol == IPPROTO_UDP)
+ 		type = "UDP";
+-	else if (ai->ai_protocol == IPPROTO_SCTP)
+-		type = "SCTP";
+-	else if (ai->ai_protocol == IPPROTO_DCCP)
+-		type = "DCCP";
+ 
+ 	if (ai->ai_family == AF_INET)
+ 		return g_strdup_printf("%s:%s,%s", hbuf, sbuf, type);
+@@ -122,8 +118,7 @@ unsigned int net_create_server_sockets(struct addrinfo
+ 			g_error("bind(%s) failed, %m", name);
+ 
+ 
+-		if ((ai->ai_socktype == SOCK_STREAM && ai->ai_protocol == IPPROTO_TCP) ||
+-				(ai->ai_socktype == SOCK_DCCP && ai->ai_protocol == IPPROTO_DCCP)) {
++		if (ai->ai_socktype == SOCK_STREAM && ai->ai_protocol == IPPROTO_TCP) {
+ 			ret = listen(sockfd, SOMAXCONN);
+ 			if (ret < 0)
+ 				g_error("listen(%s) failed, %m", name);

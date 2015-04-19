@@ -1,0 +1,11 @@
+--- xnbd_watchdog.c.orig	Sun Apr 19 14:21:51 2015
++++ xnbd_watchdog.c	Sun Apr 19 14:22:03 2015
+@@ -112,7 +112,7 @@ static int watchdog_main(const char *devpath, int noti
+ 	if (ret)
+ 		err("posix_memalign, ret %d", ret);
+ 
+-	int fd = open(devpath, O_RDONLY | O_DIRECT);
++	int fd = open(devpath, O_RDONLY | O_SYNC);
+ 	if (fd < 0)
+ 		err("open %m");
+ 

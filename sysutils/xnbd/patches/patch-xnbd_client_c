@@ -1,0 +1,69 @@
+--- xnbd_client.c.orig	Wed Jan 29 10:40:44 2014
++++ xnbd_client.c	Mon May 11 15:13:28 2015
+@@ -24,7 +24,6 @@
+ #include "xnbd.h"
+ #include <sys/ioctl.h>
+ #include <sys/reboot.h>
+-#include <linux/fs.h>           /* for BLKRRPART */
+ #include <assert.h>
+ 
+ 
+@@ -243,16 +242,6 @@ static void xnbd_disconnect(const char *devpath)
+ {
+ 	int ret;
+ 
+-	pid_t nbd_pid = -1;
+-	if (get_nbd_pid(devpath, &nbd_pid) != XNBD_PID_FOUND)
+-		err("%s is not connected", devpath);
+-
+-
+-	ret = kill(nbd_pid, SIGUSR1);
+-	if (ret < 0)
+-		warn("%s is connected ?", devpath);
+-
+-
+ 	int nbd = open(devpath, O_RDWR);
+ 	if (nbd < 0)
+ 		err("open %s, ret %d, %m", devpath, nbd);
+@@ -438,20 +427,9 @@ static int xnbd_setup_client(const char *devpath, unsi
+ 			if (sigismember(&sigs, SIGCHLD))
+ 				err("xnbd-client (child) was terminated due to an internal error");
+ 
+-			pid_t nbd_pid = -1;
+-			if (get_nbd_pid(devpath, &nbd_pid) != XNBD_PID_FOUND) {
+-				info("wait for a moment ...");
+-				sleep(1);
+-			} else
+-				break;
++			break;
+ 		}
+ 
+-		/*
+-		 * re-read partition table.
+-		 * this may fail if the kernel does not support it.
+-		 **/
+-		ioctl(nbd, BLKRRPART);
+-
+ 		close(sockfd);
+ 		close(nbd);
+ 
+@@ -739,18 +717,7 @@ int main(int argc, char *argv[]) {
+ 			if (argc - optind != 0)
+ 				show_help_and_exit("command line error");
+ 
+-			pid_t nbd_pid = -1;
+-			const int device_status = get_nbd_pid(devpath, &nbd_pid);
+-			switch (device_status) {
+-				case XNBD_PID_FOUND:
+-					printf("%d\n", nbd_pid);
+-					exit(EXIT_SUCCESS);
+-				case XNBD_PID_DEVICE_UNUSED:
+-					info("%s is not used", devpath);
+-					exit(EXIT_XNBD_DEVICE_UNUSED);
+-				default:
+-					exit(EXIT_FAILURE);
+-			}
++			exit(EXIT_FAILURE);
+ 			break;
+ 
+ 		case cmd_disconnect:

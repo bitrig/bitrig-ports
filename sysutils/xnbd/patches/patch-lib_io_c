@@ -1,0 +1,29 @@
+--- lib/io.c.orig	Sun Apr 19 14:14:38 2015
++++ lib/io.c	Sun Apr 19 14:14:56 2015
+@@ -287,9 +287,9 @@ int wait_until_readable(int fd, int unblock_fd)
+ 
+ 	for (;;) {
+ 		eventfds[0].fd = fd;
+-		eventfds[0].events = POLLRDNORM | POLLRDHUP;
++		eventfds[0].events = POLLRDNORM;
+ 		eventfds[1].fd = unblock_fd;
+-		eventfds[1].events = POLLRDNORM | POLLRDHUP;
++		eventfds[1].events = POLLRDNORM;
+ 
+ 		int nready = poll(eventfds, 2, -1);
+ 		if (nready == -1) {
+@@ -300,12 +300,12 @@ int wait_until_readable(int fd, int unblock_fd)
+ 				err("polling, %s, (%d)", strerror(errno), errno);
+ 		}
+ 
+-		if (eventfds[1].revents & (POLLRDNORM | POLLRDHUP)) {
++		if (eventfds[1].revents & (POLLRDNORM)) {
+ 			info("notified");
+ 			return -1;
+ 		}
+ 
+-		if (eventfds[0].revents & (POLLRDNORM | POLLRDHUP)) {
++		if (eventfds[0].revents & (POLLRDNORM)) {
+ 			/* request arrived */
+ 			return 0;
+ 		}
