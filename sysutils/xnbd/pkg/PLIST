@@ -1,0 +1,23 @@
+lib/libxnbd_internal.a
+lib/libxnbd_internal.la
+@lib lib/libxnbd_internal.so.${LIBxnbd_internal_VERSION}
+@man man/man1/xnbd-bgctl.1
+@man man/man1/xnbd-client.1
+@man man/man1/xnbd-watchdog.1
+@man man/man8/xnbd-register.8
+@man man/man8/xnbd-server.8
+@bin sbin/xnbd-bgctl
+@bin sbin/xnbd-client
+sbin/xnbd-register
+@bin sbin/xnbd-server
+@bin sbin/xnbd-watchdog
+share/doc/xnbd/
+share/doc/xnbd/ChangeLog
+share/doc/xnbd/ChangeLog.html
+share/doc/xnbd/README
+share/doc/xnbd/docbook-xsl.css
+share/doc/xnbd/xnbd-bgctl.1.html
+share/doc/xnbd/xnbd-client.1.html
+share/doc/xnbd/xnbd-register.8.html
+share/doc/xnbd/xnbd-server.8.html
+share/doc/xnbd/xnbd-watchdog.1.html

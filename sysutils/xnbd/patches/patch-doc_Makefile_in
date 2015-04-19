@@ -1,0 +1,13 @@
+--- doc/Makefile.in.orig	Sun Apr 19 23:03:54 2015
++++ doc/Makefile.in	Sun Apr 19 23:04:00 2015
+@@ -245,9 +245,7 @@ dist_man1_MANS = \
+ 
+ dist_man8_MANS = \
+ 	xnbd-register.8 \
+-	xnbd-server.8 \
+-	xnbd-wrapper.8 \
+-	xnbd-wrapper-ctl.8
++	xnbd-server.8
+ 
+ _RAW_MANPAGES = $(dist_man1_MANS) $(dist_man8_MANS)
+ _MANPAGE_INPUT = $(patsubst %, %.txt, $(_RAW_MANPAGES))

@@ -1,0 +1,33 @@
+--- lib/bitmap.c.orig	Sun Apr 19 14:03:30 2015
++++ lib/bitmap.c	Sun Apr 19 22:50:17 2015
+@@ -72,21 +72,6 @@ unsigned long *bitmap_open_file(const char *bitmapfile
+ 	int open_flag = readonly ? O_RDONLY : (O_RDWR | O_CREAT);
+ 
+ 	{
+-		/* O_NOATIME will not give us visible performance improvement. Drop? */
+-		struct stat st;
+-		int ret = stat(bitmapfile, &st);
+-		if (ret < 0) {
+-			if (errno == ENOENT)
+-				open_flag |= O_NOATIME;
+-			else
+-				err("stat %s, %m", bitmapfile);
+-		} else {
+-			if (st.st_uid == geteuid())
+-				open_flag |= O_NOATIME;
+-		}
+-	}
+-
+-	{
+ 		int fd = open(bitmapfile, open_flag, S_IRUSR | S_IWUSR);
+ 		if (fd < 0)
+ 			err("bitmap open %s, %m", bitmapfile);
+@@ -154,7 +139,7 @@ unsigned long *bitmap_create(char *bitmapfile, unsigne
+ 	size_t buflen = sizeof(unsigned long) * narrays;
+ 
+ 
+-	fd = open(bitmapfile, O_RDWR | O_CREAT | O_NOATIME, S_IRUSR | S_IWUSR);
++	fd = open(bitmapfile, O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
+ 	if (fd < 0)
+ 		err("open bitmapfile");
+ 
