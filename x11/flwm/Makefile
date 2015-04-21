@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2014/01/01 20:46:29 naddy Exp $
+# $OpenBSD: Makefile,v 1.30 2015/04/21 18:13:09 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -22,7 +22,7 @@ LIB_DEPENDS=	x11/fltk
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		X11 Xext c m fltk
+WANTLIB += X11 Xext c fltk m pthread
 WANTLIB+=		c++ c++abi pthread
 
 NO_TEST=	Yes
