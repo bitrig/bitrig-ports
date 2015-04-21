@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/05/30 10:51:23 sthen Exp $
+# $OpenBSD: Makefile,v 1.23 2015/04/21 18:40:20 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -17,8 +17,10 @@ HOMEPAGE=	http://pysqlite.org/
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes
 
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += pthread sqlite>=8.6
+
 LIB_DEPENDS =	databases/sqlite
-WANTLIB +=	sqlite>=8.6 ${MODPY_WANTLIB}
 
 MODULES=	lang/python
 

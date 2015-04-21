@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/03/10 22:55:05 espie Exp $
+# $OpenBSD: Makefile,v 1.18 2015/04/21 18:40:20 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -14,7 +14,8 @@ HOMEPAGE=	http://cddb-py.sourceforge.net/
 # GPL 
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB = ${MODPY_WANTLIB}
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cddb-py/}
 # avoid possible conflict with the audio/p5-cddb distfile

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/04/03 06:57:56 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.12 2015/04/21 18:40:20 sthen Exp $
 
 COMMENT =		free karaoke player
 
@@ -13,12 +13,13 @@ HOMEPAGE =		http://kibosh.org/pykaraoke/
 # LGPL v2.1 or later
 PERMIT_PACKAGE_CDROM =	Yes
 
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += SDL pthread
+
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=pykaraoke/}
 EXTRACT_SUFX =		.zip
 
 MODULES =		lang/python
-
-WANTLIB +=		SDL ${MODPY_WANTLIB}
 
 BUILD_DEPENDS =		x11/py-wxPython	\
 			audio/py-mutagen>=1.9 \

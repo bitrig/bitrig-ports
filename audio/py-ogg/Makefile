@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/10 22:55:05 espie Exp $
+# $OpenBSD: Makefile,v 1.22 2015/04/21 18:40:20 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -14,11 +14,13 @@ HOMEPAGE=	http://ekyo.nerim.net/software/pyogg/
 # LGPL 
 PERMIT_PACKAGE_CDROM=	Yes
 
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += ogg pthread
+
 MASTER_SITES=	${HOMEPAGE}
 
 MODULES=	lang/python
 
-WANTLIB += ogg ${MODPY_WANTLIB}
 LIB_DEPENDS=	audio/libogg
 
 MODPY_ADJ_FILES =	test/oggtail.py

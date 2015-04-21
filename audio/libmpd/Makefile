@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/03/16 18:07:36 naddy Exp $
+# $OpenBSD: Makefile,v 1.21 2015/04/21 18:40:20 sthen Exp $
 
 COMMENT=		mpd client library
 
@@ -13,10 +13,11 @@ HOMEPAGE =		http://gmpclient.org/
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
+WANTLIB += glib-2.0 pcre pthread
+
 MASTER_SITES=		http://www.musicpd.org/download/libmpd/${VERSION}/
 
 LIB_DEPENDS=		devel/glib2
-WANTLIB=		glib-2.0 pcre
 
 CONFIGURE_STYLE=	gnu
 
