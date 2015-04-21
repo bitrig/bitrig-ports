@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.11 2015/03/16 18:07:57 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2015/04/21 18:53:16 sthen Exp $
 
 SHARED_LIBS +=	raptor2              0.0      # 0.0
 
 COMMENT=		RDF Parser Toolkit for Redland
 DISTNAME=		raptor2-2.0.8
 PKGNAME=		${DISTNAME:C/raptor2/raptor/}
-REVISION=		1
+REVISION=		2
 CATEGORIES=		textproc
 
 HOMEPAGE=		http://librdf.org/
@@ -15,7 +15,8 @@ MASTER_SITES=		http://download.librdf.org/source/
 # LGPL 2.1+, GPL 2+ or Apache 2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c crypto idn m ssl z curl>=12 xml2>=7 xslt>=1 yajl
+WANTLIB += c crypto curl>=12 idn lzma m pthread ssl xml2>=7 xslt>=1 yajl
+WANTLIB += z
 
 MODULES=		devel/gettext
 

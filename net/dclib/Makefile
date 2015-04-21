@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.18 2015/03/16 18:07:52 naddy Exp $
+# $OpenBSD: Makefile,v 1.19 2015/04/21 18:53:15 sthen Exp $
 
 COMMENT=	Library for direct-connect protocol
 
 DISTNAME=	dclib-0.3.7
-REVISION=	8
+REVISION=	9
 CATEGORIES=	net
 SHARED_LIBS=	dc	1.0
 
@@ -12,8 +12,8 @@ HOMEPAGE=	http://wxdcgui.sourceforge.net/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += crypto m ssl z bz2 xml2
-WANTLIB += c++ c++abi pthread
+WANTLIB += bz2 crypto lzma m pthread ssl xml2 z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://spacehopper.org/mirrors/berlios/dcgui/
 
