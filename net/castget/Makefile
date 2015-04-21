@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.15 2015/03/16 18:07:51 naddy Exp $
+# $OpenBSD: Makefile,v 1.16 2015/04/21 18:51:25 sthen Exp $
 
 COMMENT=		command-line podcast downloader
 
 DISTNAME=		castget-1.0.1
-REVISION=		4
+REVISION=		5
 SHARED_LIBS +=	castget              0.0      # .0.0
 CATEGORIES=		net
 
@@ -14,7 +14,7 @@ MASTER_SITES=          	${MASTER_SITE_SAVANNAH:=castget/}
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c crypto curl glib-2.0 id3 idn m pcre pthread ssl
+WANTLIB += c crypto curl glib-2.0 id3 idn lzma m pcre pthread ssl
 WANTLIB += xml2 z
 WANTLIB += c++ c++abi
 

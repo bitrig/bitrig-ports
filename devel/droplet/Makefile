@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2015/04/17 12:55:16 jasper Exp $
+# $OpenBSD: Makefile,v 1.9 2015/04/21 18:51:24 sthen Exp $
 
 SHARED_ONLY=		Yes
 BROKEN-hppa=		no atomic ops in json-c
@@ -17,7 +17,7 @@ SHARED_LIBS=		droplet		0.0 #0.0
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		crypto json-c m pthread ssl xml2 z
+WANTLIB += crypto json-c lzma m pthread ssl xml2 z
 
 MASTER_SITES=		http://www.sizeofvoid.org/pub/OpenBSD/distfiles/
 

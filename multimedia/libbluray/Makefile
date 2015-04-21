@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/21 08:46:33 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2015/04/21 18:51:25 sthen Exp $
 
 SHARED_ONLY =		Yes
 
@@ -8,6 +8,7 @@ V =			0.2.3
 DISTNAME =		libbluray-${V}
 REVISION =		0
 CATEGORIES =		multimedia
+REVISION =		0
 
 HOMEPAGE =		http://www.videolan.org/developers/libbluray.html
 
@@ -18,8 +19,9 @@ EXTRACT_SUFX =		.tar.bz2
 # LGPL v2.1
 PERMIT_PACKAGE_CDROM =	Yes
 
+WANTLIB += c lzma m pthread xml2 z
+
 SHARED_LIBS +=		bluray		1.0	# 3.0
-WANTLIB +=		c m pthread xml2 z
 
 MODULES =		converters/libiconv
 
