@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2013/10/11 23:49:31 naddy Exp $
+# $OpenBSD: Makefile,v 1.19 2015/04/21 18:33:49 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -7,16 +7,17 @@ COMMENT=	update LDAP entries with a text editor
 DISTNAME=	ldapvi-1.7
 CATEGORIES=	editors
 
-REVISION=	7
+REVISION=	8
 
 HOMEPAGE=	http://www.lichteblau.com/ldapvi.html
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=	http://www.lichteblau.com/download/
+WANTLIB += c crypto curses glib-2.0>=0.8 lber ldap popt pthread readline
+WANTLIB += ssl
 
-WANTLIB=	c curses crypto readline ssl
+MASTER_SITES=	http://www.lichteblau.com/download/
 
 MODULES=	devel/gettext
 BUILD_DEPENDS=	textproc/libxslt

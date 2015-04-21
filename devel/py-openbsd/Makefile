@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/01/28 13:31:18 sthen Exp $
+# $OpenBSD: Makefile,v 1.17 2015/04/21 18:33:48 sthen Exp $
 
 COMMENT=	specific Python bindings for OpenBSD
 
@@ -12,8 +12,9 @@ HOMEPAGE=	http://dev.nullcube.com/
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		kvm pcap
-WANTLIB+=		${MODPY_WANTLIB}
+
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += kvm pcap pthread
 
 MASTER_SITES=	http://spacehopper.org/mirrors/
 EXTRACT_SUFX=	.tgz

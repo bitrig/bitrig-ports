@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/03/16 18:07:43 naddy Exp $
+# $OpenBSD: Makefile,v 1.7 2015/04/21 18:33:48 sthen Exp $
 
 COMMENT=	logging for c library
 DISTNAME=	log4c-1.2.1
@@ -12,8 +12,7 @@ HOMEPAGE=	http://log4c.sourceforge.net/
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += expat
-
+WANTLIB += expat pthread
 
 CONFIGURE_STYLE=gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config

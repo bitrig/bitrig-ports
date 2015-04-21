@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2015/04/02 14:21:16 jasper Exp $
+# $OpenBSD: Makefile,v 1.17 2015/04/21 18:33:49 sthen Exp $
 
 COMMENT=	object interface infrastructure from Zope 3
 
@@ -14,13 +14,15 @@ HOMEPAGE=	http://pypi.python.org/pypi/zope.interface
 # Zope Public License
 PERMIT_PACKAGE_CDROM=	Yes
 
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += pthread
+
 MODPY_PI =	Yes
 
 MODULES=	lang/python
 
 MODPY_SETUPTOOLS=	Yes
 
-WANTLIB +=	${MODPY_WANTLIB}
 
 do-test: install
 	for f in `ls ${WRKSRC}/src/zope/interface/tests/test_*.py`; do \

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.124 2015/03/26 07:10:02 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.125 2015/04/21 18:33:48 sthen Exp $
 
 DPB_PROPERTIES =parallel
 
@@ -11,6 +11,7 @@ COMMENT =	portable build system
 
 VER =		3.2.1
 DISTNAME =	cmake-${VER}
+REVISION =	0
 
 CATEGORIES =	devel
 
@@ -21,9 +22,8 @@ MASTER_SITES =	${HOMEPAGE}files/v${VER:R}/
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		archive c curl expat form jsoncpp \
-			m ncurses z
-WANTLIB +=		c++ c++abi pthread
+WANTLIB += archive c curl expat form jsoncpp m ncurses pthread z
+WANTLIB +=		c++ c++abi
 
 # XXX: CMake's built-in ELF parser is broken on arm
 # XXX: Ninja is broken on m88k

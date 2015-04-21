@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2014/08/30 21:54:08 jasper Exp $
+# $OpenBSD: Makefile,v 1.22 2015/04/21 18:33:48 sthen Exp $
 
 COMMENT=		protocol definition, declaration and adaptation
 
@@ -16,6 +16,9 @@ HOMEPAGE=		http://peak.telecommunity.com/PyProtocols.html
 # PSF/ZPL
 PERMIT_PACKAGE_CDROM=	Yes
 
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += pthread
+
 DISTFILES=		PyProtocols-${VERSION}a0dev_r${REV}${EXTRACT_SUFX}
 
 MODULES=		lang/python
@@ -23,8 +26,6 @@ RUN_DEPENDS=		devel/py-decoratortools
 TEST_DEPENDS=		devel/py-decoratortools
 
 MODPY_SETUPTOOLS=	Yes
-
-WANTLIB +=		${MODPY_WANTLIB}
 
 # make regress happy after fake
 post-install:

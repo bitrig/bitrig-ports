@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2015/04/02 14:21:15 jasper Exp $
+# $OpenBSD: Makefile,v 1.4 2015/04/21 18:33:48 sthen Exp $
 
 COMMENT =		guppy programming environment
 
@@ -14,7 +14,8 @@ HOMEPAGE =		http://guppy-pe.sourceforge.net/
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		${MODPY_WANTLIB}
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += pthread
 
 MODPY_PI =		Yes
 

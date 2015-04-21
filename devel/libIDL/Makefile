@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.40 2015/03/16 18:07:41 naddy Exp $
+# $OpenBSD: Makefile,v 1.41 2015/04/21 18:33:48 sthen Exp $
 
 COMMENT=		IDL parsing library
 
@@ -13,12 +13,13 @@ CATEGORIES=		devel
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
+WANTLIB += glib-2.0 pcre pthread
+
 EXTRACT_SUFX=		.tar.bz2
 
 MODULES=		devel/gettext \
 			x11/gnome
 
-WANTLIB=		pcre glib-2.0
 LIB_DEPENDS=		devel/glib2
 
 

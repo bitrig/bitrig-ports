@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/04/02 14:21:15 jasper Exp $
+# $OpenBSD: Makefile,v 1.21 2015/04/21 18:33:48 sthen Exp $
 
 COMMENT =		JSON encoder/decoder
 
@@ -14,12 +14,13 @@ HOMEPAGE =		http://undefined.org/python/\#simplejson
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += pthread
+
 MODPY_PI =		Yes
 
 MODULES =		lang/python
 TEST_DEPENDS =	devel/py-nose
-
-WANTLIB +=		${MODPY_WANTLIB}
 
 do-test:
 	cd ${WRKSRC} && ${LOCALBASE}/bin/nosetests
