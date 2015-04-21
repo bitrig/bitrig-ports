@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/03/16 18:07:53 naddy Exp $
+# $OpenBSD: Makefile,v 1.16 2015/04/21 18:24:23 sthen Exp $
 
 COMMENT=	implementation of Lotus Sametime Community Client protocol
 
@@ -12,7 +12,7 @@ HOMEPAGE=	http://meanwhile.sourceforge.net/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	m pcre glib-2.0>=800
+WANTLIB += glib-2.0>=800 m pcre pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=meanwhile/}
 

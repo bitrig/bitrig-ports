@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2013/03/21 08:45:19 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.24 2015/04/21 18:24:22 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -14,7 +14,7 @@ CATEGORIES=	graphics
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += SDL m smpeg sndio usbhid
+WANTLIB += SDL m pthread smpeg sndio usbhid
 
 MASTER_SITES=	ftp://ftp.sunet.se/pub/multimedia/xmms/plugins/smpeg-xmms/
 

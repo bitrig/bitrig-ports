@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/07/12 17:51:25 pascal Exp $
+# $OpenBSD: Makefile,v 1.11 2015/04/21 18:24:23 sthen Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -16,9 +16,11 @@ EXTRACT_SUFX =	.tar.bz2
 # GPLv3 with OpenSSL exemption
 PERMIT_PACKAGE_CDROM =		Yes
 
-MODULES =			devel/gettext
-WANTLIB =			idn m ssl crypto z
+WANTLIB += crypto idn m pthread ssl z
 WANTLIB +=			c++ c++abi pthread
+
+MODULES =			devel/gettext
+
 LIB_DEPENDS =			devel/libidn
 
 USE_GMAKE =			Yes

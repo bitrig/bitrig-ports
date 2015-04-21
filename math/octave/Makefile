@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.70 2015/03/16 18:07:50 naddy Exp $
+# $OpenBSD: Makefile,v 1.71 2015/04/21 18:24:22 sthen Exp $
 
 # vax:   no IEEE arithmetic
 # sparc: fPIC version of libgcc.a needed but not available
@@ -22,6 +22,10 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB=	c m ncurses readline z ${MODFORTRAN_WANTLIB} \
 		fftw3>=3 lapack>=3 blas>=1 amd umfpack pcre>=1 curl>=6
+
+WANTLIB += ${MODFORTRAN_WANTLIB}
+WANTLIB += amd blas>=1 c curl>=6 fftw3>=3 lapack>=3 m ncurses pcre>=1
+WANTLIB += pthread readline umfpack z
 WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES =	${MASTER_SITE_GNU:=octave/}

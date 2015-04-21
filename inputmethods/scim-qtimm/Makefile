@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2015/01/21 06:13:48 bentley Exp $
+# $OpenBSD: Makefile,v 1.14 2015/04/21 18:24:22 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -16,7 +16,7 @@ HOMEPAGE=	http://www.scim-im.org/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	X11 xcb scim-1.0 scim-x11utils-1.0 m
+WANTLIB += X11 m pthread scim-1.0 scim-x11utils-1.0 xcb
 WANTLIB +=	c++ c++abi pthread
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scim/}

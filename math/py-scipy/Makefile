@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2015/01/09 14:40:27 daniel Exp $
+# $OpenBSD: Makefile,v 1.23 2015/04/21 18:24:22 sthen Exp $
 
 BROKEN-sparc64 =	ICE in scipy/optimize/minpack/qrsolv.f:189
 BROKEN-hppa =		ICE in scipy/special/specfun/specfun.f:5151
@@ -11,13 +11,14 @@ DISTNAME=		scipy-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
 REVISION=		1
 CATEGORIES=		math devel
+REVISION=		0
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += amd arpack blas lapack m umfpack util
-WANTLIB += ${MODPY_WANTLIB} ${MODFORTRAN_WANTLIB}
-WANTLIB += c++ c++abi pthread
+WANTLIB += ${MODFORTRAN_WANTLIB} ${MODPY_WANTLIB}
+WANTLIB += amd arpack blas lapack m pthread umfpack util
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=scipy/}
 HOMEPAGE=		http://numeric.scipy.org/

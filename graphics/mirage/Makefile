@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/07/09 16:49:35 jasper Exp $
+# $OpenBSD: Makefile,v 1.9 2015/04/21 18:24:22 sthen Exp $
 
 COMMENT =	fast and simple GTK+ image viewer
 
@@ -11,7 +11,8 @@ CATEGORIES =	graphics
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=	X11 ${MODPY_WANTLIB}
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += X11 pthread
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=mirageiv.berlios/}
 
