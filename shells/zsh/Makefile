@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.71 2014/04/20 21:26:51 jasper Exp $
+# $OpenBSD: Makefile,v 1.72 2015/04/21 10:14:03 schwarze Exp $
 
 COMMENT=	Z shell, Bourne shell-compatible
 
@@ -32,7 +32,6 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED:S/shared/dynamic/} \
 		--enable-multibyte \
 		--enable-pcre \
 		--disable-gdbm
-USE_GROFF =	Yes
 
 SUBST_VARS=	V
 
