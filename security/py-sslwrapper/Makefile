@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2013/03/11 11:41:28 espie Exp $
+# $OpenBSD: Makefile,v 1.27 2015/04/21 18:19:27 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -14,7 +14,9 @@ HOMEPAGE=	http://www.sourceforge.net/projects/pow/
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		crypto ssl ${MODPY_WANTLIB}
+
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += crypto pthread ssl
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pow/}
 

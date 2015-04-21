@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 11:41:28 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2015/04/21 18:19:27 sthen Exp $
 
 SHARED_ONLY =		Yes
 
@@ -12,11 +12,11 @@ HOMEPAGE =		http://delta.affinix.com/qca/
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
 
+WANTLIB += crypto m pthread qca2 ssl
+WANTLIB += c++ c++abi pthread
+
 MASTER_SITES =		http://delta.affinix.com/download/qca/2.0/plugins/
 EXTRACT_SUFX =		.tar.bz2
-
-WANTLIB +=		crypto m qca2 ssl
-WANTLIB +=		c++ c++abi pthread
 
 MODULES =		x11/qt4
 LIB_DEPENDS =		security/qca2

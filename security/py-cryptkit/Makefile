@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2013/03/11 11:41:28 espie Exp $
+# $OpenBSD: Makefile,v 1.20 2015/04/21 18:19:27 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -15,9 +15,11 @@ HOMEPAGE=	http://sourceforge.net/projects/cryptkit/
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += pthread
+
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cryptkit/}
 
-WANTLIB=	${MODPY_WANTLIB}
 
 MODULES=	lang/python
 

@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.32 2015/01/20 20:43:37 sthen Exp $
+# $OpenBSD: Makefile,v 1.33 2015/04/21 18:19:27 sthen Exp $
 
 BROKEN= 		needs work on bitrig
 
 COMMENT=		GnuPG Made Easy
 
 DISTNAME=		gpgme-1.5.1
-REVISION=		0
+REVISION=		1
 CATEGORIES=		security devel
 
 SHARED_LIBS +=  gpgme                19.0     # 24.0

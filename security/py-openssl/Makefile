@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/04/02 14:21:17 jasper Exp $
+# $OpenBSD: Makefile,v 1.22 2015/04/21 18:19:27 sthen Exp $
 
 COMMENT=	Python interface to the OpenSSL library
 
@@ -13,7 +13,8 @@ HOMEPAGE=	https://launchpad.net/pyopenssl/
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	crypto ssl ${MODPY_WANTLIB}
+WANTLIB += ${MODPY_WANTLIB}
+WANTLIB += crypto pthread ssl
 
 MODPY_PI =	Yes
 
