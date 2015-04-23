@@ -2,7 +2,7 @@
 
 COMMENT=	audio/video converter and streamer
 
-V=		20150107
+V=		20150412
 DISTNAME=	ffmpeg-git-${V}
 PKGNAME=	ffmpeg-${V}
 REVISION=	0
