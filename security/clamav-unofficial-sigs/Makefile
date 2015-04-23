@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/09/09 22:09:58 sthen Exp $
+# $OpenBSD: Makefile,v 1.8 2015/04/23 08:23:54 sthen Exp $
 
 COMMENT =	fetch and update unofficial signatures for ClamAV
 
