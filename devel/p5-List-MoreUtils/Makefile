@@ -1,21 +1,20 @@
-# $OpenBSD: Makefile,v 1.16 2014/06/14 23:24:57 sthen Exp $
+# $OpenBSD: Makefile,v 1.17 2015/04/23 18:51:17 bluhm Exp $
 
 SHARED_ONLY =		Yes
 
-COMMENT =		perl5 extra list utilities
+COMMENT =		provide the stuff missing in List::Util
 
-DISTNAME =		List-MoreUtils-0.33
-REVISION =		2
+DISTNAME =		List-MoreUtils-0.410
 
 CATEGORIES =		devel
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c
+WANTLIB +=		c
 
 MODULES =		cpan
-TEST_DEPENDS =	devel/p5-Test-Pod-Coverage \
-			devel/p5-Test-Pod
+RUN_DEPENDS =		devel/p5-Exporter-Tiny
+TEST_DEPENDS =		devel/p5-Test-LeakTrace
 
 .include <bsd.port.mk>
