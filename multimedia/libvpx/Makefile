@@ -1,13 +1,11 @@
 # $OpenBSD: Makefile,v 1.19 2015/02/11 00:07:47 brad Exp $
 
-BROKEN= 	needs work on bitrig
-
 COMMENT=	Google VP8/VP9 video codec
 
 V=		1.3.0
 DISTNAME=	libvpx-v${V}
 PKGNAME=	libvpx-${V}
-REVISION=	2
+REVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	https://webm.googlecode.com/files/
 EXTRACT_SUFX=	.tar.bz2
