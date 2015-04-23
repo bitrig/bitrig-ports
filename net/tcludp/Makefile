@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/10/15 10:31:21 sebastia Exp $
+# $OpenBSD: Makefile,v 1.10 2015/04/23 09:06:30 schwarze Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -7,6 +7,7 @@ SHARED_ONLY =	Yes
 COMMENT =	Tcl UDP extension
 
 DISTNAME =	tcludp-1.0.11
+REVISION =	0
 CATEGORIES =	net
 HOMEPAGE =	http://sourceforge.net/projects/tcludp/
 
@@ -20,7 +21,6 @@ RUN_DEPENDS =	${MODTCL_RUN_DEPENDS}
 MAKE_FLAGS =	DTPLITE=:
 FAKE_FLAGS =	PKG_DIR=tcludp
 SEPARATE_BUILD =Yes
-USE_GROFF =	Yes
 CONFIGURE_STYLE=gnu
 
 CONFIGURE_ARGS+=${CONFIGURE_SHARED} \
