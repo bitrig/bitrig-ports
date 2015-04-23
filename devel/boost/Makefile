@@ -58,6 +58,11 @@ MODPY_RUNDEP=	No
 BUILD_DEPENDS+=	lang/python/${MODPY_DEFAULT_VERSION_3}
 LIB_DEPENDS=	archivers/bzip2
 
+.if ${MACHINE_ARCH} == "arm"
+CFLAGS+=	-O0
+CXXFLAGS+=	-O0
+.endif
+
 MAKE_ENV=	GCC="${CC}" GXX="${CXX}"
 
 BJAM_CONFIG=	-sICONV_PATH=${LOCALBASE} \
