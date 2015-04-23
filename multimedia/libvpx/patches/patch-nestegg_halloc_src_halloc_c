@@ -1,0 +1,11 @@
+diff -urpN nestegg/halloc/src/halloc.c nestegg/halloc/src/halloc.c
+--- nestegg/halloc/src/halloc.c	Fri Jan 10 14:12:40 2014
++++ nestegg/halloc/src/halloc.c	Wed Apr 22 18:33:59 2015
+@@ -16,7 +16,6 @@
+ #include <string.h>  /* memset & co */
+ 
+ #include "../halloc.h"
+-#include "align.h"
+ #include "hlist.h"
+ 
+ /*
