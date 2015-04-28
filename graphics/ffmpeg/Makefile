@@ -1,24 +1,23 @@
-# $OpenBSD: Makefile,v 1.111 2015/02/17 01:28:52 brad Exp $
+# $OpenBSD: Makefile,v 1.112 2015/04/28 06:32:47 ajacoutot Exp $
 
 COMMENT=	audio/video converter and streamer
 
-V=		20150107
+V=		20150412
 DISTNAME=	ffmpeg-git-${V}
 PKGNAME=	ffmpeg-${V}
-REVISION=	0
 CATEGORIES=	graphics multimedia
 MASTER_SITES=	http://comstyle.com/source/
 EXTRACT_SUFX=	.tar.xz
 
-SHARED_LIBS=	avcodec		21.1 \
-		avdevice	9.0 \
-		avfilter	7.0 \
-		avformat	19.1 \
+SHARED_LIBS=	avcodec		22.0 \
+		avdevice	10.0 \
+		avfilter	7.1 \
+		avformat	19.2 \
 		avresample	1.0 \
-		avutil		12.1 \
-		postproc	16.0 \
+		avutil		12.2 \
+		postproc	16.1 \
 		swresample	1.1 \
-		swscale		6.0
+		swscale		6.1
 
 HOMEPAGE=	http://ffmpeg.org/
 
@@ -26,9 +25,9 @@ HOMEPAGE=	http://ffmpeg.org/
 PERMIT_PACKAGE_CDROM=	patents
 PERMIT_PACKAGE_FTP=	Yes
 
-WANTLIB=	SDL X11 Xext Xfixes Xv bz2 c crypto gsm m mp3lame opus pthread \
-		schroedinger-1.0 sndio speex ssl theoradec theoraenc vorbis \
-		vorbisenc vpx>=5 x264 xvidcore z
+WANTLIB=	SDL X11 Xext Xv bz2 c crypto gsm m mp3lame opus pthread \
+		sndio speex ssl vorbis vorbisenc vpx>=5 x264 xcb xcb-shape \
+		xcb-shm xcb-xfixes xvidcore z \
 
 BUILD_DEPENDS=	textproc/texi2html
 .if ${MACHINE_ARCH} == "amd64"
@@ -42,14 +41,12 @@ LIB_DEPENDS=	archivers/bzip2 \
 		audio/speex \
 		audio/gsm \
 		devel/sdl \
-		multimedia/libtheora \
 		multimedia/libvpx>=1.3.0 \
-		multimedia/schroedinger \
 		multimedia/x264 \
 		multimedia/xvidcore
 
 # inter-library dependencies for the current configuration
-LIBavdevice_EXTRALIBS=-L${X11BASE}/lib -lX11 -lXext -lXfixes -lXv -lsndio
+LIBavdevice_EXTRALIBS=-L${X11BASE}/lib -lX11 -lXext -lXv -lxcb-render -lxcb-shape -lxcb-shm -lxcb-xfixes -lxcb -lsndio
 LIBavfilter_EXTRALIBS=
 LIBavformat_EXTRALIBS=-L${LOCALBASE}/lib -lbz2 -lssl -lcrypto -pthread
 LIBavresample_EXTRALIBS=
@@ -68,11 +65,11 @@ FFMPEG_ARCH=	${MACHINE_ARCH}
 LIB_DEPENDS+=	multimedia/x265>=1.5
 WANTLIB+=	x265>=2
 CONFIGURE_ARGS+=	--enable-libx265
-CONFIGURE_ENV+=		LIBavcodec_REQUIRES="libavutil libswresample opus schroedinger-1.0 speex theoraenc vpx x264 x265"
-LIBavcodec_EXTRALIBS=-L${LOCALBASE}/lib -lgsm -lmp3lame -lopus -lschroedinger-1.0 -lspeex -ltheoradec -ltheoraenc -lvorbis -lvorbisenc -lvpx -lx264 -lx265 -lxvidcore -lz -pthread
+CONFIGURE_ENV+=		LIBavcodec_REQUIRES="libavutil libswresample opus speex vpx x264 x265"
+LIBavcodec_EXTRALIBS=-L${LOCALBASE}/lib -lgsm -lmp3lame -lopus -lspeex -lvorbis -lvorbisenc -lvpx -lx264 -lx265 -lxvidcore -lz -pthread
 .else
-CONFIGURE_ENV+=		LIBavcodec_REQUIRES="libavutil libswresample opus schroedinger-1.0 speex theoraenc vpx x264"
-LIBavcodec_EXTRALIBS=-L${LOCALBASE}/lib -lgsm -lmp3lame -lopus -lschroedinger-1.0 -lspeex -ltheoradec -ltheoraenc -lvorbis -lvorbisenc -lvpx -lx264 -lxvidcore -lz -pthread
+CONFIGURE_ENV+=		LIBavcodec_REQUIRES="libavutil libswresample opus speex vpx x264"
+LIBavcodec_EXTRALIBS=-L${LOCALBASE}/lib -lgsm -lmp3lame -lopus -lspeex -lvorbis -lvorbisenc -lvpx -lx264 -lxvidcore -lz -pthread
 .endif
 
 OPTFLAGS=	${CFLAGS}
@@ -94,7 +91,6 @@ CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
 		--disable-indev=jack \
 		--disable-indev=oss \
 		--disable-lzma \
-		--disable-mips32r2 \
 		--disable-mipsdspr1 \
 		--disable-mipsdspr2 \
 		--disable-outdev=oss \
@@ -104,9 +100,7 @@ CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
 		--enable-libgsm \
 		--enable-libmp3lame \
 		--enable-libopus \
-		--enable-libschroedinger \
 		--enable-libspeex \
-		--enable-libtheora \
 		--enable-libvorbis \
 		--enable-libvpx \
 		--enable-libx264 \
