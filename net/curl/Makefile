@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.106 2015/03/17 22:47:02 naddy Exp $
+# $OpenBSD: Makefile,v 1.107 2015/04/28 19:26:36 naddy Exp $
 
 COMMENT=	get files from FTP, Gopher, HTTP or HTTPS servers
 
