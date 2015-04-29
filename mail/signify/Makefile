@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/01/01 20:46:28 naddy Exp $
+# $OpenBSD: Makefile,v 1.7 2015/04/29 10:58:03 benoit Exp $
 
 COMMENT=	dynamic .signature generator
 
