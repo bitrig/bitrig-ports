@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.9 2013/10/09 13:36:15 sthen Exp $
+# $OpenBSD: Makefile,v 1.10 2015/04/30 21:22:26 ajacoutot Exp $
 
 BROKEN = 		needs work on bitrig
 
 COMMENT =		media download tool
 
-DISTNAME =		cclive-0.9.2
-REVISION =		2
+DISTNAME =		cclive-0.9.3
 EXTRACT_SUFX =		.tar.xz
 
 CATEGORIES =		www
@@ -16,8 +15,8 @@ HOMEPAGE =		http://cclive.sourceforge.net
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += boost_date_time-mt boost_filesystem-mt boost_iostreams-mt
-WANTLIB += boost_program_options-mt boost_system-mt c crypto curl
-WANTLIB += ffi gcrypt glib-2.0 glibmm-2.4 gmodule-2.0 gobject-2.0
+WANTLIB += boost_program_options-mt boost_system-mt bz2 c crypto
+WANTLIB += curl ffi gcrypt glib-2.0 glibmm-2.4 gmodule-2.0 gobject-2.0
 WANTLIB += gpg-error idn lua5.1 m pcre pcrecpp proxy pthread quvi-0.9
 WANTLIB += sigc-2.0 ssl z
 WANTLIB += c++ c++abi
