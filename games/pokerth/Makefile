@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2014/11/02 15:26:22 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.29 2015/05/01 18:25:59 ajacoutot Exp $
 
 COMMENT=	texas hold'em poker game with online capabilities
 #'
