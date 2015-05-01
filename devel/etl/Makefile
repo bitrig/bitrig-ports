@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/08/22 04:16:31 bentley Exp $
+# $OpenBSD: Makefile,v 1.2 2015/05/01 06:55:32 ajacoutot Exp $
 
 BROKEN =		needs work on bitrig
 
 COMMENT =		C++ class and template library
 
-V =			0.04.17
+V =			0.04.18
 DISTNAME =		ETL-${V}
 PKGNAME =		etl-${V}
 
