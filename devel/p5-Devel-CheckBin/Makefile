@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/08/18 21:21:45 bluhm Exp $
+# $OpenBSD: Makefile,v 1.2 2015/05/01 16:19:50 bluhm Exp $
 
 COMMENT =		check that a command is available
 
-DISTNAME =		Devel-CheckBin-0.02
+DISTNAME =		Devel-CheckBin-0.03
 
 CATEGORIES =		devel
 
@@ -10,7 +10,5 @@ CATEGORIES =		devel
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
-
-CONFIGURE_STYLE =	modbuild
 
 .include <bsd.port.mk>
