@@ -1,6 +1,6 @@
-$OpenBSD: patch-cnupmstat_cnupmstat_8,v 1.1 2010/04/03 20:07:06 naddy Exp $
+$OpenBSD: patch-cnupmstat_cnupmstat_8,v 1.2 2015/05/02 19:50:29 ajacoutot Exp $
 --- cnupmstat/cnupmstat.8.orig	Fri Feb  1 19:02:48 2008
-+++ cnupmstat/cnupmstat.8	Sun Jan  4 14:48:28 2015
++++ cnupmstat/cnupmstat.8	Sat May  2 21:49:25 2015
 @@ -50,15 +50,14 @@ prints traffic statistics collected by
  .Xr cnupm 8
  for specified network interfaces.

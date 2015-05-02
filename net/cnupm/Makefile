@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2015/03/14 20:52:46 naddy Exp $
+# $OpenBSD: Makefile,v 1.20 2015/05/02 19:50:29 ajacoutot Exp $
 
 COMMENT=		IPv4/IPv6 traffic collector
 
@@ -25,6 +25,8 @@ MAKE_ENV+=		LDSTATIC="${LDSTATIC}"
 .else
 WANTLIB=		c pcap
 .endif
+
+NO_TEST=		Yes
 
 post-extract:
 	@rm ${WRKSRC}/include/sys/tree.h
