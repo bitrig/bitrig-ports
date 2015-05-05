@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/03/10 22:55:06 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2015/05/05 17:00:16 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -15,11 +15,13 @@ CATEGORIES=	audio
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
+WANTLIB+= X11 Xext Xi c gdk glib gmodule gtk m ogg pthread speex xcb
+WANTLIB+= xmms
+
 MASTER_SITES=	http://jzb.rapanden.dk/pub/
 
 LIB_DEPENDS=	audio/xmms \
 		audio/speex
-WANTLIB=	X11 Xext Xi c gdk glib gmodule gtk m ogg pthread speex xmms
 
 MODULES=	devel/gettext
 

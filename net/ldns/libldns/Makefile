@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2014/01/22 00:15:36 brad Exp $
+# $OpenBSD: Makefile,v 1.29 2015/05/05 17:00:18 sthen Exp $
 
 COMMENT=	DNS library modelled after Net::DNS
 

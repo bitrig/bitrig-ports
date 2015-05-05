@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2013/08/07 21:32:36 naddy Exp $
+# $OpenBSD: Makefile,v 1.24 2015/05/05 17:00:19 sthen Exp $
 
 COMMENT=	weather plugin for GkrellM2
 

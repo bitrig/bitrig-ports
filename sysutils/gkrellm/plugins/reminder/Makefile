@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2011/07/07 00:08:35 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.21 2015/05/05 17:00:19 sthen Exp $
 
 COMMENT=	GKrellM2 will remind you to do important events
 

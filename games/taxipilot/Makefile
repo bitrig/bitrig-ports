@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.31 2015/03/27 08:41:06 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.32 2015/05/05 17:00:17 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -13,13 +13,13 @@ HOMEPAGE=	http://taxipilot.sourceforge.net/
 # GPLv2+
 PERMIT_PACKAGE_CDROM=  Yes
 
-WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft
-WANTLIB += Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c drm
-WANTLIB += expat fam fontconfig freetype idn jpeg lcms m mng png
-WANTLIB += pthread pthread-stubs util xcb z
+WANTLIB += GL ICE SM X11 X11-xcb Xau Xcursor Xdamage Xdmcp Xext Xfixes
+WANTLIB += Xft Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c
+WANTLIB += drm expat fam fontconfig freetype glapi idn jpeg lcms
 WANTLIB += lib/kde3/DCOP lib/kde3/kdecore>=4 lib/kde3/kdefx
 WANTLIB += lib/kde3/kdesu lib/kde3/kdeui lib/kde3/kio
-WANTLIB += lib/kde3/kwalletclient
+WANTLIB += lib/kde3/kwalletclient m mng png pthread pthread-stubs
+WANTLIB += util xcb xcb-dri2 xcb-glx z
 WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=taxipilot/}

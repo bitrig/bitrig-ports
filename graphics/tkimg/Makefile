@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/11/10 17:39:00 sebastia Exp $
+# $OpenBSD: Makefile,v 1.11 2015/05/05 17:00:18 sthen Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -17,6 +17,7 @@ SHLIB_VERSION =	0.0
 	jpegtcl84 pngtcl1412 tifftcl394
 SHARED_LIBS +=	${_lib} ${SHLIB_VERSION}
 .endfor
+REVISION =	0
 
 CATEGORIES =	graphics
 
@@ -25,7 +26,7 @@ HOMEPAGE = 	http://tkimg.sourceforge.net/
 # BSD
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB += X11 Xext Xft Xss m
+WANTLIB += X11 Xext Xft Xss fontconfig m
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=tkimg/}
 

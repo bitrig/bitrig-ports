@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2015/03/27 08:16:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.29 2015/05/05 17:00:20 sthen Exp $
 
 BROKEN= 		needs work on bitrig
 
@@ -19,13 +19,15 @@ CONFIGURE_ARGS+=--with-ogle-includes=${LOCALBASE}/include
 MODULES=	x11/kde devel/gettext
 MODKDE_FIXUP_DATADIR =	Yes
 
-REVISION =	14
-WANTLIB +=	ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 c
-WANTLIB +=	dvdcontrol expat fam fontconfig freetype idn lib/kde3/DCOP
-WANTLIB +=	lib/kde3/kdecore>=4 lib/kde3/kdefx lib/kde3/kdesu
-WANTLIB +=	lib/kde3/kdeui lib/kde3/kio lib/kde3/kwalletclient m
-WANTLIB +=	msgevents png pthread pthread-stubs qt-mt util xcb
-WANTLIB +=	xml2 z
-WANTLIB +=	c++ c++abi
+REVISION =	13
+
+WANTLIB += ${MODQT3_WANTLIB}
+WANTLIB += ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 c dvdcontrol
+WANTLIB += expat fam fontconfig freetype idn lib/kde3/DCOP
+WANTLIB += lib/kde3/kdecore>=4 lib/kde3/kdefx lib/kde3/kdesu
+WANTLIB += lib/kde3/kdeui lib/kde3/kio lib/kde3/kwalletclient m
+WANTLIB += msgevents png pthread pthread-stubs util xcb xcb-glx
+WANTLIB += xml2 z
+WANTLIB += c++ c++abi
 
 .include <bsd.port.mk>

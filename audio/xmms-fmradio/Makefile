@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/03/10 22:55:06 espie Exp $
+# $OpenBSD: Makefile,v 1.16 2015/05/05 17:00:16 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -16,7 +16,7 @@ HOMEPAGE=	http://silicone.free.fr/xmms-FMRadio/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += X11 Xext Xi gdk glib gmodule gtk m xmms>=2
+WANTLIB += X11 Xext Xi gdk glib gmodule gtk m xcb xmms>=2
 
 MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	.tgz

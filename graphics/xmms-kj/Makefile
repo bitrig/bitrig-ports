@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/06/04 18:41:51 naddy Exp $
+# $OpenBSD: Makefile,v 1.18 2015/05/05 17:00:18 sthen Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -15,8 +15,8 @@ HOMEPAGE=	http://www.csse.monash.edu.au/~timf/
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		X11 Xext Xi gdk glib gmodule gtk  m \
-			z xmms>=2 png>=3
+
+WANTLIB+= X11 Xext Xi gdk glib gmodule gtk m png>=3 xcb xmms>=2 z
 
 MASTER_SITES=	${HOMEPAGE} \
 		http://mirror.csoft.org/xmms-kj/

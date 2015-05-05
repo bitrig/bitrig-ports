@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.9 2015/03/16 18:07:48 naddy Exp $
+# $OpenBSD: Makefile,v 1.10 2015/05/05 17:00:18 sthen Exp $
 
 COMMENT=	implementation of the OpenGL Character Renderer
 
 DISTNAME=	quesoglc-0.7.2
-REVISION =	4
+REVISION =	6
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=quesoglc/}
 
@@ -14,9 +14,9 @@ HOMEPAGE=	http://quesoglc.sourceforge.net/
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	GL GLU X11 expat fontconfig freetype m \
-		xcb z fribidi Xdamage Xext Xfixes Xxf86vm drm
-WANTLIB +=	c++ c++abi pthread
+WANTLIB+= GL GLU X11 Xdamage Xext Xfixes Xxf86vm drm expat fontconfig
+WANTLIB+= freetype fribidi m xcb xcb-glx z
+WANTLIB+= c++ c++abi pthread
 
 LIB_DEPENDS=	devel/fribidi
 

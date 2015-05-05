@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2013/03/11 11:41:30 espie Exp $
+# $OpenBSD: Makefile,v 1.27 2015/05/05 17:00:19 sthen Exp $
 
 COMMENT=	change background image with GkrellM2
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/08/12 10:03:00 sthen Exp $
+# $OpenBSD: Makefile,v 1.10 2015/05/05 17:00:17 sthen Exp $
 
 BROKEN =		needs work on bitrig
 
@@ -14,6 +14,10 @@ HOMEPAGE =		http://www.geomview.org
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
+WANTLIB += ICE SM X11 Xext Xft Xm Xmu Xrender Xt c expat fontconfig
+WANTLIB += freetype jpeg m png pthread-stubs xcb z
+WANTLIB += c++ c++abi pthread
+
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=geomview/}
 
 MODULES =		converters/libiconv
@@ -22,11 +26,6 @@ RUN_DEPENDS =		graphics/netpbm \
 			print/ps2eps
 
 LIB_DEPENDS =		x11/openmotif
-
-WANTLIB += ICE SM X11 Xext Xft Xm Xmu Xrender Xt c expat
-WANTLIB += fontconfig freetype jpeg m png
-WANTLIB += xcb z
-WANTLIB += c++ c++abi pthread
 
 USE_GMAKE =	Yes
 

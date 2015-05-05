@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.30 2013/10/22 11:34:18 zhuk Exp $
+# $OpenBSD: Makefile,v 1.31 2015/05/05 17:00:17 sthen Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -15,14 +15,6 @@ SHARED_ONLY =	Yes
 
 LIB_DEPENDS =	x11/kde/libs3 \
 		graphics/libexif
-
-WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
-WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 drm exif expat
-WANTLIB += fontconfig freetype idn jpeg lcms m mng png util
-WANTLIB += xcb z
-WANTLIB += lib/qt3/qt-mt>=3.33
-WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=6 ${KDE}/kdeui ${KDE}/kdefx
-WANTLIB += c++ c++abi pthread
 
 MODULES =	devel/gettext \
 		x11/kde
@@ -41,5 +33,13 @@ MAKE_FLAGS +=		LIBRESOLV=
 
 # GPL
 PERMIT_PACKAGE_CDROM =		Yes
+
+WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=6 ${KDE}/kdefx ${KDE}/kdeui
+WANTLIB += ${MODQT3_WANTLIB}
+WANTLIB += GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama Xmu
+WANTLIB += Xrandr Xrender Xt Xxf86vm art_lgpl_2 drm exif expat
+WANTLIB += fontconfig freetype idn jpeg lcms m mng png util xcb
+WANTLIB += xcb-glx z
+WANTLIB += c++ c++abi pthread
 
 .include <bsd.port.mk>

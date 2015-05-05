@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2015/03/16 18:08:00 naddy Exp $
+# $OpenBSD: Makefile,v 1.20 2015/05/05 17:00:21 sthen Exp $
 
 COMMENT=	Motif-based table widget
 
@@ -14,8 +14,8 @@ HOMEPAGE=	http://xbae.sourceforge.net/
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += ICE SM X11 Xau Xdmcp Xext Xft Xpm Xrender Xt jpeg m png
-WANTLIB += expat fontconfig freetype z pthread-stubs xcb Xm
+WANTLIB += ICE SM X11 Xau Xdmcp Xext Xft Xm Xmu Xpm Xrender Xt expat
+WANTLIB += fontconfig freetype jpeg m png pthread-stubs xcb z
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xbae/}
 

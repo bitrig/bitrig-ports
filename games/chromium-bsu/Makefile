@@ -1,15 +1,15 @@
-# $OpenBSD: Makefile,v 1.5 2015/03/27 08:41:05 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2015/05/05 17:00:17 sthen Exp $
 
 COMMENT =		fast paced arcade-style space shooter
 DISTNAME =		chromium-bsu-0.9.15.1
 CATEGORIES =		games x11
 HOMEPAGE =		http://chromium-bsu.sourceforge.net/
-REVISION=		2
+REVISION=		3
 
 # Clarified Artistic License
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += GL GLU SDL SDL_image alut c fontconfig ftgl glpng
+WANTLIB += GL GLU SDL SDL_image alut c fontconfig freetype ftgl glpng
 WANTLIB += jpeg m openal png pthread tiff webp z
 WANTLIB += c++ c++abi
 

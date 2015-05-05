@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2013/10/22 11:34:25 zhuk Exp $
+# $OpenBSD: Makefile,v 1.28 2015/05/05 17:00:20 sthen Exp $
 
 COMMENT=	screen saver that displays a countdown to a selected date
 
@@ -12,13 +12,13 @@ HOMEPAGE=	http://www.lysator.liu.se/~erre/kountdown.html
 # GPL
 PERMIT_PACKAGE_CDROM=  Yes
 
-WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft
-WANTLIB += Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c drm
-WANTLIB += expat fam fontconfig freetype idn jpeg lcms m mng png
-WANTLIB += pthread pthread-stubs util xcb z
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kscreensaver
 WANTLIB += ${KDE}/kwalletclient
+WANTLIB += GL ICE SM X11 X11-xcb Xau Xcursor Xdamage Xdmcp Xext Xfixes
+WANTLIB += Xft Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c
+WANTLIB += drm expat fam fontconfig freetype glapi idn jpeg lcms m mng
+WANTLIB += png pthread pthread-stubs util xcb xcb-dri2 xcb-glx z
 WANTLIB += c++ c++abi
 
 MASTER_SITES=	http://www.lysator.liu.se/~erre/download/kountdown/

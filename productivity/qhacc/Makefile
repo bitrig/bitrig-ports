@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/21 10:43:34 jasper Exp $
+# $OpenBSD: Makefile,v 1.22 2015/05/05 17:00:18 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -24,10 +24,10 @@ SHARED_LIBS+=   ${_lib} ${SO_VERSION}
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += GL X11 c m pthread xcb
-WANTLIB += ICE SM Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
-WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm drm expat fontconfig
-WANTLIB += freetype jpeg lcms mng png z pthread-stubs
+WANTLIB += GL ICE SM X11 X11-xcb Xau Xcursor Xdamage Xdmcp Xext Xfixes
+WANTLIB += Xft Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm c drm expat
+WANTLIB += fontconfig freetype glapi jpeg lcms m mng png pthread
+WANTLIB += pthread-stubs xcb xcb-dri2 xcb-glx z
 WANTLIB += c++ c++abi
 
 MODULES=	x11/qt3

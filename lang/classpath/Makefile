@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2015/04/18 13:35:27 schwarze Exp $
+# $OpenBSD: Makefile,v 1.43 2015/05/05 17:00:18 sthen Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -27,6 +27,16 @@ HOMEPAGE=	https://www.gnu.org/software/classpath/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
+WANTLIB += GL ICE SM X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext
+WANTLIB += Xfixes Xi Xinerama Xrandr Xrender Xtst Xxf86vm atk-1.0 c
+WANTLIB += cairo dbus-1 dbus-glib-1 drm expat ffi fontconfig freetype
+WANTLIB += gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0
+WANTLIB += gmodule-2.0 gmp gobject-2.0 graphite2 gthread-2.0 gtk-x11-2.0
+WANTLIB += harfbuzz m magic pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
+WANTLIB += pixman-1 png pthread pthread-stubs xcb xcb-render
+WANTLIB += xcb-shm z
+WANTLIB += c++ c++abi
+
 MODULES=	devel/gettext gcc4
 MODGCC4_ARCHS=	*
 MODGCC4_LANGS=	java
@@ -41,16 +51,6 @@ LIB_DEPENDS=	x11/gtk+2 \
 		devel/gconf2 \
 		devel/libmagic \
 		devel/gmp
-
-WANTLIB += GL ICE SM X11 Xau Xcomposite Xcursor Xdamage Xdmcp
-WANTLIB += Xext Xfixes Xi Xinerama Xrandr Xrender Xtst Xxf86vm
-WANTLIB += atk-1.0 cairo dbus-1 dbus-glib-1 drm expat ffi fontconfig
-WANTLIB += freetype gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0
-WANTLIB += glib-2.0 gmodule-2.0 gmp gobject-2.0 gthread-2.0 gtk-x11-2.0
-WANTLIB += m magic pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
-WANTLIB += pixman-1 png pthread-stubs xcb xcb-render xcb-shm
-WANTLIB += z c pthread harfbuzz
-WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_GNU:=classpath/}
 MASTER_SITES0=	http://archive.eclipse.org/eclipse/downloads/drops/R-3.2.2-200702121330/

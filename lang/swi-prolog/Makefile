@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.56 2015/02/16 22:57:09 naddy Exp $
+# $OpenBSD: Makefile,v 1.57 2015/05/05 17:00:18 sthen Exp $
 
 BROKEN-mips64 = 	undefined reference to `__sync_fetch_and_add_8'
 BROKEN-hppa =		undefined reference to `__sync_fetch_and_add_4'
@@ -7,7 +7,7 @@ BROKEN-sparc64 =	infinite loop or aborts during build
 COMMENT =		Prolog for the real world
 
 V =			6.6.4
-REVISION =		4
+REVISION =		5
 DISTNAME =		pl-$V
 PKGNAME =		swi-prolog-$V
 CATEGORIES =		lang
@@ -18,6 +18,10 @@ HOMEPAGE =		http://www.swi-prolog.org/
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
+
+WANTLIB += ICE SM X11 Xext Xft Xinerama Xpm Xt c crypto execinfo
+WANTLIB += fontconfig freetype gmp jpeg m ncursesw pthread readline ssl
+WANTLIB += z
 
 MASTER_SITES =		${HOMEPAGE}/download/stable/src/ \
 			http://distfiles.nl/
@@ -51,11 +55,7 @@ LIB_DEPENDS =		devel/gmp \
 			graphics/jpeg \
 			devel/readline
 
-WANTLIB += ICE SM X11 Xext Xft Xinerama Xpm Xt c crypto execinfo
-WANTLIB += fontconfig gmp jpeg m ncursesw pthread
-WANTLIB += readline ssl z
-
-FULLARCH =		${MACHINE_ARCH:S/amd64/x86_64/}-bitrig${OSREV}
+FULLARCH =		${MACHINE_ARCH:S/amd64/x86_64/}-openbsd${OSREV}
 SUBST_VARS +=		V BOOT FULLARCH
 
 post-install:

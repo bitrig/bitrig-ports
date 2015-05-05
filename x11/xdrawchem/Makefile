@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2014/11/30 05:41:35 brad Exp $
+# $OpenBSD: Makefile,v 1.20 2015/05/05 17:00:21 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -13,17 +13,17 @@ HOMEPAGE=	http://xdrawchem.sourceforge.net/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xdrawchem/}
+WANTLIB += GL ICE SM X11 X11-xcb Xau Xcursor Xdamage Xdmcp Xext Xfixes
+WANTLIB += Xft Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm c drm expat
+WANTLIB += fontconfig freetype glapi jpeg lcms m mng openbabel>=4 png
+WANTLIB += pthread pthread-stubs xcb xcb-dri2 xcb-glx z
+WANTLIB += c++ c++abi
 
-WANTLIB =	GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
-WANTLIB +=	Xmu Xrandr Xrender Xt Xxf86vm c drm expat fontconfig
-WANTLIB +=	freetype jpeg lcms m mng png pthread pthread-stubs xcb z
-WANTLIB +=	c++ c++abi
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xdrawchem/}
 
 MODULES=	x11/qt3
 
 LIB_DEPENDS =	misc/openbabel>=2.2.0
-WANTLIB +=	openbabel>=4
 
 USE_GMAKE=	Yes
 
