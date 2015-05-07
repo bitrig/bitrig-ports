@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/03/11 10:50:03 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2015/05/07 19:19:23 kurt Exp $
 
 COMMENT=		UML diagram framework for Eclipse
 
@@ -7,6 +7,7 @@ DISTNAME=		uml2-SDK-${V}
 PKGNAME=		eclipse-plugin-uml2-sdk-${V}
 REVISION=		0
 CATEGORIES+=		java
+REVISION=		0
 
 HOMEPAGE=		http://www.eclipse.org/uml2/
 

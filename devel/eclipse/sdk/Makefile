@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.77 2014/05/09 21:33:44 kili Exp $
+# $OpenBSD: Makefile,v 1.78 2015/05/07 19:19:23 kurt Exp $
 
 SHARED_ONLY=		Yes
 ONLY_FOR_ARCHS=		amd64 i386
@@ -54,7 +54,8 @@ MULTI_PACKAGES=		-main -swt -gnome
 
 RUN_DEPENDS-main=	java/javaPathHelper \
 			${MODJAVA_RUN_DEPENDS} \
-			devel/desktop-file-utils
+			devel/desktop-file-utils \
+			devel/eclipse/sdk,-swt
 LIB_DEPENDS-main=	x11/gtk+2
 
 WANTLIB-main=		X11 Xau Xcursor Xdmcp Xext Xfixes Xi Xinerama \

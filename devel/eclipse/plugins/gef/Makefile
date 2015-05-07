@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/03/11 10:50:03 espie Exp $
+# $OpenBSD: Makefile,v 1.17 2015/05/07 19:19:23 kurt Exp $
 
 COMMENT=		graphical editing environment for eclipse
 
