@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.22 2014/10/04 15:17:24 zhuk Exp $
+# $OpenBSD: Makefile,v 1.24 2015/05/08 21:17:03 zhuk Exp $
 
 SHARED_ONLY=		Yes
 
 COMMENT=		IntelliJ IDEA Java IDE
 
-V=			13.1.5
+V=			14.1.2
 DISTNAME=		ideaIC-${V}
 PKGNAME=		intellij-${V}
 CATEGORIES=		devel
@@ -27,7 +27,7 @@ NO_TEST=		Yes
 
 SUBST_VARS+=		JAVA_HOME
 
-WRKDIST=		${WRKDIR}/idea-IC-135.1289
+WRKDIST=		${WRKDIR}/idea-IC-141.713.2
 IJ=			${PREFIX}/intellij
 
 # If NO_BUILD is set, JAVA_HOME doesn't get defined. So do
