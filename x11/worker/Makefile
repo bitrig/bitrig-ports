@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.10 2015/03/16 21:39:31 landry Exp $
+# $OpenBSD: Makefile,v 1.12 2015/05/09 15:13:31 bcallah Exp $
 
 BROKEN-hppa =	no atomic ops
 COMMENT =	Midnight Commander like file manager for X
-DISTNAME =	worker-3.6.1
+DISTNAME =	worker-3.7.0
 CATEGORIES =	x11
 
 HOMEPAGE =	http://www.boomerangsworld.de/
@@ -28,5 +28,7 @@ CONFIGURE_ARGS =	--without-avfs \
 			--without-libmagic \
 			--disable-inotify \
 			--disable-lua
+
+MAKE_FLAGS =	LDFLAGS="-pthread"
 
 .include <bsd.port.mk>
