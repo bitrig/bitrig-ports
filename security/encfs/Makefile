@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2014/01/21 15:41:27 syl Exp $
+# $OpenBSD: Makefile,v 1.4 2015/05/09 12:20:15 jca Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -22,16 +22,14 @@ EXTRACT_SUFX =		.tgz
 MODULES =		devel/gettext
 LIB_DEPENDS =		devel/boost \
 			devel/rlog
-			
+
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
 			--with-boost-serialization=boost_serialization \
 			--with-boost-filesystem=boost_filesystem \
 			--with-boost-system=boost_system
-
 # TODO convert code to use utimensat() instead of lutimes()
-CFLAGS =		-Dlutimes=utimes \
-			-D_DIRENT_HAVE_D_TYPE
+CONFIGURE_ENV +=	CPPFLAGS="-Dlutimes=utimes -D_DIRENT_HAVE_D_TYPE"
 
 do-test:
 	${WRKSRC}/encfs/test
