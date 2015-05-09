@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/01/17 19:46:21 juanfra Exp $
+# $OpenBSD: Makefile,v 1.3 2015/05/09 22:24:06 juanfra Exp $
 
 COMMENT =		arcade game for one or two players
 

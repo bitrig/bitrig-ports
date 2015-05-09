@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2015/03/31 09:45:10 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2015/05/09 22:24:06 juanfra Exp $
 
 COMMENT =		Firefox OS typeface
 
@@ -9,7 +9,7 @@ COMMENT =		Firefox OS typeface
 #   the medium style by default instead of the regular style.
 # - Removed the source directory.
 DISTNAME =		fira-fonts-20140907
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		fonts x11
 
