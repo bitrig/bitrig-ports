@@ -1,3 +1,7 @@
+# $OpenBSD: Makefile,v 1.2 2015/05/09 08:35:02 jasper Exp $
+
+PORTROACH=	limit:^5\.3
+
 VERSION=	5.3.0
 PKGSPEC=	lua->=5.3
 
