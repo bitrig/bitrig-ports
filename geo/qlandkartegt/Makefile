@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.23 2014/12/19 22:17:06 zhuk Exp $
+# $OpenBSD: Makefile,v 1.24 2015/05/10 16:53:19 sebastia Exp $
 
 COMMENT =	garmin gps map management tool
 
-DISTNAME =	qlandkartegt-1.7.7
-REVISION =	0
+DISTNAME =	qlandkartegt-1.8.1
 CATEGORIES =	geo x11
 
 HOMEPAGE =	http://www.qlandkarte.org/
@@ -13,7 +12,7 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=qlandkartegt/}
 PERMIT_PACKAGE_CDROM =		Yes
 
 MODULES =	devel/cmake x11/qt4
-WANTLIB +=	GL GLU ICE SM X11 Xext c m pthread z gdal gps>=19
+WANTLIB +=	GL GLU c m pthread z gdal gps>=19
 WANTLIB +=	exif QtDBus QtGui QtNetwork QtOpenGL QtSql QtXml QtCore proj
 WANTLIB +=	QtWebKit QtXmlPatterns phonon jpeg dmtx QtScript
 WANTLIB +=	c++ c++abi
