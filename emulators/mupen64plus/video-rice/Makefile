@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/04/17 07:03:59 bentley Exp $
+# $OpenBSD: Makefile,v 1.8 2015/05/11 09:40:40 bentley Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -6,7 +6,6 @@ COMMENT =		n64 emulator opengl video plugin
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
-REVISION =		3
 
 WANTLIB =		GL SDL m png pthread
 WANTLIB +=		c++ c++abi
