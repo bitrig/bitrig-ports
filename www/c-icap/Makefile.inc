@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.2 2014/11/22 22:20:09 sthen Exp $
+# $OpenBSD: Makefile.inc,v 1.3 2015/05/11 12:06:21 espie Exp $
 
 SHARED_ONLY?=	Yes
 
@@ -9,7 +9,6 @@ HOMEPAGE?=	http://c-icap.sourceforge.net/
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM?=	Yes
 PERMIT_PACKAGE_FTP?=	Yes
-PERMIT_DISTFILES_CDROM?= Yes
 PERMIT_DISTFILES_FTP?=	Yes
 
 MASTER_SITES?=	${MASTER_SITE_SOURCEFORGE:=c-icap/}
