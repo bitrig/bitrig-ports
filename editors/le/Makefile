@@ -11,7 +11,8 @@ HOMEPAGE =	http://lav.yar.ru/programs.html
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m ncursesw stdc++
+WANTLIB += c m ncursesw
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	http://lav.yar.ru/download/le/
 

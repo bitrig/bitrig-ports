@@ -12,7 +12,8 @@ HOMEPAGE =	http://www.gnu.org/software/moe/moe.html
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m ncurses stdc++
+WANTLIB += c m ncurses
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SAVANNAH:=moe/}
 

@@ -30,7 +30,8 @@ FLAVOR ?=
 .if ${FLAVOR:Mmysql}
 LIB_DEPENDS+=   databases/mariadb
 WANTLIB += lib/mysql/mysqlclient
-WANTLIB += crypto m ssl stdc++ z
+WANTLIB += crypto m ssl z
+WANTLIB += c++ c++abi
 CONFIGURE_ARGS+= --with-mysql
 .endif
 

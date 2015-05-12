@@ -11,7 +11,8 @@ HOMEPAGE =		http://pdfgrep.sourceforge.net/
 #GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=		c m pthread stdc++ poppler-cpp
+WANTLIB +=		c m pthread poppler-cpp
+WANTLIB += 		c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=pdfgrep/}
 

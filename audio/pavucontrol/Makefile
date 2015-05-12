@@ -48,6 +48,7 @@ WANTLIB += X11 atk-1.0 atkmm-1.6 c cairo cairomm-1.0
 WANTLIB += canberra fontconfig freetype gdk_pixbuf-2.0
 WANTLIB += gio-2.0 giomm-2.4 glib-2.0 glibmm-2.4 gobject-2.0
 WANTLIB += m pango-1.0 pangocairo-1.0 pangoft2-1.0 pangomm-1.4
-WANTLIB += pthread pulse pulse-mainloop-glib sigc-2.0 stdc++ z
+WANTLIB += pthread pulse pulse-mainloop-glib sigc-2.0 z
+WANTLIB += c++ c++abi
 
 .include <bsd.port.mk>

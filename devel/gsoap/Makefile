@@ -32,7 +32,8 @@ AUTOCONF_VERSION=	2.67
 AUTOMAKE_VERSION=	1.11
 
 
-WANTLIB += c crypto m pthread ssl stdc++ z
+WANTLIB += c crypto m pthread ssl z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gsoap2/gSOAP/}
 

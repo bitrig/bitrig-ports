@@ -13,7 +13,8 @@ HOMEPAGE =	http://mars-game.sourceforge.net/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL GLU ICE SM X11 Xext Xrandr c fribidi m pthread sfml-audio
-WANTLIB += sfml-graphics sfml-system sfml-window stdc++ tag
+WANTLIB += sfml-graphics sfml-system sfml-window tag
+WANTLIB += c++ c++abi
 
 # Not using the GH_* variables on purpose. The tarball was generated
 # separately. Will update to use GH_* next time M.A.R.S. is updated.

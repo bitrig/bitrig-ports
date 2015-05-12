@@ -29,9 +29,10 @@ WANTLIB += hogweed icudata icui18n icuuc javascriptcoregtk-4.0
 WANTLIB += jpeg lzma m mozjs-24 ncurses ncursesw nettle notify
 WANTLIB += nspr4 orc-0.4 p11-kit pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre pixman-1 plc4 plds4 png pthread pthread-stubs
-WANTLIB += readline secret-1 soup-2.4 sqlite3 ssh2 ssl stdc++
+WANTLIB += readline secret-1 soup-2.4 sqlite3 ssh2 ssl
 WANTLIB += tasn1 util webkit2gtk-4.0 webp xcb xcb-dri2 xcb-glx
 WANTLIB += xcb-render xcb-shape xcb-shm xcb-xfixes xml2 xslt z
+WANTLIB += c++ c++abi
 
 MODULES=		devel/dconf \
 			devel/gettext \

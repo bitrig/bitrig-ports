@@ -24,7 +24,8 @@ MASTER_SITES=	http://oligarchy.co.uk/xapian/${V}/
 
 LIB_DEPENDS=		databases/xapian-core
 
-WANTLIB += m stdc++ uuid z xapian
+WANTLIB += m uuid z xapian
+WANTLIB += c++ c++abi
 
 AUTOCONF_VERSION=	2.68
 CONFIGURE_STYLE=	autoconf

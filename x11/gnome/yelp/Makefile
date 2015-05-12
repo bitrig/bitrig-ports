@@ -22,7 +22,7 @@ WANTLIB += gstvideo-1.0 gthread-2.0 gtk-3 harfbuzz harfbuzz-icu
 WANTLIB += icudata icui18n icuuc javascriptcoregtk-3.0 jpeg lzma
 WANTLIB += m orc-0.4 pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB += pixman-1 png pthread pthread-stubs secret-1 soup-2.4
-WANTLIB += sqlite3 stdc++ webkitgtk-3.0 webp xcb xcb-render xcb-shm
+WANTLIB += sqlite3 webkitgtk-3.0 webp xcb xcb-render xcb-shm
 WANTLIB += xml2 xslt z
 WANTLIB += c++ c++abi
 

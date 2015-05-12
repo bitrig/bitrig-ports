@@ -24,7 +24,8 @@ LIB_DEPENDS=	databases/xapian-core \
 		mail/gmime
 
 WANTLIB+= 	c ffi gio-2.0 glib-2.0 gmime-2.6 gmodule-2.0 gobject-2.0
-WANTLIB+= 	gthread-2.0 m pcre pthread stdc++ uuid xapian z
+WANTLIB+= 	gthread-2.0 m pcre pthread uuid xapian z
+WANTLIB+= 	c++ c++abi
 
 AUTOCONF_VERSION=	2.69
 AUTOMAKE_VERSION=	1.11

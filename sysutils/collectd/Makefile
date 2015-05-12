@@ -31,7 +31,8 @@ MODULES =		devel/gettext
 
 MULTI_PACKAGES =	-main -mysql -pgsql -rrdtool -snmp
 
-WANTLIB-mysql =		crypto m ssl z mysqlclient_r stdc++ pthread
+WANTLIB-mysql =		crypto m ssl z mysqlclient_r pthread
+WANTLIB-mysql += 	c++ c++abi
 LIB_DEPENDS-mysql =	databases/mariadb
 RUN_DEPENDS-mysql =	collectd-$V:${BASE_PKGPATH},-main
 

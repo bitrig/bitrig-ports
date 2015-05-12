@@ -24,9 +24,10 @@ WANTLIB += gdkmm-2.4 gio-2.0 giomm-2.4 glib-2.0 glibmm-2.4 gmodule-2.0
 WANTLIB += gobject-2.0 graphite2 gthread-2.0 gtk-x11-2.0 gtkmm-2.4
 WANTLIB += harfbuzz jasper jbig jpeg lcms2 ltdl lzma m pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pangomm-1.4 pcre pixman-1
-WANTLIB += png pthread pthread-stubs sigc-2.0 stdc++ synfig tiff
+WANTLIB += png pthread pthread-stubs sigc-2.0 synfig tiff
 WANTLIB += webp wmf-0.2 wmflite-0.2 xcb xcb-render xcb-shm
 WANTLIB += xml++-2.6 xml2 z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=synfig/}
 

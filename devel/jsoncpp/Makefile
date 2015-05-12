@@ -20,7 +20,8 @@ HOMEPAGE =		https://github.com/open-source-parsers/jsoncpp/wiki
 # Public Domain / MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		m stdc++
+WANTLIB =		m
+WANTLIB += 		c++ c++abi
 
 MODULES =		devel/scons
 MODSCONS_FLAGS =	platform=linux-gcc

@@ -13,8 +13,9 @@ HOMEPAGE =		http://sarrazip.com/dev/quadrupleback.html
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += FLAC SDL SDL_gfx SDL_image SDL_mixer c flatzebra-0.1
-WANTLIB += jpeg m mikmod ogg png pthread smpeg sndio stdc++ tiff
+WANTLIB += jpeg m mikmod ogg png pthread smpeg sndio tiff
 WANTLIB += usbhid vorbis vorbisfile webp z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		http://sarrazip.com/dev/
 

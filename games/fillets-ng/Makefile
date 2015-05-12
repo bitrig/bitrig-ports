@@ -10,7 +10,8 @@ HOMEPAGE =		http://fillets.sourceforge.net/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB = 		SDL SDL_image SDL_mixer SDL_ttf c fribidi \
-			${MODLUA_WANTLIB} m pthread smpeg stdc++
+			${MODLUA_WANTLIB} m pthread smpeg
+WANTLIB += 		c++ c++abi
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=fillets/}
 DISTFILES = 		fillets-ng-${V}.tar.gz \
 			fillets-ng-data-${V}.tar.gz

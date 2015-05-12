@@ -85,7 +85,8 @@ MODRUBY_RUNDEP=		No
 CONFIGURE_ARGS+=	--add-module=${LOCALBASE}/lib/phusion-passenger${GEM_BIN_SUFFIX}/ext/nginx
 BUILD_DEPENDS+=		${MODRUBY_PKG_PREFIX}-passenger-*:www/ruby-passenger,-main
 RUN_DEPENDS+=		ruby-passenger-*|ruby19-passenger-*|ruby20-passenger-*|ruby21-passenger-*:www/ruby-passenger,-main
-WANTLIB+=		m pthread stdc++
+WANTLIB+=		m pthread
+WANTLIB+= 		c++ c++abi
 .endif
 
 .if ${FLAVOR:Mlua}

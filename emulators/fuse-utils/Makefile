@@ -14,8 +14,9 @@ MODULES=		devel/gettext
 
 WANTLIB += FLAC audiofile avcodec avformat avutil bz2 c crypto
 WANTLIB += gcrypt glib-2.0 gpg-error gsm m mp3lame ogg opus orc-0.4
-WANTLIB += pcre pthread schroedinger-1.0 speex ssl stdc++ swscale
+WANTLIB += pcre pthread schroedinger-1.0 speex ssl swscale
 WANTLIB += theoradec theoraenc vorbis vorbisenc vpx x264 xvidcore z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fuse-emulator/}
 

@@ -22,7 +22,8 @@ WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gpg-error graphite2
 WANTLIB += gthread-2.0 gtk-3 gtksourceview-3.0 gtkspell3-3 harfbuzz
 WANTLIB += json-glib-1.0 lzma m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pcre peas-1.0 peas-gtk-1.0 pixman-1 png pthread pthread-stubs
-WANTLIB += secret-1 stdc++ xcb xcb-render xcb-shm xml2 z
+WANTLIB += secret-1 xcb xcb-render xcb-shm xml2 z
+WANTLIB += c++ c++abi
 
 MODULES=	devel/gettext \
 		x11/gnome \

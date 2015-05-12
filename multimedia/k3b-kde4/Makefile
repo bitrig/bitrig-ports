@@ -14,7 +14,7 @@ HOMEPAGE =		http://www.k3b.org/
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =  c m pthread stdc++
+WANTLIB =  c m pthread
 WANTLIB += ICE SM X11 Xext
 WANTLIB += lib/qt4/Qt3Support lib/qt4/QtDBus lib/qt4/QtGui
 WANTLIB += lib/qt4/QtNetwork lib/qt4/QtSql lib/qt4/QtSvg
@@ -27,6 +27,7 @@ WANTLIB += ${KDE4LIB}/kutils ${KDE4LIB}/nepomuk ${KDE4LIB}/nepomukutils
 WANTLIB += ${KDE4LIB}/solid
 WANTLIB += FLAC FLAC++ avcodec avformat avutil dvdread mad mp3lame
 WANTLIB += mpcdec samplerate soprano sndfile tag vorbis
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=k3b/}
 EXTRACT_SUFX =		.tar.bz2

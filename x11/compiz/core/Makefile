@@ -18,9 +18,9 @@ WANTLIB += freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glapi glib-2.0
 WANTLIB += gmodule-2.0 gobject-2.0 graphite2 gthread-2.0 gtk-x11-2.0
 WANTLIB += harfbuzz lzma m pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB += pixman-1 png pthread pthread-stubs rsvg-2
-WANTLIB += startup-notification-1 stdc++ wnck-1 xcb xcb-dri2 xcb-glx
+WANTLIB += startup-notification-1 wnck-1 xcb xcb-dri2 xcb-glx
 WANTLIB += xcb-render xcb-shm xcb-util xml2 xslt z
-WANTLIB +=	c++ c++abi
+WANTLIB += c++ c++abi
 
 MASTER_SITES =	http://releases.compiz.org/${V}/
 
