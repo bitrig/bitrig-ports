@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.22 2015/03/27 08:11:28 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.23 2015/05/12 16:11:54 shadchin Exp $
 
 BROKEN= 	needs work on bitrig
 
 COMMENT=	portable DjVu viewer and browser plugin
 
-DISTNAME=	djview-4.9
+DISTNAME=	djview-4.10.3
 PKGNAME=	${DISTNAME:S/djview/djview4/}
 REVISION=	2
 CATEGORIES=	graphics print
@@ -14,13 +14,14 @@ HOMEPAGE=	http://djvu.sourceforge.net/djview4.html
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += ICE QtGui QtNetwork SM X11 Xext Xi Xinerama Xrender
-WANTLIB += c djvulibre fontconfig freetype m pthread tiff
+WANTLIB += GL ICE QtGui QtNetwork QtOpenGL SM X11 Xext Xi Xinerama
+WANTLIB += Xrender c djvulibre fontconfig freetype glib-2.0 m
+WANTLIB += pcre pthread tiff
 WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=djvu/}
 
-MODULES=	x11/qt4
+MODULES=	x11/qt4 devel/gettext
 
 LIB_DEPENDS=	graphics/djvulibre
 
@@ -36,6 +37,6 @@ CONFIGURE_ENV+=	QTDIR="${MODQT4_QTDIR}" \
 
 NO_TEST=	Yes
 
-WRKDIST=	${WRKDIR}/${DISTNAME:S/djview/djview4/}
+LIBTOOL_FLAGS=	--tag=disable-static
 
 .include <bsd.port.mk>
