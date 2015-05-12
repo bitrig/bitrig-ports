@@ -9,8 +9,6 @@ CATEGORIES =		cad x11
 
 HOMEPAGE =		http://www.tkgate.org/
 
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
-
 MASTER_SITES =		https://bitbucket.org/starling13/tkgate/downloads/
 
 # GPLv2+

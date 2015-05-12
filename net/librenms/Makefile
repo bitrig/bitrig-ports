@@ -11,8 +11,6 @@ CATEGORIES =	net www
 
 HOMEPAGE =	http://www.librenms.org/
 
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
-
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 

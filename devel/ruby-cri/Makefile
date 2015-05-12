@@ -5,7 +5,6 @@ COMMENT =		command line interfaces with subcommands
 DISTNAME =		cri-2.6.1
 CATEGORIES =		devel
 HOMEPAGE =		http://stoneship.org/software/cri/
-MAINTAINER =		Sebastian Reitenbach <sebastia@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =   Yes

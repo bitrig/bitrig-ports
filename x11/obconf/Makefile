@@ -7,7 +7,6 @@ COMMENT=	configuration utility for openbox
 # git clone of b7f1c6ac679bbda61bc4ca13267f03022cbfde74
 # which will become 2.0.4 when upstream releases a new version.
 DISTNAME=	obconf-2.0.4
-REVISION=	0
 CATEGORIES=	x11
 REVISION=	0
 

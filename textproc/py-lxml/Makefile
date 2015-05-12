@@ -4,7 +4,6 @@ COMMENT=	Python binding for the libxml2 and libxslt libraries
 BROKEN-hppa=	OOM on src/lxml/lxml.etree.c
 
 MODPY_EGG_VERSION=	3.3.5
-REVISION=	0
 DISTNAME=	lxml-${MODPY_EGG_VERSION}
 PKGNAME=	py-lxml-${MODPY_EGG_VERSION}
 REVISION=	0

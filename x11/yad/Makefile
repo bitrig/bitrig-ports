@@ -3,7 +3,6 @@
 COMMENT=		display graphical dialogs from shell scripts or command line
 
 DISTNAME=		yad-0.23.1
-REVISION=		0
 CATEGORIES=		x11
 REVISION=		0
 

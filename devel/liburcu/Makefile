@@ -19,8 +19,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		http://urcu.so/
 
-MAINTAINER = 		Jeremie Courreges-Anglas <jca@wxcvbn.org>
-
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
 

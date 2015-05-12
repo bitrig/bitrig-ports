@@ -3,7 +3,6 @@
 CATEGORIES =		productivity devel
 COMMENT =		C library for Google calendar and contacts
 DISTNAME =		libgcal-0.9.6
-REVISION =		0
 HOMEPAGE =		https://code.google.com/p/libgcal/
 REVISION =		0
 

@@ -3,7 +3,6 @@
 COMMENT=	GTK-based scientific calculator
 
 DISTNAME=	galculator-2.1.3
-REVISION=	0
 CATEGORIES=	math
 HOMEPAGE=	http://galculator.sourceforge.net/
 REVISION=	1

@@ -5,7 +5,6 @@ COMMENT=		Python XMPP and Jabber implementation
 MODPY_EGG_VERSION=	1.1.2
 DISTNAME=		pyxmpp-${MODPY_EGG_VERSION}
 PKGNAME=		${DISTNAME:S/^py/py-/}
-REVISION=		0
 CATEGORIES=		net devel
 REVISION=		0
 

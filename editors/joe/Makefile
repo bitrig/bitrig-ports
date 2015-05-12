@@ -7,7 +7,6 @@ DISTNAME=		joe-4.0
 CATEGORIES=		editors
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=joe-editor/}
 
-MAINTAINER=		Brian Callahan <bcallah@openbsd.org>
 HOMEPAGE=		http://joe-editor.sourceforge.net/
 
 # GPLv2 only

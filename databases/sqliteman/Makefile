@@ -2,7 +2,6 @@
 
 COMMENT =	gui for sqlite
 CATEGORIES =	databases x11
-REVISION =	1
 
 DISTNAME =	sqliteman-1.2.2
 REVISION =	1

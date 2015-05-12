@@ -5,7 +5,6 @@ COMMENT =	Puppet module management
 DISTNAME =	r10k-1.5.1
 CATEGORIES =	sysutils
 HOMEPAGE =	https://github.com/adrienthebo/r10k
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # Apache 2.0
 PERMIT_PACKAGE_CDROM =	Yes

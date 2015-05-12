@@ -5,7 +5,6 @@ COMMENT =	HTTP/REST API client library
 DISTNAME =	faraday-0.9.1
 CATEGORIES =	www
 HOMEPAGE =	https://github.com/lostisland/faraday
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM = Yes

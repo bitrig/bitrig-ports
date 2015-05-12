@@ -2,7 +2,6 @@
 
 COMMENT=		Gtk+ Widget for Displaying OpenStreetMap tiles
 
-REVISION=		0
 GH_ACCOUNT = 		nzjrs
 GH_PROJECT = 		osm-gps-map
 GH_TAGNAME = 		1.0.2

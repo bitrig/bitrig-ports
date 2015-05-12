@@ -3,7 +3,6 @@
 COMMENT=	handy personal organizer
 
 DISTNAME=	osmo-0.2.10
-REVISION=	0
 CATEGORIES=	productivity
 REVISION=	0
 

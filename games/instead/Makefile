@@ -6,7 +6,6 @@ DISTNAME =		instead_${V}
 PKGNAME =		${DISTNAME:C/_/-/}
 CATEGORIES =		games devel/lua
 HOMEPAGE =		http://instead.sourceforge.net
-MAINTAINER =		Roman Yakovlev <obsd@51t.ru>
 REVISION =		0
 
 # MIT, LGPL (SDL_anigif), zlib (SDL_gfx), 3-clause BSDL (tinymt32)

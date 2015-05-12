@@ -7,7 +7,6 @@ BROKEN-alpha=	serverpath.h:17:19: error: variable 'CServerPath final' has initia
 V=		3.8.1
 PKGNAME=	filezilla-$V
 DISTNAME=	FileZilla_$V_src
-REVISION=	1
 EXTRACT_SUFX=	.tar.bz2
 REVISION=	1
 

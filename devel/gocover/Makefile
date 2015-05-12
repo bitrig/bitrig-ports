@@ -5,8 +5,6 @@ DISTNAME =		gocover-1.4
 CATEGORIES =		devel
 HOMEPAGE =		http://golang.org/
 
-MAINTAINER =		Adam Wolk <adam.wolk@koparo.com>
-
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

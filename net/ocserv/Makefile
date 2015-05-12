@@ -9,8 +9,6 @@ CATEGORIES=	net
 
 HOMEPAGE=	http://www.infradead.org/ocserv/
 
-MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 

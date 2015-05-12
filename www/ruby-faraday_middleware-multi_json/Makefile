@@ -5,7 +5,6 @@ COMMENT =	Faraday response parser using MultiJson
 DISTNAME =	faraday_middleware-multi_json-0.0.6
 CATEGORIES =	www
 HOMEPAGE =	https://www.github.com/denro/faraday_middleware-multi_json
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM = Yes

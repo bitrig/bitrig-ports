@@ -4,7 +4,6 @@ COMMENT =	bug tracker client
 DISTNAME =	entomologist-1.1
 REVISION =	1
 CATEGORIES =	productivity
-REVISION =	0
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=entomologist/}
 HOMEPAGE =	http://entomologist.sourceforge.net

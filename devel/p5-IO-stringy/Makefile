@@ -7,8 +7,6 @@ MODULES=		cpan
 DISTNAME=		IO-stringy-2.111
 CATEGORIES=		devel
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # perl
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -4,7 +4,6 @@ CATEGORIES =	net
 COMMENT =	IRC client for KDE 4
 V =		1.5
 DISTNAME =	konversation-$V
-REVISION =	0
 HOMEPAGE =	http://konversation.kde.org/
 REVISION =	0
 

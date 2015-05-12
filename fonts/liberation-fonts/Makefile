@@ -6,7 +6,6 @@ COMMENT =	substitute for MS TTF core fonts
 
 DISTNAME =	liberation-fonts-ttf-2.00.1
 PKGNAME =	${DISTNAME:S/-ttf//}
-REVISION =	0
 CATEGORIES =	fonts x11
 REVISION =	0
 

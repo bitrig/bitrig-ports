@@ -3,7 +3,6 @@
 COMMENT=	GNU PostScript interpreter
 
 VERSION=	9.07
-REVISION=	0
 DISTNAME=	ghostscript-${VERSION}
 CATEGORIES=	print lang
 SHARED_LIBS=	gs	15.0

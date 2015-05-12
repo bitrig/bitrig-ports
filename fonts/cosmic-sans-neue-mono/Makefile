@@ -2,7 +2,6 @@
 
 COMMENT =	programming font designed with functionality in mind
 DISTNAME =	cosmic-sans-neue-mono-1.3.1
-REVISION =	0
 CATEGORIES =	fonts x11
 REVISION =	0
 

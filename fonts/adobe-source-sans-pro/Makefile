@@ -3,7 +3,6 @@
 COMMENT =	set of OpenType fonts designed for user interfaces
 PKG_ARCH =	*
 VERSION =	1.050
-REVISION =	0
 DISTNAME =	SourceSansPro_FontsOnly-${VERSION}
 PKGNAME =	adobe-source-sans-pro-${VERSION}
 CATEGORIES =	fonts x11

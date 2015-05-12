@@ -6,7 +6,6 @@ DISTNAME =	merkaartor-0.18.1
 REVISION =	1
 EXTRACT_SUFX =	.tar.bz2
 SHARED_ONLY =	Yes
-REVISION =	0
 
 CATEGORIES =	geo x11
 

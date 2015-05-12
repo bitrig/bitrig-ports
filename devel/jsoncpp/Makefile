@@ -17,8 +17,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		https://github.com/open-source-parsers/jsoncpp/wiki
 
-MAINTAINER =		David Coppa <dcoppa@openbsd.org>
-
 # Public Domain / MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

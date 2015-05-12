@@ -3,7 +3,6 @@
 COMMENT =		fixed width fonts especially for long hacking sessions
 
 DISTNAME =		terminus-font-4.39
-REVISION =		0
 CATEGORIES =		fonts x11
 REVISION =		0
 

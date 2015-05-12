@@ -9,8 +9,6 @@ CATEGORIES =		net
 
 HOMEPAGE =		https://stem.torproject.org
 
-MAINTAINER =		Pascal Stumpf <Pascal.Stumpf@cubes.de>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 

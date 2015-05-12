@@ -11,9 +11,6 @@ CATEGORIES =		net
 
 HOMEPAGE =		https://www.knot-dns.cz/
 
-MAINTAINER =		Pierre Emeriaud <petrus.lt+openbsd@gmail.com>, \
-			Jeremie Courreges-Anglas <jca@wxcvbn.org>
-
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 

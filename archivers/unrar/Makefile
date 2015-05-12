@@ -10,7 +10,6 @@ COMMENT=	extract, list, and test RAR archives
 # by "5.00".
 
 PKGNAME=	unrar-5.21
-REVISION=	0
 EPOCH=		1
 DISTNAME=	unrarsrc-5.2.7
 CATEGORIES=	archivers

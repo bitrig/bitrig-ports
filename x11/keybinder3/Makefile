@@ -2,7 +2,6 @@
 
 COMMENT =	GTK+3 library for registering keyboard shortcuts
 DISTNAME =	keybinder3-0.3.0
-REVISION =	0
 CATEGORIES =	x11 devel
 REVISION =	0
 

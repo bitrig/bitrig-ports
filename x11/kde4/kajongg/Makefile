@@ -2,7 +2,6 @@
 
 COMMENT =	Mah Jongg four players board game for KDE
 DISTNAME =	kajongg-${MODKDE4_VERSION}
-REVISION =	0
 HOMEPAGE =	http://www.kde.org/applications/games/kajongg/
 PKG_ARCH =	*
 REVISION =	0

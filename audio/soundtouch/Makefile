@@ -8,8 +8,6 @@ CATEGORIES=	audio devel
 
 HOMEPAGE=	http://www.surina.net/soundtouch/
 
-MAINTAINER=	Eric Lalonde <eric.c.lalonde@gmail.com>
-
 # LGPL
 PERMIT_PACKAGE_CDROM=	Yes
 

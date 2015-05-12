@@ -7,7 +7,6 @@ PKGNAME =	py-pafy-${MODPY_EGG_VERSION}
 CATEGORIES =	multimedia
 
 HOMEPAGE =	http://np1.github.io/pafy/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # LGPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

@@ -3,7 +3,6 @@
 COMMENT =	common-utility raster handling methods
 PROJECT =	libgaiagraphics
 DISTNAME =	${PROJECT}-0.5
-REVISION =	0
 SHARED_LIBS =	gaiagraphics 0.0 #2.0
 CATEGORIES =	graphics geo
 REVISION =	0

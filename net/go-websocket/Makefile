@@ -14,8 +14,6 @@ CATEGORIES =		net www
 
 HOMEPAGE =		http://golang.org/x/net/websocket/
 
-MAINTAINER =		Kent R. Spillner <kspillner@openbsd.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

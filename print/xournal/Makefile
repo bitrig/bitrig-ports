@@ -2,7 +2,6 @@
 
 COMMENT =		application for notetaking & annotating PDF files
 DISTNAME =		xournal-0.4.8
-REVISION =		0
 CATEGORIES =		print
 REVISION =		0
 

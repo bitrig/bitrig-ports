@@ -4,7 +4,6 @@ COMMENT =		modified Fraunhofer FDK AAC encoder and decoder
 DISTNAME =		fdk-aac-0.1.3
 CATEGORIES =		audio
 HOMEPAGE =		http://sourceforge.net/projects/opencore-amr/
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
 REVISION =		0
 
 # Custom

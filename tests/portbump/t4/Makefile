@@ -31,8 +31,6 @@ REVISION-qt3=	2
 REVISION-qt4=	3
 REVISION-ui=	3
 
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
-
 SHARED_LIBS +=  avahi-common         0.0      # .8.0
 SHARED_LIBS +=  avahi-core           0.0      # .5.5
 SHARED_LIBS +=  avahi-client         5.0      # .5.4

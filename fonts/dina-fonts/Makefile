@@ -3,7 +3,6 @@
 COMMENT =	monospace bitmap font, primarily aimed at programmers
 
 DISTNAME =	dina-fonts-2.92
-REVISION =	0
 CATEGORIES =	fonts
 REVISION =	0
 

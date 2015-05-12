@@ -4,7 +4,6 @@ COMMENT=	easy and universal access to shared and/or personal files
 
 V=		8.0.2
 DISTNAME=	owncloud-${V}
-REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 REVISION=	0
 

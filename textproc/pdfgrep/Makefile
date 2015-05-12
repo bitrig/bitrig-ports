@@ -8,8 +8,6 @@ CATEGORIES =		textproc
 
 HOMEPAGE =		http://pdfgrep.sourceforge.net/
 
-MAINTAINER =		Reinhold Straub <demarchie@web.de>
-
 #GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 

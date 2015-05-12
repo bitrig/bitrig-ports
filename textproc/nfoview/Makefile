@@ -3,7 +3,6 @@
 COMMENT =	simple viewer for NFO files
 MODPY_EGG_VERSION =	1.15.1
 DISTNAME =	nfoview-${MODPY_EGG_VERSION}
-REVISION =	0
 EXTRACT_SUFX =	.tar.xz
 CATEGORIES =	textproc x11
 REVISION =	0

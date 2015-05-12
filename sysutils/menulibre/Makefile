@@ -6,8 +6,6 @@ MODPY_EGG_VERSION =	2.0.6
 DISTNAME =	menulibre-${MODPY_EGG_VERSION}
 CATEGORIES =	sysutils x11
 
-MAINTAINER =	Landry Breuil <landry@openbsd.org>
-
 HOMEPAGE =	http://smdavis.us/projects/menulibre/
 
 # GPLv2

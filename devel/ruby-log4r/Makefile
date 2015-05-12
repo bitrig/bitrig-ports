@@ -5,7 +5,6 @@ COMMENT =		log4j implementation for Ruby
 DISTNAME =		log4r-1.1.10
 CATEGORIES =		devel
 HOMEPAGE =		http://log4r.rubyforge.org
-MAINTAINER =		Sebastian Reitenbach <sebastia@openbsd.org>
 
 # LGPLv3
 PERMIT_PACKAGE_CDROM =   Yes

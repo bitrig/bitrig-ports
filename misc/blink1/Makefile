@@ -14,8 +14,6 @@ CATEGORIES =		misc
 
 HOMEPAGE =		http://blink1.thingm.com/
 
-MAINTAINER =		Joerg Jung <jung@openbsd.org>
-
 # Creative Commons - Attribution - ShareAlike 3.0
 PERMIT_PACKAGE_CDROM =	Yes
 

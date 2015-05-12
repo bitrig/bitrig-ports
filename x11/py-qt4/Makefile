@@ -13,8 +13,6 @@ PKGNAME-docs=	py-qt4-docs-${V}
 REVISION-main=	1
 REVISION-docs=	1
 EPOCH=		0
-REVISION-docs=	0
-REVISION-main=	0
 
 CATEGORIES=	x11 devel
 

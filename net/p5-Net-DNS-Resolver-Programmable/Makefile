@@ -3,7 +3,6 @@
 COMMENT =		programmable DNS resolver class for offline emulation of DNS
 
 DISTNAME =		Net-DNS-Resolver-Programmable-v0.003
-REVISION =		0
 PKGNAME =		p5-${DISTNAME:S/-v/-/}
 REVISION =		0
 CATEGORIES =		net

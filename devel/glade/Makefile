@@ -3,7 +3,6 @@
 COMMENT=	user interface builder for the gtk+3 toolkit
 
 GNOME_VERSION=	3.18.3
-REVISION=	0
 GNOME_PROJECT= 	glade
 REVISION=       1
 

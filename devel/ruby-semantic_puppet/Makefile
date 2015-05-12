@@ -4,8 +4,7 @@ COMMENT =		compare semantic versioning
 
 DISTNAME =		semantic_puppet-0.1.1
 CATEGORIES =		devel
-HOMEPAGE =		https://github.com/puppetlabs/semantic_puppet-gem	
-MAINTAINER =		Sebastian Reitenbach <sebastia@openbsd.org>
+HOMEPAGE =		https://github.com/puppetlabs/semantic_puppet-gem
 
 # Apache 2.0
 PERMIT_PACKAGE_CDROM =   Yes

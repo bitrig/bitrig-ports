@@ -3,7 +3,6 @@
 COMMENT=	utilities for dot.desktop entries
 
 DISTNAME=	desktop-file-utils-0.22
-REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 REVISION=	0
 

@@ -7,7 +7,6 @@ ONLY_FOR_ARCHS =	amd64 arm i386 powerpc sparc sparc64
 MODPY_EGG_VERSION = 0.4.0
 DISTNAME =	greenlet-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
-REVISION =	0
 EXTRACT_SUFX =	.zip
 REVISION =	0
 

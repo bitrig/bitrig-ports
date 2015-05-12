@@ -11,7 +11,6 @@ GH_PROJECT =	MultiMarkdown-4
 GH_TAGNAME =	${V}
 
 HOMEPAGE =	http://fletcherpenney.net/multimarkdown/
-MAINTAINER =	Sean Levy <attila@stalphonsos.com>
 
 # Dual licensed: MIT and GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes

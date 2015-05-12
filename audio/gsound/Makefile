@@ -9,8 +9,6 @@ SHARED_LIBS +=  gsound                    0.0 # 0.0
 
 CATEGORIES=		audio
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 

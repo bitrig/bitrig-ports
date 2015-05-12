@@ -8,7 +8,6 @@ PKGNAME =		retroshare-${V}
 REVISION =		1
 CATEGORIES =		net security
 HOMEPAGE =		http://retroshare.sourceforge.net
-REVISION =		0
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes

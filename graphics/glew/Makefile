@@ -6,7 +6,6 @@ NOT_FOR_ARCHS=	m88k
 COMMENT=	GL Extension Wrangler library
 
 DISTNAME=	glew-1.10.0
-REVISION=	0
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=glew/}
 EXTRACT_SUFX=	.tgz

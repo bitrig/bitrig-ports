@@ -7,7 +7,6 @@ BROKEN =		needs work on bitrig
 COMMENT =		statically typed, imperative programming language
 
 VERSION =		0.9.4
-REVISION =		0
 DISTNAME =		nimrod-${VERSION}
 REVISION =		0
 

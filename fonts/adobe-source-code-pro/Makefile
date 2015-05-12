@@ -3,7 +3,6 @@
 COMMENT =	monospaced OpenType fonts designed for coding environments
 PKG_ARCH =	*
 VERSION =	1.017
-REVISION =	0
 DISTNAME =	SourceCodePro_FontsOnly-${VERSION}
 PKGNAME =	adobe-source-code-pro-${VERSION}
 CATEGORIES =	fonts x11

@@ -3,7 +3,6 @@
 COMMENT =		gnome-mplayer browser media plugin
 V =			1.0.9
 DISTNAME =		gecko-mediaplayer-${V}
-REVISION =		0
 EPOCH =			0
 CATEGORIES =		www
 REVISION =		0

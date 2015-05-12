@@ -5,7 +5,6 @@ PKG_ARCH=	*
 COMMENT=	TrueType fonts for Indic scripts
 
 VERSION=	2.5.3
-REVISION=	0
 PKGNAME=	lohit-fonts-${VERSION}
 CATEGORIES=	fonts x11
 HOMEPAGE=	https://fedorahosted.org/lohit/

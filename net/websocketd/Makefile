@@ -15,8 +15,6 @@ CATEGORIES =		net www
 
 HOMEPAGE =		http://websocketd.com/
 
-MAINTAINER =		Kent R. Spillner <kspillner@openbsd.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -6,8 +6,6 @@ DISTNAME =		Exporter-Tiny-0.042
 
 CATEGORIES =		devel
 
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
-
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -2,7 +2,6 @@
 
 COMMENT =	gnome-mplayer toolkit
 DISTNAME =	gmtk-1.0.9
-REVISION =	0
 EPOCH =		0
 REVISION =	0
 

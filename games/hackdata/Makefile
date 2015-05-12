@@ -4,7 +4,6 @@ COMMENT =	common data for the nethack/slash ports
 V =		3.4.3
 DISTNAME =	nethack-$V
 PKGNAME =	hackdata-$V
-REVISION =	0
 CATEGORIES =	games
 REVISION =	0
 

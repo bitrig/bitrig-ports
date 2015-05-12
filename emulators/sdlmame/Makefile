@@ -13,7 +13,6 @@ COMMENT-tools =		tools to manipulate MAME/MESS roms and disk images
 V =			160
 DISTNAME =		mame0${V}s
 PKGNAME-main =		sdlmame-0.${V}
-REVISION =		0
 PKGNAME-tools =		sdlmame-tools-0.${V}
 REVISION =		0
 
