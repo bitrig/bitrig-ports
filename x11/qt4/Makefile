@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.125 2014/11/13 18:33:24 zhuk Exp $
+# $OpenBSD: Makefile,v 1.126 2015/05/13 14:03:07 kettenis Exp $
 
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 SHARED_ONLY =		Yes
@@ -29,7 +29,7 @@ REVISION-debug =	0
 REVISION-html =		1
 REVISION-mysql =	4
 REVISION-postgresql =	3
-REVISION-main =		4
+REVISION-main =		5
 REVISION-examples =	3
 REVISION-sqlite2 =	3
 REVISION-tds =		3
