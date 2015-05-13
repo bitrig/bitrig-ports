@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/05/13 05:08:26 jasper Exp $
+# $OpenBSD: Makefile,v 1.16 2015/05/13 14:54:14 jca Exp $
 
 # Note: use 'ulimit -n 1024' for regress tests
 
@@ -7,7 +7,7 @@ SHARED_ONLY =		Yes
 COMMENT =		open source message queue optimised for performance
 
 DISTNAME =		zeromq-4.0.5
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS +=  zmq                  4.0      # 4.0
 
@@ -26,16 +26,12 @@ LIB_DEPENDS =		security/libsodium
 
 USE_GMAKE =		Yes
 
-MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/config
-
-# test_connect_delay.cpp:260:2: error: no newline at end of file
-post-extract:
-	echo "" >> ${WRKSRC}/tests/test_connect_delay.cpp
-# XXX libsodium: https://github.com/jedisct1/libsodium/pull/104
 CFLAGS +=		-Wno-long-long
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	${CONFIGURE_SHARED} \
 			--with-libsodium=${LOCALBASE}
+# XXX libsodium: https://github.com/jedisct1/libsodium/pull/104
+CONFIGURE_ENV =		CXXFLAGS="-Wno-long-long ${CXXFLAGS}"
 
 .include <bsd.port.mk>
