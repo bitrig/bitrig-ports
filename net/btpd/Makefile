@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/10/11 23:50:15 naddy Exp $
+# $OpenBSD: Makefile,v 1.16 2015/05/15 08:59:08 bentley Exp $
 
 COMMENT=		BitTorrent Protocol Daemon
 
