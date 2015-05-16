@@ -1,24 +1,24 @@
-aarch64-unknown-bitrig0.1/
-aarch64-unknown-bitrig0.1/bin/
-@bin aarch64-unknown-bitrig0.1/bin/ar
-@bin aarch64-unknown-bitrig0.1/bin/as
-@bin aarch64-unknown-bitrig0.1/bin/ld
-@bin aarch64-unknown-bitrig0.1/bin/ld.bfd
-@bin aarch64-unknown-bitrig0.1/bin/nm
-@bin aarch64-unknown-bitrig0.1/bin/objcopy
-@bin aarch64-unknown-bitrig0.1/bin/objdump
-@bin aarch64-unknown-bitrig0.1/bin/ranlib
-@bin aarch64-unknown-bitrig0.1/bin/strip
-aarch64-unknown-bitrig0.1/lib/
-aarch64-unknown-bitrig0.1/lib/ldscripts/
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.x
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.xbn
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.xc
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.xn
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.xr
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.xs
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.xsc
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.xsw
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.xu
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.xw
-aarch64-unknown-bitrig0.1/lib/ldscripts/aarch64bitrig.xz
+aarch64-unknown-bitrig${OSREV}/
+aarch64-unknown-bitrig${OSREV}/bin/
+@bin aarch64-unknown-bitrig${OSREV}/bin/ar
+@bin aarch64-unknown-bitrig${OSREV}/bin/as
+@bin aarch64-unknown-bitrig${OSREV}/bin/ld
+@bin aarch64-unknown-bitrig${OSREV}/bin/ld.bfd
+@bin aarch64-unknown-bitrig${OSREV}/bin/nm
+@bin aarch64-unknown-bitrig${OSREV}/bin/objcopy
+@bin aarch64-unknown-bitrig${OSREV}/bin/objdump
+@bin aarch64-unknown-bitrig${OSREV}/bin/ranlib
+@bin aarch64-unknown-bitrig${OSREV}/bin/strip
+aarch64-unknown-bitrig${OSREV}/lib/
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.x
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.xbn
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.xc
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.xn
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.xr
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.xs
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.xsc
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.xsw
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.xu
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.xw
+aarch64-unknown-bitrig${OSREV}/lib/ldscripts/aarch64bitrig.xz

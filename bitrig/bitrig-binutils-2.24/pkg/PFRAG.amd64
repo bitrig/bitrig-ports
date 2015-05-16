@@ -1,83 +1,83 @@
-x86_64-unknown-bitrig0.1/
-x86_64-unknown-bitrig0.1/bin/
-@bin x86_64-unknown-bitrig0.1/bin/ar
-@bin x86_64-unknown-bitrig0.1/bin/as
-@bin x86_64-unknown-bitrig0.1/bin/ld
-@bin x86_64-unknown-bitrig0.1/bin/ld.bfd
-@bin x86_64-unknown-bitrig0.1/bin/nm
-@bin x86_64-unknown-bitrig0.1/bin/objcopy
-@bin x86_64-unknown-bitrig0.1/bin/objdump
-@bin x86_64-unknown-bitrig0.1/bin/ranlib
-@bin x86_64-unknown-bitrig0.1/bin/strip
-x86_64-unknown-bitrig0.1/lib/
-x86_64-unknown-bitrig0.1/lib/ldscripts/
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.x
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xbn
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xd
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xdc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xdcz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xdw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xdz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xn
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xr
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xs
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xsc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xsw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xu
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_i386.xz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.x
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xbn
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xd
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xdc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xdcz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xdw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xdz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xn
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xr
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xs
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xsc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xsw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xu
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_k1om.xz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.x
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xbn
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xd
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xdc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xdcz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xdw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xdz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xn
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xr
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xs
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xsc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xsw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xu
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_l1om.xz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.x
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xbn
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xd
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xdc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xdcz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xdw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xdz
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xn
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xr
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xs
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xsc
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xsw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xu
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xw
-x86_64-unknown-bitrig0.1/lib/ldscripts/elf_x86_64.xz
-x86_64-unknown-bitrig0.1/lib/ldscripts/i386nbsd.x
-x86_64-unknown-bitrig0.1/lib/ldscripts/i386nbsd.xbn
-x86_64-unknown-bitrig0.1/lib/ldscripts/i386nbsd.xn
-x86_64-unknown-bitrig0.1/lib/ldscripts/i386nbsd.xr
-x86_64-unknown-bitrig0.1/lib/ldscripts/i386nbsd.xu
-x86_64-unknown-bitrig0.1/lib/ldscripts/i386nbsd.xz
+x86_64-unknown-bitrig${OSREV}/
+x86_64-unknown-bitrig${OSREV}/bin/
+@bin x86_64-unknown-bitrig${OSREV}/bin/ar
+@bin x86_64-unknown-bitrig${OSREV}/bin/as
+@bin x86_64-unknown-bitrig${OSREV}/bin/ld
+@bin x86_64-unknown-bitrig${OSREV}/bin/ld.bfd
+@bin x86_64-unknown-bitrig${OSREV}/bin/nm
+@bin x86_64-unknown-bitrig${OSREV}/bin/objcopy
+@bin x86_64-unknown-bitrig${OSREV}/bin/objdump
+@bin x86_64-unknown-bitrig${OSREV}/bin/ranlib
+@bin x86_64-unknown-bitrig${OSREV}/bin/strip
+x86_64-unknown-bitrig${OSREV}/lib/
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.x
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xbn
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xd
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xdc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xdcz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xdw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xdz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xn
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xr
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xs
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xsc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xsw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xu
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_i386.xz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.x
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xbn
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xd
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xdc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xdcz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xdw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xdz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xn
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xr
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xs
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xsc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xsw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xu
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_k1om.xz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.x
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xbn
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xd
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xdc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xdcz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xdw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xdz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xn
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xr
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xs
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xsc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xsw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xu
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_l1om.xz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.x
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xbn
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xd
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xdc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xdcz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xdw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xdz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xn
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xr
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xs
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xsc
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xsw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xu
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xw
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/elf_x86_64.xz
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/i386nbsd.x
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/i386nbsd.xbn
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/i386nbsd.xn
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/i386nbsd.xr
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/i386nbsd.xu
+x86_64-unknown-bitrig${OSREV}/lib/ldscripts/i386nbsd.xz
