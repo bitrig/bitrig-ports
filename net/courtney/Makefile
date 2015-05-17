@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/11 11:35:45 espie Exp $
+# $OpenBSD: Makefile,v 1.11 2015/05/17 11:42:17 sthen Exp $
 
 COMMENT=	simple port scan detector
 

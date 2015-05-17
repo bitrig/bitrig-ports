@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 11:41:28 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2015/05/17 11:42:18 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -16,7 +16,8 @@ EXTRACT_SUFX=	.tgz
 HOMEPAGE=	http://www.jps.net/coati/archives/slurpie.html
 
 PERMIT_PACKAGE_CDROM=   Yes
-WANTLIB=		c
+
+WANTLIB += c
 
 NO_TEST=	Yes
 

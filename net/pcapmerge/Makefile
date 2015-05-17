@@ -1,4 +1,4 @@
-#   $OpenBSD: Makefile,v 1.15 2013/10/11 23:50:32 naddy Exp $
+#   $OpenBSD: Makefile,v 1.16 2015/05/17 11:42:17 sthen Exp $
 
 COMMENT=	merge and extract portions of binary pcap files
 
