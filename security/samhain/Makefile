@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2014/09/14 05:58:07 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.23 2015/05/17 16:04:10 robert Exp $
 
 BROKEN= 		needs work on bitrig
 
@@ -6,7 +6,7 @@ COMMENT-main=		Samhain Intrusion Detection System - documentation
 COMMENT-client=		Samhain Intrusion Detection System - client
 COMMENT-server=		Samhain Intrusion Detection System - server
 
-VERSION=		3.0.4
+VERSION=		3.1.5
 DISTNAME=		samhain-${VERSION}
 FULLPKGNAME-main=	samhain-docs-${VERSION}
 FULLPKGPATH-main=	security/samhain,-main
@@ -14,14 +14,10 @@ FULLPKGNAME-client=	samhain-${VERSION}
 FULLPKGPATH-client=	security/samhain,-client
 PKGNAME-server=		samhain-server-${VERSION}
 
-REVISION-main=		6
-REVISION-client=	12
-REVISION-server=	13
-
 CATEGORIES=		security
 
 HOMEPAGE=		http://la-samhna.de/samhain/
-MASTER_SITES=		http://blade2k.humppa.hu/
+MASTER_SITES=		http://nerd.hu/distfiles/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
@@ -45,7 +41,7 @@ SUBST_VARS=		FLAVOR
 MULTI_PACKAGES+=	-server
 RUN_DEPENDS-server+=	security/samhain,-main
 LIB_DEPENDS-server+=	databases/mariadb,-main
-WANTLIB-server+=	c crypto m mysqlclient ssl z
+WANTLIB-server+=	c crypto m mysqlclient pthread ssl z
 CONFIGURE_ARGS+=	--with-database=mysql \
 			--enable-xml-log \
 			--with-cflags=-I${LOCALBASE}/include/mysql \
