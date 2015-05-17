@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.37 2015/02/16 22:57:11 naddy Exp $
+# $OpenBSD: Makefile,v 1.38 2015/05/17 11:20:50 sthen Exp $
 
 COMMENT=	internet relay chat (irc) server
 
@@ -11,9 +11,10 @@ MASTER_SITES=   ftp://ftp.irc.org/irc/server/Old/ \
                 ftp://ftp.ntua.gr/pub/net/irc/server/
 EXTRACT_SUFX=	.tgz
 
-# GPLv1+
+# GPLv1+ (yes, really!)
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m z
+
+WANTLIB += c m z
 
 LOCALSTATEDIR=	${BASELOCALSTATEDIR}/run
 
@@ -24,7 +25,7 @@ CONFIGURE_ARGS=	--logdir="/var/log/ircd" \
 		--sysconfdir=${CONFDIR}
 
 FLAVORS=	ipv6 hub
-FLAVOR?=	
+FLAVOR?=
 
 .if ${FLAVOR:Mipv6}
 CONFIGURE_ARGS+=	--enable-ip6
@@ -47,7 +48,7 @@ pre-configure:
 
 NO_TEST=	Yes
 
-do-install:	
+do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/ircd
 	cd ${WRKBUILD}; ${INSTALL_PROGRAM} \
 		iauth chkconf ircdwatch ircd-mkpasswd ircd \
