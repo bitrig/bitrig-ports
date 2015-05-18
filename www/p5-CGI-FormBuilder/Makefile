@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2015/01/21 14:42:32 sthen Exp $
+# $OpenBSD: Makefile,v 1.10 2015/05/18 11:29:38 jasper Exp $
 
 COMMENT=	easily generate and process stateful forms
 
@@ -18,6 +18,6 @@ TEST_DEPENDS=textproc/p5-Template \
 		www/p5-HTML-Template
 
 post-extract:
-	@rm -f ${WRKSRC}/lib/CGI/FormBuilder.pm.orig
+	rm ${WRKSRC}/lib/CGI/FormBuilder.pm.orig
 
 .include <bsd.port.mk>
