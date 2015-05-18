@@ -17,13 +17,13 @@ $OpenBSD: patch-Makefile_in,v 1.9 2013/03/22 17:55:42 giovanni Exp $
  	os_qnxnto.h os_solaris.cpp os_solaris.h os_solaris_ata.s \
  	os_win32.cpp os_generic.cpp os_generic.h cciss.cpp cciss.h \
  	cissio_freebsd.h dev_areca.cpp dev_areca.h dev_legacy.cpp \
-@@ -273,8 +275,8 @@ man8dir = $(mandir)/man8
+@@ -338,8 +338,8 @@ man5dir = $(mandir)/man5
+ man8dir = $(mandir)/man8
  NROFF = nroff
  MANS = $(man_MANS)
- DATA = $(attributelog_DATA) $(docs_DATA) $(drivedb_DATA) \
--	$(examples_DATA) $(initd_DATA) $(savestates_DATA) \
+-DATA = $(docs_DATA) $(drivedb_DATA) $(examples_DATA) $(initd_DATA) \
 -	$(sysconf_DATA) $(systemdsystemunit_DATA)
-+	$(examples_DATA) $(savestates_DATA) \
++DATA = $(docs_DATA) $(drivedb_DATA) $(examples_DATA) \
 +	$(systemdsystemunit_DATA)
  ETAGS = etags
  CTAGS = ctags
@@ -47,6 +47,12 @@ $OpenBSD: patch-Makefile_in,v 1.9 2013/03/22 17:55:42 giovanni Exp $
 @@ -490,17 +494,7 @@ EXTRA_smartd_SOURCES = os_darwin.cpp os_darwin.h os_li
  @OS_SOLARIS_FALSE@                  smartd.8
  
+ am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) \
+ 	$(LISP)config.h.in
+ # Read a list of newline-separated strings from the standard input,
+@@ -576,17 +576,7 @@ EXTRA_smartd_SOURCES = os_darwin.cpp os_darwin.h os_li
+ @OS_SOLARIS_FALSE@man_MANS = smartd.conf.5 smartctl.8 smartd.8 \
+ @OS_SOLARIS_FALSE@	$(am__append_23)
  docsdir = $(docdir)
 -docs_DATA = \
 -        AUTHORS \
@@ -63,20 +69,17 @@ $OpenBSD: patch-Makefile_in,v 1.9 2013/03/22 17:55:42 giovanni Exp $
  
  examplesdir = $(exampledir)
  examples_DATA = \
-@@ -510,13 +504,14 @@ examples_SCRIPTS = \
-         examplescripts/Example1 \
-         examplescripts/Example2 \
+@@ -598,10 +588,11 @@ examples_SCRIPTS = \
          examplescripts/Example3 \
--        examplescripts/Example4
-+        examplescripts/Example4 \
-+		smartd_warning.sh
+         examplescripts/Example4 \
+         examplescripts/Example5 \
+-        examplescripts/Example6
++        examplescripts/Example6 \
++	smartd_warning.sh
  
  sysconf_DATA = smartd.conf
- 
- # automake does not allow 'sysconf_SCRIPTS'
- sysscriptdir = $(sysconfdir)
--sysscript_SCRIPTS = smartd_warning.sh
-+sysscript_SCRIPTS =
+-smartdscript_SCRIPTS = smartd_warning.sh
++smartdscript_SCRIPTS =
  EXTRA_DIST = \
          autogen.sh \
          smartd.initd.in \
