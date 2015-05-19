@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.50 2013/11/09 23:19:02 naddy Exp $
+# $OpenBSD: Makefile,v 1.51 2015/05/19 09:54:53 kettenis Exp $
 
 COMMENT=	GNU parser generator
 
