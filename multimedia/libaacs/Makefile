@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.7 2014/09/16 18:11:35 landry Exp $
+# $OpenBSD: Makefile,v 1.8 2015/05/19 21:24:03 ajacoutot Exp $
 
 BROKEN = 		needs work on bitrig
 
 SHARED_ONLY =		Yes
 
-BROKEN-powerpc =	fails to link, undefined refs to free/malloc
 COMMENT =		AACS support library for Blu-ray playback
 
 V =			0.5.0
@@ -29,7 +28,7 @@ WANTLIB +=		c gcrypt gpg-error pthread
 MODULES =		devel/gettext
 
 LIB_DEPENDS =		security/libgcrypt
-BUILD_DEPENDS =		devel/bison \
+BUILD_DEPENDS =		devel/bison>=2.3p2 \
 			devel/flex
 
 MAKE_FLAGS =		CFLAGS="${CFLAGS}"
