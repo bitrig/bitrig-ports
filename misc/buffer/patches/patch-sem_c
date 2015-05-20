@@ -1,0 +1,11 @@
+--- sem.c.orig	Wed May 20 05:36:13 2015
++++ sem.c	Wed May 20 05:36:17 2015
+@@ -94,7 +94,7 @@ new_sems( nsems )
+ 	return sem;
+ }
+ 
+-static
++static void
+ do_sem( sem_id, pbuf, err )
+ 	int sem_id;
+ 	struct sembuf *pbuf;
