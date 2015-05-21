@@ -3,7 +3,6 @@
 COMMENT=		C++ library to create, manipulate and render SVG files
 
 DISTNAME=		wxsvg-1.4.2
-REVISION=		0
 EPOCH=			0
 REVISION=		1
 CATEGORIES=		x11 graphics

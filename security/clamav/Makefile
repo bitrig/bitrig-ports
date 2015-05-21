@@ -15,7 +15,8 @@ HOMEPAGE=		http://www.clamav.net/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += bz2 c crypto curl idn ltdl lzma m milter ncurses
-WANTLIB += pthread ssl stdc++ xml2 z
+WANTLIB += pthread ssl xml2 z
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS=		devel/check \
 			devel/libexecinfo

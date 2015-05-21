@@ -5,8 +5,6 @@ COMMENT =		testing module for YAML implementations
 DISTNAME =		Test-YAML-1.05
 CATEGORIES =		devel
 
-MAINTAINER =		Andrew Fresh <afresh1@openbsd.org>
-
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan

@@ -8,8 +8,6 @@ DISTNAME =		pbkdf2-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		security devel
 
-MAINTAINER =		Giannis Tsaraias <yannis@cryptolab.net>
-
 HOMEPAGE =		http://www.dlitz.net/software/python-pbkdf2/
 
 # MIT

@@ -12,8 +12,6 @@ CATEGORIES=	lang devel
 
 HOMEPAGE=	http://fsharp.org/
 
-MAINTAINER=	Aaron Bieber <abieber@openbsd.org>
-
 # Apache 2
 PERMIT_PACKAGE_CDROM=	Yes
 

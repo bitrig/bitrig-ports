@@ -12,12 +12,12 @@ MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX =		.tar.bz2
 
 HOMEPAGE =		http://www.courier-mta.org/imap/
-MAINTAINER =		Giovanni Bechis <giovanni@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB +=		m stdc++
+WANTLIB +=		m
+WANTLIB +=		c++ c++abi
 MODULES =		converters/libiconv
 
 USE_GMAKE =		Yes

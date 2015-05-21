@@ -31,8 +31,6 @@ REVISION-qt3=	2
 REVISION-qt4=	3
 REVISION-ui=	3
 
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
-
 SHARED_LIBS +=  avahi-common         0.0      # .8.0
 SHARED_LIBS +=  avahi-core           0.0      # .5.5
 SHARED_LIBS +=  avahi-client         5.0      # .5.4
@@ -173,7 +171,7 @@ CONFIGURE_ARGS+= --disable-gtk \
 WANTLIB-qt3=	GL ICE SM X11 Xcursor Xext Xfixes Xft Xi \
 		Xinerama Xmu Xrandr Xrender Xt expat fontconfig \
 		freetype jpeg lcms m mng png pthread xcb z \
-		avahi-common stdc++ ${MODQT3_WANTLIB} ${MODGETTEXT_WANTLIB} \
+		avahi-common ${MODQT3_WANTLIB} ${MODGETTEXT_WANTLIB} \
 		Xdamage Xxf86vm drm pthread-stubs
 
 .if ${BUILD_PACKAGES:M-qt3}
@@ -186,7 +184,7 @@ LIB_DEPENDS-qt3= ${MODGETTEXT_LIB_DEPENDS} \
 CONFIGURE_ARGS+= --disable-qt3
 .endif
 
-WANTLIB-qt4=	QtCore avahi-common m stdc++ ${MODGETTEXT_WANTLIB} \
+WANTLIB-qt4=	QtCore avahi-common m ${MODGETTEXT_WANTLIB} \
 		pthread
 
 .if ${BUILD_PACKAGES:M-qt4}

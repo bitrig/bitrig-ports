@@ -11,8 +11,6 @@ MASTER_SITES=	http://www.igniterealtime.org/downloadServlet?filename=openfire/
 
 HOMEPAGE=	http://www.igniterealtime.org/projects/openfire/index.jsp
 
-MAINTAINER=	Marc Peters <marc@mpeters.org>
-
 # ASL 2.0
 PERMIT_PACKAGE_CDROM=	Yes
 

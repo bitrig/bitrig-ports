@@ -7,8 +7,6 @@ DISTNAME =	Text-CSV_XS-1.17
 CATEGORIES =	textproc
 EXTRACT_SUFX =	.tgz
 
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
-
 MODULES =	cpan
 
 # Perl

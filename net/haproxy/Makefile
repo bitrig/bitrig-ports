@@ -6,7 +6,6 @@ DISTNAME =	haproxy-1.5.12
 REVISION =	0
 CATEGORIES =	net www
 HOMEPAGE =	http://www.haproxy.org/
-MAINTAINER =	Daniel Jakots <obsd@chown.me>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes

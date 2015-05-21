@@ -20,7 +20,7 @@ WANTLIB += gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0
 WANTLIB += gobject-2.0 graphite2 gstinterfaces-0.10 gstreamer-0.10
 WANTLIB += gthread-2.0 gtk-x11-2.0 harfbuzz idn lzma m notify pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread
-WANTLIB += pthread-stubs ssl stdc++ xcb xcb-render xcb-shm xml2 z
+WANTLIB += pthread-stubs ssl xcb xcb-render xcb-shm xml2 z
 WANTLIB += c++ c++abi
 
 MASTER_SITES=		http://vagalume.igalia.com/files/source/

@@ -7,8 +7,6 @@ REVISION =		0
 CATEGORIES =		audio
 HOMEPAGE =		http://www.musicpd.org/
 
-REVISION =		0
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 

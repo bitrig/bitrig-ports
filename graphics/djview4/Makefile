@@ -7,7 +7,6 @@ BROKEN= 	needs work on bitrig
 COMMENT=	portable DjVu viewer and browser plugin
 
 DISTNAME=	djview-4.10.3
-REVISION=	0
 PKGNAME=	${DISTNAME:S/djview/djview4/}
 REVISION=	2
 CATEGORIES=	graphics print

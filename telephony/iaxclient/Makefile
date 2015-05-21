@@ -29,7 +29,8 @@ cWANTLIB	+= avcodec gsm m ogg ossaudio portaudio pthread speex
 cWANTLIB	+= speexdsp sndio theora vidcap z
 
 WANTLIB-main 	+= avutil c mp3lame vorbis vorbisenc vpx x264 ${cWANTLIB}
-WANTLIB-main 	+= opus stdc++ swresample x265 xvidcore
+WANTLIB-main 	+= opus swresample x265 xvidcore
+WANTLIB-main	+= c++ c++abi
 
 WANTLIB-tcl	+= X11 Xcomposite Xcursor Xdamage Xext Xfixes
 WANTLIB-tcl	+= Xi Xinerama Xrandr Xrender atk-1.0 c cairo

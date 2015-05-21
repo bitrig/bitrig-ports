@@ -24,7 +24,7 @@ WANTLIB += gthread-2.0 gtk-3 harfbuzz harfbuzz-icu icudata icui18n icuuc
 WANTLIB += javascriptcoregtk-3.0 jpeg json-glib-1.0 lzma m notify
 WANTLIB += orc-0.4 pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre peas-1.0
 WANTLIB += peas-gtk-1.0 pixman-1 png pthread pthread-stubs secret-1
-WANTLIB += soup-2.4 sqlite3 stdc++ webkitgtk-3.0 webp xcb xcb-render
+WANTLIB += soup-2.4 sqlite3 webkitgtk-3.0 webp xcb xcb-render
 WANTLIB += xcb-shm xml2 xslt z
 WANTLIB += c++ c++abi
 

@@ -23,7 +23,7 @@ WANTLIB += ${KDE}/kwalletclient
 WANTLIB += GL ICE SM X11 X11-xcb Xau Xcursor Xdamage Xdmcp Xext Xfixes
 WANTLIB += Xft Xi Xinerama Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 c
 WANTLIB += drm expat fam fontconfig freetype glapi idn jpeg lcms m mng
-WANTLIB += png pthread pthread-stubs stdc++ util xcb xcb-dri2 xcb-glx z
+WANTLIB += png pthread pthread-stubs util xcb xcb-dri2 xcb-glx z
 WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kxmleditor/}

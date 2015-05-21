@@ -6,7 +6,6 @@ COMMENT =		Tcl extension module for Perl
 
 DISTNAME =		Tcl-1.02
 CATEGORIES =		devel lang
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

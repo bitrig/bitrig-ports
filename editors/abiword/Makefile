@@ -31,7 +31,7 @@ WANTLIB += goffice-0.10 gpg-error graphite2 gs gsf-1 gthread-2.0 gtk-3
 WANTLIB += harfbuzz hogweed idn jpeg ltdl lzma m mpfr nettle p11-kit
 WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png
 WANTLIB += pthread pthread-stubs raptor2 rasqal rdf rsvg-2 spectre ssl
-WANTLIB += stdc++ tasn1 uuid wmf-0.2 wmflite-0.2 wv-1.2 xcb xcb-render
+WANTLIB += tasn1 uuid wmf-0.2 wmflite-0.2 wv-1.2 xcb xcb-render
 WANTLIB += xcb-shm xml2 xslt yajl z
 WANTLIB += c++ c++abi
 

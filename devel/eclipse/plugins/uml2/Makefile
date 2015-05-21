@@ -5,7 +5,6 @@ COMMENT=		UML diagram framework for Eclipse
 V=			2.0.3
 DISTNAME=		uml2-SDK-${V}
 PKGNAME=		eclipse-plugin-uml2-sdk-${V}
-REVISION=		0
 CATEGORIES+=		java
 REVISION=		0
 

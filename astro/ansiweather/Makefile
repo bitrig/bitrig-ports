@@ -5,7 +5,6 @@ DISTNAME =	ansiweather-${GH_TAGNAME}
 CATEGORIES =	astro
 
 HOMEPAGE =	https://github.com/fcambus/ansiweather
-MAINTAINER =	Frederic Cambus <fcambus@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

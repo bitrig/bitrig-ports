@@ -15,8 +15,6 @@ CATEGORIES=		www
 
 HOMEPAGE=		https://iridiumbrowser.de/
 
-MAINTAINER=		Robert Nagy <robert@openbsd.org>
-
 EXTRACT_SUFX=		.tar.xz
 
 FLAVORS=		debug
@@ -47,11 +45,11 @@ WANTLIB += png pthread speex
 WANTLIB += xml2 xslt
 WANTLIB += usb-1.0 sndio
 WANTLIB += Xcomposite
-WANTLIB += stdc++
 WANTLIB += Xi Xtst
 WANTLIB += Xdamage
 WANTLIB += Xcursor Xrandr gio-2.0
 WANTLIB += jpeg nspr4 nss3 nssutil3 plc4 smime3
+WANTLIB += c++ c++abi
 
 RUN_DEPENDS=	devel/xdg-utils \
 		devel/desktop-file-utils \

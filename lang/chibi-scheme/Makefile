@@ -12,8 +12,6 @@ CATEGORIES =	lang
 
 HOMEPAGE =	http://synthcode.com/wiki/chibi-scheme
 
-MAINTAINER =	Juan Francisco Cantero Hurtado <juanfra@openbsd.org>
-
 # New BSD License
 PERMIT_PACKAGE_CDROM = Yes
 

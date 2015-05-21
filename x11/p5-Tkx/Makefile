@@ -4,7 +4,6 @@ COMMENT =		Tk extension module for Perl
 
 DISTNAME =		Tkx-1.09
 CATEGORIES =		x11 devel
-MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

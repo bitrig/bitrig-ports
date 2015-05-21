@@ -11,8 +11,6 @@ CATEGORIES=	textproc devel
 
 HOMEPAGE=	http://lxml.de/
 
-MAINTAINER =	Sean Levy <attila@stalphonsos.com>
-
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 

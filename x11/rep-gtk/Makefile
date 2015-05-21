@@ -8,7 +8,6 @@ VERSION=	0.90.8.1
 DISTNAME=	rep-gtk-${VERSION}
 REVISION=	1
 CATEGORIES=     x11
-REVISION=	0
 
 HOMEPAGE=       http://rep-gtk.sourceforge.net/
 

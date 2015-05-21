@@ -4,7 +4,6 @@ SHARED_ONLY=	Yes
 
 COMMENT=	XF86Audio multimedia-key support for XMMS
 DISTNAME=	xmms-xf86audio-0.4.4
-REVISION=	0
 CATEGORIES=	audio
 HOMEPAGE=	http://www.devin.com/xmms-xf86audio/
 REVISION=	0
