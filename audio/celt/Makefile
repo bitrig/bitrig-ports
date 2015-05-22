@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2015/05/15 11:33:19 jasper Exp $
+# $OpenBSD: Makefile,v 1.17 2015/05/22 11:31:10 ajacoutot Exp $
 
 PORTROACH =	limit:^0\.11\.1
 PORTROACH_COMMENT =	audio/mumble (at least as of 1.2.4) requires *exactly* 0.11.1

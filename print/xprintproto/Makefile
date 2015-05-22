@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 11:37:54 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2015/05/22 11:31:18 ajacoutot Exp $
 
 COMMENT =		X11 printing headers
 

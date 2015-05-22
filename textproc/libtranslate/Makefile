@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/10/26 08:02:57 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2015/05/22 11:31:18 ajacoutot Exp $
 
 SHARED_LIBS +=  translate                 0.0 # 0.0
 

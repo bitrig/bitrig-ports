@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2014/01/14 00:18:35 jca Exp $
+# $OpenBSD: Makefile,v 1.28 2015/05/22 11:31:17 ajacoutot Exp $
 
 SHARED_LIBS =		rtmp 1.0
 

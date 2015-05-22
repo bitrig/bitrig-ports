@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.10 2014/12/17 09:43:39 stsp Exp $
+# $OpenBSD: Makefile,v 1.11 2015/05/22 11:31:17 ajacoutot Exp $
 
 COMMENT =		high performance HTTP client library
 DISTNAME =		serf-1.3.8
 SHARED_LIBS = 		serf-1                    1.0 # 1.3.0
 CATEGORIES =		net
 HOMEPAGE =		https://code.google.com/p/serf/
+REVISION =		0
 
 # APLv2
 PERMIT_PACKAGE_CDROM =	Yes
@@ -28,7 +29,7 @@ post-patch:
 	perl -pi -e \
 		"s/'%d.%d.%d' % \(MAJOR, MINOR, 0\)/'${LIBserf-1_VERSION}.0'/" \
 		${WRKSRC}/SConstruct
-	
+
 do-install:
 	${SETENV} ${MAKE_ENV} ${MODSCONS_BIN} -C ${WRKSRC} \
 		${MODSCONS_ENV} ${MODSCONS_FLAGS} ${INSTALL_TARGET}

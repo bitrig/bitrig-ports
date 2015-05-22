@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.54 2013/09/28 08:50:43 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.55 2015/05/22 11:31:11 ajacoutot Exp $
 
 COMMENT=		high-performance CORBA Object Request Broker
 

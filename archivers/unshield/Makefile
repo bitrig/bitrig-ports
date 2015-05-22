@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/04/04 16:03:56 brad Exp $
+# $OpenBSD: Makefile,v 1.15 2015/05/22 11:31:10 ajacoutot Exp $
 
 COMMENT=		extract files from InstallShield CAB archives
 

@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.11 2015/05/05 17:00:20 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2015/05/22 11:31:20 ajacoutot Exp $
 
 COMMENT =		C++ bindings for gtkglext
 
 DISTNAME =		gtkglextmm-1.2.0
-REVISION =		9
+REVISION =		10
 
 SHARED_LIBS +=		gdkglextmm-x11-1.2        0.0 # 0.0
 SHARED_LIBS +=		gtkglextmm-x11-1.2        0.0 # 0.0

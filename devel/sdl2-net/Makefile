@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/11/07 16:25:22 bcallah Exp $
+# $OpenBSD: Makefile,v 1.2 2015/05/22 11:31:14 ajacoutot Exp $
 
 V =		2.0.0
 COMMENT =	SDL2 cross-platform networking library
@@ -6,6 +6,7 @@ DISTNAME =	SDL2_net-${V}
 PKGNAME =	sdl2-net-${V}
 REVISION =	0
 CATEGORIES =	devel net
+REVISION =	0
 
 SHARED_LIBS +=	SDL2_net		0.0 # 0.0
 

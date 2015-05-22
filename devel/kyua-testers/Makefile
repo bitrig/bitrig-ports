@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/03/16 11:28:42 sthen Exp $
+# $OpenBSD: Makefile,v 1.2 2015/05/22 11:31:12 ajacoutot Exp $
 
 COMMENT =		scriptable interfaces to interact with test programs
 DISTNAME =		kyua-testers-0.2

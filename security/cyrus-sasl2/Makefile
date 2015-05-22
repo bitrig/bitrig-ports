@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.84 2014/09/13 18:09:22 brad Exp $
+# $OpenBSD: Makefile,v 1.85 2015/05/22 11:31:18 ajacoutot Exp $
 
 COMMENT=	RFC 2222 SASL (Simple Authentication and Security Layer)
 

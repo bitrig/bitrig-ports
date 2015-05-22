@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/07/10 13:09:53 bentley Exp $
+# $OpenBSD: Makefile,v 1.2 2015/05/22 11:31:18 ajacoutot Exp $
 
 COMMENT =		tools to fiddle with dates and times
 

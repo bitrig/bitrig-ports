@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/04/23 14:50:19 sthen Exp $
+# $OpenBSD: Makefile,v 1.3 2015/05/22 11:31:11 ajacoutot Exp $
 
 COMMENT=	software to turn RTL2832U into an SDR
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/09/27 13:00:24 jasper Exp $
+# $OpenBSD: Makefile,v 1.10 2015/05/22 11:31:17 ajacoutot Exp $
 
 COMMENT=	Flash 4/5 movie output library
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/07/14 07:35:40 armani Exp $
+# $OpenBSD: Makefile,v 1.9 2015/05/22 11:31:13 ajacoutot Exp $
 
 COMMENT =	abstract the storage of configuration settings
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/11/30 03:14:47 brad Exp $
+# $OpenBSD: Makefile,v 1.4 2015/05/22 11:31:14 ajacoutot Exp $
 
 V =		2.0.0
 COMMENT =	SDL2 multi-channel audio mixer library

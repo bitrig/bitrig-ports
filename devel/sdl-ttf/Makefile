@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2013/12/15 03:10:18 brad Exp $
+# $OpenBSD: Makefile,v 1.43 2015/05/22 11:31:14 ajacoutot Exp $
 
 COMMENT=	SDL TrueType fonts library
 

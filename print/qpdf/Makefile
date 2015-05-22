@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/07/08 16:04:04 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.13 2015/05/22 11:31:18 ajacoutot Exp $
 
 COMMENT=	PDF transformation and inspection utility
 

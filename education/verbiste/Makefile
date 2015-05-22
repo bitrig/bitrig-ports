@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2015/04/21 18:51:24 sthen Exp $
+# $OpenBSD: Makefile,v 1.28 2015/05/22 11:31:14 ajacoutot Exp $
 
 COMMENT=	French and Italian conjugation system
 
@@ -6,7 +6,7 @@ DISTNAME=	verbiste-0.1.41
 SHARED_LIBS=	verbiste-0.1	5.0	# .0.0
 CATEGORIES=	education
 HOMEPAGE=	http://sarrazip.com/dev/verbiste.html
-REVISION=	3
+REVISION=	4
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

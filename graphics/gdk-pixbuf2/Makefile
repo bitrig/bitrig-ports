@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.48 2014/05/27 07:14:47 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.49 2015/05/22 11:31:15 ajacoutot Exp $
 
 COMMENT=		graphic library for gtk+2
 

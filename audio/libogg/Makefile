@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.34 2014/05/28 19:46:01 naddy Exp $
+# $OpenBSD: Makefile,v 1.35 2015/05/22 11:31:10 ajacoutot Exp $
 
 COMMENT=	Ogg bitstream library
 
@@ -7,6 +7,7 @@ REVISION=	0
 CATEGORIES=    	audio
 HOMEPAGE=	https://www.xiph.org/ogg/
 SHARED_LIBS=	ogg	6.2	# 8.2
+REVISION=	0
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2014/05/13 19:39:54 miod Exp $
+# $OpenBSD: Makefile,v 1.4 2015/05/22 11:31:10 ajacoutot Exp $
 
 # Warning: CELT is experimental software. Neither the API/ABI, nor
 # the bit-stream are stable. Compatibility between different releases
@@ -11,6 +11,7 @@ DISTNAME =	celt-$V
 PKGNAME =	celt07-$V
 REVISION =	0
 CATEGORIES =   	audio
+REVISION =	0
 
 HOMEPAGE =	http://www.celt-codec.org/
 

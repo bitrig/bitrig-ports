@@ -1,4 +1,4 @@
-# OpenBSD: Makefile,v 1.25 2014/04/02 09:36:11 jasper Exp $
+# $OpenBSD: Makefile,v 1.26 2015/05/22 11:31:17 ajacoutot Exp $
 
 COMMENT=		DLNA integration for GUPnP
 

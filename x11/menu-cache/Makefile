@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/09/13 16:36:54 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.3 2015/05/22 11:31:20 ajacoutot Exp $
 
 COMMENT=	caching mechanism for freedesktop.org compliant menus
 

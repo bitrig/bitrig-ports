@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/09/22 08:25:57 jasper Exp $
+# $OpenBSD: Makefile,v 1.12 2015/05/22 11:31:15 ajacoutot Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -11,6 +11,7 @@ DISTNAME =		LibRaw-${V}
 PKGNAME =		${DISTNAME:L}
 REVISION=		1
 CATEGORIES =		graphics
+REVISION =		0
 
 SHARED_LIBS +=  raw                  0.0      # 10.0
 SHARED_LIBS +=  raw_r                0.0      # 10.0

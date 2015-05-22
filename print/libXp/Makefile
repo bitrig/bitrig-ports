@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/02/16 22:57:12 naddy Exp $
+# $OpenBSD: Makefile,v 1.5 2015/05/22 11:31:17 ajacoutot Exp $
 
 COMMENT =		X11 printing system
 

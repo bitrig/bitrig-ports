@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/09/13 18:09:22 brad Exp $
+# $OpenBSD: Makefile,v 1.17 2015/05/22 11:31:19 ajacoutot Exp $
 
 MULTI_PACKAGES=		-main -mysql -pgsql
 
@@ -12,9 +12,9 @@ PKGNAME-main=		redland-$V
 PKGNAME-mysql=		redland-mysql-$V
 PKGNAME-pgsql=		redland-pgsql-$V
 CATEGORIES=		textproc
-REVISION=		4
-REVISION-pgsql=		5
-REVISION-mysql=		3
+REVISION=		5
+REVISION-pgsql=		6
+REVISION-mysql=		4
 
 SHARED_LIBS +=	rdf                  1.0      # 0.0
 

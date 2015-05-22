@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/04/11 15:40:21 zhuk Exp $
+# $OpenBSD: Makefile,v 1.4 2015/05/22 11:31:10 ajacoutot Exp $
 
 COMMENT =	implementation of the FITS WCS standard
 CATEGORIES =	astro devel
