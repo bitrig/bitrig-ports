@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/10/04 11:06:06 zhuk Exp $
+# $OpenBSD: Makefile,v 1.4 2015/05/22 11:36:15 ajacoutot Exp $
 
 PKG_ARCH =	*
 COMMENT =	lightweight C++ template library for linear algebra
@@ -9,6 +9,7 @@ VERSION =	3.2.2
 DISTNAME =	${VERSION}
 PKGNAME =	eigen3-${VERSION}
 WRKDIST =	${WRKDIR}/eigen-eigen-1306d75b4a21
+REVISION =	1
 
 # Mostly MPLv2, also LGPLv2.1, LGPLv2.1+ and BSDL
 PERMIT_PACKAGE_CDROM =	Yes

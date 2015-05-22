@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/08/07 21:57:58 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2015/05/22 11:36:15 ajacoutot Exp $
 
 PKG_ARCH =	*
 COMMENT =	lightweight C++ template library for linear algebra

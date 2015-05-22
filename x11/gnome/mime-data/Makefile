@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.36 2013/09/28 08:51:24 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.37 2015/05/22 11:36:16 ajacoutot Exp $
 
 COMMENT=		MIME and application database for GNOME
 

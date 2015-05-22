@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/08/20 10:44:34 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.12 2015/05/22 11:36:16 ajacoutot Exp $
 
 COMMENT =	small JSON library written in ANSI C
 
