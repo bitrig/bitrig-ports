@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/03/11 10:50:11 espie Exp $
+# $OpenBSD: Makefile,v 1.17 2015/05/22 09:17:35 kettenis Exp $
 
 SHARED_ONLY=	Yes
 COMMENT=	lua binding of posix and pcre regex libraries
