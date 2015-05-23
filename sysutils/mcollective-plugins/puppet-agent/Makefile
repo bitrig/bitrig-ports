@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2015/04/05 13:31:15 sthen Exp $
+# $OpenBSD: Makefile,v 1.13 2015/05/23 10:53:25 czarkoff Exp $
 
 COMMENT=		MCollective agent to manage the Puppet agent
 
