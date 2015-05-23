@@ -89,8 +89,6 @@ PKG_ARGS+=-Darm=0
 CONFIGURE_ARGS+=--enable-commonbfdlib=no
 CONFIGURE_ARGS+=--enable-nls=no
 
-SUBST_VARS = OSREV
-
 MASTER_SITES =	${MASTER_SITE_GNU:=binutils/}
 
 HOMEPAGE =	http://www.gnu.org/software/binutils
