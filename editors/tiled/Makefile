@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/03/27 08:11:27 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.5 2015/05/23 10:43:32 espie Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -30,7 +30,7 @@ MODULES =		x11/qt4
 
 MAKE_FLAGS =		CC="${CC}" \
 			CXX="${CXX}" \
-			CXXFLAGS="${CXXFLAGS}" \
+			CXXFLAGS="${CXXFLAGS} -fPIC" \
 			PREFIX="${PREFIX}" \
 			LIBtiled_VERSION="${LIBtiled_VERSION}"
 FAKE_FLAGS =		INSTALL_ROOT="${DESTDIR}"
