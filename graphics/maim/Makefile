@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2015/04/05 13:31:14 sthen Exp $
+# $OpenBSD: Makefile,v 1.10 2015/05/23 16:34:40 czarkoff Exp $
 
 V =		3.3.41
 COMMENT =	desktop screenshot utility (make image)
@@ -8,8 +8,6 @@ CATEGORIES =	graphics x11
 GH_ACCOUNT =	naelstrof
 GH_PROJECT =	maim
 GH_TAGNAME =	v${V}
-
-HOMEPAGE =	https://github.com/naelstrof/maim
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

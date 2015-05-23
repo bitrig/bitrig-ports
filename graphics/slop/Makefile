@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/04/21 02:07:38 bcallah Exp $
+# $OpenBSD: Makefile,v 1.8 2015/05/23 16:34:40 czarkoff Exp $
 
 V =		4.1.16
 COMMENT =	query for a selection and print to stdout (select operation)
@@ -9,8 +9,6 @@ REVISION =	0
 GH_ACCOUNT =	naelstrof
 GH_PROJECT =	slop
 GH_TAGNAME =	v${V}
-
-HOMEPAGE =	https://github.com/naelstrof/slop
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

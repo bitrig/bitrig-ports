@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/04/16 10:27:26 jung Exp $
+# $OpenBSD: Makefile,v 1.7 2015/05/23 16:34:40 czarkoff Exp $
 
 COMMENT =	simple (or small or suckless) X Image Viewer
 
@@ -9,8 +9,6 @@ DISTNAME=	${GH_PROJECT}-${GH_TAGNAME:S/v//}
 REVISION=	0
 
 CATEGORIES =	graphics x11
-
-HOMEPAGE =	https://github.com/muennich/sxiv
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes
