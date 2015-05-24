@@ -1,7 +1,10 @@
-$OpenBSD: patch-configure,v 1.6 2011/11/06 20:28:11 kili Exp $
---- configure.orig	Thu Nov  3 10:55:01 2011
-+++ configure	Mon Jun 11 20:29:24 2012
-@@ -5149,7 +5149,7 @@ else
+$OpenBSD: patch-configure,v 1.7 2015/05/24 10:32:46 ajacoutot Exp $
+
+Remove the use of -Werror.
+
+--- configure.orig	Wed Apr 16 10:44:31 2014
++++ configure	Tue Jul 14 16:07:15 2015
+@@ -5360,7 +5360,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -10,7 +13,7 @@ $OpenBSD: patch-configure,v 1.6 2011/11/06 20:28:11 kili Exp $
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5656,7 +5656,7 @@ newos6*)
+@@ -5872,7 +5872,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -19,16 +22,16 @@ $OpenBSD: patch-configure,v 1.6 2011/11/06 20:28:11 kili Exp $
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -6269,7 +6269,7 @@ old_postuninstall_cmds=
+@@ -6485,7 +6485,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
 -  openbsd*)
 +  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -8717,7 +8717,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -9002,7 +9002,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -37,7 +40,7 @@ $OpenBSD: patch-configure,v 1.6 2011/11/06 20:28:11 kili Exp $
      with_gnu_ld=no
      ;;
    esac
-@@ -9597,7 +9597,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+@@ -9878,7 +9878,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -46,7 +49,7 @@ $OpenBSD: patch-configure,v 1.6 2011/11/06 20:28:11 kili Exp $
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10652,7 +10652,7 @@ newsos6)
+@@ -10925,7 +10925,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -55,21 +58,12 @@ $OpenBSD: patch-configure,v 1.6 2011/11/06 20:28:11 kili Exp $
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -11596,7 +11596,7 @@ case "${target_os}" in
-   *mingw32* | *cygwin* | *wince* | *mingwce*)
-     have_win32="yes"
-     ;;
--  *bsd*)
-+  *bsd* | bitrig*)
-     have_bsd="yes"
-     ;;
- esac
-@@ -11656,8 +11656,6 @@ fi
- if test "$release" = "true"
- then
-   CFLAGS="${CFLAGS} -O6"
--else
--  CFLAGS="${CFLAGS} -O2"
- fi
+@@ -11861,7 +11861,7 @@ CC="$lt_save_CC"
  
- for ac_header in stdint.h inttypes.h
+ CFLAGS_save="${CFLAGS}"
+ 
+-CFLAGS_dist="-Wall -Werror --std=gnu99 -D_GNU_SOURCE"
++CFLAGS_dist="-Wall --std=gnu99 -D_GNU_SOURCE"
+ CFLAGS_dist="${CFLAGS_dist} -Wpointer-arith -Wcast-align -Wcast-qual -Wstrict-prototypes -Wshadow -Waggregate-return -Wmissing-prototypes -Wnested-externs -Wsign-compare"
+ 
+ case "${target_os}" in
