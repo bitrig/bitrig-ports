@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2015/01/22 18:41:16 naddy Exp $
+# $OpenBSD: Makefile,v 1.30 2015/05/25 07:54:27 jasper Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -28,6 +28,6 @@ MAKE_ENV+=MOTIFLIB='-L${LOCALBASE}/lib -lXm'
 NO_TEST=	Yes
 
 post-extract:
-	@rm -f ${WRKSRC}/../misc/plan.1.orig
+	rm ${WRKSRC}/../misc/plan.1.orig
 
 .include <bsd.port.mk>
