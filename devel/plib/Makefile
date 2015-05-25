@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/11/03 07:52:02 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.12 2015/05/25 13:18:24 ajacoutot Exp $
 
 COMMENT =	suite of portable game libraries
 
@@ -7,7 +7,7 @@ REVISION =	5
 CATEGORIES =	devel games
 
 HOMEPAGE =	http://plib.sourceforge.net/
-MASTER_SITES =	${HOMEPAGE}/dist/
+#MASTER_SITES =	${HOMEPAGE}/dist/
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM =	Yes
@@ -16,5 +16,6 @@ PERMIT_PACKAGE_CDROM =	Yes
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	--with-GL=${X11BASE}
 USE_X11 =		Yes
+CXXFLAGS +=		-fPIC
 
 .include <bsd.port.mk>
