@@ -4,7 +4,7 @@ COMMENT=		small tiling window manager
 
 SHARED_LIBS=		swmhack 1.0
 
-DISTNAME=		spectrwm-2.6.2
+DISTNAME=		spectrwm-2.7.1
 EXTRACT_SUFX=		.tgz
 CATEGORIES=		x11
 
