@@ -1,17 +1,18 @@
-# $OpenBSD: Makefile,v 1.19 2013/03/11 14:49:15 benoit Exp $
+# $OpenBSD: Makefile,v 1.20 2015/05/25 03:50:39 afresh1 Exp $
 
-COMMENT=	module to declare real exception classes in perl
+COMMENT =	module to declare real exception classes in perl
 
-MODULES=	cpan
-DISTNAME =	Exception-Class-1.37
-REVISION =	0
-CATEGORIES=	devel
+MODULES =	cpan
+DISTNAME =	Exception-Class-1.39
+CATEGORIES =	devel
 
 # perl
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_CDROM =	Yes
 
-BUILD_DEPENDS=	${RUN_DEPENDS}
-RUN_DEPENDS=	devel/p5-Class-Data-Inheritable>=0.02 \
-		devel/p5-Devel-StackTrace>=1.20
+# We don't have all the dependencies for author/release testing
+MAKE_ENV =	RELEASE_TESTING= AUTHOR_TESTING=
+
+RUN_DEPENDS =	devel/p5-Class-Data-Inheritable>=0.02 \
+		devel/p5-Devel-StackTrace>=2.00
 
 .include <bsd.port.mk>
