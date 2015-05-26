@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2014/10/31 13:37:14 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.19 2015/05/26 10:40:31 stsp Exp $
 
      SUBDIR =
      SUBDIR += adobe-source-code-pro
@@ -135,6 +135,7 @@
      SUBDIR += spranq-ecofont-ttf
      SUBDIR += sudegnak-no2
      SUBDIR += sudegnak-no3
+     SUBDIR += symbola-ttf
      SUBDIR += tai-heritage
      SUBDIR += terminus-font
      SUBDIR += ubuntu-fonts
