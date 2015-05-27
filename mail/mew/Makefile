@@ -1,26 +1,41 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 11:23:51 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2015/05/27 01:17:57 yasuoka Exp $
 
 COMMENT=	emacs-based mail client
 
-DISTNAME=	mew-5.2
-REVISION=	2
+DISTNAME=	mew-6.6
 CATEGORIES=	mail
 HOMEPAGE=	http://www.mew.org/
 
 # BSD license
 PERMIT_PACKAGE_CDROM=	Yes
+
 WANTLIB=		c z
 
 MASTER_SITES=		http://www.mew.org/Release/
 
-RUN_DEPENDS=		editors/emacs
-BUILD_DEPENDS=		${RUN_DEPENDS}
+MODULES=		lang/ruby
+MODRUBY_BUILDDEP=	No
+MODRUBY_ADJ_FILES=	cmew smew
+
+BUILD_DEPENDS=		emacs->=24:editors/emacs
+RUN_DEPENDS=		emacs->=24:editors/emacs \
+			security/stunnel \
+			databases/ruby-sqlite3,${MODRUBY_FLAVOR}
 
 CONFIGURE_STYLE=	simple
-CONFIGURE_ARGS+=	elispdir=$(PREFIX)/share/emacs/site-lisp \
-			etcdir=$(PREFIX)/share/emacs/site-lisp/etc
+CONFIGURE_ARGS+=	elispdir=${PREFIX}/share/emacs/site-lisp \
+			etcdir=${PREFIX}/share/emacs/site-lisp/etc \
+			infodir=${PREFIX}/info \
+			mandir=${PREFIX}/man
 
-USE_GROFF =	Yes
-NO_TEST=	Yes
+NO_TEST=		Yes
+
+MEWDOCFILES=		00*
+MEWDOTFILES=		dot.*
+
+post-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/mew
+	cd ${WRKSRC}; ${INSTALL_DATA} ${MEWDOCFILES} ${PREFIX}/share/doc/mew
+	cd ${WRKSRC}; ${INSTALL_DATA} ${MEWDOTFILES} ${PREFIX}/share/doc/mew
 
 .include <bsd.port.mk>
