@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/07/09 20:03:28 zhuk Exp $
+# $OpenBSD: Makefile,v 1.3 2015/05/28 10:17:29 pascal Exp $
 
 COMMENT =	system log files viewer for KDE
 DISTNAME =	ksystemlog-${MODKDE4_VERSION}

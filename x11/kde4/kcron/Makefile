@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/07/09 20:03:25 zhuk Exp $
+# $OpenBSD: Makefile,v 1.3 2015/05/28 10:17:27 pascal Exp $
 
 COMMENT =	KDE-based GUI for cron task scheduler
 DISTNAME =	kcron-${MODKDE4_VERSION}

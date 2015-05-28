@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/07/09 20:03:29 zhuk Exp $
+# $OpenBSD: Makefile,v 1.9 2015/05/28 10:17:30 pascal Exp $
 
 COMMENT =	Nepomuk-based KDE Plasma widgets
 DISTNAME =	nepomuk-widgets-${MODKDE4_VERSION}

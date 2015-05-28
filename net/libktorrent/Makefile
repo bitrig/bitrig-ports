@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/07/10 10:24:59 zhuk Exp $
+# $OpenBSD: Makefile,v 1.8 2015/05/28 10:17:24 pascal Exp $
 
 CATEGORIES =	net
 COMMENT =	KTorrent engine

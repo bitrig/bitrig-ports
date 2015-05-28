@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/07/09 20:03:24 zhuk Exp $
+# $OpenBSD: Makefile,v 1.10 2015/05/28 10:17:26 pascal Exp $
 
 COMMENT =	KDE thumbnail creation plugins
 DISTNAME =	kdegraphics-thumbnailers-${MODKDE4_VERSION}

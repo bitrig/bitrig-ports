@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/11/01 21:09:41 zhuk Exp $
+# $OpenBSD: Makefile,v 1.11 2015/05/28 10:17:26 pascal Exp $
 
 COMMENT =	KDE Activity rooms management
 MODKDE4_VERSION =	4.13.3

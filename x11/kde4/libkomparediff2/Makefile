@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/07/09 19:53:18 zhuk Exp $
+# $OpenBSD: Makefile,v 1.2 2015/05/28 10:17:30 pascal Exp $
 
 COMMENT =	patch tools library for KDE
 DISTNAME =	libkomparediff2-${MODKDE4_VERSION}

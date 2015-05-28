@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/11/01 20:34:32 zhuk Exp $
+# $OpenBSD: Makefile,v 1.9 2015/05/28 10:17:25 pascal Exp $
 
 CATEGORIES =	productivity
 COMMENT =	link Akonadi to Google services

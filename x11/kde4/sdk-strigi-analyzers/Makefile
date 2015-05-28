@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/07/09 20:03:31 zhuk Exp $
+# $OpenBSD: Makefile,v 1.3 2015/05/28 10:17:31 pascal Exp $
 
 COMMENT =	Strigi analyzers for development files
 DISTNAME =	kdesdk-strigi-analyzers-${MODKDE4_VERSION}

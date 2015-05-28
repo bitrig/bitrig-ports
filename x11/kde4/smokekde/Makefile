@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/01/20 21:58:44 zhuk Exp $
+# $OpenBSD: Makefile,v 1.12 2015/05/28 10:17:31 pascal Exp $
 
 CATEGORIES =	devel
 COMMENT =	introspective wrappers around KDE

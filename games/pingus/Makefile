@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/03/10 20:27:25 landry Exp $
+# $OpenBSD: Makefile,v 1.11 2015/05/28 10:17:23 pascal Exp $
 
 COMMENT=	free Lemmings-like game
 

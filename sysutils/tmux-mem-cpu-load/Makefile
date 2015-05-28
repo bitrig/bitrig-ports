@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2015/04/02 13:54:39 jasper Exp $
+# $OpenBSD: Makefile,v 1.4 2015/05/28 10:17:25 pascal Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -9,7 +9,7 @@ GH_ACCOUNT =		thewtex
 GH_PROJECT =		tmux-mem-cpu-load
 GH_TAGNAME =		v$V
 DISTNAME =		${GH_PROJECT}-$V
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		sysutils
 

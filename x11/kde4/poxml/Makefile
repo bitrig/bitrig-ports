@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/11/01 21:09:46 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2015/05/28 10:17:31 pascal Exp $
 
 COMMENT =	convert PO files to XML
 DISTNAME =	poxml-${MODKDE4_VERSION}

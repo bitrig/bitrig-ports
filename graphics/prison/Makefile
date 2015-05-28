@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/07/10 07:38:23 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2015/05/28 10:17:23 pascal Exp $
 
 CATEGORIES =	graphics print
 COMMENT =	Qt-based barcode abstraction library

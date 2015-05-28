@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2015/04/09 10:34:28 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2015/05/28 10:17:24 pascal Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -20,6 +20,7 @@ DISTNAME =		pypy-${V}-src
 PKGNAME =		pypy-${V}
 REVISION =		0
 BOOTSTRAP-amd64 =	pypy-bootstrap-amd64-${BOOTSTRAP_V}.tar.xz
+REVISION =		0
 
 CATEGORIES =		lang
 

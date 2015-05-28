@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/01/24 11:11:15 landry Exp $
+# $OpenBSD: Makefile,v 1.16 2015/05/28 10:17:31 pascal Exp $
 
 BROKEN =		needs work on bitrig
 
@@ -18,6 +18,8 @@ DISTNAME =		ogre-$V
 PKGNAME-main =		ogre-${V}
 REVISION =		0
 PKGNAME-samples =	ogre-samples-${V}
+REVISION-main =		0
+REVISION-samples =	0
 
 MULTI_PACKAGES =	-main -samples
 

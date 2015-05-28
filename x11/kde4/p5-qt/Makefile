@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/07/09 20:03:29 zhuk Exp $
+# $OpenBSD: Makefile,v 1.6 2015/05/28 10:17:30 pascal Exp $
 
 COMMENT =	Qt4 bindings for Perl
 DISTNAME =	perlqt-${MODKDE4_VERSION}

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/07/18 08:17:13 zhuk Exp $
+# $OpenBSD: Makefile,v 1.9 2015/05/28 10:17:31 pascal Exp $
 
 CATEGORIES =	devel
 COMMENT =	introspective wrappers around Qt

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/07/09 20:03:24 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2015/05/28 10:17:27 pascal Exp $
 
 COMMENT =	KDE digital camera support
 DISTNAME =	kamera-${MODKDE4_VERSION}
