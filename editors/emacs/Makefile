@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.53 2015/04/15 11:35:06 jca Exp $
+# $OpenBSD: Makefile,v 1.54 2015/05/28 17:46:43 jca Exp $
 
 COMMENT=		GNU editor: extensible, customizable, self-documenting
 
 VERSION=		24.5
+REVISION=		0
 DISTNAME=		emacs-${VERSION}
 
 CATEGORIES=		editors
@@ -12,7 +13,7 @@ HOMEPAGE=		https://www.gnu.org/software/emacs/
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m ncurses pthread execinfo gnutls xml2 z
+WANTLIB=		c m ncurses pthread gnutls xml2 z
 
 MASTER_SITES=		${MASTER_SITE_GNU:=emacs/}
 
@@ -29,7 +30,8 @@ CONFIGURE_ARGS=		--build="${GCCARCH}" \
 			--without-sound
 
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib -nopie"
+			LDFLAGS="-L${LOCALBASE}/lib -nopie" \
+			ac_cv_header_execinfo_h=no
 CFLAGS+=		-fno-pie
 
 MAKE_ENV=		INSTALL_EMACS="${INSTALL_SCRIPT}" \
@@ -38,8 +40,7 @@ MAKE_ENV=		INSTALL_EMACS="${INSTALL_SCRIPT}" \
 SUBST_VARS=		GCCARCH VERSION
 
 MODULES=		devel/gettext
-LIB_DEPENDS=		devel/libexecinfo \
-			security/gnutls \
+LIB_DEPENDS=		security/gnutls \
 			textproc/libxml
 
 MODULES+=		gcc4
