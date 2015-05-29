@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.37 2015/05/12 20:07:50 sthen Exp $
+# $OpenBSD: Makefile,v 1.38 2015/05/29 07:29:09 giovanni Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -7,6 +7,7 @@ COMMENT-client=	ISC DHCP Client
 COMMENT-omapi=	ISC DHCP OMAPI
 
 VERSION=	4.3.2
+REVISION=	0
 DISTNAME=	isc-dhcp-${VERSION}
 PKGNAME=	isc-dhcp-${VERSION:S/-P/./}
 PKGNAME-main=	isc-dhcp-server-${VERSION:S/-P/./}
