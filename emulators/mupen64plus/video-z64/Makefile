@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/05/07 22:35:05 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.7 2015/05/29 23:23:07 bentley Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -16,11 +16,9 @@ WRKDIST =		${WRKDIR}/mupen64plus-${MUPEN64PLUS_MOD}
 WANTLIB =		GL GLEW GLU SDL c m pthread
 WANTLIB +=		c++ c++abi
 
-LIB_DEPENDS =		graphics/glew \
+LIB_DEPENDS =		graphics/glew>=1.12.0 \
 			devel/sdl
 
 MUPEN64PLUS_MOD = 	video-z64
-
-CFLAGS +=		-I${LOCALBASE}/include/GL
 
 .include <bsd.port.mk>
