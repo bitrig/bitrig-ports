@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.37 2015/05/15 06:54:56 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.38 2015/06/01 07:45:25 ajacoutot Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -7,6 +7,7 @@ SHARED_ONLY=	Yes
 COMMENT=	image processing tools with stable ABI
 
 DISTNAME=	GraphicsMagick-1.3.21
+REVISION=	0
 CATEGORIES=	graphics devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=graphicsmagick/}
 EXTRACT_SUFX=	.tar.xz
@@ -45,6 +46,7 @@ BUILD_DEPENDS=		${RUN_DEPENDS}
 CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS=${WRKDIST} ${WRKDIST}/TclMagick
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
+			--with-gs-font-dir=${LOCALBASE}/share/fonts/ghostscript \
 			--with-ltdl-include=${LOCALBASE}/include \
 			--with-ltdl-lib=${LOCALBASE}/lib \
 			--with-modules \
