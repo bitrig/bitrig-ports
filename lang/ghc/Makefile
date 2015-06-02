@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.115 2015/05/11 22:54:57 kili Exp $
+# $OpenBSD: Makefile,v 1.116 2015/06/02 21:17:43 kili Exp $
 
 BROKEN =		needs work on bitrig
 
@@ -13,7 +13,7 @@ COMMENT-doc =		documentation for GHC
 
 DISTNAME =		ghc-${MODGHC_VER}
 PKGNAME-main =		ghc-${MODGHC_VER}
-REVISION-main =		0
+REVISION-main =		1
 PKGNAME-doc =		ghc-doc-${MODGHC_VER}
 CATEGORIES =		lang devel
 HOMEPAGE =		http://www.haskell.org/ghc/
@@ -134,7 +134,7 @@ post-install:
 	exec > register.sh && \
 	echo '#!/bin/sh' && \
 	echo 'p="$${0%/*}/bin/ghc-pkg --no-user-package-db --global-package-db $${0%/*}/package.conf.d"' && \
-	for p in $$($$GHC_PKG list --simple); do \
+	for p in $$($$GHC_PKG dot | sed -n -e 's/^"\([^"]*\)" -> "\([^"]*\)"$$/\1 \2/p' | tsort -r); do \
 		echo \$$p register --force - \<\< \'EOF\' && \
 		$$GHC_PKG describe $$p | sed '/^pkgpath:$$/s@$$@ ${PKGPATH}@' && \
 		echo EOF; \
@@ -143,7 +143,7 @@ post-install:
 	exec > unregister.sh && \
 	echo '#!/bin/sh' && \
 	echo 'p="$${0%/*}/bin/ghc-pkg --no-user-package-db --global-package-db $${0%/*}/package.conf.d"' && \
-	for p in $$($$GHC_PKG list --simple); do \
+	for p in $$($$GHC_PKG dot | sed -n -e 's/^"\([^"]*\)" -> "\([^"]*\)"$$/\1 \2/p' | tsort); do \
 		echo \$$p unregister --force $$p; \
 	done && \
 	rm package.conf.d/* && \
