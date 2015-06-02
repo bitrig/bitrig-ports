@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/05/23 10:53:25 czarkoff Exp $
+# $OpenBSD: Makefile,v 1.5 2015/06/02 16:57:54 mikeb Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -6,9 +6,8 @@ COMMENT =		Internet Citizens Band Server
 
 GH_ACCOUNT =		mbelop
 GH_PROJECT =		icbd
-GH_TAGNAME =		1.4
+GH_TAGNAME =		1.5
 DISTNAME =		icbd-${GH_TAGNAME}
-REVISION =		0
 
 CATEGORIES =		net
 
