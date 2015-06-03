@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.126 2015/05/13 14:03:07 kettenis Exp $
+# $OpenBSD: Makefile,v 1.127 2015/06/03 07:28:01 dcoppa Exp $
 
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 SHARED_ONLY =		Yes
@@ -24,15 +24,6 @@ PKGNAME-main =		qt4-${PKGVERSION}
 PKGNAME-debug =		qt4-debug-${PKGVERSION}
 FULLPKGNAME-html =	qt4-html-${PKGVERSION}
 FULLPKGPATH-html =	${BASE_PKGPATH},-html
-
-REVISION-debug =	0
-REVISION-html =		1
-REVISION-mysql =	4
-REVISION-postgresql =	3
-REVISION-main =		5
-REVISION-examples =	3
-REVISION-sqlite2 =	3
-REVISION-tds =		3
 
 # XXX qmake include parser is bogus
 DPB_PROPERTIES =	parallel	nojunk
@@ -60,14 +51,14 @@ SHARED_LIBS =	Qt3Support 8.0 \
 		QtDeclarative 0.0
 
 
-VERSION =	4.8.6
-PKGVERSION =	4.8.6
+VERSION =	4.8.7
+PKGVERSION =	4.8.7
 DISTNAME =	qt-everywhere-opensource-src-${VERSION}
 
 CATEGORIES =	x11
-MASTER_SITES =  http://download.qt-project.org/official_releases/qt/4.8/${VERSION}/
+MASTER_SITES =  http://download.qt.io/official_releases/qt/4.8/${VERSION}/
 
-HOMEPAGE =	http://qt-project.org/
+HOMEPAGE =	http://www.qt.io/
 
 FLAVORS =	debug
 FLAVOR ?=
@@ -121,7 +112,6 @@ CONFIGURE_ARGS +=	-platform openbsd-g++4
 
 # XXX make sure those libraries gets written to libQtGui.la
 QMAKE_LIBS_GUI =	freetype SM ICE Xi Xrender Xinerama fontconfig Xext X11
-#QMAKE_LIBS_GUI =
 
 CONFIGURE_ENV =		LOCALBASE=${LOCALBASE} QTDIR="${WRKSRC}" \
 			X11BASE=${X11BASE} QMAKE_LIBS_GUI="${QMAKE_LIBS_GUI:C/^/-l/}"

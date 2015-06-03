@@ -1,16 +1,7 @@
-$OpenBSD: patch-src_3rdparty_javascriptcore_JavaScriptCore_wtf_Threading_h,v 1.4 2014/07/12 11:10:14 dcoppa Exp $
---- src/3rdparty/javascriptcore/JavaScriptCore/wtf/Threading.h.orig	Thu Apr 10 14:37:12 2014
-+++ src/3rdparty/javascriptcore/JavaScriptCore/wtf/Threading.h	Thu Jul 17 10:25:55 2014
-@@ -77,7 +77,7 @@
- #include <cutils/atomic.h>
- #elif OS(QNX)
- #include <atomic.h>
--#elif COMPILER(GCC) && !OS(SYMBIAN)
-+#elif COMPILER(GCC) && !OS(SYMBIAN) && !OS(OPENBSD)
- #if (__GNUC__ > 4) || ((__GNUC__ == 4) && (__GNUC_MINOR__ >= 2))
- #include <ext/atomicity.h>
- #else
-@@ -247,7 +247,7 @@ inline int atomicDecrement(int volatile* addend) { ret
+$OpenBSD: patch-src_3rdparty_javascriptcore_JavaScriptCore_wtf_Threading_h,v 1.5 2015/06/03 07:28:01 dcoppa Exp $
+--- src/3rdparty/javascriptcore/JavaScriptCore/wtf/Threading.h.orig	Thu May  7 16:14:48 2015
++++ src/3rdparty/javascriptcore/JavaScriptCore/wtf/Threading.h	Sun May 31 13:28:28 2015
+@@ -241,7 +241,7 @@ inline int atomicDecrement(int volatile* addend) { ret
  inline int atomicIncrement(int volatile* addend) { return (int) atomic_add_value((unsigned volatile*)addend, 1); }
  inline int atomicDecrement(int volatile* addend) { return (int) atomic_sub_value((unsigned volatile*)addend, 1); }
  
