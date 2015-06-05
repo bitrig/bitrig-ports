@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2013/10/11 23:50:10 naddy Exp $
+# $OpenBSD: Makefile,v 1.25 2015/06/05 08:11:53 bentley Exp $
 
 COMMENT=	convert English text to Jive
 
@@ -6,8 +6,7 @@ DISTNAME=	jive-1.1
 REVISION=	0
 CATEGORIES=	misc
 
-MASTER_SITES=	ftp://ftp.fr.freebsd.org/pub/FreeBSD/distfiles/ \
-		ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/
+MASTER_SITES=	http://distcache.freebsd.org/ports-distfiles/
 
 # License: NONE
 PERMIT_PACKAGE_CDROM=	no license

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2013/03/11 11:23:53 espie Exp $
+# $OpenBSD: Makefile,v 1.29 2015/06/05 08:11:53 bentley Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -10,7 +10,7 @@ REVISION =	2
 DISTFILES=	pwserve-4
 CATEGORIES=	mail
 
-MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/ \
+MASTER_SITES=	http://distcache.freebsd.org/ports-distfiles/ \
 		ftp://ftp.qualcomm.com/eudora/servers/unix/password/
 
 # License: NONE

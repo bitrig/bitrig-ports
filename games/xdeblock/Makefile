@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.31 2013/03/11 11:07:41 espie Exp $
+# $OpenBSD: Makefile,v 1.32 2015/06/05 08:11:53 bentley Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -9,7 +9,7 @@ PKGNAME=	xdeblock-1.0
 REVISION =	2
 CATEGORIES=	games
 
-MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/ \
+MASTER_SITES=	http://distcache.freebsd.org/ports-distfiles/ \
 		http://www.vector.co.jp/pack/unix/game/action/block/
 EXTRACT_SUFX=	.tgz
 

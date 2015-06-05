@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2013/10/11 21:21:01 naddy Exp $
+# $OpenBSD: Makefile,v 1.25 2015/06/05 08:11:53 bentley Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -14,7 +14,7 @@ PERMIT_PACKAGE_CDROM=	no license
 PERMIT_PACKAGE_FTP=	no license
 PERMIT_DISTFILES_FTP=	no license
 
-MASTER_SITES =	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/
+MASTER_SITES =	http://distcache.freebsd.org/ports-distfiles/
 
 WANTLIB=	X11 Xau Xdmcp Xext c m
 
