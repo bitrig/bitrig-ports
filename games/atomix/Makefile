@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/09/27 17:49:03 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.16 2015/06/05 12:20:38 ajacoutot Exp $
 
 COMMENT=	build molecules out of single atoms
 

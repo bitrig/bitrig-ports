@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.57 2015/01/24 11:07:57 schwarze Exp $
+# $OpenBSD: Makefile,v 1.58 2015/06/05 12:20:38 ajacoutot Exp $
 
 COMMENT=		front-end to various audio players
 
