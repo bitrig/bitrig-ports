@@ -1,5 +1,10 @@
---- installer.tcl.orig	Wed Feb 18 10:06:29 2015
-+++ installer.tcl	Wed Feb 18 10:24:29 2015
+$OpenBSD: patch-installer_tcl,v 1.7 2015/06/05 20:36:24 stu Exp $
+
+Install everything nicely.
+Generate tcllib.n.
+
+--- installer.tcl.orig	Wed Jun  3 22:01:19 2015
++++ installer.tcl	Thu Jun  4 01:41:03 2015
 @@ -84,16 +84,24 @@ if {![package vsatisfies [package provide Tcl] 8.0]} {
  
  proc xcopyfile {src dest} {
@@ -55,7 +60,7 @@
 +           run file mkdir $config(app,path)
 +           file attributes $config(app,path) -permissions 0o755
  	}
-+	_exafile $aexe $adst $config(tclsh)
++	_exafile $aexe $adst
 +	if {[file exists $aexe.man]} {
 +	    set fn [file tail $aexe].n
 +	    _manfile [file join $distribution embedded man files apps $fn] [file join $config(doc,nroff,path) $fn]
@@ -96,7 +101,7 @@
  	xcopy $distribution/embedded/www $config(doc,html,path) 1
      }
 -    if {$config(exa)}       {xinstall exa $config(exa,path)}
-+    if {$config(exa)}       {xinstall exa [file join $distribution examples] $config(exa,path) $config(tclsh)}
++    if {$config(exa)}       {xinstall exa [file join $distribution examples] $config(exa,path)}
      if {$config(app)}       {ainstall}
 +    mkindex
      log ""
@@ -106,7 +111,7 @@
  		set config(exa,path) [lindex $argv 1]
  		set argv             [lrange $argv 1 end]
  	    }
-+	    -csb - -descr - -mp - -tclsh {
++	    -csb - -descr - -mp - -tclsh - -wish {
 +		set config([string range [lindex $argv 0] 1 end]) [lindex $argv 1]
 +		set argv [lrange $argv 1 end]
 +	    }
@@ -138,8 +143,8 @@
 +
 +    append mp {[section MODULES] [list_begin options]}
 +    foreach mi $modinfos {
-+	set s "\[opt_def {[lindex $mi 0]} [string map {\& ""} [lindex $mi 1]]\]"
-+	append mp $s [string map {\& "" [ [lb] ] [rb]} " [lindex $mi 2] - [lindex $mi 3]"]
++	set s "\[opt_def {[lindex $mi 0]} [string map {& ""} [lindex $mi 1]]\]"
++	append mp $s [string map {\\& "" [ [lb] ] [rb] N& N s& s} " [lindex $mi 2] - [lindex $mi 3]"]
 +    }
 +    append mp {[list_end]}
 +    append mp {[manpage_end]}
