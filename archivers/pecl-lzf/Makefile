@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/11/06 17:13:39 sthen Exp $
+# $OpenBSD: Makefile,v 1.13 2015/06/05 06:00:20 robert Exp $
 
 COMMENT =		PHP support for LZF de/compression
 

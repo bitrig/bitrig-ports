@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/11/06 17:13:40 sthen Exp $
+# $OpenBSD: Makefile,v 1.17 2015/06/05 06:00:22 robert Exp $
 
 COMMENT=	web-based MySQL management
 
