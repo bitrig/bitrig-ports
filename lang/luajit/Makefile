@@ -1,13 +1,12 @@
-# $OpenBSD: Makefile,v 1.16 2015/05/28 10:17:24 pascal Exp $
+# $OpenBSD: Makefile,v 1.17 2015/06/06 09:03:16 dcoppa Exp $
 
 SHARED_ONLY =	Yes
-SHARED_LIBS +=	luajit-${MODLUA_VERSION} 0.0 # 2.0.0
+SHARED_LIBS +=	luajit-${MODLUA_VERSION} 0.0 # 2.0.4
 
 COMMENT =	just-in-time compiler for Lua
-V =		2.0.3
+V =		2.0.4
 DISTNAME =	LuaJIT-${V}
 PKGNAME =	${DISTNAME:L}
-REVISION =	5
 
 CATEGORIES =	lang
 
@@ -46,7 +45,9 @@ MAKE_FLAGS +=	XCFLAGS="-DLUAJIT_ENABLE_LUA52COMPAT"
 .endif
 
 pre-configure:
-	${SUBST_CMD} ${WRKDIST}/Makefile
+	${SUBST_CMD} ${WRKDIST}/Makefile \
+		${WRKDIST}/etc/luajit.pc \
+		${WRKDIST}/src/luaconf.h
 
 post-install:
 	mv ${PREFIX}/bin/luajit-$V ${PREFIX}/bin/luajit${MODLUA_DEP_VERSION}
