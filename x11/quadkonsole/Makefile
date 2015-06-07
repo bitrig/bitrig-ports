@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.20 2013/10/22 11:34:26 zhuk Exp $
+# $OpenBSD: Makefile,v 1.22 2015/06/07 09:16:29 ajacoutot Exp $
 
 COMMENT=	terminal application that embeds Konsole for KDE
 
-DISTNAME=	quadkonsole-2.0
-REVISION=	13
+DISTNAME=	quadkonsole-2.0.3
 CATEGORIES=	x11 x11/kde
 
 # GPL
@@ -19,17 +18,18 @@ WANTLIB += c++ c++abi
 MASTER_SITES=	http://nomis80.org/quadkonsole/
 
 LIB_DEPENDS=	x11/kde/libs3
+RUN_DEPENDS=	x11/gtk+3,-guic
 
 MODULES=	x11/kde \
 		devel/gettext
 
-MODKDE_VERSION=	3.3.0
+MODKDE_VERSION=	3.5.7
 
 MAKE_FLAGS+=	${MODKDE_MAKE_FLAGS}
 
 USE_GMAKE=	Yes
 CONFIGURE_STYLE= autoconf
-AUTOCONF_VERSION= 2.59
+AUTOCONF_VERSION= 2.61
 CONFIGURE_ARGS+=${MODKDE_CONFIGURE_ARGS}
 CONFIGURE_ENV+=	${MODKDE_CONFIGURE_ENV}
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/admin
