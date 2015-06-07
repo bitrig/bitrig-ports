@@ -1,12 +1,11 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/21 01:34:46 sthen Exp $
+# $OpenBSD: Makefile,v 1.9 2015/06/07 09:45:49 ajacoutot Exp $
 
 BROKEN = 	needs work on bitrig
 
 COMMENT =	building, finding and using wxWidgets binaries
 
 MODULES =	cpan
-DISTNAME =	Alien-wxWidgets-0.62
-REVISION =	0
+DISTNAME =	Alien-wxWidgets-0.67
 CATEGORIES =	devel
 
 # perl
@@ -14,11 +13,12 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 CONFIGURE_STYLE =	modbuild
 
-pre-configure:
-	${SUBST_CMD} ${WRKSRC}/inc/My/Build/Any_wx_config_Bakefile.pm
-
-RUN_DEPENDS =	x11/wxWidgets
+RUN_DEPENDS =	devel/p5-Module-Pluggable \
+		x11/wxWidgets
 
 BUILD_DEPENDS =	${RUN_DEPENDS}
+
+pre-configure:
+	${SUBST_CMD} ${WRKSRC}/inc/My/Build/Any_wx_config_Bakefile.pm
 
 .include <bsd.port.mk>
