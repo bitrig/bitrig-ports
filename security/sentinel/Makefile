@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/11 11:41:28 espie Exp $
+# $OpenBSD: Makefile,v 1.22 2015/06/10 11:05:02 jca Exp $
 
 COMMENT=		remote promiscuous mode detection tool
 

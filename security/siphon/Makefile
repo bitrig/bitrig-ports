@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/03/11 11:41:28 espie Exp $
+# $OpenBSD: Makefile,v 1.15 2015/06/10 11:05:02 jca Exp $
 
 COMMENT=		passive network mapping tool
 
@@ -11,8 +11,8 @@ CATEGORIES=    		security net
 PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c pcap pthread
 
-MASTER_SITES=		http://siphon.datanerds.net/ \
-			${MASTER_SITE_PACKETSTORM:=UNIX/utilities/}
+# DEAD MASTER_SITES
+MASTER_SITES=		${MASTER_SITE_PACKETSTORM:=UNIX/utilities/}
 
 MAKE_FLAGS=		CC="${CC}" \
 			CFLAGS='${CFLAGS} -Wall -I. \

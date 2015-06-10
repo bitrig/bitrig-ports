@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/02/16 22:57:12 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2015/06/10 11:05:02 jca Exp $
 
 COMMENT=		control chroot and su access rights by application
 

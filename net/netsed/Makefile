@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 11:35:50 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2015/06/10 11:05:02 jca Exp $
 
 COMMENT=		network sed
 

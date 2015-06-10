@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2014/01/01 20:46:28 naddy Exp $
+# $OpenBSD: Makefile,v 1.22 2015/06/10 11:05:02 jca Exp $
 
 COMMENT=		intercept, modify, and rewrite egress traffic
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2013/10/18 11:29:41 naddy Exp $
+# $OpenBSD: Makefile,v 1.40 2015/06/10 11:05:02 jca Exp $
 
 COMMENT=		C/C++ source code auditing tool
 
