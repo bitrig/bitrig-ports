@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/08/10 09:58:06 espie Exp $
+# $OpenBSD: Makefile,v 1.10 2015/06/10 10:43:29 sthen Exp $
 
 COMMENT=	UPnP IGD client lightweight library
 

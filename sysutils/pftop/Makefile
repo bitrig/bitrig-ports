@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2014/04/22 10:56:01 jca Exp $
+# $OpenBSD: Makefile,v 1.29 2015/06/10 10:43:29 sthen Exp $
 #
 
 # XXX should be fixed to use the new queuing subsystem
