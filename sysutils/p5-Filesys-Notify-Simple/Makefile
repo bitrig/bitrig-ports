@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 11:41:31 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2015/06/10 09:41:45 benoit Exp $
 
 COMMENT =		simple and dumb file system watcher
 
 MODULES =		cpan
-DISTNAME =		Filesys-Notify-Simple-0.06
-REVISION =		0
+DISTNAME =		Filesys-Notify-Simple-0.12
 CATEGORIES =		sysutils
 
 BUILD_DEPENDS =		devel/p5-Test-SharedFork
