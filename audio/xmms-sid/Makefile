@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/21 08:45:13 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.22 2015/06/10 21:53:49 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -14,8 +14,8 @@ HOMEPAGE=	http://www.tnsp.org/xmms-sid.php
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		X11 Xext Xi gdk glib gmodule gtk \
-			m xcb sidplay>=1
+WANTLIB=		X11 Xau Xdmcp Xext Xi gdk glib gmodule gtk \
+			m pthread-stubs xcb sidplay>=1
 WANTLIB +=		c++ c++abi
 
 MASTER_SITES=	http://www.tnsp.org/xs-files/

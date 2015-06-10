@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2014/11/26 19:55:19 naddy Exp $
+# $OpenBSD: Makefile,v 1.20 2015/06/10 21:53:49 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -8,12 +8,12 @@ COMMENT=	XMMS input plugin for MP3 files
 DISTNAME=	xmms-mad-0.10
 CATEGORIES=	audio
 HOMEPAGE=	http://xmms-mad.sourceforge.net/
-REVISION =	3
+REVISION=	3
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += X11 Xext Xi m gdk glib gmodule gtk
+WANTLIB += X11 Xau Xdmcp Xext Xi m gdk glib gmodule gtk pthread-stubs
 WANTLIB += xcb z id3tag xmms mad
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xmms-mad/}
