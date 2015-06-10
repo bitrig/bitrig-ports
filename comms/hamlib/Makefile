@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.30 2014/06/14 10:34:44 sthen Exp $
+# $OpenBSD: Makefile,v 1.31 2015/06/10 21:42:26 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -33,8 +33,9 @@ PERMIT_PACKAGE_CDROM=	Yes
 LIBTOOL_FLAGS=		--tag=disable-static
 
 cWANTLIB=		ltdl m pthread usb usb-1.0
-WANTLIB-main=		${cWANTLIB} c z xml2 ${MODLIBICONV_WANTLIB}
-WANTLIB-main+=		c++ c++abi pthread
+WANTLIB-main=		${cWANTLIB} c lzma z xml2 ${MODLIBICONV_WANTLIB}
+WANTLIB-main+=		c++ c++abi
+
 WANTLIB-python=		${cWANTLIB} hamlib ${MODPY_WANTLIB}
 WANTLIB-tcl=		${cWANTLIB} hamlib ${MODTCL_WANTLIB}
 
