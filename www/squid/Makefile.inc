@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.11 2015/06/06 23:08:22 sthen Exp $
+# $OpenBSD: Makefile.inc,v 1.12 2015/06/11 14:57:30 sthen Exp $
 
 MULTI_PACKAGES=	-main
 # -ntlm may come back with samba 4
