@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.11 2013/10/11 23:49:17 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2015/06/13 09:00:11 benoit Exp $
 
 COMMENT=		screen positioning and coloring module
 
 MODULES=		cpan
-DISTNAME=		Term-ScreenColor-1.09
-REVISION=		2
+DISTNAME =		Term-ScreenColor-1.20
 CATEGORIES=		devel
 
 HOMEPAGE=		http://p-f-m.sourceforge.net/
@@ -14,4 +13,4 @@ PERMIT_PACKAGE_CDROM=   Yes
 
 RUN_DEPENDS=		devel/p5-Term-Screen
 
-.include <bsd.port.mk>	
+.include <bsd.port.mk>
