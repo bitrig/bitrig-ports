@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/02/16 22:57:11 naddy Exp $
+# $OpenBSD: Makefile,v 1.16 2015/06/17 06:16:51 bentley Exp $
 
 COMMENT=	VPN scanner and identifier
 DISTNAME=	ike-scan-1.9
