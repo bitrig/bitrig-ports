@@ -1,11 +1,11 @@
---- extconf.rb.orig	Wed Dec 31 19:00:00 1969
-+++ extconf.rb	Mon Feb 17 00:48:29 2014
+--- extconf.rb.orig	Tue Dec  2 13:12:32 2014
++++ extconf.rb	Wed Jun 17 11:22:17 2015
 @@ -16,7 +16,7 @@ $CFLAGS = case RUBY_VERSION
  implementation = case CONFIG['host_os']
                   when /linux/i; 'shadow'
                   when /sunos|solaris/i; 'shadow'
--                 when /freebsd|openbsd/i; 'pwd'
-+                 when /freebsd|openbsd|bitrig/i; 'pwd'
+-                 when /freebsd|mirbsd|netbsd|openbsd/i; 'pwd'
++                 when /freebsd|mirbsd|netbsd|openbsd|bitrig/i; 'pwd'
                   when /darwin/i; 'pwd'
                   else; nil
-                    "This library works on OS X, FreeBSD, OpenBSD, Solaris and Linux."
+                    "This library works on OS X, FreeBSD, MirBSD, NetBSD, OpenBSD, Solaris and Linux."
