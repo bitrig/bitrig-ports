@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/03/09 20:26:48 pascal Exp $
+# $OpenBSD: Makefile,v 1.6 2015/06/17 22:48:33 gsoares Exp $
 
 ONLY_FOR_ARCHS =	amd64 i386 powerpc
 BROKEN-powerpc =	threading issues
@@ -36,6 +36,8 @@ PLAN9 =			${PREFIX}/plan9
 
 NO_TEST =		Yes
 
+SUBST_VARS+=		CC
+
 post-extract:
 	cd ${WRKSRC}/dict && tar xjf ${FULLDISTDIR}/pgw.tar.bz2
 	cd ${WRKSRC}/dict && tar xjf ${FULLDISTDIR}/roget.tar.bz2
@@ -47,7 +49,8 @@ post-patch:
 		OpenBSD-x86_64-asm.S
 	find ${WRKSRC} -name .cvsignore -exec rm -f {} \;
 	cd ${WRKSRC} && rm -rf .hg .hgignore .hgtags
-
+pre-configure:
+	${SUBST_CMD} ${WRKSRC}/INSTALL
 do-build:
 	cd ${WRKSRC} && env CC9="${CC}" CCFLAGS="${CFLAGS}" ./INSTALL -b
 

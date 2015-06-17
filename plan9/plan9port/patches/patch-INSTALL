@@ -13,7 +13,17 @@ $OpenBSD: patch-INSTALL,v 1.2 2014/03/09 20:26:48 pascal Exp $
  if [ `uname` = Linux ]; then
  	# On Linux, we use the kernel version to decide whether
  	# to use pthreads or not.  On 2.6 versions that aren't
-@@ -150,7 +155,7 @@ cd src
+@@ -128,7 +128,8 @@ fi
+ if [ `uname` != Darwin ]; then
+ 	# Determine whether fontsrv X11 files are available.
+ 	rm -f a.out
+-	gcc -o a.out -c -Iinclude -I/usr/include -I/usr/local/include -I/usr/include/freetype2 -I/usr/local/include/freetype2 src/cmd/fontsrv/x11.c >/dev/null 2>&1
++	${CC} -o a.out -c -Iinclude -I/usr/include -I${LOCALBASE}/include -I/usr/include/freetype2 -I${LOCALBASE}/include/freetype2 \
++	    -I${X11BASE}/include -I${X11BASE}/include/freetype2 src/cmd/fontsrv/x11.c >/dev/null 2>&1
+ 	if [ -f a.out ]; then
+ 		echo "	fontsrv dependencies found."
+ 		echo "FONTSRV=fontsrv" >>$PLAN9/config
+@@ -150,7 +151,7 @@ cd src
  if $dobuild; then
  	if [ ! -x ../bin/mk ]; then
  		echo "* Building mk..."
@@ -22,7 +32,7 @@ $OpenBSD: patch-INSTALL,v 1.2 2014/03/09 20:26:48 pascal Exp $
  	fi
  	if [ ! -x ../bin/mk ]; then
  		echo "* Error: mk failed to build."
-@@ -158,7 +163,6 @@ if $dobuild; then
+@@ -158,7 +159,6 @@ if $dobuild; then
  	fi
  	
  	echo "* Building everything (be patient)..."
@@ -30,7 +40,7 @@ $OpenBSD: patch-INSTALL,v 1.2 2014/03/09 20:26:48 pascal Exp $
  	mk libs-nuke
  	mk all || exit 1
  	if [ ! -x $PLAN9/src/cmd/o.cleanname -o ! -x $PLAN9/src/cmd/acme/o.acme ]; then
-@@ -213,5 +217,5 @@ if $doinstall; then
+@@ -213,5 +213,5 @@ if $doinstall; then
  	echo "	PLAN9=$PLAN9 export PLAN9"
  	echo '	PATH=$PATH:$PLAN9/bin export PATH'
  fi
