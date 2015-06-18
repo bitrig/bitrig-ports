@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/03/16 18:07:51 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2015/06/18 07:25:44 bentley Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -14,7 +14,7 @@ SHARED_LIBS= 	broccoli	0.0	# .2.0
 
 CATEGORIES=	net security
 
-HOMEPAGE=	http://www.bro-ids.org/
+HOMEPAGE=	https://www.bro.org/
 
 # BSD
 PERMIT_PACKAGE_CDROM= 	Yes
@@ -22,7 +22,7 @@ PERMIT_PACKAGE_CDROM= 	Yes
 WANTLIB=	c crypto m pcap pthread ssl termcap z GeoIP>=5 magic>=1
 WANTLIB +=	c++ c++abi
 
-MASTER_SITES=	ftp://bro-ids.org/
+MASTER_SITES=	https://www.bro.org/downloads/archive/
 
 LIB_DEPENDS=	net/GeoIP \
 		devel/libmagic
