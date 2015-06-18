@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.71 2015/04/06 21:05:07 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.72 2015/06/18 02:50:18 bentley Exp $
 
 BROKEN= 		needs work on bitrig
 
@@ -9,9 +9,10 @@ CATEGORIES=		comms
 
 HOMEPAGE=		http://www.HylaFAX.org/
 
-MASTER_SITES=		ftp://ftp.hylafax.org/source/ \
+MASTER_SITES=		http://ftp.hylafax.org/source/ \
+			ftp://ftp.hylafax.org/source/ \
 			ftp://ftp.ntua.gr/pub/net/hylafax/source/ \
-			ftp://mirror.aarnet.edu.au/pub/hylafax/source/
+			http://mirror.aarnet.edu.au/pub/hylafax/source/
 
 # License: BSD
 # http://www.hylafax.org/HylaFAQ/copyright.html
