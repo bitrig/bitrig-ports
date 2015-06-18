@@ -1,39 +1,41 @@
-# $OpenBSD: Makefile,v 1.14 2015/02/16 22:57:09 naddy Exp $
+# $OpenBSD: Makefile,v 1.15 2015/06/18 13:19:38 ajacoutot Exp $
 
-COMMENT=	remote IMAP filtering utility
+COMMENT=		remote IMAP filtering utility
 
-V=		2.5.6
-DISTNAME=	imapfilter-${V}
-REVISION=	0
-DISTFILES=	v${V}.tar.gz
-CATEGORIES=	mail
+V=			2.6
+DISTNAME=		imapfilter-${V}
 
-HOMEPAGE=	https://github.com/lefcha/imapfilter
+GH_TAGNAME=		v${V}
+GH_ACCOUNT=		lefcha
+GH_PROJECT=		imapfilter
 
-MASTER_SITES=	https://github.com/lefcha/imapfilter/archive/
+CATEGORIES=		mail
 
 # MIT/X
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c crypto m ssl pcre ${MODLUA_WANTLIB}
+WANTLIB += c crypto m ssl pcre ${MODLUA_WANTLIB}
 
-MODULES=	lang/lua
-MODLUA_SA=	Yes
+MODULES=		lang/lua
+MODLUA_SA=		Yes
 
-LIB_DEPENDS=	devel/pcre \
-		${MODLUA_LIB_DEPENDS}
+LIB_DEPENDS=		devel/pcre \
+			${MODLUA_LIB_DEPENDS}
 
-MAKE_ENV+=	CC="${CC}"
+MAKE_FLAGS=		CC="${CC}" \
+			LIBLUA="${MODLUA_LIB}" \
+			MYCFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${MODLUA_INCL_DIR}" \
+			MYLDFLAGS="-L${LOCALBASE}/lib"
 
-NO_TEST=	Yes
+NO_TEST=		Yes
 
 SUBST_VARS+=	MODLUA_INCL_DIR MODLUA_LIB
 pre-configure:
-	${SUBST_CMD} ${WRKSRC}/src/Makefile
+	perl -pi -e 's,-ldl,,' ${WRKSRC}/src/Makefile
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/imapfilter
-	${INSTALL_DATA} ${WRKSRC}/samples/{config,extend}.lua \
+	${INSTALL_DATA} ${WRKSRC}/samples/*.lua \
 		${PREFIX}/share/examples/imapfilter/
 
 .include <bsd.port.mk>
