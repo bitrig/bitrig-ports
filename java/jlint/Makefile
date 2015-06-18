@@ -1,13 +1,14 @@
-# $OpenBSD: Makefile,v 1.12 2015/06/17 19:06:58 jasper Exp $
+# $OpenBSD: Makefile,v 1.13 2015/06/18 07:14:22 jasper Exp $
 
 BROKEN=		needs work on bitrig
 
 COMMENT=	Java program analyzer and checker
 
 DISTNAME=	jlint-3.1.2
+REVISION=	0
 CATEGORIES=	java
 
-HOMEPAGE=	http://artho.com/jlint/
+HOMEPAGE=	http://jlint.sourceforge.net/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=  Yes
