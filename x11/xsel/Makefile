@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/07/07 08:25:16 sthen Exp $
+# $OpenBSD: Makefile,v 1.10 2015/06/19 16:24:06 jca Exp $
 
 COMMENT=	command-line program for managing X selection contents
 

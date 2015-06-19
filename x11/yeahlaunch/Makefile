@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/03/11 11:46:19 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2015/06/19 16:24:06 jca Exp $
 
 COMMENT=	animated autohiding applications launcher
 

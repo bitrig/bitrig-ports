@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 11:46:08 espie Exp $
+# $OpenBSD: Makefile,v 1.6 2015/06/19 16:24:06 jca Exp $
 
 COMMENT=	analogue bitmap clock
 

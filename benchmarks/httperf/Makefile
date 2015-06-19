@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/01/24 12:20:38 schwarze Exp $
+# $OpenBSD: Makefile,v 1.8 2015/06/19 16:24:06 jca Exp $
 
 COMMENT =		web server performance testing tool
 

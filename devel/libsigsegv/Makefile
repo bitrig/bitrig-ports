@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/03/16 18:07:42 naddy Exp $
+# $OpenBSD: Makefile,v 1.22 2015/06/19 16:24:06 jca Exp $
 
 COMMENT =		library for handling page faults in user mode
 

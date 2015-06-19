@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/06/23 17:24:11 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2015/06/19 16:24:06 jca Exp $
 
 PKG_ARCH =	*
 
