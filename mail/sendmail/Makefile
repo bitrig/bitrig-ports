@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/05/08 09:08:44 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2015/06/19 13:18:27 sthen Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -9,6 +9,7 @@ V=			8.15.1
 DISTNAME =		sendmail.${V}
 PKGNAME-main =		sendmail-${V}
 REVISION-main =		2
+REVISION-libmilter =	0
 PKGNAME-libmilter =	libmilter-${V}
 FULLPKGNAME-libmilter =	libmilter-${V}
 FULLPKGPATH-libmilter =	mail/sendmail,-libmilter
