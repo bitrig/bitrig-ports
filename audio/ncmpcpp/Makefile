@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2015/05/28 10:17:22 pascal Exp $
+# $OpenBSD: Makefile,v 1.34 2015/06/19 16:23:33 dcoppa Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -7,7 +7,7 @@ BROKEN-alpha =		error: looser throw specifier for 'virtual OutOfBounds::~OutOfBo
 BROKEN-hppa =		bindings.h:85:4: error: type 'Binding' is not a direct base of 'Binding'
 
 DISTNAME =		ncmpcpp-0.6.4
-REVISION =		0
+REVISION =		1
 
 EXTRACT_SUFX =		.tar.bz2
 
