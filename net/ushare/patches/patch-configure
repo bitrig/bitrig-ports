@@ -1,7 +1,4 @@
-$OpenBSD: patch-configure,v 1.3 2012/11/07 14:53:59 dcoppa Exp $
-
-Unbreak build with libupnp>=1.6.17
-
+$OpenBSD: patch-configure,v 1.4 2015/06/19 09:07:32 ajacoutot Exp $
 --- configure.orig	Sun Dec  9 14:03:36 2007
 +++ configure	Wed Nov  7 15:49:14 2012
 @@ -382,6 +382,7 @@ freebsd() { issystem "FreeBSD" || issystem "GNU/kFreeB
@@ -21,3 +18,13 @@ Unbreak build with libupnp>=1.6.17
  echolog "Checking for libupnp >= $libupnp_min_version ..."
  check_lib upnp/upnp.h UpnpSetMaxContentLength -lupnp || die "Error, can't find libupnp !"
  check_lib_version libupnp $libupnp_min_version || die "Error, libupnp < $libupnp_min_version !"
+@@ -302,7 +302,7 @@ cpu=`uname -m`
+ optimize="yes"
+ debug="no"
+ dostrip="yes"
+-extralibs=""
++extralibs="-lintl"
+ installstrip="-s"
+ cross_compile="no"
+ INSTALL="/usr/bin/install -c"
+
