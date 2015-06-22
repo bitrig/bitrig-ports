@@ -1,4 +1,4 @@
-# $OpenBSD: lua.port.mk,v 1.28 2013/06/02 16:59:48 jasper Exp $
+# $OpenBSD: lua.port.mk,v 1.31 2015/06/22 19:46:57 jasper Exp $
 
 CATEGORIES+=	lang/lua
 
@@ -63,13 +63,7 @@ MODLUA_DEP=		lua${MODLUA_DEP_VERSION}
 MODLUA_WANTLIB=		lua${MODLUA_VERSION}
 MODLUA_LIB=		-l${MODLUA_WANTLIB}
 
-.if "${MODLUA_VERSION}" == "5.1"
-_MODLUA_RUN_DEPENDS=	lang/lua/5.1
-.elif "${MODLUA_VERSION}" == "5.2"
-_MODLUA_RUN_DEPENDS=	lang/lua/5.2
-.elif "${MODLUA_VERSION}" == "5.3"
-_MODLUA_RUN_DEPENDS=	lang/lua/5.3
-.endif
+_MODLUA_RUN_DEPENDS=	lang/lua/${MODLUA_VERSION}
 
 MODLUA_LIB_DEPENDS=	${_MODLUA_RUN_DEPENDS}
 
