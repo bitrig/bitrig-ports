@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.16 2015/05/27 16:32:18 jca Exp $
+# $OpenBSD: Makefile,v 1.17 2015/06/22 13:08:20 jasper Exp $
 
 BROKEN= 			needs work on bitrig
 
 COMMENT=			distributed data store
 DISTNAME=			riak-2.0.4
-REVISION=			0
+REVISION=			1
 CATEGORIES=			databases
 REVISION=			1
 HOMEPAGE=			http://basho.com/

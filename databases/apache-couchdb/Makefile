@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2014/12/28 19:54:58 jasper Exp $
+# $OpenBSD: Makefile,v 1.20 2015/06/22 13:08:20 jasper Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -6,6 +6,7 @@ COMMENT =	distributed, document-oriented database
 
 COUCH_VER =	1.6.1
 DISTNAME =	apache-couchdb-${COUCH_VER}
+REVISION =	0
 CATEGORIES =	databases
 
 HOMEPAGE =	http://couchdb.apache.org/

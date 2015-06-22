@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/11/01 14:51:27 jasper Exp $
+# $OpenBSD: Makefile,v 1.5 2015/06/22 13:08:20 jasper Exp $
 
 COMMENT=	multi-protocol distributed load testing tool
 
