@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/06/22 13:08:20 jasper Exp $
+# $OpenBSD: Makefile,v 1.21 2015/06/23 16:38:10 jasper Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -6,7 +6,7 @@ COMMENT =	distributed, document-oriented database
 
 COUCH_VER =	1.6.1
 DISTNAME =	apache-couchdb-${COUCH_VER}
-REVISION =	0
+REVISION =	1
 CATEGORIES =	databases
 
 HOMEPAGE =	http://couchdb.apache.org/
@@ -22,8 +22,8 @@ WANTLIB += c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_APACHE:=couchdb/source/${COUCH_VER}/}
 
-BUILD_DEPENDS =	lang/erlang
-RUN_DEPENDS =	lang/erlang
+BUILD_DEPENDS =	lang/erlang/16
+RUN_DEPENDS =	lang/erlang/16
 LIB_DEPENDS =	textproc/icu4c \
 		lang/spidermonkey \
 		net/curl \
