@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.15 2014/09/25 20:02:31 landry Exp $
+# $OpenBSD: Makefile,v 1.16 2015/06/23 07:04:42 jasper Exp $
 
 COMMENT=	interface to libstatgrab system statistics library
 SHARED_ONLY=	Yes
 
 MODULES=	cpan
-DISTNAME=	Unix-Statgrab-0.104
+DISTNAME=	Unix-Statgrab-0.109
 CATEGORIES=	sysutils
 
 # Artistic
@@ -18,7 +18,6 @@ CONFIGURE_ARGS=	INC="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -lstatgrab"
 
 BUILD_DEPENDS=	devel/p5-Config-AutoConf
-CONFIGURE_STYLE= modbuild
 MAKE_ENV+=	TEST_POD=1
 
 .include <bsd.port.mk>
