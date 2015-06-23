@@ -1,6 +1,6 @@
 $OpenBSD$
---- binutils/bfd/config.bfd.orig	Fri Apr  6 23:37:50 2012
-+++ binutils/bfd/config.bfd	Wed May  9 16:45:04 2012
+--- binutils/bfd/config.bfd.orig	Tue Jun 16 08:53:22 2015
++++ binutils/bfd/config.bfd	Tue Jun 23 07:54:11 2015
 @@ -485,7 +485,7 @@ case "${targ}" in
      targ_selvecs="bfd_elf32_i386_vec i386bsd_vec"
      targ_underscore=yes
@@ -17,5 +17,5 @@ $OpenBSD$
 -  x86_64-*-openbsd*)
 +  x86_64-*-openbsd* | x86_64-*-bitrig*)
      targ_defvec=bfd_elf64_x86_64_vec
-     targ_selvecs="bfd_elf32_i386_vec i386coff_vec bfd_efi_app_ia32_vec"
+     targ_selvecs="bfd_elf32_i386_vec i386coff_vec bfd_efi_app_ia32_vec bfd_efi_app_x86_64_vec"
      ;;
