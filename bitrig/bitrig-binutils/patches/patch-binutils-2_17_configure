@@ -1,0 +1,20 @@
+--- binutils-2.17/configure.orig	Wed Jun 24 12:48:09 2015
++++ binutils-2.17/configure	Wed Jun 24 12:48:52 2015
+@@ -1172,7 +1172,7 @@ if test x$enable_libgomp = x ; then
+     case "${target}" in
+     *-*-linux* | *-*-gnu* | *-*-k*bsd*-gnu)
+ 	;;
+-    *-*-netbsd* | *-*-freebsd* | *-*-openbsd*)
++    *-*-netbsd* | *-*-freebsd* | *-*-openbsd* | *-*-bitrig*)
+ 	;;
+     *-*-solaris2* | *-*-sysv4* | *-*-irix* | *-*-osf* | *-*-hpux*)
+ 	;;
+@@ -1240,7 +1240,7 @@ case "${target}" in
+   *-*-netware*)
+     noconfigdirs="$noconfigdirs target-newlib target-libiberty target-libgloss ${libgcj} target-libmudflap"
+     ;;
+-  *-*-openbsd*)
++  *-*-openbsd* | *-*-bitrig*)
+     # Skip some stuff on all OpenBSD configurations.
+     noconfigdirs="$noconfigdirs etc gdb gprof target-libiberty"
+     ;;

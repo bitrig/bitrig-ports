@@ -1,12 +1,11 @@
-$OpenBSD$
---- libiberty/config.sub.orig	Wed May  9 16:16:36 2012
-+++ libiberty/config.sub	Wed May  9 16:17:20 2012
+--- libiberty/config.sub.orig	Tue Jun 23 16:00:35 2015
++++ libiberty/config.sub	Tue Jun 23 16:01:00 2015
 @@ -1200,7 +1200,7 @@ case $os in
  	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
  	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
  	      | -hiux* | -386bsd* | -knetbsd* | -mirbsd* | -netbsd* \
 -	      | -openbsd* | -solidbsd* \
-+	      | -openbsd* | -solidbsd* | -bitrig* \
++	      | -bitrig* | -openbsd* | -solidbsd* \
  	      | -ekkobsd* | -kfreebsd* | -freebsd* | -riscix* | -lynxos* \
  	      | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
  	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \

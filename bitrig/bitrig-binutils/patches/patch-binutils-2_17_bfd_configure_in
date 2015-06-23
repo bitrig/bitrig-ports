@@ -1,0 +1,29 @@
+--- binutils-2.17/bfd/configure.in.orig	Tue Jun 23 16:10:05 2015
++++ binutils-2.17/bfd/configure.in	Tue Jun 23 16:11:04 2015
+@@ -178,7 +178,7 @@ if test "${target}" = "${host}"; then
+   alpha*-*-*)		COREFILE=osf-core.lo ;;
+   arm-*-freebsd* | arm-*-kfreebsd*-gnu)
+ 			COREFILE='' ;;
+-  arm-*-netbsd* | arm-*-openbsd*)
++  arm-*-netbsd* | arm-*-openbsd* | arm-*-bitrig*)
+ 	COREFILE=netbsd-core.lo
+ 	;;
+   arm-*-riscix)		COREFILE=trad-core.lo ;;
+@@ -227,7 +227,7 @@ changequote([,])dnl
+ 	TRAD_HEADER='"hosts/i386bsd.h"'
+ 	;;
+ changequote(,)dnl
+-  i[3-7]86-*-netbsd* | i[3-7]86-*-knetbsd*-gnu | i[3-7]86-*-openbsd*)
++  i[3-7]86-*-netbsd* | i[3-7]86-*-knetbsd*-gnu | i[3-7]86-*-openbsd* | i[3-7]86-*-bitrig*)
+ changequote([,])dnl
+ 	COREFILE=netbsd-core.lo
+ 	;;
+@@ -392,7 +392,7 @@ changequote([,])dnl
+ 	COREFILE=trad-core.lo
+ 	TRAD_HEADER='"hosts/vaxbsd.h"'
+ 	;;
+-  x86_64-*-netbsd* | x86_64-*-openbsd*)
++  x86_64-*-netbsd* | x86_64-*-openbsd* | x86_64-*-bitrig*)
+ 	COREFILE=netbsd-core.lo
+ 	;;
+   esac

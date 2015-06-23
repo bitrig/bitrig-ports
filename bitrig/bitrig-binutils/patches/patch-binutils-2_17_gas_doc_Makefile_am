@@ -1,0 +1,13 @@
+--- binutils-2.17/gas/doc/Makefile.am.orig	Wed Jun 24 11:12:04 2015
++++ binutils-2.17/gas/doc/Makefile.am	Wed Jun 24 11:12:45 2015
+@@ -17,8 +17,8 @@ man_MANS = as.1
+ 
+ info_TEXINFOS = as.texinfo 
+ 
+-AM_MAKEINFOFLAGS = -I "$(srcdir)" -I "$(top_srcdir)/../../../lib/libiberty/src"
+-TEXI2DVI = texi2dvi -I "$(srcdir)" -I "$(top_srcdir)/../../../lib/libiberty/src"
++AM_MAKEINFOFLAGS = -I "$(srcdir)" -I "$(srcdir)/../../../libiberty/src"
++TEXI2DVI = texi2dvi -I "$(srcdir)" -I "$(srcdir)/../../../libiberty/src"
+ 
+ asconfig.texi: $(CONFIG).texi
+ 	rm -f asconfig.texi

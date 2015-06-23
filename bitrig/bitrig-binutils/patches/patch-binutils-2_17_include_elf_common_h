@@ -1,0 +1,10 @@
+--- binutils-2.17/include/elf/common.h.orig	Mon Aug 20 19:56:09 2012
++++ binutils-2.17/include/elf/common.h	Tue Jun 23 16:27:44 2015
+@@ -306,6 +306,7 @@
+ #define PT_GNU_RELRO	(PT_LOOS + 0x474e552) /* Read-only after relocation */
+ 
+ #define PT_OPENBSD_RANDOMIZE	0x65a3dbe6 /* Fill with random data. */
++#define PT_BITRIG_TMPFS_RAMDISK	0x627a93eb
+ 
+ /* Program segment permissions, in program header p_flags field.  */
+ 

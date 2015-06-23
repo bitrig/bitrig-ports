@@ -17,6 +17,7 @@ lib/libiberty.a
 lib/libiberty_p.a
 libdata/ldscripts/
 @info share/info/as.info
+@info share/info/bfd.info
 @info share/info/binutils.info
 @info share/info/ld.info
 @info share/info/libiberty.info

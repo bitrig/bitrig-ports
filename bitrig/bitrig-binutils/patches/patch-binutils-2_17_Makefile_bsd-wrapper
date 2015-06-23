@@ -1,0 +1,61 @@
+--- binutils-2.17/Makefile.bsd-wrapper.orig	Fri Jul  5 17:29:51 2013
++++ binutils-2.17/Makefile.bsd-wrapper	Wed Jun 24 12:37:20 2015
+@@ -5,12 +5,12 @@
+ SUBDIRS=	opcodes bfd
+ CONF_SUBDIRS=	opcodes bfd
+ 
+-CFLAGS+=	${PIE_DEFAULT}
++CFLAGS+=	${PIE_DEFAULT} -Wno-string-plus-int
+ # This allows moving the whole binutils installation around for 
+ # testing purposes
+-PREFIX=/usr
+-.if ${PREFIX} != "/usr"
+-MANDIR=${PREFIX}/share/man/man
++LOCALBASE=/usr
++.if ${LOCALBASE} != "/usr"
++MANDIR=${LOCALBASE}/share/man/man
+ .endif
+ 
+ MAN=		binutils/doc/addr2line.1 binutils/doc/objcopy.1 \
+@@ -51,8 +51,8 @@ all:	config.status
+ 	  CONFIGURE_HOST_MODULES='${CONFIGURE_HOST_MODULES}' \
+ 	  ${MAKE} CC="${CC}" \
+ 	    CFLAGS="${CFLAGS} ${COPTS}" LDFLAGS=${LDSTATIC} \
+-	    scriptdir=${PREFIX}/libdata \
+-	    tooldir=${PREFIX} \
++	    scriptdir=${LOCALBASE}/libdata \
++	    tooldir=${LOCALBASE} \
+ 	    MAKEINFO='makeinfo --no-split' \
+ 	    MAKEINFOFLAGS='' \
+ 	    BSDSRCDIR=${BSDSRCDIR} \
+@@ -69,10 +69,14 @@ CF=
+ .endif
+ 
+ do-config: .USE
+-	PATH="/bin:/usr/bin:/sbin:/usr/sbin" \
++	PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin" \
+ 	MAKEINFO='makeinfo --no-split' \
+-	sh ${.CURDIR}/configure --prefix=${PREFIX} \
+-	    --infodir='$${prefix}/share/info' \
++	sh ${.CURDIR}/configure --prefix=${LOCALBASE} \
++	    --bindir=${LOCALBASE}/bin \
++	    --mandir=${LOCALBASE}/man \
++	    --includedir=${LOCALBASE}/include \
++	    --infodir=${LOCALBASE}/share/info \
++	    --libdir=${LOCALBASE}/lib \
+ 	    --disable-nls --disable-gdbtk --disable-install-libbfd ${CF} \
+ 	    ${CONFIGTARGET}
+ 	cd ${.OBJDIR} && \
+@@ -97,9 +101,9 @@ config.status: do-config
+ # Need to pass SUBDIRS because of install-info
+ install: maninstall
+ 	SUBDIRS='${INST_SUBDIRS}' ${MAKE} DESTDIR='${DESTDIR}' \
+-	    INSTALL_MAN= \
+-	    scriptdir=${PREFIX}/libdata \
+-	    tooldir=${PREFIX} \
++	    INSTALL_MAN=${LOCALBASE}/man \
++	    scriptdir=${LOCALBASE}/libdata \
++	    tooldir=${LOCALBASE} \
+ 	    BSDSRCDIR=${BSDSRCDIR} \
+ 	    INSTALL_MODULES='${INSTALL_MODULES}' \
+ 	    INSTALL_PROGRAM='install -c -S' \

@@ -1,0 +1,47 @@
+--- binutils-2.17/bfd/config.bfd.orig	Tue Jun 23 16:05:35 2015
++++ binutils-2.17/bfd/config.bfd	Tue Jun 23 16:07:41 2015
+@@ -195,7 +195,7 @@ case "${targ}" in
+     targ_defvec=bfd_elf32_littlearm_vec
+     targ_selvecs="bfd_elf32_bigarm_vec armnetbsd_vec"
+     ;;
+-  arm-*-netbsd* | arm-*-openbsd*)
++  arm-*-netbsd* | arm-*-openbsd* | arm-*-bitrig*)
+     targ_defvec=armnetbsd_vec
+     targ_selvecs="bfd_elf32_littlearm_vec bfd_elf32_bigarm_vec"
+     targ_underscore=yes
+@@ -242,7 +242,7 @@ case "${targ}" in
+     targ_defvec=bfd_elf32_littlearm_vec
+     targ_selvecs=bfd_elf32_bigarm_vec
+     ;;
+-  armeb-*-elf | arm*b-*-linux-* | armeb-*-openbsd*)
++  armeb-*-elf | arm*b-*-linux-* | armeb-*-openbsd* | armeb-*-bitrig*)
+     targ_defvec=bfd_elf32_bigarm_vec
+     targ_selvecs=bfd_elf32_littlearm_vec
+     ;;
+@@ -251,7 +251,7 @@ case "${targ}" in
+     targ_selvecs=bfd_elf32_bigarm_vec
+     ;;
+   arm-*-elf | arm-*-freebsd* | arm*-*-linux-* | arm*-*-conix* | \
+-  arm*-*-uclinux* | arm-*-kfreebsd*-gnu | arm-*-openbsd* | \
++  arm*-*-uclinux* | arm-*-kfreebsd*-gnu | arm-*-openbsd* | arm-*-bitrig* | \
+   arm*-*-eabi* )
+     targ_defvec=bfd_elf32_littlearm_vec
+     targ_selvecs=bfd_elf32_bigarm_vec
+@@ -531,7 +531,7 @@ case "${targ}" in
+     targ_selvecs="bfd_elf32_i386_vec i386bsd_vec"
+     targ_underscore=yes
+     ;;
+-  i[3-7]86-*-openbsd*)
++  i[3-7]86-*-openbsd* | i[3-7]86-*-bitrig*)
+     targ_defvec=bfd_elf32_i386_vec
+     targ_selvecs="i386netbsd_vec bfd_efi_app_ia32_vec"
+     targ64_selvecs=bfd_elf64_x86_64_vec
+@@ -563,7 +563,7 @@ case "${targ}" in
+     targ_defvec=bfd_elf64_x86_64_vec
+     targ_selvecs="bfd_elf32_i386_vec i386netbsd_vec i386coff_vec bfd_efi_app_ia32_vec"
+     ;;
+-  x86_64-*-openbsd*)
++  x86_64-*-openbsd* | x86_64-*-bitrig*)
+     targ_defvec=bfd_elf64_x86_64_vec
+     targ_selvecs="bfd_elf32_i386_vec i386coff_vec bfd_efi_app_ia32_vec bfd_efi_app_x86_64_vec"
+     ;;

@@ -1,0 +1,44 @@
+--- binutils-2.17/ld/emultempl/elf32.em.orig	Mon Jul  4 19:58:26 2011
++++ binutils-2.17/ld/emultempl/elf32.em	Wed Jun 24 11:34:10 2015
+@@ -78,7 +78,7 @@ EOF
+ fi
+ 
+ case ${target} in
+-  *-*-openbsd*)
++  *-*-openbsd* | *-*-bitrig*)
+     cat >>e${EMULATION_NAME}.c <<EOF
+ #include <sys/types.h>
+ #include <dirent.h>
+@@ -686,7 +686,7 @@ gld${EMULATION_NAME}_search_needed (const char *path,
+   needed.by = n->by;
+ EOF
+ case ${target} in
+-  *-*-openbsd*)
++  *-*-openbsd* | *-*-bitrig*)
+     cat >>e${EMULATION_NAME}.c <<EOF
+ 
+   {
+@@ -1504,7 +1504,7 @@ cat >>e${EMULATION_NAME}.c <<EOF
+ 
+ static bfd_boolean
+ gld${EMULATION_NAME}_open_dynamic_archive
+-  (const char *arch, search_dirs_type *search, lang_input_statement_type *entry)
++  (const char *arch __unused, search_dirs_type *search, lang_input_statement_type *entry)
+ {
+   const char *filename;
+   char *string;
+@@ -1516,13 +1516,12 @@ gld${EMULATION_NAME}_open_dynamic_archive
+ 
+ EOF
+ case ${target} in
+-  *-*-openbsd*)
++  *-*-openbsd* | *-*-bitrig*)
+     cat >>e${EMULATION_NAME}.c <<EOF
+   string = gld${EMULATION_NAME}_search_dir(search->name, filename, -1, -1);
+   if (string == NULL)
+     return FALSE;
+ 
+-  arch = arch; /* gcc -Werror */
+ EOF
+    ;;
+   *)

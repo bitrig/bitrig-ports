@@ -1,0 +1,12 @@
+--- binutils-2.17/gas/config/atof-ieee.c.orig	Sun Apr 24 16:14:44 2011
++++ binutils-2.17/gas/config/atof-ieee.c	Wed Jun 24 11:19:57 2015
+@@ -420,7 +420,8 @@ gen_to_words (LITTLENUM_TYPE *words, int precision, lo
+ 		     - generic_floating_point_number.low);
+ 
+   /* Seek (and forget) 1st significant bit.  */
+-  for (exponent_skippage = 0; !next_bits (1); ++exponent_skippage);;
++  for (exponent_skippage = 0; !next_bits (1); ++exponent_skippage);
++	;
+   exponent_1 = (generic_floating_point_number.exponent
+ 		+ generic_floating_point_number.leader
+ 		+ 1

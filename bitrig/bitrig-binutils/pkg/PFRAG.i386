@@ -1,14 +1,20 @@
 @comment $OpenBSD$
+libdata/ldscripts/elf_i386.xdw
+libdata/ldscripts/elf_i386.xsw
+libdata/ldscripts/elf_i386.xw
 libdata/ldscripts/elf_i386_obsd.x
 libdata/ldscripts/elf_i386_obsd.xbn
 libdata/ldscripts/elf_i386_obsd.xc
 libdata/ldscripts/elf_i386_obsd.xd
 libdata/ldscripts/elf_i386_obsd.xdc
 libdata/ldscripts/elf_i386_obsd.xdcz
+libdata/ldscripts/elf_i386_obsd.xdw
 libdata/ldscripts/elf_i386_obsd.xdz
 libdata/ldscripts/elf_i386_obsd.xn
 libdata/ldscripts/elf_i386_obsd.xr
 libdata/ldscripts/elf_i386_obsd.xs
 libdata/ldscripts/elf_i386_obsd.xsc
+libdata/ldscripts/elf_i386_obsd.xsw
 libdata/ldscripts/elf_i386_obsd.xu
+libdata/ldscripts/elf_i386_obsd.xw
 libdata/ldscripts/elf_i386_obsd.xz

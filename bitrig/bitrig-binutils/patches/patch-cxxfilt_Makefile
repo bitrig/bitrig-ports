@@ -1,0 +1,25 @@
+--- cxxfilt/Makefile.orig	Fri Jul  5 17:29:51 2013
++++ cxxfilt/Makefile	Wed Jun 24 13:20:46 2015
+@@ -1,14 +1,20 @@
+ NOMAN=1
+ PROG=c++filt
++LOCALBASE=/usr
+ 
+ SRCS=	cxxfilt.c
+-LIBIBERTY_INCDIR=${.CURDIR}/../../lib/libiberty/include
++LIBIBERTY_INCDIR=${.CURDIR}/../libiberty/include
+ 
+ CFLAGS+=-I${LIBIBERTY_INCDIR}
+-LDADD=-liberty
++LDADD=-L../libiberty -liberty
+ 
+ cxxmain.c:
+ 	ln -s ${LIBIBERTY_SRCDIR}/cplus-dem.c $@
++
++install:
++	${INSTALL} ${INSTALL_COPY} ${INSTALL_STRIP} -o ${BINOWN} \
++	   -g ${BINGRP} -m ${BINMODE} c++filt \
++	   ${DESTDIR}${LOCALBASE}/bin
+ 
+ .include <bsd.prog.mk>
+ 

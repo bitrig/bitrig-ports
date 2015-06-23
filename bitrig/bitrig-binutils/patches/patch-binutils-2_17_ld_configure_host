@@ -1,0 +1,20 @@
+--- binutils-2.17/ld/configure.host.orig	Tue Jun 23 16:32:10 2015
++++ binutils-2.17/ld/configure.host	Tue Jun 23 16:32:42 2015
+@@ -67,7 +67,7 @@ case "${host}" in
+   fi
+   ;;
+ 
+-*-*-openbsd*)
++*-*-openbsd* | *-*-bitrig*)
+   HOSTING_CRT0="-dynamic-linker /usr/libexec/ld.so /usr/lib/crt0.o"
+   HOSTING_CRT0="$HOSTING_CRT0 /usr/lib/crtbegin.o"
+   HOSTING_LIBS="$HOSTING_LIBS /usr/lib/crtend.o"
+@@ -236,7 +236,7 @@ x86_64-*-linux-*)
+ *-*-netbsd*)
+   ;;
+ 
+-*-*-openbsd*)
++*-*-openbsd* | *-*-bitrig*)
+   ;;
+ 
+ alpha*-*-*)

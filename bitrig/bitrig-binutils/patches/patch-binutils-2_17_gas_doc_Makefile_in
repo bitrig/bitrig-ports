@@ -1,0 +1,13 @@
+--- binutils-2.17/gas/doc/Makefile.in.orig	Wed Jun 24 11:06:06 2015
++++ binutils-2.17/gas/doc/Makefile.in	Wed Jun 24 11:06:22 2015
+@@ -212,8 +212,8 @@ POD2MAN = pod2man --center="GNU Development Tools" \
+ 
+ man_MANS = as.1
+ info_TEXINFOS = as.texinfo 
+-AM_MAKEINFOFLAGS = -I "$(srcdir)" -I "$(top_srcdir)/../../../lib/libiberty/src"
+-TEXI2DVI = texi2dvi -I "$(srcdir)" -I "$(top_srcdir)/../../../lib/libiberty/src"
++AM_MAKEINFOFLAGS = -I "$(srcdir)" -I "$(srcdir)/../../../libiberty/src"
++TEXI2DVI = texi2dvi -I "$(srcdir)" -I "$(srcdir)/../../../libiberty/src"
+ CPU_DOCS = \
+ 	c-alpha.texi \
+ 	c-arc.texi \

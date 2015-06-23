@@ -1,0 +1,13 @@
+--- binutils-2.17/binutils/doc/Makefile.am.orig	Wed Jun 24 10:44:32 2015
++++ binutils-2.17/binutils/doc/Makefile.am	Wed Jun 24 10:44:52 2015
+@@ -34,8 +34,8 @@ info_TEXINFOS = binutils.texi
+ binutils_TEXINFOS = config.texi
+ binutils_TEXI = $(srcdir)/binutils.texi
+ 
+-AM_MAKEINFOFLAGS = -I "$(srcdir)" -I "$(top_srcdir)/../../../lib/libiberty/src"
+-TEXI2DVI = texi2dvi -I "$(srcdir)" -I "$(top_srcdir)/../../../lib/libiberty/src"
++AM_MAKEINFOFLAGS = -I "$(srcdir)" -I "$(srcdir)/../../../libiberty/src"
++TEXI2DVI = texi2dvi -I "$(srcdir)" -I "$(srcdir)/../../../libiberty/src"
+ 
+ config.texi: $(srcdir)/../../bfd/configure $(binutils_TEXI)
+ 	rm -f config.texi

@@ -1,0 +1,26 @@
+--- binutils-2.17/bfd/elflink.c.orig	Wed Jun  3 13:02:53 2015
++++ binutils-2.17/bfd/elflink.c	Tue Jun 23 16:42:49 2015
+@@ -6731,6 +6731,14 @@ elf_section_ignore_discarded_relocs (asection *sec)
+       break;
+     }
+ 
++  if (strncmp (".stab", sec->name, 5) == 0
++      && (!sec->name[5] ||
++      (sec->name[5] == '.' && ISDIGIT (sec->name[6]))))
++    return TRUE;
++
++  if (strcmp (".eh_frame", sec->name) == 0)
++    return TRUE;
++
+   bed = get_elf_backend_data (sec->owner);
+   if (bed->elf_backend_ignore_discarded_relocs != NULL
+       && (*bed->elf_backend_ignore_discarded_relocs) (sec))
+@@ -9826,7 +9834,7 @@ _bfd_elf_section_already_linked (bfd *abfd, struct bfd
+ 		   abfd, sec);
+ 	      else if (sec->size != 0)
+ 		{
+-		  bfd_byte *sec_contents, *l_sec_contents;
++		  bfd_byte *sec_contents, *l_sec_contents = NULL;
+ 
+ 		  if (!bfd_malloc_and_get_section (abfd, sec, &sec_contents))
+ 		    (*_bfd_error_handler)

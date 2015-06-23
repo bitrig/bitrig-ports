@@ -1,0 +1,11 @@
+--- binutils-2.17/gas/Makefile.in.orig	Wed Jun 24 16:02:26 2015
++++ binutils-2.17/gas/Makefile.in	Wed Jun 24 16:03:50 2015
+@@ -695,7 +695,7 @@ DEP_FLAGS = -DOBJ_MAYBE_ELF \
+ 
+ # How to link with both our special library facilities
+ # and the system's installed libraries.
+-GASLIBS = @OPCODES_LIB@ @BFDLIB@ -liberty
++GASLIBS = @OPCODES_LIB@ @BFDLIB@ -L../../libiberty -liberty
+ GASLIBSDEP = @OPCODES_LIB@ @BFDLIB@
+ 
+ # Files to be copied away after each stage in building.

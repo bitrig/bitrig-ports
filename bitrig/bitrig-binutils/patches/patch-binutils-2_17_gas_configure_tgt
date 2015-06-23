@@ -1,0 +1,18 @@
+--- binutils-2.17/gas/configure.tgt.orig	Tue Jun 23 16:23:43 2015
++++ binutils-2.17/gas/configure.tgt	Tue Jun 23 16:25:11 2015
+@@ -113,6 +113,7 @@ case ${generic_target} in
+   arm-*-netbsdelf*)                 	fmt=elf  em=nbsd ;;
+   arm-*-netbsd*)			fmt=aout em=nbsd ;;
+   arm-*-openbsd*)			fmt=elf  em=obsd ;;
++  arm-*-bitrig*)			fmt=elf  em=obsd ;;
+   arm-*-nto*)				fmt=elf ;;
+   arm-epoc-pe | thumb-epoc-pe)		fmt=coff em=epoc-pe ;;
+   arm-wince-pe | arm-*-wince)		fmt=coff em=wince-pe ;;
+@@ -186,6 +187,7 @@ case ${generic_target} in
+   i386-*-openbsd[0-2].* | \
+   i386-*-openbsd3.[0-2])		fmt=aout em=obsd ;;
+   i386-*-openbsd*)			fmt=elf em=obsd ;;
++  i386-*-bitrig*)			fmt=elf em=obsd ;;
+   i386-*-linux*aout*)			fmt=aout em=linux ;;
+   i386-*-linux*oldld)			fmt=aout em=linux ;;
+   i386-*-linux*coff*)			fmt=coff em=linux ;;

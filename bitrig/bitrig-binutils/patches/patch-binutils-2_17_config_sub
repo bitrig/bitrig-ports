@@ -1,12 +1,11 @@
-$OpenBSD$
---- binutils/config.sub.orig	Wed May  9 16:20:01 2012
-+++ binutils/config.sub	Wed May  9 16:20:26 2012
-@@ -1150,7 +1150,7 @@ case $os in
- 	      | -aos* \
+--- binutils-2.17/config.sub.orig	Tue Jun 23 16:02:42 2015
++++ binutils-2.17/config.sub	Tue Jun 23 16:02:50 2015
+@@ -1200,7 +1200,7 @@ case $os in
  	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
  	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
--	      | -hiux* | -386bsd* | -knetbsd* | -mirbsd* | -netbsd* | -openbsd* \
-+	      | -hiux* | -386bsd* | -knetbsd* | -mirbsd* | -netbsd* | -openbsd* | -bitrig* \
+ 	      | -hiux* | -386bsd* | -knetbsd* | -mirbsd* | -netbsd* \
+-	      | -openbsd* | -solidbsd* \
++	      | -bitrig* | -openbsd* | -solidbsd* \
  	      | -ekkobsd* | -kfreebsd* | -freebsd* | -riscix* | -lynxos* \
  	      | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
  	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \

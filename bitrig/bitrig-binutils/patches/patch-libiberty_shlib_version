@@ -1,0 +1,6 @@
+--- libiberty/shlib_version.orig	Wed Jun 24 12:59:28 2015
++++ libiberty/shlib_version	Wed Jun 24 12:59:33 2015
+@@ -1,2 +1,2 @@
+-major=12
++major=13
+ minor=0

@@ -1,0 +1,13 @@
+--- binutils-2.17/ld/Makefile.am.orig	Wed Jun 24 11:13:57 2015
++++ binutils-2.17/ld/Makefile.am	Wed Jun 24 11:14:14 2015
+@@ -97,8 +97,8 @@ info_TEXINFOS = ld.texinfo
+ noinst_TEXINFOS = ldint.texinfo
+ man_MANS = ld.1
+ 
+-AM_MAKEINFOFLAGS = -I $(srcdir) -I $(BFDDIR)/doc -I $(top_srcdir)/../../../lib/libiberty/src
+-TEXI2DVI = texi2dvi -I $(srcdir) -I $(BFDDIR)/doc -I $(top_srcdir)/../../../lib/libiberty/src
++AM_MAKEINFOFLAGS = -I $(srcdir) -I $(BFDDIR)/doc -I $(srcdir)/../../libiberty/src
++TEXI2DVI = texi2dvi -I $(srcdir) -I $(BFDDIR)/doc -I $(srcdir)/../../libiberty/src
+ 
+ INCLUDES = -D_GNU_SOURCE -I. -I$(srcdir) -I../bfd -I$(BFDDIR) -I$(INCDIR) -I$(top_srcdir)/../intl -I../intl $(HDEFINES) $(CFLAGS) -DLOCALEDIR="\"$(datadir)/locale\""
+ 

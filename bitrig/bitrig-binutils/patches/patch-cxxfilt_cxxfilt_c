@@ -1,6 +1,5 @@
-$OpenBSD$
---- binutils/cxxfilt/cxxfilt.c.orig	Thu Feb 23 19:03:54 2012
-+++ binutils/cxxfilt/cxxfilt.c	Tue Mar 13 18:14:12 2012
+--- cxxfilt/cxxfilt.c.orig	Wed Jun 24 11:45:58 2015
++++ cxxfilt/cxxfilt.c	Wed Jun 24 11:46:43 2015
 @@ -32,6 +32,9 @@ Software Foundation, 59 Temple Place - Suite 330, Bost
  #include "getopt.h"
  #include "safe-ctype.h"

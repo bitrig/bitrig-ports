@@ -1,0 +1,47 @@
+--- binutils-2.17/bfd/configure.orig	Tue Jun 23 16:07:53 2015
++++ binutils-2.17/bfd/configure	Tue Jun 23 16:09:44 2015
+@@ -3525,7 +3525,7 @@ freebsd* | kfreebsd*-gnu)
+     i*86 )
+       # Not sure whether the presence of OpenBSD here was a mistake.
+       # Let's accept both of them until this is cleared up.
+-      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD)/i[3-9]86 (compact )?demand paged shared library'
++      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|Bitrig)/i[3-9]86 (compact )?demand paged shared library'
+       lt_cv_file_magic_cmd=/usr/bin/file
+       lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
+       ;;
+@@ -3673,7 +3673,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -11467,7 +11467,7 @@ if test "${target}" = "${host}"; then
+   alpha*-*-*)		COREFILE=osf-core.lo ;;
+   arm-*-freebsd* | arm-*-kfreebsd*-gnu)
+ 			COREFILE='' ;;
+-  arm-*-netbsd* | arm-*-openbsd*)
++  arm-*-netbsd* | arm-*-openbsd* | arm-*-bitrig*)
+ 	COREFILE=netbsd-core.lo
+ 	;;
+   arm-*-riscix)		COREFILE=trad-core.lo ;;
+@@ -11505,7 +11505,7 @@ if test "${target}" = "${host}"; then
+ 	COREFILE=''
+ 	TRAD_HEADER='"hosts/i386bsd.h"'
+ 	;;
+-  i[3-7]86-*-netbsd* | i[3-7]86-*-knetbsd*-gnu | i[3-7]86-*-openbsd*)
++  i[3-7]86-*-netbsd* | i[3-7]86-*-knetbsd*-gnu | i[3-7]86-*-openbsd* | i[3-7]86-*-bitrig*)
+ 	COREFILE=netbsd-core.lo
+ 	;;
+   i[3-7]86-esix-sysv3*)
+@@ -11705,7 +11705,7 @@ rm -f conftest.err conftest.$ac_objext conftest.$ac_ex
+ 	COREFILE=trad-core.lo
+ 	TRAD_HEADER='"hosts/vaxbsd.h"'
+ 	;;
+-  x86_64-*-netbsd* | x86_64-*-openbsd*)
++  x86_64-*-netbsd* | x86_64-*-openbsd* | x86_64-*-bitrig*)
+ 	COREFILE=netbsd-core.lo
+ 	;;
+   esac

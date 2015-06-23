@@ -1,0 +1,19 @@
+--- binutils-2.17/bfd/elf.c.orig	Fri Feb 13 00:00:32 2015
++++ binutils-2.17/bfd/elf.c	Tue Jun 23 16:41:11 2015
+@@ -1086,6 +1086,7 @@ get_segment_type (unsigned int p_type)
+     case PT_GNU_STACK: pt = "STACK"; break;
+     case PT_GNU_RELRO: pt = "RELRO"; break;
+     case PT_OPENBSD_RANDOMIZE: pt = "OPENBSD_RANDOMIZE"; break;
++    case PT_BITRIG_TMPFS_RAMDISK: pt = "BITRIG_TMPFS_RAMDISK"; break;
+     default: pt = NULL; break;
+     }
+   return pt;
+@@ -8547,7 +8548,7 @@ _bfd_elf_get_synthetic_symtab (bfd *abfd,
+ {
+   const struct elf_backend_data *bed = get_elf_backend_data (abfd);
+   asection *relplt;
+-  asymbol *s;
++  asymbol *s = NULL;
+   const char *relplt_name;
+   bfd_boolean (*slurp_relocs) (bfd *, asection *, asymbol **, bfd_boolean);
+   arelent *p;
