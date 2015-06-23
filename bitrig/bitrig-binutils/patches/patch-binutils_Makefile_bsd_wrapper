@@ -1,6 +1,6 @@
---- binutils/Makefile.bsd-wrapper.orig	Fri Jul  5 17:29:51 2013
-+++ binutils/Makefile.bsd-wrapper	Thu Nov  7 16:06:56 2013
-@@ -5,9 +5,9 @@
+--- binutils/Makefile.bsd-wrapper.orig	Fri Jul  5 16:29:51 2013
++++ binutils/Makefile.bsd-wrapper	Tue Jun 23 13:23:57 2015
+@@ -5,20 +5,11 @@
  CFLAGS+=	${PIE_DEFAULT}
  # This allows moving the whole binutils installation around for 
  # testing purposes
@@ -12,8 +12,19 @@
 +MANDIR=${LOCALBASE}/share/man/man
  .endif
  
- .if ${BINUTILS_VERSION} == "binutils-2.17"
-@@ -26,13 +26,6 @@ MAN=		binutils/doc/addr2line.1 binutils/doc/objcopy.1 
+-.if ${BINUTILS_VERSION} == "binutils-2.17"
+-
+-SUBDIRS=	opcodes bfd gdb
+-CONF_SUBDIRS=	${SUBDIRS}
+-INST_SUBDIRS=	gdb
+-MAN=		gdb/gdb.1
+-
+-.else
+-
+ SUBDIRS=	opcodes bfd
+ CONF_SUBDIRS=	opcodes bfd
+ 
+@@ -26,13 +17,6 @@ MAN=		binutils/doc/addr2line.1 binutils/doc/objcopy.1 
  		binutils/doc/objdump.1 binutils/doc/readelf.1 \
  		c++filt.1
  
@@ -27,7 +38,16 @@
  SUBDIRS+=	binutils ld gas
  CONF_SUBDIRS+=	binutils ld gas
  INST_SUBDIRS+=	binutils ld gas
-@@ -63,15 +56,15 @@ all:	config.status
+@@ -40,8 +24,6 @@ MAN+=		binutils/doc/ar.1 binutils/doc/ranlib.1 \
+ 		binutils/doc/strings.1 binutils/doc/strip.1 \
+ 		gas/doc/as.1 ld/ld.1
+ 
+-.endif
+-
+ # Used by the GNU Makefile
+ ALL_MODULES=${SUBDIRS:S/^/all-/g}
+ CONFIGURE_MODULES=${CONF_SUBDIRS:S/^/configure-/g}
+@@ -63,15 +45,15 @@ all:	config.status
  	  CONFIGURE_HOST_MODULES='${CONFIGURE_HOST_MODULES}' \
  	  ${MAKE} CC="${CC}" \
  	    CFLAGS="${CFLAGS} ${COPTS}" LDFLAGS=${LDSTATIC} \
@@ -46,7 +66,7 @@
  .include <bsd.own.mk>
  
  .ifdef GLOBAL_AUTOCONF_CACHE
-@@ -81,10 +74,14 @@ CF=
+@@ -81,10 +63,14 @@ CF=
  .endif
  
  do-config: .USE
@@ -64,7 +84,7 @@
  	    --disable-nls --disable-gdbtk --disable-install-libbfd ${CF} \
  	    ${CONFIGTARGET}
  	cd ${.OBJDIR} && \
-@@ -109,14 +106,17 @@ config.status: do-config
+@@ -109,14 +95,17 @@ config.status: do-config
  # Need to pass SUBDIRS because of install-info
  install: maninstall
  	SUBDIRS='${INST_SUBDIRS}' ${MAKE} DESTDIR='${DESTDIR}' \
