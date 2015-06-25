@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2015/06/24 06:50:19 jasper Exp $
+# $OpenBSD: Makefile,v 1.23 2015/06/25 13:20:04 jasper Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -6,7 +6,7 @@ COMMENT =	distributed, document-oriented database
 
 COUCH_VER =	1.6.1
 DISTNAME =	apache-couchdb-${COUCH_VER}
-REVISION =	2
+REVISION =	3
 CATEGORIES =	databases
 
 HOMEPAGE =	http://couchdb.apache.org/
@@ -36,7 +36,7 @@ FAKE_FLAGS =	localconfdir=${PREFIX}/share/examples/couchdb
 
 CONFIGURE_STYLE = gnu
 CONFIGURE_ARGS = ${CONFIGURE_SHARED} \
-		--with-erlang=${LOCALBASE}/lib/erlang/usr/include \
+		--with-erlang=${LOCALBASE}/lib/erlang${MODERL_VERSION}/usr/include \
 		--with-js-include=${LOCALBASE}/include/js \
 		--with-js-lib=${LOCALBASE}/lib \
 		--disable-docs \
