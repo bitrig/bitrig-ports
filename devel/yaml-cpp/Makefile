@@ -1,16 +1,21 @@
-# $OpenBSD: Makefile,v 1.8 2014/11/04 15:08:18 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.9 2015/06/25 07:37:00 jasper Exp $
 
 BROKEN = 		needs work on bitrig
 
 COMMENT =		YAML parser and emitter in C++
-DISTNAME =		yaml-cpp-0.5.1
-REVISION =		1
+
+V=			0.5.1
+GH_ACCOUNT=		jbeder
+GH_PROJECT=		yaml-cpp
+GH_TAGNAME=		release-$V
+DISTNAME =		yaml-cpp-$V
+REVISION =		2
 
 SHARED_LIBS =		yaml-cpp	2.0 # 0.5
 
 CATEGORIES =		devel
 
-HOMEPAGE =		https://code.google.com/p/yaml-cpp/
+HOMEPAGE =		https://github.com/jbeder/yaml-cpp
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
@@ -20,8 +25,6 @@ WANTLIB += c++ c++abi pthread
 
 BUILD_DEPENDS =		devel/boost
 RUN_DEPENDS =		devel/boost
-
-MASTER_SITES =		http://yaml-cpp.googlecode.com/files/
 
 MODULES =		devel/cmake
 
