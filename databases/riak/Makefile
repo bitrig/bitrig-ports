@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.19 2015/06/24 06:50:19 jasper Exp $
+# $OpenBSD: Makefile,v 1.20 2015/06/25 13:21:55 jasper Exp $
 
 BROKEN= 			needs work on bitrig
 
 COMMENT=			distributed data store
 DISTNAME=			riak-2.0.4
-REVISION=			3
+REVISION=			4
 CATEGORIES=			databases
 REVISION=			1
 HOMEPAGE=			http://basho.com/
@@ -109,7 +109,7 @@ snappy_AUTOMAKE_VERSION = 1.11
 WANTLIB = c crypto m ncurses pthread ssl util mozjs nspr4 pam
 WANTLIB += c++ c++abi
 
-BUILD_DEPENDS =	lang/erlang/16
+MODERL_BUILD_DEPENDS=devel/rebar
 BUILD_DEPENDS+=	devel/autoconf/${snappy_AUTOCONF_VERSION} \
 		devel/automake/${snappy_AUTOMAKE_VERSION} \
 		devel/libtool
@@ -120,6 +120,10 @@ versions:
 .for _n _v in ${RIAK_VERSIONS}
 	@echo ${_n} ${_v}
 .endfor
+
+# Overwrite local copy of rebar
+post-extract:
+	cp ${LOCALBASE}/bin/rebar16 ${WRKSRC}/rebar
 
 pre-configure:
 	mkdir -p ${WRKSRC}/deps/riaknostic/deps
