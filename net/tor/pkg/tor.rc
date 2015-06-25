@@ -7,6 +7,8 @@ daemon_timeout=60
 
 . /etc/rc.d/rc.subr
 
+pexp="${daemon}${daemon_flags:+ ${daemon_flags}}$"
+
 rc_stop() {
 	pkill -INT -xf "${pexp}"
 }
