@@ -5,7 +5,7 @@ DISTNAME =	paulstretch-2.2-2
 PKGNAME =	paulstretch-2.2.2
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	audio x11
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	http://hypermammut.sourceforge.net/paulstretch/
 
