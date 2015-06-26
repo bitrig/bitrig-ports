@@ -4,7 +4,7 @@ COMMENT=	primitives drawing/other support functions for SDL
 
 DISTNAME=	SDL_gfx-2.0.25
 PKGNAME=	${DISTNAME:L:S/_/-/}
-REVISION=	0
+REVISION=	1
 CATEGORIES=	devel graphics x11
 MASTER_SITES=	http://www.ferzkopp.net/Software/SDL_gfx-2.0/
 
@@ -17,7 +17,10 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	SDL m pthread sndio usbhid
 
-MODULES=	converters/libiconv
+MODULES=	converters/libiconv gcc4
+# workaround for clang crash
+MODGCC4_LANGS=	c c++
+MODGCC4_ARCHS=	*
 LIB_DEPENDS=	devel/sdl
 
 USE_GMAKE=	Yes
