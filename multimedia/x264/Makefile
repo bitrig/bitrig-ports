@@ -34,9 +34,10 @@ CONFIGURE_ARGS+=--disable-ffms \
 		--enable-static \
 		--prefix=${PREFIX}
 
-.if ${MACHINE_ARCH} != "amd64"
+# WORKAROUND TO BUILD
+#.if ${MACHINE_ARCH} != "amd64"
 CONFIGURE_ARGS+=--disable-asm
-.endif
+#.endif
 
 NO_TEST=	Yes
 
