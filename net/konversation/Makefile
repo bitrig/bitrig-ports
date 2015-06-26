@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.3 2015/05/28 10:17:24 pascal Exp $
+# $OpenBSD: Makefile,v 1.4 2015/06/26 09:18:39 ajacoutot Exp $
 
 CATEGORIES =	net
 COMMENT =	IRC client for KDE 4
 V =		1.5
 DISTNAME =	konversation-$V
 HOMEPAGE =	http://konversation.kde.org/
-REVISION =	1
+REVISION =	2
 
 WANTLIB =  c m pthread
 WANTLIB += lib/qt4/Qt3Support lib/qt4/QtDBus lib/qt4/QtGui
