@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2015/06/26 09:19:24 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.23 2015/06/26 09:20:06 ajacoutot Exp $
 
 COMMENT=	yet another kuake KDE terminal emulator
 
@@ -18,7 +18,6 @@ WANTLIB += knewstuff3 knotifyconfig kparts m nepomuk nepomukutils
 WANTLIB += pthread soprano
 WANTLIB += c++ c++abi
 
-# XXX should use MASTER_SITE_KDE?
 MASTER_SITES=	${MASTER_SITE_KDE:=/stable/yakuake/${V}/src/}
 EXTRACT_SUFX=	.tar.xz
 
