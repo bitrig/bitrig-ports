@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/03/11 11:46:17 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2015/06/26 21:00:48 naddy Exp $
 
 COMMENT=	alternative xdm-invoked chooser
 
