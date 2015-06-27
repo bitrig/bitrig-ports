@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.6 2015/04/06 13:40:50 landry Exp $
+# $OpenBSD: Makefile,v 1.7 2015/06/27 13:37:27 jasper Exp $
 
 BROKEN = 	needs work on bitrig
 
 COMMENT =	simple, distraction-free writing environment
 
-DISTNAME =	focuswriter-1.5.3-src
+DISTNAME =	focuswriter-1.5.4-src
 PKGNAME =	${DISTNAME:S/-src//}
 CATEGORIES =	editors
 EXTRACT_SUFX =	.tar.bz2
@@ -17,9 +17,10 @@ MASTER_SITES =	${HOMEPAGE}
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-MODULES +=	devel/gettext
-MODULES +=	x11/qt4
-RUN_DEPENDS +=	devel/desktop-file-utils x11/gtk+3,-guic
+MODULES +=	devel/gettext \
+		x11/qt4
+RUN_DEPENDS +=	devel/desktop-file-utils \
+		x11/gtk+3,-guic
 LIB_DEPENDS +=	textproc/hunspell
 WANTLIB +=	ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
 WANTLIB +=	QtNetwork z QtGui c m pthread hunspell-1.3
@@ -28,6 +29,8 @@ WANTLIB +=	c++ c++abi pthread
 MAKE_FLAGS +=	CXX=${CXX} \
 		QMAKE_CXXFLAGS="${CXXFLAGS}"
 FAKE_FLAGS +=	INSTALL_ROOT=${DESTDIR}
+
+NO_TEST =	Yes
 
 do-configure:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${CONFIGURE_ENV} \
