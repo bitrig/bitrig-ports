@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 11:23:56 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2015/06/29 22:17:46 ratchov Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -27,6 +27,9 @@ MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/aux
 USE_GROFF =	Yes
 NO_TEST=	Yes
 SEPARATE_BUILD=	Yes
+
+post-extract:
+	@cp ${FILESDIR}/sys_pcm_sndio.h  ${WRKSRC}/Programs
 
 post-install:
 	rm -f ${PREFIX}/bin/brltty-install
