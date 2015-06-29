@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.31 2014/07/10 20:27:43 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.33 2015/06/29 06:29:52 dcoppa Exp $
 
 COMMENT =	clone of rxvt with Unicode and Xft support
 
-DISTNAME =	rxvt-unicode-9.20
-REVISION =	4
+DISTNAME =	rxvt-unicode-9.21
+REVISION =	0
 CATEGORIES =	x11
 
 EXTRACT_SUFX =	.tar.bz2
@@ -23,6 +23,9 @@ MODULES =	devel/gettext
 
 LIB_DEPENDS =	devel/startup-notification \
 		graphics/gdk-pixbuf2
+
+FAKE_FLAGS =	INSTALL_DATA="${INSTALL_DATA}" \
+		INSTALL_PROGRAM="${INSTALL_PROGRAM}"
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	--enable-256-color \
