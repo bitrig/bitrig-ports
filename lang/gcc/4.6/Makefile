@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.81 2015/06/17 20:03:11 sthen Exp $
+# $OpenBSD: Makefile,v 1.82 2015/07/02 00:22:18 zhuk Exp $
 
 BROKEN = 	needs work on bitrig
 
