@@ -1,16 +1,14 @@
-# $OpenBSD: Makefile,v 1.3 2014/03/23 22:21:53 jasper Exp $
+# $OpenBSD: Makefile,v 1.5 2015/07/04 17:48:48 afresh1 Exp $
 
-COMMENT=	unload a class
-
-DISTNAME=	Class-Unload-0.08
-REVISION=	0
-CATEGORIES=	devel
+COMMENT =	unload a class
+DISTNAME =	Class-Unload-0.09
+CATEGORIES =	devel
 
 # Same as Perl
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_CDROM =	Yes
 
-MODULES=		cpan
+MODULES =		cpan
 
-RUN_DEPENDS=		devel/p5-Class-Inspector
+RUN_DEPENDS =		devel/p5-Class-Inspector>=0
 
 .include <bsd.port.mk>
