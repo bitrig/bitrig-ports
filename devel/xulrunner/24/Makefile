@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/05/28 10:17:23 pascal Exp $
+# $OpenBSD: Makefile,v 1.22 2015/07/05 20:00:31 landry Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -9,8 +9,8 @@ MOZILLA_PROJECT =	xulrunner
 MOZILLA_DIST =		firefox
 PKGSPEC-devel =		xulrunner-devel->=24.0,<31.0
 PKGSPEC-main =		xulrunner->=24.0,<31.0
-REVISION-main =		3
-REVISION-devel =	4
+REVISION-main =		4
+REVISION-devel =	5
 
 SO_VERSION =		0.0
 MOZILLA_LIBS =		mozgnome mozalloc xul
