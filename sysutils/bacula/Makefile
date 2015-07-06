@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.87 2015/02/18 20:55:11 sthen Exp $
+# $OpenBSD: Makefile,v 1.88 2015/07/06 11:25:36 sthen Exp $
 
 BROKEN= 		needs work on bitrig.
 
@@ -24,7 +24,7 @@ PKGNAME-pgsql=		bacula-pgsql-$V
 PKGNAME-sqlite3=	bacula-sqlite3-$V
 
 REVISION-main=		1
-REVISION-server=	3
+REVISION-server=	4
 REVISION-mysql=		0
 
 CATEGORIES=		sysutils
