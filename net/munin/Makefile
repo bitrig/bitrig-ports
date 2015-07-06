@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.47 2014/11/28 08:39:41 kirby Exp $
+# $OpenBSD: Makefile,v 1.48 2015/07/06 12:13:54 kirby Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -11,6 +11,7 @@ V =		2.0.25
 DISTNAME =	munin-$V
 PKGNAME-main =	munin-node-$V
 PKGNAME-server =munin-server-$V
+REVISION-server=0
 CATEGORIES =	net
 
 HOMEPAGE =	http://munin-monitoring.org/
