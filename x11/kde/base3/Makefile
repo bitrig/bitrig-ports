@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.131 2015/04/04 09:21:08 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.132 2015/07/07 14:49:50 ajacoutot Exp $
 
 COMMENT-main =		K Desktop Environment, basic applications
 COMMENT-samba =		K Desktop Environment, samba support
@@ -48,6 +48,9 @@ RUN_DEPENDS-main =	${RUN_DEPENDS} \
 			devel/desktop-file-utils \
 			x11/gtk+3,-guic \
 			x11/kde-shared-data
+
+# ${FILESDIR}/kdesurc
+RUN_DEPENDS-main +=	security/sudo
 
 LIB_DEPENDS =		openldap-client->=2,<3:databases/openldap \
 			security/cyrus-sasl2
