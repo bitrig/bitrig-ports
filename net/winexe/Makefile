@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 11:35:58 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2015/07/08 12:58:52 sthen Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -11,7 +11,7 @@ REVISION =	1
 
 CATEGORIES =	net
 
-HOMEPAGE =	http://eol.ovh.org/winexe/
+HOMEPAGE =	http://sourceforge.net/p/winexe/wiki/Home/
 
 # GPLv2, source includes most of the Samba 4 tree and Heimdal,
 # though only a small part of it is built.
