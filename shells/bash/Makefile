@@ -1,9 +1,10 @@
-# $OpenBSD: Makefile,v 1.93 2015/06/06 20:23:36 naddy Exp $
+# $OpenBSD: Makefile,v 1.94 2015/07/10 11:27:06 naddy Exp $
 
 COMMENT=	GNU Bourne Again Shell
 
 DISTNAME=	bash-4.3.30
 PKGNAME=	bash-4.3.39
+REVISION=	0
 CATEGORIES=	shells
 HOMEPAGE=	http://cnswww.cns.cwru.edu/~chet/bash/bashtop.html
 
@@ -18,12 +19,15 @@ PATCHFILES+=	bash43-0$i:0
 .endfor
 
 MODULES=	devel/gettext
-WANTLIB=	c termcap 
+WANTLIB=	c termcap
 
 CONFIGURE_STYLE=gnu
 CONFIGURE_ARGS=	${NO_SHARED_LIBS:S/Yes/--enable-static-link/:S/No//}
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/support
 
 CFLAGS=-Wno-parentheses -DHAVE_DPRINTF
+
+# Prefer system mktemp(3) and mkstemp(3) over homegrown replacements
+CONFIGURE_ENV=	CPPFLAGS="-DUSE_MKTEMP -DUSE_MKSTEMP"
 
 .include <bsd.port.mk>
