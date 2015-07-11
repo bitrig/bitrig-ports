@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.21 2015/07/10 17:10:09 jasper Exp $
+# $OpenBSD: Makefile,v 1.22 2015/07/11 12:57:05 jasper Exp $
 
 BROKEN= 			needs work on bitrig
 
 COMMENT=			distributed data store
 DISTNAME=			riak-2.0.4
-REVISION=			5
+REVISION=			6
 CATEGORIES=			databases
 HOMEPAGE=			http://basho.com/
 
@@ -111,9 +111,11 @@ WANTLIB += c++ c++abi
 MODERL_BUILD_DEPENDS=devel/rebar
 BUILD_DEPENDS+=	devel/autoconf/${snappy_AUTOCONF_VERSION} \
 		devel/automake/${snappy_AUTOMAKE_VERSION} \
-		devel/libtool
+		devel/libtool \
+		lang/erlang/16,-wx
 LIB_DEPENDS =	lang/spidermonkey \
 		security/openpam
+RUN_DEPENDS =	lang/erlang/16,-wx
 
 versions:
 .for _n _v in ${RIAK_VERSIONS}
