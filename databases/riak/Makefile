@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2015/07/11 12:57:05 jasper Exp $
+# $OpenBSD: Makefile,v 1.23 2015/07/14 22:53:30 jasper Exp $
 
 BROKEN= 			needs work on bitrig
 
@@ -95,6 +95,7 @@ MAKE_ENV =	MAKE=${MAKE_PROGRAM}
 MAKE_FLAGS =	rel
 
 MODULES =	lang/erlang
+MODERL_WX =	Yes
 
 # configure bundled snappy correctly
 WRKCONF = ${WRKSRC}/deps/eleveldb/c_src/snappy-${SNAPPY_V}
@@ -111,11 +112,9 @@ WANTLIB += c++ c++abi
 MODERL_BUILD_DEPENDS=devel/rebar
 BUILD_DEPENDS+=	devel/autoconf/${snappy_AUTOCONF_VERSION} \
 		devel/automake/${snappy_AUTOMAKE_VERSION} \
-		devel/libtool \
-		lang/erlang/16,-wx
+		devel/libtool
 LIB_DEPENDS =	lang/spidermonkey \
 		security/openpam
-RUN_DEPENDS =	lang/erlang/16,-wx
 
 versions:
 .for _n _v in ${RIAK_VERSIONS}
