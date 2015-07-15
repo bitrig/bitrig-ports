@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/07/15 14:35:48 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.21 2015/07/15 17:49:24 ajacoutot Exp $
 
 COMMENT =	XMPP transport/gateway
 
