@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.38 2015/04/23 22:39:28 sthen Exp $
+# $OpenBSD: Makefile,v 1.39 2015/07/15 14:35:48 ajacoutot Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -10,7 +10,7 @@ DISTNAME=	bird-$V
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${DISTNAME:S/-/-doc-/}${EXTRACT_SUFX}
 
-REVISION=	1
+REVISION-main=	0
 
 CATEGORIES=	net
 
