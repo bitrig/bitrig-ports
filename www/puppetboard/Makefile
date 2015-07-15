@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2015/04/02 14:21:17 jasper Exp $
+# $OpenBSD: Makefile,v 1.10 2015/07/15 22:24:51 ajacoutot Exp $
 
 COMMENT=		web interface to PuppetDB
 
