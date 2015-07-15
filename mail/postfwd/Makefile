@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/07/18 08:48:00 giovanni Exp $
+# $OpenBSD: Makefile,v 1.7 2015/07/15 20:33:57 ajacoutot Exp $
 
 COMMENT =	Postfix policy server
 
