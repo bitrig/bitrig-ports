@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2014/07/12 19:39:49 giovanni Exp $
+# $OpenBSD: Makefile,v 1.21 2015/07/16 23:57:19 ajacoutot Exp $
 
 SHARED_ONLY =	Yes
 
@@ -9,6 +9,7 @@ DISTNAME =	JSON-XS-3.01
 REVISION =	0
 EPOCH =		1
 CATEGORIES =	converters
+REVISION =	0
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

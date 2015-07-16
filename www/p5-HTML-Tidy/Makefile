@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2015/01/21 14:43:33 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2015/07/16 23:57:28 ajacoutot Exp $
 
 COMMENT =	(X)HTML validation in a Perl object
 SHARED_ONLY =	Yes
@@ -8,6 +8,7 @@ REVISION =	0
 DISTNAME =	HTML-Tidy-1.56
 CATEGORIES =	www
 MODULES =	cpan
+REVISION =	0
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

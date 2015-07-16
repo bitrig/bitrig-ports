@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2014/06/14 23:26:02 sthen Exp $
+# $OpenBSD: Makefile,v 1.26 2015/07/16 23:57:28 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -7,7 +7,7 @@ COMMENT=	module for approximate matching
 MODULES=	cpan
 DISTNAME =	String-Approx-3.27
 CATEGORIES=	textproc
-REVISION =	1
+REVISION =	2
 
 # LGPL/Artistic
 PERMIT_PACKAGE_CDROM=   Yes

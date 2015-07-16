@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2015/01/21 14:09:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.13 2015/07/16 23:57:24 ajacoutot Exp $
 
 COMMENT=	C/XS reimplementation of Geo::Coordinates::UTM
 MODULES=	cpan

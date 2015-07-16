@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/01/21 14:27:56 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2015/07/16 23:57:21 ajacoutot Exp $
 
 COMMENT=	change nature of data within a structure
 SHARED_ONLY=	Yes

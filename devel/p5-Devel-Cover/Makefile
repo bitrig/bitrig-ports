@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/06/14 23:24:55 sthen Exp $
+# $OpenBSD: Makefile,v 1.13 2015/07/16 23:57:21 ajacoutot Exp $
 
 COMMENT =	code coverage metrics for Perl
 SHARED_ONLY =	Yes

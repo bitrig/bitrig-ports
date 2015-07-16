@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2015/01/22 20:26:43 naddy Exp $
+# $OpenBSD: Makefile,v 1.30 2015/07/16 23:57:25 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 

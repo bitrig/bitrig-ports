@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2014/06/14 23:26:00 sthen Exp $
+# $OpenBSD: Makefile,v 1.18 2015/07/16 23:57:26 ajacoutot Exp $
 
 COMMENT=	Perl interface to gpgme
 SHARED_ONLY=	Yes

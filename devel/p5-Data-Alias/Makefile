@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2014/06/14 23:24:55 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2015/07/16 23:57:21 ajacoutot Exp $
 
 COMMENT =	comprehensive set of aliasing operations
 SHARED_ONLY =	Yes

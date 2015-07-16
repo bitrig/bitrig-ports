@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2015/01/21 14:40:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.19 2015/07/16 23:57:26 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 COMMENT=	perl interface to yaz zoom

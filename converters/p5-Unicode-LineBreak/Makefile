@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/04/05 12:20:20 rpe Exp $
+# $OpenBSD: Makefile,v 1.11 2015/07/16 23:57:19 ajacoutot Exp $
 
 BROKEN =	needs work on bitrig
 
@@ -8,6 +8,7 @@ COMMENT =	Unicode line breaking algorithm
 DISTNAME =	Unicode-LineBreak-2014.06
 CATEGORIES =	converters
 MODULES =	cpan
+REVISION =	0
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2014/06/14 23:25:41 sthen Exp $
+# $OpenBSD: Makefile,v 1.18 2015/07/16 23:57:25 ajacoutot Exp $
 
 # Lacks p5-Term-Gnuplot regress dependency!
 

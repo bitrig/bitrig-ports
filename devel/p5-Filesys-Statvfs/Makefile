@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/06/14 23:24:56 sthen Exp $
+# $OpenBSD: Makefile,v 1.3 2015/07/16 23:57:22 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 COMMENT=	Perl extension for statvfs() and fstatvfs()
