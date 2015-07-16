@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.49 2015/07/15 19:40:58 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.50 2015/07/16 01:25:48 ajacoutot Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -11,7 +11,7 @@ V =		2.0.25
 DISTNAME =	munin-$V
 PKGNAME-main =	munin-node-$V
 PKGNAME-server =munin-server-$V
-REVISION-main=	0
+REVISION-main=	1
 REVISION-server=1
 CATEGORIES =	net
 
