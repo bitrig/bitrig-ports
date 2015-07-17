@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.40 2015/03/25 18:13:36 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.41 2015/07/17 14:36:29 jeremy Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -33,7 +33,7 @@ MODULES =		devel/gettext \
 			lang/ruby
 
 FLAVORS =		ruby18 ruby19 ruby20 ruby21 ruby22
-FLAVOR ?=		ruby21
+FLAVOR ?=		ruby22
 
 # Fix conflict between subpackages when using ruby21/ruby22 FLAVORs
 .if ${FLAVOR} == ruby21 || ${FLAVOR} == ruby22
