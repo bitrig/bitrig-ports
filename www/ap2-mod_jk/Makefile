@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2014/04/18 19:55:19 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.6 2015/07/17 23:58:43 ajacoutot Exp $
 
 SHARED_ONLY =	Yes
 
@@ -9,6 +9,7 @@ DISTNAME =	tomcat-connectors-${V}-src
 PKGNAME =	ap2-mod_jk-${V}
 REVISION =	0
 CATEGORIES =	www
+REVISION =	1
 
 HOMEPAGE =	http://tomcat.apache.org/connectors-doc/index.html
 
