@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/07/05 09:34:35 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2015/07/18 20:59:06 ajacoutot Exp $
 
 COMMENT =		simple weblog
 
