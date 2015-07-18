@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2015/01/21 14:27:58 sthen Exp $
+# $OpenBSD: Makefile,v 1.10 2015/07/18 21:14:07 jasper Exp $
 
 COMMENT =		template based module starter for CGI apps
 
