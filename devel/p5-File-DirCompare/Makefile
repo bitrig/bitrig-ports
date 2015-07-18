@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/05/13 07:49:43 benoit Exp $
+# $OpenBSD: Makefile,v 1.10 2015/07/18 21:15:15 jasper Exp $
 
 COMMENT =		compare two directories using callbacks
 
