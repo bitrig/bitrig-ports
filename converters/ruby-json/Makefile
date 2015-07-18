@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2015/06/03 07:00:34 jasper Exp $
+# $OpenBSD: Makefile,v 1.28 2015/07/18 04:03:48 jeremy Exp $
 
 BROKEN=			needs work on bitrig
 
@@ -6,6 +6,8 @@ COMMENT=		JSON implementation for Ruby
 
 DISTNAME=		json-1.8.3
 CATEGORIES=		converters
+
+REVISION=		0
 
 HOMEPAGE=		http://json.rubyforge.org/
 
