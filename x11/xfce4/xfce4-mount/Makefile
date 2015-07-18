@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.13 2015/03/27 08:16:24 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.14 2015/07/18 14:25:08 ajacoutot Exp $
 
 COMMENT=	Xfce4 mount device panel plugin
 
 XFCE_VERSION=	0.6.7
 XFCE_PLUGIN=	mount
-REVISION=	0
+REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
@@ -25,5 +25,7 @@ WANTLIB += c++ c++abi
 
 # needed to correctly find bindtextdomain
 CONFIGURE_ENV +=	LIBS="-liconv"
+
+RUN_DEPENDS=		security/sudo
 
 .include <bsd.port.mk>
