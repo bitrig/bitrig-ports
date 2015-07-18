@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2013/03/10 22:55:02 espie Exp $
+# $OpenBSD: Makefile,v 1.19 2015/07/18 04:46:56 jasper Exp $
 
 COMMENT=		curses front-end for various audio players
 
@@ -6,13 +6,10 @@ DISTNAME=		cplay-1.49
 REVISION =		8
 CATEGORIES=		audio
 
-HOMEPAGE=		http://mask.tf.hut.fi/~flu/hacks/cplay/
-
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=		${HOMEPAGE} \
-			http://spacehopper.org/mirrors/
+MASTER_SITES=		http://spacehopper.org/mirrors/
 
 MODULES=		lang/python
 
