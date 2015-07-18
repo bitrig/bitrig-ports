@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2015/07/18 04:03:48 jeremy Exp $
+# $OpenBSD: Makefile,v 1.29 2015/07/18 21:07:40 jeremy Exp $
 
 BROKEN=			needs work on bitrig
 
@@ -19,8 +19,7 @@ MODULES=		lang/ruby
 CONFIGURE_STYLE=	ruby gem ext
 
 MODRUBY_TEST=		rake
-TEST_DEPENDS =		${FULLPKGNAME}:${BUILD_PKGPATH} \
-			${MODRUBY_ICONV_DEPENDS}
+TEST_DEPENDS =		${FULLPKGNAME}:${BUILD_PKGPATH}
 
 do-test:
 	cd ${WRKSRC} && /usr/bin/env -i ${MAKE_ENV} RUBYOPT=-rubygems \
