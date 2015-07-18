@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/05/29 07:33:21 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.8 2015/07/18 16:36:22 jca Exp $
 
 COMMENT=		netcat-like program with transparent SSL support
 
