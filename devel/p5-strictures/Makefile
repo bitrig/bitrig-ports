@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.2 2014/11/06 10:23:38 benoit Exp $
+# $OpenBSD: Makefile,v 1.3 2015/07/19 21:09:57 afresh1 Exp $
 
-COMMENT =	turn on strict and make all warnings fatal
+COMMENT =	turn on strict and make most warnings fatal
 
 MODULES =	cpan
-DISTNAME =	strictures-1.005005
+DISTNAME =	strictures-2.000001
 CATEGORIES =	devel
 
 CPAN_AUTHOR =	HAARG
@@ -11,6 +11,11 @@ CPAN_AUTHOR =	HAARG
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 
-RUN_DEPENDS =	devel/p5-indirect
+RUN_DEPENDS = 		devel/p5-indirect
+
+# These allow additional strictures to be used, should we ever
+# get them ported.
+#RUN_DEPENDS +=	CPAN/p5-bareword-filehandles \
+#		CPAN/p5-multidimensional \
 
 .include <bsd.port.mk>
