@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2015/06/18 07:25:44 bentley Exp $
+# $OpenBSD: Makefile,v 1.13 2015/07/19 16:38:48 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -8,7 +8,7 @@ V=		1.4
 DISTNAME=	bro-${V}-release
 PKGNAME=	bro-${V}
 
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS= 	broccoli	0.0	# .2.0
 
