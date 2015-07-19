@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/10/26 23:55:35 jeremy Exp $
+# $OpenBSD: Makefile,v 1.7 2015/07/19 02:10:31 jeremy Exp $
 
 COMMENT =		simple helper for creating rubygem projects
 
@@ -17,7 +17,6 @@ CONFIGURE_STYLE =	ruby gem
 
 BUILD_DEPENDS = 	${RUN_DEPENDS}
 RUN_DEPENDS =		devel/ruby-git,${MODRUBY_FLAVOR}>=1.2.5 \
-			devel/ruby-bundler,${MODRUBY_FLAVOR}>=1.0,<2.0 \
-			${MODRUBY_RAKE_DEPENDS}
+			devel/ruby-bundler,${MODRUBY_FLAVOR}>=1.0,<2.0
 
 .include <bsd.port.mk>
