@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.72 2015/06/18 02:50:18 bentley Exp $
+# $OpenBSD: Makefile,v 1.73 2015/07/20 22:00:54 ajacoutot Exp $
 
 BROKEN= 		needs work on bitrig
 
@@ -26,7 +26,7 @@ MODULES=		devel/gettext
 WANTLIB+=		c++ c++abi pthread
 
 BUILD_DEPENDS=		print/ghostscript/gnu
-RUN_DEPENDS=		${BUILD_DEPENDS} \
+RUN_DEPENDS=		print/ghostscript/gnu \
 			mail/metamail
 LIB_DEPENDS=		graphics/jbigkit \
 			graphics/tiff
