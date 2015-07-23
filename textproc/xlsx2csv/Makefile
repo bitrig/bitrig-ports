@@ -3,7 +3,6 @@
 COMMENT =		convert XSLX files to CSV
 DISTNAME =		xlsx2csv-20150225
 CATEGORIES =		textproc converters
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

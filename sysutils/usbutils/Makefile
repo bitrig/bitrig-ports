@@ -3,7 +3,6 @@
 COMMENT =		utility used to display information about USB devices
 
 VERSION =		007
-REVISION =		0
 DISTNAME =		usbutils_${VERSION}.orig
 PKGNAME =		usbutils-${VERSION}
 REVISION =		0

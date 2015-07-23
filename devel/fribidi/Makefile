@@ -3,7 +3,6 @@
 COMMENT=	library implementing the Unicode Bidirectional Algorithm
 
 DISTNAME=	fribidi-0.19.6
-REVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}download/
 EXTRACT_SUFX=	.tar.bz2

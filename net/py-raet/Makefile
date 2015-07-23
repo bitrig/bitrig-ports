@@ -10,8 +10,6 @@ CATEGORIES=		net
 
 HOMEPAGE=		https://github.com/saltstack/raet
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # Apache 2.0
 PERMIT_PACKAGE_CDROM=	Yes
 

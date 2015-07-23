@@ -18,7 +18,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += ${MODPY_WANTLIB}
 
-WANTLIB += m png pthread stdc++
+WANTLIB += m png pthread
 WANTLIB += c++ c++abi
 
 MODULES =		lang/python

@@ -13,7 +13,6 @@ GH_TAGNAME =		android-${V}
 CATEGORIES =		devel
 
 HOMEPAGE =		https://developer.android.com/tools/help/adb.html
-MAINTAINER = 		Andrew Aldridge <i80and@foxquill.com>
 
 # Apache License v2.0
 PERMIT_PACKAGE_CDROM =	Yes

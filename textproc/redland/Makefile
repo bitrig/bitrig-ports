@@ -58,7 +58,7 @@ WANTLIB-main=		${WANTLIB} c sqlite3
 
 LIB_DEPENDS-mysql=	${BASE_PKGPATH},-main \
 			databases/mariadb
-WANTLIB-mysql=		${WANTLIB} crypto mysqlclient rdf stdc++
+WANTLIB-mysql=		${WANTLIB} crypto mysqlclient rdf
 
 LIB_DEPENDS-pgsql=	${BASE_PKGPATH},-main \
 			databases/postgresql

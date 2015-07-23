@@ -22,7 +22,7 @@ WANTLIB += gsl gslcblas gthread-2.0 gtk-x11-2.0 gtkmm-2.4 gtkspell
 WANTLIB += harfbuzz jasper jbig jpeg lcms2 ltdl lzma m openjpeg
 WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pangomm-1.4 pcre
 WANTLIB += pixman-1 png poppler poppler-glib popt pthread pthread-stubs
-WANTLIB += sigc-2.0 stdc++ tiff webp wmf-0.2 wmflite-0.2 xcb xcb-render
+WANTLIB += sigc-2.0 tiff webp wmf-0.2 wmflite-0.2 xcb xcb-render
 WANTLIB += xcb-shm xml2 xslt z
 WANTLIB += c++ c++abi
 

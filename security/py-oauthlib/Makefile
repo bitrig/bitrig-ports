@@ -8,7 +8,6 @@ GH_PROJECT =	oauthlib
 GH_COMMIT =	16cd3b255b2c86ec7da412357cad899c72d8dbf7
 DISTNAME =	py-${GH_PROJECT}-$V
 CATEGORIES =	security
-MAINTAINER =	Johan Huldtgren <jhuldtgren@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =  Yes

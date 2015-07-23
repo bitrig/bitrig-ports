@@ -10,8 +10,6 @@ CATEGORIES=		security
 
 HOMEPAGE=		https://libnacl.readthedocs.org/en/latest/
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # apache 2.0
 PERMIT_PACKAGE_CDROM=	Yes
 

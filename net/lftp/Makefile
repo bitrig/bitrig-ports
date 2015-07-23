@@ -9,8 +9,6 @@ REVISION=	3
 
 HOMEPAGE=	http://lftp.yar.ru/
 
-MAINTAINER=	Rafael Sadowski <rafael@sizeofvoid.org>
-
 # GPLv3+
 PERMIT_PACKAGE_CDROM=	Yes
 

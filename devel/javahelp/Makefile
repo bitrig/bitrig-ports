@@ -10,7 +10,6 @@ PKGNAME =		javahelp-${VERSION}
 CATEGORIES =		devel
 
 HOMEPAGE =		https://javahelp.java.net/
-MAINTAINER =		Bryan Everly <bryan@bceassociates.com>
 
 MODULES =		java
 MODJAVA_VER =		1.7+

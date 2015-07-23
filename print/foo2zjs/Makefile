@@ -3,7 +3,6 @@
 COMMENT=	driver for ZjStream wire protocol compatible printers
 
 VERSION=	20140627
-REVISION=	0
 DISTNAME=	foo2zjs-${VERSION}
 REVISION=	0
 

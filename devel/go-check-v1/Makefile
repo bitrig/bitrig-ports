@@ -5,8 +5,6 @@ DISTNAME =		go-check-v1-20150611
 CATEGORIES =		devel
 HOMEPAGE =		http://labix.org/gocheck
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # 2-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -6,7 +6,6 @@ MODPY_EGG_VERSION = 1.3.0
 DISTNAME =	PyJWT-${MODPY_EGG_VERSION}
 PKGNAME =	py-jwt-${MODPY_EGG_VERSION}
 CATEGORIES =	www
-MAINTAINER =	Johan Huldtgren <jhuldtgren@gmail.com>
 
 HOMEPAGE =	http://github.com/jpadilla/pyjwt
 

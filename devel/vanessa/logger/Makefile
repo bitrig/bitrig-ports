@@ -3,7 +3,6 @@
 COMMENT=	provides a generic logging layer
 
 VERSION=	0.0.10
-REVISION=	0
 DISTNAME=	vanessa_logger-${VERSION}
 REVISION=	0
 

@@ -8,8 +8,6 @@ SHARED_LIBS +=  	facter                    3.0 # 3.0
 PKGSPEC =		facter->=3.0,<4.0
 CATEGORIES =		sysutils
 
-MAINTAINER =		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # Apache2
 PERMIT_PACKAGE_CDROM =	Yes
 

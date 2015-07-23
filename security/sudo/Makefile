@@ -6,8 +6,6 @@ DISTNAME=	sudo-1.8.13
 REVISION=	0
 CATEGORIES=	security
 
-MAINTAINER=	Todd C. Miller <millert@openbsd.org>
-
 # ISC-style license
 PERMIT_PACKAGE_CDROM=	Yes
 

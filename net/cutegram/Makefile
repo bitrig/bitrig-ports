@@ -7,7 +7,6 @@ PKGNAME =	cutegram-${V}
 CATEGORIES =	net x11
 
 HOMEPAGE =	http://aseman.co/en/products/cutegram/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

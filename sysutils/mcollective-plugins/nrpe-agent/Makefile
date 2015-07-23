@@ -11,6 +11,4 @@ REVISION=		0
 
 MCO_SUBDIRS=		agent aggregate application data
 
-MAINTAINER=		Sebastian Reitenbach <sebastia@openbsd.org>
-
 .include <bsd.port.mk>

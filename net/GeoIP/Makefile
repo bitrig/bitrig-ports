@@ -3,7 +3,6 @@
 COMMENT=	find the country where IP address/hostname originates from
 
 V=		1.6.5
-REVISION=	0
 DISTNAME=	GeoIP-$V
 REVISION=	0
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

@@ -4,7 +4,7 @@ V=		3.4.13
 REVISION=	0
 PORTROACH=	limit:^3\.4\.*
 
-WANTLIB+=	stdc++
+WANTLIB+=	c++ c++abi
 
 EXTERNAL_ACL=	LDAP_group SQL_session file_userip time_quota session \
 		unix_group wbinfo_group

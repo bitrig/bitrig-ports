@@ -3,7 +3,6 @@
 COMMENT=	toolkit for the development of SILC applications
 
 DISTNAME=	silc-toolkit-1.1.12
-REVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=silc/}
 EXTRACT_SUFX=	.tar.bz2

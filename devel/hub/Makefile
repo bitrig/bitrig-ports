@@ -11,8 +11,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		https://hub.github.com
 
-MAINTAINER =		Fabian Raetz <fabian.raetz@gmail.com>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

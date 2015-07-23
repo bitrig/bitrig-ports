@@ -10,8 +10,6 @@ CATEGORIES=		devel
 
 HOMEPAGE=		https://github.com/ioflo/ioflo
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # Apache 2.0
 PERMIT_PACKAGE_CDROM=	Yes
 

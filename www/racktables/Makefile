@@ -6,7 +6,6 @@ DISTNAME=	RackTables-0.20.10
 PKGNAME=	${DISTNAME:L}
 REVISION=	1
 CATEGORIES=	www
-REVISION=	0
 
 HOMEPAGE=	http://www.racktables.org/
 

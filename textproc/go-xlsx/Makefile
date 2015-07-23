@@ -5,7 +5,6 @@ PORTROACH =		ignore
 COMMENT =		library for reading and writing XLSX files
 DISTNAME =		go-xlsx-20150614
 CATEGORIES =		textproc converters
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

@@ -7,7 +7,6 @@ COMMENT =		physics library
 V =			2.81
 DISTNAME =		bullet-${V}-rev2613
 PKGNAME =		bullet-${V}
-REVISION =		0
 
 SHARED_LIBS +=  BulletCollision           0.0 # 2.79
 SHARED_LIBS +=  BulletDynamics            0.0 # 2.79

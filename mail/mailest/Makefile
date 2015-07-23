@@ -12,8 +12,6 @@ CATEGORIES =		mail
 
 HOMEPAGE =		https://github.com/${GH_ACCOUNT}/${GH_PROJECT}
 
-MAINTAINER =		YASUOKA Masahiko <yasuoka@yasuoka.net>
-
 # BSD and partially LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes
 

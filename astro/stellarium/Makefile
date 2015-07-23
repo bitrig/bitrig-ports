@@ -3,7 +3,6 @@
 COMMENT=	free open source planetarium
 
 DISTNAME=	stellarium-0.13.3
-REVISION=	0
 
 CATEGORIES=	astro x11
 

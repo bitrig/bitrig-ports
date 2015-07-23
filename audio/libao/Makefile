@@ -3,7 +3,6 @@
 COMMENT=	portable audio output library
 
 DISTNAME=	libao-1.2.0
-REVISION=	0
 CATEGORIES=    	audio
 HOMEPAGE=	https://www.xiph.org/ao/
 SHARED_LIBS=	ao                   5.0      # 5.0

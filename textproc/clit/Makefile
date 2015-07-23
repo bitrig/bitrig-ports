@@ -8,8 +8,6 @@ CATEGORIES =		textproc converters print
 
 HOMEPAGE =		http://www.convertlit.com/
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	drm (see http://www.convertlit.com/legal.php)
 PERMIT_PACKAGE_FTP =	Yes

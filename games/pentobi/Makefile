@@ -6,7 +6,6 @@ EXTRACT_SUFX =	.tar.xz
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://pentobi.sourceforge.net/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

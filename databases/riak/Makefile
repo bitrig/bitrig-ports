@@ -6,7 +6,6 @@ COMMENT=			distributed data store
 DISTNAME=			riak-2.0.4
 REVISION=			4
 CATEGORIES=			databases
-REVISION=			1
 HOMEPAGE=			http://basho.com/
 
 ONLY_FOR_ARCHS=			amd64

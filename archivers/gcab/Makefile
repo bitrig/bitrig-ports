@@ -9,8 +9,6 @@ SHARED_LIBS +=	gcab-1.0                  0.0 # 0.0
 
 CATEGORIES=		archivers devel
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 

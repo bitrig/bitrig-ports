@@ -18,7 +18,6 @@ V =			2.5.1
 BOOTSTRAP_V =		${V}-1
 DISTNAME =		pypy-${V}-src
 PKGNAME =		pypy-${V}
-REVISION =		0
 BOOTSTRAP-amd64 =	pypy-bootstrap-amd64-${BOOTSTRAP_V}.tar.xz
 REVISION =		0
 

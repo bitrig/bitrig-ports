@@ -7,7 +7,6 @@ PKGNAME=	${DISTNAME:L:S/_/-/}
 REVISION=	1
 CATEGORIES=	devel graphics x11
 MASTER_SITES=	http://www.ferzkopp.net/Software/SDL_gfx-2.0/
-REVISION=	0
 
 SHARED_LIBS=	SDL_gfx	15.0
 

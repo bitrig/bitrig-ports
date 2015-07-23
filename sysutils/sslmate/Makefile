@@ -5,8 +5,6 @@ COMMENT =		client for the sslmate.com online certificate service
 DISTNAME =		sslmate-1.4.0
 CATEGORIES =		sysutils
 
-MAINTAINER =		James Turner <james@calminferno.net>
-
 HOMEPAGE =		https://sslmate.com
 MASTER_SITES =		https://packages.sslmate.com/other/
 

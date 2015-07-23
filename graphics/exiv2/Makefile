@@ -5,7 +5,6 @@ COMMENT=	manipulate image meta-data such as exif and ipct
 DISTNAME=	exiv2-0.24
 REVISION=	1
 CATEGORIES=	graphics devel
-REVISION=	0
 
 SHARED_LIBS +=  exiv2                7.0      # 13.0
 

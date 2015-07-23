@@ -16,12 +16,10 @@ CATEGORIES =		math
 
 HOMEPAGE =		https://www.hdfgroup.org/HDF5/
 
-MAINTAINER =		Ingo Feinerer <feinerer@logic.at>
-
 # https://www.hdfgroup.org/ftp/HDF5/current/src/unpacked/COPYING
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c m stdc++ z
+WANTLIB += c m z
 
 MASTER_SITES =		http://www.hdfgroup.org/ftp/HDF5/current/src/
 

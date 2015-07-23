@@ -6,7 +6,6 @@ DISTNAME=	pstoedit-3.61
 REVISION=	1
 SHARED_LIBS=	pstoedit 3.0
 CATEGORIES=	graphics
-REVISION=	0
 
 HOMEPAGE=	http://www.pstoedit.net/
 

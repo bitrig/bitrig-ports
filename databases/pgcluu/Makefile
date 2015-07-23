@@ -8,8 +8,6 @@ CATEGORIES=		databases sysutils
 
 HOMEPAGE=		http://pgcluu.darold.net/
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -10,7 +10,6 @@ SUBST_VARS=	V
 
 DISTNAME=	audiofile-${V}
 PKGNAME=	lib${DISTNAME}
-REVISION=	0
 
 SHARED_LIBS +=  audiofile            1.0      # 1.0
 

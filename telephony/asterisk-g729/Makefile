@@ -4,7 +4,6 @@ SHARED_ONLY=	Yes
 COMMENT=	G.729a voice codec for Asterisk
 DISTNAME=	asterisk-g72x-1.1
 PKGNAME=	${DISTNAME:S/g72x/g729/}
-REVISION=	0
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	telephony
 MASTER_SITES=	http://asterisk.hosting.lv/src/

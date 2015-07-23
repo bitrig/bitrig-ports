@@ -6,7 +6,6 @@ DISTNAME=	libsamplerate-0.1.8
 REVISION=	0
 SHARED_LIBS=	samplerate	2.0	# .1.3
 CATEGORIES=	audio
-REVISION=	0
 
 HOMEPAGE=	http://mega-nerd.com/SRC/
 

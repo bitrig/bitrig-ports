@@ -5,7 +5,6 @@ COMMENT=	GM and GS compatible SoundFont bank for MIDI
 V=		1.44
 REVISION=	0
 PKGNAME=	generaluser-gs-soundfont-$V
-REVISION=	0
 DISTNAME=	GeneralUser_GS_$V-FluidSynth
 EXTRACT_SUFX=	.zip
 

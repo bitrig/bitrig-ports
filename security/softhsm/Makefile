@@ -10,12 +10,10 @@ CATEGORIES=	security
 
 HOMEPAGE=	http://www.opendnssec.org/softhsm/
 
-MAINTAINER=	Patrik Lundin <patrik@sigterm.se>
-
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += botan-1.10 bz2 c crypto gmp m pthread sqlite3 stdc++ z
+WANTLIB += botan-1.10 bz2 c crypto gmp m pthread sqlite3 z
 
 MASTER_SITES=	http://dist.opendnssec.org/source/
 

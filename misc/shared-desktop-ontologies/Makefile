@@ -4,7 +4,6 @@ COMMENT = 		shared desktop ontologies
 PKG_ARCH =		*
 
 DISTNAME = 		shared-desktop-ontologies-0.11.0
-REVISION = 		0
 EXTRACT_SUFX =		.tar.bz2
 REVISION =		0
 

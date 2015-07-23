@@ -18,7 +18,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += GL ICE SM X11 X11-xcb Xau Xdamage Xdmcp Xext Xfixes
 WANTLIB += Xpm Xxf86vm c drm glapi jpeg m pthread pthread-stubs
-WANTLIB += stdc++ xcb xcb-dri2 xcb-glx
+WANTLIB += xcb xcb-dri2 xcb-glx
+WANTLIB += c++ c++abi
 
 LIB_DEPENDS=		graphics/jpeg
 

@@ -30,8 +30,6 @@ HOMEPAGE=	http://openjdk.java.net/
 
 MASTER_SITES=	http://www.intricatesoftware.com/distfiles/
 
-MAINTAINER=	Kurt Miller <kurt@openbsd.org>
-
 # GPLv2 w/CLASSPATH exception
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -59,7 +57,7 @@ BUILD_DEPENDS+=	devel/apache-ant>=1.8.2 \
 LIB_DEPENDS=	graphics/giflib
 
 MODULES=	converters/libiconv
-WANTLIB=	X11 Xext Xi Xrender Xtst c freetype gif m pthread stdc++ z
+WANTLIB=	X11 Xext Xi Xrender Xtst c freetype gif m pthread z
 
 USE_GMAKE=	Yes
 GMAKE=		${LOCALBASE}/bin/gmake

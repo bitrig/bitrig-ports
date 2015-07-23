@@ -10,7 +10,6 @@ GH_PROJECT =	freeblocks
 GH_TAGNAME =	v${V}
 
 HOMEPAGE =	https://github.com/dorkster/freeblocks
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

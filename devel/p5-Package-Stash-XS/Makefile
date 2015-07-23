@@ -6,8 +6,6 @@ COMMENT =	faster and more correct implementation of Package::Stash
 DISTNAME =	Package-Stash-XS-0.28
 CATEGORIES =	devel
 
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

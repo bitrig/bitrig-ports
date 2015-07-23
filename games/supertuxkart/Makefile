@@ -6,11 +6,10 @@ V =			0.9
 BASENAME =		supertuxkart-${V}
 DISTNAME =		${BASENAME}-src
 PKGNAME =		${BASENAME}
-REVISION =		0
 
 CATEGORIES =		games
 
-REVISION =	1
+REVISION =		1
 
 HOMEPAGE =		http://supertuxkart.sourceforge.net
 

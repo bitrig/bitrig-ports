@@ -6,8 +6,6 @@ DISTNAME =		HTML-Display-0.40
 
 CATEGORIES =		www
 
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
-
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 

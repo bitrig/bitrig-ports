@@ -11,8 +11,6 @@ GH_COMMIT =		83795bee374466b865a99af479d7cfa0e1ed1e08
 
 CATEGORIES =		net
 
-MAINTAINER =		Stuart Henderson <sthen@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 

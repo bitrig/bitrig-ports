@@ -7,7 +7,6 @@ GH_PROJECT=	Roundcube-Plugin-Context-Menu
 GH_TAGNAME=	2.1.2
 DISTNAME=	contextmenu-${GH_TAGNAME}
 PKGNAME=	rcube-${DISTNAME}
-REVISION=	0
 CATEGORIES=	mail www
 HOMEPAGE=	http://www.tehinterweb.co.uk/roundcube/\#picontextmenu
 REVISION=	0

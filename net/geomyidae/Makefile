@@ -8,8 +8,6 @@ CATEGORIES =		net
 
 HOMEPAGE =		http://www.r-36.net/src/geomyidae/
 
-MAINTAINER =		Joerg Jung <jung@openbsd.org>
-
 # MIT/X
 PERMIT_PACKAGE_CDROM =	Yes
 

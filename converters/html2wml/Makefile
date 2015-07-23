@@ -3,7 +3,6 @@
 COMMENT =	on-the-fly HTML to WML conversion
 
 DISTNAME =	html2wml-0.4.11
-REVISION =	0
 CATEGORIES =	converters www perl5
 REVISION =	0
 

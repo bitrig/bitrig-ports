@@ -5,7 +5,6 @@ CATEGORIES =	x11
 VERSION =	1.0.4
 REVISION =	0
 DISTNAME =	libkscreen-${VERSION}
-REVISION =	0
 
 SHARED_LIBS =	kscreen		0.0
 

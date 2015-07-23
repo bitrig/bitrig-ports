@@ -7,7 +7,6 @@ REVISION =	0
 CATEGORIES =	archivers
 
 HOMEPAGE =	http://www.github.com/atoulme/minitar
-MAINTAINER =	Sebastian Reitenbach <sebastia@openbsd.org>
 
 # GPLv2/Ruby license
 PERMIT_PACKAGE_CDROM =		Yes

@@ -114,7 +114,8 @@ RUN_DEPENDS-ui=		${RUN_DEPENDS} \
 
 ### -mysql
 WANTLIB-mysql += ${WANTLIB}
-WANTLIB-mysql += crypto gda-${GDA_MAJOR} mysqlclient ssl stdc++
+WANTLIB-mysql += crypto gda-${GDA_MAJOR} mysqlclient ssl
+WANTLIB-mysql += c++ c++abi
 
 LIB_DEPENDS-mysql=	${MODGETTEXT_LIB_DEPENDS} \
 			x11/gnome/libgda \

@@ -4,7 +4,6 @@ V =		2.0.0
 COMMENT =	SDL2 cross-platform networking library
 DISTNAME =	SDL2_net-${V}
 PKGNAME =	sdl2-net-${V}
-REVISION =	0
 CATEGORIES =	devel net
 REVISION =	0
 

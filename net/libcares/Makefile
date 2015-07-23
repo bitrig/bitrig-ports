@@ -5,7 +5,6 @@ COMMENT=	asynchronous resolver library
 V=		1.10.0
 DISTNAME=	c-ares-${V}
 PKGNAME=	libcares-${V}
-REVISION=	0
 CATEGORIES=	net devel
 MASTER_SITES=	${HOMEPAGE}download/
 REVISION=	0

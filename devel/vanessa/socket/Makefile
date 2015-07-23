@@ -3,7 +3,6 @@
 COMMENT=	provides simplified TCP/IP socket operations
 
 VERSION=	0.0.12
-REVISION=	0
 DISTNAME=	vanessa_socket-${VERSION}
 REVISION=	0
 

@@ -8,8 +8,6 @@ DISTNAME =		libtommath-$V
 CATEGORIES =		math
 HOMEPAGE =		http://libtom.net/
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 GH_ACCOUNT =		libtom
 GH_PROJECT =		libtommath
 GH_TAGNAME =		v${V}

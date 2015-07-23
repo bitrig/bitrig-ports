@@ -10,7 +10,7 @@ PKGNAME=	${CONFIG}-gcc-linaro-${VERSION}
 
 SUBST_VARS+=	VERSION
 
-WANTLIB=	c m stdc++ gmp mpfr mpc
+WANTLIB=	c m gmp mpfr mpc
 DIST_SUBDIR=	gcc
 
 MAKE_GXX=	No

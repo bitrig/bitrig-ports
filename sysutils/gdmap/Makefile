@@ -7,8 +7,6 @@ REVISION =		0
 
 HOMEPAGE =		http://gdmap.sourceforge.net/
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 

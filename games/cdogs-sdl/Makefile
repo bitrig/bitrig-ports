@@ -2,7 +2,6 @@
 
 COMMENT =	open source, classic overhead run-and-gun game
 DISTNAME =	cdogs-sdl-0.5.5.1
-REVISION =	0
 CATEGORIES =	games x11
 REVISION =	0
 

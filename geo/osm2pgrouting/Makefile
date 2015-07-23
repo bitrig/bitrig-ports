@@ -10,7 +10,7 @@ HOMEPAGE =		http://pgrouting.org
 # GPLv2 only
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += 		c expat m pq stdc++
+WANTLIB += 		c expat m pq
 
 GH_ACCOUNT =		pgRouting
 GH_PROJECT =		osm2pgrouting

@@ -9,12 +9,11 @@ SHARED_LIBS +=  mosquittopp               0.0 # 1.4
 
 CATEGORIES =		net
 HOMEPAGE =		http://mosquitto.org/
-MAINTAINER =		Edd Barrett <edd@openbsd.org>
 
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=		c crypto m pthread ssl stdc++ uuid
+WANTLIB +=		c crypto m pthread ssl uuid
 
 # No EPROTO in OpenBSD.
 CFLAGS +=		-DEPROTO=ECONNABORTED \

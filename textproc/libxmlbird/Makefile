@@ -8,7 +8,6 @@ CATEGORIES =	textproc
 SHARED_LIBS +=	xmlbird 0.0			# 1.0.5
 
 HOMEPAGE =	http://birdfont.org/xmlbird.php
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # LGPLv3+
 PERMIT_PACKAGE_CDROM =	Yes

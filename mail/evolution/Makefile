@@ -40,7 +40,7 @@ WANTLIB += json-glib-1.0 lber-2.4 ldap-2.4 ltdl lzma m notify
 WANTLIB += nspr4 nss3 nssutil3 oauth ogg orc-0.4 p11-kit pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 plc4 plds4
 WANTLIB += png pst pthread pthread-stubs sasl2 secret-1 smime3
-WANTLIB += softokn3 soup-2.4 sqlite3 ssl ssl3 stdc++ vorbis vorbisfile
+WANTLIB += softokn3 soup-2.4 sqlite3 ssl ssl3 vorbis vorbisfile
 WANTLIB += webkitgtk-3.0 webp xcb xcb-render xcb-shm xml2 xslt
 WANTLIB += z
 

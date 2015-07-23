@@ -6,8 +6,6 @@ DISTNAME =		Pod-LaTeX-0.61
 
 CATEGORIES =		textproc
 
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
-
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 

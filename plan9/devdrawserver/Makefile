@@ -5,8 +5,6 @@ DISTNAME =		devdrawserver-20120504
 CATEGORIES =		plan9
 REVISION =		1
 
-MAINTAINER =		Gleydson Soares <gsoares@openbsd.org>
-
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

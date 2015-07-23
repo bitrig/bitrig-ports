@@ -7,8 +7,6 @@ CATEGORIES =		games
 
 HOMEPAGE =		http://pysolfc.sourceforge.net/
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 

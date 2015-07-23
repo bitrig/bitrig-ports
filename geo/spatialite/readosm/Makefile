@@ -3,7 +3,6 @@
 COMMENT =	library to extract data from OSM files
 PROJECT =	readosm
 DISTNAME =	${PROJECT}-1.0.0b
-REVISION =	0
 SHARED_LIBS =	readosm 0.0 #1.0
 REVISION =	0
 

@@ -5,7 +5,6 @@ COMMENT =	FUSE NTFS driver with read/write support
 V =		2014.2.15
 DISTNAME =	ntfs-3g_ntfsprogs-${V}
 PKGNAME =	ntfs_3g-${V}
-REVISION =	0
 SHARED_LIBS +=	ntfs-3g		0.0	# .84
 CATEGORIES =	sysutils
 REVISION =	0

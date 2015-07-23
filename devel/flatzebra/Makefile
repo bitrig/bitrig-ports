@@ -4,7 +4,6 @@ COMMENT=	generic game engine library
 
 VERSION =	0.1.6
 DISTNAME=	flatzebra-${VERSION}
-REVISION=	0
 
 SHARED_LIBS +=	flatzebra-0.1 2.0	# .2.0
 

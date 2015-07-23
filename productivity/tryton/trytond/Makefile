@@ -6,7 +6,6 @@ REVISION =		0
 COMMENT =		server of the Tryton application platform
 
 DISTNAME =		trytond-${MODPY_EGG_VERSION}
-REVISION =		0
 
 CATEGORIES =		www
 

@@ -3,7 +3,6 @@
 COMMENT=		JSON implementation in C
 
 DISTNAME=		json-c-0.12
-REVISION=		0
 CATEGORIES=		devel
 REVISION=		0
 

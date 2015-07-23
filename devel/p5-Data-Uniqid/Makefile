@@ -6,8 +6,6 @@ MODULES=		cpan
 DISTNAME=		Data-Uniqid-0.12
 CATEGORIES=		devel
 
-MAINTAINER=		Pierre-Emmanuel Andre <pea@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes
 

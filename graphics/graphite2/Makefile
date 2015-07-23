@@ -5,7 +5,6 @@ COMMENT=	rendering for complex writing systems
 DISTNAME=	graphite2-1.2.4
 REVISION=	1
 EXTRACT_SUFX=	.tgz
-REVISION=	0
 
 SHARED_LIBS=	graphite2 0.0 # 3.0.1
 

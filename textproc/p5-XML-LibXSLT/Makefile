@@ -8,8 +8,6 @@ DISTNAME =		XML-LibXSLT-1.94
 
 CATEGORIES =		textproc
 
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
-
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes
 

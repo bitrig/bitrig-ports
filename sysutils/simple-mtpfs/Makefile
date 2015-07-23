@@ -10,8 +10,6 @@ GH_ACCOUNT=		phatina
 
 CATEGORIES=		sysutils
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 

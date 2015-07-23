@@ -9,8 +9,6 @@ REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =		http://golang.org/
 
-MAINTAINER =		Dmitrij D. Czarkoff <czarkoff@gmail.com>
-
 # 3-clause BSD
 PERMIT_PACKAGE_CDROM =	Yes
 

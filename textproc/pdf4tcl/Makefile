@@ -6,7 +6,6 @@ DISTNAME =	pdf4tcl08
 PKGNAME =	pdf4tcl-0.8
 CATEGORIES =	textproc
 HOMEPAGE =	http://sourceforge.net/projects/pdf4tcl/
-MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

@@ -10,7 +10,6 @@ PKGNAME =		xalan-j-${VERSION}
 CATEGORIES =		textproc
 
 HOMEPAGE =		http://xalan.apache.org/index.html
-MAINTAINER =		Bryan Everly <bryan@bceassociates.com>
 
 MODULES =		java
 MODJAVA_VER =		1.7+

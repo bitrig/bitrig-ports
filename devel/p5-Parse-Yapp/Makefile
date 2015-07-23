@@ -6,8 +6,6 @@ DISTNAME =		Parse-Yapp-1.05
 
 CATEGORIES =		devel
 
-MAINTAINER =		Jeremie Courreges-Anglas <jca@wxcvbn.org>
-
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan

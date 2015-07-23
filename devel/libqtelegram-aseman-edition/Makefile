@@ -11,8 +11,6 @@ GH_ACCOUNT =	Aseman-Land
 GH_PROJECT =	libqtelegram-aseman-edition
 GH_TAGNAME =	v${V}
 
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
-
 # GPLv3 only
 PERMIT_PACKAGE_CDROM =	Yes
 

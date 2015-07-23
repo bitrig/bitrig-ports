@@ -11,7 +11,6 @@ GH_PROJECT =	hypatia
 GH_TAGNAME =	0.2.13
 
 HOMEPAGE =	http://lillian-lemmer.github.io/hypatia/
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

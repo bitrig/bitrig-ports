@@ -11,8 +11,6 @@ CATEGORIES =		print
 
 HOMEPAGE =		http://www.geuz.org/gl2ps/
 
-MAINTAINER =		Ingo Feinerer <feinerer@logic.at>
-
 # LGPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 

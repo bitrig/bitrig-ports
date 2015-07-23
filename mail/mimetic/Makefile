@@ -3,7 +3,6 @@
 COMMENT =		C++ MIME library
 
 DISTNAME =		mimetic-0.9.8
-REVISION =		0
 CATEGORIES =		mail devel
 REVISION =		0
 

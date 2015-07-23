@@ -10,9 +10,10 @@ CPAN_AUTHOR =	MDOOTSON
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += m pthread stdc++ wx_base wx_base_net wx_base_xml wx_gtk2_adv
+WANTLIB += m pthread wx_base wx_base_net wx_base_xml wx_gtk2_adv
 WANTLIB += wx_gtk2_aui wx_gtk2_core wx_gtk2_html wx_gtk2_richtext
 WANTLIB += wx_gtk2_stc wx_gtk2_xrc wx_gtk2_media
+WANTLIB += c++ c++abi
 
 RUN_DEPENDS =	devel/p5-Alien-wxWidgets>=0.67 \
 		devel/p5-ExtUtils-XSpp

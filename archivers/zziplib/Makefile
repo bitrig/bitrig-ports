@@ -3,7 +3,6 @@
 COMMENT=	lightweight library for extracting data from zip files
 
 DISTNAME=	zziplib-0.13.62
-REVISION=	0
 CATEGORIES=	archivers
 REVISION=	0
 
