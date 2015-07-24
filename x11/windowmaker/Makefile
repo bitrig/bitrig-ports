@@ -6,9 +6,9 @@ COMMENT-lang=		language subpackage for Window Maker
 V=			0.92.0
 DISTNAME=		WindowMaker-${V}
 PKGNAME-main=		${DISTNAME:L}
-REVISION-main=		55
+REVISION-main=		56
 FULLPKGNAME-lang=	windowmaker-lang-${V}
-REVISION-lang=		4
+REVISION-lang=		5
 
 SHARED_LIBS +=	wraster              5.0      # 4.0
 

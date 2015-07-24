@@ -5,7 +5,7 @@ V =		3.4.3
 DISTNAME =	nethack-$V
 PKGNAME =	hackdata-$V
 CATEGORIES =	games
-REVISION =	0
+REVISION =	1
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=nethack/} \
 		ftp://ftp.nethack.org/pub/nethack/nh${V:S/.//g}/src/ \

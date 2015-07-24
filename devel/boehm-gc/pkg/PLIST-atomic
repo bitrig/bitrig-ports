@@ -76,9 +76,7 @@ include/atomic_ops_stack.h
 lib/libatomic_ops.a
 lib/libatomic_ops.la
 lib/libatomic_ops_gpl.a
-@lib lib/libatomic_ops.so.${LIBatomic_ops_VERSION}
 lib/libatomic_ops_gpl.la
-@lib lib/libatomic_ops_gpl.so.${LIBatomic_ops_gpl_VERSION}
 lib/pkgconfig/atomic_ops.pc
 share/libatomic_ops/
 share/libatomic_ops/COPYING

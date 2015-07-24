@@ -3,7 +3,7 @@
 COMMENT =		console interface for nagios
 
 DISTNAME =		cnagios-0.30
-REVISION =		0
+REVISION =		1
 CATEGORIES =		net
 
 WANTLIB =		c perl util curses m

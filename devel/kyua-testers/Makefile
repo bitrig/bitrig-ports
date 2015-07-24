@@ -2,7 +2,7 @@
 
 COMMENT =		scriptable interfaces to interact with test programs
 DISTNAME =		kyua-testers-0.2
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/jmmv/kyua

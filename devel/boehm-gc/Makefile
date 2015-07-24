@@ -4,7 +4,7 @@ COMMENT-main=	garbage collection and memory leak detection for C and C++
 COMMENT-atomic=	access to hardware provided atomic memory operations
 
 VERSION=	7.4.2
-REVISION=	0
+REVISION=	1
 LIBAO_VERSION=	7.4.0
 
 DISTNAME=	gc-${VERSION}

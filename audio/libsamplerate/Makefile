@@ -3,7 +3,7 @@
 COMMENT=	audio sample rate conversion library
 
 DISTNAME=	libsamplerate-0.1.8
-REVISION=	0
+REVISION=	1
 SHARED_LIBS=	samplerate	2.0	# .1.3
 CATEGORIES=	audio
 

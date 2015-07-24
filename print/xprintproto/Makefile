@@ -5,7 +5,7 @@ COMMENT =		X11 printing headers
 V =			1.0.5
 DISTNAME =		printproto-${V}
 PKGNAME =		xprintproto-${V}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		print devel x11
 

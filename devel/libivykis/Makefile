@@ -5,7 +5,7 @@ COMMENT =		asynchronous I/O readiness notification library
 V =			0.39
 DISTNAME =		ivykis-$V
 PKGNAME =		lib${DISTNAME}
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS =		ivykis	1.0
 

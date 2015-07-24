@@ -8,7 +8,7 @@ CATEGORIES=		devel
 COMMENT=		high performance Cloud Storage client library
 
 VERSION=		1.1
-REVISION=		3
+REVISION=		4
 DISTNAME=		droplet-${VERSION}
 HOMEPAGE=		https://github.com/scality/Droplet
 

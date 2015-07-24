@@ -5,7 +5,7 @@ COMMENT=	control a ribbon to avoid hitting walls
 V=		1.0
 DISTNAME= 	glsfcave-$V-mitl
 PKGNAME=	glsfcave-$V
-REVISION =	3
+REVISION =	4
 CATEGORIES=	games
 EXTRACT_SUFX=	.tar.bz2
 

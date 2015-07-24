@@ -6,7 +6,7 @@ SHARED_LIBS=	talloc 0.0	# .2.0
 
 COMMENT=	hierarchical memory pool system with destructors
 DISTNAME=	talloc-2.0.1
-REVISION=	2
+REVISION=	3
 PKGNAME=	lib${DISTNAME}
 
 CATEGORIES=	devel

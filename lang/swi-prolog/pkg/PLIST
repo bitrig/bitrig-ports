@@ -4,16 +4,16 @@ bin/swipl
 bin/swipl-ld
 bin/swipl-rc
 @bin bin/xpce-client
-@lib lib/libpl.so.${LIBpl_VERSION}
+lib/libpl.so.5.0
 lib/pkgconfig/swipl.pc
 lib/swipl-${V}/
 lib/swipl-${V}/Makefile
 lib/swipl-${V}/bin/
 lib/swipl-${V}/bin/swipl.home
-lib/swipl-${V}/bin/${FULLARCH}/
-@bin lib/swipl-${V}/bin/${FULLARCH}/swipl
-@bin lib/swipl-${V}/bin/${FULLARCH}/swipl-ld
-@bin lib/swipl-${V}/bin/${FULLARCH}/swipl-rc
+lib/swipl-${V}/bin/x86_64-bitrig1.0/
+@bin lib/swipl-${V}/bin/x86_64-bitrig1.0/swipl
+@bin lib/swipl-${V}/bin/x86_64-bitrig1.0/swipl-ld
+@bin lib/swipl-${V}/bin/x86_64-bitrig1.0/swipl-rc
 lib/swipl-${V}/boot/
 lib/swipl-${V}/boot/apply.pl
 lib/swipl-${V}/boot/attvar.pl
@@ -53,9 +53,9 @@ lib/swipl-${V}/include/Yap/YapInterface.h
 lib/swipl-${V}/include/sicstus/
 lib/swipl-${V}/include/sicstus/sicstus.h
 lib/swipl-${V}/lib/
-lib/swipl-${V}/lib/${FULLARCH}/
-@lib lib/swipl-${V}/lib/${FULLARCH}/libpl.so.${LIBpl_VERSION}
-lib/swipl-${V}/lib/${FULLARCH}/libswipl.a
+lib/swipl-${V}/lib/x86_64-bitrig1.0/
+@lib lib/swipl-${V}/lib/x86_64-bitrig1.0/libpl.so.${LIBpl_VERSION}
+lib/swipl-${V}/lib/x86_64-bitrig1.0/libswipl.a
 lib/swipl-${V}/library/
 lib/swipl-${V}/library/DTD/
 lib/swipl-${V}/library/DTD/HTML4.dcl
@@ -473,7 +473,7 @@ lib/swipl-${V}/xpce/appl-help/pcedraw.hlp
 lib/swipl-${V}/xpce/appl-help/pcefaq.hlp
 lib/swipl-${V}/xpce/appl-help/plprefs.hlp
 lib/swipl-${V}/xpce/bin/
-lib/swipl-${V}/xpce/bin/${FULLARCH}/
+lib/swipl-${V}/xpce/bin/x86_64-bitrig1.0/
 lib/swipl-${V}/xpce/bitmaps/
 lib/swipl-${V}/xpce/bitmaps/16x16/
 lib/swipl-${V}/xpce/bitmaps/16x16/alert.xpm

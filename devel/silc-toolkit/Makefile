@@ -6,7 +6,7 @@ DISTNAME=	silc-toolkit-1.1.12
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=silc/}
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS=	silc		10.0	\
 		silcclient	8.0	\

@@ -4,7 +4,7 @@ COMMENT =	compiz option code generator
 
 V =		0.8.8
 DISTNAME =	compiz-bcop-${V}
-REVISION =	0
+REVISION =	1
 
 MASTER_SITES =	http://releases.compiz.org/${V}/
 

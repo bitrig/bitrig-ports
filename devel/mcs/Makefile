@@ -4,7 +4,7 @@ COMMENT =	abstract the storage of configuration settings
 
 DISTNAME =	libmcs-0.7.2
 PKGNAME =	${DISTNAME:S/lib//}
-REVISION =	1
+REVISION =	2
 
 SHARED_LIBS =	mcs	1.0
 

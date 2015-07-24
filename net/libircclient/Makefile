@@ -2,7 +2,7 @@
 
 COMMENT =		library which implements the IRC protocol
 DISTNAME =		libircclient-1.8
-REVISION =		0
+REVISION =		1
 CATEGORIES =		net
 HOMEPAGE =		http://www.ulduzsoft.com/linux/libircclient/
 

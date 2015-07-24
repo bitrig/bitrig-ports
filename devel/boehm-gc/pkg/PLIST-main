@@ -20,6 +20,8 @@ include/gc/javaxfc.h
 include/gc/leak_detector.h
 include/gc/weakpointer.h
 include/gc_cpp.h
+@lib lib/libatomic_ops.so.${LIBatomic_ops_VERSION}
+@lib lib/libatomic_ops_gpl.so.${LIBatomic_ops_gpl_VERSION}
 lib/libcord.a
 lib/libcord.la
 @lib lib/libcord.so.${LIBcord_VERSION}

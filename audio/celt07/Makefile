@@ -10,7 +10,7 @@ V =		0.7.1
 DISTNAME =	celt-$V
 PKGNAME =	celt07-$V
 CATEGORIES =   	audio
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://www.celt-codec.org/
 

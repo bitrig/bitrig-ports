@@ -9,7 +9,7 @@ V_DLDIR =		${V:C/\.[0-9]$//}
 DISTNAME=		angband-v${V}
 PKGNAME=		angband-${V}
 CATEGORIES=     	games
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://rephial.org
 

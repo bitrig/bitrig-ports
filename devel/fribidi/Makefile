@@ -6,7 +6,7 @@ DISTNAME=	fribidi-0.19.6
 CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}download/
 EXTRACT_SUFX=	.tar.bz2
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=	fribidi              2.0      # 3.4
 

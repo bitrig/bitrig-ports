@@ -4,7 +4,7 @@ COMMENT=		35 standard PostScript fonts with Adobe name aliases
 
 DISTNAME=		ghostscript-fonts-std-8.11
 PKGNAME=		${DISTNAME:S,-std-,-,}
-REVISION=		3
+REVISION=		4
 CATEGORIES=		x11 print fonts
 
 HOMEPAGE=		http://www.cs.wisc.edu/~ghost/doc/cvs/Fonts.htm

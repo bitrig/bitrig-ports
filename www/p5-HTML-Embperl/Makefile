@@ -7,7 +7,7 @@ COMMENT=	embperl allows you to embed perl in your HTML documents
 MODULES=	cpan converters/libiconv
 DISTNAME=	Embperl-2.3.0
 PKGNAME=	p5-HTML-${DISTNAME}
-REVISION=	7
+REVISION=	8
 CATEGORIES=	www
 
 # Perl or GPL

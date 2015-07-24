@@ -4,7 +4,7 @@ COMMENT=		compatibility tools from the Tango project
 
 DISTNAME=		icon-naming-utils-0.8.90
 CATEGORIES=		x11
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE=		http://tango.freedesktop.org/
 

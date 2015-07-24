@@ -14,7 +14,7 @@ PKGNAME=	lib${DISTNAME}
 SHARED_LIBS +=  audiofile            1.0      # 1.0
 
 CATEGORIES=	devel audio
-REVISION=	1
+REVISION=	2
 
 MASTER_SITES=	${HOMEPAGE}
 

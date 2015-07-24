@@ -3,10 +3,9 @@
 REV=		1.0
 VERSION=	${REV}.2a
 EPOCH=		0
-REVISION=	1
+REVISION=	2
 SHARED_LIBS=	net	0.0
 PKGSPEC =	libnet->=1.0v0,<1.1v0
-REVISION =	1
 
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/deprecated/
 

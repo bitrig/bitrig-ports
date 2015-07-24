@@ -6,7 +6,7 @@ BROKEN-powerpc =	threading issues
 COMMENT =		Plan 9 from user space
 
 DISTNAME =		plan9port-20140306
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		plan9
 

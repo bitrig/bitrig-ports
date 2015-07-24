@@ -10,8 +10,8 @@ FULLPKGNAME-main=	fftw3-${V}
 # XXX set it to its default value so that bsd.port.mk won't whine
 FULLPKGPATH-main=	math/fftw3,-main${FLAVOR_EXT:S/-/,/g}
 FULLPKGNAME-common=	fftw3-common-${V}
-REVISION-main=	3
-REVISION-common=1
+REVISION-main=	4
+REVISION-common=2
 SHARED_LIBS=	fftw3	6.0 \
 		fftw3f	6.0 \
 		fftw3_threads	0.0 \

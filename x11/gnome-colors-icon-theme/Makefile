@@ -7,7 +7,7 @@ DISTNAME =		gnome-colors-${V}
 PKGNAME =		gnome-colors-icon-theme-${V}
 CATEGORIES =		x11
 
-REVISION =		7
+REVISION =		8
 
 HOMEPAGE =		https://code.google.com/p/gnome-colors/
 MASTER_SITES =		https://gnome-colors.googlecode.com/files/

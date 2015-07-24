@@ -3,7 +3,7 @@
 COMMENT=	Flash 4/5 movie output library
 
 DISTNAME=	ming-0.4.5
-REVISION=	2
+REVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ming/}
 

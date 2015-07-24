@@ -26,7 +26,8 @@ PKGSPEC-network =	kdenetwork-${MODKDE4_SPEC}
 PKGSPEC-sdk =		kdesdk-${MODKDE4_SPEC}
 PKGSPEC-toys =		kdetoys-${MODKDE4_SPEC}
 
-REVISION-minimal =	1
+REVISION =		0
+REVISION-minimal =	2
 
 MULTI_PACKAGES +=	-main -minimal -games
 

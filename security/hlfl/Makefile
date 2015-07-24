@@ -3,7 +3,7 @@
 COMMENT =		high level firewall language
 
 DISTNAME =		hlfl-0.60.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =   		security lang
 
 HOMEPAGE =		https://www.cusae.com/hlfl/

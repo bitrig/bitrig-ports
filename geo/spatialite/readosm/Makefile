@@ -4,7 +4,7 @@ COMMENT =	library to extract data from OSM files
 PROJECT =	readosm
 DISTNAME =	${PROJECT}-1.0.0b
 SHARED_LIBS =	readosm 0.0 #1.0
-REVISION =	0
+REVISION =	1
 
 MODULES =
 WANTLIB += expat z

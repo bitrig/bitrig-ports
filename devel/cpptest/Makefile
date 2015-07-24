@@ -3,12 +3,11 @@
 COMMENT =		unit testing framework
 
 DISTNAME =		cpptest-1.1.2
-REVISION =		0
 
 SHARED_LIBS +=  cpptest                   0.0 # 0.7
 
 CATEGORIES =		devel
-REVISION=		1
+REVISION=		2
 
 HOMEPAGE =		http://cpptest.sourceforge.net/
 

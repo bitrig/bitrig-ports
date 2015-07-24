@@ -3,7 +3,7 @@
 COMMENT =		web/text search engine
 
 DISTNAME =		swish-e-2.4.7
-REVISION =		3
+REVISION =		4
 SHARED_LIBS =		swish-e	2.1
 CATEGORIES =		textproc www
 

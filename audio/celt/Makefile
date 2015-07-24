@@ -13,7 +13,7 @@ NOT_FOR_ARCHS=	${GCC3_ARCHS}
 COMMENT =	experimental ultra-low delay audio codec
 
 DISTNAME =	celt-0.11.1
-REVISION =	0
+REVISION =	1
 
 EPOCH =		1
 

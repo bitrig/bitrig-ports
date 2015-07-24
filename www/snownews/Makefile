@@ -2,7 +2,7 @@
 
 COMMENT=	text mode rss newsreader
 DISTNAME=	snownews-1.5.12
-REVISION=	1
+REVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	${HOMEPAGE}download/
 

@@ -6,7 +6,7 @@ PORTROACH_COMMENT=	ices2 is a different port
 COMMENT=	icecast source for streaming MP3
 
 DISTNAME=	ices-0.4
-REVISION=	10
+REVISION=	11
 CATEGORIES=	net audio
 
 HOMEPAGE=	http://www.icecast.org/ices.php

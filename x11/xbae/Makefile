@@ -3,7 +3,7 @@
 COMMENT=	Motif-based table widget
 
 DISTNAME=	xbae-4.60.4
-REVISION=	12
+REVISION=	13
 
 SHARED_LIBS=	Xbae 4.60
 

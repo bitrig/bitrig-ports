@@ -6,7 +6,7 @@ COMMENT=	XF86Audio multimedia-key support for XMMS
 DISTNAME=	xmms-xf86audio-0.4.4
 CATEGORIES=	audio
 HOMEPAGE=	http://www.devin.com/xmms-xf86audio/
-REVISION=	0
+REVISION=	1
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

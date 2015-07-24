@@ -3,7 +3,7 @@
 COMMENT=	swiss army knife SMTP transaction tester
 
 DISTNAME=	swaks-20130209.0
-REVISION =	1
+REVISION =	2
 CATEGORIES=	mail
 
 HOMEPAGE=	http://jetmore.org/john/code/swaks/

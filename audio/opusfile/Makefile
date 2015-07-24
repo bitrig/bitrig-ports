@@ -2,7 +2,7 @@
 
 COMMENT =		high-level decoding and seeking API for Opus files
 DISTNAME =		opusfile-0.6
-REVISION =		0
+REVISION =		1
 CATEGORIES =		audio
 
 SHARED_LIBS +=		opusfile                  0.0 # 3.1

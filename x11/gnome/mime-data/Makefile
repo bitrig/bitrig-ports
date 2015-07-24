@@ -5,7 +5,7 @@ COMMENT=		MIME and application database for GNOME
 GNOME_PROJECT=		gnome-mime-data
 GNOME_VERSION=		2.18.0
 CATEGORIES=		x11
-REVISION=		8
+REVISION=		9
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

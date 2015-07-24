@@ -7,7 +7,7 @@ DISTNAME=	c-ares-${V}
 PKGNAME=	libcares-${V}
 CATEGORIES=	net devel
 MASTER_SITES=	${HOMEPAGE}download/
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS=	cares	2.5
 
