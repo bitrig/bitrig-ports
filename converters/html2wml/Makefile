@@ -4,7 +4,7 @@ COMMENT =	on-the-fly HTML to WML conversion
 
 DISTNAME =	html2wml-0.4.11
 CATEGORIES =	converters www perl5
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://maddingue.free.fr/softwares/html2wml.html.en
 

@@ -3,7 +3,7 @@
 COMMENT=		extract files from InstallShield CAB archives
 
 DISTNAME=		unshield-0.6
-REVISION=		1
+REVISION=		2
 SHARED_LIBS+=		unshield	2.0	# .0.0
 CATEGORIES=		archivers
 

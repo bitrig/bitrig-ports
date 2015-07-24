@@ -8,7 +8,7 @@ COMMENT=	IETF audio codec
 DISTNAME=	opus-1.1
 SHARED_LIBS=	opus		1.0	# 5.0
 CATEGORIES=	audio
-REVISION=	0
+REVISION=	1
 
 HOMEPAGE=	http://opus-codec.org/
 

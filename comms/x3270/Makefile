@@ -3,7 +3,7 @@
 COMMENT=	IBM 3270 terminal emulator for the X Window System
 
 DISTNAME=	x3270-3.3.6
-REVISION=	4
+REVISION=	5
 CATEGORIES=    	comms
 
 HOMEPAGE=	http://x3270.bgp.nu/

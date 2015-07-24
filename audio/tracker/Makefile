@@ -2,7 +2,7 @@
 
 COMMENT =	MOD player
 DISTNAME =	tracker-5.3
-REVISION =	3
+REVISION =	4
 CATEGORIES =	audio
 
 MASTER_SITES =	ftp://ftp.uni-trier.de/pub/unix/audio/tracker/

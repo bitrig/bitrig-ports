@@ -5,7 +5,7 @@ PORTROACH=	limit:^1\.2\.
 COMMENT=	General Toolkit for X11 GUI
 
 DISTNAME=	gtk+-1.2.10
-REVISION=	13
+REVISION=	14
 
 SHARED_LIBS=	gdk 3.0 \
 		gtk 3.0

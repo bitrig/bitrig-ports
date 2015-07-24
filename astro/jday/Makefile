@@ -3,7 +3,7 @@
 COMMENT=	astronomical julian date calculator
 
 DISTNAME=	jday-2.4
-REVISION=	3
+REVISION=	4
 SHARED_LIBS +=  jday                 0.0      # .2.4
 CATEGORIES=	astro
 HOMEPAGE=	http://jday.sourceforge.net/

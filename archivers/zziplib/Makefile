@@ -4,7 +4,7 @@ COMMENT=	lightweight library for extracting data from zip files
 
 DISTNAME=	zziplib-0.13.62
 CATEGORIES=	archivers
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=	zzip		15.52 \
 		zzipfseeko	13.52 \

@@ -6,7 +6,7 @@ DISTNAME=	libogg-1.3.2
 CATEGORIES=    	audio
 HOMEPAGE=	https://www.xiph.org/ogg/
 SHARED_LIBS=	ogg	6.2	# 8.2
-REVISION=	0
+REVISION=	1
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
