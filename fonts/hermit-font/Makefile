@@ -5,7 +5,7 @@ COMMENT=	clear, readable monospaced font
 DISTNAME=	otf-hermit-1.21
 PKGNAME=	hermit-font-1.21
 CATEGORIES=	fonts x11
-REVISION=	0
+REVISION=	1
 
 # OFL 1.1
 PERMIT_PACKAGE_CDROM=	Yes

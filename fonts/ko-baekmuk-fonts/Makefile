@@ -5,7 +5,7 @@ COMMENT=	extra Korean fonts
 V=		2.0
 DISTNAME=	baekmuk-${V}
 PKGNAME=	ko-baekmuk-fonts-${V}
-REVISION=	4
+REVISION=	5
 CATEGORIES=	fonts korean x11
 
 MASTER_SITES=	http://distcache.freebsd.org/ports-distfiles/ \

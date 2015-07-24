@@ -4,7 +4,7 @@ COMMENT=	primitives drawing/other support functions for SDL
 
 DISTNAME=	SDL_gfx-2.0.25
 PKGNAME=	${DISTNAME:L:S/_/-/}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel graphics x11
 MASTER_SITES=	http://www.ferzkopp.net/Software/SDL_gfx-2.0/
 

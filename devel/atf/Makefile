@@ -9,7 +9,7 @@ SHARED_LIBS +=		atf-c                     0.0 # 0.0
 
 CATEGORIES =		devel
 HOMEPAGE =		https://github.com/jmmv/atf
-REVISION=		1
+REVISION=		2
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

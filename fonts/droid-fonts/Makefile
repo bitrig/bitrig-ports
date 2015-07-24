@@ -6,7 +6,7 @@ COMMENT=	nice looking fonts as found on the android devices
 
 DISTNAME=	DroidFamily
 PKGNAME=	droid-fonts-0.1
-REVISION=	1
+REVISION=	2
 CATEGORIES=	fonts x11
 EXTRACT_SUFX=	.zip
 

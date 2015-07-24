@@ -7,7 +7,7 @@ DISTNAME =	SourceSansPro_FontsOnly-${VERSION}
 PKGNAME =	adobe-source-sans-pro-${VERSION}
 CATEGORIES =	fonts x11
 EXTRACT_SUFX =	.zip
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://sourceforge.net/projects/sourcesans.adobe/
 

@@ -5,7 +5,7 @@ COMMENT=		nice fixed width fonts, easy on the eye
 V=			3.0
 DISTNAME=		jmk-x11-fonts-${V}
 PKGNAME=		jmk-fonts-${V}
-REVISION=		3
+REVISION=		4
 
 CATEGORIES=		fonts x11
 

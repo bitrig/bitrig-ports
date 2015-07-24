@@ -3,7 +3,7 @@
 COMMENT =		replacement for Comic Sans font
 
 DISTNAME =		comic-neue-1.1
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		fonts
 

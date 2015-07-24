@@ -4,7 +4,7 @@ COMMENT=		monospace font designed for coders
 
 DISTNAME=		Inconsolata
 PKGNAME=		inconsolata-font-0.1
-REVISION=		1
+REVISION=		2
 CATEGORIES=		fonts x11
 
 HOMEPAGE=		http://www.levien.com/type/myfonts/inconsolata.html

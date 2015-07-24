@@ -3,7 +3,7 @@
 COMMENT=		Microsoft TrueType core fonts
 
 DISTNAME=		msttcorefonts-2.0
-REVISION=		1
+REVISION=		2
 CATEGORIES=		fonts x11
 
 HOMEPAGE=		http://corefonts.sourceforge.net/

@@ -2,7 +2,7 @@
 
 COMMENT=		full-featured text WWW browser
 DISTNAME=		elinks-0.11.7
-REVISION=		9
+REVISION=		10
 CATEGORIES=		www
 MASTER_SITES=		http://elinks.cz/download/
 

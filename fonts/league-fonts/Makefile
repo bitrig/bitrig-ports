@@ -3,7 +3,7 @@
 COMMENT =		fonts from the League of Moveable Type
 
 PKGNAME =		league-fonts-0.1
-REVISION =		2
+REVISION =		3
 PKG_ARCH =		*
 EXTRACT_SUFX =		.zip
 .for font in \

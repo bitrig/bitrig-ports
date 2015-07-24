@@ -5,7 +5,7 @@ COMMENT=	SDL TrueType fonts library
 V=		2.0.11
 DISTNAME=	SDL_ttf-${V}
 PKGNAME=	sdl-ttf-${V}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	devel graphics fonts
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_ttf/release/
 

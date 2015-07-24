@@ -7,7 +7,7 @@ COMMENT=	dip pen style TTF fonts
 DISTNAME=	ecoliercourt-fonts-0.1
 DISTFILES=	ecl_cour.ttf ec_cour.ttf
 
-REVISION=	2
+REVISION=	3
 
 CATEGORIES=	fonts x11 education
 

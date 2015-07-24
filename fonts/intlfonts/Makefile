@@ -4,7 +4,7 @@ COMMENT=	extra japanese fonts
 
 CATEGORIES=	fonts japanese x11
 DISTNAME=	intlfonts-1.2
-REVISION=	1
+REVISION=	2
 PKGNAME=	ja-fonts-gnu-1.2
 USE_X11 =	Yes
 

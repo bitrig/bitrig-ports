@@ -5,7 +5,7 @@ DISTNAME =	libee-0.4.1
 SHARED_LIBS +=  ee                   0.1      # 0.1
 CATEGORIES =	devel
 
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	http://www.libee.org/
 

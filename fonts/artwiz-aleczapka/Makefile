@@ -13,9 +13,9 @@ PKGNAME-se=	${NAME}-se-${V}
 CATEGORIES=	fonts x11
 USE_X11 =	Yes
 
-REVISION-main=	6
-REVISION-de=	4
-REVISION-se=	4
+REVISION-main=	7
+REVISION-de=	5
+REVISION-se=	5
 
 HOMEPAGE=	http://artwizaleczapka.sourceforge.net/
 

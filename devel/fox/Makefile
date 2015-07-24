@@ -5,7 +5,7 @@ CATEGORIES =	devel
 REVISION=	1
 
 DISTNAME =	fox-1.6.49
-REVISION =	0
+REVISION =	1
 
 SHARED_LIBS +=	FOX-1.6              2.1      # .0.49
 SHARED_LIBS +=	CHART-1.6            1.1      # .0.49

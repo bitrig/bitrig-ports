@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	Structured Terminal Forms Language/Library
 
 DISTNAME=	stfl-0.22
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS+=	stfl 0.0
 

@@ -5,7 +5,7 @@ COMMENT=		MCollective data plugin to retrieve sysctl values
 # git clone of 8fa53c457ebf33e0e942972eea3ffba1a73df7db
 DISTNAME=		mcollective-sysctl-data-2.0.0
 
-REVISION=		1
+REVISION=		2
 
 MASTER_SITES=		http://distfiles.nl/
 

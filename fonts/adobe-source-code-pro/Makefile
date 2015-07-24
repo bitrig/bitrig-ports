@@ -7,7 +7,7 @@ DISTNAME =	SourceCodePro_FontsOnly-${VERSION}
 PKGNAME =	adobe-source-code-pro-${VERSION}
 CATEGORIES =	fonts x11
 EXTRACT_SUFX =	.zip
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://sourceforge.net/projects/sourcecodepro.adobe/
 

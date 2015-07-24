@@ -4,7 +4,7 @@ COMMENT=		X11/Motif GUI text editor
 
 DISTNAME=		nedit-5.5
 P_V=			0.5
-REVISION=		21
+REVISION=		22
 EPOCH=			0
 DISTFILES=		${DISTNAME}-src${EXTRACT_SUFX} \
 			nedit_patterns-${P_V}.tgz:0

@@ -7,7 +7,7 @@ DIST_SUBDIR=	ja-fonts
 
 DISTNAME=		ja-fonts-funet
 PKGNAME=		${DISTNAME}-19911117
-REVISION=		1
+REVISION=		2
 
 MASTER_SITES=	ftp://ftp.funet.fi/pub/culture/japan/fonts/bdf/
 

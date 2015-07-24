@@ -5,7 +5,7 @@ COMMENT=	ISIRI 6219 conforming Farsi fonts
 V=		0.4
 DISTNAME=	farsi_fonts_$V
 PKGNAME=	farsifonts-ttf-$V
-REVISION=	2
+REVISION=	3
 CATEGORIES=	fonts x11
 
 HOMEPAGE=	http://www.arabeyes.org/project.php?proj=Khotot

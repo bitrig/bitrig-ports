@@ -4,7 +4,7 @@ COMMENT =		fixed width fonts especially for long hacking sessions
 
 DISTNAME =		terminus-font-4.39
 CATEGORIES =		fonts x11
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		http://terminus-font.sourceforge.net/
 

@@ -7,7 +7,7 @@ DISTNAME=		verilog-$V
 PKGNAME=		iverilog-$V
 CATEGORIES=		lang devel
 
-REVISION=		2
+REVISION=		3
 
 HOMEPAGE=		http://iverilog.icarus.com/
 

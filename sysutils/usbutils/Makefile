@@ -5,7 +5,7 @@ COMMENT =		utility used to display information about USB devices
 VERSION =		007
 DISTNAME =		usbutils_${VERSION}.orig
 PKGNAME =		usbutils-${VERSION}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		sysutils
 HOMEPAGE =		http://www.linux-usb.org

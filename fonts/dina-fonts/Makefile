@@ -4,7 +4,7 @@ COMMENT =	monospace bitmap font, primarily aimed at programmers
 
 DISTNAME =	dina-fonts-2.92
 CATEGORIES =	fonts
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	http://www.donationcoder.com/Software/Jibz/Dina/
 

@@ -4,7 +4,7 @@ COMMENT=	Baekmuk Korean truetype fonts
 
 DISTNAME=	baekmuk-ttf-2.2
 PKGNAME=	ko-${DISTNAME}
-REVISION=	3
+REVISION=	4
 
 CATEGORIES=	fonts korean x11
 

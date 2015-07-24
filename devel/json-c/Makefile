@@ -4,7 +4,7 @@ COMMENT=		JSON implementation in C
 
 DISTNAME=		json-c-0.12
 CATEGORIES=		devel
-REVISION=		0
+REVISION=		1
 
 SHARED_LIBS +=  json-c                    0.0 # 2.1
 

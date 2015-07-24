@@ -4,7 +4,7 @@ COMMENT=	high quality japanese truetype fonts
 
 DISTNAME=	mixfont-mplus-ipa-TrueType-20060520
 PKGNAME=	ja-mplus-ttf-20060520
-REVISION=	3
+REVISION=	4
 EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	fonts japanese x11
 
