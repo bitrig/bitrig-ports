@@ -66,6 +66,7 @@ LIBswscale_EXTRALIBS=-lm
 FFMPEG_ARCH=	generic
 .else
 FFMPEG_ARCH=	${MACHINE_ARCH}
+.endif
 
 # x265 only builds on archs with working builtin 32-bit atomics
 .if ${MACHINE_ARCH} == "alpha" || ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "powerpc" || ${MACHINE_ARCH} == "sparc64"
