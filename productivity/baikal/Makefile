@@ -6,7 +6,7 @@ DISTNAME=	baikal-regular-0.2.7
 PKGNAME=	${DISTNAME:S/-regular//}
 EXTRACT_SUFX=	.tgz
 CATEGORIES=	productivity www
-REVISION=	1
+REVISION=	2
 
 HOMEPAGE=	http://baikal-server.com/
 

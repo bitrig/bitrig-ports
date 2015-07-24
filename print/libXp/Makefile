@@ -3,7 +3,7 @@
 COMMENT =		X11 printing system
 
 DISTNAME =		libXp-1.0.1
-REVISION =		0
+REVISION =		1
 
 SHARED_LIBS +=  Xp                        11.0
 
