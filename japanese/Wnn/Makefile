@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.76 2015/07/23 10:02:08 espie Exp $
+# $OpenBSD: Makefile,v 1.77 2015/07/25 16:47:12 espie Exp $
 
 BROKEN =		needs work on bitrig
 
@@ -18,19 +18,19 @@ CATEGORIES =	japanese
 MULTI_PACKAGES =	-main -dict -zh -zhdict -ko -kodict -xwnmo -data
 
 PKGNAME-main =		ja-Wnn-4.2
-REVISION-main =		11
+REVISION-main =		12
 PKGNAME-dict =		ja-Wnndict-4.2
 REVISION-dict =		1
 PKGNAME-zh =		zh-Wnn-4.2
-REVISION-zh =		5
+REVISION-zh =		6
 PKGNAME-zhdict =	zh-Wnndict-4.2
 REVISION-zhdict =	1
 PKGNAME-ko =		ko-Wnn-4.2
-REVISION-ko =		5
+REVISION-ko =		6
 PKGNAME-kodict =	ko-Wnndict-4.2
 REVISION-kodict =	1
 PKGNAME-xwnmo =		Wnn-xwnmo-4.2
-REVISION-xwnmo =	6
+REVISION-xwnmo =	7
 PKGNAME-data =		Wnn-data-4.2
 REVISION-data =		0
 
