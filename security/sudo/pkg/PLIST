@@ -21,14 +21,16 @@ share/doc/sudo/NEWS
 share/doc/sudo/README
 share/doc/sudo/TROUBLESHOOTING
 share/doc/sudo/UPGRADE
+share/doc/sudo/examples/
+share/doc/sudo/examples/pam.conf
+share/doc/sudo/examples/sudo.conf
+share/doc/sudo/examples/sudoers
+share/doc/sudo/examples/syslog.conf
 share/examples/sudo/
-share/examples/sudo/sudo.conf
-share/examples/sudo/sudoers
 share/examples/sudo/sudoers.OpenBSD
 @mode 0440
 @sample ${SYSCONFDIR}/sudoers
 @mode
-share/examples/sudo/syslog.conf
 share/locale/ca/LC_MESSAGES/sudo.mo
 share/locale/ca/LC_MESSAGES/sudoers.mo
 share/locale/cs/LC_MESSAGES/sudo.mo

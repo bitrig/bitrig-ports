@@ -49,6 +49,7 @@ FAKE_FLAGS=	"INSTALL_OWNER="
 EXAMPLEDIR=	${PREFIX}/share/examples/sudo
 
 post-install:
+	@mkdir -p ${EXAMPLEDIR}
 	${INSTALL_DATA} ${FILESDIR}/sudoers ${EXAMPLEDIR}/sudoers.OpenBSD
 	rm -rf ${WRKINST}/etc/sudoers* ${WRKINST}/var/db/sudo \
 	       ${WRKINST}/var/run/sudo ${EXAMPLEDIR}/pam.conf
