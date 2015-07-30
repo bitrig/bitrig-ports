@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/11 11:41:33 espie Exp $
+# $OpenBSD: Makefile,v 1.22 2015/07/30 16:05:51 sthen Exp $
 
 COMMENT=	daemon to modify pf tables from userland
 
@@ -7,14 +7,12 @@ REVISION=	5
 
 CATEGORIES=	sysutils
 
-HOMEPAGE=	http://www.etc.msys.ch/software/tabled/
-
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c
 
-MASTER_SITES=	${HOMEPAGE}
+MASTER_SITES=	http://spacehopper.org/mirrors/
 EXTRACT_SUFX=	.tgz
 
 FAKE_FLAGS=	BINDIR=${PREFIX}/sbin MANDIR=${PREFIX}/man/man

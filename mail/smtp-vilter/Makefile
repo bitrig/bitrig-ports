@@ -1,14 +1,12 @@
-# $OpenBSD: Makefile,v 1.60 2015/07/15 16:15:35 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.61 2015/07/30 16:05:51 sthen Exp $
 
 COMMENT=	sendmail milter to scan messages for viruses and spam
 
 DISTNAME=	smtp-vilter-1.3.6
 EPOCH=		0
-REVISION=	2
+REVISION=	4
 
-CATEGORIES=    	mail
-
-HOMEPAGE=	http://www.etc.msys.ch/software/smtp-vilter/
+CATEGORIES=	mail
 
 SHARED_ONLY=	Yes
 
@@ -20,7 +18,7 @@ WANTLIB += c m pthread milter
 BUILD_DEPENDS=	mail/sendmail
 RUN_DEPENDS=	mail/sendmail
 
-MASTER_SITES=  	${HOMEPAGE}
+MASTER_SITES=	http://spacehopper.org/mirrors/
 EXTRACT_SUFX=	.tgz
 
 LIB_DEPENDS=	mail/sendmail,-libmilter
