@@ -1,11 +1,19 @@
---- Makefile.orig	Wed Dec 10 17:57:04 2014
-+++ Makefile	Wed Dec 10 17:58:01 2014
-@@ -34,7 +34,7 @@ ifeq ($(OS),GNU/kFreeBSD)
- LIBS+=-lbsd
+$OpenBSD: patch-Makefile,v 1.6 2015/07/30 08:11:53 robert Exp $
+
+We do not need to link to libossaudio due to moving
+away from it in the mixer code.
+
+--- Makefile.orig	Wed Jul 29 20:16:31 2015
++++ Makefile	Wed Jul 29 20:16:38 2015
+@@ -39,10 +39,6 @@ CFLAGS+=-I/usr/local/include/
+ LDFLAGS+=-L/usr/local/lib/
  endif
  
 -ifeq ($(OS),OpenBSD)
-+ifneq (, $(filter $(OS), Bitrig OpenBSD))
- CFLAGS+=-I/usr/local/include/
- LDFLAGS+=-L/usr/local/lib/
- LIBS+=-lossaudio
+-LIBS+=-lossaudio
+-endif
+-
+ ifeq ($(OS), NetBSD)
+ LIBS+= -lprop
+ endif
+
