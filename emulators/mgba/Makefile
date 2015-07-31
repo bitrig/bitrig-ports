@@ -18,8 +18,6 @@ CATEGORIES =		emulators
 
 HOMEPAGE =		https://endrift.com/mgba/
 
-MAINTAINER =		Anthony J. Bentley <anthony@cathet.us>
-
 # MPL 2.0
 PERMIT_PACKAGE_CDROM =	Yes
 

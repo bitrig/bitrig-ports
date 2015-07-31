@@ -6,7 +6,6 @@ COMMENT-pop3=		pop3 server for maildir format mailboxes
 V=			4.16.0
 DISTNAME=		courier-imap-${V}
 PKGNAME-main=		${DISTNAME}
-REVISION=		0
 FULLPKGNAME-pop3=	courier-pop3-${V}
 FULLPKGPATH-pop3=	mail/courier-imap,-pop3
 

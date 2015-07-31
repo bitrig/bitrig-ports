@@ -3,8 +3,6 @@
 COMMENT =	(X)HTML validation in a Perl object
 SHARED_ONLY =	Yes
 
-REVISION =	0
-
 DISTNAME =	HTML-Tidy-1.56
 CATEGORIES =	www
 MODULES =	cpan

@@ -6,7 +6,6 @@ V=		1.0.1p
 REVISION=	1
 DISTNAME=	openssl-$V
 PKGNAME=	openssl-$V
-REVISION=	0
 
 SHLIBVER=	2.0
 SHARED_LIBS=	crypto ${SHLIBVER} \

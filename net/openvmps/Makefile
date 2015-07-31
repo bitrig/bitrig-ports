@@ -3,7 +3,6 @@
 COMMENT=	free implementation of Cisco VMPS
 
 V=		1.4.06
-REVISION=	0
 DISTNAME=	vmpsd-${V}
 PKGNAME=	openvmps-${V}
 REVISION=	0

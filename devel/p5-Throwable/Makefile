@@ -7,8 +7,6 @@ DISTNAME =	Throwable-0.200013
 CATEGORIES =	devel
 CPAN_AUTHOR =	RJBS
 
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
-
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -5,7 +5,6 @@ COMMENT=		Apache-Tomcat AJP Connector
 V=			1.2.40
 DISTNAME=		tomcat-connectors-${V}-src
 PKGNAME=		mod_jk-${V}
-REVISION=		0
 CATEGORIES=		www
 REVISION=		0
 

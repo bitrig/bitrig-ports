@@ -10,8 +10,6 @@ CATEGORIES=		databases
 
 HOMEPAGE=		http://projects.puppetlabs.com/projects/hiera
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # Apachev2
 PERMIT_PACKAGE_CDROM=	Yes
 

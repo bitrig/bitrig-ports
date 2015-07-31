@@ -13,8 +13,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		http://libivykis.sourceforge.net/
 
-MAINTAINER =		Steven Mestdagh <steven@openbsd.org>
-
 # LGPL v2.1
 PERMIT_PACKAGE_CDROM =	Yes
 

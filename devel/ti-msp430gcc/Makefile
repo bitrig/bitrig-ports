@@ -19,7 +19,8 @@ DIST_SUBDIR =		ti-msp430gcc-$V
 DISTFILES =		msp430-gcc-source.tar.bz2 \
 			msp430-gcc-support-files.zip
 
-WANTLIB += c gmp m mpc mpfr stdc++ z
+WANTLIB += c gmp m mpc mpfr z
+WANTLIB += c++ c++abi
 
 BUILD_DEPENDS =		archivers/bzip2 \
 			archivers/unzip \

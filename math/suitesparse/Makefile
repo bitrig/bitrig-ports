@@ -9,8 +9,6 @@ CATEGORIES=		math
 
 HOMEPAGE=		http://faculty.cse.tamu.edu/davis/suitesparse.html
 
-MAINTAINER=		Paul Irofti <pirofti@openbsd.org>
-
 SO_VERSION=		2.0
 .for _lib in \
 amd btf camd ccolamd cholmod colamd csparse cxsparse klu ldl rbio spqr \
@@ -134,7 +132,7 @@ post-install:
 		${INSTALL_DATA} $${i} ${PREFIX}/lib/; \
 	done
 	rm ${PREFIX}/lib/libcerbla.a
-	
+
 	${INSTALL_DATA} ${WRKBUILD}/lib*.so.?.? ${PREFIX}/lib/
 
 .include <bsd.port.mk>

@@ -4,8 +4,6 @@ COMMENT =	very fast base to base conversion
 DISTNAME =	Math-Base-Convert-0.08
 CATEGORIES =	devel
 
-MAINTAINER =	Andrew Fresh <afresh1@openbsd.org>
-
 # perl5
 PERMIT_PACKAGE_CDROM =	Yes
 MODULES =	cpan

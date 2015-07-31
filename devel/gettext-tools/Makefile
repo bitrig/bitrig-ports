@@ -17,8 +17,6 @@ EXTRACT_SUFX=	.tar.xz
 
 HOMEPAGE=	https://www.gnu.org/software/gettext/
 
-MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
-
 # LGPLv2.1, GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 

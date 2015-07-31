@@ -9,8 +9,6 @@ CATEGORIES=	security
 
 HOMEPAGE=	https://github.com/duncs/clusterssh/wiki
 
-MAINTAINER=	Steven Mestdagh <steven@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 

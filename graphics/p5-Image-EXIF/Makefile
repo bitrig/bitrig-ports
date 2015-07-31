@@ -5,7 +5,6 @@ COMMENT=	interface to read EXIF tags in JPEG images
 SHARED_ONLY=	Yes
 
 DISTNAME=	Image-EXIF-2.01
-REVISION=	0
 CATEGORIES=	graphics
 REVISION=	0
 

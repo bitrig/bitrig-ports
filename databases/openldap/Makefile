@@ -25,8 +25,6 @@ CATEGORIES =	databases net
 
 HOMEPAGE =	http://www.openldap.org/
 
-MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
-
 # OpenLDAP Public License
 PERMIT_PACKAGE_CDROM =	Yes
 

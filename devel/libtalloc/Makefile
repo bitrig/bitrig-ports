@@ -14,8 +14,6 @@ CATEGORIES=	devel
 
 HOMEPAGE=	https://talloc.samba.org/
 
-MAINTAINER=	Jeremie Courreges-Anglas <jca@wxcvbn.org>
-
 # LGPLv3+
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -34,9 +34,10 @@ MULTI_PACKAGES = -main -wx
 WANTLIB =	m pthread
 WANTLIB-main =	${WANTLIB} c crypto kvm ncurses util
 
-WANTLIB-wx += ${WANTLIB} GL GLU stdc++ wx_base wx_base_xml wx_gtk2_adv
+WANTLIB-wx += ${WANTLIB} GL GLU wx_base wx_base_xml wx_gtk2_adv
 WANTLIB-wx += wx_gtk2_aui wx_gtk2_core wx_gtk2_gl wx_gtk2_html wx_gtk2_stc
 WANTLIB-wx += wx_gtk2_xrc
+WANTLIB-wx += c++ c++abi
 
 LIB_DEPENDS-wx +=x11/wxWidgets>=2.8.12p10
 RUN_DEPENDS-wx =${BASE_PKGPATH},-main>=${MAJ_V}

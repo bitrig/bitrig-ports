@@ -3,7 +3,6 @@
 COMMENT=	PF firewall log analysis
 
 DISTNAME=	hatchet-0.9.2
-REVISION=	0
 CATEGORIES=	security www
 HOMEPAGE=	http://www.dixongroup.net/hatchet/
 REVISION=	0

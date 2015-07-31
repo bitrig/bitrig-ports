@@ -13,8 +13,6 @@ CATEGORIES =		www
 
 HOMEPAGE =		http://blog.getpelican.com/
 
-MAINTAINER =		Vladimir Seleznev <vseleznv@cs.msu.ru>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 

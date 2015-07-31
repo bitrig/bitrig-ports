@@ -6,8 +6,6 @@ DISTNAME =	surf2-0.6.20150714
 CATEGORIES =	www
 HOMEPAGE =	http://surf.suckless.org/
 
-MAINTAINER=	Dmitrij D. Czarkoff
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -7,8 +7,6 @@ DISTNAME =		pudb-${MODPY_EGG_VERSION}
 
 CATEGORIES =		devel
 
-MAINTAINER =		Jeremie Courreges-Anglas <jca@wxcvbn.org>
-
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 

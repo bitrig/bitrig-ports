@@ -22,7 +22,6 @@ DISTFILES =		racket-minimal-$V-src-builtpkgs${EXTRACT_SUFX} \
 
 CATEGORIES =		lang
 HOMEPAGE =		http://racket-lang.org/
-MAINTAINER =		Juan Francisco Cantero Hurtado <juanfra@openbsd.org>
 
 # LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes

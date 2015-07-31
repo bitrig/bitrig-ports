@@ -8,7 +8,6 @@ SHARED_LIBS =		kvkontakte	0.0
 
 CATEGORIES =		net
 HOMEPAGE =		https://projects.kde.org/projects/extragear/libs/libkvkontakte
-MAINTAINER =		KDE porting team <openbsd-kde@googlegroups.com>
 
 # LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes

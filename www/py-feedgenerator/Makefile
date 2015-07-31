@@ -10,8 +10,6 @@ CATEGORIES =		www textproc
 
 HOMEPAGE =		http://pypi.python.org/pypi/feedgenerator
 
-MAINTAINER =		Vladimir Seleznev <vseleznv@cs.msu.ru>
-
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
