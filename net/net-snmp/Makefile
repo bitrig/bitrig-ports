@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.79 2014/12/09 15:20:06 sthen Exp $
 
-BROKEN=		needs work on bitrig
-
 SHARED_ONLY=	Yes
 
 COMMENT-main=	extendable SNMP implementation

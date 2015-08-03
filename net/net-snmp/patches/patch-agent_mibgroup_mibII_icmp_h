@@ -1,0 +1,11 @@
+--- agent/mibgroup/mibII/icmp.h.orig	Mon Aug  3 13:23:19 2015
++++ agent/mibgroup/mibII/icmp.h	Mon Aug  3 13:23:45 2015
+@@ -18,6 +18,8 @@ config_arch_require(netbsd,    mibII/kernel_netbsd)
+ config_arch_require(netbsdelf, mibII/kernel_netbsd)
+ config_arch_require(openbsd4,  mibII/kernel_sysctl)
+ config_arch_require(openbsd5,  mibII/kernel_sysctl)
++config_arch_require(bitrig,    mibII/kernel_sysctl)
++config_arch_require(bitrig1,   mibII/kernel_sysctl)
+ config_arch_require(dragonfly2, mibII/kernel_sysctl)
+ config_arch_require(dragonfly3, mibII/kernel_sysctl)
+ config_arch_require(darwin10,  mibII/kernel_sysctl)

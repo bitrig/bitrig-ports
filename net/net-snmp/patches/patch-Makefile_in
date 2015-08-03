@@ -1,9 +1,9 @@
 $OpenBSD$
---- Makefile.in.orig	Fri Jun  8 14:03:09 2012
-+++ Makefile.in	Fri Jun  8 14:03:25 2012
-@@ -22,7 +22,7 @@ INCLUDESUBDIRHEADERS= aix.h bsd.h bsdi3.h bsdi4.h bsdi
- 	freebsd2.h freebsd3.h freebsd4.h freebsd5.h freebsd6.h freebsd7.h freebsd8.h freebsd9.h freebsd.h \
- 	generic.h \
+--- Makefile.in.orig	Mon Dec  8 14:23:22 2014
++++ Makefile.in	Mon Aug  3 13:05:09 2015
+@@ -24,7 +24,7 @@ INCLUDESUBDIRHEADERS= aix.h bsd.h bsdi3.h bsdi4.h bsdi
+ 	freebsd12.h freebsd.h \
+         generic.h \
  	hpux.h irix.h linux.h mingw32.h mips.h netbsd.h osf5.h \
 -	openbsd.h openbsd5.h openbsd4.h \
 +	openbsd.h openbsd5.h openbsd4.h bitrig.h bitrig1.h\
