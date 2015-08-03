@@ -6,7 +6,7 @@ SHARED_ONLY =	Yes
 MODULES =	cpan
 DISTNAME =	Devel-Gladiator-0.04
 CATEGORIES =	devel
-REVISION =	1
+REVISION =	2
 
 TEST_DEPENDS =	devel/p5-PadWalker
 # perl

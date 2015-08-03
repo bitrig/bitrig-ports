@@ -6,7 +6,7 @@ SHARED_ONLY =	Yes
 MODULES =	cpan
 DISTNAME =	Devel-Cover-1.00
 CATEGORIES =	devel
-REVISION =	1
+REVISION =	2
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		binary data conversion using C types
 
 DISTNAME =		Convert-Binary-C-0.76
-REVISION =		3
+REVISION =		4
 CATEGORIES =		converters
 
 # perl

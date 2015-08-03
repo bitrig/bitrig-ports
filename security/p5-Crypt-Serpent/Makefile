@@ -6,7 +6,7 @@ COMMENT= 	interface to the Serpent encryption algorithm
 
 MODULES=	cpan
 DISTNAME=	Crypt-Serpent-1.01
-REVISION=	5
+REVISION=	6
 CATEGORIES=	security
 
 # perl

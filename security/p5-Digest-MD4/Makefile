@@ -4,7 +4,7 @@ COMMENT =	interface to md4 message-digest algorithm
 
 DISTNAME =	Digest-MD4-1.9
 CATEGORIES =	security
-REVISION =	1
+REVISION =	2
 
 # Digest::MD4: perl
 #

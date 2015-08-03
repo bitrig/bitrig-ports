@@ -6,7 +6,7 @@ SHARED_ONLY =	Yes
 MODULES =	cpan
 DISTNAME =	Devel-FindRef-1.422
 CATEGORIES =	devel
-REVISION =	1
+REVISION =	2
 
 RUN_DEPENDS =	devel/p5-common-sense
 

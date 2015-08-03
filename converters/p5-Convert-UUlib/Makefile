@@ -8,7 +8,7 @@ DISTNAME =	Convert-UUlib-1.4
 EPOCH =		1
 CATEGORIES=	converters
 MODULES=	cpan
-REVISION =	1
+REVISION =	2
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

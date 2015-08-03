@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		filesystem disk space information
 
 DISTNAME=		Filesys-Df-0.92
-REVISION=		5
+REVISION=		6
 CATEGORIES=		sysutils
 
 # XXX Force dependency on libc; this doesn't actually use libc, but doing

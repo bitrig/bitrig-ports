@@ -5,7 +5,7 @@ SHARED_ONLY =		yes
 COMMENT =		efficient generation of combinatorial sequences
 
 DISTNAME =		Algorithm-Combinatorics-0.27
-REVISION =		2
+REVISION =		3
 CATEGORIES =		math
 
 CPAN_AUTHOR =		FXN

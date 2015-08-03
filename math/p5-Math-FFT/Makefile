@@ -6,7 +6,7 @@ COMMENT=	calculate Fast Fourier Transforms in perl
 
 MODULES=	cpan
 DISTNAME=	Math-FFT-1.28
-REVISION=	5
+REVISION=	6
 CATEGORIES=	math
 
 # Perl

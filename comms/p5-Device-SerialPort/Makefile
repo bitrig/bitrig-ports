@@ -6,7 +6,7 @@ COMMENT=	talk to modem devices connected via serial port
 
 DISTNAME=	Device-SerialPort-1.04
 EPOCH=		0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	comms
 MODULES=	cpan
 

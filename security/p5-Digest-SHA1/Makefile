@@ -6,7 +6,7 @@ COMMENT=	module to calculate SHA1 digests
 
 MODULES=	cpan
 DISTNAME=	Digest-SHA1-2.13
-REVISION=	4
+REVISION=	5
 CATEGORIES=	security
 
 # Artistic licence

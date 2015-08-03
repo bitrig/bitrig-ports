@@ -8,7 +8,7 @@ VERSION =	2.1.1
 DISTNAME =	nkf-${VERSION}
 PKGNAME =	ja-nkf-${VERSION}
 EPOCH =		0
-REVISION =	2
+REVISION =	3
 CATEGORIES =	japanese textproc
 
 HOMEPAGE =	http://sourceforge.jp/projects/nkf/

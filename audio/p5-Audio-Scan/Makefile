@@ -5,7 +5,7 @@ COMMENT=	fast audio metadata and tag reader for Perl
 SHARED_ONLY=	Yes
 DISTNAME=	Audio-Scan-0.93
 CATEGORIES=	audio
-REVISION=	1
+REVISION=	2
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes

@@ -6,7 +6,7 @@ COMMENT =	Moose minus the antlers
 
 MODULES =	cpan
 DISTNAME =	Mouse-0.97
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel
 
 # Perl

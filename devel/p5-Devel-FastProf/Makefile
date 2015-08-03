@@ -4,7 +4,7 @@ SHARED_ONLY=	Yes
 COMMENT=	per-line quick profiler for perl
 CATEGORIES=	devel
 DISTNAME=	Devel-FastProf-0.08
-REVISION=	4
+REVISION=	5
 MODULES=	cpan
 
 # perl

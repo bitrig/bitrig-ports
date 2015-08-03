@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	interface to the UNIX system logger
 
 DISTNAME=	Unix-Syslog-1.1
-REVISION=	4
+REVISION=	5
 CATEGORIES=	sysutils
 
 # Artistic

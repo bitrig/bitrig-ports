@@ -7,7 +7,7 @@ COMMENT=	perl interface to the sync() system functions
 MODULES=	cpan
 V=		0.09
 DISTNAME=	File-Sync-${V}
-REVISION=	5
+REVISION=	6
 CATEGORIES=	devel
 
 # perl

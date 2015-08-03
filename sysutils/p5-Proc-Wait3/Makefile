@@ -6,7 +6,7 @@ SHARED_ONLY =		Yes
 MODULES =		cpan
 DISTNAME =		Proc-Wait3-0.04
 CATEGORIES =		sysutils
-REVISION =		1
+REVISION =		2
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

@@ -6,7 +6,7 @@ COMMENT=	very fast Perl templating library
 
 MODULES=	cpan
 DISTNAME=	Text-Tmpl-0.33
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc
 
 # Artistic

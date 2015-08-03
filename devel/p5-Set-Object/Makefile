@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 
 MODULES=	cpan
 DISTNAME=	Set-Object-1.26
-REVISION=	5
+REVISION=	6
 CATEGORIES=	devel
 
 # Same as perl

@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 
 MODULES=	cpan
 DISTNAME=	Devel-Leak-0.03
-REVISION=	5
+REVISION=	6
 CATEGORIES=	devel
 
 # perl

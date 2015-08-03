@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	conversions to and from arbitrary character sets
 
 DISTNAME=	Unicode-Map-0.112
-REVISION=	5
+REVISION=	6
 CATEGORIES=	converters
 MODULES=	cpan
 

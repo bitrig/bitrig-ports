@@ -5,7 +5,7 @@ SHARED_ONLY=	Yes
 COMMENT=	perl interface to the lchown(2) system call
 
 DISTNAME=	Lchown-1.01
-REVISION=	4
+REVISION=	5
 
 CATEGORIES=	devel
 

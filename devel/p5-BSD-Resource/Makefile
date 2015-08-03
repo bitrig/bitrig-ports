@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		BSD process resource limit and priority functions
 
 DISTNAME =		BSD-Resource-1.2907
-REVISION =		2
+REVISION =		3
 
 CATEGORIES =		devel
 

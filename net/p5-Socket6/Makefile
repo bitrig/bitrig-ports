@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		Perl defines relating to AF_INET6 sockets
 
 DISTNAME =		Socket6-0.25
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		net devel
 

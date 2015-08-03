@@ -6,7 +6,7 @@ COMMENT =	argument type classification
 
 MODULES =	cpan
 DISTNAME =	Params-Classify-0.013
-REVISION =	2
+REVISION =	3
 CATEGORIES =	devel
 
 # same as perl

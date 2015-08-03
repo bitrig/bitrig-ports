@@ -6,7 +6,7 @@ COMMENT =	perl module to validate function/method parameters
 
 DISTNAME =	Params-Validate-1.09
 CATEGORIES =	devel
-REVISION =	1
+REVISION =	2
 
 # artistic_2
 PERMIT_PACKAGE_CDROM =	Yes

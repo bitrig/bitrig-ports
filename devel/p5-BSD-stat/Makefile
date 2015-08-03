@@ -5,7 +5,7 @@ SHARED_ONLY =		Yes
 COMMENT =		stat() with BSD 4.4 extentions
 
 DISTNAME =		BSD-stat-1.35
-REVISION =		1
+REVISION =		2
 
 CATEGORIES =		devel
 

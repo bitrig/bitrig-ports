@@ -5,7 +5,7 @@ SHARED_ONLY=		Yes
 COMMENT=		copy perl Regexp objects
 
 DISTNAME=		Regexp-Copy-0.06
-REVISION=		5
+REVISION=		6
 CATEGORIES=		devel
 
 # Perl
