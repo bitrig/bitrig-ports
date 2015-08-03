@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.55 2015/07/01 08:41:59 jasper Exp $
+# $OpenBSD: Makefile,v 1.56 2015/08/03 18:29:30 jca Exp $
 
 COMMENT=	free peer-reviewed portable C++ source libraries
 
 VERSION=	1.58.0
+REVISION=	0
 DISTNAME=	boost_${VERSION:S/./_/g}
 PKGNAME=	boost-${VERSION}
 CATEGORIES=	devel
@@ -13,8 +14,6 @@ SO_VERSION=	6.0
 BOOST_LIBS=	boost_atomic-mt \
 		boost_chrono-mt boost_chrono \
 		boost_container-mt boost_container \
-		boost_context-mt \
-		boost_coroutine-mt boost_coroutine \
 		boost_date_time-mt boost_date_time \
 		boost_filesystem-mt boost_filesystem \
 		boost_graph-mt boost_graph \
@@ -80,7 +79,7 @@ BJAM_CONFIG=	-sICONV_PATH=${LOCALBASE} \
 		--layout=tagged \
 		--user-config=${WRKSRC}/tools/build/user-config.jam
 
-# context uses MD bits and is missing support for Alpha,
+# 'context' and 'coroutine' use MD bits and miss support for Alpha,
 # PA-RISC, SPARC and SuperH. The author does not care
 # care about adding support for Alpha and PA-RISC.
 BOOTSTRAP=	--with-toolset=clang \
@@ -88,7 +87,7 @@ BOOTSTRAP=	--with-toolset=clang \
 		--with-python-root=${LOCALBASE} \
 		--with-python-version=${MODPY_VERSION} \
 		--without-icu \
-		--without-libraries=context
+		--without-libraries=context,coroutine
 
 # python.port.mk makes assumptions about an empty CONFIGURE_STYLE
 CONFIGURE_STYLE= none
