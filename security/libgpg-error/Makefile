@@ -2,10 +2,10 @@
 
 COMMENT=	error codes for GnuPG related software
 
-DISTNAME=	libgpg-error-1.18
+DISTNAME=	libgpg-error-1.19
 CATEGORIES=	security devel
 
-SHARED_LIBS +=  gpg-error            3.6      # 13.0
+SHARED_LIBS +=  gpg-error            3.7      # 15.0
 
 HOMEPAGE=	http://www.gnupg.org/related_software/libgpg-error/
 
