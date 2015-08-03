@@ -13,7 +13,7 @@ INI_TEMPLATES=	development production
 
 CONFIGURE_ARGS+=	--enable-mysqlnd
 
-WANTLIB-main+=		c++ c++abi pthread ncurses readline
+WANTLIB-main+=		pthread ncurses readline
 
 # sybase-ct
 MULTI_PACKAGES+=	-sybase_ct
