@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.228 2014/10/28 09:19:54 sthen Exp $
 
-BROKEN= 	needs work on bitrig
-
 SHARED_ONLY=	Yes
 
 COMMENT-server=	compact IMAP/POP3 server
