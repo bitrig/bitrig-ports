@@ -87,6 +87,7 @@
      SUBDIR += regina-rexx
      SUBDIR += rubinius
      SUBDIR += ruby
+     SUBDIR += rust
      SUBDIR += sbcl
      SUBDIR += scala
      SUBDIR += scheme-report
