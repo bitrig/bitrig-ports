@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.126 2015/08/03 19:14:56 jung Exp $
+# $OpenBSD: Makefile,v 1.127 2015/08/11 21:28:53 sthen Exp $
 
 ONLY_FOR_ARCHS=	amd64 i386 powerpc sparc64
 
