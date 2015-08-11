@@ -1,8 +1,15 @@
-$OpenBSD: patch-configure,v 1.1.1.1 2007/10/25 18:17:02 wilfried Exp $
---- configure.orig	Thu Oct 11 11:58:33 2007
-+++ configure	Sun Jun  8 01:01:18 2014
-@@ -3755,7 +3755,11 @@ nto-qnx*)
-   lt_cv_deplibs_check_method=unknown
+$OpenBSD: patch-configure,v 1.2 2015/08/11 21:12:45 sthen Exp $
+--- configure.orig	Thu Jul 30 14:28:44 2015
++++ configure	Thu Jul 30 14:31:26 2015
+@@ -880,6 +880,7 @@ LIBFREEIPMI_VERSION_MINOR
+ LIBFREEIPMI_VERSION_MAJOR
+ LIBFREEIPMI_VERSION_INFO
+ LIBFREEIPMI_VERSION
++IOPL_LIBS
+ ISODATE
+ am__untar
+ am__tar
+@@ -10414,6 +10415,10 @@ newsos6)
    ;;
  
 -openbsd*)
@@ -139,3 +146,6 @@ $OpenBSD: patch-configure,v 1.1.1.1 2007/10/25 18:17:02 wilfried Exp $
  s,@ISODATE@,$ISODATE,;t t
  s,@LIBFREEIPMI_VERSION@,$LIBFREEIPMI_VERSION,;t t
  s,@LIBFREEIPMI_VERSION_INFO@,$LIBFREEIPMI_VERSION_INFO,;t t
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
