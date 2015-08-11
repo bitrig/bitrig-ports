@@ -1,0 +1,21 @@
+--- fesvr/htif_eth.cc.orig	Tue Aug 11 10:44:20 2015
++++ fesvr/htif_eth.cc	Tue Aug 11 10:45:36 2015
+@@ -13,7 +13,9 @@
+ #include <net/if.h>
+ #include <sys/ioctl.h>
+ #include <sys/un.h>
++#ifndef __Bitrig__
+ #include <net/ethernet.h>
++#endif
+ #include <net/if.h>
+ #include <ifaddrs.h>
+ 
+@@ -42,7 +44,7 @@ htif_eth_t::htif_eth_t(const std::vector<std::string>&
+   std::string interface = "eth0";
+ #elif __APPLE__
+   std::string interface = "en0";
+-#elif __FreeBSD__
++#elif __FreeBSD__ || __Bitrig__
+   std::string interface = "em0";
+ #endif
+   for (std::vector<std::string>::const_iterator a = host_args().begin(); a != host_args().end(); ++a)

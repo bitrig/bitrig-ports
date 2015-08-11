@@ -1,0 +1,11 @@
+--- fesvr/htif_eth.h.orig	Tue Aug 11 10:41:56 2015
++++ fesvr/htif_eth.h	Tue Aug 11 10:42:23 2015
+@@ -10,7 +10,7 @@
+ #ifdef __linux__
+ #include <netpacket/packet.h>
+ typedef struct sockaddr_ll sockaddr_ll_t;
+-#elif __APPLE__ || __FreeBSD__
++#elif __APPLE__ || __FreeBSD__ || __Bitrig__
+ #include <sys/types.h>
+ #include <net/if.h>
+ #include <net/if_dl.h>
