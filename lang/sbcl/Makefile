@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/12/10 17:37:54 joshe Exp $
+# $OpenBSD: Makefile,v 1.23 2015/08/11 21:41:04 jasper Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -7,7 +7,7 @@ ONLY_FOR_ARCHS =	amd64 i386 powerpc
 
 COMMENT=		compiler and runtime system for ANSI Common Lisp
 
-V =			1.1.14
+V =			1.2.14
 DISTNAME=		sbcl-${V}-source
 PKGNAME=		sbcl-${V}
 REVISION=		0
@@ -26,8 +26,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sbcl/}
 
 PSEUDO_FLAVORS=		native_bootstrap
 FLAVOR?=
-
-USE_GROFF =		Yes
 
 .if ${FLAVOR:Mnative_bootstrap}
 BUILD_DEPENDS+=		lang/sbcl
@@ -59,10 +57,10 @@ pre-configure:
 	mv ${VERSION_FILE}.new ${VERSION_FILE}
 
 do-build:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} SBCL_CONTRIB_TARGET=all \
-		/bin/sh make.sh --prefix=${PREFIX} --xc-host="${BOOTSTRAP_CMD}"
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} /bin/sh make.sh \
+		--prefix=${PREFIX} --xc-host="${BOOTSTRAP_CMD}"
 	cd ${WRKSRC}/doc/manual && touch sbcl.texinfo && \
-		${SETENV} ${MAKE_ENV} ${GMAKE} asdf.info sbcl.info html
+		${SETENV} ${MAKE_ENV} ${GMAKE} asdf.info sbcl.info
 
 do-install:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} /bin/sh install.sh
