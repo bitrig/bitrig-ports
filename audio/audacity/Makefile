@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.40 2015/04/14 08:38:14 bentley Exp $
+# $OpenBSD: Makefile,v 1.41 2015/08/12 20:53:15 naddy Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -28,7 +28,8 @@ WANTLIB += id3tag>=2 mad>=2 portaudio>=1 SoundTouch vamp-hostsdk>=1
 WANTLIB += tag
 WANTLIB += c++ c++abi
 
-BUILD_DEPENDS=	archivers/zip
+BUILD_DEPENDS=	archivers/zip \
+		devel/gettext-tools
 LIB_DEPENDS=	x11/wxWidgets>=2.8.6 \
 		audio/libsamplerate \
 		audio/flac \
