@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/05/09 20:03:49 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2015/08/12 22:27:31 sthen Exp $
 
 # vax:	no fenv.h support
 NOT_FOR_ARCHS =		vax
@@ -15,6 +15,7 @@ MASTER_SITES =		https://gforge.inria.fr/frs/download.php/28500/
 PKGNAME =		${DISTNAME:L}
 REVISION=		1
 EPOCH =			0
+REVISION =		0
 
 SHARED_ONLY =		Yes
 SHARED_LIBS =		CGAL		0.0 \
@@ -30,9 +31,10 @@ HOMEPAGE =		http://www.cgal.org/
 PERMIT_PACKAGE_CDROM =	Yes
 
 # m>=5.3 for fenv.h support
-WANTLIB =		GL GLU ICE SM X11 Xext boost_thread-mt gmp gmpxx \
-			lib/qt4/QtGui lib/qt4/QtOpenGL m>=5.3 mpfr z
-WANTLIB +=		c++ c++abi pthread
+WANTLIB += GL GLU boost_thread-mt gmp gmpxx
+WANTLIB += lib/qt4/QtGui lib/qt4/QtOpenGL m>=5.3 mpfr 
+WANTLIB += pthread z
+WANTLIB += c++ c++abi
 
 MODULES =		devel/cmake \
 			x11/qt4

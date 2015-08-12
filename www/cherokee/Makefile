@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.55 2015/07/15 23:29:57 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.56 2015/08/12 22:27:31 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -18,11 +18,11 @@ PKGNAME-mysql =	cherokee-mysql-${VERSION}
 PKGNAME-geoip =	cherokee-geoip-${VERSION}
 PKGNAME-streaming = cherokee-streaming-${VERSION}
 
-REVISION-main =		10
-REVISION-geoip =	9
-REVISION-ldap =		12
-REVISION-mysql =	11
-REVISION-streaming =	10
+REVISION-main =		11
+REVISION-geoip =	10
+REVISION-ldap =		13
+REVISION-mysql =	12
+REVISION-streaming =	11
 
 SHARED_LIBS =	cherokee-base		0.0 \
 		cherokee-client		0.0 \
@@ -63,7 +63,7 @@ WANTLIB-ldap =		crypto lber-2.4 ldap-2.4 sasl2 ssl
 RUN_DEPENDS-ldap =	${BASE_PKGPATH}
 
 LIB_DEPENDS-mysql =	databases/mariadb
-WANTLIB-mysql =		crypto m mysqlclient ssl z
+WANTLIB-mysql =		crypto m mysqlclient pthread ssl stdc++ z
 RUN_DEPENDS-mysql =	${BASE_PKGPATH}
 
 LIB_DEPENDS-streaming =	graphics/ffmpeg>=20121026 \
@@ -71,6 +71,7 @@ LIB_DEPENDS-streaming =	graphics/ffmpeg>=20121026 \
 WANTLIB-streaming += avcodec avformat avutil bz2 crypto m gsm
 WANTLIB-streaming += mp3lame ogg pthread speex vorbis vorbisenc
 WANTLIB-streaming += vpx x264 xvidcore z opus ssl
+WANTLIB-streaming += stdc++ swresample x265
 RUN_DEPENDS-streaming = ${BASE_PKGPATH}
 
 USE_GMAKE =	Yes

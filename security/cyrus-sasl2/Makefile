@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.85 2015/05/22 11:31:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.86 2015/08/12 22:27:31 sthen Exp $
 
 COMMENT=	RFC 2222 SASL (Simple Authentication and Security Layer)
 
@@ -67,7 +67,7 @@ ERRORS+=	${BRKFLAVORMSG}
 .endif
 PKG_ARGS=	-Dsql=1
 LIB_DEPENDS+=	databases/mariadb
-WANTLIB+=	m ssl z lib/mysql/mysqlclient
+WANTLIB+=	m pthread ssl stdc++ z lib/mysql/mysqlclient
 CONFIGURE_ARGS+=--enable-sql \
 		--with-mysql \
 		--without-pgsql \
