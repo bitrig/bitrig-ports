@@ -1,0 +1,27 @@
+--- riscv/riscv.mk.in.orig	Tue Aug 11 14:48:40 2015
++++ riscv/riscv.mk.in	Wed Aug 12 07:16:02 2015
+@@ -1,5 +1,5 @@
+-get_insn_list = $(shell grep ^DECLARE_INSN $(1) | sed 's/DECLARE_INSN(\(.*\),.*,.*)/\1/')
+-get_opcode = $(shell grep ^DECLARE_INSN.*\\\<$(2)\\\> $(1) | sed 's/DECLARE_INSN(.*,\(.*\),.*)/\1/')
++get_insn_list = $(shell ggrep ^DECLARE_INSN $(1) | gsed 's/DECLARE_INSN(\(.*\),.*,.*)/\1/')
++get_opcode = $(shell ggrep ^DECLARE_INSN.*\\\<$(2)\\\> $(1) | gsed 's/DECLARE_INSN(.*,\(.*\),.*)/\1/')
+ 
+ riscv_subproject_deps = \
+ 	softfloat \
+@@ -49,14 +49,14 @@ riscv_gen_hdrs = \
+ riscv_gen_srcs = \
+ 	$(addsuffix .cc, $(call get_insn_list,$(src_dir)/riscv/encoding.h))
+ 
+-icache_entries := `grep "ICACHE_ENTRIES =" $(src_dir)/riscv/mmu.h | sed 's/.* = \(.*\);/\1/'`
++icache_entries := `ggrep "ICACHE_ENTRIES =" $(src_dir)/riscv/mmu.h | gsed 's/.* = \(.*\);/\1/'`
+ 
+ icache.h: mmu.h
+ 	$(src_dir)/riscv/gen_icache $(icache_entries) > $@.tmp
+ 	mv $@.tmp $@
+ 
+ $(riscv_gen_srcs): %.cc: insns/%.h insn_template.cc
+-	sed 's/NAME/$(subst .cc,,$@)/' $(src_dir)/riscv/insn_template.cc | sed 's/OPCODE/$(call get_opcode,$(src_dir)/riscv/encoding.h,$(subst .cc,,$@))/' > $@
++	gsed 's/NAME/$(subst .cc,,$@)/' $(src_dir)/riscv/insn_template.cc | gsed 's/OPCODE/$(call get_opcode,$(src_dir)/riscv/encoding.h,$(subst .cc,,$@))/' > $@
+ 
+ riscv_junk = \
+ 	$(riscv_gen_srcs) \

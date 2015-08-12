@@ -1,0 +1,5 @@
+lib/libdummy_rocc.so
+lib/libhwacha.so
+lib/libriscv.so
+lib/libsoftfloat.so
+lib/libspike_main.so

@@ -1,0 +1,18 @@
+--- hwacha/hwacha.mk.in.orig	Wed Aug 12 07:04:15 2015
++++ hwacha/hwacha.mk.in	Wed Aug 12 07:04:28 2015
+@@ -32,13 +32,13 @@ hwacha_gen_srcs = \
+ 	$(addsuffix .cc, $(call get_insn_list,$(src_dir)/hwacha/opcodes_hwacha.h))
+ 
+ $(hwacha_gen_srcs): %.cc: insns/%.h insn_template_hwacha.cc
+-	sed 's/NAME/$(subst .cc,,$@)/' $(src_dir)/hwacha/insn_template_hwacha.cc | sed 's/OPCODE/$(call get_opcode,$(src_dir)/hwacha/opcodes_hwacha.h,$(subst .cc,,$@))/' > $@
++	gsed 's/NAME/$(subst .cc,,$@)/' $(src_dir)/hwacha/insn_template_hwacha.cc | gsed 's/OPCODE/$(call get_opcode,$(src_dir)/hwacha/opcodes_hwacha.h,$(subst .cc,,$@))/' > $@
+ 
+ hwacha_ut_gen_srcs = \
+ 	$(addsuffix .cc, $(call get_insn_list,$(src_dir)/hwacha/opcodes_hwacha_ut.h))
+ 
+ $(hwacha_ut_gen_srcs): %.cc: insns_ut/%.h insn_template_hwacha_ut.cc
+-	sed 's/NAME/$(subst .cc,,$@)/' $(src_dir)/hwacha/insn_template_hwacha_ut.cc | sed 's/OPCODE/$(call get_opcode,$(src_dir)/hwacha/opcodes_hwacha_ut.h,$(subst .cc,,$@))/' > $@
++	gsed 's/NAME/$(subst .cc,,$@)/' $(src_dir)/hwacha/insn_template_hwacha_ut.cc | gsed 's/OPCODE/$(call get_opcode,$(src_dir)/hwacha/opcodes_hwacha_ut.h,$(subst .cc,,$@))/' > $@
+ 
+ hwacha_junk = \
+ 	$(hwacha_gen_srcs) \

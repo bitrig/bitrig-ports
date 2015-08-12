@@ -1,0 +1,10 @@
+--- riscv/gen_icache.orig	Wed Aug 12 07:07:46 2015
++++ riscv/gen_icache	Wed Aug 12 07:08:27 2015
+@@ -1,6 +1,6 @@
+ #!/bin/sh
+ n=$(($1-1))
+-for i in `seq 0 $n`
++for i in `jot $n 0`
+ do
+   echo case $i: ICACHE_ACCESS\($i\)\;
+ done
