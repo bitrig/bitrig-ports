@@ -2745,6 +2745,7 @@ ${_BUILD_COOKIE}: ${_CONFIGURE_COOKIE}
 	@${_MAKESYS} do-build
 .  else
 # What BUILD normally does:
+	@${ECHO_MSG} "===>  CD ${WRKBUILD}"
 	@cd ${WRKBUILD} && exec ${_SYSTRACE_CMD} ${SETENV} ${MAKE_ENV} \
 		${MAKE_PROGRAM} ${MAKE_FLAGS} -f ${MAKE_FILE} ${ALL_TARGET}
 # End of BUILD

@@ -16,6 +16,7 @@ WANTLIB +=		c c++ c++abi m pthread
 MASTER_SITES =		http://www.bitrig.org/pub/distfiles/riscv/
 USE_GMAKE =		Yes
 CONFIGURE_STYLE =	gnu
+CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
 MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/scripts
 
 .include <bsd.port.mk>
