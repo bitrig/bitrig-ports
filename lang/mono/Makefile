@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.90 2015/04/04 15:56:18 robert Exp $
+# $OpenBSD: Makefile,v 1.91 2015/08/12 06:13:56 ajacoutot Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -38,6 +38,7 @@ USE_GROFF =	Yes
 SUBST_VARS=	LIBTOOL
 
 BUILD_DEPENDS=	devel/bison \
+		devel/gettext-tools \
 		lang/gawk \
 		shells/bash \
 		${RUN_DEPENDS}
