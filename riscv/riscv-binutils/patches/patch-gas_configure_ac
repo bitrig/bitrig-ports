@@ -1,0 +1,11 @@
+--- gas/configure.ac.orig	Tue Oct 14 02:32:03 2014
++++ gas/configure.ac	Sun Aug 16 12:48:46 2015
+@@ -453,7 +453,7 @@ changequote([,])dnl
+ 	AC_MSG_RESULT($enable_audio_ext)
+ 	;;
+ 
+-      i386 | s390 | sparc)
++      i386 | riscv | s390 | sparc)
+ 	if test $this_target = $target ; then
+ 	  AC_DEFINE_UNQUOTED(DEFAULT_ARCH, "${arch}", [Default architecture.])
+ 	fi

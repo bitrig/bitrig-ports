@@ -1,0 +1,18 @@
+--- bfd/Makefile.in.orig	Sun Aug 16 12:48:46 2015
++++ bfd/Makefile.in	Sun Aug 16 12:48:46 2015
+@@ -442,6 +442,7 @@ ALL_MACHINES = \
+ 	cpu-pj.lo \
+ 	cpu-plugin.lo \
+ 	cpu-powerpc.lo \
++	cpu-riscv.lo \
+ 	cpu-rs6000.lo \
+ 	cpu-rl78.lo \
+ 	cpu-rx.lo \
+@@ -526,6 +527,7 @@ ALL_MACHINES_CFILES = \
+ 	cpu-pj.c \
+ 	cpu-plugin.c \
+ 	cpu-powerpc.c \
++	cpu-riscv.c \
+ 	cpu-rs6000.c \
+ 	cpu-rl78.c \
+ 	cpu-rx.c \

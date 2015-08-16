@@ -1,0 +1,11 @@
+--- gas/configure.orig	Tue Dec 23 08:22:05 2014
++++ gas/configure	Sun Aug 16 12:48:46 2015
+@@ -12400,7 +12400,7 @@ $as_echo "#define NDS32_DEFAULT_AUDIO_EXT 1" >>confdef
+ $as_echo "$enable_audio_ext" >&6; }
+ 	;;
+ 
+-      i386 | s390 | sparc)
++      i386 | riscv | s390 | sparc)
+ 	if test $this_target = $target ; then
+ 
+ cat >>confdefs.h <<_ACEOF

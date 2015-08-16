@@ -1,0 +1,10 @@
+--- bfd/elf-bfd.h.orig	Tue Dec 23 02:47:10 2014
++++ bfd/elf-bfd.h	Sun Aug 16 12:48:46 2015
+@@ -433,6 +433,7 @@ enum elf_target_id
+   XGATE_ELF_DATA,
+   TILEGX_ELF_DATA,
+   TILEPRO_ELF_DATA,
++  RISCV_ELF_DATA,
+   GENERIC_ELF_DATA
+ };
+ 
