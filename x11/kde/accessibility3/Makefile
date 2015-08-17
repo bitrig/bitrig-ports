@@ -1,9 +1,11 @@
-# $OpenBSD: Makefile,v 1.55 2015/03/27 08:16:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.56 2015/08/17 20:04:16 sthen Exp $
 
 COMMENT-main = 		X11 toolkit, accessibility aids
 COMMENT-mono = 		one-colour KDE icon theme
 CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
+REVISION-mono =		0
+REVISION-main =		18
 DISTNAME =		kdeaccessibility-${VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-mono =		mono-icon-theme-${VERSION}
@@ -11,7 +13,6 @@ PKG_ARCH-mono =		*
 MODKDE_VERSION ?=	3.5.8
 SHARED_LIBS +=	KTTSD_Lib            1.0      # .0.1
 SHARED_LIBS +=	kttsd                2.0      # .1.0
-REVISION-mono =		0
 
 MULTI_PACKAGES =	-main -mono
 
@@ -42,7 +43,9 @@ WANTLIB +=	lib/kde3/ktexteditor lib/kde3/kutils lib/kde3/kwalletclient
 WANTLIB +=	lib/kde3/vcard m mad mcop mng ogg pcre png pthread
 WANTLIB +=	pthread-stubs qtmcop sndio soundserver_idl util
 WANTLIB +=	vorbis vorbisenc vorbisfile xcb z
+WANTLIB += 	X11-xcb Xau Xdmcp glapi xcb-dri2 xcb-glx
 WANTLIB +=	c++ c++abi
+
 WANTLIB-mono =
 
 post-install:

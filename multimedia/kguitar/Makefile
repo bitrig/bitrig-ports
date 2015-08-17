@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2015/03/27 08:13:02 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.14 2015/08/17 20:04:17 sthen Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -15,8 +15,8 @@ HOMEPAGE =		http://kguitar.sourceforge.net/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =  ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 c expat
-WANTLIB += fontconfig freetype idn jpeg m png pthread util
-WANTLIB += xcb z
+WANTLIB += fontconfig freetype idn m png pthread stdc++ util
+WANTLIB += xcb z fam pthread-stubs
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdeprint
 WANTLIB += ${KDE}/kdesu ${KDE}/kdeui ${KDE}/kio ${KDE}/kparts
 WANTLIB += ${KDE}/kwalletclient

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.115 2015/03/27 08:16:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.116 2015/08/17 20:04:16 sthen Exp $
 
 COMMENT-main =		K Desktop Environment, graphic applications
 COMMENT-kamera =	KDE interface to digital cameras
@@ -9,10 +9,10 @@ VERSION =		3.5.10
 DISTNAME =		kdegraphics-${VERSION}
 MODKDE_VERSION =	3.5.8
 
-REVISION-main =		25
-REVISION-kamera =	15
-REVISION-kpov =		14
-REVISION-sane =		18
+REVISION-main =		26
+REVISION-kamera =	16
+REVISION-kpov =		15
+REVISION-sane =		19
 
 SEPARATE_BUILD =	flavored
 MULTI_PACKAGES =	-main -kpov -kamera -sane
@@ -70,7 +70,7 @@ LIB_DEPENDS-sane =	${LIB_DEPENDS} \
 
 WANTLIB-main = 		${WANTLIB}
 WANTLIB-kpov =		${WANTLIB}
-WANTLIB-kamera =	${WANTLIB}
+WANTLIB-kamera =	${WANTLIB} fam pthread-stubs
 WANTLIB-sane =		${WANTLIB}
 
 WANTLIB-main +=	 GL Half ICE Iex IlmImf IlmThread Imath Imlib SM \
@@ -78,7 +78,8 @@ WANTLIB-main +=	 GL Half ICE Iex IlmImf IlmThread Imath Imlib SM \
 	Xxf86vm c drm expat fontconfig freetype fribidi lcms lib/kde3/kdeprint \
 	lib/kde3/khtml lib/kde3/kjs lib/kde3/kparts lib/kde3/kutils \
 	lib/kde3/kwalletclient mng openjpeg pcre pcreposix poppler \
-	poppler-qt tiff gif
+	poppler-qt pthread tiff gif X11-xcb Xau Xdmcp fam glapi lcms2 \
+	pthread-stubs xcb-dri2 xcb-glx
 
 WANTLIB-kpov += GL GLU Xdamage Xfixes Xi Xmu Xrender Xt Xxf86vm c \
 	drm freetype lib/kde3/kparts lib/kde3/kwalletclient \

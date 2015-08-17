@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.79 2015/03/27 08:16:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.80 2015/08/17 20:04:17 sthen Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -52,7 +52,9 @@ WANTLIB-main = ${WANTLIB} \
 	lib/kde3/knewstuff lib/kde3/kparts lib/kde3/kresources lib/kde3/kspell \
 	lib/kde3/ktexteditor lib/kde3/kutils lib/kde3/kwalletclient \
 	lib/kde3/vcard m meanwhile mng pcre pcreposix png pthread \
-	pthread-stubs ssl util xcb xml2 xmms xslt z
+	pthread-stubs ssl util xcb xml2 xmms xslt z \
+	X11-xcb avahi-client avahi-common dbus-1 dns_sd glapi \
+	lzma xcb-dri2 xcb-glx
 WANTLIB-main += c++ c++abi
 
 CONFIGURE_ARGS =	--disable-jingle \

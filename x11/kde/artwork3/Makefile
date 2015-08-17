@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.74 2015/03/27 08:16:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.75 2015/08/17 20:04:16 sthen Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -34,14 +34,14 @@ CONFIGURE_ENV +=	XSCREENSAVER=${LOCALBASE}/libexec/xscreensaver
 WANTLIB-emoticons =
 WANTLIB =	FLAC GL GLU ICE SM X11 Xdamage Xext Xfixes Xrender Xt
 WANTLIB +=	Xxf86vm art_lgpl_2 artsflow artsflow_idl artskde audiofile c
-WANTLIB +=	drm expat fam fontconfig freetype glib-2.0 gmodule-2.0 
+WANTLIB +=	drm expat fam fontconfig freetype glib-2.0 gmodule-2.0
 WANTLIB +=	gthread-2.0 idn kmedia2_idl kwalletclient lib/kde3/DCOP
 WANTLIB +=	lib/kde3/kdecorations lib/kde3/kdecore>=6 lib/kde3/kdefx
 WANTLIB +=	lib/kde3/kdesu lib/kde3/kdeui lib/kde3/kio lib/kde3/kparts
 WANTLIB +=	lib/kde3/kscreensaver m mad mcop ogg pcre png pthread
 WANTLIB +=	pthread-stubs qtmcop sndio soundserver_idl
 WANTLIB +=	util vorbis vorbisenc vorbisfile xcb z
+WANTLIB +=	X11-xcb Xau Xdmcp glapi xcb-dri2 xcb-glx
 WANTLIB +=	c++ c++abi
-
 
 .include <bsd.port.mk>
