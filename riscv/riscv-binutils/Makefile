@@ -23,14 +23,12 @@ BUILD_DEPENDS+=	devel/gettext
 
 #FLAVORS= riscvcross
 
-TARGET_ARCH=riscv
+TARGET_ARCH=	riscv
 CONFIGURE_ARGS+=--target=${TARGET_ARCH}-unknown-bitrig${OSREV}
-AARCH64=1
-
-PKG_ARGS+=-Driscv=1
 
 CONFIGURE_ARGS+=--enable-commonbfdlib=no
-CONFIGURE_ARGS+=--enable-nls=no
+CONFIGURE_ARGS+=--disable-nls
+CONFIGURE_ARGS+=--disable-multilib
 
 MASTER_SITES =	${MASTER_SITE_GNU:=binutils/}
 
@@ -40,7 +38,7 @@ USE_LIBTOOL=	Yes
 USE_GROFF=	Yes
 LIBTOOL_FLAGS=  --tag=disable-shared
 
-CONFIGURE_STYLE=GNU
+CONFIGURE_STYLE=gnu
 
 SUBST_VARS +=	OSREV
 USE_GMAKE=	yes

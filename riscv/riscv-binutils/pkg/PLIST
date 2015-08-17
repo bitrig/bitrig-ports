@@ -1,0 +1,79 @@
+bin/riscv-unknown-bitrig${OSREV}-addr2line
+bin/riscv-unknown-bitrig${OSREV}-ar
+bin/riscv-unknown-bitrig${OSREV}-as
+bin/riscv-unknown-bitrig${OSREV}-c++filt
+bin/riscv-unknown-bitrig${OSREV}-elfedit
+bin/riscv-unknown-bitrig${OSREV}-gprof
+bin/riscv-unknown-bitrig${OSREV}-ld
+bin/riscv-unknown-bitrig${OSREV}-ld.bfd
+bin/riscv-unknown-bitrig${OSREV}-nm
+bin/riscv-unknown-bitrig${OSREV}-objcopy
+bin/riscv-unknown-bitrig${OSREV}-objdump
+bin/riscv-unknown-bitrig${OSREV}-ranlib
+bin/riscv-unknown-bitrig${OSREV}-readelf
+bin/riscv-unknown-bitrig${OSREV}-size
+bin/riscv-unknown-bitrig${OSREV}-strings
+bin/riscv-unknown-bitrig${OSREV}-strip
+@info info/as.info
+@info info/bfd.info
+@info info/binutils.info
+@info info/gprof.info
+@info info/ld.info
+@man man/man1/riscv-unknown-bitrig${OSREV}-addr2line.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-ar.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-as.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-c++filt.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-dlltool.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-elfedit.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-gprof.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-ld.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-nlmconv.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-nm.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-objcopy.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-objdump.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-ranlib.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-readelf.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-size.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-strings.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-strip.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-windmc.1
+@man man/man1/riscv-unknown-bitrig${OSREV}-windres.1
+riscv-unknown-bitrig${OSREV}/
+riscv-unknown-bitrig${OSREV}/bin/
+riscv-unknown-bitrig${OSREV}/bin/ar
+riscv-unknown-bitrig${OSREV}/bin/as
+riscv-unknown-bitrig${OSREV}/bin/ld
+riscv-unknown-bitrig${OSREV}/bin/ld.bfd
+riscv-unknown-bitrig${OSREV}/bin/nm
+riscv-unknown-bitrig${OSREV}/bin/objcopy
+riscv-unknown-bitrig${OSREV}/bin/objdump
+riscv-unknown-bitrig${OSREV}/bin/ranlib
+riscv-unknown-bitrig${OSREV}/bin/strip
+riscv-unknown-bitrig${OSREV}/lib/
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.x
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xbn
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xc
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xd
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xdc
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xdw
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xn
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xr
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xs
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xsc
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xsw
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xu
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf32lriscv.xw
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.x
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xbn
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xc
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xd
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xdc
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xdw
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xn
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xr
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xs
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xsc
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xsw
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xu
+riscv-unknown-bitrig${OSREV}/lib/ldscripts/elf64lriscv.xw
