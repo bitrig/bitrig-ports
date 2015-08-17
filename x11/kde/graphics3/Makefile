@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.116 2015/08/17 20:04:16 sthen Exp $
+# $OpenBSD: Makefile,v 1.117 2015/08/17 20:34:20 sthen Exp $
 
 COMMENT-main =		K Desktop Environment, graphic applications
 COMMENT-kamera =	KDE interface to digital cameras
@@ -69,9 +69,11 @@ LIB_DEPENDS-sane =	${LIB_DEPENDS} \
 			graphics/sane-backends
 
 WANTLIB-main = 		${WANTLIB}
-WANTLIB-kpov =		${WANTLIB}
+WANTLIB-kpov =		${WANTLIB} X11-xcb Xau Xdmcp fam glapi pthread-stubs \
+			xcb-dri2 xcb-glx
 WANTLIB-kamera =	${WANTLIB} fam pthread-stubs
-WANTLIB-sane =		${WANTLIB}
+WANTLIB-sane =		${WANTLIB} avahi-common cups dbus-1 fam ffi gmp \
+			hogweed nettle p11-kit pthread-stubs tasn1
 
 WANTLIB-main +=	 GL Half ICE Iex IlmImf IlmThread Imath Imlib SM \
 	Xcursor Xdamage Xext Xfixes Xft Xi Xinerama Xmu Xrandr Xrender Xt \

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.31 2015/05/05 17:00:17 sthen Exp $
+# $OpenBSD: Makefile,v 1.32 2015/08/17 20:34:21 sthen Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -39,7 +39,7 @@ WANTLIB += ${MODQT3_WANTLIB}
 WANTLIB += GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama Xmu
 WANTLIB += Xrandr Xrender Xt Xxf86vm art_lgpl_2 drm exif expat
 WANTLIB += fontconfig freetype idn jpeg lcms m mng png util xcb
-WANTLIB += xcb-glx z
+WANTLIB += xcb-glx z X11-xcb Xau Xdmcp glapi pthread pthread-stubs xcb-dri2
 WANTLIB += c++ c++abi pthread
 
 .include <bsd.port.mk>
