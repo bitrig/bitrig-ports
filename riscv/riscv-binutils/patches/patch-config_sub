@@ -1,0 +1,13 @@
+--- config.sub.orig	Tue Aug 18 10:24:39 2015
++++ config.sub	Tue Aug 18 10:25:04 2015
+@@ -336,6 +336,10 @@ case $basic_machine in
+ 		basic_machine=mt-unknown
+ 		;;
+ 
++	riscv)
++		basic_machine=riscv-ucb
++		;;
++
+ 	strongarm | thumb | xscale)
+ 		basic_machine=arm-unknown
+ 		;;
