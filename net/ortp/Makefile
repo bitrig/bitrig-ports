@@ -1,7 +1,8 @@
-# $OpenBSD: Makefile,v 1.7 2015/08/13 19:52:04 zhuk Exp $
+# $OpenBSD: Makefile,v 1.8 2015/08/19 20:34:33 sthen Exp $
 
 COMMENT =		RTP (RFC3550) library
 DISTNAME =		ortp-0.24.2
+REVISION =		0
 
 SHARED_LIBS +=	ortp                 2.0      # 9.0
 
@@ -11,7 +12,7 @@ HOMEPAGE =		http://www.linphone.org/eng/documentation/dev/ortp.html
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		crypto m pthread
+WANTLIB =		crypto m pthread ssl
 
 MASTER_SITES =		http://download.savannah.nongnu.org/releases/linphone/ortp/sources/
 
