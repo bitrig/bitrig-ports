@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/03/11 11:46:15 espie Exp $
+# $OpenBSD: Makefile,v 1.16 2015/08/19 20:14:00 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -14,7 +14,7 @@ HOMEPAGE=	http://pypanel.sourceforge.net/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	X11 Xext Xft freetype m z Imlib2
+WANTLIB=	Xft freetype z Imlib2 pthread ${MODPY_WANTLIB}
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pypanel/}
 

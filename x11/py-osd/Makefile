@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2013/03/11 11:46:15 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2015/08/19 20:13:59 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -14,7 +14,7 @@ HOMEPAGE=	http://ichi2.net/pyosd/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	xosd
+WANTLIB=	xosd pthread ${MODPY_WANTLIB}
 
 MASTER_SITES=	${HOMEPAGE}
 

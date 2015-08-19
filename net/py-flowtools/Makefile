@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/08/07 21:32:24 naddy Exp $
+# $OpenBSD: Makefile,v 1.16 2015/08/19 20:13:59 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -13,7 +13,7 @@ CATEGORIES=	net
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB+=	z ft
+WANTLIB+=	z ft ${MODPY_WANTLIB} pthread
 
 HOMEPAGE=	https://code.google.com/p/pyflowtools/
 MASTER_SITES=	https://pyflowtools.googlecode.com/files/

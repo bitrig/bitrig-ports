@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/03/11 11:37:54 espie Exp $
+# $OpenBSD: Makefile,v 1.15 2015/08/19 20:13:59 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -12,7 +12,8 @@ PKGNAME=	py-reportlab-renderPM-${VERSION}
 REVISION =	8
 
 MASTER_SITES=	http://www.reportlab.org/ftp/
-WANTLIB =	art_lgpl_2>=5
+
+WANTLIB =	art_lgpl_2>=5 ${MODPY_WANTLIB} pthread
 
 LIB_DEPENDS=	graphics/libart
 

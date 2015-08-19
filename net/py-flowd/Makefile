@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/03/11 11:35:55 espie Exp $
+# $OpenBSD: Makefile,v 1.16 2015/08/19 20:13:59 sthen Exp $
 
 SHARED_ONLY=		Yes
 
@@ -14,6 +14,8 @@ HOMEPAGE=		http://www.mindrot.org/flowd.html
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
+
+WANTLIB += ${MODPY_WANTLIB} pthread
 
 MASTER_SITES=		http://www2.mindrot.org/files/flowd/
 
