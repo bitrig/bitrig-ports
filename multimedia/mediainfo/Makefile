@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.3 2015/07/24 23:07:18 naddy Exp $
+# $OpenBSD: Makefile,v 1.4 2015/08/19 17:40:57 naddy Exp $
 
 BROKEN= 	needs work on bitrig
 
 COMMENT=	display technical and tag data for video and audio files
 
-VERSION=	0.7.75
+VERSION=	0.7.76
 PKGNAME=	mediainfo-${VERSION}
 CATEGORIES=	multimedia
 HOMEPAGE=	http://mediainfo.sourceforge.net/
