@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2013/03/21 08:45:13 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.24 2015/08/19 18:55:05 sthen Exp $
 
 COMMENT=	audio file volume normalizer
 
@@ -10,15 +10,14 @@ MASTER_SITES=	${MASTER_SITE_SAVANNAH:=normalize/}
 
 HOMEPAGE=	http://normalize.nongnu.org/
 
-# GPL license
+# GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=	devel/gettext
 
-WANTLIB=	c m mad>=2 audiofile
+WANTLIB=	c m mad>=2 audiofile FLAC ogg
 
-CONFIGURE_STYLE=gnu
-USE_GROFF =	Yes
+CONFIGURE_STYLE= gnu
 
 # Do not build xmms plugin for now.
 CONFIGURE_ARGS=	--disable-xmms \
