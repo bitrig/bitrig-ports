@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/08/19 20:13:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.16 2015/08/20 12:36:14 ajacoutot Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -9,7 +9,7 @@ COMMENT=	pixmap rendering for reportlab
 VERSION=	0.9
 DISTNAME=	renderPM-${VERSION:S/./-/}
 PKGNAME=	py-reportlab-renderPM-${VERSION}
-REVISION =	8
+REVISION=	8
 
 MASTER_SITES=	http://www.reportlab.org/ftp/
 
