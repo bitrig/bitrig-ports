@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.18 2015/03/20 22:47:42 naddy Exp $
+#	$OpenBSD: Makefile,v 1.19 2015/08/21 19:43:27 sthen Exp $
 
 COMMENT = 	incremental backup
 
