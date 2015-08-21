@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2015/03/26 12:14:15 sthen Exp $
+# $OpenBSD: Makefile,v 1.24 2015/08/21 21:18:15 sthen Exp $
 
 COMMENT=		powerful descriptive vector graphics language
 BROKEN-hppa=		ghostscript segfaults during build
@@ -6,7 +6,7 @@ BROKEN-hppa=		ghostscript segfaults during build
 DISTNAME=		asymptote-2.24.src
 PKGNAME=		asymptote-2.24
 CATEGORIES=		graphics
-REVISION =		4
+REVISION=		5
 
 HOMEPAGE=		http://asymptote.sourceforge.net/
 
@@ -18,8 +18,8 @@ EXTRACT_SUFX=		.tgz
 
 MODULES=		lang/python
 
-WANTLIB += GL GLU c fftw3 gc glut gsl gslcblas m ncurses pthread
-WANTLIB += readline sigsegv X11 z
+WANTLIB += GL GLU OSMesa c fftw3 gc glut gsl gslcblas m ncurses pthread
+WANTLIB += readline sigsegv z
 WANTLIB += c++ c++abi
 
 BUILD_DEPENDS=		print/texlive/base
