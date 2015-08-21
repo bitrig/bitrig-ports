@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.30 2013/10/15 13:36:35 naddy Exp $
+# $OpenBSD: Makefile,v 1.31 2015/08/21 19:17:10 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -18,7 +18,7 @@ MASTER_SITES=	${HOMEPAGE}/src/
 
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += ICE SM X11 Xext c jpeg m pthread-stubs xcb z tiff png
+WANTLIB += ICE SM X11 Xext c jpeg m util z tiff
 WANTLIB += c++ c++abi pthread
 
 LIB_DEPENDS=	graphics/tiff \

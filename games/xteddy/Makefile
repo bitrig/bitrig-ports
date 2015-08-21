@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2015/01/22 17:47:51 naddy Exp $
+# $OpenBSD: Makefile,v 1.28 2015/08/21 19:17:10 sthen Exp $
 
 COMMENT=	cuddlesome teddy for the X11 desktop
 
@@ -12,7 +12,7 @@ MASTER_SITES=	${HOMEPAGE}
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += X11 Xext c Imlib2
+WANTLIB += X11 Xext c Imlib2 freetype m z
 
 LIB_DEPENDS=	graphics/imlib2
 
