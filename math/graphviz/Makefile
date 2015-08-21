@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.60 2015/06/10 21:42:26 sthen Exp $
+# $OpenBSD: Makefile,v 1.61 2015/08/21 16:06:06 jasper Exp $
 
 BROKEN=		needs work on bitrig
 
 COMMENT-main=	graph drawing software
 
 DISTNAME=	graphviz-2.36.0
-REVISION=	3
+REVISION=	4
 PKGNAME-main=	${DISTNAME}
 CATEGORIES=	math devel graphics
 
