@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.114 2015/05/22 11:31:20 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.115 2015/08/24 10:01:10 sthen Exp $
 
 # no libGL (toolchain issue)
 NOT_FOR_ARCHS= m88k
@@ -19,12 +19,12 @@ FULLPKGNAME-html=	qt3-html-${VERSION}
 FULLPKGPATH-html=	x11/qt3,-html
 PKGNAME-sqlite2=	qt3-sqlite2-${VERSION}
 
-REVISION-mysql= 	11
-REVISION-postgresql= 	9
-REVISION-main= 		12
-REVISION-html= 		5
-REVISION-examples=	6
-REVISION-sqlite2= 	9
+REVISION-mysql= 	12
+REVISION-postgresql= 	10
+REVISION-main= 		13
+REVISION-html= 		6
+REVISION-examples=	7
+REVISION-sqlite2= 	10
 
 # the qt-mt library version number is used in a directory name.
 # when bumping, be sure to also bump MODQT3_PLUGINS in qt3.port.mk
@@ -149,8 +149,9 @@ LIB_DEPENDS=		graphics/png \
 			graphics/libmng
 WANTLIB=		GL GLU ICE SM X11>=10 Xcursor Xext Xft Xi Xinerama \
 			Xmu png mng \
-			Xrandr Xrender fontconfig freetype jpeg lcms m z
-WANTLIB +=		c++ c++abi pthread
+			Xrandr Xrender fontconfig freetype jpeg lcms m \
+			z pthread
+WANTLIB +=		c++ c++abi
 
 
 WANTLIB-main=		${WANTLIB} c
@@ -173,6 +174,7 @@ WANTLIB-sqlite2=	${WANTLIB} qt-mt sqlite
 
 LIB_DEPENDS-examples=	${LIB_DEPENDS} \
 			${BUILD_PKGPATH}
+
 WANTLIB-examples=	${WANTLIB} c qt-mt
 
 

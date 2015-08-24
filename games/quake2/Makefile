@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2013/03/21 08:45:17 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.26 2015/08/24 10:01:10 sthen Exp $
 
 BROKEN=			needs work on bitrig
 
@@ -16,9 +16,10 @@ HOMEPAGE=		http://www.quakeforge.net/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		ICE GL SM X11 Xau Xdmcp Xext Xrandr Xrender Xxf86dga \
+WANTLIB=		ICE GL SM X11 Xau Xdmcp Xext Xxf86dga \
 			Xxf86vm c m pthread pthread-stubs sndio usbhid xcb \
-			SDL
+			SDL X11-xcb Xdamage Xfixes drm glapi stdc++ \
+			xcb-dri2 xcb-glx
 
 MASTER_SITES=		http://distfiles.nl/
 
