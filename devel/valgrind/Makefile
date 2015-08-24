@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/08/24 03:34:43 uebayasi Exp $
+# $OpenBSD: Makefile,v 1.12 2015/08/24 06:40:05 jasper Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -8,7 +8,7 @@ COMMENT =		instrumentation framework for dynamic analysis tools
 CATEGORIES =		devel
 
 V =			3.10.1
-REVISION =		7
+REVISION =		8
 DISTNAME =		valgrind-${V}
 EXTRACT_SUFX =		.tar.bz2
 
