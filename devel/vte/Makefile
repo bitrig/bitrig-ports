@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.116 2014/09/05 14:45:02 jasper Exp $
+# $OpenBSD: Makefile,v 1.117 2015/08/24 09:35:23 ajacoutot Exp $
 
 PORTROACH +=		limit:^0\.2
 
@@ -59,9 +59,6 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		--with-gtk=2.0 \
 			--enable-python \
 			--program-suffix=2
-
-# error: -Bsymbolic requested but not supported by ld
-CONFIGURE_ARGS +=	--disable-Bsymbolic
 
 post-install:
 	rm ${PREFIX}/lib/python${MODPY_VERSION}/site-packages/gtk-2.0/*.{a,la}
