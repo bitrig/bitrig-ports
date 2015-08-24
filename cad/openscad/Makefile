@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/01/09 00:37:45 sthen Exp $
+# $OpenBSD: Makefile,v 1.8 2015/08/24 23:31:04 bentley Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -23,7 +23,7 @@ WANTLIB += boost_program_options-mt boost_regex-mt boost_system-mt
 WANTLIB += boost_thread-mt fontconfig freetype gmp mpfr opencsg
 WANTLIB += c++ c++abi
 
-MASTER_SITES =		https://openscad.googlecode.com/files/
+MASTER_SITES =		http://files.openscad.org/
 DISTFILES =		openscad-${V}.src.tar.gz
 
 MODULES =		x11/qt4
