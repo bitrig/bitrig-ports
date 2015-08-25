@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1377 2015/08/21 23:47:18 bcallah Exp $
+# $OpenBSD: Makefile,v 1.1378 2015/08/25 06:41:10 ajacoutot Exp $
 
      SUBDIR =
      SUBDIR += ElectricFence
@@ -367,6 +367,7 @@
      SUBDIR += libidn
      SUBDIR += libinotify
      SUBDIR += libio
+     SUBDIR += libiscsi
      SUBDIR += libivykis
      SUBDIR += libixp
      SUBDIR += liblouis
@@ -374,6 +375,7 @@
      SUBDIR += libmemcached
      SUBDIR += libmpc
      SUBDIR += libmtp
+     SUBDIR += libnfs
      SUBDIR += libnotify
      SUBDIR += libofx
      SUBDIR += liboil
