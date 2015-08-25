@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.35 2015/01/08 18:59:03 jeremy Exp $
+# $OpenBSD: Makefile,v 1.36 2015/08/25 12:57:33 sthen Exp $
 
 SHARED_ONLY=		Yes
 
@@ -40,7 +40,7 @@ BIN_SUFFIX =
 .endif
 SUBST_VARS +=		BIN_SUFFIX
 
-WANTLIB=		c m pthread estraier ${MODRUBY_WANTLIB}
+WANTLIB=		c gmp m pthread estraier ${MODRUBY_WANTLIB}
 MODULES=		lang/ruby
 
 LIB_DEPENDS=		${MODRUBY_LIB_DEPENDS} \
