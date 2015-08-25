@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2015/03/27 08:43:01 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.15 2015/08/25 11:16:12 sthen Exp $
 
 BROKEN = 		needs work on bitrig.
 
@@ -25,7 +25,7 @@ WANTLIB += gobject-2.0 gthread-2.0 gtk-x11-2.0 gtkmm-2.4 harfbuzz
 WANTLIB += jack lo lrdf m pango-1.0 pangocairo-1.0 pangoft2-1.0
 WANTLIB += pangomm-1.4 pcre pixman-1 png pthread pthread-stubs
 WANTLIB += samplerate sigc-2.0 sndfile sndio xcb xcb-render
-WANTLIB += xcb-shm xml2 xslt z expat
+WANTLIB += xcb-shm xml2 xslt z expat graphite2
 WANTLIB += c++ c++abi
 
 # Use mirrors as official site has click-through donation-request download.
