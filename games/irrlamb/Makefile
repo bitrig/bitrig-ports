@@ -1,13 +1,12 @@
-# $OpenBSD: Makefile,v 1.2 2014/11/30 05:41:34 brad Exp $
+# $OpenBSD: Makefile,v 1.3 2015/08/25 05:12:44 bentley Exp $
 
 V =		0.1.1
 COMMENT =	third person, 3D physics game
-DISTNAME =	irrlamb-${V}-src
-PKGNAME =	irrlamb-${V}
+DISTNAME =	irrlamb-$V-src
+PKGNAME =	irrlamb-$V
+REVISION =	1
 CATEGORIES =	games x11
 REVISION =	1
-
-HOMEPAGE =	https://code.google.com/p/irrlamb/
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =		Yes
@@ -16,7 +15,9 @@ WANTLIB += BulletCollision BulletDynamics BulletSoftBody Irrlicht
 WANTLIB += LinearMath c m openal pthread
 WANTLIB += c++ c++abi
 
-MASTER_SITES =	https://irrlamb.googlecode.com/files/
+GH_ACCOUNT =	jazztickets
+GH_PROJECT =	irrlamb
+GH_TAGNAME =	v$V
 
 MODULES =	devel/cmake
 
@@ -31,8 +32,8 @@ post-extract:
 	perl -pi -e 'tr/\r//d' ${WRKSRC}/src/stb_vorbis/stb_vorbis.c
 
 post-patch:
-	perl -pi -e "s,games/,,g" ${WRKSRC}/CMakeLists.txt \
+	sed -i -e "s,games/,,g" ${WRKSRC}/CMakeLists.txt \
 				  ${WRKSRC}/deployment/irrlamb
-	perl -pi -e "s,games,bin,g" ${WRKSRC}/CMakeLists.txt
+	sed -i -e "s,games,bin,g" ${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>
