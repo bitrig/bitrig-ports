@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.53 2015/08/12 22:27:32 sthen Exp $
+# $OpenBSD: Makefile,v 1.54 2015/08/25 07:30:29 ajacoutot Exp $
 
 COMMENT-main =	anti-spam filter
 COMMENT-pgsql =	PostgreSQL driver for dspam
@@ -13,9 +13,9 @@ PKGNAME-$p =	dspam-$p-${VERSION}
 FULLPKGNAME-$p = dspam-$p-${VERSION}
 FULLPKGPATH-$p = ${PKGPATH},-$p
 .endfor
-REVISION =		4
-REVISION-mysql =	5
-REVISION-main =		2
+REVISION =		5
+REVISION-mysql =	6
+REVISION-main =		3
 
 SHARED_LIBS =	dspam	9.0
 CATEGORIES =	mail
