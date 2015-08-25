@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2015/07/08 06:20:36 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.13 2015/08/25 00:45:54 bentley Exp $
 
 COMMENT=	portable ASS/SSA subtitle renderer
 
@@ -11,7 +11,7 @@ EXTRACT_SUFX=	.tar.xz
 
 SHARED_LIBS=	ass	1.3
 
-HOMEPAGE=	https://code.google.com/p/libass/
+HOMEPAGE=	https://github.com/libass/libass
 
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes
