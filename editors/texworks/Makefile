@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2015/06/05 12:20:39 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.25 2015/08/25 14:03:21 sthen Exp $
 
 COMMENT-main =		easy to use LaTeX and ConTeXt editor
 COMMENT-python =	Python scripting for TeXworks
@@ -12,9 +12,9 @@ PKGNAME-main =		texworks-${V}
 PKGNAME-lua =		texworks-lua-${V}
 PKGNAME-python =	texworks-python-${V}
 
-REVISION-main =		4
-REVISION-lua =		4
-REVISION-python =	2
+REVISION-main =		5
+REVISION-lua =		5
+REVISION-python =	3
 
 WRKDIST =		${WRKDIR}/texworks-${V}
 
@@ -38,13 +38,13 @@ WANTLIB += c++ c++abi
 
 WANTLIB-lua =	${MODLUA_WANTLIB}
 WANTLIB-lua +=	ICE QtCore QtGui QtXml SM X11 Xext Xi Xinerama Xrender
-WANTLIB-lua +=	fontconfig freetype m
-WANTLIB-lua +=	c++ c++abi pthread
+WANTLIB-lua +=	fontconfig freetype m pthread
+WANTLIB-lua +=	c++ c++abi
 
 WANTLIB-python =  ${MODPY_WANTLIB}
 WANTLIB-python += ICE QtCore QtGui QtXml SM X11 Xext Xi Xinerama Xrender
-WANTLIB-python += fontconfig freetype m
-WANTLIB-lua +=	c++ c++abi pthread
+WANTLIB-python += fontconfig freetype m pthread
+WANTLIB-PYTHON += c++ c++abi
 
 MULTI_PACKAGES =	-main -lua -python
 

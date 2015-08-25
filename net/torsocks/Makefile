@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.5 2015/03/16 18:07:53 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2015/08/25 14:03:21 sthen Exp $
 
 COMMENT =		socks proxy for use with tor
 
 DISTNAME =		torsocks-1.2
-REVISION =		1
+REVISION =		2
 
 SHARED_LIBS =		torsocks	0.0 # 1.0
 
@@ -13,6 +13,8 @@ HOMEPAGE =		https://code.google.com/p/torsocks
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
+
+WANTLIB += pthread
 
 MASTER_SITES =		https://torsocks.googlecode.com/files/
 
