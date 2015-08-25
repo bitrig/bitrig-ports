@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.132 2015/07/07 14:49:50 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.133 2015/08/25 11:04:39 jca Exp $
 
 COMMENT-main =		K Desktop Environment, basic applications
 COMMENT-samba =		K Desktop Environment, samba support
@@ -14,9 +14,9 @@ PKGNAME-locale =	kde3-locale-${VERSION}
 PKG_ARCH-en_US =	*
 PKG_ARCH-locale =	*
 REVISION-main =		39
-REVISION-samba =	17
-REVISION-en_US =	1
-REVISION-locale =	1
+REVISION-samba =	18
+REVISION-en_US =	2
+REVISION-locale =	2
 
 MODKDE_VERSION =	3.5.8
 
@@ -62,7 +62,7 @@ LIB_DEPENDS-main =	${LIB_DEPENDS} \
 			devel/glib2
 LIB_DEPENDS-samba =	${LIB_DEPENDS} \
 			x11/kde/libs3 \
-			net/samba>=3
+			net/samba
 
 WANTLIB =  crypto expat m pthread pthread-stubs ssl util z
 WANTLIB += ICE SM X11 Xext Xfixes Xrender Xt freetype fontconfig xcb
@@ -89,11 +89,15 @@ WANTLIB-main += glib-2.0 gmodule-2.0 gthread-2.0 jpeg lcms mad mcop mng
 WANTLIB-main += ogg pcre pcreposix qtmcop usb usb-1.0 vorbis vorbisenc
 WANTLIB-main += vorbisfile
 
-WANTLIB-samba =  ${WANTLIB} execinfo
-WANTLIB-samba += lib/samba/smbclient talloc tdb lib/samba/wbclient
+WANTLIB-samba =  ${WANTLIB}
+WANTLIB-samba += execinfo ndr ndr-standard nss_wrapper replace samba-hostconfig
+WANTLIB-samba += samba-util smbclient smbconf socket_wrapper talloc tdb tevent
+WANTLIB-samba += tevent-util uid_wrapper util_setid
 
 WANTLIB-en_US =
 WANTLIB-locale =
+
+CONFIGURE_ENV +=	CPPFLAGS="`pkg-config --cflags smbclient`"
 
 SEPARATE_BUILD =	flavored
 SUBST_VARS =		PREFIX
