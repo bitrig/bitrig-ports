@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2015/05/26 10:40:31 stsp Exp $
+# $OpenBSD: Makefile,v 1.20 2015/08/26 14:16:37 sthen Exp $
 
      SUBDIR =
      SUBDIR += adobe-source-code-pro
@@ -68,6 +68,7 @@
      SUBDIR += mb-underground
      SUBDIR += mftrace
      SUBDIR += mondulkiri
+     SUBDIR += msctfonts
      SUBDIR += msttcorefonts
      SUBDIR += noto-kufi-arabic
      SUBDIR += noto-naskh-arabic
