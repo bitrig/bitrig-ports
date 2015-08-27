@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2011/07/21 01:35:51 edd Exp $
+# $OpenBSD: Makefile,v 1.2 2015/08/27 13:42:09 jca Exp $
 
 COMMENT =		Vala bindings for Radare2
 
