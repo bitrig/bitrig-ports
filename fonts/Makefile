@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/08/26 14:16:37 sthen Exp $
+# $OpenBSD: Makefile,v 1.21 2015/08/28 17:59:33 jca Exp $
 
      SUBDIR =
      SUBDIR += adobe-source-code-pro
