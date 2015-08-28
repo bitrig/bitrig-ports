@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.31 2013/10/11 21:20:55 naddy Exp $
+# $OpenBSD: Makefile,v 1.32 2015/08/28 14:22:14 naddy Exp $
 
 COMMENT=	Athena port of xminesweeper
 

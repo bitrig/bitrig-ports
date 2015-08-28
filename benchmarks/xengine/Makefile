@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.35 2015/01/22 17:47:50 naddy Exp $
+# $OpenBSD: Makefile,v 1.36 2015/08/28 14:22:14 naddy Exp $
 
 COMMENT=	reciprocating engine for X11
 PKGNAME=	xengine-1.0.1
