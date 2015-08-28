@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2014/04/21 22:22:51 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.34 2015/08/28 16:28:15 jca Exp $
 
 COMMENT=		OpenCM change management system
 
