@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.133 2015/08/25 11:04:39 jca Exp $
+# $OpenBSD: Makefile,v 1.134 2015/08/29 15:39:55 zhuk Exp $
 
 COMMENT-main =		K Desktop Environment, basic applications
 COMMENT-samba =		K Desktop Environment, samba support
@@ -13,8 +13,9 @@ PKGNAME-en_US =		kde3-locale-en_US-${VERSION}
 PKGNAME-locale =	kde3-locale-${VERSION}
 PKG_ARCH-en_US =	*
 PKG_ARCH-locale =	*
-REVISION-main =		39
-REVISION-samba =	18
+REVISION-main =		40
+REVISION-samba =	19
+>>>>>>> 98807aa... Follow SSLv3 removal: the SSLv2_client_method() was already changed to
 REVISION-en_US =	2
 REVISION-locale =	2
 
