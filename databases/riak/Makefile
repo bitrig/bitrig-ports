@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2015/07/18 01:23:17 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.25 2015/08/29 12:41:45 sthen Exp $
 
 BROKEN= 			needs work on bitrig
 
@@ -122,7 +122,7 @@ versions:
 .endfor
 
 # Overwrite local copy of rebar
-post-extract:
+pre-patch:
 	cp ${LOCALBASE}/bin/rebar16 ${WRKSRC}/rebar
 
 pre-configure:
