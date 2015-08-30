@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2015/05/23 16:34:40 czarkoff Exp $
+# $OpenBSD: Makefile,v 1.10 2015/08/30 16:18:48 avsm Exp $
 
 BROKEN =	loops forever and dpb makes no progress
 COMMENT =	unicode library for objective caml
@@ -12,6 +12,7 @@ GH_TAGNAME =	rel-${V}
 DISTNAME =	camomile-${V}
 WRKSRC =	${WRKDIST}/Camomile
 PKGNAME =	ocaml-${DISTNAME}
+REVISION =      1
 
 # LGPL >= 2
 PERMIT_PACKAGE_CDROM =		Yes
