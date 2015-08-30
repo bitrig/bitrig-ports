@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2014/08/22 22:21:53 kili Exp $
+# $OpenBSD: Makefile,v 1.16 2015/08/30 16:24:09 avsm Exp $
 
 COMMENT=	build system designed for scalability and portability
 CATEGORIES=	devel
