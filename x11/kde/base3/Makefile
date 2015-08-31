@@ -15,7 +15,6 @@ PKG_ARCH-en_US =	*
 PKG_ARCH-locale =	*
 REVISION-main =		40
 REVISION-samba =	19
->>>>>>> 98807aa... Follow SSLv3 removal: the SSLv2_client_method() was already changed to
 REVISION-en_US =	2
 REVISION-locale =	2
 
