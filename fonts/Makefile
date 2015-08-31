@@ -6,6 +6,7 @@
      SUBDIR += abyssinica
      SUBDIR += alegreya-otf
      SUBDIR += alegreya-ttf
+     SUDDIR += andika
      SUBDIR += anonymous-pro
      SUBDIR += arabeyes-ttf
      SUBDIR += artwiz-aleczapka
