@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-thaana/
+share/doc/noto-sans-thaana/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-thaana/
+share/fonts/noto-sans-thaana/NotoSansThaana-Bold.ttf
+share/fonts/noto-sans-thaana/NotoSansThaana-Regular.ttf

@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-ethiopic/
+share/doc/noto-sans-ethiopic/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-ethiopic/
+share/fonts/noto-sans-ethiopic/NotoSansEthiopic-Bold.ttf
+share/fonts/noto-sans-ethiopic/NotoSansEthiopic-Regular.ttf

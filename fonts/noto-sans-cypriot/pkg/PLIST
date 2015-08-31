@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-cypriot/
+share/doc/noto-sans-cypriot/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-cypriot/
+share/fonts/noto-sans-cypriot/NotoSansCypriot-Regular.ttf

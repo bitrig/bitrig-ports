@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-gujarati/
+share/doc/noto-sans-gujarati/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-gujarati/
+share/fonts/noto-sans-gujarati/NotoSansGujarati-Bold.ttf
+share/fonts/noto-sans-gujarati/NotoSansGujarati-Regular.ttf

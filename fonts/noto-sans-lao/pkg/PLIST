@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-lao/
+share/doc/noto-sans-lao/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-lao/
+share/fonts/noto-sans-lao/NotoSansLao-Bold.ttf
+share/fonts/noto-sans-lao/NotoSansLao-Regular.ttf

@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-bengali/
+share/doc/noto-sans-bengali/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-bengali/
+share/fonts/noto-sans-bengali/NotoSansBengali-Bold.ttf
+share/fonts/noto-sans-bengali/NotoSansBengali-Regular.ttf

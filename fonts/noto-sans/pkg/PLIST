@@ -1,0 +1,9 @@
+@comment $OpenBSD$
+share/doc/noto-sans/
+share/doc/noto-sans/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans/
+share/fonts/noto-sans/NotoSans-Bold.ttf
+share/fonts/noto-sans/NotoSans-BoldItalic.ttf
+share/fonts/noto-sans/NotoSans-Italic.ttf
+share/fonts/noto-sans/NotoSans-Regular.ttf

@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-devanagari/
+share/doc/noto-sans-devanagari/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-devanagari/
+share/fonts/noto-sans-devanagari/NotoSansDevanagari-Bold.ttf
+share/fonts/noto-sans-devanagari/NotoSansDevanagari-Regular.ttf

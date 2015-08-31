@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-egyptian-hieroglyphs/
+share/doc/noto-sans-egyptian-hieroglyphs/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-egyptian-hieroglyphs/
+share/fonts/noto-sans-egyptian-hieroglyphs/NotoSansEgyptianHieroglyphs-Regular.ttf

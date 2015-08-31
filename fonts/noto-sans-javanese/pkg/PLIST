@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-javanese/
+share/doc/noto-sans-javanese/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-javanese/
+share/fonts/noto-sans-javanese/NotoSansJavanese-Regular.ttf

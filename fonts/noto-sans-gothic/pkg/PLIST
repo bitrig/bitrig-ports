@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-gothic/
+share/doc/noto-sans-gothic/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-gothic/
+share/fonts/noto-sans-gothic/NotoSansGothic-Regular.ttf

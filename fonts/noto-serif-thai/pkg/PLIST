@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-serif-thai/
+share/doc/noto-serif-thai/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-serif-thai/
+share/fonts/noto-serif-thai/NotoSerifThai-Bold.ttf
+share/fonts/noto-serif-thai/NotoSerifThai-Regular.ttf

@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-naskh-arabic/
+share/doc/noto-naskh-arabic/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-naskh-arabic/
+share/fonts/noto-naskh-arabic/NotoNaskhArabic-Bold.ttf
+share/fonts/noto-naskh-arabic/NotoNaskhArabic-Regular.ttf

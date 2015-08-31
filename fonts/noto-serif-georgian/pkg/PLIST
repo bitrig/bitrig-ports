@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-serif-georgian/
+share/doc/noto-serif-georgian/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-serif-georgian/
+share/fonts/noto-serif-georgian/NotoSerifGeorgian-Bold.ttf
+share/fonts/noto-serif-georgian/NotoSerifGeorgian-Regular.ttf

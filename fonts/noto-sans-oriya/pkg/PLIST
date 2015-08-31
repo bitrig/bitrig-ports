@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-oriya/
+share/doc/noto-sans-oriya/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-oriya/
+share/fonts/noto-sans-oriya/NotoSansOriya-Bold.ttf
+share/fonts/noto-sans-oriya/NotoSansOriya-Regular.ttf

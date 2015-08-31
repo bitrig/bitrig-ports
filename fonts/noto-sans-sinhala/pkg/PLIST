@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-sinhala/
+share/doc/noto-sans-sinhala/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-sinhala/
+share/fonts/noto-sans-sinhala/NotoSansSinhala-Bold.ttf
+share/fonts/noto-sans-sinhala/NotoSansSinhala-Regular.ttf

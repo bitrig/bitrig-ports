@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-gurmukhi/
+share/doc/noto-sans-gurmukhi/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-gurmukhi/
+share/fonts/noto-sans-gurmukhi/NotoSansGurmukhi-Bold.ttf
+share/fonts/noto-sans-gurmukhi/NotoSansGurmukhi-Regular.ttf

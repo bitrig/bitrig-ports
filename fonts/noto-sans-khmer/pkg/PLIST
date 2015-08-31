@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-khmer/
+share/doc/noto-sans-khmer/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-khmer/
+share/fonts/noto-sans-khmer/NotoSansKhmer-Bold.ttf
+share/fonts/noto-sans-khmer/NotoSansKhmer-Regular.ttf

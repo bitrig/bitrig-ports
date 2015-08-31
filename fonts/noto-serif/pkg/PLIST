@@ -1,0 +1,9 @@
+@comment $OpenBSD$
+share/doc/noto-serif/
+share/doc/noto-serif/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-serif/
+share/fonts/noto-serif/NotoSerif-Bold.ttf
+share/fonts/noto-serif/NotoSerif-BoldItalic.ttf
+share/fonts/noto-serif/NotoSerif-Italic.ttf
+share/fonts/noto-serif/NotoSerif-Regular.ttf

@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-tibetan/
+share/doc/noto-sans-tibetan/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-tibetan/
+share/fonts/noto-sans-tibetan/NotoSansTibetan-Regular.ttf

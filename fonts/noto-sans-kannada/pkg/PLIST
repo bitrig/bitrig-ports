@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-kannada/
+share/doc/noto-sans-kannada/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-kannada/
+share/fonts/noto-sans-kannada/NotoSansKannada-Bold.ttf
+share/fonts/noto-sans-kannada/NotoSansKannada-Regular.ttf

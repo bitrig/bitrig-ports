@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-serif-armenian/
+share/doc/noto-serif-armenian/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-serif-armenian/
+share/fonts/noto-serif-armenian/NotoSerifArmenian-Bold.ttf
+share/fonts/noto-serif-armenian/NotoSerifArmenian-Regular.ttf

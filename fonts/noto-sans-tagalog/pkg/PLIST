@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-tagalog/
+share/doc/noto-sans-tagalog/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-tagalog/
+share/fonts/noto-sans-tagalog/NotoSansTagalog-Regular.ttf

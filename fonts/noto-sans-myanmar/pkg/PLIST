@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-myanmar/
+share/doc/noto-sans-myanmar/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-myanmar/
+share/fonts/noto-sans-myanmar/NotoSansMyanmar-Bold.ttf
+share/fonts/noto-sans-myanmar/NotoSansMyanmar-Regular.ttf

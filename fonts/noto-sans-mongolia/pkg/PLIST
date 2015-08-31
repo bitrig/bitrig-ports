@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-mongolian/
+share/doc/noto-sans-mongolian/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-mongolian/
+share/fonts/noto-sans-mongolian/NotoSansMongolian-Regular.ttf

@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-old-italic/
+share/doc/noto-sans-old-italic/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-old-italic/
+share/fonts/noto-sans-old-italic/NotoSansOldItalic-Regular.ttf

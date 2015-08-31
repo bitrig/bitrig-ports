@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-canadian-aboriginal/
+share/doc/noto-sans-canadian-aboriginal/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-canadian-aboriginal/
+share/fonts/noto-sans-canadian-aboriginal/NotoSansCanadianAboriginal-Regular.ttf

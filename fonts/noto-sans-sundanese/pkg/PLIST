@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-sundanese/
+share/doc/noto-sans-sundanese/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-sundanese/
+share/fonts/noto-sans-sundanese/NotoSansSundanese-Regular.ttf

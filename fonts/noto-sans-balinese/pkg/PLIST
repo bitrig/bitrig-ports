@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-balinese/
+share/doc/noto-sans-balinese/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-balinese/
+share/fonts/noto-sans-balinese/NotoSansBalinese-Regular.ttf

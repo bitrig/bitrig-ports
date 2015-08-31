@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-kufi-arabic/
+share/doc/noto-kufi-arabic/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-kufi-arabic/
+share/fonts/noto-kufi-arabic/NotoKufiArabic-Bold.ttf
+share/fonts/noto-kufi-arabic/NotoKufiArabic-Regular.ttf

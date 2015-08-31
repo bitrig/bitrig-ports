@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-malayalam/
+share/doc/noto-sans-malayalam/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-malayalam/
+share/fonts/noto-sans-malayalam/NotoSansMalayalam-Bold.ttf
+share/fonts/noto-sans-malayalam/NotoSansMalayalam-Regular.ttf

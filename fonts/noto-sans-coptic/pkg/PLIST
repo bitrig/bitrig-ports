@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-coptic/
+share/doc/noto-sans-coptic/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-coptic/
+share/fonts/noto-sans-coptic/NotoSansCoptic-Regular.ttf

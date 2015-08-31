@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-symbols/
+share/doc/noto-sans-symbols/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-symbols/
+share/fonts/noto-sans-symbols/NotoSansSymbols-Regular.ttf

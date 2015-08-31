@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-telugu/
+share/doc/noto-sans-telugu/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-telugu/
+share/fonts/noto-sans-telugu/NotoSansTelugu-Bold.ttf
+share/fonts/noto-sans-telugu/NotoSansTelugu-Regular.ttf

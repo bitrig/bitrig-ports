@@ -1,0 +1,12 @@
+@comment $OpenBSD$
+share/doc/noto-sans-cjk-sc/
+share/doc/noto-sans-cjk-sc/LICENSE_CJK.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-cjk-sc/
+share/fonts/noto-sans-cjk-sc/NotoSansCJKsc-Black.otf
+share/fonts/noto-sans-cjk-sc/NotoSansCJKsc-Bold.otf
+share/fonts/noto-sans-cjk-sc/NotoSansCJKsc-DemiLight.otf
+share/fonts/noto-sans-cjk-sc/NotoSansCJKsc-Light.otf
+share/fonts/noto-sans-cjk-sc/NotoSansCJKsc-Medium.otf
+share/fonts/noto-sans-cjk-sc/NotoSansCJKsc-Regular.otf
+share/fonts/noto-sans-cjk-sc/NotoSansCJKsc-Thin.otf

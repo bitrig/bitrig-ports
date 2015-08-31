@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/noto-sans-hebrew/
+share/doc/noto-sans-hebrew/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-hebrew/
+share/fonts/noto-sans-hebrew/NotoSansHebrew-Bold.ttf
+share/fonts/noto-sans-hebrew/NotoSansHebrew-Regular.ttf

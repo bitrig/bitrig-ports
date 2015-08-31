@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-sans-new-tai-lue/
+share/doc/noto-sans-new-tai-lue/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-sans-new-tai-lue/
+share/fonts/noto-sans-new-tai-lue/NotoSansNewTaiLue-Regular.ttf
