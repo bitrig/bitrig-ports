@@ -1,0 +1,9 @@
+@comment $OpenBSD$
+share/doc/abyssinica/
+share/doc/abyssinica/FONTLOG.txt
+share/doc/abyssinica/OFL-FAQ.txt
+share/doc/abyssinica/OFL.txt
+share/doc/abyssinica/README.txt
+share/fonts/
+@fontdir share/fonts/abyssinica/
+share/fonts/abyssinica/AbyssinicaSIL-R.ttf
