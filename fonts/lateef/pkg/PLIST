@@ -1,0 +1,8 @@
+@comment $OpenBSD$
+share/doc/lateef/
+share/doc/lateef/FONTLOG.txt
+share/doc/lateef/OFL-FAQ.txt
+share/doc/lateef/OFL.txt
+share/fonts/
+@fontdir share/fonts/lateef/
+share/fonts/lateef/LateefRegOT.ttf

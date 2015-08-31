@@ -1,0 +1,15 @@
+@comment $OpenBSD$
+share/doc/mondulkiri/
+share/doc/mondulkiri/FONTLOG.txt
+share/doc/mondulkiri/OFL-FAQ.txt
+share/doc/mondulkiri/OFL.txt
+share/fonts/
+@fontdir share/fonts/mondulkiri/
+share/fonts/mondulkiri/Busra-B.ttf
+share/fonts/mondulkiri/Busra-BI.ttf
+share/fonts/mondulkiri/Busra-I.ttf
+share/fonts/mondulkiri/Busra-R.ttf
+share/fonts/mondulkiri/Mondulkiri-B.ttf
+share/fonts/mondulkiri/Mondulkiri-BI.ttf
+share/fonts/mondulkiri/Mondulkiri-I.ttf
+share/fonts/mondulkiri/Mondulkiri-R.ttf

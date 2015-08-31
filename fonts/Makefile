@@ -19,7 +19,9 @@
      SUBDIR += cm-unicode
      SUBDIR += comic-neue
      SUBDIR += cosmic-sans-neue-mono
+     SUBDIR += dai-banna
      SUBDIR += dina-fonts
+     SUBDIR += doulos
      SUBDIR += droid-fonts
      SUBDIR += ecoliercourt-fonts
      SUBDIR += farsi-bfonts-ttf
@@ -28,6 +30,8 @@
      SUBDIR += freefarsi-ttf
      SUBDIR += freefont-ttf
      SUBDIR += freefonts
+     SUBDIR += galatia
+     SUBDIR += gentium
      SUBDIR += gohufont
      SUBDIR += hermit-font
      SUBDIR += inconsolata-font
@@ -38,15 +42,18 @@
      SUBDIR += ja-mplus-ttf
      SUBDIR += ja-sazanami-ttf
      SUBDIR += jmk-fonts
+     SUBDIR += junicode
      SUBDIR += ko-baekmuk-fonts
      SUBDIR += ko-baekmuk-ttf
      SUBDIR += ko-hanterm-fonts
+     SUBDIR += lateef
      SUBDIR += league-fonts
      SUBDIR += liberation-fonts
      SUBDIR += linuxlibertine-fonts-otf
      SUBDIR += linuxlibertine-fonts-ttf
      SUBDIR += lohit-fonts
      SUBDIR += mftrace
+     SUBDIR += mondulkiri
      SUBDIR += msttcorefonts
      SUBDIR += pkfonts
      SUBDIR += powerline-fonts
