@@ -8,8 +8,6 @@ CATEGORIES =		fonts
 
 HOMEPAGE =		http://scripts.sil.org/Andika/
 
-MAINTAINER =		George Rosamond <george@nycbug.org>
-
 # OFL-like custom license
 PERMIT_PACKAGE_CDROM =	Yes
 
