@@ -1,0 +1,9 @@
+@comment $OpenBSD$
+share/doc/isabella/
+share/doc/isabella/COPYING.LIB
+share/doc/isabella/OFL.txt
+share/doc/isabella/README.txt
+share/fonts/
+@fontdir share/fonts/isabella/
+share/fonts/isabella/Isabella.otf
+share/fonts/isabella/Isabella.ttf
