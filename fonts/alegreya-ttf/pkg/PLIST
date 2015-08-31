@@ -1,0 +1,34 @@
+@comment $OpenBSD$
+share/doc/alegreya-ttf/
+share/doc/alegreya-ttf/LICENSE.md
+share/doc/alegreya-ttf/README.md
+share/fonts/
+@fontdir share/fonts/alegreya-ttf/
+share/fonts/alegreya-ttf/AlegreyaSans-Black.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-BlackItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-Bold.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-BoldItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-ExtraBold.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-ExtraBoldItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-Italic.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-Light.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-LightItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-Medium.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-MediumItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-Regular.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-Thin.ttf
+share/fonts/alegreya-ttf/AlegreyaSans-ThinItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-Black.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-BlackItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-Bold.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-BoldItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-ExtraBold.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-ExtraBoldItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-Italic.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-Light.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-LightItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-Medium.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-MediumItalic.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-Regular.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-Thin.ttf
+share/fonts/alegreya-ttf/AlegreyaSansSC-ThinItalic.ttf
