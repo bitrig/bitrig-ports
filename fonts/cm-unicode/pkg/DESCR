@@ -1,0 +1,8 @@
+Computer Modern Unicode fonts were converted from metafont sources using
+mftrace with autotrace backend and fontforge (former pfaedit). The main
+purpose is to create free, good quality fonts for use in X applications
+supporting many languages. Currently the fonts contain glyphs from Latin1,
+Cyrillic and Greek code sets and IPA extensions.
+
+This set contains 33 fonts, and works better with antialiasing enabled.
+
