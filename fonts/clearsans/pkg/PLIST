@@ -1,0 +1,37 @@
+@comment $OpenBSD$
+share/doc/clearsans/
+share/doc/clearsans/LICENSE-2.0.txt
+share/fonts/
+@fontdir share/fonts/clearsans/
+share/fonts/clearsans/ClearSans-Bold.eot
+share/fonts/clearsans/ClearSans-Bold.svg
+share/fonts/clearsans/ClearSans-Bold.ttf
+share/fonts/clearsans/ClearSans-Bold.woff
+share/fonts/clearsans/ClearSans-BoldItalic.eot
+share/fonts/clearsans/ClearSans-BoldItalic.svg
+share/fonts/clearsans/ClearSans-BoldItalic.ttf
+share/fonts/clearsans/ClearSans-BoldItalic.woff
+share/fonts/clearsans/ClearSans-Italic.eot
+share/fonts/clearsans/ClearSans-Italic.svg
+share/fonts/clearsans/ClearSans-Italic.ttf
+share/fonts/clearsans/ClearSans-Italic.woff
+share/fonts/clearsans/ClearSans-Light.eot
+share/fonts/clearsans/ClearSans-Light.svg
+share/fonts/clearsans/ClearSans-Light.ttf
+share/fonts/clearsans/ClearSans-Light.woff
+share/fonts/clearsans/ClearSans-Medium.eot
+share/fonts/clearsans/ClearSans-Medium.svg
+share/fonts/clearsans/ClearSans-Medium.ttf
+share/fonts/clearsans/ClearSans-Medium.woff
+share/fonts/clearsans/ClearSans-MediumItalic.eot
+share/fonts/clearsans/ClearSans-MediumItalic.svg
+share/fonts/clearsans/ClearSans-MediumItalic.ttf
+share/fonts/clearsans/ClearSans-MediumItalic.woff
+share/fonts/clearsans/ClearSans-Regular.eot
+share/fonts/clearsans/ClearSans-Regular.svg
+share/fonts/clearsans/ClearSans-Regular.ttf
+share/fonts/clearsans/ClearSans-Regular.woff
+share/fonts/clearsans/ClearSans-Thin.eot
+share/fonts/clearsans/ClearSans-Thin.svg
+share/fonts/clearsans/ClearSans-Thin.ttf
+share/fonts/clearsans/ClearSans-Thin.woff

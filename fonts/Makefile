@@ -7,10 +7,15 @@
      SUBDIR += alegreya-otf
      SUBDIR += alegreya-ttf
      SUDDIR += andika
+     SUBDIR += annapurna
      SUBDIR += anonymous-pro
      SUBDIR += arabeyes-ttf
      SUBDIR += artwiz-aleczapka
+     SUBDIR += bitstream-vera
+     SUBDIR += bitter
      SUBDIR += cantarell-fonts
+     SUBDIR += charis
+     SUBDIR += clearsans
      SUBDIR += comic-neue
      SUBDIR += cosmic-sans-neue-mono
      SUBDIR += dina-fonts

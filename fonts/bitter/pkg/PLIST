@@ -1,0 +1,9 @@
+@comment $OpenBSD$
+share/doc/bitter/
+share/doc/bitter/OFL.txt
+share/fonts/
+@fontdir share/fonts/bitter/
+share/fonts/bitter/Bitter-Bold.otf
+share/fonts/bitter/Bitter-BoldItalic.otf
+share/fonts/bitter/Bitter-Italic.otf
+share/fonts/bitter/Bitter-Regular.otf

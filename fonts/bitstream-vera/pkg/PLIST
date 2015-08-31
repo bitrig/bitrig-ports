@@ -1,0 +1,17 @@
+@comment $OpenBSD$
+share/doc/bitstream-vera/
+share/doc/bitstream-vera/COPYRIGHT.TXT
+share/doc/bitstream-vera/README.TXT
+share/doc/bitstream-vera/RELEASENOTES.TXT
+share/fonts/
+@fontdir share/fonts/bitstream-vera/
+share/fonts/bitstream-vera/Vera.ttf
+share/fonts/bitstream-vera/VeraBI.ttf
+share/fonts/bitstream-vera/VeraBd.ttf
+share/fonts/bitstream-vera/VeraIt.ttf
+share/fonts/bitstream-vera/VeraMoBI.ttf
+share/fonts/bitstream-vera/VeraMoBd.ttf
+share/fonts/bitstream-vera/VeraMoIt.ttf
+share/fonts/bitstream-vera/VeraMono.ttf
+share/fonts/bitstream-vera/VeraSe.ttf
+share/fonts/bitstream-vera/VeraSeBd.ttf
