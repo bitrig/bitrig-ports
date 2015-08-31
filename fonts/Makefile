@@ -3,6 +3,9 @@
      SUBDIR =
      SUBDIR += adobe-source-code-pro
      SUBDIR += adobe-source-sans-pro
+     SUBDIR += abyssinica
+     SUBDIR += alegreya-otf
+     SUBDIR += alegreya-ttf
      SUBDIR += anonymous-pro
      SUBDIR += arabeyes-ttf
      SUBDIR += artwiz-aleczapka
@@ -22,6 +25,7 @@
      SUBDIR += hermit-font
      SUBDIR += inconsolata-font
      SUBDIR += intlfonts
+     SUBDIR += isabella
      SUBDIR += ja-funetfonts
      SUBDIR += ja-kanjistrokeorders-ttf
      SUBDIR += ja-mplus-ttf
