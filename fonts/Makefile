@@ -16,6 +16,7 @@
      SUBDIR += cantarell-fonts
      SUBDIR += charis
      SUBDIR += clearsans
+     SUBDIR += cm-unicode
      SUBDIR += comic-neue
      SUBDIR += cosmic-sans-neue-mono
      SUBDIR += dina-fonts
