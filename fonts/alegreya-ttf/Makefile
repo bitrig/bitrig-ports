@@ -7,7 +7,6 @@ PKGNAME =		alegreya-ttf-1.001
 CATEGORIES =		fonts
 
 HOMEPAGE =		http://www.huertatipografica.com/fonts/alegreya-sans-ht/
-MAINTAINER =		George Rosamond <george@nycbug.org>
 
 # OFL1.1
 PERMIT_PACKAGE_CDROM =	Yes

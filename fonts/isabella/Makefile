@@ -8,7 +8,6 @@ EXTRACT_SUFX =	-ttf.zip
 CATEGORIES =	fonts
 
 HOMEPAGE =	http://www.thibault.org/fonts/isabella
-MAINTAINER =	George Rosamond <george@nycbug.org>
 
 # Dual OFL/LGPLv2
 # See http://www.thibault.org/fonts/isabella/
