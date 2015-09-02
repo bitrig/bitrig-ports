@@ -57,6 +57,7 @@
      SUBDIR += mftrace
      SUBDIR += mondulkiri
      SUBDIR += msttcorefonts
+     SUBDIR += noto-sans-thai
      SUBDIR += pkfonts
      SUBDIR += powerline-fonts
      SUBDIR += profont
