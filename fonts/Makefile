@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/08/28 17:59:33 jca Exp $
+# $OpenBSD: Makefile,v 1.22 2015/09/02 08:52:11 jasper Exp $
 
      SUBDIR =
      SUBDIR += adobe-source-code-pro
@@ -36,6 +36,7 @@
      SUBDIR += gohufont
      SUBDIR += hack-font-otf
      SUBDIR += hack-font-ttf
+     SUBDIR += hack-fonts
      SUBDIR += hermit-font
      SUBDIR += huertatipografica-fonts
      SUBDIR += inconsolata-font
