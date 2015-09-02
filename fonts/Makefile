@@ -33,6 +33,8 @@
      SUBDIR += galatia
      SUBDIR += gentium
      SUBDIR += gohufont
+     SUBDIR += hack-font-otf
+     SUBDIR += hack-font-ttf
      SUBDIR += hermit-font
      SUBDIR += inconsolata-font
      SUBDIR += intlfonts
@@ -57,6 +59,7 @@
      SUBDIR += msttcorefonts
      SUBDIR += pkfonts
      SUBDIR += powerline-fonts
+     SUBDIR += profont
      SUBDIR += roboto-fonts
      SUBDIR += ru-pscyr
      SUBDIR += ru-ptsans

@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/fonts/
+@fontdir share/fonts/hack-font-ttf/
+share/fonts/hack-font-ttf/Hack-Bold.ttf
+share/fonts/hack-font-ttf/Hack-BoldOblique.ttf
+share/fonts/hack-font-ttf/Hack-Regular.ttf
+share/fonts/hack-font-ttf/Hack-RegularOblique.ttf
