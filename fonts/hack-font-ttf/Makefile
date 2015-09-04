@@ -1,7 +1,7 @@
 # $OpenBSD: Makefile.template,v 1.72 2015/04/08 17:53:19 sthen Exp $
 
 V =			2_010
-COMMENT =		TrueType Hack font
+COMMENT =		OpenType Hack font
 DISTNAME =		Hack-v${V}-ttf
 PKGNAME =		hack-font-ttf-${V}
 CATEGORIES =		fonts
