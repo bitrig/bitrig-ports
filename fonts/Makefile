@@ -54,6 +54,7 @@
      SUBDIR += liberation-fonts
      SUBDIR += linuxlibertine-fonts-otf
      SUBDIR += linuxlibertine-fonts-ttf
+     SUBDIR += lobster-font
      SUBDIR += lohit-fonts
      SUBDIR += mftrace
      SUBDIR += mondulkiri

@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/lobster-font/
+share/doc/lobster-font/License.txt
+share/doc/lobster-font/Readme.txt
+share/fonts/
+@fontdir share/fonts/lobster-font/
+share/fonts/lobster-font/Lobster 1.4.otf
