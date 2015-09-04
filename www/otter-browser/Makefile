@@ -1,11 +1,12 @@
-# $OpenBSD: Makefile,v 1.8 2015/06/04 11:00:11 sthen Exp $
+# $OpenBSD: Makefile,v 1.9 2015/09/04 21:59:36 sthen Exp $
+
 BROKEN =		needs work on bitrig
 
 COMMENT =		browser aiming to recreate classic Opera (12.x) UI using Qt5
 
 GH_ACCOUNT =		OtterBrowser
 GH_PROJECT =		otter-browser
-V =			0.9.06
+V =			0.9.07
 GH_TAGNAME =		v$V
 
 DISTNAME =		${GH_PROJECT}-$V
