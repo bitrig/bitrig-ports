@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.314 2015/08/22 09:38:47 bentley Exp $
+# $OpenBSD: Makefile,v 1.315 2015/09/04 13:05:13 bluhm Exp $
 
      SUBDIR =
      SUBDIR += 0ad
@@ -15,6 +15,7 @@
      SUBDIR += angband,sdl
      SUBDIR += angrydd
      SUBDIR += armagetronad
+     SUBDIR += asciiquarium
      SUBDIR += atomix
      SUBDIR += barrage
      SUBDIR += bass
