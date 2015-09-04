@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/quattrocento-roman/
+share/doc/quattrocento-roman/FONTLOG.txt
+share/doc/quattrocento-roman/OFL.txt
+share/fonts/
+@fontdir share/fonts/quattrocento-roman/
+share/fonts/quattrocento-roman/Quattrocento-Regular.ttf
