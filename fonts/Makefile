@@ -20,6 +20,7 @@
      SUBDIR += comic-neue
      SUBDIR += cosmic-sans-neue-mono
      SUBDIR += dai-banna
+     SUBDIR += dancing-script
      SUBDIR += dina-fonts
      SUBDIR += doulos
      SUBDIR += droid-fonts
