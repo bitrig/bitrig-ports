@@ -109,6 +109,7 @@
      SUBDIR += pkfonts
      SUBDIR += powerline-fonts
      SUBDIR += profont
+     SUBDIR += quattrocento-roman
      SUBDIR += roboto-fonts
      SUBDIR += ru-pscyr
      SUBDIR += ru-ptsans
