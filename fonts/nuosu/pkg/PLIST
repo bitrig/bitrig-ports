@@ -1,0 +1,8 @@
+@comment $OpenBSD$
+share/doc/nuosu/
+share/doc/nuosu/FONTLOG.txt
+share/doc/nuosu/OFL-FAQ.txt
+share/doc/nuosu/OFL.txt
+share/fonts/
+@fontdir share/fonts/nuosu/
+share/fonts/nuosu/NuosuSIL.ttf

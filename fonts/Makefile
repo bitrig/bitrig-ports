@@ -106,6 +106,7 @@
      SUBDIR += noto-serif-lao
      SUBDIR += noto-serif-thai
      SUBDIR += noto-serif
+     SUBDIR += nuosu
      SUBDIR += pkfonts
      SUBDIR += powerline-fonts
      SUBDIR += profont
