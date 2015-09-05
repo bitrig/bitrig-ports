@@ -61,6 +61,7 @@
      SUBDIR += msttcorefonts
      SUBDIR += noto-kufi-arabic
      SUBDIR += noto-naskh-arabic
+     SUBDIR += noto-nastaliq-urdu
      SUBDIR += noto-sans-armenian
      SUBDIR += noto-sans-balinese
      SUBDIR += noto-sans-bengali
@@ -107,6 +108,7 @@
      SUBDIR += noto-serif-thai
      SUBDIR += noto-serif
      SUBDIR += nuosu
+     SUBDIR += padauk
      SUBDIR += pkfonts
      SUBDIR += powerline-fonts
      SUBDIR += profont
@@ -115,7 +117,10 @@
      SUBDIR += roboto-fonts
      SUBDIR += ru-pscyr
      SUBDIR += ru-ptsans
+     SUBDIR += scheherazade
+     SUBDIR += sophia-nubian
      SUBDIR += spranq-ecofont-ttf
+     SUBDIR += tai-heritage
      SUBDIR += terminus-font
      SUBDIR += ubuntu-fonts
      SUBDIR += un-fonts

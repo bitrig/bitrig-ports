@@ -1,0 +1,10 @@
+@comment $OpenBSD$
+share/doc/tai-heritage/
+share/doc/tai-heritage/DOCUMENTATION.txt
+share/doc/tai-heritage/FONTLOG.txt
+share/doc/tai-heritage/OFL-FAQ.txt
+share/doc/tai-heritage/README.txt
+share/fonts/
+@fontdir share/fonts/tai-heritage/
+share/fonts/tai-heritage/TaiHeritagePro-B.ttf
+share/fonts/tai-heritage/TaiHeritagePro-R.ttf

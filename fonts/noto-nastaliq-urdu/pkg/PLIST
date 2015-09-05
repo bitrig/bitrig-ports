@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/noto-nastaliq-urdu/
+share/doc/noto-nastaliq-urdu/LICENSE.txt
+share/fonts/
+@fontdir share/fonts/noto-nastaliq-urdu/
+share/fonts/noto-nastaliq-urdu/NotoNastaliqUrduDraft.ttf
