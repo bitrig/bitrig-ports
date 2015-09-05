@@ -6,7 +6,7 @@ DISTNAME =		quattrocento-sans-v${V}
 PKGNAME =		quattrocento-sans-${V}
 CATEGORIES =		fonts
 
-HOMEPAGE =		http://www.impallari.com/quattrocentrosans/
+HOMEPAGE =		http://www.impallari.com/quattrocentosans/
 
 # OFL-like custom license
 PERMIT_PACKAGE_CDROM =	Yes
