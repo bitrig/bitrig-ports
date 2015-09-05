@@ -1,0 +1,10 @@
+@comment $OpenBSD$
+share/doc/scheherazade/
+share/doc/scheherazade/FONTLOG.txt
+share/doc/scheherazade/OFL-FAQ.txt
+share/doc/scheherazade/OFL.txt
+share/doc/scheherazade/README.txt
+share/fonts/
+@fontdir share/fonts/scheherazade/
+share/fonts/scheherazade/Scheherazade-Bold.ttf
+share/fonts/scheherazade/Scheherazade-Regular.ttf
