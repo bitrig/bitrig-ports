@@ -110,6 +110,7 @@
      SUBDIR += powerline-fonts
      SUBDIR += profont
      SUBDIR += quattrocento-roman
+     SUBDIR += quattrocento-sans
      SUBDIR += roboto-fonts
      SUBDIR += ru-pscyr
      SUBDIR += ru-ptsans
