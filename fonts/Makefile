@@ -60,6 +60,7 @@
      SUBDIR += lohit-fonts
      SUBDIR += mb-demonic-tale
      SUBDIR += mb-element-standard
+     SUBDIR += mb-evil-ghost
      SUBDIR += mb-forever-raw
      SUBDIR += mb-gothic-spell
      SUBDIR += mb-real-grinder

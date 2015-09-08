@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/mb-evil-ghost/
+share/doc/mb-evil-ghost/MB-EvilGhost RUS.txt
+share/doc/mb-evil-ghost/MB-EvilGhost Readme.txt
+share/fonts/
+@fontdir share/fonts/mb-evil-ghost/
+share/fonts/mb-evil-ghost/MB-EvilGhost_Font.ttf
