@@ -61,6 +61,7 @@
      SUBDIR += mb-demonic-tale
      SUBDIR += mb-gothic-spell
      SUBDIR += mb-thin-worms
+     SUBDIR += mb-think-twice
      SUBDIR += mftrace
      SUBDIR += mondulkiri
      SUBDIR += msttcorefonts
