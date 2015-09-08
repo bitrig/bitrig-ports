@@ -2,7 +2,7 @@
 
 COMMENT =		Raw spiked and scratched black metal font
 DISTNAME =		MB-Thin_Worms
-PKGNAME =		mb-thin-worms-20150529
+PKGNAME =		mb-thin-worms-201303
 CATEGORIES =		fonts
 
 HOMEPAGE =		http://modblackmoon.com/fonts.html
