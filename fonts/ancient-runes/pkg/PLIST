@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/ancient-runes/
+share/doc/ancient-runes/Ancient Runes Readme.txt
+share/fonts/
+@fontdir share/fonts/ancient-runes/
+share/fonts/ancient-runes/Ancient Runes_1_1.ttf
