@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/prida36/
+share/doc/prida36/OFL_License.txt
+share/fonts/
+@fontdir share/fonts/prida36/
+share/fonts/prida36/Prida36.otf
+share/fonts/prida36/Prida36.ttf
