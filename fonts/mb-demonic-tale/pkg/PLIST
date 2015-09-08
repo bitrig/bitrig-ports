@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/mb-demonic-tale/
+share/doc/mb-demonic-tale/MB-Demonic_Tale Readme.txt
+share/fonts/
+@fontdir share/fonts/mb-demonic-tale/
+share/fonts/mb-demonic-tale/MB-Demonic_Tale.ttf
