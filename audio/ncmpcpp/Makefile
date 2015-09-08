@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.35 2015/07/06 06:04:57 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.36 2015/09/08 12:57:14 dcoppa Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -7,7 +7,7 @@ BROKEN-hppa =		bindings.h:85:4: error: type 'Binding' is not a direct base of 'B
 
 COMMENT =		ncurses mpd client inspired by ncmpc
 
-DISTNAME =		ncmpcpp-0.6.5
+DISTNAME =		ncmpcpp-0.6.6
 
 EXTRACT_SUFX =		.tar.bz2
 
