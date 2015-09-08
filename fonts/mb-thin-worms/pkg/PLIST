@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/mb-thin-worms/
+share/doc/mb-thin-worms/MB-Thin_Worms Readme.txt
+share/fonts/
+@fontdir share/fonts/mb-thin-worms/
+share/fonts/mb-thin-worms/MB-Thin_Worms.ttf

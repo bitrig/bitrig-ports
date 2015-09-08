@@ -59,6 +59,7 @@
      SUBDIR += lobster-font
      SUBDIR += lohit-fonts
      SUBDIR += mb-gothic-spell
+     SUBDIR += mb-thin-worms
      SUBDIR += mftrace
      SUBDIR += mondulkiri
      SUBDIR += msttcorefonts
