@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/mb-real-grinder/
+share/doc/mb-real-grinder/MB-Real_Grinder RUS.txt
+share/doc/mb-real-grinder/MB-Real_Grinder Readme.txt
+share/fonts/
+@fontdir share/fonts/mb-real-grinder/
+share/fonts/mb-real-grinder/MB-Real_Grinder.ttf

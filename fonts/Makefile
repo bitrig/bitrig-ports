@@ -59,7 +59,7 @@
      SUBDIR += lobster-font
      SUBDIR += lohit-fonts
      SUBDIR += mb-demonic-tale
-     SUBDIR += mb-element-brutalized
+     SUBDIR += mb-element-standard
      SUBDIR += mb-forever-raw
      SUBDIR += mb-gothic-spell
      SUBDIR += mb-thin-worms

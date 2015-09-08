@@ -1,6 +1,0 @@
-@comment $OpenBSD$
-share/doc/mb-element-brutalized/
-share/doc/mb-element-brutalized/MB-Element Readme.txt
-share/fonts/
-@fontdir share/fonts/mb-element-brutalized/
-share/fonts/mb-element-brutalized/MB-Element_Brutalized.ttf
