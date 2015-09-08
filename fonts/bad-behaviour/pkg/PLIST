@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/bad-behaviour/
+share/doc/bad-behaviour/Bad_Behaviour Readme.txt
+share/fonts/
+@fontdir share/fonts/bad-behaviour/
+share/fonts/bad-behaviour/Bad_Behaviour.ttf
