@@ -2,7 +2,7 @@
 
 COMMENT =		Traditional Gothic font
 DISTNAME =		MB_Gothic_Spell
-PKGNAME =		mb-gothic-spell-20150802
+PKGNAME =		mb-gothic-spell-201504
 CATEGORIES =		fonts
 
 HOMEPAGE =		http://modblackmoon.com/fonts.html
