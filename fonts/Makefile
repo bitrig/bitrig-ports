@@ -122,6 +122,7 @@
      SUBDIR += padauk
      SUBDIR += pkfonts
      SUBDIR += powerline-fonts
+     SUBDIR += prida36
      SUBDIR += profont
      SUBDIR += quattrocento-roman
      SUBDIR += quattrocento-sans
