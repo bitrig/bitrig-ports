@@ -1,0 +1,8 @@
+@comment $OpenBSD$
+share/doc/sudegnak-no3/
+share/doc/sudegnak-no3/OFL_License.txt
+share/fonts/
+@fontdir share/fonts/sudegnak-no3/
+share/fonts/sudegnak-no3/SudegnakNo3.otf
+share/fonts/sudegnak-no3/SudegnakNo3a.otf
+share/fonts/sudegnak-no3/SudegnakNo3c.otf
