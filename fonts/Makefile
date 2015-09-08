@@ -12,6 +12,7 @@
      SUBDIR += anonymous-pro
      SUBDIR += arabeyes-ttf
      SUBDIR += artwiz-aleczapka
+     SUBDIR += bad-behaviour
      SUBDIR += bitstream-vera
      SUBDIR += bitter
      SUBDIR += cantarell-fonts
