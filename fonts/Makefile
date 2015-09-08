@@ -62,6 +62,7 @@
      SUBDIR += mb-element-standard
      SUBDIR += mb-forever-raw
      SUBDIR += mb-gothic-spell
+     SUBDIR += mb-real-grinder
      SUBDIR += mb-thin-worms
      SUBDIR += mb-think-twice
      SUBDIR += mb-underground
