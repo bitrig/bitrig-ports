@@ -58,6 +58,7 @@
      SUBDIR += linuxlibertine-fonts-ttf
      SUBDIR += lobster-font
      SUBDIR += lohit-fonts
+     SUBDIR += mb-demonic-tale
      SUBDIR += mb-gothic-spell
      SUBDIR += mb-thin-worms
      SUBDIR += mftrace
