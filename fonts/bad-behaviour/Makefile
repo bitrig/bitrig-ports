@@ -1,9 +1,8 @@
 # $OpenBSD: Makefile.template,v 1.72 2015/04/08 17:53:19 sthen Exp $
 
-#V =			1_1
 COMMENT =		Detailed blocky font with scratches
 DISTNAME =		Bad_Behaviour
-PKGNAME =		bad-behaviour-20150805
+PKGNAME =		bad-behaviour-201508
 CATEGORIES =		fonts
 
 HOMEPAGE =		http://modblackmoon.com/fonts.html
