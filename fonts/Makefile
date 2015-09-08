@@ -6,6 +6,7 @@
      SUBDIR += abyssinica
      SUBDIR += alegreya-otf
      SUBDIR += alegreya-ttf
+     SUBDIR += ancient-runes
      SUDDIR += andika
      SUBDIR += annapurna
      SUBDIR += anonymous-pro
