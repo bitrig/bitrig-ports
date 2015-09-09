@@ -85,7 +85,7 @@
      SUBDIR += noto-sans-coptic
      SUBDIR += noto-sans-cypriot
      SUBDIR += noto-sans-devanagari
-     SUBDIR += noto-sans-egyptian-hierglyphs
+     SUBDIR += noto-sans-egyptian-hieroglyphs
      SUBDIR += noto-sans-ethiopic
      SUBDIR += noto-sans-georgian
      SUBDIR += noto-sans-gothic
