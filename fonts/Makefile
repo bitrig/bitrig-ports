@@ -119,6 +119,7 @@
      SUBDIR += noto-serif-thai
      SUBDIR += noto-serif
      SUBDIR += nuosu
+     SUBDIR += opattfram01
      SUBDIR += padauk
      SUBDIR += pkfonts
      SUBDIR += powerline-fonts
