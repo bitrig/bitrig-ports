@@ -132,6 +132,7 @@
      SUBDIR += scheherazade
      SUBDIR += sophia-nubian
      SUBDIR += spranq-ecofont-ttf
+     SUBDIR += sudegnak-no2
      SUBDIR += sudegnak-no3
      SUBDIR += tai-heritage
      SUBDIR += terminus-font
