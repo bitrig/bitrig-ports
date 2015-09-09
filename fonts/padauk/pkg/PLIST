@@ -1,0 +1,9 @@
+@comment $OpenBSD$
+share/doc/padauk/
+share/doc/padauk/OFL.txt
+share/fonts/
+@fontdir share/fonts/padauk/
+share/fonts/padauk/Padauk-bold.ttf
+share/fonts/padauk/Padauk-book.ttf
+share/fonts/padauk/Padauk-bookbold.ttf
+share/fonts/padauk/Padauk.ttf

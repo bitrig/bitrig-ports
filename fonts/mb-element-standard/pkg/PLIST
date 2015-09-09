@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/mb-element-standard/
+share/doc/mb-element-standard/MB-Element Readme.txt
+share/fonts/
+@fontdir share/fonts/mb-element-standard/
+share/fonts/mb-element-standard/MB-Element_Standard.ttf

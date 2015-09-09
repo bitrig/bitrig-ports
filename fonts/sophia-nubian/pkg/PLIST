@@ -1,0 +1,12 @@
+@comment $OpenBSD$
+share/doc/sophia-nubian/
+share/doc/sophia-nubian/FONTLOG.txt
+share/doc/sophia-nubian/OFL-FAQ.txt
+share/doc/sophia-nubian/OFL.txt
+share/doc/sophia-nubian/Readme.txt
+share/fonts/
+@fontdir share/fonts/sophia-nubian/
+share/fonts/sophia-nubian/SNB.ttf
+share/fonts/sophia-nubian/SNBI.ttf
+share/fonts/sophia-nubian/SNI.ttf
+share/fonts/sophia-nubian/SNR.ttf

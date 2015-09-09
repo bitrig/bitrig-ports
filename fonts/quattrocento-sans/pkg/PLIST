@@ -1,0 +1,10 @@
+@comment $OpenBSD$
+share/doc/quattrocento-sans/
+share/doc/quattrocento-sans/FONTLOG.txt
+share/doc/quattrocento-sans/OFL.txt
+share/fonts/
+@fontdir share/fonts/quattrocento-sans/
+share/fonts/quattrocento-sans/QuattrocentoSans-Bold.ttf
+share/fonts/quattrocento-sans/QuattrocentoSans-BoldItalic.ttf
+share/fonts/quattrocento-sans/QuattrocentoSans-Italic.ttf
+share/fonts/quattrocento-sans/QuattrocentoSans-Regular.ttf

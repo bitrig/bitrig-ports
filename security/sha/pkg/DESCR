@@ -1,0 +1,4 @@
+Sha is a simple tool to hash files using the NIST's Secure Hash
+Algorithm. It can use SHA-1, SHA-256, SHA-384 or SHA-512. It can be
+used in scripts or in the shell to do functions such as file integrity
+checks.

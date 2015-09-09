@@ -273,6 +273,7 @@
      SUBDIR += scanssh
      SUBDIR += scrypt
      SUBDIR += sentinel
+     SUBDIR += sha
      SUBDIR += shash
      SUBDIR += shash,static
      SUBDIR += siphon

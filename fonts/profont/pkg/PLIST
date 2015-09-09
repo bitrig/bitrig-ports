@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+share/doc/profont/
+share/doc/profont/LICENSE
+share/doc/profont/readme.txt
+share/fonts/
+@fontdir share/fonts/profont/
+share/fonts/profont/ProFontWindows.ttf

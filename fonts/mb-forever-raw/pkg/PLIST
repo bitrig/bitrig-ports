@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/mb-forever-raw/
+share/doc/mb-forever-raw/MB-ForeverRaw Readme.txt
+share/fonts/
+@fontdir share/fonts/mb-forever-raw/
+share/fonts/mb-forever-raw/MB-ForeverRaw.ttf

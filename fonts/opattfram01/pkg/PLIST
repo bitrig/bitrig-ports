@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+share/doc/opattfram01/
+share/doc/opattfram01/OFL_License.txt
+share/fonts/
+@fontdir share/fonts/opattfram01/
+share/fonts/opattfram01/Opattfram01.otf
