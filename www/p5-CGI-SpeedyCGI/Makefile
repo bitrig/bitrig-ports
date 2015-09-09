@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2014/03/13 22:25:45 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2015/09/09 10:17:25 sthen Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -23,8 +23,8 @@ WANTLIB += c m perl util
 NO_TEST=		Yes
 
 # XXX doesn't use apache-module.port.mk
-BUILD_DEPENDS=		www/apache-httpd-openbsd
-RUN_DEPENDS=		${BUILD_DEPENDS}
+RUN_DEPENDS=		www/apache-httpd-openbsd
+BUILD_DEPENDS=		${RUN_DEPENDS}
 
 post-patch:
 	${SUBST_CMD} ${WRKSRC}/src/optdefs
