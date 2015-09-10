@@ -1,0 +1,12 @@
+@comment $OpenBSD$
+share/doc/petme/
+share/doc/petme/FreeLicense.txt
+share/fonts/
+@fontdir share/fonts/petme/
+share/fonts/petme/PetMe.ttf
+share/fonts/petme/PetMe128.ttf
+share/fonts/petme/PetMe1282Y.ttf
+share/fonts/petme/PetMe2X.ttf
+share/fonts/petme/PetMe2Y.ttf
+share/fonts/petme/PetMe64.ttf
+share/fonts/petme/PetMe642Y.ttf

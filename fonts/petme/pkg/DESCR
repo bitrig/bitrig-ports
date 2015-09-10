@@ -1,0 +1,5 @@
+A full TrueType family of Commodore 64 fonts. Additional characters
+have been added to the fonts to support all of ISO-Latin-1, Windows ANSI,
+and MacRoman, as well as box drawing characters and other miscellaneous
+Unicode characters. These additional characters have been modeled after
+the existing characters whenever possible.

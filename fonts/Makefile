@@ -121,6 +121,7 @@
      SUBDIR += nuosu
      SUBDIR += opattfram01
      SUBDIR += padauk
+     SUBDIR += petme
      SUBDIR += pkfonts
      SUBDIR += powerline-fonts
      SUBDIR += prida36
