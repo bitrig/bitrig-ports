@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2015/07/18 21:11:18 jasper Exp $
+# $OpenBSD: Makefile,v 1.18 2015/09/11 09:01:05 sthen Exp $
 
 COMMENT=	open-source LDAP software (server, legacy version)
 
