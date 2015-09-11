@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2013/10/31 21:12:13 sthen Exp $
+# $OpenBSD: Makefile,v 1.26 2015/09/11 20:57:21 sthen Exp $
 # Uses pthreads
 
 COMMENT=		daemon/libs/toolkit for routing BGP4+, RIP, OSPF, etc.
