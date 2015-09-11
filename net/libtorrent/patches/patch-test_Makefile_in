@@ -1,15 +1,12 @@
-$OpenBSD: patch-test_Makefile_in,v 1.4 2012/12/10 15:05:12 dcoppa Exp $
-
-Unbreak build
-
---- test/Makefile.in.orig	Wed May 14 16:31:45 2014
-+++ test/Makefile.in	Sun Nov  2 01:32:21 2014
-@@ -643,7 +643,7 @@ LibTorrentTest_SOURCES = \
+$OpenBSD: patch-test_Makefile_in,v 1.6 2015/09/11 09:15:40 pascal Exp $
+--- test/Makefile.in.orig	Thu Sep 10 20:12:55 2015
++++ test/Makefile.in	Thu Sep 10 20:13:00 2015
+@@ -644,7 +644,7 @@ LibTorrentTest_SOURCES = \
  	main.cc
  
  LibTorrentTest_CXXFLAGS = $(CPPUNIT_CFLAGS)
 -LibTorrentTest_LDFLAGS = $(CPPUNIT_LIBS)  -ldl
-+LibTorrentTest_LDFLAGS = $(CPPUNIT_LIBS)  -lpthread
++LibTorrentTest_LDFLAGS = $(CPPUNIT_LIBS)
  AM_CPPFLAGS = -I$(srcdir) -I$(top_srcdir) -I$(top_srcdir)/src
  all: all-am
  
