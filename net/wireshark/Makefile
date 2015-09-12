@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2015/09/12 16:00:35 tobiasu Exp $
-
-BROKEN-alpha =	.got subsegment exceeds 64K (size 101480)
+# $OpenBSD: Makefile,v 1.24 2015/09/12 18:27:27 sthen Exp $
 
 BROKEN = 	needs work on bitrig
 
