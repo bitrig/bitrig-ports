@@ -27,7 +27,7 @@ $OpenBSD: patch-config_layout,v 1.8 2015/07/18 00:33:53 ajacoutot Exp $
 -    runtimedir:    ${prefix}/logs
 -    logfiledir:    ${prefix}/logs
 -    proxycachedir: ${prefix}/proxy
-+    sysconfdir:    /etc/apache2
++    sysconfdir:    %%CONFDIR%%
 +    installbuilddir: ${exec_prefix}/share/apache2/build
 +    errordir:      ${datadir}/error
 +    iconsdir:      ${datadir}/icons
