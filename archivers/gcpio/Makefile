@@ -8,6 +8,8 @@ CATEGORIES=	archivers
 HOMEPAGE=	https://www.gnu.org/software/cpio/
 REVISION=	0
 
+MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
+
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 
