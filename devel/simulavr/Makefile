@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 10:50:31 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2015/09/18 17:55:48 ajacoutot Exp $
 
 COMMENT=	AVR simulator
 
