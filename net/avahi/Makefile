@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.108 2015/08/27 06:48:30 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.109 2015/09/18 19:16:14 jasper Exp $
 
 ONLY_FOR_ARCHS-mono=	${MONO_ARCHS}
 
