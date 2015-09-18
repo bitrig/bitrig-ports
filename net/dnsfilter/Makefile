@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 11:35:46 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2015/09/18 19:35:05 jasper Exp $
 
 COMMENT=		dns rate limiter for divert(4)
 
@@ -23,7 +23,7 @@ MAKE_FLAGS=	BINDIR="${TRUEPREFIX}/sbin" \
 		MANDIR="${TRUEPREFIX}/man/man"
 
 do-configure:
-	perl -pi -e s,/etc,${SYSCONFDIR}, ${WRKSRC}/dnsfilter.h
+	sed -i s,/etc,${SYSCONFDIR}, ${WRKSRC}/dnsfilter.h
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/dnsfilter
