@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.129 2015/12/10 19:50:01 kili Exp $
-
-BROKEN =		needs work on bitrig
+# $OpenBSD: Makefile,v 1.123 2015/09/19 07:42:56 kili Exp $
 
 COMMENT-main =		compiler for the functional language Haskell
 COMMENT-doc =		documentation for GHC
@@ -16,7 +14,6 @@ NO_CCACHE =		Yes
 
 DISTNAME =		ghc-${MODGHC_VER}
 PKGNAME-main =		ghc-${MODGHC_VER}
-REVISION-main =		1
 PKGNAME-doc =		ghc-doc-${MODGHC_VER}
 CATEGORIES =		lang devel
 HOMEPAGE =		https://www.haskell.org/ghc/
@@ -101,7 +98,7 @@ GHC_ITEMS = \
 	TEMPLATE_HASKELL	2.10.0.0	1ejK907jvoTHoZ6iZtHeyN \
 	TERMINFO		0.4.0.1		KvtqTNXWuWjKicEYaZ7qsx \
 	TIME			1.5.0.1		AXTdBF9VRQoBOqJT6qtmVH \
-	TRANSFORMERS		0.4.2.0		3eG64VdP2vzGjP6wJiCp5X \
+	TRANSFORMERS		1.5.0.1		3eG64VdP2vzGjP6wJiCp5X \
 	UNIX			2.7.1.0		A3WgcI5QiHK4PDo4jSYdwQ \
 	XHTML			3000.2.1	FxPylgBilld3tRCpn3X21N
 
