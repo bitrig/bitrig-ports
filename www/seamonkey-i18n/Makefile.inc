@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.41 2015/09/28 09:30:39 landry Exp $
+# $OpenBSD: Makefile.inc,v 1.40 2015/09/19 13:09:38 landry Exp $
 
 # keep in sync with working archs.. sigh
 ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64

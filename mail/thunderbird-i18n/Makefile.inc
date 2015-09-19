@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.46 2015/09/30 11:51:25 landry Exp $
+# $OpenBSD: Makefile.inc,v 1.45 2015/09/19 13:09:38 landry Exp $
 
 # keep in sync with www/mozilla/mozilla.port.mk
 ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64
