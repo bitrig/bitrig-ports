@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.1 2013/06/17 02:54:20 bcallah Exp $
+# $OpenBSD: Makefile.inc,v 1.2 2015/09/20 06:50:48 ajacoutot Exp $
 
 # Issues with powerpc, working on it.
 NOT_FOR_ARCHS =	powerpc
