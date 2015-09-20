@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2015/09/29 10:51:44 sthen Exp $
+# $OpenBSD: Makefile,v 1.2 2015/09/20 12:45:50 jasper Exp $
 
 COMMENT =	extended pickling support for Python objects
 MODPY_EGG_VERSION =	0.1.1
