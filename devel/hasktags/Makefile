@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 10:50:06 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2015/09/21 19:25:54 kili Exp $
 
 COMMENT =	ctags-like tool for Haskell sources
 
