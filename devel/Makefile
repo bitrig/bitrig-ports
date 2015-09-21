@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1388 2015/09/21 17:02:41 kili Exp $
+# $OpenBSD: Makefile,v 1.1389 2015/09/21 19:50:53 jca Exp $
 
      SUBDIR =
      SUBDIR += ElectricFence
