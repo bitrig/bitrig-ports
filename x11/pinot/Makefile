@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.52 2015/05/21 05:46:20 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.53 2015/09/21 16:57:53 jasper Exp $
 
 SHARED_ONLY=	Yes
 
@@ -30,7 +30,11 @@ WANTLIB += c++ c++abi
 
 MASTER_SITES=	https://pinot-search.googlecode.com/files/
 
-MODULES=	devel/gettext
+MODULES=	devel/gettext \
+		gcc4
+
+MODGCC4_ARCHS=	*
+MODGCC4_LANGS=	c++
 
 BUILD_DEPENDS=	devel/boost \
 		devel/desktop-file-utils \
@@ -38,7 +42,7 @@ BUILD_DEPENDS=	devel/boost \
 
 # XXX catppt - catdvi
 LIB_DEPENDS=	x11/gtk3mm \
-		textproc/libxml++ \
+		textproc/libxml++>=2.40.0 \
 		mail/gmime>=2.6.0 \
 		net/curl \
 		audio/taglib \
@@ -64,6 +68,7 @@ RUN_DEPENDS +=	print/poppler,-utils
 
 CONFIGURE_STYLE= gnu
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		CXXFLAGS="-std=c++11" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		MKDIR_P="mkdir -p --"
 CONFIGURE_ARGS= ${CONFIGURE_SHARED} \

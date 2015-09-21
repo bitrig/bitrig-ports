@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.4 2015/07/15 02:26:34 bcallah Exp $
+# $OpenBSD: Makefile,v 1.6 2015/09/21 16:57:53 jasper Exp $
 
 COMMENT =	free multi-dimensional Tetris-like game
 DISTNAME =	galois-0.4
 CATEGORIES =	games x11
+REVISION =	1
 
 HOMEPAGE =	http://www.nongnu.org/galois/
 
@@ -19,9 +20,13 @@ WANTLIB += c++ c++abi
 
 MASTER_SITES =	${MASTER_SITE_SAVANNAH:=galois/source/}
 
-MODULES =	devel/gettext
+MODULES =	devel/gettext \
+		gcc4
 
-LIB_DEPENDS =	textproc/libxml++ \
+MODGCC4_ARCHS=	*
+MODGCC4_LANGS=	c++
+
+LIB_DEPENDS =	textproc/libxml++>=2.40.0 \
 		x11/gtk2mm
 
 RUN_DEPENDS =	devel/desktop-file-utils
@@ -30,7 +35,7 @@ CONFIGURE_STYLE =	gnu
 
 MAKE_FILE =	makefile
 ALL_TARGET =	default
-MAKE_FLAGS =	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}"
+MAKE_FLAGS =	CXX="${CXX}" CXXFLAGS="${CXXFLAGS} -std=c++11"
 
 NO_TEST =	Yes
 
