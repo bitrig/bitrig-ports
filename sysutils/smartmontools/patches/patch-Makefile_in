@@ -48,11 +48,11 @@ $OpenBSD: patch-Makefile_in,v 1.9 2013/03/22 17:55:42 giovanni Exp $
  @OS_SOLARIS_FALSE@                  smartd.8
  
  am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) \
- 	$(LISP)config.h.in
+        $(LISP)config.h.in
  # Read a list of newline-separated strings from the standard input,
-@@ -576,17 +576,7 @@ EXTRA_smartd_SOURCES = os_darwin.cpp os_darwin.h os_li
+@@ -587,16 +587,7 @@
  @OS_SOLARIS_FALSE@man_MANS = smartd.conf.5 smartctl.8 smartd.8 \
- @OS_SOLARIS_FALSE@	$(am__append_23)
+ @OS_SOLARIS_FALSE@     $(am__append_23)
  docsdir = $(docdir)
 -docs_DATA = \
 -        AUTHORS \
@@ -63,20 +63,19 @@ $OpenBSD: patch-Makefile_in,v 1.9 2013/03/22 17:55:42 giovanni Exp $
 -        NEWS \
 -        README \
 -        TODO \
--        WARNINGS \
 -        smartd.conf
 +docs_DATA = smartd.conf
- 
+
  examplesdir = $(exampledir)
  examples_DATA = \
-@@ -598,10 +588,11 @@ examples_SCRIPTS = \
+@@ -608,10 +599,11 @@
          examplescripts/Example3 \
          examplescripts/Example4 \
          examplescripts/Example5 \
 -        examplescripts/Example6
 +        examplescripts/Example6 \
-+	smartd_warning.sh
- 
++        smartd_warning.sh
+
  sysconf_DATA = smartd.conf
 -smartdscript_SCRIPTS = smartd_warning.sh
 +smartdscript_SCRIPTS =
