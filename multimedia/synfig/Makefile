@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.6 2015/09/24 10:38:57 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.4 2015/09/22 18:47:52 pascal Exp $
 
 SHARED_ONLY =		Yes
 
 COMMENT =		2D animation software
-REVISION =		1
+REVISION =		0
 
 V=			1.0.1
 DISTNAME =		synfig-$V

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.51 2015/06/05 11:52:33 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.52 2015/09/22 18:47:52 pascal Exp $
 
 PORTROACH=		limit:^0\.2
 
@@ -19,8 +19,8 @@ CATEGORIES=		graphics devel
 PKGNAME-main=		gegl-${V}
 PKGNAME-plugins=	gegl-plugins-${V}
 
-REVISION-main=		5
-REVISION-plugins=	6
+REVISION-main=		3
+REVISION-plugins=	5
 
 SHARED_LIBS +=  gegl-${API_VERSION}		0.0 # 199.1
 
@@ -58,9 +58,8 @@ LIB_DEPENDS-main= 	${LIB_DEPENDS} \
 WANTLIB-plugins += ${WANTLIB}
 WANTLIB-plugins += gsm mp3lame ogg IlmImf avutil bz2 speex
 WANTLIB-plugins += vorbis vorbisenc x264 avcodec avformat vpx
-WANTLIB-plugins += Half Iex IlmThread Imath xvidcore
-WANTLIB-plugins += crypto opus pthread ssl swresample x265
-WANTLIB-plugins += c++ c++abi
+WANTLIB-plugins += Half Iex IexMath IlmThread Imath xvidcore
+WANTLIB-plugins += crypto opus pthread c++ c++abi ssl swresample x265
 
 RUN_DEPENDS-plugins= 	${BUILD_PKGPATH},-main
 LIB_DEPENDS-plugins= 	${LIB_DEPENDS} \
