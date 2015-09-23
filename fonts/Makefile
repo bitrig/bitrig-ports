@@ -4,8 +4,6 @@
      SUBDIR += adobe-source-code-pro
      SUBDIR += adobe-source-sans-pro
      SUBDIR += abyssinica
-     SUBDIR += alegreya-otf
-     SUBDIR += alegreya-ttf
      SUBDIR += ancient-runes
      SUDDIR += andika
      SUBDIR += annapurna
@@ -14,7 +12,6 @@
      SUBDIR += artwiz-aleczapka
      SUBDIR += bad-behaviour
      SUBDIR += bitstream-vera
-     SUBDIR += bitter
      SUBDIR += cantarell-fonts
      SUBDIR += charis
      SUBDIR += clearsans
@@ -39,6 +36,7 @@
      SUBDIR += hack-font-otf
      SUBDIR += hack-font-ttf
      SUBDIR += hermit-font
+     SUBDIR += huertatipografica-fonts
      SUBDIR += inconsolata-font
      SUBDIR += intlfonts
      SUBDIR += isabella
