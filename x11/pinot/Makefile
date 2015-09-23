@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.53 2015/09/21 16:57:53 jasper Exp $
+# $OpenBSD: Makefile,v 1.54 2015/09/23 09:41:18 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -30,11 +30,12 @@ WANTLIB += c++ c++abi
 
 MASTER_SITES=	https://pinot-search.googlecode.com/files/
 
-MODULES=	devel/gettext \
-		gcc4
+MODULES=	devel/gettext
 
-MODGCC4_ARCHS=	*
-MODGCC4_LANGS=	c++
+# c++11
+MODULES +=		gcc4
+MODGCC4_ARCHS=		*
+MODGCC4_LANGS=		c++
 
 BUILD_DEPENDS=	devel/boost \
 		devel/desktop-file-utils \
