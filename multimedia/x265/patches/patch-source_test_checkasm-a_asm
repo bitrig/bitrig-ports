@@ -1,0 +1,11 @@
+--- source/test/checkasm-a.asm.orig	Tue Sep 22 14:24:44 2015
++++ source/test/checkasm-a.asm	Tue Sep 22 14:24:53 2015
+@@ -55,7 +55,7 @@ n14:  dq 0x249214109d5d1c88
+ 
+ SECTION .text
+ 
+-cextern_naked puts
++cglobal puts
+ 
+ ; max number of args used by any x265 asm function.
+ ; (max_args % 4) must equal 3 for stack alignment
