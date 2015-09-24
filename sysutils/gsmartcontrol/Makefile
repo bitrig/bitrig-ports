@@ -1,4 +1,7 @@
-# $OpenBSD: Makefile,v 1.11 2015/05/09 15:24:44 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.12 2015/09/24 10:36:39 ajacoutot Exp $
+
+# XXX check if still needed at next update
+CXXFLAGS +=		-std=c++11
 
 BROKEN= 	needs work on bitrig
 
@@ -6,6 +9,7 @@ COMMENT=	graphical hard drive inspection tool (smartctl front-end)
 
 DISTNAME=	gsmartcontrol-0.8.7
 EXTRACT_SUFX=	.tar.bz2
+REVISION=	0
 
 CATEGORIES=	sysutils x11
 
@@ -25,6 +29,7 @@ WANTLIB += c++ c++abi
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gsmartcontrol/}
 
 MODULES=	devel/gettext
+
 RUN_DEPENDS=	devel/desktop-file-utils \
 		sysutils/smartmontools \
 		x11/gtk+3,-guic
