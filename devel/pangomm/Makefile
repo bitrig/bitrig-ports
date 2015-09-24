@@ -23,6 +23,11 @@ WANTLIB += sigc-2.0 xcb xcb-render xcb-shm z
 MODULES =		devel/gettext \
 			x11/gnome
 
+# c++11
+MODULES +=		gcc4
+MODGCC4_ARCHS=		*
+MODGCC4_LANGS=		c++
+
 LIB_DEPENDS =		devel/glib2mm \
 			devel/pango \
 			graphics/cairomm
