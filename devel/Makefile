@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1393 2015/09/23 10:58:52 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.1395 2015/09/24 19:07:15 kili Exp $
 
      SUBDIR =
      SUBDIR += ElectricFence
@@ -233,8 +233,6 @@
      SUBDIR += hs-mmap
      SUBDIR += hs-mmorph
      SUBDIR += hs-monad-control
-     SUBDIR += hs-monad-par
-     SUBDIR += hs-monad-par-extras
      SUBDIR += hs-mtl
      SUBDIR += hs-murmur-hash
      SUBDIR += hs-nats
