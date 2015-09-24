@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/04/02 14:21:18 jasper Exp $
+# $OpenBSD: Makefile,v 1.5 2015/09/24 11:38:18 jca Exp $
 
 COMMENT=	simple integration of Flask and WTForms
 
@@ -30,8 +30,8 @@ post-build:
 	@cd ${WRKSRC}/docs && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} html
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/${MODPY_PY_PREFIX}-flask-wtf/
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/${MODPY_PY_PREFIX}flask-wtf/
 	cd ${WRKSRC}/docs/_build/html && \
-		pax -rw * ${PREFIX}/share/doc/${MODPY_PY_PREFIX}-flask-wtf/
+		pax -rw * ${PREFIX}/share/doc/${MODPY_PY_PREFIX}flask-wtf/
 
 .include <bsd.port.mk>
