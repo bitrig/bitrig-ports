@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2015/09/24 10:31:14 jca Exp $
+# $OpenBSD: Makefile,v 1.1.1.1 2015/09/24 10:28:08 jca Exp $
 
 COMMENT=	create MusicBrainz DiscIDs from audio CDs
 
