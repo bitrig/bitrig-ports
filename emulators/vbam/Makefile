@@ -1,4 +1,7 @@
-# $OpenBSD: Makefile,v 1.15 2015/05/18 10:06:37 bentley Exp $
+# $OpenBSD: Makefile,v 1.16 2015/09/24 10:38:34 ajacoutot Exp $
+
+# XXX check if still needed at next update
+CXXFLAGS +=		-std=c++11 -fpermissive
 
 COMMENT =		emulator for Nintendo Game Boy (Color/Advance)
 BROKEN-alpha =		ICE or OOM on hq_implementation.cpp
