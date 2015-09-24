@@ -20,7 +20,6 @@ WANTLIB += m pcre pthread sigc-2.0
 
 MODULES=		devel/gettext \
 			x11/gnome
-
 LIB_DEPENDS=		devel/glib2mm \
 			devel/atk
 
