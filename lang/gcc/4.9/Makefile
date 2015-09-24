@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/09/16 10:59:25 pascal Exp $
+# $OpenBSD: Makefile,v 1.22 2015/09/24 08:51:48 sthen Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -8,7 +8,7 @@ ONLY_FOR_ARCHS = amd64 arm hppa i386 mips64 mips64el powerpc sparc sparc64
 DPB_PROPERTIES = parallel
 
 V = 4.9.3
-REVISION = 1
+REVISION = 2
 FULL_VERSION = $V
 FULL_PKGVERSION = $V
 
