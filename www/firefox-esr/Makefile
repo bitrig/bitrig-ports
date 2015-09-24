@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.27 2015/09/24 20:22:06 landry Exp $
 
-BROKEN =	needs work on bitrig
-
 COMMENT =	Firefox web browser, Extended Support Release
 
 MOZILLA_VERSION =	38.3.0esr
