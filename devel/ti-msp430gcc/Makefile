@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.5 2015/09/25 10:16:13 ajacoutot Exp $
 
-BROKEN =		needs work on bitrig
-
 COMMENT =		TI's open source compiler for MSP430 microcontrollers#'
 
 V =			3_03_04_00
