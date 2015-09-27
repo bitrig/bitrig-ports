@@ -14,9 +14,9 @@ PERMIT_PACKAGE_CDROM=   Yes
 WANTLIB += GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm bz2 c crypto dc drm expat
 WANTLIB += fontconfig freetype jpeg lcms m mng png pthread
-WANTLIB += pthread-stubs ssl stdc++ xcb xml2 z
+WANTLIB += pthread-stubs ssl xcb xml2 z
 WANTLIB += X11-xcb Xau Xdmcp glapi lzma xcb-dri2 xcb-glx
-WANTLIB +=	c++ c++abi
+WANTLIB += c++ c++abi
 
 MODULES=	converters/libiconv x11/qt3
 LIB_DEPENDS=	net/dclib \

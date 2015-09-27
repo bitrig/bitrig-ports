@@ -11,8 +11,6 @@ CATEGORIES =		net
 
 HOMEPAGE =		http://owncloud.org/sync-clients/
 
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 

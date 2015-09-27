@@ -4,8 +4,6 @@ COMMENT-main = 		X11 toolkit, accessibility aids
 COMMENT-mono = 		one-colour KDE icon theme
 CATEGORIES =		x11 x11/kde
 VERSION =		3.5.10
-REVISION-mono =		0
-REVISION-main =		19
 DISTNAME =		kdeaccessibility-${VERSION}
 PKGNAME-main =		${DISTNAME}
 PKGNAME-mono =		mono-icon-theme-${VERSION}
@@ -23,7 +21,7 @@ RUN_DEPENDS-main =	${RUN_DEPENDS} \
 			devel/desktop-file-utils \
 			x11/gtk+3,-guic
 
-LIB_DEPENDS-main =	x11/kde/libs3 
+LIB_DEPENDS-main =	x11/kde/libs3
 LIB_DEPENDS-mono =
 
 SEPARATE_BUILD =	flavored

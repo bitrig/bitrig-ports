@@ -19,8 +19,6 @@ CATEGORIES=	net
 
 HOMEPAGE=	http://www.weechat.org/
 
-MAINTAINER=	Eric Lalonde <eric.c.lalonde@gmail.com>
-
 SHARED_ONLY=	Yes
 
 # GPLv3

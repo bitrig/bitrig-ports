@@ -15,7 +15,6 @@ PKGNAME-pgsql=	perdition-pgsql-${DISTVER:S/-//}
 CATEGORIES=	mail
 
 HOMEPAGE=	http://horms.net/projects/perdition/
-MAINTAINER=	Giovanni Bechis <giovanni@openbsd.org>
 
 SHARED_LIBS +=  perditiondb_bdb              0.0  # .0.0
 SHARED_LIBS +=  perditiondb_nis              0.0  # .0.0
@@ -85,9 +84,10 @@ CONFIGURE_ARGS+=	--with-ldap-libraries=${LOCALBASE}/lib \
 
 LIB_DEPENDS-mysql=	${cLIB_DEPENDS} databases/mariadb \
 			vanessa_adt->=0.0.9:devel/vanessa/adt
-WANTLIB-mysql=		crypto pthread ssl stdc++ util m z \
+WANTLIB-mysql=		crypto pthread ssl util m z \
 			lib/mysql/mysqlclient ${cWANTLIB} \
 			vanessa_adt>=1.0
+WANTLIB-mysql+=		c++ c++abi
 
 .if !${BUILD_PACKAGES:M-mysql}
 CONFIGURE_ARGS+=	--disable-mysql

@@ -13,7 +13,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tuxpaint/}
 
-WANTLIB += X11 Xau Xdmcp Xext c m stdc++ pthread fltk paper
+WANTLIB += X11 Xau Xdmcp Xext c m pthread fltk paper
 WANTLIB += Xft Xinerama fontconfig Xcursor Xfixes
 WANTLIB += c++ c++abi
 

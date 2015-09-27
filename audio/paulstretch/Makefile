@@ -2,7 +2,6 @@
 
 COMMENT =	program for extreme audio stretching
 DISTNAME =	paulstretch-2.2-2
-REVISION =	0
 PKGNAME =	paulstretch-2.2.2
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	audio x11

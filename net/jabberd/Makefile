@@ -39,7 +39,8 @@ EXTRA_LIBRARY_PATH=	${LOCALBASE}/lib
 
 .if ${FLAVOR:Mmysql}
 LIB_DEPENDS+=		databases/mariadb
-WANTLIB +=		lib/mysql/mysqlclient m pthread stdc++ z
+WANTLIB +=		lib/mysql/mysqlclient m pthread z
+WANTLIB +=		c++ c++abi
 CONFIGURE_ARGS+=	--enable-mysql
 .else
 CONFIGURE_ARGS+=	--disable-mysql

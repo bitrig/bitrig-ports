@@ -10,8 +10,6 @@ SHARED_LIBS=	iscsi	0.0
 
 HOMEPAGE=	https://github.com/sahlberg/libiscsi
 
-MAINTAINER=	Brad Smith <brad@comstyle.com>
-
 # LGPLv2.1+, GPLv2+ and PD
 PERMIT_PACKAGE_CDROM=	Yes
 

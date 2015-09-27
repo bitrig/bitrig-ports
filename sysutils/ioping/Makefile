@@ -7,8 +7,6 @@ DISTNAME =		ioping-${VERSION}
 
 CATEGORIES =		sysutils
 
-MAINTAINER =		Ingo Feinerer <feinerer@logic.at>
-
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
 

@@ -29,7 +29,8 @@ FLAVOR ?=
 .if ${FLAVOR:Mmysql}
 CONFIGURE_ARGS +=	--with-mysql
 LIB_DEPENDS +=		databases/mariadb
-WANTLIB +=		crypto ssl stdc++ z lib/mysql/mysqlclient_r
+WANTLIB +=		crypto ssl z lib/mysql/mysqlclient_r
+WANTLIB +=		c++ c++abi
 .else
 CONFIGURE_ARGS +=	--with-mysql=no
 .endif

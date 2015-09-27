@@ -8,12 +8,11 @@ SHARED_LIBS =		qtkeychain	0.0 # 0.4
 
 CATEGORIES =		security
 
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
-
 # BSD-like
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		QtDBus m stdc++
+WANTLIB =		QtDBus m
+WANTLIB +=		c++ c++abi
 
 GH_ACCOUNT =		frankosterfeld
 GH_PROJECT =		qtkeychain

@@ -8,8 +8,6 @@ CATEGORIES =		print
 
 HOMEPAGE =		https://www.gnu.org/software/texinfo/
 
-MAINTAINER =		Ingo Feinerer <feinerer@logic.at>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 

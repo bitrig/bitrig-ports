@@ -8,7 +8,6 @@ DISTNAME =		grantlee-${PKG_VERSION}
 CATEGORIES =		devel x11
 HOMEPAGE =		http://www.gitorious.org/grantlee/
 
-MAINTAINER =		KDE porting team <openbsd-kde@googlegroups.com>
 PORTROACH =		limit:^[0-4].*
 
 SHARED_LIBS =		grantlee_core		1.0

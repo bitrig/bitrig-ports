@@ -3,7 +3,6 @@
 COMMENT =		emulator for Nintendo Entertainment System
 
 V =			2.2.2
-REVISION =		0
 DISTNAME =		fceux-${V}.src
 PKGNAME =		fceux-${V}
 CATEGORIES =		emulators games

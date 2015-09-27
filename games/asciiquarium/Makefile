@@ -9,8 +9,6 @@ CATEGORIES =	games
 
 HOMEPAGE =	http://www.robobunny.com/projects/asciiquarium/html/
 
-MAINTAINER =	Frederic Cambus <fcambus@users.sourceforge.net>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM = Yes
 

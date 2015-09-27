@@ -44,7 +44,8 @@ CONFIGURE_ARGS =	--disable-docs \
 			--with-freetds-incdir=${LOCALBASE}/include \
 			--with-freetds-libdir=${LOCALBASE}/lib
 
-WANTLIB-main =		crypto m pthread ssl stdc++ z mysqlclient dbi
+WANTLIB-main =		crypto m pthread ssl z mysqlclient dbi
+WANTLIB-main +=		c++ c++abi
 LIB_DEPENDS-main =	databases/mariadb \
 			databases/libdbi
 RUN_DEPENDS-main =

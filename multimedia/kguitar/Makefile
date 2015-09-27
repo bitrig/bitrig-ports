@@ -15,7 +15,7 @@ HOMEPAGE =		http://kguitar.sourceforge.net/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =  ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2 c expat
-WANTLIB += fontconfig freetype idn m png pthread stdc++ util
+WANTLIB += fontconfig freetype idn m png pthread util
 WANTLIB += xcb z fam pthread-stubs
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore ${KDE}/kdefx ${KDE}/kdeprint
 WANTLIB += ${KDE}/kdesu ${KDE}/kdeui ${KDE}/kio ${KDE}/kparts

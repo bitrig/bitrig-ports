@@ -8,7 +8,6 @@ COMMENT-main =		CUDF library (C bindings)
 CATEGORIES =		devel sysutils
 
 VERSION =		0.7
-REVISION =		0
 DISTNAME =		cudf-${VERSION}
 PKGNAME-ocaml =		ocaml-cudf-${VERSION}
 PKGNAME-main =		libcudf-${VERSION}

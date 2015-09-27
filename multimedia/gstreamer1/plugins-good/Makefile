@@ -23,7 +23,7 @@ WANTLIB-main += FLAC Xdamage Xfixes bz2 xml2 pthread-stubs
 WANTLIB-main += gdk_pixbuf-2.0 gio-2.0 gstcontroller-1.0 lzma
 WANTLIB-main += gstfft-1.0 gstnet-1.0 gstriff-1.0 gstrtp-1.0 gstrtsp-1.0 xcb-render
 WANTLIB-main += gstallocators-1.0 gstsdp-1.0 jpeg ogg ossaudio png shout soup-2.4
-WANTLIB-main += speex sqlite3 stdc++ tag theora vorbis vpx>=5 wavpack xcb-shm
+WANTLIB-main += speex sqlite3 tag theora vorbis vpx>=5 wavpack xcb-shm
 WANTLIB-main += Xrender cairo cairo-gobject expat fontconfig freetype pixman-1
 WANTLIB-main += c++ c++abi
 

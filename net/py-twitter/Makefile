@@ -9,7 +9,6 @@ PKGNAME=		py-twitter-${MODPY_EGG_VERSION}
 CATEGORIES=		net www
 
 HOMEPAGE=		http://mike.verdone.ca/twitter/
-MAINTAINER=		Daniel Winters <daniel@tydirium.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes

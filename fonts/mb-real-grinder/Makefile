@@ -6,7 +6,6 @@ PKGNAME =		mb-real-grinder-201103
 CATEGORIES =		fonts
 
 HOMEPAGE =		http://modblackmoon.com/fonts.html
-MAINTAINER =		George Rosamond <george@nycbug.org>
 
 # Freeware with credit for commercial use
 PERMIT_PACKAGE_CDROM =	Yes

@@ -7,7 +7,6 @@ DISTNAME =		tarsnap-gui-${V}
 CATEGORIES =		sysutils
 
 HOMEPAGE =		https://github.com/Tarsnap/tarsnap-gui/wiki/Tarsnap
-MAINTAINER =		Josh Grosse <josh@jggimi.homeip.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

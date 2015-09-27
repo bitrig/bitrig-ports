@@ -63,7 +63,9 @@ WANTLIB-ldap =		crypto lber-2.4 ldap-2.4 sasl2 ssl
 RUN_DEPENDS-ldap =	${BASE_PKGPATH}
 
 LIB_DEPENDS-mysql =	databases/mariadb
-WANTLIB-mysql =		crypto m mysqlclient pthread ssl stdc++ z
+WANTLIB-mysql =		crypto m mysqlclient pthread ssl z
+WANTLIB-mysql +=	c++ c++abi
+
 RUN_DEPENDS-mysql =	${BASE_PKGPATH}
 
 LIB_DEPENDS-streaming =	graphics/ffmpeg>=20121026 \
@@ -71,7 +73,9 @@ LIB_DEPENDS-streaming =	graphics/ffmpeg>=20121026 \
 WANTLIB-streaming += avcodec avformat avutil bz2 crypto m gsm
 WANTLIB-streaming += mp3lame ogg pthread speex vorbis vorbisenc
 WANTLIB-streaming += vpx x264 xvidcore z opus ssl
-WANTLIB-streaming += stdc++ swresample x265
+WANTLIB-streaming += swresample x265
+WANTLIB-streaming += c++ c++abi
+
 RUN_DEPENDS-streaming = ${BASE_PKGPATH}
 
 USE_GMAKE =	Yes

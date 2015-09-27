@@ -84,7 +84,6 @@
      SUBDIR += klaxon
      SUBDIR += kpcli
      SUBDIR += kqoauth
-     SUBDIR += l0phtcrack
      SUBDIR += lastpass-cli
      SUBDIR += libassuan
      SUBDIR += libfprint

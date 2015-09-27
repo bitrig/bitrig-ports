@@ -20,7 +20,8 @@ WANTLIB += avformat avutil bz2 c crypto dv dvdread freetype gsm jpeg
 WANTLIB += m mp3lame mpeg2 mpeg2convert ogg opus postproc pthread
 WANTLIB += pthread-stubs quicktime sndio speex ssl theora
 WANTLIB += usbhid vorbis vorbisenc vorbisfile vpx x264 xcb xml2 z
-WANTLIB += lzma stdc++ swresample x265
+WANTLIB += lzma swresample x265
+WANTLIB += c++ c++abi
 
 # xvidcore is dlopen()d so check-lib-depends shows it as Extra, however we
 # want to track changes to the ABI to ensure transcode is updated if needed.

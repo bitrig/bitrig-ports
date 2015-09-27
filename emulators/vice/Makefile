@@ -14,8 +14,9 @@ HOMEPAGE =		http://viceteam.org/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += ICE SDL SM X11 Xaw Xext Xmu Xpm Xrandr Xt Xv Xxf86vm
-WANTLIB += c gif jpeg png m pthread readline stdc++ termcap usbhid
+WANTLIB += c gif jpeg png m pthread readline termcap usbhid
 WANTLIB += z
+WANTLIB += c++ c++abi
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=vice-emu/}
 

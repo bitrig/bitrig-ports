@@ -10,8 +10,6 @@ SHARED_LIBS=	nfs	0.0
 
 HOMEPAGE=	https://github.com/sahlberg/libnfs
 
-MAINTAINER=	Brad Smith <brad@comstyle.com>
-
 # LGPLv2.1+, GPLv3+ and BSD
 PERMIT_PACKAGE_CDROM=	Yes
 

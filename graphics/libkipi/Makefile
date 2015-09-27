@@ -29,7 +29,7 @@ RUN_DEPENDS-icons =	x11/gtk+3,-guic
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 drm expat fam
 WANTLIB += fontconfig freetype idn jpeg lcms lib/qt3/qt-mt>=3.33 m mng
-WANTLIB += png pthread pthread-stubs stdc++ util xcb z
+WANTLIB += png pthread pthread-stubs util xcb z
 WANTLIB += X11-xcb Xau Xdmcp glapi xcb-dri2 xcb-glx
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=6 ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kwalletclient

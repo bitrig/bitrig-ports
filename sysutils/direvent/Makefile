@@ -6,8 +6,6 @@ DISTNAME=		direvent-5.0
 
 CATEGORIES=		sysutils
 
-MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
-
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
 

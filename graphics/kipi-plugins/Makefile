@@ -39,13 +39,13 @@ MODULES =	devel/gettext \
 
 WANTLIB =  GL ICE SM X11 Xcursor Xdamage Xext Xfixes Xft Xi Xinerama
 WANTLIB += Xmu Xrandr Xrender Xt Xxf86vm art_lgpl_2 drm expat
-WANTLIB += fontconfig freetype idn jpeg lcms m mng png stdc++ util xcb
+WANTLIB += fontconfig freetype idn jpeg lcms m mng png util xcb
 WANTLIB += z X11-xcb Xau Xdmcp fam glapi pthread pthread-stubs xcb-dri2 xcb-glx
 WANTLIB += lib/qt3/qt-mt>=3.33 lzma
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=6 ${KDE}/kdefx ${KDE}/kdeprint
 WANTLIB += ${KDE}/kdesu ${KDE}/kdeui ${KDE}/kio ${KDE}/kipi ${KDE}/kparts
 WANTLIB += ${KDE}/kwalletclient
-WANTLIB += c++ c++abi pthread
+WANTLIB += c++ c++abi
 
 WANTLIB-main =  ${WANTLIB} exif exiv2 exslt gcrypt gpg-error gphoto2
 WANTLIB-main += gphoto2_port ltdl pcre pcreposix tiff xml2 xslt 

@@ -4,7 +4,6 @@ COMMENT=	device color profile management daemon
 
 V=		1.2.12
 DISTNAME=	colord-${V}
-REVISION=	0
 EXTRACT_SUFX=	.tar.xz
 REVISION=	0
 

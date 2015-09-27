@@ -15,8 +15,6 @@ HOMEPAGE =		http://compcert.inria.fr/
 
 CATEGORIES =		lang
 
-MAINTAINER = Daniel Dickman <daniel@openbsd.org>
-
 # INRIA Non-Commercial License Agreement.
 PERMIT_PACKAGE_CDROM =	no commercial use
 PERMIT_PACKAGE_FTP =	Yes

@@ -6,8 +6,6 @@ DISTNAME =		JSON-MaybeXS-1.003005
 
 CATEGORIES =		converters
 
-MAINTAINER =		Alexander Bluhm <bluhm@openbsd.org>
-
 # perl_5
 PERMIT_PACKAGE_CDROM =	Yes
 

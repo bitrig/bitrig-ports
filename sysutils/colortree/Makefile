@@ -9,8 +9,6 @@ CATEGORIES =	sysutils
 
 HOMEPAGE =	http://mama.indstate.edu/users/ice/tree/
 
-MAINTAINER =	David Dahlberg <david+bsd@dahlberg.cologne>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 

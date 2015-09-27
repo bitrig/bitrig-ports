@@ -17,7 +17,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 # XXX doesn't seem to actually link against libpcre?
 LIB_DEPENDS =		devel/pcre
-WANTLIB =		pcre m stdc++
+WANTLIB =		pcre m
+WANTLIB +=		c++ c++abi
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		${CONFIGURE_SHARED}

@@ -64,7 +64,8 @@ ERRORS += "Fatal: choose either domainscale or largescale, not both"
 
 LIB_DEPENDS-mysql=	${LIB_DEPENDS} ${PKGNAME-main}:mail/dspam,-main \
 			databases/mariadb
-WANTLIB-mysql=		${WANTLIB} dspam z ssl stdc++ lib/mysql/mysqlclient
+WANTLIB-mysql=		${WANTLIB} dspam z ssl lib/mysql/mysqlclient
+WANTLIB-mysql +=	c++ c++abi
 
 LIB_DEPENDS-pgsql=	${LIB_DEPENDS} ${PKGNAME-main}:mail/dspam,-main \
 			databases/postgresql

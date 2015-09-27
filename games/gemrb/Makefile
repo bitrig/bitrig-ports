@@ -12,15 +12,14 @@ CATEGORIES =		games emulators x11
 
 HOMEPAGE =		http://www.gemrb.org/
 
-MAINTAINER =		Kirill Bychkov <kirby@openbsd.org>
-
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gemrb/}
 
-WANTLIB += SDL SDL_mixer c freetype m openal png pthread stdc++
+WANTLIB += SDL SDL_mixer c freetype m openal png pthread
 WANTLIB += vlc vorbisfile z ${MODPY_WANTLIB}
+WANTLIB += c++ c++abi
 
 MODULES =		converters/libiconv \
 			devel/cmake \

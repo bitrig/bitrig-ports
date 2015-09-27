@@ -7,7 +7,6 @@ PKGNAME =	py-configparser-${MODPY_EGG_VERSION}
 CATEGORIES =	devel
 
 HOMEPAGE =	https://bitbucket.org/ambv/configparser
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes

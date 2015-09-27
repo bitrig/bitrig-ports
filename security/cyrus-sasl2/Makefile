@@ -67,7 +67,9 @@ ERRORS+=	${BRKFLAVORMSG}
 .endif
 PKG_ARGS=	-Dsql=1
 LIB_DEPENDS+=	databases/mariadb
-WANTLIB+=	m pthread ssl stdc++ z lib/mysql/mysqlclient
+WANTLIB+=	m pthread ssl z lib/mysql/mysqlclient
+WANTLIB+=	c++ c++abi
+
 CONFIGURE_ARGS+=--enable-sql \
 		--with-mysql \
 		--without-pgsql \

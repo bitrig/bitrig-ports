@@ -8,7 +8,6 @@ ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 VERSION =		5.4.1
 ENGINIO_VERSION =	1.1.1
 DISTNAME =		qt-everywhere-opensource-src-${VERSION}
-REVISION-main =		0
 
 COMMENT-main =		C++ general-purpose toolkit
 COMMENT-examples =	examples for Qt5

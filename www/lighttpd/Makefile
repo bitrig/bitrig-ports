@@ -47,7 +47,8 @@ WANTLIB+=	lber-2.4 ldap-2.4 sasl2
 .if ${FLAVOR:Mmysql}
 CONFIGURE_ARGS+= --with-mysql
 LIB_DEPENDS+=	databases/mariadb
-WANTLIB +=	mysqlclient pthread stdc++
+WANTLIB +=	mysqlclient pthread
+WANTLIB +=	c++ c++abi
 .endif
 
 post-extract:

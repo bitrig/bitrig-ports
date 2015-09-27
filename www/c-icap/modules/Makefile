@@ -26,7 +26,8 @@ cWANTLIB=	bz2 pthread z
 
 LIB_DEPENDS-main=	security/clamav
 WANTLIB-main=		${cWANTLIB} ${WANTLIB}
-WANTLIB-main+=		clamav crypto ltdl lzma m pthread ssl stdc++ xml2 z
+WANTLIB-main+=		clamav crypto ltdl lzma m pthread ssl xml2 z
+WANTLIB-main+=		c++ c++abi
 
 LIB_DEPENDS-urlcheck=	archivers/bzip2 \
 			databases/db/v4 \

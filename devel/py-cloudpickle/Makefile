@@ -7,7 +7,6 @@ PKGNAME =	py-cloudpickle-${MODPY_EGG_VERSION}
 CATEGORIES =	devel
 
 HOMEPAGE =	https://github.com/cloudpipe/cloudpickle
-MAINTAINER =	Brian Callahan <bcallah@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

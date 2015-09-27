@@ -83,9 +83,6 @@ CATEGORIES =		net sysutils security
 
 HOMEPAGE =		https://www.samba.org/
 
-MAINTAINER =		Ian McWilliam <kaosagnt@tpg.com.au>, \
-			Jeremie Courreges-Anglas <jca@wxcvbn.org>
-
 # GPLv3, LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 

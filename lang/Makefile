@@ -84,7 +84,6 @@
      SUBDIR += railo
      SUBDIR += rakudo
      SUBDIR += regina-rexx
-     SUBDIR += rubinius
      SUBDIR += ruby
      SUBDIR += rust
      SUBDIR += sbcl

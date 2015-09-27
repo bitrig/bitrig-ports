@@ -16,7 +16,8 @@ HOMEPAGE=	http://www.libgd.org/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c expat fontconfig freetype jpeg m png pthread
-WANTLIB += pthread-stubs stdc++ tiff vpx z
+WANTLIB += pthread-stubs tiff vpx z
+WANTLIB += c++ c++abi
 
 MASTER_SITES=	https://bitbucket.org/libgd/gd-libgd/downloads/
 

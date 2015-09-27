@@ -7,8 +7,6 @@ CATEGORIES=		sysutils
 
 HOMEPAGE=		http://cliki.net/cl-launch
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # LLGPL (http://www.cliki.net/LLGPL)
 PERMIT_PACKAGE_CDROM=	Yes
 

@@ -3,7 +3,6 @@
 COMMENT=	aspell dictionary for Esperanto
 CATEGORIES=	textproc
 DISTNAME=	aspell6-eo-2.1.20000225a-2
-REVISION=	0
 MASTER_SITES=	${MASTER_SITE_GNU:=aspell/dict/eo/}
 REVISION=	0
 

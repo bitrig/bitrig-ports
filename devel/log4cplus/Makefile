@@ -16,7 +16,8 @@ HOMEPAGE=		http://log4cplus.sourceforge.net/
 # Apache License 2.0 + BSD style
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m pthread stdc++
+WANTLIB += m pthread
+WANTLIB += c++ c++abi
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=log4cplus/}
 

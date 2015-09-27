@@ -8,8 +8,6 @@ GH_TAGNAME =	v0.6.0
 DISTNAME =	${GH_PROJECT}-${GH_TAGNAME:S/v//}
 CATEGORIES =	security
 
-MAINTAINER =	Bjorn Ketelaars <bjorn.ketelaars@hydroxide.nl>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
