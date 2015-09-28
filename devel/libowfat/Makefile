@@ -1,17 +1,17 @@
-# $OpenBSD: Makefile,v 1.3 2014/12/31 08:42:26 landry Exp $
+# $OpenBSD: Makefile,v 1.4 2015/09/28 16:52:49 jca Exp $
 
 BROKEN = 	needs work on bitrig
 
 COMMENT =	library of general purpose APIs
 BROKEN-hppa=	missing atomic ops
 
-DISTNAME =	libowfat-0.29
+DISTNAME =	libowfat-0.30
 REVISION =	0
 CATEGORIES =	devel
 
 HOMEPAGE =	http://www.fefe.de/libowfat/
-MASTER_SITES =	http://dl.fefe.de/
-EXTRACT_SUFX =	.tar.bz2
+MASTER_SITES =	http://www.fefe.de/libowfat/
+EXTRACT_SUFX =	.tar.xz
 USE_GMAKE =	Yes
 MAKE_FILE =	GNUmakefile
 
