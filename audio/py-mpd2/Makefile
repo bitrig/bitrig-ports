@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/04/02 14:21:13 jasper Exp $
+# $OpenBSD: Makefile,v 1.7 2015/09/29 10:51:14 sthen Exp $
 
 COMMENT =		Python client interface for MPD
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/09/21 08:32:35 benoit Exp $
+# $OpenBSD: Makefile,v 1.5 2015/09/29 10:51:14 sthen Exp $
 
 COMMENT=		library to write SQL queries
 
