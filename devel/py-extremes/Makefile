@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/04/02 14:21:14 jasper Exp $
+# $OpenBSD: Makefile,v 1.7 2015/09/29 10:51:53 sthen Exp $
 
 COMMENT =		mix and max objects
 

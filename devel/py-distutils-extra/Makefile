@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2015/04/04 14:19:27 landry Exp $
+# $OpenBSD: Makefile,v 1.10 2015/09/29 10:51:53 sthen Exp $
 
 COMMENT=		add support for i18n, documentation and icons to distutils
 
