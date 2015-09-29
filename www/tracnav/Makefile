@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 11:44:50 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2015/09/29 10:53:17 sthen Exp $
 
 COMMENT=	customizable navigation bar for trac's wiki
 

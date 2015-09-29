@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/08/07 21:32:54 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2015/09/29 10:53:17 sthen Exp $
 
 COMMENT=		standards compliant Python WebDAV server and library
 
