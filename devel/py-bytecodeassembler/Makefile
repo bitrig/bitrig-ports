@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2015/04/02 14:21:14 jasper Exp $
+# $OpenBSD: Makefile,v 1.9 2015/09/29 10:51:44 sthen Exp $
 
 COMMENT =		python bytecode assembler
 

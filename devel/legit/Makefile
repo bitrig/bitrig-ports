@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2015/04/02 14:21:13 jasper Exp $
+# $OpenBSD: Makefile,v 1.4 2015/09/29 10:51:43 sthen Exp $
 
 COMMENT=		complementary command-line interface for Git
 
@@ -6,6 +6,7 @@ MODPY_EGG_VERSION=	0.1.1
 DISTNAME=		legit-${MODPY_EGG_VERSION}
 REVISION=		0
 CATEGORIES=		devel
+REVISION=		0
 
 HOMEPAGE=		http://www.git-legit.org/
 

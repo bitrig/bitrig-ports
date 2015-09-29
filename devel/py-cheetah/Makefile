@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2015/04/21 18:33:48 sthen Exp $
+# $OpenBSD: Makefile,v 1.27 2015/09/29 10:51:44 sthen Exp $
 
 COMMENT=		Python-powered template engine and code generator
 

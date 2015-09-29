@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/01/28 09:20:28 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.16 2015/09/29 10:51:43 sthen Exp $
 
 COMMENT=		libgit2 bindings in Python
 

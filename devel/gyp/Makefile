@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/01/20 19:40:02 abieber Exp $
+# $OpenBSD: Makefile,v 1.5 2015/09/29 10:51:43 sthen Exp $
 
 COMMENT= generate SCons/Makefiles from platform-independent input
 
