@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/04/02 14:21:17 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2015/09/29 10:52:53 sthen Exp $
 
 COMMENT=		generator for pronounceable random words
 

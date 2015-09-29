@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2013/10/11 23:51:46 naddy Exp $
+# $OpenBSD: Makefile,v 1.16 2015/09/29 10:52:55 sthen Exp $
 
 COMMENT=	web application construction kit
 

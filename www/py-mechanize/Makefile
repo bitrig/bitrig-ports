@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 11:44:48 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2015/09/29 10:52:55 sthen Exp $
 
 COMMENT=		stateful programmatic web browsing module
 

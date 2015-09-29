@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2015/04/02 14:21:18 jasper Exp $
+# $OpenBSD: Makefile,v 1.4 2015/09/29 10:52:55 sthen Exp $
 
 COMMENT =	plugin for reCAPTCHA and reCAPTCHA Mailhide
 

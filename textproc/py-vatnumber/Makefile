@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/10/23 15:31:08 benoit Exp $
+# $OpenBSD: Makefile,v 1.7 2015/09/29 10:52:53 sthen Exp $
 
 COMMENT =		Python module to validate VAT numbers
 

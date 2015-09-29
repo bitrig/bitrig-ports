@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/06/11 11:44:01 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2015/09/29 10:52:53 sthen Exp $
 
 COMMENT=	Python library to manipulate gettext files
 

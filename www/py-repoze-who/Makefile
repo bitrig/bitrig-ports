@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/09/18 07:30:52 benoit Exp $
+# $OpenBSD: Makefile,v 1.5 2015/09/29 10:52:55 sthen Exp $
 
 COMMENT =	identification and authentication framework for WSGI
 

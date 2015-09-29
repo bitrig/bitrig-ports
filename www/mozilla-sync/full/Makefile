@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2013/05/14 08:09:24 sthen Exp $
+# $OpenBSD: Makefile,v 1.4 2015/09/29 10:52:54 sthen Exp $
 
 COMMENT =	Mozilla sync server
 

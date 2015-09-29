@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 11:44:48 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2015/09/29 10:52:54 sthen Exp $
 
 COMMENT=		handle HTML forms on the client side
 

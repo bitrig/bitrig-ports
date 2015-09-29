@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2015/09/06 16:43:43 jca Exp $
+# $OpenBSD: Makefile,v 1.26 2015/09/29 10:52:53 sthen Exp $
 
 BROKEN-hppa=	OOM on src/lxml/lxml.etree.c
 
