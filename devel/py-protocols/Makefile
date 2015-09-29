@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.24 2015/09/29 10:52:11 sthen Exp $
+# $OpenBSD: Makefile,v 1.23 2015/09/29 09:02:55 edd Exp $
 
 COMMENT=		protocol definition, declaration and adaptation
 
 MODPY_EGG_VERSION =	1.0a0dev_r0
 DISTNAME=		PyProtocols-1.0a0dev_r2306
 PKGNAME=		py-protocols-1.0r2306
-REVISION=		3
+REVISION=		2
 EPOCH=			0
 
 WRKSRC =		${WRKDIR}/PyProtocols
@@ -23,10 +23,12 @@ WANTLIB += ${MODPY_WANTLIB}
 WANTLIB += pthread
 
 MODULES=		lang/python
-RUN_DEPENDS=		devel/py-decoratortools
+RUN_DEPENDS=		devel/py-decoratortools \
+			devel/py-setuptools>=18.2v0
 TEST_DEPENDS=		${RUN_DEPENDS}
 
 MODPY_SETUPTOOLS=	Yes
+BUILD_DEPENDS +=	devel/py-setuptools>=18.2v0
 
 # make regress happy after fake
 post-install:
