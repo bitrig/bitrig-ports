@@ -1,4 +1,4 @@
-# $OpenBSD: python.port.mk,v 1.83 2015/10/09 09:22:48 sthen Exp $
+# $OpenBSD: python.port.mk,v 1.82 2015/09/29 10:50:16 sthen Exp $
 #
 #	python.port.mk - Xavier Santolaria <xavier@santolaria.net>
 #	This file is in the public domain.
