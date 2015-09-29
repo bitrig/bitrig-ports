@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2015/04/02 14:21:15 jasper Exp $
+# $OpenBSD: Makefile,v 1.3 2015/09/29 10:52:11 sthen Exp $
 
 COMMENT =		send files to the trash natively
 

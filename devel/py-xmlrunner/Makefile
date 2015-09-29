@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2015/04/02 14:21:16 jasper Exp $
+# $OpenBSD: Makefile,v 1.6 2015/09/29 10:52:12 sthen Exp $
 
 COMMENT =		test runner with JUnit like XML reporting
 

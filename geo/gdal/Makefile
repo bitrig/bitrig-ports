@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.40 2015/09/25 08:19:21 landry Exp $
+# $OpenBSD: Makefile,v 1.41 2015/09/29 10:52:12 sthen Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -13,6 +13,7 @@ SHARED_ONLY =	Yes
 PKGNAME-main =	${DISTNAME}
 PKGNAME-python =py-${DISTNAME}
 PKGNAME-perl =	p5-Geo-GDAL-${V}
+REVISION-python =	0
 
 SHARED_LIBS =	gdal 23.0 #20.0
 CATEGORIES =	geo devel

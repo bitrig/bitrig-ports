@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/04/02 14:21:16 jasper Exp $
+# $OpenBSD: Makefile,v 1.12 2015/09/29 10:52:13 sthen Exp $
 
 COMMENT = 		Python charting module
 

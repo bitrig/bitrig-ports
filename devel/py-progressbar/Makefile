@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/08/07 21:31:45 naddy Exp $
+# $OpenBSD: Makefile,v 1.10 2015/09/29 10:52:11 sthen Exp $
 
 COMMENT =		text progressbar library for python
 

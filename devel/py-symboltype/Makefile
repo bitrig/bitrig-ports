@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/05/18 06:56:04 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2015/09/29 10:52:12 sthen Exp $
 
 COMMENT =		symbol type for python
 
