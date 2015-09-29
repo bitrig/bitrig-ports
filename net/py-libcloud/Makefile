@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/09/03 16:07:00 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.5 2015/09/29 10:52:29 sthen Exp $
 
 COMMENT=		unified interface for interacting with cloud services
 

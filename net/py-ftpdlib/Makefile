@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2015/04/02 14:21:16 jasper Exp $
+# $OpenBSD: Makefile,v 1.14 2015/09/29 10:52:29 sthen Exp $
 
 COMMENT =		FTP server library for Python
 

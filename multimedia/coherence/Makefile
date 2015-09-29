@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/08/11 21:21:39 landry Exp $
+# $OpenBSD: Makefile,v 1.11 2015/09/29 10:52:29 sthen Exp $
 
 COMMENT =	UPnP/DLNA media server
 

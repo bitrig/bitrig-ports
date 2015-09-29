@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2015/09/14 13:30:17 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.9 2015/09/29 10:52:33 sthen Exp $
 
 MODPY_EGG_VERSION =	3.2.3
 

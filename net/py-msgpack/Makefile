@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/06/04 07:46:28 jasper Exp $
+# $OpenBSD: Makefile,v 1.5 2015/09/29 10:52:29 sthen Exp $
 
 COMMENT =	messagepack (de)serializer
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/09/29 07:02:02 jasper Exp $
+# $OpenBSD: Makefile,v 1.5 2015/09/29 10:52:34 sthen Exp $
 
 COMMENT=	bcrypt blowfish password hashing for Python
 

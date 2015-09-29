@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2015/07/20 23:08:19 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.25 2015/09/29 10:52:28 sthen Exp $
 
 BROKEN-sparc64 =	ICE in scipy/optimize/minpack/qrsolv.f:189
 BROKEN-hppa =		ICE in scipy/special/specfun/specfun.f:5151
@@ -11,6 +11,7 @@ DISTNAME=		scipy-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
 REVISION=		2
 CATEGORIES=		math devel
+REVISION=		2
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

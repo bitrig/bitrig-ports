@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.3 2015/06/28 22:52:21 bcallah Exp $
+# $OpenBSD: Makefile,v 1.5 2015/09/29 10:52:29 sthen Exp $
 
 MODPY_EGG_VERSION =	0.3.74
 COMMENT =	download YouTube content and retrieve metadata
 DISTNAME =	pafy-${MODPY_EGG_VERSION}
 PKGNAME =	py-pafy-${MODPY_EGG_VERSION}
 CATEGORIES =	multimedia
+REVISION =	1
 
 HOMEPAGE =	http://np1.github.io/pafy/
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2015/04/02 14:21:16 jasper Exp $
+# $OpenBSD: Makefile,v 1.19 2015/09/29 10:52:29 sthen Exp $
 
 COMMENT =		GeoIP Python API
 
@@ -7,6 +7,7 @@ DISTNAME =		GeoIP-${MODPY_EGG_VERSION}
 PKGNAME =		py-GeoIP-${MODPY_EGG_VERSION}
 REVISION =		0
 CATEGORIES =		net
+REVISION =		0
 
 HOMEPAGE =		http://dev.maxmind.com/geoip/
 

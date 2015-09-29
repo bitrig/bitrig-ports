@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2015/04/02 14:21:17 jasper Exp $
+# $OpenBSD: Makefile,v 1.40 2015/09/29 10:52:34 sthen Exp $
 
 COMMENT = 	Python module that implements the SSH2 protocol
 
@@ -7,6 +7,7 @@ DISTNAME = 		paramiko-${MODPY_EGG_VERSION}
 PKGNAME = 		py-${DISTNAME}
 REVISION = 		0
 CATEGORIES = 		security
+REVISION =              0
 
 HOMEPAGE = 		https://github.com/paramiko/paramiko/
 

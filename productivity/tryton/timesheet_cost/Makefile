@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/09/19 21:52:34 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.8 2015/09/29 10:52:33 sthen Exp $
 
 TRYTOND_MODULE =	timesheet_cost
 REVISION =		0
