@@ -1,0 +1,11 @@
+--- doc/xslt/Makefile.orig	Wed Sep 30 21:18:26 2015
++++ doc/xslt/Makefile	Wed Sep 30 21:19:06 2015
+@@ -1034,7 +1034,7 @@ gnome-doc-xslt-check-includes:
+ 	xmls=`echo $(xsldoc_base) | sort`; \
+ 	exs=""; \
+ 	for xml in $$xmls; do \
+-	  if echo "$$incs" | tr '\n' '\ ' | grep -v "\<$$xml\>" 1>/dev/null; then \
++	  if echo "$$incs" | tr '\n' '\ ' | grep -v "[[:<:]]$$xml[[:>:]]" 1>/dev/null; then \
+ 	    exs="$$exs$$xml "; \
+ 	fi; done; \
+ 	if [ "x$$exs" != "x" ]; then \

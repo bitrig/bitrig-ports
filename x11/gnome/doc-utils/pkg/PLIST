@@ -285,6 +285,8 @@ share/locale/ta/LC_MESSAGES/gnome-doc-utils.mo
 share/locale/te/
 share/locale/te/LC_MESSAGES/
 share/locale/te/LC_MESSAGES/gnome-doc-utils.mo
+share/locale/th/
+share/locale/th/LC_MESSAGES/
 share/locale/th/LC_MESSAGES/gnome-doc-utils.mo
 share/locale/tr/LC_MESSAGES/gnome-doc-utils.mo
 share/locale/ug/
@@ -304,7 +306,6 @@ share/locale/wa/LC_MESSAGES/gnome-doc-utils.mo
 share/locale/zh_CN/LC_MESSAGES/gnome-doc-utils.mo
 share/locale/zh_HK/LC_MESSAGES/gnome-doc-utils.mo
 share/locale/zh_TW/LC_MESSAGES/gnome-doc-utils.mo
-share/pkgconfig/
 share/pkgconfig/gnome-doc-utils.pc
 share/pkgconfig/xml2po.pc
 share/xml/gnome/

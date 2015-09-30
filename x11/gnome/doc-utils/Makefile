@@ -4,8 +4,6 @@
 # dependency on itself. We do not enforce dependency on x11/gnome/yelp
 # either because it would bring lots of other dependencies.
 
-BROKEN=		needs work on bitrig
-
 COMMENT=	collection of documentation utilities for the GNOME project
 
 GNOME_PROJECT=	gnome-doc-utils
