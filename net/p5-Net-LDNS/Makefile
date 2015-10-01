@@ -1,21 +1,19 @@
-# $OpenBSD: Makefile,v 1.2 2015/02/13 13:43:07 sthen Exp $
+# $OpenBSD: Makefile,v 1.3 2015/10/01 12:21:32 sthen Exp $
 
 SHARED_ONLY =	Yes
 
 COMMENT =	module to interface the DNS resolver using the ldns library
 
 MODULES =	cpan
-DISTNAME =	Net-LDNS-0.70
-REVISION =	0
+DISTNAME =	Net-LDNS-0.75
 CATEGORIES =	net
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += idn ldns
+WANTLIB += crypto idn
 
-LIB_DEPENDS =	devel/libidn \
-		net/ldns/libldns
+LIB_DEPENDS =	devel/libidn
 BUILD_DEPENDS =	devel/p5-Devel-CheckLib
 TEST_DEPENDS =	devel/p5-Test-Fatal
 
