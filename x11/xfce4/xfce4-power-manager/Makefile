@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.17 2015/03/22 21:00:53 landry Exp $
 
-BROKEN = 	needs work on bitrig
-
 COMMENT =	Xfce4 power manager
 
 XFCE_VERSION =	1.4.4
@@ -26,6 +24,7 @@ RUN_DEPENDS +=	sysutils/polkit
 RUN_DEPENDS +=	sysutils/consolekit
 
 #CONFIGURE_ARGS = --enable-debug
+CONFIGURE_ARGS = --with-backend=openbsd
 CONFIGURE_ENV +=ac_cv_lib_Xext_DPMSQueryExtension=yes
 FAKE_FLAGS =	autostartdir=${PREFIX}/share/examples/xfce4-power-manager
 
