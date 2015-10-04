@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.75 2015/03/15 08:37:03 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
-
 SHARED_ONLY=	Yes
 
 COMMENT=	document centric objects and utilities
@@ -46,6 +44,7 @@ MODGNOME_TOOLS=		gobject-introspection
 MODGNOME_LDFLAGS=	-L${X11BASE}/lib
 
 CONFIGURE_STYLE=	gnu
+CONFIGURE_ARGS=		--enable-compile-warnings=minimum
 
 post-install:
 	rm ${PREFIX}/lib/goffice/${GNOME_VERSION}/plugins/*/*.{a,la}
