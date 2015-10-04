@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.58 2014/09/23 08:39:52 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
-
 SHARED_ONLY=	Yes
 
 COMMENT=	applications integration into Nautilus
@@ -21,6 +19,7 @@ WANTLIB += pthread z
 MODULES=	devel/gettext \
 		x11/gnome
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build-aux
 
 MODGNOME_TOOLS=	gobject-introspection
 LIB_DEPENDS=	devel/glib2
