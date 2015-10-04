@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.67 2015/03/16 20:31:34 landry Exp $
 
-BROKEN= 	needs work on bitrig
-
 COMMENT=	Xfce4 session manager
 
 XFCE_PROJECT=	xfce4-session
@@ -20,6 +18,7 @@ MODXFCE_PURGE_LA =	lib/xfce4/session/splash-engines
 CONFIGURE_ENV=  ac_cv_header_sys_user_h=yes
 CONFIGURE_ARGS=	--disable-linker-opts \
 		--disable-systemd \
+		--with-backend=openbsd \
 		--with-xsession-prefix=${PREFIX}
 #CONFIGURE_ARGS+= --enable-session-screenshots
 #XXX session-screenshots broken?
