@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/01/22 22:31:04 naddy Exp $
+# $OpenBSD: Makefile,v 1.16 2015/10/05 16:29:02 sthen Exp $
 
 COMMENT=		tool to monitor interface bandwidth usage
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2013/03/11 11:35:50 espie Exp $
+# $OpenBSD: Makefile,v 1.22 2015/10/05 16:29:02 sthen Exp $
 
 COMMENT=		No-IP.com Dynamic DNS client
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2015/05/01 17:40:58 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.30 2015/10/05 16:29:02 sthen Exp $
 
 COMMENT=	TCP/UDP ping/traceroute tool
 
