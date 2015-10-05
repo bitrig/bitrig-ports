@@ -18,7 +18,7 @@ WANTLIB += freetype gbm gcrypt gdk-3 gdk_pixbuf-2.0 gio-2.0 glapi
 WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gpg-error graphite2
 WANTLIB += gstapp-1.0 gstaudio-1.0 gstbase-1.0 gstfft-1.0 gstpbutils-1.0
 WANTLIB += gstreamer-1.0 gsttag-1.0 gstvideo-1.0 gthread-2.0 gtk-3
-WANTLIB += harfbuzz harfbuzz-icu hyphen>=0.0 icudata icui18n icuuc
+WANTLIB += harfbuzz harfbuzz-icu hyphen icudata icui18n icuuc
 WANTLIB += javascriptcoregtk-4.0 jpeg lzma m notify orc-0.4 pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread
 WANTLIB += pthread-stubs secret-1 soup-2.4 sqlite3 c++ c++abi webkit2gtk-4.0
