@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2014/04/17 19:00:57 jasper Exp $
+# $OpenBSD: Makefile,v 1.19 2015/10/07 05:50:25 ajacoutot Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -35,9 +35,8 @@ LIB_DEPENDS =	audio/libmp3splt \
 
 BUILD_DEPENDS =	multimedia/gstreamer-0.10/plugins-base
 
-RUN_DEPENDS =	multimedia/gstreamer-0.10/plugins-base \
-		devel/desktop-file-utils \
-		multimedia/gstreamer-0.10/plugins-ugly \
+RUN_DEPENDS =	devel/desktop-file-utils \
+		multimedia/gstreamer-0.10/plugins-ffmpeg \
 		multimedia/gstreamer-0.10/plugins-good
 
 MODULES =	devel/gettext

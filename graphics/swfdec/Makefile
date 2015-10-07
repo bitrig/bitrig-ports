@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.37 2015/08/25 14:17:44 sthen Exp $
+# $OpenBSD: Makefile,v 1.38 2015/10/07 05:50:25 ajacoutot Exp $
 
 COMMENT=	flash rendering library
 
@@ -30,7 +30,6 @@ LIB_DEPENDS=	devel/libsoup \
 		x11/gtk+2
 
 RUN_DEPENDS=	multimedia/gstreamer-0.10/plugins-good \
-		multimedia/gstreamer-0.10/plugins-ugly \
 		multimedia/gstreamer-0.10/plugins-ffmpeg
 MODULES=	devel/gettext
 
