@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.329 2015/07/07 09:45:11 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.330 2015/10/07 15:52:23 stu Exp $
 
      SUBDIR =
      SUBDIR += abook
@@ -226,7 +226,6 @@
      SUBDIR += sympa
      SUBDIR += teapop
      SUBDIR += thunderbird-i18n
-     SUBDIR += tkrat
      SUBDIR += tmda
      SUBDIR += tnef
      SUBDIR += trojita
