@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.37 2015/06/10 21:42:26 sthen Exp $
+# $OpenBSD: Makefile,v 1.38 2015/10/07 06:06:54 ajacoutot Exp $
 
 COMMENT-main=		ugly elements for GStreamer
 COMMENT-sidplay=	sidplay element for GStreamer (plugins-ugly)
