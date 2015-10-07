@@ -28,7 +28,7 @@ MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 # ISC
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c json-c lzma m pthread xml2 z c++ c++abi
+WANTLIB=	c json-c lzma m pthread xml2 z
 
 MASTER_SITES=	${MASTER_SITE_ISC:=bind9/$V/}
 
