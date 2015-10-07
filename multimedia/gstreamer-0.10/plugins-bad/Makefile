@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.89 2015/06/10 21:42:26 sthen Exp $
+# $OpenBSD: Makefile,v 1.90 2015/10/07 05:31:16 ajacoutot Exp $
 
 COMMENT-main=		bad elements for GStreamer
 COMMENT-neon=		neon element for GStreamer (plugins-bad)
