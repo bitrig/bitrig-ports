@@ -11,6 +11,7 @@
      SUBDIR += arabeyes-ttf
      SUBDIR += artwiz-aleczapka
      SUBDIR += bad-behaviour
+     SUBDIR += baekmuk
      SUBDIR += bitstream-vera
      SUBDIR += cantarell-fonts
      SUBDIR += charis

@@ -1,0 +1,10 @@
+@comment $OpenBSD$
+share/doc/baekmuk/
+share/doc/baekmuk/COPYRIGHT
+share/doc/baekmuk/README
+share/fonts/
+@fontdir share/fonts/baekmuk/
+share/fonts/baekmuk/batang.ttf
+share/fonts/baekmuk/dotum.ttf
+share/fonts/baekmuk/gulim.ttf
+share/fonts/baekmuk/hline.ttf
