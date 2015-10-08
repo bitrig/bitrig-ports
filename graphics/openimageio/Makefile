@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2015/10/04 12:59:15 pascal Exp $
+# $OpenBSD: Makefile,v 1.17 2015/10/08 12:02:03 jasper Exp $
 
 SHARED_ONLY =		Yes
 
@@ -47,6 +47,9 @@ CONFIGURE_ARGS +=	-DPYLIB_INSTALL_DIR="lib/python${MODPY_VERSION}/site-packages"
 
 CXXFLAGS +=		-pthread
 WRKDIST =		${WRKDIR}/oiio-Release-$V
+
+pre-configure:
+	sed -i 's,share/man,man,' ${WRKSRC}/CMakeLists.txt
 
 post-install:
 	find ${PREFIX} -name '*.orig' -exec rm -f {} \;
