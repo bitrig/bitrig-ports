@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.4 2015/10/08 07:18:24 rpointel Exp $
 
-BROKEN=			needs bitrig patches
-
 # IMPORTANT!  If you make any changes to the Python ports, be sure
 # to also update files/CHANGES.OpenBSD for your change.  This is a
 # requirement of the PSF license, if it constitutes a change to
