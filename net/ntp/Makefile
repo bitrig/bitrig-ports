@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.65 2015/07/01 11:59:24 sthen Exp $
+# $OpenBSD: Makefile,v 1.66 2015/10/08 21:19:22 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -12,6 +12,7 @@ VERSION=	4.2.8p3
 DISTNAME=	ntp-${VERSION}
 PKGNAME=	ntp-${VERSION:S/p/pl/}
 CATEGORIES=	net
+REVISION=	0
 
 HOMEPAGE=	http://www.ntp.org/
 

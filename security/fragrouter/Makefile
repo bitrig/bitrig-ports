@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.31 2013/10/31 21:12:12 sthen Exp $
+# $OpenBSD: Makefile,v 1.32 2015/10/08 21:19:23 sthen Exp $
 
 COMMENT=	tool for testing network IDS implementations
 

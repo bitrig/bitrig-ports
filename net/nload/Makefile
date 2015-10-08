@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/10/22 13:10:44 gonzalo Exp $
+# $OpenBSD: Makefile,v 1.7 2015/10/08 21:19:22 sthen Exp $
 
 COMMENT=		network traffic and bandwidth usage in real time
 
