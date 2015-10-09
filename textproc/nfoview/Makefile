@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/05/22 03:33:10 bcallah Exp $
+# $OpenBSD: Makefile,v 1.12 2015/10/09 12:48:22 jasper Exp $
 
 COMMENT =	simple viewer for NFO files
 MODPY_EGG_VERSION =	1.16
@@ -31,7 +31,7 @@ TEST_DEPENDS =	devel/py-test${MODPY_FLAVOR} \
 		devel/py-gobject3${MODPY_FLAVOR}
 
 post-patch:
-	perl -pi -e "s,share/man,man,g" ${WRKSRC}/setup.py
+	sed -i "s,share/man,man,g" ${WRKSRC}/setup.py
 
 do-test:
 	cd ${WRKSRC}/nfoview && ${LOCALBASE}/bin/py.test-3 unittest.py
