@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2015/09/29 10:52:29 sthen Exp $
+# $OpenBSD: Makefile,v 1.6 2015/10/09 08:26:38 sthen Exp $
 
 COMMENT =	messagepack (de)serializer
 
@@ -27,6 +27,9 @@ FLAVOR ?=
 TEST_DEPENDS =	devel/py-test \
 		devel/py-nose \
 		devel/py-six
+
+FLAVORS=	python3
+FLAVOR?=
 
 do-test:
 	@cd ${WRKSRC} && nosetests test
