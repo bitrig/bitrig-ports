@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.143 2015/09/26 06:26:04 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.144 2015/10/10 09:42:59 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -15,6 +15,7 @@ PKGNAME-main=		${DISTNAME}
 PKGNAME-smb=		${GNOME_PROJECT}-smb-${GNOME_VERSION}
 PKGNAME-goa=		${GNOME_PROJECT}-goa-${GNOME_VERSION}
 PKGNAME-nfs=		${GNOME_PROJECT}-nfs-${GNOME_VERSION}
+PKGNAME-google=		${GNOME_PROJECT}-google-${GNOME_VERSION}
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes
@@ -62,6 +63,12 @@ WANTLIB-nfs += ${WANTLIB}
 WANTLIB-nfs += gcrypt gpg-error nfs secret-1 gck-1 gcr-base-3
 WANTLIB-nfs += p11-kit gthread-2.0
 
+WANTLIB-google += ${WANTLIB}
+WANTLIB-google += crypto curl gck-1 gcr-base-3 gcrypt gdata goa-1.0 gpg-error
+WANTLIB-google += gthread-2.0 idn json-glib-1.0 lzma m nspr4 nss3 oauth
+WANTLIB-google += p11-kit plc4 plds4 secret-1 smime3 softokn3 soup-2.4
+WANTLIB-google += sqlite3 ssl ssl3 xml2
+
 MODGNOME_TOOLS=		docbook
 
 LIB_DEPENDS-main=	${LIB_DEPENDS} \
@@ -103,7 +110,7 @@ CONFIGURE_ARGS=		--disable-libsystemd-login \
 			--disable-udev \
 			--disable-gdu
 
-MULTI_PACKAGES=		-main -goa -nfs -smb
+MULTI_PACKAGES=		-main -goa -nfs -smb -google
 
 PSEUDO_FLAVORS=		no_smb no_goa no_nfs bootstrap
 FLAVOR?=		no_smb no_goa no_nfs bootstrap
