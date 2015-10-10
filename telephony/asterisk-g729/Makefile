@@ -28,10 +28,6 @@ BUILD_DEPENDS=	${RUN_DEPENDS} \
 RUN_DEPENDS=	telephony/asterisk>=11.0,<=12.0
 LIB_DEPENDS=	telephony/bcg729
 
-MODULES+=		gcc4
-MODGCC4_ARCHS=		*
-MODGCC4_LANGS=		c c++
-
 CONFIGURE_STYLE=  gnu
 CONFIGURE_ARGS+= --with-asterisk-includes=${LOCALBASE}/include \
 		--with-asterisk110 \
