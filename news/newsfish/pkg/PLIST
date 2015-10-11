@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+@bin bin/newsfish
+share/doc/newsfish/
+share/doc/newsfish/ChangeLog
+share/doc/newsfish/INSTALL
+share/doc/newsfish/README
+share/doc/newsfish/TODO
