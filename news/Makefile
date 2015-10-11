@@ -4,6 +4,7 @@
      SUBDIR += aub
      SUBDIR += hellanzb
      SUBDIR += leafnode
+     SUBDIR += newsfish
      SUBDIR += nn
      SUBDIR += p5-Gateway
      SUBDIR += p5-News-Article
