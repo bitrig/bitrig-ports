@@ -1,0 +1,5 @@
+newsfish is batch USENET news reader. Given a list of newsgroups and a
+set of filters for each newsgroup, newfish scans unread articles, applies
+the appropriate filters to them, and saves all the matching articles into
+mbox-style files. The articles can then be read with any mail program that
+understands the mbox format, such as pine.
