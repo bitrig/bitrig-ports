@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.24 2015/09/12 18:27:27 sthen Exp $
+# $OpenBSD: Makefile,v 1.25 2015/10/14 20:21:15 sthen Exp $
 
 BROKEN = 	needs work on bitrig
 
 COMMENT-main =	graphical network protocol analyzer
 COMMENT-text =	network protocol analyzer
 
-WVER =		1.12.7
+WVER =		1.12.8
 PORTROACH =	limitw:1,even
 DISTNAME =	wireshark-${WVER}
 PKGNAME-main =	wireshark-${WVER}
@@ -30,15 +30,14 @@ USE_GMAKE =	Yes
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODLUA_VERSION = 5.2
-REVISION =	1
 MODULES =	lang/lua lang/python
 MODLUA_SA =	Yes
 MODLUA_RUNDEP =	No
 MODPY_RUNDEP =	No
 
-WANTLIB +=	c glib-2.0 m pcap pthread z ${MODLUA_WANTLIB}
+WANTLIB +=	c glib-2.0 m pcap pthread z
 
-WANTLIB-text +=	${WANTLIB} GeoIP cares gcrypt gmodule-2.0
+WANTLIB-text +=	${WANTLIB} ${MODLUA_WANTLIB} GeoIP cares gcrypt gmodule-2.0
 WANTLIB-text +=	gnutls gpg-error smi
 
 WANTLIB-main +=	${WANTLIB} wireshark wiretap wsutil
