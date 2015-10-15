@@ -13,9 +13,9 @@ PKGNAME-lemon=	lemon-${V}
 CATEGORIES=	databases
 IGNORE-main = "--${FULLPKGNAME-main} comes with OpenBSD as of release 5.2"
 SUBPACKAGE ?= -lemon
-REVISION-lemon=	0
-REVISION-main=	0
-REVISION-tcl=	2
+REVISION-lemon=	1
+REVISION-main=	1
+REVISION-tcl=	3
 
 MASTER_SITES =	${HOMEPAGE}2013/
 
