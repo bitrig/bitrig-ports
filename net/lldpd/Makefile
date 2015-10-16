@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.20 2015/10/01 09:56:11 sthen Exp $
+# $OpenBSD: Makefile,v 1.21 2015/10/16 10:27:41 sthen Exp $
 
 BROKEN=		needs work on bitrig
 
 COMMENT=	LLDP (802.1ab)/CDP/EDP/SONMP/FDP daemon and SNMP subagent
 
 DISTNAME=	lldpd-0.7.18
+REVISION=	0
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		LLDP-MIB-200505060000Z.txt:0
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
