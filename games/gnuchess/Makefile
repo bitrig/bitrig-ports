@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.35 2015/04/17 08:00:42 phessler Exp $
+# $OpenBSD: Makefile,v 1.36 2015/10/20 07:46:28 dcoppa Exp $
 
 COMMENT=	chess program
 BROKEN-sparc=	./gnuchess --addbook book_1.02.pgn ; cannot allocate memory
 
-DISTNAME=	gnuchess-6.2.1
+DISTNAME=	gnuchess-6.2.2
 DISTFILES=	${DISTNAME}.tar.gz book_1.02.pgn.gz
 
 REVISION=	2
@@ -20,6 +20,8 @@ WANTLIB += c++ c++abi
 LIB_DEPENDS=		devel/readline
 
 MODULES=	devel/gettext
+
+BUILD_DEPENDS=	devel/help2man
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV= 		PTHREAD_LIBS=-lpthread
