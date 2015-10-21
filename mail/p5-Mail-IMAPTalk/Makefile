@@ -3,7 +3,7 @@
 COMMENT = 	IMAP client interface with lots of features
 
 MODULES =	cpan
-DISTNAME =	Mail-IMAPTalk-3.01
+DISTNAME =	Mail-IMAPTalk-4.01
 CATEGORIES =	mail
 
 # Perl
