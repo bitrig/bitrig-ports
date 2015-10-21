@@ -3,8 +3,7 @@
 COMMENT =	pure Perl HTTP client
 
 MODULES =	cpan
-DISTNAME =	HTTP-Lite-2.1.6
-REVISION =	1
+DISTNAME =	HTTP-Lite-2.44
 CATEGORIES =	www
 
 # Perl
