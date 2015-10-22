@@ -2,8 +2,7 @@
 
 COMMENT=	database-independent schema objects
 
-DISTNAME=	DBIx-DBSchema-0.32
-REVISION=	2
+DISTNAME=	DBIx-DBSchema-0.45
 CATEGORIES=	databases
 MODULES=	cpan
 
