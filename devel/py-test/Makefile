@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.9 2014/09/29 07:02:02 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2015/09/29 10:52:12 sthen Exp $
 
 COMMENT=		cross-project testing tool for Python
 
-MODPY_EGG_VERSION=	2.6.1
+MODPY_EGG_VERSION=	2.7.0
 DISTNAME=		pytest-${MODPY_EGG_VERSION}
 PKGNAME=		py-test-${MODPY_EGG_VERSION}
-REVISION =		0
 
 CATEGORIES=		devel
 
@@ -14,7 +13,7 @@ HOMEPAGE=		http://pytest.org/latest/
 # MIT
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=		${MASTER_SITE_PYPI:=p/pytest/}
+MODPY_PI =		Yes
 
 MODULES=		lang/python
 
