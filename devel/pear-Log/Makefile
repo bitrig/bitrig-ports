@@ -2,9 +2,8 @@
 
 COMMENT =	logging utilities for PHP
 
-DISTNAME =	Log-1.11.5
+DISTNAME =	Log-1.12.9
 CATEGORIES =	devel
-REVISION = 	2
 
 HOMEPAGE =	http://pear.php.net/package/Log/
 
