@@ -4,8 +4,7 @@ PKG_ARCH=	*
 
 COMMENT=	commandline interface to online dictionaries
 
-DISTNAME=	edict-2.2
-REVISION=	1
+DISTNAME=	edict-2.6
 CATEGORIES=	education
 
 HOMEPAGE=	http://edictionary.sourceforge.net/
@@ -24,9 +23,9 @@ DOCDIR=		${PREFIX}/share/doc/edict
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/edict ${PREFIX}/bin
-	cd ${PREFIX}/bin; ln -sf edict ethes 
+	cd ${PREFIX}/bin; ln -sf edict ethes
 	${INSTALL_DATA_DIR} ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${DOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/Changelog ${DOCDIR}
 
 .include <bsd.port.mk>
