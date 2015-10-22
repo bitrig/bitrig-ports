@@ -2,8 +2,7 @@
 
 COMMENT=		test file attributes
 
-DISTNAME=		Test-File-1.34
-REVISION=		0
+DISTNAME=		Test-File-1.44
 CATEGORIES=		devel
 
 # perl
