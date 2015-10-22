@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.44 2015/10/20 21:58:27 zhuk Exp $
+# $OpenBSD: Makefile,v 1.45 2015/10/22 17:26:18 zhuk Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -26,7 +26,7 @@ PKGNAME-psql =		qt5-postgresql-${VERSION}
 PKGNAME-qch =		qt5-qch-${VERSION}
 PKGNAME-sqlite2 =	qt5-sqlite2-${VERSION}
 PKGNAME-tds =		qt5-tds-${VERSION}
-REVISION-main =		8
+REVISION-main =		9
 REVISION-examples =	2
 REVISION-html =		1
 REVISION-mysql =	0
