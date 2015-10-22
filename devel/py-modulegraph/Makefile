@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 10:50:26 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2015/09/29 10:51:54 sthen Exp $
 
 COMMENT=		Python module dependency analysis tool
 
-MODPY_EGG_VERSION=	0.8
+MODPY_EGG_VERSION=	0.12.1
 DISTNAME=		modulegraph-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION =		2
 
 CATEGORIES=		devel
 
@@ -21,6 +20,6 @@ MODPY_SETUPTOOLS=	Yes
 RUN_DEPENDS=		devel/py-altgraph
 TEST_DEPENDS=	${RUN_DEPENDS}
 
-MASTER_SITES=		${MASTER_SITE_PYPI:=m/modulegraph/}
+MODPY_PI =		Yes
 
 .include <bsd.port.mk>
