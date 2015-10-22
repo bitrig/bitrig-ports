@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.2 2013/12/27 09:12:50 jasper Exp $
+# $OpenBSD: Makefile,v 1.4 2015/09/29 10:51:14 sthen Exp $
 
-REVISION=1
 
 COMMENT =	sqlalchemy support for flask
 
-MODPY_EGG_VERSION = 1.0
+MODPY_EGG_VERSION = 2.0
 DISTNAME =	Flask-SQLAlchemy-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME:L}
 
@@ -15,7 +14,7 @@ HOMEPAGE =	https://github.com/mitsuhiko/flask-sqlalchemy/
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =	${MASTER_SITE_PYPI:=F/Flask-SQLAlchemy/}
+MODPY_PI =	Yes
 
 MODULES =	lang/python
 
