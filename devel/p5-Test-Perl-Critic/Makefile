@@ -3,8 +3,7 @@
 COMMENT=	test framework to run Perl::Critic
 
 MODULES=	cpan
-DISTNAME=	Test-Perl-Critic-1.02
-REVISION=	2
+DISTNAME=	Test-Perl-Critic-1.03
 CATEGORIES=	devel
 
 # perl
