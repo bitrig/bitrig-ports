@@ -2,8 +2,7 @@
 
 COMMENT=	Perl extension for Consistent Signal Handling
 
-DISTNAME=	Sys-SigAction-0.11
-REVISION=	0
+DISTNAME=	Sys-SigAction-0.21
 CATEGORIES=	devel
 
 # Perl
