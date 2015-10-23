@@ -4,8 +4,7 @@ COMMENT=	object oriented DBMS for perl
 
 MODULES=	cpan
 
-DISTNAME=	Rose-Object-0.856
-REVISION=	1
+DISTNAME=	Rose-Object-0.860
 CATEGORIES=	databases devel
 
 # perl
