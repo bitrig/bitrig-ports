@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.17 2013/10/11 23:50:25 naddy Exp $
+# $OpenBSD: Makefile,v 1.18 2015/01/21 06:23:34 bentley Exp $
 
 COMMENT=	modules to implement the irc protocol
 
 MODULES=	cpan
-DISTNAME=	Net-IRC-0.75
-REVISION=	2
+DISTNAME=	Net-IRC-0.79
 CATEGORIES=	net
 
 # Perl
