@@ -2,10 +2,9 @@
 
 COMMENT=	HTTP authentication
 
-V=		2.1.6
+V=		2.1.8
 DISTNAME=	Auth_HTTP-${V}
 PKGNAME=	pear-Auth-HTTP-${V}
-REVISION =	2
 CATEGORIES=	security
 
 MODULES=	www/pear
