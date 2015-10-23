@@ -2,8 +2,7 @@
 
 COMMENT=	authentication system for PHP5
 
-DISTNAME=	Auth-1.6.1
-REVISION =	2
+DISTNAME=	Auth-1.6.4
 CATEGORIES=	security
 
 MODULES=	www/pear
