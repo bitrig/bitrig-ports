@@ -1,13 +1,13 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/11/21 19:04:14 jca Exp $
+# $OpenBSD: Makefile,v 1.2 2015/10/24 13:26:27 zhuk Exp $
 
 COMMENT=	unpack Inno Setup installers
 
-DISTNAME=	innoextract-1.4
+DISTNAME=	innoextract-1.5
 
 CATEGORIES=	archivers
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=innoextract/}
+HOMEPAGE=	https://constexpr.org/innoextract/
 
-HOMEPAGE=	http://constexpr.org/innoextract/
+MASTER_SITES=	${HOMEPAGE}files/
 
 # zlib/libpng
 PERMIT_PACKAGE_CDROM=	Yes
@@ -18,6 +18,8 @@ WANTLIB+=	c++ c++abi
 
 LIB_DEPENDS=	archivers/xz \
 		devel/boost>=1.53.0p6
+
+RUN_DEPENDS=	archivers/unrar
 
 MODULES=	converters/libiconv devel/cmake
 
