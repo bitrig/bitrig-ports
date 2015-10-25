@@ -1,16 +1,15 @@
-# $OpenBSD: Makefile,v 1.7 2015/09/29 10:52:34 sthen Exp $
+# $OpenBSD: Makefile,v 1.8 2015/10/25 15:29:13 rpe Exp $
 
 COMMENT =		crypto and ssl toolkit for python
 
-MODPY_EGG_VERSION =	0.22.3
-REVISION =		1
+MODPY_EGG_VERSION =	0.22.5
 DISTNAME =		M2Crypto-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 REVISION =		1
 
 CATEGORIES =		security
 
-HOMEPAGE =		https://github.com/M2Crypto/M2Crypto
+HOMEPAGE =		https://gitlab.com/m2crypto/m2crypto
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
