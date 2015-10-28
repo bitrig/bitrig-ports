@@ -1,0 +1,11 @@
+--- configure.ac.orig	Wed Oct 28 15:55:33 2015
++++ configure.ac	Wed Oct 28 15:56:30 2015
+@@ -200,7 +200,7 @@ dnl --------------------------------------------------
+ CK_BACKEND=""
+ KVM_LIBS=""
+ case "$host" in
+-        *-*-openbsd*)
++        *-*-openbsd*|*-*-bitrig*)
+         CK_BACKEND="openbsd"
+         AC_CHECK_LIB(kvm, kvm_openfiles, have_kvm=yes,
+                 AC_MSG_ERROR([Unable to find libkvm which is needed on OpenBSD]))

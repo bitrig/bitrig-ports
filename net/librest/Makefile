@@ -5,7 +5,7 @@ COMMENT =	access web services that claim to be RESTful
 GNOME_VERSION =	0.7.93
 GNOME_PROJECT =	rest
 PKGNAME =	lib${DISTNAME}
-REVISION =	0
+REVISION =	1
 
 CATEGORIES =	net devel
 

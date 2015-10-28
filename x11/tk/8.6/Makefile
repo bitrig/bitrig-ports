@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2015/05/22 04:17:59 stu Exp $
 
-BROKEN=			needs work on bitrig
-
 COMMENT =		graphical toolkit for Tcl
 
 P =			4
