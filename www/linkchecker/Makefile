@@ -21,14 +21,9 @@ HOMEPAGE=	http://wummel.github.io/linkchecker/
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=	https://github.com/downloads/wummel/linkchecker/ \
-		http://distfiles.nl/
-
-EXTRACT_SUFX=	.tar.xz
-
-MODULES=	lang/python
-
 WANTLIB+=	${MODPY_WANTLIB} pthread
+
+MODULES=	devel/gettext lang/python
 
 RUN_DEPENDS-main=	net/py-dnspython \
 			www/py-requests
@@ -41,6 +36,7 @@ RUN_DEPENDS-x11=	devel/desktop-file-utils \
 SEPARATE_BUILD=		Yes
 MULTI_PACKAGES=		-main -x11
 
+WRKDIST=	${WRKDIR}/${GH_PROJECT}-upstream-${V}
 NO_TEST=	Yes
 
 post-extract:
