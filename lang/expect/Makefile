@@ -5,7 +5,7 @@ COMMENT =	sophisticated scripter based on Tcl/Tk
 VERSION =	5.45
 DISTNAME =	expect${VERSION}
 PKGNAME =	expect-${VERSION}
-REVISION =	2
+REVISION =	3
 SHARED_LIBS =	expect545 0.0
 CATEGORIES =	lang
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=expect/}
