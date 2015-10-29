@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 11:41:27 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2015/10/29 21:58:21 sthen Exp $
 
 COMMENT=	HTTP authentication
 
