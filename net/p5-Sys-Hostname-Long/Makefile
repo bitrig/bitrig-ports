@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2015/01/21 14:40:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.10 2015/10/29 18:25:32 ajacoutot Exp $
 
 COMMENT=	perl module to get FQDN
 

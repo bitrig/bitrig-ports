@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/10/11 23:50:07 naddy Exp $
+# $OpenBSD: Makefile,v 1.7 2015/10/29 18:25:31 ajacoutot Exp $
 
 COMMENT=	calculates Phi and phi for Fibonacci numbers
 

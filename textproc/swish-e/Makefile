@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/04/21 18:53:16 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2015/10/29 18:25:32 ajacoutot Exp $
 
 COMMENT =		web/text search engine
 

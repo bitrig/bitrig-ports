@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/10/11 23:50:01 naddy Exp $
+# $OpenBSD: Makefile,v 1.17 2015/10/29 18:25:31 ajacoutot Exp $
 
 COMMENT=		perl module to query Sender Policy Framework
 
