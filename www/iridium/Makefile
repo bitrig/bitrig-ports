@@ -51,7 +51,6 @@ WANTLIB += Xdamage
 WANTLIB += Xcursor Xrandr gio-2.0
 WANTLIB += jpeg nspr4 nss3 nssutil3 smime3
 WANTLIB += atk-1.0 gmodule-2.0
->>>>>>> update to 46.0rc1
 
 RUN_DEPENDS=	devel/xdg-utils \
 		devel/desktop-file-utils \
