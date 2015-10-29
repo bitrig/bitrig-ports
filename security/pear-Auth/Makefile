@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 11:41:27 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2015/10/29 21:57:11 sthen Exp $
 
 COMMENT=	authentication system for PHP5
 
