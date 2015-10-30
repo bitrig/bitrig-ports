@@ -1,10 +1,12 @@
-# $OpenBSD: Makefile,v 1.31 2015/07/19 00:02:24 jasper Exp $
+# $OpenBSD: Makefile,v 1.32 2015/10/30 12:59:16 sthen Exp $
 
 COMMENT-main =		mature and flexible open source SIP server
 
 SHARED_ONLY =		Yes
 
 VERSION =		4.0.0
+REVISION-main =		0
+REVISION-mysql =	2
 DISTNAME =		kamailio-${VERSION}_src
 PKGNAME-main =		kamailio-${VERSION}
 PKGNAME-mysql =		kamailio-mysql-${VERSION}
@@ -15,16 +17,6 @@ PKGNAME-carrierroute =	kamailio-carrierroute-${VERSION}
 PKGNAME-snmpstats =	kamailio-snmpstats-${VERSION}
 PKGNAME-perl =		kamailio-perl-${VERSION}
 #PKGNAME-radius =	kamailio-radius-${VERSION}	TODO
-
-REVISION-main =		0
-REVISION-mysql =	3
-REVISION-postgresql =	0
-REVISION-ldap =		0
-REVISION-xmlrpc =	0
-REVISION-carrierroute =	0
-REVISION-snmpstats =	0
-REVISION-perl =		0
-#REVISION-radius =
 
 CATEGORIES =		telephony
 
@@ -51,7 +43,7 @@ MASTER_SITES =		http://www.kamailio.org/pub/kamailio/${VERSION}/src/
 WRKDIST =		${WRKDIR}/kamailio-${VERSION}
 
 MODULES =		devel/gettext
-WANTLIB-main =		c crypto curl db expat m pcre pthread ssl xml2 \
+WANTLIB-main =		c crypto curl db expat m pcre pthread ssl xml2 nghttp2 \
 			idn ncurses readline unistring z ${MODGETTEXT_WANTLIB}
 LIB_DEPENDS-main =	net/curl \
 			databases/db/v4,-main,no_java \

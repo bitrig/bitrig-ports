@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2015/03/16 18:07:56 naddy Exp $
+# $OpenBSD: Makefile,v 1.9 2015/10/30 12:59:17 sthen Exp $
 
 COMMENT =		XML manipulation library
 
@@ -15,7 +15,7 @@ HOMEPAGE=		http://www.autistici.org/bakunin/libnxml/doc
 PERMIT_PACKAGE_CDROM=	Yes
 
 LIB_DEPENDS =		net/curl
-WANTLIB +=		crypto idn ssl z curl
+WANTLIB +=		crypto idn nghttp2 ssl z curl
 
 MODULES =		devel/gettext
 
