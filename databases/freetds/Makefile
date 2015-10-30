@@ -36,7 +36,8 @@ BUILD_DEPENDS+=	devel/gettext \
 		${MODGNU_AUTOMAKE_DEPENDS}
 ### end of AUTOHELL
 
-LIB_DEPENDS=	databases/iodbc,-main
+LIB_DEPENDS=	databases/iodbc,-main \
+		devel/readline
 
 # requires database server
 TEST_IS_INTERACTIVE=Yes
