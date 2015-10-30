@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2015/03/16 18:07:53 naddy Exp $
+# $OpenBSD: Makefile,v 1.14 2015/10/30 12:47:40 sthen Exp $
 
 # as error: ``operation combines symbols in different segments''
 # (known toolchain problem)
@@ -25,7 +25,7 @@ SHARED_LIBS +=	xmlrpc_server_cgi    1.0      # .9.15
 
 HOMEPAGE=	http://xmlrpc-c.sourceforge.net/
 
-WANTLIB=	c crypto idn pthread ssl z curl
+WANTLIB=	c crypto idn nghttp2 pthread ssl z curl
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xmlrpc-c/}
 

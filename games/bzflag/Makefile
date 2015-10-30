@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.34 2015/08/28 15:35:24 naddy Exp $
+# $OpenBSD: Makefile,v 1.35 2015/10/30 12:47:39 sthen Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -18,8 +18,8 @@ HOMEPAGE=	http://www.bzflag.org/
 PERMIT_PACKAGE_CDROM=   Yes
 
 WANTLIB += GL GLEW GLU ICE SDL SM X11 Xdamage Xext Xfixes Xi Xmu
-WANTLIB += Xt Xxf86vm c cares crypto curl drm idn m ncurses pthread
-WANTLIB += sndio ssl usbhid xcb z
+WANTLIB += Xt Xxf86vm c cares crypto curl drm idn m ncurses nghttp2 pthread
+WANTLIB += sndio ssl c++ c++abi usbhid xcb z
 WANTLIB += X11-xcb Xau Xdmcp glapi pthread-stubs xcb-dri2 xcb-glx
 WANTLIB += c++ c++abi
 

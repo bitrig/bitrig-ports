@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2015/10/07 05:50:25 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.34 2015/10/30 12:47:38 sthen Exp $
 
 COMMENT=		last.fm client for GNOME
 
@@ -18,7 +18,7 @@ WANTLIB += Xinerama Xrandr Xrender Xxf86vm atk-1.0 c cairo crypto curl
 WANTLIB += dbus-1 dbus-glib-1 drm expat ffi fontconfig freetype
 WANTLIB += gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0 gmodule-2.0
 WANTLIB += gobject-2.0 graphite2 gstinterfaces-0.10 gstreamer-0.10
-WANTLIB += gthread-2.0 gtk-x11-2.0 harfbuzz idn lzma m notify pango-1.0
+WANTLIB += gthread-2.0 gtk-x11-2.0 harfbuzz idn lzma m nghttp2 notify pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread
 WANTLIB += pthread-stubs ssl xcb xcb-render xcb-shm xml2 z
 WANTLIB += c++ c++abi

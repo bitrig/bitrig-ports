@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/04/27 09:18:01 landry Exp $
+# $OpenBSD: Makefile,v 1.8 2015/10/30 12:47:39 sthen Exp $
 
 COMMENT=	remake of Konami's F1-Spirit
 
@@ -16,6 +16,9 @@ MASTER_SITES=	http://braingames.jorito.net/f1spirit/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
+WANTLIB=	GL GLU SDL c m crypto pthread ssl z SDL_image SDL_net \
+		SDL_mixer curl idn nghttp2 stdc++
+
 NO_TEST=	Yes
 USE_GMAKE=	Yes
 
@@ -25,8 +28,5 @@ LIB_DEPENDS=	devel/sdl-image \
 		devel/sdl-mixer \
 		net/curl \
 		devel/libidn
-WANTLIB=	GL GLU SDL c m crypto pthread ssl z SDL_image SDL_net \
-		SDL_mixer curl idn
-WANTLIB+=	c++ c++abi
 
 .include <bsd.port.mk>

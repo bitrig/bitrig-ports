@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/11/11 14:56:58 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.10 2015/10/30 12:47:40 sthen Exp $
 
 COMMENT=	library to parse flash media stream URLs
 
@@ -10,7 +10,7 @@ SHARED_LIBS +=  quvi-0.9             0.0      # 8.0
 MODULES=	devel/gettext \
 		lang/lua
 
-WANTLIB += crypto curl gcrypt glib-2.0 gpg-error idn m pcre proxy
+WANTLIB += crypto curl gcrypt glib-2.0 gpg-error idn m nghttp2 pcre proxy
 WANTLIB += pthread ssl z ${MODLUA_WANTLIB}
 
 BUILD_DEPENDS=	net/quvi/scripts
