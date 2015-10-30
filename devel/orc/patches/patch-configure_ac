@@ -1,6 +1,15 @@
 $OpenBSD: patch-configure_ac,v 1.8 2015/04/09 20:47:15 sthen Exp $
---- configure.ac.orig	Wed Dec 17 03:34:38 2014
-+++ configure.ac	Fri Mar 13 20:47:48 2015
+--- configure.ac.orig	Wed Dec 17 02:34:38 2014
++++ configure.ac	Fri Oct 30 07:16:46 2015
+@@ -114,7 +114,7 @@ case "${host_os}" in
+   mingw*|pw32*|cygwin*)
+     AC_DEFINE(HAVE_CODEMEM_VIRTUALALLOC, 1, [Use VirtualAlloc to allocate code for execution])
+     ;;
+-  linux*|darwin*|solaris*|netbsd*|freebsd*|openbsd*|kfreebsd*|dragonfly*|gnu*)
++  linux*|darwin*|solaris*|netbsd*|freebsd*|openbsd*|kfreebsd*|dragonfly*|gnu*|bitrig*)
+     AC_DEFINE(HAVE_CODEMEM_MMAP, 1, [Use mmap to allocate code for execution])
+     ;;
+   *)
 @@ -218,7 +218,7 @@ ORC_CFLAGS="$ORC_CFLAGS \$(ERROR_CFLAGS) -I\$(top_srcd
  AC_SUBST(ERROR_CFLAGS)
  AC_SUBST(ORC_CFLAGS)
