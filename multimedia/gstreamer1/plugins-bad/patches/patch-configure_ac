@@ -1,20 +1,11 @@
-$OpenBSD: patch-configure_ac,v 1.8 2015/09/27 08:22:31 ajacoutot Exp $
+$OpenBSD: patch-configure_ac,v 1.9 2015/10/30 20:29:22 ajacoutot Exp $
 
 XXX: Short cut check for shm_open(3).
 Remove when/if we have librt.
 
---- configure.ac.orig	Fri Sep 25 07:51:12 2015
-+++ configure.ac	Wed Mar 16 12:48:32 2016
-@@ -899,7 +899,7 @@ case $host in
- 
-     HAVE_WINDOW_ANDROID=yes
-     ;;
--  *-linux* | *-cygwin* | *-solaris* | *-netbsd* | *-freebsd* | *-openbsd* | *-kfreebsd* | *-dragonflybsd* | *-gnu* )
-+  *-linux* | *-cygwin* | *-solaris* | *-netbsd* | *-freebsd* | *-openbsd* | *-bitrig* | *-kfreebsd* | *-dragonflybsd* | *-gnu* )
-     if test "x$NEED_WGL" = "xyes"; then
-       AC_MSG_ERROR([WGL is not available on unix])
-     fi
-@@ -1675,6 +1675,9 @@ AG_GST_CHECK_FEATURE(SHM, [POSIX shared memory source 
+--- configure.ac.orig	Fri Oct 30 13:11:05 2015
++++ configure.ac	Fri Oct 30 20:52:01 2015
+@@ -1676,6 +1676,9 @@ AG_GST_CHECK_FEATURE(SHM, [POSIX shared memory source 
              AC_DEFINE(HAVE_OSX,[1],[Apple Mac OS X operating system detected])
              HAVE_SHM=yes
              ;;
