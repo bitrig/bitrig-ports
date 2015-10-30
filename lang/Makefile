@@ -60,7 +60,6 @@
      SUBDIR += nbfc
      SUBDIR += newlisp
      SUBDIR += nhc98
-     SUBDIR += nimrod
      SUBDIR += node
      SUBDIR += node-java
      SUBDIR += node-typescript
