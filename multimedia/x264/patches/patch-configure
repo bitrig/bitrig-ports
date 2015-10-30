@@ -1,12 +1,21 @@
 $OpenBSD: patch-configure,v 1.19 2015/08/13 07:35:21 ajacoutot Exp $
---- configure.orig	Tue Jul 28 16:45:03 2015
-+++ configure	Tue Jul 28 21:52:10 2015
+--- configure.orig	Tue Jul 28 15:45:03 2015
++++ configure	Fri Oct 30 07:12:42 2015
 @@ -1,4 +1,4 @@
 -#!/bin/bash
 +#!/bin/sh
  
  if test x"$1" = x"-h" -o x"$1" = x"--help" ; then
  cat <<EOF
+@@ -575,7 +575,7 @@ case $host_os in
+         SYS="NETBSD"
+         libm="-lm"
+         ;;
+-    openbsd*)
++    openbsd*|bitrig*)
+         SYS="OPENBSD"
+         libm="-lm"
+         ;;
 @@ -1127,18 +1127,18 @@ if [ "$pic" = "yes" ] ; then
      [ $SYS = SunOS -a "$ARCH" = "X86" ] && SOFLAGS="$SOFLAGS -mimpure-text"
  fi
