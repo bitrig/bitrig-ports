@@ -1,14 +1,13 @@
-# $OpenBSD: Makefile,v 1.5 2015/08/19 18:55:05 sthen Exp $
+# $OpenBSD: Makefile,v 1.6 2015/10/31 22:02:14 benoit Exp $
 
 BROKEN= 		needs work on bitrig
 
 COMMENT=		logging API for C++
 
-DISTNAME=		log4cplus-1.0.4
-REVISION=		1
+DISTNAME =		log4cplus-1.1.2
 EXTRACT_SUFX=		.tar.bz2
 
-SHARED_LIBS +=  log4cplus             0.0 # 0.0
+SHARED_LIBS +=  log4cplus             1.0 # 0.0
 
 CATEGORIES=		devel
 HOMEPAGE=		http://log4cplus.sourceforge.net/
