@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2015/09/29 10:52:12 sthen Exp $
+# $OpenBSD: Makefile,v 1.4 2015/11/01 10:18:27 benoit Exp $
 
 MODPY_EGG_VERSION =	0.9.2
 COMMENT =	sprite animation module for pygame
