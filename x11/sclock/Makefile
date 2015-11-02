@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/01/26 12:50:35 jca Exp $
+# $OpenBSD: Makefile,v 1.8 2015/11/02 08:37:50 ajacoutot Exp $
 
 COMMENT=	simple digital clock
 

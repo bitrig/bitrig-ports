@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 11:41:33 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2015/11/02 08:37:50 ajacoutot Exp $
 
 COMMENT=	print ascii formatted tree of a directory structure
 

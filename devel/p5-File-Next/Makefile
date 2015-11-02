@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/10/11 23:48:48 naddy Exp $
+# $OpenBSD: Makefile,v 1.9 2015/11/02 08:37:50 ajacoutot Exp $
 
 COMMENT=		File-finding iterator
 
@@ -6,6 +6,7 @@ MODULES=		cpan
 DISTNAME=		File-Next-1.12
 REVISION=		0
 CATEGORIES=		devel
+REVISION=		0
 
 # Artistic
 PERMIT_PACKAGE_CDROM=   Yes
