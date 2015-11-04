@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/08/24 04:10:56 bentley Exp $
+# $OpenBSD: Makefile,v 1.7 2015/11/04 16:41:46 bentley Exp $
 
 COMMENT =		n64 emulator video plugin
 REVISION =		2
