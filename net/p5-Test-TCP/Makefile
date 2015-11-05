@@ -1,12 +1,12 @@
-# $OpenBSD: Makefile,v 1.5 2014/10/27 19:13:05 gonzalo Exp $
+# $OpenBSD: Makefile,v 1.6 2015/11/05 09:57:26 benoit Exp $
 
 COMMENT =		testing TCP program
 
 MODULES =		cpan
-DISTNAME =		Test-TCP-2.06
+DISTNAME =		Test-TCP-2.14
 CATEGORIES =		net
 
-RUN_DEPENDS =		devel/p5-Test-SharedFork>=0.14
+RUN_DEPENDS =		devel/p5-Test-SharedFork>=0.29
 BUILD_DEPENDS = 	${RUN_DEPENDS}
 
 # Perl
