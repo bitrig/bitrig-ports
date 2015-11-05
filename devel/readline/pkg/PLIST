@@ -1,27 +1,35 @@
-@comment $OpenBSD: PLIST,v 1.3 2013/04/18 15:08:01 sthen Exp $
-include/readline/
-include/readline/chardefs.h
-include/readline/history.h
-include/readline/keymaps.h
-include/readline/readline.h
-include/readline/rlconf.h
-include/readline/rlstdc.h
-include/readline/rltypedefs.h
-include/readline/tilde.h
-@info info/history.info
-@info info/readline.info
-@info info/rluserman.info
-lib/libhistory.a
-@lib lib/libhistory.so.${LIBhistory_VERSION}
-lib/libreadline.a
-@lib lib/libreadline.so.${LIBreadline_VERSION}
-@man man/man3/history.3
-@man man/man3/readline.3
+@comment $OpenBSD: PLIST,v 1.6 2015/11/05 12:43:20 pirofti Exp $
+include/ereadline/
+include/ereadline/readline/
+include/ereadline/readline/chardefs.h
+include/ereadline/readline/history.h
+include/ereadline/readline/keymaps.h
+include/ereadline/readline/readline.h
+include/ereadline/readline/rlconf.h
+include/ereadline/readline/rlstdc.h
+include/ereadline/readline/rltypedefs.h
+include/ereadline/readline/tilde.h
+@info info/ehistory.info
+@info info/ereadline.info
+@info info/erluserman.info
+lib/libehistory.a
+@lib lib/libehistory.so.${LIBehistory_VERSION}
+lib/libereadline.a
+@lib lib/libereadline.so.${LIBereadline_VERSION}
+@man man/man3/ehistory.3
+@man man/man3/ereadline.3
+share/doc/readline/
+share/doc/readline/CHANGES
+share/doc/readline/INSTALL
+share/doc/readline/README
 share/readline/
 share/readline/excallback.c
 share/readline/fileman.c
+share/readline/hist_erasedups.c
+share/readline/hist_purgecmd.c
 share/readline/histexamp.c
 share/readline/manexamp.c
+share/readline/rl-callbacktest.c
 share/readline/rl-fgets.c
 share/readline/rl.c
 share/readline/rlcat.c
