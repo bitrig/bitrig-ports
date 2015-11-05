@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2013/10/11 23:49:00 naddy Exp $
+# $OpenBSD: Makefile,v 1.11 2015/11/05 19:08:57 jca Exp $
 
 COMMENT=        cryptographic signatures for objects
 

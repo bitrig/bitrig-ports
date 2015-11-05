@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2015/04/06 12:48:51 schwarze Exp $
+# $OpenBSD: Makefile,v 1.13 2015/11/05 19:08:58 jca Exp $
 
 COMMENT=	swiss army knife SMTP transaction tester
 

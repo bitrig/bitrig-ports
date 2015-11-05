@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/09/16 12:24:26 chrisz Exp $
+# $OpenBSD: Makefile,v 1.8 2015/11/05 19:08:58 jca Exp $
 
 COMMENT =	source code browser plugin for the Vim text editor
 
@@ -6,6 +6,7 @@ DISTNAME =	taglist_46
 PKGNAME =	vim-taglist-4.6
 CATEGORIES =	devel editors
 EXTRACT_SUFX =	.zip
+REVISION =	0
 
 HOMEPAGE =	http://vim-taglist.sourceforge.net/
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=vim-taglist/}

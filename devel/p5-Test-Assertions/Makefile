@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/01/21 14:27:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.7 2015/11/05 19:08:57 jca Exp $
 
 COMMENT =	set of building blocks for both unit and runtime testing
 

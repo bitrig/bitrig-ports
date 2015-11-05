@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/01/21 14:42:33 sthen Exp $
+# $OpenBSD: Makefile,v 1.21 2015/11/05 19:09:00 jca Exp $
 
 COMMENT=	catalyst plugin to Config::Any
 
@@ -6,6 +6,7 @@ MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-ConfigLoader-0.30
 REVISION=	0
 CATEGORIES=	www
+REVISION=	0
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

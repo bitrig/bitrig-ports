@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/01/21 14:41:37 sthen Exp $
+# $OpenBSD: Makefile,v 1.7 2015/11/05 19:08:59 jca Exp $
 
 COMMENT =	assemble multiple Regular Expressions into a single RE
 
@@ -6,6 +6,7 @@ MODULES =	cpan
 DISTNAME =	Regexp-Assemble-0.35
 REVISION =	0
 CATEGORIES =	textproc
+REVISION =	0
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

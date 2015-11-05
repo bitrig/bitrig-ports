@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2015/04/21 18:33:49 sthen Exp $
+# $OpenBSD: Makefile,v 1.9 2015/11/05 19:08:58 jca Exp $
 
 COMMENT=	control a ribbon to avoid hitting walls
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/01/21 14:40:11 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2015/11/05 19:08:59 jca Exp $
 
 COMMENT= 	catalyst authentication via .htpasswd
 

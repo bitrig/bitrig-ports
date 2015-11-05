@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/01/21 14:28:00 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2015/11/05 19:08:58 jca Exp $
 
 COMMENT=	factory for Tree::Simple visitor objects
 

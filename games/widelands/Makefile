@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.14 2015/08/21 19:17:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2015/11/05 19:08:58 jca Exp $
 
 COMMENT=	economic and military simulation game
 
 V=		17
-REVISION=	0
+REVISION=	1
 DISTNAME= 	widelands-build${V}-src
 PKGNAME=	widelands-0.${V}
 CATEGORIES=	games

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/10/11 23:51:33 naddy Exp $
+# $OpenBSD: Makefile,v 1.13 2015/11/05 19:09:00 jca Exp $
 
 COMMENT=	functions for managing FastCGI applications
 
@@ -6,6 +6,7 @@ MODULES=	cpan
 DISTNAME=	FCGI-ProcManager-0.19
 REVISION=	0
 CATEGORIES=	www
+REVISION=	0
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

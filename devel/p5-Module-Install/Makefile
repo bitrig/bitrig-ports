@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2014/04/05 11:56:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.22 2015/11/05 19:08:57 jca Exp $
 
 COMMENT=        standalone extensible Perl module installer
 

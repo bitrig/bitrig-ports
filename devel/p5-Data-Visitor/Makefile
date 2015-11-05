@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2013/03/11 10:50:15 espie Exp $
+# $OpenBSD: Makefile,v 1.20 2015/11/05 19:08:57 jca Exp $
 
 COMMENT=	visitor-style traversal of Perl data structures
 
@@ -6,6 +6,7 @@ MODULES=	cpan
 DISTNAME=	Data-Visitor-0.27
 REVISION=	0
 CATEGORIES=	devel
+REVISION=	0
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/01/21 14:42:33 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2015/11/05 19:09:00 jca Exp $
 
 COMMENT= 	HTML widget and validation framework for Catalyst
 

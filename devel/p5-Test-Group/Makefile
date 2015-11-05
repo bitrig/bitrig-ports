@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/11/06 17:10:06 benoit Exp $
+# $OpenBSD: Makefile,v 1.9 2015/11/05 19:08:58 jca Exp $
 
 COMMENT=	group together related tests in a test suite
 
@@ -6,6 +6,7 @@ MODULES=	cpan
 DISTNAME =	Test-Group-0.19
 REVISION =	0
 CATEGORIES=	devel
+REVISION =	0
 
 # Perl
 PERMIT_PACKAGE_CDROM=   Yes

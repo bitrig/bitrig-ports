@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/10/11 23:50:28 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2015/11/05 19:08:58 jca Exp $
 
 COMMENT=	computing subnets in large scale networks
 

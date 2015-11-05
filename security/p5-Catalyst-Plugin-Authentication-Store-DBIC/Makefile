@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/05/25 07:54:28 jasper Exp $
+# $OpenBSD: Makefile,v 1.16 2015/11/05 19:08:59 jca Exp $
 
 COMMENT=	CDBI Authentication for Catalyst
 

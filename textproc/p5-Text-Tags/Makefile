@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2015/01/21 14:41:38 sthen Exp $
+# $OpenBSD: Makefile,v 1.6 2015/11/05 19:08:59 jca Exp $
 
 COMMENT=	parses 'folksonomy' space-separated tags
 

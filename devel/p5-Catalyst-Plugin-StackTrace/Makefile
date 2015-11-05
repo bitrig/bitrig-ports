@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2015/01/21 14:27:56 sthen Exp $
+# $OpenBSD: Makefile,v 1.17 2015/11/05 19:08:56 jca Exp $
 
 COMMENT=	stack trace for catalyst
 
@@ -6,6 +6,7 @@ MODULES=	cpan
 DISTNAME=	Catalyst-Plugin-StackTrace-0.11
 REVISION=	0
 CATEGORIES=	devel
+REVISION=	0
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/10/11 23:48:34 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2015/11/05 19:08:56 jca Exp $
 
 COMMENT=        provide static calls that apply to a default instantiation
 

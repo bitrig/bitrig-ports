@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2015/01/21 14:42:32 sthen Exp $
+# $OpenBSD: Makefile,v 1.19 2015/11/05 19:08:59 jca Exp $
 
 COMMENT=	drop-in object-oriented CGI.pm replacement
 

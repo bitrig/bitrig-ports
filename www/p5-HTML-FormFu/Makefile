@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/01/21 14:43:32 sthen Exp $
+# $OpenBSD: Makefile,v 1.8 2015/11/05 19:09:00 jca Exp $
 
 COMMENT =	HTML form creation, rendering and validation framework
 
@@ -6,6 +6,7 @@ MODULES =	cpan
 DISTNAME =	HTML-FormFu-0.07003
 REVISION =	0
 CATEGORIES =	www textproc
+REVISION =	0
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes

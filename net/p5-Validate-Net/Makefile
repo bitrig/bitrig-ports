@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/01/21 14:40:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.8 2015/11/05 19:08:59 jca Exp $
 
 COMMENT=        module to format validation for Net:: related strings
 

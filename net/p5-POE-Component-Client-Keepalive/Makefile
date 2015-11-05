@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/10/11 23:50:29 naddy Exp $
+# $OpenBSD: Makefile,v 1.10 2015/11/05 19:08:59 jca Exp $
 
 COMMENT=	manage connections, with keep-alive
 

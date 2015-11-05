@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2015/01/21 14:40:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2015/11/05 19:08:59 jca Exp $
 
 COMMENT= 	read and modify Apache .htpasswd files
 

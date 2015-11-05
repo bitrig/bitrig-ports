@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.16 2015/01/21 14:40:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.17 2015/11/05 19:08:59 jca Exp $
 
 COMMENT=	Catalyst authentication framework
 
 DISTNAME=	Catalyst-Plugin-Authentication-0.10018
 REVISION=	0
 CATEGORIES=	security
+REVISION=	0
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

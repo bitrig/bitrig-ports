@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2013/10/11 23:48:47 naddy Exp $
+# $OpenBSD: Makefile,v 1.15 2015/11/05 19:08:57 jca Exp $
 
 COMMENT=	recursive copy of files and directories
 

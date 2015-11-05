@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.15 2015/01/21 14:41:37 sthen Exp $
+# $OpenBSD: Makefile,v 1.16 2015/11/05 19:08:59 jca Exp $
 
 COMMENT=	Template Toolkit views for Catalyst
 
 DISTNAME=	Catalyst-View-TT-0.37
 REVISION=	0
 CATEGORIES=	textproc
+REVISION=	0
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/01/21 14:27:57 sthen Exp $
+# $OpenBSD: Makefile,v 1.8 2015/11/05 19:08:57 jca Exp $
 
 COMMENT=        automatic Perl XS glue code generation
 

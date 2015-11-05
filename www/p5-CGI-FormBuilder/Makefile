@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/05/18 11:29:38 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2015/11/05 19:08:59 jca Exp $
 
 COMMENT=	easily generate and process stateful forms
 

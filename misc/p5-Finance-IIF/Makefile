@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2013/10/11 23:50:11 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2015/11/05 19:08:58 jca Exp $
 
 COMMENT=	parse and create IIF files for QuickBooks
 

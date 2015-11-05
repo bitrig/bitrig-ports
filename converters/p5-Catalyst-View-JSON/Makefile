@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2014/04/07 14:51:25 sthen Exp $
+# $OpenBSD: Makefile,v 1.8 2015/11/05 19:08:56 jca Exp $
 
 COMMENT =	JSON view for your data
 

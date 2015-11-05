@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/10/11 23:49:50 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2015/11/05 19:08:58 jca Exp $
 
 COMMENT=	WWW color names and equivalent RGB values
 

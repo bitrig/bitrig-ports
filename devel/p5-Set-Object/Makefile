@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/07/16 23:57:23 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.22 2015/11/05 19:08:57 jca Exp $
 
 COMMENT=	set of objects and strings
 SHARED_ONLY=	Yes

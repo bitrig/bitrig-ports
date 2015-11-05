@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.10 2013/10/14 14:02:37 bcallah Exp $
+# $OpenBSD: Makefile,v 1.11 2015/11/05 19:08:58 jca Exp $
 
 COMMENT=	bomberman clone with multiplayer mode
 
 DISTNAME=	bomberclone-0.11.9
 REVISION=	0
 CATEGORIES=	games x11
+REVISION=	0
 
 HOMEPAGE=	http://www.bomberclone.de/
 
