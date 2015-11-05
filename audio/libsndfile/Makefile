@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2015/03/16 18:07:36 naddy Exp $
+# $OpenBSD: Makefile,v 1.28 2015/11/05 12:49:00 jasper Exp $
 
 COMMENT=	library to handle various audio file formats
 
