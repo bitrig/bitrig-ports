@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2014/01/25 13:17:35 sthen Exp $
+# $OpenBSD: Makefile,v 1.18 2015/11/06 13:08:54 kirby Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -6,8 +6,10 @@ SHARED_ONLY =	Yes
 
 COMMENT =	cross-platform interactive fiction player
 
-DISTNAME =	gargoyle-2011.1-sources
-PKGNAME =	gargoyle-2011.1
+GH_ACCOUNT =	garglk
+GH_PROJECT =	garglk
+GH_TAGNAME =	stable-2011.1
+DISTNAME =	gargoyle-${GH_TAGNAME:S/stable-//}
 EPOCH =		0
 REVISION =	2
 
@@ -29,9 +31,6 @@ WANTLIB += pangocairo-1.0 pangoft2-1.0 png pthread smpeg
 WANTLIB += vorbisfile z
 WANTLIB += c++ c++abi
 
-MASTER_SITES =	https://garglk.googlecode.com/files/
-EXTRACT_SUFX =	.zip
-
 MODULES =	devel/gettext
 BUILD_DEPENDS =	devel/jam
 LIB_DEPENDS =	devel/sdl-sound \
@@ -40,8 +39,6 @@ LIB_DEPENDS =	devel/sdl-sound \
 		graphics/jpeg
 
 NO_TEST =		Yes
-
-WRKDIST =		${WRKDIR}
 
 INSTALL_TARGET =	install install_man
 JAMDEBUG =	-d x	# display command-lines
@@ -60,7 +57,7 @@ do-build:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} jam ${JAMDEBUG}
 
 do-install:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${ALL_FAKE_FLAGS} \
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
 		DESTDIR=${PREFIX}/libexec/gargoyle jam ${JAMDEBUG} install
 
 post-install:
