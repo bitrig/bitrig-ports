@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.97 2015/03/01 12:12:54 jca Exp $
+# $OpenBSD: Makefile,v 1.98 2015/11/06 18:30:31 sthen Exp $
 
 COMMENT=	GNU privacy guard - a free PGP replacement
 
 DISTNAME=	gnupg-1.4.19
+REVISION=	0
 CATEGORIES=	security
 
 REVISION=	1
@@ -19,9 +20,9 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES= devel/gettext
 LIB_DEPENDS=	archivers/bzip2 \
-		net/curl \
+		net/curl
 		devel/readline
-WANTLIB=	c z readline termcap ssl crypto idn bz2>=10 curl>=3
+WANTLIB=	c z readline termcap ssl crypto idn bz2>=10 curl>=3 nghttp2
 
 # XXX give it a chance on vax
 LIB_DEPENDS += devel/libidn
