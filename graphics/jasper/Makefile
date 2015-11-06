@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/04/20 15:25:35 naddy Exp $
+# $OpenBSD: Makefile,v 1.18 2015/11/06 22:28:29 sthen Exp $
 
 COMMENT =	reference implementation of JPEG-2000
 
