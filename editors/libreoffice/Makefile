@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.137 2015/09/29 16:10:48 robert Exp $
+# $OpenBSD: Makefile,v 1.138 2015/11/07 09:22:54 robert Exp $
 
 BROKEN=		jdk not working
 
@@ -9,7 +9,7 @@ COMMENT-kde=	optional integration of LibreOffice to the KDE environment
 COMMENT-java=	optional integration of LibreOffice java features
 
 BV=		5.0
-VERSION=	${BV}.2.2
+VERSION=	${BV}.3.2
 DISTNAME=	libreoffice-${VERSION}
 DISTNAME=	libreoffice-${VERSION}
 WRKDIST=	${WRKDIR}/libreoffice-${VERSION}
