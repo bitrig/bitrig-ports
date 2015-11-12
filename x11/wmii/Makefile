@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/02/16 22:57:14 naddy Exp $
+# $OpenBSD: Makefile,v 1.21 2015/11/12 09:59:41 sthen Exp $
 
 COMMENT=	dynamic window manager
 
