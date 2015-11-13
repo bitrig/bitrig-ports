@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/01/18 13:45:08 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.13 2015/11/13 12:59:08 ajacoutot Exp $
 
 COMMENT=		detect image spam with SpamAssassin
 
@@ -19,7 +19,7 @@ RUN_DEPENDS=		devel/p5-MLDBM-Sync \
 			graphics/ocrad \
 			graphics/ImageMagick \
 			graphics/gifsicle \
-			graphics/tesseract \
+			graphics/tesseract/tesseract \
 			mail/p5-Mail-SpamAssassin \
 			textproc/p5-String-Approx
 
