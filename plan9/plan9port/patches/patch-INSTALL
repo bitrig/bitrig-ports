@@ -1,18 +1,13 @@
-$OpenBSD: patch-INSTALL,v 1.2 2014/03/09 20:26:48 pascal Exp $
---- INSTALL.orig	Thu Mar  6 11:00:08 2014
-+++ INSTALL	Wed Jul 30 22:02:29 2014
-@@ -61,6 +61,11 @@ if [ `uname` = OpenBSD ]; then
-        echo "LDFLAGS='-L/usr/X11R6/lib -pthread'" >> $PLAN9/config
- fi
- 
-+if [ `uname` = Bitrig ]; then
-+       echo "* Running on Bitrig, adjusting linker flags"
-+       echo "LDFLAGS='-L/usr/X11R6/lib -pthread'" >> $PLAN9/config
-+fi
-+
- if [ `uname` = Linux ]; then
- 	# On Linux, we use the kernel version to decide whether
- 	# to use pthreads or not.  On 2.6 versions that aren't
+$OpenBSD: patch-INSTALL,v 1.4 2015/11/13 02:53:48 gsoares Exp $
+
+INSTALL: append /usr/X11R6/include and /usr/X11R6/include/freetype2 to
+X11 headers detection, so that enable fontsrv build on OpenBSD.
+
+merged upstream:
+https://github.com/9fans/plan9port/commit/8ee5da7cf764bf5685c137264cd4d6a03f12ba89
+
+--- INSTALL.orig	Thu Mar  6 07:00:08 2014
++++ INSTALL	Wed Jun 10 20:03:02 2015
 @@ -128,7 +128,8 @@ fi
  if [ `uname` != Darwin ]; then
  	# Determine whether fontsrv X11 files are available.
