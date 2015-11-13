@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.126 2015/11/02 21:31:26 kili Exp $
+# $OpenBSD: Makefile,v 1.127 2015/11/13 12:27:04 naddy Exp $
 
 COMMENT-main =		compiler for the functional language Haskell
 COMMENT-doc =		documentation for GHC
