@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.10 2015/05/22 11:31:15 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.11 2015/11/13 12:47:54 ajacoutot Exp $
 
 COMMENT=	image processing and analysis library
 
-DISTNAME=	leptonica-1.70
-REVISION=	1
+DISTNAME=	leptonica-1.72
 
-SHARED_LIBS +=  lept                 2.0      # 4.1
+SHARED_LIBS +=  lept                 2.1      # 4.3
 
 CATEGORIES=	graphics
 
@@ -34,8 +33,5 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -lm -lz"
 CONFIGURE_ARGS=	${CONFIGURE_SHARED}
 MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/config
-
-pre-test:
-	@${SUBST_CMD} ${WRKSRC}/prog/reg_wrapper.sh
 
 .include <bsd.port.mk>
