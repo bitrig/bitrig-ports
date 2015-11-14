@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.63 2015/11/14 12:41:53 sthen Exp $
+# $OpenBSD: Makefile,v 1.64 2015/11/14 12:45:46 sthen Exp $
 
 COMMENT=	library for dynamic creation of images
 
@@ -23,7 +23,6 @@ MASTER_SITES=	https://bitbucket.org/libgd/gd-libgd/downloads/
 CONFIGURE_STYLE= gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/config
 CONFIGURE_ARGS+= --without-xpm
-SEPARATE_BUILD=	Yes
 
 LIB_DEPENDS=	graphics/jpeg \
 		graphics/png \
