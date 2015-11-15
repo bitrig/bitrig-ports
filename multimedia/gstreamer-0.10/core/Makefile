@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.39 2015/11/15 11:55:59 jca Exp $
+# $OpenBSD: Makefile,v 1.40 2015/11/15 12:14:27 ajacoutot Exp $
 
 COMMENT=		framework for streaming media
 
