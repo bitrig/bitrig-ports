@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.38 2015/04/21 18:51:25 sthen Exp $
+# $OpenBSD: Makefile,v 1.39 2015/11/15 11:55:59 jca Exp $
 
 COMMENT=		framework for streaming media
 

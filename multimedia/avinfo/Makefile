@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.6 2015/02/16 22:57:10 naddy Exp $
+# $OpenBSD: Makefile,v 1.7 2015/11/15 11:55:59 jca Exp $
 
 COMMENT=	utility for audio-video information extraction
 
 DISTNAME=	avinfo-1.0.a15unix
 PKGNAME=	${DISTNAME:S/unix//}
-REVISION=	0
+REVISION =	1
 
 CATEGORIES=	multimedia
 
@@ -20,11 +20,6 @@ MASTER_SITES=	http://shounen.ru/soft/avinfo/
 BUILD_DEPENDS=	devel/bison
 
 USE_GMAKE=	Yes
-
-#directly uses gcc
-MODULES       += gcc4
-MODGCC4_ARCHS += *
-MODGCC4_LANGS =  c 
 
 WRKDIST=	${WRKDIR}/${DISTNAME:S/unix//}
 
