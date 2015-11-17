@@ -1,3 +1,9 @@
+$OpenBSD: README,v 1.1 2015/11/17 14:28:14 ajacoutot Exp $
+
++-----------------------------------------------------------------------
+| Running ${FULLPKGNAME} on OpenBSD
++-----------------------------------------------------------------------
+
 MozPlugger by itself isn't very useful. You might want to install some
 of the following packages:
 
