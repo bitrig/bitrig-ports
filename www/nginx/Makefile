@@ -1,10 +1,9 @@
 # $OpenBSD: Makefile,v 1.72 2015/02/12 17:55:55 sthen Exp $
 
-BROKEN= 	needs work on bitrig
-
 COMMENT=	robust and small HTTP server and mail proxy server
 
 VERSION=	1.7.10
+REVISION=	0
 DISTNAME=	nginx-${VERSION}
 CATEGORIES=	www
 
@@ -24,7 +23,7 @@ LIB_DEPENDS+=	devel/pcre
 
 NGINX_DIR=	/var/www
 SUBST_VARS=	NGINX_DIR
-CFLAGS+=	-Wall -Wpointer-arith
+CFLAGS+=	-Wall -Wpointer-arith -Wno-pointer-sign
 
 FLAVORS=	lua naxsi passenger
 FLAVOR?=
