@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.32 2015/07/07 10:29:28 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.33 2015/11/19 07:16:35 ajacoutot Exp $
 
 COMMENT=		digital camera command-line interface
 
-VERSION=		2.5.8
+VERSION=		2.5.9
 DISTNAME=		gphoto2-${VERSION}
 PKGNAME=		gphoto-${VERSION}
 
@@ -13,10 +13,17 @@ HOMEPAGE=		http://gphoto.sourceforge.net/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c cdk exif gphoto2 gphoto2_port jpeg ltdl m ncurses
-WANTLIB += popt pthread readline
+WANTLIB += X11 aa c cdk exif gphoto2 gphoto2_port jpeg ltdl m
+WANTLIB += ncurses popt pthread readline xcb
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gphoto/}
+
+MODULES=		devel/gettext
+
+LIB_DEPENDS=		devel/cdk \
+			devel/popt \
+			graphics/aalib \
+			graphics/libgphoto2
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
