@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2015/08/24 23:31:04 bentley Exp $
+# $OpenBSD: Makefile,v 1.9 2015/11/19 20:17:15 sthen Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -28,7 +28,6 @@ DISTFILES =		openscad-${V}.src.tar.gz
 
 MODULES =		x11/qt4
 BUILD_DEPENDS =		devel/bison \
-			devel/flex \
 			math/eigen2
 LIB_DEPENDS =		devel/boost \
 			devel/gmp \
@@ -44,7 +43,6 @@ QMAKE_FLAGS =		VERSION=${V}
 MAKE_ENV =		INSTALL_ROOT=${DESTDIR}
 
 pre-configure:
-	ln -sf ${LOCALBASE}/bin/gflex ${WRKDIR}/bin/flex
 	ln -sf ${LOCALBASE}/bin/bison ${WRKDIR}/bin/yacc
 
 do-configure:
