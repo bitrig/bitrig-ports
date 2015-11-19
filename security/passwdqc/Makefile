@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/04/24 07:50:36 sthen Exp $
+# $OpenBSD: Makefile,v 1.13 2015/11/19 14:19:05 sthen Exp $
 
 COMMENT=		complexity checker for passwd(1) and password generator
 
