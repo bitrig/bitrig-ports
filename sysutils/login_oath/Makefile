@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2014/12/09 15:54:25 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.9 2015/11/19 14:58:50 sthen Exp $
 
 COMMENT=	authentication provider for OATH one-time passwords
 
