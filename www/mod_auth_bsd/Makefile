@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/03/13 17:33:27 sthen Exp $
+# $OpenBSD: Makefile,v 1.17 2015/11/20 13:31:05 sthen Exp $
 
 COMMENT=	provides HTTP Basic authentication via bsd auth
 
