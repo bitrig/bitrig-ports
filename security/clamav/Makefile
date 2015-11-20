@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.100 2015/10/30 12:59:16 sthen Exp $
+# $OpenBSD: Makefile,v 1.101 2015/11/20 16:50:06 sthen Exp $
 
 COMMENT=		virus scanner
 DISTNAME=		clamav-0.98.7
-REVISION=		0
+REVISION=		1
 
 CATEGORIES=		security
 
@@ -26,15 +26,6 @@ LIB_DEPENDS=		archivers/bzip2 \
 			mail/sendmail,-libmilter \
 			net/curl \
 			textproc/libxml
-
-RUN_DEPENDS=		archivers/lha \
-			archivers/arc \
-			archivers/unzip
-
-### XXX clamav relies on libmilter, which is not part of base
-#
-BUILD_DEPENDS+=		mail/sendmail
-RUN_DEPENDS+=		mail/sendmail
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=clamav/}
 
