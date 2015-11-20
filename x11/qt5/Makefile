@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.45 2015/10/22 17:26:18 zhuk Exp $
+# $OpenBSD: Makefile,v 1.46 2015/11/20 11:24:04 sthen Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -194,8 +194,7 @@ LIB_DEPENDS-tds =	${BUILD_PKGPATH},-main>=${VERSION:R} \
 BUILD_DEPENDS =		geo/geoclue \
 			x11/dbus
 # QtWebKit & Co. requirements
-BUILD_DEPENDS +=	devel/flex \
-			devel/bison \
+BUILD_DEPENDS +=	devel/bison
 
 RUN_DEPENDS-main =	${RUN_DEPENDS} \
 			geo/geoclue \
