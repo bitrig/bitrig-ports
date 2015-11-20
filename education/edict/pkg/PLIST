@@ -1,6 +1,0 @@
-@comment $OpenBSD$
-bin/edict
-bin/ethes
-share/doc/edict/
-share/doc/edict/Changelog
-share/doc/edict/README
