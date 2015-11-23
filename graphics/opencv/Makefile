@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.34 2015/01/30 21:38:37 zhuk Exp $
+# $OpenBSD: Makefile,v 1.35 2015/11/23 20:34:07 zhuk Exp $
 
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 ONLY_FOR_ARCHS-java =	amd64 i386
@@ -9,39 +9,38 @@ COMMENT-docs =		OpenCV documentation and examples
 COMMENT-main =		library of programming functions for real time cv
 COMMENT-java =		Java bindings for OpenCV
 
-V =			2.4.10
+V =			2.4.12.3
 DISTNAME =		opencv-$V
 PKGNAME-main =		${PKGNAME}
 REVISION =		0
 PKGNAME-docs =		opencv-docs-$V
 PKGNAME-java =		opencv-java-$V
-REVISION-main =		1
-REVISION-java =		0
 
 HOMEPAGE =		http://www.opencv.org/
 
-SHARED_LIBS =		opencv_calib3d			1.0 #1.1
-SHARED_LIBS +=		opencv_contrib			1.0 #1.1
-SHARED_LIBS +=		opencv_core			1.0 #1.1
-SHARED_LIBS +=		opencv_features2d		1.0 #1.1
-SHARED_LIBS +=		opencv_flann			1.0 #1.1
-SHARED_LIBS +=		opencv_gpu			1.0 #1.1
-SHARED_LIBS +=		opencv_highgui			1.0 #1.1
-SHARED_LIBS +=		opencv_imgproc			1.0 #1.1
-SHARED_LIBS +=		opencv_legacy			1.0 #1.1
-SHARED_LIBS +=		opencv_ml			1.0 #1.1
-SHARED_LIBS +=		opencv_nonfree			0.0 #0.1
-SHARED_LIBS +=		opencv_objdetect		1.0 #1.1
-SHARED_LIBS +=		opencv_photo			0.0 #0.1
-SHARED_LIBS +=		opencv_stitching		0.0 #0.1
-SHARED_LIBS +=		opencv_superres			0.0 #0.1
-SHARED_LIBS +=		opencv_ts			0.0 #0.1
-SHARED_LIBS +=		opencv_video			1.0 #1.1
-SHARED_LIBS +=		opencv_videostab		0.0 #0.1
-SHARED_LIBS +=		opencv_ocl			0.0 #2.4
+SHARED_LIBS =		opencv_calib3d			1.1 #1.2
+SHARED_LIBS +=		opencv_contrib			1.1 #1.2
+SHARED_LIBS +=		opencv_core			1.1 #1.2
+SHARED_LIBS +=		opencv_features2d		1.1 #1.2
+SHARED_LIBS +=		opencv_flann			1.1 #1.2
+SHARED_LIBS +=		opencv_gpu			1.1 #1.2
+SHARED_LIBS +=		opencv_highgui			1.1 #1.2
+SHARED_LIBS +=		opencv_imgproc			1.1 #1.2
+SHARED_LIBS +=		opencv_legacy			1.1 #1.2
+SHARED_LIBS +=		opencv_ml			1.1 #1.2
+SHARED_LIBS +=		opencv_nonfree			0.1 #0.2
+SHARED_LIBS +=		opencv_objdetect		1.1 #1.2
+SHARED_LIBS +=		opencv_photo			0.1 #0.2
+SHARED_LIBS +=		opencv_stitching		0.1 #0.2
+SHARED_LIBS +=		opencv_superres			0.1 #0.2
+SHARED_LIBS +=		opencv_ts			0.1 #0.2
+SHARED_LIBS +=		opencv_video			1.1 #1.2
+SHARED_LIBS +=		opencv_videostab		0.1 #0.2
+SHARED_LIBS +=		opencv_ocl			0.1 #2.5
 
-EXTRACT_SUFX =		.zip
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=opencvlibrary/}
+GH_ACCOUNT =		Itseez
+GH_PROJECT =		opencv
+GH_COMMIT =		8e40becab12c642e7bbafb9fe87698e8b6bf28da
 
 WANTLIB-main =  Half Iex IlmImf IlmThread Imath X11 Xcomposite Xcursor
 WANTLIB-main += Xdamage Xext Xfixes Xi Xinerama Xrandr Xrender atk-1.0
@@ -49,10 +48,9 @@ WANTLIB-main += avcodec avformat avutil bz2 c cairo fontconfig
 WANTLIB-main += freetype gdk-x11-2.0 gdk_pixbuf-2.0 gio-2.0 glib-2.0
 WANTLIB-main += gobject-2.0 gstapp-1.0 gstbase-1.0 gstpbutils-1.0
 WANTLIB-main += gstreamer-1.0 gstriff-1.0 gstvideo-1.0 gthread-2.0 gtk-x11-2.0
-WANTLIB-main += jasper jpeg m pango-1.0 pangocairo-1.0
-WANTLIB-main += pangoft2-1.0 png pthread swscale tiff xml2 z
+WANTLIB-main += jasper jpeg m pango-1.0 pangocairo-1.0 avresample
+WANTLIB-main += pangoft2-1.0 png pthread c++ c++abi swscale tiff xml2 z
 WANTLIB-main += ${MODGETTEXT_WANTLIB} ${MODPY_WANTLIB}
-WANTLIB-main += c++ c++abi
 
 WANTLIB-docs =
 
@@ -84,7 +82,8 @@ MODULES =		devel/cmake \
 			lang/python
 
 BUILD_DEPENDS =		devel/doxygen \
-			math/py-numpy
+			math/py-numpy \
+			math/eigen3
 
 RUN_DEPENDS-main =	math/py-numpy
 RUN_DEPENDS-docs =	${BUILD_PKGPATH},-main
@@ -113,6 +112,7 @@ CONFIGURE_ENV =		CFLAGS="${CFLAGS} -fPIC" \
 # ATM opencv requires V4L1 compat, ask them to change it,
 # then see WITH_V4L below.
 CONFIGURE_ARGS =	-DBUILD_opencv_nonfree:Bool=On \
+			-DBUILD_opencv_python:Bool=On \
 			-DWITH_1394:Bool=Off \
 			-DWITH_CUDA:Bool=Off \
 			-DWITH_EIGEN:Bool=Off \
@@ -122,7 +122,8 @@ CONFIGURE_ARGS =	-DBUILD_opencv_nonfree:Bool=On \
 			-DWITH_JPEG:Bool=On \
 			-DWITH_PNG:Bool=On \
 			-DWITH_TIFF:Bool=On \
-			-DWITH_V4L:Bool=Off
+			-DWITH_V4L:Bool=Off \
+			-DPYTHON_EXECUTABLE:FILEPATH=${MODPY_BIN}
 
 .if ${BUILD_PACKAGES:M-java}
 MODULES +=		java
