@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/11/23 13:19:40 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.12 2015/11/23 14:27:37 dcoppa Exp $
 
 BROKEN =	needs work on bitrig
 
@@ -15,7 +15,7 @@ EXTRACT_SUFX = 	.zip
 WRKDIST = 	${WRKDIR}
 
 # individual files are public domain
-# compilation just has supplementary disclaimers (patents dreck)
+# compilation is licensed under the Boost Software License 1.0
 PERMIT_PACKAGE_CDROM = 		Yes
 
 WANTLIB +=	m pthread
