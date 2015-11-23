@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.91 2015/08/25 14:17:45 sthen Exp $
-
-PORTROACH_COMMENT= rrdcached crashes at startup in 1.5.0 to at least 1.5.3
+# $OpenBSD: Makefile,v 1.92 2015/11/23 11:41:02 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -10,24 +8,22 @@ COMMENT-python= python interface to librrd
 COMMENT-ruby=	ruby interface to librrd
 
 MODPY_EGG_VERSION= 0.2.2
-VERSION=	1.4.9
-REVISION-main=	0
+VERSION=	1.5.5
 DISTNAME=	rrdtool-${VERSION}
 PKGNAME-main=	${DISTNAME}
 PKGNAME-update=	rrdupdate-${VERSION}
 PKGNAME-python= py-rrd-${VERSION}
 PKGNAME-ruby=	ruby-rrd-${VERSION}
-REVISION-ruby=	1
 
-SHARED_LIBS +=	rrd                  4.0      # 6.1
-SHARED_LIBS +=	rrd_th               4.0      # 6.1
+SHARED_LIBS +=	rrd                  5.0      # 7.0
+SHARED_LIBS +=	rrd_th               5.0      # 7.0
 
 CATEGORIES=	net databases
 
 HOMEPAGE=	http://oss.oetiker.ch/rrdtool/
 MASTER_SITES=	http://oss.oetiker.ch/rrdtool/pub/
 
-# GPLv2+, with exceptions for use of the library with certain
+# GPLv2+, with exemptions for use of the library with certain
 # named open-source licenses; see COPYRIGHT
 PERMIT_PACKAGE_CDROM=	 Yes
 
@@ -37,6 +33,7 @@ PSEUDO_FLAVORS=	no_ruby no_python
 MULTI_PACKAGES= -main -python -ruby -update
 
 MODULES=	devel/gettext lang/python lang/ruby
+MODPY_SETUPTOOLS= Yes
 
 CONFIGURE_STYLE= gnu
 CPPFLAGS+=	-I${X11BASE}/include/ \
@@ -71,7 +68,7 @@ MODPY_RUNDEP=   No
 # needs checking before enabling mmap; is it safe without UBC?
 CONFIGURE_ARGS+= --disable-mmap
 
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}" \
+CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS} -DDEBUG" \
 		LDFLAGS="${LDFLAGS}"
 # autoconf insists on these, but the docs are pre-formatted in the distfile,
 # so they aren't needed.
@@ -79,7 +76,7 @@ CONFIGURE_ENV+=	NROFF="/usr/bin/true" \
 		TROFF="/usr/bin/true"
 
 cWANTLIB=	pthread
-WANTLIB-update=	${cWANTLIB} c m
+WANTLIB-update=	${cWANTLIB} ${MODGETTEXT_WANTLIB} c glib-2.0 m pcre
 WANTLIB-python=	${cWANTLIB} ${MODPY_WANTLIB} rrd
 WANTLIB-ruby=	${cWANTLIB} ${MODRUBY_WANTLIB} c gmp m rrd
 # depends on Perl ABI
@@ -90,12 +87,15 @@ WANTLIB-main += harfbuzz lzma m pango-1.0 pangocairo-1.0
 WANTLIB-main += pangoft2-1.0 pcre pixman-1 png pthread-stubs xcb
 WANTLIB-main += xcb-render xcb-shm xml2 z
 
-LIB_DEPENDS-main=	graphics/png \
+LIB_DEPENDS-main=	devel/glib2 \
 			devel/pango \
+			graphics/png \
 			textproc/libxml
 RUN_DEPENDS-main=	rrdupdate-${VERSION}:net/rrdtool,-update
 
-LIB_DEPENDS-update=
+LIB_DEPENDS-update=	${MODGETTEXT_LIB_DEPENDS} \
+			devel/glib2 \
+			devel/pcre
 RUN_DEPENDS-update=
 
 LIB_DEPENDS-python=	rrdtool-${VERSION}:net/rrdtool
@@ -106,8 +106,8 @@ LIB_DEPENDS-ruby=	rrdtool-${VERSION}:net/rrdtool \
 RUN_DEPENDS-ruby=	${MODRUBY_RUN_DEPENDS}
 
 post-install:
-	cd ${WRKSRC}; ${INSTALL_DATA} CHANGES CONTRIBUTORS COPYRIGHT \
-	    NEWS README ${PREFIX}/share/doc/rrdtool
+	cd ${WRKSRC}; ${INSTALL_DATA} CHANGES COPYRIGHT \
+	    NEWS ${PREFIX}/share/doc/rrdtool
 	rm -r ${PREFIX}/share/doc/rrdtool/txt
 	${SUBST_PROGRAM} ${FILESDIR}/rrdtool-chroot.sh \
 	    ${PREFIX}/share/examples/rrdtool/rrdtool-chroot
