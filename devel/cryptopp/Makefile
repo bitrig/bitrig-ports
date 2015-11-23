@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/06/24 09:41:33 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.11 2015/11/23 13:19:40 dcoppa Exp $
 
 BROKEN =	needs work on bitrig
 
@@ -8,9 +8,8 @@ REVISION=		1
 
 HOMEPAGE = 	http://www.cryptopp.com/
 MASTER_SITES = 	${HOMEPAGE}
-DISTNAME = 	cryptopp562
-PKGNAME = 	cryptopp-5.6.2
-REVISION =	1
+DISTNAME = 	cryptopp563
+PKGNAME = 	cryptopp-5.6.3
 
 EXTRACT_SUFX = 	.zip
 WRKDIST = 	${WRKDIR}
@@ -22,14 +21,11 @@ PERMIT_PACKAGE_CDROM = 		Yes
 WANTLIB +=	m pthread
 WANTLIB +=	c++ c++abi
 
-SHARED_LIBS = 	cryptopp	1.0
+SHARED_LIBS = 	cryptopp	2.0
 
 USE_GMAKE = 	Yes
 MAKE_FLAGS +=	CXX="${CXX}" \
-		CXXFLAGS="${CXXFLAGS} -Wno-deprecated \
-			-Wno-sign-compare \
-			-Wno-unknown-pragmas \
-			-Wno-unused \
+		CXXFLAGS="${CXXFLAGS} -Wno-unused \
 			-DCRYPTOPP_DISABLE_SSSE3 \
 			-DCRYPTOPP_DISABLE_AESNI \
 			-DNDEBUG -fPIC" \
@@ -40,7 +36,9 @@ MAKE_FLAGS +=	CXX="${CXX}" \
 MAKE_FILE = 	${WRKDIR}/GNUmakefile
 
 TEST_FLAGS += WRKDIST=${WRKDIST}
-TEST_TARGET = test
+
+pre-patch:
+	@cd ${WRKSRC}; perl -i -pe 's/\r$$//' `find . -type f`
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/cryptopp
