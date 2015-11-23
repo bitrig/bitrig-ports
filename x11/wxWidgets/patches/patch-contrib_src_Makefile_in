@@ -1,14 +1,14 @@
-$OpenBSD: patch-contrib_src_Makefile_in,v 1.1 2010/11/02 13:10:51 dcoppa Exp $
+$OpenBSD: patch-contrib_src_Makefile_in,v 1.2 2015/11/23 13:05:54 sthen Exp $
 
 Zap mmedia contrib library.
 It contains deprecated and/or linux-only code, it's not used by any
 port and it's already gone bye-bye in upstream svn trunk as well.
 And we avoid depending on ossaudio and esound, which is also good.
 
---- contrib/src/Makefile.in.orig	Tue Mar 22 07:00:34 2011
-+++ contrib/src/Makefile.in	Thu Jun  7 16:36:27 2012
+--- contrib/src/Makefile.in.orig	Tue Mar 22 12:00:34 2011
++++ contrib/src/Makefile.in	Mon Nov 23 12:54:37 2015
 @@ -1,6 +1,6 @@
- # $Id: Makefile.in 42385 2006-10-25 06:51:10Z RD $
+ # $Id: patch-contrib_src_Makefile_in,v 1.2 2015/11/23 13:05:54 sthen Exp $
  
 -CONTRIB_SUBDIRS=fl gizmos mmedia ogl plot stc svg #deprecated #applet
 +CONTRIB_SUBDIRS=fl gizmos ogl plot stc svg #deprecated #applet #mmedia
