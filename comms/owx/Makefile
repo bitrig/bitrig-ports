@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 01:30:26 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2015/11/24 09:11:03 jasper Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -18,7 +18,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB =	c m 
 WANTLIB +=	c++ c++abi pthread
 
-MASTER_SITES =	http://distfiles.nl/
+MASTER_SITES =	https://distfiles.nl/
 
 USE_GMAKE =	Yes
 NO_TEST =	Yes

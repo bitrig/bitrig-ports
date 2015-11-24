@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2015/08/17 19:52:40 sthen Exp $
+# $OpenBSD: Makefile,v 1.13 2015/11/24 09:11:06 jasper Exp $
 
 SHARED_ONLY=	Yes
 
@@ -26,7 +26,7 @@ WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
 WANTLIB += xcb xcb-render xcb-shm z epoxy graphite2
 WANTLIB += c++ c++abi
 
-MASTER_SITES=	http://distfiles.nl/
+MASTER_SITES=	https://distfiles.nl/
 
 MODULES=	devel/gettext
 

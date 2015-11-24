@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2015/08/12 06:49:36 jasper Exp $
+# $OpenBSD: Makefile,v 1.2 2015/11/24 09:11:06 jasper Exp $
 
 COMMENT=		uniform frontend to running Common Lisp code from the shell
 
@@ -10,7 +10,7 @@ HOMEPAGE=		http://cliki.net/cl-launch
 # LLGPL (http://www.cliki.net/LLGPL)
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=		http://distfiles.nl/
+MASTER_SITES=		https://distfiles.nl/
 
 WRKDIST=		${WRKDIR}/cl-launch.git/
 
