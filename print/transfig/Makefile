@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.40 2013/03/11 11:37:54 espie Exp $
+# $OpenBSD: Makefile,v 1.41 2015/11/25 12:42:26 jasper Exp $
 
 COMMENT=	tools to convert Xfig's .fig files
 
