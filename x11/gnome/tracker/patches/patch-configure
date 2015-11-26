@@ -1,37 +1,10 @@
-$OpenBSD: patch-configure,v 1.17 2015/09/25 06:56:02 ajacoutot Exp $
+$OpenBSD: patch-configure,v 1.18 2015/11/26 07:12:04 ajacoutot Exp $
 
 See pre-configure.
 
---- configure.orig	Tue Sep 22 07:02:36 2015
-+++ configure	Fri Jan 29 10:24:46 2016
-@@ -6465,7 +6465,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
- 
--  bitrig* | darwin* | dragonfly* | freebsd* | netbsd* | openbsd*)
-+  bitrig* | darwin* | dragonfly* | freebsd* | netbsd* | openbsd* | bitrig*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -7571,7 +7571,7 @@ old_postuninstall_cmds=
- 
- if test -n "$RANLIB"; then
-   case $host_os in
--  bitrig* | openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
-     ;;
-   *)
-@@ -20397,7 +20397,7 @@ $as_echo "yes" >&6; }
- fi
- 
- case $host in
--  *-*-openbsd*)
-+  *-*-openbsd* | *-*-bitrig*)
-     LIBTRACKER_COMMON_LIBS="$LIBTRACKER_COMMON_LIBS -lkvm"
-     ;;
- esac
-@@ -28009,7 +28009,7 @@ if ${ac_cv_lib_gif_DGifOpen+:} false; then :
+--- configure.orig	Wed Nov 18 23:03:27 2015
++++ configure	Thu Nov 26 07:59:21 2015
+@@ -27430,7 +27430,7 @@ if ${ac_cv_lib_gif_DGifOpen+:} false; then :
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -40,7 +13,7 @@ See pre-configure.
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -28119,7 +28119,7 @@ if ${ac_cv_lib_jpeg_jpeg_CreateCompress+:} false; then
+@@ -27540,7 +27540,7 @@ if ${ac_cv_lib_jpeg_jpeg_CreateCompress+:} false; then
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -49,7 +22,7 @@ See pre-configure.
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -28229,7 +28229,7 @@ if ${ac_cv_lib_tiff_TIFFOpen+:} false; then :
+@@ -27650,7 +27650,7 @@ if ${ac_cv_lib_tiff_TIFFOpen+:} false; then :
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
@@ -58,7 +31,7 @@ See pre-configure.
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
-@@ -28339,7 +28339,7 @@ if ${ac_cv_lib_png_png_create_read_struct+:} false; th
+@@ -27760,7 +27760,7 @@ if ${ac_cv_lib_png_png_create_read_struct+:} false; th
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
