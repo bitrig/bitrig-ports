@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.13 2015/11/12 09:04:08 benoit Exp $
+# $OpenBSD: Makefile,v 1.14 2015/11/30 07:42:54 benoit Exp $
 
 BROKEN =	needs work on bitrig
 
 SHARED_ONLY =	Yes
 COMMENT =	Unicode line breaking algorithm
 
-DISTNAME =	Unicode-LineBreak-2015.11
+DISTNAME =	Unicode-LineBreak-2015.12
 CATEGORIES =	converters
 MODULES =	cpan
 
