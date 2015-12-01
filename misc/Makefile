@@ -101,6 +101,7 @@
      SUBDIR += toilet
      SUBDIR += tpp
      SUBDIR += ttyrec
+     SUBDIR += tty-clock
      SUBDIR += uniutils
      SUBDIR += viz
      SUBDIR += vmware-vncpasswd
