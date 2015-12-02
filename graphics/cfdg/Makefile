@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/12/02 16:11:12 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.11 2015/12/02 18:20:27 jasper Exp $
 
 COMMENT =	Context Free Design Grammar
 
@@ -26,6 +26,8 @@ USE_GMAKE =	Yes
 MAKE_FLAGS=	LINK.o=${CXX}
 
 WRKDIST =	${WRKDIR}/context-free-${VERSION}
+
+MAKE_ENV +=	CPPFLAGS="${CFLAGS}"
 
 EXAMPLEDIR =	${PREFIX}/share/examples/cfdg
 
