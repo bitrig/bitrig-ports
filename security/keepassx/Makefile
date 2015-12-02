@@ -1,9 +1,10 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/11 11:41:25 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2015/12/02 13:08:30 jasper Exp $
 
 COMMENT =	management tool for sensitive data
 
-DISTNAME =	keepassx-0.4.3
-REVISION =	5
+V =		0.4.3
+DISTNAME =	keepassx-$V
+REVISION =	2
 CATEGORIES =	security
 
 HOMEPAGE =	http://www.keepassx.org/
@@ -11,7 +12,7 @@ HOMEPAGE =	http://www.keepassx.org/
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=keepassx/}
+MASTER_SITES =	https://www.keepassx.org/releases/$V/
 
 MODULES =	x11/qt4 devel/cmake
 
