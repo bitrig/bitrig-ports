@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2013/03/10 23:04:44 espie Exp $
+# $OpenBSD: Makefile,v 1.7 2015/12/03 21:24:29 sthen Exp $
 
 COMMENT=	the definite guide to DocBook
 
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.zip
 CATEGORIES=	books
 
 MASTER_SITES=	http://docbook.org/tdg/en/ \
-		http://spacehopper.org/mirrors/
+		https://spacehopper.org/mirrors/
 HOMEPAGE=	http://docbook.org/tdg/en/
 
 # GNU Free Documentation License

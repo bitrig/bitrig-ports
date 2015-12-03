@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 11:35:57 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2015/12/03 21:24:31 sthen Exp $
 
 COMMENT=	BPF traffic collector
 
@@ -6,7 +6,7 @@ DISTNAME=	trafd-3.0.1
 REVISION=	0
 CATEGORIES=	net
 
-MASTER_SITES=	http://spacehopper.org/mirrors/ \
+MASTER_SITES=	https://spacehopper.org/mirrors/ \
 		ftp://ftp.riss-telecom.ru/pub/dev/trafd/
 EXTRACT_SUFX=	.tgz
 

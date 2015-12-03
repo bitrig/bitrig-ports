@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/07/11 20:08:23 sthen Exp $
+# $OpenBSD: Makefile,v 1.11 2015/12/03 21:24:31 sthen Exp $
 
 COMMENT=		Nagios plugin to check SIP
 
@@ -7,7 +7,7 @@ REVISION=		4
 CATEGORIES=		net
 
 HOMEPAGE=		http://isle.wumpus.org/src/nagios/
-MASTER_SITES=		http://spacehopper.org/mirrors/
+MASTER_SITES=		https://spacehopper.org/mirrors/
 
 # Artistic License 2.0
 PERMIT_PACKAGE_CDROM=	Yes

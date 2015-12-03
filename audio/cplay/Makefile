@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/07/18 14:33:49 jasper Exp $
+# $OpenBSD: Makefile,v 1.21 2015/12/03 21:24:29 sthen Exp $
 
 COMMENT=		curses front-end for various audio players
 
@@ -9,7 +9,7 @@ CATEGORIES=		audio
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=		http://spacehopper.org/mirrors/
+MASTER_SITES=		https://spacehopper.org/mirrors/
 
 MODULES=		lang/python
 

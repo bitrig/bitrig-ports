@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2013/10/11 23:50:41 naddy Exp $
+# $OpenBSD: Makefile,v 1.23 2015/12/03 21:24:31 sthen Exp $
 
 BROKEN= 		needs work on bitrig
 
@@ -11,7 +11,7 @@ CATEGORIES=		productivity devel
 HOMEPAGE=		http://swapoff.org/devtodo1.html
 
 MASTER_SITES=		http://swapoff.org/files/devtodo/ \
-			http://spacehopper.org/mirrors/
+			https://spacehopper.org/mirrors/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

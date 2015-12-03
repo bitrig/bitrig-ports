@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.82 2015/07/02 00:22:18 zhuk Exp $
+# $OpenBSD: Makefile,v 1.83 2015/12/03 21:24:30 sthen Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -82,7 +82,7 @@ TEST_DEPENDS = 	devel/dejagnu \
 			devel/autogen
 
 MASTER_SITES =	${MASTER_SITE_GCC:=releases/gcc-$(FULL_VERSION)/}
-MASTER_SITES0 =	http://spacehopper.org/mirrors/ http://distfiles.tmux.org/adastrap/
+MASTER_SITES0 =	https://spacehopper.org/mirrors/ http://distfiles.tmux.org/adastrap/
 MASTER_SITES1 =	ftp://sources.redhat.com/pub/java/
 
 LANGS = c
