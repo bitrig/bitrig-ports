@@ -1,7 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2015/07/26 06:08:15 jeremy Exp $
-
-BROKEN = 	needs work on bitrig
-
+BROKEN-hppa =	../../include/mednafen/state.h:21:7: error: 'exception_ptr' in namespace 'std' does not name a type
 COMMENT =	emulates numerous game consoles
 
 V =		0.9.38.5

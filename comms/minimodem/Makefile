@@ -1,5 +1,6 @@
-# $OpenBSD: Makefile,v 1.2 2015/08/24 23:02:30 bcallah Exp $
+# $OpenBSD: Makefile,v 1.4 2015/12/04 20:47:52 landry Exp $
 
+BROKEN-hppa =	no atomic ops in pulse-simple dependency
 COMMENT =	general-purpose software audio FSK modem
 DISTNAME =	minimodem-0.22.1
 CATEGORIES =	comms
