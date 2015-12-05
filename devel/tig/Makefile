@@ -1,8 +1,7 @@
-# $OpenBSD: Makefile,v 1.14 2015/06/10 18:33:00 matthieu Exp $
+# $OpenBSD: Makefile,v 1.15 2015/12/05 22:26:33 tobiasu Exp $
 
 COMMENT =		ncurses GIT repository browser
-DISTNAME =		tig-2.1
-REVISION =		0
+DISTNAME =		tig-2.1.1
 CATEGORIES =		devel
 HOMEPAGE =		http://jonas.nitro.dk/tig/
 
