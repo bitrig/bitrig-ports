@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/01/17 21:39:28 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2015/12/06 12:15:18 bentley Exp $
 
 BROKEN =	needs work on bitrig
 BROKEN-hppa =	./src/x/xdga2s.s:25: Error: symbol .text is already defined
@@ -13,10 +13,12 @@ REVISION =	3
 CATEGORIES =	games devel multimedia
 SHARED_LIBS =	alleg	1.0	# 4.2
 
-HOMEPAGE =	http://alleg.sourceforge.net/
-MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=alleg/}
+HOMEPAGE =	http://liballeg.org/
+MASTER_SITES =	http://download.gna.org/allegro/allegro/$V/ \
+		${MASTER_SITE_SOURCEFORGE:=alleg/}
 
-# GPL
+# readme.txt: "You may use, modify, redistribute, and generally hack it about
+# in any way you like, and you do not have to give us anything in return."
 PERMIT_PACKAGE_CDROM =	Yes
 
 USE_GMAKE =		Yes
