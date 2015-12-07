@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.91 2015/05/22 11:31:20 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.92 2015/12/07 18:24:11 jasper Exp $
 
 COMMENT-main=		window manager that emulates NEXTSTEP(tm)
 COMMENT-lang=		language subpackage for Window Maker
@@ -14,7 +14,7 @@ SHARED_LIBS +=	wraster              5.0      # 4.0
 
 CATEGORIES=		x11 x11/windowmaker
 
-HOMEPAGE=		http://www.windowmaker.info/
+HOMEPAGE=		http://windowmaker.org/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
