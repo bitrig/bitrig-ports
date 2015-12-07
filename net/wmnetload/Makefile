@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2013/03/11 11:35:58 espie Exp $
+# $OpenBSD: Makefile,v 1.13 2015/12/07 14:58:54 jasper Exp $
 
 BROKEN= 		needs work on bitrig
 
@@ -12,7 +12,7 @@ HOMEPAGE=		http://freshmeat.net/projects/wmnetload
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		X11 Xext Xpm c kvm m pthread-stubs xcb dockapp
+WANTLIB=		X11 Xext Xpm c m dockapp
 
 MASTER_SITES=		ftp://truffula.com/pub/
 
