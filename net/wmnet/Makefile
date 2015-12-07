@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2013/11/22 15:38:30 sthen Exp $
+# $OpenBSD: Makefile,v 1.24 2015/12/07 18:00:42 jasper Exp $
 
 COMMENT=	little X dock.app network monitor
 
@@ -11,7 +11,7 @@ MASTER_SITES=	http://dockapps.org/files/77/115/
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	X11 Xau Xdmcp Xext c kvm m pthread-stubs xcb
+WANTLIB=	X11 Xau Xdmcp Xext c m
 
 MAKE_FLAGS=	CC="${CC}" CCOPTIONS="${CFLAGS}"
 CONFIGURE_STYLE=imake
