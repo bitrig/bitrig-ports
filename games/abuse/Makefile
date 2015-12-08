@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.41 2014/11/05 11:43:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.42 2015/12/08 00:56:20 bentley Exp $
 
 COMMENT =	SDL port of the legendary 2D platform shooter
 
@@ -29,7 +29,6 @@ MODULES =	converters/libiconv
 BUILD_DEPENDS =	devel/libtool \
 		${MODGNU_AUTOCONF_DEPENDS} \
 		${MODGNU_AUTOMAKE_DEPENDS}
-RUN_DEPENDS = 	audio/timidity
 LIB_DEPENDS =	devel/sdl-mixer \
 		devel/smpeg \
 		audio/flac \
