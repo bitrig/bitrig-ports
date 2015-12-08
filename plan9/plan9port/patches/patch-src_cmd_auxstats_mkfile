@@ -1,10 +1,14 @@
---- src/cmd/auxstats/mkfile.orig	Wed Jul 30 22:42:58 2014
-+++ src/cmd/auxstats/mkfile	Wed Jul 30 22:43:10 2014
+$OpenBSD: patch-src_cmd_auxstats_mkfile,v 1.1 2015/12/08 13:05:29 gsoares Exp $
+
+stop linking with kvm(3). OpenBSD's p9p/auxstats no longer uses libkvm.
+
+--- src/cmd/auxstats/mkfile.orig	Mon Dec  7 07:50:40 2015
++++ src/cmd/auxstats/mkfile	Mon Dec  7 07:50:58 2015
 @@ -12,6 +12,6 @@ HFILES=\
  
  <$PLAN9/src/mkone
  
 -KVM=`{if uname |egrep 'BSD' >/dev/null; then echo -lkvm; fi}
-+KVM=`{if uname |egrep 'BSD|Bitrig' >/dev/null; then echo -lkvm; fi}
++KVM=`{if uname |egrep 'Bit' | egrep -v 'Bitrig' >/dev/null; then echo -lkvm; fi}
  LDFLAGS=$LDFLAGS $KVM
  
