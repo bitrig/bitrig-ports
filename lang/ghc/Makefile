@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.128 2015/11/30 22:22:24 kili Exp $
+# $OpenBSD: Makefile,v 1.129 2015/12/10 19:50:01 kili Exp $
 
 BROKEN =		needs work on bitrig
 
@@ -56,6 +56,13 @@ MASTER_SITES0 =		https://openbsd.dead-parrot.de/distfiles/
 DIST_SUBDIR =		ghc
 
 BINDISTFILE =		${BINDISTFILE-${MACHINE_ARCH}}
+
+#####################################################################
+###								    #
+### NOTE FOR 7.10.3: SRC DISTFILE IS ghc-7.10.3a-src.tar.bz2, NOT   #
+### ghc-7.10.3-src.tar.bz2!					    #
+###								    #
+#####################################################################
 
 DISTFILES =		ghc-${MODGHC_VER}-src.tar.bz2 \
 			ghc-${MODGHC_VER}-testsuite.tar.bz2 \
