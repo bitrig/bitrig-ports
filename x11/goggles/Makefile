@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/05/05 17:00:20 sthen Exp $
+# $OpenBSD: Makefile,v 1.21 2015/12/10 08:05:43 jasper Exp $
 
 COMMENT=	gui for ogle
 CATEGORIES=	x11
