@@ -1,34 +1,7 @@
-$OpenBSD: patch-configure,v 1.22 2014/04/29 06:27:57 jasper Exp $
---- configure.orig	Mon Apr 28 23:16:36 2014
-+++ configure	Mon Jul 28 22:46:57 2014
-@@ -13495,7 +13495,7 @@ $as_echo_n "checking for libgtop sysdeps directory... 
- 	  libgtop_need_server=yes
- 	  libgtop_postinstall='chgrp kmem $(bindir)/libgtop_server2 && chmod 2755 $(bindir)/libgtop_server2'
- 	  ;;
--	openbsd*)
-+	openbsd*|bitrig*)
- 	  libgtop_sysdeps_dir=openbsd
- 	  libgtop_use_machine_h=yes
- 	  libgtop_need_server=yes
-@@ -13577,7 +13577,7 @@ $as_echo "$libgtop_sysdeps_dir" >&6; }
- 
- 
- 	case "$host_os" in
--	*bsd*)
-+	*bsd*|bitrig*)
- 	  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for kvm_open in -lkvm" >&5
- $as_echo_n "checking for kvm_open in -lkvm... " >&6; }
- if ${ac_cv_lib_kvm_kvm_open+:} false; then :
-@@ -16517,7 +16517,7 @@ else
- fi
- 
- 	    ;;
--	    *-*-openbsd*)
-+	    *-*-openbsd*|*-*-bitrig)
- 	    CATOBJEXT=.mo
-             DATADIRNAME=share
- 	    ;;
-@@ -17809,8 +17809,8 @@ else
+$OpenBSD: patch-configure,v 1.23 2015/12/11 14:07:30 jasper Exp $
+--- configure.orig	Mon Sep 21 19:08:25 2015
++++ configure	Fri Dec 11 14:19:49 2015
+@@ -17734,8 +17734,8 @@ else
  /* end confdefs.h.  */
  
  #include <sys/types.h>
