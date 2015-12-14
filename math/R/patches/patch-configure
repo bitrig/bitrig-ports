@@ -1,156 +1,29 @@
-$OpenBSD: patch-configure,v 1.21 2015/01/08 14:14:11 dcoppa Exp $
-
-Use GNU readline instead of our base readline
+$OpenBSD: patch-configure,v 1.27 2015/12/14 16:49:02 feinerer Exp $
 
 Unbreak build on powerpc (relocation truncated to fit: R_PPC_GOT16...)
 
-Fix "--export-dynamic" linker flag
-
-Fix linking with external libintl
-
---- configure.orig	Tue Sep 22 15:52:35 2015
-+++ configure	Tue Sep 22 15:53:14 2015
-@@ -9147,7 +9147,7 @@ else
-     lt_cv_sys_max_cmd_len=8192;
-     ;;
- 
--  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
-+  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
-     # This has been around since 386BSD, at least.  Likely further.
-     if test -x /sbin/sysctl; then
-       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -9572,7 +9572,7 @@ newos6*)
-   lt_cv_deplibs_check_method=pass_all
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
-     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
-   else
-@@ -9956,7 +9956,7 @@ old_postuninstall_cmds=
- 
- if test -n "$RANLIB"; then
-   case $host_os in
--  openbsd*)
-+  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
-     ;;
-   *)
-@@ -12562,7 +12562,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -13270,7 +13270,7 @@ rm -f core conftest.err conftest.$ac_objext \
-     *nto* | *qnx*)
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct=yes
- 	hardcode_shlibpath_var=no
-@@ -14230,7 +14230,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -16028,7 +16028,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
- 	ld_shlibs_CXX=no
- 	;;
- 
--      openbsd*)
-+      openbsd* | bitrig*)
- 	if test -f /usr/libexec/ld.so; then
- 	  hardcode_direct_CXX=yes
- 	  hardcode_shlibpath_var_CXX=no
-@@ -17676,7 +17676,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -18653,7 +18653,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -19348,7 +19348,7 @@ rm -f core conftest.err conftest.$ac_objext \
-     *nto* | *qnx*)
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct_F77=yes
- 	hardcode_shlibpath_var_F77=no
-@@ -20148,7 +20148,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
-@@ -25993,7 +25993,7 @@ fi
-         ;;
-     esac
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`"; then
-       $as_echo "#define HAVE_NO_SYMBOL_UNDERSCORE 1" >>confdefs.h
- 
-@@ -26518,7 +26518,7 @@ $as_echo "$as_me: WARNING: Use of flat namespace is re
-       shlib_ldflags="-Bshareable"
+--- configure.orig	Thu Dec 10 15:45:13 2015
++++ configure	Thu Dec 10 15:47:05 2015
+@@ -26576,6 +26576,22 @@ $as_echo "$as_me: WARNING: Use of flat namespace is re
+       main_ldflags="${wl}-export-dynamic"
+       shlib_ldflags="-shared -fPIC"
      fi
++    case "${host_cpu}" in
++      powerpc*)
++	## GCC -fpic limits to 2**16 on OpenBSD powerpc.
++	## Error message without -fPIC:
++	##   relocation truncated to fit: R_PPC_GOT16...
++        if test "${GCC}" = yes; then
++          cpicflags="-fPIC"
++        fi
++        if test "${G77}" = yes; then
++          fpicflags="-fPIC"
++        fi
++        if test "${GXX}" = yes; then
++          cxxpicflags="-fPIC"
++        fi
++        ;;
++    esac
      ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     ## looks like ${wl} is not defined here.  Perhaps in libtool code?
-     if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`"; then
-       main_ldflags="-Wl,--export-dynamic"
-@@ -36749,7 +36749,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
-     # we just hope/assume this is gcc and not c89 (= MSVC++)
-     with_gnu_ld=yes
-     ;;
--  openbsd*)
-+  openbsd* | bitrig*)
-     with_gnu_ld=no
-     ;;
-   esac
-@@ -37444,7 +37444,7 @@ rm -f core conftest.err conftest.$ac_objext \
-     *nto* | *qnx*)
-       ;;
- 
--    openbsd*)
-+    openbsd* | bitrig*)
-       if test -f /usr/libexec/ld.so; then
- 	hardcode_direct_FC=yes
- 	hardcode_shlibpath_var_FC=no
-@@ -38244,7 +38244,7 @@ newsos6)
-   dynamic_linker='ldqnx.so'
-   ;;
- 
--openbsd*)
-+openbsd* | bitrig*)
-   version_type=sunos
-   sys_lib_dlsearch_path_spec="/usr/lib"
-   need_lib_prefix=no
+   osf*)
+     cpicflags=
