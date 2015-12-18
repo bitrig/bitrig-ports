@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.36 2015/04/15 21:58:16 jeremy Exp $
+# $OpenBSD: Makefile,v 1.37 2015/12/18 17:36:31 jeremy Exp $
 
 COMMENT-main=		object oriented script language with threads
 COMMENT-iconv=		libiconv interface for ruby
@@ -23,7 +23,7 @@ PKGSPEC-main=		ruby->=1.8,<1.9
 MODULES+=		gcc4
 MODGCC4_ARCHS=		*
 MODGCC4_LANGS=		c
-REVISION-main=		4
+REVISION-main=		5
 REVISION-ri_docs=	0
 
 CONFIGURE_ARGS=		--program-suffix=18 \
