@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/05/05 17:00:18 sthen Exp $
+# $OpenBSD: Makefile,v 1.11 2015/12/18 22:41:37 kili Exp $
 
 COMMENT=	python bindings for poppler
 
