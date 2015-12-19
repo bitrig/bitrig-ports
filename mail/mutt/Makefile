@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.69 2015/12/09 00:03:10 sthen Exp $
+# $OpenBSD: Makefile,v 1.70 2015/12/19 00:33:46 sthen Exp $
 
 COMMENT=	tty-based e-mail client
 
 DISTNAME=	mutt-1.5.24
-REVISION=	1
+REVISION=	2
 EPOCH=		0
 
 CATEGORIES=	mail
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.mutt.org/
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB+=	c crypto idn qdbm>=14 ssl z
+WANTLIB+=	c crypto idn tokyocabinet ssl z
 
 MASTER_SITES=	http://ftp.mutt.org/pub/mutt/ \
 		https://bitbucket.org/mutt/mutt/downloads/ \
@@ -24,7 +24,7 @@ PATCH_DIST_STRIP= -p1
 
 MODULES=	devel/gettext
 
-LIB_DEPENDS=	databases/qdbm \
+LIB_DEPENDS=	databases/tokyocabinet \
 		devel/libidn
 BUILD_DEPENDS+=	textproc/docbook-xsl \
 		www/lynx
