@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.9 2013/03/11 11:35:55 espie Exp $
+# $OpenBSD: Makefile,v 1.10 2015/12/19 20:47:03 bentley Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	Tlen.pl protocol plugin for Pidgin
 
 DISTNAME=	pidgin-tlen-20101112
-REVISION=		1
+REVISION=	1
 CATEGORIES=	net
 
 HOMEPAGE=	http://nic.com.pl/~alek/pidgin-tlen/
