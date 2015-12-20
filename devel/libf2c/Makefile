@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.27 2015/12/03 21:24:29 sthen Exp $
+# $OpenBSD: Makefile,v 1.28 2015/12/20 00:16:27 naddy Exp $
 
 V =		3.3.6
 CONFIG =	${MACHINE_ARCH}-unknown-openbsd${OSREV}

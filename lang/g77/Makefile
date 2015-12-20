@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2015/12/03 21:24:30 sthen Exp $
+# $OpenBSD: Makefile,v 1.34 2015/12/20 00:16:27 naddy Exp $
 
 V =			3.3.6
 PKGNAME =		g77-$V
