@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.11 2015/09/19 07:57:06 kili Exp $
+# $OpenBSD: Makefile,v 1.12 2015/12/20 11:28:07 kili Exp $
 
 COMMENT =		monad classes using functional dependencies
 
 # Dependency of meta/haskell-platform.
 # Please do *not* update without thinking.
 DISTNAME =		mtl-2.2.1
+REVISION =		0
 CATEGORIES =		devel
 
 # BSD3
@@ -14,6 +15,6 @@ MODULES =		lang/ghc
 
 MODGHC_BUILD =		cabal hackage haddock register
 
-MODGHC_PACKAGE_KEY =	KMpng31YRYc5JfMWFZ3FCU
+MODGHC_PACKAGE_KEY =	Aue4leSeVkpKLsfHIV51E8
 
 .include <bsd.port.mk>
