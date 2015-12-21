@@ -1,13 +1,12 @@
-# $OpenBSD: Makefile,v 1.2 2013/11/30 03:16:04 brad Exp $
+# $OpenBSD: Makefile,v 1.4 2015/12/21 13:38:01 ajacoutot Exp $
 
-V =		1.0.0
+V =		1.0.1
 COMMENT =	primitives drawing/other support functions for SDL2
 DISTNAME =	SDL2_gfx-${V}
 PKGNAME =	sdl2-gfx-${V}
-REVISION =	1
 CATEGORIES =	devel graphics x11
 
-SHARED_LIBS +=	SDL2_gfx		0.0 # 0.0
+SHARED_LIBS +=  SDL2_gfx             0.0      # 0.1
 
 HOMEPAGE =	http://www.ferzkopp.net/joomla/content/view/19/14/
 
