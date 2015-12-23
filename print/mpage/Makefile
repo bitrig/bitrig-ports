@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2015/06/23 15:29:57 bentley Exp $
+# $OpenBSD: Makefile,v 1.34 2015/12/23 12:33:51 jca Exp $
 
 COMMENT=	print multiple pages per sheet on PostScript printer
 

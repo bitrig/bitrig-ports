@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.11 2014/07/23 20:06:13 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2015/12/23 12:33:51 jca Exp $
 
 COMMENT = 		MVC web framework for perl
 
 MODULES =		cpan
 DISTNAME =		CGI-Application-4.50
-REVISION =		0
+REVISION =		1
 CATEGORIES =		www
 HOMEPAGE =		http://www.cgi-app.org/
 
