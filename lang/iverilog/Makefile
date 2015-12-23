@@ -1,13 +1,11 @@
-# $OpenBSD: Makefile,v 1.10 2015/06/12 20:09:27 bentley Exp $
+# $OpenBSD: Makefile,v 1.11 2015/12/23 11:12:53 bentley Exp $
 
 COMMENT=		Verilog simulation and synthesis tool
 
-V=			0.9.7
+V=			10.0
 DISTNAME=		verilog-$V
 PKGNAME=		iverilog-$V
 CATEGORIES=		lang devel
-
-REVISION=		3
 
 HOMEPAGE=		http://iverilog.icarus.com/
 
@@ -16,9 +14,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=		ftp://ftp.icarus.com/pub/eda/verilog/v${V:R}/
 
-WANTLIB += c m readline termcap z
-WANTLIB += c++ c++abi pthread
-LIB_DEPENDS=		devel/readline
+WANTLIB += c m pthread readline c++ c++abi termcap z
 
 USE_GMAKE=		Yes
 
