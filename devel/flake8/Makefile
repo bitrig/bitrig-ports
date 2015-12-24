@@ -1,16 +1,16 @@
-# $OpenBSD: Makefile,v 1.3 2015/09/29 10:51:43 sthen Exp $
+# $OpenBSD: Makefile,v 1.4 2015/12/24 15:36:54 shadchin Exp $
 
 COMMENT =		modular python code checker wrapping pep8 and pyflakes
 
 MODPY_EGG_VERSION =	2.2.5
 DISTNAME =		flake8-${MODPY_EGG_VERSION}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
 
 HOMEPAGE =		https://bitbucket.org/tarek/flake8/
 
-# MIT 
+# MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODPY_PI =		Yes
@@ -19,7 +19,7 @@ MODULES =		lang/python
 
 MODPY_SETUPTOOLS =	Yes
 
-TEST_DEPENDS =		devel/py-unittest2 \
+TEST_DEPENDS =		${RUN_DEPENDS} \
 			devel/py-mock
 
 RUN_DEPENDS =		devel/pep8 \
@@ -27,6 +27,6 @@ RUN_DEPENDS =		devel/pep8 \
 			devel/pyflakes
 
 do-test:
-	cd ${WRKSRC} && unit2 discover
+	cd ${WRKSRC} && ${MODPY_BIN} -m unittest discover
 
 .include <bsd.port.mk>
