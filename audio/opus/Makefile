@@ -1,22 +1,21 @@
-# $OpenBSD: Makefile,v 1.11 2015/05/22 11:31:11 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.12 2015/12/24 16:15:59 naddy Exp $
 
 # invalid use of `restrict'
 NOT_FOR_ARCHS=	${GCC3_ARCHS}
 
 COMMENT=	IETF audio codec
 
-DISTNAME=	opus-1.1
+DISTNAME=	opus-1.1.1
 SHARED_LIBS=	opus		1.0	# 5.0
 CATEGORIES=	audio
-REVISION=	1
 
-HOMEPAGE=	http://opus-codec.org/
+HOMEPAGE=	https://opus-codec.org/
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	http://downloads.xiph.org/releases/opus/ \
-		https://ftp.mozilla.org/pub/mozilla.org/opus/
+		https://ftp.mozilla.org/pub/opus/
 
 WANTLIB=	m
 
@@ -27,9 +26,15 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--disable-maintainer-mode
 CONFIGURE_ARGS+=--disable-doc	# requires doxygen
 
+# x86: requires cpuid instruction
+.if ${MACHINE_ARCH} == "amd64"
+CONFIGURE_ARGS+=--enable-intrinsics
+.endif
+
 # fixed-point asm code requires EABI.
 #.if ${MACHINE_ARCH} == "arm"
 #CONFIGURE_ARGS+=--enable-fixed-point
+#CONFIGURE_ARGS+=--enable-intrinsics
 #.endif
 
 .include <bsd.port.mk>
