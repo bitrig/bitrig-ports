@@ -1,17 +1,16 @@
-# $OpenBSD: Makefile,v 1.3 2015/09/29 10:51:54 sthen Exp $
+# $OpenBSD: Makefile,v 1.4 2015/12/25 14:57:05 shadchin Exp $
 
 COMMENT =		McCabe complexity checker for Python
 
-MODPY_EGG_VERSION =	0.2.1
+MODPY_EGG_VERSION =	0.3.1
 DISTNAME =		mccabe-${MODPY_EGG_VERSION}
 PKGNAME =		py-mccabe-${MODPY_EGG_VERSION}
-REVISION =		0
 
 CATEGORIES =		devel
 
 HOMEPAGE =		https://github.com/flintwork/mccabe
 
-# MIT 
+# Expat
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODPY_PI =		Yes
@@ -19,7 +18,5 @@ MODPY_PI =		Yes
 MODULES =		lang/python
 
 MODPY_SETUPTOOLS =	Yes
-
-NO_TEST = 		Yes
 
 .include <bsd.port.mk>
