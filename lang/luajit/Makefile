@@ -1,4 +1,7 @@
-# $OpenBSD: Makefile,v 1.17 2015/06/06 09:03:16 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.18 2015/12/28 07:14:18 ajacoutot Exp $
+
+ONLY_FOR_ARCHS = powerpc i386 amd64
+# arm needs EABI/aapcs
 
 SHARED_ONLY =	Yes
 SHARED_LIBS +=	luajit-${MODLUA_VERSION} 0.0 # 2.0.4
@@ -21,10 +24,6 @@ MASTER_SITES =	${HOMEPAGE}download/
 
 MODULES =	lang/lua
 MODLUA_SA=	Yes
-
-MODULES +=	gcc4
-MODGCC4_ARCHS =	*
-MODGCC4_LANGS =	c
 
 MAKE_FLAGS += \
 	CC="${CC}" \
