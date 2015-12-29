@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2015/12/22 10:09:43 dcoppa Exp $
+# $OpenBSD: Makefile,v 1.17 2015/12/29 19:49:39 jasper Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -9,7 +9,6 @@ COMMENT =		low-latency voice chat client
 GH_ACCOUNT =		mumble-voip
 GH_PROJECT =		mumble
 GH_TAGNAME =		1.2.12
-DISTNAME =		${GH_PROJECT}-${GH_TAGNAME}
 
 CATEGORIES =		audio
 
