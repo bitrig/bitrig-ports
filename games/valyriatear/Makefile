@@ -1,9 +1,7 @@
-# $OpenBSD: Makefile,v 1.9 2015/04/05 13:31:14 sthen Exp $
-
-BROKEN = 	needs work on bitrig
+# $OpenBSD: Makefile,v 1.11 2015/12/29 12:45:43 jasper Exp $
 
 COMMENT =	free J-RPG game
-DISTNAME =	valyriatear-${GH_TAGNAME}
+DISTNAME =	${GH_PROJECT}-${GH_TAGNAME}
 CATEGORIES =	games x11
 REVISION =	0
 
