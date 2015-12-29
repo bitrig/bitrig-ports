@@ -1,19 +1,21 @@
-# $OpenBSD: Makefile,v 1.59 2014/06/14 10:34:45 sthen Exp $
+# $OpenBSD: Makefile,v 1.60 2015/12/29 22:44:37 sthen Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	modular IRC client with many features (ipv6,socks,proxy)
 
-DISTNAME=	irssi-0.8.16
+V=		0.8.17
+DISTNAME=	irssi-$V
+PKGSPEC=	irssi-=$V
+EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	net
-REVISION=	1
 
 HOMEPAGE=	http://www.irssi.org/
 
-# GPL
+# GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES=   ${HOMEPAGE}files/
+MASTER_SITES=   https://github.com/irssi-import/irssi/releases/download/$V/
 
 WANTLIB=	c crypto m ncurses perl pthread ssl util \
 		pcre glib-2.0 gmodule-2.0
@@ -23,9 +25,10 @@ MODULES=	devel/gettext
 LIB_DEPENDS=	devel/glib2
 
 LIBTOOL_FLAGS+=	--tag=disable-static
-CONFIGURE_STYLE=gnu
+CONFIGURE_STYLE= gnu
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/build-aux/
-CONFIGURE_ARGS+=--with-pic \
+CONFIGURE_ARGS+= --with-pic \
 		--with-proxy \
 		--with-perl=yes \
 		--with-perl-lib=${PREFIX}/libdata/perl5/site_perl
@@ -49,5 +52,8 @@ FAKE_FLAGS=	confdir="${PREFIX}/share/examples/irssi" \
 
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/docs/irssi.1
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/irssi-config ${PREFIX}/include/irssi/
 
 .include <bsd.port.mk>
