@@ -1,13 +1,14 @@
-# $OpenBSD: Makefile,v 1.3 2015/09/29 10:51:53 sthen Exp $
+# $OpenBSD: Makefile,v 1.4 2015/12/29 15:50:58 shadchin Exp $
 
 COMMENT=	futures implementation for Python
 
-MODPY_EGG_VERSION= 2.1.4
+MODPY_EGG_VERSION=	3.0.3
 DISTNAME=	futures-${MODPY_EGG_VERSION}
 PKGNAME=	py-${DISTNAME}
 REVISION=	0
 CATEGORIES=	devel
-REVISION=	0
+
+HOMEPAGE =		https://pypi.python.org/pypi/futures
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
@@ -16,5 +17,10 @@ MODPY_PI =	Yes
 
 MODULES=	lang/python
 MODPY_SETUPTOOLS= Yes
+
+TEST_DEPENDS =		lang/python/${MODPY_VERSION},-tests
+
+do-test:
+	cd ${WRKSRC} && ${MODPY_BIN} test_futures.py
 
 .include <bsd.port.mk>
