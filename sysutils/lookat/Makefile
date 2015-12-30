@@ -1,6 +1,6 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/10/20 02:41:04 bcallah Exp $
+# $OpenBSD: Makefile,v 1.3 2015/12/30 10:46:47 ajacoutot Exp $
 
-V =		1.4.3
+V =		1.4.4
 COMMENT =	user-friendly text pager
 DISTNAME =	lookat_bekijk-${V}
 PKGNAME =	lookat-${V}
