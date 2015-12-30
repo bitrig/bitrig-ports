@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2013/03/11 02:52:05 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2015/12/30 14:30:29 giovanni Exp $
 
 COMMENT=	top clone for MySQL
 
@@ -7,7 +7,7 @@ REVISION=	0
 CATEGORIES=	databases perl5
 
 HOMEPAGE=	http://jeremy.zawodny.com/mysql/mytop/
-MASTER_SITES=	http://bigio.snb.it/openbsd/distfiles/
+MASTER_SITES=	https://www.paclan.it/distfiles/
 
 # GPL / Artistic License
 PERMIT_PACKAGE_CDROM=	Yes
