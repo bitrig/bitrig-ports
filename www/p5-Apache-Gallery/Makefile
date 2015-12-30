@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/05/08 09:08:44 espie Exp $
+# $OpenBSD: Makefile,v 1.21 2015/12/30 10:01:26 ajacoutot Exp $
 
 
 COMMENT=		mod_perl Apache gallery handler
