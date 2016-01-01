@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.98 2015/06/10 21:42:26 sthen Exp $
+# $OpenBSD: Makefile,v 1.99 2016/01/01 14:50:14 feinerer Exp $
 
 # XXX ossaudio(3) is only enabled to be used as a mixing device by
 # audio/pulseaudio and x11/xfce4/xfce4-mixer

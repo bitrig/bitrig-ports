@@ -1,5 +1,10 @@
---- sys/v4l2/v4l2_calls.c.orig	Thu Mar 17 11:28:13 2016
-+++ sys/v4l2/v4l2_calls.c	Thu Mar 17 11:30:17 2016
+$OpenBSD: patch-sys_v4l2_v4l2_calls_c,v 1.1 2016/01/01 14:50:14 feinerer Exp $
+
+Avoid V4L2_CID_[HV]CENTER_DEPRECATED
+http://cgit.freedesktop.org/gstreamer/gst-plugins-good/commit/sys/v4l2/v4l2_calls.c?id=418a4940a8c41411cef33a0054879cbd4c9bd181
+
+--- sys/v4l2/v4l2_calls.c.orig	Tue Dec 15 16:55:05 2015
++++ sys/v4l2/v4l2_calls.c	Tue Dec 15 16:55:45 2015
 @@ -53,14 +53,6 @@
  
  #include "gst/gst-i18n-plugin.h"
