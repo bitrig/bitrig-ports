@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.11 2014/01/19 20:43:34 jeremy Exp $
+# $OpenBSD: Makefile,v 1.12 2016/01/03 16:42:32 jeremy Exp $
 
 COMMENT =	real-time stats toolkit for Rack HTTP servers
 
-DISTNAME =	raindrops-0.10.0
-REVISION =	5
+DISTNAME =	raindrops-0.15.0
 CATEGORIES =	www
 
 # LGPLv2.1/LGPLv3
@@ -19,9 +18,6 @@ BUILD_DEPENDS +=	libatomic_ops-*:devel/boehm-gc,-atomic
 TEST_DEPENDS =	devel/gmake \
 			www/ruby-unicorn,${MODRUBY_FLAVOR} \
 			${FULLPKGNAME}:${BUILD_PKGPATH}
-
-post-extract:
-	chmod 644 ${WRKSRC}/{NEWS,ChangeLog}
 
 do-test:
 	cd ${WRKSRC} && ${SETENV} RUBYOPT=-rubygems \
