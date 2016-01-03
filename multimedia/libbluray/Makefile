@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.8 2015/11/19 20:17:16 sthen Exp $
+# $OpenBSD: Makefile,v 1.9 2016/01/03 09:11:09 ajacoutot Exp $
 
 SHARED_ONLY =		Yes
 
 COMMENT =		library supporting Blu-ray playback
 
-V =			0.8.0
+V =			0.9.2
 DISTNAME =		libbluray-${V}
 CATEGORIES =		multimedia
 
@@ -20,7 +20,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB +=		c expat fontconfig freetype lzma m pthread pthread-stubs
 WANTLIB +=		xml2 z
 
-SHARED_LIBS +=		bluray		2.0	# 9.0
+SHARED_LIBS +=		bluray		2.1	# 10.0
 
 MODULES =		converters/libiconv
 
@@ -33,6 +33,7 @@ MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
 YACC =			${LOCALBASE}/bin/bison -y
 CONFIGURE_ARGS +=	--disable-bdjava \
 			--disable-doxygen-doc \
-			--disable-optimizations
+			--disable-optimizations \
+			--enable-udf
 
 .include <bsd.port.mk>
