@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.135 2015/11/17 08:57:45 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.136 2016/01/05 13:24:05 ajacoutot Exp $
 
 PORTROACH=		skipv:${V}_py2.5
 
@@ -22,6 +22,8 @@ PKGNAME-hpaio=		hpaio-${V}
 PKGNAME-hpcups=		hpcups-${V}
 PKGNAME-hpijs=		hpijs-${V}
 PKGNAME-gui=		hplip-gui-${V}
+
+REVISION-main=		0
 
 SHARED_LIBS +=  hpdiscovery          0.0      # 0.1
 SHARED_LIBS +=  hpmud                2.0      # 0.6
@@ -59,7 +61,7 @@ LIB_DEPENDS-main=	${LIB_DEPENDS} \
 RUN_DEPENDS-main=	${MODPY_RUN_DEPENDS} \
 			${MODGETTEXT_RUN_DEPENDS} \
 			devel/py-gobject \
-			print/py-reportlab/reportlab \
+			print/py-reportlab \
 			x11/dbus-python \
 			graphics/py-Pillow \
 			print/hplip,-hpcups \
