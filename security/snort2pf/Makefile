@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/07/15 20:59:43 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.5 2016/01/05 10:51:14 jasper Exp $
 
 COMMENT=		block "nasty" hosts with pf(4) based on Snort's rules
 
