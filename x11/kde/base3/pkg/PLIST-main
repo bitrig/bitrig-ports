@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST-main,v 1.21 2014/01/10 08:06:11 zhuk Exp $
+@comment $OpenBSD: PLIST-main,v 1.22 2016/01/06 09:48:59 jasper Exp $
 @conflict kdeartwork-<=3.4
 @conflict kdeedu-<3.4
 @pkgpath x11/kde/base3
