@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/09/29 10:52:12 sthen Exp $
+# $OpenBSD: Makefile,v 1.16 2016/01/06 17:01:54 ajacoutot Exp $
 
 COMMENT=		plugin to support use of Cheetah templates
 

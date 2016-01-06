@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.2 2016/01/01 21:25:39 jasper Exp $
+# $OpenBSD: Makefile.inc,v 1.3 2016/01/06 17:01:55 ajacoutot Exp $
 
 # All distfiles are unversioned, and no upstream master site available
 PORTROACH =	ignore

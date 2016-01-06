@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/05/05 17:00:21 sthen Exp $
+# $OpenBSD: Makefile,v 1.21 2016/01/06 17:01:55 ajacoutot Exp $
 
 COMMENT=	Motif-based table widget
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/21 08:48:55 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.8 2016/01/06 17:01:55 ajacoutot Exp $
 
 COMMENT =		keep X clipboard and cutbuffer in sync
 

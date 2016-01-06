@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.21 2015/04/21 18:33:48 sthen Exp $
+# $OpenBSD: Makefile,v 1.22 2016/01/06 17:01:54 ajacoutot Exp $
 
 COMMENT =		JSON encoder/decoder
 
 MODPY_EGG_VERSION =	2.5.0
 DISTNAME =		simplejson-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
 

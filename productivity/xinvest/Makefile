@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/11/24 09:11:06 jasper Exp $
+# $OpenBSD: Makefile,v 1.21 2016/01/06 17:01:54 ajacoutot Exp $
 
 COMMENT= 		personal finance tracking and performance tool
 

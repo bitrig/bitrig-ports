@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2015/11/24 09:11:06 jasper Exp $
+# $OpenBSD: Makefile,v 1.17 2016/01/06 17:01:55 ajacoutot Exp $
 
 COMMENT= 		WWW quote retrieval tool
 
