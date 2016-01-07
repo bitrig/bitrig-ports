@@ -1,15 +1,15 @@
-# $OpenBSD: Makefile,v 1.17 2015/07/04 19:52:50 afresh1 Exp $
+# $OpenBSD: Makefile,v 1.18 2016/01/07 06:08:45 afresh1 Exp $
 
 COMMENT =	extremely flexible deep comparison
 
-DISTNAME =	Test-Deep-0.117
+DISTNAME =	Test-Deep-1.120
 CATEGORIES =	devel
 MODULES =	cpan
 
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 
-TEST_DEPENDS =	devel/p5-Test-NoWarnings>=0.02 \
-		devel/p5-Test-Tester>=0.04
+TEST_ENV =	AUTHOR_TESTING=Yes
+TEST_DEPENDS +=	devel/p5-Test-Warnings
 
 .include <bsd.port.mk>
