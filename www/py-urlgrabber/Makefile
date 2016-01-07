@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2015/04/02 14:21:18 jasper Exp $
+# $OpenBSD: Makefile,v 1.4 2016/01/07 21:35:29 jasper Exp $
 
 COMMENT =		high-level cross-protocol url-grabber
 

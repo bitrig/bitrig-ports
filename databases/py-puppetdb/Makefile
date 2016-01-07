@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2015/10/26 13:12:10 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2016/01/07 21:35:27 jasper Exp $
 
 PORTROACH=		limit:^0\.1
 PORTROACH_COMMENT=	py-puppetdb >= 0.2.0 only support PuppetDB >= 3
@@ -10,7 +10,7 @@ DISTNAME=		pypuppetdb-${MODPY_EGG_VERSION}
 PKGNAME=		py-puppetdb-${MODPY_EGG_VERSION}
 REVISION=		0
 CATEGORIES=		databases www
-REVISION=		0
+REVISION=		1
 
 # Apache2
 PERMIT_PACKAGE_CDROM=	Yes
