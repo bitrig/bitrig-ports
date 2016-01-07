@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/12/29 05:15:12 shadchin Exp $
+# $OpenBSD: Makefile,v 1.5 2016/01/07 21:37:48 jasper Exp $
 
 COMMENT =	Python 3.4 Enum backported to previous versions
 
@@ -9,7 +9,6 @@ REVISION =	0
 
 CATEGORIES =	devel
 
-HOMEPAGE =	https://pypi.python.org/pypi/enum34
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

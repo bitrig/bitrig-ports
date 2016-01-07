@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2015/11/29 08:25:19 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.20 2016/01/07 21:37:49 jasper Exp $
 
 COMMENT=		text-to-HTML conversion tool
 
@@ -8,7 +8,6 @@ PKGNAME=		markdown-${MODPY_EGG_VERSION}
 REVISION=		0
 CATEGORIES=		textproc
 
-HOMEPAGE=		https://pypi.python.org/pypi/Markdown
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
