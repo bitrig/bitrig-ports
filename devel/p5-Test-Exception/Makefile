@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.17 2015/01/19 00:03:42 afresh1 Exp $
+# $OpenBSD: Makefile,v 1.18 2016/01/07 06:12:57 afresh1 Exp $
 
 COMMENT =	test functions for exception based code
 
-DISTNAME =	Test-Exception-0.36
+DISTNAME =	Test-Exception-0.43
 CATEGORIES =	devel
 MODULES =	cpan
 
@@ -10,8 +10,5 @@ MODULES =	cpan
 PERMIT_PACKAGE_CDROM =	Yes
 
 RUN_DEPENDS =	devel/p5-Sub-Uplevel>=0.18
-
-TEST_DEPENDS =	devel/p5-Pod-Coverage \
-		devel/p5-IO-String
 
 .include <bsd.port.mk>
