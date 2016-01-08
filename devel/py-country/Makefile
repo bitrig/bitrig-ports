@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2016/01/07 21:37:48 jasper Exp $
+# $OpenBSD: Makefile,v 1.14 2016/01/08 13:17:15 jasper Exp $
 
 COMMENT =		country, language, currency and scripts definitions
 
@@ -7,7 +7,7 @@ DISTNAME =		pycountry-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/py/py-/}
 REVISION =		0
 EXTRACT_SUFX=		.zip
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
 
