@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2015/05/12 19:48:57 shadchin Exp $
+# $OpenBSD: Makefile,v 1.25 2016/01/08 09:43:38 shadchin Exp $
 
 SHARED_ONLY=	Yes
 
@@ -6,7 +6,7 @@ BROKEN= 	needs work on bitrig
 
 COMMENT=	portable DjVu viewer and browser plugin
 
-DISTNAME=	djview-4.10.3
+DISTNAME=	djview-4.10.5
 PKGNAME=	${DISTNAME:S/djview/djview4/}
 REVISION=	2
 CATEGORIES=	graphics print
