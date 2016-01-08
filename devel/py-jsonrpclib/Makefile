@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2016/01/07 21:37:48 jasper Exp $
+# $OpenBSD: Makefile,v 1.5 2016/01/08 12:55:45 jasper Exp $
 
 COMMENT =		json-rpc over http
 
