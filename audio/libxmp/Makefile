@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.12 2015/06/25 03:27:23 bcallah Exp $
+# $OpenBSD: Makefile,v 1.14 2016/01/08 21:16:51 jasper Exp $
 
 SHARED_ONLY =	Yes
 
 COMMENT =	module player library
 
-DISTNAME =	libxmp-4.3.9
+DISTNAME =	libxmp-4.3.10
 CATEGORIES =	audio
 
 SHARED_LIBS +=	xmp		1.0	# 4.3
