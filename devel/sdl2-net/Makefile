@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.2 2015/05/22 11:31:14 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.4 2016/01/10 08:10:42 ajacoutot Exp $
 
-V =		2.0.0
+V =		2.0.1
 COMMENT =	SDL2 cross-platform networking library
 DISTNAME =	SDL2_net-${V}
 PKGNAME =	sdl2-net-${V}
 CATEGORIES =	devel net
-REVISION =	0
 
 SHARED_LIBS +=	SDL2_net		0.0 # 0.0
 
