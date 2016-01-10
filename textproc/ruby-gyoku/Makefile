@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/01/18 09:27:37 jasper Exp $
+# $OpenBSD: Makefile,v 1.2 2016/01/10 20:06:12 jasper Exp $
 
 COMMENT =		Gyoku translates Ruby Hashes to XML
 
-DISTNAME =		gyoku-1.1.1
-REVISION =		0
+DISTNAME =		gyoku-1.3.1
 
 CATEGORIES =		textproc
 
@@ -16,5 +15,10 @@ CONFIGURE_STYLE =	ruby gem
 
 BUILD_DEPENDS =		${RUN_DEPENDS}
 RUN_DEPENDS =		textproc/ruby-builder,${MODRUBY_FLAVOR}
+
+# XXX: unported ruby-simplecov
+#MODRUBY_TEST =		rspec3
+#TEST_DEPENDS =		devel/ruby-bundler,${MODRUBY_FLAVOR} \
+#			devel/ruby-simplecov,${MODRUBY_FLAVOR}
 
 .include <bsd.port.mk>
