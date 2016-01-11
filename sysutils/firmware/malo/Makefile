@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2014/01/09 22:48:25 sthen Exp $
+# $OpenBSD: Makefile,v 1.4 2016/01/11 12:38:05 jasper Exp $
 
 FW_DRIVER=	malo
 FW_VER=		1.4

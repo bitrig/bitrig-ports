@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/01/09 22:48:25 sthen Exp $
+# $OpenBSD: Makefile,v 1.3 2016/01/11 12:38:05 jasper Exp $
 
 FW_DRIVER=	uvideo
 FW_VER=		1.2
