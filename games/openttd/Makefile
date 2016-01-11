@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.45 2015/12/07 04:26:53 bentley Exp $
+# $OpenBSD: Makefile,v 1.46 2016/01/11 09:35:44 ajacoutot Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -16,11 +16,11 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		openmsx-${MSX_V}.zip:2
 DIST_SUBDIR=	openttd
 
+REVISION=	0
+
 CATEGORIES=	games
 
 REVISION=	1
-
-HOMEPAGE=	https://www.openttd.org/en/
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM=	Yes

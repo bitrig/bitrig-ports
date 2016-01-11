@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2015/03/30 03:01:51 bentley Exp $
+# $OpenBSD: Makefile,v 1.6 2016/01/11 09:35:45 ajacoutot Exp $
 
 COMMENT =		makefiles for building NetSurf
 

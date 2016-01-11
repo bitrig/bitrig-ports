@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.16 2015/05/15 08:59:08 bentley Exp $
+# $OpenBSD: Makefile,v 1.17 2016/01/11 09:35:45 ajacoutot Exp $
 
 COMMENT=		BitTorrent Protocol Daemon
 
 DISTNAME=		btpd-0.16
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
 
 HOMEPAGE=		http://wiki.github.com/btpd/btpd/

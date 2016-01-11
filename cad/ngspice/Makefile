@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2014/03/12 06:18:34 bentley Exp $
+# $OpenBSD: Makefile,v 1.7 2016/01/11 09:35:44 ajacoutot Exp $
 
 COMMENT =		circuit simulator, based on Berkeley SPICE
 

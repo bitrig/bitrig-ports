@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.40 2015/01/20 12:28:31 bentley Exp $
+# $OpenBSD: Makefile,v 1.41 2016/01/11 09:35:44 ajacoutot Exp $
 
 COMMENT-main=		ur-quan masters: space exploration game with battles
 COMMENT-content=	ur-quan masters: game content
@@ -37,6 +37,8 @@ PKGNAME-voice =		uqm-voice-$V
 REVISION =		3
 EXTRACT_ONLY =		${uqm_source}
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sc2/}
+
+REVISION =		0
 
 HOMEPAGE=		http://sc2.sourceforge.net/
 

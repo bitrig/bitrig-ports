@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.10 2015/03/30 03:01:51 bentley Exp $
+# $OpenBSD: Makefile.inc,v 1.11 2016/01/11 09:35:45 ajacoutot Exp $
 
 CATEGORIES +=	www
 

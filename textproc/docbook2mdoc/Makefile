@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2014/05/01 04:02:15 bentley Exp $
+# $OpenBSD: Makefile,v 1.3 2016/01/11 09:35:45 ajacoutot Exp $
 
 COMMENT =		convert DocBook refentry to mdoc
 

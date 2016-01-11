@@ -1,16 +1,15 @@
-# $OpenBSD: Makefile,v 1.11 2015/04/19 04:11:16 bentley Exp $
+# $OpenBSD: Makefile,v 1.12 2016/01/11 09:35:44 ajacoutot Exp $
 
 BROKEN = 	needs work on bitrig
 
 COMMENT =	Nintendo DS emulator
 
 DISTNAME =	desmume-0.9.11
+REVISION =	0
 
 CATEGORIES =	emulators
 
 REVISION =	1
-
-HOMEPAGE =	http://desmume.org/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes

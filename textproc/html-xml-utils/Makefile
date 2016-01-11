@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.2 2015/10/30 12:59:17 sthen Exp $
+# $OpenBSD: Makefile,v 1.3 2016/01/11 09:35:45 ajacoutot Exp $
 
 BROKEN = 		needs work on bitrig
 
 COMMENT =		simple utilities for manipulating HTML and XML files
 
 DISTNAME =		html-xml-utils-6.7
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		textproc
 

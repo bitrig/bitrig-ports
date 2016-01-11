@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/05/16 10:51:27 sthen Exp $
+# $OpenBSD: Makefile,v 1.16 2016/01/11 09:35:44 ajacoutot Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -9,12 +9,11 @@ BROKEN-alpha =	OOM when building src/cpu/CPUCore.cc
 COMMENT =	MSX home computer emulator
 
 DISTNAME =	openmsx-0.9.1
+REVISION =	0
 
 CATEGORIES =	emulators
 
 REVISION =	1
-
-HOMEPAGE =	http://openmsx.sourceforge.net/
 
 PERMIT_PACKAGE_CDROM =	claims GPLv2, but no copyright notices in source files
 PERMIT_PACKAGE_FTP =	claims GPLv2, but no copyright notices in source files

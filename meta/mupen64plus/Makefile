@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/08/24 04:53:22 bentley Exp $
+# $OpenBSD: Makefile,v 1.5 2016/01/11 09:35:45 ajacoutot Exp $
 
 COMMENT-main=	n64 emulator (default plugins)
 COMMENT-extra=	n64 emulator (all plugins)
