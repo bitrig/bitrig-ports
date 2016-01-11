@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.8 2015/11/04 16:41:46 bentley Exp $
+# $OpenBSD: Makefile,v 1.9 2016/01/11 23:41:34 espie Exp $
 
 BROKEN =		needs work on bitrig
 
 COMMENT =		n64 emulator video plugin
-REVISION =		2
+REVISION =		3
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
