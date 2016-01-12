@@ -1,26 +1,29 @@
-# $OpenBSD: Makefile,v 1.18 2015/05/07 19:40:43 bcallah Exp $
+# $OpenBSD: Makefile,v 1.20 2016/01/12 16:05:54 dcoppa Exp $
 
 V =		2.8.9
-PL =		6
+PL =		8
 COMMENT =	console Internet browser
 DISTNAME =	lynx${V}dev.${PL}
 PKGNAME =	lynx-${V}pl${PL}
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	www net
 
-HOMEPAGE =	http://lynx.isc.org/
+HOMEPAGE =	http://lynx.invisible-island.net
+
+MAINTAINER =	Frederic Cambus <fred@statdns.com>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += c crypto ncurses ssl z
 
-MASTER_SITES =	http://lynx.isc.org/current/
+MASTER_SITES =	http://invisible-mirror.net/archives/lynx/tarballs/
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	--datarootdir="${PREFIX}/share/doc/lynx" \
 			--disable-idna \
 			--disable-nls \
+			--enable-default-colors \
 			--enable-ipv6 \
 			--enable-widec \
 			--with-ssl=/usr \
@@ -32,6 +35,5 @@ FAKE_FLAGS =	SYSCONFDIR="${DESTDIR}${PREFIX}/share/examples/lynx"
 INSTALL_TARGET =	install install-help install-doc
 
 NO_TEST =	Yes
-WRKDIST =	${WRKDIR}/lynx${V:C/\./-/g}
 
 .include <bsd.port.mk>
