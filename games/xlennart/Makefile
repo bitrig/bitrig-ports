@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.6 2016/01/11 11:04:21 czarkoff Exp $
+# $OpenBSD: Makefile,v 1.7 2016/01/12 13:21:40 ajacoutot Exp $
 
 COMMENT =		an XBill Modification
 GH_ACCOUNT =		Xylemon
 GH_PROJECT =		xlennart
 GH_TAGNAME =		1.1.1
-REVISION =		0
+REVISION =		1
 CATEGORIES =		games x11
 HOMEPAGE =		https://github.com/Xylemon/xlennart
 
