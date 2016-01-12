@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.41 2015/08/12 20:53:15 naddy Exp $
+# $OpenBSD: Makefile,v 1.42 2016/01/12 13:10:44 jasper Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -38,7 +38,7 @@ LIB_DEPENDS=	x11/wxWidgets>=2.8.6 \
 		audio/libmad \
 		audio/portaudio-svn>=1406p1 \
 		audio/soundtouch \
-		audio/vamp-plugin-sdk \
+		audio/vamp-plugin-sdk>=2.2.1p0 \
 		audio/taglib
 RUN_DEPENDS=	devel/desktop-file-utils \
 		misc/shared-mime-info
