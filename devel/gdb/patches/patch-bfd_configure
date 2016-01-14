@@ -1,6 +1,6 @@
 $OpenBSD$
---- bfd/configure.orig	Mon Feb 18 18:50:27 2013
-+++ bfd/configure	Tue Jun  4 10:31:29 2013
+--- bfd/configure.orig	Fri Feb 20 12:11:44 2015
++++ bfd/configure	Wed Jan 13 19:29:39 2016
 @@ -6012,7 +6012,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -28,7 +28,7 @@ $OpenBSD$
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
-@@ -9046,7 +9046,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -9052,7 +9052,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -37,7 +37,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    esac
-@@ -9839,7 +9839,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -9845,7 +9845,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -46,7 +46,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -10827,7 +10827,7 @@ newsos6)
+@@ -10833,7 +10833,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -55,7 +55,7 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -13868,7 +13868,7 @@ if test "${target}" = "${host}"; then
+@@ -13960,7 +13960,7 @@ if test "${target}" = "${host}"; then
  	;;
    arm-*-freebsd* | arm-*-kfreebsd*-gnu)
  	COREFILE='' ;;
@@ -64,7 +64,7 @@ $OpenBSD$
  	COREFILE=netbsd-core.lo
  	;;
    arm-*-riscix)		COREFILE=trad-core.lo ;;
-@@ -13906,7 +13906,7 @@ if test "${target}" = "${host}"; then
+@@ -13998,7 +13998,7 @@ if test "${target}" = "${host}"; then
  	COREFILE=''
  	TRAD_HEADER='"hosts/i386bsd.h"'
  	;;
@@ -73,7 +73,7 @@ $OpenBSD$
  	COREFILE=netbsd-core.lo
  	;;
    i[3-7]86-esix-sysv3*)
-@@ -14083,7 +14083,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
+@@ -14175,7 +14175,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
    x86_64-*-linux*)
  	CORE_HEADER='"hosts/x86-64linux.h"'
  	;;

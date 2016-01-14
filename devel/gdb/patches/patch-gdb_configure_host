@@ -1,23 +1,23 @@
 $OpenBSD$
---- gdb/configure.host.orig	Tue Mar  5 08:37:10 2013
-+++ gdb/configure.host	Tue Jun  4 10:31:30 2013
-@@ -80,6 +80,7 @@ arm*-*-netbsdelf* | arm*-*-knetbsd*-gnu)
+--- gdb/configure.host.orig	Thu Feb 19 06:58:07 2015
++++ gdb/configure.host	Wed Jan 13 19:29:39 2016
+@@ -92,6 +92,7 @@ arm*-*-linux*)		gdb_host=linux ;;
+ arm*-*-netbsdelf* | arm*-*-knetbsd*-gnu)
  			gdb_host=nbsdelf ;;
- arm*-*-netbsd*)		gdb_host=nbsdaout ;;
  arm*-*-openbsd*)	gdb_host=nbsdelf ;;
 +arm*-*-bitrig*)		gdb_host=nbsdelf ;;
  
  hppa*-*-hpux*)
  			gdb_host=hpux ;;
-@@ -103,6 +104,7 @@ i[3456]86-*-nto*) 	gdb_host=nto ;;
- i[34567]86-*-openbsd[0-2].* | i[34567]86-*-openbsd3.[0-3])
- 			gdb_host=obsdaout ;;
+@@ -112,6 +113,7 @@ i[34567]86-*-linux*)	gdb_host=linux ;;
+ i[34567]86-*-gnu*)	gdb_host=i386gnu ;;
+ i[3456]86-*-nto*) 	gdb_host=nto ;;
  i[34567]86-*-openbsd*)	gdb_host=obsd ;;
 +i[34567]86-*-bitrig*)	gdb_host=bitrig ;;
  i[34567]86-*-solaris2.1[0-9]* | x86_64-*-solaris2.1[0-9]*)
  			gdb_host=sol2-64 ;;
  i[34567]86-*-solaris*)	gdb_host=i386sol2 ;;
-@@ -179,6 +181,7 @@ x86_64-*-freebsd* | x86_64-*-kfreebsd*-gnu)
+@@ -180,6 +182,7 @@ x86_64-*-freebsd* | x86_64-*-kfreebsd*-gnu)
  x86_64-*-netbsd* | x86_64-*-knetbsd*-gnu)
  			gdb_host=nbsd64 ;;
  x86_64-*-openbsd*)	gdb_host=obsd64 ;;

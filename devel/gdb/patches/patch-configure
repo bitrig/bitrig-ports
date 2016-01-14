@@ -1,7 +1,7 @@
 $OpenBSD$
---- configure.orig	Fri Feb 15 12:55:24 2013
-+++ configure	Tue Jun  4 10:34:27 2013
-@@ -2951,7 +2951,7 @@ case "${ENABLE_GOLD}" in
+--- configure.orig	Fri Feb 20 12:11:44 2015
++++ configure	Wed Jan 13 19:29:39 2016
+@@ -2961,7 +2961,7 @@ case "${ENABLE_GOLD}" in
      case "${target}" in
        *-*-elf* | *-*-sysv4* | *-*-unixware* | *-*-eabi* | hppa*64*-*-hpux* \
        | *-*-linux* | *-*-gnu* | frv-*-uclinux* | *-*-irix5* | *-*-irix6* \
@@ -10,7 +10,7 @@ $OpenBSD$
        | *-*-solaris2* | *-*-nto* | *-*-nacl*)
          case "${target}" in
            *-*-linux*aout* | *-*-linux*oldld*)
-@@ -3146,7 +3146,7 @@ if test x$enable_libgomp = x ; then
+@@ -3141,7 +3141,7 @@ if test x$enable_libgomp = x ; then
      case "${target}" in
      *-*-linux* | *-*-gnu* | *-*-k*bsd*-gnu | *-*-kopensolaris*-gnu)
  	;;
