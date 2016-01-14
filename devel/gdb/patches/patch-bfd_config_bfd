@@ -1,7 +1,7 @@
 $OpenBSD$
---- bfd/config.bfd.orig	Tue Jul 29 07:37:42 2014
-+++ bfd/config.bfd	Mon Oct 13 13:52:24 2014
-@@ -282,7 +282,7 @@ case "${targ}" in
+--- bfd/config.bfd.orig	Tue Feb  9 19:19:39 2016
++++ bfd/config.bfd	Wed Nov 16 08:37:27 2016
+@@ -305,7 +305,7 @@ case "${targ}" in
      targ_defvec=arm_elf32_le_vec
      targ_selvecs="arm_elf32_be_vec arm_aout_nbsd_vec"
      ;;
@@ -10,21 +10,21 @@ $OpenBSD$
      targ_defvec=arm_aout_nbsd_vec
      targ_selvecs="arm_elf32_le_vec arm_elf32_be_vec"
      targ_underscore=yes
-@@ -612,7 +612,7 @@ case "${targ}" in
-     targ_selvecs="i386_elf32_vec i386_aout_bsd_vec"
+@@ -647,7 +647,7 @@ case "${targ}" in
+     targ_selvecs="i386_elf32_vec iamcu_elf32_vec i386_aout_bsd_vec"
      targ_underscore=yes
      ;;
 -  i[3-7]86-*-openbsd*)
 +  i[3-7]86-*-openbsd* | i[3-7]86-*-bitrig*)
      targ_defvec=i386_elf32_vec
-     targ_selvecs=i386_aout_nbsd_vec
+     targ_selvecs="iamcu_elf32_vec i386_aout_nbsd_vec"
      ;;
-@@ -663,7 +663,7 @@ case "${targ}" in
-     targ_selvecs="i386_elf32_fbsd_vec i386_coff_vec i386_pei_vec x86_64_pei_vec i386_elf32_vec x86_64_elf64_vec l1om_elf64_vec l1om_elf64_fbsd_vec k1om_elf64_vec k1om_elf64_fbsd_vec"
+@@ -702,7 +702,7 @@ case "${targ}" in
+     targ_selvecs="i386_elf32_fbsd_vec iamcu_elf32_vec i386_coff_vec i386_pei_vec x86_64_pei_vec i386_elf32_vec x86_64_elf64_vec l1om_elf64_vec l1om_elf64_fbsd_vec k1om_elf64_vec k1om_elf64_fbsd_vec"
      want64=true
      ;;
 -  x86_64-*-netbsd* | x86_64-*-openbsd*)
 +  x86_64-*-netbsd* | x86_64-*-openbsd* | x86_64-*-bitrig*)
      targ_defvec=x86_64_elf64_vec
-     targ_selvecs="i386_elf32_vec i386_aout_nbsd_vec i386_coff_vec i386_pei_vec x86_64_pei_vec l1om_elf64_vec k1om_elf64_vec"
+     targ_selvecs="i386_elf32_vec iamcu_elf32_vec i386_aout_nbsd_vec i386_coff_vec i386_pei_vec x86_64_pei_vec l1om_elf64_vec k1om_elf64_vec"
      want64=true
