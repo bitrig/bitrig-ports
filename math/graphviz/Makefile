@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.61 2015/08/21 16:06:06 jasper Exp $
+# $OpenBSD: Makefile,v 1.62 2016/01/14 20:56:59 jasper Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -96,7 +96,7 @@ CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--disable-ruby \
 		--disable-rpath \
 		--disable-sharp \
-		--disable-R \
+		--disable-r \
 		--disable-gts \
 		--without-ghostscript \
 		--without-devil \
