@@ -1,6 +1,6 @@
 $OpenBSD$
 --- configure.orig	Fri Feb 20 12:11:44 2015
-+++ configure	Wed Jan 13 19:29:39 2016
++++ configure	Wed Jan 13 18:44:58 2016
 @@ -2961,7 +2961,7 @@ case "${ENABLE_GOLD}" in
      case "${target}" in
        *-*-elf* | *-*-sysv4* | *-*-unixware* | *-*-eabi* | hppa*64*-*-hpux* \

@@ -1,6 +1,6 @@
 $OpenBSD$
 --- gdb/configure.host.orig	Thu Feb 19 06:58:07 2015
-+++ gdb/configure.host	Wed Jan 13 19:29:39 2016
++++ gdb/configure.host	Wed Jan 13 18:44:58 2016
 @@ -92,6 +92,7 @@ arm*-*-linux*)		gdb_host=linux ;;
  arm*-*-netbsdelf* | arm*-*-knetbsd*-gnu)
  			gdb_host=nbsdelf ;;

@@ -1,6 +1,6 @@
 $OpenBSD$
 --- opcodes/configure.orig	Fri Feb 20 12:11:44 2015
-+++ opcodes/configure	Wed Jan 13 19:29:39 2016
++++ opcodes/configure	Wed Jan 13 18:44:58 2016
 @@ -5736,7 +5736,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;

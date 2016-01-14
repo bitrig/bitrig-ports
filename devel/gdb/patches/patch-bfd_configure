@@ -1,6 +1,6 @@
 $OpenBSD$
 --- bfd/configure.orig	Fri Feb 20 12:11:44 2015
-+++ bfd/configure	Wed Jan 13 19:29:39 2016
++++ bfd/configure	Wed Jan 13 18:44:58 2016
 @@ -6012,7 +6012,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
