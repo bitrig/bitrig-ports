@@ -1,0 +1,13 @@
+--- ld/scripttempl/elf.sc.orig	Mon Nov  4 10:33:39 2013
++++ ld/scripttempl/elf.sc	Fri Jan  1 17:12:30 2016
+@@ -543,8 +543,10 @@ cat <<EOF
+   .exception_ranges ${RELOCATING-0} : ONLY_IF_RW { *(.exception_ranges .exception_ranges*) }
+ 
+   /* Thread Local Storage sections  */
++  ${RELOCATING+${TDATA_START_SYMBOLS}}
+   .tdata	${RELOCATING-0} : { *(.tdata${RELOCATING+ .tdata.* .gnu.linkonce.td.*}) }
+   .tbss		${RELOCATING-0} : { *(.tbss${RELOCATING+ .tbss.* .gnu.linkonce.tb.*})${RELOCATING+ *(.tcommon)} }
++  ${RELOCATING+${TDATA_END_SYMBOLS}}
+ 
+   .preinit_array   ${RELOCATING-0} :
+   {
