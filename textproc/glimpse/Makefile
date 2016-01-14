@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.24 2015/02/17 22:56:48 naddy Exp $
+# $OpenBSD: Makefile,v 1.25 2016/01/14 23:11:29 mmcc Exp $
 
 BROKEN= 	needs work on bitrig
 
 COMMENT=	text search engine
 
 DISTNAME=	glimpse-4.1
-REVISION=	2
+REVISION=	3
 CATEGORIES=	textproc databases
 
 PERMIT_PACKAGE_CDROM=	no fee
