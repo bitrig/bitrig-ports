@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.30 2014/06/15 20:20:34 sthen Exp $
+# $OpenBSD: Makefile,v 1.31 2016/01/16 13:15:26 sthen Exp $
 
 COMMENT=	LDNS utilities
 
