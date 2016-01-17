@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2016/01/17 17:29:09 sthen Exp $
+# $OpenBSD: Makefile,v 1.16 2016/01/17 21:42:11 sthen Exp $
 
 # no libGL (toolchain issue)
 NOT_FOR_ARCHS=	m88k
@@ -14,7 +14,7 @@ HOMEPAGE =		http://freeglut.sourceforge.net/
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL X11 X11-xcb Xdamage Xext Xfixes Xi Xrandr
-WANTLIB += Xrender Xxf86vm drm expat glapi m nghttp2 pthread
+WANTLIB += Xrender Xxf86vm drm expat glapi m expat pthread
 WANTLIB += usbhid xcb xcb-dri2 xcb-glx
 WANTLIB += c++ c++abi pthread
 
