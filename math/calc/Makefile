@@ -1,23 +1,20 @@
-# $OpenBSD: Makefile,v 1.21 2015/03/21 21:28:27 naddy Exp $
+# $OpenBSD: Makefile,v 1.22 2016/01/17 22:35:56 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
 COMMENT=	C-style arbitrary precision calculator
 
-DISTNAME=	calc-2.11.7
+DISTNAME=	calc-2.12.2
 CATEGORIES=	math
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=calc/} \
-		ftp://ftp.uu.net/pub/calc/ \
-		ftp://reality.sgi.com/chongo/src/calc/
-
-REVISION=	2
-
-# LGPL
-PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c curses readline
-LIB_DEPENDS=		devel/readline
 
 HOMEPAGE=	http://www.isthe.com/chongo/tech/comp/calc
+
+# LGPLv2.1
+PERMIT_PACKAGE_CDROM=	Yes
+
+WANTLIB += c curses readline
+
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=calc/}
 
 MAKE_FLAGS=\
 	BINDIR='$${DESTDIR}${PREFIX}/bin' \
@@ -30,6 +27,10 @@ MAKE_FLAGS=\
 	LCC=${CC} \
 	CFLAGS='${CFLAGS} -DCALC_SRC $${CCWARN}'
 
+MAKE_FILE=	Makefile.simple
 TEST_TARGET=	check
+
+post-install:
+	rm ${PREFIX}/lib/lib*calc*.so* ${PREFIX}/bin/calc-static
 
 .include <bsd.port.mk>
