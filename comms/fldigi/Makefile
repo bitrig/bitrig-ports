@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.10 2015/06/28 13:37:13 bcallah Exp $
+# $OpenBSD: Makefile,v 1.11 2016/01/17 23:27:17 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
 COMMENT=	soundcard-based software modem for Amateur Radio use
 
-DISTNAME=	fldigi-3.22.10
+DISTNAME=	fldigi-3.23.06
 
 CATEGORIES=	comms hamradio
 
@@ -20,7 +20,7 @@ WANTLIB += fltk_images fontconfig hamlib jpeg m png portaudio
 WANTLIB += pthread samplerate sndfile z
 WANTLIB += c++ c++abi
 
-MASTER_SITES=	http://www.w1hkj.com/downloads/fldigi/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fldigi/}
 
 MODULES=	devel/gettext
 RUN_DEPENDS=	devel/desktop-file-utils
