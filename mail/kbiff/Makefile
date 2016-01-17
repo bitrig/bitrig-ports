@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.43 2015/03/27 08:41:04 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.44 2016/01/17 17:29:09 sthen Exp $
 
 COMMENT=		new mail notification utility for KDE
 
@@ -15,7 +15,8 @@ PERMIT_PACKAGE_CDROM=  	Yes
 
 WANTLIB =  ICE SM X11 Xext Xfixes Xrender Xt art_lgpl_2
 WANTLIB += c expat fam fontconfig freetype idn m png pthread
-WANTLIB += pthread-stubs util xcb z
+WANTLIB += pthread-stubs c++ c++abi util xcb z
+WANTLIB += X11-xcb Xdamage Xxf86vm drm glapi xcb-dri2 xcb-glx
 WANTLIB += ${KDE}/DCOP ${KDE}/kdecore>=4 ${KDE}/kdefx ${KDE}/kdesu
 WANTLIB += ${KDE}/kdeui ${KDE}/kio ${KDE}/kwalletclient>=1
 WANTLIB += c++ c++abi

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.89 2015/06/10 21:53:49 sthen Exp $
+# $OpenBSD: Makefile,v 1.90 2016/01/17 17:29:08 sthen Exp $
 
 # no libGL (toolchain issue)
 NOT_FOR_ARCHS=	m88k
@@ -37,8 +37,7 @@ MASTER_SITES=		${HOMEPAGE}/files/$V/ \
 MULTI_PACKAGES=		-main -vorbis -mikmod -mp3
 
 WANTLIB-main=		${WANTLIB} GL ICE c Xxf86vm SM sndio Xdamage \
-			Xfixes drm X11-xcb glapi xcb-dri2 xcb-glx
-WANTLIB-main+=		c++ c++abi pthread
+			Xfixes drm expat X11-xcb glapi xcb-dri2 xcb-glx
 
 MODULES=		devel/gettext
 BUILD_DEPENDS=		${MODGNU_AUTOCONF_DEPENDS} ${MODGNU_AUTOMAKE_DEPENDS}

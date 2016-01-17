@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.30 2015/08/19 20:13:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.31 2016/01/17 17:29:10 sthen Exp $
 
 COMMENT=		python bindings for the WebKit GTK+ port
 
@@ -31,7 +31,8 @@ WANTLIB += gcrypt gpg-error graphite2
 WANTLIB += gstaudio-1.0 gstfft-1.0 gsttag-1.0 harfbuzz
 WANTLIB += pthread secret-1 webp
 WANTLIB += EGL gbm harfbuzz-icu icudata icuuc lzma
-WANTLIB += c++ c++abi
+WANTLIB += X11-xcb Xxf86vm drm glapi xcb-dri2 xcb-glx xcb-shape
+WANTLIB += xcb-xfixes
 
 MODULES=		lang/python \
 			devel/gettext

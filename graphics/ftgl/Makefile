@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2015/10/08 12:02:03 jasper Exp $
+# $OpenBSD: Makefile,v 1.15 2016/01/17 17:29:09 sthen Exp $
 
 COMMENT =		font rendering library for OpenGL applications
 
@@ -16,9 +16,8 @@ HOMEPAGE =		http://ftgl.wiki.sourceforge.net
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += GL GLU ICE SM X11 Xdamage Xext Xfixes Xmu Xt Xxf86vm drm
-WANTLIB += freetype m xcb xcb-glx z
-WANTLIB += X11-xcb Xau Xdmcp glapi pthread pthread-stubs xcb-dri2
-WANTLIB += c++ c++abi pthread
+WANTLIB += freetype m c++ c++abi xcb xcb-glx z expat
+WANTLIB += X11-xcb glapi pthread xcb-dri2   
 
 WRKDIST =		${WRKDIR}/${DISTNAME:S/-rc/~rc/}
 

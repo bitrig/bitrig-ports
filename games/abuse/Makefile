@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2015/12/08 00:56:20 bentley Exp $
+# $OpenBSD: Makefile,v 1.43 2016/01/17 17:29:08 sthen Exp $
 
 COMMENT =	SDL port of the legendary 2D platform shooter
 
@@ -17,9 +17,9 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += FLAC GL SDL SDL_mixer X11 Xdamage Xext Xfixes
 WANTLIB += Xxf86vm c drm iconv m mikmod ogg pthread smpeg
-WANTLIB += sndio usbhid vorbis vorbisfile xcb
-WANTLIB += X11-xcb Xau Xdmcp glapi pthread-stubs xcb-dri2 xcb-glx
-WANTLIB += c++ c++abi
+WANTLIB += sndio c++ c++abi usbhid vorbis vorbisfile xcb
+WANTLIB += X11-xcb glapi xcb-dri2 xcb-glx
+WANTLIB += expat
 
 MASTER_SITES =	${HOMEPAGE}raw-attachment/wiki/download/
 MASTER_SITES0 =	http://openbsd.fi/dist/

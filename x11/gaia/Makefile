@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2013/03/11 11:46:09 espie Exp $
+# $OpenBSD: Makefile,v 1.18 2016/01/17 17:29:11 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -17,9 +17,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gaia-clean/}
 
-WANTLIB +=	GL GLU c crypto idn m pthread ssl z
-WANTLIB +=	SDL>=6 gps>=19 curl>=4 png>=5 jpeg>=62
-WANTLIb +=	c++ c++abi
+WANTLIB +=	GL GLU c crypto idn m pthread ssl c++ c++abi z
+WANTLIB +=	SDL gps curl nghttp2 png jpeg
 
 MODULES=	devel/scons
 MODSCONS_FLAGS=	prefix=${PREFIX} \

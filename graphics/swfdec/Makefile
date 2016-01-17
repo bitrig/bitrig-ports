@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.38 2015/10/07 05:50:25 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.39 2016/01/17 17:29:09 sthen Exp $
 
 COMMENT=	flash rendering library
 
@@ -22,7 +22,7 @@ WANTLIB += gobject-2.0 gstpbutils-0.10 gstreamer-0.10 gthread-2.0
 WANTLIB += gtk-x11-2.0 harfbuzz lzma m oil-0.3 pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
 WANTLIB += sndio soup-2.4 sqlite3 xcb xcb-render xcb-shm xml2 z
-WANTLIB += c++ c++abi
+WANTLIB += graphite2
 
 LIB_DEPENDS=	devel/libsoup \
 		devel/liboil \

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.73 2015/03/27 08:16:18 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.74 2016/01/17 17:29:11 sthen Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -30,7 +30,7 @@ WANTLIB += ${KDE}/qtmcop ${KDE}/soundserver_idl ${KDE}/vcard
 WANTLIB += FLAC art_lgpl_2 audiofile fam glib-2.0 gmodule-2.0
 WANTLIB += gthread-2.0 idn jpeg mad ogg pcre pcreposix png vorbis
 WANTLIB += vorbisenc vorbisfile
-WANTLIB += c++ c++abi
+WANTLIB += X11-xcb Xdamage Xxf86vm drm glapi xcb-dri2 xcb-glx
 
 MODULES =	x11/kde devel/gettext
 

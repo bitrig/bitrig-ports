@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2015/11/24 09:11:05 jasper Exp $
-
-BROKEN =	needs work on bitrig
+# $OpenBSD: Makefile,v 1.26 2016/01/17 17:29:10 sthen Exp $
 
 SHARED_ONLY =	Yes
 
@@ -10,11 +8,12 @@ DISTNAME =	TclCurl-7.19.6
 SHARED_LIBS =	TclCurl7196 0.0
 CATEGORIES =	net
 REVISION =	3
+MAINTAINER =	Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	crypto idn ssl z curl>=2.2
+WANTLIB =	crypto idn ssl z curl nghttp2
 
 MASTER_SITES =	https://distfiles.nl/
 MODULES =	lang/tcl devel/gettext

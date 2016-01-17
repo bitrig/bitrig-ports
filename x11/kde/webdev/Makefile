@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.48 2015/04/21 18:51:26 sthen Exp $
+# $OpenBSD: Makefile,v 1.49 2016/01/17 17:29:11 sthen Exp $
 
 COMMENT = 		web development tool
 CATEGORIES =		x11 x11/kde
@@ -37,8 +37,8 @@ WANTLIB += lib/kde3/kdeui lib/kde3/khtml lib/kde3/kio lib/kde3/kjs
 WANTLIB += lib/kde3/kparts lib/kde3/kresources lib/kde3/kspell
 WANTLIB += lib/kde3/ktexteditor lib/kde3/kutils lib/kde3/kwalletclient
 WANTLIB += lib/kde3/vcard lzma m pcre pcreposix png pthread
-WANTLIB += pthread-stubs util xcb xml2 xslt z
-WANTLIB += c++ c++abi
+WANTLIB += pthread-stubs c++ c++abi util xcb xml2 xslt z
+WANTLIB += X11-xcb Xdamage Xxf86vm drm glapi xcb-dri2 xcb-glx
 
 # don't pick up gtar
 CONFIGURE_ENV=		TAR=tar
