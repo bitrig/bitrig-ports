@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2014/03/24 07:47:23 jasper Exp $
+# $OpenBSD: Makefile,v 1.20 2016/01/19 11:58:19 naddy Exp $
 
 COMMENT=		Website META Language: off-line HTML generation toolkit
 
