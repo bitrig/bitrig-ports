@@ -1,5 +1,6 @@
-# $OpenBSD: Makefile,v 1.25 2015/11/04 07:32:37 landry Exp $
+# $OpenBSD: Makefile,v 1.26 2016/01/22 10:28:58 landry Exp $
 
+ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64
 # XXX remember to bump www/conkeror because it has a symlink pointing to lib/xulrunner-${MOZILLA_VER}
 MOZILLA_VERSION =	24.8.0esr
 MOZILLA_BRANCH =	esr24
@@ -12,6 +13,11 @@ REVISION-devel =	6
 
 SO_VERSION =		0.0
 MOZILLA_LIBS =		mozgnome mozalloc xul
+
+# to be able to link when building with clang on i386 or gcc on ppc
+.if ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "powerpc"
+CONFIGURE_ARGS +=	--disable-debug-symbols
+.endif
 
 RUN_DEPENDS-devel =	${PKGNAME-main}:${BASE_PKGPATH},-main
 
