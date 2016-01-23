@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/10/08 06:02:08 bentley Exp $
+# $OpenBSD: Makefile,v 1.2 2016/01/23 05:01:38 bentley Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -11,7 +11,7 @@ REVISION =		0
 
 CATEGORIES =		games
 
-HOMEPAGE =		http://dustedgames.blogspot.com/p/wizznic.html
+HOMEPAGE =		http://wizznic.org/
 
 # GPLv3+
 PERMIT_PACKAGE_CDROM =	Yes
