@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.62 2015/03/27 08:15:03 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.63 2016/01/23 18:57:37 landry Exp $
 
 SHARED_ONLY=	Yes
 
@@ -14,7 +14,7 @@ CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_GNU:=gnash/${VER}/}
 EXTRACT_SUFX=	.tar.bz2
 
-HOMEPAGE=	http://gnashdev.org
+HOMEPAGE=	https://www.gnu.org/software/gnash/
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
