@@ -1,0 +1,13 @@
+--- support/ab.c.orig	Mon Jan 25 09:09:15 2016
++++ support/ab.c	Mon Jan 25 09:09:52 2016
+@@ -2314,8 +2314,10 @@ int main(int argc, const char * const argv[])
+                 } else if (strncasecmp(opt_arg, "SSL2", 4) == 0) {
+                     meth = SSLv2_client_method();
+ #endif
++#ifndef OPENSSL_NO_SSL3
+                 } else if (strncasecmp(opt_arg, "SSL3", 4) == 0) {
+                     meth = SSLv3_client_method();
++#endif
+ #ifdef HAVE_TLSV1_X
+                 } else if (strncasecmp(opt_arg, "TLS1.1", 6) == 0) {
+                     meth = TLSv1_1_client_method();

@@ -1,0 +1,18 @@
+--- modules/ssl/ssl_engine_init.c.orig	Mon Jan 25 09:10:05 2016
++++ modules/ssl/ssl_engine_init.c	Mon Jan 25 09:11:13 2016
+@@ -483,12 +483,14 @@ static apr_status_t ssl_init_ctx_protocol(server_rec *
+     ap_log_error(APLOG_MARK, APLOG_TRACE3, 0, s,
+                  "Creating new SSL context (protocols: %s)", cp);
+ 
++#ifndef OPENSSL_NO_SSL3
+     if (protocol == SSL_PROTOCOL_SSLV3) {
+         method = mctx->pkp ?
+             SSLv3_client_method() : /* proxy */
+             SSLv3_server_method();  /* server */
+     }
+-    else if (protocol == SSL_PROTOCOL_TLSV1) {
++#endif
++    if (protocol == SSL_PROTOCOL_TLSV1) {
+         method = mctx->pkp ?
+             TLSv1_client_method() : /* proxy */
+             TLSv1_server_method();  /* server */
