@@ -1,0 +1,20 @@
+--- unix/configure.orig	Tue Jan 26 14:08:17 2016
++++ unix/configure	Tue Jan 26 14:09:20 2016
+@@ -5507,7 +5507,7 @@ fi
+ 	    CC_SEARCH_FLAGS=""
+ 	    LD_SEARCH_FLAGS=""
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-*|Bitrig-*)
+ 	    arch=`arch -s`
+ 	    case "$arch" in
+ 	    vax)
+@@ -6796,7 +6796,7 @@ fi
+ 	    BSD/OS*) ;;
+ 	    CYGWIN_*|MINGW32_*) ;;
+ 	    IRIX*) ;;
+-	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
+ 	    Darwin-*) ;;
+ 	    SCO_SV-3.2*) ;;
+ 	    *) SHLIB_CFLAGS="-fPIC" ;;

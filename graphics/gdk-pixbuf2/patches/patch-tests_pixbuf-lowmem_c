@@ -1,0 +1,19 @@
+--- tests/pixbuf-lowmem.c.orig	Tue Jan 26 13:59:42 2016
++++ tests/pixbuf-lowmem.c	Tue Jan 26 14:00:09 2016
+@@ -33,9 +33,13 @@ static int max_allocation = PRETEND_MEM_SIZE;
+ 
+ #define HEADER_SPACE sizeof(gsize)
+ 
+-extern void *__libc_malloc (size_t size);
+-extern void *__libc_realloc (void *mem, size_t size);
+-extern void *__libc_free (void *mem);
++//extern void *__libc_malloc (size_t size);
++//extern void *__libc_realloc (void *mem, size_t size);
++//extern void *__libc_free (void *mem);
++
++#define __libc_malloc malloc
++#define __libc_realloc realloc
++#define __libc_free free
+ 
+ static gpointer
+ record_bytes (gpointer mem, gsize bytes)
