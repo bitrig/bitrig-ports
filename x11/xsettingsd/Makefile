@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2015/12/03 21:24:32 sthen Exp $
+# $OpenBSD: Makefile,v 1.5 2016/01/26 13:05:27 sthen Exp $
 
 BROKEN=		needs work on bitrig
 
@@ -10,7 +10,7 @@ REVISION=	2
 
 CATEGORIES=	x11
 
-HOMEPAGE=	https://code.google.com/p/xsettingsd/
+HOMEPAGE=	https://github.com/derat/xsettingsd
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

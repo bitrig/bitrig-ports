@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2015/03/27 08:15:03 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.10 2016/01/26 13:05:27 sthen Exp $
 
 SHARED_ONLY=	Yes
 
@@ -11,7 +11,7 @@ REVISION=	8
 CATEGORIES=	www
 MASTER_SITES=	https://arora.googlecode.com/files/
 
-HOMEPAGE=	https://code.google.com/p/arora/
+HOMEPAGE=	https://github.com/arora/arora
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
