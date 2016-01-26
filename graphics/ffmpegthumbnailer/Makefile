@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2015/08/17 19:10:12 sthen Exp $
+# $OpenBSD: Makefile,v 1.26 2016/01/26 13:10:40 sthen Exp $
 
 COMMENT=	lightweight video thumbnailer for file managers
 
@@ -9,7 +9,7 @@ MASTER_SITES=	https://ffmpegthumbnailer.googlecode.com/files/
 
 SHARED_LIBS=	ffmpegthumbnailer	4.1
 
-HOMEPAGE=	https://code.google.com/p/ffmpegthumbnailer
+HOMEPAGE=	https://github.com/dirkvdb/ffmpegthumbnailer
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
