@@ -1,8 +1,8 @@
 $OpenBSD: patch-js_src_configure_in,v 1.24 2013/09/19 13:19:17 landry Exp $
 https://bugzilla.mozilla.org/show_bug.cgi?id=648721
---- js/src/configure.in.orig	Wed Nov 26 03:17:19 2014
-+++ js/src/configure.in	Tue Dec 30 23:11:59 2014
-@@ -790,6 +790,7 @@ if test -n "$CROSS_COMPILE"; then
+--- js/src/configure.in.orig	Tue Sep 29 16:44:54 2015
++++ js/src/configure.in	Wed Jan 27 15:26:47 2016
+@@ -786,6 +786,7 @@ if test -n "$CROSS_COMPILE"; then
          freebsd*)     OS_ARCH=FreeBSD OS_TARGET=FreeBSD ;;
          netbsd*)      OS_ARCH=NetBSD OS_TARGET=NetBSD ;;
          openbsd*)     OS_ARCH=OpenBSD OS_TARGET=OpenBSD ;;
@@ -10,7 +10,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648721
      esac
      case "${target}" in
          *-android*|*-linuxandroid*) OS_ARCH=Linux OS_TARGET=Android ;;
-@@ -853,6 +854,9 @@ netbsd*)
+@@ -849,6 +850,9 @@ netbsd*)
  openbsd*)
      HOST_OS_ARCH=OpenBSD
      ;;
@@ -20,7 +20,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648721
  solaris*)
      HOST_OS_ARCH=SunOS
      SOLARIS_SUNPRO_CC=
-@@ -1821,7 +1825,7 @@ ia64*-hpux*)
+@@ -1922,7 +1926,7 @@ ia64*-hpux*)
      MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(DSO_SONAME) -o $@'
      ;;
  
@@ -29,7 +29,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648721
      DLL_SUFFIX=".so.1.0"
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
-@@ -2314,7 +2318,7 @@ then
+@@ -2410,7 +2414,7 @@ then
  			fi
  			;;
  
@@ -38,7 +38,7 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=648721
  			AC_DEFINE(_REENTRANT)
  			AC_DEFINE(_THREAD_SAFE)
  			dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -2389,7 +2393,7 @@ fi
+@@ -2507,7 +2511,7 @@ fi
  AC_CACHE_CHECK(
      [for res_ninit()],
      ac_cv_func_res_ninit,

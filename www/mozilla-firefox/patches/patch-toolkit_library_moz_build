@@ -1,7 +1,7 @@
---- toolkit/library/moz.build.orig	Tue Dec 30 23:15:25 2014
-+++ toolkit/library/moz.build	Tue Dec 30 23:15:41 2014
-@@ -227,7 +227,7 @@ OS_LIBS += CONFIG['ICONV_LIBS']
- if CONFIG['MOZ_WIDGET_TOOLKIT'] == 'cocoa':
+--- toolkit/library/moz.build.orig	Tue Sep 29 16:45:04 2015
++++ toolkit/library/moz.build	Wed Jan 27 15:26:50 2016
+@@ -279,7 +279,7 @@ OS_LIBS += CONFIG['ICONV_LIBS']
+ if CONFIG['MOZ_WIDGET_TOOLKIT'] in ('cocoa', 'uikit'):
      OS_LIBS += CONFIG['TK_LIBS']
  
 -if CONFIG['OS_ARCH'] == 'OpenBSD':

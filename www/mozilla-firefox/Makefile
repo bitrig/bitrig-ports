@@ -1,16 +1,17 @@
-# $OpenBSD: Makefile,v 1.278 2015/08/31 20:08:40 landry Exp $
+# $OpenBSD: Makefile,v 1.280 2015/10/05 08:48:14 landry Exp $
 
 COMMENT =	Mozilla web browser
 
 # Don't forget to bump www/firefox-i18n after updates.
 
-MOZILLA_VERSION =	40.0.3
+MOZILLA_VERSION =	41.0.1
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	firefox
 MOZILLA_CODENAME =	browser
 BROKEN-sparc64 =	xpcshell SIGBUS during fake
+EXTRACT_SUFX =		.tar.xz
 
-SO_VERSION =	58.0
+SO_VERSION =	59.0
 # NOTE: Must bump minor version if any shlib's are removed from the
 # components dir to avoid pkg_add -r issues.
 MOZILLA_LIBS =	browsercomps mozgnome xul clearkey
@@ -49,8 +50,7 @@ LIB_DEPENDS +=	textproc/icu4c
 CONFIGURE_ARGS += --with-system-icu
 WANTLIB += icudata icui18n icuuc
 
-CONFIGURE_ARGS +=	--enable-gstreamer=1.0 \
-			--disable-pulseaudio
+CONFIGURE_ARGS +=	--enable-gstreamer=1.0
 
 # bug 857628
 CONFIGURE_ARGS +=	--enable-pie
