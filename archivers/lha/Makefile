@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2013/03/10 22:28:04 espie Exp $
+# $OpenBSD: Makefile,v 1.33 2016/01/27 13:36:35 jasper Exp $
 
 COMMENT=	archive files using LZW compression (.lzh files)
 
