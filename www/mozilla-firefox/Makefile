@@ -1,19 +1,22 @@
-# $OpenBSD: Makefile,v 1.278 2015/08/31 20:08:40 landry Exp $
+# $OpenBSD: Makefile,v 1.286 2016/01/07 09:24:20 landry Exp $
 
 COMMENT =	Mozilla web browser
 
 # Don't forget to bump www/firefox-i18n after updates.
 
-MOZILLA_VERSION =	40.0.3
+MOZILLA_VERSION =	43.0.4
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	firefox
 MOZILLA_CODENAME =	browser
 BROKEN-sparc64 =	xpcshell SIGBUS during fake
+EXTRACT_SUFX =		.tar.xz
+#DISTNAME =		firefox-${MOZILLA_VERSION}
+#DISTFILES =		${DISTNAME}.source.tar.xz
 
-SO_VERSION =	58.0
+SO_VERSION =	61.0
 # NOTE: Must bump minor version if any shlib's are removed from the
 # components dir to avoid pkg_add -r issues.
-MOZILLA_LIBS =	browsercomps mozgnome xul clearkey
+MOZILLA_LIBS =	browsercomps mozgnome xul clearkey lgpllibs
 
 CATEGORIES =	www
 
@@ -30,6 +33,7 @@ NO_TEST =	Yes
 
 CONFIGURE_STYLE =	autoconf no-autoheader
 
+WRKDIST = /usr/ports/pobj/firefox-43.0.4/firefox-43.0.4/
 MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build/autoconf \
 				${WRKDIST}/ipc/chromium/src/third_party/libevent \
 				${WRKDIST}/js/src/ctypes/libffi \
@@ -49,8 +53,7 @@ LIB_DEPENDS +=	textproc/icu4c
 CONFIGURE_ARGS += --with-system-icu
 WANTLIB += icudata icui18n icuuc
 
-CONFIGURE_ARGS +=	--enable-gstreamer=1.0 \
-			--disable-pulseaudio
+CONFIGURE_ARGS +=	--enable-gstreamer=1.0
 
 # bug 857628
 CONFIGURE_ARGS +=	--enable-pie
@@ -58,6 +61,10 @@ CONFIGURE_ARGS +=	--enable-pie
 BUILD_DEPENDS +=	multimedia/gstreamer1/plugins-base
 
 MOZILLA_AUTOCONF_DIRS +=	js/src
+
+pre-patch:
+	echo ${WRKDIST}
+	echo ${PREFIX}
 
 post-install:
 	${SUBST_MAN} ${FILESDIR}/mozilla-firefox.1 \

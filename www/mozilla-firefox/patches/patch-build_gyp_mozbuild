@@ -1,10 +1,10 @@
---- build/gyp.mozbuild.orig	Wed Nov 26 03:17:08 2014
-+++ build/gyp.mozbuild	Tue Dec 30 22:35:42 2014
-@@ -92,6 +92,7 @@ flavors = {
+--- build/gyp.mozbuild.orig	Tue Jan  5 18:44:00 2016
++++ build/gyp.mozbuild	Wed Jan 27 14:24:48 2016
+@@ -99,6 +99,7 @@ flavors = {
      'FreeBSD': 'freebsd',
      'NetBSD': 'netbsd',
      'OpenBSD': 'openbsd',
 +    'Bitrig': 'openbsd',
  }
- gyp_vars['OS'] = flavors[os]
+ gyp_vars['OS'] = flavors.get(os)
  
