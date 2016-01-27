@@ -1,6 +1,6 @@
 # $OpenBSD: Makefile,v 1.44 2015/08/17 12:06:27 kili Exp $
 
-BROKEN=		needs work on bitrig
+MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build-aux
 
 SHARED_ONLY=	Yes
 
