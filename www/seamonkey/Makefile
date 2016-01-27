@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.181 2015/11/09 13:54:30 landry Exp $
+# $OpenBSD: Makefile,v 1.182 2016/01/27 18:04:42 landry Exp $
 
 BROKEN =		almost there on bitrig but not quite
 COMMENT-main =		Mozilla application suite
@@ -11,6 +11,7 @@ MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	seamonkey
 MOZILLA_CODENAME =	suite
 EXTRACT_SUFX =		.tar.xz
+REVISION-main =	0
 
 MULTI_PACKAGES =	-main -lightning
 PKGNAME-main =		${PKGNAME}
