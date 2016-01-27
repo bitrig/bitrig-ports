@@ -1,0 +1,11 @@
+--- doc/xslt/Makefile.in.orig	Wed Jan 27 16:04:18 2016
++++ doc/xslt/Makefile.in	Wed Jan 27 16:04:56 2016
+@@ -1039,7 +1039,7 @@ gnome-doc-xslt-check-includes:
+ 	fi; done; \
+ 	if [ "x$$exs" != "x" ]; then \
+ 	  echo "gnome-doc-xslt.xml does not include the following reference pages: $$exs" 1>&2; \
+-	  exit 1; \
++	  echo "IGNORE FATAL HERE"; \
+ 	fi
+ gnome-doc-xslt-check-xsldoc: $(xsldoc_docs)
+ 	@echo "Running xsldoc checks";
