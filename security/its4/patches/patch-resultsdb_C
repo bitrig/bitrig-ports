@@ -1,0 +1,11 @@
+--- resultsdb.C.orig	Thu Jan 28 16:12:06 2016
++++ resultsdb.C	Thu Jan 28 16:12:19 2016
+@@ -43,7 +43,7 @@ void ResizeResultsTable()
+   delete[] old_table;
+ }
+ 
+-void AddResult(char *source, int l, Severity s, VulnInfo*v, int explanation=0)
++void AddResult(char *source, int l, Severity s, VulnInfo*v, int explanation)
+ {
+   Result &r = table[num_entries++];
+   r.source  = source;
