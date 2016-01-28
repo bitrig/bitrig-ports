@@ -1,7 +1,7 @@
 $OpenBSD: patch-base_process_process_handle_openbsd_cc,v 1.1 2013/10/29 06:51:34 robert Exp $
---- base/process/process_handle_openbsd.cc.orig.port	Wed Apr  2 21:03:56 2014
-+++ base/process/process_handle_openbsd.cc	Fri Apr 25 11:07:19 2014
-@@ -4,46 +4,74 @@
+--- base/process/process_handle_openbsd.cc.orig.port	Fri Oct 18 20:52:30 2013
++++ base/process/process_handle_openbsd.cc	Fri Oct 18 23:28:42 2013
+@@ -4,6 +4,8 @@
  
  #include "base/process/process_handle.h"
  
@@ -10,8 +10,7 @@ $OpenBSD: patch-base_process_process_handle_openbsd_cc,v 1.1 2013/10/29 06:51:34
  #include <sys/sysctl.h>
  #include <sys/types.h>
  #include <unistd.h>
-+#include <stdlib.h>
- 
+@@ -11,39 +13,64 @@
  namespace base {
  
  ProcessId GetParentProcessId(ProcessHandle process) {

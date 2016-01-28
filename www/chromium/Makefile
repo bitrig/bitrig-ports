@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.238 2015/09/07 14:29:38 robert Exp $
+# $OpenBSD: Makefile,v 1.246 2015/09/25 21:09:19 robert Exp $
 
 ONLY_FOR_ARCHS=		i386 amd64
 DPB_PROPERTIES=		parallel
 
 COMMENT=		Chromium browser
 
-V=			45.0.2454.85
+V=			45.0.2454.101
 DISTNAME=		chromium-${V}
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
 
@@ -28,10 +28,7 @@ MASTER_SITES0=	http://nerd.hu/distfiles/
 PATCHFILES+=		issue1236863006_160001.diff:0
 PATCH_DIST_STRIP=	-p1
 
-MODULES=	lang/clang lang/python gcc4
-
-MODCLANG_ARCHS=	*
-MODCLANG_LANGS=	c++
+MODULES=	lang/clang lang/python
 
 MODPY_RUNDEP=	No
 
@@ -41,7 +38,7 @@ WANTLIB += X11 Xext Xfixes Xrender Xss c cairo cups dbus-1 event
 WANTLIB += execinfo expat fontconfig freetype gconf-2 gdk-x11-2.0
 WANTLIB += gdk_pixbuf-2.0 glib-2.0 gobject-2.0 gtk-x11-2.0
 WANTLIB += m pango-1.0 pangocairo-1.0
-WANTLIB += png pthread speex opus
+WANTLIB += png pthread speex
 WANTLIB += xml2 xslt
 WANTLIB += sndio
 WANTLIB += Xcomposite
@@ -66,16 +63,14 @@ BUILD_DEPENDS=	archivers/bzip2 \
 		sysutils/flock \
 		sysutils/pciutils \
 		x11/gnome/libgnome-keyring \
-		devel/ninja \
-		lang/gcc/4.9,-c++>=4.9,<4.10
+		devel/ninja
 LIB_DEPENDS=	devel/libexecinfo \
 		security/nss \
 		devel/gconf2 \
 		textproc/libxslt \
 		x11/gtk+2 \
 		audio/speex \
-		print/cups,-libs \
-		lang/gcc/4.9,-libs>=4.9,<4.10
+		print/cups,-libs
 
 .include <bsd.own.mk>
 
@@ -105,7 +100,6 @@ GYP_DEFS=	-Duse_system_bzip2=1 \
 		-Duse_system_libvpx=0 \
 		-Duse_system_libxml=1 \
 		-Duse_system_speex=1 \
-		-Duse_system_opus=1 \
 		-Duse_system_sqlite=0 \
 		-Duse_system_yasm=1 \
 		-Duse_system_zlib=0 \
@@ -127,10 +121,15 @@ GYP_DEFS=	-Duse_system_bzip2=1 \
 		-Dno_gc_sections=1 \
 		-Ddisable_fatal_linker_warnings=1 \
 		-Dv8_use_external_startup_data=0 \
-		-Dlibraries_for_target='-lestdc++' \
+		-Dlibraries_for_target='-lc++ -lc++abi' \
 		-DOS=openbsd
 
-GYP_DEFS+=	-Dffmpeg_branding=Chrome \
+# Note: these keys are for OpenBSD use ONLY. For your own distribution,
+# please get your own set of keys. It's free!
+GYP_DEFS+=	-Dgoogle_api_key='AIzaSyA015yecfJyWi8UQpneQVrNzIKlxjv4MhI' \
+		-Dgoogle_default_client_id='451220141585.apps.googleusercontent.com' \
+		-Dgoogle_default_client_secret='nQcDyaBvDyCeDrsRqKIWSHJn' \
+		-Dffmpeg_branding=Chrome \
 		-Dproprietary_codecs=1
 
 .if ${MACHINE_ARCH} == "i386"
@@ -168,7 +167,7 @@ do-build:
 	# Build all the resources as the first step to avoid build failures
 	# due to internal dependency issues.
 	@cd ${WRKSRC}/out/${BUILDTYPE} && \
-	for _r in net_interfaces suggestions \
+	for _r in net_interfaces suggestions cacheinvalidation cacheinvalidation_proto_cpp \
 	$$(ninja -t targets | grep 'resources: phony' | cut -d ':' -f1); do \
 		cd ${WRKSRC} && env -i ${MAKE_ENV} ninja \
 			-j ${MAKE_JOBS} -C out/${BUILDTYPE} $${_r}; \

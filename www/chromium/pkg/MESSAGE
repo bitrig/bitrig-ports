@@ -1,4 +1,0 @@
-Due to legal concerns, this chromium build does not contain Google API keys.
-That means all features using Google APIs are disabled. Information how to
-create and use your own API keys is available at
-http://www.chromium.org/developers/how-tos/api-keys.
