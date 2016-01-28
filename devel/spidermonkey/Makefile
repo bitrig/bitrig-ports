@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2015/05/28 10:17:23 pascal Exp $
+# $OpenBSD: Makefile,v 1.30 2015/10/08 21:19:22 sthen Exp $
 
 SHARED_ONLY =		Yes
 
@@ -17,7 +17,7 @@ DISTNAME =		mozjs-${MOZILLA_VERSION}.2.0
 EXTRACT_SUFX =		.tar.bz2
 PKGNAME =		spidermonkey-${MOZILLA_VERSION}.2.0
 PKGSPEC =		spidermonkey->=24.0,<25.0
-REVISION =		5
+REVISION =		6
 
 SO_VERSION =		0.0
 SHARED_LIBS =		mozjs-24 ${SO_VERSION}
@@ -33,15 +33,20 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES =		lang/python
 
 # sync with games/0ad/base x11/gnome/builder x11/gnome/shell x11/gnome/gjs
-MODULES +=		gcc4
-MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		c c++
+#MODULES +=		gcc4
+#MODGCC4_ARCHS =		*
+#MODGCC4_LANGS =		c c++
+
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/../../intl/icu/source/  \
+				${WRKSRC}/../../js/src/ctypes/libffi/ \
+				${WRKSRC}/../../js/src/build/autoconf/
 
 WANTLIB += c m pthread readline nspr4 ncurses plc4 plds4 z
 
 MODPY_RUNDEP =		No
 TEST_DEPENDS =		${MODPY_RUN_DEPENDS}
-LIB_DEPENDS =		devel/nspr
+LIB_DEPENDS =		devel/nspr \
+			devel/readline
 
 WRKDIST =		${WRKDIR}/${DISTNAME}/js/src
 USE_GMAKE =		yes
@@ -55,11 +60,9 @@ CONFIGURE_ARGS =	--with-pthread \
 
 CONFIGURE_ENV +=	SO_VERSION="${SO_VERSION}" \
 			MOZILLA_VERSION="${MOZILLA_VERSION}" \
-			LIBS=-lncurses \
-			LDFLAGS=-L${LOCALBASE}/lib
-
-post-patch:
-	$(SUBST_CMD) ${WRKDIST}/configure.in
+			LIBS=-lncurses
+CONFIGURE_ENV +=	LDFLAGS="-L${LOCALBASE}/lib" \
+			CPPFLAGS="-I${LOCALBASE}/include"
 
 post-install:
 	rm ${PREFIX}/lib/libmozjs-${MOZILLA_VERSION}.a
