@@ -73,6 +73,8 @@
      SUBDIR += html-xml-utils
      SUBDIR += hunspell
      SUBDIR += hyperestraier
+     SUBDIR += hyphen
+     SUBDIR += hyphen-i18n
      SUBDIR += icu4c
      SUBDIR += idiff
      SUBDIR += igor
