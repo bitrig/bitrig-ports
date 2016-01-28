@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 10:50:11 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2015/10/03 12:39:09 robert Exp $
 
 COMMENT=	C\# client implementation for Desktop Notifications
 
@@ -6,7 +6,7 @@ COMMENT=	C\# client implementation for Desktop Notifications
 V=		0.4.0
 DISTNAME=	notify-sharp-$V
 PKGNAME=	mono-notify-$V
-REVISION =	3
+REVISION =	2
 CATEGORIES=	devel
 
 HOMEPAGE=	http://www.ndesk.org/NotifySharp
@@ -17,6 +17,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=	http://crappydiffs.org/
 
 MODULES=	lang/mono
+MODMONO_GMCS_COMPAT=	Yes
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	sysutils/ndesk-dbus-glib \
