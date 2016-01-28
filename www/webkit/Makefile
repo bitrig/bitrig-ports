@@ -29,6 +29,14 @@ MODULES =	devel/gettext \
 		lang/ruby \
 		x11/gnome
 
+#MODULES +=		gcc4
+#MODGCC4_ARCHS =		*
+#MODGCC4_LANGS =		c++
+# cant use clang = needs <chrono> header in StdLib ?
+#MODULES +=		lang/clang
+#MODCLANG_ARCHS =        amd64
+#MODCLANG_LANGS =        c c++
+
 MAKE_FILE =		GNUmakefile
 PORTHOME =		${WRKDIST}
 SUBST_VARS =		WEBKIT_API_VERSION GTK_API_VERSION
@@ -125,7 +133,6 @@ WANTLIB +=	gdk-x11-2.0 gtk-x11-2.0
 .endif
 
 pre-configure:
-	echo ============= ${WRKSRC}
 	${SUBST_CMD} ${WRKSRC}/Source/WebCore/plugins/PluginDatabase.cpp ${WRKSRC}/configure
 	# this ensures gtk-doc files are installed in a versionned directory so that we can
 	# install both versions alongside, see DOC_MODULE_VERSION in GNUMakefile.in
