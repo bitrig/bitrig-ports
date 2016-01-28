@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.29 2015/02/16 22:57:12 naddy Exp $
 
-BROKEN= 	needs work on bitrig.  dpb should ignore this port but doesn't.
-
 COMMENT=	scan C/C++ source code for security problems
 
 DISTNAME=	its4-1.1.1
@@ -25,6 +23,12 @@ CONFIGURE_ARGS=	--prefix='${PREFIX}' \
 WRKDIST=	${WRKDIR}/its4
 
 NO_TEST=	Yes
+
+#MODULES +=		gcc4
+#MODGCC4_ARCHS =		powerpc sparc64 alpha
+#MODGCC4_LANGS =		c c++
+#MODCLANG_ARCHS =	amd64 i386
+#MODCLANG_LANGS =	c c++
 
 FETCH_MANUALLY=	"The source to this port may not be automatically fetched" \
 		"due to licensing restrictions. You MUST fetch the source" \
