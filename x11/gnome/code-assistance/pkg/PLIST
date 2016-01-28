@@ -27,6 +27,34 @@ libexec/gnome-code-assistance/backends/py/gnome/codeassistance/${MODPY_PYCACHE}t
 libexec/gnome-code-assistance/backends/py/gnome/codeassistance/${MODPY_PYCACHE}transport_dbus.${MODPY_PYC_MAGIC_TAG}pyo
 libexec/gnome-code-assistance/backends/py/gnome/codeassistance/${MODPY_PYCACHE}types.${MODPY_PYC_MAGIC_TAG}pyc
 libexec/gnome-code-assistance/backends/py/gnome/codeassistance/${MODPY_PYCACHE}types.${MODPY_PYC_MAGIC_TAG}pyo
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/__init__.py
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}/
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyo
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}clangimporter.${MODPY_PYC_MAGIC_TAG}pyc
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}clangimporter.${MODPY_PYC_MAGIC_TAG}pyo
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}config.${MODPY_PYC_MAGIC_TAG}pyc
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}config.${MODPY_PYC_MAGIC_TAG}pyo
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}makefileintegration.${MODPY_PYC_MAGIC_TAG}pyc
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}makefileintegration.${MODPY_PYC_MAGIC_TAG}pyo
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}service.${MODPY_PYC_MAGIC_TAG}pyc
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/${MODPY_PYCACHE}service.${MODPY_PYC_MAGIC_TAG}pyo
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/__init__.py
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/${MODPY_PYCACHE}/
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyo
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/${MODPY_PYCACHE}cindex.${MODPY_PYC_MAGIC_TAG}pyc
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/${MODPY_PYCACHE}cindex.${MODPY_PYC_MAGIC_TAG}pyo
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/${MODPY_PYCACHE}enumerations.${MODPY_PYC_MAGIC_TAG}pyc
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/${MODPY_PYCACHE}enumerations.${MODPY_PYC_MAGIC_TAG}pyo
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/cindex.py
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clang/enumerations.py
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/clangimporter.py
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/config.py
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/makefileintegration.py
+libexec/gnome-code-assistance/backends/py/gnome/codeassistance/c/service.py
 libexec/gnome-code-assistance/backends/py/gnome/codeassistance/json/
 libexec/gnome-code-assistance/backends/py/gnome/codeassistance/json/__init__.py
 libexec/gnome-code-assistance/backends/py/gnome/codeassistance/json/${MODPY_PYCACHE}/
@@ -417,6 +445,7 @@ libexec/gnome-code-assistance/backends/rb/gnome/codeassistance/transport/
 libexec/gnome-code-assistance/backends/rb/gnome/codeassistance/transport.rb
 libexec/gnome-code-assistance/backends/rb/gnome/codeassistance/transport/dbus.rb
 libexec/gnome-code-assistance/backends/rb/gnome/codeassistance/types.rb
+libexec/gnome-code-assistance/c
 libexec/gnome-code-assistance/css
 libexec/gnome-code-assistance/js
 libexec/gnome-code-assistance/json
@@ -426,6 +455,7 @@ libexec/gnome-code-assistance/sh
 @bin libexec/gnome-code-assistance/vala
 @bin libexec/gnome-code-assistance/valahelper
 libexec/gnome-code-assistance/xml
+share/dbus-1/services/org.gnome.CodeAssist.v1.c.service
 share/dbus-1/services/org.gnome.CodeAssist.v1.css.service
 share/dbus-1/services/org.gnome.CodeAssist.v1.js.service
 share/dbus-1/services/org.gnome.CodeAssist.v1.json.service
