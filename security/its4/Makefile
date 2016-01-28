@@ -24,11 +24,8 @@ WRKDIST=	${WRKDIR}/its4
 
 NO_TEST=	Yes
 
-#MODULES +=		gcc4
-#MODGCC4_ARCHS =		powerpc sparc64 alpha
-#MODGCC4_LANGS =		c c++
-#MODCLANG_ARCHS =	amd64 i386
-#MODCLANG_LANGS =	c c++
+CONFIGURE_ENV=	PATH=/usr/bin
+CONFIGURE_ARGS=	--with-cpp=clang++
 
 FETCH_MANUALLY=	"The source to this port may not be automatically fetched" \
 		"due to licensing restrictions. You MUST fetch the source" \

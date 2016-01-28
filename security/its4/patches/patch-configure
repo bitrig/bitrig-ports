@@ -1,0 +1,11 @@
+--- configure.orig	Thu Jan 28 16:42:01 2016
++++ configure	Thu Jan 28 16:42:49 2016
+@@ -126,7 +126,7 @@ if test -n "${CC}"; then
+      echo "yes" 1>&5
+    else
+      echo "no" 1>&5
+-     CC=
++     CC=c++
+    fi
+ fi
+ if test -z "${CC}"; then
