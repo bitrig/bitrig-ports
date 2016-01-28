@@ -1,6 +1,6 @@
---- mozilla/media/libvpx/Makefile.in.orig	Wed Mar  4 19:22:18 2015
-+++ mozilla/media/libvpx/Makefile.in	Wed Mar  4 19:23:07 2015
-@@ -54,7 +54,7 @@ else
+--- mozilla/media/libvpx/Makefile.in.orig	Mon Sep 28 07:40:57 2015
++++ mozilla/media/libvpx/Makefile.in	Thu Jan 28 08:45:50 2016
+@@ -60,7 +60,7 @@ else
  # asm. This is the preferred method. However we need to strip out CFLAGS that
  # cause LTO because then the resulting .S file is useless.
  
@@ -9,7 +9,7 @@
  
  OFFSET_PATTERN := '^[a-zA-Z0-9_]* EQU'
  
-@@ -71,7 +71,7 @@ vpx_scale_asm_offsets.asm: vpx_scale_asm_offsets.s
+@@ -77,7 +77,7 @@ vpx_scale_asm_offsets.asm: vpx_scale_asm_offsets.s
  
  GARBAGE += vpx_scale_asm_offsets.s vpx_scale_asm_offsets.asm
  

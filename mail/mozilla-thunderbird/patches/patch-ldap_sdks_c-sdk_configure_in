@@ -1,7 +1,7 @@
 $OpenBSD$
---- ldap/sdks/c-sdk/configure.in.orig	Fri Sep 20 10:35:59 2013
-+++ ldap/sdks/c-sdk/configure.in	Fri Sep 20 10:37:48 2013
-@@ -1808,7 +1808,7 @@ mips-sony-newsos*)
+--- ldap/sdks/c-sdk/configure.in.orig	Mon Sep 28 07:41:13 2015
++++ ldap/sdks/c-sdk/configure.in	Thu Jan 28 08:45:43 2016
+@@ -1810,7 +1810,7 @@ mips-sony-newsos*)
      _DEBUG_FLAGS="-gstabs"
  	;;
  
@@ -10,7 +10,7 @@ $OpenBSD$
      LD='$(CC)'
      AC_DEFINE(XP_UNIX)
      AC_DEFINE(OPENBSD)
-@@ -2361,7 +2361,7 @@ if test -n "$USE_PTHREADS"; then
+@@ -2363,7 +2363,7 @@ if test -n "$USE_PTHREADS"; then
              _PTHREAD_LDFLAGS=
          fi
  	    ;;

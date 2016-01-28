@@ -1,6 +1,6 @@
---- mozilla/hal/moz.build.orig	Sun Jul 27 07:18:35 2014
-+++ mozilla/hal/moz.build	Sun Jul 27 07:21:30 2014
-@@ -113,7 +113,7 @@ elif CONFIG['MOZ_WIDGET_TOOLKIT'] == 'cocoa':
+--- mozilla/hal/moz.build.orig	Mon Sep 28 07:40:50 2015
++++ mozilla/hal/moz.build	Thu Jan 28 08:45:43 2016
+@@ -117,7 +117,7 @@ elif CONFIG['MOZ_WIDGET_TOOLKIT'] == 'cocoa':
          'fallback/FallbackScreenConfiguration.cpp',
          'fallback/FallbackVibration.cpp',
      ]

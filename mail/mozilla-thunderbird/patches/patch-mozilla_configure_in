@@ -1,6 +1,6 @@
---- mozilla/configure.in.orig	Sun Jul 27 07:18:35 2014
-+++ mozilla/configure.in	Sun Jul 27 07:20:30 2014
-@@ -1004,7 +1004,7 @@ if test -n "$CROSS_COMPILE"; then
+--- mozilla/configure.in.orig	Mon Sep 28 07:40:55 2015
++++ mozilla/configure.in	Thu Jan 28 08:45:43 2016
+@@ -1012,7 +1012,7 @@ if test -n "$CROSS_COMPILE"; then
          dragonfly*)   OS_ARCH=DragonFly OS_TARGET=DragonFly ;;
          freebsd*)     OS_ARCH=FreeBSD OS_TARGET=FreeBSD ;;
          netbsd*)      OS_ARCH=NetBSD OS_TARGET=NetBSD ;;
@@ -9,7 +9,7 @@
      esac
      case "${target}" in
          *-android*|*-linuxandroid*) OS_ARCH=Linux OS_TARGET=Android ;;
-@@ -1065,7 +1065,7 @@ freebsd*)
+@@ -1073,7 +1073,7 @@ freebsd*)
  netbsd*)
      HOST_OS_ARCH=NetBSD
      ;;
@@ -18,8 +18,8 @@
      HOST_OS_ARCH=OpenBSD
      ;;
  solaris*)
-@@ -2281,7 +2281,7 @@ ia64*-hpux*)
-     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(notdir $@)) -o $@'
+@@ -2427,7 +2427,7 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(DSO_SONAME) -o $@'
      ;;
  
 -*-openbsd*)
@@ -27,7 +27,7 @@
      if test "$SO_VERSION"; then
          DLL_SUFFIX=".so.$SO_VERSION"
      else
-@@ -2676,7 +2676,7 @@ dnl Checks for header files.
+@@ -2709,7 +2709,7 @@ dnl Checks for header files.
  dnl ========================================================
  AC_HEADER_DIRENT
  case "$target_os" in
@@ -36,7 +36,7 @@
  # for stuff like -lXshm
      CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
      ;;
-@@ -2966,7 +2966,7 @@ then
+@@ -2999,7 +2999,7 @@ then
              fi
              ;;
  
@@ -45,7 +45,7 @@
              AC_DEFINE(_REENTRANT)
              AC_DEFINE(_THREAD_SAFE)
              dnl -pthread links in -lc_r, so don't specify it explicitly.
-@@ -3327,7 +3327,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
+@@ -3330,7 +3330,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
      *-android*|*-linuxandroid*)
        :
        ;;
@@ -54,7 +54,7 @@
        :
        ;;
      *)
-@@ -5061,7 +5061,7 @@ dnl --enable-webrtc to override.  Can disable for ever
+@@ -5099,7 +5099,7 @@ dnl --enable-webrtc to override.  Can disable for ever
  dnl the master list above.
  if test -n "$MOZ_WEBRTC"; then
      case "$target" in

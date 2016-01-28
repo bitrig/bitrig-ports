@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.208 2015/08/23 19:31:06 landry Exp $
+# $OpenBSD: Makefile,v 1.210 2015/09/30 11:51:25 landry Exp $
 
 COMMENT-main =		Mozilla e-mail, rss and usenet client
 COMMENT-lightning =	Mozilla Thunderbird calendar extension
 
 # Don't forget to bump mail/thunderbird-i18n after updates.
 
-MOZILLA_VERSION =	38.2.0
+MOZILLA_VERSION =	38.3.0
 MOZILLA_BRANCH =	esr38
 MOZILLA_PROJECT =	thunderbird
 MOZILLA_CODENAME =	mail
@@ -13,7 +13,7 @@ BROKEN-sparc64 =	xpcshell SIGBUS during fake
 
 MULTI_PACKAGES =	-main -lightning
 PKGNAME-main =		${PKGNAME}
-PKGNAME-lightning =	lightning-4.0.2
+PKGNAME-lightning =	lightning-4.0.3
 EPOCH-lightning =	0
 
 HOMEPAGE =	http://www.mozilla.org/thunderbird/
@@ -38,11 +38,11 @@ MODULES =	www/mozilla devel/gettext lang/python
 MODPY_RUNDEP =	No
 
 # necessary glue to build with the correct compiler after fx 17
-MODULES +=		gcc4 lang/clang
-MODGCC4_ARCHS =		powerpc sparc64 alpha
-MODGCC4_LANGS =		c c++
-MODCLANG_ARCHS =	amd64 i386
-MODCLANG_LANGS =	c c++
+#MODULES +=		gcc4
+#MODGCC4_ARCHS =		powerpc sparc64 alpha
+#MODGCC4_LANGS =		c c++
+#MODCLANG_ARCHS =	amd64 i386
+#MODCLANG_LANGS =	c c++
 
 NO_TEST =	Yes
 
@@ -72,7 +72,7 @@ CONFIGURE_ARGS +=	--enable-calendar
 CONFIGURE_ARGS +=	--disable-webrtc
 
 CONFIGURE_ARGS +=	--enable-gstreamer=1.0
-BUILD_DEPENDS +=	multimedia/gstreamer1/plugins-base audio/pulseaudio
+BUILD_DEPENDS +=	multimedia/gstreamer1/plugins-base
 
 # to be able to link when building with clang on i386
 .if ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "powerpc"

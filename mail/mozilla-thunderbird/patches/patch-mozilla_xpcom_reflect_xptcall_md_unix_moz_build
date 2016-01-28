@@ -1,0 +1,24 @@
+--- mozilla/xpcom/reflect/xptcall/md/unix/moz.build.orig	Thu Jan 28 08:46:18 2016
++++ mozilla/xpcom/reflect/xptcall/md/unix/moz.build	Thu Jan 28 08:46:42 2016
+@@ -26,7 +26,7 @@ if CONFIG['OS_ARCH'] == 'GNU':
+             'xptcstubs_gcc_x86_unix.cpp'
+         ]
+ 
+-if CONFIG['OS_ARCH'] in ('Linux', 'FreeBSD', 'NetBSD', 'OpenBSD') or \
++if CONFIG['OS_ARCH'] in ('Linux', 'FreeBSD', 'NetBSD', 'OpenBSD', 'Bitrig') or \
+    CONFIG['OS_ARCH'].startswith('GNU_'):
+     if CONFIG['OS_TEST'] == 'x86_64':
+         SOURCES += [
+@@ -101,6 +101,12 @@ if CONFIG['CPU_ARCH'] == 'arm' or CONFIG['OS_TEST'] ==
+         ]
+ 
+ if CONFIG['CPU_ARCH'] == 'arm' and CONFIG['OS_ARCH'] == 'OpenBSD':
++    SOURCES += [
++        'xptcinvoke_arm_openbsd.cpp',
++        'xptcstubs_arm_openbsd.cpp',
++    ]
++
++if CONFIG['CPU_ARCH'] == 'arm' and CONFIG['OS_ARCH'] == 'Bitrig':
+     SOURCES += [
+         'xptcinvoke_arm_openbsd.cpp',
+         'xptcstubs_arm_openbsd.cpp',

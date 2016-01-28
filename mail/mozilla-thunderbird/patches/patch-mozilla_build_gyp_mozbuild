@@ -1,6 +1,6 @@
---- mozilla/build/gyp.mozbuild.orig	Sat Aug  2 02:45:39 2014
-+++ mozilla/build/gyp.mozbuild	Sat Aug  2 02:46:12 2014
-@@ -82,6 +82,7 @@ flavors = {
+--- mozilla/build/gyp.mozbuild.orig	Mon Sep 28 07:40:55 2015
++++ mozilla/build/gyp.mozbuild	Thu Jan 28 08:45:43 2016
+@@ -94,6 +94,7 @@ flavors = {
      'FreeBSD': 'freebsd',
      'NetBSD': 'netbsd',
      'OpenBSD': 'openbsd',

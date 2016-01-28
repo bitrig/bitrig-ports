@@ -1,11 +1,11 @@
---- mozilla/ipc/chromium/chromium-config.mozbuild.orig	Sat Aug  2 14:22:08 2014
-+++ mozilla/ipc/chromium/chromium-config.mozbuild	Sat Aug  2 14:22:57 2014
-@@ -64,7 +64,7 @@ else:
+--- mozilla/ipc/chromium/chromium-config.mozbuild.orig	Thu Jan 28 08:52:54 2016
++++ mozilla/ipc/chromium/chromium-config.mozbuild	Thu Jan 28 08:52:56 2016
+@@ -63,7 +63,7 @@ else:
              'OS_BSD': 1,
          })
  
 -    elif CONFIG['OS_ARCH'] == 'OpenBSD':
 +    elif CONFIG['OS_ARCH'] in ('OpenBSD', 'Bitrig'):
-         OS_LIBS += [ '$(call EXPAND_LIBNAME,kvm)' ]
          DEFINES.update({
              'OS_OPENBSD': 1,
+             'OS_BSD': 1,
