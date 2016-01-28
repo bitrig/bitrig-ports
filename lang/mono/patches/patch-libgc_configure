@@ -1,6 +1,6 @@
---- libgc/configure.orig	Wed Feb 19 13:52:30 2014
-+++ libgc/configure	Sun Nov 16 17:21:44 2014
-@@ -4904,7 +4904,7 @@ $as_echo "$as_me: WARNING: \"Only HP/UX 11 threads are
+--- libgc/configure.orig	Thu Jan 28 14:25:43 2016
++++ libgc/configure	Thu Jan 28 14:26:56 2016
+@@ -4985,7 +4985,7 @@ $as_echo "$as_me: WARNING: \"Only HP/UX 11 threads are
  	$as_echo "#define THREAD_LOCAL_ALLOC 1" >>confdefs.h
  
  	;;
@@ -9,18 +9,7 @@
  	$as_echo "#define GC_OPENBSD_THREADS 1" >>confdefs.h
  
  	if test "${enable_parallel_mark}" = yes; then
-@@ -5005,10 +5005,7 @@ main ()
- {
- 
- volatile unsigned int foo = 0;
--int main(int argc, char** argv) {
-     unsigned int r1 = __sync_bool_compare_and_swap(&foo, 0, 1);
--    return 0;
--}
- 
-   ;
-   return 0;
-@@ -6061,7 +6058,7 @@ else
+@@ -6142,7 +6142,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -29,7 +18,7 @@
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -6572,7 +6569,7 @@ newos6*)
+@@ -6657,7 +6657,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -38,7 +27,7 @@
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -7188,7 +7185,7 @@ old_postuninstall_cmds=
+@@ -7273,7 +7273,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -47,7 +36,7 @@
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -9928,7 +9925,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -10017,7 +10017,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -55,8 +44,8 @@
 +  openbsd* | bitrig*)
      with_gnu_ld=no
      ;;
-   linux* | k*bsd*-gnu | gnu*)
-@@ -10808,7 +10805,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+   esac
+@@ -10893,7 +10893,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -65,7 +54,7 @@
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -11852,7 +11849,7 @@ newsos6)
+@@ -11940,7 +11940,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -74,7 +63,7 @@
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -13909,7 +13906,7 @@ fi
+@@ -14000,7 +14000,7 @@ fi
  	ld_shlibs_CXX=no
  	;;
  
@@ -83,7 +72,7 @@
  	if test -f /usr/libexec/ld.so; then
  	  hardcode_direct_CXX=yes
  	  hardcode_shlibpath_var_CXX=no
-@@ -15684,7 +15681,7 @@ newsos6)
+@@ -15775,7 +15775,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  

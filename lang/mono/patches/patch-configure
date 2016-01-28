@@ -1,0 +1,138 @@
+--- configure.orig	Tue Aug 25 17:09:27 2015
++++ configure	Thu Jan 28 14:52:45 2016
+@@ -4062,7 +4062,7 @@ $as_echo "#define PTHREAD_POINTER_ID 1" >>confdefs.h
+ 		use_sigposix=yes
+ 		has_dtrace=yes
+ 		;;
+-	*-*-*openbsd*)
++	*-*-*openbsd*|*-*-*bitrig*)
+ 		host_win32=no
+ 		CPPFLAGS="$CPPFLAGS -D_THREAD_SAFE -DGC_OPENBSD_THREADS -DPLATFORM_BSD -D_REENTRANT -DUSE_MMAP"
+ 		if test "x$disable_munmap" != "xyes"; then
+@@ -4074,9 +4074,7 @@ $as_echo "#define PTHREAD_POINTER_ID 1" >>confdefs.h
+ 		$as_echo "#define PTHREAD_POINTER_ID 1" >>confdefs.h
+ 
+ 		libdl=
+-		libgc_default=boehm
+ 		libgc_threads=pthreads
+-		with_sigaltstack=no
+ 		use_sigposix=yes
+ 		;;
+ 	*-*-linux-android*)
+@@ -7529,7 +7527,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -8041,7 +8039,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -8654,7 +8652,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
+@@ -11176,7 +11174,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -12052,7 +12050,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -13099,7 +13097,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -15159,7 +15157,7 @@ fi
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd* | bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -16934,7 +16932,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -22056,7 +22054,7 @@ if test "x$ac_cv_lib_pthread_main" = xyes; then :
+ fi
+ 
+ 		;;
+-		*-*-*openbsd*)
++		*-*-*openbsd*|*-*-*bitrig*)
+ 			{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for main in -lpthread" >&5
+ $as_echo_n "checking for main in -lpthread... " >&6; }
+ if ${ac_cv_lib_pthread_main+:} false; then :
+@@ -24969,7 +24967,7 @@ fi
+ $as_echo "$try_dev_random" >&6; }
+ 
+ case "{$build}" in
+-    *-openbsd*)
++    *-openbsd*|*-bitrig*)
+     NAME_DEV_RANDOM="/dev/srandom"
+     ;;
+ 
+@@ -25593,7 +25591,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
+ 			sgen_supported=true
+ 			AOT_SUPPORTED="yes"
+ 			;;
+-		  openbsd*|freebsd*|kfreebsd-gnu*)
++		  openbsd*|bitrig*|freebsd*|kfreebsd-gnu*)
+ 			sgen_supported=true
+ 		        ;;
+ 		esac
+@@ -25616,7 +25614,7 @@ $as_echo "#define __mono_ilp32__ 1" >>confdefs.h
+ 			sgen_supported=true
+ 			AOT_SUPPORTED="yes"
+ 			;;
+-		  openbsd*|freebsd*|kfreebsd-gnu*)
++		  openbsd*|bitrig*|freebsd*|kfreebsd-gnu*)
+ 			sgen_supported=true
+ 			;;
+ 		  mingw*)
+@@ -26212,7 +26210,7 @@ case "$host" in
+ 	SQLITE="libsqlite.so"
+ 	SQLITE3="libsqlite3.so"
+ 	;;
+-    *-*-*openbsd*)
++    *-*-*openbsd*|*-*-*bitrig*)
+     	LIBC="libc.so"
+ 	INTL="libintl.so"
+         SQLITE="libsqlite.so"

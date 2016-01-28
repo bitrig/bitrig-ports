@@ -1,6 +1,6 @@
---- libgc/aclocal.m4.orig	Sat Jul 12 16:24:29 2014
-+++ libgc/aclocal.m4	Sat Jul 12 16:25:25 2014
-@@ -1484,7 +1484,7 @@ old_postuninstall_cmds=
+--- eglib/m4/libtool.m4.orig	Thu Jan 28 15:02:25 2016
++++ eglib/m4/libtool.m4	Thu Jan 28 15:03:04 2016
+@@ -1470,7 +1470,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -9,7 +9,7 @@
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -1652,7 +1652,7 @@ AC_CACHE_VAL([lt_cv_sys_max_cmd_len], [dnl
+@@ -1638,7 +1638,7 @@ AC_CACHE_VAL([lt_cv_sys_max_cmd_len], [dnl
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -18,7 +18,7 @@
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -2736,7 +2736,7 @@ newsos6)
+@@ -2725,7 +2725,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -27,7 +27,7 @@
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -3318,7 +3318,7 @@ newos6*)
+@@ -3311,7 +3311,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -36,7 +36,7 @@
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[[^/]]+(\.so\.[[0-9]]+\.[[0-9]]+|\.so|_pic\.a)$'
    else
-@@ -4651,7 +4651,7 @@ dnl Note also adjust exclude_expsyms for C++ above.
+@@ -4641,7 +4641,7 @@ dnl Note also adjust exclude_expsyms for C++ above.
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -44,8 +44,8 @@
 +  openbsd* | bitrig*)
      with_gnu_ld=no
      ;;
-   linux* | k*bsd*-gnu | gnu*)
-@@ -5382,7 +5382,7 @@ _LT_EOF
+   esac
+@@ -5368,7 +5368,7 @@ _LT_EOF
      *nto* | *qnx*)
        ;;
  
@@ -54,7 +54,7 @@
        if test -f /usr/libexec/ld.so; then
  	_LT_TAGVAR(hardcode_direct, $1)=yes
  	_LT_TAGVAR(hardcode_shlibpath_var, $1)=no
-@@ -6583,7 +6583,7 @@ if test "$_lt_caught_CXX_error" != yes; then
+@@ -6576,7 +6576,7 @@ if test "$_lt_caught_CXX_error" != yes; then
  	_LT_TAGVAR(ld_shlibs, $1)=no
  	;;
  

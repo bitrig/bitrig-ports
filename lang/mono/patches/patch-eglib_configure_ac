@@ -1,6 +1,6 @@
---- eglib/configure.ac.orig	Sun Nov 16 20:16:12 2014
-+++ eglib/configure.ac	Sun Nov 16 20:16:24 2014
-@@ -94,7 +94,7 @@ arm*-darwin*)
+--- eglib/configure.ac.orig	Tue Aug 25 15:33:10 2015
++++ eglib/configure.ac	Thu Jan 28 12:44:52 2016
+@@ -94,7 +94,7 @@ arm*-darwin*|aarch64*-*)
  i*86-*-darwin*)
      ORDER=G_LITTLE_ENDIAN
      ;;

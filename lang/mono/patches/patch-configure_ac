@@ -1,6 +1,15 @@
 $OpenBSD: patch-configure_ac,v 1.1 2014/12/29 10:49:12 robert Exp $
---- configure.ac.orig	Sun Dec 28 16:23:34 2014
-+++ configure.ac	Sun Dec 28 16:23:45 2014
+--- configure.ac.orig	Tue Aug 25 17:09:07 2015
++++ configure.ac	Thu Jan 28 12:49:05 2016
+@@ -177,7 +177,7 @@ case "$host" in
+ 		use_sigposix=yes
+ 		has_dtrace=yes
+ 		;;
+-	*-*-*openbsd*)
++	*-*-*openbsd*|*-*-*bitrig*)
+ 		host_win32=no
+ 		CPPFLAGS="$CPPFLAGS -D_THREAD_SAFE -DGC_OPENBSD_THREADS -DPLATFORM_BSD -D_REENTRANT -DUSE_MMAP"
+ 		if test "x$disable_munmap" != "xyes"; then
 @@ -188,9 +188,7 @@ case "$host" in
  		need_link_unlink=yes
  		AC_DEFINE(PTHREAD_POINTER_ID)
@@ -11,3 +20,48 @@ $OpenBSD: patch-configure_ac,v 1.1 2014/12/29 10:49:12 robert Exp $
  		use_sigposix=yes
  		;;
  	*-*-linux-android*)
+@@ -1691,7 +1689,7 @@ if test x$target_win32 = xno; then
+ 		*-*-*freebsd*)
+ 			AC_CHECK_LIB(pthread, main, LIBS="$LIBS -pthread")
+ 		;;
+-		*-*-*openbsd*)
++		*-*-*openbsd*|*-*-*bitrig*)
+ 			AC_CHECK_LIB(pthread, main, LIBS="$LIBS -pthread")
+ 		;;
+ 		*)
+@@ -2455,7 +2453,7 @@ try_dev_random=$enableval, try_dev_random=yes)
+ AC_MSG_RESULT($try_dev_random)
+ 
+ case "{$build}" in
+-    *-openbsd*)
++    *-openbsd*|*-bitrig*)
+     NAME_DEV_RANDOM="/dev/srandom"
+     ;;
+ 
+@@ -2824,7 +2822,7 @@ case "$host" in
+ 			sgen_supported=true
+ 			AOT_SUPPORTED="yes"
+ 			;;
+-		  openbsd*|freebsd*|kfreebsd-gnu*)
++		  openbsd*|bitrig*|freebsd*|kfreebsd-gnu*)
+ 			sgen_supported=true
+ 		        ;;
+ 		esac
+@@ -2845,7 +2843,7 @@ case "$host" in
+ 			sgen_supported=true
+ 			AOT_SUPPORTED="yes"
+ 			;;
+-		  openbsd*|freebsd*|kfreebsd-gnu*)
++		  openbsd*|bitrig*|freebsd*|kfreebsd-gnu*)
+ 			sgen_supported=true
+ 			;;
+ 		  mingw*)
+@@ -3269,7 +3267,7 @@ case "$host" in
+ 	SQLITE="libsqlite.so"
+ 	SQLITE3="libsqlite3.so"
+ 	;;
+-    *-*-*openbsd*)
++    *-*-*openbsd*|*-*-*bitrig*)
+     	LIBC="libc.so"
+ 	INTL="libintl.so"
+         SQLITE="libsqlite.so"

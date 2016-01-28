@@ -1,6 +1,6 @@
-$OpenBSD: patch-runtime_mono-wrapper_in,v 1.5 2014/07/09 11:39:17 robert Exp $
---- runtime/mono-wrapper.in.orig	Wed Feb 19 13:48:46 2014
-+++ runtime/mono-wrapper.in	Sun Nov 16 16:36:53 2014
+$OpenBSD: patch-runtime_mono-wrapper_in,v 1.6 2015/10/03 11:53:44 robert Exp $
+--- runtime/mono-wrapper.in.orig	Wed Aug 26 00:09:13 2015
++++ runtime/mono-wrapper.in	Sat Sep 26 19:00:42 2015
 @@ -4,7 +4,7 @@ MONO_CFG_DIR='@mono_cfg_dir@'
  PATH="$r/runtime/_tmpinst/bin:$PATH"
  MONO_SHARED_DIR=$r/runtime
