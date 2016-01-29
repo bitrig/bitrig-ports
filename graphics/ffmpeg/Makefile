@@ -1,21 +1,21 @@
-# $OpenBSD: Makefile,v 1.122 2015/08/01 07:50:25 jasper Exp $
+# $OpenBSD: Makefile,v 1.130 2015/10/03 19:39:47 sthen Exp $
 
 COMMENT=	audio/video converter and streamer
 
-V=		20150723
+V=		20150909
 DISTNAME=	ffmpeg-git-${V}
 PKGNAME=	ffmpeg-${V}
-REVISION=	0
+REVISION=	6
 CATEGORIES=	graphics multimedia
 MASTER_SITES=	http://comstyle.com/source/
 EXTRACT_SUFX=	.tar.xz
 
-SHARED_LIBS=	avcodec		22.1 \
+SHARED_LIBS=	avcodec		22.2 \
 		avdevice	10.0 \
-		avfilter	7.2 \
-		avformat	19.3 \
+		avfilter	7.3 \
+		avformat	19.4 \
 		avresample	1.0 \
-		avutil		12.3 \
+		avutil		12.4 \
 		postproc	16.1 \
 		swresample	1.2 \
 		swscale		6.1
@@ -28,17 +28,14 @@ PERMIT_PACKAGE_FTP=	Yes
 
 WANTLIB=	SDL X11 Xext Xv ass bz2 c crypto fontconfig freetype fribidi \
 		gsm m mp3lame opus pthread sndio speex ssl vorbis vorbisenc \
-		vpx>=5 x264 xcb xcb-shape xcb-shm xcb-xfixes xvidcore z
-
-MODULES=	lang/clang
+		vpx>=5 x264 x265>=2 xcb xcb-shape xcb-shm xcb-xfixes xvidcore z
 
 MODCLANG_ARCHS=	amd64
 
 BUILD_DEPENDS=	textproc/texi2html
-.if ${MACHINE_ARCH} == "amd64"
+.if ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386"
 BUILD_DEPENDS+=	devel/yasm
 .endif
-
 LIB_DEPENDS=	archivers/bzip2 \
 		audio/lame \
 		audio/libvorbis \
@@ -49,9 +46,11 @@ LIB_DEPENDS=	archivers/bzip2 \
 		multimedia/libass \
 		multimedia/libvpx>=1.3.0 \
 		multimedia/x264 \
+		multimedia/x265>=1.5 \
 		multimedia/xvidcore
 
 # inter-library dependencies for the current configuration
+LIBavcodec_EXTRALIBS=-L${LOCALBASE}/lib -lgsm -lmp3lame -lopus -lspeex -lvorbis -lvorbisenc -lvpx -lx264 -lx265 -lxvidcore -lz -pthread
 LIBavdevice_EXTRALIBS=-L${X11BASE}/lib -lX11 -lXext -lXv -lxcb-render -lxcb-shape -lxcb-shm -lxcb-xfixes -lxcb -lsndio
 LIBavfilter_EXTRALIBS=-L${LOCALBASE}/lib -L${X11BASE}/lib -lass -lfontconfig -lfreetype -lfribidi
 LIBavformat_EXTRALIBS=-L${LOCALBASE}/lib -lbz2 -lssl -lcrypto -pthread
@@ -66,18 +65,6 @@ LIBswscale_EXTRALIBS=-lm
 FFMPEG_ARCH=	generic
 .else
 FFMPEG_ARCH=	${MACHINE_ARCH}
-.endif
-
-# x265 only builds on archs with working builtin 32-bit atomics
-.if ${MACHINE_ARCH} == "alpha" || ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "powerpc" || ${MACHINE_ARCH} == "sparc64"
-LIB_DEPENDS+=	multimedia/x265>=1.5
-WANTLIB+=	x265>=2
-CONFIGURE_ARGS+=	--enable-libx265
-CONFIGURE_ENV+=		LIBavcodec_REQUIRES="libavutil libswresample opus speex vpx x264 x265"
-LIBavcodec_EXTRALIBS=-L${LOCALBASE}/lib -lgsm -lmp3lame -lopus -lspeex -lvorbis -lvorbisenc -lvpx -lx264 -lx265 -lxvidcore -lz -pthread
-.else
-CONFIGURE_ENV+=		LIBavcodec_REQUIRES="libavutil libswresample opus speex vpx x264"
-LIBavcodec_EXTRALIBS=-L${LOCALBASE}/lib -lgsm -lmp3lame -lopus -lspeex -lvorbis -lvorbisenc -lvpx -lx264 -lxvidcore -lz -pthread
 .endif
 
 OPTFLAGS=	${CFLAGS}
@@ -98,17 +85,18 @@ CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
 		--disable-iconv \
 		--disable-indev=jack \
 		--disable-indev=oss \
-		--disable-loongson3 \
 		--disable-lzma \
 		--disable-mips32r5 \
 		--disable-mips64r6 \
 		--disable-mipsdspr1 \
 		--disable-mipsdspr2 \
 		--disable-mipsfpu \
+		--disable-mmi \
 		--disable-msa \
 		--disable-neon \
 		--disable-outdev=oss \
 		--disable-outdev=sdl \
+		--disable-vfp \
 		--enable-avresample \
 		--enable-fontconfig \
 		--enable-gpl \
@@ -122,11 +110,10 @@ CONFIGURE_ARGS+= ${CONFIGURE_SHARED} \
 		--enable-libvorbis \
 		--enable-libvpx \
 		--enable-libx264 \
+		--enable-libx265 \
 		--enable-libxvid \
 		--enable-nonfree \
 		--enable-openssl \
-		--enable-pic \
-		--enable-x11grab \
 		--extra-cflags="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		--extra-libs="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
 		--mandir=${PREFIX}/man \
@@ -150,6 +137,7 @@ CONFIGURE_ENV+=	LIBavcodec_EXTRALIBS="${LIBavcodec_EXTRALIBS}" \
 		LIBpostproc_LINKFLAGS="" \
 		LIBswresample_LINKFLAGS="" \
 		LIBswscale_LINKFLAGS="" \
+		LIBavcodec_REQUIRES="libavutil libswresample opus speex vpx x264 x265" \
 		LIBavdevice_REQUIRES="libavcodec libavfilter libavformat libavutil libpostproc libswresample libswscale" \
 		LIBavfilter_REQUIRES="libavcodec libavformat libavresample libavutil libpostproc libswresample libswscale" \
 		LIBavformat_REQUIRES="libavcodec libavutil libswresample" \
