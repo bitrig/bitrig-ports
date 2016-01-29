@@ -9,7 +9,7 @@ GH_PROJECT=	luasocket
 GH_TAGNAME=	v$V
 DISTNAME=	${GH_PROJECT}-$V
 PKGNAME=	${DISTNAME:S/-rc/rc/}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	net
 
 HOMEPAGE=	http://w3.impa.br/~diego/software/luasocket/
