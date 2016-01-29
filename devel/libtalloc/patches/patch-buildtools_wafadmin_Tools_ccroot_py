@@ -6,9 +6,17 @@ $OpenBSD: patch-buildtools_wafadmin_Tools_ccroot_py,v 1.1 2015/07/18 02:13:25 jc
 
 - remove openbsd-specific tests, install fails
 
---- buildtools/wafadmin/Tools/ccroot.py.orig	Tue Mar 10 06:28:31 2015
-+++ buildtools/wafadmin/Tools/ccroot.py	Thu Jul 16 14:29:24 2015
-@@ -183,10 +183,6 @@ def get_target_name(self):
+--- buildtools/wafadmin/Tools/ccroot.py.orig	Tue Mar 10 07:28:31 2015
++++ buildtools/wafadmin/Tools/ccroot.py	Fri Jan 29 10:08:12 2016
+@@ -68,6 +68,7 @@ def get_cc_version(conf, cc, gcc=False, icc=False):
+ 			'__FreeBSD__' : 'freebsd',
+ 			'__NetBSD__'  : 'netbsd',
+ 			'__OpenBSD__' : 'openbsd',
++			'__Bitrig__'  : 'bitrig',
+ 			'__sun'       : 'sunos',
+ 			'__hpux'      : 'hpux',
+ 			'__sgi'       : 'irix',
+@@ -183,10 +184,6 @@ def get_target_name(self):
  			# include the version in the dll file name,
  			# the import lib file name stays unversionned.
  			name = name + '-' + nums[0]
@@ -19,19 +27,19 @@ $OpenBSD: patch-buildtools_wafadmin_Tools_ccroot_py,v 1.1 2015/07/18 02:13:25 jc
  
  	return os.path.join(dir, pattern % name)
  
-@@ -594,7 +590,10 @@ def apply_vnum(self):
+@@ -594,7 +591,10 @@ def apply_vnum(self):
  		name2 = libname + '.' + nums[0]
  
  	if self.env.SONAME_ST:
 -		v = self.env.SONAME_ST % name2
-+		if sys.platform.startswith('openbsd'):
++		if sys.platform.startswith('openbsd') or sys.platform.startswith('bitrig'):
 +			v = self.env.SONAME_ST % name3
 +		else:
 +			v = self.env.SONAME_ST % name2
  		self.env.append_value('LINKFLAGS', v.split())
  
  	bld = self.bld
-@@ -603,17 +602,12 @@ def apply_vnum(self):
+@@ -603,17 +603,12 @@ def apply_vnum(self):
  	path = self.install_path
  	if not path: return
  

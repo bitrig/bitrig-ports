@@ -1,0 +1,14 @@
+--- buildtools/wafsamba/samba_autoconf.py.orig	Fri Jan 29 10:11:32 2016
++++ buildtools/wafsamba/samba_autoconf.py	Fri Jan 29 10:12:24 2016
+@@ -840,9 +840,9 @@ def SETUP_CONFIGURE_CACHE(conf, enable):
+ def SAMBA_CHECK_UNDEFINED_SYMBOL_FLAGS(conf):
+     # we don't want any libraries or modules to rely on runtime
+     # resolution of symbols
+-    if not sys.platform.startswith("openbsd"):
++    if not (sys.platform.startswith("openbsd") or sys.platform.startswith("bitrig")):
+         conf.env.undefined_ldflags = conf.ADD_LDFLAGS('-Wl,-no-undefined', testflags=True)
+ 
+-    if not sys.platform.startswith("openbsd") and conf.env.undefined_ignore_ldflags == []:
++    if not (sys.platform.startswith("openbsd") or sys.platform.startswith("bitrig")) and conf.env.undefined_ignore_ldflags == []:
+         if conf.CHECK_LDFLAGS(['-undefined', 'dynamic_lookup']):
+             conf.env.undefined_ignore_ldflags = ['-undefined', 'dynamic_lookup']
