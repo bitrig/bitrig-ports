@@ -1,13 +1,13 @@
 $OpenBSD: patch-buildtools_wafadmin_Tools_gcc_py,v 1.1 2015/08/25 11:04:39 jca Exp $
 Disable SONAME write on OpenBSD.
---- buildtools/wafadmin/Tools/gcc.py.orig	Sun May  4 00:00:13 2014
-+++ buildtools/wafadmin/Tools/gcc.py	Sun May  4 00:00:15 2014
+--- buildtools/wafadmin/Tools/gcc.py.orig	Fri Jan 29 14:52:31 2016
++++ buildtools/wafadmin/Tools/gcc.py	Fri Jan 29 14:55:54 2016
 @@ -43,7 +43,11 @@ def gcc_common_flags(conf):
  	v['RPATH_ST']            = '-Wl,-rpath,%s'
  	v['CCDEFINES_ST']        = '-D%s'
  
 -	v['SONAME_ST']           = '-Wl,-h,%s'
-+	if sys.platform.startswith('openbsd'):
++	if sys.platform.startswith('openbsd') or sys.platform.startswith('bitrig'):
 +		# OpenBSD relies on version info in file names
 +		v['SONAME_ST']           = ''
 +	else:
