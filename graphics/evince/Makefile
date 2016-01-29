@@ -53,7 +53,7 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		CXXFLAGS="${CXXFLAGS} -I${LOCALBASE}/include"
 
 # modern browsers can already display PDF
-CONFIGURE_ARGS +=	--disable-browser-plugin
+CONFIGURE_ARGS +=	--disable-browser-plugin --enable-compile-warnings=no
 
 FLAVORS=		light
 FLAVOR?=
