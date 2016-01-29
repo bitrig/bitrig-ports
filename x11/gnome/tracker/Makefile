@@ -1,11 +1,12 @@
-# $OpenBSD: Makefile,v 1.193 2015/07/31 18:39:30 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.195 2015/10/06 16:20:53 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
 COMMENT=		powerful desktop search tool and indexer
 
 GNOME_PROJECT=		tracker
-GNOME_VERSION=		1.4.1
+GNOME_VERSION=		1.6.0
+REVISION=		0
 
 # there is already audio/tracker, so this port has to live
 # as meta-tracker
@@ -23,10 +24,10 @@ SUBST_VARS=		TRACKER_API
 
 SHARED_LIBS +=  tracker-common       3.1      # unknown
 SHARED_LIBS +=  tracker-data         3.1      # unknown
-SHARED_LIBS +=  tracker-sparql-1.0   0.0      # 400.0
+SHARED_LIBS +=  tracker-sparql-1.0   1.0      # 600.0
 SHARED_LIBS +=  tracker-extract      0.0      # unknown
-SHARED_LIBS +=  tracker-miner-1.0    0.0      # 400.0
-SHARED_LIBS +=  tracker-control-1.0  0.0      # 400.0
+SHARED_LIBS +=  tracker-miner-1.0    1.0      # 600.0
+SHARED_LIBS +=  tracker-control-1.0  1.0      # 600.0
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
@@ -41,10 +42,9 @@ WANTLIB += gstreamer-1.0 gsttag-1.0 gstvideo-1.0 gthread-2.0 gtk-3 gxps
 WANTLIB += harfbuzz icudata icui18n icuuc iptcdata jpeg kvm lcms2 lzma
 WANTLIB += lzo2 m mediaart-2.0 openjpeg orc-0.4 osinfo-1.0 pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png poppler
-WANTLIB += poppler-glib pthread pthread-stubs soup-2.4 sqlite3
+WANTLIB += poppler-glib pthread pthread-stubs soup-2.4 sqlite3 c++ c++abi
 WANTLIB += tag tag_c tiff totem-plparser upower-glib util uuid xcb
 WANTLIB += xcb-render xcb-shm xml2 xslt z
-WANTLIB += c++ c++abi
 
 MODULES=		devel/dconf \
 			devel/gettext \
@@ -104,6 +104,9 @@ FAKE_FLAGS=		sysconfdir=${PREFIX}/share/examples/meta-tracker/
 pre-configure:
 	sed -i 's,/usr/bin,${LOCALBASE}/bin,' \
 		${WRKSRC}/src/tracker-needle/tracker-utils.vala
+# XXX LDFLAGS are reset in the configure script when checking for:
+# png, gif, jpeg and tiff
+	${SUBST_CMD} ${WRKSRC}/configure
 
 post-install:
 	rm ${PREFIX}/lib/tracker-${TRACKER_API}/extract-modules/*.{a,la}
