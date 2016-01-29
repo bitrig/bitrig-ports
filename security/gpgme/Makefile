@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.33 2015/04/21 18:19:27 sthen Exp $
 
-BROKEN= 		needs work on bitrig
-
 COMMENT=		GnuPG Made Easy
 
 DISTNAME=		gpgme-1.5.1
@@ -21,14 +19,10 @@ WANTLIB += assuan gpg-error pthread
 MASTER_SITES=		${MASTER_SITES_GNUPG:=gpgme/}
 EXTRACT_SUFX=		.tar.bz2
 
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build-aux/
+
 CONFIGURE_STYLE=	gnu
-CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
-			--with-gpg=${LOCALBASE}/bin/gpg \
-			--with-gpgsm=no \
-			--with-gpgconf=no \
-			--with-g13=no \
-			--without-pth \
-			--without-pth-test
+CONFIGURE_ARGS=		${CONFIGURE_SHARED}
 
 MODULES=		devel/gettext
 # Requires gpgsm (gnupg 2.x) during build, but can run with any gnupg.
