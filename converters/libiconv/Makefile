@@ -3,7 +3,7 @@
 COMMENT=	character set conversion library
 
 DISTNAME=	libiconv-1.14
-REVISION=	3
+REVISION=	4
 CATEGORIES=	converters devel
 MASTER_SITES=	${MASTER_SITE_GNU:=libiconv/}
 
@@ -23,7 +23,6 @@ CONFIGURE_ARGS= ${CONFIGURE_SHARED} \
 		--disable-nls \
 		--enable-extra-encodings \
 		--enable-static
-CONFIGURE_ENV=	am_cv_proto_iconv='extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);' \
-		CC='${CC}'
+CONFIGURE_ENV=	CC='${CC}'
 
 .include <bsd.port.mk>
