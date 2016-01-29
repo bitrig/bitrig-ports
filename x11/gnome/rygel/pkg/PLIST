@@ -334,9 +334,9 @@ share/vala/vapi/rygel-renderer-gst-${API_V}.deps
 share/vala/vapi/rygel-renderer-gst-${API_V}.vapi
 share/vala/vapi/rygel-ruih-2.0.deps
 share/vala/vapi/rygel-ruih-2.0.vapi
-share/vala/vapi/rygel-server-${API_V}.deps
-share/vala/vapi/rygel-server-${API_V}.vapi
 @exec %D/bin/update-desktop-database
 @unexec-delete %D/bin/update-desktop-database
 @exec %D/bin/gtk-update-icon-cache -q -t %D/share/icons/hicolor
 @unexec-delete %D/bin/gtk-update-icon-cache -q -t %D/share/icons/hicolor
+share/vala/vapi/rygel-server-${API_V}.deps
+share/vala/vapi/rygel-server-${API_V}.vapi

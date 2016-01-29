@@ -17,7 +17,7 @@ WANTLIB += ${MODPY_WANTLIB}
 WANTLIB += EGL GL ICE SM X11 X11-xcb Xau Xcomposite Xcursor Xdamage
 WANTLIB += Xdmcp Xext Xfixes Xi Xinerama Xrandr Xrender Xt Xxf86vm
 WANTLIB += atk-1.0 atk-bridge-2.0 atspi c cairo cairo-gobject
-WANTLIB += clang crypto dbus-1 devhelp-3 drm enchant epoxy expat
+WANTLIB += crypto dbus-1 devhelp-3 drm enchant epoxy expat
 WANTLIB += ffi fontconfig freetype gbm gcrypt gdk-3 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 girepository-1.0 git2 git2-glib-1.0 gjs glapi
 WANTLIB += glib-2.0 gmodule-2.0 gmp gnutls gobject-2.0 gpg-error
@@ -38,18 +38,12 @@ MODULES=		devel/dconf \
 			lang/python \
 			x11/gnome
 
-# sync with devel/spidermonkey
-MODULES +=		gcc4
-MODGCC4_ARCHS=		*
-MODGCC4_LANGS=		c c++
-
 MODPY_VERSION=		${MODPY_DEFAULT_VERSION_3}
 
 MODGNOME_TOOLS=		desktop-file-utils gobject-introspection \
 			gtk-update-icon-cache
 
 LIB_DEPENDS=		devel/libgit2/libgit2-glib \
-			devel/llvm \
 			x11/gnome/devhelp \
 			x11/gnome/gjs \
 			x11/gtksourceview3
