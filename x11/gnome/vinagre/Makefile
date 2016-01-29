@@ -37,4 +37,6 @@ LIB_DEPENDS=		devel/vte3 \
 MODGNOME_TOOLS=		desktop-file-utils gtk-update-icon-cache \
 			shared-mime-info yelp
 
+CONFIGURE_ARGS=		--enable-compile-warnings=no
+
 .include <bsd.port.mk>
