@@ -27,5 +27,5 @@ LIB_DEPENDS=		archivers/libarchive \
 			graphics/lcms2
 
 CONFIGURE_STYLE=	gnu
-
+CONFIGURE_ARGS=		--enable-compile-warnings=no
 .include <bsd.port.mk>
