@@ -17,8 +17,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=	c m pthread
 WANTLIB+=	c++ c++abi
 
-MODULES=	lang/clang
-
 MODCLANG_ARCHS=	amd64 i386
 MODCLANG_LANGS=	c c++
 
