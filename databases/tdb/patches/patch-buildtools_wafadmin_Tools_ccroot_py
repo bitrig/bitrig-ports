@@ -2,14 +2,22 @@ $OpenBSD: patch-buildtools_wafadmin_Tools_ccroot_py,v 1.1 2015/07/18 02:11:13 jc
 
 - at build time, encode the full library name + version in the SONAME
 
---- buildtools/wafadmin/Tools/ccroot.py.orig	Sun Jan 27 04:51:43 2013
-+++ buildtools/wafadmin/Tools/ccroot.py	Thu Jul 16 12:55:30 2015
-@@ -588,7 +588,10 @@ def apply_vnum(self):
+--- buildtools/wafadmin/Tools/ccroot.py.orig	Sun Jan 27 05:51:43 2013
++++ buildtools/wafadmin/Tools/ccroot.py	Fri Jan 29 08:43:05 2016
+@@ -68,6 +68,7 @@ def get_cc_version(conf, cc, gcc=False, icc=False):
+ 			'__FreeBSD__' : 'freebsd',
+ 			'__NetBSD__'  : 'netbsd',
+ 			'__OpenBSD__' : 'openbsd',
++			'__Bitrig__'  : 'bitrig',
+ 			'__sun'       : 'sunos',
+ 			'__hpux'      : 'hpux',
+ 			'__sgi'       : 'irix',
+@@ -588,7 +589,10 @@ def apply_vnum(self):
  		name2 = libname + '.' + nums[0]
  
  	if self.env.SONAME_ST:
 -		v = self.env.SONAME_ST % name2
-+		if sys.platform.startswith('openbsd'):
++		if sys.platform.startswith('openbsd') or sys.platform.startswith('bitrig'):
 +			v = self.env.SONAME_ST % name3
 +		else:
 +			v = self.env.SONAME_ST % name2
