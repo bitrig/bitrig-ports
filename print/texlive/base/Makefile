@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.79 2015/05/28 15:01:28 edd Exp $
+# $OpenBSD: Makefile,v 1.80 2015/09/25 12:13:46 dcoppa Exp $
 
 COMMENT =		base binaries for TeXLive typesetting distribution
 
 DISTNAME =		texlive-${DIST_V}-source
 PKGNAME =		texlive_base-${V}
-REVISION =		0
+REVISION =		1
 
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} \
 			texlive-${DIST_V}-extra${EXTRACT_SUFX}
@@ -16,9 +16,8 @@ WANTLIB += ICE SM X11 Xau Xaw Xdmcp Xext Xi Xmu Xpm Xrender Xt
 WANTLIB += c cairo expat fontconfig freetype gd glib-2.0 graphite2
 WANTLIB += harfbuzz harfbuzz-icu icudata icui18n icuio icuuc intl
 WANTLIB += jpeg lcms2 m openjpeg paper pcre pixman-1 png poppler
-WANTLIB += pthread pthread-stubs tiff vpx xcb xcb-render
+WANTLIB += pthread pthread-stubs c++ c++abi tiff vpx xcb xcb-render
 WANTLIB += xcb-shm z zzip
-WANTLIB += c++ c++abi
 
 RUN_DEPENDS =		print/ghostscript/gnu \
 			print/detex \
@@ -26,7 +25,7 @@ RUN_DEPENDS =		print/ghostscript/gnu \
 			print/ps2eps \
 			print/psutils \
 			print/t1utils \
-			texlive_texmf-buildset-${V}:print/texlive/texmf,-buildset
+			texlive_texmf-buildset-${V}p0:print/texlive/texmf,-buildset
 
 LIB_DEPENDS =		graphics/png \
 			graphics/gd \
@@ -38,22 +37,13 @@ LIB_DEPENDS =		graphics/png \
 			print/libpaper \
 			archivers/zziplib
 
-# Needs the header, but does not actually link with the lib
-BUILD_DEPENDS +=	devel/harfbuzz,-icu
-
-MODULES =		textproc/intltool converters/libiconv
-
-# clang crashes on textlive
-MODULES +=		gcc4 lang/clang
-MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		c c++
-
 MODULES =		textproc/intltool converters/libiconv perl
 
 # Never set SEPARATE_BUILD
 CONFIGURE_STYLE =	gnu
+
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build-aux
-MODGNU_CONFIG_GUESS_DIRS+= ${WRKSRC}/libs/icu/icu-51.1/source
+MODGNU_CONFIG_GUESS_DIRS+= ${WRKSRC}/libs/icu/icu-53.1/source
 
 CPPFLAGS =	-I${X11BASE}/include \
 		-I${LOCALBASE}/include \
@@ -64,8 +54,6 @@ LDFLAGS =	-L${LOCALBASE}/lib \
 
 CONFIGURE_ENV +=	TL_MAKE=${GMAKE} \
 			CPPFLAGS="${CPPFLAGS}" \
-			CC="gcc" \
-			CXX="g++" \
 			LDFLAGS="${LDFLAGS}"
 
 # Can't build in same dir
@@ -113,7 +101,7 @@ CONFIGURE_ARGS +=	--mandir=${PREFIX}/man \
 			--with-old-mac-fonts \
 			--disable-multiplatform \
 			--disable-native-texlive-build \
-			--with-banner-add="-Bitrig_Ports" \
+			--with-banner-add="-OpenBSD_Ports" \
 			--disable-luajittex \
 			--with-system-xpdf \
 			--with-system-icu \
