@@ -76,6 +76,7 @@
      SUBDIR += libcdio
      SUBDIR += libcue
      SUBDIR += libdca
+     SUBDIR += libdiscid
      SUBDIR += libgpod
      SUBDIR += libid3tag
      SUBDIR += liblastfm
