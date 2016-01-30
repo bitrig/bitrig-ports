@@ -5,10 +5,9 @@ ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64
 
 PKG_ARCH =	*
 
-FV =		38.2.0
+FV =		38.3.0
 V =		${FV:C/b.$//}
 NAME =		thunderbird-i18n
-REVISION =	0
 
 CATEGORIES =	mail
 
