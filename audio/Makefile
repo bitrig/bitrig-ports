@@ -252,7 +252,6 @@
      SUBDIR += vorbis-tools
      SUBDIR += vorbisgain
      SUBDIR += wavpack
-     SUBDIR += wmmixer
      SUBDIR += wmmp
      SUBDIR += wmmp3
      SUBDIR += wmtune
