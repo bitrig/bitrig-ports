@@ -5,10 +5,9 @@ ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64
 
 PKG_ARCH =	*
 
-FV =		40.0.3
+FV =		41.0.1
 V =		${FV:C/b.$//}
 NAME =		firefox-i18n
-REVISION =	0
 
 CATEGORIES =	www
 
