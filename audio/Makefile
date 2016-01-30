@@ -38,7 +38,6 @@
      SUBDIR += easytag
      SUBDIR += espeak
      SUBDIR += exaile
-     SUBDIR += faac
      SUBDIR += faad
      SUBDIR += fdk-aac
      SUBDIR += festival
