@@ -1,12 +1,12 @@
-# $OpenBSD: Makefile,v 1.31 2015/03/15 10:02:57 jasper Exp $
+# $OpenBSD: Makefile,v 1.33 2015/09/27 06:56:45 ajacoutot Exp $
 
 COMMENT=		callback framework for C++
 
-GNOME_VERSION=		2.4.1
+GNOME_VERSION=		2.6.1
 GNOME_PROJECT=		libsigc++
 CATEGORIES=		devel
 
-SHARED_LIBS +=  sigc-2.0             3.0      # 0.0
+SHARED_LIBS +=  sigc-2.0             4.0      # 0.0
 
 API_V=			2.0
 SUBST_VARS=		API_V
@@ -17,12 +17,10 @@ HOMEPAGE=		http://libsigc.sourceforge.net/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += m
-WANTLIB += c++ c++abi pthread
 
 MODULES=		x11/gnome
 
 CONFIGURE_STYLE=	gnu
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build
 CONFIGURE_ENV=		M4='m4 -g'
 
 .include <bsd.port.mk>

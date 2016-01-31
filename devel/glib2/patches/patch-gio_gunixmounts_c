@@ -1,13 +1,13 @@
-$OpenBSD: patch-gio_gunixmounts_c,v 1.16 2015/03/27 16:00:00 ajacoutot Exp $
+$OpenBSD: patch-gio_gunixmounts_c,v 1.18 2015/09/24 10:24:37 ajacoutot Exp $
 
 XXX REVERT (makes gio-kqueue hang)
 From 548c165a9f8386af29e8bb8243d8923e0f315c2e Mon Sep 17 00:00:00 2001
 From: Ryan Lortie <desrt@desrt.ca>
 Date: Thu, 8 Jan 2015 01:35:33 -0500
-Subject: Make GUnixMountMonitor per-context
+Subject: Make GUnixMountMonitor per-contex
 
---- gio/gunixmounts.c.orig	Fri Mar 20 18:33:38 2015
-+++ gio/gunixmounts.c	Fri Mar 27 11:59:28 2015
+--- gio/gunixmounts.c.orig	Thu Sep 24 12:09:58 2015
++++ gio/gunixmounts.c	Thu Sep 24 12:11:08 2015
 @@ -68,7 +68,6 @@
  #include "gfilemonitor.h"
  #include "glibintl.h"
@@ -86,7 +86,7 @@ Subject: Make GUnixMountMonitor per-context
 +   * Emitted when the unix mounts have changed.
 +   */ 
 +  signals[MOUNTS_CHANGED] =
-+    g_signal_new ("mounts-changed",
++    g_signal_new (I_("mounts-changed"),
 +		  G_TYPE_FROM_CLASS (klass),
 +		  G_SIGNAL_RUN_LAST,
 +		  0,
@@ -101,7 +101,7 @@ Subject: Make GUnixMountMonitor per-context
 +   * Emitted when the unix mount points have changed.
 +   */
 +  signals[MOUNTPOINTS_CHANGED] =
-+    g_signal_new ("mountpoints-changed",
++    g_signal_new (I_("mountpoints-changed"),
 +		  G_TYPE_FROM_CLASS (klass),
 +		  G_SIGNAL_RUN_LAST,
 +		  0,
@@ -329,7 +329,7 @@ Subject: Make GUnixMountMonitor per-context
 -   * Emitted when the unix mounts have changed.
 -   */ 
 -  signals[MOUNTS_CHANGED] =
--    g_signal_new ("mounts-changed",
+-    g_signal_new (I_("mounts-changed"),
 -		  G_TYPE_FROM_CLASS (klass),
 -		  G_SIGNAL_RUN_LAST,
 -		  0,
@@ -344,7 +344,7 @@ Subject: Make GUnixMountMonitor per-context
 -   * Emitted when the unix mount points have changed.
 -   */
 -  signals[MOUNTPOINTS_CHANGED] =
--    g_signal_new ("mountpoints-changed",
+-    g_signal_new (I_("mountpoints-changed"),
 -		  G_TYPE_FROM_CLASS (klass),
 -		  G_SIGNAL_RUN_LAST,
 -		  0,
