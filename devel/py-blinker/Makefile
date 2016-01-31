@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.4 2015/04/02 14:21:14 jasper Exp $
+# $OpenBSD: Makefile,v 1.7 2015/09/29 10:51:44 sthen Exp $
 
 COMMENT =	fast, simple object-to-object and broadcast signaling
 
-MODPY_EGG_VERSION = 1.3
+MODPY_EGG_VERSION = 1.4
+REVISION =	1
 DISTNAME =	blinker-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
-REVISION =	0
 
 CATEGORIES =	devel
 
@@ -18,13 +18,19 @@ MODPY_PI =	Yes
 
 MODULES =	lang/python
 
-TEST_DEPENDS =	devel/py-nose
+MODPY_SETUPTOOLS =	Yes
+
+TEST_DEPENDS =	devel/py-nose${MODPY_FLAVOR}
+
+FLAVORS =	python3
+FLAVOR ?=
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/py-blinker
-	cd ${WRKSRC}/docs/html && pax -rw * ${PREFIX}/share/doc/py-blinker
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/${MODPY_PY_PREFIX}blinker
+	cd ${WRKSRC}/docs/html && \
+	    pax -rw * ${PREFIX}/share/doc/${MODPY_PY_PREFIX}blinker
 
 do-test:
-	cd ${WRKSRC} && nosetests tests
+	cd ${WRKSRC} && nosetests${MODPY_BIN_SUFFIX} tests
 
 .include <bsd.port.mk>
