@@ -1,7 +1,7 @@
 #! /usr/bin/perl
 
 # ex:ts=8 sw=4:
-# $OpenBSD: Quirks.pm,v 1.286 2015/08/28 14:48:05 jeremy Exp $
+# $OpenBSD: Quirks.pm,v 1.311 2015/10/08 08:03:25 jasper Exp $
 #
 # Copyright (c) 2009 Marc Espie <espie@openbsd.org>
 #
@@ -357,8 +357,6 @@ my $stem_extensions = {
 	'mysql-client' => 'mariadb-client',
 	'mysql-server' => 'mariadb-server',
 	'mysql-tests' => 'mariadb-tests',
-
-# Bitrig 0.1
 	'py3-distribute' => 'py3-setuptools',
 	'symon-mon' => 'symon',
 	'symon-mux' => 'symux',
@@ -379,6 +377,10 @@ my $stem_extensions = {
 	'mirall' => 'owncloudclient',
 # 5.9
 	'consolekit' => 'consolekit2',
+	'tint' => 'tint2',
+	'py-nmap' => 'py3-nmap',
+	'pudb' => 'py-pudb',
+	'openexr-ctl' => 'ctl',
 };
 
 # reasons for obsolete packages
@@ -471,6 +473,7 @@ my $obsolete_reason = {
 	'raggle' => 3,
 	'gnome-icon-theme-extras' => 3,
 	'ruby-fastthread' => 3,
+	'dellflash' => 0,
 	'libgee06' => 3,
 	'smarty' => 2,
 	'smarty-docs' => 2,
@@ -508,7 +511,6 @@ my $obsolete_reason = {
 	'erl-webmachine' => 0,
 	'commons-io' => 2,
 	'qt4-qtsolutions-singleinstance' => 3,
-	'hs-cgi' => 5,
 	'hs-HsParrot' => 5,
 	'hs-HsSyck' => 5,
 	'hs-MetaObject' => 5,
@@ -607,6 +609,49 @@ my $obsolete_reason = {
 	'wide-dhcp' => 0,
 	'cfs' => 0,
 	'rubinius' => 5,
+	'xorp' => 5,
+	'faac' => 6,
+	'god' => 5,
+	'ivan' => 3,
+	'hs-xhtml-combinators' => 5,
+	'feldspar-compiler' => 5,
+	'feldspar-language' => 5,
+	'hs-MonadCatchIO-mtl' => 5,
+	'hs-MonadCatchIO-transformers' => 5,
+	'hs-QuickAnnotate' => 5,
+	'hs-clientsession' => 5,
+	'hs-comonad' => 5,
+	'hs-comonad-transformers' => 5,
+	'hs-comonads-fd' => 5,
+	'hs-contravariant' => 5,
+	'hs-cprng-aes' => 5,
+	'hs-data-lens' => 5,
+	'hs-data-lens-template' => 5,
+	'hs-distributive' => 5,
+	'hs-either' => 5,
+	'hs-errors' => 5,
+	'hs-ghc-mtl' => 5,
+	'hs-hint' => 5,
+	'hs-iteratee' => 5,
+	'hs-lens' => 5,
+	'hs-monads-tf' => 5,
+	'hs-semigroupoids' => 5,
+	'hs-syntactic' => 5,
+	'hs-type-level' => 5,
+	'hs-vector-algorithms' => 5,
+	'hs-ListLike' => 5,
+	'hs-atom' => 5,
+	'gstreamermm' => 3,
+	'opencm' => 3,
+	'libglademm' => 3,
+	'hs-zlib-enum' => 5,
+	'hs-blaze-builder-enumerator' => 5,
+	'hs-monad-par' => 5,
+	'hs-monad-par-extras' => 5,
+	'swfdec-plugin' => 3,
+	'yui' => 2,
+	'yui-docs' => 2,
+	'tkrat' => 3,
 };
 
 # ->is_base_system($handle, $state):
