@@ -17,6 +17,11 @@ MASTER_SITES =		${HOMEPAGE}/files/
 SEPARATE_BUILD =	Yes
 CONFIGURE_STYLE =	gnu
 
+MODULES +=		gcc4
+MODGCC4_LANGS =		c c++
+MODCLANG_ARCHS =	amd64 i386
+CONFIGURE_ENV =		CXX=eg++ CC=egcc
+
 FAKE_FLAGS =		docdir=${PREFIX}/share/doc/sparsehash
 
 .include <bsd.port.mk>
