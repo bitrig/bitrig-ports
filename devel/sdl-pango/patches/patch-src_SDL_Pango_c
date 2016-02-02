@@ -1,6 +1,6 @@
---- src/SDL_Pango.c.orig	Tue Apr 22 15:28:25 2014
-+++ src/SDL_Pango.c	Tue Apr 22 15:29:50 2014
-@@ -330,6 +330,11 @@ SDLPango_WasInit()
+--- src/SDL_Pango.c.orig	Tue Feb  2 14:31:54 2016
++++ src/SDL_Pango.c	Tue Feb  2 14:32:09 2016
+@@ -330,6 +330,12 @@ SDLPango_WasInit()
      @param *rect [in] Draw on this area
      @param baseline [in] Horizontal location of glyphs
  */
@@ -9,6 +9,7 @@
 +    SDL_Surface *surface,
 +    const SDLPango_Matrix *matrix,
 +    SDL_Rect *rect);
++
  static void
  drawGlyphString(
      SDLPango_Context *context,
