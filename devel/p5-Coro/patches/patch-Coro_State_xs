@@ -1,0 +1,11 @@
+--- Coro/State.xs.orig	Tue Feb  2 09:51:47 2016
++++ Coro/State.xs	Tue Feb  2 09:52:05 2016
+@@ -286,7 +286,7 @@ static struct coro *coro_first;
+ 
+ #if CORO_JIT
+   /* APPLE doesn't have mmap though */
+-  #define CORO_JIT_UNIXY (__linux || __FreeBSD__ || __OpenBSD__ || __NetBSD__ || __solaris || __APPLE__)
++  #define CORO_JIT_UNIXY (__linux || __FreeBSD__ || __OpenBSD__ || __Bitrig__ || __NetBSD__ || __solaris || __APPLE__)
+   #ifndef CORO_JIT_TYPE
+     #if ECB_AMD64 && CORO_JIT_UNIXY
+       #define CORO_JIT_TYPE "amd64-unix"

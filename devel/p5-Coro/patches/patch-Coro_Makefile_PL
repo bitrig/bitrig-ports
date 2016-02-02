@@ -1,0 +1,11 @@
+--- Coro/Makefile.PL.orig	Tue Feb  2 09:49:45 2016
++++ Coro/Makefile.PL	Tue Feb  2 09:50:17 2016
+@@ -100,7 +100,7 @@ EOF
+       $iface = $iface_asm || "s";
+    }
+ 
+-} elsif ($^O =~ /(openbsd|mirbsd)/) {
++} elsif ($^O =~ /(openbsd|mirbsd|bitrig)/) {
+    # mirbsd seems to be bug-to-bug compatible openbsd fork,
+    # with the name change being the biggest difference.
+    if (!$pthread) {

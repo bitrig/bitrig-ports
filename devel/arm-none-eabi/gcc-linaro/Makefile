@@ -10,7 +10,7 @@ PKGNAME=	${CONFIG}-gcc-linaro-${VERSION}
 
 SUBST_VARS+=	VERSION
 
-WANTLIB=	c m gmp mpfr mpc
+WANTLIB=	c m gmp mpfr mpc c++ c++abi
 DIST_SUBDIR=	gcc
 
 MAKE_GXX=	No
@@ -34,7 +34,6 @@ LIB_DEPENDS=	devel/mpfr devel/libmpc
 RUN_DEPENDS=	devel/arm-none-eabi/binutils
 
 LANGS=		c,c++
-CC=		/usr/bin/gcc
 CFLAGS=		-O2 -g
 
 CONFIGURE_ARGS+=--enable-languages=${LANGS}	\
