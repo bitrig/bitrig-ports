@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.4 2015/08/27 13:42:09 jca Exp $
 
-BROKEN = 		needs work on bitrig
-
 COMMENT =		reverse engineers disassembler and debugger
 
 DISTNAME =		radare2-${V}

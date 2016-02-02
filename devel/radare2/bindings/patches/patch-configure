@@ -1,7 +1,30 @@
 $OpenBSD$
---- configure.orig	Wed Nov 13 16:21:15 2013
-+++ configure	Wed Nov 13 16:21:44 2013
-@@ -375,8 +375,11 @@ else
+--- configure.orig	Mon Oct 24 13:46:22 2011
++++ configure	Tue Feb  2 13:52:36 2016
+@@ -286,22 +286,6 @@ echo "ERROR: ${CC} cannot create executables" >&2 ;
+ exit 1 ; fi
+ COMPILER=CXX
+ HAVE_LANG_CXX=1
+-printf "checking for c++ compiler... "
+-if [ "${CROSSBUILD}" = 1 ]; then
+-(command -v ${HOST}-${CXX} 2>&1 >/dev/null)
+-if [ "$?" = 0 ]; then CXX="${HOST}-${CXX}"; fi
+-fi
+-echo "#include <iostream>" > test.cxx
+-echo "main(){ std::cout << 1; }" >> test.cxx
+-(exec ${CXX} ${CXXFLAGS} ${LDFLAGS} test.cxx -lstdc++ >/dev/null 2>&1)
+-if [ $? = 0 ]; then echo ${CXX}; else
+-HAVE_LANG_CXX=0
+-echo no
+-
+-echo "ERROR: ${CXX} cannot create executables" >&2 ;
+-do_remove
+-exit 1
+- fi
+ printf "checking for valabind... "
+ if [ -x "${VALABIND}" ]; then
+ FIND=${VALABIND}
+@@ -375,8 +359,11 @@ else
  if [ "$HOST_OS" = "openbsd" ]; then
  USEROSTYPE="gnulinux"
  else

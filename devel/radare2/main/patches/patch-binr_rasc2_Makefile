@@ -1,0 +1,11 @@
+--- binr/rasc2/Makefile.orig	Tue Feb  2 13:46:13 2016
++++ binr/rasc2/Makefile	Tue Feb  2 13:46:20 2016
+@@ -7,7 +7,7 @@ preall: shellcodes.c
+ 	${MAKE} all
+ 
+ xorhex:
+-	gcc xorhex.c -o xorhex
++	${CC} xorhex.c -o xorhex
+ 
+ shellcodes.c: xorhex
+ 	./xorhex < shellcodes.c.src > shellcodes.c

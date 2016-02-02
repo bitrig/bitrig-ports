@@ -1,0 +1,11 @@
+--- libr/db/sdb/src/Makefile.orig	Tue Feb  2 13:44:00 2016
++++ libr/db/sdb/src/Makefile	Tue Feb  2 13:44:08 2016
+@@ -46,7 +46,7 @@ syms:
+ main.c:
+ 
+ ${BIN}: libsdb.a main.c
+-	gcc -DVERSION=\"${VERSION}\" -o ${BIN} *.c
++	${CC} -DVERSION=\"${VERSION}\" -o ${BIN} *.c
+ 	#${CC} ${CFLAGS} -o ${BIN} *.c
+ 
+ wcl:

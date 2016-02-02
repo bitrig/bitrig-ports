@@ -18,7 +18,4 @@ NO_BUILD =		Yes
 # Only install vala bindings for now. Maybe more in the future.
 INSTALL_TARGET =	install-vapi
 
-CC =	gcc
-CXX =	c++
-
 .include <bsd.port.mk>
