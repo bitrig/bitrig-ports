@@ -1,0 +1,11 @@
+--- ext/ruby_prof/extconf.rb.orig	Tue Feb  2 14:04:09 2016
++++ ext/ruby_prof/extconf.rb	Tue Feb  2 14:04:25 2016
+@@ -33,7 +33,7 @@ def add_define(name, value = nil)
+   end
+ end
+ 
+-if !Gem.win_platform? && RUBY_PLATFORM !~ /(darwin|openbsd)/
++if !Gem.win_platform? && RUBY_PLATFORM !~ /(darwin|openbsd|bitrig)/
+   $LDFLAGS += " -lrt" # for clock_gettime
+ end
+ add_define("RUBY_VERSION", RUBY_VERSION.gsub('.', ''))
