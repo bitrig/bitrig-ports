@@ -1,7 +1,7 @@
 $OpenBSD$
---- config/gnu/config.guess.orig	Sat Aug 25 15:20:50 CEST 2012
-+++ config/gnu/config.guess	Sat Aug 25 15:20:50 CEST 2012
-@@ -206,6 +206,10 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
+--- config/gnu/config.guess.orig	Thu Jul 18 11:07:25 2013
++++ config/gnu/config.guess	Tue Feb  2 16:23:41 2016
+@@ -223,6 +223,10 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
  	UNAME_MACHINE_ARCH=`arch | sed 's/OpenBSD.//'`
  	echo ${UNAME_MACHINE_ARCH}-unknown-openbsd${UNAME_RELEASE}
  	exit ;;

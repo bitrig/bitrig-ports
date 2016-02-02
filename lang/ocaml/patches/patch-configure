@@ -1,7 +1,34 @@
 $OpenBSD: patch-configure,v 1.19 2014/10/25 11:55:54 chrisz Exp $
---- configure.orig	Fri Oct  3 21:25:46 2014
-+++ configure	Sat Oct 18 12:19:58 2014
-@@ -822,6 +822,8 @@ case "$target" in
+--- configure.orig	Tue May 12 09:46:37 2015
++++ configure	Tue Feb  2 16:31:53 2016
+@@ -688,7 +688,7 @@ if test $with_sharedlibs = "yes"; then
+       mksharedlib="$flexlink"
+       mkmaindll="$flexlink -maindll"
+       shared_libraries_supported=true;;
+-    *-*-linux-gnu|*-*-linux|*-*-freebsd[3-9]*|*-*-freebsd[1-9][0-9]*|*-*-openbsd*|*-*-netbsd*|*-*-gnu*|*-*-haiku*)
++    *-*-linux-gnu|*-*-linux|*-*-freebsd[3-9]*|*-*-freebsd[1-9][0-9]*|*-*-openbsd*|*-*-bitrig*|*-*-netbsd*|*-*-gnu*|*-*-haiku*)
+       sharedcccompopts="-fPIC"
+       mksharedlib="$bytecc -shared"
+       bytecclinkopts="$bytecclinkopts -Wl,-E"
+@@ -757,7 +757,7 @@ if test $with_sharedlibs = "yes"; then
+       shared_libraries_supported=false;;
+     vax-*-openbsd*)
+       shared_libraries_supported=false;;
+-    *-*-openbsd*)
++    *-*-openbsd*|*-*-bitrig*)
+       sharedcccompopts="-fPIC"
+       mksharedlib="$bytecc -shared"
+       bytecclinkopts="$bytecclinkopts -Wl,-E"
+@@ -796,7 +796,7 @@ if test $with_sharedlibs = "yes"; then
+     i[3456]86-*-freebsd*)         natdynlink=true;;
+     x86_64-*-freebsd*)            natdynlink=true;;
+     i[3456]86-*-openbsd*)         natdynlink=true;;
+-    x86_64-*-openbsd*)            natdynlink=true;;
++    x86_64-*-openbsd*|x86_64-*-bitrig*)            natdynlink=true;;
+     i[3456]86-*-netbsd*)          natdynlink=true;;
+     x86_64-*-netbsd*)             natdynlink=true;;
+     i386-*-gnu0.3)                natdynlink=true;;
+@@ -851,6 +851,8 @@ case "$target" in
                                  if $arch64;then model=ppc64;else model=ppc;fi;;
    armv6*-*-linux-gnueabihf)     arch=arm; model=armv6; system=linux_eabihf;;
    arm*-*-linux-gnueabihf)       arch=arm; system=linux_eabihf;;
@@ -10,7 +37,34 @@ $OpenBSD: patch-configure,v 1.19 2014/10/25 11:55:54 chrisz Exp $
    armv7*-*-linux-gnueabi)       arch=arm; model=armv7; system=linux_eabi;;
    armv6t2*-*-linux-gnueabi)     arch=arm; model=armv6t2; system=linux_eabi;;
    armv6*-*-linux-gnueabi)       arch=arm; model=armv6; system=linux_eabi;;
-@@ -1602,11 +1604,11 @@ echo "X11_LINK=$x11_link" >> Makefile
+@@ -864,7 +866,7 @@ case "$target" in
+   x86_64-*-gnu*)                arch=amd64; system=gnu;;
+   x86_64-*-freebsd*)            arch=amd64; system=freebsd;;
+   x86_64-*-netbsd*)             arch=amd64; system=netbsd;;
+-  x86_64-*-openbsd*)            arch=amd64; system=openbsd;;
++  x86_64-*-openbsd*|x86_64-*-bitrig*)            arch=amd64; system=openbsd;;
+   x86_64-*-darwin*)             arch=amd64; system=macosx;;
+   x86_64-*-mingw*)              arch=amd64; system=mingw;;
+   aarch64-*-linux*)             arch=arm64; system=linux;;
+@@ -1417,7 +1419,7 @@ if test "$pthread_wanted" = "yes"; then
+                    pthread_caml_link="-cclib -lpthread -cclib -lposix4";;
+     *-*-freebsd*)  pthread_link="-pthread"
+                    pthread_caml_link="-cclib -pthread";;
+-    *-*-openbsd*)  pthread_link="-pthread"
++    *-*-openbsd*|*-*-bitrig*)  pthread_link="-pthread"
+                    pthread_caml_link="-cclib -pthread";;
+     *-*-haiku*)    pthread_link=""
+                    pthread_caml_link="";;
+@@ -1434,7 +1436,7 @@ if test "$pthread_wanted" = "yes"; then
+       *-*-freebsd*)
+           bytecccompopts="$bytecccompopts -D_THREAD_SAFE"
+           nativecccompopts="$nativecccompopts -D_THREAD_SAFE";;
+-      *-*-openbsd*)
++      *-*-openbsd*|*-*-bitrig*)
+           bytecccompopts="$bytecccompopts -pthread"
+           asppflags="$asppflags -pthread"
+           nativecccompopts="$nativecccompopts -pthread";;
+@@ -1643,11 +1645,11 @@ echo "X11_LINK=$x11_link" >> Makefile
  
  # Look for BFD library
  

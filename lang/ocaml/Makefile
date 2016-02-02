@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.69 2015/08/30 15:38:32 avsm Exp $
 
-BROKEN=		needs work on bitrig
-
 NOT_FOR_ARCHS=	hppa
 
 MULTI_PACKAGES = -graphics -main
@@ -29,20 +27,18 @@ DISTFILES=	${DISTNAME}.tar.gz ${DOCFILES}
 DISTNAME =	ocaml-${VERSION}
 
 HOMEPAGE=	https://www.ocaml.org/
+MAINTAINER=	Anil Madhavapeddy <avsm@openbsd.org>
 
 # QPL/LGPL
 PERMIT_PACKAGE_CDROM=	Yes
 
 CONFIGURE_STYLE=	simple dest
 CONFIGURE_ARGS+=-prefix ${PREFIX} 
-CONFIGURE_ARGS+=-cc '${CC} ${CFLAGS}'
-CONFIGURE_ARGS+=-aspp '${CC} -c'
+CONFIGURE_ARGS+=-cc '${CC} ${CFLAGS}' -aspp '${CC} -c'
 CONFIGURE_ARGS+=-x11include ${X11BASE}/include -x11lib ${X11BASE}/lib
 CONFIGURE_ENV+=OPENBSD_LOCALBASE="${LOCALBASE}"
 
 USE_GMAKE=	Yes
-MAKE_FLAGS=	CC="${CC}" AS="${CC}"
-
 
 BUILD_DEPENDS +=	devel/gdb
 RUN_DEPENDS-graphics +=	lang/ocaml
