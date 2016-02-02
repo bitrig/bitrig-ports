@@ -9,7 +9,7 @@ CFLAGS +=	-O1 -fno-stack-protector
 
 COMMENT =	portable build system
 
-VER =		3.3.1
+VER =		3.3.2
 DISTNAME =	cmake-${VER}
 CATEGORIES =	devel
 
