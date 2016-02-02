@@ -13,9 +13,6 @@
 @bin bin/savr
 @bin bin/sdcc
 @bin bin/sdcclib
-@bin bin/sdcdb
-bin/sdcdb.el
-bin/sdcdbsrc.el
 @bin bin/sdcpp
 @bin bin/shc08
 @bin bin/sz80

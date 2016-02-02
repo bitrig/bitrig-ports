@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.11 2013/09/05 06:21:53 landry Exp $
 
-BROKEN= 	needs work on bitrig
-
 COMMENT=	Small Device C Compiler
 BROKEN-sparc64=	illegal operands building SDCCval.c
 BROKEN-alpha=	sdcc segfaults when building the device library
@@ -14,10 +12,11 @@ REVISION=	3
 
 HOMEPAGE=	http://sdcc.sourceforge.net/
 
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/sim/ucsim
+
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c m readline termcap
-WANTLIB+=		c++ c++abi pthread
+WANTLIB=		c m c++ c++abi readline termcap
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sdcc/}
 

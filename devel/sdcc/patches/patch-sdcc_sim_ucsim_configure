@@ -1,6 +1,42 @@
 $OpenBSD: patch-sdcc_sim_ucsim_configure,v 1.2 2007/06/06 17:23:09 jasper Exp $
---- sim/ucsim/configure.orig	Sun Jan 21 10:09:01 2007
-+++ sim/ucsim/configure	Wed Jun  6 19:13:16 2007
+--- sim/ucsim/configure.orig	Thu Jun 28 04:06:31 2007
++++ sim/ucsim/configure	Tue Feb  2 14:12:32 2016
+@@ -4314,7 +4314,7 @@ newos6*)
+   lt_cv_file_magic_test_file=/usr/lib/libnls.so
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   lt_cv_file_magic_cmd=/usr/bin/file
+   lt_cv_file_magic_test_file=`echo /usr/lib/libc.so.*`
+   if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -5875,7 +5875,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd*|bitrig*)
+     old_postinstall_cmds="\$RANLIB -t \$oldlib~$old_postinstall_cmds"
+     ;;
+   *)
+@@ -6520,7 +6520,7 @@ cygwin* | mingw* | pw32*)
+     with_gnu_ld=no
+   fi
+   ;;
+-openbsd*)
++openbsd*|bitrig*)
+   with_gnu_ld=no
+   ;;
+ esac
+@@ -6949,7 +6949,7 @@ else
+     hardcode_shlibpath_var=no
+     ;;
+ 
+-  openbsd*)
++  openbsd*|bitrig*)
+     hardcode_direct=yes
+     hardcode_shlibpath_var=no
+     if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
 @@ -7316,11 +7316,11 @@ cygwin* | mingw* | pw32*)
    yes,cygwin*)
      library_names_spec='$libname.dll.a'
@@ -15,3 +51,12 @@ $OpenBSD: patch-sdcc_sim_ucsim_configure,v 1.2 2007/06/06 17:23:09 jasper Exp $
        dlpath=$dir/\$dldll~
         $rm \$dlpath'
      ;;
+@@ -7491,7 +7491,7 @@ newsos6)
+   shlibpath_overrides_runpath=yes
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   version_type=sunos
+   need_lib_prefix=no
+   need_version=no
