@@ -7,7 +7,6 @@ ${P5ARCH}/Coro/BDB.pm
 ${P5ARCH}/Coro/Channel.pm
 ${P5ARCH}/Coro/CoroAPI.h
 ${P5ARCH}/Coro/Debug.pm
-${P5ARCH}/Coro/EV.pm
 ${P5ARCH}/Coro/Event.pm
 ${P5ARCH}/Coro/Handle.pm
 ${P5ARCH}/Coro/Intro.pod
@@ -24,11 +23,9 @@ ${P5ARCH}/Coro/State.pm
 ${P5ARCH}/Coro/Storable.pm
 ${P5ARCH}/Coro/Timer.pm
 ${P5ARCH}/Coro/Util.pm
-${P5ARCH}/Coro/jit-amd64-unix.pl
+${P5ARCH}/Coro/jit-${MACHINE_ARCH}-unix.pl
 ${P5ARCH}/Coro/jit-x86-unix.pl
 ${P5ARCH}/auto/Coro/
-${P5ARCH}/auto/Coro/EV/
-${P5ARCH}/auto/Coro/EV/EV.so
 ${P5ARCH}/auto/Coro/Event/
 ${P5ARCH}/auto/Coro/Event/Event.so
 ${P5ARCH}/auto/Coro/State/
@@ -39,7 +36,6 @@ ${P5ARCH}/auto/Coro/State/State.so
 @man man/man3p/Coro::BDB.3p
 @man man/man3p/Coro::Channel.3p
 @man man/man3p/Coro::Debug.3p
-@man man/man3p/Coro::EV.3p
 @man man/man3p/Coro::Event.3p
 @man man/man3p/Coro::Handle.3p
 @man man/man3p/Coro::Intro.3p
