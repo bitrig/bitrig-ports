@@ -1,0 +1,11 @@
+--- CGRuntime.cpp.orig	Tue Feb  2 16:25:40 2016
++++ CGRuntime.cpp	Tue Feb  2 16:25:54 2016
+@@ -107,7 +107,7 @@ extern "C" char **environ;
+ #ifndef CODEWORKER_GNU_READLINE
+ 		tcsetattr(0, TCSANOW, &initial_settings);
+ #endif
+-		_exit(EXIT_FAILURE);
++		_exit(1);
+ 	}
+ 
+ 	void initKeyboard() {
