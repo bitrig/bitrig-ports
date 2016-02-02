@@ -1,6 +1,6 @@
 # $OpenBSD: Makefile,v 1.6 2015/01/21 06:13:48 bentley Exp $
 
-BROKEN= 	needs work on bitrig
+BROKEN=		needs work on bitrig
 
 COMMENT=	decision procedure for bit-vectors and arrays
 
@@ -16,8 +16,7 @@ HOMEPAGE=	https://sites.google.com/site/stpfastprover/STP-Fast-Prover
 # MIT license
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m
-WANTLIB+=	c++ c++abi pthread
+WANTLIB=	c m c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=stp-fast-prover/}
 EXTRACT_SUFX=	.tgz
