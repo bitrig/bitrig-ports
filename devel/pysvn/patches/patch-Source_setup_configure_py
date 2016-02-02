@@ -7,8 +7,8 @@ $OpenBSD: patch-Source_setup_configure_py,v 1.2 2013/10/10 09:56:33 stsp Exp $
 
 2) Add missing OpenBSD-specific bits.
 
---- Source/setup_configure.py.orig	Sun Aug 18 14:11:41 2013
-+++ Source/setup_configure.py	Wed Oct  9 16:02:28 2013
+--- Source/setup_configure.py.orig	Sun Aug 18 07:11:41 2013
++++ Source/setup_configure.py	Tue Feb  2 13:19:38 2016
 @@ -182,6 +182,9 @@ class Setup:
              elif sys.platform.startswith('freebsd'):
                  self.platform = 'freebsd'
@@ -30,6 +30,28 @@ $OpenBSD: patch-Source_setup_configure_py,v 1.2 2013/10/10 09:56:33 stsp Exp $
          elif self.platform == 'cygwin':
              self.c_utils = CygwinCompilerGCC( self )
              self.c_pysvn = CygwinCompilerGCC( self )
+@@ -836,8 +843,8 @@ class CompilerGCC(Compiler):
+     def __init__( self, setup ):
+         Compiler.__init__( self, setup )
+ 
+-        self._addVar( 'CCC',            'g++' )
+-        self._addVar( 'CC',             'gcc' )
++        self._addVar( 'CCC',            'clang++' )
++        self._addVar( 'CC',             'clang' )
+ 
+     def getPythonExtensionFileExt( self ):
+         return '.so'
+@@ -957,8 +964,8 @@ class MacOsxCompilerGCC(CompilerGCC):
+         else:
+             arch_options = ''
+ 
+-        self._addVar( 'CCC',            'g++ %s' % (arch_options,) )
+-        self._addVar( 'CC',             'gcc %s' % (arch_options,) )
++        self._addVar( 'CCC',            'clang++ %s' % (arch_options,) )
++        self._addVar( 'CC',             'clangg %s' % (arch_options,) )
+ 
+         self._find_paths_pycxx_dir = [
+                         '../Import/pycxx-%d.%d.%d' % pycxx_version,
 @@ -1129,7 +1136,7 @@ class UnixCompilerGCC(CompilerGCC):
          if self.setup.platform == 'cygwin':
              return '%s.dll.a' % libname
