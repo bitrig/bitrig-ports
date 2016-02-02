@@ -1,0 +1,11 @@
+--- Makefile.PL.orig	Fri Jul 17 12:52:54 2015
++++ Makefile.PL	Tue Feb  2 10:35:13 2016
+@@ -202,7 +202,7 @@ require 'Glib.exports';
+ # libglib/libgobject then go and try to load libpthread.so, the loader will
+ # error out.
+ my @openbsd_compat_flags = ();
+-if ($^O eq 'openbsd' && $Config::Config{ldflags} !~ m/-pthread\b/) {
++if (($^O eq 'openbsd' || $^O eq 'bitrig') && $Config::Config{ldflags} !~ m/-pthread\b/) {
+   warn " ***\n *** on OpenBSD, we either need perl linked with '-pthread',\n",
+        " ***   or we need to set LD_PRELOAD=libpthread.so; doing the latter now...\n ***\n";
+   @openbsd_compat_flags = (
