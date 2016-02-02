@@ -1,0 +1,12 @@
+--- FileList/config.guess.orig	Tue Feb  2 10:19:19 2016
++++ FileList/config.guess	Tue Feb  2 10:19:58 2016
+@@ -233,6 +233,9 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE
+     wgrisc:OpenBSD:*:*)
+ 	echo mipsel-unknown-openbsd${UNAME_RELEASE}
+ 	exit 0 ;;
++    *:Bitrig:*:*)
++	echo ${UNAME_MACHINE}-unknown-bitrig${UNAME_RELEASE}
++	exit 0 ;;
+     *:OpenBSD:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-openbsd${UNAME_RELEASE}
+ 	exit 0 ;;

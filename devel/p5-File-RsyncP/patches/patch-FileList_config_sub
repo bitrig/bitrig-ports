@@ -1,0 +1,11 @@
+--- FileList/config.sub.orig	Tue Feb  2 10:19:11 2016
++++ FileList/config.sub	Tue Feb  2 10:20:26 2016
+@@ -1131,7 +1131,7 @@ case $os in
+ 	      | -aos* \
+ 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
+ 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
+-	      | -hiux* | -386bsd* | -netbsd* | -openbsd* | -kfreebsd* | -freebsd* | -riscix* \
++	      | -hiux* | -386bsd* | -netbsd* | -openbsd* | -bitrig* | -kfreebsd* | -freebsd* | -riscix* \
+ 	      | -lynxos* | -bosx* | -nextstep* | -cxux* | -aout* | -elf* | -oabi* \
+ 	      | -ptx* | -coff* | -ecoff* | -winnt* | -domain* | -vsta* \
+ 	      | -udi* | -eabi* | -lites* | -ieee* | -go32* | -aux* \

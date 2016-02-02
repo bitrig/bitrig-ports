@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.5 2015/07/16 23:57:22 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
-
 COMMENT =	perl implementation of an Rsync client
 SHARED_ONLY =	Yes
 
