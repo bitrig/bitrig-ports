@@ -1,6 +1,6 @@
 # $OpenBSD: Makefile,v 1.32 2015/05/22 15:16:24 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
+BROKEN=		needs work on bitrig
 
 SHARED_ONLY=	Yes
 
@@ -26,6 +26,8 @@ WANTLIB += sndio ssl
 WANTLIB += c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=opalvoip/}
+
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/make
 
 BUILD_DEPENDS=	devel/bison
 
