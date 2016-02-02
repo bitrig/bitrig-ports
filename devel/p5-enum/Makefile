@@ -2,7 +2,8 @@
 COMMENT=	C style enumerated types and bitmask flags
 
 MODULES=	cpan
-DISTNAME=	enum-1.10
+DISTNAME=	enum-1.016
+REVISION=	0
 CATEGORIES=	devel
 
 # perl
