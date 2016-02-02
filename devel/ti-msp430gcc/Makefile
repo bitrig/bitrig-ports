@@ -1,6 +1,8 @@
-# $OpenBSD: Makefile,v 1.3 2015/08/02 12:57:12 jasper Exp $
+# $OpenBSD: Makefile,v 1.5 2015/09/25 10:16:13 ajacoutot Exp $
 
-COMMENT =		TI's open source compiler for MSP430 microcontrollers
+BROKEN =		needs work on bitrig
+
+COMMENT =		TI's open source compiler for MSP430 microcontrollers#'
 
 V =			3_03_04_00
 REVISION =		1
@@ -18,12 +20,12 @@ DIST_SUBDIR =		ti-msp430gcc-$V
 DISTFILES =		msp430-gcc-source.tar.bz2 \
 			msp430-gcc-support-files.zip
 
-WANTLIB += c gmp m mpc mpfr z
-WANTLIB += c++ c++abi
+WANTLIB += c gmp m mpc mpfr c++ c++abi z
 
 BUILD_DEPENDS =		archivers/bzip2 \
 			archivers/unzip \
 			devel/autogen
+BUILD_DEPENDS +=	sysutils/coreutils # autoconf picks up gmkdir
 LIB_DEPENDS =		devel/libmpc
 
 CONFIGURE_STYLE =	gnu
