@@ -1,13 +1,13 @@
-# $OpenBSD: Makefile,v 1.26 2015/03/29 11:52:38 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.27 2015/09/24 10:31:26 ajacoutot Exp $
 
 COMMENT =		C++ interface for pango
 
 GNOME_PROJECT =		pangomm
-GNOME_VERSION =		2.36.0
+GNOME_VERSION =		2.38.1
 
 CATEGORIES =		devel x11
 
-SHARED_LIBS +=  pangomm-1.4          10.1     # 1.30
+SHARED_LIBS +=  pangomm-1.4          10.2     # 1.30
 
 HOMEPAGE =		http://www.gtkmm.org/
 
@@ -19,7 +19,6 @@ WANTLIB += freetype glib-2.0 glibmm-2.4 gmodule-2.0 gobject-2.0
 WANTLIB += graphite2 gthread-2.0 harfbuzz m pango-1.0 pangocairo-1.0
 WANTLIB += pangoft2-1.0 pcre pixman-1 png pthread pthread-stubs
 WANTLIB += sigc-2.0 xcb xcb-render xcb-shm z
-WANTLIB += c++ c++abi
 
 MODULES =		devel/gettext \
 			x11/gnome
@@ -30,6 +29,5 @@ LIB_DEPENDS =		devel/glib2mm \
 
 CONFIGURE_STYLE=	gnu
 MODGNOME_CPPFLAGS=	-I${X11BASE}/include
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/build
 
 .include <bsd.port.mk>
