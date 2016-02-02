@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.23 2013/03/11 10:50:24 espie Exp $
 
-BROKEN= 	needs work on bitrig
-
 COMMENT=	Purdue Compiler Construction Tool Set
 
 DISTNAME=	pccts133mr33
@@ -17,7 +15,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=		c
 
 MAKE_FILE=	makefile
-MAKE_FLAGS=	CC="${CC}" COPT="${CFLAGS}"
+MAKE_FLAGS=	CC="${CC}" COPT="${CFLAGS} -DPCCTS_USE_STDARG"
 
 ALL_TARGET=
 
