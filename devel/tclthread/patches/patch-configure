@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.1 2015/05/22 04:21:42 stu Exp $
---- configure.orig	Fri May 15 20:01:31 2015
-+++ configure	Fri May 15 20:01:43 2015
+--- configure.orig	Fri Mar  6 12:38:33 2015
++++ configure	Tue Feb  2 15:27:01 2016
 @@ -265,7 +265,7 @@ SHELL=${CONFIG_SHELL-/bin/sh}
  : ${ac_max_here_lines=38}
  
@@ -10,3 +10,21 @@ $OpenBSD: patch-configure,v 1.1 2015/05/22 04:21:42 stu Exp $
  PACKAGE_TARNAME='thread'
  PACKAGE_VERSION='2.7.2'
  PACKAGE_STRING='thread 2.7.2'
+@@ -9287,7 +9287,7 @@ fi
+ fi
+ 
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-* | Bitrig-*)
+ 	    arch=`arch -s`
+ 	    case "$arch" in
+ 	    vax)
+@@ -10237,7 +10237,7 @@ fi
+ 	    BSD/OS*) ;;
+ 	    CYGWIN_*|MINGW32_*) ;;
+ 	    IRIX*) ;;
+-	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
+ 	    Darwin-*) ;;
+ 	    SCO_SV-3.2*) ;;
+ 	    windows) ;;

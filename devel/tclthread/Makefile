@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.4 2015/05/22 04:21:42 stu Exp $
 
-BROKEN = 	needs work on bitrig
-
 COMMENT =	thread extension for Tcl
 
 V =		2.7.2
@@ -29,6 +27,8 @@ SEPARATE_BUILD =	Yes
 USE_GROFF =		Yes
 CONFIGURE_STYLE =	gnu
 
+#SHLIB_LD=		"${CC} -shared"
+#CONFIGURE_ENV=		SHLIB_LD="${CC} -shared"
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
 			--with-tcl=${MODTCL_LIBDIR} \
 			SHLIB_VERSION=${LIBtclthread${V:S/.//g}_VERSION}
