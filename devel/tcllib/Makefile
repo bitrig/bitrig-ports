@@ -5,7 +5,7 @@ COMMENT =	Tcl Standard Library
 DISTNAME =	tcllib-1.17pl0
 CATEGORIES =	devel lang/tcl
 HOMEPAGE =	http://sourceforge.net/projects/tcllib/
-REVISION =	2
+REVISION =	3
 
 # BSD style
 PERMIT_PACKAGE_CDROM =	Yes
@@ -36,7 +36,7 @@ do-install:
 
 # Define TEST_MODULES to restrict to a subset of regression tests.
 do-test:
-	${SETENV} ${MAKE_ENV} ${TEST_FLAGS} \
+	${SETENV} ${ALL_TEST_ENV} ${ALL_TEST_FLAGS} \
 	${MODTCL_BIN} ${WRKSRC}/sak.tcl test run -v ${TEST_MODULES}
 
 .include <bsd.port.mk>

@@ -55,10 +55,10 @@ Generate tcllib.n.
 -	    file mkdir [file dirname  $adst]
 -	    catch {file delete -force $adst}
 -	    file copy -force $aexe    $adst
-+       if {![file exists $config(app,path)]} {
-+           log "Making directory $config(app,path)"
-+           run file mkdir $config(app,path)
-+           file attributes $config(app,path) -permissions 0o755
++	if {![file exists $config(app,path)]} {
++	    log "Making directory $config(app,path)"
++	    run file mkdir $config(app,path)
++	    file attributes $config(app,path) -permissions 0o755
  	}
 +	_exafile $aexe $adst
 +	if {[file exists $aexe.man]} {
@@ -75,11 +75,12 @@ Generate tcllib.n.
  
      if {!$config(no-exclude)} {
  	foreach p $excluded {
-@@ -230,26 +243,28 @@ proc doinstall {} {
+@@ -230,26 +243,29 @@ proc doinstall {} {
  	}
      }
  
 +    array set pkgs [exec [info nameofexecutable] [file join $distribution sak.tcl] provided]
++
      if {$config(doc,nroff)} {
  	set config(man.macros) [string trim [get_input \
  		[file join $distribution support installation man.macros]]]
@@ -107,7 +108,7 @@ Generate tcllib.n.
      log ""
      return
  }
-@@ -511,6 +526,10 @@ proc processargs {} {
+@@ -511,6 +527,10 @@ proc processargs {} {
  		set config(exa,path) [lindex $argv 1]
  		set argv             [lrange $argv 1 end]
  	    }
@@ -118,7 +119,7 @@ Generate tcllib.n.
  	    -help   -
  	    default {
  		puts stderr "usage: $argv0 ?-dry-run/-simulate? ?-no-wait? ?-no-gui? ?-html|-no-html? ?-nroff|-no-nroff? ?-examples|-no-examples? ?-pkgs|-no-pkgs? ?-pkg-path path? ?-apps|-no-apps? ?-app-path path? ?-nroff-path path? ?-html-path path? ?-example-path path?"
-@@ -566,6 +585,39 @@ proc wait {} {
+@@ -566,6 +586,40 @@ proc wait {} {
  	exit 0
      }
      return
@@ -147,6 +148,7 @@ Generate tcllib.n.
 +	append mp $s [string map {\\& "" [ [lb] ] [rb] N& N s& s} " [lindex $mi 2] - [lindex $mi 3]"]
 +    }
 +    append mp {[list_end]}
++
 +    append mp {[manpage_end]}
 +
 +    set fn [file join $config(doc,nroff,path) $package_name.n]
