@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.6 2015/05/22 11:31:14 ajacoutot Exp $
 
-BROKEN=		issue with ld.so
-
 COMMENT=	cross-platform multimedia library
 
 V=		2.0.2

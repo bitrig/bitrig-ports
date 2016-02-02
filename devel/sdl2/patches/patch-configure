@@ -1,7 +1,88 @@
 $OpenBSD$
---- configure.orig	Sat Dec 14 15:04:21 2013
-+++ configure	Sat Dec 14 15:06:13 2013
-@@ -17381,7 +17381,7 @@ fi
+--- configure.orig	Fri Mar  7 22:36:51 2014
++++ configure	Tue Feb  2 14:39:39 2016
+@@ -4308,7 +4308,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -4822,7 +4822,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -5436,7 +5436,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd*|bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
+@@ -8539,7 +8539,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd*|bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -9415,7 +9415,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd*|bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -10460,7 +10460,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -13362,7 +13362,7 @@ fi
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd*|bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -15135,7 +15135,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd*|bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -15965,7 +15965,7 @@ fi
+ $as_echo_n "checking for linker option --no-undefined... " >&6; }
+ have_no_undefined=no
+ case "$host" in
+-        *-*-openbsd*)
++        *-*-openbsd*|*-*-bitrig*)
+         ;;
+ 
+     *)
+@@ -17439,7 +17439,7 @@ fi
      if test x$enable_oss = xmaybe; then
          enable_oss=yes
          case "$host" in
@@ -10,7 +91,7 @@ $OpenBSD$
                  enable_oss=no;;
          esac
      fi
-@@ -17450,7 +17450,7 @@ $as_echo "#define SDL_AUDIO_DRIVER_OSS 1" >>confdefs.h
+@@ -17509,7 +17509,7 @@ $as_echo "#define SDL_AUDIO_DRIVER_OSS 1" >>confdefs.h
  
              # We may need to link with ossaudio emulation library
              case "$host" in
@@ -19,7 +100,7 @@ $OpenBSD$
                      EXTRA_LDFLAGS="$EXTRA_LDFLAGS -lossaudio";;
              esac
          fi
-@@ -19345,7 +19345,7 @@ fi
+@@ -19687,7 +19687,7 @@ fi
                      xss_lib='/usr/X11R6/lib/libXss.1.dylib'
                      xvidmode_lib='/usr/X11R6/lib/libXxf86vm.1.dylib'
                      ;;
@@ -28,7 +109,7 @@ $OpenBSD$
                      x11_lib='libX11.so'
                      x11ext_lib='libXext.so'
                      xcursor_lib='libXcursor.so'
-@@ -20975,7 +20975,7 @@ fi
+@@ -21424,7 +21424,7 @@ fi
              pthread_cflags="-D_REENTRANT -D_THREAD_SAFE"
              pthread_lib="-lpthread"
              ;;
@@ -37,7 +118,7 @@ $OpenBSD$
              pthread_cflags="-D_REENTRANT"
              pthread_lib="-pthread"
              ;;
-@@ -22069,7 +22069,7 @@ fi
+@@ -22525,7 +22525,7 @@ fi
  }
  
  case "$host" in
@@ -46,7 +127,7 @@ $OpenBSD$
          case "$host" in
              *-raspberry-linux*)
                  # Raspberry Pi
-@@ -22097,6 +22097,7 @@ case "$host" in
+@@ -22552,6 +22552,7 @@ case "$host" in
              *-*-dragonfly*)     ARCH=freebsd ;;
              *-*-netbsd*)        ARCH=netbsd ;;
              *-*-openbsd*)       ARCH=openbsd ;;
