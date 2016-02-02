@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.9 2015/04/02 14:21:15 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2015/09/29 10:52:11 sthen Exp $
 
 COMMENT =	help visualize profiling data collected with the cProfile
 
-MODPY_EGG_VERSION = 1.1.0
+MODPY_EGG_VERSION = 1.3.2
 DISTNAME =	pyprof2calltree-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
-REVISION =	3
+REVISION =	0
 
 CATEGORIES =	devel
 
@@ -19,8 +19,6 @@ MODPY_PI =	Yes
 MODULES =	lang/python
 
 MODPY_SETUPTOOLS = Yes
-
-NO_TEST =	Yes
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/py-pyprof2calltree

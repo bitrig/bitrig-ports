@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.31 2015/07/07 22:29:14 bcallah Exp $
 
-BROKEN= 	needs work on bitrig
-
 SHARED_ONLY=	Yes
 
 COMMENT=	set of Python modules designed for writing games
@@ -30,6 +28,7 @@ LIB_DEPENDS=	devel/sdl-ttf \
 		devel/sdl-mixer
 
 
+CFLAGS=		-no-integrated-as
 MAKE_ENV+=	LOCALBASE="${LOCALBASE}" \
 		SDL_CONFIG="${LOCALBASE}/bin/sdl-config"
 
@@ -44,6 +43,7 @@ TEST_IS_INTERACTIVE=	x11
 post-extract:
 	find ${WRKSRC} -type d | xargs chmod 755
 	find ${WRKSRC} -type f | xargs chmod 644
+
 
 do-configure:
 	${SUBST_CMD} ${WRKSRC}/Setup.in

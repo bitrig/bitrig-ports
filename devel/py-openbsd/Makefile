@@ -1,14 +1,16 @@
-# $OpenBSD: Makefile,v 1.17 2015/04/21 18:33:48 sthen Exp $
+# $OpenBSD: Makefile,v 1.20 2015/10/05 16:29:02 sthen Exp $
 
 COMMENT=	specific Python bindings for OpenBSD
 
 V=		0.1.2
 DISTNAME=	pyopenbsd-${V}
 PKGNAME=	py-openbsd-${V}
-REVISION=	14
+REVISION=	17
 CATEGORIES=	devel
 
 HOMEPAGE=	http://dev.nullcube.com/
+
+MAINTAINER=	Aldo Cortesi <aldo@nullcube.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
