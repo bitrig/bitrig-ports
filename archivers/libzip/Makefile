@@ -18,6 +18,4 @@ MASTER_SITES=		${HOMEPAGE}
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	${CONFIGURE_SHARED}
 
-TEST_DEPENDS=		archivers/unzip
-
 .include <bsd.port.mk>
