@@ -2,6 +2,7 @@
 
 SUBDIR =
 SUBDIR += 5.4
+SUBDIR += 5.4,ap2
 SUBDIR += 5.5
 SUBDIR += 5.5,ap2
 SUBDIR += 5.6

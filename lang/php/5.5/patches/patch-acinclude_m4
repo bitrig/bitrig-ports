@@ -1,17 +1,7 @@
 $OpenBSD: patch-acinclude_m4,v 1.1.1.1 2013/08/07 16:46:56 robert Exp $
---- acinclude.m4.orig.port	Wed Jun 25 09:06:23 2014
-+++ acinclude.m4	Fri Aug 29 21:31:05 2014
-@@ -762,7 +762,8 @@ AC_DEFUN([PHP_REQUIRE_CXX],[
-   if test -z "$php_cxx_done"; then
-     AC_PROG_CXX
-     AC_PROG_CXXCPP
--    PHP_ADD_LIBRARY(stdc++)
-+    PHP_ADD_LIBRARY(c++)
-+    PHP_ADD_LIBRARY(c++abi)
-     php_cxx_done=yes
-   fi
- ])
-@@ -984,15 +985,9 @@ dnl ---------------------------------------------- Sha
+--- acinclude.m4.orig.port	Sun Jul 28 10:54:23 2013
++++ acinclude.m4	Sun Jul 28 10:55:00 2013
+@@ -984,15 +984,9 @@ dnl ---------------------------------------------- Sha
    if test "$3" != "shared" && test "$3" != "yes" && test "$4" = "cli"; then
  dnl ---------------------------------------------- CLI static module
      [PHP_]translit($1,a-z_-,A-Z__)[_SHARED]=no
@@ -29,7 +19,7 @@ $OpenBSD: patch-acinclude_m4,v 1.1.1.1 2013/08/07 16:46:56 robert Exp $
      EXT_CLI_STATIC="$EXT_CLI_STATIC $1"
    fi
    PHP_ADD_BUILD_DIR($ext_builddir)
-@@ -1042,12 +1037,6 @@ You either need to build $1 shared or build $2 statica
+@@ -1042,12 +1036,6 @@ You either need to build $1 shared or build $2 statica
  build to be successful.
  ])
    fi
@@ -42,7 +32,7 @@ $OpenBSD: patch-acinclude_m4,v 1.1.1.1 2013/08/07 16:46:56 robert Exp $
    dnl Some systems require that we link $2 to $1 when building
  ])
  
-@@ -2320,9 +2309,9 @@ AC_DEFUN([PHP_SETUP_OPENSSL],[
+@@ -2320,9 +2308,9 @@ AC_DEFUN([PHP_SETUP_OPENSSL],[
    test -z "$PHP_IMAP_SSL" && PHP_IMAP_SSL=no
  
    dnl Fallbacks for different configure options

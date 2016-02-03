@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.65 2015/07/30 09:46:18 robert Exp $
+# $OpenBSD: Makefile.inc,v 1.66 2015/09/18 09:18:22 sthen Exp $
 
 # This port currently only works with archs supporting dynamic loading
 # and has Apache that supports DSO's.
@@ -64,7 +64,6 @@ CONFIGURE_ARGS+=	--enable-shared \
 			--with-config-file-scan-dir=${SYSCONFDIR}/php-${PV} \
 			--with-pdo-sqlite \
 			--enable-sqlite-utf8 \
-			--with-apxs2=${LOCALBASE}/sbin/apxs2 \
 			--with-sqlite3 \
 			--program-suffix=-${PV}
 
@@ -73,7 +72,14 @@ CONFIGURE_ARGS+=	--enable-shared \
 CONFIGURE_ARGS +=	--with-readline
 .endif
 
+.if ${FLAVOR:Map2}
+CONFIGURE_ARGS+=	--with-apxs2=${LOCALBASE}/sbin/apxs2
 BUILD_DEPENDS=		www/apache-httpd
+.else
+# doesn't use apache-module.port.mk so MODAPACHE_APXS not available
+CONFIGURE_ARGS+=	--with-apxs=${LOCALBASE}/sbin/apxs
+BUILD_DEPENDS=		www/apache-httpd-openbsd
+.endif
 
 # default included extensions
 CONFIGURE_ARGS+= 	--with-openssl \
@@ -314,8 +320,9 @@ LIB_DEPENDS-zip=
 WANTLIB-zip=		z pthread
 
 # some variables to substitute
-SUBST_VARS=	MODPHP_CONFIG_PATH PV ^MODULE_NAME
+SUBST_VARS=	MODPHP_CONFIG_PATH SV PV ^MODULE_NAME
 PHP_VERSION=	${V}
+SV=		${PV:S/.//}
 
 .for i in TRUEPREFIX MODULES_DIR PHP_VERSION APACHE_MODULE_DIR
 PHPXS_SUBST+= -e 's,${i},${${i}},'
@@ -329,7 +336,7 @@ WANTLIB-main+=		c crypto lzma m pthread ssl xml2>=8 z ${MODGETTEXT_WANTLIB}
 WANTLIB-main+=		ncurses readline c++ c++abi
 .endif
 
-# php 5.4/5.5 : WANTLIB-main += c++ c++abi
+# php 5.4/5.5 : WANTLIB-main += stdc++
 WANTLIB-fastcgi=	${WANTLIB-main}
 LIB_DEPENDS-main=	devel/readline textproc/libxml
 RUN_DEPENDS-main=	${MODGETTEXT_RUN_DEPENDS} \
