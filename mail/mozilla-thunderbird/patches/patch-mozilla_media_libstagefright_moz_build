@@ -1,0 +1,17 @@
+--- mozilla/media/libstagefright/moz.build.orig	Wed Feb  3 14:21:19 2016
++++ mozilla/media/libstagefright/moz.build	Wed Feb  3 14:21:54 2016
+@@ -23,11 +23,13 @@ elif CONFIG['OS_TARGET'] == 'Darwin':
+     DEFINES['HAVE_SYS_UIO_H'] = True
+     DEFINES['off64_t'] = 'off_t'
+     LOCAL_INCLUDES += [ 'ports/darwin/include' ]
+-elif CONFIG['OS_TARGET'] in ('DragonFly', 'FreeBSD', 'OpenBSD', 'NetBSD',
++elif CONFIG['OS_TARGET'] in ('DragonFly', 'FreeBSD', 'OpenBSD', 'Bitrig', 'NetBSD',
+         'GNU/kFreeBSD'):
+     if CONFIG['OS_TARGET'] != 'NetBSD':
+         DEFINES['ENODATA'] = '-0x80000003'
+     if CONFIG['OS_TARGET'] == 'OpenBSD':
++        DEFINES['EBADMSG'] = '-0x80000006'
++    if CONFIG['OS_TARGET'] == 'Bitrig':
+         DEFINES['EBADMSG'] = '-0x80000006'
+     DEFINES['HAVE_SYS_UIO_H'] = True
+     if CONFIG['OS_TARGET'] != 'GNU/kFreeBSD':

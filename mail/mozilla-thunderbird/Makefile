@@ -56,7 +56,7 @@ MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build/autoconf \
 				${WRKSRC}/mozilla/modules/freetype2/builds/unix \
 				${WRKSRC}/mozilla/nsprpub/build/autoconf \
 				${WRKSRC}/mozilla/toolkit/crashreporter/google-breakpad/autotools \
-				${WRKSRC}/mozilla/toolkit/crashreporter/google-breakpad/src/third_party/glog
+				${WRKSRC}/mozilla/toolkit/crashreporter/google-breakpad/src/third_party/glog \
 
 CONFIGURE_STYLE =	autoconf no-autoheader
 
@@ -72,7 +72,7 @@ CONFIGURE_ARGS +=	--enable-calendar
 CONFIGURE_ARGS +=	--disable-webrtc
 
 CONFIGURE_ARGS +=	--enable-gstreamer=1.0
-BUILD_DEPENDS +=	multimedia/gstreamer1/plugins-base
+BUILD_DEPENDS +=	multimedia/gstreamer1/plugins-base audio/pulseaudio
 
 # to be able to link when building with clang on i386
 .if ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "powerpc"

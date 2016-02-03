@@ -1,0 +1,11 @@
+--- mozilla/build/autoconf/icu.m4.orig	Wed Feb  3 13:46:05 2016
++++ mozilla/build/autoconf/icu.m4	Wed Feb  3 13:46:12 2016
+@@ -95,7 +95,7 @@ if test -n "$USE_ICU"; then
+                     MOZ_ICU_DBG_SUFFIX=d
+                 fi
+                 ;;
+-            Darwin|Linux|DragonFly|FreeBSD|NetBSD|OpenBSD|GNU/kFreeBSD)
++            Darwin|Linux|DragonFly|FreeBSD|NetBSD|OpenBSD|Bitrig|GNU/kFreeBSD)
+                 ICU_LIB_NAMES="icui18n icuuc icudata"
+                 ;;
+             *)
