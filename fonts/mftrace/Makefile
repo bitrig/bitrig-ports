@@ -4,9 +4,11 @@ COMMENT=	Scalable PostScript fonts for MetaFont
 
 CATEGORIES=	fonts print
 DISTNAME=	mftrace-1.2.15
-REVISION =	4
+REVISION =	3
 
 HOMEPAGE=	http://lilypond.org/mftrace/
+
+MAINTAINER=	Matt Jibson <dolmant@gmail.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

@@ -4,7 +4,7 @@ COMMENT=		free UCS outline fonts
 
 V=			20100919
 DISTNAME=		freefont-ttf-$V
-REVISION=		2
+REVISION=		1
 CATEGORIES=		fonts x11
 
 HOMEPAGE=		http://savannah.gnu.org/projects/freefont/

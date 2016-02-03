@@ -4,7 +4,8 @@ COMMENT = 	monospace bitmap font for programming and terminal use
 PKG_ARCH =	*
 DISTNAME =	gohufont-2.0
 CATEGORIES =	fonts x11
-REVISION =	2
+MAINTAINER =	Tobias Ulmer <tobiasu@tmux.org>
+REVISION =	1
 
 HOMEPAGE =	http://font.gohu.eu
 MASTER_SITES =	${HOMEPAGE}/

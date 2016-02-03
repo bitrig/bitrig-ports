@@ -7,7 +7,7 @@ DIST_SUBDIR=	ja-fonts
 
 DISTNAME=		ja-fonts-funet
 PKGNAME=		${DISTNAME}-19911117
-REVISION=		2
+REVISION=		1
 
 MASTER_SITES=	ftp://ftp.funet.fi/pub/culture/japan/fonts/bdf/
 
@@ -24,6 +24,8 @@ OTHER=Imakefile
 DISTFILES=${FONTS} ${ALIASES} ${OTHER}
 
 EXTRACT_ONLY=
+
+MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	No fee
 PERMIT_PACKAGE_FTP=	Yes

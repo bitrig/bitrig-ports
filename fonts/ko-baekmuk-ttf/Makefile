@@ -4,11 +4,13 @@ COMMENT=	Baekmuk Korean truetype fonts
 
 DISTNAME=	baekmuk-ttf-2.2
 PKGNAME=	ko-${DISTNAME}
-REVISION=	4
+REVISION=	3
 
 CATEGORIES=	fonts korean x11
 
 HOMEPAGE=	http://kldp.net/projects/baekmuk
+
+MAINTAINER=	Jung Lee <moorang@gmail.com>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	yes

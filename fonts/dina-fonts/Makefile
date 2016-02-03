@@ -1,4 +1,6 @@
-# $OpenBSD: Makefile,v 1.5 2015/03/31 09:45:09 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2015/09/25 12:50:07 sthen Exp $
+
+PKG_ARCH =	*
 
 COMMENT =	monospace bitmap font, primarily aimed at programmers
 
@@ -7,6 +9,8 @@ CATEGORIES =	fonts
 REVISION =	1
 
 HOMEPAGE =	http://www.donationcoder.com/Software/Jibz/Dina/
+
+MAINTAINER =	Rafael Sadowski <rafael@sizeofvoid.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM = Yes

@@ -13,11 +13,13 @@ PKGNAME-se=	${NAME}-se-${V}
 CATEGORIES=	fonts x11
 USE_X11 =	Yes
 
-REVISION-main=	7
-REVISION-de=	5
-REVISION-se=	5
+REVISION-main=	6
+REVISION-de=	4
+REVISION-se=	4
 
 HOMEPAGE=	http://artwizaleczapka.sourceforge.net/
+
+MAINTAINER=	Patrick Keshishian <pkeshish@gmail.com>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes

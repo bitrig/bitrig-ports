@@ -1,4 +1,6 @@
-# $OpenBSD: Makefile,v 1.3 2015/03/31 09:45:09 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.4 2015/09/25 12:50:07 sthen Exp $
+
+PKG_ARCH =		*
 
 COMMENT =		replacement for Comic Sans font
 
@@ -8,6 +10,8 @@ REVISION =		2
 CATEGORIES =		fonts
 
 HOMEPAGE =		http://comicneue.com/
+
+MAINTAINER =		Tristan Le Guern <tleguern@bouledef.eu>
 
 # CC0 (public domain)
 # http://creativecommons.org/publicdomain/zero/1.0/

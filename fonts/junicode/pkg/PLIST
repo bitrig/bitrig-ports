@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v 1.1.1.1 2015/08/28 17:51:18 jca Exp $
 share/doc/junicode/
 share/doc/junicode/Junicode.pdf
 share/doc/junicode/Junicode.tex

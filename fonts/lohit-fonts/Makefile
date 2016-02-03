@@ -8,7 +8,9 @@ VERSION=	2.5.3
 PKGNAME=	lohit-fonts-${VERSION}
 CATEGORIES=	fonts x11
 HOMEPAGE=	https://fedorahosted.org/lohit/
-REVISION=	1
+REVISION=	0
+
+MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
 # SIL OFL 1.1
 PERMIT_PACKAGE_CDROM=	Yes

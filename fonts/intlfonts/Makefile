@@ -4,11 +4,13 @@ COMMENT=	extra japanese fonts
 
 CATEGORIES=	fonts japanese x11
 DISTNAME=	intlfonts-1.2
-REVISION=	2
+REVISION=	1
 PKGNAME=	ja-fonts-gnu-1.2
 USE_X11 =	Yes
 
 MASTER_SITES=	${MASTER_SITE_GNU:=intlfonts/}
+
+MAINTAINER=	Marc Espie <espie@openbsd.org>
 
 PERMIT_PACKAGE_CDROM=	Yes
 

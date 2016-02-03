@@ -3,7 +3,7 @@
 COMMENT=		free TrueType Persian fonts
 
 DISTNAME=		freefarsi-ttf-1.0.0b
-REVISION=		2
+REVISION=		1
 CATEGORIES=		fonts x11
 
 HOMEPAGE=		http://sourceforge.net/projects/fpf/

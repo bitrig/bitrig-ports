@@ -4,8 +4,10 @@ COMMENT=		cyrillic PostScript Type1 fonts to use with TeX
 
 DISTNAME=		pscyr-0.4c_patch2
 PKGNAME=		ru-${DISTNAME}
-REVISION=		6
+REVISION=		5
 CATEGORIES=		fonts print
+
+MAINTAINER=		Alexander Yurchenko <grange@openbsd.org>
 
 # Free redistribution is permitted without fonts files modifications
 PERMIT_PACKAGE_CDROM=	may not sell

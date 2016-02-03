@@ -1,12 +1,16 @@
-# $OpenBSD: Makefile.template,v 1.72 2015/04/08 17:53:19 sthen Exp $
+# $OpenBSD: Makefile,v 1.2 2015/09/25 12:50:08 sthen Exp $
+
+PKG_ARCH =		*
 
 COMMENT =		advanced Unicode font for medievalists
 DISTNAME =		junicode-0-7-8
 PKGNAME =		junicode-0.7.8
+REVISION =		0
 EXTRACT_SUFX =		.zip
 CATEGORIES =		fonts
 
 HOMEPAGE =		http://junicode.sourceforge.net/
+MAINTAINER =		George Rosamond <george@nycbug.org>
 
 # OFL
 PERMIT_PACKAGE_CDROM =	Yes

@@ -5,7 +5,7 @@ PKG_ARCH =	*
 VERSION =	1.002
 PKGNAME =	anonymous-pro-${VERSION}
 DISTNAME =	AnonymousPro-${VERSION}
-REVISION =	3
+REVISION =	2
 EXTRACT_SUFX =	.zip
 CATEGORIES =	fonts x11
 
