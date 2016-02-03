@@ -4,3 +4,9 @@ good audio/video synchronization.
 Other video applications like mplayer and vlc exist, that play more
 video formats, and can play mpeg2 video from the disk, but ogle
 currently has better synchronization and extensive menu support.
+
+Available FLAVOR: altivec (ppc only)
+Uses altivec vector unit for a huge speed-up.  Only works on powerpc
+platform with altivec hardware support. Altivec is present on all
+PowerPC G4 processors. Altivec is not present on G3 or earlier (60x)
+processors.
