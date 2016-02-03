@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.29 2015/05/28 10:17:23 pascal Exp $
 
-BROKEN= 	needs work on bitrig
-
 SHARED_ONLY=	Yes
 BROKEN-alpha=	sqvm.cpp:394:1: internal compiler error: Segmentation fault
 COMMENT=	Code::Blocks C/C++ IDE
