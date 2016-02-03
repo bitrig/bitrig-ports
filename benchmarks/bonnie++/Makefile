@@ -1,12 +1,14 @@
 # $OpenBSD: Makefile,v 1.13 2015/08/18 20:41:29 bluhm Exp $
 
+BROKEN=		c++ code ftw
+
 # -Winit-self
 NOT_FOR_ARCHS=	${GCC3_ARCHS}
 
 COMMENT=	enhanced performance test of filesystem I/O
 
 DISTNAME=	bonnie++-1.97
-REVISION=	5
+REVISION=	2
 WRKDIST=	${WRKDIR}/${DISTNAME}.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.coker.com.au/bonnie++/experimental/
@@ -17,8 +19,7 @@ HOMEPAGE=	http://www.coker.com.au/bonnie++/
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	c m pthread
-WANTLIB+=	c++ c++abi
+WANTLIB=	c m pthread c++ c++abi
 
 USE_GMAKE=	Yes
 CONFIGURE_STYLE= autoconf dest

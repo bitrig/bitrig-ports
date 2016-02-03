@@ -3,8 +3,8 @@
 COMMENT=	filesystem benchmark
 
 DISTNAME=	blogbench-1.1
-REVISION=	0
 CATEGORIES=	benchmarks
+REVISION=	0
 
 HOMEPAGE=	http://www.pureftpd.org/project/blogbench
 

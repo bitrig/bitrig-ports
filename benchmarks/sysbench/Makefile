@@ -19,8 +19,6 @@ NO_TEST =		Yes
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ENV =		PREFIX=${PREFIX}
 
-MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/config
-
 USE_GMAKE =		yes
 
 FLAVORS =		mysql pgsql
@@ -29,8 +27,7 @@ FLAVOR ?=
 .if ${FLAVOR:Mmysql}
 CONFIGURE_ARGS +=	--with-mysql
 LIB_DEPENDS +=		databases/mariadb
-WANTLIB +=		crypto ssl z lib/mysql/mysqlclient_r
-WANTLIB +=		c++ c++abi
+WANTLIB +=		crypto ssl c++ c++abi z
 .else
 CONFIGURE_ARGS +=	--with-mysql=no
 .endif
@@ -43,6 +40,8 @@ WANTLIB +=		pq crypto ssl
 .else
 CONFIGURE_ARGS +=	--with-pgsql=no
 .endif
+
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/config
 
 pre-configure:
 	@rm ${WRKBUILD}/doc/manual.html

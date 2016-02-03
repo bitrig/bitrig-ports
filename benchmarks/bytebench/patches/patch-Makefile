@@ -1,17 +1,16 @@
 $OpenBSD: patch-Makefile,v 1.1 2002/07/17 21:57:21 lebel Exp $
---- Makefile.orig	Wed Feb  5 11:08:43 1992
-+++ Makefile	Sun Jun  8 19:15:52 2014
+--- Makefile.orig	Wed Feb  5 05:08:43 1992
++++ Makefile	Wed Jul 17 17:37:13 2002
 @@ -24,18 +24,19 @@
  ##############################################################################
  ID="@(#)Makefile:3.9 -- 5/15/91 19:30:15";
  SHELL = /bin/sh
 -#HZ = ????  	   #(read from environment)
--CFLAGS = -DTIME
++HZ = 128
+ CFLAGS = -DTIME
 -OPTON = -O        #optimization on (give it your best shot) 
 -                  #            -- check your compiler man
 -OPTOFF = -Od      #optimization off -- check your compiler man
-+HZ = 128
-+CFLAGS = -DTIME -Wno-return-type
 +OPTON = -s -static -O6 -finline-functions -funroll-loops -fomit-frame-pointer
 +                          #optimization on (give it your best shot) 
 +                          #            -- check your compiler man

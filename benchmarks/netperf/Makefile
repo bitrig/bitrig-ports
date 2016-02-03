@@ -1,9 +1,11 @@
 # $OpenBSD: Makefile,v 1.33 2014/04/30 14:01:29 naddy Exp $
 
+BROKEN=		missing references
+
 COMMENT=	network performance benchmark
 
 DISTNAME=	netperf-2.6.0
-REVISION=	2
+REVISION=	1
 
 CATEGORIES=	benchmarks net
 
@@ -28,7 +30,7 @@ E=	${PREFIX}/share/examples/netperf
 post-install:
 	${INSTALL_DATA_DIR} $E
 	${INSTALL_SCRIPT} ${WRKSRC}/doc/examples/*script $E
-	perl -pi -e 's,(/opt/netperf2/bin|${LOCALBASE}/bin|/opt/netperf/netperf),${TRUEPREFIX}/bin,;' \
+	perl -pi -e 's,(/opt/netperf2/bin|/usr/local/bin|/opt/netperf/netperf),${TRUEPREFIX}/bin,;' \
 	    -e 's,^NETHOME=.*,NETHOME=${TRUEPREFIX}/bin,;' $E/*
 
 .include <bsd.port.mk>
