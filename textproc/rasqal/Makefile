@@ -16,6 +16,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB += c crypto curl gcrypt gmp gpg-error idn lzma m mpfr
 WANTLIB += pcre pthread raptor2 ssl uuid xml2 xslt yajl z
 
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build
+
 MODULES=		devel/gettext
 
 LIB_DEPENDS=		devel/mpfr \
