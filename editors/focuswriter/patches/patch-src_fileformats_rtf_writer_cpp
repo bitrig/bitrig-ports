@@ -1,0 +1,10 @@
+--- src/fileformats/rtf_writer.cpp.orig	Wed Feb  3 12:53:42 2016
++++ src/fileformats/rtf_writer.cpp	Wed Feb  3 12:53:53 2016
+@@ -25,6 +25,7 @@
+ #include <QTextBlock>
+ #include <QTextCodec>
+ #include <QTextDocument>
++#include <locale>
+ 
+ #ifdef Q_OS_WIN
+ #include <windows.h>
