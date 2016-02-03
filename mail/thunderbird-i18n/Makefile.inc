@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.44 2015/08/23 19:31:06 landry Exp $
+# $OpenBSD: Makefile.inc,v 1.46 2015/09/30 11:51:25 landry Exp $
 
 # keep in sync with www/mozilla/mozilla.port.mk
 ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64
@@ -17,8 +17,7 @@ HOMEPAGE =	https://wiki.mozilla.org/L10n:Home_Page
 PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =	https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/${FV}/linux-i686/xpi/ \
-		http://releases.mozilla.org/pub/mozilla.org/thunderbird/releases/${FV}/linux-i686/xpi/ \
-		ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/${FV}/linux-i686/xpi/
+		http://releases.mozilla.org/pub/mozilla.org/thunderbird/releases/${FV}/linux-i686/xpi/
 
 LANGUAGES =	ar be bg bn-BD br ca cs da de el en-GB en-US es-AR es-ES et eu \
 		fi fr fy-NL ga-IE gd gl he hu id is it ja ko lt nb-NO nl nn-NO \
