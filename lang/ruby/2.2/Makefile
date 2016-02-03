@@ -53,7 +53,9 @@ WANTLIB-main =		c crypto ffi gmp m ncurses pthread readline ssl \
 LIB_DEPENDS-main =	devel/gmp \
 			devel/libyaml \
 			devel/libffi \
-			devel/readline
+			devel/readline \
+			lang/tcl/8.5 \
+			x11/tk/8.5
 
 PSEUDO_FLAVORS=		no_x11 no_ri_docs
 # Do not build the RI docs on slow arches
