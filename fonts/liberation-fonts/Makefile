@@ -7,11 +7,9 @@ COMMENT =	substitute for MS TTF core fonts
 DISTNAME =	liberation-fonts-ttf-2.00.1
 PKGNAME =	${DISTNAME:S/-ttf//}
 CATEGORIES =	fonts x11
-REVISION =	0
+REVISION =	1
 
 HOMEPAGE =	https://fedorahosted.org/liberation-fonts
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # SIL Open Font License, Version 1.1
 PERMIT_PACKAGE_CDROM =	Yes

@@ -4,10 +4,9 @@ COMMENT=	humanist sans-serif font family
 
 GNOME_VERSION=	0.0.17
 GNOME_PROJECT=	cantarell-fonts
+REVISION=	0
 
 CATEGORIES=	fonts x11
-
-MAINTAINER=	Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # SIL Open Font License v1.1
 PERMIT_PACKAGE_CDROM=	Yes

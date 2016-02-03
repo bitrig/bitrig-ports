@@ -9,8 +9,6 @@ CATEGORIES =		fonts
 
 HOMEPAGE =		http://font.ubuntu.com/
 
-MAINTAINER =		Tim van der Molen <tim@openbsd.org>
-
 # Ubuntu Font Licence 1.0
 # http://font.ubuntu.com/ufl/ubuntu-font-licence-1.0.txt
 PERMIT_PACKAGE_CDROM =		Yes

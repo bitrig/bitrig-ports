@@ -8,7 +8,7 @@ COMMENT=		ink-saving font based on Vera Sans
 V=			0.001
 DISTNAME=		spranq_eco_sans_regular-$V
 PKGNAME=		spranq-ecofont-ttf-$V
-REVISION=		2
+REVISION=		3
 CATEGORIES=		fonts x11
 
 HOMEPAGE=		http://www.ecofont.eu/ecofont_en.html

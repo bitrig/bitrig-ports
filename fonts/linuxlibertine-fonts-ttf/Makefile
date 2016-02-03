@@ -6,7 +6,7 @@ DISTNAME =		LinLibertineTTF_${V}_${D}
 PKGNAME =		linuxlibertine-fonts-ttf-${V}
 V =			5.3.0
 D =			2012_07_02
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		fonts
 

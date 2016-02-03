@@ -3,7 +3,7 @@
 COMMENT =	extra Asian truetype fonts designed by Koaunghi Un
 DISTNAME =	un-fonts-extra-${VERSION}
 PKGNAME =	un-fonts-extra-${VERSION:S/-/./}
-REVISION =	1
+REVISION =	2
 
 # N.B. MASTER_SITES directory will need changing for version updates
 VERSION =	1.0.2-080608

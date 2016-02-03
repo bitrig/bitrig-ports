@@ -6,11 +6,9 @@ COMMENT =	monospace bitmap font, primarily aimed at programmers
 
 DISTNAME =	dina-fonts-2.92
 CATEGORIES =	fonts
-REVISION =	1
+REVISION =	2
 
 HOMEPAGE =	http://www.donationcoder.com/Software/Jibz/Dina/
-
-MAINTAINER =	Rafael Sadowski <rafael@sizeofvoid.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM = Yes

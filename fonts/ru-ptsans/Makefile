@@ -5,7 +5,6 @@ PKG_ARCH =	*
 DISTNAME =	ru-ptsans-3.0
 CATEGORIES =	fonts x11
 
-MAINTAINER =	Vadim Zhukov <zhuk@openbsd.org>
 # Original distfile taken from http://www.fontstock.com/public/
 MASTER_SITES =	http://ohvost.ru/distfiles/
 HOMEPAGE =	http://paratype.com/public/

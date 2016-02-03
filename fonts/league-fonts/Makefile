@@ -3,7 +3,7 @@
 COMMENT =		fonts from the League of Moveable Type
 
 PKGNAME =		league-fonts-0.1
-REVISION =		2
+REVISION =		3
 PKG_ARCH =		*
 EXTRACT_SUFX =		.zip
 .for font in \
@@ -17,8 +17,6 @@ CATEGORIES =		fonts x11
 
 HOMEPAGE =		http://www.theleagueofmoveabletype.com/
 MASTER_SITES =		http://s3.amazonaws.com/theleague-production/fonts/
-
-MAINTAINER=		Ian Darwin <ian@openbsd.org>
 
 # Custom "SIL OPEN FONT LICENSE Version 1.1":
 # "Permission is hereby granted, free of charge, to any person obtaining

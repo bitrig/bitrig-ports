@@ -4,7 +4,7 @@ COMMENT=	japanese true type fonts
 
 DISTNAME=	sazanami-20040629
 PKGNAME=	ja-${DISTNAME:S/-/-ttf-/}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	fonts japanese x11
 EXTRACT_SUFX=	.tar.bz2
 

@@ -4,7 +4,7 @@ COMMENT=	farsi bornaray fonts
 
 DISTNAME=	bfonts
 PKGNAME=	farsi-bfonts-ttf-2.0
-REVISION=	2
+REVISION=	3
 
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		farsi-bfonts-ttf-extra-0.1.tar.gz:0

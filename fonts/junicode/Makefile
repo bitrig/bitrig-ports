@@ -10,7 +10,6 @@ EXTRACT_SUFX =		.zip
 CATEGORIES =		fonts
 
 HOMEPAGE =		http://junicode.sourceforge.net/
-MAINTAINER =		George Rosamond <george@nycbug.org>
 
 # OFL
 PERMIT_PACKAGE_CDROM =	Yes
