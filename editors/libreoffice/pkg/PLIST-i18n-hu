@@ -67,12 +67,14 @@ lib/libreoffice/share/config/soffice.cfg/cui/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/dbaccess/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/desktop/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/filter/ui/res/hu.zip
+lib/libreoffice/share/config/soffice.cfg/formula/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/fps/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/modules/BasicIDE/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/modules/dbreport/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/modules/sabpilot/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/modules/sbibliography/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/modules/scalc/ui/res/hu.zip
+lib/libreoffice/share/config/soffice.cfg/modules/scanner/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/modules/schart/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/modules/sdraw/ui/res/hu.zip
 lib/libreoffice/share/config/soffice.cfg/modules/simpress/ui/res/hu.zip

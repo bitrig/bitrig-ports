@@ -1,4 +1,6 @@
-# $OpenBSD: Makefile,v 1.136 2015/08/18 08:15:40 kirby Exp $
+# $OpenBSD: Makefile,v 1.137 2015/09/29 16:10:48 robert Exp $
+
+BROKEN=		jdk not working
 
 ONLY_FOR_ARCHS= amd64 i386
 
@@ -6,8 +8,8 @@ COMMENT-main=	multi-platform productivity suite
 COMMENT-kde=	optional integration of LibreOffice to the KDE environment
 COMMENT-java=	optional integration of LibreOffice java features
 
-BV=		4.4
-VERSION=	${BV}.5.2
+BV=		5.0
+VERSION=	${BV}.2.2
 DISTNAME=	libreoffice-${VERSION}
 DISTNAME=	libreoffice-${VERSION}
 WRKDIST=	${WRKDIR}/libreoffice-${VERSION}
@@ -15,12 +17,10 @@ PKGNAME=	libreoffice-${VERSION}
 PKGNAME-main=	libreoffice-${VERSION}
 PKGNAME-kde=	libreoffice-kde-${VERSION}
 PKGNAME-java=	libreoffice-java-${VERSION}
-REVISION-java=	0
 CATEGORIES=	editors productivity
 DPB_PROPERTIES=	parallel tag:kde3
 
 EPOCH=		0
-REVISION=	0
 
 HOMEPAGE=	http://www.libreoffice.org/
 
@@ -73,7 +73,7 @@ DISTFILES+=	${EDISTFILES} \
 		5ade6ae2a99bc1e9e57031ca88d36dad-hyphen-2.8.8.tar.gz:0 \
 		a4e565e220b5de082c23995e256e3c12-dejavu-fonts-ttf-2.34.zip:0 \
 		a7983f859eafb2677d7ff386a023bc40-xsltml_2.1.2.zip:0 \
-		896272c1a9e396b871cb4dffbd694503-mdds_0.11.1.tar.bz2:0 \
+		mdds_0.12.1.tar.bz2:0 \
 		cb4207cb913c7a5a8bfa5b91234618ee-mdds_0.11.2.tar.bz2:0 \
 		ace6ab49184e329db254e454a010f56d-libxml-1.1.7.zip:0 \
 		10d61fbaa6a06348823651b1bd7940fe-libexttextcat-3.4.4.tar.bz2:0 \
@@ -86,7 +86,7 @@ DISTFILES+=	${EDISTFILES} \
 		db60e4fde8dd6d6807523deb71ee34dc-liblayout-0.2.10.zip:0 \
 		e7a384790b13c29113e22e596ade9687-LinLibertineG-20120116.zip:0 \
 		commons-logging-1.2-src.tar.gz:0 \
-		ea570af93c284aa9e5621cd563f54f4d-bsh-2.0b1-src.tar.gz:0 \
+		ec1941a74d3ef513c4ce57a9092b74e1-bsh-2.0b5-src.zip:0 \
 		edc4d741888bc0d38e32dbaa17149596-source-sans-pro-2.010R-ro-1.065R-it.tar.gz:0 \
 		eeb2c7ddf0d302fba4bfc6e97eac9624-libbase-1.1.6.zip:0 \
 		f94d9870737518e3b597f9265f4e9803-libserializer-1.1.6.zip:0 \
@@ -94,18 +94,18 @@ DISTFILES+=	${EDISTFILES} \
 		libabw-0.1.1.tar.bz2:0 \
 		libcdr-0.1.1.tar.bz2:0 \
 		libe-book-0.1.2.tar.bz2:0 \
-		libetonyek-0.1.1.tar.bz2:0 \
-		libfreehand-0.1.0.tar.bz2:0 \
+		libetonyek-0.1.3.tar.bz2:0 \
+		libfreehand-0.1.1.tar.bz2:0 \
 		libgltf-0.0.2.tar.bz2:1 \
 		libmspub-0.1.2.tar.bz2:0 \
-		libmwaw-0.3.4.tar.bz2:0 \
-		libodfgen-0.1.3.tar.bz2:0 \
+		libmwaw-0.3.5.tar.bz2:0 \
+		libodfgen-0.1.4.tar.bz2:0 \
 		libpagemaker-0.0.2.tar.bz2:0 \
 		librevenge-0.0.2.tar.bz2:0 \
 		libvisio-0.1.1.tar.bz2:0 \
 		libwpd-0.10.0.tar.bz2:0 \
 		libwpg-0.3.0.tar.bz2:0 \
-		libwps-0.3.1.tar.bz2:0
+		libwps-0.4.0.tar.bz2:0
 
 DIST_SUBDIR=	libreoffice
 
@@ -125,13 +125,10 @@ CONFIGURE_ARGS+=	--with-lang="en-US ${LANGS}"
 .for l in ${LANGS:L}
 MULTI_PACKAGES+=	-i18n-$l
 PKGNAME-i18n-$l=	libreoffice-i18n-$l-${VERSION}
-REVISION-i18n-$l=	0
 COMMENT-i18n-$l=	$l language pack for LibreOffice
 RUN_DEPENDS-i18n-$l=	editors/libreoffice
 WANTLIB-i18n-$l=
 LIB_DEPENDS-i18n-$l=
-REVISION-i18n-hu=	0
-REVISION-i18n-ru=	0
 .endfor
 .endif
 
@@ -188,18 +185,18 @@ LIB_DEPENDS-main=x11/gtk+2 \
 		textproc/redland \
 		textproc/hunspell
 
-WANTLIB-main=	gdk-x11-2.0>=400.14 gtk-x11-2.0>=400.14 \
+WANTLIB-main=	estdc++ gdk-x11-2.0>=400.14 gtk-x11-2.0>=400.14 \
 		xslt>=3 curl>=7 neon>=24 pq>=2 \
 		icuuc>=0 icui18n \
 		rdf>=0
 WANTLIB-main+=	ICE SM X11 Xcomposite Xcursor Xdamage \
 		Xext Xfixes Xi Xinerama Xrandr Xrender atk-1.0 c cairo \
 		crypto expat fontconfig freetype gio-2.0 glib-2.0 \
-		gmodule-2.0 gobject-2.0 gthread-2.0 \
+		gobject-2.0 gthread-2.0 \
 		jpeg m pango-1.0 pangocairo-1.0 pangoft2-1.0 \
 		pthread ssl xml2 z gdk_pixbuf-2.0 \
 		util ${MODGETTEXT_WANTLIB}
-WANTLIB-main+=	hunspell-1.3 gdk_pixbuf_xlib-2.0
+WANTLIB-main+=	hunspell-1.3
 WANTLIB-main+=	${MODPY_WANTLIB}
 WANTLIB-main+=	Xt clucene-contribs-lib clucene-core clucene-shared
 WANTLIB-main+=	cups exslt gcrypt gpg-error lcms2
@@ -209,6 +206,7 @@ WANTLIB-main+=	lber ldap
 WANTLIB-main+=	poppler
 WANTLIB-main+=	GLEW
 WANTLIB-main+=	GL GLU harfbuzz harfbuzz-icu
+WANTLIB-main+= lzma
 
 RUN_DEPENDS-main=	devel/desktop-file-utils \
 			devel/libexecinfo \
@@ -224,7 +222,7 @@ LIB_DEPENDS-kde=	${MODQT_LIB_DEPENDS} \
 			${MODGCC4_CPPLIBDEP} \
 			x11/kde/libs3
 WANTLIB-kde=		${MODQT_WANTLIB} \
-			X11 c m pthread \
+			X11 c estdc++ m pthread \
 			lib/kde3/kdecore \
 			lib/kde3/kdeui lib/kde3/kio \
 			lib/kde3/kabc
@@ -244,7 +242,7 @@ RUN_DEPENDS-java=	${MODJAVA_RUN_DEPENDS} \
 			databases/db/v4,-java \
 			editors/libreoffice \
 			java/javaPathHelper
-WANTLIB-java=		c m pthread
+WANTLIB-java=		c estdc++ m pthread
 
 USE_GMAKE=	Yes
 NO_TEST=	Yes
@@ -255,7 +253,6 @@ CONFIGURE_STYLE=	gnu
 
 AUTOCONF_VERSION=	2.68
 AUTOMAKE_VERSION=	1.12
-MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}
 
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
@@ -281,6 +278,7 @@ CONFIGURE_ARGS+=\
 		--disable-packagekit \
 		--disable-dependency-tracking \
 		--disable-online-update \
+		--disable-orcus \
 		--enable-gio \
 		--enable-kde \
 		--enable-systray \
@@ -314,7 +312,7 @@ CONFIGURE_ARGS+=\
 		--with-system-postgresql \
 		--with-system-redland \
 		--with-system-zlib \
-		--with-vendor="The OpenBSD project" \
+		--with-vendor="The Bitrig project" \
 		--without-junit \
 		--without-krb5 \
 		--without-gssapi \
