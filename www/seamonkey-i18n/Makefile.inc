@@ -1,14 +1,13 @@
-# $OpenBSD: Makefile.inc,v 1.38 2015/03/23 21:05:12 landry Exp $
+# $OpenBSD: Makefile.inc,v 1.41 2015/09/28 09:30:39 landry Exp $
 
 # keep in sync with working archs.. sigh
 ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64
 
 PKG_ARCH =	*
 
-FV =		2.33.1
+FV =		2.38
 V =		${FV:C/b.$//}
 NAME =		seamonkey-i18n
-REVISION =	0
 
 CATEGORIES =	www
 
@@ -18,8 +17,7 @@ HOMEPAGE =	https://wiki.mozilla.org/L10n:Home_Page
 PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =	https://ftp.mozilla.org/pub/mozilla.org/seamonkey/releases/${FV}/langpack/ \
-		http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/${FV}/langpack/ \
-		ftp://ftp.mozilla.org/pub/mozilla.org/seamonkey/releases/${FV}/langpack/
+		http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/${FV}/langpack/
 
 BUILD_DEPENDS =	archivers/unzip
 RUN_DEPENDS =	seamonkey-${FV:S/b/beta/}:www/seamonkey

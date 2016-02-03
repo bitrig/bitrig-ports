@@ -1,8 +1,10 @@
-# $OpenBSD: Makefile,v 1.26 2015/08/31 20:07:49 landry Exp $
+# $OpenBSD: Makefile,v 1.27 2015/09/24 20:22:06 landry Exp $
+
+BROKEN =	needs work on bitrig
 
 COMMENT =	Firefox web browser, Extended Support Release
 
-MOZILLA_VERSION =	38.2.1esr
+MOZILLA_VERSION =	38.3.0esr
 MOZILLA_BRANCH =	esr38
 MOZILLA_PROJECT =	firefox
 MOZILLA_CODENAME =	browser
@@ -21,13 +23,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES =	www/mozilla devel/gettext lang/python
 
 MODPY_RUNDEP =	No
-
-# necessary glue to build with the correct compiler after fx 17
-MODULES +=		gcc4 lang/clang
-MODGCC4_ARCHS =		powerpc sparc64 alpha
-MODGCC4_LANGS =		c c++
-MODCLANG_ARCHS =	amd64 i386
-MODCLANG_LANGS =	c c++
 
 # Regression tests are too hard to adapt to run here
 NO_TEST =	Yes

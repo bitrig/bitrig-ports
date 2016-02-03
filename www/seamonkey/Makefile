@@ -1,30 +1,28 @@
-# $OpenBSD: Makefile,v 1.176 2015/07/25 06:51:50 landry Exp $
+# $OpenBSD: Makefile,v 1.179 2015/09/28 09:30:39 landry Exp $
 
 COMMENT-main =		Mozilla application suite
 COMMENT-lightning =	Mozilla Seamonkey calendar extension
 BROKEN-sparc64 =	xpcshell SIGBUS during fake
 
 
-MOZILLA_VERSION =	2.33.1
+MOZILLA_VERSION =	2.38
 MOZILLA_BRANCH =	release
 MOZILLA_PROJECT =	seamonkey
 MOZILLA_CODENAME =	suite
-
+EXTRACT_SUFX =		.tar.xz
 
 MULTI_PACKAGES =	-main -lightning
 PKGNAME-main =		${PKGNAME}
-PKGNAME-lightning =	lightning-seamonkey-3.8
-REVISION-main =		4
-REVISION-lightning =	4
+PKGNAME-lightning =	lightning-seamonkey-4.3
 EPOCH-lightning =	0
 
 HOMEPAGE =	http://www.seamonkey-project.org/
 
-SO_VERSION =	41.0
+SO_VERSION =	43.0
 # NOTE: Must bump minor version if any shlib's are removed from the
 # components dir to avoid pkg_add -r issues.
 
-MOZILLA_LIBS = ldap60 ldif60 mozalloc mozgnome prldap60 suite xul calbasecomps
+MOZILLA_LIBS = ldap60 ldif60 mozgnome prldap60 suite xul calbasecomps
 
 CATEGORIES=	www mail net news
 
@@ -34,22 +32,13 @@ PERMIT_PACKAGE_CDROM=	Yes
 MODULES =	www/mozilla devel/gettext lang/python
 MODPY_RUNDEP =	No
 
-# necessary glue to build with the correct compiler after fx 17
-MODULES +=		gcc4
-MODGCC4_ARCHS =		powerpc sparc64 alpha i386
-MODGCC4_LANGS =		c c++
-
 NO_TEST=	Yes
-
-MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/ldap/sdks/c-sdk/config/autoconf
 
 CONFIGURE_STYLE =	autoconf no-autoheader
 
 LIB_DEPENDS-lightning = STEM->=${MOZILLA_VERSION:S/b/beta/}:${BUILD_PKGPATH},-main
 WANTLIB-lightning =	lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/xul \
-			lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/mozalloc \
-			c m nspr4 plc4 plds4 pthread
-WANTLIB-lightning +=	c++ c++abi
+			c m c++ c++abi nspr4 plc4 plds4 pthread
 
 # build lightning xpi
 CONFIGURE_ARGS +=	--enable-calendar
@@ -72,7 +61,7 @@ BUILD_DEPENDS +=	multimedia/gstreamer1/plugins-base
 
 ALL_TARGET =	default
 
-MOZILLA_AUTOCONF_DIRS =		ldap/sdks/c-sdk mozilla mozilla/js/src
+MOZILLA_AUTOCONF_DIRS =		mozilla mozilla/js/src
 
 GNU_ARCH =	${MACHINE_ARCH:S/amd64/x86_64/}
 # guid for gdata-provider comes from em:id in install.rdf
