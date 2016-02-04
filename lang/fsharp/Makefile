@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.2 2015/05/23 11:23:56 sthen Exp $
 
-BROKEN=		unreliable build, frequently hangs in dpb
-
 COMMENT=	functional-first programming language
 
 GH_ACCOUNT=	fsharp
