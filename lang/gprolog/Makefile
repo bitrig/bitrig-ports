@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.16 2014/01/08 11:54:12 sthen Exp $
 
-BROKEN=			needs work on bitrig
-
 ONLY_FOR_ARCHS=		amd64 i386
 
 COMMENT=		Prolog compiler
@@ -22,6 +20,10 @@ MASTER_SITES=		${MASTER_SITE_GNU:=gprolog/}
 AUTOCONF_VERSION=	2.61
 CONFIGURE_STYLE=	autoconf dest no-autoheader
 
+# necessary glue to build with the correct compiler after fx 17
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
 
 CONFIGURE_ARGS+= --with-install-dir='${PREFIX}/libdata/gprolog' \
 	--without-links-dir \

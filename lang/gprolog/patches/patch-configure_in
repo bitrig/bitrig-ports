@@ -1,0 +1,18 @@
+--- configure.in.orig	Thu Feb  4 05:49:34 2016
++++ configure.in	Thu Feb  4 05:49:40 2016
+@@ -327,6 +327,7 @@ else
+         mingw*)         AC_DEFINE(M_mingw) MINGW=yes; WIN32=yes;;
+         *sco*)          AC_DEFINE(M_sco);;
+         *bsd*)          AC_DEFINE(M_bsd);;
++        *bitrig*)       AC_DEFINE(M_bsd);;
+         *darwin*)       AC_DEFINE(M_darwin);;
+     esac
+     
+@@ -338,6 +339,7 @@ else
+         alpha*osf*)      AC_DEFINE(M_alpha_osf);;
+         alpha*linux*)    AC_DEFINE(M_alpha_linux);;
+         x86_64*linux*)   AC_DEFINE(M_x86_64_linux);;
++        x86_64*bitrig*)  AC_DEFINE(M_x86_64_bsd);;
+         x86_64*bsd*)     AC_DEFINE(M_x86_64_bsd);;
+         x86_64*solaris*) AC_DEFINE(M_x86_64_solaris);;
+         i*86*linux*)     AC_DEFINE(M_ix86_linux);;
