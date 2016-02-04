@@ -20,7 +20,6 @@ MASTER_SITES=		${MASTER_SITE_GNU:=gprolog/}
 AUTOCONF_VERSION=	2.61
 CONFIGURE_STYLE=	autoconf dest no-autoheader
 
-# necessary glue to build with the correct compiler after fx 17
 MODULES +=		gcc4
 MODGCC4_ARCHS =		*
 MODGCC4_LANGS =		c c++
