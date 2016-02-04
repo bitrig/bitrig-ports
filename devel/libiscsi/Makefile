@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2015/08/25 06:40:28 ajacoutot Exp $
 
+BROKEN=		weird libtool error
+
 COMMENT=	client-side library to implement the iSCSI protocol
 
 DISTNAME=	libiscsi-1.15.0
