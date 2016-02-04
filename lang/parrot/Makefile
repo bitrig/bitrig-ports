@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.32 2015/07/23 10:16:21 pascal Exp $
 
-BROKEN =	needs work on bitrig
-
 SHARED_ONLY =	Yes
 
 COMMENT=	virtual machine designed for interpreted languages
@@ -28,9 +26,14 @@ BUILD_DEPENDS=		graphics/glew \
 LIB_DEPENDS=		textproc/icu4c \
 			devel/gmp \
 			graphics/freeglut \
-			devel/libffi
+			devel/libffi \
+			devel/readline
 TEST_DEPENDS=		devel/p5-TAP-Harness-Multiple \
 			devel/p5-Test-Perl-Critic
+
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c
 
 CONFIGURE_SCRIPT=	/usr/bin/perl Configure.pl
 CONFIGURE_STYLE=	simple
@@ -57,12 +60,11 @@ TEST_TARGET=		fulltest
 
 SUBST_VARS +=		V
 
-pre-configure:
-	${SUBST_CMD} ${WRKSRC}/config/init/hints/openbsd.pm
+post-extract:
+	@cp ${FILESDIR}/bitrig.pm ${WRKSRC}/config/init/hints/
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/blib/lib/libparrot.so.${LIBparrot_VERSION} \
 		${PREFIX}/lib
-	chmod a+r ${PREFIX}/share/doc/parrot/$V/pod/packfile-c.pod
 
 .include <bsd.port.mk>
