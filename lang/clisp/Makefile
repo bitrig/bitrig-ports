@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.43 2013/03/21 08:46:32 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.44 2015/10/06 11:37:06 jca Exp $
 
 ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64
 
 COMMENT =		ANSI Common Lisp implementation
 
-DISTNAME=		clisp-2.48
-REVISION =		5
+DISTNAME=		clisp-2.49
 CATEGORIES=		lang
 HOMEPAGE=		http://clisp.cons.org/
 
@@ -27,6 +26,13 @@ USE_GROFF =		Yes
 
 SEPARATE_BUILD=		Yes
 
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/src/build-aux
+
+# clang crash
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
+
 CONFIGURE_STYLE=	gnu old
 CONFIGURE_ARGS=		--fsstnd=openbsd \
 			--disable-mmap \
@@ -35,9 +41,10 @@ CONFIGURE_ARGS=		--fsstnd=openbsd \
 			--docdir=${PREFIX}/share/doc/clisp \
 			--elispdir=${PREFIX}/share/emacs/site-lisp \
 			--vimdir=${PREFIX}/share/doc/clisp \
-			--srcdir=${WRKSRC} ${WRKBUILD}
+			--srcdir=${WRKSRC} ${WRKBUILD} \
+			--without-dynamic-modules
+
 CONFIGURE_ENV =		ac_cv_prog_DVIPDF=''
-MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/src/build-aux
 
 .if ${MACHINE_ARCH} == "sparc64"
 CFLAGS +=		-DSAFETY=2 -DNO_ASM -mcmodel=medany
@@ -50,5 +57,8 @@ LDFLAGS +=		-nopie
 .else
 CONFIGURE_ARGS +=	--without-gmalloc
 .endif
+
+pre-build:
+	ln -sf ${LOCALBASE}/bin/gmake ${WRKDIR}/bin/make
 
 .include <bsd.port.mk>
