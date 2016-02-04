@@ -98,7 +98,6 @@
      SUBDIR += tcltutor
      SUBDIR += tinyscheme
      SUBDIR += ucblogo
-     SUBDIR += unicon
      SUBDIR += vala
      SUBDIR += verilator
 
