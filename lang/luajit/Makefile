@@ -23,7 +23,7 @@ MODULES =	lang/lua
 MODLUA_SA=	Yes
 
 MODULES +=	gcc4
-MODGCC4_ARCHS =	powerpc
+MODGCC4_ARCHS =	*
 MODGCC4_LANGS =	c
 
 MAKE_FLAGS += \

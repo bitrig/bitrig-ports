@@ -9,14 +9,6 @@ $OpenBSD: patch-src_Makefile,v 1.5 2015/06/06 09:03:16 dcoppa Exp $
 +    TARGET_XSHLDFLAGS= -shared -fPIC
 +    TARGET_STRIP= @:
 +  endif
-+  TARGET_XSHLDFLAGS= -shared -fPIC
-+  TARGET_STRIP= @:
-+  TARGET_XLIBS+= -lc++abi -lpthread
-+else
-   ifneq (,$(findstring stack-protector,$(shell $(TARGET_CC) -dumpspecs)))
-     TARGET_XCFLAGS+= -fno-stack-protector
-   endif
-@@ -330,6 +338,7 @@ else
  endif
  endif
  endif
