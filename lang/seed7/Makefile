@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.42 2015/08/24 23:01:53 bcallah Exp $
+# $OpenBSD: Makefile,v 1.45 2015/09/30 13:54:53 benoit Exp $
 
-V =		20150823
+V =		20150927
 COMMENT =	high-level, extensible programming language
 DISTNAME =	seed7_05_${V}
 PKGNAME =	seed7-${V}
-REVISION =	0
 EXTRACT_SUFX =	.tgz
 CATEGORIES =	lang
 BROKEN-hppa =	SIGILL during build
