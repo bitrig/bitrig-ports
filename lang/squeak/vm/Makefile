@@ -15,6 +15,7 @@ SEPARATE_BUILD =	Yes
 
 MASTER_SITES =	${SQUEAK_SITE}unix-linux/
 
+BUILD_DEPENDS =		devel/subversion
 RUN_DEPENDS =		squeak-sources-${SOURCEV}:lang/squeak/sources
 
 CONFIGURE_STYLE =	gnu
@@ -33,7 +34,7 @@ FULLV =			$V-${SRCV}
 
 MODULES +=		gcc4
 MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		c
+MODGCC4_LANGS =		c c++
 
 # XXX gnu-interp doesn't work with pie.
 #.if ${MACHINE_ARCH} != "powerpc"
