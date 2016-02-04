@@ -1,6 +1,60 @@
 $OpenBSD: patch-pfe_configure,v 1.4 2015/06/19 08:02:14 jasper Exp $
---- pfe/configure.orig	Sat Oct 17 19:50:54 2009
-+++ pfe/configure	Fri Jun 19 08:58:08 2015
+--- pfe/configure.orig	Sat Oct 17 12:50:54 2009
++++ pfe/configure	Thu Feb  4 09:22:40 2016
+@@ -5491,7 +5491,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -5913,7 +5913,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -6297,7 +6297,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -9098,7 +9098,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -9894,7 +9894,7 @@ rm -f core conftest.err conftest.$ac_objext conftest_i
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -10886,7 +10886,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
 @@ -19714,7 +19714,7 @@ ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $
  ac_compiler_gnu=$ac_cv_c_compiler_gnu
  
@@ -10,7 +64,7 @@ $OpenBSD: patch-pfe_configure,v 1.4 2015/06/19 08:02:14 jasper Exp $
  do CFLAGS="$ac_save_CFLAGS "`echo $ac_arg | sed -e 's,%%.*,,' -e 's,%,,'`
     cat >conftest.$ac_ext <<_ACEOF
  /* confdefs.h.  */
-@@ -20477,7 +20477,6 @@ test "$with_sbr_threading" = "yes" && uses_sbr_threadi
+@@ -20477,12 +20477,11 @@ test "$with_sbr_threading" = "yes" && uses_sbr_threadi
  GCC_WARN="" ; OPTIM="" ; DEBUG=""
  { $as_echo "$as_me:$LINENO: checking optimize level \"$WITHVAL_OPT\" is..." >&5
  $as_echo_n "checking optimize level \"$WITHVAL_OPT\" is...... " >&6; }
@@ -18,6 +72,12 @@ $OpenBSD: patch-pfe_configure,v 1.4 2015/06/19 08:02:14 jasper Exp $
  opt_level="$WITHVAL_OPT"
  if test "$GCC" = "yes" ; then
     OPTIM="-O$opt_level"
+    DEBUG=" -W -Wshadow"
+-   LDFLAGS="$LDFLAGS -W,--warn-common" # -Wl,-S
++   LDFLAGS="$LDFLAGS" # -Wl,-S
+    # GCC_WARN="$GCC_WARN -Wtraditional"
+    # GCC_WARN="$GCC_WARN -Wconversion"
+ elif test ".$am_cv_CC_dependencies_compiler_type" = ".aix" ; then
 @@ -20549,16 +20548,6 @@ LIBS=`echo " $LIBS " | sed -e "s/ -lm //g"`
  
  PACKAGE_CFLAGS="$EXTRAS" # PACKAGE_LIBS = -lpfe

@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.26 2015/06/20 19:31:24 ajacoutot Exp $
 
-BROKEN=		needs work on bitrig
-
 BROKEN-powerpc=	does not build, error: lvalue required as increment operand
 
 COMMENT=	Portable Forth Environment
@@ -33,6 +31,13 @@ CONFIGURE_ARGS+=--with-regs
 USE_LIBTOOL=	gnu
 
 NO_TEST=	Yes
+
+# clang crash
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
+
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/uses
 
 # XXX remove CVS Id  (patch-pfe_Makefile_in)
 post-extract:
