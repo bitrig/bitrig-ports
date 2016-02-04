@@ -1,18 +1,20 @@
-$OpenBSD$
---- make-config.sh.orig	Mon Sep 30 15:15:42 2013
-+++ make-config.sh	Tue Nov 19 20:17:37 2013
-@@ -260,12 +260,12 @@ case `uname` in
+--- make-config.sh.orig	Wed Jul 29 09:32:20 2015
++++ make-config.sh	Thu Feb  4 09:57:40 2016
+@@ -284,7 +284,7 @@ case `uname` in
          # _or_ OSF/1 ...
          sbcl_os="osf1"
          ;;
 -    *BSD)
-+    *BSD|Bitrig)
++    *BSD | Bitrig)
          case `uname` in
              FreeBSD)
                  sbcl_os="freebsd"
+@@ -292,7 +292,7 @@ case `uname` in
+             GNU/kFreeBSD)
+                 sbcl_os="gnu-kfreebsd"
                  ;;
 -            OpenBSD)
-+            OpenBSD|Bitrig)
++            OpenBSD | Bitrig)
                  sbcl_os="openbsd"
                  ;;
              NetBSD)

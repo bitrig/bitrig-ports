@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.24 2015/08/31 18:37:30 jasper Exp $
 
-BROKEN = 		needs work on bitrig
-
 # not yet ported to other arches
 ONLY_FOR_ARCHS =	amd64 i386 powerpc
 
@@ -23,7 +21,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sbcl/}
 
 MODULES=		gcc4
-MODGCC4_ARCHS=		i386
+MODGCC4_ARCHS=		*
 MODGCC4_LANGS=		c
 
 WANTLIB=		c m util
