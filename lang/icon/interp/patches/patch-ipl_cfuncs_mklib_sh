@@ -1,0 +1,11 @@
+--- ipl/cfuncs/mklib.sh.orig	Thu Feb  4 06:18:38 2016
++++ ipl/cfuncs/mklib.sh	Thu Feb  4 06:19:03 2016
+@@ -11,7 +11,7 @@ shift
+ SYS=`uname -s`
+ set -x
+ case "$SYS" in
+-   Linux*|*BSD*|GNU*)
++   Linux*|*BSD*|GNU*|Bitrig*)
+       $CC -shared -o $LIBNAME -fPIC "$@";;
+    CYGWIN*)
+       # move the win32 import library for iconx.exe callbacks
