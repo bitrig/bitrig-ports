@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.176 2015/08/28 14:41:59 jeremy Exp $
+# $OpenBSD: Makefile,v 1.178 2015/09/21 11:05:11 kili Exp $
 
      SUBDIR =
      SUBDIR += STk
@@ -19,7 +19,6 @@
      SUBDIR += eltclsh
      SUBDIR += erlang
      SUBDIR += expect
-     SUBDIR += feldspar
      SUBDIR += fpc
      SUBDIR += freehdl
      SUBDIR += fsharp
@@ -36,7 +35,6 @@
      SUBDIR += guile2
      SUBDIR += hs-haskell-src
      SUBDIR += hs-haskell-src-exts
-     SUBDIR += hs-syntactic
      SUBDIR += hugs
      SUBDIR += icon
      SUBDIR += intel2gas
@@ -60,6 +58,7 @@
      SUBDIR += nbfc
      SUBDIR += newlisp
      SUBDIR += nhc98
+     SUBDIR += nimrod
      SUBDIR += node
      SUBDIR += node-java
      SUBDIR += node-typescript
@@ -82,7 +81,6 @@
      SUBDIR += racket-minimal
      SUBDIR += railo
      SUBDIR += rakudo
-     SUBDIR += regina-rexx
      SUBDIR += ruby
      SUBDIR += rust
      SUBDIR += sbcl
@@ -100,6 +98,7 @@
      SUBDIR += tcltutor
      SUBDIR += tinyscheme
      SUBDIR += ucblogo
+     SUBDIR += unicon
      SUBDIR += vala
      SUBDIR += verilator
 
