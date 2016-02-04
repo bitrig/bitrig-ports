@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/06/05 06:00:22 robert Exp $
+# $OpenBSD: Makefile,v 1.12 2016/02/04 13:14:15 jasper Exp $
 
 COMMENT=	lightweight CalDAV and CardDAV server
 
