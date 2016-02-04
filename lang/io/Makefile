@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.17 2014/11/07 10:07:40 landry Exp $
 
-BROKEN = 	needs work on bitrig
-
 SHARED_ONLY =	Yes
 ONLY_FOR_ARCHS =i386 amd64
 
@@ -64,7 +62,11 @@ WRKDIST = ${WRKDIR}/stevedekorte-io-02f9800
 WRKBUILD = ${WRKSRC}/build
 
 # Segfaults during the build otherwise
-CFLAGS += -O0
+CFLAGS +=		-O0
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
+
 CONFIGURE_ARGS =-DATK_NAMES=atk-1.0 \
 		-DCLUTTER_NAMES=clutter-1.0 \
 		-DEVENT_NAMES=event_core \

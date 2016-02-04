@@ -1,0 +1,21 @@
+--- tools/CMakeLists.txt.orig	Thu Feb  4 06:25:11 2016
++++ tools/CMakeLists.txt	Thu Feb  4 06:25:14 2016
+@@ -43,14 +43,14 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "(Darwin|Linux|SunOS|s
+ endif(${CMAKE_SYSTEM_NAME} MATCHES "(Darwin|Linux|SunOS|syllable)")
+ 
+ # Add math library for those who need it
+-if(${CMAKE_SYSTEM_NAME} MATCHES "(OpenBSD|FreeBSD|Linux|NetBSD|DragonFly)")
++if(${CMAKE_SYSTEM_NAME} MATCHES "(OpenBSD|Bitrig|FreeBSD|Linux|NetBSD|DragonFly)")
+ 	list(APPEND LIBS "-lm")
+-endif(${CMAKE_SYSTEM_NAME} MATCHES "(OpenBSD|FreeBSD|Linux|NetBSD|DragonFly)")
++endif(${CMAKE_SYSTEM_NAME} MATCHES "(OpenBSD|Bitrig|FreeBSD|Linux|NetBSD|DragonFly)")
+ 
+ # Add curses library for readline needs it
+-if(${CMAKE_SYSTEM_NAME} MATCHES "OpenBSD")
++if(${CMAKE_SYSTEM_NAME} MATCHES "OpenBSD|Bitrig")
+ 	list(APPEND LIBS "-lcurses")
+-endif(${CMAKE_SYSTEM_NAME} MATCHES "OpenBSD")
++endif(${CMAKE_SYSTEM_NAME} MATCHES "OpenBSD|Bitrig")
+ 
+ 
+ add_definitions("-DBUILDING_IOVMALL_DLL")
