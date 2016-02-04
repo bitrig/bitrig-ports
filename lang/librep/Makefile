@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.62 2015/02/16 22:57:09 naddy Exp $
 
-BROKEN=		needs work on bitrig
-
 COMMENT=	Emacs Lisp-like runtime library
 
 SHARED_ONLY=	Yes
@@ -26,14 +24,15 @@ EXTRACT_SUFX=           .tar.xz
 WANTLIB=		c gdbm gmp ffi m ncurses pthread readline
 
 MODULES=		devel/gettext
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
 LIB_DEPENDS=		databases/gdbm \
 			devel/gmp \
 			devel/libffi \
 			devel/readline
 
 USE_GMAKE=		Yes
-
-CC =			gcc
 
 MAKE_FLAGS=		rep_LIBTOOL=${LIBTOOL}
 
