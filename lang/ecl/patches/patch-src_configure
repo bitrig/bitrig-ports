@@ -1,7 +1,7 @@
-$OpenBSD: patch-src_configure,v 1.5 2013/06/11 10:30:54 sthen Exp $
---- src/configure.orig	Mon May 27 22:37:36 2013
-+++ src/configure	Tue Nov 19 20:52:44 2013
-@@ -4939,7 +4939,7 @@ case "${host_os}" in
+$OpenBSD: patch-src_configure,v 1.6 2015/08/29 14:48:34 jasper Exp $
+--- src/configure.orig	Mon Aug 24 01:41:27 2015
++++ src/configure	Wed Feb  3 19:42:40 2016
+@@ -4940,7 +4940,7 @@ case "${host_os}" in
  		SONAME="${SHAREDPREFIX}ecl.${SHAREDEXT}.SOVERSION"
  		SONAME_LDFLAGS="-Wl,-soname,SONAME"
  		;;
