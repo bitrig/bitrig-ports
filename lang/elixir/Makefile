@@ -11,8 +11,6 @@ CATEGORIES=		lang
 
 HOMEPAGE=		http://elixir-lang.org/
 
-MAINTAINER=		Jasper Lievisse Adriaanse <jasper@openbsd.org>
-
 # Apache2
 PERMIT_PACKAGE_CDROM=	Yes
 
