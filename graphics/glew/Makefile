@@ -15,6 +15,8 @@ SHARED_LIBS=	GLEW	7.0 \
 
 HOMEPAGE=	http://glew.sourceforge.net/
 
+MAINTAINER=	Brad Smith <brad@comstyle.com>
+
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
@@ -28,6 +30,13 @@ MAKE_FLAGS=	LD=${CC} LN= STRIP=
 USE_GMAKE=	Yes
 
 NO_TEST=	Yes
+
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build
+
+# clang infinitly spins, this is set in files/Makefile.bitrig
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c
 
 post-extract:
 	@cp ${FILESDIR}/Makefile.bitrig ${WRKSRC}/config
