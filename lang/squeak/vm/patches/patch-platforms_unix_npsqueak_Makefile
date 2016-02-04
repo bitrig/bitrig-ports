@@ -1,11 +1,16 @@
 $OpenBSD: patch-platforms_unix_npsqueak_Makefile,v 1.1 2008/07/23 11:17:22 espie Exp $
---- platforms/unix/npsqueak/Makefile.orig	Sat Oct 13 05:03:33 2007
-+++ platforms/unix/npsqueak/Makefile	Wed Jul 23 13:07:25 2008
-@@ -8,7 +8,7 @@ INC	= -I./include -I/usr/X11R6/include
- CC	= gcc
+--- platforms/unix/npsqueak/Makefile.orig	Fri Oct 12 22:03:33 2007
++++ platforms/unix/npsqueak/Makefile	Thu Feb  4 13:53:21 2016
+@@ -5,10 +5,10 @@
+ ############ Customize flags here #######################
+ 
+ INC	= -I./include -I/usr/X11R6/include
+-CC	= gcc
++CC	= cc
  CFLAGS	= $(INC) -O2 -fPIC -Wall
- LD	= gcc
+-LD	= gcc
 -LDFLAGS = -lXt
++LD	= cc
 +LDFLAGS = -L/usr/X11R6/lib -lXt
  
  # usually overridden from top level makefile

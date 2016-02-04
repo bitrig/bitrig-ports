@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.21 2015/01/22 13:11:44 naddy Exp $
 
-BROKEN =	needs work on bitrig
-
 COMMENT =	smalltalk system, vm
 
 SRCV =		1
@@ -24,7 +22,7 @@ AUTOCONF_VERSION =	2.60
 DESTDIRNAME =		ROOT
 CONFIGURE_ENV =		LDFLAGS="-lpthread -L${LOCALBASE}/lib ${LDFLAGS}" \
 			RANLIB=ranlib CFLAGS="-I${LOCALBASE}/include ${CFLAGS}" \
-			CC=gcc ac_cv_socklen_t=yes
+			ac_cv_socklen_t=yes
 USE_GMAKE =		Yes
 USE_LIBTOOL =		No
 NO_TEST =		Yes
@@ -32,6 +30,10 @@ NO_TEST =		Yes
 WANTLIB =		GL X11 m c SM util Xext ICE Xrender Xt pthread \
 			pthread-stubs xcb
 FULLV =			$V-${SRCV}
+
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c
 
 # XXX gnu-interp doesn't work with pie.
 #.if ${MACHINE_ARCH} != "powerpc"
