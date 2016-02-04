@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.24 2015/02/16 22:57:09 naddy Exp $
 
-BROKEN =	needs work on bitrig
-
 COMMENT =	Haskell 98 interpreter
 
 DISTNAME =	hugs98-plus-Sep2006
@@ -28,5 +26,17 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		GL GLU X11 c m ncurses pthread readline
 LIB_DEPENDS=		devel/readline
+
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
+
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/ \
+				${WRKSRC}/packages/ALUT \
+				${WRKSRC}/packages/Cabal/tests/HSQL \
+				${WRKSRC}/packages/GLUT \
+				${WRKSRC}/packages/OpenAL \
+				${WRKSRC}/packages/OpenGL \
+				${WRKSRC}/packages/network
 
 .include <bsd.port.mk>

@@ -1,0 +1,10 @@
+--- fp-platform.orig	Thu Feb  4 05:58:20 2016
++++ fp-platform	Thu Feb  4 05:58:35 2016
+@@ -25,6 +25,7 @@ do
+ 	mingw32*) os=mingw32 ;;
+ 	netbsd*) os=netbsd ;;
+ 	openbsd*) os=openbsd ;;
++	bitrig*) os=openbsd ;;
+ 	osf[12]*) os=osf1 ;;
+ 	osf*) os=osf3 ;;
+ 	solaris2*) os=solaris2 ;;
