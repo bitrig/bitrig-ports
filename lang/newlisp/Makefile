@@ -1,7 +1,5 @@
 #       $OpenBSD: Makefile,v 1.14 2015/03/15 10:07:43 jasper Exp $
 
-BROKEN=fake install installs into base
-
 COMMENT=	newLISP is a LISP like, general purpose scripting language
 
 V=		10.6.2
@@ -25,8 +23,7 @@ SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=	simple
 CONFIGURE_SCRIPT=	configure-alt
 CONFIGURE_ARGS +=	--enable-readline
-MAKE_FLAGS=		CC="${CC}"
-
+CFLAGS=			-I${LOCALBASE}/include
 TEST_TARGET=		check
 
 WRKBUILD=		${WRKSRC}
