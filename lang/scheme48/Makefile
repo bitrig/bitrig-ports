@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.12 2014/10/27 21:06:25 kirby Exp $
 
-BROKEN=		needs work on bitrig
-
 COMMENT=	Scheme Underground's implementation of R5RS
 #'
 
@@ -22,6 +20,10 @@ WANTLIB=		c m pthread
 
 USE_GMAKE=		Yes
 ALL_TARGET=		enough
+
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c
 
 CONFIGURE_STYLE=	gnu
 CONFIGURE_ENV=		LD="${CC}" LDFLAGS="-Wl,--export-dynamic"
