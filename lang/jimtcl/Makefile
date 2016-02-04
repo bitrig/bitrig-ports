@@ -9,10 +9,6 @@ SHARED_LIBS =		jim 2.1
 CATEGORIES =		lang devel
 HOMEPAGE =		http://jim.tcl.tk/
 
-MASTER_SITES = 		http://repo.or.cz/w/jimtcl.git/snapshot/
-
-WRKDIST =		${WRKOBJDIR}/${DISTNAME}/jimtcl
-
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
