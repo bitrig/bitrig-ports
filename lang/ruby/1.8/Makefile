@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.36 2015/04/15 21:58:16 jeremy Exp $
 
-BROKEN= 		needs work on bitrig
-
 COMMENT-main=		object oriented script language with threads
 COMMENT-iconv=		libiconv interface for ruby
 COMMENT-gdbm=		gdbm interface for ruby
@@ -22,16 +20,11 @@ PKGNAME-ri_docs=	ruby-ri_docs-${VERSION}.${PATCHLEVEL}
 PKG_ARCH-ri_docs=	*
 PKGSPEC-main=		ruby->=1.8,<1.9
 
-MODULES=		converters/libiconv
 MODULES+=		gcc4
 MODGCC4_ARCHS=		*
 MODGCC4_LANGS=		c
 REVISION-main=		4
 REVISION-ri_docs=	0
-REVISION-iconv=		0
-REVISION-gdbm=		0
-REVISION-tk=		0
-REVISION-ri_docs=	1
 
 CONFIGURE_ARGS=		--program-suffix=18 \
 			--enable-ipv6 \
@@ -39,7 +32,7 @@ CONFIGURE_ARGS=		--program-suffix=18 \
 			--with-opt-dir="${LOCALBASE}" \
 			--disable-option-checking
 
-CONFIGURE_ENV=		LIBruby18_VERSION=${LIBruby18_VERSION}
+CONFIGURE_ENV=		LIBruby18_VERSION=${LIBruby18_VERSION} CC="egcc"
 
 MODULES=		converters/libiconv
 

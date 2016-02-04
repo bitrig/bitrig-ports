@@ -3,9 +3,20 @@ $OpenBSD: patch-configure,v 1.4 2015/04/15 21:58:16 jeremy Exp $
 Override the arch setting to remove OpenBSD version from it,
 so ports don't have to be bumped when OpenBSD version changes.
 
---- configure.orig	Thu Jun 27 04:57:43 2013
-+++ configure	Mon Apr 13 19:51:16 2015
-@@ -10912,7 +10912,7 @@ if test "$enable_shared" = 'yes'; then
+--- configure.orig	Thu Jun 27 06:57:43 2013
++++ configure	Thu Feb  4 09:51:25 2016
+@@ -10430,7 +10430,7 @@ fi
+ 			  test "$GCC" = yes && test "$rb_cv_prog_gnu_ld" = yes || LDSHARED="ld -Bshareable"
+ 			fi
+ 			rb_cv_dlopen=yes ;;
+-	openbsd*) 	: ${LDSHARED="\$(CC) -shared ${CCDLFLAGS}"}
++	openbsd* | bitrig*) 	: ${LDSHARED="\$(CC) -shared ${CCDLFLAGS}"}
+ 			if test "$rb_cv_binary_elf" = yes; then
+ 			    LDFLAGS="$LDFLAGS -Wl,-E"
+ 			fi
+@@ -10910,9 +10910,9 @@ if test "$enable_shared" = 'yes'; then
+ 	   LIBRUBY_ALIASES=""
+ 	fi
   	;;
 -    openbsd*)
 +    openbsd* | bitrig*)
@@ -15,14 +26,14 @@ so ports don't have to be bumped when OpenBSD version changes.
  	;;
      solaris*)
  	SOLIBS='$(LIBS)'
-@@ -11215,7 +11215,10 @@ _ACEOF
+@@ -11215,7 +11215,11 @@ _ACEOF
  _ACEOF
  
  else
 -    arch="${target_cpu}-${target_os}"
 +    case "$target_os" in
-+      openbsd*) arch="$target_cpu-openbsd" ;;
 +      bitrig*) arch="$target_cpu-bitrig" ;;
++      openbsd*) arch="$target_cpu-openbsd" ;;
 +      *) arch="${target_cpu}-${target_os}" ;;
 +    esac
      cat >>confdefs.h <<_ACEOF
