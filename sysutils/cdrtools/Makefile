@@ -3,13 +3,13 @@
 COMMENT=		ISO 9660 filesystem and CD/DVD/BD creation tools
 
 DISTNAME=		cdrtools-3.00
-REVISION=		3
+REVISION=		4
 CATEGORIES=		sysutils
 HOMEPAGE=		http://cdrtools.sourceforge.net/private/cdrtools.html
 
 # mostly CDDL, some components GPL (see COPYING)
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c sndio
+WANTLIB=		c sndio gettextlib
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cdrtools/}
 
@@ -17,7 +17,7 @@ MODULES=		converters/libiconv \
 			devel/gettext
 LIB_DEPENDS=		converters/libiconv \
 			devel/gettext
-RUN_DEPENDS=		${LIB_DEPENDS}
+RUN_DEPENDS=		${LIB_DEPENDS} devel/gettext-tools
 BUILD_DEPENDS=		devel/m4
 USE_GMAKE=		Yes
 
