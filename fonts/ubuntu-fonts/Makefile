@@ -4,6 +4,7 @@ COMMENT =		unicode sans-serif/monospace TrueType fonts from Ubuntu
 
 DISTNAME =		ubuntu-font-family-0.83
 PKGNAME =		${DISTNAME:S,-family,s,}
+REVISION=		0
 
 CATEGORIES =		fonts
 
