@@ -1,8 +1,0 @@
-@comment $OpenBSD$
-share/doc/mb-think-twice/
-share/doc/mb-think-twice/MB-ThinkTwice_Readme.txt
-share/fonts/
-@fontdir share/fonts/mb-think-twice/
-share/fonts/mb-think-twice/MB-ThinkTwice_Bold.ttf
-share/fonts/mb-think-twice/MB-ThinkTwice_Ghost.ttf
-share/fonts/mb-think-twice/MB-ThinkTwice_Regular.ttf

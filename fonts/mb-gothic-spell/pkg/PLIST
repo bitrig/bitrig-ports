@@ -1,6 +1,0 @@
-@comment $OpenBSD$
-share/doc/mb-gothic-spell/
-share/doc/mb-gothic-spell/MB_Gothic_Spell Readme.txt
-share/fonts/
-@fontdir share/fonts/mb-gothic-spell/
-share/fonts/mb-gothic-spell/MB_Gothic_Spell.ttf

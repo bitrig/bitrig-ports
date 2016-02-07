@@ -1,6 +1,0 @@
-@comment $OpenBSD$
-share/doc/mb-underground/
-share/doc/mb-underground/MB_Underground Readme.txt
-share/fonts/
-@fontdir share/fonts/mb-underground/
-share/fonts/mb-underground/MB_Underground.ttf

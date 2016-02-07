@@ -1,8 +1,0 @@
-@comment $OpenBSD$
-share/doc/dancing-script/
-share/doc/dancing-script/FONTLOG.txt
-share/doc/dancing-script/OFL.txt
-share/fonts/
-@fontdir share/fonts/dancing-script/
-share/fonts/dancing-script/DancingScript-Bold.ttf
-share/fonts/dancing-script/DancingScript-Regular.ttf
