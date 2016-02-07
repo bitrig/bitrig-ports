@@ -5,7 +5,7 @@ PKG_ARCH =		*
 COMMENT =		advanced Unicode font for medievalists
 DISTNAME =		junicode-0-7-8
 PKGNAME =		junicode-0.7.8
-REVISION =		0
+REVISION =		1
 EXTRACT_SUFX =		.zip
 CATEGORIES =		fonts
 
