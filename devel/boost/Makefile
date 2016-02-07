@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.56 2015/08/03 18:29:30 jca Exp $
 
-BROKEN=		broken for now on bitrig
-
 COMMENT=	free peer-reviewed portable C++ source libraries
 
 VERSION=	1.58.0
@@ -67,6 +65,7 @@ LIB_DEPENDS=	archivers/bzip2
 CFLAGS+=	-O0
 CXXFLAGS+=	-O0
 .endif
+CXXFLAGS+=	-std=c++11
 
 MAKE_ENV=	GCC="${CC}" GXX="${CXX}"
 
