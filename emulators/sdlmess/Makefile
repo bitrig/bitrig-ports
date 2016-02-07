@@ -45,8 +45,11 @@ RUN_DEPENDS-main =	fonts/liberation-fonts
 LIB_DEPENDS =		devel/sdl-ttf
 
 MAKE_FLAGS =		OPT_FLAGS='-DINI_PATH="\"${SYSCONFDIR}/mess;\""'
-MAKE_FLAGS +=		CXX="${CXX}" LD="${CXX}"
-MAKE_ENV =		ARCH=$(ARCH) CC=$(CC) CFLAGS="$(CFLAGS)" \
+MAKE_ENV =		ARCH=$(ARCH) \
+			CC=$(CC) \
+			CXX="${CXX}" \
+			LD="${CXX}" \
+			CFLAGS="$(CFLAGS)" \
 			TARGETOS=openbsd \
 			NO_USE_QTDEBUG=1 \
 			NOWERROR=1 \
