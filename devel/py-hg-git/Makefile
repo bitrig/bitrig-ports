@@ -4,7 +4,7 @@ COMMENT =		mercurial extension to work with git repositories
 
 MODPY_EGG_VERSION =	0.8.2
 DISTNAME =		py-hg-git-${MODPY_EGG_VERSION}
-REVISION =		0
+REVISION =		1
 
 CATEGORIES =		devel
 
