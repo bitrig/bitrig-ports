@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.138 2015/07/21 15:34:21 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.141 2015/10/03 20:37:27 ajacoutot Exp $
 
 SHARED_ONLY=		Yes
 
@@ -8,21 +8,22 @@ COMMENT-cloudprint=	gtk+3 Google Cloud Print backend
 COMMENT-guic=		gtk+ icon theme caching utility
 
 GNOME_PROJECT=		gtk+
-GNOME_VERSION=		3.16.6
+GNOME_VERSION=		3.18.1
 
 PKGNAME-main=		gtk+3-${GNOME_VERSION}
-REVISION=		0
 PKGNAME-cups=		gtk+3-cups-${GNOME_VERSION}
 PKGNAME-cloudprint=	gtk+3-cloudprint-${GNOME_VERSION}
 PKGNAME-guic=		gtk-update-icon-cache-${GNOME_VERSION}
 
 CATEGORIES=		x11 devel
 
-SHARED_LIBS +=  gdk-3                1600.0   # 1600.0
-SHARED_LIBS +=  gtk-3                1600.0   # 1600.0
+SHARED_LIBS +=  gdk-3                1800.0   # 1600.0
+SHARED_LIBS +=  gtk-3                1800.0   # 1600.0
 SHARED_LIBS +=  gailutil-3           0.0      # 0.0
 
 HOMEPAGE=		http://www.gtk.org/
+
+MAINTAINER=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes
