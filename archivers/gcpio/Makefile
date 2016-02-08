@@ -6,6 +6,7 @@ DISTNAME=	cpio-2.12
 PKGNAME=	g${DISTNAME}
 CATEGORIES=	archivers
 HOMEPAGE=	https://www.gnu.org/software/cpio/
+REVISION=	0
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=	Yes
