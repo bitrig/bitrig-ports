@@ -1,6 +1,6 @@
 $OpenBSD: patch-makefile,v 1.6 2015/04/19 16:20:26 bcallah Exp $
---- makefile.orig	Mon Feb  8 08:08:53 2016
-+++ makefile	Mon Feb  8 08:10:49 2016
+--- makefile.orig	Mon Feb  8 09:50:44 2016
++++ makefile	Mon Feb  8 09:51:10 2016
 @@ -24,7 +24,7 @@
  #-------------------------------------------------
  
@@ -62,12 +62,3 @@ $OpenBSD: patch-makefile,v 1.6 2015/04/19 16:20:26 bcallah Exp $
  
  # we compile C-only to C89 standard with GNU extensions
  # we compile C++ code to C++98 standard with GNU extensions
-@@ -562,7 +565,7 @@ CCOMFLAGS += -pg
- endif
- 
- # add the optimization flag
--CCOMFLAGS += -O$(OPTIMIZE)
-+# CCOMFLAGS += -O$(OPTIMIZE)
- 
- # add the error warning flag
- ifndef NOWERROR
