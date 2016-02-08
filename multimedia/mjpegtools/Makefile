@@ -29,6 +29,9 @@ WANTLIB += sndio usbhid xcb xcb-render xcb-shm z
 WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
 LIB_DEPENDS=		devel/sdl \
 			devel/sdl-gfx \
 			graphics/jpeg \
