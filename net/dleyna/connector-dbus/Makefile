@@ -13,6 +13,8 @@ WANTLIB += dleyna-core-1.0 ffi gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0
 WANTLIB += gssdp-1.0 gupnp-1.0 lzma m pcre pthread soup-2.4 sqlite3
 WANTLIB += xml2 z
 
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/build-aux
+
 post-install:
 	rm ${PREFIX}/lib/dleyna-1.0/connectors/*.la
 

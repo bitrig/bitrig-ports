@@ -28,6 +28,6 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--disable-gtk \
 			--with-x
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib"
+			LDFLAGS="-L${LOCALBASE}/lib -pthread"
 
 .include <bsd.port.mk>

@@ -83,8 +83,8 @@ RUN_DEPENDS-web= ${MODPHP_RUN_DEPENDS} \
 
 USE_GMAKE=	Yes
 
-CC=		cc
-CXX=		${CC}
+#CC=		${CXX}
+#CXX=		${CXX}
 
 LIBTOOL_FLAGS=	--tag=disable-static
 
@@ -105,12 +105,13 @@ CONFIGURE_STYLE= gnu
 MODGNU_CONFIG_GUESS_DIRS=${WRKDIST}/autoconf
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include \
 			-I${LOCALBASE}/include/zarafa \
-			-std=c++0x -fpermissive" \
+			-std=c++11 -fpermissive" \
 		LDFLAGS="-L${LOCALBASE}/lib -lexecinfo \
 			-L${LOCALBASE}/lib/zarafa" \
 		ZAFARA_LDFLAGS="-L${LOCALBASE}/lib/zarafa" \
 		PHP_SYSCONF_DIR="${SYSCONFDIR}/php-${MODPHP_VERSION}" \
-		ac_cv_lib_pam_pam_start=no
+		ac_cv_lib_pam_pam_start=no \
+		CC="${CXX}"
 CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
 		--disable-static \
 		--with-gsoap-prefix=${LOCALBASE} \
