@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.30 2015/05/22 11:31:15 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.31 2015/08/25 13:18:27 sthen Exp $
 
 COMMENT=		color ascii art library
 
@@ -6,7 +6,7 @@ DISTNAME=		libcaca-0.99.beta19
 PKGNAME=		libcaca-0.99.19
 SHARED_LIBS +=  caca           1.2               # .0.99
 CATEGORIES=		graphics
-REVISION=		0
+REVISION=		1
 
 HOMEPAGE=		http://caca.zoy.org/wiki/libcaca
 
@@ -21,6 +21,8 @@ MASTER_SITES=		http://caca.zoy.org/files/libcaca/ \
 FLAVORS=		no_x11
 FLAVOR?=
 
+MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/.auto
+
 .if ${FLAVOR:Mno_x11}
 CONFIGURE_ARGS+=	--disable-x11 \
 			--disable-imlib2
@@ -30,7 +32,6 @@ WANTLIB +=		X11 Xext freetype xcb Imlib2>=1
 .endif
 
 CONFIGURE_STYLE= 	gnu
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/.auto
 CONFIGURE_ARGS+=	--disable-doc \
 			--disable-slang \
 			--disable-ruby \
