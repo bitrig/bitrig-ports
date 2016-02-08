@@ -50,7 +50,7 @@ MAKE_ENV =		ARCH=$(ARCH) \
 			CXX="${CXX}" \
 			LD="${CXX}" \
 			CFLAGS="$(CFLAGS)" \
-			TARGETOS=openbsd \
+			TARGETOS=bitrig \
 			NO_USE_QTDEBUG=1 \
 			NOWERROR=1 \
 			SDL_LIBVER=sdl

@@ -1,6 +1,6 @@
 $OpenBSD: patch-makefile,v 1.6 2015/04/19 16:20:26 bcallah Exp $
---- makefile.orig	Sat Apr 18 11:21:38 2015
-+++ makefile	Sat Apr 18 11:22:40 2015
+--- makefile.orig	Mon Feb  8 08:08:53 2016
++++ makefile	Mon Feb  8 08:10:49 2016
 @@ -24,7 +24,7 @@
  #-------------------------------------------------
  
@@ -10,7 +10,17 @@ $OpenBSD: patch-makefile,v 1.6 2015/04/19 16:20:26 bcallah Exp $
  endif
  
  ifndef SUBTARGET
-@@ -227,10 +227,10 @@ endif
+@@ -89,6 +89,9 @@ endif
+ ifeq ($(firstword $(filter NetBSD,$(UNAME))),NetBSD)
+ TARGETOS = netbsd
+ endif
++ifeq ($(firstword $(filter OpenBSD,$(UNAME))),Bitrig)
++TARGETOS = bitrig
++endif
+ ifeq ($(firstword $(filter OpenBSD,$(UNAME))),OpenBSD)
+ TARGETOS = openbsd
+ endif
+@@ -227,10 +230,10 @@ endif
  # BIGENDIAN = 1
  
  # uncomment next line to build expat as part of MAME build
@@ -23,16 +33,18 @@ $OpenBSD: patch-makefile,v 1.6 2015/04/19 16:20:26 bcallah Exp $
  
  # uncomment next line to build libflac as part of MAME build
  BUILD_FLAC = 1
-@@ -364,7 +364,7 @@ endif
+@@ -364,8 +367,8 @@ endif
  # compiler, linker and utilities
  ifneq ($(TARGETOS),emscripten)
  AR = @ar
 -CC = @gcc
-+CC ?= @gcc
- LD = @g++
+-LD = @g++
++CC ?= @clang
++LD ?= @clang++
  endif
  MD = -mkdir$(BUILD_EXE)
-@@ -417,7 +417,7 @@ NAME = $(TARGET)$(SUBTARGET)
+ RM = @rm -f
+@@ -417,7 +420,7 @@ NAME = $(TARGET)$(SUBTARGET)
  endif
  
  # fullname is prefix+name+suffix+suffix64+suffixdebug
@@ -41,7 +53,7 @@ $OpenBSD: patch-makefile,v 1.6 2015/04/19 16:20:26 bcallah Exp $
  
  # add an EXE suffix to get the final emulator name
  EMULATOR = $(FULLNAME)$(EXE)
-@@ -520,7 +520,7 @@ CPPONLYFLAGS =
+@@ -520,7 +523,7 @@ CPPONLYFLAGS =
  
  # CFLAGS is defined based on C or C++ targets
  # (remember, expansion only happens when used, so doing it here is ok)
@@ -50,7 +62,7 @@ $OpenBSD: patch-makefile,v 1.6 2015/04/19 16:20:26 bcallah Exp $
  
  # we compile C-only to C89 standard with GNU extensions
  # we compile C++ code to C++98 standard with GNU extensions
-@@ -562,7 +562,7 @@ CCOMFLAGS += -pg
+@@ -562,7 +565,7 @@ CCOMFLAGS += -pg
  endif
  
  # add the optimization flag
