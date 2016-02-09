@@ -64,7 +64,7 @@ CONFIGURE_ARGS=	--without-gnome-vfs
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/ImageMagick \
 			  -I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
-		CXXFLAGS="${CXXFLAGS} -std=c++11"
+		CXXFLAGS="${CXXFLAGS} -std=c++11 -Wno-return-type"
 
 NO_TEST=	Yes
 
