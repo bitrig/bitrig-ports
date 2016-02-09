@@ -1,0 +1,12 @@
+--- mozilla/python/mozboot/mozboot/bootstrap.py.orig	Thu Feb 11 11:27:48 2016
++++ mozilla/python/mozboot/mozboot/bootstrap.py	Thu Feb 11 11:28:27 2016
+@@ -100,7 +100,8 @@ class Bootstrapper(object):
+             cls = OSXBootstrapper
+             args['version'] = osx_version
+ 
+-        elif sys.platform.startswith('openbsd'):
++        elif sys.platform.startswith('openbsd') or \
++                sys.platform.startswith('bitrig'):
+             cls = OpenBSDBootstrapper
+             args['version'] = platform.uname()[2]
+ 

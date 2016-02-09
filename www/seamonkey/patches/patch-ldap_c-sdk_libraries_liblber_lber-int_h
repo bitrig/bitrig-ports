@@ -1,0 +1,11 @@
+--- ldap/c-sdk/libraries/liblber/lber-int.h.orig	Thu Feb 11 09:57:17 2016
++++ ldap/c-sdk/libraries/liblber/lber-int.h	Thu Feb 11 09:57:31 2016
+@@ -63,7 +63,7 @@ extern "C" {
+ #ifdef macintosh
+ # include "ldap-macos.h"
+ #else /* macintosh */
+-#if !defined(BSDI) && !defined(DARWIN) && !defined(FREEBSD) && !defined(OPENBSD)
++#if !defined(BSDI) && !defined(DARWIN) && !defined(FREEBSD) && !defined(OPENBSD) && !defined(BITRIG)
+ # include <malloc.h>
+ #endif
+ # include <errno.h>

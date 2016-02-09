@@ -1,0 +1,19 @@
+--- fig2dev/fig2dev.h.pat.orig	Wed Apr  4 11:35:48 2007
++++ fig2dev/fig2dev.h	Tue Feb  9 09:05:21 2016
+@@ -213,16 +213,6 @@ struct Cmap {
+ #endif /* MAXPATHLEN */
+ #endif /* PATH_MAX */
+ 
+-#if ( !defined(__NetBSD__) && !defined(__DARWIN__) && !defined(__FreeBSD) )
+-extern int		sys_nerr, errno;
+-#endif
+-
+-#if ( !(defined(BSD) && (BSD >= 199306)) && !defined(__NetBSD__) && \
+-	!defined(__GNU_LIBRARY__) && !defined(__FreeBSD__) && \
+-	!defined(__GLIBC__) && !defined(__CYGWIN__) && !defined(__DARWIN__))
+-	    extern char *sys_errlist[];
+-#endif
+-
+ typedef struct _point
+ {
+     int x,y;

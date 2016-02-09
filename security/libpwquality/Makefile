@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2015/07/24 06:18:21 ajacoutot Exp $
 
-BROKEN = 	needs work on bitrig
-
 COMMENT =		library to generate, and check strenght of passwords
 
 DISTNAME =		libpwquality-1.3.0
@@ -26,6 +24,7 @@ MODULES =		devel/gettext \
 LIB_DEPENDS =		security/cracklib
 
 CONFIGURE_STYLE =	gnu
+USE_LIBTOOL =		gnu
 CONFIGURE_ARGS =	--with-python-binary=python${MODPY_VERSION} \
 			--with-python-rev=${MODPY_VERSION} \
 			--with-sconfigdir=${SYSCONFDIR} \

@@ -37,10 +37,6 @@ MODULES=		devel/dconf \
 			x11/gnome
 
 # sync with devel/spidermonkey
-MODULES +=		gcc4
-MODGCC4_ARCHS=		*
-MODGCC4_LANGS=		c c++
-
 MODPY_VERSION =		${MODPY_DEFAULT_VERSION_3}
 
 MODGNOME_TOOLS +=	desktop-file-utils docbook gobject-introspection

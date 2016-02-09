@@ -1,0 +1,14 @@
+--- mozilla/ipc/chromium/chromium-config.mozbuild.orig	Thu Feb 11 12:14:25 2016
++++ mozilla/ipc/chromium/chromium-config.mozbuild	Thu Feb 11 12:14:54 2016
+@@ -69,5 +69,11 @@ else:
+             'OS_BSD': 1,
+         })
+ 
++    elif CONFIG['OS_ARCH'] == 'Bitrig':
++        DEFINES.update({
++            'OS_BITRIG': 1,
++            'OS_BSD': 1,
++        })
++
+     else:
+         DEFINES['OS_LINUX'] = 1

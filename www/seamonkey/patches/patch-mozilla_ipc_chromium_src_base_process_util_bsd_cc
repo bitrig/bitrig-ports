@@ -1,0 +1,11 @@
+--- mozilla/ipc/chromium/src/base/process_util_bsd.cc.orig	Thu Feb 11 11:41:07 2016
++++ mozilla/ipc/chromium/src/base/process_util_bsd.cc	Thu Feb 11 11:41:20 2016
+@@ -30,7 +30,7 @@
+  * always the case.
+  */
+ 
+-#if defined(OS_NETBSD) || defined(OS_OPENBSD)
++#if defined(OS_NETBSD) || defined(OS_OPENBSD) || defined(OS_BITRIG)
+ # define CHILD_UNPRIVILEGED_UID 32767
+ # define CHILD_UNPRIVILEGED_GID 32767
+ #else

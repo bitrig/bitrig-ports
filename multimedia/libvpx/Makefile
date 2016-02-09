@@ -17,9 +17,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB=	c m pthread
 WANTLIB+=	c++ c++abi
 
-MODCLANG_ARCHS=	amd64 i386
-MODCLANG_LANGS=	c c++
-
 .if ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386"
 BUILD_DEPENDS+=	devel/yasm
 .endif

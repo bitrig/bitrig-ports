@@ -1,0 +1,20 @@
+--- mozilla/ipc/chromium/src/build/build_config.h.orig	Thu Feb 11 11:39:23 2016
++++ mozilla/ipc/chromium/src/build/build_config.h	Thu Feb 11 11:40:16 2016
+@@ -30,6 +30,8 @@
+ #define OS_NETBSD 1
+ #elif defined(__OpenBSD__)
+ #define OS_OPENBSD 1
++#elif defined(__Bitrig__)
++#define OS_BITRIG 1
+ #elif defined(_WIN32)
+ #define OS_WIN 1
+ #else
+@@ -39,7 +41,7 @@
+ // For access to standard BSD features, use OS_BSD instead of a
+ // more specific macro.
+ #if defined(OS_DRAGONFLY) || defined(OS_FREEBSD)	\
+-  || defined(OS_NETBSD) || defined(OS_OPENBSD)
++  || defined(OS_NETBSD) || defined(OS_OPENBSD) || defined(OS_BITRIG)
+ #define OS_BSD 1
+ #endif
+ 

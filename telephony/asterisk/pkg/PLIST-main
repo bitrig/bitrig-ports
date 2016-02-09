@@ -250,6 +250,7 @@ lib/asterisk/modules/chan_bridge.so
 lib/asterisk/modules/chan_console.so
 lib/asterisk/modules/chan_iax2.so
 lib/asterisk/modules/chan_local.so
+lib/asterisk/modules/chan_mgcp.so
 lib/asterisk/modules/chan_motif.so
 lib/asterisk/modules/chan_multicast_rtp.so
 lib/asterisk/modules/chan_sip.so
@@ -382,31 +383,6 @@ sbin/astgenkey
 @comment sbin/autosupport
 sbin/rasterisk
 sbin/safe_asterisk
-share/asterisk/agi-bin/
-share/asterisk/documentation/
-share/asterisk/documentation/appdocsxml.dtd
-share/asterisk/documentation/core-en_US.xml
-share/asterisk/documentation/thirdparty/
-share/asterisk/firmware/
-share/asterisk/firmware/iax/
-share/asterisk/images/
-share/asterisk/images/asterisk-intro.jpg
-share/asterisk/images/kpad2.jpg
-share/asterisk/keys/
-share/asterisk/phoneprov/
-share/asterisk/phoneprov/000000000000-directory.xml
-share/asterisk/phoneprov/000000000000-phone.cfg
-share/asterisk/phoneprov/000000000000.cfg
-share/asterisk/phoneprov/polycom.xml
-share/asterisk/phoneprov/polycom_line.xml
-share/asterisk/phoneprov/snom-mac.xml
-share/asterisk/static-http/
-share/asterisk/static-http/ajamdemo.html
-share/asterisk/static-http/astman.css
-share/asterisk/static-http/astman.js
-share/asterisk/static-http/core-en_US.xml
-share/asterisk/static-http/mantest.html
-share/asterisk/static-http/prototype.js
 share/doc/asterisk/
 share/doc/asterisk/Asterisk-11-Reference.pdf
 share/doc/asterisk/Asterisk-Admin-Guide.pdf
@@ -597,7 +573,3 @@ share/examples/asterisk/openbsd/voicemail.conf.sample
 @owner _asterisk
 @sample /var/spool/asterisk/voicemail/default/
 @sample /var/spool/asterisk/voicemail/default/1234/
-@group
-@owner
-@mode
-@rcscript ${RCDIR}/asterisk

@@ -1,0 +1,20 @@
+--- mozilla/ipc/chromium/moz.build.orig	Thu Feb 11 12:15:03 2016
++++ mozilla/ipc/chromium/moz.build	Thu Feb 11 12:15:33 2016
+@@ -11,6 +11,7 @@ os_dragonfly = 0
+ os_freebsd = 0
+ os_netbsd = 0
+ os_openbsd = 0
++os_bitrig = 0
+ os_bsd = 0
+ os_linux = 0
+ 
+@@ -31,6 +32,9 @@ else:
+         os_bsd = 1
+     elif CONFIG['OS_ARCH'] == 'OpenBSD':
+         os_openbsd = 1
++        os_bsd = 1
++    elif CONFIG['OS_ARCH'] == 'Bitrig':
++        os_bitrig = 1
+         os_bsd = 1
+     else:
+         os_linux = 1

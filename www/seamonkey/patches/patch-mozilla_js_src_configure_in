@@ -1,0 +1,37 @@
+--- mozilla/js/src/configure.in.orig	Thu Feb 11 10:05:05 2016
++++ mozilla/js/src/configure.in	Thu Feb 11 10:10:10 2016
+@@ -786,6 +786,7 @@ if test -n "$CROSS_COMPILE"; then
+         freebsd*)     OS_ARCH=FreeBSD OS_TARGET=FreeBSD ;;
+         netbsd*)      OS_ARCH=NetBSD OS_TARGET=NetBSD ;;
+         openbsd*)     OS_ARCH=OpenBSD OS_TARGET=OpenBSD ;;
++        bitrig*)      OS_ARCH=OpenBSD OS_TARGET=OpenBSD ;;
+     esac
+     case "${target}" in
+         *-android*|*-linuxandroid*) OS_ARCH=Linux OS_TARGET=Android ;;
+@@ -846,7 +847,7 @@ freebsd*)
+ netbsd*)
+     HOST_OS_ARCH=NetBSD
+     ;;
+-openbsd*)
++openbsd*|bitrig*)
+     HOST_OS_ARCH=OpenBSD
+     ;;
+ solaris*)
+@@ -1922,7 +1923,7 @@ ia64*-hpux*)
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(DSO_SONAME) -o $@'
+     ;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     DLL_SUFFIX=".so.1.0"
+     DSO_CFLAGS=''
+     DSO_PIC_CFLAGS='-fPIC'
+@@ -2410,7 +2411,7 @@ then
+ 			fi
+ 			;;
+ 
+-	    *-*-openbsd*|*-*-bsdi*)
++	    *-*-openbsd*|*-*-bsdi*|*-*-bitrig*)
+ 			AC_DEFINE(_REENTRANT)
+ 			AC_DEFINE(_THREAD_SAFE)
+ 			dnl -pthread links in -lc_r, so don't specify it explicitly.

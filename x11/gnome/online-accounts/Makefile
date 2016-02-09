@@ -37,6 +37,7 @@ LIB_DEPENDS=		devel/json-glib \
 			net/librest \
 			net/telepathy/telepathy-glib \
 			x11/gnome/libsecret \
+			textproc/hyphen \
 			www/webkitgtk4
 
 MODGNOME_TOOLS += 	docbook gobject-introspection gtk-update-icon-cache

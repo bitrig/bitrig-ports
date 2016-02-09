@@ -13,7 +13,7 @@ HOMEPAGE=		http://libtorrent.rakshasa.no/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=		c crypto curl>=14 idn m ncursesw \
-			pthread ssl torrent>=21 z
+			pthread ssl torrent>=20 z
 WANTLIB +=		c++ c++abi
 
 MASTER_SITES=		${HOMEPAGE}downloads/

@@ -75,7 +75,7 @@ CONFIGURE_ARGS=		--enable-system-sqlite \
 			--with-postgres="${LOCALBASE}"
 
 # XXX sync with API_V in lang/vala
-CONFIGURE_ENV +=	VALA_API_VERSION=0.28
+CONFIGURE_ENV +=	VALA_API_VERSION=0.30
 
 FAKE_FLAGS=		configdir="${PREFIX}/share/examples/libgda"
 

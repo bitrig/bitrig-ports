@@ -33,7 +33,7 @@ WANTLIB += pulse pulse-mainloop-glib pwquality rest-0.7 secret-1
 WANTLIB += smbclient sndfile soup-2.4 soup-gnome-2.4 sqlite3
 WANTLIB += tasn1 telepathy-glib upower-glib vorbis vorbisenc vorbisfile
 WANTLIB += webkit2gtk-4.0 xcb xcb-render xcb-shm xml2 z
-WANTLIB += heimdal/lib/heimsqlite
+WANTLIB += heimdal/lib/heimsqlite talloc
 WANTLIB += c++ c++abi
 
 MODULES=		devel/gettext \
@@ -51,7 +51,8 @@ LIB_DEPENDS=		audio/pulseaudio \
 			sysutils/upower \
 			x11/gnome/desktop \
 			x11/gnome/grilo \
-			x11/gnome/online-accounts
+			x11/gnome/online-accounts \
+			devel/libtalloc
 
 BUILD_DEPENDS=		x11/gnome/settings-daemon \
 			devel/iso-codes \
@@ -88,7 +89,8 @@ RUN_DEPENDS +=		x11/gnome/grilo-plugins
 
 MODGNOME_TOOLS += desktop-file-utils docbook gtk-update-icon-cache yelp
 MODGNOME_CPPFLAGS=	-I${X11BASE}/include
-MODGNOME_LDFLAGS=	-L${X11BASE}/lib
+MODGNOME_LDFLAGS=	"-L${X11BASE}/lib"
+MODGNOME_LDFLAGS+=	-ltalloc
 
 FAKE_FLAGS=		sysconfdir=${PREFIX}/share/examples/gnome-control-center
 

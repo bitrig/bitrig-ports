@@ -20,12 +20,3 @@ $OpenBSD: patch-Makefile,v 1.36 2015/06/08 08:44:52 sthen Exp $
    endif
  endif
  
-@@ -214,7 +218,7 @@ ifeq ($(OSARCH),NetBSD)
- endif
- 
- ifeq ($(OSARCH),OpenBSD)
--  _ASTCFLAGS+=-pthread -ftrampolines
-+  _ASTCFLAGS+=-pthread
- endif
- 
- ifeq ($(OSARCH),SunOS)

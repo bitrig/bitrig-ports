@@ -1,0 +1,11 @@
+--- mozilla/ipc/chromium/src/base/platform_thread.h.orig	Thu Feb 11 11:40:30 2016
++++ mozilla/ipc/chromium/src/base/platform_thread.h	Thu Feb 11 11:40:56 2016
+@@ -22,7 +22,7 @@ typedef void* PlatformThreadHandle;  // HANDLE
+ #elif defined(OS_POSIX)
+ #include <pthread.h>
+ typedef pthread_t PlatformThreadHandle;
+-#if defined(OS_LINUX) || defined(OS_OPENBSD) || defined(__GLIBC__)
++#if defined(OS_LINUX) || defined(OS_OPENBSD) || defined(__GLIBC__) || defined(OS_BITRIG)
+ #include <unistd.h>
+ typedef pid_t PlatformThreadId;
+ #elif defined(OS_BSD)

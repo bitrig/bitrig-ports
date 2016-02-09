@@ -1,0 +1,11 @@
+--- mozilla/ipc/chromium/src/base/platform_thread_posix.cc.orig	Thu Feb 11 11:42:18 2016
++++ mozilla/ipc/chromium/src/base/platform_thread_posix.cc	Thu Feb 11 11:42:28 2016
+@@ -54,7 +54,7 @@ PlatformThreadId PlatformThread::CurrentId() {
+ #else
+   return syscall(__NR_gettid);
+ #endif
+-#elif defined(OS_OPENBSD) || defined(__GLIBC__)
++#elif defined(OS_OPENBSD) || defined(__GLIBC__) || defined(OS_BITRIG)
+   return (intptr_t) (pthread_self());
+ #elif defined(OS_NETBSD)
+   return _lwp_self();

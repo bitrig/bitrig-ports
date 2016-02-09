@@ -23,4 +23,7 @@ MODULES =		devel/cmake
 BUILD_DEPENDS =		devel/boost
 LIB_DEPENDS =		textproc/icu4c
 
+FLAGS =		-std=c++11
+CONFIGURE_ENV =		FLAGS=${FLAGS}
+
 .include <bsd.port.mk>

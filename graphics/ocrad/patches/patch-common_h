@@ -1,0 +1,11 @@
+--- common.h.orig	Fri Feb 12 10:08:19 2016
++++ common.h	Fri Feb 12 10:08:21 2016
+@@ -16,6 +16,8 @@
+     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+ 
++#include <cstdlib>
++
+ extern int verbosity;
+ 
+ 

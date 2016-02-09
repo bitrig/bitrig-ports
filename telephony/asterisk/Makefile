@@ -1,14 +1,13 @@
-# $OpenBSD: Makefile,v 1.218 2015/06/08 08:44:52 sthen Exp $
+# $OpenBSD: Makefile,v 1.220 2015/10/10 19:58:47 sthen Exp $
 
 SHARED_ONLY=		Yes
 
 COMMENT-main=		open source multi-protocol PBX and telephony toolkit
 
-VER=			11.18.0
+VER=			11.20.0
 PORTROACH=		limitw:0,odd
 DISTNAME=		asterisk-${VER:S/beta/-beta/:S/rc/-rc/}
 PKGNAME-main=		asterisk-${VER}
-REVISION=		0
 
 CATEGORIES=		telephony
 
@@ -23,13 +22,15 @@ PERMIT_PACKAGE_FTP=	Yes
 
 WANTLIB-main += avcodec avformat avutil c crypto curl execinfo gsm idn
 WANTLIB-main += iksemel m ogg opencore-amrnb portaudio pthread spandsp
-WANTLIB-main += sqlite3 ssl swscale termcap tiff uuid vorbis
+WANTLIB-main += sqlite3 ssl c++ c++abi swscale termcap tiff uuid vorbis
 WANTLIB-main += vorbisenc vorbisfile xml2 z ${MODGETTEXT_WANTLIB}
-WANTLIB-main += c++ c++abi
 
 SHARED_LIBS=		asteriskssl 0.0		# 1
 
 MODULES=		devel/gettext
+MODULES+=		gcc4
+MODGCC4_ARCHS=		*
+MODGCC4_LANGS=		c c++
 
 MULTI_PACKAGES=		-main -calendar -http_post -ldap -odbc \
 			-pgsql -snmp -speex -tds
@@ -64,17 +65,17 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 USE_GMAKE=		Yes
 
 CONFIGURE_STYLE=	gnu
-MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC} \
-				${WRKSRC}/main/editline \
-				${WRKSRC}/menuselect \
-				${WRKSRC}/res/pjproject \
-				${WRKSRC}/res/pjproject/third_party/portaudio \
-				${WRKSRC}/res/pjproject/third_party/srtp
 AUTOCONF_VERSION=	2.69
 AUTOMAKE_VERSION=	1.10
 BUILD_DEPENDS+=		${MODGNU_AUTOCONF_DEPENDS} \
 			${MODGNU_AUTOMAKE_DEPENDS} \
 			devel/libtool,-ltdl # bogus dependencies in menuselect
+
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/menuselect \
+				${WRKSRC}/res/pjproject \
+				${WRKSRC}/res/pjproject/third_party/portaudio \
+				${WRKSRC}/res/pjproject/third_party/srtp \
+				${WRKSRC}/main/editline
 
 CPPFLAGS+=		-I${X11BASE}/include -I${LOCALBASE}/include
 LDFLAGS+=		-L${X11BASE}/lib -L${LOCALBASE}/lib
@@ -82,8 +83,7 @@ CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}" \
 			CFLAGS="${CFLAGS}" \
 			LDFLAGS="${LDFLAGS}" \
 			LIBS="-lpthread" \
-			ac_cv_path_LDCONFIG=: \
-			CC=gcc GXX=g++
+			ac_cv_path_LDCONFIG=:
 MAKE_FLAGS+=		ASTCFLAGS="${CFLAGS}" \
 			ASTLDFLAGS="${LDFLAGS}" \
 			ASTSSL_SO_VERSION="${LIBasteriskssl_VERSION}" \
@@ -119,11 +119,6 @@ CONFIGURE_ARGS+=	--with-jack=no \
 			--with-lua=no \
 			--with-radius=no \
 			--with-resample=no
-
-#directly uses gcc
-MODULES       += gcc4
-MODGCC4_ARCHS += *
-MODGCC4_LANGS =  c 
 
 # Some build options (including a useful malloc debug) are available
 # via menuselect. They may be enabled by running 'make configure', cd

@@ -1,5 +1,6 @@
 # $OpenBSD: Makefile,v 1.179 2015/09/28 09:30:39 landry Exp $
 
+BROKEN =		almost there on bitrig but not quite
 COMMENT-main =		Mozilla application suite
 COMMENT-lightning =	Mozilla Seamonkey calendar extension
 BROKEN-sparc64 =	xpcshell SIGBUS during fake
@@ -69,6 +70,11 @@ GUIDS =	gdata-provider {a62ef8ec-5fdc-40c2-873c-223b8a6925cc} \
 	lightning {e2fda1a4-762b-4020-b5ad-a41df1933103}
 
 EXTDIR =	${PREFIX}/lib/${MOZILLA_PROJECT}-${MOZILLA_VER}/extensions/
+
+CPPFLAGS+=	-I${X11BASE}/include -I${LOCALBASE}/include
+LDFLAGS+=	-L${X11BASE}/lib -L${LOCALBASE}/lib
+CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}" \
+		CFLAGS="${CFLAGS}"
 
 CONFIGURE_ENV+=MOZCONFIG=${WRKSRC}/mozilla/.mozconfig
 # MOZCONFIG is mandatory now even if empty ?

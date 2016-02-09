@@ -1,0 +1,11 @@
+--- mozilla/media/libopus/moz.build.orig	Thu Feb 11 12:54:56 2016
++++ mozilla/media/libopus/moz.build	Thu Feb 11 12:55:18 2016
+@@ -39,7 +39,7 @@ if CONFIG['MOZ_DEBUG']:
+     DEFINES['ENABLE_ASSERTIONS'] = True
+ 
+ if CONFIG['OS_ARCH'] in ('Linux', 'Darwin', 'DragonFly', 'FreeBSD',
+-                         'NetBSD', 'OpenBSD'):
++                         'NetBSD', 'OpenBSD', 'Bitrig'):
+     DEFINES['HAVE_LRINTF'] = True
+ 
+ if CONFIG['OS_ARCH'] == 'WINNT':
