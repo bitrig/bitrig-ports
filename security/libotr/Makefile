@@ -34,4 +34,6 @@ CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
 			--disable-gcc-hardening \
 			--disable-linker-hardening
 
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/config
+
 .include <bsd.port.mk>
