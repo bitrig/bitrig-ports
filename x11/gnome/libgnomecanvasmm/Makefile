@@ -1,17 +1,20 @@
-# $OpenBSD: Makefile,v 1.34 2013/09/28 08:51:22 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.35 2015/09/24 10:35:10 ajacoutot Exp $
 
-SHARED_ONLY=	Yes
+# XXX check if still needed at next update
+CXXFLAGS +=		-std=c++11
 
-COMMENT=	C++ interface to the graphics library for GNOME
+SHARED_ONLY=		Yes
 
-GNOME_PROJECT=	libgnomecanvasmm
-GNOME_VERSION=	2.26.0
-EXTRACT_SUFX=	.tar.bz2
-REVISION=	12
+COMMENT=		C++ interface to the graphics library for GNOME
+
+GNOME_PROJECT=		libgnomecanvasmm
+GNOME_VERSION=		2.26.0
+EXTRACT_SUFX=		.tar.bz2
+REVISION=		13
 
 SHARED_LIBS +=  gnomecanvasmm-2.6         1.0 # 1.6
 
-CATEGORIES=	x11
+CATEGORIES=		x11
 
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
@@ -25,14 +28,13 @@ WANTLIB += gthread-2.0 gtk-x11-2.0 gtkmm-2.4 harfbuzz m pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pangomm-1.4 pcre pixman-1
 WANTLIB += png pthread pthread-stubs sigc-2.0 xcb xcb-render
 WANTLIB += xcb-shm z
-WANTLIB += c++ c++abi
 
-MODULES=	devel/gettext \
-		x11/gnome
+MODULES=		devel/gettext \
+			x11/gnome
 
-MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/scripts
+MODGNU_CONFIG_GUESS_DIRS +=	${WRKSRC}/scripts
 
-LIB_DEPENDS=	x11/gnome/libgnomecanvas \
-		x11/gtk2mm>=2.24.4
+LIB_DEPENDS=		x11/gnome/libgnomecanvas \
+			x11/gtk2mm
 
 .include <bsd.port.mk>
