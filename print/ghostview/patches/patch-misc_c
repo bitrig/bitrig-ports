@@ -1,6 +1,6 @@
 $OpenBSD: patch-misc_c,v 1.1 2002/04/26 01:44:09 espie Exp $
---- misc.c.orig	Sat Jul 24 04:29:12 1993
-+++ misc.c	Sun Apr 21 01:20:42 2002
+--- misc.c.orig	Fri Jul 23 21:29:12 1993
++++ misc.c	Tue Feb  9 09:18:30 2016
 @@ -24,6 +24,7 @@
   */
  
@@ -9,11 +9,13 @@ $OpenBSD: patch-misc_c,v 1.1 2002/04/26 01:44:09 espie Exp $
  #ifndef SEEK_SET
  #define SEEK_SET 0
  #endif
-@@ -61,7 +62,6 @@ extern int errno;
+@@ -60,8 +61,7 @@ extern int errno;
+ #ifdef VMS
  #include <perror.h>
  #else
- extern int sys_nerr;
+-extern int sys_nerr;
 -extern char *sys_errlist[];
++//extern int sys_nerr;
  #endif
  
  #include "Ghostview.h"

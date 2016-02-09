@@ -1,11 +1,13 @@
 $OpenBSD: patch-SelFile_c,v 1.1 2002/04/26 01:44:08 espie Exp $
---- SelFile.c.orig	Sat Jul 24 04:29:12 1993
-+++ SelFile.c	Fri Apr 26 02:40:34 2002
-@@ -46,7 +46,6 @@
+--- SelFile.c.orig	Fri Jul 23 21:29:12 1993
++++ SelFile.c	Tue Feb  9 09:23:10 2016
+@@ -45,8 +45,7 @@
+ #include <errno.h>
  /* BSD 4.3 errno.h does not declare errno */
  extern int errno;
- extern int sys_nerr;
+-extern int sys_nerr;
 -extern char *sys_errlist[];
++//extern int sys_nerr;
  
  #include <sys/param.h>
  #include <X11/cursorfont.h>
@@ -38,7 +40,7 @@ $OpenBSD: patch-SelFile_c,v 1.1 2002/04/26 01:44:08 espie Exp $
  }
  
  /* ARGSUSED */
-@@ -407,7 +412,10 @@ SFcreateWidgets(toplevel, prompt, ok, ca
+@@ -407,7 +412,10 @@ SFcreateWidgets(toplevel, prompt, ok, cancel)
  		compositeWidgetClass, selFileForm, arglist, i);
  
  	for (n = 0; n < 3; n++) {
@@ -49,7 +51,7 @@ $OpenBSD: patch-SelFile_c,v 1.1 2002/04/26 01:44:08 espie Exp $
  		i = 0;
  		XtSetArg(arglist[i], XtNx, vScrollX);			i++;
  		XtSetArg(arglist[i], XtNy, vScrollY);			i++;
-@@ -418,9 +426,9 @@ SFcreateWidgets(toplevel, prompt, ok, ca
+@@ -418,9 +426,9 @@ SFcreateWidgets(toplevel, prompt, ok, cancel)
  			scrollbarWidgetClass, selFileLists[n], arglist, i);
  
  		XtAddCallback(selFileVScrolls[n], XtNjumpProc,
@@ -61,7 +63,7 @@ $OpenBSD: patch-SelFile_c,v 1.1 2002/04/26 01:44:08 espie Exp $
  
  		i = 0;
  
-@@ -435,9 +443,9 @@ SFcreateWidgets(toplevel, prompt, ok, ca
+@@ -435,9 +443,9 @@ SFcreateWidgets(toplevel, prompt, ok, cancel)
  			scrollbarWidgetClass, selFileLists[n], arglist, i);
  
  		XtAddCallback(selFileHScrolls[n], XtNjumpProc,
@@ -73,7 +75,7 @@ $OpenBSD: patch-SelFile_c,v 1.1 2002/04/26 01:44:08 espie Exp $
  	}
  
  	i = 0;
-@@ -495,18 +503,22 @@ SFcreateWidgets(toplevel, prompt, ok, ca
+@@ -495,18 +503,22 @@ SFcreateWidgets(toplevel, prompt, ok, cancel)
  	XDefineCursor(SFdisplay, XtWindow(selFileCancel), dotCursor);
  
  	for (n = 0; n < 3; n++) {
