@@ -7,7 +7,7 @@ COMMENT =		memory-efficient hash_map and hash_set C++ classes
 DISTNAME =		sparsehash-2.0.2
 CATEGORIES =		devel
 HOMEPAGE =		https://sparsehash.googlecode.com/
-REVISION =		2
+REVISION =		3
 
 # 3-clause BSDL
 PERMIT_PACKAGE_CDROM =	Yes
@@ -18,9 +18,8 @@ SEPARATE_BUILD =	Yes
 CONFIGURE_STYLE =	gnu
 
 MODULES +=		gcc4
+MODGCC4_ARCHS =		*
 MODGCC4_LANGS =		c c++
-MODCLANG_ARCHS =	amd64 i386
-CONFIGURE_ENV =		CXX=eg++ CC=egcc
 
 FAKE_FLAGS =		docdir=${PREFIX}/share/doc/sparsehash
 
