@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.253 2015/07/26 07:22:53 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.256 2015/10/06 21:39:50 ajacoutot Exp $
 
 SHARED_ONLY=	Yes
 
@@ -7,10 +7,10 @@ ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
 COMMENT=	movie player supporting many formats
 
-V=		20150510
-FFMPEG_V=	20150723
+V=		20150910
+FFMPEG_V=	20150909
 DISTNAME=	mplayer-${V}
-REVISION=	2
+REVISION=	0
 CATEGORIES=	x11 multimedia
 MASTER_SITES=	http://comstyle.com/source/
 EXTRACT_SUFX=	.tar.xz
@@ -25,14 +25,15 @@ WANTLIB=	EGL GL SDL X11 Xext Xinerama Xss Xv Xxf86dga Xxf86vm ass \
 		avcodec avformat avutil bluray bz2 c cdda_interface \
 		cdda_paranoia crypto dv dvdnav dvdread enca fontconfig \
 		freetype fribidi gif jpeg m mng mp3lame ncurses png postproc \
-		pthread sndio swscale util x264 xvidcore z
-WANTLIB +=	c++ c++abi
-MODULES+=	converters/libiconv
+		pthread sndio c++ c++abi swscale swresample util x264 xvidcore z
 
+MODULES+=	converters/libiconv \
+		lang/clang
 
 LIB_DEPENDS=	archivers/bzip2 \
 		audio/cdparanoia \
 		audio/lame \
+		converters/enca \
 		devel/fribidi \
 		devel/sdl \
 		devel/libdvdread \
