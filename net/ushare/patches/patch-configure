@@ -1,23 +1,5 @@
-$OpenBSD: patch-configure,v 1.4 2015/06/19 09:07:32 ajacoutot Exp $
---- configure.orig	Sun Dec  9 14:03:36 2007
-+++ configure	Wed Nov  7 15:49:14 2012
-@@ -382,6 +382,7 @@ freebsd() { issystem "FreeBSD" || issystem "GNU/kFreeB
- netbsd()  { issystem "NetBSD"  ; return "$?" ; }
- bsdos()   { issystem "BSD/OS"  ; return "$?" ; }
- openbsd() { issystem "OpenBSD" ; return "$?" ; }
-+openbsd() { issystem "Bitrig"  ; return "$?" ; }
- bsd()     { freebsd || netbsd || bsdos || openbsd ; return "$?" ; }
- qnx()     { issystem "QNX"     ; return "$?" ; }
- darwin()  { issystem "Darwin"  ; return "$?" ; }
-@@ -642,7 +643,7 @@ echolog "Checking for libthreadutil ..."
- check_lib upnp/ThreadPool.h ThreadPoolAdd "-lthreadutil -lpthread" || die "Error, can't find libthreadutil !"
- add_extralibs -lpthread
- 
--libupnp_min_version="1.4.2"
-+libupnp_min_version="1.6.17"
- echolog "Checking for libupnp >= $libupnp_min_version ..."
- check_lib upnp/upnp.h UpnpSetMaxContentLength -lupnp || die "Error, can't find libupnp !"
- check_lib_version libupnp $libupnp_min_version || die "Error, libupnp < $libupnp_min_version !"
+--- configure.orig	Tue Feb  9 11:55:42 2016
++++ configure	Tue Feb  9 11:55:45 2016
 @@ -302,7 +302,7 @@ cpu=`uname -m`
  optimize="yes"
  debug="no"
@@ -27,4 +9,3 @@ $OpenBSD: patch-configure,v 1.4 2015/06/19 09:07:32 ajacoutot Exp $
  installstrip="-s"
  cross_compile="no"
  INSTALL="/usr/bin/install -c"
-
