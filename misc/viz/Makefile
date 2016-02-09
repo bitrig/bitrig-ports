@@ -15,4 +15,6 @@ WANTLIB=		c m
 USE_GROFF =	Yes
 NO_TEST=	Yes
 
+CFLAGS+=	-D_SYS_ERRNO_H_
+
 .include <bsd.port.mk>
