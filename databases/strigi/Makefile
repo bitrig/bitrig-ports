@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.18 2015/04/04 09:21:00 ajacoutot Exp $
 
+BROKEN =	broken C++
+
 COMMENT =	document indexer
 CATEGORIES =	databases devel textproc sysutils
 
