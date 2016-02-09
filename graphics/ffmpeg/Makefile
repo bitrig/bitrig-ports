@@ -30,8 +30,6 @@ WANTLIB=	SDL X11 Xext Xv ass bz2 c crypto fontconfig freetype fribidi \
 		gsm m mp3lame opus pthread sndio speex ssl vorbis vorbisenc \
 		vpx>=5 x264 x265>=2 xcb xcb-shape xcb-shm xcb-xfixes xvidcore z
 
-MODCLANG_ARCHS=	amd64
-
 BUILD_DEPENDS=	textproc/texi2html
 .if ${MACHINE_ARCH} == "amd64" || ${MACHINE_ARCH} == "i386"
 BUILD_DEPENDS+=	devel/yasm
