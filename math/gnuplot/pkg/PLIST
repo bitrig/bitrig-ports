@@ -3,10 +3,6 @@
 bin/lasergnu
 @man man/man1/gnuplot.1
 @man man/man1/lasergnu.1
-share/emacs/site-lisp/gnuplot-gui.el
-share/emacs/site-lisp/gnuplot-gui.elc
-share/emacs/site-lisp/gnuplot.el
-share/emacs/site-lisp/gnuplot.elc
 share/gnuplot/
 %%with_emacs%%
 !%%no_x11%%
