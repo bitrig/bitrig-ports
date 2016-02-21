@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.59 2015/06/27 13:21:29 jasper Exp $
+# $OpenBSD: Makefile,v 1.60 2016/02/21 22:01:56 tobiasu Exp $
 
 COMMENT-main=	garbage collection and memory leak detection for C and C++
 COMMENT-atomic=	access to hardware provided atomic memory operations
@@ -11,7 +11,7 @@ DISTNAME=	gc-${VERSION}
 
 PKGNAME-atomic=	libatomic_ops-${LIBAO_VERSION}
 PKGNAME-main=	boehm-gc-${VERSION}
-REVISION-atomic=0
+REVISION-atomic=1
 REVISION-main=	0
 
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
@@ -52,7 +52,7 @@ CONFIGURE_ARGS= ${CONFIGURE_SHARED} \
 		--enable-cplusplus \
 		--enable-threads=pthreads
 
-pre-configure:
+post-extract:
 	@perl -pi -e "s,/usr/local,${PREFIX},g" ${WRKSRC}/doc/gc.man
 	@mv ${WRKDIR}/libatomic_ops-${LIBAO_VERSION} ${WRKBUILD}/libatomic_ops
 
