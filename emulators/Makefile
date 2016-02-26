@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.79 2016/01/17 19:50:08 bentley Exp $
+# $OpenBSD: Makefile,v 1.80 2016/02/26 16:05:12 naddy Exp $
 
     SUBDIR =
     SUBDIR += BasiliskII
