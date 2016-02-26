@@ -1,7 +1,7 @@
 # $OpenBSD: Makefile,v 1.4 2014/01/09 22:48:25 sthen Exp $
 
 FW_DRIVER=	radeondrm
-FW_VER=		20131002
+FW_VER=		20150927
 DISTNAME=	radeon-firmware-${FW_VER}
 REVISION=	1
 
@@ -41,8 +41,8 @@ do-install:
 .for i in ${FIRMWARE}
 	${INSTALL_DATA} ${WRKDIR}/radeon/$i \
 	    ${PREFIX}/firmware/radeon-${i:L:S/.bin//}
-	${INSTALL_DATA} ${WRKDIR}/radeon/radeon-license \
-	    ${PREFIX}/firmware/
 .endfor
+	${INSTALL_DATA} ${WRKDIR}/radeon/LICENSE.radeon \
+ 	   ${PREFIX}/firmware/radeon-license
 
 .include <bsd.port.mk>
