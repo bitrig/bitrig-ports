@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2015/06/23 07:21:08 yasuoka Exp $
+# $OpenBSD: Makefile,v 1.4 2016/02/27 22:50:39 mmcc Exp $
 
 COMMENT =		search backend for Mew with Hyper Estrairer
 
@@ -10,7 +10,7 @@ DISTNAME =		${GH_PROJECT}-${V}
 
 CATEGORIES =		mail
 
-HOMEPAGE =		https://github.com/${GH_ACCOUNT}/${GH_PROJECT}
+MAINTAINER =		YASUOKA Masahiko <yasuoka@yasuoka.net>
 
 # BSD and partially LGPLv2.1+
 PERMIT_PACKAGE_CDROM =	Yes
