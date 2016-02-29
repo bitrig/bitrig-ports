@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2015/06/15 08:58:42 bentley Exp $
+# $OpenBSD: Makefile,v 1.34 2016/02/29 21:31:52 mmcc Exp $
 
 SHARED_ONLY=	Yes
 
@@ -15,7 +15,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c m xml2>=10 xslt>=3 z
 
-HOMEPAGE=	http://www.embperl.org/
+HOMEPAGE=	http://www.embperl.org/embperl/
 MASTER_SITES=	http://www.embperl.org/downloads/
 RUN_DEPENDS=	www/mod_perl>=1.22 \
 		www/apache-httpd-openbsd
