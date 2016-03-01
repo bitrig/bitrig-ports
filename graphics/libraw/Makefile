@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2016/02/29 23:50:13 sthen Exp $
+# $OpenBSD: Makefile,v 1.18 2016/03/01 08:05:30 kirby Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -29,6 +29,7 @@ MASTER_SITES =		http://www.libraw.org/data/
 LIB_DEPENDS =		graphics/jasper \
 			graphics/lcms2
 
+SEPARATE_BUILD = 	Yes
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	${CONFIGURE_SHARED}
 
