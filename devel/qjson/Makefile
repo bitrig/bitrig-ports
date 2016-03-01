@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/11/07 10:05:29 landry Exp $
+# $OpenBSD: Makefile,v 1.5 2016/03/01 20:36:40 jca Exp $
 
 SHARED_ONLY =	Yes
 CATEGORIES =	devel
