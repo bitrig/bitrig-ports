@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2016/03/01 07:29:32 kirby Exp $
+# $OpenBSD: Makefile,v 1.26 2016/03/01 19:33:54 kirby Exp $
 
 ONLY_FOR_ARCHS=	amd64 i386
 
@@ -32,7 +32,8 @@ LIB_DEPENDS=	audio/libogg \
 		graphics/png \
 		multimedia/libtheora
 BUILD_DEPENDS=	archivers/unzip \
-		archivers/zip
+		archivers/zip \
+		textproc/asciidoc
 RUN_DEPENDS=	devel/desktop-file-utils
 
 USE_GMAKE=	Yes
