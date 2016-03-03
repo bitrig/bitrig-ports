@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.8 2016/01/17 17:29:08 sthen Exp $$
+# $OpenBSD: Makefile,v 1.9 2016/03/03 10:01:09 giovanni Exp $$
 
 BROKEN = 	needs work on bitrig
 
 COMMENT =	utility for quick MySQL dumping
 
-V =		0.6.2
-REVISION =	0
+V =		0.9.1
 DISTNAME =	mydumper-${V}
 CATEGORIES =	databases
 
