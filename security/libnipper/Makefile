@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2015/03/16 18:07:54 naddy Exp $
+# $OpenBSD: Makefile,v 1.17 2016/03/04 10:11:22 kirby Exp $
 
 COMMENT =		library for nipper
 
@@ -16,9 +16,7 @@ PERMIT_PACKAGE_FTP =	Yes
 
 EXTRACT_SUFX =		.tgz
 
-WANTLIB=		m
-WANTLIB +=		c++ c++abi pthread
-CONFIGURE_STYLE =	cmake
+WANTLIB=		m c++ c++abi
 MODULES +=		devel/cmake
 
 NO_TEST =		Yes
