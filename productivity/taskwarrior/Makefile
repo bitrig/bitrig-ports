@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2016/03/04 10:11:22 kirby Exp $
+# $OpenBSD: Makefile,v 1.22 2016/03/05 16:26:40 kirby Exp $
 
 COMMENT =	command line todo list manager
 
@@ -27,6 +27,8 @@ WANTLIB += c gnutls m pthread
 WANTLIB += c++ c++abi
 
 LIB_DEPENDS =		security/gnutls
+
+CONFIGURE_STYLE =	cmake
 
 CONFIGURE_ARGS +=	-DTASK_DOCDIR=share/taskwarrior \
 			-DTASK_MAN1DIR=man/man1 \
