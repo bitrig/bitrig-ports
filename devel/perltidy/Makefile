@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.19 2015/12/04 20:33:16 landry Exp $
+# $OpenBSD: Makefile,v 1.20 2016/03/05 15:47:44 sthen Exp $
 
 COMMENT =	tool to indent and reformat perl scripts
 
-V =	 	20150815
+V =	 	20160302
 DISTNAME =	Perl-Tidy-$V
 PKGNAME =	perltidy-$V
 REVISION =	0
@@ -12,7 +12,7 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=perltidy/}
 
 HOMEPAGE =	http://perltidy.sourceforge.net/
 
-# GPL v2
+# GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
 CONFIGURE_STYLE =	perl
