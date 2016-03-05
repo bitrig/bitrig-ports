@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.58 2015/10/26 11:53:14 sebastia Exp $
+# $OpenBSD: Makefile,v 1.59 2016/03/05 16:04:07 pascal Exp $
 
 BROKEN=		needs work on bitrig
 
 COMMENT=	GNUstep base library
 
-REVISION =	0
+REVISION =	1
 DISTNAME=	gnustep-base-1.24.8
 
 SHARED_LIBS=	gnustep-base 8.3
