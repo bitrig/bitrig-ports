@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:10:54 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2016/03/07 11:57:55 zhuk Exp $
 
 COMMENT =		constructive solid geometry rendering library
 
@@ -22,15 +22,17 @@ WANTLIB +=		ICE SM X11 Xext Xi Xinerama Xrender fontconfig freetype
 WANTLIB +=		c++ c++abi
 
 MODULES =		x11/qt4
+CONFIGURE_STYLE =	qmake
+SEPARATE_BUILD =	No
+
 LIB_DEPENDS =		graphics/glew
 
 MASTER_SITES =		http://www.opencsg.org/
 
 WRKSRC =		${WRKDIST}/src
 
-do-configure:
+pre-configure:
 	${SUBST_CMD} ${WRKSRC}/src.pro
-	cd ${WRKSRC} && qmake4 src.pro
 
 do-install:
 	${INSTALL_DATA} ${WRKDIST}/lib/libopencsg.so.${LIBopencsg_VERSION} \
