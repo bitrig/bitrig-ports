@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2016/03/07 13:54:36 zhuk Exp $
+# $OpenBSD: Makefile,v 1.7 2016/03/07 15:25:31 zhuk Exp $
 
 SHARED_ONLY =		Yes
 COMMENT =		secure decentralised communication platform
@@ -8,6 +8,7 @@ PKGNAME =		retroshare-${V}
 REVISION =		1
 CATEGORIES =		net security
 HOMEPAGE =		http://retroshare.sourceforge.net
+REVISION =		1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
@@ -36,8 +37,6 @@ NO_TEST =		Yes
 WRKDIST =		${WRKDIR}/retroshare-${V:S/c$//}
 WRKSRC =		${WRKDIST}/src
 SEPARATE_BUILD =	No
-
-# TODO: time_t fixes needed in bitdht/bdquery.cc
 
 post-patch:
 	${SUBST_CMD} ${WRKSRC}/libretroshare/src/libretroshare.pro \
