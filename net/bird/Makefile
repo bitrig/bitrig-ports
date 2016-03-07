@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.41 2016/02/12 17:09:00 sthen Exp $
+# $OpenBSD: Makefile,v 1.42 2016/03/07 10:24:34 sthen Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -6,7 +6,7 @@ COMMENT-main=	BIRD internet routing daemon
 COMMENT-doc=	BIRD internet routing daemon (documentation)
 
 V=		1.5.0
-REVISION-main=	2
+REVISION-main=	3
 DISTNAME=	bird-$V
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${DISTNAME:S/-/-doc-/}${EXTRACT_SUFX}
@@ -18,12 +18,11 @@ HOMEPAGE=	http://bird.network.cz/
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB-main=	c ncurses readline
-LIB_DEPENDS=	devel/readline
+WANTLIB-main=	c ncurses pthread readline
 
 MULTI_PACKAGES=	-main -doc
-FULLPKGNAME-doc=bird-doc-$V
-FULLPKGPATH-doc=net/bird,-doc
+FULLPKGNAME-doc= bird-doc-$V
+FULLPKGPATH-doc= net/bird,-doc
 
 # IPv6 support must be built with separate flags, however the filenames
 # do not conflict, so the two packages may be installed together.
@@ -50,10 +49,11 @@ CC=	cc
 CXX=	${CC}
 
 USE_GMAKE=	Yes
-CONFIGURE_STYLE=gnu
+CONFIGURE_STYLE= gnu
+CONFIGURE_ARGS+= --enable-pthreads
 
 .if ${FLAVOR:Mv6}
-CONFIGURE_ARGS+=--enable-ipv6
+CONFIGURE_ARGS+= --enable-ipv6
 .endif
 
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/tools
