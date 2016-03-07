@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2016/03/07 11:21:03 zhuk Exp $
+# $OpenBSD: Makefile,v 1.19 2016/03/07 13:50:21 zhuk Exp $
 
 COMMENT=	viewer for IETF RFCs
 
