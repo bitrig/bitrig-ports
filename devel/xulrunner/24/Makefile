@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.30 2016/03/05 16:04:06 pascal Exp $
+# $OpenBSD: Makefile,v 1.31 2016/03/08 20:04:02 landry Exp $
 
 ONLY_FOR_ARCHS =	amd64 i386 powerpc sparc64 alpha
 # XXX remember to bump www/conkeror because it has a symlink pointing to lib/xulrunner-${MOZILLA_VER}
