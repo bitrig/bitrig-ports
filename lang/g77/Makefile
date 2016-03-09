@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.34 2015/12/20 00:16:27 naddy Exp $
+# $OpenBSD: Makefile,v 1.35 2016/03/09 18:48:07 naddy Exp $
 
 V =			3.3.6
 PKGNAME =		g77-$V
@@ -77,9 +77,8 @@ ALL_TARGET =		all doc
 INSTALL_TARGET =	install-common f77.install-info f77.install-normal
 
 post-install:
-	ln -sf /usr/lib/gcc/${CONFIG_A}/${SYSV}/libgcc.a ${PREFIX}/lib/gcc-lib/${CONFIG_B}/$V/libgcc.a
-	ln -s /usr/lib/gcc/${CONFIG_A}/${SYSV}/cc1 ${PREFIX}/lib/gcc-lib/${CONFIG_B}/$V/cc1
-.if ${MACHINE_ARCH} == "m68k" || ${MACHINE_ARCH} == "m88k"
+	ln -sf ${SYSLIBPATH}/libgcc.a ${LIBDIR}/libgcc.a
+.if ${MACHINE_ARCH} == "m88k"
 	mkdir ${LIBDIR}/fpic
 	ln -sf ${SYSLIBPATH}/fpic/libgcc.a ${LIBDIR}/fpic/libgcc.a
 	mkdir ${LIBDIR}/fPIC
