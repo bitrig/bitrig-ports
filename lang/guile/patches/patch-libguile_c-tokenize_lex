@@ -2,8 +2,17 @@ Don't emit eol and hash tokens when called with --filter-snarfage. The output
 is mainly used by snarf-check-and-output-texi, which by mistake doesn't expect
 these tokens to be there.
 
---- libguile/c-tokenize.lex.orig	Wed Feb 19 20:30:23 2014
-+++ libguile/c-tokenize.lex	Wed Feb 19 20:30:28 2014
+--- libguile/c-tokenize.lex.orig	Mon Dec 13 11:24:39 2010
++++ libguile/c-tokenize.lex	Tue Mar  8 19:37:16 2016
+@@ -29,7 +29,7 @@ int yylex(void);
+ int yyget_lineno (void);
+ FILE *yyget_in (void);
+ FILE *yyget_out (void);
+-int yyget_leng (void);
++yy_size_t yyget_leng (void);
+ char *yyget_text (void);
+ void yyset_lineno (int line_number);
+ void yyset_in (FILE * in_str);
 @@ -68,9 +68,9 @@ int cookie_was_last = 0; 
  
  ({SPACE}*(\\\n)*{SPACE}*)+                 ;
