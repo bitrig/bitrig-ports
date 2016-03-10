@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2013/03/11 11:46:12 espie Exp $
+# $OpenBSD: Makefile,v 1.17 2016/03/10 21:58:52 naddy Exp $
 
 COMMENT=		fast and light window manager with plug-ins
 
@@ -25,7 +25,3 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/{THEMES,PLUGINS} ${PREFIX}/share/doc/golem
 
 .include <bsd.port.mk>
-
-.if defined(NO_SHARED_LIBS) && ${NO_SHARED_LIBS:L} == "yes"
-CONFIGURE_FLAGS+=	--disable-plugins
-.endif
