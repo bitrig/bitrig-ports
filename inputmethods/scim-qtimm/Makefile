@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2015/04/21 18:24:22 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2016/03/11 20:28:27 naddy Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -31,8 +31,7 @@ SUBST_VARS=     MODQT_PLUGINS
 LIBTOOL_FLAGS=	--tag=disable-static
 
 CONFIGURE_STYLE=gnu
-CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
-		--disable-static \
+CONFIGURE_ARGS=	--disable-static \
 		--disable-skim-support \
 		--with-qt-includes=${MODQT_INCDIR} \
 		--with-qt-libraries=${MODQT_LIBDIR}

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.38 2016/03/09 19:11:35 naddy Exp $
+# $OpenBSD: Makefile,v 1.39 2016/03/11 20:28:23 naddy Exp $
 
 COMMENT=	Apache Portable Runtime
 
@@ -19,8 +19,7 @@ MASTER_SITES=	${MASTER_SITE_APACHE:=apr/}
 
 CONFIGURE_STYLE=gnu
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC} ${WRKSRC}/build
-CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
-		--includedir=${LOCALBASE}/include/apr-1/ \
+CONFIGURE_ARGS=	--includedir=${LOCALBASE}/include/apr-1/ \
 		--with-installbuilddir=${LOCALBASE}/lib/apr-1/ \
 		--enable-other-child \
 		--enable-threads \

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.44 2015/12/26 09:45:51 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.45 2016/03/11 20:28:29 naddy Exp $
 
 COMMENT=		BitTorrent library written in C++
 
@@ -30,8 +30,7 @@ LIB_DEPENDS=		devel/libsigc++-2
 AUTOCONF_VERSION=	2.69
 AUTOMAKE_VERSION=	1.14
 CONFIGURE_STYLE=	gnu
-CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
-			--enable-static \
+CONFIGURE_ARGS=		--enable-static \
 			--with-kqueue \
 			--without-epoll \
 			--disable-debug

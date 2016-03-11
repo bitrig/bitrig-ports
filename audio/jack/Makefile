@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2015/05/21 11:44:00 jca Exp $
+# $OpenBSD: Makefile,v 1.33 2016/03/11 20:28:22 naddy Exp $
 
 SHARED_ONLY =		Yes
 
@@ -39,8 +39,7 @@ AUTOCONF_VERSION =	2.65
 AUTOMAKE_VERSION =	1.10
 CONFIGURE_STYLE =	autoconf automake
 MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC} ${WRKSRC}/config
-CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
-			--with-default-tmpdir=/var/tmp \
+CONFIGURE_ARGS +=	--with-default-tmpdir=/var/tmp \
 			--disable-sun \
 			--disable-portaudio \
 			--disable-optimize

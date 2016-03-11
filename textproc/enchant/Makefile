@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2015/10/09 12:48:21 jasper Exp $
+# $OpenBSD: Makefile,v 1.23 2016/03/11 20:28:32 naddy Exp $
 
 COMMENT=	generic spell checking library/wrapper
 
@@ -27,10 +27,8 @@ RUN_DEPENDS=	x11/dbus-glib
 MODULES=	devel/gettext
 CONFIGURE_STYLE=gnu
 
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib -lc++ -lc++abi -lpthread -lm"
-CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
-		--enable-aspell \
+		LDFLAGS="-L${LOCALBASE}/lib -lc++ -lc++abi -lm"
+CONFIGURE_ARGS=	--enable-aspell \
 		--with-aspell-prefix=${LOCALBASE} \
 		--enable-ispell \
 		--with-ispell-dir=${LOCALBASE}/lib/ispell/ \

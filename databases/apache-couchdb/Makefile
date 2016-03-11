@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.25 2015/10/30 12:47:38 sthen Exp $
+# $OpenBSD: Makefile,v 1.26 2016/03/11 20:28:23 naddy Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -34,8 +34,7 @@ MAKE_FLAGS =	LDFLAGS="-L${LOCALBASE}/lib -pthread" \
 FAKE_FLAGS =	localconfdir=${PREFIX}/share/examples/couchdb
 
 CONFIGURE_STYLE = gnu
-CONFIGURE_ARGS = ${CONFIGURE_SHARED} \
-		--with-erlang=${LOCALBASE}/lib/erlang${MODERL_VERSION}/usr/include \
+CONFIGURE_ARGS = --with-erlang=${LOCALBASE}/lib/erlang${MODERL_VERSION}/usr/include \
 		--with-js-include=${LOCALBASE}/include/js \
 		--with-js-lib=${LOCALBASE}/lib \
 		--disable-docs \

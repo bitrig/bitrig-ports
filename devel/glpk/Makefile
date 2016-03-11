@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/05/07 17:28:33 okan Exp $
+# $OpenBSD: Makefile,v 1.11 2016/03/11 20:28:24 naddy Exp $
 
 COMMENT=	GNU Linear Programming Kit
 
@@ -17,8 +17,7 @@ WANTLIB=		c m gmp
 LIB_DEPENDS=		devel/gmp
 
 CONFIGURE_STYLE=	gnu
-CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
-			--with-gmp
+CONFIGURE_ARGS=		--with-gmp
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 

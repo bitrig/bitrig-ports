@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2015/01/26 22:42:04 sthen Exp $
+# $OpenBSD: Makefile,v 1.19 2016/03/11 20:28:28 naddy Exp $
 
 COMMENT=	BIND stub resolver library
 
@@ -18,10 +18,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=	${MASTER_SITE_ISC:=libbind/$V/}
 
-AUTOCONF_VERSION=	2.61
-CONFIGURE_STYLE=	autoconf no-autoheader
-CONFIGURE_ARGS=		${CONFIGURE_SHARED} \
-			--with-libtool \
+CONFIGURE_STYLE=	gnu
+CONFIGURE_ARGS=		--with-libtool \
 			--libdir=${TRUEPREFIX}/lib/libbind
 
 NO_TEST=	Yes

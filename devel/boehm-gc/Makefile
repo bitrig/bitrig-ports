@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.61 2016/03/09 19:54:50 naddy Exp $
+# $OpenBSD: Makefile,v 1.62 2016/03/11 20:28:23 naddy Exp $
 
 COMMENT-main=	garbage collection and memory leak detection for C and C++
 COMMENT-atomic=	access to hardware provided atomic memory operations
@@ -46,9 +46,7 @@ MAKE_ENV=	CP="cp" \
 CONFIGURE_STYLE= gnu
 
 MODGNU_CONFIG_GUESS_DIRS= ${WRKDIST} ${WRKDIST}/libatomic_ops/
-
-CONFIGURE_ARGS= ${CONFIGURE_SHARED} \
-		--with-libatomic-ops=no \
+CONFIGURE_ARGS= --with-libatomic-ops=no \
 		--enable-cplusplus \
 		--enable-threads=pthreads
 
