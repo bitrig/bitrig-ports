@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2015/02/16 22:57:11 naddy Exp $
+# $OpenBSD: Makefile,v 1.30 2016/03/11 23:03:21 naddy Exp $
 
 BROKEN = 		needs work on bitrig
 
@@ -26,8 +26,7 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=ssvnc/}
 
 MULTI_PACKAGES =-main -gui
 
-MAKE_ENV =	CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}" \
-		NO_SHARED_LIBS=${NO_SHARED_LIBS}
+MAKE_ENV =	CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}"
 
 WRKDIST =	${WRKDIR}/ssvnc-$V
 
