@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/05/22 11:31:13 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.11 2016/03/11 19:59:13 naddy Exp $
 
 COMMENT=	YAML 1.1 parser and emitter written in C
 
@@ -19,7 +19,6 @@ MASTER_SITES=	http://pyyaml.org/download/libyaml/
 
 
 CONFIGURE_STYLE=gnu
-CONFIGURE_ARGS=	${CONFIGURE_SHARED}
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config
 
 .include <bsd.port.mk>

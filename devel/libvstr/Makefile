@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2015/06/17 07:11:28 bentley Exp $
+# $OpenBSD: Makefile,v 1.9 2016/03/11 19:59:13 naddy Exp $
 
 BROKEN = 	needs work on bitrig
 
@@ -26,6 +26,5 @@ SEPARATE_BUILD =	Yes
 USE_GMAKE =		Yes
 USE_GROFF =		Yes
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
 
 .include <bsd.port.mk>

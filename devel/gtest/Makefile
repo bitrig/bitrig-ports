@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2016/01/26 13:05:26 sthen Exp $
+# $OpenBSD: Makefile,v 1.10 2016/03/11 19:59:12 naddy Exp $
 
 COMMENT =	C++ unit test framework
 
@@ -23,9 +23,6 @@ WANTLIB =		m
 WANTLIB += 		c++ c++abi pthread
 
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
-CXXFLAGS +=		-DGTEST_HAS_TR1_TUPLE=0
-
 MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build-aux
 
 NO_TEST =	Yes

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2015/03/16 18:07:54 naddy Exp $
+# $OpenBSD: Makefile,v 1.24 2016/03/11 19:59:16 naddy Exp $
 
 COMMENT=	strong hash library
 
@@ -17,7 +17,6 @@ HOMEPAGE=	http://mhash.sourceforge.net/
 PERMIT_PACKAGE_CDROM=	Yes
 
 CONFIGURE_STYLE= gnu
-CONFIGURE_ARGS+= ${CONFIGURE_SHARED}
 CONFIGURE_ARGS+= --enable-static
 
 .include <bsd.port.mk>

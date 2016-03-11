@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2016/02/21 16:17:25 jsg Exp $
+# $OpenBSD: Makefile,v 1.4 2016/03/11 19:59:13 naddy Exp $
 
 BROKEN-arm =		undefined reference to __sync atomic ops
 BROKEN-hppa =		undefined reference to __sync atomic ops
@@ -34,7 +34,6 @@ BUILD_DEPENDS =		${MODGNU_AUTOCONF_DEPENDS} \
 USE_GMAKE =		Yes
 
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
 
 AUTOCONF_VERSION =	2.69
 AUTOMAKE_VERSION =	1.11

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.15 2015/05/22 11:31:17 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.16 2016/03/11 19:59:15 naddy Exp $
 
 COMMENT=	asynchronous resolver library
 
@@ -17,6 +17,5 @@ HOMEPAGE=	http://c-ares.haxx.se/
 PERMIT_PACKAGE_CDROM=	Yes
 
 CONFIGURE_STYLE= gnu
-CONFIGURE_ARGS=	${CONFIGURE_SHARED}
 
 .include <bsd.port.mk>

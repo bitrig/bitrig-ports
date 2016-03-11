@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/10/18 21:08:12 bcallah Exp $
+# $OpenBSD: Makefile,v 1.13 2016/03/11 19:59:12 naddy Exp $
 
 COMMENT =		library for decoding mod-like music formats
 
@@ -21,6 +21,5 @@ WANTLIB +=		c++ c++abi pthread
 NO_TEST =		Yes
 
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
 
 .include <bsd.port.mk>

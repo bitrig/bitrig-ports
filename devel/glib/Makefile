@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.73 2015/05/25 07:54:27 jasper Exp $
+# $OpenBSD: Makefile,v 1.74 2016/03/11 19:59:12 naddy Exp $
 
 PORTROACH=	limit:^1\.2\.
 
@@ -24,7 +24,6 @@ CFLAGS+= -fgnu89-inline
 
 SEPARATE_BUILD=	Yes
 CONFIGURE_STYLE= gnu
-CONFIGURE_ARGS+= ${CONFIGURE_SHARED}
 CONFIGURE_ARGS+= --enable-static
 CONFIGURE_ENV+= CC=cc
 

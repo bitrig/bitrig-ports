@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2015/03/16 18:07:36 naddy Exp $
+# $OpenBSD: Makefile,v 1.11 2016/03/11 19:59:12 naddy Exp $
 
 COMMENT =	Open Fingerprint Architecture library
 
@@ -24,8 +24,6 @@ LIB_DEPENDS =	math/fftw3
 
 SEPARATE_BUILD =	Yes
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ARGS =	${CONFIGURE_SHARED} \
-			--enable-maintainer-mode
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
