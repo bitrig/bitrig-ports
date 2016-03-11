@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.42 2015/12/17 09:47:22 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.43 2016/03/11 11:48:28 naddy Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -44,7 +44,7 @@ BUILD_DEPENDS=		${RUN_DEPENDS}
 
 CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS=${WRKDIST} ${WRKDIST}/TclMagick
-CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
+CONFIGURE_ARGS+=	--enable-shared \
 			--with-gs-font-dir=${LOCALBASE}/share/fonts/ghostscript \
 			--with-ltdl-include=${LOCALBASE}/include \
 			--with-ltdl-lib=${LOCALBASE}/lib \
