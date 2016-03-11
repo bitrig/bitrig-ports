@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2014/10/20 03:41:25 bcallah Exp $
+# $OpenBSD: Makefile,v 1.12 2016/03/11 20:11:39 naddy Exp $
 
 COMMENT=		minimal XML library
 DISTNAME=		mxml-2.9
@@ -18,7 +18,7 @@ WANTLIB=		c
 MASTER_SITES=		http://www.msweet.org/files/project3/
 
 CONFIGURE_STYLE=	gnu dest
-CONFIGURE_ARGS+=	${CONFIGURE_SHARED} --disable-threads
+CONFIGURE_ARGS+=	--disable-threads
 CONFIGURE_ENV+=		LIBmxml_VERSION=${LIBmxml_VERSION}
 MAKE_ENV+=		LIBmxml_VERSION=${LIBmxml_VERSION}
 

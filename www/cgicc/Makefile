@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/03/16 18:07:57 naddy Exp $
+# $OpenBSD: Makefile,v 1.21 2016/03/11 20:11:39 naddy Exp $
 
 BROKEN= 	needs work on bitrig
 
@@ -21,7 +21,7 @@ WANTLIB += c++ c++abi pthread
 
 
 CONFIGURE_STYLE= gnu
-CONFIGURE_ARGS=	${CONFIGURE_SHARED} --enable-static
+CONFIGURE_ARGS=	--enable-static
 MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/example ${WRKSRC}/support
 
 FAKE_FLAGS=	docdir=${DESTDIR}${PREFIX}/share/doc/cgicc
