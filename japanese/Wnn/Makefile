@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.77 2015/07/25 16:47:12 espie Exp $
+# $OpenBSD: Makefile,v 1.78 2016/03/11 16:06:01 naddy Exp $
 
 BROKEN =		needs work on bitrig
 
@@ -18,19 +18,19 @@ CATEGORIES =	japanese
 MULTI_PACKAGES =	-main -dict -zh -zhdict -ko -kodict -xwnmo -data
 
 PKGNAME-main =		ja-Wnn-4.2
-REVISION-main =		12
+REVISION-main =		13
 PKGNAME-dict =		ja-Wnndict-4.2
 REVISION-dict =		1
 PKGNAME-zh =		zh-Wnn-4.2
-REVISION-zh =		6
+REVISION-zh =		7
 PKGNAME-zhdict =	zh-Wnndict-4.2
 REVISION-zhdict =	1
 PKGNAME-ko =		ko-Wnn-4.2
-REVISION-ko =		6
+REVISION-ko =		7
 PKGNAME-kodict =	ko-Wnndict-4.2
 REVISION-kodict =	1
 PKGNAME-xwnmo =		Wnn-xwnmo-4.2
-REVISION-xwnmo =	7
+REVISION-xwnmo =	8
 PKGNAME-data =		Wnn-data-4.2
 REVISION-data =		0
 
@@ -151,7 +151,3 @@ post-install:
 	chmod u-s ${PREFIX}/bin/*server
 
 .include <bsd.port.mk>
-
-.if ${PROPERTIES:Mno_shared}
-MAKE_FLAGS += XONLYLIB='-lX11 -lxcb -lXau -lXdmcp'
-.endif
