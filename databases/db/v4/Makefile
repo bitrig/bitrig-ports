@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.65 2015/12/03 21:24:29 sthen Exp $
+# $OpenBSD: Makefile,v 1.66 2016/03/12 16:45:57 naddy Exp $
 
 COMMENT-java=	Java bindings for Berkeley DB, revision ${REV}
 

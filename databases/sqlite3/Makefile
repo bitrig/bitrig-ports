@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.77 2016/03/11 19:59:12 naddy Exp $
+# $OpenBSD: Makefile,v 1.78 2016/03/12 16:45:57 naddy Exp $
 
 COMMENT-main=	embedded SQL implementation
 COMMENT-tcl=	TCL bindings for Sqlite3
@@ -35,20 +35,14 @@ CFLAGS+=	-DSQLITE_ENABLE_COLUMN_METADATA \
 		-DSQLITE_ENABLE_FTS3
 
 CONFIGURE_STYLE=gnu
+CONFIGURE_ARGS=	--enable-load-extension
 
 PSEUDO_FLAVORS=	no_tcl
-NOT_FOR_ARCHS-tcl = ${NO_SHARED_ARCHS}
 FLAVOR ?=
 
 MULTI_PACKAGES=-main -lemon -tcl
 
 .include <bsd.port.arch.mk>
-
-LIB_DEPENDS-main=	bitrig/bitrig-binutils devel/readline
-
-.if !${PROPERTIES:Mno_shared}
-CONFIGURE_ARGS +=	--enable-load-extension
-.endif
 
 .if ${BUILD_PACKAGES:M-tcl}
 MODULES+=	lang/tcl
