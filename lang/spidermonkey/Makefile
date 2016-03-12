@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.28 2016/01/23 18:07:13 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.29 2016/03/12 07:02:16 mmcc Exp $
 
 # old version that does not get updates; should be rm'd at some point
 PORTROACH=	ignore:1
@@ -32,7 +32,7 @@ PKG_ARGS+=	-Djit=1 -Damd64=1
 PKG_ARGS+=	-Djit=0 -Damd64=0
 .endif
 
-HOMEPAGE =	http://www.mozilla.org/js/spidermonkey/
+HOMEPAGE =	https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
 
 MASTER_SITES =	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/${FFX_VERSION}/source/
 EXTRACT_SUFX =	.tar.bz2

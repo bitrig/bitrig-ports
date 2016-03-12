@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/05/19 09:26:11 kettenis Exp $
+# $OpenBSD: Makefile,v 1.7 2016/03/12 07:02:16 mmcc Exp $
 
 SHARED_ONLY=	Yes
 # based on ffx 17 engine
@@ -21,7 +21,7 @@ SO_VERSION =	0.0
 SHARED_LIBS =	mozjs-17.0 ${SO_VERSION}
 CATEGORIES =	devel
 
-HOMEPAGE =	http://www.mozilla.org/js/spidermonkey/
+HOMEPAGE =	https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
 MASTER_SITES =	http://ftp.mozilla.org/pub/mozilla.org/js/
 
 # MPL
