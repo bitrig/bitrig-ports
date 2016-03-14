@@ -24,6 +24,5 @@ MODLUA_SA=	Yes
 
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/config.aux
 CONFIGURE_ARGS=	--with-manual
->>>>>>> garbage collect CONFIGURE_SHARED
 
 .include <bsd.port.mk>
