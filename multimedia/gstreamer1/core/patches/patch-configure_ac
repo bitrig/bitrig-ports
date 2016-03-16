@@ -1,0 +1,11 @@
+--- configure.ac.orig	Tue Mar 15 15:18:00 2016
++++ configure.ac	Tue Mar 15 15:18:15 2016
+@@ -273,7 +273,7 @@ case "$host_os" in
+     dnl Can't run on iOS because of permissions
+     AC_CHECK_HEADER(MobileCoreServices/MobileCoreServices.h, HAVE_PTP="no", HAVE_PTP="yes", [-])
+     ;;
+-  linux*|darwin*|solaris*|netbsd*|freebsd*|openbsd*|kfreebsd*|dragonfly*|gnu*)
++  linux*|darwin*|solaris*|netbsd*|freebsd*|openbsd*|bitrig*|kfreebsd*|dragonfly*|gnu*)
+     HAVE_PTP=yes
+     ;;
+   *)

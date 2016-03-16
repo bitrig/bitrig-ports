@@ -1,0 +1,11 @@
+--- configure.orig	Fri Sep 25 07:56:11 2015
++++ configure	Tue Mar 15 15:16:25 2016
+@@ -16209,7 +16209,7 @@ fi
+ 
+ 
+     ;;
+-  linux*|darwin*|solaris*|netbsd*|freebsd*|openbsd*|kfreebsd*|dragonfly*|gnu*)
++  linux*|darwin*|solaris*|netbsd*|freebsd*|openbsd*|bitrig*|kfreebsd*|dragonfly*|gnu*)
+     HAVE_PTP=yes
+     ;;
+   *)

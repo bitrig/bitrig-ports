@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.20 2015/06/08 06:10:07 ajacoutot Exp $
+# $OpenBSD: Makefile.inc,v 1.21 2015/09/27 08:21:22 ajacoutot Exp $
 
 # Most frequent usage of the GStreamer packages:
 # core		base library
@@ -15,17 +15,19 @@
 # support for most video codecs is provided by
 #     gstreamer1-plugins-libav
 
-PORTROACH=		limit:^1\.4
+PORTROACH=		limitw:1,even
 
 SHARED_ONLY=		Yes
 
-V ?=			1.4.5
+V ?=			1.6.0
 API=			1.0
 SUBST_VARS +=		API
 
 CATEGORIES ?=		multimedia devel
 
 HOMEPAGE ?=		http://gstreamer.freedesktop.org/
+
+MAINTAINER ?=		Antoine Jacoutot <ajacoutot@openbsd.org>
 
 GST_PKGNAME_PREFIX=	gstreamer1
 
