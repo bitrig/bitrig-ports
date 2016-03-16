@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.333 2016/01/18 17:55:09 sthen Exp $
+# $OpenBSD: Makefile,v 1.334 2016/03/16 22:16:25 sthen Exp $
 
      SUBDIR =
      SUBDIR += abook
@@ -52,7 +52,6 @@
      SUBDIR += exim,postgresql
      SUBDIR += exmh2
      SUBDIR += extsmail
-     SUBDIR += faces
      SUBDIR += fdm
      SUBDIR += femail
      SUBDIR += fetchmail
@@ -237,7 +236,6 @@
      SUBDIR += wmmail
      SUBDIR += wmmultipop3
      SUBDIR += wmpop3
-     SUBDIR += xfaces
      SUBDIR += xlbiff
      SUBDIR += z-push
      SUBDIR += zarafa
