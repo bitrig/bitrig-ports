@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.31 2016/01/03 18:01:35 shadchin Exp $
+# $OpenBSD: Makefile,v 1.32 2016/03/16 00:04:16 jca Exp $
 
 COMMENT=	powerful IMAP/Maildir synchronization and reader support
 
-MODPY_EGG_VERSION = 6.6.1
+MODPY_EGG_VERSION = 6.7.0
 GH_ACCOUNT =	OfflineIMAP
 GH_PROJECT =	offlineimap
 GH_TAGNAME =	v${MODPY_EGG_VERSION}
@@ -10,7 +10,7 @@ DISTNAME=	offlineimap-${MODPY_EGG_VERSION}
 REVISION=	0
 CATEGORIES=	mail
 
-HOMEPAGE=	http://offlineimap.org/
+HOMEPAGE=	http://www.offlineimap.org/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
