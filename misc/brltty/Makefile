@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.14 2015/08/12 22:27:31 sthen Exp $
+# $OpenBSD: Makefile,v 1.15 2016/03/16 21:19:38 naddy Exp $
 
 BROKEN= 	needs work on bitrig
 
 COMMENT=	access software for a blind person using a braille terminal
 
-SHARED_ONLY=	Yes
 DISTNAME=	brltty-3.6
 REVISION=	1
 CATEGORIES=	misc
