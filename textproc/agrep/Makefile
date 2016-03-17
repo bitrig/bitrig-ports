@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2015/02/16 22:57:13 naddy Exp $
+# $OpenBSD: Makefile,v 1.24 2016/03/17 21:14:46 naddy Exp $
 
 COMMENT=	approximate grep (fast approximate pattern-matching tool)
 
