@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2013/03/11 11:41:32 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2016/03/17 21:08:28 naddy Exp $
 
 COMMENT =		statistical analyzer for binary streams
 
