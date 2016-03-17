@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2013/08/06 18:43:15 naddy Exp $
+# $OpenBSD: Makefile,v 1.21 2016/03/17 21:07:32 naddy Exp $
 
 COMMENT=	create tcp socket and connect to stdin/out
 
