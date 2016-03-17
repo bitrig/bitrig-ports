@@ -2,7 +2,6 @@
 
     SUBDIR =
     SUBDIR += core
-    SUBDIR += mm
     SUBDIR += plugins-base
     SUBDIR += plugins-ffmpeg
     SUBDIR += plugins-gl

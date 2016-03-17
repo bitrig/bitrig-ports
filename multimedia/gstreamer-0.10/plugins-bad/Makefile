@@ -12,9 +12,9 @@ PKGNAME-main=		gstreamer-plugins-bad-${V}
 PKGNAME-neon=		gstreamer-neon-${V}
 PKGNAME-mjpeg=		gstreamer-mjpeg-${V}
 
-REVISION-main=		23
+REVISION-main=		24
 REVISION-mjpeg=		14
-REVISION-neon=		1o
+REVISION-neon=		10
 
 SHARED_LIBS +=  gstphotography-0.10       1.0 # 23.0
 SHARED_LIBS +=  gstsignalprocessor-0.10   1.0 # 23.0
@@ -34,7 +34,7 @@ WANTLIB += lzma pthread z m pcre gstreamer-0.10 ffi
 WANTLIB-main += ${WANTLIB}
 WANTLIB-main += SDL SoundTouch X11 Xext Xrender
 WANTLIB-main += ass bz2 cairo cdaudio croco-0.6 crypto
-WANTLIB-main += curl dca dvdnav dvdread enca expat fontconfig freetype
+WANTLIB-main += curl dca dvdnav dvdread expat fontconfig freetype
 WANTLIB-main += fribidi gdk_pixbuf-2.0 gio-2.0 gsm gstapp-0.10 gstaudio-0.10
 WANTLIB-main += gstbase-0.10 gstcontroller-0.10 gstfft-0.10 gstinterfaces-0.10
 WANTLIB-main += gstpbutils-0.10 gstriff-0.10 gstrtp-0.10 gstsdp-0.10

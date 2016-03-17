@@ -12,7 +12,7 @@ PKGNAME-main=		gstreamer-plugins-ugly-${V}
 PKGNAME-sidplay=	gstreamer-sidplay-${V}
 PKGNAME-lame=		gstreamer-lame-${V}
 
-REVISION-main=		5
+REVISION-main=		6
 REVISION-sidplay=	5
 REVISION-lame=		3
 
@@ -28,7 +28,7 @@ WANTLIB += lzma xml2 m z pcre gstreamer-0.10 ffi pthread
 WANTLIB-main += ${WANTLIB}
 WANTLIB-main += a52 dvdread gstaudio-0.10 gstbase-0.10 gstinterfaces-0.10
 WANTLIB-main += gstpbutils-0.10 gstriff-0.10 gstrtp-0.10 gstrtsp-0.10
-WANTLIB-main += gstsdp-0.10 gsttag-0.10 gstvideo-0.10 mad orc-0.4 twolame
+WANTLIB-main += gstsdp-0.10 gsttag-0.10 gstvideo-0.10 orc-0.4 twolame
 WANTLIB-main += x264
 
 WANTLIB-sidplay += ${WANTLIB}
@@ -45,7 +45,6 @@ RUN_DEPENDS=		${BUILD_PKGPATH}
 LIB_DEPENDS-main=	${LIB_DEPENDS} \
 			${P}/plugins-base \
 			audio/liba52 \
-			audio/libmad \
 			audio/twolame \
 			devel/libdvdread \
 			multimedia/x264
@@ -60,6 +59,7 @@ LIB_DEPENDS-lame=	${LIB_DEPENDS} \
 CONFIGURE_ARGS=		--disable-amrnb \
 			--disable-amrwb \
 			--disable-cdio \
+			--disable-mad \
 			--disable-mpeg2dec
 
 pre-configure:
