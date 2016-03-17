@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.5 2016/01/26 13:05:26 sthen Exp $
+# $OpenBSD: Makefile,v 1.6 2016/03/17 11:44:56 sthen Exp $
 
 BROKEN = 		needs work on bitrig
 
 COMMENT =		LDAP authentication plugin for OpenVPN 2.x
 
 VERSION =		2.0.3
-REVISION =		1
+REVISION =		2
 DISTNAME =		auth-ldap-${VERSION}
 PKGNAME =		openvpn-${DISTNAME}
 REVISION =		1
