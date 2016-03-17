@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.7 2016/03/11 20:28:31 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2016/03/17 22:53:06 millert Exp $
 
 COMMENT=	execute a command as another user
 
-DISTNAME=	sudo-1.8.15
+DISTNAME=	sudo-1.8.16
 CATEGORIES=	security
 
 # ISC-style license
@@ -11,7 +11,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 WANTLIB+=	c util z
 
 
-HOMEPAGE=	http://www.sudo.ws/
+HOMEPAGE=	https://www.sudo.ws/
 
 MASTER_SITES=	https://www.sudo.ws/dist/ \
 		ftp://plier.ucar.edu/pub/sudo/ \
