@@ -1,26 +1,24 @@
-# $OpenBSD: Makefile,v 1.24 2014/11/29 10:22:37 jsg Exp $
+# $OpenBSD: Makefile,v 1.25 2016/03/17 00:46:58 jsg Exp $
 
 BROKEN= 	needs work on bitrig
 
 COMMENT=	collection of various tools for scummvm
-DISTNAME=	scummvm-tools-1.7.0
-REVISION=	0
+V=		1.8.0
+DISTNAME=	scummvm-tools-${V}
 CATEGORIES=	games
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scummvm/}
-REVISION =	1
+MASTER_SITES=	http://www.scummvm.org/frs/scummvm-tools/${V}/
 
-HOMEPAGE=	http://scummvm.sourceforge.net/
+HOMEPAGE=	http://www.scummvm.org/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c m ogg z FLAC mad png pthread vorbis \
+WANTLIB=		c freetype iconv m ogg c++ c++abi z FLAC mad png pthread vorbis \
 			vorbisenc vorbisfile \
 			wx_base_net wx_base wx_base_odbc wx_base_xml \
 			wx_gtk2_adv wx_gtk2_aui wx_gtk2_core \
 			wx_gtk2_dbgrid wx_gtk2_html wx_gtk2_qa \
 			wx_gtk2_richtext wx_gtk2_xrc
-WANTLIB+=		c++ c++abi
 
 NO_TEST=	Yes
 USE_GMAKE=	Yes
@@ -53,6 +51,7 @@ do-install:
 		${WRKBUILD}/extract_mohawk \
 		${WRKBUILD}/construct_mohawk \
 		${WRKBUILD}/gob_loadcalc \
+		${WRKBUILD}/create_sjisfnt \
 		${PREFIX}/bin
 
 .include <bsd.port.mk>
