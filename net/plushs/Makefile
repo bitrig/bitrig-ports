@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2015/02/16 22:57:11 naddy Exp $
+# $OpenBSD: Makefile,v 1.10 2016/03/17 19:52:40 naddy Exp $
 
 COMMENT=		simple hostname scanner
 
