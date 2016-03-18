@@ -1,8 +1,4 @@
-# $OpenBSD: Makefile,v 1.45 2016/03/11 20:28:22 naddy Exp $
-
-MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build-aux
-
-SHARED_ONLY=	Yes
+# $OpenBSD: Makefile,v 1.46 2016/03/18 21:38:22 naddy Exp $
 
 COMMENT-main=	implementation of the Freedesktop sound theme spec.
 COMMENT-gtk=	gtk+2 helper for libcanberra
