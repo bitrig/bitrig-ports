@@ -1,8 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2014/09/13 18:09:20 brad Exp $
-
-BROKEN= 		needs work on bitrig
-
-SHARED_ONLY=		Yes
+# $OpenBSD: Makefile,v 1.17 2016/03/18 23:12:15 naddy Exp $
 
 COMMENT=		C++ database API
 

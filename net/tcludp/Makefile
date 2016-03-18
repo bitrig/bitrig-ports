@@ -1,8 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2016/03/11 20:28:29 naddy Exp $
-
-BROKEN = 	needs work on bitrig
-
-SHARED_ONLY =	Yes
+# $OpenBSD: Makefile,v 1.12 2016/03/18 23:12:19 naddy Exp $
 
 COMMENT =	Tcl UDP extension
 

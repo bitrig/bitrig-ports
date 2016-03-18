@@ -1,8 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2013/03/10 22:55:03 espie Exp $
-
-BROKEN = 		needs work on bitrig
-
-SHARED_ONLY =		Yes
+# $OpenBSD: Makefile,v 1.10 2016/03/18 23:12:15 naddy Exp $
 
 ONLY_FOR_ARCHS =	${GCC4_ARCHS}
 

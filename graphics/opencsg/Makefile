@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2016/03/07 11:57:55 zhuk Exp $
+# $OpenBSD: Makefile,v 1.6 2016/03/18 23:12:17 naddy Exp $
 
 COMMENT =		constructive solid geometry rendering library
 
@@ -7,7 +7,6 @@ DISTNAME =		OpenCSG-${V}
 PKGNAME =		opencsg-${V}
 REVISION =		1
 
-SHARED_ONLY =		Yes
 SHARED_LIBS =		opencsg		0.0
 
 CATEGORIES =		graphics

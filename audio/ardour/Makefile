@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/12/17 23:14:16 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.22 2016/03/18 23:12:15 naddy Exp $
 
 # XXX check if still needed at next update
 CXXFLAGS +=		-std=c++11
@@ -6,7 +6,6 @@ CXXFLAGS +=		-std=c++11
 BROKEN = 		needs work on bitrig.
 
 ONLY_FOR_ARCHS =	amd64 i386 powerpc
-SHARED_ONLY =		Yes
 
 COMMENT =		digital audio workstation
 

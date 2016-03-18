@@ -1,8 +1,4 @@
-# $OpenBSD: Makefile,v 1.107 2015/04/21 18:51:25 sthen Exp $
-
-BROKEN= 		needs work on bitrig
-
-SHARED_ONLY=		Yes
+# $OpenBSD: Makefile,v 1.108 2016/03/18 23:12:17 naddy Exp $
 
 COMMENT=		technical diagrams drawing tool
 

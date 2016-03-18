@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2016/03/09 18:31:36 jasper Exp $
+# $OpenBSD: Makefile,v 1.15 2016/03/18 23:12:18 naddy Exp $
 
 BROKEN-mips64 =		ICE on Interval_nt.h:98
 
@@ -13,7 +13,6 @@ PKGNAME =		${DISTNAME:L}
 REVISION=		1
 EPOCH =			0
 
-SHARED_ONLY =		Yes
 SHARED_LIBS =		CGAL		1.0 \
 			CGAL_Core	1.0 \
 			CGAL_ImageIO	1.0 \

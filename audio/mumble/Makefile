@@ -1,8 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2016/03/07 11:58:49 zhuk Exp $
-
-BROKEN = 		needs work on bitrig
-
-SHARED_ONLY =		Yes
+# $OpenBSD: Makefile,v 1.21 2016/03/18 23:12:15 naddy Exp $
 
 COMMENT =		low-latency voice chat client
 
