@@ -1,7 +1,6 @@
-$OpenBSD: patch-Makefile_config_in,v 1.6 2012/05/25 09:05:49 sthen Exp $
---- Makefile.config.in.orig	Wed Jul 16 12:50:34 2014
-+++ Makefile.config.in	Sat Sep 20 23:51:52 2014
-@@ -101,11 +101,11 @@ endif
+--- Makefile.config.in.orig	Fri Mar 18 11:00:15 2016
++++ Makefile.config.in	Fri Mar 18 11:00:54 2016
+@@ -106,11 +106,11 @@ endif
  PROJ_bindir     := $(PROJ_prefix)/bin
  PROJ_libdir     := $(PROJ_prefix)/lib
  PROJ_datadir    := $(PROJ_prefix)/share

@@ -3,29 +3,29 @@
 # XXX: Remember to bump MODCLANG_VERSION in lang/clang/clang.port.mk when
 # updating this port.
 
-BROKEN=		does not work on bitrig
-
-COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
+#BROKEN=		does not work on bitrig
 DPB_PROPERTIES= parallel
 
-LLVM_V =	3.5
-DISTNAME =	llvm-${LLVM_V}.20140228
-REVISION =	35
+COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
+
+LLVM_V =	3.8.0
+DISTNAME =	llvm-${LLVM_V}.src
+PKGNAME =	llvm-${LLVM_V}
+#REVISION =	0
 CATEGORIES =	devel
-MASTER_SITES =	http://comstyle.com/source/
+DISTFILES =	llvm-${LLVM_V}.src${EXTRACT_SUFX} \
+		cfe-${LLVM_V}.src${EXTRACT_SUFX}
+DISTFILES += compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
+MASTER_SITES =	http://www.llvm.org/releases/${LLVM_V}/
 EXTRACT_SUFX =	.tar.xz
 
-LLVM_V =	3.5.0
-DISTREALNAME =	llvm-${LLVM_V}
-DISTNAME =	${DISTREALNAME}
-EPOCH =		0
-
-CATEGORIES =	devel
+SHARED_LIBS +=	clang 3.0 \
+				LTO 0.0
 
 # packager notes in http://llvm.org/docs/Packaging.html
 HOMEPAGE =	http://www.llvm.org/
 
-SHARED_LIBS +=	clang 3.0	# 3.5
+
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
@@ -33,20 +33,15 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =	c m pthread z
 WANTLIB +=	c++ c++abi
 
-MASTER_SITES =	http://llvm.org/releases/${LLVM_V}/
-
-DISTFILES =	${DISTREALNAME}.src${EXTRACT_SUFX} cfe-${LLVM_V}.src${EXTRACT_SUFX}
-DISTFILES +=	compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
-WRKDIST =	${WRKDIR}/llvm-${LLVM_V}.src
-
 MODULES =	devel/cmake \
 		lang/python
 
-TEST_DEPENDS =	devel/dejagnu
+
+TEST_DEPENDS =	devel/dejagnu \
+			shells/bash
 BUILD_DEPENDS += textproc/py-sphinx
 
 SEPARATE_BUILD =	Yes
-
 CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
 			-DLLVM_REQUIRES_RTTI:Bool=True \
 			-DLLVM_TARGETS_TO_BUILD:String="AArch64;ARM;X86" \
@@ -83,15 +78,12 @@ post-extract:
 	@mv ${WRKDIR}/compiler-rt-${LLVM_V}.src ${WRKDIST}/projects/compiler-rt
 
 pre-configure:
-	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/scan-build/scan-build
+	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/scan-build/bin/scan-build
 	@${SUBST_CMD} ${WRKSRC}/tools/clang/tools/c-index-test/CMakeLists.txt
 	-@ln -s ${MODPY_BIN} ${WRKDIR}/bin/python
 
 post-build:
 	cd ${WRKSRC}/docs && make -f Makefile.sphinx man
-	pod2man --release=CVS --center="LLVM" \
-	    ${WRKSRC}/tools/clang/docs/tools/clang.pod \
-	    ${WRKSRC}/docs/_build/man/clang.1
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-build/ccc-analyzer \
