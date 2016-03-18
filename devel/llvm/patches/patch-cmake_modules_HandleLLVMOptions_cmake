@@ -1,0 +1,10 @@
+--- cmake/modules/HandleLLVMOptions.cmake.orig	Wed Jan  6 14:05:19 2016
++++ cmake/modules/HandleLLVMOptions.cmake	Fri Mar 18 11:13:29 2016
+@@ -133,6 +133,7 @@ endif()
+ # build might work on ELF but fail on MachO/COFF.
+ if(NOT (${CMAKE_SYSTEM_NAME} MATCHES "Darwin" OR WIN32 OR CYGWIN OR
+         ${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD" OR
++        ${CMAKE_SYSTEM_NAME} MATCHES "Bitrig" OR
+         ${CMAKE_SYSTEM_NAME} MATCHES "OpenBSD") AND
+    NOT LLVM_USE_SANITIZER)
+   set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,-z,defs")
