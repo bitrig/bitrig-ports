@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2016/02/01 21:55:38 sthen Exp $
+# $OpenBSD: Makefile,v 1.19 2016/03/19 21:18:38 naddy Exp $
 
 COMMENT=	PHP support for rar archives
 
@@ -9,8 +9,7 @@ REVISION=	3
 # PHP
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=	m
-WANTLIB+=	c++ c++abi pthread
+WANTLIB=	c m c++ c++abi
 
 MODULES=	lang/php/pecl
 CONFIGURE_STYLE= gnu
