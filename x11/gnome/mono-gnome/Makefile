@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2016/03/19 10:08:24 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.34 2016/03/19 10:12:26 ajacoutot Exp $
 
 COMMENT=	.NET language bindings for assorted GNOME libraries
 
@@ -47,5 +47,8 @@ DLLMAP_FILES=	art/art-sharp.dll.config \
 pre-configure:
 	find ${WRKSRC} -name *\.pc.in -exec sed -i \
 		's,^prefix=.*,prefix=\@prefix\@,' {} \;
+
+post-install:
+	rm ${PREFIX}/lib/libgnomesharpglue-2.{a,la}
 
 .include <bsd.port.mk>
