@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.32 2015/07/18 22:34:53 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.33 2016/03/19 10:08:24 ajacoutot Exp $
 
 COMMENT=	.NET language bindings for assorted GNOME libraries
 
