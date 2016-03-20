@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2014/03/23 14:27:39 jasper Exp $
+# $OpenBSD: Makefile,v 1.4 2016/03/20 19:56:26 naddy Exp $
 
 COMMENT =	essential utilities for the Iterator class.
 
@@ -10,6 +10,7 @@ CATEGORIES =	devel
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 
 RUN_DEPENDS =		devel/p5-Iterator
 

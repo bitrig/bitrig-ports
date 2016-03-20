@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.18 2014/12/18 08:22:43 benoit Exp $
+# $OpenBSD: Makefile,v 1.20 2016/03/20 19:56:58 naddy Exp $
 
 COMMENT=	module for managing newsrc files
 
 MODULES=	cpan
+PKG_ARCH=	*
 DISTNAME =	News-Newsrc-1.11
 CATEGORIES=	news
 

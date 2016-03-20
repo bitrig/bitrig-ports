@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.10 2014/12/08 15:01:58 benoit Exp $
+# $OpenBSD: Makefile,v 1.12 2016/03/20 19:57:09 naddy Exp $
 
 COMMENT=	justify strings to various alignment styles
 
 MODULES=	cpan
+PKG_ARCH=	*
 DISTNAME =	Text-Aligner-0.12
 CATEGORIES=	textproc
 

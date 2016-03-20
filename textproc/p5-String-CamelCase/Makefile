@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 11:42:44 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2016/03/20 19:57:08 naddy Exp $
 
 COMMENT=	camelcase, de-camelcase
 
 MODULES=	cpan
+PKG_ARCH=	*
 DISTNAME=	String-CamelCase-0.02
 REVISION=	0
 CATEGORIES=	textproc

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2015/12/21 20:40:37 bluhm Exp $
+# $OpenBSD: Makefile,v 1.18 2016/03/20 19:56:46 naddy Exp $
 
 COMMENT =		iterative SPF lookup
 
@@ -10,6 +10,7 @@ CATEGORIES =		mail
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 BUILD_DEPENDS =		${RUN_DEPENDS}
 RUN_DEPENDS =		net/p5-Net-DNS>=0.62 \
 			www/p5-URI

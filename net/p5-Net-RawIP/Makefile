@@ -1,8 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2015/07/16 23:57:25 ajacoutot Exp $
-
-BROKEN= 	needs work on bitrig
-
-SHARED_ONLY=	Yes
+# $OpenBSD: Makefile,v 1.28 2016/03/20 19:56:54 naddy Exp $
 
 COMMENT=	module to manipulate raw ip packets
 
@@ -14,7 +10,7 @@ CATEGORIES=	net
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c pcap
+WANTLIB += c pcap perl
 
 MODCPAN_EXAMPLES=	Yes
 

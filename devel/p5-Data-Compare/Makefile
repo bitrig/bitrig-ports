@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 10:50:15 espie Exp $
+# $OpenBSD: Makefile,v 1.4 2016/03/20 19:56:17 naddy Exp $
 
 COMMENT=	compare perl data structures
 
@@ -10,6 +10,7 @@ CATEGORIES=	devel
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=		cpan
+PKG_ARCH=		*
 RUN_DEPENDS=		devel/p5-File-Find-Rule
 
 .include <bsd.port.mk>

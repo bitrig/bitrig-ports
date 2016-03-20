@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2013/03/11 11:42:44 espie Exp $
+# $OpenBSD: Makefile,v 1.12 2016/03/20 19:57:09 naddy Exp $
 
 COMMENT=	convert Markdown syntax to (X)HTML
 
@@ -6,6 +6,7 @@ DISTNAME=	Text-Markdown-1.000031
 REVISION=	0
 CATEGORIES=	textproc www
 MODULES=	cpan
+PKG_ARCH=	*
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

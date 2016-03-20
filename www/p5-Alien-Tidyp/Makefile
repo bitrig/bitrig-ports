@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2014/11/19 00:34:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.5 2016/03/20 19:57:13 naddy Exp $
 
 COMMENT=	building, finding and using tidyp library
 
@@ -7,6 +7,7 @@ PKGNAME=	p5-${DISTNAME:S/v//}
 REVISION=	0
 CATEGORIES=	www
 MODULES=	cpan
+PKG_ARCH=	*
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

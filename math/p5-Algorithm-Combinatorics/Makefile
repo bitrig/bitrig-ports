@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/07/16 23:57:25 ajacoutot Exp $
-
-SHARED_ONLY =		yes
+# $OpenBSD: Makefile,v 1.7 2016/03/20 19:56:47 naddy Exp $
 
 COMMENT =		efficient generation of combinatorial sequences
 
@@ -13,7 +11,7 @@ CPAN_AUTHOR =		FXN
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c
+WANTLIB += c perl
 
 MODULES =		cpan
 

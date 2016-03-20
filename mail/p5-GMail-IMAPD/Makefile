@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2014/10/22 13:44:44 jasper Exp $
+# $OpenBSD: Makefile,v 1.10 2016/03/20 19:56:45 naddy Exp $
 
 COMMENT=		imap4 gateway to Google webmail service
 
@@ -10,6 +10,7 @@ CATEGORIES=		mail
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=		cpan
+PKG_ARCH=		*
 
 RUN_DEPENDS=		mail/p5-Mail-Webmail-Gmail
 BUILD_DEPENDS=		${RUN_DEPENDS}

@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/07/16 23:57:25 ajacoutot Exp $
-
-SHARED_ONLY =	Yes
+# $OpenBSD: Makefile,v 1.22 2016/03/20 19:56:51 naddy Exp $
 
 COMMENT =	module for access to network card configuration information
 
@@ -13,6 +11,8 @@ HOMEPAGE =	https://github.com/lstein/LibIO-Interface-Perl
 
 # Artistic/GPL
 PERMIT_PACKAGE_CDROM =	Yes
+
+WANTLIB =	perl
 
 CONFIGURE_STYLE =	modbuild
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2015/08/12 06:17:08 benoit Exp $
+# $OpenBSD: Makefile,v 1.6 2016/03/20 19:56:32 naddy Exp $
 
 COMMENT =	PerlIO layer that adds read & write timeout to a handle
 
@@ -9,6 +9,7 @@ CATEGORIES =	devel
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 
 RUN_DEPENDS =		devel/p5-Time-Out
 TEST_DEPENDS =		net/p5-Test-TCP

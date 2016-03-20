@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/01/21 14:43:33 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2016/03/20 19:57:23 naddy Exp $
 
 COMMENT=		interface to Music Brainz
 
@@ -7,6 +7,7 @@ REVISION=		0
 CATEGORIES=		www
 
 MODULES=		cpan
+PKG_ARCH=		*
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

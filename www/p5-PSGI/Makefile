@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.3 2015/11/05 10:10:04 benoit Exp $
+# $OpenBSD: Makefile,v 1.4 2016/03/20 19:57:21 naddy Exp $
 
 COMMENT =		perl Web Server Gateway Interface Specification
 
 MODULES =		cpan
-DISTNAME =		PSGI-1.03
-REVISION =		0
+PKG_ARCH =		*
+DISTNAME =		PSGI-1.102
 CATEGORIES =		www
 CPAN_AUTHOR	=	MIYAGAWA
 

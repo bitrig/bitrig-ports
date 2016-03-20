@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.17 2015/05/26 20:15:00 bluhm Exp $
+# $OpenBSD: Makefile,v 1.18 2016/03/20 19:56:18 naddy Exp $
 
 COMMENT =		perl module to generate random data
 
@@ -10,6 +10,7 @@ CATEGORIES =		devel
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 BUILD_DEPENDS =		devel/p5-YAML-Tiny
 TEST_DEPENDS =		graphics/p5-GD
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.12 2014/12/17 00:15:24 bluhm Exp $
+# $OpenBSD: Makefile,v 1.13 2016/03/20 19:56:53 naddy Exp $
 
 COMMENT =		make common perl modules IPv6 ready by hotpatching
 
@@ -11,5 +11,6 @@ CATEGORIES =		net
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 
 .include <bsd.port.mk>

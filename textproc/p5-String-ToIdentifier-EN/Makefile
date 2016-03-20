@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2014/03/16 21:57:04 afresh1 Exp $
+# $OpenBSD: Makefile,v 1.5 2016/03/20 19:57:08 naddy Exp $
 
 COMMENT =	convert strings to english program identifiers
 DISTNAME =	String-ToIdentifier-EN-0.11
@@ -9,6 +9,7 @@ CATEGORIES =	textproc
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 CONFIGURE_ARGS =	--skipdeps
 
 RUN_DEPENDS =	devel/p5-namespace-clean \

@@ -1,8 +1,6 @@
-# $OpenBSD: Makefile,v 1.23 2015/07/16 23:57:21 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.24 2016/03/20 19:56:19 naddy Exp $
 
 COMMENT =		perl objected oriented Date Time
-
-SHARED_ONLY =		Yes
 
 MODULES =		cpan
 DISTNAME =		DateTime-1.07
@@ -13,7 +11,7 @@ REVISION =		2
 # artistic_2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c
+WANTLIB += c perl
 CONFIGURE_STYLE =	modbuild
 
 TEST_DEPENDS =	devel/p5-Test-Fatal

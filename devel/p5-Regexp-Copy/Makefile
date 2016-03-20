@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2015/07/16 23:57:23 ajacoutot Exp $
-
-SHARED_ONLY=		Yes
+# $OpenBSD: Makefile,v 1.14 2016/03/20 19:56:33 naddy Exp $
 
 COMMENT=		copy perl Regexp objects
 
@@ -11,7 +9,7 @@ CATEGORIES=		devel
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c
+WANTLIB += c perl
 
 MODULES=		cpan
 

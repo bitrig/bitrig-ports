@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/12/21 13:49:06 benoit Exp $
+# $OpenBSD: Makefile,v 1.2 2016/03/20 19:56:38 naddy Exp $
 
 COMMENT =	compare difference between numbers against a given tolerance
 
@@ -9,5 +9,6 @@ CATEGORIES =	devel
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 
 .include <bsd.port.mk>

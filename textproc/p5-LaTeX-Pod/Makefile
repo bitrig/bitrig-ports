@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 11:42:43 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2016/03/20 19:57:05 naddy Exp $
 
 COMMENT=		transform LaTeX source files to POD
 
@@ -7,6 +7,7 @@ REVISION=		0
 CATEGORIES=		textproc
 
 MODULES=		cpan
+PKG_ARCH=		*
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes

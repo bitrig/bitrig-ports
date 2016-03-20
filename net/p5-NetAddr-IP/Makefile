@@ -1,8 +1,4 @@
-# $OpenBSD: Makefile,v 1.29 2015/08/24 20:00:42 bluhm Exp $
-
-BROKEN =		needs work on bitrig
-
-SHARED_ONLY =		Yes
+# $OpenBSD: Makefile,v 1.30 2016/03/20 19:56:56 naddy Exp $
 
 COMMENT =		manages IPv4 and IPv6 addresses and subnets
 
@@ -13,7 +9,7 @@ CATEGORIES =		net
 # perl artistic / GPL
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c
+WANTLIB =		c perl
 
 MODULES =		cpan
 

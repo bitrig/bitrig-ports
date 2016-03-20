@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.16 2015/01/21 06:13:46 bentley Exp $
+# $OpenBSD: Makefile,v 1.17 2016/03/20 19:56:07 naddy Exp $
 
 COMMENT=	module to encode and decode objects
 
@@ -7,6 +7,8 @@ REVISION=	0
 EPOCH=		0
 CATEGORIES=	converters
 MODULES=	cpan
+PKG_ARCH=	*
+REVISION =	0
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

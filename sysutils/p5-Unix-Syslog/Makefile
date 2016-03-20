@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.19 2015/07/16 23:57:27 ajacoutot Exp $
-
-SHARED_ONLY=	Yes
+# $OpenBSD: Makefile,v 1.20 2016/03/20 19:57:04 naddy Exp $
 
 COMMENT=	interface to the UNIX system logger
 
@@ -10,7 +8,7 @@ CATEGORIES=	sysutils
 
 # Artistic
 PERMIT_PACKAGE_CDROM=	Yes
-WANTLIB=		c 
+WANTLIB=		c perl
 
 MODULES=		cpan
 CPAN_AUTHOR=		MHARNISCH

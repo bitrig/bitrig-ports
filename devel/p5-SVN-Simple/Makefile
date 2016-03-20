@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2014/11/10 13:12:59 benoit Exp $
+# $OpenBSD: Makefile,v 1.15 2016/03/20 19:56:33 naddy Exp $
 
 BROKEN =	needs work on bitrig
 
@@ -9,6 +9,7 @@ CATEGORIES =	devel
 
 CPAN_AUTHOR =	CLKAO
 MODULES =	cpan
+PKG_ARCH =	*
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

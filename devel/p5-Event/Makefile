@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.23 2015/07/16 23:57:22 ajacoutot Exp $
-
-SHARED_ONLY=	Yes
+# $OpenBSD: Makefile,v 1.24 2016/03/20 19:56:21 naddy Exp $
 
 COMMENT=	event loop processing
 
@@ -12,7 +10,7 @@ REVISION=	0
 # perl
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c
+WANTLIB += c perl
 
 MODCPAN_EXAMPLES=	Yes
 MODCPAN_EXAMPLES_DIST=	demo

@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.10 2015/01/21 14:05:46 sthen Exp $
+# $OpenBSD: Makefile,v 1.11 2016/03/20 19:56:10 naddy Exp $
 
 COMMENT=	database-independent schema objects
 
 DISTNAME=	DBIx-DBSchema-0.45
 CATEGORIES=	databases
 MODULES=	cpan
+PKG_ARCH=	*
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes

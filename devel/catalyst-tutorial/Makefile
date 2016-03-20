@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.16 2015/01/22 20:26:43 naddy Exp $
+# $OpenBSD: Makefile,v 1.17 2016/03/20 19:56:12 naddy Exp $
 
 COMMENT =	catalyst packages for the tutorial
 
 MODULES =	cpan
+PKG_ARCH =	*
 CATEGORIES =	devel www
 DISTNAME =	Task-Catalyst-Tutorial-0.06
 PKGNAME =	catalyst-tutorial-0.06

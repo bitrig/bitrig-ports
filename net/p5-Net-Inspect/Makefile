@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/07/24 19:22:21 bluhm Exp $
+# $OpenBSD: Makefile,v 1.22 2016/03/20 19:56:53 naddy Exp $
 
 COMMENT =		library for inspection of data on various network layers
 
@@ -10,6 +10,7 @@ CATEGORIES =		net
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 BUILD_DEPENDS =		${RUN_DEPENDS}
 RUN_DEPENDS =		net/p5-Net-Pcap \
 			www/p5-libwww

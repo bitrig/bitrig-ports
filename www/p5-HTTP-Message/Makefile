@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2015/09/10 20:08:40 nigel Exp $
+# $OpenBSD: Makefile,v 1.4 2016/03/20 19:57:20 naddy Exp $
 
 COMMENT =	HTTP Style Messages
 
@@ -9,6 +9,7 @@ CATEGORIES =	www
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =	cpan
+PKG_ARCH =	*
 
 RUN_DEPENDS =	textproc/p5-Encode-Locale>=1.00 \
 		www/p5-IO-HTML \

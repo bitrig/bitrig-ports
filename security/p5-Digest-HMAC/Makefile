@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.14 2013/12/18 12:31:58 sthen Exp $
+# $OpenBSD: Makefile,v 1.16 2016/03/20 19:57:01 naddy Exp $
 
 COMMENT=	interface to HMAC Message-Digest Algorithms
 
 MODULES=	cpan
+PKG_ARCH=	*
 DISTNAME=	Digest-HMAC-1.03
 REVISION=	0
 CATEGORIES=	security

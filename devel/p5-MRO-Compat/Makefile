@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2014/05/10 17:15:50 afresh1 Exp $
+# $OpenBSD: Makefile,v 1.12 2016/03/20 19:56:27 naddy Exp $
 
 COMMENT =	mro::* interface compatibility for Perl < 5.9.5
 
@@ -12,6 +12,7 @@ CPAN_AUTHOR =	BOBTFISH
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =	cpan
+PKG_ARCH =	*
 
 CONFIGURE_STYLE =	modinst
 

@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.10 2013/04/17 16:21:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.12 2016/03/20 19:56:15 naddy Exp $
 
 COMMENT=		get information about a class and its structure
 
 MODULES=		cpan
+PKG_ARCH=		*
 DISTNAME=		Class-Inspector-1.28
 REVISION=		0
 CATEGORIES=		devel

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2015/06/12 17:32:28 bluhm Exp $
+# $OpenBSD: Makefile,v 1.2 2016/03/20 19:57:07 naddy Exp $
 
 COMMENT =		convert pod documentation to latex format
 
@@ -10,6 +10,7 @@ CATEGORIES =		textproc
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 
 CONFIGURE_STYLE =	modbuild
 

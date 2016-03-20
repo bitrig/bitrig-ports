@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2015/07/28 09:42:58 nigel Exp $
+# $OpenBSD: Makefile,v 1.7 2016/03/20 19:56:36 naddy Exp $
 
 COMMENT =	check Manifest matches your distro
 
@@ -10,5 +10,6 @@ CATEGORIES =	devel
 PERMIT_PACKAGE_CDROM =	 Yes
 
 MODULES =	cpan
+PKG_ARCH =	*
 
 .include <bsd.port.mk>

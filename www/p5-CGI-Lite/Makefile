@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2015/06/10 09:17:37 benoit Exp $
+# $OpenBSD: Makefile,v 1.12 2016/03/20 19:57:14 naddy Exp $
 
 COMMENT=	process and decode WWW forms and cookies
 
@@ -9,6 +9,7 @@ CATEGORIES=	www
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=	cpan
+PKG_ARCH=	*
 
 MODCPAN_EXAMPLES=	Yes
 

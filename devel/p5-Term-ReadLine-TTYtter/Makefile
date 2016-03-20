@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/22 19:16:41 bcallah Exp $
+# $OpenBSD: Makefile,v 1.4 2016/03/20 19:56:36 naddy Exp $
 
 COMMENT =		Readline Library Wrapper Module for Twitter
 DISTNAME =		Term-ReadLine-TTYtter-1.4
@@ -9,6 +9,7 @@ CATEGORIES =		devel perl5
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 
 RUN_DEPENDS =		devel/p5-Term-ReadKey
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.33 2016/03/04 22:25:28 giovanni Exp $
+# $OpenBSD: Makefile,v 1.34 2016/03/20 19:56:56 naddy Exp $
 
 COMMENT=	extension for unparsed raw whois information
 
@@ -9,6 +9,7 @@ CATEGORIES=	net
 PERMIT_PACKAGE_CDROM=   Yes
 
 MODULES=		cpan
+PKG_ARCH=		*
 
 BUILD_DEPENDS=		${RUN_DEPENDS}
 RUN_DEPENDS=		converters/p5-Net-IDN-Encode \

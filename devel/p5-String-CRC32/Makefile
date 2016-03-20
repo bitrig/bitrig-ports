@@ -1,6 +1,4 @@
-# $OpenBSD: Makefile,v 1.22 2015/07/16 23:57:23 ajacoutot Exp $
-
-SHARED_ONLY=	Yes
+# $OpenBSD: Makefile,v 1.23 2016/03/20 19:56:34 naddy Exp $
 
 COMMENT=	interface for cyclic redundancy check generation
 
@@ -13,6 +11,6 @@ REVISION =	0
 # Public domain
 PERMIT_PACKAGE_CDROM=   Yes
 
-WANTLIB += c
+WANTLIB += c perl
 
 .include <bsd.port.mk>

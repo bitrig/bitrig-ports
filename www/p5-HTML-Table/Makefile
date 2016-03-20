@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.18 2014/05/04 09:02:40 benoit Exp $
+# $OpenBSD: Makefile,v 1.20 2016/03/20 19:57:18 naddy Exp $
 
 COMMENT =	generate HTML tables for cgi scripts
 
 MODULES =	cpan
+PKG_ARCH =	*
 DISTNAME =	HTML-Table-2.08a
 REVISION =	0
 CATEGORIES =	www devel

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.20 2015/03/27 06:31:33 benoit Exp $
+# $OpenBSD: Makefile,v 1.21 2016/03/20 19:56:56 naddy Exp $
 
 COMMENT =	perl implementation of RIPE whois
 
@@ -11,6 +11,7 @@ EPOCH =		0
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 
 RUN_DEPENDS =		devel/p5-Iterator-Util
                          

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/08/12 11:59:11 pascal Exp $
+# $OpenBSD: Makefile,v 1.2 2016/03/20 19:56:50 naddy Exp $
 
 COMMENT =		event based IRC client API
 
@@ -11,6 +11,7 @@ CATEGORIES =		net devel
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 BUILD_DEPENDS =		${RUN_DEPENDS}
 RUN_DEPENDS =		devel/p5-Object-Event \
 			devel/p5-AnyEvent

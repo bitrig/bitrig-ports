@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.96 2016/02/26 18:53:39 bluhm Exp $
+# $OpenBSD: Makefile,v 1.97 2016/03/20 19:57:02 naddy Exp $
 
 COMMENT =		perl interface to SSL sockets
 
@@ -10,6 +10,7 @@ CATEGORIES =		security
 PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
+PKG_ARCH =		*
 BUILD_DEPENDS =		${RUN_DEPENDS}
 RUN_DEPENDS =		security/p5-Net_SSLeay>=1.59
 TEST_DEPENDS =		net/p5-IO-Socket-INET6>=2.62 \
