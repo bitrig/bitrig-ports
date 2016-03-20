@@ -1,8 +1,4 @@
-# $OpenBSD: Makefile,v 1.49 2015/09/29 10:51:14 sthen Exp $
-
-BROKEN = 	needs work on bitrig
-
-SHARED_ONLY =	Yes
+# $OpenBSD: Makefile,v 1.50 2016/03/20 16:12:23 naddy Exp $
 
 COMMENT =	Python interface to MySQL
 
