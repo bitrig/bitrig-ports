@@ -31,11 +31,13 @@ _MODCLANG_LINKS =
 .if ${_MODCLANG_ARCH_USES:L} == "yes"
 
 BITRIG_LLVM_VERSION=	3.6.0
+CLANGBASE=		${USRBASE}
 .if ${MODCLANG_VERSION} == ${BITRIG_LLVM_VERSION}
 #3.6.0 comes with comp, not from ports
 #BUILD_DEPENDS += devel/llvm
 .else
 BUILD_DEPENDS += devel/llvm>=${MODCLANG_VERSION}
+CLANGBASE=		${LOCALBASE}
 .endif
 _MODCLANG_LINKS = clang gcc clang cc
 
@@ -49,13 +51,13 @@ _MODCLANG_LINKS += clang++ g++ clang++ c++
 .    for _src _dest in ${_MODCLANG_LINKS}
 MODCLANG_post-patch +=	rm -f ${WRKDIR}/bin/${_dest};
 MODCLANG_post-patch +=	echo '\#!/bin/sh' >${WRKDIR}/bin/${_dest};
-MODCLANG_post-patch +=	echo exec ccache ${USRBASE}/bin/${_src} \"\$$@\"
+MODCLANG_post-patch +=	echo exec ccache ${LOCALBASE}/bin/${_src} \"\$$@\"
 MODCLANG_post-patch +=	>>${WRKDIR}/bin/${_dest};
 MODCLANG_post-patch +=	chmod +x ${WRKDIR}/bin/${_dest};
 .    endfor
 .  else
 .    for _src _dest in ${_MODCLANG_LINKS}
-MODCLANG_post-patch += ln -sf ${USRBASE}/bin/${_src} ${WRKDIR}/bin/${_dest};
+MODCLANG_post-patch += ln -sf ${LOCALBASE}/bin/${_src} ${WRKDIR}/bin/${_dest};
 .    endfor
 .  endif
 .endif
