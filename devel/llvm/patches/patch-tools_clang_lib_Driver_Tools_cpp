@@ -1,6 +1,41 @@
---- tools/clang/lib/Driver/Tools.cpp.orig	Mon Mar 21 05:44:07 2016
-+++ tools/clang/lib/Driver/Tools.cpp	Mon Mar 21 06:11:29 2016
-@@ -7714,6 +7714,9 @@ void bitrig::Linker::ConstructJob(Compilation &C, cons
+--- tools/clang/lib/Driver/Tools.cpp.orig	Fri Feb 12 17:51:41 2016
++++ tools/clang/lib/Driver/Tools.cpp	Mon Mar 21 13:01:52 2016
+@@ -3320,6 +3320,34 @@ ParsePICArgs(const ToolChain &ToolChain, const llvm::T
+     }
+   }
+ 
++  // Bitrig-specific defaults for PIE
++  if (ToolChain.getTriple().getOS() == llvm::Triple::Bitrig) {
++    switch (ToolChain.getArch()) {
++    case llvm::Triple::arm:
++    case llvm::Triple::armeb:
++    case llvm::Triple::thumb:
++    case llvm::Triple::thumbeb:
++    case llvm::Triple::aarch64:
++    case llvm::Triple::mips:
++    case llvm::Triple::mipsel:
++    case llvm::Triple::mips64:
++    case llvm::Triple::mips64el:
++    case llvm::Triple::sparc:
++    case llvm::Triple::x86:
++    case llvm::Triple::x86_64:
++      IsPICLevelTwo = false; // "-fpie"
++      break;
++
++    case llvm::Triple::ppc:
++    case llvm::Triple::sparcv9:
++      IsPICLevelTwo = true; // "-fPIE"
++      break;
++
++    default:
++      break;
++    }
++  }
++
+   // The last argument relating to either PIC or PIE wins, and no
+   // other argument is used. If the last argument is any flavor of the
+   // '-fno-...' arguments, both PIC and PIE are disabled. Any PIE
+@@ -7714,6 +7742,9 @@ void bitrig::Linker::ConstructJob(Compilation &C, cons
      }
    }
  
@@ -10,7 +45,7 @@
    if (Output.isFilename()) {
      CmdArgs.push_back("-o");
      CmdArgs.push_back(Output.getFilename());
-@@ -7726,6 +7729,9 @@ void bitrig::Linker::ConstructJob(Compilation &C, cons
+@@ -7726,6 +7757,9 @@ void bitrig::Linker::ConstructJob(Compilation &C, cons
        if (Args.hasArg(options::OPT_pg))
          CmdArgs.push_back(
              Args.MakeArgString(getToolChain().GetFilePath("gcrt0.o")));
