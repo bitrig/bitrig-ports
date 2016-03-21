@@ -82,11 +82,12 @@ post-build:
 	cd ${WRKSRC}/docs && make -f Makefile.sphinx man
 
 post-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-build/ccc-analyzer \
-	    ${WRKSRC}/tools/clang/tools/scan-build/c++-analyzer \
-	    ${WRKSRC}/tools/clang/tools/scan-build/scan-build ${PREFIX}/bin
-	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/sorttable.js \
-	    ${WRKSRC}/tools/clang/tools/scan-build/scanview.css \
+	echo ${WRKSRC}
+	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-build/libexec/ccc-analyzer \
+	    ${WRKSRC}/tools/clang/tools/scan-build/libexec/c++-analyzer \
+	    ${WRKSRC}/tools/clang/tools/scan-build/bin/scan-build ${PREFIX}/bin
+	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/share/scan-build/sorttable.js \
+	    ${WRKSRC}/tools/clang/tools/scan-build/share/scan-build/scanview.css \
 	    ${PREFIX}/share/llvm
 	${INSTALL_DATA_DIR} ${PREFIX}/share/man/man1
 	${INSTALL_DATA} ${WRKSRC}/docs/_build/man/* \
