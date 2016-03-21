@@ -3,7 +3,6 @@
 # XXX: Remember to bump MODCLANG_VERSION in lang/clang/clang.port.mk when
 # updating this port.
 
-#BROKEN=		does not work on bitrig
 DPB_PROPERTIES= parallel
 
 COMMENT =	modular, fast C/C++/ObjC compiler, static analyzer and tools
@@ -15,31 +14,28 @@ PKGNAME =	llvm-${LLVM_V}
 CATEGORIES =	devel
 DISTFILES =	llvm-${LLVM_V}.src${EXTRACT_SUFX} \
 		cfe-${LLVM_V}.src${EXTRACT_SUFX}
-DISTFILES += compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
+DISTFILES +=	compiler-rt-${LLVM_V}.src${EXTRACT_SUFX}
 MASTER_SITES =	http://www.llvm.org/releases/${LLVM_V}/
 EXTRACT_SUFX =	.tar.xz
 
 SHARED_LIBS +=	clang 3.0 \
-				LTO 0.0
+		LTO 0.0
 
 # packager notes in http://llvm.org/docs/Packaging.html
 HOMEPAGE =	http://www.llvm.org/
 
-
-
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	c m pthread z
-WANTLIB +=	c++ c++abi
+WANTLIB =		c m pthread z
+WANTLIB +=		c++ c++abi
 
-MODULES =	devel/cmake \
-		lang/python
+MODULES =		devel/cmake \
+			lang/python
 
-
-TEST_DEPENDS =	devel/dejagnu \
+TEST_DEPENDS =		devel/dejagnu \
 			shells/bash
-BUILD_DEPENDS += textproc/py-sphinx
+BUILD_DEPENDS +=	textproc/py-sphinx
 
 SEPARATE_BUILD =	Yes
 CONFIGURE_ARGS =	-DLLVM_ENABLE_FFI:Bool=False \
