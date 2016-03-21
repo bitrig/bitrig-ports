@@ -37,12 +37,14 @@ CLANGBASE=		${USRBASE}
 #BUILD_DEPENDS += devel/llvm
 .else
 BUILD_DEPENDS += devel/llvm>=${MODCLANG_VERSION}
-CLANGBASE=		${LOCALBASE}
+CLANGBASE= ${LOCALBASE}
+CC= clang-3.8
 .endif
 _MODCLANG_LINKS = clang gcc clang cc
 
 .  if ${MODCLANG_LANGS:L:Mc++}
 _MODCLANG_LINKS += clang++ g++ clang++ c++
+CXX= clang-3.8
 .  endif
 .endif
 
