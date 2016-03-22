@@ -6,7 +6,7 @@ COMMENT=		powerful desktop search tool and indexer
 
 GNOME_PROJECT=		tracker
 GNOME_VERSION=		1.6.0
-REVISION=		0
+REVISION=		1
 
 # there is already audio/tracker, so this port has to live
 # as meta-tracker
@@ -67,7 +67,8 @@ LIB_DEPENDS=		audio/libcue \
 			textproc/exempi \
 			textproc/icu4c \
 			x11/gnome/libmediaart>=1.9.0 \
-			x11/gnome/totem-pl-parser
+			x11/gnome/totem-pl-parser \
+			x11/gtk+3
 
 # picked up by configure to build the resdump tool. it is not installed,
 # but when dpb removes libgee during a running build, causes tracker build
