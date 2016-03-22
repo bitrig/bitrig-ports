@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.11 2016/03/20 19:57:01 naddy Exp $
+# $OpenBSD: Makefile,v 1.12 2016/03/22 13:39:15 sthen Exp $
 
 COMMENT =	interface to the Skein digest algorithm
 
@@ -12,10 +12,9 @@ HOMEPAGE =	http://www.skein-hash.info/
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c
+WANTLIB += c perl
 
 MODULES =	cpan
-PKG_ARCH =	*
 
 .include <bsd.port.arch.mk>
 
