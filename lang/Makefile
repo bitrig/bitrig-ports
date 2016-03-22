@@ -7,6 +7,7 @@
      SUBDIR += arena
      SUBDIR += chibi-scheme
      SUBDIR += chicken
+     SUBDIR += clang
      SUBDIR += classpath
      SUBDIR += clisp
      SUBDIR += clojure
