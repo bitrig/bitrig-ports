@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.21 2015/01/22 17:47:50 naddy Exp $
+# $OpenBSD: Makefile,v 1.22 2016/03/23 09:50:00 sthen Exp $
 
 COMMENT=	premier dockable radio tuner
 
