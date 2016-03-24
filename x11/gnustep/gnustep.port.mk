@@ -8,6 +8,7 @@ CATEGORIES +=	x11/gnustep
 USE_GMAKE ?=	Yes
 MAKE_FILE ?=	GNUmakefile
 
+MODULES +=			lang/clang
 BUILD_DEPENDS +=		x11/gnustep/make
 MODGNUSTEP_RUN_DEPENDS +=	x11/gnustep/make
 
@@ -23,6 +24,7 @@ MAKE_FLAGS +=		OBJCFLAGS=-fobjc-runtime=gnustep-1.7
 MAKE_FLAGS +=		OPTFLAG="${CFLAGS}"
 .else
 MAKE_FLAGS +=  		CC="${CC}" CPP="${CC} -E" OPTFLAG="${CFLAGS}"
+.endif
 
 MAKE_ENV +=	GNUSTEP_MAKEFILES=`gnustep-config --variable=GNUSTEP_MAKEFILES`
 MAKE_ENV +=	INSTALL_AS_USER=${BINOWN}
