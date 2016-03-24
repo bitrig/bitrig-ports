@@ -95,10 +95,6 @@ CONFIGURE_ARGS=		--with-system-pinerc=${SYSCONFDIR}/pine.conf \
 			--enable-quotas \
 			--disable-debug
 
-.if ${FLAVOR:L:Mpassfile}
-CONFIGURE_ARGS +=	--with-passfile=".pine-passfile"
-.endif
-
 HEADERS=		c-client.h dummy.h env.h env_unix.h fdstring.h \
 			flockcyg.h flocksim.h flstring.h fs.h ftl.h \
 			imap4r1.h linkage.c linkage.h mail.h misc.h \
