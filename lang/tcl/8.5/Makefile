@@ -8,6 +8,7 @@ REVISION=		0
 SHARED_LIBS =		tcl85 1.7
 CATEGORIES =		lang lang/tcl
 HOMEPAGE =		http://www.tcl.tk/
+MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

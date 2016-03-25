@@ -2,8 +2,17 @@ $OpenBSD: patch-unix_configure,v 1.6 2015/09/25 16:10:12 tobiasu Exp $
 
 Setting this here will allow it to propagate through everything.
 
---- unix/configure.orig	Fri Mar  6 16:13:58 2015
-+++ unix/configure	Fri Sep 25 15:37:13 2015
+--- unix/configure.orig	Fri Mar  6 09:13:58 2015
++++ unix/configure	Fri Mar 25 09:51:03 2016
+@@ -7565,7 +7565,7 @@ fi
+ 	    CC_SEARCH_FLAGS=""
+ 	    LD_SEARCH_FLAGS=""
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-* | Bitrig-*)
+ 	    arch=`arch -s`
+ 	    case "$arch" in
+ 	    vax)
 @@ -7577,7 +7577,7 @@ fi
  		;;
  	    *)
@@ -13,6 +22,15 @@ Setting this here will allow it to propagate through everything.
  		    SHLIB_CFLAGS="-fPIC"
  		    ;;
  		*)
+@@ -8854,7 +8854,7 @@ fi
+ 	    BSD/OS*) ;;
+ 	    CYGWIN_*|MINGW32_*) ;;
+ 	    IRIX*) ;;
+-	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
+ 	    Darwin-*) ;;
+ 	    SCO_SV-3.2*) ;;
+ 	    *) SHLIB_CFLAGS="-fPIC" ;;
 @@ -18827,7 +18827,7 @@ if test "$FRAMEWORK_BUILD" = "1" ; then
  elif test "$prefix/lib" != "$libdir"; then
      TCL_PACKAGE_PATH="${libdir} ${prefix}/lib ${TCL_PACKAGE_PATH}"

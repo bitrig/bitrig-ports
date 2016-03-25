@@ -13,7 +13,6 @@ include/tcl8.5/tclPort.h
 include/tcl8.5/tclTomMath.h
 include/tcl8.5/tclTomMathDecls.h
 include/tcl8.5/tclUnixPort.h
-lib/libtcl8.5.a
 lib/libtcl85.a
 @lib lib/libtcl85.so.${LIBtcl85_VERSION}
 lib/libtcl85_pic.a
