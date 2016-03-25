@@ -5,7 +5,6 @@
      SUBDIR += adcomplain
      SUBDIR += akpop3d
      SUBDIR += alpine
-     SUBDIR += alpine,passfile
      SUBDIR += altermime
      SUBDIR += amavisd-new
      SUBDIR += archivemail
@@ -205,7 +204,6 @@
      SUBDIR += ruby-mailfactory
      SUBDIR += ruby-mime
      SUBDIR += ruby-mime-types
-     SUBDIR += sendmail
      SUBDIR += s-nail
      SUBDIR += sendmail
      SUBDIR += sendmail,ldap
