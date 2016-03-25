@@ -6,12 +6,11 @@ MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	Captcha-reCAPTCHA-0.97
 CATEGORIES =	graphics security
-USE_GROFF =	Yes
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes
 
-CPAN_AUTHOR =	ANDYA
+CPAN_AUTHOR =	PHRED
 
 RUN_DEPENDS =	www/p5-HTML-Tiny \
 		www/p5-libwww
