@@ -25,6 +25,8 @@ WANTLIB += c++ c++abi pthread
 LIB_DEPENDS=		devel/readline
 
 CONFIGURE_STYLE=	gnu
+CONFIGURE_ENV=		CFLAGS="${CFLAGS} -I${LOCALBASE}/include" \
+			LDFLAGS="${LDFLAGS} -L${LOCALBASE}/lib"
 CONFIGURE_ARGS=		--enable-pcre8 \
 			--enable-pcre16 \
 			--enable-utf \
