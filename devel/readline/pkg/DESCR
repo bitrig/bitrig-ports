@@ -10,6 +10,6 @@ History library, as part of the build process.  The History library may
 be used without Readline in applications which desire its capabilities.
 
 To avoid any confusion with the base readline/history library make sure
-you link to ereadline and ehistory.  In the headers you can check for
+you link to readline and history.  In the headers you can check for
 RL_READLINE_VERSION, RL_VERSION_MAJOR and RL_VERSION_MINOR to see which
 header you have picked up.
