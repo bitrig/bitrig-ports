@@ -20,7 +20,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES= devel/gettext
 LIB_DEPENDS=	archivers/bzip2 \
-		net/curl
+		net/curl \
 		devel/readline
 WANTLIB=	c z readline termcap ssl crypto idn bz2>=10 curl>=3 nghttp2
 
