@@ -12,7 +12,7 @@ PKGSPEC-tcl =   db-tcl->=4,<5|db-tcl->=4v0,<5v0
 PKGNAME-java=	db-java-${VERSION}
 PKGNAME-tcl=	db-tcl-${VERSION}
 EPOCH-main=	0
-REVISION-main = 3
+REVISION-main = 4
 EPOCH-java=	1
 EPOCH-tcl=	1
 REVISION-java =	4
