@@ -1,6 +1,6 @@
 $OpenBSD: patch-setup_py,v 1.10 2015/11/28 12:31:14 sthen Exp $
---- setup.py.orig	Mon Oct 14 22:38:10 2013
-+++ setup.py	Sat Nov 28 12:27:29 2015
+--- setup.py.orig	Mon Oct 14 16:38:10 2013
++++ setup.py	Fri Mar 25 10:15:40 2016
 @@ -132,19 +132,20 @@ class PCTBuildExt (build_ext):
                  # the libtomcrypt code.
                  self.__add_compiler_option("-O")
@@ -21,8 +21,8 @@ $OpenBSD: patch-setup_py,v 1.10 2015/11/28 12:31:14 sthen Exp $
                  self.__add_compiler_option("-fprofile-arcs")
                  self.__add_compiler_option("-ftest-coverage")
                  self.compiler.libraries += ['gcov']
-+            if sys.platform.lower().startswith('openbsd'):
-+                self.__add_compiler_option("-I${LOCALBASE}/include")
++            if sys.platform.lower().startswith('openbsd') or sys.platform.lower().startswith('bitrig'):
++                self.__add_compiler_option("-I/usr/local/include")
  
          # Call the superclass's build_extensions method
          build_ext.build_extensions(self)
