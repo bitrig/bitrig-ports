@@ -7,7 +7,7 @@ VERSION=		1.1.28
 DISTNAME=		libxslt-${VERSION}
 PKGNAME-main=		libxslt-${VERSION}
 PKGNAME-python= 	py-libxslt-${VERSION}
-REVISION-main =		5
+REVISION-main =		6
 REVISION-python =	4
 
 SHARED_LIBS +=  xslt                 3.8      # 2.28
