@@ -1,7 +1,6 @@
-$OpenBSD$
---- configure.orig	Sun May 20 18:40:02 2012
-+++ configure	Sun May 20 18:41:55 2012
-@@ -4685,7 +4685,7 @@ else
+--- configure.orig	Fri Mar 25 09:23:08 2016
++++ configure	Fri Mar 25 09:24:55 2016
+@@ -4924,7 +4924,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -10,25 +9,25 @@ $OpenBSD$
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -5116,7 +5116,7 @@ newos6*)
+@@ -5439,7 +5439,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
 -openbsd*)
-+openbsd* | bitrig*)
++openbsd* | bitrig* )
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -5500,7 +5500,7 @@ old_postuninstall_cmds=
+@@ -6056,7 +6056,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
 -  openbsd*)
 +  openbsd* | bitrig*)
-     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
      ;;
    *)
-@@ -8009,7 +8009,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -8825,7 +8825,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -37,7 +36,7 @@ $OpenBSD$
      with_gnu_ld=no
      ;;
    esac
-@@ -8806,7 +8806,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -9701,7 +9701,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
      *nto* | *qnx*)
        ;;
  
@@ -46,7 +45,7 @@ $OpenBSD$
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -9811,7 +9811,7 @@ newsos6)
+@@ -10748,7 +10748,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -55,15 +54,12 @@ $OpenBSD$
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -11106,6 +11106,11 @@ $as_echo "Darwin/Mac OS X" >&6; }
- *-openbsd*)
+@@ -11933,7 +11933,7 @@ $as_echo "Darwin/Mac OS X" >&6; }
+ 	backend="darwin"
+ 	threads="posix"
+ 	;;
+-*-openbsd*)
++*-openbsd* | *-bitrig*)
  	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: OpenBSD" >&5
  $as_echo "OpenBSD" >&6; }
-+	backend="openbsd"
-+	;;
-+*-bitrig*)
-+	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: Bitrig (using OpenBSD backend)" >&5
-+$as_echo "Bitrig (using OpenBSD backend)" >&6; }
  	backend="openbsd"
- 	;;
- *-netbsd*)
