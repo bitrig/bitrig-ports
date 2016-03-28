@@ -8,6 +8,7 @@ CATEGORIES=		devel
 
 PERMIT_PACKAGE_CDROM=	Yes
 
+LIB_DEPENDS= devel/readline
 WANTLIB += c perl readline termcap
 
 TEST_DEPENDS=	x11/p5-Tk
