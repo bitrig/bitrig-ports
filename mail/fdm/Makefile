@@ -18,6 +18,8 @@ LIB_DEPENDS +=	databases/tdb>=1.2.7
 
 CONFIGURE_STYLE =	gnu
 
+MODGNU_CONFIG_GUESS_DIRS=  ${WRKDIST}/etc
+
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/fdm
 	${INSTALL_SCRIPT} ${WRKSRC}/fdm-sanitize ${PREFIX}/share/fdm
