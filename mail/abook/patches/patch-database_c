@@ -1,0 +1,11 @@
+--- database.c.orig	Mon Mar 28 12:12:31 2016
++++ database.c	Mon Mar 28 12:12:47 2016
+@@ -859,7 +859,7 @@ item_merge(list_item dest, list_item src)
+  */
+ 
+ /* quick lookup by "standard" field number */
+-inline int
++int
+ field_id(int i)
+ {
+ 	assert((i >= 0) && (i < ITEM_FIELDS));
