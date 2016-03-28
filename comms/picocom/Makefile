@@ -3,7 +3,7 @@
 COMMENT =		minimal dumb-terminal emulation program
 
 DISTNAME =		picocom-1.7
-REVISION =		0
+REVISION =		1
 CATEGORIES =		comms
 
 HOMEPAGE =		https://github.com/npat-efault/picocom
