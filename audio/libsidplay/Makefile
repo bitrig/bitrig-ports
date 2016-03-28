@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.15 2016/03/11 19:59:12 naddy Exp $
 
+BROKEN=		c++ garbage that is too smart for compilers
+
 COMMENT=	C64 music player and SID chip emulator library
 
 DISTNAME=	libsidplay-1.36.57
