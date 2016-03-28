@@ -18,14 +18,18 @@ MODULES=		devel/gettext \
 			converters/libiconv
 
 CONFIGURE_STYLE=	automake
+ONFIGURE_ARGS+=		--with-readline=${LOCALBASE}
 
-BUILD_DEPENDS=		${MODGNU_AUTOCONF_DEPENDS} \
+LIB_DEPENDS=		devel/readline
+BUILD_DEPENDS=		devel/readline \
+			${MODGNU_AUTOCONF_DEPENDS} \
 			${MODGNU_AUTOMAKE_DEPENDS}
 AUTOCONF_VERSION= 	2.69
 AUTOMAKE_VERSION= 	1.14
 
 EXAMPLEDIR=		${PREFIX}/share/examples/abook/
 
+MAKE_FLAGS=		LDFLAGS='-lreadline'
 pre-configure:
 	@cd ${WRKSRC}; env AUTOCONF_VERSION=${AUTOCONF_VERSION} \
 		AUTOMAKE_VERSION=${AUTOMAKE_VERSION} autoreconf -i
