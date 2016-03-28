@@ -21,4 +21,6 @@ EXTRACT_SUFX=	.tar.bz2
 
 CONFIGURE_STYLE=gnu
 
+MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/autotools
+
 .include <bsd.port.mk>
