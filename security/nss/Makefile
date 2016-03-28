@@ -29,7 +29,7 @@ MAKE_ENV=		BUILD_OPT=1 \
 			NSS_DISABLE_GTESTS=1 \
 			NSS_USE_SYSTEM_SQLITE=1 \
 			SO_VERSION="${SO_VERSION}" \
-			XCFLAGS="-I${LOCALBASE}/include ${CFLAGS}" \
+			XCFLAGS="-Wno-error -I${LOCALBASE}/include ${CFLAGS}" \
 			NSPR_INCLUDE_DIR="${LOCALBASE}/include/nspr" \
 			CC=${CC} \
 			NATIVE_CC=${CC} \
