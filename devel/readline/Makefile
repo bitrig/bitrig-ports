@@ -14,7 +14,7 @@ PATCHFILES =		readline63-001:0 \
 			readline63-007:0 \
 			readline63-008:0
 
-LIBV =			1.0
+LIBV =			6.0
 SHARED_LIBS +=		history ${LIBV}
 SHARED_LIBS +=		readline ${LIBV}
 
