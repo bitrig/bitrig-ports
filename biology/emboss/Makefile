@@ -5,7 +5,7 @@ PORTROACH=	ignore:1
 COMMENT=	European Molecular Biology Open Software Suite
 
 DISTNAME=	EMBOSS-6.0.1
-REVISION=	4
+REVISION=	5
 SHARED_LIBS +=  eplplot                 0.0   # .5.7
 SHARED_LIBS +=  ajax                    1.0   # .6.0
 SHARED_LIBS +=  ajaxg                   1.0   # .6.0
