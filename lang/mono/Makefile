@@ -19,7 +19,6 @@ HOMEPAGE=	http://www.mono-project.com/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	c m pthread z
-WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	http://download.mono-project.com/sources/mono/
 EXTRACT_SUFX=	.tar.bz2
@@ -49,9 +48,6 @@ CONFIGURE_STYLE=autoconf
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib" \
 		CPPFLAGS="-I${LOCALBASE}/include" \
 		ac_cv_header_execinfo_h=no
-
-MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC} \
-				${WRKSRC}/libgc
 
 .if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ENV+=	CFLAGS="-march=i586"

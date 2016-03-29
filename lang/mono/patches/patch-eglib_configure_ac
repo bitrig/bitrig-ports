@@ -1,11 +1,11 @@
---- eglib/configure.ac.orig	Tue Aug 25 15:33:10 2015
-+++ eglib/configure.ac	Thu Jan 28 12:44:52 2016
+--- eglib/configure.ac.orig	Tue Mar 29 08:31:33 2016
++++ eglib/configure.ac	Tue Mar 29 08:32:07 2016
 @@ -94,7 +94,7 @@ arm*-darwin*|aarch64*-*)
  i*86-*-darwin*)
      ORDER=G_LITTLE_ENDIAN
      ;;
 -*-*-openbsd*)
-+*-*-openbsd*|*-*-bitrig*)
++*-*-openbsd* | *-*-bitrig*)
      CFLAGS="$CFLAGS -pthread"
      LDFLAGS="$LDFLAGS -pthread"
      ;;
