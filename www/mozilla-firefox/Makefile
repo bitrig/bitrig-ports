@@ -26,21 +26,28 @@ MODULES =	www/mozilla devel/gettext lang/python
 
 MODPY_RUNDEP =	No
 
+# firefox >= 44 doesnt build with base libevent
+MOZILLA_USE_BUNDLED_LIBEVENT =	Yes
+
 # Regression tests are too hard to adapt to run here
 NO_TEST =	Yes
 
 CONFIGURE_STYLE =	gnu
 
 MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build/autoconf \
+				${WRKDIST}/intl/icu/source \
 				${WRKDIST}/ipc/chromium/src/third_party/libevent \
 				${WRKDIST}/js/src/ctypes/libffi \
 				${WRKDIST}/memory/jemalloc/src \
 				${WRKDIST}/modules/freetype2/builds/unix \
 				${WRKDIST}/nsprpub/build/autoconf \
-				${WRKDIST}/toolkit/crashreporter/google-breakpad/autotools
+				${WRKDIST}/toolkit/crashreporter/google-breakpad/autotools \
+				${WRKDIST}/toolkit/crashreporter/google-breakpad/src/third_party/glog/
 
-# XXX
-CONFIGURE_ARGS +=	--without-intl-api
+# to be able to link when building with clang on i386 or gcc on ppc
+.if ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "powerpc"
+CONFIGURE_ARGS +=	--disable-debug-symbols
+.endif
 
 # relies on pulseaudio for sound and broken at runtime
 CONFIGURE_ARGS +=	--disable-webrtc
