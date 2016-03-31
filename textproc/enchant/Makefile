@@ -27,7 +27,8 @@ RUN_DEPENDS=	x11/dbus-glib
 MODULES=	devel/gettext
 CONFIGURE_STYLE=gnu
 
-CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib -lc++ -lc++abi -lm"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -pthread" \
+		LDFLAGS="-L${LOCALBASE}/lib -lc++ -lc++abi -lm"
 CONFIGURE_ARGS=	--enable-aspell \
 		--with-aspell-prefix=${LOCALBASE} \
 		--enable-ispell \
