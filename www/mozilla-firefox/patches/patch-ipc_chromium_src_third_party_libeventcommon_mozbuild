@@ -1,0 +1,11 @@
+--- ipc/chromium/src/third_party/libeventcommon.mozbuild.orig	Thu Mar 31 09:20:45 2016
++++ ipc/chromium/src/third_party/libeventcommon.mozbuild	Thu Mar 31 09:21:10 2016
+@@ -18,7 +18,7 @@ else:
+         os_macosx = 1
+         libevent_include_suffix = 'mac'
+     elif CONFIG['OS_ARCH'] in ['DragonFly', 'FreeBSD', 'GNU_kFreeBSD',
+-                               'NetBSD', 'OpenBSD']:
++                               'NetBSD', 'OpenBSD', 'Bitrig']:
+         os_bsd = 1
+         libevent_include_suffix = 'bsd'
+     else:
