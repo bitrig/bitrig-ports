@@ -1,0 +1,127 @@
+--- configure.orig	Wed Mar 30 09:49:56 2016
++++ configure	Wed Mar 30 09:50:01 2016
+@@ -6904,6 +6904,7 @@ if test -n "$CROSS_COMPILE"; then
+         freebsd*)     OS_ARCH=FreeBSD OS_TARGET=FreeBSD ;;
+         netbsd*)      OS_ARCH=NetBSD OS_TARGET=NetBSD ;;
+         openbsd*)     OS_ARCH=OpenBSD OS_TARGET=OpenBSD ;;
++        bitrig*)      OS_ARCH=Bitrig OS_TARGET=Bitrig ;;
+     esac
+     case "${target}" in
+         *-android*|*-linuxandroid*) OS_ARCH=Linux OS_TARGET=Android ;;
+@@ -6967,6 +6968,9 @@ netbsd*)
+ openbsd*)
+     HOST_OS_ARCH=OpenBSD
+     ;;
++bitrig*)
++    HOST_OS_ARCH=Bitrig
++    ;;
+ solaris*)
+     HOST_OS_ARCH=SunOS
+     SOLARIS_SUNPRO_CC=
+@@ -8224,7 +8228,7 @@ rm -f conftest*
+ 
+             # BSDs need `environ' exposed for posix_spawn (bug 753046)
+             case "$OS_TARGET" in
+-            DragonFly|FreeBSD|NetBSD|OpenBSD)
++            DragonFly|FreeBSD|NetBSD|OpenBSD|Bitrig*)
+                 if test -n "$HAVE_LINKER_SUPPORT_IGNORE_UNRESOLVED"; then
+                     DSO_LDOPTS="$DSO_LDOPTS -Wl,--ignore-unresolved-symbol,environ"
+                 else
+@@ -9030,7 +9034,7 @@ fi
+ # For profiling builds keep the symbol information
+ if test "$MOZ_PROFILING" -a -z "$STRIP_FLAGS"; then
+     case "$OS_TARGET" in
+-    Linux|DragonFly|FreeBSD|NetBSD|OpenBSD)
++    Linux|DragonFly|FreeBSD|NetBSD|OpenBSD|Bitrig*)
+         STRIP_FLAGS="--strip-debug"
+         ;;
+     esac
+@@ -10160,7 +10164,7 @@ EOF
+     MKCSHLIB='$(CC) $(CFLAGS) $(DSO_PIC_CFLAGS) $(DSO_LDOPTS) -Wl,-soname,$(DSO_SONAME) -o $@'
+     ;;
+ 
+-*-openbsd*)
++*-openbsd*|*-bitrig*)
+     if test "$SO_VERSION"; then
+         DLL_SUFFIX=".so.$SO_VERSION"
+     else
+@@ -11633,7 +11637,7 @@ fi
+ fi
+ 
+ case "$target_os" in
+-freebsd*|openbsd*)
++freebsd*|openbsd*|bitrig*)
+ # for stuff like -lXshm
+     CPPFLAGS="${CPPFLAGS} ${X_CFLAGS}"
+     ;;
+@@ -13307,7 +13311,7 @@ EOF
+             fi
+             ;;
+ 
+-        *-*-openbsd*|*-*-bsdi*)
++        *-*-openbsd*|*-*-bsdi*|*-*-bitrig*)
+             cat >> confdefs.pytmp <<\EOF
+     (''' _REENTRANT ''', ' 1 ')
+ EOF
+@@ -13709,7 +13713,7 @@ echo "configure:13709: checking for res_ninit()" >&5
+ if eval "test \"`echo '$''{'ac_cv_func_res_ninit'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+ else
+-  if test "$OS_TARGET" = NetBSD -o "$OS_TARGET" = OpenBSD; then
++  if test "$OS_TARGET" = NetBSD -o "$OS_TARGET" = OpenBSD -o "$OS_TARGET" = Bitrig; then
+                 ac_cv_func_res_ninit=no
+      else
+         cat > conftest.$ac_ext <<EOF
+@@ -14342,6 +14346,7 @@ if test "$ac_cv_thread_keyword" = yes -a "$MOZ_LINKER"
+       :
+       ;;
+     *-openbsd*)
++      # Bitrig does have TLS
+       :
+       ;;
+     *)
+@@ -14991,7 +14996,7 @@ JS_POSIX_NSPR=unset
+ 
+     if test -n "$JS_STANDALONE"; then
+       case "$target" in
+-        *linux*|*darwin*|*dragonfly*|*freebsd*|*netbsd*|*openbsd*)
++        *linux*|*darwin*|*dragonfly*|*freebsd*|*netbsd*|*openbsd*|bitrig*)
+           if test -z "$_HAS_NSPR"; then
+             JS_POSIX_NSPR_DEFAULT=1
+           fi
+@@ -21521,7 +21526,7 @@ fi
+ 
+ if test -n "$MOZ_WEBRTC"; then
+     case "$target" in
+-    *-linux*|*-mingw*|*-darwin*|*-android*|*-linuxandroid*|*-dragonfly*|*-freebsd*|*-netbsd*|*-openbsd*)
++    *-linux*|*-mingw*|*-darwin*|*-android*|*-linuxandroid*|*-dragonfly*|*-freebsd*|*-netbsd*|*-openbsd*|*-bitrig*)
+                 ;;
+     *)
+                 MOZ_WEBRTC=
+@@ -22779,7 +22784,7 @@ fi
+ 
+ 
+ case "$OS_TARGET" in
+-WINNT|Darwin|Android|OpenBSD)
++WINNT|Darwin|Android|OpenBSD|Bitrig)
+     ;;
+ *)
+     if test -z "$MOZ_B2G"; then
+@@ -30331,7 +30336,7 @@ if test -n "$USE_ICU"; then
+                     MOZ_ICU_DBG_SUFFIX=d
+                 fi
+                 ;;
+-            Darwin|Linux|DragonFly|FreeBSD|NetBSD|OpenBSD|GNU/kFreeBSD|SunOS|Android)
++            Darwin|Linux|DragonFly|FreeBSD|NetBSD|OpenBSD|Bitrig|GNU/kFreeBSD|SunOS|Android)
+                 ICU_LIB_NAMES="icui18n icuuc icudata"
+                 ;;
+             *)
+@@ -31716,7 +31721,7 @@ if test -z "$BUILDING_JS" -o -n "$JS_STANDALONE"; then
+     JEMALLOC_WRAPPER=
+     if test -z "$MOZ_REPLACE_MALLOC"; then
+       case "$OS_ARCH" in
+-        Linux|DragonFly|FreeBSD|NetBSD|OpenBSD)
++        Linux|DragonFly|FreeBSD|NetBSD|OpenBSD|Bitrig)
+           MANGLE=$_MANGLE
+           ;;
+       esac
