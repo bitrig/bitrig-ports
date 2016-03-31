@@ -1,0 +1,12 @@
+--- third_party/re2/src/util/mutex.h.orig.port	Thu Mar 31 12:15:36 2016
++++ third_party/re2/src/util/mutex.h	Thu Mar 31 12:16:20 2016
+@@ -13,6 +13,9 @@
+ #include <stdlib.h>
+ 
+ #if !defined(_WIN32)
++#if defined(__Bitrig__)
++#undef _UNISTD_H_
++#endif
+ #include <unistd.h>  // For POSIX options
+ #endif
+ 

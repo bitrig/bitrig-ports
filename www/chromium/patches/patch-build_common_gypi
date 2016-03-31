@@ -1,6 +1,6 @@
 $OpenBSD: patch-build_common_gypi,v 1.43 2016/03/06 10:51:14 robert Exp $
---- build/common.gypi.orig.port	Wed Feb 24 21:01:30 2016
-+++ build/common.gypi	Thu Mar  3 17:37:31 2016
+--- build/common.gypi.orig.port	Wed Feb 24 14:01:30 2016
++++ build/common.gypi	Thu Mar 31 13:58:26 2016
 @@ -112,7 +112,7 @@
  
            'conditions': [
@@ -93,14 +93,3 @@ $OpenBSD: patch-build_common_gypi,v 1.43 2016/03/06 10:51:14 robert Exp $
        'target_defaults': {
          'ldflags': [
            '-Wl,--no-keep-memory',
-@@ -6031,8 +6038,8 @@
-     ['clang==1 and ((OS!="mac" and OS!="ios") or clang_xcode==0) '
-         'and OS!="win"', {
-       'make_global_settings': [
--        ['CC', '<(make_clang_dir)/bin/clang'],
--        ['CXX', '<(make_clang_dir)/bin/clang++'],
-+        ['CC', '/usr/bin/clang'],
-+        ['CXX', '/usr/bin/clang++'],
-         ['CC.host', '$(CC)'],
-         ['CXX.host', '$(CXX)'],
-       ],

@@ -30,6 +30,8 @@ MASTER_SITES0=	http://nerd.hu/distfiles/
 #PATCH_DIST_STRIP=	-p1
 
 MODULES=	lang/clang lang/python
+MODCLANG_ARCHS=	*
+MODCLANG_LANGS=	c c++
 
 MODPY_RUNDEP=	No
 
@@ -85,7 +87,8 @@ BUILDTYPE=	Release
 TEST_TARGET=	base_unittests
 
 CONFIGURE_STYLE=none # prevent python MODULE from overriding do-build
-CONFIGURE_ENV=	CPPFLAGS="-idirafter ${LOCALBASE}/include -idirafter ${X11BASE}/include" \
+CONFIGURE_ENV=	CXX="${LOCALBASE}/bin/clang++" CC="${LOCALBASE}/bin/clang" \
+		CPPFLAGS="-idirafter ${LOCALBASE}/include -idirafter ${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
 		GYP_GENERATORS=ninja
 
