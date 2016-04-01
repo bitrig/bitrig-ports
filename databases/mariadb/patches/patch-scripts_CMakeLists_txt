@@ -1,4 +1,4 @@
-$OpenBSD: patch-scripts_CMakeLists_txt,v 1.6 2015/10/31 19:40:43 sthen Exp $
+$OpenBSD: patch-scripts_CMakeLists_txt,v 1.4 2015/06/19 10:55:46 sthen Exp $
 --- scripts/CMakeLists.txt.orig	Wed Jun 17 10:54:12 2015
 +++ scripts/CMakeLists.txt	Thu Jun 18 17:43:00 2015
 @@ -175,22 +175,13 @@ ENDIF(UNIX)

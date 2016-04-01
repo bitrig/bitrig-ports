@@ -1,4 +1,4 @@
-$OpenBSD: patch-cmake_install_macros_cmake,v 1.8 2015/10/31 19:40:43 sthen Exp $
+$OpenBSD: patch-cmake_install_macros_cmake,v 1.6 2014/08/19 16:42:40 brad Exp $
 --- cmake/install_macros.cmake.orig	Fri Aug  8 18:13:47 2014
 +++ cmake/install_macros.cmake	Mon Aug 11 17:35:30 2014
 @@ -198,6 +198,36 @@ IF(UNIX)
