@@ -29,8 +29,6 @@ REVISION-pico=		9
 REVISION-pilot=		17
 REVISION-c-client=	0
 REVISION-imap=		0
-REVISION-pico=		3
-REVISION-pilot=		15
 
 EPOCH-c-client=		0
 EPOCH-imap=		0
