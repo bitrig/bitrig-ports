@@ -343,9 +343,9 @@ PHPXS_SUBST+= -e 's,${i},${${i}},'
 MODULES=		converters/libiconv devel/gettext
 
 WANTLIB-main+=		c crypto lzma m pthread ssl xml2>=8 z ${MODGETTEXT_WANTLIB}
-WANTLIB-main+=		ncurses readline stdc++
+WANTLIB-main+=		ncurses readline c++ c++abi
 
-# php 5.4/5.5 : WANTLIB-main += stdc++
+# php 5.4/5.5 : WANTLIB-main += c++ c++abi
 WANTLIB-fastcgi=	${WANTLIB-main}
 LIB_DEPENDS-main=	devel/readline textproc/libxml
 RUN_DEPENDS-main=	${MODGETTEXT_RUN_DEPENDS} \

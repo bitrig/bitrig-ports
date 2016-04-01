@@ -5,7 +5,7 @@ V=		${PV}.4
 
 BUILD_DEPENDS+=	www/apache-httpd
 
-WANTLIB-main+=	stdc++ ncurses readline
+WANTLIB-main+=	c++ c++abi ncurses readline
 
 .include <bsd.port.mk>
 
