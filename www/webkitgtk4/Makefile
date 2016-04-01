@@ -42,7 +42,9 @@ MODULES =		devel/cmake \
 			lang/ruby \
 			x11/gnome
 
-#MODULES +=		gcc4
+MODULES +=		lang/clang
+MODCLANG_ARCHS =	*
+MODCLANG_LANGS =	c c++
 #MODGCC4_ARCHS =		*
 #MODGCC4_LANGS =		c++
 
@@ -73,7 +75,8 @@ LIB_DEPENDS =		devel/harfbuzz,-icu \
 			x11/gnome/libsecret \
 			x11/gtk+3
 
-CFLAGS +=		-I${X11BASE}/include
+CFLAGS +=		-I${X11BASE}/include -I${LOCALBASE}/include
+CXXFLAGS +=		${CFLAGS}
 LDFLAGS =		-L${X11BASE}/lib
 
 CONFIGURE_ARGS =	-DPORT=GTK \
