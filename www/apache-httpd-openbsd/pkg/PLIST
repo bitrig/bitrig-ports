@@ -248,12 +248,3 @@ share/doc/apache-httpd-openbsd/vhosts/mass.html
 share/doc/apache-httpd-openbsd/vhosts/name-based.html
 share/doc/apache-httpd-openbsd/vhosts/vhosts-in-depth.html
 share/doc/apache-httpd-openbsd/vhosts/virtual-host.html
-@rcscript ${RCDIR}/apache
-@cwd /var/www
-conf/httpd.conf.default
-@sample conf/httpd.conf
-conf/magic.default
-@sample conf/magic
-conf/mime.types.default
-@sample conf/mime.types
-conf/modules/

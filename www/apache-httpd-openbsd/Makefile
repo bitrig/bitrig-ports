@@ -3,7 +3,9 @@
 COMMENT=	OpenBSD improved and secured version of Apache 1.3
 
 DISTNAME=	apache-httpd-openbsd-1.3.20140502
-REVISION=	6
+EPOCH=		0
+REVISION=	5
+
 CATEGORIES=	www
 
 HOMEPAGE=	https://github.com/fobser/apache-httpd-openbsd
