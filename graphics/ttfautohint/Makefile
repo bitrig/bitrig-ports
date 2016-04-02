@@ -19,7 +19,7 @@ MODULES =		devel/gettext \
 			gcc4
 
 WANTLIB += c freetype glib-2.0 graphite2 harfbuzz m pcre pthread
-WANTLIB += stdc++ z
+WANTLIB += c++ c++abi z
 
 LIB_DEPENDS =		devel/harfbuzz
 
