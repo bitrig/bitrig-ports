@@ -5,6 +5,7 @@ COMMENT =	music related metadata searchengine
 GH_ACCOUNT =	sahib
 GH_PROJECT =	glyr
 GH_TAGNAME =	1.0.8
+REVISION =	0
 
 CATEGORIES =	audio net
 SHARED_LIBS +=	glyr	0.0 # 1.1
