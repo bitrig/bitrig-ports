@@ -1,7 +1,7 @@
 # $OpenBSD: Makefile,v 1.23 2016/03/19 10:24:33 sthen Exp $
 
 V =			0.8.3-1
-REVISION =		8
+REVISION =		9
 COMMENT-main =		mysql driver for libdbi
 COMMENT-pgsql =		pgsql driver for libdbi
 COMMENT-sqlite =	sqlite driver for libdbi
