@@ -22,12 +22,14 @@ BUILD_DEPENDS=	${MODTCL_BUILD_DEPENDS}
 WANTLIB +=	pq>=5 ${MODTCL_WANTLIB}
 
 CONFIGURE_STYLE= gnu
+CONFIGURE_ENV=	CC=clang
 CONFIGURE_ARGS=	--with-tcl=${MODTCL_LIBDIR} \
 		--libdir=${MODTCL_TCLDIR} \
 		--with-postgres-include=${LOCALBASE}/include/postgresql \
 		--with-postgres-lib=${LOCALBASE}/lib \
 		--disable-threads \
-		SHLIB_VERSION=${LIBpgtcl17_VERSION}
+		SHLIB_VERSION=${LIBpgtcl17_VERSION} CC=clang
+MAKE_ENV=CC=clang
 
 FAKE_FLAGS=	PKG_DIR=pgtcl INSTALL_LIBRARY='${INSTALL_DATA}' PKG_HEADERS=
 NO_TEST=	Yes

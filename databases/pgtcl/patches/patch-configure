@@ -1,6 +1,6 @@
 $OpenBSD: patch-configure,v 1.2 2012/07/04 19:23:46 stu Exp $
---- configure.orig	Mon Apr 30 20:54:06 2012
-+++ configure	Mon Apr 30 20:59:24 2012
+--- configure.orig	Fri May 23 13:49:16 2008
++++ configure	Sat Apr  2 07:22:14 2016
 @@ -7826,7 +7826,7 @@ fi
  
  	# TEA specific:
@@ -10,6 +10,15 @@ $OpenBSD: patch-configure,v 1.2 2012/07/04 19:23:46 stu Exp $
  
  else
    CFLAGS_WARNING=""
+@@ -8993,7 +8993,7 @@ fi
+ 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
+ 	    TCL_LIB_VERSIONS_OK=nodots
+ 	    ;;
+-	OpenBSD-*)
++	OpenBSD-*|Bitrig-*)
+ 	    SHLIB_CFLAGS="-fPIC"
+ 	    SHLIB_LD='${CC} -shared ${SHLIB_CFLAGS}'
+ 	    SHLIB_LD_LIBS='${LIBS}'
 @@ -9006,7 +9006,7 @@ fi
  fi
  
