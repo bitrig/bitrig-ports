@@ -25,7 +25,7 @@ CONFIGURE_STYLE =	qmake
 FAKE_FLAGS =		INSTALL_ROOT=${WRKINST}
 NO_TEST =		Yes
 
-WANTLIB += m pthread stdc++
+WANTLIB += m pthread c++ c++abi
 
 .for l v in $(SHARED_LIBS)
 MAKE_FLAGS +=   LIB$l_VERSION=$v
