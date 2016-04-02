@@ -4,6 +4,7 @@ COMMENT =		Tcl/Tk based digital circuit editor and simulator
 
 DISTNAME =		tkgate-2.0-rc3
 PKGNAME = 		tkgate-2.0rc3
+REVISION =		0
 
 CATEGORIES =		cad x11
 
