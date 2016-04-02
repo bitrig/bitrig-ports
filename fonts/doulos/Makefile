@@ -3,6 +3,7 @@
 PKG_ARCH =		*
 
 V =			5.000
+REVISION =		0
 COMMENT =		Unicode-based font for Roman and Cyrillic
 DISTNAME =		DoulosSIL-$V
 PKGNAME =		doulos-$V

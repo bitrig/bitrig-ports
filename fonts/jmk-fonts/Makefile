@@ -5,7 +5,7 @@ PKG_ARCH=		*
 COMMENT=		nice fixed width fonts, easy on the eye
 
 V=			3.0
-REVISION=		5
+REVISION=		6
 DISTNAME=		jmk-x11-fonts-${V}
 PKGNAME=		jmk-fonts-${V}
 

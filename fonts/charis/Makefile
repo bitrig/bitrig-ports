@@ -3,6 +3,7 @@
 PKG_ARCH =		*
 
 V =			5.000
+REVISION =		0
 COMMENT =		readable Unicode font for laser printers
 DISTNAME =		CharisSIL-$V
 PKGNAME =		charis-$V

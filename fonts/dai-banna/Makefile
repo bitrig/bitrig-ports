@@ -3,6 +3,7 @@
 PKG_ARCH =		*
 
 V =			2.200
+REVISION =		0
 COMMENT =		Unicode font package for New Tai Lue characters
 DISTNAME =		DaiBanna-$V
 PKGNAME =		dai-banna-$V

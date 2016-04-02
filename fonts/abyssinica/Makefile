@@ -3,6 +3,7 @@
 PKG_ARCH =		*
 
 V =			1.500
+REVISION =		0
 COMMENT =		Ethiopic Unicode script
 DISTNAME =		AbyssinicaSIL-$V
 PKGNAME =		abyssinica-$V
