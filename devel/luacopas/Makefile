@@ -5,7 +5,7 @@ PKG_ARCH =      *
 COMMENT=	coroutine oriented portable asynchronous services for lua
 DISTNAME=	copas-1.1.6
 PKGNAME=	lua${DISTNAME}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/downloads/keplerproject/copas/
 
