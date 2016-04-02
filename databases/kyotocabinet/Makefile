@@ -46,8 +46,8 @@ FLAVOR?=
 # argumets to void* makes clang accept the program but the backend
 # crash
 # (http://lists.cs.uiuc.edu/pipermail/llvmbugs/2012-February/022080.html).
-CC=gcc
-CXX=g++
+#CC=gcc
+#CXX=g++
 
 .if ${FLAVOR:Moptimized}
 CONFIGURE_ARGS += --enable-opt
