@@ -17,7 +17,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 EXTRACT_SUFX =	.zip
 
 WANTLIB +=	crypto m pthread ssl z ${MODPY_WANTLIB}
-WANTLIB +=	lib/mysql/mysqlclient_r
+WANTLIB +=	mysqlclient_r
 
 MODPY_PI =	Yes
 
