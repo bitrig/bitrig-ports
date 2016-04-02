@@ -13,7 +13,8 @@ WANTLIB=		c ncurses readline sndio
 CONFIGURE_STYLE=	simple
 CONFIGURE_ARGS=		--prefix=${PREFIX}
 NO_TEST=		Yes
-MAKE_FLAGS=		CC="${CC}"
+MAKE_FLAGS=		CC="${CC}" LDFLAGS="-L${LOCALBASE}/lib -lcurses"
+CFLAGS=			-I${LOCALBASE}/include
 
 LIB_DEPENDS=		devel/readline
 
