@@ -6,7 +6,7 @@ DISTNAME=	cpio-2.12
 PKGNAME=	g${DISTNAME}
 CATEGORIES=	archivers
 HOMEPAGE=	https://www.gnu.org/software/cpio/
-REVISION=	0
+REVISION=	1
 
 MAINTAINER=	Christian Weisgerber <naddy@openbsd.org>
 
