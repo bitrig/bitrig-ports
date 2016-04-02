@@ -6,6 +6,7 @@ COMMENT=		small expressive ORM
 MODPY_EGG_VERSION=	2.6.4
 DISTNAME=		peewee-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
+REVISION=		0
 
 CATEGORIES=		databases
 
