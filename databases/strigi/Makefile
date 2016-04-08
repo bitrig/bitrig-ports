@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.20 2016/03/18 23:12:16 naddy Exp $
 
-BROKEN =	broken C++
-
 COMMENT =	document indexer
 CATEGORIES =	databases devel textproc sysutils
 
@@ -43,6 +41,10 @@ WANTLIB += c++ c++abi
 MODULES =		devel/cmake \
 			converters/libiconv \
 			x11/qt4
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
+CXXFLAGS=		-std=c++11
 
 # Not ported
 CONFIGURE_ARGS =	-DENABLE_LOG4CXX:Bool=No
