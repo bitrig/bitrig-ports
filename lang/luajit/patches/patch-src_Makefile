@@ -1,7 +1,7 @@
 $OpenBSD: patch-src_Makefile,v 1.5 2015/06/06 09:03:16 dcoppa Exp $
---- src/Makefile.orig	Thu May 14 20:30:00 2015
-+++ src/Makefile	Thu Jun  4 19:20:59 2015
-@@ -325,6 +325,10 @@ else
+--- src/Makefile.orig	Thu May 14 13:30:00 2015
++++ src/Makefile	Fri Apr  8 15:45:25 2016
+@@ -325,6 +325,14 @@ else
    ifeq (GNU/kFreeBSD,$(TARGET_SYS))
      TARGET_XLIBS+= -ldl
    endif
@@ -9,10 +9,14 @@ $OpenBSD: patch-src_Makefile,v 1.5 2015/06/06 09:03:16 dcoppa Exp $
 +    TARGET_XSHLDFLAGS= -shared -fPIC
 +    TARGET_STRIP= @:
 +  endif
++  ifeq (Bitrig,$(TARGET_SYS))
++    TARGET_XSHLDFLAGS= -shared -fPIC
++    TARGET_STRIP= @:
++  endif
  endif
  endif
  endif
-@@ -557,10 +561,10 @@ endif
+@@ -557,10 +565,10 @@ endif
  endif
  endif
  

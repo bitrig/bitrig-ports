@@ -28,6 +28,7 @@ MAKE_FLAGS += \
 	CC="${CC}" \
 	CCOPT="${CFLAGS}" \
 	CCOPT_x86="" \
+	LIBS="-lc++ -lc++abi -pthread" \
 	INSTALL_LJLIBD="${DESTDIR}${MODLUA_DATADIR}" \
 	INSTALL_MAN="${DESTDIR}${PREFIX}/man/man1" \
 	INSTALL_SONAME=libluajit-${MODLUA_VERSION}.so.${LIBluajit-${MODLUA_VERSION}_VERSION} \
