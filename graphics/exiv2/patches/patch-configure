@@ -1,10 +1,10 @@
-$OpenBSD: patch-configure,v 1.1 2014/03/18 12:02:22 jasper Exp $
+$OpenBSD: patch-configure,v 1.2 2015/11/21 15:33:56 jca Exp $
 
 Don't blindly add -ldl to LDFLAGS.
 
---- configure.orig	Tue Mar 18 12:40:19 2014
-+++ configure	Tue Mar 18 12:40:50 2014
-@@ -6486,7 +6486,7 @@ else
+--- configure.orig	Sun Jun 21 09:53:19 2015
++++ configure	Fri Apr  8 16:01:08 2016
+@@ -6519,7 +6519,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -13,7 +13,7 @@ Don't blindly add -ldl to LDFLAGS.
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
-@@ -6911,7 +6911,7 @@ newos6*)
+@@ -6944,7 +6944,7 @@ newos6*)
    lt_cv_deplibs_check_method=pass_all
    ;;
  
@@ -22,7 +22,7 @@ Don't blindly add -ldl to LDFLAGS.
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
      lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
    else
-@@ -7295,7 +7295,7 @@ old_postuninstall_cmds=
+@@ -7328,7 +7328,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
    case $host_os in
@@ -31,7 +31,7 @@ Don't blindly add -ldl to LDFLAGS.
      old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
      ;;
    *)
-@@ -10035,7 +10035,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+@@ -10068,7 +10068,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
      # we just hope/assume this is gcc and not c89 (= MSVC++)
      with_gnu_ld=yes
      ;;
@@ -40,7 +40,7 @@ Don't blindly add -ldl to LDFLAGS.
      with_gnu_ld=no
      ;;
    linux* | k*bsd*-gnu)
-@@ -10747,7 +10747,7 @@ rm -f core conftest.err conftest.$ac_objext \
+@@ -10780,7 +10780,7 @@ rm -f core conftest.err conftest.$ac_objext \
      *nto* | *qnx*)
        ;;
  
@@ -49,7 +49,7 @@ Don't blindly add -ldl to LDFLAGS.
        if test -f /usr/libexec/ld.so; then
  	hardcode_direct=yes
  	hardcode_shlibpath_var=no
-@@ -11719,7 +11719,7 @@ newsos6)
+@@ -11752,7 +11752,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -58,7 +58,7 @@ Don't blindly add -ldl to LDFLAGS.
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -13524,7 +13524,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+@@ -13557,7 +13557,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
  	ld_shlibs_CXX=no
  	;;
  
@@ -67,7 +67,7 @@ Don't blindly add -ldl to LDFLAGS.
  	if test -f /usr/libexec/ld.so; then
  	  hardcode_direct_CXX=yes
  	  hardcode_shlibpath_var_CXX=no
-@@ -15187,7 +15187,7 @@ newsos6)
+@@ -15220,7 +15220,7 @@ newsos6)
    dynamic_linker='ldqnx.so'
    ;;
  
@@ -76,10 +76,10 @@ Don't blindly add -ldl to LDFLAGS.
    version_type=sunos
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
-@@ -17069,6 +17069,8 @@ fi
+@@ -17321,6 +17321,8 @@ fi
  case "$host_os" in
  *mingw* | *cygwin*)
-     LDFLAGS="$LDFLAGS -no-undefined -lpsapi" ;;
+     LDFLAGS="$LDFLAGS -no-undefined -lpsapi -lwldap32 -lws2_32" ;;
 +*openbsd* | *bitrig*)
 +    LDFLAGS="$LDFLAGS" ;;
  *)
