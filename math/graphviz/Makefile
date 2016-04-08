@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.63 2016/03/11 20:28:27 naddy Exp $
 
-BROKEN=		needs work on bitrig
-
 COMMENT-main=	graph drawing software
 
 DISTNAME=	graphviz-2.36.0
