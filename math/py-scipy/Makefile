@@ -11,7 +11,7 @@ DISTNAME=		scipy-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
 REVISION=		2
 CATEGORIES=		math devel
-REVISION=		2
+REVISION=		3
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
@@ -24,7 +24,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=scipy/}
 HOMEPAGE=		http://numeric.scipy.org/
 
 MODULES=		lang/python fortran
-MODFORTRAN_COMPILER =	g77
+MODFORTRAN_COMPILER =	gfortran
 MODPY_SETUPTOOLS=       Yes
 MODPY_SETUP=            setupegg.py
 

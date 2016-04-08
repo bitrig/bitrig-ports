@@ -20,7 +20,7 @@ WANTLIB=	blas c lapack m pthread sndio ${MODFORTRAN_WANTLIB} \
 		sphinxad sphinxbase
 
 MODULES=	converters/libiconv fortran
-MODFORTRAN_COMPILER = g77
+MODFORTRAN_COMPILER = gfortran
 
 LIB_DEPENDS=	audio/cmu-sphinxbase \
 		${MODFORTRAN_LIB_DEPENDS}

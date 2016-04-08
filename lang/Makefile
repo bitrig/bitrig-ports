@@ -21,7 +21,6 @@
      SUBDIR += fpc
      SUBDIR += freehdl
      SUBDIR += fsharp
-     SUBDIR += g77
      SUBDIR += gambit
      SUBDIR += gawk
      SUBDIR += gcc

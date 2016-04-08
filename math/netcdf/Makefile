@@ -16,7 +16,7 @@ SHARED_LIBS=	netcdf		4.0 \
 HOMEPAGE=	http://www.unidata.ucar.edu/packages/netcdf/
 
 MODULES =	fortran
-MODFORTRAN_COMPILER = g77
+MODFORTRAN_COMPILER = gfortran
 BUILD_DEPENDS =	${MODFORTRAN_BUILD_DEPENDS} 
 
 # BSD-like

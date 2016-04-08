@@ -18,7 +18,7 @@ DISTFILES=	${DISTNAME}.tar.gz patch.tar.gz ug.ps.gz
 DIST_SUBDIR=	arpack
 
 MODULES=		fortran
-MODFORTRAN_COMPILER =	g77
+MODFORTRAN_COMPILER =	gfortran
 BUILD_DEPENDS=		${MODFORTRAN_BUILD_DEPENDS}
 
 LIB_DEPENDS =	math/lapack \

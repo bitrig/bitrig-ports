@@ -20,7 +20,7 @@ CATEGORIES =		devel
 HOMEPAGE =		http://www.open-mpi.org/
 
 MODULES =		fortran
-MODFORTRAN_COMPILER =	g77
+MODFORTRAN_COMPILER =	gfortran
 BUILD_DEPENDS +=	${MODFORTRAN_BUILD_DEPENDS}
 
 # BSD

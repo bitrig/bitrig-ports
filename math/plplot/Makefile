@@ -17,7 +17,7 @@ PKGNAME-c++ =	plplot-c++-${VERSION}
 PKGNAME-f77 =	plplot-f77-${VERSION}
 REVISION-main =	10
 REVISION-c++ =	11
-REVISION-f77 =	13
+REVISION-f77 =	14
 
 CATEGORIES =	math graphics
 
@@ -31,7 +31,7 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=plplot/}
 MODULES =	devel/gettext \
 		fortran
 
-MODFORTRAN_COMPILER = g77
+MODFORTRAN_COMPILER = gfortran
 
 BUILD_DEPENDS =	print/ghostscript/gnu-fonts \
 		${MODFORTRAN_BUILD_DEPENDS}

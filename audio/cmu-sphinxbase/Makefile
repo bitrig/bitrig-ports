@@ -19,7 +19,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cmusphinx/}
 
 WANTLIB=	blas c lapack m pthread sndio ${MODFORTRAN_WANTLIB}
 MODULES=	converters/libiconv fortran
-MODFORTRAN_COMPILER = g77
+MODFORTRAN_COMPILER = gfortran
 
 
 LIB_DEPENDS=	math/lapack \
