@@ -36,10 +36,11 @@ MASTER_SITES=	https://cran.r-project.org/src/base/R-3/ \
 
 MODULES=	gcc4 \
 		devel/gettext \
-		x11/tk
+		x11/tk \
+		fortran
 
 MODGCC4_ARCHS=	*
-MODGCC4_LANGS=	fortran
+MODGCC4_LANGS=	c c++
 
 BUILD_DEPENDS=	archivers/gtar \
 		archivers/unzip \

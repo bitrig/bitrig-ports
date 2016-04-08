@@ -1,29 +1,155 @@
-$OpenBSD: patch-configure,v 1.27 2015/12/14 16:49:02 feinerer Exp $
-
-Unbreak build on powerpc (relocation truncated to fit: R_PPC_GOT16...)
-
---- configure.orig	Thu Dec 10 15:45:13 2015
-+++ configure	Thu Dec 10 15:47:05 2015
-@@ -26576,6 +26576,22 @@ $as_echo "$as_me: WARNING: Use of flat namespace is re
-       main_ldflags="${wl}-export-dynamic"
-       shlib_ldflags="-shared -fPIC"
-     fi
-+    case "${host_cpu}" in
-+      powerpc*)
-+	## GCC -fpic limits to 2**16 on OpenBSD powerpc.
-+	## Error message without -fPIC:
-+	##   relocation truncated to fit: R_PPC_GOT16...
-+        if test "${GCC}" = yes; then
-+          cpicflags="-fPIC"
-+        fi
-+        if test "${G77}" = yes; then
-+          fpicflags="-fPIC"
-+        fi
-+        if test "${GXX}" = yes; then
-+          cxxpicflags="-fPIC"
-+        fi
-+        ;;
-+    esac
+--- configure.orig	Fri Apr  8 15:15:51 2016
++++ configure	Fri Apr  8 15:16:22 2016
+@@ -9192,7 +9192,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
      ;;
-   osf*)
-     cpicflags=
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -9617,7 +9617,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -10001,7 +10001,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -12607,7 +12607,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -13311,7 +13311,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -14267,7 +14267,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -16065,7 +16065,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd* | bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -17709,7 +17709,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -18686,7 +18686,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -19377,7 +19377,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_F77=yes
+ 	hardcode_shlibpath_var_F77=no
+@@ -20173,7 +20173,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -26041,7 +26041,7 @@ fi
+         ;;
+     esac
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     if test -z "`echo __ELF__ | $CC -E - | grep __ELF__`"; then
+       $as_echo "#define HAVE_NO_SYMBOL_UNDERSCORE 1" >>confdefs.h
+ 
+@@ -26570,7 +26570,7 @@ $as_echo "$as_me: WARNING: Use of flat namespace is re
+       shlib_ldflags="-Bshareable"
+     fi
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     ## ${wl} is defined by libtool configuration code.
+     ## Both -Wl,-export-dynamic and -Wl,--export-dynamic seem to
+     ## work with the GNU linker, but the second is what is documented.
+@@ -26780,7 +26780,7 @@ case "${host_os}" in
+       LAPACK_LDFLAGS="+s"
+     fi
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     if test -z "${R_DYLIB_VERSION}"; then
+       PACKAGE_VERSION_MAJOR=`echo "${PACKAGE_VERSION}" | \
+         sed -e "s/\.//" -e "s/\..*$//"`
+@@ -36929,7 +36929,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -37620,7 +37620,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_FC=yes
+ 	hardcode_shlibpath_var_FC=no
+@@ -38416,7 +38416,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
