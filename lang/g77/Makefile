@@ -1,5 +1,7 @@
 # $OpenBSD: Makefile,v 1.35 2016/03/09 18:48:07 naddy Exp $
 
+BROKEN =		requires gcc 4.2.1 and other openbsd specific things
+
 V =			3.3.6
 PKGNAME =		g77-$V
 REVISION =		11
