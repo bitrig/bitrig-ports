@@ -26,7 +26,7 @@ MASTER_SITES=	http://ftp.stack.nl/pub/users/dimitri/ \
 MULTI_PACKAGES=	-main -gui
 PSEUDO_FLAVORS=	no_gui bootstrap
 
-WANTLIB-main += c m pthread stdc++
+WANTLIB-main += c m pthread c++ c++abi
 WANTLIB-gui += QtCore QtGui QtXml ${WANTLIB-main}
 
 COMMON_LIB_DEPENDS= ${MODLIBICONV_LIB_DEPENDS}
