@@ -58,7 +58,7 @@ LIB_DEPENDS=		multimedia/gstreamer-0.10/plugins-base \
 
 MODGNOME_TOOLS=		desktop-file-utils gtk-update-icon-cache shared-mime-info yelp
 
-CONFIGURE_ARGS=		--with-vendor-build-id="OpenBSD Ports" \
+CONFIGURE_ARGS=		--with-vendor-build-id="Bitrig Ports" \
 			--disable-shave
 
 # requires gtk-sharp-beans (not ported)
