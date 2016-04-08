@@ -1,8 +1,6 @@
 # $OpenBSD: Makefile,v 1.25 2015/03/16 18:07:41 naddy Exp $
 # Original from: Yannick Cote
 
-#BROKEN=			needs work on bitrig
-
 DISTNAME=		lam-6.5.9
 REVISION =		3
 SHARED_LIBS +=  lamf77mpi	0.0	# .0.0
@@ -27,9 +25,13 @@ USE_GROFF =		Yes
 CONFIGURE_STYLE=	gnu
 MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/config ${WRKSRC}/mpi2c++
 CONFIGURE_ARGS+=	--with-rsh="ssh -x" --with-fc=${FC}
+CFLAGS+=		-DNO_AIO
 
-MODULES=		fortran
+MODULES=		fortran gcc4
 MODFORTRAN_COMPILER = 	gfortran
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
+
 BUILD_DEPENDS=		${MODFORTRAN_BUILD_DEPENDS}
 
 .include <bsd.port.mk>
