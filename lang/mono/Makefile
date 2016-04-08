@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.95 2016/03/11 20:28:27 naddy Exp $
+# $OpenBSD: Makefile,v 1.92 2015/10/03 11:53:44 robert Exp $
 
 COMMENT=	cross platform, open source .NET developement framework
 
-V=		4.2.2
-DISTNAME=	mono-${V}.30
+V=		4.0.4
+DISTNAME=	mono-${V}.1
 
 CATEGORIES=	lang devel
 
@@ -12,6 +12,7 @@ SHARED_LIBS +=  monoboehm-2.0           1.0     # .0.0
 SHARED_LIBS +=  mono-profiler-iomap	0.0	# .0.0
 SHARED_LIBS +=  mono-profiler-aot	1.0	# .0.0
 SHARED_LIBS +=  mono-profiler-log	0.0	# .0.0
+SHARED_LIBS +=  mono-profiler-cov	1.0	# .0.0
 
 HOMEPAGE=	http://www.mono-project.com/
 
@@ -19,6 +20,7 @@ HOMEPAGE=	http://www.mono-project.com/
 PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	c m pthread z
+WANTLIB +=	c++ c++abi
 
 MASTER_SITES=	http://download.mono-project.com/sources/mono/
 EXTRACT_SUFX=	.tar.bz2
@@ -49,13 +51,17 @@ CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib" \
 		CPPFLAGS="-I${LOCALBASE}/include" \
 		ac_cv_header_execinfo_h=no
 
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC} \
+				${WRKSRC}/libgc
+
 .if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ENV+=	CFLAGS="-march=i586"
 .endif
 
 WRKDIST=	${WRKDIR}/mono-${V}
 
-CONFIGURE_ARGS=	--with-gc=included \
+CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
+		--with-gc=included \
 		--with-sgen=no \
 		--enable-quiet-build=no \
 		--disable-shared-handles

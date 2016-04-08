@@ -1,12 +1,17 @@
-$OpenBSD: patch-mono_profiler_Makefile_in,v 1.11 2016/03/02 07:17:34 robert Exp $
---- mono/profiler/Makefile.in.orig	Tue Mar  1 23:13:23 2016
-+++ mono/profiler/Makefile.in	Tue Mar  1 23:13:49 2016
-@@ -500,14 +500,14 @@ AM_CPPFLAGS = \
+$OpenBSD: patch-mono_profiler_Makefile_in,v 1.9 2015/10/03 11:53:44 robert Exp $
+--- mono/profiler/Makefile.in.orig	Wed Aug 26 00:09:26 2015
++++ mono/profiler/Makefile.in	Sat Sep 26 19:08:02 2015
+@@ -492,18 +492,18 @@ AM_CPPFLAGS = \
  @DISABLE_EXECUTABLES_FALSE@@SHARED_MONO_FALSE@@SUPPORT_BOEHM_TRUE@	$(LIBGC_STATIC_LIBS)
  
+ libmono_profiler_cov_la_SOURCES = mono-cov.c
+-libmono_profiler_cov_la_LIBADD = $(LIBMONO) $(GLIB_LIBS) $(LIBICONV)
++libmono_profiler_cov_la_LIBADD = $(LIBMONO) $(LIBICONV)
  libmono_profiler_aot_la_SOURCES = mono-profiler-aot.c
 -libmono_profiler_aot_la_LIBADD = $(LIBMONO) $(GLIB_LIBS) $(LIBICONV)
 +libmono_profiler_aot_la_LIBADD = $(LIBMONO) $(LIBICONV)
+ #libmono_profiler_logging_la_SOURCES = mono-profiler-logging.c
+ #libmono_profiler_logging_la_LIBADD = $(LIBMONO) $(GLIB_LIBS) $(LIBICONV)
  libmono_profiler_iomap_la_SOURCES = mono-profiler-iomap.c
 -libmono_profiler_iomap_la_LIBADD = $(LIBMONO) $(GLIB_LIBS) $(LIBICONV)
 +libmono_profiler_iomap_la_LIBADD = $(LIBMONO) $(LIBICONV)
@@ -17,6 +22,6 @@ $OpenBSD: patch-mono_profiler_Makefile_in,v 1.11 2016/03/02 07:17:34 robert Exp 
  @HAVE_VTUNE_TRUE@libmono_profiler_vtune_la_CFLAGS = $(VTUNE_CFLAGS)
 -@HAVE_VTUNE_TRUE@libmono_profiler_vtune_la_LIBADD = $(VTUNE_LIBS) $(LIBMONO) $(GLIB_LIBS) $(LIBICONV)
 +@HAVE_VTUNE_TRUE@libmono_profiler_vtune_la_LIBADD = $(VTUNE_LIBS) $(LIBMONO) $(LIBICONV)
- 
- # The log profile uses eglib functions, so it needs to be linked against
- # libeglib in shared mode, but not in static mode, since that would
+ mprof_report_SOURCES = decode.c
+ mprof_report_LDADD = $(Z_LIBS)
+ PLOG_TESTS_SRC = test-alloc.cs test-busy.cs test-monitor.cs test-excleave.cs \

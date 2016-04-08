@@ -1,5 +1,5 @@
---- eglib/m4/libtool.m4.orig	Tue Mar 29 08:29:21 2016
-+++ eglib/m4/libtool.m4	Tue Mar 29 08:30:22 2016
+--- eglib/m4/libtool.m4.orig	Thu Jan 28 15:02:25 2016
++++ eglib/m4/libtool.m4	Thu Jan 28 15:03:04 2016
 @@ -1470,7 +1470,7 @@ old_postuninstall_cmds=
  
  if test -n "$RANLIB"; then
