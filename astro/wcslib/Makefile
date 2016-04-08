@@ -5,7 +5,7 @@ COMMENT =	implementation of the FITS WCS standard
 CATEGORIES =	astro devel
 DISTNAME =	wcslib-4.17
 HOMEPAGE =	http://www.atnf.csiro.au/people/mcalabre/WCS/wcslib/
-REVISION =	2
+REVISION =	3
 
 SHARED_LIBS =	wcs		0.0
 
@@ -17,12 +17,9 @@ WANTLIB =	c cfitsio m
 MASTER_SITES =	ftp://ftp.atnf.csiro.au/pub/software/wcslib/
 EXTRACT_SUFX =	.tar.bz2
 
-MODULES =		gcc4
-MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		fortran
+MODULES =		fortran
 
 LIB_DEPENDS =	math/cfitsio
-TEST_DEPENDS =	lang/gcc/${MODGCC4_VERSION},-f95
 
 USE_GMAKE =		Yes
 CONFIGURE_STYLE =	autoconf
