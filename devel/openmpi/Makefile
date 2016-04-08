@@ -38,6 +38,12 @@ USE_LIBTOOL =		No
 FAKE_FLAGS =		sysconfdir=${PREFIX}/share/examples/openmpi/
 CONFIGURE_STYLE =	gnu
 
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/config \
+				${WRKSRC}/ompi/contrib/vt/vt/ \
+				${WRKSRC}/ompi/mca/io/romio/romio/confdb/ \
+				${WRKSRC}/opal/mca/paffinity/linux/plpa/config \
+				${WRKSRC}/opal/libltdl/config
+
 # openmpi's otfinfo conflicts with the one from texlive
 post-install:
 	mv ${PREFIX}/bin/otfinfo ${PREFIX}/bin/otfinfompi

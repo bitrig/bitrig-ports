@@ -5,7 +5,7 @@ COMMENT=	common libraries for the CMU speech recognition engines
 VERSION=	0.6
 DISTNAME=	sphinxbase-${VERSION}
 PKGNAME=	cmu-sphinxbase-${VERSION}
-REVISION=	3
+REVISION=	4
 CATEGORIES=	audio
 SHARED_LIBS= 	sphinxbase	1.0 \
 		sphinxad	1.0
@@ -29,7 +29,7 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS=		--without-python
 CONFIGURE_ENV=		CPPFLAGS=-I${LOCALBASE}/include	\
 			LDFLAGS=-L${LOCALBASE}/lib 	\
-			LIBS="-lblas -lm -lg2c -lsndio"
+			LIBS="-lgfortran -lblas -lm -lg2c -lsndio"
 
 pre-build:
 	@cp ${FILESDIR}/ad_sndio.c ${WRKSRC}/src/libsphinxad/
