@@ -21,8 +21,7 @@ WANTLIB += lib/R/lib/R lib/R/lib/Rblas lib/R/lib/Rlapack
 WANTLIB += cln glib-2.0 qalculate soprano spectre xml2
 WANTLIB += luajit-${MODLUA_DEFAULT_VERSION} gfortran
 
-MODULES =	devel/gettext lang/lua lang/python
-MODGCC4_LANGS +=fortran
+MODULES =	devel/gettext lang/lua lang/python fortran
 
 RUN_DEPENDS =	devel/desktop-file-utils \
 		x11/gtk+3,-guic
