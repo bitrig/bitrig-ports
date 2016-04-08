@@ -15,7 +15,7 @@ HOMEPAGE=	http://log4cpp.sourceforge.net/
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += m pthread stdc++
+WANTLIB += m pthread c++ c++abi
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=log4cpp/}
 
@@ -24,5 +24,7 @@ CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS+= --with-pthreads \
 		--disable-doxygen
 SEPARATE_BUILD=	Yes
+
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/config
 
 .include <bsd.port.mk>
