@@ -15,7 +15,7 @@ IGNORE-main = "--${FULLPKGNAME-main} comes with OpenBSD as of release 5.2"
 SUBPACKAGE ?= -lemon
 REVISION-lemon=	1
 REVISION-main=	1
-REVISION-tcl=	3
+REVISION-tcl=	4
 
 MASTER_SITES =	${HOMEPAGE}2013/
 
