@@ -3,7 +3,7 @@
 COMMENT =	keeps a list of uptime records
 DISTNAME =	uptimed-0.3.17
 CATEGORIES =	sysutils
-REVISION =	2
+REVISION =	3
 
 SHARED_LIBS +=	uptimed                   0.0 # 0.0
 

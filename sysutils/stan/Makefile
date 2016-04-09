@@ -4,7 +4,7 @@ COMMENT =		statistical analyzer for binary streams
 
 DISTNAME =		stan-0.4.1
 
-REVISION = 		1
+REVISION = 		2
 
 CATEGORIES =		sysutils
 
