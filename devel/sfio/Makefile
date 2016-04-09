@@ -4,7 +4,7 @@ COMMENT=	Safe/Fast I/O Library
 
 VERSION=	2002
 PKGNAME=	sfio-${VERSION}
-REVISION =	1
+REVISION =	2
 DISTNAME=	sfio_${VERSION}.src.unix_tar
 CATEGORIES=	devel
 
