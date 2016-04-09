@@ -3,7 +3,7 @@
 COMMENT=	SSLv3/TLS network protocol analyzer
 
 DISTNAME=	ssldump-0.9b3
-REVISION=	2
+REVISION=	3
 CATEGORIES=	net
 
 HOMEPAGE=	https://github.com/adulau/ssldump
