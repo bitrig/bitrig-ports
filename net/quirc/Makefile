@@ -3,7 +3,7 @@
 COMMENT=	irc client that uses Tcl/Tk
 
 DISTNAME=	quirc-0.9.84
-REVISION =	8
+REVISION =	9
 CATEGORIES=	net
 
 HOMEPAGE=	http://quirc.sourceforge.net/
