@@ -23,8 +23,9 @@ BUILD_DEPENDS=	devel/help2man \
 MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/build-aux
 
 CONFIGURE_STYLE= gnu
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
+CONFIGURE_ENV=	CXXFLAGS="-std=c++11 -I${LOCALBASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/lib" \
+CONFIGURE_ARGS=	--with-boost-regex=boost_regex
 
 FAKE_FLAGS=	bash_completiondir=${PREFIX}/share/examples/source-highlight/bash_completion.d
 
