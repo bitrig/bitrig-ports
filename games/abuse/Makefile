@@ -7,7 +7,7 @@ PKGNAME =	abuse-0.8
 EPOCH =		0
 ABUSE_SFX =	abuse-free-sounds-20120309
 CATEGORIES =	games x11
-REVISION =	2
+REVISION =	3
 
 HOMEPAGE =	http://abuse.zoy.org/
 
