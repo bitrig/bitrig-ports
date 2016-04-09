@@ -3,7 +3,7 @@
 COMMENT =	simple archive manager
 CATEGORIES =	x11 archivers
 DISTNAME =	xarchiver-0.5.4
-REVISION =	0
+REVISION =	1
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=xarchiver/}
 EXTRACT_SUFX =	.tar.bz2
