@@ -9,7 +9,7 @@ CATEGORIES=	net devel textproc
 
 V=		1.06.35
 DISTNAME=	xmlrpc-c-${V}
-REVISION=	1
+REVISION=	2
 
 EXTRACT_SUFX=	.tgz
 
