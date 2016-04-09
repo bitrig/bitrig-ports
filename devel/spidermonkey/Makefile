@@ -15,7 +15,7 @@ DISTNAME =		mozjs-${MOZILLA_VERSION}.2.0
 EXTRACT_SUFX =		.tar.bz2
 PKGNAME =		spidermonkey-${MOZILLA_VERSION}.2.0
 PKGSPEC =		spidermonkey->=24.0,<25.0
-REVISION =		6
+REVISION =		7
 
 SO_VERSION =		0.0
 SHARED_LIBS =		mozjs-24 ${SO_VERSION}
