@@ -5,7 +5,7 @@ COMMENT=	tools to convert Xfig's .fig files
 VERSION=	3.2.5a
 DISTNAME=	transfig.${VERSION}
 PKGNAME=	${DISTNAME:S/./-/}
-REVISION = 	1
+REVISION = 	2
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mcj/}
 HOMEPAGE=	http://xfig.org/
