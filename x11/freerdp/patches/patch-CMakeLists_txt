@@ -1,6 +1,6 @@
 $OpenBSD: patch-CMakeLists_txt,v 1.5 2015/11/07 05:55:08 ajacoutot Exp $
---- CMakeLists.txt.orig	Fri Sep 12 00:46:32 2014
-+++ CMakeLists.txt	Fri Nov  6 19:29:28 2015
+--- CMakeLists.txt.orig	Thu Sep 11 17:46:32 2014
++++ CMakeLists.txt	Fri Apr  8 20:21:39 2016
 @@ -170,20 +170,9 @@ if(CMAKE_COMPILER_IS_GNUCC)
  	if(CMAKE_BUILD_TYPE STREQUAL "Release")
  		set(CMAKE_C_FLAGS_RELEASE "-DNDEBUG")
@@ -24,11 +24,15 @@ $OpenBSD: patch-CMakeLists_txt,v 1.5 2015/11/07 05:55:08 ajacoutot Exp $
  	else()
  		set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g")
  		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
-@@ -315,6 +304,14 @@ if(APPLE)
+@@ -315,6 +304,18 @@ if(APPLE)
  	endif()
  endif(APPLE)
  
 +# BSD
++if(${CMAKE_SYSTEM_NAME} MATCHES "Bitrig")
++	set(BSD TRUE)
++	set(OPENBSD TRUE)
++endif()
 +if(${CMAKE_SYSTEM_NAME} MATCHES "BSD")
 +	set(BSD TRUE)
 +	if(${CMAKE_SYSTEM_NAME} MATCHES "OpenBSD")
@@ -39,7 +43,7 @@ $OpenBSD: patch-CMakeLists_txt,v 1.5 2015/11/07 05:55:08 ajacoutot Exp $
  # Android
  if(ANDROID)
    set(WITH_LIBRARY_VERSIONING "OFF")
-@@ -554,6 +551,12 @@ set(FREERDP_EXTENSION_PATH "${CMAKE_INSTALL_FULL_LIBDI
+@@ -554,6 +555,12 @@ set(FREERDP_EXTENSION_PATH "${CMAKE_INSTALL_FULL_LIBDI
  include_directories(${CMAKE_CURRENT_BINARY_DIR})
  include_directories(${CMAKE_CURRENT_BINARY_DIR}/include)
  include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
