@@ -4,6 +4,7 @@ COMMENT =		C++ interface for pango
 
 GNOME_PROJECT =		pangomm
 GNOME_VERSION =		2.38.1
+REVISION =		0
 
 CATEGORIES =		devel x11
 
