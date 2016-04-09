@@ -4,7 +4,7 @@ COMMENT=	mold spreading over your X11 screen
 
 DISTNAME=	xmold
 PKGNAME=	xmold-1.0
-REVISION=	2
+REVISION=	3
 CATEGORIES=	x11
 
 PERMIT_PACKAGE_CDROM=	no license
