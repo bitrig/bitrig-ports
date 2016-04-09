@@ -1,0 +1,11 @@
+--- Completion/Unix/Command/_user_admin.orig	Sat Apr  9 09:16:19 2016
++++ Completion/Unix/Command/_user_admin	Sat Apr  9 09:16:33 2016
+@@ -44,7 +44,7 @@ if [[ $service = user* ]]; then
+ 	"(-U -p)-L[lock user's password]"
+ 	"(-L -p)-U[unlock user's password]"
+     )
+-    [[ $OSTYPE = openbsd* ]] || args+=('-a[append groups]')
++    [[ $OSTYPE = (openbsd|bitrig)* ]] || args+=('-a[append groups]')
+     args+=(
+       '-l[specify new user name]:new username'
+       ':username:_users'

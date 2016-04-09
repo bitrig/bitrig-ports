@@ -1,0 +1,11 @@
+--- Completion/Unix/Command/_comm.orig	Sat Apr  9 09:06:58 2016
++++ Completion/Unix/Command/_comm	Sat Apr  9 09:07:09 2016
+@@ -20,7 +20,7 @@ if _pick_variant gnu=GNU unix --version; then
+   )
+ elif [[ $OSTYPE = (freebsd|dragonfly|darwin)* ]]; then
+   args+=( '-i[case insensitive comparison of lines]' )
+-elif [[ $OSTYPE = (openbsd|netbsd)* ]]; then
++elif [[ $OSTYPE = (openbsd|bitrig|netbsd)* ]]; then
+   args+=( '-f[case insensitive comparison of lines]' )
+ fi
+ 

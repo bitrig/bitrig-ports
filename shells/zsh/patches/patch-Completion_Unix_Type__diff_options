@@ -1,0 +1,11 @@
+--- Completion/Unix/Type/_diff_options.orig	Sat Apr  9 09:02:59 2016
++++ Completion/Unix/Type/_diff_options	Sat Apr  9 09:03:11 2016
+@@ -125,7 +125,7 @@ else
+         '-S+[set first file in comparison]:start with file:_files'
+       )
+     ;;
+-    openbsd*)
++    openbsd*|bitrig*)
+       of+=' -n -q -u -C -D -U'
+       args=(
+         "($of)-n[produce an rcsdiff(1)-compatible diff]"

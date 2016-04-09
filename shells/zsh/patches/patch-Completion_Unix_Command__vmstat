@@ -1,0 +1,11 @@
+--- Completion/Unix/Command/_vmstat.orig	Sat Apr  9 09:10:58 2016
++++ Completion/Unix/Command/_vmstat	Sat Apr  9 09:11:08 2016
+@@ -38,7 +38,7 @@ case $OSTYPE in
+       '*:disks:_files'
+     )
+   ;;
+-  openbsd*)
++  openbsd*|bitrig*)
+     specs=(
+       '-c[number of times to refresh the display]:count'
+       '-f[report on the number fork syscalls since boot and pages of virtual memory for each]'

@@ -1,0 +1,18 @@
+--- Completion/Unix/Command/_fuser.orig	Sat Apr  9 09:07:22 2016
++++ Completion/Unix/Command/_fuser	Sat Apr  9 09:07:42 2016
+@@ -52,13 +52,13 @@ case $variant in
+     [[ -prefix -  && -z ${${words[1,CURRENT-1]}[(r)-[A-Z][A-Z]*]} ]] &&
+         argf[1]+=' "signal:signals:_signals -P-"'
+   ;;
+-  freebsd*|openbsd*|solaris2.<9->)
++  freebsd*|openbsd*|bitrig*|solaris2.<9->)
+     args+=(
+       '-s[send alternate signal]:signal:_signals'
+       '-k[send SIGKILL to each process]'
+     )
+   ;|
+-  openbsd*|freebsd*)
++  openbsd*|bitrig*|freebsd*)
+     args+=(
+       '-M[extra values from specified core file]:core file:_files'
+       '-N[extract name list from specified system]:system'

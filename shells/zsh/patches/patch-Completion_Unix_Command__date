@@ -1,12 +1,28 @@
-$OpenBSD$
---- Completion/Unix/Command/_date.orig	Fri Jul 13 12:25:27 2012
-+++ Completion/Unix/Command/_date	Fri Jul 13 12:25:35 2012
-@@ -31,7 +31,7 @@ else
- 	'-v:adjustment value'
-       )
+--- Completion/Unix/Command/_date.orig	Sat Apr  9 09:05:33 2016
++++ Completion/Unix/Command/_date	Sat Apr  9 09:06:07 2016
+@@ -20,10 +20,10 @@ else
+     solaris*)
+       args=( '-a:adjustment' )
      ;;
--    openbsd*)
-+    openbsd* | bitrig*)
+-    darwin*|dragonfly*|netbsd*|openbsd*)
++    darwin*|dragonfly*|netbsd*|openbsd*|bitrig*)
+       args+=( '-r[specify reference time]:seconds since epoch' )
+     ;|
+-    freebsd*|darwin*|dragonfly*|netbsd*|openbsd*)
++    freebsd*|darwin*|dragonfly*|netbsd*|openbsd*|bitrig*)
        args=(
  	'-n[only set time on current machine]'
  	'-d:daylight saving time value'
+@@ -44,10 +44,10 @@ else
+     freebsd*|dragonfly*|darwin*)
+       args+=( '-f:parsing format' '-v:adjustment value' )
+     ;;
+-    openbsd*)
++    openbsd*|bitrig*)
+       args+=( '-z[specify timezone for output]:time zone:_time_zone')
+     ;|
+-    openbsd*|netbsd*) args=( '-a[gradually skew]' ) ;;
++    openbsd*|bitrig*|netbsd*) args=( '-a[gradually skew]' ) ;;
+   esac
+ fi
+ 

@@ -1,0 +1,17 @@
+--- Completion/Unix/Command/_tail.orig	Sat Apr  9 09:14:45 2016
++++ Completion/Unix/Command/_tail	Sat Apr  9 09:15:01 2016
+@@ -27,12 +27,12 @@ else
+     '(-F -r)-f[wait for new data to be appended to the file]'
+   )
+   case $OSTYPE in
+-    (freebsd*|darwin*|dragonfly*|netbsd*|openbsd*|solaris*)
++    (freebsd*|darwin*|dragonfly*|netbsd*|openbsd*|bitrig*|solaris*)
+       args+=(
+ 	'(-f -F)-r[display the file in reverse order]'
+       )
+     ;|
+-    (freebsd*|darwin*|dragonfly*|netbsd*|openbsd*)
++    (freebsd*|darwin*|dragonfly*|netbsd*|openbsd*|bitrig*)
+       args+=(
+ 	'(-c -n)-b+[start at the specified block (512-byte)]:blocks relative to the end (with +, beginning) of file'
+       )

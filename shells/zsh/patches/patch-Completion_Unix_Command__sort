@@ -1,0 +1,26 @@
+--- Completion/Unix/Command/_sort.orig	Sat Apr  9 09:04:53 2016
++++ Completion/Unix/Command/_sort	Sat Apr  9 09:05:21 2016
+@@ -21,12 +21,12 @@ args=(
+ 
+ _pick_variant -r variant gnu=GNU $OSTYPE --version
+ case $variant in
+-  dragonfly*|netbsd*|openbsd*|freebsd*|gnu)
++  dragonfly*|netbsd*|openbsd*|bitrig*|freebsd*|gnu)
+     args+=(
+       '(-s --stable)'{-s,--stable}'[preserve original order of lines with the same key]'
+     )
+   ;|
+-  openbsd*|freebsd*|gnu)
++  openbsd*|bitrig*|freebsd*|gnu)
+     args+=(
+       '(-c --check -C)-C[check whether input is sorted; do not sort]'
+       '(-z --zero-terminated)'{-z,--zero-terminated}'[end lines with 0 byte, not newline]'
+@@ -58,7 +58,7 @@ case $variant in
+       "(-s)-S[don't use stable sort]"
+     )
+   ;|
+-  openbsd*)
++  openbsd*|bitrig*)
+     args+=(
+       '-H[use a merge sort instead of a radix sort]'
+       '-R[specify record separator]:separator'

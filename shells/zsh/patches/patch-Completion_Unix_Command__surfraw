@@ -1,6 +1,5 @@
-$OpenBSD$
---- Completion/Unix/Command/_surfraw.orig	Fri Jul 13 12:27:23 2012
-+++ Completion/Unix/Command/_surfraw	Fri Jul 13 12:27:33 2012
+--- Completion/Unix/Command/_surfraw.orig	Sat Apr  9 09:15:57 2016
++++ Completion/Unix/Command/_surfraw	Sat Apr  9 09:16:07 2016
 @@ -266,7 +266,7 @@ case $state in
          [[ "$state" = dictword ]] && _wanted words expl 'dictionary word' \
              compadd $(look "${PREFIX}") && ret=0

@@ -1,0 +1,11 @@
+--- Completion/BSD/Command/_systat.orig	Sat Apr  9 09:02:28 2016
++++ Completion/BSD/Command/_systat	Sat Apr  9 09:02:41 2016
+@@ -17,7 +17,7 @@ case $OSTYPE in
+       'ifstat:network traffic statistics'
+     )
+   ;;
+-  openbsd*)
++  openbsd*|bitrig*)
+     screens=(
+       'buckets:kernel malloc(9) bucket statistics'
+       'cpu:per CPU, usage statistics'

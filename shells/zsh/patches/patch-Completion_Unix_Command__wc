@@ -1,0 +1,11 @@
+--- Completion/Unix/Command/_wc.orig	Sat Apr  9 09:10:29 2016
++++ Completion/Unix/Command/_wc	Sat Apr  9 09:10:42 2016
+@@ -18,7 +18,7 @@ else
+   args=( -A "-*" "${(@)args:#(|\(*\))(|\*)--*}" )
+   case $OSTYPE in
+     freebsd*|netbsd*) args+=( '-L[print longest line lengths]' ) ;;
+-    openbsd*) args+=( '-h[human readable: use unit suffixes]' ) ;;
++    openbsd*|bitrig*) args+=( '-h[human readable: use unit suffixes]' ) ;;
+     solaris*) args+=( ${${(M)args:#*-m\[*}//-m\[/-C\[} ) ;;
+   esac
+ fi

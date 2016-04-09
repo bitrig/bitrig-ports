@@ -1,0 +1,27 @@
+--- Completion/Unix/Command/_sed.orig	Sat Apr  9 09:09:28 2016
++++ Completion/Unix/Command/_sed	Sat Apr  9 09:10:03 2016
+@@ -32,13 +32,13 @@ elif _pick_variant gnu=GNU unix --version; then
+ else
+   args=( "${(@)args:#(|\(*\))(|\*)--*}" )
+   case $OSTYPE in
+-    openbsd*|freebsd*|netbsd*|darwin*|dragonfly*)
++    openbsd*|bitrig*|freebsd*|netbsd*|darwin*|dragonfly*)
+       args+=(
+ 	'(-r -E)'{-r,-E}$extended
+ 	'-a[delay opening files listed with w function]'
+       )
+     ;|
+-    darwin*|freebsd*|netbsd*|openbsd*)  args+=( '-i'$inplace ) ;|
++    darwin*|freebsd*|netbsd*|openbsd*|bitrig*)  args+=( '-i'$inplace ) ;|
+     darwin*|freebsd*|netbsd*) args+=( '-l[make output line buffered]' ) ;|
+     freebsd*) args+=( '-u[disable data buffering]' ) ;|
+     freebsd*|netbsd*)
+@@ -46,7 +46,7 @@ else
+         '-I[edit files in-place, treating all files as a single input stream]::suffix for backup'
+       )
+     ;;
+-    openbsd*) args+=( '-u[make output line buffered]' ) ;;
++    openbsd*|bitrig*) args+=( '-u[make output line buffered]' ) ;;
+   esac
+ fi
+ 

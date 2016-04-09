@@ -1,0 +1,29 @@
+--- Completion/Unix/Command/_find.orig	Sat Apr  9 09:13:00 2016
++++ Completion/Unix/Command/_find	Sat Apr  9 09:13:28 2016
+@@ -18,7 +18,7 @@ case $variant in
+   solaris2.<10->|freebsd*|darwin*)
+     args+=( '*-acl' )
+   ;|
+-  solaris2.<11->|freebsd*|dragonfly*|darwin*|openbsd*|gnu)
++  solaris2.<11->|freebsd*|dragonfly*|darwin*|openbsd*|bitrig*|gnu)
+     args+=(
+       '*-amin:access time (minutes)'
+       '*-cmin:inode change time (minutes)'
+@@ -40,7 +40,7 @@ case $variant in
+       '*-Btime:birth time (hours)'
+     )
+   ;|
+-  netbsd*|freebsd*|dragonfly*|openbsd*|darwin*|gnu)
++  netbsd*|freebsd*|dragonfly*|openbsd*|bitrig*|darwin*|gnu)
+     args+=(
+       '-d[depth first traversal]'
+       '*-anewer:file to compare (access time):_files'
+@@ -84,7 +84,7 @@ case $variant in
+       '-s[traverse directories in sorted order]'
+     )
+   ;|
+-  netbsd*|freebsd*|dragonfly*|openbsd*|darwin*)
++  netbsd*|freebsd*|dragonfly*|openbsd*|bitrig*|darwin*)
+     args+=(
+       '-X[warn if filename contains characters special to xargs]'
+       '-f[specify file hierarchy to traverse]:path:_directories'

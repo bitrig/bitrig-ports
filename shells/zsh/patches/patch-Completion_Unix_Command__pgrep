@@ -1,0 +1,56 @@
+--- Completion/Unix/Command/_pgrep.orig	Sat Apr  9 09:08:06 2016
++++ Completion/Unix/Command/_pgrep	Sat Apr  9 09:09:16 2016
+@@ -46,7 +46,7 @@ case "$OSTYPE" in
+   freebsd*)
+     optchars="LSafilnoqvxFGMNPUdgjstu"
+     ;;
+-  openbsd*)
++  openbsd*|bitrig*)
+     optchars="flnoqvxdGgPsTtUu"
+     ;;
+   darwin*)
+@@ -70,7 +70,7 @@ _arguments -C -s -w $arguments && ret=0
+ 
+ case $state in
+   (sid)
+-    if [[ $OSTYPE == openbsd* ]]; then
++	  if [[ $OSTYPE == (openbsd|bitrig)* ]]; then
+       break
+     fi
+ 
+@@ -92,7 +92,7 @@ case $state in
+ 
+     local -a used ppid
+     used=(${(s:,:)IPREFIX})
+-    if [[ $OSTYPE == (freebsd|openbsd|darwin)* ]]; then
++    if [[ $OSTYPE == (freebsd|openbsd|bitrig|darwin)* ]]; then
+       ppid=(${(uon)$(ps -ax -o ppid=)})
+     else
+       ppid=(${(uon)$(ps -A -o ppid=)})
+@@ -106,7 +106,7 @@ case $state in
+ 
+     local -a used pgid
+     used=(${(s:,:)IPREFIX})
+-    if [[ $OSTYPE == (freebsd|openbsd|darwin)* ]]; then
++    if [[ $OSTYPE == (freebsd|openbsd|bitrig|darwin)* ]]; then
+       pgid=(${(uon)$(ps -ax -o pgid=)})
+     else
+       pgid=(${(uon)$(ps -A -o pgid=)})
+@@ -155,7 +155,7 @@ case $state in
+     if (( ${+opt_args[-f]} )); then
+       if [[ "$OSTYPE" == freebsd* ]] && (( ${+opt_args[-S]} )); then
+         command="$(ps -axH -o command=)"
+-      elif [[ "$OSTYPE" == (freebsd|openbsd|darwin)* ]]; then
++      elif [[ "$OSTYPE" == (freebsd|openbsd|bitrig|darwin)* ]]; then
+         command="$(ps -ax -o command=)"
+       elif [[ "$OSTYPE" == solaris* ]]; then
+         command="$(ps -A -o args=)"
+@@ -166,7 +166,7 @@ case $state in
+     else
+       if [[ "$OSTYPE" == freebsd* ]] && (( ${+opt_args[-S]} )); then
+         command="$(ps -axcH -o command=)"
+-      elif [[ "$OSTYPE" == (freebsd|openbsd|darwin)* ]]; then
++      elif [[ "$OSTYPE" == (freebsd|openbsd|bitrig|darwin)* ]]; then
+         command="$(ps -axc -o command=)"
+       elif [[ "$OSTYPE" == solaris* ]]; then
+         command="$(ps -A -o comm=)"

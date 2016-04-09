@@ -1,0 +1,11 @@
+--- Completion/Unix/Command/_chmod.orig	Sat Apr  9 09:15:12 2016
++++ Completion/Unix/Command/_chmod	Sat Apr  9 09:15:22 2016
+@@ -29,7 +29,7 @@ else
+     freebsd*|netbsd*|darwin*|dragonfly*)
+       args+=( "-h[operate on symlinks them self]" )
+     ;|
+-    freebsd*|openbsd*|netbsd*|darwin*|dragonfly*)
++    freebsd*|openbsd*|bitrig*|netbsd*|darwin*|dragonfly*)
+       args+=(
+ 	'(-H -L -P)-L[follow all symlinks]'
+ 	'(-H -L -P)-H[follow symlinks on the command line]'

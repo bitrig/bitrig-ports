@@ -1,0 +1,38 @@
+--- configure.ac.orig	Sat Apr  9 09:19:54 2016
++++ configure.ac	Sat Apr  9 09:20:41 2016
+@@ -491,7 +491,7 @@ if test -n "$auto_cflags" && test ."$ansi2knr" != .yes
+ fi
+ if test -n "$auto_ldflags"; then
+   case "${enable_zsh_debug}$host_os" in
+-    yesaix*|yeshpux*|yesnetbsd*|yesopenbsd*) ;;  # "ld -g" is not valid on these systems
++    yesaix*|yeshpux*|yesnetbsd*|yesopenbsd*|yesbitrig*) ;;  # "ld -g" is not valid on these systems
+     darwin*) LDFLAGS=-Wl,-x ;;
+     yes*)    LDFLAGS=-g ;;
+     *)       LDFLAGS=-s ;;
+@@ -2826,7 +2826,7 @@ char *argv[];
+     esac
+   else
+     case "$host" in
+-      *openbsd*)
++      *openbsd*|*bitrig*)
+ 	case "$host_os" in
+ 	  openbsd[01].* | openbsd2.[0-7] | openbsd2.[0-7].*)
+ 	    DLLD="${DLLD=ld}"
+@@ -2877,7 +2877,7 @@ char *argv[];
+     solaris*|sysv4*|esix*) DLLDFLAGS="${DLLDFLAGS=-G}" ;;
+     darwin*)      DLLDFLAGS="${DLLDFLAGS=-bundle -flat_namespace -undefined suppress}" ;;
+     beos*|haiku*) DLLDFLAGS="${DLLDFLAGS=-nostart}" ;;
+-    openbsd*)
++    openbsd*|bitrig*)
+       if test x$zsh_cv_sys_elf = xyes; then
+ 	DLLDFLAGS="${DLLDFLAGS=-shared -fPIC}"
+       else
+@@ -2894,7 +2894,7 @@ char *argv[];
+   esac
+   case "$host" in
+     *-hpux*)  EXTRA_LDFLAGS="${EXTRA_LDFLAGS=-Wl,-E}" ;;
+-    *openbsd*)
++    *openbsd*|*bitrig*)
+        if test x$zsh_cv_sys_elf = xyes; then
+ 	 EXTRA_LDFLAGS="${EXTRA_LDFLAGS=-Wl,-E}"
+        fi

@@ -1,0 +1,11 @@
+--- Completion/Unix/Command/_id.orig	Sat Apr  9 09:15:35 2016
++++ Completion/Unix/Command/_id	Sat Apr  9 09:15:46 2016
+@@ -41,7 +41,7 @@ else
+       )
+     ;|
+     freebsd*) args+=( '(-)-c[print current login class]' ) ;|
+-    darwin*|dragonfly*|freebsd*|netbsd*|openbsd*)
++    darwin*|dragonfly*|freebsd*|netbsd*|openbsd*|bitrig*)
+       args+=( '(-)-p[human readable output]' )
+     ;;
+   esac

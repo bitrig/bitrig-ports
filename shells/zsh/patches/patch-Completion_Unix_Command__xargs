@@ -1,0 +1,17 @@
+--- Completion/Unix/Command/_xargs.orig	Sat Apr  9 09:12:04 2016
++++ Completion/Unix/Command/_xargs	Sat Apr  9 09:12:18 2016
+@@ -13,12 +13,12 @@ args=(
+ _pick_variant -r variant gnu=GNU $OSTYPE --version
+ 
+ case $variant in
+-  gnu|darwin*|freebsd*|netbsd*|openbsd*)
++  gnu|darwin*|freebsd*|netbsd*|openbsd*|bitrig*)
+     args+=(
+       '(--max-procs -P)'{-P,--max-procs}'[parallel mode]:maximum processes' '!-r'
+     )
+   ;|
+-  dragonfly*|darwin*|freebsd*|netbsd*|openbsd*)
++  dragonfly*|darwin*|freebsd*|netbsd*|openbsd*|bitrig*)
+     args=( "${(@)args:#(|\(*\))(|\*)--*}"
+       '-0[expect NUL characters as input separators]'
+       '-J[specify marker for position of arguments]:marker'

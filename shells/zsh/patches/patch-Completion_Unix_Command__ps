@@ -1,0 +1,20 @@
+--- Completion/Unix/Command/_ps.orig	Sat Apr  9 09:12:31 2016
++++ Completion/Unix/Command/_ps	Sat Apr  9 09:12:50 2016
+@@ -82,7 +82,7 @@ case $OSTYPE in
+       '-Z[show zone with which process is associated]'
+     )
+   ;;
+-  darwin*|dragonfly*|freebsd*|netbsd*|openbsd*)
++  darwin*|dragonfly*|freebsd*|netbsd*|openbsd*|bitrig*)
+     bsd+=(
+       'A[select every process]'
+       'C[ignore resident time for CPU percentage]'
+@@ -105,7 +105,7 @@ case $OSTYPE in
+     )
+   ;;
+   netbsd*) bsd+=( '(j l u v)s[output in thread format]' ) ;;
+-  openbsd*)
++  openbsd*|bitrig*)
+     bsd+=(
+       'k[display information about kernel threads]'
+     )

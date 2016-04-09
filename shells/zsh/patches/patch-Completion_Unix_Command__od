@@ -1,0 +1,11 @@
+--- Completion/Unix/Command/_od.orig	Sat Apr  9 09:06:34 2016
++++ Completion/Unix/Command/_od	Sat Apr  9 09:06:45 2016
+@@ -35,7 +35,7 @@ if _pick_variant gnu=GNU unix --version; then
+ else
+   args=( ${(R)args:#(|\*)(|\(*\))--*} )    # remove long options
+   case "$OSTYPE" in
+-    darwin*|freebsd*|dragonfly*|openbsd*)
++    darwin*|freebsd*|dragonfly*|openbsd*|bitrig*)
+       args+=(
+         '-D[output unsigned decimal integers (-t u4)]'
+         {-e,-F}'[output double-precision floats (-t fD)]'

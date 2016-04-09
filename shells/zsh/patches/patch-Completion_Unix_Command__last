@@ -1,0 +1,17 @@
+--- Completion/Unix/Command/_last.orig	Sat Apr  9 09:13:41 2016
++++ Completion/Unix/Command/_last	Sat Apr  9 09:14:35 2016
+@@ -8,11 +8,11 @@ for pattern arg in \
+   '(solaris*|linux-gnu)' '-a[display hostname in last column]' \
+   '((free|net|open)bsd*|darwin*|dragonfly*|linux-gnu)' '-h[limit sessions by hostname]:host:_hosts' \
+   '((free|open)bsd*|linux-gnu)' '-s[report duration in seconds]' \
+-  '(freebsd*|openbsd*)' '-d[limit sessions to those active at snapshot time]:time ([[CC]YY][MMDD]hhmm[.SS])' \
++  '(freebsd*|openbsd*|bitrig*)' '-d[limit sessions to those active at snapshot time]:time ([[CC]YY][MMDD]hhmm[.SS])' \
+   '((net|free|open)bsd*|darwin*|dragonfly*)' '-t[limit sessions by tty]:tty:_ttys -D' \
+-  'openbsd*' '-c[calculate total time]' \
++  '(openbsd*|bitrig*)' '-c[calculate total time]' \
+   '^darwin*' '-f[specify account file]:file:_files' \
+-  '(solaris*|linux-gnu|freebsd*|openbsd*)' '-n[specify number of lines to show]:number' \
++  '(solaris*|linux-gnu|freebsd*|openbsd*|bitrig*)' '-n[specify number of lines to show]:number' \
+   '((open|net)bsd*|dragonfly*)' '-T[show more detailed time information including year and seconds]' \
+   'netbsd*' '-x[assume file is in wtmpx(5) format]' \
+   'netbsd*' '-n[show IP of remote hosts]' \

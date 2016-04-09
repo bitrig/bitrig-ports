@@ -1,6 +1,5 @@
-$OpenBSD$
---- Completion/Unix/Command/_apm.orig	Fri Jul 13 12:24:18 2012
-+++ Completion/Unix/Command/_apm	Fri Jul 13 12:25:16 2012
+--- Completion/Unix/Command/_apm.orig	Sat Apr  9 08:59:43 2016
++++ Completion/Unix/Command/_apm	Sat Apr  9 09:00:13 2016
 @@ -26,7 +26,7 @@ elif [[ $OSTYPE == (freebsd|dragonfly)* ]]; then
      '-Z[transition system into standby mode]' \
      '-z[suspend the system]' && return
