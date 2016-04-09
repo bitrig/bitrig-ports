@@ -3,7 +3,7 @@
 COMMENT=	create tcp socket and connect to stdin/out
 
 DISTNAME=	socket-1.1
-REVISION=	0
+REVISION=	1
 CATEGORIES=	sysutils net
 MASTER_SITES=	https://people.freebsd.org/~wosch/src/
 
