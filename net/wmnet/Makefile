@@ -3,7 +3,7 @@
 COMMENT=	little X dock.app network monitor
 
 DISTNAME=	wmnet-1.06
-REVISION=	9
+REVISION=	10
 CATEGORIES=	net x11 x11/windowmaker
 HOMEPAGE=	http://www.katharineosborne.com/wmnet/
 MASTER_SITES=	http://dockapps.org/files/77/115/
