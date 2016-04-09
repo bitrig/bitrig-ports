@@ -49,6 +49,7 @@ WANTLIB-main =		c crypto ffi gmp m ncurses pthread readline ssl \
 			util yaml z
 LIB_DEPENDS-main =	devel/gmp \
 			devel/libyaml \
+			devel/readline \
 			devel/libffi
 
 PSEUDO_FLAVORS=		no_tk no_ri_docs bootstrap
