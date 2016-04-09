@@ -4,7 +4,7 @@ COMMENT =	Xfce4 disk usage monitor panel plugin
 
 XFCE_VERSION =	1.0.2
 XFCE_PLUGIN =	fsguard
-REVISION=	0
+REVISION=	1
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

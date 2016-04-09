@@ -3,6 +3,7 @@
 COMMENT=	Xfce4 window manager
 
 XFCE_PROJECT=	xfwm4
+REVISION=	0
 XFCE_VERSION=	4.12.3
 
 # GPLv2

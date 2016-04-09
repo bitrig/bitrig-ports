@@ -4,7 +4,7 @@ COMMENT=	Xfce4 dictionary application
 
 XFCE_VERSION=	0.7.1
 XFCE_GOODIE=	xfce4-dict
-REVISION=	0
+REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

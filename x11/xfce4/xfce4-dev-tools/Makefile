@@ -3,6 +3,7 @@
 COMMENT =	Xfce4 developer tools and macros
 
 XFCE_VERSION =	4.12.0
+REVISION =	0
 XFCE_PROJECT =	xfce4-dev-tools
 HOMEPAGE =	http://users.xfce.org/~benny/projects/xfce4-dev-tools/
 

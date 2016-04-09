@@ -4,7 +4,7 @@ COMMENT=	Xfce4 volume mixer
 
 XFCE_GOODIE=	xfce4-mixer
 XFCE_VERSION=	4.11.0
-REVISION=	1
+REVISION=	2
 HOMEPAGE=	http://www.xfce.org/projects/xfce4-mixer
 
 # GPLv2

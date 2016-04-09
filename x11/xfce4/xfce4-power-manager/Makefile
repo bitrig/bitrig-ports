@@ -4,7 +4,7 @@ COMMENT =	Xfce4 power manager
 
 XFCE_VERSION =	1.4.4
 XFCE_GOODIE =	xfce4-power-manager
-REVISION=	2
+REVISION=	3
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

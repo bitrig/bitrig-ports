@@ -4,7 +4,7 @@ COMMENT=	Xfce4 places panel plugin
 
 XFCE_VERSION=	1.7.0
 XFCE_PLUGIN=	places
-REVISION=	0
+REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

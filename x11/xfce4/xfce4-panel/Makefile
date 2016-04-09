@@ -4,7 +4,7 @@ COMMENT=	Xfce4 desktop panel
 
 XFCE_PROJECT=	xfce4-panel
 XFCE_VERSION=	4.12.0
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS=	xfce4panel-1.0	1.0 \
 		xfce4panel-2.0	0.0 # 4.0

@@ -4,7 +4,7 @@ COMMENT=	Xfce4 datetime and calendar plugin
 
 XFCE_VERSION=	0.6.2
 XFCE_PLUGIN=	datetime
-REVISION=	1
+REVISION=	2
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

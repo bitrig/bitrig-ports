@@ -5,7 +5,7 @@ COMMENT=	Xfce4 theme engine for Gtk+2
 XFCE_PROJECT=	gtk-xfce-engine
 
 XFCE_VERSION=	3.2.0
-REVISION=	0
+REVISION=	1
 HOMEPAGE=	http://www.xfce.org/projects/
 
 # GPLv2

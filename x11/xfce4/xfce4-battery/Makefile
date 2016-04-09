@@ -6,7 +6,7 @@ COMMENT=	Xfce4 battery monitor panel plugin
 
 XFCE_VERSION=	1.0.5
 XFCE_PLUGIN=	battery
-REVISION =	6
+REVISION =	7
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes

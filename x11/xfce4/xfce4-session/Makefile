@@ -4,7 +4,7 @@ COMMENT=	Xfce4 session manager
 
 XFCE_PROJECT=	xfce4-session
 XFCE_VERSION=	4.12.1
-REVISION=	1
+REVISION=	2
 
 SHARED_LIBS +=	xfsm-4.6	1.0 # .0.0
 

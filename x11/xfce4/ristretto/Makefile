@@ -4,7 +4,7 @@ COMMENT=	Xfce4 lightweight image-viewer
 
 XFCE_VERSION=	0.8.0
 XFCE_GOODIE=	ristretto
-REVISION=	1
+REVISION=	2
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

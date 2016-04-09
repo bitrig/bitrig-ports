@@ -4,7 +4,7 @@ COMMENT=	Xfce4 mailboxes monitor panel plugin
 
 XFCE_VERSION=	1.2.0
 XFCE_PLUGIN=	mailwatch
-REVISION=	1
+REVISION=	2
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

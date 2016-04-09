@@ -4,7 +4,7 @@ COMMENT=	Xfce4 generic scriptable monitor panel plugin
 
 XFCE_VERSION=	3.4.0
 XFCE_PLUGIN=	genmon
-REVISION =	5
+REVISION =	6
 
 # LGPLv2
 PERMIT_PACKAGE_CDROM=	Yes

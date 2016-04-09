@@ -4,7 +4,7 @@ COMMENT=	Xfce4 printing helper
 
 XFCE_PROJECT=	xfprint
 XFCE_VERSION=	4.6.1
-REVISION=	26
+REVISION=	27
 
 MASTER_SITES=	http://archive.xfce.org/src/archive/${XFCE_PROJECT}/${XFCE_BRANCH}/
 SHARED_LIBS=	xfprint	0.1

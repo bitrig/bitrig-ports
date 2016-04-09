@@ -4,7 +4,7 @@ COMMENT=	Xfce4 widget library
 
 XFCE_VERSION=	4.12.1
 XFCE_PROJECT=	libxfce4ui
-REVISION=	2
+REVISION=	3
 
 SHARED_LIBS=	xfce4ui-1		0.1	\
 		xfce4ui-2		0.0	\

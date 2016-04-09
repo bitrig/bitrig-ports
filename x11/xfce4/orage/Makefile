@@ -4,6 +4,7 @@ COMMENT=	Xfce4 advanced calendar
 
 XFCE_GOODIE=	orage
 XFCE_VERSION=	4.12.1
+REVISION=	0
 
 HOMEPAGE=	http://www.kolumbus.fi/~w408237/orage/
 # GPLv2

@@ -4,7 +4,7 @@ COMMENT=	Xfce4 settings daemon
 
 XFCE_VERSION =	4.12.0
 XFCE_PROJECT=	xfconf
-REVISION=	0
+REVISION=	1
 SHARED_LIBS =	xfconf-0 0.0
 
 # GPLv2
