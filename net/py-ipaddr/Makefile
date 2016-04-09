@@ -3,10 +3,9 @@
 COMMENT =	Python IP address manipulation library
 
 MODPY_EGG_VERSION = 2.1.10
-REVISION =	0
+REVISION =	1
 DISTNAME =	ipaddr-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
-REVISION =	0
 CATEGORIES =	net
 
 HOMEPAGE =	https://github.com/google/ipaddr-py
