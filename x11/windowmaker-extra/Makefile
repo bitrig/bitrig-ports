@@ -4,7 +4,7 @@ COMMENT=		themes and icons for Window Maker
 
 DISTNAME=		WindowMaker-extra-0.1
 PKGNAME=		${DISTNAME:L}
-REVISION=		3
+REVISION=		4
 CATEGORIES=		x11 x11/windowmaker
 
 HOMEPAGE=		http://www.windowmaker.org/
