@@ -3,7 +3,7 @@
 COMMENT =		c++ protocol buffers
 
 DISTNAME =		protobuf-2.4.1
-REVISION =		3
+REVISION =		5
 
 SHARED_LIBS +=		protobuf	1.0   # 7.0
 SHARED_LIBS +=		protoc		1.0   # 7.0
