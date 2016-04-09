@@ -5,10 +5,10 @@ COMMENT-python =	libiptcdata Python bindings
 
 DISTNAME =		libiptcdata-1.0.4
 PKGNAME-main =		${DISTNAME}
-REVISION =		0
+REVISION =		1
 PKGNAME-python =	py-${DISTNAME}
 
-REVISION-main =		0
+REVISION-main =		1
 
 SHARED_LIBS =		iptcdata 	0.0 # 3.3
 
