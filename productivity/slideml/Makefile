@@ -3,7 +3,7 @@
 COMMENT =		HTML slide generator based on SlideML
 
 V =			1.1.0
-REVISION =		1
+REVISION =		2
 GH_TAGNAME =		SLIDEML_${V:S/./_/g}
 GH_ACCOUNT =		conformal
 GH_PROJECT =		slideml
