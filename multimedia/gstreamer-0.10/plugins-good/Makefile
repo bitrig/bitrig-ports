@@ -18,7 +18,7 @@ PKGNAME-dv=		gstreamer-dv-${V}
 PKGNAME-caca=		gstreamer-libcaca-${V}
 EPOCH-main=		0
 
-REVISION-main=		16
+REVISION-main=		17
 REVISION-aalib=		9
 REVISION-dv=		9
 REVISION-caca=		9
