@@ -3,7 +3,7 @@
 COMMENT=	flash rendering library
 
 DISTNAME=	swfdec-0.8.4
-REVISION=	12
+REVISION=	13
 SHARED_LIBS +=	swfdec-0.8           0.0      # .90.0
 SHARED_LIBS +=	swfdec-gtk-0.8       0.0      # .90.0
 CATEGORIES=	graphics
