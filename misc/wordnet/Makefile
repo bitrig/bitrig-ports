@@ -4,7 +4,7 @@ COMMENT=		browser for a large lexical database of English
 V=			3.0
 DISTNAME=		WordNet-$V
 PKGNAME=		wordnet-$V
-REVISION=		5
+REVISION=		6
 
 CATEGORIES=		misc
 
