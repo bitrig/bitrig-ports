@@ -5,9 +5,8 @@ COMMENT=		XML bomb protection for Python stdlib modules
 MODPY_EGG_VERSION=	0.4.1
 DISTNAME=		defusedxml-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION=		0
 CATEGORIES=		textproc www
-REVISION=		0
+REVISION=		1
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
