@@ -6,7 +6,6 @@ MODPY_EGG_VERSION=	5.1.3
 REVISION=	1
 DISTNAME=	feedparser-${MODPY_EGG_VERSION}
 PKGNAME=	py-${DISTNAME}
-REVISION=	0
 CATEGORIES=	textproc
 
 HOMEPAGE=	https://github.com/kurtmckee/feedparser
