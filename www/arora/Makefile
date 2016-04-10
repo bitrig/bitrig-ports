@@ -5,7 +5,7 @@ COMMENT=	simple Qt4-based browser using WebKit
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 
 DISTNAME=	arora-0.11.0
-REVISION=	8
+REVISION=	9
 CATEGORIES=	www
 MASTER_SITES=	https://arora.googlecode.com/files/
 

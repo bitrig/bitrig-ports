@@ -5,9 +5,8 @@ COMMENT=	periodic command scheduler
 V=		2.5.3
 DISTNAME=	anacron.$V
 PKGNAME=	anacron-$V
-REVISION=	0
 CATEGORIES=	sysutils
-REVISION=	0
+REVISION=	1
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes

@@ -3,7 +3,7 @@
 BROKEN-mips64el =	Bus error on startup, no core file left
 
 V =		0.4.1
-REVISION =	1
+REVISION =	2
 COMMENT =	2D MMORPG focused on grinding
 DISTNAME =	choria-${V}-src
 PKGNAME =	choria-${V}

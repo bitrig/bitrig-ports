@@ -16,11 +16,11 @@ PKGNAME-mysql =	cherokee-mysql-${VERSION}
 PKGNAME-geoip =	cherokee-geoip-${VERSION}
 PKGNAME-streaming = cherokee-streaming-${VERSION}
 
-REVISION-main =		11
-REVISION-geoip =	10
-REVISION-ldap =		13
-REVISION-mysql =	12
-REVISION-streaming =	11
+REVISION-main =		12
+REVISION-geoip =	11
+REVISION-ldap =		14
+REVISION-mysql =	13
+REVISION-streaming =	12
 
 SHARED_LIBS =	cherokee-base		0.0 \
 		cherokee-client		0.0 \
