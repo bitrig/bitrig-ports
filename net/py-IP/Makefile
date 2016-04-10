@@ -5,9 +5,8 @@ COMMENT =	Python module to handle IPv4 and IPv6 address
 MODPY_EGG_VERSION =	0.83
 DISTNAME =		IPy-${MODPY_EGG_VERSION}
 PKGNAME =		py-IP-${MODPY_EGG_VERSION}
-REVISION =		0
 CATEGORIES =		net
-REVISION =		0
+REVISION =		1
 
 HOMEPAGE =		https://github.com/haypo/python-ipy/wiki
 
