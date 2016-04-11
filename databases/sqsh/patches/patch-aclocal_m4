@@ -1,6 +1,6 @@
 $OpenBSD: patch-aclocal_m4,v 1.1 2014/06/07 10:48:39 sthen Exp $
---- aclocal.m4.orig	Sat Jun  7 11:03:08 2014
-+++ aclocal.m4	Sat Jun  7 11:04:37 2014
+--- aclocal.m4.orig	Mon Apr 14 03:06:59 2014
++++ aclocal.m4	Mon Apr 11 10:02:11 2016
 @@ -274,10 +274,6 @@ AC_DEFUN([AC_SYBASE_ASE], [
  			else
  				SYBASE_LIBDIR="$SYBASE_OCOS/lib"
@@ -16,7 +16,7 @@ $OpenBSD: patch-aclocal_m4,v 1.1 2014/06/07 10:48:39 sthen Exp $
  		case "${host_os}" in
  			linux*)
  				SYBASE_OS="-ldl -lm";;
-+			openbsd*)
++			openbsd*|bitrig*)
 +				SYBASE_OS="-lm";;
  			irix*)
  				SYBASE_OS="-lnsl -lm";;

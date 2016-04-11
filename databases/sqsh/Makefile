@@ -9,20 +9,20 @@ EXTRACT_SUFX=	.tgz
 
 CATEGORIES=	databases shells
 
-HOMEPAGE=	http://www.sqsh.org/
+HOMEPAGE=	http://sourceforge.net/projects/sqsh/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c ct>=2 curses m readline
+WANTLIB += c ct>=2 ncurses m pthread readline
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sqsh/}
 
-MODULES=	devel/gettext
-LIB_DEPENDS=	databases/freetds \
-		devel/readline
+MODULES=	converters/libiconv
+LIB_DEPENDS=	databases/freetds
 
-CONFIGURE_STYLE=	gnu
+CONFIGURE_STYLE=  autoconf
+AUTOCONF_VERSION= 2.69
 CONFIGURE_ARGS=	--with-readline
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
