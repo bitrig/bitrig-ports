@@ -1,21 +1,20 @@
-$OpenBSD$
---- libpng/configure.orig	Thu Jun  7 17:52:08 2012
-+++ libpng/configure	Thu Jun  7 17:52:14 2012
-@@ -7256,7 +7256,7 @@ fi
- 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
- 	    TCL_LIB_VERSIONS_OK=nodots
+--- libpng/configure.orig	Mon Apr 11 09:01:32 2016
++++ libpng/configure	Mon Apr 11 09:01:37 2016
+@@ -9745,7 +9745,7 @@ fi
+ fi
+ 
  	    ;;
 -	OpenBSD-*)
-+	OpenBSD-* | Bitrig-*)
- 	    SHLIB_CFLAGS="-fPIC"
- 	    SHLIB_LD='${CC} -shared ${SHLIB_CFLAGS}'
- 	    SHLIB_LD_LIBS='${LIBS}'
-@@ -8105,7 +8105,7 @@ fi
++	OpenBSD-*|Bitrig-*)
+ 	    arch=`arch -s`
+ 	    case "$arch" in
+ 	    vax)
+@@ -10683,7 +10683,7 @@ fi
  	    BSD/OS*) ;;
- 	    CYGWIN_*) ;;
+ 	    CYGWIN_*|MINGW32_*) ;;
  	    IRIX*) ;;
 -	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
-+	    NetBSD-*|FreeBSD-*|OpenBSD-* | Bitrig-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
  	    Darwin-*) ;;
  	    SCO_SV-3.2*) ;;
  	    windows) ;;

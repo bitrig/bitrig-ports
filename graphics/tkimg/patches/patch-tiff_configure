@@ -1,21 +1,20 @@
-$OpenBSD$
---- tiff/configure.orig	Thu Jun  7 18:21:52 2012
-+++ tiff/configure	Thu Jun  7 18:21:56 2012
-@@ -7799,7 +7799,7 @@ fi
- 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
- 	    TCL_LIB_VERSIONS_OK=nodots
+--- tiff/configure.orig	Mon Apr 11 09:03:50 2016
++++ tiff/configure	Mon Apr 11 09:03:56 2016
+@@ -10561,7 +10561,7 @@ fi
+ fi
+ 
  	    ;;
 -	OpenBSD-*)
-+	OpenBSD-* | Bitrig-*)
- 	    SHLIB_CFLAGS="-fPIC"
- 	    SHLIB_LD='${CC} -shared ${SHLIB_CFLAGS}'
- 	    SHLIB_LD_LIBS='${LIBS}'
-@@ -8648,7 +8648,7 @@ fi
++	OpenBSD-*|Bitrig-*)
+ 	    arch=`arch -s`
+ 	    case "$arch" in
+ 	    vax)
+@@ -11499,7 +11499,7 @@ fi
  	    BSD/OS*) ;;
- 	    CYGWIN_*) ;;
+ 	    CYGWIN_*|MINGW32_*) ;;
  	    IRIX*) ;;
 -	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
-+	    NetBSD-*|FreeBSD-*|OpenBSD-* | Bitrig-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
  	    Darwin-*) ;;
  	    SCO_SV-3.2*) ;;
  	    windows) ;;

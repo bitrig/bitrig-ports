@@ -1,21 +1,20 @@
-$OpenBSD$
---- libjpeg/configure.orig	Thu Jun  7 17:55:01 2012
-+++ libjpeg/configure	Thu Jun  7 17:55:07 2012
-@@ -7070,7 +7070,7 @@ fi
- 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
- 	    TCL_LIB_VERSIONS_OK=nodots
+--- libjpeg/configure.orig	Mon Apr 11 09:01:09 2016
++++ libjpeg/configure	Mon Apr 11 09:01:16 2016
+@@ -9467,7 +9467,7 @@ fi
+ fi
+ 
  	    ;;
 -	OpenBSD-*)
-+	OpenBSD-* | Bitrig-*)
- 	    SHLIB_CFLAGS="-fPIC"
- 	    SHLIB_LD='${CC} -shared ${SHLIB_CFLAGS}'
- 	    SHLIB_LD_LIBS='${LIBS}'
-@@ -7919,7 +7919,7 @@ fi
++	OpenBSD-*|Bitrig-*)
+ 	    arch=`arch -s`
+ 	    case "$arch" in
+ 	    vax)
+@@ -10405,7 +10405,7 @@ fi
  	    BSD/OS*) ;;
- 	    CYGWIN_*) ;;
+ 	    CYGWIN_*|MINGW32_*) ;;
  	    IRIX*) ;;
 -	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
-+	    NetBSD-*|FreeBSD-*|OpenBSD-* | Bitrig-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
  	    Darwin-*) ;;
  	    SCO_SV-3.2*) ;;
  	    windows) ;;

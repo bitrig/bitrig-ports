@@ -1,21 +1,20 @@
-$OpenBSD$
---- pixmap/configure.orig	Thu Jun  7 18:11:43 2012
-+++ pixmap/configure	Thu Jun  7 18:11:47 2012
-@@ -7573,7 +7573,7 @@ fi
- 	    UNSHARED_LIB_SUFFIX='${TCL_TRIM_DOTS}.a'
- 	    TCL_LIB_VERSIONS_OK=nodots
+--- pixmap/configure.orig	Mon Apr 11 09:02:11 2016
++++ pixmap/configure	Mon Apr 11 09:02:17 2016
+@@ -10074,7 +10074,7 @@ fi
+ fi
+ 
  	    ;;
 -	OpenBSD-*)
-+	OpenBSD-* | Bitrig-*)
- 	    SHLIB_CFLAGS="-fPIC"
- 	    SHLIB_LD='${CC} -shared ${SHLIB_CFLAGS}'
- 	    SHLIB_LD_LIBS='${LIBS}'
-@@ -8422,7 +8422,7 @@ fi
++	OpenBSD-*|Bitrig-*)
+ 	    arch=`arch -s`
+ 	    case "$arch" in
+ 	    vax)
+@@ -11012,7 +11012,7 @@ fi
  	    BSD/OS*) ;;
- 	    CYGWIN_*) ;;
+ 	    CYGWIN_*|MINGW32_*) ;;
  	    IRIX*) ;;
 -	    NetBSD-*|FreeBSD-*|OpenBSD-*) ;;
-+	    NetBSD-*|FreeBSD-*|OpenBSD-* | Bitrig-*) ;;
++	    NetBSD-*|FreeBSD-*|OpenBSD-*|Bitrig-*) ;;
  	    Darwin-*) ;;
  	    SCO_SV-3.2*) ;;
  	    windows) ;;
