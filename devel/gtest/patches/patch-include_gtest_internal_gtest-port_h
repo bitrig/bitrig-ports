@@ -1,6 +1,6 @@
 $OpenBSD: patch-include_gtest_internal_gtest-port_h,v 1.1.1.1 2009/12/31 11:21:13 landry Exp $
---- include/gtest/internal/gtest-port.h.orig	Fri Oct  9 13:49:58 2009
-+++ include/gtest/internal/gtest-port.h	Fri Oct  9 13:51:33 2009
+--- include/gtest/internal/gtest-port.h.orig	Fri Oct  2 02:04:27 2009
++++ include/gtest/internal/gtest-port.h	Mon Apr 11 10:20:39 2016
 @@ -200,12 +200,14 @@
  #define GTEST_OS_LINUX 1
  #elif defined __MVS__
@@ -17,3 +17,85 @@ $OpenBSD: patch-include_gtest_internal_gtest-port_h,v 1.1.1.1 2009/12/31 11:21:1
  
  // On some platforms, <regex.h> needs someone to define size_t, and
  // won't compile otherwise.  We can #include it here as we already
+@@ -360,81 +362,7 @@
+ #define GTEST_HAS_PTHREAD (GTEST_OS_LINUX || GTEST_OS_MAC)
+ #endif  // GTEST_HAS_PTHREAD
+ 
+-// Determines whether Google Test can use tr1/tuple.  You can define
+-// this macro to 0 to prevent Google Test from using tuple (any
+-// feature depending on tuple with be disabled in this mode).
+-#ifndef GTEST_HAS_TR1_TUPLE
+-// The user didn't tell us not to do it, so we assume it's OK.
+-#define GTEST_HAS_TR1_TUPLE 1
+-#endif  // GTEST_HAS_TR1_TUPLE
+-
+-// Determines whether Google Test's own tr1 tuple implementation
+-// should be used.
+-#ifndef GTEST_USE_OWN_TR1_TUPLE
+-// The user didn't tell us, so we need to figure it out.
+-
+-// We use our own tr1 tuple if we aren't sure the user has an
+-// implementation of it already.  At this time, GCC 4.0.0+ is the only
+-// mainstream compiler that comes with a TR1 tuple implementation.
+-// MSVC 2008 (9.0) provides TR1 tuple in a 323 MB Feature Pack
+-// download, which we cannot assume the user has.  MSVC 2010 isn't
+-// released yet.
+-#if defined(__GNUC__) && (GTEST_GCC_VER_ >= 40000)
+-#define GTEST_USE_OWN_TR1_TUPLE 0
+-#else
+-#define GTEST_USE_OWN_TR1_TUPLE 1
+-#endif  // defined(__GNUC__) && (GTEST_GCC_VER_ >= 40000)
+-
+-#endif  // GTEST_USE_OWN_TR1_TUPLE
+-
+-// To avoid conditional compilation everywhere, we make it
+-// gtest-port.h's responsibility to #include the header implementing
+-// tr1/tuple.
+-#if GTEST_HAS_TR1_TUPLE
+-
+-#if GTEST_USE_OWN_TR1_TUPLE
+-#include <gtest/internal/gtest-tuple.h>
+-#elif GTEST_OS_SYMBIAN
+-
+-// On Symbian, BOOST_HAS_TR1_TUPLE causes Boost's TR1 tuple library to
+-// use STLport's tuple implementation, which unfortunately doesn't
+-// work as the copy of STLport distributed with Symbian is incomplete.
+-// By making sure BOOST_HAS_TR1_TUPLE is undefined, we force Boost to
+-// use its own tuple implementation.
+-#ifdef BOOST_HAS_TR1_TUPLE
+-#undef BOOST_HAS_TR1_TUPLE
+-#endif  // BOOST_HAS_TR1_TUPLE
+-
+-// This prevents <boost/tr1/detail/config.hpp>, which defines
+-// BOOST_HAS_TR1_TUPLE, from being #included by Boost's <tuple>.
+-#define BOOST_TR1_DETAIL_CONFIG_HPP_INCLUDED
+ #include <tuple>
+-
+-#elif defined(__GNUC__) && (GTEST_GCC_VER_ >= 40000)
+-// GCC 4.0+ implements tr1/tuple in the <tr1/tuple> header.  This does
+-// not conform to the TR1 spec, which requires the header to be <tuple>.
+-
+-#if !GTEST_HAS_RTTI && GTEST_GCC_VER_ < 40302
+-// Until version 4.3.2, gcc has a bug that causes <tr1/functional>,
+-// which is #included by <tr1/tuple>, to not compile when RTTI is
+-// disabled.  _TR1_FUNCTIONAL is the header guard for
+-// <tr1/functional>.  Hence the following #define is a hack to prevent
+-// <tr1/functional> from being included.
+-#define _TR1_FUNCTIONAL 1
+-#include <tr1/tuple>
+-#undef _TR1_FUNCTIONAL  // Allows the user to #include
+-                        // <tr1/functional> if he chooses to.
+-#else
+-#include <tr1/tuple>
+-#endif  // !GTEST_HAS_RTTI && GTEST_GCC_VER_ < 40302
+-
+-#else
+-// If the compiler is not GCC 4.0+, we assume the user is using a
+-// spec-conforming TR1 implementation.
+-#include <tuple>
+-#endif  // GTEST_USE_OWN_TR1_TUPLE
+-
+-#endif  // GTEST_HAS_TR1_TUPLE
+ 
+ // Determines whether clone(2) is supported.
+ // Usually it will only be available on Linux, excluding

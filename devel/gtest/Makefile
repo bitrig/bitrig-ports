@@ -3,7 +3,7 @@
 COMMENT =	C++ unit test framework
 
 DISTNAME =	gtest-1.4.0
-REVISION =	4
+REVISION =	5
 
 SHARED_LIBS +=	gtest		0.0   # .0.0
 SHARED_LIBS +=	gtest_main	0.0   # .0.0
@@ -24,7 +24,6 @@ WANTLIB += 		c++ c++abi pthread
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
-CXXFLAGS +=		-DGTEST_HAS_TR1_TUPLE=0
 
 MODGNU_CONFIG_GUESS_DIRS =	${WRKDIST}/build-aux
 
