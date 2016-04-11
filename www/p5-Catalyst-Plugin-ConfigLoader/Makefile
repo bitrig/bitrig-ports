@@ -5,7 +5,6 @@ COMMENT=	catalyst plugin to Config::Any
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Plugin-ConfigLoader-0.30
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

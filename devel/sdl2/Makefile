@@ -4,7 +4,6 @@ COMMENT=	cross-platform multimedia library
 BROKEN-hppa=	src/atomic/SDL_spinlock.c:101:2: error: #error Please implement for your platform.
 
 V=		2.0.4
-REVISION=	0
 DISTNAME=	SDL2-${V}
 REVISION=	2
 PKGNAME=	sdl2-${V}

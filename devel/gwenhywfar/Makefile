@@ -5,7 +5,6 @@ COMMENT=	helper library for networking and security applications
 # update the "release=XX" in DISTFILES, not just DISTNAME
 DISTNAME=	gwenhywfar-4.13.1
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}{download.php?package=01\&release=78\&file=01}
-REVISION=	0
 
 SHARED_LIBS +=	gwenhywfar           1.3      # 73.1
 SHARED_LIBS +=	gwengui-gtk2         0.0      # unknown

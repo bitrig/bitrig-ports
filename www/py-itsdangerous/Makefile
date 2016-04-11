@@ -3,7 +3,6 @@
 COMMENT = 	helpers to pass trusted data to untrusted environments
 
 MODPY_EGG_VERSION = 0.24
-REVISION =	1
 DISTNAME =	itsdangerous-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
 REVISION =	0

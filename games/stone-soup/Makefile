@@ -7,7 +7,6 @@ BROKEN =	needs work on bitrig
 
 COMMENT = 	dungeon crawl stone soup
 CATEGORIES = 	games
-REVISION =	1
 
 HOMEPAGE = 	http://crawl.develz.org/
 MASTER_SITES = 	${MASTER_SITE_SOURCEFORGE:=crawl-ref/}

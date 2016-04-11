@@ -3,7 +3,6 @@
 COMMENT =	documentation generator for postgresql databases
 
 DISTNAME =	postgresql_autodoc-1.40
-REVISION =	0
 CATEGORIES =	databases
 REVISION =	0
 

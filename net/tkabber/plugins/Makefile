@@ -3,7 +3,6 @@
 COMMENT =		Tkabber plugins
 
 DISTNAME =		tkabber-plugins-${VERSION}
-REVISION =		0
 
 REVISION =		0
 

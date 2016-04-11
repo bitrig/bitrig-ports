@@ -5,7 +5,6 @@ BROKEN = 		needs work on bitrig
 COMMENT =		LDAP authentication plugin for OpenVPN 2.x
 
 VERSION =		2.0.3
-REVISION =		2
 DISTNAME =		auth-ldap-${VERSION}
 PKGNAME =		openvpn-${DISTNAME}
 REVISION =		1

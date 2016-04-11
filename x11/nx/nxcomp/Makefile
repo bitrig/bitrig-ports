@@ -5,7 +5,6 @@ BROKEN= 		needs work on bitrig
 COMMENT=		library to compress the standard X protocol
 
 DASHVERSION=		2
-REVISION=		0
 DISTNAME=		nxcomp-${MAJOR_VERSION}-${DASHVERSION}
 PKGNAME=		nxcomp-${MAJOR_VERSION}.${DASHVERSION}
 REVISION=		1

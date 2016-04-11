@@ -2,7 +2,6 @@
 
 COMMENT=		class and function decorators
 
-REVISION=		1
 MODPY_EGG_VERSION=	1.8
 DISTNAME=		DecoratorTools-${MODPY_EGG_VERSION}
 PKGNAME=		py-decoratortools-${MODPY_EGG_VERSION}

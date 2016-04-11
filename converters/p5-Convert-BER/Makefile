@@ -3,7 +3,6 @@
 COMMENT=	module to encode and decode objects
 
 DISTNAME=	Convert-BER-1.32
-REVISION=	0
 EPOCH=		0
 CATEGORIES=	converters
 MODULES=	cpan

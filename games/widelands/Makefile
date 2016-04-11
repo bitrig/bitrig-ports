@@ -3,7 +3,6 @@
 COMMENT=	economic and military simulation game
 
 V=		17
-REVISION=	1
 DISTNAME= 	widelands-build${V}-src
 PKGNAME=	widelands-0.${V}
 CATEGORIES=	games

@@ -5,7 +5,6 @@ COMMENT =	assemble multiple Regular Expressions into a single RE
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	Regexp-Assemble-0.35
-REVISION =	0
 CATEGORIES =	textproc
 REVISION =	0
 

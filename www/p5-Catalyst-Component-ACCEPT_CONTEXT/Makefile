@@ -5,7 +5,6 @@ COMMENT =	make Catalyst request contexts available in models and views
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	Catalyst-Component-ACCEPT_CONTEXT-0.07
-REVISION =	0
 CATEGORIES =	www
 REVISION =	0
 

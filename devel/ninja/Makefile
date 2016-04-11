@@ -12,7 +12,6 @@ GH_ACCOUNT =		martine
 GH_PROJECT =		ninja
 GH_TAGNAME =		v$V
 DISTNAME =		${GH_PROJECT}-$V
-REVISION =		0
 
 CATEGORIES =		devel
 HOMEPAGE =		http://martine.github.io/ninja/

@@ -5,7 +5,6 @@ COMMENT =	Python interface to memcached
 MODPY_EGG_VERSION = 1.54
 DISTNAME =	python-memcached-${MODPY_EGG_VERSION}
 PKGNAME =	${DISTNAME:S/python-/py-/}
-REVISION =	0
 CATEGORIES =	misc
 REVISION =	0
 

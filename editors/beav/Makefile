@@ -3,7 +3,6 @@
 COMMENT=	binary editor and viewer
 
 VERSION=	1.40
-REVISION=	0
 # Debian
 REV=		18
 

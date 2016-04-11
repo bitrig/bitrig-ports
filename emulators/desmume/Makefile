@@ -5,7 +5,6 @@ BROKEN = 	needs work on bitrig
 COMMENT =	Nintendo DS emulator
 
 DISTNAME =	desmume-0.9.11
-REVISION =	0
 
 CATEGORIES =	emulators
 

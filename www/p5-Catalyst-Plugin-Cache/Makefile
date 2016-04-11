@@ -5,7 +5,6 @@ COMMENT =	flexible caching support for Catalyst
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	Catalyst-Plugin-Cache-0.10
-REVISION =	0
 CATEGORIES =	www
 REVISION =	0
 

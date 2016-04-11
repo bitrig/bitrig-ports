@@ -5,7 +5,6 @@ COMMENT=	pythonic, object-oriented web development framework
 MODPY_EGG_VERSION=	3.2.4
 DISTNAME=		CherryPy-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION=		0
 CATEGORIES=		www
 REVISION=		0
 

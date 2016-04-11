@@ -5,7 +5,6 @@ COMMENT=	stack trace for catalyst
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Plugin-StackTrace-0.11
-REVISION=	0
 CATEGORIES=	devel
 REVISION=	0
 

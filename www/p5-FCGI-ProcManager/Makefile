@@ -5,7 +5,6 @@ COMMENT=	functions for managing FastCGI applications
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	FCGI-ProcManager-0.19
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

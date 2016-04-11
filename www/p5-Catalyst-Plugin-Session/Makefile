@@ -5,7 +5,6 @@ COMMENT=	session framework for catalyst
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Plugin-Session-0.32
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

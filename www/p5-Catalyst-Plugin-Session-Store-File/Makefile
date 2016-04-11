@@ -5,7 +5,6 @@ COMMENT=	catalyst file storage backend for session data
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Plugin-Session-Store-File-0.18
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

@@ -3,7 +3,6 @@
 COMMENT=	web-based rack/IP management
 
 DISTNAME=	RackTables-0.20.11
-REVISION=	0
 PKGNAME=	${DISTNAME:L}
 REVISION=	1
 CATEGORIES=	www

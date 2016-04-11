@@ -4,7 +4,6 @@ COMMENT =		secure decentralised communication platform
 V = 			0.5.5c
 DISTNAME =		retroshare_0.5.5-0.7068
 PKGNAME =		retroshare-${V}
-REVISION =		1
 CATEGORIES =		net security
 HOMEPAGE =		http://retroshare.sourceforge.net
 REVISION =		1

@@ -3,7 +3,6 @@
 COMMENT=	Nagios plugin to check full email delivery loop (SMTP/IMAP)
 
 DISTNAME=	check_email_delivery-0.7.1b
-REVISION=	6
 PORTROACH=	ignore:1
 REVISION=	3
 CATEGORIES=	net mail

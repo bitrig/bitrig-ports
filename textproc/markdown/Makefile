@@ -5,7 +5,6 @@ COMMENT=		text-to-HTML conversion tool
 MODPY_EGG_VERSION=	2.6.5
 DISTNAME=		Markdown-${MODPY_EGG_VERSION}
 PKGNAME=		markdown-${MODPY_EGG_VERSION}
-REVISION=		0
 CATEGORIES=		textproc
 REVISION=		0
 

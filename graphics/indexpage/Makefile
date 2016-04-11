@@ -3,7 +3,6 @@
 COMMENT=	generate index pages for displaying images
 
 DISTNAME=	indexpage-1.0.3
-REVISION=	0
 CATEGORIES=	graphics
 REVISION =	0
 

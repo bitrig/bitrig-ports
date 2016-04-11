@@ -2,7 +2,6 @@
 
 COMMENT =		testing library for the Go language
 DISTNAME =		go-check-v1-20150611
-REVISION =		0
 CATEGORIES =		devel
 HOMEPAGE =		http://labix.org/gocheck
 

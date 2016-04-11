@@ -16,7 +16,6 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		openmsx-${MSX_V}.zip:2
 DIST_SUBDIR=	openttd
 
-REVISION=	0
 
 CATEGORIES=	games
 

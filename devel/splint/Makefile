@@ -2,7 +2,6 @@
 
 COMMENT =	advanced lint: statically check C programs
 DISTNAME =	splint-3.1.2
-REVISION =	0
 DISTFILES =	splint-3.1.2.src.tgz
 REVISION =	0
 CATEGORIES =	devel

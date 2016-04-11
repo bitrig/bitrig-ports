@@ -5,7 +5,6 @@ COMMENT=	fancy interface to the Python interpreter
 MODPY_EGG_VERSION=0.14.2
 DISTNAME=	bpython-${MODPY_EGG_VERSION}
 CATEGORIES=	devel
-REVISION=	0
 
 REVISION=	0
 

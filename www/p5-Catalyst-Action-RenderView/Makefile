@@ -5,7 +5,6 @@ COMMENT=	sensible default end action for catalyst
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Action-RenderView-0.16
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

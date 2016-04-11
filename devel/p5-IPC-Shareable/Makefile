@@ -5,7 +5,6 @@ COMMENT =	share Perl variables between processes
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	IPC-Shareable-0.61
-REVISION =	0
 CATEGORIES =	devel
 REVISION =	0
 

@@ -3,7 +3,6 @@
 COMMENT=	small network calculator
 
 DISTNAME=	ipcalc-1.4
-REVISION=	0
 CATEGORIES=	net
 REVISION=	0
 

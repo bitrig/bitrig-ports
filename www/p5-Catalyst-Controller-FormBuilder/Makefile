@@ -5,7 +5,6 @@ COMMENT=	Catalyst FormBuilder Base Controller
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Controller-FormBuilder-0.06
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

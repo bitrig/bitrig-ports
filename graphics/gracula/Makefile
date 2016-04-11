@@ -5,7 +5,6 @@ BROKEN=		needs work on bitrig
 COMMENT=	graphic counter language compiler/interpreter
 
 DISTNAME=	gracula-3.0
-REVISION=	0
 CATEGORIES=	graphics
 REVISION =	0
 

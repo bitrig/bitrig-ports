@@ -5,7 +5,6 @@ COMMENT =	HTML form creation, rendering and validation framework
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	HTML-FormFu-0.07003
-REVISION =	0
 CATEGORIES =	www textproc
 REVISION =	0
 

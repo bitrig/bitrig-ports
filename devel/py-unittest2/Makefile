@@ -5,7 +5,6 @@ COMMENT =		backport of new features added to unittest
 MODPY_EGG_VERSION =	0.5.1
 DISTNAME =		unittest2-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
-REVISION =		0
 CATEGORIES =		devel
 REVISION =		1
 

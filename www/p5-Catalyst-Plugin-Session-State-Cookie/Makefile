@@ -5,7 +5,6 @@ COMMENT=	catalyst session IDs with cookies
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Plugin-Session-State-Cookie-0.17
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

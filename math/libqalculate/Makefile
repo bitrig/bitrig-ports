@@ -4,7 +4,6 @@ BROKEN-macppc =	libqalculate/Calculator.cc:7030: internal compiler error
 COMMENT =	applied math library
 CATEGORIES =	math devel
 DISTNAME =	libqalculate-0.9.7
-REVISION =	1
 HOMEPAGE =	http://qalculate.sourceforge.net/
 
 REVISION=	2

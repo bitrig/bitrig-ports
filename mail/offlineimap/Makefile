@@ -3,7 +3,6 @@
 COMMENT=	powerful IMAP/Maildir synchronization and reader support
 
 MODPY_EGG_VERSION = 6.7.0
-REVISION =	0
 GH_ACCOUNT =	OfflineIMAP
 GH_PROJECT =	offlineimap
 GH_TAGNAME =	v${MODPY_EGG_VERSION}

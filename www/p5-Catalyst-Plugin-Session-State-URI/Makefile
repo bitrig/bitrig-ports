@@ -5,7 +5,6 @@ COMMENT=	catalyst session IDs as URI extensions
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Plugin-Session-State-URI-0.15
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

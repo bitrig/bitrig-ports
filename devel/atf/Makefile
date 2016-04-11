@@ -2,7 +2,6 @@
 
 COMMENT =		Automated Testing Framework
 DISTNAME =		atf-0.18
-REVISION =		0
 
 SHARED_LIBS +=		atf-c++                   0.0 # 0.0
 SHARED_LIBS +=		atf-c                     0.0 # 0.0

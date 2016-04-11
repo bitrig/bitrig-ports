@@ -5,7 +5,6 @@ COMMENT=	Catalyst development tools
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Devel-1.36
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

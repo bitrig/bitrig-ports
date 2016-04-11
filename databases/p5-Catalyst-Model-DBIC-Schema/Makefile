@@ -3,7 +3,6 @@
 COMMENT=	model class for catalyst
 
 DISTNAME=	Catalyst-Model-DBIC-Schema-0.59
-REVISION=	0
 CATEGORIES=	databases
 MODULES=	cpan
 PKG_ARCH=	*

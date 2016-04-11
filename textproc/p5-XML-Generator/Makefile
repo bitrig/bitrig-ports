@@ -5,7 +5,6 @@ COMMENT=	extension for generating XML
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME =	XML-Generator-1.04
-REVISION =	0
 CATEGORIES=	textproc
 REVISION =	0
 

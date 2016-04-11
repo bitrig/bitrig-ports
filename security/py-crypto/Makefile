@@ -3,7 +3,6 @@
 COMMENT =		cryptographic tools for Python
 
 MODPY_EGG_VERSION =	2.6.1
-REVISION =		2
 DISTNAME =		pycrypto-${MODPY_EGG_VERSION}
 PKGNAME =		py-crypto-${MODPY_EGG_VERSION}
 CATEGORIES =		security devel

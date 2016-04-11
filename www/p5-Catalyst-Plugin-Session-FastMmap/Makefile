@@ -5,7 +5,6 @@ COMMENT=	FastMmap sessions for Catalyst (deprecated)
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Plugin-Session-FastMmap-0.13
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

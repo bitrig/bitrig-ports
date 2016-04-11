@@ -5,7 +5,6 @@ COMMENT=	map subrequests to actions in Catalyst
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Plugin-SubRequest-0.17
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

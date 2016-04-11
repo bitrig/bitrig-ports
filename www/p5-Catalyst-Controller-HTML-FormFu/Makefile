@@ -5,7 +5,6 @@ COMMENT =	formular fu for catalyst
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	Catalyst-Controller-HTML-FormFu-0.06001
-REVISION =	0
 CATEGORIES =	www textproc
 REVISION =	0
 

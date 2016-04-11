@@ -5,7 +5,6 @@ COMMENT=	plugin to Data::FormValidator for catalyst (deprecated)
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Plugin-FormValidator-0.094
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

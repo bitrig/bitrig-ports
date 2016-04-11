@@ -5,7 +5,6 @@ COMMENT =	test for valid YAML
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	Test-YAML-Valid-0.04
-REVISION =	0
 CATEGORIES =	devel
 REVISION =	0
 

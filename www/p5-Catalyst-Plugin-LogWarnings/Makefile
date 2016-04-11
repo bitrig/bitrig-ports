@@ -5,7 +5,6 @@ COMMENT =	log Perl warnings to your Catalyst log object
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	Catalyst-Plugin-LogWarnings-0.03
-REVISION =	0
 CATEGORIES =	www
 REVISION =	0
 

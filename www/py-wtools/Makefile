@@ -5,7 +5,6 @@ COMMENT=		WSDL parsing services package for Python
 MODPY_EGG_VERSION=	0.4.3
 DISTNAME=		wstools-${MODPY_EGG_VERSION}
 PKGNAME=		py-${DISTNAME}
-REVISION=		0
 CATEGORIES=		www
 REVISION=		1
 

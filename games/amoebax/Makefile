@@ -5,7 +5,6 @@ BROKEN=		needs work on bitrig
 COMMENT=	cute and addictive action-puzzle game
 
 DISTNAME= 	amoebax-0.2.1
-REVISION=       0
 
 CATEGORIES=	games
 EXTRACT_SUFX=	.tar.bz2

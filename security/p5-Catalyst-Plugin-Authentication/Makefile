@@ -3,7 +3,6 @@
 COMMENT=	Catalyst authentication framework
 
 DISTNAME=	Catalyst-Plugin-Authentication-0.10018
-REVISION=	0
 CATEGORIES=	security
 REVISION=	0
 

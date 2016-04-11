@@ -2,7 +2,6 @@
 
 COMMENT=		refactoring library
 
-REVISION=		1
 MODPY_EGG_VERSION=	0.9.4
 DISTNAME=		rope-${MODPY_EGG_VERSION}
 CATEGORIES=     	devel

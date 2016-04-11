@@ -4,7 +4,6 @@ COMMENT-main=	MS Exchange groupware suite replacement
 COMMENT-web=	zarafa webaccess frontend and MAPI extensions for PHP
 
 PKGNAME=	zarafa-${V}
-REVISION=	0
 PKGNAME-main=	zarafa-${V}
 PKGNAME-web=	zarafa-webaccess-${V}
 REVISION=	5

@@ -5,7 +5,6 @@ COMMENT =	lightweight, dependency free HTML/XML generation
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	HTML-Tiny-1.05
-REVISION =	0
 CATEGORIES =	www
 REVISION =	0
 

@@ -3,7 +3,6 @@
 COMMENT=	interactive electronics designing software
 
 V=		0.9.2
-REVISION=	0
 
 GH_ACCOUNT=	fritzing
 GH_PROJECT=	fritzing-app

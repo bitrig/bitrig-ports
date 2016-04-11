@@ -5,7 +5,6 @@ COMMENT =	configure your application with environment variables
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	Catalyst-Plugin-ConfigLoader-Environment-0.07
-REVISION =	0
 CATEGORIES =	www
 REVISION =	0
 

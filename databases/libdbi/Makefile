@@ -2,7 +2,6 @@
 
 COMMENT =		database-independent abstraction layer
 DISTNAME =		libdbi-0.8.4
-REVISION =		0
 CATEGORIES =		databases
 SHARED_LIBS +=		dbi 0.0 # .0.5
 REVISION =		0

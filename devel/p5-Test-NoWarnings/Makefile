@@ -5,7 +5,6 @@ COMMENT=        forbids warnings while testing
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Test-NoWarnings-1.04
-REVISION=	0
 CATEGORIES=     devel
 REVISION=	0
 

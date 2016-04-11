@@ -5,7 +5,6 @@ COMMENT=	visitor-style traversal of Perl data structures
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Data-Visitor-0.27
-REVISION=	0
 CATEGORIES=	devel
 REVISION=	0
 

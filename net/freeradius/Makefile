@@ -12,7 +12,6 @@ COMMENT-pgsql=	freeradius pgsql rlm addon
 COMMENT-ldap=	freeradius ldap rlm addon
 
 V=		2.2.9
-REVISION=	2
 REVISION-main=	3
 DISTNAME=	freeradius-server-$V
 EXTRACT_SUFX=	.tar.bz2

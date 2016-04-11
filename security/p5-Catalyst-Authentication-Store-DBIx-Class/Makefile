@@ -5,7 +5,6 @@ COMMENT =	storage class for Catalyst Authentication using DBIx::Class
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	Catalyst-Authentication-Store-DBIx-Class-0.1502
-REVISION =	0
 CATEGORIES =	security
 REVISION =	0
 

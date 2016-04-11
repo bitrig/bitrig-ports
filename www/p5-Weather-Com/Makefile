@@ -5,7 +5,6 @@ COMMENT=	module to get weather information from weather.com
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Weather-Com-0.5.5
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

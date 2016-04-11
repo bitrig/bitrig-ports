@@ -4,7 +4,6 @@ COMMENT=		Jabber client for text terminals
 
 MODPY_EGG_VERSION=	1.2.1
 DISTNAME=		cjc-${MODPY_EGG_VERSION}
-REVISION=		0
 CATEGORIES=		net
 REVISION=		0
 

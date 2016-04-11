@@ -3,7 +3,6 @@
 COMMENT=	Template Toolkit views for Catalyst
 
 DISTNAME=	Catalyst-View-TT-0.37
-REVISION=	0
 CATEGORIES=	textproc
 REVISION=	0
 

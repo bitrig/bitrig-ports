@@ -5,7 +5,6 @@ COMMENT=	Log4j implementation for Perl
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Log-Log4perl-1.40
-REVISION=	0
 CATEGORIES=	devel
 REVISION=	0
 

@@ -3,7 +3,6 @@
 COMMENT=	objects for cycling through a list of values
 
 DISTNAME =	List-Cycle-1.02
-REVISION =	0
 CATEGORIES=	devel
 REVISION =	0
 

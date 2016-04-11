@@ -5,7 +5,6 @@ COMMENT=	Catalyst Apache engine
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	Catalyst-Engine-Apache-1.16
-REVISION=	0
 CATEGORIES=	www
 REVISION=	0
 

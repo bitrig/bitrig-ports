@@ -5,7 +5,6 @@ COMMENT= 	fast lookup of country codes by IP address
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	IP-Country-2.28
-REVISION=	0
 CATEGORIES=	net
 REVISION=	0
 

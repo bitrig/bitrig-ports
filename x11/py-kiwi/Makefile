@@ -5,7 +5,6 @@ COMMENT=		framework and a set of enhanced PyGTK widgets
 V=			1.9.29
 DISTNAME=		kiwi-$V
 PKGNAME=		py-kiwi-$V
-REVISION=		0
 CATEGORIES=		x11 devel
 REVISION=		0
 

@@ -5,7 +5,6 @@ COMMENT =	representation of an iTunes Library
 MODULES =	cpan
 PKG_ARCH =	*
 DISTNAME =	Mac-iTunes-Library-1.0
-REVISION =	0
 CATEGORIES =	multimedia
 REVISION =	0
 

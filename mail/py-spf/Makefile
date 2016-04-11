@@ -4,7 +4,6 @@ COMMENT=	Sender-Policy-Framework queries in Python
 
 MODPY_EGG_VERSION=2.0.12
 DISTNAME=	pyspf-${MODPY_EGG_VERSION}
-REVISION=	0
 PKGNAME=	py-spf-${MODPY_EGG_VERSION}
 REVISION=	0
 CATEGORIES=	mail

@@ -3,7 +3,6 @@
 COMMENT=	interface for getting PID info
 
 DISTNAME=	Unix-PID-0.23
-REVISION=	0
 CATEGORIES=	sysutils
 REVISION=	0
 

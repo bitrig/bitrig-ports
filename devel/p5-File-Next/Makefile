@@ -5,7 +5,6 @@ COMMENT=		File-finding iterator
 MODULES=		cpan
 PKG_ARCH=		*
 DISTNAME=		File-Next-1.12
-REVISION=		0
 CATEGORIES=		devel
 REVISION=		0
 
