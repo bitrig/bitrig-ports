@@ -3,7 +3,7 @@
 COMMENT=	convert media files to Vorbis, Theora and Dirac
 
 MODPY_EGG_VERSION=0.3.3
-REVISION=	4
+REVISION=	5
 DISTNAME=	oggconvert-${MODPY_EGG_VERSION}
 
 CATEGORIES=	multimedia sysutils

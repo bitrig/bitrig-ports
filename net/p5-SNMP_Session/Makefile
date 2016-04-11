@@ -5,7 +5,7 @@ COMMENT=	provides rudimentary access to remote SNMP agents
 MODULES=	cpan
 PKG_ARCH=	*
 DISTNAME=	SNMP_Session-1.13
-REVISION=	6
+REVISION=	7
 CATEGORIES=	net
 
 HOMEPAGE=	https://github.com/sleinen/snmp-session

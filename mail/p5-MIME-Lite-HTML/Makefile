@@ -4,6 +4,7 @@ COMMENT =	transform a HTML page in a MIME-Lite mail
 
 DISTNAME =	MIME-Lite-HTML-1.24
 CATEGORIES =	mail
+REVISION = 	0
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes

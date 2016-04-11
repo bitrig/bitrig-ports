@@ -3,7 +3,7 @@
 COMMENT=		simple hostname scanner
 
 DISTNAME=		plushs-1.2
-REVISION=		0
+REVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=plushs/}
 

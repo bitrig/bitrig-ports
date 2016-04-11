@@ -6,7 +6,7 @@ V =		0.9-2
 PV =		-${V:S/-/_/}
 DISTNAME =	ltcltk-${V}
 PKGNAME =	ltcltk${PV}
-REVISION =	1
+REVISION =	2
 CATEGORIES =	devel
 HOMEPAGE =	http://www.tset.de/ltcltk/
 

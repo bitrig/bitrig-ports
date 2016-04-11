@@ -4,7 +4,7 @@ COMMENT =		compare pcap dump files
 
 MODPY_EGG_VERSION =	0.1
 DISTNAME =		pcapdiff-${MODPY_EGG_VERSION}
-REVISION =		3
+REVISION =		4
 
 CATEGORIES =		net security
 

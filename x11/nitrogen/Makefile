@@ -6,7 +6,7 @@ CXXFLAGS +=		-std=c++11
 COMMENT=		background browser and setter for X11
 
 DISTNAME=		nitrogen-1.5.2
-REVISION=		9
+REVISION=		10
 CATEGORIES=		x11 graphics
 
 HOMEPAGE=		http://projects.l3ib.org/nitrogen/

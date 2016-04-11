@@ -3,7 +3,7 @@
 COMMENT=	library to parse flash media stream URLs
 
 DISTNAME=	libquvi-0.9.4
-REVISION=	0
+REVISION=	1
 
 SHARED_LIBS +=  quvi-0.9             0.0      # 8.0
 

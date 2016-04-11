@@ -5,7 +5,7 @@ COMMENT=		detect image spam with SpamAssassin
 V=			3.6.0.146
 DISTNAME=		fuzzyocr-$V
 PKGNAME=		p5-FuzzyOcr-$V
-REVISION=		3
+REVISION=		4
 PKG_ARCH=		*
 CATEGORIES=		mail perl5
 

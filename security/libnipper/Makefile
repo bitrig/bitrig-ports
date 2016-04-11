@@ -3,7 +3,7 @@
 COMMENT =		library for nipper
 
 DISTNAME =		libnipper-0.12.6
-REVISION =		5
+REVISION =		6
 CATEGORIES =		security net
 
 SHARED_LIBS =		nipper 0.0

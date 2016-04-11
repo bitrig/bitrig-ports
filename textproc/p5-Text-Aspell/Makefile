@@ -4,7 +4,7 @@ COMMENT=	interface to the GNU aspell library
 
 MODULES=	cpan
 DISTNAME=	Text-Aspell-0.09
-REVISION=	8
+REVISION=	9
 CATEGORIES=	devel textproc
 
 # Perl

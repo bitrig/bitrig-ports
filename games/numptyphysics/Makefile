@@ -6,15 +6,13 @@ COMMENT-npcomplete =	extra levels for physics-based drawing puzzle game
 DISTNAME =		numptyphysics-0.3.r20100916
 PKGNAME-main =		${DISTNAME}
 PKGNAME-npcomplete =	npcomplete-0.0.r20100124
-REVISION-main =		1
-REVISION-npcomplete =	0
+REVISION-main =		2
+REVISION-npcomplete =	1
 
 MULTI_PACKAGES =	-main -npcomplete
 
 EXTRACT_SUFX =	.tar.bz2
 CATEGORIES =	games
-REVISION-main =	1
-REVISION-npcomplete = 0
 
 HOMEPAGE =	http://numptyphysics.garage.maemo.org/
 

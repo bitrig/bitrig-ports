@@ -4,7 +4,7 @@ COMMENT	= 	RFC 2553 getaddrinfo and getnameinfo functions
 
 MODULES =	cpan
 DISTNAME =	Socket-GetAddrInfo-0.22
-REVISION =	1
+REVISION =	2
 CATEGORIES =	net
 
 # perl

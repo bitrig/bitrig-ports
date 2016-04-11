@@ -5,7 +5,7 @@ COMMENT=	MIT Object Tcl
 V=		1.14
 DISTNAME=	otcl-src-$V
 PKGNAME=	otcl-$V
-REVISION=	1
+REVISION=	2
 SHARED_LIBS=	otcl 2.0
 CATEGORIES=	lang
 

@@ -5,7 +5,7 @@ COMMENT =	interface to the Skein digest algorithm
 DISTNAME =	Digest-Skein-0.05
 CATEGORIES =	security
 
-REVISION =	4
+REVISION =	5
 
 HOMEPAGE =	http://www.skein-hash.info/
 
