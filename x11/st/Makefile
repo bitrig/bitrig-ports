@@ -9,6 +9,8 @@ CATEGORIES=		x11
 
 HOMEPAGE=		http://st.suckless.org/
 
+MAINTAINER=		Joerg Jung <jung@openbsd.org>
+
 # MIT/X Consortium License
 PERMIT_PACKAGE_CDROM=	Yes
 
