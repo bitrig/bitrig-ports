@@ -24,6 +24,7 @@ EXTRACT_SUFX =		.tar.bz2
 
 MAKE_FLAGS =		CC="${CC}" \
 			CCC="${CXX}" \
+			CXX="${CXX}" \
 			CFLAGS="${CFLAGS}" \
 			RANLIB=ranlib \
 			INSTALL=install \
