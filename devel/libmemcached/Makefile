@@ -19,6 +19,10 @@ SHARED_LIBS +=  memcachedutil             1.0 # 1.0
 # BSD
 PERMIT_PACKAGE_CDROM=   Yes
 
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
+
 WANTLIB += c c++ c++abi m pthread sasl2
 
 LIB_DEPENDS= 	security/cyrus-sasl2
@@ -26,7 +30,6 @@ TEST_DEPENDS=	misc/memcached
 USE_GMAKE=	yes
 
 CONFIGURE_STYLE=	gnu
-MODGNU_CONFIG_GUESS_DIRS = ${WRKSRC}/build-aux
 CONFIGURE_ENV += 	CFLAGS="${CFLAGS} -I${LOCALBASE}/include"
 CONFIGURE_ENV +=	CXXFLAGS="${CFLAGS} -I${LOCALBASE}/include"
 CONFIGURE_ENV +=	LDFLAGS="${LDFLAGS} -L${LOCALBASE}/lib"
