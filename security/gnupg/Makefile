@@ -3,10 +3,8 @@
 COMMENT=	GNU privacy guard - a free PGP replacement
 
 DISTNAME=	gnupg-1.4.19
-REVISION=	1
+REVISION=	2
 CATEGORIES=	security
-
-REVISION=	1
 
 # restrict, not compatible with gnupg-2.
 PKGSPEC =	gnupg-<2

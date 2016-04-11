@@ -4,7 +4,7 @@ COMMENT=	front-end to external cd audio rippers and mp3 encoders
 
 DISTNAME=	grip-3.3.1
 CATEGORIES=	audio
-REVISION=	4
+REVISION=	5
 
 HOMEPAGE=	http://sourceforge.net/projects/grip/
 

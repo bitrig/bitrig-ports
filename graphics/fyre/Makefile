@@ -2,7 +2,7 @@
 
 COMMENT=		tool for producing computational artwork
 DISTNAME=		fyre-1.0.1
-REVISION=		17
+REVISION=		18
 CATEGORIES=		graphics
 
 HOMEPAGE=		http://fyre.navi.cx/

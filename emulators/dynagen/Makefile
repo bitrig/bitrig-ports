@@ -3,7 +3,7 @@
 COMMENT=		front-end for dynamips cisco emulator
 
 DISTNAME=		dynagen-0.11.0
-REVISION =		4
+REVISION =		5
 CATEGORIES=		emulators
 
 HOMEPAGE =		http://sourceforge.net/projects/dyna-gen/

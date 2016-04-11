@@ -4,7 +4,6 @@ COMMENT-main =		programming language with generators, X11 and more
 COMMENT-main-no_x11 =	programming language with generators
 
 VERSION =	9.5.1
-REVISION =	0
 DISTNAME =	icon-v951src
 CATEGORIES =	lang
 MASTER_SITES = 	http://www.cs.arizona.edu/icon/ftp/packages/unix/
@@ -13,7 +12,7 @@ DISTFILES =	icon-v951src.tgz
 MULTI_PACKAGES =	-main #-compiler
 
 PKGNAME-main =		icon-interp-${VERSION}
-REVISION-main =		0
+REVISION-main =		1
 
 # Public domain
 PERMIT_PACKAGE_CDROM =	Yes

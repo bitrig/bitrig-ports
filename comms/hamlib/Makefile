@@ -10,9 +10,9 @@ PKGNAME-main=	hamlib-${VERSION}
 PKGNAME-python=	hamlib-python-${VERSION}
 PKGNAME-tcl=	hamlib-tcl-${VERSION}
 CATEGORIES=	comms hamradio
-REVISION-main=	1
-REVISION-python= 0
-REVISION-tcl=	0
+REVISION-main=	2
+REVISION-python= 1
+REVISION-tcl=	1
 
 MULTI_PACKAGES=	-main -python -tcl
 

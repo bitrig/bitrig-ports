@@ -3,7 +3,7 @@
 COMMENT=	lightweight video thumbnailer for file managers
 
 DISTNAME=	ffmpegthumbnailer-2.0.8
-REVISION=	5
+REVISION=	6
 CATEGORIES=	graphics multimedia
 MASTER_SITES=	https://ffmpegthumbnailer.googlecode.com/files/
 

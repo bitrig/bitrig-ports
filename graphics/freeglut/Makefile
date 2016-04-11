@@ -5,7 +5,7 @@ NOT_FOR_ARCHS=	m88k
 
 COMMENT =		open source alternative to glut
 DISTNAME =		freeglut-2.8.0
-REVISION =		5
+REVISION =		6
 SHARED_LIBS =		glut 5.0
 CATEGORIES =		graphics
 HOMEPAGE =		http://freeglut.sourceforge.net/

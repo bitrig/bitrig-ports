@@ -3,7 +3,7 @@
 COMMENT =		complete, multi-colored suite of icons
 
 V =			5.5.1
-REVISION =		8
+REVISION =		9
 DISTNAME =		gnome-colors-${V}
 PKGNAME =		gnome-colors-icon-theme-${V}
 CATEGORIES =		x11
