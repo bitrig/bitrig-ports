@@ -3,6 +3,7 @@
 COMMENT=		directory content watcher daemon
 
 DISTNAME=		direvent-5.0
+REVISION=		0
 
 CATEGORIES=		sysutils
 

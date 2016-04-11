@@ -5,7 +5,7 @@ ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 COMMENT=	x86 with DOS emulator targeted at playing games
 
 DISTNAME=	dosbox-0.74
-REVISION=	7
+REVISION=	8
 CATEGORIES=	games x11 emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dosbox/}
 
