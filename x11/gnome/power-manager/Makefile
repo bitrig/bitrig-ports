@@ -21,6 +21,10 @@ MODULES=		devel/dconf \
 			devel/gettext \
 			x11/gnome
 
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
+
 MODGNOME_TOOLS=		desktop-file-utils gtk-update-icon-cache
 
 LIB_DEPENDS=		sysutils/upower \
