@@ -3,6 +3,7 @@
 COMMENT=	classes to create and decode MIME messages in PHP
 
 DISTNAME=	Mail_Mime-1.10.0
+REVISION=	0
 CATEGORIES=	mail
 
 MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
