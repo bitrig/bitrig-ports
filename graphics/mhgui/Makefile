@@ -4,7 +4,7 @@ COMMENT=	GUI widget library used in MakeHuman
 
 DISTNAME=	mhgui-0.2
 CATEGORIES=	graphics
-REVISION=	4
+REVISION=	5
 
 SHARED_LIBS +=  mhgui                1.0      # unknown
 
