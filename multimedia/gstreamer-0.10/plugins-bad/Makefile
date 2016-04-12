@@ -12,7 +12,7 @@ PKGNAME-main=		gstreamer-plugins-bad-${V}
 PKGNAME-neon=		gstreamer-neon-${V}
 PKGNAME-mjpeg=		gstreamer-mjpeg-${V}
 
-REVISION-main=		24
+REVISION-main=		25
 REVISION-mjpeg=		14
 REVISION-neon=		10
 
