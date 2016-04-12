@@ -5,7 +5,7 @@ COMMENT=	paragraph reflow for email
 VERSION=	1.52
 DISTNAME=	Par${VERSION:S/.//}
 PKGNAME=	par-${VERSION}
-REVISION=	1
+REVISION=	2
 CATEGORIES=	textproc
 
 HOMEPAGE=	http://www.nicemice.net/par/
