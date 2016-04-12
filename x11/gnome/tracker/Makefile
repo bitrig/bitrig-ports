@@ -64,8 +64,7 @@ LIB_DEPENDS=		audio/libcue \
 			textproc/exempi \
 			textproc/icu4c \
 			x11/gnome/libmediaart>=1.9.0 \
-			x11/gnome/totem-pl-parser \
-			x11/gtk+3
+			x11/gnome/totem-pl-parser
 
 # picked up by configure to build the resdump tool. it is not installed,
 # but when dpb removes libgee during a running build, causes tracker build

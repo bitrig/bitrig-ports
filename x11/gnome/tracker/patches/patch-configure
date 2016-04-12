@@ -2,14 +2,95 @@ $OpenBSD: patch-configure,v 1.19 2016/03/02 07:22:38 ajacoutot Exp $
 
 See pre-configure.
 
---- configure.orig	Tue Mar  1 15:28:19 2016
-+++ configure	Wed Mar  2 08:10:33 2016
+--- configure.orig	Tue Mar  1 08:28:19 2016
++++ configure	Tue Apr 12 16:06:09 2016
+@@ -6442,7 +6442,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -6957,7 +6957,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -7573,7 +7573,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
+@@ -10069,7 +10069,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -10945,7 +10945,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -11988,7 +11988,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -14813,7 +14813,7 @@ fi
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++      openbsd* | bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -16584,7 +16584,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -19763,7 +19763,7 @@ $as_echo "yes" >&6; }
+ fi
+ 
+ case $host in
+-  *-*-openbsd*)
++  *-*-openbsd* | *-*-bitrig*)
+     LIBTRACKER_COMMON_LIBS="$LIBTRACKER_COMMON_LIBS -lkvm"
+     ;;
+ esac
 @@ -27042,7 +27042,7 @@ if ${ac_cv_lib_gif_DGifOpen+:} false; then :
    $as_echo_n "(cached) " >&6
  else
    ac_check_lib_save_LIBS=$LIBS
 -LIBS="-lgif  $LIBS"
-+LIBS="-L${LOCALBASE}/lib -lgif  $LIBS"
++LIBS="-L/usr/local/lib -lgif  $LIBS"
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
@@ -18,7 +99,7 @@ See pre-configure.
  else
    ac_check_lib_save_LIBS=$LIBS
 -LIBS="-ljpeg  $LIBS"
-+LIBS="-L${LOCALBASE}/lib -ljpeg  $LIBS"
++LIBS="-L/usr/local/lib -ljpeg  $LIBS"
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
@@ -27,7 +108,7 @@ See pre-configure.
  else
    ac_check_lib_save_LIBS=$LIBS
 -LIBS="-ltiff  $LIBS"
-+LIBS="-L${LOCALBASE}/lib -ltiff  $LIBS"
++LIBS="-L/usr/local/lib -ltiff  $LIBS"
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
@@ -36,7 +117,7 @@ See pre-configure.
  else
    ac_check_lib_save_LIBS=$LIBS
 -LIBS="-lpng  $LIBS"
-+LIBS="-L${LOCALBASE}/lib -lpng  $LIBS"
++LIBS="-L/usr/local/lib -lpng  $LIBS"
  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
  /* end confdefs.h.  */
  
