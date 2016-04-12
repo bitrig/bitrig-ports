@@ -24,7 +24,7 @@ WANTLIB += pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB += png pthread pthread-stubs rest-0.7 secret-1 soup-2.4
 WANTLIB += soup-gnome-2.4 sqlite3 telepathy-glib
 WANTLIB += webp xcb xcb-render xcb-shm xml2 xslt z gbm
-WANTLIB += X11-xcb Xxf86vm drm epoxy ec++ c++abi glapi
+WANTLIB += X11-xcb Xxf86vm drm epoxy c++ c++abi glapi
 WANTLIB += javascriptcoregtk-4.0 notify webkit2gtk-4.0 xcb-dri2
 WANTLIB += xcb-xfixes xcb-glx xcb-shape hyphen
 
