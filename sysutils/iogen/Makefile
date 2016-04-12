@@ -3,7 +3,7 @@
 COMMENT=	i/o generator
 
 V=		3.1
-REVISION=	2
+REVISION=	3
 GH_TAGNAME=	IOGEN_${V:S/./_/g}
 GH_ACCOUNT=	conformal
 GH_PROJECT=	iogen
