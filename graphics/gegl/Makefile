@@ -17,8 +17,8 @@ CATEGORIES=		graphics devel
 PKGNAME-main=		gegl-${V}
 PKGNAME-plugins=	gegl-plugins-${V}
 
-REVISION-main=		3
-REVISION-plugins=	5
+REVISION-main=		5
+REVISION-plugins=	7
 
 SHARED_LIBS +=  gegl-${API_VERSION}		0.0 # 199.1
 
