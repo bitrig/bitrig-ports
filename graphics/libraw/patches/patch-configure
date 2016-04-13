@@ -1,0 +1,11 @@
+--- configure.orig	Wed Apr 13 09:42:43 2016
++++ configure	Wed Apr 13 09:43:27 2016
+@@ -16970,7 +16970,7 @@ $as_echo "$as_me: WARNING: Unable to find working LibR
+   fi
+ fi
+ 
+-LIBS="$LIBS -lm -lstdc++"
++LIBS="$LIBS -lm -lc++ -lc++abi"
+ 
+ LIBRAW_SHLIB_VERSION=15:0:0
+ 

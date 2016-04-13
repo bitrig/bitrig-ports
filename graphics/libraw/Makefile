@@ -1,7 +1,5 @@
 # $OpenBSD: Makefile,v 1.19 2016/03/11 19:59:15 naddy Exp $
 
-BROKEN = 		needs work on bitrig
-
 COMMENT =		library for reading RAW files
 BROKEN-arm =		undefined reference to __sync_fetch_and_add_4
 BROKEN-hppa =		undefined reference to __sync_fetch_and_add_4
