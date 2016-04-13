@@ -1,5 +1,5 @@
---- binutils-2.17/gas/configure.orig	Tue Jun 23 16:22:58 2015
-+++ binutils-2.17/gas/configure	Tue Jun 23 16:23:13 2015
+--- binutils-2.17/gas/configure.orig	Thu Mar 24 13:57:15 2016
++++ binutils-2.17/gas/configure	Wed Apr 13 15:53:35 2016
 @@ -3508,7 +3508,7 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
@@ -9,3 +9,11 @@
      # This has been around since 386BSD, at least.  Likely further.
      if test -x /sbin/sysctl; then
        lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -4194,6 +4194,7 @@ echo "$as_me: error: bad value ${enableval} for --enab
+ fi;
+ 
+ # Enable -Werror by default when using gcc
++ERROR_ON_WARNING=no
+ if test "${GCC}" = yes -a -z "${ERROR_ON_WARNING}" ; then
+     ERROR_ON_WARNING=yes
+ fi
