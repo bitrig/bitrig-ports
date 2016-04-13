@@ -1,0 +1,11 @@
+--- sysdeps/openbsd/msg_limits.c.orig	Wed Apr 13 09:01:58 2016
++++ sysdeps/openbsd/msg_limits.c	Wed Apr 13 09:02:26 2016
+@@ -28,6 +28,8 @@
+ 
+ /* Define the appropriate macro (if any) to get declaration of `struct
+  * msginfo'.  Needed on, at least, FreeBSD. */
++/* gets set somewhere */
++#undef STRUCT_MSGINFO_NEEDS_KERNEL
+ #if defined (STRUCT_MSGINFO_NEEDS_KERNEL)
+ #define KERNEL 1
+ #elif defined (STRUCT_MSGINFO_NEEDS__KERNEL)
