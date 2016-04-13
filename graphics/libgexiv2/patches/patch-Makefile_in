@@ -1,0 +1,11 @@
+--- Makefile.in.orig	Wed Apr 13 09:36:06 2016
++++ Makefile.in	Wed Apr 13 09:36:19 2016
+@@ -476,7 +476,7 @@ dist_vapi_DATA = \
+ 
+ # REQUIRED_CFLAGS absolutely get appended to CFLAGS, whatever the
+ # the value of CFLAGS in the environment.
+-REQUIRED_CXXFLAGS = -Wl,-lstdc++ $(am__append_1)
++REQUIRED_CXXFLAGS = -Wl,-lc++ -lc++abi $(am__append_1)
+ AM_CXXFLAGS = $(REQUIRED_CXXFLAGS)
+ lib@PACKAGE_NAME@_la_SOURCES = $(GEXIV2_sources) $(GEXIV2_public_HEADERS)
+ lib@PACKAGE_NAME@_la_LIBADD = $(EXIV2_LIBS) $(GLIB_LIBS)
