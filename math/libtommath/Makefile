@@ -21,6 +21,7 @@ FAKE_FLAGS =		DESTDIR=${WRKINST}${PREFIX} \
 			INCPATH=/include
 USE_GMAKE =		Yes
 MAKE_FILE =		makefile
+MAKE_ENV =		CC="${CC}"
 
 ALL_TARGET =		default
 TEST_TARGET =		coverage
