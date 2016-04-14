@@ -40,7 +40,8 @@ MODGNU_CONFIG_GUESS_DIRS=${WRKDIST}/build-aux
 CONFIGURE_ARGS=	--disable-guile \
 		--disable-valgrind-tests \
 		--with-default-trust-store-file=/etc/ssl/cert.pem \
-		--with-unbound-root-key-file=/var/unbound/db/root.key
+		--with-unbound-root-key-file=/var/unbound/db/root.key \
+		ac_cv_type_max_align_t=yes
 
 # OpenBSD's unbound does not provide libdane
 CONFIGURE_ARGS += --disable-libdane
