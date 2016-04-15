@@ -1,0 +1,11 @@
+--- include/nnwork.h.orig	Fri Apr 15 11:55:19 2016
++++ include/nnwork.h	Fri Apr 15 11:55:29 2016
+@@ -24,6 +24,8 @@
+ #define _NNWORK_H
+ #include "neuron.h"
+ 
++using namespace std;
++
+ #define ALL 0
+ #define INPUT 1
+ #define HIDDEN 2

@@ -1,0 +1,11 @@
+--- examples/char_cov.cc.orig	Fri Apr 15 11:59:02 2016
++++ examples/char_cov.cc	Fri Apr 15 11:59:13 2016
+@@ -30,6 +30,8 @@
+ #include <time.h>
+ //#define WAFFLY
+ 
++using namespace std;
++
+ extern float Alphabet [26][35];
+ 
+ // Copy size elements from source []  to destination []

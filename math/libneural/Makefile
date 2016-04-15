@@ -19,8 +19,16 @@ WANTLIB += c++ c++abi pthread
 
 
 CONFIGURE_STYLE=	gnu
+CONFIGURE_ENV=		ac_cv_prog_CC="${CC}" \
+			ac_cv_prog_CPP="${CC} -E"\
+			ac_cv_prog_CXX="${CXX} -std=c++03"
 
 post-extract:
 	chmod +x ${WRKSRC}/configure
+
+post-patch:
+	find ${WRKSRC} -name *.h -o -name *.cc -exec sed -i 's/iostream.h/iostream/g' {} \;
+	find ${WRKSRC} -name *.h -o -name *.cc -exec sed -i 's/fstream.h/fstream/g' {} \;
+	find ${WRKSRC} -name *.h -o -name *.cc -exec sed -i 's/iomanip.h/iomanip/g' {} \;
 
 .include <bsd.port.mk>
