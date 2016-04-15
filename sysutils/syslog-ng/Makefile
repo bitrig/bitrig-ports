@@ -52,7 +52,10 @@ CONFIGURE_ENV +=	OPENSSL_CFLAGS="-I/usr/include/openssl" \
 CONFIGURE_ENV +=	JSON_C_CFLAGS="`pkg-config json-c --cflags`" \
 			JSON_C_LIBS="`pkg-config json-c --libs`"
 
-MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/modules/afamqp/rabbitmq-c
+MODGNU_CONFIG_GUESS_DIRS =	${WRKSRC}/modules/afmongodb/libmongo-client/ \
+				${WRKSRC}/modules/afamqp/rabbitmq-c/ \
+				${WRKSRC}/lib/ivykis \
+				${WRKSRC}
 
 USE_GMAKE =	Yes
 USE_GROFF =	Yes
