@@ -1,0 +1,12 @@
+--- mozilla/dom/events/MessageEvent.h.orig	Fri Apr 15 12:13:40 2016
++++ mozilla/dom/events/MessageEvent.h	Fri Apr 15 12:13:49 2016
+@@ -15,9 +15,6 @@ namespace mozilla {
+ namespace dom {
+ 
+ struct MessageEventInit;
+-class MessagePort;
+-class MessagePortBase;
+-class MessagePortList;
+ class OwningWindowProxyOrMessagePort;
+ 
+ /**
