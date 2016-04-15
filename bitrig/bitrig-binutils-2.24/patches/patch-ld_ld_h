@@ -1,7 +1,7 @@
 $OpenBSD$
---- ld/ld.h.orig	Mon Nov  4 16:33:39 2013
-+++ ld/ld.h	Fri Jan 31 22:05:22 2014
-@@ -260,6 +260,10 @@ typedef struct {
+--- ld/ld.h.orig	Fri Nov 13 00:27:42 2015
++++ ld/ld.h	Fri Apr 15 07:27:58 2016
+@@ -266,6 +266,10 @@ typedef struct {
  
    bfd_boolean text_read_only;
  

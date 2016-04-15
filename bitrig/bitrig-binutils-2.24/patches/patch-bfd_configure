@@ -1,7 +1,7 @@
 $OpenBSD$
---- bfd/configure.orig	Mon Dec  2 10:30:30 2013
-+++ bfd/configure	Fri Jan 31 22:05:22 2014
-@@ -13876,7 +13876,7 @@ if test "${target}" = "${host}"; then
+--- bfd/configure.orig	Mon Jan 25 00:54:07 2016
++++ bfd/configure	Fri Apr 15 06:47:30 2016
+@@ -13917,7 +13917,7 @@ if test "${target}" = "${host}"; then
  	;;
    arm-*-freebsd* | arm-*-kfreebsd*-gnu)
  	COREFILE='' ;;
@@ -10,7 +10,7 @@ $OpenBSD$
  	COREFILE=netbsd-core.lo
  	;;
    arm-*-riscix)		COREFILE=trad-core.lo ;;
-@@ -14091,7 +14091,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
+@@ -14133,7 +14133,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$
    x86_64-*-linux*)
  	CORE_HEADER='"hosts/x86-64linux.h"'
  	;;

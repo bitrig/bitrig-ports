@@ -1,6 +1,6 @@
---- include/elf/common.h.orig	Wed Jun 25 05:30:08 2014
-+++ include/elf/common.h	Wed Jun 25 05:31:39 2014
-@@ -438,6 +438,9 @@
+--- include/elf/common.h.orig	Fri Nov 13 00:27:42 2015
++++ include/elf/common.h	Fri Apr 15 07:03:21 2016
+@@ -441,6 +441,9 @@
  #define PT_GNU_STACK	(PT_LOOS + 0x474e551) /* Stack flags */
  #define PT_GNU_RELRO	(PT_LOOS + 0x474e552) /* Read-only after relocation */
  

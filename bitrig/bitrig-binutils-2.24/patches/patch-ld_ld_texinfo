@@ -1,7 +1,7 @@
 $OpenBSD$
---- ld/ld.texinfo.orig	Tue Nov 26 12:37:33 2013
-+++ ld/ld.texinfo	Fri Jan 31 22:05:22 2014
-@@ -1106,6 +1106,12 @@ Specifying zero will override any default non-zero siz
+--- ld/ld.texinfo.orig	Fri Nov 13 00:27:42 2015
++++ ld/ld.texinfo	Fri Apr 15 07:28:05 2016
+@@ -1217,6 +1217,12 @@ Supported for i386 and x86_64.
  
  Other keywords are ignored for Solaris compatibility.
  

@@ -1,10 +1,10 @@
---- gas/Makefile.am.orig	Mon Nov  4 16:33:37 2013
-+++ gas/Makefile.am	Mon May 12 19:36:17 2014
-@@ -296,6 +296,7 @@ TARG_ENV_HFILES = \
+--- gas/Makefile.am.orig	Fri Nov 13 00:27:41 2015
++++ gas/Makefile.am	Fri Apr 15 06:54:31 2016
+@@ -305,6 +305,7 @@ TARG_ENV_HFILES = \
  	config/te-386bsd.h \
  	config/te-aix5.h \
  	config/te-armeabi.h \
 +	config/te-armbitrigeabi.h \
+ 	config/te-armfbsdeabi.h \
+ 	config/te-armfbsdvfp.h \
  	config/te-armlinuxeabi.h \
- 	config/te-dynix.h \
- 	config/te-epoc-pe.h \

@@ -1,6 +1,6 @@
---- bfd/elf.c.orig	Wed Jun 25 05:26:19 2014
-+++ bfd/elf.c	Wed Jun 25 07:10:00 2014
-@@ -1147,6 +1147,8 @@ get_segment_type (unsigned int p_type)
+--- bfd/elf.c.orig	Fri Nov 13 00:27:40 2015
++++ bfd/elf.c	Fri Apr 15 06:52:02 2016
+@@ -1320,6 +1320,8 @@ get_segment_type (unsigned int p_type)
      case PT_GNU_EH_FRAME: pt = "EH_FRAME"; break;
      case PT_GNU_STACK: pt = "STACK"; break;
      case PT_GNU_RELRO: pt = "RELRO"; break;
@@ -9,7 +9,7 @@
      default: pt = NULL; break;
      }
    return pt;
-@@ -2494,6 +2496,10 @@ bfd_section_from_phdr (bfd *abfd, Elf_Internal_Phdr *h
+@@ -2778,6 +2780,10 @@ bfd_section_from_phdr (bfd *abfd, Elf_Internal_Phdr *h
      case PT_GNU_RELRO:
        return _bfd_elf_make_section_from_phdr (abfd, hdr, hdr_index, "relro");
  
@@ -20,7 +20,7 @@
      default:
        /* Check for any processor-specific program segment types.  */
        bed = get_elf_backend_data (abfd);
-@@ -3564,6 +3570,12 @@ get_program_header_size (bfd *abfd, struct bfd_link_in
+@@ -3988,6 +3994,12 @@ get_program_header_size (bfd *abfd, struct bfd_link_in
        ++segs;
      }
  
@@ -33,7 +33,7 @@
    if (info != NULL && info->relro)
      {
        /* We need a PT_GNU_RELRO segment.  */
-@@ -3786,7 +3798,7 @@ _bfd_elf_map_sections_to_segments (bfd *abfd, struct b
+@@ -4210,7 +4222,7 @@ _bfd_elf_map_sections_to_segments (bfd *abfd, struct b
        bfd_boolean writable;
        int tls_count = 0;
        asection *first_tls = NULL;
@@ -42,7 +42,7 @@
        bfd_size_type amt;
        bfd_vma addr_mask, wrap_to = 0;
  
-@@ -4200,6 +4212,24 @@ _bfd_elf_map_sections_to_segments (bfd *abfd, struct b
+@@ -4649,6 +4661,24 @@ _bfd_elf_map_sections_to_segments (bfd *abfd, struct b
  	      *pm = m;
  	      pm = &m->next;
  	    }

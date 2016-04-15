@@ -1,7 +1,7 @@
 $OpenBSD$
---- ld/lexsup.c.orig	Mon Nov  4 16:33:39 2013
-+++ ld/lexsup.c	Fri Jan 31 22:05:22 2014
-@@ -228,6 +228,9 @@ static const struct ld_option ld_options[] =
+--- ld/lexsup.c.orig	Fri Nov 13 00:27:42 2015
++++ ld/lexsup.c	Fri Apr 15 07:28:25 2016
+@@ -238,6 +238,9 @@ static const struct ld_option ld_options[] =
    { {NULL, required_argument, NULL, '\0'},
      'Y', N_("PATH"), N_("Default search path for Solaris compatibility"),
      ONE_DASH },
@@ -11,7 +11,7 @@ $OpenBSD$
    { {"start-group", no_argument, NULL, '('},
      '(', NULL, N_("Start a group"), TWO_DASHES },
    { {"end-group", no_argument, NULL, ')'},
-@@ -1378,6 +1381,9 @@ parse_args (unsigned argc, char **argv)
+@@ -1451,6 +1454,9 @@ parse_args (unsigned argc, char **argv)
  	case 'y':
  	  add_ysym (optarg);
  	  break;

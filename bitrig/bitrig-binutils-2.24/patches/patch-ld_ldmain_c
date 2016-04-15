@@ -1,7 +1,7 @@
 $OpenBSD$
---- ld/ldmain.c.orig	Fri Nov  8 11:13:48 2013
-+++ ld/ldmain.c	Fri Jan 31 22:16:05 2014
-@@ -261,6 +261,7 @@ main (int argc, char **argv)
+--- ld/ldmain.c.orig	Fri Nov 13 00:27:42 2015
++++ ld/ldmain.c	Fri Apr 15 07:28:19 2016
+@@ -252,6 +252,7 @@ main (int argc, char **argv)
    config.make_executable = TRUE;
    config.magic_demand_paged = TRUE;
    config.text_read_only = TRUE;

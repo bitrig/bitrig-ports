@@ -3,7 +3,7 @@
 COMMENT=	GNU binutils
 DPB_PROPERTIES= parallel
 
-VER = 2.24
+VER = 2.26
 .if "${FLAVOR}" != ""
 FLAVOR_VERSION=-${FLAVOR}
 PKGNAME =  bitrig-binutils${FLAVOR_VERSION}-${VER}

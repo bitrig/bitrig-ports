@@ -1,6 +1,6 @@
---- ld/ldgram.y.orig	Wed Jun 25 05:32:40 2014
-+++ ld/ldgram.y	Wed Jun 25 05:34:42 2014
-@@ -1235,6 +1235,10 @@ phdr_type:
+--- ld/ldgram.y.orig	Fri Nov 13 00:27:42 2015
++++ ld/ldgram.y	Fri Apr 15 07:28:13 2016
+@@ -1240,6 +1240,10 @@ phdr_type:
  			    $$ = exp_intop (0x6474e550);
  			  else if (strcmp (s, "PT_GNU_STACK") == 0)
  			    $$ = exp_intop (0x6474e551);

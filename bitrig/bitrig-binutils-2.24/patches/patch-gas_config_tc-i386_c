@@ -1,14 +1,14 @@
---- gas/config/tc-i386.c.orig	Mon May 12 14:39:14 2014
-+++ gas/config/tc-i386.c	Mon May 12 14:39:49 2014
-@@ -1419,6 +1419,7 @@ cpu_flags_all_zero (const union i386_cpu_flags *x)
+--- gas/config/tc-i386.c.orig	Mon Jan 25 00:51:06 2016
++++ gas/config/tc-i386.c	Fri Apr 15 07:00:21 2016
+@@ -1335,6 +1335,7 @@ operand_type_all_zero (const union i386_operand_type *
      }
  }
  
 +#if 0
  static INLINE void
- cpu_flags_set (union i386_cpu_flags *x, unsigned int v)
+ operand_type_set (union i386_operand_type *x, unsigned int v)
  {
-@@ -1435,6 +1436,7 @@ cpu_flags_set (union i386_cpu_flags *x, unsigned int v
+@@ -1389,6 +1390,7 @@ cpu_flags_all_zero (const union i386_cpu_flags *x)
        abort ();
      }
  }
@@ -16,14 +16,3 @@
  
  static INLINE int
  cpu_flags_equal (const union i386_cpu_flags *x,
-@@ -1665,8 +1667,8 @@ static const i386_operand_type imm16_32 = OPERAND_TYPE
- static const i386_operand_type imm16_32s = OPERAND_TYPE_IMM16_32S;
- static const i386_operand_type imm16_32_32s = OPERAND_TYPE_IMM16_32_32S;
- static const i386_operand_type vec_imm4 = OPERAND_TYPE_VEC_IMM4;
--static const i386_operand_type regbnd = OPERAND_TYPE_REGBND;
--static const i386_operand_type vec_disp8 = OPERAND_TYPE_VEC_DISP8;
-+//static const i386_operand_type regbnd = OPERAND_TYPE_REGBND;
-+//static const i386_operand_type vec_disp8 = OPERAND_TYPE_VEC_DISP8;
- 
- enum operand_type
- {

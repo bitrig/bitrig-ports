@@ -1,23 +1,23 @@
 $OpenBSD$
---- ld/Makefile.in.orig	Tue Nov 26 12:37:33 2013
-+++ ld/Makefile.in	Mon May 12 16:12:26 2014
-@@ -471,6 +471,7 @@ ALL_EMULATION_SOURCES = \
+--- ld/Makefile.in.orig	Fri Nov 13 00:27:42 2015
++++ ld/Makefile.in	Fri Apr 15 07:18:52 2016
+@@ -503,6 +503,7 @@ ALL_EMULATION_SOURCES = \
  	earmelf_linux_eabi.c \
  	earmelf_nacl.c \
  	earmelf_nbsd.c \
 +	earmelf_obsd.c \
  	earmelf_vxworks.c \
  	earmelfb.c \
- 	earmelfb_linux.c \
-@@ -576,6 +577,7 @@ ALL_EMULATION_SOURCES = \
+ 	earmelfb_fbsd.c \
+@@ -615,6 +616,7 @@ ALL_EMULATION_SOURCES = \
  	eelf_i386_fbsd.c \
  	eelf_i386_ldso.c \
  	eelf_i386_nacl.c \
 +	eelf_i386_obsd.c \
  	eelf_i386_sol2.c \
  	eelf_i386_vxworks.c \
- 	eelf_s390.c \
-@@ -777,6 +779,7 @@ ALL_64_EMULATION_SOURCES = \
+ 	eelf_iamcu.c \
+@@ -772,6 +774,7 @@ ALL_64_EMULATION_SOURCES = \
  	eaarch64linuxb.c \
  	eaarch64linux32.c \
  	eaarch64linux32b.c \
@@ -25,44 +25,47 @@ $OpenBSD$
  	eelf32_x86_64.c \
  	eelf32_x86_64_nacl.c \
  	eelf32b4300.c \
-@@ -832,6 +835,7 @@ ALL_64_EMULATION_SOURCES = \
- 	eelf_x86_64.c \
+@@ -828,6 +831,7 @@ ALL_64_EMULATION_SOURCES = \
+ 	eelf_x86_64_cloudabi.c \
  	eelf_x86_64_fbsd.c \
  	eelf_x86_64_nacl.c \
 +	eelf_x86_64_obsd.c \
  	eelf_x86_64_sol2.c \
  	ehppa64linux.c \
- 	emmo.c \
-@@ -2239,6 +2243,11 @@ earmelf_nbsd.c: $(srcdir)/emulparams/armelf_nbsd.sh \
+ 	ei386pep.c \
+@@ -2271,6 +2275,12 @@ earmelf_nbsd.c: $(srcdir)/emulparams/armelf_nbsd.sh \
    $(ELF_DEPS) $(srcdir)/emultempl/armelf.em \
    $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
- 	${GENSCRIPTS} armelf_nbsd "$(tdir_armelf_nbsd)"
+ 
 +earmelf_obsd.c: $(srcdir)/emulparams/armelf_obsd.sh \
 +  $(srcdir)/emulparams/armelf.sh \
 +  $(ELF_DEPS) $(srcdir)/emultempl/armelf.em \
 +  $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
 +	${GENSCRIPTS} armelf_obsd "$(tdir_armelf_obsd)"
++
  earmelf_vxworks.c: $(srcdir)/emulparams/armelf_vxworks.sh \
    $(srcdir)/emulparams/vxworks.sh $(srcdir)/emulparams/armelf.sh \
    $(ELF_DEPS) $(srcdir)/emultempl/vxworks.em \
-@@ -2913,6 +2922,9 @@ ei386nto.c:	$(srcdir)/emulparams/i386nto.sh \
+@@ -2980,6 +2990,10 @@ ei386nto.c:	$(srcdir)/emulparams/i386nto.sh \
  ei386nw.c:	$(srcdir)/emulparams/i386nw.sh \
    $(ELF_DEPS) $(srcdir)/scripttempl/nw.sc ${GEN_DEPENDS}
- 	${GENSCRIPTS} i386nw "$(tdir_i386nw)"
+ 
 +ei386obsd.c:   $(srcdir)/emulparams/i386obsd.sh \
 +  $(srcdir)/emultempl/generic.em $(srcdir)/scripttempl/aout.sc ${GEN_DEPENDS}
 +	${GENSCRIPTS} i386obsd "$(tdir_i386obsd)"
++
  ei386pe.c: $(srcdir)/emulparams/i386pe.sh \
    $(srcdir)/emultempl/pe.em $(srcdir)/scripttempl/pe.sc ${GEN_DEPENDS}
- 	${GENSCRIPTS} i386pe "$(tdir_i386pe)"
-@@ -3281,6 +3293,10 @@ eaarch64linux32b.c: $(srcdir)/emulparams/aarch64linux3
+ 
+@@ -3157,6 +3171,11 @@ eaarch64linux32.c: $(srcdir)/emulparams/aarch64linux32
+ eaarch64linux32b.c: $(srcdir)/emulparams/aarch64linux32b.sh $(srcdir)/emulparams/aarch64linux32.sh \
    $(ELF_DEPS) $(srcdir)/emultempl/aarch64elf.em \
    $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
- 	${GENSCRIPTS} aarch64linux32b "$(tdir_aarch64linux32b)"
++
 +eaarch64bitrig.c: $(srcdir)/emulparams/aarch64bitrig.sh \
 +  $(ELF_DEPS) $(srcdir)/emultempl/aarch64elf.em \
 +  $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
 +	${GENSCRIPTS} aarch64bitrig "$(tdir_aarch64bitrig)"
- eor32.c: $(srcdir)/emulparams/or32.sh \
-   $(srcdir)/emultempl/generic.em $(srcdir)/scripttempl/or32.sc ${GEN_DEPENDS}
- 	${GENSCRIPTS} or32 "$(tdir_or32)"
+ 
+ epc532macha.c: $(srcdir)/emulparams/pc532macha.sh \
+   $(srcdir)/emultempl/generic.em $(srcdir)/scripttempl/aout.sc ${GEN_DEPENDS}

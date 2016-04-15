@@ -1,7 +1,7 @@
 $OpenBSD$
---- ld/emultempl/elf32.em.orig	Tue Nov 26 06:37:33 2013
-+++ ld/emultempl/elf32.em	Mon May 19 10:51:53 2014
-@@ -82,6 +82,235 @@ EOF
+--- ld/emultempl/elf32.em.orig	Fri Nov 13 00:27:42 2015
++++ ld/emultempl/elf32.em	Fri Apr 15 07:55:08 2016
+@@ -80,6 +80,235 @@ EOF
    esac
  fi
  
@@ -237,7 +237,7 @@ $OpenBSD$
  # Import any needed special functions and/or overrides.
  #
  source_em ${srcdir}/emultempl/elf-generic.em
-@@ -471,6 +700,25 @@ gld${EMULATION_NAME}_search_needed (const char *path,
+@@ -485,6 +714,25 @@ gld${EMULATION_NAME}_search_needed (const char *path,
      return FALSE;
  
    needed.by = n->by;
@@ -263,7 +263,7 @@ $OpenBSD$
    needed.name = n->name;
  
    len = strlen (name);
-@@ -664,7 +912,7 @@ gld${EMULATION_NAME}_parse_ld_so_conf_include
+@@ -678,7 +926,7 @@ gld${EMULATION_NAME}_parse_ld_so_conf_include
  #ifdef HAVE_GLOB
    if (glob (pattern, 0, NULL, &gl) == 0)
      {
@@ -272,7 +272,7 @@ $OpenBSD$
  
        for (i = 0; i < gl.gl_pathc; ++i)
  	gld${EMULATION_NAME}_parse_ld_so_conf (info, gl.gl_pathv[i]);
-@@ -1276,6 +1524,33 @@ fragment <<EOF
+@@ -1251,6 +1499,33 @@ fragment <<EOF
  	    break;
  EOF
  fi
@@ -306,71 +306,73 @@ $OpenBSD$
  if [ "x${USE_LIBPATH}" = xyes ] ; then
  fragment <<EOF
  	  found = 0;
-@@ -1644,6 +1919,20 @@ gld${EMULATION_NAME}_open_dynamic_archive
+@@ -1658,6 +1933,21 @@ gld${EMULATION_NAME}_open_dynamic_archive
+     return FALSE;
  
    filename = entry->filename;
- 
 +EOF
 +case ${target} in
 +  *-*-openbsd* | *-*-bitrig*)
-+    cat >>e${EMULATION_NAME}.c <<EOF
++fragment <<EOF
 +  string = gld${EMULATION_NAME}_search_dir(search->name, filename, -1, -1);
 +  if (string == NULL)
 +    return FALSE;
 +
 +  (void)arch; /* -Werror */
++  (void)len;  /* -Werror */
++  {
 +EOF
 +   ;;
 +  *)
-+    cat >>e${EMULATION_NAME}.c <<EOF
++fragment <<EOF
+   len = strlen (search->name) + strlen (filename);
+   if (entry->flags.full_name_provided)
+     {
+@@ -1677,6 +1967,12 @@ gld${EMULATION_NAME}_open_dynamic_archive
+ #endif
+       string = (char *) xmalloc (len + xlen);
+       sprintf (string, "%s/lib%s%s.so", search->name, filename, arch);
 +
-   /* This allocates a few bytes too many when EXTRA_SHLIB_EXTENSION
-      is defined, but it does not seem worth the headache to optimize
-      away those two bytes of space.  */
-@@ -1657,6 +1946,11 @@ gld${EMULATION_NAME}_open_dynamic_archive
- 
-   sprintf (string, "%s/lib%s%s.so", search->name, filename, arch);
- 
 +EOF
 +   ;;
 +esac
-+cat >>e${EMULATION_NAME}.c <<EOF
++fragment <<EOF
 +
  #ifdef EXTRA_SHLIB_EXTENSION
-   /* Try the .so extension first.  If that fails build a new filename
-      using EXTRA_SHLIB_EXTENSION.  */
-@@ -2026,9 +2320,13 @@ echo '  ; else if (link_info.pie && link_info.combrelo
- echo '             && link_info.relro' >> e${EMULATION_NAME}.c
+       /* Try the .so extension first.  If that fails build a new filename
+ 	 using EXTRA_SHLIB_EXTENSION.  */
+@@ -2069,9 +2365,13 @@ echo '             && link_info.combreloc'		>> e${EMUL
+ echo '             && link_info.relro'			>> e${EMULATION_NAME}.c
  echo '             && (link_info.flags & DF_BIND_NOW)) return' >> e${EMULATION_NAME}.c
  sed $sc ldscripts/${EMULATION_NAME}.xdw			>> e${EMULATION_NAME}.c
 +echo '  ; else if (link_info.pie && link_info.combreloc && config.data_bss_contig == TRUE) return' >> e${EMULATION_NAME}.c
 +sed $sc ldscripts/${EMULATION_NAME}.xdcz                >> e${EMULATION_NAME}.c
- echo '  ; else if (link_info.pie && link_info.combreloc) return' >> e${EMULATION_NAME}.c
+ echo '  ; else if (bfd_link_pie (&link_info)'		>> e${EMULATION_NAME}.c
+ echo '             && link_info.combreloc) return'	>> e${EMULATION_NAME}.c
  sed $sc ldscripts/${EMULATION_NAME}.xdc			>> e${EMULATION_NAME}.c
- fi
 +echo '  ; else if (link_info.pie && config.data_bss_contig == TRUE) return' >> e${EMULATION_NAME}.c
 +sed $sc ldscripts/${EMULATION_NAME}.xdz                >> e${EMULATION_NAME}.c
- echo '  ; else if (link_info.pie) return'		>> e${EMULATION_NAME}.c
- sed $sc ldscripts/${EMULATION_NAME}.xd			>> e${EMULATION_NAME}.c
  fi
-@@ -2082,11 +2380,16 @@ fragment <<EOF
-   else if (link_info.pie && link_info.combreloc
- 	   && link_info.relro && (link_info.flags & DF_BIND_NOW))
+ echo '  ; else if (bfd_link_pie (&link_info)) return'	>> e${EMULATION_NAME}.c
+ sed $sc ldscripts/${EMULATION_NAME}.xd			>> e${EMULATION_NAME}.c
+@@ -2128,12 +2428,16 @@ fragment <<EOF
+ 	   && link_info.relro
+ 	   && (link_info.flags & DF_BIND_NOW))
      return "ldscripts/${EMULATION_NAME}.xdw";
-+
 +  else if (link_info.pie && link_info.combreloc && config.data_bss_contig == TRUE)
 +    return "ldscripts/${EMULATION_NAME}.xdcz";
-   else if (link_info.pie && link_info.combreloc)
+   else if (bfd_link_pie (&link_info)
+ 	   && link_info.combreloc)
      return "ldscripts/${EMULATION_NAME}.xdc";
  EOF
  fi
  fragment <<EOF
 +  else if (link_info.pie && config.data_bss_contig == TRUE)
 +    return "ldscripts/${EMULATION_NAME}.xdz";
-   else if (link_info.pie)
+   else if (bfd_link_pie (&link_info))
      return "ldscripts/${EMULATION_NAME}.xd";
  EOF
-@@ -2106,6 +2409,10 @@ fragment <<EOF
+@@ -2153,6 +2457,10 @@ fragment <<EOF
      return "ldscripts/${EMULATION_NAME}.xs";
  EOF
  fi

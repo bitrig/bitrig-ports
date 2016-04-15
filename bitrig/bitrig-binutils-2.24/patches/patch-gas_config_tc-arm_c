@@ -1,6 +1,6 @@
 $OpenBSD$
---- gas/config/tc-arm.c.orig	Tue Nov 26 12:37:33 2013
-+++ gas/config/tc-arm.c	Thu Mar  5 21:43:41 2015
+--- gas/config/tc-arm.c.orig	Mon Jan 25 00:51:06 2016
++++ gas/config/tc-arm.c	Fri Apr 15 06:57:29 2016
 @@ -106,7 +106,7 @@ enum arm_float_abi
  #ifndef FPU_DEFAULT
  # ifdef TE_LINUX
@@ -10,7 +10,7 @@ $OpenBSD$
  #  ifdef OBJ_ELF
  #   define FPU_DEFAULT FPU_ARCH_VFP	/* Soft-float, but VFP order.  */
  #  else
-@@ -153,10 +153,10 @@ static const arm_feature_set *object_arch = NULL;
+@@ -155,10 +155,10 @@ static const arm_feature_set *object_arch = NULL;
  
  /* Constants for known architecture features.  */
  static const arm_feature_set fpu_default = FPU_DEFAULT;
@@ -24,16 +24,16 @@ $OpenBSD$
  static const arm_feature_set fpu_arch_fpa = FPU_ARCH_FPA;
  static const arm_feature_set fpu_any_hard = FPU_ANY_HARD;
  static const arm_feature_set fpu_arch_maverick = FPU_ARCH_MAVERICK;
-@@ -203,7 +203,7 @@ static const arm_feature_set arm_ext_adiv = ARM_FEATUR
- static const arm_feature_set arm_ext_virt = ARM_FEATURE (ARM_EXT_VIRT, 0);
+@@ -210,7 +210,7 @@ static const arm_feature_set arm_ext_virt = ARM_FEATUR
+ static const arm_feature_set arm_ext_pan = ARM_FEATURE_CORE_HIGH (ARM_EXT2_PAN);
  
  static const arm_feature_set arm_arch_any = ARM_ANY;
--static const arm_feature_set arm_arch_full = ARM_FEATURE (-1, -1);
-+//static const arm_feature_set arm_arch_full = ARM_FEATURE (-1, -1);
+-static const arm_feature_set arm_arch_full = ARM_FEATURE (-1, -1, -1);
++//static const arm_feature_set arm_arch_full = ARM_FEATURE (-1, -1, -1);
  static const arm_feature_set arm_arch_t2 = ARM_ARCH_THUMB2;
  static const arm_feature_set arm_arch_none = ARM_ARCH_NONE;
  static const arm_feature_set arm_arch_v6m_only = ARM_ARCH_V6M_ONLY;
-@@ -807,11 +807,13 @@ now_it_compatible (int cond)
+@@ -840,11 +840,13 @@ now_it_compatible (int cond)
    return (cond & ~1) == (now_it.cc & ~1);
  }
  
@@ -47,7 +47,7 @@ $OpenBSD$
  
  static int in_it_block (void);
  
-@@ -22564,7 +22566,7 @@ md_apply_fix (fixS *	fixP,
+@@ -23256,7 +23258,7 @@ md_apply_fix (fixS *	fixP,
         {
  	 bfd_vma insn;
  	 bfd_vma encoded_addend;
@@ -56,7 +56,7 @@ $OpenBSD$
  
  	 /* Check that the absolute value of the addend can be
  	    expressed as an 8-bit constant plus a rotation.  */
-@@ -22605,7 +22607,7 @@ md_apply_fix (fixS *	fixP,
+@@ -23297,7 +23299,7 @@ md_apply_fix (fixS *	fixP,
        if (!seg->use_rela_p)
  	{
  	  bfd_vma insn;
@@ -65,7 +65,7 @@ $OpenBSD$
  
  	  /* Check that the absolute value of the addend can be
  	     encoded in 12 bits.  */
-@@ -22644,7 +22646,7 @@ md_apply_fix (fixS *	fixP,
+@@ -23336,7 +23338,7 @@ md_apply_fix (fixS *	fixP,
        if (!seg->use_rela_p)
  	{
  	  bfd_vma insn;
@@ -74,7 +74,7 @@ $OpenBSD$
  
  	  /* Check that the absolute value of the addend can be
  	     encoded in 8 bits.  */
-@@ -22684,7 +22686,7 @@ md_apply_fix (fixS *	fixP,
+@@ -23376,7 +23378,7 @@ md_apply_fix (fixS *	fixP,
        if (!seg->use_rela_p)
  	{
  	  bfd_vma insn;
@@ -83,7 +83,7 @@ $OpenBSD$
  
  	  /* Check that the absolute value of the addend is a multiple of
  	     four and, when divided by four, fits in 8 bits.  */
-@@ -23489,8 +23491,8 @@ md_begin (void)
+@@ -24181,8 +24183,8 @@ md_begin (void)
      }
    else if (!mfpu_opt)
      {

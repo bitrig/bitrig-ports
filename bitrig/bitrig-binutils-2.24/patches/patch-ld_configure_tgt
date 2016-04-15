@@ -1,7 +1,7 @@
 $OpenBSD$
---- ld/configure.tgt.orig	Tue Nov 26 12:37:33 2013
-+++ ld/configure.tgt	Mon May 12 19:36:17 2014
-@@ -55,6 +55,7 @@ aarch64_be-*-linux*)	targ_emul=aarch64linuxb
+--- ld/configure.tgt.orig	Fri Nov 13 00:27:42 2015
++++ ld/configure.tgt	Fri Apr 15 07:19:56 2016
+@@ -59,6 +59,7 @@ aarch64_be-*-linux*)	targ_emul=aarch64linuxb
  aarch64-*-linux*)	targ_emul=aarch64linux
  			targ_extra_libpath="aarch64linuxb aarch64linux32 aarch64linux32b armelfb_linux_eabi armelf_linux_eabi"
  			targ_extra_emuls="aarch64elf aarch64elf32 aarch64elf32b aarch64elfb armelf armelfb $targ_extra_libpath" ;;
@@ -9,7 +9,7 @@ $OpenBSD$
  alpha*-*-freebsd* | alpha*-*-kfreebsd*-gnu)
  		        targ_emul=elf64alpha_fbsd
  			targ_extra_emuls="elf64alpha alpha"
-@@ -91,7 +92,8 @@ arm-*-netbsdelf*)	targ_emul=armelf_nbsd;
+@@ -101,7 +102,8 @@ arm-*-netbsdelf*)	targ_emul=armelf_nbsd;
  arm-*-netbsd*)		targ_emul=armnbsd;
  			targ_extra_emuls="armelf armelf_nbsd armelfb_nbsd"  ;;
  arm-*-nto*)		targ_emul=armnto ;;
@@ -17,9 +17,9 @@ $OpenBSD$
 +arm-*-openbsd* | \
 +arm*-*-bitrig*)		targ_emul=armelf_obsd ;;
  arm-*-rtems*)		targ_emul=armelf ;;
- armeb-*-elf)		targ_emul=armelfb ;;
- arm-*-elf | arm*-*-eabi*)
-@@ -277,6 +279,17 @@ x86_64-*-netbsd*)	targ_emul=elf_x86_64
+ armeb-*-elf | armeb-*-eabi*)
+ 			targ_emul=armelfb ;;
+@@ -309,6 +311,17 @@ x86_64-*-netbsd*)	targ_emul=elf_x86_64
  			*)		tdir_elf_i386=`echo ${tdir_elf_i386} | \
  				        sed -e 's/netbsd/netbsdelf/'`;;
  			esac ;;
@@ -35,5 +35,5 @@ $OpenBSD$
 +			targ_extra_emuls="elf_i386 i386nbsd elf_l1om elf_k1om"
 +			;;
  i[3-7]86-*-netware)	targ_emul=i386nw ;;
- i[3-7]86-*-elf*)	targ_emul=elf_i386 ;;
- x86_64-*-elf*)		targ_emul=elf_x86_64
+ i[3-7]86-*-elfiamcu)	targ_emul=elf_iamcu
+ 			targ_extra_emuls=elf_i386 ;;

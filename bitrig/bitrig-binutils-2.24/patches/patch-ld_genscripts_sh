@@ -1,7 +1,7 @@
 $OpenBSD$
---- ld/genscripts.sh.orig	Wed Dec 15 09:56:37 2010
-+++ ld/genscripts.sh	Sun Aug 12 23:32:21 2012
-@@ -404,11 +404,32 @@ if test -n "$GENERATE_PIE_SCRIPT"; then
+--- ld/genscripts.sh.orig	Fri Nov 13 00:27:42 2015
++++ ld/genscripts.sh	Fri Apr 15 07:27:48 2016
+@@ -391,11 +391,32 @@ if test -n "$GENERATE_PIE_SCRIPT"; then
        . ${srcdir}/scripttempl/${SCRIPT_NAME}.sc
      ) | sed -e '/^ *$/d;s/[ 	]*$//' > ldscripts/${EMULATION_NAME}.xdw
      rm -f ${COMBRELOC}
