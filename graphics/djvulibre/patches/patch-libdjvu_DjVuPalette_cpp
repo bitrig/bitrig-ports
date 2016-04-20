@@ -1,0 +1,10 @@
+--- libdjvu/DjVuPalette.cpp.orig	Wed Apr 20 13:57:40 2016
++++ libdjvu/DjVuPalette.cpp	Wed Apr 20 13:57:49 2016
+@@ -67,7 +67,6 @@
+ 
+ #include <stddef.h>
+ #include <stdlib.h>
+-#include <math.h>
+ 
+ 
+ #ifdef HAVE_NAMESPACES
