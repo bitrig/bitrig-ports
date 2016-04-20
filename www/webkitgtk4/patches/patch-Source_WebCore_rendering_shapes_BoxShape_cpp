@@ -1,0 +1,11 @@
+--- Source/WebCore/rendering/shapes/BoxShape.cpp.orig	Tue Apr 19 16:25:49 2016
++++ Source/WebCore/rendering/shapes/BoxShape.cpp	Tue Apr 19 16:26:03 2016
+@@ -43,7 +43,7 @@ static inline LayoutUnit adjustRadiusForMarginBoxShape
+ 
+     LayoutUnit ratio = radius / margin;
+     if (ratio < 1)
+-        return radius + (margin * (1 + pow(ratio - 1, 3)));
++        return radius + (margin * (1 + pow((double)ratio - 1, 3)));
+ 
+     return radius + margin;
+ }
