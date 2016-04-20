@@ -5,7 +5,7 @@ COMMENT=	ICC compatible color management system
 V=		1.8.3
 DISTNAME=	Argyll_V${V}_src
 PKGNAME=	argyllcms-${V}
-REVISION=	0
+REVISION=	1
 EXTRACT_SUFX=	.zip
 WRKDIST=	${WRKDIR}/${DISTNAME:S/_src//}
 
@@ -30,6 +30,10 @@ MAKE_ENV=	CCOPTFLAG="${CFLAGS} -I${X11BASE}/include" \
 		REFSUBDIR="share/color/argyll/ref"
 
 NO_TEST=	Yes
+
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
 
 do-build:
 	cd ${WRKBUILD} && ${SETENV} ${MAKE_ENV} ${LOCALBASE}/bin/jam -q -fJambase
