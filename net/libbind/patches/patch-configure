@@ -1,0 +1,128 @@
+--- configure.orig	Fri Apr 22 10:24:27 2016
++++ configure	Fri Apr 22 10:27:23 2016
+@@ -5588,7 +5588,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -6264,7 +6264,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++  openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$oldlib"
+     ;;
+   *)
+@@ -7339,7 +7339,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -8055,7 +8055,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -11290,7 +11290,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+     # C++ shared libraries are fairly broken
+     ld_shlibs_CXX=no
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     if test -f /usr/libexec/ld.so; then
+       hardcode_direct_CXX=yes
+       hardcode_shlibpath_var_CXX=no
+@@ -13999,7 +13999,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -14695,7 +14695,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var_F77=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_F77=yes
+ 	hardcode_shlibpath_var_F77=no
+@@ -16604,7 +16604,7 @@ cc_basename=`$echo "X$cc_temp" | $Xsed -e 's%.*/%%' -e
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++  openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   esac
+@@ -17320,7 +17320,7 @@ if test -z "$aix_libpath"; then aix_libpath="/usr/lib:
+       hardcode_shlibpath_var_GCJ=no
+       ;;
+ 
+-    openbsd*)
++    openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct_GCJ=yes
+ 	hardcode_shlibpath_var_GCJ=no
+@@ -21730,7 +21730,7 @@ fi
+ case "$use_randomdev" in
+ 	unspec)
+ 		case "$host" in
+-			*-openbsd*)
++			*-openbsd* | *-bitrig*)
+ 				devrandom=/dev/srandom
+ 				;;
+ 			*)
+@@ -21826,7 +21826,7 @@ case $host in
+ 	    use_threads=false
+ 	fi
+ 	;;
+-*-openbsd*)
++*-openbsd* | *-bitrig*)
+ 	# OpenBSD users have reported that named dumps core on
+ 	# startup when built with threads.
+ 	use_threads=false ;;
+@@ -22673,7 +22673,7 @@ then
+ 			CCOPT="$CCOPT -pthread"
+ 			STD_CDEFINES="$STD_CDEFINES -D_THREAD_SAFE"
+ 			;;
+-		*-openbsd*)
++		*-openbsd* | *-bitrig*)
+ 			CC="$CC -pthread"
+ 			CCOPT="$CCOPT -pthread"
+ 			;;
+@@ -25894,7 +25894,7 @@ case "$host" in
+ 	*-lynxos*)	have_minimum_ifreq=yes;;
+ 	*-netbsd*)	have_minimum_ifreq=yes;;
+ 	*-next*)	have_minimum_ifreq=yes;;
+-	*-openbsd*)	have_minimum_ifreq=yes;;
++	*-openbsd* | *-bitrig*)	have_minimum_ifreq=yes;;
+ 	*-rhapsody*)	have_minimum_ifreq=yes;;
+ esac
+ 
+@@ -25940,7 +25940,7 @@ case "$host" in
+ 	*-mpe*)		PORT_DIR="port/mpe";;
+ 	*-netbsd*)	PORT_DIR="port/netbsd";;
+ 	*-next*)	PORT_DIR="port/next";;
+-	*-openbsd*)	PORT_DIR="port/openbsd";;
++	*-openbsd* | *-bitrig*)	PORT_DIR="port/openbsd";;
+ 	*-qnx*)		PORT_DIR="port/qnx";;
+ 	*-rhapsody*)	PORT_DIR="port/rhapsody";;
+ 	*-sunos4*)
