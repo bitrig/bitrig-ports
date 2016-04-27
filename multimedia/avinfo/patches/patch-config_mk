@@ -1,0 +1,13 @@
+--- config.mk.orig	Wed Apr 27 10:48:03 2016
++++ config.mk	Wed Apr 27 10:48:12 2016
+@@ -6,8 +6,8 @@
+ # Set the C compiler to use, and options for it.
+ # Also select a bison-compatible parser generator, if none set NONE
+ 
+-CC=gcc
+-CFLAGS=-O2 -Wall
++CC=clang
++CFLAGS=-O3 -Wall
+ BISON=bison
+ #BISON=NONE
+ 

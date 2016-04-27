@@ -22,6 +22,7 @@ BUILD_DEPENDS=	devel/bison
 USE_GMAKE=	Yes
 
 WRKDIST=	${WRKDIR}/${DISTNAME:S/unix//}
+MAKE_ENV=	CC="${CC}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/avinfo ${PREFIX}/bin
