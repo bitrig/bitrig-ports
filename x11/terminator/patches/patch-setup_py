@@ -1,0 +1,11 @@
+--- setup.py.orig	Wed Apr 27 14:07:36 2016
++++ setup.py	Wed Apr 27 14:07:50 2016
+@@ -205,7 +205,7 @@ class Test(Command):
+     raise SystemExit(errno)
+ 
+ 
+-if platform.system() in ['FreeBSD', 'OpenBSD']:
++if platform.system() in ['FreeBSD', 'OpenBSD', 'Bitrig']:
+   man_dir = 'man'
+ else:
+   man_dir = 'share/man'
