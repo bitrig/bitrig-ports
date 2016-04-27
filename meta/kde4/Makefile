@@ -1,6 +1,7 @@
 # $OpenBSD: Makefile,v 1.20 2015/12/06 08:29:35 ajacoutot Exp $
 
 PKGNAME =		kde4-${MODKDE4_VERSION}
+REVISION =		0
 
 COMMENT-minimal =	KDE4 desktop meta-package (minimal installation)
 COMMENT-main =		KDE4 desktop meta-package (full installation)
