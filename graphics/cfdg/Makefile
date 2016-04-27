@@ -27,7 +27,7 @@ MAKE_FLAGS=	LINK.o=${CXX}
 
 WRKDIST =	${WRKDIR}/context-free-${VERSION}
 
-MAKE_ENV +=	CPPFLAGS="${CFLAGS}"
+MAKE_ENV +=	CPPFLAGS="${CFLAGS}" CC="${CC}" CXX="${CXX}"
 
 EXAMPLEDIR =	${PREFIX}/share/examples/cfdg
 
