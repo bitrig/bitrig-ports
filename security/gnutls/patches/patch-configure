@@ -1,0 +1,110 @@
+--- configure.orig	Wed Apr 27 12:12:34 2016
++++ configure	Wed Apr 27 12:12:58 2016
+@@ -18021,7 +18021,7 @@ else
+                                  # Guess yes on OpenBSD >= 3.9.
+            openbsd[1-2].* | openbsd3.[0-8] | openbsd3.[0-8].*)
+                                  gl_cv_func_snprintf_retval_c99="guessing no";;
+-           openbsd*)             gl_cv_func_snprintf_retval_c99="guessing yes";;
++            openbsd* | bitrig*)             gl_cv_func_snprintf_retval_c99="guessing yes";;
+                                  # Guess yes on Solaris >= 2.10.
+            solaris2.[1-9][0-9]*) gl_cv_func_printf_sizes_c99="guessing yes";;
+            solaris*)             gl_cv_func_printf_sizes_c99="guessing no";;
+@@ -21332,7 +21332,7 @@ fi
+   FLOAT_H=
+   REPLACE_FLOAT_LDBL=0
+   case "$host_os" in
+-    aix* | beos* | openbsd* | mirbsd* | irix*)
++    aix* | beos* |  openbsd* | bitrig* | mirbsd* | irix*)
+       FLOAT_H=float.h
+       ;;
+     freebsd*)
+@@ -27693,7 +27693,7 @@ else
+   if test "$cross_compiling" = yes; then :
+   case "$host_os" in
+           # Guess yes on platforms where we know the result.
+-          *-gnu* | freebsd* | netbsd* | openbsd* \
++          *-gnu* | freebsd* | netbsd* |  openbsd* | bitrig* \
+           | hpux* | solaris* | cygwin* | mingw*)
+             ac_cv_func_malloc_0_nonnull=yes ;;
+           # If we don't know, assume the worst.
+@@ -29033,7 +29033,7 @@ $as_echo "$ac_cv_lib_error_at_line" >&6; }
+   FLOAT_H=
+   REPLACE_FLOAT_LDBL=0
+   case "$host_os" in
+-    aix* | beos* | openbsd* | mirbsd* | irix*)
++    aix* | beos* |  openbsd* | bitrig* | mirbsd* | irix*)
+       FLOAT_H=float.h
+       ;;
+     freebsd*)
+@@ -36761,7 +36761,7 @@ else
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* |  openbsd* | bitrig* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -37273,7 +37273,7 @@ newos6*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-openbsd*)
++ openbsd* | bitrig*)
+   if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
+   else
+@@ -37889,7 +37889,7 @@ old_postuninstall_cmds=
+ 
+ if test -n "$RANLIB"; then
+   case $host_os in
+-  openbsd*)
++   openbsd* | bitrig*)
+     old_postinstall_cmds="$old_postinstall_cmds~\$RANLIB -t \$tool_oldlib"
+     ;;
+   *)
+@@ -40407,7 +40407,7 @@ $as_echo_n "checking whether the $compiler linker ($LD
+     # we just hope/assume this is gcc and not c89 (= MSVC++)
+     with_gnu_ld=yes
+     ;;
+-  openbsd*)
++   openbsd* | bitrig*)
+     with_gnu_ld=no
+     ;;
+   linux* | k*bsd*-gnu | gnu*)
+@@ -41287,7 +41287,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+     *nto* | *qnx*)
+       ;;
+ 
+-    openbsd*)
++     openbsd* | bitrig*)
+       if test -f /usr/libexec/ld.so; then
+ 	hardcode_direct=yes
+ 	hardcode_shlibpath_var=no
+@@ -42331,7 +42331,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++ openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no
+@@ -44388,7 +44388,7 @@ fi
+ 	ld_shlibs_CXX=no
+ 	;;
+ 
+-      openbsd*)
++       openbsd* | bitrig*)
+ 	if test -f /usr/libexec/ld.so; then
+ 	  hardcode_direct_CXX=yes
+ 	  hardcode_shlibpath_var_CXX=no
+@@ -46163,7 +46163,7 @@ newsos6)
+   dynamic_linker='ldqnx.so'
+   ;;
+ 
+-openbsd*)
++ openbsd* | bitrig*)
+   version_type=sunos
+   sys_lib_dlsearch_path_spec="/usr/lib"
+   need_lib_prefix=no

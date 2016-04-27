@@ -1,0 +1,64 @@
+--- doc/examples/Makefile.in.orig	Thu Mar  3 01:52:17 2016
++++ doc/examples/Makefile.in	Wed Apr 27 16:38:54 2016
+@@ -116,7 +116,6 @@ noinst_PROGRAMS = ex-client-resume$(EXEEXT) ex-client-
+ 	$(am__EXEEXT_4) $(am__EXEEXT_5) $(am__EXEEXT_6) \
+ 	$(am__EXEEXT_7) $(am__EXEEXT_8)
+ @ENABLE_OCSP_TRUE@am__append_1 = ex-serv-x509
+-@ENABLE_CXX_TRUE@am__append_2 = ex-cxx
+ @ENABLE_ANON_TRUE@am__append_3 = ex-client-anon ex-serv-anon
+ @ENABLE_OPENPGP_TRUE@am__append_4 = ex-serv-pgp
+ @ENABLE_PKCS11_TRUE@am__append_5 = ex-cert-select-pkcs11
+@@ -250,7 +249,6 @@ am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
+ am__v_lt_0 = --silent
+ am__v_lt_1 = 
+ @ENABLE_OCSP_TRUE@am__EXEEXT_1 = ex-serv-x509$(EXEEXT)
+-@ENABLE_CXX_TRUE@am__EXEEXT_2 = ex-cxx$(EXEEXT)
+ @ENABLE_ANON_TRUE@am__EXEEXT_3 = ex-client-anon$(EXEEXT) \
+ @ENABLE_ANON_TRUE@	ex-serv-anon$(EXEEXT)
+ @ENABLE_OPENPGP_TRUE@am__EXEEXT_4 = ex-serv-pgp$(EXEEXT)
+@@ -318,9 +316,6 @@ ex_client_x509_DEPENDENCIES = libexamples.la ../../lib
+ 	../../gl/libgnu.la ../../src/gl/libgnu_gpl.la \
+ 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+ 	$(am__DEPENDENCIES_1)
+-am__ex_cxx_SOURCES_DIST = ex-cxx.cpp
+-@ENABLE_CXX_TRUE@am_ex_cxx_OBJECTS = ex-cxx.$(OBJEXT)
+-ex_cxx_OBJECTS = $(am_ex_cxx_OBJECTS)
+ am__DEPENDENCIES_2 = libexamples.la ../../lib/libgnutls.la \
+ 	../../gl/libgnu.la ../../src/gl/libgnu_gpl.la \
+ 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+@@ -1465,7 +1460,6 @@ LDADD = libexamples.la				\
+ CXX_LDADD = ../../lib/libgnutlsxx.la \
+ 	$(LDADD)
+ 
+-@ENABLE_CXX_TRUE@ex_cxx_SOURCES = ex-cxx.cpp
+ @ENABLE_CXX_TRUE@ex_cxx_LDADD = $(CXX_LDADD)
+ noinst_LTLIBRARIES = libexamples.la
+ libexamples_la_SOURCES = examples.h ex-alert.c ex-pkcs12.c \
+@@ -1475,7 +1469,7 @@ libexamples_la_SOURCES = examples.h ex-alert.c ex-pkcs
+ all: all-am
+ 
+ .SUFFIXES:
+-.SUFFIXES: .c .cpp .lo .o .obj
++.SUFFIXES: .c .lo .o .obj
+ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
+ 	@for dep in $?; do \
+ 	  case '$(am__configure_deps)' in \
+@@ -1561,10 +1555,6 @@ ex-client-x509$(EXEEXT): $(ex_client_x509_OBJECTS) $(e
+ 	@rm -f ex-client-x509$(EXEEXT)
+ 	$(AM_V_CCLD)$(LINK) $(ex_client_x509_OBJECTS) $(ex_client_x509_LDADD) $(LIBS)
+ 
+-ex-cxx$(EXEEXT): $(ex_cxx_OBJECTS) $(ex_cxx_DEPENDENCIES) $(EXTRA_ex_cxx_DEPENDENCIES) 
+-	@rm -f ex-cxx$(EXEEXT)
+-	$(AM_V_CXXLD)$(CXXLINK) $(ex_cxx_OBJECTS) $(ex_cxx_LDADD) $(LIBS)
+-
+ ex-ocsp-client$(EXEEXT): $(ex_ocsp_client_OBJECTS) $(ex_ocsp_client_DEPENDENCIES) $(EXTRA_ex_ocsp_client_DEPENDENCIES) 
+ 	@rm -f ex-ocsp-client$(EXEEXT)
+ 	$(AM_V_CCLD)$(LINK) $(ex_ocsp_client_OBJECTS) $(ex_ocsp_client_LDADD) $(LIBS)
+@@ -1612,7 +1602,6 @@ distclean-compile:
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ex-client-resume.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ex-client-srp.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ex-client-x509.Po@am__quote@
+-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ex-cxx.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ex-ocsp-client.Po@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ex-pkcs11-list.Plo@am__quote@
+ @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ex-pkcs12.Plo@am__quote@
