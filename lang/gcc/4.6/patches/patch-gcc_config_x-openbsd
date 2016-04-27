@@ -1,8 +1,0 @@
-$OpenBSD$
---- gcc/config/x-openbsd.orig	Wed Jul 25 09:48:01 2012
-+++ gcc/config/x-openbsd	Wed Jul 25 09:48:01 2012
-@@ -0,0 +1,4 @@
-+host-openbsd.o : $(srcdir)/config/host-openbsd.c $(CONFIG_H) $(SYSTEM_H) \
-+  coretypes.h hosthooks.h hosthooks-def.h $(HOOKS_H)
-+	$(COMPILER) -c $(ALL_COMPILERFLAGS) $(ALL_CPPFLAGS) $(INCLUDES) \
-+		$(srcdir)/config/host-openbsd.c

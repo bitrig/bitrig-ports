@@ -1,9 +1,0 @@
-$OpenBSD$
---- libgo/go/debug/proc/regs_openbsd_sparc64.go.orig	Wed Jul 25 09:48:01 2012
-+++ libgo/go/debug/proc/regs_openbsd_sparc64.go	Wed Jul 25 09:48:01 2012
-@@ -0,0 +1,5 @@
-+// Copyright 2009 The Go Authors.  All rights reserved.
-+// Use of this source code is governed by a BSD-style
-+// license that can be found in the LICENSE file.
-+
-+package proc
