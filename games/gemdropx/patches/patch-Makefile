@@ -1,0 +1,13 @@
+--- Makefile.orig	Wed Apr 27 16:57:17 2016
++++ Makefile	Wed Apr 27 16:57:26 2016
+@@ -17,8 +17,8 @@
+ DATA_PREFIX=/usr/local/share/gemdropx
+ SDL_CFLAGS := $(shell sdl-config --cflags)
+ SDL_LDFLAGS := $(shell sdl-config --libs)
+-CC=gcc
+-CXX=gcc
++CC=clang
++CXX=clang++
+ 
+ 
+ MIXER=-lSDL_mixer
