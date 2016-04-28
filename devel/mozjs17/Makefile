@@ -14,7 +14,7 @@ COMMENT =	Mozilla C implementation of JavaScript
 MOZILLA_VERSION =	17.0
 DISTNAME =		mozjs17.0.0
 PKGNAME =		mozjs17-${MOZILLA_VERSION}
-REVISION =		4
+REVISION =		5
 
 SO_VERSION =	0.0
 SHARED_LIBS =	mozjs-17.0 ${SO_VERSION}
