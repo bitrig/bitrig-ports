@@ -54,7 +54,8 @@ LIB_DEPENDS-main=	audio/gsm \
 RUN_DEPENDS-main=	${MODGETTEXT_RUN_DEPENDS} \
 			telephony/asterisk-sounds/core-sounds/en,gsm>=1.4.25 \
 			telephony/asterisk-sounds/moh-opsound,wav
-BUILD_DEPENDS=		security/libsrtp>=1.4.4 # statically linked
+BUILD_DEPENDS=		devel/libblocksruntime \
+			security/libsrtp>=1.4.4 # statically linked
 
 MASTER_SITES=	http://downloads.asterisk.org/pub/telephony/asterisk/releases/ \
 		http://downloads.asterisk.org/pub/telephony/asterisk/old-releases/
@@ -71,10 +72,8 @@ BUILD_DEPENDS+=		${MODGNU_AUTOCONF_DEPENDS} \
 			${MODGNU_AUTOMAKE_DEPENDS} \
 			devel/libtool,-ltdl # bogus dependencies in menuselect
 
-MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/menuselect \
-				${WRKSRC}/res/pjproject \
-				${WRKSRC}/res/pjproject/third_party/portaudio \
-				${WRKSRC}/res/pjproject/third_party/srtp \
+MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/ \
+				${WRKSRC}/menuselect \
 				${WRKSRC}/main/editline
 
 CPPFLAGS+=		-I${X11BASE}/include -I${LOCALBASE}/include
@@ -82,7 +81,7 @@ LDFLAGS+=		-L${X11BASE}/lib -L${LOCALBASE}/lib
 CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}" \
 			CFLAGS="${CFLAGS}" \
 			LDFLAGS="${LDFLAGS}" \
-			LIBS="-lpthread" \
+			LIBS="-lpthread -lc++ -lc++abi" \
 			ac_cv_path_LDCONFIG=:
 MAKE_FLAGS+=		ASTCFLAGS="${CFLAGS}" \
 			ASTLDFLAGS="${LDFLAGS}" \

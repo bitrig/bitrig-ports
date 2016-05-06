@@ -2,17 +2,37 @@ $OpenBSD: patch-configure_ac,v 1.40 2015/10/12 22:07:29 sthen Exp $
 
 c-client requires both kerbV libs *and* (separately) libssl.
 
---- configure.ac.orig	Fri Oct  9 22:48:48 2015
-+++ configure.ac	Sun Oct 11 21:00:19 2015
-@@ -60,7 +60,7 @@ AC_SUBST([astvarrundir],      ['${localstatedir}/run/a
+--- configure.ac.orig	Fri Feb  5 14:32:40 2016
++++ configure.ac	Fri May  6 11:09:59 2016
+@@ -59,8 +59,8 @@ AC_SUBST([astlogdir],         ['${localstatedir}/log/a
+ AC_SUBST([astvarrundir],      ['${localstatedir}/run/asterisk'])dnl
  
  case "${host_os}" in
-      *bsd*)
+-     *bsd*)
 -     if test ${prefix} = 'NONE'; then
++     *bsd* | *bitrig*)
 +     if test ${prefix} != 'NONE'; then
          astvarlibdir='${prefix}/share/asterisk'
          astdbdir='${localstatedir}/db/asterisk'
       fi
+@@ -78,7 +78,7 @@ case "${host_os}" in
+      CPPFLAGS=-I/usr/local/include
+      LDFLAGS=-L/usr/local/lib
+      ;;
+-     openbsd*)
++     openbsd* | bitrig*)
+      ac_default_prefix=/usr/local
+      if test ${prefix} = '/usr/local' || test ${prefix} = 'NONE'; then
+         if test ${sysconfdir} = '${prefix}/etc'; then
+@@ -164,7 +164,7 @@ case "${host_os}" in
+      netbsd*)
+      OSARCH=NetBSD
+      ;;
+-     openbsd*)
++     openbsd* | bitrig*)
+      OSARCH=OpenBSD
+      ;;
+      solaris*)
 @@ -1814,7 +1814,7 @@ if test "${USE_IMAP_TK}" != "no"; then
  			)
  		else #looking in imap directory didn't work, try c-client
