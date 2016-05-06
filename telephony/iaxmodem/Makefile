@@ -3,7 +3,7 @@
 COMMENT=	a software fax modem that uses an IAX channel
 
 DISTNAME=	iaxmodem-1.1.0
-REVISION=	0
+REVISION=	1
 CATEGORIES=	telephony
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=iaxmodem/}
 
@@ -20,6 +20,10 @@ CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib"
 MODGNU_CONFIG_GUESS_DIRS= ${WRKSRC}/lib/libiax2 ${WRKSRC}/lib/spandsp/config
 
 CFLAGS+=	-I${LOCALBASE}/include
+
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/iaxmodem
