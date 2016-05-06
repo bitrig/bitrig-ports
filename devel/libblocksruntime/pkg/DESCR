@@ -1,0 +1,4 @@
+The Blocks language extension adds closure support to the
+C/Objective-C/C++/Objective-C++ languages. If you are familiar with the
+Smalltalk programming language, the Blocks language extensions provides
+something very similar to Smalltalk code blocks.
