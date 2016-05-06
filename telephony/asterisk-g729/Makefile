@@ -25,6 +25,7 @@ AUTOMAKE_VERSION= 1.15
 BUILD_DEPENDS=	${RUN_DEPENDS} \
 		${MODGNU_AUTOCONF_DEPENDS} \
 		${MODGNU_AUTOMAKE_DEPENDS} \
+		devel/libblocksruntime \
 		devel/libtool # m4
 RUN_DEPENDS=	telephony/asterisk>=13.0,<=14.0
 LIB_DEPENDS=	telephony/bcg729
@@ -33,7 +34,7 @@ CONFIGURE_STYLE=  gnu
 CONFIGURE_ARGS+= --with-asterisk-includes=${LOCALBASE}/include \
 		--with-asterisk130 \
 		--with-bcg729
-CONFIGURE_ENV=	LDFLAGS="${LDFLAGS} -L${LOCALBASE}/lib"
+CONFIGURE_ENV=	LDFLAGS="${LDFLAGS} -L${LOCALBASE}/lib" CPPFLAGS="-fblocks"
 
 post-patch:
 	cd ${WRKSRC}; AUTOCONF_VERSION=${AUTOCONF_VERSION} \
