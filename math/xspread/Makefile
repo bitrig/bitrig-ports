@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.21 2016/03/16 22:22:33 naddy Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	spreadsheet program under X11
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.33 2015/11/24 09:11:04 jasper Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		open source 68k Macintosh emulator
 

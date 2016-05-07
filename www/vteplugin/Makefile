@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.20 2015/05/20 11:34:32 jca Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	npapi vte-based terminal for web browsers
 

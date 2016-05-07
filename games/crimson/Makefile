@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.26 2014/07/12 12:06:49 kirby Exp $
 
-BROKEN=		needs work on bitrig
 
 BROKEN-arm=	mktileset buggy, loops at high CPU use
 

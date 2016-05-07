@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.20 2015/03/15 19:54:38 jasper Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		debugger for use with MSP 430 MCUs
 

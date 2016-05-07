@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2016/01/11 23:41:34 espie Exp $
 
-BROKEN =		needs work on bitrig
 
 COMMENT =		n64 emulator video plugin
 REVISION =		3

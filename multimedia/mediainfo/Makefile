@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.5 2016/01/11 16:22:12 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	display technical and tag data for video and audio files
 

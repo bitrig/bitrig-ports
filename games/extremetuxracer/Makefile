@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.10 2015/05/28 10:17:23 pascal Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		downhill racing game
 BROKEN-alpha =		cc1plus: error: unrecognized command line option '-std=c++11'

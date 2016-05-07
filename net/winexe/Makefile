@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.8 2016/03/06 12:17:40 ajacoutot Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	remotely execute programs on a Windows host
 

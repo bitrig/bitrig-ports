@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.2 2013/03/11 11:41:28 espie Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	fetch ssh AuthorizedKeys from LDAP
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.21 2016/03/05 12:58:20 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT-main=	SSH and telnet client
 COMMENT-gui=	PuTTY GUI clients

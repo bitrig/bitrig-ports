@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.5 2015/07/17 21:46:11 jasper Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		Mac OS-X style lightweight application launcher
 

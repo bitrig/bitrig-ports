@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.21 2016/03/11 20:28:34 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	two-dimensional molecule drawing program
 

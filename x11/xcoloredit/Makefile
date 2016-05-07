@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.25 2013/10/11 21:21:03 naddy Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	find color values by graphical color mixing
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.23 2015/04/21 18:51:25 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	icecast source for streaming Ogg Vorbis
 

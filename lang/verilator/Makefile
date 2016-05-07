@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.7 2014/05/20 19:36:27 jasper Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	very fast free Verilog HDL simulator
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2013/06/11 22:09:45 bcallah Exp $
 
-BROKEN =	needs work on bitrig
 
 COMMENT =	small and simple window manager of novel design
 DISTNAME =	windowlab-1.40

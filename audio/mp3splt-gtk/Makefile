@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.20 2015/11/11 00:13:48 ajacoutot Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	graphical mp3/ogg file splitter
 

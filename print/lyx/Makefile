@@ -1,7 +1,6 @@
 # $OpenBSD: Makefile,v 1.73 2015/09/01 14:37:50 landry Exp $
 
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	graphical frontend for LaTeX (nearly WYSIWYG)
 

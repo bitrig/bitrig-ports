@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.17 2016/03/11 20:28:30 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 ONLY_FOR_ARCHS=	${GCC4_ARCHS}
 

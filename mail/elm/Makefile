@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.27 2016/03/16 20:44:32 naddy Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	once-popular mail user agent
 

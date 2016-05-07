@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.21 2015/06/05 08:11:53 bentley Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	binary-to-text file converter
 

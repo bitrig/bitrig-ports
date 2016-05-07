@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.29 2015/07/18 21:07:40 jeremy Exp $
 
-BROKEN=			needs work on bitrig
 
 COMMENT=		JSON implementation for Ruby
 

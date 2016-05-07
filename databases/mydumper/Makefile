@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2016/03/03 10:01:09 giovanni Exp $$
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	utility for quick MySQL dumping
 

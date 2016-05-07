@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.21 2015/03/27 08:46:20 ajacoutot Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT-main=		free UML builder with extensions
 COMMENT-docs=		bouml documentation

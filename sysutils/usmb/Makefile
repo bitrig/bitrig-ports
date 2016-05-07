@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.4 2015/12/03 21:24:32 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	mount SMB shares from userland via FUSE
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2016/01/14 20:00:15 bentley Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		BMP/ICO decoding library
 

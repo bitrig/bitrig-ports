@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.48 2015/10/30 12:59:16 sthen Exp $
 
-BROKEN= 	needs work on bitrig.
 
 ONLY_FOR_ARCHS= ${APM_ARCHS}
 

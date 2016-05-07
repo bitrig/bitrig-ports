@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.33 2014/07/11 16:17:37 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	GNU Problem Report Management System
 

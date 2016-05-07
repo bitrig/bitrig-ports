@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.18 2016/03/16 08:56:02 sthen Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	web frontend for git repositories
 

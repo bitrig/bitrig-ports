@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.25 2015/12/03 21:24:29 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	general multi-lingual speech synthesis system
 V=		1.95

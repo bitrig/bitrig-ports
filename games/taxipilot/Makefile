@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.32 2015/05/05 17:00:17 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	silly little game based on Spacetaxi for the C64
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.30 2016/03/11 20:28:33 naddy Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		table/matrix widget extension to Tcl/Tk
 

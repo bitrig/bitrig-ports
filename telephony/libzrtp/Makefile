@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.6 2015/10/01 20:13:39 czarkoff Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		ZRTP library
 

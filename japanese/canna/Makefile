@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.38 2015/03/19 20:25:26 naddy Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT-main= 	canna (kana-kanji converter) libraries
 COMMENT-dict=	canna (kana-kanji converter) dictionaries

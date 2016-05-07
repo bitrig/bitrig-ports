@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.26 2016/03/18 17:40:09 naddy Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	slide rule component of X11R3's xcalc
 #'

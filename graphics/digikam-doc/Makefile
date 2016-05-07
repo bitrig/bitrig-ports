@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.16 2016/03/19 22:48:27 naddy Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		documentation for digikam
 CATEGORIES=		graphics x11 x11/kde

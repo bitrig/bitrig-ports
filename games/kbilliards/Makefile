@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.32 2016/01/17 17:29:08 sthen Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT= 		billiard game
 CATEGORIES=		x11 x11/kde games

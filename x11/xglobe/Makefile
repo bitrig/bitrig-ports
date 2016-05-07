@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.72 2015/11/24 09:11:07 jasper Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	display the Earth on X11
 

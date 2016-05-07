@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.11 2016/03/16 19:04:08 naddy Exp $
 
-BROKEN =		needs work on bitrig
 
 COMMENT =		geometry viewer for OOGL file formats
 

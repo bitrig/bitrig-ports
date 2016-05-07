@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.12 2015/05/28 10:17:25 pascal Exp $
 
-BROKEN= 	needs work on bitrig.
 
 BROKEN-sparc64=	gcj blows during build
 COMMENT=	pdf swiss army knife

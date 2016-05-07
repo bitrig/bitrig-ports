@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.11 2015/11/19 15:01:47 jasper Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		module to access shadow passwords
 

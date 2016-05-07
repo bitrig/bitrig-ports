@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.80 2015/08/17 20:04:17 sthen Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT-main = 		K Desktop Environment, network applications
 COMMENT-kopsounds =	notification sounds for Kopete

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.25 2016/01/06 20:02:19 jasper Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		fractal program with GTK interface
 GH_ACCOUNT=		oskusalerma

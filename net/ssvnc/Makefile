@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.30 2016/03/11 23:03:21 naddy Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT-gui =		enhanced TightVNC client GUI and wrappers
 COMMENT-main =		enhanced TightVNC client

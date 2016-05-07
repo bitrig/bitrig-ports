@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.18 2015/01/22 21:03:02 landry Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	streaming source client that uses external en-/decoders
 

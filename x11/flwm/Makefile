@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.32 2015/06/28 13:36:09 bcallah Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	fast-light window manager
 

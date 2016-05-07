@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.16 2015/10/10 08:32:04 kirby Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		library for processing panoramic images
 DISTNAME =		libpano13-2.9.19

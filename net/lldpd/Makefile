@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.25 2016/03/20 18:00:05 sthen Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	LLDP (802.1ab)/CDP/EDP/SONMP/FDP daemon and SNMP subagent
 

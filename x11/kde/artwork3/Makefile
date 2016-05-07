@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.75 2015/08/17 20:04:16 sthen Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT-main = 		K Desktop Environment, additional artwork
 COMMENT-emoticons =	KDE emoticons

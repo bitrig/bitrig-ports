@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.8 2015/04/21 18:24:23 sthen Exp $
 
-BROKEN = 	needs work on bitrig
 
 BROKEN-hppa =	ICE/double-free/cc1(30516) in malloc(): error: recursive call 
 COMMENT=	SWF manipulation and generation utilities

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.5 2015/06/14 07:30:48 feinerer Exp $
 
-BROKEN=			needs work on bitrig
 
 COMMENT =		computing the convex hull
 

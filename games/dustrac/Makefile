@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.6 2015/12/24 12:52:56 bentley Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		traditional top-down car racing game
 

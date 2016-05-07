@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.13 2015/06/18 07:14:22 jasper Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	Java program analyzer and checker
 

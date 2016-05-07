@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.11 2015/05/05 17:00:16 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	small utility to control XMMS from the command line
 

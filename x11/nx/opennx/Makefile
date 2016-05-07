@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.37 2015/10/30 12:59:18 sthen Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		OSS replacement for the Nomachine nxclient
 

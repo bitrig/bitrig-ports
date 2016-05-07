@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.44 2015/10/30 12:47:39 sthen Exp $
 
-BROKEN =		needs work on bitrig
 
 COMMENT-main =		Quake/QuakeWorld client
 COMMENT-libs =		Quake common libs

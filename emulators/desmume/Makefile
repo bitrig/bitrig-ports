@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.12 2016/01/11 09:35:44 ajacoutot Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	Nintendo DS emulator
 

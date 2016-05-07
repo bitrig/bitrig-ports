@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.8 2016/01/11 09:35:45 ajacoutot Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		n64 emulator signal co-processor plugin
 REVISION =		3

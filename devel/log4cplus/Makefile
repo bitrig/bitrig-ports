@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.7 2016/01/28 12:29:54 sthen Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		logging API for C++
 

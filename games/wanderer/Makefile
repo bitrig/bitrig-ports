@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.11 2015/02/17 19:47:01 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	Rogue like adventure game
 

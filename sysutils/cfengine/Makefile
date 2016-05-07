@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.54 2016/01/22 11:38:23 sthen Exp $
 
-BROKEN = 	needs work on bitrig.
 
 COMMENT =	GNU system administration tool for networks
 

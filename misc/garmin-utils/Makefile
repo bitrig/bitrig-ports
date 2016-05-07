@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.18 2013/03/11 11:23:57 espie Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	Garmin GPS upload/download utilities
 

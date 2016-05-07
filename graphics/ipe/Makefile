@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.7 2015/10/08 12:02:03 jasper Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		extensible drawing editor
 

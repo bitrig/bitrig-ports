@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.36 2016/03/19 22:48:27 naddy Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		kde image database
 

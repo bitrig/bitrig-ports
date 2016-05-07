@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.8 2015/05/01 16:51:25 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	program for reading values from 1-wire devices
 

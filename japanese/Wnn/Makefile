@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.78 2016/03/11 16:06:01 naddy Exp $
 
-BROKEN =		needs work on bitrig
 
 COMMENT-main = 		Japanese input method
 COMMENT-dict =		dictionaries for Japanese Wnn

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.48 2015/06/29 14:46:56 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	window manager, continuation of the Bowman NeXTSTEP clone
 

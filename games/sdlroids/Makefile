@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.19 2015/02/16 22:57:08 naddy Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	essentially an Asteroids clone
 

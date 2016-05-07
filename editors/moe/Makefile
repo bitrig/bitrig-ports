@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.2 2015/05/15 02:33:26 bcallah Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	powerful and user-friendly console text editor
 DISTNAME =	moe-1.7

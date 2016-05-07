@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.17 2015/04/21 18:24:22 sthen Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		DICOM toolkit
 

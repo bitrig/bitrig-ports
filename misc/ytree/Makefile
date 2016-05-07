@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.18 2015/07/19 01:32:46 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	DOS-XTREE(tm) look-a-like file manager
 

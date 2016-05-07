@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.4 2015/05/28 10:17:24 pascal Exp $
 
-BROKEN = 	needs work on bitrig
 
 CATEGORIES =	graphics
 COMMENT =	KDE image effects

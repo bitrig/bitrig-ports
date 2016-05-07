@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.3 2015/11/24 09:11:03 jasper Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	tool for programming Wouxun transcievers
 

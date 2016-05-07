@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.28 2015/09/21 14:35:23 jasper Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	GNU version of Shogi
 

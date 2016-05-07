@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.36 2015/08/21 19:17:10 sthen Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	X11 animation player with support for lots of formats
 

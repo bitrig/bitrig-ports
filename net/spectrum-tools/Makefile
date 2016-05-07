@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.19 2013/10/10 02:08:24 brad Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT-main =	graphical tools for the MetaGeek Wi-spy spectrum analyser
 COMMENT-utils =	tools for the MetaGeek Wi-spy spectrum analyser

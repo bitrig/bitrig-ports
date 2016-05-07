@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.11 2016/01/17 23:27:17 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	soundcard-based software modem for Amateur Radio use
 

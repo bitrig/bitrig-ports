@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.14 2016/03/08 11:43:31 jca Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		library to compress the standard X protocol
 

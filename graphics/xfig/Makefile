@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.52 2016/03/05 17:41:42 sthen Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	CAD drawing program for X11
 

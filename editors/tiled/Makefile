@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.6 2016/03/07 12:37:28 zhuk Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		tile map editor
 

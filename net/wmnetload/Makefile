@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.13 2015/12/07 14:58:54 jasper Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		wm-dockapp; simple network interface monitoring tool
 

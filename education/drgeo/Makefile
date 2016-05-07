@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.36 2015/08/12 22:27:32 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	interactive geometry program
 

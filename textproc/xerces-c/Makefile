@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2015/05/08 09:08:44 espie Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	c++ validating XML parser
 

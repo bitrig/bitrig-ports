@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.19 2016/01/20 14:05:12 edd Exp $
 
-BROKEN = 		needs work on bitrig
 
 ONLY_FOR_ARCHS =	amd64
 

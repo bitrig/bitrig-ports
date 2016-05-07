@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.19 2016/02/29 23:45:32 sthen Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		manage and configure devices that support IPMI
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.4 2016/01/29 11:23:27 bentley Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		simple utilities for manipulating HTML and XML files
 

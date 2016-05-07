@@ -3,7 +3,6 @@
 BROKEN-hppa =	ICE on dgn-shoals.cc:638
 BROKEN-arm=	tilegen.elf loops burning cpu
 
-BROKEN =	needs work on bitrig
 
 COMMENT = 	dungeon crawl stone soup
 CATEGORIES = 	games

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.4 2015/09/28 16:52:49 jca Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	library of general purpose APIs
 BROKEN-hppa=	missing atomic ops

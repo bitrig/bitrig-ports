@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.45 2015/07/15 23:17:11 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	latency logging and graphing system
 

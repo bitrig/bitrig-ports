@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.18 2015/10/05 16:29:02 sthen Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		link advertisement (LLDP/CDP etc) daemon
 

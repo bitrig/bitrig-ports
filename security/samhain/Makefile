@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.23 2015/05/17 16:04:10 robert Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT-main=		Samhain Intrusion Detection System - documentation
 COMMENT-client=		Samhain Intrusion Detection System - client

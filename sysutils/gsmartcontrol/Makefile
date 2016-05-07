@@ -3,7 +3,6 @@
 # XXX check if still needed at next update
 CXXFLAGS +=		-std=c++11
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	graphical hard drive inspection tool (smartctl front-end)
 

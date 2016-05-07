@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.12 2015/01/22 13:11:44 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	lightweight PDF document viewer with vi bindings
 

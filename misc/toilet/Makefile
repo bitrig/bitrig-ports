@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2014/01/05 18:43:25 bcallah Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	banner art generator with Unicode font and color support
 DISTNAME =	toilet-0.3

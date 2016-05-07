@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.32 2015/08/25 14:03:20 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	filemanager for X Window
 

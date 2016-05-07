@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.23 2015/12/03 21:24:31 sthen Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		reminder/task program aimed at developers
 

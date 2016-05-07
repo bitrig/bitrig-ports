@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.12 2015/05/22 11:31:17 ajacoutot Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	extensible C++ library for XMPP clients and components
 

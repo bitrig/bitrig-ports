@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.3 2015/04/02 14:21:13 jasper Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		fast Mercurial log navigator
 

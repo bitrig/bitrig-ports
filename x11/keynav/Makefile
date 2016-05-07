@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.10 2016/01/07 19:03:19 jasper Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	turns your keyboard into a fast pointer mover
 

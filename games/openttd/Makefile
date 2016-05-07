@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.46 2016/01/11 09:35:44 ajacoutot Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	open source clone of the game Transport Tycoon Deluxe
 

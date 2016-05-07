@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.15 2016/03/13 21:35:36 sebastia Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	CAD program for designing model railroad layouts
 

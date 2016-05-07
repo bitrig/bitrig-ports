@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.68 2015/06/05 12:20:38 ajacoutot Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	Data Display Debugger, graphical front-end for GDB, etc
 

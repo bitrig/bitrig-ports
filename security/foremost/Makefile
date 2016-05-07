@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.4 2015/05/11 16:24:38 nigel Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		forensic data recovery program
 

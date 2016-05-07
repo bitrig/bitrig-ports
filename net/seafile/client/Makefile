@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2015/04/06 20:59:47 kirby Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		seafile client
 

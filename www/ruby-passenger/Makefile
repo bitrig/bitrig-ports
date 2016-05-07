@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.46 2016/03/20 17:59:21 naddy Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		ruby web application server/nginx module
 BROKEN-alpha =		.got subsegment exceeds 64K (size 83312)

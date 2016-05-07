@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.30 2015/09/12 14:15:32 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	puzzle game for KDE
 

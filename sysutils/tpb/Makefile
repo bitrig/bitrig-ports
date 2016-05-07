@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.21 2015/06/29 15:39:44 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 # requires nvram(4) device
 ONLY_FOR_ARCHS=	amd64 i386

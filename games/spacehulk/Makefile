@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.14 2015/05/05 17:00:17 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	total conversion of the Space Hulk board game
 

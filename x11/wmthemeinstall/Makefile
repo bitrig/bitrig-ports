@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.25 2015/05/05 17:00:21 sthen Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		neat theme manager for Window Maker
 

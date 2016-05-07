@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.30 2015/08/19 20:34:33 sthen Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT= 		kde front end for ogle
 CATEGORIES=		x11 x11/kde

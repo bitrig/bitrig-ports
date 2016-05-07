@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.2 2015/07/20 03:13:47 jca Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	passive OS fingerprinting tool
 

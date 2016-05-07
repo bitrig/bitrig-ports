@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.3 2014/03/24 16:47:13 espie Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT = 	bootstrap compiler for the AVR32 toolchain
 V = 		4.4.7

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.20 2015/08/11 21:43:03 jasper Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	update LDAP entries with a text editor
 

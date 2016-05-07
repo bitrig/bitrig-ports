@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.40 2016/03/21 08:17:33 benoit Exp $
 
-BROKEN =	needs work on bitrig
 
 COMMENT =	Victor Shoup's Number Theory Library
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.13 2015/11/11 10:43:59 benoit Exp $
 
-BROKEN =		needs work on bitrig
 
 COMMENT =		library to manipulate units of physical quantities
 

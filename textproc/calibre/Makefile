@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.50 2016/02/28 22:26:53 sthen Exp $
 
-BROKEN = 		needs work on bitrig.
 
 COMMENT =		ebook management application
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.2 2015/11/15 11:55:59 jca Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	toolset for internet routing registries
 

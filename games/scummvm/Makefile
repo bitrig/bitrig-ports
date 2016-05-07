@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.64 2016/03/17 00:40:54 jsg Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	graphical adventure game interpreter
 V=		1.8.0

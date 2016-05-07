@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.19 2014/01/31 09:34:22 jca Exp $
 
-BROKEN = 		needs work on bitrig
 
 ONLY_FOR_ARCHS =	amd64 i386 macppc
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.39 2015/12/30 19:33:16 kili Exp $
 
-BROKEN =	needs work on bitrig
 COMMENT-main =	liberalised reimplementation of cpp in Haskell
 COMMENT-lib =	cpphs library
 

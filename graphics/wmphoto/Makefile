@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.22 2015/01/22 17:47:51 naddy Exp $
 
-BROKEN= 		needs work on bitrig
 
 PORTROACH=		limit:^0\.3a
 

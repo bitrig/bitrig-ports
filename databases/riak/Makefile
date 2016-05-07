@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.25 2015/08/29 12:41:45 sthen Exp $
 
-BROKEN= 			needs work on bitrig
 
 COMMENT=			distributed data store
 DISTNAME=			riak-2.0.4

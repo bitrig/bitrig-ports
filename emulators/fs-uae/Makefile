@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.16 2015/03/27 08:11:27 ajacoutot Exp $
 
-BROKEN = 		needs work on bitrig
 
 BROKEN-powerpc =	error: invalid 'asm': invalid %k value
 BROKEN-alpha =		error: invalid 'asm': invalid %xn code

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2016/03/11 19:59:13 naddy Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	string library designed for network communication
 

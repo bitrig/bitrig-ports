@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2015/06/25 07:37:00 jasper Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		YAML parser and emitter in C++
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.28 2015/05/05 17:00:18 sthen Exp $
 
-BROKEN =	needs work on bitrig
 
 COMMENT =	Libedit interface to Tcl/Tk interpreters
 

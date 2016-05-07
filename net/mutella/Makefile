@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.12 2015/04/05 23:11:15 schwarze Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		gnutella client with an easy to use interface
 

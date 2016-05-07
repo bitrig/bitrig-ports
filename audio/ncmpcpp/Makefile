@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.47 2016/01/25 19:19:53 jasper Exp $
 
-BROKEN = 		needs work on bitrig
 
 BROKEN-alpha =		error: looser throw specifier for 'virtual OutOfBounds::~OutOfBounds()
 BROKEN-hppa =		bindings.h:85:4: error: type 'Binding' is not a direct base of 'Binding' #'

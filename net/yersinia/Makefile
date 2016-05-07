@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2015/07/26 19:19:33 steven Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	framework for analysis of layer 2 network protocols
 

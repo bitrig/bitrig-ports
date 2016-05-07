@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.8 2016/03/05 16:04:06 pascal Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		CPU, RAM memory, and load monitor for use with tmux(1)
 

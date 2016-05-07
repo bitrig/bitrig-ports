@@ -2,7 +2,6 @@
 
 PORTROACH=	limit:[0-9]\.[0-9]\.[0-9][0-9]$
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	graphical circuit design and simulation tool
 BROKEN-hppa =	OOM on hicumL2V2p23.core.o

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.31 2016/03/16 18:36:37 naddy Exp $
 
-BROKEN=			needs work on bitrig
 
 COMMENT=		simple to use text editor for X11
 

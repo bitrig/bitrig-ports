@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.11 2016/01/11 09:35:45 ajacoutot Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		n64 emulator opengl video plugin
 REVISION =		2

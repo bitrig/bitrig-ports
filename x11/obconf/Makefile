@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.34 2016/01/24 20:09:43 jasper Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	configuration utility for openbox
 

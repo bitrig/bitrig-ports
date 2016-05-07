@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.10 2013/03/11 11:46:19 espie Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	stylus character recognition tool for X11
 

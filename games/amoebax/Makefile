@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.10 2015/11/05 19:08:58 jca Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	cute and addictive action-puzzle game
 

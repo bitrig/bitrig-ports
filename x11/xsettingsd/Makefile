@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.5 2016/01/26 13:05:27 sthen Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	lightweight XSETTINGS daemon
 

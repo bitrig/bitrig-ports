@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.73 2015/07/20 22:00:54 ajacoutot Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		send/receive faxes and share modems
 DISTNAME=		hylafax-6.0.6

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.52 2015/11/04 21:43:40 jturner Exp $
 
-BROKEN =		needs work on bitrig
 
 COMMENT =		simple distributed software configuration management
 

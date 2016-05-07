@@ -3,7 +3,6 @@
 # XXX check if still needed at next update
 CXXFLAGS +=		-std=c++11
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		media download tool
 

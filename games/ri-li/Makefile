@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.11 2016/03/11 20:28:25 naddy Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	drive a toy wood engine
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.40 2015/05/09 09:00:43 jasper Exp $
 
-BROKEN=			needs work on bitrig
 
 COMMENT=		terminal emulator for X
 

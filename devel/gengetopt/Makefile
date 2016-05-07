@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.1.1.1 2014/11/13 20:39:46 bcallah Exp $
 
-BROKEN =	needs work on bitrig
 
 V =		2.22.6
 COMMENT =	command line parser for c programs

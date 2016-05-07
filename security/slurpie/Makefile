@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2015/05/17 11:42:18 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	distributed passwd file cracker
 

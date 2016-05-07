@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.2 2015/10/30 12:47:39 sthen Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	WMS viewer built on top of spatialite and rasterlite2
 DISTNAME =	librewms-1.0.0

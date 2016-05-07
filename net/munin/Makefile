@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.52 2016/03/12 12:13:35 sthen Exp $
 
-BROKEN = 	needs work on bitrig
 
 PORTROACH = 	limitw:1,even
 

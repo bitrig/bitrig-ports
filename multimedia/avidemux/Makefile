@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.46 2016/03/11 20:28:28 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	free video editor
 

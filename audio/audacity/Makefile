@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.43 2016/03/11 20:28:21 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	free audio editor
 

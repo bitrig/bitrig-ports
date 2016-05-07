@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.18 2015/04/21 18:33:49 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	powerful and simple GTK editor
 

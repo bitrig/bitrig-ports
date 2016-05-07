@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.19 2015/03/21 19:43:35 jca Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	window manager improved - key driven window manager
 

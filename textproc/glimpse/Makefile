@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.26 2016/03/18 16:41:53 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	text search engine
 

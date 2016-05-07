@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.14 2013/03/11 11:35:49 espie Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		network pipe meter
 

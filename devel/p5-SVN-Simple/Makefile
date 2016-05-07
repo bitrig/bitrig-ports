@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.15 2016/03/20 19:56:33 naddy Exp $
 
-BROKEN =	needs work on bitrig
 
 COMMENT =	simple interface to subversion's editor interface#'
 

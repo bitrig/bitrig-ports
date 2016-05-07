@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.16 2016/03/01 20:36:40 jca Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	library to adjust for photographic lens characteristics
 DISTNAME=	lensfun-0.2.7

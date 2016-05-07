@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.59 2016/03/05 16:04:07 pascal Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	GNUstep base library
 

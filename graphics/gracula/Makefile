@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.17 2015/01/21 06:13:48 bentley Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	graphic counter language compiler/interpreter
 

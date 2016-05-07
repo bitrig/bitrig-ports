@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.15 2016/03/18 16:06:58 mmcc Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	Cisco AAA protocol daemon
 

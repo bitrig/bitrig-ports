@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.26 2015/02/16 22:57:14 naddy Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	aewm++ based pretty themable window manager
 

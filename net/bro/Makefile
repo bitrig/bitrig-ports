@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.14 2016/03/01 00:07:17 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	highly flexible sniffer/NIDS
 

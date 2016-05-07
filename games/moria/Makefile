@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.18 2015/10/27 19:00:53 kirby Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	The Dungeons of Moria
 

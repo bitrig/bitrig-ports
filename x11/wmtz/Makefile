@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.19 2013/10/11 23:51:55 naddy Exp $
 
-BROKEN=			needs work on bitrig
 
 COMMENT=		wm-dockapp; displays the time in different time zones
 

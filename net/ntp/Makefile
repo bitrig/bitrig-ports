@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.68 2016/02/04 19:55:13 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	Network Time Protocol reference implementation
 

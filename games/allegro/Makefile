@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.13 2016/03/16 21:19:38 naddy Exp $
 
-BROKEN =	needs work on bitrig
 BROKEN-hppa =	./src/x/xdga2s.s:25: Error: symbol .text is already defined
 
 COMMENT =	game programming library for C/C++ developers

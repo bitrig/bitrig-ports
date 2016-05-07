@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.8 2013/03/10 22:55:06 espie Exp $
 
-BROKEN=			needs work on bitrig
 
 COMMENT=		optimized mpeg 1/2 layer 2 audio encoder
 

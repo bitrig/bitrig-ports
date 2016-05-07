@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.6 2015/10/30 12:47:40 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	silly suite to access the flash media stream properties
 

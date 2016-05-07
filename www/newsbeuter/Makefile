@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.6 2015/10/05 19:46:22 jca Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		open-source RSS/Atom feed reader for text terminals
 DISTNAME =		newsbeuter-2.7

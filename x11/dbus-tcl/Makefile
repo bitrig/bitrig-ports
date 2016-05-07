@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.8 2016/03/18 23:12:20 naddy Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	dbus bindings for Tcl
 

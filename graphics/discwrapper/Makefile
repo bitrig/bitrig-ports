@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.6 2013/03/11 11:10:52 espie Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	disc cover designer
 

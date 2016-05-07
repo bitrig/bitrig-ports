@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.6 2015/03/16 18:07:50 naddy Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		weighted finite-state transducers library
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.26 2016/03/16 16:46:32 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	C-style arbitrary precision calculator
 

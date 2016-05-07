@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.11 2015/05/28 10:17:23 pascal Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT-main =		squad-based tactical strategy game
 COMMENT-editor = 	UFO:AI map editor

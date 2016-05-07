@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.6 2016/03/11 20:28:23 naddy Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	Tcl Database Connectivity
 

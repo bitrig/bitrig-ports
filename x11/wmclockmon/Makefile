@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.14 2015/04/21 18:13:10 sthen Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		WindowMaker dock.app clock
 BROKEN-sparc64 =	ICE in change_address_1, at emit-rtl.c:1784

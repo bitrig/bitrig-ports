@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.8 2015/11/05 19:08:58 jca Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	combine pipes to lead water from the house to the tank
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.12 2013/10/11 23:49:52 naddy Exp $
 
-BROKEN=		needs work on bitrig
 
 COMMENT=	Convert PNG images to Windows .ico files
 

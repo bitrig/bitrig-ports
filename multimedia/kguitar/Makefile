@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.15 2016/01/17 17:29:10 sthen Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		guitar tab editor
 

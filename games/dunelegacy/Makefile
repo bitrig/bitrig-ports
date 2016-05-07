@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.2 2014/08/18 09:30:52 edd Exp $
 
-BROKEN =		needs work on bitrig
 
 COMMENT =		improved opensource version of Dune 2
 

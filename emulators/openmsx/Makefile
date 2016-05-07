@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.16 2016/01/11 09:35:44 ajacoutot Exp $
 
-BROKEN = 	needs work on bitrig
 
 BROKEN-powerpc =CPUCore.cc:2347: error: insn does not satisfy its constraints
 BROKEN-hppa =	OOM when building src/cpu/CPUCore.cc

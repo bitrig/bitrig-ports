@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.9 2015/06/10 13:26:43 jasper Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	distributed version control system
 

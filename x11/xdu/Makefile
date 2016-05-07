@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.29 2015/04/06 16:58:43 jca Exp $
 
-BROKEN=			needs work on bitrig
 
 COMMENT=		graphic disk usage viewer
 

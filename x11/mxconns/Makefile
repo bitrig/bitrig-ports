@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.27 2015/06/27 16:54:22 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=		interactive X11 proxy with selective X request replacement
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.18 2016/03/07 13:58:28 zhuk Exp $
 
-BROKEN= 		needs work on bitrig
 
 COMMENT=		automatically create timetables
 

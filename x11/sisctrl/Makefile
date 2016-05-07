@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.17 2015/04/21 18:13:09 sthen Exp $
 
-BROKEN=			needs work on bitrig
 
 COMMENT=		display control panel for X.org SiS driver
 

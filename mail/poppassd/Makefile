@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.29 2015/06/05 08:11:53 bentley Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	server: allow users to change password from within Eudora
 

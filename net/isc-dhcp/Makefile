@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.40 2016/01/13 09:33:02 sthen Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT-main=	ISC DHCP Server
 COMMENT-client=	ISC DHCP Client

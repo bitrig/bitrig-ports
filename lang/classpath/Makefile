@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.44 2015/05/28 10:17:24 pascal Exp $
 
-BROKEN=		needs work on bitrig
 
 # uses gcj which is only supported on select archs
 ONLY_FOR_ARCHS=	amd64 i386 sparc64

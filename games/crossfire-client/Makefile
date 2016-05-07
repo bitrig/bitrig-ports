@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.36 2015/11/06 13:09:23 jasper Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	graphical networked AD&D style game
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.27 2016/03/18 23:12:17 naddy Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	portable DjVu viewer and browser plugin
 

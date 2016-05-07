@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.16 2015/08/23 04:38:23 semarie Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	proxy IRC client with ICB server
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.8 2016/03/11 20:28:24 naddy Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		C++ application-level logging library
 

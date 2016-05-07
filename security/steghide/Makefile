@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.8 2014/10/22 13:39:38 jasper Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		software able to hide data in various kind of files
 

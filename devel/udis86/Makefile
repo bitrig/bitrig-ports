@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.6 2016/03/11 19:59:14 naddy Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	easy-to-use minimalistic disassembler library
 

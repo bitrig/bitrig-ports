@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.5 2013/12/12 14:54:29 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	Brother P-touch CUPS driver
 

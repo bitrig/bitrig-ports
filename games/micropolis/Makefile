@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.17 2013/03/11 11:07:39 espie Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	city-building simulation
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.18 2016/01/17 17:29:09 sthen Exp $
 
-BROKEN=			needs work on bitrig
 
 COMMENT=		library for powerful image loading capabilities
 

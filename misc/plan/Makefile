@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.30 2015/05/25 07:54:27 jasper Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	X11/Motif schedule planner with calendar
 

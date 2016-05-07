@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.38 2015/05/01 06:15:46 ajacoutot Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	write audio/data CD-Rs in disk-at-once mode
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.10 2016/03/17 20:56:52 pascal Exp $
 
-BROKEN = 		needs work on bitrig
 
 COMMENT =		Internet Citizens Band Server
 

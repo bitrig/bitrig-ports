@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.12 2016/03/11 20:28:23 naddy Exp $
 
-BROKEN = 	needs work on bitrig
 
 BROKEN-macppc =	make: don't know how to make all
 

@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.15 2016/03/11 19:59:15 naddy Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	elliptic curve method (ECM) factorization library
 

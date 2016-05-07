@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.22 2015/03/27 08:11:28 ajacoutot Exp $
 
-BROKEN = 	needs work on bitrig
 
 COMMENT =	simple and fast image viewer for X11
 

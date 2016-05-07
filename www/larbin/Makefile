@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.10 2013/03/11 11:44:42 espie Exp $
 
-BROKEN= 	needs work on bitrig
 
 COMMENT=	little and fast Web crawler
 

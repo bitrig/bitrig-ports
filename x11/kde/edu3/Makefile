@@ -1,6 +1,5 @@
 # $OpenBSD: Makefile,v 1.74 2016/01/17 17:29:11 sthen Exp $
 
-BROKEN = 	needs work on bitrig
 
 BROKEN-hppa =	kstars/kstars/tools/scriptbuilder.cpp:103: internal compiler error: Segmentation fault
 COMMENT =		K Desktop Environment, edutainment
