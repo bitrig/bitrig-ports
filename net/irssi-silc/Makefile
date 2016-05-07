@@ -21,11 +21,12 @@ BUILD_DEPENDS+= devel/yasm
 .endif
 RUN_DEPENDS=	net/irssi>=0.8.15
 
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c c++
+
 MAKE_FLAGS=	libfe_common_silc_la_LDFLAGS=-avoid-version \
 		libsilc_core_la_LDFLAGS=-avoid-version
-
-CC=	gcc
-CXX=	g++
 
 LIBTOOL_FLAGS+=	  --tag=disable-static
 CONFIGURE_STYLE=  autoconf
