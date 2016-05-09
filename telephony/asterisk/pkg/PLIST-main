@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST-main,v 1.59 2016/01/16 14:21:53 sthen Exp $
+@comment $OpenBSD: PLIST-main,v 1.61 2016/04/15 11:35:12 sthen Exp $
 @conflict asterisk-sounds-<=1.2.1p2
 @conflict asterisk-curl-*
 @conflict asterisk-fax-*
@@ -151,6 +151,8 @@ include/asterisk/pval.h
 include/asterisk/res_fax.h
 include/asterisk/res_hep.h
 include/asterisk/res_mwi_external.h
+include/asterisk/res_odbc_transaction.h
+include/asterisk/res_pjproject.h
 include/asterisk/res_pjsip.h
 include/asterisk/res_pjsip_body_generator_types.h
 include/asterisk/res_pjsip_cli.h
@@ -440,6 +442,7 @@ lib/asterisk/modules/res_musiconhold.so
 lib/asterisk/modules/res_mutestream.so
 lib/asterisk/modules/res_parking.so
 lib/asterisk/modules/res_phoneprov.so
+lib/asterisk/modules/res_pjproject.so
 lib/asterisk/modules/res_pjsip.so
 lib/asterisk/modules/res_pjsip_acl.so
 lib/asterisk/modules/res_pjsip_authenticator_digest.so
@@ -454,8 +457,7 @@ lib/asterisk/modules/res_pjsip_endpoint_identifier_ip.so
 lib/asterisk/modules/res_pjsip_endpoint_identifier_user.so
 lib/asterisk/modules/res_pjsip_exten_state.so
 lib/asterisk/modules/res_pjsip_header_funcs.so
-lib/asterisk/modules/res_pjsip_keepalive.so
-lib/asterisk/modules/res_pjsip_log_forwarder.so
+lib/asterisk/modules/res_pjsip_history.so
 lib/asterisk/modules/res_pjsip_logger.so
 lib/asterisk/modules/res_pjsip_messaging.so
 lib/asterisk/modules/res_pjsip_multihomed.so
@@ -483,6 +485,7 @@ lib/asterisk/modules/res_pjsip_send_to_voicemail.so
 lib/asterisk/modules/res_pjsip_session.so
 lib/asterisk/modules/res_pjsip_sips_contact.so
 lib/asterisk/modules/res_pjsip_t38.so
+lib/asterisk/modules/res_pjsip_transport_management.so
 lib/asterisk/modules/res_pjsip_transport_websocket.so
 lib/asterisk/modules/res_pjsip_xpidf_body_generator.so
 lib/asterisk/modules/res_realtime.so
@@ -566,6 +569,7 @@ share/asterisk/static-http/astman.js
 share/asterisk/static-http/core-en_US.xml
 share/asterisk/static-http/mantest.html
 share/asterisk/static-http/prototype.js
+share/asterisk/third-party/
 share/doc/asterisk/
 share/doc/asterisk/Asterisk-13-Reference.pdf
 share/doc/asterisk/Asterisk-Admin-Guide.pdf
@@ -671,6 +675,7 @@ share/examples/asterisk/default/osp.conf
 @comment share/examples/asterisk/default/oss.conf
 share/examples/asterisk/default/phone.conf
 share/examples/asterisk/default/phoneprov.conf
+share/examples/asterisk/default/pjproject.conf
 share/examples/asterisk/default/pjsip.conf
 share/examples/asterisk/default/pjsip_notify.conf
 share/examples/asterisk/default/pjsip_wizard.conf
@@ -704,10 +709,10 @@ share/examples/asterisk/default/users.conf
 share/examples/asterisk/default/voicemail.conf
 @comment share/examples/asterisk/default/vpb.conf
 share/examples/asterisk/default/xmpp.conf
-share/examples/asterisk/openbsd/
-share/examples/asterisk/openbsd/cdr.conf.sample
+share/examples/asterisk/bitrig/
+share/examples/asterisk/bitrig/cdr.conf.sample
 @sample ${SYSCONFDIR}/asterisk/cdr.conf
-share/examples/asterisk/openbsd/extensions.ael.sample
+share/examples/asterisk/bitrig/extensions.ael.sample
 @mode 640
 @owner root
 @group _asterisk
@@ -715,7 +720,7 @@ share/examples/asterisk/openbsd/extensions.ael.sample
 @mode
 @owner
 @group
-share/examples/asterisk/openbsd/extensions.conf.sample
+share/examples/asterisk/bitrig/extensions.conf.sample
 @mode 640
 @owner root
 @group _asterisk
@@ -723,19 +728,19 @@ share/examples/asterisk/openbsd/extensions.conf.sample
 @mode
 @owner
 @group
-share/examples/asterisk/openbsd/logger.conf.sample
+share/examples/asterisk/bitrig/logger.conf.sample
 @sample ${SYSCONFDIR}/asterisk/logger.conf
-share/examples/asterisk/openbsd/modules.conf.sample
+share/examples/asterisk/bitrig/modules.conf.sample
 @sample ${SYSCONFDIR}/asterisk/modules.conf
-share/examples/asterisk/openbsd/musiconhold.conf.sample
+share/examples/asterisk/bitrig/musiconhold.conf.sample
 @sample ${SYSCONFDIR}/asterisk/musiconhold.conf
-share/examples/asterisk/openbsd/sip.conf.sample
+share/examples/asterisk/bitrig/sip.conf.sample
 @mode 640
 @group _asterisk
 @sample ${SYSCONFDIR}/asterisk/sip.conf
 @mode
 @group
-share/examples/asterisk/openbsd/voicemail.conf.sample
+share/examples/asterisk/bitrig/voicemail.conf.sample
 @mode 660
 @owner root
 @group _asterisk
@@ -760,3 +765,7 @@ share/examples/asterisk/openbsd/voicemail.conf.sample
 @owner _asterisk
 @sample /var/spool/asterisk/voicemail/default/
 @sample /var/spool/asterisk/voicemail/default/1234/
+@group
+@owner
+@mode
+@rcscript ${RCDIR}/asterisk

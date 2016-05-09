@@ -1,5 +1,5 @@
---- autoconf/ast_check_raii.m4.orig	Fri May  6 13:00:32 2016
-+++ autoconf/ast_check_raii.m4	Fri May  6 13:01:13 2016
+--- autoconf/ast_check_raii.m4.orig	Mon May  9 13:45:30 2016
++++ autoconf/ast_check_raii.m4	Mon May  9 13:47:23 2016
 @@ -37,7 +37,7 @@ AC_DEFUN([AST_CHECK_RAII], [
  				AST_CLANG_BLOCKS_LIBS=""
  				AST_CLANG_BLOCKS="-Wno-unknown-warning-option -fblocks"

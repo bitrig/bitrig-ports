@@ -1,7 +1,7 @@
-$OpenBSD: patch-Makefile,v 1.37 2015/10/12 22:07:29 sthen Exp $
---- Makefile.orig	Fri Feb  5 14:32:40 2016
-+++ Makefile	Fri May  6 11:57:26 2016
-@@ -128,7 +128,7 @@ ASTTOPDIR:=$(subst $(space),\$(space),$(CURDIR))
+$OpenBSD: patch-Makefile,v 1.38 2016/03/29 23:24:46 sthen Exp $
+--- Makefile.orig	Mon May  9 08:04:34 2016
++++ Makefile	Mon May  9 14:17:03 2016
+@@ -131,7 +131,7 @@ ASTTOPDIR:=$(subst $(space),\$(space),$(CURDIR))
  OVERWRITE=y
  
  # Include debug and macro symbols in the executables (-g) and profiling info (-pg)
@@ -10,7 +10,7 @@ $OpenBSD: patch-Makefile,v 1.37 2015/10/12 22:07:29 sthen Exp $
  
  # Asterisk.conf is located in ASTETCDIR or by using the -C flag
  # when starting Asterisk
-@@ -183,7 +183,9 @@ endif
+@@ -186,7 +186,9 @@ endif
  
  ifeq ($(findstring -save-temps,$(_ASTCFLAGS) $(ASTCFLAGS)),)
    ifeq ($(findstring -pipe,$(_ASTCFLAGS) $(ASTCFLAGS)),)
@@ -20,12 +20,12 @@ $OpenBSD: patch-Makefile,v 1.37 2015/10/12 22:07:29 sthen Exp $
    endif
  endif
  
-@@ -225,7 +227,7 @@ ifeq ($(OSARCH),NetBSD)
+@@ -228,7 +230,7 @@ ifeq ($(OSARCH),NetBSD)
  endif
  
  ifeq ($(OSARCH),OpenBSD)
 -  _ASTCFLAGS+=-pthread -ftrampolines
-+  _ASTCFLAGS+=-pthread 
++  _ASTCFLAGS+=-pthread
  endif
  
  ifeq ($(OSARCH),SunOS)

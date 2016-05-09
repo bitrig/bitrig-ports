@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.228 2016/03/18 21:38:25 naddy Exp $
+# $OpenBSD: Makefile,v 1.233 2016/05/09 16:07:13 sthen Exp $
 
 COMMENT-main=		open source multi-protocol PBX and telephony toolkit
 
-VER=			13.7.2
+VER=			13.9.0
 PORTROACH=		limitw:0,odd
 DISTNAME=		asterisk-${VER:S/beta/-beta/:S/rc/-rc/}
 PKGNAME-main=		asterisk-${VER}
@@ -10,6 +10,8 @@ PKGNAME-main=		asterisk-${VER}
 CATEGORIES=		telephony
 
 HOMEPAGE=		http://www.asterisk.org/
+
+MAINTAINER=		Stuart Henderson <sthen@openbsd.org>
 
 # Mostly GPL v2 (only). "Specific permission is also granted to link
 # Asterisk with OpenSSL and OpenH323 and distribute the resulting binary
@@ -19,17 +21,14 @@ PERMIT_PACKAGE_CDROM=	patent licensing clauses
 PERMIT_PACKAGE_FTP=	Yes
 
 WANTLIB-main += c crypto curl execinfo g7221codec gsm idn iksemel ilbccodec
-WANTLIB-main += jansson m nghttp2 ogg opencore-amrnb opencore-amrwb pj pjlib-util
-WANTLIB-main += pjmedia pjmedia-audiodev pjmedia-codec pjmedia-videodev
-WANTLIB-main += pjnath pjsip pjsip-simple pjsip-ua pjsua pjsua2 portaudio
-WANTLIB-main += pthread resample spandsp speex speexdsp sqlite3 ssl
-WANTLIB-main += c++ c++abi termcap tiff uriparser uuid vorbis vorbisenc
-WANTLIB-main += vorbisfile xml2 xslt z
-WANTLIB-main += ${MODGETTEXT_WANTLIB}
+WANTLIB-main += iconv jansson m nghttp2 ogg opencore-amrnb opencore-amrwb
+WANTLIB-main += pj pjlib-util pjmedia pjmedia-audiodev pjmedia-codec
+WANTLIB-main += pjmedia-videodev pjnath pjsip pjsip-simple pjsip-ua
+WANTLIB-main += pjsua pjsua2 portaudio pthread resample spandsp speex
+WANTLIB-main += speexdsp sqlite3 ssl c++ c++abi termcap tiff uriparser
+WANTLIB-main += uuid vorbis vorbisenc vorbisfile xml2 xslt z
 
 SHARED_LIBS=		asteriskssl 0.0		# 1
-
-MODULES=		devel/gettext
 
 MULTI_PACKAGES=		-main -calendar -http_post -ldap -odbc \
 			-pgsql -snmp -speex -tds
@@ -39,6 +38,7 @@ LIB_DEPENDS-main=	audio/gsm \
 			audio/libogg \
 			audio/libvorbis \
 			audio/portaudio-svn \
+			converters/libiconv \
 			devel/libexecinfo \
 			devel/jansson \
 			graphics/tiff \
@@ -49,19 +49,21 @@ LIB_DEPENDS-main=	audio/gsm \
 			textproc/iksemel \
 			textproc/libxml \
 			textproc/libxslt \
-			www/uriparser \
-			${MODGETTEXT_LIB_DEPENDS}
-RUN_DEPENDS-main=	${MODGETTEXT_RUN_DEPENDS} \
-			telephony/asterisk-sounds/core-sounds/en,gsm>=1.4.25 \
+			www/uriparser
+RUN_DEPENDS-main=	telephony/asterisk-sounds/core-sounds/en,gsm>=1.4.25 \
 			telephony/asterisk-sounds/moh-opsound,wav
-BUILD_DEPENDS=		devel/libblocksruntime \
-			security/libsrtp>=1.4.4 # statically linked
+BUILD_DEPENDS+=		devel/libblocksruntime	# statically linked
+BUILD_DEPENDS+=		security/libsrtp>=1.4.4 # statically linked
 
 MASTER_SITES=	http://downloads.asterisk.org/pub/telephony/asterisk/releases/ \
 		http://downloads.asterisk.org/pub/telephony/asterisk/old-releases/
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
+
+#MODULES +=		gcc4
+#MODGCC4_ARCHS =		*
+#MODGCC4_LANGS =		c c++
 
 USE_GMAKE=		Yes
 
@@ -72,22 +74,19 @@ BUILD_DEPENDS+=		${MODGNU_AUTOCONF_DEPENDS} \
 			${MODGNU_AUTOMAKE_DEPENDS} \
 			devel/libtool,-ltdl # bogus dependencies in menuselect
 
-MODGNU_CONFIG_GUESS_DIRS=	${WRKSRC}/ \
-				${WRKSRC}/menuselect \
-				${WRKSRC}/main/editline
-
 CPPFLAGS+=		-I${X11BASE}/include -I${LOCALBASE}/include
 LDFLAGS+=		-L${X11BASE}/lib -L${LOCALBASE}/lib
 CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}" \
 			CFLAGS="${CFLAGS}" \
 			LDFLAGS="${LDFLAGS}" \
-			LIBS="-lpthread -lc++ -lc++abi" \
+			LIBS="-lpthread -lBlocksRuntime" \
 			ac_cv_path_LDCONFIG=:
 MAKE_FLAGS+=		ASTCFLAGS="${CFLAGS}" \
 			ASTLDFLAGS="${LDFLAGS}" \
 			ASTSSL_SO_VERSION="${LIBasteriskssl_VERSION}" \
 			NOISY_BUILD="Yes" \
 			OPTIMIZE=
+MAKE_ENV+=		LIBS="-lBlocksRuntime"
 
 CONFIGURE_ARGS+=	--localstatedir=/var
 
@@ -144,21 +143,20 @@ CONFIGURE_ARGS+=	--with-imap=no
 
 # calendar
 COMMENT-calendar=	calendar support for Asterisk
-WANTLIB-calendar=	${MODGETTEXT_WANTLIB} crypto expat ical iksemel
+WANTLIB-calendar=	crypto expat ical iconv intl iksemel
 WANTLIB-calendar+=	m neon proxy ssl xml2 z
 
-LIB_DEPENDS-calendar=	net/neon \
-			textproc/libical \
-			${MODGETTEXT_LIB_DEPENDS}
+LIB_DEPENDS-calendar=	devel/gettext \
+			net/neon \
+			textproc/libical
 .if !${BUILD_PACKAGES:M-calendar}
 CONFIGURE_ARGS+=	--with-ical=no
 .endif
 
 # http_post
 COMMENT-http_post=	HTTP POST support for Asterisk
-LIB_DEPENDS-http_post=	mail/gmime ${MODGETTEXT_LIB_DEPENDS}
-WANTLIB-http_post=	gio-2.0 glib-2.0 gmime-2.6 gobject-2.0 \
-			${MODGETTEXT_WANTLIB}
+LIB_DEPENDS-http_post=	devel/gettext mail/gmime
+WANTLIB-http_post=	gio-2.0 glib-2.0 gmime-2.6 gobject-2.0 intl
 .if !${BUILD_PACKAGES:M-http_post}
 CONFIGURE_ARGS+=	--with-gmime=no
 .endif
@@ -240,10 +238,10 @@ post-install:
 		${PREFIX}/share/doc/asterisk
 	${INSTALL_DATA} ${WRKSRC}/doc/*.{pdf,txt,odt} \
 		${PREFIX}/share/doc/asterisk
-	${INSTALL_DATA_DIR} ${EXAMPLEDIR}/openbsd
+	${INSTALL_DATA_DIR} ${EXAMPLEDIR}/bitrig
 .for i in ${EXAMPLEFILES}
 	@${SUBST_CMD} -c -m 444 ${FILESDIR}/$i.sample \
-	    ${EXAMPLEDIR}/openbsd/$i.sample
+	    ${EXAMPLEDIR}/bitrig/$i.sample
 .endfor
 	${INSTALL_DATA} ${WRKSRC}/contrib/scripts/asterisk.ldif \
 		${WRKSRC}/contrib/scripts/asterisk.ldap-schema \

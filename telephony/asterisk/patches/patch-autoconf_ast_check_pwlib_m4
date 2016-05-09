@@ -1,5 +1,5 @@
---- autoconf/ast_check_pwlib.m4.orig	Wed Apr 13 10:46:20 2016
-+++ autoconf/ast_check_pwlib.m4	Wed Apr 13 10:46:38 2016
+--- autoconf/ast_check_pwlib.m4.orig	Mon May  9 14:07:44 2016
++++ autoconf/ast_check_pwlib.m4	Mon May  9 14:08:08 2016
 @@ -5,7 +5,7 @@ case "$host_os" in
    		;;
    freebsd* )       PWLIB_OSTYPE=FreeBSD ;
