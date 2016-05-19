@@ -32,6 +32,8 @@ LIB_DEPENDS=		databases/gdbm \
 
 USE_GMAKE=		Yes
 
+CC =			gcc
+
 MAKE_FLAGS=		rep_LIBTOOL=${LIBTOOL}
 
 CONFIGURE_STYLE=	gnu
