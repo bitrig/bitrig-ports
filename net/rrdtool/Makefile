@@ -27,6 +27,7 @@ MASTER_SITES=	http://oss.oetiker.ch/rrdtool/pub/
 PERMIT_PACKAGE_CDROM=	 Yes
 
 USE_GMAKE=	Yes
+USE_LIBTOOL=	gnu
 
 PSEUDO_FLAVORS=	no_ruby no_python
 MULTI_PACKAGES= -main -python -ruby -update
