@@ -40,7 +40,6 @@
      SUBDIR += hwdata
      SUBDIR += ietf-cli
      SUBDIR += impress
-     SUBDIR += jive
      SUBDIR += ktimeclock
      SUBDIR += lfm
      SUBDIR += libosinfo
