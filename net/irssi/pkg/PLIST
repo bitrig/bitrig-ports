@@ -283,8 +283,10 @@ share/irssi/help/sconnect
 share/irssi/help/script
 share/irssi/help/scrollback
 share/irssi/help/server
+share/irssi/help/servlist
 share/irssi/help/set
 share/irssi/help/silence
+share/irssi/help/squery
 share/irssi/help/squit
 share/irssi/help/stats
 share/irssi/help/statusbar
