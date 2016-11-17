@@ -1,0 +1,5 @@
+@bin bin/aarch64-unknown-bitrig1.0-gdb
+@bin bin/aarch64-unknown-bitrig1.0-run
+@man man/man1/aarch64-unknown-bitrig1.0-gdb.1
+@man man/man1/aarch64-unknown-bitrig1.0-gdbserver.1
+@man man/man5/aarch64-unknown-bitrig1.0-gdbinit.5
