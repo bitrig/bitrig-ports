@@ -19,5 +19,9 @@ WANTLIB += c m
 MASTER_SITES =		https://github.com/stedolan/jq/releases/download/jq-$V/
 
 CONFIGURE_STYLE =	gnu
+USE_LIBTOOL = 		gnu
+MODULES=	gcc4
+MODGCC4_ARCHS=	*
+MODGCC4_LANGS=	c c++
 
 .include <bsd.port.mk>
