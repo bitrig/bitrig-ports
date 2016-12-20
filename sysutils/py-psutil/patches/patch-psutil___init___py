@@ -1,0 +1,20 @@
+--- psutil/__init__.py.orig	Tue Dec 20 09:33:08 2016
++++ psutil/__init__.py	Tue Dec 20 09:33:54 2016
+@@ -122,7 +122,7 @@ elif sys.platform.startswith("win32"):
+ elif sys.platform.startswith("darwin"):
+     from . import _psosx as _psplatform
+ 
+-elif sys.platform.startswith("freebsd") or sys.platform.startswith("openbsd"):
++elif sys.platform.startswith("freebsd") or sys.platform.startswith("openbsd") or sys.platform.startswith("bitrig"):
+     from . import _psbsd as _psplatform
+ 
+ elif sys.platform.startswith("sunos"):
+@@ -167,7 +167,7 @@ AF_LINK = _psplatform.AF_LINK
+ _TOTAL_PHYMEM = None
+ _POSIX = os.name == 'posix'
+ _WINDOWS = os.name == 'nt'
+-_OPENBSD = sys.platform.startswith("openbsd")
++_OPENBSD = sys.platform.startswith("openbsd") or sys.platform.startswith("bitrig")
+ _timer = getattr(time, 'monotonic', time.time)
+ 
+ 

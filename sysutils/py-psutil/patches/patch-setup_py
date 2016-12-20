@@ -1,0 +1,11 @@
+--- setup.py.orig	Tue Dec 20 09:30:22 2016
++++ setup.py	Tue Dec 20 09:31:01 2016
+@@ -140,7 +140,7 @@ elif sys.platform.startswith("freebsd"):
+         libraries=["devstat"])
+     extensions = [ext, posix_extension]
+ # OpenBSD
+-elif sys.platform.startswith("openbsd"):
++elif sys.platform.startswith("openbsd") or sys.platform.startswith("bitrig"):
+     ext = Extension(
+         'psutil._psutil_bsd',
+         sources=[

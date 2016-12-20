@@ -1,0 +1,11 @@
+--- psutil/_psbsd.py.orig	Tue Dec 20 09:34:36 2016
++++ psutil/_psbsd.py	Tue Dec 20 09:34:57 2016
+@@ -27,7 +27,7 @@ __extra__all__ = []
+ # --- constants
+ 
+ FREEBSD = sys.platform.startswith("freebsd")
+-OPENBSD = sys.platform.startswith("openbsd")
++OPENBSD = sys.platform.startswith("openbsd") or sys.platform.startswith("bitrig")
+ 
+ if FREEBSD:
+     PROC_STATUSES = {
